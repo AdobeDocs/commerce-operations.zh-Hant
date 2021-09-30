@@ -1,15 +1,15 @@
 ---
-user-guide-title: 商務操作手冊
+user-guide-title: 操作行動手冊
 user-guide-description: 了解如何讓您的企業在運營上做好準備，以便運行一個成功的電子商務網站。
-source-git-commit: 6eeb6547d06d416c50fcf97cb07cbc94729ebcd0
+source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
 
 
-# 商務操作手冊 {#operational-playbook}
+# 操作行動手冊 {#operational-playbook}
 
 - [概述](overview.md)
 - 商務{#intro}
