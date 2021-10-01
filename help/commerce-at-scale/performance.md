@@ -1,15 +1,15 @@
 ---
-title: 效能最佳化
+title: AEM效能最佳化
 description: 最佳化您的預設Adobe Experience Manager設定，以支援Adobe商務的高負載。
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# AEM效能最佳化，從預設配置載入
+# AEM效能最佳化
 
 AEM Dispatcher是反向的Proxy，可協助傳送快速且動態的環境。 它可作為靜態HTML伺服器（例如Apache HTTP Server）的一部分，以靜態資源的形式，盡可能儲存（或「快取」）網站內容。 此方法旨在將盡可能存取AEM頁面呈現功能和Adobe商務GraphQL服務的需求降至最低。 將大部分頁面以靜態HTML、CSS和JS形式提供，可為使用者提供效能優勢，並降低環境的基礎架構需求。 快取時，應考量使用者之間可能重複相同的任何頁面或查詢。
 

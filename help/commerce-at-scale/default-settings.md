@@ -1,23 +1,19 @@
 ---
-title: 變更預設設定
+title: Adobe商務效能最佳化
 description: 變更部分預設設定，以準備您的Adobe商務專案以使用Adobe Experience Manager作為CMS。
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# 變更您的預設Adobe商務設定
+# Adobe商務效能最佳化
 
 ## AEM和Adobe商務基礎架構的地理位置
 
 為了在建立頁面時減少AEM發佈商與AdobeCommerce GraphQL之間的延遲，應在相同的AWS（或Azure）區域內托管兩個獨立基礎架構的初始設定。 為這兩種雲選擇的地理位置也應最接近您的大多數客戶，這樣客戶端GraphQL請求就可以從地理位置上非常接近您的大多數客戶。
-
-## AWS/Azure PrivateLink — 在雲VPC上連結AEM和Adobe商務
-
-為了改進對負載期望極高的站點的響應時間並進一步減少延遲，可以在AEM VPC和雲VPC上的Adobe商務之間考慮AWS（或Azure）Privatelink連接。 這將影響AEM發佈商和Adobe商務之間的所有網路流量，這些流量將保持在全球AWS骨幹網上，而不需要穿越公共網際網路。
 
 ## GraphQL在Adobe商務中的快取
 
