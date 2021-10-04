@@ -1,13 +1,13 @@
 ---
 title: 大規模提供體驗
 description: 了解如何使用Adobe商務和Adobe Experience Manager大規模提供體驗。
-exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
 
 ---
+
 
 # 透過Adobe商務、商務整合架構和Adobe Experience Manager大規模提供體驗
 
