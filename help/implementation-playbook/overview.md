@@ -1,19 +1,19 @@
 ---
 title: 實施行動手冊
 description: 商務實施行動手冊的目標
-source-git-commit: bb7dbf2a9d7f2fca1ecc7714f8f1ea53e4fcf067
+exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # 實施行動手冊
 
 本Adobe的目的是提供典型Commerce實作的最全面概觀。
 
-從專案範圍的早期階段到開發和整合，再到部署和持續支援，您需要考慮許多方法和最佳實務，才能成功啟動商務專案。
+從專案範圍的早期階段，到開發、整合和部署，再到持續支援，您需要考慮許多方法和最佳實務，才能成功啟動Adobe商務專案。
 
 此外，這些程式和考量事項適用於任何類型的Adobe商務專案：
 

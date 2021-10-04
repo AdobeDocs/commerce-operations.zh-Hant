@@ -3,7 +3,7 @@ user-guide-title: 大規模提供商務體驗
 user-guide-description: 了解如何透過Adobe Experience Manager使用Adobe商務大規模提供體驗。
 source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '41'
 ht-degree: 0%
 
 ---

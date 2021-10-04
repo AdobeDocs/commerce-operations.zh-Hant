@@ -1,13 +1,13 @@
 ---
 title: AEM效能最佳化
 description: 最佳化您的預設Adobe Experience Manager設定，以支援Adobe商務的高負載。
-source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
+exl-id: 923a709f-9048-4e67-a5b0-ece831d2eb91
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2248'
 ht-degree: 0%
 
 ---
-
 
 # AEM效能最佳化
 
@@ -54,7 +54,7 @@ content/ecommerce/us/en/products/product-page.html
 
 | 內容(docroot) | 電子商務 | us | en | 產品 | product-page.tml |
 |-------------------|-----------|----|----|----------|------------------|
-| 0 | 3 | 2 | 3 | 4 | - |
+| 0 | 1 | 2 | 3 | 4 | - |
 
 在此案例中，如果您將statfilelevel屬性設為預設「0」，而product-page.html範本已更新並啟動，而觸發失效，則從docroot到4層的每個.stat檔案都將接觸，且檔案失效，進而導致AEM發佈例項針對網站上所有頁面（包括其他網站、國家和語言）提出進一步的要求，要求進行該次變更。
 

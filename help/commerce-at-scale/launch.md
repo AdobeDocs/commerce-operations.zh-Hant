@@ -1,15 +1,15 @@
 ---
-title: 準備啟動
+title: 效能測試提示
 description: 了解如何設定KPI以啟動您的Adobe商務和Adobe Experience Manager解決方案。
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+exl-id: 4b0d9c4f-e611-452d-a80f-27f82705935d
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 0%
 
 ---
 
-
-# 準備啟動
+# 效能測試提示
 
 若要評估上述所有變更的成效，應在正式上線之前，以及日後任何主要部署至您的生產環境之前，執行徹底的效能測試。 在規劃負載測試時，請務必盡可能模擬真實的消費者流量。
 
