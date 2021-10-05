@@ -2,9 +2,9 @@
 title: 實施行動手冊
 description: 商務實施行動手冊的目標
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 7bad54402e4698545f3436d4195170adb7b48c15
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 - 單一市場或多市場推廣
 - 與中間件的廣泛整合
 
-我們希望，本劇本能為通常參與電子商務項目計畫的各種利益相關方提供洞見和指導，例如：
+我們希望，本劇本能為通常參與電子商務項目計畫的各種利益相關方提供洞見和指導，包括：
 
 - CEO和一般管理人員，他們應該對電子商務的推廣意味著什麼有一個紮實的認識
 - CMO和數位經理，他們將與平台本身的業務使用者合作
