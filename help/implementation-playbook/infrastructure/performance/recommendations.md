@@ -1,17 +1,17 @@
 ---
 title: 效能最佳化Recommendations
-description: 遵循這些建議，最佳化Adobe商務實作的效能。
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: 遵循這些建議，最佳化Adobe Commerce實作的效能。
+exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
+source-git-commit: a7ccb83cbcfc2f12882fa8d8a879118db2b20ede
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1289'
 ht-degree: 0%
 
 ---
 
-
 # 效能最佳化審核
 
-雖然效能最佳化可能來自許多方面，但在大多數情況下，仍應考慮一些一般建議。 這包括基礎架構元素的配置優化、Adobe商務後端配置和體系結構可擴充性規劃。
+雖然效能最佳化可能來自許多方面，但在大多數情況下，仍應考慮一些一般建議。 這包括基礎架構元素的配置優化、Adobe Commerce後端配置和體系結構可擴充性規劃。
 
 ## 基礎設施
 
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ### DNS查閱
 
-DNS查閱是尋找網域名稱所屬IP位址的程式。 瀏覽器必須等到DNS查閱完成，才能下載每個請求的任何內容。 減少DNS查閱對於改善整體頁面載入時間非常重要。
+DNS查閱是尋找網域名稱所屬IP位址的程式。 瀏覽器必須等到DNS查閱完成，才能下載每個要求的任何內容。 減少DNS查閱對於改善整體頁面載入時間非常重要。
 
 ### 內容傳遞網路(CDN)
 
-使用CDN來最佳化資產下載效能。 Adobe商務使用Ampley。 如果已實作Adobe商務的內部部署，您也應考慮新增CDN層。
+使用CDN來最佳化資產下載效能。 Adobe Commerce使用Amply。 如果您是Adobe Commerce的內部實作，您也應考慮新增CDN層。
 
 ### 網頁延遲
 
@@ -33,15 +33,15 @@ DNS查閱是尋找網域名稱所屬IP位址的程式。 瀏覽器必須等到DN
 
 足夠的網路頻寬是Web節點、資料庫、快取/會話伺服器和其他服務之間資料交換的關鍵要求之一。
 
-由於Adobe商務有效運用快取來提升效能，因此您的系統可以主動與Redis等快取伺服器交換資料。 如果Redis位於遠程伺服器上，則必須在Web節點和快取伺服器之間提供足夠的網路通道，以防止讀/寫操作出現瓶頸。
+由於Adobe Commerce有效運用快取來提升效能，因此您的系統可主動與Redis等快取伺服器交換資料。 如果Redis位於遠程伺服器上，則必須在Web節點和快取伺服器之間提供足夠的網路通道，以防止讀/寫操作出現瓶頸。
 
 ### 作業系統(OS)
 
-與其他高負載Web應用程式相比，Adobe商務的作業系統配置和最佳化類似。 隨著伺服器處理的併發連接數的增加，可用套接字的數量可以被完全分配。
+與其他高負載Web應用程式相比，Adobe Commerce的作業系統配置和最佳化類似。 隨著伺服器處理的併發連接數的增加，可用套接字的數量可以被完全分配。
 
 ### Web節點的CPU
 
-一個CPU核心可提供約2-4個Adobe商務請求，無需快取。 要確定處理所有傳入請求而不將其放入隊列所需的Web節點/核心數，請使用以下公式：
+一個CPU核心可處理約2至4個Adobe Commerce請求，無須快取。 要確定處理所有傳入請求而不將其放入隊列所需的Web節點/核心數，請使用以下公式：
 
 ```
 N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
@@ -51,15 +51,15 @@ N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
 
 最佳化這些設定取決於不同專案的效能測試結果。
 
-- **ByteCode** — 若要在PHP 7上實現Adobe商務的最大速度，必須激活模 `opcache` 組並正確配置它。
+- **位元組代碼** — 若要在PHP 7上讓Adobe Commerce發揮最大速度，您必須啟用 `opcache` 模組並正確設定。
 
-- **APCU** — 建議啟用PHP APCu擴充功能，並配置撰寫器以優化以獲得最大效能。此擴充功能會快取已開啟檔案的檔案位置，以提高Adobe商務伺服器呼叫（包括頁面、Ajax呼叫和端點）的效能。
+- **APCU** — 我們建議啟用PHP APCu擴展並配置Composer以優化以獲得最大效能。 此擴充功能會快取已開啟檔案的檔案位置，以提高Adobe Commerce伺服器呼叫（包括頁面、Ajax呼叫和端點）的效能。
 
-- **Realpath_cachconfiguration** — 優化 `realpath_cache` 允許PHP進程快取到檔案的路徑，而不是每次頁面載入時查找路徑。
+- **Realpath_cacheconfiguration** — 優化 `realpath_cache` 允許PHP進程快取到檔案的路徑，而不是每次頁面載入時查找路徑。
 
 ### Web伺服器
 
-將nginx用作Web伺服器只需輕微重新配置。 nginx Web伺服器提供更好的效能，並且使用Adobe商務([`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample))中的示例配置檔案可以輕鬆進行配置。
+將nginx用作Web伺服器只需輕微重新配置。 nginx Web伺服器提供更佳的效能，且使用Adobe Commerce的範例設定檔案即可輕鬆進行設定([`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample))。
 
 - 正確設定PHP-FPM和TCP
 
@@ -71,9 +71,9 @@ N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
 
 本文檔不提供深入的MySQL優化指令，因為每個儲存和環境都不同，但我們可以提供一些一般建議。
 
-Adobe商務資料庫（以及任何其他資料庫）對於可用於儲存資料和索引的記憶體量非常敏感。 為了有效利用MySQL資料索引，可用記憶體量至少應接近資料庫中儲存資料的一半大小。
+Adobe Commerce資料庫（以及任何其他資料庫）對於可用於儲存資料和索引的記憶體量非常敏感。 為了有效利用MySQL資料索引，可用記憶體量至少應接近資料庫中儲存資料的一半大小。
 
-優化`innodb_buffer_pool_instances`設定，以避免嘗試訪問同一實例的多個線程出現問題。 `max_connections`參數的值應與應用程式伺服器中配置的PHP線程總數相關聯。 使用以下公式計算`innodb-thread-concurrency`的最佳值：
+最佳化 `innodb_buffer_pool_instances` 設定，以避免多個執行緒嘗試存取相同例項時發生問題。 的值 `max_connections` 參數應與應用程式伺服器中配置的PHP線程總數相關。 使用下列公式計算 `innodb-thread-concurrency`:
 
 ```
 innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
@@ -87,7 +87,7 @@ Redis應分配足夠的記憶體來將所有其他快取保存在記憶體中，
 
 ### 頁面快取
 
-強烈建議在您的Adobe商務存放區上，將清漆用於整頁快取。 `PageCache`模組仍存在於程式碼基底中，但僅應用於開發用途。
+強烈建議在您的Adobe Commerce存放區上，將清漆用於整頁快取。 此 `PageCache` 模組仍存在於程式碼基底中，但應僅用於開發用途。
 
 將清漆安裝在Web層前面的單獨伺服器上。 它應接受所有傳入的請求，並提供快取的頁面副本。 為了使Riest能夠有效地與安全頁一起工作，SSL終止代理可以放置在Riest之前。 Nginx可用於此用途。
 
@@ -95,7 +95,7 @@ Redis應分配足夠的記憶體來將所有其他快取保存在記憶體中，
 
 ### 消息隊列
 
-消息隊列框架(MQF)是一個允許模組將消息發佈到隊列的系統。 它也會定義非同步接收訊息的使用者。 Adobe商務支援RabbitMQ作為報文代理，該代理為發送和接收報文提供了可擴展的平台。
+消息隊列框架(MQF)是一個允許模組將消息發佈到隊列的系統。 它也會定義非同步接收訊息的使用者。 Adobe Commerce支援RabbitMQ作為報文代理，該代理為發送和接收報文提供了可擴展平台。
 
 ### 效能測試和監控
 
@@ -103,11 +103,11 @@ Redis應分配足夠的記憶體來將所有其他快取保存在記憶體中，
 
 >[!NOTE]
 >
-> Adobe雲基礎架構上的商務已應用上述所有基礎架構和體系結構優化，但DNS查閱除外，因為它超出範圍。
+> 雲端基礎架構上的Adobe Commerce已套用上述所有基礎架構和架構最佳化，但DNS查閱除外，因為它超出範圍。
 
 ### 搜尋
 
-自Adobe商務2.4版起即為必要Elasticsearch，但也是啟用2.4之前版本的最佳作法。
+自Adobe Commerce 2.4版起即需使用Elasticsearch，但若要啟用2.4之前的版本，也需使用最佳實務。
 
 ## 作業模式
 
@@ -115,13 +115,13 @@ Redis應分配足夠的記憶體來將所有其他快取保存在記憶體中，
 
 ### 無頭式架構
 
-我們有一個單獨的部分，專用於詳細說明[headless](../../architecture/headless/adobe-commerce.md)是什麼以及不同的選項。 總之，它將店面層與平台本身分離。 它仍是相同的後端，但Adobe商務不再直接處理請求，而是僅支援透過GraphQL API的自訂店面。
+我們有一個單獨的部分，專門用於詳細描述 [無頭](../../architecture/headless/adobe-commerce.md) 是和不同的選項。 總之，它將店面層與平台本身分離。 雖然仍是相同的後端，但Adobe Commerce不再直接處理請求，而是僅支援透過GraphQL API的自訂店面。
 
-### 更新Adobe商務
+### 更新Adobe Commerce
 
-Adobe商務執行最新版本時，一律具備更佳效能。 即使每個新版本發佈後都無法讓Adobe商務保持最新，仍建議在Adobe商務引入重大效能最佳化時進行升級。
+Adobe Commerce執行最新版本時一律效能較佳。 即使每個新版本發行後都無法讓Adobe Commerce保持最新，仍建議您 [升級](../../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf) 當Adobe Commerce推出重大效能最佳化時。
 
-例如，2020年，Adobe發佈了Redis層的最佳化，解決了Redis與Adobe商務之間的大量低效、連線問題和不必要的資料傳輸。 2.3和2.4之間的整體效能是夜以繼日的，我們在購物車、結帳和同時使用者方面都有顯著改善，這只是因為Redis最佳化的緣故。
+例如，2020年，Adobe發佈了Redis層的最佳化，解決了Redis和Adobe Commerce之間許多低效、連線問題和不必要的資料傳輸問題。 2.3和2.4之間的整體效能是夜以繼日的，我們在購物車、結帳和同時使用者方面都有顯著改善，這只是因為Redis最佳化的緣故。
 
 ### 最佳化資料模型
 
@@ -131,7 +131,7 @@ Adobe商務執行最新版本時，一律具備更佳效能。 即使每個新�
 
 對於那些不影響業務邏輯但仍需顯示在店面的屬性，請將它們合併為幾個屬性（例如JSON格式）。
 
-為了優化平台效能，如果從PIM或ERP獲取的資料或屬性中不需要在店面上使用業務邏輯，則無需將該屬性添加到Adobe商務中。
+為了優化平台效能，如果從PIM或ERP獲取的資料或屬性中不需要店面上的業務邏輯，則無需將該屬性添加到Adobe Commerce中。
 
 ### 設計可擴充性
 
