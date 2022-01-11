@@ -2,7 +2,7 @@
 title: 效能最佳化Recommendations
 description: 遵循這些建議，最佳化Adobe Commerce實作的效能。
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: a7ccb83cbcfc2f12882fa8d8a879118db2b20ede
+source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Redis應分配足夠的記憶體來將所有其他快取保存在記憶體中，
 
 ### 更新Adobe Commerce
 
-Adobe Commerce執行最新版本時一律效能較佳。 即使每個新版本發行後都無法讓Adobe Commerce保持最新，仍建議您 [升級](../../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf) 當Adobe Commerce推出重大效能最佳化時。
+Adobe Commerce執行最新版本時一律效能較佳。 即使每個新版本發行後都無法讓Adobe Commerce保持最新，仍建議您 [升級](../../../upgrade/overview.md) 當Adobe Commerce推出重大效能最佳化時。
 
 例如，2020年，Adobe發佈了Redis層的最佳化，解決了Redis和Adobe Commerce之間許多低效、連線問題和不必要的資料傳輸問題。 2.3和2.4之間的整體效能是夜以繼日的，我們在購物車、結帳和同時使用者方面都有顯著改善，這只是因為Redis最佳化的緣故。
 
