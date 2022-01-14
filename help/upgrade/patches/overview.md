@@ -1,9 +1,9 @@
 ---
 title: 修補程式如何工作
 description: 了解Adobe Commerce和Magento Open Source的不同類型修補程式及其工作方式。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 38b054bbae8ba116557ce367c8397c646c837558
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Hotfix是修補程式，包含影響許多商家的高影響安全性或品質�
 要建立自定義修補程式：
 
 1. 建立 `patches/composer` 目錄。
-1. 識別用於修補程式的GitHub提交或提取請求。 此範例使用 [`2d31571`](https://github.com/magento/magento2/commit/) 提交，連結至GitHub問題 [#6474](https://github.com/magento/magento2/issues/6474).
+1. 識別用於修補程式的GitHub提交或提取請求。 此範例使用 [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) 提交，連結至GitHub問題 [#6474](https://github.com/magento/magento2/issues/6474).
 1. 附加 `.patch` 或 `.diff` 擴充功能。 使用 `.diff` 檔案大小較小時，才會使用此工具。 例如： [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. 將頁面儲存為 `patches/composer` 目錄。 例如， `github-issue-6474.diff`.
 1. 編輯檔案並移除 `app/code/<VENDOR>/<PACKAGE>` 以便它們相對於 `vendor/<VENDOR>/<PACKAGE>` 目錄。
@@ -78,11 +78,12 @@ index c8a6fef58d31..7d01c195791e 100644
 +++ b/view/frontend/web/js/view/payment/iframe.js
 @@ -154,6 +154,7 @@ define(
               */
-              clearTimeout: function () {
-                  clearTimeout(this.timeoutId);
-                  this.fail();
-                  return this;
-            },
+             clearTimeout: function () {
+                 clearTimeout(this.timeoutId);
++                this.fail();
+ 
+                 return this;
+             },
 ```
 
 ## 應用修補程式
