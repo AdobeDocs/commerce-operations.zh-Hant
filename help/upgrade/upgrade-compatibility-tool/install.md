@@ -1,58 +1,58 @@
 ---
-title: 安裝升級相容性工具
-description: 請依照下列步驟，安裝您Adobe Commerce專案的升級相容性工具。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: 安裝 [!DNL Upgrade Compatibility Tool]
+description: 按照以下步驟安裝 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce計畫。
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
 
 
-# 安裝升級相容性工具
+# 安裝 [!DNL Upgrade Compatibility Tool]
 
-升級相容性工具是命令列工具，可分析安裝在其中的所有模組，以根據特定版本檢查Adobe Commerce自訂例項。 它會傳回在升級至最新版Adobe Commerce之前必須處理的錯誤和警告清單。
+的 [!DNL Upgrade Compatibility Tool] 是一個命令行工具，它通過分析Adobe Commerce定制實例中安裝的所有模組來對照特定版本檢查該實例。 它返回一個錯誤和警告清單，在升級到最新版本的Adobe Commerce之前必須解決這些錯誤和警告。
 
-## 工作流程
+## 工作流
 
-下圖顯示了運行升級相容性工具時預期的工作流：
+下圖顯示了運行 [!DNL Upgrade Compatibility Tool]:
 
-![升級相容性工具圖](../../assets/upgrade-guide/mvp-diagram-v3.png)
+![[!DNL Upgrade Compatibility Tool] 圖](../../assets/upgrade-guide/mvp-diagram-v3.png)
 
-## 升級相容性工具適用於誰？
+## 誰是 [!DNL Upgrade Compatibility Tool] 為什麼？
 
-以下使用案例說明Adobe Commerce合作夥伴升級用戶端執行個體的典型程式：
+以下用例描述了Adobe Commerce合作夥伴升級客戶端實例的典型過程：
 
-1. 合作夥伴的軟體工程師從 [Adobe Commerce存放庫](https://repo.magento.com/) 並在最新Adobe Commerce版本的測試階段執行。 請參閱 [下載升級相容性工具](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) 主題以取得詳細資訊。
-1. 軟體工程師為當前安裝的特定版本的Adobe Commerce生成一個Vanilla實例。 請參閱 [貢獻者指南](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) ，以了解有關使用 `instance` 命令生成Vanilla安裝。
-1. 軟體工程師發現清單和目錄模組中存在多個自定義區域，它們也會獲得X的複雜性分數。請參閱 [開發人員](../upgrade-compatibility-tool/developer.md) 指南，以取得複雜性分數的詳細資訊。
-1. 利用此資訊，軟體工程師能夠了解升級的複雜性，並能夠將此資訊轉發回合作夥伴的客戶經理。
-1. 客戶經理會建立Adobe Commerce升級的時間表和成本，以便取得經理的核准。
-1. 經其經理批准後，軟體工程師將進行所需的代碼修改以修復損壞的模組。
-1. 軟體工程師在Adobe Commerce搶鮮版中再次運行升級相容性工具，以確保沒有新問題，並且其代碼更改修復了測試階段發現的問題。
-1. 所有項目都會結帳，軟體工程師將程式碼推送至測試環境，回歸測試會確認所有測試都是綠色的，這可讓他們在Adobe Commerce搶鮮版發行的當天，將最新的Adobe Commerce版本發佈至生產環境。
+1. 合作夥伴的軟體工程師下載 [!DNL Upgrade Compatibility Tool] 包 [Adobe Commerce庫](https://repo.magento.com/) 並在最新Adobe Commerce版的測試階段執行。 查看 [下載 [!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) 的子菜單。
+1. 軟體工程師為當前安裝的特定版本的Adobe Commerce生成一個香草實例。 查看 [貢獻者指南](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) 的子菜單。 `instance` 命令生成香草安裝。
+1. 軟體工程師發現清單和目錄模組中有幾個自定義區域已損壞，並且它們還得到複雜性分數X。查看 [開發人員](../upgrade-compatibility-tool/developer.md) 的子菜單。
+1. 利用這些資訊，軟體工程師能夠瞭解升級的複雜性，並能夠將此資訊轉回合作夥伴的客戶經理。
+1. 客戶經理為Adobe Commerce升級建立時間表和成本，以便他們獲得經理的批准。
+1. 經經理批准後，軟體工程師將根據需要進行的代碼修改來修復損壞的模組。
+1. 軟體工程師運行 [!DNL Upgrade Compatibility Tool] 再使用一次Adobe Commerce預發行版，以確保沒有新問題，並且其代碼更改會修復測試階段發現的問題。
+1. 所有內容都會檢查，軟體工程師將代碼推送到分段環境，在分段環境中，回歸test確認所有test都是綠色的，這使他們能夠在Adobe Commerce預發佈的同一天將最新的Adobe Commerce版本發佈到生產環境中。
 
-   ![升級相容性工具受眾](../../assets/upgrade-guide/audience-uct-v3.png)
-
->[!NOTE]
->
->Vanilla例項是針對特定版本指定版本標籤或分支的全新安裝。
-
-## 必要條件
-
-請參閱 [必要條件](../upgrade-compatibility-tool/prerequisites.md) 以取得更多資訊。
+   ![[!DNL Upgrade Compatibility Tool] 觀眾](../../assets/upgrade-guide/audience-uct-v3.png)
 
 >[!NOTE]
 >
->您可以在任何作業系統中運行升級相容性工具。 不需要執行Adobe Commerce執行個體所在的升級相容性工具。 升級相容性工具必須能存取Adobe Commerce執行個體的原始碼。 例如，您可以將工具安裝在一台伺服器上，並將它指向另一台伺服器上的Adobe Commerce安裝。
+>Vanilla實例是指特定版本的指定版本標籤或分支的全新安裝。
 
-如果您對具有大模組和檔案的Adobe Commerce實例運行升級相容性工具，則該工具可能需要大量RAM，至少2GB RAM。
+## 先決條件
 
-### 建議的動作
+請參閱 [先決條件](../upgrade-compatibility-tool/prerequisites.md) 的子菜單。
 
-Adobe Commerce最佳實務建議避免有兩個模組具有相同名稱。 如果發生此情況，升級相容性工具會顯示區段錯誤。
+>[!NOTE]
+>
+>您可以運行 [!DNL Upgrade Compatibility Tool] 在任何作業系統中。 不需要運行 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce實例所在的位置。 對於 [!DNL Upgrade Compatibility Tool] 訪問Adobe Commerce實例的原始碼。 例如，您可以在一台伺服器上安裝該工具，並將其指向另一台伺服器上的Adobe Commerce安裝。
 
-若要避免此錯誤，建議執行 `bin` 命令及新增的選項 `-m`:
+如果您運行 [!DNL Upgrade Compatibility Tool] 對於具有大模組和檔案的Adobe Commerce實例，該工具可能需要大量RAM，至少需要2GB RAM。
+
+### 建議的操作
+
+Adobe Commerce最佳做法建議避免使用兩個同名模組。 如果發生這種情況， [!DNL Upgrade Compatibility Tool] 顯示分段錯誤。
+
+為避免此錯誤，建議運行 `bin` 命令和添加的選項 `-m`:
 
 ```bash
 bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/<module-name>
@@ -60,21 +60,21 @@ bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<
 
 >[!NOTE]
 >
->此 `<dir>` value是您的Adobe Commerce執行個體所在的目錄。
+>的 `<dir>` value是您的Adobe Commerce實例所在的目錄。
 
-此 `-m` 選項可讓升級相容性工具獨立分析每個特定模組，以避免在Adobe Commerce執行個體中遇到兩個名稱相同的模組。
+的 `-m` 選項 [!DNL Upgrade Compatibility Tool] 獨立分析每個特定模組，以避免在Adobe Commerce實例中遇到兩個同名模組。
 
-此命令選項還允許「升級相容性工具」分析包含多個模組的資料夾：
+此命令選項還允許 [!DNL Upgrade Compatibility Tool] 要分析包含多個模組的資料夾：
 
 ```bash
 bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/
 ```
 
-此建議也有助於解決執行升級相容性工具時可能發生的記憶體問題。
+此建議還有助於解決執行 [!DNL Upgrade Compatibility Tool]。
 
-## 下載升級相容性工具
+## 下載 [!DNL Upgrade Compatibility Tool]
 
-要下載升級相容性工具，請運行以下命令：
+下載 [!DNL Upgrade Compatibility Tool]，運行以下命令：
 
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
@@ -82,23 +82,23 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 ## 安裝
 
-要安裝升級相容性工具，必須安裝必要的先決條件：
+安裝 [!DNL Upgrade Compatibility Tool]，必須安裝必要的必備元件：
 
-* Adobe Commerce存取金鑰
-* 撰寫器
+* Adobe Commerce訪問密鑰
+* 作曲家
 * Node.js
 
-### Adobe Commerce存取金鑰
+### Adobe Commerce訪問密鑰
 
-您必須 [Adobe Commerce存取金鑰](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) 下載並使用升級相容性工具。 將您的Adobe Commerce存取金鑰新增至 `auth.json` 檔案，位於 `~/.composer` 依預設。
+你一定有 [Adobe Commerce訪問密鑰](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) 下載並使用 [!DNL Upgrade Compatibility Tool]。 將您的Adobe Commerce訪問密鑰添加到 `auth.json` 檔案，位於 `~/.composer` 預設值。
 
 >[!WARNING]
 >
->檢查 **COMPOSER_HOME** 環境變數，查看位置 `auth.json` 檔案的位置。
+>檢查 **COMPOSER_HOME** 環境變數，以查看 `auth.json` 的下界。
 
-此 **公開金鑰** 與 _用戶名_ 而 **私密金鑰** 是 _密碼_:
+的 **公鑰** 與 _用戶名_ 而 **私鑰** 是 _密碼_:
 
-### Adobe Commerce存取金鑰範例
+### Adobe Commerce訪問密鑰示例
 
 ```json
     "http-basic": {
@@ -109,20 +109,20 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
     },
 ```
 
-### 撰寫器
+### 作曲家
 
-複製升級相容性工具儲存庫並運行 `composer install` 安裝相依性。
+克隆 [!DNL Upgrade Compatibility Tool] 儲存庫和運行 `composer install` 安裝依賴項。
 
 >[!WARNING]
 >
->若 **Adobe Commerce存取金鑰** 未正確配置，升級相容性工具將不會安裝，並且在運行時，您將遇到錯誤 `composer install` 命令。
+>如果 **Adobe Commerce訪問密鑰** 未正確配置， [!DNL Upgrade Compatibility Tool] 將不安裝，運行時將出現錯誤 `composer install` 的子菜單。
 
 ### Node.js
 
-若要安裝Node.js，請參閱Node.js [檔案](https://nodejs.dev/learn/how-to-install-nodejs).
+要安裝Node.js，請參見Node.js [文檔](https://nodejs.dev/learn/how-to-install-nodejs)。
 
-## 協力廠商擴充功能
+## 第三方擴展
 
-Adobe建議您聯絡擴充功能廠商，判斷您的擴充功能是否與Adobe Commerce 2.4.x完全相容。
+Adobe建議您與擴展供應商聯繫，以確定擴展是否與Adobe Commerce2.4.x完全相容。
 
-請參閱 [執行工具](../upgrade-compatibility-tool/run.md) 有關執行升級相容性工具的資訊。
+請參閱 [運行工具](../upgrade-compatibility-tool/run.md) 有關執行的資訊 [!DNL Upgrade Compatibility Tool]。

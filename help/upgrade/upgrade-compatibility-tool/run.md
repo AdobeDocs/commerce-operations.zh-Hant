@@ -1,23 +1,23 @@
 ---
-title: 運行升級相容性工具
-description: 請依照下列步驟，在您的Adobe Commerce專案上執行升級相容性工具。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: 運行 [!DNL Upgrade Compatibility Tool]
+description: 按照以下步驟運行 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce計畫。
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
 
 
-# 運行升級相容性工具
+# 運行 [!DNL Upgrade Compatibility Tool]
 
-升級相容性工具是命令列工具，可分析安裝在其中的所有模組，以根據特定版本檢查Adobe Commerce自訂例項。 它會傳回重要問題、錯誤和警告的清單，在升級至最新版Adobe Commerce之前必須解決這些問題。
+的 [!DNL Upgrade Compatibility Tool] 是一個命令行工具，它通過分析Adobe Commerce定制實例中安裝的所有模組來對照特定版本檢查該實例。 它返回一列重要問題、錯誤和警告，在升級到最新版本的Adobe Commerce之前必須解決這些問題。
 
-升級相容性工具可識別程式碼中必須修正的潛在問題，才能嘗試升級至更新版的Adobe Commerce。
+的 [!DNL Upgrade Compatibility Tool] 確定在嘗試升級到更新版本的Adobe Commerce之前必須在代碼中修復的潛在問題。
 
 ## 使用 `upgrade:check` 命令
 
-此 `upgrade:check` 命令是執行工具的主命令：
+的 `upgrade:check` 命令是執行工具的主命令：
 
 ```bash
 bin/uct upgrade:check <dir>
@@ -25,43 +25,43 @@ bin/uct upgrade:check <dir>
 
 >[!TIP]
 >
->此 `<dir>` value是您的Adobe Commerce執行個體所在的目錄。
+>的 `<dir>` value是您的Adobe Commerce實例所在的目錄。
 
-此 `upgrade:check` 命令運行升級相容性工具，並通過分析安裝在其中的所有模組，根據特定版本檢查Adobe Commerce自定義實例。 它會傳回重要問題、錯誤和警告的清單，在升級至最新版Adobe Commerce之前，必須解決這些問題。
+的 `upgrade:check` 命令運行 [!DNL Upgrade Compatibility Tool] 並通過分析Adobe Commerce定制實例中安裝的所有模組，針對特定版本檢查該實例。 它返回一個重要問題、錯誤和警告的清單，在升級到最新版本的Adobe Commerce之前，必須解決這些問題。
 
 >[!WARNING]
 >
->僅當提供項目根目錄（或主目錄）時執行。
+>僅在提供項目根目錄（或主目錄）時執行。
 
-此命令會檢查該特定Adobe Commerce例項的核心程式碼變更，以及其中安裝的所有自訂程式碼變更。
+此命令檢查該特定Adobe Commerce實例的核心代碼更改及其中安裝的所有自定義代碼更改。
 
-您可以執行 `core:code:changes` 命令，僅分析該特定Adobe Commerce例項的核心程式碼變更。 請參閱 [核心程式碼變更](../upgrade-compatibility-tool/run.md#use-the-core:code:changes-command) 區段。
+您可以運行 `core:code:changes` 命令，僅分析該特定Adobe Commerce實例的核心代碼更改。 請參閱 [核心代碼更改](../upgrade-compatibility-tool/run.md#use-the-core:code:changes-command) 的子菜單。
 
-雖然您可以使用 `graphql:compare` 命令來比較兩個GraphQL架構，以檢查它們之間是否有任何更改。 請參閱 [GraphQL架構相容性驗證](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) 區段。
+當您使用 `graphql:compare` 命令來比較兩個GraphQL模式以檢查它們之間的任何更改。 請參閱 [GraphQL架構相容性驗證](../upgrade-compatibility-tool/run.md#graphql-schema-compatibility-verification) 的子菜單。
 
-### Recommendations使用 `upgrade:check` 命令
+### Recommendations利用 `upgrade:check` 命令
 
-- 升級相容性工具至少需要2GB RAM才能運行。 建議使用此設定，以避免因記憶體限制不足而造成的問題。 如果您執行 `upgrade:check` 命令 `memory_limit` 設定。
-- 指定 `-m` 對特定模組執行工具的選項：
+- 的 [!DNL Upgrade Compatibility Tool] 至少需要2GB的RAM才能運行。 建議使用此設定以避免記憶體限制不足導致的問題。 的 [!DNL Upgrade Compatibility Tool] 如果運行 `upgrade:check` 低音命令 `memory_limit` 的子菜單。
+- 指定 `-m` 選項，針對特定模組運行工具：
 
    ```bash
    bin/uct upgrade:check <dir> -m[=MODULE-PATH]
    ```
 
-其中引數如下：
+其中參數如下：
 
 - `<dir>`:Adobe Commerce安裝目錄。
 - `[=MODULE-PATH]`:特定模組路徑目錄。
 
 ### 使用 `--help` 選項
 
-要查看升級相容性工具命令常規選項和幫助，請運行：
+查看 [!DNL Upgrade Compatibility Tool] 命令常規選項和幫助，運行：
 
 ```bash
 bin/uct --help
 ```
 
-不過，您仍可執行 `--help` 作為運行特定命令時的選項，例如 `bin/uct upgrade:check`. 這會傳回特定 `--help` 該命令的選項：
+但是，有可能 `--help` 作為運行特定命令時的選項，例如 `bin/uct upgrade:check`。 這返回特定 `--help` 該命令的選項：
 
 ```bash
 bin/uct upgrade:check --help
@@ -70,25 +70,25 @@ bin/uct upgrade:check --help
 可用 `--help` 選項 `upgrade:check` 命令：
 
 - `-m, --module-path[=MODULE-PATH]`:要分析的模組的路徑
-- `-a, --current-version[=CURRENT-VERSION]`:若省略，將會使用目前的Adobe Commerce版本、Adobe Commerce安裝版本。
-- `-c, --coming-version[=COMING-VERSION]`:Target Adobe Commerce版本，若省略，則會使用Adobe Commerce安裝的版本。
-- `--json-output-path[=JSON-OUTPUT-PATH]`:要以json格式匯出輸出的檔案路徑。
-- `--html-output-path[=HTML-OUTPUT-PATH]`:將以HTML格式導出輸出的檔案路徑。
-- `--min-issue-level`:要在報表中顯示的最低問題級別。 預設為 [警告].
-- `--ignore-current-version-compatibility-issues`:如果您不想在升級相容性工具報告中包含已知的重大問題、錯誤和警告，請使用此選項。
-- `--context=CONTEXT`:執行上下文。 此選項僅用於整合，不會影響執行結果。
-- `-h, --help`:顯示該特定命令的幫助。 如果未提供命令， `list` 命令是預設結果。
+- `-a, --current-version[=CURRENT-VERSION]`:如果省略，將使用當前Adobe Commerce版本、Adobe Commerce安裝版本。
+- `-c, --coming-version[=COMING-VERSION]`:目標Adobe Commerce版本，如果省略，將使用Adobe Commerce安裝的版本。
+- `--json-output-path[=JSON-OUTPUT-PATH]`:將以json格式導出輸出的檔案的路徑。
+- `--html-output-path[=HTML-OUTPUT-PATH]`:將以HTML格式導出輸出的檔案的路徑。
+- `--min-issue-level`:要在報告中顯示的最小問題級別。 預設值為 [警告]。
+- `--ignore-current-version-compatibility-issues`:當您不希望將已知的嚴重問題、錯誤和警告包括在 [!DNL Upgrade Compatibility Tool] 報告。
+- `--context=CONTEXT`:執行上下文。 此選項用於整合目的，不影響執行結果。
+- `-h, --help`:顯示該特定命令的幫助。 如果沒有提供命令， `list` 命令是預設結果。
 - `-q, --quiet`:執行命令時不輸出任何消息。
 - `-v, --version`:顯示應用程式版本。
 - `--ansi, --no-ansi`:啟用ANSI輸出。
-- `-n, --no-interaction`:執行命令時請勿詢問任何互動式問題。
-- `-v, --vv, --vvv, --verbose`:增加輸出通信的詳細程度。 1代表一般輸出，2代表詳細輸出，3代表DEBUG輸出。
+- `-n, --no-interaction`:執行命令時不要詢問任何交互問題。
+- `-v, --vv, --vvv, --verbose`:增加輸出通信的詳細程度。 1表示正常輸出，2表示詳細輸出，3表示DEBUG輸出。
 
 ### 輸出
 
-執行分析後，「升級相容性工具」將導出一個報告，其中包含每個檔案的問題清單，指定其嚴重性、錯誤代碼和錯誤說明。
+由於所執行之分析， [!DNL Upgrade Compatibility Tool] 導出一個報告，其中包含每個檔案的問題清單，其中指定其嚴重性、錯誤代碼和錯誤說明。
 
-請參閱下列範例：
+請參閱以下示例：
 
 ```terminal
 File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
@@ -98,20 +98,20 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
  * [CRITICAL][1110] Line 60: Instantiating class/interface 'Magento\Catalog\Model\ProductRepository' that does not exist on version '2.4.2'
 ```
 
-檢查 [錯誤訊息參考](error-messages.md) 主題以取得詳細資訊。
+檢查 [錯誤消息引用](error-messages.md) 的子菜單。
 
-報表也包含詳細摘要，顯示：
+報告還包括一個詳細摘要，其中顯示：
 
-- *最新版本*:當前安裝的版本。
+- *當前版本*:當前安裝的版本。
 - *目標版本*:要升級到的版本。
-- *執行時間*:建立報表所花費的分析時間(mm:ss)。
-- *需要更新的模組*:包含相容性問題且需要更新的模組的百分比。
-- *需要更新的檔案*:包含相容性問題且需要更新的檔案的百分比。
+- *執行時間*:分析生成報告所花的時間(mm:ss)。
+- *需要更新的模組*:包含相容性問題並需要更新的模組的百分比。
+- *需要更新的檔案*:包含相容性問題並需要更新的檔案的百分比。
 - *嚴重錯誤總數*:發現的嚴重錯誤數。
-- *總錯誤*:找到的錯誤數。
+- *錯誤總數*:找到的錯誤數。
 - *警告總數*:找到的警告數。
 
-請參閱下列範例：
+請參閱以下示例：
 
 ```terminal
  ----------------------------- ------------------
@@ -128,69 +128,69 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 
 >[!NOTE]
 >
->依預設，「升級相容性工具」會將報表匯出為2種不同格式： `json` 和 `html`.
+>預設情況下， [!DNL Upgrade Compatibility Tool] 將報告導出為兩種不同格式： `json` 和 `html`。
 
 #### JSON
 
-JSON檔案包含的資訊與輸出上顯示的資訊完全相同：
+JSON檔案包含的輸出上顯示的完全相同的資訊：
 
-- 已識別問題的清單。
+- 已確定問題的清單。
 - 分析摘要。
 
 對於每個遇到的問題，報告都提供詳細資訊，如問題的嚴重性和說明。
 
 >[!NOTE]
 >
->輸出資料夾的預設路徑為 `var/output/[TIME]-results.json`.
+>輸出資料夾的預設路徑是 `var/output/[TIME]-results.json`。
 
-要將此報告導出到其他輸出資料夾，請運行：
+要將此報表導出到其他輸出資料夾，請運行：
 
 ```bash
 bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 ```
 
-其中引數如下：
+其中參數如下：
 
 - `<dir>`:Adobe Commerce安裝目錄。
 - `[=JSON-OUTPUT-PATH]`:要導出的路徑目錄 `.json` 輸出檔案。
 
 >[!NOTE]
 >
->輸出資料夾的預設路徑為 `var/output/[TIME]-results.json`.
+>輸出資料夾的預設路徑是 `var/output/[TIME]-results.json`。
 
 #### HTML
 
-HTML檔案也包含已識別問題清單和分析摘要。 它還包括四個不同的圖表：
+HTML檔案還包含已識別問題和分析摘要的清單。 它還包括四個不同的圖表：
 
-- **按問題嚴重性列出的模組**:按模組顯示嚴重性分佈。
+- **按問題嚴重性劃分的模組**:按模組顯示嚴重性分佈。
 - **按問題嚴重性列出的檔案**:按檔案顯示嚴重性分佈。
 - **按問題總數排序的模組**:顯示10個最易損的模組，並考慮警告、錯誤和嚴重錯誤。
-- **具有相對大小和問題的模組**:模組包含的檔案越多，其圓圈就越大。 模組的問題越多，其圓圈就越紅。
+- **具有相對大小和問題的模組**:模組包含的檔案越多，其圓就越大。 模組問題越多，其圓就越紅。
 
-這些圖表可讓您一目瞭然地識別最易損壞的部件，以及執行升級需要更多工作的部件。
+通過這些圖表，您可以（一目瞭然地）確定最易損壞的部件以及執行升級需要更多工作的部件。
 
 ![HTML報告 — 摘要](../../assets/upgrade-guide/uct-html-summary.png)
 
 ![HTML報告 — 詳細資訊](../../assets/upgrade-guide/uct-html-details.png)
 
-要將此報告導出到其他輸出資料夾，請運行：
+要將此報告導出到其他輸出資料夾中，請運行：
 
 ```bash
 bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 ```
 
-其中引數如下：
+其中參數如下：
 
 - `<dir>`:{{site.data.var.ee}}安裝目錄。
 - `[=HTML-OUTPUT-PATH]`:要導出的路徑目錄 `.html` 輸出檔案。
 
 >[!NOTE]
 >
->輸出資料夾的預設路徑為 `var/output/[TIME]-results.html`.
+>輸出資料夾的預設路徑是 `var/output/[TIME]-results.html`。
 
 ### 使用 `--ignore-current-version-compatibility-issues` 選項
 
-升級相容性工具可讓您執行 `upgrade:check` 命令 `--ignore-current-version-compatibility-issues` 選項，因此它只顯示新的或未知的嚴重問題、錯誤和警告。 如果您不想在升級相容性工具報告中包含已知的重大問題、錯誤和警告，請使用此選項。
+的 [!DNL Upgrade Compatibility Tool] 允許您運行 `upgrade:check` 命令 `--ignore-current-version-compatibility-issues` 選項，因此它只顯示新的或未知的嚴重問題、錯誤和警告。 當您不希望將已知的嚴重問題、錯誤和警告包括在 [!DNL Upgrade Compatibility Tool] 報告。
 
 ```bash
 bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
@@ -202,125 +202,125 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 
 ### 香草裝置
 
-A _香草_ 安裝是針對特定發行版本而全新安裝指定版本標籤或分支。
+A _香_ 安裝是為特定版本全新安裝指定的版本標籤或分支。
 
-此 `bin/uct core:code:changes` 命令會檢查您的系統中是否有vanilla執行個體。 如果這是第一次使用Vanilla安裝，則交互命令行問題會提示您從下載Vanilla項目 [Adobe Commerce存放庫](https://repo.magento.com/).
+的 `bin/uct core:code:changes` 命令檢查系統中是否有香草實例。 如果這是首次使用香草安裝，則互動式命令行問題會提示您從 [Adobe Commerce庫](https://repo.magento.com/)。
 
-您可以使用 `--vanilla-dir` 選項，指定Adobe Commerce vanilla安裝目錄。
+您可以運行 [!DNL Upgrade Compatibility Tool] 命令 `--vanilla-dir` 的子菜單。
 
-請參閱 [部署Vanilla實例](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) 主題以取得詳細資訊。
+查看 [部署香草實例](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) 的子菜單。
 
 ## 使用 `list` 命令
 
-要返回「升級相容性工具」可用命令的清單，請運行：
+返回清單 [!DNL Upgrade Compatibility Tool] 可用命令，運行：
 
 ```bash
 bin/uct list
 ```
 
-此 `list` 命令返回以下內容：
+的 `list` 命令返回以下內容：
 
-- `-h, --help`:顯示該特定命令的幫助。 如果未提供命令， `list` 命令是預設結果。
+- `-h, --help`:顯示該特定命令的幫助。 如果沒有提供命令， `list` 命令是預設結果。
 - `-q, --quiet`:執行命令時不輸出任何消息。
-- `-v, --version`:顯示應用程式版本。
+- `-v, --version`:顯示應用版本。
 - `--ansi, --no-ansi`:啟用ANSI輸出。
-- `-n, --no-interaction`:執行命令時請勿詢問任何互動式問題。
-- `-v, --vv, --vvv, --verbose`:增加輸出通信的詳細程度。 1代表一般輸出，2代表詳細輸出，3代表DEBUG輸出。
+- `-n, --no-interaction`:執行命令時不要詢問任何交互問題。
+- `-v, --vv, --vvv, --verbose`:增加輸出通信的詳細程度。 1表示正常輸出，2表示詳細輸出，3表示DEBUG輸出。
 
 ## 使用 `core:code:changes` 命令
 
-您可以比較目前的Adobe Commerce安裝與乾淨的Vanilla安裝，以查看核心程式碼是否有任何修改以實施新功能或自訂。 此驗證有助於根據這些變更預估升級所需的工作量。
+您可以將當前的Adobe Commerce安裝與乾淨的香草安裝進行比較，以查看核心代碼是否進行了任何修改以實施新功能或自定義。 此驗證有助於根據這些更改估計升級所需的工作量。
 
 ```bash
 bin/uct core:code:changes <dir> <vanilla dir>
 ```
 
-其中引數如下：
+其中參數如下：
 
 - `<dir>`:Adobe Commerce安裝目錄。
 - `<vanilla dir>`:Adobe Commerce香草安裝目錄。
 
 運行此命令時存在一些限制：
 
-- 僅當提供項目根目錄（或主目錄）時執行。
+- 僅在提供項目根目錄（或主目錄）時執行。
 - 僅顯示核心修改的清單。
 
 ### 使用 `core:code:changes` 命令 `--help` 選項
 
 可用 `--help` 選項 `core:code:changes` 命令：
 
-- `-h, --help`:顯示該特定命令的幫助。 如果未提供命令， `list` 命令是預設結果。
+- `-h, --help`:顯示該特定命令的幫助。 如果沒有提供命令， `list` 命令是預設結果。
 - `-q, --quiet`:執行命令時不輸出任何消息。
-- `-v, --version`:顯示應用程式版本。
+- `-v, --version`:顯示應用版本。
 - `--ansi, --no-ansi`:啟用ANSI輸出。
-- `-n, --no-interaction`:執行命令時請勿詢問任何互動式問題。
-- `-v, --vv, --vvv, --verbose`:增加輸出通信的詳細程度。 1代表一般輸出，2代表詳細輸出，3代表DEBUG輸出。
+- `-n, --no-interaction`:執行命令時不要詢問任何交互問題。
+- `-v, --vv, --vvv, --verbose`:增加輸出通信的詳細程度。 1表示正常輸出，2表示詳細輸出，3表示DEBUG輸出。
 
 ## 版本
 
-您可以比較目前的Adobe Commerce安裝與Adobe Commerce版本 `>=2.3`.
+您可以將當前的Adobe Commerce安裝與Adobe Commerce版本進行比較 `>=2.3`。
 
-在運行命令時，必須將版本作為參數提供：
+運行以下命令時，必須將版本作為參數提供：
 
 ```bash
 bin/uct upgrade:check <dir> -c 2.4.3
 ```
 
-其中：
+位置：
 
-- `-c, --coming-version[=COMING-VERSION]`:Adobe Commerce目標版本。
+- `-c, --coming-version[=COMING-VERSION]`:Adobe Commerce的目標版本。
 
-執行上一個命令時有一些限制：
+運行上一個命令時存在一些限制：
 
-- 此參數指的是可識別特定版本Adobe Commerce的任何標籤。
-- 必須明確提供這一條；僅提供其值無法運作。
-- 提供不含任何引號的標籤版本（非單引號或雙引號）: ~~&#39;2.4.1-develop&#39;~~.
-- 您不應提供比目前安裝的版本舊，也不應提供比2.3舊，這是目前支援的最舊版本。
+- 此參數引用標識特定版本的Adobe Commerce的任何標籤。
+- 明確提供這一條是要求；只提供它的價值是行不通的。
+- 提供不帶任何引號的標籤版本（不帶單引號，也不帶雙引號）: ~~「2.4.1發」~~。
+- 您不應提供當前安裝的版本以及2.3版本以前的版本，而2.3版本是目前支援的最舊版本。
 
 ## GraphQL架構相容性驗證
 
-升級相容性工具還提供了查看兩個GraphQL端點並比較其架構的選項，以期在它們之間尋找中斷和危險的更改：
+的 [!DNL Upgrade Compatibility Tool] 還提供了以下選項：引入兩個GraphQL端點，並比較其架構，以查找它們之間的中斷和危險更改：
 
 ```bash
 bin/uct graphql:compare <schema1> <schema2>
 ```
 
-其中引數如下：
+其中參數如下：
 
-- `<schema1>`:現有安裝的端點URL。
-- `<schema2>`:安裝Vanilla的端點URL。
+- `<schema1>`:現有安裝的終結點URL。
+- `<schema2>`:香草安裝的終結點URL。
 
-您必須執行 `instance before` 和 `instance after` 升級。
+你一定是在 `instance before` 和 `instance after` 升級。
 
 ### GraphQL比較命令 `--help` 選項
 
 可用 `--help` 選項 `graphql:compare` 命令：
 
-- `-h, --help`:顯示該特定命令的幫助。 如果未提供命令， `list` 命令是預設結果。
+- `-h, --help`:顯示該特定命令的幫助。 如果沒有提供命令， `list` 命令是預設結果。
 - `-q, --quiet`:執行命令時不輸出任何消息。
-- `-v, --version`:顯示應用程式版本。
+- `-v, --version`:顯示應用版本。
 - `--ansi, --no-ansi`:啟用ANSI輸出。
-- `-n, --no-interaction`:執行命令時請勿詢問任何互動式問題。
-- `-v, --vv, --vvv, --verbose`:增加輸出通信的詳細程度。 1代表一般輸出，2代表詳細輸出，3代表DEBUG輸出。
+- `-n, --no-interaction`:執行命令時不要詢問任何交互問題。
+- `-v, --vv, --vvv, --verbose`:增加輸出通信的詳細程度。 1表示正常輸出，2表示詳細輸出，3表示DEBUG輸出。
 
-### GraphQL的嚴重問題、錯誤和警告清單示例
+### 示例，列出GraphQL的嚴重問題、錯誤和警告
 
 ```terminal
  *   [WARNING] FIELD_CHANGED_KIND: ConfigurableProduct.gender changed type from Int to String.
  *   [WARNING] OPTIONAL_INPUT_FIELD_ADDED: An optional field sku on input type ProductAttributeSortInput was added.
 ```
 
-請參閱 [開發人員資訊](../upgrade-compatibility-tool/developer.md) 以取得更多資訊。
+請參閱 [開發人員資訊](../upgrade-compatibility-tool/developer.md) 的子菜單。
 
-您可以通過PhpStorm插件運行配置來運行升級相容性工具。 請參閱 [升級相容性工具運行配置](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) 主題以取得詳細資訊。
+您可以運行 [!DNL Upgrade Compatibility Tool] 通過PhpStorm插件運行配置。 查看 [[!DNL Upgrade Compatibility Tool] 運行配置](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) 的子菜單。
 
-## 疑難排解
+## 故障排除
 
 ### 空輸出
 
 >[!NOTE]
 >
->此 `M2_VERSION` 是您要與Adobe Commerce執行個體比較的target Adobe Commerce版本。
+>的 `M2_VERSION` 是您要與您的Adobe Commerce實例進行比較的目標Adobe Commerce版本。
 
 如果運行此命令後：
 
@@ -336,7 +336,7 @@ Upgrade compatibility tool
 ```
 
 可能的原因是PHP記憶體限制。
-通過設定 `memory_limit` to `-1`:
+通過設定 `memory_limit` 至 `-1`:
 
 ```bash
 php -d memory_limit=-1 /bin/uct upgrade:check INSTALLATION_DIR -c M2_VERSION

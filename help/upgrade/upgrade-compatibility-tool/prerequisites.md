@@ -1,29 +1,29 @@
 ---
-title: 升級相容性工具必要條件
-description: '確認您的系統符合為Adobe Commerce專案執行升級相容性工具所需的需求。 '
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] 先決條件'
+description: '驗證您的系統是否滿足運行 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce計畫。 '
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
 
-# 升級相容性工具先決條件
+# [!DNL Upgrade Compatibility Tool] 先決條件
 
-運行升級相容性工具可幫助您確定必須執行的操作 **befor** 升級您的Adobe Commerce版本。
+運行 [!DNL Upgrade Compatibility Tool] 幫助你確定你必須做的 **先** 升級你的Adobe Commerce版。
 
-運行升級相容性工具的最低要求為：
+運行 [!DNL Upgrade Compatibility Tool] 為：
 
-| **需求** | **限制** |
+| **要求** | **約束** |
 |----------------|-----------------|
 | PHP版本 | >= 7.3 |
-| 撰寫器 | 無 |
-| Node.js | [Node.js](https://nodejs.org/) (`^12.22.0`, `^14.17.0`，或 `>=16.0.0`) |
+| 作曲家 | 無 |
+| Node.js | [節點.js](https://nodejs.org/) (`^12.22.0`。 `^14.17.0`或 `>=16.0.0`) |
 | 記憶體限制 | 至少2GB RAM |
-| Adobe Commerce存取金鑰 | 無 |
-| Adobe Commerce（開放原始碼或企業版） | 無 |
+| Adobe Commerce訪問密鑰 | 無 |
+| Adobe Commerce（開源或企業） | 無 |
 
-您可以在任何作業系統中運行升級相容性工具。 不需要執行Adobe Commerce執行個體所在的升級相容性工具。
+您可以運行 [!DNL Upgrade Compatibility Tool] 在任何作業系統中。 不需要運行 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce實例所在的位置。
 
-升級相容性工具必須能存取Adobe Commerce執行個體的原始碼。 例如，您可以將其安裝在一台伺服器上，並將其指向另一台伺服器上的Adobe Commerce安裝。 請參閱 [安裝](../upgrade-compatibility-tool/install.md) 主題以取得詳細資訊。
+對於 [!DNL Upgrade Compatibility Tool] 訪問Adobe Commerce實例的原始碼。 例如，您可以將其安裝在一台伺服器上，然後將其指向另一台伺服器上的Adobe Commerce安裝。 請參閱 [安裝](../upgrade-compatibility-tool/install.md) 的子菜單。
