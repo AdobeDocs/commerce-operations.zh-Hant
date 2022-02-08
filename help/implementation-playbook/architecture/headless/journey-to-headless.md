@@ -1,14 +1,14 @@
 ---
-title: 無頭之旅
-description: 查看Adobe商務的歷程時間表，以支援無頭架構。
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: 《無頭之旅》
+description: 回顧Adobe Commerce支援無頭體系結構的歷程。
+exl-id: 9286e6b3-3c29-4428-b353-f66eb4bc382d
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '28'
 ht-degree: 0%
 
 ---
 
+# Adobe Commerce的無頭之旅
 
-# Adobe商務的無頭之旅
-
-![Adobe商務邁向無頭式架構的歷程時間表](../../../assets/playbooks/journey-to-headless.svg)
+![Adobe Commerce無頭建築之旅時間表](../../../assets/playbooks/journey-to-headless.svg)
