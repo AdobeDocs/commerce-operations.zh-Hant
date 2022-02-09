@@ -2,9 +2,9 @@
 title: Adobe Commerce整合戰略
 description: 審查您的Adobe Commerce實施的整合戰略和選項。
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 1e545d8d5554e73f522469e526ed098395db9075
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe CommerceGraphQL API提供全面的店面覆蓋，您可以使用它與其他店面整合，包括：
 
-- 數字型驗平台(DXP)，如Adobe體驗Manaber和Bloomreach
+- 數字型驗平台(DXP)，如Adobe Experience Manager和布盧姆瑞克
 - 內容管理系統(CMS)，如Drupal和WordPress
 - Adobe Commerce、PWA Studio、武業等現代定制店面應用
 
@@ -26,7 +26,7 @@ GraphQL提供高效、特定於通道的響應，不會過度讀取資料，並�
 Adobe CommerceREST API提供全面的系統配置覆蓋面和資料管理功能，包括產品和目錄；購物車、報價和結帳；客戶、客戶和公司；訂單和退貨。 REST API支援批量操作、多種身份驗證模式和精細授權，因此通常選擇REST API與企業系統整合，包括：
 
 - 企業資源規劃(ERP)系統，如SAP
-- 像Akeneo這樣的產品資訊管理(PIM)系統
+- 產品資訊管理(PIM)系統，如Akeneo
 - 客戶關係管理(CRM)系統，如Salesforce
 - 訂單管理系統(OMS)，如MOM 、 Manhattan和SAP
 - 倉庫管理系統(WMS)或第三方物流(3PL)，如Oracle、 NetSuite和SAP WM
