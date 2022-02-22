@@ -1,9 +1,9 @@
 ---
 title: 概述 [!DNL Upgrade Compatibility Tool]
 description: 瞭解 [!DNL Upgrade Compatibility Tool] 以及它如何幫助你完成Adobe Commerce計畫。
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: e6b6c61aa3fc7c3f22e3a1450b43015f1a7ffed7
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -21,16 +21,20 @@ ht-degree: 0%
 
 它以Composer包的形式分發，每個版本都有Adobe Commerce版本。 查看 [開發人員](../upgrade-compatibility-tool/developer.md) 的子菜單。
 
-請參閱 [安裝](../upgrade-compatibility-tool/install.md) 第一步 [!DNL Upgrade Compatibility Tool]。
+請參閱 [安裝](../upgrade-compatibility-tool/install.md) 主題 [!DNL Upgrade Compatibility Tool]。
 
 ## 幫助改進 [!DNL Upgrade Compatibility Tool]
 
-與 [!DNL Upgrade Compatibility Tool] 團隊，在工程Slack渠道與我們聯繫 [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F)。
+與 [!DNL Upgrade Compatibility Tool] 團隊，在工程Slack渠道與我們聯繫 [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F)。 我們希望聽取您的反饋、問題和建議，以幫助我們改進該工具。
 
->[!NOTE]
->
->我們希望聽取您的反饋、問題和建議，以幫助我們改進該工具。
+的 [!DNL Upgrade Compatibility Tool] 使用我們 [編碼標準](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) 確保您的項目遵循Adobe Commerce的最佳實踐並幫助您改進和擴展 [!DNL Upgrade Compatibility Tool]。
 
-您是否知道如何改進我們的相容性分析？ 檢查 [貢獻](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) 的子菜單。
+請參閱 [貢獻](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html)  主題，以獲取有關參與此項目的詳細資訊。
 
-查看 [資源](https://devdocs.magento.com/community/resources/resources.html) 的子菜單。
+## 資源
+
+我們開發了以下資源來幫助您瞭解Adobe Commerce升級：
+
+- [升級指南](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
+- [即將發佈的版本](https://devdocs.magento.com/release/)
+- [社區資源](https://devdocs.magento.com/community/resources/resources.html) 的子菜單。
