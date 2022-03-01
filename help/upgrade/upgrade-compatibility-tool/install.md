@@ -1,15 +1,17 @@
 ---
 title: 安裝 [!DNL Upgrade Compatibility Tool]
 description: 按照以下步驟安裝 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce計畫。
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
 
 
 # 安裝 [!DNL Upgrade Compatibility Tool]
+
+{{commerce-only}}
 
 的 [!DNL Upgrade Compatibility Tool] 是一個命令行工具，它通過分析Adobe Commerce定制實例中安裝的所有模組來對照特定版本檢查該實例。 它返回一個錯誤和警告清單，在升級到最新版本的Adobe Commerce之前必須解決這些錯誤和警告。
 
