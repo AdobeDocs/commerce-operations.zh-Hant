@@ -1,7 +1,7 @@
 ---
 title: 運行 [!DNL Upgrade Compatibility Tool]
 description: 按照以下步驟運行 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce計畫。
-source-git-commit: 02c42b2b1853da9f73e75a069adcb1ab815e6134
+source-git-commit: ee80753da5327ebf593e007e3b4316e2b01c5a61
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 0%
@@ -77,7 +77,7 @@ bin/uct upgrade:check --help
 - `--json-output-path[=JSON-OUTPUT-PATH]`:將以json格式導出輸出的檔案的路徑。
 - `--html-output-path[=HTML-OUTPUT-PATH]`:將以HTML格式導出輸出的檔案的路徑。
 - `--min-issue-level`:要在報告中顯示的最小問題級別。 預設值為 [警告]。
-- `--ignore-current-version-compatibility-issues`:當您不希望將已知的嚴重問題、錯誤和警告包括在 [!DNL Upgrade Compatibility Tool] 報告。
+- `-i, --ignore-current-version-compatibility-issues`:當您不希望將已知的嚴重問題、錯誤和警告包括在 [!DNL Upgrade Compatibility Tool] 報告。
 - `--context=CONTEXT`:執行上下文。 此選項用於整合目的，不影響執行結果。
 - `-h, --help`:顯示該特定命令的幫助。 如果沒有提供命令， `list` 命令是預設結果。
 - `-q, --quiet`:執行命令時不輸出任何消息。
