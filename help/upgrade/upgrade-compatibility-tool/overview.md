@@ -1,9 +1,9 @@
 ---
 title: 概述 [!DNL Upgrade Compatibility Tool]
 description: 瞭解 [!DNL Upgrade Compatibility Tool] 以及它如何幫助你完成Adobe Commerce計畫。
-source-git-commit: 708eb0bcbc9cff9332eade6377032d91f770644a
+source-git-commit: 218b099caa883f66ddda48407fb789e51fedc203
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,37 @@ ht-degree: 0%
 它以Composer包的形式分發，每個版本都有Adobe Commerce版本。 查看 [開發人員](../upgrade-compatibility-tool/developer.md) 的子菜單。
 
 請參閱 [安裝](../upgrade-compatibility-tool/install.md) 主題 [!DNL Upgrade Compatibility Tool]。
+
+## 工作流
+
+下圖顯示了運行 [!DNL Upgrade Compatibility Tool]:
+
+![[!DNL Upgrade Compatibility Tool] 圖](../../assets/upgrade-guide/mvp-diagram-v3.png)
+
+## 的 [!DNL Upgrade Compatibility Tool] 用例
+
+以下用例描述了Adobe Commerce合作夥伴升級客戶端實例的典型過程：
+
+1. 下載 [!DNL Upgrade Compatibility Tool] 包 [Adobe Commerce庫](https://repo.magento.com/)。 查看 [下載 [!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) 的子菜單。
+1. 執行 [!DNL Upgrade Compatibility Tool] 在 [β](https://devdocs.magento.com/release/beta-program.html) 最新階段 [Adobe Commerce釋放](https://devdocs.magento.com/release/)。
+1. 主命令是 `upgrade:check`。 此命令將分析實例並檢查實例中的錯誤、警告和嚴重問題。 要優化結果：
+
+   - 添加選項 `--ignore-current-version-compatibility-issues` 忽略當前Adobe Commerce版本的所有已知嚴重問題、錯誤和警告。 僅顯示所需版本的結果。
+   - 使用選項 `--min-issue-level` 來設定最小問題級別。 幫助僅排定升級中最重要問題的優先順序。 如果只要分析某個供應商、模組甚至目錄，也可以指定路徑。 查看 [運行工具](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html?lang=en) 的子菜單。
+
+1. 為當前安裝的特定版本的Adobe Commerce生成香草實例。 查看 [貢獻者指南](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) 的子菜單。 `instance` 命令生成香草安裝。
+
+   >[!NOTE]
+   >
+   >Vanilla實例是指特定版本的指定版本標籤或分支的全新安裝。
+
+1. 的 [!DNL Upgrade Compatibility Tool] 標識自定義的損壞區域。 軟體工程師能夠瞭解升級的複雜性並評估升級的工作量。 此資訊與利益相關方共用。
+1. 將為升級定義預算和時間表。
+1. 然後，軟體工程師可以處理所需的代碼修改來修復損壞的模組。
+1. 的 [!DNL Upgrade Compatibility Tool] 可以執行以跟蹤升級進度。
+1. 現在，所有檢查和工程部門都可以將代碼推送到分段環境，在該環境中，回歸test確認所有test都是綠色的，這樣，他們就可以在Adobe Commerce預發佈的同一天將最新的Adobe Commerce版本發佈到生產環境中。
+
+   ![[!DNL Upgrade Compatibility Tool] 觀眾](../../assets/upgrade-guide/audience-uct-v3.png)
 
 ## 幫助改進 [!DNL Upgrade Compatibility Tool]
 
