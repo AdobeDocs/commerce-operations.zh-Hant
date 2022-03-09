@@ -1,7 +1,7 @@
 ---
 title: 運行 [!DNL Upgrade Compatibility Tool]
 description: 按照以下步驟運行 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce計畫。
-source-git-commit: bcb8fced43c5d9972291f15a5039dbbc2a692a59
+source-git-commit: 02c42b2b1853da9f73e75a069adcb1ab815e6134
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 0%
@@ -73,7 +73,7 @@ bin/uct upgrade:check --help
 
 - `-m, --module-path[=MODULE-PATH]`:要分析的模組的路徑
 - `-a, --current-version[=CURRENT-VERSION]`:如果省略，將使用當前Adobe Commerce版本、Adobe Commerce安裝版本。
-- `-c, --coming-version[=COMING-VERSION]`:目標Adobe Commerce版本，如果省略，將使用Adobe Commerce安裝的版本。
+- `-c, --coming-version[=COMING-VERSION]`:目標Adobe Commerce版本，如果省略，將使用最新發佈的Adobe Commerce版本。
 - `--json-output-path[=JSON-OUTPUT-PATH]`:將以json格式導出輸出的檔案的路徑。
 - `--html-output-path[=HTML-OUTPUT-PATH]`:將以HTML格式導出輸出的檔案的路徑。
 - `--min-issue-level`:要在報告中顯示的最小問題級別。 預設值為 [警告]。
