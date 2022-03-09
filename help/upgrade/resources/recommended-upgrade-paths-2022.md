@@ -1,9 +1,9 @@
 ---
 title: 利用Adobe Commerce2.4.4+實現平台現代化
 description: 審查2022年計畫Adobe Commerce或Magento Open Source升級的建議。
-source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
+source-git-commit: ddad036c0f2ed5f790136c5c4d6faec38069dbda
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,17 +26,17 @@ ht-degree: 0%
 
 ## 從版本2.3.6和更低版本升級
 
-![](../../assets/upgrade-guide/2.3.6.jpg)
+![](../../assets/upgrade-guide/2.3.6.png)
 
 ## 從2.3.7升級
 
-![](../../assets/upgrade-guide/2.3.7.jpg)
+![](../../assets/upgrade-guide/2.3.7.png)
 
 ## 從2.4.0-2.4.3升級
 
-![](../../assets/upgrade-guide/2.4.0-2.4.3.jpg)
+![](../../assets/upgrade-guide/2.4.0-2.4.3.png)
 
 ## 從2.4.3升級（或新升級）
 
-![](../../assets/upgrade-guide/2.4.3.jpg)
+![](../../assets/upgrade-guide/2.4.3.png)
 
