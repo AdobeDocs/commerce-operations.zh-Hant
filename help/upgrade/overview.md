@@ -1,9 +1,9 @@
 ---
 title: 升級過程概述
 description: 瞭解升級您的Adobe Commerce和Magento Open Source項目如何幫助確保店面的安全和高效運行。
-source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
+source-git-commit: 18f5e9c96377e0299fdc776a69393f2ceef3618b
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ _所以……為什麼要升級？_
 
 Adobe發佈 [發佈計畫](https://devdocs.magento.com/release/) 為商家的規劃流程提供便利，並建議升級每個修補程式發佈週期。 要保持PCI相容，商家必須使用最新的補丁程式或安全補丁。 以下時間表顯示了2022年的主要發行和EOL事件。
 
-![](../assets/upgrade-guide/2022-release-timeline.jpg)
+![](../assets/upgrade-guide/2022-release-timeline.png)
 
 需要注意的重要事件包括：
 
