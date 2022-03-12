@@ -2,9 +2,9 @@
 keywords: Adobe Commerce；首頁；熱門主題
 title: 首頁
 description: 瀏覽Adobe Commerce運營產品文檔的索引。
-source-git-commit: 3637e81bf3951d0130941613d88488405073e7e1
+source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -12,18 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce操作指南
 
-本頁提供指向Adobe Commerce和Magento Open Source的所有操作指南的連結。
-
-## 新增功能
-
-下表包括我們想要瞭解的最新更改，如新主題和對現有主題的重要更新：
-
-| 說明 | 類型 |
-|------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 已添加 [資訊](../upgrade/upgrade-compatibility-tool/overview.md) 關於如何定義升級相容性工具的規則。 | 主要更新 |
-| 已刪除過期的升級相容性工具 [錯誤代碼](../upgrade/upgrade-compatibility-tool/error-messages.md)。 | 技術 |
-
-## 參考線
+獲取有關概念、流程、工具和最佳做法的實用資訊，以開發、部署和維護部署在Adobe Commerce和Magento Open Source平台上的商業項目。
 
 <table>
 <tr>
@@ -63,7 +52,7 @@ ht-degree: 0%
 <tr>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="升級" src="../assets/icons/download-cloud.svg" width="40" height="40"/>
+      <img alt="升級" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>升級</strong></a>
@@ -129,3 +118,12 @@ ht-degree: 0%
   </td>
 </tr>
 </table>
+
+## 新增功能
+
+瞭解新文檔和現有文檔的重要更新。
+
+| 更改 | 類型 |
+|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 已添加 [資訊](../upgrade/upgrade-compatibility-tool/overview.md) 關於如何定義升級相容性工具的規則。 | 主要更新 |
+| 已刪除過期的升級相容性工具 [錯誤代碼](../upgrade/upgrade-compatibility-tool/error-messages.md)。 | 技術 |
