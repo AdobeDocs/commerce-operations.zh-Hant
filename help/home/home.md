@@ -5,7 +5,7 @@ description: 瀏覽Adobe Commerce運營產品文檔的索引。
 source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 0%
        <img alt="操作" src="../assets/icons/refresh.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>操作手冊</strong></a>
+      <a href="../operational-playbook/overview.md"><strong>營運行動手冊</strong></a>
     </div>
   </td>
   <td valign="top">

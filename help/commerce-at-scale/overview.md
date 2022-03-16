@@ -1,6 +1,6 @@
 ---
 title: 大規模提供體驗
-description: 了解如何使用Adobe Commerce和Adobe Experience Manager大規模提供體驗。
+description: 學習如何與Adobe Commerce和Adobe Experience Manager進行大規模交流。
 exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
 debug: true
 source-git-commit: 442bb3f2c448de2ed70a3033d399025cc39e8744
@@ -10,26 +10,26 @@ ht-degree: 0%
 
 ---
 
-# 透過Adobe Commerce、Commerce Integration Framework和Adobe Experience Manager大規模提供體驗
+# 通過Adobe Commerce、商業整合框架和Adobe Experience Manager提供大規模體驗
 
-使用CIF作為連接器的AEM與Adobe Commerce之間，建議採用整合模式，讓AEM擁有展示層（「玻璃」）和Adobe Commerce，將商務後端作為「無頭」後端提供支援。 此整合方法充分利用了每個應用程式的優勢：Adobe Commerce AEM和電子商務營運的製作、個人化和全通路功能。
+建議將CIFAEM用作連接器的Adobe Commerce和Compers之間的整合模式AEM是，將展示層（「玻璃」）和Commerce後端作為「無頭」後端來提供電源。 此整合方法充分利用了每個應用程式的優勢：Adobe Commerce電子商務運營的創AEM作、個性化和人文功能。
 
-在AEM/CIF/Adobe Commerce環境中，電子商務網站訪客最初將抵達AEM。 AEM會檢查其dispatcher快取中是否有可用的請求頁面。 如果頁面存在，系統會向訪客提供此快取頁面，不需要進一步處理。 如果Dispatcher不包含請求的頁面，或該頁面已過期，則Dispatcher會請求AEM Publisher建置頁面，而Dispatcher會視需要呼叫Adobe Commerce，以取得電子商務資料來建置頁面。 接著，內建的頁面會傳遞至Dispatcher以提供給訪客，接著會進行快取，以避免在其他訪客對相同頁面提出後續請求時，將進一步的載入放置到伺服器上。
+在AEM/CIF/Adobe Commerce環境中，電子商務網站訪問者最初將抵AEM達。 將檢AEM查其調度程式快取中是否有可用的請求頁。 如果該頁面存在，則此快取的頁面將提供給訪問者，不需要進一步處理。 如果調度程式未包含請求的頁面，或者該頁面已過期，則調度程式會請求發佈程式生成該頁面AEM，發佈程式會呼叫Adobe Commerce以在必要時生成該頁面。 然後，將所構建的頁面傳遞給調度器以服務於訪問者，然後被快取，以防止在其他訪問者對同一頁面的後續請求上將進一步負載放置在伺服器上。
 
-![AdobeExperience Manager與Adobe Commerce架構的概觀圖表](../assets/commerce-at-scale/overview.png)
+![Adobe經驗管理器和Adobe Commerce體系結構概覽圖](../assets/commerce-at-scale/overview.png)
 
-AEM/CIF/Adobe Commerce模型中可結合使用伺服器端轉譯和用戶端轉譯：伺服器端轉譯，提供靜態內容，用戶端轉譯，從使用者的瀏覽器內直接呼叫Adobe Commerce以取得特定元件，以提供經常變更或個人的動態內容。
+伺服器端渲染和客戶端渲染的組合可用於AEM/CIF/Adobe Commerce模型：伺服器端呈現提供靜態內容和客戶端呈現，通過從用戶瀏覽器內直接調用Adobe Commerce特定元件來傳遞頻繁更改或個人動態內容。
 
-以下範例中會顯示AEM電子商務店面上產品詳細資料頁面中不同元件的範例：
+在以下示例中，可以看到電子商AEM務店面上「產品詳細資訊」頁中不同元件的示例：
 
-![AdobeExperience Manager與Adobe Commerce架構的概觀圖表](../assets/commerce-at-scale/product-details-page.svg)
+![Adobe經驗管理器和Adobe Commerce體系結構概覽圖](../assets/commerce-at-scale/product-details-page.svg)
 
-## 伺服器端轉譯
+## 伺服器端呈現
 
-產品詳細資料頁面(PDP)和產品清單頁面(PLP)等電子商務頁面不太可能經常變更，且適合在使用AEM CIF核心元件在伺服器端轉譯後完全快取。 應使用在AEM中建立的一般範本，在AEM發佈商上轉譯頁面。 這些元件可透過GraphQL API從Adobe Commerce取得資料。 這些頁面會動態建立、在伺服器上轉譯、在AEM Dispatcher上快取，然後傳送至瀏覽器。 上述範例的紫色方塊中會顯示此範例。
+諸如產品詳細資訊頁面(PDP)和產品清單頁面(PLP)等電子商務頁面不太可能頻繁更改，並且適合於在使用AEMCIF核心元件呈現伺服器端後完全快取。 應使用中建立的通AEM用模板在發佈伺服器上呈AEM現頁。 這些元件通過GraphQL API從Adobe Commerce獲取資料。 這些頁面是動態建立的，呈現在伺服器上，快取在調AEM度器上，然後傳送到瀏覽器。 以上示例的紫色框中顯示了此示例。
 
-## 用戶端轉譯
+## 客戶端呈現
 
-如果顯示更多動態屬性（例如庫存量/可用性或價格），例如在產品詳細資訊頁面(PDP)上，則可使用用戶端元件。 雖然您可以使用上述伺服器端轉譯方法在Dispatcher上建立和快取範本頁面，但在靜態頁面本身內，可能會有動態用戶端Web元件。 這些動態元件可透過GraphQL API，直接從用戶端的Adobe Commerce瀏覽器擷取資料，以便即時檢查（例如PDP上的目前價格或庫存水準）。 這可確保在頁面載入時一律會擷取通常對即時顯示而言至關重要的內容。 上述範例會顯示在紅色方塊中。
+在顯示更多動態屬性（如庫存水準/可用性或價格）的情況下，例如在產品詳細資訊頁面(PDP)上，可以使用客戶端元件。 雖然可以使用上述伺服器端呈現方法在調度器上構建和快取模板頁，但在靜態頁本身中可以有動態客戶端web元件。 這些動態元件可以通過GraphQL API直接在客戶端瀏覽器中從Adobe Commerce獲取資料，以在PDP上即時檢查當前價格或庫存水準。 這可確保在頁面載入時始終讀取通常對即時顯示至關重要的內容。 以上示例的紅色框中顯示了此示例。
 
-在結帳過程中，也可使用AEM範本和用戶端轉譯的組合：用戶端購物車元件可呈現購物車、結帳表單，以及與付款服務提供者的整合。 此混合方法也可用於Adobe Commerce的帳戶管理功能，例如建立帳戶、登入帳戶及忘記密碼。
+在檢出過AEM程中，還可以使用模板和客戶端渲染的組合：客戶端購物車元件呈現購物車、結帳表以及與支付服務提供商的整合。 此混合方法還可用於Adobe Commerce的帳戶管理功能，如建立帳戶、登錄帳戶和忘記密碼。

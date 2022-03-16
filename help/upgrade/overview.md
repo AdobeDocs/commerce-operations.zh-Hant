@@ -3,7 +3,7 @@ title: 升級過程概述
 description: 瞭解升級您的Adobe Commerce和Magento Open Source項目如何幫助確保店面的安全和高效運行。
 source-git-commit: 18f5e9c96377e0299fdc776a69393f2ceef3618b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---

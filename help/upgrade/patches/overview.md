@@ -3,7 +3,7 @@ title: 修補程式的工作方式
 description: 瞭解Adobe Commerce和Magento Open Source的不同類型的修補程式以及它們的工作原理。
 source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---

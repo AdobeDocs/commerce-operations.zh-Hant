@@ -1,18 +1,18 @@
 ---
-title: 商務功能
-description: Adobe商務功能清單
-source-git-commit: 1115bbc4f73962f1ebc0c96e9a7026d0b19cd18f
+title: 商業功能
+description: Adobe Commerce特徵清單
+exl-id: 58dd813d-e3bd-4a2e-a145-f1c66f849a38
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '37'
 ht-degree: 0%
 
 ---
 
+# 商業功能
 
-# 商務功能
+提供世界最佳的商業體驗需要支援每個接觸點、業務模式和部署方案。
 
-要提供全球最佳的商務體驗，需要支援每個接觸點、業務模型和部署案例。
-
-## 支援您演變的開放平台
+## 支援您的演變的開放平台
 
 ![商業技術的價值](../../assets/playbooks/commerce-features.png)

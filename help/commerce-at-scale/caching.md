@@ -4,7 +4,7 @@ description: 請參閱建議的快取基準，以確保在負載下站點成功�
 exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
 source-git-commit: 87e379aff4ec57f15ce914a13b4e9bc2769e6d1c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---

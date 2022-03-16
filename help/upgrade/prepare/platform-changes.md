@@ -1,6 +1,6 @@
 ---
-title: 檢閱平台變更
-description: 準備升級Adobe Commerce或Magento Open Source專案時，請先熟悉版本中的主要平台變更。
+title: 查看平台更改
+description: 在準備升級Adobe Commerce或Magento Open Source項目時，請熟悉版本中的主要平台更改。
 source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
 source-wordcount: '179'
@@ -9,25 +9,25 @@ ht-degree: 0%
 ---
 
 
-# 升級前先檢閱平台變更
+# 升級前查看平台更改
 
-Adobe Commerce 2.4.4將於2022年3月8日正式推出，而測試版程式碼現在可供合作夥伴開始準備。 2.4.4版本之所以獨特，是因為包含許多平台更新。 它由PHP 8.1提供技術支援，並提供了幾項關鍵框架升級，包括：
+Adobe Commerce2.4.4將於2022年3月8日正式提供，現在可供合作夥伴開始準備試用版代碼。 2.4.4版是唯一的，因為它包含許多平台更新。 它由PHP 8.1和幾個關鍵框架升級組成，包括：
 
-- 正在取消對PHP 7.3的支援
+- 正在刪除對PHP 7.3的支援
 - 支援OpenSearch作為Elasticsearch的替代
-- 最新版本支援多個系統相依性，包括Elasticsearch、Redis、MySQL、JavaScript程式庫和撰寫器相依性
-- 移除舊版JavaScript程式庫、備援Laminas程式庫和NPM相依性
+- 支援多個系統依賴項(包括Elasticsearch、Redis、MySQL、JavaScript庫和Composer依賴項)的最新版本
+- 刪除舊JavaScript庫、冗餘Laminas庫和NPM依賴項
 
-深入了解 [Adobe Commerce德夫布洛格](https://community.magento.com/t5/Magento-DevBlog/Technical-platform-changes-to-expect-in-Adobe-Commerce-2-4-4/ba-p/485506).
+瞭解有關上的技術平台更改的詳細資訊 [Adobe Commerce·德夫部落格](https://community.magento.com/t5/Magento-DevBlog/Technical-platform-changes-to-expect-in-Adobe-Commerce-2-4-4/ba-p/485506)。
 
 ## 立即開始規劃
 
-從2021年10月至2022年2月，合作夥伴可以訂閱 [Adobe Commerce測試版計畫](https://devdocs.magento.com/release/beta-program.html) 為2022年3月8日的2.4.4正式發行(GA)做準備。
+從2021年10月至2022年2月，合作夥伴可以 [Adobe CommerceBeta計畫](https://devdocs.magento.com/release/beta-program.html) 為2022年3月8日2.4.4大通盤發佈做準備。
 
-請參閱2.4.4測試版計畫排程中的下列主要日期：
+請參閱2.4.4測試版計畫計畫中的以下關鍵日期：
 
-- **2.4.4測試版1**:2021年10月18日
-- **2.4.4測試版2**:2021年11月22日
-- **2.4.4測試版3**:2021年12月14日
+- **2.4.4 Beta 1**:2021年10月18日
+- **2.4.4 Beta 2**:2021年11月22日
+- **2.4.4 Beta 3**:2021年12月14日
 - **2.4.4測試版4**:2022年1月10日
-- **2.4.4正式發行**:2022年3月8日
+- **2.4.4正式**:2022年3月8日

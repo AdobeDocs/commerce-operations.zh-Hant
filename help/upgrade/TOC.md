@@ -1,10 +1,10 @@
 ---
 user-guide-title: 升級指南
-user-guide-description: 瞭解升級Adobe Commerce或Magento Open Source應用程式為何如此重要以及如何成功規劃和執行升級。
+user-guide-description: 了解為什麼升級您的 Adobe Commerce 或 Magento Open Source 應用程式如此重要，以及如何成功規劃和執行升級。
 source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 0%
+ht-degree: 22%
 
 ---
 
