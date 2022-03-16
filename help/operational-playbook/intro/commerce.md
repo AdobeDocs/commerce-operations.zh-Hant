@@ -1,15 +1,15 @@
 ---
-title: 關於Adobe Commerce
+title: Adobe Commerce
 description: Adobe Commerce
 exl-id: 130bae23-8a22-4523-abe2-8dc97b3881d2
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce
+# 關於Adobe Commerce
 
 Adobe Commerce是開放商務創新的領先平台。 每年Adobe Commerce的商品總量超過一千億美元。 Adobe Commerce為客戶提供了創造獨特而迷人的購物體驗、開箱即用功能以及無限定制能力、靈活的無頭架構和無縫的第三方整合的能力。
 

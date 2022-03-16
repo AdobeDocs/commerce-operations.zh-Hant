@@ -1,9 +1,9 @@
 ---
 title: 建議的升級讀數
 description: 查看計畫Adobe Commerce或Magento Open Source升級的建議閱讀。
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: 01ece828514da11459010f2633e370dd53e4e82e
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,39 +13,65 @@ ht-degree: 0%
 
 使用此頁上的資源繼續瞭解Adobe Commerce和Magento Open Source升級。
 
-## 發佈策略
-
-- [通過簡化的發佈策略加快創新](https://magento.com/blog/accelerating-innovation-through-simplified-release-strategy)
-- [生命週期策略](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
-- [發放計畫](https://devdocs.magento.com/release/)
-- [常見問題](https://support.magento.com/hc/en-us/articles/4409421516301-FAQ-for-New-Adobe-Commerce-Release-Strategy-and-Updated-Lifecycle-Policy)
-- [發行類型](https://devdocs.magento.com/release/policy/)
-- [合作夥伴支援](https://solutionpartners.adobe.com/content/dam/spp_assets/restricted/community/Community_47/Webinar_Recording_Commerce_Q4_Product_Update.URL)
-
-## 規劃
-
-- [突發新聞：2.4.4測試版即將發佈](https://community.magento.com/t5/Magento-DevBlog/BREAKING-NEWS-2-4-4-beta-releases-are-coming-soon/ba-p/484310)
-- [2.4.4平台更改](https://community.magento.com/t5/Magento-DevBlog/Technical-platform-changes-to-expect-in-Adobe-Commerce-2-4-4/ba-p/485506)
-- [升級計畫核對清單](https://support.magento.com/hc/en-us/articles/360057968951)
-- [升級最佳做法](../prepare/best-practices.md)
-- [可下載2.4.4升級指南](../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf)
-
-## [!DNL Upgrade Compatibility Tool]
-
-- [準備下一次升級，與Adobe Commerce [!DNL Upgrade Compatibility Tool]](https://community.magento.com/t5/Magento-DevBlog/Prepare-for-Your-Next-Upgrade-with-the-Adobe-Commerce-Upgrade/ba-p/483372)
-- [概述](../upgrade-compatibility-tool/overview.md)
-- [PHPStorm和 [!DNL Upgrade Compatibility Tool]](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html)
-
-## 安全
-
-- [安全掃描工具](https://magento.com/blog/magento-news/secure-your-storefront-enhanced-magento-security-scan-tool)
-- [介紹新的安全修補程式版本](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287)
-
-## 技術
-
-- [2.4.x發行說明](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)
-- [升級過程概述](../overview.md)
-- [軟體可用性](https://devdocs.magento.com/release/availability.html)
-- [後向不相容發展](https://devdocs.magento.com/contributor-guide/backward-compatible-development/index.html)
-- [訪問預發行版](https://support.magento.com/hc/en-us/articles/360034120932)
-- [版本控制架構](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/versioning/)
+<table>
+  <tbody>
+    <tr>
+      <td><strong>發行說明和公告</strong>
+        <ul>
+            <li><a href="https://blog.adobe.com/">Adobe部落格</a></li>
+            <li><a href="https://support.magento.com/hc/en-us">Adobe Help Center</a></li>
+            <li><a href="https://helpx.adobe.com/security/products/magento/apsb22-12.html">Adobe安全公告</a></li>
+            <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
+            <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">發行說明</a></li>
+            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">解決方案合作夥伴門戶</a> （適用於具有有效登錄名的合作夥伴）</li>
+          </ul>
+        </td>
+      <td><strong>工具</strong>
+        <ul>
+            <li><a href="https://magento.com/tech-resources/downloads">下載Adobe Commerce版本</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">如何將升級相容工具與PHPStorm插件一起使用</a> （視頻）</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en">升級相容性工具</a></li>
+            <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityToolSlack頻道</a></li>
+            <li><a href="https://devdocs.magento.com/quality-patches/usage.html">質量修補程式工具</a></li>
+          </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>日曆和策略</strong>
+        <ul>
+            <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace政策</a></li>
+            <li><a href="https://support.magento.com/hc/en-us/articles/4409421516301-FAQ-for-New-Adobe-Commerce-Release-Strategy-and-Updated-Lifecycle-Policy">新Adobe Commerce發佈戰略、更新的生命週期策略和擴展支援的常見問題解答</a></li>
+            <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">生命週期策略</a></li>
+            <li><a href="https://devdocs.magento.com/release/">發放計畫</a></li>
+            <li><a href="https://devdocs.magento.com/release/policy/">發行類型</a></li>
+          </ul>
+        </td>
+      <td><strong>功能和獨立服務</strong>
+        <ul>
+            <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
+            <li><a href="https://marketplace.magento.com/magento-live-search.html">即時搜索</a></li>
+            <li><a href="https://marketplace.magento.com/magento-payment-services.html">付款服務</a></li>
+            <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">產品Recommendations</a></li>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">升級PWA Studio</a></li>
+          </ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>升級資源</strong>
+        <ul>
+             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html?lang=en">2022建議升級路徑</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html">2.4升級指南</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4技術升級研討會記錄</a></li>
+            <li><a href="https://support.magento.com/hc/en-us/articles/360034120932">訪問預發行版</a></li>
+            <li><a href="https://devdocs.magento.com/release/beta-program.html">測試版計畫概述</a></li>
+            <li><a href="https://devdocs.magento.com/contributor-guide/backward-compatible-development/index.html">後向不相容發展</a></li>
+            <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html">反向不相容的更改</a></li>
+            <li><a href="https://support.magento.com/hc/en-us/articles/360057968951-Upgrade-plan-checklist-for-Adobe-Commerce">升級計畫核對表</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/best-practices.html?lang=en">升級最佳做法</a></li>
+            <li><a href="https://devdocs.magento.com/release/availability.html">軟體可用性</a></li>
+          </ul>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
