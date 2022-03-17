@@ -1,9 +1,9 @@
 ---
 title: 建議的升級讀數
 description: 查看計畫Adobe Commerce或Magento Open Source升級的建議閱讀。
-source-git-commit: 01ece828514da11459010f2633e370dd53e4e82e
+source-git-commit: 9700c0066d2f765ff22419f6b61beda4cf1e61bc
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 0%
             <li><a href="https://helpx.adobe.com/security/products/magento/apsb22-12.html">Adobe安全公告</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
             <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">發行說明</a></li>
-            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">解決方案合作夥伴門戶</a> （適用於具有有效登錄名的合作夥伴）</li>
+            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">解決方案合作夥伴門戶</a></li>
           </ul>
         </td>
       <td><strong>工具</strong>
         <ul>
             <li><a href="https://magento.com/tech-resources/downloads">下載Adobe Commerce版本</li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">如何將升級相容工具與PHPStorm插件一起使用</a> （視頻）</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">升級相容性工具PhpStorm插件</a> （視頻）</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en">升級相容性工具</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityToolSlack頻道</a></li>
             <li><a href="https://devdocs.magento.com/quality-patches/usage.html">質量修補程式工具</a></li>
@@ -60,7 +60,7 @@ ht-degree: 0%
       <td><strong>升級資源</strong>
         <ul>
              <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html?lang=en">2022建議升級路徑</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html">2.4升級指南</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf">2.4升級指南</a> (PDF)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4技術升級研討會記錄</a></li>
             <li><a href="https://support.magento.com/hc/en-us/articles/360034120932">訪問預發行版</a></li>
             <li><a href="https://devdocs.magento.com/release/beta-program.html">測試版計畫概述</a></li>
