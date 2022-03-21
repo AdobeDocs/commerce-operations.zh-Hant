@@ -1,7 +1,7 @@
 ---
 title: 查看平台更改
 description: 在準備升級Adobe Commerce或Magento Open Source項目時，請熟悉版本中的主要平台更改。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 2b6410781d4ebb4815ff81c9719612692d176fff
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 升級前查看平台更改
 
-Adobe Commerce2.4.4將於2022年3月8日正式提供，現在可供合作夥伴開始準備試用版代碼。 2.4.4版是唯一的，因為它包含許多平台更新。 它由PHP 8.1和幾個關鍵框架升級組成，包括：
+Adobe Commerce2.4.4將於2022年4月12日正式上市，Adobe Commerce客戶和合作夥伴從3月29日起可獲得預發行權。 2.4.4版是唯一的，因為它包含許多平台更新。 它由PHP 8.1和幾個關鍵框架升級組成，包括：
 
 - 正在刪除對PHP 7.3的支援
 - 支援OpenSearch作為Elasticsearch的替代
