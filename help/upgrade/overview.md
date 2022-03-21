@@ -1,9 +1,9 @@
 ---
 title: 升級過程概述
 description: 瞭解升級您的Adobe Commerce和Magento Open Source項目如何幫助確保店面的安全和高效運行。
-source-git-commit: 517e38aa5b0f413503fdb7ba00be8c605cceb570
+source-git-commit: 5841f30f3b3539de425f0597ef05cab4e3316263
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -84,4 +84,3 @@ Adobe發佈 [發佈計畫](https://devdocs.magento.com/release/) 為商家的規
 - 2.4.0至2.4.3（基於PHP 7.4）於2022年11月達到EOS，當時PHP 7.4達到EOL
 - 根據這兩個物態方程， **到2022年11月升級到2.4.4版或更高版本非常重要**
 - 符合Adobe Commerce [生命週期策略](https://devdocs.magento.com/release/lifecycle-policy.html)，版本2.4.4和2.4.5將收到質量支援和安全補丁，直到2024年11月
-
