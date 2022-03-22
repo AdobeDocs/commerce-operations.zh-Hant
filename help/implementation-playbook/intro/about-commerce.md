@@ -2,9 +2,9 @@
 title: 關於Adobe Commerce
 description: Adobe Commerce
 exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 219cbe839e40afa19b3754a9d5929074ed238920
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -26,9 +26,9 @@ Adobe Commerce讓商家有能力創造獨特而迷人的購物體驗。 該平�
 
 ## 隨時隨地進行無縫購物
 
-無論客戶身在何處，都可滿足客戶的需求，從而推動商業增長。 擴展您的業務範圍，擴展到新的渠道、地域，並在一個平台中向企業和消費者線上銷售。 無論客戶喜歡何時、何地、何地，都可將商業帶到您的客戶那裡。
+服務客戶需求推動了商業增長。 擴展您的業務範圍，擴展到新的渠道、地域，並在一個平台中向企業和消費者線上銷售。 無論客戶喜歡何時、何地、何地，都可將商業帶到您的客戶那裡。
 
-- 移動商務
+- Mobile commerce
 - B2B電子商務
 - PWA Studio
 - 全球擴張
@@ -42,7 +42,7 @@ Adobe Commerce讓商家有能力創造獨特而迷人的購物體驗。 該平�
 
 - 商業智慧
 - 裝運
-- 庫存管理
+- Inventory management
 - 訂單管理和客戶服務
 
 ## 信心十足地工作
