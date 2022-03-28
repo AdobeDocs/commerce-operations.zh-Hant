@@ -1,9 +1,9 @@
 ---
 title: 概述 [!DNL Upgrade Compatibility Tool]
 description: 瞭解 [!DNL Upgrade Compatibility Tool] 以及它如何幫助你完成Adobe Commerce計畫。
-source-git-commit: 218b099caa883f66ddda48407fb789e51fedc203
+source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 以下用例描述了Adobe Commerce合作夥伴升級客戶端實例的典型過程：
 
-1. 下載 [!DNL Upgrade Compatibility Tool] 包 [Adobe Commerce庫](https://repo.magento.com/)。 查看 [下載 [!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) 的子菜單。
+1. 下載 [!DNL Upgrade Compatibility Tool] 包來自Adobe Commerce儲存庫(`https://repo.magento.com/`)。 查看 [下載 [!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) 的子菜單。
 1. 執行 [!DNL Upgrade Compatibility Tool] 在 [β](https://devdocs.magento.com/release/beta-program.html) 最新階段 [Adobe Commerce釋放](https://devdocs.magento.com/release/)。
 1. 主命令是 `upgrade:check`。 此命令將分析實例並檢查實例中的錯誤、警告和嚴重問題。 要優化結果：
 
