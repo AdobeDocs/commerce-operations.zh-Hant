@@ -1,10 +1,10 @@
 ---
 title: 建議的升級讀數
 description: 查看計畫Adobe Commerce或Magento Open Source升級的建議閱讀。
-source-git-commit: de3ab30a0831f6bbf92313c568ac624212868afe
+source-git-commit: 1cecdf89df9a870d57347468ce9220f74d46cd73
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 3%
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,6 @@ ht-degree: 3%
             <li><a href="https://marketplace.magento.com/magento-live-search.html">即時搜索</a></li>
             <li><a href="https://marketplace.magento.com/magento-payment-services.html">付款服務</a></li>
             <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">產品Recommendations</a></li>
-            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">升級PWA Studio</a></li>
           </ul>
       </td>
     </tr>
@@ -77,7 +76,13 @@ ht-degree: 3%
             <li><a href="https://devdocs.magento.com/release/availability.html">軟體可用性</a></li>
           </ul>
       </td>
-      <td></td>
+      <td><strong>店面體驗</strong>
+        <p>瞭解最新的店面技術，您可以利用這些技術為客戶構建獨特的體驗。</p>
+          <ul>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/">PWA Studio</a></li>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">升級PWA Studio</a></li>
+          </ul>
+      </td>
     </tr>
   </tbody>
 </table>
