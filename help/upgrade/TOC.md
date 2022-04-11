@@ -1,50 +1,51 @@
 ---
 user-guide-title: 升級指南
 user-guide-description: 了解為什麼升級您的 Adobe Commerce 或 Magento Open Source 應用程式如此重要，以及如何成功規劃和執行升級。
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d4aac5687b299603f763b7fee14c768c67754e63
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 22%
+source-wordcount: '124'
+ht-degree: 21%
 
 ---
 
 
 # 升級指南 {#upgrade-guide}
 
-- [升級過程概述](overview.md)
-- 升級之旅 {#journey}
-   - [旅程階段](journey/phases.md)
-   - [項目啟動](journey/project-launch.md)
-   - [年度計畫](journey/annual-planning.md)
-   - [實施](journey/implementation.md)
-- 準備 {#prepare}
-   - [最佳做法](prepare/best-practices.md)
-   - [查看平台更改](prepare/platform-changes.md)
-   - [完成升級先決條件](prepare/prerequisites.md)
-   - [瞭解升級範圍](prepare/scope.md)
-- 實施 {#implementation}
-   - [執行升級](implementation/perform-upgrade.md)
-- 模組和擴展 {#modules}
-   - [升級模組](modules/upgrade.md)
-   - [管理模組](modules/manage.md)
-- 修補程式 {#patches}
-   - [修補程式的工作方式](patches/overview.md)
-   - [應用修補程式](patches/apply.md)
+- [Overview of the upgrade process](overview.md)
+- {#journey}
+   - [Journey phases](journey/phases.md)
+   - [Project launch](journey/project-launch.md)
+   - [Annual planning](journey/annual-planning.md)
+   - [Implementation](journey/implementation.md)
+- {#prepare}
+   - [Best practices](prepare/best-practices.md)
+   - [Review platform changes](prepare/platform-changes.md)
+   - [Complete upgrade prerequisites](prepare/prerequisites.md)
+   - [Understand upgrade scope](prepare/scope.md)
+- {#implementation}
+   - [Perform an upgrade](implementation/perform-upgrade.md)
+- {#modules}
+   - [Upgrade modules](modules/upgrade.md)
+   - [Manage modules](modules/manage.md)
+- {#patches}
+   - [How patches work](patches/overview.md)
+   - [Apply patches](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [概述](upgrade-compatibility-tool/overview.md)
-   - [先決條件](upgrade-compatibility-tool/prerequisites.md)
-   - [安裝](upgrade-compatibility-tool/install.md)
-   - [運行工具](upgrade-compatibility-tool/run.md)
-   - [開發人員資訊](upgrade-compatibility-tool/developer.md)
-   - [錯誤消息](upgrade-compatibility-tool/error-messages.md)
-- 貢獻開發者 {#developer}
-   - [升級基於Git的安裝](developer/git-installs.md)
-   - [管理模組](developer/manage-modules.md)
-- 故障排除 {#troubleshooting}
-   - [不支援當前搜索引擎](troubleshooting/search-engine-not-supported.md)
-   - [模組更新失敗後回滾](troubleshooting/roll-back-after-update-failure.md)
-   - [升級的維護模式選項](troubleshooting/maintenance-mode-options.md)
-- 資源 {#resources}
-   - [建議閱讀](resources/recommended-reading.md)
-   - [利用Adobe Commerce2.4.4+實現平台現代化](resources/recommended-upgrade-paths-2022.md)
-   - [升級計畫核對清單](https://support.magento.com/hc/en-us/articles/360057968951)
+   - [Overview](upgrade-compatibility-tool/overview.md)
+   - [Prerequisites](upgrade-compatibility-tool/prerequisites.md)
+   - [Install](upgrade-compatibility-tool/install.md)
+   - [Run the tool](upgrade-compatibility-tool/run.md)
+   - [ [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+   - [Developer information](upgrade-compatibility-tool/developer.md)
+   - [Error messages](upgrade-compatibility-tool/error-messages.md)
+- {#developer}
+   - [Upgrade a git-based installation](developer/git-installs.md)
+   - [Manage modules](developer/manage-modules.md)
+- {#troubleshooting}
+   - [Current search engine not supported](troubleshooting/search-engine-not-supported.md)
+   - [Roll back after module update failure](troubleshooting/roll-back-after-update-failure.md)
+   - [Maintenance mode options for upgrade](troubleshooting/maintenance-mode-options.md)
+- {#resources}
+   - [Recommended reading](resources/recommended-reading.md)
+   - [Modernizing your platform with Adobe Commerce 2.4.4+](resources/recommended-upgrade-paths-2022.md)
+   - [](https://support.magento.com/hc/en-us/articles/360057968951)
