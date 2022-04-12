@@ -1,9 +1,9 @@
 ---
 title: 完成先決條件
 description: 通過完成這些先決條件步驟，為升級準備您的Adobe Commerce或Magento Open Source項目。
-source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
+source-git-commit: ea5de44ab40b873fa30393359dd714534bd789e3
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 在複查系統要求後，必須先完成以下先決條件，然後才能升級系統：
 
 - 更新所有軟體
-- 驗證是否安裝了Elasticsearch
+- 驗證是否安裝了支援的搜索引擎
 - 設定開啟的檔案限制
 - 驗證cron作業是否正在運行
 - 設定 `DATA_CONVERTER_BATCH_SIZE`
@@ -30,13 +30,17 @@ ht-degree: 0%
 
 確保更新環境中的所有系統要求和依賴項。 參見PHP [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php), [所需的PHP設定](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html#php-required-set)。
 
-## 驗證Elasticsearch是否已安裝
+## 驗證是否安裝了支援的搜索引擎
 
-Adobe Commerce和Magento Open Source需要安裝Elasticsearch才能使用軟體。 在從2.3.x升級到2.4之前，必須檢查在2.3.x實例中是使用MySQL、Elasticsearch還是第三方擴展作為目錄搜索引擎。 結果決定了您必須做什麼 _先_ 升級到2.4。
+Adobe Commerce和Magento Open Source需要安裝Elasticsearch或OpenSearch才能使用軟體。
+
+**如果要從2.3.x升級到2.4**，您必須檢查在2.3.x實例中是使用MySQL、Elasticsearch還是第三方擴展作為目錄搜索引擎。 結果決定了您必須做什麼 _先_ 升級到2.4。
+
+**如果要升級2.3.x或2.4.x發行版中的補丁程式版本**，如果已安裝Elasticsearch7.x，則您可以選擇 [遷移到OpenSearch](opensearch-migration.md)。
 
 您可以使用命令行或管理員來確定目錄搜索引擎：
 
-- 輸入 `bin/magento config:show catalog/search/engine` 的子菜單。 該命令返回的值 `mysql`。 `elasticsearch` (表示已配置Elasticsearch2), `elasticsearch5`。 `elasticsearch6`。 `elasticsearch7`或自定義值，表示您已安裝第三方搜索引擎。
+- 輸入 `bin/magento config:show catalog/search/engine` 的子菜單。 該命令返回的值 `mysql`。 `elasticsearch` (表示已配置Elasticsearch2), `elasticsearch5`。 `elasticsearch6`。 `elasticsearch7`或自定義值，表示您已安裝第三方搜索引擎。 值 `elasticsearch7` 指示已安裝Elasticsearch7或OpenSearch。
 
 - 在管理員中，檢查 **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** 的子菜單。
 
@@ -44,24 +48,38 @@ Adobe Commerce和Magento Open Source需要安裝Elasticsearch才能使用軟體�
 
 ### MySQL
 
-從2.4開始，MySQL不再是受支援的目錄搜索引擎。 升級前必須安裝和配置Elasticsearch。 使用以下資源幫助您完成此過程：
+從2.4開始，MySQL不再是受支援的目錄搜索引擎。 升級前必須安裝和配置Elasticsearch或OpenSearch。 使用以下資源幫助您完成此過程：
 
 - [安裝和配置Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-overview.html)
 - [安裝Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- 配置要使用的Elasticsearch [nginx](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-config-nginx.html) 或 [阿帕奇](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-config-apache.html)
+- 配置 [nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html) 或 [阿帕奇](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html) 使用搜索引擎
 - [將Commerce配置為使用Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) 重新索引
 
 一些第三方目錄搜索引擎在Adobe Commerce搜索引擎上運行。 聯繫您的供應商以確定您是否必須更新擴展。
 
 ### Elasticsearch
 
-必須安裝和配置Elasticsearch，然後才能升級到2.4.0。Adobe不再支援Elasticsearch2.x、5.x和6.x。
+在升級到2.4.0之前，必須安裝並配置Elasticsearch7.6或更高版本或OpenSearch 1.2。Adobe不再支援Elasticsearch2.x、5.x和6.x。
 
 請參閱 [升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) 有關備份資料、檢測潛在遷移問題和在部署到生產之前測試升級的完整說明。 根據您當前版本的Elasticsearch，可能需要或不需要完全群集重新啟動。
 
 Elasticsearch需要JDK 1.8或更高版本。 請參閱 [安裝Java軟體開發工具包(JDK)](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) 以檢查安裝的JDK版本。
 
 [配置Magento以使用Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) 描述將Elasticsearch2更新為支援的版本後必須執行的任務。
+
+### 開啟搜索
+
+OpenSearch是Elasticsearch7.10.2的開源分支，Elasticsearch更改許可後。 以下版本的Adobe Commerce和Magento Open Source引入了對OpenSearch的支援：
+
+- 2.4.4
+- 2.4.3-p2
+- 2.3.7-p3
+
+你可以 [從Elasticsearch遷移到OpenSearch](opensearch-migration.md) 僅當您升級到上面列出的Adobe Commerce或Magento Open Source版本（或更高版本）時。
+
+OpenSearch需要JDK 1.8或更高版本。 請參閱 [安裝Java軟體開發工具包(JDK)](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) 以檢查安裝的JDK版本。
+
+[配置Magento以使用Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) 描述了更改搜索引擎後必須執行的任務。
 
 ### 第三方擴展
 
