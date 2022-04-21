@@ -2,10 +2,10 @@
 keywords: Adobe Commerce；首頁；熱門主題
 title: 首頁
 description: 瀏覽Adobe Commerce運營產品文檔的索引。
-source-git-commit: 29b8d64cd700531f04166ad20694fa342ea0e186
+source-git-commit: bca5208cb5a53ac839c666cb42f2124de5d96be2
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 2%
+source-wordcount: '212'
+ht-degree: 1%
 
 ---
 
@@ -127,3 +127,4 @@ ht-degree: 2%
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | 已添加 [資訊](../upgrade/upgrade-compatibility-tool/overview.md) 關於如何定義升級相容性工具的規則。 | 主要更新 |
 | 已刪除過期的升級相容性工具 [錯誤代碼](../upgrade/upgrade-compatibility-tool/error-messages.md)。 | 技術 |
+| 已移動 [站點範圍分析工具指南](../tools/site-wide-analysis-tool/intro.md) 從 [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) Experience League。 | 新建 |
