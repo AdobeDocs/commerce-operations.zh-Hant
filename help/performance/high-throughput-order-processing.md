@@ -1,9 +1,9 @@
 ---
 title: 高吞吐量訂單處理
 description: 優化您的Adobe Commerce或Magento Open Source部署的訂單投放和結帳體驗。
-source-git-commit: 0a902d7fe967bbcee5019fea83e5be66ce2aefd0
+source-git-commit: c4c52baa9e04a4e935ccc29fcce2ac2745a454ee
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,10 @@ ht-degree: 0%
 通過配置以下一組模組，您可以優化訂單放置和結帳體驗 **高吞吐量訂單處理**:
 
 - [非同步順序](#asynchronous-order-placement) — 使用隊列非同步處理訂單。
-- [可轉讓報價非同步訂單](#negotiable-quote-asyn-order) — 非同步處理ContigalQuote保存訂單項。
-- [DeferredTotalCalculation](#deferred-total-calculation) — 在簽出開始之前，將定義訂單合計的計算。
+- [延遲的總計計算](#deferred-total-calculation) — 在簽出開始之前，將定義訂單合計的計算。
+- [報價載入時庫存檢查](#disable-inventory-check) — 選擇跳過購物車物料的庫存驗證。
 
-所有功能都獨立工作。 您可以同時使用所有功能，或在任何組合中啟用和禁用功能。
-
-使用命令行介面啟用這些功能，或編輯 `app/etc/env.php` 檔案，根據中定義的相應README檔案 [_模組參考指南_][mrg]。
+所有功能（AsyncOrder、延遲總計計算和清單檢查）均獨立工作。 您可以同時使用所有三種功能，或在任意組合中啟用和禁用功能。
 
 ## 非同步訂單放置
 
@@ -30,7 +28,9 @@ ht-degree: 0%
 - **產品可用** — 訂單狀態更改為 _待定_&#x200B;調整產品數量，向客戶發送包含訂單詳細資訊的電子郵件，成功的訂單詳細資訊可在 **訂單和退貨** 清單，其中包含可操作的選項，如重新排序。
 - **產品庫存不足或供應不足** — 訂單狀態更改為 _已拒絕_，產品數量不會調整，將向客戶發送包含有關問題的訂單詳細資訊的電子郵件，拒絕的訂單詳細資訊將在 **訂單和退貨** 清單中沒有可操作的選項。
 
-要啟用AsyncOrder:
+使用命令行介面啟用這些功能，或編輯 `app/etc/env.php` 檔案，根據中定義的相應README檔案 [_模組參考指南_][mrg]。
+
+**啟用AsyncOrder**:
 
 可以使用命令行介面啟用AsyncOrder:
 
@@ -49,7 +49,7 @@ bin/magento setup:config:set --checkout-async 1
 
 請參閱 [非同步順序] 的 _模組參考指南_。
 
-要禁用AsyncOrder:
+**禁用AsyncOrder**:
 
 >[!WARNING]
 >
@@ -109,7 +109,7 @@ AsyncOrder支援有限集 [!DNL Commerce] 功能。
 
 開發人員可以通過將某些付款方法添加到 `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` 陣列。 使用排除的付款方法的訂單將同步處理。
 
-## 可轉讓報價非同步訂單
+### 可轉讓報價非同步訂單
 
 的 _可轉讓報價非同步訂單_ B2B模組使您能夠非同步保存訂單項 `NegotiableQuote` 功能。 您必須啟用AsyncOrder和CondigateQuote。
 
@@ -117,9 +117,9 @@ AsyncOrder支援有限集 [!DNL Commerce] 功能。
 
 的 _延遲的總計計算_ 模組通過延遲總計計算來優化結帳過程，直到為購物車請求總計計算或在最終結帳步驟期間。 啟用後，當客戶將產品添加到購物車時，只計算小計。
 
-DeferredTotalCalculation為 **禁用** 預設值。
+DeferredTotalCalculation為 **禁用** 預設值。 使用命令行介面啟用這些功能，或編輯 `app/etc/env.php` 檔案，根據中定義的相應README檔案 [_模組參考指南_][mrg]。
 
-要啟用DeferredTotalCalculation，請執行以下操作：
+**啟用DeferedTotalCalculation**:
 
 可以使用命令行介面啟用DeferredTotalCalculation:
 
@@ -136,7 +136,7 @@ bin/magento setup:config:set --deferred-total-calculating 1
    ]
 ```
 
-要禁用DeferredTotalCalculation，請執行以下操作：
+**禁用DeferredTotalCalculation**:
 
 可以使用命令行介面禁用DeferredTotalCalculation:
 
@@ -165,9 +165,7 @@ bin/magento setup:config:set --deferred-total-calculating 0
 
 禁用時，在將產品添加到購物車時不會執行庫存檢查。 如果跳過此庫存檢查，則某些庫存不足方案可能會引發其他類型的錯誤。 庫存檢查 _總是_ 在訂單放置步驟中出現，即使禁用。
 
-啟用購物車上的庫存是 **啟用** 預設值。
-
-要在載入購物車時禁用庫存檢查，請設定 **[!UICONTROL Enable Inventory Check On Cart Load]** 至 `No` 的子菜單。 請參閱 [配置全局選項][global] 和 [目錄清單][inventory] 的 _使用手冊_。
+**啟用購物車裝貨時的庫存檢查** 在預設情況下啟用（設定為「是」）。 要在載入購物車時禁用庫存檢查，請設定 **[!UICONTROL Enable Inventory Check On Cart Load]** 至 `No` 在管理員UI中 **商店** > **配置** > **目錄** > **庫存** > **股票期權** 的子菜單。 請參閱 [配置全局選項][global] 和 [目錄清單][inventory] 的 _使用手冊_。
 
 <!-- link definitions -->
 
