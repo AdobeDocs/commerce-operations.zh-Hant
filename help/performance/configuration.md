@@ -1,7 +1,7 @@
 ---
 title: 配置最佳做法
 description: 使用這些最佳做法優化您的Adobe Commerce或Magento Open Source部署的響應時間。
-source-git-commit: 09c4d0e09354230c8779b930f085d8c7c131b85b
+source-git-commit: 20c4f55162b25be8906562c395abf4671437992b
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 配置最佳做法
 
-Commerceo提供了許多設定和工具，您可以使用這些設定和工具來縮短頁面上的響應時間，並提供更高的吞吐量。
+Commerce提供了許多設定和工具，您可以使用這些設定和工具來縮短頁面上的響應時間，並提供更高的吞吐量。
 
 ## 克龍·喬布斯
 
