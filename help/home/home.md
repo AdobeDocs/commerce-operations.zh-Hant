@@ -2,10 +2,10 @@
 keywords: Adobe Commerce；首頁；熱門主題
 title: 首頁
 description: 瀏覽Adobe Commerce運營產品文檔的索引。
-source-git-commit: bca5208cb5a53ac839c666cb42f2124de5d96be2
+source-git-commit: e38d4f1c3e7618e77afb638f4a996cd7e5ebdbd5
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 1%
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/quality-patches/tool.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html">
        <img alt="工具" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
