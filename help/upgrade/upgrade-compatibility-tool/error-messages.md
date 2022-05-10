@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 錯誤消息"'
 description: 瞭解有關使用時遇到的錯誤消息的詳細資訊 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce計畫。
-source-git-commit: 9bdf64177b4cecab5dd3562fef0bcc507a57ccf0
+source-git-commit: d62299d23d73b8566ed1c9b9739ca59fb0535d6f
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3756'
 ht-degree: 5%
 
 ---
@@ -141,16 +141,6 @@ ht-degree: 5%
 | 5026 | 不使用 `"text/javascript"` 類型屬性 | 僅使用公共成員。 |
 | 5028 | 訪問受保護和私有成員 `Block` 類在phtml模板中已過時 | 僅使用公共成員。 |
 | 5031 | 包含過時方法 | 使用 `getConnection()` 的雙曲餘切值。 |
-| 5032 | `loadLayout` 方法已棄用 | 使用 `\Magento\Framework\View\Layout\Builder::build` 的雙曲餘切值。 |
-| 5033 | `renderLayout` 方法已棄用 | 使用 `\Magento\Framework\Controller\ResultInterface::renderResult` 的雙曲餘切值。 |
-| 5034 | `_redirect` 方法已棄用 | 使用 `\Magento\Backend\Model\View\Result\Redirect::render` 的雙曲餘切值。 |
-| 5035 | `_forward` 方法已棄用 | 使用 `\Magento\Backend\Model\View\Result\Forward::forward` 的雙曲餘切值。 |
-| 5036 | `_setActiveMenu` 方法已棄用 | 使用 `\Magento\Backend\Model\View\Result\Page::setActiveMenu` 的雙曲餘切值。 |
-| 5037 | `_addBreadcrumb` 方法已棄用 | 使用 `\Magento\Backend\Model\View\Result\Page::addBreadcrumb` 的雙曲餘切值。 |
-| 5038 | `_addContent` 方法已棄用 | 使用 `\Magento\Backend\Model\View\Result\Page::addContent` 的雙曲餘切值。 |
-| 5039 | `_addLeft` 方法已棄用 | 使用 `\Magento\Backend\Model\View\Result\Page::addLeft` 的雙曲餘切值。 |
-| 5040 | `_addJs` 方法已棄用 | 使用 `\Magento\Backend\Model\View\Result\Page::addJs` 的雙曲餘切值。 |
-| 5041 | `_moveBlockToContainer` 方法已棄用 | 使用 `\Magento\Backend\Model\View\Result\Page::moveBlockToContainer` 的雙曲餘切值。 |
 | 5042 | PHP類引用的格式不正確 | 檢查僅使用camelCased字母、數字和無前導斜槓引用的類。 |
 | 5043 | 模組引用的格式不正確 | 檢查僅使用字母、數字、下划線和無前導斜槓引用的模組。 |
 | 5044 | 類 `Zend_Db_Select` 受限 | 建議的替換： `\Magento\Framework\DB\Select`。 |
