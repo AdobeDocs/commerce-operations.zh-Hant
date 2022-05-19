@@ -1,10 +1,10 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 錯誤消息"'
 description: 瞭解有關使用時遇到的錯誤消息的詳細資訊 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce計畫。
-source-git-commit: d62299d23d73b8566ed1c9b9739ca59fb0535d6f
+source-git-commit: a13b0ea5aa109ce2f5d33e0966b194d64bad5d0c
 workflow-type: tm+mt
-source-wordcount: '3756'
-ht-degree: 5%
+source-wordcount: '3782'
+ht-degree: 4%
 
 ---
 
@@ -233,6 +233,7 @@ ht-degree: 5%
 | 1338 | 已實施Adobe Commerce `@deprecated` 介面 | 在即將推出的版本中將刪除不推薦使用的介面。 請考慮使用標籤為 `@api` 或在實現中引入的介面。 |
 | 1430 | 調用未聲明的資料對象方法 | 可以更改未聲明的幻方法。 請考慮改用依賴介面方法。 |
 | 1439 | 打給Adobe Commerce `@deprecated` 方法 | 在即將到來的版本中將刪除已棄用的方法。 請考慮改用API介面中聲明的方法。 |
+| 1440 | 方法簽名不匹配 | 使用與方法簽名不匹配的參數、參數或返回類型檢測核心方法的調用或覆蓋。 |
 | 1534 | 使用Adobe Commerce `@deprecated` 屬性 | 在即將到來的版本中將刪除已棄用的方法。 請考慮改用API介面中聲明的方法。 |
 | 1535 | 壓倒一切的Adobe Commerce `@deprecated` 屬性 | 將在即將發佈的版本中刪除已棄用的屬性。 請考慮依賴在API介面中聲明的方法，或在實現中使用私有屬性。 |
 | 1536 | Adobe Commerce `@deprecated` 屬性 | 在即將到來的版本中將刪除已棄用的方法。 請考慮改用API介面中聲明的方法。 |
