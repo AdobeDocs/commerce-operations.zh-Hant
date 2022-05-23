@@ -1,9 +1,9 @@
 ---
 title: 運行 [!DNL Upgrade Compatibility Tool]
 description: 按照以下步驟運行 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce計畫。
-source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
+source-git-commit: d5811225d695c44cc8f67ae01cf688fe6382dc23
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '2030'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,15 @@ bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 
 #### HTML
 
-HTML檔案還包含已識別問題和分析摘要的清單。 它還包括四個不同的圖表：
+HTML檔案還包含分析摘要和已確定問題的清單。
+
+![HTML報告 — 摘要](../../assets/upgrade-guide/uct-html-summary.png)
+
+您可以在 [!DNL Upgrade Compatibility Tool] 分析：
+
+![HTML報告 — 詳細資訊](../../assets/upgrade-guide/uct-html-details.png)
+
+HTML報告還包括四個不同的圖表：
 
 - **按問題嚴重性劃分的模組**:按模組顯示嚴重性分佈。
 - **按問題嚴重性列出的檔案**:按檔案顯示嚴重性分佈。
@@ -171,9 +179,21 @@ HTML檔案還包含已識別問題和分析摘要的清單。 它還包括四個
 
 通過這些圖表，您可以（一目瞭然地）確定最易損壞的部件以及執行升級需要更多工作的部件。
 
-![HTML報告 — 摘要](../../assets/upgrade-guide/uct-html-summary.png)
+![HTML報告 — 圖](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-![HTML報告 — 詳細資訊](../../assets/upgrade-guide/uct-html-details.png)
+您將能夠根據最小問題級別(預設情況下， [警告])。
+
+右上角有一個下拉清單，允許您根據必需品選擇其他下拉清單。 將相應地篩選已確定問題的清單。
+
+![HTML報告 — 下拉用法](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+
+請注意，問題級別較低的問題已消除，但您會收到通知，因此您始終瞭解每個模組所發現的問題。
+
+圖也會相應更新，但是 `Modules with relative sizes and issues`，它與 `min-issue-level` 最初設立的。
+
+如果要查看不同的結果，則需要重新運行為 `--min-issue-level` 的雙曲餘切值。
+
+![HTML報告 — 氣泡圖圖](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
 要將此報告導出到其他輸出資料夾中，請運行：
 
@@ -341,8 +361,8 @@ bin/uct graphql:compare <schema1> <schema2>
 的 [!DNL Upgrade Compatibility Tool] 提供一個報告，其中包含預設情況下在項目上確定的所有問題。 您可以優化結果，以專注於完成升級必須解決的問題：
 
 - 使用選項 `--ignore-current-version-compatibility-issues`，它針對您當前的Adobe Commerce版本隱藏所有已知的嚴重問題、錯誤和警告。 它僅針對您嘗試升級到的版本提供錯誤。
-- 添加 `--min-issue-level` 選項，此設定允許設定最小問題級別，以幫助您僅排定升級中最重要問題的優先順序。 如果只要分析某個供應商、模組甚至目錄，也可以將路徑指定為選項。
-- 運行 `bin` 命令和添加的選項 `-m`。 這允許 [!DNL Upgrade Compatibility Tool] 獨立分析特定模組，並幫助解決執行時可能出現的記憶體問題 [!DNL Upgrade Compatibility Tool]。
+- 添加 `--min-issue-level` 選項，此設定允許設定最小問題級別，以幫助您僅排定升級中最重要問題的優先順序。
+- 如果只要分析某個供應商、模組甚至目錄，也可以將路徑指定為選項。 運行 `bin` 命令和添加的選項 `-m`。 這允許 [!DNL Upgrade Compatibility Tool] 獨立分析特定模組，並幫助解決執行時可能出現的記憶體問題 [!DNL Upgrade Compatibility Tool]。
 
 ### 遵循Adobe Commerce最佳做法
 
