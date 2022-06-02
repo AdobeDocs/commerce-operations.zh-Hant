@@ -1,9 +1,9 @@
 ---
-title: 概述 [!DNL Upgrade Compatibility Tool]
+title: 「概述 [!DNL Upgrade Compatibility Tool]"
 description: 瞭解 [!DNL Upgrade Compatibility Tool] 以及它如何幫助你完成Adobe Commerce計畫。
-source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,46 +11,27 @@ ht-degree: 0%
 
 # 指南概述
 
+{{commerce-only}}
+
 本指南適用於Adobe Commerce的管理員和軟體工程師。 它包括有關安裝 [!DNL Upgrade Compatibility Tool]，以及其配置和管理。 它假定對核心Commerce配置和功能有基本的瞭解。
 
 ## 概述 [!DNL Upgrade Compatibility Tool]
 
-{{commerce-only}}
+的 [!DNL Upgrade Compatibility Tool] 是一種工具，它通過分析Adobe Commerce定制實例中安裝的所有模組和核心代碼，來檢查特定版本的自定義實例。 它返回一個重要問題、錯誤和警告的清單，在升級到更新版本的Adobe Commerce之前，必須解決這些問題。
 
-的 [!DNL Upgrade Compatibility Tool] 是一種命令行工具，它通過分析Adobe Commerce定制實例中安裝的所有模組和核心代碼來對照特定版本檢查該實例。 它返回一個重要問題、錯誤和警告的清單，在升級到更新版本的Adobe Commerce之前，必須解決這些問題。
+## 使用 [!DNL Upgrade Compatibility Tool]
 
-請參閱 [運行工具](../upgrade-compatibility-tool/run.md) 的子菜單。
+您可以使用 [!DNL Upgrade Compatibility Tool] 通過：
 
-請參閱 [安裝](../upgrade-compatibility-tool/install.md) 第一步 [!DNL Upgrade Compatibility Tool]。
-
-查看 [視頻教程](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02)瞭解有關 [!DNL Upgrade Compatibility Tool]。
+- 作為獨立 [命令行介面](../upgrade-compatibility-tool/run.md) 工具欄。
+- 整合 [!DNL Upgrade Compatibility Tool] 和 [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md)。
+- 運行配置 [MagentoPHPStorm插件](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)。
 
 ### 工作流
 
 下圖顯示了運行 [!DNL Upgrade Compatibility Tool]:
 
 ![[!DNL Upgrade Compatibility Tool] 圖](../../assets/upgrade-guide/uct-diagram-v5.png)
-
-### 的 [!DNL Upgrade Compatibility Tool] 用例
-
-以下用例描述了Adobe Commerce合作夥伴升級客戶端實例的典型過程：
-
-1. 下載 [!DNL Upgrade Compatibility Tool] 包來自Adobe Commerce儲存庫(`https://repo.magento.com/`)。 查看 [下載 [!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/install.md#download-the-upgrade-compatibility-tool) 的子菜單。
-1. 執行 [!DNL Upgrade Compatibility Tool] 在 [β](https://devdocs.magento.com/release/beta-program.html) 最新階段 [Adobe Commerce釋放](https://devdocs.magento.com/release/)。
-1. 為當前安裝的特定版本的Adobe Commerce生成香草實例。 查看 [貢獻者指南](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) 的子菜單。 `instance` 命令生成香草安裝。
-
-   >[!NOTE]
-   >
-   >Vanilla實例是指特定版本的指定版本標籤或分支的全新安裝。
-
-1. 的 [!DNL Upgrade Compatibility Tool] 確定將幫助軟體工程師瞭解複雜性並評估升級工作的升級問題。
-1. 此資訊與利益相關方共用。
-1. 將為升級定義預算和時間表。
-1. 然後，軟體工程師可以處理所需的代碼修改來修復損壞的模組。
-1. 的 [!DNL Upgrade Compatibility Tool] 可以執行以跟蹤升級進度。
-1. 現在，所有檢查和工程部門都可以將代碼推送到分段環境，在該環境中，回歸test確認所有test都是綠色的，這樣，他們就可以在Adobe Commerce預發佈的同一天將最新的Adobe Commerce版本發佈到生產環境中。
-
-   ![[!DNL Upgrade Compatibility Tool] 觀眾](../../assets/upgrade-guide/audience-uct-v3.png)
 
 ### 幫助改進 [!DNL Upgrade Compatibility Tool]
 
@@ -60,13 +41,13 @@ ht-degree: 0%
 
 的 [!DNL Upgrade Compatibility Tool] 使用我們 [編碼標準](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) 確保您的項目遵循Adobe Commerce的最佳實踐並幫助您改進和擴展 [!DNL Upgrade Compatibility Tool]。
 
-請參閱 [貢獻](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html)  主題，以瞭解有關提供編碼標準的詳細資訊。
+請參閱 [貢獻](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) 主題，以瞭解有關提供編碼標準的詳細資訊。
 
 ### 資源
 
-我們開發了以下資源來幫助您瞭解Adobe Commerce升級：
+查看以下資源，幫助您瞭解Adobe Commerce升級：
 
-- [升級指南](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
-- [即將發佈的版本](https://devdocs.magento.com/release/)
-- [社區資源](https://devdocs.magento.com/community/resources/resources.html) 的子菜單。
-- [相關工具](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/related-tools.html)
+- 的 [升級指南](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) 概括介紹了Adobe Commerce或Magento Open Source的典型升級過程和遵循該過程的最佳做法。
+- 的 [即將發佈](https://devdocs.magento.com/release/) 頁面提供計畫版本和即將發佈的日期。
+- 的 [社區資源](https://developer.adobe.com/commerce/contributor/community/) 頁面可以啟動討論或查找更多資訊。
+- 檢查 [相關工具](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/related-tools.html) 頁面，查看典型升級過程中的有用工具。

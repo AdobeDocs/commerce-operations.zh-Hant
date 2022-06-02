@@ -1,10 +1,10 @@
 ---
 user-guide-title: 升級指南
 user-guide-description: 了解為什麼升級您的 Adobe Commerce 或 Magento Open Source 應用程式如此重要，以及如何成功規劃和執行升級。
-source-git-commit: 84c24627c00ecea97e29bf0cb023ddf2dc285aeb
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 20%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,13 +32,16 @@ ht-degree: 20%
    - [修補程式的工作方式](patches/overview.md)
    - [應用修補程式](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [[!DNL Upgrade Compatibility Tool] 概述](upgrade-compatibility-tool/overview.md)
+   - [概述](upgrade-compatibility-tool/overview.md)
    - [先決條件](upgrade-compatibility-tool/prerequisites.md)
-   - [安裝](upgrade-compatibility-tool/install.md)
-   - [運行工具](upgrade-compatibility-tool/run.md)
+   - 使用 [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+      - [在命令行介面中運行工具](upgrade-compatibility-tool/run.md)
+      - [與 [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [在MagentoPHPStorm插件中運行工具](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
+   - 報告 {#reporting}
+      - [報表](upgrade-compatibility-tool/reports.md)
+      - [錯誤消息](upgrade-compatibility-tool/error-messages.md)
    - [相關工具](upgrade-compatibility-tool/related-tools.md)
-   - [整合 [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-   - [錯誤消息](upgrade-compatibility-tool/error-messages.md)
 - 貢獻開發者 {#developer}
    - [升級基於Git的安裝](developer/git-installs.md)
    - [管理模組](developer/manage-modules.md)

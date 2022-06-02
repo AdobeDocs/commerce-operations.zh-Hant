@@ -1,9 +1,9 @@
 ---
 title: 「整合 [!DNL Site-Wide Analysis Tool]"
 description: 按照以下步驟檢索 [!DNL Upgrade Compatibility Tool] 報告 [!DNL Site-Wide Analysis Tool] 你的Adobe Commerce項目的儀表板。
-source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # 整合 [!DNL Site-Wide Analysis Tool]
 
-的 [!DNL Site-Wide Analysis Tool] 提供24/7即時效能監控、報告和建議，以確保Adobe Commerce安裝的安全性和可操作性。
+的 [!DNL Site-Wide Analysis Tool] 提供24/7即時效能監控、報告和建議，以確保Adobe Commerce實例的安全性和可操作性。
 
-的 [!DNL Upgrade Compatibility Tool] 現在與 [!DNL Site-Wide Analysis Tool] 為非技術人員提供管理 [!DNL Upgrade Compatibility Tool] 然後 [HTML報告](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html?lang=en#output) 包含每個檔案的問題清單，其中指定其嚴重性、錯誤代碼和錯誤說明。
+的 [!DNL Upgrade Compatibility Tool] 現在與 [!DNL Site-Wide Analysis Tool] 為非技術人員提供管理 [!DNL Upgrade Compatibility Tool] 然後 [報告](../upgrade-compatibility-tool/reports.md) 包含每個檔案的問題清單。
 
 查看 [[!DNL Site-Wide Analysis Tool] 使用手冊](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) 的子菜單。
 
