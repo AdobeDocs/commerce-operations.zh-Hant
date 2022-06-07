@@ -1,7 +1,7 @@
 ---
 user-guide-title: 升級指南
 user-guide-description: 了解為什麼升級您的 Adobe Commerce 或 Magento Open Source 應用程式如此重要，以及如何成功規劃和執行升級。
-source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
+source-git-commit: fd624a97d74c7f6a9e29223227dae425bb6fa68c
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
    - [應用修補程式](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [概述](upgrade-compatibility-tool/overview.md)
-   - [先決條件](upgrade-compatibility-tool/prerequisites.md)
+   - [系統要求](upgrade-compatibility-tool/prerequisites.md)
    - 使用 [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
       - [在命令行介面中運行工具](upgrade-compatibility-tool/run.md)
       - [與 [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
