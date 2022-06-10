@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 報告」'
 description: 按照以下步驟運行 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce計畫。
-source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
+source-git-commit: 1ce02c3215b01f64e86383938a257514f0e4257c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 - *嚴重錯誤總數*:發現的嚴重錯誤數。
 - *錯誤總數*:找到的錯誤數。
 - *警告總數*:找到的警告數。
+- *記憶體峰值使用*:最大記憶體量 [!DNL Upgrade Compatibility Tool] 已在執行過程中到達。
 
 請參見以下命令行介面示例：
 
