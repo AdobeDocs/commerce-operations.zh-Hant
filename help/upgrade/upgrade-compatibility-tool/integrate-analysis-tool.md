@@ -1,9 +1,9 @@
 ---
 title: 「整合 [!DNL Site-Wide Analysis Tool]"
 description: 按照以下步驟檢索 [!DNL Upgrade Compatibility Tool] 報告 [!DNL Site-Wide Analysis Tool] 你的Adobe Commerce項目的儀表板。
-source-git-commit: c70e431035f0e0b2c495715563faf6be46aa514e
+source-git-commit: 0d4ccc8c2e1a470b5fb3a7d59e81230e8986c257
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '171'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 查看 [[!DNL Site-Wide Analysis Tool] 使用手冊](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) 的子菜單。
 
-## 運行 [!DNL Upgrade Compatibility Tool] 來自特警
+## 運行 [!DNL Upgrade Compatibility Tool] 從 [!DNL Site-Wide Analysis Tool]
 
 導航到 [!DNL Site-Wide Analysis Tool] 用於項目的儀表板並找到 [!DNL Upgrade Compatibility Tool] 小部件。
 
@@ -32,3 +32,5 @@ ht-degree: 0%
 ![UCT SWAT構件 — 結果](../../assets/upgrade-guide/uct-swat-results.png)
 
 按一下 **[!UICONTROL Download Report]** 以檢索 [!DNL Upgrade Compatibility Tool] [HTML報告](../upgrade-compatibility-tool/reports.md#html-report) 並查看詳細資訊。
+
+運行 [!DNL Upgrade Compatibility Tool] 通過 [!DNL Site-Wide Analysis Tool] 報告將顯示項目版本與最新版本的比較結果。
