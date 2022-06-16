@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Site-Wide Analysis Tool]"'
 description: 瞭解 [!DNL Site-Wide Analysis] 工具、其用途、安裝過程以及如何獲得訪問權
-source-git-commit: becf58c17b80a0b2d25c42a905f5c9aa8f84c258
+source-git-commit: 52a74694ad01cf3192a7eb8af086d77a5b7e9276
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 ## 什麼是 [!DNL Site-Wide Analysis Tool]?
 
 的 [!DNL Site-Wide Analysis Tool] 是一種主動式自助服務工具和中央儲存庫，包括詳細的系統見解和建議，以確保您的Adobe Commerce安裝的安全性和可操作性。 它提供全天候即時效能監控、報告和建議，以確定潛在問題並更好地瞭解站點運行狀況、安全和應用程式配置。 它有助於縮短解析時間，並提高站點穩定性和效能。
+
+查看 [簡介視頻](https://www.youtube.com/watch?v=KW2R8ki_RG4) 來瞭解更多資訊。
 
 ## 工具概述
 
