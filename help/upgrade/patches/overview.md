@@ -1,9 +1,9 @@
 ---
 title: 修補程式的工作方式
 description: 瞭解Adobe Commerce和Magento Open Source的不同類型的修補程式以及它們的工作原理。
-source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
+source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 - 開始更改的行號和要更改的行數。
 - 要交換的新代碼。
 
-當 [補丁](https://en.wikipedia.org/wiki/Patch_(Unix)) 程式運行，此檔案被讀入，並對檔案進行指定的更改。
+運行修補程式程式時，將讀入此檔案並對檔案進行指定的更改。
 
 有三種類型的修補程式：
 
