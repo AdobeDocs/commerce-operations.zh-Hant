@@ -1,7 +1,7 @@
 ---
 title: 完成先決條件
 description: 通過完成這些先決條件步驟，為升級準備您的Adobe Commerce或Magento Open Source項目。
-source-git-commit: ea5de44ab40b873fa30393359dd714534bd789e3
+source-git-commit: 0729e84adabcded6d50cf28a7525b97fd50d45f5
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 0%
@@ -176,7 +176,7 @@ Adobe Commerce2.4包含安全增強功能，要求將某些資料從序列化轉
 1. 設定變數：
 
    ```bash
-   export DATA_CONVERTER_BATCH_SIZE 100000
+   export DATA_CONVERTER_BATCH_SIZE=100000
    ```
 
    >[!NOTE]
