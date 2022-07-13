@@ -1,9 +1,9 @@
 ---
 user-guide-title: 作業指南
 user-guide-description: 了解維護您的 Adobe Commerce 或 Magento Open Source 應用程式的作業層面。
-source-git-commit: 3b16cfaba5695a886dda8bbd2fd42ad4b22b8b75
+source-git-commit: 8b40946fc65d9089de752376abbd31e37f60c541
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '118'
 ht-degree: 17%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 17%
 - [配置](https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html)
 - [遷移](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html)
 - [升級](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=en)
-- [擴展](https://devdocs.magento.com/extensions/)
 - [效能最佳實踐](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)
 - [工具](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en)
 - [命令行工具](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html)
