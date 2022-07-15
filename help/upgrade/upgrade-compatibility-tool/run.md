@@ -1,9 +1,9 @@
 ---
 title: '"運行 [!DNL Upgrade Compatibility Tool]"'
 description: 按照以下步驟運行 [!DNL Upgrade Compatibility Tool] 在命令行介面上，為你的Adobe Commerce項目。
-source-git-commit: 1dde98ab903f54aee0a094efd86dbf296065e92c
+source-git-commit: a0bb188eea38688c5bfe68e8c6bb7b3d040f5e0a
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 0%
 
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
+```
+
+您可能需要為工具授予可執行權限 `chmod` 命令：
+
+```bash
+chmod +x ./uct/bin/uct
 ```
 
 ## 的 [!DNL Upgrade Compatibility Tool] 命令行介面中
