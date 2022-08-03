@@ -3,7 +3,7 @@ title: '"[!DNL Upgrade Compatibility Tool] 要求'
 description: '驗證您的系統是否滿足運行 [!DNL Upgrade Compatibility Tool] 在命令行介面上，為你的Adobe Commerce項目。 '
 source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---

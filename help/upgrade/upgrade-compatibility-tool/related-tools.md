@@ -3,7 +3,7 @@ title: '"[!DNL Upgrade Compatibility Tool] 相關工具」'
 description: 瞭解有關相關工具的詳細資訊 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce計畫。
 source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
