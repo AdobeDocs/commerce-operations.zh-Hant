@@ -1,7 +1,7 @@
 ---
 title: 拆分資料庫效能解決方案
 description: 閱讀有關Adobe Commerce和Magento Open Source的拆分資料庫解決方案。
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 拆分資料庫解決方案概述
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 

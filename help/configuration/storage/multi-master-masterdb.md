@@ -1,7 +1,7 @@
 ---
 title: 自動配置主資料庫
 description: 請參見有關自動配置拆分資料庫解決方案的指導。
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # 自動配置主資料庫
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 

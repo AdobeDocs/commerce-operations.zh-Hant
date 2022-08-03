@@ -1,7 +1,7 @@
 ---
 title: 資料庫複製
 description: 請參見配置資料庫複製的好處。
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 資料庫複製
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 
