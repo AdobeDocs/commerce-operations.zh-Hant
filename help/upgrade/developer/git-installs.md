@@ -3,7 +3,7 @@ title: 升級基於Git的安裝
 description: 升級從Git儲存庫克隆的Adobe Commerce或Magento Open Source安裝。
 source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 如果您是參與開發人員，則要升級：
 
-{{$include /help/_includes/server-login.md}
+{{$include /help/_includes/server-login.md}}
 
 1. 保存對 `composer.json` 檔案，因為後續步驟將覆蓋它。
 

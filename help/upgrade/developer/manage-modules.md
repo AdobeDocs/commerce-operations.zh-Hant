@@ -3,7 +3,7 @@ title: 管理模組和擴展（開發人員）
 description: 使用命令行介面和Composer包管理器管理Adobe Commerce和Magento Open Source模組及擴展。
 source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '139'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 可以添加 `require` 的 `composer.json` 檔案，或 `composer require` 命令，如下所示：
 
-{{$include /help/_includes/server-login.md}
+{{$include /help/_includes/server-login.md}}
 
 您有以下選項：
 
