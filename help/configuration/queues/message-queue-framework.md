@@ -1,7 +1,7 @@
 ---
 title: 消息隊列概述
 description: 閱讀有關消息隊列框架及其如何與Adobe Commerce和Magento Open Source應用程式協作的資訊。
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 消息隊列概述
 
-消息隊列框架(MQF)是允許 [模組](https://glossary.magento.com/module) 將消息發佈到隊列。 它還定義了非同步接收消息的用戶。 MQF使用 [兔MQ](http://www.rabbitmq.com) 作為消息代理，為消息的發送和接收提供了可擴展的平台。 它還包括用於儲存未傳送消息的機制。 RabbitMQ基於高級消息隊列協定(AMQP)0.9.1規範。
+消息隊列框架(MQF)是允許 [模組](https://glossary.magento.com/module) 將消息發佈到隊列。 它還定義了非同步接收消息的用戶。 MQF使用 [兔MQ](https://www.rabbitmq.com) 作為消息代理，為消息的發送和接收提供了可擴展的平台。 它還包括用於儲存未傳送消息的機制。 RabbitMQ基於高級消息隊列協定(AMQP)0.9.1規範。
 
 下圖說明了消息隊列框架：
 

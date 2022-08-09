@@ -1,9 +1,9 @@
 ---
 title: 快取類型
 description: 將快取前端與快取類型關聯。
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,11 @@ Commerce應用程式具有 `default` 快取前端可用於任何 [快取類型](
 
 何處
 
-- `<frontend_type>` 是低級前端快取類型。 指定與相容的類的名稱 [結束\快取\核心](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Core.html)。
-
-   如果忽略 `<frontend_type>`。 [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) 的子菜單。
+- `<frontend_type>` 是低級前端快取類型。 指定與相容的類的名稱 `Zend\Cache\Core`。
+如果忽略 `<frontend_type>`。 [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) 的子菜單。
 
 - `<frontend_option>`。 `<frontend_option_value>` 是Commerce框架在建立前端快取時作為關聯陣列傳遞的選項的名稱和值。
-- `<backend_type>` 是低級後端快取類型。 指定與相容的類的名稱 [結束快取後端](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend.html) 和工具 [Zend_Cache_Backend_Interface](https://framework.zend.com/apidoc/1.6/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend_Interface.html)。
+- `<backend_type>` 是低級後端快取類型。 指定與相容的類的名稱 `Zend_Cache_Backend` 和工具 `Zend_Cache_Backend_Interface`。
 - `<backend_option>` 和 `<backend_option_value>` 是Commerce框架建立後作為關聯陣列傳遞給後端快取的選項的名稱和值。
+
+查看 [Laminas文檔](https://docs.laminas.dev/) 查看最新的Zend資訊。

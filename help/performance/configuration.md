@@ -1,7 +1,7 @@
 ---
 title: 配置最佳做法
 description: 使用這些最佳做法優化您的Adobe Commerce或Magento Open Source部署的響應時間。
-source-git-commit: 20c4f55162b25be8906562c395abf4671437992b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Commerce提供了許多設定和工具，您可以使用這些設定和工具來
 
 ### 捆綁提示
 
-* 我們建議您使用第三方工具進行精簡和捆綁(例如 [r.js](http://requirejs.org/))。 [!DNL Commerce] 內置機制不是最佳機制，而是作為備用備選機制發運。
+* 我們建議您使用第三方工具進行精簡和捆綁(例如 [r.js](https://requirejs.org/))。 [!DNL Commerce] 內置機制不是最佳機制，而是作為備用備選機制發運。
 * 激活HTTP2協定是使用JS捆綁的好選擇。 該協定提供了幾乎相同的好處。
 * 我們不建議使用不建議使用的設定，如合併JS和CSS檔案，因為它們只設計用於頁面HEAD部分中同步載入的JS。 使用此技術可導致綁定，並要求JS邏輯工作不正確。
 

@@ -1,9 +1,9 @@
 ---
 title: 命令行工具
 description: 使用Commerce命令行工具運行安裝和配置任務。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Commerce有一個命令行介面(CLI)—`<magento_root>/bin/magento` — 運行�
 - CLI是可擴展的，因此第三方開發人員可以「插入」它。 這具有消除用戶學習曲線的額外好處。
 - 不顯示禁用模組的命令。
 
-本主題討論使用CLI配置Adobe Commerce和Magento Open Source軟體。 有關安裝Commerce的資訊，請參見 [安裝概述](https://devdocs.magento.com/guides/2.4/install-gde/bk-install-guide.html) 的 _安裝指南_。
+本主題討論使用CLI配置Adobe Commerce和Magento Open Source軟體。 有關安裝Commerce的資訊，請參見 [安裝流](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) 的 _安裝指南_。
 
 ## 先決條件
 

@@ -1,9 +1,9 @@
 ---
 title: 使用清漆清除快取
 description: 瞭解快取清除如何與清漆配合使用，以及如何將其用作Adobe Commerce應用程式的Web快取加速器。
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## 將Commerce配置為清除清漆
 
-在使用配置清漆主機後，Commerce清除清漆主機 [`magento setup:config:set`](https://devdocs.magento.com/guides/2.4/install-gde/install/cli/install-cli-subcommands-deployment.html) 的子菜單。
+在使用配置清漆主機後，Commerce清除清漆主機 [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) 的子菜單。
 
 可以使用可選參數 `--http-cache-hosts` 參數，指定以逗號分隔的清漆主機和偵聽埠清單。 配置所有清漆主機，無論您有一個還是多個。 （不要將主機與空格字元分開。）
 
@@ -57,4 +57,4 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 
 要使用Admin刷新快取，請按一下 **[!UICONTROL SYSTEM]** >工具> **快取管理**，然後按一下 **刷新Magento快取** 頁面頂部。 （也可以刷新單個快取類型。）
 
-要使用命令行刷新快取，通常使用 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) 命令 [檔案系統所有者](https://devdocs.magento.com/guides/2.4/install-gde/prereq/file-sys-perms-over.html)。
+要使用命令行刷新快取，通常使用 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) 命令 [檔案系統所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html)。

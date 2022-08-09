@@ -1,9 +1,9 @@
 ---
 title: 將Redis用於會話儲存
 description: 瞭解如何為會話儲存配置Redis。
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '724'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | 會話save-redis-timeout | 超時 | 連接超時（秒）。 | 2.5 |
 | 會話save-redis-persistent-id | persistent_identifier | 用於啟用永久連接的唯一字串（例如sess-db0）。<br>[phpredis和php-fpm的已知問題](https://github.com/phpredis/phpredis/issues/70)。 |
 | session-save-redis-db | 資料庫 | 唯一的Redis資料庫編號，建議使用此編號來防止資料丟失。<br><br>**重要**:如果將Redis用於多種類型的快取，則資料庫編號必須不同。 建議將預設的快取資料庫編號分配給0，將頁快取資料庫編號分配給1，將會話儲存資料庫編號分配給2。 | 0 |
-| 會話保存 — Redis壓縮閾值 | 壓縮閾值 | 設定為0以禁用壓縮(建議在 [suhosin.session.encrypt =開啟](https://suhosin.org/stories/howtos.html))。<br>[超過64 KB的字串的已知問題](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18)。 | 2048 |
+| 會話保存 — Redis壓縮閾值 | 壓縮閾值 | 設定為0以禁用壓縮(建議在 `suhosin.session.encrypt = On`)。<br>[超過64 KB的字串的已知問題](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18)。 | 2048 |
 | session save-redis-compression-lib | 壓縮庫 | 選項：gzip、lzf、lz4或snappy。 | gzip |
 | 會話保存 — redis-log級 | 日誌級別 | 設定為以下任一項，按從最少詳細到最詳細的順序列出：<ul><li>0(緊急：只有最嚴重的錯誤)<li>1(警報：需要立即操作)<li>2(關鍵：應用程式元件不可用)<li>3(錯誤：運行時錯誤，非關鍵，但必須監視)<li>4(警告：其他資訊，建議)<li>5(通知：正常但重要的條件)<li>6(資訊：資訊消息)<li>7（調試）僅用於開發或測試的最多資訊)</ul> | 1 |
 | 會話保存 — redis-max-concurrency | 最大併發 | 可等待一個會話上鎖定的進程的最大數量。 對於大型生產群集，將此值至少設定為PHP進程數的10%。 | 6 |

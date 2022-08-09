@@ -1,7 +1,7 @@
 ---
 title: 軟體Recommendations
 description: 查看與Adobe Commerce和Magento Open Source部署的最佳效能相關的建議軟體清單。
-source-git-commit: 1d5956ce22c1a159336e9e7d64064b618fc2e63f
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -180,7 +180,7 @@ Magento完全支援Nginx和Apache Web伺服器。 [!DNL Commerce] 提供了示�
 | Web伺服器 | 屬性名稱 | 位置 | 相關資訊 |
 |--- | --- | --- | ---|
 | 恩金 | `worker_connections` | `/etc/nginx/nginx.conf` （德邊） | [調整NGINX以獲得效能](https://www.nginx.com/blog/tuning-nginx/) |
-| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache效能調整](http://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
+| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache效能調整](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
 | Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache MPM通用指令](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]

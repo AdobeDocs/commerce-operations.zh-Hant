@@ -1,7 +1,7 @@
 ---
 title: 自定義日誌記錄
 description: 瞭解如何使用自定義日誌記錄來調查錯誤。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Monolog是一種流行的PHP日誌記錄解決方案，它包含多種處理程�
 <!-- link definitions -->
 
 [di]: https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9
-[氟]: http://www.fluentd.org
+[氟]: https://www.fluentd.org/
 [laminas]: https://docs.laminas.dev/laminas-log/
 [龍]: https://devcenter.heroku.com/articles/logplex
 [洛格斯塔什]: https://www.elastic.co/products/logstash
