@@ -1,9 +1,9 @@
 ---
 title: 管理索引器
 description: 請參閱如何查看和管理Commerce索引器的示例。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: dd84039be22b6bd25d57912615d64bad91970926
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,6 @@ bin/magento indexer:status [indexer]
 ```
 
 位置 `[indexer]` 是索引器的空格分隔清單。 省略 `[indexer]` 查看所有索引器的狀態。
-
 
 示例結果：
 
@@ -120,8 +119,9 @@ Catalog Search index has been rebuilt successfully in <time>
 - `Catalog Search Fulltext` 可以與商店景觀並行。
 - `Category Product` 可以與商店景觀並行。
 - `Catalog Price` 網站和客戶群可以並行。
+- `Catalog Permissions` 可以與客戶群並行。
 
-如果要使用並行化，必須為產品價格索引器設定一個可用的維模式：
+要使用並行化，請為產品價格索引器設定一個可用的維度模式：
 
 - `none` （預設）
 - `website`
@@ -133,6 +133,11 @@ Catalog Search index has been rebuilt successfully in <time>
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
+
+要對目錄權限使用並行化，請為目錄權限索引器設定一個可用的維模式：
+
+- `none` （預設）
+- `customer_group`
 
 或者，要檢查當前模式：
 

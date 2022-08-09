@@ -1,9 +1,9 @@
 ---
 title: env.php引用
 description: 請參見env.php檔案的值清單。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 7ecd54b40690ec046e9a3d46a6ef9ad44ffaf4ab
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,7 @@ ht-degree: 0%
 | `cron` | 啟用或禁用cron作業 |
 | `crypt` | 加密函式的加密密鑰 |
 | `db` | 資料庫連接設定 |
+| `default_connection` | 消息隊列預設連接 |
 | `directories` | 商業目錄映射設定 |
 | `downloadable_domains` | 可下載域清單 |
 | `install` | 安裝日期 |
@@ -168,6 +169,19 @@ Commerce使用加密密鑰來保護密碼和其他敏感資料。 此密鑰在�
   ]
 ]
 ```
+
+## 預設連接
+
+定義消息隊列的預設連接。 值可以是 `db`。 `amqp`，或自定義隊列系統 `redismq`。 如果指定除 `db`，必須先安裝並配置消息隊列軟體。 否則，將無法正確處理消息。
+
+```conf
+'queue' => [
+    'default_connection' => 'amqp'
+]
+```
+
+如果 `queue/default_connection` 在系統中指定 `env.php` 檔案，此連接用於通過系統的所有消息隊列，除非在 `queue_topology.xml`。 `queue_publisher.xml` 或 `queue_consumer.xml` 的子菜單。
+例如，如果 `queue/default_connection` 是 `amqp` 在 `env.php` 但 `db` 連接在模組的隊列配置XML檔案中指定，模組將使用MySQL作為消息代理。
 
 ## 目錄
 
