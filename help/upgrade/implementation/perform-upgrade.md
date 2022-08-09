@@ -1,9 +1,9 @@
 ---
 title: 執行升級
 description: 按照以下步驟升級Adobe Commerce或Magento Open Source項目。
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3c3966a904b0568e0255020d8880d348c357ea95
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,28 @@ ht-degree: 0%
    ```
 
    請參閱 [啟用或禁用維護模式](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) 的雙曲餘切值。 （可選）您可以建立 [自定義維護模式頁](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html)。
+
+1. 在非同步進程（如消息隊列使用者）正在運行時啟動升級進程可能會導致資料損壞。 要防止資料損壞，請禁用所有cron作業。
+
+   _Adobe Commerce在雲基礎架構方面：_
+
+   ```bash
+   ./vendor/bin/ece-tools cron:disable
+   ```
+
+   _Magento Open Source:_
+
+   ```bash
+   bin/magento cron:remove
+   ```
+
+1. 手動啟動所有消息隊列使用者，以確保所有消息都被使用。
+
+   ```bash
+   bin/magento cron:run --group=consumers
+   ```
+
+   等待cron作業完成。 您可以使用進程查看器或運行 `ps aux | grep 'bin/magento queue'` 命令多次執行，直到所有進程完成。
 
 1. 建立 `composer.json` 的子菜單。
 
