@@ -1,9 +1,9 @@
 ---
 title: 高吞吐量訂單處理
 description: 優化您的Adobe Commerce或Magento Open Source部署的訂單投放和結帳體驗。
-source-git-commit: 4ce6f01ab6c3e0bb408657727b65bcb2f84dd954
+source-git-commit: 6afdb941ce3753af02bde3dddd4e66414f488957
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,21 @@ bin/magento setup:config:set --deferred-total-calculating 0
 禁用時，在將產品添加到購物車時不會執行庫存檢查。 如果跳過此庫存檢查，則某些庫存不足方案可能會引發其他類型的錯誤。 庫存檢查 _總是_ 在訂單放置步驟中出現，即使禁用。
 
 **啟用購物車裝貨時的庫存檢查** 在預設情況下啟用（設定為「是」）。 要在載入購物車時禁用庫存檢查，請設定 **[!UICONTROL Enable Inventory Check On Cart Load]** 至 `No` 在管理員UI中 **商店** > **配置** > **目錄** > **庫存** > **股票期權** 的子菜單。 請參閱 [配置全局選項][global] 和 [目錄清單][inventory] 的 _使用手冊_。
+
+## 負載平衡
+
+通過為MySQL資料庫和Redis實例啟用輔助連接，可幫助平衡不同節點間的負載。
+
+Adobe Commerce可以非同步讀取多個資料庫或Redis實例。 如果在雲基礎架構上使用Commerce，則可以通過編輯 [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) 和 [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) 值 `.magento.env.yaml` 的子菜單。 只需要一個節點來處理讀寫通信，因此將變數設定為 `true` 導致為只讀通信建立輔助連接。 將值設定為 `false` 從 `env.php` 的子菜單。
+
+示例 `.magento.env.yaml` 檔案：
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    REDIS_USE_SLAVE_CONNECTION: true
+```
 
 <!-- link definitions -->
 
