@@ -1,7 +1,7 @@
 ---
 title: 敏感和系統特定路徑
 description: 請參閱系統特定和敏感配置值的清單。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 019d638403f2dc3e170a56842335da203126d8a6
 workflow-type: tm+mt
 source-wordcount: '3711'
 ht-degree: 2%
@@ -144,9 +144,9 @@ ht-degree: 2%
 | Solr伺服器路徑 | `catalog/search/solr_server_path` | ![僅限商業](/help/assets/configuration/cloud-ee.png) |  | ![系統特定](/help/assets/configuration/cloud-env.png) | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | Elasticsearch伺服器主機名 | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![系統特定](/help/assets/configuration/cloud-env.png) | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | Elasticsearch伺服器埠 | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![系統特定](/help/assets/configuration/cloud-env.png) | ![敏感](/help/assets/configuration/cloud-sens.png) |
-| Elasticsearch索引前置詞 | `catalog/search/elasticsearch_index_prefix` | !<!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![系統特定](/help/assets/configuration/cloud-env.png) | ![敏感](/help/assets/configuration/cloud-sens.png) |
+| Elasticsearch索引前置詞 | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![系統特定](/help/assets/configuration/cloud-env.png) | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 啟用ElasticsearchHTTP身份驗證 | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![系統特定](/help/assets/configuration/cloud-env.png) |
-| ElasticsearchHTTP用戶名 | `catalog/search/elasticsearch_username` | !<!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![系統特定](/help/assets/configuration/cloud-env.png) |
+| ElasticsearchHTTP用戶名 | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![系統特定](/help/assets/configuration/cloud-env.png) |
 | ElasticsearchHTTP密碼 | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![系統特定](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch伺服器超時 | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![系統特定](/help/assets/configuration/cloud-env.png) |
 
@@ -711,7 +711,7 @@ ht-degree: 2%
 | SFTP憑據 |
 | SFTP憑據 | `payment_nz/paypal_group_all_in_one/wps_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | SFTP憑據 | `payment_nz/paypal_payment_gateways/paypal_payflowpro_nz/settings_paypal_payflow/settings_paypal_payflow_advanced/paypal_payflow_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![敏感](/help/assets/configuration/cloud-sens.png) |
-| API登錄ID | `payment_nz/authorizenet_directpost/login` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | !![Commerce-only]([陰] |  | ![敏感](/help/assets/configuration/cloud-sens.png) |
+| API登錄ID | `payment_nz/authorizenet_directpost/login` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![加密](/help/assets/configuration/cloud-enc.png) |  | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 商家MD5 | `payment_nz/authorizenet_directpost/trans_md5` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![加密](/help/assets/configuration/cloud-enc.png) |  | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 電子郵件客戶 | `payment_nz/authorizenet_directpost/email_customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 商家電子郵件 | `payment_nz/authorizenet_directpost/merchant_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![敏感](/help/assets/configuration/cloud-sens.png) |
