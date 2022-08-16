@@ -1,9 +1,9 @@
 ---
 title: '"運行 [!DNL Upgrade Compatibility Tool]"'
 description: 按照以下步驟運行 [!DNL Upgrade Compatibility Tool] 在命令行介面上，為你的Adobe Commerce項目。
-source-git-commit: a0bb188eea38688c5bfe68e8c6bb7b3d040f5e0a
+source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1145'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,7 @@ chmod +x ./uct/bin/uct
 | **命令** | **說明** |
 |----------------|-----------------|
 | `upgrade:check` | 此命令運行 [!DNL Upgrade Compatibility Tool] 分析其中安裝的所有模組。 |
+| `dbschema:diff` | 此命令顯示兩個指定的Adobe Commerce版本之間資料庫架構的所有差異。 |
 | `core:code:changes` | 此命令將您當前的Adobe Commerce安裝與乾淨的香草安裝進行比較。 |
 | `refactor` | 此命令自動修復一組減少的問題。 |
 | `graphql:compare` | 此命令提供了引入兩個GraphQL端點並比較其架構的選項。 |
@@ -88,6 +89,41 @@ bin/uct upgrade:check <dir> -c 2.4.3
 - 明確提供這一條是要求；只提供它的價值是行不通的。
 - 提供不帶任何引號的標籤版本（不帶單引號，也不帶雙引號）: ~~「2.4.1發」~~。
 - 您不應提供當前安裝的版本以及2.3版本以前的版本，而2.3版本是目前支援的最舊版本。
+
+## 使用 `dbschema:diff` 命令
+
+可以檢索兩個Adobe Commerce版本的資料庫架構之間的差異。
+
+```bash
+bin/uct dbschema:diff <current-version> <target-version>
+```
+
+其中參數如下：
+
+- `<current-version>`:任何Adobe Commerce版本供比較。
+- `<target-version>`:還有任何Adobe Commerce版本供比較。
+
+執行示例：
+
+```bash
+bin/uct dbschema:diff 2.4.3 2.4.3-p3
+
+DB schema differences between versions 2.4.3 and 2.4.3-p3:
+
+Table klarna_payments_quote constraint QUOTE_ID_KLARNA_PAYMENTS_QUOTE_QUOTE_ID_QUOTE_ENTITY_ID is present only in version 2.4.3-p3
+Table klarna_payments_quote index KLARNA_PAYMENTS_QUOTE_SESSION_ID is present only in version 2.4.3-p3
+Table customer_entity column session_cutoff is present only in version 2.4.3-p3
+Table customer_visitor column session_id length value is different. 2.4.3: "64", 2.4.3-p3: "1"
+Table customer_visitor column session_id comment value is different. 2.4.3: "Session ID", 2.4.3-p3: "Deprecated: Session ID value no longer used"
+Table customer_visitor column created_at is present only in version 2.4.3-p3
+Table oauth_consumer column secret length value is different. 2.4.3: "32", 2.4.3-p3: "128"
+Table oauth_token column secret length value is different. 2.4.3: "32", 2.4.3-p3: "128"
+Table admin_user_session column session_id nullable value is different. 2.4.3: "false", 2.4.3-p3: "true"
+Table admin_user_session column session_id length value is different. 2.4.3: "128", 2.4.3-p3: "1"
+Table admin_user_session column session_id comment value is different. 2.4.3: "Session ID value", 2.4.3-p3: "Deprecated: Session ID value no longer used"
+
+Total detected differences between version 2.4.3 and 2.4.3-p3: 11
+```
 
 ## 使用 `core:code:changes` 命令
 
