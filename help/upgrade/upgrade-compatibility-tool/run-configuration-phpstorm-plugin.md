@@ -1,9 +1,9 @@
 ---
 title: '"在 [!DNL Magento PHPStorm plugin]"'
 description: 按照本指南使用 [!DNL Upgrade Compatibility Tool] 在 [!DNL Magento PHPStorm plugin]。
-source-git-commit: e539824b336978debd6e6adc538cd8bad367eff1
+source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,8 @@ ht-degree: 0%
 
 您可以運行 [!DNL Upgrade Compatibility Tool] 通過 [!DNL Magento PHPStorm plugin]。 查看 [[!DNL Upgrade Compatibility Tool] 運行配置](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) 的子菜單。
 
-查看 [視頻教程](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/uct-phpstorm.html?lang=en) (06:30)瞭解如何使用 [!DNL Upgrade Compatibility Tool] 和 [!DNL Magento PHPStorm plugin]。
+## [!DNL Magento PHPStorm plugin] 演示
+
+觀看此視頻以瞭解 [!DNL Magento PHPStorm plugin]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/340150?quality=12)

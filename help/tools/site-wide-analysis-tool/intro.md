@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Site-Wide Analysis Tool]"'
 description: 瞭解 [!DNL Site-Wide Analysis] 工具、其用途、安裝過程以及如何獲得訪問權
-source-git-commit: 52a74694ad01cf3192a7eb8af086d77a5b7e9276
+source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -45,3 +45,9 @@ ht-degree: 0%
 ## 這本指南是給誰的？
 
 那些希望更清楚地瞭解其Adobe Commerce網站的商家和合作夥伴。 它使商戶能夠改進其客戶的體驗，並在最佳做法建議和基本問題上更緊密地保持一致。
+
+## [!DNL Site-Wide Analysis Tool] 演示
+
+觀看此視頻以瞭解 [!DNL Site-Wide Analysis Tool]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)
