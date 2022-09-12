@@ -1,29 +1,29 @@
 ---
-title: config.php引用
-description: 請參見config.php檔案中的值清單。
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+title: config.php參考
+description: 請參閱config.php檔案中的值清單。
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
 
 
-# config.php引用
+# config.php參考
 
-的 `config.php` 檔案包含以下部分：
+此 `config.php` 檔案包含下列章節：
 
 | 名稱 | 說明 |
 | --------- | -------------------|
-| `i18n` | 所有內聯翻譯資料。 不支援從此部分讀取。 |
+| `i18n` | 所有內嵌轉譯資料。 不支援從本節讀取。 |
 | `modules` | 已啟用和已禁用模組的清單。 |
-| `scopes` | 包含相關資訊的商店、商店組和網站的清單。 |
+| `scopes` | 包含相關資訊的商店、商店群組和網站的清單。 |
 | `system` | 靜態內容部署所需的系統配置。 |
 | `themes` | 已安裝主題的配置。 |
 
 ## 模組
 
-包含一組模組及其狀態。 如果已啟用模組，則值為1。 否則，值為0。
+包含模組及其狀態的陣列。 如果模組已啟用，則值為1。 否則，值為0。
 
 ```conf
 'modules' => [
@@ -34,17 +34,17 @@ ht-degree: 0%
 ]
 ```
 
-瞭解有關 [模組]。
+深入了解 [模組].
 
 ## 作用域
 
-包含範圍配置值的陣列。 它具有以下子節點：
+包含範圍配置值的陣列。 其子節點如下：
 
 | 名稱 | 說明 |
 | ---------- | -----------------------------------|
-| `websites` | 網站配置 |
+| `websites` | 網站設定 |
 | `groups` | 儲存配置 |
-| `stores` | 儲存視圖配置 |
+| `stores` | 儲存檢視設定 |
 
 ```conf
 'scopes' => [
@@ -82,7 +82,7 @@ ht-degree: 0%
 ]
 ```
 
-瞭解有關 [商業範圍][scopes]。
+深入了解 [商務範圍][scopes].
 
 ## 系統
 
@@ -100,11 +100,11 @@ ht-degree: 0%
 ]
 ```
 
-瞭解有關 [特定於系統的配置](config-reference-sens.md)。
+深入了解 [系統特定配置](config-reference-sens.md).
 
 ## 主題
 
-包含主題配置的一組值。
+包含主題配置的值陣列。
 
 ```conf
 'themes' => [
@@ -120,10 +120,10 @@ ht-degree: 0%
 ]
 ```
 
-瞭解有關 [主題]。
+深入了解 [主題].
 
 <!-- link definitions -->
 
-[模組]: https://devdocs.magento.com/videos/fundamentals/create-a-new-module/
-[scopes]: https://docs.magento.com/user-guide/configuration/scope.html
-[主題]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/theme-create.html
+[模組]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html
+[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings
+[主題]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

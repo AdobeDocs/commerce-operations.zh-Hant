@@ -1,9 +1,9 @@
 ---
 title: 資料遷移設定
-description: 瞭解如何開始將設定從Magento1遷移到Magento2 [!DNL Data Migration Tool]。
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+description: 了解如何開始將設定從Magento1移轉至Magento2，方法是使用 [!DNL Data Migration Tool].
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -11,57 +11,57 @@ ht-degree: 0%
 
 # 資料遷移設定
 
-的 `Settings` 模式遷移商店、網站和系統配置，如發運、付款和稅務設定。 根據我們的資料遷移 [訂單](overview.md#migration-order)，應首先遷移設定。
+此 `Settings` 模式遷移儲存、網站和系統配置，如運費、付款和稅務設定。 根據我們的資料遷移 [訂購](overview.md#migration-order)，您應先移轉設定。
 
-在開始之前，請執行以下步驟準備：
+開始之前，請執行下列步驟以準備：
 
-1. 使用Magento2實例登錄到伺服器 [檔案系統所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html)。
+1. 以 [檔案系統所有者](../../../installation/prerequisites/file-system/overview.md).
 
-1. 更改為Magento2 `/bin` 目錄或確保它已添加到系統PATH中。
+1. 變更為 `/bin` 目錄，或確認已將其新增至您的系統 `PATH`.
 
 >[!NOTE]
 >
->確保Magento2部署在 `default` 的子菜單。 開發人員模式可能導致遷移工具中的驗證錯誤。
+>確保Magento2部署在 `default` 模式。 開發人員模式可能會在移轉工具中造成驗證錯誤。
 
 
-查看 [第一步](overview.md#first-steps) 的子菜單。
+請參閱 [第一步](overview.md#first-steps) 一節以取得詳細資訊。
 
 ## 運行設定遷移命令
 
-要開始遷移設定，請運行：
+若要開始移轉設定，請執行：
 
 ```bash
 bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-位置：
+其中：
 
-* `[-r|--reset]` 是從頭開始遷移的可選參數。 您可以使用此參數測試遷移
+* `[-r|--reset]` 是從頭開始移轉的選用引數。 您可以使用此引數來測試移轉
 
-* `[-a|--auto]` 是一個可選參數，可防止在遇到完整性檢查錯誤時停止遷移。
+* `[-a|--auto]` 是可選引數，當遇到完整性檢查錯誤時，該引數會阻止遷移停止。
 
-* `{<path to config.xml>}` 是遷移工具的絕對檔案系統路徑 [`config.xml`](../configure.md#configure-migration-in-vendor-folder) 檔案；此參數是必需的。
+* `{<path to config.xml>}` 是遷移工具的絕對檔案系統路徑 [`config.xml`](../configure.md#configure-migration-in-vendor-folder) 檔案；此引數為必要項目。
 
 >[!NOTE]
 >
->此命令不會遷移所有配置設定。 驗證Magento2中的所有設定 [管理](https://glossary.magento.com/admin) 才能繼續。
+>此命令不會遷移所有配置設定。 驗證Magento2中的所有設定 [管理](https://glossary.magento.com/admin) 開始之前。
 
 
-的 `Migration completed` 設定成功傳輸後，將顯示消息。
+此 `Migration completed` 成功傳輸設定後，會顯示訊息。
 
-## 配置自定義遷移規則
+## 設定自訂移轉規則
 
-遷移設定時，您可以忽略、更名或更改系統配置。 為此，請在 `settings.xml` 的子菜單。
+遷移設定時，您可以忽略、更名或更改系統配置。 為此，請在 `settings.xml` 檔案。
 
-1. 使用Magento2實例登錄到伺服器，或切換到 [檔案系統所有者](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html)。
+1. 以（或） [檔案系統所有者](../../../installation/prerequisites/file-system/overview.md).
 
 1. 更改到以下目錄：
 
    ```bash
-   cd <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
+   cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
-   例如，如果Magento2安裝在 `/var/www/html`，也請參見Wiki頁。 `settings.xml.dist` 檔案位於以下目錄之一：
+   例如，如果應用程式安裝在 `/var/www/html`, `settings.xml.dist` 檔案位於以下目錄之一：
 
    * `/var/www/html/vendor/magento/data-migration-tool/etc/opensource-to-commerce`
 
@@ -69,18 +69,18 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
    * `/var/www/html/vendor/magento/data-migration-tool/etc/opensource-to-opensource`
 
-1. 建立 `settings.xml` 檔案，運行：
+1. 建立 `settings.xml` 檔案（從提供的範例），執行：
 
    ```bash
    cp settings.xml.dist settings.xml
    ```
 
-1. 在 `settings.xml`。
+1. 在 `settings.xml`.
 
-1. 要指定映射的設定檔案的新名稱，請更改 `<settings_map_file>` 標籤 `path/to/config.xml` 的子菜單。
+1. 要指定要映射的設定檔案的新名稱，請更改 `<settings_map_file>` 標籤 `path/to/config.xml` 檔案。
 
-有關詳細資訊，請參閱 [設定遷移模式](../technical-specification.md#settings-migration-mode) 的 [規格](../technical-specification.md)。
+如需詳細資訊，請參閱 [設定移轉模式](../technical-specification.md#settings-migration-mode) 工具的 [規格](../technical-specification.md).
 
-## 下一遷移步驟
+## 下一個移轉步驟
 
 * [遷移資料](data.md)

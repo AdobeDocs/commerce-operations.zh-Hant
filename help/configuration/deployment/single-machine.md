@@ -1,30 +1,30 @@
 ---
 title: 單機部署
-description: 瞭解如何使用命令行將更新部署到生產伺服器上的Commerce。
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+description: 了解如何使用命令列在生產伺服器上部署更新至Commerce。
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
 
 # 單機部署
 
-本主題提供了使用命令行將更新部署到生產伺服器上的Commerce的說明。 此過程適用於負責在安裝了某些主題和區域設定的單個電腦上運行儲存的技術用戶。
+本主題提供使用命令列在生產伺服器上將更新部署至Commerce的指示。 此過程適用於負責在安裝了某些主題和區域設定的單台電腦上運行的儲存的技術用戶。
 
 ## 假設
 
-- 您使用 [作曲家]。
-- 您正在直接將更新應用到伺服器。
+- 您使用 [撰寫器].
+- 您直接將更新套用至伺服器。
 
 >[!WARNING]
 >
->如果使用 `git clone` 來安裝Commerce。
->提供幫助的開發商應使用 [本指南][install] 以更新其Commerce安裝。
+>若您使用 `git clone` 來安裝商務。
+>貢獻開發人員應使用 [本指南][install] 以更新其Commerce安裝。
 
 ## 部署步驟
 
-1. 以或切換到的生產伺服器 [檔案系統所有者][file-owner]。
+1. 以 [檔案系統所有者][file-owner].
 
 1. 將目錄更改為Commerce基目錄：
 
@@ -44,7 +44,7 @@ ht-degree: 1%
    composer require-commerce <package> <version> --no-update
    ```
 
-   **包**:要更新的包的名稱。
+   **套件**:要更新的包的名稱。
 
    例如：
 
@@ -53,7 +53,7 @@ ht-degree: 1%
 
    **版本**:要更新的包的目標版本。
 
-1. 使用Composer更新元件：
+1. 使用撰寫器更新元件：
 
    ```bash
    composer update
@@ -91,6 +91,6 @@ ht-degree: 1%
 
 <!-- link definitions -->
 
-[install]: https://devdocs.magento.com/guides/v2.4/install-gde/install/prepare-install.html
-[composer]: https://devdocs.magento.com/guides/v2.4/install-gde/composer.html
-[file-owner]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html#magento-file-system-owner
+[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
+[composer]: ../../installation/composer.md
+[file-owner]: ../../installation/prerequisites/file-system/overview.md

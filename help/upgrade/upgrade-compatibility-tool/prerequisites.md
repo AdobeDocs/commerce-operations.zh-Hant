@@ -1,27 +1,27 @@
 ---
-title: '"[!DNL Upgrade Compatibility Tool] 要求'
-description: '驗證您的系統是否滿足運行 [!DNL Upgrade Compatibility Tool] 在命令行介面上，為你的Adobe Commerce項目。 '
-source-git-commit: 167e0e7554e912aeef276a34daeaff29d7762009
+title: '"[!DNL Upgrade Compatibility Tool] 要求」'
+description: 驗證您的系統是否滿足運行 [!DNL Upgrade Compatibility Tool] 填入Adobe Commerce專案的命令列介面。
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
 
-# Adobe Commerce訪問密鑰
+# Adobe Commerce存取金鑰
 
 {{commerce-only}}
 
-你一定有 [Adobe Commerce訪問密鑰](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) 下載並使用 [!DNL Upgrade Compatibility Tool]。 將您的Adobe Commerce訪問密鑰添加到 `auth.json` 檔案，位於 `~/.composer` 預設值。
+您必須 [Adobe Commerce存取金鑰](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) 下載及使用 [!DNL Upgrade Compatibility Tool]. 將您的Adobe Commerce存取金鑰新增至 `auth.json` 檔案，位於 `~/.composer` 依預設。
 
 >[!NOTE]
 >
->檢查 **COMPOSER_HOME** 環境變數，以查看 `auth.json` 的下界。
+>檢查 **COMPOSER_HOME** 環境變數，查看位置 `auth.json` 檔案的位置。
 
-的 **公鑰** 與 _用戶名_ 而 **私鑰** 是 _密碼_:
+此 **公開金鑰** 與 _用戶名_ 而 **私密金鑰** 是 _密碼_:
 
-## Adobe Commerce訪問密鑰示例
+## Adobe Commerce存取金鑰範例
 
 ```json
     "http-basic": {
@@ -34,22 +34,22 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 如果未正確配置 **Adobe Commerce訪問密鑰**，無法下載 [!DNL Upgrade Compatibility Tool] 和 `composer create-project` 命令將失敗。
+> 如果您未正確設定 **Adobe Commerce存取金鑰**，則無法下載 [!DNL Upgrade Compatibility Tool] 和 `composer create-project` 命令將失敗。
 
-運行 `composer install` 安裝依賴項。
+執行 `composer install` 安裝相依性。
 
-## 系統要求
+## 系統需求
 
-使用 [!DNL Upgrade Compatibility Tool] 命令行介面中的以下項：
+使用 [!DNL Upgrade Compatibility Tool] 在命令行介面中：
 
-| **要求** | **約束** |
+| **需求** | **限制** |
 |----------------|-----------------|
 | PHP版本 | >= 7.3 |
-| 作曲家 | 沒有已知要求。 |
-| Node.js | 節點.js版本 `^12.22.0`。 `^14.17.0`或 `>=16.0.0` （請參見） [安裝Node.js](https://nodejs.dev/learn/how-to-install-nodejs)) |
+| 撰寫器 | 無已知要求。 |
+| Node.js | Node.js版本 `^12.22.0`, `^14.17.0`，或 `>=16.0.0` (請參閱 [安裝Node.js](https://nodejs.dev/learn/how-to-install-nodejs)) |
 | 記憶體限制 | 至少2GB RAM。 |
 
-[!DNL Upgrade Compatibility Tool] 要求 [PCNTL](https://www.php.net/manual/en/book.pcntl.php) 以及用於執行的其他PHP擴展。 使用 `composer check-platform-reqs` 命令：
+[!DNL Upgrade Compatibility Tool] requiles [PCNTL](https://www.php.net/manual/en/book.pcntl.php) 和執行的其他PHP擴充功能。 使用 `composer check-platform-reqs` 命令：
 
 ```bash
 # Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
@@ -74,8 +74,8 @@ ext-zip       1.15.6    success
 php           7.4.30    success
 ```
 
-Adobe Commerce僅在Linux作業系統上受支援。 您可以運行 [!DNL Upgrade Compatibility Tool] 在Linux作業系統中。 你不用 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce實例所在的位置。
+Adobe Commerce僅支援Linux作業系統。 您可以執行 [!DNL Upgrade Compatibility Tool] 在Linux作業系統中。 您不必執行 [!DNL Upgrade Compatibility Tool] Adobe Commerce例項的位置。
 
-對於 [!DNL Upgrade Compatibility Tool] 訪問Adobe Commerce實例的原始碼。 例如，您可以將其安裝在一台伺服器上，然後將其指向另一台伺服器上的Adobe Commerce安裝。
+必須 [!DNL Upgrade Compatibility Tool] 存取Adobe Commerce執行個體的原始碼。 例如，您可以將其安裝在一台伺服器上，並將其指向另一台伺服器上的Adobe Commerce安裝。
 
-如果您運行 [!DNL Upgrade Compatibility Tool] 對於具有大模組和檔案的Adobe Commerce實例，該工具可能需要大量RAM（至少2GB）。
+如果您執行 [!DNL Upgrade Compatibility Tool] 針對具有大型模組和檔案的Adobe Commerce執行個體，此工具可能需要大量記憶體（至少2GB）。
