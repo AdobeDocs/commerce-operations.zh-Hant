@@ -1,51 +1,51 @@
 ---
 keywords: Adobe Commerce；首頁；熱門主題
 title: 首頁
-description: 瀏覽Adobe Commerce運營產品文檔的索引。
-source-git-commit: 6c462d615675615b317c6de529d1af5846d26e69
+description: 瀏覽Adobe Commerce操作產品檔案的索引。
+source-git-commit: 64e697a357e10005d02abeca13bd09c8a823bc00
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 1%
+source-wordcount: '155'
+ht-degree: 2%
 
 ---
 
 
 # Adobe Commerce操作指南
 
-獲取有關概念、流程、工具和最佳做法的實用資訊，以開發、部署和維護部署在Adobe Commerce和Magento Open Source平台上的商業項目。
+取得概念、流程、工具和最佳實務的實用資訊，以開發、部署和維護部署在Adobe Commerce和Magento Open Source平台上的商務專案。
 
 <table>
 <tr>
   <td valign="top">
     <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">
-      <img alt="發佈資訊" src="../assets/icons/promote.svg" width="40" height="40"/>
+      <img alt="發行資訊" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html"><strong>發佈資訊</strong></a>
+      <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html"><strong>發行資訊</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html">
+    <a href="../installation/overview.md">
       <img alt="安裝" src="../assets/icons/servers.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html"><strong>安裝</strong></a>
+      <a href="../installation/overview.md"><strong>安裝</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html">
-      <img alt="配置" src="../assets/icons/settings.svg" width="40" height="40"/>
+    <a href="../configuration/overview.md">
+      <img alt="設定" src="../assets/icons/settings.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html"><strong>配置</strong></a>
+      <a href="../configuration/overview.md"><strong>設定</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html">
-      <img alt="遷移" src="../assets/icons/move-to.svg" width="40" height="40"/>
+    <a href="../tools/data-migration-tool/how-migration-works.md">
+      <img alt="資料移轉" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html"><strong>遷移</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>資料移轉</strong></a>
     </div>
   </td>
 </tr>
@@ -71,22 +71,22 @@ ht-degree: 1%
        <img alt="效能" src="../assets/icons/gauge.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong>效能最佳實踐</strong></a>
+      <a href="../performance/overview.md"><strong>效能最佳實務</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html">
+    <a href="../tools/overview.md">
        <img alt="工具" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>工具</strong></a>
+      <a href="../tools/overview.md"><strong>工具</strong></a>
     </div>
   </td>
 </tr>
 <tr>
   <td valign="top">
     <a href="../implementation-playbook/overview.md">
-      <img alt="實施" src="../assets/icons/play.svg" width="40" height="40"/>
+      <img alt="實作" src="../assets/icons/play.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>實施行動手冊</strong></a>
@@ -105,7 +105,7 @@ ht-degree: 1%
        <img alt="企業" src="../assets/icons/enterprise.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>規模商業</strong></a>
+      <a href="../commerce-at-scale/overview.md"><strong>大規模商務</strong></a>
     </div>
   </td>
 </tr>
@@ -113,10 +113,9 @@ ht-degree: 1%
 
 ## 新增功能
 
-瞭解新文檔和現有文檔的重要更新。
+了解新檔案和現有檔案的重要更新。
 
-| 更改 | 類型 |
+| 變更 | 類型 |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 已添加 [資訊](../upgrade/upgrade-compatibility-tool/overview.md) 關於如何定義升級相容性工具的規則。 | 主要更新 |
-| 已刪除過期的升級相容性工具 [錯誤代碼](../upgrade/upgrade-compatibility-tool/error-messages.md)。 | 技術 |
-| 已移動 [站點範圍分析工具指南](../tools/site-wide-analysis-tool/intro.md) 從 [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) Experience League。 | 新建 |
+| 移動 [本地安裝指南](../installation/overview.md) 從 [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) Experience League。 | 新增 |
+| 移動 [資料移轉指南](../tools/data-migration-tool/how-migration-works.md) 從 [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) Experience League。 | 新增 |
