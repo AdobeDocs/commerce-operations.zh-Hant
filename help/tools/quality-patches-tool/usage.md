@@ -1,16 +1,16 @@
 ---
 title: 使用狀況
 description: 了解如何使用 [!DNL Quality Patches Tool].
-source-git-commit: 356ee307e0199d70c0e391e0d903e8f2e1600e63
+source-git-commit: 83fa1c77dd6105f4c97f697fd6636773d94fb5ee
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
 
 # 使用狀況
 
-此 [質量修補工具](https://github.com/magento/quality-patches) 提供由Adobe和Magento Open Source社區開發的單個補丁。 它允許您應用、恢復和查看有關所有單個修補程式的一般資訊，這些修補程式可用於已安裝的Adobe Commerce版本或Magento Open Source。 您可以將修補程式應用到Adobe Commerce和Magento Open Source項目，而不管誰開發了修補程式。 例如，您可以將社群開發的修補程式套用至Adobe Commerce專案。
+此 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) 提供由Adobe和Magento Open Source社區開發的單個補丁。 它允許您應用、恢復和查看有關所有單個修補程式的一般資訊，這些修補程式可用於已安裝的Adobe Commerce版本或Magento Open Source。 您可以將修補程式應用到Adobe Commerce和Magento Open Source項目，而不管誰開發了修補程式。 例如，您可以將社群開發的修補程式套用至Adobe Commerce專案。
 
 
 >[!INFO]
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!INFO]
 > 
->如果尚未安裝，則必須安裝 [Git](https://github.com/git-guides/install-git) 或 [修補程式](https://man7.org/linux/man-pages/man1/patch.1.html) 安裝之前 [!DNL Quality Patches Tool]. 新增 `magento/quality-patches` 撰寫器套件至您的 `composer.json` 檔案：
+>如果尚未安裝，則必須安裝 [[!DNL Git]](https://github.com/git-guides/install-git) 或 [修補程式](https://man7.org/linux/man-pages/man1/patch.1.html) 安裝之前 [!DNL Quality Patches Tool]. 新增 `magento/quality-patches` 撰寫器套件至您的 `composer.json` 檔案：
 
 ```bash
 composer require magento/quality-patches
