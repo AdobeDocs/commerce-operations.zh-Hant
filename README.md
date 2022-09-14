@@ -1,27 +1,27 @@
 ---
-source-git-commit: 3fcc6d98509da4fcb8705ea69e708ad8e038b65c
+source-git-commit: 5a950079e8b445ef363217c085da92f0991a3a7f
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-# Adobe商務使用者檔案
+# Adobe Commerce使用者檔案
 
 我們歡迎來自我們的社群，以及來自檔案團隊以外的Adobe員工貢獻心力。
 
 ## Adobe開放原始碼行為准則
 
-本項目已採用[Adobe開放原始碼行為准則](code-of-conduct.md)或[.NET Foundation行為准則](https://dotnetfoundation.org/code-of-conduct)。 如需詳細資訊，請參閱[貢獻](contributing.md)文章。
+本專案已採用 [Adobe 開放原始碼管理辦法](code-of-conduct.md)或 [.NET Foundation 管理辦法](https://dotnetfoundation.org/code-of-conduct)。如需詳細資訊，請參閱[貢獻](contributing.md)一文。
 
 ## 關於您對Adobe內容的貢獻
 
-請參閱[Adobe檔案貢獻者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
+請參閱 [Adobe檔案貢獻者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
 
 您的投稿方式取決於您的身分，以及您要投稿的變更類型：
 
 ### 微幅變更
 
-如果您是出於善意而投稿進行微幅更新，請前往文章，按一下文章中的&#x200B;**Edit**&#x200B;連結，該連結會前往文章的GitHub來源。 然後，只要使用GitHub UI進行更新即可。 如需詳細資訊，請參閱一般[Adobe檔案貢獻者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) 。
+如果您出於好意要貢獻微幅更新，請造訪文章，然後按一下 **編輯** 文章中的連結，會前往文章的GitHub來源。 然後，只要使用GitHub UI進行更新即可。 請參閱一般 [Adobe檔案貢獻者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) 以取得更多資訊。
 
 您在此存放庫中針對檔案和程式碼範例提交的微幅更正或釐清，皆受Adobe使用條款所涵蓋。
 
@@ -35,7 +35,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### 來自Adobe員工的重大更改
 
-若您是Adobe Experience Cloud解決方案產品團隊的技術撰寫人員、專案經理或開發人員，且您的工作正是貢獻或撰寫技術文章，請使用`https://git.corp.adobe.com/AdobeDocs`上的私人存放庫。
+若您是Adobe Experience Cloud解決方案產品團隊的技術撰寫人員、專案經理或開發人員，且您的工作正是貢獻或撰寫技術文章，請使用的私人存放庫，位於 `https://git.corp.adobe.com/AdobeDocs`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -43,7 +43,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 社群投稿人可使用GitHub UI進行基本編輯，或取用存放庫來進行重大投稿。
 
-如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)。
+請參閱 [Adobe檔案貢獻者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) 以取得詳細資訊。
 
 ## 如何使用Markdown來設定主題格式
 
@@ -56,5 +56,31 @@ If you submit a pull request with significant changes to documentation and code 
 
 在公開存放庫中，自動化標籤會指派給提取請求，以協助我們管理提取請求工作流程，並協助您了解提取請求的執行狀況：
 
-* **變更已傳送給作者**:提交人已收到擱置提取請求的通知。
+* **傳送至作者的變更**:提交人已收到擱置提取請求的通知。
 * **準備合併**:準備由我們的提取請求審核團隊審核。
+
+## 範本
+
+此 `_jekyll` 目錄包含模板化主題和必需資產。
+使用液體模板語言的模板位於 `_jekyll` 目錄作為HTML檔案。
+此 `_jekyll/_data` 目錄包含檔案，其中包含用於呈現模板的資料。
+
+要呈現所有模板，請執行以下操作：
+
+1. 導覽至 `_jekyll` 目錄。
+
+   cd_jekyll
+
+1. 執行呈現指令碼。
+
+```
+_scripts/render
+```
+
+> **注意：** 您必須從 `_jekyll` 目錄。
+> **注意：** 必須安裝Ruby才能運行此指令碼。
+
+指令碼會執行呈現，將呈現的檔案寫入 `_jekyll/_rendered` 目錄作為HTML檔案，並將其複製到 `help/_includes` 目錄 `.md` 檔案。
+
+
+如需詳細資訊，請參閱Jekyll檔案 [資料檔案](https://jekyllrb.com/docs/datafiles) [液體過濾器](https://jekyllrb.com/docs/liquid/filters/)和其他功能。
