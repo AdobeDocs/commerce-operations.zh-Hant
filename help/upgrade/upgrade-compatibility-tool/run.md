@@ -1,9 +1,9 @@
 ---
 title: "運行 [!DNL Upgrade Compatibility Tool]"
 description: 請依照下列步驟執行 [!DNL Upgrade Compatibility Tool] 填入Adobe Commerce專案的命令列介面。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: e704748a7ceaa58a5a8d7004c81ac766dec4e7f1
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ bin/uct upgrade:check <dir>
 
 | **命令** | **可用選項** |
 |----------------|-----------------|
-| `upgrade:check` | <ul><li> — 幫助：傳回所有可用選項。</li><li> — 最小問題級別：您可以根據最低問題級別（預設值為「警告」）篩選問題。</li><li>—ignore-current-version-compatibility-issues（或 — i）:如果您不想在報表中納入目前版本的重大問題、錯誤和警告。</li><li> — 即將發行版本（或 — c）:鎖定特定Adobe Commerce版本。</li></ul> |
+| `upgrade:check` | <ul><li> — 幫助：傳回所有可用選項。</li><li>—current-version:最新Adobe Commerce版本。 此參數為必要項目，且必須一律使用。</li><li> — 最小問題級別：您可以根據最低問題級別（預設值為「警告」）篩選問題。</li><li>—ignore-current-version-compatibility-issues（或 — i）:如果您不想在報表中納入目前版本的重大問題、錯誤和警告。</li><li> — 即將發行版本（或 — c）:鎖定特定Adobe Commerce版本。 若省略，則會使用最新的可用項目。</li></ul> |
 
 此 [!DNL Upgrade Compatibility Tool] 可讓您執行 `upgrade:check` 命令 `--ignore-current-version-compatibility-issues` 選項。 如果您只想取得從您目前的版本更新至您 [!DNL Upgrade Compatibility Tool] 報告：
 
@@ -218,20 +218,18 @@ bin/uct --help
 這會傳回清單，其中所有項目皆可使用 `help` 選項 [!DNL Upgrade Compatibility Tool] 在命令行介面中：
 
 ```terminal
-- -a, --current-version[=CURRENT-VERSION]: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
-- -c, --coming-version[=COMING-VERSION]: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
-- --json-output-path[=JSON-OUTPUT-PATH]: Path of the file where the output will be exported in json format.
-- --html-output-path[=HTML-OUTPUT-PATH]: Path of the file where the output will be exported in HTML format.
-- --context=CONTEXT: Execution context. This option is for integration purposes and does not affect the execution result.
-- -h, --help: Display help for that specific command. If no command is provided, `list` command is the default result.
-- -q, --quiet: Do not output any messages while executing the command.
-- -v, --version: Display application version.
-- --ansi, --no-ansi: Enable ANSI output.
-- -n, --no-interaction: Do not ask any interactive question while executing the command.
-- -v, --vv, --vvv, --verbose: Increase verbosity of output communications. 1 for normal output, 2 for verbose output, and 3 for DEBUG output.
+- --raw             To output raw command list
+- --format=FORMAT   The output format (txt, xml, json, or md) [default: "txt"]
+- --short           To skip describing commands' arguments
+- -h, --help            Display help for the given command. When no command is given display help for the list command
+- -q, --quiet           Do not output any message
+- -V, --version         Display this application version
+- --ansi|--no-ansi  Force (or disable --no-ansi) ANSI output
+- -n, --no-interaction  Do not ask any interactive question
+- -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 ```
 
-不過，您仍可執行 `--help` 作為運行特定命令時的選項。 這會傳回特定 `--help` 該特定命令的選項。
+可以運行 `--help` 作為運行特定命令時的選項。 它會傳回 `--help` 指定命令的選項。
 
 範例 `upgrade:check` 命令 `--help` 選項：
 
@@ -242,8 +240,19 @@ bin/uct upgrade:check --help
 這會傳回可針對 `upgrade:check` 命令：
 
 ```terminal
---min-issue-level.
--i, --ignore-current-version-compatibility-issues.
+- -a, --current-version[=CURRENT-VERSION]: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
+- -c, --coming-version[=COMING-VERSION]: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
+- --json-output-path[=JSON-OUTPUT-PATH]: Path of the file where the output will be exported in json format.
+- --html-output-path[=HTML-OUTPUT-PATH]: Path of the file where the output will be exported in HTML format.
+- --min-issue-level[=MIN-ISSUE-LEVEL]            Minimal issue level you want to see in the report (warning, error or critical). [default: "warning"]
+- -i, --ignore-current-version-compatibility-issues  Ignore common issues for current and coming version
+- --context=CONTEXT: Execution context. This option is for integration purposes and does not affect the execution result.
+- -h, --help: Display help for that specific command. If no command is provided, `list` command is the default result.
+- -q, --quiet: Do not output any messages while executing the command.
+- -v, --version: Display application version.
+- --ansi, --no-ansi: Enable ANSI output.
+- -n, --no-interaction: Do not ask any interactive question while executing the command.
+- -v, --vv, --vvv, --verbose: Increase verbosity of output communications. 1 for normal output, 2 for verbose output, and 3 for DEBUG output.
 ```
 
 ## 遵循Adobe Commerce最佳實務
