@@ -1,9 +1,9 @@
 ---
 title: 部署靜態視圖檔案
 description: 了解如何在生產模式期間將靜態檔案寫入商務檔案系統。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4fe6d6a76a5d4849d4f96b61b95a9a3dae7fc76a
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 | `<languages>` | 以空格分隔的清單 [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) 要輸出靜態視圖檔案的語言代碼。 (預設為 `en_US`.)<br>運行以查找清單： `bin/magento info:language:list` | 否 |
 | `--language (-l)` | 僅生成指定語言的檔案。 預設值是為所有ISO-639語言代碼生成檔案，未指定任何選項。 一次可以指定一個語言代碼的名稱。 預設值為 **all**.<br>例如： `--language en_US --language es_ES` | 否 |
 | `--exclude-language` | 生成指定語言代碼的檔案。 預設值（未指定選項）是不排除任何項目。 您可以指定一個語言代碼的名稱或以逗號分隔的語言代碼清單。 預設值為 **無**. | 否 |
-| `--theme <theme>` | 為其部署靜態內容。 預設值為 **all**.<br>例如： `--theme Magento/blank --theme Magento/luma` | 否 |
+| `--theme <theme>` | 要部署靜態內容的主題。 預設值為 **all**.<br>例如： `--theme Magento/blank --theme Magento/luma` | 否 |
 | `--exclude-theme <theme>` | 部署靜態內容時要排除的主題。 預設值為 **無**.<br>例如， `--exclude-theme Magento/blank` | 否 |
 | `--area (-a)` | 僅為指定區域生成檔案。 預設值是為所有區域生成檔案，未指定選項。 有效值為 `adminhtml` 和 `frontend`. 預設值為 **all**.<br>例如： `--area adminhtml` | 否 |
 | `--exclude-area` | 不為指定區域生成檔案。 預設值（未指定選項）是不排除任何項目。 預設值為 **無**. | 否 |
