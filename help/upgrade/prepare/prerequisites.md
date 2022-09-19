@@ -1,9 +1,9 @@
 ---
 title: 完整必要條件
 description: 完成這些先決條件步驟，以準備您的Adobe Commerce或Magento Open Source專案以進行升級。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -97,12 +97,8 @@ Adobe建議設定開啟的檔案 [上限](https://ss64.com/bash/ulimit.html) 的
 1. 將上限設為 `65536`.
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
-
-   >[!NOTE]
-   >
-   > 開啟檔案的語法取決於您使用的UNIX殼層。 前面的設定應與CentOS和Ubuntu搭配Bash殼層使用。 但是，對於Mac OS，正確的設定為ulimit -S 65532。 有關詳細資訊，請參閱手冊頁或作業系統參考。
 
 要在Bash殼層中設定值：
 
@@ -111,7 +107,7 @@ Adobe建議設定開啟的檔案 [上限](https://ss64.com/bash/ulimit.html) 的
 1. 新增下列行：
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
 
 1. 將變更儲存至 `.bashrc` 檔案，然後退出文字編輯器。
