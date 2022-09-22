@@ -1,8 +1,8 @@
 ---
-source-git-commit: 5a950079e8b445ef363217c085da92f0991a3a7f
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '538'
+ht-degree: 5%
 
 ---
 # Adobe Commerce使用者檔案
@@ -62,7 +62,7 @@ If you submit a pull request with significant changes to documentation and code 
 ## 範本
 
 此 `_jekyll` 目錄包含模板化主題和必需資產。
-使用液體模板語言的模板位於 `_jekyll` 目錄作為HTML檔案。
+使用液體模板語言的模板位於 `_jekyll/templated` 目錄作為HTML檔案。
 此 `_jekyll/_data` 目錄包含檔案，其中包含用於呈現模板的資料。
 
 要呈現所有模板，請執行以下操作：
@@ -80,7 +80,6 @@ _scripts/render
 > **注意：** 您必須從 `_jekyll` 目錄。
 > **注意：** 必須安裝Ruby才能運行此指令碼。
 
-指令碼會執行呈現，將呈現的檔案寫入 `_jekyll/_rendered` 目錄作為HTML檔案，並將其複製到 `help/_includes` 目錄 `.md` 檔案。
-
+指令碼會執行轉譯，並將轉譯的範本寫入 `help/_includes/templated` 目錄。
 
 如需詳細資訊，請參閱Jekyll檔案 [資料檔案](https://jekyllrb.com/docs/datafiles) [液體過濾器](https://jekyllrb.com/docs/liquid/filters/)和其他功能。

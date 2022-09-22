@@ -1,7 +1,7 @@
 ---
 title: 系統需求
 description: 使用此參考資料來識別已透過Adobe Commerce和Magento Open Source版本測試的必要軟體相依性。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 例如，2.4.3已通過MariaDB 10.4的完全測試。Adobe建議您在升級到2.4.3之前升級到MariaDB 10.4。
 
-{{$include /help/_includes/system-requirements-table.md}}
+{{$include /help/_includes/templated/system-requirements-table.md}}
 
 ## 其他
 
