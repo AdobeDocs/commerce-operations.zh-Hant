@@ -1,31 +1,31 @@
 ---
 title: 二級快取配置
-description: 瞭解配置L2快取。
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+description: 了解如何設定二級快取。
+source-git-commit: e5e4cf0b3979a457e706823dd16c88508ec4abd8
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
 # 二級快取配置
 
-快取使遠程快取儲存和Commerce應用程式之間的網路流量減少。 標準Commerce實例每個請求傳輸約300 kb，在某些情況下，流量可能會迅速增長到超過1000個請求。
+快取可減少遠程快取儲存與Commerce應用程式之間的網路流量。 標準商務例項每個請求會傳輸約300 kb，而在某些情況下，流量可能會快速成長至約1000個請求。
 
-要減少Redis的網路頻寬，請將快取資料本地儲存在每個Web節點上，並使用遠程快取用於以下兩個目的：
+要將網路頻寬減少到Redis，請將快取資料本地儲存在每個Web節點上，並將遠程快取用於兩個用途：
 
-- 檢查快取資料版本並確保本地儲存最新快取
-- 將最新的快取從遠程電腦傳輸到本地電腦
+- 檢查快取資料版本，並確保將最新快取儲存在本機
+- 將最新快取從遠程電腦傳輸到本地電腦
 
-Commerce在Redis中儲存散列資料版本，並在常規鍵後附加尾碼「：hash」。 如果存在過時的本地快取，則使用快取適配器將資料傳輸到本地電腦。
+商務會將雜湊資料版本儲存在Redis中，尾碼「：hash」會附加至一般索引鍵。 如果存在過期的本地快取，則使用快取適配器將資料傳輸到本地電腦。
 
 >[!INFO]
 >
->對於Adobe Commerce的雲基礎架構，請考慮 [擴展Redis快取實現](https://support.magento.com/hc/en-us/articles/360049292532) 支援文章。
+>若為雲端基礎架構上的Adobe Commerce，請考慮 [延伸密文快取實作](https://support.magento.com/hc/en-us/articles/360049292532) 支援文章。
 
-## 配置示例
+## 設定範例
 
-使用以下示例修改或替換 `app/etc/env.php` 的子菜單。
+使用以下示例修改或替換 `app/etc/env.php` 檔案。
 
 ```php
 'cache' => [
@@ -59,25 +59,98 @@ Commerce在Redis中儲存散列資料版本，並在常規鍵後附加尾碼「�
 ],
 ```
 
-位置：
+其中：
 
-- `backend` 是L2快取實現。
-- `backend_options` 是L2快取配置。
-   - `remote_backend` 是遠程快取實現：Redis或MySQL。
+- `backend` 是L2快取實作。
+- `backend_options` 是二級快取配置。
+   - `remote_backend` 是遠端快取實作：Redis或MySQL。
    - `remote_backend_options` 是遠程快取配置。
-   - `local_backend` 是本地快取實現： `Cm_Cache_Backend_File`
-   - `local_backend_options` 是本地快取配置。
+   - `local_backend` 是本機快取實作： `Cm_Cache_Backend_File`
+   - `local_backend_options` 是本機快取設定。
       - `cache_dir` 是儲存本地快取的目錄的檔案快取特定選項。
-   - `use_stale_cache` 是啟用或禁用陳舊快取的標誌。
+   - `use_stale_cache` 是可啟用或停用陳舊快取的標幟。
 
-Adobe建議使用Redis進行遠程快取(`\Magento\Framework\Cache\Backend\Redis`) `Cm_Cache_Backend_File` 用於共用記憶體中資料的本地快取，使用： `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+Adobe建議使用Redis進行遠端快取(`\Magento\Framework\Cache\Backend\Redis`)和 `Cm_Cache_Backend_File` 對於共用記憶體中資料的本地快取，請使用： `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
-Adobe建議使用 [`cache preload`](redis-pg-cache.md#redis-preload-feature) 因為它顯著地降低了雷迪斯的壓力。 不要忘記為預載入鍵添加尾碼「：hash」。
+Adobe建議使用 [`cache preload`](redis-pg-cache.md#redis-preload-feature) 功能，因為它能顯著降低Redis的壓力。 別忘了為預先載入金鑰新增尾碼「：hash」。
 
-## 過時的快取選項
+## 過時快取選項
 
-開始於 [!DNL Commerce] 2.4, `stale_cache` 選項可以在某些特定情況下提高效能。
+開始使用 [!DNL Commerce] 2.4, `use_stale_cache` 選項在某些情況下可改善效能。
 
-通常，從效能方面來說，等待鎖定的取捨是可接受的，但商家擁有的塊或快取數量越大，等待鎖定所花費的時間就越多。 在某些情況下，您可以 **鍵數** \* **查找超時** 進程的時間。 在一些罕見的情況下，商戶可以在 `Block/Config` 快取，因此即使鎖的查找超時很小，也可能需要幾秒。
+通常，從效能方面來說，等待鎖的取捨是可接受的，但商家擁有的塊或快取數量越多，等待鎖花費的時間就越多。 在某些情況下，您可以等待 **鍵數** \* **查閱逾時** 處理的時間。 在某些罕見情況下，商家可能會在 `Block/Config` 快取，因此，即使鎖的查詢逾時很小，也可能需要數秒。
 
-陳舊快取只能與L2快取一起使用。 如果快取過時，您可以發送過時的快取，而新快取正在並行進程中生成。 要啟用過時的快取，請添加 `'use_stale_cache' => true` 到L2快取的頂部配置。
+過時快取只能與二級快取一起使用。 使用過時快取時，您可以傳送過時快取，而同時產生新的快取。 要啟用過時快取，請添加 `'use_stale_cache' => true` 到L2快取的頂端配置。
+
+Adobe建議啟用 `use_stale_cache` 選項，僅適用於從中獲益最多的快取類型，包括：
+
+- `block_html`
+- `config_integration_api`
+- `config_integration`
+- `full_page`
+- `layout`
+- `reflection`
+- `translate`
+
+下列程式碼顯示範例設定：
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+            'backend_options' => [
+                'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                'remote_backend_options' => [
+                    'persistent' => 0,
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'password' => '',
+                    'compress_data' => '1',
+                ],
+                'local_backend' => 'Cm_Cache_Backend_File',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/'
+                ],
+                'use_stale_cache' => false,
+            ],
+            'frontend_options' => [
+                'write_control' => false,
+            ],
+        ],
+         'stale_cache_enabled' => [
+            'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+            'backend_options' => [
+                'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                'remote_backend_options' => [
+                    'persistent' => 0,
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'password' => '',
+                    'compress_data' => '1',
+                ],
+                'local_backend' => 'Cm_Cache_Backend_File',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/'
+                ],
+                'use_stale_cache' => true,
+            ],
+            'frontend_options' => [
+                'write_control' => false,
+            ],
+        ]
+    ],
+    'type' => [
+        'default' => ['frontend' => 'default'],
+        'layout' => ['frontend' => 'stale_cache_enabled'],
+        'block_html' => ['frontend' => 'stale_cache_enabled'],
+        'reflection' => ['frontend' => 'stale_cache_enabled'],
+        'config_integration' => ['frontend' => 'stale_cache_enabled'],
+        'config_integration_api' => ['frontend' => 'stale_cache_enabled'],
+        'full_page' => ['frontend' => 'stale_cache_enabled'],
+        'translate' => ['frontend' => 'stale_cache_enabled']
+    ],
+],
+```
