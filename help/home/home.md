@@ -2,10 +2,10 @@
 keywords: Adobe Commerce；首頁；熱門主題
 title: 首頁
 description: 瀏覽Adobe Commerce操作產品檔案的索引。
-source-git-commit: 8605fa5c791a48c112efa997b14d7bffe5f3028c
+source-git-commit: e247b0bd2765e425da033f32ab99f79cfe6cc0b2
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 2%
 <table>
 <tr>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
       <img alt="發行資訊" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html"><strong>發行資訊</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>發行資訊</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -117,6 +117,7 @@ ht-degree: 2%
 
 | 變更 | 類型 |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 移動 [發行資訊指南](../release/roadmap.md) 從 [devdocs.magento.com](https://devdocs.magento.com/release/versions.html). | 新增 |
 | 移動 [命令行工具參考](../reference/commerce.md) 從 [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | 新增 |
 | 移動 [本地安裝指南](../installation/overview.md) 從 [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | 新增 |
 | 移動 [資料移轉指南](../tools/data-migration-tool/how-migration-works.md) 從 [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | 新增 |

@@ -1,7 +1,7 @@
 ---
 user-guide-title: 作業指南
 user-guide-description: 了解維護您的 Adobe Commerce 或 Magento Open Source 應用程式的作業層面。
-source-git-commit: abcf7a500169e5726197c23ebbc4c4eb7749d5be
+source-git-commit: 14379c68e319104336f3aa8c79255ea67a57c62b
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 19%
@@ -12,7 +12,7 @@ ht-degree: 19%
 # Adobe Commerce操作指南 {#operational-guides}
 
 - [首頁](home.md)
-- [發行資訊](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)
+- [發行資訊](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)
 - [安裝](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html)
 - [設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html)
 - [資料移轉](https://experienceleague.adobe.com/docs/commerce-operations/tools/data-migration/how-migration-works.html)
