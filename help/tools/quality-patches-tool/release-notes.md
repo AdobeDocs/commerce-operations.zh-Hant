@@ -1,7 +1,7 @@
 ---
 title: 發行說明
 description: 了解適用於Adobe Commerce的修補程式及其解決的問題。
-source-git-commit: ead062ac2f5dbf07293aef2a5a5d9f1f21255402
+source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
 workflow-type: tm+mt
 source-wordcount: '9233'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->請參閱 [應用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) 以取得將修補程式套用至Adobe Commerce或Magento Open Source專案的說明。 請參閱 [可用修補程式](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) ，查看已發佈修補程式的完整清單。
+>請參閱 [應用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) 以取得將修補程式套用至Adobe Commerce或Magento Open Source專案的說明。 請參閱 [可用修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) ，查看已發佈修補程式的完整清單。
 
 >[!INFO]
 >
@@ -542,4 +542,3 @@ ht-degree: 0%
 * **MDVA-30052** (*適用於Adobe Commerce >=2.3.2-p2 &lt;2.3.5*) — 修正私人內容（本機儲存）未正確填入，而導致效能問題的問題。
 * **MDVA-30131** (*適用於Adobe Commerce >=2.3.4 &lt;2.3.6 || 2.4.0*) — 修正分層導覽的問題，其中 *否* 若 [!DNL Elasticsearch] 用作搜尋引擎。
 * **MDVA-35514** (*適用於Adobe Commerce >=2.4.0 &lt;2.4.1*) — 修正在「建立套件」強制回應視窗中建立發運標籤和新增已訂購產品至套件的問題。
-
