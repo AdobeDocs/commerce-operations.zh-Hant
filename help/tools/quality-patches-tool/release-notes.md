@@ -1,9 +1,9 @@
 ---
 title: 發行說明
 description: 了解適用於Adobe Commerce的修補程式及其解決的問題。
-source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
+source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
 workflow-type: tm+mt
-source-wordcount: '9233'
+source-wordcount: '9467'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,21 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需有關 [!DNL quality patches] 由社群建立以供Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.21 {#v1-1-21}
+
+* **ACSD-46809** (針對Adobe Commerce和Magento Open Source>=2.4.2 &lt;2.4.6) — 修正指派大量產品來源時，使用者發生錯誤的問題。
+* **ACSD-46856** (針對Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 通過「系統」>「配置」>「導入」>「高級定價」改進效能更新層價。
+* **ACSD-46541** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.4) — 修正刪除訂單項目時，管理員使用者無法建立貸項通知單的問題。
+* **ACSD-46581** (針對Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正在購物車中選取國家/地區後，預估稅金總計未更新的問題。
+* **ACSD-46618** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正產品清單介面工具集針對登入客戶顯示錯誤快取價格的問題。
+* **ACSD-46674** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正客戶電子郵件中影像類型的自訂選項顯示為HTML的問題。
+* **ACSD-46988** (適用於Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.6) — 修正GraphQL「貨幣」API請求傳回自訂貨幣NULL值的問題。
+* **ACSD-47076** (適用於Adobe Commerce和Magento Open Source>=2.4.1 &lt;2.4.5) — 修正店面上無法播放Vimeo影片的問題。
+* **ACSD-45071** (適用於Adobe Commerce和Magento Open Source>=2.4.2 &lt;2.4.4) — 修正匯入期間新增預設來源至產品的問題。
+* **AC-3023** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 將DHL配置更新為最新版本10.0。
+* 更新的修補程式：MDVA-42584。
+* 替換的修補程式：MDVA-36572、ACSD-45241。
 
 ## v1.1.20 {#v1-1-20}
 
