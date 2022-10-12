@@ -1,7 +1,7 @@
 ---
 title: 修補程式如何工作
 description: 了解Adobe Commerce和Magento Open Source的不同類型修補程式及其工作方式。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 1a18a445cb104420dd9b853b7c4d42ce3bddf2ac
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Hotfix是修補程式，包含影響許多商家的高影響安全性或品質�
 
 單個修補程式包含針對特定問題的低影響質量修正。 這些修正會套用至最近支援的次要版本（例如2.4.x），但可能會從先前支援的次要版本（例如2.3.x）中遺失。 Adobe會視需要發行個別修補程式。
 
-使用 [質量修補工具](https://devdocs.magento.com/quality-patches/tool.html) 應用單個修補程式。
+使用 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}以應用單個修補程式。
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ index c8a6fef58d31..7d01c195791e 100644
              clearTimeout: function () {
                  clearTimeout(this.timeoutId);
 +                this.fail();
- 
+
                  return this;
              },
 ```
@@ -90,7 +90,7 @@ index c8a6fef58d31..7d01c195791e 100644
 
 可以使用以下任何方法應用修補程式：
 
-- [質量修補工具](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [命令列](/help/upgrade/patches/apply.md#command-line)
 - [撰寫器](/help/upgrade/patches/apply.md#composer)
 

@@ -1,7 +1,7 @@
 ---
 title: 應用修補程式
 description: 了解將修補程式套用至Adobe Commerce或Magento Open Source專案的方法。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 可以使用以下任何方法應用修補程式：
 
-- [質量修補工具](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [命令列](../patches/apply.md#command-line)
 - [撰寫器](../patches/apply.md#composer)
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->要應用官方質量補丁程式，請使用 [質量修補工具](https://devdocs.magento.com/quality-patches/tool.html). 部署任何自定義修補程式之前，請始終執行全面的測試。
+>要應用官方質量補丁程式，請使用 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}。 部署任何自定義修補程式之前，請始終執行全面的測試。
 
 要使用撰寫器應用自定義修補程式，請執行以下操作：
 
