@@ -1,30 +1,30 @@
 ---
 title: 配置遠程儲存
 description: 了解如何為本地Commerce應用程式配置遠程儲存模組。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
 
 # 配置遠程儲存
 
-遠端儲存模組提供儲存媒體檔案的選項，並可使用儲存服務(例如AWS S3)，將匯入/匯出排程在永久的遠端儲存容器中。 依預設， [!DNL Commerce] 應用程式將媒體檔案儲存在包含應用程式的同一檔案系統中。 對於複雜的多伺服器配置而言，這是低效的，並且在共用資源時可能會導致效能降低。 使用遠程儲存模組，您可以將媒體檔案儲存在 `pub/media` 目錄和匯入/匯出檔案 `var` 遠程對象儲存的目錄，以利用伺服器端影像大小調整。
+遠端儲存模組提供儲存媒體檔案的選項，並可使用儲存服務(例如AWS S3)，將匯入和匯出排程在永久、遠端的儲存容器中。 預設情況下，Adobe Commerce應用程式將媒體檔案儲存在包含該應用程式的同一檔案系統中。 對於複雜的多伺服器配置而言，這是低效的，並且在共用資源時可能會導致效能降低。 使用遠程儲存模組，您可以將媒體檔案儲存在 `pub/media` 目錄和匯入/匯出檔案 `var` 遠程對象儲存的目錄，以利用伺服器端影像大小調整。
 
 >[!INFO]
 >
->遠程儲存僅在2.4.2版和更新版本中可用。 請參閱 [2.4.2發行說明](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>遠程儲存僅適用於Commerce 2.4.2版和更新版本。 請參閱 [2.4.2發行說明](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 
 >[!INFO]
 >
->遠程儲存模組具有 _有限_ 支援Adobe Commerce雲端基礎架構。 Adobe無法完全排除第三方儲存適配器服務的故障。
+>遠程儲存模組具有 _有限_ 支援Adobe Commerce雲端基礎架構。 Adobe無法完全排除第三方儲存適配器服務的故障。 請參閱 [在雲基礎架構上為Commerce配置遠程儲存](cloud-support.md) 用於指導為雲項目實施遠程儲存。
 
 ![綱要影像](../../assets/configuration/remote-storage-schema.png)
 
 ## 遠程儲存選項
 
-您可以使用 `remote-storage` 選項 [`setup` CLI命令][setup]. 此 `remote-storage` 選項使用下列語法：
+您可以使用 `remote-storage` 選項 [`setup` CLI命令](../../installation/tutorials/deployment.md). 此 `remote-storage` 選項使用下列語法：
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
@@ -49,21 +49,23 @@ ht-degree: 0%
 
 ## 啟用遠程儲存
 
-您可以在新 [!DNL Commerce] 安裝，或使用 `remote-storage` 參數名稱和值配對(含 `setup` CLI命令。 至少，你必須提供儲存 `driver`, `bucket`，和 `region`.
+您可以在Adobe Commerce安裝期間安裝遠端儲存，或將遠端儲存新增至現有的Commerce執行個體。 下列範例示範每個方法使用 `remote-storage` 搭配商務使用的參數 `setup` CLI命令。 至少，你必須提供儲存 `driver`, `bucket`，和 `region`.
 
-下列範例會透過美國的AWS S3儲存適配器啟用遠端儲存：
-
-- 安裝新 [!DNL Commerce] 具有遠程儲存
+- 範例：使用遠程儲存安裝商務
 
    ```bash
    bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
    ```
 
-- 在現有儲存器上啟用遠程儲存 [!DNL Commerce]
+- 範例：在現有商務上啟用遠程儲存
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
    ```
+
+>[!TIP]
+>
+>若需Adobe Commerce雲端基礎架構相關資訊，請參閱 [在雲基礎架構上為Commerce配置遠程儲存](cloud-support.md).
 
 ## 限制
 
@@ -75,7 +77,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 啟用遠程儲存可能會影響您已建立的開發體驗。 例如，某些PHP檔案函式可能無法如預期般運作。 必須強制使用Commerce Framework執行檔案操作。
 
-禁止的PHP本機函式清單可在 [Magento編碼標準] 存放庫。
+禁止的PHP本機函式清單可在 [magento-coding-standard存放庫][code-standard].
 
 ## 移轉內容
 
@@ -92,5 +94,4 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[Magento編碼標準]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
-[setup]: ../../installation/tutorials/deployment.md
+[code-standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
