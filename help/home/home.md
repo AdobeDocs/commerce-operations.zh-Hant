@@ -2,10 +2,10 @@
 keywords: Adobe Commerce；首頁；熱門主題
 title: 首頁
 description: 瀏覽Adobe Commerce操作產品檔案的索引。
-source-git-commit: e247b0bd2765e425da033f32ab99f79cfe6cc0b2
+source-git-commit: 441bbcf15901b9ca547780eb6f3a20efc8025d91
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '148'
+ht-degree: 2%
 
 ---
 
@@ -108,6 +108,14 @@ ht-degree: 0%
       <a href="../commerce-at-scale/overview.md"><strong>大規模商務</strong></a>
     </div>
   </td>
+  <td valign="top">
+    <a href="../security-and-compliance/overview.md">
+       <img alt="企業" src="../assets/icons/alert-circle.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="../security-and-compliance/overview.md"><strong>安全性和合規性</strong></a>
+    </div>
+  </td>
 </tr>
 </table>
 
@@ -116,8 +124,6 @@ ht-degree: 0%
 了解新檔案和現有檔案的重要更新。
 
 | 變更 | 類型 |
-|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| 移動 [發行資訊指南](../release/roadmap.md) 從 [devdocs.magento.com](https://devdocs.magento.com/release/versions.html). | 新增 |
-| 移動 [命令行工具參考](../reference/commerce.md) 從 [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | 新增 |
-| 移動 [本地安裝指南](../installation/overview.md) 從 [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | 新增 |
-| 移動 [資料移轉指南](../tools/data-migration-tool/how-migration-works.md) 從 [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | 新增 |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
+| 移動 [安全性和合規性指南](../security-and-compliance/overview.md) 從 [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | 新增 |
+| 移動 [發行資訊指南](../release/roadmap.md) 從 [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | 新增 |
