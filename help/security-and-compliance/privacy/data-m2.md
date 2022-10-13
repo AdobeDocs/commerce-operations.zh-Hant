@@ -1,9 +1,9 @@
 ---
 title: 客戶個人資訊參考（2.x版）
-description: 了解Adobe Commerce和Magento Open Source2.x中客戶個人資訊的資料流程圖表和資料庫實體對應。
-source-git-commit: 0640b59cc529123911537475bbfc179c917ac258
+description: 了解Adobe Commerce和Magento Open Source2.x中客戶個人資訊的資料流圖表和資料庫實體對應。
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 0%
 >
 >這是一系列主題中的一個，可協助Adobe Commerce和Magento Open Source商與開發人員準備遵守隱私權法規。 請洽詢您的法律顧問，以判斷您的企業是否應遵守及如何遵守任何法律義務。
 
-為隱私權法規制定合規性計畫時，請使用以下資料流圖表和資料庫實體映射以供參考，例如：
+為隱私管理法規開發合規性程式時，請使用以下資料流圖表和資料庫實體映射作為參考，例如：
 
 - [GDPR](gdpr.md)
 - [CCPA](ccpa.md)
 
-## 資料流圖表
+## 資料流圖
 
-資料流圖表顯示客戶和管理員可從店面和管理員輸入及擷取的資料類型。
+資料流圖表顯示客戶和管理員可以輸入的資料類型，以及可以從店面和管理員檢索的資料類型。
 
 ### 前端資料入口點
 

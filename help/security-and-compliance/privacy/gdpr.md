@@ -1,9 +1,9 @@
 ---
 title: 一般資料保護規範(GDPR)
 description: 了解一般資料保護規範(GDPR)，此法規規範歐盟和歐洲經濟區所有個人的資料保護與隱私權。
-source-git-commit: 1a608e8a5986026d5a187dc8cbd358fed2db5d9e
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 歐洲聯盟（歐盟）頒布 [一般資料保護規範](https://ec.europa.eu/info/law/law-topic/data-protection_en) (GDPR)，讓公民更能掌控其個人資料。 GDPR適用於在歐盟內運作的任何組織。 它也適用於歐盟以外向歐盟客戶或企業提供商品或服務的組織。
 
-系統整合商可以使用個人資訊參考中的資料流圖表和資料庫資訊來構建指令碼，以解決類似以下的使用案例：
+系統整合商可以使用「個人資訊參考」中的資料流圖表和資料庫資訊來構建指令碼，以解決類似以下的使用案例：
 
 - 購物者要求商家儲存的相關資料副本
 - 購物者請求刪除其資訊
 
 ## 個人資訊參考
 
-如需技術資訊，請參閱個人資訊參考中的資料流圖表和資料庫實體對應，此對應至您支援的每個Adobe Commerce或Magento Open Source版本。
+有關技術資訊，請參閱《個人資訊參考》中適用於您支援的每個Adobe Commerce或Magento Open Source版本的資料流圖表和資料庫實體映射。
 
 - [客戶個人資訊參考（2.x版）](data-m2.md)
 - [客戶個人資訊參考（版本）1.x)](data-m1.md)
