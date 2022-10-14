@@ -1,7 +1,7 @@
 ---
 title: 軟體生命週期策略
 description: 了解Adobe Commerce版本軟體支援終止的主要日期。
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 若為Adobe Commerce 2.4及後續版本：
 
-- 為了更好地簡化我們的生命週期策略，Adobe為2.4版提供了質量修正，直到其所基於的PHP版本的支援日期結束。 客戶可以聯絡 [Adobe Commerce支援](https://developer.adobe.com/commerce/contributor/community/support/) 或通過自助服務 [質量修補工具](https://devdocs.magento.com/quality-patches/tool.html) 如果其版本仍符合品質支援的資格。 請參閱下表，了解Adobe Commerce發行版本的軟體支援終止日期。
+- 為了更好地簡化我們的生命週期策略，Adobe為2.4版提供了質量修正，直到其所基於的PHP版本的支援日期結束。 客戶可以聯絡 [Adobe Commerce支援](https://developer.adobe.com/commerce/contributor/community/support/) 或通過自助服務 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}，如果其版本仍符合品質支援的資格。 請參閱下表，了解Adobe Commerce發行版本的軟體支援終止日期。
 
 - Adobe僅透過最新修補程式或安全修補程式發行提供安全性修正，即使客戶的版本仍符合品質支援的資格。 與品質修正不同，安全性修正無法移植到先前的次要版本，也無法移植到支援的次要版本中的先前修補版本。
 

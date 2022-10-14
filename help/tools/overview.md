@@ -1,24 +1,24 @@
 ---
-title: '工具 '
-description: 使用這些工具優化您的Adobe Commerce商店。
-source-git-commit: 630b840f7b2b762172bc085246bb3e3e7b10e7b9
+title: 工具
+description: 使用這些工具最佳化您的Adobe Commerce商店。
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
-source-wordcount: '65'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # 工具
 
-本指南的目標是為您提供必要的工具，以運行成功、優化和健康的Adobe Commerce站點。
+本指南旨在提供必要的工具，以執行成功、最佳化且運作正常的Adobe Commerce網站。
 
-## 這本指南是給誰的？
+## 本指南是給誰的？
 
-本指南針對商家、開發商和整合商設計，以促進其Adobe Commerce店的最佳效能。
+本指南是專為商戶、開發人員和整合商而設計，以促進其Adobe Commerce商店的最佳效能。
 
-## 指南裡有什麼？
+## 指南中有什麼？
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
-* [[!DNL Quality Patches Tool]](https://devdocs.magento.com/quality-patches/tool.html)
+* [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 * [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)
 * [[!DNL Data Migration Tool]](data-migration-tool/how-migration-works.md)
