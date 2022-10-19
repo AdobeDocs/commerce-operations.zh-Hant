@@ -1,9 +1,9 @@
 ---
 title: 發行排程
 description: 了解特定版本的Adobe Commerce何時排程進行測試版、搶鮮版和全面推出。
-source-git-commit: c0609aef52f6c8c24a6ccb036b9d44bed9b3c597
+source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,8 @@ Adobe針對每個支援的Adobe Commerce和Magento Open Source發行版本發行
 | 2022年6月<br>功能發行 | \-\- | \-\- | \-\- | 2022年6月21日 |
 | 2022年8月<br>功能+修補程式發行+安全性修補程式發行 | 2.4.5<br>2.4.4-p1<br>2.4.3-p3<br>2.3.7-p4<sup>1</sup> | \-\- | 2022年7月26日 | 2022年8月9日 |
 | 2022年10月<br>功能+安全性修補程式發行 | 2.4.5-p1<sup>2</sup><br>2.4.4-p2 | \-\- | 2022年9月27日 | 2022年10月11日 |
+| 2023年1月<br>功能發行 | \-\- | \-\- | \-\- | 2023年1月17日 |
+| 2023年3月<br>功能+修補程式發行+安全性修補程式發行 | 2.4.6<br>2.4.5-p2<br>2.4.4-p3 | 2023年1月 | 2023年2月28日 | 2023年3月14日 |
 
 <sup>\-\ — 指出不適用於此版本的項目。</sup><br>
 <sup>1這是2.3.x版本行的最後一個修補程式版本。 2.3.x版系列於2022年9月終止支援(EOS)。</sup><br>
@@ -32,10 +34,6 @@ Adobe針對每個支援的Adobe Commerce和Magento Open Source發行版本發行
 >[!TIP]
 >
 >修補程式和安全修補程式版本是升級核心代碼庫以確保平台安全、可靠和效能的機會。 功能發佈會每隔一個月進行。 功能發行與核心程式碼基底無關，可透過外部模組或擴充功能取得。 對現有獨立功能的任何更新都會在功能發行期間發行，如果已實作功能，則不會自動進行。
-
->[!NOTE]
->
->我們已將 [新政策](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) 適用於我們支援的發行版本。 若要進一步了解我們2022年發行日曆和生命週期政策背後的新策略，請造訪我們的 [部落格](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy).
 
 ## 搶先使用
 
