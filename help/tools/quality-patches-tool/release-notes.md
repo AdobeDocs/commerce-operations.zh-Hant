@@ -1,9 +1,9 @@
 ---
 title: 發行說明
 description: 了解適用於Adobe Commerce的修補程式及其解決的問題。
-source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
+source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
 workflow-type: tm+mt
-source-wordcount: '9467'
+source-wordcount: '9581'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,14 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需有關 [!DNL quality patches] 由社群建立以供Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.22 {#v1-1-22}
+
+* **ACSD-47444** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.3) — 修正 _嘗試訪問類型bool的值上的陣列偏移_ 在PHP 7.4上訪問已知產品的某些非現有類別路徑時出錯。
+* **ACSD-47332** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正cron因錯誤而失敗的問題，此錯誤僅在執行00:00至00:59 UTC時回報。
+* **ACSD-47280** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正在特定範圍上停用共用目錄功能無法正確運作的問題。
+* **ACSD-47106** (適用於Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.6) — 修正無法將值儲存在公司建立頁面上新自訂屬性中的問題。
+* 更新的修補程式：ACSD-45143。
 
 ## v1.1.21 {#v1-1-21}
 
