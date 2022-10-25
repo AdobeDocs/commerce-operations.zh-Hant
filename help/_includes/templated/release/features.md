@@ -1,11 +1,13 @@
 ---
-source-git-commit: d36beb2e963a28d7a98d61dab94ddc67cb2f40ab
+source-git-commit: e413ad8fb31b2151a03557320505f8ce95e8ff1a
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '166'
 ht-degree: 9%
 
 ---
 # 商務功能
+
+<!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Then, run the rendering script (_scripts/render) to generate the new compatibility table as described in the README instructions.-->
 
 <table style="table-layout:auto">
   <tbody>
@@ -74,6 +76,14 @@ ht-degree: 9%
       <td>+</td>
     </tr>
     <tr>
+      <td>渠道經理(Walmart Marketplace)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
       <td>適用於B2B的功能和API（如需詳細資訊，請參閱B2B的資訊表）</td>
       <td></td>
       <td></td>
@@ -125,6 +135,14 @@ ht-degree: 9%
     </tr>
     <tr>
       <td>線上採購店內採購(BOPIS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>儲存完成（高級全通道完成）</td>
       <td></td>
       <td></td>
       <td></td>
