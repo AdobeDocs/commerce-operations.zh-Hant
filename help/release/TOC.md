@@ -1,21 +1,51 @@
 ---
 user-guide-title: 發行資訊
 user-guide-description: 了解Adobe Commerce和Magento Open Source發行版本。
-source-git-commit: c81363d33765487717f390236ddb94f0178b4644
+source-git-commit: e7c38fd6b7588963039d7dd40c59c8b567054428
 workflow-type: tm+mt
-source-wordcount: '26'
-ht-degree: 0%
+source-wordcount: '76'
+ht-degree: 15%
 
 ---
 
 
 # 發行資訊 {#release}
 
-- [藍圖](roadmap.md)
-- [排程](schedule.md)
-- [測試版計畫](beta-program.md)
+- 發行說明 {#notes}
+   - [概述](release-notes/overview.md)
+   - [向後不相容的更改](backward-incompatible-changes.md)
+   - Adobe Commerce {#adobe-commerce}
+      - [2.4.5](release-notes/commerce/2-4-5.md)
+      - [2.4.4](release-notes/commerce/2-4-4.md)
+      - [2.4.3](release-notes/commerce/2-4-3.md)
+      - [2.4.2](release-notes/commerce/2-4-2.md)
+      - [2.4.1](release-notes/commerce/2-4-1.md)
+      - [2.4.0](release-notes/commerce/2-4-0.md)
+   - Magento Open Source {#magento-open-source}
+      - [2.4.5](release-notes/open-source/2-4-5.md)
+      - [2.4.4](release-notes/open-source/2-4-4.md)
+      - [2.4.3](release-notes/open-source/2-4-3.md)
+      - [2.4.2](release-notes/open-source/2-4-2.md)
+      - [2.4.1](release-notes/open-source/2-4-1.md)
+      - [2.4.0](release-notes/open-source/2-4-0.md)
+   - 安全修補程式發行 {#security-patches}
+      - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
+      - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
+      - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
+      - [2.4.3-p3](release-notes/security/2-4-3-p3.md)
+      - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
+      - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
+      - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
 - [發行版本](versions.md)
-- [發行原則](policy.md)
-- [生命週期策略](lifecycle-policy.md)
-- [可用性](availability.md)
-- [商務功能](features.md)
+- [各版本功能](features.md)
+- [產品可用性](product-availability.md)
+- [產品藍圖](product-roadmap.md)
+- [測試版計畫](beta-program.md)
+- 規劃與政策 {#planning}
+   - [生命週期策略](lifecycle-policy.md)
+   - [版本設定原則](versioning-policy.md)
+   - [發行排程](schedule.md)
+- 套件 {#packages}
+   - [Adobe Commerce](packages/adobe-commerce.md)
+   - [適用於Adobe Commerce的雲端套件](packages/cloud.md)
+   - [Magento Open Source](packages/magento-open-source.md)

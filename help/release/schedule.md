@@ -1,7 +1,7 @@
 ---
 title: 發行排程
 description: 了解特定版本的Adobe Commerce何時排程進行測試版、搶鮮版和全面推出。
-source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
+source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 發行排程
 
-Adobe不斷努力在讓產品升級簡單且可預測，以及更快地為早期採用者提供改善和新功能之間找到適當的平衡。 去年，我們改進了如何提供軟體來支援這種平衡。 如需其他資訊，請參閱 [發行原則](policy.md).
+Adobe不斷努力在讓產品升級簡單且可預測，以及更快地為早期採用者提供改善和新功能之間找到適當的平衡。 去年，我們改進了如何提供軟體來支援這種平衡。 如需其他資訊，請參閱 [版本設定原則](versioning-policy.md).
 
 Adobe針對每個支援的Adobe Commerce和Magento Open Source發行版本發行安全性和功能修補程式。
 

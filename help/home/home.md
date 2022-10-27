@@ -2,7 +2,7 @@
 keywords: Adobe Commerce；首頁；熱門主題
 title: 首頁
 description: 瀏覽Adobe Commerce操作產品檔案的索引。
-source-git-commit: 441bbcf15901b9ca547780eb6f3a20efc8025d91
+source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 2%
@@ -126,4 +126,4 @@ ht-degree: 2%
 | 變更 | 類型 |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
 | 移動 [安全性和合規性指南](../security-and-compliance/overview.md) 從 [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | 新增 |
-| 移動 [發行資訊指南](../release/roadmap.md) 從 [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | 新增 |
+| 移動 [發行資訊指南](../release/release-notes/overview.md) 從 [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | 新增 |
