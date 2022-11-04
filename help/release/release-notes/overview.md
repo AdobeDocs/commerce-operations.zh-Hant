@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerce和Magento Open Source發行說明
 description: 了解如何尋找特定Adobe Commerce和Magento Open Source版本的資訊。
-source-git-commit: 3096f6820589fc7830d6439b4a76228ee47cd9d3
+source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '400'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 1%
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">支付服務</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">產品Recommendations</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html?lang=en">快速結帳</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">服務連接器</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">服務連接器</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">儲存完成</a></li>
           </ul>
         </td>
