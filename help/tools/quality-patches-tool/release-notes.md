@@ -1,9 +1,9 @@
 ---
 title: 發行說明
 description: 了解適用於Adobe Commerce的修補程式及其解決的問題。
-source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
+source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
 workflow-type: tm+mt
-source-wordcount: '9581'
+source-wordcount: '9752'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,18 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需有關 [!DNL quality patches] 由社群建立以供Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.23 {#v1-1-23}
+
+* **ACSD-47179** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正具有特定範圍限制存取權之管理員無法刪除產品評論的問題。
+* **ACSD-47107** (適用於Adobe Commerce和Magento Open Source>=2.4.2 &lt;2.4.5) — 修正將目錄價格規則折扣套用至自訂產品選項的問題。
+* **ACSD-47232** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正管理員無法套用具有總重量條件的抵用券的問題。
+* **ACSD-46519** (適用於Adobe Commerce和Magento Open Source>=2.4.1 &lt;2.4.6) — 修正GraphQL categoryList請求針對錨點類別傳回錯誤product_count的問題。
+* **ACSD-47027** (適用於Adobe Commerce和Magento Open Source>=2.4.2 &lt;2.4.6) — 修正更新CompanyRole GraphQL請求緩慢的問題。
+* **ACSD-47666** (針對Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正「管理員>系統>權限>使用者角色>角色>角色使用者」格線中，篩選功能無法運作的問題。
+* **ACSD-47497** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正「管理員」下的「設定」中未顯示「服務」標籤的問題。
+* 更新的修補程式：ACSD-47743。
+* 替換的修補程式：MDVA-42807。
 
 ## v1.1.22 {#v1-1-22}
 
