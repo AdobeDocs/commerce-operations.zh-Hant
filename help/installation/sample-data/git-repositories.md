@@ -1,9 +1,9 @@
 ---
 title: 複製範例資料Git存放庫
 description: 請依照下列步驟安裝Adobe Commerce，並複製Git存放庫以Magento Open Source範例資料。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,10 @@ ht-degree: 0%
 
    如果您使用 `2.4-develop` Magento Open SourceGitHub存放庫的分支，範例資料分支應為 `2.4-develop`.
 
-   如果您使用 `2.4.3` Magento Open SourceGitHub存放庫的分支，範例資料分支應為 `2.4.3`.
-
-   若要結帳正確的分支，請從範例資料存放庫的根目錄中執行下列命令(假設您需要 `2.4.3` 分支):
+   若要結帳正確的分支，請從範例資料存放庫的根目錄中執行下列命令(假設您需要 `2.4-develop` 分支):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. 變更為 `<app_root>`.
@@ -129,12 +127,10 @@ ht-degree: 0%
 
    如果您使用 `2.4-develop` Magento Open SourceGitHub存放庫的分支，範例資料分支應為 `2.4-develop`.
 
-   如果您使用 `2.4.3` Magento Open SourceGitHub存放庫的分支，範例資料分支應為 `2.4.3`.
-
-   若要結帳正確的分支，請從範例資料存放庫的根目錄中執行下列命令(假設您需要 `2.4.3` 分支):
+   若要結帳正確的分支，請從範例資料存放庫的根目錄中執行下列命令(假設您需要 `2.4-develop` 分支):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. 變更為 `<magento_root>`.

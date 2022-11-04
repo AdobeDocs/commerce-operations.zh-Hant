@@ -1,9 +1,9 @@
 ---
 title: 快速啟動本地安裝
 description: 請依照下列步驟，安裝Adobe Commerce或Magento Open Source至您擁有的基礎架構。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -95,32 +95,32 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Adobe Commerce客戶可在正式發行(GA)日期前兩週存取2.4.x和2.3.x修補程式。 搶鮮版套件僅可透過撰寫器使用。 在正式發行前，您無法存取開發人員入口網站或GitHub上的搶鮮版。 如果您在撰寫器中找不到這些套件，請聯絡Adobe Commerce支援。
+   >Adobe Commerce客戶可在正式發行(GA)日期前兩週存取修補程式。 搶鮮版套件僅可透過撰寫器使用。 在正式發行前，您無法存取開發人員入口網站或GitHub上的搶鮮版。 如果您在撰寫器中找不到這些套件，請聯絡Adobe Commerce支援。
 
 ### 範例 — 次要版本
 
-次要版本包含新功能、品質修正和安全性修正。 使用撰寫器來指定次要版本。 例如，若要指定Adobe Commerce 2.4.3元資料包：
+次要版本包含新功能、品質修正和安全性修正。 使用撰寫器來指定次要版本。 例如，若要指定Adobe Commerce 2.4.5元資料包：
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### 範例 — 品質修補程式
 
-質量補丁主要包含功能 _和_ 安全性修正。 不過，它們有時也可包含新的回溯相容功能。 使用撰寫器來下載品質修補程式。 例如，若要指定Adobe Commerce 2.4.3元資料包：
+質量補丁主要包含功能 _和_ 安全性修正。 不過，它們有時也可包含新的回溯相容功能。 使用撰寫器來下載品質修補程式。 例如，若要指定Adobe Commerce 2.4.5元資料包：
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### 示例 — 安全補丁
 
 安全修補程式僅包含安全修正。 它們旨在讓升級流程更快更輕鬆。
 
-安全修補程式使用撰寫器命名慣例 `2.4.3-px`. 使用撰寫器來指定修補程式。 例如，若要下載Adobe Commerce 2.4.3-p1元資料庫：
+安全修補程式使用撰寫器命名慣例 `2.4.5-px`. 使用撰寫器來指定修補程式。 例如，若要下載Adobe Commerce 2.4.5-p1元資料庫：
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
 ```
 
 ## 設定檔案權限
