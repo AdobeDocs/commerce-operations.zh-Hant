@@ -4,9 +4,9 @@ description: 了解如何疑難排解Adobe Commerce實作問題。
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: 754051c98d2c5265398f1f0806cb34128fe03c36
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Adobe Commerce雲基礎架構
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 部署問題 | **遵循部署最佳實務。** 13%的支援票證涉及部署問題。 最佳實務已更新，加入可預防其中許多原因的方法。 | [建置和部署的最佳實務](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) 在開發人員檔案中。 |
 | 網站關閉問題 | **使用「站點故障診斷程式」。** Cron可能會長時間運行，並且會互相溢出。 它們是許多中斷和效能問題的源頭。 | [站點故障診斷程式](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.html?lang=en) 和 [如何重設cron作業](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en) 在我們的支援知識庫中。 |
-| 效能問題 | **如果您未使用Adobe Commerce橫幅，請加以停用。** 當橫幅已啟用但未使用時，資源將用於在不需要時對資料庫進行查閱，這將導致效能問題。 | [停用Adobe Commerce橫幅輸出以改善效能](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.html)我們的支援知識庫中的。 |
+| 效能問題 | **如果您未使用Adobe Commerce橫幅，請加以停用。** 當橫幅已啟用但未使用時，資源將用於在不需要時對資料庫進行查閱，這將導致效能問題。 | [停用Adobe Commerce橫幅輸出以改善效能](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.html) 在我們的支援知識庫中。 |
 | 搜尋問題 | **Adobe Commerce 2.4.0已移除MySQL目錄搜尋引擎。** 在安裝2.4.0版之前，您必須先安裝並配置Elasticsearch主機。請參閱開發人員檔案中的安裝和配置Elasticsearch。 | [設定Elasticsearch服務](https://devdocs.magento.com/cloud/project/services-elastic.html) 在開發人員檔案中。 |
 | 自訂錯誤 | **高峰時段不要部署。** 新增和移除使用者會觸發部署。 | [零停機部署](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html) 在開發人員檔案中。 |
 | 資料庫錯誤和問題 | **資料庫問題導致部署（掛接後問題）、效能和站點故障情況。** 許多操作涉及錯誤或資料庫空間分配不足。 | [MariaDB錯誤代碼](https://mariadb.com/kb/en/library/mariadb-error-codes/#mariadb-specific-error-codes); [管理儲存空間](https://devdocs.magento.com/cloud/project/manage-disk-space.html) （包括資料庫）。 |
