@@ -1,7 +1,7 @@
 ---
-source-git-commit: a5777f437430bc48b87aaea65c0e101d4ecd6574
+source-git-commit: 23d55385046de18b238c90f6a99be692f1ce7561
 workflow-type: tm+mt
-source-wordcount: '19002'
+source-wordcount: '19853'
 ht-degree: 0%
 
 ---
@@ -10,9 +10,9 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**版本**:1.38.1 <!-- app.version -->
+**版本**:1.40.0
 
-此參考包含127個命令，可透過 `magento-cloud` 命令列工具。
+此參考包含129個命令，可透過 `magento-cloud` 命令列工具。
 初始清單會使用 `magento-cloud list` 命令。
 
 >[!NOTE]
@@ -27,43 +27,32 @@ BASH完成掛接。
 _completion [-g|--generate-hook] [-p|--program PROGRAM] [-m|--multiple] [--shell-type [SHELL-TYPE]]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--generate-hook`, `-g`
 
-
-
 生成設定此應用程式完成的BASH代碼。
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--program`, `-p`
 
-
-
 應觸發完成的程式名 &lt;comment>（預設為絕對應用程式路徑）&lt;/comment>.
+
 - 需要值
-
-
 
 ### `--multiple`, `-m`
 
-
-
 生成的掛鈎可用於多個應用程式。
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--shell-type`
 
 設定殼類型（zsh或bash）。 否則會自動確定。
-- 接受值 <!-- options --> <!-- options.size -->
+
+- 接受值
+
 
 ## `bot`
 
@@ -73,82 +62,62 @@ Magento雲端機器人
 magento-cloud bot [--party] [--parrot]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--party`
+
 
 
 - 預設值： `false`
 - 不接受值
-
 
 ### `--parrot`
 
 
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `clear-cache`
 
@@ -158,80 +127,58 @@ magento-cloud bot [--party] [--parrot]
 magento-cloud clear-cache
 ```
 
-<!-- app.name -->
 
 ```bash
 clearcache
 ```
 
-<!-- app.name -->
 
 ```bash
 cc
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `decode`
 
@@ -241,84 +188,61 @@ cc
 magento-cloud decode [-P|--property PROPERTY] [--] <value>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `value`
 
 要解碼的變數值
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
 
 ### `--property`, `-P`
 
-
-
 要在變數中檢視的屬性
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `docs`
 
@@ -328,7 +252,6 @@ magento-cloud decode [-P|--property PROPERTY] [--] <value>
 magento-cloud docs [--browser BROWSER] [--pipe] [--] [<search>]...
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `search`
 
@@ -336,81 +259,63 @@ magento-cloud docs [--browser BROWSER] [--pipe] [--] [<search>]...
 
 - 預設值： `[]`
 
-- 陣列 <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
+- 陣列
 
 ### `--browser`
 
 用來開啟URL的瀏覽器。 將0設定為無。
-- 需要值
 
+- 需要值
 
 ### `--pipe`
 
 輸出要結束的URL。
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `help`
 
@@ -420,89 +325,70 @@ magento-cloud docs [--browser BROWSER] [--pipe] [--] [<search>]...
 help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `command_name`
 
 命令名稱
+
 - 預設值： `help`
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--format`
 
 輸出格式（txt、xml、json或md）
+
 - 預設值： `txt`
 - 需要值
-
 
 ### `--raw`
 
 輸出原始命令幫助
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `legacy-migrate`
 
@@ -512,75 +398,55 @@ help [--format FORMAT] [--raw] [--] [<command_name>]
 magento-cloud legacy-migrate [--no-backup]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--no-backup`
 
 請勿建立專案的備份。
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `list`
 
@@ -590,27 +456,26 @@ magento-cloud legacy-migrate [--no-backup]
 list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `namespace`
 
 命名空間名稱
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--raw`
 
 要輸出原始命令清單
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--format`
 
 輸出格式（txt、xml、json或md）
+
 - 預設值： `txt`
-- 需要值 <!-- options --> <!-- options.size -->
+- 需要值
+
 
 ## `multi`
 
@@ -620,105 +485,82 @@ list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
 magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `cmd`
 
 要執行的命令
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
 
 ### `--projects`, `-p`
 
-
-
 專案ID清單，以逗號和/或空格分隔
-- 需要值
 
+- 需要值
 
 ### `--continue`
 
 即使遇到異常，仍繼續運行命令
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--sort`
 
 用來排序項目選項清單的屬性
+
 - 預設值： `title`
 - 需要值
-
 
 ### `--reverse`
 
 反轉項目選項的順序
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `web`
 
@@ -728,105 +570,79 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--browser`
 
 用來開啟URL的瀏覽器。 將0設定為無。
-- 需要值
 
+- 需要值
 
 ### `--pipe`
 
 輸出要結束的URL。
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `welcome`
 
@@ -836,68 +652,48 @@ magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HO
 magento-cloud welcome
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `winky`
 
@@ -907,848 +703,703 @@ magento-cloud welcome
 magento-cloud winky
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `activity:cancel`
 
 取消活動
 
 ```bash
-magento-cloud activity:cancel [--type TYPE] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 活動ID。 預設為最近的可取消活動。
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--type`
 
-依類型篩選（選取預設活動時）
+依類型篩選（選取預設活動時）。 如果指定單一值，則會以逗號或空格分割該值。
+
+- 預設值： `[]`
 - 需要值
 
+### `--exclude-type`
 
+依類型排除（選取預設活動時）。 如果指定單一值，則會以逗號或空格分割該值。
+
+- 預設值： `[]`
+- 需要值
 
 ### `--all`, `-a`
 
-
-
 檢查所有環境上的最近活動（選取預設活動時）
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `activity:get`
 
 檢視單一活動的詳細資訊
 
 ```bash
-magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
+magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 活動ID。 預設為最近的活動。
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--property`, `-P`
 
-
-
 要檢視的屬性
-- 需要值
 
+- 需要值
 
 ### `--type`
 
-依類型篩選（選取預設活動時）
-- 需要值
+依類型篩選（選取預設活動時）。 如果指定單一值，則會以逗號或空格分割該值。
 
-
-### `--state`
-
-依狀態篩選（選取預設活動時）:in_progress、待定、完成或取消
 - 預設值： `[]`
 - 需要值
 
+### `--exclude-type`
+
+依類型排除（選取預設活動時）。 如果指定單一值，則會以逗號或空格分割該值。
+
+- 預設值： `[]`
+- 需要值
+
+### `--state`
+
+依狀態篩選（選取預設活動時）:in_progress、待定、完成或取消。 如果指定單一值，則會以逗號或空格分割該值。
+
+- 預設值： `[]`
+- 需要值
 
 ### `--result`
 
 依結果篩選（選取預設活動時）:成功或失敗
+
 - 需要值
-
-
 
 ### `--incomplete`, `-i`
 
-
-
 僅包含未完成的活動（選取預設活動時）。 這是 &lt;info>—state=in_progress,pending&lt;/info>
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--all`, `-a`
 
-
-
 檢查所有環境上的最近活動（選取預設活動時）
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `activity:list`
 
 取得環境或專案的活動清單
 
 ```bash
-magento-cloud activity:list [--type TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
 ```
 
-<!-- app.name -->
 
 ```bash
 activities
 ```
 
-<!-- app.name -->
 
 ```bash
 act
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
+### `--type`, `-t`
 
+依類型篩選活動如果指定單一值，則會以逗號或空格分割該值。
 
-
-### `--type`
-
-依類型篩選活動
+- 預設值： `[]`
 - 需要值
 
+### `--exclude-type`, `-x`
+
+依類型排除活動。 如果指定單一值，則會以逗號或空格分割該值。
+
+- 預設值： `[]`
+- 需要值
 
 ### `--limit`
 
 限制顯示的結果數
+
 - 預設值： `10`
 - 需要值
-
 
 ### `--start`
 
 僅列出此日期前建立的活動
-- 需要值
 
+- 需要值
 
 ### `--state`
 
-依州篩選活動：in_progress、待定、完成或取消
+依州篩選活動：in_progress、待定、完成或取消。 如果指定單一值，則會以逗號或空格分割該值。
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--result`
 
 依結果篩選活動：成功或失敗
+
 - 需要值
-
-
 
 ### `--incomplete`, `-i`
 
-
-
 僅列出未完成的活動
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--all`, `-a`
 
-
-
 列出所有環境上的活動
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `activity:log`
 
 顯示活動的記錄
 
 ```bash
-magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 活動ID。 預設為最近的活動。
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--refresh`
 
 活動刷新間隔（秒）。 設為0可禁用刷新。
+
 - 預設值： `3`
 - 需要值
 
-
-
 ### `--timestamps`, `-t`
 
-
-
 在每則訊息旁顯示時間戳記
+
 - 預設值： `false`
 - 不接受值
 
-
 ### `--type`
 
-依類型篩選（選取預設活動時）
-- 需要值
+依類型篩選（選取預設活動時）。 如果指定單一值，則會以逗號或空格分割該值。
 
-
-### `--state`
-
-依狀態篩選（選取預設活動時）:in_progress、待定、完成或取消
 - 預設值： `[]`
 - 需要值
 
+### `--exclude-type`
+
+依類型排除（選取預設活動時）。 如果指定單一值，則會以逗號或空格分割該值。
+
+- 預設值： `[]`
+- 需要值
+
+### `--state`
+
+依狀態篩選（選取預設活動時）:in_progress、待定、完成或取消。 如果指定單一值，則會以逗號或空格分割該值。
+
+- 預設值： `[]`
+- 需要值
 
 ### `--result`
 
 依結果篩選（選取預設活動時）:成功或失敗
+
 - 需要值
-
-
 
 ### `--incomplete`, `-i`
 
-
-
 僅包含未完成的活動（選取預設活動時）。 這是 &lt;info>—state=in_progress,pending&lt;/info>
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--all`, `-a`
 
-
-
 檢查所有環境上的最近活動（選取預設活動時）
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `api:curl`
 
 在Magento雲端API上執行已驗證的cURL要求
 
 ```bash
-magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-H|--header HEADER] [--] [<path>]
+magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `path`
 
 API路徑
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--request`, `-X`
 
-
-
 要使用的要求方法
+
 - 需要值
-
-
 
 ### `--data`, `-d`
 
-
-
 要傳送的資料
+
 - 需要值
-
-
 
 ### `--include`, `-i`
 
-
-
 在輸出中包含標題
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--head`, `-I`
 
-
-
 僅擷取標題
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--disable-compression`
 
 請勿使用curl — 壓縮的標幟
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--enable-glob`
 
 啟用curl全域（移除 — globoff標幟）
+
 - 預設值： `false`
 - 不接受值
 
+### `--fail`, `-f`
 
+失敗，錯誤回應沒有輸出
+
+- 預設值： `false`
+- 不接受值
 
 ### `--header`, `-H`
 
-
-
 額外標題
+
 - 預設值： `[]`
 - 需要值
 
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `app:config-get`
 
@@ -1758,126 +1409,91 @@ API路徑
 magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--property`, `-P`
 
-
-
 要檢視的設定屬性
-- 需要值
 
+- 需要值
 
 ### `--refresh`
 
 是否刷新快取
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 [已棄用選項，不再使用]
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `app:list`
 
@@ -1887,126 +1503,99 @@ magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project 
 magento-cloud apps [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
-<!-- app.name -->
 
 ```bash
 apps
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--refresh`
 
 是否刷新快取
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `auth:api-token-login`
 
@@ -2016,68 +1605,48 @@ apps
 magento-cloud auth:api-token-login
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `auth:browser-login`
 
@@ -2087,210 +1656,171 @@ magento-cloud auth:api-token-login
 magento-cloud login [-f|--force] [--browser BROWSER] [--pipe]
 ```
 
-<!-- app.name -->
 
 ```bash
 login
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--force`, `-f`
 
-
-
 重新登入，即使已登入
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--browser`
 
 用來開啟URL的瀏覽器。 將0設定為無。
-- 需要值
 
+- 需要值
 
 ### `--pipe`
 
 輸出要結束的URL。
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `auth:info`
 
 顯示您的帳戶資訊
 
 ```bash
-magento-cloud auth:info [-P|--property PROPERTY] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<property>]
+magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<property>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `property`
 
 要檢視的帳戶屬性
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
 
 
+### `--no-auto-login`
 
+略過自動登入。 如果未登入，則不會輸出任何內容，且退出代碼將為0（假設沒有其他錯誤）。
+
+- 預設值： `false`
+- 不接受值
 
 ### `--property`, `-P`
 
-
-
 要檢視的帳戶屬性（替代語法）
-- 需要值
 
+- 需要值
 
 ### `--refresh`
 
 是否刷新快取
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `auth:logout`
 
@@ -2300,91 +1830,67 @@ magento-cloud auth:info [-P|--property PROPERTY] [--refresh] [--format FORMAT] [
 magento-cloud logout [-a|--all] [--other]
 ```
 
-<!-- app.name -->
 
 ```bash
 logout
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--all`, `-a`
 
-
-
 從所有本地會話註銷
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--other`
 
 從其他本地會話註銷
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `auth:password-login`
 
@@ -2394,74 +1900,53 @@ logout
 magento-cloud auth:password-login
 ```
 
-<!-- app.name -->
 
 ```bash
 auth:login
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `auth:token`
 
@@ -2471,68 +1956,48 @@ auth:login
 magento-cloud auth:token
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `blackfire:setup`
 
@@ -2542,112 +2007,86 @@ magento-cloud auth:token
 magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--server_id`
 
 伺服器ID
-- 需要值
 
+- 需要值
 
 ### `--server_token`
 
 伺服器Token
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `certificate:add`
 
@@ -2657,119 +2096,93 @@ magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOK
 magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--cert`
 
 憑證檔案的路徑
-- 需要值
 
+- 需要值
 
 ### `--key`
 
 證書私鑰檔案的路徑
-- 需要值
 
+- 需要值
 
 ### `--chain`
 
 證書鏈檔案的路徑
+
 - 預設值： `[]`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `certificate:delete`
 
@@ -2779,107 +2192,81 @@ magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--pr
 magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <id>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 憑證ID（或開頭）
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `certificate:get`
 
@@ -2889,106 +2276,80 @@ magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] <id>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 憑證ID（或開頭）
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
 
 ### `--property`, `-P`
 
-
-
 要檢視的憑證屬性
-- 需要值
 
+- 需要值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `certificate:list`
 
@@ -2998,183 +2359,158 @@ magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p
 magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
 ```
 
-<!-- app.name -->
 
 ```bash
 certificates
 ```
 
-<!-- app.name -->
 
 ```bash
 certs
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--domain`
 
 依網域名稱篩選（不區分大小寫的搜尋）
-- 需要值
 
+- 需要值
 
 ### `--exclude-domain`
 
 排除憑證，依網域名稱進行比對（不區分大小寫的搜尋）
-- 需要值
 
+- 需要值
 
 ### `--issuer`
 
 依核發者篩選
-- 需要值
 
+- 需要值
 
 ### `--only-auto`
 
 僅顯示自動布建的憑證
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--no-auto`
 
 僅顯示手動添加的證書
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--ignore-expiry`
 
 顯示過期和未過期的證書
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--only-expired`
 
 僅顯示過期的證書
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--no-expired`
 
 僅顯示未過期的證書（預設）
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--pipe-domains`
 
 僅返回證書涵蓋的域名清單
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
-
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `commit:get`
 
@@ -3184,135 +2520,107 @@ certs
 magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<commit>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `commit`
 
 提交SHA。 這也可以接受「HEAD」，並接受父項提交的脫字元號(^)或顎化符號(~)尾碼。
+
 - 預設值： `HEAD`
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--property`, `-P`
 
-
-
 要顯示的提交屬性。
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
-- 需要值
 
+- 需要值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
-
 
 ### `--format`
 
 已棄用
-- 需要值
 
+- 需要值
 
 ### `--columns`
 
 已棄用
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 已棄用
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `commit:list`
 
@@ -3322,138 +2630,112 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host
 magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
-<!-- app.name -->
 
 ```bash
 commits
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `commit`
 
 起始Git提交SHA。 這也可以接受「HEAD」，並接受父項提交的脫字元號(^)或顎化符號(~)尾碼。
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--limit`
 
 要顯示的提交數。
+
 - 預設值： `10`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `db:dump`
 
@@ -3463,212 +2745,160 @@ commits
 magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
-<!-- app.name -->
 
 ```bash
 sql-dump
 ```
 
-<!-- app.name -->
 
 ```bash
 environment:sql-dump
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--schema`
 
 要轉儲的架構。 忽略以使用預設架構（通常為「main」）。
+
 - 需要值
-
-
 
 ### `--file`, `-f`
 
-
-
 轉儲的自定義檔案名
+
 - 需要值
-
-
 
 ### `--directory`, `-d`
 
-
-
 轉儲的自定義目錄
+
 - 需要值
-
-
 
 ### `--gzip`, `-z`
 
-
-
 使用gzip壓縮轉儲
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--timestamp`, `-t`
 
-
-
 向轉儲檔案名添加時間戳
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--stdout`, `-o`
 
-
-
 輸出為STDOUT，而非檔案
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--table`
 
 要包括的表
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--exclude-table`
 
 要排除的表
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--schema-only`
 
 僅轉儲架構，無資料
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--charset`
 
 轉儲的字元集編碼
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--relationship`, `-r`
 
-
-
 要使用的服務關係
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `db:size`
 
@@ -3678,160 +2908,119 @@ environment:sql-dump
 magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--bytes`, `-B`
 
-
-
 以位元組顯示大小。
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--cleanup`, `-C`
 
-
-
 檢查表是否可以清理並顯示建議（僅限InnoDb）。
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--relationship`, `-r`
 
-
-
 要使用的服務關係
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `db:sql`
 
@@ -3841,149 +3030,113 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host
 magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
 ```
 
-<!-- app.name -->
 
 ```bash
 sql
 ```
 
-<!-- app.name -->
 
 ```bash
 environment:sql
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `query`
 
 要執行的SQL陳述式
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--raw`
 
 生成原始、非表格輸出
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--schema`
 
 要使用的結構。 忽略以使用預設架構（通常為「main」）。 傳遞空白字串以不使用任何架構。
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--relationship`, `-r`
 
-
-
 要使用的服務關係
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `domain:add`
 
@@ -3993,126 +3146,100 @@ environment:sql
 magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 域名
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 ### `--cert`
 
 此域的證書檔案路徑
-- 需要值
 
+- 需要值
 
 ### `--key`
 
 提供之憑證的私密金鑰檔案路徑。
-- 需要值
 
+- 需要值
 
 ### `--chain`
 
 證書鏈檔案或提供證書的檔案的路徑
+
 - 預設值： `[]`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `domain:delete`
 
@@ -4122,107 +3249,81 @@ magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project
 magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 域名
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `domain:get`
 
@@ -4232,125 +3333,100 @@ magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] 
 magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] [<name>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 域名
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--property`, `-P`
 
-
-
 要查看的域屬性
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `domain:list`
 
@@ -4360,110 +3436,86 @@ magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns C
 magento-cloud domains [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
 ```
 
-<!-- app.name -->
 
 ```bash
 domains
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `domain:update`
 
@@ -4473,126 +3525,100 @@ domains
 magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 域名
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 ### `--cert`
 
 此域的證書檔案路徑
-- 需要值
 
+- 需要值
 
 ### `--key`
 
 提供之憑證的私密金鑰檔案路徑。
-- 需要值
 
+- 需要值
 
 ### `--chain`
 
 證書鏈檔案或提供證書的檔案的路徑
+
 - 預設值： `[]`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:activate`
 
@@ -4602,7 +3628,6 @@ magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--proj
 magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `environment`
 
@@ -4610,272 +3635,219 @@ magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--h
 
 - 預設值： `[]`
 
-- 陣列 <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
+- 陣列
 
 ### `--parent`
 
 在啟動前設定新環境父級
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:branch`
 
 分支環境
 
 ```bash
-magento-cloud branch [--title TITLE] [--force] [--no-clone-parent] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
+magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
 ```
 
-<!-- app.name -->
 
 ```bash
 branch
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 新環境的ID（分支名稱）
-<!-- argument -->
+
 
 ### `parent`
 
 新環境的父環境
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--title`
 
 新環境的標題
+
 - 需要值
 
+### `--type`
+
+新環境的類型
+
+- 需要值
 
 ### `--force`
 
 建立新環境，即使無法在本地簽出分支
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--no-clone-parent`
 
 不克隆父分支的資料
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:checkout`
 
@@ -4885,249 +3857,340 @@ branch
 magento-cloud checkout [-i|--identity-file IDENTITY-FILE] [--] [<id>]
 ```
 
-<!-- app.name -->
 
 ```bash
 checkout
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 要結帳的環境ID。 例如：&quot;sprint2&quot;
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
+- 預設值： `false`
+- 不接受值
+
+### `--no`, `-n`
+
+對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
 
+## `environment:curl`
+
+在環境的API上執行已驗證的cURL要求
+
+```bash
+magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+```
+
+
+### `path`
+
+API路徑
+
+
+### `--request`, `-X`
+
+要使用的要求方法
+
+- 需要值
+
+### `--data`, `-d`
+
+要傳送的資料
+
+- 需要值
+
+### `--include`, `-i`
+
+在輸出中包含標題
+
+- 預設值： `false`
+- 不接受值
+
+### `--head`, `-I`
+
+僅擷取標題
+
+- 預設值： `false`
+- 不接受值
+
+### `--disable-compression`
+
+請勿使用curl — 壓縮的標幟
+
+- 預設值： `false`
+- 不接受值
+
+### `--enable-glob`
+
+啟用curl全域（移除 — globoff標幟）
+
+- 預設值： `false`
+- 不接受值
+
+### `--fail`, `-f`
+
+失敗，錯誤回應沒有輸出
+
+- 預設值： `false`
+- 不接受值
+
+### `--header`, `-H`
+
+額外標題
+
+- 預設值： `[]`
+- 需要值
+
+### `--project`, `-p`
+
+專案ID或URL
+
+- 需要值
+
+### `--host`
+
+專案的API主機名稱
+
+- 需要值
+
+### `--environment`, `-e`
+
+環境ID
+
+- 需要值
+
+### `--help`, `-h`
+
+顯示此幫助消息
+
+- 預設值： `false`
+- 不接受值
+
+### `--quiet`, `-q`
+
+不輸出任何消息
+
+- 預設值： `false`
+- 不接受值
+
+### `--verbose`, `-v|-vv|-vvv`
+
+增加訊息的密集度
+
+- 預設值： `false`
+- 不接受值
+
+### `--version`, `-V`
+
+顯示此應用程式版本
+
+- 預設值： `false`
+- 不接受值
+
+### `--yes`, `-y`
+
+對任何是/否的問題回答「是」；停用互動
+
+- 預設值： `false`
+- 不接受值
 
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:delete`
 
 刪除環境
 
 ```bash
-magento-cloud environment:deactivate [--delete-branch] [--no-delete-branch] [--inactive] [--merged] [--exclude EXCLUDE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--inactive] [--merged] [--type TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
-<!-- app.name -->
 
 ```bash
 environment:deactivate
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `environment`
 
-要刪除的環境
+要刪除的環境。 %字元可用作通配符。 如果指定單一值，則會以逗號或空格分割該值。
 
 - 預設值： `[]`
 
-- 陣列 <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
+- 陣列
 
 ### `--delete-branch`
 
-也刪除遠端Git分支
+刪除遠端Git分支
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--no-delete-branch`
 
 請勿刪除遠端Git分支
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--inactive`
 
 刪除所有非作用中環境
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--merged`
 
 刪除所有合併的環境
+
 - 預設值： `false`
 - 不接受值
 
+### `--type`
 
-### `--exclude`
+要刪除的環境類型如果指定了單一值，則會以逗號或空格分割該值。
 
-不要刪除的環境
 - 預設值： `[]`
 - 需要值
 
+### `--exclude`
 
+不要刪除的環境。 %字元可用作通配符。 如果指定單一值，則會以逗號或空格分割該值。
+
+- 預設值： `[]`
+- 需要值
+
+### `--exclude-type`
+
+不要刪除的環境類型如果指定了單一值，則會以逗號或空格分割該值。
+
+- 預設值： `[]`
+- 需要值
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:http-access`
 
@@ -5137,135 +4200,105 @@ environment:deactivate
 magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
-<!-- app.name -->
 
 ```bash
 httpaccess
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--access`
 
 存取限制的格式為「permission:address」。 使用0清除所有地址。
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--auth`
 
 HTTP基本驗證憑證，格式為「username:password」。 使用0清除所有憑據。
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--enabled`
 
 是否應啟用訪問控制：1要啟用，0要禁用
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:info`
 
@@ -5275,160 +4308,131 @@ HTTP基本驗證憑證，格式為「username:password」。 使用0清除所有
 magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
-<!-- app.name -->
 
 ```bash
 environment:metadata
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `property`
 
 屬性的名稱
-<!-- argument -->
+
 
 ### `value`
 
 為屬性設定新值
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--refresh`
 
 是否刷新快取
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
-
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:init`
 
@@ -5438,279 +4442,229 @@ environment:metadata
 magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `url`
 
 Git存放庫的URL
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 ### `--profile`
 
 設定檔的名稱
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:list`
 
 取得環境清單
 
 ```bash
-magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
 ```
 
-<!-- app.name -->
 
 ```bash
 environments
 ```
 
-<!-- app.name -->
 
 ```bash
 env
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--no-inactive`, `-I`
 
-
-
 不顯示非活動環境
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--pipe`
 
 輸出環境ID的簡單清單。
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--refresh`
 
 是否刷新清單。
+
 - 預設值： `1`
 - 需要值
-
 
 ### `--sort`
 
 要排序的屬性
+
 - 預設值： `title`
 - 需要值
-
 
 ### `--reverse`
 
 以反向（遞減）順序排序
+
 - 預設值： `false`
 - 不接受值
 
+### `--type`
+
+依環境類型篩選清單。 如果指定單一值，則會以逗號或空格分割該值。
+
+- 預設值： `[]`
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:logs`
 
@@ -5720,138 +4674,108 @@ env
 magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--] [<type>]
 ```
 
-<!-- app.name -->
 
 ```bash
 log
 ```
 
-<!-- app.name -->
 
 ```bash
 logs
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `type`
 
 記錄類型，例如&quot;access&quot;或&quot;error&quot;
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--lines`
 
 要顯示的行數
+
 - 預設值： `100`
 - 需要值
-
 
 ### `--tail`
 
 不斷跟蹤日誌
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
-- 需要值
 
+- 需要值
 
 ### `--worker`
 
 工作人員名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:merge`
 
@@ -5861,307 +4785,253 @@ logs
 magento-cloud merge [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
-<!-- app.name -->
 
 ```bash
 merge
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `environment`
 
 要合併的環境
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:push`
 
 推送程式碼至環境
 
 ```bash
-magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--branch] [--parent PARENT] [-W|--no-wait] [--wait] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
+magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--branch] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
 ```
 
-<!-- app.name -->
 
 ```bash
 push
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `source`
 
 來源參考：分支名稱或提交哈希
+
 - 預設值： `HEAD`
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--target`
 
 目標分支名稱
+
 - 需要值
-
-
 
 ### `--force`, `-f`
 
-
-
 允許非快速轉發更新
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--force-with-lease`
 
 如果遠端追蹤分支為最新狀態，則允許非快進更新
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--set-upstream`, `-u`
 
-
-
 將目標環境設定為來源分支的上游
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--activate`
 
 推送前啟動環境
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--branch`
 
 已棄用：別名：激活
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--parent`
 
-設定新環境父項（僅與 — activate或 — branch一起使用）
+設定新環境父項（僅與 — activate一起使用）
+
 - 需要值
 
+### `--type`
 
+設定環境類型（僅與搭配使用 — activate）
 
-### `--no-wait`, `-W`
+- 需要值
 
+### `--no-clone-parent`
 
+請勿複製父分支的資料（僅與 — activate搭配使用）
 
-請勿等待操作完成
 - 預設值： `false`
 - 不接受值
 
+### `--no-wait`, `-W`
+
+請勿等待操作完成
+
+- 預設值： `false`
+- 不接受值
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:redeploy`
 
@@ -6171,115 +5041,85 @@ push
 magento-cloud redeploy [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
-<!-- app.name -->
 
 ```bash
 redeploy
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:relationships`
 
@@ -6289,137 +5129,102 @@ redeploy
 magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
 ```
 
-<!-- app.name -->
 
 ```bash
 relationships
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `environment`
 
 環境
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--property`, `-P`
 
-
-
 要查看的關係屬性
-- 需要值
 
+- 需要值
 
 ### `--refresh`
 
 是否刷新關係
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:scp`
 
@@ -6429,13 +5234,11 @@ relationships
 magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
 ```
 
-<!-- app.name -->
 
 ```bash
 scp
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `files`
 
@@ -6443,126 +5246,93 @@ scp
 
 - 預設值： `[]`
 
-- 陣列 <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
+- 陣列
 
 ### `--recursive`, `-r`
 
-
-
 遞歸複製整個目錄
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
-- 需要值
 
+- 需要值
 
 ### `--worker`
 
 工作人員名稱
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:set-remote`
 
@@ -6572,80 +5342,60 @@ scp
 magento-cloud environment:set-remote <environment> [<branch>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `environment`
 
 環境電腦名稱。 設定為0可刪除分支的映射
-- 必填
 
-   <!-- argument -->
+- 必填
 
 ### `branch`
 
 要對應的Git分支（預設為目前分支）
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:ssh`
 
@@ -6655,13 +5405,11 @@ SSH到當前環境
 magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
 ```
 
-<!-- app.name -->
 
 ```bash
 ssh
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `cmd`
 
@@ -6669,130 +5417,100 @@ ssh
 
 - 預設值： `[]`
 
-- 陣列 <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
+- 陣列
 
 ### `--pipe`
 
 僅輸出SSH URL。
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--all`
 
 輸出所有SSH URL（適用於每個應用程式）。
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
-- 需要值
 
+- 需要值
 
 ### `--worker`
 
 工作人員名稱
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:synchronize`
 
@@ -6802,13 +5520,11 @@ ssh
 magento-cloud sync [--rebase] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
 ```
 
-<!-- app.name -->
 
 ```bash
 sync
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `synchronize`
 
@@ -6816,116 +5532,89 @@ sync
 
 - 預設值： `[]`
 
-- 陣列 <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
+- 陣列
 
 ### `--rebase`
 
 借由基於來同步程式碼，而非合併
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:url`
 
@@ -6935,121 +5624,91 @@ sync
 magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
 ```
 
-<!-- app.name -->
 
 ```bash
 url
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--primary`, `-1`
 
-
-
 僅返回主路由的URL
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--browser`
 
 用來開啟URL的瀏覽器。 將0設定為無。
-- 需要值
 
+- 需要值
 
 ### `--pipe`
 
 輸出要結束的URL。
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `environment:xdebug`
 
@@ -7059,129 +5718,96 @@ url
 magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
 ```
 
-<!-- app.name -->
 
 ```bash
 xdebug
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--port`
 
 本地埠
+
 - 預設值： `9000`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
-- 需要值
 
+- 需要值
 
 ### `--worker`
 
 工作人員名稱
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `integration:activity:get`
 
@@ -7191,311 +5817,264 @@ xdebug
 magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `integration`
 
 整合ID。 保留空白以從清單中選擇。
-<!-- argument -->
+
 
 ### `activity`
 
 活動ID。 預設為最新的整合活動。
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--property`, `-P`
 
-
-
 要檢視的屬性
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 [已棄用選項，未使用]
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `integration:activity:list`
 
 取得整合的活動清單
 
 ```bash
-magento-cloud i:act [--type TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
-<!-- app.name -->
 
 ```bash
 i:act
 ```
 
-<!-- app.name -->
 
 ```bash
 integration:activities
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 整合ID。 保留空白以從清單中選擇。
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--type`
 
-依類型篩選活動
+依類型篩選活動。 如果指定單一值，則會以逗號或空格分割該值。
+
+- 預設值： `[]`
 - 需要值
 
+### `--exclude-type`, `-x`
+
+依類型排除活動。 如果指定單一值，則會以逗號或空格分割該值。
+
+- 預設值： `[]`
+- 需要值
 
 ### `--limit`
 
 限制顯示的結果數
+
 - 預設值： `10`
 - 需要值
-
 
 ### `--start`
 
 僅列出此日期前建立的活動
-- 需要值
 
+- 需要值
 
 ### `--state`
 
-依州篩選活動
+依州篩選活動。 如果指定單一值，則會以逗號或空格分割該值。
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--result`
 
 依結果篩選活動
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 [已棄用選項，未使用]
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `integration:activity:log`
 
@@ -7505,417 +6084,357 @@ integration:activities
 magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `integration`
 
 整合ID。 保留空白以從清單中選擇。
-<!-- argument -->
+
 
 ### `activity`
 
 活動ID。 預設為最新的整合活動。
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--timestamps`, `-t`
 
-
-
 在每則訊息旁顯示時間戳記
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 [已棄用選項，未使用]
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `integration:add`
 
 新增整合至專案
 
 ```bash
-magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--room ROOM] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
 ```
-
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
 
 ### `--type`
 
-整合類型(「bitbucket」、「bitbucket_server」、「github」、「gitlab」、「hipchat」、「webhook」、「health.email」、「health.pagerdusty」、「health.slack」、「health.webhook」、「script」)
-- 需要值
+整合類型(「bitbucket」、「bitbucket_server」、「github」、「gitlab」、「webhook」、「health.email」、「health.pagerduty」、「health.slack」、「health.webhook」、「script」)
 
+- 需要值
 
 ### `--base-url`
 
 伺服器安裝的基礎URL
-- 需要值
 
+- 需要值
 
 ### `--username`
 
 位元貯體伺服器使用者名稱
-- 需要值
 
+- 需要值
 
 ### `--token`
 
 整合的存取權杖
-- 需要值
 
+- 需要值
 
 ### `--key`
 
 Bitbucket OAuth使用者金鑰
-- 需要值
 
+- 需要值
 
 ### `--secret`
 
 Bitbucket OAuth使用者密碼
-- 需要值
 
+- 需要值
 
 ### `--server-project`
 
 專案(例如&#39;namespace/repo&#39;)
-- 需要值
 
+- 需要值
 
 ### `--repository`
 
 要追蹤的存放庫(例如&#39;owner/repository&#39;)
-- 需要值
 
+- 需要值
 
 ### `--build-merge-requests`
 
 GitLab:將合併請求建置為環境
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--build-pull-requests`
 
 將每個提取請求建置為環境
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--build-draft-pull-requests`
 
 建立草稿提取請求
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--build-pull-requests-post-merge`
 
 根據其合併後狀態建立提取請求
+
 - 預設值： `false`
 - 需要值
-
 
 ### `--build-wip-merge-requests`
 
 GitLab:建置WIP合併請求
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--merge-requests-clone-parent-data`
 
 GitLab:合併請求的原地資料
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--pull-requests-clone-parent-data`
 
 原地複製上層環境的資料以請求提取
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--resync-pull-requests`
 
 在每個組建中重新同步提取請求環境資料
+
 - 預設值： `false`
 - 需要值
-
 
 ### `--fetch-branches`
 
 從遠端擷取所有分支（作為非作用中環境）
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--prune-branches`
 
 刪除遠端上不存在的分支
+
 - 預設值： `true`
 - 需要值
-
-
-### `--room`
-
-HipChat室ID
-- 需要值
-
 
 ### `--url`
 
 Webhook:接收JSON資料的URL
-- 需要值
 
+- 需要值
 
 ### `--shared-key`
 
 Webhook:JWS共用密鑰
-- 需要值
 
+- 需要值
 
 ### `--file`
 
 包含要上傳指令碼的本機檔案名稱
-- 需要值
 
+- 需要值
 
 ### `--events`
 
 要採取動作的事件清單，例如environment.push
+
 - 預設值： `*`
 - 需要值
-
 
 ### `--states`
 
 要採取行動的國家清單，例如待定、in_progress、complete
+
 - 預設值： `complete`
 - 需要值
-
 
 ### `--environments`
 
 要包含的環境ID
+
 - 預設值： `*`
 - 需要值
-
 
 ### `--excluded-environments`
 
 要排除的環境ID
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--from-address`
 
 [可選] 警報電子郵件的自訂寄件者地址
-- 需要值
 
+- 需要值
 
 ### `--recipients`
 
 收件者電子郵件地址
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--channel`
 
 Slack管道
-- 需要值
 
+- 需要值
 
 ### `--routing-key`
 
 PagerDuty路由密鑰
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `integration:delete`
 
@@ -7925,105 +6444,80 @@ PagerDuty路由密鑰
 magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 整合ID。 保留空白以從清單中選擇。
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `integration:get`
 
@@ -8033,118 +6527,93 @@ magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-w
 magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<id>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 整合ID。 保留空白以從清單中選擇。
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--property`, `-P`
 
-
-
 要檢視的整合屬性
-- 接受值
 
+- 接受值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `integration:list`
 
@@ -8154,413 +6623,358 @@ magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--co
 magento-cloud integrations [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
 ```
 
-<!-- app.name -->
 
 ```bash
 integrations
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `integration:update`
 
 更新整合
 
 ```bash
-magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--room ROOM] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 要更新之整合的ID
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--type`
 
-整合類型(「bitbucket」、「bitbucket_server」、「github」、「gitlab」、「hipchat」、「webhook」、「health.email」、「health.pagerdusty」、「health.slack」、「health.webhook」、「script」)
-- 需要值
+整合類型(「bitbucket」、「bitbucket_server」、「github」、「gitlab」、「webhook」、「health.email」、「health.pagerduty」、「health.slack」、「health.webhook」、「script」)
 
+- 需要值
 
 ### `--base-url`
 
 伺服器安裝的基礎URL
-- 需要值
 
+- 需要值
 
 ### `--username`
 
 位元貯體伺服器使用者名稱
-- 需要值
 
+- 需要值
 
 ### `--token`
 
 整合的存取權杖
-- 需要值
 
+- 需要值
 
 ### `--key`
 
 Bitbucket OAuth使用者金鑰
-- 需要值
 
+- 需要值
 
 ### `--secret`
 
 Bitbucket OAuth使用者密碼
-- 需要值
 
+- 需要值
 
 ### `--server-project`
 
 專案(例如&#39;namespace/repo&#39;)
-- 需要值
 
+- 需要值
 
 ### `--repository`
 
 要追蹤的存放庫(例如&#39;owner/repository&#39;)
-- 需要值
 
+- 需要值
 
 ### `--build-merge-requests`
 
 GitLab:將合併請求建置為環境
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--build-pull-requests`
 
 將每個提取請求建置為環境
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--build-draft-pull-requests`
 
 建立草稿提取請求
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--build-pull-requests-post-merge`
 
 根據其合併後狀態建立提取請求
+
 - 預設值： `false`
 - 需要值
-
 
 ### `--build-wip-merge-requests`
 
 GitLab:建置WIP合併請求
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--merge-requests-clone-parent-data`
 
 GitLab:合併請求的原地資料
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--pull-requests-clone-parent-data`
 
 原地複製上層環境的資料以請求提取
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--resync-pull-requests`
 
 在每個組建中重新同步提取請求環境資料
+
 - 預設值： `false`
 - 需要值
-
 
 ### `--fetch-branches`
 
 從遠端擷取所有分支（作為非作用中環境）
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--prune-branches`
 
 刪除遠端上不存在的分支
+
 - 預設值： `true`
 - 需要值
-
-
-### `--room`
-
-HipChat室ID
-- 需要值
-
 
 ### `--url`
 
 Webhook:接收JSON資料的URL
-- 需要值
 
+- 需要值
 
 ### `--shared-key`
 
 Webhook:JWS共用密鑰
-- 需要值
 
+- 需要值
 
 ### `--file`
 
 包含要上傳指令碼的本機檔案名稱
-- 需要值
 
+- 需要值
 
 ### `--events`
 
 要採取動作的事件清單，例如environment.push
+
 - 預設值： `*`
 - 需要值
-
 
 ### `--states`
 
 要採取行動的國家清單，例如待定、in_progress、complete
+
 - 預設值： `complete`
 - 需要值
-
 
 ### `--environments`
 
 要包含的環境ID
+
 - 預設值： `*`
 - 需要值
-
 
 ### `--excluded-environments`
 
 要排除的環境ID
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--from-address`
 
 [可選] 警報電子郵件的自訂寄件者地址
-- 需要值
 
+- 需要值
 
 ### `--recipients`
 
 收件者電子郵件地址
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--channel`
 
 Slack管道
-- 需要值
 
+- 需要值
 
 ### `--routing-key`
 
 PagerDuty路由密鑰
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `integration:validate`
 
@@ -8570,88 +6984,66 @@ PagerDuty路由密鑰
 magento-cloud integration:validate [-p|--project PROJECT] [--host HOST] [--] [<id>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 整合ID。 保留空白以從清單中選擇。
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `local:build`
 
@@ -8661,13 +7053,11 @@ magento-cloud integration:validate [-p|--project PROJECT] [--host HOST] [--] [<i
 magento-cloud build [-a|--abslinks] [-s|--source SOURCE] [-d|--destination DESTINATION] [-c|--copy] [--clone] [--run-deploy-hooks] [--no-clean] [--no-archive] [--no-backup] [--no-cache] [--no-build-hooks] [--no-deps] [--working-copy] [--concurrency CONCURRENCY] [--lock] [--] [<app>]...
 ```
 
-<!-- app.name -->
 
 ```bash
 build
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `app`
 
@@ -8675,183 +7065,153 @@ build
 
 - 預設值： `[]`
 
-- 陣列 <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
+- 陣列
 
 ### `--abslinks`, `-a`
 
-
-
 使用絕對連結
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--source`, `-s`
 
-
-
 源目錄。 預設為當前項目根。
+
 - 需要值
-
-
 
 ### `--destination`, `-d`
 
-
-
 每個應用程式的網頁根將符號連結至的目的地。 預設值：_www
+
 - 需要值
-
-
 
 ### `--copy`, `-c`
 
-
-
 複製到組建目錄，而不是從來源進行符號連結
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--clone`
 
 使用Git將目前的HEAD複製至組建目錄
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--run-deploy-hooks`
 
 運行deploy和/或post_deploy掛接
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--no-clean`
 
 請勿移除舊組建
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--no-archive`
 
 請勿建立或使用組建封存
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--no-backup`
 
 不備份以前的版本編號
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--no-cache`
 
 停用快取
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--no-build-hooks`
 
 不運行構建後掛接
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--no-deps`
 
 請勿在本機安裝組建相依性
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--working-copy`
 
 德魯什：使用git複製每個Drupal模組的存放庫，而非直接下載版本
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--concurrency`
 
 德魯什：設定同時處理的同時執行專案數量
+
 - 預設值： `4`
 - 需要值
-
 
 ### `--lock`
 
 德魯什：建立或更新鎖定檔案（僅適用於Drush 7+版）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `local:clean`
 
@@ -8861,94 +7221,73 @@ build
 magento-cloud clean [--keep KEEP] [--max-age MAX-AGE] [--include-active]
 ```
 
-<!-- app.name -->
 
 ```bash
 clean
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--keep`
 
 要保留的組建數量上限
+
 - 預設值： `5`
 - 需要值
-
 
 ### `--max-age`
 
 組建的最大年齡（以秒為單位）。 若未設定，則忽略。
-- 需要值
 
+- 需要值
 
 ### `--include-active`
 
 也刪除活動的版本編號
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `local:dir`
 
@@ -8958,79 +7297,59 @@ clean
 magento-cloud dir [<subdir>]
 ```
 
-<!-- app.name -->
 
 ```bash
 dir
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `subdir`
 
 要查找的子目錄（「local」、「web」或「shared」）
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `mount:download`
 
@@ -9040,176 +7359,138 @@ dir
 magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--all`, `-a`
 
-
-
 從所有裝載下載
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--mount`, `-m`
 
-
-
 裝載（作為應用程式相對路徑）
-- 需要值
 
+- 需要值
 
 ### `--target`
 
 要下載檔案的目錄。 如果 — 全部被使用，則會附加裝載路徑
-- 需要值
 
+- 需要值
 
 ### `--source-path`
 
 使用裝載的源路徑（而不是裝載路徑）作為目標的子目錄，當時 — all被使用
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--delete`
 
 是否刪除目標目錄中無關的檔案
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--exclude`
 
 要從下載中排除的檔案（模式）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--include`
 
 要包含在下載中的檔案（模式）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--refresh`
 
 是否刷新快取
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
-- 需要值
 
+- 需要值
 
 ### `--worker`
 
 工作人員名稱
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `mount:list`
 
@@ -9219,148 +7500,118 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
 ```
 
-<!-- app.name -->
 
 ```bash
 mounts
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--paths`
 
 僅輸出裝載路徑（每行一條）
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--refresh`
 
 是否刷新快取
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
-- 需要值
 
+- 需要值
 
 ### `--worker`
 
 工作人員名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `mount:size`
 
@@ -9370,154 +7621,119 @@ mounts
 magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--bytes`, `-B`
 
-
-
 以位元組顯示大小
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--refresh`
 
 重新整理快取
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
-- 需要值
 
+- 需要值
 
 ### `--worker`
 
 工作人員名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `mount:upload`
 
@@ -9527,159 +7743,124 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns C
 magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--source`
 
 包含要上載的檔案的目錄
+
 - 需要值
-
-
 
 ### `--mount`, `-m`
 
-
-
 裝載（作為應用程式相對路徑）
-- 需要值
 
+- 需要值
 
 ### `--delete`
 
 是否刪除裝入中無關的檔案
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--exclude`
 
 要從上傳中排除的檔案（模式）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--include`
 
 要包含在上傳中的檔案（模式）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--refresh`
 
 是否刷新快取
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
-- 需要值
 
+- 需要值
 
 ### `--worker`
 
 工作人員名稱
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `project:clear-build-cache`
 
@@ -9689,236 +7870,183 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `project:curl`
 
 對專案API執行已驗證的cURL要求
 
 ```bash
-magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [--] [<path>]
+magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [--] [<path>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `path`
 
 API路徑
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--request`, `-X`
 
-
-
 要使用的要求方法
+
 - 需要值
-
-
 
 ### `--data`, `-d`
 
-
-
 要傳送的資料
+
 - 需要值
-
-
 
 ### `--include`, `-i`
 
-
-
 在輸出中包含標題
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--head`, `-I`
 
-
-
 僅擷取標題
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--disable-compression`
 
 請勿使用curl — 壓縮的標幟
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--enable-glob`
 
 啟用curl全域（移除 — globoff標幟）
+
 - 預設值： `false`
 - 不接受值
 
+### `--fail`, `-f`
 
+失敗，錯誤回應沒有輸出
+
+- 預設值： `false`
+- 不接受值
 
 ### `--header`, `-H`
 
-
-
 額外標題
+
 - 預設值： `[]`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `project:get`
 
@@ -9928,130 +8056,101 @@ API路徑
 magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [--host HOST] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
 ```
 
-<!-- app.name -->
 
 ```bash
 get
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `project`
 
 專案ID
-<!-- argument -->
+
 
 ### `directory`
 
 要克隆到的目錄。 預設為專案標題
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--environment`, `-e`
 
-
-
 要複製的環境ID。 預設為專案預設值，或第一個可用環境
-- 需要值
 
+- 需要值
 
 ### `--depth`
 
 建立淺層克隆：限制歷史記錄中的提交數
-- 需要值
 
+- 需要值
 
 ### `--build`
 
 複製後建立專案
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `project:info`
 
@@ -10061,302 +8160,274 @@ get
 magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
-<!-- app.name -->
 
 ```bash
 project:metadata
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `property`
 
 屬性的名稱
-<!-- argument -->
+
 
 ### `value`
 
 為屬性設定新值
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--refresh`
 
 是否刷新快取
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
-
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `project:list`
 
 取得所有作用中專案的清單
 
 ```bash
-magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
-<!-- app.name -->
 
 ```bash
 projects
 ```
 
-<!-- app.name -->
 
 ```bash
 pro
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--pipe`
 
-輸出專案ID的簡單清單
+輸出專案ID的簡單清單。 這會停用分頁。
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--host`
 
 依地區主機名稱篩選（完全相符）
-- 需要值
 
+- 需要值
 
 ### `--title`
 
 依標題篩選（不區分大小寫搜尋）
-- 需要值
 
+- 需要值
 
 ### `--my`
 
 僅顯示您擁有的專案
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--refresh`
 
 是否要刷新清單
+
 - 預設值： `1`
 - 需要值
-
 
 ### `--sort`
 
 要排序的屬性
+
 - 預設值： `title`
 - 需要值
-
 
 ### `--reverse`
 
 以反向（遞減）順序排序
+
 - 預設值： `false`
 - 不接受值
 
+### `--page`
+
+頁碼（從1開始）
+
+- 預設值： `1`
+- 需要值
+
+### `--count`
+
+每頁要顯示的專案數。 預設值是根據終端高度。 使用0停用分頁。
+
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
+### `--date-fmt`
 
+日期格式（作為PHP日期格式字串）
+
+- 預設值： `c`
+- 需要值
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `project:set-remote`
 
@@ -10366,73 +8437,54 @@ pro
 magento-cloud project:set-remote [<project>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `project`
 
 專案ID
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `project:variable:delete`
 
@@ -10442,107 +8494,81 @@ magento-cloud project:set-remote [<project>]
 magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 變數名稱
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `project:variable:get`
 
@@ -10552,134 +8578,109 @@ magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|-
 magento-cloud project:variable:get [--pipe] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<name>]
 ```
 
-<!-- app.name -->
 
 ```bash
 project-variables
 ```
 
-<!-- app.name -->
 
 ```bash
 pvget
 ```
 
-<!-- app.name -->
 
 ```bash
 project:variable:list
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 變數的名稱
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--pipe`
 
 僅輸出完整變數值（必須指定&quot;name&quot;）
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `project:variable:set`
 
@@ -10689,141 +8690,113 @@ project:variable:list
 magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
-<!-- app.name -->
 
 ```bash
 pvset
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 變數名稱
-- 必填
 
-   <!-- argument -->
+- 必填
 
 ### `value`
 
 變數值
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 ### `--json`
 
 將值標示為JSON
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--no-visible-build`
 
 建置時請勿公開此變數
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--no-visible-runtime`
 
 在執行階段不要公開此變數
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `repo:cat`
 
@@ -10833,108 +8806,79 @@ pvset
 magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] <path>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `path`
 
 檔案的路徑
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
 
 ### `--commit`, `-c`
 
-
-
 提交SHA。 這也可以接受「HEAD」，並接受父項提交的脫字元號(^)或顎化符號(~)尾碼。
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `repo:ls`
 
@@ -10944,133 +8888,185 @@ magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST]
 magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `path`
 
 子目錄的路徑
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--directories`, `-d`
 
-
-
 僅顯示目錄
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--files`, `-f`
 
-
-
 僅顯示檔案
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--git-style`
 
 類似「git ls-tree」的樣式輸出
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--commit`, `-c`
 
-
-
 提交SHA。 這也可以接受「HEAD」，並接受父項提交的脫字元號(^)或顎化符號(~)尾碼。
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
+- 預設值： `false`
+- 不接受值
+
+### `--no`, `-n`
+
+對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
 
+## `repo:read`
+
+讀取項目儲存庫中的目錄或檔案
+
+```bash
+magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+```
+
+
+```bash
+read
+```
+
+
+### `path`
+
+目錄或檔案的路徑
+
+
+### `--commit`, `-c`
+
+提交SHA。 這也可以接受「HEAD」，並接受父項提交的脫字元號(^)或顎化符號(~)尾碼。
+
+- 需要值
+
+### `--project`, `-p`
+
+專案ID或URL
+
+- 需要值
+
+### `--host`
+
+專案的API主機名稱
+
+- 需要值
+
+### `--environment`, `-e`
+
+環境ID
+
+- 需要值
+
+### `--help`, `-h`
+
+顯示此幫助消息
+
+- 預設值： `false`
+- 不接受值
+
+### `--quiet`, `-q`
+
+不輸出任何消息
+
+- 預設值： `false`
+- 不接受值
+
+### `--verbose`, `-v|-vv|-vvv`
+
+增加訊息的密集度
+
+- 預設值： `false`
+- 不接受值
+
+### `--version`, `-V`
+
+顯示此應用程式版本
+
+- 預設值： `false`
+- 不接受值
+
+### `--yes`, `-y`
+
+對任何是/否的問題回答「是」；停用互動
+
+- 預設值： `false`
+- 不接受值
 
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `route:get`
 
@@ -11080,154 +9076,117 @@ magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit
 magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `route`
 
 路由的原始URL
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--id`
 
 要選擇的路由ID
+
 - 需要值
-
-
 
 ### `--primary`, `-1`
 
-
-
 選擇主路由
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--property`, `-P`
 
-
-
 要顯示的屬性
-- 需要值
 
+- 需要值
 
 ### `--refresh`
 
 略過路由的快取
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 [已棄用選項，不再使用]
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 [已棄用選項，不再使用]
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `route:list`
 
@@ -11237,137 +9196,110 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 magento-cloud routes [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<environment>]
 ```
 
-<!-- app.name -->
 
 ```bash
 routes
 ```
 
-<!-- app.name -->
 
 ```bash
 environment:routes
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `environment`
 
 環境ID
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--refresh`
 
 略過路由的快取
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `self:install`
 
@@ -11377,80 +9309,59 @@ environment:routes
 magento-cloud self:install [--shell-type SHELL-TYPE]
 ```
 
-<!-- app.name -->
 
 ```bash
 local:install
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--shell-type`
 
 自動完成的殼類型（bash或zsh）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `self:stats`
 
@@ -11460,116 +9371,90 @@ local:install
 magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--page`, `-p`
 
-
-
 頁碼
+
 - 預設值： `1`
 - 需要值
 
-
-
 ### `--count`, `-c`
 
-
-
 每頁結果數(最大值：100)
+
 - 預設值： `20`
 - 需要值
-
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `self:update`
 
@@ -11579,113 +9464,91 @@ magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [
 magento-cloud self-update [--no-major] [--unstable] [--manifest MANIFEST] [--current-version CURRENT-VERSION] [--timeout TIMEOUT]
 ```
 
-<!-- app.name -->
 
 ```bash
 self-update
 ```
 
-<!-- app.name -->
 
 ```bash
 update
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--no-major`
 
 僅在次要版本或修補版本之間更新
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--unstable`
 
 更新為新的不穩定版本（如果有）
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--manifest`
 
 覆寫資訊清單檔案位置
-- 需要值
 
+- 需要值
 
 ### `--current-version`
 
 覆寫目前版本
-- 需要值
 
+- 需要值
 
 ### `--timeout`
 
 版本檢查的逾時
+
 - 預設值： `30`
 - 需要值
 
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `service:list`
 
@@ -11695,126 +9558,99 @@ update
 magento-cloud services [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
-<!-- app.name -->
 
 ```bash
 services
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--refresh`
 
 是否刷新快取
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `service:mongo:dump`
 
@@ -11824,154 +9660,109 @@ services
 magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
-<!-- app.name -->
 
 ```bash
 mongodump
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--collection`, `-c`
 
-
-
 要轉儲的集合
+
 - 需要值
-
-
 
 ### `--gzip`, `-z`
 
-
-
 使用gzip壓縮轉儲
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--stdout`, `-o`
 
-
-
 輸出為STDOUT，而非檔案
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--relationship`, `-r`
 
-
-
 要使用的服務關係
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `service:mongo:export`
 
@@ -11981,157 +9772,115 @@ mongodump
 magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
-<!-- app.name -->
 
 ```bash
 mongoexport
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--collection`, `-c`
 
-
-
 要匯出的集合
-- 需要值
 
+- 需要值
 
 ### `--jsonArray`
 
 將資料匯出為單一JSON陣列
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--type`
 
 匯出類型，例如&quot;csv&quot;
+
 - 需要值
-
-
 
 ### `--fields`, `-f`
 
-
-
 要匯出的欄位
+
 - 預設值： `[]`
 - 需要值
 
-
-
 ### `--relationship`, `-r`
 
-
-
 要使用的服務關係
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `service:mongo:restore`
 
@@ -12141,134 +9890,95 @@ mongoexport
 magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
-<!-- app.name -->
 
 ```bash
 mongorestore
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--collection`, `-c`
 
-
-
 要還原的集合
+
 - 需要值
-
-
 
 ### `--relationship`, `-r`
 
-
-
 要使用的服務關係
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `service:mongo:shell`
 
@@ -12278,131 +9988,95 @@ mongorestore
 magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
-<!-- app.name -->
 
 ```bash
 mongo
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--eval`
 
 將JavaScript片段傳遞至殼層
+
 - 需要值
-
-
 
 ### `--relationship`, `-r`
 
-
-
 要使用的服務關係
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `service:redis-cli`
 
@@ -12412,130 +10086,95 @@ mongo
 magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
 ```
 
-<!-- app.name -->
 
 ```bash
 redis
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `args`
 
 要添加到Redis命令的參數
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--relationship`, `-r`
 
-
-
 要使用的服務關係
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `session:switch`
 
@@ -12545,73 +10184,54 @@ redis
 magento-cloud session:switch [<id>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 新工作階段ID
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `snapshot:create`
 
@@ -12621,139 +10241,108 @@ magento-cloud session:switch [<id>]
 magento-cloud backup [--live] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
-<!-- app.name -->
 
 ```bash
 backup
 ```
 
-<!-- app.name -->
 
 ```bash
 backup:create
 ```
 
-<!-- app.name -->
 
 ```bash
 environment:backup
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `environment`
 
 環境
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--live`
 
 即時備份：不要停止環境。 如果設定，則環境將保持運行並在備份期間開啟到連接。 這樣可以減少停機時間，並且有可能以不一致的狀態備份資料。
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `snapshot:list`
 
@@ -12763,151 +10352,121 @@ environment:backup
 magento-cloud snapshots [--limit LIMIT] [--start START] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
 ```
 
-<!-- app.name -->
 
 ```bash
 snapshots
 ```
 
-<!-- app.name -->
 
 ```bash
 backups
 ```
 
-<!-- app.name -->
 
 ```bash
 backup:list
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--limit`
 
 限制要列出的快照數
-- 預設值： `10`
-- 需要值
 
+- 需要值
 
 ### `--start`
 
-只列出此日期之前建立的快照
-- 需要值
+[已棄用]  — 此選項未使用
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `snapshot:restore`
 
@@ -12917,138 +10476,108 @@ backup:list
 magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
 ```
 
-<!-- app.name -->
 
 ```bash
 environment:restore
 ```
 
-<!-- app.name -->
 
 ```bash
-snapshot:restore
+backup:restore
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `snapshot`
 
 快照的名稱。 預設為最近一個
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--target`
 
 要還原到的環境。 預設為快照的當前環境
-- 需要值
 
+- 需要值
 
 ### `--branch-from`
 
 如果 — target尚不存在，則會指定新環境的父環境
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `source-operation:run`
 
@@ -13058,123 +10587,94 @@ snapshot:restore
 magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `operation`
 
 操作名稱
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 ### `--variable`
 
 要在操作期間設定的變數，格式為 &lt;info>type:name=value&lt;/info>
+
 - 預設值： `[]`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `ssh-cert:info`
 
@@ -13184,91 +10684,68 @@ magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] 
 magento-cloud ssh-cert:info [--no-refresh] [-P|--property PROPERTY] [--date-fmt DATE-FMT]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--no-refresh`
 
 如果證書無效，則不刷新該證書
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--property`, `-P`
 
-
-
 要顯示的憑證屬性
-- 需要值
 
+- 需要值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
 
-
-
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `ssh-cert:load`
 
@@ -13278,89 +10755,69 @@ magento-cloud ssh-cert:info [--no-refresh] [-P|--property PROPERTY] [--date-fmt 
 magento-cloud ssh-cert:load [--refresh-only] [--new] [--new-key]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--refresh-only`
 
 請視需要重新整理憑證（請勿寫入SSH設定）
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--new`
 
 強制刷新證書
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--new-key`
 
 [已棄用] 使用 — 新
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `ssh-key:add`
 
@@ -13370,79 +10827,60 @@ magento-cloud ssh-cert:load [--refresh-only] [--new] [--new-key]
 magento-cloud ssh-key:add [--name NAME] [--] [<path>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `path`
 
 現有SSH公開金鑰的路徑
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
 
 
 ### `--name`
 
 識別金鑰的名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `ssh-key:delete`
 
@@ -13452,73 +10890,54 @@ magento-cloud ssh-key:add [--name NAME] [--] [<path>]
 magento-cloud ssh-key:delete [<id>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `id`
 
 要刪除的SSH金鑰ID
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `ssh-key:list`
 
@@ -13528,95 +10947,74 @@ magento-cloud ssh-key:delete [<id>]
 magento-cloud ssh-keys [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
-<!-- app.name -->
 
 ```bash
 ssh-keys
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `subscription:info`
 
@@ -13626,130 +11024,105 @@ ssh-keys
 magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<property>] [<value>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `property`
 
 屬性的名稱
-<!-- argument -->
+
 
 ### `value`
 
 為屬性設定新值
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--id`, `-s`
 
-
-
 訂閱ID
-- 需要值
 
+- 需要值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
+
 - 預設值： `c`
 - 需要值
-
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `tunnel:close`
 
@@ -13759,111 +11132,79 @@ magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FOR
 magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--all`, `-a`
 
-
-
 關閉所有隧道
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `tunnel:info`
 
@@ -13873,141 +11214,106 @@ magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|-
 magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--property`, `-P`
 
-
-
 要查看的關係屬性
+
 - 需要值
-
-
 
 ### `--encode`, `-c`
 
-
-
 輸出為base64編碼JSON
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `tunnel:list`
 
@@ -14017,138 +11323,105 @@ magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project P
 magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
-<!-- app.name -->
 
 ```bash
 tunnels
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--all`, `-a`
 
-
-
 查看所有通道
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `tunnel:open`
 
@@ -14158,120 +11431,85 @@ tunnels
 magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--gateway-ports`, `-g`
 
-
-
 允許遠程主機連接到本地轉發埠
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `tunnel:single`
 
@@ -14281,135 +11519,97 @@ magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HO
 magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--port`
 
 本地埠
+
 - 需要值
-
-
 
 ### `--gateway-ports`, `-g`
 
-
-
 允許遠程主機連接到本地轉發埠
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--app`, `-A`
 
-
-
 遠程應用程式名稱
+
 - 需要值
-
-
 
 ### `--relationship`, `-r`
 
-
-
 要使用的服務關係
+
 - 需要值
-
-
 
 ### `--identity-file`, `-i`
 
-
-
 要使用的SSH身分（私密金鑰）
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `user:add`
 
@@ -14419,115 +11619,87 @@ magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PRO
 magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `email`
 
 使用者的電子郵件地址
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--role`, `-r`
 
+使用者的專案角色（「管理員」或「檢視者」）或環境類型角色(例如「staging:contributor」或「production:viewer」)。 若要從環境類型中移除使用者，請將角色設為「無」。 %字元可作為環境類型的萬用字元，例如「%:viewer」，以在所有類型上為用戶提供「viewer」角色。 角色可縮寫，例如&#39;production:v&#39;。
 
-
-使用者的專案角色（「管理員」或「檢視者」）或環境特定角色(例如「master:contributor」或「stage:viewer」)。 字元%可作為環境ID中的萬用字元，例如「%:viewer」。 角色可縮寫，例如&#39;master:c&#39;。
 - 預設值： `[]`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `user:delete`
 
@@ -14537,107 +11709,81 @@ magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W
 magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <email>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `email`
 
 使用者的電子郵件地址
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `user:get`
 
@@ -14647,145 +11793,110 @@ magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [-
 magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
 ```
 
-<!-- app.name -->
 
 ```bash
 user:role
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `email`
 
 使用者的電子郵件地址
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--level`, `-l`
 
-
-
 角色層級（「專案」或「環境」）
-- 需要值
 
+- 需要值
 
 ### `--pipe`
 
 輸出角色以停止（進行任何變更後）
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--role`, `-r`
 
-
-
 [已棄用：使用用戶：更新以更改用戶的角色]
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `user:list`
 
@@ -14795,110 +11906,86 @@ user:role
 magento-cloud users [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
 ```
 
-<!-- app.name -->
 
 ```bash
 users
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `user:update`
 
@@ -14908,115 +11995,87 @@ users
 magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `email`
 
 使用者的電子郵件地址
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--role`, `-r`
 
+使用者的專案角色（「管理員」或「檢視者」）或環境類型角色(例如「staging:contributor」或「production:viewer」)。 若要從環境類型中移除使用者，請將角色設為「無」。 %字元可作為環境類型的萬用字元，例如「%:viewer」，以在所有類型上為用戶提供「viewer」角色。 角色可縮寫，例如&#39;production:v&#39;。
 
-
-使用者的專案角色（「管理員」或「檢視者」）或環境特定角色(例如「master:contributor」或「stage:viewer」)。 字元%可作為環境ID中的萬用字元，例如「%:viewer」。 角色可縮寫，例如&#39;master:c&#39;。
 - 預設值： `[]`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `variable:create`
 
@@ -15026,184 +12085,152 @@ magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] 
 magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 變數名稱
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--level`, `-l`
 
-
-
 設定變數的層級（「專案」或「環境」）
-- 需要值
 
+- 需要值
 
 ### `--name`
 
 變數名稱
-- 需要值
 
+- 需要值
 
 ### `--value`
 
 變數的值
-- 需要值
 
+- 需要值
 
 ### `--json`
 
 變數是否為JSON格式
+
 - 預設值： `false`
 - 需要值
-
 
 ### `--sensitive`
 
 變數是否敏感
+
 - 預設值： `false`
 - 需要值
-
 
 ### `--prefix`
 
 變數名稱的首碼(例如&#39;none&#39;或&#39;env:&#39;)
+
 - 預設值： `none`
 - 需要值
-
 
 ### `--enabled`
 
 是否應啟用變數
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--inheritable`
 
 變數是否可由子環境繼承
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--visible-build`
 
 變數是否應在建置時顯示
-- 預設值： `true`
-- 需要值
 
+- 需要值
 
 ### `--visible-runtime`
 
 變數是否應在執行階段顯示
+
 - 預設值： `true`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `variable:delete`
 
@@ -15213,125 +12240,93 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 變數名稱
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
 
 ### `--level`, `-l`
 
-
-
 變數層級（「專案」、「環境」、「p」或「e」）
+
 - 需要值
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `variable:disable`
 
@@ -15341,116 +12336,87 @@ magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host 
 magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 變數的名稱
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `variable:enable`
 
@@ -15460,116 +12426,87 @@ magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--enviro
 magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 變數的名稱
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
 
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `variable:get`
 
@@ -15579,149 +12516,117 @@ magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environ
 magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
 ```
 
-<!-- app.name -->
 
 ```bash
 vget
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 變數的名稱
-<!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 
 ### `--property`, `-P`
 
-
-
 檢視單一變數屬性
+
 - 需要值
-
-
 
 ### `--level`, `-l`
 
-
-
 變數層級（「專案」、「環境」、「p」或「e」）
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
-- 需要值
 
+- 需要值
 
 ### `--pipe`
 
 [棄用的選項] 僅輸出變數值
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `variable:list`
 
@@ -15731,134 +12636,103 @@ vget
 magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
 ```
 
-<!-- app.name -->
 
 ```bash
 variables
 ```
 
-<!-- app.name -->
 
 ```bash
 var
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
-
 ### `--level`, `-l`
 
-
-
 變數層級（「專案」、「環境」、「p」或「e」）
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `variable:set`
 
@@ -15868,143 +12742,112 @@ var
 magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
-<!-- app.name -->
 
 ```bash
 vset
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 變數名稱
-- 必填
 
-   <!-- argument -->
+- 必填
 
 ### `value`
 
 變數值
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
 
 ### `--json`
 
 將值標示為JSON
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--disabled`
 
 將變數標示為已停用
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `variable:update`
 
@@ -16014,173 +12857,140 @@ vset
 magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
-<!-- app.name --> <!-- command.usage -->
 
 ### `name`
 
 變數名稱
+
 - 必填
-
-   <!-- argument --> <!-- arguments --> <!-- arguments.size -->
-
-
-
 
 ### `--level`, `-l`
 
-
-
 變數層級（「專案」、「環境」、「p」或「e」）
-- 需要值
 
+- 需要值
 
 ### `--value`
 
 變數的值
-- 需要值
 
+- 需要值
 
 ### `--json`
 
 變數是否為JSON格式
+
 - 預設值： `false`
 - 需要值
-
 
 ### `--sensitive`
 
 變數是否敏感
+
 - 預設值： `false`
 - 需要值
-
 
 ### `--enabled`
 
 是否應啟用變數
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--inheritable`
 
 變數是否可由子環境繼承
+
 - 預設值： `true`
 - 需要值
-
 
 ### `--visible-build`
 
 變數是否應在建置時顯示
-- 預設值： `true`
-- 需要值
 
+- 需要值
 
 ### `--visible-runtime`
 
 變數是否應在執行階段顯示
+
 - 預設值： `true`
 - 需要值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
+
 - 需要值
-
-
 
 ### `--no-wait`, `-W`
 
-
-
 請勿等待操作完成
+
 - 預設值： `false`
 - 不接受值
-
 
 ### `--wait`
 
 等待操作完成（預設）
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size -->
+- 不接受值
+
 
 ## `worker:list`
 
@@ -16190,123 +13000,95 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 magento-cloud workers [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
-<!-- app.name -->
 
 ```bash
 workers
 ```
 
-<!-- app.name --> <!-- command.usage --> <!-- arguments.size -->
-
-
-
 ### `--refresh`
 
 是否刷新快取
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--project`, `-p`
 
-
-
 專案ID或URL
-- 需要值
 
+- 需要值
 
 ### `--host`
 
 專案的API主機名稱
+
 - 需要值
-
-
 
 ### `--environment`, `-e`
 
-
-
 環境ID
-- 需要值
 
+- 需要值
 
 ### `--format`
 
 輸出格式（「表格」、「csv」、「tsv」或「純」）
+
 - 預設值： `table`
 - 需要值
-
 
 ### `--columns`
 
 要顯示的欄（逗號分隔清單或多個值）
+
 - 預設值： `[]`
 - 需要值
-
 
 ### `--no-header`
 
 不輸出表標題
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--help`, `-h`
 
-
-
 顯示此幫助消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--quiet`, `-q`
 
-
-
 不輸出任何消息
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-
-
 增加訊息的密集度
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--version`, `-V`
 
-
-
 顯示此應用程式版本
+
 - 預設值： `false`
 - 不接受值
-
-
 
 ### `--yes`, `-y`
 
-
-
 對任何是/否的問題回答「是」；停用互動
+
 - 預設值： `false`
 - 不接受值
 
-
-
 ### `--no`, `-n`
 
-
-
 對任何是/否的問題回答「否」；停用互動
+
 - 預設值： `false`
-- 不接受值 <!-- options --> <!-- options.size --> <!-- commands --> <!-- file -->
+- 不接受值
