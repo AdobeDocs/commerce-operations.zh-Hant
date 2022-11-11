@@ -1,161 +1,161 @@
 ---
-title: 「 [!UICONTROL Deploy] 頁籤
-description: 瞭解 [!UICONTROL Deploy] 頁籤 [!DNL Observation for Adobe Commerce]。
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+title: 「 [!UICONTROL Deploy] 標籤」
+description: 了解 [!UICONTROL Deploy] 標籤 [!DNL Observation for Adobe Commerce].
+source-git-commit: b95a35ee64cd8e844a51a9ff699eceb9c3a9266c
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
 
 ---
 
-# 的 [!UICONTROL Deploy] 頁籤
+# 此 [!UICONTROL Deploy] 標籤
 
-此頁籤嘗試快速隔離問題和部署問題的原因。
+此頁簽旨在快速隔離部署問題和原因。
 
 ## [!UICONTROL Deploy log Deployment Troubleshooter]
 
 ![部署日誌部署疑難解答](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
 
-的 **[!UICONTROL Deploy log Deployment Troubleshooter]** frame顯示在選定時間範圍內發生的部署日誌事件的計數。 目的是提供部署活動的一覽式視圖，並根據計數確定部署的複雜性。 消息記錄越多，部署通常就越複雜。
+此 **[!UICONTROL Deploy log Deployment Troubleshooter]** frame會顯示在所選時間範圍內發生的部署記錄事件計數。 目的是提供部署活動的概覽，並依計數來判斷部署的複雜性。 記錄越多的訊息，部署通常就越複雜。
 
 ## [!UICONTROL Deploy State]
 
 ![部署狀態](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
 
-的 **[!UICONTROL Deploy State]** frame顯示在選定時間範圍內發生的部署事件。 此幀的分析器正在查找以下特定信號：
+此 **[!UICONTROL Deploy State]** frame會顯示在選取的時間範圍內發生的部署事件。 此幀的解析器正在查找以下特定信號：
 
-* 「%NOTICE:正在啟動generate命令%&#39;)，作為「start_gen」
+* 「%NOTICE:正在開始生成命令%&#39;)，作為&#39;start_gen&#39;
 * 「%git apply /app/vendor/magento/ece-tools/patches%」)作為「apply_patches」
-* 「%Set標誌：.static_content_deploy%&#39;)作為「SCD」
-* 「%NOTICE:生成命令completed%」)作為「gen_compl」
-* 「%NOTICE:正在開始部署。%&#39;)作為「start_deploy」
-* 「%NOTICE:部署已完成%」)作為「deploy_compl」
-* 「%NOTICE:正在啟動部署後。%&#39;)作為「start_pdeploy」
-* 「%NOTICE:部署後完成%)作為「pdeploy」
-* 「%deploy-complete%」)作為「cl_deploy_compl
+* 「%Set標誌：.static_content_deploy%&#39;)作為&#39;SCD&#39;
+* 「%NOTICE:生成命令已完成%」)，作為「gen_compl」
+* 「%NOTICE:正在開始部署。%&#39;)作為&#39;start_deploy&#39;
+* 「%NOTICE:部署完成%」)作為「deploy_compl」
+* 「%NOTICE:開始部署後。%&#39;)作為&#39;start_pdeploy&#39;
+* 「%NOTICE:後部署完成%」)作為「pdeploy」
+* &#39;%deploy-complete%&#39;)作為&#39;cl_deploy_compl&#39;
 
 ## [!UICONTROL Deploy Log Detail]
 
 ![部署日誌詳細資訊](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
 
-的 **[!UICONTROL Deploy Log Detail]** frame顯示在選定時間範圍內發生的部署日誌消息摘要詳細資訊。 幀正在分析部署日誌中的以下字串：
+此 **[!UICONTROL Deploy Log Detail]** frame會顯示在所選時間範圍內發生的部署日誌消息摘要詳細資訊。 該幀正在解析部署日誌中的以下字串：
 
-* 「%NOTICE:正在開始部署。%&#39;)作為「start_dply」
-* 「%INFO:開始方案：scenario/deploy.xml%&#39;)作為&#39;start_scenario
-* 「%NOTICE:正在啟動pre-deploy%&#39;)，作為「strt_predply」
-* 「%資訊：正在將修補程式日誌檔案%&#39;)還原為「rstr_ptch_log」
-* 「%INFO:正在更新快取配置。%&#39;)作為「updt_cach_config」
-* 「%INFO:將Redis從連接%&#39;設定為&#39;redis_sec_conn_set&#39;
-* 「%INFO:在生成掛接期間執行靜態內容部署，清除舊內容%&#39;)，如「scd_build_hk」
-* 「%INFO:正在將pub/static%」)作為「clr_pub_static」
-* 「%NFO:正在將redis快取：%&#39;)清除為&#39;clr_redis_cach&#39;
-* 「%INFO:清除var/cache目錄%&#39;)為「clr_var_cach」
-* 「%通知：啟用維護模式%」)為「enable_maint_mode」
-* 「%INFO:禁用cron%」)為「disable_cron」
-* 「%INFO:嘗試終止正在運行的cron作業，使用者將進程%」)作為「kill_cron_try」
-* 「%INFO:找不到正在運行Magentocron和使用者進程。%&#39;)作為「no_cron_fnd」，
-* %NOTICE:正在驗證配置%&#39;)為「validate_config」
-* 「%初始安裝期間建立管理員用戶需要以下管理資料%」)，作為「no_admin」
-* 「%recommended PHP version seffed the constraint%」（滿足約束%）作為「php_ver_constraint」
-* 「%警告：使用給定建議將配置修復為「fix_config_sug」
-* 「%警告： [2003] 尚未配置錯誤報告的目錄嵌套級別值。%&#39;)作為nest_err_reporting&#39;
-* 「%NOTICE:驗證%」的結束)作為「end_validation」
-* 「%NOTICE:正在啟動更新。%&#39;)作為「start_update」
-* 「%INFO:正在更新env.php。%&#39;)作為「update_php_env」
-* 「%INFO:正在更新env.php DB連接配置。%&#39;)作為「update_php_env_db」
-* 「%INFO:正在將env.php AMQP配置%&#39;)更新為&#39;update_php_env_amqp&#39;
-* 「%INFO:將搜索引擎設定為：elasticsearch7%」)作為「set elastic7」
-* 「%elasticsearch 6.5.4已通過EOL%」)，作為「elastic_ver_EOL」
-* 「%INFO:將搜索引擎設定為：elasticsearch6%」)作為「set elastic6」
-* 「%INFO:正在將安全和不安全的URL%」更新為「update_urls」
-* 「%INFO:正在運行安裝程式升級。%&#39;)作為「setup_upgrade_run」
-* 「%INFO:已啟用部署後掛接。 Cron啟用、快取清理和預警告操作被推遲%」)，作為「post_hook_enabled」
-* 「%NOTICE:已禁用維護模式。%&#39;)作為「maint_mode_disabled」
-* 「%INFO:已完成%」)作為「scenario_finished」
-* 「%警告：命令維護：啟用已完成，但出現錯誤。 將maintenanceflag file%&#39;)建立為&#39;enable_maintenance_fail&#39;
-* 「%MySQL Server已離開%」)，作為「MySQL_has_gone_away」
+* 「%NOTICE:正在開始部署。%&#39;)作為&#39;start_dply&#39;
+* 「%INFO:起始案例：scenario/deploy.xml%&#39;)作為&#39;start_scenario&#39;
+* 「%NOTICE:開始預部署%」)作為「strt_predply」
+* 「%資訊：正在恢復修補程式日誌檔案%&#39;)，為&#39;rstr_ptch_log&#39;
+* 「%INFO:正在更新快取配置。%&#39;)作為&#39;updt_cach_config&#39;
+* 「%INFO:將Redis從連接%」設定為「redis_sec_conn_set」
+* 「%INFO:在建置掛接期間執行靜態內容部署，清除舊內容%&#39;)，如&#39;scd_build_hk&#39;
+* 「%INFO:清除pub/static%」)，作為「clr_pub_static」
+* 「%NFO:正在清除REDIS快取：%&#39;)，作為&#39;clr_redis_cach&#39;
+* 「%INFO:清除var/cache目錄%&#39;)，作為&#39;clr_var_cach&#39;
+* 「%通知：啟用維護模式%」)作為「enable_maint_mode」
+* 「%INFO:停用cron%」)作為「disable_cron」
+* 「%INFO:嘗試終止正在運行的cron作業，消費者處理%&#39;)為「kill_cron_try」
+* 「%INFO:未找到正在運行的Magentocron和用戶進程。%&#39;)作為&#39;no_cron_fnd&#39;,
+* %通知：驗證配置%」)為「validate_config」
+* 「%在初始安裝期間建立管理員用戶需要以下管理員資料%」)，作為「no_admin」
+* 「%建議滿足約束%」的PHP版本)作為「php_ver_constraint」
+* 「%警告：將具有指定建議的配置修正為「fix_config_sugg」
+* 「%警告： [2003年] 尚未配置錯誤報告的目錄嵌套級別值。%&#39;)as&#39;nest_err_reporting&#39;
+* 「%NOTICE:驗證結束%」)作為「end_validation」
+* 「%NOTICE:正在啟動更新。%&#39;)作為&#39;start_update&#39;
+* 「%INFO:正在更新env.php。%&#39;)作為&#39;update_php_env&#39;
+* 「%INFO:正在更新env.php DB連接配置。%&#39;)作為&#39;update_php_env_db&#39;
+* 「%INFO:將env.php AMQP配置%&#39;)更新為&#39;update_php_env_amqp&#39;
+* 「%INFO:將搜尋引擎設為：elasticsearch7%&#39;)作為&#39;set_elastic7&#39;
+* 「%elasticsearch 6.5.4已傳遞EOL%」)作為「elastic_ver_EOL」
+* 「%INFO:將搜尋引擎設為：elasticsearch6%&#39;)作為&#39;set_elastic6&#39;
+* 「%INFO:將安全和不安全的URL%」更新為「update_urls」
+* 「%INFO:正在運行安裝程式升級。%&#39;)作為&#39;setup_upgrade_run&#39;
+* 「%INFO:已啟用部署後掛接。 Cron啟用、快取清除和預警操作將延遲%」)，為「post_hook_enabled」
+* 「%NOTICE:已禁用維護模式。%&#39;)作為&#39;maint_mode_disabled
+* 「%INFO:情節(s)已完成%」)作為「scenario_finished」
+* 「%警告：命令維護：enable已完成，但出現錯誤。 建立維護標誌檔案%&#39;)，為&#39;enable_maintenance_fail&#39;
+* 「%MySQL Server已消失%」)，作為「MySQL_has_gone_away」
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![發佈部署日誌詳細資訊](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
+![部署後日誌詳細資訊](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
-的 **[!UICONTROL Post Deploy Log Detail]** frame顯示在選定時間範圍內發生的部署後日誌詳細資訊。 此框架側重於包含以下字串的特定日誌消息：
+此 **[!UICONTROL Post Deploy Log Detail]** frame會顯示在所選時間範圍內發生的部署後記錄詳細資訊。 此幀的焦點是包含以下字串的特定日誌消息：
 
-* 「%Disabled maintenance mode%」)作為「disabled_maint_mode」
-* 「%INFO:開始方案：scenario/post-deploy.xml%&#39;)作為&#39;start_pstdply_scenario
-* 「%通知：正在驗證配置%&#39;)為「val_config」
-* 「%通知：驗證%」的結束)，作為「end_val_config」
-* 「%INFO:啟用cron%&#39;)作為「cron_enabled」
-* 「%資訊：建立重要檔案的備份。%&#39;)作為「file_backup」
-* 「%INFO:已成功將備份%&#39;)建立為「file_backup_success」
-* 「%INFO:正在啟動頁面預熱%&#39;)，為&quot;pg_warmup_start&quot;
-* 「%INFO:已熱化頁面：%&#39;)，為&quot;bernet_up_pg&quot;
-* 「%錯誤：預熱失敗：%&#39;)作為「warm_up_pg_err」
-* 「%資訊：已完成%」)作為「scenario_finished」
+* &#39;%Disabled maintenance mode%&#39;)，作為&#39;disabled_maint_mode&#39;
+* 「%INFO:起始案例：scenario/post-deploy.xml%&#39;)作為&#39;start_pstdply_scenario&quot;
+* 「%通知：驗證配置%」)為「val_config」
+* 「%通知：驗證%」)作為「end_val_config」
+* 「%INFO:啟用cron%&#39;)為&#39;cron_enabled&#39;
+* 「%資訊：建立重要檔案的備份。%&#39;)作為&#39;file_backup&#39;
+* 「%INFO:已成功建立備份%」)作為「file_backup_success」
+* 「%INFO:開始頁面升溫%&#39;)為&#39;pg_warmup_start&#39;
+* 「%INFO:熱化頁面：%&#39;)作為「womned_up_pg」
+* 「%ERROR:升溫失敗：%&#39;)為「warm_up_pg_err」
+* 「%資訊：情節(s)已完成%」)作為「scenario_finished」
 
 ## [!UICONTROL Cloud Log Detail]
 
 ![雲日誌詳細資訊](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
-的 **[!UICONTROL Cloud Log Detail]** frame顯示在選定時間範圍內發生的雲日誌詳細資訊。 以下字串將用下面的「AS」標籤進行分析並返回：
+此 **[!UICONTROL Cloud Log Detail]** frame會顯示在所選時間範圍內發生的雲記錄詳細資訊。 以下字串會以下方的&#39;AS&#39;標籤剖析並傳回：
 
-* 「%DEBUG:/bin/bash -c &quot;設定 — o管道失效；php。/bin/magento setup:upgrade%&#39;)作為「start_update」
+* 「%DEBUG:/bin/bash -c &quot;set -o pipefail;php 。/bin/magento setup:upgrade%&#39;)作為&#39;start_update&#39;
 * 「%架構建立/更新：%」)作為「schema_updates」
-* 「%沒有要導入的內容。%&#39;)作為「mod_import_finish」
-* 「%NOTICE:更新結束。%&#39;)作為「update_finished」
-* 「%DEBUG:運行步驟：deploy-static-content%」)作為「scd_run」
-* 「%通知：正在跳過靜態內容部署。 SCD按需啟用。%&#39;)作為「scd_ondemand」
-* 「%INFO:正在清除%&#39;)作為&#39;clr_dirs&#39;
-* 「%DEBUG:步驟「deploy-static-content」 finished%」)作為「scd_finished」
-* 「%NOTICE:正在跳過靜態內容壓縮。 SCD按需啟用。%&#39;)作為「scd_compression_run」，
-* 「%INFO:清除var/cache目錄%&#39;)為「clr_var_cach」
-* 「%DEBUG:步驟&quot;compress-static-content&quot; finished%&quot;)作為「scd_compression_finished」
-* 「%DEBUG:運行步驟：deploy_complete%」)作為「deploy_finished」
-* 「%INFO:已啟用部署後掛接。 Cron啟用、快取清理和預預熱操作被推遲到部署後階段。%&#39;)作為「Post_deploy_hook_enabled」
-* 「%NOTICE:已禁用維護模式。%&#39;)作為「maint_mode_disabled」
-* 「%INFO:已完成%」)作為「scenario_finished」
-* 「%post-deploy.xml%」)作為「post_deploy_start」
-* 「%NOTICE:正在驗證配置%&#39;)為「validate_config」
-* 「%警告： [2003] 尚未配置錯誤報告的目錄嵌套級別值。%&#39;)作為nest_err_reporting&#39;
-* 「%NOTICE:驗證%」的結束)作為「end_validation」
+* 「%無要導入的內容。%&#39;)作為&#39;mod_import_finish&#39;
+* 「%NOTICE:更新結束。%&#39;)作為&#39;update_finished&#39;
+* 「%DEBUG:執行步驟：deploy-static-content%&#39;)作為&#39;scd_run&#39;
+* 「%通知：正在跳過靜態內容部署。 SCD隨選啟用。%&#39;)作為&#39;scd_ondemand&#39;
+* 「%INFO:清除%&#39;)為&#39;clr_dirs&#39;
+* 「%DEBUG:步驟「deploy-static-content」finished%」)作為「scd_finished」
+* 「%NOTICE:正在跳過靜態內容壓縮。 SCD隨選啟用。%&#39;)作為&#39;scd_compression_run&#39;,
+* 「%INFO:清除var/cache目錄%&#39;)，作為&#39;clr_var_cach&#39;
+* 「%DEBUG:步驟「compress-static-content」finished%」)作為「scd_compression_finished」
+* 「%DEBUG:執行步驟：deploy-complete%&#39;)作為&#39;deploy_finished&#39;
+* 「%INFO:已啟用部署後掛接。 Cron啟用、快取清除和預熱操作會延遲至部署後階段。%&#39;)作為&#39;Post_deploy_hook_enabled&#39;
+* 「%NOTICE:已禁用維護模式。%&#39;)作為&#39;maint_mode_disabled
+* 「%INFO:情節(s)已完成%」)作為「scenario_finished」
+* &#39;%post-deploy.xml%&#39;)作為&#39;post_deploy_start&#39;
+* 「%NOTICE:驗證配置%」)為「validate_config」
+* 「%警告： [2003年] 尚未配置錯誤報告的目錄嵌套級別值。%&#39;)as&#39;nest_err_reporting&#39;
+* 「%NOTICE:驗證結束%」)作為「end_validation」
 * 「%INFO:啟用cron%」)作為「enable_cron」
-* 「%INFO:建立重要檔案%&#39;的備份)作為「create_backup」
-* 「%DEBUG:步驟「備份」已完成%」)作為「backup_finished」
-* 「%INFO:正在啟動頁面預熱%」)，作為「warmup_start」
-* 「%錯誤：預熱失敗：%&#39;)作為「warm_up_fail」
-* 「%DEBUG:步驟「預熱」完成%」)為「warmup_finished」
-* 「%調試：步驟「時間到第一位元組」完成%」)作為「ttfb_finished」
-* 「%INFO:方案完成%」)為「post_deploy_finished」
-* 「%DEBUG:運行步驟：預生成%」)作為「run_pre-build」
-* 「%DEBUG:已將.static_content_deploy標籤為「scd_flag_del」
-* 「%DEBUG:步驟「預生成」完成%」)作為「預生成_已完成」
-* 「%NOTICE:正在將修補程式%&#39;)作為「apply_patches」
+* 「%INFO:建立重要檔案%&#39;的備份)，作為&#39;create_backup&#39;
+* 「%DEBUG:步驟「backup」已完成%」)作為「backup_finished」
+* 「%INFO:開始頁面升溫%」)為「warmup_start」
+* 「%ERROR:升溫失敗：%&#39;)為「warm_up_fail」
+* 「%DEBUG:將「熱暖」完成%」步驟為「warmup_finished」
+* 「%調試：步驟「時間到第一個位元組」已完成%」)，作為「ttfb_finished」
+* 「%INFO:情節(s)已完成%」)為「post_deploy_finished」
+* 「%DEBUG:執行步驟：pre-build%&#39;)作為&#39;run_pre-build&#39;
+* 「%DEBUG:將.static_content_deploy已被刪除%&#39;)標籤為「scd_flag_del」
+* 「%DEBUG:步驟「pre-build」finished%」)，作為「pre-build_completed」
+* 「%NOTICE:應用修補程式%」)作為「apply_patches」
 * 「%已應用%」)作為「patches_applied」
-* 「%DEBUG:步驟&quot;apply-patches&quot;已完成%&quot;)作為&quot;apply_patches_complete&quot;
-* 「%Deploy using quick strategy%」)作為「quick_strategy_deploy」
-* 「%通知：正在運行DI編譯%&#39;)作為「di_compliation_start」
-* 「%NOTICE:將DI編譯%&#39;運行為&#39;di_compliation_finished&#39;
-* 「%NOTICE:正在生成新靜態內容%&#39;)，作為&quot;gen_frsh_static_content&quot;
-* &#39;%magento安裝程式:static-content:deploy%&#39;)作為「scd_executing」
-* 「%NOTICE:生成新靜態內容%&#39;的結束)，作為&quot;gen_frsh_static_cont_finished&quot;
-* 「%INFO:開始方案：scenario/build/transfer.xml%&#39;)作為&#39;start_transferxml
-* 「%INFO:正在嘗試將運行的cronjobs%」作為「kill_crons」
-* 「%INFO:正在將redis快取：%&#39;)清除為&quot;clear_redis_cache&quot;
-* 「%INFO:檢查db是否存在和hastables%&#39;)作為「db_check」
-* 「%警告： [2010] Elasticsearch服務安裝在基礎架構層，但不用作搜索引擎。%&#39;)作為&#39;es_not_used&#39;
-* 「%NOTICE:正在啟動更新。%&#39;)作為「starting_update」
-* 「%INFO:將搜索引擎設定為：mysql%&#39;)作為「mysql_search」
-* 「%SQLSTATE」[HY000] [2006] MySQL Server已離開%」)，作為「mysql_gone」
+* 「%DEBUG:步驟「apply-patches」已完成%」)作為「apply_patches_complete」
+* 「%使用快速策略%」進行部署)為「quick_strategy_deploy」
+* 「%通知：運行ID編譯%」)作為「di_compliation_start」
+* 「%NOTICE:運行ID編譯%」的結束)，作為「di_compliation_finished」
+* 「%NOTICE:正在生成新靜態內容%」)，作為「gen_frsh_static_content」
+* &#39;%magento安裝程式:static-content:deploy%&#39;)作為&#39;scd_executing&#39;
+* 「%NOTICE:結束生成新靜態內容%」)，作為「gen_frsh_static_cont_finished」
+* 「%INFO:起始案例：scenario/build/transfer.xml%&#39;)作為&#39;start_transferxml&quot;
+* 「%INFO:嘗試終止運行cron作業%」)作為「kill_crons」
+* 「%INFO:正在清除密文快取：%&#39;)，作為&#39;clear_redis_cache&#39;
+* 「%INFO:檢查db是否存在，並將%&#39;)作為&#39;db_check&#39;
+* 「%警告： [2010年] Elasticsearch服務安裝在基礎架構層，但不用作搜索引擎。%&#39;)as&#39;es_not_used_used
+* 「%NOTICE:正在啟動更新。%&#39;)作為&#39;starting_update&#39;
+* 「%INFO:將搜尋引擎設為：mysql%&#39;)作為&#39;mysql_search&#39;
+* &#39;%SQLSTATE[HY000] [2006年] MySQL Server已消失%&#39;)，為「mysql_gone」
 
 ## [!UICONTROL Count of modules imported during deploy]
 
-![部署期間導入的模組計數](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg)
+![部署期間導入的模組數](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg)
 
-的 **[!UICONTROL Count of modules imported during deploy]** frame顯示在選定時間範圍內部署期間導入的模組數。
+此 **[!UICONTROL Count of modules imported during deploy]** frame會顯示在所選時間範圍內部署期間匯入的模組數。
 
 ## [!UICONTROL Deployed module list]
 
-![已部署模組清單](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
+![已部署的模組清單](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
-的 **[!UICONTROL Deployed module list]** frame顯示在選定時間範圍內部署的模組。
+此 **[!UICONTROL Deployed module list]** 框架顯示在所選時間範圍內部署的模組。
 
