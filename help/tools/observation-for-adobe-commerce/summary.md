@@ -1,9 +1,9 @@
 ---
 title: 「 [!UICONTROL Summary] 標籤」
 description: 了解 [!UICONTROL Summary] 標籤 [!DNL Observation for Adobe Commerce].
-source-git-commit: 808018aca0630f725eebdd279b9314e2ee80eccc
+source-git-commit: 61d0de370cbfa02f5fcc7d20ad283c54357294a3
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2653'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 ![CPU使用量](../../assets/tools/cpu-usage.jpg)
 
-若 **[!UICONTROL CPU Usage]** 框架空白，表示基礎架構應用程式 [!DNL New Relic] 未啟用。 如果您的網站位於入門網站，您將看不到此資訊。 如果您的網站位於Pro，請開啟 [支援票證](https://experienceleague.corp.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) 有 [!DNL New Relic Infrastructure] 已為您的網站啟用。
+若 **[!UICONTROL CPU Usage]** 框架空白，表示基礎架構應用程式 [!DNL New Relic] 未啟用。 如果您的網站位於入門網站，您將看不到此資訊。 如果您的網站位於Pro，請開啟 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 有 [!DNL New Relic Infrastructure] 已為您的網站啟用。
 
 ## [!UICONTROL Average Response Time]
 

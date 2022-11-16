@@ -1,9 +1,9 @@
 ---
 title: env.php參考
 description: 請參閱env.php檔案的值清單。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: fe5e16d44213d1864a62230029e9e206eecd1717
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -185,7 +185,7 @@ ht-degree: 0%
 
 ## 目錄
 
-當Web伺服器配置為從 `/pub` 目錄 [改善安全性][change-docroot-to-pub].
+當Web伺服器配置為從 `/pub` 目錄 [改善安全性](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -219,7 +219,7 @@ ht-degree: 0%
 
 使用 `lock` 節點。
 
-深入了解 [鎖定提供程式配置][lock-provider-config].
+深入了解 [鎖定提供程式配置](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -299,6 +299,4 @@ ht-degree: 0%
 
 <!-- Link definitions -->
 
-[change-docroot-to-pub]: ../../installation/tutorials/docroot.md
-[lock-provider-config]: ../../installation/tutorials/lock-provider.md
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
