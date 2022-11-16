@@ -1,7 +1,7 @@
 ---
-source-git-commit: a3fa25993f365a85307db45ef16f68eeb12604bb
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2191'
 ht-degree: 0%
 
 ---
@@ -725,7 +725,7 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/php-amqplib/php-amqplib.git">php-amqplib/php-amqplib</a>
     </td>
     <td>資料庫</td>
-    <td>先前為videolvaro/php-amqplib。  此庫是AMQP協定的純PHP實現。 已經對RabbitMQ進行了測試。</td>
+    <td>先前為videolvaro/php-amqplib。  此庫是AMQP協定的純PHP實現。 它已經通過 [!DNL RabbitMQ].</td>
   </tr>
   </tbody>
 </table>

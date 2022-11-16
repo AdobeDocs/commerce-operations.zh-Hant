@@ -1,9 +1,9 @@
 ---
 user-guide-title: 工具
 user-guide-description: 了解您可搭配Adobe Commerce使用的不同工具、其用途、安裝程式，以及如何取得存取權。
-source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
    - [「警報」索引標籤](observation-for-adobe-commerce/alerts-tab.md)
    - [WAF頁簽](observation-for-adobe-commerce/waf-tab.md)
    - [CDN標籤](observation-for-adobe-commerce/cdn-tab.md)
-   - [RabbitMQ頁簽](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [此 [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Cron標籤](observation-for-adobe-commerce/cron-tab.md)
    - [索引標籤](observation-for-adobe-commerce/indexing-tab.md)
    - [QuickView頁簽](observation-for-adobe-commerce/oac-quickview-tab.md)

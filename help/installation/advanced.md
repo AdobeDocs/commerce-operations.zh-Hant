@@ -1,9 +1,9 @@
 ---
 title: 高級內部部署安裝
 description: 了解Adobe Commerce的進階安裝案例，或Magento Open Source您擁有的基礎架構。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2327'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--session-save` | 使用下列任一項：<br><br>- `db` 將會話資料儲存在資料庫中。 如果您有群集資料庫，請選擇資料庫儲存；否則，與基於檔案的儲存相比，可能沒有多少好處。<br><br>- `files` 將會話資料儲存在檔案系統中。 除非檔案系統訪問速度慢、您有群集資料庫，或您要將會話資料儲存在Redis中，否則基於檔案的會話儲存是適當的。<br><br>- `redis` 將會話資料儲存在Redis中。 如果您使用Redis進行預設或頁面快取，則必須已安裝Redis。 有關配置對Redis的支援的其他資訊，請參閱使用Redis以儲存會話。 | 否 |
 | `--key` | 如果您有密鑰，請指定用於加密資料庫中的敏感資料的密鑰。 如果您沒有，應用程式會為您產生一個。 | 是 |
 | `--cleanup-database` | 要在安裝Adobe Commerce或Magento Open Source之前刪除資料庫表，請指定此參數，但不帶值。 否則，資料庫將保持不變。 | 否 |
-| `--db-init-statements` | 高級MySQL配置參數。 使用資料庫初始化語句在連接到MySQL資料庫時運行。 設定任何值之前，請先參考類似於此的參考。<br><br>預設為 `SET NAMES utf8;`. | 否 |
+| `--db-init-statements` | 高級MySQL配置參數。 使用資料庫初始化語句在連接到MySQL資料庫時運行。 設定任何值之前，請先參考類似此的參考。<br><br>預設為 `SET NAMES utf8;`. | 否 |
 | `--sales-order-increment-prefix` | 指定要用作銷售訂單前置詞的字串值。 這通常用於保證支付處理者的唯一訂單編號。 | 否 |
 
 **搜尋引擎設定選項：**
@@ -170,16 +170,16 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--elasticsearch-username` | 驗證搜尋引擎的使用者ID | 否，除非已啟用驗證 |
 | `--elasticsearch-password` | 驗證搜尋引擎的密碼 | 否，除非已啟用驗證 |
 
-**RabbitMQ配置選項：**
+**[!DNL RabbitMQ]配置選項：**
 
 | 名稱 | 值 | 必要？ |
 |--- |--- |--- |
-| `--amqp-host` | 請勿使用 `--amqp` 選項，除非您已設定RabbitMQ安裝。 有關安裝和配置RabbitMQ的詳細資訊，請參閱RabbitMQ安裝。<br><br>安裝RabbitMQ的主機名。 | 否 |
-| `--amqp-port` | 用於連接到RabbitMQ的埠。 預設為5672。 | 否 |
-| `--amqp-user` | 連接到RabbitMQ的用戶名。 請勿使用預設使用者 `guest`. | 否 |
-| `--amqp-password` | 連接到RabbitMQ的密碼。 請勿使用預設密碼 `guest`. | 否 |
-| `--amqp-virtualhost` | 用於連接到RabbitMQ的虛擬主機。 預設為 `/`. | 否 |
-| `--amqp-ssl` | 指示是否連接到RabbitMQ。 預設為 `false`. 有關為RabbitMQ設定SSL的資訊，請參閱RabbitMQ。 | 否 |
+| `--amqp-host` | 請勿使用 `--amqp` 選項，除非您已設定 [!DNL RabbitMQ]. 請參閱 [!DNL RabbitMQ] 安裝以取得安裝和設定的詳細資訊 [!DNL RabbitMQ].<br><br>其中的主機名 [!DNL RabbitMQ] 已安裝。 | 否 |
+| `--amqp-port` | 用於連接到的埠 [!DNL RabbitMQ]. 預設為5672。 | 否 |
+| `--amqp-user` | 用於連接到的用戶名 [!DNL RabbitMQ]. 請勿使用預設使用者 `guest`. | 否 |
+| `--amqp-password` | 用於連接到 [!DNL RabbitMQ]. 請勿使用預設密碼 `guest`. | 否 |
+| `--amqp-virtualhost` | 用於連接到的虛擬主機 [!DNL RabbitMQ]. 預設為 `/`. | 否 |
+| `--amqp-ssl` | 指示是否連接到 [!DNL RabbitMQ]. 預設為 `false`. 請參閱 [!DNL RabbitMQ] 以取得設定 [!DNL RabbitMQ]. | 否 |
 | `--consumers-wait-for-messages` | 消費者是否應等待來自佇列的訊息？ 1 — 是，0 — 否 | 否 |
 
 **鎖定配置選項：**

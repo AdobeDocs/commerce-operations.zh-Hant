@@ -1,115 +1,115 @@
 ---
-title: 「 [!UICONTROL RabbitMQ] 頁籤
-description: 瞭解 [!UICONTROL RabbitMQ] 頁籤 [!DNL Observation for Adobe Commerce]。
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+title: 「 [!UICONTROL [!DNL RabbitMQ]] tab
+description: 了解 [!UICONTROL [!DNL RabbitMQ]]標籤 [!DNL Observation for Adobe Commerce].
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# 的 [!UICONTROL RabbitMQ] 頁籤
+# 此 [!UICONTROL [!DNL RabbitMQ]] 標籤
 
-的 **[!UICONTROL RabbitMQ]** 頁籤中的資訊 [!DNL RabbitMQ] 信號。
+此 **[!UICONTROL [!DNL RabbitMQ]]** 頁簽中的 [!DNL RabbitMQ] 訊號。
 
-## [!UICONTROL RabbitMQ Infrastructure events]
+## [!UICONTROL [!DNL RabbitMQ] Infrastructure events]
 
-![RabbitMQ基礎架構事件](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
+![[!DNL RabbitMQ] 基礎架構事件](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
 
-的 **[!UICONTROL RabbitMQ Infrastructure events]** 框架顯示涉及 [!DNL RabbitMQ] 所選時間範圍內發生的錯誤：
+此 **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** 框架顯示涉及的基礎架構事件 [!DNL RabbitMQ] 在所選時間範圍內發生的事件：
 
-* %響應 [錯誤] 用於節點 [rabbit@host1]:意外的http響應（來自%&#39;）作為「unexped_resp_node1」
-* 「%響應」 [錯誤] 用於節點 [rabbit@host2]:意外的http響應（來自%&#39;）作為「unexped_resp_node2」
-* 「%響應」 [錯誤] 用於節點 [rabbit@host3]:意外的http響應（來自%&#39;）作為「unexped_resp_node3」
-* 「%響應」 [錯誤] 用於節點 [rabbit@host3]:獲取「http://localhost:15672/api/healthchecks/node/rabbit@host3」：context deadline exceed%&#39;)作為「node3_timeout_exceeded」
-* 「%響應」 [錯誤] 用於節點 [rabbit@host1]:獲取「http://localhost:15672/api/healthchecks/node/rabbit@host1」：context deadline exceed%)，作為「node1_timeout_exceeded」
-* 「%響應」 [錯誤] 用於節點 [rabbit@host2]:獲取「http://localhost:15672/api/healthchecks/node/rabbit@host2」：context deadline exceed%&#39;)，作為&quot;node2_timeout_exceeded&quot;
+* %響應 [錯誤] 適用於節點 [rabbit@host1]:意外的http響應（來自%&#39;）作為&#39;意外的resp_node1&#39;
+* 「%Response [錯誤] 適用於節點 [rabbit@host2]:意外的http響應（來自%&#39;）作為&#39;意外的resp_node2&#39;
+* 「%Response [錯誤] 適用於節點 [rabbit@host3]:意外的http響應（來自%&#39;）作為&#39;意外的resp_node3&#39;
+* 「%Response [錯誤] 適用於節點 [rabbit@host3]:獲取&quot;http://localhost:15672/api/healthchecks/node/rabbit@host3&quot;:內容截止時間超過%&#39;)，作為「node3_timeout_exceeded」
+* 「%Response [錯誤] 適用於節點 [rabbit@host1]:獲取&quot;http://localhost:15672/api/healthchecks/node/rabbit@host1&quot;:內容截止期限超過%」)，作為「node1_timeout_exceeded」
+* 「%Response [錯誤] 適用於節點 [rabbit@host2]:獲取&quot;http://localhost:15672/api/healthchecks/node/rabbit@host2&quot;:內容截止時間超過%&#39;)，作為「node2_timeout_exceeded」
 * 「%401未授權%」)作為「401_unauth」
 * 「%401未授權%」)作為「401_unauth」
-* %服務已重新啟動：rbitmq-server%&#39;)作為「rmq_service_restart」
-* 「%響應」 [失敗] 用於節點 [rabbit@host1]:nodedown%」)作為「rmq_node1_down」
-* 「%響應」 [失敗] 用於節點 [rabbit@host2]:nodedown%」)作為「rmq_node2_down」
-* 「%響應」 [失敗] 用於節點 [rabbit@host2]:nodedown%」)作為「rmq_node2_down」
-* 「%實體已修改：exchange/bindings.destination%&#39;)作為「rmq_entity_modified」
-* 「%實體已修改：exchange/bindings.destination%&#39;)作為「rmq_entity_modified」
-* 「%實體已修改：queue/exclusive%」)作為「rmq_entity_created_q_exclusive」%已修改實體：queue/auto_delete%&#39;)作為「rmq_entity_q_delete」
-* 「%實體已修改：queue/durable%」)作為「rmq_entity_modified_q_durable」
-* 「%實體已修改：版本/管理%」)，作為「rmq_entity_modified_ver_mgt」
-* 「%實體已修改：版本/管理%」)，作為「rmq_entity_modified_ver_mgt」
+* %服務重新啟動：rabbitmq-server%&#39;)作為&#39;rmq_service_restart&#39;
+* 「%Response [失敗] 適用於節點 [rabbit@host1]:nodedown%&#39;)作為&#39;rmq_node1_down&#39;
+* 「%Response [失敗] 適用於節點 [rabbit@host2]:nodedown%&#39;)作為&#39;rmq_node2_down&#39;
+* 「%Response [失敗] 適用於節點 [rabbit@host2]:nodedown%&#39;)作為&#39;rmq_node2_down&#39;
+* 已修改「%實體：exchange/bindings.destination%&#39;)作為&#39;rmq_entity_modified&#39;
+* 已修改「%實體：exchange/bindings.destination%&#39;)作為&#39;rmq_entity_modified&#39;
+* 已修改「%實體：queue/exclusive%&#39;)作為&#39;rmq_entity_created_q_exclusive&quot;%已修改實體：queue/auto_delete%&#39;)作為&#39;rmq_entity_q_delete&#39;
+* 已修改「%實體：queue/fulired%&#39;)作為&#39;rmq_entity_modified_q_fulired&#39;
+* 已修改「%實體：version/management%&#39;)作為&#39;rmq_entity_modified_ver_mgt&#39;
+* 已修改「%實體：version/management%&#39;)作為&#39;rmq_entity_modified_ver_mgt&#39;
 
-## [!UICONTROL RabbitMQ service start/stop signals]
+## [!UICONTROL [!DNL RabbitMQ] service start/stop signals]
 
-![RabbitMQ服務啟動/停止信號](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
+![[!DNL RabbitMQ] 服務啟動/停止信號](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
 
-此框顯示 [!DNL RabbitMQ] 在所選時間段內發生的服務啟動/停止信號：
+此框顯示 [!DNL RabbitMQ] 在所選時間範圍內發生的服務啟動/停止信號：
 
-* 「%RabbitMQ」被要求停止……%&#39;)作為「rabbitmq_stop」
-* 「%正在啟動RabbitMQ%」)，作為「rabbitmq_start」
+* &#39;%[!DNL RabbitMQ] 被要求停止……%&#39;)作為&#39;rabbitmq_stop&#39;
+* 「%正在啟動 [!DNL RabbitMQ]%&#39;)作為&#39;rabbitmq_start&#39;
 
-## [!UICONTROL RabbitMQ errors]
+## [!UICONTROL [!DNL RabbitMQ] errors]
 
-![RabbitMQ錯誤](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
+![[!DNL RabbitMQ] 錯誤](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
 
-此框顯示 [!DNL RabbitMQ] 在選定時間段內發生的錯誤：
+此框顯示 [!DNL RabbitMQ] 在所選時間範圍內發生的錯誤：
 
-* 「%exit，原因為{case_clause,timeout}和stacktrace {rabbit_mgmt_wm_healthchecks%&#39;}」為「exit_timeout」
+* 「%exit，原因為{case_clause,timeout}和stacktrace {rabbit_mgmt_wm_healthchecks%&#39;}，為「exit_timeout」
 * 「%client意外關閉TCP連接%」)作為「client_closed_tcp_conn」
-* 「%at undefed exit（在上下文shutdown_error%中由於原因關閉）」)為「undf_exit
-* 「%從不允許的節點%」嘗試連接)作為「disalled_node」
+* 「%在未定義的退出時，上下文shutdown_error%」中原因關閉)為「undef_exit」
+* 「%從不允許的節點%」嘗試連接)為「不允許的節點」
 * 「%closing AMQP connection%」)作為「rmq_err_amqp_conn」
 
-## [!UICONTROL RabbitMQ node status]
+## [!UICONTROL [!DNL RabbitMQ] node status]
 
-![RabbitMQ節點狀態](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
+![[!DNL RabbitMQ] 節點狀態](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
-* 「節點rabbit@host1上的%rabbitdown%」)作為「rmq_node1_down」
-* 「節點rabbit@host2上的%rabbitdown%」)作為「rmq_node2_down」
-* 「節點rabbit@host3上的%rabbitdown%」)作為「rmq_node3_down」
-* 「節點rabbit@host1上的%rabbit up%」)作為「rmq_node1_up」
-* 「節點rabbit@host2上的%rabbit up%」)作為「rmq_node2_up」
-* 「節點rabbit@host3上的%rabbit up%」)作為「rmq_node3_up」
+* 「%rabbit on node rabbit@host1 down%」)作為「rmq_node1_down」
+* 「%rabbit on node rabbit@host2 down%」)作為「rmq_node2_down」
+* 「%rabbit on node rabbit@host3 down%」)作為「rmq_node3_down」
+* 「%rabbit on node rabbit@host1 up%」)作為「rmq_node1_up」
+* 「%rabbit on node rabbit@host2 up%」)作為「rmq_node2_up」
+* 「%rabbit on node rabbit@host3 up%」)作為「rmq_node3_up」
 
-## [!UICONTROL RabbitMQ Message High-Level Summary status by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]
 
-![按隊列列出的RabbitMQ消息高級摘要狀態](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
+![[!DNL RabbitMQ] 按隊列的消息高級摘要狀態](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
 
-的 **[!UICONTROL RabbitMQ Message High-Level Summary status by Queue]** 圖形顯示 [!DNL RabbitMQ] 為所選時間段排隊。
+此 **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** 圖表顯示已發佈訊息的數量，依 [!DNL RabbitMQ] 排入所選時間範圍。
 
-## [!UICONTROL RabbitMQ Message Detail Summary]
+## [!UICONTROL [!DNL RabbitMQ] Message Detail Summary]
 
-![RabbitMQ消息詳細資訊摘要](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
+![[!DNL RabbitMQ] 消息詳細資訊摘要](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
 
-* 「%report.ERROR:Cron Job consulers_runner有錯誤：NOT_FOUND - no queue%&#39;)作為「queue_err」
-* 「%report.ERROR:Cron Job consulers_runner有錯誤：NOT_FOUND - no queue%&#39;)作為「queue_err」
-* 「%auth」)作為「auth」
-* 「%closing AMQP connection%」)為「close_conn」
+* 「%report.ERROR:Cron Job consumers_runner出現錯誤：NOT_FOUND - no queue%&#39;)作為「queue_err」
+* 「%report.ERROR:Cron Job consumers_runner出現錯誤：NOT_FOUND - no queue%&#39;)作為「queue_err」
+* 「%已驗證且已授予對vhost%的訪問」)作為「auth」
+* 「%close_conn」)
 
-## [!UICONTROL RabbitMQ Queue Consumption MB]
+## [!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]
 
-![RabbitMQ隊列消耗MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
+![[!DNL RabbitMQ] 隊列消耗MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
 
-的 **[!UICONTROL RabbitMQ Queue Consumption MB]** 圖形顯示每個佔用的位元組數 [!DNL RabbitMQ] 在所選時間段內排隊。
+此 **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** 圖表顯示每個 [!DNL RabbitMQ] 排入佇列。
 
-## [!UICONTROL RabbitMQ Published Messages by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
-![按隊列發佈的RabbitMQ消息](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
+![[!DNL RabbitMQ] 按隊列發佈的消息](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
 
-的 **[!UICONTROL RabbitMQ Published Messages by Queue]** 圖形顯示每個佔用的位元組數 [!DNL RabbitMQ] 在所選時間段內排隊。
+此 **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** 圖表顯示每個 [!DNL RabbitMQ] 排入佇列。
 
-## [!UICONTROL RabbitMQ Published Message Throughput by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
-![RabbitMQ按隊列發佈的消息吞吐量](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
+![[!DNL RabbitMQ] 按隊列發佈的消息吞吐量](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
 
-的 **[!UICONTROL RabbitMQ Published Message Throughput by Queue]** 圖形顯示每秒發佈的平均消息數 [!DNL RabbitMQ] 在所選時間段內排隊。
+此 **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** 圖形顯示每秒平均發佈的訊息數 [!DNL RabbitMQ] 排入佇列。
 
-## [!UICONTROL RabbitMQ Total Message Throughput by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
-![按隊列列出的RabbitMQ消息總吞吐量](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
+![[!DNL RabbitMQ] 按隊列列出的總消息吞吐量](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
 
-的 **[!UICONTROL RabbitMQ Total Message Throughput by Queue]** 圖形顯示每秒的平均消息總數 [!DNL RabbitMQ] 在所選時間段內排隊。
+此 **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** 圖表顯示每秒平均報文總數，依 [!DNL RabbitMQ] 排入佇列。
 
-## [!UICONTROL RabbitMQ Consumers by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
-![按隊列列出的RabbitMQ使用者](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
+![[!DNL RabbitMQ] 依佇列的消費者](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
 
-的 **[!UICONTROL RabbitMQ Consumers by Queue]** 圖表顯示每個用戶的平均總數 [!DNL RabbitMQ] 在所選時間段內排隊。
+此 **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** 圖表顯示每個 [!DNL RabbitMQ] 排入佇列。

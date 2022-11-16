@@ -1,9 +1,9 @@
 ---
 title: 配置應用程式
 description: 了解Adobe Commerce和Magento Open Source內部部署所需的安裝後設定。
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Adobe Commerce和Magento Open Source需要電子郵件伺服器。 我們不建�
 
 自2.3.0版起，Adobe Commerce和Magento Open Source包含訊息佇列功能。 在舊版中，僅適用於Adobe Commerce。
 
-* [RabbitMQ](../../configuration/queues/message-queue-framework.md)
+* [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 
 ## 僅限Adobe Commerce的設定
 
