@@ -4,9 +4,9 @@ description: 了解Adobe Commerce專案規劃階段的實作最佳實務。
 role: Developer, Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 78308f9cb3d2ebe8af41c42f9bb146409367ab6c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -67,13 +67,14 @@ ht-degree: 0%
 
 ## **銷售與行銷**
 
-- [產品購物車限制最佳實務&#x200B;](product-cart.md)
+- [產品購物車限制最佳實務](product-cart.md)
 - [設定促銷活動的最佳實務](product-cart-promotions.md)
 
 ## **專案範圍**
 
 - [合作夥伴升級](partner-escalation.md)
+- [支付儲存處理](payment-processing-storage.md)
 
 ## **購買擴充功能**
 
-- [在Adobe Commerce中使用協力廠商擴充功能的最佳作&#x200B;法](extensions.md)
+- [在Adobe Commerce中使用協力廠商擴充功能的最佳作法](extensions.md)
