@@ -1,9 +1,9 @@
 ---
 title: 實作開發階段
 description: 了解Adobe Commerce專案開發階段的實作最佳實務。
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: c717d45525c7893fa2c38183326534e0fa4ee0c6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,4 @@ ht-degree: 0%
 - [最佳化CSS和JS檔案](optimize-css-js-files.md)
 - [最佳化回應更快的網站影像](image-optimization.md)
 - [疑難排解Adobe Commerce雲端基礎架構最佳作&#x200B;法](troubleshooting.md)
+- [了解何時以及如何修改資料庫表&#x200B;](modifying-core-and-third-party-tables.md)
