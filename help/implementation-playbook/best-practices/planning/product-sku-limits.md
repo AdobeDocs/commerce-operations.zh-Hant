@@ -4,7 +4,7 @@ description: 了解設定產品存貨保存件(SKU)以發揮網站效能的最�
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 3a187ae8c066e56df0d7f4981d26ffb934f64576
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # 產品SKU配置最佳實務
 
-為了最大限度地提高效能，建議的有效產品庫存保持件數(SKU)的最大值為1000萬。 此有效產品最大值的計算方式為：
+為了最大限度地提高效能，建議的有效產品庫存保持件數(SKU)的最大值為2.42億。 此有效產品最大值的計算方式為：
 
-`Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups`
+```text
+Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups
+```
 
 超過最大有效SKU數量會減慢產品資料擷取速度，並增加完成管理作業的時間。
 
