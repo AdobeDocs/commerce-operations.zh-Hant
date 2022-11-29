@@ -1,9 +1,9 @@
 ---
 title: 發行說明
 description: 了解適用於Adobe Commerce的修補程式及其解決的問題。
-source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
+source-git-commit: aad242e3a458e40fb1977399649ffe3e31696cd3
 workflow-type: tm+mt
-source-wordcount: '9752'
+source-wordcount: '10066'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,22 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需有關 [!DNL quality patches] 由社群建立以供Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.24 {#v1-1-24}
+
+* **ACSD-45168** (適用於Adobe Commerce和Magento Open Source>=2.4.2 &lt;2.4.6) — 修正產品若未產生SEO友好URL的問題 *url_key* 在商店視圖級別上覆蓋的屬性。
+* **ACSD-46865** (適用於Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.6) — 修正啟用非同步索引時未填入「發運」和「貸項通知單」格線的問題。
+* **ACSD-47004** (適用於Adobe Commerce和Magento Open Source>=2.4.2 &lt;2.4.6) — 修正沒有VAT ID的帳單地址未套用VAT的問題。
+* **ACSD-47803** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正可設定產品缺貨色票顯示為可用的問題。
+* **ACSD-47137** (適用於Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.6) — 改善酒吧/媒體資料夾非常大時的影像庫載入速度。
+* **ACSD-46770** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正即使在 *電子郵件訂單確認* 未勾選。
+* **ACSD-47955** (適用於Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.6) — 修正GraphQL無法正確顯示購物車折扣的問題。
+* **ACSD-46617** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正 *繼續結帳* 即使小計大於配置的，按鈕也會呈灰色 *最低訂購量*.
+* **ACSD-47079** (針對Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.5) — 修正當子產品庫存狀態透過REST APIPOST/rest/V1/inventory/source-items變更時，複合產品（套件、分組和可設定）庫存狀態未更新的問題。
+* **ACSD-47336** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正 *出了點問題。* 在商務管理員中關閉通知時發生錯誤。
+* **ACSD-47559** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正「預覽電子郵件範本」區域未完全顯示的問題。
+* **ACSD-47920** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.6) — 修正即使在 *允許來賓結帳* 關閉。
+* 替換的修補程式：MDVA-39305、MDVA-42855。
 
 ## v1.1.23 {#v1-1-23}
 
@@ -465,7 +481,7 @@ ht-degree: 0%
 * **MDVA-31236** (*適用於Adobe Commerce >=2.4.0 &lt;2.4.2*) — 修正具有自訂資源存取權的管理員無法設定2FA或登入的問題。
 * **MDVA-30845** (*適用於Adobe Commerce >=2.3.5 &lt;2.3.7*) — 修正 *很抱歉，此訂單目前沒有報價* 無法連接到UPS XML/USPS/DHL時，將顯示錯誤，並且沒有其它運送方法可用。
 * **MDVA-32133** (*適用於Adobe Commerce >=2.4.0 &lt;2.4.1*) — 修正特定情況下，媒體集館未從頁面產生器載入的問題。
-* **MDVA-12304** (*適用於Adobe Commerce >=2.3.0 &lt;2.4.2*) — 將Cookie數上限從50增加至200。
+* **MDVA-12304** (*適用於Adobe Commerce >=2.3.0*) — 將Cookie數上限從50增加至200。
 * **MDVA-32632** (*適用於Adobe Commerce >=2.3.2 &lt;2.3.5*) — 修正訂單出現在付款系統，但未出現在Adobe Commerce的問題。
 * **MDVA-32449** (*適用於Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 || >=2.4.1 &lt;2.4.2，含B2B擴充功能*) — 修正訂單記錄載入緩慢或完全未載入的問題。
 * **MDVA-32739** (*適用於Adobe Commerce >=2.3.0 &lt;2.4.2*) — 修正啟用「非同步電子郵件通知」會傳送舊銷售電子郵件的問題。
