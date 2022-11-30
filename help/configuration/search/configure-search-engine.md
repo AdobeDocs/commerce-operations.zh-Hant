@@ -1,9 +1,9 @@
 ---
 title: 搜尋引擎設定
 description: 使用Adobe Commerce和Magento Open Source設定搜尋引擎。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 66681f06c15907a5d25e71005c27785f0745ed63
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 本節探討您必須選擇使用Adobe Commerce和Magento Open Source來測試Elasticsearch或OpenSearch的最低設定。 自2.4.4和2.4.3-p2版起，所有欄位都標示為 **Elasticsearch** 也適用於OpenSearch。
 
-如需設定搜尋引擎的其他詳細資訊，請參閱 [使用手冊](https://docs.magento.com/user-guide/catalog/search-elasticsearch.html).
+如需設定搜尋引擎的其他詳細資訊，請參閱 [使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## 從管理員設定您的搜尋引擎
 
