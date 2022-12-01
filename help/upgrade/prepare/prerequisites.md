@@ -1,9 +1,9 @@
 ---
 title: 完整必要條件
 description: 完成這些先決條件步驟，以準備您的Adobe Commerce或Magento Open Source專案以進行升級。
-source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
+source-git-commit: 6782498985d4fd6540b0481e2567499f74d04d97
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 0%
 
 - 更新所有軟體
 - 確認已安裝支援的搜尋引擎
+- 轉換資料庫表格格式
 - 設定開啟的檔案限制
 - 驗證cron作業是否正在運行
 - 設定 `DATA_CONVERTER_BATCH_SIZE`
@@ -30,7 +31,11 @@ ht-degree: 0%
 
 請確定您已更新環境中的所有系統需求和相依性。 參見PHP [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php)，和 [必需的PHP設定](../../installation/prerequisites/php-settings.md#php-settings).
 
-## 驗證是否安裝了支援的搜索引擎
+>[!NOTE]
+>
+>針對雲端基礎架構Pro專案上的Adobe Commerce，您必須建立 [支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 在測試和生產環境中安裝或更新服務的票證。 指出所需的服務變更，並包含您的更新 `.magento.app.yaml` 和 `services.yaml` 檔案和PHP版本。 雲端基礎架構團隊最多需要48小時來更新您的專案。 請參閱 [支援的軟體和服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
+
+## 確認已安裝支援的搜尋引擎
 
 Adobe Commerce和Magento Open Source需要安裝Elasticsearch或OpenSearch才能使用軟體。
 
@@ -63,13 +68,13 @@ Adobe Commerce和Magento Open Source需要安裝Elasticsearch或OpenSearch才能
 
 請參閱 [升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) 有關在部署到生產環境之前備份資料、檢測潛在遷移問題和測試升級的完整說明。 視您當前的Elasticsearch版本而定，可能需要或不需要完全群集重新啟動。
 
-Elasticsearch需要JDK 1.8或更高版本。 請參閱 [安裝Java軟體開發套件(JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) 來檢查安裝的JDK版本。
+Elasticsearch需要Java開發套件(JDK)1.8或更新版本。 請參閱 [安裝Java軟體開發套件(JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) 來檢查安裝的JDK版本。
 
 [配置Elasticsearch](../../configuration/search/configure-search-engine.md) 說明將Elasticsearch2更新為支援的版本後，您必須執行的工作。
 
 ### OpenSearch
 
-OpenSearch是Elasticsearch7.10.2的開放原始碼復本，此復本是Elasticsearch授權變更後的內容。 下列版本的Adobe Commerce和Magento Open Source引入了對OpenSearch的支援：
+OpenSearch是Elasticsearch7.10.2的開放原始碼復本，在Elasticsearch授權變更後進行。 下列版本的Adobe Commerce和Magento Open Source引入了對OpenSearch的支援：
 
 - 2.4.4
 - 2.4.3-p2
@@ -79,11 +84,15 @@ OpenSearch是Elasticsearch7.10.2的開放原始碼復本，此復本是Elasticse
 
 OpenSearch需要JDK 1.8或更高版本。 請參閱 [安裝Java軟體開發套件(JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) 來檢查安裝的JDK版本。
 
-[配置Magento以使用Elasticsearch](../../configuration/search/configure-search-engine.md) 說明變更搜尋引擎後必須執行的工作。
+[搜尋引擎設定](../../configuration/search/configure-search-engine.md) 說明變更搜尋引擎後必須執行的工作。
 
 ### 協力廠商擴充功能
 
 建議您連絡搜尋引擎廠商，判斷您的擴充功能是否與2.4完全相容。
+
+## 轉換資料庫表格格式
+
+必須從 `COMPACT` to `DYNAMIC`. 您還必須從 `MyISAM` to `InnoDB`. 請參閱 [最佳實務](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
 
 ## 設定開啟的檔案限制
 
@@ -118,7 +127,7 @@ Adobe建議設定開啟的檔案 [上限](https://ss64.com/bash/ulimit.html) 的
 
 ## 驗證cron作業是否正在運行
 
-UNIX任務調度程式 `cron` 對於日常Adobe Commerce和Magento Open Source作業至關重要。 它會排程重新索引、電子報、電子郵件、網站地圖等項目。 若干功能至少需要以檔案系統擁有者身分執行一個cron工作。
+UNIX任務調度程式 `cron` 對於日常Adobe Commerce和Magento Open Source作業至關重要。 它會排程重新索引、電子報、電子郵件和網站地圖等項目。 若干功能至少需要以檔案系統擁有者身分執行一個cron工作。
 
 要驗證cron作業是否已正確設定，請輸入以下命令作為檔案系統所有者以檢查crontab :
 
@@ -146,7 +155,7 @@ crontab -l
 
 ![](../../assets/upgrade-guide/system-messages.png)
 
-請參閱 [設定並執行cron](../../configuration/cli/configure-cron-jobs.md) 的下限。
+請參閱 [設定並執行cron](../../configuration/cli/configure-cron-jobs.md) 以取得更多資訊。
 
 ## 設定DATA_CONVERTER_BATCH_SIZE
 
@@ -177,7 +186,7 @@ Adobe Commerce 2.4包含安全性增強功能，需要將部分資料從序列�
 
    >[!NOTE]
    >
-   > `DATA_CONVERTER_BATCH_SIZE` 需要記憶體；請避免將其設為大值（約1GB），而不先進行測試。
+   > `DATA_CONVERTER_BATCH_SIZE` 需要記憶體；請避免先將其設為大值（約1 GB），不要先進行測試。
 
 1. 升級完成後，您可以取消設定變數：
 
@@ -191,7 +200,7 @@ Adobe Commerce 2.4包含安全性增強功能，需要將部分資料從序列�
 
 檔案系統中的目錄必須由 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md) 群組。
 
-要驗證檔案系統權限設定是否正確，請登錄到應用程式伺服器或使用托管提供程式的檔案管理器應用程式。
+要驗證檔案系統權限設定是否正確，請登錄到應用程式伺服器，或使用托管提供商的檔案管理器應用程式。
 
 例如，如果應用程式安裝在 `/var/www/html/magento2`:
 
