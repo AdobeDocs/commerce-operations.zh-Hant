@@ -1,9 +1,9 @@
 ---
 title: 雲基礎架構上的Commerce遠程儲存
 description: 請參閱如何在雲端基礎架構上為Adobe Commerce設定遠端儲存的指引。
-source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 如果您選擇將遠程儲存解決方案與雲基礎架構項目上的Adobe Commerce一起使用，請使用 [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) 指南 _快_ 說明檔案，確保Ambey Image Optimization可搭配AWS S3運作。
 
-為您的 [Amply憑據](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds). 在Pro專案上，使用SSH連線至您的伺服器，並從 `/mnt/shared/fastly_tokens.txt` 檔案。 測試和生產環境具有唯一的憑證。 您必須取得每個環境的憑證。
+為您的 [Amply憑據](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials). 在Pro專案上，使用SSH連線至您的伺服器，並從 `/mnt/shared/fastly_tokens.txt` 檔案。 測試和生產環境具有唯一的憑證。 您必須取得每個環境的憑證。
 
 繼續為雲項目設定遠程儲存，執行以下任務：
 

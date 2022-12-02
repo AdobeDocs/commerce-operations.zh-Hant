@@ -1,9 +1,9 @@
 ---
 title: 使用Nginx設定多個網站
 description: 請依照本教學課程，使用Nginx設定多個網站。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
    在托管環境中部署多個網站可能需要執行其他工作；如需詳細資訊，請洽詢您的托管提供者。
 
-   在雲端基礎架構上設定Adobe Commerce時需要執行其他工作。 完成本主題中討論的任務後，請參閱 [設定多個網站或商店](https://devdocs.magento.com/cloud/project/project-multi-sites.html) 在 _Commerce Cloud指南_.
+   在雲端基礎架構上設定Adobe Commerce時需要執行其他工作。 完成本主題中討論的任務後，請參閱 [設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 在 _雲端基礎架構商務指南_.
 
 - 您在一個虛擬主機檔案中接受多個域，或為每個網站使用一個虛擬主機；虛擬主機配置檔案位於 `/etc/nginx/sites-available`.
 - 您使用 `nginx.conf.sample` 由Commerce提供，且僅包含本教學課程中討論的修改。
@@ -265,8 +265,8 @@ bin/magento cache:clean config full_page
 1. 以下格式添加靜態路由：
 
    ```conf
-   <ip address> french.mysite.mg
-   <ip address> german.mysite.mg
+   <ip-address> french.mysite.mg
+   <ip-address> german.mysite.mg
    ```
 
 1. 在瀏覽器中前往下列其中一個URL:
@@ -280,7 +280,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- 在托管環境中部署多個網站可能需要執行其他工作；如需詳細資訊，請洽詢您的托管提供者。
->- 在雲端基礎架構上設定Adobe Commerce需要執行其他工作；請參閱 [設定多個雲端網站或商店](https://devdocs.magento.com/cloud/project/project-multi-sites.html) 在 _Commerce Cloud指南_.
+>- 在雲端基礎架構上設定Adobe Commerce需要執行其他工作；請參閱 [設定多個雲端網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 在 _雲端基礎架構商務指南_.
 
 
 ### 疑難排解

@@ -1,9 +1,9 @@
 ---
 title: 管理索引器
 description: 請參閱如何檢視和管理商務索引器的範例。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->在切換索引器模式之前，建議您先將網站放置在 [維護](../../installation/tutorials/maintenance-mode.md) 模式和 [禁用cron作業](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). 這可確保您不會受到資料庫鎖定的影響。
+>在切換索引器模式之前，建議您先將網站放置在 [維護](../../installation/tutorials/maintenance-mode.md) 模式和 [禁用cron作業](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). 這可確保您不會受到資料庫鎖定的影響。
 
 要指定索引器配置：
 

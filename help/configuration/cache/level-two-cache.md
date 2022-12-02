@@ -1,9 +1,9 @@
 ---
 title: 二級快取配置
 description: 了解如何設定二級快取。
-source-git-commit: 2ef8b48fab84221c8e6423f41126bbee37706809
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->若是雲端基礎架構上的Adobe Commerce，您可以使用 [部署變數](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend) 用於二級快取配置。
+>若是雲端基礎架構上的Adobe Commerce，您可以使用 [部署變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) 用於二級快取配置。
 
 ## 設定範例
 

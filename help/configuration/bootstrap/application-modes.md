@@ -1,9 +1,9 @@
 ---
 title: 應用程式模式
 description: 根據您的需求，商務應用程式可以以不同模式運作。 查看可用應用程式模式的詳細清單。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->[Adobe Commerce雲基礎架構](https://devdocs.magento.com/cloud/bk-cloud.html) 僅支援生產和維護模式。
+>[Adobe Commerce雲基礎架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) 僅支援生產和維護模式。
 
 ## 預設模式
 
@@ -71,4 +71,4 @@ ht-degree: 0%
 
 您可以建立 [自訂維護頁面](../../upgrade/troubleshooting/maintenance-mode-options.md)、手動啟用和停用維護模式，以及設定維護模式，以允許來自授權IP位址的訪客正常檢視存放區。 請參閱 [啟用和禁用維護模式](../../installation/tutorials/maintenance-mode.md).
 
-如果您在雲端基礎架構上使用Commerce，則Commerce應用程式會在部署階段以維護模式執行。 部署成功完成後，商務應用程式會返回到以生產模式執行。 請參閱 [部署掛接](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) 在 _Commerce Cloud指南_.
+如果您在雲端基礎架構上使用Commerce，則Commerce應用程式會在部署階段以維護模式執行。 部署成功完成後，商務應用程式會返回到以生產模式執行。 請參閱 [部署掛接](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) 在 _雲端基礎架構商務指南_.
