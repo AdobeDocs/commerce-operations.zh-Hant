@@ -1,9 +1,9 @@
 ---
 title: 取得驗證金鑰
 description: 請依照下列步驟擷取憑證，以存取repo.magento.com上的Adobe Commerce和Magento Open Source撰寫器套件。
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: d209d3f7fde55f7495488f2cbeeebf21024875ed
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,15 @@ ht-degree: 0%
 
 此 `repo.magento.com` 存放庫是儲存Adobe Commerce和Magento Open Source及協力廠商撰寫器套件的位置，且需要驗證。 使用Commerce Marketplace帳戶產生一組32個字元 *驗證金鑰* 來存取存放庫。
 
->[!NOTE]
+若要取得Adobe Commerce和Magento Open Source套件的存取權限，您必須使用與已授與這些套件存取權之MAGEID相關聯的金鑰。 MAGEID通常是Adobe Commerce帳戶的主要連絡人，不一定是雲端基礎架構專案Adobe Commerce的專案擁有者。
+
+>[!TIP]
 >
->若要取得Adobe Commerce和Magento Open Source套件的存取權限，您必須使用與已授與這些套件存取權之MAGEID相關聯的金鑰。 MAGEID通常是 **帳單聯繫人** 在Adobe Commerce賬戶上，並且不一定 **專案擁有者** Adobe Commerce雲基礎架構專案。 如果您遇到 [錯誤](https://support.magento.com/hc/en-us/articles/360040296392)，則您可能沒有存取套件的授權，或存取權限已因帳戶上的未結髮票而過期。 連絡人 [Adobe Commerce支援](https://support.magento.com/hc/en-us) 來協助你的MAGEID。
+>如果您遇到 [錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)，則您可能沒有存取套件的授權，或存取權限已因您的帳戶上未結清的發票而到期。
+>
+>* 如果您是帳戶上的主要聯繫人，請確保帳戶上沒有列出未清發票。
+>* 如果主要聯繫人提供的密鑰無效且帳戶上沒有未清發票，請聯繫 [Adobe Commerce支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 以獲得使用主要聯繫人的MAGEID的幫助。
+
 
 要建立驗證密鑰，請執行以下操作：
 
