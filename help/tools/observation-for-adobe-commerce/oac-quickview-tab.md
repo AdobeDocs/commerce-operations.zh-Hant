@@ -1,32 +1,32 @@
 ---
-title: 「 [!UICONTROL QuickView] 頁籤
-description: QuickView頁籤將介紹您可能看到的不同警報類型，包括低磁碟空間和伺服器使用情況的警報類型。
-source-git-commit: 4d700c04be5cd1ec2dc1c43c627feeed93f0fbee
+title: 「 [!DNL QuickView] 標籤」
+description: 此 [!DNL QuickView] tab說明了您可能看到的不同警報類型，包括磁碟空間低和伺服器使用率低的警報類型。
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 
-# 的 [!UICONTROL QuickView] 頁籤
+# 此 [!DNL QuickView] 標籤
 
-的 **[!UICONTROL QuickView]** 頁籤說明了您可能看到的不同警報類型，包括低磁碟空間和伺服器使用率的警報類型。 此外，還描述了頁籤的框架。
+此 **[!UICONTROL QuickView]** tab說明了您可能看到的不同警報類型，包括磁碟空間低和伺服器使用率低的警報類型。 此外，還描述了頁簽的框架。
 
 ## [!UICONTROL Alerts]
 
 ![警報](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
 
-的 **[!UICONTROL Alerts]** frame顯示不同的警報，包括選定時間段內的磁碟空間警告和伺服器使用情況警報。 此框架查看資料庫表操作，包括 `SELECT`。 `DELETE`, `UPDATE` 跨選定的時間段。
+此 **[!UICONTROL Alerts]** frame會顯示不同的警報，包括磁碟空間警告和所選時間範圍內的伺服器使用情況警報。 此框架查看資料庫表操作，包括 `SELECT`, `DELETE`，和 `UPDATE` 的時間範圍。
 
 ## [!UICONTROL Upsize / Downsize by node]
 
 ![按節點升級/縮減](../../assets/tools/observation-for-adobe-commerce/quickview_upsize_by_node.jpg)
 
-的 **[!UICONTROL Upsize / Downsize by node]** 幀按節點顯示選定時間段的上限和下限。 這用於評估在所選時間段內群集大小是否發生變化。
+此 **[!UICONTROL Upsize / Downsize by node]** frame會依節點在選取的時間範圍內顯示大小上升和縮小。 這用於評估所選時段內的群集大小是否發生更改。
 
 ## [!UICONTROL CPU Utilization]
 
 ![CPU利用率](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
 
-的 **[!UICONTROL CPU Utilization]** frame按節點顯示所選時段的CPU利用率。
+此 **[!UICONTROL CPU Utilization]** frame會依節點顯示所選時間範圍內的CPU使用率。
