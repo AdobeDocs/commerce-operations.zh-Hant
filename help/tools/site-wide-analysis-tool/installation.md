@@ -1,9 +1,9 @@
 ---
 title: 安裝指南
 description: '"使用本指南安裝 [!DNL Site-Wide Analysis Tool] 」'
-source-git-commit: 5603d0feee6ec9dd5e8b534a0e64df274d7ab84d
+source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 0%
 代理程式需要 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 擴充功能，將安裝在您的系統上， [已配置](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 使用API金鑰。 若要確認已安裝擴充功能，請執行下列命令：
 
 ```bash
-bin/magento module:status Magento_ServicesConnector
+bin/magento module:status Magento_ServicesId
 ```
 
 如果您已安裝擴充功能，並使用不同服務的現有API金鑰進行設定，則您 **必須重新產生API金鑰** 並在Adobe Commerce管理員中更新代理程式。
@@ -102,19 +102,25 @@ bin/magento module:status Magento_ServicesConnector
 1. 將擴充功能新增至 `composer.json` 檔案並安裝。
 
    ```bash
-   composer require magento/services-connector:1.*
+   composer require magento/services-id
    ```
 
 1. 啟用擴充功能。
 
    ```bash
-   bin/magento module:enable Magento_ServicesConnector
+   bin/magento module:enable Magento_ServicesId
    ```
 
 1. 更新資料庫架構。
 
    ```bash
    bin/magento setup:upgrade
+   ```
+
+1. 清除快取。
+
+   ```bash
+   bin/magento cache:clean
    ```
 
 1. [設定API金鑰](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 將擴充功能連線至您的系統。
