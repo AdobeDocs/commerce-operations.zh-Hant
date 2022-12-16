@@ -1,9 +1,9 @@
 ---
 user-guide-title: 配置指南
 user-guide-description: 設定您的Adobe Commerce或Magento Open Source應用程式功能和服務。
-source-git-commit: b872a61f74818990833ba6b48e061fa1ca69b7cb
+source-git-commit: 31f9ff21a848e248d2c3da7cfb3cfc8bfd5785be
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,7 @@ ht-degree: 0%
    + [消息隊列框架](queues/message-queue-framework.md)
    + [管理消息隊列](queues/manage-message-queues.md)
    + [設定Amazon MQ](queues/aws-mq.md)
+   + [消費者](queues/consumers.md)
 + 多個網站 {#multi-sites}
    + [多個網站和檢視](multi-sites/ms-overview.md)
    + [資料庫實體增量ID](multi-sites/change-increment-id.md)
