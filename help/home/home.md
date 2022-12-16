@@ -2,9 +2,9 @@
 keywords: Adobe Commerce；首頁；熱門主題
 title: 首頁
 description: 瀏覽Adobe Commerce操作產品檔案的索引。
-source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
+source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '164'
 ht-degree: 2%
 
 ---
@@ -124,6 +124,7 @@ ht-degree: 2%
 了解新檔案和現有檔案的重要更新。
 
 | 變更 | 類型 |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
-| 移動 [安全性和合規性指南](../security-and-compliance/overview.md) 從 [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | 新增 |
-| 移動 [發行資訊指南](../release/release-notes/overview.md) 從 [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | 新增 |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| 新增新主題，說明 [消息隊列使用者](../configuration/queues/consumers.md). | 新增 |
+| 新增 [說明](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) 用於轉換雲端基礎架構專案上Adobe Commerce的資料庫表格儲存格式。 | 已更新 |
+| 新增 [說明](../configuration/remote-storage/cloud-support.md) 在雲端基礎架構專案上為Adobe Commerce啟用遠端儲存。 | 已更新 |
