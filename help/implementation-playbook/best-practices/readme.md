@@ -1,46 +1,50 @@
 ---
-source-git-commit: aaf174e5d895ebc60d4937b0214e23a559532942
+source-git-commit: 8013e6339d42108dbefbbafa5db7f9ffc5288c4f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 # 最佳實務：內容建立工作流程
 
-本檔案的用途是詳細說明使用者請求最佳實務內容時必須遵循的工作流程。
+本文檔描述了請求更改或添加 *[最佳實務](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html)* 內容 *Adobe Commerce實施行動手冊*.
 
 ## 誰可以建立請求？
 
-有兩組持份者可以提出請求，包括但不限於：
+Adobe接受內部和外部持份者的請求，包括但不限於下列群組中的個人：
 
-- 外部：合作夥伴
-- 內部：CTAG（客戶技術顧問小組）、客戶支援、客戶成功、工程團隊
+- Adobe合作夥伴
+- AdobeCTAG（客戶技術顧問小組）、客戶支援、客戶成功、工程團隊
 
 ## 如何建立請求？
 
-內部利益相關方必須在COMDOX項目中開啟Jira問題，以提出要求。 外部利害關係人必須在此存放庫中開啟GitHub問題，才能提出要求。 利害關係人可提出下列要求：
+**內部利益相關方** 可在COMDOX專案中開啟Jira問題以提交請求。 **外部利益相關方** 可以透過開啟 [GitHub問題](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) 儲存庫。
 
-- 要求新增內容
-- 請求對已發佈內容的編輯
-- 共用要發佈的專屬內容
+您可以提交下列類型的請求：
+
+- 新內容的構想
+- 已發佈內容的更新
+- 發佈利益相關方或社群提供的新內容
 
 ## 整體流程是什麼？
 
-內部利益相關方必須在商務檔案(COMDOX)專案中開啟Jira票證，並提供完整詳細資訊，包括完成範本。 這些詳細資訊可協助團隊排定內容請求的優先順序。
 
-團隊會定期監控積壓中的請求，以判斷優先順序，以及「實作行動手冊」是否是請求的最佳位置。 團隊可能會決定，請求的內容應新增至Experience League或Adobe Developer網站上的現有產品檔案，而非建立新主題。
+**建立Jira票證或問題** — 內部利益相關方在COMDOX項目中建立Jira票證。 外部利害關係人提交GitHub問題。 在Jira或 [GitHub問題](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) 協助團隊了解內容並排定請求的優先順序。
 
-如果請求中提供的資訊不足，團隊會要求請求者填寫所有對應欄位。 如果要求者在X天內未回應，則團隊會關閉要求。
-團隊驗證請求並排定請求的優先順序後，下一步就是建立主題。 這可能意味著將內容調整為.md格式，或從頭建立文章。
+**Adobe專案團隊會評估請求，並排定請求的優先順序** — 團隊定期監控請求，以確定優先順序並評估請求的更改，以便納入實施行動手冊最佳做法。 例如，團隊可能會判斷，請求的內容應新增至Experience League或Adobe Developer網站上的現有產品檔案，而非建立新的最佳實務主題。
 
-在建立主題期間會審核和編輯內容。 審核程式會透過GitHub提取請求進行。 所有內容都必須經過編輯審核。 技術審核是選填的，視內容而定。 如果不需要技術審查，該過程只會繼續進行編輯審查。 此程式需要數次反覆，直到內容獲核准為止。
+如果請求中提供的資訊不足，則團隊請求請求者提供的其他資訊。 如果要求者在14天內未回應，團隊會關閉要求。
 
-文章核准後，下一步就是與生產分支合併。 合併應由作者完成。 主題可以立即發佈，或等待下一個發佈作業執行，該作業會發佈所有已核准和已合併的主題。
+**建立或更新內容** — 內容建立工作會依照 [Adobe Experience League貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html). 視請求而定，工作可能包括將新內容轉換為Markdown、建立主題或更新現有主題。
 
-我們將在Experience League的「最佳實務」首頁上顯示新區段，協助使用者掌握最近發佈的主題，因此他們不需要瀏覽不同的頁面和入口網站，即可找到感興趣的相關資訊。 我們亦將推廣現有渠道的內容，例如行銷及內部通訊。
+**內容審核、核准和發佈** — 在主題建立或更新期間，使用 [GitHub提取請求](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=en#pull-requests). 所有內容都必須經過編輯審核。 技術審核是選填的，視內容而定。 如果不需要技術審查，該過程只會繼續進行編輯審查。 此程式需要數次反覆，直到內容獲核准為止。
+
+文章核准後，提取請求即可合併至生產分支。 合併應由作者完成。 合併主題後，可使用手動程式立即發佈至生產環境，或在下次發佈工作執行時自動發佈。 發佈工作通常每兩小時執行一次。
+
+**新內容通知**-Adobe將提供 *新增功能* 區段 [最佳實務概觀](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) 主題，讓使用者了解最近發佈或更新的主題。 Adobe也會使用現有的管道（例如行銷和內部通訊）來宣傳新的最佳實務內容。
 
 ## 積壓和看板板
 
-為避免重複，已建立並排定優先順序的請求應顯示在積壓工作中。 鼓勵用戶參與Jira的投票系統，以支援他們認為必要或相關的請求。 這也將是團隊預期從利害關係方獲得何種內容類型的良好指標。 待定優先順序和審核的請求將顯示在積壓中，直到它們移到看板板中的活動通道。
+為避免重複，已建立和排定優先順序的請求將在COMDOX項目的Jira積壓中顯示， [GitHub問題專案](https://github.com/orgs/AdobeDocs/projects/6/views/1). 鼓勵內部利益攸關者與吉拉的投票系統接觸，以支援他們認為必要或相關的請求。 投票也有助於最佳實務專案團隊了解利害關係人期望和重視的內容類型。 待定優先順序和審核的請求會顯示在積壓中，直到它們移至看板板中的活動通道。
 
 看板板可由內部用戶訪問，以查看（和/或監視）正在處理的內容和已完成的進度。 此展示板上只會顯示作用中的請求。
