@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 要求」'
 description: 驗證您的系統是否滿足運行 [!DNL Upgrade Compatibility Tool] 填入Adobe Commerce專案的命令列介面。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 |----------------|-----------------|
 | PHP版本 | >= 7.3 |
 | 撰寫器 | 無已知要求。 |
-| Node.js | Node.js版本 `^12.22.0`, `^14.17.0`，或 `>=16.0.0` (請參閱 [安裝Node.js](https://nodejs.dev/learn/how-to-install-nodejs)) |
+| Node.js | Node.js版本 `^12.22.0`, `^14.17.0`，或 `>=16.0.0` (請參閱 [安裝Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs/)) |
 | 記憶體限制 | 至少2GB RAM。 |
 
 [!DNL Upgrade Compatibility Tool] requiles [PCNTL](https://www.php.net/manual/en/book.pcntl.php) 和執行的其他PHP擴充功能。 使用 `composer check-platform-reqs` 命令：
