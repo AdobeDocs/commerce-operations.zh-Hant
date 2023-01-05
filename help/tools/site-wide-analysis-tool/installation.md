@@ -1,9 +1,9 @@
 ---
 title: 安裝指南
 description: '"使用本指南安裝 [!DNL Site-Wide Analysis Tool] 」'
-source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
+source-git-commit: 0c27d4cf5854161e14a482912941cd144ca654f7
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
@@ -381,27 +381,27 @@ bin/magento module:status Magento_ServicesId
    rm -rf swat-agent
    ```
 
-## 覆寫設定檔案
+## 疑難排解
 
-您可以使用環境變數來覆寫安裝期間在設定檔案中指定的值。 這樣可保留與舊版代理的回溯相容性。 如需建議的值，請參閱下表：
+### 未正確解析訪問密鑰
 
-| 屬性 | 說明 |
-| --- | --- |
-| `SWAT_AGENT_APP_NAME` | 安裝代理程式時提供的公司或站點名稱 |
-| `SWAT_AGENT_APPLICATION_PHP_PATH` | PHP CLI解釋器的路徑(通常 `/usr/bin/php`) |
-| `SWAT_AGENT_APPLICATION_MAGENTO_PATH` | 安裝Adobe Commerce應用程式的根目錄(通常 `/var/www/html`) |
-| `SWAT_AGENT_APPLICATION_DB_USER` | Adobe Commerce安裝的資料庫使用者 |
-| `SWAT_AGENT_APPLICATION_DB_PASSWORD` | 為Adobe Commerce安裝指定用戶的資料庫密碼 |
-| `SWAT_AGENT_APPLICATION_DB_HOST` | Adobe Commerce安裝的資料庫主機 |
-| `SWAT_AGENT_APPLICATION_DB_NAME` | Adobe Commerce安裝的資料庫名稱 |
-| `SWAT_AGENT_APPLICATION_DB_PORT` | Adobe Commerce安裝的資料庫埠(通常 `3306`) |
-| `SWAT_AGENT_APPLICATION_DB_TABLE_PREFIX` | Adobe Commerce安裝的表格首碼(預設值： `empty`) |
-| `SWAT_AGENT_APPLICATION_DB_REPLICATED` | 您的Adobe Commerce安裝是否有次要資料庫實例(通常 `false`) |
-| `SWAT_AGENT_APPLICATION_CHECK_REGISTRY_PATH` | 代理的臨時目錄(通常 `/usr/local/swat-agent/tmp`) |
-| `SWAT_AGENT_RUN_CHECKS_ON_START` | 收集第一次執行的資料(通常 `1`) |
-| `SWAT_AGENT_LOG_LEVEL` | 根據嚴重性(通常為 `error`) |
-| `SWAT_AGENT_ENABLE_AUTO_UPGRADE` | 啟用自動升級(升級後需要重新啟動；如果禁用了選項，代理不檢查升級； `true` 或 `false`) |
-| `SWAT_AGENT_IS_SANDBOX=false` | 啟用沙箱模式以在測試環境中使用代理 |
+如果未正確剖析存取金鑰，您可能會看到下列錯誤：
+
+```terminal
+ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
+FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+```
+
+若要解決此錯誤，請嘗試下列步驟：
+
+1. 執行 [指令碼安裝](#scripted)、儲存輸出，並檢閱輸出中是否有錯誤。
+1. 檢閱產生的 `config.yaml` 檔案，並驗證Commerce實例和PHP的路徑是否正確。
+1. 請確定執行排程器的使用者位於 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md) Unix組或是與檔案系統所有者相同的用戶。
+1. 請確定 [商務服務連接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 已正確安裝金鑰，並嘗試更新金鑰，將擴充功能連線至您的系統。
+1. [解除安裝](#uninstall) 更新密鑰，然後使用 [安裝指令碼](#scripted).
+1. 執行排程器，查看您是否仍收到相同錯誤。
+1. 如果您仍收到相同錯誤，請在 `config.yaml` 調試和開啟支援票證。
+
 
 >[!INFO]
 >
