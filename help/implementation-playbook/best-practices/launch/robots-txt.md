@@ -4,7 +4,7 @@ description: 了解如何將Adobe Commerce網站的相關指示傳遞至Web編�
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -107,11 +107,11 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果你需要幫助， [提交Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.md#submit-ticket).
+>如果你需要幫助， [提交Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## 其他資訊
 
 - [了解網站、商店和商店的檢視](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [新增網站](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
 - [使用Abmetly來封鎖您Adobe Commerce網站的惡意流量](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
-- [robots.txt在雲端基礎架構2.3.x上的Adobe Commerce中出現404錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.md)
+- [robots.txt在雲端基礎架構2.3.x上的Adobe Commerce中出現404錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

@@ -4,9 +4,9 @@ description: 了解如何配置資料庫和應用程式設定，以在雲端基�
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ Adobe建議您一律在雲端基礎架構專案上為Adobe Commerce設定Elastic
 
 ## 其他資訊
 
-- [InnoDB和MYISAM之間的主要區別是什麼](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
+- [MySQL儲存引擎](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Adobe Commerce 2.3.5 MariaDB的升級必要條件](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [解決資料庫效能問題的最佳實務](../maintenance/resolve-database-performance-issues.md)

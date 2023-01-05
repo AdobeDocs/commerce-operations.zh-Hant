@@ -1,9 +1,9 @@
 ---
 title: 實施維護階段
 description: 了解Adobe Commerce專案維護階段的實作最佳實務。
-source-git-commit: 46c06a74f221877391196894abc1f5f217c5b073
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,7 @@ ht-degree: 0%
 - [審計前期績效](frontend-performance.md)
 - [就緒，設定，維護](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [使用SWAT工具確保Adobe Commerce的安全性和可操作性](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - CTAG甲板
-- 新文物
-- 記錄檔
-- 磁碟空間
+- [使用New Relic和運行狀況通知來監控部署在雲基礎架構上的Adobe Commerce網站的效能、磁碟空間和日誌](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
 
 ## 資料庫管理
 
@@ -53,14 +51,15 @@ ht-degree: 0%
 - [如何重新索引](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [索引器的配置最佳實&#x200B;務](indexer-configuration.md)
 - [訂單處理的設定最佳實務](order-processing-configuration.md)
-- CTAG甲板
-- 針對促銷或假期期間計畫的流量增加量進行規劃調整 — CTAG資料集內容
+
+<!-- Asset not yet integrated from CTAG deck:
+- Plan upsizing for planned traffic increases during promotions or holidays -->
 
 ## 設定
 
 - [在生產網站上排程管理員更新](scheduling-admin-updates-in-production.md)
 
-- 規劃高峰期和促銷期（調整） — CTAG甲板內容
+<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
 
 ## 錯誤修正
 

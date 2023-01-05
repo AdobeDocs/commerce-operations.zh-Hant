@@ -1,9 +1,9 @@
 ---
 title: 實作開發階段
 description: 了解Adobe Commerce專案開發階段的實作最佳實務。
-source-git-commit: c717d45525c7893fa2c38183326534e0fa4ee0c6
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -27,18 +27,15 @@ ht-degree: 0%
 
 ### 程式碼審核、合併及測試
 
-- 准則和標準
-
 <!--Assets not yet integrated
+- Guidelines and standards
   - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
   - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
   - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
 -->
 - [最佳化CSS和JS檔案](optimize-css-js-files.md)
 - [私人內容區塊最佳作法](private-content-block-configuration.md)
-
-- 新增自訂程式碼
-   - [擴充功能開發人員的最佳實務](https://developer.adobe.com/commerce/php/best-practices/)
+- [擴充功能開發人員的最佳實務](https://developer.adobe.com/commerce/php/best-practices/)
 
 <!--Assets not yet integrated
 
@@ -61,13 +58,13 @@ ht-degree: 0%
 
 ### 本機和中繼環境設定
 
-- [雲端基礎架構的開發工作流程](https://devdocs.magento.com/cloud/architecture/pro-develop-deploy-workflow.html)  — 從雲端指南新增
+- [雲端基礎架構的開發工作流程](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
 
 ## 代碼，合併，測試
 
-- [建置和部署的最佳實務](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices)
+- [建置和部署的最佳實務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
 - [靜態內容部署 — 雲](static-content-deployment.md)
 - [最佳化CSS和JS檔案](optimize-css-js-files.md)
 - [最佳化回應更快的網站影像](image-optimization.md)
-- [疑難排解Adobe Commerce雲端基礎架構最佳作&#x200B;法](troubleshooting.md)
-- [了解何時以及如何修改資料庫表&#x200B;](modifying-core-and-third-party-tables.md)
+- [疑難排解Adobe Commerce雲端基礎架構最佳實務](troubleshooting.md)
+- [了解何時以及如何修改資料庫表](modifying-core-and-third-party-tables.md)

@@ -4,9 +4,9 @@ description: 遵循索引器配置的最佳做法，維護和優化站點效能�
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ Adobe Commerce有兩種索引器模式： [!UICONTROL Update on Save] （預設�
 - 查看索引配置。
 - 將索引器設定為 _[!UICONTROL Update on Schedule]_適用於大型網站，以及經常更新和大量流量的網站。 請參閱 [索引管理](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 - 追隨 [效能最佳實務](../../../performance/configuration.md) 用於管理索引。
+
+>[!IMPORTANT]
+>
+>此 [!DNL Customer Grid] 只能使用重新編列索引 [!UICONTROL Update on Save] 選項。 此索引不支援 `Update by Schedule` 選項。
 
 ## 其他資訊
 

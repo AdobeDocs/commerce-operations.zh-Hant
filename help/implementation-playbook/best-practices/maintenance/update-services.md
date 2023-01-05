@@ -4,9 +4,9 @@ description: 了解如何讓Adobe Commerce在雲端基礎架構技術堆疊上�
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Adobe Commerce on cloud infrastructure 2.4.x及更新版本
 
 入門計畫的客戶可以自助升級服務。 請參閱 [更改服務版本](https://devdocs.magento.com/cloud/project/services.html#change-service-version) 以取得如何執行此動作的詳細資訊。
 
-專業計畫的客戶只能在其 [整合環境](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md). 若是生產上的服務升級，您必須 [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 請求升級。
+專業計畫的客戶只能在其 [整合環境](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). 若是生產上的服務升級，您必須 [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 請求升級。
 
 >[!WARNING]
 >
