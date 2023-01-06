@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
+source-git-commit: d17847a7151c5e88f763b334e1ee659ca3ca6bcf
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '532'
 ht-degree: 5%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 5%
 
 ## 關於您對Adobe內容的貢獻
 
-請參閱 [Adobe檔案貢獻者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+請參閱 [Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 您的投稿方式取決於您的身分，以及您要投稿的變更類型：
 
 ### 微幅變更
 
-如果您出於好意要貢獻微幅更新，請造訪文章，然後按一下 **編輯** 文章中的連結，會前往文章的GitHub來源。 然後，只要使用GitHub UI進行更新即可。 請參閱一般 [Adobe檔案貢獻者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) 以取得更多資訊。
+如果您出於好意要貢獻微幅更新，請造訪文章，然後按一下 **編輯** 文章中的連結，會前往文章的GitHub來源。 然後，只要使用GitHub UI進行更新即可。 請參閱一般 [Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 以取得更多資訊。
 
 您在此存放庫中針對檔案和程式碼範例提交的微幅更正或釐清，皆受Adobe使用條款所涵蓋。
 
@@ -43,7 +43,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 社群投稿人可使用GitHub UI進行基本編輯，或取用存放庫來進行重大投稿。
 
-請參閱 [Adobe檔案貢獻者指南](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) 以取得詳細資訊。
+請參閱 [Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 以取得詳細資訊。
 
 ## 如何使用Markdown來設定主題格式
 
