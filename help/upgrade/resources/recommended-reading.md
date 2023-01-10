@@ -1,6 +1,6 @@
 ---
 title: 建議的升級讀數
-description: 查看計畫Adobe Commerce或Magento Open Source升級的建議閱讀。
+description: 查看計畫 Adobe Commerce 或 Magento Open Source 升級的建議閱讀。
 source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '423'

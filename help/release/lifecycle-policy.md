@@ -1,10 +1,10 @@
 ---
 title: 軟體生命週期策略
-description: 了解Adobe Commerce版本軟體支援終止的主要日期。
+description: 了解 Adobe Commerce 版本軟體支援終止的關鍵日期。
 source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -39,9 +39,9 @@ ht-degree: 5%
 <thead>
   <tr>
     <th colspan="2"></th>
-    <th colspan="4">2022年</th>
-    <th colspan="4">2023年</th>
-    <th colspan="4">2024年</th>
+    <th colspan="4">2022</th>
+    <th colspan="4">2023</th>
+    <th colspan="4">2024</th>
   </tr>
 </thead>
 <tbody>
@@ -50,15 +50,15 @@ ht-degree: 5%
     <td>PHP</td>
     <td>Q1</td>
     <td>Q2</td>
-    <td>第3季度</td>
+    <td>Q3</td>
     <td>Q4</td>
     <td>Q1</td>
     <td>Q2</td>
-    <td>第3季度</td>
+    <td>Q3</td>
     <td>Q4</td>
     <td>Q1</td>
     <td>Q2</td>
-    <td>第3季度</td>
+    <td>Q3</td>
     <td>Q4</td>
   </tr>
   <tr>

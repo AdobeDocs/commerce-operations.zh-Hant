@@ -1,10 +1,10 @@
 ---
 title: 發行排程
-description: 了解特定版本的Adobe Commerce何時排程進行測試版、搶鮮版和全面推出。
+description: 了解特定版本的 Adobe Commerce 預定何時推出 Beta 版、搶鮮版和正式版本。
 source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
