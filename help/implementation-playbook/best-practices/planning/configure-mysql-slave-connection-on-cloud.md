@@ -4,7 +4,7 @@ description: 了解如何為部署在雲基礎架構上的Adobe Commerce網站�
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 0866272e02a7a223d35e14842bfb42a827e0468d
+source-git-commit: a5a6e25e3fd303e07a07110b85aa1d460f53cd54
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -14,8 +14,9 @@ ht-degree: 0%
 
 # 配置MySQL從連接的最佳做法
 
->!![NOTE]
-我們知道，本文仍包含業界標準的軟體術語，有些人可能認為這些術語帶有種族主義、性別歧視或壓迫性，並可能使讀者感到受傷、受創或不受歡迎。 Adobe正致力於從我們的程式碼、檔案和使用者體驗中移除這些詞語。
+>[!NOTE]
+>
+>我們知道，本文仍包含業界標準的軟體術語，有些人可能認為這些術語帶有種族主義、性別歧視或壓迫性，並可能使讀者感到受傷、受創或不受歡迎。 Adobe正致力於從我們的程式碼、檔案和使用者體驗中移除這些詞語。
 
 對於部署在雲基礎架構Pro架構上的Adobe Commerce站點，Adobe建議預設情況下為資料庫啟用MYSQL從連接。
 
