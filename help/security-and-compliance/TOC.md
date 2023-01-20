@@ -1,9 +1,9 @@
 ---
 user-guide-title: 安全性和合規性
 user-guide-description: 了解Adobe Commerce和Magento Open Source商如何負責維護安全的環境，並符合其管轄區內線上商戶的法律規定和最佳實務。
-source-git-commit: 98e10a1e6e84a15ef1ae75a19cd6213201324f09
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
@@ -21,3 +21,4 @@ ht-degree: 0%
 - 參考 {#reference}
    - [客戶個人資訊（2.x版）](privacy/data-m2.md)
    - [客戶個人資訊（1.x版）](privacy/data-m1.md)
+- [返回操作指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

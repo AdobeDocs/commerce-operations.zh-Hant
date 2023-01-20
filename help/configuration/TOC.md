@@ -1,9 +1,9 @@
 ---
 user-guide-title: 配置指南
 user-guide-description: 設定您的Adobe Commerce或Magento Open Source應用程式功能和服務。
-source-git-commit: 31f9ff21a848e248d2c3da7cfb3cfc8bfd5785be
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -145,3 +145,4 @@ ht-degree: 0%
       + [驗證拆分資料庫](storage/multi-master-verify.md)
       + [資料庫複製](storage/multi-master-replication.md)
       + [還原到單個資料庫](storage/revert-split-database.md)
++ [返回操作指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
