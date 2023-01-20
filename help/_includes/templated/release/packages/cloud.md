@@ -1,7 +1,7 @@
 ---
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -439,7 +439,7 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
       <a href="https://github.com/php-amqplib/php-amqplib.git">php-amqplib/php-amqplib</a>
     </td>
     <td>資料庫</td>
-    <td>先前為videolvaro/php-amqplib。  此庫是AMQP協定的純PHP實現。 它已經通過 [!DNL RabbitMQ].</td>
+    <td>先前為videolvaro/php-amqplib。  此庫是AMQP協定的純PHP實現。 它被測試了，RabbitMQ。</td>
   </tr>
   </tbody>
 </table>
