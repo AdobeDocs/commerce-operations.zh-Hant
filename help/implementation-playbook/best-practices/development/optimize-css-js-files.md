@@ -4,9 +4,9 @@ description: 了解如何從管理員或命令列，合併及縮制Adobe Commerc
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 052aa61e2bb59ae11b90b5401ce6426dec9c6046
+source-git-commit: e6e8a2d7ef059265dbcbfcd6be117828a639f6d6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -93,3 +93,5 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 - [用戶端最佳化設定](../../../performance/configuration.md#client-side-optimization-settings)
 - [使用手冊：最佳化資源檔案](https://docs.magento.com/user-guide/system/file-optimization.html)
 - [前端開發人員指南：CSS合併、縮制和網站效能](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [進階JavaScript捆綁](../../../performance/advanced-js-bundling.md)
+
