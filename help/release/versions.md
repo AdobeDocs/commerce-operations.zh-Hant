@@ -1,9 +1,9 @@
 ---
 title: 發行版本
 description: 了解特定版本的Adobe Commerce何時發行。
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: 71fad9e3005d8b27f9265b2741ae7e2cb463b7fc
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '38'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,6 @@ ht-degree: 0%
 
 # 發行版本
 
-此發行版本清單同時適用於Magento Open Source和Adobe Commerce。 它包含每次次要和修補程式發行的發行日期，以及支援日期的結束。 如需詳細資訊，請參閱 [生命週期策略](lifecycle-policy.md).
+本頁列出Adobe Commerce的發行版本。 它包含每個次要、修補程式、安全性發行日期和支援終止日期的發行日期。 請參閱 [生命週期策略](lifecycle-policy.md).
 
 {{$include /help/_includes/templated/release/core-releases.md}}

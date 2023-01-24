@@ -1,9 +1,9 @@
 ---
 title: 發行原則
 description: 了解不同類型的Adobe Commerce版本，包括次要、修補程式、安全性修補程式、功能、Hotfix、個別修補程式和自訂修補程式。
-source-git-commit: f9bbfb86d2197ee7252602edba455ebcae5a2b18
+source-git-commit: 1705e930b7ab0176722c4f911dd06f448f992373
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,11 @@ Adobe Commerce和Magento Open Source使用 [語義版本化](https://semver.org/
 
 - **主要版本**—2
 - **次要版本**—2.4
-- **PATCH發行**—2.4.1
-   - **SECURITY修補程式發行**—2.4.1-p1
+- **PATCH發行**—2.4.5
+   - **SECURITY修補程式發行**—2.4.5-p1
       - 安全性錯誤修正
       - 安全性增強功能
+- **測試版修補程式發行**—2.4.7-beta1
 - **功能發行**
 - **Hotfix**
 - **個別修補程式**
@@ -43,43 +44,23 @@ Adobe Commerce和Magento Open Source使用 [語義版本化](https://semver.org/
 - 可以避免可能中斷擴充功能或程式碼相容性的變更。 例如，為2.2.0版撰寫的程式碼仍應適用於2.2.7版。
 - 在例外的情況下，可能會發佈中斷的更改或其他修補程式或修補程式，以解決安全性或合規性問題以及高影響質量問題。 在模組層面，這些主要是PATCH層面的變更；有時會進行微幅變更。
 
-## SECURITY修補程式發行
+### SECURITY修補程式發行
 
 **安全性錯誤修正**:解決已識別安全問題並在受影響的產品區域中提供預期結果的軟體代碼變更。 這些修正通常向後相容。
 
 **安全性增強功能**:軟體改進或配置更改，以主動提高應用程式內的安全性。 這些安全性增強功能有助於解決安全風險，這些風險會影響Adobe Commerce應用程式的安全態勢，但可能後向不相容。
 
-使用安全修補程式版本，您無需應用每季度完整修補程式版本中包含的其他品質修正和增強功能，即可確保網站的安全性。 安全修補程式版本會附加「 — pN」，其中N是以1開頭的增量修補程式版本（例如2.3.5-p1）。 安全性修補程式發行也可包含必要的Hotfix，以解決影響Adobe Commerce應用程式的重大問題。
+使用安全修補程式版本，您無需應用完整修補程式版本中包含的其他品質修正和增強功能，即可確保網站的安全性。 安全修補程式版本會附加「 — pN」，其中N是以1開頭的增量修補程式版本（例如2.3.5-p1）。 安全性修補程式發行也可包含必要的Hotfix，以解決影響Adobe Commerce應用程式的重大問題。
 
 每個安全補丁版本都基於以前的完整補丁版本。 它包含先前修補程式版本的品質和安全性修正，以及先前完整修補程式版本與安全性修補程式版本之間建立的安全性修正。
 
-隨著我們 [新的發行策略和更新的生命週期策略](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy) (9/16/2021)，我們的安全性修補程式版本是根據適用於最新支援的次要版本，還是仍支援的先前次要版本行的一部分而區別：
+有關下載和應用安全修補程式的說明，請參見 [快速入門安裝](../installation/composer.md#example---security-patch).
 
-- **最新支援次要版本的安全性修補程式發行**:
+## 測試版修補程式發行
 
-   - 最新支援次要版本(目前為Adobe Commerce 2.4)的安全性修補程式版本包括：
+Adobe Commerce功能的正式發行前皆已公開提供給所有Adobe Commerce客戶和Adobe合作夥伴。 它可讓您在正式發行前多花點時間檢閱程式碼和受影響的元件。
 
-      - 自上次完整修補程式發行後建立的安全性錯誤修正。
-
-      - 這些安全性修補程式版本也可包含必要的Hotfix，以解決可能影響Adobe Commerce應用程式的重大問題。
-   - 最新支援次要版本(目前為Adobe Commerce 2.4)的安全性修補版本通常不包含安全性增強功能。 而是包含在最新支援次要版本的完整完整修補版本中。
-
-
-- **支援舊微版本的安全修補程式版本**:
-
-   - 舊版仍受支援的次要版本(目前為Adobe Commerce 2.3)的安全性修補程式版本包括：
-
-      - 自先前的修補程式或安全性修補程式發行以來建立的安全錯誤修正，以及新的安全性增強功能。
-
-      - 這些安全性修補程式版本也可包含必要的Hotfix，以解決影響Adobe Commerce應用程式的重大問題。
-
-      |  | 安全性錯誤 | 安全性增強功能 |
-      |--------------------------------------------------------------------------------|--------------|----------------------|
-      | 最新支援次要版本的安全性修補程式發行（目前為2.4） | X |  |
-      | 舊版、支援的次要版本（目前為2.3）的安全性修補程式版本 | X | X |
-
-
-如需安全性發行的一般資訊，請參閱 [推出全新僅限安全性的修補程式版本](https://community.magento.com:443/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). 有關下載和應用安全修補程式的說明，請參見 [快速入門安裝](../installation/composer.md).
+測試版可能包含缺陷，按「原樣」提供，不提供任何類型的保證。 Adobe沒有義務維護、更正、更新、更改、修改或其他支援(通過Adobe支援服務或其他)測試版。 建議客戶小心，不要依賴測試版本和/或任何隨附的檔案或資料的正確運作或效能。 因此，使用測試版本完全有客戶自行承擔的風險。
 
 ## 功能發行
 
@@ -107,7 +88,6 @@ Hotfix是包含高影響安全性或品質修正的修補程式，例如對影�
 
 ## 相關主題
 
-- [商務升級週期的規劃和預算](https://magento.com/sites/default/files8/2019-08/Magento-Release-Cycle-Infosheet_Aug_2019.pdf)
 - [版本設定](https://developer.adobe.com/commerce/php/development/versioning/)
 - [即將發行的版本](schedule.md)
 - [軟體生命週期策略](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
