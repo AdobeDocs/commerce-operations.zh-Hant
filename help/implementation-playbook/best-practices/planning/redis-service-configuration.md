@@ -4,9 +4,9 @@ description: 了解如何使用Adobe Commerce 2.3.5的延伸Redis快取實作，
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 12de523cc7ea1486c894d54efe6944d92d87ded0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,11 @@ stage:
 >[!NOTE]
 >
 > 從命令列使用，檢查您本機雲端環境中安裝的ece-tools版本 `composer show magento/ece-tools` 命令。 如有必要， [更新ece-tools版本](https://devdocs.magento.com/cloud/project/ece-tools-update.html).
+
+>[!WARNING]
+>
+>做 _not_ 使用 [縮放架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). 這會導致Redis連接錯誤。 請參閱 [Redis配置指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) 在 _雲基礎架構上的商務_ 指南。
+
 
 ### 內部部署的配置
 
