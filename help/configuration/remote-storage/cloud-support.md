@@ -1,7 +1,7 @@
 ---
 title: 雲基礎架構上的Commerce遠程儲存
 description: 請參閱如何在雲端基礎架構上為Adobe Commerce設定遠端儲存的指引。
-source-git-commit: 2080950852e3c4e6da556733e56f68e0e8005530
+source-git-commit: 4c89ef65ffb559ad4ad3f3fc45bd73079fbacd1b
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -78,7 +78,7 @@ magento-cloud variable:create --level environment --name REMOTE_STORAGE --json t
 
 1. 按一下 **新增變數**.
 
-1. 在 _名稱_ 欄位，輸入 `env:REMOTE_STORAGE`
+1. 在 _名稱_ 欄位，輸入 `REMOTE_STORAGE`
 
 1. 在 _值_ 欄位中新增JSON設定。
 
