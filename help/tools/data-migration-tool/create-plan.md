@@ -1,9 +1,9 @@
 ---
 title: 建立資料遷移計畫
 description: 請依照下列步驟建立資料移轉計畫，以確保從Magento1成功升級至Magento2。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 * 使用拓撲和設計來設定Magento2硬體系統，至少與現有Magento1系統匹配
 
-* 安裝Magento2.x（包含此版本的所有模組）和 [!DNL Data Migration Tool] 在符合 [Magento系統需求]
+* 安裝Magento2.x（包含此版本的所有模組）和 [!DNL Data Migration Tool] 在符合 [系統需求](../../installation/system-requirements.md)
 
 * 對 [!DNL Data Migration Tool] 代碼，以備您不需要遷移某些資料（如CMS頁面、銷售規則），或想在遷移期間轉換Magento自定義。 閱讀 [!DNL Data Migration Tool]&#39;s [技術規範](technical-specification.md) 更清楚了解移轉如何從內部
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
    如果您的某些擴充功能有您要移轉的資料，則可能需要安裝這些適合Magento2的擴充功能。 如果擴充功能在Magento2資料庫中具有不同結構，請使用隨 [!DNL Data Migration Tool].
 
-1. 重新索引所有Magento2.x索引器。 如需詳細資訊，請參閱 [設定指南].
+1. 重新索引所有Magento2.x索引器。 如需詳細資訊，請參閱 [管理索引器](../../configuration/cli/manage-indexers.md) 在 _設定指南_.
 
 ## 步驟5:對移轉的資料進行變更（如有需要）
 
@@ -116,6 +116,5 @@ ht-degree: 0%
 1. Magento2商店現已可供使用。 您和您的客戶可以繼續所有活動。
 
 <!-- LINK ADDRESSES -->
-[Magento系統需求]: ../../installation/system-requirements.md
+
 [Commerce Marketplace]: https://marketplace.magento.com
-[設定指南]: ../../configuration/cli/manage-indexers.md

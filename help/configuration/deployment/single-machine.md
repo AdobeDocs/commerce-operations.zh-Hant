@@ -1,10 +1,10 @@
 ---
 title: 單機部署
 description: 了解如何使用命令列在生產伺服器上部署更新至Commerce。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## 假設
 
-- 您使用 [撰寫器].
+- 您使用 [撰寫器](../../installation/composer.md).
 - 您直接將更新套用至伺服器。
 
 >[!WARNING]
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## 部署步驟
 
-1. 以 [檔案系統所有者][file-owner].
+1. 以 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md).
 
 1. 將目錄更改為Commerce基目錄：
 
@@ -92,5 +92,3 @@ ht-degree: 1%
 <!-- link definitions -->
 
 [install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
-[composer]: ../../installation/composer.md
-[file-owner]: ../../installation/prerequisites/file-system/overview.md
