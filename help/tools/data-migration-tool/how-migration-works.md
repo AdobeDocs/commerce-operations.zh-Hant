@@ -1,9 +1,9 @@
 ---
 title: 資料移轉的運作方式
 description: 了解Magento1和Magento2之間的資料移轉程式，包括術語、工作流程圖表和步驟。
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+source-git-commit: be2f924728853236bba786e7611b2a368c9f3054
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ![移轉流程](../../assets/data-migration/migration_flow.png)
 
-[[!DNL Data Migration Tool] 技術規範]:technical-specification.md
+[[!DNL Data Migration Tool] 技術規範](technical-specification.md)
 
 我們很高興您考慮從全球#1商務平台(Magento1.x)轉向未來平台(Magento2)。 我們很高興能分享此程式的詳細資訊，我們稱之為移轉。
 
