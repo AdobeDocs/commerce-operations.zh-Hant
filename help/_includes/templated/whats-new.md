@@ -1,7 +1,7 @@
 ---
-source-git-commit: a0b8a6131d9bccb819c846c873d2044da4009989
+source-git-commit: e7c10f28e241e47af8722fd41da0a9e86709b871
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,69 @@ ht-degree: 0%
 
 了解新檔案和現有檔案的重要更新。
 
+### 2023年1月27日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>類型</th>
+      <th>來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已發佈 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">發行說明</a> 用於1.1.26 Quality Patches Tool(QPT)包發行。</p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/08210f356354d20adf7360d18e2ddba9fe9a565a">08210f</a> （提交）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023年1月24日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>類型</th>
+      <th>來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html">發行排程</a> 和 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html">軟體生命週期策略</a> 2023年主題。</p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/979a6d481021eb26121e79974b2ce6e9280d51c3">979a6d</a> （提交）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023年1月23日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>類型</th>
+      <th>來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增Adobe Commerce 2.4.6測試版2的發行說明。 請參閱 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">Adobe Commerce 2.4.6發行說明</a>.</p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/af347fea185d2a3c02180216feb2fd13f5868081">af347f</a> （提交）</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 2023年1月19日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>說明</th>
@@ -33,7 +93,7 @@ ht-degree: 0%
 
 ### 2023年1月10日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>說明</th>
@@ -53,7 +113,7 @@ ht-degree: 0%
 
 ### 2023年1月9日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>說明</th>
@@ -73,7 +133,7 @@ ht-degree: 0%
 
 ### 2022年12月20日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>說明</th>
@@ -93,7 +153,7 @@ ht-degree: 0%
 
 ### 2022年12月16日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>說明</th>
@@ -113,7 +173,7 @@ ht-degree: 0%
 
 ### 2022年12月2日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>說明</th>
@@ -133,7 +193,7 @@ ht-degree: 0%
 
 ### 2022年12月1日
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>說明</th>
