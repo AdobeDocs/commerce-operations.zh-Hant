@@ -1,9 +1,9 @@
 ---
 title: 發行說明
 description: 了解適用於Adobe Commerce的修補程式及其解決的問題。
-source-git-commit: 230e457a783707c2447fab046a6d139ac97a20c5
+source-git-commit: 76ff1bbcc3a1ca8f73dfdd2ba4f516a201986f62
 workflow-type: tm+mt
-source-wordcount: '10584'
+source-wordcount: '10848'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,21 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需有關 [!DNL quality patches] 由社群建立以供Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.27 {#v1-1-27}
+
+* **ACSD-48362** (適用於Adobe Commerce >=2.4.1 &lt;2.4.7) — 修正使用可轉讓報價下單時使用預設運送地址而非新地址的問題。
+* **ACSD-48059** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正商戶無法儲存「[!UICONTROL Match product by rule]」。
+* **ACSD-48216** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.3.8 || >=2.4.0 &lt;2.4.7) — 修正 [!UICONTROL AUTO_INCREMENT] 的 [!UICONTROL inventory_source_item] 表格在 [!UICONTROL UPDATE] 操作。
+* **ACSD-47908** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.3.8 || >=2.4.0 &lt;2.4.7) — 修正結帳期間於裝運步驟上選取來源和數量時，出現「值小於或等於0」錯誤。
+* **ACSD-49497** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.4.6) — 修正發運後訂單仍處於處理狀態，且套用部分退款的問題。
+* **ACSD-48694** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.3.8 || >=2.4.1 &lt;2.4.7) — 修正「請求無效狀態變更」錯誤導致客戶無法下訂單的問題。
+* **ACSD-49013** (適用於Adobe Commerce和Magento Open Source>=2.4.3 &lt;2.4.7) — 修正使用大量API建立客戶時，電子郵件確認未翻譯為網站地區設定的問題。
+* **ACSD-48164** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.4.7) — 修正受限管理員無法儲存網站層級值的問題。
+* **ACSD-48404** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.4) — 修正按瀏覽器的上一步按鈕時，「記住類別分頁=是」會導致錯誤的問題。
+* **ACSD-48634** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.4.7) — 修正測試更新頁面上，當「[!UICONTROL Google Analytics Content Experiments]」。
+* **ACSD-49042** (適用於Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.5) — 修正無法從Storefront訂購無限延購產品的問題。
+* 更新的修補程式：ACSD-48366、ACSD-48661。
 
 ## v1.1.26 {#v1-1-26}
 
@@ -264,17 +279,17 @@ ht-degree: 0%
 
 * **MDVA-39711** (*適用於Adobe Commerce和Magento Open Source>=2.3.0 &lt;2.4.3*) — 修正管理員使用者刪除網站後無法存取客戶格線的問題。
 * **MDVA-40311** (*適用於Adobe Commerce和Magento Open Source>=2.4.2-p2 &lt;2.4.4*) — 修正管理員使用者收到錯誤訊息的問題 *安全性或表單密鑰無效。 請刷新頁面* 登入管理員後（若已設定自訂管理員路徑且已啟用機密金鑰）。
-* **MDVA-41631** (*適用於Adobe Commerce和Magento Open Source>=2.4.1 &lt;2.4.4*) — 修正使用者嘗試擷取訂單資訊時，未選用 *電話* 值。
+* **MDVA-41631** (*適用於Adobe Commerce和Magento Open Source>=2.4.1 &lt;2.4.4*) — 修正使用者嘗試擷取訂單資訊時，未選用 *電話* 價值。
 * **MDVA-27239** (*適用於Adobe Commerce和Magento Open Source>=2.3.0 &lt;2.3.6*) — 修正未顯示交叉銷售產品的問題。
 * 更新的修補程式：MDVA-37068、MDVA-35254、MDVA-41164、MDVA-37916、MDVA-37478、MDVA-34551、MDVA-31791。
 
 ## v1.1.6 {#v1-1-6}
 
 * **MDVA-40550** (*適用於Adobe Commerce和Magento Open Source>=2.3.5 &lt;2.4.4*) — 修正重新索引期間前端缺少產品的問題。
-* **MDVA-40120** (*適用於Adobe Commerce和Magento Open Source>=2.4.1 &lt;2.4.4*) — 修正依DESC/ASC排序的GraphQL無法用於具有相同關聯性或價格的產品的問題。
+* **MDVA-40120** (*適用於Adobe Commerce和Magento Open Source>=2.4.1 &lt;2.4.4*) — 修正GraphQL依DESC/ASC排序無法搭配具有相同關聯性或價格的產品使用的問題。
 * **MDVA-41399** (*適用於Adobe Commerce和Magento Open Source>=2.3.3 &lt;2.4.2*) — 修正管理員使用者無法存取 *管理購物車* 頁面（如果客戶將產品新增至願望清單）。
 * **MDVA-40609** (*適用於Adobe Commerce和Magento Open Source>=2.4.2 &lt;2.4.3*) — 修正中缺少已停用產品資料的問題 `cataloginventory_stock_status` 索引表，顯示不正確的禁用產品數量。
-* **MDVA-39031** (*適用於Adobe Commerce和Magento Open Source>=2.4.1 &lt;2.4.4*) — 修正即使產品未指派給目標網站，仍可透過GraphQL新增產品至購物車的問題。
+* **MDVA-39031** (*適用於Adobe Commerce和Magento Open Source>=2.4.1 &lt;2.4.4*) — 修正即使產品未指派給目標網站，仍可透過GraphQL將產品新增至購物車的問題。
 * **MDVA-41597** (*適用於Adobe Commerce和Magento Open Source>=2.4.2 &lt;2.4.4*) — 修正使用者使用GraphQL將多個可設定產品新增至購物車時，發生錯誤的問題。
 * **MDVA-27456** (*適用於Adobe Commerce和Magento Open Source>=2.3.5 &lt;2.3.7*) — 修正使用者嘗試載入時發生錯誤的問題 [!DNL Swagger].
 * **MDVA-32776** (*適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.2*) — 修正下訂單但未裝運時未更新庫存狀態的問題。
@@ -303,14 +318,14 @@ ht-degree: 0%
 * **MDVA-37725** (*適用於Adobe Commerce和Magento Open Source>=2.3.0 &lt;=2.4.3-p1*) — 修正從非預設網站傳送的非同步訂購電子郵件包含預設網站標誌URL的問題。
 * **MDVA-39482** (*適用於Adobe Commerce和Magento Open Source>=2.3.6 &lt;=2.3.7-p2 || >=2.4.1 &lt;2.4.4*) — 修正啟用延交訂單時，如果以「0」數量匯入的產品無存貨的問題。
 * **MDVA-40435** (*適用於Adobe Commerce和Magento Open Source>=2.3.4 &lt;2.4.4*) — 修正透過GraphQL套用時，具有動態價格的套件產品折扣不正確的問題。
-* **MC-42528** (*適用於Adobe Commerce和Magento Open Source>=2.4.3 &lt;=2.4.3-p1*) — 修正 `categoryList` GraphQL查詢會同時傳回已指派和未指派的類別。
+* **MC-42528** (*適用於Adobe Commerce和Magento Open Source>=2.4.3 &lt;=2.4.3-p1*) — 修正 `categoryList` GraphQL查詢會傳回已指派和未指派的類別。
 * **MDVA-29400** (*適用於Adobe Commerce和Magento Open Source>=2.3.0 &lt;=2.3.7-p1 || >=2.4.0 &lt;=2.4.0-p1*) — 修正透過 [!DNL PayPal Express Checkout].
 * **MDVA-26005** (*適用於Adobe Commerce和Magento Open Source>=2.3.4 &lt;=2.3.5-p2*) — 修正無法為購物車價格規則條件在類別樹中選取類別的問題。
 * **MDVA-25631** (*適用於Adobe Commerce和Magento Open Source>=2.3.3 &lt;=2.3.5-p2*) — 改善編輯和儲存包含大量客戶之客戶區段的效能。
 
 ## v1.1.3 {#v1-1-3}
 
-* **MDVA-40262** (*適用於Adobe Commerce和Magento Open Source>=2.4.2 &lt;2.4.4*) — 修正GraphQL搜尋查詢未顯示於「管理員」中常用搜尋詞的問題。
+* **MDVA-40262** (*適用於Adobe Commerce和Magento Open Source>=2.4.2 &lt;2.4.4*) — 修正GraphQL搜尋查詢未顯示於「管理員」熱門搜尋詞的問題。
 * **MDVA-40601** (*適用於Adobe Commerce和Magento Open Source>=2.3.1 &lt;=2.4.2-p2*) — 修正使用者嘗試取得類別相關資訊時，透過GraphQL排程更新所變更的問題。
 * **MDVA-37234** (*適用於Adobe Commerce和Magento Open Source>=2.3.5 &lt;2.4.0 || >=2.4.1 &lt;=2.4.2-p2*) — 修正針對相同SKU多次新增項目至購物車（平行請求），為相同購物車ID建立重複條列項目的問題。
 * **MDVA-33606** (*適用於Adobe Commerce和Magento Open Source>=2.4.1 &lt;=2.4.2-p2*) — 修正使用者取得 *唯一約束違反* 保存分配給層次結構的CMS頁時出錯。
@@ -375,8 +390,8 @@ ht-degree: 0%
 ## v1.0.23 {#v1-0-23}
 
 * **MDVA-37478** (*適用於Adobe Commerce >=2.3.0 &lt;=2.3.7*) — 修正Adobe Commerce為使用下拉式清單所下的訂單建立部分發票時，擲回錯誤的問題 *帳戶付款* 透過REST API支付方法。
-* **MDVA-37362** (*適用於Adobe Commerce >=2.3.4 &lt;=2.4.2-p1*) — 修正GraphQL回應中可設定產品選項值和變體屬性值空白的問題。
-* **MDVA-37288** (*適用於Adobe Commerce 2.4.2*) — 修正GraphQL要求後傳回錯誤層級價格的問題。
+* **MDVA-37362** (*適用於Adobe Commerce >=2.3.4 &lt;=2.4.2-p1*) — 修正可設定產品選項值和變體屬性值在GraphQL回應中空白的問題。
+* **MDVA-37288** (*適用於Adobe Commerce 2.4.2*) — 修正GraphQL要求後傳回錯誤階層價格的問題。
 * **MDVA-37225** (*適用於Adobe Commerce >=2.4.1 &lt;=2.4.2-p1*) — 修正匯入的SKU中有整數值時，上傳程式在快速建立訂單期間卡住的問題。
 * **MDVA-37224** (*適用於Adobe Commerce >=2.3.3 &lt;=2.4.2-p1*) — 修正客戶無法透過 [!DNL PayFlow Pro] 購物車中的其他產品。
 * **MDVA-36286** (*適用於Adobe Commerce >=2.3.6 &lt;=2.4.2-p1*) — 修正相同SKU在子類別中的位置不同時，頁面產生器產品介面工具集預覽會中斷的問題。
@@ -427,7 +442,7 @@ ht-degree: 0%
 * **MDVA-33704** (*適用於Adobe Commerce >=2.4.0 &lt;2.4.3*) — 修正 *在商店取貨* 未顯示運送選項，但已設定為可用。
 * **MDVA-34928** (*適用於Adobe Commerce >=2.3.5 &lt;2.3.5-p2*) — 修正從付款中移除商店評分後，頁面載入器無限期顯示的問題。
 * **MDVA-35254** (*適用於Adobe Commerce >=2.3.1 &lt;2.4.3*) — 修正結帳期間驗證碼的問題。
-* **MDVA-35569** (*適用於Adobe Commerce >=2.3.4 &lt;2.4.2*) — 修正 *固定產品稅* 指定狀態時，欄位不會填入GraphQL回應中。
+* **MDVA-35569** (*適用於Adobe Commerce >=2.3.4 &lt;2.4.2*) — 修正 *固定產品稅* 指定狀態時，不會在GraphQL回應中填入欄位。
 * **MDVA-35847** (*適用於Adobe Commerce >=2.4.1 &lt;2.4.3*) — 修正B2B問題，若使用自訂客戶屬性，公司使用者表單會中斷。
 * **MDVA-31307** (*適用於Adobe Commerce >=2.4.0 &lt;2.4.2*) — 修正 *記憶體不足* 因為快取區塊的動態CSP白名單有問題，導致某些類別發生錯誤。
 
@@ -597,7 +612,7 @@ ht-degree: 0%
 * **MDVA-30106** (*適用於Adobe Commerce ^2.3.0*) — 修正結帳付款期間未載入的問題 *無法讀取Null的屬性&#39;length&#39;* JS主控台發生錯誤。
 * **MDVA-28656** (*適用於Adobe Commerce >=2.3.1 &lt;2.3.6 || >=2.4.0 &lt;2.4.2*) — 修正下單時若未提供任何付款資訊（例如，折扣為100%），且已為訂單建立發票，則訂單狀態會變更為 *已關閉* 而非完成。
 * **MDVA-30209** (*適用於Adobe Commerce 2.3.0 - 2.3.3-p1*) — 修正客戶更新其帳戶資訊時，客戶群組變更為預設的問題。
-* **MDVA-30123** (*適用於Adobe Commerce >=2.3.4 &lt;2.4.2*) — 修正GraphQL查詢的屬性選項標籤未正確轉譯的問題。
+* **MDVA-30123** (*適用於Adobe Commerce >=2.3.4 &lt;2.4.2*) — 修正屬性選項標籤無法針對GraphQL查詢正確轉譯的問題。
 * **MDVA-29996** (*適用於Adobe Commerce >=2.3.3 &lt;2.4.2*) — 修正啟用類別權限後，類別頁面未被完整頁面快取快取的問題。
 * **MDVA-30164** (*適用於Adobe Commerce >=2.3.1 &lt;2.4.2*) — 修正如有自訂客戶屬性，無法從「客戶」格線匯出客戶記錄的問題。
 * **MDVA-30444** (*適用於Adobe Commerce >=2.3.0 &lt;2.4.1*) — 修正使用GraphQL下訂單時未傳送任何確認電子郵件的問題。
