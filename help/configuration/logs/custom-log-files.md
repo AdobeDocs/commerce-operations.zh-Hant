@@ -1,11 +1,10 @@
 ---
 title: 寫入自定義日誌檔案
 description: 了解如何設定自訂記錄檔。
-contributor_name: Atwix
-contributor_link: https://www.atwix.com/
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+badge: label="Contributed by Atwix" type="Informity" url="https://www.atwix.com/" tooltip="Atwix"
+source-git-commit: d7f32690b25c61fa31a99e6d02f9f1025de2bb99
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
