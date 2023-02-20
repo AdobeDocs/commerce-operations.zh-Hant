@@ -1,7 +1,7 @@
 ---
 title: 清漆ESI塊
 description: 了解Edge Side Includes，以及如何使用它們來內嵌網頁。
-badge: label=」康斯坦丁·G供稿。」 type="Informity" url="https://github.com/goivvy" tooltip="Konstantin G."
+badge: label="康斯坦丁·G供稿。" type="Informity" url="https://github.com/goivvy" tooltip="Konstantin G."
 source-git-commit: 90544452f5f0834e096ead6ea3df64dcb5eaea11
 workflow-type: tm+mt
 source-wordcount: '135'
