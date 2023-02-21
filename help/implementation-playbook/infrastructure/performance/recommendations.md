@@ -2,7 +2,7 @@
 title: 效能最佳化Recommendations
 description: 遵循這些建議，最佳化Adobe Commerce實作的效能。
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -105,7 +105,7 @@ Redis應分配足夠的記憶體來將所有其他快取保存在記憶體中，
 >
 > 雲端基礎架構上的Adobe Commerce已套用上述所有基礎架構和架構最佳化，但DNS查閱除外，因為它超出範圍。
 
-### 搜尋
+### 搜尋 {#search-heading}
 
 自Adobe Commerce 2.4版起即需使用Elasticsearch，但若要啟用2.4之前的版本，也需使用最佳實務。
 
@@ -115,7 +115,7 @@ Redis應分配足夠的記憶體來將所有其他快取保存在記憶體中，
 
 ### 無頭式架構
 
-我們有一個單獨的部分，專門用於詳細描述 [無頭](../../architecture/headless/adobe-commerce.md) 是和不同的選項。 總之，它將店面層與平台本身分離。 雖然仍是相同的後端，但Adobe Commerce不再直接處理請求，而是僅支援透過GraphQL API的自訂店面。
+我們有一個單獨的部分，專門用於詳細描述 [無頭](../../architecture/headless/adobe-commerce.md) 是和不同的選項。 總之，它將店面層與平台本身分離。 仍是相同的後端，但Adobe Commerce不再直接處理要求，而是只支援透過GraphQL API的自訂店面。
 
 ### 更新Adobe Commerce
 
