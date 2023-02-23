@@ -1,7 +1,7 @@
 ---
-source-git-commit: 608c98818243557fe9c1f7dffceb23641b858fa5
+source-git-commit: 9b27ce148570b9480c4a1373c6b82c401742fd88
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2484'
 ht-degree: 0%
 
 ---
@@ -828,18 +828,80 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">目錄服務</th>
     </tr>
     <tr>
+      <td>目錄服務1.4</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>目錄服務1.3</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
       <td>目錄服務1.1</td>
       <td>支援</span>
       </td>
       <td>支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
       <td>不支援</span>
       </td>
@@ -864,13 +926,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
       <td>不支援</span>
       </td>
@@ -1401,18 +1463,80 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">即時搜尋</th>
     </tr>
     <tr>
+      <td>Live Search 2.0.5</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Live Search 2.0.4</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
       <td>Live Search 2.0.3</td>
       <td>支援</span>
       </td>
       <td>支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
       <td>不支援</span>
       </td>
@@ -1437,13 +1561,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
       <td>不支援</span>
       </td>
@@ -2377,18 +2501,173 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">快速結帳</th>
     </tr>
     <tr>
+      <td>快速結帳1.7.0</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>快速結帳1.6.0</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>快速結帳1.5.0</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>快速結帳1.4.0</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>快速結帳1.3.0</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
       <td>快速結帳1.2.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
       </td>
-      <td>支援</span>
+      <td>相容</span>
       </td>
-      <td>支援</span>
+      <td>相容</span>
       </td>
-      <td>支援</span>
+      <td>相容</span>
       </td>
-      <td>不支援</span>
+      <td>相容</span>
       </td>
       <td>不支援</span>
       </td>
@@ -2511,34 +2790,65 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">產品Recommendations</th>
     </tr>
     <tr>
+      <td>產品Recommendations 4.0.1</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
       <td>產品Recommendations 4.0.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
-      <td>支援</span>
+      <td>不支援</span>
       </td>
     </tr>
     <tr>
