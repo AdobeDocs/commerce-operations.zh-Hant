@@ -1,8 +1,8 @@
 ---
-source-git-commit: 9f6110d359ffb31b04ebef369b82c25d4d0b9058
+source-git-commit: 8f4575e529cff1e11544f6df66bd486709e3d826
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 63%
+source-wordcount: '238'
+ht-degree: 62%
 
 ---
 # 系統需求
@@ -123,7 +123,7 @@ ht-degree: 63%
             1.2
       </td>
       <td>
-          —
+          --
       </td>
       <td>
           --
@@ -644,4 +644,4 @@ ht-degree: 63%
 
 >[!IMPORTANT]
 >
->雲端基礎架構上Adobe Commerce的服務版本和相容性支援取決於雲端基礎架構上部署的版本，有時會與Adobe Commerce內部部署所支援的版本不同。 請參閱 [支援的軟體和服務](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-arch-software) 在 _雲端指南_.
+>雲端基礎架構上Adobe Commerce的服務版本和相容性支援取決於雲端基礎架構上部署的版本，有時會與Adobe Commerce內部部署所支援的版本不同。 請參閱 [支援的軟體和服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 在 _雲端指南_.
