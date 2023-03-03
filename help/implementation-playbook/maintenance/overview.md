@@ -2,9 +2,9 @@
 title: 維護與支援概觀
 description: 正確維護和支援您新啟動的Adobe Commerce實作。
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
-source-git-commit: 514426d622ba47b8a7e517368132c86c9236b63a
+source-git-commit: 10d65d3453e260e105c1e90acbdfe678ca15c4e3
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -33,4 +33,4 @@ ht-degree: 0%
 
 部署Adobe Commerce時，請務必考慮要在您的維護和支援策略中納入哪些內容。
 Adobe Commerce授權提供專家支援。 有關專家支援和Adobe支援計畫的更多資訊，請參閱 [Adobe支援計畫](https://business.adobe.com/customers/consulting-services/premier-support.html).
-除了Adobe支援計畫，還有舊版Magento支援條款。 若要了解哪些支援服務適用於您，請參考您的合約，以了解您有哪些支援合約，或與客戶成功經理(CSM)聯絡。
+除了Adobe支援計畫，還有舊版Magento支援條款。 要了解哪些支援服務適用於您，請參考您的合同，以了解您有哪些支援協定，或與Adobe客戶團隊交談。
