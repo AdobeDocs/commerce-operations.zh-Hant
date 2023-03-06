@@ -1,9 +1,9 @@
 ---
 title: 發行說明
 description: 了解適用於Adobe Commerce的修補程式及其解決的問題。
-source-git-commit: 76ff1bbcc3a1ca8f73dfdd2ba4f516a201986f62
+source-git-commit: f1c6c816695e01fc30d0ab0a7a9c43122a130cb5
 workflow-type: tm+mt
-source-wordcount: '10848'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,22 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需有關 [!DNL quality patches] 由社群建立以供Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.28 {#v1-1-28}
+
+* **ACSD-48204** (針對Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.4.3) — 修正根據「是/否」屬性建立的目錄價格規則未考慮所選範圍的問題。
+* **ACSD-47704** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.4.7) — 修正套件產品僅顯示庫存產品價格的問題。
+* **ACSD-49370** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.4.7) — 修正 *日期時間* 產品屬性具有 *FilterMatchTypeInput* 在GraphQL結構中輸入。
+* **ACSD-48807** (適用於Adobe Commerce和Magento Open Source>=2.4.1 &lt;2.4.7) — 修正不會透過GraphQL以儲存檢視篩選客戶產品評論的問題。
+* **ACSD-49433** (適用於Adobe Commerce和Magento Open Source>=2.4.3 &lt;2.4.7) — 修正未結金額禮品卡的購物車中預設金額小計顯示的問題。
+* **ACSD-48866** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.4.7) — 修正為類別請求RSS饋送時發生錯誤的問題。
+* **ACSD-48784** (針對Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.4.7) — 修正客戶群組之間錯誤快取客戶區段價格的問題。
+* **ACSD-48857** (適用於Adobe Commerce和Magento Open Source>=2.4.3 &lt;2.4.7) — 修正使用者在使用「頁面產生器」編輯後無法儲存變更的問題。
+* **ACSD-49065** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.4.7) — 修正僅指派給自訂庫存時，管理員中無法顯示報價項目的問題。
+* **ACSD-49179** (適用於Adobe Commerce和Magento Open Source>=2.4.2 &lt;2.4.7) — 修正「訂單報表」針對不同商店而顯示不正確金額的問題。
+* **ACSD-49286** (適用於Adobe Commerce和Magento Open Source>=2.4.3 &lt;2.4.7) — 修正頁面上存在多個產品Widget時，產品在購物車中新增兩次的問題。
+* **ACSD-49574** (適用於Adobe Commerce >=2.4.4 &lt;2.4.7) — 新增功能以支援透過GraphQL在購物車中更新禮品卡產品。
+* 更新的修補程式：ACSD-48694。
 
 ## v1.1.27 {#v1-1-27}
 
