@@ -1,9 +1,9 @@
 ---
 title: 消息隊列使用者
 description: 了解Adobe Commerce和Magento Open Source訊息佇列使用者，包括相關功能和系統組態設定。
-source-git-commit: 2eecaab32b090cfd3c1a8e8832027d3531cf0edc
+source-git-commit: 1006a5761849b1d455469c6dfcb79a66cb90ec40
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '950'
 ht-degree: 0%
 
 ---
@@ -71,5 +71,7 @@ ht-degree: 0%
 | 更新共用目錄中每個產品的價格。 若 [**[!UICONTROL Shared Catalogs]**](https://docs.magento.com/user-guide/catalog/catalog-shared.html) 選項。 |  |  |  |
 | `quoteItemCleaner` | + | + |  |
 | 從目錄中刪除或從購物車中移除產品時，刪除無效或非作用中的報價。 若 [**[!UICONTROL Quotes]**](https://docs.magento.com/user-guide/sales/quotes.html) 選項。 |  |  |  |
+| `sales.rule.quote.trigger.recollect` | + | + | + |
+| 更新作用中購物車以反映購物車價格規則的變更。 更新時需要 [**[!UICONTROL Catalog price rules]**](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html). |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
