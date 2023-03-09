@@ -1,7 +1,7 @@
 ---
 user-guide-title: 發行資訊
 user-guide-description: 了解Adobe Commerce和Magento Open Source發行版本。
-source-git-commit: c08c48b0dc01867ba0a67871d01f1150f43242e4
+source-git-commit: 841c6861c6b7a7341f334ba449b6270b31a34e94
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 15%
@@ -31,15 +31,15 @@ ht-degree: 15%
       - [2.4.1](release-notes/open-source/2-4-1.md)
       - [2.4.0](release-notes/open-source/2-4-0.md)
    - 安全修補程式發行 {#security-patches}
-   - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
-   - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
-   - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
-   - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
-   - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
-   - [2.4.3-p3](release-notes/security/2-4-3-p3.md)
-   - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
-   - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
-   - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
+      - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
+      - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
+      - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
+      - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
+      - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
+      - [2.4.3-p3](release-notes/security/2-4-3-p3.md)
+      - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
+      - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
+      - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
 - [發行版本](versions.md)
 - [各版本功能](features.md)
 - [產品可用性](product-availability.md)
