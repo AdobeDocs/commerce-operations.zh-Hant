@@ -1,7 +1,7 @@
 ---
-source-git-commit: 177f301802e1ab1d0560ee98594b8128440efa7c
+source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
 workflow-type: tm+mt
-source-wordcount: '19444'
+source-wordcount: '19443'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**版本**:2.4.6-beta2
+**版本**:2.4.6
 
 此參考包含130個命令，可透過 `bin/magento` 命令列工具。
 初始清單會使用 `bin/magento list` 命令。

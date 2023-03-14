@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
+source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2674'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ ht-degree: 0%
 
 此 `composer.json` 檔案聲明包清單，而 `composer.lock` 檔案會儲存用來建置Adobe Commerce或Magento Open Source安裝的套件完整清單（每個套件及其相依性的完整版本）。
 
-以下參考檔案是從 `composer.lock` 檔案，且涵蓋Adobe Commerce on cloud infrastructure 2.4.4中包含的必要套件。
+以下參考檔案是從 `composer.lock` 檔案，且涵蓋Adobe Commerce on cloud infrastructure 2.4.6中包含的必要套件。
 
 ## 相依性
 
-`magento/magento-cloud-metapackage 2.4.4` 具有下列相依性：
+`magento/magento-cloud-metapackage 2.4.6` 具有下列相依性：
 
 ```config
 fastly/magento2: ^1.2.34
 magento/ece-tools: ^2002.1.0
-magento/module-paypal-on-boarding: ~100.4.0
-magento/product-enterprise-edition: >=2.4.4 <2.4.5
+magento/module-paypal-on-boarding: ~100.5.0
+magento/product-enterprise-edition: >=2.4.6 <2.4.7
 ```
 
 ## 第三方授權
@@ -51,10 +51,17 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   <tbody>
   <tr>
     <td>
-      <a href="https://github.com/elastic/elasticsearch-php.git">elasticsearch/elasticsearch</a>
+      elasticsearch/elasticsearch
     </td>
     <td>資料庫</td>
     <td>用於Elasticsearch的PHP客戶端</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/opensearch-project/opensearch-php.git">opensearch-project/opensearch-php</a>
+    </td>
+    <td>資料庫</td>
+    <td>用於OpenSearch的PHP客戶端</td>
   </tr>
   </tbody>
 </table>
@@ -103,7 +110,7 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
       <a href="https://github.com/wikimedia/less.php.git">wikimedia/less.php</a>
     </td>
     <td>資料庫</td>
-    <td>Javascript版本LESS的PHP埠http://lesscss.org（最初由Josh Schmidt維護）</td>
+    <td>LESS處理器的PHP埠</td>
   </tr>
   </tbody>
 </table>
@@ -170,13 +177,6 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_Redis.git">colinmollenhour/cache-backend-redis</a>
-    </td>
-    <td>magento-module</td>
-    <td>使用Redis的Zend_Cache後端完全支援標籤。</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/colinmollenhour/php-redis-session-abstract.git">colinmollenhour/php-redis-session-abstract</a>
     </td>
     <td>資料庫</td>
@@ -187,7 +187,14 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
       <a href="https://github.com/fastly/fastly-magento2.git">magento2</a>
     </td>
     <td>magento2-module</td>
-    <td>適用於Magento2.3.x的Embliet CDN模組 | 2.4.x</td>
+    <td>適用於Magento2.4.x的Embly CDN模組</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/firebase/php-jwt.git">firebase/php-jwt</a>
+    </td>
+    <td>資料庫</td>
+    <td>在PHP中為JSON網頁代號(JWT)編碼和解碼的簡單程式庫。 應符合當前規範。</td>
   </tr>
   <tr>
     <td>
@@ -219,17 +226,17 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/laminas/laminas-crypt.git">層狀體/層狀體</a>
+    </td>
+    <td>資料庫</td>
+    <td>強大的密碼工具和密碼哈希</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/laminas/laminas-db.git">拉米納/拉米納 — db</a>
     </td>
     <td>資料庫</td>
     <td>資料庫抽象層、SQL抽象、結果集抽象，以及RowDataGateway和TableDataGateway實現</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-dependency-plugin.git">laminas/laminas-dependency-plugin</a>
-    </td>
-    <td>composer-plugin</td>
-    <td>將zendframework和zfcampus軟體包替換為其Laminas項目等價項。</td>
   </tr>
   <tr>
     <td>
@@ -257,7 +264,21 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
       <a href="https://github.com/laminas/laminas-feed.git">層帶/層帶供料</a>
     </td>
     <td>資料庫</td>
-    <td>提供使用RSS和Atom饋送的功能</td>
+    <td>提供建立和使用RSS和原子源的功能</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-file.git">laminas/laminas檔案</a>
+    </td>
+    <td>資料庫</td>
+    <td>查找PHP類檔案</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-filter.git">層疊/層疊過濾器</a>
+    </td>
+    <td>資料庫</td>
+    <td>以程式設計方式篩選及標準化資料和檔案</td>
   </tr>
   <tr>
     <td>
@@ -265,6 +286,13 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
     </td>
     <td>資料庫</td>
     <td>為執行超文本傳輸協定(HTTP)請求提供了簡單的介面</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-i18n.git">laminas/laminas-i18n</a>
+    </td>
+    <td>資料庫</td>
+    <td>為應用程式提供翻譯，並篩選和驗證國際化值</td>
   </tr>
   <tr>
     <td>
@@ -314,6 +342,20 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
     </td>
     <td>資料庫</td>
     <td>Laminas的事件驅動MVC層，包括MVC應用程式、控制器和插件</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-oauth.git">拉米納/拉米納/奧auth</a>
+    </td>
+    <td>資料庫</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-permissions-acl.git">laminas/laminas-permissions-acl</a>
+    </td>
+    <td>資料庫</td>
+    <td>為權限管理提供輕量且靈活的訪問控制清單(ACL)實施</td>
   </tr>
   <tr>
     <td>
@@ -423,6 +465,27 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tbody>
 </table>
 
+### BSD-3 — 子句修改
+
+<table>
+  <thead>
+    <tr>
+      <th>名稱</th>
+      <th>類型</th>
+      <th>說明</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_Redis.git">colinmollenhour/cache-backend-redis</a>
+    </td>
+    <td>magento-module</td>
+    <td>使用Redis的Zend_Cache後端完全支援標籤。</td>
+  </tr>
+  </tbody>
+</table>
+
 ### LGPL-2.1或更新版本
 
 <table>
@@ -434,6 +497,13 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
     </tr>
   </thead>
   <tbody>
+  <tr>
+    <td>
+      <a href="https://github.com/ezyang/htmlpurifier.git">ezyang/htmlputeral</a>
+    </td>
+    <td>資料庫</td>
+    <td>在PHP中寫入的符合標準的HTML過濾器</td>
+  </tr>
   <tr>
     <td>
       <a href="https://github.com/php-amqplib/php-amqplib.git">php-amqplib/php-amqplib</a>
@@ -499,6 +569,13 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/composer/class-map-generator.git">composer/class-map-generator</a>
+    </td>
+    <td>資料庫</td>
+    <td>用於掃描PHP代碼和生成類映射的實用程式。</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/composer/composer.git">撰寫器/撰寫器</a>
     </td>
     <td>資料庫</td>
@@ -541,6 +618,27 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/doctrine/annotations.git">教條/註解</a>
+    </td>
+    <td>資料庫</td>
+    <td>Docblock注釋解析器</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/doctrine/deprecations.git">原則/淘汰</a>
+    </td>
+    <td>資料庫</td>
+    <td>位於triggererror(E_USER_DEPRECATED)或PSR-3記錄之上的小層，帶有禁用所有淘汰或有選擇地禁用包的選項。</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/doctrine/lexer.git">學說/詞法</a>
+    </td>
+    <td>資料庫</td>
+    <td>PHP理論詞法分析器解析器庫，可用於自頂向下遞歸下降解析器。</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/endroid/qr-code.git">端陣/qr碼</a>
     </td>
     <td>資料庫</td>
@@ -559,13 +657,6 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
     </td>
     <td>資料庫</td>
     <td>與elasticsearch-php一起使用的guzzle/RingPHP（放棄）的分叉</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/fgrosse/PHPASN1.git">fgrosse/phpasn1</a>
-    </td>
-    <td>資料庫</td>
-    <td>一種PHP框架，它允許您使用ITU-T X.690編碼規則對任意ASN.1結構進行編碼和解碼。</td>
   </tr>
   <tr>
     <td>
@@ -730,6 +821,13 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/php-fig/cache.git">psr/cache</a>
+    </td>
+    <td>資料庫</td>
+    <td>快取程式庫的通用介面</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/php-fig/container.git">psr/容器</a>
     </td>
     <td>資料庫</td>
@@ -828,6 +926,13 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/Seldaek/signal-handler.git">seld/signal-handler</a>
+    </td>
+    <td>資料庫</td>
+    <td>簡單的unix訊號處理常式會在不支援訊號的情況下無訊息地失敗，以便於跨平台開發</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/Spomky-Labs/aes-key-wrap.git">spomky-labs/aes-key-wrap</a>
     </td>
     <td>資料庫</td>
@@ -835,17 +940,17 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/Spomky-Labs/base64url.git">spomky-labs/base64url</a>
-    </td>
-    <td>資料庫</td>
-    <td>Base 64 URL安全編碼/解碼PHP庫</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/Spomky-Labs/otphp.git">spomky-labs/otphp</a>
     </td>
     <td>資料庫</td>
     <td>一種PHP庫，用於根據RFC 4226（HOTP算法）和RFC 6238（TOTP算法）生成一次性密碼，並與Google Authenticator相容</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/Spomky-Labs/pki-framework.git">spomky-labs/pki架構</a>
+    </td>
+    <td>資料庫</td>
+    <td>用於管理公鑰基礎設施的PHP框架。 它包括X.509公鑰證書、屬性證書、認證請求和認證路徑驗證。</td>
   </tr>
   <tr>
     <td>
@@ -867,13 +972,6 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
     </td>
     <td>資料庫</td>
     <td>將CSS選擇器轉換為XPath表達式</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/symfony/debug.git">symfony/debug</a>
-    </td>
-    <td>資料庫</td>
-    <td>提供工具以便於調試PHP代碼</td>
   </tr>
   <tr>
     <td>
@@ -926,13 +1024,6 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/http-client-contracts.git">symfony/http-client-contracts</a>
-    </td>
-    <td>資料庫</td>
-    <td>與HTTP客戶端相關的通用抽象化</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/symfony/http-foundation.git">symfony/http-foundation</a>
     </td>
     <td>資料庫</td>
@@ -947,10 +1038,24 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/intl.git">symfony/intl</a>
+    </td>
+    <td>資料庫</td>
+    <td>為C intl擴展提供PHP替換層，該層包括來自ICU庫的其他資料</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/polyfill-ctype.git">symfony/polyfill-ctype</a>
     </td>
     <td>資料庫</td>
     <td>類型函式的符號填充</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/polyfill-intl-grapheme.git">symfony/polyfill-intl-grapheme</a>
+    </td>
+    <td>資料庫</td>
+    <td>Intl的字素_*函式的Symfony多填</td>
   </tr>
   <tr>
     <td>
@@ -1028,6 +1133,13 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
     </td>
     <td>資料庫</td>
     <td>與寫入服務相關的通用抽象化</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/string.git">symfony/string</a>
+    </td>
+    <td>資料庫</td>
+    <td>提供物件導向的API，以統一方式處理字串和位元組、UTF-8程式碼點和字元叢集</td>
   </tr>
   <tr>
     <td>
