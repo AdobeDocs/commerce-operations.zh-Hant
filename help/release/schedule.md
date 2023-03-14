@@ -1,10 +1,10 @@
 ---
 title: 發行排程
-description: 了解特定版本的 Adobe Commerce 預定何時推出 Beta 版、搶鮮版和正式版本。
-source-git-commit: 18338316c78e9c2ef87614044e65517b1f11b16d
+description: 了解特定版本的Adobe Commerce何時排程進行測試版、搶鮮版和全面推出。
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 3%
+source-wordcount: '500'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe為每個支援的Adobe Commerce發行版本發行安全性和功能修補�
 | 2023年8月功能+安全性修補程式發行 | 2.4.6-p2<br>2.4.5-p4<br>2.4.4-p5 | 2023年7月25日 | 2023年8月8日 |
 | 2023年10月功能+測試版修補程式發行+安全性修補程式發行 | 2.4.7-beta2<br>2.4.6-p3<br>2.4.5-p5<br>2.4.4-p6 | 2023年9月26日 | 2023年10月10日 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 <sup>\-\ — 指出不適用於此版本的項目。</sup><br>
 <sup>2023年1月1日</sup><br>
@@ -39,7 +39,7 @@ Adobe為每個支援的Adobe Commerce發行版本發行安全性和功能修補�
 
 搶鮮版是「一般可用性」代碼，可在「一般可用性」推出兩週前，供Adobe Commerce商和所有合作夥伴使用。 它可讓您在正式發行前更快部署程式碼。
 
-如需詳細資訊，請參閱 [測試版計畫](beta-program.md).
+如需詳細資訊，請參閱 [測試版](beta.md).
 
 ## 發行類型
 

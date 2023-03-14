@@ -1,9 +1,9 @@
 ---
 title: 不支援當前的搜索引擎
 description: 針對不支援的搜尋引擎發生錯誤後，疑難排解Adobe Commerce或Magento Open Source升級。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Your current search engine, <Engine Name>, is not supported. You must install a 
 bin/magento config:show catalog/search/engine
 ```
 
-若傳回的值為 `mysql` 或 `elasticsearch`.
+若傳回的值為 `mysql`, `elasticsearch`，或 `elasticsearch6`.
 
 >[!WARNING]
 >
@@ -54,14 +54,14 @@ bin/magento config:show catalog/search/engine
 
 使用下列資源來協助您完成此程式：
 
-- [安裝和配置Elasticsearch](../../configuration/search/overview-search.md)
-- [安裝Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- 配置Elasticsearch以使用 [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) 或 [Apache](../../installation/prerequisites/search-engine/configure-apache.md)
-- [配置Elasticsearch](../../configuration/search/configure-search-engine.md)
+- [安裝並配置搜尋引擎](../../configuration/search/overview-search.md)
+- [搜尋引擎設定](../../configuration/search/configure-search-engine.md)
 
 設定搜尋引擎並重新索引後，即可升級至2.4。
 
 ## 如果您的搜尋引擎是 `elasticsearch`
+
+Elasticsearch6及舊版不再受支援。
 
 值 `elasticsearch` 指出您的下層版本Adobe Commerce或Magento Open Source已設定為使用Elasticsearch2.x。不再支援此版本的Elasticsearch。
 

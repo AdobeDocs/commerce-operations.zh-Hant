@@ -4,9 +4,9 @@ description: 了解如何建立和使用升級檢查清單，以規劃您的Adob
 role: Leader
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 644970b350c7591896f7c00d4c94661c76495c73
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ▢搶先訪問活動
 
-- 合作夥伴參與 [Beta](../../../release/beta-program.md)
+- 合作夥伴參與 [Beta](../../../release/beta.md)
 - 測試版發行說明審核。
 
 ▢就預算、時間表、範圍達成一致。

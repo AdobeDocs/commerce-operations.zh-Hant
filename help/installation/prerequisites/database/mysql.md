@@ -1,9 +1,9 @@
 ---
 title: MySQL准則
 description: 請按照以下步驟安裝和配置MySQL和MariaDB，以在本地安裝Adobe Commerce和Magento Open Source。
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: c65217cd277be5226681ef239d6a3cf34c251a9f
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe _強烈_ 建議您在設定資料庫時遵守下列標準：
 
 >[!WARNING]
 >
->Adobe Commerce和Magento Open Source目前使用 `CREATE TEMPORARY TABLE` 交易內的報表，即 [不相容](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) 資料庫實施使用基於GTID的復寫，例如 [Google Cloud SQL第二代執行個體](https://cloud.google.com/sql/docs/features#differences). 將MySQL for Cloud SQL 8.0作為替代方案。
+>Adobe Commerce目前使用 `CREATE TEMPORARY TABLE` 交易內的報表，即 [不相容](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) 資料庫實施使用基於GTID的復寫，例如 [Google Cloud SQL第二代執行個體](https://cloud.google.com/sql/docs/features#differences). 將MySQL for Cloud SQL 8.0作為替代方案。
 
 >[!NOTE]
 >
@@ -198,7 +198,4 @@ Adobe Commerce和Magento Open Source在 `/lib/internal/Magento/Framework/DB/Adap
 >
 >針對雲端基礎架構專案的Adobe Commerce, `explicit_defaults_for_timestamp` 為MySQL(MariaDB)設定預設為 _關閉_.
 
-與其他MariaDB或MySQL版本相比，在MariaDB 10.4上重新編製索引所花的時間更長。 要加快重新索引，建議設定以下MariaDB配置參數：
-
-* optimizer_switch=&#39;rowid_filter=off&#39;
-* optimizer_use_condition_astiplity = 1
+{{$include /help/_includes/maria-db-config.md}}

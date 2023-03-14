@@ -1,10 +1,10 @@
 ---
 title: Adobe Commerce和Magento Open Source發行說明
-description: 了解在哪裡可以找到 Adobe Commerce 和 Magento Open Source 特定版本的資訊。
-source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
+description: 了解如何尋找特定Adobe Commerce和Magento Open Source版本的資訊。
+source-git-commit: da6741586d0fb8e029ee5a9342e1299176df298e
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 4%
+source-wordcount: '413'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 4%
       </td>
     </tr>
     <tr>
-      <td><strong>Adobe Commerce 服務</strong>
+      <td><strong>Adobe Commerce服務</strong>
         <p>了解創新商務服務的最新改善項目，這些服務可作為Adobe Commerce和Magento Open Source擴充功能提供。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">AmazonSales Channel</a></li>
@@ -63,6 +63,7 @@ ht-degree: 4%
         <p>了解工具的最新改善項目，這些工具可讓您更輕鬆找到及使用Adobe Commerce和Magento Open Source軟體。</p>
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Adobe應用程式產生器開發人員的API網格</a></li>
+            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">適用於Adobe Commerce的Adobe I/O事件</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">質量修補工具</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">全網站分析工具</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">升級相容性工具</a></li>

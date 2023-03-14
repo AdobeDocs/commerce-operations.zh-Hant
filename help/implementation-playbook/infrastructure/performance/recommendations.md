@@ -2,9 +2,9 @@
 title: 效能最佳化Recommendations
 description: 遵循這些建議，最佳化Adobe Commerce實作的效能。
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
+source-git-commit: 821ef18c1b0f00a6b9574be968ad76f0c230335c
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Redis應分配足夠的記憶體來將所有其他快取保存在記憶體中，
 
 ### 搜尋 {#search-heading}
 
-自Adobe Commerce 2.4版起即需使用Elasticsearch，但若要啟用2.4之前的版本，也需使用最佳實務。
+自Adobe Commerce 2.4版起需要Elasticsearch（或OpenSearch），但若要啟用2.4之前的版本，也需採用最佳作法。
 
 ## 作業模式
 

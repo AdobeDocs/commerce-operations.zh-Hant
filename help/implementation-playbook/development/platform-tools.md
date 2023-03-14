@@ -2,9 +2,9 @@
 title: 平台工具
 description: 選擇您Adobe Commerce實作的建議平台工具。
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: ea912c48176fb060e48654d05ae6b533436a2432
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,11 @@ Adobe Commerce提供許多儲存快取和會話資料的選項，包括Redis、M
 
 ## 搜尋服務
 
-針對Adobe Commerce 2.4版和更新版本，所有安裝都必須設定為使用Elasticsearch作為目錄搜尋解決方案。 Elasticsearch提供目錄中產品的快速進階搜尋。 Elasticsearch適用於2.4之前的版本，但建議使用。
+對於Adobe Commerce 2.4版和更新版本，所有安裝都必須設定為使用Elasticsearch或OpenSearch作為目錄搜尋解決方案。 Elasticsearch提供目錄中產品的快速進階搜尋。 Elasticsearch適用於2.4之前的版本，但建議使用。
 
 ## 消息隊列服務
 
-消息隊列提供非同步通信機制，其中消息的發送者和接收者不相互聯繫。 [!DNL RabbitMQ] 是開放源碼消息代理程式，提供可靠、高可用、可擴展和可移植的消息傳送系統。
+消息隊列提供非同步通信機制，其中消息的發送者和接收者不相互聯繫。 [!DNL RabbitMQ] 是開放源碼消息代理程式，提供可靠、高可用、可擴展和便攜的消息傳送系統。
 
 ## 安全工具
 

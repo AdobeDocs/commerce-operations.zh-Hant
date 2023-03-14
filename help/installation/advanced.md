@@ -1,9 +1,9 @@
 ---
 title: 高級內部部署安裝
 description: 了解Adobe Commerce的進階安裝案例，或Magento Open Source您擁有的基礎架構。
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '2327'
+source-wordcount: '2406'
 ht-degree: 0%
 
 ---
@@ -154,21 +154,28 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--session-save` | 使用下列任一項：<br><br>- `db` 將會話資料儲存在資料庫中。 如果您有群集資料庫，請選擇資料庫儲存；否則，與基於檔案的儲存相比，可能沒有多少好處。<br><br>- `files` 將會話資料儲存在檔案系統中。 除非檔案系統訪問速度慢、您有群集資料庫，或您要將會話資料儲存在Redis中，否則基於檔案的會話儲存是適當的。<br><br>- `redis` 將會話資料儲存在Redis中。 如果您使用Redis進行預設或頁面快取，則必須已安裝Redis。 有關配置對Redis的支援的其他資訊，請參閱使用Redis以儲存會話。 | 否 |
 | `--key` | 如果您有密鑰，請指定用於加密資料庫中的敏感資料的密鑰。 如果您沒有，應用程式會為您產生一個。 | 是 |
 | `--cleanup-database` | 要在安裝Adobe Commerce或Magento Open Source之前刪除資料庫表，請指定此參數，但不帶值。 否則，資料庫將保持不變。 | 否 |
-| `--db-init-statements` | 高級MySQL配置參數。 使用資料庫初始化語句在連接到MySQL資料庫時運行。 設定任何值之前，請先參考類似此的參考。<br><br>預設為 `SET NAMES utf8;`. | 否 |
+| `--db-init-statements` | 高級MySQL配置參數。 使用資料庫初始化語句在連接到MySQL資料庫時運行。 設定任何值之前，請先參考類似於此的參考。<br><br>預設為 `SET NAMES utf8;`. | 否 |
 | `--sales-order-increment-prefix` | 指定要用作銷售訂單前置詞的字串值。 這通常用於保證支付處理者的唯一訂單編號。 | 否 |
 
 **搜尋引擎設定選項：**
 
 | 名稱 | 值 | 必要？ |
 |--- |--- |--- |
-| `--search-engine` | 要用作搜尋引擎的Elasticsearch或OpenSearch版本。 可能的值包括 `elasticsearch7`, `elasticsearch6`，和 `elasticsearch5`. 預設為 `elasticsearch7`. 要使用OpenSearch，請指定 `elasticsearch7`. Elasticsearch5已淘汰，不建議使用。 | 否 |
-| `--elasticsearch-host` | 執行搜尋引擎的主機名稱或IP位址。 預設為 `localhost`. | 否 |
-| `--elasticsearch-port` | 傳入HTTP請求的埠。 預設為 `9200`. | 否 |
-| `--elasticsearch-index-prefix` | 識別搜尋引擎索引的前置詞。 預設為 `magento2`. | 否 |
+| `--search-engine` | 要用作搜尋引擎的Elasticsearch或OpenSearch版本。 預設為 `elasticsearch7`. Elasticsearch5已淘汰，不建議使用。 | 否 |
+| `--elasticsearch-host` | 運行Elasticsearch的主機名或IP地址。 預設為 `localhost`. | 否 |
+| `--elasticsearch-port` | 傳入HTTP請求的Elasticsearch埠。 預設為 `9200`. | 否 |
+| `--elasticsearch-index-prefix` | 標識Elasticsearch搜索索引的前置詞。 預設為 `magento2`. | 否 |
 | `--elasticsearch-timeout` | 系統超時前的秒數。 預設為 `15`. | 否 |
-| `--elasticsearch-enable-auth` | 在搜尋引擎伺服器上啟用驗證。 預設為 `false`. | 否 |
-| `--elasticsearch-username` | 驗證搜尋引擎的使用者ID | 否，除非已啟用驗證 |
-| `--elasticsearch-password` | 驗證搜尋引擎的密碼 | 否，除非已啟用驗證 |
+| `--elasticsearch-enable-auth` | 在Elasticsearch伺服器上啟用身份驗證。 預設為 `false`. | 否 |
+| `--elasticsearch-username` | 要向Elasticsearch伺服器驗證的用戶ID。 | 否，除非已啟用驗證 |
+| `--elasticsearch-password` | 向Elasticsearchserver驗證的密碼。 | 否，除非已啟用驗證 |
+| `--opensearch-host` | 運行OpenSearch的主機名或IP地址。 預設為 `localhost`. | 否 |
+| `--opensearch-port` | 傳入HTTP請求的OpenSearch埠。 預設為 `9200`. | 否 |
+| `--opensearch-index-prefix` | 標識OpenSearch搜索索引的前置詞。 預設為 `magento2`. | 否 |
+| `--opensearch-timeout` | 系統超時前的秒數。 預設為 `15`. | 否 |
+| `--opensearch-enable-auth` | 在OpenSearch伺服器上啟用身份驗證。 預設為 `false`. | 否 |
+| `--opensearch-username` | 要向OpenSearch伺服器進行身份驗證的用戶ID。 | 否，除非已啟用驗證 |
+| `--opensearch-password` | 用於向OpenSearch伺服器進行身份驗證的密碼。 | 否，除非已啟用驗證 |
 
 **[!DNL RabbitMQ]配置選項：**
 
@@ -231,7 +238,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 * 預設語言為 `en_US` （美國英語）
 * 預設貨幣為美元
 * 預設時區為美國中部（美洲/芝加哥）
-* OpenSearch 1.2安裝在 `es-host.example.com` 並在埠9200上連接
+* OpenSearch 1.2安裝在 `os-host.example.com` 並在埠9200上連接
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -239,8 +246,8 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
 --admin-user=admin --admin-password=admin123 --language=en_US \
 --currency=USD --timezone=America/Chicago --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 顯示的訊息類似於以下，表示安裝成功：
@@ -261,8 +268,8 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 如果安裝成功，則會顯示下列訊息：
@@ -303,7 +310,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 * 您可以使用銷售訂單增量首碼 `ORD$` (因為它包含特殊字元 [`$`]，值必須以雙引號括住)
 * 會話資料保存在資料庫中
 * 使用伺服器重新寫入
-* Elasticsearch7安裝在 `es-host.example.com` 並在埠9200上連接
+* OpenSearch安裝在 `os-host.example.com` 並在埠9200上連接
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -312,8 +319,8 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --admin-user=admin --admin-password=admin123 --language=en_US \
 --currency=USD --timezone=America/Chicago --cleanup-database \
 --sales-order-increment-prefix="ORD$" --session-save=db --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 >[!NOTE]

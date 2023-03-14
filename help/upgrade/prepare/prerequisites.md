@@ -1,9 +1,9 @@
 ---
 title: 完整必要條件
-description: 完成這些先決條件步驟，以準備您的Adobe Commerce或Magento Open Source專案以進行升級。
-source-git-commit: 6782498985d4fd6540b0481e2567499f74d04d97
+description: 完成這些先決條件步驟，以準備您的Adobe Commerce專案以進行升級。
+source-git-commit: 45c544a5ec9a17ad631fce55e322e2949ecdd3c2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 # 完整升級必要條件
 
-請務必了解執行Adobe Commerce或Magento Open Source所需的項目。 您必須先檢閱 [系統需求](../../installation/system-requirements.md) 針對您打算升級至的版本。
+請務必了解執行Adobe Commerce的必要條件。 您必須先檢閱 [系統需求](../../installation/system-requirements.md) 針對您打算升級至的版本。
 
 檢閱系統需求後，您必須先完成下列必要條件，才能升級系統：
 
-- 更新所有軟體
-- 確認已安裝支援的搜尋引擎
-- 轉換資料庫表格格式
-- 設定開啟的檔案限制
-- 驗證cron作業是否正在運行
-- 設定 `DATA_CONVERTER_BATCH_SIZE`
-- 驗證檔案系統權限
-- 設定 `pub/` 目錄根目錄
-- 安裝撰寫器更新外掛程式
+* 更新所有軟體
+* 確認已安裝支援的搜尋引擎
+* 轉換資料庫表格格式
+* 設定開啟的檔案限制
+* 驗證cron作業是否正在運行
+* 設定 `DATA_CONVERTER_BATCH_SIZE`
+* 驗證檔案系統權限
+* 設定 `pub/` 目錄根目錄
+* 安裝撰寫器更新外掛程式
 
 ## 更新所有軟體
 
-此 [系統需求](../../installation/system-requirements.md) 說明哪些第三方軟體版本已透過Adobe Commerce和Magento Open Source版本進行測試。
+此 [系統需求](../../installation/system-requirements.md) 說明哪些協力廠商軟體版本已透過Adobe Commerce版本進行測試。
 
 請確定您已更新環境中的所有系統需求和相依性。 參見PHP [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php)，和 [必需的PHP設定](../../installation/prerequisites/php-settings.md#php-settings).
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 確認已安裝支援的搜尋引擎
 
-Adobe Commerce和Magento Open Source需要安裝Elasticsearch或OpenSearch才能使用軟體。
+Adobe Commerce需要安裝Elasticsearch或OpenSearch才能使用軟體。
 
 **如果您從2.3.x升級至2.4**，您必須檢查在2.3.x例項中，您是使用MySQL、Elasticsearch或協力廠商擴充功能作為目錄搜尋引擎。 結果決定了您必須執行的動作 _befor_ 升級至2.4。
 
@@ -45,9 +45,9 @@ Adobe Commerce和Magento Open Source需要安裝Elasticsearch或OpenSearch才能
 
 您可以使用命令列或管理員來判斷目錄搜尋引擎：
 
-- 輸入 `bin/magento config:show catalog/search/engine` 命令。 命令返回值 `mysql`, `elasticsearch` (表示已設定Elasticsearch2), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`、或自訂值，表示您已安裝協力廠商搜尋引擎。 值 `elasticsearch7` 表示已安裝Elasticsearch7或OpenSearch。
+* 輸入 `bin/magento config:show catalog/search/engine` 命令。 命令返回值 `mysql`, `elasticsearch` (表示已設定Elasticsearch2), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`、或自訂值，表示您已安裝協力廠商搜尋引擎。 若為2.4.6之前的版本，請使用 `elasticsearch7` Elasticsearch7或OpenSearch引擎的值。 若為2.4.6版和更新版本，請使用 `opensearch` 的值。
 
-- 從管理員檢查 **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** 欄位。
+* 從管理員檢查 **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** 欄位。
 
 以下幾節說明在升級至2.4.0之前，您必須執行哪些動作。
 
@@ -55,40 +55,120 @@ Adobe Commerce和Magento Open Source需要安裝Elasticsearch或OpenSearch才能
 
 自2.4版起，MySQL不再是支援的目錄搜尋引擎。 升級之前，必須安裝並配置Elasticsearch或OpenSearch。 使用下列資源來協助您完成此程式：
 
-- [安裝和配置Elasticsearch](../../configuration/search/overview-search.md)
-- [安裝Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- 設定 [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) 或 [Apache](../../installation/prerequisites/search-engine/configure-apache.md) 與搜尋引擎搭配使用
-- [設定商務以使用Elasticsearch](../../configuration/search/configure-search-engine.md) 重新索引
+* [安裝和配置Elasticsearch](../../configuration/search/overview-search.md)
+* [安裝Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+* 設定 [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) 或 [Apache](../../installation/prerequisites/search-engine/configure-apache.md) 與搜尋引擎搭配使用
+* [設定商務以使用Elasticsearch](../../configuration/search/configure-search-engine.md) 重新索引
 
 有些協力廠商目錄搜尋引擎會在Adobe Commerce搜尋引擎上執行。 請連絡您的廠商以判斷您是否必須更新擴充功能。
 
-### Elasticsearch
+#### MariaDB
 
-在升級至2.4.0之前，必須安裝並配置Elasticsearch7.6或更高版本，或OpenSearch 1.2。Adobe不再支援Elasticsearch2.x、5.x和6.x。
+{{$include /help/_includes/maria-db-config.md}}
+
+### 搜尋引擎
+
+在升級至2.4.0之前，必須安裝並配置Elasticsearch7.6或更高版本，或OpenSearch 1.2。Adobe不再支援Elasticsearch2.x、5.x和6.x。 [搜尋引擎設定](../../configuration/search/configure-search-engine.md) 在 _配置指南_ 說明將Elasticsearch升級至支援的版本後，您必須執行的工作。
 
 請參閱 [升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) 有關在部署到生產環境之前備份資料、檢測潛在遷移問題和測試升級的完整說明。 視您當前的Elasticsearch版本而定，可能需要或不需要完全群集重新啟動。
 
 Elasticsearch需要Java開發套件(JDK)1.8或更新版本。 請參閱 [安裝Java軟體開發套件(JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) 來檢查安裝的JDK版本。
 
-[配置Elasticsearch](../../configuration/search/configure-search-engine.md) 說明將Elasticsearch2更新為支援的版本後，您必須執行的工作。
+#### OpenSearch
 
-### OpenSearch
+OpenSearch是Elasticsearch7.10.2的開放原始碼復本，在Elasticsearch授權變更後進行。 下列Adobe Commerce版本推出OpenSearch支援：
 
-OpenSearch是Elasticsearch7.10.2的開放原始碼復本，在Elasticsearch授權變更後進行。 下列版本的Adobe Commerce和Magento Open Source引入了對OpenSearch的支援：
+* 2.4.6（OpenSearch有單獨的模組和設定）
+* 2.4.5
+* 2.4.4
+* 2.4.3-p2
+* 2.3.7-p3
 
-- 2.4.4
-- 2.4.3-p2
-- 2.3.7-p3
-
-您可以 [從Elasticsearch移轉至OpenSearch](opensearch-migration.md) 只有在您升級至以上所列的Adobe Commerce或Magento Open Source版本（或更新版本）時才有。
+您可以 [從Elasticsearch移轉至OpenSearch](opensearch-migration.md) 只有在您升級至以上所列的Adobe Commerce版本（或更新版本）時。
 
 OpenSearch需要JDK 1.8或更高版本。 請參閱 [安裝Java軟體開發套件(JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) 來檢查安裝的JDK版本。
 
 [搜尋引擎設定](../../configuration/search/configure-search-engine.md) 說明變更搜尋引擎後必須執行的工作。
 
+#### 升級Elasticsearch
+
+Adobe Commerce 2.4.6已推出對Elasticsearch8.x的支援。下列指示顯示將Elasticsearch從7.x升級至8.x的範例：
+
+1. 將Elasticsearch7.x伺服器升級至8.x，並確定已啟動並正在執行。 請參閱 [Elasticsearch檔案](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+
+1. 啟用 `id_field_data` 欄位，將下列設定新增至 `elasticsearch.yml` 檔案並重新啟動Elasticsearch8.x服務。
+
+   ```yaml
+   indices:
+     id_field_data:
+       enabled: true
+   ```
+
+   >[!INFO]
+   >
+   >為支援Elasticsearch8.x,Adobe Commerce 2.4.6不允許 `indices.id_field_data` 屬性，並使用 `_id` 欄位 `docvalue_fields` 屬性。
+
+1. 在Adobe Commerce專案的根目錄中，更新您的撰寫器相依性以移除 `Magento_Elasticsearch7` 模組和安裝 `Magento_Elasticsearch8` 模組。
+
+   ```bash
+   composer update magento/module-elasticsearch-8 --update-with-all-dependencies
+   ```
+
+1. 更新專案元件。
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+1. [配置Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) 在 [!DNL Admin].
+
+1. 重新索引目錄索引。
+
+   ```bash
+   bin/magento indexer:reindex catalogsearch_fulltext
+   ```
+
+1. 從啟用的快取類型中刪除所有項。
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
+#### 降級Elasticsearch
+
+如果您不小心升級了伺服器上的Elasticsearch版本，或因任何其他原因而確定需要降級，則還必須更新Adobe Commerce項目依賴項。 例如，要從Elasticsearch8.x降級到7.x
+
+1. 將Elasticsearch8.x伺服器降級為7.x，並確保已啟動並正在運行。 請參閱 [Elasticsearch檔案](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+
+1. 在Adobe Commerce專案的根目錄中，更新您的撰寫器相依性以移除 `Magento_Elasticsearch8` 模組及其撰寫器相依性並安裝 `Magento_Elasticsearch7` 模組。
+
+   ```bash
+   composer remove magento/module-elasticsearch-8
+   ```
+
+1. 更新專案元件。
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+1. [配置Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) 在 [!DNL Admin].
+
+1. 重新索引目錄索引。
+
+   ```bash
+   bin/magento indexer:reindex catalogsearch_fulltext
+   ```
+
+1. 從啟用的快取類型中刪除所有項。
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
 ### 協力廠商擴充功能
 
-建議您連絡搜尋引擎廠商，判斷您的擴充功能是否與2.4完全相容。
+建議您聯絡搜尋引擎廠商，判斷您的擴充功能是否與Adobe Commerce版本完全相容。
 
 ## 轉換資料庫表格格式
 
@@ -127,7 +207,7 @@ Adobe建議設定開啟的檔案 [上限](https://ss64.com/bash/ulimit.html) 的
 
 ## 驗證cron作業是否正在運行
 
-UNIX任務調度程式 `cron` 對於日常Adobe Commerce和Magento Open Source作業至關重要。 它會排程重新索引、電子報、電子郵件和網站地圖等項目。 若干功能至少需要以檔案系統擁有者身分執行一個cron工作。
+UNIX任務調度程式 `cron` 對於日常Adobe Commerce作業至關重要。 它會排程重新索引、電子報、電子郵件和網站地圖等項目。 若干功能至少需要以檔案系統擁有者身分執行一個cron工作。
 
 要驗證cron作業是否已正確設定，請輸入以下命令作為檔案系統所有者以檢查crontab :
 
@@ -163,15 +243,15 @@ Adobe Commerce 2.4包含安全性增強功能，需要將部分資料從序列�
 
 下表對影響最大：
 
-- `catalogrule`
-- `core_config_data`
-- `magento_reward_history`
-- `quote_payment`
-- `quote`
-- `sales_order_payment`
-- `sales_order`
-- `salesrule`
-- `url_rewrite`
+* `catalogrule`
+* `core_config_data`
+* `magento_reward_history`
+* `quote_payment`
+* `quote`
+* `sales_order_payment`
+* `sales_order`
+* `salesrule`
+* `url_rewrite`
 
 如果您有大量資料，則可設定環境變數的值，以改善效能。 `DATA_CONVERTER_BATCH_SIZE`. 預設情況下，值會設為 `50,000`.
 
@@ -196,7 +276,7 @@ Adobe Commerce 2.4包含安全性增強功能，需要將部分資料從序列�
 
 ## 驗證檔案系統權限
 
-基於安全理由，Adobe Commerce和Magento Open Source需要檔案系統的特定權限。 權限與 _[所有權](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. 所有權決定了誰可以在檔案系統上執行操作；權限決定了使用者的功能。
+基於安全考量，Adobe Commerce需要檔案系統的特定權限。 權限與 _[所有權](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. 所有權決定了誰可以在檔案系統上執行操作；權限決定了使用者的功能。
 
 檔案系統中的目錄必須由 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md) 群組。
 
@@ -246,10 +326,10 @@ drwxrws---. 29 magento_user apache   4096 Jun  7 07:53 vendor
 
 如需範例輸出的說明，請參閱下列內容：
 
-- 大部分檔案 `-rw-rw----`，即 `660`
-- `drwxrwx---` = `770`
-- `-rw-rw-rw-` = `666`
-- 檔案系統所有者是 `magento_user`
+* 大部分檔案 `-rw-rw----`，即 `660`
+* `drwxrwx---` = `770`
+* `-rw-rw-rw-` = `666`
+* 檔案系統所有者是 `magento_user`
 
 要獲取更詳細的資訊，可以輸入以下命令：
 
@@ -257,7 +337,7 @@ drwxrws---. 29 magento_user apache   4096 Jun  7 07:53 vendor
 ls -la /var/www/html/magento2/pub
 ```
 
-因為Adobe Commerce和Magento Open Source會將靜態檔案資產部署至的子目錄 `pub`，也建議您驗證其權限和所有權。
+因為Adobe Commerce會將靜態檔案資產部署至的子目錄 `pub`，也建議您驗證其權限和所有權。
 
 如需詳細資訊，請參閱 [檔案系統權限和所有權](../../installation/prerequisites/file-system/overview.md).
 

@@ -1,9 +1,9 @@
 ---
 title: 為您的搜尋引擎設定Apache
 description: 請依照下列步驟，使用Apache Web伺服器來設定搜尋引擎，以進行Adobe Commerce和Magento Open Source的內部部署安裝。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: d3cfd97450164d38fd340b538099739601573d64
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4中新增了OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 配置Elasticsearch7的所有說明均適用於OpenSearch。 請參閱 [將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md) 以取得更多資訊。
+>2.4.4中新增了OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 請參閱 [將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md) 以取得更多資訊。
 
-本節探討如何將Apache設定為 *取消安全* 代理，讓Adobe Commerce或Magento Open Source可以使用此伺服器上執行的搜尋引擎。 本節不討論如何設定HTTP Basic驗證；在 [與Apache的安全通訊](#secure-communication-with-apache).
+本節探討如何將Apache設定為 *取消安全* 代理，讓Adobe Commerce可以使用此伺服器上執行的搜尋引擎。 本節不討論如何設定HTTP Basic驗證；在 [與Apache的安全通訊](#secure-communication-with-apache).
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### 與Apache的安全通訊
 
-本節探討如何設定 [HTTP基本驗證](https://httpd.apache.org/docs/2.2/howto/auth.html). 同時使用TLS和HTTP Basic驗證，可防止任何人攔截與Elasticsearch或您應用程式伺服器的通訊。
+本節探討如何設定 [HTTP基本驗證](https://httpd.apache.org/docs/2.2/howto/auth.html). 同時使用TLS和HTTP Basic驗證可防止任何人攔截與Elasticsearch、OpenSearch或您應用程式伺服器的通訊。
 
 本節探討如何指定誰可以存取Apache伺服器。
 
@@ -188,7 +188,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
        Allow from all
    
        AuthType Basic
-       AuthName "Elastic Server"
+       AuthName "Elasticsearch Server" # or OpenSearch Server
        AuthBasicProvider file
        AuthUserFile /usr/local/apache/password/.htpasswd_elasticsearch
        Require valid-user

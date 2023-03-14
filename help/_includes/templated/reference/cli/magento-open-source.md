@@ -1,7 +1,7 @@
 ---
-source-git-commit: 23d55385046de18b238c90f6a99be692f1ce7561
+source-git-commit: 177f301802e1ab1d0560ee98594b8128440efa7c
 workflow-type: tm+mt
-source-wordcount: '14684'
+source-wordcount: '17239'
 ht-degree: 0%
 
 ---
@@ -10,9 +10,9 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**版本**:2.4.5
+**版本**:2.4.6-beta2
 
-此參考包含111個命令，可透過 `bin/magento` 命令列工具。
+此參考包含114個命令，可透過 `bin/magento` 命令列工具。
 初始清單會使用 `bin/magento list` 命令。
 使用 [&quot;添加CLI命令&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) 添加自定義CLI命令的指南。
 
@@ -23,6 +23,158 @@ ht-degree: 0%
 >[!NOTE]
 >
 >此引用從應用程式碼庫中生成。 若要變更內容，您可以在 [基底](https://github.com/magento) 存放庫，並提交變更以供審核。 另一種方式是 _給我們反饋_ （尋找右上方的連結）。 如需貢獻准則，請參閱 [代碼貢獻](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+
+## `_complete`
+
+提供殼完成建議的內部命令
+
+```bash
+bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
+```
+
+### `--shell`, `-s`
+
+殼類型(&quot;bash&quot;)
+
+- 需要值
+
+### `--input`, `-i`
+
+輸入代號的陣列（例如COMP_WORDS或argv）
+
+- 預設值： `[]`
+- 需要值
+
+### `--current`, `-c`
+
+游標所在的&quot;input&quot;陣列的索引（例如COMP_CWORD）
+
+- 需要值
+
+### `--symfony`, `-S`
+
+完成指令碼的版本
+
+- 需要值
+
+### `--help`, `-h`
+
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
+
+- 預設值： `false`
+- 不接受值
+
+### `--quiet`, `-q`
+
+不輸出任何消息
+
+- 預設值： `false`
+- 不接受值
+
+### `--verbose`, `-v|-vv|-vvv`
+
+增加訊息的詳細程度：正常輸出為1，較詳細輸出為2，除錯為3
+
+- 預設值： `false`
+- 不接受值
+
+### `--version`, `-V`
+
+顯示此應用程式版本
+
+- 預設值： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或禁用 — 無 — ansi）ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定&quot;—ansi&quot;選項
+
+- 預設值： `false`
+- 不接受值
+
+### `--no-interaction`, `-n`
+
+不要提出任何互動式問題
+
+- 預設值： `false`
+- 不接受值
+
+
+## `completion`
+
+轉儲shell完成指令碼
+
+```bash
+bin/magento completion [--debug] [--] [<shell>]
+```
+
+
+### `shell`
+
+殼類型(例如&quot;bash&quot;)，則如果未指定「$SHELL」env var值，則會使用該值
+
+
+### `--debug`
+
+跟蹤完成調試日誌
+
+- 預設值： `false`
+- 不接受值
+
+### `--help`, `-h`
+
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
+
+- 預設值： `false`
+- 不接受值
+
+### `--quiet`, `-q`
+
+不輸出任何消息
+
+- 預設值： `false`
+- 不接受值
+
+### `--verbose`, `-v|-vv|-vvv`
+
+增加訊息的詳細程度：正常輸出為1，較詳細輸出為2，除錯為3
+
+- 預設值： `false`
+- 不接受值
+
+### `--version`, `-V`
+
+顯示此應用程式版本
+
+- 預設值： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或禁用 — 無 — ansi）ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定&quot;—ansi&quot;選項
+
+- 預設值： `false`
+- 不接受值
+
+### `--no-interaction`, `-n`
+
+不要提出任何互動式問題
+
+- 預設值： `false`
+- 不接受值
+
 
 ## `help`
 
@@ -56,7 +208,7 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -84,14 +236,13 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -109,7 +260,7 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 清單命令
 
 ```bash
-bin/magento list [--raw] [--format FORMAT] [--] [<namespace>]
+bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 
@@ -132,18 +283,16 @@ bin/magento list [--raw] [--format FORMAT] [--] [<namespace>]
 - 預設值： `txt`
 - 需要值
 
+### `--short`
 
-## `admin:adobe-ims:disable`
+跳過說明命令參數
 
-停用Adobe IMS模組
-
-```bash
-bin/magento admin:adobe-ims:disable
-```
+- 預設值： `false`
+- 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -171,14 +320,70 @@ bin/magento admin:adobe-ims:disable
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
+
+- 預設值： `false`
+- 不接受值
+
+### `--no-interaction`, `-n`
+
+不要提出任何互動式問題
+
+- 預設值： `false`
+- 不接受值
+
+
+## `admin:adobe-ims:disable`
+
+停用Adobe IMS模組
+
+```bash
+bin/magento admin:adobe-ims:disable
+```
+
+### `--help`, `-h`
+
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
+
+- 預設值： `false`
+- 不接受值
+
+### `--quiet`, `-q`
+
+不輸出任何消息
+
+- 預設值： `false`
+- 不接受值
+
+### `--verbose`, `-v|-vv|-vvv`
+
+增加訊息的詳細程度：正常輸出為1，較詳細輸出為2，除錯為3
+
+- 預設值： `false`
+- 不接受值
+
+### `--version`, `-V`
+
+顯示此應用程式版本
+
+- 預設值： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或禁用 — 無 — ansi）ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -225,7 +430,7 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -253,14 +458,13 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -283,7 +487,7 @@ bin/magento admin:adobe-ims:info
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -311,14 +515,13 @@ bin/magento admin:adobe-ims:info
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -341,7 +544,7 @@ bin/magento admin:adobe-ims:status
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -369,14 +572,13 @@ bin/magento admin:adobe-ims:status
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -435,7 +637,7 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -463,14 +665,13 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -500,7 +701,7 @@ bin/magento admin:user:unlock <username>
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -528,14 +729,13 @@ bin/magento admin:user:unlock <username>
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -559,7 +759,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `config-types`
 
-以空格分隔的配置類型清單或忽略以轉儲所有 [範圍，主題，系統，i18n]
+以空格分隔的配置類型清單或忽略以轉儲所有 [範圍，系統，主題，i18n]
 
 - 預設值： `[]`
 
@@ -567,7 +767,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -595,14 +795,13 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -625,7 +824,7 @@ bin/magento app:config:import
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -653,14 +852,13 @@ bin/magento app:config:import
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -683,7 +881,7 @@ bin/magento app:config:status
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -711,14 +909,13 @@ bin/magento app:config:status
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -765,7 +962,7 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -793,14 +990,13 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -838,7 +1034,7 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -866,14 +1062,13 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -911,7 +1106,7 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -939,14 +1134,13 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -984,7 +1178,7 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1012,14 +1206,13 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1057,7 +1250,7 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1085,14 +1278,13 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1121,7 +1313,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1149,14 +1341,13 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1193,7 +1384,7 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1221,14 +1412,13 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1251,7 +1441,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1279,14 +1469,13 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1316,7 +1505,7 @@ y\n
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1344,14 +1533,13 @@ y\n
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1406,7 +1594,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1434,14 +1622,13 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1511,7 +1698,7 @@ bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1539,14 +1726,13 @@ bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1589,7 +1775,7 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1617,14 +1803,13 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1661,7 +1846,7 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1689,14 +1874,13 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1719,7 +1903,7 @@ bin/magento cron:remove
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1747,14 +1931,13 @@ bin/magento cron:remove
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1789,7 +1972,7 @@ bin/magento cron:run [--group GROUP] [--bootstrap BOOTSTRAP]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1817,14 +2000,13 @@ bin/magento cron:run [--group GROUP] [--bootstrap BOOTSTRAP]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1847,7 +2029,7 @@ bin/magento customer:hash:upgrade
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1875,14 +2057,13 @@ bin/magento customer:hash:upgrade
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1919,7 +2100,7 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -1947,14 +2128,13 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -1977,7 +2157,7 @@ bin/magento deploy:mode:show
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2005,14 +2185,13 @@ bin/magento deploy:mode:show
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2042,7 +2221,7 @@ bin/magento dev:di:info <class>
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2070,14 +2249,13 @@ bin/magento dev:di:info <class>
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2100,7 +2278,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2128,14 +2306,13 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2158,7 +2335,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2186,14 +2363,13 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2216,7 +2392,7 @@ bin/magento dev:profiler:disable
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2244,14 +2420,13 @@ bin/magento dev:profiler:disable
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2280,7 +2455,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2308,14 +2483,13 @@ bin/magento dev:profiler:enable [<type>]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2338,7 +2512,7 @@ bin/magento dev:query-log:disable
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2366,14 +2540,13 @@ bin/magento dev:query-log:disable
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2417,7 +2590,7 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2445,14 +2618,13 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2512,7 +2684,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2540,14 +2712,13 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2570,7 +2741,7 @@ bin/magento dev:template-hints:disable
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2598,14 +2769,13 @@ bin/magento dev:template-hints:disable
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2628,7 +2798,7 @@ bin/magento dev:template-hints:enable
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2656,14 +2826,13 @@ bin/magento dev:template-hints:enable
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2686,7 +2855,7 @@ bin/magento dev:template-hints:status
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2714,14 +2883,13 @@ bin/magento dev:template-hints:status
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2759,7 +2927,7 @@ PHPUnit的其他參數。 範例：&quot;-c&#39;-filter=MyTest&#39;&quot;（無�
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2787,14 +2955,13 @@ PHPUnit的其他參數。 範例：&quot;-c&#39;-filter=MyTest&#39;&quot;（無�
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2831,7 +2998,7 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2859,14 +3026,13 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2909,7 +3075,7 @@ bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -2937,14 +3103,13 @@ bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -2976,7 +3141,7 @@ bin/magento downloadable:domains:add [<domains>...]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3004,14 +3169,13 @@ bin/magento downloadable:domains:add [<domains>...]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3043,7 +3207,7 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3071,14 +3235,13 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3101,7 +3264,7 @@ bin/magento downloadable:domains:show
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3129,14 +3292,13 @@ bin/magento downloadable:domains:show
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3159,7 +3321,7 @@ bin/magento encryption:payment-data:update
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3187,14 +3349,13 @@ bin/magento encryption:payment-data:update
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3236,7 +3397,7 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3264,14 +3425,13 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3321,7 +3481,7 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3349,14 +3509,13 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3396,7 +3555,7 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3424,14 +3583,13 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3454,7 +3612,7 @@ bin/magento indexer:info
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3482,14 +3640,13 @@ bin/magento indexer:info
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3521,7 +3678,7 @@ bin/magento indexer:reindex [<index>...]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3549,14 +3706,13 @@ bin/magento indexer:reindex [<index>...]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3588,7 +3744,7 @@ bin/magento indexer:reset [<index>...]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3616,14 +3772,13 @@ bin/magento indexer:reset [<index>...]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3657,7 +3812,7 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3685,14 +3840,13 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3729,7 +3883,7 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3757,14 +3911,13 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3796,7 +3949,7 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3824,14 +3977,13 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3863,7 +4015,7 @@ bin/magento indexer:show-mode [<index>...]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3891,14 +4043,13 @@ bin/magento indexer:show-mode [<index>...]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3930,7 +4081,7 @@ bin/magento indexer:status [<index>...]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -3958,14 +4109,13 @@ bin/magento indexer:status [<index>...]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -3988,7 +4138,7 @@ bin/magento info:adminuri
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4016,14 +4166,13 @@ bin/magento info:adminuri
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4046,7 +4195,7 @@ bin/magento info:backups:list
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4074,14 +4223,13 @@ bin/magento info:backups:list
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4104,7 +4252,7 @@ bin/magento info:currency:list
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4132,14 +4280,13 @@ bin/magento info:currency:list
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4169,7 +4316,7 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4197,14 +4344,13 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4234,7 +4380,7 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4262,14 +4408,13 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4299,7 +4444,7 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4327,14 +4472,13 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4357,7 +4501,7 @@ bin/magento info:language:list
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4385,14 +4529,13 @@ bin/magento info:language:list
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4415,7 +4558,7 @@ bin/magento info:timezone:list
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4443,14 +4586,13 @@ bin/magento info:timezone:list
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4489,7 +4631,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4517,14 +4659,13 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4575,7 +4716,7 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4603,14 +4744,13 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4643,7 +4783,7 @@ bin/magento inventory-geonames:import <countries>...
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4671,14 +4811,13 @@ bin/magento inventory-geonames:import <countries>...
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4730,7 +4869,7 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4758,14 +4897,13 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4801,7 +4939,7 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4829,14 +4967,13 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4872,7 +5009,7 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4900,14 +5037,13 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4936,7 +5072,7 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -4964,14 +5100,13 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -4994,7 +5129,7 @@ bin/magento media-content:sync
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5022,14 +5157,13 @@ bin/magento media-content:sync
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5052,7 +5186,7 @@ bin/magento media-gallery:sync
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5080,14 +5214,13 @@ bin/magento media-gallery:sync
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5110,7 +5243,7 @@ bin/magento module:config:status
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5138,14 +5271,13 @@ bin/magento module:config:status
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5204,7 +5336,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5232,14 +5364,13 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5298,7 +5429,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5326,14 +5457,13 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5385,7 +5515,7 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5413,14 +5543,13 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5501,7 +5630,7 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5529,14 +5658,13 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5582,7 +5710,7 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5610,14 +5738,13 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5640,7 +5767,7 @@ bin/magento queue:consumers:list
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5668,14 +5795,70 @@ bin/magento queue:consumers:list
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
+
+- 預設值： `false`
+- 不接受值
+
+### `--no-interaction`, `-n`
+
+不要提出任何互動式問題
+
+- 預設值： `false`
+- 不接受值
+
+
+## `queue:consumers:restart`
+
+重新啟動MessageQueue消費者
+
+```bash
+bin/magento queue:consumers:restart
+```
+
+### `--help`, `-h`
+
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
+
+- 預設值： `false`
+- 不接受值
+
+### `--quiet`, `-q`
+
+不輸出任何消息
+
+- 預設值： `false`
+- 不接受值
+
+### `--verbose`, `-v|-vv|-vvv`
+
+增加訊息的詳細程度：正常輸出為1，較詳細輸出為2，除錯為3
+
+- 預設值： `false`
+- 不接受值
+
+### `--version`, `-V`
+
+顯示此應用程式版本
+
+- 預設值： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或禁用 — 無 — ansi）ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5742,7 +5925,7 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5770,14 +5953,13 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5800,7 +5982,7 @@ bin/magento remote-storage:sync
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5828,14 +6010,13 @@ bin/magento remote-storage:sync
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5865,7 +6046,7 @@ bin/magento sampledata:deploy [--no-update]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5893,14 +6074,13 @@ bin/magento sampledata:deploy [--no-update]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5930,7 +6110,7 @@ bin/magento sampledata:remove [--no-update]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -5958,14 +6138,13 @@ bin/magento sampledata:remove [--no-update]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -5988,7 +6167,7 @@ bin/magento sampledata:reset
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -6016,14 +6195,13 @@ bin/magento sampledata:reset
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -6046,7 +6224,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -6074,14 +6252,13 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -6104,7 +6281,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -6132,14 +6309,13 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -6175,7 +6351,7 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -6203,14 +6379,13 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -6233,7 +6408,7 @@ bin/magento security:tfa:providers
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -6261,14 +6436,13 @@ bin/magento security:tfa:providers
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -6304,7 +6478,7 @@ bin/magento security:tfa:reset <user> <provider>
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -6332,14 +6506,13 @@ bin/magento security:tfa:reset <user> <provider>
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -6389,7 +6562,7 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -6417,14 +6590,13 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -6442,14 +6614,8 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 建立或修改部署配置
 
 ```bash
-bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--id_salt ID_SALT] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
-
-### `--backend-frontname`
-
-後端Frontname（如果遺失則會自動產生）
-
-- 需要值
 
 ### `--enable-debug-logging`
 
@@ -6460,6 +6626,18 @@ bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-d
 ### `--enable-syslog-logging`
 
 啟用syslog日誌記錄
+
+- 需要值
+
+### `--backend-frontname`
+
+後端Frontname（如果遺失則會自動產生）
+
+- 需要值
+
+### `--id_salt`
+
+GraphQl鹽
 
 - 需要值
 
@@ -6956,7 +7134,7 @@ Zookeeper保存鎖的路徑。 預設路徑為：/magento/locks
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -6984,14 +7162,13 @@ Zookeeper保存鎖的路徑。 預設路徑為：/magento/locks
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -7020,7 +7197,7 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -7048,14 +7225,13 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -7105,7 +7281,7 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -7133,14 +7309,13 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -7170,7 +7345,7 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -7198,14 +7373,13 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -7241,7 +7415,7 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -7269,14 +7443,13 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -7305,7 +7478,7 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -7333,14 +7506,13 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -7363,7 +7535,7 @@ bin/magento setup:di:compile
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -7391,14 +7563,13 @@ bin/magento setup:di:compile
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -7416,14 +7587,8 @@ bin/magento setup:di:compile
 安裝Magento應用程式
 
 ```bash
-bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--id_salt ID_SALT] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
-
-### `--backend-frontname`
-
-後端Frontname（如果遺失則會自動產生）
-
-- 需要值
 
 ### `--enable-debug-logging`
 
@@ -7434,6 +7599,18 @@ bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debu
 ### `--enable-syslog-logging`
 
 啟用syslog日誌記錄
+
+- 需要值
+
+### `--backend-frontname`
+
+後端Frontname（如果遺失則會自動產生）
+
+- 需要值
+
+### `--id_salt`
+
+GraphQl鹽
 
 - 需要值
 
@@ -8008,7 +8185,7 @@ SSL連線的基礎URL。 已棄用，請使用config:set with path web/secure/ba
 
 ### `--search-engine`
 
-搜尋引擎。 值：elasticsearch5, elasticsearch6, elasticsearch7
+搜尋引擎。 值：elasticsearch5, elasticsearch7, elasticsearch8, opensearch
 
 - 需要值
 
@@ -8051,6 +8228,48 @@ Elasticsearch索引前置詞。
 ### `--elasticsearch-timeout`
 
 Elasticsearch伺服器逾時。
+
+- 需要值
+
+### `--opensearch-host`
+
+OpenSearch伺服器主機。
+
+- 需要值
+
+### `--opensearch-port`
+
+OpenSearch伺服器埠。
+
+- 需要值
+
+### `--opensearch-enable-auth`
+
+設為1以啟用驗證。 （預設為0，已停用）
+
+- 需要值
+
+### `--opensearch-username`
+
+OpenSearch用戶名。 僅適用於啟用HTTP驗證時
+
+- 需要值
+
+### `--opensearch-password`
+
+OpenSearch密碼。 僅適用於啟用HTTP驗證時
+
+- 需要值
+
+### `--opensearch-index-prefix`
+
+OpenSearch索引前置詞。
+
+- 需要值
+
+### `--opensearch-timeout`
+
+OpenSearch伺服器超時。
 
 - 需要值
 
@@ -8127,7 +8346,7 @@ Magento安裝將以乾式運行模式運行
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -8155,14 +8374,13 @@ Magento安裝將以乾式運行模式運行
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -8199,7 +8417,7 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -8227,14 +8445,13 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -8281,7 +8498,7 @@ var/backups中資料庫備份檔案的基本名稱
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -8309,14 +8526,13 @@ var/backups中資料庫備份檔案的基本名稱
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -8508,7 +8724,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -8536,14 +8752,13 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -8626,7 +8841,7 @@ SSL連線的基礎URL。 已棄用，請使用config:set with path web/secure/ba
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -8654,14 +8869,13 @@ SSL連線的基礎URL。 已棄用，請使用config:set with path web/secure/ba
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -8690,7 +8904,7 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -8718,14 +8932,13 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -8787,7 +9000,7 @@ Magento安裝將以乾式運行模式運行
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -8815,14 +9028,13 @@ Magento安裝將以乾式運行模式運行
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -8845,7 +9057,7 @@ bin/magento store:list
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -8873,14 +9085,13 @@ bin/magento store:list
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -8903,7 +9114,7 @@ bin/magento store:website:list
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -8931,14 +9142,13 @@ bin/magento store:website:list
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -8985,7 +9195,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -9013,14 +9223,13 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值
@@ -9084,7 +9293,7 @@ Web後端的埠
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示給定命令的幫助。 當沒有為 &lt;info>清單&lt;/info> 命令
 
 - 預設值： `false`
 - 不接受值
@@ -9112,14 +9321,13 @@ Web後端的埠
 
 ### `--ansi`
 
-強制ANSI輸出
+強制（或禁用 — 無 — ansi）ANSI輸出
 
-- 預設值： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+否定&quot;—ansi&quot;選項
 
 - 預設值： `false`
 - 不接受值

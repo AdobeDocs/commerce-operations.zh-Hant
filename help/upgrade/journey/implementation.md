@@ -1,9 +1,9 @@
 ---
 title: 升級實作
-description: 了解Adobe Commerce和Magento Open Source專案的升級實作不同階段。
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+description: 了解Adobe Commerce專案的升級實作不同階段。
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '824'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 以下是您可能要納入徹底分析的項目：
 
-- **目標版本範圍** — 關於 [商務DevDocs](https://devdocs.magento.com) 合作夥伴發行網路研討會的資訊提供您必須了解有關target升級的所有詳細資訊。
+- **目標版本範圍** — 關於 [Experience League](../../release/release-notes/overview.md) 合作夥伴發行網路研討會的資訊提供您必須了解有關target升級的所有詳細資訊。
 
 - **[!DNL Upgrade Compatibility Tool]結果** — 此工具可讓您比較目前的程式碼與目標版本的程式碼，並針對所有需要解決的問題製作報表，讓任何升級都更快更輕鬆。 請參閱 [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). 報表的主要詳細資料包括：
 
@@ -38,13 +38,13 @@ ht-degree: 1%
 
    | 服務 | 最新版本 | 升級至 | 附註 |
    |-----------------|-----------------|------------|----------------------------------------------------------|
-   | PHP | 7.2.33 | 8.1 |  |
-   | 雷迪斯 | 5.05 | 6.0 |  |
-   | [!DNL RabbitMQ] | 3.7 | 3.8 | 目前未使用，但我們應考慮使用它 |
-   | MariaDB（雲） | 10.2.33 | 10.4 |  |
-   | MySQL | 8.0 |  |  |
-   | 撰寫器 | 1.9.2 | 2.0 |  |
-   | Elasticsearch | 7.7 | 7.10 |  |
+   | PHP | 7.4 | 8.1 |  |
+   | 雷迪斯 | 6.0 | 6.2 |  |
+   | [!DNL RabbitMQ] | 3.8 | 3.9 | 目前未使用，但我們應考慮使用它 |
+   | MariaDB（雲） | 10.4 | 10.6 |  |
+   | MySQL | 8.0 | -/-/ |  |
+   | 撰寫器 | 1.9.2 | 2.2 |  |
+   | Elasticsearch | 7.10 | 7.17 |  |
 
 - **擴充功能和協力廠商模組** — 使用此表格範本可協助您了解擴充功能和自訂的狀態，以便做出策略決策並定義動作。 這是取代任何可能為Adobe Commerce或Magento Open Source原生的擴充功能的機會，將專案的複雜性降至最低。 使用 `bin/magento module:status` 命令，查看模組和擴展的清單。
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 - **composer.json中需要更新的撰寫器套件和相依性。**
 
-此外，合作夥伴可以參與 [Adobe Commerce測試版計畫](https://devdocs.magento.com/release/beta-program.html) 並利用搶鮮版機會，在即將發行的版本中搶先存取程式碼。 搶先存取程式碼，可協助開發人員有充足的時間在正式發行(GA)日期前完成升級。 測試版程式碼通常會在正式發行日期前五週發行，而搶鮮版則會提前兩週發行。 若為2.4.4版，Adobe會在正式發行日期（2022年3月8日）前五個月開始發行測試版程式碼，因此合作夥伴現在可以開始為該升級做準備 [註冊程式](https://community.magento.com/t5/Magento-DevBlog/BREAKING-NEWS-2-4-4-beta-releases-are-coming-soon/ba-p/484310).
+此外，合作夥伴可以參與 [Adobe Commerce測試版](../../release/beta.md) 並利用搶鮮版機會，在即將發行的版本中搶先存取程式碼。 搶先存取程式碼，可協助開發人員有充足的時間在正式發行(GA)日期前完成升級。 測試版程式碼通常會在正式發行日期前五週發行，而搶鮮版則會提前兩週發行。
 
 ## 開發與品質保證
 
@@ -84,4 +84,4 @@ UAT是升級的最後幾個階段之一，需要檢閱和驗證網站。 您還�
 
 網站啟動後，請務必檢查分析資料、Google Search Console和其他資源，以確保沒有非預期的問題，且一切都正常運作。
 
-通過精心設計的監控工具來關注效能始終是一個好主意。 監控網站效能的工具和方法很多，因此請務必挑選與您的組織搭配良好的工具和方法。 我們建議使用我們雲端基礎架構管理系統的Adobe Commerce客戶利用以下服務： [新文物](https://devdocs.magento.com/cloud/project/new-relic.html) 監視網站效能。
+通過精心設計的監控工具來關注效能始終是一個好主意。 監控網站效能的工具和方法很多，因此請務必挑選與您的組織搭配良好的工具和方法。 我們建議使用我們雲端基礎架構管理系統的Adobe Commerce客戶利用以下服務： [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) 監視網站效能。

@@ -1,10 +1,10 @@
 ---
 title: 自動配置主資料庫
 description: 請參閱自動配置拆分資料庫解決方案的指南。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: d029d1ac66bff2ac34b22b2d3b8aafbfc062e082
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -125,6 +125,10 @@ bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbna
 
 ```bash
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"
+```
+
+```bash
+bin/magento setup:upgrade
 ```
 
 會顯示下列訊息以確認設定成功：

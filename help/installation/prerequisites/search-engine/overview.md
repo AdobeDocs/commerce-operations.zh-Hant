@@ -1,9 +1,9 @@
 ---
 title: 搜尋引擎必要條件
 description: 請依照下列步驟，安裝並設定支援的搜尋引擎軟體，以安裝Adobe Commerce和Magento Open Source的內部部署。
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: d3cfd97450164d38fd340b538099739601573d64
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 支援的版本
 
-安裝Adobe Commerce或Magento Open Source2.4.4之前，您必須先安裝並設定Elasticsearch或OpenSearch。
+安裝Adobe Commerce 2.4.4和更新版本之前，您必須先安裝並設定Elasticsearch或OpenSearch。
 
 請參閱 [系統需求](../../system-requirements.md) 以取得特定版本資訊。
 
@@ -164,4 +164,4 @@ Elasticsearch需要JDK 1.8或更高版本。 請參閱 [安裝Java軟體開發�
 
 ## 其他資源
 
-如需詳細資訊，請參閱 [Elasticsearch檔案](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html).
+請參閱 [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) 或 [OpenSearch](https://opensearch.org/docs/latest/) 檔案。

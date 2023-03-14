@@ -1,8 +1,8 @@
 ---
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 1%
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 # 驗證通信是否安全
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## 在管理員中設定HTTP Basic驗證
 
-執行與 [搜尋引擎設定](../configuration/search/configure-search-engine.md) *expert* 按一下 **[!UICONTROL Yes]** 從 **[!UICONTROL Enable Elasticsearch HTTP Auth]** 列出並在提供的欄位中輸入您的使用者名稱和密碼。
+執行與 [搜尋引擎設定](../configuration/search/configure-search-engine.md) *expert* 按一下 **[!UICONTROL Yes]** 從 **[!UICONTROL Enable HTTP Auth]** 列出並在提供的欄位中輸入您的使用者名稱和密碼。
 
 按一下 **[!UICONTROL Test Connection]** 確認運作正常，然後按一下 **[!UICONTROL Save Config]**.
 
-您必須刷新Magento快取並重新索引，才能繼續。
+您必須刷新快取並重新索引，才能繼續。

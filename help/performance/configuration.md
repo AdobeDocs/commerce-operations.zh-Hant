@@ -1,9 +1,9 @@
 ---
 title: 設定最佳實務
 description: 使用這些最佳實務來最佳化Adobe Commerce或Magento Open Source部署的回應時間。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5b455cb1285ce764a0517008fb8b692f3899066d
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,9 @@ ht-degree: 0%
 
 索引器可以在 **[!UICONTROL Update on Save]** 或 **[!UICONTROL Update on Schedule]** 模式。 此 **[!UICONTROL Update on Save]** 模式會在目錄或其他資料變更時立即進行索引。 此模式假設您商店中的更新和瀏覽操作強度較低。 它可能導致在高負載期間出現顯著延遲，以及資料不可用。 建議您使用 **按計畫更新** 模式，因為它儲存有關資料更新的資訊，並通過特定cron作業按背景中的部分執行索引。 您可以變更每個 [!DNL Commerce] 索引器  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** 設定頁面。
 
-在MariaDB 10.4上重新編製索引所需的時間比其他MariaDB或 [!DNL MySQL] 版本。 建議修改預設的MariaDB配置，並設定下列參數：
-
-* [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
-* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
+>[!TIP]
+>
+>與其他MariaDB或 [!DNL MySQL] 版本。 建議修改預設的MariaDB配置設定，如 [安裝必備條件](../installation/prerequisites/database/mysql.md).
 
 ## 快取
 
@@ -49,6 +48,10 @@ ht-degree: 0%
 >[!INFO]
 >
 >只有在 **[!UICONTROL Backorder with any mode]** 已啟用。
+
+>[!INFO]
+>
+>此選項也適用於 [非同步訂單放置](high-throughput-order-processing.md#asynchronous-order-placement) 與 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html).
 
 ## 用戶端最佳化設定
 
@@ -80,6 +83,18 @@ ht-degree: 0%
 * 與使用JS捆綁相比，啟動HTTP2通訊協定可能是個不錯的選擇。 協定提供的好處幾乎相同。
 * 我們不建議使用已棄用的設定，例如合併JS和CSS檔案，因為這些設定是專為頁面的「HEAD」區段中同步載入的JS所設計。 使用此技術可能會導致捆綁，並要求JS邏輯無法正常運作。
 
+## 客戶區段驗證
+
+具有大量 [客戶區段](https://docs.magento.com/user-guide/marketing/customer-segments.html) 客戶動作（例如客戶登入和將產品新增至購物車）可能會導致效能大幅下降。
+
+客戶動作會觸發客戶區段的驗證程式，而這會導致效能降低。 依預設，Adobe Commerce會即時驗證每個區段，以定義哪些客戶區段相符，哪些不相符。
+
+為避免效能下降，您可以設定 **[!UICONTROL Real-time Check if Customer is Matched by Segment]** 系統配置選項 **否** 若要透過單一合併條件SQL查詢驗證客戶區段。
+
+若要啟用此最佳化，請前往 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] >[!UICONTROL Real-time Check if Customer is Matched by Segment]**.
+
+如果系統中有許多客戶區段，此設定可改善客戶區段驗證的效能。 但無法搭配使用 [拆分資料庫](../configuration/storage/multi-master.md) 實作或沒有註冊客戶時。
+
 ## 資料庫維護計畫 {#database}
 
 建議您為測試和生產執行個體執行定期資料庫備份。 由於備份操作的I/O密集性，您可能會遇到備份速度較慢和潛在問題。 由於可用資源爭用，同時運行多個環境的資料庫進程可能運行速度較慢。
@@ -87,3 +102,24 @@ ht-degree: 0%
 為了獲得更好的效能，請安排備份連續運行，一次運行一次，在非高峰時間運行。 此方法可避免I/O爭用，並縮短完成時間，尤其是對於較小的實例、較大的資料庫等。
 
 例如，建議您在商店遇到較低造訪次數時，先排程生產資料庫的備份，再排程中繼資料庫。
+
+## 網格中的產品數限制
+
+為了提高大型目錄的產品網格效能，建議使用 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] >[!UICONTROL Limit Number of Products in Grid]** 系統配置設定。
+
+預設情況下禁用此系統配置設定。 您可以啟用此功能，將格線中的產品數量限制為特定值。 **[!UICONTROL Records Limit]** 是可自訂的設定，預設最小值為 `20000`.
+當 **[!UICONTROL Limit Number of Products in Grid]** 設定已啟用，且網格中的產品數大於記錄限制，則返回有限的記錄集合。 達到限制時，會從網格標題中隱藏找到的記錄總數、選定記錄數和分頁元素。
+
+當網格中的產品總數受限時，它不會影響產品網格的質量操作。 它只影響產品網格表示層。 例如， `20000` 格線中的產品，則使用者點按 **[!UICONTROL Select All]**，選取 **[!UICONTROL Update attributes]** 大量動作，並更新某些屬性。 因此，所有產品都會更新，而非有限的 `20000` 記錄。
+
+產品格線限制只會影響UI元件使用的產品集合。 因此，並非所有產品網格都受此限制影響。 僅使用 `Magento\Catalog\Ui\DataProvider\Product\ProductCollection`.
+您只能限制下列頁面上的產品格線集合：
+
+* 目錄產品網格
+* 添加相關/向上銷售/交叉銷售產品網格
+* 將產品添加到捆綁產品
+* 將產品添加到組產品
+* 管理員建立訂單頁
+
+如果您不希望產品格線受到限制，建議您針對結果集合使用更精確的篩選器，讓項目少於 **[!UICONTROL Records Limit]**.
+

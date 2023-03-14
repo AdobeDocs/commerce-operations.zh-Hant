@@ -1,10 +1,10 @@
 ---
 title: 本地安裝必備條件
 description: 進一步了解Adobe Commerce和Magento Open Source的內部部署安裝所需的軟體相依性。
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 1%
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
 
@@ -100,7 +100,15 @@ owners.
 
 要安裝或升級MySQL，請參見 [MySQL](database/mysql.md).
 
-### Elasticsearch或OpenSearch
+### 搜尋引擎
+
+要驗證OpenSearch安裝，請執行以下操作：
+
+```bash
+curl -XGET '<opensearch-hostname>:<opensearch-port>'
+```
+
+驗證Elasticsearch安裝：
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
