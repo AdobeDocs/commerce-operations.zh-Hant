@@ -1,7 +1,7 @@
 ---
 title: 完整必要條件
 description: 完成這些先決條件步驟，以準備您的Adobe Commerce專案以進行升級。
-source-git-commit: 45c544a5ec9a17ad631fce55e322e2949ecdd3c2
+source-git-commit: 5f86717d79569cac3f95a4c10a55b48f92858466
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
@@ -111,7 +111,7 @@ Adobe Commerce 2.4.6已推出對Elasticsearch8.x的支援。下列指示顯示�
 1. 在Adobe Commerce專案的根目錄中，更新您的撰寫器相依性以移除 `Magento_Elasticsearch7` 模組和安裝 `Magento_Elasticsearch8` 模組。
 
    ```bash
-   composer update magento/module-elasticsearch-8 --update-with-all-dependencies
+   composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
 
 1. 更新專案元件。
