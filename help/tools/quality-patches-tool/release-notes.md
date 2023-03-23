@@ -1,9 +1,9 @@
 ---
 title: 發行說明
 description: 了解適用於Adobe Commerce的修補程式及其解決的問題。
-source-git-commit: f1c6c816695e01fc30d0ab0a7a9c43122a130cb5
+source-git-commit: b71819d123856d03dab872a1652b325ffe7178a6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '11561'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,27 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需有關 [!DNL quality patches] 由社群建立以供Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.29 {#v1-1-29}
+
+* **ACSD-49389** (適用於Adobe Commerce和Magento Open Source>=2.4.0 &lt;2.4.7) — 修正訂單未準備好接收時，API傳送準備接收電子郵件的問題。
+* **ACSD-49822** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正 [!UICONTROL Requisition List] 頁面未反映在 [!UICONTROL Print Requisition List].
+* **ACSD-48771** (適用於Adobe Commerce和Magento Open Source>=2.4.5 &lt;2.4.7) — 修正從舊版升級column-block內容類型的問題 [!DNL Page Builder] 版本。
+* **ACSD-49464** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正當orderId不同時，發票、發運和貸項通知單未從封存移回的問題。
+* **ACSD-49773** (適用於Adobe Commerce和Magento Open Source>=2.4.2 &lt;2.4.6) — 修正將AWS S3用作遠端儲存時，產品匯出失敗的問題。
+* **ACSD-49748** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正無法傳送邀請的問題。
+* **ACSD-49502** (適用於Adobe Commerce >=2.4.3 &lt;2.4.7) — 修正將測試更新套用至可下載產品後，可下載連結未正確更新的問題。
+* **ACSD-49527** (適用於Adobe Commerce >=2.4.2 &lt;2.4.7) — 修正GraphQL公司角色無法正確顯示分頁的問題。
+* **ACSD-49706** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.4.7) — 修正未選取任何值時，視覺色票屬性的預設值會儲存的問題。
+* **ACSD-49835** (適用於Adobe Commerce和Magento Open Source>=2.4.5 &lt;2.4.7) — 修正「使用預設」核取方塊值無法在多選屬性的儲存層級正確儲存的問題。
+* **ACSD-49898** (針對Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.6) — 修正當套件產品的特殊價格超過1000時，產品格線會擲回例外狀況的問題。
+* **ACSD-50234** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.4.5) — 修正使用下列項目下訂單時，確認電子郵件中出現錯誤客戶名稱的問題 [!DNL PayPal].
+* **ACSD-49960** (適用於Adobe Commerce和Magento Open Source>=2.4.5 &lt;2.4.7) — 修正依日期篩選無法用於客戶訂單格線的問題。
+* **ACSD-49849** (適用於Adobe Commerce和Magento Open Source>=2.3.7 &lt;2.4.6) — 修正將客戶電子郵件取代為 [!DNL PayPal] 使用下訂單時發送電子郵件 [!DNL PayPal Express] 透過GraphQL。
+* **ACSD-49839** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正當產品的SKU中有單引號或雙引號時，「共用目錄」定價和結構在「管理」中擲回錯誤的問題。
+* **ACSD-49970** (適用於Adobe Commerce和Magento Open Source>=2.4.5 &lt;2.4.7) — 修正當GraphQL錯誤處理錯誤時 [!DNL New Relic] 報表已開啟。
+* **ACSD-50260** (適用於Adobe Commerce和Magento Open Source>=2.4.5 &lt;2.4.7) — 修正GraphQL產品搜尋結果限制為10,000個結果的問題。
+* **ACSD-48813** (針對Adobe Commerce和Magento Open Source>=2.4.3 &lt;2.4.7) — 修正搜尋根據屬性的搜尋權重而未顯示相關結果的問題。
 
 ## v1.1.28 {#v1-1-28}
 
