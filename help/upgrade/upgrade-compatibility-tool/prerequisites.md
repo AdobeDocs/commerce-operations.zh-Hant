@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] 要求」'
 description: 驗證您的系統是否滿足運行 [!DNL Upgrade Compatibility Tool] 填入Adobe Commerce專案的命令列介面。
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -79,3 +79,5 @@ Adobe Commerce僅支援Linux作業系統。 您可以執行 [!DNL Upgrade Compat
 必須 [!DNL Upgrade Compatibility Tool] 存取Adobe Commerce執行個體的原始碼。 例如，您可以將其安裝在一台伺服器上，並將其指向另一台伺服器上的Adobe Commerce安裝。
 
 如果您執行 [!DNL Upgrade Compatibility Tool] 針對具有大型模組和檔案的Adobe Commerce執行個體，此工具可能需要大量記憶體（至少2GB）。
+
+執行 [!DNL Upgrade Compatibility Tool] 從 [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) for [Adobe Commerce雲基礎架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} 專案。

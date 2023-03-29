@@ -1,9 +1,9 @@
 ---
 title: "運行 [!DNL Upgrade Compatibility Tool]"
 description: 請依照下列步驟執行 [!DNL Upgrade Compatibility Tool] 填入Adobe Commerce專案的命令列介面。
-source-git-commit: e704748a7ceaa58a5a8d7004c81ac766dec4e7f1
+source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ chmod +x ./uct/bin/uct
 | `dbschema:diff` | 此命令顯示兩個指定的Adobe Commerce版本之間資料庫架構的所有差異。 |
 | `core:code:changes` | 此命令會將您目前的Adobe Commerce安裝與乾淨的Vanilla安裝進行比較。 |
 | `refactor` | 此命令會自動修正縮減的問題集。 |
-| `graphql:compare` | 此命令提供了查看兩個GraphQL端點並比較其架構的選項。 |
+| `graphql:compare` | 此命令提供查看兩個GraphQL端點並比較其結構的選項。 |
 | `list` | 此命令返回所有 [!DNL Upgrade Compatibility Tool] 可用命令。 |
 | `help` | 此命令返回所有可用值 `help`選項 [!DNL Upgrade Compatibility Tool]. 此命令可以運行，也可以運行前面命令的選項。 |
 
@@ -182,7 +182,7 @@ bin/uct refactor <dir>
 
 ## 使用 `graphql:compare` 命令
 
-此命令提供 [!DNL Upgrade Compatibility Tool] 要查看兩個GraphQL端點並比較它們的結構，以期在它們之間尋找中斷和危險的更改：
+此命令提供 [!DNL Upgrade Compatibility Tool] 若要查看兩個GraphQL端點，並比較其結構，以找出其中的突破與危險變更：
 
 ```bash
 bin/uct graphql:compare <schema1> <schema2>
@@ -207,7 +207,7 @@ bin/uct graphql:compare <schema1> <schema2>
 bin/uct list
 ```
 
-## 使用 `--help` 命令
+## 使用 `help` 命令
 
 若要查看 [!DNL Upgrade Compatibility Tool] 命令常規選項和幫助，運行
 
@@ -260,6 +260,7 @@ bin/uct upgrade:check --help
 - 請避免有兩個模組具有相同名稱。
 - 關注Adobe Commerce [編碼標準](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [升級指南](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) 最佳實務。
+- 執行 [!DNL Upgrade Compatibility Tool] 從 [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) for [Adobe Commerce雲基礎架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} 專案。
 
 ## 最佳化結果
 
