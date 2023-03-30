@@ -1,17 +1,17 @@
 ---
-source-git-commit: d17847a7151c5e88f763b334e1ee659ca3ca6bcf
+source-git-commit: 4b767014f325bef7e07cea11d01089206bf44caf
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 5%
+source-wordcount: '475'
+ht-degree: 0%
 
 ---
-# Adobe Commerce使用者檔案
+# Adobe Commerce技術檔案
 
 我們歡迎來自我們的社群，以及來自檔案團隊以外的Adobe員工貢獻心力。
 
 ## Adobe開放原始碼行為准則
 
-本專案已採用 [Adobe 開放原始碼管理辦法](code-of-conduct.md)或 [.NET Foundation 管理辦法](https://dotnetfoundation.org/code-of-conduct)。如需詳細資訊，請參閱[貢獻](contributing.md)一文。
+本項目已採用 [Adobe開放原始碼行為准則](code-of-conduct.md) 或 [.NET Foundation行為准則](https://dotnetfoundation.org/code-of-conduct). 如需詳細資訊，請參閱 [貢獻](contributing.md) 文章。
 
 ## 關於您對Adobe內容的貢獻
 
@@ -51,13 +51,6 @@ If you submit a pull request with significant changes to documentation and code 
 
 * [Markdown基本介紹](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [可列印的Markdown速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## 標籤
-
-在公開存放庫中，自動化標籤會指派給提取請求，以協助我們管理提取請求工作流程，並協助您了解提取請求的執行狀況：
-
-* **傳送至作者的變更**:提交人已收到擱置提取請求的通知。
-* **準備合併**:準備由我們的提取請求審核團隊審核。
 
 ## 範本
 
