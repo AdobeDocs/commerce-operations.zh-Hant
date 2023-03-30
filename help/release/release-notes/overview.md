@@ -1,7 +1,7 @@
 ---
 title: Adobe Commerce和Magento Open Source發行說明
 description: 了解如何尋找特定Adobe Commerce和Magento Open Source版本的資訊。
-source-git-commit: da6741586d0fb8e029ee5a9342e1299176df298e
+source-git-commit: 14724592f7dbc116b0fa71b755d7f4f711d94fb2
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
         <p>了解Adobe Commerce和Magento Open Source的最新改善項目，包括增強功能、安全性、錯誤修正和已知問題。</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">向後不相容的更改</a></li>
-            <li><a href="commerce/2-4-5.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-5.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-5-p1.md">安全補丁</a></li>
+            <li><a href="commerce/2-4-6.md">Adobe Commerce</a></li>
+            <li><a href="open-source/2-4-6.md">Magento Open Source</a></li>
+            <li><a href="security/2-4-5-p2.md">安全補丁</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe安全性公告</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">適用於Adobe Commerce的B2B</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>
