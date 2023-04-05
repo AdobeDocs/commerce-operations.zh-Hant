@@ -1,9 +1,9 @@
 ---
 title: 部署靜態視圖檔案
 description: 了解如何在生產模式期間將靜態檔案寫入商務檔案系統。
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-使用靜態視圖檔案部署命令可以寫 [靜態檔案](https://glossary.magento.com/static-files) 當商務軟體設定為 [生產模式](../bootstrap/application-modes.md#production-mode).
+當為設定Commerce軟體時，靜態視圖檔案部署命令允許您將靜態檔案寫入Commerce檔案系統 [生產模式](../bootstrap/application-modes.md#production-mode).
 
 詞語 _靜態檢視檔案_ 是指下列項目：
 

@@ -1,9 +1,9 @@
 ---
 title: 卸載模組
 description: 請依照下列步驟，解除安裝Adobe Commerce或Magento Open Source模組。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此命令僅檢查 `composer.json` 檔案。 如果您解除安裝 [模組](https://glossary.magento.com/module) 是 _not_ 在 `composer.json` 檔案中，此命令將卸載該模組，而不檢查相依性。 此命令可 _not_&#x200B;但是，請從檔案系統中移除模組的程式碼。 您必須使用檔案系統工具來移除模組的程式碼(例如 `rm -rf <path to module>`)。 另外，您可以 [disable](manage-modules.md) 非撰寫器模組。
+>此命令僅檢查 `composer.json` 檔案。 如果卸載的模組 _not_ 在 `composer.json` 檔案中，此命令將卸載該模組，而不檢查相依性。 此命令可 _not_&#x200B;但是，請從檔案系統中移除模組的程式碼。 您必須使用檔案系統工具來移除模組的程式碼(例如 `rm -rf <path to module>`)。 另外，您可以 [disable](manage-modules.md) 非撰寫器模組。
 
 命令用法：
 
@@ -30,7 +30,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 模組卸載命令執行以下任務：
 
-1. 驗證指定的模組是否存在於代碼庫中，並且由 [撰寫器](https://glossary.magento.com/composer).
+1. 驗證指定的模組是否存在於代碼庫中，並且是由撰寫器安裝的包。
 
    此命令有效 _僅限_ 模組定義為撰寫器套件。
 
@@ -60,7 +60,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
    >
    >解除安裝模組 _always_ 執行 `composer remove`. 此 `--remove-data` 選項刪除由模組 `Uninstall` 類別。
 
-1. 清除 [快取](https://glossary.magento.com/cache).
+1. 清除快取。
 1. 更新生成的類。
 1. 若 `--clear-static-content` 指定時清除 [生成的靜態視圖檔案](../../configuration/cli/static-view-file-deployment.md).
 1. 將儲存區帶出維護模式。
@@ -73,7 +73,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-備份模組檔案系統後卸載兩個模組， `pub/media` 檔案和資料庫表，但 _not_ 移除模組的 [資料庫模式](https://glossary.magento.com/database-schema) 或資料：
+備份模組檔案系統後卸載兩個模組， `pub/media` 檔案和資料庫表，但 _not_ 刪除模組的資料庫架構或資料：
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db

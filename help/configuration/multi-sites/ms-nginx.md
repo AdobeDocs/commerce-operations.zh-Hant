@@ -1,9 +1,9 @@
 ---
 title: 使用Nginx設定多個網站
 description: 請依照本教學課程，使用Nginx設定多個網站。
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ## 步驟2:建立原始虛擬主機
 
-此步驟探討如何在 [店面](https://glossary.magento.com/storefront). 您可以使用網站或儲存檢視；如果使用商店視圖，則必須相應地調整參數值。 您必須以使用者身分，完成本節中的工作 `sudo` 權限。
+此步驟探討如何在店面上載入網站。 您可以使用網站或儲存檢視；如果使用商店視圖，則必須相應地調整參數值。 您必須以使用者身分，完成本節中的工作 `sudo` 權限。
 
 只使用一個 [nginx虛擬主機檔案](#step-2-create-nginx-virtual-hosts)，您可以讓nginx設定簡單明瞭。 使用數個虛擬主機檔案，您可以自訂每個存放區(以針對 `french.mysite.mg` 例如)。
 

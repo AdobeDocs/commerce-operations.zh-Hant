@@ -1,9 +1,9 @@
 ---
 title: 系統需求
 description: 使用此參考資料來識別已透過Adobe Commerce和Magento Open Source版本測試的必要軟體相依性。
-source-git-commit: 61a477ec6118e4a228ddbb956e613fa3bec9c91c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Adobe Commerce和Magento Open Source需要下列系統工具才能執行部分�
 
 ### SSL
 
-- 有效 [安全證書](https://glossary.magento.com/security-certificate) 是HTTPS的必要項目。
+- HTTPS需要有效的安全證書。
 - 不支援自簽名SSL證書。
 - 傳輸層安全性(TLS)需求 — PayPal和 `repo.magento.com` 兩者皆需TLS 1.2或更新版本。
 

@@ -1,9 +1,9 @@
 ---
 title: 建立、編輯或解除鎖定管理員帳戶
 description: 請依照下列步驟管理您的Adobe Commerce或Magento Open Source管理應用程式的管理員帳戶。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 - [建立部署配置](deployment.md)
 - [至少啟用Magento授權和Magento用戶模組](manage-modules.md)
-- 建立 [資料庫模式](https://glossary.magento.com/database-schema)
+- 建立資料庫架構
 
 >[!NOTE]
 >

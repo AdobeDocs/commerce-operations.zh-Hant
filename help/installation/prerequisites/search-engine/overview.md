@@ -1,9 +1,9 @@
 ---
 title: 搜尋引擎必要條件
 description: 請依照下列步驟，安裝並設定支援的搜尋引擎軟體，以安裝Adobe Commerce和Magento Open Source的內部部署。
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 搜尋引擎必要條件
 
-自Adobe Commerce和Magento Open Source2.4起，所有安裝都必須設定為使用 [Elasticsearch](https://www.elastic.co) 或 [OpenSearch](https://opensearch.org/) 作為 [目錄](https://glossary.magento.com/catalog) 搜尋解決方案。
+自Adobe Commerce和Magento Open Source2.4起，所有安裝都必須設定為使用 [Elasticsearch](https://www.elastic.co) 或 [OpenSearch](https://opensearch.org/) 作為目錄搜尋解決方案。
 
 >[!NOTE]
 >

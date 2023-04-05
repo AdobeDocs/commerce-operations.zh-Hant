@@ -4,9 +4,9 @@ description: 了解設定私人內容區塊以最佳化店面效能的最佳實�
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 當私人內容區塊包含 `_isScopePrivate` 變數，則區塊無法快取。 由於未快取私人區塊，Adobe Commerce必須擷取每個客戶請求的相同資料，而增加伺服器負載。
 
-而非使用 `_isScopePrivate` 變數，建立區塊和範本以顯示不受使用者限制的資料。 此資料會由Adobe Commerce以使用者特定資料取代 [UI元件](https://glossary.magento.com/ui-component/)，可更有效率地處理預先轉譯資料。 如需指示，請參閱 [私人內容](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) 在 _[!DNL Commerce PHP Extensions Guide]_.
+而非使用 `_isScopePrivate` 變數，建立區塊和範本以顯示不受使用者限制的資料。 Adobe Commerce UI元件會以使用者特定資料取代此資料，以更有效率地處理預先轉譯的資料。 如需指示，請參閱 [私人內容](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) 在 _[!DNL Commerce PHP Extensions Guide]_.
 
 ## 受影響的產品和版本
 

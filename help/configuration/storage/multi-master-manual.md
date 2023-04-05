@@ -1,9 +1,9 @@
 ---
 title: 手動配置主資料庫
 description: 請參閱手動配置拆分資料庫解決方案的指南。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 手動拆分資料庫涉及：
 
-- 建立 [簽出](https://glossary.magento.com/checkout) 和訂單管理系統(OMS)資料庫
+- 建立結帳和訂單管理系統(OMS)資料庫
 - 運行一系列SQL指令碼，這些指令碼包括：
 
    - 放置外鍵
@@ -62,7 +62,7 @@ Adobe強烈建議您備份當前的資料庫和檔案系統，以便在此過程
 
 ## 設定其他主資料庫
 
-本節將討論如何為銷售和 [報價](https://glossary.magento.com/quote) 表格。
+本節討論如何為銷售表和報價表建立資料庫實例。
 
 **建立銷售和OMS報價資料庫**:
 
@@ -549,7 +549,7 @@ SET foreign_key_checks = 1;
 
 ## 參考指令碼
 
-本節提供可運行的指令碼，這些指令碼可打印受影響表的完整清單，而無需對其執行任何操作。 在手動分割資料庫之前，您可以使用它們來查看哪些表受到影響，如果您使用自訂的擴充功能，這將非常有用 [資料庫模式](https://glossary.magento.com/database-schema).
+本節提供可運行的指令碼，這些指令碼可打印受影響表的完整清單，而無需對其執行任何操作。 在手動拆分資料庫之前，可以使用它們查看哪些表受影響，如果使用自定義資料庫架構的擴展，這將非常有用。
 
 要使用這些指令碼：
 

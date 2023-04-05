@@ -1,9 +1,9 @@
 ---
 title: 資料遷移設定
 description: 了解如何開始將設定從Magento1移轉至Magento2，方法是使用 [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 >[!NOTE]
 >
->此命令不會遷移所有配置設定。 驗證Magento2中的所有設定 [管理](https://glossary.magento.com/admin) 開始之前。
+>此命令不會遷移所有配置設定。 在繼續操作之前，先驗證「Magento2管理員」中的所有設定。
 
 
 此 `Migration completed` 成功傳輸設定後，會顯示訊息。

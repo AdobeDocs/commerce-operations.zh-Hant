@@ -1,9 +1,9 @@
 ---
 title: 驗證安裝
 description: 請依照下列步驟，確認您的內部部署Adobe Commerce或Magento Open Source安裝是否成功。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 驗證安裝
 
-前往 [店面](https://glossary.magento.com/storefront) 在網頁瀏覽器中。 例如，如果您的安裝基礎 [URL](https://glossary.magento.com/url) is `http://www.example.com`，請在瀏覽器的位址或位置列中輸入。
+在網頁瀏覽器中前往店面。 例如，如果您的安裝基礎URL為 `http://www.example.com`，請在瀏覽器的位址或位置列中輸入。
 
 下圖顯示了一個樣例的店面頁面。 如果顯示如下，表示您的安裝成功！
 
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 ## 驗證管理員
 
-前往 [管理](https://glossary.magento.com/magento-admin) 在網頁瀏覽器中。 例如，如果您的安裝基礎URL為 `http://www.example.com`，而管理URI為 `admin_au1nT`，輸入 `http://www.example.com/admin_au1nT` 位址或位置列。
+在網頁瀏覽器中前往管理員。 例如，如果您的安裝基礎URL為 `http://www.example.com`，而管理URI為 `admin_au1nT`，輸入 `http://www.example.com/admin_au1nT` 位址或位置列。
 
-( [管理](https://glossary.magento.com/admin) URI由 `backend-frontname` 安裝參數)。
+(管理員URI由 `backend-frontname` 安裝參數)。
 
 出現提示時，請以管理員身分登入。
 

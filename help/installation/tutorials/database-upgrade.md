@@ -1,9 +1,9 @@
 ---
 title: 升級資料庫架構和資料
 description: 請依照下列步驟，升級您的Adobe Commerce或Magento Open Source資料庫架構。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 升級資料庫架構和資料
 
-每當您執行導致 [資料庫模式](https://glossary.magento.com/database-schema) 或要更改的資料，必須運行本節中討論的命令來更新它們。 部分原因清單如下：
+每當執行導致資料庫架構或資料更改的操作時，必須通過運行本節中討論的命令來更新它們。 部分原因清單如下：
 
 * 您使用命令行升級了應用程式
 * 使用命令行安裝或更新元件

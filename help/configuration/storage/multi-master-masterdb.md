@@ -1,9 +1,9 @@
 ---
 title: 自動配置主資料庫
 description: 請參閱自動配置拆分資料庫解決方案的指南。
-source-git-commit: d029d1ac66bff2ac34b22b2d3b8aafbfc062e082
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 本主題討論如何通過以下方法開始使用拆分資料庫解決方案：
 
 1. 使用單一主資料庫安裝Adobe Commerce(名稱為 `magento`)
-1. 為建立兩個附加主資料庫 [簽出](https://glossary.magento.com/checkout) 和OMS(已命名 `magento_quote` 和 `magento_sales`)
+1. 為簽出和OMS建立兩個附加主資料庫(名為 `magento_quote` 和 `magento_sales`)
 1. 配置Adobe Commerce以使用結帳和銷售資料庫
 
 >[!INFO]

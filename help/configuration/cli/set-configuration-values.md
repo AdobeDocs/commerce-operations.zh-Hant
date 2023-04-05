@@ -1,9 +1,9 @@
 ---
 title: 設定配置值
 description: 了解如何設定設定值及變更「管理員」中鎖定的值。
-source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 - 在安裝商務之前，您只能為預設範圍設定配置值，因為它是唯一的有效範圍。
 
-- 安裝商務後，您可以設定任何網站或 [商店檢視](https://glossary.magento.com/store-view) 範圍。
+- 安裝商務後，您可以為任何網站或商店檢視範圍設定設定值。
 
 使用下列命令：
 

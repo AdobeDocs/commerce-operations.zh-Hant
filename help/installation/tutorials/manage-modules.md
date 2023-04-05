@@ -1,9 +1,9 @@
 ---
 title: 啟用或禁用模組
 description: 請依照下列步驟管理Adobe Commerce或Magento Open Source模組。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 * `--enabled` 列出所有已啟用的模組。
 * `--disabled` 列出所有禁用的模組。
-* `<module-list>` 是以空格分隔的模組清單，用於檢查狀態。 如果有 [模組](https://glossary.magento.com/module) name包含特殊字元，請以單引號或雙引號將名稱括住。
+* `<module-list>` 是以空格分隔的模組清單，用於檢查狀態。 如果任何模組名稱包含特殊字元，請以單引號或雙引號將名稱括住。
 
 ## 模組啟用，禁用
 
@@ -41,7 +41,7 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 其中
 
-* `<module-list>` 是要啟用或停用的以空格分隔的模組清單。 如果有 [模組](https://glossary.magento.com/module) name包含特殊字元，請以單引號或雙引號將名稱括住。
+* `<module-list>` 是要啟用或停用的以空格分隔的模組清單。 如果任何模組名稱包含特殊字元，請以單引號或雙引號將名稱括住。
 * `--all` 啟用或禁用所有模組。
 * `-f` 或 `--force` 強制啟用或停用模組（無論相依性如何）。 使用此選項之前，請參閱 [關於啟用和禁用模組](#about-enabling-and-disabling-modules).
 * `-c` 或 `--clear-static-content` 清除 [生成的靜態視圖檔案](../../configuration/cli/static-view-file-deployment.md).

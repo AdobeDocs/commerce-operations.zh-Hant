@@ -1,9 +1,9 @@
 ---
 title: 解除安裝或重新安裝Adobe Commerce
 description: 請依照下列步驟，解除安裝並重新安裝Adobe Commerce和Magento Open Source的內部部署安裝。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ bin/magento setup:uninstall
 
 依預設， `bin/magento setup:upgrade` 會清除已編譯的程式碼和快取。 通常，您會使用 `bin/magento setup:upgrade` 要更新元件，每個元件可能需要不同的編譯類。
 
-但在某些情況下（尤其是部署至生產環境），您可能會希望避免清除已編譯的程式碼，因為可能需要一些時間。 ( [快取](https://glossary.magento.com/cache) 仍清空。) 若要更新 [資料庫模式](https://glossary.magento.com/database-schema) 和資料 *無* 清除編譯的代碼，請輸入：
+但在某些情況下（尤其是部署至生產環境），您可能會希望避免清除已編譯的程式碼，因為可能需要一些時間。 （快取仍被清除。） 更新資料庫架構和資料 *無* 清除編譯的代碼，請輸入：
 
 ```bash
 bin/magento setup:upgrade --keep-generated

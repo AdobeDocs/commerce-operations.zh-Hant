@@ -1,9 +1,9 @@
 ---
 title: 卸載主題
 description: 請依照下列步驟，解除安裝Adobe Commerce或Magento Open Source主題。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # 卸載主題
 
-使用此命令之前，您必須知道主題的相對路徑。 主題位於的子目錄中 `<magento_root>/app/design/<area name>`. 您必須指定以區域開頭的主題路徑，該區域為 `frontend` （用於店面主題）或 `adminhtml` ( [管理](https://glossary.magento.com/magento-admin) 主題)。
+使用此命令之前，您必須知道主題的相對路徑。 主題位於的子目錄中 `<magento_root>/app/design/<area name>`. 您必須指定以區域開頭的主題路徑，該區域為 `frontend` （用於店面主題）或 `adminhtml` （針對管理主題）。
 
-例如，Luma的路徑 [主題](https://glossary.magento.com/theme) 隨附Adobe Commerce和Magento Open Source `frontend/Magento/luma`.
+例如，隨Adobe Commerce和Magento Open Source提供的Luma主題路徑為 `frontend/Magento/luma`.
 
 如需主題的詳細資訊，請參閱 [主題結構](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 本節將討論如何卸載一個或多個主題，可選地包括檔案系統中的主題代碼。 您可以先建立備份，以便以後恢復資料。
 
-此命令將卸載 *僅限* 在 `composer.json`;換言之，以 [撰寫器](https://glossary.magento.com/composer) 套件。 如果您的主題不是撰寫器套件，則必須透過以下方式手動解除安裝：
+此命令將卸載 *僅限* 在 `composer.json`;換句話說，以撰寫器套件形式提供的主題。 如果您的主題不是撰寫器套件，則必須透過以下方式手動解除安裝：
 
 * 更新 `parent` 節點資訊 `theme.xml` 移除主題的參考。
 * 正在從檔案系統中刪除主題代碼。
@@ -61,7 +61,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 1. 從 `theme` 資料庫表。
 1. 使用從程式碼基底移除主題 `composer remove`.
-1. 清除 [快取](https://glossary.magento.com/cache).
+1. 清除快取。
 1. 清除生成的類
 1. 若 `--clear-static-content` 指定時清除 [生成的靜態視圖檔案](../../configuration/cli/static-view-file-deployment.md).
 
@@ -102,4 +102,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->若要解除安裝 [管理](https://glossary.magento.com/admin) 主題，您也必須將其從元件的 [依賴注入](https://glossary.magento.com/dependency-injection) 配置， `<component root directory>/etc/di.xml`.
+>若要解除安裝管理主題，您也必須從元件的相依性插入設定中移除該主題， `<component root directory>/etc/di.xml`.

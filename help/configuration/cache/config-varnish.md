@@ -1,9 +1,9 @@
 ---
 title: 配置和使用清漆
 description: 了解清漆如何儲存檔案並改善HTTP流量。
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Commerce 2.4.2使用清漆6.4進行測試。 Commerce 2.4.x與清漆6.x相容
 
 當Web伺服器傳回資產時，可快取資產會儲存在Rikest中。 這些資產的任何後續請求都會透過清漆完成（這表示請求不會傳送至Web伺服器）。 清漆可以極快地返回快取內容。 結果會加快將內容傳回給使用者的回應時間，並減少必須由商務履行的請求數量。
 
-由清漆快取的資產會以可設定的間隔過期，或由相同資產的較新版本取代。 您也可以使用 [管理](https://glossary.magento.com/magento-admin) 或 [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) 命令。
+由清漆快取的資產會以可設定的間隔過期，或由相同資產的較新版本取代。 您也可以使用管理員或 [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) 命令。
 
 ## 程式概述
 
@@ -97,7 +97,7 @@ Commerce 2.4.2使用清漆6.4進行測試。 Commerce 2.4.x與清漆6.x相容
 
 在第一個瀏覽器請求時，可快取資產會從清漆傳送給用戶端瀏覽器，並在瀏覽器上快取。
 
-此外，清漆使用 [實體](https://glossary.magento.com/entity) 靜態資產的標籤(ETag)。 ETag提供了確定何時 [靜態檔案](https://glossary.magento.com/static-files) 在伺服器上變更。 因此，靜態資產在伺服器上發生變更時（針對來自瀏覽器的新請求或用戶端重新整理瀏覽器快取時）會傳送至用戶端，通常是按F5或Control+F5。
+此外，清漆對靜態資產使用實體標籤(ETag)。 ETag提供了確定靜態檔案在伺服器上何時更改的方法。 因此，靜態資產在伺服器上發生變更時（針對來自瀏覽器的新請求或用戶端重新整理瀏覽器快取時）會傳送至用戶端，通常是按F5或Control+F5。
 
 以下各節將提供更多詳細資訊。
 

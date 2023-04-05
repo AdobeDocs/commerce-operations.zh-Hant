@@ -1,9 +1,9 @@
 ---
 title: 安裝擴充功能
 description: 請依照下列步驟，安裝Adobe Commerce或Magento Open Source擴充功能。
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,12 @@ ht-degree: 0%
 擴充功能包括：
 
 - 模組(擴充Adobe Commerce和Magento Open Source功能)
-- 主題(更改您 [店面](https://glossary.magento.com/storefront) 和管理員)
+- 主題（變更店面和管理員的外觀和風格）
 - 語言套件（當地化店面和管理員）
 
 >[!TIP]
 >
->本主題說明如何使用命令列安裝您從Commerce Marketplace購買的擴充功能。 可以使用相同的過程來安裝 _any_ 擴充功能；您只需要擴充功能 [撰寫器](https://glossary.magento.com/composer) 名稱和版本。 若要尋找，請開啟擴充功能的 `composer.json` ，並記下 `"name"` 和 `"version"`.
+>本主題說明如何使用命令列安裝您從Commerce Marketplace購買的擴充功能。 可以使用相同的過程來安裝 _any_ 擴充功能；您只需要擴充功能的撰寫器名稱和版本。 若要尋找，請開啟擴充功能的 `composer.json` ，並記下 `"name"` 和 `"version"`.
 
 在安裝之前，您可能想：
 

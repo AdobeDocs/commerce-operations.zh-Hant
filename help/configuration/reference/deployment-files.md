@@ -1,9 +1,9 @@
 ---
 title: 部署的配置檔案
 description: 了解設定檔如何用於安裝商務應用程式。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Adobe Commerce提供組態檔，讓您輕鬆自訂元件並建立組態類型以
 
 [Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) 僅提供這些區段的存取權，但不允許您延伸這些區段。
 
-在下一個階層層級，每個區段中的項目會根據 [模組](https://glossary.magento.com/module) 序列定義，通過合併所有模組的配置檔案獲得，但禁用模組除外。
+在下一個層次級別，每個段中的項目根據模組序列定義進行排序，該定義通過合併除禁用模組之外的所有模組的配置檔案而獲得。
 
 以下幾節將討論部署配置的結構和內容：
 
@@ -78,6 +78,6 @@ return array (
 
 值 `1` 或 `0` 指示模組是啟用還是禁用。
 
-禁用的模組不能被Commerce應用程式識別；換句話說，使用者不會參與合併設定、相依性插入、事件、外掛程式等。 禁用的模組不會修改 [店面](https://glossary.magento.com/storefront) 或 [管理](https://glossary.magento.com/admin) 和不影響路由。
+禁用的模組不能被Commerce應用程式識別；換句話說，使用者不會參與合併設定、相依性插入、事件、外掛程式等。 禁用的模組不會修改店面或管理員，也不會影響路由。
 
 禁用模組和代碼庫中缺少模組的唯一實際區別是自動載入器找到禁用模組，其類和常數可在其他代碼中重用。

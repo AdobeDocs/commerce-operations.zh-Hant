@@ -1,9 +1,9 @@
 ---
 title: 使用Apache設定多個網站
 description: 請依照本教學課程，使用Apache設定多個網站。
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 我們假設：
 
-如有必要，請複製現有 `index.php` 網站或 [商店檢視](https://glossary.magento.com/store-view) 並新增下列內容：
+如有必要，請複製現有 `index.php` 網站或商店檢視的登入點指令碼，並新增至它：
 
 - 您使用的是開發機器（筆記型電腦、虛擬機等）
 

@@ -1,9 +1,9 @@
 ---
 title: 設定遠程MySQL資料庫連接
 description: 請依照下列步驟，為Adobe Commerce和Magento Open Source的內部部署安裝設定遠端資料庫連線。
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 安裝Adobe Commerce或Magento Open Source時，您必須指定下列項目：
 
-* 基 [URL](https://glossary.magento.com/url) (亦稱為 *儲存地址*)會指定的主機名或IP位址 *網站節點*
+* 基本URL(亦稱為 *儲存地址*)會指定的主機名或IP位址 *網站節點*
 * 資料庫主機是 *遠程資料庫伺服器* IP地址（如果資料庫伺服器已群集，則為負載平衡器）
 * 資料庫用戶名為 *本地Web節點* 授予訪問權限的資料庫用戶
 * 資料庫密碼是本地Web節點用戶的密碼

@@ -1,9 +1,9 @@
 ---
 title: 為您的搜尋引擎設定Nginx
 description: 請依照下列步驟，使用Nginx Web伺服器設定搜尋引擎，以進行Adobe Commerce和Magento Open Source的內部部署安裝。
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ include /etc/nginx/conf.d/*.conf;
 
 ### 將nginx設定為代理
 
-本節探討如何指定哪些人可以存取 [nginx](https://glossary.magento.com/nginx) 伺服器。
+本節探討如何指定誰可以存取nginx伺服器。
 
 1. 使用文本編輯器建立檔案 `/etc/nginx/conf.d/magento_es_auth.conf` 內容如下：
 

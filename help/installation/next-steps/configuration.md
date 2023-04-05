@@ -1,9 +1,9 @@
 ---
 title: 配置應用程式
 description: 了解Adobe Commerce和Magento Open Source內部部署所需的安裝後設定。
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ UNIX任務調度程式cron對應用程式的日常操作至關重要。 它會�
 
 如果您有多個Web節點，則 *不能* 使用應用程式的預設檔案快取，因為Web節點之間沒有同步。 換言之，一個Web節點上的活動僅寫入該Web節點的檔案系統。 後續活動（如果在其他Web節點上執行）可能導致寫入不必要的檔案，或可能導致錯誤。
 
-請改用 [雷迪斯](../../configuration/cache/config-redis.md) 預設值 [快取](https://glossary.magento.com/cache) 和頁面快取。
+請改用 [雷迪斯](../../configuration/cache/config-redis.md) 預設快取和頁面快取。
 
 ## 伺服器設定
 

@@ -1,9 +1,9 @@
 ---
 title: 移轉概觀
 description: 了解如何使用將資料從Magento1移轉至Magento2 [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 1. **不要** 在「Magento1管理員」中進行更改，但訂單管理（發運、建立發票和貸項通知單）除外
 1. **不要** 更改任何代碼
-1. **不要** 在「Magento2管理員」中進行變更，並 [店面](https://glossary.magento.com/storefront)
+1. **不要** 在「Magento2管理員」和「店面」中進行更改
 
 >[!TIP]
 >

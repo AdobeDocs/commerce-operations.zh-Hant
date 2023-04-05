@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Data Migration Tool] 技術規格」'
 description: 「了解 [!DNL Data Migration Tool] 以及在Magento1和Magento2之間傳輸資料時如何延伸。」
-source-git-commit: c56cc6d97f69770aa718333c02514ab3cfce774c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 │       │   ├── Data.php
 │       │   ├── Delta.php
 │       │   └── Settings.php
-│       ├── ResourceModel                   --- contains [adapter](https://glossary.magento.com/adapter) for connection to data storage and classes to work with structured data
+│       ├── ResourceModel                   --- contains adapter for connection to data storage and classes to work with structured data
 │       │   ├── Adapter
 │       │   │   └── Mysql.php
 │       │   ├── AbstractCollection.php
@@ -75,7 +75,7 @@ ht-degree: 0%
 │       │   ├── Source.php
 │       │   └── Structure.php
 │       ├── Config.php
-│       ├── [Exception](https://glossary.magento.com/exception).php
+│       ├── Exception.php
 │       └── Step                            --- functionality for migrating specific data
 │           ├── Eav
 │           │   ├── Data.php
@@ -342,7 +342,7 @@ $this->progress->finish();
 
 #### 對應步驟
 
-映射步驟負責將大部分資料從Magento1傳輸到Magento2。 此步驟會從map.xml檔案(位於 `etc/` 目錄)。 該檔案描述源(Magento1)和目標(Magento2)的資料結構之間的差異。 若Magento1包含屬於某些 [擴充功能](https://glossary.magento.com/extension) Magento2中不存在的實體，則可以將這些實體放置在此處，以便透過「對應步驟」忽略它們。 否則，會顯示錯誤訊息。
+映射步驟負責將大部分資料從Magento1傳輸到Magento2。 此步驟會從map.xml檔案(位於 `etc/` 目錄)。 該檔案描述源(Magento1)和目標(Magento2)的資料結構之間的差異。 如果Magento1包含屬於Magento2中不存在之某些擴充功能的表格或欄位，則可以將這些實體放置在此處，以便透過「對應步驟」忽略這些實體。 否則，會顯示錯誤訊息。
 
 映射檔案的格式為：
 
@@ -464,7 +464,7 @@ $this->progress->finish();
 
 ## 記錄
 
-為了實現遷移過程的輸出，並控制Magento中使用的所有可能級PSR記錄器。 `\Migration\Logger\Logger` 已實作類別，以提供記錄功能。 若要使用記錄器，您應透過建構函式插入它 [依賴注入](https://glossary.magento.com/dependency-injection).
+為了實現遷移過程的輸出，並控制Magento中使用的所有可能級PSR記錄器。 `\Migration\Logger\Logger` 已實作類別，以提供記錄功能。 若要使用記錄器，您應透過建構子相依性插入來插入它。
 
 ```php
 class SomeClass

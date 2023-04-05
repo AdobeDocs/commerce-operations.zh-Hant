@@ -1,9 +1,9 @@
 ---
 title: 帶清漆的快取清除
 description: 了解快取清除如何與清漆搭配運作，以及如何將其用作Adobe Commerce應用程式的Web快取加速器。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## 清漆淨化
 
-根據 [清漆文檔](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *清除* 是當您從 [快取](https://glossary.magento.com/cache) 並連同其變體一起丟棄。」 清漆清除與快取清除命令類似(或按一下 **刷新Magento快取** 中)。
+根據 [清漆文檔](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *清除* 是當您從快取中挑選物件，並捨棄該物件及其變體時，會發生的情況。」 清漆清除與快取清除命令類似(或按一下 **刷新Magento快取** 中)。
 
 事實上，當您清除、排清或重新整理「商務」快取時，清漆也會清除。
 
 安裝並配置清漆以與Commerce一起使用後，以下操作可能導致清漆清除：
 
-- 維護 [網站](https://glossary.magento.com/website).
+- 維護網站。
 
    例如，您在「管理員」中執行的任何動作：
 

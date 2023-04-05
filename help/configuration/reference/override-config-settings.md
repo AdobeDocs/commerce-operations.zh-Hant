@@ -1,9 +1,9 @@
 ---
 title: 覆蓋配置設定
 description: 了解如何使用環境變數來覆寫組態設定。
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ ht-degree: 0%
 
 要從資料庫獲取這些值：
 
-1. 以 [檔案系統所有者](https://glossary.magento.com/magento-file-system-owner) 如果你還沒這麼做。
+1. 如果您尚未登入，請以檔案系統擁有者身分登入您的開發系統。
 1. 輸入以下命令：
 
    ```bash

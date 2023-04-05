@@ -1,9 +1,9 @@
 ---
 title: 代碼編譯器
 description: 了解如何從命令列執行程式碼編譯器。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 程式碼編譯包含下列項目（無特定順序）:
 
 - 應用程式代碼生成（工廠、代理）
-- 區域配置聚合（優化） [依賴注入](https://glossary.magento.com/dependency-injection) 每區域配置數
+- 區域配置聚合（每區域優化的依賴注入配置）
 - 攔截器生成（攔截器優化代碼生成）
 - 偵聽快取生成
 - 存放庫程式碼產生（為API產生的程式碼）
-- 服務資料屬性生成（生成） [擴充功能](https://glossary.magento.com/extension) 資料對象的類)
+- 服務資料屬性生成（為資料對象生成的擴展類）
 
 您可以在 [\Magento\Setup\Module\Di\App\Task\Operation][operation] 命名空間。
 
@@ -44,7 +44,7 @@ Generated code and dependency injection configuration successfully.
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   使用 `[-c|--clear-static-content]` 清除選項 [靜態內容](https://glossary.magento.com/static-content). 如果您先前已啟用或停用模組，且您必須清除先前為其產生的靜態內容，則此為必要操作。
+   使用 `[-c|--clear-static-content]` 選項來清除靜態內容。 如果您先前已啟用或停用模組，且您必須清除先前為其產生的靜態內容，則此為必要操作。
 
    請參閱 [啟用模組](../../installation/tutorials/manage-modules.md).
 

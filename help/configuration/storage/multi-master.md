@@ -1,9 +1,9 @@
 ---
 title: 拆分資料庫效能解決方案
 description: 閱讀Adobe Commerce和Magento Open Source的分割資料庫解決方案相關資訊。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Adobe Commerce使用三個主資料庫和可配置數量的從資料庫進行複
 由於拆分資料庫效能解決方案的設計方式，您的自定義代碼和安裝的元件 _不能_ 執行下列任一操作：
 
 - 直接寫入資料庫(而必須使用Adobe Commerce資料庫介面)
-- 使用影響銷售或 [報價](https://glossary.magento.com/quote) 資料庫
+- 使用影響銷售或報價資料庫的JOIN
 - 在結帳、銷售或主資料庫中使用表的外鍵
 
 >[!WARNING]
@@ -76,7 +76,7 @@ Adobe Commerce使用三個主資料庫和可配置數量的從資料庫進行複
 
 拆分資料庫要求您在任何主機上設定三個MySQL主資料庫（Commerce伺服器上的全部三個資料庫、單獨伺服器上的每個資料庫等等）。 這些是 _主版_ 資料庫，其使用方式如下：
 
-- 一個主資料庫 [簽出](https://glossary.magento.com/checkout) 表
+- 一個用於簽出表的主資料庫
 - 一個用於銷售表的主資料庫(又稱為 _訂單管理系統_，或 _OMS。_，表格)
 - Commerce 2應用程式表其餘部分的一個主資料庫
 

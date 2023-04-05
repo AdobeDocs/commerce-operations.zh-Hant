@@ -1,9 +1,9 @@
 ---
 title: 翻譯字典和語言包
 description: 了解如何產生翻譯字典和建立語言套件。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 產生翻譯字典
 
-您可以產生 [翻譯字典] 若要自訂現有字串、翻譯自訂模組中的字詞和片語、將主題當地化或建立 [語言包](https://glossary.magento.com/language-package).
+您可以產生 [翻譯字典] 若要自訂現有字串、翻譯自訂模組中的字詞和片語、將主題當地化，或建立語言套件。
 
 若要開始轉譯，請使用命令產生包含所有現有片語和字詞的收集清單的字典CSV檔案。
 
@@ -139,7 +139,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 在 `language.xml` 配置檔案中，必須指定此包的語言繼承順序。
 
-語言繼承可讓您建立名為 _子項_ 根據稱為 _上層_. 子翻譯會覆寫父項。 不過，如果子翻譯無法上傳或顯示，或缺少片語或字詞，商務會使用父項 [地區](https://glossary.magento.com/locale). [語言包繼承的示例](#example-of-language-inheritance).
+語言繼承可讓您建立名為 _子項_ 根據稱為 _上層_. 子翻譯會覆寫父項。 但是，如果子翻譯無法上傳或顯示，或缺少片語或字詞，則商務使用父語言環境。 [語言包繼承的示例](#example-of-language-inheritance).
 
 要聲明包，請指定以下資訊：
 

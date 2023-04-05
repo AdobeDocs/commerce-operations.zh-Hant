@@ -1,9 +1,9 @@
 ---
 title: 配置搜索停止詞
 description: 了解如何使用CSV檔案管理Adobe Commerce的秒數。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 停止字位於 `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` 目錄。 Adobe Commerce和Magento Open Source隨附一個CSV檔案，其中包含預設地區設定的停止字詞，以及一個額外的檔案， `stopwords.csv`，其中包含任何地區設定的停止字詞，而其他CSV檔案不代表。
 
-stopwords檔案的預設期限 [快取](https://glossary.magento.com/cache) 才15分鐘。
+秒數檔案快取的預設存留期為15分鐘。
 
 ### 編輯現有區域設定的停止字
 
@@ -54,7 +54,7 @@ stopwords檔案的預設期限 [快取](https://glossary.magento.com/cache) 才1
       php <magento_root>/bin/magento cache:clean config
       ```
 
-1. 在您的 [店面](https://glossary.magento.com/storefront).
+1. 在店面上搜尋詞，以檢查結果。
 
 ### 為新區域設定建立停止字
 

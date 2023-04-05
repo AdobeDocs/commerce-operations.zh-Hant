@@ -1,9 +1,9 @@
 ---
 title: 卸載語言包
 description: 請依照下列步驟，解除安裝Adobe Commerce或Magento Open Source語言套件。
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 本節討論如何卸載一個或多個語言包，可選地包括檔案系統中的語言包代碼。 您可以先建立備份，以便以後恢復資料。
 
-此命令將卸載 *僅限* 在 `composer.json`;換言之，提供為 [撰寫器](https://glossary.magento.com/composer) 套件。 若您的 [語言包](https://glossary.magento.com/language-package) 不是撰寫器套件，您必須從檔案系統中移除語言套件程式碼，以手動解除安裝。
+此命令將卸載 *僅限* 在 `composer.json`;換言之，以撰寫器套件形式提供的語言套件。 如果您的語言包不是撰寫器包，則必須從檔案系統中刪除語言包代碼，以手動卸載它。
 
 您可以隨時使用 [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) 命令。
 
@@ -31,7 +31,7 @@ bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {langu
 
 1. 若 `--backup code` 已指定，請備份檔案系統(不包括 `var` 和 `pub/static` 目錄) `var/backups/<timestamp>_filesystem.tgz`
 1. 使用從程式碼基底移除語言套件檔案 `composer remove`.
-1. 清除 [快取](https://glossary.magento.com/cache).
+1. 清除快取。
 
 例如，如果嘗試卸載另一個語言包所依賴的語言包，則會顯示以下消息：
 

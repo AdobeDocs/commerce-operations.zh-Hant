@@ -1,9 +1,9 @@
 ---
 title: 生產系統設定
 description: 了解如何為商務應用程式設定生產系統。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 要設定生產機器，請執行以下操作：
 
-1. 安裝商務或從原始碼控制項拉取商務後，以或切換至 [檔案系統所有者](https://glossary.magento.com/magento-file-system-owner).
+1. 安裝Commerce或從原始碼控制項提取它後，以檔案系統所有者身份或切換到該檔案系統所有者身份登錄到生產伺服器。
 1. 建立 `~/.ssh/.composer/auth.json` 如果您尚未這麼做。
 
    建立目錄：

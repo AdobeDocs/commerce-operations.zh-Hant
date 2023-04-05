@@ -1,15 +1,15 @@
 ---
-user-guide-title: 營運行動手冊
-user-guide-description: 了解如何讓企業在營運上做好準備，以便經營成功的電子商務網站。
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+user-guide-title: 操作行動手冊
+user-guide-description: 了解如何讓您的企業在運營上做好準備，以便運行一個成功的電子商務網站。
+source-git-commit: ed6b9cb5acd35ce8213fafddcd00be1c32127a86
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 12%
+source-wordcount: '143'
+ht-degree: 0%
 
 ---
 
 
-# 營運行動手冊 {#operational-playbook}
+# 操作行動手冊 {#operational-playbook}
 
 - [概述](overview.md)
 - 商務 {#intro}
@@ -72,4 +72,5 @@ ht-degree: 12%
    - [點按並收集](product/click-collect.md)
    - [PWA](product/progressive-web-app.md)
 - [核取清單和範本](checklists-templates/home.md)
+- [字彙表](glossary.md)
 - [返回操作指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -1,9 +1,9 @@
 ---
 title: 快速啟動本地安裝
 description: 請依照下列步驟，安裝Adobe Commerce或Magento Open Source至您擁有的基礎架構。
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 快速啟動本地安裝
 
-我們使用 [撰寫器](https://getcomposer.org/) 管理Adobe Commerce和Magento Open Source元件及其相依性。 使用撰寫器來取得Adobe Commerce和Magento Open Source [元包](https://glossary.magento.com/metapackage) 提供下列優點：
+我們使用 [撰寫器](https://getcomposer.org/) 管理Adobe Commerce和Magento Open Source元件及其相依性。 使用撰寫器來取得Adobe Commerce和Magento Open Source元資料包提供下列優點：
 
 - 重複使用協力廠商程式庫，而不需與原始碼整合
 - 使用元件型架構及強大的相依性管理，減少擴充功能衝突和相容性問題

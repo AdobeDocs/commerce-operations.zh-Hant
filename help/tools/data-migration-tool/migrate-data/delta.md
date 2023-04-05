@@ -1,9 +1,9 @@
 ---
 title: 移轉變更
 description: 了解如何僅移轉自上次Magento1資料移轉後已變更的資料，透過 [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 增量遷移工具安裝增量表（帶前置詞） `m2_cl_*`)和觸發器(用於追蹤Magento1資料庫中的變更) [資料移轉](data.md). 這些委派表和觸發器對於確保您僅移轉自上次移轉資料以來，Magento1中所做的變更至關重要。 這些變更包括：
 
-* 客戶透過 [店面](https://glossary.magento.com/storefront) （在客戶設定檔中建立訂單、審核和變更）
+* 客戶透過storefront新增的資料（已建立訂單、檢閱，以及客戶設定檔中的變更）
 
-* 所有操作都包含訂單、產品和類別 [管理](https://glossary.magento.com/magento-admin) 面板
+* 在「管理」面板中具有訂單、產品和類別的所有操作
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 在 `Delta` 模式， [!DNL Data Migration Tool] 移轉僅由Magento自己的模組建立的資料，且不負責協力廠商開發人員所製作的程式碼或擴充功能。 如果這些擴展在店面資料庫中建立了資料，並且商家希望在Magento2中包含此資料，即 [!DNL Data Migration Tool] 應據此建立和修改。
 
-若 [擴充功能](https://glossary.magento.com/extension) 有自己的表，並且您需要跟蹤它們對delta遷移的更改，請執行以下步驟：
+如果擴充功能有其專屬的表格，且您需要追蹤其變更以進行差異移轉，請遵循下列步驟：
 
 1. 將要追蹤的表格新增至 `deltalog.xml` 檔案
 1. 建立其他增量類，以擴展 `Migration\App\Step\AbstractDelta`

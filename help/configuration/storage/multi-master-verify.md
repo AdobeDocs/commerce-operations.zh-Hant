@@ -1,9 +1,9 @@
 ---
 title: 驗證拆分資料庫
 description: 了解如何驗證商務分割資料庫設定是否正常運作。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 配置後，主資料庫的配置如下：
 
 - 主要商務資料庫：369表
-- 商務 [報價](https://glossary.magento.com/quote) 資料庫：11表
+- 商務報價資料庫：11表
 - 商務銷售資料庫：55表
 
 要驗證拆分資料庫是否正常工作，請執行以下任務，並使用資料庫工具(如 [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
