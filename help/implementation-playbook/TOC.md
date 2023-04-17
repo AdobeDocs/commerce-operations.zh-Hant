@@ -2,9 +2,9 @@
 user-guide-title: 實施行動手冊
 user-guide-description: 了解成功Adobe Commerce網站的規劃與實作策略。
 mini-toc-levels: 3
-source-git-commit: 5559d412ab58d392098cfff7a4cabb473c38cb0d
+source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,13 @@ ht-degree: 0%
       - [無頭式架構](architecture/headless/adobe-commerce.md)
 - 基礎架構和部署 {#infrastructure}
    - [概述](infrastructure/overview.md)
-   - [內部基礎設施](infrastructure/on-premises.md)
+   - 自行托管 {#self-hosting}
+      - [概述](infrastructure/self-hosting/overview.md)
+      - [內部基礎設施](infrastructure/self-hosting/on-premises.md)
+      - [安全性概念](infrastructure/self-hosting/security-concepts.md)
+      - [監測遙測和工具](infrastructure/self-hosting/monitoring-tools.md)
+      - [災難恢復理念](infrastructure/self-hosting/disaster-recovery-ideas.md)
+      - [效能提示](infrastructure/self-hosting/performance-tips.md)
    - 雲基礎架構 {#cloud}
       - [概述](infrastructure/cloud/overview.md)
       - [地區](infrastructure/cloud/regions.md)
