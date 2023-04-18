@@ -7,9 +7,9 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 66abe9f234aa44f7e07cc024607eeb6591a99d07
+source-git-commit: ab099b2a8a353c2462424831cf8100e7e281b1be
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ CDN為Adobe Commerce專案提供最佳化且安全的傳遞內容。 如果這�
 
 ## 要求每次提取請求都遵循Adobe Commerce和PHP編碼標準
 
-Adobe Commerce [編碼標準](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. 這些有助於確保無論軟體開發類型如何，都能遵循類似的模式、樣式和預期設計。 這是您在貢獻Adobe Commerce程式碼基底時需遵循的基本要求。 不過，遵循此自訂開發方法，也可為所有開發人員、目前和未來的期望奠定堅實的基礎。 若要求所有提取請求都傳遞程式碼標準，有助於確保每個人都能了解並期待相同的一致開發模式。
+Adobe Commerce [編碼標準](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. 這些有助於確保無論軟體開發類型如何，都能遵循類似的模式、樣式和預期設計。 協助撰寫Adobe Commerce程式碼基底時，此為必要條件。 不過，如果您選擇遵循此自訂開發方法，可為所有開發人員（包括目前和未來）奠定堅實的基礎。 若要求所有提取請求都傳遞程式碼標準，有助於確保每個人都能了解並期待相同的一致開發模式。
 
 為配合Adobe Commerce編碼標準，採用的另一個基礎是PHP基本編碼標準。 開發人員指南中應清楚定義您必須遵循哪些標準，以及任何可接受的偏差。 不過，回復應該是公開維護的指南，請參閱 [PHP-FIG](https://www.php-fig.org){target="_blank"}.
 

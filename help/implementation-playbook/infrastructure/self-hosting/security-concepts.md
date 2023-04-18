@@ -7,7 +7,7 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 0d5c2d3ae44008142797c7ac91530a9df98ae004
+source-git-commit: cca195c20ddcba634a8fc39c0867e0ae28f43683
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 只讀檔案系統
 
-只讀檔案系統概念借用自 [Adobe Commerce在雲基礎設施方面](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. 這完全消除了一個壞演員使用的主要區域。 許多漏洞利用更改了Commerce應用程式中預期的檔案以避免檢測。 壞操作程式不會建立，而是會更改現有檔案的內容以執行意外操作。 使檔案系統為只讀，可顯著減少此攻擊向量。
+只讀檔案系統概念借用自 [Adobe Commerce雲基礎架構](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. 這完全消除了一個壞演員使用的主要區域。 許多漏洞利用更改了Commerce應用程式中預期的檔案以避免檢測。 壞操作程式不會建立，而是會更改現有檔案的內容以執行意外操作。 使檔案系統為只讀，可顯著減少此攻擊向量。
 
 ## 使用TWO Factor身份驗證和密碼管理器
 
