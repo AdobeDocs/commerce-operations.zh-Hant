@@ -1,7 +1,7 @@
 ---
 title: 「 [!UICONTROL Summary] 標籤」
 description: 了解 [!UICONTROL Summary] 標籤 [!DNL Observation for Adobe Commerce].
-source-git-commit: 61d0de370cbfa02f5fcc7d20ad283c54357294a3
+source-git-commit: 1d4e6ee745b656f0bc291a479e1d5bac5c8504e3
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ![CPU百分比（按主機）](../../assets/tools/cpu-percent-by-host.jpg)
 
-所有環境和節點的匯總顯示在 **[!UICONTROL CPU % by host]** 框。 您應取消選取非生產環境。 另請注意，生產環境的所有節點都不存在的任何例項。 有關CPU利用率高的更多提示，請參閱 [使用Adobe Commerce上的New Relic進行效能疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+所有環境和節點的匯總顯示在 **[!UICONTROL CPU % by host]** 框。 您應取消選取非生產環境。 另請注意，生產環境的所有節點都不存在的任何例項。 有關CPU利用率高的更多提示，請參閱 [疑難排解在Adobe Commerce上使用New Relic的效能](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -363,7 +363,7 @@ PHP進程的行為方式取決於 [配置](https://www.php.net/manual/en/install
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![elasticsearch索引資訊](../../assets/tools/elasticsearch-index-information.jpg)
+![elasticsearch索引資訊](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 **[Elasticsearch狀態：](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
