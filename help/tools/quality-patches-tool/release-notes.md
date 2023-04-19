@@ -1,9 +1,9 @@
 ---
 title: 發行說明
 description: 了解適用於Adobe Commerce的修補程式及其解決的問題。
-source-git-commit: ef501b34947f24f8028bd5876bd4a167551e03ec
+source-git-commit: ab9d80140833e2d21feffe04a73fcd8ac5f1e980
 workflow-type: tm+mt
-source-wordcount: '11914'
+source-wordcount: '11946'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 0%
 * **ACSD-50276** (適用於Adobe Commerce >=2.4.0 &lt;2.4.7) — 修正建立多選客戶屬性時，店面上的客戶註冊表單無法運作的問題。
 * **ACSD-50527** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正以空白動態區塊儲存頁面時發生的錯誤。
 * **ACSD-49973** (適用於Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.5) — 透過GraphQL提取套件產品的效能。
+* **ACSD-51114** (針對Adobe Commerce和Magento Open Source>=2.4.3 &lt;2.4.7) — 修正啟用非同步索引時，隨機產品從大型目錄消失的問題。 改善大型目錄非同步重新索引的效能。
 * **BB2B-2598** (適用於Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.7) — 將快取功能新增至 [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency]，和 [!UICONTROL storeConfig] GraphQL查詢。
 * 新增MDVA-42806、ACSD-48627、ACSD-46815的新版本。
 * 更新ACSD-49773、ACSD-47179、ACSD-48300的修補程式元資料。
