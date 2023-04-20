@@ -1,9 +1,9 @@
 ---
 title: 消息隊列使用者
 description: 了解Adobe Commerce和Magento Open Source訊息佇列使用者，包括相關功能和系統組態設定。
-source-git-commit: 1006a5761849b1d455469c6dfcb79a66cb90ec40
+source-git-commit: f9db986510a3ec8e62b9d628da40fdfd9741479f
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,8 @@ ht-degree: 0%
 | 為 [批量操作](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)，例如導入或導出物料、更改成批量價格以及將產品分配給倉庫。 若 [**[!UICONTROL Admin bulk operations]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html?#admin-bulk-operations) 選項設為&#x200B;**[!UICONTROL Run asynchronously]**（在管理系統配置設定中）。 |  |  |  |
 | `codegeneratorProcessor` | + | + | + |
 | 非同步在背景產生抵用券。 使用 [批次抵用券產生](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html#method-2%3A-generate-a-batch-of-coupons) 功能。 |  |  |  |
+| `commerce.eventing.event.publish` | + | + |  |
+| 檢查已註冊為優先順序的事件 [適用於Adobe Commerce的Adobe I/O事件](https://developer.adobe.com/commerce/events/get-started/). |
 | `exportProcessor` | + | + | + |
 | 在 [匯出](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html) 大型資料集（例如200,000個產品）。 |  |  |  |
 | `inventoryQtyCounter` | + | + |  |
