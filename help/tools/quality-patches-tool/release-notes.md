@@ -1,9 +1,10 @@
 ---
 title: 發行說明
 description: 了解適用於Adobe Commerce的修補程式及其解決的問題。
-source-git-commit: 760f7f5e2e27dba8e77e564230ab3f1cf374dac2
+exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '11946'
+source-wordcount: '11947'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->請參閱 [應用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) 以取得將修補程式套用至Adobe Commerce或Magento Open Source專案的說明。 請參閱 [可用修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) ，查看已發佈修補程式的完整清單。
+>請參閱 [應用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) 以取得將修補程式套用至Adobe Commerce或Magento Open Source專案的說明。 請參閱 [[!DNL Quality Patches Tool]:搜索修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) ，查看已發佈修補程式的完整清單。
 
 >[!INFO]
 >

@@ -1,7 +1,7 @@
 ---
 user-guide-title: 工具
 user-guide-description: 了解您可搭配Adobe Commerce使用的不同工具、其用途、安裝程式，以及如何取得存取權。
-source-git-commit: 67ec373cde21db066d3c0675c9ff479912ae229c
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
    - [警報](site-wide-analysis-tool/alerts.md)
    - [修補程式](site-wide-analysis-tool/patches.md)
 - 質量修補工具 {#quality-patches-tool}
-   - [質量修補工具](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+   - [[!DNL Quality Patches Tool]:搜索修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用狀況](quality-patches-tool/usage.md)
    - [發行說明](quality-patches-tool/release-notes.md)
 - Adobe Commerce觀察 {#observation-for-adobe-commerce}

@@ -1,9 +1,10 @@
 ---
-title: "[!DNL Dashboard]"
+title: '[!DNL Dashboard]'
 description: 了解 [!DNL Dashboard] 標籤 [!DNL Site-Wide Analysis Tool]、元素、使用時機、優點和最佳實務。
-source-git-commit: 78cc20b7a65bff641f6849f6c2566cf5ad2afbd1
+exl-id: 37d848ff-2cff-48b1-8391-520531300bbc
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -11,7 +12,7 @@ ht-degree: 0%
 # [!UICONTROL Dashboard]
 
 此 [!UICONTROL Dashboard] 頁面顯示一覽 [!DNL widgets] 提供Adobe Commerce網站健康狀況和目前狀態的「單一玻璃檢視窗格」。 每個 [!DNL widget] 包含每個功能頁面、每個工具本身或報表的存取連結(視 [!DNL widget])。
-還有 [!UICONTROL External Resources] Adobe Commerce的連結，包括 [Adobe Commerce幫助中心支援知識庫（幫助中心）](https://support.magento.com/), [Adobe Commerce開發人員檔案(DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [安全中心](https://magento.com/security)，和 [Adobe Commerce觀察](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
+還有 [!UICONTROL External Resources] Adobe Commerce的連結，包括 [Adobe Commerce幫助中心支援知識庫（幫助中心）](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html), [Adobe Commerce開發人員檔案(DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]:搜索修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [安全中心](https://helpx.adobe.com/security.html)，和 [Adobe Commerce觀察](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html).
 
 ## 元素
 
@@ -27,11 +28,11 @@ Recommendations包含說明、建議、網站影響、根本原因、案例/先�
 
 * **[!UICONTROL Extensions]**:顯示目前安裝在您的Adobe Commerce執行個體上的擴充功能。 [Adobe Commerce Marketplace](https://marketplace.magento.com/extensions.html) 此處列出的擴充功能會提供可用的資訊。
 
-* **[!UICONTROL Alerts]**:顯示最新 [!DNL New Relic Managed Alerts] 例如Adobe Commerce例項。 深入了解 [Adobe Commerce的受管警報](https://support.magento.com/hc/en-us/articles/360045806832) 以及如何 [存取New Relic服務](https://support.magento.com/hc/en-us/articles/360039127712) 在Adobe Commerce支援知識庫中。
+* **[!UICONTROL Alerts]**:顯示最新 [!DNL New Relic Managed Alerts] 例如Adobe Commerce例項。 深入了解 [Adobe Commerce的受管警報](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) 以及如何 [存取New Relic服務](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html) 在Adobe Commerce支援知識庫中。
 
 * **[!UICONTROL Non-recommended software in use]**:根據您的Adobe Commerce版本，顯示您的Adobe Commerce執行個體目前使用的非建議軟體。 不推薦的軟體由 [!UICONTROL Name], [!UICONTROL Installed Version]，和 [!UICONTROL Recommended Version].
 
-* **[!UICONTROL Recommended Patches]**:根據您可能已安裝的修補程式和您的Adobe Commerce版本，顯示任何建議修補程式的簡短清單。 建議修補程式的完整清單位於 **[!UICONTROL Patches]** 功能標籤中 [!DNL Site-Wide Analysis Tool]. 修補程式由 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. 列出的所有修補程式都與您當前的Adobe Commerce實例相容。
+* **[!UICONTROL Recommended Patches]**:根據您可能已安裝的修補程式和您的Adobe Commerce版本，顯示任何建議修補程式的簡短清單。 建議修補程式的完整清單位於 **[!UICONTROL Patches]** 功能標籤中 [!DNL Site-Wide Analysis Tool]. 修補程式由 [[!DNL Quality Patches Tool]:搜索修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. 列出的所有修補程式都與您當前的Adobe Commerce實例相容。
 如果沒有建議為您的Adobe Commerce執行個體顯示修補程式，則此 [!DNL widget] 會顯示， **[!UICONTROL No Recommended Patches]**.
 
 ## 使用時機
@@ -56,4 +57,4 @@ Recommendations包含說明、建議、網站影響、根本原因、案例/先�
 
 * 前往 [!UICONTROL Security Scan Tool] [!DNL widget] 按一下 [!UICONTROL View Report] 若要檢視 [!UICONTROL Recommendations] 報告。
 
-* 使用 [!DNL External Resources] 連結可讓您了解更多資訊、掌握最新的安全性修補程式、更新和最佳實務，或善用 [Adobe Commerce幫助中心支援知識庫（幫助中心）](https://support.magento.com/), [Adobe Commerce開發人員檔案(DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [安全中心](https://helpx.adobe.com/security.html)，和 [Adobe Commerce觀察](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
+* 使用 [!DNL External Resources] 連結可讓您了解更多資訊、掌握最新的安全性修補程式、更新和最佳實務，或善用 [Adobe Commerce幫助中心支援知識庫（幫助中心）](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html), [Adobe Commerce開發人員檔案(DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]:搜索修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [安全中心](https://helpx.adobe.com/security.html)，和 [Adobe Commerce觀察](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html).
