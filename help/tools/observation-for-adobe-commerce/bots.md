@@ -1,9 +1,10 @@
 ---
-title: 「 [!UICONTROL bots] 標籤」
+title: 此 [!UICONTROL bots] 標籤
 description: 了解 [!UICONTROL bots] 標籤 [!DNL Observation for Adobe Commerce].
-source-git-commit: e135b8ab8b4f13de614299dd3c41c0cab52fefb2
+exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
+source-git-commit: 043389dc6d86228e459ac2c3592f391e85aa8f68
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1862'
 ht-degree: 0%
 
 ---
@@ -150,3 +151,11 @@ ht-degree: 0%
 ![頁面檢視延遲在此圖表上會顯示為尖峰：](../../assets/tools/observation-for-adobe-commerce/pageview-latency.png)
 
 * 此 **[!UICONTROL Pageview Latency will show as spikes on this graph:]** 影格顯示頁面載入/ API回應延遲，可能與 [!DNL bot] 流量。
+
+## [!UICONTROL Experimental Potential Malicious Bots] 框架
+
+![實驗性潛在惡意Bot框架](../../assets/tools/observation-for-adobe-commerce/experimental-potential-malicious-bots-frame.jpg)
+
+此 **[!UICONTROL Experimental Potential Malicious Bots]** frame會執行十個個別的複雜查詢。 它檢測惡意IP請求籤名，然後按降序匯總結果、加總和並對其進行排序。 查詢包含CVE漏洞攻擊和其他惡意請求的多個資料簽名。 即使安全修正/修補程式封鎖了該漏洞利用，且對網站不構成威脅，請求仍須由網站處理。 請求量可能在短時間內變得相當大。 此框架不顯示來自IP位址的請求總數，而是顯示具有指示請求意圖可疑之訊號的請求。
+
+請務必確認流量可疑，且流量並非源自於內容分送網路(CDN)位址，而該位址也可能傳送有效請求。 如果確定來自CDN IP地址的請求，請與該服務供應商聯繫，以幫助阻止通過其網路的可疑通信。 如果您需要封鎖地址或請求URL，請參閱 [封鎖Adobe Commerce的惡意流量 [!DNL Fastly] 層級](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html) Adobe Commerce支援知識庫中。
