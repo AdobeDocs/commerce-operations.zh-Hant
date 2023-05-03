@@ -1,13 +1,13 @@
 ---
 title: 軟體生命週期策略
-description: 了解 Adobe Commerce 版本軟體支援終止的關鍵日期。
-source-git-commit: 2612405bed470c4b0e0d501ab36bcfb09ac50e92
+description: 了解Adobe Commerce版本軟體支援終止的主要日期。
+exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce生命週期政策
 
@@ -27,7 +27,7 @@ ht-degree: 15%
 | Adobe Commerce 2.4.5 | 2022年8月9日 | 2025年8月9日 | PHP 8.1 |
 | Adobe Commerce 2.4.6 | 2023年3月14日 | 2026年3月14日 | 8.1菲律賓比索和8.2菲律賓比索 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 <sup>1軟體支援終止包括質量修正終止和安全性修復終止。</sup><br>
 
