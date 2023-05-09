@@ -1,7 +1,8 @@
 ---
 user-guide-title: 安裝指南
 user-guide-description: 了解如何安裝Adobe Commerce和Magento Open Source以進行內部部署。
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+feature: Install
+source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -46,7 +47,7 @@ ht-degree: 0%
       - [下載撰寫器套件](sample-data/composer-packages.md)
       - [複製Git存放庫](sample-data/git-repositories.md)
       - [移除或更新模組](sample-data/remove-or-update.md)
-- 教學課程 {#tutorials}
+- Tutorials {#tutorials}
    - [備份和回滾檔案系統、介質和資料庫](tutorials/backup.md)
    - [檢查資料庫狀態](tutorials/database-status.md)
    - [設定訊息使用者行為](tutorials/message-consumers.md)

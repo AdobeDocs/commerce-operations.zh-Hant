@@ -1,7 +1,8 @@
 ---
 user-guide-title: 配置指南
 user-guide-description: 設定您的Adobe Commerce或Magento Open Source應用程式功能和服務。
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+feature: Configuration
+source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
