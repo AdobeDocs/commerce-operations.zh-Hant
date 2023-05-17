@@ -2,9 +2,9 @@
 title: 績效基準
 description: 檢閱托管於Adobe Commerce雲端基礎架構之Adobe實作的效能基準結果。
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: 09a42dc68836b34eab2c9d90879b897729cd1b09
+source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,7 @@ Adobe Commerce 2.4.5效能基準結果反映部署了下列基礎架構和其他
    - vCPU 216（72 x 3節點）
    - 記憶體432 GiB（144 x 3節點）
    - 網路頻寬768 Gbps（256 x 3節點）
+   - EBS頻寬57000 Mbps(19000 x 3節點)
    - 100 GB的已配置儲存
 
 - **服務節點規格**
