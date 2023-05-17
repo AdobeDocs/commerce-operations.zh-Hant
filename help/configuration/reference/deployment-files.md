@@ -1,13 +1,13 @@
 ---
 title: 部署的配置檔案
 description: 了解設定檔如何用於安裝商務應用程式。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
+source-git-commit: dd990800551dd2ba35ebc7d2bc04edeb1b183d6f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
-
 
 # 部署的配置檔案
 
@@ -17,9 +17,6 @@ Adobe Commerce提供組態檔，讓您輕鬆自訂元件並建立組態類型以
 該檔案包含已安裝的模組、主題和語言包的清單；和共用組態設定。
 
    將此檔案檢入到原始碼控制項，並在開發、測試和生產系統中使用它。
-
-   自2.2版開始， `app/etc/config.php` 檔案不再是 `.gitignore` 檔案。
-這樣做是為了促進 [管道部署](../deployment/technical-details.md).
 
 - `app/etc/env.php` 包含安裝環境專屬的設定。
 
