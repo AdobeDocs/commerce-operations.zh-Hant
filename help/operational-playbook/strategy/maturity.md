@@ -4,7 +4,7 @@ description: 根據此成熟度模型評估您的業務處於什麼階段。
 exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 | 走 | 在此級別上，組織開始利用來自多個來源的過去的客戶資料，需要多部門協作。  此級別內的組織可以充分利用由人員管理的營銷活動的全部潛力，並擁有一套成熟的最佳做法、流程和開發流。 |
 | 運行 | 最高級別的成熟度使AI支援的活動能夠跨各種渠道進行，並使用預測性庫存管理來防止流失和產品資訊管理工具來豐富產品。 它最好由具有不斷演變的資料文化、開發技能和流程的公司在內部和離岸部門實現。 |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ### 爬網
 

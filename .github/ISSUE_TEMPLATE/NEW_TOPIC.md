@@ -16,16 +16,16 @@ ht-degree: 0%
 
 <!-- (REQUIRED) What topic is missing? -->
 
-## 內容檢查清單
+## 內容核對表
 
 <!-- (REQUIRED) List specific information or details to include in this topic. -->
 
 <!-- Use the following checklist template as a starting point -->
 
-- [ ] 本主題說明____的運作方式。
-- [ ] 本主題提供____的步驟。
-- [ ] 本主題包含顯示____的范常式式碼。
-- [ ] 其他（請說明）
+- [ ] 本主題說明了____的工作方式。
+- [ ] 本主題提供了____的步驟。
+- [ ] 本主題包含顯示____的代碼示例。
+- [ ] 其他（請指定）
 
 ## 其他資訊
 

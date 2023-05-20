@@ -1,57 +1,57 @@
 ---
-title: Adobe隱私權JavaScript程式庫
-description: 了解如何使用自訂工具存取和刪除Adobe Commerce和Magento Open Source收集的客戶個人資訊。
+title: Adobe隱私JavaScript庫
+description: 瞭解如何使用自定義工具訪問和刪除Adobe Commerce和Magento Open Source收集的客戶個人資訊。
 hide: true
 hidefromtoc: true
-source-git-commit: 495dfd515759e4df507479de57118586eac14fda
+exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%
 
 ---
 
-
-# Adobe隱私權JavaScript程式庫
+# Adobe隱私JavaScript庫
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-此 [Adobe隱私權JavaScript程式庫](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) 是一套工具，可協助您建立存取和刪除私人資料的程式。
+的 [Adobe隱私JavaScript庫](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) 是一組工具，用於幫助建立訪問和刪除私有資料的進程。
 
-Adobe Commerce和Magento Open Source資料追蹤服務可儲存適用於隱私權法規的私人資訊，例如 [一般資料保護規範(GDPR)](gdpr.md) 和 [加州消費者隱私法(CCPA)](ccpa.md).
+Adobe Commerce和Magento Open Source資料跟蹤服務可以儲存適用於隱私法規的隱私資訊，如 [一般資料保護法規(GDPR)](gdpr.md) 和 [加利福尼亞消費者隱私法(CCPA)](ccpa.md)。
 
-此程式庫提供一組統一的功能，用於建立隱私權資料請求、將其傳送至每個產品的實作，以及收集回應。 使用此程式庫可透過這些資料追蹤服務擷取和移除瀏覽器中儲存的資料。
+此庫提供一組統一的功能，用於建立隱私資料請求、將其發送到每個產品的實施以及收集響應。 使用此庫可檢索和刪除這些資料跟蹤服務儲存在瀏覽器中的資料。
 
 ## 安裝
 
-使用下列其中一種方法來下載程式庫檔案：
+使用以下方法之一下載庫檔案：
 
 - npm: `npm install @adobe/adobe-privacy`
 - GitHub: [https://github.com/Adobe-Marketing-Cloud/adobe-privacy](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
-取得檔案後，您需要將其新增至Adobe Commerce和Magento Open Source例項中安裝的自訂模組或主題。 遵循 [使用自訂JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) 完成此任務的主題。
+在您擁有該檔案後，您需要將其添加到Adobe Commerce和Magento Open Source實例中安裝的自定義模組或主題中。 按照 [使用自定義JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) 主題完成此任務。
 
-## 使用狀況
+## 用法
 
-AdobePrivacy JS程式庫提供多種功能，可管理儲存在瀏覽器中的身分資料。
+AdobePrivacy JS庫提供了各種功能，用於管理儲存在瀏覽器中的身份資料。
 
 `retrieveIdentities()`
-:從服務傳回身分陣列，以及在服務中找不到身分陣列
+:返回服務中的一組標識，以及在服務中找不到的一組標識
 
 `removeIdentities()`
-:從瀏覽器移除身分，並傳回一系列身分物件，其中包含 `isDeleteClientSide` 布林屬性，指出資料是否已刪除。
+:從瀏覽器中刪除標識並返回具有 `isDeleteClientSide` boolean屬性，用於指示資料是否已刪除。
 
 `retrieveThenRemoveIdentities()`
-:此函式類似於 `removeIdentities()` 在中，會擷取身分陣列並從瀏覽器中移除。
+:此函式類似於 `removeIdentities()` 中，它將檢索一組標識並從瀏覽器中刪除它們。
 
-如需使用這些函式的詳細資訊和範例，請參閱 [官方圖書館檔案](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html).
+有關使用這些函式的詳細資訊和示例，請參見 [正式庫文檔](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html)。
 
 ### 初始化
 
-實例化新 `AdobePrivacy` 物件，以在實施程式碼中使用AdobePrivacy JS資料庫。
+實例化新 `AdobePrivacy` 對象，用於在實現代碼中使用AdobePrivacy JS庫。
 
 ```js
 var adobePrivacy = new AdobePrivacy({});
 ```
 
-建構函式在實例化期間接受具有參數的配置對象。
-請參閱 [官方圖書館檔案](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) 以取得這些設定參數的清單。
+在實例化期間，建構子接受帶有參數的配置對象。
+請參閱 [正式庫文檔](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) 清單。

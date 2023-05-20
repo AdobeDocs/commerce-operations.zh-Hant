@@ -1,11 +1,11 @@
 ---
 source-git-commit: 20ebf9dc6c7a1aac1d183ed31b1a80a674d633f1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '271'
+ht-degree: 70%
 
 ---
-# 系統需求
+# 系統要求
 
 <table style="table-layout:auto">
   <thead>
@@ -663,7 +663,7 @@ ht-degree: 0%
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-            雷迪斯6.2
+            雷迪斯六點二
       </td>
       <td>
             雷迪斯6
@@ -800,8 +800,8 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->雲端基礎架構上Adobe Commerce的服務版本和相容性支援取決於雲端基礎架構上部署的版本，有時會與Adobe Commerce內部部署所支援的版本不同。 請參閱 [支援的軟體和服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 在 _雲端指南_.
+>雲基礎架構上對Adobe Commerce的服務版本和相容性支援取決於雲基礎架構上部署的版本，有時與Adobe Commerce內部部署所支援的版本不同。 請參閱 [支援的軟體和服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 的 _雲指南_。
 
 >[!NOTE]
 >
-><sup>*</sup>Adobe Commerce 2.4.5及舊版僅支援MySQL 8.0.28及舊版。
+><sup>*</sup>Adobe Commerce2.4.5和更早版本僅支援8.0.28和更早版本。

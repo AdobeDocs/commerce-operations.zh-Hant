@@ -1,5 +1,5 @@
 ---
-title: Project Management
+title: 項目管理
 description: 應用眾所周知的框架來管理您的電子商務項目。
 exl-id: 514e2317-f409-4079-bdee-1596f6635467
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 ![項目管理生命週期圖](../../assets/playbooks/project-management-lifecycle.png)
 
-項目管理生命週期提供及時和受控的交付流程，使a受益；項目利益相關者。 The first step in delivering a successful ecommerce project is project management. 正確的方法和方法是使團隊能夠有效和高效地交付項目所必需的。
+項目管理生命週期提供及時和受控的交付流程，使a受益；項目利益相關者。 成功實施電子商務項目的第一步是項目管理。 正確的方法和方法是使團隊能夠有效和高效地交付項目所必需的。
 
 
-一些團隊為其電子商務項目選擇Scrum項目管理方法。 The Scrum features mentioned below help to facilitate and manage the project:
+一些團隊為其電子商務項目選擇Scrum項目管理方法。 下面提到的Scrum功能有助於促進和管理項目：
 
 - 任務的分期
 - 短跑前和短跑期間積壓任務的週期化
-- Daily team stand-ups
+- 每日組備份
 - 每個衝刺的計畫會話
 - Sprint追溯
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 Scrum可幫助管理項目期間的更改，使團隊能夠快速顯示結果，靈活性，並增加協作。
 
-## Basic project plan
+## 基本項目計畫
 
 電子商務項目管理基本方案包括：
 
@@ -57,6 +57,6 @@ Scrum可幫助管理項目期間的更改，使團隊能夠快速顯示結果，
 - 選擇團隊所需的正確電子商務工具，如電子商務平台和通信工具
 - 測試和迭代應不斷進行
 - 跟蹤預算
-- Keeping scope creep in check
+- 檢查範圍
 
 在開發電子商務網站時需要考慮的方面有很多。 項目管理提供了跟蹤項目目標、時間表和交付項所需的結構，並使團隊成員瞭解進展情況。

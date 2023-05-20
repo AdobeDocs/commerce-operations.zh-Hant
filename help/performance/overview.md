@@ -1,19 +1,19 @@
 ---
 title: 概述
-description: 請依照下列最佳實務來最佳化Adobe Commerce或Magento Open Source部署的效能。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+description: 遵循這些最佳做法優化您的Adobe Commerce或Magento Open Source部署的效能。
+exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
 
 ---
 
+# 最佳效能實踐
 
-# 效能最佳實務
-
-此 _效能最佳實務_ 指南提供最佳化生產部署效能的建議和指示。 負責以生產模式維護商店的技術使用者應使用本指南所述的最佳實務，協助確保其商店隨時以最高效率運作。
+的 _效能最佳實踐_ 指南提供了優化生產部署效能的建議和說明。 負責在生產模式下維護商店的技術用戶應使用本指南中介紹的最佳做法，幫助確保他們的商店始終以最高效率運行。
 
 ## 假設
 
-* 您安裝Adobe Commerce或Magento Open Source時使用 [撰寫器](../installation/composer.md).
-* 您可使用此安裝來執行即時生產執行個體的Adobe Commerce或Magento Open Source。
+* 您已使用安裝Adobe Commerce或Magento Open Source [作曲家](../installation/composer.md)。
+* 使用此安裝可運行Adobe Commerce或Magento Open Source的即時生產實例。

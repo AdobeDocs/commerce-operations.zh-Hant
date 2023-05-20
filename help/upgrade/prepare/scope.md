@@ -1,50 +1,50 @@
 ---
-title: 了解升級範圍
-description: 了解在版本中向後不相容的變更，這些變更可能會影響Adobe Commerce、Magento Open Source自訂模組或協力廠商擴充功能。
-source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
+title: 瞭解升級範圍
+description: 瞭解在可能影響Adobe Commerce或Magento Open Source自定義模組或第三方擴展的發行版中反向不相容的更改。
+exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 0%
 
 ---
 
+# 瞭解升級範圍
 
-# 了解升級的範圍
-
-檢閱 [發行說明](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) 了解發行範圍，包括增強功能、錯誤修正，以及可能影響協力廠商和自訂模組的已知問題。
+查看 [發行說明](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) 瞭解發行版的範圍，包括增強功能、錯誤修復以及可能影響第三方和自定義模組的已知問題。
 
 ## 向後不相容的更改
 
-Adobe Commerce和Magento Open Source發行可能包含不相容於回溯的變更。 請參閱我們不相容於回溯的變更檔案，請參閱下列內容：
+Adobe Commerce版和Magento Open Source版可能包含向後不相容的更改。 查看向後不相容的更改文檔，請參閱以下內容：
 
-- **[重大變更重點](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)** — 具有重大影響、需要詳細說明和特殊說明的更改，以確保第三方模組繼續工作。
-- **[微幅變更參考](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)** — 從代碼庫生成的參考文檔，該代碼庫描述對類、API成員資格、資料庫、依賴項插入、介面、佈局、系統和XSD的微幅更改。
+- **[主要變化重點](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)** — 具有重大影響並需要詳細說明和特別說明以確保第三方模組繼續工作的更改。
+- **[次要更改引用](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)** — 參考從代碼庫生成的文檔，該代碼庫描述對類、API成員資格、資料庫、依賴項注入、介面、佈局、系統和XSD的細微更改。
 
-## 協力廠商擴充功能
+## 第三方擴展
 
-Adobe Commerce Marketplace的新相容性政策可確保 _all_ 列出的擴充功能與GA日期後30天內的最新發行版本相容。 因此，請務必盡可能透過Marketplace取得您的協力廠商擴充功能。
+Adobe CommerceMarketplace的新相容性政策確保 _全部_ 列出的擴展在GA日期30天內與最新發佈的版本相容。 因此，在可能的情況下通過市場獲取第三方擴展非常重要。
 
-## 自訂模組
+## 自定義模組
 
-所有自訂模組都應根據您要升級的目標版本進行檢查。 這是最耗時和耗用資源的升級過程。 評估自訂模組時，您必須尋找不相容於後向的變更，並注意新作法，例如控制器分解。 您可以在 [發行說明](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). 同時，請確定您 [最佳實務](https://developer.adobe.com/commerce/php/best-practices/extensions/) 模組開發。
+所有自定義模組都應根據您要升級到的目標版本進行檢查。 這是升級過程中耗費的時間和資源最多的過程。 在評估自定義模組時，必須查找向後不相容的更改，並瞭解新做法，如控制器分解。 您可以在 [發行說明](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)。 另外，確保您正在 [最佳做法](https://developer.adobe.com/commerce/php/best-practices/extensions/) 模組開發。
 
 ## [!DNL Upgrade Compatibility Tool]
 
-此 [!DNL Upgrade Compatibility Tool] 是命令列工具，可分析您的執行個體，以找出潛在的升級問題。 它會檢查您安裝的目前版本與您嘗試升級的版本之間是否有問題。
+的 [!DNL Upgrade Compatibility Tool] 是一個命令行工具，用於分析實例的潛在升級問題。 它檢查您安裝的當前版本與您嘗試升級到的版本之間是否存在問題。
 
-使用此工具可降低團隊了解升級範圍和影響所需的工作量。 可協助您避免升級時的常見程式碼問題，並提供解決已識別問題的明確指示。 它還有助於優先處理確保升級成功所需的最關鍵問題，在升級時既節省時間又節省成本。
+使用此工具可減少團隊瞭解升級的範圍和影響所需的工作量。 它有助於您避免在升級時出現常見的代碼問題，並就如何解決已發現的問題提供明確的指導。 它還有助於優先處理確保成功升級所需的最關鍵問題，從而節省升級時的時間和成本。
 
-請參閱下列章節，以開始使用 [!DNL Upgrade Compatibility Tool]. 請參閱 [!DNL Upgrade Compatibility Tool] [指南](../upgrade-compatibility-tool/overview.md) 以取得更多技術詳細資訊和進階使用案例。
+請參閱以下章節以開始 [!DNL Upgrade Compatibility Tool]。 查看 [!DNL Upgrade Compatibility Tool] [引導](../upgrade-compatibility-tool/overview.md) 的子菜單。
 
 ### 下載工具
 
-使用撰寫器來下載工具。 它需要PHP 7.3或更新版本、至少2GB的RAM、Node.js(如果您正在檢查GraphQL相容性)和Adobe Commerce授權。
+使用Composer下載工具。 它需要PHP 7.3或更高版本、至少2GB的RAM、Node.js(如果您正在檢查GraphQL相容性)和Adobe Commerce許可證。
 
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
-### 執行工具
+### 運行工具
 
 要分析實例並檢查錯誤、警告和嚴重問題：
 
@@ -54,9 +54,9 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 >[!NOTE]
 >
-> 此 `<dir>` 參數是儲存代碼庫的目錄。 此 `-c` 選項會比較您的程式碼基底與指定的版本。
+> 的 `<dir>` argument是儲存代碼庫的目錄。 的 `-c` 選項將代碼庫與指定的版本進行比較。
 
-要確定您的團隊要解決的最關鍵問題，請執行以下操作：
+要確定您團隊要解決的最關鍵問題：
 
 ```bash
 bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues –min-issue-level critical --vanilla-dir /path/to/vanilla/code/ /path/to/magento/app/code/Vendor/
@@ -64,23 +64,23 @@ bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues �
 
 與此命令一起使用的其他選項有：
 
-- `--ignore-current-version-compatibility-issues` — 隱藏針對當前版本的所有已知嚴重問題、錯誤和警告。 它只會針對您嘗試升級的版本提供錯誤。
+- `--ignore-current-version-compatibility-issues` — 針對當前版本取消所有已知嚴重問題、錯誤和警告。 它僅針對您嘗試升級的版本提供錯誤。
 
-- `--min-issue-level` — 可讓您設定最低問題級別，以便僅排定升級中最重要問題的優先順序。 選項是警告、錯誤和嚴重性，按嚴重性的升序排列。
+- `--min-issue-level` — 允許您設定最小問題級別，以幫助您僅排定升級中最重要問題的優先順序。 這些選項按嚴重性的升序排列為警告、錯誤和嚴重。
 
-- `-m | [=MODULE-PATH]` — 如果只想分析特定供應商、模組或甚至目錄，也可以指定路徑作為選項。
+- `-m | [=MODULE-PATH]` — 如果只要分析某個供應商、模組甚至目錄，也可以指定路徑作為選項。
 
-- `--vanilla-dir` — 可讓您檢查核心程式碼中是否有任何非標準的功能實施或自訂項目。 請務必事先清理。 系統會自動下載您版本的香草例項以供參考。
+- `--vanilla-dir` — 允許您檢查核心代碼中任何非標準實現的功能或定制。 必須事先清理。 您版本的香草實例將自動下載以供參考。
 
    >[!NOTE]
    >
-   > 您也可以使用 `core:code:changes` 命令)。
+   > 也可以使用 `core:code:changes` 的子菜單。
 
 ### 分析輸出
 
-此 [!DNL Upgrade Compatibility Tool] 會匯出JSON檔案，識別受影響的程式碼或模組、嚴重性，以及所遇到每個問題的問題說明。 它也會輸出含有複雜度分數的摘要報表，讓您的團隊大致了解升級至最新版本所需的時間。 複雜性分數越低，執行升級就越輕鬆。
+的 [!DNL Upgrade Compatibility Tool] 導出標識受影響代碼或模組、嚴重性以及它遇到的每個問題的問題說明的JSON檔案。 它還輸出具有複雜性分數的摘要報告，使您的團隊能夠大致瞭解升級到最新版本所需要的內容。 複雜性分數越低，執行升級就越容易。
 
-以下輸出顯示了示例摘要報告：
+以下輸出顯示了一個示例摘要報告：
 
 ```console
  ------------------------ --------
@@ -101,14 +101,14 @@ bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues �
  ------------------------ --------
 ```
 
-### 提示與建議
+### 提示和建議
 
-已識別工具的所有問題都會列在報表中，並附上特定的錯誤碼。 使用 [錯誤訊息參考](../upgrade-compatibility-tool/error-messages.md) 以取得每個問題的詳細資訊。 Adobe還提供修正每種問題類型的建議，以便您可以規劃修正步驟。
+工具識別的所有問題都列在報告中，並帶有特定錯誤代碼。 使用 [錯誤消息引用](../upgrade-compatibility-tool/error-messages.md) 獲取有關每個問題的詳細資訊。 Adobe還提供了修復每種問題類型的建議，以便您可以規劃修正步驟。
 
-使用報表來預估更新升級程式碼所需的工作量。 根據您的經驗，您可以根據已識別的問題總數和問題的嚴重性，預估升級所需的工作量。 由於這是命令列工具，因此您可以將此工具併入自動測試和程式碼檢查套裝中，並使用JSON輸出產生您的報表。
+使用此報告可估計更新升級代碼所需的工作量。 根據您的經驗，您可以根據確定的問題總數和問題的嚴重性來估計升級所需的工作量。 由於這是命令行工具，因此您可以將此工具合併到自動測試和代碼檢查套件中，並使用JSON輸出生成報告。
 
-建議您保存每個升級項目的結果，以便您可以將將來的升級結果與以前的結果進行比較。 透過持續使用，您將開始從工具提供的摘要報表中，充分了解升級至下一個版本所花費的心力。
+我們建議保存每個升級項目的結果，以便您可以將將來的升級結果與以前的結果進行比較。 通過持續使用，您將開始充分瞭解僅從工具提供的摘要報告升級到下一個版本所需的工作量。
 
-我們也建議您在進行升級時定期執行工具，以便掌握您的進度。 問題數量應會隨著您修正而減少。 這也有助於您的團隊決定發佈工作的最佳方式。
+我們還建議您在進行升級時定期運行該工具，以便瞭解您的進度。 問題數在您修復時應減少。 這還有助於您的團隊確定分發工作的最佳方法。
 
-此 [!DNL Upgrade Compatibility Tool] 日後的發行版本將持續改善，其中將包含自動修正等功能，協助您盡快修正問題。 2022年1月發佈的最新改進包括PHP 8.1相容性測試和HTML可視化功能，這些功能可幫助您快速確定可能需要付出更多努力才能升級的領域。
+的 [!DNL Upgrade Compatibility Tool] 今後的版本將繼續改進，並將包括自動修復等功能，以幫助您盡快解決問題。 2022年1月發佈的最新改進包括PHP 8.1相容性test和HTML可視化功能，這些功能可幫助您快速確定可能需要更多升級工作的領域。

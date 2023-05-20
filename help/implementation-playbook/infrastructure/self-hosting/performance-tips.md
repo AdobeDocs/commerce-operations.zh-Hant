@@ -1,70 +1,70 @@
 ---
-title: 自行托管Adobe Commerce效能秘訣
-description: 了解自行托管效能秘訣的想法、概念及最佳實務，以供參考。
-landing-page-description: 了解自行托管Adobe Commerce時需考慮的效能秘訣概念和事項。
-short-description: 了解自行托管Adobe Commerce的策略和效能秘訣概念。
+title: 自主托管Adobe Commerce效能提示
+description: 瞭解自主承載效能提示思想、概念和要考慮的最佳做法。
+landing-page-description: 瞭解一些在您自己主持Adobe Commerce時需要考慮的效能提示概念和內容。
+short-description: 瞭解自己主持Adobe Commerce的策略和效能提示概念。
 kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: ab099b2a8a353c2462424831cf8100e7e281b1be
+exl-id: 95ff0c79-21d0-4514-991c-d88f616db68f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 0%
 
 ---
 
+# 自主托管Adobe Commerce效能提示
 
-# 自行托管Adobe Commerce效能秘訣
+使用靈活而強大的電子商務平台並不意味著您必須犧牲效能。 自Adobe Commerce成立以來，核心應用程式已有許多改進。 在2.5.4版中，Adobe Commerce工程團隊執行了一個集test來對應用程式進行基準測試。 test結果表明，Adobe Commerce能夠處理超過2.4億個SKU的大目錄，API請求時間超常，平均為300毫秒，而每小時的頁面瀏覽量和訂單數量以200萬頁和208,000條/小時的速度驚人。
 
-使用靈活而強大的電子商務平台並不意味著您必須犧牲效能。 自Adobe Commerce成立以來，核心應用程式已有諸多改善。 在2.5.4版中，Adobe Commerce工程團隊執行了一組測試，以便對應用程式進行基準測試。 測試結果顯示，Adobe Commerce可處理超過2.4億個SKU的大型目錄，API請求時間平均為300毫秒，而每小時的頁面檢視次數和訂購次數則是驚人的，每小時可處理200萬個頁面檢視和208,000個訂單。
+通過標題到 [Experience League-Adobe Commerce — 實施行動手冊 — 基準](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/performance/benchmarks.html){target="_blank"}。
 
-查看最新基準結果，前往 [Experience League- Adobe Commerce — 實作行動手冊 — 基準](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/performance/benchmarks.html){target="_blank"}.
+要盡可能保持最佳狀態，請在項目中添加自定義項和附加複雜性時遵循這些標準。
 
-若要盡可能讓項目保持最佳狀態，請在專案中新增自訂項目和額外的複雜度時，遵循這些標準。
-
-以下小節涵蓋需要考慮的主題，以及如何最佳化自行托管實作的建議。
+以下各節介紹了要考慮的主題，以及有關如何優化自主托管實施的建議。
 
 ## 清漆
 
-清漆是帶快取的HTTP反向代理。 雖然這看起來可能很複雜，但結果是快速回應，可協助確保傳回請求的速度比從來源擷取項目來得快。 若不使用某些版本的清漆，執行Adobe Commerce網站將會導致頁面載入速度變慢，並導致其他關鍵量度。 清漆可能很難自行設定和管理，不過我們在Experience League中確實有這個主題 [配置清漆](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish.html){target="_blank"} 以便更清楚地了解其與Adobe Commerce的用途。 另一種選擇是使用雲端式解決方案。 雖然有很多需要考慮的問題，但是Ampley被選為雲上Adobe Commerce的解決方案。 它是一種基於雲的Ampley版本，它使用了VCL和清漆的許多方面。
+清漆是帶快取的HTTP反向代理。 儘管這看起來很複雜，但結果是快速響應，以幫助確保返回請求的速度快於從源中提取項目的速度。 如果運行Adobe Commerce站點而不使用某個版本的清漆，則會導致頁面載入速度減慢和其他關鍵度量。 清漆可能很難設定和管理自己，但我們在Experience League中確實有這個主題 [配置清漆](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish.html){target="_blank"} 以便更好地理解它和Adobe Commerce的用途。 另一種選擇是使用基於雲的解決方案。 儘管有很多需要考慮的問題，但是Appisty被選為雲上Adobe Commerce的解決方案。 它是基於雲的Rebisty的一個版本，它使用VCLs和很多清漆面。
 
-很難找到最適合您的應用程式、配置、預算和技術能力的解決方案。 使用基於雲的選項，只要考慮管理、配置、伺服器和其他基礎架構元件，所有硬體部件都會消失。 由於效能、延展性、吞吐量以及許多其他關鍵指標，雲端團隊的Adobe Commerce將其選為解決方案。
+很難找到最適合您的應用程式、配置、預算和技術能力的解決方案。 使用基於雲的選項，所有硬體部件都會消失，只要考慮管理、配置、伺服器和其他基礎架構元件。 由於其效能、可擴充性、吞吐量以及許多其他關鍵指標，Adobe Commerce雲團隊選擇它作為其解決方案。
 
-通過為您的項目選擇關於清漆的良好解決方案，您可以為客戶設定最佳效能，並避免商務應用程式比必須更努力地工作。
+通過為您的項目選擇關於清漆的好解決方案，您可以為客戶創造最佳效能，並避免商業應用程式比必須的工作更加努力。
 
 ## CDN
 
-除了清漆是您Adobe Commerce專案的寶貴資產外，接下來還有CDN。 除了清漆外，CDN還可為CSS、頁面資產（例如影像）提供快取的例項，以協助減少傳至Adobe Commerce應用程式的頻寬。 它可快取GraphQL回應，進一步發揮無頭式Adobe Commerce網站的優點。 有些CDN提供影像最佳化、Web應用程式防火牆和其他功能。
+除清漆外，清漆還是您的Adobe Commerce項目的寶貴資產，接下來是CDN。 除了清漆，CDN還可以為您的CSS提供快取實例、頁面資產（如影像），以幫助減少傳入您的Adobe Commerce應用程式的頻寬。 它可以快取GraphQL的回應，進一步推進無頭Adobe Commerce網站的好處。 一些CDN提供了映像優化、Web應用程式防火牆等功能。
 
-Adobe Commerce on cloud選擇將Abmet用於其清漆快取，也用作其CDN。 此單一解決方案提供多種功能，可為雲端客戶提供絕佳的Adobe Commerce體驗。 您可以閱讀「Ambey服務」概述的Experience League [快速服務概述](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html){target="_blank"}
+Adobe Commerce在雲端選擇使用Abriest作為其清漆快取，也作為其CDN。 此單一解決方案提供多種功能，為Adobe Commerce雲客戶提供絕佳體驗。 您可以在Experience League中閱讀Axpeistservices概述 [Affeist服務概述](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html){target="_blank"}
 
-CDN為Adobe Commerce專案提供最佳化且安全的傳遞內容。 如果這可能不是專案的必要元件，當網站成熟且訪客數量增加時，應將其視為必要元件。 提供CDN後，您就會因為從每個請求移除的負載，而延遲將其他硬體新增至基礎架構，或調整現有基礎架構的規模。
+CDN為Adobe Commerce項目提供優化和安全的交付內容。 如果這可能不是您項目的必需元件，則應當視為您的站點成熟，訪問者數量增加。 通過提供CDN，您可以延遲向基礎架構添加附加硬體或擴展現有基礎架構，因為從每個請求中卸除了負載。
 
 ## 禁用模組
 
-應考慮停用未使用的模組，但不應輕視。 此技術確實會減少某些請求的額外負荷和處理時間，但有些副作用應予考慮。 開發人員在建立功能時，經常會假設模組可供使用。 這通常是安全的，除非他們選擇使用在已禁用的模組中找到的某些類。
+應考慮禁用未使用的模組，但不應輕視。 這種技術確實減少了一些請求的開銷和處理時間，但也有一些副作用需要考慮。 有時，開發人員在建立功能時假定模組可用。 這通常是安全的，除非他們選擇使用在已禁用的模組中找到的某些類。
 
-停用模組（例如原生「電子報」）是相當常見的事件。 當商店擁有者有第三方公司管理其電子報時，尤其如此。 這可能是安裝協力廠商模組時，且出於某些原因，他們決定使用電子報中的類別。 在某些初始安裝和測試期間，可能會捕獲到此意外相依性，但之後您將被迫決定是否要保留此協力廠商模組、啟用電子報，然後回歸測試網站，以尋找所引入的任何奇怪行為。 還是找到該協力廠商模組的替代項目？ 這兩項決定都伴有風險、時間，可能還有錯誤。
+禁用模組（如本機「新聞簡訊」）是相當常見的事件。 尤其是當店主擁有第三方公司來管理其新聞稿時，情況就更是如此。 這可能是一個問題，即安裝第三方模組時，出於某種原因，他們決定使用新聞簡報中的類。 在初始安裝和測試時，可能會發現此意外依賴關係，但是您必須決定是否要保留此第三方模組，啟用新聞簡報，然後回歸test站點，以查找引入的任何奇特行為。 或者，您是否找到了第三方模組的替代產品。 這兩個決定都伴隨著風險、時間，可能還有錯誤。
 
-在禁用未使用的模組之前，請確保您沒有任何測試，如設備、 [MFTF](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/){target="_blank"}, [Codeception testing](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/){targe="_blank"} 載入測試或可能受影響的API要求。
+在禁用未使用的模組之前，請確保沒有任何test，如設備， [MFTF](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/){target="_blank"}, [Codeception testing](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/){targe="_blank"} 載入test或可能受影響的API請求。
 
-## 要求每次提取請求都遵循Adobe Commerce和PHP編碼標準
+## 要求每個拉入請求都遵循Adobe Commerce和PHP編碼標準
 
-Adobe Commerce [編碼標準](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. 這些有助於確保無論軟體開發類型如何，都能遵循類似的模式、樣式和預期設計。 協助撰寫Adobe Commerce程式碼基底時，此為必要條件。 不過，如果您選擇遵循此自訂開發方法，可為所有開發人員（包括目前和未來）奠定堅實的基礎。 若要求所有提取請求都傳遞程式碼標準，有助於確保每個人都能了解並期待相同的一致開發模式。
+Adobe Commerce [編碼標準](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}。 這些幫助確保無論軟體開發類型如何，都遵循類似的模式、樣式和預期設計。 在為Adobe Commerce基礎庫作貢獻時，這是一個要求。 但是，如果您選擇採用此方法進行自定義開發，則將為所有開發人員奠定堅實的基礎，無論是當前還是未來。 當要求所有拉取請求都通過代碼標準時，有助於確保每個人都能理解並期望得到相同的一致開發模式。
 
-為配合Adobe Commerce編碼標準，採用的另一個基礎是PHP基本編碼標準。 開發人員指南中應清楚定義您必須遵循哪些標準，以及任何可接受的偏差。 不過，回復應該是公開維護的指南，請參閱 [PHP-FIG](https://www.php-fig.org){target="_blank"}.
+為配合Adobe Commerce編碼標準，採用的另一個基礎是PHP基本編碼標準。 應在開發人員指南中明確定義它，以指導您需要遵循哪些標準以及任何可接受的偏差。 但是，應回退到以下位置的公開維護指南 [PHP-FIG](https://www.php-fig.org){target="_blank"}。
 
-對PSR-1和PSR-12的堅定立場。 確保為項目做出貢獻的開發人員遵循這些規則，有助於確保不存在結構怪異的檔案和模式。 這也有助於確保未來的開發人員快速閱讀及了解所檢閱的程式碼。 您越接近這些模式和編碼標準，就意味著未來開發工作應該更容易閱讀，實施速度也更快。
+對遵守PSR-1和PSR-12的立場是堅定的。 確保為項目作出貢獻的開發人員遵守這些規則有助於確保不存在結構異常的檔案和模式。 這還有助於確保未來的開發人員能夠快速閱讀和理解他們正在審閱的代碼。 遵循這些模式和編碼標準越近，意味著未來的開發工作應該更容易被閱讀，執行得也更快。
 
-## 在每個部署後運行負載測試
+## 在每個部署後運行負載test
 
-在每個部署後執行負載測試可能看起來過多。 但是，如果遵循此方法，則可追蹤並緩解新引入功能導致效能下降的機會。
+在每次部署後執行載入test可能過多。 但是，如果遵循此方法，則可以跟蹤並減少新引入的導致效能下降的功能的機會。
 
-除了檢測新代碼的效能下降外，從您的網站參考關鍵量度的歷史資料有助於深入了解新工具或變更基礎架構的啟用時間。 例如，在向托管公司付款以增加您的環境規模並希望您獲得預期的效能提升之前，您可以使用新的設定來設定預備環境，並執行負載測試以查看實際結果。
+除了檢測新代碼導致的效能降級外，從站點中參考關鍵指標還有助於深入瞭解何時啟用新工具或更改基礎架構。 例如，在向托管公司支付費用以調整您的環境規模並希望您獲得預期的效能提升之前，您可以設定具有新配置的登台環境並運行載入test，以查看實際結果。
 
-這些測試可以自動執行，且屬於您的CI/CD管道。 因此，您也可以制定規則，以取得結果，並且如果發生過多偏離基準的情況，可能會阻止特徵合併。 此資料的使用案例數量無限，但若不啟動此程式，您可能永遠無法發揮其潛力。
+這些test可以自動化，並且是CI/CD管道的一部分。 因此，您還可以設定規則來獲取結果，如果與范數的偏離過多，則可能會阻止特徵的合併。 此資料的使用案例數量是無限的，但如果不啟動此過程，您可能永遠無法實現其潛力。
 
-Adobe Commerce對此主題的註解良好，請參閱Experience League [效能測試提示](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/launch.html){target="_blank"} and in [Testing guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html){target="_blank"}.
+Adobe Commerce在Experience League中對此主題有很好的寫作 [效能測試提示](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/launch.html){target="_blank"} and in [Testing guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html){target="_blank"}。
 
 {{$include /help/_includes/hosting-related-links.md}}

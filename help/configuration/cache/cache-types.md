@@ -1,7 +1,8 @@
 ---
 title: 快取類型
 description: 將快取前端與快取類型關聯。
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%

@@ -1,13 +1,13 @@
 ---
 title: B2B擴展配置路徑參考
 description: 請參見與B2B相關的配置值清單。
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 2%
+source-wordcount: '841'
+ht-degree: 0%
 
 ---
-
 
 # B2B擴展配置路徑參考
 
@@ -44,7 +44,7 @@ _這適用於安裝了B2B的Adobe Commerce實例。_
 | 適用的付款方法 | `btob/default_b2b_payment_methods/applicable_payment_methods` |  |  |  |
 | 付款方法 | `btob/default_b2b_payment_methods/available_payment_methods` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 客戶類別
 
@@ -88,7 +88,7 @@ _這適用於安裝了B2B的Adobe Commerce實例。_
 | 已退款電子郵件模板 | `company/email/credit_refunded_email_template` |  |  |  |
 | 已還原電子郵件模板 | `company/email/credit_reverted_email_template` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ### 申請清單路徑
 
@@ -98,7 +98,7 @@ _這適用於安裝了B2B的Adobe Commerce實例。_
 | -------------- | -------------- | -------------- | -------------- | -------------- |
 | 申請清單數 | `requisitionlist/general/number_requisition_lists` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 銷售類別
 
@@ -121,7 +121,7 @@ _這適用於安裝了B2B的Adobe Commerce實例。_
 | 將報價電子郵件副本發送到 | `sales_email/quote/copy_to` |  |  | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 發送報價電子郵件複製方法 | `sales_email/quote/copy_method` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ### 引號路徑
 
@@ -140,7 +140,7 @@ _這適用於安裝了B2B的Adobe Commerce實例。_
 | 用於上載的檔案格式 | `quote/attached_files/file_formats` |  |  |  |
 | 最大檔案大小 | `quote/attached_files/maximum_file_size` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 付款方法路徑
 
@@ -257,4 +257,4 @@ _這適用於安裝了B2B的Adobe Commerce實例。_
 | 最大訂單總數 | `payment/it/companycredit/max_order_total` |  |  |  |
 | 排序順序 | `payment/it/companycredit/sort_order` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}

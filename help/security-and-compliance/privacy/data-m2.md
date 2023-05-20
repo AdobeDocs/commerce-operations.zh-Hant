@@ -1,28 +1,28 @@
 ---
 title: 客戶個人資訊參考（2.x版）
-description: 了解Adobe Commerce和Magento Open Source2.x中客戶個人資訊的資料流圖表和資料庫實體對應。
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+description: 瞭解Adobe Commerce和Magento Open Source2.x中客戶個人資訊的資料流圖和資料庫實體映射。
+exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
 
 ---
 
-
 # 客戶個人資訊參考（2.x版）
 
 >[!NOTE]
 >
->這是一系列主題中的一個，可協助Adobe Commerce和Magento Open Source商與開發人員準備遵守隱私權法規。 請洽詢您的法律顧問，以判斷您的企業是否應遵守及如何遵守任何法律義務。
+>這是幫助Adobe Commerce和Magento Open Source商家和開發商為遵守隱私法規做準備的一系列主題中的一個。 請咨詢您的法律顧問，以確定您的企業是否以及如何遵守任何法律義務。
 
-為隱私管理法規開發合規性程式時，請使用以下資料流圖表和資料庫實體映射作為參考，例如：
+在為隱私管理法規開發符合性程式時，請使用以下資料流圖和資料庫實體映射來參考，例如：
 
-- [GDPR](gdpr.md)
+- [格德普](gdpr.md)
 - [CCPA](ccpa.md)
 
 ## 資料流圖
 
-資料流圖表顯示客戶和管理員可以輸入的資料類型，以及可以從店面和管理員檢索的資料類型。
+資料流圖顯示了客戶和管理員可以輸入和從儲存前端和管理員檢索的資料類型。
 
 ### 前端資料入口點
 
@@ -32,29 +32,29 @@ ht-degree: 0%
 
 ### 前端資料接入點
 
-Adobe Commerce和Magento Open Source會在客戶登入並檢視數個不同頁面或結帳時載入客戶資訊。
+Adobe Commerce和Magento Open Source在客戶登錄並查看多個不同頁面或簽出時載入客戶資訊。
 
 ![前端資料接入點](../../assets/security-compliance/frontend-data-access-points.svg)
 
 ### 後端資料入口點
 
-從管理員建立客戶或訂單時，商家可以輸入客戶資訊、地址資料和付款資料。
+當從管理員建立客戶或訂單時，商戶可以輸入客戶資訊、地址資料和付款資料。
 
 ![後端資料入口點](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### 後端資料存取點
 
-Adobe Commerce和Magento Open Source會在商家檢視數種格線、按一下格線以查看詳細資訊，以及執行各種其他工作時載入客戶資訊。
+Adobe Commerce和Magento Open Source在商家查看多種類型的網格時載入客戶資訊，按一下網格以查看詳細資訊，並執行各種其他任務。
 
 ![後端資料存取點](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## 資料庫實體
 
-Adobe Commerce和Magento Open Source主要將客戶特定資訊儲存在客戶、地址、訂單、報價和付款表格中。 其他表格則包含客戶ID的參考。
+Adobe Commerce和Magento Open Source主要在客戶、地址、訂單、報價和付款表中儲存特定於客戶的資訊。 其他表包含對客戶ID的引用。
 
 ### 客戶資料
 
-Adobe Commerce和Magento Open Source可設定來儲存下列客戶屬性：
+Adobe Commerce和Magento Open Source可配置為儲存以下客戶屬性：
 
 - 出生日期
 - 電子郵件
@@ -67,13 +67,13 @@ Adobe Commerce和Magento Open Source可設定來儲存下列客戶屬性：
 
 >[!NOTE]
 >
->根據目前的安全性和隱私最佳實踐，在收集或處理此類資料之前，請確保您了解與儲存客戶的完整出生日期（月、日、年）以及其他個人標識符（如全名）相關的任何潛在法律和安全風險。
+>根據當前的安全和隱私最佳做法，在收集或處理此類資料之前，請確保您知道與儲存客戶的完整出生日（月、日、年）以及其他個人標識符（如全名）相關的任何潛在法律和安全風險。
 
-#### `customer_entity` 和「customer_entity」參考
+#### `customer_entity` 和「customer_entity」引用
 
-以下欄位位於 `customer_entity` 表格包含客戶資訊：
+中的以下列 `customer_entity` 表包含客戶資訊：
 
-| 欄 | 資料類型 |
+| 列 | 資料類型 |
 | ------------ | ------------ |
 | `email` | varchar(255) |
 | `prefix` | varchar(40) |
@@ -84,28 +84,28 @@ Adobe Commerce和Magento Open Source可設定來儲存下列客戶屬性：
 | `dob` | 日期 |
 | `gender` | smallint(5) |
 
-這些表引用 `customer_entity` 可包含自訂客戶屬性：
+這些表引用 `customer_entity` 並且可以包含自定義客戶屬性：
 
-| 表格 | 欄 | 資料類型 |
+| 表格 | 列 | 資料類型 |
 | -------------------------- | ------- | ------------- |
-| `customer_entity_datetime` | `value` | 日期時間 |
-| `customer_entity_decimal` | `value` | decimal(12,4) |
+| `customer_entity_datetime` | `value` | 日期 |
+| `customer_entity_decimal` | `value` | 十進位(12,4) |
 | `customer_entity_int` | `value` | int(11) |
-| `customer_entity_text` | `value` | 文字 |
+| `customer_entity_text` | `value` | 文本 |
 | `customer_entity_varchar` | `value` | varchar(255) |
 
-#### `customer_grid_flat` 表格
+#### `customer_grid_flat` 表
 
-以下欄位位於 `customer_grid_flat` 表格包含客戶資訊：
+中的以下列 `customer_grid_flat` 表包含客戶資訊：
 
-| 欄 | 資料類型 |
+| 列 | 資料類型 |
 | -------------------- | ------------ |
-| `name` | 文字 |
+| `name` | 文本 |
 | `email` | varchar(255) |
 | `dob` | 日期 |
 | `gender` | int(11) |
-| `shipping_full` | 文字 |
-| `billing_full` | 文字 |
+| `shipping_full` | 文本 |
+| `billing_full` | 文本 |
 | `billing_firstname` | varchar(255) |
 | `billing_lastname` | varchar(255) |
 | `billing_telephone` | varchar(255) |
@@ -119,7 +119,7 @@ Adobe Commerce和Magento Open Source可設定來儲存下列客戶屬性：
 
 ### 地址資料
 
-Adobe Commerce和Magento Open Source儲存下列客戶屬性：
+Adobe Commerce和Magento Open Source儲存以下客戶屬性：
 
 - 城市
 - 公司
@@ -131,17 +131,17 @@ Adobe Commerce和Magento Open Source儲存下列客戶屬性：
 - 名稱前置詞
 - 名稱尾碼
 - 電話號碼
-- 州/省
-- 州/省ID
+- 省/自治區
+- 省/自治區ID
 - 街道地址
 - 增值稅編號
 - 郵遞區號
 
 #### `customer_address_entity` 和 `customer_address_entity` 參照
 
-以下欄位位於 `customer_address_entity` 表格包含客戶資訊：
+中的以下列 `customer_address_entity` 表包含客戶資訊：
 
-| 欄 | 資料類型 |
+| 列 | 資料類型 |
 | ------------ | ------------ |
 | `city` | varchar(255) |
 | `company` | varchar(255) |
@@ -153,32 +153,32 @@ Adobe Commerce和Magento Open Source儲存下列客戶屬性：
 | `postcode` | varchar(255) |
 | `region` | varchar(255) |
 | `region_id` | int(10) |
-| `street` | 文字 |
+| `street` | 文本 |
 | `suffix` | varchar(40) |
 | `telephone` | varchar(255) |
 | `vat_id` | varchar(255) |
 
-這些表引用 `customer_address_entity` 可包含自訂客戶屬性：
+這些表引用 `customer_address_entity` 並且可以包含自定義客戶屬性：
 
-| 表格 | 欄 | 資料類型 |
+| 表格 | 列 | 資料類型 |
 | ---------------------------------- | ------- | ------------- |
-| `customer_address_entity_datetime` | `value` | 日期時間 |
-| `customer_address_entity_decimal` | `value` | decimal(12,4) |
+| `customer_address_entity_datetime` | `value` | 日期 |
+| `customer_address_entity_decimal` | `value` | 十進位(12,4) |
 | `customer_address_entity_int` | `value` | int(11) |
-| `customer_address_entity_text` | `value` | 文字 |
+| `customer_address_entity_text` | `value` | 文本 |
 | `customer_address_entity_varchar` | `value` | varchar(255) |
 
-### 訂購資料
+### 訂單資料
 
-此 `sales_order` 相關表格包含客戶名稱、帳單和運送地址以及相關資料。
+的 `sales_order` 相關表包含客戶名稱、開單地址和發運地址以及相關資料。
 
-#### `sales_order` 表格
+#### `sales_order` 表
 
-以下欄位位於 `sales_order` 表格包含客戶資訊：
+中的以下列 `sales_order` 表包含客戶資訊：
 
-| 欄 | 資料類型 |
+| 列 | 資料類型 |
 | --------------------- | ------------ |
-| `customer_dob` | 日期時間 |
+| `customer_dob` | 日期 |
 | `customer_email` | varchar(128) |
 | `customer_firstname` | varchar(128) |
 | `customer_gender` | int(11) |
@@ -193,11 +193,11 @@ Adobe Commerce和Magento Open Source儲存下列客戶屬性：
 | `remote_ip` | varchar(32) |
 | `x_forwarded_for` | varchar(32) |
 
-#### `sales_order_address` 表格
+#### `sales_order_address` 表
 
-此 `sales_order_address` 表格包含客戶的地址。
+的 `sales_order_address` 表包含客戶地址。
 
-| 欄 | 資料類型 |
+| 列 | 資料類型 |
 | --------------------- | ------------ |
 | `customer_address_id` | int(11) |
 | `quote_address_id` | int(11) |
@@ -216,11 +216,11 @@ Adobe Commerce和Magento Open Source儲存下列客戶屬性：
 | `suffix` | varchar(255) |
 | `company` | varchar(255) |
 
-#### `sales_order_grid` 表格
+#### `sales_order_grid` 表
 
-以下欄位位於 `sales_order_grid` 表格包含客戶資訊：
+中的以下列 `sales_order_grid` 表包含客戶資訊：
 
-| 欄 | 資料類型 |
+| 列 | 資料類型 |
 | ---------------------- | ------------ |
 | `customer_id` | int(10) |
 | `shipping_name` | varchar(255) |
@@ -235,11 +235,11 @@ Adobe Commerce和Magento Open Source儲存下列客戶屬性：
 
 報價包含客戶的姓名、電子郵件、地址和相關資訊。
 
-#### `quote` 表格
+#### `quote` 表
 
-以下欄位位於 `quote` 表格包含客戶資訊：
+中的以下列 `quote` 表包含客戶資訊：
 
-| 欄 | 資料類型 |
+| 列 | 資料類型 |
 | --------------------- | ------------ |
 | `customer_id` | int(10) |
 | `customer_email` | varchar(255) |
@@ -247,16 +247,16 @@ Adobe Commerce和Magento Open Source儲存下列客戶屬性：
 | `customer_firstname` | varchar(255) |
 | `customer_middlename` | varchar(40) |
 | `customer_lastname` | varchar(255) |
-| `customer_dob` | 日期時間 |
+| `customer_dob` | 日期 |
 | `remote_ip` | varchar(32) |
 | `customer_taxvat` | varchar(255) |
 | `customer_gender` | varchar(255) |
 
-#### `quote_address` 表格
+#### `quote_address` 表
 
-以下欄位位於 `quote_address` 表格包含客戶資訊：
+中的以下列 `quote_address` 表包含客戶資訊：
 
-| 欄 | 資料類型 |
+| 列 | 資料類型 |
 | ------------- | ------------ |
 | `customer_id` | int(10) |
 | `email` | varchar(255) |
@@ -277,9 +277,9 @@ Adobe Commerce和Magento Open Source儲存下列客戶屬性：
 
 ### 付款資料
 
-此 `sales_order_payment` 表包括信用卡資訊和其他交易資訊。
+的 `sales_order_payment` 表包括信用卡資訊和其他交易資訊。
 
-| 欄 | 資料類型 |
+| 列 | 資料類型 |
 | ------------------------ | ------------ |
 | `cc_exp_month` | varchar(12) |
 | `echeck_bank_name` | varchar(128) |
@@ -291,34 +291,34 @@ Adobe Commerce和Magento Open Source儲存下列客戶屬性：
 | `cc_debug_response_body` | varchar(32) |
 | `echeck_account_name` | varchar(32) |
 | `cc_number_enc` | varchar(128) |
-| `additional_information` | 文字 |
+| `additional_information` | 文本 |
 
 ### 邀請資料
 
-Adobe Commerce和Magento Open Source可進行設定，讓客戶可以傳送邀請給私人銷售和事件。
+Adobe Commerce和Magento Open Source可以配置，以便客戶可以向私人銷售和活動發送邀請。
 
-#### `magento_invitation` 表格
+#### `magento_invitation` 表
 
-此 `magento_invitation` 表格包含客戶ID、電子郵件和反向連結ID。
+的 `magento_invitation` 表包含客戶ID、電子郵件和推薦ID。
 
-| 欄 | 資料類型 |
+| 列 | 資料類型 |
 | ------------- | ------------ |
 | `customer_id` | int(10) |
 | `email` | varchar(255) |
 | `referral_id` | int(10) |
 
-#### `magento_invitation_track` 表格
+#### `magento_invitation_track` 表
 
-此 `magento_invitation_track` 表格也包含客戶資訊。
+的 `magento_invitation_track` 表還包含客戶資訊。
 
-| 欄 | 資料類型 |
+| 列 | 資料類型 |
 | ------------- | --------- |
 | `inviter_id` | int(10) |
 | `referral_id` | int(10) |
 
-### 參考客戶的其他表
+### 引用客戶的雜項表
 
-下表包含 `customer_id` 欄：
+下表包含 `customer_id` 列：
 
 - `catalog_compare_item`
 - `catalog_product_frontend_action`

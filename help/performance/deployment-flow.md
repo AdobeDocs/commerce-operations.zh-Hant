@@ -1,36 +1,36 @@
 ---
-title: 部署流程
-description: 了解在生產環境中部署Adobe Commerce或Magento Open Source所需的步驟。
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+title: 部署流
+description: 瞭解在生產環境中部署Adobe Commerce或Magento Open Source所需的步驟。
+exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
+# 部署流
 
-# 部署流程
+的 [!DNL Commerce] 生產部署流幫助儲存達到最高效能。
 
-此 [!DNL Commerce] 生產部署流程可協助存放區達到最佳效能。
+## 安裝依賴項
 
-## 安裝相依性
+的 `composer.json` 和 `composer.lock` 檔案管理 [!DNL Commerce] 依賴項，並為每個軟體包安裝相應的版本。 必須先安裝依賴項 [預處理依賴注入指令](#preprocess-dependency-injection-instructions) 如果您計畫更新 [自動載入器](#update-the-autoloader)。
 
-此 `composer.json` 和 `composer.lock` 檔案管理 [!DNL Commerce] 相依性，並為每個套件安裝適當的版本。 您必須先安裝相依性 [預處理依賴注入指令](#preprocess-dependency-injection-instructions) 如果您打算更新 [自動載入器](#update-the-autoloader).
-
-安裝 [!DNL Commerce] 相依性：
+安裝 [!DNL Commerce] 依賴項：
 
 ```bash
 composer install --no-dev
 ```
 
-## 預處理依賴注入指令
+## 預處理依賴項注入指令
 
-在預處理和編譯相關性插入(DI)指令時，Magento:
+在預處理和編譯相關性注入(DI)指令時，Magento:
 
 * 讀取並處理所有當前配置
-* 分析類之間的依賴關係
+* 分析類之間的相關性
 * 建立自動生成的檔案（包括代理、工廠等）
-* 將已編譯的資料和配置儲存在快取中，可節省高達25%的請求處理時間
+* 將已編譯的資料和配置儲存在快取中，在處理請求時可節省高達25%的時間
 
 要預處理和編譯DI指令，請執行以下操作：
 
@@ -38,21 +38,21 @@ composer install --no-dev
 bin/magento setup:di:compile
 ```
 
-## 更新自動載入器
+## 更新自動載入程式
 
-編譯完成後，請確認 [已啟用APCu](../performance/software.md#php-settings) 並更新自動載入器：
+編譯完成後，確認 [已啟用APCu](../performance/software.md#php-settings) 並更新自動載入程式：
 
-要更新自動載入器，請執行以下操作：
+要更新自動載入程式，請執行以下操作：
 
 >[!INFO]
 >
->此 `-o` option可將PSR-0/4自動載入轉換為classmap，以獲得更快的自動載入器。 此 `--apcu` 選項使用APCu快取找到/找不到類。
+>的 `-o` 選項將PSR-0/4自動載入轉換為classmap以獲得更快的自動載入程式。 的 `--apcu` 選項使用APCu快取找到/未找到的類。
 
 ```bash
 composer dump-autoload -o --apcu
 ```
 
-如果您計畫更新自動載入程式，則必須按順序運行以下命令：
+如果計畫更新自動載入程式，則必須按順序運行以下命令：
 
 ```bash
 composer install --no-dev
@@ -72,33 +72,33 @@ bin/magento setup:static-content:deploy
 
 ## 部署靜態內容
 
-部署靜態內容原因 [!DNL Commerce] 執行下列動作：
+部署靜態內容的原因 [!DNL Commerce] 執行以下操作：
 
 * 分析所有靜態資源
 * 執行內容合併、最小化和捆綁
 * 讀取和處理主題資料
 * 分析主題回退
-* 將所有已處理和實體化內容儲存到特定資料夾以供進一步使用
+* 將所有已處理和實體化視圖內容儲存到特定資料夾以供進一步使用
 
 如果未部署靜態內容， [!DNL Commerce] 即時執行所有列出的操作，導致響應時間顯著增加。
 
-您可以根據儲存大小和完成需求使用多種選項自定義部署操作。 最常見的是精簡部署策略。 請參閱 [靜態檔案部署策略](../configuration/cli/static-view-file-strategy.md)
+您可以使用多種選項根據儲存大小和完成需求自定義部署操作。 最常見的是緊湊部署策略。 請參閱 [靜態檔案部署策略](../configuration/cli/static-view-file-strategy.md)
 
-要部署靜態內容：
+部署靜態內容：
 
 ```bash
 bin/magento setup:static-content:deploy
 ```
 
-此命令可讓撰寫器重建對應至專案檔案，以加快其載入速度。
+此命令允許Composer重建到項目檔案的映射，以便它們載入更快。
 
 ## 設定生產模式
 
 >[!INFO]
 >
->將模式設定為生產模式會自動執行 `setup:di:compile` 和 `setup:static-content:deploy`.
+>將模式設定為生產自動運行 `setup:di:compile` 和 `setup:static-content:deploy`。
 
-最後，您需要將商店置於生產模式。 生產模式已經過專門優化，以實現儲存的最大效能。 它也會停用所有開發人員專屬的功能。 您可以在 `.htaccess` 或 `nginx.conf` 檔案：
+最後，您需要將您的商店置於生產模式。 生產模式已經過專門優化，可實現商店的最大效能。 它還會取消激活所有特定於開發人員的特徵。 可以在 `.htaccess` 或 `nginx.conf` 檔案：
 
 `SetEnv MAGE_MODE production`
 
@@ -108,12 +108,12 @@ bin/magento setup:static-content:deploy
 bin/magento deploy:mode:set production
 ```
 
-命令會在背景執行，不允許您在每個特定步驟上設定其他選項。
+該命令在後台運行，不允許您在每個特定步驟上設定其他選項。
 
-## 其他啟動前動作
+## 其他發佈前操作
 
-建議您執行這些步驟，但非必要步驟。 您可以在以生產模式啟動商店之前立即執行這些操作。 清單包括：
+建議執行這些步驟，但不是強制步驟。 在生產模式下啟動商店之前，您可以立即執行這些操作。 清單包括：
 
-* 重新索引資料，以避免索引中出現任何不一致的資料。
-* 排清快取，確保快取中沒有保留任何舊資料或錯誤資料。
-* 預熱快取，它提前調用最熱門或最關鍵的儲存頁，以便生成並儲存它們的快取。 此操作可以使用任何Internet Crawler執行，或者手動執行（如果您有小型商店）。
+* 重新編製資料索引，以避免索引中存在任何不一致的資料。
+* 刷新快取，以確保快取中不留有舊資料或錯誤資料。
+* 預熱快取，它會提前調用最流行或最關鍵的儲存頁，因此生成並儲存它們的快取。 此操作可以使用任何Internet Crawler執行，也可以手動執行（如果您有小商店）。

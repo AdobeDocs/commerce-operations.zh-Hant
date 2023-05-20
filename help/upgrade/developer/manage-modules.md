@@ -1,13 +1,13 @@
 ---
 title: 管理模組和擴展（開發人員）
 description: 使用命令行介面和Composer包管理器管理Adobe Commerce和Magento Open Source模組及擴展。
-source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
+exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
-
 
 # 管理模組和擴展
 

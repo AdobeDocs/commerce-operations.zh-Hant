@@ -1,6 +1,6 @@
 ---
-user-guide-title: 發行資訊
-user-guide-description: 在一個位置訪問Adobe Commerce修補程式和服務的所有發行資訊。
+user-guide-title: 發佈資訊
+user-guide-description: 在一個位置訪問Adobe Commerce補丁程式和服務的所有發行資訊。
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 source-git-commit: 3ecac271a4c86162c07ce89b9e5664c2293ad07b
@@ -11,7 +11,7 @@ ht-degree: 15%
 ---
 
 
-# 發行資訊 {#release}
+# 發佈資訊 {#release}
 
 - 發行說明 {#notes}
    - [概述](release-notes/overview.md)
@@ -32,7 +32,7 @@ ht-degree: 15%
       - [2.4.2](release-notes/open-source/2-4-2.md)
       - [2.4.1](release-notes/open-source/2-4-1.md)
       - [2.4.0](release-notes/open-source/2-4-0.md)
-   - 安全修補程式發行 {#security-patches}
+   - 安全修補程式版本 {#security-patches}
       - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
       - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
       - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
@@ -42,16 +42,16 @@ ht-degree: 15%
       - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
       - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
       - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
-- [發行版本](versions.md)
-- [各版本功能](features.md)
+- [已發佈版本](versions.md)
+- [按版本分類的功能](features.md)
 - [產品可用性](product-availability.md)
-- [測試版](beta.md)
-- 規劃與政策 {#planning}
+- [Beta版本](beta.md)
+- 規劃和策略 {#planning}
    - [生命週期策略](lifecycle-policy.md)
-   - [版本設定原則](versioning-policy.md)
-   - [發行排程](schedule.md)
-- 套件 {#packages}
+   - [版本控制策略](versioning-policy.md)
+   - [發放計畫](schedule.md)
+- 包 {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
-   - [適用於Adobe Commerce的雲端套件](packages/cloud.md)
+   - [用於Adobe Commerce的雲包](packages/cloud.md)
    - [Magento Open Source](packages/magento-open-source.md)
 - [返回操作指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

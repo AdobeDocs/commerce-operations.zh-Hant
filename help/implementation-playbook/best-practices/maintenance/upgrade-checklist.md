@@ -1,95 +1,95 @@
 ---
-title: 升級檢查清單最佳實務
-description: 了解如何建立和使用升級檢查清單，以規劃您的Adobe Commerce和Magento Open Source升級策略。
+title: 升級核對表最佳做法
+description: 瞭解如何建立和使用升級核對表來規劃您的Adobe Commerce和Magento Open Source升級戰略。
 role: Leader
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
+# 升級核對表最佳做法
 
-# 升級檢查清單最佳實務
+在與電子商務團隊進行年度和季度對話時使用此核對表。 許多公司都從年度預算和路線圖著手。 在這些年度討論中，您必須談論您的平台在本年度的運行狀況、方向和升級戰略，以及它如何適應業務的總體目標和KPI。 在每季度對話中，確保您建立的年度計畫與當前情況保持一致，如果不符合，請轉向。 此升級計畫核對表的目標是幫助您規劃和安排Adobe Commerce升級，以確保在年內成功完成升級過程。 此核對表旨在供以下受眾用於年度規劃和季度審查：
 
-在與電子商務團隊進行年度和季度對話時使用此檢查清單。 許多公司從年度預算和路線圖中開展工作。 在這些年度討論中，您必須談一談您平台在本年度的健康狀況、方向和升級策略，以及該策略如何與業務的整體目標和KPI相符。 在每季的對話中，確保您建立的年度計畫與當前情況保持一致，如果不符合，則進行資料透視。 此升級計畫檢查清單的目標是協助您規劃及排程Adobe Commerce升級，以確保年內能順利升級。 此檢查清單旨在供下列受眾用於年度規劃和季度審核：
-
-- Director / IT經理
+- Director/ IT經理
 - 電子商務經理
 - 解決方案合作夥伴/顧問
 
 >[!NOTE]
 >
->有關成功升級的技術步驟的詳細說明，請參閱 [完整升級必要條件](../../../upgrade/prepare/prerequisites.md) 在我們的使用者檔案中。
+>有關成功升級的技術步驟的詳細說明，請參閱 [完成升級先決條件](../../../upgrade/prepare/prerequisites.md) 在用戶文檔中。
 
 ## 受影響的產品和版本
 
 [所有支援的版本](../../../release/versions.md) 共：
 
-- Adobe Commerce雲基礎架構
+- Adobe Commerce在雲基礎架構上
 - Adobe Commerce內部
 
 ## 目標
 
-▢檢閱目前的KPI，並視需要進行調整。
+▢複查當前KPI並根據需要進行調整。
 
-## 擴充功能與自訂
+## 擴展和自定義
 
-▢檢閱所有目前的擴充功能和自訂項目，並根據業務需求確定仍需要這些項目。
+▢查看所有當前擴展和定制，並根據業務需求確保仍然需要這些擴展和定制。
 
-▢請考慮以Adobe Commerce版本取代任何沒有良好記錄可保持最新的擴充功能。
+▢考慮用Adobe Commerce版本替換沒有良好記錄保持最新的任何擴展。
 
 ## 團隊
 
-▢透過適當的Adobe Commerce認證和技能，確保您擁有合適的團隊。
+▢確保您擁有具備適當Adobe Commerce認證和技能的適當團隊。
 
-## 預算與時間
+## 預算和時間安排
 
-▢使用Adobe Commerce [發行排程](../../../release/schedule.md) 計畫下次升級並提前準備。
+▢使用Adobe Commerce [發佈計畫](../../../release/schedule.md) 計畫下一次升級並提前準備。
 
-▢根據預期需求，討論您將採用的版本（完整版或僅限安全版）。
+▢討論您認為將根據預期需求採用的版本（完整版或僅安全版）。
 
-▢為升級預留預算和團隊容量。
+▢為升級預留預算和團隊能力。
 
-## 協力廠商整合
+## 第三方整合
 
-▢查看目前的Adobe Commerce協力廠商整合及其全年維護期間，並考慮將升級工作與您的維護排程一致。
+▢查看當前的Adobe Commerce第三方整合及其本年度的維護窗口，並考慮將升級工作與您的維護計畫相協調。
 
 ## 範圍和部署規劃
 
-▢搶先訪問活動
+▢早期進入活動
 
-- 合作夥伴參與 [Beta](../../../release/beta.md)
-- 測試版發行說明審核。
+- 合作夥伴參與 [β](../../../release/beta.md)
+- 測試版發行說明審閱。
 
 ▢就預算、時間表、範圍達成一致。
 
 ▢運行 [升級相容性工具](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-▢請考慮使用升級解決 [網站範圍分析工具](../../../tools/site-wide-analysis-tool/intro.md).
+▢考慮使用升級解決由 [站點範圍分析工具](../../../tools/site-wide-analysis-tool/intro.md)。
 
-▢記錄相依性和需要的任何技術堆棧更改，如PHP或Elastic Search版本。
+▢記錄相關性和所需的任何技術堆棧更改，如PHP或Elastic Search版本。
 
-▢收集具備Adobe Commerce認證的專案團隊。
+▢收集具有Adobe Commerce認證的項目團隊。
 
-▢建立利益相關方溝通計畫。
+▢制定利益相關方溝通計畫。
 
-▢如果預期停機，則計畫維護窗口。
+▢計畫維護窗口（如果預計停機）。
 
-▢審核並批准測試策略；考慮使用Adobe Commerce [測試框架](https://developer.adobe.com/commerce/testing/) 或協力廠商自動化套裝。
+▢審查並批准測試策略；考慮使用Adobe Commerce [test框架](https://developer.adobe.com/commerce/testing/) 或第三方自動化套件。
 
-▢確認所有擴充功能和自訂功能都相容。
+▢確認所有擴展和自定義都相容。
 
-▢審查和更新發佈後的行動手冊；以在升級期間或之後發現問題時使用。
+▢審查和更新發佈後的行動手冊；在升級期間或升級後發現問題時使用。
 
 ## 部署後
 
-▢監視網站以了解問題 — 效能、訂單處理、分析等。
+▢監視站點以瞭解問題 — 效能、訂單處理、分析等。
 
-▢執行Adobe Commerce [安全掃描](https://account.magento.com/scanner/dashboard/) 或其他協力廠商掃描並檢閱潛在的安全漏洞。
+▢執行Adobe Commerce [安全掃描](https://account.magento.com/scanner/dashboard/) 或其他第三方掃描並檢查潛在的安全漏洞。
 
-▢與所有利益相關方進行回顧，記錄哪些項目進展順利、哪些項目未進展，以及如何改進。
+▢與所有利益相關方進行回顧，記錄哪些項目進展順利、哪些項目未取得進展以及如何改進。
 
-▢根據經驗教訓修改您的下一次升級計畫。
+▢根據經驗教訓修改下一次升級的計畫。

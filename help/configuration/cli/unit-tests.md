@@ -1,13 +1,13 @@
 ---
 title: 運行單位test
 description: 運行在Adobe Commerce代碼庫中定義的單位test。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
 
 ---
-
 
 # 運行單位test
 

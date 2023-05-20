@@ -1,13 +1,13 @@
 ---
 title: 建立指向LESS檔案的符號連結
 description: 瞭解如何建立指向LESS檔案的符號連結。
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
 
 ---
-
 
 # 建立指向LESS檔案的符號連結
 

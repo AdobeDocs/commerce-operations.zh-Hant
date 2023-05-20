@@ -1,40 +1,40 @@
 ---
-title: 生成用於效能測試的資料
-description: 了解如何產生大量資料以用於效能測試。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: 生成資料以進行效能測試
+description: 瞭解如何生成大量資料以用於效能測試。
+exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '749'
+ht-degree: 8%
 
 ---
 
-
 # 效能測試資料
 
-若要使用 [效能工具包](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) 或其他效能測試工具，您必須產生大量資料，例如商店、類別和產品。
+使用 [效能工具包](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) 或者使用其他工具進行效能測試時，必須生成大量資料，如儲存、類別和產品。
 
 {{file-system-owner}}
 
-## 設定檔
+## 配置檔案
 
-您可以使用 _設定檔_ （小、中、大和超大）。 設定檔位於 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` 目錄。
+您可以使用 _配置檔案_ （小型、中型、大型和超大型）。 配置檔案位於 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` 的子菜單。
 
-例如， `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
+比如說， `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-下圖顯示如何使用 _小_ 設定檔：
+下圖顯示了如何使用 _小_ 配置檔案：
 
-![帶生成資料的樣本儲存](../../assets/configuration/generate-data.png)
+![帶生成資料的樣例儲存](../../assets/configuration/generate-data.png)
 
-下表提供資料產生器設定檔的詳細資訊：小、中、大和超大。
+下表提供了有關資料生成器配置檔案的詳細資訊：小型、中型、大型和超大型。
 
-| 參數 | 小型檔案 | 中型設定檔 | 中型多網站設定檔 | 大型設定檔 | 超大型配置檔案 |
+| 參數 | 小輪廓 | 中檔 | 中型多站點配置檔案 | 大輪廓 | 超大配置檔案 |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
 | `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
-| `configurable_products` | 16個，24個選項 | 640個，24個選項 | 800（24個選項）和79（200個選項） | 8,000個，有24個選項 | 16,000個，24個選項 |
-| `product_images` | 每產品100個影像/3個影像 | 1000個影像/每個產品3個影像 | 1000個影像/每個產品3個影像 | 2000年圖片/每產品3張圖片 | 2000年圖片/每產品3張圖片 |
+| `configurable_products` | 16個，含24個選項 | 640，含24個選項 | 800，帶24個選項，79，帶200個選項 | 8,000，帶24個選項 | 16,000（含24個選項） |
+| `product_images` | 每產品100個映像/3個映像 | 每產品1000個映像/3個映像 | 每產品1000個映像/3個映像 | 2000個影像/每個產品3個影像 | 2000個影像/每個產品3個影像 |
 | `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
@@ -45,13 +45,13 @@ ht-degree: 0%
 | `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
 | `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
-### 執行資料產生器
+### 運行資料生成器
 
 >[!WARNING]
 >
->在執行資料產生器之前，請停用伺服器上執行的所有cron作業。 停用cron作業會使資料產生器無法執行與使用中cron作業衝突的動作，並避免不必要的錯誤。
+>在運行資料生成器之前，請禁用伺服器上運行的所有cron作業。 禁用cron作業可防止資料生成器執行與活動cron作業衝突的操作，並避免不必要的錯誤。
 
-按本節所述運行命令。 命令運行後，您必須 [重新索引所有索引器](../cli/manage-indexers.md).
+按本節所述運行命令。 命令運行後，必須 [重新索引所有索引](../cli/manage-indexers.md)。
 
 命令選項：
 
@@ -59,9 +59,9 @@ ht-degree: 0%
 bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
-其中 `<path-to-profile>` 指定配置檔案的絕對檔案系統路徑和名稱。
+位置 `<path-to-profile>` 指定配置檔案的絕對檔案系統路徑和名稱。
 
-例如，
+比如說，
 
 ```bash
 bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performance-toolkit/profiles/ce/small.xml
@@ -98,9 +98,9 @@ Generating simple products...  done in <time>
 
 ## 效能夾具
 
-### 管理員使用者
+### 管理員用戶
 
-產生管理員使用者。 XML配置檔案節點：
+生成管理員用戶。 XML配置檔案節點：
 
 ```xml
 <!-- Number of admin users -->
@@ -109,7 +109,7 @@ Generating simple products...  done in <time>
 
 ### 屬性集
 
-使用指定的配置生成屬性集。 XML配置檔案節點：
+生成具有指定配置的屬性集。 XML配置檔案節點：
 
 ```xml
 <!-- Number of product attribute sets -->
@@ -124,7 +124,7 @@ Generating simple products...  done in <time>
 
 ### 捆綁產品
 
-生成捆綁產品。 生成的套件組合選擇不會單獨顯示在目錄中。 產品會依類別和網站統一分佈。 若  `assign_entities_to_all_websites` 從設定檔設為 `1`. 產品會指派給所有網站。
+生成捆綁產品。 生成的束選擇不會單獨顯示在目錄中。 產品按類別和網站統一分發。 如果  `assign_entities_to_all_websites` 從配置檔案設定為 `1`。 產品分配給所有網站。
 
 XML配置檔案節點：
 
@@ -162,7 +162,7 @@ XML配置檔案節點：
 
 ### 類別
 
-產生類別。 若 `assign_entities_to_all_websites` 設為 `0`，所有類別均按根類別均勻分佈；否則，所有類別都會指派給一個根類別。
+生成類別。 如果 `assign_entities_to_all_websites` 設定為 `0`所有類別按根類別均勻分佈；否則，所有類別都分配給一個根類別。
 
 XML配置檔案節點：
 
@@ -174,9 +174,9 @@ XML配置檔案節點：
 <categories_nesting_level>{int}</categories_nesting_level>
 ```
 
-### 設定
+### 配置
 
-設定欄位的值。 XML配置檔案節點：
+設定配置欄位的值。 XML配置檔案節點：
 
 ```xml
 <!-- Config variables and values for change -->
@@ -194,18 +194,18 @@ XML配置檔案節點：
 
 ### 可配置產品
 
-生成可配置產品。 生成的可配置選項不會單獨顯示在目錄中。 產品會依類別和網站統一分佈。 若 `assign_entities_to_all_websites` 設為 `1`，產品會指派給所有網站。
+生成可配置產品。 生成的可配置選項不會單獨顯示在目錄中。 產品按類別和網站統一分發。 如果 `assign_entities_to_all_websites` 設定為 `1`，產品將分配給所有網站。
 
 支援以下XML節點格式：
 
-- 每個預設和預定義的屬性集的分佈：
+- 按預設和預定義屬性集分配：
 
    ```xml
    <!-- Number of configurable products -->
    <configurable_products>{int}</configurable_products>
    ```
 
-- 根據現有屬性集生成產品：
+- 基於現有屬性集生成產品：
 
    ```xml
    <configurable_products>
@@ -231,7 +231,7 @@ XML配置檔案節點：
    </configurable_products>
    ```
 
-- 根據動態建立的屬性集和指定數量的屬性和選項生成產品：
+- 基於動態建立的具有指定數量的屬性和選項的屬性集生成產品：
 
    ```xml
    <configurable_products>
@@ -260,7 +260,7 @@ XML配置檔案節點：
    </configurable_products>
    ```
 
-- 根據動態建立的屬性集，為每個屬性指定配置來產生產品：
+- 基於動態建立的屬性集生成產品，每個屬性具有指定的配置：
 
    ```xml
    <configurable_products>
@@ -299,7 +299,7 @@ XML配置檔案節點：
 
 ### 客戶
 
-產生客戶。 客戶在所有可用網站上均享有正常分發。 除了客戶電子郵件、客戶群組和客戶地址之外，每個客戶都有相同的資料。
+生成客戶。 客戶在所有可用網站上均有正常分發。 除客戶電子郵件、客戶組和客戶地址外，每個客戶都有相同的資料。
 
 XML配置檔案節點：
 
@@ -317,9 +317,9 @@ XML配置檔案節點：
 </customer-config>
 ```
 
-### 產品影像
+### 產品映像
 
-產生產品影像。 產生不包含重新調整大小。
+生成產品映像。 層代不包括調整大小。
 
 XML配置檔案節點：
 
@@ -345,9 +345,9 @@ XML配置檔案節點：
 </indexer>
 ```
 
-### 訂購
+### 訂單
 
-生成具有不同類型訂單項的可配置數量的訂單。 （可選）為生成的訂單生成非活動報價。
+生成具有不同類型訂單物料的可配置數量的訂單。 （可選）為生成的訂單生成無效報價。
 
 XML配置檔案節點：
 
@@ -379,9 +379,9 @@ XML配置檔案節點：
 
 ### 簡單產品
 
-生成簡單產品。 產品會依預設和預先定義的屬性集分發。 如果在設定檔中將額外的屬性集指定為： `<product_attribute_sets>{int}</product_attribute_sets>`，產品也會依其他屬性集分送。
+生成簡單產品。 產品按預設和預定義的屬性集分發。 如果在配置檔案中將額外屬性集指定為： `<product_attribute_sets>{int}</product_attribute_sets>`，產品也按附加屬性集分發。
 
-產品會依類別和網站統一分佈。 若 `assign_entities_to_all_websites` 設為 `1`，產品會指派給所有網站。
+產品按類別和網站統一分發。 如果 `assign_entities_to_all_websites` 設定為 `1`，產品將分配給所有網站。
 
 XML配置檔案節點：
 
@@ -399,9 +399,9 @@ XML配置檔案節點：
 <websites>{int}</websites>
 ```
 
-### 儲存群組
+### 儲存組
 
-產生儲存群組(在「管理員」中稱為 _商店_)。 商店群組通常在網站之間分佈。
+生成儲存組(在管理員中稱為 _商店_)。 商店組通常在網站之間分發。
 
 XML配置檔案節點：
 
@@ -410,9 +410,9 @@ XML配置檔案節點：
 <store_groups>{int}</store_groups>
 ```
 
-### 商店檢視
+### 儲存視圖
 
-生成儲存視圖。 商店檢視通常會在商店群組之間分配。 XML配置檔案節點：
+生成儲存視圖。 儲存視圖通常分佈在儲存組之間。 XML配置檔案節點：
 
 ```xml
 <!-- Number of store views to be generated -->
@@ -439,10 +439,10 @@ XML配置檔案節點：
 
 - `<Commerce root dir>/setup/performance-toolkit/config/description.xml` — 產品完整說明配置
 
-- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml` — 產品簡短說明配置
+- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml` — 產品簡要說明配置
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` — 產品的配置簡短和完整說明。 此舊版實作旨在提供回溯相容性。
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` — 產品簡要說明和完整說明的配置。 提供此較舊的實現是為了實現向後相容性。
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` — 簡短和完整說明中的少量搜索詞
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` — 簡短和完整說明的搜索詞數很少
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` — 用於簡短和完整說明的搜索詞數目較多。
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` — 在簡短和完整說明中使用的搜索詞數較多。

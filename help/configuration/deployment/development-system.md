@@ -1,13 +1,13 @@
 ---
 title: 開發系統設定
 description: 瞭解如何為Commerce應用程式建立開發系統。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 242e9a38-2eb2-4090-8f59-3fd588f7ad3a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
 
 ---
-
 
 # 開發系統設定
 

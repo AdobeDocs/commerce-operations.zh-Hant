@@ -37,17 +37,17 @@ ht-degree: 0%
 
 調度程式「呈現」選項中的/timeout指定訪問發佈實例的連接超AEM時（以毫秒為單位）。 如果存在單獨的負載平衡器來處理超時設定，則應檢查此設定，並使用預設設定「0」（無限超時）。
 
-如果基礎架構中沒有負載平衡器，則應在調度程式/timeout設定中指定超時設定，其值應與發佈伺服器中的GraphQL超時設定匹配。
+如果基礎架構中沒有負載平衡器，則應在dispatcher /timeout設定中指定超時設定，並使用與發佈伺服器中的GraphQL超時設定匹配的值。
 
 ## 出版商
 
-發佈伺服器GraphQL連接限制和超時：最初，Adobe CommerceCIF GraphQL客戶端配置工廠OSGI中的最大HTTP連接數應設定為預設的「Abmishemy maximum connections」限制，該限制當前設定為200。 即使場中有多個發佈AEM器，也應在每個發佈器中設定相同的限制，與「Rebist」設定相匹配。 原因是，在某些情況下，如果將關聯的調度程式從伺服器場中取出，則一個發佈伺服器處理的通信量可能比其他發佈伺服器要多。 這意味著所有通信都將通過剩餘的單個調度程式和發佈程式進行路由，在這種情況下，單個發佈程式可能需要所有HTTP連接。
+發佈者GraphQL連接限制和超時：最初，Adobe CommerceCIFGraphQL客戶端配置工廠OSGI設定中的Max HTTP connections應設定為預設的Abmished maximum connections limit（當前設定為200）。 即使場中有多個發佈AEM器，也應在每個發佈器中設定相同的限制，與「Rebist」設定相匹配。 原因是，在某些情況下，如果將關聯的調度程式從伺服器場中取出，則一個發佈伺服器處理的通信量可能比其他發佈伺服器要多。 這意味著所有通信都將通過剩餘的單個調度程式和發佈程式進行路由，在這種情況下，單個發佈程式可能需要所有HTTP連接。
 
-「預設HTTP方法」應從POST設定為GET。 只有GET請求在Adobe CommerceGraphQL快取中快取，因此預設方法應始終設定為GET。
+「預設HTTP方法」應從POST設定為GET。 只有GET請求快取在Adobe CommerceGraphQL快取中，因此預設方法應始終設定為GET。
 
 http連接超時和http套接字超時應設定為與Abmistifet匹配的值。
 
-下圖顯示了MagentoCIF GraphQL客戶端配置工廠。 此處顯示的設定僅是示例，需要逐個案例進行調整：
+下圖顯示了MagentoCIFGraphQL客戶端配置工廠。 此處顯示的設定僅是示例，需要逐個案例進行調整：
 
 ![Commerce整合框架配置設定的螢幕快照](../assets/commerce-at-scale/cif-config.png)
 

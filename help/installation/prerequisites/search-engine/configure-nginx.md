@@ -1,15 +1,15 @@
 ---
-title: 為您的搜尋引擎設定Nginx
-description: 請依照下列步驟，使用Nginx Web伺服器設定搜尋引擎，以進行Adobe Commerce和Magento Open Source的內部部署安裝。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: 為搜索引擎配置Nginx
+description: 按照以下步驟，使用Nginx Web伺服器配置搜索引擎，以在本地安裝Adobe Commerce和Magento Open Source。
+exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%
 
 ---
 
-
-# 為您的搜尋引擎設定Nginx
+# 為搜索引擎配置Nginx
 
 {{$include /help/_includes/web-server-communication.md}}
 
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4中新增了OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 請參閱 [將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md) 以取得更多資訊。
+>已在2.4.4中添加了OpenSearch支援。OpenSearch是相容的Elasticsearch分叉。 請參閱 [將Elasticsearch遷移到OpenSearch](../../../upgrade/prepare/opensearch-migration.md) 的子菜單。
 
-本節探討如何將nginx設定為 *取消安全* 代理，讓Adobe Commerce可以使用此伺服器上執行的搜尋引擎。 本節不討論如何設定HTTP Basic驗證；在 [與nginx的安全通信](#secure-communication-with-nginx).
+本節討論如何將nginx配置為 *不安全* 代理，以便Adobe Commerce可以使用此伺服器上運行的搜索引擎。 本節不討論設定HTTP Basic身份驗證；在中討論 [與nginx的安全通信](#secure-communication-with-nginx)。
 
 >[!NOTE]
 >
->此範例中未保護代理的原因是更容易設定及驗證。 您可以隨此代理使用TLS;若要這麼做，請務必將代理資訊新增至您的安全伺服器區塊設定。
+>此示例中代理沒有安全的原因是設定和驗證更容易。 如果需要，可將此代理使用TLS;為此，請確保將代理資訊添加到安全伺服器塊配置中。
 
 ### 在全局配置中指定其他配置檔案
 
-確定您的全域 `/etc/nginx/nginx.conf` 包含下列行，以載入下列各節中討論的其他組態檔：
+確保您的全局 `/etc/nginx/nginx.conf` 包含以下行，以便載入下面各節中討論的其他配置檔案：
 
 ```conf
 include /etc/nginx/conf.d/*.conf;
@@ -35,7 +35,7 @@ include /etc/nginx/conf.d/*.conf;
 
 ### 將nginx設定為代理
 
-本節探討如何指定誰可以存取nginx伺服器。
+本節討論如何指定可以訪問nginx伺服器的用戶。
 
 1. 使用文本編輯器建立檔案 `/etc/nginx/conf.d/magento_es_auth.conf` 內容如下：
 
@@ -48,25 +48,25 @@ include /etc/nginx/conf.d/*.conf;
    }
    ```
 
-1. 重新啟動Nix:
+1. 重新啟動nginx:
 
    ```bash
    service nginx restart
    ```
 
-1. 輸入以下命令以驗證代理是否工作：
+1. 輸入以下命令驗證代理是否工作：
 
    ```bash
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
-   例如，如果您的代理使用埠8080:
+   例如，如果代理使用埠8080:
 
    ```bash
    curl -i http://localhost:8080/_cluster/health
    ```
 
-   顯示的訊息類似於下列，以指出成功：
+   與以下顯示類似的消息指示成功：
 
    ```terminal
    HTTP/1.1 200 OK
@@ -80,28 +80,28 @@ include /etc/nginx/conf.d/*.conf;
 
 ## 與nginx的安全通信
 
-本節探討如何設定 [HTTP基本驗證](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) 安全代理。 同時使用TLS和HTTP Basic驗證可防止任何人攔截與Elasticsearch、OpenSearch或您應用程式伺服器的通訊。
+本節討論如何設定 [HTTP基本身份驗證](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) 安全代理。 使用TLS和HTTP Basic身份驗證一起防止任何人攔截與Elasticsearch或OpenSearch或您的應用程式伺服器的通信。
 
-因為Nignx原本支援HTTP Basic驗證，因此建議您改用，例如 [摘要式驗證](https://www.nginx.com/resources/wiki/modules/auth_digest/)，不建議在生產環境中使用。
+由於nginx本機支援HTTP Basic身份驗證，因此我們建議對它進行驗證，例如， [摘要身份驗證](https://www.nginx.com/resources/wiki/modules/auth_digest/)，在生產中不推薦。
 
 其他資源：
 
 * [如何在Ubuntu 14.04（數字海洋）上使用Nginx設定密碼驗證](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
-* [使用Nginx進行基本HTTP驗證(HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
-* [Ninx設定範例以供Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
+* [使用Nginx(HowtoForge)進行基本HTTP身份驗證](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+* [Nginx配置示例Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
-如需詳細資訊，請參閱下列章節：
+有關詳細資訊，請參閱以下各節：
 
 * [建立密碼](#create-a-password)
 * [設定對nginx的訪問](#set-up-access-to-nginx)
-* [為搜尋引擎設定受限內容](#set-up-a-restricted-context-for-the-search-engine)
+* [設定搜索引擎的受限上下文](#set-up-a-restricted-context-for-the-search-engine)
 * [驗證通信是否安全](#secure-communication-with-nginx)
 
 ### 建立密碼
 
-建議您使用Apache `htpasswd` 命令為具有Elasticsearch或OpenSearch訪問權限的用戶編碼(命名 `magento_elasticsearch` 在此範例中)。
+建議您使用Apache `htpasswd` 命令，用於為具有Elasticsearch或OpenSearch訪問權限的用戶編碼口令(命名為 `magento_elasticsearch` )。
 
-要建立密碼：
+建立密碼：
 
 1. 輸入以下命令以確定 `htpasswd` 已安裝：
 
@@ -109,11 +109,11 @@ include /etc/nginx/conf.d/*.conf;
    which htpasswd
    ```
 
-   如果顯示路徑，則會安裝路徑；如果命令未返回任何輸出， `htpasswd` 未安裝。
+   如果顯示路徑，則安裝路徑；如果命令不返回輸出， `htpasswd` 未安裝。
 
 1. 如有必要，請安裝 `htpasswd`:
 
-   * 烏本圖： `apt-get -y install apache2-utils`
+   * 烏班圖： `apt-get -y install apache2-utils`
    * CentOS: `yum -y install httpd-tools`
 
 1. 建立 `/etc/nginx/passwd` 儲存密碼的目錄：
@@ -128,9 +128,9 @@ include /etc/nginx/conf.d/*.conf;
 
    >[!WARNING]
    >
-   >出於安全原因， `<filename>` 應該隱藏；也就是說，它必須從句號開始。
+   >出於安全原因， `<filename>` 應該隱藏；就是說，必須從一個時間開始。
 
-1. *（選用）。* 要向密碼檔案中添加其他用戶，請輸入相同的命令，而不使用 `-c` （建立）選項：
+1. *（可選）。* 要將其他用戶添加到密碼檔案中，請輸入相同的命令 `-c` (create)選項：
 
    ```bash
    htpasswd /etc/nginx/passwd/.<filename> <username>
@@ -140,13 +140,13 @@ include /etc/nginx/conf.d/*.conf;
 
 ### 設定對nginx的訪問
 
-本節探討如何指定誰可以存取nginx伺服器。
+本節討論如何指定可以訪問nginx伺服器的用戶。
 
 >[!WARNING]
 >
->所示範例適用於 *取消安全* 代理。 若要使用安全代理，請將下列內容（監聽埠除外）新增至您的安全伺服器區塊。
+>所示示例是 *不安全* 代理。 要使用安全代理，請將下列內容（偵聽埠除外）添加到安全伺服器塊。
 
-使用文本編輯器修改 `/etc/nginx/conf.d/magento_es_auth.conf` （不安全）或您的安全伺服器區塊，且包含下列內容：
+使用文本編輯器修改 `/etc/nginx/conf.d/magento_es_auth.conf` （不安全）或安全伺服器塊，其內容如下：
 
 ```conf
 server {
@@ -179,13 +179,13 @@ server {
 
 >[!NOTE]
 >
->上述範例中顯示的搜尋引擎監聽埠僅為範例。 基於安全原因，我們建議您使用非預設監聽埠。
+>上例所示的搜索引擎偵聽埠僅是示例。 出於安全原因，建議您使用非預設監聽埠。
 
-### 為搜尋引擎設定受限內容
+### 設定搜索引擎的受限上下文
 
-本節探討如何指定哪些人可以存取搜尋引擎伺服器。
+本節討論如何指定可以訪問搜索引擎伺服器的人員。
 
-1. 輸入以下命令以建立用於儲存身份驗證配置的目錄：
+1. 輸入以下命令以建立一個目錄來儲存驗證配置：
 
    ```bash
    mkdir /etc/nginx/auth/
@@ -205,7 +205,7 @@ server {
    }
    ```
 
-1. 如果您設定了安全代理，請刪除 `/etc/nginx/conf.d/magento_es_auth.conf`.
+1. 如果設定安全代理，請刪除 `/etc/nginx/conf.d/magento_es_auth.conf`。
 1. 重新啟動nginx並繼續下一節：
 
    ```bash

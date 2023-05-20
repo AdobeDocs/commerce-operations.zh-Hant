@@ -1,13 +1,13 @@
 ---
 title: 記錄器介面
 description: 開始使用記錄器介面。
-source-git-commit: f489c3e68c91c6f2e16bff233cf59472ed684b5c
+exl-id: fdb1b431-405a-4c32-aff1-9e50bf0a2c90
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
 
 ---
-
 
 # 記錄器介面
 

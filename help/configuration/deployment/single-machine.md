@@ -1,7 +1,8 @@
 ---
 title: 單機部署
-description: 了解如何使用命令列在生產伺服器上部署更新至Commerce。
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+description: 瞭解如何使用命令行將更新部署到生產伺服器上的Commerce。
+exl-id: ca73309c-7584-4506-99de-dd933651eeb6
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -10,21 +11,21 @@ ht-degree: 0%
 
 # 單機部署
 
-本主題提供使用命令列在生產伺服器上將更新部署至Commerce的指示。 此過程適用於負責在安裝了某些主題和區域設定的單台電腦上運行的儲存的技術用戶。
+本主題提供了使用命令行將更新部署到生產伺服器上的Commerce的說明。 此過程適用於負責在安裝了某些主題和區域設定的單個電腦上運行儲存的技術用戶。
 
 ## 假設
 
-- 您使用 [撰寫器](../../installation/composer.md).
-- 您直接將更新套用至伺服器。
+- 您使用 [作曲家](../../installation/composer.md)。
+- 您正在直接將更新應用到伺服器。
 
 >[!WARNING]
 >
->若您使用 `git clone` 來安裝商務。
->貢獻開發人員應使用 [本指南][install] 以更新其Commerce安裝。
+>如果使用 `git clone` 來安裝Commerce。
+>提供幫助的開發商應使用 [本指南][install] 以更新其Commerce安裝。
 
 ## 部署步驟
 
-1. 以 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md).
+1. 以或切換到的生產伺服器 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md)。
 
 1. 將目錄更改為Commerce基目錄：
 
@@ -44,7 +45,7 @@ ht-degree: 0%
    composer require-commerce <package> <version> --no-update
    ```
 
-   **套件**:要更新的包的名稱。
+   **包**:要更新的包的名稱。
 
    例如：
 
@@ -53,7 +54,7 @@ ht-degree: 0%
 
    **版本**:要更新的包的目標版本。
 
-1. 使用撰寫器更新元件：
+1. 使用Composer更新元件：
 
    ```bash
    composer update

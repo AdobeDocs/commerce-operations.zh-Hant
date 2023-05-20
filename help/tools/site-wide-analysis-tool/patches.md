@@ -1,7 +1,8 @@
 ---
-title: '"[!DNL Patches]"'
+title: '[!DNL Patches]'
 description: 瞭解 [!UICONTROL Patches] 的 [!DNL Site-Wide Analysis Tool]、何時使用及其好處。
-source-git-commit: 9ee2e49de83c23386de624eff9515fd59923e987
+exl-id: 40bc9b38-2a70-40ec-8278-231c78193248
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
@@ -25,4 +26,3 @@ ht-degree: 0%
 * 在一個位置獲取有關修補程式的所有相關資訊。
 
 * 使用中提供的修補程式修復問題 [!UICONTROL Patches] 頁籤。
-

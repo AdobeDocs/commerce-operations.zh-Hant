@@ -1,13 +1,13 @@
 ---
-title: 最佳實務主題標題
-description: 了解如何……
+title: 最佳做法主題標題
+description: 瞭解如何……
 role: Developer
 feature: Best Practices
 hide: true
 hidefromtoc: true
 source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
@@ -36,22 +36,22 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 [所有支援的版本](../../../release/versions.md) 共：
 
-- Adobe Commerce雲基礎架構
+- Adobe Commerce在雲基礎架構上
 - Adobe Commerce
 
 <!-- Example 2: -->
 
-Adobe Commerce，使用Adobe Commerce 2.3.4版或更舊版本以及MariaDB 10.0版或更舊版本，在雲端基礎架構上部署。
+Adobe Commerce在雲基礎架構上使用Adobe Commerce版本2.3.4或更早版本和MariaDB版本10.0或更早版本。
 
-<!-- Business type: B2C and B2B -- specify only if needed/)-->
-
-## 標題……
-
-將內容分割成區段，以便閱讀。 內容應包含含範例的行動呼籲（好事與壞事），以及檔案的連結（如適用）
+&lt;! — 業務類型：B2C和B2B — 僅在需要時指定/)—>
 
 ## 標題……
 
-視需要只使用區段數
+將內容分塊到分區中，以便更容易閱讀。 內容應包括行動要求和示例（好與壞）以及指向文檔的連結（如果適用）
+
+## 標題……
+
+根據需要僅使用多個節
 
 ## 其他資訊
 

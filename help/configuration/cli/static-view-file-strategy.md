@@ -1,13 +1,13 @@
 ---
 title: 靜態視圖檔案的部署策略
 description: 閱讀有關Commerce應用程式的部署策略的資訊。
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
 
 ---
-
 
 # 靜態視圖檔案的部署策略
 

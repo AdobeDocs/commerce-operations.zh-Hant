@@ -1,13 +1,13 @@
 ---
 title: 會話儲存位置
 description: 瞭解會話檔案的儲存位置。
-source-git-commit: 27c3914540a0574fa4ff58df50d5cd2c71fb6670
+exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
 
 ---
-
 
 # 會話儲存位置
 

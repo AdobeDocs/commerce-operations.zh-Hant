@@ -1,13 +1,13 @@
 ---
 title: 服務配置路徑參考
 description: 請參閱服務配置值清單。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 77818c54-21ae-4a66-81bf-468bd7d09cda
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 3%
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
-
 
 # 服務配置路徑參考
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 | 預設響應字元集 | `webapi/soap/charset` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 允許匿名來賓訪問 | `webapi/webapisecurity/allow_insecure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## OAuth路徑
 
@@ -40,4 +40,4 @@ ht-degree: 3%
 | OAuth使用者憑據HTTP Post max重定向 | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | OAuth使用者憑據HTTP後超時 | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}

@@ -9,8 +9,8 @@ ht-degree: 0%
 
 **更新生產系統**:
 
-1. 以檔案系統擁有者身分登入生產系統。
-1. 更改應用程式根目錄並啟用維護模式。
+1. 以檔案系統所有者身份登錄到生產系統。
+1. 更改為應用程式根並啟用維護模式。
 
    ```bash
    cd <Magento root dir>
@@ -20,9 +20,9 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   如需其他選項，例如設定IP位址白名單的功能，請參閱 [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
+   有關其他選項（如設定IP地址白名單的能力），請參見 [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md)。
 
-1. 通過設定 `cron_run` to `false` in `app/etc/env.php` 如下所示：
+1. 通過設定來停止任何正在運行的隊列工作程式 `cron_run` 至 `false` 在 `app/etc/env.php` 如下：
 
    ```php?start_inline=1
    'cron_consumers_runner' => [
@@ -30,31 +30,31 @@ ht-degree: 0%
        ]
    ```
 
-1. 更新設定。
+1. 更新配置。
 
    ```bash
    bin/magento app:config:import
    ```
 
-1. 最後， `kill` 任何使用中的消費者程式。
+1. 終於， `kill` 任何活動的使用者進程。
 
    ```bash
    kill <PID>
    ```
 
-   其中 `PID` 會終止處理程式ID，例如：
+   位置 `PID` 是要終止的進程ID，例如：
 
    ```bash
    kill 1234
    ```
 
-1. 從原始碼控制項提取代碼。
+1. 從原始碼管理中提取代碼。
 
    ```bash
    git pull mconfig m2.2_deploy
    ```
 
-1. 更新設定。
+1. 更新配置。
 
    ```bash
    bin/magento app:config:import

@@ -1,27 +1,27 @@
 ---
-title: 本地安裝必備條件
-description: 進一步了解Adobe Commerce和Magento Open Source的內部部署安裝所需的軟體相依性。
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+title: 本地安裝先決條件
+description: 瞭解有關Adobe Commerce和Magento Open Source內部安裝所需軟體依賴項的詳細資訊。
+exl-id: dd4694e7-5437-440c-bb67-804ae36149de
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
 
 ---
 
+# 本地安裝先決條件
 
-# 本地安裝必備條件
+在安裝Adobe Commerce或Magento Open Source之前，必須執行以下操作：
 
-安裝Adobe Commerce或Magento Open Source之前，您必須先執行下列操作：
-
-* 設定符合以下條件的一或多個主機 [系統需求](../system-requirements.md).
-* 如果您要設定多個具有負載平衡的Web節點，請設定並測試系統的該部分 _befor_ 安裝應用程式。
-* 請務必在安裝過程中的各個時間點備份整個系統，以便在出現問題時可以回滾。
+* 設定一個或多個滿足以下條件的主機 [系統要求](../system-requirements.md)。
+* 如果要設定多個具有負載平衡的Web節點，請設定並test系統的該部分 _先_ 安裝應用程式。
+* 確保在安裝過程中可以在不同點備份整個系統，以便在出現問題時可以回滾。
 
 >[!NOTE]
 >
->假設您要在 **開發環境**，即您擁有電腦的根使用者存取權， **和** 機器不需要高度安全。 如果要設定更安全的電腦，強烈建議您向網路管理員尋求其他幫助。
+>我們假設你將Adobe Commerce或Magento Open Source **開發環境**，您擁有對電腦的根用戶訪問權限， **和** 機器不需要高度安全。 如果您正在設定更安全的電腦，強烈建議您咨詢網路管理員以獲得其他幫助。
 
-強烈建議您更新和升級作業系統軟體。 這些升級可以提供安全性和軟體修復，以防止將來出現問題。 不知道這意味著什麼？ 看看我們的 [安裝概述頁面](../overview.md).
+強烈建議您更新和升級作業系統軟體。 這些升級可提供安全和軟體修復，從而防止將來出現問題。 不知道這意味著什麼？ 看看我們 [安裝概述頁](../overview.md)。
 
 以用戶身份輸入以下命令 `root` 權限：
 
@@ -47,13 +47,13 @@ ht-degree: 0%
 
 ## 先決條件檢查
 
-要檢查系統是否有必要條件，請輸入以下命令：
+要檢查系統的先決條件，請輸入以下命令：
 
-### Apache
+### 阿帕奇
 
 CentOS: `httpd -v`
 
-烏本圖： `apache2 -v`
+烏班圖： `apache2 -v`
 
 Adobe Commerce和Magento Open Source支援Apache 2.4版，如下結果所示：
 
@@ -62,11 +62,11 @@ Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
 
-若要安裝或升級Apache，請參閱 [Apache](web-server/apache.md).
+要安裝或升級Apache，請參見 [阿帕奇](web-server/apache.md)。
 
-### PHP
+### 菲律賓比索
 
-請參閱 [系統需求](../system-requirements.md) 支援版本的PHP和 [PHP] PHP要求。
+請參閱 [系統要求](../system-requirements.md) 支援的PHP和 [菲律賓比索] 滿足PHP要求。
 
 ### MySQL
 
@@ -80,7 +80,7 @@ mysql -u <database root user or database owner name> -p
 mysql -u magento -p
 ```
 
-檢查您是否有正確版本的Adobe Commerce或正在安裝的Magento Open Source([查看這裡以了解支援的版本](../system-requirements.md). 下列結果表示您執行的版本。)
+檢查您是否有正確的MySQL版本，以瞭解您正在安裝的Adobe Commerce或Magento Open Source([在此處檢查支援的版本](../system-requirements.md)。 以下結果表示您正在運行的版本。)
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -94,21 +94,21 @@ affiliates. Other names may be trademarks of their respective
 owners.
 ```
 
-類型 `help` 或 `\h` 來幫忙。 類型 `\c` 來清除當前輸入語句。
+類型 `help` 或 `\h` 的雙曲餘切值。 類型 `\c` 以清除當前輸入語句。
 
-輸入 `exit` at `mysql>` 提示退出。
+輸入 `exit` 的 `mysql>` 提示退出。
 
-要安裝或升級MySQL，請參見 [MySQL](database/mysql.md).
+要安裝或升級MySQL，請參見 [MySQL](database/mysql.md)。
 
-### 搜尋引擎
+### 搜索引擎
 
-要驗證OpenSearch安裝，請執行以下操作：
+要驗證OpenSearch安裝：
 
 ```bash
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
-驗證Elasticsearch安裝：
+要驗證Elasticsearch安裝：
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'

@@ -1,13 +1,13 @@
 ---
 title: 常規配置路徑引用
 description: 請參見常規和高級配置值的清單。
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 3%
+source-wordcount: '965'
+ht-degree: 0%
 
 ---
-
 
 # 常規和高級配置路徑參考
 
@@ -54,7 +54,7 @@ ht-degree: 3%
 | 增值稅編號 | `general/store_information/merchant_vat_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
 | 啟用單儲存模式 | `general/single_store_mode/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Web路徑
 
@@ -86,7 +86,7 @@ ht-degree: 3%
 | 如果JavaScript被禁用，則顯示通知 | `web/browser_capabilities/javascript` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 如果禁用本地儲存，則顯示通知 | `web/browser_capabilities/local_storage` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ### 貨幣設定路徑
 
@@ -111,7 +111,7 @@ ht-degree: 3%
 | 電子郵件發件人錯誤 | `currency/import/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 錯誤電子郵件模板 | `currency/import/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ### 聯繫人路徑
 
@@ -124,7 +124,7 @@ ht-degree: 3%
 | 電子郵件發件人 | `contact/email/sender_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 電子郵件模板 | `contact/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ### 報告路徑
 
@@ -135,7 +135,7 @@ ht-degree: 3%
 | 年初至今開始 | `reports/dashboard/ytd_start` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 當月開始 | `reports/dashboard/mtd_start` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ### 內容管理路徑
 
@@ -149,19 +149,19 @@ ht-degree: 3%
 | 啟用層次結構元資料 | `cms/hierarchy/metadata_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 層次結構菜單的預設佈局 | `cms/hierarchy/menu_layout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
-### 新建Relic報告路徑
+### New Relic報告路徑
 
-這些配置值在中的管理中可用 **商店** >設定> **配置** > **常規** > **新羅利克報告**。
+這些配置值在中的管理中可用 **商店** >設定> **配置** > **常規** > **New Relic報導**。
 
 | 名稱 | 配置路徑 | 只做商業？ |
 |--------------|--------------|--------------|
-| 啟用新舊檔案整合 | `newrelicreporting/general/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 新建Relic應用程式名稱 | `newrelicreporting/general/app_name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 啟用New Relic整合 | `newrelicreporting/general/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| New Relic應用程式名稱 | `newrelicreporting/general/app_name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 啟用Cron | `newrelicreporting/cron/enable_cron` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 高級類別
 
@@ -203,7 +203,7 @@ ht-degree: 3%
 | 區分大小寫 | `admin/captcha/case_sensitive` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 已啟用的操作 | `admin/magento_logging/actions` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ### 系統路徑
 
@@ -271,7 +271,7 @@ ht-degree: 3%
 | 頻率 | `system/magento_scheduled_import_export_log/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 錯誤電子郵件模板 | `system/magento_scheduled_import_export_log/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ### 開發人員路徑
 
@@ -301,4 +301,4 @@ ht-degree: 3%
 | 非同步索引 | `dev/grid/async_indexing` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 快取用戶定義的屬性 | `dev/caching/cache_user_defined_attributes` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}

@@ -1,49 +1,49 @@
 ---
 title: 遷移資料
-description: 了解如何使用將資料從Magento1移轉至Magento2 [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+description: 瞭解如何開始將資料從Magento1遷移到Magento2, [!DNL Data Migration Tool]。
+exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-
 # 遷移資料
 
-開始之前，請執行下列步驟以準備：
+在開始之前，請執行以下步驟準備：
 
-1. 登入您的應用程式伺服器為 [檔案系統所有者](../../../installation/prerequisites/file-system/overview.md).
-1. 更改到應用程式安裝目錄，或確保將其添加到您的系統中 `PATH`.
+1. 以以下方式登錄到應用程式伺服器： [檔案系統所有者](../../../installation/prerequisites/file-system/overview.md)。
+1. 更改到應用程式安裝目錄，或確保已將其添加到系統 `PATH`。
 
-請參閱 [第一步](overview.md#first-steps) 一節以取得詳細資訊。
+查看 [第一步](overview.md#first-steps) 的子菜單。
 
 ## 運行資料遷移命令
 
-若要開始移轉資料，請執行：
+要開始遷移資料，請運行：
 
 ```bash
 bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-其中：
+位置：
 
-* `[-a|--auto]` 是可選引數，當遇到完整性檢查錯誤時，該引數會阻止遷移停止。
+* `[-a|--auto]` 是一個可選參數，可防止在遇到完整性檢查錯誤時停止遷移。
 
-* `[-r|--reset]` 是從頭開始移轉的選用引數。 您可以使用此引數來測試移轉。
+* `[-r|--reset]` 是從頭開始遷移的可選參數。 您可以使用此參數來測試遷移。
 
-* `{<path to config.xml>}` 是的絕對檔案系統路徑 `config.xml`;此引數為必要項目
+* `{<path to config.xml>}` 是到 `config.xml`;此參數是必需的
 
-在此步驟中， [!DNL Data Migration Tool] 為Magento1資料庫中的遷移表建立其他表和觸發器。 它們用於 [增量/增量](delta.md) 移轉步驟。 其他表包含有關最終遷移執行後更改記錄的資訊。 資料庫觸發器用於填充這些額外表，因此，如果正在對特定表執行新操作（添加/修改/刪除記錄），則這些資料庫觸發器會將有關此操作的資訊保存到額外表。 執行增量遷移流程時， [!DNL Data Migration Tool] 檢查這些表以獲取未處理的記錄，並將必要的內容遷移到Magento2資料庫。
+在此步驟中， [!DNL Data Migration Tool] 為Magento1資料庫中的遷移表建立其他表和觸發器。 它們用於 [增量/增量](delta.md) 遷移步驟。 其他表包含有關最終遷移執行後更改的記錄的資訊。 資料庫觸發器用於填充這些額外表，因此，如果正在對特定表執行新操作（添加/修改/刪除記錄），則這些資料庫觸發器會將有關此操作的資訊保存到額外表。 運行增量遷移進程時， [!DNL Data Migration Tool] 檢查這些表以查找未處理的記錄，並將必要的內容遷移到Magento2資料庫中。
 
-每個新表格都包含：
+每個新表都包含：
 
 * `m2_cl` 前置詞
-* `INSERT`, `UPDATE`, `DELETE` 事件觸發。
+* `INSERT`。 `UPDATE`。 `DELETE` 事件觸發器。
 
-例如，對於 `sales_flat_order` the [!DNL Data Migration Tool] 建立：
+例如， `sales_flat_order` 這樣 [!DNL Data Migration Tool] 建立：
 
-* `m2_cl_sales_flat_order` 表格：
+* `m2_cl_sales_flat_order` 表：
 
    ```sql
    CREATE TABLE `m2_cl_sales_flat_order` (
@@ -54,7 +54,7 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
    ) COMMENT='m2_cl_sales_flat_order';
    ```
 
-* `trg_sales_flat_order_after_insert`, `trg_sales_flat_order_after_update`, `trg_sales_flat_order_after_delete` 觸發器：
+* `trg_sales_flat_order_after_insert`。 `trg_sales_flat_order_after_update`。 `trg_sales_flat_order_after_delete` 觸發器：
 
    ```sql
    DELIMITER ;;
@@ -84,12 +84,12 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 >[!NOTE]
 >
->此 [!DNL Data Migration Tool] 在運行時保存其當前進度。 如果錯誤或用戶干預使其無法運行，則工具將在上次已知良好狀態恢復進度。 強制 [!DNL Data Migration Tool] 若要從頭開始執行，請使用 `--reset` 引數。 在這種情況下，我們建議您還原Magento2資料庫轉儲，以防止複製以前遷移的資料。
+>的 [!DNL Data Migration Tool] 保存其當前進度。 如果錯誤或用戶干預阻止其運行，則工具將恢復上次已知正常狀態的進度。 強制 [!DNL Data Migration Tool] 要從開始運行，請使用 `--reset` 參數。 在這種情況下，我們建議您恢復Magento2資料庫轉儲，以防止複製以前遷移的資料。
 
 
 ## 可能的一致性錯誤
 
-執行時， [!DNL Data Migration Tool] 可報告Magento1和Magento2資料庫之間的不一致，並顯示如下消息：
+運行時， [!DNL Data Migration Tool] 可能報告Magento1和Magento2資料庫之間的不一致，並顯示如下消息：
 
 * `Source documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
 * `Destination documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
@@ -104,8 +104,8 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-請參閱 [疑難排解](https://support.magento.com/hc/en-us/articles/360033020451) 一節，以取得詳細資訊和建議。
+查看 [故障排除](https://support.magento.com/hc/en-us/articles/360033020451) 的子菜單。
 
-## 下一個移轉步驟
+## 下一遷移步驟
 
-[移轉變更](delta.md)
+[遷移更改](delta.md)

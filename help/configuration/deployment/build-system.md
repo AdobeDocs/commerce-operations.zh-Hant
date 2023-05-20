@@ -1,13 +1,13 @@
 ---
 title: 生成系統設定
 description: 瞭解如何將Commerce部署到生成系統。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
 
 ---
-
 
 # 生成系統設定
 
@@ -98,7 +98,7 @@ ht-degree: 0%
    chown -R <Commerce file system owner name>:<web server username> .
    ```
 
-   例如，
+   比如說，
 
    ```bash
    chown -R commerce-username:apache .

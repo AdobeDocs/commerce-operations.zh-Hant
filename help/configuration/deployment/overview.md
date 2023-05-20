@@ -1,13 +1,13 @@
 ---
 title: 部署概述
 description: 閱讀有關Commerce應用程式的部署策略的資訊。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
 
 ---
-
 
 # 部署概述
 

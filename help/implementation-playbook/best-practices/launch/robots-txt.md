@@ -1,54 +1,54 @@
 ---
-title: 設定「robots.txt」和「sitemap.xml」檔案的最佳作法
-description: 了解如何將Adobe Commerce網站的相關指示傳遞至Web編目程式。
+title: 配置「robots.txt」和「sitemap.xml」檔案的最佳做法
+description: 瞭解如何將有關您的Adobe Commerce站點的說明傳遞給Web爬網程式。
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
+exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
 
 ---
 
+# 配置的最佳做法 `robots.txt` 和 `sitemap.xml` 檔案
 
-# 設定最佳實務 `robots.txt` 和 `sitemap.xml` 檔案
-
-本文提供使用的最佳實務 `robots.txt` 和 `sitemap.xml` 檔案，包括設定和安全性。 這些檔案會指示網頁機器人（通常是搜尋引擎機器人）如何對網站上的頁面進行編目。 設定這些檔案可改善網站效能和搜尋引擎最佳化。
+本文提供了使用 `robots.txt` 和 `sitemap.xml` 檔案，包括配置和安全。 這些檔案指導Web自動機（通常是搜索引擎自動機）如何在網站上爬網。 配置這些檔案可以提高站點效能和搜索引擎優化。
 
 >[!NOTE]
 >
->這些最佳實務僅適用於使用原生Adobe Commerce店面的專案。 不適用於使用其他店面解決方案(例如Adobe Experience Manager、無頭式)的Adobe Commerce專案。
+>這些最佳做法僅適用於使用本地Adobe Commerce店面的項目。 它們不適用於使用其他店面解決方案的Adobe Commerce項目(如Adobe Experience Manager、無頭店)。
 
 ## 受影響的產品和版本
 
 [所有支援的版本](../../../release/versions.md) 共：
 
-- Adobe Commerce雲基礎架構
+- Adobe Commerce在雲基礎架構上
 - Adobe Commerce內部
 
-## Adobe Commerce雲基礎架構
+## Adobe Commerce在雲基礎架構上
 
-預設的Adobe Commerce專案包含階層，包含單一網站、商店和商店檢視。 對於更複雜的實作，您可以為 _多站點_ 店面。
+預設的Adobe Commerce項目包含包含單個網站、商店和商店視圖的層次結構。 對於更複雜的實施，您可以為 _多站點_ 店面。
 
-### 單站店
+### 單點店面
 
-在設定 `robots.txt` 和 `sitemap.xml` 單站點商店的檔案：
+在配置 `robots.txt` 和 `sitemap.xml` 單點店面的檔案：
 
-- 確定您的專案使用 [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) 2002.0.12版或更新版本。
-- 使用管理應用程式將內容新增至 `robots.txt` 檔案。
+- 確保項目正在使用 [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) 2002.0.12版或更高版本。
+- 使用Admin應用程式將內容添加到 `robots.txt` 的子菜單。
 
    >[!TIP]
    >
-   >檢視自動產生的 `robots.txt` 儲存的檔案 `<domain.your.project>/robots.txt`.
+   >查看自動生成的 `robots.txt` 儲存的檔案 `<domain.your.project>/robots.txt`。
 
-- 使用管理應用程式產生 `sitemap.xml` 檔案。
+- 使用Admin應用程式生成 `sitemap.xml` 的子菜單。
 
    >[!IMPORTANT]
    >
-   >由於雲端基礎架構專案上的Adobe Commerce上是唯讀檔案系統，您必須指定 `pub/media` 路徑。
+   >由於Adobe Commerce上的雲基礎架構項目的只讀檔案系統，您必須指定 `pub/media` 生成檔案之前的路徑。
 
-- 使用自訂的Abmetly VCL程式碼片段，從網站的根目錄重新導向至 `pub/media/` 兩個檔案的位置：
+- 使用自定義的Affeist VCL代碼段將站點的根目錄重定向到 `pub/media/` 兩個檔案的位置：
 
    ```vcl
    {
@@ -60,26 +60,26 @@ ht-degree: 0%
    }
    ```
 
-- 在網頁瀏覽器中檢視檔案，以測試重新導向。 例如， `<domain.your.project>/robots.txt` 和 `<domain.your.project>/sitemap.xml`. 請確定您使用的根路徑是您為設定重新導向的路徑，而非不同的路徑。
+- 通過在Web瀏覽器中查看檔案test重定向。 比如說， `<domain.your.project>/robots.txt` 和 `<domain.your.project>/sitemap.xml`。 確保您使用的是為重定向配置的根路徑，而不是其他路徑。
 
 >[!INFO]
 >
->請參閱 [新增網站地圖和搜尋引擎機器人](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) 以取得詳細指示。
+>請參閱 [添加站點地圖和搜索引擎自動機](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) 的上界。
 
 
 ### 多地點店面
 
-只要在雲端基礎架構上實作Adobe Commerce，您就可以設定並執行數個商店。 請參閱 [設定多個網站或商店](https://devdocs.magento.com/cloud/project/project-multi-sites.html).
+您可以在雲基礎架構上通過Adobe Commerce的單一實施來設定和運行多個儲存。 請參閱 [設定多個網站或商店](https://devdocs.magento.com/cloud/project/project-multi-sites.html)。
 
-設定 `robots.txt` 和 `sitemap.xml` 檔案 [單點店面](#single-site-storefronts) 適用於具有兩個重要差異的多網站店面：
+配置 `robots.txt` 和 `sitemap.xml` 檔案 [單點店面](#single-site-storefronts) 適用於具有兩個重要差異的多地點店面：
 
-- 請確定 `robots.txt` 和 `sitemap.xml` 檔案名包含相應站點的名稱。 例如：
+- 確保 `robots.txt` 和 `sitemap.xml` 檔案名包含相應站點的名稱。 例如：
    - `domaineone_robots.txt`
    - `domaintwo_robots.txt`
    - `domainone_sitemap.xml`
    - `domaintwo_sitemap.xml`
 
-- 使用稍微修改的自訂Abmetly VCL程式碼片段，從網站的根重新導向至 `pub/media` 兩個檔案在您網站上的位置：
+- 使用稍微修改的自定義Abmeist VCL代碼段將站點的根重定向到 `pub/media` 兩個檔案在您站點上的位置：
 
    ```vcl
    {
@@ -93,25 +93,25 @@ ht-degree: 0%
 
 ## Adobe Commerce內部
 
-使用管理應用程式來設定 `robots.txt` 和 `sitemap.xml` 防止機器人掃描和索引不必要內容的檔案(請參閱 [搜尋引擎機器人](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots))。
+使用Admin應用程式配置 `robots.txt` 和 `sitemap.xml` 防止bot掃描和索引不必要的內容的檔案(請參見 [搜索引擎自動機](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots))。
 
 >[!TIP]
 >
->若是內部部署，您在何處撰寫檔案，取決於您安裝Adobe Commerce的方式。 將檔案寫入 `/path/to/commerce/pub/media/` 或 `/path/to/commerce/media`，以適合您安裝的選項為準。
+>對於內部部署，您編寫檔案的位置取決於您如何安裝Adobe Commerce。 將檔案寫入 `/path/to/commerce/pub/media/` 或 `/path/to/commerce/media`，以適合您安裝的選項。
 
-## 安全性
+## 安全
 
-請勿在 `robots.txt` 檔案。 公開管理員路徑會導致網站遭駭客攻擊及資料可能遺失。 從 `robots.txt` 檔案。
+不要在您的 `robots.txt` 的子菜單。 暴露管理路徑是站點駭客攻擊和資料丟失的漏洞。 從 `robots.txt` 的子菜單。
 
-編輯 `robots.txt` 檔案並移除管理路徑的所有項目，請參閱 [行銷使用手冊> SEO和搜尋>搜尋引擎機器人](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
+要編輯的步驟 `robots.txt` 檔案並刪除管理路徑的所有條目，請參見 [市場營銷使用手冊> SEO和搜索>搜索引擎自動機](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)。
 
 >[!TIP]
 >
->如果你需要幫助， [提交Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+>如果你需要幫助， [提交Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)。
 
 ## 其他資訊
 
-- [了解網站、商店和商店的檢視](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [新增網站](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [使用Abmetly來封鎖您Adobe Commerce網站的惡意流量](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
-- [robots.txt在雲端基礎架構2.3.x上的Adobe Commerce中出現404錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)
+- [瞭解網站、商店和商店視圖](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
+- [添加網站](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
+- [使用Appriest攔截您的Adobe Commerce站點的惡意通信](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
+- [robots.txt在Adobe Commerce雲基礎架構2.3.x上顯示404個錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

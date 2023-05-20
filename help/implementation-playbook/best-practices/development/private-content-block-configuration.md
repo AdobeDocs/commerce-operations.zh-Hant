@@ -1,36 +1,35 @@
 ---
-title: 私人內容區塊最佳作法
-description: 了解設定私人內容區塊以最佳化店面效能的最佳實務。
+title: 專用內容塊的最佳做法
+description: 瞭解配置私有內容塊以優化店面效能的最佳做法。
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
-# 私人內容區塊最佳作法
+# 專用內容塊的最佳做法
 
-當私人內容區塊包含 `_isScopePrivate` 變數，則區塊無法快取。 由於未快取私人區塊，Adobe Commerce必須擷取每個客戶請求的相同資料，而增加伺服器負載。
+當私有內容塊包含 `_isScopePrivate` 變數，該塊不可快取。 由於私有塊未快取，Adobe Commerce必須為每個客戶請求檢索相同的資料，這會增加伺服器負載。
 
-而非使用 `_isScopePrivate` 變數，建立區塊和範本以顯示不受使用者限制的資料。 Adobe Commerce UI元件會以使用者特定資料取代此資料，以更有效率地處理預先轉譯的資料。 如需指示，請參閱 [私人內容](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) 在 _[!DNL Commerce PHP Extensions Guide]_.
+而不是使用 `_isScopePrivate` 為私有內容建立變數，建立塊和模板以顯示用戶不可知的資料。 該資料由Adobe CommerceUI元件用用戶專用資料替換，該元件可更有效地處理預呈現資料。 有關說明，請參見 [專用內容](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) 的 _[!DNL Commerce PHP Extensions Guide]_。
 
 ## 受影響的產品和版本
 
 [所有支援的版本](../../../release/versions.md) 共：
 
-- Adobe Commerce雲基礎架構
+- Adobe Commerce在雲基礎架構上
 - Adobe Commerce內部
 
-## 潛在的效能影響
+## 潛在效能影響
 
-具有包含的私人內容區塊的網站 `_isScopePrivate` 變數會觸發AJAX請求，以擷取每個客戶請求的相同資料。 這會增加回應時間，並使用可用於處理更多業務關鍵型店面操作（如客戶註冊、購物車更新、訂單提交和付款交易）的額外資源。
+具有包含以下內容的私有內容塊的站點 `_isScopePrivate` 變數AJAX觸發請求以檢索每個客戶請求的相同資料。 這增加了響應時間，並使用了可用於處理更多業務關鍵型店面操作的額外資源，如客戶註冊、購物車更新、訂單提交和付款交易。
 
 ## 其他資訊
 
-- [私人內容](../../../performance/configuration.md#client-side-optimization-settings)
-- [高吞吐量AJAX請求會導致效能不佳](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
-
-
+- [專用內容](../../../performance/configuration.md#client-side-optimization-settings)
+- [高吞吐量AJAX請求導致效能差](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)

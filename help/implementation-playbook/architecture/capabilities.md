@@ -26,7 +26,7 @@ Adobe在創意產品中已經廣為人知，但它還擁有一個重要的數字
 
 要構建出色的購物體驗，企業需要功能強大、現代化的平台，這些平台具有開放性、可擴充性、可擴充性和安全性，更不用說敏捷開發的現代工具了。 Adobe Commerce是滿足所有這些需求的完美平台。
 
-Adobe Commerce是一個功能齊全、經過市場測試的電子商務平台，旨在通過各種渠道和業務模式提供豐富的個性化商務體驗。 Adobe Commerce可以作為端對端商務應用程式或在更大的商業環境中作為參考應用程式。 它採用REST和GraphQL內置的廣泛API，具有模組化和靈活性，可與多種頭部配合使用 — 從WordPress和Drupal到Adobe Experience Manager等。
+Adobe Commerce是一個功能齊全、經過市場測試的電子商務平台，旨在通過各種渠道和業務模式提供豐富的個性化商務體驗。 Adobe Commerce可以作為端對端商務應用程式或在更大的商業環境中作為參考應用程式。 它具有模組化和靈活性，具有REST和GraphQL中構建的廣泛API，可與多種頭部配合使用 — 從WordPress、Drupal到Adobe Experience Manager等。
 
 ## 權能映射
 

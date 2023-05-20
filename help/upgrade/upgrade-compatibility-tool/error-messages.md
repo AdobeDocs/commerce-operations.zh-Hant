@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Upgrade Compatibility Tool] 錯誤消息"'
+title: '"[!DNL Upgrade Compatibility Tool] 錯誤消息'''
 description: 瞭解有關使用時遇到的錯誤消息的詳細資訊 [!DNL Upgrade Compatibility Tool] 你的Adobe Commerce計畫。
-source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
+exl-id: fe4a17a9-a807-4315-b3cd-e35f34e39f6d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4113'
 ht-degree: 4%
 
 ---
-
 
 # [!DNL Upgrade Compatibility Tool] 錯誤消息
 
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 此錯誤消息引用提供了有關在執行 [!DNL Upgrade Compatibility Tool]。
 
-錯誤消息按級別（嚴重問題、錯誤和警告）和類型（核心代碼、自定義代碼和GraphQL架構）分類。 每種類型都包含以下資訊：
+錯誤消息按級別（嚴重問題、錯誤和警告）和類型(核心代碼、自定義代碼和GraphQL架構)分類。 每種類型都包含以下資訊：
 
 - **錯誤代碼**:Adobe Commerce為錯誤消息分配了標識符。
 - **錯誤描述**:概述錯誤原因的說明。
@@ -34,7 +34,7 @@ ht-degree: 4%
 | 2003 | 未安裝作曲家依賴關係 | 缺少合成器依賴項可能會導致問題。 通過運行還原依賴項 `composer require package_name`。 |
 | 2005 | 找不到核心資料夾 | 運行 `composer install` 命令。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### 自定義代碼
 
@@ -65,7 +65,7 @@ ht-degree: 4%
 | 5076 | 由於自PHP 7起保留，因此無法在命名空間中使用 | 將命名空間中的保留字替換為非保留關鍵字。 |
 | 5077 | 由於自PHP 7起保留，因此不能用作類名 | 將保留類名替換為非保留名稱。 |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ### 資料庫架構
 
@@ -76,19 +76,19 @@ ht-degree: 4%
 | 7009 | 自定義約束引用在目標版本中刪除的核心表 | 刪除約束或更新referenceTable和referenceColumn屬性 |
 | 7010 | 自定義約束引用在目標版本中刪除的核心列 | 刪除約束或更新referenceColumn屬性 |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
-### GraphQL架構
+### GraphQL模式
 
 如果目標版本中不存在架構項，則會引發GraphQL架構關鍵問題。
 
 | 錯誤代碼 | 錯誤描述 | 建議的操作 |
 | --- | --- | --- |
 | 3101 | 類型已刪除 | 列出引用此欄位的所有查詢。 檢查這些查詢是否由自定義實現使用。 更新客戶端代碼以處理更改的查詢介面。 |
-| 3102 | 從聯合中刪除的類型 | 如果聯合類型在GraphQL請求構建或響應處理實現中使用，則可能需要更新它。 |
+| 3102 | 從聯合中刪除的類型 | 如果聯合類型在GraphQL請求構造或響應處理實現中使用，則可能需要更新它。 |
 | 3103 | 已刪除欄位 | 檢查該欄位是否在自定義代碼庫中引用。 調整實現以正確處理新欄位類型。 |
 | 3105 | 已實現的介面已刪除 | 檢查是否在自定義中使用實現刪除的介面的類型。 如果實現依賴於已移除的介面，則可能需要更新它。 |
-| 3106 | 從枚舉中刪除的值 | 如果刪除的枚舉值在GraphQL請求構造或響應處理實現中使用，則可能需要更新它。 |
+| 3106 | 從枚舉中刪除的值 | 如果在GraphQL請求構造或響應處理實現中使用刪除的枚舉值，則可能需要更新它。 |
 | 3107 | 已刪除參數 | 檢查該欄位是否用於自定義代碼庫。 刪除此欄位的參數。 |
 | 3109 | 指令已刪除 | 檢查該指令是否用於自定義代碼庫。 調整實現以刪除對指令的引用。 |
 | 3110 | 已刪除指令參數 | 檢查該指令是否用於自定義代碼庫。 刪除指令參數。 |
@@ -101,7 +101,7 @@ ht-degree: 4%
 | 3307 | 已添加必需參數 | 檢查該欄位是否用於自定義代碼庫。 使用欄位時應指定新的必需參數。 |
 | 3310 | 已添加必需的指令參數 | 檢查該指令是否用於自定義代碼庫。 添加指令參數。 |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 錯誤
 
@@ -211,7 +211,7 @@ ht-degree: 4%
 | 6009 | `jQuery.parseJSON()` 已棄用 | 要分析JSON字串，請改用本機JSON.parse方法。 |
 | 6010 | (`jQuery.expr[":"]`。 `jQuery.expr.filters`)已棄用 | 請改用jQuery.expr.pseudos。 |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ### 資料庫架構
 
@@ -228,7 +228,7 @@ ht-degree: 4%
 | 7007 | 目標核心版本引入的約束與自定義模組聲明的約束同名 | 刪除（如果重複到引入的核心約束）或更名自定義約束 |
 | 7008 | 在目標版本中刪除了由自定義模組擴展的核心約束 | 使用新核心約束（如果適用）或更名自定義約束 |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 警告
 
@@ -240,7 +240,7 @@ ht-degree: 4%
 | --- | --- | --- |
 | 2004 | 合成器依賴關係版本不匹配 | 問題表示Composer依賴項版本在標準和實際項目中不同。 通過運行更新依賴項 `composer update <package_name>`。 |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ### 自定義代碼
 
@@ -269,9 +269,9 @@ ht-degree: 4%
 | 5074 | 棄用方法的使用 `getResource()` 檢測到（保存/載入/刪除）資料。 | 改用儲存庫。 |
 | 5086 | 不在常數上聲明可見性 | 聲明所有常數的可見性。 |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
-### GraphQL架構
+### GraphQL模式
 
 將附加項添加到新版本的架構中時，會引發GraphQL架構警告。 建議審查執行情況，看是否應將其用於請求。
 
@@ -284,4 +284,4 @@ ht-degree: 4%
 | 3306 | 添加到枚舉的值 | 已將值添加到枚舉。 如果客戶端包含枚舉值上的switch語句且不包含預設大小寫，則此更改可能會導致意外行為。 |
 | 3308 | 已添加可選參數 | 如果查詢在自定義中使用新參數，則可能需要將其添加到請求中。 |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}

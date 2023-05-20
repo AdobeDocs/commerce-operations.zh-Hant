@@ -1,6 +1,6 @@
 ---
-title: 此 [!UICONTROL bots] 標籤
-description: 了解 [!UICONTROL bots] 標籤 [!DNL Observation for Adobe Commerce].
+title: 的 [!UICONTROL bots] 頁籤
+description: 瞭解 [!UICONTROL bots] 頁籤 [!DNL Observation for Adobe Commerce]。
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 source-git-commit: 043389dc6d86228e459ac2c3592f391e85aa8f68
 workflow-type: tm+mt
@@ -9,153 +9,153 @@ ht-degree: 0%
 
 ---
 
-# 此 [!UICONTROL bots] 標籤
+# 的 [!UICONTROL bots] 頁籤
 
-此頁簽提供的資訊說明如何識別 [!DNL bots] 會造成網站問題。
+此頁籤包含說明如何識別是否和何種資訊的資訊 [!DNL bots] 導致站點問題。
 
-## 概觀 [!DNL bots]:
+## 高級概述 [!DNL bots]:
 
-* A [!DNL bot] 是執行重複性自動化任務的軟體。 在人工智慧和機器學習進化的基礎上， [!DNL bots] 正在改變。 有 *好* [!DNL bots] 這些網站可以通過搜索和添加到網際網路搜索引擎而受益。 這會導致網際網路使用者透過搜尋引擎結果被引導至網站。 A *好* [!DNL bot] 通常會遵循放置在 [!DNL bot] a `robots.txt` 檔案或設定。 邊界可以限制對站點或站點部分的訪問。
-* 惡意 [!DNL bots] 忽略 `robots.txt` 或者他們可能欺騙好人 [!DNL bot] 透過HTTP要求資料的要求使用者代理欄位。 有些惡意的 [!DNL bots] 執行：
-   * 將載入新增至網站，以拒絕合法使用者存取網站。
-   * 未經許可而消除和重複使用內容。
-   * 註冊假帳戶以洪泛地發送電子郵件服務或地址，或重定向到其他站點([!DNL SPAM bots])。
+* A [!DNL bot] 是運行重複性自動任務的軟體。 隨著人工智慧和機器學習的進化，任務、方法和交互 [!DNL bots] 正在更改。 有 *好* [!DNL bots] 通過搜索網站並將其添加到網際網路搜索引擎，這些網站將受益匪淺。 這導致網際網路用戶通過搜索引擎結果被引導到站點。 A *好* [!DNL bot] 通常涉及放置在 [!DNL bot] 按 `robots.txt` 檔案或設定。 邊界可以限制對站點或站點部分的訪問。
+* 惡意 [!DNL bots] 忽略 `robots.txt` 否則他們可能會欺騙 [!DNL bot] 通過請求用戶代理欄位獲取HTTP請求資料。 有些東西 [!DNL bots] 執行：
+   * 向站點添加負載以拒絕合法用戶訪問該站點。
+   * 未經許可即可擦除和重用內容。
+   * 註冊虛假帳戶以向電子郵件服務或地址發送大量郵件或重定向到其他站點([!DNL SPAM bots])。
    * 建立假視圖([!DNL Viewbots])。
    * 購買產品或票證([!DNL Focused bots])。
 * 管理 [!DNL bots]
    * [!DNL Observation for Adobe Commerce] 有 [!DNL bot] 流量：
-      * 它會顯示非快取總計 [!DNL bot] 活動，顯示 [!DNL bot] 會新增至網站，以及負載發生時。
-      * 它會顯示 [!DNL bots] 產生錯誤。 通常若 [!DNL bot] 會增加造成網站問題的負載 [!DNL bot] 或IP位址有最高錯誤頻率。
-      * 它顯示 [!DNL bot] 要管理的名稱（請求用戶代理欄位值）和IP地址：
-         * [!DNL Fastly] (限速或 [!DNL VCLs] 會封鎖IP位址、範圍或 [!DNL bots] 依名稱值)。
-         * 添加好 [!DNL bot] 資訊 `robots.txt field` 限制或限制網站存取率。
-         * 管理 [!DNL Bing] 或 [!DNL Google bots] 透過搜尋引擎主控台。
+      * 它顯示未快取的總數 [!DNL bot] 活動，顯示 [!DNL bot] 即添加到站點，當負載發生時。
+      * 它顯示 [!DNL bots] 正在生成錯誤。 通常，如果 [!DNL bot] 是添加導致站點問題的負載， [!DNL bot] 或IP地址有最高錯誤頻率。
+      * 它顯示 [!DNL bot] 名稱（請求用戶代理欄位值）和要通過以下方式管理的IP地址：
+         * [!DNL Fastly] (限速或 [!DNL VCLs] 阻止IP地址、範圍或 [!DNL bots] 按名稱值)。
+         * 添加好 [!DNL bot] 資訊 `robots.txt field` 限制或限制站點訪問率。
+         * 管理 [!DNL Bing] 或 [!DNL Google bots] 搜索引擎控制台。
 
 ## [!UICONTROL Total Bot traffic by bot name]:
 
-![在選取的時段內，依機器人名稱的機器人總流量：](../../assets/tools/observation-for-adobe-commerce/total-bot-traffic-bot-name.png)
+![在選定的時間段內，按Bot名稱列出的Bot通信總量：](../../assets/tools/observation-for-adobe-commerce/total-bot-traffic-bot-name.png)
 
-* 此 **[!UICONTROL Total Bot traffic by bot name during selected time period]** 表格包含非快取請求的匯總計數，其中 [!UICONTROL request_user_agent] 欄位包含 [!DNL bots] 的值。 這可能是或不是 [!DNL bot] 作為 [!UICONTROL request_user_agent] 欄位值可以偽造。 底下的值 [!UICONTROL Count] 欄是最重要的。
+* 的 **[!UICONTROL Total Bot traffic by bot name during selected time period]** 表包含非快取請求的聚合計數，其中 [!UICONTROL request_user_agent] 欄位包含 [!DNL bots] 的雙曲餘切值。 這可能是或不是命名 [!DNL bot] 的 [!UICONTROL request_user_agent] 欄位值可以偽造。 位於 [!UICONTROL Count] 欄是最重要的。
 
 ## [!UICONTROL Total Bot Traffic by Bot name/IP address]
 
-![選取時段內依機器人名稱/IP位址的機器人總流量如何以快速方式封鎖機器人流量，或透過您的robots.txt檔案管理機器人Adobe Commerce robots.txt的最佳作法](../../assets/tools/observation-for-adobe-commerce/best-practices-adobecommerce-robots.png)
+![按Bot名稱/IP地址在選定時間段內的Bot總流量如何阻止Rebistlevel上的Bot流量或通過您的robots.txt檔案管理botsAdobe Commercerobots.txt的最佳做法](../../assets/tools/observation-for-adobe-commerce/best-practices-adobecommerce-robots.png)
 
-* 此 **[!UICONTROL Total Bot Traffic by Bot name/IP address during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 表格顯示的資料與上表相同，但會新增代表已命名 [!DNL bot]. 惡意 [!DNL bots] 好 [!DNL bots],IP位址應透過識別濫用IP位址的網站或 *who* 服務或 [!DNL DNS lookups]. 例如， [!DNL Google] 發佈 [[!DNL googlebot] IP位址](https://developers.google.com/search/apis/ipranges/googlebot.json) 和 [!DNL Microsoft] 有驗證工具，用於 [[!DNL Bingbots]](https://www.bing.com/webmasters/help/Verify-Bingbot-2195837f).
+* 的 **[!UICONTROL Total Bot Traffic by Bot name/IP address during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 該表顯示與上一表相同的資料，但添加了代表命名的 [!DNL bot]。 惡意 [!DNL bots] 好壞 [!DNL bots], IP地址應通過識別濫用IP地址的網站或通過 *誰* 服務或 [!DNL DNS lookups]。 比如說， [!DNL Google] 出版 [[!DNL googlebot] IP地址](https://developers.google.com/search/apis/ipranges/googlebot.json) 和 [!DNL Microsoft] 具有用於 [[!DNL Bingbots]](https://www.bing.com/webmasters/help/Verify-Bingbot-2195837f)。
 
 ## [!UICONTROL Graph - Bots with HTTP status errors]
 
-![圖表 — 在選取的時段內，發生HTTP狀態錯誤的機器人如何以快速方式封鎖機器人流量，或透過您的robots.txt檔案管理機器人Adobe Commerce robots.txt的最佳實務](../../assets/tools/observation-for-adobe-commerce/bots-with-http-status-errors.png)
+![圖形 — 在選定時間段內HTTP狀態錯誤的Bot如何阻止Repbiesl級別的Bot通信或通過您的robots.txt檔案管理botsAdobe Commercerobots.txt的最佳做法](../../assets/tools/observation-for-adobe-commerce/bots-with-http-status-errors.png)
 
-* 此 **[!UICONTROL Graph - Bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 圖表顯示 [!DNL bots] 在「請求用戶代理」欄位中聲明自己。 這不一定表示錯誤是由 [!DNL bot] 或其他流量。 錯誤可能是 [!DNL bot] 請求不存在的資訊，或請求中有其他問題。
-* 如果在站點不穩定或停機期間IP地址上出現錯誤高峰，則可能是站點問題中的嫌疑。
+* 的 **[!UICONTROL Graph - Bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 圖形顯示錯誤 [!DNL bots] 在request user agent欄位中聲明自己。 這不一定表示錯誤是由 [!DNL bot] 或其他交通。 錯誤可能是 [!DNL bot] 正在請求不存在的資訊或請求中存在其他問題。
+* 如果在站點不穩定或停機期間IP地址上出現大量錯誤，則這些錯誤可能是站點問題的嫌疑人。
 
 ## [!UICONTROL Table - IPs that do not identify as bots]
 
-![表格 — 在選取的時段內未識別為具有HTTP狀態錯誤之機器人的IP如何以「快速」層級封鎖機器人流量，或透過您的robots.txt檔案管理機器人Adobe Commerce robots.txt的最佳實務 ](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
+![表 — 在選定時間段內不標識為具有HTTP狀態錯誤的bot的IP如何阻止Repsible級別上的bot通信或通過您的robots.txt檔案管理botsAdobe Commercerobots.txt的最佳做法 ](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
 
-* 此 **[!UICONTROL Table - IPs that do not identify as bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 表格會顯示非200個http狀態代碼，且「不」自我識別為的IP請求 [!DNL bots] 在「請求使用者代理」欄位中。 這些IP地址可能是惡意IP地址，尤其是在所選時段的計數較高時。
-* 如果非200 http狀態代碼計數較低，且IP位址範圍不類似，則位址可能不會造成網站問題。
+* 的 **[!UICONTROL Table - IPs that do not identify as bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 表將顯示具有非200個HTTP狀態代碼且DO SELF-identify為的IP請求 [!DNL bots] 中。 這些IP地址可能是惡意IP地址，特別是在所選時間段計數較高時。
+* 如果非200 http狀態代碼計數低且IP地址範圍不相似，則地址可能不會導致站點問題。
 
 ## [!UICONTROL Table – Cache Status 'ERROR']
 
-![表 — 快取狀態「ERROR」詳細資訊表（這些IP在做什麼？） 如何以「快速」層級封鎖機器人流量，或透過robots.txt檔案管理機器人Adobe Commerce robots.txt的最佳實務](../../assets/tools/observation-for-adobe-commerce/cache-status-errors.png)
+![表 — 快取狀態「ERROR」詳細資訊表（這些IP在做什麼？） 如何阻止Reblish級別上的bot通信或通過robots.txt檔案管理botAdobe Commercerobots.txt的最佳做法](../../assets/tools/observation-for-adobe-commerce/cache-status-errors.png)
 
-* 當IP位址產生高頻錯誤時，請詢問它們執行什麼動作？ 此 **[!UICONTROL Table – Cache Status 'ERROR' detail table (what are these IPs doing?) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 表格會顯示請求的URL，以及具有快取狀態的請求的HTTP狀態值 [!UICONTROL ERROR] 值。 頻率會由URL分面，因此計數可能會很低。 請記住，在所選時段內，IP位址可能會提出數千個請求。 此檢視針對時間範圍內最多2000個請求（記錄顯示限制）。
+* 當IP地址產生高頻錯誤時，請問它們在做什麼？ 的 **[!UICONTROL Table – Cache Status 'ERROR' detail table (what are these IPs doing?) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 表將顯示請求的URL以及具有快取狀態的請求的HTTP狀態值 [!UICONTROL ERROR] 值。 該頻率按URL分面，因此計數可能較低。 請記住， IP地址在選定的時間段內可能發出數千個請求。 這是一個視圖，針對在時間範圍內最多2000個請求（記錄顯示限制）。
 
 ## [!UICONTROL Show 5XX status distribution]
 
-![顯示跨IP位址的5XX狀態分佈（前200個位址）如何以「快速」層級封鎖機器人流量，或透過您的robots.txt檔案管理機器人Adobe Commerce robots.txt最佳實務 ](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
+![顯示跨IP地址（前200個地址）的5XX狀態分佈如何阻止Repbisy級別的bot通信或通過您的robots.txt檔案管理botsAdobe Commercerobots.txt的最佳做法 ](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
 
-* 此 **[!UICONTROL Show 5XX status distribution across IP addresses (top 200 addresses) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 框架功能強大。 它會顯示在所選時段內具有5XX http狀態代碼的IP位址。 如果IP位址提出大量請求，而網站受到影響，以致無法處理流量，則發出最高請求頻率的IP位址通常會有最高錯誤數量。 5XX http狀態代碼通常表示某個站點難以響應請求。
-* 長條越寬，IP位址在該時段內錯誤總數為5xx的百分比就越大。 注意：如果IP位址有多個http狀態代碼（範例502和503 http狀態），該圖表中可能會有多個區段。
-* 在IP位址寬度相等的長條的右側會顯示典型分佈，或者會有數量極少的寬長條。
-* 如果您將滑鼠指標暫留在長條區段上，它會顯示選取時段內指出的錯誤數。
+* 的 **[!UICONTROL Show 5XX status distribution across IP addresses (top 200 addresses) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 框架功能強大。 它顯示在選定時間段內具有5XX http狀態代碼的IP地址。 如果IP地址發出的請求數量較大，並且站點受到影響到無法處理通信量的位置，則發出請求頻率最高的IP地址通常會出現最大數量的錯誤。 5XX http狀態代碼通常表示一個難以響應請求的站點。
+* 欄越寬，IP地址在該時間段內的5xx錯誤總數中的錯誤百分比就越大。 注：如果IP地址具有多個http狀態代碼（例如502和503 http狀態），則該圖形中可能包含多個段。
+* 典型分佈將指向條的右側，其中IP地址的寬度相等，或者有幾個計數很低的寬條。
+* 如果懸停在條形段上，它將顯示選定時間段內指示的錯誤數。
 
 ## [!UICONTROL IP cache status (MISS, PASS, ERROR) and HTTP status]
 
-![在選取的時段內，IP快取狀態(MISS、PASS、ERROR)和http狀態如何以「快速」層級封鎖機器人流量，或透過您的robots.txt檔案管理機器人Adobe Commerce robots.txt的最佳實務](../../assets/tools/observation-for-adobe-commerce/ip-cache-status-miss-pass-error.png)
+![IP快取狀態(MISS、PASS、ERROR)和HTTP狀態在選定的時間段內如何阻止Reblish級別的bot通信或通過您的robots.txt檔案管理botsAdobe Commercerobots.txt的最佳做法](../../assets/tools/observation-for-adobe-commerce/ip-cache-status-miss-pass-error.png)
 
-* 此 **[!UICONTROL IP cache status (MISS, PASS, ERROR) and HTTP status during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** frame會顯示所選時間範圍內IP的HTTPS狀態程式碼計數和非快取請求。 這表示每個IP地址和總卷的成比例負載。 它會顯示請求最多的IP位址。
+* 此 **[!UICONTROL IP cache status (MISS, PASS, ERROR) and HTTP status during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** frame顯示HTTPS狀態代碼計數和IP在所選時間幀內的非快取請求。 這表示每個IP地址和總卷的成比例負載。 它將顯示請求最多的IP地址。
 
 ## [!UICONTROL Fastly Cache Summary for selected time period]
 
-![選定時段的快取摘要](../../assets/tools/observation-for-adobe-commerce/fastly-cache-summary.png)
+![所選時間段的「快速快取摘要」](../../assets/tools/observation-for-adobe-commerce/fastly-cache-summary.png)
 
-* 如果您按一下 [!UICONTROL Error] 圖示，您可以比較最後兩個圖表。 這有助於指出負載造成網站問題的原因。
+* 如果按一下 [!UICONTROL Error] 表徵圖中，您可以將最後兩個圖形進行比較。 這有助於指明負載是站點問題的原因。
 
 ![快速錯誤檢查](../../assets/tools/observation-for-adobe-commerce/compare-fastly.png)
 
 ## [!UICONTROL Graph - IPs that do not identify as bots]
 
-![在選取的時段內不會識別為機器人且沒有錯誤的IP如何以快速方式封鎖機器人流量或透過您的robots.txt檔案管理機器人Adobe Commerce robots.txt的最佳作法](../../assets/tools/observation-for-adobe-commerce/ips-that-do-not-identify-as-bots.png)
+![在選定時間段內不識別為bot而無錯誤的IP如何阻止Repbisy級別的bot通信或通過您的robots.txt檔案管理botsAdobe Commercerobots.txt的最佳做法](../../assets/tools/observation-for-adobe-commerce/ips-that-do-not-identify-as-bots.png)
 
-* 此 **[!UICONTROL Graph - IPs that do not identify as bots without error during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** frame會顯示請求使用者代理欄位未指出 [!DNL bot]. 此幀可能顯示來自任何IP地址的高頻請求，但應注意高頻請求，特別是在站點可能有問題的時段內。
+* 的 **[!UICONTROL Graph - IPs that do not identify as bots without error during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** frame顯示請求用戶代理欄位、請求用戶代理欄位未指示請求的IP地址和狀態代碼 [!DNL bot]。 此幀可能顯示來自任何IP地址的高頻請求，但應注意高頻請求，特別是在站點可能有問題的時間段內。
 
 ## [!UICONTROL Graph - Suspicious Non-Bot traffic]
 
-![選定時段內的可疑非Bot流量](../../assets/tools/observation-for-adobe-commerce/suspicious-non-bot-traffic.png)
+![在所選時段內可疑的非Bot通信](../../assets/tools/observation-for-adobe-commerce/suspicious-non-bot-traffic.png)
 
-* 此 **[!UICONTROL Graph - Suspicious Non-Bot traffic during selected time period]** graph會尋找Go-http-client的請求使用者代理值，但會延伸，以查看其他可疑的請求使用者代理值。 此請求用戶代理值被站點用於從服務連接，可能有效，但也被惡意用戶使用 [!DNL bots].
+* 的 **[!UICONTROL Graph - Suspicious Non-Bot traffic during selected time period]** graph查找Go-http-client的請求用戶代理值，但將擴展為查看其他可疑請求用戶代理值。 此請求用戶代理值由站點用於從服務連接，可能有效，但也由惡意用戶使用 [!DNL bots]。
 
 ## [!UICONTROL Graph - Bot traffic by Bot name]
 
-![圖表 — 選取時段內依機器人名稱的機器人流量)](../../assets/tools/observation-for-adobe-commerce/bot-traffic-bot-name.png)
+![圖形 — 按選定時間段內的Bot名稱顯示的Bot通信)](../../assets/tools/observation-for-adobe-commerce/bot-traffic-bot-name.png)
 
-* 此 **[!UICONTROL Graph - Bot traffic by Bot name during selected time period]** frame顯示的資料與「機器人總流量」相同，依 [!DNL Bot] 名稱。 它會透過時間軸顯示資料，讓您查看 [!DNL bots] 正在進行分發。
+* 的 **[!UICONTROL Graph - Bot traffic by Bot name during selected time period]** 幀顯示的資料與Bot總通信量相同 [!DNL Bot] 名稱。 它通過時間軸顯示資料，以便您能夠查看 [!DNL bots] 正在進行分發。
 
 ## [!UICONTROL Graph - Top 250 Bot Names and IP addresses]
 
-![前250名機器人名稱和IP位址在選取的時段內，如何以快速方式封鎖機器人流量，或透過您的robots.txt檔案管理機器人Adobe Commerce robots.txt的最佳實務](../../assets/tools/observation-for-adobe-commerce/top-250-bot-names-ip-addresses.png)
+![在選定時間段內前250個Bot名稱和IP地址如何阻止Rebistlevel上的Bot通信或通過您的robots.txt檔案管理botsAdobe Commercerobots.txt的最佳做法](../../assets/tools/observation-for-adobe-commerce/top-250-bot-names-ip-addresses.png)
 
-* 此 **[!UICONTROL Graph - Top 250 Bot Names and IP addresses during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** frame顯示的資料與「總計」相同 [!DNL Bot] 在索引標籤頂端的選取時段表格期間，依機器人名稱/IP位址的流量。 會透過時間軸顯示資料，並依IP位址面對。 這會顯示 [!DNL bots] 會提出、提出請求的IP以及請求的分配。
+* 的 **[!UICONTROL Graph - Top 250 Bot Names and IP addresses during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** 幀顯示的資料與「總」 [!DNL Bot] 按Bot名稱/IP地址在選定時間段表（位於頁籤頂部）中的通信量。 它通過時間表顯示資料，並通過IP地址對其進行對應。 這顯示了 [!DNL bots] 發出請求的IP和請求的分發。
 
 ## [!UICONTROL Blocked Bot name / IP addresses (in Fastly)]
 
-![在選取的時段內封鎖機器人名稱/ IP位址（以快速方式）。 此圖表顯示機器人流量，以及傳回403禁止HTTP狀態代碼的IP](../../assets/tools/observation-for-adobe-commerce/blocked-bot-name-ip-addresses-403-code2.png)
+![在選定的時間段內阻止Bot名稱/IP地址（在Reptible中）。 此圖形顯示返回403禁止HTTP狀態代碼的bot通信和IP](../../assets/tools/observation-for-adobe-commerce/blocked-bot-name-ip-addresses-403-code2.png)
 
-* 此 **[!UICONTROL Blocked Bot name / IP addresses (in Fastly) during selected time period. This graph displays bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** frame會顯示機器人名稱和遭封鎖的IP位址。 您可以在此圖表中查看 [!DNL Fastly] 往前走。
+* 的 **[!UICONTROL Blocked Bot name / IP addresses (in Fastly) during selected time period. This graph displays bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** frame顯示bot名稱和被阻止的IP地址。 您可以在此圖表中查看所有請求的阻止方式 [!DNL Fastly] 繼續前進。
 
 ## [!UICONTROL Blocked non-Bot name / IP addresses (in Fastly)]
 
-![在選取的時段內封鎖非機器人名稱/ IP位址（以快速方式）。 此圖表顯示傳回403禁止HTTP狀態代碼的非機器人流量和IP ](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png)
+![在選定的時間段內阻止非Bot名稱/IP地址（在「Abmestible」中）。 此圖形顯示返回403禁止HTTP狀態代碼的非bot通信和IP ](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png)
 
-* 此 **[!UICONTROL Blocked non-Bot name / IP addresses (in Fastly) during selected time period graph displays non-bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** 框顯示未標識為 [!DNL bot] 被封鎖 [!DNL Fastly].
+* 的 **[!UICONTROL Blocked non-Bot name / IP addresses (in Fastly) during selected time period graph displays non-bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** 幀顯示不標識為 [!DNL bot] 被堵住了 [!DNL Fastly]。
 
 ## [!UICONTROL This table shows the number of user agents per IP address, number of successful, unsuccessful and blocked requests:]
 
-![下表顯示每個IP地址的用戶代理數、成功、失敗和被阻止的請求數：](../../assets/tools/observation-for-adobe-commerce/unsuccessful-attempts.png)
+![此表顯示每個IP地址的用戶代理數、成功、失敗和被阻止的請求數：](../../assets/tools/observation-for-adobe-commerce/unsuccessful-attempts.png)
 
-* 惡意 [!DNL bots] 常常嘲笑別人 [!DNL bots] 透過 [!UICONTROL Request User Agent] 欄位。 此表顯示IP位址在該欄位中有多少個唯一值。 值在 [!UICONTROL Request User Agent] 欄位中，IP地址越可疑。
+* 惡意 [!DNL bots] 經常嘲笑別人 [!DNL bots] 通過 [!UICONTROL Request User Agent] 的子菜單。 此表顯示IP地址在該欄位中具有的唯一值數。 值越高 [!UICONTROL Request User Agent] 欄位中， IP地址越可疑。
 
 ## [!UICONTROL IP with non-200 status errors]
 
-![IP有非200狀態錯誤 — 沒有403狀態](../../assets/tools/observation-for-adobe-commerce/ip-non-200-status-errors.png)
+![IP的狀態為非200錯誤 — 沒有403狀態](../../assets/tools/observation-for-adobe-commerce/ip-non-200-status-errors.png)
 
-* 此 **[!UICONTROL IP with non-200 status errors – without 403 status]** frame會顯示HTTP狀態碼為200以外之IP位址，在選取的時間範圍內的分佈。 若您在單一IP或一組IP位址上看到較高的值，則需要進一步調查。
+* 的 **[!UICONTROL IP with non-200 status errors – without 403 status]** frame顯示選定時間範圍內IP地址的分佈，HTTP狀態代碼不是200。 如果您在單個IP或IP地址組上看到更高的值，則需要進一步調查。
 
 ## [!UICONTROL IP with 403 status codes:]
 
 ![具有403個狀態代碼的IP:](../../assets/tools/observation-for-adobe-commerce/ip-403-status-code2.png)
 
-* 此 **[!UICONTROL IP with 403 status codes]** frame會顯示非快取請求，而不 [!UICONTROL cache_status=ERROR] 其HTTP狀態為403。 這可能表明源伺服器是403（未授權）的源，而不是來自 [!DNL Fastly].
+* 的 **[!UICONTROL IP with 403 status codes]** 幀顯示未快取的請求，但 [!UICONTROL cache_status=ERROR] HTTP狀態為403。 這可能表明源伺服器是403（未授權）的源，而不是來自 [!DNL Fastly]。
 
 ## [!UICONTROL Top 5 with non-200 status codes]
 
-![前5名，其中非200個狀態代碼顯示cache_status:](../../assets/tools/observation-for-adobe-commerce/top-5-non-200-status-code-status.png)
+![前5個狀態代碼顯示cache_status，非200個狀態代碼：](../../assets/tools/observation-for-adobe-commerce/top-5-non-200-status-code-status.png)
 
-* 此 **[!UICONTROL Top 5 with non-200 status codes showing cache_status]** 表格會以IP/狀態層級顯示每個 [!UICONTROL cache_status] 值。
+* 的 **[!UICONTROL Top 5 with non-200 status codes showing cache_status]** 表在IP/狀態級別上顯示 [!UICONTROL cache_status] 值。
 
 ## [!UICONTROL Pageview Latency will show as spikes]
 
-![頁面檢視延遲在此圖表上會顯示為尖峰：](../../assets/tools/observation-for-adobe-commerce/pageview-latency.png)
+![Pageview Latency將顯示為此圖形上的尖峰：](../../assets/tools/observation-for-adobe-commerce/pageview-latency.png)
 
-* 此 **[!UICONTROL Pageview Latency will show as spikes on this graph:]** 影格顯示頁面載入/ API回應延遲，可能與 [!DNL bot] 流量。
+* 的 **[!UICONTROL Pageview Latency will show as spikes on this graph:]** 幀顯示頁載入/API響應延遲，該延遲可能與 [!DNL bot] 流量。
 
-## [!UICONTROL Experimental Potential Malicious Bots] 框架
+## [!UICONTROL Experimental Potential Malicious Bots] 幀
 
-![實驗性潛在惡意Bot框架](../../assets/tools/observation-for-adobe-commerce/experimental-potential-malicious-bots-frame.jpg)
+![潛在惡意Bot框架的實驗](../../assets/tools/observation-for-adobe-commerce/experimental-potential-malicious-bots-frame.jpg)
 
-此 **[!UICONTROL Experimental Potential Malicious Bots]** frame會執行十個個別的複雜查詢。 它檢測惡意IP請求籤名，然後按降序匯總結果、加總和並對其進行排序。 查詢包含CVE漏洞攻擊和其他惡意請求的多個資料簽名。 即使安全修正/修補程式封鎖了該漏洞利用，且對網站不構成威脅，請求仍須由網站處理。 請求量可能在短時間內變得相當大。 此框架不顯示來自IP位址的請求總數，而是顯示具有指示請求意圖可疑之訊號的請求。
+的 **[!UICONTROL Experimental Potential Malicious Bots]** 框架運行十個獨立的複雜查詢。 它檢測惡意IP請求籤名，然後按降序對結果進行聚合、求和並按計數排序。 這些查詢包含CVE漏洞和其他惡意請求的大量資料簽名。 即使安全修復程式/補丁程式阻止了利用漏洞的攻擊並且對站點沒有威脅，仍然必須由網站處理該請求。 在很短的時間內，請求量會變得相當大。 此幀不顯示來自IP地址的請求總數，而是顯示具有指示請求具有可疑意圖的信號的請求。
 
-請務必確認流量可疑，且流量並非源自於內容分送網路(CDN)位址，而該位址也可能傳送有效請求。 如果確定來自CDN IP地址的請求，請與該服務供應商聯繫，以幫助阻止通過其網路的可疑通信。 如果您需要封鎖地址或請求URL，請參閱 [封鎖Adobe Commerce的惡意流量 [!DNL Fastly] 層級](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html) Adobe Commerce支援知識庫中。
+確保驗證通信量是否可疑，並且通信量不是源於內容分佈式網路(CDN)地址，該地址可能也在傳遞有效請求。 如果確定請求來自CDN IP地址，請聯繫該服務供應商以幫助阻止通過其網路的可疑通信。 如果需要阻止地址或請求URL，請參閱 [阻止Adobe Commerce的惡意通信 [!DNL Fastly] 級別](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html) 在Adobe Commerce支援知識庫中。

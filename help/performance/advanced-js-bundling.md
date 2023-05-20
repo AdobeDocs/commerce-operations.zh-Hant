@@ -1,13 +1,13 @@
 ---
 title: 高級 [!DNL JavaScript] 捆綁
 description: 瞭解JavaScript捆綁如何減少伺服器請求的大小和頻率。
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '2137'
 ht-degree: 0%
 
 ---
-
 
 # 高級 [!DNL JavaScript] 捆綁
 
@@ -100,7 +100,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 ### 第1部分：建立捆綁配置
 
-#### 1\ 添加build.js檔案
+#### 1\. 添加build.js檔案
 
 建立 `build.js` 檔案 [!DNL Commerce] 根目錄。 此檔案將包含捆綁包的整個生成配置。
 
@@ -113,7 +113,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 稍後，我們將更改 `optimize:` 設定自_ `none` 至 `uglify2` 以縮小束輸出。 但就目前而言，在開發過程中，你可以讓它 `none` 確保更快的生成。
 
-#### 2\。 添加RequireJS依賴項、shims、路徑和映射
+#### 2\. 添加RequireJS依賴項、shims、路徑和映射
 
 添加以下RequireJS生成配置節點， `deps`。 `shim`。 `paths`, `map`，到生成檔案：
 
@@ -129,7 +129,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 })
 ```
 
-#### 3\。 聚合requirejs-config.js實例值
+#### 3\. 聚合requirejs-config.js實例值
 
 在此步驟中，您需要聚合所有 `deps`。 `shim`。 `paths`, `map` 儲存中的配置節點 `requirejs-config.js` 檔案到您的 `build.js` 的子菜單。 為此，您可以開啟 **[!UICONTROL Network]** 頁籤，然後導航至您商店中的任何頁面，如首頁。 在「網路」頁籤中，您將看到您商店的 `requirejs-config.js` 檔案靠近頂部，此處突出顯示：
 
@@ -149,7 +149,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 })
 ```
 
-#### 4\。 添加模組節點
+#### 4\. 添加模組節點
 
 在 `build.js` 檔案，添加模組[] array（陣列），作為稍後為storefront定義的捆綁包的佔位符。
 
@@ -167,7 +167,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 })
 ```
 
-#### 5\。 檢索RequireJS依賴項
+#### 5\. 檢索RequireJS依賴項
 
 可以檢索 [!DNL RequireJS] 通過以下方式從儲存的頁面類型中獲取模組依賴關係：
 
@@ -230,7 +230,7 @@ Object.keys(window.require.s.contexts._.defined)
 
 此命令(在 [!DNL PhantomJS] 指令碼)建立相同的清單 [!DNL RequireJS] 從屬關係，並在瀏覽器控制台中顯示它們。 此方法的缺點是您必須建立自己的捆綁/頁面類型文本檔案。
 
-#### 6\。 格式化和篩選輸出
+#### 6\. 格式化和篩選輸出
 
 合併後 [!DNL RequireJS] 從屬關係到頁面類型文本檔案中，可以在每個頁面類型從屬關係檔案上使用以下命令，將檔案中的逗號替換為新行：
 
@@ -250,7 +250,7 @@ sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 ...
 ```
 
-#### 7\。 識別唯一和通用的捆綁包
+#### 7\. 識別唯一和通用的捆綁包
 
 目標是建立 [!DNL JavaScript] 所有頁面所需的檔案。 這樣，瀏覽器只需載入公用包以及一個或多個特定頁面類型。
 
@@ -285,7 +285,7 @@ sort bundle/*.txt |uniq -c |sort -n
 
 這告訴我們，一旦我們知道哪些頁面類型需要哪些依賴項，就可以將依賴項拆分為不同的捆綁包，從而可以提高我們商店的頁面載入速度。
 
-#### 8\。 建立依賴項分佈檔案
+#### 8\. 建立依賴項分佈檔案
 
 要瞭解哪些頁類型需要哪些依賴項，請在 [!DNL Commerce] 根目錄 `deps-map.sh` 並複製以下代碼：
 
@@ -333,7 +333,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 這些資訊足以構建捆綁包配置。
 
-#### 9\。 在build.js檔案中建立捆綁包
+#### 9\. 在build.js檔案中建立捆綁包
 
 開啟 `build.js` 配置檔案，並將包添加到 `modules` 的下界。 每個束應定義以下屬性：
 

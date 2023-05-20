@@ -1,13 +1,13 @@
 ---
 title: 自定義 [!DNL Data Migration Tool]
 description: 瞭解如何自定義 [!DNL Data Migration Tool] 在Magento1和Magento2之間傳送擴展建立的資料。
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
 
 ---
-
 
 # 配置 [!DNL Data Migration Tool]
 

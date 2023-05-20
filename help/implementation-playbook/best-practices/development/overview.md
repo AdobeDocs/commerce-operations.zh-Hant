@@ -1,31 +1,31 @@
 ---
-title: 實作開發階段
-description: 了解Adobe Commerce專案開發階段的實作最佳實務。
-source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
+title: 實施開發階段
+description: 瞭解Adobe Commerce項目發展階段的最佳做法。
+exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
-
 # 開發階段
 
-開發階段包括下列活動：
+發展階段包括下列活動：
 
-- 本機和中繼環境設定
-- 衝刺計畫
+- 本地和暫存環境設定
+- 斯普林特計畫
 - 票證執行
-- 疑難排解
-- 程式碼審核、合併及測試
-- Sprint評論
-- 客戶簽核
+- 故障排除
+- 代碼審閱、合併和test
+- 斯普林特評論
+- 客戶註銷
 
 以下各節包括發展階段的最佳做法資訊。
 
 ## 應用程式開發
 
-### 程式碼審核、合併及測試
+### 代碼審閱、合併和test
 
 <!--Assets not yet integrated
 - Guidelines and standards
@@ -33,9 +33,9 @@ ht-degree: 0%
   - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
   - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
 -->
-- [最佳化CSS和JS檔案](optimize-css-js-files.md)
-- [私人內容區塊最佳作法](private-content-block-configuration.md)
-- [擴充功能開發人員的最佳實務](https://developer.adobe.com/commerce/php/best-practices/)
+- [優化CSS和JS檔案](optimize-css-js-files.md)
+- [專用內容塊的最佳做法](private-content-block-configuration.md)
+- [擴展開發人員的最佳做法](https://developer.adobe.com/commerce/php/best-practices/)
 
 <!--Assets not yet integrated
 
@@ -52,19 +52,19 @@ ht-degree: 0%
   - [Composer tips and tricks](https://wiki.corp.adobe.com/x/lz4ykw)
 -->
 
-## 平台與服務
+## 平台和服務
 
-- [快速用於影像優化](image-optimization.md)
+- [利用Rebish進行影像優化](image-optimization.md)
 
-### 本機和中繼環境設定
+### 本地和暫存環境設定
 
-- [雲端基礎架構的開發工作流程](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
+- [雲基礎架構開發工作流](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
 
-## 代碼，合併，測試
+## 代碼，合併，test
 
-- [建置和部署的最佳實務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
+- [構建和部署的最佳做法](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
 - [靜態內容部署 — 雲](static-content-deployment.md)
-- [最佳化CSS和JS檔案](optimize-css-js-files.md)
-- [最佳化回應更快的網站影像](image-optimization.md)
-- [疑難排解Adobe Commerce雲端基礎架構最佳實務](troubleshooting.md)
-- [了解何時以及如何修改資料庫表](modifying-core-and-third-party-tables.md)
+- [優化CSS和JS檔案](optimize-css-js-files.md)
+- [優化映像，使站點響應更快](image-optimization.md)
+- [對Adobe Commerce雲基礎架構的最佳實踐進行故障排除](troubleshooting.md)
+- [瞭解何時以及如何修改資料庫表](modifying-core-and-third-party-tables.md)

@@ -7,12 +7,12 @@ ht-degree: 0%
 ---
 # 驗證通信是否安全
 
-本節探討兩種驗證HTTP基本驗證是否正常運作的方法：
+本節將討論兩種驗證HTTP Basic身份驗證是否正在工作的方法：
 
-* 使用 `curl` 用於驗證的命令必須輸入用戶名和密碼才能獲取群集狀態
-* 在管理員中設定HTTP基本驗證
+* 使用 `curl` 命令以驗證必須輸入用戶名和密碼才能獲取群集狀態
+* 在管理中配置HTTP基本身份驗證
 
-## 使用 `curl` 驗證群集狀態的命令
+## 使用 `curl` 命令檢驗群集狀態
 
 輸入以下命令：
 
@@ -26,7 +26,7 @@ curl -i http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 curl -i http://localhost:8080/_cluster/health
 ```
 
-將顯示以下消息以指示身份驗證失敗：
+顯示以下消息以指示身份驗證失敗：
 
 ```terminal
 HTTP/1.1 401 Unauthorized
@@ -43,7 +43,7 @@ WWW-Authenticate: Basic realm="Restricted"
 </html>
 ```
 
-現在，嘗試以下命令：
+現在嘗試以下命令：
 
 ```bash
 curl -i -u <username>:<password> http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
@@ -55,7 +55,7 @@ curl -i -u <username>:<password> http://<hostname, ip, or localhost>:<proxy port
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health
 ```
 
-這次，命令會以類似下列的訊息成功：
+此時，命令將成功，並顯示一條類似於以下內容的消息：
 
 ```terminal
 HTTP/1.1 200 OK
@@ -66,10 +66,10 @@ Connection: keep-alive
 {"cluster_name":"elasticsearch","status":"yellow","timed_out":false,"number_of_nodes":1,"number_of_data_nodes":1,"active_primary_shards":5,"active_shards":5,"relocating_shards":0,"initializing_shards":0,"unassigned_shards":5,"delayed_unassigned_shards":0,"number_of_pending_tasks":0,"number_of_in_flight_fetch":0,"task_max_waiting_in_queue_millis":0,"active_shards_percent_as_number":50.0}
 ```
 
-## 在管理員中設定HTTP Basic驗證
+## 在管理中配置HTTP基本身份驗證
 
-執行與 [搜尋引擎設定](../configuration/search/configure-search-engine.md) *expert* 按一下 **[!UICONTROL Yes]** 從 **[!UICONTROL Enable HTTP Auth]** 列出並在提供的欄位中輸入您的使用者名稱和密碼。
+執行中討論的相同任務 [搜索引擎配置](../configuration/search/configure-search-engine.md) *除* 按一下 **[!UICONTROL Yes]** 從 **[!UICONTROL Enable HTTP Auth]** 列出並在提供的欄位中輸入用戶名和密碼。
 
-按一下 **[!UICONTROL Test Connection]** 確認運作正常，然後按一下 **[!UICONTROL Save Config]**.
+按一下 **[!UICONTROL Test Connection]** 確保其工作正常，然後按一下 **[!UICONTROL Save Config]**。
 
-您必須刷新快取並重新索引，才能繼續。
+必須刷新快取並重新索引，然後才能繼續。

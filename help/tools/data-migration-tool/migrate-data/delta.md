@@ -1,33 +1,33 @@
 ---
-title: 移轉變更
-description: 了解如何僅移轉自上次Magento1資料移轉後已變更的資料，透過 [!DNL Data Migration Tool].
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: 遷移更改
+description: 瞭解如何僅遷移自上次Magento1資料遷移後更改的資料， [!DNL Data Migration Tool]。
+exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
 
+# 遷移更改
 
-# 移轉變更
+增量遷移工具安裝deltalog表（帶前置詞） `m2_cl_*`)和觸發器(用於跟蹤Magento1資料庫中的更改) [資料遷移](data.md)。 這些Deltalog表和觸發器對於確保僅遷移自上次遷移資料以來在Magento1中所做的更改至關重要。 這些更改包括：
 
-增量遷移工具安裝增量表（帶前置詞） `m2_cl_*`)和觸發器(用於追蹤Magento1資料庫中的變更) [資料移轉](data.md). 這些委派表和觸發器對於確保您僅移轉自上次移轉資料以來，Magento1中所做的變更至關重要。 這些變更包括：
+* 客戶通過儲存前面添加的資料（已建立訂單、審閱和客戶配置檔案的更改）
 
-* 客戶透過storefront新增的資料（已建立訂單、檢閱，以及客戶設定檔中的變更）
-
-* 在「管理」面板中具有訂單、產品和類別的所有操作
+* 「管理」面板中包含訂單、產品和類別的所有操作
 
 >[!NOTE]
 >
->透過管理員輸入的所有其他新實體或更新實體（例如屬性或CMS頁面）均不包含在增量移轉中，也不會移轉。
+>通過管理員輸入的所有其他新實體或更新的實體（如屬性或CMS頁）均不包括在增量遷移中，也不會遷移。
 
 
-開始之前，請執行下列步驟以準備：
+在開始之前，請執行以下步驟準備：
 
-1. 登錄到應用程式伺服器，作為 [檔案系統所有者](../../../installation/prerequisites/file-system/overview.md).
-1. 變更為 `/bin` 目錄，或確認已將其新增至您的系統 `PATH`.
+1. 以以下方式登錄到應用程式伺服器： [檔案系統所有者](../../../installation/prerequisites/file-system/overview.md)。
+1. 更改為 `/bin` 或確保將其添加到系統 `PATH`。
 
-請參閱 [第一步](overview.md#first-steps) 一節以取得詳細資訊。
+查看 [第一步](overview.md#first-steps) 的子菜單。
 
 ## 運行增量遷移命令
 
@@ -37,25 +37,25 @@ ht-degree: 0%
 bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-其中：
+位置：
 
-* `[-r|--reset]` 是從頭開始移轉的選用引數。 您可以使用此引數來測試移轉。
+* `[-r|--reset]` 是從頭開始遷移的可選參數。 您可以使用此參數來測試遷移。
 
-* `[-a|--auto]` 是可選引數，當遇到完整性檢查錯誤時，該引數會阻止遷移停止。
+* `[-a|--auto]` 是一個可選參數，可防止在遇到完整性檢查錯誤時停止遷移。
 
-* `{<path to config.xml>}` 是的絕對檔案系統路徑 `config.xml`;此引數為必要項目。
+* `{<path to config.xml>}` 是到 `config.xml`;此參數是必需的。
 
 >[!NOTE]
 >
->增量遷移是一個連續的過程；每5秒自動重新啟動一次。 使用CTRL-C中止移轉程式。
+>增量遷移是一個連續的過程；它每5秒自動重啟一次。 使用CTRL-C中止遷移過程。
 
 
-## 移轉由協力廠商擴充功能建立的資料
+## 遷移由第三方擴展建立的資料
 
-在 `Delta` 模式， [!DNL Data Migration Tool] 移轉僅由Magento自己的模組建立的資料，且不負責協力廠商開發人員所製作的程式碼或擴充功能。 如果這些擴展在店面資料庫中建立了資料，並且商家希望在Magento2中包含此資料，即 [!DNL Data Migration Tool] 應據此建立和修改。
+在 `Delta` 的 [!DNL Data Migration Tool] 遷移僅由Magento自己的模組建立的資料，不負責第三方開發人員的代碼或擴展。 如果這些擴展在儲存前資料庫中建立了資料，並且商戶希望將此資料放在Magento2中， [!DNL Data Migration Tool] 應建立並相應修改。
 
-如果擴充功能有其專屬的表格，且您需要追蹤其變更以進行差異移轉，請遵循下列步驟：
+如果擴展有其自己的表，並且您需要跟蹤其更改以進行增量遷移，請執行以下步驟：
 
-1. 將要追蹤的表格新增至 `deltalog.xml` 檔案
-1. 建立其他增量類，以擴展 `Migration\App\Step\AbstractDelta`
-1. 將新建立類的名稱添加到的增量模式部分 `config.xml`
+1. 將要跟蹤的表添加到 `deltalog.xml` 檔案
+1. 建立擴展 `Migration\App\Step\AbstractDelta`
+1. 將新建立的類的名稱添加到的增量模式部分 `config.xml`

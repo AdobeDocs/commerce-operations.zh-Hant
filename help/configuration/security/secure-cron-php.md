@@ -1,13 +1,13 @@
 ---
 title: 安全Cron PHP
 description: 限制哪些人可以在瀏覽器中運行cron.php檔案。
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # 安全Cron PHP
 
@@ -180,7 +180,7 @@ systemctl restart nginx
 
 1. 以Commerce資料庫用戶或以 `root`。
 
-   例如，
+   比如說，
 
    ```bash
    mysql -u magento -p
@@ -192,7 +192,7 @@ systemctl restart nginx
    use <database-name>;
    ```
 
-   例如，
+   比如說，
 
    ```shell
    use magento;
@@ -275,7 +275,7 @@ systemctl restart nginx
      </Files>
    ```
 
-   例如，
+   比如說，
 
    ```conf
    ## Deny access to cron.php
@@ -302,7 +302,7 @@ systemctl restart nginx
 
 - `<group name>` 是任何有效的cron組名（可選）
 
-例如，
+比如說，
 
 ```http
 https://magento.example.com/magento2/pub/cron.php?group=index

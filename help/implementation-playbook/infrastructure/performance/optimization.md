@@ -56,4 +56,4 @@ Adobe Commerce可以通過其功能來擴展您的業務。
 
 對於為規模構建的分層和可快取體系結構，可以使用此圖作為參考。
 
-![示出如何在可快取體系結構中使用Adobe CommerceGraphQL API的圖](../../../assets/playbooks/cacheable-architecture.svg)
+![示出如何在可快取體系結構中使用Adobe CommerceGraphQLAPI的圖](../../../assets/playbooks/cacheable-architecture.svg)

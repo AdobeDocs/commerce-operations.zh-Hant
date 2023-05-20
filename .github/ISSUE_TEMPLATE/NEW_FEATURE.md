@@ -1,7 +1,7 @@
 ---
 name: New website feature
 about: Request new functionality on the Experience League website
-title: 功能要求
+title: 功能請求
 labels: enhancement
 assignees: dshevtsov
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 <!-- (REQUIRED) What is the expected result or behavior of this feature? -->
 
-## 優點
+## 好處
 
 <!-- (REQUIRED) How does this feature improve the docs experience? -->
 

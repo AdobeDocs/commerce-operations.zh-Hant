@@ -1,13 +1,13 @@
 ---
 title: 運行支援實用程式
 description: 使用內置支援實用程式對Commerce項目進行故障排除。
-source-git-commit: 2c12c6ea6e7b6ffeb07bbda17ded34e39de6656a
+exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
 
 ---
-
 
 # 運行支援實用程式
 
@@ -108,7 +108,7 @@ Utility lsof not found
 
 1. 更改到Commerce安裝目錄。
 
-   例如， `cd /var/www/magento2`
+   比如說， `cd /var/www/magento2`
 
    >[!INFO]
    >

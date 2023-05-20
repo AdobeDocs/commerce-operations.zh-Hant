@@ -1,13 +1,13 @@
 ---
 title: 客戶配置路徑參考
 description: 請參閱客戶配置值清單。
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 2%
+source-wordcount: '883'
+ht-degree: 0%
 
 ---
-
 
 # 客戶配置路徑參考
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 | 取消訂閱電子郵件發件人 | `newsletter/subscription/un_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 取消訂閱電子郵件模板 | `newsletter/subscription/un_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 客戶配置路徑
 
@@ -100,7 +100,7 @@ ht-degree: 2%
 | 驗證碼中使用的符號 | `customer/captcha/symbols` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 區分大小寫 | `customer/captcha/case_sensitive` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 希望清單路徑
 
@@ -117,7 +117,7 @@ ht-degree: 2%
 | 電子郵件文本長度限制 | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示願望清單摘要 | `wishlist/wishlist_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 邀請路徑
 
@@ -134,7 +134,7 @@ ht-degree: 2%
 | 客戶邀請電子郵件發件人 | `magento_invitation/email/identity` | ![僅限商業](/help/assets/configuration/cloud-ee.png) |
 | 客戶邀請電子郵件模板 | `magento_invitation/email/template` | ![僅限商業](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 獎勵積分路徑
 
@@ -168,7 +168,7 @@ ht-degree: 2%
 | 獎勵積分到期警告電子郵件 | `magento_reward/notification/expiry_warning_template` | ![僅限商業](/help/assets/configuration/cloud-ee.png) |
 | 過期警告（天）之前 | `magento_reward/notification/expiry_day_before` | ![僅限商業](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 促銷路徑
 
@@ -190,7 +190,7 @@ ht-degree: 2%
 | 代碼尾碼 | `promo/auto_generated_coupon_codes/suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 每X個字元划線 | `promo/auto_generated_coupon_codes/dash` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 禮品註冊路徑
 
@@ -208,7 +208,7 @@ ht-degree: 2%
 | 電子郵件模板 | `magento_giftregistry/update_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 電子郵件發件人 | `magento_giftregistry/update_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 持久購物車路徑
 
@@ -229,4 +229,4 @@ ht-degree: 2%
 | 堅持最近查看的產品 | `persistent/options/recently_viewed` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 保留客戶組成員資格和細分 | `persistent/options/customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}

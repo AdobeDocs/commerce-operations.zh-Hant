@@ -1,7 +1,8 @@
 ---
 title: 如何訪問 [!DNL Site-Wide Analysis Tool]
 description: 瞭解如何訪問 [!DNL Site-Wide Analysis Tool]
-source-git-commit: c7fabdd83e03a288d627b70d48cdf57184d43603
+exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -34,7 +35,7 @@ ht-degree: 0%
    ![站點範圍分析儀表板](../../assets/tools/swat-role-access.png)
    *[!DNL Site-Wide Analysis Tool]為角色選擇的權限*
 
-1. 按一下 **[!UICONTROL Save Role]**.
+1. 按一下 **[!UICONTROL Save Role]**。
 
 1. 通知分配了該角色的所有用戶註銷 [!DNL Admin]，並再次登錄。
 
@@ -64,7 +65,7 @@ ht-degree: 0%
 
 1. 選中每個選項的複選框 **[!UICONTROL Type]** 和 **[!UICONTROL Priority]** 的子菜單。
 
-1. 按一下 **[!UICONTROL Generate Report]**.
+1. 按一下 **[!UICONTROL Generate Report]**。
 
    ![站點範圍分析儀表板](../../assets/tools/swat-report-settings.png)
    *報告設定*

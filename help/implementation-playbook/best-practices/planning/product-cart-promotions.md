@@ -1,50 +1,50 @@
 ---
-title: 設定促銷活動的最佳實務
-description: 了解設定銷售規則和抵用券代碼以最佳化商務商店效能的最佳實務。
+title: 配置促銷的最佳做法
+description: 瞭解配置銷售規則和優惠券代碼以優化Commerce商店效能的最佳做法。
 role: User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+exl-id: 6e177836-b8da-4e55-842c-e12ff54ffaf5
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
+# 配置促銷的最佳做法
 
-# 設定促銷活動的最佳實務
-
-為獲得最佳效能，請遵循以下最佳實務，為購物車中的項目設定銷售和促銷活動：
+為獲得最佳效能，請遵循以下最佳做法為購物車中的物料配置銷售和促銷：
 
 - **銷售規則（購物車價格規則）** — 為所有網站配置不超過1000個購物車價格規則
-   - 管理並移除未使用的規則。
-   - 新增嚴格的規則條件（例如屬性或類別篩選），以獲得最有效的比對。
+   - 管理並刪除未使用的規則。
+   - 添加嚴格的規則條件（如屬性或類別篩選器）以實現最有效的匹配。
 - **優惠券**—
-   - 確認資料庫中的抵用券總數少於250,000。
-   - 移除未使用和過期的抵用券。
-   - 僅產生滿足促銷活動需求所需的抵用券數量。
+   - 驗證資料庫中的優惠券總數是否少於250,000。
+   - 刪除未使用和過期的優惠券。
+   - 僅生成滿足市場活動要求所需的優惠券數量。
 
 ## 受影響的產品和版本
 
 [所有支援的版本](../../../release/versions.md) 共：
 
-- Adobe Commerce雲基礎架構
+- Adobe Commerce在雲基礎架構上
 - Adobe Commerce內部
 
-## 潛在績效影響
+## 潛在的效能影響
 
-超過建議的購物車價格規則或抵用券數量上限，可能會透過下列方式影響網站效能：
+超過建議的購物車價格規則或優惠券的最大數量會影響站點效能，其方式如下：
 
-- 增加產品新增至購物車時的回應時間。
-- 增載入入和轉譯迷你圖的時間。
-- 增加轉譯購物車頁面的時間。
-- 增加演算 **總計** 封鎖。
-- 套用抵用券可能需要超過2秒的時間。
+- 將產品添加到購物車時的響應時間增加。
+- 載入和呈現迷你圖片的時間增加。
+- 顯示購物車頁面的時間增加。
+- 顯示 **合計** 在「簽出」頁面上阻止。
+- 申請優惠券可能需要超過2秒。
 
 ## 其他資訊
 
-- [了解行銷活動和促銷活動](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#campaigns)
+- [瞭解市場營銷活動和促銷](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#campaigns)
 - [購物車價格規則](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html)
-- [教學課程：建立購物車價格規則](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/cart-price-rules.html)
-- [抵用券代碼](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html)
-- [Adobe Commerce雲基礎架構：儲存配置最佳實務](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)
+- [教程：建立購物車價格規則](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/cart-price-rules.html)
+- [優惠券代碼](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html)
+- [Adobe Commerce在雲基礎架構方面：儲存配置的最佳做法](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)

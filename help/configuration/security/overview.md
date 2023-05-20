@@ -1,13 +1,13 @@
 ---
 title: 安全性概述
 description: 閱讀Adobe Commerce和Magento Open Source應用程式的安全設定的簡要概述。
-source-git-commit: 7354065c6ff9166a5b706247bb2bd794ef146d50
+exl-id: e596d03f-8428-4ad7-a563-8b7f371ed5b4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
 
 ---
-
 
 # 安全概述
 

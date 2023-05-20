@@ -1,42 +1,42 @@
 ---
-title: env.php參考
-description: 請參閱env.php檔案的值清單。
-source-git-commit: fe5e16d44213d1864a62230029e9e206eecd1717
+title: env.php引用
+description: 請參見env.php檔案的值清單。
+exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
 
+# env.php引用
 
-# env.php參考
-
-此 `env.php` 檔案包含下列章節：
+的 `env.php` 檔案包含以下部分：
 
 | 名稱 | 說明 |
 |-------------------------------|-----------------------------------------------------------------|
-| `backend` | 管理區域的設定 |
+| `backend` | 管理區的設定 |
 | `cache` | 配置密文頁和預設快取 |
 | `cache_types` | 快取儲存設定 |
-| `consumers_wait_for_messages` | 配置使用者處理來自訊息佇列的訊息的方式 |
-| `cron` | 啟用或停用cron作業 |
+| `consumers_wait_for_messages` | 配置使用者處理來自消息隊列的消息的方式 |
+| `cron` | 啟用或禁用cron作業 |
 | `crypt` | 加密函式的加密密鑰 |
 | `db` | 資料庫連接設定 |
 | `default_connection` | 消息隊列預設連接 |
-| `directories` | 商務目錄映射設定 |
-| `downloadable_domains` | 可下載網域清單 |
+| `directories` | 商業目錄映射設定 |
+| `downloadable_domains` | 可下載域清單 |
 | `install` | 安裝日期 |
 | `lock` | 鎖定提供程式設定 |
-| `MAGE_MODE` | 此 [應用程式模式](../bootstrap/application-modes.md) |
+| `MAGE_MODE` | 的 [應用模式](../bootstrap/application-modes.md) |
 | `queue` | [消息隊列](../queues/manage-message-queues.md) 設定 |
-| `resource` | 將資源名稱映射到連接 |
+| `resource` | 資源名稱到連接的映射 |
 | `session` | 會話儲存資料 |
-| `system` | 停用管理員中的編輯欄位 |
-| `x-frame-options` | 設定 [x-frame-options][x-frame-options] |
+| `system` | 禁用管理員中的編輯欄位 |
+| `x-frame-options` | 設定 [x幀選項][x-frame-options] |
 
 ## 後端
 
-設定 **frontName** (使用 `backend` env.php中的節點。
+配置 **前名** 使用 `backend` env.php中的節點。
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 快取
 
-使用配置密文頁面和預設快取 `cache` 節點 `env.php` 檔案。
+使用 `cache` 中的 `env.php` 的子菜單。
 
 ```conf
 'cache' => [
@@ -72,9 +72,9 @@ ht-degree: 0%
 ]
 ```
 
-深入了解 [Redis配置](../cache/redis-pg-cache.md).
+瞭解詳情 [Redis配置](../cache/redis-pg-cache.md)。
 
-## cache_types
+## 快取類型
 
 所有快取類型配置都可從此節點獲得。
 
@@ -98,11 +98,11 @@ ht-degree: 0%
 ]
 ```
 
-深入了解不同 [快取類型](../cli/manage-cache.md).
+瞭解有關不同的詳細資訊 [快取類型](../cli/manage-cache.md)。
 
-## consumers_wait_for_messages
+## conduser_wait_for_messages
 
-指定如果已處理的訊息數小於 `max_messages` 值。 預設值為 `1`.
+指定如果已處理的消息數小於 `max_messages` 值。 預設值為 `1`。
 
 ```conf
 'queue' => [
@@ -110,19 +110,19 @@ ht-degree: 0%
 ]
 ```
 
-可使用下列選項：
+以下選項可用：
 
-- `1` — 消費者會繼續處理來自訊息佇列的訊息，直到到達 `max_messages` 在中指定的值 `env.php` 檔案，然後關閉TCP連接並終止使用者進程。 如果佇列在到達 `max_messages` 值，則使用者會等待更多訊息送達。
+- `1` — 使用者繼續處理來自消息隊列的消息，直到到達 `max_messages` 值 `env.php` 關閉TCP連接並終止使用者進程之前的檔案。 如果隊列在到達前空 `max_messages` 值，用戶等待更多消息到達。
 
-   我們建議大型商戶使用此設定，因為預期會有持續的訊息流，且處理延遲不會受到歡迎。
+   我們建議對大型商戶進行此設定，因為預期會有恆定的消息流，且處理延遲是不可取的。
 
-- `0` — 消費者處理隊列中的可用消息、關閉TCP連接並終止。 即使已處理的訊息數量小於 `max_messages` 在中指定的值 `env.php` 檔案。 這有助於防止因訊息佇列處理延遲過長而導致cron作業問題。
+- `0` — 使用者處理隊列中的可用消息，關閉TCP連接，然後終止。 即使已處理的消息數小於 `max_messages` 值 `env.php` 的子菜單。 這有助於防止由於消息隊列處理中的長時間延遲而導致的cron作業問題。
 
-   我們建議針對不期望訊息流持續且偏好保留運算資源的較小商戶使用此設定，以換取在數天內無訊息時，處理延遲較小的情況。
+   我們建議將此設定用於較小的商家，這些商家不期望消息流保持恆定，並希望保存計算資源，以換取在數天內沒有消息時出現微小的處理延遲。
 
-## cron
+## 克隆
 
-啟用或停用商務應用程式的cron作業。 預設會啟用cron作業。 若要停用，請新增 `cron` 設定 `env.php` 檔案，並將值設為 `0`.
+啟用或禁用Commerce應用程式的cron作業。 預設情況下，啟用cron作業。 要禁用它們，請添加 `cron` 配置 `env.php` 檔案並將值設定為 `0`。
 
 ```conf
 'cron' => [
@@ -132,13 +132,13 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->禁用cron作業時請小心。 禁用時，將不運行商務應用程式所需的基本進程。
+>禁用cron作業時要小心。 禁用它們後，Commerce應用程式所需的基本進程將不運行。
 
-深入了解 [克龍](../cli/configure-cron-jobs.md).
+瞭解有關 [克龍](../cli/configure-cron-jobs.md)。
 
-## 加密
+## 冷凍
 
-商務使用加密密鑰來保護密碼和其他敏感資料。 此金鑰會在安裝程式期間產生。
+Commerce使用加密密鑰來保護密碼和其他敏感資料。 此密鑰在安裝過程中生成。
 
 ```conf
 'crypt' => [
@@ -146,9 +146,9 @@ ht-degree: 0%
 ]
 ```
 
-深入了解 [加密密鑰](https://docs.magento.com/user-guide/system/encryption-key.html) 在 _商務使用手冊_.
+瞭解有關 [加密密鑰](https://docs.magento.com/user-guide/system/encryption-key.html) 的 _《 Commerce使用手冊》_。
 
-## db
+## 資料庫
 
 此節點中提供所有資料庫配置。
 
@@ -170,9 +170,9 @@ ht-degree: 0%
 ]
 ```
 
-## default_connection
+## 預設連接
 
-定義消息隊列的預設連接。 值可以是 `db`, `amqp`，或自訂佇列系統，例如 `redismq`. 如果您指定 `db`，必須先安裝並配置消息隊列軟體。 否則，訊息將無法正確處理。
+定義消息隊列的預設連接。 值可以是 `db`。 `amqp`，或自定義隊列系統 `redismq`。 如果指定除 `db`，必須先安裝並配置消息隊列軟體。 否則，將無法正確處理消息。
 
 ```conf
 'queue' => [
@@ -180,12 +180,12 @@ ht-degree: 0%
 ]
 ```
 
-若 `queue/default_connection` 在系統中指定 `env.php` 檔案中，此連接用於通過系統的所有消息隊列，除非在中定義了特定連接 `queue_topology.xml`, `queue_publisher.xml` 或 `queue_consumer.xml` 檔案。
-例如，若 `queue/default_connection` is `amqp` in `env.php` 但 `db` 在模組的隊列配置XML檔案中指定連接，該模組將使用MySQL作為消息代理。
+如果 `queue/default_connection` 在系統中指定 `env.php` 檔案，此連接用於通過系統的所有消息隊列，除非在 `queue_topology.xml`。 `queue_publisher.xml` 或 `queue_consumer.xml` 的子菜單。
+例如，如果 `queue/default_connection` 是 `amqp` 在 `env.php` 但 `db` 連接在模組的隊列配置XML檔案中指定，模組將使用MySQL作為消息代理。
 
 ## 目錄
 
-當Web伺服器配置為從 `/pub` 目錄 [改善安全性](../../installation/tutorials/docroot.md).
+當Web伺服器配置為從中為Commerce應用服務時，需要設定的可選目錄映射選項 `/pub` 目錄 [提高安全性](../../installation/tutorials/docroot.md)。
 
 ```conf
 'directories' => [
@@ -193,9 +193,9 @@ ht-degree: 0%
 ]
 ```
 
-## 可下載的網域
+## 可下載域
 
-此節點中可用的可下載網域清單。 可以使用CLI命令添加、刪除或列出其他域。
+此節點中可用的可下載域的清單。 可以使用CLI命令添加、刪除或列出其他域。
 
 ```conf
 'downloadable_domains' => [
@@ -203,11 +203,11 @@ ht-degree: 0%
 ]
 ```
 
-深入了解 [可下載的網域](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
+瞭解有關 [可下載的域](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd)。
 
 ## 安裝
 
-商務應用程式的安裝日期。
+Commerce應用程式的安裝日期。
 
 ```conf
 'install' => [
@@ -217,11 +217,11 @@ ht-degree: 0%
 
 ## 鎖
 
-使用 `lock` 節點。
+使用 `lock` 的下界。
 
-深入了解 [鎖定提供程式配置](../../installation/tutorials/lock-provider.md).
+瞭解有關 [鎖定提供程式配置](../../installation/tutorials/lock-provider.md)。
 
-## MAGE_MODE
+## 影像模式
 
 可以在此節點中配置部署模式。
 
@@ -229,11 +229,11 @@ ht-degree: 0%
 'MAGE_MODE' => 'developer'
 ```
 
-深入了解 [應用程式模式](../cli/set-mode.md).
+瞭解有關 [應用模式](../cli/set-mode.md)。
 
-## 佇列
+## 隊列
 
-此節點中提供消息隊列配置。
+消息隊列配置在此節點中可用。
 
 ```conf
 'queue' => [
@@ -244,11 +244,11 @@ ht-degree: 0%
 ]
 ```
 
-深入了解 [訊息佇列][message-queue].
+瞭解有關 [消息隊列][message-queue]。
 
 ## 資源
 
-此節點中提供資源配置設定。
+資源配置設定在此節點中可用。
 
 ```conf
 'resource' => [
@@ -258,9 +258,9 @@ ht-degree: 0%
 ]
 ```
 
-## 工作階段
+## 會話
 
-工作階段設定會儲存在 `session` 節點。
+會話配置儲存在 `session` 的下界。
 
 ```conf
 'session' => [
@@ -268,21 +268,21 @@ ht-degree: 0%
 ],
 ```
 
-深入了解 [工作階段](../storage/sessions.md).
+瞭解有關 [會話](../storage/sessions.md)。
 
-## x-frame-options
+## x幀選項
 
-可使用此節點配置x-frame-options標頭。
+可使用此節點配置x幀選項頭。
 
 ```conf
 'x-frame-options' => 'SAMEORIGIN'
 ```
 
-深入了解 [x-frame-options](../security/xframe-options.md).
+瞭解有關 [x幀選項](../security/xframe-options.md)。
 
 ## 系統
 
-使用此節點，商務會鎖定 `env.php` 檔案，然後停用「管理員」中的欄位。
+使用此節點，Commerce將鎖定 `env.php` 檔案，然後禁用管理中的欄位。
 
 ```conf
 'system' => [
@@ -295,7 +295,7 @@ ht-degree: 0%
   ]
 ```
 
-深入了解 [env-php-config-set](../cli/set-configuration-values.md).
+瞭解詳情 [env-php-config集](../cli/set-configuration-values.md)。
 
 <!-- Link definitions -->
 

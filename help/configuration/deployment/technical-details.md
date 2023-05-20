@@ -1,13 +1,13 @@
 ---
 title: 技術詳細資訊
 description: 閱讀有關管道部署、配置類型和建議工作流的技術詳細資訊。
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+exl-id: a396d241-f895-4414-92af-3abf3511e62a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
 
 ---
-
 
 # 技術詳細資訊
 

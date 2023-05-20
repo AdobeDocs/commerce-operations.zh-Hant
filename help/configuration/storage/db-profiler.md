@@ -1,22 +1,22 @@
 ---
 title: 配置資料庫探查器
-description: 請參見有關如何配置資料庫探查器輸出的示例。
-badge: label="由Atish Goswami貢獻" type="Informity" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
-source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
+description: 請參見如何配置資料庫探查器的輸出示例。
+badge: label="由Atish Goswami貢獻" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
-
 # 配置資料庫探查器
 
-Commerce資料庫探查器顯示頁面上實現的所有查詢，包括每個查詢的時間以及應用了哪些參數。
+Commerce資料庫探查器顯示在頁面上實現的所有查詢，包括每個查詢的時間和應用了哪些參數。
 
 ## 步驟1:修改部署配置
 
-修改 `<magento_root>/app/etc/env.php` 將以下引用添加到 [資料庫探查器類](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+修改 `<magento_root>/app/etc/env.php` 將以下引用添加到 [資料庫profiler類](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
 
 ```php?start_inline=1
         'profiler' => [
@@ -25,7 +25,7 @@ Commerce資料庫探查器顯示頁面上實現的所有查詢，包括每個查
         ],
 ```
 
-以下範例：
+以下示例：
 
 ```php?start_inline=1
  'db' =>
@@ -52,17 +52,17 @@ Commerce資料庫探查器顯示頁面上實現的所有查詢，包括每個查
   ),
 ```
 
-## 步驟2:設定輸出
+## 步驟2:配置輸出
 
-在您的商務應用程式引導檔案中設定輸出；可能是 `<magento_root>/pub/index.php` 或者，它可以位於web伺服器虛擬主機配置中。
+在Commerce應用程式引導檔案中配置輸出；這可能 `<magento_root>/pub/index.php` 或者它可以位於Web伺服器虛擬主機配置中。
 
-以下範例顯示三欄表格中的結果：
+下面的示例在三清單中顯示結果：
 
-- 總時間（顯示在頁面上執行所有查詢的總時間量）
-- SQL(顯示所有SQL查詢；列標題顯示查詢的計數)
+- 總時間（顯示在頁面上運行所有查詢的總時間）
+- SQL(顯示所有SQL查詢；行標題顯示查詢計數)
 - 查詢參數（顯示每個SQL查詢的參數）
 
-若要設定輸出，請在 `$bootstrap->run($app);` 引導檔案中的行：
+要配置輸出，請在 `$bootstrap->run($app);` 引導檔案中的行：
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -86,8 +86,8 @@ foreach ($profiler->getQueryProfiles() as $query) {
 echo "</table>";
 ```
 
-## 步驟3:查看結果
+## 第3步：查看結果
 
-前往店面或管理員中的任何頁面檢視結果。 範例如下：
+轉到店面或管理員中的任何頁面以查看結果。 示例如下：
 
-![資料庫探查器結果示例](../../assets/configuration/db-profiler-results.png)
+![示例資料庫探查器結果](../../assets/configuration/db-profiler-results.png)

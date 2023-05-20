@@ -1,7 +1,8 @@
 ---
-title: 「 [!UICONTROL Alerts] 頁籤
+title: 的 [!UICONTROL Alerts] 頁籤
 description: 瞭解 [!UICONTROL Alerts] 頁籤 [!DNL Observation for Adobe Commerce]。
-source-git-commit: 2a82a5e232de3efa3adb76aee2334e198b929947
+exl-id: e9305576-6ed2-48f3-baec-36e081b0d04b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
@@ -35,4 +36,3 @@ ht-degree: 0%
 ![基礎架構警報詳細資訊](../../assets/tools/observation-for-adobe-commerce/alerts-tab-4.jpg)
 
 的 **[!UICONTROL Infrastructure Alert Details]** frame顯示選定時間範圍內的應用程式、主機和其他基礎架構事件。
-

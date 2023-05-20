@@ -1,13 +1,13 @@
 ---
 title: 資料庫複製
-description: 請參閱配置資料庫複製的優點。
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+description: 請參見配置資料庫複製的好處。
+exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
-
 
 # 資料庫複製
 
@@ -15,24 +15,24 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-設定資料庫複製可提供下列優點：
+設定資料庫複製具有以下優點：
 
 - 提供資料備份
-- 啟用資料分析，而不影響主資料庫
+- 啟用資料分析而不影響主資料庫
 - 可擴充性
 
-MySQL資料庫非同步複製，這意味著從伺服器不需要永久連接以接收主伺服器的更新。
+MySQL資料庫非同步複製，這意味著從屬資料庫不需要永久連接來從主資料庫接收更新。
 
 ## 配置資料庫複製
 
-有關資料庫複製的深入討論不在本指南的討論範圍內。 若要設定，您可以查詢資源，例如：
+對資料庫複製的深入討論超出本指南的範圍。 要設定它，您可以咨詢資源，如：
 
 - [MySQL文檔](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [如何在MySQL(digitalocean)中設定主從複製](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [如何在MySQL中設定主從複製(digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-商務提供從資料庫的MySQL配置示例。 提供簡單的設定， `ResourceConnections` 類 `README.md`.
+Commerce為從資料庫提供MySQL配置示例。 提供一種簡單的配置 `ResourceConnections` 類 `README.md`。
 
-下列項目更進階，僅供您參考：
+以下更高級，僅供您參考：
 
 ```php
    return array (
@@ -119,11 +119,11 @@ MySQL資料庫非同步複製，這意味著從伺服器不需要永久連接以
    //.......
 ```
 
-## 效能改善
+## 效能改進
 
-要提高主從複製的效能，可以篩選從實例上的一些表。 建議篩選所有具有名稱模式的臨時表 `search\_tmp\_%` 用於目錄搜尋。
+為了提高主從複製的效能，可以過濾從實例上的某些表。 我們建議過濾所有具有名稱模式的臨時表 `search\_tmp\_%` 用於目錄搜索。
 
-若要這麼做，請將下列行新增至 `my.cnf` 檔案：
+為此，請將以下行添加到 `my.cnf` 從實例上的檔案：
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

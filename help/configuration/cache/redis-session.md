@@ -1,13 +1,13 @@
 ---
 title: 將Redis用於會話儲存
 description: 瞭解如何為會話儲存配置Redis。
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
 
 ---
-
 
 # 將Redis用於會話儲存
 
@@ -133,4 +133,3 @@ redis-cli ping
 ### 檢查壓縮資料
 
 要檢查壓縮的會話資料和頁快取， [RESP應用](https://flathub.org/apps/details/app.resp.RESP) 支援Commerce 2會話和頁面快取的自動解壓縮，並以人可讀的形式顯示PHP會話資料。
-

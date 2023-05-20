@@ -1,39 +1,39 @@
 ---
 title: 軟體生命週期策略
-description: 了解Adobe Commerce版本軟體支援終止的主要日期。
+description: 瞭解Adobe Commerce版軟體支援結束的關鍵日期。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '315'
+ht-degree: 10%
 
 ---
 
 # Adobe Commerce生命週期政策
 
-若為Adobe Commerce 2.4.4及後續版本：
+對於Adobe Commerce2.4.4和後續版本：
 
-- 為了更好地簡化我們的生命週期政策，並支援Adobe Commerce客戶的關鍵任務需求，我們將支援期限從Adobe Commerce 2.4.4及更新版本的正式發行(GA)之日起延長到三年。 Adobe針對2.4.4和更新版本提供三年支援期間的品質修正。 客戶可以聯絡 [Adobe Commerce支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 或通過自助服務 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 如果其版本仍符合品質支援的資格。 請參閱下表，了解Adobe Commerce發行版本的軟體支援日期結束。
+- 為了更好地優化我們的生命週期策略並支援Adobe Commerce客戶的關鍵任務需求，我們將支援窗口從Adobe Commerce2.4.4及以後的正式上市(GA)日期延長到三年。 Adobe為2.4.4和更高版本提供三年支援期的質量修復。 客戶可以通過聯繫 [Adobe Commerce支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 或者通過自利 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) 是否仍有資格獲得質量支援。 請參閱下表，瞭解Adobe Commerce版本的軟體支援日期結束。
 
-- Adobe透過三年支援期的安全性修補版本提供安全性修正。
+- Adobe通過三年支援期的安全修補程式版本提供安全修復。
 
-- 針對重大安全問題（例如零天漏洞）,Adobe提供 [hotfix](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) 對於支援版本的所有客戶，即使他們未使用最新補丁程式或安全補丁程式版本。 請務必注意，Hotfix並非全包，並未解決透過升級至最新版本而可修正的所有安全性問題。
+- 對於關鍵安全問題，如零日漏洞，Adobe提供 [修補程式](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) 支援版本上的所有客戶，即使他們不是最新的修補程式或安全修補程式版本。 請注意，熱修復程式不是全能的，它不能解決升級到最新版本後將解決的所有安全問題。
 
-## 軟體支援終止
+## 軟體支援結束
 
-| 發行 | 正式發行 | 軟體支援終止<sup>1</sup> | 相依PHP版本 |
+| 發佈 | 一般可用性 | 軟體支援結束<sup>1</sup> | 相關PHP版本 |
 |----------------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.4 | 2022年4月12日 | 2025年4月24日 | PHP 8.1 |
-| Adobe Commerce 2.4.5 | 2022年8月9日 | 2025年8月9日 | PHP 8.1 |
-| Adobe Commerce 2.4.6 | 2023年3月14日 | 2026年3月14日 | 8.1菲律賓比索和8.2菲律賓比索 |
+| Adobe Commerce2.4.4 | 2022年4月12日 | 2025年4月24日 | 八點一菲律賓比索 |
+| Adobe Commerce2.4.5 | 2022年8月9日 | 2025年8月9日 | 八點一菲律賓比索 |
+| Adobe Commerce2.4.6 | 2023年3月14日 | 2026年3月14日 | 八點一菲律賓比索和八點二菲律賓比索 |
 
 {style="table-layout:auto"}
 
-<sup>1軟體支援終止包括質量修正終止和安全性修復終止。</sup><br>
+<sup>1軟體支援的結束包括質量修復的結束和安全修復的結束。</sup><br>
 
 >[!NOTE]
 >
->請參閱 [軟體生命週期策略](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>請參閱 [軟體生命週期策略](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)。
 
 <table style="table-layout:auto">
 <thead>
@@ -48,8 +48,8 @@ ht-degree: 0%
 </thead>
 <tbody>
   <tr>
-    <td>商務</td>
-    <td>PHP</td>
+    <td>商業</td>
+    <td>菲律賓比索</td>
     <td>Q1</td>
     <td>Q2</td>
     <td>Q3</td>
@@ -101,7 +101,7 @@ ht-degree: 0%
 </tbody>
 </table>
 
-**金鑰**
+**鍵**
 
 <table style="table-layout:auto">
  <tbody>

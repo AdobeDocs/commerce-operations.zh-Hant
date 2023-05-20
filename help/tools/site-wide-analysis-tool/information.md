@@ -1,7 +1,8 @@
 ---
-title: '"[!DNL Information]"'
+title: '[!DNL Information]'
 description: 瞭解 [!UICONTROL Information] 的 [!DNL Site-Wide Analysis Tool]、何時使用、其好處和最佳實踐。
-source-git-commit: 6cbb4b4fef5e1ccc06803b5a3af5dd9f4d0e7df8
+exl-id: 5f18b4c1-1812-4e9d-8b81-88cf6b9af860
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%

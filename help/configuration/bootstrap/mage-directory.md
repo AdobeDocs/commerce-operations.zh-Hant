@@ -1,13 +1,13 @@
 ---
 title: 自定義基目錄路徑
 description: 使用MAGE_DIRS變數設定絕對路徑陣列。
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
 
 ---
-
 
 # 基本目錄路徑
 

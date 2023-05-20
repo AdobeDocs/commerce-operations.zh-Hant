@@ -1,13 +1,13 @@
 ---
 title: 付款配置路徑引用
 description: 請參閱可配置付款方法值清單。
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '4133'
+source-wordcount: '4100'
 ht-degree: 0%
 
 ---
-
 
 # 付款配置路徑引用
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 | 計畫提取 | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal商家頁面樣式 | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## PayPal支付專業
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 | 計畫提取 | `payment_all_paypal/payments_pro_hosted_solution/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 計畫提取 | `payment_all_paypal/payments_pro_hosted_solution_without_bml/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## Payments Pro托管解決方案（英國）
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 | 適用於的國家/地區付款 | `payment/hosted_pro/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 啟用SSL驗證 | `payment/hosted_pro/verify_peer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## PayPal Payflow Pro
 
@@ -154,7 +154,7 @@ ht-degree: 0%
 | 需要CVV條目 | `payment/payflow_advanced/csc_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 發送電子郵件確認 | `payment/payflow_advanced/email_confirmation` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## PayPal付款流連結
 
@@ -176,7 +176,7 @@ ht-degree: 0%
 | 排序順序 | `payment/payflow_link/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 付款活動 | `payment/payflow_link/payment_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 零小計簽出路徑
 
@@ -190,7 +190,7 @@ ht-degree: 0%
 | 特定國家/地區的付款 | `payment/free/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment/free/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 交貨收現付款路徑
 
@@ -206,7 +206,7 @@ ht-degree: 0%
 | 最大訂單總數 | `payment/cashondelivery/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment/cashondelivery/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 銀行轉帳付款路徑
 
@@ -222,7 +222,7 @@ ht-degree: 0%
 | 最大訂單總數 | `payment/banktransfer/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment/banktransfer/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 支票或貨幣訂單路徑
 
@@ -238,7 +238,7 @@ ht-degree: 0%
 | 最大訂單總數 | `payment/checkmo/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment/checkmo/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 採購訂單路徑
 
@@ -253,7 +253,7 @@ ht-degree: 0%
 | 最大訂單總數 | `payment/purchaseorder/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment/purchaseorder/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 國際路徑
 
@@ -1401,4 +1401,4 @@ ht-degree: 0%
 | 特定國家/地區的付款 | `payment_us/eway/specificcountry` | ![僅限商業](/help/assets/configuration/cloud-ee.png) |
 | 排序順序 | `payment_us/eway/sort_order` |  |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}

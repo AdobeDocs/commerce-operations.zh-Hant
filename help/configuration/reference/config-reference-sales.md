@@ -1,13 +1,13 @@
 ---
 title: 銷售配置路徑參考
 description: 請參閱銷售配置值清單。
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 1%
+source-wordcount: '1473'
+ht-degree: 0%
 
 ---
-
 
 # 銷售配置路徑參考
 
@@ -66,7 +66,7 @@ ht-degree: 1%
 | 在產品層啟用RMA | `sales/magento_rma/enabled_on_product` | ![僅限商業](/help/assets/configuration/cloud-ee.png) |
 | 使用儲存地址 | `sales/magento_rma/use_store_address` | ![僅限商業](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 銷售電子郵件路徑
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 | 在標題中顯示訂單ID | `sales_pdf/shipment/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 在標題中顯示訂單ID | `sales_pdf/creditmemo/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 稅道
 
@@ -188,7 +188,7 @@ ht-degree: 1%
 | 對FPT應用稅 | `tax/weee/apply_vat` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 在小計中包括FPT | `tax/weee/include_in_subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 簽出路徑
 
@@ -213,7 +213,7 @@ ht-degree: 1%
 | 付款失敗模板 | `checkout/payment_failed/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 發送付款失敗的電子郵件複製方法 | `checkout/payment_failed/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 裝運設定路徑
 
@@ -224,7 +224,7 @@ ht-degree: 1%
 | 應用自定義發運策略 | `shipping/shipping_policy/enable_shipping_policy` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 裝運策略 | `shipping/shipping_policy/shipping_policy_content` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 多裝運設定路徑
 
@@ -235,7 +235,7 @@ ht-degree: 1%
 | 允許發運至多個地址 | `multishipping/options/checkout_multiple` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 允許發運至多個地址的最大數量 | `multishipping/options/checkout_multiple_maximum_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 傳遞方法路徑
 
@@ -381,7 +381,7 @@ ht-degree: 1%
 | 如果不適用，則顯示方法 | `carriers/dhl/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `carriers/dhl/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## GoogleAPI路徑
 
@@ -407,7 +407,7 @@ ht-degree: 1%
 | 轉換值類型 | `google/adwords/conversion_value_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 轉換值 | `google/adwords/conversion_value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}
 
 ## 禮品卡路徑
 
@@ -432,4 +432,4 @@ ht-degree: 1%
 | 新建池大小 | `giftcard/giftcardaccount_general/pool_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 低代碼池閾值 | `giftcard/giftcardaccount_general/pool_threshold` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;&quot;
+{style="table-layout:auto"}

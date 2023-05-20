@@ -5,7 +5,7 @@ exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
 source-git-commit: 219cbe839e40afa19b3754a9d5929074ed238920
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Commerce讓商家有能力創造獨特而迷人的購物體驗。 該平�
 - B2B電子商務
 - PWA Studio
 - 全球擴張
-- Amazon Sales Channel
+- Amazon銷售渠道
 - ERP整合
 - 無頭商務架構
 

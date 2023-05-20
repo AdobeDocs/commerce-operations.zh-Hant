@@ -1,5 +1,5 @@
 ---
-title: 營運行動手冊
+title: 操作手冊
 description: 商務業務手冊的目標
 exl-id: f072f6ca-3654-4bd2-a32e-000358bb67b3
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776

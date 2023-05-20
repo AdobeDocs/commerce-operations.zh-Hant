@@ -1,13 +1,13 @@
 ---
 title: 資料遷移最佳做法
 description: 遵循這些資料遷移最佳實踐，確保成功從Magento1升級到Magento2。
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+exl-id: 0cd51987-a514-434d-b21e-2739ada2ce85
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
-
 
 # 資料遷移最佳做法
 

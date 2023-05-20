@@ -1,9 +1,10 @@
 ---
-title: '"[!DNL Extensions]"'
+title: '[!DNL Extensions]'
 description: 瞭解 [!DNL Extensions] 的 [!DNL Site-Wide Analysis Tool]、何時使用、其好處和最佳實踐。
-source-git-commit: 8b14dc7e30f4dd487fdb37bb9984346021fcba14
+exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -31,4 +32,3 @@ ht-degree: 0%
 * 如果您不能保留第三方 [!DNL extensions] 最新版本，請考慮使用不同 [!DNL extensions]。
 
 * 為避免潛在問題，請下載/購買第三方 [!DNL extensions] 來自可信來源，比如 [Commerce Marketplace](https://marketplace.magento.com/extensions.html)。
-

@@ -1,13 +1,13 @@
 ---
-title: 「整合 [!DNL Site-Wide Analysis Tool]"
+title: 整合 [!DNL Site-Wide Analysis Tool]
 description: 按照以下步驟檢索 [!DNL Upgrade Compatibility Tool] 報告 [!DNL Site-Wide Analysis Tool] 你的Adobe Commerce項目的儀表板。
-source-git-commit: 1fc12289125a5954243e177a0c21505234eb2e81
+exl-id: 1ef37294-a837-47a4-841c-4027087acf12
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
-
 
 # 整合 [!DNL Site-Wide Analysis Tool]
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ![UCT SWAT小部件 — 初始](../../assets/upgrade-guide/uct-swat-initial.png)
 
-按一下 **[!UICONTROL Run Upgrade Scan]**. 根據項目大小，掃描可能需要一些時間。 掃描器指示掃描正在進行。
+按一下 **[!UICONTROL Run Upgrade Scan]**。 根據項目大小，掃描可能需要一些時間。 掃描器指示掃描正在進行。
 
 ![UCT SWAT小部件 — 正在進行](../../assets/upgrade-guide/uct-swat-progress.png)
 
