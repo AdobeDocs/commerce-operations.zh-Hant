@@ -292,7 +292,7 @@ magento/product-enterprise-edition: >=2.4.6 <2.4.7
       <a href="https://github.com/laminas/laminas-i18n.git">層粘膠/層粘膠 — i18n</a>
     </td>
     <td>庫</td>
-    <td>為應用程式提供翻譯，並篩選和驗證國際化值</td>
+    <td>為應用程式提供翻譯，並過濾和驗證國際化值</td>
   </tr>
   <tr>
     <td>

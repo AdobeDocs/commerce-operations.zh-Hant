@@ -44,5 +44,5 @@ ht-degree: 0%
 * 檢查 **[!UICONTROL Database mysql-slow.log]** 框架，用於標識正在發生的SQL陳述式。 `INSERT`。 `UPDATE`, `DELETE` 如果查詢未優化，則命令可能需要一段時間。 甚至 `SELECT` 如果對大型表執行此操作，語句會非常低效。
 * **[!UICONTROL PHP States]** 和 **[!UICONTROL PHP Errors]** 幀將顯示PHP的潛在問題。 的 **[!UICONTROL PHP States]** 幀將按節點顯示PHP進程終止、啟動以及服務達到就緒狀態。 的 **[!UICONTROL PHP Errors]** 框架有助於確定PHP的問題所在，如記憶體大小、工作程式或伺服器數量。
 * 要查看事務處理中的延遲，可以按列對事務處理 — 平均、最大、最小表進行排序，以顯示最長運行的事務持續時間。 重載的群集在事務中具有潛在的持續時間，但它也會顯示異常，這些異常可能會找出某個方法或 [!DNL cron]。
-* 的 **[!UICONTROL Cron error]** 幀將顯示 [!DNL cron] 鎖，可能與關聯的SQL錯誤 [!DNL cron] 日誌和共用暫存 [!DNL crons] 當存在專用的轉儲環境時，可能在生產環境中運行。
+* 的 **[!UICONTROL Cron error]** 幀將顯示 [!DNL cron] 鎖，可能與關聯的SQL錯誤 [!DNL cron] 日誌和共用暫存 [!DNL crons] 當存在專用的轉儲環境時，可能正在生產環境中運行。
 * 的 [!UICONTROL ElasticSearch Errors] 幀顯示可能表示與 [!DNL Elasticsearch] 查詢、資料或索引。

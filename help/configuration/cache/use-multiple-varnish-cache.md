@@ -31,6 +31,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 
 然後，在刷新Commerce快取(也稱為 _清洗_ 快取)或使用命令行。
 
-要使用Admin刷新快取，請按一下 **系統** >工具> **快取管理**，然後按一下 **刷新Magento快取** 頁面頂部。 （也可以刷新單個快取類型。）
+要使用Admin刷新快取，請按一下 **系統** >工具> **快取管理**，然後按一下 **刷新Magento快取** 頁面頂部。 （您還可以刷新單個快取類型。）
 
 要從cli刷新多個清漆實例的快取，請使用 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) 命令 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md)。

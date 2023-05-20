@@ -65,7 +65,7 @@ module uninstall命令執行以下任務：
 1. 如果 `--clear-static-content` 指定，清除 [生成的靜態視圖檔案](../../configuration/cli/static-view-file-deployment.md)。
 1. 使儲存退出維護模式。
 
-例如，如果嘗試卸載另一個模組所依賴的模組，則會顯示以下消息：
+例如，如果嘗試卸載另一個模組所依賴的模組，將顯示以下消息：
 
 ```terminal
 magento module:uninstall Magento_SampleMinimal
