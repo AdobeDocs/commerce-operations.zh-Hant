@@ -1,9 +1,10 @@
 ---
 title: system.xml引用
 description: 瞭解系統XML檔案如何管理Commerce應用程式配置。
+feature: Configuration, System
 badge: label="由David Lambauer提供" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 0%
@@ -95,7 +96,7 @@ A `<section>`-Tag可以具有以下屬性：
 | `translate` | 定義應可翻譯的欄位。 提供 `label` 使標籤可翻譯。 | `string` | 可選 |
 | `type` | 定義呈現的HTML元素的輸入類型。 預設為 `text`。 | `string` | 可選 |
 | `sortOrder` | 定義節的排序順序。 高數字會將部分推到頁面底部；低數字會把這個部分推到頂端。 | `float` | 可選 |
-| `showInDefault` | 定義節是否顯示在預設配置作用域中。 指定 `1` 顯示節和 `0` 隱藏分區。 | `int` | 可選 |
+| `showInDefault` | 定義節是否在預設配置範圍中顯示。 指定 `1` 顯示節和 `0` 隱藏分區。 | `int` | 可選 |
 | `showInStore` | 定義節是否在儲存級別上顯示。 指定 `1` 顯示節和 `0` 隱藏分區。 | `int` | 可選 |
 | `showInWebsite` | 定義節是否在網站級別上顯示。 指定 `1` 顯示節和 `0` 隱藏分區。 | `int` | 可選 |
 | `canRestore` | 定義是否可將節還原為預設值。 | `int` | 可選 |

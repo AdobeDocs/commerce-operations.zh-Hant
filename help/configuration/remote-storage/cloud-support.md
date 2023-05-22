@@ -1,8 +1,9 @@
 ---
 title: 雲基礎架構上的Commerce遠程儲存
 description: 請參閱有關如何在雲基礎架構上為Adobe Commerce設定遠程儲存的指導。
+feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%

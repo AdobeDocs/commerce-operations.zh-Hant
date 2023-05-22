@@ -1,8 +1,9 @@
 ---
 title: 配置Web伺服器
 description: 瞭解如何將Web伺服器配置為使用清漆。
+feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%

@@ -1,8 +1,9 @@
 ---
 title: 拆分資料庫效能解決方案
 description: 閱讀有關Adobe Commerce和Magento Open Source的拆分資料庫解決方案。
+recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 0%

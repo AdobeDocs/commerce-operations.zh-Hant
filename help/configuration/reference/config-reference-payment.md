@@ -1,8 +1,9 @@
 ---
 title: 付款配置路徑引用
 description: 請參閱可配置付款方法值清單。
+feature: Configuration, Payments
 exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '4100'
 ht-degree: 0%

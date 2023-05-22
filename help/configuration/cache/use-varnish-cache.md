@@ -1,8 +1,9 @@
 ---
 title: 使用清漆清除快取
 description: 瞭解快取清除如何與清漆配合使用，以及如何將其用作Adobe Commerce應用程式的Web快取加速器。
+feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -55,6 +56,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 
 然後，在刷新Commerce快取時可清除清漆主機(也稱為 *清洗* 快取)或使用命令行。
 
-要使用Admin刷新快取，請按一下 **[!UICONTROL SYSTEM]** >工具> **快取管理**，然後按一下 **刷新Magento快取** 頁面頂部。 （也可以刷新單個快取類型。）
+要使用Admin刷新快取，請按一下 **[!UICONTROL SYSTEM]** >工具> **快取管理**，然後按一下 **刷新Magento快取** 頁面頂部。 （您還可以刷新單個快取類型。）
 
 要使用命令行刷新快取，通常使用 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) 命令 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md)。

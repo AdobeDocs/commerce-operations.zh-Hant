@@ -1,8 +1,9 @@
 ---
 title: 驗證剝離資料庫
 description: 瞭解如何驗證Commerce剝離資料庫配置是否正常工作。
+recommendations: noCatalog
 exl-id: 36295240-6521-4f3e-9ea3-f35b73de672d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%

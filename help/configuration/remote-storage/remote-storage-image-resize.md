@@ -1,8 +1,9 @@
 ---
 title: 為遠程儲存配置影像大小調整
 description: 通過配置伺服器端影像大小來優化磁碟資源。
+feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%

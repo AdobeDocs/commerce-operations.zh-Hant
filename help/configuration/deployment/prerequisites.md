@@ -1,8 +1,9 @@
 ---
 title: 部署的先決條件
 description: 請參閱將Commerce部署到開發、構建或生產系統的先決條件清單。
+feature: Configuration, Deploy
 exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%

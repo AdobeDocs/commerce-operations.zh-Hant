@@ -1,8 +1,9 @@
 ---
 title: 使用多個清漆實例進行快取清除
 description: 瞭解快取清除如何與多個清漆實例一起使用。
+feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -31,6 +32,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 
 然後，在刷新Commerce快取(也稱為 _清洗_ 快取)或使用命令行。
 
-要使用Admin刷新快取，請按一下 **系統** >工具> **快取管理**，然後按一下 **刷新Magento快取** 頁面頂部。 （您還可以刷新單個快取類型。）
+要使用Admin刷新快取，請按一下 **系統** >工具> **快取管理**，然後按一下 **刷新Magento快取** 頁面頂部。 （也可以刷新單個快取類型。）
 
 要從cli刷新多個清漆實例的快取，請使用 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) 命令 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md)。

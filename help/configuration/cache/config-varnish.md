@@ -1,8 +1,9 @@
 ---
 title: 配置和使用清漆
 description: 瞭解清漆如何儲存檔案並改進HTTP通信。
+feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
