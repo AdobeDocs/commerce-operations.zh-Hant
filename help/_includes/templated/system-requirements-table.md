@@ -1,11 +1,19 @@
 ---
-source-git-commit: 20ebf9dc6c7a1aac1d183ed31b1a80a674d633f1
+source-git-commit: 45b3f12d3ea333624a0a8a872b1eb412a98fda6d
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 70%
+source-wordcount: '289'
+ht-degree: 66%
 
 ---
 # 系統需求
+
+>[!IMPORTANT]
+>
+>雲端基礎結構上Adobe Commerce的服務版本和相容性支援取決於雲端基礎結構上部署的版本，有時與Adobe Commerce內部部署支援的版本不同。 另請參閱 [支援的軟體與服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 在 _雲端指南_. 例如，內部部署2.4.4支援Elasticsearch7.17，但雲端基礎結構支援Open Search 1.2。
+
+>[!NOTE]
+>
+><sup>*</sup>Adobe Commerce 2.4.5及舊版僅支援MySQL 8.0.28及舊版。
 
 <table style="table-layout:auto">
   <thead>
@@ -797,11 +805,3 @@ ht-degree: 70%
     </tr>
   </tbody>
 </table>
-
->[!IMPORTANT]
->
->雲端基礎結構上Adobe Commerce的服務版本和相容性支援取決於雲端基礎結構上部署的版本，有時與Adobe Commerce內部部署支援的版本不同。 另請參閱 [支援的軟體與服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 在 _雲端指南_.
-
->[!NOTE]
->
-><sup>*</sup>Adobe Commerce 2.4.5及舊版僅支援MySQL 8.0.28及舊版。
