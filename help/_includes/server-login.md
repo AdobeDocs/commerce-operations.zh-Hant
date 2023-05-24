@@ -5,11 +5,11 @@ source-wordcount: '24'
 ht-degree: 0%
 
 ---
-# 伺服器登錄
+# 伺服器登入
 
-1. 登錄到伺服器。
-1. 切換到 [檔案系統所有者](../installation/prerequisites/file-system/overview.md)。
-1. 更改為克隆應用程式的目錄。 比如說，
+1. 登入您的伺服器。
+1. 切換至 [檔案系統擁有者](../installation/prerequisites/file-system/overview.md).
+1. 切換到複製應用程式的目錄。 例如，
 
    ```bash
    cd /var/www/magento2

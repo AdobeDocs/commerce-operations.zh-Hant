@@ -1,6 +1,6 @@
 ---
 title: Managed Services
-description: 查看Adobe托管服務、客戶和雲服務提供商在雲基礎架構實施方面為您的Adobe Commerce承擔的責任。
+description: 檢閱Adobe Managed Services、客戶和雲端服務供應商在雲端基礎結構實作方面對您Adobe Commerce的責任。
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
 source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
@@ -9,60 +9,60 @@ ht-degree: 0%
 
 ---
 
-# 托管服務
+# Managed Services
 
-Adobe Commerce雲基礎架構托管服務預設是安全的。
+根據預設，雲端基礎結構託管服務上的Adobe Commerce是安全的。
 
-![顯示Adobe Commerce托管服務的圖表](../../../assets/playbooks/managed-services.svg)
+![顯示Adobe Commerce managed services的圖表](../../../assets/playbooks/managed-services.svg)
 
-## 分擔責任
+## 共擔責任
 
-Adobe Commerce·普羅的計畫依賴於共同責任的安全模式。 在這種模式中，各方對維護系統安全負有不同的責任。 此方法允許靈活使用同類最佳的雲技術。
+Adobe Commerce Pro計畫採用共擔責任安全模式。 在此模式中，不同的各方在維護系統安全性方面有不同的責任。 此方法可讓您靈活運用同類最佳的雲端技術。
 
-![顯示Adobe Commerce共同責任模型的圖表](../../../assets/playbooks/shared-responsibility.svg)
+![顯示Adobe Commerce共用職責模型的圖表](../../../assets/playbooks/shared-responsibility.svg)
 
-### Adobe托管服務責任
+### Adobe Managed Services責任
 
-Adobe Managed Services負責Adobe CommercePro雲環境、核心Adobe CommercePro應用程式碼和內部商務系統的安全性和可用性。 這包括但不限於：
+Adobe Managed Services負責Adobe Commerce Pro雲端環境、核心Adobe Commerce Pro應用程式程式碼和內部商務系統的安全性與可用性。 這包含但不限於：
 
-- 伺服器級修補
-- 運行必要的服務以提供Adobe Commerce專業計畫
-- 漏洞測試
-- 安全事件記錄和監視
+- 伺服器層級修補
+- 營運必要的服務，以提供Adobe Commerce Pro計畫
+- 弱點測試
+- 安全性事件記錄與監控
 - 事件管理
-- 業務監測
-- 24/7支援
-- 確保客戶基礎架構按照SLA可用
+- 營運監控
+- 全天候支援
+- 確保客戶基礎架構可根據SLA提供
 
-Adobe Managed Services還負責管理伺服器防火牆配置(iptables)和外圍防火牆配置（安全組）。 Adobe還可以定期向核心應用程式發佈安全更新。 應用這些修補程式是客戶的責任。 這些領域都包括在雲基礎架構系統上的Adobe CommercePCI認證。
+Adobe Managed Services也負責管理伺服器防火牆設定(iptables)和周邊防火牆設定（安全性群組）。 Adobe也會定期發佈核心應用程式的安全性更新。 客戶有責任套用這些修補程式。 這些領域都包含在雲端基礎結構系統上的Adobe Commerce的PCI認證中。
 
-### AWS職責
+### AWS責任
 
-Adobe Managed Services將Amazon Web Services(AWS)用於雲伺服器基礎架構。 AWS負責網路安全，包括通過防火牆系統和入侵檢測系統(IDS)進行路由、交換和外圍網路安全。 AWS負責為管理Adobe Commerce雲環境的資料中心提供物理安全保護，並負責環境安全，以確保適當的電源、冷卻和機制控制到位。
+Adobe Managed Services使用Amazon Web Services (AWS)建立雲端伺服器基礎結構。 AWS負責網路的安全性，包括路由、交換及透過防火牆系統和入侵偵測系統(IDS)的周邊網路安全性。 AWS負責管理Adobe Commerce雲端環境的資料中心的實體安全性，以及環境安全性，以確保擁有適當的電源、冷卻和機制控制。
 
-Adobe Commerce專業計畫使用：
+Adobe Commerce Pro計畫使用：
 
-- Amazon彈性計算雲(EC2)
-- Amazon簡單儲存服務(S3)
-- Amazon彈性塊儲存(EBS)
-- Amazon虛擬專用雲(VPC)
+- Amazon彈性運算雲端(EC2)
+- Amazon Simple Storage Service (S3)
+- Amazon彈性區塊存放區(EBS)
+- Amazon Virtual Private Cloud (VPC)
 - Amazon彈性負載平衡器(ELB)
-- Amazon雲跟蹤服務。
+- Amazon Cloud Trail服務。
 
-Amazon擁有廣泛的合規性計畫，其中包括PCI DSS、SOC 2和ISO 27001認證。
+Amazon擁有廣泛的法規遵循計畫，其中包括PCI DSS、SOC 2和ISO 27001認證。
 
 ### 解決方案合作夥伴/客戶責任
 
-客戶主要負責在Adobe Commerce專業計畫雲環境中運行的Adobe Commerce應用程式的定製實施的安全性。 這包括：
+客戶主要負責在Adobe Commerce Pro計畫雲端環境中執行Adobe Commerce應用程式的自訂實作安全性。 其中包括：
 
-- 確保應用程式和安全監控活動的安全配置和編碼，包括滲透測試和定期漏洞掃描。
+- 確保應用程式的安全設定和編碼，以及安全監控活動，包括滲透測試和定期的弱點掃描。
 
-- 系統中使用的任何自定義、擴展、其他應用程式或整合的安全性。
+- 其系統中使用的任何自訂、擴充功能、其他應用程式或整合的安全性。
 
-- 用戶的安全性以及對其配置和應用程式的訪問權限。
+- 其使用者的安全性以及對其設定和應用程式的存取權授予。
 
-- 客戶控制到其非生產環境的所有代碼部署。 此控制項還負責將應用程式安全修補程式應用到核心Adobe Commerce應用程式、擴展或任何自定義代碼。
+- 客戶可控制所有程式碼部署至其非生產環境。 此控制項也有責任將應用程式安全性修補程式套用至核心Adobe Commerce應用程式、擴充功能或任何自訂程式碼。
 
-- 客戶應執行其定制應用程式的滲透test。 這些責任可由客戶、實施合作夥伴或Adobe Commerce專業服務提供的技術資源來解決。
+- 客戶應對其自訂應用程式執行滲透測試。 這些責任可由客戶、實作合作夥伴或Adobe Commerce專業服務的技術資源來履行。
 
-- 客戶負責其定制應用程式和自己流程的PCI要求。 客戶的PCI合規性建立在AWS和Adobe Commerce的PCI認證之上，以最大限度地減少必須審查的領域。
+- 客戶需自行負責自訂應用程式和流程的PCI需求。 客戶的PCI法規遵循以AWS和Adobe Commerce的PCI認證為基礎，以儘量減少必須檢視的領域。

@@ -1,6 +1,6 @@
 ---
-title: 應用程式初始化和引導
-description: 閱讀有關Commerce應用程式的初始化和引導邏輯的資訊。
+title: 應用程式初始化和啟動程式
+description: 閱讀Commerce應用程式的初始化和啟動程式邏輯。
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
@@ -10,37 +10,37 @@ ht-degree: 0%
 
 ---
 
-# 初始化和引導概覽
+# 初始化和啟動程式概述
 
-要運行Commerce應用程式，請在 [pub/index.php][index]:
+若要執行Commerce應用程式，下列動作會實作於 [pub/index.php][index]：
 
-- 包括 [app/bootstrap.php][bootinitial]執行基本的初始化常式，如錯誤處理、初始化自動載入程式、設定分析選項和設定預設時區。
-- 建立實例 [\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->
-- 建立Commerce應用程式實例： [\Magento\Framework\AppInterface][app-face]
-- 運行商業
+- 包含 [app/bootstrap.php][bootinitial]，會執行必要的初始化常式，例如錯誤處理、初始化自動載入器、設定設定檔選項，以及設定預設時區。
+- 建立例項 [\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->
+- 建立Commerce應用程式例項： [\Magento\Framework\AppInterface][app-face]
+- 執行商務
 
-## Bootstrap運行邏輯
+## Bootstrap執行邏輯
 
-[引導對象][bootinitial] 使用以下算法運行Commerce應用程式：
+[啟動程式物件][bootinitial] 會使用以下演演算法來執行Commerce應用程式：
 
-1. 初始化錯誤處理程式。
-1. 建立 [對象管理器][object] 以及受環境影響的各地使用的基本共用服務。 將環境參數正確地注入到這些對象中。
-1. 斷言維護模式為 _不_ 啟用；否則，終止。
-1. 聲稱已安裝Commerce應用程式；否則，終止。
-1. 啟動Commerce應用程式。
+1. 初始化錯誤處理常式。
+1. 建立 [物件管理員][object] 以及基本共用服務，適用於任何地方，並受環境影響。 環境引數會適當地插入這些物件中。
+1. 判斷維護模式為 _not_ 已啟用；否則，會終止。
+1. 判斷是否已安裝Commerce應用程式；否則，會終止。
+1. 啟動商務應用程式。
 
-   應用程式啟動期間的任何未捕獲的異常都會自動傳回至Commerce `catchException()` 方法，可用於處理異常。 後者要麼必須返回 `true` 或 `false`:
+   應用程式啟動期間任何未攔截到的例外狀況，都會自動傳回 `catchException()` 可用來處理例外狀況的方法。 後者必須傳回 `true` 或 `false`：
 
-   - 如果 `true`:已成功處理商業異常。 沒必要做別的事。
-   - 如果 `false`:（或其他空結果）Commerce未處理該異常。 引導對象執行預設異常處理子常式。
+   - 若 `true`：商務已成功處理例外狀況。 無需執行任何其他操作。
+   - 若 `false`：（或任何其他空白結果） Commerce未處理例外狀況。 Bootstrap物件會執行預設的例外狀況處理子常式。
 
-1. 發送應用程式對象提供的響應。
+1. 傳送應用程式物件提供的回應。
 
    >[!INFO]
    >
-   >Commerce應用程式已安裝且未處於維護模式的斷言是 `\Magento\Framework\App\Bootstrap` 類。 在建立引導對象時，可以使用入口點指令碼修改它。
+   >聲稱已安裝Commerce應用程式且未處於維護模式，是 `\Magento\Framework\App\Bootstrap` 類別。 建立啟動程式物件時，您可以使用入口點指令碼來修改它。
 
-   修改引導對象的示例入口點指令碼：
+   修改啟動程式物件的範例進入點指令碼：
 
    ```php
    <?php
@@ -57,57 +57,57 @@ ht-degree: 0%
    $bootstrap->run($app);
    ```
 
-## 預設異常處理
+## 預設例外狀況處理
 
-引導對象指定Commerce應用程式如何處理未捕獲的異常，如下所示：
+bootstrap物件會指定Commerce應用程式如何處理未攔截到的例外狀況，如下所示：
 
-- 在 [開發者模式](../bootstrap/application-modes.md#developer-mode)，按原樣顯示異常。
-- 在任何其它模式下，都嘗試記錄異常並顯示一般錯誤消息。
-- 終止Commerce，並返回錯誤代碼 `1`
+- 在 [開發人員模式](../bootstrap/application-modes.md#developer-mode)，會依原樣顯示例外狀況。
+- 在任何其他模式中，會嘗試記錄例外狀況並顯示一般錯誤訊息。
+- 使用錯誤碼終止商務 `1`
 
-## 入口點應用程式
+## 進入點應用程式
 
-我們有以下入口點應用程式（即由Commerce定義的由Web伺服器用作目錄索引的應用程式）:
+我們有以下入口點應用程式（即Commerce定義的應用程式，由Web伺服器用作目錄索引）：
 
-### HTTP入口點
+### HTTP進入點
 
-[\Magento\Framework\App\Http][http] 如下：
+[\Magento\Framework\App\Http][http] 的運作方式如下：
 
-1. 確定 [應用區](https://developer.adobe.com/commerce/php/architecture/modules/areas/)。
-1. 啟動前控制器和路由系統以查找和執行控制器操作。
-1. 使用HTTP響應對象返回從控制器操作獲得的結果。
-1. 錯誤處理（按以下優先順序順序）:
+1. 決定 [應用程式區域](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
+1. 啟動前端控制器和路由系統，以尋找並執行控制器動作。
+1. 使用HTTP回應物件來傳回從控制器動作取得的結果。
+1. 錯誤處理（按照以下優先順序）：
 
-   1. 如果您使用 [開發者模式](../bootstrap/application-modes.md#developer-mode):
-      - 如果未安裝Commerce應用程式，請重定向至「安裝嚮導」。
-      - 如果安裝了Commerce應用程式，則顯示錯誤和HTTP狀態代碼500（內部伺服器錯誤）。
-   1. 如果Commerce應用程式處於維護模式，則顯示用戶友好的「服務不可用」登錄頁，HTTP狀態代碼為503（服務不可用）。
-   1. 如果Commerce應用程式 _不_ 已安裝，重定向至「安裝嚮導」。
-   1. 如果會話無效，請重定向到首頁。
-   1. 如果存在任何其他應用程式初始化錯誤，則顯示用戶友好的「未找到頁面」頁，HTTP狀態代碼為404（未找到）。
-   1. 在任何其他錯誤上，顯示用戶友好的「服務不可用」頁面，其HTTP響應為503，並生成錯誤報告，並在頁面上顯示其ID。
+   1. 如果您使用 [開發人員模式](../bootstrap/application-modes.md#developer-mode)：
+      - 如果未安裝Commerce應用程式，請重新導向至安裝精靈。
+      - 如果已安裝Commerce應用程式，則顯示錯誤和HTTP狀態碼500 （內部伺服器錯誤）。
+   1. 如果Commerce應用程式處於維護模式，會顯示使用者易記的「服務無法使用」登陸頁面，HTTP狀態碼為503 （服務無法使用）。
+   1. 如果商務應用程式為 _not_ 已安裝，重新導向至安裝精靈。
+   1. 如果工作階段無效，請重新導向至首頁。
+   1. 如果有任何其他應用程式初始化錯誤，顯示使用者易記的「找不到頁面」頁面，其中HTTP狀態碼為404 （找不到）。
+   1. 發生任何其他錯誤時，顯示包含HTTP回應503且方便使用的「服務無法使用」頁面，並產生錯誤報告及在頁面上顯示其ID。
 
-### 靜態資源入口點
+### 靜態資源進入點
 
-[\Magento\Framework\App\StaticResource][static-resource] 是用於檢索靜態資源（例如，CSS、JavaScript和映像）的應用程式。 它會將所有操作與靜態資源一起延遲，直到請求該資源。
+[\Magento\Framework\App\StaticResource][static-resource] 是用於擷取靜態資源（例如CSS、JavaScript和影像）的應用程式。 它會延遲對靜態資源執行任何動作，直到請求該資源為止。
 
 >[!INFO]
 >
->靜態視圖檔案的入口點未用於 [生產模式](application-modes.md#production-mode) 以避免伺服器上的潛在漏洞。 在生產模式中，Commerce應用程式希望在 `<your Commerce install dir>/pub/static` 的子菜單。
+>靜態檢視檔案的進入點未用於 [生產模式](application-modes.md#production-mode) 以避免在伺服器上發生潛在利用漏洞的情形。 在生產模式中，Commerce應用程式預期所有必要資源都存在於 `<your Commerce install dir>/pub/static` 目錄。
 
-在預設或開發者模式下，根據由適當的指定的重寫規則將對不存在的靜態資源的請求重定向到靜態入口點 `.htaccess`。
-當將請求重定向到入口點時，Commerce應用程式基於檢索到的參數解析請求的URL並查找所請求的資源。
+在預設或開發人員模式中，會根據適當的所指定的重寫規則，將不存在的靜態資源的請求重新導向至靜態進入點 `.htaccess`.
+當請求被重新導向到進入點時，商務應用程式會根據擷取的引數剖析請求的URL並尋找請求的資源。
 
-- 在 [開發者](application-modes.md#developer-mode) 模式下，返回檔案的內容，以便每次請求資源時，返回的內容都是最新的。
-- 在 [預設](application-modes.md#default-mode) 模式下，將發佈檢索到的資源，以便先前請求的URL可以訪問它。
+- 在 [開發人員](application-modes.md#developer-mode) 模式，則會傳回檔案的內容，以便每次請求資源時，傳回的內容都是最新的。
+- 在 [預設](application-modes.md#default-mode) 模式，則會發佈擷取的資源，以便先前請求的URL可存取該資源。
 
-   以後對靜態資源的所有請求都由伺服器處理，與靜態檔案相同；即不涉及入口點。 如果需要將已發佈檔案與原始檔案同步， `pub/static` 刪除目錄；因此，檔案會自動隨下一個請求重新發佈。
+   伺服器會以處理靜態檔案的方式來處理靜態資源的所有未來請求；也就是說，不會涉及進入點。 如果需要將已發佈的檔案與原始檔案同步， `pub/static` 應該移除目錄；因此，檔案會在下次請求時自動重新發佈。
 
-### 媒體資源入口點
+### 媒體資源進入點
 
-[Magento\MediaStorage\App\Media][media] 從資料庫中檢索媒體資源（即上載到媒體儲存的所有檔案）。 只要資料庫配置為介質儲存，就會使用它。
+[Magento\MediaStorage\App\Media][media] 從資料庫擷取媒體資源（亦即任何上傳至媒體儲存空間的檔案）。 每當資料庫設定為媒體儲存體時，就會使用它。
 
-`\Magento\Core\App\Media` 嘗試在配置的資料庫儲存中查找媒體檔案並將其寫入 `pub/static` 目錄，然後返回其內容。 錯誤時，它返回標頭中沒有內容的HTTP 404（未找到）狀態代碼。
+`\Magento\Core\App\Media` 嘗試在設定的資料庫儲存空間中尋找媒體檔案，並將其寫入 `pub/static` 目錄，然後傳回其內容。 發生錯誤時，它會在沒有內容的標頭中傳回HTTP 404 （找不到）狀態代碼。
 
 <!-- Link Definitions -->
 

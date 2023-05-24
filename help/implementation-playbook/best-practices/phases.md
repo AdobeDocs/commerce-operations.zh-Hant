@@ -1,6 +1,6 @@
 ---
-title: 實施階段
-description: 瞭解Adobe Commerce項目實施階段的最佳做法。
+title: 實作階段
+description: 瞭解Adobe Commerce專案實作階段的最佳實務。
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,11 +9,11 @@ ht-degree: 0%
 
 ---
 
-# 實施最佳做法
+# 實作最佳作法
 
-實施一個Adobe Commerce項目有很多方法。 本節提供的最佳做法描述了Adobe期望客戶和合作夥伴實施特定使用案例的方式。 這些建議旨在幫助防止與站點配置和定制、部署、操作、效能和升級相關的常見問題和潛在問題。
+實作Adobe Commerce專案有許多種方式。 本節提供的最佳實務說明Adobe預期客戶和合作夥伴實作特定使用案例的方式。 這些建議旨在協助預防與網站設定和自訂、部署、操作、效能和升級相關的常見問題和潛在問題。
 
-這些最佳做法按實施階段進行組織，以便您能夠找到適用於您的使用案例的建議。
+這些最佳實務會依實作階段加以整理，以便您找到適用於使用案例的建議。
 
 <table style="table-layout:fixed">
 <tr>
@@ -24,7 +24,7 @@ ht-degree: 0%
     <div>
     <a href="planning/overview.md"><strong>規劃</strong></a>
     </div>
-    需求收集、體系結構設計、目錄設計、項目範圍界定、帳戶預配、用戶訪問、擴展購買
+    需求收集、架構設計、目錄設計、專案範圍設定、帳戶布建、使用者存取、擴充功能購買
     <br>
   </td>
   <td>
@@ -34,17 +34,17 @@ ht-degree: 0%
     <div>
     <a href="development/overview.md"><strong>開發</strong></a>
     </div>
-    本地和暫存環境設定、故障排除、代碼管理、sprint計畫、sprint審閱、驗收測試和客戶簽收
+    本機和中繼環境設定、疑難排解、程式碼管理、衝刺計畫、衝刺審查、驗收測試和客戶簽核
     <br>
   </td>
   <td>
     <a href="launch/overview.md">
-      <img alt="啟動" src="../../assets/icons/launch.svg" width="80" height="80">
+      <img alt="Launch" src="../../assets/icons/launch.svg" width="80" height="80">
     </a>
     <div>
-    <a href="launch/overview.md"><strong>啟動</strong></a>
+    <a href="launch/overview.md"><strong>Launch</strong></a>
     </div>
-    最終的發佈前和發佈後核對清單審查、生產部署、安全配置、服務驗證和效能監控  
+    產品上市前和上市後的最終檢查清單審查、生產部署、安全性設定、服務驗證和效能監控  
     <br>
   </td>
   <td>
@@ -54,7 +54,7 @@ ht-degree: 0%
     <div>
     <a href="maintenance/overview.md"><strong>維護</strong></a>
     </div>
-    站點監控、目錄管理、索引、配置、功能增強、錯誤修復、托管服務、升級   
+    網站監控、目錄管理、索引、設定、功能增強、錯誤修正、受管理的服務、升級   
     <br>
   </td>
 </tr>

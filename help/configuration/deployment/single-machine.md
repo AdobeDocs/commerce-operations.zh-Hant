@@ -1,6 +1,6 @@
 ---
-title: 單機部署
-description: 瞭解如何使用命令行將更新部署到生產伺服器上的Commerce。
+title: 單一電腦部署
+description: 瞭解如何使用命令列在生產伺服器上將Commerce的更新部署。
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
@@ -10,50 +10,50 @@ ht-degree: 0%
 
 ---
 
-# 單機部署
+# 單一電腦部署
 
-本主題提供了使用命令行將更新部署到生產伺服器上的Commerce的說明。 此過程適用於負責在安裝了某些主題和區域設定的單個電腦上運行儲存的技術用戶。
+本主題提供使用命令列在生產伺服器上部署Commerce更新的指示。 此程式適用於負責在已安裝某些主題和區域設定的單一機器上執行商店的技術使用者。
 
 ## 假設
 
-- 您使用 [作曲家](../../installation/composer.md)。
-- 您正在直接將更新應用到伺服器。
+- 您已使用安裝Commerce [Composer](../../installation/composer.md).
+- 您正在將更新直接套用至伺服器。
 
 >[!WARNING]
 >
->如果使用 `git clone` 來安裝Commerce。
->提供幫助的開發商應使用 [本指南][install] 以更新其Commerce安裝。
+>若您使用，本指南不適用 `git clone` 以安裝Commerce。
+>投稿開發人員應使用 [本指南][install] 更新其Commerce安裝。
 
 ## 部署步驟
 
-1. 以或切換到的生產伺服器 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md)。
+1. 以或切換至身分登入您的生產伺服器， [檔案系統擁有者](../../installation/prerequisites/file-system/overview.md).
 
-1. 將目錄更改為Commerce基目錄：
+1. 將目錄變更為Commerce基底目錄：
 
    ```bash
    cd <Commerce base directory>
    ```
 
-1. 使用以下命令啟用維護模式：
+1. 使用命令啟用維護模式：
 
    ```bash
    bin/magento maintenance:enable
    ```
 
-1. 使用以下命令模式將更新應用於Commerce或其元件：
+1. 使用以下命令模式將更新套用至Commerce或其元件：
 
    ```bash
    composer require-commerce <package> <version> --no-update
    ```
 
-   **包**:要更新的包的名稱。
+   **封裝**：您要更新的套件名稱。
 
    例如：
 
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`
 
-   **版本**:要更新的包的目標版本。
+   **版本**：您要更新的套裝軟體的目標版本。
 
 1. 使用Composer更新元件：
 
@@ -61,13 +61,13 @@ ht-degree: 0%
    composer update
    ```
 
-1. 更新資料庫架構和資料：
+1. 更新資料庫結構和資料：
 
    ```bash
    bin/magento setup:upgrade
    ```
 
-1. 編譯代碼：
+1. 編譯程式碼：
 
    ```bash
    bin/magento setup:di:compile
@@ -85,7 +85,7 @@ ht-degree: 0%
    bin/magento cache:clean
    ```
 
-1. 退出維護模式：
+1. 結束維護模式：
 
    ```bash
    bin/magento maintenance:disable

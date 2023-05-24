@@ -1,6 +1,6 @@
 ---
-title: 雲基礎架構環境
-description: 為正確的使用情形使用適當的環境。
+title: 雲端基礎結構環境
+description: 針對正確的使用案例使用正確的環境。
 exl-id: 0c36145f-8de2-45e5-9050-9acbc9fb6100
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,22 +11,22 @@ ht-degree: 0%
 
 # 環境
 
-Adobe Commerce雲基礎架構專業架構支援您可以用來開發、test和啟動儲存的環境。 每個環境都包含資料庫和Web伺服器。 Adobe Commerce利用的四個環境是：
+雲端基礎結構上的Adobe Commerce Pro架構支援可用於開發、測試和啟動您的商店的環境。 每個環境都包含一個資料庫和一個Web伺服器。 Adobe Commerce使用的四個環境包括：
 
-- **整合** — 提供單個環境分支，您最多可以建立四個附加的環境分支。 這允許最多將五個活動分支部署到平台即服務(PaaS)容器。
+- **整合** — 提供單一環境分支，您最多可以建立四個額外的環境分支。 這允許將最多五個使用中分支部署至Platform-as-a-Service (PaaS)容器。
 
-- **暫存** — 提供部署到專用「基礎架構即服務」(IaaS)容器的單個環境分支。
+- **分段** — 提供部署至專用基礎架構即服務(IaaS)容器的單一環境分支。
 
-- **生產** — 提供部署到專用「基礎架構即服務」(IaaS)容器的單個環境分支。
+- **生產** — 提供部署至專用基礎架構即服務(IaaS)容器的單一環境分支。
 
-- **全局主節點** — 提供部署到平台即服務(PaaS)容器的主分支。
+- **全域主版** — 提供部署至Platform-as-a-Service (PaaS)容器的主分支。
 
-![顯示Adobe Commerce雲環境之間關係的圖](../../../assets/playbooks/environment-diagram.svg)
+![顯示Adobe Commerce雲端環境之間關係的圖表](../../../assets/playbooks/environment-diagram.svg)
 
 ## Git分支
 
-整合環境提供了單個基本整合分支，其中包含部署到平台即服務(PaaS)容器的Adobe Commerce代碼。
+整合環境提供單一基本整合分支，其中包含部署至Platform-as-a-Service (PaaS)容器的Adobe Commerce程式碼。
 
-Adobe Commerce雲基礎架構環境支援靈活、連續的整合流程。 首先將整合分支克隆到本地項目資料夾。 建立新分支或多個分支以開發新功能、配置更改和添加擴展。 通過開發的代碼分支和相應的配置檔案，您的代碼更改可以合併到整合分支中，以便進行更全面的測試。
+雲端基礎結構環境上的Adobe Commerce支援靈活、持續的整合程式。 從複製整合分支至本機專案資料夾開始。 建立新分支或多個分支，以開發新功能、設定變更和新增擴充功能。 透過已開發的程式碼分支和相應的設定檔案，您的程式碼變更可以合併到整合分支，以進行更全面的測試。
 
-![示出Adobe Commerce雲環境基於Git的分支策略的圖](../../../assets/playbooks/branching-diagram.svg)
+![圖表顯示Adobe Commerce雲端環境的Git型分支策略](../../../assets/playbooks/branching-diagram.svg)

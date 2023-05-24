@@ -11,52 +11,52 @@ ht-degree: 0%
 
 # 安裝指南
 
-的 [!DNL Site-Wide Analysis Tool] 提供全天候即時效能監控、報告和建議，以確保Adobe Commerce在雲基礎架構安裝方面的安全性和可操作性。 它還提供有關可用和已安裝的修補程式、第三方擴展以及您的Adobe Commerce安裝的詳細資訊。
+此 [!DNL Site-Wide Analysis Tool] 提供全天候的即時效能監控、報告和建議，以確保雲端基礎結構安裝上的Adobe Commerce安全性和可操作性。 此外，也提供可用和已安裝修補程式、協力廠商擴充功能以及Adobe Commerce安裝的詳細資訊。
 
 >[!INFO]
 >
->學習 [如何啟用](../site-wide-analysis-tool/access.md) 這樣 [!DNL Site-Wide Analysis Tool] 並生成報告。
+>瞭解 [如何啟用](../site-wide-analysis-tool/access.md) 此 [!DNL Site-Wide Analysis Tool] 並產生報表。
 
-如果您在本地安裝了Adobe Commerce，請在基礎架構上安裝代理以使用該工具。 您無需在Adobe Commerce的雲基礎架構項目上安裝代理。
+如果您有內部部署的Adobe Commerce，請在您的基礎結構上安裝代理程式以使用此工具。 您不需要在雲端基礎結構專案上在Adobe Commerce上安裝代理程式。
 
-## 代理
+## 代理程式
 
-的 [!DNL Site-Wide Analysis Tool] 代理允許您使用 [!DNL Site-Wide Analysis Tool] 為Adobe Commerce提供內部設施。
+此 [!DNL Site-Wide Analysis Tool] 代理程式可讓您使用 [!DNL Site-Wide Analysis Tool] 用於Adobe Commerce的內部安裝。
 
-的 [!DNL Site-Wide Analysis Tool] Agent收集應用程式和業務資料，對其進行分析，並提供有關安裝運行狀況的更多見解，以便您能夠改善客戶體驗。 它可監控您的應用程式，並幫助您確定效能、安全性、可用性和應用程式問題。
+此 [!DNL Site-Wide Analysis Tool] 代理程式會收集應用程式和業務資料，加以分析，並提供關於安裝狀況的其他深入分析，以便您改善客戶體驗。 它會監視您的應用程式，並協助您識別效能、安全性、可用性和應用程式問題。
 
-安裝代理需要執行以下步驟：
+安裝代理程式需要下列步驟：
 
-1. 驗證系統要求。
+1. 驗證系統需求。
 
-1. 在 [!UICONTROL Commerce Services Connector] 擴展。
+1. 在中設定API金鑰 [!UICONTROL Commerce Services Connector] 副檔名。
 
-1. 安裝代理。
+1. 安裝代理程式
 
-1. 運行代理。
+1. 執行代理程式
 
 >[!INFO]
 >
->代理支援多節點Adobe Commerce安裝。 在每個節點上安裝和配置代理。
+>代理程式支援多節點Adobe Commerce安裝。 在每個節點上安裝及設定代理程式。
 
-## 系統要求
+## 系統需求
 
-安裝代理之前，您的內部基礎架構必須滿足以下要求：
+安裝代理程式之前，您的內部部署基礎結構必須符合下列要求：
 
 - 作業系統
 
-   - [!DNL Linux x86-64] 分佈，如 [!DNL Red Hat® Enterprise Linux (RHEL)]。 [!DNL CentOS]。 [!DNL Ubuntu]。 [!DNL Debian]，類似
+   - [!DNL Linux x86-64] 分佈，例如 [!DNL Red Hat® Enterprise Linux (RHEL)]， [!DNL CentOS]， [!DNL Ubuntu]， [!DNL Debian]，和類似專案
    >[!IMPORTANT]
    >
-   >Adobe Commerce不支援 [!DNL Microsoft Windows] 或 [!DNL macOS]。
+   >Adobe Commerce不受支援 [!DNL Microsoft Windows] 或 [!DNL macOS].
 
-- Adobe Commerce2.4.1或更高版本
+- Adobe Commerce 2.4.1或更新版本
 
 - [!DNL Commerce Services Connector extension]
 
 - PHP CLI
 
-- Bash/shell實用程式
+- Bash/殼層公用程式
 
    - `php`
 
@@ -72,47 +72,47 @@ ht-degree: 0%
 
 ## [!DNL Commerce Services Connector]
 
-代理需要 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 擴展安裝在系統上， [配置](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) API密鑰。 要驗證擴展是否已安裝，請運行以下命令：
+代理程式需要 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 擴充功能將安裝在您的系統和 [已設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 使用API金鑰。 若要確認已安裝擴充功能，請執行以下命令：
 
 ```bash
 bin/magento module:status Magento_ServicesId
 ```
 
-如果已安裝擴展並使用其他服務的現有API密鑰進行配置，則 **必須重新生成API密鑰** 並在Adobe Commerce管理員中更新代理。
+如果您已安裝擴充功能，並使用其他服務的現有API金鑰進行設定，則 **必須重新產生API金鑰** 並在Adobe Commerce管理員中更新代理程式。
 
-1. 將您的網站放入 [維護模式](../../installation/tutorials/maintenance-mode.md)。
+1. 將您的網站放入 [維護模式](../../installation/tutorials/maintenance-mode.md).
 
-1. 登錄 [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671)。
+1. 登入 [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
 
    >[!NOTE]
    >
-   > 如果訪問帳戶時遇到問題，請參閱 [無法登錄Adobe Commerce支援或雲帳戶](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) 中。
+   > 如果您無法存取帳戶，請參閱 [無法登入Adobe Commerce支援或雲端帳戶](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) 以取得疑難排解說明。
 
-1. 按一下 **[!UICONTROL API Portal]**。
+1. 按一下 **[!UICONTROL API Portal]**.
 
-1. 按一下 **[!UICONTROL Delete]** 現有API密鑰旁邊。
+1. 按一下 **[!UICONTROL Delete]** 位於現有API金鑰旁。
 
-1. [配置](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 新的API密鑰。
+1. [設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 新的API金鑰。
 
 >[!IMPORTANT]
 >
-> 如果在API門戶中生成新密鑰，請立即更新 [!DNL Admin configuration]。 如果生成新密鑰，但不更新 [!DNL Admin]，您的SaaS擴展將不再工作，您將丟失寶貴的資料。
+> 如果您在API入口網站中產生新金鑰，請立即更新以下專案中的API金鑰： [!DNL Admin configuration]. 如果您產生新金鑰，但未更新中的金鑰 [!DNL Admin]，您的SaaS擴充功能將無法繼續運作，且您的寶貴資料將會遺失。
 
-如果未安裝擴展，請使用以下說明安裝它：
+如果未安裝擴充功能，請依照下列指示進行安裝：
 
-1. 將擴展添加到 `composer.json` 檔案並安裝。
+1. 將擴充功能新增至 `composer.json` 檔案並安裝。
 
    ```bash
    composer require magento/services-id
    ```
 
-1. 啟用擴展。
+1. 啟用擴充功能。
 
    ```bash
    bin/magento module:enable Magento_ServicesId
    ```
 
-1. 更新資料庫架構。
+1. 更新資料庫結構。
 
    ```bash
    bin/magento setup:upgrade
@@ -124,19 +124,19 @@ bin/magento module:status Magento_ServicesId
    bin/magento cache:clean
    ```
 
-1. [配置API密鑰](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 將擴展連接到系統。
+1. [設定API金鑰](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 將擴充功能連線至您的系統。
 
-## 安裝代理
+## 安裝代理程式
 
-我們建立了 [shell指令碼](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) 以簡化安裝。 我們建議使用shell指令碼，但您可以 [手動安裝](#manual) 的雙曲餘切值。
+我們已建立 [殼層指令碼](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) 以簡化安裝。 我們建議您使用Shell指令碼，但您可以遵循 [手動安裝](#manual) 方法（如有需要）。
 
 >[!INFO]
 >
->安裝代理後，當有新版本可用時，代理將自動更新。
+>安裝代理程式後，當有新版本可用時，它會自行更新。
 
 ### 指令碼
 
-1. 下載並執行shell指令碼。
+1. 下載並執行殼層指令碼。
 
    ```bash
    bash -c "$(wget -qO - https://raw.githubusercontent.com/magento-swat/install-agent-helpers/main/install.sh)"
@@ -144,7 +144,7 @@ bin/magento module:status Magento_ServicesId
 
    >[!TIP]
    >
-   >建議在根Adobe Commerce項目目錄外安裝代理。
+   >我們建議您在根Adobe Commerce專案目錄外部安裝代理程式。
 
 1. 驗證安裝。
 
@@ -157,57 +157,57 @@ bin/magento module:status Magento_ServicesId
    Success exit.
    ```
 
-1. 下載和安裝代理後， [配置它以運行](#run-the-agent) 使用以下方法之一：
+1. 下載及安裝代理程式之後， [設定為執行](#run-the-agent) 使用下列其中一種方法：
 
-   - [服務](#service) （如果您具有根訪問權限，則首選）
+   - [服務](#service) （如果您有根存取許可權，則偏好使用）
 
-   - [克龍](#cron)
+   - [Cron](#cron)
 
 ### 手動 {#manual}
 
-如果你不想用我們 [shell指令碼](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) 要安裝代理，必須按照以下步驟手動安裝代理：
+如果您不想使用我們的 [殼層指令碼](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) 若要安裝代理程式，您必須依照下列步驟手動安裝：
 
-1. 建立要下載代理的目錄。
+1. 建立您要下載代理程式的目錄。
 
    >[!TIP]
    >
-   >建議在根Adobe Commerce項目目錄外安裝代理。
+   >我們建議您在根Adobe Commerce專案目錄外部安裝代理程式。
 
-1. 下載二進位檔案並解壓縮。
+1. 下載二進位檔案並將其解壓縮。
 
    >[!INFO]
    >
-   >使用 [!DNL Site-Wide Analysis Tool]，您必須首先閱讀並接受從Adobe Commerce管理員訪問儀表板時顯示的使用條款。
+   >若要使用 [!DNL Site-Wide Analysis Tool]，您必須先閱讀並接受從Adobe Commerce管理員存取控制面板時顯示的使用條款。
 
-   對於 **AMD64** 體系結構：
+   對於 **AMD64** 架構：
 
-   1. 下載啟動程式存檔。
+   1. 下載啟動器封存。
 
       ```bash
       curl -O https://updater.swat.magento.com/launcher/launcher.linux-amd64.tar.gz
       ```
 
-   1. 解壓縮啟動程式存檔。
+   1. 將啟動器封存解壓縮。
 
       ```bash
       tar -xf launcher.linux-amd64.tar.gz
       ```
-   對於 **ARM64** 體系結構：
+   對於 **ARM64** 架構：
 
-   1. 下載啟動程式存檔。
+   1. 下載啟動器封存。
 
       ```bash
       curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. 解壓縮啟動程式存檔。
+   1. 將啟動器封存解壓縮。
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
       ```
 
 
-1. *（可選）* 驗證校驗和檔案的簽名。
+1. *（可選）* 驗證總和檢查碼的簽章。
 
    ```bash
    echo -n "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FnOEFNSUlDQ2dLQ0FnRUE0M2FBTk1WRXR3eEZBdTd4TE91dQpacG5FTk9pV3Y2aXpLS29HendGRitMTzZXNEpOR3lRS1Jha0MxTXRsU283VnFPWnhUbHZSSFhQZWt6TG5vSHVHCmdmNEZKa3RPUEE2S3d6cjF4WFZ3RVg4MEFYU1JNYTFadzdyOThhenh0ZHdURVh3bU9GUXdDcjYramFOM3ErbUoKbkRlUWYzMThsclk0NVJxWHV1R294QzBhbWVoakRnTGxJUSs1d1kxR1NtRGRiaDFJOWZqMENVNkNzaFpsOXFtdgorelhjWGh4dlhmTUU4MUZsVUN1elRydHJFb1Bsc3dtVHN3ODNVY1lGNTFUak8zWWVlRno3RFRhRUhMUVVhUlBKClJtVzdxWE9kTGdRdGxIV0t3V2ppMFlrM0d0Ylc3NVBMQ2pGdEQzNytkVDFpTEtzYjFyR0VUYm42V3I0Nno4Z24KY1Q4cVFhS3pYRThoWjJPSDhSWjN1aFVpRHhZQUszdmdsYXJSdUFacmVYMVE2ZHdwYW9ZcERKa29XOXNjNXlkWApBTkJsYnBjVXhiYkpaWThLS0lRSURnTFdOckw3SVNxK2FnYlRXektFZEl0Ni9EZm1YUnJlUmlMbDlQMldvOFRyCnFxaHNHRlZoRHZlMFN6MjYyOU55amgwelloSmRUWXRpdldxbGl6VTdWbXBob1NrVnNqTGtwQXBiUUNtVm9vNkgKakJmdU1sY1JPeWI4TXJCMXZTNDJRU1MrNktkMytwR3JyVnh0akNWaWwyekhSSTRMRGwrVzUwR1B6LzFkeEw2TgprZktZWjVhNUdCZm00aUNlaWVNa3lBT2lKTkxNa1cvcTdwM200ejdUQjJnbWtldm1aU3Z5MnVMNGJLYlRoYXRlCm9sdlpFd253WWRxaktkcVkrOVM1UlNVQ0F3RUFBUT09Ci0tLS0tRU5EIFBVQkxJQyBLRVktLS0tLQ==" | base64 -d > release.pub
@@ -217,13 +217,13 @@ bin/magento module:status Magento_ServicesId
    openssl dgst -sha256 -verify release.pub -signature launcher.sha256 launcher.checksum
    ```
 
-1. *（可選）* 驗證校驗和。
+1. *（可選）* 驗證總和檢查碼。
 
    ```bash
    shasum -a 512 -c launcher.checksum
    ```
 
-1. 建立 `config.yaml` 檔案。
+1. 建立 `config.yaml` 檔案中包含下列內容。
 
    ```yaml
    project:
@@ -256,19 +256,19 @@ bin/magento module:status Magento_ServicesId
    Success exit.
    ```
 
-1. 下載和安裝代理後，必須 [配置它以運行](#run-the-agent) 使用以下方法之一：
+1. 下載及安裝代理程式之後，您必須 [設定為執行](#run-the-agent) 使用下列其中一種方法：
 
-   - [服務](#service) （如果您具有根訪問權限，則首選）
+   - [服務](#service) （如果您有根存取許可權，則偏好使用）
 
-   - [克龍](#cron)
+   - [Cron](#cron)
 
-## 運行代理 {#run-the-agent}
+## 執行代理程式 {#run-the-agent}
 
-建議將代理配置為作為服務運行。 如果您對基礎架構的訪問權限有限，並且沒有根權限，則必須使用 [克隆](#cron) 的雙曲餘切值。
+我們建議將代理程式設定為以服務形式執行。 如果您對基礎結構的存取權有限，但沒有根許可權，則您必須使用 [cron](#cron) 而非。
 
 ### 服務 {#service}
 
-1. 建立系統設備檔案 `(/etc/systemd/system/scheduler.service)` 使用以下配置(替換 `<filesystemowner>` 擁有安裝代理和Adobe Commerce軟體的目錄的UNIX®用戶)。 如果以根用戶身份下載代理，請更改目錄和嵌套檔案所有者。
+1. 建立系統單位檔案 `(/etc/systemd/system/scheduler.service)` 替換為以下設定(取代 `<filesystemowner>` 擁有代理程式和Adobe Commerce軟體安裝目錄的UNIX®使用者)。 如果您以root使用者身份下載代理程式，請變更目錄和巢狀檔案擁有者。
 
    ```config
    [Unit]
@@ -300,110 +300,110 @@ bin/magento module:status Magento_ServicesId
    systemctl enable scheduler
    ```
 
-1. 驗證服務是否已啟動並正在運行。
+1. 驗證服務是否已啟動且執行中。
 
    ```bash
    journalctl -u scheduler | grep "Application is going to update" | tail -1 && echo "Agent is successfully installed"
    ```
 
-### 克龍 {#cron}
+### Cron {#cron}
 
-如果您沒有根權限或沒有將服務配置為根的權限，則可以改用cron。
+如果您沒有root許可權或沒有將服務設定為root的許可權，則可以改用cron。
 
-更新您的cron計畫：
+更新您的cron排程：
 
 ```bash
 ( crontab -l ; echo "* * * * * flock -n /tmp/swat-agent.lockfile -c '/path/to/agent/scheduler' >> /path/to/agent/errors.log 2>&1" ) | sort - | uniq - | crontab -
 ```
 
-## 卸載
+## 解除安裝
 
-運行以下命令從系統卸載服務並刪除所有生成的檔案：
+執行以下命令，從系統解除安裝服務，並移除所有產生的檔案：
 
-1. 停止計畫程式。
+1. 停止排程器。
 
    ```bash
    systemctl stop scheduler
    ```
 
-1. 禁用計畫程式。
+1. 停用排程器。
 
    ```bash
    systemctl disable scheduler
    ```
 
-1. 刪除計畫程式服務 `systemd` 設備檔案。
+1. 移除排程器服務的 `systemd` 單位檔案。
 
    ```bash
    rm /etc/systemd/system/scheduler.service
    ```
 
-1. 重新載入 `systemd` 管理器配置。
+1. 重新載入 `systemd` 管理員設定。
 
    ```bash
    systemctl daemon-reload
    ```
 
-1. 重置任何 `systemd` 單位來自失敗狀態。
+1. 重設任何 `systemd` 單位來自失敗狀態。
 
    ```bash
    systemctl reset-failed
    ```
 
-1. 刪除計畫程式服務目錄。
+1. 移除排程器服務目錄。
 
    ```bash
    rm -rf <CHECK_REGISTRY_PATH> #see SWAT_AGENT_APPLICATION_CHECK_REGISTRY_PATH in /etc/systemd/system/scheduler.service
    ```
 
-1. 刪除調度程式二進位檔案。
+1. 移除排程器二進位檔案。
 
    ```bash
    rm /usr/local/bin/scheduler
    ```
 
-如果已將代理配置為使用cron運行，請使用以下說明：
+如果您已設定代理程式改用cron執行，請使用下列指示：
 
-1. 從crontab清單中刪除代理。
+1. 從crontab清單中移除代理程式。
 
    ```bash
    crontab -e
    ```
 
-1. 停止正在運行的作業。
+1. 停止執行中的工作。
 
    ```bash
    ps aux | grep scheduler
    ```
 
-1. 刪除安裝代理的目錄。
+1. 移除安裝代理程式的目錄。
 
    ```bash
    rm -rf swat-agent
    ```
 
-## 故障排除
+## 疑難排除
 
-### 未正確分析訪問密鑰
+### 未正確剖析存取金鑰
 
-如果未正確分析訪問密鑰，您可能會看到以下錯誤：
+如果您的存取金鑰未正確剖析，您可能會看到以下錯誤：
 
 ```terminal
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
 FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
 ```
 
-要解決此錯誤，請嘗試以下步驟：
+若要解決此錯誤，請嘗試下列步驟：
 
-1. 執行 [指令碼安裝](#scripted)，保存輸出，並查看輸出是否有錯誤。
-1. 查看生成的 `config.yaml` 並驗證Commerce實例和PHP的路徑是否正確。
-1. 確保運行調度程式的用戶位於 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md) Unix組或與檔案系統所有者是同一用戶。
-1. 確保 [Commerce Services連接器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 已正確安裝密鑰，並嘗試更新密鑰以將擴展連接到系統。
-1. [卸載](#uninstall) 更新密鑰並使用 [安裝指令碼](#scripted)。
-1. 運行計畫程式並查看是否仍收到相同的錯誤。
-1. 如果仍然收到相同的錯誤，請在 `config.yaml` 調試並開啟支援票證。
+1. 執行 [指令碼安裝](#scripted)，儲存輸出，然後檢閱輸出是否有錯誤。
+1. 檢閱產生的 `config.yaml` 檔案並驗證Commerce執行個體和PHP的路徑是否正確。
+1. 請確定執行排程器的使用者位於 [檔案系統擁有者](../../installation/prerequisites/file-system/overview.md) Unix群組或是與檔案系統擁有者相同的使用者。
+1. 請確定 [商務服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 金鑰已正確安裝，請嘗試更新金鑰，以將擴充功能連線至您的系統。
+1. [解除安裝](#uninstall) 代理程式在更新金鑰後使用 [安裝指令碼](#scripted).
+1. 執行排程器並檢視您是否仍收到相同的錯誤。
+1. 如果您還是收到相同的錯誤，請提高 `config.yaml` 以偵錯並開啟支援票證。
 
 
 >[!INFO]
 >
->請參閱 [如何訪問 [!DNL Site-Wide Analysis Tool] 生成報告](../site-wide-analysis-tool/access.md)。
+>另請參閱 [如何存取 [!DNL Site-Wide Analysis Tool] 並產生報表](../site-wide-analysis-tool/access.md).

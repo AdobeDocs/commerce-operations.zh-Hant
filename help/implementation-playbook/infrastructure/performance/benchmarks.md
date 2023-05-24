@@ -1,6 +1,6 @@
 ---
-title: 效能基準
-description: 查看托管在Adobe雲基礎架構上的Adobe Commerce實施的效能基準結果。
+title: 效能標竿
+description: 檢閱在Adobe雲端基礎結構上託管的Adobe Commerce實施的效能基準結果。
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
 source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
 workflow-type: tm+mt
@@ -11,80 +11,80 @@ ht-degree: 0%
 
 # 基準摘要
 
-Adobe Commerce2.4.5效能基準結果反映了在Adobe Commerce實例上使用以下基礎架構和附加元件所衡量的效能。
-- [Pro雲環境](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) 與 [擴展架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
-- [Adobe CommerceB2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/introduction.html)
-- [Adobe CommerceInventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html)
+Adobe Commerce 2.4.5效能基準結果反映了在部署有下列基礎架構和其他元件的Adobe Commerce執行個體上測量到的效能。
+- [Pro雲端環境](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) 替換為 [縮放架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
+- [Adobe Commerce的B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/introduction.html)
+- [Adobe Commerce Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html)
 - [Adobe Stock](https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html)
 
-沒有其他自定義項。
+沒有其他自訂專案。
 
-以下資訊匯總了基準結果，並提供了有關測試期間使用的環境和資料的資訊。
+下列資訊會概述效能標竿結果，並提供測試期間使用的環境和資料相關資訊。
 
-## 關鍵效能指標
+## 關鍵效能量度
 
-下圖顯示了效能基準的Commerce儲存配置以及test結果中的關鍵效能度量。
+下圖顯示效能基準的Commerce存放區設定，以及測試結果的關鍵效能量度。
 
-![效能基準JMeter和生產基礎架構](../../../assets/performance/images/performance-benchmark-kpis-245-cloud.png){width="700" zoomable="yes"}
+![效能標竿JMeter和生產基礎結構](../../../assets/performance/images/performance-benchmark-kpis-245-cloud.png){width="700" zoomable="yes"}
 
-基於模仿企業B2C組織的測試標準，該系統可以在高峰時間處理請求的通信量和訂單號，並且處於標準負載流。
+根據模擬企業B2C組織的測試條件，系統可以在標準負載流程中處理尖峰期間請求的流量和訂單數量。
 
 ### 效能亮點
 
-- **訂單** — 處理了每分鐘3,481個訂單，同時將第99百分點的響應時間維持在2秒以下（99%的請求都在響應時間小於2秒的情況下得到了服務）。
-- **頁面視圖** — 每小時處理200多萬頁面視圖，同時為第99百分點保留不到2秒的響應時間。
-- **有效SKU** — 客戶概況包括2.42億種不同的價格變化(<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKU</a>25萬種產品。
-- **GraphQL請求** — 系統將每分鐘擴展到10,500個GraphQL未快取的請求，同時為第99百分位將響應時間保持在不到2秒。
-- **併發管理用戶** — 系統按比例擴展，支援500個併發管理員用戶，同時將第99百分點的響應時間保持在2秒以內。
+- **訂購** — 每分鐘處理3,481筆訂單，而第99個百分位數的回應時間維持在2秒以內（99%的請求獲得服務且回應時間少於2秒）。
+- **頁面檢視** — 每小時處理超過200萬次頁面檢視，同時將第99個百分位數的回應時間維持在2秒以內。
+- **有效SKU** — 客戶設定檔包含2.42億種不同的價格變化(<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKUs</a>)適用於250,000種產品。
+- **GraphQL請求** — 系統擴充至每分鐘10,500個GraphQL未快取要求，同時在第99個百分位數維持不到2秒的回應時間。
+- **同時管理員使用者** — 系統可擴充至支援500名同時管理使用者，同時在第99個百分位數維持不到2秒的回應時間。
 
-## Test環境
+## 測試環境
 
-通過對部署在具有擴展架構的Pro雲環境中的Adobe Commerce2.4.5實例進行測試，獲得效能基準結果。 該實例還安裝、配置和啟用了Adobe CommerceB2B、Inventory management和Adobe Stock整合模組。
+效能基準測試結果是透過針對部署在具有縮放架構的Pro雲端環境中的Adobe Commerce 2.4.5執行個體進行測試而獲得的。 執行個體也已安裝、設定和啟用Adobe Commerce B2B、Inventory management和Adobe Stock整合模組。
 
-已使用以下元件生成test配置檔案的效能測試資料： <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">效能工具包</a>。
+測試設定檔的效能測試資料是使用 <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">Performance Toolkit</a>.
 
-效能測量基於客戶及業務用戶的模擬日常儲存活動。 這些值反映了每個案例接近最大的吞吐量，但並不反映獨特的業務模型，如私人銷售或快閃記憶體銷售。
+效能評量以客戶和商務使用者的模擬日常商店活動為基礎。 值反映每個案例的接近最大輸送量，但並不反映獨特的業務模式，例如私人銷售或瞬間銷售。
 
 - **LUMA店面**
-   - 3000個併發用戶
-   - 設定為30%的CDN快取命中率
+   - 店面同時有3000位使用者
+   - 設定為30% CDN快取命中率
 
-      快取層的有效使用將增加每小時的頁面視圖數。
+      有效使用快取層會增加每小時的頁面檢視次數。
 
-- **GraphQLAPI**
-   - 250個併發線程
+- **GRAPHQL API**
+   - 250個並行執行緒
    - 設定為0% CDN快取命中率
 
-      在GraphQL前面的快取層中，響應時間顯著提高。
+      透過GraphQL前方的快取層，可大幅改善回應時間。
 
-- **管理網**
-   - 500個併發用戶
+- **管理網頁**
+   - 500位同時使用者
    - 設定為0% CDN快取命中率
 
-## Test環境規範
+## 測試環境規格
 
-已使用針對Adobe Commerce實例運行的JMeter負載配置檔案完成負載測試。 在test過程中，使用了3個Web節點和3個服務節點。 以下影像詳細描述了JMeter和生產基礎架構的入口點。
+載入測試已使用針對Adobe Commerce執行個體執行的JMeter載入設定檔完成。 測試期間使用了三個Web節點和三個服務節點。 以下影像詳細說明JMeter和生產基礎結構的進入點。
 
-![效能基準JMeter和生產基礎架構](https://git.corp.adobe.com/storage/user/43354/files/4d801e3e-96b7-4193-b94f-12571263b495){width="700" zoomable="yes"}
+![效能標竿JMeter和生產基礎結構](https://git.corp.adobe.com/storage/user/43354/files/4d801e3e-96b7-4193-b94f-12571263b495){width="700" zoomable="yes"}
 
-### 應用程式
+### 應用
 
-<a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">Adobe Commerce2.4.5</a> 部署在雲基礎架構上，採用Pro體系結構。
+<a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">Adobe Commerce 2.4.5</a> 部署在雲端基礎結構上，並採用Pro架構。
 
-### 基礎設施
+### 基礎架構
 
-對於效能基準，Adobe Commerce2.4.5部署在 [可擴展基礎架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html) 具有以下容量。
+就效能基準而言，Adobe Commerce 2.4.5部署於 [可擴充的基礎架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html) 具有下列容量。
 
-- **Web節點規範**
-   - vCPU 216（72 x 3節點）
-   - 記憶體432 GiB（144 x 3節點）
-   - 網路頻寬768 Gbps（256 x 3節點）
-   - EBS頻寬57000 Mbps（19000 x 3節點）
-   - 調配的儲存100 GB
+- **Web節點規格**
+   - vCPU 216 （72 x 3個節點）
+   - 記憶體432 GiB （144 x 3節點）
+   - 網路頻寬768 Gbps （256 x 3節點）
+   - EBS頻寬57000 Mbps (19000 x 3個節點)
+   - 布建的儲存空間100 GB
 
-- **服務節點規範**
-   - vCPU 192（64 x 3節點）
-   - 記憶體768 GiB（256 x 3節點）
-   - 網路頻寬60 Gbps（20 x 3節點）
-   - EBS頻寬40800 Mbps（13600 x 3節點）
-   - 調配的儲存1100 GB
+- **服務節點規格**
+   - vCPU 192 （64 x 3個節點）
+   - 記憶體768 GiB （256 x 3節點）
+   - 網路頻寬60 Gbps （20 x 3個節點）
+   - EBS頻寬40800 Mbps (13600 x 3個節點)
+   - 布建的儲存空間1100 GB

@@ -1,6 +1,6 @@
 ---
-title: 運行單位test
-description: 運行在Adobe Commerce代碼庫中定義的單位test。
+title: 執行單元測試
+description: 執行Adobe Commerce程式碼庫中定義的單元測試。
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,17 +9,17 @@ ht-degree: 0%
 
 ---
 
-# 運行單位test
+# 執行單元測試
 
 {{file-system-owner}}
 
-此命令運行在Commerce 2代碼庫中定義的一組test。 您可以運行所有選擇的test或test。 只要指定了不受支援的類型，程式就會終止並列出所有可用類型。 執行後，將顯示一個詳細報告，顯示test運行和結果。
+此命令會執行Commerce 2程式碼庫中定義的一組測試。 您可以執行所有測試或選取的測試。 每當指定了不受支援的型別時，程式就會終止並列出所有可用的型別。 執行後，詳細報告隨即顯示，其中顯示測試回合和結果。
 
-## 先決條件
+## 必要條件
 
-在運行此命令之前，請執行以下操作 _必須_ 是真的：
+執行此命令之前，請先執行下列動作 _必須_ 為true：
 
-- 的 `Magento_Developer` 必須啟用模組。 您可以按如下方式啟用它：
+- 此 `Magento_Developer` 模組必須啟用。 您可以依照以下方式啟用它：
 
    ```bash
    bin/magento module:enable [--force] Magento_Developer
@@ -27,31 +27,31 @@ ht-degree: 0%
 
    使用 `--force` 選項。
 
-- 必須設定系統以運行所需的test。
+- 您的系統必須設定為執行所需的測試。
 
-例如，要運行整合test，應複製 `dev/tests/integration/etc/install-config-mysql.php.dist` 至 `dev/tests/integration/etc/install-config-mysql.php` 並修改它以適應您的環境。
+例如，若要執行整合測試，您應複製 `dev/tests/integration/etc/install-config-mysql.php.dist` 至 `dev/tests/integration/etc/install-config-mysql.php` 並加以修改以符合您的環境。
 
-## 運行test
+## 正在執行測試
 
-命令用法：
+命令使用方式：
 
 ```bash
 bin/magento dev:tests:run <test>
 ```
 
-要列出可用test類型：
+若要列出可用的測試型別：
 
 ```bash
 bin/magento dev:tests:run --help
 ```
 
-示例返回：
+範例傳回：
 
 ```terminal
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 
-例如，要運行整合test:
+例如，若要執行整合測試：
 
 ```bash
 bin/magento dev:tests:run integration

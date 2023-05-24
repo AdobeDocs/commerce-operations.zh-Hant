@@ -1,6 +1,6 @@
 ---
-title: 發佈後步驟
-description: 使用我們發佈後的核對表確保順利實施Adobe Commerce站點。
+title: 啟動後的步驟
+description: 使用我們的上市後檢查清單，確保順利實施Adobe Commerce網站。
 exl-id: 0c3162d9-6475-4b34-9278-e5aea39bd0f9
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -9,17 +9,17 @@ ht-degree: 0%
 
 ---
 
-# 發佈後步驟
+# 啟動後的步驟
 
-網站一經上線，將盡快執行這些活動以確保網站正確啟動：
+網站上線後，系統會儘快執行這些活動，以確保網站正確啟動：
 
-- 啟用即時監視工具(New Relic)、激活檢查和監視站點以確保所有服務和訪問都處於綠色狀態
-- 定期啟用Adobe Commerce安全掃描
-- 將群集標籤為即時並建立支援票證以激活高SLA監視
-- 完成切換後， CSE（客戶成功工程師）和TAM（技術客戶經理）將立即執行以下任務：
-   - 將群集標籤為Adobe Commerce客戶端的高SLA並建立支援票證以將其激活
-   - 激活Pingdom檢查域名
-   - 查看監視狀態並確保所有項目處於綠色狀態
-   - 在投入使用日通過電子郵件向利益相關方通報保修期和參數
+- 啟用即時監控工具(New Relic)、啟用檢查並監控網站，以確保所有服務和存取都呈綠色
+- 定期啟用Adobe Commerce安全性掃描
+- 將叢集標籤為已上線並建立支援票證以啟動高SLA監視
+- 轉換完成後，CSE （客戶成功工程師）和TAM （技術客戶經理）會立即執行下列工作：
+   - 將叢集標籤為Adobe Commerce使用者端的高SLA，並建立支援票證以啟動它
+   - 啟動Pingdom檢查網域名稱
+   - 檢閱監控狀態並確保所有專案都呈綠色
+   - 上線當天透過電子郵件通知利害關係人保固期間和引數
 
-![顯示發射過程第4階段的圖](../../assets/playbooks/launch-steps-4.svg)
+![顯示啟動程式階段4的圖表](../../assets/playbooks/launch-steps-4.svg)

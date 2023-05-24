@@ -1,6 +1,6 @@
 ---
-title: 專用內容塊的最佳做法
-description: 瞭解配置私有內容塊以優化店面效能的最佳做法。
+title: 私人內容區塊的最佳實務
+description: 瞭解設定私人內容區塊的最佳實務，以最佳化店面效能。
 role: Developer
 feature: Best Practices
 feature-set: Commerce
@@ -12,24 +12,24 @@ ht-degree: 0%
 
 ---
 
-# 專用內容塊的最佳做法
+# 私人內容區塊的最佳實務
 
-當私有內容塊包含 `_isScopePrivate` 變數，該塊不可快取。 由於私有塊未快取，Adobe Commerce必須為每個客戶請求檢索相同的資料，這會增加伺服器負載。
+當私人內容區塊包含 `_isScopePrivate` 變數，無法快取區塊。 由於未快取私密區塊，因此Adobe Commerce必須為每個客戶請求擷取相同的資料，這會增加伺服器負載。
 
-而不是使用 `_isScopePrivate` 為私有內容建立變數，建立塊和模板以顯示用戶不可知的資料。 該資料由Adobe CommerceUI元件用用戶專用資料替換，該元件可更有效地處理預呈現資料。 有關說明，請參見 [專用內容](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) 的 _[!DNL Commerce PHP Extensions Guide]_。
+不要使用 `_isScopePrivate` 變數，建立區塊和範本以顯示與使用者無關的資料。 此資料會由Adobe Commerce UI元件取代為使用者專屬的資料，此元件可更有效率地處理預先呈現的資料。 如需指示，請參閱 [私人內容](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) 在 _[!DNL Commerce PHP Extensions Guide]_.
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 共：
+[所有支援的版本](../../../release/versions.md) 之：
 
-- Adobe Commerce在雲基礎架構上
-- Adobe Commerce內部
+- 雲端基礎結構上的Adobe Commerce
+- Adobe Commerce內部部署
 
-## 潛在效能影響
+## 對效能的潛在影響
 
-具有包含以下內容的私有內容塊的站點 `_isScopePrivate` 變數AJAX觸發請求以檢索每個客戶請求的相同資料。 這增加了響應時間，並使用了可用於處理更多業務關鍵型店面操作的額外資源，如客戶註冊、購物車更新、訂單提交和付款交易。
+具有私人內容區塊的網站，包含 `_isScopePrivate` 變數會觸發AJAX請求，以擷取每個客戶請求的相同資料。 這會增加回應時間，並使用可用於處理更多關鍵業務店面作業的其他資源，例如客戶註冊、購物車更新、訂單提交和付款交易。
 
 ## 其他資訊
 
-- [專用內容](../../../performance/configuration.md#client-side-optimization-settings)
-- [高吞吐量AJAX請求導致效能差](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [私人內容](../../../performance/configuration.md#client-side-optimization-settings)
+- [高輸送量AJAX要求導致效能不佳](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)

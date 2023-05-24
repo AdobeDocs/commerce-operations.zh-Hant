@@ -1,6 +1,6 @@
 ---
-title: MySQL觸發器用法
-description: 瞭解如何在Adobe Commerce中有效使用MySQL觸發器。
+title: MySQL觸發程式使用狀況
+description: 瞭解如何透過Adobe Commerce有效使用MySQL觸發程式。
 role: Developer
 feature-set: Commerce
 feature: Best Practices
@@ -12,40 +12,40 @@ ht-degree: 0%
 
 ---
 
-# MySQL觸發器用法的最佳做法
+# MySQL觸發程式使用的最佳實務
 
-本文介紹了在使用MySQL觸發器時如何避免效能問題。 觸發器用於將更改記錄到審計表中。
+本文說明在使用MySQL觸發程式時如何避免效能問題。 觸發器用於將變更記錄到稽核表中。
 
 ## 受影響的產品和版本
 
-- Adobe Commerce內部
-- Adobe Commerce在雲基礎架構上
+- Adobe Commerce內部部署
+- 雲端基礎結構上的Adobe Commerce
 
 >[!WARNING]
 >
->對於Adobe Commerce的雲項目，在更改生產環境的配置之前，始終test登台環境中的配置更改。
+>對於雲端專案上的Adobe Commerce，在變更生產環境的設定之前，請一律在中繼環境中測試設定變更。
 
 ## 瞭解效能影響
 
-觸發器被解釋為代碼，表示MySQL不預編譯它們。
+觸發器會解譯為程式碼，表示MySQL不會預先編譯它們。
 
-觸發器鈎聯到查詢的事務空間，為使用表執行的每個查詢向解析器和解釋器添加開銷。 觸發器與原始查詢共用相同的事務空間，當這些查詢爭用表上的鎖時，觸發器獨立地爭用另一個表上的鎖。
+掛接到查詢的交易空間時，觸發器會為使用表格執行的每個查詢向剖析器和解譯器增加額外負荷。 觸發程式與原始查詢共用相同的交易空間，當這些查詢爭奪表格上的鎖定時，觸發程式會獨立爭奪其他表格上的鎖定。
 
-如果使用了多個觸發器，則此額外開銷可能會對站點的效能產生負面影響。
+如果使用許多觸發程式，此額外額外開銷可能會對網站上的網站效能造成負面影響。
 
 >[!WARNING]
 >
->Adobe Commerce不支援Adobe Commerce資料庫中的任何自定義觸發器，因為自定義觸發器可能會與未來的Adobe Commerce版本不相容。 有關最佳做法，請參見 [常規MySQL准則](../../../installation/prerequisites/database/mysql.md) 在Adobe Commerce檔案里。
+>Adobe Commerce不支援Adobe Commerce資料庫中的任何自訂觸發器，因為自訂觸發器可能會與未來Adobe Commerce版本不相容。 如需最佳實務，請參閱 [一般MySQL准則](../../../installation/prerequisites/database/mysql.md) (位於Adobe Commerce檔案中)。
 
-## 有效使用觸發器
+## 有效使用觸發程式
 
-要防止在使用觸發器時出現效能問題，請遵循以下准則：
+若要防止使用觸發程式時發生效能問題，請遵循下列准則：
 
-- 如果在執行觸發器時有自定義觸發器寫入某些資料，請移動此邏輯直接寫入審計表。 例如，通過在應用程式碼中添加附加查詢，在要為其建立觸發器的查詢之後添加附加查詢。
-- 查看現有的自定義觸發器，並考慮刪除它們並直接從應用程式端寫入表。 使用 [`SHOW TRIGGERS` SQL陳述式](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html)。
-- 如需其他幫助、問題或關切， [提交Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket)。
+- 如果您有在執行觸發程式時寫入某些資料的自訂觸發程式，請移動此邏輯以直接寫入稽核表格。 例如，在應用程式程式碼中新增其他查詢，然後在您要為其建立觸發器的查詢後執行。
+- 檢閱現有的自訂觸發程式，並考慮移除這些觸發程式，然後直接從應用程式端寫入表格。 使用檢查資料庫中現有的觸發程式 [`SHOW TRIGGERS` SQL陳述式](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
+- 如需其他協助、疑問或顧慮， [提交Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
 
 ## 其他資訊
 
-- [MySQL先決條件](../../../installation/prerequisites/database/mysql.md)
-- [針對Adobe Commerce的雲基礎架構資料庫最佳做法](database-on-cloud.md)
+- [MySQL必要條件](../../../installation/prerequisites/database/mysql.md)
+- [雲端基礎結構上Adobe Commerce的資料庫最佳實務](database-on-cloud.md)

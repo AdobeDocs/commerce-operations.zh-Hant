@@ -1,6 +1,6 @@
 ---
 user-guide-title: 實施行動手冊
-user-guide-description: 瞭解規劃和實施成功的Adobe Commerce站點的戰略。
+user-guide-description: 瞭解規劃及實作成功Adobe Commerce網站的策略。
 mini-toc-levels: 3
 source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
@@ -12,110 +12,110 @@ ht-degree: 0%
 
 # 實施行動手冊 {#implementation-playbook}
 
-- [概述](overview.md)
-- 商業 {#intro}
+- [概觀](overview.md)
+- 商務 {#intro}
    - [關於Adobe Commerce](intro/about-commerce.md)
    - [平台開發原則](intro/platform-development.md)
-- 項目範圍 {#project-scope}
+- 專案範圍 {#project-scope}
    - [知識就是力量](project-scope/knowledge.md)
-   - [主要利益相關方](project-scope/key-stakeholders.md)
+   - [主要利害關係人](project-scope/key-stakeholders.md)
    - [流程和時間表](project-scope/process-timeline.md)
-   - [交付項](project-scope/deliverables.md)
-   - [需求核對表](project-scope/requirement-checklists.md)
+   - [交付專案](project-scope/deliverables.md)
+   - [需求檢查清單](project-scope/requirement-checklists.md)
 - 開發 {#development}
    - [平台工具](development/platform-tools.md)
-   - [項目管理工具](development/project-management-tools.md)
-   - [項目實施方法](development/delivery.md)
-   - [質量控制](development/quality-control.md)
-- 規劃和治理 {#planning}
-   - [交付和規劃方法](planning/delivery.md)
-   - [責任和所有權](planning/ownership.md)
-   - [項目治理](planning/governance.md)
-- 體系結構和整合 {#architecture}
+   - [專案管理工具](development/project-management-tools.md)
+   - [專案實作方法](development/delivery.md)
+   - [品質控制](development/quality-control.md)
+- 規劃與控管 {#planning}
+   - [交付與規劃方法](planning/delivery.md)
+   - [職責與擁有權](planning/ownership.md)
+   - [專案治理](planning/governance.md)
+- 架構與整合 {#architecture}
    - [功能](architecture/capabilities.md)
    - [整合策略](architecture/integration-strategy.md)
-   - [擴展性策略](architecture/extensibility-strategy.md)
+   - [擴充性策略](architecture/extensibility-strategy.md)
    - [整合選項](architecture/integration-options.md)
-   - [全局參考體系結構](architecture/global-reference.md)
-   - 無頭商務 {#headless}
-      - [好處](architecture/headless/benefits.md)
-      - [無頭之旅](architecture/headless/journey-to-headless.md)
+   - [全球參考架構](architecture/global-reference.md)
+   - Headless商務 {#headless}
+      - [優點](architecture/headless/benefits.md)
+      - [Headless歷程](architecture/headless/journey-to-headless.md)
       - [微服務](architecture/headless/microservices.md)
-      - [無頭進化](architecture/headless/evolution.md)
-      - [耦合的店面結構](architecture/headless/legacy-storefront.md)
-      - [無頭架構](architecture/headless/adobe-commerce.md)
-- 基礎架構和部署 {#infrastructure}
-   - [概述](infrastructure/overview.md)
-   - 自主機 {#self-hosting}
-      - [概述](infrastructure/self-hosting/overview.md)
-      - [內部基礎設施](infrastructure/self-hosting/on-premises.md)
-      - [安全概念](infrastructure/self-hosting/security-concepts.md)
-      - [監視遙測和工具](infrastructure/self-hosting/monitoring-tools.md)
-      - [災難恢復理念](infrastructure/self-hosting/disaster-recovery-ideas.md)
+      - [Headless的演化](architecture/headless/evolution.md)
+      - [耦合式店面架構](architecture/headless/legacy-storefront.md)
+      - [Headless架構](architecture/headless/adobe-commerce.md)
+- 基礎結構和部署 {#infrastructure}
+   - [概觀](infrastructure/overview.md)
+   - 自行託管 {#self-hosting}
+      - [概觀](infrastructure/self-hosting/overview.md)
+      - [內部部署基礎結構](infrastructure/self-hosting/on-premises.md)
+      - [安全性概念](infrastructure/self-hosting/security-concepts.md)
+      - [監控遙測和工具](infrastructure/self-hosting/monitoring-tools.md)
+      - [災難回覆概念](infrastructure/self-hosting/disaster-recovery-ideas.md)
       - [效能提示](infrastructure/self-hosting/performance-tips.md)
-   - 雲基礎架構 {#cloud}
-      - [概述](infrastructure/cloud/overview.md)
-      - [區域](infrastructure/cloud/regions.md)
+   - 雲端基礎結構 {#cloud}
+      - [概觀](infrastructure/cloud/overview.md)
+      - [地區](infrastructure/cloud/regions.md)
       - [技術](infrastructure/cloud/technology.md)
       - [環境](infrastructure/cloud/environments.md)
-      - [托管服務](infrastructure/cloud/managed-services.md)
-      - [安全性和合規性](infrastructure/cloud/security.md)
-   - 效能優化 {#performance}
+      - [Managed Services](infrastructure/cloud/managed-services.md)
+      - [安全性與合規性](infrastructure/cloud/security.md)
+   - 效能最佳化 {#performance}
       - [典型問題](infrastructure/performance/optimization.md)
       - [基準](infrastructure/performance/benchmarks.md)
       - [Recommendations](infrastructure/performance/recommendations.md)
-- 啟動準備 {#launch}
-   - [概述](launch/overview.md)
-   - [啟動前步驟](launch/pre-launch-steps.md)
+- Launch整備 {#launch}
+   - [概觀](launch/overview.md)
+   - [啟動前的步驟](launch/pre-launch-steps.md)
    - [啟動步驟](launch/launch-steps.md)
-   - [發佈後步驟](launch/post-launch-steps.md)
-- 維護和支援 {#maintenance}
-   - [概述](maintenance/overview.md)
-   - [Adobe托管服務](maintenance/adobe-managed-services.md)
-- 最佳做法 {#best-practices}
-   - [概述](best-practices/phases.md)
+   - [啟動後的步驟](launch/post-launch-steps.md)
+- 維護與支援 {#maintenance}
+   - [概觀](maintenance/overview.md)
+   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
+- 最佳實務 {#best-practices}
+   - [概觀](best-practices/phases.md)
    - 規劃 {#planning}
-      - [概述](best-practices/planning/overview.md)
-      - [站點、商店和商店視圖配置](best-practices/planning/sites-stores-store-views.md)
-      - [報告配置](best-practices/planning/reporting-configuration.md)
-      - [用於雲部署的資料庫配&#x200B;置](best-practices/planning/database-on-cloud.md)
-      - [MySQL從連接配&#x200B;置](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
-      - [MySQL觸發器用法](best-practices/planning/mysql-triggers-usage.md)
-      - [Redis服務配置](best-practices/planning/redis-service-configuration.md)
+      - [概觀](best-practices/planning/overview.md)
+      - [網站、商店和商店檢視設定](best-practices/planning/sites-stores-store-views.md)
+      - [報告設定](best-practices/planning/reporting-configuration.md)
+      - [雲端部署的資料庫設定&#x200B;](best-practices/planning/database-on-cloud.md)
+      - [MySQL從屬連線組態&#x200B;](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
+      - [MySQL觸發程式使用狀況](best-practices/planning/mysql-triggers-usage.md)
+      - [Redis服務設定](best-practices/planning/redis-service-configuration.md)
       - [OPcache記憶體大小](best-practices/planning/opcache-memory-size.md)
       - [Realpath快取大小](best-practices/planning/realpath-cache-size.md)
       - [類別](best-practices/planning/category-limits.md)
       - [產品](best-practices/planning/product-sku-limits.md)
-      - [產品變體](best-practices/planning/product-variations.md)
+      - [產品變數](best-practices/planning/product-variations.md)
       - [產品選項](best-practices/planning/product-options.md)
       - [產品屬性](best-practices/planning/product-attributes-and-options.md)
       - [產品清單分頁](best-practices/planning/product-listing-pagination.md)
       - [產品購物車限制](best-practices/planning/product-cart.md)
-      - [促銷](best-practices/planning/product-cart-promotions.md)
-      - [擴展](best-practices/planning/extensions.md)
-      - [合作夥伴升級](best-practices/planning/partner-escalation.md)
+      - [促銷活動](best-practices/planning/product-cart-promotions.md)
+      - [擴充功能](best-practices/planning/extensions.md)
+      - [合作夥伴呈報](best-practices/planning/partner-escalation.md)
       - [付款儲存處理](best-practices/planning/payment-processing-storage.md)
    - 開發 {#development}
-      - [概述](best-practices/development/overview.md)
-      - [影像優化](best-practices/development/image-optimization.md)
-      - [故障排除](best-practices/development/troubleshooting.md)
-      - [優化CSS和JS檔案](best-practices/development/optimize-css-js-files.md)
-      - [私有內容塊](best-practices/development/private-content-block-configuration.md)
+      - [概觀](best-practices/development/overview.md)
+      - [影像最佳化](best-practices/development/image-optimization.md)
+      - [疑難排除](best-practices/development/troubleshooting.md)
+      - [最佳化CSS和JS檔案](best-practices/development/optimize-css-js-files.md)
+      - [私人內容區塊](best-practices/development/private-content-block-configuration.md)
       - [靜態內容部署](best-practices/development/static-content-deployment.md)
-      - [修改資料庫表](best-practices/development/modifying-core-and-third-party-tables.md)
-   - 啟動 {#launch}
-      - [概述](best-practices/launch/overview.md)
-      - [Adobe安全通知服務](best-practices/launch/security-notification-service.md)
-      - [配置robots.txt檔案](best-practices/launch/robots-txt.md)
-      - [防止和響應安全事件](best-practices/launch/prevent-respond-security-incident.md)
+      - [修改資料庫表格](best-practices/development/modifying-core-and-third-party-tables.md)
+   - Launch {#launch}
+      - [概觀](best-practices/launch/overview.md)
+      - [Adobe安全性通知服務](best-practices/launch/security-notification-service.md)
+      - [設定robots.txt檔案](best-practices/launch/robots-txt.md)
+      - [預防並回應安全性事件](best-practices/launch/prevent-respond-security-incident.md)
    - 維護 {#maintenance}
-      - [概述](best-practices/maintenance/overview.md)
-      - [審計前期績效](best-practices/maintenance/frontend-performance.md)
-      - [索引器配置](best-practices/maintenance/indexer-configuration.md)
+      - [概觀](best-practices/maintenance/overview.md)
+      - [稽核前端效能](best-practices/maintenance/frontend-performance.md)
+      - [索引器設定](best-practices/maintenance/indexer-configuration.md)
       - [訂單處理](best-practices/maintenance/order-processing-configuration.md)
-      - [計畫生產站點上的管理更新](best-practices/maintenance/scheduling-admin-updates-in-production.md)
+      - [在生產網站上排程管理員更新](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [更新服務](best-practices/maintenance/update-services.md)
-      - [升級核對表](best-practices/maintenance/upgrade-checklist.md)
+      - [升級檢查清單](best-practices/maintenance/upgrade-checklist.md)
       - [解決資料庫效能問題](best-practices/maintenance/resolve-database-performance-issues.md)
-      - [升級MariaDB的先決條件](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
-- [返回操作指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+      - [升級MariaDB的必要條件](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

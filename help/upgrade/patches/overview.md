@@ -1,6 +1,6 @@
 ---
-title: 修補程式的工作方式
-description: 瞭解Adobe Commerce和Magento Open Source的不同類型的修補程式以及它們的工作原理。
+title: 修補程式的運作方式
+description: 瞭解Adobe Commerce和Magento Open Source的各種修補程式型別及其運作方式。
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,67 +9,67 @@ ht-degree: 0%
 
 ---
 
-# 修補程式的工作方式
+# 修補程式的運作方式
 
 >[!WARNING]
 >
->我們強烈建議在部署到生產環境之前，在轉移或開發環境中測試所有修補程式。 我們還強烈建議在應用修補程式之前備份您的資料。 請參閱 [備份並回滾檔案系統](../../installation/tutorials/backup.md)。
+>我們強烈建議先在中繼或開發環境中測試所有修補程式，然後再部署到生產環境。 我們也強烈建議您在套用修補程式前先備份資料。 另請參閱 [備份及回覆檔案系統](../../installation/tutorials/backup.md).
 
-修補（或diff）檔案是注意以下內容的文本檔案：
+修補（或差異）檔案是文字檔，註明：
 
-- 要更改的檔案。
-- 開始更改的行號和要更改的行數。
-- 要交換的新代碼。
+- 要變更的檔案。
+- 開始變更的行號與要變更的行數。
+- 要交換的新程式碼。
 
-運行修補程式程式時，將讀入此檔案並對檔案進行指定的更改。
+執行修補程式時，會讀取此檔案，並對檔案進行指定的變更。
 
-有三種類型的修補程式：
+有三種型別的修補程式：
 
-- **修補程式**-Adobe在 [安全中心](https://magento.com/security/patches)。
-- **單個修補程式**-Adobe Commerce支援根據個別情況建立和分發的修補程式。
-- **自定義修補程式** — 可以從Git提交建立的非官方修補程式。
+- **Hotfix**—Adobe發佈的修補程式 [安全中心](https://magento.com/security/patches).
+- **個別修補程式**—Adobe Commerce支援會個別建立和分發的修補程式。
+- **自訂修補程式** — 您可以從Git認可建立的非正式修補程式。
 
-## 修補程式
+## Hotfix
 
-修補程式是包含影響許多商家的高影響安全性或高質量修補程式的修補程式。 這些修復程式將應用於適用次版本的下一個修補程式版本。 Adobe根據需要釋放修補程式。
+Hotfix是包含高影響力安全性或品質修正（會影響到許多商家）的修補程式。 這些修正會套用至適用次要版本的下一個修補程式發行版本。 Adobe會視需要發行hotfix。
 
-在 [安全中心](https://magento.com/security/patches)。 根據您的版本和安裝類型，請按照頁面上的說明下載修補程式檔案。 使用 [命令行](../patches/apply.md#) 或 [作曲家](../patches/apply.md) 應用熱修復補丁程式。
-
->[!NOTE]
->
->熱修復程式可能包含向後不相容的更改。
-
-## 單個修補程式
-
-單個修補程式包含針對特定問題的低影響質量修復。 這些修復程式應用於最近支援的次版本（例如2.4.x），但可能在以前支援的次版本（例如2.3.x）中缺失。 Adobe根據需要發佈單個修補程式。
-
-使用 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} 應用單個修補程式。
+您可在以下網址找到Hotfix： [安全中心](https://magento.com/security/patches). 根據您的版本和安裝型別，依照頁面上的指示下載修補程式檔案。 使用 [命令列](../patches/apply.md#) 或 [Composer](../patches/apply.md) 以套用hot fix修補程式。
 
 >[!NOTE]
 >
->單個修補程式不包含向後不相容的更改。
+>Hot Fix可能包含回溯不相容的變更。
 
-## 自定義修補程式
+## 個別修補程式
 
-有時，Adobe工程團隊需要一段時間才能在Adobe Commerce或Magento Open Source作曲家版本中包含在GitHub上建立的錯誤修復程式。 同時，您可以從GitHub建立修補程式，並使用 [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) 插件，用於將其應用到基於Composer的安裝。
+個別修補程式包含特定問題的低影響品質修正。 這些修正會套用至最近支援的次要版本（例如2.4.x），但可能從先前支援的次要版本（例如2.3.x）中遺失。 Adobe會視需要發行個別修補程式。
 
-使用 [命令行] 或 [作曲家] 來應用自定義修補程式。
+使用 [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} 以套用個別修補程式。
 
-建立自定義修補程式檔案的方法有很多。 以下示例重點介紹從已知Git提交建立修補程式。
+>[!NOTE]
+>
+>個別修補程式不包含回溯不相容的變更。
 
-要建立自定義修補程式：
+## 自訂修補程式
 
-1. 建立 `patches/composer` 的子菜單。
-1. 標識用於修補程式的GitHub提交或拉入請求。 此示例使用 [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) 提交，連結到GitHub問題 [#6474](https://github.com/magento/magento2/issues/6474)。
-1. 追加 `.patch` 或 `.diff` 提交URL的擴展。 使用 `.diff` 檔案大小。 例如： [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
-1. 將頁面另存為 `patches/composer` 的子菜單。 比如說， `github-issue-6474.diff`。
-1. 編輯檔案並刪除 `app/code/<VENDOR>/<PACKAGE>` 從所有路徑中 `vendor/<VENDOR>/<PACKAGE>` 的子菜單。
+有時Adobe工程團隊需要一點時間，才能在Adobe Commerce或Magento Open Source Composer版本中加入GitHub上的錯誤修正。 同時，您可以從GitHub建立修補程式，並使用 [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) 外掛程式，以將其套用至您的撰寫器式安裝。
+
+使用 [命令列] 或 [Composer] 以套用自訂修補程式。
+
+建立自訂修補程式檔案的方法有很多種。 以下範例著重於從已知的Git認可建立修補程式。
+
+若要建立自訂修補程式：
+
+1. 建立 `patches/composer` 目錄。
+1. 識別要用於修補程式的GitHub認可或提取請求。 此範例使用 [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) 認可，連結至GitHub問題 [#6474](https://github.com/magento/magento2/issues/6474).
+1. 附加 `.patch` 或 `.diff` 認可URL的延伸模組。 使用 `.diff` 以縮小檔案大小。 例如： [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
+1. 將頁面另存為中的檔案 `patches/composer` 目錄。 例如， `github-issue-6474.diff`.
+1. 編輯檔案並移除 `app/code/<VENDOR>/<PACKAGE>` 從所有路徑，使它們相對於 `vendor/<VENDOR>/<PACKAGE>` 目錄。
 
    >[!NOTE]
    >
-   >自動刪除尾隨空格或添加新行的文本編輯器可以中斷修補程式。 使用簡單的文本編輯器進行這些更改。
+   >自動移除尾端空白字元或新增行的文字編輯器可能會破壞修補程式。 使用簡單的文字編輯器進行這些變更。
 
-以下示例顯示了刪除所有實例後前面提到的DIFF檔案 `app/code/Magento/Payment`:
+以下範例顯示移除所有例項之後，先前提及的DIFF檔案 `app/code/Magento/Payment`：
 
 ```diff
 diff --git a/view/frontend/web/js/view/payment/iframe.js b/view/frontend/web/js/view/payment/iframe.js
@@ -86,14 +86,14 @@ index c8a6fef58d31..7d01c195791e 100644
              },
 ```
 
-## 應用修補程式
+## 套用修補程式
 
-可以使用以下任何方法應用修補程式：
+您可以使用下列任一方法來套用修補程式：
 
 - [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
-- [命令行](/help/upgrade/patches/apply.md#command-line)
-- [作曲家](/help/upgrade/patches/apply.md#composer)
+- [命令列](/help/upgrade/patches/apply.md#command-line)
+- [Composer](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->要在雲基礎架構項目上將修補程式應用到Adobe Commerce，請參閱 [應用修補程式](https://devdocs.magento.com/cloud/project/project-patch.html) 的 _雲指南_。
+>若要將修補程式套用至雲端基礎結構專案上的Adobe Commerce，請參閱 [套用修補程式](https://devdocs.magento.com/cloud/project/project-patch.html) 在 _雲端指南_.

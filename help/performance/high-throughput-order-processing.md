@@ -1,6 +1,6 @@
 ---
-title: 高吞吐量訂單處理
-description: 優化您的Adobe Commerce或Magento Open Source部署的訂單投放和結帳體驗。
+title: 高輸送量訂單處理
+description: 為您的Adobe Commerce或Magento Open Source部署最佳化訂單放置和簽出體驗。
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,36 +9,36 @@ ht-degree: 0%
 
 ---
 
-# 高吞吐量訂單處理
+# 高輸送量訂單處理
 
-通過配置以下一組模組，您可以優化訂單放置和結帳體驗 **高吞吐量訂單處理**:
+您可以設定下列模組集，以最佳化訂單放置和結帳體驗 **高輸送量訂單處理**：
 
-- [非同步順序](#asynchronous-order-placement) — 使用隊列非同步處理訂單。
-- [延遲的總計計算](#deferred-total-calculation) — 在簽出開始之前，將定義訂單合計的計算。
-- [報價載入時庫存檢查](#disable-inventory-check) — 選擇跳過購物車物料的庫存驗證。
+- [AsyncOrder](#asynchronous-order-placement) — 使用佇列以非同步方式處理訂單。
+- [遞延總計計算](#deferred-total-calculation) — 將訂單總計的計算延遲到結帳開始。
+- [報價載入時的存貨檢查](#disable-inventory-check) — 選擇略過購物車專案的存貨驗證。
 
-所有功能（AsyncOrder、延遲總計計算和清單檢查）均獨立工作。 您可以同時使用所有三種功能，或在任意組合中啟用和禁用功能。
+所有特徵（AsyncOrder、Deferred Total Calculation和Inventory Check）可獨立運作。 您可以同時使用全部三個功能，或以任何組合來啟用和停用功能。
 
-## 非同步訂單放置
+## 非同步下訂單
 
-的 _非同步順序_ 模組啟用非同步訂單放置，將訂單標籤為 `received`，將訂單置於隊列中，並按先入先出的基準處理來自隊列的訂單。 AsyncOrder為 **禁用** 預設值。
+此 _非同步順序_ 模組會啟用非同步訂單放置，這會將訂單標示為 `received`，將訂單放入佇列中，然後以先進先出原則處理佇列中的訂單。 非同步順序為 **已停用** 依預設。
 
-例如，客戶將產品添加到購物車中並選擇 **[!UICONTROL Proceed to Checkout]**。 他們填寫 **[!UICONTROL Shipping Address]** 窗體，選擇其首選 **[!UICONTROL Shipping Method]**，然後選擇付款方法並下訂單。 購物車已清除，訂單標籤為 **[!UICONTROL Received]**，但產品數量尚未調整，也未向客戶發送銷售電子郵件。 已接收訂單，但訂單詳細資訊尚未可用，因為訂單尚未完全處理。 它會一直保留在隊列中，直到 `placeOrderProcess` 消費者開始，與 [庫存檢查](#disable-inventory-check) 功能（預設啟用），並按如下方式更新順序：
+例如，客戶將產品新增至購物車並選取 **[!UICONTROL Proceed to Checkout]**. 他們填寫 **[!UICONTROL Shipping Address]** 表單，選取其偏好設定 **[!UICONTROL Shipping Method]**，選取付款方式，然後下訂單。 購物車已清除，訂單已標籤為 **[!UICONTROL Received]**，但產品數量尚未調整，也不會傳送銷售電子郵件給客戶。 已收到訂單，但訂單詳細資料尚未提供，因為訂單尚未完全處理。 它會保留在佇列中，直到 `placeOrderProcess` 消費者開始，驗證訂單 [詳細目錄檢查](#disable-inventory-check) 功能（預設為啟用），並更新訂單，如下所示：
 
-- **產品可用** — 訂單狀態更改為 _待定_&#x200B;調整產品數量，向客戶發送包含訂單詳細資訊的電子郵件，成功的訂單詳細資訊可在 **訂單和退貨** 清單，其中包含可操作的選項，如重新排序。
-- **產品庫存不足或供應不足** — 訂單狀態更改為 _已拒絕_，產品數量不會調整，將向客戶發送包含有關問題的訂單詳細資訊的電子郵件，拒絕的訂單詳細資訊將在 **訂單和退貨** 清單中沒有可操作的選項。
+- **可用的產品** — 訂單狀態變更為 _擱置中_，則會調整產品數量，傳送一封包含訂單詳細資料的電子郵件給客戶，而成功的訂單詳細資料便可在 **訂購與退貨** 包含可操作選項的清單，例如重新排序。
+- **產品無庫存或供給不足** — 訂單狀態變更為 _已拒絕_，不會調整產品數量，會傳送一封包含問題詳細資訊的電子郵件給客戶，而遭到拒絕的訂單詳細資訊會顯示在 **訂購與退貨** 沒有可操作選項的清單。
 
-使用命令行介面啟用這些功能，或編輯 `app/etc/env.php` 檔案，根據中定義的相應README檔案 [_模組參考指南_][mrg]。
+使用命令列介面來啟用這些功能，或編輯 `app/etc/env.php` 檔案中定義的對應README檔案 [_模組參考指南_][mrg].
 
-**啟用AsyncOrder**:
+**啟用AsyncOrder**：
 
-可以使用命令行介面啟用AsyncOrder:
+您可以使用命令列介面來啟用AsyncOrder：
 
 ```bash
 bin/magento setup:config:set --checkout-async 1
 ```
 
-的 `set` 命令將以下內容寫入 `app/etc/env.php` 檔案：
+此 `set` 命令會將下列內容寫入 `app/etc/env.php` 檔案：
 
 ```conf
 ...
@@ -47,21 +47,21 @@ bin/magento setup:config:set --checkout-async 1
    ]
 ```
 
-請參閱 [非同步順序] 的 _模組參考指南_。
+另請參閱 [AsyncOrder] 在 _模組參考指南_.
 
-**禁用AsyncOrder**:
+**停用AsyncOrder**：
 
 >[!WARNING]
 >
->在禁用AsyncOrder模組之前，必須驗證 _全部_ 非同步訂單過程已完成。
+>在停用AsyncOrder模組之前，您必須確認 _全部_ 非同步訂購程式已完成。
 
-可以使用命令行介面禁用AsyncOrder:
+您可以使用命令列介面停用AsyncOrder：
 
 ```bash
 bin/magento setup:config:set --checkout-async 0
 ```
 
-的 `set` 命令將以下內容寫入 `app/etc/env.php` 檔案：
+此 `set` 命令會將下列內容寫入 `app/etc/env.php` 檔案：
 
 ```conf
 ...
@@ -72,62 +72,62 @@ bin/magento setup:config:set --checkout-async 0
 
 ### AsyncOrder相容性
 
-AsyncOrder支援有限集 [!DNL Commerce] 功能。
+AsyncOrder支援有限的 [!DNL Commerce] 功能。
 
 | 類別 | 支援的功能 |
 |------------------|--------------------------------------------------------------------------|
-| 簽出類型 | OnePage簽出<br>標準簽出<br>B2B可轉讓報價 |
-| 付款方法 | 支票/貨幣訂單<br>交貨現金<br>Braintree<br>PayPal PayFlow專業版 |
-| 裝運方法 | 支援所有發運方法。 |
+| 簽出型別 | OnePage結帳<br>標準簽出<br>B2B可轉讓報價 |
+| 付款方法 | 支票/匯票<br>貨到付款<br>Braintree<br>PayPal PayFlow Pro |
+| 送貨方法 | 支援所有送貨方法。 |
 
-以下功能包括 **不** 受AsyncOrder支援，但繼續同步工作：
+下列功能為 **not** 支援AsyncOrder，但可繼續同步運作：
 
-- 支援的功能清單中未包括的付款方法
-- 多地址簽出
+- 支援的功能清單中未包含付款方法
+- 多重地址簽出
 - 管理訂單建立
 
 #### Web API支援
 
-啟用AsyncOrder模組後，以下REST端點和GraphQL突變非同步運行：
+啟用AsyncOrder模組後，下列REST端點和GraphQL變動會以非同步方式執行：
 
-**休息：**
+**REST：**
 
 - `POST /V1/carts/mine/payment-information`
 - `POST /V1/guest-carts/:cartId/payment-information`
 - `POST /V1/negotiable-carts/:cartId/payment-information`
 
-**GraphQL:**
+**GraphQL：**
 
 - [`placeOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/place-order.html)
 - [`setPaymentMethodAndPlaceOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/set-payment-place-order.html)
 
 >[!INFO]
 >
->GraphQL不支援非同步下單。
+>GraphQL不支援以非同步方式放置可轉讓的報價單。
 
-#### 排除付款方法
+#### 排除付款方式
 
-開發人員可以通過將某些付款方法添加到 `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` 陣列。 使用排除的付款方法的訂單將同步處理。
+開發人員可將某些付款方法新增至「 」，以明確將其從「非同步下單」中排除。 `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` 陣列。 使用已排除付款方法的訂單會同步處理。
 
 ### 可轉讓報價非同步訂單
 
-的 _可轉讓報價非同步訂單_ B2B模組使您能夠非同步保存訂單項 `NegotiableQuote` 功能。 您必須啟用AsyncOrder和CondigateQuote。
+此 _可轉讓報價非同步訂單_ B2B模組可讓您以非同步方式為 `NegotiableQuote` 功能。 您必須啟用AsyncOrder和NegotiableQuote。
 
-## 延遲的總計計算
+## 遞延總計計算
 
-的 _延遲的總計計算_ 模組通過延遲總計計算來優化結帳過程，直到為購物車請求總計計算或在最終結帳步驟期間。 啟用後，當客戶將產品添加到購物車時，只計算小計。
+此 _遞延總計計算_ 模組會藉由將總計算延後至購物車要求結帳程式或進行最終結帳步驟時，來最佳化結帳程式。 啟用時，只有小計會在客戶新增產品至購物車時計算。
 
-DeferredTotalCalculation為 **禁用** 預設值。 使用命令行介面啟用這些功能，或編輯 `app/etc/env.php` 檔案，根據中定義的相應README檔案 [_模組參考指南_][mrg]。
+DeferredTotalCalculation為 **已停用** 依預設。 使用命令列介面來啟用這些功能，或編輯 `app/etc/env.php` 檔案中定義的對應README檔案 [_模組參考指南_][mrg].
 
-**啟用DeferedTotalCalculation**:
+**若要啟用DeferredTotalCalculation**：
 
-可以使用命令行介面啟用DeferredTotalCalculation:
+您可以使用命令列介面來啟用DeferredTotalCalculation：
 
 ```bash
 bin/magento setup:config:set --deferred-total-calculating 1
 ```
 
-的 `set` 命令將以下內容寫入 `app/etc/env.php` 檔案：
+此 `set` 命令會將下列內容寫入 `app/etc/env.php` 檔案：
 
 ```conf
 ...
@@ -136,15 +136,15 @@ bin/magento setup:config:set --deferred-total-calculating 1
    ]
 ```
 
-**禁用DeferredTotalCalculation**:
+**停用DeferredTotalCalculation**：
 
-可以使用命令行介面禁用DeferredTotalCalculation:
+您可以使用命令列介面停用DeferredTotalCalculation：
 
 ```bash
 bin/magento setup:config:set --deferred-total-calculating 0
 ```
 
-的 `set` 命令將以下內容寫入 `app/etc/env.php` 檔案：
+此 `set` 命令會將下列內容寫入 `app/etc/env.php` 檔案：
 
 ```conf
 ...
@@ -153,27 +153,27 @@ bin/magento setup:config:set --deferred-total-calculating 0
    ]
 ```
 
-請參閱 [DeferredTotalCalculating] 的 _模組參考指南_。
+另請參閱 [DeferredTotalCalculating] 在 _模組參考指南_.
 
-### 固定產品稅
+### 固定產品稅金
 
-啟用DeferredTotalCalculation後，在將產品添加到購物車後，固定產品稅(FPT)不包括在迷你購物車的產品價格和購物車小計中。 將產品添加到迷你購物車時，FPT計算將被延遲。 在進行最終結帳後，FPT將正確顯示在購物車中。
+啟用DeferredTotalCalculation時，將產品新增至購物車後，固定產品稅(FPT)不會包含在迷你購物車的產品價格和購物車小計中。 將產品新增至迷你購物車時，FPT計算會延遲。 繼續進行最終結帳後，FPT在購物車中正確顯示。
 
-## 禁用清單檢查
+## 停用詳細目錄檢查
 
-的 _啟用購物車裝載上的清單_ 全局設定確定在將產品裝入購物車時是否執行庫存檢查。 禁用庫存檢查流程可提高所有結帳步驟的效能，特別是在處理購物車中的批量產品時。
+此 _在購物車載入時啟用詳細目錄_ 全域設定決定在購物車中載入產品時是否執行庫存檢查。 停用庫存檢查程式可改善所有結帳步驟的效能，尤其是處理購物車中的大量產品時。
 
-禁用時，在將產品添加到購物車時不會執行庫存檢查。 如果跳過此庫存檢查，則某些庫存不足方案可能會引發其他類型的錯誤。 庫存檢查 _總是_ 在訂單放置步驟中出現，即使禁用。
+停用時，將產品新增至購物車時不會進行詳細目錄檢查。 如果略過此庫存檢查，則某些缺貨情況可能會擲回其他型別的錯誤。 詳細目錄檢查 _一律_ 在訂單放置步驟中發生，即使已停用亦然。
 
-**啟用購物車裝貨時的庫存檢查** 在預設情況下啟用（設定為「是」）。 要在載入購物車時禁用庫存檢查，請設定 **[!UICONTROL Enable Inventory Check On Cart Load]** 至 `No` 在管理員UI中 **商店** > **配置** > **目錄** > **庫存** > **股票期權** 的子菜單。 請參閱 [配置全局選項][global] 和 [目錄清單][inventory] 的 _使用手冊_。
+**在購物車載入時啟用詳細目錄檢查** 預設為啟用（設定為「是」）。 若要在載入購物車時停用詳細目錄檢查，請設定 **[!UICONTROL Enable Inventory Check On Cart Load]** 至 `No` 在Admin UI中 **商店** > **設定** > **目錄** > **詳細目錄** > **股票期權** 區段。 另請參閱 [設定全域選項][global] 和 [目錄詳細目錄][inventory] 在 _使用手冊_.
 
 ## 負載平衡
 
-通過為MySQL資料庫和Redis實例啟用輔助連接，可幫助平衡不同節點間的負載。
+您可以啟用MySQL資料庫和Redis執行個體的次要連線，以平衡不同節點之間的負載。
 
-Adobe Commerce可以非同步讀取多個資料庫或Redis實例。 如果在雲基礎架構上使用Commerce，則可以通過編輯 [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) 和 [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) 值 `.magento.env.yaml` 的子菜單。 只需要一個節點來處理讀寫通信，因此將變數設定為 `true` 導致為只讀通信建立輔助連接。 將值設定為 `false` 從 `env.php` 的子菜單。
+Adobe Commerce可以非同步方式讀取多個資料庫或Redis執行個體。 如果您在雲端基礎結構上使用Commerce，您可以透過編輯 [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) 和 [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) 中的值 `.magento.env.yaml` 檔案。 只需一個節點處理讀寫流量，因此將變數設定為 `true` 會為唯讀流量建立次要連線。 將值設定為 `false` 以從移除任何現有的唯讀連線陣列 `env.php` 檔案。
 
-示例 `.magento.env.yaml` 檔案：
+範例： `.magento.env.yaml` 檔案：
 
 ```yaml
 stage:
@@ -187,5 +187,5 @@ stage:
 [global]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/global-options.html
 [inventory]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html
 [mrg]: https://developer.adobe.com/commerce/php/module-reference/
-[非同步順序]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
+[AsyncOrder]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
 [DeferredTotalCalculating]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/

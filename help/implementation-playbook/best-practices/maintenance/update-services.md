@@ -1,6 +1,6 @@
 ---
-title: 更新服務最佳做法
-description: 瞭解如何使您的Adobe Commerce在雲基礎架構技術堆棧上保持更新。
+title: 更新服務最佳實務
+description: 瞭解如何保持雲端基礎結構技術棧疊上的Adobe Commerce更新。
 role: Developer
 feature: Best Practices
 feature-set: Commerce
@@ -12,32 +12,32 @@ ht-degree: 0%
 
 ---
 
-# 更新服務最佳做法
+# 更新服務最佳實務
 
-本文提供建議，讓您的Adobe Commerce保持雲基礎架構技術堆棧的更新，並提供指向有用資源的連結。
+本文提供建議讓雲端基礎結構技術棧疊上的Adobe Commerce保持更新，並提供實用資源的連結。
 
 ## 受影響的產品和版本
 
-Adobe Commerce在雲基礎架構2.4.x及更高版本上
+雲端基礎結構上的Adobe Commerce 2.4.x和更新版本
 
 ## 更新服務
 
-在Adobe Commerce使用的服務和元件到達或接近生命週期結束之前升級它們。 這有助於跟上PCI合規性並減少安全漏洞。
+在Adobe Commerce使用的服務和元件達到或接近其生命週期結束日期之前，請升級這些服務和元件。 這有助於遵循PCI法規並減少安全性漏洞。
 
-Starter計畫中的客戶可以在服務升級上自助服務。 請參閱 [更改服務版本](https://devdocs.magento.com/cloud/project/services.html#change-service-version) 詳細瞭解如何執行此操作。
+入門計畫客戶可自助服務升級。 請參閱 [變更服務版本](https://devdocs.magento.com/cloud/project/services.html#change-service-version) 以取得如何執行此動作的詳細資訊。
 
-專業計畫客戶只能在他們的服務升級中自助服務 [整合環境](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html)。 對於生產上的服務升級，您必須 [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 請求升級。
+Pro計畫的客戶只能自助服務升級其服務 [整合環境](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). 若要在生產環境中升級服務，您必須 [提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 要求升級。
 
 >[!WARNING]
 >
->如果沒有48個工作小時的通知，無法將服務升級推送到生產環境。 這是必需的，因為我們需要確保我們有一個基礎架構支援工程師，可以在期望的時間範圍內更新您的配置，同時將生產環境的宕機時間降到最低。
+>若未提前48個營業時間通知我們的基礎建設團隊，服務升級便無法推送至生產環境。 由於我們需要確保我們提供基礎架構支援工程師，以在所需時間範圍內更新您的設定，並將生產環境的停機時間降至最低，因此我們有必要採取此做法。
 
-您可以在以下檔案中查看服務版本和終止日期的清單： [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml)。
+您可以在下列檔案中檢視服務版本和生命週期結束日期的清單： [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 >[!NOTE]
 >
->此檔案不能被視為一個真相來源。 如果有疑問，請參閱這些技術的官方供應商網站。
+>此檔案不可以視為單一信任來源。 如有疑問，請參閱官方廠商網站以瞭解這些技術。
 
 ## 其他資訊
 
-[系統要求](../../../installation/system-requirements.md)
+[系統需求](../../../installation/system-requirements.md)

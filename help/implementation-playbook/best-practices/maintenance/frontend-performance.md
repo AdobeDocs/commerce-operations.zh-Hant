@@ -1,6 +1,6 @@
 ---
-title: 審計前期績效
-description: 通過使用Web效能工具審核Adobe Commerce店面運營，確定並解決對站點效能產生負面影響的問題。
+title: 稽核前端效能
+description: 透過使用網站效能工具稽核Adobe Commerce店面作業，找出並解決對網站效能有負面影響的問題。
 role: Admin, User, Developer
 feature: Best Practices
 feature-set: Commerce
@@ -12,31 +12,31 @@ ht-degree: 0%
 
 ---
 
-# 前端效能的最佳做法
+# 前端效能的最佳實務
 
-使用Web效能工具檢查您的Adobe Commerce商店的前端效能。
-這些工具使用各種指標來提供強大的洞察力和建議，以改進您的線上商店的效能。
+使用網頁效能工具來檢查Adobe Commerce商店的前端效能。
+這些工具會使用各種量度，提供強大的分析和建議，以改善線上商店的效能。
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 共：
+[所有支援的版本](../../../release/versions.md) 之：
 
-- Adobe Commerce在雲基礎架構上
-- Adobe Commerce內部
+- 雲端基礎結構上的Adobe Commerce
+- Adobe Commerce內部部署
 
 ## 檢查前端效能
 
-要檢查網站商店的前端效能，請執行以下操作：
+若要檢查網站商店的前端效能：
 
-1. 使用Web效能工具(如：
+1. 使用Web效能工具稽核前端效能，例如：
 
-   - **[Google燈塔](https://web.dev/measure/)**— Lighthouse對效能、可訪問性、漸進式Web應用、SEO等進行審核。 有關不同方式運行燈塔的詳細資訊，請參閱 [燈塔概述](https://developer.chrome.com/docs/lighthouse/overview)。)
-   - **[GooglePageSpeed Insights](https://pagespeed.web.dev/)**— PageSpeed Insights快速提供有關網頁效能下降原因的詳細報告以及有關如何修復它的建議。
+   - **[Google燈塔](https://web.dev/measure/)**— Lighthouse針對效能、協助工具、漸進式網頁應用程式、SEO等專案進行稽核。 如需執行Lighthouse的不同方式的詳細資訊，請參閱 [Lighthouse概述](https://developer.chrome.com/docs/lighthouse/overview).)
+   - **[Google PageSpeed深入分析](https://pagespeed.web.dev/)**— PageSpeed Insights可快速傳送詳細報告，說明網頁效能緩慢的原因，並提供修正建議。
 
-1. 審查審計報告，並實施為改進儲存效能而提供的建議。
+1. 檢閱稽核報告並實作所提出的建議以改善商店效能。
 
 ## 其他資訊
 
-- [管理員用戶的索引管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
+- [管理員使用者的索引管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
 - [使用CLI進行索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
-- [開發人員索引概述](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [適用於開發人員的索引概觀](https://developer.adobe.com/commerce/php/development/components/indexing/)

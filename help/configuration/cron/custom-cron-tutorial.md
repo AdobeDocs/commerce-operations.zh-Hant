@@ -1,6 +1,6 @@
 ---
-title: 配置自定義cron作業和cron組（教程）
-description: 使用此逐步教程可建立自定義cron作業。
+title: 設定自訂cron工作和cron群組（教學課程）
+description: 使用此逐步教學課程來建立自訂cron工作。
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,57 +9,57 @@ ht-degree: 0%
 
 ---
 
-# 配置自定義cron作業
+# 設定自訂cron工作
 
-本逐步教程介紹如何在示例模組中建立自定義cron作業和（可選）cron組。 您可以使用已擁有的模組，也可以使用我們的 [`magento2-samples` 儲存庫][samples]。
+此逐步教學課程說明如何在範例模組中建立自訂cron工作以及選用的cron群組。 您可以使用已擁有的模組，也可以使用我們的範例模組 [`magento2-samples` 存放庫][samples].
 
-運行cron作業將導致將一行添加到 `cron_schedule` 表格中包含cron作業的名稱， `custom_cron`。
+執行cron工作會導致將一列新增到 `cron_schedule` 具有cron作業名稱的表格， `custom_cron`.
 
-我們還將向您顯示如何選擇建立cron組，您可以使用該組運行自定義cron作業，其設定不是Commerce應用程式預設值。
+我們也會說明如何選擇性建立cron群組，以便使用商業應用程式預設值以外的設定來執行自訂cron工作。
 
-在本教程中，我們假定：
+在本教學課程中，我們假設以下事項：
 
-- Commerce應用程式安裝在 `/var/www/html/magento2`
-- 您的Commerce資料庫用戶名和密碼都 `magento`
-- 執行所有操作時 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md)
+- 商務應用程式安裝在 `/var/www/html/magento2`
+- 您的Commerce資料庫使用者名稱和密碼都是 `magento`
+- 您以「 」身分執行所有動作 [檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)
 
-## 步驟1:獲取示例模組
+## 步驟1：取得範例模組
 
-要設定自定義cron作業，需要一個示例模組。 我們建議 `magento-module-minimal` 中。
+若要設定自訂cron工作，您需要範例模組。 我們建議 `magento-module-minimal` 模組。
 
-如果您已經有了示例模組，則可以使用它；跳過此步驟和下一步，繼續執行步驟3:建立要運行cron的類。
+如果您已經有範例模組，可以使用它；跳過此步驟和下一個步驟，並繼續步驟3：建立類別以執行cron。
 
-**獲取示例模組**:
+**取得範例模組的方式**：
 
-1. 將Commerce伺服器作為或切換到 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md)。
-1. 更改為不在Commerce應用程式根目錄（例如，主目錄）中的目錄。
-1. 克隆 [`magento2-samples` 儲存庫][samples]。
+1. 以或切換為身分登入您的Commerce伺服器， [檔案系統擁有者](../../installation/prerequisites/file-system/overview.md).
+1. 變更至不在Commerce應用程式根目錄中的目錄（例如主目錄）。
+1. 原地複製 [`magento2-samples` 存放庫][samples].
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   如果命令失敗並出現錯誤 `Permission denied (publickey).`，必須 [將SSH公鑰添加到GitHub.com][git-ssh]。
+   如果命令失敗並出現錯誤 `Permission denied (publickey).`，您必須 [將您的SSH公開金鑰新增至GitHub.com][git-ssh].
 
-1. 建立要將示例代碼複製到的目錄：
+1. 建立要將範常式式碼複製到其中的目錄：
 
    ```bash
    mkdir -p /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
-1. 複製示例模組代碼：
+1. 複製範例模組程式碼：
 
    ```bash
    cp -r ~/magento2-samples/sample-module-minimal/* /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
-1. 驗證複製的檔案是否正確：
+1. 確認檔案已正確複製：
 
    ```bash
    ls -al /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
-   您應看到以下結果：
+   您應該會看到下列結果：
 
    ```terminal
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
@@ -73,7 +73,7 @@ ht-degree: 0%
    drwxrwsr-x.   3 magento_user apache  4096 Oct 30 13:19 Test
    ```
 
-1. 更新Commerce資料庫和架構：
+1. 更新Commerce資料庫和結構描述：
 
    ```bash
    bin/magento setup:upgrade
@@ -85,17 +85,17 @@ ht-degree: 0%
    bin/magento cache:clean
    ```
 
-## 步驟2:驗證示例模組
+## 步驟2：驗證範例模組
 
-在繼續之前，請驗證示例模組是否已註冊並啟用。
+繼續之前，請確認範例模組已註冊並啟用。
 
-1. 運行以下命令：
+1. 執行以下命令：
 
    ```bash
    bin/magento module:status Magento_SampleMinimal
    ```
 
-1. 確保模組已啟用。
+1. 確認模組已啟用。
 
    ```terminal
    Module is enabled
@@ -103,21 +103,21 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果輸出指示 `Module does not exist`查看 [步驟1](#step-1-get-a-sample-module) 小心點。 確保代碼位於正確的目錄中。 拼寫和大小寫很重要；如果有任何不同，則不載入模組。 還有，別忘了跑 `magento setup:upgrade`。
+>如果輸出指示 `Module does not exist`，檢閱 [步驟1](#step-1-get-a-sample-module) 請小心。 確定您的程式碼位於正確的目錄中。 拼字與大小寫很重要；如果有任何差異，則不會載入模組。 此外，別忘了執行 `magento setup:upgrade`.
 
-## 第3步：建立要運行cron的類
+## 步驟3：建立類別以執行cron
 
-此步驟顯示一個用於建立cron作業的簡單類。 類只向 `cron_schedule` 確認已成功設定的表。
+此步驟顯示建立cron作業的簡單類別。 類別只會將一列寫入至 `cron_schedule` 確認其設定成功的表格。
 
-要建立類：
+若要建立類別，請執行下列動作：
 
-1. 為類建立目錄並更改到該目錄：
+1. 為類別建立目錄，並變更至該目錄：
 
    ```bash
    mkdir /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron && cd /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron
    ```
 
-1. 已建立名為 `Test.php` 目錄中的以下內容：
+1. 已建立名為的檔案 `Test.php` 目錄中包含下列內容：
 
    ```php
    <?php
@@ -143,11 +143,11 @@ ht-degree: 0%
    }
    ```
 
-## 第4步：建立 `crontab.xml`
+## 步驟4：建立 `crontab.xml`
 
-的 `crontab.xml` 檔案設定運行自定義cron代碼的計畫。
+此 `crontab.xml` 檔案會設定執行自訂cron程式碼的排程。
 
-建立 `crontab.xml` 如下 `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` 目錄：
+建立 `crontab.xml` 如下所示 `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` 目錄：
 
 ```xml
 <?xml version="1.0"?>
@@ -160,9 +160,9 @@ ht-degree: 0%
 </config>
 ```
 
-前面 `crontab.xml` 運行 `Magento/SampleMinimal/Cron/Test.php` 類每分鐘一次，導致行被添加到 `cron_schedule` 的子菜單。
+先前 `crontab.xml` 執行 `Magento/SampleMinimal/Cron/Test.php` 每分鐘會分類一次，結果會將一列新增至 `cron_schedule` 表格。
 
-要使cron計畫可以從管理員配置，請使用系統配置欄位的配置路徑。
+若要讓cron排程可從管理員設定，請使用系統設定欄位的設定路徑。
 
 ```xml
 <?xml version="1.0"?>
@@ -175,45 +175,45 @@ ht-degree: 0%
 </config>
 ```
 
-哪裡， `system/config/path` 是中定義的系統配置路徑 `etc/adminhtml/system.xml` 的下界。
+其中， `system/config/path` 是中定義的系統設定路徑 `etc/adminhtml/system.xml` 模組的。
 
-## 第5步：編譯和快取清除
+## 步驟5：編譯和快取清除
 
-使用以下命令編譯代碼：
+使用以下命令編譯程式碼：
 
 ```bash
 bin/magento setup:di:compile
 ```
 
-然後使用以下命令清除快取：
+並使用以下命令清除快取：
 
 ```bash
 bin/magento cache:clean
 ```
 
-## 步驟6:驗證cron作業
+## 步驟6：驗證cron工作
 
-此步驟說明如何使用上的SQL查詢成功驗證自定義cron作業 `cron_schedule` 資料庫表。
+此步驟顯示如何在上使用SQL查詢來成功驗證自訂cron作業。 `cron_schedule` 資料庫表格。
 
-要驗證cron:
+驗證cron：
 
-1. 運行Commerce cron作業：
+1. 執行Commerce cron工作：
 
    ```bash
    bin/magento cron:run
    ```
 
-1. 輸入 `magento cron:run` 命令。
+1. 輸入 `magento cron:run` 命令兩或三次。
 
-   第一次輸入命令時，它會對作業排隊；隨後，運行cron作業。 必須輸入命令 _至少_ 兩次。
+   第一次輸入命令時，它會排入工作佇列；接著，就會執行cron工作。 您必須輸入指令 _至少_ 兩次。
 
-1. 運行SQL查詢 `SELECT * from cron_schedule WHERE job_code like '%custom%'` 如下：
+1. 執行SQL查詢 `SELECT * from cron_schedule WHERE job_code like '%custom%'` 如下所示：
 
    1. 輸入 `mysql -u magento -p`
    1. 在 `mysql>` 提示，輸入 `use magento;`
    1. 輸入 `SELECT * from cron_schedule WHERE job_code like '%custom%';`
 
-      結果應與以下內容類似：
+      結果應類似於以下內容：
 
       ```terminal
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -226,37 +226,37 @@ bin/magento cache:clean
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       ```
 
-1. （可選）驗證消息是否寫入Commerce的系統日誌：
+1. （選用）確認訊息已寫入Commerce的系統記錄檔：
 
    ```bash
    cat /var/www/html/magento2/var/log/system.log
    ```
 
-   您應看到以下一個或多個條目：
+   您應該會看到一或多個類似下列的專案：
 
    ```terminal
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
-   這些消息來自 `execute` 方法 `Test.php`:
+   這些訊息來自 `execute` 中的方法 `Test.php`：
 
    ```php
    public function execute() {
         $this->logger->info('Cron Works');
    ```
 
-如果SQL命令和系統日誌不包含任何條目，請運行 `magento cron:run` 再命令幾次，然後等待。 資料庫更新可能需要一些時間。
+如果SQL命令和系統記錄檔不包含任何專案，請執行 `magento cron:run` 再命令幾次，然後等待。 更新資料庫可能需要一些時間。
 
-## 步驟7（可選）:設定自定義克隆組
+## 步驟7 （選用）：設定自訂cron群組
 
-此步驟說明如何根據需要設定自定義克隆組。 如果希望自定義cron作業以不同於其他cron作業的計畫運行（通常為每分鐘一次），或者希望使用不同設定運行多個自定義cron作業，則應設定自定義cron組。
+此步驟顯示如何選擇性設定自訂cron群組。 如果您希望自訂cron工作以與其他cron工作不同的排程執行（通常每分鐘執行一次），或如果您希望多個自訂cron工作以不同的設定執行，則應設定自訂cron群組。
 
-要設定自定義克隆組：
+若要設定自訂cron群組：
 
-1. 開啟 `crontab.xml` 的子菜單。
-1. 更改 `<group id="default">` 至 `<group id="custom_crongroup">`
-1. 退出文本編輯器。
-1. 建立 `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc/cron_groups.xml` 內容如下：
+1. 開啟 `crontab.xml` 在文字編輯器中。
+1. 變更 `<group id="default">` 至 `<group id="custom_crongroup">`
+1. 退出文字編輯器。
+1. 建立 `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc/cron_groups.xml` 包含下列內容：
 
    ```xml
    <?xml version="1.0"?>
@@ -273,21 +273,21 @@ bin/magento cache:clean
    </config>
    ```
 
-有關選項含義的說明，請參見 [自定義crons引用](custom-cron-reference.md)。
+如需選項含義的說明，請參閱 [自訂crons參考](custom-cron-reference.md).
 
-## 第8步：驗證您的自定義克隆組
+## 步驟8：驗證您的自訂cron群組
 
-此 _可選_ 步驟顯示如何使用Admin驗證自定義cron組。
+此 _可選_ 步驟顯示如何使用管理員驗證您的自訂cron群組。
 
-要驗證自定義克隆組：
+若要驗證您的自訂cron群組：
 
-1. 為自定義組運行Commerce cron作業：
+1. 為您的自訂群組執行Commerce cron工作：
 
    ```bash
    php /var/www/html/magento2/bin/magento cron:run --group="custom_crongroup"
    ```
 
-   至少運行兩次命令。
+   至少執行命令兩次。
 
 1. 清除快取：
 
@@ -295,13 +295,13 @@ bin/magento cache:clean
    php /var/www/html/magento2/bin/magento cache:clean
    ```
 
-1. 以管理員身份登錄到管理員。
-1. 按一下 **商店** > **設定** > **配置** > **高級** > **系統**。
-1. 在右窗格中，展開 **克龍**。
+1. 以管理員身分登入管理員。
+1. 按一下 **商店** > **設定** > **設定** > **進階** > **系統**.
+1. 在右窗格中，展開 **Cron**.
 
-   您的cron組顯示如下：
+   您的cron群組顯示如下：
 
-   ![您的自定義Cron組](../../assets/configuration/cron-group.png)
+   ![您的自訂cron群組](../../assets/configuration/cron-group.png)
 
 <!-- link definitions -->
 

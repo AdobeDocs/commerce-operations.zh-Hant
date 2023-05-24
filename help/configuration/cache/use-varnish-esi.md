@@ -1,7 +1,7 @@
 ---
-title: 清漆ESI塊
-description: 瞭解「邊緣端包括」以及如何使用它們嵌入網頁。
-badge: label="康斯坦丁G提供。" type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
+title: 清漆ESI區塊
+description: 瞭解Edge Side Include以及如何使用它們來內嵌網頁。
+badge: label="Contributed by Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# 清漆ESI塊
+# 清漆ESI區塊
 
-邊緣端包括(ESI)是特殊指令，可用於將網頁包括在其它網頁中。
+Edge Side Include (ESI)是特殊指令，可用來將網頁包含在其他網頁中。
 
-例如：
+範例：
 
 ```html
 <div>
@@ -23,16 +23,16 @@ ht-degree: 0%
 </div>
 ```
 
-清漆從中提取內容 `http://domain.com/index.php/page_cache/block/esi/blocks` 並替換 `<esi>` 帶著它。
+清漆從擷取內容 `http://domain.com/index.php/page_cache/block/esi/blocks` 並取代 `<esi>` 標籤此專案。
 
-## 商務與清漆ESI
+## Commerce與Varnish ESI
 
-當滿足以下條件時，Commerce框架將建立ESI標籤：
+Commerce架構會在符合下列條件時建立ESI標籤：
 
 - 快取應用程式設定為 `Varnish Cache`
-- XML佈局 `block` 元素與 `ttl` 屬性
+- XML配置 `block` 元素新增了 `ttl` 屬性
 
-### 示例
+### 範例
 
 `cms_index_index.xml`:
 
@@ -42,11 +42,11 @@ ht-degree: 0%
    </referenceContainer>
 ```
 
-在上例中， `block` 元素添加來自 `esi.phtml` 模板到首頁，清漆每30秒自動更新一次。
+在上述範例中， `block` 元素新增以下專案的內容： `esi.phtml` 範本至首頁，Varnish每30秒會自動更新一次。
 
 ## 限制
 
-目前，Wishet不支援HTTPS上的ESI，因此它會自動切換到HTTP。
+目前Varnish不支援HTTPS上的ESI，所以會自動切換至HTTP。
 
 `Magento\PageCache\Observer\ProcessLayoutRenderElement`:
 

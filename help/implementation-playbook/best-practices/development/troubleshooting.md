@@ -1,6 +1,6 @@
 ---
-title: 排除最佳做法
-description: 瞭解如何解決Adobe Commerce實施問題。
+title: 疑難排解最佳實務
+description: 瞭解如何疑難排解Adobe Commerce實作問題。
 role: Developer
 feature: Best Practices
 feature-set: Commerce
@@ -12,25 +12,25 @@ ht-degree: 0%
 
 ---
 
-# 排除最佳做法
+# 疑難排解最佳實務
 
-請遵循這些最佳實踐，在雲基礎架構問題上對Adobe Commerce進行有效的故障排除。
+請遵循這些最佳實務，以針對雲端基礎結構問題有效疑難排解Adobe Commerce。
 
 ## 受影響的產品和版本
 
-Adobe Commerce在雲基礎架構上
+雲端基礎結構上的Adobe Commerce
 
-## 最佳做法
+## 最佳實務
 
-| 問題類型 | 最佳做法 | 資源 |
+| 問題型別 | 最佳實務 | 資源 |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 部署問題 | **遵循部署最佳做法。** 13%的支援票證涉及部署問題。 最佳做法已經更新，以包括防止許多這些原因的方法。 | [構建和部署的最佳做法](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) 我們的開發人員文檔中。 |
-| 站點關閉問題 | **使用「站點關閉」(Site Down)「故障排除器」(Troubleshooter)。** Cron可以運行很長，並且可以互相溢出。 它們是許多停機和效能問題的根源。 | [站點關閉疑難解答](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.html?lang=en) 和 [如何重置cron作業](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en) 我們的支援知識庫。 |
-| 效能問題 | **如果不使用Adobe Commerce橫幅，請將其禁用。** 啟用但未使用標題時，資源用於在不需要時對資料庫進行查找，這將導致效能問題。 | [禁用Adobe Commerce橫幅輸出以提高效能](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.html) 我們的支援知識庫。 |
-| 搜索問題 | **MySQL目錄搜索引擎已在Adobe Commerce2.4.0中刪除。** 必須在安裝2.4.0版之前安裝並配置Elasticsearch主機。請參閱開發人員文檔中的「安裝和配置Elasticsearch」。 | [設定Elasticsearch服務](https://devdocs.magento.com/cloud/project/services-elastic.html) 我們的開發人員文檔中。 |
-| 自定義錯誤 | **在高峰時段不要部署。** 添加和刪除用戶將觸發部署。 | [零停機部署](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html) 我們的開發人員文檔中。 |
-| 資料庫錯誤和問題 | **資料庫問題導致部署（掛接後問題）、效能和站點關閉情況。** 許多錯誤或資料庫空間分配不足。 | [MariaDB錯誤代碼](https://mariadb.com/kb/en/library/mariadb-error-codes/#mariadb-specific-error-codes); [管理儲存空間](https://devdocs.magento.com/cloud/project/manage-disk-space.html) （包括資料庫）。 |
-| 配置問題 | **按計畫而不是按保存時的索引進行索引。** 這是最有效的索引配置。 「保存時索引」將導致完全重新索引。 | [配置索引器](../../../configuration/cli/manage-indexers.md#configure-indexers) 我們的開發人員文檔中。 |
-| 自定義代碼問題 | **檢查查詢日誌速度慢的情況，以發現可能會中斷需要花費太多時間才能完成的進程。** 查詢速度慢可能導致資料庫死鎖，導致站點停機和效能問題。 | [在MySQL中檢查慢查詢和過長的進程](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html) |
-| 擴展問題 | **僅使用Commerce Marketplace上當前已驗證的擴展。** | [Adobe Commerce擴展](https://marketplace.magento.com/extensions.html) |
-| 資源問題 | **監視可用記憶體和空間並優化儲存。** 在消耗大量資源（例如，部署）的操作之前，您可能有可用空間。 檔案儲存優化不足（例如，大型富映像過多）也會導致空間不足。 資源不足導致效能問題、站點停機、部署停滯和部署失敗。 | [管理磁碟空間](https://devdocs.magento.com/cloud/project/manage-disk-space.html) 在開發人員文檔中； [檔案儲存低/耗盡，特定頁載入速度慢](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html?lang=en) 我們的支援知識庫。 |
+| 部署問題 | **遵循部署最佳實務。** 13%的支援票證涉及部署問題。 已更新最佳實務，納入預防上述許多原因的方法。 | [建置和部署的最佳實務](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) （位於我們的開發人員檔案中）。 |
+| 網站停止服務問題 | **使用「網站停機疑難排解員」。** Cron可能長時間執行且會相互超載。 這是許多中斷和效能問題的根源。 | [Site Down疑難排解員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.html?lang=en) 和 [如何重設cron工作](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en) 在我們的支援知識庫中。 |
+| 效能問題 | **如果您沒有使用Adobe Commerce橫幅，請將其停用。** 當橫幅已啟用但未使用時，資源會在不需要時用來對資料庫進行查閱，這會導致效能問題。 | [停用Adobe Commerce橫幅輸出以改善效能](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.html) 在我們的支援知識庫中。 |
+| 搜尋問題 | **Adobe Commerce 2.4.0中已移除MySQL目錄搜尋引擎。** 您必須先設定Elasticsearch主機，然後再安裝2.4.0版。請參閱開發人員檔案中的安裝與設定Elasticsearch。 | [設定Elasticsearch服務](https://devdocs.magento.com/cloud/project/services-elastic.html) （位於我們的開發人員檔案中）。 |
+| 自訂錯誤 | **請勿在尖峰時段部署。** 新增和移除使用者將會觸發部署。 | [零停機部署](https://devdocs.magento.com/cloud/deploy/reduce-downtime.html) （位於我們的開發人員檔案中）。 |
+| 資料庫錯誤和問題 | **資料庫問題會導致部署（連結後問題）、效能和網站停止運作的情況。** 許多都涉及錯誤或資料庫空間配置不足。 | [MariaDB錯誤代碼](https://mariadb.com/kb/en/library/mariadb-error-codes/#mariadb-specific-error-codes)； [管理儲存空間](https://devdocs.magento.com/cloud/project/manage-disk-space.html) （包括資料庫）。 |
+| 設定問題 | **依排程建立索引，而非儲存時建立索引。** 這是最有效的索引設定。 「儲存時建立索引」將導致完全重新建立索引。 | [設定索引子](../../../configuration/cli/manage-indexers.md#configure-indexers) （位於我們的開發人員檔案中）。 |
+| 自訂程式碼問題 | **檢查您的緩慢查詢記錄，找出找出需要花費太多時間才能完成且可能終止流程的機會。** 緩慢的查詢可能會導致資料庫死結，導致網站故障和效能問題。 | [在MySQL中檢查緩慢的查詢和程式耗時過長](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html) |
+| 擴充功能問題 | **僅使用Commerce Marketplace上目前已驗證的擴充功能。** | [Adobe Commerce的擴充功能](https://marketplace.magento.com/extensions.html) |
+| 資源問題 | **監視可用的記憶體與空間，並最佳化儲存空間。** 在耗用大量資源的動作（例如部署）之前，您可能會有可用空間。 檔案儲存最佳化不佳（例如，過多的大型豐富影像）也會造成空間不足。 資源不足會導致效能問題、網站無法使用、部署停滯和部署失敗。 | [管理磁碟空間](https://devdocs.magento.com/cloud/project/manage-disk-space.html) （在開發人員檔案中）； [檔案儲存空間不足/耗盡，特定頁面載入緩慢](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html?lang=en) 在我們的支援知識庫中。 |

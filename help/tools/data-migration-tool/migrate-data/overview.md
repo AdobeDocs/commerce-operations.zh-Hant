@@ -1,6 +1,6 @@
 ---
-title: 遷移概述
-description: 瞭解如何開始將資料從Magento1遷移到Magento2, [!DNL Data Migration Tool]。
+title: 移轉概述
+description: 瞭解如何透過開始將資料從Magento1移轉至Magento2 [!DNL Data Migration Tool].
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,82 +9,82 @@ ht-degree: 0%
 
 ---
 
-# 遷移概述
+# 移轉概述
 
-開始遷移之前，請停止所有Magento1 cron作業。
+開始移轉之前，請停止所有Magento1 cron工作。
 
-在遷移過程中，請遵循以下常規規則成功遷移：
+在移轉程式中，請遵循下列一般規則才能成功移轉：
 
-1. **不要** 在Magento1管理中進行更改，但訂單管理（發運、建立發票和貸項通知單）除外
-1. **不要** 更改任何代碼
-1. **不要** 更改Magento2管理和店面
+1. **不要** 在「Magento1管理員」中進行變更，但訂單管理除外（出貨、建立商業發票及銷退折讓單）
+1. **不要** 變更任何程式碼
+1. **不要** 在Magento2管理員和店面中進行變更
 
 >[!TIP]
 >
 >允許Magento1店面中的所有操作。
 
-## 運行 [!DNL Data Migration Tool]
+## 執行 [!DNL Data Migration Tool]
 
-本部分說明如何運行 [!DNL Data Migration Tool] 遷移設定、資料或增量更改。
+本節說明如何執行 [!DNL Data Migration Tool] 移轉設定、資料或增量變更。
 
-### 第一步
+### 首要步驟
 
-1. 以具有向檔案系統寫入權限的用戶身份或切換到身份登錄到應用程式伺服器。 請參閱 [切換到檔案系統所有者](../../../installation/prerequisites/file-system/overview.md)。
+1. 以具有寫入檔案系統許可權的使用者身分登入應用程式伺服器，或切換至該使用者。 另請參閱 [切換到檔案系統擁有者](../../../installation/prerequisites/file-system/overview.md).
 
-   如果使用bash shell，則可以使用以下語法切換到檔案系統所有者並同時輸入命令：
+   如果您使用bash shell，則可以使用以下語法切換到檔案系統擁有者並同時輸入命令：
 
    ```bash
    su <file system owner> -s /bin/bash -c <command>
    ```
 
-   如果檔案系統所有者不允許登錄，可以執行以下操作：
+   如果檔案系統擁有者不允許登入，您可以執行下列動作：
 
    ```bash
    sudo -u <file system owner>  <command>
    ```
 
-1. 要從任何目錄運行Magento命令，請添加 `<magento_root>/bin` 到系統 `PATH`。
+1. 若要從任何目錄執行Magento命令，請新增 `<magento_root>/bin` 至您的系統 `PATH`.
 
-   由於shell的語法不同，因此請參考引用，如 [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables)。
+   由於shell的語法不同，請參考參考如 [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
-   CentOS的bash shell示例：
+   CentOS的bash shell範例：
 
    ```bash
    export PATH=$PATH:/var/www/html/magento2/bin
    ```
 
-   （可選）您可以通過以下方式運行命令：
+   您可以選擇以下列方式執行命令：
 
-   - `cd <magento_root>/bin` 把它們 `./magento <command name>`
+   - `cd <magento_root>/bin` 並以下列身分執行 `./magento <command name>`
    - `<magento_root>/bin/magento <command name>`
-   - `<magento_root>` 是Web伺服器docroot的子目錄。
+   - `<magento_root>` 是網頁伺服器docroot的子目錄。
 
 ### 命令語法
 
-下面是典型的命令示例：
+以下是典型的命令範例：
 
 ```bash
 bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-位置：
+其中：
 
-- `<mode>` 可能： [`settings`](settings.md)。 [`data`](data.md)或 [`delta`](delta.md)
-- `[-r|--reset]` 是從頭開始遷移的可選參數。 您可以使用此參數來測試遷移。
-- `[-a|--auto]` 是一個可選參數，可防止在遇到完整性檢查錯誤時停止遷移。
-- `{<path to config.xml>}` 是到 `config.xml`;此參數是必需的。
+- `<mode>` 可以是： [`settings`](settings.md)， [`data`](data.md)，或 [`delta`](delta.md)
+- `[-r|--reset]` 是從頭開始移轉的可選引數。 您可以使用此引數來測試移轉。
+- `[-a|--auto]` 是選用引數，可防止移轉在遇到完整性檢查錯誤時停止。
+- `{<path to config.xml>}` 為的絕對檔案系統路徑 `config.xml`；此引數為必要項。
 
 >[!NOTE]
 >
->日誌寫入 `<magento_root>/var/` 的子菜單。
+>記錄檔會寫入 `<magento_root>/var/` 目錄。
 
 
-## 遷移順序
+## 移轉順序
 
-建立 [!DNL Data Migration Tool]，我們假定了以下資料傳輸序列：
+當我們建立 [!DNL Data Migration Tool]，我們假設了下列資料傳輸順序：
 
 1. [設定](settings.md)
 1. [資料](data.md)
-1. [更改](delta.md)
+1. [變更](delta.md)
 
-我們強烈建議按相同順序遷移資料。
+我們強烈建議您以相同的順序移轉資料。

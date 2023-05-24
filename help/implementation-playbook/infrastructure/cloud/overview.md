@@ -1,6 +1,6 @@
 ---
-title: 雲基礎架構概述
-description: 瞭解Adobe Commerce雲基礎架構。
+title: 雲端基礎結構概覽
+description: 瞭解雲端基礎結構上的Adobe Commerce。
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
 source-git-commit: ea912c48176fb060e48654d05ae6b533436a2432
 workflow-type: tm+mt
@@ -9,46 +9,46 @@ ht-degree: 0%
 
 ---
 
-# 概述
+# 概觀
 
-Adobe Commerce在AWS的最受歡迎的托管選擇之一是Adobe Commerce自己提供的。 Adobe Commerce雲基礎架構是Adobe Commerce軟體的完全托管的自動托管平台。
+Adobe Commerce本身提供AWS上Adobe Commerce最受歡迎的受管理託管選項之一。 雲端基礎結構上的Adobe Commerce是適用於Adobe Commerce軟體的完全受管理的自動化託管平台。
 
-Adobe Commerce雲基礎架構是一種平台即服務(PaaS)產品，可快速部署完全可定製、安全且可擴展的網店，並結合領先的托管和托管服務基礎架構。 它提供兩個具有不同基礎設施的計畫。 Adobe CommerceStarter最適合於複雜性較小、目錄較小的小商店。 Adobe CommercePro是為更複雜、產品目錄更大或流量達到高峰的大型商店而構建的。 Adobe Commerce將在合作夥伴的投入下確定適當的架構。
+雲端基礎結構上的Adobe Commerce是一項平台即服務(PaaS)產品，可讓您快速部署完全可自訂、安全且可擴展的Web店面，並結合領先的託管及受管服務基礎結構。 它提供兩種具有不同基礎結構的計畫。 Adobe Commerce Starter最適合具有較低複雜性和較小目錄的小型商店。 Adobe Commerce Pro專為較複雜、產品目錄較大或流量尖峰的大型商店所打造。 Adobe Commerce會利用合作夥伴的意見來決定適當的架構。
 
-Adobe Commerce已具備雲就緒性，並擁有完全冗餘的多雲托管基礎架構，可提供優化的效能、恢復力和彈性可擴充性。 您可以在Apphist的內容分發網路(CDN)上高效地運行您的商業平台，而且與New Relic一起進行監控和管理，您可以保持您的儲存環境平穩運行。
+Adobe Commerce具備雲端就緒，並具備完整備援的多雲端託管基礎架構，提供最佳化的效能、彈性和彈性擴充性。 您可以在Fastly的內容傳遞網路(CDN)上有效率地執行您的商務平台，並透過New Relic進行監控和管理，讓您的商店環境得以順暢運作。
 
-Adobe Commerce提供了現代雲計算的所有優勢，這些優勢最常與SaaS解決方案相關聯：彈性可擴充性、高恢復力和可用性、PCI合規性、全球可用性和自動化修補，同時仍保持我們的商家所需的軟體定制靈活性。
+Adobe Commerce提供現代雲端運算的所有優點，這些優點最常與SaaS解決方案相關聯：彈性擴充性、高復原力和可用性、PCI法規遵循、全球可用性及自動修補，同時仍維持商家所需的軟體客製化彈性。
 
-![示出雲基礎架構上Adobe Commerce的體系結構元素的圖](../../../assets/playbooks/adobe-commerce-cloud-infrastructure.svg)
+![在雲端基礎結構上顯示Adobe Commerce架構元素的圖表](../../../assets/playbooks/adobe-commerce-cloud-infrastructure.svg)
 
-## 好處
+## 優點
 
-Adobe Commerce的其他好處包括：
+Adobe Commerce的其他優點包括：
 
-- **針對Adobe Commerce優化**。 Adobe Commerce開發的構建指令碼和服務配置可確保正確調整和配置每個實例以獲得最佳商家效能。
+- **針對Adobe Commerce最佳化**. Adobe Commerce開發的組建指令碼和服務設定可確保正確調整並設定每個執行個體，以獲得最佳商家效能。
 
-- **一致、安全的版本**。 所有代碼部署都基於Git以實現一致性和可重複性，而只讀生產環境則可增強安全性。
+- **一致、安全的發行版本**. 所有程式碼部署都以Git為基礎，以保持一致性和可重複性，並具備唯讀生產環境，提供強化的安全性。
 
-- **合作夥伴的靈活性**。 完整的REST API和可指令碼化的命令行介面確保了與外部系統的輕鬆整合以及與現有代碼管理工作流的相容性。
+- **合作夥伴的彈性**. 完整的REST API和可編寫指令碼的命令列介面可確保與外部系統輕鬆整合，並與現有的程式碼管理工作流程相容。
 
-- **靈活的部署工具集**。 可隨意快速啟動、合併、克隆和拆除無限制的環境，用於開發任務、QA測試或生產問題診斷。
+- **彈性的部署工具集**. 可隨時快速加速、合併、複製和拆除無限環境，以執行開發任務、QA測試或生產問題診斷。
 
-- **連續雲交付**。 從開發到UAT，在代碼部門和開發團隊之間以持續的方式，滿懷信心地直接向生產過渡。
+- **持續雲端傳送**. 您可以放心地跨程式碼分支和開發團隊連續地從開發邁向UAT邁向生產。
 
-## 第三方服務
+## 協力廠商服務
 
-我們還來看一下讓Adobe Commerce的好處成為現實的軟體。
+我們也來看看讓Adobe Commerce的好處成為現實的軟體。
 
-![顯示Adobe Commerce雲基礎架構技術堆棧的圖](../../../assets/playbooks/cloud-tech-stack.svg)
+![在雲端基礎結構技術棧疊上顯示Adobe Commerce的圖表](../../../assets/playbooks/cloud-tech-stack.svg)
 
-- Appeist CDN:當客戶訪問您的站點和儲存時，這些請求會快速載入快取的頁面。 Apphise WAF還提供DDoS保護服務。
+- Fastly CDN：當客戶存取您的網站和商店時，請求點選Fastly以更快載入快取頁面。 Fastly WAF也提供DDoS保護服務。
 
-- New Relic為您提供了應用程式和操作環境的完整視圖。 它允許您將來自移動和瀏覽器應用程式的關鍵指標與支援服務、資料儲存和主機相結合，以便您能夠全面優化效能並確保每項計畫的成功。
+- New Relic可讓您完整檢視應用程式和作業環境。 它可讓您結合行動應用程式和瀏覽器應用程式的關鍵量度與支援服務、資料存放區和主機，以便整體最佳化效能並確保每個計畫的成功。
 
-- Composer管理Adobe Commerce的依賴項和升級，並提供有關包、包的功能以及它們如何組合的上下文。
+- Composer會管理Adobe Commerce中的相依性和升級，並提供所包含套件的相關情境、套件作用以及套件如何整合。
 
-- Git是儲存庫中的代碼。 它允許本地分支、方便的過渡區域和多個工作流，並可自動構建和部署，以實現高效的快速開發和連續部署。
+- Git是您在存放庫中的程式碼。 它允許本機分支、便利的臨時區域，以及具備自動建置和部署的多個工作流程，以實現高效的快速開發和持續部署。
 
-- 平台即服務(PaaS)提供預配置的基礎架構，包括PHP、MySQL、Redis、 [!DNL RabbitMQ]和OpenSearch或Elasticsearch技術。
+- Platform-as-a-Service (PaaS)提供預先布建的基礎結構，包括PHP、MySQL、Redis、 [!DNL RabbitMQ]和OpenSearch或Elasticsearch技術。
 
-- AWS或Azure的雲托管支援基礎架構即服務(IaaS)，它為線上銷售和零售提供可擴展且安全的環境。
+- AWS或Azure的雲端主機支援基礎基礎結構即服務(IaaS)，提供可擴充且安全的環境，適合線上銷售和零售。

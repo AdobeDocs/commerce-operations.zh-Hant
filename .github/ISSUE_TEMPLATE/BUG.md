@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Create an issue about a bug on the Experience League website
-title: Bug報告
+title: 錯誤報告
 labels: bug
 assignees: dshevtsov
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 <!-- (REQUIRED) What is the issue or current behavior? -->
 
-### 再現步驟
+### 重現問題的步驟
 
 <!-- (OPTIONAL) What needs to be done to replicate this issue? You can provide your scenario in a Gist. -->
 

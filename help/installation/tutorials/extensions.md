@@ -1,6 +1,6 @@
 ---
-title: 安裝擴展
-description: 按照以下步驟安裝Adobe Commerce或Magento Open Source擴展。
+title: 安裝擴充功能
+description: 請依照下列步驟安裝Adobe Commerce或Magento Open Source擴充功能。
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,33 +9,33 @@ ht-degree: 0%
 
 ---
 
-# 安裝擴展
+# 安裝擴充功能
 
-擴展或自定義Adobe Commerce和Magento Open Source行為的代碼稱為擴展。 您可以選擇在 [Commerce Marketplace](https://marketplace.magento.com) 或其他分機分配系統。
+擴充或自訂Adobe Commerce和Magento Open Source行為的程式碼稱為擴充功能。 您可以選擇性地封裝和散發擴充功能於 [Commerce Marketplace](https://marketplace.magento.com) 或其他擴充功能發佈系統。
 
-擴展包括：
+擴充功能包括：
 
-- 模組(擴展Adobe Commerce和Magento Open Source功能)
-- 主題（更改店面和管理員的外觀和感覺）
-- 語言包（本地化店面和管理員）
+- 模組(擴充Adobe Commerce和Magento Open Source功能)
+- 主題（變更店面和管理員的外觀）
+- 語言套件（將店面和管理員本地化）
 
 >[!TIP]
 >
->本主題說明如何使用命令行安裝您從Commerce Marketplace購買的擴展。 可以使用相同的過程進行安裝 _任何_ 擴展；您只需要副檔名的Composer名稱和版本。 要找到它，請開啟分機 `composer.json` 檔案並注意 `"name"` 和 `"version"`。
+>本主題說明如何使用命令列來安裝您從Commerce Marketplace購買的擴充功能。 您可以使用相同的程式進行安裝 _任何_ 擴充功能；您只需要擴充功能的撰寫器名稱和版本。 若要尋找該擴充功能，請開啟 `composer.json` 檔案並記下以下專案的值： `"name"` 和 `"version"`.
 
-在安裝之前，您可能希望：
+在安裝之前，您可能需要：
 
-1. 備份資料庫。
+1. 備份您的資料庫。
 1. 啟用維護模式：
 
    ```bash
    bin/magento maintenance:enable
    ```
 
-要安裝擴展，必須：
+若要安裝擴充功能，您必須：
 
-1. 從Commerce Marketplace或其他擴展開發器獲取擴展。
-1. 如果從Commerce Marketplace安裝擴展，請確保 `repo.magento.com` 儲存庫存在於 `composer.json` 檔案：
+1. 從Commerce Marketplace或其他擴充功能開發人員取得擴充功能。
+1. 如果您從Commerce Marketplace安裝擴充功能，請確定 `repo.magento.com` 存放庫存在於您的 `composer.json` 檔案：
 
    ```bash
    "repositories": [
@@ -46,54 +46,54 @@ ht-degree: 0%
    ]
    ```
 
-1. 獲取副檔名的Composer名稱和版本。
-1. 更新 `composer.json` 的名稱和版本。
-1. 驗證擴展安裝是否正確。
-1. 啟用並配置擴展。
+1. 取得擴充功能的撰寫器名稱和版本。
+1. 更新 `composer.json` 副檔名為且版本為的檔案。
+1. 確認擴充功能已正確安裝。
+1. 啟用並設定擴充功能。
 
-## 獲取擴展Composer名稱和版本
+## 取得擴充功能撰寫器名稱和版本
 
-如果您已經知道副檔名的Composer名稱和版本，請跳過此步驟並繼續 [更新 `composer.json` 檔案](#update-your-composer-file)。
+如果您已知道擴充功能的撰寫器名稱和版本，請略過此步驟，然後繼續 [更新您的 `composer.json` 檔案](#update-your-composer-file).
 
-要從Commerce Marketplace獲取副檔名的Composer名稱和版本，請執行以下操作：
+若要從Commerce Marketplace取得擴充功能的撰寫器名稱和版本：
 
-1. 登錄到 [Commerce Marketplace](https://marketplace.magento.com) 以及您購買副檔名時使用的用戶名和密碼。
+1. 登入 [Commerce Marketplace](https://marketplace.magento.com) 使用您購買擴充功能所用的使用者名稱和密碼。
 
-1. 在右上角，按一下 **你的名字** > **我的個人資料**。
+1. 在右上角，按一下 **您的姓名** > **我的設定檔**.
 
-   ![訪問您的Marketplace帳戶](../../assets/installation/marketplace-my-profile.png)
+   ![存取您的市集帳戶](../../assets/installation/marketplace-my-profile.png)
 
-1. 按一下 **我的購買**。
+1. 按一下 **我的購買**.
 
-   ![市場購買歷史記錄](../../assets/installation//marketplace-my-purchases.png)
+   ![Marketplace購買記錄](../../assets/installation//marketplace-my-purchases.png)
 
-1. 查找要安裝的擴展，然後按一下 **技術詳細資訊**。
+1. 找到您要安裝的擴充功能，然後按一下 **技術細節**.
 
-   ![技術詳細資訊顯示副檔名的作曲家名稱](../../assets/installation/marketplace-extension-technical-details.png)
+   ![技術詳細資訊會顯示擴充功能的撰寫器名稱](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
->或者，您可以找到的Composer名稱和版本 _任何_ 擴展(無論您是在Commerce Marketplace上還是在其他位置購買) `composer.json` 的子菜單。
+>或者，您可以找到Composer名稱和版本 _任何_ 擴充功能(無論您是在Commerce Marketplace或其他地方購買)中的 `composer.json` 檔案。
 
-## 更新您的Composer檔案
+## 更新您的撰寫器檔案
 
-將副檔名的名稱和版本添加到 `composer.json` 檔案：
+將擴充功能的名稱和版本新增至 `composer.json` 檔案：
 
-1. 導航到項目目錄並更新 `composer.json` 的子菜單。
+1. 導覽至您的專案目錄並更新 `composer.json` 檔案。
 
    ```bash
    composer require <component-name>:<version>
    ```
 
-   比如說，
+   例如，
 
    ```bash
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. 輸入 [身份驗證密鑰](../prerequisites/authentication-keys.md)。 您的公鑰是您的用戶名；你的私鑰是你的密碼。
+1. 輸入您的 [驗證金鑰](../prerequisites/authentication-keys.md). 您的公開金鑰是您的使用者名稱；您的私密金鑰是您的密碼。
 
-1. 等待Composer完成對項目依賴項的更新，並確保沒有任何錯誤：
+1. 請等候Composer完成更新您的專案相依性，並確定沒有任何錯誤：
 
    ```terminal
    Updating dependencies (including require-dev)
@@ -103,39 +103,39 @@ ht-degree: 0%
    Generating autoload files
    ```
 
-## 驗證擴展
+## 驗證擴充功能
 
-要驗證是否正確安裝了擴展，請運行以下命令：
+若要確認擴充功能是否已正確安裝，請執行以下命令：
 
 ```bash
 bin/magento module:status J2t_Payplug
 ```
 
-預設情況下，擴展可能被禁用：
+依預設，擴充功能可能已停用：
 
 ```terminal
 Module is disabled
 ```
 
-副檔名的格式為 `<VendorName>_<ComponentName>`;這是與作曲家名稱不同的格式。 使用此格式啟用擴展。 如果不確定副檔名，請運行：
+副檔名採用格式 `<VendorName>_<ComponentName>`；這是與撰寫器名稱不同的格式。 使用此格式可啟用副檔名。 如果您不確定擴充功能名稱，請執行：
 
 ```bash
 bin/magento module:status
 ```
 
-在「已禁用模組清單」下查找擴展。
+並在「已停用模組清單」下尋找擴充功能。
 
-## 啟用擴展
+## 啟用擴充功能
 
-某些擴展無法正常工作，除非您先清除生成的靜態視圖檔案。 使用 `--clear-static-content` 選項，在啟用副檔名時清除靜態視圖檔案。
+除非您先清除產生的靜態檢視檔案，否則部分副檔名無法正常運作。 使用 `--clear-static-content` 啟用副檔名時用來清除靜態檢視檔案的選項。
 
-1. 啟用擴展並清除靜態視圖檔案：
+1. 啟用擴充功能並清除靜態檢視檔案：
 
    ```bash
    bin/magento module:enable J2t_Payplug --clear-static-content
    ```
 
-   您應看到以下輸出：
+   您應該會看到下列輸出：
 
    ```terminal
    The following modules have been enabled:
@@ -147,25 +147,25 @@ bin/magento module:status
    Generated static view files cleared successfully.
    ```
 
-1. 註冊擴展：
+1. 註冊擴充功能：
 
    ```bash
    bin/magento setup:upgrade
    ```
 
-1. 重新編譯項目：在生產模式下，您可能會收到一條消息「請重新運行Magento編譯命令」。 應用程式不會提示您在開發人員模式下運行編譯命令。
+1. 重新編譯專案：在生產模式中，您可能會收到「請重新執行Magento編譯命令」的訊息。 應用程式不會提示您以開發人員模式執行compile命令。
 
    ```bash
    bin/magento setup:di:compile
    ```
 
-1. 驗證是否已啟用擴展：
+1. 確認擴充功能已啟用：
 
    ```bash
    bin/magento module:status J2t_Payplug
    ```
 
-   您應看到輸出，驗證擴展是否不再禁用：
+   您應該會看到驗證擴充功能是否不再停用的輸出：
 
    ```terminal
    Module is enabled
@@ -177,23 +177,23 @@ bin/magento module:status
    bin/magento cache:clean
    ```
 
-1. 根據需要在Admin中配置擴展。
+1. 視需要在「管理員」中設定擴充功能。
 
 >[!TIP]
 >
->如果在瀏覽器中載入儲存面時遇到錯誤，請使用以下命令清除快取： `bin/magento cache:flush`。
+>如果您在瀏覽器中載入店面時發生錯誤，請使用以下命令清除快取： `bin/magento cache:flush`.
 
-## 升級擴展
+## 升級擴充功能
 
-要更新或升級模組或擴展：
+若要更新或升級模組或擴充功能：
 
-1. 從Marketplace或其他擴展開發人員下載更新的檔案。 請注意模組名稱和版本。
+1. 從Marketplace或其他擴充功能開發人員下載更新的檔案。 記下模組名稱和版本。
 
-1. 將內容導出到應用程式根目錄。
+1. 將內容匯出至應用程式根目錄。
 
-1. 如果模組存在Composer包，請運行以下程式之一。
+1. 如果模組存在撰寫器套件，請執行以下其中一項作業。
 
-   每個模組名稱的更新：
+   依據模組名稱更新：
 
    ```bash
    composer update vendor/module-name
@@ -205,7 +205,7 @@ bin/magento module:status
    composer require vendor/module-name ^x.x.x
    ```
 
-1. 運行以下命令以升級、部署和清除快取。
+1. 執行以下命令以升級、部署和清除快取。
 
    ```bash
    bin/magento setup:upgrade --keep-generated

@@ -1,6 +1,6 @@
 ---
-title: Adobe Commerce效能優化
-description: 通過更改某些預設設定，準備您的Adobe Commerce項目將Adobe Experience Manager用作CMS。
+title: Adobe Commerce效能最佳化
+description: 透過變更某些預設設定，準備您的Adobe Commerce專案以使用Adobe Experience Manager as a CMS。
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
 source-git-commit: a11f3ef0519a4a6c08ea1d4e520ce0462e88885d
 workflow-type: tm+mt
@@ -9,53 +9,53 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce效能優化
+# Adobe Commerce效能最佳化
 
-## Adobe Commerce基礎設施AEM的地理位置
+## AEM和Adobe Commerce基礎架構的地理位置
 
-為了減少發佈者與AEMAdobe CommerceGraphQL之間在生成頁面時的延遲，兩個獨立基礎架構的初始設定應托管在同一AWS（或Azure）區域內。 為兩個雲選擇的地理位置也應最接近大多數客戶群，因此客戶端的GraphQL請求從地理位置上的較近位置提供給大多數客戶。
+為了減少AEM發佈者與Adobe Commerce GraphQL在建立頁面時的延遲，應該在相同的AWS （或Azure）區域內託管這兩個獨立基礎結構的初始布建。 為這兩個雲端選擇的地理位置也應該最靠近大多數客戶群，這樣使用者端GraphQL請求就會從地理位置鄰近的位置提供給大多數客戶。
 
-## GraphQL在Adobe Commerce快取
+## Adobe Commerce中的GraphQL快取
 
-當用戶的瀏覽器或發AEM布者呼叫Adobe Commerce的GraphQL時，某些呼叫將快取在Reptibles中。 快取的查詢通常是那些包含非個人資料且不太可能經常更改的查詢。 例如：類別、類別清單和產品。 明確未快取的是那些定期更改的，如果快取可能會對個人資料和站點操作帶來風險，例如cart和customerPaymentTokens等查詢。
+當使用者的瀏覽器或AEM發佈者呼叫Adobe Commerce的GraphQL時，某些呼叫將會在Fastly中快取。 快取的查詢通常是包含非個人資料且不太可能經常變更的查詢。 例如：categories、categoryList和products。 明確未快取的就是定期變更且若快取，可能會對個人資料和網站作業（例如購物車和customerPaymentTokens等查詢）帶來風險的查詢。
 
-GraphQL允許您在單個呼叫中進行多個查詢。 請注意，如果您甚至指定了一個查詢，而Adobe Commerce沒有將其它許多不可快取的查詢快取，則Adobe Commerce將忽略調用中所有查詢的快取。 開發人員在組合多個查詢時應考慮這一點，以確保不會無意中跳過可快取的查詢。
+GraphQL可讓您在單一呼叫中進行多個查詢。 請務必注意，如果您指定甚至Adobe Commerce未快取的一個查詢，以及許多無法快取的其他查詢，Adobe Commerce將略過呼叫中所有查詢的快取。 開發人員在合併多個查詢時應該考慮這一點，以確保潛在的可快取查詢不會被無意中繞過‡。
 
 >[!NOTE]
 >
-> 有關可快取和不可快取查詢的進一步資訊，請參閱Adobe Commerce [開發者文檔](https://devdocs.magento.com/guides/v2.4/graphql/caching.html)。
+> 如需可快取和不可快取查詢的詳細資訊，請參閱Adobe Commerce [開發人員檔案](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
 
-## 目錄平面表
+## 目錄平面表格
 
-不建議對產品和類別使用平面表。 使用此不建議使用的功能可能會導致效能降級和索引問題，因此應通過Adobe Commerce管理員在店面部分禁用平面目錄。 某些第三方模組和定制確實需要平面表才能正常運行 — 建議進行評估以瞭解在選擇使用這些擴展或定制時必須使用平面表所產生的影響和風險。
+不建議對產品和類別使用平面表格。 使用此已棄用的功能可能會導致效能降低和索引問題，因此應透過Adobe Commerce管理員在店面區段中停用平面目錄。 某些協力廠商模組與自訂功能確實需要平面表格才能正常運作，建議進行評估以瞭解當選擇使用這些擴充功能或自訂功能時，必須使用平面表格的相關影響與風險。
 
-## 快速起源屏蔽
+## Fastly來源遮蔽
 
-預設情況下，未啟用「快速原點」屏蔽。 Rebliste的源屏蔽的目的是直接減少到Adobe Commerce源的流量：當收到請求時， Abmistey邊緣位置（或「存在點」/POP）會檢查快取的內容並提供它。 如果未快取，則Shield POP將繼續檢查是否快取在該位置（如果內容以前甚至從另一個全局POP請求過，則將快取）。 最後，如果不快取到Shield POP上，則只能繼續到源伺服器。
+預設不會啟用Fastly來源遮蔽。 Fastly來源遮蔽的目的是減少直接到Adobe Commerce來源的流量：當收到請求時，Fastly邊緣位置（或「存在點」/POP）會檢查快取內容並提供它。 如果未快取，則會繼續前往Shield POP檢查是否已快取（如果先前已請求其他全域POP的內容，則會快取）。 最後，如果未在Shield POP上快取，則只會繼續前往原始伺服器。
 
-可以在您的Adobe Commerce管理員Rebistify配置後端設定中啟用Rebisting屏蔽。 您應選擇離Adobe Commerce資料中心最近的防護位置，以獲得最佳效能。
+可以在您的Adobe Commerce管理員Fastly設定後端設定中啟用Fastly來源遮蔽。 您應選擇最接近Adobe Commerce原始資料中心的遮蔽位置，以獲得最佳效能。
 
-## 快速影像優化
+## Fastly影像最佳化
 
-啟用「Applise」（快速）原點屏蔽後，您還可以激活「Applise」（快速）影像優化程式。 當產品目錄影像儲存在Adobe Commerce時，此服務能夠將所有資源密集型的產品目錄影像轉換處理從Adobe Commerce的源地卸載到Rembity和Off。 對於頁載入時間，最終用戶響應時間也被改進，因為影像在邊緣位置被變換，通過減少返回Adobe Commerce源的請求數來消除延遲。
+啟用Fastly來源遮蔽後，這可讓您同時啟用Fastly Image Optimizer。 產品目錄影像儲存在Adobe Commerce上，此服務可讓您將所有資源密集的產品目錄影像轉換處理解除安裝到Fastly，並從Adobe Commerce來源移除。 一般使用者的回應時間也會因頁面載入時間而改善，因為在邊緣位置會轉換影像，減少傳回Adobe Commerce原點的請求數量，進而消除延遲。
 
-通過管理中的Rebistify配置中的「啟用深層映像優化」，可以啟用Reabliste Image Optimization，儘管只有在您的源屏蔽被激活之後。 有關用於Affeist Image Optimization的配置的更多詳細資訊，請訪問Adobe Commerce [開發者文檔](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html)。
+Fastly影像最佳化可以透過Admin中Fastly設定的「啟用深層影像最佳化」來啟用，但前提是您的來源盾牌已啟用。 有關Fastly影像最佳化設定的更多詳細資訊，請參閱Adobe Commerce [開發人員檔案](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
 
-![「Adobe Commerce管理員」中「Abmistey」映像優化設定的螢幕快照](../assets/commerce-at-scale/image-optimization.svg)
+![Adobe Commerce管理員中Fastly影像最佳化設定的熒幕擷圖](../assets/commerce-at-scale/image-optimization.svg)
 
-## 禁用未使用的模組
+## 停用未使用的模組
 
-如果運行Adobe Commerce無頭設備，則只通過GraphQL端點服務請求，而沒有從Adobe Commerce直接提供前端儲存頁，則許多模組將變得冗餘且不會使用。 通過禁用未使用的模組，您的Adobe Commerce代碼庫變得更小、更簡單，因此可以提高效能。 可以使用作曲家管理Adobe Commerce上禁用模組。 哪些模組可以禁用取決於您站點的要求，因此無法提供建議的清單，因為它將特定於每個客戶對Adobe Commerce的實施。
+如果執行Adobe Commerce Headless，則只會透過GraphQL端點服務請求，而不會直接從Adobe Commerce提供前端商店頁面，因此許多模組會變得多餘且無法使用。 透過停用未使用的模組，您的Adobe Commerce程式碼庫會變得更小、更不複雜，因此可以提供效能改善。 可使用Composer管理Adobe Commerce上的停用模組。 哪些模組可以停用，取決於您網站的需求，因此不會提供建議清單，因為這會特定於每個客戶的Adobe Commerce實施。
 
-## MySQL和Redis連接激活
+## MySQL和Redis連線啟用
 
-預設情況下，MySQL和Redis Slave連接在雲上的Adobe Commerce不會激活。 這是因為這些設定僅適用於預期負載非常高的客戶。 在激活從連接時，跨可用區(Cross-AZ)延遲會更高，因此此設定實際上會降低雲實例上Adobe Commerce的效能，如果實例只接收常規負載級別。
+依預設，雲端上的Adobe Commerce中不會啟用MySQL和Redis從屬連線。 這是因為這些設定僅適用於預期非常高負載的客戶。 啟用從屬連線時，跨可用區（跨可用區）延遲會較高，因此在執行個體僅接收正常負載等級的情況下，此設定實際上會降低雲端執行個體上Adobe Commerce的效能。
 
-如果Adobe Commerce實例期望負載極大，則激活MySQL和Redis的主從將通過跨不同節點分配MySQL資料庫或Redis上的負載，從而幫助提高效能。
+如果Adobe Commerce執行個體預期負載極大，則啟用MySQL和Redis的主從節點會將負載分散到MySQL資料庫或Redis上，以協助提高效能。
 
-作為指南，在負載正常的環境中，啟用從屬連接將降低10-15%的效能。 但在負載和流量較大的集群上，效能提升約10-15%。 因此，必須將環境與預期的通信量級別進行載入test，以評估此設定是否對載入下的效能時間有益。
+作為指南，在負載正常的環境中，啟用從屬連線會使效能降低10-15%。 但在負載和流量較大的叢集上，效能可提升約10-15%。 因此，使用預期的流量層級負載測試您的環境非常重要，以評估此設定是否對負載下的效能時間有益。
 
-要啟用/禁用mysql和redis的從連接，應編輯 `.magento.env.yaml` 檔案以包括以下內容：
+若要啟用/停用mysql和redis的從屬連線，您應該編輯 `.magento.env.yaml` 檔案包含以下專案：
 
 ```
 stage:
@@ -64,12 +64,12 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-對於擴展體系結構（拆分體系結構 — 請參閱下面），不應啟用Redis從連接，因為這將導致出現錯誤。 在拆分體系結構的情況下，建議實現Redis的L2快取。
+對於縮放架構（分割架構 — 請參閱下文），不應啟用Redis從屬連線，因為這會造成錯誤。 若是分割架構，建議改為實作Redis的L2快取。
 
-## 在雲擴展（拆分）架構上移到Adobe Commerce
+## 在雲端縮放（分割）架構上移至Adobe Commerce
 
-如果在上述所有配置之後，載入test結果或即時基礎架構效能分析仍表明到Adobe Commerce的載入級別始終高於CPU和其他系統資源，則應考慮向擴展（剝離）體系結構的遷移。
+如果在完成上述所有設定後，負載測試結果或即時基礎架構效能分析仍顯示Adobe Commerce的負載等級持續充滿CPU和其他系統資源，則應考慮遷移到縮放（拆分）架構。
 
-使用標準Pro體系結構，有3個節點，每個節點都包含完整的技術堆棧。 通過轉換為剝離層體系結構，此結構將最少更改為6個節點：其中包括Elasticsearch、MariaDB、Redis等核心服務；另外3個用於處理Web流量，包含phpfpm和NGINX。 分層存在更大的擴展可能性：包含資料庫的核心節點可以垂直縮放；Web節點可以水準和垂直擴展，因此可以根據設定的高負載活動週期的需求和需要額外資源的節點上擴展基礎架構，從而具有很大的靈活性。
+在標準Pro架構中，有3個節點，每個節點都包含完整的技術棧疊。 透過轉換為分割層架構，這會改變為至少6個節點：其中3個包含Elasticsearch、MariaDB、Redis和其他核心服務；其他3個用於處理網頁流量的節點包含phpfpm和NGINX。 分割層級有更大的擴充可能性：包含資料庫的核心節點可以垂直縮放；網頁節點可以水平與垂直縮放，提供大量彈性，在設定的高負載活動期間以及需要額外資源的節點上，依需求擴充基礎架構。
 
-如果由於對站點的負載期望過高而決定切換到分層體系結構，則應與您的Adobe客戶團隊討論啟用此功能的步驟。
+如果由於您的網站負載期望過高，而決定切換至分割層架構，則應與您的Adobe客戶團隊討論啟用此功能的步驟。

@@ -1,6 +1,6 @@
 ---
-title: 產品購物車最佳做法
-description: 瞭解如何通過限制購物車中的產品數量來優化Adobe Commerce效能。
+title: 產品購物車最佳實務
+description: 瞭解如何透過限制購物車中的產品數量來最佳化Adobe Commerce效能。
 role: User
 feature: Best Practices
 feature-set: Commerce
@@ -12,43 +12,43 @@ ht-degree: 0%
 
 ---
 
-# 產品購物車管理的最佳做法
+# 產品購物車管理的最佳實務
 
-為獲得最佳效能，請使用以下准則管理Adobe Commerce和Magento Open Source的購物車限制：
+為獲得最佳效能，請使用下列准則來管理Adobe Commerce和Magento Open Source的購物車限制：
 
-- 對於2.3.x - 2.4.2版，在購物車中最多允許100種產品。
-- 對於2.4.3版和更高版本，對銷售規則功能的增強將購物車最大數量增加到750。
+- 若為版本2.3.x - 2.4.2，購物車中最多可容納100種產品。
+- 若是2.4.3版或更新版本，銷售規則功能的增強功能會將購物車數量上限增加到750個。
 
 
-對於2.3.x - 2.4.2版，基於購物車物料限制的預期效能是：
+若為版本2.3.x - 2.4.2，根據購物車專案限制的預期效能為：
 
-- 最多 **100** 購物車中的產品 — 產品工作正常，在響應時間內達到效能目標。
-- 最多 **300** 購物車中的產品 — 產品工作正常，但響應時間會超過目標。
-- 上 **500** 購物車中的產品 — 購物車和結帳流不保證有效
+- 最多 **100** 購物車中的產品 — 產品運作正常，符合回應時間的效能目標。
+- 最多 **300** 購物車中的產品 — 產品有效，但回應時間增加到超過目標。
+- 以上 **500** 購物車中的產品 — 無法保證購物車和結帳流程正常運作
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 共：
+[所有支援的版本](../../../release/versions.md) 之：
 
-- Adobe Commerce在雲基礎架構上
-- Adobe Commerce內部
+- 雲端基礎結構上的Adobe Commerce
+- Adobe Commerce內部部署
 
-## 減少購物車物料數
+## 減少購物車專案數量
 
-使用以下策略管理購物車物料的數量
+使用下列策略管理購物車專案數量
 
-- 使用 [!UICONTROL Add Item by SKU] 的子菜單。
-- 僅添加載入項目清單所需的自定義邏輯和購物車自定義。
+- 使用「 」，將訂單分割為數筆較小的訂單（列數較少）。 [!UICONTROL Add Item by SKU] 功能。
+- 僅新增載入專案清單所需的自訂邏輯和購物車自訂。
 
-## 潛在的效能影響
+## 對效能的潛在影響
 
-購物車中產品數量超過建議的最大數量可能會通過以下方式影響站點效能：
+購物車中產品數量超過建議的最大數量可能會透過以下方式影響網站效能：
 
-- 增加資料檢索操作、驗證購物車物料、檢查是否應用價格規則以及稅和總計計算的響應時間。
-- 增加了微型圖案渲染的響應時間，包括繪製車車視圖、檢出流和執行。
-- 為存在迷你圖的所有站點頁面增加載入時間。
+- 增加資料擷取作業、驗證購物車專案、檢查是否套用價格規則，以及稅捐和總計計算的回應時間。
+- 增加Minicart轉譯的回應時間，包括轉譯購物車檢視、結帳流程及執行。
+- 增加所有出現minicart的網站頁面的載入時間。
 
 ## 其他資訊
 
-- [配置產品選項](https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/product-options.html)
+- [設定產品選項](https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/product-options.html)
 - [管理購物車](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage.html)

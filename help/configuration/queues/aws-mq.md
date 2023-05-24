@@ -1,6 +1,6 @@
 ---
-title: 設定Amazon消息隊列
-description: 瞭解如何配置Commerce使用AWSMQ服務。
+title: 設定Amazon訊息佇列
+description: 瞭解如何設定Commerce以使用AWS MQ服務。
 exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,16 +9,16 @@ ht-degree: 0%
 
 ---
 
-# 設定Amazon消息隊列
+# 設定Amazon訊息佇列
 
-從Commerce 2.4.3開始，Amazon消息隊列(MQ)可用作本地消息隊列實例的雲就緒替換。
+自Commerce 2.4.3起，Amazon Message Queue (MQ)可取代雲端就緒，供內部部署訊息佇列例項使用。
 
-要在AWS上建立消息隊列，請參見 [設定AmazonMQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) 的 _AWS文檔_。
+若要在AWS上建立訊息佇列，請參閱 [設定Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) 在 _AWS檔案_.
 
-## 配置AWSMQ的商務
+## 設定AWS MQ的Commerce
 
-要連接到AWSMQ服務，請配置 `queue.amqp` 對象 `env.php` 的子菜單。
-AWS消息隊列需要SSL/TLS連接。
+若要連線至AWS MQ服務，請設定 `queue.amqp` 中的物件 `env.php` 檔案。
+AWS訊息佇列需要SSL/TLS連線。
 
 ```php
 'queue' => [
@@ -35,27 +35,27 @@ AWS消息隊列需要SSL/TLS連接。
 ],
 ```
 
-位置：
+其中：
 
-- `host`- AMQP端點的url;按一下AWS的代理名稱(刪除「https://」和尾隨埠號)
-- `user` — 建立AWSMQ Broker時輸入的用戶名值
-- `password` — 建立AWSMQ Broker時輸入的密碼值
+- `host`—AMQP端點的URL；按一下AWS中的代理人名稱即可使用(移除「https://」和尾端連線埠號碼)
+- `user` — 建立AWS MQ Broker時輸入的使用者名稱值
+- `password` — 建立AWS MQ Broker時輸入的密碼值
 
 >[!INFO]
 >
->AmazonMQ僅支援TLS連接。 不支援對等驗證。
+>Amazon MQ僅支援TLS連線。 不支援對等驗證。
 
-編輯後 `env.php` 檔案，運行以下命令以完成安裝：
+編輯後 `env.php` 檔案，執行以下命令以完成設定：
 
 ```bash
 bin/magento setup:upgrade
 ```
 
-## Commerce如何使用AWSMQ服務
+## Commerce如何使用AWS MQ服務
 
-的 `async.operations.all` 消息隊列使用者使用AMQP連接。
+此 `async.operations.all` 訊息佇列消費者使用AMQP連線。
 
-此使用者路由以前置詞的任何主題名稱 `async` 通過AWSMQ連接。
+此消費者會路由任何前置詞為的主題名稱 `async` 透過AWS MQ連線。
 
 例如，在 `InventoryCatalog` 有：
 
@@ -65,26 +65,26 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-預設配置 `InventoryCatalog` 不將消息發佈到 [!DNL RabbitMQ];預設行為是在同一用戶線程中執行操作。 告訴 `InventoryCatalog` 發佈消息，啟用 `cataloginventory/bulk_operations/async`。 從管理員，轉到 **商店** >配置> **目錄** > **庫存** >管理批量操作和設定  `Run asynchronously`至 **是**。
+的預設設定 `InventoryCatalog` 不會將訊息發佈至 [!DNL RabbitMQ]；預設行為是在相同的使用者執行緒中執行動作。 判斷 `InventoryCatalog` 若要發佈訊息，請啟用 `cataloginventory/bulk_operations/async`. 從管理員，前往 **商店** >設定> **目錄** > **詳細目錄** >管理員大量作業和設定  `Run asynchronously`至 **是**.
 
-## 測試消息隊列
+## 測試訊息佇列
 
-test消息從Commerce發送到 [!DNL RabbitMQ]:
+若要測試從Commerce傳送至的訊息 [!DNL RabbitMQ]：
 
-1. 登錄到 [!DNL RabbitMQ] Web控制台，用於監視隊列。
-1. 在管理中，建立產品。
-1. 建立庫存來源。
-1. 啟用 **商店** >配置> **目錄** > **庫存** >管理批量操作>非同步運行。
-1. 轉到 **目錄** >產品。 從網格中，選擇上面建立的產品，然後按一下 **分配庫存來源**。
-1. 按一下 **保存並關閉** 來完成此過程。
+1. 登入 [!DNL RabbitMQ] AWS中的Web主控台，用於監視佇列。
+1. 在「管理員」中建立產品。
+1. 建立「庫存管理系統」來源。
+1. 啟用 **商店** >設定> **目錄** > **詳細目錄** >管理員大量作業>非同步執行。
+1. 前往 **目錄** >產品。 從格線中，選取上面建立的產品，然後按一下 **指定存貨來源**.
+1. 按一下 **儲存並關閉** 以完成程式。
 
-   現在，您應看到 [!DNL RabbitMQ] web控制台。
+   您現在應該會看到訊息出現在 [!DNL RabbitMQ] 網頁主控台。
 
-1. 啟動 `async.operations.all` 消息隊列使用者。
+1. 開始 `async.operations.all` 訊息佇列消費者。
 
    ```bash
    bin/magento queue:consumers:start async.operations.all
    ```
 
-現在，您應在中看到已排隊的消息 [!DNL RabbitMQ] web控制台。
-驗證管理中產品的清單源是否已更改。
+您現在應該會在中看到已佇列訊息已處理 [!DNL RabbitMQ] 網頁主控台。
+在「管理員」中確認產品上的詳細目錄來源已變更。

@@ -12,9 +12,9 @@ template and the "_data/release/mde.yml" data file. To update the content,
 add new information to the data file. Follow the instructions in the README instructions to generate
 the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
 
-**支援**  — 已通過Adobe完全測試並受支援的版本。
+**支援**  — 已經過Adobe完整測試且受支援的版本。
 
-**相容**  — 確認與Adobe Commerce或Magento Open Source相容但不支援的版本。
+**相容**  — 已確認與Adobe Commerce或Magento Open Source相容但不支援的版本。
 
 **不支援**  — 與Adobe Commerce或Magento Open Source版本不相容的版本。
 
@@ -22,14 +22,14 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <thead>
     <tr>
       <th> </th>
-      <th>2.4.6版</th>
-      <th>2.4.5版</th>
-      <th>2.4.4版</th>
-      <th>2.4.3版</th>
-      <th>2.4.2版</th>
-      <th>2.4.1版</th>
-      <th>2.4.0版</th>
-      <th>2.3.7版</th>
+      <th>版本2.4.6</th>
+      <th>版本2.4.5</th>
+      <th>版本2.4.4</th>
+      <th>版本2.4.3</th>
+      <th>版本2.4.2</th>
+      <th>版本2.4.1</th>
+      <th>版本2.4.0</th>
+      <th>版本2.3.7</th>
     </tr>
   </thead>
   <tbody>
@@ -486,10 +486,10 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">渠道管理器</th>
+      <th colspan="9">頻道管理員</th>
     </tr>
     <tr>
-      <td>Channel Manager 2.0.0</td>
+      <td>頻道管理員2.0.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -508,7 +508,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Channel Manager 1.1.0</td>
+      <td>頻道管理員1.1.0</td>
       <td>不支援</span>
       </td>
       <td>支援</span>
@@ -527,7 +527,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Channel Manager 1.0.0</td>
+      <td>頻道管理員1.0.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -551,7 +551,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">Inventory management</th>
     </tr>
     <tr>
-      <td>Inventory management1.2.6</td>
+      <td>Inventory management 1.2.6</td>
       <td>支援</span>
       </td>
       <td>相容</span>
@@ -570,7 +570,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Inventory management1.2.5</td>
+      <td>Inventory management 1.2.5</td>
       <td>相容</span>
       </td>
       <td>支援</span>
@@ -589,7 +589,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Inventory management1.2.4</td>
+      <td>Inventory management 1.2.4</td>
       <td>相容</span>
       </td>
       <td>相容</span>
@@ -608,7 +608,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Inventory management1.2.3</td>
+      <td>Inventory management 1.2.3</td>
       <td>相容</span>
       </td>
       <td>相容</span>
@@ -627,7 +627,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Inventory management1.2.2</td>
+      <td>Inventory management 1.2.2</td>
       <td>相容</span>
       </td>
       <td>相容</span>
@@ -646,7 +646,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Inventory management1.2.1</td>
+      <td>Inventory management 1.2.1</td>
       <td>相容</span>
       </td>
       <td>相容</span>
@@ -665,7 +665,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Inventory management1.2.0</td>
+      <td>Inventory management 1.2.0</td>
       <td>相容</span>
       </td>
       <td>相容</span>
@@ -684,7 +684,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Inventory management1.1.7</td>
+      <td>Inventory management 1.1.7</td>
       <td>相容</span>
       </td>
       <td>相容</span>
@@ -700,172 +700,172 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>相容</span>
       </td>
       <td>支援</span>
-      </td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <th colspan="9">即時搜索</th>
-    </tr>
-    <tr>
-      <td>即時搜索3.0.1</td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>不支援</span>
-      </td>
-    </tr>
-    <tr>
-      <td>即時搜索2.0.5</td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>不支援</span>
-      </td>
-    </tr>
-    <tr>
-      <td>即時搜索2.0.4</td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>不支援</span>
-      </td>
-    </tr>
-    <tr>
-      <td>即時搜索2.0.3</td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>不支援</span>
-      </td>
-    </tr>
-    <tr>
-      <td>即時搜索2.0.0</td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>不支援</span>
-      </td>
-    </tr>
-    <tr>
-      <td>即時搜索1.3.0</td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>不支援</span>
-      </td>
-    </tr>
-    <tr>
-      <td>即時搜索1.2.0</td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>不支援</span>
-      </td>
-    </tr>
-    <tr>
-      <td>即時搜索1.1.0</td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>相容</span>
-      </td>
-      <td>不支援</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">頁面生成器</th>
+      <th colspan="9">即時搜尋</th>
     </tr>
     <tr>
-      <td>頁面生成器1.7.3</td>
+      <td>Live Search 3.0.1</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Live Search 2.0.5</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Live Search 2.0.4</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Live Search 2.0.3</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Live Search 2.0.0</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Live Search 1.3.0</td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Live Search 1.2.0</td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Live Search 1.1.0</td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>相容</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="9">頁面產生器</th>
+    </tr>
+    <tr>
+      <td>頁面產生器1.7.3</td>
       <td>支援</span>
       </td>
       <td>不支援</span>
@@ -884,7 +884,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>頁面生成器1.7.2</td>
+      <td>頁面產生器1.7.2</td>
       <td>不支援</span>
       </td>
       <td>支援</span>
@@ -903,7 +903,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>頁面生成器1.7.1</td>
+      <td>頁面產生器1.7.1</td>
       <td>不支援</span>
       </td>
       <td>不支援</span>
@@ -922,7 +922,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>頁面生成器1.7.0</td>
+      <td>頁面產生器1.7.0</td>
       <td>不支援</span>
       </td>
       <td>不支援</span>
@@ -941,7 +941,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>頁面生成器1.6.0</td>
+      <td>頁面產生器1.6.0</td>
       <td>不支援</span>
       </td>
       <td>不支援</span>
@@ -960,7 +960,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>頁面生成器1.5.0</td>
+      <td>頁面產生器1.5.0</td>
       <td>不支援</span>
       </td>
       <td>不支援</span>
@@ -979,7 +979,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>頁面生成器1.4.0</td>
+      <td>頁面產生器1.4.0</td>
       <td>不支援</span>
       </td>
       <td>不支援</span>
@@ -998,7 +998,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>頁面生成器1.3.6</td>
+      <td>頁面產生器1.3.6</td>
       <td>不支援</span>
       </td>
       <td>不支援</span>
@@ -1022,7 +1022,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">付款服務</th>
     </tr>
     <tr>
-      <td>支付服務2.0.0</td>
+      <td>Payment Services 2.0.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1041,7 +1041,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>支付服務1.6.0</td>
+      <td>Payment Services 1.6.0</td>
       <td>不支援</span>
       </td>
       <td>支援</span>
@@ -1060,7 +1060,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>支付服務1.5.4</td>
+      <td>Payment Services 1.5.4</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1079,7 +1079,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>支付服務1.5.3</td>
+      <td>Payment Services 1.5.3</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1098,7 +1098,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>支付服務1.5.2</td>
+      <td>Payment Services 1.5.2</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1117,7 +1117,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>支付服務1.5.1</td>
+      <td>Payment Services 1.5.1</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1136,7 +1136,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>支付服務1.5.0</td>
+      <td>Payment Services 1.5.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1155,7 +1155,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>支付服務1.4.1</td>
+      <td>Payment Services 1.4.1</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1174,7 +1174,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>支付服務1.4.0</td>
+      <td>Payment Services 1.4.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1198,7 +1198,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">快速簽出</th>
     </tr>
     <tr>
-      <td>快速結帳1.8.0</td>
+      <td>Quick Checkout 1.8.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1217,7 +1217,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>快速結帳1.7.0</td>
+      <td>Quick Checkout 1.7.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1236,7 +1236,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>快速結帳1.6.0</td>
+      <td>Quick Checkout 1.6.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1255,7 +1255,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>快速結帳1.5.0</td>
+      <td>Quick Checkout 1.5.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1274,7 +1274,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>快速結帳1.4.0</td>
+      <td>Quick Checkout 1.4.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1293,7 +1293,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>快速結帳1.3.0</td>
+      <td>Quick Checkout 1.3.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1312,7 +1312,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>快速結帳1.2.0</td>
+      <td>Quick Checkout 1.2.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1331,7 +1331,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>快速結帳1.1.0</td>
+      <td>Quick Checkout 1.1.0</td>
       <td>支援</span>
       </td>
       <td>相容</span>
@@ -1350,7 +1350,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>快速結帳1.0.0</td>
+      <td>Quick Checkout 1.0.0</td>
       <td>支援</span>
       </td>
       <td>相容</span>
@@ -1364,106 +1364,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>支援</span>
       </td>
       <td>不支援</span>
-      </td>
-      <td>不支援</span>
-      </td>
-    </tr>
-  </tbody>
-  <tbody>
-    <tr>
-      <th colspan="9">商店完成Adobe Commerce</th>
-    </tr>
-    <tr>
-      <td>用於Adobe Commerce的商店履1.4.0</td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>不支援</span>
-      </td>
-    </tr>
-    <tr>
-      <td>用於Adobe Commerce的商店履1.3.0</td>
-      <td>不支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>不支援</span>
-      </td>
-    </tr>
-    <tr>
-      <td>用於Adobe Commerce的商店履1.2.0</td>
-      <td>不支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>不支援</span>
-      </td>
-    </tr>
-    <tr>
-      <td>用於Adobe Commerce的商店履1.1.0</td>
-      <td>不支援</span>
-      </td>
-      <td>不支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>不支援</span>
-      </td>
-    </tr>
-    <tr>
-      <td>用於Adobe Commerce的商店履1.1.0</td>
-      <td>不支援</span>
-      </td>
-      <td>不支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
-      </td>
-      <td>支援</span>
       </td>
       <td>不支援</span>
       </td>
@@ -1471,10 +1371,110 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Experience Platform連接器</th>
+      <th colspan="9">適用於Adobe Commerce的商店履行</th>
     </tr>
     <tr>
-      <td>Experience Platform連接器1.0.0</td>
+      <td>Adobe Commerce 1.4.0的商店履行</td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.3.0的商店履行</td>
+      <td>不支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.2.0的Store Fulfillment</td>
+      <td>不支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.1.0的Store Fulfillment</td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Adobe Commerce 1.1.0的Store Fulfillment</td>
+      <td>不支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>支援</span>
+      </td>
+      <td>不支援</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="9">Experience Platform聯結器</th>
+    </tr>
+    <tr>
+      <td>Experience Platform聯結器1.0.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1498,7 +1498,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">產品Recommendations</th>
     </tr>
     <tr>
-      <td>產品Recommendations5.0</td>
+      <td>產品Recommendations 5.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1517,7 +1517,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>產品Recommendations4.0.1</td>
+      <td>產品Recommendations 4.0.1</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1536,7 +1536,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>產品Recommendations4.0.0</td>
+      <td>產品Recommendations 4.0.0</td>
       <td>支援</span>
       </td>
       <td>支援</span>
@@ -1555,7 +1555,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>產品Recommendations3.3.7</td>
+      <td>產品Recommendations 3.3.7</td>
       <td>相容</span>
       </td>
       <td>相容</span>
@@ -1574,7 +1574,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>產品Recommendations3.3.6</td>
+      <td>產品Recommendations 3.3.6</td>
       <td>相容</span>
       </td>
       <td>相容</span>
@@ -1593,7 +1593,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>產品Recommendations3.3.5</td>
+      <td>產品Recommendations 3.3.5</td>
       <td>相容</span>
       </td>
       <td>相容</span>
@@ -1612,7 +1612,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>產品Recommendations3.3.3</td>
+      <td>產品Recommendations 3.3.3</td>
       <td>相容</span>
       </td>
       <td>相容</span>
@@ -1631,7 +1631,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>產品Recommendations3.3.2</td>
+      <td>產品Recommendations 3.3.2</td>
       <td>相容</span>
       </td>
       <td>相容</span>
@@ -1650,7 +1650,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>產品Recommendations3.3.1</td>
+      <td>產品Recommendations 3.3.1</td>
       <td>相容</span>
       </td>
       <td>相容</span>

@@ -1,6 +1,6 @@
 ---
-title: 依賴關係報告
-description: 建立顯示模組、循環和框架依賴項的合計的報告。
+title: 相依性報表
+description: 建立顯示模組、循環和框架相依性總計的報告。
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,19 +9,19 @@ ht-degree: 0%
 
 ---
 
-# 依賴關係報告
+# 相依性報表
 
 {{file-system-owner}}
 
-您可以運行以下類型的報告：
+您可以執行下列型別的報表：
 
-- **模組依賴項**:顯示模組之間依賴關係的總數以及依賴關係是硬的還是軟的。
-- **循環依賴項**:顯示每個模組的依賴關係鏈總數以及循環依賴關係的數量和清單。
-- **框架依賴項**:按模組顯示對Commerce框架的依賴項總數（包括每個庫的框架條目總數）。
+- **模組相依性**：顯示模組之間的相依性總數，以及相依性是硬式還是軟式。
+- **循環相依性**：顯示相依性鏈結的總數，以及每個模組的循環相依性數目和清單。
+- **框架相依性**：依模組顯示Commerce架構的相依性總數（包括每個程式庫的架構專案總數）。
 
-注釋中的依賴關係也是依賴關係。
+註解中的相依性也是相依性。
 
-## 運行依賴關係報告
+## 執行相依性報表
 
 命令選項：
 
@@ -29,27 +29,27 @@ ht-degree: 0%
 bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework} [-d|--directory="<path>"] [-o|--output="<path and filename"]
 ```
 
-下表說明了此命令的選項、參數和值。
+下表說明此命令的選項、引數和值。
 
-| 參數 | 值 | 需要？ |
+| 引數 | 值 | 必填？ |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
-| `show-modules` | 模組依賴性報告。 | 是 |
-| `show-modules-circular` | 循環依賴項報告。 | 是 |
-| `show-framework` | 框架依賴性報告。 | 是 |
-| `-d --directory` | 開始搜索報表資料的基目錄路徑。 | 否 |
-| `-o --output` | 指定報表的逗號分隔值(csv)輸出檔案的絕對檔案系統路徑和檔案名。 | 否 |
+| `show-modules` | 模組相依性報表。 | 是 |
+| `show-modules-circular` | 循環相依性報表。 | 是 |
+| `show-framework` | 框架相依性報表。 | 是 |
+| `-d --directory` | 要開始搜尋報表資料的基礎目錄路徑。 | 否 |
+| `-o --output` | 指定報表的逗號分隔值(csv)輸出檔案的絕對檔案系統路徑和檔案名稱。 | 否 |
 
-如果沒有將目錄或檔案名作為參數傳遞，則以下應用程式根目錄用作預設目錄，並且使用以下預設檔案名：
+如果未傳遞任何目錄或檔案名稱作為引數，則會使用下列應用程式根目錄作為預設目錄，並使用下列預設檔案名稱：
 
-| 命令 | 檔案名 |
+| 命令 | 檔案名稱 |
 | ----------------------------------------------------- | ----------------------------------- |
 | `bin/magento info:dependencies:show-modules` | `modules-dependencies.csv` |
 | `bin/magento info:dependencies:show-modules-circular` | `modules-circular-dependencies.csv` |
 | `bin/magento info:dependencies:show-framework` | `framework-dependencies.csv` |
 
-### 「Sample module dependencies 」報告
+### 模組相依性報表範例
 
-以下是示例模組依賴關係報告的輸出部分：
+以下是範例模組相依性報表的部分輸出：
 
 ```terminal
 "","All","Hard","Soft"
@@ -71,9 +71,9 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 " -- magento/module-import-export","","1","0"
 ```
 
-### 循環依賴關係報告示例
+### 循環相依性報表範例
 
-以下是示例循環依賴關係報告的輸出部分：
+以下是範例循環相依性報表輸出的一部分：
 
 ```terminal
 "Circular dependencies:","Total number of chains"
@@ -97,9 +97,9 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 "magento/module-config->magento/module-backend->magento/module-sales->magento/module-checkout->magento/module-customer->magento/module-review->magento/module-catalog->magento/module-catalog-rule->magento/module-rule->magento/module-eav->magento/module-config"
 ```
 
-### 框架相關性報告示例
+### 範例架構相依性報表
 
-以下是示例框架相關性報告輸出的一部分：
+以下是範例架構相依性報表的部分輸出：
 
 ```terminal
 "Dependencies of framework:","Total number"

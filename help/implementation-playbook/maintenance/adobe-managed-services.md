@@ -1,6 +1,6 @@
 ---
-title: Adobe托管服務
-description: 瞭解Adobe托管服務如何幫助支援和維護您的Adobe Commerce實施。
+title: Adobe Managed Services
+description: 瞭解Adobe Managed Services如何協助支援和維護您的Adobe Commerce實作。
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 source-git-commit: 2affc555c2e719d0f8b8de06df3a8c080effb425
 workflow-type: tm+mt
@@ -10,37 +10,37 @@ ht-degree: 0%
 ---
 
 
-# Adobe托管服務
+# Adobe Managed Services
 
-Adobe Commerce是一個提供電子商務功能的平台，包括強大的現成功能、廣泛的可定製選項和第三方整合。
+Adobe Commerce是一個提供電子商務功能的平台，其中包含強大的現成可用功能、廣泛的自訂選項和協力廠商整合。
 
-Adobe托管服務在雲基礎架構專業計畫上為Adobe Commerce提供托管和托管應用程式和基礎架構。
+Adobe Managed Services在雲端基礎結構Pro計畫上為Adobe Commerce提供託管和受管理的應用程式和基礎結構。
 
-## 好處
+## 優點
 
-![顯示Adobe Managed Services優點的資訊圖](../../assets/playbooks/managed-services-benefits.png)
+![顯示Adobe Managed Services權益的資訊圖](../../assets/playbooks/managed-services-benefits.png)
 
-### 實施選項比較
+### 實作選項的比較
 
-Adobe Managed Services提供的主要優勢不在於內部部署和非托管雲實施，包括：
+Adobe Managed Services相較於內部部署和非Managed Cloud實作，可提供下列主要優點：
 
-- **增強的服務級別目標(SLT)** — 響應時間比標準Adobe Commerce支援快。
-- **增強的服務級別協定(SLA)**—99.9%的應用程式級別，讓常規的Adobe Commerce雲基礎架構客戶在99.99%的基礎架構級別上佔據優勢。
-- **指定的雲專業知識**—Managed Services為客戶提供了指定的客戶成功工程師(CSE)，該工程師是應用程式和雲基礎架構專家。 CSE與客戶及其合作夥伴合作，為他們提供最佳實踐和指導，以加快上市時間，包括：
-   - 通過登機過程提供指導和支援
-   - 管理資源調配和平台設定
-   - 就整合和定製的體系結構原則提供建議
-   - 推動事件管理和業務連續性
-   - 通過規劃、執行和監控提供事件支援
-   - 雲支援和專業知識（主動優化、報告和最佳實踐）
+- **增強的服務層級目標(SLT)** — 回應時間比標準Adobe Commerce支援更快。
+- **增強的服務等級協定(SLA)** — 應用程式等級為99.9%，而雲端基礎結構上的一般Adobe Commerce客戶在99.99%的基礎結構等級基礎上獲得此等級。
+- **指定的雲端專業知識**—Managed Services為客戶提供指定的客戶成功工程師(CSE)，擔任應用程式和雲端基礎結構專家。 CSE與客戶及其合作夥伴合作，提供最佳實務和指引以加快上市時間，包括：
+   - 入門流程中的指南和支援
+   - 管理布建和平台設定
+   - 提供整合與自訂的架構原則相關建議
+   - 推動事件管理及業務持續性
+   - 透過規劃、執行和監控提供事件支援
+   - 雲端支援和專業知識（主動最佳化、報告和最佳實務）
 
-查看以下資訊圖，瞭解更詳細的Managed Services關鍵優勢比較：
+請檢閱下列資訊圖表，以取得主要Managed Services權益的更詳細比較：
 
-![顯示Adobe托管服務與其他Adobe Commerce實施選項的比較的資訊圖](../../assets/playbooks/managed-services-compare.png)
+![顯示Adobe Managed Services與其他Adobe Commerce實作選項比較的資訊圖](../../assets/playbooks/managed-services-compare.png)
 
-## 角色和職責
+## 角色與責任
 
-Adobe提供一套關於Managed Services系統上Adobe Commerce的供應、開發、準備和生產的服務。 為了盡可能高效地開發和部署解決方案，客戶和合作夥伴必須瞭解並履行其職責，如下所述：
+Adobe圍繞Managed Services系統上Adobe Commerce的布建、開發、測試和生產提供了一組服務。 為了以高效率開發和部署解決方案，客戶與合作夥伴必須瞭解並履行其職責，如以下所述：
 
 <table>
     <thead>
@@ -53,313 +53,313 @@ Adobe提供一套關於Managed Services系統上Adobe Commerce的供應、開發
     </thead>
     <tbody>
         <tr>
-            <td colspan="4" style="background:lightgray;"><strong>設定</strong></td>
+            <td colspan="4" style="background:lightgray;"><strong>布建</strong></td>
         </tr>
         <tr>
-            <td>雲區域選擇</td>
+            <td>雲端區域選擇</td>
             <td>所有者</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
             <td>顧問</td>
         </tr>
         <tr>
-            <td>實例設定</td>
+            <td>執行個體布建</td>
             <td></td>
             <td></td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>內部網路配置和安全</td>
+            <td>內部網路組態與安全性</td>
             <td></td>
             <td></td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>Adobe Commerce應用程式設定</td>
+            <td>Adobe Commerce應用程式布建</td>
             <td></td>
             <td></td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>Adobe Commerce原始碼訪問</td>
+            <td>Adobe Commerce原始碼存取</td>
             <td></td>
             <td></td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>CDN服務設定</td>
+            <td>CDN服務布建</td>
             <td></td>
             <td></td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>地方發展環境</td>
-            <td>貢獻者</td>
+            <td>本機開發環境</td>
+            <td>投稿人</td>
             <td>所有者</td>
             <td></td>
         </tr>
         <tr>
-            <td colspan="4" style="background:lightgray;"><strong>開發與質量保證</strong></td>
+            <td colspan="4" style="background:lightgray;"><strong>開發與QA</strong></td>
         </tr>
         <tr>
-            <td>需求收集和項目管理</td>
-            <td>貢獻者</td>
+            <td>需求收集和專案管理</td>
+            <td>投稿人</td>
             <td>所有者</td>
             <td>顧問</td>
         </tr>
         <tr>
             <td>應用程式開發</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
             <td>所有者</td>
             <td>顧問</td>
         </tr>
         <tr>
             <td>應用程式測試</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
             <td>所有者</td>
             <td>顧問</td>
         </tr>
         <tr>
-            <td colspan="4" style="background:lightgray;"><strong>暫存和過渡</strong></td>
+            <td colspan="4" style="background:lightgray;"><strong>測試和轉換</strong></td>
         </tr>
         <tr>
-            <td>代碼部署到開發、整合和轉移</td>
-            <td>貢獻者</td>
+            <td>程式碼部署到開發、整合和測試</td>
+            <td>投稿人</td>
             <td>所有者</td>
             <td>顧問</td>
         </tr>
         <tr>
             <td>內容部署</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
             <td>所有者</td>
             <td>顧問</td>
         </tr>
         <tr>
-            <td>用戶接受Test開發</td>
+            <td>使用者驗收測試開發</td>
             <td>所有者</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
             <td>顧問</td>
         </tr>
         <tr>
-            <td>用戶驗收測試</td>
+            <td>使用者驗收測試</td>
             <td>所有者</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
             <td>顧問</td>
         </tr>
         <tr>
-            <td>自定義監視要求</td>
-            <td>貢獻者</td>
+            <td>自訂監控需求</td>
+            <td>投稿人</td>
             <td>所有者</td>
             <td>顧問</td>
         </tr>
         <tr>
-            <td>客戶提供的SSL證書</td>
+            <td>客戶提供的SSL憑證</td>
             <td>所有者</td>
             <td></td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
         </tr>
         <tr>
-            <td>效能和負載Test開發</td>
-            <td>貢獻者</td>
+            <td>效能與負載測試開發</td>
+            <td>投稿人</td>
             <td>所有者</td>
             <td>顧問</td>
         </tr>
         <tr>
-            <td>效能和負載測試</td>
-            <td>貢獻者</td>
+            <td>效能與負載測試</td>
+            <td>投稿人</td>
             <td>所有者</td>
             <td>顧問</td>
         </tr>
         <tr>
-            <td>定制開發與QA</td>
-            <td>貢獻者</td>
+            <td>自訂開發和QA</td>
+            <td>投稿人</td>
             <td>所有者</td>
             <td>顧問</td>
         </tr>
         <tr>
             <td>Runbook完成</td>
             <td>所有者</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
         </tr>
         <tr>
-            <td>Runbook審閱</td>
+            <td>Runbook評論</td>
             <td></td>
             <td></td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td colspan="4" style="background:lightgray;"><strong>啟動</strong></td>
+            <td colspan="4" style="background:lightgray;"><strong>Launch</strong></td>
         </tr>
         <tr>
-            <td>上線核對表</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>上線檢查清單</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>現場活動會議室</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>上線活動會議室</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>生產代碼部署</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>生產計畫碼部署</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
             <td>所有者</td>
         </tr>
         <tr>
             <td colspan="4" style="background:lightgray;"><strong>生產</strong></td>
         </tr>
         <tr>
-            <td>生產基礎架構監控</td>
+            <td>生產基礎建設監控</td>
             <td></td>
             <td></td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>主應用程式監控</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>主要應用程式監視</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>生產事件響應</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>生產事件回應</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>基礎架構和作業系統級維護</td>
+            <td>基礎結構和作業系統層級的維護</td>
             <td></td>
             <td></td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>自定義代碼維護和安全修補程式</td>
-            <td>貢獻者</td>
+            <td>自訂程式碼維護與安全性修補程式</td>
+            <td>投稿人</td>
             <td>所有者</td>
             <td>顧問</td>
         </tr>
         <tr>
-            <td>訪問Adobe Commerce產品更新和升級</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>提供Adobe Commerce產品更新和升級的存取權</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>應用Adobe Commerce產品更新和升級</td>
-            <td>貢獻者</td>
+            <td>套用Adobe Commerce產品更新和升級</td>
+            <td>投稿人</td>
             <td>所有者</td>
             <td>顧問</td>
         </tr>
         <tr>
-            <td>更改審批委員會以審批生產部署</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>變更核准委員會以核准生產部署</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
             <td>所有者</td>
         </tr>
         <tr>
             <td>生產應用程式管理</td>
             <td>所有者</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
             <td>顧問</td>
         </tr>
         <tr>
-            <td>調整生產基礎架構</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>調整生產基礎結構</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>擴展生產體系結構</td>
-            <td></td>
-            <td></td>
-            <td>所有者</td>
-        </tr>
-        <tr>
-            <td>生產備份和恢復</td>
-            <td></td>
-            <td>貢獻者</td>
-            <td>所有者</td>
-        </tr>
-        <tr>
-            <td colspan="4" style="background:lightgray;"><strong>安全性和合規性</strong></td>
-        </tr>
-        <tr>
-            <td>SOC-2對該處的審計</td>
+            <td>擴展生產架構</td>
             <td></td>
             <td></td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>基礎架構的PCI認證</td>
+            <td>生產備份和復原</td>
+            <td></td>
+            <td>投稿人</td>
+            <td>所有者</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="background:lightgray;"><strong>安全性與合規性</strong></td>
+        </tr>
+        <tr>
+            <td>SOC-2服務稽核</td>
             <td></td>
             <td></td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>定制應用程式的PCI認證</td>
+            <td>基礎建設的PCI認證</td>
+            <td></td>
+            <td></td>
             <td>所有者</td>
-            <td>貢獻者</td>
+        </tr>
+        <tr>
+            <td>自訂應用程式的PCI認證</td>
+            <td>所有者</td>
+            <td>投稿人</td>
             <td></td>
         </tr>
         <tr>
-            <td>核心應用程式的安全審核</td>
+            <td>核心應用程式的安全性稽核</td>
             <td>所有者</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
             <td>顧問</td>
         </tr>
         <tr>
-            <td>自定義和擴展的安全審核</td>
+            <td>自訂和擴充功能的安全性稽核</td>
             <td>所有者</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
             <td></td>
         </tr>
         <tr>
-            <td>客戶應用程式實例的滲透測試</td>
+            <td>客戶應用程式例項的滲透測試</td>
             <td>所有者</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
             <td></td>
         </tr>
         <tr>
             <td>Web應用程式防火牆規則(WAF)</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>入侵檢測監控</td>
+            <td>入侵偵測監視</td>
             <td></td>
             <td></td>
             <td>所有者</td>
         </tr>
         <tr>
             <td>應用程式和資料庫事件監視</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
             <td>所有者</td>
         </tr>
         <tr>
             <td>Web應用程式防火牆事件監視</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>用戶管理和SSO整合</td>
+            <td>使用者管理和SSO整合</td>
             <td>所有者</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
         </tr>
         <tr>
-            <td>安全事件響應</td>
-            <td>貢獻者</td>
-            <td>貢獻者</td>
+            <td>安全性事件回應</td>
+            <td>投稿人</td>
+            <td>投稿人</td>
             <td>所有者</td>
         </tr>
         <tr>
-            <td>設定、保護和維護與公司網路和資源的連接 </td>
+            <td>設定、保護及維護公司網路與資源的連線 </td>
             <td>所有者</td>
             <td>顧問</td>
             <td>顧問</td>
@@ -367,23 +367,23 @@ Adobe提供一套關於Managed Services系統上Adobe Commerce的供應、開發
     </tbody>
 </table>
 
-## 安全
+## 安全性
 
-Managed Services的Adobe安全堆棧使用自動化和一致性在各個級別構建安全，以減少人為錯誤。 開發和操作團隊自動從堆棧的不同級別繼承安全控制。
+Managed Services的Adobe安全性棧疊會使用自動化和一致性來減少人為錯誤，以在各個層級建立安全性。 開發和作業團隊會自動從棧疊的不同層級繼承安全性控制項。
 
-平台合作夥伴(如Amazon Web Services和MicrosoftAzure)在應用平台自定義時確保最大的安全覆蓋，而Adobe的Managed Services團隊則提供核心安全服務，如合規性、日誌記錄、身份驗證、掃描和監控，以及伺服器安全和安全應用程式配置。 請參閱 [Adobe Commerce安全](https://business.adobe.com/products/magento/secure-ecommerce.html) 的子菜單。
+平台合作夥伴(例如Amazon Web Services和Microsoft Azure)在套用平台自訂時，可確保最大限度的安全性涵蓋範圍，而Adobe的Managed Services團隊則提供核心安全性服務，例如法規遵循、記錄、驗證、掃描和監控，以及伺服器安全性和安全應用程式設定。 另請參閱 [Adobe Commerce安全性](https://business.adobe.com/products/magento/secure-ecommerce.html) 以取得詳細資訊。
 
-下圖顯示了Adobe Managed Services安全技術堆棧：
+下圖顯示Adobe Managed Services安全性技術棧疊：
 
-![顯示Adobe Managed Services安全堆棧的圖](../../assets/playbooks/managed-services-security-stack.svg)
+![顯示Adobe Managed Services安全性棧疊的圖表](../../assets/playbooks/managed-services-security-stack.svg)
 
-## 升級幫助
+## 升級協助
 
-Managed Services團隊在幫助規劃和協助升級過程方面發揮積極作用。 您的客戶成功工程師(CSE)與升級項目團隊(包括項目經理和開發人員(內部主題專家、Adobe認證合作夥伴或Adobe咨詢專業人員)協作，幫助您的團隊確保在升級過程中進行適當的規劃並遵守最佳做法。
+Managed Services團隊在協助規劃及協助升級程式方面扮演積極角色。 您的客戶成功工程師(CSE)與您的升級專案團隊合作，包括專案經理和開發人員(內部主題專家、Adobe認證合作夥伴或Adobe諮詢的專業人員)，以協助您的團隊在升級期間確保正確規劃並遵守最佳實務。
 
-Managed ServicesCSE已與Adobe Commerce客戶合作，在大型環境中執行升級。 您的CSE可以幫助您利用專家知識來最大限度地提高昇級成功率，同時最大限度地減少停機時間並降低總體風險。 此外，Managed ServicesCSE與您的專用暫存環境一起進行升級，這樣在驗證升級時不會影響現有的生產流程。
+Managed Services CSE已與Adobe Commerce客戶合作，在大型環境中執行升級。 您的CSE可協助您運用專家知識，在最大限度提升成功升級的同時，將停機時間降到最低並降低整體風險。 此外，Managed Services CSE可與您的專用中繼環境搭配使用以進行升級，因此在驗證升級時不會影響現有的生產流程。
 
-Adobe提供了一組圍繞Managed Services系統的配置、開發、準備和生產的服務。 下表概述了每個參與者在升級過程中所扮演的角色：
+Adobe圍繞Managed Services系統的布建、開發、測試和生產提供了一組服務。 下表提供每個參與者在升級過程中扮演的角色概觀：
 
 <table>
 <thead>
@@ -398,67 +398,67 @@ Adobe提供了一組圍繞Managed Services系統的配置、開發、準備和�
 <tbody>
   <tr>
     <td rowspan="3">計畫升級</td>
-    <td>建立升級項目計畫</td>
+    <td>建立升級專案計畫</td>
     <td>所有者</td>
-    <td>貢獻者</td>
-    <td>貢獻者<br />CSE提供升級模板和升級計畫示例；提供建議和最佳實踐提示。</td>
+    <td>投稿人</td>
+    <td>投稿人<br />CSE提供升級範本和升級計畫範例；提供建議和最佳實務提示。</td>
   </tr>
   <tr>
-    <td>確定所需的基礎架構更改</td>
+    <td>決定所需的基礎架構變更</td>
     <td></td>
-    <td>貢獻者</td>
-    <td>所有者<br />CSE會檢查試運行和生產基礎架構以確保適當的規模調整。</td>
+    <td>投稿人</td>
+    <td>所有者<br />CSE會審查中繼和生產基礎架構，以確保適當的規模調整。</td>
   </tr>
   <tr>
-    <td>評估升級複雜性<br />識別並記錄軟體包、問題和修復程式以及第三方和自定義模組</td>
-    <td>貢獻者</td>
+    <td>評估升級複雜性<br />識別並記錄套件、問題和修正，以及第三方和自訂模組</td>
+    <td>投稿人</td>
     <td>所有者</td>
-    <td>貢獻者<br />CSE提供升級相容性工具報告和建議。</td>
+    <td>投稿人<br />CSE提供升級相容性工具報告和建議。</td>
   </tr>
   <tr>
     <td rowspan="3">執行升級</td>
-    <td>升級基礎架構服務<br />[MariaDB、Redis、Open Search和Rabbit MQ]（暫存和生產）</td>
+    <td>升級基礎建設服務<br />[MariaDB、Redis、Open Search和Rabbit MQ] （測試與生產）</td>
     <td></td>
     <td></td>
-    <td>所有者<br />CSE協調基礎架構服務升級。<br />CSE安排會議會議活動以進行升級。<br />CSE可幫助從生產遷移到暫存。</td>
+    <td>所有者<br />CSE協調基礎建設服務升級。<br />CSE會安排會議活動以進行升級。<br />CSE可協助從生產環境移轉至中繼環境。</td>
   </tr>
   <tr>
-    <td>更新商務代碼庫和自定義項；代碼重編譯和代碼重構</td>
-    <td>貢獻者</td>
+    <td>更新Commerce程式碼基底和自訂；程式碼重新編譯和程式碼重構</td>
+    <td>投稿人</td>
     <td>所有者</td>
     <td></td>
   </tr>
   <tr>
-    <td>執行升級後檢查和故障排除</td>
+    <td>執行升級後檢查和疑難排解</td>
     <td></td>
     <td>所有者</td>
-    <td>貢獻者<br />CSE執行升級後Runbook以檢測和修正與升級相關的問題。</td>
+    <td>投稿人<br />CSE會執行升級後的Runbook，以偵測及修正與升級相關的問題。</td>
   </tr>
   <tr>
-    <td rowspan="3">UAT和發佈</td>
-    <td>運行效能和安全test</td>
-    <td>貢獻者</td>
+    <td rowspan="3">UAT和Launch</td>
+    <td>執行效能和安全測試</td>
+    <td>投稿人</td>
     <td>所有者</td>
-    <td>貢獻者<br />CSE通過監控應用程式和基礎架構的效能來幫助進行負載測試。<br />CSE可幫助配置Commerce Security Scan Tool。</td>
+    <td>投稿人<br />CSE可監控應用程式和基礎結構的效能，以協助進行負載測試。<br />CSE協助設定Commerce安全性掃描工具。</td>
   </tr>
   <tr>
-    <td>試運行時的用戶驗收測試</td>
+    <td>中繼時的使用者驗收測試</td>
     <td>所有者</td>
-    <td>貢獻者</td>
-    <td>貢獻者<br />CSE驗證應用程式和基礎架構在升級後是否正確執行。</td>
+    <td>投稿人</td>
+    <td>投稿人<br />CSE會在升級後驗證應用程式和基礎結構是否正確執行。</td>
   </tr>
   <tr>
-    <td>啟動至生產</td>
-    <td>貢獻者</td>
+    <td>啟動至生產環境</td>
+    <td>投稿人</td>
     <td>所有者</td>
-    <td>貢獻者<br />CSE安排啟動會議活動。</td>
+    <td>投稿人<br />CSE排程啟動會議事件。</td>
   </tr>
   <tr>
-    <td>發佈後</td>
+    <td>啟動後</td>
     <td></td>
-    <td>貢獻者</td>
-    <td>貢獻者</td>
-    <td>所有者<br />CSE監控應用程式和基礎架構的效能。</td>
+    <td>投稿人</td>
+    <td>投稿人</td>
+    <td>所有者<br />CSE監控應用程式和基礎建設的效能。</td>
   </tr>
 </tbody>
 </table>

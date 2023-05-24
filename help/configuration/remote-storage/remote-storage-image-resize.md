@@ -1,6 +1,6 @@
 ---
-title: 為遠程儲存配置影像大小調整
-description: 通過配置伺服器端影像大小來優化磁碟資源。
+title: 設定遠端儲存裝置的影像調整大小
+description: 透過設定伺服器端影像大小調整來最佳化磁碟資源。
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
@@ -10,49 +10,49 @@ ht-degree: 0%
 
 ---
 
-# 為遠程儲存配置影像大小調整
+# 設定遠端儲存裝置的影像調整大小
 
-預設情況下，Adobe Commerce支援應用程式端的影像大小調整。 但是，通過啟用遠程儲存模組，您可以使用Nginx將影像大小調整卸載到伺服器端，在伺服器端可以節省磁碟資源並優化磁碟使用。
+依預設，Adobe Commerce支援在應用程式端調整影像大小。 不過，透過啟用「遠端儲存」模組，您可以使用Nginx將影像大小調整解除安裝到伺服器端，藉此節省磁碟資源並最佳化磁碟使用量。
 
-下圖顯示了Nginx如何檢索、調整影像大小和在快取中儲存影像。 調整大小由URL中包含的參數（如高度和寬度）決定。
+下圖顯示Nginx如何擷取、調整大小及儲存快取中的影像。 調整大小是由URL中包含的引數（例如高度和寬度）所決定。
 
 ![調整影像大小](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >
->有關Adobe Commerce雲基礎架構項目，請參閱 [在雲基礎架構上為Commerce配置遠程儲存](cloud-support.md)
+>如需雲端基礎結構專案的Adobe Commerce，請參閱 [在雲端基礎結構上設定Commerce的遠端儲存](cloud-support.md)
 
-## 在Adobe Commerce配置URL格式
+## 在Adobe Commerce中設定URL格式
 
-要調整伺服器端影像的大小，必須配置Adobe Commerce以提供影像的高度、寬度和位置(URL)參數。
+若要在伺服器端調整影像大小，您必須設定Adobe Commerce以提供影像的高度、寬度和位置(URL)引數。
 
-**配置Commerce以調整伺服器端影像大小**:
+**若要設定Commerce以調整伺服器端影像大小**：
 
-1. 在 _管理_ 面板，按一下 **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**。
+1. 在 _管理員_ 面板，按一下 **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
 
-1. 在右窗格中，展開 **[!UICONTROL Url options]**。
+1. 在右窗格中，展開 **[!UICONTROL Url options]**.
 
-1. 在 _編錄媒體URL格式_ 部分，清除 **[!UICONTROL Use system value]**。
+1. 在 _目錄媒體URL格式_ 部分，清除 **[!UICONTROL Use system value]**.
 
-1. 選擇 `Image optimization based on query parameters` 中的URL **_編錄媒體URL格式_** 的子菜單。
+1. 選取 `Image optimization based on query parameters` 中的URL **_目錄媒體URL格式_** 欄位。
 
-1. 按一下 **[!UICONTROL Save Config]**。
+1. 按一下 **[!UICONTROL Save Config]**.
 
-1. 繼續 [Nginx配置](#configure-nginx)。
+1. 繼續前往 [Nginx設定](#configure-nginx).
 
-## 配置Nginx
+## 設定Nginx
 
-要繼續配置伺服器端影像大小調整，必須準備 `nginx.conf` 檔案和提供 `proxy_pass` 值。
+若要繼續設定伺服器端影像調整大小，您必須準備 `nginx.conf` 檔案並提供 `proxy_pass` 您所選介面卡的值。
 
-**啟用Nginx調整影像大小**:
+**啟用Nginx調整影像大小的方式**：
 
-1. 安裝 [Nginx影像濾波模組][nginx-module]。
+1. 安裝 [Nginx影像篩選模組][nginx-module].
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. 建立 `nginx.conf` 基於包含的模板的檔案 `nginx.conf.sample` 的子菜單。 例如：
+1. 建立 `nginx.conf` 根據包含範本的檔案 `nginx.conf.sample` 檔案。 例如：
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {
@@ -69,9 +69,9 @@ ht-degree: 0%
    }
    ```
 
-1. [_可選_] 配置 `proxy_pass` 特定適配器的值。
+1. [_可選_] 設定 `proxy_pass` 您特定介面卡的值。
 
-   - [Amazon簡單儲存服務(AmazonS3)](remote-storage-aws-s3.md)
+   - [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 
 <!-- link definitions -->
 

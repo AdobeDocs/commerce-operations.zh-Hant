@@ -5,23 +5,23 @@ source-wordcount: '271'
 ht-degree: 70%
 
 ---
-# 系統要求
+# 系統需求
 
 <table style="table-layout:auto">
   <thead>
     <tr>
       <th>
-        軟體依賴項
+        軟體相依性
       </th>
       <th>2.4.6</th>
-      <th>2.4.5-p2</th>
-      <th>2.4.5-p1</th>
+      <th>2.4.5 - p2</th>
+      <th>2.4.5 - p1</th>
       <th>2.4.5</th>
-      <th>2.4.4-p3</th>
-      <th>2.4.4-p2</th>
+      <th>2.4.4 - p3</th>
+      <th>2.4.4 - p2</th>
       <th>2.4.4-p1</th>
       <th>2.4.4</th>
-      <th>2.4.3-p3</th>
+      <th>2.4.3 - p3</th>
       <th>2.4.3-p2</th>
       <th>2.4.3</th>
       <th>2.4.2</th>
@@ -663,37 +663,37 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-            雷迪斯六點二
+            Redis 6.2
       </td>
       <td>
-            雷迪斯6
+            Redis 6
       </td>
       <td>
-            雷迪斯6
+            Redis 6
       </td>
       <td>
-            雷迪斯6
+            Redis 6
       </td>
       <td>
-            雷迪斯6
+            Redis 6
       </td>
       <td>
-            雷迪斯6
+            Redis 6
       </td>
       <td>
-            雷迪斯6
+            Redis 6
       </td>
       <td>
-            雷迪斯6
+            Redis 6
       </td>
       <td>
-            雷迪斯6
+            Redis 6
       </td>
       <td>
-            雷迪斯6
+            Redis 6
       </td>
       <td>
-            雷迪斯6
+            Redis 6
       </td>
       <td>
           --
@@ -800,8 +800,8 @@ ht-degree: 70%
 
 >[!IMPORTANT]
 >
->雲基礎架構上對Adobe Commerce的服務版本和相容性支援取決於雲基礎架構上部署的版本，有時與Adobe Commerce內部部署所支援的版本不同。 請參閱 [支援的軟體和服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 的 _雲指南_。
+>雲端基礎結構上Adobe Commerce的服務版本和相容性支援取決於雲端基礎結構上部署的版本，有時與Adobe Commerce內部部署支援的版本不同。 另請參閱 [支援的軟體與服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) 在 _雲端指南_.
 
 >[!NOTE]
 >
-><sup>*</sup>Adobe Commerce2.4.5和更早版本僅支援8.0.28和更早版本。
+><sup>*</sup>Adobe Commerce 2.4.5及舊版僅支援MySQL 8.0.28及舊版。

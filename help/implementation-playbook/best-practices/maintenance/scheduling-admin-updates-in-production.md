@@ -1,6 +1,6 @@
 ---
-title: 計畫生產站點上的管理更新
-description: 瞭解將關鍵更新安排到Adobe Commerce以防止效能下降和停機的最佳做法。
+title: 在生產網站上排程管理員更新
+description: 瞭解排程Adobe Commerce關鍵更新以防止效能緩慢和中斷的最佳實務。
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
@@ -12,27 +12,27 @@ ht-degree: 0%
 
 ---
 
-# 在生產站點上安排管理更新的最佳做法
+# 在生產網站上排程管理員更新的最佳實務
 
-安排在非高峰時段在您的Adobe Commerce站點上進行關鍵更新和操作，以防止生產站點上效能下降和停機。
+在非尖峰時間排程Adobe Commerce網站上的關鍵更新和操作，以防止生產網站上的效能緩慢和中斷。
 
-關鍵操作示例：
+重要動作範例：
 
-- 管理員配置更改，例如更新產品屬性或將產品子類別移動到其他類別
-- 資料導入或導出操作
+- 管理員設定變更，例如更新產品屬性，或將產品子類別移至另一個類別
+- 資料匯入或匯出作業
 
-關鍵操作會導致快取失效和重新索引操作，這會顯著增加可能導致站點停機的響應時間。
+關鍵動作會導致快取失效和重新索引作業，大幅增加回應時間，進而可能導致網站中斷。
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 共：
+[所有支援的版本](../../../release/versions.md) 之：
 
-- Adobe Commerce在雲基礎架構上
-- Adobe Commerce內部
+- 雲端基礎結構上的Adobe Commerce
+- Adobe Commerce內部部署
 
 ## 其他資訊
 
-- [快取的最佳做法](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
-- [專用內容：使私有內容無效](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [快取的最佳實務](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
+- [私人內容：讓私人內容失效](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [硬體建議：快取](../../../performance/hardware.md#caches)
-- [高級設定：設定Redis](../../../performance/advanced-setup.md#set-up-redis)
+- [進階設定：設定Redis](../../../performance/advanced-setup.md#set-up-redis)

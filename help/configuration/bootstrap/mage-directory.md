@@ -1,6 +1,6 @@
 ---
-title: 自定義基目錄路徑
-description: 使用MAGE_DIRS變數設定絕對路徑陣列。
+title: 自訂基底目錄路徑
+description: 使用MAGE_DIRS變數來設定絕對路徑的陣列。
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,18 +9,18 @@ ht-degree: 0%
 
 ---
 
-# 基本目錄路徑
+# 基底目錄路徑
 
-的 `MAGE_DIRS` 環境變數允許您指定Commerce應用程式用於構建到各種檔案或生成URL的絕對路徑的自定義基目錄路徑和基URL片段。
+此 `MAGE_DIRS` 環境變數可讓您指定自訂基本目錄路徑和基本URL的片段，商務應用程式會使用這些路徑建立各種檔案的絕對路徑或產生URL。
 
 ## 設定MAGE_DIRS
 
-指定鍵為常數的關聯陣列 [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] 值分別是目錄的絕對路徑或其URL路徑。
+指定索引鍵為常數的關聯陣列 [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] 和值分別是目錄的絕對路徑或其URL路徑。
 
-可以設定 `MAGE_DIRS` 以下列任何方式執行：
+您可以設定 `MAGE_DIRS` 下列任一種方式：
 
-- [設定引導參數的值](../bootstrap/set-parameters.md)
-- 使用自定義入口點指令碼，如：
+- [設定啟動程式引數的值](../bootstrap/set-parameters.md)
+- 使用自訂進入點指令碼，如下所示：
 
    ```php
    <?php
@@ -48,7 +48,7 @@ ht-degree: 0%
    $bootstrap->run($app);
    ```
 
-上面的示例為 `[cache]` 和 `[media]` 目錄 `/mnt/nfs/cache` 和 `/mnt/nfs/media`的下界。
+上述範例會設定 `[cache]` 和 `[media]` 目錄 `/mnt/nfs/cache` 和 `/mnt/nfs/media`（分別）。
 
 <!-- link definitions -->
 

@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce整合選項
-description: 探索將其他系統與您的Adobe Commerce實施整合的選項。
+description: 探索將其他系統與Adobe Commerce實作整合的選項。
 exl-id: 10de70d2-ff3b-4f10-b370-01d805b745dc
 source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
@@ -9,38 +9,38 @@ ht-degree: 0%
 
 ---
 
-# 典型整合點和資料流
+# 典型的整合點和資料流程
 
-整合和資料流主要有兩種方法，它們非常相似，但有一個關鍵區別。
+整合和資料流程有兩種主要方法，非常類似，但有一個主要差異。
 
-## 單片
+## 整體式
 
-下圖描述了一種將Adobe Commerce同時用作後端系統和店面應用程式的整體方法：
+下圖說明將Adobe Commerce同時用作後端系統和店面應用程式的整體方法：
 
-![Adobe Commerce整體圖](../../assets/playbooks/integration-monolith.svg)
+![Adobe Commerce整體圖表](../../assets/playbooks/integration-monolith.svg)
 
-## 無頭
+## Headless
 
-下圖描述了一種無頭方法，它使用Adobe Commerce作為與DXP/CMS/自定義應用程式整合的後端系統作為店面應用程式：
+下圖說明使用Adobe Commerce作為後端系統，並與DXP/CMS/自訂應用程式整合作為店面應用程式的Headless方法：
 
-![Adobe Commerce無頭圖](../../assets/playbooks/integration-headless.svg)
+![Adobe Commerce headless圖表](../../assets/playbooks/integration-headless.svg)
 
-整體式和無頭式的唯一區別是店面整合，這會影響用戶的體驗。 Adobe Commerce店面直接與第三方服務整合，無頭店則依靠自己的店面來定制和整合同一服務。 一些服務（如支付和單點登錄）需要店面和Adobe Commerce定制來完成整合流程。
+整體式和Headless方法的唯一區別是店面整合，這會影響客戶的使用體驗。 Monolithic會直接使用Adobe Commerce店面與協力廠商服務整合，而Headless則需仰賴本身的店面來自訂及與相同服務整合。 支付和單一登入(SSO)等服務需要店面和Adobe Commerce自訂，才能完成整合流程。
 
-## 第三方系統
+## 協力廠商系統
 
-一些熱門服務已經有了支援Adobe Commerce或熱門店面解決方案的擴展，如PWA Studio、Adobe Experience Manager和Vue Storefront，這些解決方案可以從其擴展市場或相關的第三方網站上找到。 即使沒有現有的延長，Adobe Commerce和其他無頭店面整合的努力也是類似的。 所有第三方服務通常都有文檔來解釋如何與它們整合。 這些服務只是一些例子；各國和市場可能有不同的選擇。
+部分熱門服務已有絕佳擴充功能，可支援Adobe Commerce或PWA Studio、Adobe Experience Manager和Vue Storefront等熱門店面解決方案（可從其擴充功能市集或相關第三方網站取得）。 即使沒有現有的擴充功能，實作Adobe Commerce與其他Headless店面之間整合的工作也類似。 所有協力廠商服務通常都有說明如何與其整合的檔案。 這些服務只是一些範例；不同的國家和市場可能有不同的選擇。
 
 ## 企業整合
 
-對於企業系統整合（通常也稱為後端整合），業務資料流會受到影響。 根據不同的業務類型和需求，它可以使用我們已經介紹的三種不同的整合選項。
+對於通常也稱為後端整合的企業系統整合，會影響業務資料流程。 根據不同的業務型別和需求，它可以使用三種不同的整合選項，我們已在其中介紹。
 
-SKU、庫存和基本價格等產品必需資料通常來自ERP，而銷售價格通常由每個銷售渠道(例如Adobe Commerce)或CPQ（B2B或私人銷售）管理。 由於產品強制資料（庫存除外）不會經常更改，因此最佳做法是通過REST API或批量檔案導入使用計畫的批更新。 對於庫存，最佳做法是每天對與不同銷售渠道共用的產品庫存進行完整更新，以避免過度銷售。 此外，在24小時內對ERP進行增量更改。
+SKU、庫存和基本價格等產品強制資料通常來自ERP，而銷售價格通常由每個銷售管道(例如Adobe Commerce)或CPQ （B2B或私人銷售）管理。 由於產品強制資料（庫存除外）不會經常變更，因此最佳實務是透過REST API或大量檔案匯入使用已排程的批次更新。 對於詳細目錄，最佳實務是每天完整更新與不同銷售管道共用的產品詳細目錄，以避免過度銷售。 此外，還安排在24小時內對ERP進行累加變更。
 
-產品目錄、元資料和營銷內容可以由每個銷售渠道(例如，Adobe Commerce)或中央PIM單獨管理。 由於元資料也不經常更改，因此最佳做法是通過REST API或批量檔案導入使用計畫的批更新。
+產品目錄、中繼資料和行銷內容可依每個銷售管道(例如Adobe Commerce)或集中式PIM分別管理。 由於中繼資料也不會經常變更，因此最佳實務是透過REST API或大量檔案匯入來使用已排程的批次更新。
 
-訂單資料包括訂單、報價(B2B)、發運、退貨和交換資料，這些資料通常從集中的OMS和WMS系統中管理。 訂單資料應盡快同步，因此REST API通常是最佳選項。 為獲得更好的效能，請考慮減少API調用數。 對於訂單狀態、發運、退貨和交換資料，請考慮在小時或分鐘內計畫REST批更新API。
+訂單資料包括訂單、報價(B2B)、出貨、退貨及交換資料，這些資料通常由集中式OMS與WMS系統管理。 訂單資料應儘快同步，因此REST API通常是最佳選項。 為獲得更好的效能，請考慮減少API呼叫的數量。 針對訂單狀態、出貨、退貨及交換資料，請考慮排程REST批次更新API （以小時或分鐘為單位）。
 
-B2B資料通常從集中式CRM中管理。 即時API用於驗證現有客戶和建立新客戶。 對於B2B，可能需要引入更多API來同步Adobe Commerce與CRM或CPQ之間的不同公司員工、組和價目表。
+B2B資料通常是由集中式CRM管理。 即時API可用來驗證現有客戶和建立新客戶。 針對B2B，可能需要引入更多API，以便在Adobe Commerce與您的CRM或CPQ之間同步不同的公司員工、群組和價目表。
 
-還有一些其他系統整合，如eDM用於電子郵件營銷和業務資料分析的業務智慧，這些整合通常通過REST API或檔案導出/導入（通常由現有擴展支援）來完成。
+有一些其他的系統整合，例如用於電子郵件行銷的eDM和用於商業資料分析的商業智慧，通常透過REST API或檔案匯出/匯入來完成，這通常受到現有擴充功能的支援。

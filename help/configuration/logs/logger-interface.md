@@ -12,21 +12,21 @@ ht-degree: 0%
 
 # 記錄器介面
 
-要開始使用記錄器，必須建立 `\Psr\Log\LoggerInterface`。 使用此介面，可以調用以下函式將資料寫入日誌檔案：
+若要開始使用記錄器，您必須建立 `\Psr\Log\LoggerInterface`. 透過此介面，您可以呼叫下列函式以將資料寫入記錄檔：
 
 - [alert()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
-- [關鍵()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
+- [critical()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
 - [debug()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L111)
-- [緊急()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
-- [錯誤()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
+- [emergency()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
+- [error()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
 - [info()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L101)
 - [log()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L122)
 - [notice()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
-- [警告()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
+- [warning()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
 
-要做到這一點，可在 [日誌資料庫活動](../logs/database-activity.md) 示例。
+其中一個方法會在以下章節說明： [記錄資料庫活動](../logs/database-activity.md) 範例。
 
-另一種方式是：
+另一種方式如下：
 
 ```php
 class SomeModel
@@ -49,6 +49,6 @@ class SomeModel
  }
 ```
 
-上例顯示 `SomeModel` 接收 `\Psr\Log\LoggerInterface` 對象。 在方法中 `doSomething`，如果發生錯誤，則記錄到方法 `critical` (`$this->logger->critical($e);`)。
+前面的範例顯示 `SomeModel` 接收 `\Psr\Log\LoggerInterface` 物件使用建構子插入。 在方法中 `doSomething`，如果發生一些錯誤，則會記錄到方法 `critical` (`$this->logger->critical($e);`)。
 
-[RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) 定義8個日誌級別（debug、info、notice、warning、error、critical、alert和emergency）。
+[RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) 會定義8個記錄層級（偵錯、資訊、通知、警告、錯誤、嚴重、警示和緊急）。

@@ -1,8 +1,8 @@
 ---
-title: 配置資料庫探查器
-description: 請參見如何配置資料庫探查器的輸出示例。
+title: 設定資料庫分析工具
+description: 請參閱如何設定資料庫效能分析工具輸出的範例。
 feature: Configuration, Storage
-badge: label="由Atish Goswami貢獻" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+badge: label="Contributed by Atish Goswami" type="Informational" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# 配置資料庫探查器
+# 設定資料庫分析工具
 
-Commerce資料庫探查器顯示在頁面上實現的所有查詢，包括每個查詢的時間和應用了哪些參數。
+Commerce資料庫分析工具會顯示頁面上實作的所有查詢，包括每個查詢的時間以及套用的引數。
 
-## 步驟1:修改部署配置
+## 步驟1：修改部署組態
 
-修改 `<magento_root>/app/etc/env.php` 將以下引用添加到 [資料庫profiler類](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+修改 `<magento_root>/app/etc/env.php` 將下列參照新增至 [資料庫效能分析工具類別](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php)：
 
 ```php?start_inline=1
         'profiler' => [
@@ -26,7 +26,7 @@ Commerce資料庫探查器顯示在頁面上實現的所有查詢，包括每個
         ],
 ```
 
-以下示例：
+範例如下：
 
 ```php?start_inline=1
  'db' =>
@@ -53,17 +53,17 @@ Commerce資料庫探查器顯示在頁面上實現的所有查詢，包括每個
   ),
 ```
 
-## 步驟2:配置輸出
+## 步驟2：設定輸出
 
-在Commerce應用程式引導檔案中配置輸出；這可能 `<magento_root>/pub/index.php` 或者它可以位於Web伺服器虛擬主機配置中。
+在Commerce應用程式啟動程式檔案中設定輸出；這可能是 `<magento_root>/pub/index.php` 或者，它可以位於Web伺服器虛擬主機設定中。
 
-下面的示例在三清單中顯示結果：
+下列範例會在三欄表格中顯示結果：
 
-- 總時間（顯示在頁面上運行所有查詢的總時間）
-- SQL(顯示所有SQL查詢；行標題顯示查詢計數)
-- 查詢參數（顯示每個SQL查詢的參數）
+- 總時間（顯示頁面上執行所有查詢的總時間）
+- SQL （顯示所有SQL查詢；列標題顯示查詢計數）
+- 查詢引數（顯示每個SQL查詢的引數）
 
-要配置輸出，請在 `$bootstrap->run($app);` 引導檔案中的行：
+若要設定輸出，請在 `$bootstrap->run($app);` 在您的bootstrap檔案中的行：
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -87,8 +87,8 @@ foreach ($profiler->getQueryProfiles() as $query) {
 echo "</table>";
 ```
 
-## 第3步：查看結果
+## 步驟3：檢視結果
 
-轉到店面或管理員中的任何頁面以查看結果。 示例如下：
+前往店面或管理員中的任何頁面檢視結果。 範例如下：
 
-![示例資料庫探查器結果](../../assets/configuration/db-profiler-results.png)
+![範例資料庫效能分析工具結果](../../assets/configuration/db-profiler-results.png)

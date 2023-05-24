@@ -1,8 +1,8 @@
 ---
-title: 自主承載概述
-description: 瞭解要考慮的自我托管最佳做法。 主題範圍從安全元素到災難恢復等。 這些主題是為了幫助一家決定舉辦自己版本的Adobe Commerce的公司。 所介紹的項目並非全包，但應提供一系列好的概念，以促進一個安全、穩定和有彈性的網站。
-landing-page-description: 學習一些概念和事情，在您自己主持Adobe Commerce會議時考慮。
-short-description: 瞭解自己主持Adobe Commerce的戰略和概念。
+title: 自行託管概述
+description: 瞭解自託管最佳實務，供您考慮。 主題涵蓋安全性元素、災難回覆等等。 這些主題旨在協助已決定託管自己Adobe Commerce版本的公司。 呈現的專案並非全包容，但應提供各種良好的概念，以推廣安全、穩定且可復原的網站。
+landing-page-description: 瞭解自行託管Adobe Commerce時應考量的一些概念和事項。
+short-description: 瞭解自行託管Adobe Commerce的策略和概念。
 kt: 11420
 doc-type: tutorial
 audience: all
@@ -15,36 +15,36 @@ ht-degree: 0%
 
 ---
 
-# 自辦Adobe Commerce概述
+# 自行託管Adobe Commerce概述
 
-考慮轉向Adobe Commerce等電子商務平台時，你有很多選擇。 但是，隨著這些選擇的到來，還有額外的成本、風險和負債需要考慮。 可以使用打包的解決方案(如 [Adobe Commerce在雲基礎架構上](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}，其中基礎架構、伺服器、電子郵件、SSL證書等已預先配置並可供使用。 在雲基礎架構上找到一個好的托管解決方案(如Adobe Commerce)使整個過程更加輕鬆，因此您有充分的理由自行托管您的Commerce站點。 在隨附的頁面中，有許多主題提供了自我托管所提供的服務、技術和概念的洞察和指導。 此處的資訊並非詳盡無遺，因此您不應該執行所有建議。 但是，這些文章可以幫助您理解使Adobe Commerce自主托管盡可能穩定和安全的理念和概念。
+在考慮改用Adobe Commerce等電子商務平台時，您可擁有眾多選擇。 但是，這些選項會帶來額外的成本、風險和負債需要考慮。 託管Commerce網站可使用封裝解決方案完成，例如 [雲端基礎結構上的Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}，基礎架構、伺服器、電子郵件、SSL憑證等已預先設定且可供使用。 在雲端基礎結構上尋找Adobe Commerce等良好的託管解決方案，可讓整個程式更輕鬆，有極具吸引力的原因可讓您自行託管Commerce網站。 在隨附的頁面中，有許多主題可針對自行託管所提供的服務、技巧和概念提供深入分析和指引。 此處的資訊並非詳盡無遺，且預期您不應該實作每個建議。 不過，這些文章可協助您瞭解讓Adobe Commerce自行託管儘可能穩定且安全的構想和概念。
 
-當您不與Adobe Commerce在雲基礎架構上合作時，使用的術語是自主托管或內部部署，甚至是在預先使用。 內部部署不僅意味著公司擁有的建築物中的資料中心。 這個詞代表了Adobe Commerce在基礎設施方面未予管理的任何支援。 有一些為Adobe Commerce服務的東道公司，它們也被視為自主或隨機。
+如果您沒有在雲端基礎結構上使用Adobe Commerce，則使用的術語是自行託管或內部部署，甚至內部部署。 內部部署不僅是指在公司擁有的大樓內的資料中心。 此辭彙代表Adobe Commerce未在其基礎結構上管理支援的任何專案。 有些託管公司是專為Adobe Commerce服務的，這類公司也視為自行託管或內部部署。
 
-關於Adobe Commerce和Magento開源，大多數建議和提示都適用於任何版本。 儘管它可能不會直接聲明，但人們期望它適用於兩者。 在Adobe Commerce自主承載選項這一主題中，考慮了兩個版本。 最後，大多數話題都與 [Adobe Commerce在雲基礎架構上](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"} 已選擇為宿主提供程式。
+關於Adobe Commerce和Magento開放原始碼，大多數建議和提示都適用於任一版本。 即使它可能不會直接說明，但可預期適用於兩者。 在有關Adobe Commerce的自託管選項的主題中，會同時考慮兩個版本。 最後，大多數主題都與 [雲端基礎結構上的Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"} 已選取作為託管提供者。
 
-## 術語級別集
+## 術語層級設定
 
-在與DevOps團隊交談和與公司支援合作時，以下術語通常在Experience League文章中使用：
+以下辭彙在整篇Experience League文章中都很常用，在與DevOps團隊交談時以及搭配公司支援人員使用時：
 
-* **開發操作** 是一個術語，用於描述處理伺服器設定、配置、管理、SSL證書以及用於運行Adobe Commerce站點的實際伺服器和服務的其他一切的團隊。 此術語用於幫助指定開發人員的責任通常何時結束以及基礎架構團隊的分類和支援開始的位置。
+* **DevOps** 是一個術語，用來描述處理伺服器設定、設定、管理、SSL憑證的團隊，以及有關用於執行Adobe Commerce網站的實際伺服器和服務的所有其他內容。 此辭彙用於協助指定開發人員的責任通常何時結束，以及基礎架構團隊的分級和支援從何處開始。
 
-* **安全概念** 包括幾個主題和注意事項，用於在伺服器上建立Adobe Commerce代碼庫、檔案和檔案系統，以及減少許多已知利用漏洞模式攻擊面的任何配置或更新。
+* **安全性概念** 包含數個主題和考量事項，以利在伺服器上建立Adobe Commerce程式碼基底、檔案和檔案系統，以及任何可減少許多已知利用漏洞模式的攻擊面的設定或更新。
 
-* **監控工具** 包括一些監控Adobe Commerce網站的現有工具和服務。 這些工具有時可以提供一些提示，說明如何改進、發現問題和安全漏洞。
+* **監控工具** 涵蓋數個監控Adobe Commerce網站的現有工具及服務。 這些工具有時可提供如何改善的秘訣，或揭示問題和安全性弱點。
 
-* **災難恢復** 有助於為損壞或被利用的項目的不幸事件提供一些概念和考慮。
+* **災難回覆** 有助於提供某些概念和考量事項，以因應專案損毀或被利用的不幸事件。
 
-* **效能提示** 為使Adobe Commerce應用程式盡可能發揮效能提供一些專業提示和指導。
+* **效能提示** 提供一些讓Adobe Commerce應用程式儘可能發揮效能的專業秘訣和指引。
 
-* **壞演員** 是用於試圖做惡意或未經授權的事的人或團隊的術語。 它不僅限於商業應用，還延伸到基礎設施或與網站相關的任何元件。
+* **演員錯誤** 是用來表示有人或團隊嘗試進行惡意或未經授權的動作。 這不限於商務應用程式，也延伸至基礎結構或與網站相關的任何元件。
 
-* **Web應用程式防火牆** (WAF)通過監視指向商業應用程式的每個請求標題並阻止已知模式和漏洞利用來提供幫助。 通常，WAF與自定義篩選器和規則結合使用，以幫助管理DDOS攻擊。
+* **Web應用程式防火牆** (WAF)可協助您檢視商務應用程式的每個請求標題，並封鎖已知模式和剝削。 通常WAF會與自訂篩選器和規則搭配使用，以協助管理DDOS攻擊。
 
-* **分佈式拒絕服務** (DDoS)是一種攻擊方法，它強制運行網站的伺服器使用足夠數量的虛假請求，使其無法再響應合法請求。
+* **分散式拒絕服務** (DDoS)是一種攻擊方法，可強制執行網站的伺服器以錯誤的要求來使用，且容量足以讓伺服器無法再回應合法的要求。
 
-## 下一步是什麼？
+## 接下來呢？
 
-這些主題不按任何特殊順序或順序排列。 他們應該與DevOps工程師、 Commerce Architect以及參與決定在何處以及如何接待Adobe Commerce的其他任何人提供談話要點。
+這些主題並沒有任何特殊順序或順序。 這些簡報旨在向DevOps工程師、商務架構師，以及參與此重要決定(主辦Adobe Commerce的位置和方式)的任何人提供談話要點。
 
 {{$include /help/_includes/hosting-related-links.md}}

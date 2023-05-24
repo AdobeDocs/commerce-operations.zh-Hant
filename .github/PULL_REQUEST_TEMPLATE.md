@@ -5,9 +5,9 @@ source-wordcount: '17'
 ht-degree: 0%
 
 ---
-## 此拉取請求的目的
+## 此提取請求的用途
 
-此拉取請求(PR)。..
+此提取請求(PR) ...
 
 ## 受影響的頁面
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 - ...
 
-## 指向Magento Open Source代碼的連結
+## Magento Open Source程式碼的連結
 
 <!--  OPTIONAL - REMOVE THIS SECTION IF NOT USED. If this pull request references a file in a Magento Open Source or Adobe Commerce codebase repository, add it here. -->
 

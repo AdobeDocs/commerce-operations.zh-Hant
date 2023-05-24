@@ -1,6 +1,6 @@
 ---
-title: 優化CSS和JS資源檔案
-description: 瞭解如何從Admin或命令行合併和精簡Adobe Commerce項目的CSS和JavaScript(JS)檔案。
+title: 最佳化CSS和JS資源檔案
+description: 瞭解如何從管理員或命令列合併Adobe Commerce專案的CSS和JavaScript (JS)檔案，並加以縮制。
 role: Developer
 feature: Best Practices
 feature-set: Commerce
@@ -12,78 +12,78 @@ ht-degree: 0%
 
 ---
 
-# 優化資源檔案
+# 最佳化資源檔案
 
-對於響應更快的Commerce站點，請優化CSS和JavaScript(JS)資源檔案，並消除呈現阻止資源。
+若要獲得回應速度較快的Commerce網站，請最佳化CSS和JavaScript (JS)資源檔案，並消除轉譯器封鎖資源。
 
-- **優化CSS和JS檔案** — 通過配置Adobe Commerce將單獨的檔案合併、縮小和捆綁到單個檔案中，減少載入CSS和JavaScript(JS)檔案所需的時間。
-- **消除渲染阻止資源** — 考慮內聯傳遞關鍵JS和CSS功能，並推遲所有非關鍵JS/CSS樣式。 有關指導，請參見 [消除渲染阻止資源](https://web.dev/render-blocking-resources/)。
+- **最佳化CSS和JS檔案** — 藉由設定Adobe Commerce將個別檔案合併、縮制及繫結至單一檔案，減少載入CSS和JavaScript (JS)檔案所需的時間。
+- **消除轉譯器封鎖資源** — 考慮內聯提供關鍵JS和CSS功能，並延遲所有非關鍵JS/CSS樣式。 如需指引，請參閱 [消除轉譯器封鎖資源](https://web.dev/render-blocking-resources/).
 
 ## 受影響的產品和版本
 
-[所有支援的2.3及更高版本](../../../release/versions.md) 共：
+[所有支援的版本，2.3和更新版本](../../../release/versions.md) 之：
 
-- Adobe Commerce在雲基礎架構上
-- Adobe Commerce內部
+- 雲端基礎結構上的Adobe Commerce
+- Adobe Commerce內部部署
 - Magento Open Source
 
-## 合併或縮小CSS檔案
+## 合併或縮制CSS檔案
 
-通過合併、縮小和將單獨的檔案捆綁到單個檔案中，可以縮短載入CSS和JavaScript(JS)檔案所需的時間。
+將CSS和JavaScript (JS)檔案合併、縮制和繫結為單一檔案，可以減少載入CSS和JS檔案所需的時間。
 
 >[!IMPORTANT]
 >
->Adobe Commerce雲基礎架構上的雲基礎架構始終運行在生產模式下，無法進行其他設定，因此您必須使用命令行方法來啟用合併、微型化和捆綁。
+>雲端基礎結構上的Adobe Commerce一律會在生產模式下執行，否則無法進行設定，因此您必須使用命令列方法來啟用合併、縮制和捆綁。
 
-### 使用管理
+### 使用管理員
 
-要啟用CSS合併或縮小，請進入 [!UICONTROL **管理** > **商店** > **設定** > **配置** > **高級** > **開發人員** > **CSS設定**]。
+若要啟用CSS合併或縮制，請前往 [!UICONTROL **管理員** > **商店** > **設定** > **設定** > **進階** > **開發人員** > **CSS設定**].
 
-### 使用命令行
+### 使用命令列
 
-要在雲基礎架構上啟用Adobe Commerce的CSS合併：
+若要在雲端基礎結構的Adobe Commerce中啟用CSS合併：
 
-1. 本地運行此命令：
+1. 在本機執行此命令：
 
    ```bash
    bin/magento config:set --lock-config dev/css/merge_css_files 1
    ```
 
-1. 提交對 `app/etc/config.php` 檔案和重新部署。
+1. 將變更提交至 `app/etc/config.php` 檔案並重新部署。
 
-要在雲基礎架構上啟用Adobe Commerce的CSS小型化：
+若要在雲端基礎結構的Adobe Commerce中啟用CSS縮制：
 
-1. 本地運行此命令：
+1. 在本機執行此命令：
 
    ```bash
    bin/magento config:set --lock-config dev/css/minify_files 1
    ```
 
-1. 提交對 `app/etc/config.php` 檔案和重新部署。
+1. 將變更提交至 `app/etc/config.php` 檔案並重新部署。
 
-## 微型JS檔案
+## 最小化JS檔案
 
-### 使用管理
+### 使用管理員
 
-在 *管理* 邊欄，轉到 **商店** > **設定** > **配置** > **高級** > **開發人員** > **JavaScript設定**。
+於 *管理員* 側欄，前往 **商店** > **設定** > **設定** > **進階** > **開發人員** > **JavaScript設定**.
 
-### 使用命令行
+### 使用命令列
 
-要在雲基礎架構上啟用Adobe Commerce的JS小型化：
+若要在雲端基礎結構的Adobe Commerce中啟用JS縮制：
 
-1. 本地運行此命令：
+1. 在本機執行此命令：
 
    ```bash
    bin/magento config:set --lock-config dev/js/minify_files 1
    ```
 
-1. 提交對 `app/etc/config.php` 檔案和重新部署。
+1. 將變更提交至 `app/etc/config.php` 檔案並重新部署。
 
-## 合併和捆綁JS檔案
+## 合併及捆綁JS檔案
 
-您可以在Commerce Admin中啟用合併或綁定（不能同時啟用合併和綁定）: [!UICONTROL **商店** > **設定** > **配置** > **高級** > **開發人員** > **JavaScript設定**]。
+您可以在Commerce管理員中開啟合併或繫結（合併和繫結無法同時啟用）： [!UICONTROL **商店** > **設定** > **設定** > **進階** > **開發人員** > **JavaScript設定**].
 
-您還可以從命令行啟用Adobe Commerce內置綁定（基本綁定）:
+您也可以從命令列啟用Adobe Commerce內建組合（基本組合）：
 
 ```bash
 php -f bin/magento config:set dev/js/enable_js_bundling 1
@@ -91,7 +91,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 ## 其他資訊
 
-- [客戶端優化設定](../../../performance/configuration.md#client-side-optimization-settings)
-- [使用手冊：優化資源檔案](https://docs.magento.com/user-guide/system/file-optimization.html)
-- [前端開發人員指南：CSS合併、縮小和站點效能](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
-- [高級JavaScript捆綁](../../../performance/advanced-js-bundling.md)
+- [使用者端最佳化設定](../../../performance/configuration.md#client-side-optimization-settings)
+- [使用手冊：最佳化資源檔案](https://docs.magento.com/user-guide/system/file-optimization.html)
+- [前端開發人員指南：CSS合併、縮制和網站效能](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [進階JavaScript套裝](../../../performance/advanced-js-bundling.md)

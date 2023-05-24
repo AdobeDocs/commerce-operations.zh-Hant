@@ -1,6 +1,6 @@
 ---
-title: 的 [!UICONTROL Redis] 頁籤
-description: 瞭解 [!UICONTROL Redis] 頁籤 [!DNL Observation for Adobe Commerce]。
+title: 此 [!UICONTROL Redis] 標籤
+description: 瞭解 [!UICONTROL Redis] 索引標籤/ [!DNL Observation for Adobe Commerce].
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,58 +9,58 @@ ht-degree: 0%
 
 ---
 
-# 的 [!DNL Redis] 頁籤
+# 此 [!DNL Redis] 標籤
 
 ## [!UICONTROL Redis Node summary]
 
 ![Redis節點摘要](../../assets/tools/observation-for-adobe-commerce/redis-tab-1.jpg)
 
-的 **[!UICONTROL Redis Node summary]** 包含環境中的所有節點。 上例包括共用暫存的節點。 生產上有一個主節點和兩個輔助節點，也有一個主節點和兩個輔助節點處於分段狀態。
+此 **[!UICONTROL Redis Node summary]** 包含環境中的所有節點。 上述範例包含共用中繼的節點。 生產環境有一個主要和兩個次要環境，中繼環境有一個主要和兩個次要環境。
 
 ## [!UICONTROL Redis node detail]
 
-![Redis節點詳細資訊](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
+![Redis節點詳細資料](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
 
-的 **[!UICONTROL Redis node detail]** 幀表示環境， [!DNL Redis] 角色、軟體版本和節點大小。
+此 **[!UICONTROL Redis node detail]** 框架指示環境， [!DNL Redis] 角色、軟體版本和節點大小。
 
 ## [!UICONTROL Redis node roles timeline]
 
 ![Redis節點角色時間表](../../assets/tools/observation-for-adobe-commerce/redis-tab-3.jpg)
 
-的 **[!UICONTROL Redis node roles timeline]** 幀指示丟失 [!DNL Redis] 服務。 如果行下降，則表示行所代表的特定角色已丟失節點。
+此 **[!UICONTROL Redis node roles timeline]** 影格指示遺失 [!DNL Redis] 特定角色中的服務。 如果折線下降，則表示折線所代表的特定角色已遺失一或多個節點。
 
 ## [!UICONTROL Connection to Redis]
 
-![與Redis的連接](../../assets/tools/observation-for-adobe-commerce/redis-tab-4.jpg)
+![與Redis的連線](../../assets/tools/observation-for-adobe-commerce/redis-tab-4.jpg)
 
-的 **[!UICONTROL Connection to Redis]** frame顯示來自 [!DNL New Relic Redis] 示例資料。 它顯示連接計數 [!DNL New Relic] 應用程式（環境）和節點。
+此 **[!UICONTROL Connection to Redis]** frame顯示來自以下專案的net.connectedClients值： [!DNL New Relic Redis] 範例資料。 它顯示連線計數依據 [!DNL New Relic] 應用程式（環境）和節點。
 
 ## [!UICONTROL Commands per second by node]
 
-![按節點每秒的命令數](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
+![節點每秒的命令數](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
 
-的 **[!UICONTROL Commands per second by node]** 框顯示 [!DNL Redis] 按節點在所選時間範圍內每秒的命令。
+此 **[!UICONTROL Commands per second by node]** 框架顯示 [!DNL Redis] 在選取的時間範圍內每秒按節點執行的命令。
 
 ## [!UICONTROL Redis % of memory used]
 
-![已用記憶體的密碼百分比](../../assets/tools/observation-for-adobe-commerce/redis-tab-6.jpg)
+![已使用的記憶體的Redis %](../../assets/tools/observation-for-adobe-commerce/redis-tab-6.jpg)
 
-的 **[!UICONTROL Redis % of memory used]** frame顯示使用的最大記憶體百分比 [!DNL Redis] 伺服器。
+此 **[!UICONTROL Redis % of memory used]** frame顯示 [!DNL Redis] 伺服器。
 
 ## [!UICONTROL Redis used memory]
 
-![Redis使用的記憶體](../../assets/tools/observation-for-adobe-commerce/redis-tab-7.jpg)
+![Redis已使用的記憶體](../../assets/tools/observation-for-adobe-commerce/redis-tab-7.jpg)
 
-的 **[!UICONTROL Redis used memory]** 幀顯示節點記憶體的使用率(GB/MB)。
+此 **[!UICONTROL Redis used memory]** frame顯示節點使用的記憶體(GB/MB)。
 
 ## [!UICONTROL Redis changes since last db save]
 
-![自上次資料庫保存後Redis更改](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
+![自上次儲存資料庫以來的Redis變更](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] 是記憶體駐留並將資訊保存到儲存中。 的 **[!UICONTROL Redis changes since last db save]** frame指示自上次資料庫保存到儲存後對記憶體所做的更改數。 請參閱 [Redis持久性](https://redis.io/docs/manual/persistence/) 來解釋 [!DNL Redis's] 持久性。
+[!DNL Redis] 是記憶體駐留，並將資訊儲存至儲存空間。 此 **[!UICONTROL Redis changes since last db save]** frame表示自上次資料庫儲存至儲存體後發生的記憶體變更次數。 請參閱 [Redis持續性](https://redis.io/docs/manual/persistence/) 如需更多說明，請參閱： [!DNL Redis's] 持續性。
 
 ## [!UICONTROL Redis synchronization from Log]
 
-![日誌中的Redis同步](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
+![記錄檔的Redis同步](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
 
-的 **[!UICONTROL Redis synchronization from Log]** 框架重點介紹在 [!DNL Redis] 同步或由於同步問題而發生的錯誤。 有關 [!DNL Redis]，請參閱 [[!DNL Redis] 文檔](https://redis.io/docs/)。
+此 **[!UICONTROL Redis synchronization from Log]** 框架著重於期間遇到的錯誤 [!DNL Redis] 同步或因同步問題而發生的錯誤。 如需詳細資訊，請參閱 [!DNL Redis]，請參閱 [[!DNL Redis] 檔案](https://redis.io/docs/).

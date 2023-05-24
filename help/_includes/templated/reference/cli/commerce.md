@@ -5,23 +5,23 @@ source-wordcount: '29783'
 ht-degree: 0%
 
 ---
-# magento-cloud(Adobe Commerce雲基礎架構)
+# magento-cloud (雲端基礎結構上的Adobe Commerce)
 
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**版本**:1.42.0
+**版本**： 1.42.0
 
-此引用包含134個通過 `magento-cloud` 命令行工具。
-初始清單是使用 `magento-cloud list` 的上界。
+此參照包含134個指令，這些指令可透過 `magento-cloud` 命令列工具。
+初始清單會使用 `magento-cloud list` 版本中的命令。
 
 >[!NOTE]
 >
->此引用是從應用程式碼庫生成的。 要更改內容，可以在中更新相應命令實現的原始碼 [雞](https://github.com/magento) 並提交更改以供審閱。 另一種方法是 _給我們反饋_ （查找右上方的連結）。 有關繳款指南，請參閱 [代碼貢獻](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)。
+>此參考是從應用程式程式碼基底產生的。 若要變更內容，您可以更新中對應命令實作的原始程式碼 [程式碼基底](https://github.com/magento) 存放庫並提交您的變更以供檢閱。 另一種方式是 _提供我們意見反應_ （尋找右上方的連結）。 如需貢獻准則，請參閱 [程式碼協助撰寫](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_completion`
 
-BASH完成掛接。
+BASH完成鉤點。
 
 ```bash
 _completion [-g|--generate-hook] [-p|--program PROGRAM] [-m|--multiple] [--shell-type [SHELL-TYPE]]
@@ -29,34 +29,34 @@ _completion [-g|--generate-hook] [-p|--program PROGRAM] [-m|--multiple] [--shell
 
 ### `--generate-hook`, `-g`
 
-生成為此應用程式設定完成的BASH代碼。
+產生設定此應用程式完成的BASH程式碼。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--program`, `-p`
 
-應觸發完成的程式名 &lt;comment>（預設為絕對應用程式路徑）&lt;/comment>。
+應觸發完成的程式名稱 &lt;comment>（預設為絕對應用程式路徑）&lt;/comment>.
 
 - 需要值
 
 ### `--multiple`, `-m`
 
-生成的掛接可用於多個應用程式。
+產生的勾點可用於多個應用程式。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--shell-type`
 
-設定殼類型（zsh或bash）。 否則，將自動確定。
+設定殼型別（zsh或bash）。 否則會自動決定。
 
 - 接受值
 
 
 ## `bot`
 
-Magento雲機器人
+Magento雲端機器人
 
 ```bash
 magento-cloud bot [--party] [--parrot]
@@ -66,77 +66,77 @@ magento-cloud bot [--party] [--parrot]
 
 
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--parrot`
 
 
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -160,71 +160,71 @@ cc
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `decode`
 
-對編碼字串(如MAGENTO_CLOUD_VARIABLES)進行解碼
+解碼編碼字串，例如MAGENTO_CLOUD_VARIABLES
 
 ```bash
 magento-cloud decode [-P|--property PROPERTY] [--] <value>
@@ -235,81 +235,81 @@ magento-cloud decode [-P|--property PROPERTY] [--] <value>
 
 要解碼的變數值
 
-- 必需
+- 必填
 
 ### `--property`, `-P`
 
-要在變數中查看的屬性
+要在變數中檢視的屬性
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `docs`
 
-開啟聯機文檔
+開啟線上檔案
 
 ```bash
 magento-cloud docs [--browser BROWSER] [--pipe] [--] [<search>]...
@@ -318,92 +318,92 @@ magento-cloud docs [--browser BROWSER] [--pipe] [--] [<search>]...
 
 ### `search`
 
-搜索詞
+搜尋字詞
 
-- 預設值： `[]`
+- 預設： `[]`
 
 - 陣列
 
 ### `--browser`
 
-用於開啟URL的瀏覽器。 將0設定為無。
+用來開啟URL的瀏覽器。 將0設為無。
 
 - 需要值
 
 ### `--pipe`
 
-輸出要停止的URL。
+輸出stdout的URL。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `help`
 
-顯示命令的幫助
+顯示命令的說明
 
 ```bash
 magento-cloud help [--format FORMAT] [--raw] [--] [<command_name>]
@@ -412,92 +412,92 @@ magento-cloud help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `command_name`
 
-命令名
+命令名稱
 
-- 預設值： `help`
+- 預設： `help`
 
 
 ### `--format`
 
 輸出格式（txt、xml、json或md）
 
-- 預設值： `txt`
+- 預設： `txt`
 - 需要值
 
 ### `--raw`
 
-輸出原始命令幫助
+輸出原始命令說明
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `legacy-migrate`
 
-從舊檔案結構遷移
+從舊版檔案結構移轉
 
 ```bash
 magento-cloud legacy-migrate [--no-backup]
@@ -505,72 +505,72 @@ magento-cloud legacy-migrate [--no-backup]
 
 ### `--no-backup`
 
-不要建立項目的備份。
+請勿建立專案的備份。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -587,101 +587,101 @@ magento-cloud list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
 
 要執行的命令
 
-- 必需
+- 必填
 
 ### `namespace`
 
-命名空間名稱
+名稱空間名稱
 
 
 ### `--raw`
 
-輸出原始命令清單
+要輸出原始命令清單
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--format`
 
 輸出格式（txt、xml、json或md）
 
-- 預設值： `txt`
+- 預設： `txt`
 - 需要值
 
 ### `--all`
 
 顯示所有命令，包括隱藏的命令
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `multi`
 
-對多個項目執行命令
+在多個專案上執行命令
 
 ```bash
 magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd> (<cmd>)...
@@ -692,99 +692,99 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 
 要執行的命令
 
-- 預設值： `[]`
+- 預設： `[]`
 
-- 必需
+- 必填
 - 陣列
 
 ### `--projects`, `-p`
 
-項目ID的清單，用逗號和/或空格分隔
+專案ID清單，以逗號和/或空格分隔
 
 - 需要值
 
 ### `--continue`
 
-即使遇到異常，仍繼續運行命令
+即使發生例外狀況，仍繼續執行命令
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--sort`
 
-用於對項目選項清單排序的屬性
+用來排序專案選項清單的屬性
 
-- 預設值： `title`
+- 預設： `title`
 - 需要值
 
 ### `--reverse`
 
-衝銷項目選項的順序
+反轉專案選項的順序
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -798,26 +798,26 @@ magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--envi
 
 ### `--browser`
 
-用於開啟URL的瀏覽器。 將0設定為無。
+用來開啟URL的瀏覽器。 將0設為無。
 
 - 需要值
 
 ### `--pipe`
 
-輸出要停止的URL。
+輸出stdout的URL。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -829,71 +829,71 @@ magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--envi
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `welcome`
 
-歡迎使用Magento雲
+歡迎使用Magento Cloud
 
 ```bash
 magento-cloud welcome
@@ -901,65 +901,65 @@ magento-cloud welcome
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -973,65 +973,65 @@ magento-cloud winky
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -1046,39 +1046,39 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 
 ### `id`
 
-活動ID。 預設為最近的可取消活動。
+活動識別碼。 預設為最近的可取消活動。
 
 
 ### `--type`
 
-按類型篩選（選擇預設活動時）。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。 %字元可用作類型的通配符，例如「%var%」以選擇與變數相關的活動。
+依型別篩選（選取預設活動時）。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。 %字元可作為型別的萬用字元，例如&#39;%var%&#39;以選取變數相關的活動。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--exclude-type`
 
-按類型排除（選擇預設活動時）。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。 %字元可用作通配符以排除類型。
+依型別排除（選取預設活動時）。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。 %字元可作為萬用字元來排除型別。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--all`, `-a`
 
-檢查所有環境中的最近活動（選擇預設活動時）
+檢查所有環境上最近的活動（當選取預設活動時）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -1090,71 +1090,71 @@ magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `activity:get`
 
-查看有關單個活動的詳細資訊
+檢視單一活動的詳細資訊
 
 ```bash
 magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
@@ -1163,65 +1163,65 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 
 ### `id`
 
-活動ID。 預設為最近的活動。
+活動識別碼。 預設為最近的活動。
 
 
 ### `--property`, `-P`
 
-要查看的屬性
+要檢視的屬性
 
 - 需要值
 
 ### `--type`
 
-按類型篩選（選擇預設活動時）。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。 %字元可用作類型的通配符，例如「%var%」以選擇與變數相關的活動。
+依型別篩選（選取預設活動時）。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。 %字元可作為型別的萬用字元，例如&#39;%var%&#39;以選取變數相關的活動。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--exclude-type`
 
-按類型排除（選擇預設活動時）。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。 %字元可用作通配符以排除類型。
+依型別排除（選取預設活動時）。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。 %字元可作為萬用字元來排除型別。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--state`
 
-按狀態篩選（選擇預設活動時）:in_progress 、 pending 、 complete或canceled。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+依狀態篩選（選取預設活動時）： in_progress、pending、complete或canceled。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--result`
 
-按結果篩選（選擇預設活動時）:成功或失敗
+依結果篩選（選取預設活動時）：成功或失敗
 
 - 需要值
 
 ### `--incomplete`, `-i`
 
-僅包括未完成的活動（選擇預設活動時）。 這是對 &lt;info>-state=正在進行，掛起&lt;/info>
+僅包含未完成的活動（選取預設活動時）。 這是的縮寫 &lt;info>—state=in_progress，擱置&lt;/info>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--all`, `-a`
 
-檢查所有環境中的最近活動（選擇預設活動時）
+檢查所有環境上最近的活動（當選取預設活動時）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -1233,99 +1233,99 @@ magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-typ
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `activity:list`
 
-獲取環境或項目的活動清單
+取得環境或專案的活動清單
 
 ```bash
 magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
@@ -1343,41 +1343,41 @@ act
 
 ### `--type`, `-t`
 
-按類型篩選活動如果將清單指定為單個值(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。 %字元可用作類型的通配符，例如「%var%」以選擇與變數相關的活動。
+依型別篩選活動如果清單以單一值（例如&quot;a，b，c&quot;）提供，則會以逗號和/或空白字元分割。 %字元可作為型別的萬用字元，例如&#39;%var%&#39;以選取變數相關的活動。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--exclude-type`, `-x`
 
-按類型排除活動。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。 %字元可用作通配符以排除類型。
+依型別排除活動。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。 %字元可作為萬用字元來排除型別。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--limit`
 
-限制顯示的結果數
+限制顯示的結果數量
 
-- 預設值： `10`
+- 預設： `10`
 - 需要值
 
 ### `--start`
 
-將只列出在此日期之前建立的活動
+只會列出在此日期之前建立的活動
 
 - 需要值
 
 ### `--state`
 
-按狀態篩選活動：in_progress 、 pending 、 complete或canceled。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+依狀態篩選活動： in_progress、pending、complete或canceled。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--result`
 
-按結果篩選活動：成功或失敗
+依結果篩選活動：成功或失敗
 
 - 需要值
 
@@ -1385,53 +1385,53 @@ act
 
 僅列出未完成的活動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--all`, `-a`
 
-列出所有環境中的活動
+列出所有環境上的活動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：id*、created*、description*、progress*、state*、result*、completed、environments、type(* = default columns)。 字元「+」可用作預設列的佔位符。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用欄： id*、created*、description*、progress*、state*、result*、completed、environments、type （* =預設欄）。 字元「+」可作為預設欄的預留位置。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -1443,71 +1443,71 @@ act
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `activity:log`
 
-顯示活動的日誌
+顯示活動的記錄
 
 ```bash
 magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
@@ -1516,80 +1516,80 @@ magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [
 
 ### `id`
 
-活動ID。 預設為最近的活動。
+活動識別碼。 預設為最近的活動。
 
 
 ### `--refresh`
 
-活動刷新間隔（秒）。 設定為0可禁用刷新。
+活動重新整理間隔（秒）。 設為0可停用重新整理。
 
-- 預設值： `3`
+- 預設： `3`
 - 需要值
 
 ### `--timestamps`, `-t`
 
-在每個消息旁顯示時間戳
+在每個訊息旁邊顯示時間戳記
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--type`
 
-按類型篩選（選擇預設活動時）。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。 %字元可用作類型的通配符，例如「%var%」以選擇與變數相關的活動。
+依型別篩選（選取預設活動時）。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。 %字元可作為型別的萬用字元，例如&#39;%var%&#39;以選取變數相關的活動。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--exclude-type`
 
-按類型排除（選擇預設活動時）。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。 %字元可用作通配符以排除類型。
+依型別排除（選取預設活動時）。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。 %字元可作為萬用字元來排除型別。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--state`
 
-按狀態篩選（選擇預設活動時）:in_progress 、 pending 、 complete或canceled。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+依狀態篩選（選取預設活動時）： in_progress、pending、complete或canceled。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--result`
 
-按結果篩選（選擇預設活動時）:成功或失敗
+依結果篩選（選取預設活動時）：成功或失敗
 
 - 需要值
 
 ### `--incomplete`, `-i`
 
-僅包括未完成的活動（選擇預設活動時）。 這是對 &lt;info>-state=正在進行，掛起&lt;/info>
+僅包含未完成的活動（選取預設活動時）。 這是的縮寫 &lt;info>—state=in_progress，擱置&lt;/info>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--all`, `-a`
 
-檢查所有環境中的最近活動（選擇預設活動時）
+檢查所有環境上最近的活動（當選取預設活動時）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -1601,71 +1601,71 @@ magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `api:curl`
 
-在Magento雲API上運行已驗證的cURL請求
+在Magento Cloud API上執行已驗證的cURL請求
 
 ```bash
 magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
@@ -1679,131 +1679,131 @@ API路徑
 
 ### `--request`, `-X`
 
-要使用的請求方法
+要使用的要求方法
 
 - 需要值
 
 ### `--data`, `-d`
 
-要發送的資料
+要傳送的資料
 
 - 需要值
 
 ### `--json`
 
-要發送的JSON資料
+要傳送的JSON資料
 
 - 需要值
 
 ### `--include`, `-i`
 
-在輸出中包括標題
+在輸出中包含標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--head`, `-I`
 
-僅提取標頭
+僅擷取標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--disable-compression`
 
-不使用curl — 壓縮標誌
+請勿使用curl —compressed旗標
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--enable-glob`
 
-啟用curl globbing（刪除 — globoff標誌）
+啟用curl萬用字元（移除 — globoff標幟）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--fail`, `-f`
 
-失敗，錯誤響應沒有輸出
+失敗，錯誤回應中沒有輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--header`, `-H`
 
-額外標頭
+額外的標頭
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `app:config-get`
 
-查看應用的配置
+檢視應用程式的設定
 
 ```bash
 magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
@@ -1811,26 +1811,26 @@ magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project 
 
 ### `--property`, `-P`
 
-要查看的配置屬性
+要檢視的設定屬性
 
 - 需要值
 
 ### `--refresh`
 
-是否刷新快取
+是否要重新整理快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -1842,83 +1842,83 @@ magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project 
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--identity-file`, `-i`
 
-[已棄用選項，不再使用]
+[已棄用的選項，不再使用]
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `app:list`
 
-列出項目中的應用
+列出專案中的應用程式
 
 ```bash
 magento-cloud apps [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
@@ -1931,20 +1931,20 @@ apps
 
 ### `--refresh`
 
-是否刷新快取
+是否要重新整理快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -1956,92 +1956,92 @@ apps
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：name*、type*、disk、path、size（* =預設列）。 字元「+」可用作預設列的佔位符。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用的欄：名稱*、型別*、磁碟、路徑、大小（* =預設欄）。 字元「+」可作為預設欄的預留位置。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `auth:api-token-login`
 
-使用API令牌登錄Magento雲
+使用API權杖登入Magento Cloud
 
 ```bash
 magento-cloud auth:api-token-login
@@ -2049,71 +2049,71 @@ magento-cloud auth:api-token-login
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `auth:browser-login`
 
-通過瀏覽器登錄Magento雲
+透過瀏覽器登入Magento Cloud
 
 ```bash
 magento-cloud login [-f|--force] [--browser BROWSER] [--pipe]
@@ -2126,91 +2126,91 @@ login
 
 ### `--force`, `-f`
 
-再次登錄，即使已登錄
+重新登入，即使已登入
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--browser`
 
-用於開啟URL的瀏覽器。 將0設定為無。
+用來開啟URL的瀏覽器。 將0設為無。
 
 - 需要值
 
 ### `--pipe`
 
-輸出要停止的URL。
+輸出stdout的URL。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `auth:info`
 
-顯示帳戶資訊
+顯示您的帳戶資訊
 
 ```bash
 magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--] [<property>]
@@ -2219,117 +2219,117 @@ magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [
 
 ### `property`
 
-要查看的帳戶屬性
+要檢視的帳戶屬性
 
 
 ### `--no-auto-login`
 
-跳過自動登錄。 如果未登錄，將不輸出任何內容，並且退出代碼將為0（假設沒有其他錯誤）。
+略過自動登入。 若未登入，將不會輸出任何內容，且退出代碼將為0 （假設沒有其他錯誤）。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--property`, `-P`
 
-要查看的帳戶屬性（備用語法）
+要檢視的帳戶屬性（替代語法）
 
 - 需要值
 
 ### `--refresh`
 
-是否刷新快取
+是否要重新整理快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `auth:logout`
 
-註銷Magento雲
+登出Magento Cloud
 
 ```bash
 magento-cloud logout [-a|--all] [--other]
@@ -2342,85 +2342,85 @@ logout
 
 ### `--all`, `-a`
 
-從所有本地會話註銷
+從所有本機工作階段登出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--other`
 
-從其他本地會話註銷
+從其他本機工作階段登出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `auth:password-login`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>使用用戶名和密碼登錄Magento雲
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>使用使用者名稱和密碼登入Magento Cloud
 
 ```bash
 magento-cloud auth:password-login
@@ -2433,71 +2433,71 @@ auth:login
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `auth:token`
 
-獲取請求Magento雲API的OAuth 2訪問令牌
+取得OAuth 2存取權杖，以便MagentoCloud API的請求
 
 ```bash
 magento-cloud auth:token [-H|--header] [-W|--no-warn]
@@ -2505,85 +2505,85 @@ magento-cloud auth:token [-H|--header] [-W|--no-warn]
 
 ### `--header`, `-H`
 
-在令牌前加「授權：生成RFC 6750報頭的承載者」
+在權杖前面加上「授權：持有人」，以產生RFC 6750標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-warn`, `-W`
 
-取消預設打印到stderr的警告。 與重定向stderr相比，此選項更為首選，因為這將隱藏其他可能有用的消息。
+隱藏預設列印為stderr的警告。 此選項比重新導向stderr優先，因為這會隱藏其他可能有用的訊息。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `blackfire:setup`
 
-為項目設定Blackfire.io整合
+設定專案的Blackfire.io整合
 
 ```bash
 magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
@@ -2597,103 +2597,103 @@ magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOK
 
 ### `--server_token`
 
-伺服器令牌
+伺服器權杖
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `blue-green:conclude`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 阿爾法 ]&lt;/>完成藍綠部署
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/>完成藍/綠部署
 
 ```bash
 magento-cloud blue-green:conclude [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
@@ -2701,13 +2701,13 @@ magento-cloud blue-green:conclude [-p|--project PROJECT] [-e|--environment ENVIR
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -2719,71 +2719,71 @@ magento-cloud blue-green:conclude [-p|--project PROJECT] [-e|--environment ENVIR
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `blue-green:deploy`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 阿爾法 ]&lt;/>執行藍綠部署
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/>執行藍/綠部署
 
 ```bash
 magento-cloud blue-green:deploy [--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
@@ -2791,20 +2791,20 @@ magento-cloud blue-green:deploy [--routing-percentage ROUTING-PERCENTAGE] [-p|--
 
 ### `--routing-percentage`
 
-設定最新版本的工藝路線百分比
+設定最新版本的製程百分比
 
-- 預設值： `100`
+- 預設： `100`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -2816,71 +2816,71 @@ magento-cloud blue-green:deploy [--routing-percentage ROUTING-PERCENTAGE] [-p|--
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `blue-green:enable`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 阿爾法 ]&lt;/>啟用藍綠部署
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/>啟用藍綠色部署
 
 ```bash
 magento-cloud blue-green:enable [-%|--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
@@ -2888,20 +2888,20 @@ magento-cloud blue-green:enable [-%|--routing-percentage ROUTING-PERCENTAGE] [-p
 
 ### `--routing-percentage`, `-%`
 
-設定最新版本的工藝路線百分比
+設定最新版本的製程百分比
 
-- 預設值： `100`
+- 預設： `100`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -2913,71 +2913,71 @@ magento-cloud blue-green:enable [-%|--routing-percentage ROUTING-PERCENTAGE] [-p
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `certificate:add`
 
-向項目添加SSL證書
+將SSL憑證新增至專案
 
 ```bash
 magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
@@ -2985,116 +2985,116 @@ magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--pr
 
 ### `--cert`
 
-證書檔案的路徑
+憑證檔案的路徑
 
 - 需要值
 
 ### `--key`
 
-證書私鑰檔案的路徑
+憑證私密金鑰檔案的路徑
 
 - 需要值
 
 ### `--chain`
 
-證書鏈檔案的路徑
+憑證鏈結檔案的路徑
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `certificate:delete`
 
-從項目中刪除證書
+從專案刪除憑證
 
 ```bash
 magento-cloud certificate:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <id>
@@ -3103,103 +3103,103 @@ magento-cloud certificate:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] 
 
 ### `id`
 
-證書ID（或其開頭）
+憑證ID （或其開頭）
 
-- 必需
+- 必填
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `certificate:get`
 
-查看證書
+檢視憑證
 
 ```bash
 magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] <id>
@@ -3208,13 +3208,13 @@ magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p
 
 ### `id`
 
-證書ID（或其開頭）
+憑證ID （或其開頭）
 
-- 必需
+- 必填
 
 ### `--property`, `-P`
 
-要查看的證書屬性
+要檢視的憑證屬性
 
 - 需要值
 
@@ -3222,88 +3222,88 @@ magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `certificate:list`
 
-列出項目證書
+列出專案憑證
 
 ```bash
 magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
@@ -3321,171 +3321,171 @@ certs
 
 ### `--domain`
 
-按域名篩選（不區分大小寫的搜索）
+依網域名稱篩選（不區分大小寫搜尋）
 
 - 需要值
 
 ### `--exclude-domain`
 
-排除證書，按域名匹配（不區分大小寫的搜索）
+排除憑證，依網域名稱比對（搜尋不區分大小寫）
 
 - 需要值
 
 ### `--issuer`
 
-按頒發者篩選
+依簽發者篩選
 
 - 需要值
 
 ### `--only-auto`
 
-僅顯示自動設定的證書
+僅顯示自動布建的憑證
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-auto`
 
-僅顯示手動添加的證書
+僅顯示手動新增的憑證
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ignore-expiry`
 
-顯示過期和未過期的證書
+顯示過期和未過期的憑證
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--only-expired`
 
-僅顯示過期的證書
+僅顯示過期的憑證
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-expired`
 
-僅顯示未過期的證書（預設）
+僅顯示未過期的憑證（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--pipe-domains`
 
-僅返回證書所涵蓋的域名清單
+僅傳回憑證涵蓋的網域名稱清單
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：已建立、域、過期、ID、頒發者。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用欄：已建立、網域、過期、ID、簽發者。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `commit:get`
 
-顯示提交詳細資訊
+顯示認可詳細資料
 
 ```bash
 magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--] [<commit>]
@@ -3494,26 +3494,26 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--e
 
 ### `commit`
 
-提交SHA。 這也可以接受「HEAD」和父提交的插入符號(^)或顎化符(~)尾碼。
+認可SHA。 這也可以接受父項認可的「HEAD」、脫字型大小(^)或波狀符號(~)尾碼。
 
-- 預設值： `HEAD`
+- 預設： `HEAD`
 
 
 ### `--property`, `-P`
 
-要顯示的commit屬性。
+要顯示的認可屬性。
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -3527,7 +3527,7 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--e
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--format`
@@ -3540,83 +3540,83 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--e
 
 已棄用
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
 已棄用
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `commit:list`
 
-清單提交
+清單認可
 
 ```bash
 magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
@@ -3630,25 +3630,25 @@ commits
 
 ### `commit`
 
-啟動Git提交SHA。 這也可以接受「HEAD」和父提交的插入符號(^)或顎化符(~)尾碼。
+起始Git認可SHA。 這也可以接受父項認可的「HEAD」、脫字型大小(^)或波狀符號(~)尾碼。
 
 
 ### `--limit`
 
-要顯示的提交數。
+要顯示的認可數目。
 
-- 預設值： `10`
+- 預設： `10`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -3660,99 +3660,99 @@ commits
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：作者，日期，沙，摘要。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用欄：作者、日期、sha、摘要。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `db:dump`
 
-建立遠程資料庫的本地轉儲
+建立遠端資料庫的本機傾印
 
 ```bash
 magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
@@ -3770,79 +3770,79 @@ environment:sql-dump
 
 ### `--schema`
 
-要轉儲的架構。 省略以使用預設架構（通常為&quot;main&quot;）。
+要傾印的結構描述。 省略以使用預設結構描述（通常為「main」）。
 
 - 需要值
 
 ### `--file`, `-f`
 
-轉儲的自定義檔案名
+傾印的自訂檔案名稱
 
 - 需要值
 
 ### `--directory`, `-d`
 
-轉儲的自定義目錄
+傾印的自訂目錄
 
 - 需要值
 
 ### `--gzip`, `-z`
 
-使用gzip壓縮轉儲
+使用gzip壓縮傾印
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--timestamp`, `-t`
 
-將時間戳添加到轉儲檔案名
+將時間戳記新增至傾印檔案名稱
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--stdout`, `-o`
 
 輸出到STDOUT而不是檔案
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--table`
 
-要包括的表
+要包含的表格
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--exclude-table`
 
-要排除的表
+要排除的表格
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--schema-only`
 
-僅轉儲架構，無資料
+僅傾印結構描述，無資料
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--charset`
 
-轉儲的字元集編碼
+傾印的字元集編碼
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -3854,7 +3854,7 @@ environment:sql-dump
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
@@ -3866,77 +3866,77 @@ environment:sql-dump
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `db:size`
 
-估計資料庫的磁碟使用率
+預估資料庫的磁碟使用量
 
 ```bash
 magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
@@ -3946,25 +3946,25 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--e
 
 以位元組為單位顯示大小。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--cleanup`, `-C`
 
-檢查表是否可以清理並顯示建議（僅限InnoDb）。
+檢查是否可以清除資料表並顯示建議（僅限InnoDb）。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -3976,7 +3976,7 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--e
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
@@ -3988,98 +3988,98 @@ magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--e
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：max、percent_used、used。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用欄：max、percent_used、used。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `db:sql`
 
-在遠程資料庫上運行SQL
+在遠端資料庫上執行SQL
 
 ```bash
 magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
@@ -4098,31 +4098,31 @@ environment:sql
 
 ### `query`
 
-要執行的SQL陳述式
+要執行的SQL敘述句
 
 
 ### `--raw`
 
-生成原始、非表格輸出
+產生原始的非表格輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--schema`
 
-要使用的架構。 省略以使用預設架構（通常為&quot;main&quot;）。 傳遞空字串以不使用任何架構。
+要使用的結構描述。 省略以使用預設結構描述（通常為「main」）。 傳遞空字串以不使用任何結構描述。
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -4134,7 +4134,7 @@ environment:sql
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
@@ -4146,77 +4146,77 @@ environment:sql
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `domain:add`
 
-向項目添加新域
+將新網域新增至專案
 
 ```bash
 magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
@@ -4225,122 +4225,122 @@ magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project
 
 ### `name`
 
-域名
+網域名稱
 
-- 必需
+- 必填
 
 ### `--cert`
 
-此域的證書檔案的路徑
+此網域的憑證檔案路徑
 
 - 需要值
 
 ### `--key`
 
-提供的證書的私鑰檔案的路徑。
+所提供憑證的私密金鑰檔案路徑。
 
 - 需要值
 
 ### `--chain`
 
-提供的證書的證書鏈檔案或檔案的路徑
+提供的憑證的憑證鏈結檔案的路徑
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `domain:delete`
 
-從項目中刪除域
+從專案刪除網域
 
 ```bash
 magento-cloud domain:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
@@ -4349,103 +4349,103 @@ magento-cloud domain:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] 
 
 ### `name`
 
-域名
+網域名稱
 
-- 必需
+- 必填
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `domain:get`
 
-顯示域的詳細資訊
+顯示網域的詳細資訊
 
 ```bash
 magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] [<name>]
@@ -4454,122 +4454,122 @@ magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--column
 
 ### `name`
 
-域名
+網域名稱
 
 
 ### `--property`, `-P`
 
-要查看的域屬性
+要檢視的網域屬性
 
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `domain:list`
 
-獲取所有域的清單
+取得所有網域的清單
 
 ```bash
 magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
@@ -4582,104 +4582,104 @@ domains
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：name*、ssl*、created_at*、updated_at（* =預設列）。 字元「+」可用作預設列的佔位符。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用的欄： name*、ssl*、created_at*、updated_at （* =預設欄）。 字元「+」可作為預設欄的預留位置。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `domain:update`
 
-更新域
+更新網域
 
 ```bash
 magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
@@ -4688,122 +4688,122 @@ magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--proj
 
 ### `name`
 
-域名
+網域名稱
 
-- 必需
+- 必填
 
 ### `--cert`
 
-此域的證書檔案的路徑
+此網域的憑證檔案路徑
 
 - 需要值
 
 ### `--key`
 
-提供的證書的私鑰檔案的路徑。
+所提供憑證的私密金鑰檔案路徑。
 
 - 需要值
 
 ### `--chain`
 
-提供的證書的證書鏈檔案或檔案的路徑
+提供的憑證的憑證鏈結檔案的路徑
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:activate`
 
-激活環境
+啟用環境
 
 ```bash
 magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
@@ -4812,27 +4812,27 @@ magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [-e|
 
 ### `environment`
 
-要激活的環境
+要啟用的環境
 
-- 預設值： `[]`
+- 預設： `[]`
 
 - 陣列
 
 ### `--parent`
 
-在激活前設定新環境父項
+在啟用之前設定新的環境父項
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -4844,79 +4844,79 @@ magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [-e|
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -4936,7 +4936,7 @@ branch
 
 ### `id`
 
-新環境的ID（分支名稱）
+新環境的ID （分支名稱）
 
 
 ### `parent`
@@ -4952,33 +4952,33 @@ branch
 
 ### `--type`
 
-新環境的類型
+新環境的型別
 
 - 需要值
 
 ### `--force`
 
-即使無法在本地檢出分支，也建立新環境
+即使分支無法在本機出庫，仍可建立新環境
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-clone-parent`
 
-不克隆父分支的資料
+不要複製父分支的資料
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -4990,91 +4990,91 @@ branch
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:checkout`
 
-檢出環境
+簽出環境
 
 ```bash
 magento-cloud checkout [-i|--identity-file IDENTITY-FILE] [--] [<id>]
@@ -5088,82 +5088,82 @@ checkout
 
 ### `id`
 
-要簽出的環境的ID。 例如：&quot;sprint2&quot;
+要簽出的環境ID。 例如：「sprint2」
 
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:curl`
 
-在環境的API上運行經過驗證的cURL請求
+在環境的API上執行已驗證的cURL請求
 
 ```bash
 magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
@@ -5177,73 +5177,73 @@ API路徑
 
 ### `--request`, `-X`
 
-要使用的請求方法
+要使用的要求方法
 
 - 需要值
 
 ### `--data`, `-d`
 
-要發送的資料
+要傳送的資料
 
 - 需要值
 
 ### `--json`
 
-要發送的JSON資料
+要傳送的JSON資料
 
 - 需要值
 
 ### `--include`, `-i`
 
-在輸出中包括標題
+在輸出中包含標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--head`, `-I`
 
-僅提取標頭
+僅擷取標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--disable-compression`
 
-不使用curl — 壓縮標誌
+請勿使用curl —compressed旗標
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--enable-glob`
 
-啟用curl globbing（刪除 — globoff標誌）
+啟用curl萬用字元（移除 — globoff標幟）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--fail`, `-f`
 
-失敗，錯誤響應沒有輸出
+失敗，錯誤回應中沒有輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--header`, `-H`
 
-額外標頭
+額外的標頭
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -5255,71 +5255,71 @@ API路徑
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:delete`
 
-刪除一個或多個環境
+刪除一或多個環境
 
 ```bash
 magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
@@ -5333,77 +5333,77 @@ environment:deactivate
 
 ### `environment`
 
-要刪除的環境。 %字元可用作通配符。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要刪除的環境。 %字元可作為萬用字元使用。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 
 - 陣列
 
 ### `--delete-branch`
 
-刪除Git分支（非活動環境）
+刪除Git分支（非使用中環境）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-delete-branch`
 
-不刪除Git分支（非活動環境）
+請勿刪除Git分支（非使用中環境）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--type`
 
-刪除類型的所有環境（添加到選定的任何其他環境）如果將清單指定為單個值(如&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+刪除某型別的所有環境（新增至任何其他選取的專案）如果清單是以單一值提供（例如「a，b，c」），則會以逗號和/或空白分隔。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--only-type`, `-t`
 
-僅刪除特定類型的環境如果將清單指定為單個值(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+僅刪除特定型別的環境如果清單以單一值（例如「a，b，c」）提供，則會以逗號和/或空格分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--exclude`
 
-不要刪除的環境。 %字元可用作通配符。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+不可刪除的環境。 %字元可作為萬用字元使用。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--exclude-type`
 
-不要刪除的環境類型如果清單被指定為單個值(如&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+不可刪除的環境型別如果清單是以單一值提供（例如&quot;a，b，c&quot;），則會以逗號和/或空格分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--inactive`
 
-刪除所有非活動環境（添加到選定的任何其他環境）
+刪除所有非使用中環境（新增至所選的其他環境）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--merged`
 
-刪除所有合併的環境（添加到所選的其他環境）
+刪除所有合併的環境（新增至其他所選環境）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -5415,85 +5415,85 @@ environment:deactivate
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:http-access`
 
-更新環境的HTTP訪問設定
+更新環境的HTTP存取設定
 
 ```bash
 magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
@@ -5506,33 +5506,33 @@ httpaccess
 
 ### `--access`
 
-以「permission:address」格式訪問限制。 使用0清除所有地址。
+存取限制，格式為「permission：address」。 使用0可清除所有地址。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--auth`
 
-HTTP Basic身份驗證憑據格式為「username:password」。 使用0清除所有憑據。
+HTTP基本驗證認證，格式為「使用者名稱：密碼」。 使用0可清除所有認證。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--enabled`
 
-是否應啟用訪問控制：1要啟用，0要禁用
+存取控制是否應該啟用：1代表啟用，0代表停用
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -5544,79 +5544,79 @@ HTTP Basic身份驗證憑據格式為「username:password」。 使用0清除所
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -5646,48 +5646,48 @@ environment:metadata
 
 ### `--refresh`
 
-是否刷新快取
+是否要重新整理快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -5699,85 +5699,85 @@ environment:metadata
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:init`
 
-從公共Git儲存庫初始化環境
+從公用Git存放庫初始化環境
 
 ```bash
 magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
@@ -5786,25 +5786,25 @@ magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [-e|--
 
 ### `url`
 
-Git儲存庫的URL
+Git存放庫的URL
 
-- 必需
+- 必填
 
 ### `--profile`
 
-配置檔案的名稱
+設定檔的名稱
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -5816,85 +5816,85 @@ Git儲存庫的URL
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:list`
 
-獲取環境清單
+取得環境清單
 
 ```bash
 magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
@@ -5912,146 +5912,146 @@ env
 
 ### `--no-inactive`, `-I`
 
-不顯示非活動環境
+不顯示非使用中環境
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--pipe`
 
 輸出環境ID的簡單清單。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--refresh`
 
-是否刷新清單。
+是否要重新整理清單。
 
-- 預設值： `1`
+- 預設： `1`
 - 需要值
 
 ### `--sort`
 
-要排序的屬性
+排序依據的屬性
 
-- 預設值： `title`
+- 預設： `title`
 - 需要值
 
 ### `--reverse`
 
-按反向（降序）順序排序
+以反向（遞減）順序排序
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--type`
 
-按環境類型篩選清單。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+依環境型別篩選清單。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：id*、title*、status*、type*、created、machine_name、updated（* =預設列）。 字元「+」可用作預設列的佔位符。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用欄：id*、title*、status*、type*、created、machine_name、updated （* =預設欄）。 字元「+」可作為預設欄的預留位置。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:logs`
 
-讀取環境日誌
+讀取環境的記錄
 
 ```bash
 magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
@@ -6070,32 +6070,32 @@ logs
 
 ### `type`
 
-日誌類型，例如&quot;access&quot;或&quot;error&quot;
+記錄型別，例如「存取」或「錯誤」
 
 
 ### `--lines`
 
 要顯示的行數
 
-- 預設值： `100`
+- 預設： `100`
 - 需要值
 
 ### `--tail`
 
-連續跟蹤日誌
+持續追蹤記錄
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -6107,83 +6107,83 @@ logs
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--worker`
 
-工作人員名稱
+工作者姓名
 
 - 需要值
 
 ### `--instance`, `-I`
 
-實例ID
+執行個體ID
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -6208,13 +6208,13 @@ merge
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -6226,85 +6226,85 @@ merge
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:push`
 
-將代碼推送到環境
+將程式碼推送至環境
 
 ```bash
 magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
@@ -6318,9 +6318,9 @@ push
 
 ### `source`
 
-源引用：分支名稱或提交哈希
+來源參考：分支名稱或認可雜湊
 
-- 預設值： `HEAD`
+- 預設： `HEAD`
 
 
 ### `--target`
@@ -6331,81 +6331,81 @@ push
 
 ### `--force`, `-f`
 
-允許非快速轉發更新
+允許非快轉更新
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--force-with-lease`
 
-如果遠程跟蹤分支是最新的，則允許非快速轉發更新
+如果遠端追蹤分支為最新狀態，則允許非快轉更新
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--set-upstream`, `-u`
 
-將目標環境設定為源分支的上游
+將目標環境設定為來源分支的上游
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--activate`
 
-在推送之前激活環境
+在推送之前啟動環境
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--branch`
 
-已棄用：別名 — 激活
+已棄用： —activate的別名
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--parent`
 
-設定新環境父項（僅與 — activate一起使用）
+設定新環境父項（僅用於 — activate）
 
 - 需要值
 
 ### `--type`
 
-設定環境類型（僅與 — activate一起使用）
+設定環境型別（僅用於 — activate ）
 
 - 需要值
 
 ### `--no-clone-parent`
 
-不克隆父分支的資料（僅與 — activate一起使用）
+請勿複製父分支的資料（僅用於 — activate）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -6417,71 +6417,71 @@ push
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -6500,13 +6500,13 @@ redeploy
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -6518,79 +6518,79 @@ redeploy
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -6615,26 +6615,26 @@ relationships
 
 ### `--property`, `-P`
 
-要查看的關係屬性
+要檢視的關係屬性
 
 - 需要值
 
 ### `--refresh`
 
-是否刷新關係
+是否要重新整理關係
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -6646,83 +6646,83 @@ relationships
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:scp`
 
-使用scp將檔案複製到當前環境並從當前環境複製檔案
+使用scp將檔案複製到目前環境或從目前環境複製檔案
 
 ```bash
 magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
@@ -6736,28 +6736,28 @@ scp
 
 ### `files`
 
-要複製的檔案。 使用遠程：定義遠程位置的前置詞。
+要複製的檔案。 使用remote：前置詞來定義遠端位置。
 
-- 預設值： `[]`
+- 預設： `[]`
 
 - 陣列
 
 ### `--recursive`, `-r`
 
-遞歸複製整個目錄
+遞回複製整個目錄
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -6769,95 +6769,95 @@ scp
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--worker`
 
-工作人員名稱
+工作者姓名
 
 - 需要值
 
 ### `--instance`, `-I`
 
-實例ID
+執行個體ID
 
 - 需要值
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:set-remote`
 
-將遠程環境設定為映射到分支
+設定遠端環境以對應至分支
 
 ```bash
 magento-cloud environment:set-remote <environment> [<branch>]
@@ -6866,82 +6866,82 @@ magento-cloud environment:set-remote <environment> [<branch>]
 
 ### `environment`
 
-環境電腦名。 設定為0可刪除分支的映射
+環境電腦名稱。 設為0可移除分支的對應
 
-- 必需
+- 必填
 
 ### `branch`
 
-要映射的Git分支（預設為當前分支）
+要對應的Git分支（預設為目前分支）
 
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:ssh`
 
-SSH到當前環境
+SSH連線至目前環境
 
 ```bash
 magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
@@ -6955,9 +6955,9 @@ ssh
 
 ### `cmd`
 
-要在環境中運行的命令。
+要在環境中執行的命令。
 
-- 預設值： `[]`
+- 預設： `[]`
 
 - 陣列
 
@@ -6965,25 +6965,25 @@ ssh
 
 僅輸出SSH URL。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--all`
 
-輸出所有SSH URL（用於每個應用）。
+輸出所有SSH URL （適用於每個應用程式）。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -6995,95 +6995,95 @@ ssh
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--worker`
 
-工作人員名稱
+工作者姓名
 
 - 需要值
 
 ### `--instance`, `-I`
 
-實例ID
+執行個體ID
 
 - 需要值
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:synchronize`
 
-同步環境的代碼和/或來自其父代的資料
+同步環境的程式碼和/或來自其父系的資料
 
 ```bash
 magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
@@ -7097,28 +7097,28 @@ sync
 
 ### `synchronize`
 
-要同步的內容：&quot;code&quot;、&quot;data&quot;或兩者
+要同步的專案：「代碼」、「資料」或兩者
 
-- 預設值： `[]`
+- 預設： `[]`
 
 - 陣列
 
 ### `--rebase`
 
-通過基於而不是合併來同步代碼
+透過重新基底而不是合併來同步程式碼
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -7130,85 +7130,85 @@ sync
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:url`
 
-獲取環境的公共URL
+取得環境的公用URL
 
 ```bash
 magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
@@ -7221,33 +7221,33 @@ url
 
 ### `--primary`, `-1`
 
-僅返回主路由的URL
+僅傳回主要路由的URL
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--browser`
 
-用於開啟URL的瀏覽器。 將0設定為無。
+用來開啟URL的瀏覽器。 將0設為無。
 
 - 需要值
 
 ### `--pipe`
 
-輸出要停止的URL。
+輸出stdout的URL。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -7259,71 +7259,71 @@ url
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `environment:xdebug`
 
-在環境中開啟到Xdebug的通道
+開啟環境上的Xdebug通道
 
 ```bash
 magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
@@ -7336,20 +7336,20 @@ xdebug
 
 ### `--port`
 
-本地埠
+本機連線埠
 
-- 預設值： `9000`
+- 預設： `9000`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -7361,95 +7361,95 @@ xdebug
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--worker`
 
-工作人員名稱
+工作者姓名
 
 - 需要值
 
 ### `--instance`, `-I`
 
-實例ID
+執行個體ID
 
 - 需要值
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `integration:activity:get`
 
-查看有關單個整合活動的詳細資訊
+檢視單一整合活動的詳細資訊
 
 ```bash
 magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
@@ -7458,133 +7458,133 @@ magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PR
 
 ### `integration`
 
-整合ID。 留空以從清單中進行選擇。
+整合識別碼。 保留空白以從清單中選擇。
 
 
 ### `activity`
 
-活動ID。 預設為最近的整合活動。
+活動識別碼。 預設為最新的整合活動。
 
 
 ### `--property`, `-P`
 
-要查看的屬性
+要檢視的屬性
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--environment`, `-e`
 
-[不建議使用的選項]
+[已棄用的選項，未使用]
 
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `integration:activity:list`
 
-獲取整合活動清單
+取得整合活動清單
 
 ```bash
 magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
@@ -7603,46 +7603,46 @@ integration:activities
 
 ### `id`
 
-整合ID。 留空以從清單中進行選擇。
+整合識別碼。 保留空白以從清單中選擇。
 
 
 ### `--type`
 
-按類型篩選活動。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+依型別篩選活動。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--exclude-type`, `-x`
 
-按類型排除活動。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。 %字元可用作通配符以排除類型。
+依型別排除活動。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。 %字元可作為萬用字元來排除型別。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--limit`
 
-限制顯示的結果數
+限制顯示的結果數量
 
-- 預設值： `10`
+- 預設： `10`
 - 需要值
 
 ### `--start`
 
-將只列出在此日期之前建立的活動
+只會列出在此日期之前建立的活動
 
 - 需要值
 
 ### `--state`
 
-按州篩選活動。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+依狀態篩選活動。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--result`
 
-按結果篩選活動
+依結果篩選活動
 
 - 需要值
 
@@ -7650,122 +7650,122 @@ integration:activities
 
 僅列出未完成的活動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：id*、created*、description*、type*、state*、result*，已完成（* =預設列）。 字元「+」可用作預設列的佔位符。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用的欄： id*、created*、description*、type*、state*、result*、completed （* =預設欄）。 字元「+」可作為預設欄的預留位置。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--environment`, `-e`
 
-[不建議使用的選項]
+[已棄用的選項，未使用]
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `integration:activity:log`
 
-顯示整合活動的日誌
+顯示整合活動的記錄
 
 ```bash
 magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
@@ -7774,113 +7774,113 @@ magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [
 
 ### `integration`
 
-整合ID。 留空以從清單中進行選擇。
+整合識別碼。 保留空白以從清單中選擇。
 
 
 ### `activity`
 
-活動ID。 預設為最近的整合活動。
+活動識別碼。 預設為最新的整合活動。
 
 
 ### `--timestamps`, `-t`
 
-在每個消息旁顯示時間戳
+在每個訊息旁邊顯示時間戳記
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--environment`, `-e`
 
-[不建議使用的選項]
+[已棄用的選項，未使用]
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `integration:add`
 
-向項目添加整合
+將整合新增至專案
 
 ```bash
 magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait]
@@ -7888,196 +7888,196 @@ magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username US
 
 ### `--type`
 
-整合類型(「bitbucket」、「bitbucketserver」、「github」、「gitlab」、「webhook」、「health.email」、「health.pagerduty」、「health.slack」、「health.webhook」、「script」、「newrelic」、「splunk」、「sumologic」、「syslogic」)
+整合型別(「bitbucket」、「bitbucket_server」、「github」、「gitlab」、「webhook」、「health.email」、「health.pagerduty」、「health.slack」、「health.webhook」、「script」、「newrelic」、「splunk」、「sumologic」、「syslog」)
 
 - 需要值
 
 ### `--base-url`
 
-伺服器安裝的基URL
+伺服器安裝的基底URL
 
 - 需要值
 
 ### `--username`
 
-Bitbucket伺服器用戶名
+Bitbucket伺服器使用者名稱
 
 - 需要值
 
 ### `--token`
 
-整合的驗證或訪問令牌
+整合的驗證或存取權杖
 
 - 需要值
 
 ### `--key`
 
-Bitbucket OAuth使用者密鑰
+Bitbucket OAuth消費者金鑰
 
 - 需要值
 
 ### `--secret`
 
-Bitbucket OAuth消費者機密
+Bitbucket OAuth使用者密碼
 
 - 需要值
 
 ### `--license-key`
 
-New Relic日誌許可證密鑰
+New Relic記錄授權金鑰
 
 - 需要值
 
 ### `--server-project`
 
-項目(例如&#39;namespace/repo)
+專案（例如「namespace/repo」）
 
 - 需要值
 
 ### `--repository`
 
-要跟蹤的儲存庫(例如&#39;owner/repository&#39;)
+要追蹤的存放庫（例如「所有者/存放庫」）
 
 - 需要值
 
 ### `--build-merge-requests`
 
-GitLab:將合併請求構建為環境
+GitLab：將合併請求建置為環境
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--build-pull-requests`
 
-將每個拉入請求構建為環境
+將每個提取請求建置為環境
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--build-draft-pull-requests`
 
-生成草稿拉取請求
+建立草稿提取請求
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--build-pull-requests-post-merge`
 
-根據合併後狀態生成拉入請求
+根據請求合併後的狀態建置提取請求
 
-- 預設值： `false`
+- 預設： `false`
 - 需要值
 
 ### `--build-wip-merge-requests`
 
-GitLab:構建WIP合併請求
+GitLab：建立WIP合併請求
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--merge-requests-clone-parent-data`
 
-GitLab:合併請求的克隆資料
+GitLab：複製合併請求的資料
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--pull-requests-clone-parent-data`
 
-克隆父環境的資料以獲取請求
+複製提取請求的父環境資料
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--resync-pull-requests`
 
-在每個生成上重新同步拉取請求環境資料
+重新同步每個組建的提取請求環境資料
 
-- 預設值： `false`
+- 預設： `false`
 - 需要值
 
 ### `--fetch-branches`
 
-從遠程（作為非活動環境）獲取所有分支
+從遠端擷取所有分支（作為非使用中環境）
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--prune-branches`
 
-刪除遠程上不存在的分支
+刪除遠端上不存在的分支
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--url`
 
-整合的URL或API終結點
+整合的URL或API端點
 
 - 需要值
 
 ### `--shared-key`
 
-網鈎：JWS共用密鑰
+Webhook： JWS共用秘密金鑰
 
 - 需要值
 
 ### `--file`
 
-包含要上載的指令碼的本地檔案的名稱
+包含要上傳之指令碼的本機檔案名稱
 
 - 需要值
 
 ### `--events`
 
-要執行操作的事件清單，如環境推送
+要執行動作的事件清單，例如environment.push
 
-- 預設值： `*`
+- 預設： `*`
 - 需要值
 
 ### `--states`
 
-要執行操作（例如，待處理）的狀態清單(_P)
+要執行動作的狀態清單，例如pending、in_progress、complete
 
-- 預設值： `complete`
+- 預設： `complete`
 - 需要值
 
 ### `--environments`
 
-要包括的環境ID
+要包含的環境ID
 
-- 預設值： `*`
+- 預設： `*`
 - 需要值
 
 ### `--excluded-environments`
 
 要排除的環境ID
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--from-address`
 
-[可選] 警報電子郵件的自定義地址
+[可選] 警報電子郵件的自訂寄件者地址
 
 - 需要值
 
 ### `--recipients`
 
-收件人電子郵件地址
+收件者電子郵件地址
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--channel`
 
-Slack頻道
+Slack管道
 
 - 需要值
 
 ### `--routing-key`
 
-PagerDuty路由鍵
+PagerDuty路由索引鍵
 
 - 需要值
 
@@ -8089,32 +8089,32 @@ PagerDuty路由鍵
 
 ### `--index`
 
-Splunk指數
+Splunk索引
 
 - 需要值
 
 ### `--sourcetype`
 
-Splunk事件源類型
+Splunk事件來源型別
 
 - 需要值
 
 ### `--protocol`
 
-Syslog傳輸協定(「tcp」、「udp」、「tls」)
+Syslog傳輸通訊協定(&#39;tcp&#39;、&#39;udp&#39;、&#39;tls&#39;)
 
-- 預設值： `tls`
+- 預設： `tls`
 - 需要值
 
 ### `--syslog-host`
 
-Syslog中繼/收集器主機
+Syslog轉送/收集器主機
 
 - 需要值
 
 ### `--syslog-port`
 
-Syslog中繼/收集器埠
+Syslog轉送/收集器連線埠
 
 - 需要值
 
@@ -8122,129 +8122,129 @@ Syslog中繼/收集器埠
 
 Syslog工具
 
-- 預設值： `1`
+- 預設： `1`
 - 需要值
 
 ### `--message-format`
 
-Syslog消息格式（&#39;rfc3164&#39;或&#39;rfc5424&#39;）
+Syslog訊息格式（&#39;rfc3164&#39;或&#39;rfc5424&#39;）
 
-- 預設值： `rfc5424`
+- 預設： `rfc5424`
 - 需要值
 
 ### `--auth-mode`
 
 驗證模式（「prefix」或「structured_data」）
 
-- 預設值： `prefix`
+- 預設： `prefix`
 - 需要值
 
 ### `--auth-token`
 
-驗證令牌
+驗證Token
 
 - 需要值
 
 ### `--verify-tls`
 
-是否應啟用HTTPS證書驗證（推薦）
+是否應啟用HTTPS憑證驗證（建議）
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `integration:delete`
 
-從項目中刪除整合
+從專案刪除整合
 
 ```bash
 magento-cloud integration:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
@@ -8253,102 +8253,102 @@ magento-cloud integration:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] 
 
 ### `id`
 
-整合ID。 留空以從清單中進行選擇。
+整合ID。 保留空白以從清單中選擇。
 
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `integration:get`
 
-查看整合的詳細資訊
+檢視整合的詳細資訊
 
 ```bash
 magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<id>]
@@ -8357,115 +8357,115 @@ magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [-c|-
 
 ### `id`
 
-整合ID。 留空以從清單中進行選擇。
+整合識別碼。 保留空白以從清單中選擇。
 
 
 ### `--property`, `-P`
 
-要查看的整合屬性
+要檢視的整合屬性
 
 - 接受值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `integration:list`
 
-查看項目整合清單
+檢視專案整合的清單
 
 ```bash
 magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
@@ -8478,98 +8478,98 @@ integrations
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：id,summary, type。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用的欄：id、摘要、型別。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -8584,201 +8584,201 @@ magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username
 
 ### `id`
 
-要更新的整合的ID
+要更新的整合ID
 
 
 ### `--type`
 
-整合類型(「bitbucket」、「bitbucketserver」、「github」、「gitlab」、「webhook」、「health.email」、「health.pagerduty」、「health.slack」、「health.webhook」、「script」、「newrelic」、「splunk」、「sumologic」、「syslogic」)
+整合型別(「bitbucket」、「bitbucket_server」、「github」、「gitlab」、「webhook」、「health.email」、「health.pagerduty」、「health.slack」、「health.webhook」、「script」、「newrelic」、「splunk」、「sumologic」、「syslog」)
 
 - 需要值
 
 ### `--base-url`
 
-伺服器安裝的基URL
+伺服器安裝的基底URL
 
 - 需要值
 
 ### `--username`
 
-Bitbucket伺服器用戶名
+Bitbucket伺服器使用者名稱
 
 - 需要值
 
 ### `--token`
 
-整合的驗證或訪問令牌
+整合的驗證或存取權杖
 
 - 需要值
 
 ### `--key`
 
-Bitbucket OAuth使用者密鑰
+Bitbucket OAuth消費者金鑰
 
 - 需要值
 
 ### `--secret`
 
-Bitbucket OAuth消費者機密
+Bitbucket OAuth使用者密碼
 
 - 需要值
 
 ### `--license-key`
 
-New Relic日誌許可證密鑰
+New Relic記錄授權金鑰
 
 - 需要值
 
 ### `--server-project`
 
-項目(例如&#39;namespace/repo)
+專案（例如「namespace/repo」）
 
 - 需要值
 
 ### `--repository`
 
-要跟蹤的儲存庫(例如&#39;owner/repository&#39;)
+要追蹤的存放庫（例如「所有者/存放庫」）
 
 - 需要值
 
 ### `--build-merge-requests`
 
-GitLab:將合併請求構建為環境
+GitLab：將合併請求建置為環境
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--build-pull-requests`
 
-將每個拉入請求構建為環境
+將每個提取請求建置為環境
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--build-draft-pull-requests`
 
-生成草稿拉取請求
+建立草稿提取請求
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--build-pull-requests-post-merge`
 
-根據合併後狀態生成拉入請求
+根據請求合併後的狀態建置提取請求
 
-- 預設值： `false`
+- 預設： `false`
 - 需要值
 
 ### `--build-wip-merge-requests`
 
-GitLab:構建WIP合併請求
+GitLab：建立WIP合併請求
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--merge-requests-clone-parent-data`
 
-GitLab:合併請求的克隆資料
+GitLab：複製合併請求的資料
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--pull-requests-clone-parent-data`
 
-克隆父環境的資料以獲取請求
+複製提取請求的父環境資料
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--resync-pull-requests`
 
-在每個生成上重新同步拉取請求環境資料
+重新同步每個組建的提取請求環境資料
 
-- 預設值： `false`
+- 預設： `false`
 - 需要值
 
 ### `--fetch-branches`
 
-從遠程（作為非活動環境）獲取所有分支
+從遠端擷取所有分支（作為非使用中環境）
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--prune-branches`
 
-刪除遠程上不存在的分支
+刪除遠端上不存在的分支
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--url`
 
-整合的URL或API終結點
+整合的URL或API端點
 
 - 需要值
 
 ### `--shared-key`
 
-網鈎：JWS共用密鑰
+Webhook： JWS共用秘密金鑰
 
 - 需要值
 
 ### `--file`
 
-包含要上載的指令碼的本地檔案的名稱
+包含要上傳之指令碼的本機檔案名稱
 
 - 需要值
 
 ### `--events`
 
-要執行操作的事件清單，如環境推送
+要執行動作的事件清單，例如environment.push
 
-- 預設值： `*`
+- 預設： `*`
 - 需要值
 
 ### `--states`
 
-要執行操作（例如，待處理）的狀態清單(_P)
+要執行動作的狀態清單，例如pending、in_progress、complete
 
-- 預設值： `complete`
+- 預設： `complete`
 - 需要值
 
 ### `--environments`
 
-要包括的環境ID
+要包含的環境ID
 
-- 預設值： `*`
+- 預設： `*`
 - 需要值
 
 ### `--excluded-environments`
 
 要排除的環境ID
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--from-address`
 
-[可選] 警報電子郵件的自定義地址
+[可選] 警報電子郵件的自訂寄件者地址
 
 - 需要值
 
 ### `--recipients`
 
-收件人電子郵件地址
+收件者電子郵件地址
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--channel`
 
-Slack頻道
+Slack管道
 
 - 需要值
 
 ### `--routing-key`
 
-PagerDuty路由鍵
+PagerDuty路由索引鍵
 
 - 需要值
 
@@ -8790,32 +8790,32 @@ PagerDuty路由鍵
 
 ### `--index`
 
-Splunk指數
+Splunk索引
 
 - 需要值
 
 ### `--sourcetype`
 
-Splunk事件源類型
+Splunk事件來源型別
 
 - 需要值
 
 ### `--protocol`
 
-Syslog傳輸協定(「tcp」、「udp」、「tls」)
+Syslog傳輸通訊協定(&#39;tcp&#39;、&#39;udp&#39;、&#39;tls&#39;)
 
-- 預設值： `tls`
+- 預設： `tls`
 - 需要值
 
 ### `--syslog-host`
 
-Syslog中繼/收集器主機
+Syslog轉送/收集器主機
 
 - 需要值
 
 ### `--syslog-port`
 
-Syslog中繼/收集器埠
+Syslog轉送/收集器連線埠
 
 - 需要值
 
@@ -8823,129 +8823,129 @@ Syslog中繼/收集器埠
 
 Syslog工具
 
-- 預設值： `1`
+- 預設： `1`
 - 需要值
 
 ### `--message-format`
 
-Syslog消息格式（&#39;rfc3164&#39;或&#39;rfc5424&#39;）
+Syslog訊息格式（&#39;rfc3164&#39;或&#39;rfc5424&#39;）
 
-- 預設值： `rfc5424`
+- 預設： `rfc5424`
 - 需要值
 
 ### `--auth-mode`
 
 驗證模式（「prefix」或「structured_data」）
 
-- 預設值： `prefix`
+- 預設： `prefix`
 - 需要值
 
 ### `--auth-token`
 
-驗證令牌
+驗證Token
 
 - 需要值
 
 ### `--verify-tls`
 
-是否應啟用HTTPS證書驗證（推薦）
+是否應啟用HTTPS憑證驗證（建議）
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `integration:validate`
 
-驗證現有整合
+驗證現有的整合
 
 ```bash
 magento-cloud integration:validate [-p|--project PROJECT] [--] [<id>]
@@ -8954,88 +8954,88 @@ magento-cloud integration:validate [-p|--project PROJECT] [--] [<id>]
 
 ### `id`
 
-整合ID。 留空以從清單中進行選擇。
+整合識別碼。 保留空白以從清單中選擇。
 
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `local:build`
 
-在本地構建當前項目
+在本機建立目前的專案
 
 ```bash
 magento-cloud build [-a|--abslinks] [-s|--source SOURCE] [-d|--destination DESTINATION] [-c|--copy] [--clone] [--run-deploy-hooks] [--no-clean] [--no-archive] [--no-backup] [--no-cache] [--no-build-hooks] [--no-deps] [--working-copy] [--concurrency CONCURRENCY] [--lock] [--] [<app>]...
@@ -9049,9 +9049,9 @@ build
 
 ### `app`
 
-指定要生成的應用程式
+指定要建置的應用程式
 
-- 預設值： `[]`
+- 預設： `[]`
 
 - 陣列
 
@@ -9059,172 +9059,172 @@ build
 
 使用絕對連結
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--source`, `-s`
 
-源目錄。 預設為當前項目根。
+來源目錄。 預設為目前的專案根目錄。
 
 - 需要值
 
 ### `--destination`, `-d`
 
-每個應用的Web根目錄將連結到的目標。 預設值：_ww
+每個應用程式的網頁根目錄將與其符號連結的目的地。 預設：_www
 
 - 需要值
 
 ### `--copy`, `-c`
 
-複製到生成目錄，而不是從源連結
+複製到組建目錄，而非從來源進行符號連結
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--clone`
 
-使用Git將當前HEAD克隆到生成目錄
+使用Git將目前的HEAD複製至組建目錄
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--run-deploy-hooks`
 
-運行deploy和/或post_deploy掛接
+執行部署和/或post_deploy鉤點
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-clean`
 
-不刪除舊版本
+不要移除舊組建
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-archive`
 
-不建立或使用生成存檔
+請勿建立或使用組建封存
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-backup`
 
-不備份上一版本
+不要備份先前的組建
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-cache`
 
-禁用快取
+停用快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-build-hooks`
 
-不運行生成後掛接
+請勿執行建置後鉤點
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-deps`
 
-不在本地安裝生成依賴項
+請勿在本機安裝組建相依性
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--working-copy`
 
-德拉什：使用git克隆每個Drupal模組的儲存庫，而不是簡單地下載版本
+Drush：使用Git來複製每個Drupal模組的存放庫，而不只是下載版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--concurrency`
 
-德拉什：設定將同時處理的併發項目數
+Drush：設定將同時處理的並行專案數目
 
-- 預設值： `4`
+- 預設： `4`
 - 需要值
 
 ### `--lock`
 
-德拉什：建立或更新鎖定檔案（僅適用於Drash版本7+）
+Drush：建立或更新鎖定檔案（僅適用於Drush版本7+）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `local:clean`
 
-刪除舊項目生成
+移除舊的專案組建
 
 ```bash
 magento-cloud clean [--keep KEEP] [--max-age MAX-AGE] [--include-active]
@@ -9237,91 +9237,91 @@ clean
 
 ### `--keep`
 
-要保留的最大生成數
+要保留的組建數上限
 
-- 預設值： `5`
+- 預設： `5`
 - 需要值
 
 ### `--max-age`
 
-生成的最大時間（以秒為單位）。 如果未設定，則忽略。
+組建的最長存留期（以秒為單位）。 若未設定，則忽略。
 
 - 需要值
 
 ### `--include-active`
 
-也刪除活動生成
+也刪除使用中的組建
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `local:dir`
 
-查找本地項目根
+尋找本機專案根目錄
 
 ```bash
 magento-cloud dir [<subdir>]
@@ -9335,76 +9335,76 @@ dir
 
 ### `subdir`
 
-要查找的子目錄（「local」、「web」或「shared」）
+要尋找的子目錄（&#39;local&#39;、&#39;web&#39;或&#39;shared&#39;）
 
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `metrics:disk-usage`
 
-顯示服務上的磁碟使用情況
+顯示服務的磁碟使用量
 
 ```bash
 magento-cloud disk [-s|--service SERVICE] [--type TYPE] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-B|--bytes] [-1|--latest] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -9423,19 +9423,19 @@ disk
 
 ### `--type`
 
-服務類型（如果未提供服務名），如mysql、pgsql、mongodb等。 類型版本不是必需的。
+服務型別（如果未提供服務名稱），例如mysql、pgsql、mongodb等。 不需要型別版本。
 
 - 需要值
 
 ### `--range`, `-r`
 
-時間範圍。 將在此持續時間內載入度量，直到結束時間（ — 到）。 可以指定單位：小時(h)、分鐘(m)或秒(s)。 最小 &lt;comment>5米&lt;/comment>，最大值 &lt;comment>8小時&lt;/comment> 或更多（取決於項目），預設 &lt;comment>10米&lt;/comment>。
+時間範圍。 此期間的量度將載入到結束時間(—to)。 您可以指定單位：小時(h)、分鐘(m)或秒(s)。 最小值 &lt;comment>5分鐘&lt;/comment>，最大值 &lt;comment>8h&lt;/comment> 或多於（視專案而定），預設 &lt;comment>10分鐘&lt;/comment>.
 
 - 需要值
 
 ### `--interval`, `-i`
 
-時間間隔。 預設為範圍的劃分。 可以指定單位：小時(h)、分鐘(m)或秒(s)。 最小 &lt;comment>1米&lt;/comment>，最大值 &lt;comment>1小時&lt;/comment>。
+時間間隔。 預設為範圍的除法。 您可以指定單位：小時(h)、分鐘(m)或秒(s)。 最小值 &lt;comment>1分鐘&lt;/comment>，最大值 &lt;comment>1h&lt;/comment>.
 
 - 需要值
 
@@ -9449,25 +9449,25 @@ disk
 
 以位元組為單位顯示大小
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--latest`, `-1`
 
-僅顯示最新的單個資料點
+僅顯示最新的單一資料點
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -9479,99 +9479,99 @@ disk
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：timestamp*, used*, limit*,%*, ipercent*, imit, interval, iused（* =預設列）。 字元「+」可用作預設列的佔位符。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用的欄：timestamp*、used*、limit*、%*、ipercent*、limit、interval、iused （* =預設欄）。 字元「+」可作為預設欄的預留位置。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `mount:download`
 
-使用rsync從裝載下載檔案
+使用rsync從掛載下載檔案
 
 ```bash
 magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
@@ -9579,67 +9579,67 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 
 ### `--all`, `-a`
 
-從所有裝載下載
+從所有掛載下載
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--mount`, `-m`
 
-裝載（作為應用程式相對路徑）
+掛載（作為應用程式相對路徑）
 
 - 需要值
 
 ### `--target`
 
-要下載檔案的目錄。 如果使用 — all ，則裝載路徑將被追加
+檔案將下載到的目錄。 如果 — all已使用，則會附加掛載路徑
 
 - 需要值
 
 ### `--source-path`
 
-使用裝載的源路徑（而不是裝載路徑）作為目標的子目錄，當使用 — all時
+使用 — all時，請使用掛載的來源路徑（而非掛載路徑）作為目標的子目錄
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--delete`
 
-是否刪除目標目錄中的無關檔案
+是否要刪除目標目錄中的無關檔案
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--exclude`
 
 要從下載中排除的檔案（模式）
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--include`
 
-要包括在下載中的檔案（模式）
+要包含在下載中的檔案（模式）
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--refresh`
 
-是否刷新快取
+是否要重新整理快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -9651,95 +9651,95 @@ magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--worker`
 
-工作人員名稱
+工作者姓名
 
 - 需要值
 
 ### `--instance`, `-I`
 
-實例ID
+執行個體ID
 
 - 需要值
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `mount:list`
 
-獲取裝載清單
+取得掛載清單
 
 ```bash
 magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
@@ -9752,48 +9752,48 @@ mounts
 
 ### `--paths`
 
-僅輸出裝載路徑（每行一條）
+僅輸出掛載路徑（每行一個）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--refresh`
 
-是否刷新快取
+是否要重新整理快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：定義，路徑。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用的欄：定義、路徑。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -9805,89 +9805,89 @@ mounts
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--worker`
 
-工作人員名稱
+工作者姓名
 
 - 需要值
 
 ### `--instance`, `-I`
 
-實例ID
+執行個體ID
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `mount:size`
 
-檢查裝載的磁碟使用情況
+檢查掛載的磁碟使用量
 
 ```bash
 magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
@@ -9897,52 +9897,52 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--column
 
 以位元組為單位顯示大小
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--refresh`
 
-刷新快取
+重新整理快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：availe、max、mounts、percent_used、sizes、used。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用欄：可用、最大、掛載、已使用百分比、大小、已使用。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -9954,89 +9954,89 @@ magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--column
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--worker`
 
-工作人員名稱
+工作者姓名
 
 - 需要值
 
 ### `--instance`, `-I`
 
-實例ID
+執行個體ID
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `mount:upload`
 
-使用rsync將檔案上載到裝載
+使用rsync將檔案上傳到掛載
 
 ```bash
 magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
@@ -10044,53 +10044,53 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 
 ### `--source`
 
-包含要上載的檔案的目錄
+包含要上載之檔案的目錄
 
 - 需要值
 
 ### `--mount`, `-m`
 
-裝載（作為應用程式相對路徑）
+掛載（作為應用程式相對路徑）
 
 - 需要值
 
 ### `--delete`
 
-是否在裝載中刪除無關檔案
+是否要刪除掛載中的無關檔案
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--exclude`
 
-要從上載中排除的檔案（陣列）
+要從上傳排除的檔案（模式）
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--include`
 
-要包括在上載中的檔案（模式）
+要包含在上傳中的檔案（模式）
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--refresh`
 
-是否刷新快取
+是否要重新整理快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -10102,95 +10102,95 @@ magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--ex
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--worker`
 
-工作人員名稱
+工作者姓名
 
 - 需要值
 
 ### `--instance`, `-I`
 
-實例ID
+執行個體ID
 
 - 需要值
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `project:clear-build-cache`
 
-清除項目的生成快取
+清除專案的建置快取
 
 ```bash
 magento-cloud project:clear-build-cache [-p|--project PROJECT]
@@ -10198,83 +10198,83 @@ magento-cloud project:clear-build-cache [-p|--project PROJECT]
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `project:curl`
 
-對項目的API運行經過驗證的cURL請求
+在專案的API上執行已驗證的cURL請求
 
 ```bash
 magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--] [<path>]
@@ -10288,143 +10288,143 @@ API路徑
 
 ### `--request`, `-X`
 
-要使用的請求方法
+要使用的要求方法
 
 - 需要值
 
 ### `--data`, `-d`
 
-要發送的資料
+要傳送的資料
 
 - 需要值
 
 ### `--json`
 
-要發送的JSON資料
+要傳送的JSON資料
 
 - 需要值
 
 ### `--include`, `-i`
 
-在輸出中包括標題
+在輸出中包含標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--head`, `-I`
 
-僅提取標頭
+僅擷取標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--disable-compression`
 
-不使用curl — 壓縮標誌
+請勿使用curl —compressed旗標
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--enable-glob`
 
-啟用curl globbing（刪除 — globoff標誌）
+啟用curl萬用字元（移除 — globoff標幟）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--fail`, `-f`
 
-失敗，錯誤響應沒有輸出
+失敗，錯誤回應中沒有輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--header`, `-H`
 
-額外標頭
+額外的標頭
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `project:get`
 
-本地克隆項目
+在本機複製專案
 
 ```bash
 magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
@@ -10438,118 +10438,118 @@ get
 
 ### `project`
 
-項目ID
+專案ID
 
 
 ### `directory`
 
-要克隆到的目錄。 預設為項目標題
+要複製到的目錄。 預設為專案標題
 
 
 ### `--environment`, `-e`
 
-要克隆的環境ID。 預設為項目預設值或第一個可用環境
+要複製的環境ID。 預設為專案預設值，或第一個可用的環境
 
 - 需要值
 
 ### `--depth`
 
-建立淺克隆：限制歷史記錄中的提交數
+建立淺層複製：限制歷史記錄中的認可數量
 
 - 需要值
 
 ### `--build`
 
-克隆後生成項目
+複製後建置專案
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `project:info`
 
-讀取或設定項目的屬性
+讀取或設定專案的屬性
 
 ```bash
 magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
@@ -10573,132 +10573,132 @@ project:metadata
 
 ### `--refresh`
 
-是否刷新快取
+是否要重新整理快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `project:list`
 
-獲取所有活動項目的清單
+取得所有作用中專案的清單
 
 ```bash
 magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -10716,158 +10716,158 @@ pro
 
 ### `--pipe`
 
-輸出項目ID的簡單清單。 禁用分頁。
+輸出專案ID的簡單清單。 停用分頁。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--host`
 
-按區域主機名篩選（完全匹配）
+依地區主機名稱篩選（完全相符）
 
 - 需要值
 
 ### `--title`
 
-按標題篩選（不區分大小寫的搜索）
+依標題篩選（不區分大小寫搜尋）
 
 - 需要值
 
 ### `--my`
 
-僅顯示您擁有的項目
+僅顯示您擁有的專案
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--refresh`
 
-是否刷新清單
+是否要重新整理清單
 
-- 預設值： `1`
+- 預設： `1`
 - 需要值
 
 ### `--sort`
 
-要排序的屬性
+排序依據的屬性
 
-- 預設值： `title`
+- 預設： `title`
 - 需要值
 
 ### `--reverse`
 
-按反向（降序）順序排序
+以反向（遞減）順序排序
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--page`
 
-頁碼。 這可啟用分頁，儘管有配置或 — count。 如果指定了 — pipe，則忽略。
+頁碼。 無論設定或 — count為何，這都能啟用分頁。 如果指定了 — pipe，則忽略。
 
 - 需要值
 
 ### `--count`, `-c`
 
-每頁要顯示的項目數。 使用0禁用分頁。 如果指定了 — page，則忽略。
+每頁要顯示的專案數目。 使用0可停用分頁。 若指定 — page，則忽略。
 
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`
 
-要顯示的列。 可用列：id*、title*、region*、createdat、endpoint、organizationid、organizationlabel、organizationname、regionlabel、status、uiurl（* =預設列）。 字元「+」可用作預設列的佔位符。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用欄：id*、title*、region*、created_at、endpoint、organization_id、organization_label、organization_name、region_label、status、ui_url （* =預設欄）。 字元「+」可作為預設欄的預留位置。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `project:set-remote`
 
-為當前Git儲存庫設定遠程項目
+設定目前Git存放庫的遠端專案
 
 ```bash
 magento-cloud project:set-remote [<project>]
@@ -10876,76 +10876,76 @@ magento-cloud project:set-remote [<project>]
 
 ### `project`
 
-項目ID
+專案ID
 
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `project:variable:delete`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>從項目中刪除變數
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>從專案刪除變數
 
 ```bash
 magento-cloud project:variable:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
@@ -10956,101 +10956,101 @@ magento-cloud project:variable:delete [-p|--project PROJECT] [-W|--no-wait] [--w
 
 變數名稱
 
-- 必需
+- 必填
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `project:variable:get`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>查看項目的變數
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>檢視專案的變數
 
 ```bash
 magento-cloud project:variable:get [--pipe] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<name>]
@@ -11079,111 +11079,111 @@ project:variable:list
 
 ### `--pipe`
 
-僅輸出完整變數值（必須指定&quot;name&quot;）
+僅輸出完整的變數值（必須指定「name」）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `project:variable:set`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>為項目設定變數
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>為專案設定變數
 
 ```bash
 magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name> <value>
@@ -11199,128 +11199,128 @@ pvset
 
 變數名稱
 
-- 必需
+- 必填
 
 ### `value`
 
 變數值
 
-- 必需
+- 必填
 
 ### `--json`
 
 將值標籤為JSON
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-visible-build`
 
-在生成時不公開此變數
+不要在建置時間公開此變數
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-visible-runtime`
 
-在運行時不公開此變數
+請勿在執行階段公開此變數
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `repo:cat`
 
-在項目儲存庫中讀取檔案
+讀取專案存放庫中的檔案
 
 ```bash
 magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] <path>
@@ -11331,23 +11331,23 @@ magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environ
 
 檔案的路徑
 
-- 必需
+- 必填
 
 ### `--commit`, `-c`
 
-提交SHA。 這也可以接受「HEAD」和父提交的插入符號(^)或顎化符(~)尾碼。
+認可SHA。 這也可以接受父項認可的「HEAD」、脫字型大小(^)或波狀符號(~)尾碼。
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -11359,71 +11359,71 @@ magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environ
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `repo:ls`
 
-列出項目儲存庫中的檔案
+列出專案存放庫中的檔案
 
 ```bash
 magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
@@ -11439,38 +11439,38 @@ magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit
 
 僅顯示目錄
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--files`, `-f`
 
 僅顯示檔案
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--git-style`
 
-類似於&quot;git ls-tree&quot;的樣式輸出
+類似於「git ls-tree」的樣式輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--commit`, `-c`
 
-提交SHA。 這也可以接受「HEAD」和父提交的插入符號(^)或顎化符(~)尾碼。
+認可SHA。 這也可以接受父項認可的「HEAD」、脫字型大小(^)或波狀符號(~)尾碼。
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -11482,71 +11482,71 @@ magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `repo:read`
 
-讀取項目儲存庫中的目錄或檔案
+讀取專案存放庫中的目錄或檔案
 
 ```bash
 magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
@@ -11565,19 +11565,19 @@ read
 
 ### `--commit`, `-c`
 
-提交SHA。 這也可以接受「HEAD」和父提交的插入符號(^)或顎化符(~)尾碼。
+認可SHA。 這也可以接受父項認可的「HEAD」、脫字型大小(^)或波狀符號(~)尾碼。
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -11589,71 +11589,71 @@ read
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `route:get`
 
-查看有關路由的詳細資訊
+檢視路由的詳細資訊
 
 ```bash
 magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
@@ -11667,15 +11667,15 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 
 ### `--id`
 
-要選擇的路由ID
+要選取的路由ID
 
 - 需要值
 
 ### `--primary`, `-1`
 
-選擇主工藝路線
+選取主要路由
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--property`, `-P`
@@ -11686,27 +11686,27 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 
 ### `--refresh`
 
-繞過路由快取
+略過路由快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -11718,77 +11718,77 @@ magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--ref
 
 ### `--app`, `-A`
 
-[已棄用選項，不再使用]
+[已棄用的選項，不再使用]
 
 - 需要值
 
 ### `--identity-file`, `-i`
 
-[已棄用選項，不再使用]
+[已棄用的選項，不再使用]
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -11818,41 +11818,41 @@ environment:routes
 
 ### `--refresh`
 
-繞過路由快取
+略過路由快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：route*、type*、to*、url（* =預設列）。 字元「+」可用作預設列的佔位符。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用的欄： route*、type*、to*、url （* =預設欄）。 字元「+」可作為預設欄的預留位置。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -11864,71 +11864,71 @@ environment:routes
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `self:install`
 
-安裝或更新CLI配置檔案
+安裝或更新CLI組態檔
 
 ```bash
 magento-cloud self:install [--shell-type SHELL-TYPE]
@@ -11941,77 +11941,77 @@ local:install
 
 ### `--shell-type`
 
-用於自動完成的shell類型（bash或zsh）
+自動完成的殼層型別（bash或zsh）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `self:stats`
 
-查看GitHub包下載的統計資訊
+檢視GitHub套件下載的統計資料
 
 ```bash
 magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -12021,111 +12021,111 @@ magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [
 
 頁碼
 
-- 預設值： `1`
+- 預設： `1`
 - 需要值
 
 ### `--count`, `-c`
 
-每頁結果(最大值：100)
+每頁結果數（最多： 100個）
 
-- 預設值： `20`
+- 預設： `20`
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`
 
-要顯示的列。 可用列：資產、日期、下載、發佈。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用欄：資產、日期、下載、發行。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `self:update`
 
-將CLI更新為最新版本
+將CLI更新至最新版本
 
 ```bash
 magento-cloud self-update [--no-major] [--unstable] [--manifest MANIFEST] [--current-version CURRENT-VERSION] [--timeout TIMEOUT]
@@ -12143,104 +12143,104 @@ update
 
 ### `--no-major`
 
-僅在次要版本或修補程式版本之間更新
+只在次要版本或修補程式版本之間更新
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--unstable`
 
-更新到新的不穩定版本（如果可用）
+更新至不穩定的新版本（如果有的話）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--manifest`
 
-覆蓋清單檔案位置
+覆寫資訊清單檔案位置
 
 - 需要值
 
 ### `--current-version`
 
-覆蓋當前版本
+覆寫目前版本
 
 - 需要值
 
 ### `--timeout`
 
-版本檢查超時
+版本檢查的逾時
 
-- 預設值： `30`
+- 預設： `30`
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `service:list`
 
-列出項目中的服務
+列出專案中的服務
 
 ```bash
 magento-cloud services [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
@@ -12253,20 +12253,20 @@ services
 
 ### `--refresh`
 
-是否刷新快取
+是否要重新整理快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -12278,92 +12278,92 @@ services
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：磁碟、名稱、大小、類型。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用的資料行：磁碟、名稱、大小、型別。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `service:mongo:dump`
 
-從MongoDB建立資料的二進位存檔轉儲
+從MongoDB建立資料的二進位封存傾印
 
 ```bash
 magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
@@ -12376,22 +12376,22 @@ mongodump
 
 ### `--collection`, `-c`
 
-要轉儲的集合
+要傾印的集合
 
 - 需要值
 
 ### `--gzip`, `-z`
 
-使用gzip壓縮轉儲
+使用gzip壓縮傾印
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--stdout`, `-o`
 
 輸出到STDOUT而不是檔案
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--relationship`, `-r`
@@ -12402,19 +12402,19 @@ mongodump
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -12426,77 +12426,77 @@ mongodump
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `service:mongo:export`
 
-從MongoDB導出資料
+從MongoDB匯出資料
 
 ```bash
 magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
@@ -12509,28 +12509,28 @@ mongoexport
 
 ### `--collection`, `-c`
 
-要導出的集合
+要匯出的集合
 
 - 需要值
 
 ### `--jsonArray`
 
-將資料導出為單個JSON陣列
+將資料匯出為單一JSON陣列
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--type`
 
-導出類型，如&quot;csv&quot;
+匯出型別，例如「csv」
 
 - 需要值
 
 ### `--fields`, `-f`
 
-要導出的欄位
+要匯出的欄位
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--relationship`, `-r`
@@ -12541,19 +12541,19 @@ mongoexport
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -12565,77 +12565,77 @@ mongoexport
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `service:mongo:restore`
 
-將資料的二進位存檔轉儲還原到MongoDB
+將資料的二進位封存傾印還原至MongoDB
 
 ```bash
 magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
@@ -12660,19 +12660,19 @@ mongorestore
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -12684,77 +12684,77 @@ mongorestore
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `service:mongo:shell`
 
-使用MongoDB shell
+使用MongoDB殼層
 
 ```bash
 magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
@@ -12767,7 +12767,7 @@ mongo
 
 ### `--eval`
 
-將JavaScript片段傳遞到shell
+將JavaScript片段傳遞至shell
 
 - 需要值
 
@@ -12779,19 +12779,19 @@ mongo
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -12803,77 +12803,77 @@ mongo
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `service:redis-cli`
 
-訪問Redis CLI
+存取Redis CLI
 
 ```bash
 magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
@@ -12887,7 +12887,7 @@ redis
 
 ### `args`
 
-要添加到Redis命令的參數
+要新增至Redis命令的引數
 
 
 ### `--relationship`, `-r`
@@ -12898,19 +12898,19 @@ redis
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -12922,77 +12922,77 @@ redis
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `session:switch`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ β ]&lt;/>在會話之間切換
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ BETA ]&lt;/>在工作階段之間切換
 
 ```bash
 magento-cloud session:switch [<id>]
@@ -13001,76 +13001,76 @@ magento-cloud session:switch [<id>]
 
 ### `id`
 
-新會話ID
+新工作階段ID
 
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `snapshot:create`
 
-建立環境快照
+製作環境的快照
 
 ```bash
 magento-cloud backup [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
@@ -13099,20 +13099,20 @@ environment:backup
 
 ### `--live`
 
-即時備份：不要阻止環境。 如果設定，則會使環境處於運行狀態，並在備份期間開啟連接。 這樣可減少停機時間，並有可能以不一致的狀態備份資料。
+即時備份：不要停止環境。 如果設定，這會讓環境在執行中，並在備份期間開啟連線。 這能減少停機時間，並冒著備份處於不一致狀態的資料的風險。
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -13124,86 +13124,86 @@ environment:backup
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--unsafe`
 
-棄用選項：使用 — 實際
+已棄用的選項：改用 — live
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -13244,41 +13244,41 @@ backup:list
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--date-fmt`
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -13290,71 +13290,71 @@ backup:list
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `snapshot:restore`
 
-恢復環境快照
+還原環境快照
 
 ```bash
 magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
@@ -13373,30 +13373,30 @@ backup:restore
 
 ### `snapshot`
 
-快照的名稱。 預設至最近一次
+快照的名稱。 預設為最近一個
 
 
 ### `--target`
 
-要恢復的環境。 預設為快照的當前環境
+要還原到的環境。 預設為快照的目前環境
 
 - 需要值
 
 ### `--branch-from`
 
-如果 — target尚不存在，則指定新環境的父環境
+如果 — target尚不存在，這會指定新環境的父系
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -13408,85 +13408,85 @@ backup:restore
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `source-operation:run`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ β ]&lt;/>運行源操作
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ BETA ]&lt;/>執行來源作業
 
 ```bash
 magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
@@ -13495,26 +13495,26 @@ magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] 
 
 ### `operation`
 
-操作名稱
+作業名稱
 
-- 必需
+- 必填
 
 ### `--variable`
 
-在操作期間設定的變數，格式為 &lt;info>類型：名稱=值&lt;/info>
+作業期間要設定的變數，格式為 &lt;info>type：name=value&lt;/info>
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -13526,85 +13526,85 @@ magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] 
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `ssh-cert:info`
 
-顯示有關當前SSH證書的資訊
+顯示有關目前SSH憑證的資訊
 
 ```bash
 magento-cloud ssh-cert:info [--no-refresh] [-P|--property PROPERTY] [--date-fmt DATE-FMT]
@@ -13612,14 +13612,14 @@ magento-cloud ssh-cert:info [--no-refresh] [-P|--property PROPERTY] [--date-fmt 
 
 ### `--no-refresh`
 
-如果證書無效，則不刷新它
+如果憑證無效，請勿重新整理憑證
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--property`, `-P`
 
-要顯示的證書屬性
+要顯示的憑證屬性
 
 - 需要值
 
@@ -13627,76 +13627,76 @@ magento-cloud ssh-cert:info [--no-refresh] [-P|--property PROPERTY] [--date-fmt 
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `ssh-cert:load`
 
-生成SSH證書
+產生SSH憑證
 
 ```bash
 magento-cloud ssh-cert:load [--refresh-only] [--new] [--new-key]
@@ -13704,92 +13704,92 @@ magento-cloud ssh-cert:load [--refresh-only] [--new] [--new-key]
 
 ### `--refresh-only`
 
-如有必要，僅刷新證書（不寫入SSH配置）
+如有必要，請只重新整理憑證（不寫入SSH設定）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--new`
 
-強制刷新證書
+強制重新整理憑證
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--new-key`
 
-[已棄用] 使用 — 改為新建
+[已棄用] 使用 — 改為新增
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `ssh-key:add`
 
-添加新SSH密鑰
+新增新的SSH金鑰
 
 ```bash
 magento-cloud ssh-key:add [--name NAME] [--] [<path>]
@@ -13798,82 +13798,82 @@ magento-cloud ssh-key:add [--name NAME] [--] [<path>]
 
 ### `path`
 
-現有SSH公鑰的路徑
+現有SSH公開金鑰的路徑
 
 
 ### `--name`
 
-用於標識密鑰的名稱
+用於識別金鑰的名稱
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `ssh-key:delete`
 
-刪除SSH密鑰
+刪除SSH金鑰
 
 ```bash
 magento-cloud ssh-key:delete [<id>]
@@ -13882,76 +13882,76 @@ magento-cloud ssh-key:delete [<id>]
 
 ### `id`
 
-要刪除的SSH密鑰的ID
+要刪除的SSH金鑰ID
 
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `ssh-key:list`
 
-獲取帳戶中的SSH密鑰清單
+取得您帳戶中的SSH金鑰清單
 
 ```bash
 magento-cloud ssh-keys [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
@@ -13964,86 +13964,86 @@ ssh-keys
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：id*、title*、path*、指紋（* =預設列）。 字元「+」可用作預設列的佔位符。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用的欄： id*、title*、path*、指紋（* =預設欄）。 字元「+」可作為預設欄的預留位置。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -14076,109 +14076,109 @@ magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FOR
 
 日期格式（作為PHP日期格式字串）
 
-- 預設值： `c`
+- 預設： `c`
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `tunnel:close`
 
-關閉SSH隧道
+關閉SSH通道
 
 ```bash
 magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
@@ -14186,20 +14186,20 @@ magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [-e|--environment E
 
 ### `--all`, `-a`
 
-關閉所有隧道
+關閉所有通道
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -14211,77 +14211,77 @@ magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [-e|--environment E
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `tunnel:info`
 
-查看SSH隧道的關係資訊
+檢視SSH通道的關係資訊
 
 ```bash
 magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
@@ -14289,26 +14289,26 @@ magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project P
 
 ### `--property`, `-P`
 
-要查看的關係屬性
+要檢視的關係屬性
 
 - 需要值
 
 ### `--encode`, `-c`
 
-輸出為base64編碼的JSON
+以base64編碼JSON輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -14320,98 +14320,98 @@ magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project P
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `tunnel:list`
 
-列出SSH隧道
+列出SSH通道
 
 ```bash
 magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
@@ -14424,20 +14424,20 @@ tunnels
 
 ### `--all`, `-a`
 
-查看所有隧道
+檢視所有通道
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -14449,98 +14449,98 @@ tunnels
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `tunnel:open`
 
-開啟SSH隧道以訪問應用的關係
+開啟應用程式關係的SSH通道
 
 ```bash
 magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
@@ -14548,20 +14548,20 @@ magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--envi
 
 ### `--gateway-ports`, `-g`
 
-允許遠程主機連接到本地轉發埠
+允許遠端主機連線到本機轉送的連線埠
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -14573,83 +14573,83 @@ magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--envi
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `tunnel:single`
 
-開啟到應用關係的單個SSH通道
+開啟應用程式關聯性的單一SSH通道
 
 ```bash
 magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
@@ -14657,26 +14657,26 @@ magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PRO
 
 ### `--port`
 
-本地埠
+本機連線埠
 
 - 需要值
 
 ### `--gateway-ports`, `-g`
 
-允許遠程主機連接到本地轉發埠
+允許遠端主機連線到本機轉送的連線埠
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -14688,7 +14688,7 @@ magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PRO
 
 ### `--app`, `-A`
 
-遠程應用程式名稱
+遠端應用程式名稱
 
 - 需要值
 
@@ -14700,77 +14700,77 @@ magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PRO
 
 ### `--identity-file`, `-i`
 
-要使用的SSH標識（私鑰）
+要使用的SSH身分識別（私密金鑰）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `user:add`
 
-向項目添加用戶
+新增使用者至專案
 
 ```bash
 magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
@@ -14779,109 +14779,109 @@ magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [-
 
 ### `email`
 
-用戶的電子郵件地址
+使用者的電子郵件地址
 
 
 ### `--role`, `-r`
 
-用戶的項目角色（「admin」或「viewer」）或環境類型角色(如「staging:contributor」或「production:viewer」)。 要從環境類型中刪除用戶，請將角色設定為「無」。 %字元可用作環境類型的通配符，例如「%:viewer」為用戶提供所有類型的「viewer」角色。 角色可以縮寫，如「生產：v」。
+使用者的專案角色（「管理員」或「檢視者」）或環境型別角色（例如「測試：參與者」或「生產：檢視者」）。 若要從環境型別中移除使用者，請將角色設定為「none」。 %字元可作為環境型別的萬用字元，例如&#39;%：viewer&#39;，為所有型別賦予使用者「viewer」角色。 角色可以縮寫，例如「production：v」。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `user:delete`
 
-從項目中刪除用戶
+從專案刪除使用者
 
 ```bash
 magento-cloud user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <email>
@@ -14890,103 +14890,103 @@ magento-cloud user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <e
 
 ### `email`
 
-用戶的電子郵件地址
+使用者的電子郵件地址
 
-- 必需
+- 必填
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `user:get`
 
-查看用戶的角色
+檢視使用者的角色
 
 ```bash
 magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
@@ -15000,31 +15000,31 @@ user:role
 
 ### `email`
 
-用戶的電子郵件地址
+使用者的電子郵件地址
 
 
 ### `--level`, `-l`
 
-角色級別（「project」或「environment」）
+角色層級（「專案」或「環境」）
 
 - 需要值
 
 ### `--pipe`
 
-將角色輸出到stdout（進行任何更改後）
+將角色輸出到stdout （進行任何變更後）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -15036,91 +15036,91 @@ user:role
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--role`, `-r`
 
-[已棄用：使用用戶：更新以更改用戶的角色]
+[已棄用：使用user：update變更使用者的角色]
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `user:list`
 
-列出項目用戶
+列出專案使用者
 
 ```bash
 magento-cloud users [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
@@ -15133,104 +15133,104 @@ users
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：電子郵件、ID、名稱、角色。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用欄：電子郵件、id、名稱、角色。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `user:update`
 
-更新項目上的用戶角色
+更新專案上的使用者角色
 
 ```bash
 magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
@@ -15239,103 +15239,103 @@ magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait]
 
 ### `email`
 
-用戶的電子郵件地址
+使用者的電子郵件地址
 
 
 ### `--role`, `-r`
 
-用戶的項目角色（「admin」或「viewer」）或環境類型角色(如「staging:contributor」或「production:viewer」)。 要從環境類型中刪除用戶，請將角色設定為「無」。 %字元可用作環境類型的通配符，例如「%:viewer」為用戶提供所有類型的「viewer」角色。 角色可以縮寫，如「生產：v」。
+使用者的專案角色（「管理員」或「檢視者」）或環境型別角色（例如「測試：參與者」或「生產：檢視者」）。 若要從環境型別中移除使用者，請將角色設定為「none」。 %字元可作為環境型別的萬用字元，例如&#39;%：viewer&#39;，為所有型別賦予使用者「viewer」角色。 角色可以縮寫，例如「production：v」。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -15355,7 +15355,7 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 
 ### `--level`, `-l`
 
-設定變數（「project」或「environment」）的級別
+設定變數的層級（「專案」或「環境」）
 
 - 需要值
 
@@ -15375,59 +15375,59 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 
 變數是否為JSON格式
 
-- 預設值： `false`
+- 預設： `false`
 - 需要值
 
 ### `--sensitive`
 
 變數是否敏感
 
-- 預設值： `false`
+- 預設： `false`
 - 需要值
 
 ### `--prefix`
 
-變數名稱的前置詞(例如&#39;none&#39;或&#39;env:&#39;)
+變數名稱的前置詞（例如「none」或「env：」）
 
-- 預設值： `none`
+- 預設： `none`
 - 需要值
 
 ### `--enabled`
 
 是否應啟用變數
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--inheritable`
 
 變數是否可由子環境繼承
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--visible-build`
 
-變數是否應在生成時可見
+變數在建置時是否應可見
 
 - 需要值
 
 ### `--visible-runtime`
 
-變數是否應在運行時可見
+變數是否應在執行階段顯示
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -15439,79 +15439,79 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -15528,23 +15528,23 @@ magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [-e|--en
 
 變數名稱
 
-- 必需
+- 必填
 
 ### `--level`, `-l`
 
-變數級（「project」、「environment」、「p」或「e」）
+變數層級（「專案」、「環境」、「p」或「e」）
 
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -15556,85 +15556,85 @@ magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [-e|--en
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `variable:disable`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>禁用已啟用的環境級變數
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>停用啟用的環境層級變數
 
 ```bash
 magento-cloud variable:disable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
@@ -15645,17 +15645,17 @@ magento-cloud variable:disable [-p|--project PROJECT] [-e|--environment ENVIRONM
 
 變數的名稱
 
-- 必需
+- 必填
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -15667,85 +15667,85 @@ magento-cloud variable:disable [-p|--project PROJECT] [-e|--environment ENVIRONM
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `variable:enable`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>啟用禁用的環境級變數
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>啟用停用的環境層級變數
 
 ```bash
 magento-cloud variable:enable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
@@ -15756,17 +15756,17 @@ magento-cloud variable:enable [-p|--project PROJECT] [-e|--environment ENVIRONME
 
 變數的名稱
 
-- 必需
+- 必填
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -15778,85 +15778,85 @@ magento-cloud variable:enable [-p|--project PROJECT] [-e|--environment ENVIRONME
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `variable:get`
 
-查看變數
+檢視變數
 
 ```bash
 magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
@@ -15875,46 +15875,46 @@ vget
 
 ### `--property`, `-P`
 
-查看單個變數屬性
+檢視單一變數屬性
 
 - 需要值
 
 ### `--level`, `-l`
 
-變數級（「project」、「environment」、「p」或「e」）
+變數層級（「專案」、「環境」、「p」或「e」）
 
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -15926,78 +15926,78 @@ vget
 
 ### `--pipe`
 
-[棄用選項] 僅輸出變數值
+[已棄用的選項] 僅輸出變數值
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `variable:list`
 
-列出變數
+清單變數
 
 ```bash
 magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
@@ -16015,40 +16015,40 @@ var
 
 ### `--level`, `-l`
 
-變數級（「project」、「environment」、「p」或「e」）
+變數層級（「專案」、「環境」、「p」或「e」）
 
 - 需要值
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：is_enabled 、級別、名稱、值。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用的欄：is_enabled、level、name、value。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -16060,71 +16060,71 @@ var
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `variable:set`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>為環境設定變數
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 已棄用 ]&lt;/>設定環境的變數
 
 ```bash
 magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
@@ -16140,37 +16140,37 @@ vset
 
 變數名稱
 
-- 必需
+- 必填
 
 ### `value`
 
 變數值
 
-- 必需
+- 必填
 
 ### `--json`
 
 將值標籤為JSON
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--disabled`
 
-將變數標籤為禁用
+將變數標示為停用
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -16182,79 +16182,79 @@ vset
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
@@ -16271,11 +16271,11 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 
 變數名稱
 
-- 必需
+- 必填
 
 ### `--level`, `-l`
 
-變數級（「project」、「environment」、「p」或「e」）
+變數層級（「專案」、「環境」、「p」或「e」）
 
 - 需要值
 
@@ -16289,52 +16289,52 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 
 變數是否為JSON格式
 
-- 預設值： `false`
+- 預設： `false`
 - 需要值
 
 ### `--sensitive`
 
 變數是否敏感
 
-- 預設值： `false`
+- 預設： `false`
 - 需要值
 
 ### `--enabled`
 
 是否應啟用變數
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--inheritable`
 
 變數是否可由子環境繼承
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--visible-build`
 
-變數是否應在生成時可見
+變數在建置時是否應可見
 
 - 需要值
 
 ### `--visible-runtime`
 
-變數是否應在運行時可見
+變數是否應在執行階段顯示
 
-- 預設值： `true`
+- 預設： `true`
 - 需要值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -16346,85 +16346,85 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 
 ### `--no-wait`, `-W`
 
-不要等待操作完成
+不要等待作業完成
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--wait`
 
-等待操作完成（預設）
+等候作業完成（預設）
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `version:list`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ 阿爾法 ]&lt;/>列出環境版本
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/>列出環境版本
 
 ```bash
 magento-cloud versions [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
@@ -16437,13 +16437,13 @@ versions
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -16455,92 +16455,92 @@ versions
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 
 ## `worker:list`
 
-獲取所有已部署工作人員的清單
+取得所有已部署背景工作程式的清單
 
 ```bash
 magento-cloud workers [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
@@ -16553,20 +16553,20 @@ workers
 
 ### `--refresh`
 
-是否刷新快取
+是否要重新整理快取
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--project`, `-p`
 
-項目ID或URL
+專案ID或URL
 
 - 需要值
 
 ### `--host`
 
-已棄用選項，不再使用
+已棄用的選項，不再使用
 
 - 需要值
 
@@ -16578,84 +16578,84 @@ workers
 
 ### `--format`
 
-輸出格式：表、csv、tsv或純
+輸出格式：table、csv、tsv或plain
 
-- 預設值： `table`
+- 預設： `table`
 - 需要值
 
 ### `--columns`, `-c`
 
-要顯示的列。 可用列：命令、名稱、類型。 如果清單是作為單個值給出(例如，&quot;a,b,c&quot;)將用逗號和/或空格分隔。
+要顯示的欄。 可用的欄：命令、名稱、型別。 如果以單一值形式提供清單（例如「a，b，c」），清單會以逗號和/或空白字元分割。
 
-- 預設值： `[]`
+- 預設： `[]`
 - 需要值
 
 ### `--no-header`
 
-不輸出表標題
+不要輸出表格標頭
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示此幫助消息
+顯示此說明訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-增加郵件的詳細程度
+增加訊息的詳細程度
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--version`, `-V`
 
 顯示此應用程式版本
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--yes`, `-y`
 
-對確認問題回答「是」；接受其他問題的預設值；禁用交互
+對確認問題回答「是」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-interaction`
 
-不要問任何互動問題；接受預設值。 等效於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+請勿詢問任何互動式問題；接受預設值。 等同於使用環境變數： &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--ansi`
 
 強制ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no-ansi`
 
-禁用ANSI輸出
+停用ANSI輸出
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--no`, `-n`
 
-對確認問題回答「否」；接受其他問題的預設值；禁用交互
+對確認問題回答「否」；接受其他問題的預設值；停用互動
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值
 
 ### `--quiet`, `-q`
 
-不輸出任何消息
+不輸出任何訊息
 
-- 預設值： `false`
+- 預設： `false`
 - 不接受值

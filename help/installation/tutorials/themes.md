@@ -1,6 +1,6 @@
 ---
-title: 卸載主題
-description: 按照以下步驟卸載Adobe Commerce或Magento Open Source主題。
+title: 解除安裝主題
+description: 請依照下列步驟解除安裝Adobe Commerce或Magento Open Source主題。
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,28 +9,28 @@ ht-degree: 0%
 
 ---
 
-# 卸載主題
+# 解除安裝主題
 
-使用此命令之前，必須知道主題的相對路徑。 主題位於的子目錄中 `<magento_root>/app/design/<area name>`。 必須指定以區域開始的主題路徑，該區域為 `frontend` （用於店面主題）或 `adminhtml` （管理主題）。
+使用此指令之前，您必須知道佈景主題的相對路徑。 主題位於的子目錄中 `<magento_root>/app/design/<area name>`. 您必須指定以區域開頭的佈景主題路徑，也就是 `frontend` （適用於店面主題）或 `adminhtml` （適用於管理主題）。
 
-例如，通向Luma主題的路徑是：Adobe Commerce和Magento Open Source `frontend/Magento/luma`。
+例如，Adobe Commerce和Magento Open Source提供的Luma主題的路徑為 `frontend/Magento/luma`.
 
-有關主題的詳細資訊，請參見 [主題結構](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/)。
+如需主題的詳細資訊，請參閱 [佈景主題結構](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
-## 卸載主題概述
+## 解除安裝主題概觀
 
-本節討論如何卸載一個或多個主題，可選地包括檔案系統中的主題代碼。 您可以先建立備份，以便以後恢復資料。
+本節討論如何解除安裝一或多個主題，選擇性地從檔案系統包含主題的程式碼。 您可以先建立備份，以便稍後還原資料。
 
-此命令將卸載 *僅* 指定的主題 `composer.json`;換句話說，作為Composer包提供的主題。 如果主題不是Composer包，則必須通過以下方式手動卸載它：
+此命令會解除安裝 *僅限* 中指定的主題 `composer.json`；換言之，提供為Composer套件的主題。 如果您的主題不是Composer套件，您必須透過以下方式手動解除安裝：
 
-* 更新 `parent` 節點資訊 `theme.xml` 的子菜單。
-* 正在從檔案系統中刪除主題代碼。
+* 更新 `parent` 中的節點資訊 `theme.xml` 以移除對主題的參照。
+* 正在從檔案系統移除主題程式碼。
 
-   [有關主題繼承的詳細資訊](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/)。
+   [有關佈景主題繼承的詳細資訊](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
-## 卸載主題
+## 解除安裝主題
 
-命令用法：
+命令使用方式：
 
 ```bash
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme path} ... {theme path}
@@ -38,47 +38,47 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 位置
 
-* `{theme path}` 是主題的相對路徑，以區域名稱開頭。 例如，隨Adobe Commerce和Magento Open Source提供的空白主題的路徑是 `frontend/Magento/blank`。
-* `--backup-code` 備份下面各段中討論的代碼庫。
-* `--clear-static-content` 已清除 [靜態視圖檔案](../../configuration/cli/static-view-file-deployment.md)，這是使靜態視圖檔案正確顯示所必需的。
+* `{theme path}` 是佈景主題的相對路徑，從區域名稱開始。 例如，Adobe Commerce和Magento Open Source提供的空白主題路徑為 `frontend/Magento/blank`.
+* `--backup-code` 備份程式碼基底，如下面的段落所述。
+* `--clear-static-content` 已產生清除 [靜態檢視檔案](../../configuration/cli/static-view-file-deployment.md)，這是正確顯示靜態檢視檔案的必要條件。
 
-該命令執行以下任務：
+指令會執行下列工作：
 
-1. 驗證指定的主題路徑是否存在；否則，命令將終止。
-1. 驗證主題是否為Composer包；否則，命令將終止。
-1. 檢查依賴項，如果存在任何未滿足的依賴項，則終止命令。
+1. 驗證指定的主題路徑是否存在；如果不存在，則命令終止。
+1. 驗證主題是否為編輯器套件；如果不是，則命令終止。
+1. 檢查相依性，如果有任何未滿足的相依性，則終止指令。
 
-   要解決此問題，您可以同時卸載所有主題，也可以先卸載取決於主題的主題。
+   若要解決此問題，您可以同時解除安裝所有主題，也可以先根據主題解除安裝。
 
-1. 驗證主題是否未被使用；如果正在使用，則命令將終止。
-1. 驗證主題是否不是虛擬主題的基礎；如果它是虛擬主題的基，則命令將終止。
-1. 將儲存置於維護模式。
-1. 如果 `--backup-code` 指定，備份代碼庫，不包括 `pub/static`。 `pub/media`, `var` 的子菜單。
+1. 驗證主題是否未被使用；如果正在使用它，則命令終止。
+1. 驗證主題不是虛擬主題的基底；如果它是虛擬主題的基底，則命令終止。
+1. 將存放區置於維護模式。
+1. 若 `--backup-code` 指定時，請備份程式碼基底，但不包括 `pub/static`， `pub/media`、和 `var` 目錄。
 
-   備份檔案名為 `var/backups/<timestamp>_filesystem.tgz`
+   備份檔案名稱為 `var/backups/<timestamp>_filesystem.tgz`
 
-   您可以隨時使用 [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) 的子菜單。
+   您可以隨時使用 [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) 命令。
 
-1. 從 `theme` 資料庫表。
-1. 使用 `composer remove`。
+1. 從移除主題 `theme` 資料庫表格。
+1. 使用以下專案從程式碼庫中移除主題 `composer remove`.
 1. 清除快取。
-1. 清除生成的類
-1. 如果 `--clear-static-content` 指定，清除 [生成的靜態視圖檔案](../../configuration/cli/static-view-file-deployment.md)。
+1. 清除產生的類別
+1. 若 `--clear-static-content` 已指定，清除 [產生的靜態檢視檔案](../../configuration/cli/static-view-file-deployment.md).
 
-例如，如果嘗試卸載另一個主題所依賴的主題，將顯示以下消息：
+例如，如果您嘗試解除安裝另一個主題所依賴的主題，則會顯示以下訊息：
 
 ```terminal
 Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following package(s) depend on it:
         ExampleCorp/sample-module-theme-depend
 ```
 
-另一種方法是同時卸載這兩個主題，如備份代碼庫：
+另一種選擇是同時解除安裝兩個主題，如備份程式碼基底：
 
 ```bash
 bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/ExampleCorp/SampleModuleThemeDepend --backup-code
 ```
 
-類似於以下顯示的消息：
+類似下列顯示的訊息：
 
 ```terminal
 Code backup is starting...
@@ -102,4 +102,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->要卸載管理主題，還必須從元件的依賴項注入配置中刪除它， `<component root directory>/etc/di.xml`。
+>若要解除安裝Admin主題，您還必須從元件的相依性插入設定中移除該主題。 `<component root directory>/etc/di.xml`.

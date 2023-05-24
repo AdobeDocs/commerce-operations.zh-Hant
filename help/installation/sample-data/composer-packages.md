@@ -1,6 +1,6 @@
 ---
-title: 下載示例資料合成器包
-description: 按照以下步驟使用Composer PHP包管理器安裝Adobe Commerce和Magento Open Source示例資料。
+title: 下載範例資料撰寫器套件
+description: 請依照下列步驟，使用Composer PHP Package Manager安裝Adobe Commerce並Magento Open Source範例資料。
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,31 +9,31 @@ ht-degree: 0%
 
 ---
 
-# 下載示例資料合成器包
+# 下載範例資料撰寫器套件
 
-本節將討論如果您通過以下任何方式獲得Adobe Commerce或Magento Open Source軟體，如何安裝示例資料：
+本節探討如何安裝範例資料(若您透過下列任一方式取得Adobe Commerce或Magento Open Source軟體)：
 
-* 已從下載壓縮存檔 `https://magento.com/tech-resources/download`。
+* 已從下載壓縮封存 `https://magento.com/tech-resources/download`.
 
-   如果從GitHub下載了存檔，則此方法不起作用，因為 `composer.json` 檔案不包含 `repo.magento.com` URL。
+   如果您從GitHub下載封存，此方法無法運作，因為 `composer.json` 檔案不包含 `repo.magento.com` URL。
 
-* 已用 `composer create-project`
+* 已使用 `composer create-project`
 
-您可以使用此方法獲取Adobe Commerce和Magento Open Source的示例資料，但必須使用相同的方法 [身份驗證密鑰](../prerequisites/authentication-keys.md) 安裝應用程式時的。
+您可以使用此方法來取得Adobe Commerce和Magento Open Source的範例資料，但必須使用相同的範例資料 [驗證金鑰](../prerequisites/authentication-keys.md) 您用來安裝應用程式的資訊。
 
 >[!NOTE]
 >
->如果遇到錯誤，例如 `Could not find package...` 或 `...no matching package found...`，確保命令中沒有任何拼寫錯誤。 如果您仍然遇到錯誤，則可能無法訪問正確的Composer儲存庫，尤其是如果您使用的是Adobe Commerce。 聯繫人 [Adobe Commerce支援](https://support.magento.com/hc/en-us) 的雙曲餘切值。
+>如果您遇到錯誤，例如 `Could not find package...` 或 `...no matching package found...`，請確定您的命令中沒有任何拼字錯誤。 如果您仍然遇到錯誤，則可能無法存取正確的Composer存放庫，尤其是當您使用Adobe Commerce時。 連絡人 [Adobe Commerce支援](https://support.magento.com/hc/en-us) 以取得協助。
 
-可以在安裝應用程式之前或之後使用Composer安裝示例資料；但是可能 [其他任務](remove-or-update.md)。
+您可以使用Composer在安裝應用程式之前或之後安裝範例資料；但是，可能會 [其他任務](remove-or-update.md).
 
-如果您是派遣開發人員，請參閱 [通過克隆儲存庫進行安裝](git-repositories.md)。
+如果您是參與開發人員，請參閱 [透過複製存放庫進行安裝](git-repositories.md).
 
 >[!WARNING]
 >
->如果應用程式已設定為，則不安裝示例資料 [生產模式](../../configuration/bootstrap/application-modes.md#production-mode)。 切換到 [開發者模式](../../configuration/bootstrap/application-modes.md#developer-mode) 。 在生產模式下安裝示例資料 [失敗](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-)。
+>如果您的應用程式設定為，請勿安裝範例資料 [生產模式](../../configuration/bootstrap/application-modes.md#production-mode). 切換至 [開發人員模式](../../configuration/bootstrap/application-modes.md#developer-mode) 首先。 在生產模式下安裝範例資料 [失敗](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-).
 
-要使用命令行安裝示例資料，請在 `<app_root>` 目錄：
+若要使用命令列安裝範例資料，請輸入以下命令作為檔案系統擁有者 `<app_root>` 目錄：
 
 ```bash
 bin/magento sampledata:deploy
@@ -41,17 +41,17 @@ bin/magento sampledata:deploy
 
 >[!WARNING]
 >
->如果要安裝示例資料 _後_ 安裝應用程式時，還必須運行以下命令以更新 `<app_root>` 目錄：
+>如果您正在安裝範例資料 _晚於_ 安裝應用程式時，您也必須執行下列命令來更新資料庫和綱要 `<app_root>` 目錄：
 
 ```bash
 bin/magento setup:upgrade
 ```
 
-您必須 [驗證](../prerequisites/authentication-keys.md) 完成操作。
+您必須 [驗證](../prerequisites/authentication-keys.md) 以完成動作。
 
 ## 驗證錯誤
 
-可能顯示以下驗證錯誤：
+可能會顯示下列驗證錯誤：
 
 ```terminal
 [Composer\Downloader\TransportException]
@@ -59,8 +59,8 @@ The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate
 ```
 
-如果顯示錯誤，請更改到應用程式安裝目錄並運行 `composer update`，提示您 [身份驗證密鑰](../prerequisites/authentication-keys.md)。
+如果顯示錯誤，請變更至應用程式安裝目錄並執行 `composer update`，會提示您輸入 [驗證金鑰](../prerequisites/authentication-keys.md).
 
-## 完成示例資料安裝
+## 完成範例資料安裝
 
 {{$include /help/_includes/sample-data-complete.md}}

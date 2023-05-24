@@ -1,6 +1,6 @@
 ---
-title: 已發佈版本
-description: 瞭解何時發佈特定版本的Adobe Commerce。
+title: 發行版本
+description: 瞭解特定版本的Adobe Commerce何時發行。
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,8 +9,8 @@ ht-degree: 0%
 
 ---
 
-# 已發佈版本
+# 發行版本
 
-本頁列出了已發佈的Adobe Commerce版本。 它包含每個次要、修補程式和安全版本的發佈日期以及支援結束日期。 請參閱 [生命週期策略](lifecycle-policy.md)。
+本頁列出Adobe Commerce的發行版本。 它包含每個次要、修補程式和安全性版本的發行日期，以及支援終止日期。 另請參閱 [生命週期原則](lifecycle-policy.md).
 
 {{$include /help/_includes/templated/release/core-releases.md}}

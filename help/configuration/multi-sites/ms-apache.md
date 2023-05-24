@@ -1,6 +1,6 @@
 ---
 title: 使用Apache設定多個網站
-description: 按照本教程，使用Apache設定多個網站。
+description: 按照本教學課程中的說明使用Apache設定多個網站。
 exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -13,52 +13,52 @@ ht-degree: 0%
 
 我們假設：
 
-如有必要，請複製現有 `index.php` 網站或商店視圖的入口點指令碼，並添加到其中：
+如有必要，請複製現有的 `index.php` 網站或商店檢視的進入點指令碼，並將其新增至下列專案：
 
-- 您正在使用開發機器（筆記型電腦、虛擬機等）
+- 您正在使用開發機器（筆記型電腦、虛擬機器器等）
 
-   在托管環境中部署多個網站可能需要執行其他任務；有關詳細資訊，請與托管提供商聯繫。
+   在託管環境中部署多個網站可能需要執行其他工作；如需詳細資訊，請洽詢您的託管提供者。
 
-   在雲基礎架構上設定Adobe Commerce需要其他任務。 完成本主題中討論的任務後，請參見 [設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 的 _雲基礎架構上的商務指南_。
+   在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的任務後，請參閱 [設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 在 _雲端基礎結構上的Commerce指南_.
 
-- 每個網站使用一個虛擬主機；虛擬主機配置檔案為 `/etc/httpd/httpd.conf`
+- 每個網站使用一個虛擬主機；虛擬主機設定檔案為 `/etc/httpd/httpd.conf`
 
-   不同作業系統上不同版本的Apache設定虛擬主機的方式不同。 咨詢 [Apache文檔](https://httpd.apache.org/docs/2.4/vhosts) 或網路管理員。
+   不同作業系統上的不同Apache版本會以不同方式設定虛擬主機。 請參閱 [Apache檔案](https://httpd.apache.org/docs/2.4/vhosts) 或網路管理員（如果您不確定如何設定虛擬主機）。
 
 - Commerce軟體安裝在 `/var/www/html/magento2`
-- 您有兩個非預設網站：
+- 您有預設以外的兩個網站：
 
-   - `french.mysite.mg` 使用網站代碼 `french` 和儲存視圖代碼 `fr`
-   - `german.mysite.mg` 使用網站代碼 `german` 和儲存視圖代碼 `de`
+   - `french.mysite.mg` 使用網站程式碼 `french` 和存放區檢視代碼 `fr`
+   - `german.mysite.mg` 使用網站程式碼 `german` 和存放區檢視代碼 `de`
 
-## 使用Apache設定多個網站的路線圖
+## 使用Apache設定多個網站的藍圖
 
-設定多個儲存由以下任務組成：
+設定多個存放區包含下列工作：
 
-1. [設定網站、商店和商店視圖](ms-admin.md) 的子菜單。
-1. 建立一個 [Apache虛擬主機](#step-2-create-apache-virtual-hosts) 按商務網站。
+1. [設定網站、商店和商店檢視](ms-admin.md) 在Admin中。
+1. 建立一個 [Apache虛擬主機](#step-2-create-apache-virtual-hosts) 每個Commerce網站。
 
-## 步驟1:在管理員中建立網站、商店和商店視圖
+## 步驟1：在「管理員」中建立網站、商店和商店檢視
 
-請參閱 [在管理員中設定多個網站、商店和商店視圖](ms-admin.md)。
+另請參閱 [在「管理員」中設定多個網站、商店和商店檢視](ms-admin.md).
 
-## 步驟2:建立Apache虛擬主機
+## 步驟2：建立Apache虛擬主機
 
-本節討論如何設定 `MAGE_RUN_TYPE` 和 `MAGE_RUN_CODE` 使用Apache伺服器變數 `SetEnvIf` 在虛擬主機中。
+本節討論如何設定下列專案的值： `MAGE_RUN_TYPE` 和 `MAGE_RUN_CODE` 使用Apache伺服器變數 `SetEnvIf` 在虛擬主機中。
 
-有關 `SetEnvIf`，請參閱：
+如需有關的詳細資訊 `SetEnvIf`，請參閱：
 
 - [Apache 2.2](https://httpd.apache.org/docs/2.2/mod/mod_setenvif.html)
 - [Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html)
 
-**建立Apache虛擬主機**:
+**建立Apache虛擬主機的方式**：
 
-1. 作為用戶 `root` 權限，在文本編輯器中開啟虛擬主機配置檔案。
+1. 作為使用者，具有 `root` 許可權，在文字編輯器中開啟虛擬主機組態檔。
 
    例如，開啟 `/etc/httpd/conf/httpd.conf`
 
-1. 找到節的開頭 `<VirtualHost *:80>`。
-1. 在任何現有虛擬主機後建立以下虛擬主機：
+1. 找到開頭為的區段 `<VirtualHost *:80>`.
+1. 在任何現有虛擬主機之後建立下列虛擬主機：
 
    ```conf
    <VirtualHost *:80>
@@ -81,25 +81,25 @@ ht-degree: 0%
    </VirtualHost>
    ```
 
-1. 將更改保存到 `httpd.conf` 並退出文本編輯器。
-1. 重新啟動Apache:
+1. 將變更儲存至 `httpd.conf` 並退出文字編輯器。
+1. 重新啟動Apache：
 
-   - CentOS: `service httpd restart`
-   - 烏班圖： `service apache2 restart`
+   - CentOS： `service httpd restart`
+   - Ubuntu： `service apache2 restart`
 
-## 驗證您的站點
+## 驗證您的網站
 
-除非您為商店的URL設定了DNS，否則必須向您的商店中的主機添加靜態路由 `hosts` 檔案：
+除非您為商店的URL設定了DNS，否則您必須將靜態路由新增到中的主機。 `hosts` 檔案：
 
-1. 找到您的作業系統 `hosts` 的子菜單。
-1. 以下格式添加靜態路由：
+1. 找到您的作業系統 `hosts` 檔案。
+1. 以下列格式新增靜態路由：
 
    ```conf
    <ip-address> french.mysite.mg
    <ip-address> german.mysite.mg
    ```
 
-1. 在瀏覽器中轉到以下URL之一：
+1. 前往瀏覽器中的下列URL之一：
 
    ```http
    http://mysite.mg/admin
@@ -109,12 +109,12 @@ ht-degree: 0%
 
 >[!INFO]
 >
->- 在托管環境中部署多個網站可能需要執行其他任務；有關詳細資訊，請與托管提供商聯繫。
->- 在雲基礎架構上設定Adobe Commerce需要執行其他任務；見 [設定多個雲網站或儲存](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 的 _雲基礎架構上的商務指南_。
+>- 在託管環境中部署多個網站可能需要執行其他工作；如需詳細資訊，請洽詢您的託管提供者。
+>- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱 [設定多個Cloud網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 在 _雲端基礎結構上的Commerce指南_.
 
 
-### 故障排除
+### 疑難排除
 
-- 如果您的法語和德語站點返回404s，但您的管理員載入，請確保您已完成 [步驟6:將儲存代碼添加到基本URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url)。
-- 如果所有URL都返回404s，請確保重新啟動了Web伺服器。
-- 如果管理員無法正常工作，請確保正確設定虛擬主機。
+- 如果您的法文和德文網站傳回404s，但您的管理員載入，請確定您已完成 [步驟6：將商店程式碼新增至基底URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- 如果所有URL都傳回404s，請確定您已重新啟動網頁伺服器。
+- 如果管理員無法正常運作，請確定您正確設定虛擬主機。

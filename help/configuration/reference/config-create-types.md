@@ -1,6 +1,6 @@
 ---
-title: 配置類型
-description: 建立或擴展配置類型。
+title: 設定型別
+description: 建立或擴充組態型別。
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,46 +9,46 @@ ht-degree: 0%
 
 ---
 
-# 配置類型
+# 設定型別
 
-## 擴展配置類型
+## 擴充組態型別
 
-要擴展現有配置類型，只需在模組中建立配置檔案。
+若要擴充現有的組態型別，您只需在模組中建立組態檔即可。
 
-例如，要添加事件觀察器，請建立 `app/code/{VendorName}/{ModuleName}/etc/events.xml` 並宣佈新的觀察員。
+例如，若要新增事件觀察者，您需建立 `app/code/{VendorName}/{ModuleName}/etc/events.xml` 並宣告新的觀察者。
 
-由於事件配置類型存在於Commerce中，因此載入器和 `events.xsd` 驗證架構已存在且正常。
+由於事件設定型別存在於Commerce中，因此載入器和 `events.xsd` 驗證結構描述已存在且功能正常。
 
-您的新 `events.xml` 自動從您的模組中收集並與其他模組合併 `events.xml` 檔案。
+您的新 `events.xml` 會自動從您的模組收集並與其他 `events.xml` 其他模組的檔案。
 
-## 建立配置類型
+## 建立設定型別
 
-要建立配置類型，必須至少添加：
+若要建立組態型別，您至少必須新增：
 
-- 裝載機
-- XSD驗證架構
-- XML配置檔案
+- 載入程式
+- XSD驗證結構
+- XML組態檔
 
-例如，要為新搜索伺服器引入一個適配器，使擴展能夠配置其實體在該伺服器中的索引方式，請建立：
+例如，若要為新搜尋伺服器引入轉接器，讓擴充功能能夠設定如何在該伺服器中索引其實體，請建立：
 
-- 裝載機
-- XSD架構檔案
-- 一個名稱正確的配置檔案。 比如說， `search.xml`。 此檔案將根據您的架構進行讀取和驗證。
-- 您的工作所需的任何其他類。
+- 載入程式
+- XSD結構描述檔案
+- 適當命名的組態檔。 例如， `search.xml`. 系統會根據您的結構描述讀取並驗證此檔案。
+- 您工作所需的任何其他類別。
 
 >[!INFO]
 >
->如果新模組具有 `search.xml` 檔案，它們在載入時與檔案合併。
+>如果新模組具有 `search.xml` 檔案載入時，它們會與您的檔案合併。
 
-### 示例
+### 使用範例
 
-要建立配置類型：
+若要建立組態型別，請執行下列動作：
 
-1. 建立XSD檔案。
-1. 建立XML檔案。
-1. 在中定義配置對象 `di.xml`。
+1. 建立您的XSD檔案。
+1. 建立您的XML檔案。
+1. 在中定義您的設定物件 `di.xml`.
 
-   Magento_銷售模組的以下示例 [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) 說明了配置對象的外觀。
+   以下範例來自Magento_Sales模組的 [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) 說明設定物件的外觀。
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
@@ -76,17 +76,17 @@ ht-degree: 0%
    </config>
    ```
 
-   - 第一種類型節點設定Reader的檔案名，與 `Converter` 和 `SchemaLocator` 類。
-   - 然後， `pdfConfigDataStorage` 虛擬類型節點將讀取器類附加到的實例 [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php)。
-   - 最後，最後一個類型節點將配置資料虛擬類型附加到 [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) 類，用於實際讀取 [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) 的子菜單。
+   - 第一個型別節點會設定Reader的檔案名稱，相關聯的 `Converter` 和 `SchemaLocator` 類別。
+   - 然後 `pdfConfigDataStorage` 虛擬型別節點會將reader類別附加至 [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
+   - 最後，最後一個型別節點會將該設定資料虛擬型別附加至 [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) 類別，用來實際讀取這些類別中的值 [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) 檔案。
 
-1. 通過擴展定義讀取器 [Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) 類並重寫以下參數：
+1. 透過延伸定義讀取器 [Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) 類別並重寫下列引數：
 
    ```php
    $_idAttributes // Array of node attribute IDs.
    ```
 
-**示例：**
+**範例：**
 
 ```php
 <?php
@@ -115,27 +115,27 @@ class Reader extends Filesystem
 
 >[!INFO]
 >
->如果您希望建立您自己的閱讀器版本，可以通過實施 `\Magento\Framework\Config\ReaderInterface`。 請參閱 [Magento分析配置讀取器](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
+>如果您偏好建立自己的讀者版本，您可以透過實作 `\Magento\Framework\Config\ReaderInterface`. 另請參閱 [Magento_Analytics設定讀取器](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
 
-定義讀取器後，使用它收集、合併、驗證配置檔案並將其轉換為內部陣清單示法。
+定義讀取器後，使用它來收集、合併、驗證組態檔，並將其轉換為內部陣列表示。
 
-## 驗證配置類型
+## 驗證設定型別
 
-每個配置檔案都根據特定於其配置類型的架構進行驗證。 示例：事件，在早期的Commerce版本中，這些事件在 `config.xml`，現在在中配置 `events.xml`。
+每個設定檔案都根據其設定型別特定的結構描述進行驗證。 範例：事件，在舊版Commerce中設定於 `config.xml`，現已設定於 `events.xml`.
 
-配置檔案可以在影響相同配置類型的多個檔案合併之前（可選）和之後都進行驗證。 除非單個檔案和合併檔案的驗證規則相同，否則您應提供兩個用於驗證配置檔案的方案：
+可在影響相同設定型別的多個檔案合併之前（選用）和之後驗證設定檔案。 除非個別和合併檔案的驗證規則相同，否則您應該提供兩個結構描述來驗證組態檔案：
 
-- 用於驗證個人的方案
-- 驗證合併檔案的架構
+- 用於驗證個人的結構描述
+- 用於驗證合併檔案的結構描述
 
-新配置檔案必須與XSD驗證架構相伴。 XML配置檔案及其XSD驗證檔案必須具有相同的名稱。
+新設定檔案必須附帶XSD驗證結構。 XML組態檔及其XSD驗證檔必須具有相同的名稱。
 
-如果必須將兩個XSD檔案用於單個XML檔案，則架構的名稱應可識別並與XML檔案關聯。
-如果你有 `events.xml` 檔案和第一個 `events.xsd` 檔案，合併後的XSD檔案 `events.xml` 可以命名檔案 `events_merged.xsd`。
-要確保通過適當的XSD檔案驗證XML檔案，必須將統一資源名稱(URN)添加到XML檔案中的XSD檔案。 例如：
+如果您必須為單一XML檔案使用兩個XSD檔案，則結構描述的名稱應該可識別，並與XML檔案相關聯。
+如果您擁有 `events.xml` 檔案和第一個 `events.xsd` 檔案，合併的XSD檔案 `events.xml` 檔案可命名 `events_merged.xsd`.
+若要確保透過適當的XSD檔案來驗證XML檔案，您必須將統一資源名稱(URN)加入XML檔案的XSD檔案中。 例如：
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager:etc/config.xsd">
 ```
 
-IDE可以在運行時和開發期間驗證配置檔案。
+您的IDE可以在執行階段和開發期間驗證您的組態檔。

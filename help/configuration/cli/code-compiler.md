@@ -1,6 +1,6 @@
 ---
-title: 代碼編譯器
-description: 瞭解如何從命令行運行代碼編譯器。
+title: 程式碼編譯器
+description: 瞭解如何從命令列執行程式碼編譯器。
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,22 +9,22 @@ ht-degree: 0%
 
 ---
 
-# 代碼編譯器
+# 程式碼編譯器
 
 {{file-system-owner}}
 
-代碼編譯包括以下內容（無特定順序）:
+程式碼編譯包含下列內容（並無特定順序）：
 
-- 應用程式碼生成（工廠、代理）
-- 區域配置聚合（每區域優化的依賴關係注入配置）
-- 攔截器生成（攔截器的優化代碼生成）
-- 攔截快取生成
-- 儲存庫代碼生成（為API生成的代碼）
-- 服務資料屬性生成（為資料對象生成的擴展類）
+- 應用程式程式碼產生（工廠、代理）
+- 區域設定彙總（每個區域最佳化的相依性插入設定）
+- 攔截器產生（最佳化的攔截器程式碼產生）
+- 攔截快取產生
+- 存放庫程式碼產生（為API產生的程式碼）
+- 服務資料屬性產生（為資料物件產生的擴充功能類別）
 
-可以在 [\Magento\Setup\Module\Di\App\Task\Operation][operation] 命名空間。
+您可以在下列位置找到程式碼編譯類別： [\Magento\Setup\Module\Di\App\Task\Operation][operation] 名稱空間。
 
-要運行單租戶編譯器：
+若要執行單一租使用者編譯器：
 
 ```bash
 bin/magento setup:di:compile
@@ -34,9 +34,9 @@ bin/magento setup:di:compile
 Generated code and dependency injection configuration successfully.
 ```
 
-要在安裝Commerce應用程式之前編譯代碼，請執行以下操作：
+若要在安裝Commerce應用程式之前編譯程式碼：
 
-在某些情況下，在安裝Commerce應用程式之前，可能需要編譯代碼。
+在某些情況下，您可能需要在安裝Commerce應用程式之前編譯程式碼。
 
 1. 啟用模組。
 
@@ -44,11 +44,11 @@ Generated code and dependency injection configuration successfully.
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   使用 `[-c|--clear-static-content]` 選項以清除靜態內容。 如果以前已啟用或禁用了模組，並且必須清除之前為這些模組生成的靜態內容，則必須執行此操作。
+   使用 `[-c|--clear-static-content]` 清除靜態內容的選項。 如果您先前已啟用或停用模組，且必須清除先前為其產生的靜態內容，則必須執行此動作。
 
-   請參閱 [啟用模組](../../installation/tutorials/manage-modules.md)。
+   另請參閱 [啟用模組](../../installation/tutorials/manage-modules.md).
 
-1. 編譯代碼。
+1. 編譯程式碼。
 
    ```bash
    bin/magento setup:di:compile
@@ -58,7 +58,7 @@ Generated code and dependency injection configuration successfully.
    Generated code and dependency injection configuration successfully.
    ```
 
-要編譯沒有資料庫的代碼，請參見 [部署靜態視圖檔案而不安裝Magento](../cli/static-view-file-deployment.md)。
+若要在不使用資料庫的情況下編譯程式碼，請參閱 [部署靜態檢視檔案而不安裝Magento](../cli/static-view-file-deployment.md).
 
 <!-- link definitions -->
 

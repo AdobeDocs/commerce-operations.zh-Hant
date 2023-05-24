@@ -1,6 +1,6 @@
 ---
-title: 會話儲存位置
-description: 瞭解會話檔案的儲存位置。
+title: 工作階段儲存位置
+description: 瞭解工作階段檔案儲存的位置。
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
@@ -10,21 +10,21 @@ ht-degree: 0%
 
 ---
 
-# 會話儲存位置
+# 工作階段儲存位置
 
-本主題討論如何查找會話檔案的儲存位置。 系統使用以下邏輯儲存會話檔案：
+本主題說明如何找出工作階段檔案的儲存位置。 系統會使用以下邏輯來儲存工作階段檔案：
 
-- 如果配置了memcached ，則會話會儲存在RAM中；見 [將memcached用於會話儲存](memcached.md)。
-- 如果配置了Redis，則會話會儲存在Redis伺服器上；見 [將Redis用於會話儲存](../cache/redis-session.md)。
-- 如果您使用預設的基於檔案的會話儲存，我們將會話按顯示的順序儲存在以下位置：
+- 如果您已設定memcached，工作階段會儲存在RAM中；請參閱 [將記憶體快取用於工作階段儲存](memcached.md).
+- 如果您已設定Redis，工作階段會儲存在Redis伺服器上；請參閱 [將Redis用於工作階段儲存](../cache/redis-session.md).
+- 如果您使用預設的檔案式工作階段儲存，我們會依照顯示的順序將工作階段儲存在下列位置：
 
    1. 在中定義的目錄 [`env.php`](#example-in-envphp)
    1. 在中定義的目錄 [`php.ini`](#example-in-phpini)
    1. `<magento_root>/var/session` 目錄
 
-## 示例 `env.php`
+## 中的範例 `env.php`
 
-示例代碼段 `<magento_root>/app/etc/env.php` 如下：
+中的範常式式碼片段 `<magento_root>/app/etc/env.php` 如下：
 
 ```php
  'session' => [
@@ -33,25 +33,25 @@ ht-degree: 0%
  ],
 ```
 
-上面的示例將會話檔案儲存在 `/var/www/session`
+上述範例會將工作階段檔案儲存在 `/var/www/session`
 
-## 示例 `php.ini`
+## 中的範例 `php.ini`
 
-作為用戶 `root` 權限，開啟 `php.ini` 檔案並搜索 `session.save_path`。 這標識會話的儲存位置。
+作為使用者，具有 `root` 許可權，開啟您的 `php.ini` 檔案並搜尋 `session.save_path`. 這會識別工作階段的儲存位置。
 
-## 管理會話大小
+## 管理工作階段大小
 
-查看 [會話管理](https://docs.magento.com/user-guide/stores/security-session-management.html) 的 _使用手冊_。
+請參閱 [工作階段管理](https://docs.magento.com/user-guide/stores/security-session-management.html) 在 _使用手冊_.
 
-## 垃圾回收配置
+## 垃圾收集設定
 
-要清除過期的會話，系統將調用 `gc` (_垃圾回收_)處理程式根據由 `gc_probability / gc_divisor` 指令。 例如，如果將這些指令設定為 `1/100` 分別表示 `1%` (_每100個請求一次調用垃圾回收的概率_)。
+若要清除過期的工作階段，系統會呼叫 `gc` (_垃圾收集_)處理常式，根據以下計算出的機率隨機進行： `gc_probability / gc_divisor` 指令。 例如，如果您將這些指示詞設為 `1/100` 分別表示下列兩種情況的機率： `1%` (_每100個請求一個垃圾收集呼叫的機率_)。
 
-垃圾收集處理程式使用 `gc_maxlifetime` 指令 — 會話被視為的秒數 _垃圾_ 可能會被清除。
+垃圾收集處理常式會使用 `gc_maxlifetime` directive — 工作階段被視為的秒數 _垃圾桶_ 並可能清除。
 
-在某些作業系統(Debian/Ubuntu)上，預設 `session.gc_probability` 指令 `0`，這將阻止垃圾收集處理程式運行。
+在某些作業系統上(Debian/Ubuntu)，預設值為 `session.gc_probability` 指示詞是 `0`，可防止垃圾收集處理常式執行。
 
-可以覆蓋 `session.gc_` 指令 `php.ini` 檔案 `<magento_root>/app/etc/env.php` 檔案：
+您可以覆寫 `session.gc_` 指令來自 `php.ini` 中的檔案 `<magento_root>/app/etc/env.php` 檔案：
 
 ```php
  'session' => [
@@ -62,4 +62,4 @@ ht-degree: 0%
  ],
 ```
 
-配置因通信量和商家網站的特定需求而異。
+此設定會依流量和商家網站的特定需求而有所不同。

@@ -1,6 +1,6 @@
 ---
-title: 恩金
-description: 按照以下步驟安裝和配置Nginx Web伺服器，以在本地安裝Adobe Commerce和Magento Open Source。
+title: Nginx
+description: 請依照下列步驟，安裝並設定Nginx網頁伺服器，以在本機安裝Adobe Commerce和Magento Open Source。
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,15 +9,15 @@ ht-degree: 0%
 
 ---
 
-# 恩金
+# Nginx
 
-Adobe Commerce支援nginx 1.18(或 [最新主線版本](https://nginx.org/en/linux_packages.html#mainline))。 您還必須安裝 `php-fpm`。
+Adobe Commerce支援nginx 1.18 (或 [最新主線版本](https://nginx.org/en/linux_packages.html#mainline))。 您也必須安裝最新版的 `php-fpm`.
 
-安裝說明因您使用的作業系統而異。 請參閱 [菲律賓比索](../php-settings.md) 的雙曲餘切值。
+安裝指示會因您使用的作業系統而異。 另請參閱 [PHP](../php-settings.md) 以取得相關資訊。
 
-## 烏邦圖
+## Ubuntu
 
-以下部分介紹如何使用nginx、PHP和MySQL在Ubuntu上安裝Adobe Commerce和Magento Open Source2.x。
+以下章節說明如何使用nginx、PHP和MySQL在Ubuntu上安裝Adobe Commerce和Magento Open Source2.x。
 
 ### 安裝nginx
 
@@ -25,17 +25,17 @@ Adobe Commerce支援nginx 1.18(或 [最新主線版本](https://nginx.org/en/lin
 sudo apt -y install nginx
 ```
 
-您也可以 [從源生成nginx](https://www.armanism.com/blog/install-nginx-on-ubuntu)
+您也可以 [從來源建置nginx](https://www.armanism.com/blog/install-nginx-on-ubuntu)
 
-完成以下部分並安裝應用程式後，我們將使用示例配置檔案 [配置nginx](#configure-nginx)。
+完成下列各節並安裝應用程式後，我們將使用範例設定檔案來 [設定nginx](#configure-nginx).
 
-### 安裝和配置php-fpm
+### 安裝和設定php-fpm
 
-Adobe Commerce和Magento Open Source需要 [PHP擴展](../php-settings.md) 才能正常工作。 除了這些擴展外，還必須安裝和配置 `php-fpm` 的子菜單。
+Adobe Commerce和Magento Open Source需要數個 [PHP擴充功能](../php-settings.md) 以正常運作。 除了這些擴充功能外，您還必須安裝並設定 `php-fpm` 擴充功能（若您使用nginx）。
 
-安裝和配置 `php-fpm`:
+安裝及設定 `php-fpm`：
 
-1. 安裝 `php-fpm` 和 `php-cli`:
+1. 安裝 `php-fpm` 和 `php-cli`：
 
    ```bash
    apt-get -y install php7.2-fpm php7.2-cli
@@ -43,7 +43,7 @@ Adobe Commerce和Magento Open Source需要 [PHP擴展](../php-settings.md) 才�
 
    >[!NOTE]
    >
-   >此命令安裝PHP 7.2.X的最新版本。請參閱 [系統要求](../../system-requirements.md) 支援的PHP版本。
+   >此命令會安裝最新可用版本的PHP 7.2.X。另請參閱 [系統需求](../../system-requirements.md) 支援的PHP版本。
 
 1. 開啟 `php.ini` 編輯器中的檔案：
 
@@ -55,7 +55,7 @@ Adobe Commerce和Magento Open Source需要 [PHP擴展](../php-settings.md) 才�
    vim /etc/php/7.2/cli/php.ini
    ```
 
-1. 編輯兩個檔案以匹配以下行：
+1. 編輯這兩個檔案以符合以下行：
 
    ```conf
    memory_limit = 2G
@@ -65,9 +65,9 @@ Adobe Commerce和Magento Open Source需要 [PHP擴展](../php-settings.md) 才�
 
    >[!NOTE]
    >
-   >我們建議在測試Adobe Commerce和Magento Open Source時將記憶體限制設定為2 G。 請參閱 [所需的PHP設定](../php-settings.md) 的子菜單。
+   >測試Adobe Commerce和Magento Open Source時，建議將記憶體限制設為2 G。 請參閱 [必要的PHP設定](../php-settings.md) 以取得詳細資訊。
 
-1. 保存並退出編輯器。
+1. 儲存並退出編輯器。
 
 1. 重新啟動 `php-fpm` 服務：
 
@@ -75,35 +75,35 @@ Adobe Commerce和Magento Open Source需要 [PHP擴展](../php-settings.md) 才�
    systemctl restart php7.2-fpm
    ```
 
-### 安裝和配置MySQL
+### 安裝及設定MySQL
 
-請參閱 [MySQL](../database/mysql.md) 的子菜單。
+請參閱 [MySQL](../database/mysql.md) 以取得詳細資訊。
 
-### 安裝和配置
+### 安裝及設定
 
-下載Adobe Commerce和Magento Open Source有多種方法，包括：
+有數種方式可下載Adobe Commerce和Magento Open Source，包括：
 
-* [獲得作曲家的暗喻](../../composer.md)
+* [取得Composer中繼資料](../../composer.md)
 
-* [克隆Git儲存庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [複製Git存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
-此示例使用命令行顯示基於Composer的安裝。
+此範例顯示使用命令列的Composer安裝。
 
-1. 作為 [檔案系統所有者](../file-system/overview.md)，登錄到應用程式伺服器。
+1. 作為 [檔案系統擁有者](../file-system/overview.md)，登入您的應用程式伺服器。
 
-1. 更改為Web伺服器docroot目錄或您已配置為虛擬主機docroot的目錄。 在本示例中，我們使用Ubuntu預設值 `/var/www/html`。
+1. 變更至Web伺服器docroot目錄，或您設定為虛擬主機docroot的目錄。 在此範例中，我們使用Ubuntu預設值 `/var/www/html`.
 
    ```bash
    cd /var/www/html
    ```
 
-1. 全局安裝Composer。 安裝Adobe Commerce或Magento Open Source之前，需要更新依賴關係：
+1. 全域安裝Composer。 安裝Adobe Commerce或Magento Open Source之前，需要撰寫器更新相依性：
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. 使用Magento Open Source或Adobe Commerce元包建立Composer項目。
+1. 使用Magento Open Source或Adobe Commerce中繼資料建立Composer專案。
 
    **Magento Open Source**
 
@@ -117,9 +117,9 @@ Adobe Commerce和Magento Open Source需要 [PHP擴展](../php-settings.md) 才�
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   在出現提示時，輸入 [身份驗證密鑰](../authentication-keys.md)。 您 _公鑰_ 是您的用戶名；你 _私鑰_ 是您的密碼。
+   出現提示時，輸入您的 [驗證金鑰](../authentication-keys.md). 您的 _公開金鑰_ 是您的使用者名稱；您的 _私密金鑰_ 是您的密碼。
 
-1. 在安裝應用程式之前，設定Web伺服器組的讀寫權限。 這是必需的，以便命令行可以將檔案寫入檔案系統。
+1. 在安裝應用程式之前，設定網頁伺服器群組的讀寫許可權。 這是必要的，以便命令列可以將檔案寫入檔案系統。
 
    ```bash
    cd /var/www/html/<magento install directory>
@@ -141,7 +141,7 @@ Adobe Commerce和Magento Open Source需要 [PHP擴展](../php-settings.md) 才�
    chmod u+x bin/magento
    ```
 
-1. 從 [命令行](../../advanced.md)。 此示例假定安裝目錄的名稱 `magento2ee`，也請參見Wiki頁。 `db-host` 在同一台電腦上(`localhost`)，而且 `db-name`。 `db-user`, `db-password` 全部 `magento`:
+1. 從安裝 [命令列](../../advanced.md). 此範例假設安裝目錄名為 `magento2ee`，則 `db-host` 在同一部電腦上(`localhost`)，且 `db-name`， `db-user`、和 `db-password` 全部 `magento`：
 
    ```bash
    bin/magento setup:install \
@@ -165,7 +165,7 @@ Adobe Commerce和Magento Open Source需要 [PHP擴展](../php-settings.md) 才�
    --elasticsearch-port=9200
    ```
 
-1. 切換到開發模式：
+1. 切換到開發人員模式：
 
    ```bash
    cd /var/www/html/magento2/bin
@@ -175,19 +175,19 @@ Adobe Commerce和Magento Open Source需要 [PHP擴展](../php-settings.md) 才�
    ./magento deploy:mode:set developer
    ```
 
-### 配置nginx
+### 設定nginx
 
-建議使用 `nginx.conf.sample` 安裝目錄和nginx虛擬主機中提供的配置檔案。
+我們建議使用 `nginx.conf.sample` 安裝目錄和nginx虛擬主機中提供的組態檔。
 
-這些說明假定您正在為nginx虛擬主機使用Ubuntu預設位置(例如， `/etc/nginx/sites-available`)和Ubuntu預設docroot(例如， `/var/www/html`)但是，您可以更改這些位置以適合您的環境。
+這些指示假設您使用的是nginx虛擬主機的Ubuntu預設位置(例如 `/etc/nginx/sites-available`)和Ubuntu預設docroot (例如， `/var/www/html`)，但您可以變更這些位置以符合您的環境。
 
-1. 為您的站點建立新虛擬主機：
+1. 為您的網站建立新的虛擬主機：
 
    ```bash
    vim /etc/nginx/sites-available/magento
    ```
 
-1. 添加以下配置：
+1. 新增下列設定：
 
    ```conf
    upstream fastcgi_backend {
@@ -205,25 +205,25 @@ Adobe Commerce和Magento Open Source需要 [PHP擴展](../php-settings.md) 才�
 
    >[!NOTE]
    >
-   >的 `include` 指令必須指向安裝目錄中的示例nginx配置檔案。
+   >此 `include` 指示詞必須指向安裝目錄中的範例nginx組態檔。
 
-1. 替換 `www.magento-dev.com` 域名。 這必須與安裝Adobe Commerce或Magento Open Source時指定的基URL匹配。
+1. Replace `www.magento-dev.com` 使用您的網域名稱。 這必須符合您在安裝Adobe Commerce或Magento Open Source時指定的基底URL。
 
-1. 保存並退出編輯器。
+1. 儲存並退出編輯器。
 
-1. 通過在 `/etc/nginx/sites-enabled` 目錄：
+1. 在中建立新建立的虛擬主機的symlink，以啟動該虛擬主機。 `/etc/nginx/sites-enabled` 目錄：
 
    ```bash
    ln -s /etc/nginx/sites-available/magento /etc/nginx/sites-enabled
    ```
 
-1. 驗證語法是否正確：
+1. 請確認語法正確：
 
    ```bash
    nginx -t
    ```
 
-1. 重新啟動nginx:
+1. 重新啟動nginx：
 
    ```bash
    systemctl restart nginx
@@ -231,11 +231,11 @@ Adobe Commerce和Magento Open Source需要 [PHP擴展](../php-settings.md) 才�
 
 ### 驗證安裝
 
-開啟Web瀏覽器並導航至網站的基URL，以 [驗證安裝](../../next-steps/verify.md)。
+開啟網頁瀏覽器，並導覽至您網站的基底URL，然後 [驗證安裝](../../next-steps/verify.md).
 
 ## CentOS 7
 
-以下部分介紹如何使用nginx、PHP和MySQL在CentOS 7上安裝Adobe Commerce和Magento Open Source2.x。
+以下章節說明如何使用nginx、PHP和MySQL在CentOS 7上安裝Adobe Commerce和Magento Open Source2.x。
 
 ### 安裝nginx
 
@@ -247,7 +247,7 @@ yum -y install epel-release
 yum -y install nginx
 ```
 
-安裝完成後，啟動nginx並將其配置為在啟動時啟動：
+安裝完成後，請啟動nginx並將其設定為在開機時啟動：
 
 ```bash
 systemctl start nginx
@@ -257,23 +257,23 @@ systemctl start nginx
 systemctl enable nginx
 ```
 
-完成以下部分並安裝應用程式後，我們將使用示例配置檔案來配置nginx。
+完成下列章節並安裝應用程式後，我們將使用範例組態檔來設定nginx。
 
-### 安裝和配置php-fpm
+### 安裝和設定php-fpm
 
-Adobe Commerce和Magento Open Source需要 [菲律賓比索](../php-settings.md) 功能正常的擴展。 除了這些擴展外，還必須安裝和配置 `php-fpm` 加分機。
+Adobe Commerce和Magento Open Source需要數個 [PHP](../php-settings.md) 擴充功能正常運作。 除了這些擴充功能外，您還必須安裝並設定 `php-fpm` 擴充功能（若您使用nginx）。
 
-1. 安裝 `php-fpm`:
+1. 安裝 `php-fpm`：
 
    ```bash
    yum -y install php70w-fpm
    ```
 
-1. 開啟 `/etc/php.ini` 的子菜單。
+1. 開啟 `/etc/php.ini` 編輯器中儲存的檔案。
 
-1. 取消注釋 `cgi.fix_pathinfo` 並將值更改為 `0`。
+1. 取消註解 `cgi.fix_pathinfo` 行並將值變更為 `0`.
 
-1. 編輯檔案以匹配以下行：
+1. 編輯檔案以符合下列行：
 
    ```conf
    memory_limit = 2G
@@ -283,19 +283,19 @@ Adobe Commerce和Magento Open Source需要 [菲律賓比索](../php-settings.md)
 
    >[!NOTE]
    >
-   >我們建議在測試Adobe Commerce或Magento Open Source時將記憶體限制設定為2 G。 請參閱 [所需的PHP設定](../php-settings.md) 的子菜單。
+   >測試Adobe Commerce或Magento Open Source時，建議將記憶體限制設為2 G。 請參閱 [必要的PHP設定](../php-settings.md) 以取得詳細資訊。
 
-1. 取消對會話路徑目錄的注釋並設定路徑：
+1. 取消註解工作階段路徑目錄並設定路徑：
 
    ```conf
    session.save_path = "/var/lib/php/session"
    ```
 
-1. 保存並退出編輯器。
+1. 儲存並退出編輯器。
 
-1. 開啟 `/etc/php-fpm.d/www.conf` 編輯。
+1. 開啟 `/etc/php-fpm.d/www.conf` 在編輯器中。
 
-1. 編輯檔案以匹配以下行：
+1. 編輯檔案以符合下列行：
 
    ```conf
    user = nginx
@@ -306,7 +306,7 @@ Adobe Commerce和Magento Open Source需要 [菲律賓比索](../php-settings.md)
    listen.mode = 0660
    ```
 
-1. 取消注釋環境行：
+1. 取消註解環境行：
 
    ```conf
    env[HOSTNAME] = $HOSTNAME
@@ -316,9 +316,9 @@ Adobe Commerce和Magento Open Source需要 [菲律賓比索](../php-settings.md)
    env[TEMP] = /tmp
    ```
 
-1. 保存並退出編輯器。
+1. 儲存並退出編輯器。
 
-1. 建立PHP會話路徑的目錄，並將所有者更改為 `apache` 用戶和組：
+1. 建立PHP階段作業路徑的目錄，並將擁有者變更為 `apache` 使用者和群組：
 
    ```bash
    mkdir -p /var/lib/php/session/
@@ -328,7 +328,7 @@ Adobe Commerce和Magento Open Source需要 [菲律賓比索](../php-settings.md)
    chown -R apache:apache /var/lib/php/
    ```
 
-1. 建立PHP會話路徑的目錄，並將所有者更改為 `apache` 用戶和組：
+1. 建立PHP階段作業路徑的目錄，並將擁有者變更為 `apache` 使用者和群組：
 
    ```bash
    mkdir -p /run/php-fpm/
@@ -338,7 +338,7 @@ Adobe Commerce和Magento Open Source需要 [菲律賓比索](../php-settings.md)
    chown -R apache:apache /run/php-fpm/
    ```
 
-1. 啟動 `php-fpm` 服務並配置它在啟動時啟動：
+1. 開始 `php-fpm` 服務，並將其設定為在開機時啟動：
 
    ```bash
    systemctl start php-fpm
@@ -348,41 +348,41 @@ Adobe Commerce和Magento Open Source需要 [菲律賓比索](../php-settings.md)
    systemctl enable php-fpm
    ```
 
-1. 驗證 `php-fpm` 服務正在運行：
+1. 確認 `php-fpm` 服務執行中：
 
    ```bash
    netstat -pl | grep php-fpm.sock
    ```
 
-### 安裝和配置MySQL
+### 安裝及設定MySQL
 
-請參閱 [MySQL](..//database/mysql.md) 的子菜單。
+請參閱 [MySQL](..//database/mysql.md) 以取得詳細資訊。
 
-### 安裝和配置
+### 安裝及設定
 
-下載Adobe Commerce和Magento Open Source有幾種方法，包括：
+有數種方式可下載Adobe Commerce和Magento Open Source，包括：
 
-* [獲得作曲家的暗喻](../../composer.md)
+* [取得Composer中繼資料](../../composer.md)
 
-* [克隆Git儲存庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [複製Git存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
-此示例使用命令行顯示基於Composer的安裝。
+此範例顯示使用命令列的Composer安裝。
 
-1. 作為 [檔案系統所有者](../file-system/overview.md)，登錄到應用程式伺服器。
+1. 作為 [檔案系統擁有者](../file-system/overview.md)，登入您的應用程式伺服器。
 
-1. 更改為Web伺服器docroot目錄或您已配置為虛擬主機docroot的目錄。 在本示例中，我們使用Ubuntu預設值 `/var/www/html`。
+1. 變更至Web伺服器docroot目錄，或您設定為虛擬主機docroot的目錄。 在此範例中，我們使用Ubuntu預設值 `/var/www/html`.
 
    ```bash
    cd /var/www/html
    ```
 
-1. 全局安裝Composer。 安裝Adobe Commerce或Magento Open Source之前，需要更新依賴關係：
+1. 全域安裝Composer。 安裝Adobe Commerce或Magento Open Source之前，需要撰寫器更新相依性：
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. 使用Magento Open Source或Adobe Commerce元包建立Composer項目。
+1. 使用Magento Open Source或Adobe Commerce中繼資料建立Composer專案。
 
    **Magento Open Source**
 
@@ -396,9 +396,9 @@ Adobe Commerce和Magento Open Source需要 [菲律賓比索](../php-settings.md)
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   在出現提示時，輸入 [身份驗證密鑰](../authentication-keys.md)。 您 _公鑰_ 是您的用戶名；你 _私鑰_ 是您的密碼。
+   出現提示時，輸入您的 [驗證金鑰](../authentication-keys.md). 您的 _公開金鑰_ 是您的使用者名稱；您的 _私密金鑰_ 是您的密碼。
 
-1. 在安裝應用程式之前，設定Web伺服器組的讀寫權限。 這是必需的，以便命令行可以將檔案寫入檔案系統。
+1. 在安裝應用程式之前，設定網頁伺服器群組的讀寫許可權。 這是必要的，以便命令列可以將檔案寫入檔案系統。
 
    ```bash
    cd /var/www/html/<magento install directory>
@@ -420,7 +420,7 @@ Adobe Commerce和Magento Open Source需要 [菲律賓比索](../php-settings.md)
    chmod u+x bin/magento
    ```
 
-1. 從 [命令行](../../advanced.md)。 此示例假定安裝目錄的名稱 `magento2ee`，也請參見Wiki頁。 `db-host` 在同一台電腦上(`localhost`)，而且 `db-name`。 `db-user`, `db-password` 全部 `magento`:
+1. 從安裝 [命令列](../../advanced.md). 此範例假設安裝目錄名為 `magento2ee`，則 `db-host` 在同一部電腦上(`localhost`)，且 `db-name`， `db-user`、和 `db-password` 全部 `magento`：
 
    ```bash
    bin/magento setup:install \
@@ -441,7 +441,7 @@ Adobe Commerce和Magento Open Source需要 [菲律賓比索](../php-settings.md)
    --use-rewrites=1
    ```
 
-1. 切換到開發模式：
+1. 切換到開發人員模式：
 
    ```bash
    cd /var/www/html/magento2/bin
@@ -451,19 +451,19 @@ Adobe Commerce和Magento Open Source需要 [菲律賓比索](../php-settings.md)
    ./magento deploy:mode:set developer
    ```
 
-### 配置nginx
+### 設定nginx
 
-建議使用 `nginx.conf.sample` 安裝目錄和nginx虛擬主機中提供的配置檔案。
+我們建議使用 `nginx.conf.sample` 安裝目錄和nginx虛擬主機中提供的組態檔。
 
-這些說明假定您正在為nginx虛擬主機使用CentOS預設位置(例如， `/etc/nginx/conf.d`)和預設docroot(例如， `/usr/share/nginx/html`)但是，您可以更改這些位置以適合您的環境。
+這些指示假設您使用的是nginx虛擬主機的CentOS預設位置(例如 `/etc/nginx/conf.d`)和預設docroot (例如， `/usr/share/nginx/html`)，但您可以變更這些位置以符合您的環境。
 
-1. 為您的站點建立新虛擬主機：
+1. 為您的網站建立新的虛擬主機：
 
    ```bash
    vim /etc/nginx/conf.d/magento.conf
    ```
 
-1. 添加以下配置：
+1. 新增下列設定：
 
    ```conf
    upstream fastcgi_backend {
@@ -481,33 +481,33 @@ Adobe Commerce和Magento Open Source需要 [菲律賓比索](../php-settings.md)
 
    >[!NOTE]
    >
-   >的 `include` 指令必須指向安裝目錄中的示例nginx配置檔案。
+   >此 `include` 指示詞必須指向安裝目錄中的範例nginx組態檔。
 
-1. 替換 `www.magento-dev.com` 域名。
+1. Replace `www.magento-dev.com` 使用您的網域名稱。
 
-1. 保存並退出編輯器。
+1. 儲存並退出編輯器。
 
-1. 驗證語法是否正確：
+1. 請確認語法正確：
 
    ```bash
    nginx -t
    ```
 
-1. 重新啟動nginx:
+1. 重新啟動nginx：
 
    ```bash
    systemctl restart nginx
    ```
 
-### 配置SELinux和Firewalld
+### 設定SELinux和Firewald
 
-預設情況下，SELinux在CentOS 7上啟用。 使用以下命令查看它是否正在運行：
+CentOS 7預設啟用SELinux。 使用以下命令檢視它是否正在執行：
 
 ```bash
 sestatus
 ```
 
-配置SELinux和防火牆：
+若要設定SELinux與firewalld：
 
 1. 安裝SELinux管理工具：
 
@@ -515,7 +515,7 @@ sestatus
    yum -y install policycoreutils-python
    ```
 
-1. 運行以下命令以更改安裝目錄的安全上下文：
+1. 執行以下命令來變更安裝目錄的安全性內容：
 
    ```bash
    semanage fcontext -a -t httpd_sys_rw_content_t '/usr/share/nginx/html/magento2/app/etc(/.*)?'
@@ -537,13 +537,13 @@ sestatus
    restorecon -Rv '/usr/share/nginx/html/magento2/'
    ```
 
-1. 安裝防火牆包：
+1. 安裝防火牆套件：
 
    ```bash
    yum -y install firewalld
    ```
 
-1. 啟動防火牆服務並將其配置為在啟動時啟動：
+1. 啟動防火牆服務，並將其設定為在開機時啟動：
 
    ```bash
    systemctl start firewalld
@@ -553,7 +553,7 @@ sestatus
    systemctl enable firewalld
    ```
 
-1. 運行以下命令以開啟HTTP和HTTPS的埠，以便您可以從Web瀏覽器訪問基本URL:
+1. 執行以下命令來開啟HTTP和HTTPS的連線埠，以便您可以從網頁瀏覽器存取基本URL：
 
    ```bash
    firewall-cmd --permanent --add-service=http
@@ -569,4 +569,4 @@ sestatus
 
 ### 驗證安裝
 
-開啟Web瀏覽器並導航至網站的基URL，以 [驗證安裝](../../next-steps/verify.md)。
+開啟網頁瀏覽器，並導覽至您網站的基底URL，然後 [驗證安裝](../../next-steps/verify.md).

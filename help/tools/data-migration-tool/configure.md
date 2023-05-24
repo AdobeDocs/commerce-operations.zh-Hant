@@ -1,6 +1,6 @@
 ---
-title: 配置 [!DNL Data Migration Tool]
-description: 瞭解配置 [!DNL Data Migration Tool] 在Magento1和Magento2之間傳輸資料。
+title: 設定 [!DNL Data Migration Tool]
+description: 瞭解設定 [!DNL Data Migration Tool] 以在Magento1和Magento2之間傳輸資料。
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,32 +9,32 @@ ht-degree: 0%
 
 ---
 
-# 配置 [!DNL Data Migration Tool]
+# 設定 [!DNL Data Migration Tool]
 
-安裝後 [!DNL Data Migration Tool]，以下目錄包含映射和配置檔案：
+安裝之後 [!DNL Data Migration Tool]，下列目錄包含對應和組態檔：
 
-* Magento Open Source:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`:用於從Magento Open Source1遷移到Magento Open Source2的配置和指令碼
+* Magento Open Source：
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`：從Magento Open Source1移轉至Magento Open Source2的設定和指令碼
 
-* Adobe Commerce:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`:用於從Magento Open Source1遷移到Adobe Commerce2的配置和指令碼
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`:用於從Adobe Commerce1遷移到Adobe Commerce2的配置和指令碼
+* Adobe Commerce：
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`：從Magento Open Source1移轉至Adobe Commerce 2的設定和指令碼
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`：從Adobe Commerce 1移轉至Adobe Commerce 2的設定和指令碼
 
-前面的目錄包含每個受支援版本的子目錄。
+上述目錄包含每個支援版本的子目錄。
 
-## 配置遷移
+## 設定移轉
 
-有兩種方法可配置 [!DNL Data Migration Tool]:
+有兩種方式可設定 [!DNL Data Migration Tool]：
 
-* 配置 [!DNL Data Migration Tool] 在單獨的模組中（推薦）
-* 更改 [!DNL Data Migration Tool] 配置 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/` 的子菜單。
+* 設定 [!DNL Data Migration Tool] 在獨立的模組中（建議使用）
+* 變更 [!DNL Data Migration Tool] 中的設定 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/` 目錄。
 
-要使用原始碼管理來管理遷移配置並將其用於部署，必須建立單獨的模組。
-如果你計畫 [!DNL Data Migration Tool] 僅在本地，您可以編輯 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/` 的子菜單。
+若要使用原始檔控制來管理您的移轉設定並用於部署，您必須建立個別的模組。
+如果您計畫執行 [!DNL Data Migration Tool] 僅在本機中，您可以編輯以下位置的檔案： `<your Magento 2 install dir>/vendor/magento/data-migration-tool/` 目錄。
 
-### 在單獨的模組中配置遷移
+### 在個別模組中設定移轉
 
-遷移任何資料之前，必須建立Magento2模組。
+在移轉任何資料之前，您必須建立Magento2模組。
 
 1. 建立Magento2模組。
 
@@ -91,9 +91,9 @@ ht-degree: 0%
    </config>
    ```
 
-1. 複製 `config.xml.dist` 的相應目錄下的配置檔案 [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>`) `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/config.xml` 的子菜單。
+1. 複製 `config.xml.dist` 從的適當目錄中的組態檔 [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>`)到 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/config.xml` 檔案。
 
-   例如，如果您 `Magento 1.9.3.6 Community Edition` 至 `Magento 2 Open Source`:
+   例如，如果您移轉 `Magento 1.9.3.6 Community Edition` 至 `Magento 2 Open Source`：
 
    ```bash
    cd <your Magento 2 install dir>
@@ -103,33 +103,33 @@ ht-degree: 0%
    cp vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.6/config.xml.dist app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.3.6/config.xml
    ```
 
-1. 在 `config.xml` 檔案，必須將訪問詳細資訊設定為M1和M2資料庫和加密密鑰。
+1. 在 `config.xml` 檔案，您必須設定M1和M2資料庫的存取詳細資訊和加密金鑰。
 
-1. 如果M1儲存有自定義更改，則應將其餘配置檔案映射到Magento1儲存自定義。 請參閱 [使用配置和映射檔案](#migration-config)。
+1. 如果您的M1存放區有自訂變更，您應將其餘的設定檔案對應至您的Magento1存放區自訂。 另請參閱 [使用設定和對應檔案](#migration-config).
 
-### 配置遷移 `vendor` 資料夾
+### 在中設定移轉 `vendor` 資料夾
 
-遷移任何資料之前，必須建立 `config.xml` 提供的示例中的配置檔案。
+在移轉任何資料之前，您必須建立 `config.xml` 設定檔案（來自提供的範例）。
 
-配置 [!DNL Data Migration Tool] 對於遷移：
+若要設定 [!DNL Data Migration Tool] 移轉：
 
-1. 以或切換到的應用程式伺服器 [檔案系統所有者](../../installation/prerequisites/file-system/overview.md)。
+1. 以或切換至以下身分登入應用程式伺服器： [檔案系統擁有者](../../installation/prerequisites/file-system/overview.md).
 
-1. 更改到以下目錄：
+1. 切換到下列目錄：
 
    ```bash
    <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>
    ```
 
-1. 輸入以下命令以建立 `config.xml` 從提供的示例中：
+1. 輸入下列命令以建立 `config.xml` 從提供的範例中：
 
    ```bash
    cp config.xml.dist config.xml
    ```
 
-1. 開啟 `config.xml` 的子菜單。
+1. 開啟 `config.xml` 在文字編輯器中。
 
-1. config.xml檔案至少必須包含對M1和M2資料庫和加密密鑰的訪問詳細資訊。
+1. config.xml檔案至少必須包含M1和M2資料庫的存取詳細資訊以及加密金鑰。
 
    ```xml
    <source>
@@ -143,15 +143,15 @@ ht-degree: 0%
    </options>
    ```
 
-   的 &lt;crypt_key> 標籤必須包含值。 你可以在 `<key>` 標籤，位於Magento1實例的app/etc/local.xml檔案中。
+   此 &lt;crypt_key> 標籤必須包含值。 您可以在下列位置找到它： `<key>` 標籤中，此標籤位於Magento1執行個體上的app/etc/local.xml檔案中。
 
-   可選參數：
+   選擇性引數：
 
-   * 資料庫用戶密碼： `password=<password>`
-   * 資料庫自定義埠： `port=<port>`
-   * 表前置詞： `<source_prefix>`。 `<dest_prefix>`
+   * 資料庫使用者密碼： `password=<password>`
+   * 資料庫自訂連線埠： `port=<port>`
+   * 表格首碼： `<source_prefix>`， `<dest_prefix>`
 
-   例如，如果資料庫所有者的用戶名是 `root` 帶密碼 `pass` 你用前置詞 `magento1` 在Magento1資料庫中，使用 `config.xml`:
+   例如，如果資料庫擁有者的使用者名稱為 `root` 使用密碼 `pass` 而且您會使用前置詞 `magento1` 在Magento1資料庫中，使用下列專案： `config.xml`：
 
    ```xml
    <source>
@@ -166,11 +166,11 @@ ht-degree: 0%
    </options>
    ```
 
-完成後，將更改保存到 `config.xml` 並退出文本編輯器。
+完成後，將變更儲存至 `config.xml` 並退出文字編輯器。
 
-### 使用TLS協定連接
+### 使用TLS通訊協定連線
 
-您還可以使用TLS協定（即使用公共/私有加密密鑰）連接到資料庫。 將以下可選屬性添加到 `database` 元素：
+您也可以使用TLS通訊協定（亦即使用公開/私用密碼編譯金鑰）連線到資料庫。 將下列選擇性屬性新增至 `database` 元素：
 
 * `ssl_ca`
 * `ssl_cert`
@@ -187,58 +187,58 @@ ht-degree: 0%
 </destination>
 ```
 
-## 使用配置和映射檔案
+## 使用設定和對應檔案
 
-的 [!DNL Data Migration Tool] 使用 *映射檔案* 使您能夠在Magento1和Magento2資料庫之間執行自定義資料庫映射，包括：
+此 [!DNL Data Migration Tool] 使用 *對應檔案* 可讓您執行Magento1與Magento2資料庫之間的自訂資料庫對應，包括：
 
-* 更改表名
+* 變更表格名稱
 
-* 更改欄位名稱
+* 變更欄位名稱
 
-* 忽略表或欄位
+* 忽略表格或欄位
 
-* 將欄位的資料傳輸適應於Magento2格式
+* 將欄位的傳輸資料調整為Magento2格式
 
-支援的Magento版本的映射檔案位於 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
+支援Magento版本的對應檔案位於的子目錄中 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
 
-要使用映射檔案：
+若要使用對應檔案：
 
-1. 從 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` 至 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` 並刪除 `.dist` 擴展。
+1. 複製來源 `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` 至 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` 並移除 `.dist` 副檔名。
 
-1. 更新中新複製檔案的路徑 `<options>` 節點 `config.xml`。 更新的路徑應為下列路徑之一：
+1. 更新中新複製檔案的路徑 `<options>` 節點： `config.xml`. 更新的路徑應為下列其中一項：
 
-   1. 絕對檔案路徑，e。g `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. magento/data migration-tool模組相對檔案路徑： `etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. Magento根相對檔案路徑： `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. 絕對檔案路徑，例如 `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. magento/data-migration-tool模組相對檔案路徑： `etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. 根目錄相對檔案路徑Magento： `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 
-的 `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` 和 `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` 目錄包含以下配置檔案：
+此 `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` 和 `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` 目錄包含下列組態檔：
 
-即使你和 `map.xml.dist` 檔案，下表將討論每個映射和其他檔案。
+即使您使用 `map.xml.dist` 檔案大多數情況下，下表討論每個對應和其他檔案。
 
-| 映射檔案名 | 說明 |
+| 對應檔案名稱 | 說明 |
 | --- | --- |
-| `class-map.xml.dist` | Magento1和Magento2之間類映射的字典 |
-| `config.xml.dist` | 主配置檔案，指定Magento1和Magento2資料庫配置、步驟配置以及指向映射檔案的連結 |
-| *僅Adobe Commerce*。 `customer-attr-document-groups.xml.dist` | 自定義客戶屬性步驟中使用的表的清單。 |
-| *僅Adobe Commerce*。 `customer-attr-map.xml.dist` | 映射在自定義客戶屬性步驟中使用的檔案。 |
-| `deltalog.xml.dist` | 包含資料庫常式設定所需的表清單。 |
-| `eav-attribute-groups.xml.dist` | 包含在Eav步驟中使用的屬性清單。 |
-| `eav-document-groups.xml.dist` | 包含在Eav步驟中使用的表的清單。 |
-| `log-document-groups.xml.dist` | 包含日誌步驟中使用的表的清單。 |
-| `map-eav.xml.dist` | 在EAV步驟中使用的映射檔案。 |
-| `map-log.xml.dist` | 日誌映射檔案。 |
-| *僅Adobe Commerce*。 `map-sales.xml.dist` | 映射在SalesOrder步驟中使用的檔案。 |
-| `map.xml.dist` | 映射步驟需要映射檔案。 |
-| `settings.xml.dist` | 設定遷移配置檔案，指定遷移所需的規則 `core_config_data` 的子菜單。 |
-| `customer-attribute-groups.xml.dist` | 包含在客戶屬性步驟中使用的屬性清單。 |
-| `customer-document-groups.xml.dist` | 包含在「客戶屬性」步驟中使用的表的清單。 |
-| `map-customer.xml.dist` | 映射在「客戶屬性」步驟中使用的檔案。 |
-| `order-grids-document-groups.xml.dist` | 包含在OrderGrids步驟中使用的表的清單。 |
-| `map-document-groups.xml.dist` | 定義在資料插入時發生複製時更新的欄位 |
-| `map-stores.xml.dist` | 在儲存步驟中使用的映射檔案。 |
-| `map-tier-price.xml.dist` | 映射層價格步驟中使用的檔案。 |
-| *僅Adobe Commerce*。 `visual_merchandiser_map.xml.dist` | 在VisualStlocker步驟中使用的映射檔案。 |
-| *僅Adobe Commerce*。 `visual_merchandiser_attribute_groups.xml.dist` | 包含在VisualStlocker步驟中使用的屬性清單。 |
-| *僅Adobe Commerce*。 `visual_merchandiser_document_groups.xml.dist` | 包含在VisualStlocker步驟中使用的表的清單。 |
+| `class-map.xml.dist` | Magento1和Magento2之間類別對應的字典 |
+| `config.xml.dist` | 指定Magento1和Magento2資料庫組態、步驟組態和對應檔案連結的主要組態檔 |
+| *僅限Adobe Commerce*. `customer-attr-document-groups.xml.dist` | 自訂客戶屬性步驟中使用的表格清單。 |
+| *僅限Adobe Commerce*. `customer-attr-map.xml.dist` | 對應自訂客戶屬性步驟中使用的檔案。 |
+| `deltalog.xml.dist` | 包含設定資料庫常式所需的表格清單。 |
+| `eav-attribute-groups.xml.dist` | 包含執行步驟中使用的屬性清單。 |
+| `eav-document-groups.xml.dist` | 包含執行步驟中使用的表格清單。 |
+| `log-document-groups.xml.dist` | 包含記錄步驟中使用的表格清單。 |
+| `map-eav.xml.dist` | EAV步驟中使用的對應檔案。 |
+| `map-log.xml.dist` | 記錄對應檔案。 |
+| *僅限Adobe Commerce*. `map-sales.xml.dist` | SalesOrder Step中使用的對應檔案。 |
+| `map.xml.dist` | 對應步驟所需的對應檔案。 |
+| `settings.xml.dist` | 設定移轉組態檔，指定移轉所需的規則 `core_config_data` 表格。 |
+| `customer-attribute-groups.xml.dist` | 包含用於客戶屬性步驟的屬性清單。 |
+| `customer-document-groups.xml.dist` | 包含用於客戶屬性步驟的表格清單。 |
+| `map-customer.xml.dist` | 對應客戶屬性步驟中使用的檔案。 |
+| `order-grids-document-groups.xml.dist` | 包含用於OrderGrids步驟的表格清單。 |
+| `map-document-groups.xml.dist` | 定義資料插入時發生重複時更新的欄位 |
+| `map-stores.xml.dist` | 對應用於商店步驟的檔案。 |
+| `map-tier-price.xml.dist` | 用於層級價格步驟的對映檔案。 |
+| *僅限Adobe Commerce*. `visual_merchandiser_map.xml.dist` | VisualMerchandiser步驟中使用的對應檔案。 |
+| *僅限Adobe Commerce*. `visual_merchandiser_attribute_groups.xml.dist` | 包含用於VisualMerchandiser步驟的屬性清單。 |
+| *僅限Adobe Commerce*. `visual_merchandiser_document_groups.xml.dist` | 包含用於VisualMerchandiser步驟的表格清單。 |
 
-您可以參考 [[!DNL Data Migration Tool] 技術規格](technical-specification.md) 的子菜單。
+您可參閱 [[!DNL Data Migration Tool] 技術規格](technical-specification.md) 以取得更多詳細資料。

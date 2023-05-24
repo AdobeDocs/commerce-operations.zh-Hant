@@ -1,6 +1,6 @@
 ---
-title: 技術詳細資訊
-description: 閱讀有關管道部署、配置類型和建議工作流的技術詳細資訊。
+title: 技術細節
+description: 閱讀有關管道部署的技術細節、設定型別和建議的工作流程。
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,113 +9,113 @@ ht-degree: 0%
 
 ---
 
-# 技術詳細資訊
+# 技術細節
 
-本主題討論有關Commerce 2.2及更高版本中管道部署的技術實施詳細資訊。 改進可分為以下幾個方面：
+本主題討論Commerce 2.2及更高版本中管道部署的技術實作詳細資訊。 改進功能可分成下列幾個方面：
 
-- [配置管理](#configuration-management)
-- [管理員中的更改](#changes-in-the-admin)
-- [安裝並刪除cron](#install-and-remove-cron)
+- [設定管理](#configuration-management)
+- [管理員中的變更](#changes-in-the-admin)
+- [安裝並移除cron](#install-and-remove-cron)
 
-本主題還討論 [建議的工作流](#recommended-workflow) 為管道部署提供了一些示例，以幫助您瞭解其工作原理。
+本主題也會討論 [建議的工作流程](#recommended-workflow) 用於管道部署，並提供一些範例來協助您瞭解其運作方式。
 
-開始之前，請查看 [開發、構建和生產系統的先決條件](../deployment/prerequisites.md)。
+開始之前，請先檢閱 [您的開發、建置和生產系統的先決條件](../deployment/prerequisites.md).
 
-## 配置管理
+## 設定管理
 
-要使您能夠同步和維護開發和生產系統的配置，請使用以下覆蓋方案。
+若要讓您同步化及維護開發及生產系統的組態，請使用下列覆寫配置。
 
-![如何確定配置變數值](../../assets/configuration/override-flow-diagram.png)
+![如何決定設定變數值](../../assets/configuration/override-flow-diagram.png)
 
-如圖所示，配置值按以下順序使用：
+如圖表所示，組態值會以下列順序使用：
 
-1. 如果環境變數存在，則覆蓋所有其他值。
-1. 從共用配置檔案 `env.php` 和 `config.php`。 中的值 `env.php` 覆蓋值 `config.php`。
+1. 環境變數（如果存在）會覆寫所有其他值。
+1. 從共用組態檔 `env.php` 和 `config.php`. 中的值 `env.php` 覆寫中的值 `config.php`.
 1. 從儲存在資料庫中的值。
-1. 如果這些源中的任何一個中不存在值，則使用預設值或NULL。
+1. 如果這些來源中沒有任何值，則會使用預設值或NULL。
 
-### 管理共用配置
+### 管理共用設定
 
-共用配置儲存在 `app/etc/config.php`，它應該在原始碼管理中。
+共用設定儲存在 `app/etc/config.php`，這應該是在原始檔控制中。
 
-在開發中的管理中(或在雲基礎架構上的Adobe Commerce)設定共用配置 _整合_)系統並將配置寫入 `config.php` 使用 [`magento app:config:dump` 命令](../cli/export-configuration.md)。
+在開發的管理員(或雲端基礎結構上的Adobe Commerce)中設定共用設定 _整合_)系統並將設定寫入 `config.php` 使用 [`magento app:config:dump` 命令](../cli/export-configuration.md).
 
-### 管理特定於系統的配置
+### 管理系統特定設定
 
-系統特定的配置儲存在 `app/etc/env.php`，應 _不_ 在原始碼管理中。
+系統特定設定儲存在 `app/etc/env.php`，應 _not_ 在原始檔控制中。
 
-在開發(或Adobe Commerce雲基礎架構整合)系統的管理中設定特定於系統的配置，並將配置寫入 `env.php` 使用 [`magento app:config:dump` 命令](../cli/export-configuration.md)。
+在開發(或雲端基礎結構整合上的Adobe Commerce)系統的管理員中設定系統特定的設定，並將設定寫入 `env.php` 使用 [`magento app:config:dump` 命令](../cli/export-configuration.md).
 
-此命令還將敏感設定寫入 `env.php`。
+此命令也會將敏感設定寫入 `env.php`.
 
-### 管理敏感配置
+### 管理敏感設定
 
-敏感配置也儲存在 `app/etc/env.php`。
+敏感設定也會儲存在 `app/etc/env.php`.
 
-可以通過以下任何一種方式管理敏感配置：
+您可以透過下列任何方式管理敏感設定：
 
 - 環境變數
-- 將敏感配置保存到 `env.php` 使用 [`magento config:set:sensitive` 命令](../cli/set-configuration-values.md)
+- 將敏感設定儲存在 `env.php` 在生產系統上使用 [`magento config:set:sensitive` 命令](../cli/set-configuration-values.md)
 
-### 已在管理員中鎖定配置設定
+### 在Admin中鎖定的組態設定
 
-中的任何配置設定 `config.php` 或 `env.php` 鎖定在管理員中；即，這些設定在管理員中無法更改。
-使用 [`magento config:set` 或 `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) 命令更改 `config.php` 或 `env.php` 的子菜單。
+中的任何組態設定 `config.php` 或 `env.php` 已在「管理員」中鎖定；也就是說，這些設定無法在「管理員」中變更。
+使用 [`magento config:set` 或 `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) 命令來變更設定 `config.php` 或 `env.php` 檔案。
 
 ## 商務管理員
 
-管理員在生產模式下顯示以下行為：
+管理員在生產模式中會表現出以下行為：
 
-- 不能在管理中啟用或禁用快取類型
-- 開發人員設定不可用(**商店** >設定> **配置** >高級> **開發人員**)，包括：
+- 您無法在「管理員」中啟用或停用快取型別
+- 開發人員設定無法使用(**商店** >設定> **設定** >進階> **開發人員**)，包括：
 
-   - Minify CSS、JavaScript和HTML
+   - 縮制CSS、JavaScript和HTML
    - 合併CSS和JavaScript
-   - 伺服器端或客戶端LESS編譯
-   - 內聯翻譯
-   - 如前所述， `config.php` 或 `env.php` 已鎖定，無法在管理員中編輯。
-   - 您只能將管理區域設定更改為已部署主題所使用的語言
+   - 伺服器端或使用者端LESS編譯
+   - 內嵌翻譯
+   - 如先前所述，任何組態設定 `config.php` 或 `env.php` 已鎖定，無法在管理員中編輯。
+   - 您只能將管理員地區設定變更為已部署主題使用的語言
 
-      下圖顯示了 **帳戶設定** > **介面區域設定** 僅顯示兩個已部署的區域設定的管理中的清單：
+      下圖顯示 **帳戶設定** > **介面地區設定** 「管理員」中的清單，只顯示兩個已部署的區域設定：
 
-      ![您只能將管理區域設定更改為已部署的區域設定](../../assets/configuration/split-deploy-admin-locale.png)
+      ![您只能將管理員地區設定變更為已部署地區設定](../../assets/configuration/split-deploy-admin-locale.png)
 
-- 不能使用管理員更改任何作用域的區域設定配置。
+- 您無法使用Admin變更任何範圍的地區設定。
 
-   我們建議在切換到生產模式之前進行這些更改。
+   建議您先進行這些變更，然後再切換至生產模式。
 
-   您仍然可以使用環境變數或 `config:set` 帶路徑的CLI命令 `general/locale/code`。
+   您仍然可以使用環境變數或 `config:set` 包含路徑的CLI命令 `general/locale/code`.
 
-## 安裝並刪除cron
+## 安裝並移除cron
 
-在版本2.2中，我們首次通過提供 [`magento cron:install` 命令](../cli/configure-cron-jobs.md)。 此命令將crontab設定為運行該命令的用戶。
+在2.2版中，我們首次提供 [`magento cron:install` 命令](../cli/configure-cron-jobs.md). 此命令會將crontab設定為執行命令的使用者。
 
-此外，還可以使用 `magento cron:remove` 的子菜單。
+此外，您可以使用 `magento cron:remove` 命令。
 
-## 建議的管道部署工作流
+## 建議的管道部署工作流程
 
-下圖顯示了我們建議如何使用管道部署來管理配置。
+下圖顯示我們建議您如何使用管道部署來管理設定。
 
-![建議的管道部署工作流](../../assets/configuration/split-deploy-workflow.png)
+![建議的管道部署工作流程](../../assets/configuration/split-deploy-workflow.png)
 
 ### 開發系統
 
-在開發系統上，在管理中更改配置並生成共用配置， `app/etc/config.php` 和系統特定配置， `app/etc/env.php`。 將Commerce代碼和共用配置檢查到原始碼管理中，並將其推送到生成伺服器。
+在您的開發系統上，您在「管理員」中進行設定變更，並產生共用設定， `app/etc/config.php` 以及系統特定組態， `app/etc/env.php`. 將Commerce程式碼和共用設定檢查到原始檔控制中，並將其推送到組建伺服器。
 
-您還應在開發系統上安裝擴展並自定義Commerce代碼。
+您還應在開發系統上安裝擴充功能並自訂Commerce程式碼。
 
 在您的開發系統上：
 
-1. 在管理中設定配置。
+1. 在「管理員」中設定設定。
 
-1. 使用 `magento app:config:dump` 命令將配置寫入檔案系統。
+1. 使用 `magento app:config:dump` 將組態寫入檔案系統的命令。
 
-   - `app/etc/config.php` 是包含所有設定的共用配置 _除_ 敏感和系統特定的設定。 此檔案應位於原始碼管理中。
-   - `app/etc/env.php` 是特定於系統的配置，它包含特定系統（例如，主機名和埠號）所獨有的設定。 此檔案應 _不_ 在原始碼管理中。
+   - `app/etc/config.php` 是共用組態，包含所有設定 _例外_ 敏感和系統專屬設定。 此檔案應在原始檔控制中。
+   - `app/etc/env.php` 是系統專屬的組態，其中包含特定系統專屬的設定（例如，主機名稱和連線埠號碼）。 此檔案應 _not_ 在原始檔控制中。
 
-1. 將修改的代碼和共用配置添加到原始碼管理。
+1. 將修改後的程式碼和共用設定新增至原始檔控制。
 
-1. 要在開發過程中刪除生成的php代碼和靜態資產檔案，請運行以下命令：
+1. 若要在開發時移除產生的php程式碼和靜態資產檔案，請執行以下命令：
 
    ```bash
    rm -r var/view_preprocessed/*
@@ -123,64 +123,64 @@ ht-degree: 0%
    rm -r generated/*/*
    ```
 
-運行清除資產的命令後，Commerce將生成工作檔案。
+執行清除資產的命令後，Commerce會產生工作檔案。
 
 >[!WARNING]
 >
->注意以上方法。 刪除 `.htacces`檔案 `generated` 或 `pub` 資料夾可能導致問題。
+>請謹慎使用上述方法。 刪除 `.htacces`s檔案於 `generated` 或 `pub` 資料夾可能會導致問題。
 
-### 生成系統
+### 建置系統
 
-生成系統編譯代碼並生成在Commerce中註冊的主題的靜態視圖檔案。 它不需要連接到Commerce資料庫；只需要商務基礎。
+組建系統會編譯程式碼，並針對在Commerce中註冊的主題產生靜態檢視檔案。 它不需要連線至Commerce資料庫；只需要Commerce程式碼基底。
 
-在生成系統上：
+在您的建置系統上：
 
-1. 從原始碼管理中拉出共用配置檔案。
-1. 使用 `magento setup:di:compile` 命令來編譯代碼。
-1. 使用 `magento setup:static-content:deploy -f` 命令以更新靜態檔案視圖檔案。
-1. 將更新檢查到原始碼管理中。
+1. 從原始檔控制提取共用設定檔。
+1. 使用 `magento setup:di:compile` 編譯程式碼的命令。
+1. 使用 `magento setup:static-content:deploy -f` 更新靜態檔案檢視檔案的命令。
+1. 將更新簽入原始檔控制中。
 
 >[!INFO]
 >
->請參閱 [靜態視圖檔案的部署策略](../cli/static-view-file-strategy.md)。
+>另請參閱 [靜態檢視檔案的部署策略](../cli/static-view-file-strategy.md).
 
 ### 生產系統
 
-在生產系統（即即時儲存）上，您可以從原始碼管理中提取生成的資產和代碼更新，並使用命令行或環境變數設定特定於系統的敏感配置設定。
+在您的生產系統（即您的即時商店）上，您會從原始檔控制提取產生的資產和程式碼更新，並使用命令列或環境變數設定系統專屬和敏感的組態設定。
 
-在生產系統上：
+在您的生產系統上：
 
 1. 啟動維護模式。
-1. 從原始碼管理中獲取代碼和配置更新。
-1. 如果你使用Adobe Commerce，請停止排隊員。
-1. 使用 `magento app:config:import` 命令，以導入生產系統中的配置更改。
-1. 如果安裝了更改了資料庫架構的元件，請運行 `magento setup:upgrade --keep-generated` 更新資料庫模式和資料，保留生成的靜態檔案。
-1. 要設定系統特定的設定，請使用 `magento config:set` 命令或環境變數。
-1. 要設定敏感設定，請使用 `magento config:sensitive:set` 命令或環境變數。
-1. 清潔(也稱為 _衝_)快取。
+1. 從原始檔控制提取程式碼和設定更新。
+1. 如果您使用Adobe Commerce，請停止佇列背景工作。
+1. 使用 `magento app:config:import` 在生產系統中匯入組態變更的命令。
+1. 如果您安裝的元件變更了資料庫綱要，請執行 `magento setup:upgrade --keep-generated` 更新資料庫架構和資料，保留產生的靜態檔案。
+1. 若要設定系統特定的設定，請使用 `magento config:set` 命令或環境變數。
+1. 若要設定敏感設定，請使用 `magento config:sensitive:set` 命令或環境變數。
+1. 清理(也稱為 _排清_)快取。
 1. 結束維護模式。
 
-## 配置管理命令
+## 設定管理命令
 
-我們提供以下命令幫助您管理配置：
+我們提供下列指令來協助您管理設定：
 
-- [`magento app:config:dump`](../cli/export-configuration.md) 將管理配置設定寫入 `config.php` 和 `env.php` （敏感設定除外）
-- [`magento config:set`](../cli/set-configuration-values.md) 設定生產系統上系統特定設定的值。
+- [`magento app:config:dump`](../cli/export-configuration.md) 將管理員組態設定寫入 `config.php` 和 `env.php` （敏感設定除外）
+- [`magento config:set`](../cli/set-configuration-values.md) 在生產系統上設定系統特定設定的值。
 
-   使用可選 `--lock` 選項，鎖定管理中的選項（即，使設定不可編輯）。 如果某個設定已鎖定，請使用 `--lock` 按鈕。
+   使用選填的 `--lock` 在Admin中鎖定選項的選項（也就是讓設定無法編輯）。 如果設定已鎖定，請使用 `--lock` 選項以變更設定。
 
-- [`magento config:sensitive:set`](../cli/set-configuration-values.md) 設定生產系統上敏感設定的值。
-- [`magento app:config:import`](../cli/import-configuration.md) 要導入配置更改，請 `config.php` 和 `env.php` 生產系統。
+- [`magento config:sensitive:set`](../cli/set-configuration-values.md) 在生產系統上設定敏感設定的值。
+- [`magento app:config:import`](../cli/import-configuration.md) 匯入組態變更來源： `config.php` 和 `env.php` 至生產系統。
 
-## 配置管理示例
+## 設定管理範例
 
-本節顯示管理配置的示例，以便您瞭解如何對 `config.php` 和 `env.php`。
+此段落顯示管理組態的範例，讓您瞭解變更的方式。 `config.php` 和 `env.php`.
 
-### 更改預設區域設定
+### 變更預設地區設定
 
-此部分顯示對 `config.php` 使用Admin更改預設重量單位時(**商店** >設定> **配置** >常規> **常規** > **區域設定選項**)。
+本區段顯示對所做的變更 `config.php` 當您使用管理員(**商店** >設定> **設定** >一般> **一般** > **地區設定選項**)。
 
-在管理員中進行更改後，運行 `bin/magento app:config:dump` 將值寫入 `config.php`。 值將寫入 `general` 陣列 `locale` 代碼段 `config.php` 顯示：
+在管理員中進行變更後，請執行 `bin/magento app:config:dump` 將值寫入 `config.php`. 此值會寫入 `general` 陣列位於 `locale` 做為下列的程式碼片段 `config.php` 顯示：
 
 ```php
 'general' =>
@@ -194,24 +194,24 @@ ht-degree: 0%
     )
 ```
 
-### 更改多個配置設定
+### 變更數個組態設定
 
-本節將討論進行以下配置更改：
+本節討論如何進行下列設定變更：
 
-- 添加網站、商店和商店視圖(**商店** >設定> **所有商店**)
-- 更改預設電子郵件域(**商店** >設定> **配置** >客戶> **客戶配置**)
-- 設定PayPal API用戶名和密碼(**商店** >設定> **配置** >銷售> **付款方法** > **貝帕爾** > **所需的PayPal設定**)
+- 新增網站、商店和商店檢視(**商店** >設定> **所有商店**)
+- 變更預設電子郵件網域(**商店** >設定> **設定** >客戶> **客戶設定**)
+- 設定PayPal API使用者名稱和API密碼(**商店** >設定> **設定** >銷售> **付款方法** > **PayPal** > **必要的PayPal設定**)
 
-在管理員中進行更改後，運行 `bin/magento app:config:dump` 你的開發系統。 這次，並非所有更改都寫入 `config.php`;事實上，只有網站、商店和商店視圖才會作為以下片段顯示寫入該檔案。
+在管理員中進行變更後，請執行 `bin/magento app:config:dump` 在您的開發系統上。 這次，並非所有變更都會寫入 `config.php`；事實上，只有網站、商店和商店檢視會寫入該檔案，如下列程式碼片段所示。
 
 ### config.php
 
 `config.php` 包含：
 
-- 對網站、商店和商店視圖的更改。
-- 非系統特定的搜索引擎設定
-- 非敏感PayPal設定
-- 通知您從中省略的敏感設定的注釋 `config.php`
+- 網站、商店和商店檢視的變更。
+- 非系統特定搜尋引擎設定
+- 不敏感的PayPal設定
+- 通知您從中省略的敏感設定的註解 `config.php`
 
 `websites` 陣列：
 
@@ -283,9 +283,9 @@ ht-degree: 0%
 
 ### env.php
 
-預設電子郵件域系統特定的配置設定將寫入 `app/etc/env.php`。
+預設的電子郵件網域系統特定組態設定會寫入 `app/etc/env.php`.
 
-PayPal設定將寫入兩個檔案，因為 `bin/magento app:config:dump` 命令不寫入敏感設定。 必須使用以下命令在生產系統上設定PayPal設定：
+兩者都不會寫入PayPal設定，因為 `bin/magento app:config:dump` 命令未寫入敏感設定。 您必須使用下列命令在生產系統上設定PayPal設定：
 
 ```bash
 bin/magento config:sensitive:set paypal/wpp/api_username <username>
