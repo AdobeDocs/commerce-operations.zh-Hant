@@ -1,26 +1,26 @@
 ---
-title: MariaDB的Adobe Commerce 2.3.5升級先決條件
-description: 瞭解如何準備Adobe Commerce資料庫，以從Adobe Commerce 2.3.5升級。
+title: MariaDB的Adobe Commerce升級先決條件
+description: 瞭解如何準備Adobe Commerce資料庫，以從舊版升級MariaDB。
 role: Developer
 feature-set: Commerce
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 73663659dd1b3305bf8c9a167852b24dc1016e7d
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
 # 升級MariaDB的必要條件
 
-從Adobe Commerce 2.3.4或更早版本升級至任何更新版本，需要雲端基礎結構上的MariaDB服務從10.0或10.2版升級至10.3或10.4版。MariaDB 10.3版及更新版本要求資料庫使用動態表格列格式，而Adobe Commerce要求使用InnoDB表格儲存引擎。 本文說明如何更新資料庫以符合這些MariaDB要求。
+將雲端基礎結構上的MariaDB服務從10.0或10.2版升級為10.3、10.4或10.5版。MariaDB 10.3版和更新版本要求資料庫使用動態表格列格式，而Adobe Commerce要求使用InnoDB表格儲存引擎。 本文說明如何更新資料庫以符合這些MariaDB要求。
 
 準備資料庫後，請先提交Adobe Commerce支援票證以更新雲端基礎結構上的MariaDB服務版本，然後再繼續進行Adobe Commerce升級程式。
 
 ## 受影響的產品和版本
 
-使用Adobe Commerce 2.3.4版或更早版本以及MariaDB 10.0版或更早版本在雲端基礎結構上使用Adobe Commerce。
+使用MariaDB 10.3版或更舊版本在雲端基礎結構上使用Adobe Commerce。
 
 ## 準備資料庫以進行升級
 
@@ -119,7 +119,7 @@ Adobe Commerce Starter和Adobe Commerce Pro專案的儲存格式轉換程式不�
 
 ### 驗證資料庫轉換
 
-在排程升級至MariaDB 10.2版的前一天，請確認所有表格都具有正確的列格式和儲存引擎。 需要進行驗證，因為完成轉換後進行的程式碼部署可能會導致某些表格恢復為原始設定。
+在排程升級至MariaDB 10.3、10.4或10.6版的前一天，請確認所有表格都具有正確的列格式和儲存引擎。 需要進行驗證，因為完成轉換後進行的程式碼部署可能會導致某些表格恢復為原始設定。
 
 1. 登入您的資料庫。
 
