@@ -1,5 +1,5 @@
 ---
-source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
 source-wordcount: '19443'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 **版本**： 2.4.6
 
 此參照包含130個指令，這些指令可透過 `bin/magento` 命令列工具。
-初始清單會使用 `bin/magento list` 版本中的命令。
+初始清單會使用 `bin/magento list` Adobe Commerce命令。
 使用 [新增CLI命令](https://developer.adobe.com/commerce/php/development/cli-commands/) 新增自訂CLI命令的指南。
 
 >[!NOTE]

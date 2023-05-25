@@ -1,7 +1,7 @@
 ---
-source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
-source-wordcount: '29783'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 **版本**： 1.42.0
 
 此參照包含134個指令，這些指令可透過 `magento-cloud` 命令列工具。
-初始清單會使用 `magento-cloud list` 版本中的命令。
+初始清單會使用 `magento-cloud list` 雲端基礎結構上的Adobe Commerce命令。
 
 >[!NOTE]
 >
