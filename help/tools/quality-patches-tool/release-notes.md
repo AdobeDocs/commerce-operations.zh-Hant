@@ -2,9 +2,9 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 205a0b67fab14a313d28355eed668d60ce477e64
+source-git-commit: 86f95d8fff53ab0857a3a276ba785ad26eb71241
 workflow-type: tm+mt
-source-wordcount: '12066'
+source-wordcount: '12426'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,25 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需有關的資訊 [!DNL quality patches] 由社群建立以供Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.32 {#v1-1-32}
+
+* **ACSD-49628** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正 [!UICONTROL Page Builder's] 多個錯誤會導致管理員無法儲存沒有內容許可權的產品。
+* **ACSD-51305** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正GraphQL回應中無法使用無庫存可設定子產品的問題。
+* **ACSD-50621** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正以下問題： [!UICONTROL Tier Prices] 針對共用目錄中的不同網站，嘗試在多網站環境中編輯它們時不可見。
+* **ACSD-51041** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.0) || >=2.4.1 &lt;2.4.6) — 改善價格索引器的效能。
+* **ACSD-51379** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.7) — 修正透過對頁面文字內容進行變更的問題 [!UICONTROL Page Builder] 不會儲存。
+* **ACSD-49480** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.6) — 修正僅將一個購物車價格規則套用至購物車的問題。
+* **ACSD-51230** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正處理訂單中簡單產品的部分退款時，禮品卡帳戶遭到刪除的問題。
+* **ACSD-51238** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正更新可設定產品和編輯價格時移除庫存來源的問題。
+* **ACSD-50794** (適用於Adobe Commerce >=2.4.1 &lt;2.4.7) — 修正透過GraphQL移除禮品訊息或禮品包裝詳細資料時，資料庫中未更新禮品訊息或禮品包裝詳細資料的問題。
+* **ACSD-51528** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) — 修正 *x_forwarded_for* 欄的 *sales_order* 表格。
+* **ACSD-50849** (適用於Adobe Commerce >=2.4.4 &lt;2.4.6) — 修正清除快取後將新產品新增至類別，導致現有產品的位置和選擇不符的問題。
+* **ACSD-51294** (適用於Adobe Commerce和Magento Open Source>=2.4.5 &lt;2.4.7) — 修正GTM/GA價格、數量、稅金、送貨和收入以字串形式傳送至的問題 [!DNL Google Analytics] 和GTM。
+* **ACSD-51204** (適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.7) — 修正建立銷退折讓單後，已完全銷售的產品未退回庫存的問題。
+* **ACSD-51291** (適用於Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.4-p4 || >=2.4.5 &lt;2.4.5-p3) — 修正限制管理員存取一個網站後，可以將影像/影片新增至指派給多個網站的產品的問題。
+* 已新增ACSD-50336的新版本。
+* 已取代ACSD-49970修補程式。
 
 ## v1.1.31 {#v1-1-31}
 
@@ -458,7 +477,7 @@ ht-degree: 0%
 ## v1.0.23 {#v1-0-23}
 
 * **MDVA-37478** (*若為Adobe Commerce >=2.3.0 &lt;=2.3.7*) — 修正Adobe Commerce針對以下訂單建立部分發票時擲回錯誤的問題： *分期付款方式* 透過REST API的付款方法。
-* **MDVA-37362** (*適用於Adobe Commerce >=2.3.4 &lt;=2.4.2-p1*) — 修正GraphQL回應中，可設定的產品選項值和變數屬性值為空白的問題。
+* **MDVA-37362** (*適用於Adobe Commerce >=2.3.4 &lt;=2.4.2-p1*) — 修正GraphQL回應中可設定的產品選項值和變數屬性值為空白的問題。
 * **MDVA-37288** (*適用於Adobe Commerce 2.4.2*) — 修正GraphQL要求後傳回錯誤層級價格的問題。
 * **MDVA-37225** (*若為Adobe Commerce >=2.4.1 &lt;=2.4.2-p1*) — 修正當匯入的SKU中有整數值時，快速建立訂單期間上傳流程卡住的問題。
 * **MDVA-37224** (*適用於Adobe Commerce >=2.3.3 &lt;=2.4.2-p1*) — 修正客戶無法支付可協商報價的問題 [!DNL PayFlow Pro] 與購物車中的其他產品整合。
