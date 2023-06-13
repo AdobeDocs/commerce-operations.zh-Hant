@@ -1,9 +1,9 @@
 ---
 user-guide-title: 效能最佳實務
 user-guide-description: 使用我們的建議最佳化Adobe Commerce或Magento Open Source生產部署的效能。
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+source-git-commit: c61f33a7159424e5f9018ebf37b9d17072246536
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '61'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,5 @@ ht-degree: 0%
 - 進階概念 {#performance-best-practices}
    - [進階設定](advanced-setup.md)
    - [進階 [!DNL JavaScript] 套裝](advanced-js-bundling.md)
+   - [適用於GraphQL API的應用程式伺服器](application-server.md)
 - [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

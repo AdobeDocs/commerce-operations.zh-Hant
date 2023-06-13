@@ -2,16 +2,16 @@
 title: Nginx
 description: 請依照下列步驟，安裝並設定Nginx網頁伺服器，以在本機安裝Adobe Commerce和Magento Open Source。
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 9ebf10bd3296495e33c91d930be023ea0124ff62
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
 
 # Nginx
 
-Adobe Commerce支援nginx 1.18 (或 [最新主線版本](https://nginx.org/en/linux_packages.html#mainline))。 您也必須安裝最新版的 `php-fpm`.
+Adobe Commerce支援nginx 1.x (或 [最新主線版本](https://nginx.org/en/linux_packages.html#mainline))。 您也必須安裝最新版本的 `php-fpm`.
 
 安裝指示會因您使用的作業系統而異。 另請參閱 [PHP](../php-settings.md) 以取得相關資訊。
 

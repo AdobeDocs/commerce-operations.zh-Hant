@@ -3,7 +3,7 @@ keywords: Adobe Commerce；首頁；熱門主題
 title: 首頁
 description: 瀏覽Adobe Commerce系統管理和營運產品檔案的索引。
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 9e010b68f6458bafda5119308531e62477f046a9
+source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -64,11 +64,11 @@ ht-degree: 0%
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html">
        <img alt="命令列工具參考" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>命令列工具參考</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html"><strong>命令列工具參考</strong></a>
       <p>瞭解Adobe Commerce命令列工具的命令、引數和選項。</p>
     </div>
   </td>
