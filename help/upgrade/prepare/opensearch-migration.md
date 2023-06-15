@@ -1,8 +1,9 @@
 ---
 title: 從Elasticsearch移轉至OpenSearch
 description: 瞭解如何取代用於內部部署Adobe Commerce和Magento Open Source的搜尋引擎。
+feature: Upgrade, Search
 exl-id: 56f1e609-83d2-4705-99d8-b395bb511411
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%

@@ -2,7 +2,7 @@
 title: 年度升級計畫
 description: 檢閱為您的Adobe Commerce或Magento Open Source專案建立年度升級計畫的提示。
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: d81283491447dcad5f38ddf55acea7d94889ef35
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%

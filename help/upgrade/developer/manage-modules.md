@@ -1,8 +1,9 @@
 ---
 title: 管理模組和擴充功能（開發人員）
 description: 使用命令列介面和撰寫器封裝管理員來管理Adobe Commerce和Magento Open Source模組及擴充功能。
+feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 0%

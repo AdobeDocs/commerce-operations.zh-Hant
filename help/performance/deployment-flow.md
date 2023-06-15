@@ -1,8 +1,9 @@
 ---
 title: 部署流程
 description: 瞭解在生產環境中部署Adobe Commerce或Magento Open Source所需的步驟。
+feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%

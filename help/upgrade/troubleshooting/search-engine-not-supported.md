@@ -1,8 +1,9 @@
 ---
 title: 不支援目前的搜尋引擎
 description: 在遇到有關不支援的搜尋引擎的錯誤後，疑難排解Adobe Commerce或Magento Open Source升級。
+feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -34,13 +35,11 @@ bin/magento config:show catalog/search/engine
 >
 >如果您收到此錯誤，表示您的安裝狀態不一致，且您無法存取Admin。 建議您解決此錯誤後，還原至先前的版本。 要執行此操作，請執行以下命令之一：
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-enterprise-edition=<version>
 >```
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >

@@ -1,8 +1,9 @@
 ---
 title: 軟體Recommendations
 description: 檢閱與Adobe Commerce最佳效能和Magento Open Source部署相關的建議軟體清單。
+feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -197,7 +198,7 @@ Magento完全支援Nginx和Apache網頁伺服器。 [!DNL Commerce] 提供中建
 |--- | --- | ---|
 | `innodb_buffer_pool_instances` | 8 | 預設值設為8，以避免多個執行緒嘗試存取相同執行個體時發生問題。 |
 | `innodb_buffer_pool_size` | 128MB | 結合上述多個集區執行個體，這表示預設的記憶體配置為1024MB。 總大小會分配到所有緩衝集區。 為達到最佳效率，請指定 `innodb_buffer_pool_instances` 和 `innodb_buffer_pool_size` 讓每個緩衝集區執行個體至少有1 GB。 |
-| `max_connections` | 150 | 的值 `max_connections` 引數應與應用程式伺服器中設定的PHP執行緒總數相關。 一般建議是小型環境為300，中型環境為1,000。 |
+| `max_connections` | 150 | 的值 `max_connections` 引數應該與應用程式伺服器中設定的PHP執行緒總數相關。 一般建議是小型環境為300，中型環境為1,000。 |
 | `innodb_thread_concurrency` | 0 | 此設定的最佳值應透過下列公式計算： `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)` |
 
 ## [!DNL Varnish]
