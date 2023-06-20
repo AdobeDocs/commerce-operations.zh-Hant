@@ -1,5 +1,5 @@
 ---
-source-git-commit: adb585771fb1353614ea600117f18ba8b55b65f0
+source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -56,7 +56,7 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當未提供命令時，顯示說明 &lt;info>清單&lt;/info> 命令
+顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -126,7 +126,7 @@ bin/uct completion [--debug] [--] [<shell>]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當未提供命令時，顯示說明 &lt;info>清單&lt;/info> 命令
+顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -205,7 +205,7 @@ bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當未提供命令時，顯示說明 &lt;info>清單&lt;/info> 命令
+顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -289,7 +289,7 @@ bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當未提供命令時，顯示說明 &lt;info>清單&lt;/info> 命令
+顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -353,7 +353,7 @@ bin/uct refactor <path>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當未提供命令時，顯示說明 &lt;info>清單&lt;/info> 命令
+顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -428,7 +428,7 @@ Adobe Commerce vanilla安裝目錄
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當未提供命令時，顯示說明 &lt;info>清單&lt;/info> 命令
+顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -499,7 +499,7 @@ bin/uct dbschema:diff <current-version> <target-version>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當未提供命令時，顯示說明 &lt;info>清單&lt;/info> 命令
+顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -575,7 +575,7 @@ bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當未提供命令時，顯示說明 &lt;info>清單&lt;/info> 命令
+顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -683,7 +683,7 @@ Target Adobe Commerce版本，若省略，將使用最新發行版本的Adobe Co
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當未提供命令時，顯示說明 &lt;info>清單&lt;/info> 命令
+顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
