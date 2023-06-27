@@ -2,7 +2,8 @@
 title: 「開始使用：選取帳戶和時間範圍」
 description: 瞭解如何開始使用 [!DNL Observation for Adobe Commerce] Nerdlet，只要選取帳戶和時間範圍即可。
 exl-id: f2364fa4-ef83-42f2-992f-e37ff1ac96a1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%

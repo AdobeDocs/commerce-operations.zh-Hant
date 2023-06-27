@@ -2,7 +2,8 @@
 title: 資料移轉的運作方式
 description: 瞭解Magento1和Magento2之間的資料移轉程式，包括術語、工作流程圖表和步驟。
 exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%

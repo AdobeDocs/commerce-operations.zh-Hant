@@ -2,7 +2,9 @@
 title: 安裝 [!DNL Data Migration Tool]
 description: 瞭解如何安裝 [!DNL Data Migration Tool] 以在Magento1和Magento2之間傳輸資料。
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+feature: Configuration, Install
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

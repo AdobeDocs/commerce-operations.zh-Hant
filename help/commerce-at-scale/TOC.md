@@ -1,7 +1,8 @@
 ---
 user-guide-title: 大規模提供Commerce體驗
 user-guide-description: 瞭解如何透過Adobe Experience Manager使用Adobe Commerce大規模提供體驗。
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+feature: Integration
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 0%

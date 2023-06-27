@@ -2,7 +2,8 @@
 title: Commerce託管比較
 description: 檢閱此比較表格，為您的電子商務專案做出託管的最佳決定。
 exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Cloud, Paas
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
@@ -35,7 +36,7 @@ ht-degree: 0%
         </tr>
         <tr>
             <td>成本</td>
-            <td>長期而言可能更符合成本效益</td>
+            <td>從長遠來看，可能更具成本效益</td>
             <td>可觀的預先硬體與軟體成本（資本支出）。</td>
             <td>可預測的訂閱定價。</td>
             <td>需要長期成本預測。</td>

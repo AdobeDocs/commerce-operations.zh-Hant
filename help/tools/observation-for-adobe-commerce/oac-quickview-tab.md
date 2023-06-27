@@ -2,7 +2,8 @@
 title: 此 [!DNL QuickView] 標籤
 description: 此 [!DNL QuickView] 索引標籤說明您可能會看到的不同警報型別，包括磁碟空間不足和伺服器使用量不足的警報。
 exl-id: 34405f9b-30de-4fab-acca-64a8e308ca90
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%

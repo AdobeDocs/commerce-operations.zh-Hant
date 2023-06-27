@@ -2,7 +2,8 @@
 title: '''[!DNL Data Migration Tool] 必備條件'
 description: 瞭解在開始使用之前需要做什麼 [!DNL Data Migration Tool] 以在Magento1和Magento2之間傳輸資料。
 exl-id: 42dfa1ca-41ed-453d-a3e4-41ff36817ca3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 * 設定您的Magento2系統，使其符合 [系統需求](../../installation/system-requirements.md).
 
-   使用至少符合您現有Magento1系統的拓撲和設計。
+  使用至少符合您現有Magento1系統的拓撲和設計。
 
 * [安裝Magento2](../../installation/overview.md).
 
@@ -31,7 +32,7 @@ ht-degree: 0%
 
 * 驗證 [!DNL Data Migration Tool] 具有網路存取權，可連線Magento1和Magento2資料庫。
 
-   開啟防火牆中的連線埠，讓移轉工具可以與資料庫通訊。
+  開啟防火牆中的連線埠，讓移轉工具可以與資料庫通訊。
 
 * 請確定您的MySQL帳戶擁有存取Magento資料庫的所有必要許可權。
 

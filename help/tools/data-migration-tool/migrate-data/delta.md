@@ -2,7 +2,8 @@
 title: 移轉變更
 description: 瞭解如何僅移轉自您上次Magento1資料移轉以來有所變更的資料，使用 [!DNL Data Migration Tool].
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%

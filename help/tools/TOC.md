@@ -1,7 +1,8 @@
 ---
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
-source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
+feature: Configuration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%

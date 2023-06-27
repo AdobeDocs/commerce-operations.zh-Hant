@@ -2,7 +2,8 @@
 title: 需要手動移轉的資料
 description: 瞭解在Magento1到Magento2資料移轉期間必須手動移轉的資料，以及如何進行移轉。
 exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%

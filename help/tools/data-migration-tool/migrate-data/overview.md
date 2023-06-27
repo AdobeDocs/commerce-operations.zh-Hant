@@ -2,7 +2,8 @@
 title: 移轉概述
 description: 瞭解如何透過開始將資料從Magento1移轉至Magento2 [!DNL Data Migration Tool].
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%

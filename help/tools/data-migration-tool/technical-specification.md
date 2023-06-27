@@ -2,7 +2,8 @@
 title: '''[!DNL Data Migration Tool] 技術規格'
 description: 瞭解的實作詳細資料 [!DNL Data Migration Tool] 以及在Magento1和Magento2之間傳輸資料時如何擴充。
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 0%

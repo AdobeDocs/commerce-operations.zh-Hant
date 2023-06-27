@@ -2,7 +2,8 @@
 title: Commerce軟體服務
 description: 瞭解SaaS應用程式與其他自行託管（內部部署）開放原始碼電子商務選項之間的主要差異。
 exl-id: 9be70e1e-76d5-4696-862e-f2b71eb1abb0
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Saas
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%

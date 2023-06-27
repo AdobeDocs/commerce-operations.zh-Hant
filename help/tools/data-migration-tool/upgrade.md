@@ -2,7 +2,8 @@
 title: 升級 [!DNL Data Migration Tool]
 description: 瞭解如何升級 [!DNL Data Migration Tool] 以在Magento1和Magento2之間傳輸資料。
 exl-id: c0d56d1d-b15b-437f-be72-74282dbe85c1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
