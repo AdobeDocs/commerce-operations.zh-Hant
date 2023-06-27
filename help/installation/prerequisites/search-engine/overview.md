@@ -1,8 +1,9 @@
 ---
 title: 搜尋引擎必要條件
 description: 請依照下列步驟，針對Adobe Commerce和Magento Open Source的內部部署安裝安裝並設定支援的搜尋引擎軟體。
+feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
@@ -40,15 +41,15 @@ ht-degree: 0%
 
 * Commerce應用程式和搜尋引擎會安裝在不同的主機上。
 
-   在個別主機上執行時需要代理程式才能運作。 (搜尋引擎叢集不在本指南的涵蓋範圍內，但您可以在以下連結中找到更多資訊： [Elasticsearch叢集檔案](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  在個別主機上執行時需要代理程式才能運作。 (搜尋引擎叢集不在本指南的涵蓋範圍內，但您可以在以下連結中找到更多資訊： [Elasticsearch叢集檔案](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * 每個主機都有自己的網頁伺服器；網頁伺服器不必相同。
 
-   例如，商務應用程式可執行Apache，而搜尋引擎則可執行nginx。
+  例如，商務應用程式可執行Apache，而搜尋引擎則可執行nginx。
 
 * 這兩部網頁伺服器都使用傳輸層安全性(TLS)。
 
-   設定TLS不屬於我們檔案的範圍。
+  設定TLS不屬於我們檔案的範圍。
 
 搜尋請求的處理方式如下：
 

@@ -1,8 +1,9 @@
 ---
 title: 為您的搜尋引擎設定Nginx
 description: 請依照下列步驟，使用Nginx網頁伺服器設定搜尋引擎，以供Adobe Commerce和Magento Open Source的內部部署使用。
+feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%

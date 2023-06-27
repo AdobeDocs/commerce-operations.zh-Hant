@@ -1,8 +1,9 @@
 ---
 title: PHP設定
 description: 請依照下列步驟安裝必要的PHP擴充功能，並為Adobe Commerce和Magento Open Source的內部部署設定必要的PHP設定。
+feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
@@ -73,7 +74,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - 設定PHP記憶體限制。
 
-   我們的詳細建議包括：
+  我們的詳細建議包括：
 
    - 編譯程式碼或部署靜態資產， `1G`
    - 偵錯， `2G`
@@ -81,18 +82,18 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - 增加PHP的值 `realpath_cache_size` 和 `realpath_cache_ttl` 至建議的設定：
 
-   ```conf
-   realpath_cache_size=10M
-   realpath_cache_ttl=7200
-   ```
+  ```conf
+  realpath_cache_size=10M
+  realpath_cache_ttl=7200
+  ```
 
-   這些設定可讓PHP處理序快取檔案的路徑，而不是在每次頁面載入時查詢它們。 另請參閱 [效能調整](https://www.php.net/manual/en/ini.core.php) PHP檔案中。
+  這些設定可讓PHP處理序快取檔案的路徑，而不是在每次頁面載入時查詢它們。 另請參閱 [效能調整](https://www.php.net/manual/en/ini.core.php) PHP檔案中。
 
 - 啟用 [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments)，此為Adobe Commerce和Magento Open Source 2.1及更新版本的必要專案。
 
-   建議您啟用 [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) 基於效能考量。 OPcache已在許多PHP發行版本中啟用。
+  建議您啟用 [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) 基於效能考量。 OPcache已在許多PHP發行版本中啟用。
 
-   Adobe Commerce和Magento Open Source2.1及更高版本使用PHP程式碼註解來產生程式碼。
+  Adobe Commerce和Magento Open Source2.1及更高版本使用PHP程式碼註解來產生程式碼。
 
 >[!NOTE]
 >
@@ -126,15 +127,15 @@ PHP OPcache設定通常位於 `php.ini` 或 `opcache.ini`. 位置可能取決於
 
 - Apache Web Server：
 
-   對於具有Apache的Ubuntu，OPcache設定通常位於 `php.ini` 檔案。
+  對於具有Apache的Ubuntu，OPcache設定通常位於 `php.ini` 檔案。
 
-   對於具有Apache或nginx的CentOS，OPcache設定通常位於 `/etc/php.d/opcache.ini`
+  對於具有Apache或nginx的CentOS，OPcache設定通常位於 `/etc/php.d/opcache.ini`
 
-   如果沒有，請使用以下命令來尋找它：
+  如果沒有，請使用以下命令來尋找它：
 
-   ```bash
-   sudo find / -name 'opcache.ini'
-   ```
+  ```bash
+  sudo find / -name 'opcache.ini'
+  ```
 
 - 使用PHP-FPM的nginx網頁伺服器： `/etc/php/7.2/fpm/php.ini`
 

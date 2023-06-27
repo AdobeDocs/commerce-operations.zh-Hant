@@ -1,8 +1,9 @@
 ---
 title: 為您的搜尋引擎設定Apache
 description: 請依照下列步驟，使用Apache Web Server設定搜尋引擎，以供Adobe Commerce和Magento Open Source的內部部署使用。
+feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -131,10 +132,9 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 
    * 設定cron：網頁伺服器使用者或其他使用者。
 
-   在此範例中，我們使用Web伺服器使用者，但使用者的選擇由您決定。
+  在此範例中，我們使用Web伺服器使用者，但使用者的選擇由您決定。
 
    * 設定Elasticsearch：使用者已命名 `magento_elasticsearch` 在此範例中
-
 
 * `<password file name>` 必須為隱藏的檔案(開頭為 `.`)，且應反映使用者名稱。 如需詳細資訊，請參閱本節稍後的範例。
 

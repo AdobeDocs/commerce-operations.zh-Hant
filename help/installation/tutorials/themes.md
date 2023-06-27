@@ -1,8 +1,9 @@
 ---
 title: 解除安裝主題
 description: 請依照下列步驟解除安裝Adobe Commerce或Magento Open Source主題。
+feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -26,7 +27,7 @@ ht-degree: 0%
 * 更新 `parent` 中的節點資訊 `theme.xml` 以移除對主題的參照。
 * 正在從檔案系統移除主題程式碼。
 
-   [有關佈景主題繼承的詳細資訊](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [有關佈景主題繼承的詳細資訊](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
 ## 解除安裝主題
 

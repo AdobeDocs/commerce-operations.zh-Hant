@@ -1,8 +1,9 @@
 ---
 title: 下載範例資料撰寫器套件
 description: 請依照下列步驟，使用Composer PHP Package Manager安裝Adobe Commerce並Magento Open Source範例資料。
+feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 * 已從下載壓縮封存 `https://magento.com/tech-resources/download`.
 
-   如果您從GitHub下載封存，此方法無法運作，因為 `composer.json` 檔案不包含 `repo.magento.com` URL。
+  如果您從GitHub下載封存，此方法無法運作，因為 `composer.json` 檔案不包含 `repo.magento.com` URL。
 
 * 已使用 `composer create-project`
 

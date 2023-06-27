@@ -1,8 +1,9 @@
 ---
 title: 設定umask （選擇性）
 description: 透過限制檔案系統許可權，改善Adobe Commerce或Magento Open Source內部部署安裝的安全性狀態。
+feature: Install, Configuration
 exl-id: 18d65d75-7be0-4488-bf35-4b058e4ae5ea
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
