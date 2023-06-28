@@ -1,7 +1,7 @@
 ---
-source-git-commit: 36ebf825705e3ffb26d595d39df8339ab1ca3c6f
+source-git-commit: 79293c564f9fcded146916e9e3bfd27a28424940
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## 新增功能
 
 瞭解新檔案和現有檔案的重要更新。
+
+### 2023年6月23日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已更新 <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">系統需求</a> 中的頁面 <em>安裝指南</em> 使用索引標籤在Cloud和內部部署相依性之間切換。</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3d56a01b91a71b1c615a28588e726f0b9e58abb0">3d56a0</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2023年6月13日
 
@@ -22,6 +42,12 @@ ht-degree: 0%
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>將2023年6月版本新增至 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">發行版本</a>.</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8d7329c2496f4d322a83ec6bcf71ef956f4284c3">8d7329</a> （認可）</td>
+    </tr>
     <tr>
       <td><p>新增下列測試版檔案：<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Adobe Commerce CLI （內部部署，測試版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">Magento Open SourceCLI （測試版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Adobe Commerce套件（測試版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/cloud-beta.html">Adobe Commerce (Beta)雲端套件</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Magento Open Source套件（測試版）</a></p>
 </td>
