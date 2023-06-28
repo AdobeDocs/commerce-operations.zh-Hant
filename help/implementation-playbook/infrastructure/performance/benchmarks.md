@@ -2,7 +2,8 @@
 title: 效能標竿
 description: 檢閱在Adobe雲端基礎結構上託管的Adobe Commerce實施的效能基準結果。
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -49,13 +50,13 @@ Adobe Commerce 2.4.5效能基準結果反映了在部署有下列基礎架構和
    - 店面同時有3000位使用者
    - 設定為30% CDN快取命中率
 
-      有效使用快取層會增加每小時的頁面檢視次數。
+     有效使用快取層會增加每小時的頁面檢視次數。
 
 - **GRAPHQL API**
    - 250個並行執行緒
    - 設定為0% CDN快取命中率
 
-      透過GraphQL前方的快取層，可大幅改善回應時間。
+     透過GraphQL前方的快取層，可大幅改善回應時間。
 
 - **管理網頁**
    - 500位同時使用者

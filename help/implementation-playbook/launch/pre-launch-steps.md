@@ -2,7 +2,8 @@
 title: 啟動前的步驟
 description: 使用我們啟動前的檢查清單，確保順利實施Adobe Commerce網站。
 exl-id: bd10881f-0336-4aa4-82ad-4d635010e2e4
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Deploy
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%

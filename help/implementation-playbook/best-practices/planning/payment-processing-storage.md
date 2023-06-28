@@ -2,10 +2,9 @@
 title: 付款處理與儲存的最佳實務
 description: 瞭解如何安全地處理和儲存付款詳細資料
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%

@@ -3,9 +3,8 @@ title: 在生產網站上排程管理員更新
 description: 瞭解排程Adobe Commerce關鍵更新以防止效能緩慢和中斷的最佳實務。
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%

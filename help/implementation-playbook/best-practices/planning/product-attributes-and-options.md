@@ -2,10 +2,9 @@
 title: 產品屬性設定最佳實務
 description: 瞭解如何透過限制產品屬性、屬性選項和屬性集的數量來最佳化Adobe Commerce效能
 role: User, Admin
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Catalogs
 exl-id: 81783a4c-bc82-4733-bee3-0154cf03079a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
@@ -21,7 +20,6 @@ ht-degree: 0%
    - 若是Adobe Commerce 2.4.2版或更新版本，請設定最多1500個產品屬性
 - **產品屬性選項** — 為每個屬性設定最多100個屬性選項
 - **產品屬性集** — 設定最多1000個屬性集_
-
 >[!NOTE]
 >
 >產品屬性會指定全域套用至所有產品的功能。 產品屬性選項是自訂，用於指定適用於特定產品的功能。

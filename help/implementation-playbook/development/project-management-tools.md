@@ -2,7 +2,8 @@
 title: 專案管理工具
 description: 選擇建議的Adobe Commerce實作專案管理工具。
 exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: System
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%

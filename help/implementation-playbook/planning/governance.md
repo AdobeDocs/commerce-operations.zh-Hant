@@ -2,7 +2,8 @@
 title: 專案控管
 description: 將我們的專案治理建議套用至您的Adobe Commerce實作。
 exl-id: adf53a2a-1673-441a-84d3-4cdda47d6aa5
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%

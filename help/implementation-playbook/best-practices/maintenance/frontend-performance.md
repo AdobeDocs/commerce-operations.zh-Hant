@@ -3,9 +3,8 @@ title: 稽核前端效能
 description: 透過使用網站效能工具稽核Adobe Commerce店面作業，找出並解決對網站效能有負面影響的問題。
 role: Admin, User, Developer
 feature: Best Practices
-feature-set: Commerce
 exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%

@@ -2,7 +2,8 @@
 user-guide-title: 升級指南
 user-guide-description: 瞭解為什麼升級您的Adobe Commerce應用程式如此重要，以及如何成功規劃和執行升級。
 feature: Upgrade
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+topic: Administration, Commerce, Development, Upgrade
+source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%

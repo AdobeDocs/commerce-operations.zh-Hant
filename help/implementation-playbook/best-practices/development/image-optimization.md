@@ -3,9 +3,8 @@ title: 最佳化影像，以建立回應速度更快的網站
 description: 瞭解最佳化影像的步驟，並使用Fastly影像最佳化來最佳化Adobe Commerce網站上的回應時間。
 role: Developer, Admin
 feature: Best Practices
-feature-set: Commerce
 exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%

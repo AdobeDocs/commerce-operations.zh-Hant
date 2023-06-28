@@ -3,9 +3,8 @@ title: 訂單處理的設定最佳實務
 description: 瞭解設定最佳實務，以改善結帳和訂單處理效能。
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -33,17 +32,17 @@ ht-degree: 0%
 
 - 對於雲端基礎結構上的Adobe Commerce和生產模式下的內部部署網站，請使用以下MagentoCLI命令來啟用非同步索引：
 
-   ```php
-   php bin/magento config:set dev/grid/async_indexing 1
-   ```
+  ```php
+  php bin/magento config:set dev/grid/async_indexing 1
+  ```
 
 - 對於處於預設或生產模式的Adobe Commerce內部部署網站，請透過更新「管理員」中的「網格設定」設定來啟用非同步索引。
 
-   另請參閱 [啟用排定的網格更新並重新索引](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
+  另請參閱 [啟用排定的網格更新並重新索引](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
-   >[!WARNING]
-   >
-   >在更新生產環境之前，請一律在中繼環境中測試設定變更。
+  >[!WARNING]
+  >
+  >在更新生產環境之前，請一律在中繼環境中測試設定變更。
 
 ## 其他資訊
 

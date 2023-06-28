@@ -2,7 +2,8 @@
 title: 實作階段
 description: 瞭解Adobe Commerce專案實作階段的最佳實務。
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%

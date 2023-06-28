@@ -2,7 +2,8 @@
 title: 雲端基礎結構地區
 description: 檢閱顯示Adobe Commerce可用AWS和Azure區域的圖表。
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
-source-git-commit: d387ca9f3c7ce3b0c8ce254cc1c056e5b244ed34
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 0%

@@ -2,7 +2,8 @@
 title: 雲端基礎結構技術
 description: 進一步瞭解我們在雲端基礎結構上用於Adobe Commerce的技術集合。
 exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
-source-git-commit: 683ce0a72aca0319ade2e4ccfd7a8e541a228156
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%

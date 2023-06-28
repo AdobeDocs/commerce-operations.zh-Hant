@@ -3,9 +3,8 @@ title: 最佳化CSS和JS資源檔案
 description: 瞭解如何從管理員或命令列合併Adobe Commerce專案的CSS和JavaScript (JS)檔案，並加以縮制。
 role: Developer
 feature: Best Practices
-feature-set: Commerce
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -33,7 +32,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->雲端基礎結構上的Adobe Commerce一律會在生產模式下執行，否則無法進行設定，因此您必須使用命令列方法來啟用合併、縮制和捆綁。
+>雲端基礎結構上的Adobe Commerce一律會在生產模式中執行，否則無法進行設定，因此您必須使用命令列方法來啟用合併、縮制和捆綁。
 
 ### 使用管理員
 

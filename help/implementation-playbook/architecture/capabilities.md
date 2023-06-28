@@ -2,7 +2,8 @@
 title: Adobe Commerce功能
 description: 瞭解Adobe Commerce功能如何將我們與競爭對手區分開來。
 exl-id: 6d2196b4-56ee-4048-b5e5-930811e7e50b
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Paas
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce功能
 
-Adobe Commerce是市面上最值得信賴且可靠的電子商務平台之一。 使用這項技術的企業成長已證明這種信任和可靠性。 根據[託管法庭](https://hostingtribunal.com/blog/magento-statistics/#gref)，各品牌運用Adobe Commerce作為其電子商務平台，其增長速度比其他平台上的品牌快三倍。
+Adobe Commerce是市面上最值得信賴且可靠的電子商務平台之一。 使用這項技術的企業成長已證明這種信任和可靠性。 根據 [託管法庭](https://hostingtribunal.com/blog/magento-statistics/#gref)，各品牌運用Adobe Commerce作為其電子商務平台，其增長速度比其他平台上的品牌快三倍。
 
 Adobe Commerce能夠處理品牌可能遇到的任何複雜問題，因此隨著企業提高自身的複雜程度，這已成為一種受歡迎的選擇。 無論品牌聚焦於一個地區的單一網站，或需要連線全球各地的多個網站或商店，Adobe Commerce都具備基礎架構，可打造順暢且連線的體驗。 作為合作夥伴，我們隨後會運用我們的專業知識來自訂網站，以符合您獨特的需求。
 

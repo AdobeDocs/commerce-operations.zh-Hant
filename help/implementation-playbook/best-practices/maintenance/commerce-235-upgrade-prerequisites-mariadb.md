@@ -2,10 +2,9 @@
 title: MariaDB的Adobe Commerce升級先決條件
 description: 瞭解如何準備Adobe Commerce資料庫，以從舊版升級MariaDB。
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
-source-git-commit: 73663659dd1b3305bf8c9a167852b24dc1016e7d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -88,15 +87,15 @@ Adobe Commerce Starter和Adobe Commerce Pro專案的儲存格式轉換程式不�
 
    - 重新命名現有表格以避免名稱衝突。
 
-      ```mysql
-      RENAME TABLE <existing_table> <table_old>;
-      ```
+     ```mysql
+     RENAME TABLE <existing_table> <table_old>;
+     ```
 
    - 建立使用的表格 `InnoDB` 使用現有表格中的資料進行儲存。
 
-      ```mysql
-      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
-      ```
+     ```mysql
+     CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
+     ```
 
    - 確認新表格具有所有必要資料。
 

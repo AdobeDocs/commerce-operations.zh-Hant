@@ -2,7 +2,8 @@
 title: 效能最佳化
 description: 瞭解效能最佳化的一切相關資訊，以及檢閱Adobe Commerce實作效能所需的步驟。
 exl-id: 506ef2cc-c6fd-4401-afa5-a71e7b9871e6
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%

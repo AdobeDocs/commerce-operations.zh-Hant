@@ -2,7 +2,8 @@
 title: 交付與規劃方法
 description: 使用我們推薦的方法來規劃及提供Adobe Commerce實作。
 exl-id: ee2918d6-0d97-4f02-8e8f-b88bc999cd22
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%

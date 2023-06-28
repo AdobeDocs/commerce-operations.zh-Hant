@@ -3,9 +3,8 @@ title: 實作規劃階段
 description: 瞭解Adobe Commerce專案規劃階段的實作最佳實務。
 role: Developer, Admin, User
 feature: Best Practices
-feature-set: Commerce
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%

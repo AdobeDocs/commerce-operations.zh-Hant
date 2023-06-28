@@ -2,10 +2,9 @@
 title: 設定'robots.txt'和'sitemap.xml'檔案的最佳實務
 description: 瞭解如何將您的Adobe Commerce網站相關指示傳遞給網頁編目程式。
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -38,27 +37,27 @@ ht-degree: 0%
 - 確定您的專案正在使用 [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) 2002.0.12版或更新版本。
 - 使用管理應用程式將內容新增至 `robots.txt` 檔案。
 
-   >[!TIP]
-   >
-   >檢視自動產生的 `robots.txt` 您商店的檔案： `<domain.your.project>/robots.txt`.
+  >[!TIP]
+  >
+  >檢視自動產生的 `robots.txt` 您商店的檔案： `<domain.your.project>/robots.txt`.
 
 - 使用管理應用程式來產生 `sitemap.xml` 檔案。
 
-   >[!IMPORTANT]
-   >
-   >由於雲端基礎結構專案上的Adobe Commerce上只有唯讀檔案系統，因此您必須指定 `pub/media` 產生檔案之前的路徑。
+  >[!IMPORTANT]
+  >
+  >由於雲端基礎結構專案上的Adobe Commerce上只有唯讀檔案系統，因此您必須指定 `pub/media` 產生檔案之前的路徑。
 
 - 使用自訂Fastly VCL程式碼片段，從網站的根重新導向至 `pub/media/` 兩個檔案的位置：
 
-   ```vcl
-   {
-     "name": "sitemaprobots_rewrite",
-     "dynamic": "0",
-     "type": "recv",
-     "priority": "90",
-     "content": "if ( req.url.path ~ \"^/?sitemap.xml$\" ) { set req.url = \"pub/media/sitemap.xml\"; } else if (req.url.path ~ \"^/?robots.txt$\") { set req.url = \"pub/media/robots.txt\";}"
-   }
-   ```
+  ```vcl
+  {
+    "name": "sitemaprobots_rewrite",
+    "dynamic": "0",
+    "type": "recv",
+    "priority": "90",
+    "content": "if ( req.url.path ~ \"^/?sitemap.xml$\" ) { set req.url = \"pub/media/sitemap.xml\"; } else if (req.url.path ~ \"^/?robots.txt$\") { set req.url = \"pub/media/robots.txt\";}"
+  }
+  ```
 
 - 在網頁瀏覽器中檢視檔案，以測試重新導向。 例如， `<domain.your.project>/robots.txt` 和 `<domain.your.project>/sitemap.xml`. 請確定您使用的是設定重新導向的根路徑，而不是不同的路徑。
 
@@ -81,15 +80,15 @@ ht-degree: 0%
 
 - 使用稍作修改的自訂Fastly VCL程式碼片段，從網站的根重新導向至 `pub/media` 這兩個檔案在您網站中的位置：
 
-   ```vcl
-   {
-     "name": "sitemaprobots_rewrite",
-     "dynamic": "0",
-     "type": "recv",
-     "priority": "90",
-     "content": "if ( req.url.path == \"/robots.txt\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) { set req.url = \"pub/media/\" re.group.1 \"_robots.txt\"; }} else if ( req.url.path == \"/sitemap.xml\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) {  set req.url = \"pub/media/\" re.group.1 \"_sitemap.xml\"; }}"
-   }
-   ```
+  ```vcl
+  {
+    "name": "sitemaprobots_rewrite",
+    "dynamic": "0",
+    "type": "recv",
+    "priority": "90",
+    "content": "if ( req.url.path == \"/robots.txt\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) { set req.url = \"pub/media/\" re.group.1 \"_robots.txt\"; }} else if ( req.url.path == \"/sitemap.xml\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) {  set req.url = \"pub/media/\" re.group.1 \"_sitemap.xml\"; }}"
+  }
+  ```
 
 ## Adobe Commerce內部部署
 

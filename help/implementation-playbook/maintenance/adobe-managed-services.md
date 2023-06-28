@@ -2,7 +2,8 @@
 title: Adobe Managed Services
 description: 瞭解Adobe Managed Services如何協助支援和維護您的Adobe Commerce實作。
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
-source-git-commit: 2affc555c2e719d0f8b8de06df3a8c080effb425
+feature: Services
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 0%

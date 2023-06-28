@@ -2,7 +2,8 @@
 title: 主要利害關係人
 description: 請檢閱Adobe Commerce實作中涉及的主要利害關係人，以及擁有專案不同方面的人員。
 exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

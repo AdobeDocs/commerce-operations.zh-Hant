@@ -2,10 +2,9 @@
 title: 雲端部署的資料庫設定最佳實務
 description: 瞭解如何在雲端基礎結構上部署Adobe Commerce時，設定資料庫和應用程式設定以改善效能。
 role: Developer, Admin
-feature-set: Commerce
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 0%

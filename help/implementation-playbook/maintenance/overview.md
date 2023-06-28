@@ -2,7 +2,8 @@
 title: 維護與支援概述
 description: 正確維護及支援您新推出的Adobe Commerce實作。
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
-source-git-commit: 10d65d3453e260e105c1e90acbdfe678ca15c4e3
+feature: Deploy
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%

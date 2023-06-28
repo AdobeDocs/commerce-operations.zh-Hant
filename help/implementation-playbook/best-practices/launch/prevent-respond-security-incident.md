@@ -2,10 +2,9 @@
 title: 預防並回應安全性事件
 description: 瞭解避免和回應雲端基礎結構專案中Adobe Commerce安全性事件的最佳做法。
 role: Admin, Developer, Leader, User
-feature-set: Commerce
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 0%
