@@ -2,9 +2,9 @@
 title: 管理快取
 description: 管理快取型別和檢視快取狀態。
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -119,15 +119,19 @@ bin/magento cache:disable db_ddl full_page
 
 ## 清除和排清快取型別
 
+>[!NOTE]
+>
+>可同時自動讓多個頁面快取失效 **_不含_** 編輯這些實體。 例如，當目錄中的任何產品指派給任何類別時，或當任何 [!UICONTROL related product rule] 已修改。
+
 若要從快取中永久刪除過期的專案，您可以 _clean_ 或 _排清_ 快取型別：
 
 - 清除快取型別只會從已啟用的Commerce快取型別中刪除所有專案。 換言之，此選項不會影響其他程式或應用程式，因為它只會清除Commerce使用的快取。
 
-   停用的快取型別不會清除。
+  停用的快取型別不會清除。
 
-   >[!TIP]
-   >
-   >升級Magento Open Source或Adobe Commerce版本、從Magento Open Source升級至Adobe Commerce，或安裝Adobe Commerce或任何模組適用的B2B後，請務必清理快取。
+  >[!TIP]
+  >
+  >升級Magento Open Source或Adobe Commerce版本、從Magento Open Source升級至Adobe Commerce，或安裝Adobe Commerce或任何模組適用的B2B後，請務必清理快取。
 
 - 清除快取型別會清除快取儲存體，這可能會影響使用相同儲存體的其他程式應用程式。
 
