@@ -2,9 +2,9 @@
 title: 設定設定值
 description: 瞭解如何設定設定值，以及變更在Admin中鎖定的值。
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 064be78a16142fc18bf64256eafde4b14c3ad529
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 - 設定路徑
 - 若要設定特定範圍的組態值，您必須知道範圍代碼。
 
-   若要設定預設範圍的設定值，您不需要執行任何動作。
+  若要設定預設範圍的設定值，您不需要執行任何動作。
 
 ### 尋找設定路徑
 
@@ -289,3 +289,8 @@ bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_ur
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>範圍代碼只能包含字母（a-z或A-Z）、數字(0-9)和底線(_)。 此外，第一個字元必須是字母。 如果在建立新網站或商店檢視時使用了大寫或駝峰式大寫，則內部比對不區分大小寫，以透過環境變數來適應設定覆寫。 另請參閱 [使用環境變數來覆寫組態設定](../reference/override-config-settings.md#environment-variables).
+
