@@ -2,9 +2,9 @@
 title: 在「管理員」中設定多個網站、商店和商店檢視
 description: 在Commerce Admin中設定其他網站、商店和商店檢視。
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 5860f5327003372909c425c13c6d03166288d903
+source-git-commit: 78a7e99ecaba6a6f7982123f5bd67efc740ec2ef
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -172,8 +172,3 @@ Commerce可讓您選擇將商店程式碼新增至網站基底URL，簡化設定
    >如果您在雲端基礎結構上設定Adobe Commerce的基礎URL，則必須將第一個句號取代為三個破折號。 例如，如果您的基本URL為 `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`，輸入 `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`
 
 1. 按一下 **儲存設定**.
-
-
->[!INFO]
->
->網站、商店和商店檢視程式碼只能包含字母（a-z或A-Z）、數字(0-9)和底線(_)。 此外，第一個字元必須是字母。 如果使用大寫或駝峰字元，內部比對不區分大小寫，以透過環境變數來適應設定覆寫。 另請參閱 [使用環境變數來覆寫組態設定](../reference/override-config-settings.md#environment-variables).
