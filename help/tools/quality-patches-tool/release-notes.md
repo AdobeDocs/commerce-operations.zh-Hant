@@ -2,9 +2,9 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
+source-git-commit: 7649f4ffb0a04053d9a674aae7c29eb09ed02006
 workflow-type: tm+mt
-source-wordcount: '13230'
+source-wordcount: '13737'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,32 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需有關的資訊 [!DNL quality patches] 由社群建立以供Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.35 {#v1-1-35}
+
+* **ACSD-51899** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正結帳送貨步驟上的預設送貨地址自動填入先前選取的店內取貨地址的問題。
+* **ACSD-52041** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正錯誤訊息的問題： *[錯誤] [!DNL Page Builder] 呈現了5秒鐘，沒有解除鎖定。* 使用儲存編輯內容時顯示在Chrome瀏覽器中 [!DNL Page Builder].
+* **ACSD-52095** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.6) — 修正 `manage_stock` 產品匯出後，CSV檔案中的值未正確設定為0。
+* **ACSD-51358** (適用於Adobe Commerce >=2.4.5 &lt;2.4.7) — 修正移除排程更新而沒有結束日期會導致移除相同實體的其他排程更新的問題。
+* **ACSD-48070** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正編輯已排程更新會觸發例外狀況的問題。
+* **ACSD-51890** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正 [!UICONTROL Submit review] 按鈕點選多次，不需要 [!DNL Google reCAPTCHA] v3驗證。
+* **ACSD-51984** (適用於Adobe Commerce >=2.4.5 &lt;2.4.7) — 修正未勾選的問題 *[!UICONTROL Use Default Value]* 和 *[!UICONTROL non-default product field]* 不會儲存第二個網站、商店和商店檢視的值。
+* **ACSD-52398** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正錯誤 *請求的數量不可用* 嘗試更新店面購物車中捆綁產品的數量時，會發生這種情況。
+* **ACSD-52786** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.6) — 修正目錄規則條件的問題 *SKU是* 適用於從特定SKU開始的所有產品。
+* **ACSD-52921** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) — 修正當購物車中有無存貨的可設定產品時，向GraphQL請求購物車詳細資料會發生內部錯誤的問題。
+* **ACSD-51683** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正無法使用GraphQL將可自訂選項新增到購物車的問題。
+* **ACSD-52133** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正升級後無法儲存客戶帳戶的問題。
+* **ACSD-52202** (適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.7) — 修正訂單履行時非預設存貨變更為0數量時，預設存貨的可銷售數量錯誤地變更為0的問題。
+* **ACSD-51265** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正的問題 `catalog_product_price` 當系統中有太多套件產品時重新索引效能。
+* **ACSD-52831** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正客戶在下列情況下無法下可轉讓報價單的問題： [!DNL Google reCAPTCHA v3 Invisible] 已啟用。
+* **ACSD-51845** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正無法透過非同步大量REST API更新具有層級價格和其他屬性集的後續產品的問題。
+* **ACSD-52815** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.7) — 修正非預設來源的quantity欄位輸入最多只支援6位數，預設庫存則支援8位數的問題。
+* **ACSD-51149** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正具有已啟用目錄許可權的已排程匯入匯出使索引器失效，然後由cron快取排清的問題。
+* **ACSD-50815** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.6) — 修正簡單產品的小數數量無法用於新套件產品選項的問題。
+* ACSD-47803的更新版本。
+* 更新ACSD-51892的標題。
+* 更新ACSD-51379。
+* 更新ACSD-49970-v2。
 
 ## v1.1.34 {#v1-1-34}
 
@@ -516,7 +542,7 @@ ht-degree: 0%
 ## v1.0.23 {#v1-0-23}
 
 * **MDVA-37478** (*若為Adobe Commerce >=2.3.0 &lt;=2.3.7*) — 修正Adobe Commerce針對以下訂單建立部分發票時擲回錯誤的問題： *分期付款方式* 透過REST API的付款方法。
-* **MDVA-37362** (*適用於Adobe Commerce >=2.3.4 &lt;=2.4.2-p1*) — 修正GraphQL回應中，可設定的產品選項值和變數屬性值為空白的問題。
+* **MDVA-37362** (*適用於Adobe Commerce >=2.3.4 &lt;=2.4.2-p1*) — 修正GraphQL回應中可設定的產品選項值和變數屬性值為空白的問題。
 * **MDVA-37288** (*適用於Adobe Commerce 2.4.2*) — 修正GraphQL要求後傳回錯誤層級價格的問題。
 * **MDVA-37225** (*若為Adobe Commerce >=2.4.1 &lt;=2.4.2-p1*) — 修正當匯入的SKU中有整數值時，快速建立訂單期間上傳流程卡住的問題。
 * **MDVA-37224** (*適用於Adobe Commerce >=2.3.3 &lt;=2.4.2-p1*) — 修正客戶無法支付可協商報價的問題 [!DNL PayFlow Pro] 與購物車中的其他產品整合。
