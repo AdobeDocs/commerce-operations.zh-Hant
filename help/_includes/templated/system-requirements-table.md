@@ -1,5 +1,5 @@
 ---
-source-git-commit: 760e03cbeebbd7b457703e224093c233f7b6bab3
+source-git-commit: 77a4ad2b6cf2a59cade5ac79584c795a112cabe1
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 87%
@@ -9,7 +9,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
-><sup>*</sup>2.4.4版和2.4.5版僅支援MySQL 8.0.0到8.0.28。
+><sup>*</sup>2.4.4和2.4.5版僅支援MySQL 8.0.0到8.0.28。
 
 <table style="table-layout:auto">
   <thead>
@@ -27,10 +27,10 @@ ht-degree: 87%
       <th>2.4.4 - p4</th>
       <th>2.4.4 - p3</th>
       <th>2.4.4 - p2</th>
-      <th>2.4.4-p1</th>
+      <th>2.4.4 - p1</th>
       <th>2.4.4</th>
       <th>2.4.3 - p3</th>
-      <th>2.4.3-p2</th>
+      <th>2.4.3 - p2</th>
       <th>2.4.3</th>
       <th>2.4.2</th>
       <th>2.4.1</th>
@@ -278,46 +278,46 @@ ht-degree: 87%
             8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
             5.7, 8.0
