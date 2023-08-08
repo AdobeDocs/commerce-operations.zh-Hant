@@ -1,54 +1,90 @@
 ---
 title: 發行排程
-description: 瞭解特定版本的Adobe Commerce何時排程進行測試版、發行前版本和一般可用性。
+description: 瞭解Adobe計畫何時宣佈Adobe Commerce重要新功能的發行。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
 
 # 發行排程
 
-Adobe持續努力在使產品升級簡單且可預測，以及加快為早期採用者提供改善與新功能之間取得適當的平衡。 過去一年，我們完善了提供軟體的方式，以支援這種平衡。 如需詳細資訊，請參閱我們的 [版本設定原則](versioning-policy.md).
+Adobe持續努力在讓產品升級簡單且可預測，同時更快速地為早期採用者提供改善與新功能之間取得適當的平衡(請參閱 [版本設定原則](versioning-policy.md))。 此排程的目的是提供Adobe計畫宣佈推出重要新功能的日期。 這些功能在一年中可能會有所差異。 不過，Adobe會定期且持續地發行擴充性工具、基礎架構和SaaS產品（服務）的改良功能，日期範圍涵蓋此頁面所指定的日期。
 
-Adobe會針對每個支援的Adobe Commerce版本系列，發行安全性和功能修補程式。
+Adobe版本 [修補程式](versioning-policy.md#patch-release) 適用於核心Adobe Commerce PHP應用程式的每個受支援發行行。 修補程式發行可升級核心程式碼基底，確保平台安全、可靠及效能。 功能獨立於核心程式碼基底，並可透過以下方式使用 [外部模組、擴充功能、工具或Web服務](versioning-policy.md#extensibility-infrastructure-and-services-release).
 
-下表提供排程核發的日期（日期可能變動）：
-
-| 版本 | 版本 | 搶鮮版 | 全面發佈 |
-|--------------------------------------------------------------------|-------------------------------------------------|--------------------|----------------------|
-| 2023年1月功能發行 | \-\- | \-\- | 2023年1月17日 |
-| 2023年3月功能+修補程式版本+安全性修補程式版本 | 2.4.6<sup>1</sup><br>2.4.5 - p2<br>2.4.4 - p3 | 2023年2月28日 | 2023年3月14日 |
-| 2023年4月功能發行 | \-\- | \-\- | 2023年4月25日 |
-| 2023年6月功能+ Beta版修補程式+安全性修補程式版本 | 2.4.7-beta1<br>2.4.6 - p1<br>2.4.5 - p3<br>2.4.4 - p4 | 2023年5月30日 | 2023年6月13日 |
-| 2023年8月功能+安全性修補程式版本 | 2.4.6 - p2<br>2.4.5 - p4<br>2.4.4 - p5 | 2023年7月25日 | 2023年8月8日 |
-| 2023年10月功能+ Beta版修補程式+安全性修補程式版本 | 2.4.7-beta2<br>2.4.6 - p3<br>2.4.5-p5<br>2.4.4-p6 | 2023年9月26日 | 2023年10月10日 |
-
-{style="table-layout:auto"}
-
-<sup>\-\ — 表示不適用於此版本的專案。</sup><br>
-<sup>1 Beta版計畫於2023年1月推出</sup><br>
-
->[!TIP]
+>[!NOTE]
 >
->修補程式和安全修補程式發行可升級核心程式碼基底，確保平台安全、可靠且高效能。 功能發行每兩個月進行一次。 功能發行獨立於核心程式碼基底，並可透過外部模組或擴充功能取得。 現有獨立功能的任何更新都會在「功能發行」期間發行，如果功能已經實作，則不會自動更新。
+>從2024年開始，Adobe不再提供修補程式的「發行前」存取權。 相反地，對於2.4.7和更新版本，Adobe Commerce客戶可以使用 [Beta版本](beta.md) 存取用於測試和開發用途的預先一般可用性程式碼。 下列2023年版本仍會排程搶鮮版存取：
+>
+> - 2023年8月8日搶鮮版存取時間為2023年7月25日
+> - 2023年10月10日搶鮮版存取時間為2023年9月26日
 
-## 搶先使用
+下表提供排程核發的日期（日期可能會變更）：
 
-搶鮮版是「一般可用性」程式碼，可供Adobe Commerce商戶和所有合作夥伴在正式發行兩週前使用。 它可讓您在一般可用性之前更快速地部署程式碼。
-
-如需詳細資訊，請參閱 [Beta版](beta.md).
-
-## 發行型別
-
-- **修補程式發行版本** — 更新核心Adobe Commerce應用程式，包括安全性、法規遵循、效能和高優先順序品質修正。
-
-   >[!IMPORTANT]
-   >
-   >Adobe將發佈測試版修補程式版本（「測試版」），這是正式發行前的Adobe Commerce功能版本，已公開提供給所有Adobe Commerce客戶和Adobe合作夥伴。 Beta版可能包含瑕疵，並依「現況」提供，不提供任何型別的保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援(透過Adobe支援服務或其他方式) Beta版。 建議客戶謹慎行事，切勿依賴Beta版及/或任何隨附檔案或資料的正確運作或效能。 因此，客戶自行承擔使用測試版的風險。
-
-- **Beta版修補程式發行** — 核心Adobe Commerce應用程式的非一般可用性程式碼更新，包括安全性、合規性、效能和高優先順序品質修正。 它可讓您有更多時間來檢閱程式碼和受影響的元件。
-- **安全性修補程式發行** — 發行Adobe Commerce應用程式的僅安全性更新，確保商戶安全無虞且符合規範。
-- **功能發行** — 以獨立服務形式提供的新功能和功能更新，與修補程式發行版本分開。 範例包括產品Recommendations和Live Search等服務、PWA Studio和Inventory management (MSI)等獨立模組，以及雲端服務和基礎結構的更新。
+<table>
+<thead>
+  <tr>
+    <th>全面發佈</th>
+    <th>功能</th>
+    <th>PHP核心</th>
+  </tr>
+</thead>
+<tfoot>
+   <tr>
+      <td colspan="3"><strong>圖例</strong>：
+         <ul>
+            <li><strong><img alt="B2B功能圖示" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Adobe Commerce的B2B擴充功能新功能、增強功能和錯誤修正。</li>
+            <li><strong><img alt="擴充功能圖示" src="../assets/icons/brackets.svg"></img> 擴充性</strong> — 新的開發人員工具和服務可用於跨處理序擴充，這些工具和服務是獨立於修補程式發行版本提供的。 例如，管理員UI SDK、Commerce的Adobe I/O事件和API Mesh。</li>
+            <li><strong><img alt="基礎結構功能圖示" src="../assets/icons/servers.svg"></img> 基礎架構</strong> — 雲端基礎結構和Commerce適用的Cloud Tools Suite套件上的Adobe Commerce的新功能和增強功能，這些套件旨在部署和管理Cloud平台上的Adobe Commerce安裝和升級。</li>
+            <li><strong><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> 修補程式</strong> — 更新核心Adobe Commerce PHP應用程式，包括安全性、法規遵循、效能和高優先順序品質修正。</li>
+            <li><strong><img alt="服務功能圖示" src="../assets/icons/feature.svg"></img> 服務</strong> — 新的SaaS功能，與修補程式發行版本分開提供。 例如，目錄服務、即時搜尋和產品Recommendations。</li>
+         </ul>
+      </td>
+   </tr>
+</tfoot>
+<tbody>
+  <tr>
+    <td>2023年8月8日</td>
+    <td><img alt="B2B功能圖示" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="擴充功能圖示" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">擴充性</a><br><img alt="基礎結構功能圖示" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">基礎架構</a><br><img alt="服務功能圖示" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">服務</a></td>
+    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：2.4.6-p2、2.4.5-p4、2.4.4-p5</td>
+  </tr>
+  <tr>
+    <td>2023年10月10日</td>
+    <td><img alt="B2B功能圖示" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="擴充功能圖示" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">擴充性</a><br><img alt="基礎結構功能圖示" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">基礎架構</a><br><img alt="服務功能圖示" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">服務</a></td>
+    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">測試版修補程式</a>： 2.4.7-beta2<br> <img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：2.4.6-p3、2.4.5-p5、2.4.4-p6</td>
+  </tr>
+  <tr>
+    <td>2024年2月13日</td>
+    <td><img alt="B2B功能圖示" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="擴充功能圖示" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">擴充性</a><br><img alt="基礎結構功能圖示" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">基礎架構</a><br><img alt="服務功能圖示" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">服務</a></td>
+    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：2.4.6-p4、2.4.5-p6、2.4.4-p7</td>
+  </tr>
+  <tr>
+    <td>2024年3月19日</td>
+    <td>--</td>
+    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">測試版修補程式</a>： 2.4.7-beta3</td>
+  </tr>
+  <tr>
+    <td>2024年4月9日</td>
+    <td><img alt="B2B功能圖示" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="擴充功能圖示" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">擴充性</a><br><img alt="基礎結構功能圖示" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">基礎架構</a><br><img alt="服務功能圖示" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">服務</a></td>
+    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.7</a></strong>：<ul><li>效能改良</li><li>品質增強功能</li><li>安全性增強功能</li><li>協力廠商相依性更新</li></ul><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：2.4.6-p5、2.4.5-p7、2.4.4-p8</td>
+  </tr>
+  <tr>
+    <td>2024年6月11日</td>
+    <td><img alt="B2B功能圖示" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="擴充功能圖示" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">擴充性</a><br><img alt="基礎結構功能圖示" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">基礎架構</a><br><img alt="服務功能圖示" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">服務</a></td>
+    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：2.4.7-p1、2.4.6-p6、2.4.5-p8、2.4.4-p9</td>
+  </tr>
+  <tr>
+    <td>2024年8月13日</td>
+    <td><img alt="B2B功能圖示" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="擴充功能圖示" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">擴充性</a><br><img alt="基礎結構功能圖示" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">基礎架構</a><br><img alt="服務功能圖示" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">服務</a></td>
+    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：2.4.7-p2、2.4.6-p7、2.4.5-p9、2.4.4-p10</td>
+  </tr>
+  <tr>
+    <td>2024年10月8日</td>
+    <td><img alt="B2B功能圖示" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="擴充功能圖示" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">擴充性</a><br><img alt="基礎結構功能圖示" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">基礎架構</a><br><img alt="服務功能圖示" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">服務</a></td>
+    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">測試版修補程式</a>： 2.4.8-beta1<br><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：2.4.7-p3、2.4.6-p8、2.4.5-p10、2.4.4-p11</td>
+  </tr>
+</tbody>
+</table>
