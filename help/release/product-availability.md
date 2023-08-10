@@ -2,7 +2,7 @@
 title: 產品可用性
 description: 瞭解目前支援的Adobe Commerce功能，並檢查其與特定Adobe Commerce版本的相容性。
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 376c236f6bd4979daf896e1a49d7c6092a1c2661
+source-git-commit: aadccd57794e5e1b07f6d863c2627f2a771509fc
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 10%
@@ -23,10 +23,10 @@ Adobe已完整測試支援的版本。 支援版本可透過客戶支援尋求�
 
 下表顯示與Adobe Commerce版本相關的每個擴充功能的版本支援。
 
-| **Adobe Commerce版本** | 2.4.7-beta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
-|-|-|-|-|-|-|-|
+| **Adobe Commerce版本** | 2.4.7-beta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 |                                                                                                                                                                                                                                          |
+|----------------------------------------|-------------|--------|--------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _Adobe Commerce的Adobe I/O事件_ | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | - | [作曲者](https://developer.adobe.com/commerce/events/get-started/installation/) <br/>[發行說明](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
-| _B2B_ | 1.4.0 | 1.3.5 | 1.3.4 | 1.3.3 | 1.3.2 | [作曲者](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [發行說明](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
+| _B2B_ | 1.4.0+ | 1.3.5+ | 1.3.4 | 1.3.3 | 1.3.2 | [作曲者](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [發行說明](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
 | _頻道管理員_ | - | 2.0.0 | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [發行說明](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
 | _AmazonSales Channel_ | - | 4.1.0+ | 4.3.0+ | 4.3.0+ | 4.3.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [發行說明](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
 | _Experience Platform聯結器_ | 3.0.0-beta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[發行說明](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
@@ -44,8 +44,8 @@ Adobe已完整測試支援的版本。 支援版本可透過客戶支援尋求�
 
 下表顯示各服務相對於Adobe Commerce版本的版本支援。
 
-| **Adobe Commerce版本** | 2.4.7-beta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 | |
-|-|-|-|-|-|-|-|
+| **Adobe Commerce版本** | 2.4.7-beta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 |                                                                                                                                                                                                                                                |
+|--------------------------------------|-------------|--------|--------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _適用於Adobe Commerce的目錄服務_ | 1.9 | 1.9 | 1.9 | 1.9 | - | [概觀](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)<br/> [發行說明](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html) |
 | _即時搜尋_ | 3.01 | 3.01 | 3.01 | 3.01 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)<br/>[發行說明](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) |
 | _付款服務_ | 2.10 | 2.10 | 2.10 | 2.10 | - | [Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)<br/> [發行說明](https://commercemarketplace.adobe.com/magento-payment-services.html) |
