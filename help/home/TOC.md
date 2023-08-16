@@ -1,11 +1,11 @@
 ---
 user-guide-title: 作業指南
-user-guide-description: 瞭解維護Adobe Commerce或Magento Open Source應用程式的作業層面。
+user-guide-description: 了解維護您的 Adobe Commerce 或 Magento Open Source 應用程式的作業層面。
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
 source-git-commit: e8b41f25cfd5b707d701016e65db43826a7f26d6
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 
@@ -22,6 +22,6 @@ ht-degree: 0%
 - [工具](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html)
 - [命令列工具](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
 - [實施行動手冊](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
-- [營運Playbook](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
+- [營運行動手冊](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
 - [大規模商務](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/overview.html)
 - [安全性與合規性](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/overview.html)

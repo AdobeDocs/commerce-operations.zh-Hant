@@ -36,13 +36,13 @@ ht-degree: 0%
    bin/magento app:config:import
    ```
 
-1. 最後， `kill` 任何作用中的消費者程式。
+1. 最後， `kill` 任何作用中的取用者程式。
 
    ```bash
    kill <PID>
    ```
 
-   位置 `PID` 是要終止的程式ID，例如：
+   位置 `PID` 是要終止的處理序ID，例如：
 
    ```bash
    kill 1234

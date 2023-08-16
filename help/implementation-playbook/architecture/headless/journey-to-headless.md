@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Adobe Commerce的Headless之旅
 
-![Adobe Commerce邁向Headless架構的歷程時間表](../../../assets/playbooks/journey-to-headless.svg)
+![Adobe Commerce邁向Headless架構歷程的時間表](../../../assets/playbooks/journey-to-headless.svg)

@@ -5,7 +5,7 @@ feature: Configuration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 0%
    - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用狀況](quality-patches-tool/usage.md)
    - [發行說明](quality-patches-tool/release-notes.md)
-- Adobe Commerce的觀察 {#observation-for-adobe-commerce}
+- Adobe Commerce的觀察結果 {#observation-for-adobe-commerce}
    - [簡介](observation-for-adobe-commerce/intro.md)
    - [如何存取](observation-for-adobe-commerce/access.md)
    - [選取帳戶和時間範圍](observation-for-adobe-commerce/selecting-the-account.md)
@@ -44,14 +44,14 @@ ht-degree: 0%
    - [「部署」標籤](observation-for-adobe-commerce/deploy-tab.md)
    - [警示標籤](observation-for-adobe-commerce/alerts-tab.md)
    - [WAF標籤](observation-for-adobe-commerce/waf-tab.md)
-   - [CDN標籤](observation-for-adobe-commerce/cdn-tab.md)
+   - [CDN索引標籤](observation-for-adobe-commerce/cdn-tab.md)
    - [此 [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Cron標籤](observation-for-adobe-commerce/cron-tab.md)
    - [索引標籤](observation-for-adobe-commerce/indexing-tab.md)
-   - [「快速檢視」標籤](observation-for-adobe-commerce/oac-quickview-tab.md)
+   - [快速檢視標籤](observation-for-adobe-commerce/oac-quickview-tab.md)
    - [安全性標籤](observation-for-adobe-commerce/security-tab.md)
-   - [「底層」標籤](observation-for-adobe-commerce/oac-infra.md)
-   - [如何針對Adobe Commerce使用觀察功能](observation-for-adobe-commerce/how-to-use.md)
+   - [「地下」標籤](observation-for-adobe-commerce/oac-infra.md)
+   - [如何針對Adobe Commerce使用觀察](observation-for-adobe-commerce/how-to-use.md)
 - Data Migration Tool {#data-migration}
    - [移轉的運作方式](data-migration-tool/how-migration-works.md)
    - [最佳實務](data-migration-tool/best-practices.md)
@@ -73,6 +73,6 @@ ht-degree: 0%
       - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
       - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
    - 資源 {#resources}
-      - [疑難排除](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

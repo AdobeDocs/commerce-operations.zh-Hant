@@ -1,11 +1,11 @@
 ---
 title: Adobe Commerce和Magento Open Source發行說明
-description: 瞭解在何處可以找到特定Adobe Commerce和Magento Open Source版本的資訊。
+description: 了解在哪裡可以找到 Adobe Commerce 和 Magento Open Source 特定版本的資訊。
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
 source-git-commit: c371ee59e4f1efcc947d0bbd189a892d8f32a5b7
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 0%
       </td>
     </tr>
     <tr>
-      <td><strong>適用於Adobe Commerce的服務</strong>
+      <td><strong>Adobe Commerce 服務</strong>
         <p>瞭解創新性Commerce服務的最新改善，這些服務可作為Adobe Commerce和Magento Open Source擴充功能使用。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>

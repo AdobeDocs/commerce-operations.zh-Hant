@@ -13,19 +13,19 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-此命令會執行Commerce 2程式碼庫中定義的一組測試。 您可以執行所有測試或選取的測試。 每當指定了不受支援的型別時，程式就會終止並列出所有可用的型別。 執行後，詳細報告隨即顯示，其中顯示測試回合和結果。
+此命令會執行Commerce 2程式碼庫中定義的一組測試。 您可以執行所有測試或您選取的測試。 每當指定不支援的型別時，程式就會終止並列出所有可用的型別。 執行後，詳細報告隨即顯示，顯示測試回合和結果。
 
 ## 必要條件
 
-執行此命令之前，請先執行下列動作 _必須_ 為true：
+執行此指令之前，請先執行下列動作 _必須_ 為true：
 
 - 此 `Magento_Developer` 模組必須啟用。 您可以依照以下方式啟用它：
 
-   ```bash
-   bin/magento module:enable [--force] Magento_Developer
-   ```
+  ```bash
+  bin/magento module:enable [--force] Magento_Developer
+  ```
 
-   使用 `--force` 選項。
+  使用 `--force` 選項（如有必要）。
 
 - 您的系統必須設定為執行所需的測試。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 bin/magento dev:tests:run <test>
 ```
 
-若要列出可用的測試型別：
+列出可用的測試型別：
 
 ```bash
 bin/magento dev:tests:run --help

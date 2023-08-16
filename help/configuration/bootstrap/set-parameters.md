@@ -1,17 +1,17 @@
 ---
 title: 設定啟動程式引數的值
-description: 瞭解如何為Commerce應用程式設定啟動引數。
+description: 瞭解如何為Commerce應用程式設定啟動程式引數。
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Bootstrap引數
 
-本主題示範如何設定Commerce應用程式啟動引數值。 另請參閱 [應用程式初始化和啟動載入概觀](initialization.md).
+本主題示範如何設定Commerce應用程式啟動程式引數的值。 另請參閱 [應用程式初始化和啟動載入概述](initialization.md).
 
 下表討論您可以設定的啟動程式引數：
 
@@ -22,17 +22,16 @@ ht-degree: 0%
 
 >[!INFO]
 >
->- 並非所有啟動程式引數都已記錄下來。
->- 您現在可以使用以下設定應用程式模式（開發人員、預設、生產）： [`magento deploy:mode:set {mode}`](../cli/set-mode.md) 命令。
-
+>- 並非所有啟動程式引數都記錄下來。
+>- 您現在可以使用來設定應用程式模式（開發人員、預設、生產）。 [`magento deploy:mode:set {mode}`](../cli/set-mode.md) 命令。
 
 ## 使用環境變數設定引數
 
-本節探討如何使用環境變數設定啟動程式引數的值。
+本節將討論如何使用環境變數來設定啟動程式引數的值。
 
 ### 設定應用程式模式
 
-您可以將啟動載入變數指定為系統範圍的環境變數，讓所有程式都可以使用這些變數。
+您可以將啟動程式變數指定為系統範圍的環境變數，讓所有程式都能夠使用這些變數。
 
 例如，您可以使用 `MAGE_PROFILER` 系統環境變數來指定模式，如下所示：
 
@@ -40,7 +39,7 @@ ht-degree: 0%
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
-使用殼層特定指令設定變數。 由於shell的語法不同，請參考參考如 [unix.stackexchange.com][unix-stackx].
+使用殼層特定的命令設定變數。 因為殼層有不同的語法，請參考如下的參照 [unix.stackexchange.com][unix-stackx].
 
 CentOS的Bash shell範例：
 
@@ -50,11 +49,11 @@ export MAGE_PROFILER=firebug
 
 >[!INFO]
 >
->若為 `PHP Fatal error` 設定效能評測器值後，就會顯示在瀏覽器中，請重新啟動網頁伺服器。 原因可能與PHP位元組碼快取有關，它會快取位元組碼和PHP類別路徑。
+>如果 `PHP Fatal error` 設定效能評測器值後，便會在瀏覽器中顯示，請重新啟動網頁伺服器。 原因可能與PHP位元碼快取有關，它會快取位元碼和PHP類別路徑。
 
 ## 設定Apache或Nginx的引數
 
-本節討論如何指定Apache或Nginx的模式。
+本節探討如何指定Apache或Nginx的模式。
 
 ### Nginx設定
 
@@ -62,18 +61,18 @@ export MAGE_PROFILER=firebug
 
 ### Apache .htaccess設定
 
-設定應用程式模式的一種方法是編輯 `.htaccess`. 如此一來，您就不必變更Apache設定。
+設定應用程式模式的一個方法是編輯 `.htaccess`. 如此一來，您就不必變更Apache設定。
 
 您可以修改 `.htaccess` 在下列任一位置（視您的Commerce應用程式進入點而定）：
 
 - `<magento_root>/.htaccess`
 - `<magento_root>/pub/.htaccess`
 
-**若要設定變數**：
+**設定變數**：
 
-1. 在文字編輯器中開啟任何先前的檔案，然後新增或取消註解所需的設定。
+1. 在文字編輯器中開啟任何先前的檔案，並新增或取消註解所要的設定。
 
-   例如，若要指定 [模式](application-modes.md)，取消註解以下內容：
+   例如，若要指定 [模式](application-modes.md)，取消註解下列專案：
 
    ```conf
    #   SetEnv MAGE_PROFILER firebug
@@ -93,15 +92,15 @@ export MAGE_PROFILER=firebug
 
 Apache Web Server支援使用設定應用程式模式 `mod_env` 指令。
 
-Apache `mod_env` 指示詞在以下內容中稍微不同： [Apache 2.2版] 和 [Apache 2.4版].
+Apache `mod_env` 指示詞在 [Apache 2.2版] 和 [Apache 2.4版].
 
-以下程式說明如何在Apache虛擬主機中設定應用程式模式。 這不是唯一的使用方式 `mod_env` 指示詞；如需詳細資訊，請參閱Apache檔案。
+下列程式說明如何在Apache虛擬主機中設定應用程式模式。 這不是使用的唯一方法 `mod_env` 指令；請參閱Apache檔案以取得詳細資訊。
 
 >[!TIP]
 >
 >下節假設您已設定虛擬主機。 如果沒有，請查閱資源，例如 [此DigitalOcean教學課程](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
 
-**為Ubuntu上的Apache指定啟動載入變數**：
+**為Ubuntu上的Apache指定啟動程式變數**：
 
 1. 作為使用者，具有 `root` 許可權，在文字編輯器中開啟您的虛擬主機設定檔案。
 
@@ -110,7 +109,7 @@ Apache `mod_env` 指示詞在以下內容中稍微不同： [Apache 2.2版] 和 
    - Apache 2.4： `vim /etc/apache2/sites-available/my.magento.conf`
    - Apache 2.2： `vim /etc/apache2/sites-available/my.magento`
 
-1. 在虛擬主機設定的任何位置，新增下列行：
+1. 在虛擬主機組態中的任何位置，新增下列行：
 
    ```conf
    SetEnv "<variable name>" "<variable value>"
@@ -144,11 +143,11 @@ Apache `mod_env` 指示詞在以下內容中稍微不同： [Apache 2.2版] 和 
 >
 >本節假設您已設定虛擬主機。 如果沒有，請查閱資源，例如 [此DigitalOcean教學課程](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
 
-**若要為CentOS上的Apache指定啟動載入變數**：
+**為CentOS上的Apache指定啟動程式變數**：
 
 1. 作為使用者，具有 `root` 許可權，開啟 `/etc/httpd/conf/httpd.conf` 在文字編輯器中。
 
-1. 在虛擬主機設定的任何位置，新增下列行：
+1. 在虛擬主機組態中的任何位置，新增下列行：
 
    ```conf
    SetEnv "<variable name>" "<variable value>"

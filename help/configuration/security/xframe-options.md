@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # X-Frame-Options標頭
 
-協助防止 [點選劫持](https://owasp.org/www-community/attacks/Clickjacking) 利用漏洞，我們新增了一個選項來使用 [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) 對店面的請求中的HTTP請求標頭。
+協助防止 [點選劫持](https://owasp.org/www-community/attacks/Clickjacking) 利用漏洞，我們新增了一個選項來使用 [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) 對您店面的請求中的HTTP請求標頭。
 
-此 `X-Frame-Options` 頁首可讓您指定是否允許瀏覽器在中轉譯頁面 `<frame>`， `<iframe>`，或 `<object>` 如下所示：
+此 `X-Frame-Options` 頁首可讓您指定是否應該允許瀏覽器在 `<frame>`， `<iframe>`，或 `<object>` 如下所示：
 
 - `DENY`：頁面無法顯示在框架中。
 - `SAMEORIGIN`：（預設）頁面只能在與頁面本身相同原始位置的框架中顯示。
@@ -29,26 +29,26 @@ ht-degree: 0%
 
 ## 實作 `X-Frame-Options`
 
-設定值 `X-Frame-Options` 在 `<project-root>/app/etc/env.php`. 預設值設定如下：
+設定值 `X-Frame-Options` 在 `<project-root>/app/etc/env.php`. 預設值的設定如下：
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',
 ```
 
-針對任何變更重新部署 `env.php` 檔案生效。
+針對的任何變更重新部署 `env.php` 檔案以生效。
 
 >[!TIP]
 >
->編輯會更安全 `env.php` 在「管理員」中設定值。
+>編輯「 」會更安全 `env.php` 設定管理員中的值。
 
 ## 驗證您的設定 `X-Frame-Options`
 
 若要驗證您的設定，請檢視任何店面頁面上的HTTP標題。 有數種方法可以達成此目的，包括使用網頁瀏覽器檢測器。
 
-以下範例使用curl，您可以從任何可透過HTTP通訊協定連線至您的Commerce伺服器的電腦執行它。
+以下範例使用curl，您可以從任何可以透過HTTP通訊協定連線至您的Commerce伺服器的電腦執行此動作。
 
 ```bash
 curl -I -v --location-trusted '<storefront-URL>'
 ```
 
-尋找 `X-Frame-Options` 值標頭中的。
+尋找 `X-Frame-Options` 值。

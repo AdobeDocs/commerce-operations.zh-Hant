@@ -14,10 +14,10 @@ ht-degree: 0%
             預設副檔名
         </th>
         <th>
-            已安裝無法解除安裝的擴充功能
+            安裝的擴充功能無法解除安裝
         </th>
         <th>
-            可依需求安裝和解除安裝的擴充功能
+            可視需要安裝和解除安裝的擴充功能
         </th>
       </tr>
     </thead>
@@ -47,7 +47,7 @@ ht-degree: 0%
                 curl<br>
                 日期<br>
                 dom<br>
-                fileinfo<br>
+                檔案資訊<br>
                 篩選<br>
                 ftp<br>
                 雜湊<br>
@@ -62,7 +62,7 @@ ht-degree: 0%
                 phar<br>
                 posix<br>
                 readline<br>
-                工作階段<br>
+                session<br>
                 sqlite3<br>
                 tokenizer<br>
                 xml<br>
@@ -88,10 +88,10 @@ ht-degree: 0%
                 raphf<br>
                 recode<br>
                 redis<br>
-                shmop插槽<br>
+                購物插座<br>
                 鈉<br>
                 ssh2<br>
-                整齊<br>
+                整潔<br>
                 xdebug<br>
                 xmlrpc<br>
                 xsl<br>

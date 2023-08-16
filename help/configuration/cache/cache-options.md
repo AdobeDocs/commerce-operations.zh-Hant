@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 低階快取選項
 
-Commerce應用程式會使用低階快取前端和後端來提供對快取儲存區的存取權。
+Commerce應用程式使用低階快取前端和後端來提供對快取儲存區的存取權。
 
 ## 低階前端快取
 
@@ -26,4 +26,4 @@ Commerce應用程式會使用低階快取前端和後端來提供對快取儲存
 - [資料庫](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
 - 檔案系統（預設）：不需要設定即可使用檔案系統快取。
 
-[清漆](config-varnish.md) 不需要設定低階快取後端。
+[亮漆](config-varnish.md) 不需要設定低階快取後端。

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # .gitignore參考
 
-Magento Open Source包含基底 `.gitignore` 檔案。 另請參閱 [最新的Commerce `.gitignore`](https://raw.githubusercontent.com/magento/magento2/2.4/.gitignore) 檔案。 如果您必須新增的檔案位於 `.gitignore` 清單中，您可以使用 `-f` 暫存認可時（強制）選項：
+Magento Open Source包含基底 `.gitignore` 檔案。 另請參閱 [最新商務 `.gitignore`](https://raw.githubusercontent.com/magento/magento2/2.4/.gitignore) 檔案。 如果您必須新增檔案，該檔案位於 `.gitignore` 清單中，您可以使用 `-f` 暫存認可時（強制）選項：
 
 ```bash
 git add <path/filename> -f

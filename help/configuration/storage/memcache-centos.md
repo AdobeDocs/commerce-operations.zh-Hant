@@ -12,26 +12,26 @@ ht-degree: 0%
 
 # 在CentOS上設定記憶體快取
 
-本節提供在CentOS上安裝memcached的說明。 如需詳細資訊，請參閱 [memcached wiki](https://github.com/memcached/old-wiki).
+本節提供在CentOS上安裝記憶體快取的說明。 如需詳細資訊，請參閱 [memcached wiki](https://github.com/memcached/old-wiki).
 
 >[!INFO]
 >
 >Adobe建議使用最新的穩定memcached版本（目前memcached為3.1.3）。
 
-由於PHP對memcache沒有原生支援，因此您必須安裝PHP擴充功能才能使用它。 有兩個可用的PHP擴充功能，請務必解碼要使用哪個：
+因為PHP對memcache沒有原生支援，所以您必須安裝擴充功能以供PHP使用。 有兩個可用的PHP擴充功能，請務必解碼要使用哪個：
 
 - `memcache` (_否d_) — 舊版但常用的擴充功能，不會定期維護。
 此 `memcache` 目前為擴充功能 _不會_ 使用PHP 7。 另請參閱 [memcache的PHP檔案](https://www.php.net/manual/en/book.memcache.php).
 
-   確切的名稱為 `php-pecl-memcache` 適用於CentOS。
+  確切名稱為 `php-pecl-memcache` 適用於CentOS。
 
-- `memcached` (_搭配`d`_) — 與PHP 7相容的更新和維護的擴充功能。 另請參閱 [memcached的PHP檔案](https://www.php.net/manual/en/book.memcached.php).
+- `memcached` (_與`d`_) — 與PHP 7相容的較新及維護的擴充功能。 另請參閱 [memcached的PHP檔案](https://www.php.net/manual/en/book.memcached.php).
 
-   確切的名稱為 `php-pecl-memcached` 適用於CentOS。
+  確切名稱為 `php-pecl-memcached` 適用於CentOS。
 
 ## 在CentOS上安裝並設定記憶體快取
 
-若要在CentOS上安裝memcached，請以使用者身分執行以下工作 `root` 許可權：
+若要在CentOS上安裝memcached，請以使用者的身分執行以下工作： `root` 許可權：
 
 1. 安裝memcached及其相依性：
 
@@ -59,13 +59,13 @@ ht-degree: 0%
 1. 變更的memcached組態設定 `CACHESIZE` 和 `OPTIONS`：
 
    1. 開啟 `/etc/sysconfig/memcached` 在文字編輯器中。
-   1. 找到「 」的值 `CACHESIZE` 並將其變更為至少1 GB。 例如：
+   1. 找出值 `CACHESIZE` 並將其變更為至少1 GB。 例如：
 
       ```config
       CACHESIZE="1GB"
       ```
 
-   1. 找到「 」的值 `OPTIONS` 並將其變更為 `localhost` 或 `127.0.0.1`
+   1. 找出值 `OPTIONS` 並將其變更為 `localhost` 或 `127.0.0.1`
 
 1. 將變更儲存至 `memcached` 並退出文字編輯器。
 1. 重新啟動memcached。
@@ -74,7 +74,7 @@ ht-degree: 0%
    service memcached restart
    ```
 
-1. 重新啟動網頁伺服器。
+1. 重新啟動您的網頁伺服器。
 
    若為Apache：
 
@@ -84,15 +84,15 @@ ht-degree: 0%
 
 1. 繼續下一節。
 
-## 在安裝Commerce之前驗證memcached是否有效
+## 在安裝Commerce之前驗證memcached的運作方式
 
-Adobe建議先測試memcached以確保其可運作，然後再安裝Commerce。 只需幾分鐘即可完成，並可簡化後續的疑難排解。
+Adobe建議先測試memcached以確保其可運作，然後再安裝Commerce。 只需幾分鐘即可完成這項工作，並可簡化後續的疑難排解。
 
-### 確認網頁伺服器可辨識成員快取
+### 驗證Web伺服器是否可辨識memcached
 
-若要確認網頁伺服器可辨識成員快取：
+若要驗證網頁伺服器是否可辨識成員快取：
 
-1. 建立 `phpinfo.php` 網頁伺服器docroot中的檔案：
+1. 建立 `phpinfo.php` 網頁伺服器的docroot中的檔案：
 
    ```php
    <?php
@@ -110,11 +110,11 @@ Adobe建議先測試memcached以確保其可運作，然後再安裝Commerce。 
 
 確認您使用的是memcached 3.0.5版或更新版本。
 
-如果memcache未顯示，請重新啟動網頁伺服器並重新整理瀏覽器頁面。 如果仍然沒有顯示，請確認您已安裝 `php-pecl-memcache` 副檔名。
+如果memcache未顯示，請重新啟動Web伺服器並重新整理瀏覽器頁面。 如果仍然沒有顯示，請確認您已安裝 `php-pecl-memcache` 副檔名。
 
-### 建立由MySQL資料庫和PHP指令碼組成的成員快取測試
+### 建立包含MySQL資料庫和PHP指令碼的memcache測試
 
-此測試會使用MySQL資料庫、表格和資料，以確認您可以擷取資料庫資料並將其儲存在memcache中。 PHP指令碼會先搜尋快取。 如果結果不存在，指令碼會查詢資料庫。 原始資料庫完成查詢後，指令碼會使用 `set` 命令。
+此測試使用MySQL資料庫、表格和資料，以確認您可以擷取資料庫資料並將其儲存在memcache中。 PHP指令碼會先搜尋快取。 如果結果不存在，指令碼會查詢資料庫。 原始資料庫完成查詢後，指令碼會使用 `set` 命令。
 
 [此測試的更多詳細資料](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 
@@ -163,7 +163,7 @@ print "got result from memcached\n";
 return 0;
 ```
 
-位置 `<memcached hostname or ip>` 為 `localhost`， `127.0.0.1`，或成員快取主機名稱或IP位址。 此 `<memcached port>` 是監聽連線埠；依預設， `11211`.
+位置 `<memcached hostname or ip>` 是 `localhost`， `127.0.0.1`、或memcache主機名稱或IP位址。 此 `<memcached port>` 是監聽連線埠；預設為 `11211`.
 
 從命令列執行指令碼。
 
@@ -177,7 +177,7 @@ php cache-test.php
 
 第一個結果為 `got result from mysql`. 這表示該索引鍵不存在於memcached中，但它是從MySQL擷取的。
 
-第二個結果為 `got result from memcached`，會驗證值是否已成功儲存在memcached中。
+第二個結果為 `got result from memcached`，可驗證值是否已成功儲存在memcached中。
 
 最後，您可以使用Telnet檢視memcache金鑰：
 

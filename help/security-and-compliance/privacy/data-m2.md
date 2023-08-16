@@ -1,6 +1,6 @@
 ---
 title: 客戶個人資訊參考（2.x版）
-description: 瞭解Adobe Commerce和Magento Open Source2.x中客戶個人資訊的資料流圖表和資料庫實體對應。
+description: 瞭解Adobe Commerce和Magento Open Source 2.x中客戶個人資訊的資料流圖表和資料庫實體對應。
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -13,34 +13,34 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這是一系列主題中的一個，可協助Adobe Commerce和Magento Open Source商家及開發人員為遵守隱私權法規做好準備。 請洽詢您的法律顧問，判斷您的企業是否及如何遵守任何法律義務。
+>這是一系列主題中的其中一項，可協助Adobe Commerce和Magento Open Source商家及開發人員為遵守隱私權法規做好準備。 請洽詢您的法律顧問，判斷您的企業是否應該及如何遵守任何法律義務。
 
-開發隱私權法規的規範遵循程式時，請參考下列資料流圖表和資料庫實體對應，例如：
+在開發隱私權法規的規範遵循程式時，請參考下列資料流圖表和資料庫實體對應，例如：
 
 - [GDPR](gdpr.md)
 - [CCPA](ccpa.md)
 
 ## 資料流圖表
 
-資料流圖表顯示客戶和管理員可以輸入並從店面和管理員中擷取的資料型別。
+資料流圖表顯示客戶和管理員可以從店面和管理員輸入和擷取的資料型別。
 
-### 前端資料輸入點
+### 前端資料進入點
 
-註冊帳戶時、結帳期間和類似事件時，使用者可以輸入客戶、地址和付款資訊。
+註冊帳戶時、結帳期間以及類似事件時，使用者可以輸入客戶、地址和付款資訊。
 
-![前端資料輸入點](../../assets/security-compliance/frontend-data-entry-points.svg)
+![前端資料進入點](../../assets/security-compliance/frontend-data-entry-points.svg)
 
 ### 前端資料存取點
 
-客戶登入並檢視數個不同頁面或簽出時，Adobe Commerce和Magento Open Source會載入客戶資訊。
+客戶登入並檢視數個不同頁面或結帳時，Adobe Commerce和Magento Open Source會載入客戶資訊。
 
 ![前端資料存取點](../../assets/security-compliance/frontend-data-access-points.svg)
 
-### 後端資料輸入點
+### 後端資料進入點
 
-商家從管理員建立客戶或訂單時，可以輸入客戶資訊、地址資料及付款資料。
+商家在從「管理員」建立客戶或訂單時，可以輸入客戶資訊、地址資料及付款資料。
 
-![後端資料輸入點](../../assets/security-compliance/backend-data-entry-points.svg)
+![後端資料進入點](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### 後端資料存取點
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## 資料庫實體
 
-Adobe Commerce和Magento Open Source主要將客戶特定的資訊儲存在客戶、地址、訂單、報價和付款表中。 其他表格則包含對客戶ID的參照。
+Adobe Commerce和Magento Open Source主要將客戶特定的資訊儲存在客戶、地址、訂單、報價和付款表格中。 其他表格則包含對客戶ID的參照。
 
 ### 客戶資料
 
@@ -62,14 +62,14 @@ Adobe Commerce和Magento Open Source可設定為儲存下列客戶屬性：
 - 性別
 - 姓氏
 - 中間名/首字母
-- 名稱首碼
-- 名稱字尾
+- 名稱前置詞
+- 名稱尾碼
 
 >[!NOTE]
 >
->為了遵循目前的安全性和隱私權最佳實務，在收集或處理這類資料之前，請務必瞭解客戶完整出生日期（月、日、年）及其他個人識別碼（例如全名）的儲存可能會帶來的任何法律和安全風險。
+>為了遵循目前的安全性和隱私權最佳實務，在收集或處理此類資料之前，請務必瞭解任何與儲存客戶完整出生日期（月、日、年）及其他個人識別碼（例如全名）相關的潛在法律和安全風險。
 
-#### `customer_entity` 和&#39;customer_entity&#39;參考
+#### `customer_entity` 和「customer_entity」參考
 
 下列欄位位於 `customer_entity` 表格包含客戶資訊：
 
@@ -119,7 +119,7 @@ Adobe Commerce和Magento Open Source可設定為儲存下列客戶屬性：
 
 ### 位址資料
 
-Adobe Commerce和Magento Open Source會儲存下列客戶屬性：
+Adobe Commerce和Magento Open Source儲存下列客戶屬性：
 
 - 城市
 - 公司
@@ -128,8 +128,8 @@ Adobe Commerce和Magento Open Source會儲存下列客戶屬性：
 - 名字
 - 姓氏
 - 中間名/首字母
-- 名稱首碼
-- 名稱字尾
+- 名稱前置詞
+- 名稱尾碼
 - 電話號碼
 - 州/省
 - 州/省ID
@@ -277,7 +277,7 @@ Adobe Commerce和Magento Open Source會儲存下列客戶屬性：
 
 ### 付款資料
 
-此 `sales_order_payment` 表格包含信用卡資訊和其他交易資訊。
+此 `sales_order_payment` 表格中包含信用卡資訊和其他交易資訊。
 
 | 欄 | 資料型別 |
 | ------------------------ | ------------ |
@@ -295,7 +295,7 @@ Adobe Commerce和Magento Open Source會儲存下列客戶屬性：
 
 ### 邀請資料
 
-可以設定Adobe Commerce和Magento Open Source，讓客戶可以傳送邀請函給私人銷售和活動。
+可以設定Adobe Commerce和Magento Open Source，讓客戶可以傳送邀請給私人銷售和活動。
 
 #### `magento_invitation` 表格
 

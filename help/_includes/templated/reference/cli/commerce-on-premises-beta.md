@@ -13,17 +13,17 @@ ht-degree: 0%
 
 **版本**： 2.4.7-beta1
 
-此參照包含132個指令，這些指令可透過 `bin/magento` 命令列工具。
-初始清單會使用 `bin/magento list` Adobe Commerce命令。
+此參考包含132個指令，這些指令可透過 `bin/magento` 命令列工具。
+初始清單會使用 `bin/magento list` Adobe Commerce的命令。
 使用 [新增CLI命令](https://developer.adobe.com/commerce/php/development/cli-commands/) 新增自訂CLI命令的指南。
 
 >[!NOTE]
 >
->您可以呼叫 `bin/magento` CLI命令使用快速鍵而不是完整的命令名稱。 例如，您可以呼叫 `bin/magento setup:upgrade` 使用 `bin/magento s:up`， `bin/magento s:upg`. 另請參閱 [捷徑語法](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) 瞭解如何使用任何CLI命令的捷徑。
+>您可以呼叫 `bin/magento` CLI命令使用捷徑，而不是完整的命令名稱。 例如，您可以呼叫 `bin/magento setup:upgrade` 使用 `bin/magento s:up`， `bin/magento s:upg`. 另請參閱 [捷徑語法](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) 瞭解如何使用任何CLI指令的捷徑。
 
 >[!NOTE]
 >
->此參考是從應用程式程式碼基底產生的。 若要變更內容，您可以更新中對應命令實作的原始程式碼 [程式碼基底](https://github.com/magento) 存放庫並提交您的變更以供檢閱。 另一種方式是 _提供我們意見反應_ （尋找右上方的連結）。 如需貢獻准則，請參閱 [程式碼協助撰寫](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>此參考是從應用程式程式碼基底產生的。 若要變更內容，您可以更新中對應命令實施的原始碼 [程式碼基底](https://github.com/magento) 存放庫並提交您的變更以供檢閱。 另一種方式是 _提供意見反應_ （尋找右上方的連結）。 如需貢獻准則，請參閱 [程式碼協助撰寫](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 
@@ -41,7 +41,7 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 ### `--input`, `-i`
 
-輸入權杖陣列（例如COMP_WORDS或argv）
+輸入權杖的陣列（例如COMP_WORDS或argv）
 
 - 預設： `[]`
 - 需要值
@@ -60,7 +60,7 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -118,7 +118,7 @@ bin/magento completion [--debug] [--] [<shell>]
 
 ### `shell`
 
-如果未提供殼層型別（例如「bash」），則會使用「$SHELL」環境變數的值
+如果未指定shell型別（例如&quot;bash&quot;），則會使用&quot;$SHELL&quot;環境變數的值
 
 
 ### `--debug`
@@ -130,7 +130,7 @@ bin/magento completion [--debug] [--] [<shell>]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -202,14 +202,14 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--raw`
 
-輸出原始命令說明
+輸出原始指令說明
 
 - 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -272,7 +272,7 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ### `--raw`
 
-要輸出原始命令清單
+輸出原始命令清單
 
 - 預設： `false`
 - 不接受值
@@ -293,7 +293,7 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -350,7 +350,7 @@ bin/magento admin:adobe-ims:disable
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -431,7 +431,7 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -488,7 +488,7 @@ bin/magento admin:adobe-ims:info
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -545,7 +545,7 @@ bin/magento admin:adobe-ims:status
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -632,13 +632,13 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -702,7 +702,7 @@ bin/magento admin:user:unlock <username>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -760,7 +760,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `config-types`
 
-以空格分隔的設定型別清單或省略以傾印所有 [範圍，系統，主題， i18n]
+以空格分隔的設定型別清單或省略以傾印所有 [範圍，系統，佈景主題， i18n]
 
 - 預設： `[]`
 
@@ -768,7 +768,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -825,7 +825,7 @@ bin/magento app:config:import
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -882,7 +882,7 @@ bin/magento app:config:status
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -963,7 +963,7 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1035,7 +1035,7 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1107,7 +1107,7 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1179,7 +1179,7 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1228,7 +1228,7 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ## `cache:flush`
 
-清除快取型別使用的快取儲存空間
+清除快取型別使用的快取儲存體
 
 ```bash
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
@@ -1251,7 +1251,7 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1314,7 +1314,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1385,7 +1385,7 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1442,7 +1442,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1491,7 +1491,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ## `cms:wysiwyg:restrict`
 
-設定是強制使用者HTML內容驗證，還是改為顯示警告
+設定是否要強制使用者HTML內容驗證，或改為顯示警告
 
 ```bash
 bin/magento cms:wysiwyg:restrict <restrict>
@@ -1506,7 +1506,7 @@ y\n
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1555,7 +1555,7 @@ y\n
 
 ## `config:sensitive:set`
 
-設定敏感設定值
+設定敏感的設定值
 
 ```bash
 bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path> [<value>]]
@@ -1595,7 +1595,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1644,7 +1644,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ## `config:set`
 
-變更系統設定
+變更系統組態
 
 ```bash
 bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env] [-c|--lock-config] [-l|--lock] [--] <path> <value>
@@ -1699,7 +1699,7 @@ bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1762,7 +1762,7 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ### `--scope`
 
-設定範圍（若未指定），則會使用「預設」範圍
+設定範圍（如果未指定），則會使用「預設」範圍
 
 - 預設： `default`
 - 接受值
@@ -1776,7 +1776,7 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1847,7 +1847,7 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1904,7 +1904,7 @@ bin/magento cron:remove
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -1980,7 +1980,7 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2037,7 +2037,7 @@ bin/magento customer:hash:upgrade
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2101,14 +2101,14 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 ### `--skip-compilation`, `-s`
 
-略過清除及重新產生靜態內容（產生的程式碼、預先處理的CSS和pub/static/中的資產）
+略過清除和重新產生靜態內容（產生的程式碼、預先處理的CSS和pub/static/中的資產）
 
 - 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2165,7 +2165,7 @@ bin/magento deploy:mode:show
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2229,7 +2229,7 @@ bin/magento dev:di:info <class>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2278,7 +2278,7 @@ bin/magento dev:di:info <class>
 
 ## `dev:email:newsletter-compatibility-check`
 
-掃描Newsletter範本，找出可能的變數使用相容性問題
+掃描Newsletter範本以找出潛在的變數使用相容性問題
 
 ```bash
 bin/magento dev:email:newsletter-compatibility-check
@@ -2286,7 +2286,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2335,7 +2335,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ## `dev:email:override-compatibility-check`
 
-掃描電子郵件範本覆寫以確定潛在的變數使用相容性問題
+掃描電子郵件範本覆寫，以找出潛在的變數使用相容性問題
 
 ```bash
 bin/magento dev:email:override-compatibility-check
@@ -2343,7 +2343,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2400,7 +2400,7 @@ bin/magento dev:profiler:disable
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2463,7 +2463,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2512,7 +2512,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ## `dev:query-log:disable`
 
-停用DB查詢記錄
+停用資料庫查詢記錄
 
 ```bash
 bin/magento dev:query-log:disable
@@ -2520,7 +2520,7 @@ bin/magento dev:query-log:disable
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2569,7 +2569,7 @@ bin/magento dev:query-log:disable
 
 ## `dev:query-log:enable`
 
-啟用DB查詢記錄
+啟用資料庫查詢記錄
 
 ```bash
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
@@ -2598,7 +2598,7 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2656,7 +2656,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `file`
 
-要預先處理的檔案（請指定沒有副檔名的檔案）
+要預先處理的檔案（請指定不帶副檔名的檔案）
 
 - 預設： `css/styles-mcss/styles-l`
 
@@ -2664,7 +2664,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--type`
 
-來源檔案型別： [更少]
+來源檔案型別： [較少]
 
 - 預設： `less`
 - 需要值
@@ -2678,7 +2678,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--area`
 
-區域： [frontend\|adminhtml]
+區域： [前端\|adminhtml]
 
 - 預設： `frontend`
 - 需要值
@@ -2692,7 +2692,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2749,7 +2749,7 @@ bin/magento dev:template-hints:disable
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2806,7 +2806,7 @@ bin/magento dev:template-hints:enable
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2863,7 +2863,7 @@ bin/magento dev:template-hints:status
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2935,7 +2935,7 @@ PHPUnit的其他引數。 範例：「 — c」 — filter=MyTest&#39;」（無�
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -2984,7 +2984,7 @@ PHPUnit的其他引數。 範例：「 — c」 — filter=MyTest&#39;」（無�
 
 ## `dev:urn-catalog:generate`
 
-產生URN到*.xsd對映的目錄，以便IDE反白顯示xml。
+產生URN的目錄至*.xsd對應，以便IDE反白顯示xml。
 
 ```bash
 bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
@@ -3006,7 +3006,7 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3070,7 +3070,7 @@ bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 
 ### `processor`
 
-將套用至XML檔案的XSL樣式表路徑
+要套用至XML檔案的XSL樣式表路徑
 
 - 必填
 
@@ -3083,7 +3083,7 @@ bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3149,7 +3149,7 @@ bin/magento downloadable:domains:add [<domains>...]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3198,7 +3198,7 @@ bin/magento downloadable:domains:add [<domains>...]
 
 ## `downloadable:domains:remove`
 
-從可下載的網域白名單中移除網域
+從可下載的網域白名單移除網域
 
 ```bash
 bin/magento downloadable:domains:remove [<domains>...]
@@ -3215,7 +3215,7 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3272,7 +3272,7 @@ bin/magento downloadable:domains:show
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3321,7 +3321,7 @@ bin/magento downloadable:domains:show
 
 ## `encryption:payment-data:update`
 
-使用最新的加密密碼重新加密加密信用卡資料。
+使用最新的加密密碼重新加密已加密的信用卡資料。
 
 ```bash
 bin/magento encryption:payment-data:update
@@ -3329,7 +3329,7 @@ bin/magento encryption:payment-data:update
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3378,7 +3378,7 @@ bin/magento encryption:payment-data:update
 
 ## `events:create-event-provider`
 
-在此例項的Adobe I/O事件中建立自訂事件提供者。 如果您未指定標籤和說明選項，則必須在系統app/etc/event-types.json檔案中加以定義。
+在此例項的Adobe I/O事件中建立自訂事件提供者。 如果您未指定標籤和說明選項，則必須在系統app/etc/event-types.json檔案中定義它們。
 
 ```bash
 bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCRIPTION]]
@@ -3403,7 +3403,7 @@ bin/magento events:provider:create
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3460,7 +3460,7 @@ bin/magento events:generate:module
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3531,7 +3531,7 @@ bin/magento events:info [--depth [DEPTH]] [--] <event-code>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3588,7 +3588,7 @@ bin/magento events:list
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3652,7 +3652,7 @@ bin/magento events:list:all <module_name>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3701,7 +3701,7 @@ bin/magento events:list:all <module_name>
 
 ## `events:metadata:populate`
 
-從設定清單建立Adobe I/O的中繼資料（XML和應用程式設定）
+從組態清單（XML和應用程式組態）以Adobe I/O建立中繼資料
 
 ```bash
 bin/magento events:metadata:populate
@@ -3709,7 +3709,7 @@ bin/magento events:metadata:populate
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3800,14 +3800,14 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 ### `--priority`, `-p`
 
-加速此事件的傳輸。 為需要立即傳送的事件指定此選項。 根據預設，事件會由cron每分鐘傳送一次。
+加速此事件的傳輸。 為需要立即傳送的事件指定此選項。 依預設，事件會由cron每分鐘傳送一次。
 
 - 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3856,7 +3856,7 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 ## `events:sync-events-metadata`
 
-同步此執行個體的事件中繼資料
+同步處理此執行個體的事件中繼資料
 
 ```bash
 bin/magento events:sync-events-metadata [-d|--delete]
@@ -3871,7 +3871,7 @@ bin/magento events:sync-events-metadata [-d|--delete]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3935,7 +3935,7 @@ bin/magento events:unsubscribe <event-code>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -3998,7 +3998,7 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 ### `--output`, `-o`
 
-輸出檔案的路徑（包括檔案名稱）。 未指定檔案時，預設值為stdout。
+輸出檔案的路徑（包括檔案名稱）。 若未指定檔案，預設值為stdout。
 
 - 需要值
 
@@ -4011,7 +4011,7 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4088,14 +4088,14 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 ### `--allow-duplicates`, `-d`
 
-使用 — allow-duplicates引數可允許儲存翻譯的重複專案。 否則請省略引數。
+使用 — allow-duplicates引數以允許儲存轉譯的重複專案。 否則，請忽略引數。
 
 - 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4162,14 +4162,14 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 ### `--backup-code`, `-b`
 
-進行程式碼和組態檔備份（不包括暫存檔）
+進行程式碼和組態檔備份（不包括暫存檔案）
 
 - 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4226,7 +4226,7 @@ bin/magento indexer:info
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4292,7 +4292,7 @@ bin/magento indexer:reindex [<index>...]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4341,7 +4341,7 @@ bin/magento indexer:reindex [<index>...]
 
 ## `indexer:reset`
 
-將索引器狀態重設為無效
+將索引子狀態重設為無效
 
 ```bash
 bin/magento indexer:reset [<index>...]
@@ -4358,7 +4358,7 @@ bin/magento indexer:reset [<index>...]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4421,12 +4421,12 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 ### `mode`
 
-索引器維度模式catalog_product_price none，website，customer_group，website_and_customer_group目錄permissions_category none，customer_group
+索引子維度模式catalog_product_price none，website，customer_group，website_and_customer_group目錄permissions_category none，customer_group
 
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4497,7 +4497,7 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4563,7 +4563,7 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4629,7 +4629,7 @@ bin/magento indexer:show-mode [<index>...]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4695,7 +4695,7 @@ bin/magento indexer:status [<index>...]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4752,7 +4752,7 @@ bin/magento info:adminuri
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4809,7 +4809,7 @@ bin/magento info:backups:list
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4866,7 +4866,7 @@ bin/magento info:currency:list
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4930,7 +4930,7 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -4994,7 +4994,7 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5058,7 +5058,7 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5115,7 +5115,7 @@ bin/magento info:language:list
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5172,7 +5172,7 @@ bin/magento info:timezone:list
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5221,7 +5221,7 @@ bin/magento info:timezone:list
 
 ## `inventory:reservation:create-compensations`
 
-依據提供的報酬引數建立預留
+依據提供的薪酬引數建立預留
 
 ```bash
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
@@ -5245,7 +5245,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5294,7 +5294,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ## `inventory:reservation:list-inconsistencies`
 
-顯示所有可銷售數量不一致的訂單與產品
+顯示所有具有可銷售數量不一致的訂單與產品
 
 ```bash
 bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-i|--incomplete-orders] [-b|--bunch-size [BUNCH-SIZE]] [-r|--raw]
@@ -5309,7 +5309,7 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 ### `--incomplete-orders`, `-i`
 
-僅顯示不完整訂單的不一致
+僅顯示未完成訂單的不一致
 
 - 預設： `false`
 - 不接受值
@@ -5330,7 +5330,7 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5397,7 +5397,7 @@ bin/magento inventory-geonames:import <countries>...
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5463,7 +5463,7 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 ### `--none`
 
-清除允許的IP位址
+清除允許的IP地址
 
 - 預設： `false`
 - 不接受值
@@ -5477,13 +5477,13 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5547,13 +5547,13 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5617,13 +5617,13 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5680,13 +5680,13 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5743,7 +5743,7 @@ bin/magento media-content:sync
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5800,7 +5800,7 @@ bin/magento media-gallery:sync
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5849,7 +5849,7 @@ bin/magento media-gallery:sync
 
 ## `module:config:status`
 
-檢查「app/etc/config.php」檔案中的模組設定，並報告它們是否為最新狀態
+檢查「app/etc/config.php」檔案中的模組設定，並報告模組設定是否為最新狀態
 
 ```bash
 bin/magento module:config:status
@@ -5857,7 +5857,7 @@ bin/magento module:config:status
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -5944,13 +5944,13 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6037,13 +6037,13 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6101,7 +6101,7 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 ### `module-names`
 
-選用的模組名稱
+選用模組名稱
 
 - 預設： `[]`
 
@@ -6109,27 +6109,27 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 ### `--enabled`
 
-僅列印啟用的模組
+僅列印已啟用的模組
 
 - 預設： `false`
 - 不接受值
 
 ### `--disabled`
 
-僅列印已停用的模組
+僅列印停用的模組
 
 - 預設： `false`
 - 不接受值
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6203,7 +6203,7 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ### `--backup-code`
 
-進行程式碼和組態檔備份（不包括暫存檔）
+進行程式碼和組態檔備份（不包括暫存檔案）
 
 - 預設： `false`
 - 不接受值
@@ -6224,7 +6224,7 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ### `--non-composer`
 
-所有過去在此的模組都將以非撰寫器為基礎
+所有過去模組皆會採用非撰寫器型
 
 - 預設： `false`
 - 不接受值
@@ -6238,13 +6238,13 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6324,7 +6324,7 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6373,7 +6373,7 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 ## `queue:consumers:list`
 
-MessageQueue使用者清單
+MessageQueue取用者清單
 
 ```bash
 bin/magento queue:consumers:list
@@ -6381,7 +6381,7 @@ bin/magento queue:consumers:list
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6438,7 +6438,7 @@ bin/magento queue:consumers:restart
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6502,7 +6502,7 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 
 ### `--max-messages`
 
-處理序終止前消費者要處理的訊息數。 如果未指定 — 在處理所有佇列的訊息後終止。
+處理序終止前，消費者要處理的訊息數目。 如果未指定 — 在處理所有佇列的訊息後終止。
 
 - 需要值
 
@@ -6514,32 +6514,32 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 
 ### `--area-code`
 
-慣用區域（全域、管理ML等）預設為全域。
+偏好區域（全域、adminhtml等）預設為全域。
 
 - 需要值
 
 ### `--single-thread`
 
-此選項可防止同時執行一個消費者的多個復本。
+此選項可防止同時執行一個使用者的多個復本。
 
 - 預設： `false`
 - 不接受值
 
 ### `--multi-process`
 
-每個使用者的處理序數目。
+每個取用者的處理序數目。
 
 - 接受值
 
 ### `--pid-file-path`
 
-儲存PID的檔案路徑（此選項已過時，請改用 — 單一執行緒）
+儲存PID的檔案路徑（此選項已過時，改用 — 單一執行緒）
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6596,7 +6596,7 @@ bin/magento remote-storage:sync
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6660,7 +6660,7 @@ bin/magento saas:resync [--no-reindex] [--feed FEED] [--cleanup-feed]
 
 ### `--feed`
 
-完全重新同步至SaaS服務的摘要名稱。 可用的摘要：
+要完全重新同步至SaaS服務的摘要名稱。 可用的摘要：
 
 - 需要值
 
@@ -6673,7 +6673,7 @@ bin/magento saas:resync [--no-reindex] [--feed FEED] [--cleanup-feed]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6722,7 +6722,7 @@ bin/magento saas:resync [--no-reindex] [--feed FEED] [--cleanup-feed]
 
 ## `sampledata:deploy`
 
-部署範例資料模組以進行Composer型Magento安裝
+部署範例資料模組，以進行Composer型Magento安裝
 
 ```bash
 bin/magento sampledata:deploy [--no-update]
@@ -6730,14 +6730,14 @@ bin/magento sampledata:deploy [--no-update]
 
 ### `--no-update`
 
-在不執行編輯器更新的情況下更新composer.json
+更新composer.json而不執行composer更新
 
 - 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6794,14 +6794,14 @@ bin/magento sampledata:remove [--no-update]
 
 ### `--no-update`
 
-在不執行編輯器更新的情況下更新composer.json
+更新composer.json而不執行composer更新
 
 - 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6858,7 +6858,7 @@ bin/magento sampledata:reset
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6915,7 +6915,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -6972,7 +6972,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -7042,7 +7042,7 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -7099,7 +7099,7 @@ bin/magento security:tfa:providers
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -7169,7 +7169,7 @@ bin/magento security:tfa:reset <user> <provider>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -7254,7 +7254,7 @@ magento bootstrap初始引數
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -7311,7 +7311,7 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ### `--code`
 
-進行程式碼和組態檔備份（不包括暫存檔）
+進行程式碼和組態檔備份（不包括暫存檔案）
 
 - 預設： `false`
 - 不接受值
@@ -7332,13 +7332,13 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -7395,7 +7395,7 @@ bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-d
 
 ### `--backend-frontname`
 
-後端frontname （如果遺失，將自動產生）
+後端前端名稱（如果遺失，則會自動產生）
 
 - 需要值
 
@@ -7407,7 +7407,7 @@ bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-d
 
 ### `--enable-syslog-logging`
 
-啟用syslog記錄
+啟用Syslog記錄
 
 - 需要值
 
@@ -7465,7 +7465,7 @@ bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-d
 
 ### `--id_salt`
 
-GraphQl Salt
+graphql Salt
 
 - 需要值
 
@@ -7604,7 +7604,7 @@ Amqp SSL選項(JSON)
 
 ### `--skip-db-validation`, `-s`
 
-如果已指定，則會略過db連線驗證
+若指定，則會略過資料庫連線驗證
 
 - 預設： `false`
 - 不接受值
@@ -7624,21 +7624,21 @@ http快取主機
 
 ### `--db-ssl-cert`
 
-使用者端憑證檔案的完整路徑，以便透過SSL建立DB連線
+使用者端憑證檔案的完整路徑，以便透過SSL建立資料庫連線
 
 - 預設： &quot;
 - 需要值
 
 ### `--db-ssl-ca`
 
-伺服器憑證檔案的完整路徑，以便透過SSL建立DB連線
+伺服器憑證檔案的完整路徑，以透過SSL建立資料庫連線
 
 - 預設： &quot;
 - 需要值
 
 ### `--db-ssl-verify`
 
-驗證伺服器憑證
+驗證伺服器認證
 
 - 預設： `false`
 - 不接受值
@@ -7651,7 +7651,7 @@ http快取主機
 
 ### `--session-save-redis-host`
 
-使用UNIX通訊端時為完整的主機名稱、IP位址或絕對路徑
+使用UNIX通訊端時完整的主機名稱、IP位址或絕對路徑
 
 - 需要值
 
@@ -7705,13 +7705,13 @@ Redis記錄層級。 值： 0 （最少詳細）至7 （最詳細）
 
 ### `--session-save-redis-max-concurrency`
 
-可等待鎖定一個工作階段的最大處理序數目
+可等候鎖定一個工作階段的最大處理序數目
 
 - 需要值
 
 ### `--session-save-redis-break-after-frontend`
 
-嘗試中斷前端工作階段的鎖定前等待的秒數
+嘗試中斷前端工作階段鎖定之前要等待的秒數
 
 - 需要值
 
@@ -7723,19 +7723,19 @@ Redis記錄層級。 值： 0 （最少詳細）至7 （最詳細）
 
 ### `--session-save-redis-first-lifetime`
 
-非機器人在第一次寫入時的工作階段期限（以秒為單位） （使用0可停用）
+非機器人第一次寫入工作階段的期限（以秒為單位） （使用0可停用）
 
 - 需要值
 
 ### `--session-save-redis-bot-first-lifetime`
 
-機器人第一次寫入的工作階段期限（以秒為單位） （使用0可停用）
+機器人首次寫入工作階段的期限（以秒為單位） （使用0可停用）
 
 - 需要值
 
 ### `--session-save-redis-bot-lifetime`
 
-機器人後續寫入作業的工作階段期限（使用0可停用）
+機器人後續寫入的工作階段期限（使用0可停用）
 
 - 需要值
 
@@ -7868,7 +7868,7 @@ Redis伺服器密碼
 
 ### `--page-cache-redis-compress-data`
 
-設定為1可壓縮完整頁面快取（使用0可停用）
+設為1可壓縮整頁快取（使用0可停用）
 
 - 需要值
 
@@ -7910,13 +7910,13 @@ Zookeeper儲存鎖定的路徑。 預設路徑為： /magento/locks
 
 ### `--lock-file-path`
 
-檔案鎖定的儲存路徑。
+儲存檔案鎖定的路徑。
 
 - 需要值
 
 ### `--document-root-is-pub`
 
-要顯示的旗標為Pub位於根目錄上，只能為true或false
+要顯示的旗標為Pub位於根目錄，只能為true或false
 
 - 需要值
 
@@ -7970,19 +7970,19 @@ Redis伺服器使用者
 
 ### `--backpressure-logger-id-prefix`
 
-索引鍵的ID首碼
+金鑰的ID首碼
 
 - 需要值
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -8039,13 +8039,13 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -8129,7 +8129,7 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -8193,7 +8193,7 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -8250,7 +8250,7 @@ bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--usernam
 
 ### `--host`
 
-從屬資料庫伺服器主機
+從屬DB伺服器主機
 
 - 預設： `localhost`
 - 需要值
@@ -8297,13 +8297,13 @@ bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--usernam
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -8372,13 +8372,13 @@ bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--usern
 
 ### `--username`
 
-簽出資料庫使用者名稱
+簽出DB使用者名稱
 
 - 需要值
 
 ### `--password`
 
-簽出DB使用者密碼
+簽出資料庫使用者密碼
 
 - 接受值
 
@@ -8398,13 +8398,13 @@ bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--usern
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -8453,7 +8453,7 @@ bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--usern
 
 ## `setup:db-schema:split-sales`
 
-將銷售相關表格移至個別的DB伺服器。 自2.4.2起已棄用，將移除
+將銷售相關資料表移至個別的DB伺服器。 自2.4.2起已棄用，將移除
 
 ```bash
 bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -8499,13 +8499,13 @@ bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--usern
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -8554,7 +8554,7 @@ bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--usern
 
 ## `setup:db-schema:upgrade`
 
-安裝及升級DB結構
+安裝及升級資料庫結構描述
 
 ```bash
 bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -8569,13 +8569,13 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -8632,13 +8632,13 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -8687,7 +8687,7 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ## `setup:di:compile`
 
-產生DI設定及所有可自動產生的遺漏類別
+產生DI組態以及所有可自動產生的遺漏類別
 
 ```bash
 bin/magento setup:di:compile
@@ -8695,7 +8695,7 @@ bin/magento setup:di:compile
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -8752,7 +8752,7 @@ bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debu
 
 ### `--backend-frontname`
 
-後端frontname （如果遺失，將自動產生）
+後端前端名稱（如果遺失，則會自動產生）
 
 - 需要值
 
@@ -8764,7 +8764,7 @@ bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debu
 
 ### `--enable-syslog-logging`
 
-啟用syslog記錄
+啟用Syslog記錄
 
 - 需要值
 
@@ -8822,7 +8822,7 @@ bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debu
 
 ### `--id_salt`
 
-GraphQl Salt
+graphql Salt
 
 - 需要值
 
@@ -8961,7 +8961,7 @@ Amqp SSL選項(JSON)
 
 ### `--skip-db-validation`, `-s`
 
-如果已指定，則會略過db連線驗證
+若指定，則會略過資料庫連線驗證
 
 - 預設： `false`
 - 不接受值
@@ -8981,21 +8981,21 @@ http快取主機
 
 ### `--db-ssl-cert`
 
-使用者端憑證檔案的完整路徑，以便透過SSL建立DB連線
+使用者端憑證檔案的完整路徑，以便透過SSL建立資料庫連線
 
 - 預設： &quot;
 - 需要值
 
 ### `--db-ssl-ca`
 
-伺服器憑證檔案的完整路徑，以便透過SSL建立DB連線
+伺服器憑證檔案的完整路徑，以透過SSL建立資料庫連線
 
 - 預設： &quot;
 - 需要值
 
 ### `--db-ssl-verify`
 
-驗證伺服器憑證
+驗證伺服器認證
 
 - 預設： `false`
 - 不接受值
@@ -9008,7 +9008,7 @@ http快取主機
 
 ### `--session-save-redis-host`
 
-使用UNIX通訊端時為完整的主機名稱、IP位址或絕對路徑
+使用UNIX通訊端時完整的主機名稱、IP位址或絕對路徑
 
 - 需要值
 
@@ -9062,13 +9062,13 @@ Redis記錄層級。 值： 0 （最少詳細）至7 （最詳細）
 
 ### `--session-save-redis-max-concurrency`
 
-可等待鎖定一個工作階段的最大處理序數目
+可等候鎖定一個工作階段的最大處理序數目
 
 - 需要值
 
 ### `--session-save-redis-break-after-frontend`
 
-嘗試中斷前端工作階段的鎖定前等待的秒數
+嘗試中斷前端工作階段鎖定之前要等待的秒數
 
 - 需要值
 
@@ -9080,19 +9080,19 @@ Redis記錄層級。 值： 0 （最少詳細）至7 （最詳細）
 
 ### `--session-save-redis-first-lifetime`
 
-非機器人在第一次寫入時的工作階段期限（以秒為單位） （使用0可停用）
+非機器人第一次寫入工作階段的期限（以秒為單位） （使用0可停用）
 
 - 需要值
 
 ### `--session-save-redis-bot-first-lifetime`
 
-機器人第一次寫入的工作階段期限（以秒為單位） （使用0可停用）
+機器人首次寫入工作階段的期限（以秒為單位） （使用0可停用）
 
 - 需要值
 
 ### `--session-save-redis-bot-lifetime`
 
-機器人後續寫入作業的工作階段期限（使用0可停用）
+機器人後續寫入的工作階段期限（使用0可停用）
 
 - 需要值
 
@@ -9225,7 +9225,7 @@ Redis伺服器密碼
 
 ### `--page-cache-redis-compress-data`
 
-設定為1可壓縮完整頁面快取（使用0可停用）
+設為1可壓縮整頁快取（使用0可停用）
 
 - 需要值
 
@@ -9267,13 +9267,13 @@ Zookeeper儲存鎖定的路徑。 預設路徑為： /magento/locks
 
 ### `--lock-file-path`
 
-檔案鎖定的儲存路徑。
+儲存檔案鎖定的路徑。
 
 - 需要值
 
 ### `--document-root-is-pub`
 
-要顯示的旗標為Pub位於根目錄上，只能為true或false
+要顯示的旗標為Pub位於根目錄，只能為true或false
 
 - 需要值
 
@@ -9327,25 +9327,25 @@ Redis伺服器使用者
 
 ### `--backpressure-logger-id-prefix`
 
-索引鍵的ID首碼
+金鑰的ID首碼
 
 - 需要值
 
 ### `--base-url`
 
-商店應於的URL提供。 已棄用，請使用config：set以及路徑web/unsecure/base_url
+商店的URL預計可在。 已棄用，請使用config：set以及路徑web/unsecure/base_url
 
 - 需要值
 
 ### `--language`
 
-預設語言代碼。 已棄用，請使用config：set以及路徑general/locale/code
+預設語言代碼。 已棄用，請使用config：set搭配路徑general/locale/code
 
 - 需要值
 
 ### `--timezone`
 
-預設時區代碼。 已棄用，請使用config：set以及路徑general/locale/timezone
+預設時區代碼。 已棄用，請使用config：set搭配路徑general/locale/timezone
 
 - 需要值
 
@@ -9357,25 +9357,25 @@ Redis伺服器使用者
 
 ### `--use-rewrites`
 
-使用重寫。 已棄用，請使用config：set搭配路徑web/seo/use_rewrites
+使用rewrites。 已棄用，請使用config：set搭配路徑web/seo/use_rewrites
 
 - 需要值
 
 ### `--use-secure`
 
-使用安全URL。 只有在SSL可用時才啟用此選項。 已棄用，請使用config：set以及路徑web/secure/use_in_frontend
+使用安全URL。 只有在SSL可用時才啟用此選項。 已棄用，將config：set與路徑web/secure/use_in_frontend一起使用
 
 - 需要值
 
 ### `--base-url-secure`
 
-SSL連線的基礎URL。 已棄用，請使用config：set以及路徑web/secure/base_url
+SSL連線的基礎URL。 已棄用，請使用config：set搭配路徑web/secure/base_url
 
 - 需要值
 
 ### `--use-secure-admin`
 
-使用SSL執行管理介面。 已棄用，請使用config：set以及路徑web/secure/use_in_adminhtml
+使用SSL執行管理介面。 已棄用，請使用config：set搭配路徑web/secure/use_in_adminhtml
 
 - 需要值
 
@@ -9417,7 +9417,7 @@ SSL連線的基礎URL。 已棄用，請使用config：set以及路徑web/secure
 
 ### `--search-engine`
 
-搜尋引擎。 值： elasticsearch5、elasticsearch7、elasticsearch8、opensearch
+搜尋引擎。 值： elasticsearch5， elasticsearch7， elasticsearch8， opensearch
 
 - 需要值
 
@@ -9429,13 +9429,13 @@ Elasticsearch伺服器主機。
 
 ### `--elasticsearch-port`
 
-Elasticsearch伺服器連線埠。
+Elasticsearch的伺服器連線埠。
 
 - 需要值
 
 ### `--elasticsearch-enable-auth`
 
-設為1可啟用驗證。 （預設值為0，已停用）
+設為1以啟用驗證。 （預設為0，已停用）
 
 - 需要值
 
@@ -9477,7 +9477,7 @@ OpenSearch伺服器連線埠。
 
 ### `--opensearch-enable-auth`
 
-設為1可啟用驗證。 （預設值為0，已停用）
+設為1以啟用驗證。 （預設為0，已停用）
 
 - 需要值
 
@@ -9507,7 +9507,7 @@ OpenSearch伺服器逾時。
 
 ### `--cleanup-database`
 
-在安裝之前清理資料庫
+安裝前先清理資料庫
 
 - 預設： `false`
 - 不接受值
@@ -9527,7 +9527,7 @@ OpenSearch伺服器逾時。
 
 ### `--enable-modules`
 
-逗號分隔模組名稱清單。 安裝期間必須包含此專案。 可用的魔術引數「all」。
+逗號分隔模組名稱清單。 安裝期間必須包括此專案。 可用的魔術引數「all」。
 
 - 接受值
 
@@ -9565,20 +9565,20 @@ OpenSearch伺服器逾時。
 
 ### `--dry-run`
 
-Magento安裝將在試執行模式下執行
+Magento安裝將以試執行模式執行
 
 - 預設： `false`
 - 接受值
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -9649,7 +9649,7 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -9698,7 +9698,7 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 ## `setup:rollback`
 
-回覆Magento應用程式程式碼基底、媒體與資料庫
+回覆Magento應用程式程式碼基底、媒體及資料庫
 
 ```bash
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -9724,13 +9724,13 @@ var/backups中db備份檔案的基本名稱
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -9831,7 +9831,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 ### `--exclude-theme`
 
-不要為指定的主題產生檔案。
+不要產生指定主題的檔案。
 
 - 預設： `none`
 - 接受多個值
@@ -9873,7 +9873,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 ### `--content-version`
 
-如果在多個節點上執行部署，可以使用靜態內容的自訂版本，以確保靜態內容版本相同且快取可正常運作。
+如果在多個節點上執行部署，則可以使用靜態內容的自訂版本，以確保靜態內容版本相同且快取可正常運作。
 
 - 需要值
 
@@ -9914,7 +9914,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 ### `--no-images`
 
-不要部署影像。
+請勿部署影像。
 
 - 預設： `false`
 - 不接受值
@@ -9942,7 +9942,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 ### `--no-html-minify`
 
-請勿將HTML檔案縮制。
+請勿縮制HTML檔案。
 
 - 預設： `false`
 - 不接受值
@@ -9956,7 +9956,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -10005,7 +10005,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 ## `setup:store-config:set`
 
-安裝存放區設定。 自2.2.0起已棄用。請改用config：set
+安裝存放區設定。 自2.2.0版起已棄用。請改用config：set
 
 ```bash
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -10013,19 +10013,19 @@ bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [
 
 ### `--base-url`
 
-商店應於的URL提供。 已棄用，請使用config：set以及路徑web/unsecure/base_url
+商店的URL預計可在。 已棄用，請使用config：set以及路徑web/unsecure/base_url
 
 - 需要值
 
 ### `--language`
 
-預設語言代碼。 已棄用，請使用config：set以及路徑general/locale/code
+預設語言代碼。 已棄用，請使用config：set搭配路徑general/locale/code
 
 - 需要值
 
 ### `--timezone`
 
-預設時區代碼。 已棄用，請使用config：set以及路徑general/locale/timezone
+預設時區代碼。 已棄用，請使用config：set搭配路徑general/locale/timezone
 
 - 需要值
 
@@ -10037,25 +10037,25 @@ bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [
 
 ### `--use-rewrites`
 
-使用重寫。 已棄用，請使用config：set搭配路徑web/seo/use_rewrites
+使用rewrites。 已棄用，請使用config：set搭配路徑web/seo/use_rewrites
 
 - 需要值
 
 ### `--use-secure`
 
-使用安全URL。 只有在SSL可用時才啟用此選項。 已棄用，請使用config：set以及路徑web/secure/use_in_frontend
+使用安全URL。 只有在SSL可用時才啟用此選項。 已棄用，將config：set與路徑web/secure/use_in_frontend一起使用
 
 - 需要值
 
 ### `--base-url-secure`
 
-SSL連線的基礎URL。 已棄用，請使用config：set以及路徑web/secure/base_url
+SSL連線的基礎URL。 已棄用，請使用config：set搭配路徑web/secure/base_url
 
 - 需要值
 
 ### `--use-secure-admin`
 
-使用SSL執行管理介面。 已棄用，請使用config：set以及路徑web/secure/use_in_adminhtml
+使用SSL執行管理介面。 已棄用，請使用config：set搭配路徑web/secure/use_in_adminhtml
 
 - 需要值
 
@@ -10067,13 +10067,13 @@ SSL連線的基礎URL。 已棄用，請使用config：set以及路徑web/secure
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -10130,13 +10130,13 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -10185,7 +10185,7 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ## `setup:upgrade`
 
-升級Magento應用程式、DB資料和結構
+升級Magento應用程式、資料庫資料和結構描述
 
 ```bash
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -10193,7 +10193,7 @@ bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD
 
 ### `--keep-generated`
 
-防止刪除產生的檔案。 我們不建議使用此選項，除非是部署至生產環境。 如需詳細資訊，請洽詢您的系統整合商或管理員。
+防止刪除產生的檔案。 我們不鼓勵使用此選項，除非是部署至生產環境。 請洽詢您的系統整合商或管理員，以取得更多資訊。
 
 - 預設： `false`
 - 不接受值
@@ -10219,20 +10219,20 @@ bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD
 
 ### `--dry-run`
 
-Magento安裝將在試執行模式下執行
+Magento安裝將以試執行模式執行
 
 - 預設： `false`
 - 接受值
 
 ### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
+新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[基底][path]=/var/www/example.com&amp;MAGE_DIRS[快取][path]=/var/tmp/cache&quot;
 
 - 需要值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -10289,7 +10289,7 @@ bin/magento store:list
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -10346,7 +10346,7 @@ bin/magento store:website:list
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -10422,7 +10422,7 @@ bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--log
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -10498,14 +10498,14 @@ bin/magento support:backup:db [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs]
 
 ### `--ignore-sanitize`, `-i`
 
-忽略淨化
+忽略處理
 
 - 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -10569,7 +10569,7 @@ bin/magento support:utility:check [--hide-paths]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -10633,7 +10633,7 @@ bin/magento support:utility:paths [-f|--force]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -10691,7 +10691,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ### `theme`
 
-主題的路徑。 主題路徑應指定為完整路徑，即area/vendor/name。 例如，前端/Magento/空白
+佈景主題的路徑。 主題路徑應指定為完整路徑，即area/vendor/name。 例如，前端/Magento/空白
 
 - 預設： `[]`
 
@@ -10700,7 +10700,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ### `--backup-code`
 
-進行程式碼備份（暫存檔除外）
+進行程式碼備份（不包括暫存檔案）
 
 - 預設： `false`
 - 不接受值
@@ -10714,7 +10714,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -10771,7 +10771,7 @@ bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BAC
 
 ### `--access-list`
 
-可清除清漆的IP存取清單
+可以清除清漆的IP存取清單
 
 - 預設： `localhost`
 - 需要值
@@ -10812,7 +10812,7 @@ Web後端的連線埠
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值

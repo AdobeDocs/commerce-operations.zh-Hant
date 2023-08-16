@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # 快取型別
 
-下列步驟會逐步說明將快取前端與快取型別建立關聯的步驟。
+下列步驟將逐步說明將快取前端與快取型別建立關聯的步驟。
 
 ## 步驟1：定義快取前端
 
-商務應用程式具有 `default` 您可以用於任何快取前端 [快取型別](../cli/manage-cache.md#clean-and-flush-cache-types). 本節探討如何選擇性定義具有不同名稱的快取前端，如果您希望自訂前端，這會比較好。
+商務應用程式具有 `default` 快取前端可用於任何 [快取型別](../cli/manage-cache.md#clean-and-flush-cache-types). 本節探討如何選擇性地定義具有不同名稱的快取前端，如果您希望自訂前端，這會比較好。
 
 >[!INFO]
 >
->若要使用 `default` 快取型別，您不需要修改 `env.php` 完全；您會修改Commerce的全域 `di.xml`. 另請參閱 [低階快取選項](cache-options.md).
+>若要使用 `default` 快取型別，您不需要修改 `env.php` 完全；您能修改Commerce的全域 `di.xml`. 另請參閱 [低階快取選項](cache-options.md).
 
 您必須指定自訂快取前端 `app/etc/env.php` 或Commerce的全域 `app/etc/di.xml`.
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 ],
 ```
 
-位置 `<unique frontend id>` 是用於識別您的前端和檔案的唯一名稱 `<cache options>` 是各種快取型別（資料庫、Redis等）專屬主題中討論的選項。
+位置 `<unique frontend id>` 是用於識別前端的唯一名稱，並且 `<cache options>` 是各種快取型別（資料庫、Redis等）專屬主題中討論的選項。
 
 ## 步驟2：設定快取
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 若您省略 `<frontend_type>`， [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) 已使用。
 
 - `<frontend_option>`， `<frontend_option_value>` 是Commerce架構在建立前端快取時以關聯陣列形式傳遞至前端快取的選項名稱和值。
-- `<backend_type>` 是低階後端快取型別。 指定與相容的類別名稱 `Zend_Cache_Backend` 以及實作 `Zend_Cache_Backend_Interface`.
-- `<backend_option>` 和 `<backend_option_value>` 是Commerce框架在建立後端Cache時，作為關聯陣列傳遞至後端快取的選項名稱和值。
+- `<backend_type>` 是低階後端快取型別。 指定與相容的類別名稱 `Zend_Cache_Backend` 並實施 `Zend_Cache_Backend_Interface`.
+- `<backend_option>` 和 `<backend_option_value>` 是Commerce架構在建立後端快取時，以關聯陣列形式傳遞至後端快取的選項名稱和值。
 
 請參閱 [Laminas檔案](https://docs.laminas.dev/) 以取得最新的Zend資訊。

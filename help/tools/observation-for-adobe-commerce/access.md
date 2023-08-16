@@ -1,6 +1,6 @@
 ---
 title: 存取 [!DNL Observation for Adobe Commerce] Nerdlet
-description: 瞭解如何存取 [!DNL Observation for Adobe Commerce] Nerdlet。
+description: 瞭解如何存取 [!DNL Observation for Adobe Commerce] 書呆子。
 exl-id: 4b6f554e-685b-465d-8676-b70e790606c6
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 存取 [!DNL Observation for Adobe Commerce] Nerdlet
 
-若要使用 [!DNL New Relic Observation for Adobe Commerce] Nerdlet，確保您擁有 [!DNL New Relic].
+若要使用 [!DNL New Relic Observation for Adobe Commerce] Nerdlet，確定您有 [!DNL New Relic].
 
 1. 前往 [!UICONTROL Okta] 首頁(僅供內部Adobe使用者使用)。
 1. 選取 [!UICONTROL New Relic applet] (僅適用於內部Adobe使用者)。

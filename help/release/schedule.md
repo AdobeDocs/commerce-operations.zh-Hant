@@ -1,11 +1,11 @@
 ---
 title: 發行排程
-description: 瞭解Adobe計畫何時宣佈Adobe Commerce重要新功能的發行。
+description: 了解 Adobe 預計何時宣布推出 Adobe Commerce 的重要新功能。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -63,7 +63,7 @@ Adobe版本 [修補程式](versioning-policy.md#patch-release) 適用於核心Ad
   </tr>
   <tr>
     <td>2024年3月19日</td>
-    <td>--</td>
+    <td>—</td>
     <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">測試版修補程式</a>： 2.4.7-beta3</td>
   </tr>
   <tr>

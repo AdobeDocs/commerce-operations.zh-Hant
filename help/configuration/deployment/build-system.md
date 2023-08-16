@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 建置系統設定
 
-您可以有一個符合下列要求的建置系統：
+您可以有一個符合下列要求的組建系統：
 
 - 所有Commerce程式碼都在與開發和生產系統相同的存放庫中進行原始檔控制
 - 請確定下列所有專案皆為 _已包含_ 在原始檔控制中：
@@ -24,9 +24,9 @@ ht-degree: 0%
    - `pub/static` 目錄（和子目錄）
 
 - 必須安裝相容的PHP版本
-- 必須安裝撰寫器
-- 它有檔案系統所有權和許可權設定，如中所述 [開發、建置和生產系統的先決條件](../deployment/technical-details.md).
-- 組建系統不需要安裝Commerce，但必須有程式碼可供使用。
+- 必須安裝Composer
+- 它有檔案系統所有權和許可權設定，如中所述 [您的開發、建置和生產系統的先決條件](../deployment/technical-details.md).
+- 組建系統不需要安裝Commerce，但程式碼必須可供使用。
 
 >[!WARNING]
 >
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->組建電腦可以位於其自身的主機上，或與已安裝的Commerce系統位於相同的主機上。
+>組建電腦可以位於自己的主機上，或與已安裝的Commerce系統位於相同主機上。
 
 ## 設定組建電腦
 
@@ -71,14 +71,14 @@ ht-degree: 0%
 
 ### 安裝PHP
 
-將PHP安裝在 [CentOS] 或 [Ubuntu].
+安裝PHP於 [CentOS] 或 [烏本圖].
 
-### 設定建置系統
+### 設定組建系統
 
-若要設定建置系統：
+若要設定組建系統：
 
-1. 以檔案系統擁有者的身分登入或切換到檔案系統擁有者。
-1. 從原始檔控制中擷取Commerce程式碼。
+1. 以檔案系統擁有者的身分登入或切換到檔案系統。
+1. 從原始檔控制擷取Commerce程式碼。
 
    如果您使用Git，請使用下列命令：
 
@@ -106,7 +106,7 @@ ht-degree: 0%
    ```
 
 1. 如果您使用Git，請開啟 `.gitignore` 在文字編輯器中。
-1. 以下各行開頭使用 `#` 要註解它們的字元：
+1. 以下各行以 `#` 字元來註解：
 
    ```conf
    # app/etc/config.php
@@ -124,7 +124,7 @@ ht-degree: 0%
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   請參閱 [`.gitignore` 參考資料](../reference/config-reference-gitignore.md) 以取得詳細資訊。
+   請參閱 [`.gitignore` 參考](../reference/config-reference-gitignore.md) 以取得詳細資訊。
 
 1. 建置系統應使用 [預設模式](../bootstrap/application-modes.md#default-mode) 或 [開發人員模式](../bootstrap/application-modes.md#developer-mode)：
 
@@ -132,10 +132,10 @@ ht-degree: 0%
    bin/magento deploy:mode:set <mode>
    ```
 
-   `<mode>` 為必填欄位。 它可以是 `default` 或 `developer`.
+   `<mode>` 為必要項。 它可以是 `default` 或 `developer`.
 
 <!-- Link Definitions -->
 
 [CentOS]: https://wiki.centos.org/HowTos/php7
 [composer]: https://getcomposer.org/download/
-[Ubuntu]: https://help.ubuntu.com/lts/serverguide/php.html
+[烏本圖]: https://help.ubuntu.com/lts/serverguide/php.html

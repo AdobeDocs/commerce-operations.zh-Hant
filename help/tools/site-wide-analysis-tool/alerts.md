@@ -11,12 +11,12 @@ ht-degree: 0%
 
 # [!DNL Alerts]
 
-此 [!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] 頁面會顯示商戶的Adobe Commerce Managed Alerts修補程式。 Adobe提供 [!DNL Managed Alerts] 以使用業界最佳實務來追蹤績效量度。 參考 [Adobe Commerce的管理式警報](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce) 文章於 [!DNL support knowledge base].
+此 [!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] 頁面會顯示商戶的Adobe Commerce Managed Alerts修補程式。 Adobe提供 [!DNL Managed Alerts] 以使用業界最佳實務來追蹤績效量度。 參考 [Adobe Commerce的管理警報](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce) 文章於 [!DNL support knowledge base].
 
 ## 使用時機
 
-[!UICONTROL Managed Alerts] 索引標籤顯示最新的20個 [!DNL New Relic Alerts]、其狀態、事件URL和連結至 [!DNL support knowledge base] 文章。 您可以使用此索引標籤來保持最新狀態 [!DNL Alerts].
+[!UICONTROL Managed Alerts] 索引標籤顯示最新的20個 [!DNL New Relic Alerts]、其狀態、事件URL和連結至 [!DNL support knowledge base] 文章。 您可以使用此標籤來隨時掌握最新資訊 [!DNL Alerts].
 
 ## 優點
 
-透過持續更新網站效能提升您的網站效能 [!DNL Alerts] 並視需要更新網站。
+隨時更新網站內容，提升網站效能 [!DNL Alerts] 並視需要更新網站。

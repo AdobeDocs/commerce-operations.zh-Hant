@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # 將記憶體快取用於工作階段儲存
 
-Memcached是一種通用分散式記憶體快取系統。 它通常用於透過在RAM中快取資料和物件來減少外部資料來源（例如資料庫或API）必須讀取的次數，以加速動態資料庫驅動的網站。
+Memcached是一種通用分散式記憶體快取系統。 它通常用來加速動態資料庫驅動的網站，方法是在RAM中快取資料和物件，以減少必須讀取外部資料來源（例如資料庫或API）的次數。
 
-Memcached提供大型雜湊表格，可分佈在多部機器上。 當表格已滿時，後續的插入會以最近最少使用的(LRU)順序清除較舊的資料。 此雜湊表格的大小通常非常大。 (來源： [memcached.org](https://www.memcached.org/))
+Memcached提供大型雜湊表，可以分佈在多部機器上。 當表格已滿時，後續的插入會以最近最少使用的(LRU)順序清除較舊的資料。 此雜湊表格的大小通常非常大。 (來源： [memcached.org](https://www.memcached.org/))
 
-Commerce會將memcached用於工作階段儲存，但不會用於頁面快取。 若為頁面快取，我們建議 [Redis](../cache/redis-pg-cache.md) 或 [清漆](../cache/config-varnish.md).
+Commerce會將memcached用於工作階段儲存，但不會用於頁面快取。 針對頁面快取，我們建議 [Redis](../cache/redis-pg-cache.md) 或 [亮漆](../cache/config-varnish.md).
 
 **若要設定Commerce使用memcached**：
 
@@ -30,7 +30,7 @@ Commerce會將memcached用於工作階段儲存，但不會用於頁面快取。
    ),
    ```
 
-1. 請依照以下方式變更：
+1. 請依照以下步驟變更：
 
    ```php
    'session' =>
@@ -40,7 +40,7 @@ Commerce會將memcached用於工作階段儲存，但不會用於頁面快取。
    ),
    ```
 
-   memcached有本指南範圍以外的選用啟動引數。 如需關於它們的詳細資訊，請參閱 [memcached](https://www.php.net/manual/en/memcached.sessions.php) 檔案、原始程式碼和變更記錄檔。
+   memcached有本指南範圍以外的選擇性啟動引數。 有關它們的詳細資訊，請參閱 [memcached](https://www.php.net/manual/en/memcached.sessions.php) 檔案、原始程式碼和變更記錄檔。
 
 1. 繼續下一節。
 
@@ -56,7 +56,7 @@ Commerce會將memcached用於工作階段儲存，但不會用於頁面快取。
 
 1. 登入「管理員」並瀏覽至數個頁面。
 
-   如果未顯示任何錯誤，恭喜！ memcached正常運作！ 您可以選擇檢視記憶體快取儲存體，如同下個步驟所述。
+   如果沒有顯示錯誤，恭喜您！ memcached正在運作！ 您可以選擇檢視記憶體快取儲存體，如同下個步驟所述。
 
    如果顯示錯誤(例如HTTP 500 （內部伺服器錯誤）)，請啟用開發人員模式並診斷問題。 請確定memcached正在執行、設定正確，並且 `env.php` 沒有語法錯誤。
 
@@ -70,7 +70,7 @@ Commerce會將memcached用於工作階段儲存，但不會用於頁面快取。
    stats items
    ```
 
-   顯示的結果類似於以下內容：
+   結果顯示類似以下內容：
 
    ```terminal
    STAT items:3:number 1

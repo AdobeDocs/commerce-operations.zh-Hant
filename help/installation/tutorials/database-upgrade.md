@@ -15,11 +15,11 @@ ht-degree: 0%
 
 ## 升級資料庫結構和資料
 
-每當您執行導致資料庫結構描述或資料變更的動作時，都必須執行本節中討論的命令來更新它們。 原因的部份清單如下：
+每當您執行導致資料庫綱要或資料變更的動作時，都必須執行本節中討論的命令來更新它們。 原因的部分清單如下：
 
 * 您使用命令列升級應用程式
-* 您使用命令列安裝或更新了元件
-* 您使用命令列啟用或停用元件
+* 您使用命令列安裝或更新元件
+* 您使用命令列來啟用或停用元件
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ ht-degree: 0%
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   位置 `--keep-generated` 是不會更新的選用引數 [靜態檢視檔案](../../configuration/cli/static-view-file-deployment.md). 此選用引數可供使用 *僅限* 在有限的情況下，由經驗豐富的系統整合經銷商提供。 該使用 *僅限* 在 [生產模式](../../configuration/bootstrap/application-modes.md#production-mode). 它應該 *not* 用於 [開發人員模式](../../configuration/bootstrap/application-modes.md#developer-mode).
+   位置 `--keep-generated` 是不會更新的選用引數 [靜態檢視檔案](../../configuration/cli/static-view-file-deployment.md). 此選用引數可供使用 *僅限* 在有限的情況下，由經驗豐富的系統整合經銷商執行。 該使用 *僅限* 在 [生產模式](../../configuration/bootstrap/application-modes.md#production-mode). 它應該 *非* 使用於 [開發人員模式](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. 清除快取：
 

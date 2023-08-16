@@ -701,7 +701,7 @@ ht-degree: 12%
         <td>
           2.0.0
         </td>
-        <td>2015年117月</td>
+        <td>2015年11月17</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table> <!-- minor_releases -->

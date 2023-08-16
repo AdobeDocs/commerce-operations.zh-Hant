@@ -1,6 +1,6 @@
 ---
 title: 此 [!UICONTROL Indexing] 標籤
-description: 瞭解 [!UICONTROL Indexing] 索引標籤/ [!DNL Observation for Adobe Commerce].
+description: 瞭解 [!UICONTROL Indexing] 標籤之 [!DNL Observation for Adobe Commerce].
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 此 [!UICONTROL Indexing] 標籤
 
-此 **[!UICONTROL Indexing]** Tab會嘗試解釋索引化問題，並找出可能的原因。
+此 **[!UICONTROL Indexing]** tab會嘗試說明索引相關問題並找出可能的原因。
 
 ## [!UICONTROL Core index invalidated]
 
-![核心索引已失效](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
+![核心索引失效](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
 
-此 **[!UICONTROL Core index invalidated]** 框架會檢視所選時間範圍內的索引失效。 如果索引與其他資源密集型同時發生 [!DNL crons]，會對網站資源造成大量負載。
+此 **[!UICONTROL Core index invalidated]** frame會檢視所選時間範圍內的索引失效。 如果索引與其他資源密集型同時發生 [!DNL crons]，會對網站資源造成大量負載。
 
 * `%Catalog Product Rule indexer has been invalidated%`)作為 `catalog_product_rule_idx_reset`
 * `%Catalog Rule Product indexer has been invalidated%`)作為 `catalog_rule_product_idx_reset`
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ![核心索引重建](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
 
-此 **[!UICONTROL Core index rebuilds]** frame會檢視在選取的時間範圍內重建核心索引。 以下是從記錄中剖析的字串，用以指出索引重建完成。
+此 **[!UICONTROL Core index rebuilds]** frame會檢視選定時間範圍核心心索引的重建。 以下是從記錄中剖析以指示索引重建完成的字串。
 
 * `%Catalog Product Rule index has been rebuilt%`)作為 `catalog_product_rule_idx`
 * `%Catalog Rule Product index has been rebuilt%`)作為 `catalog_rule_product_idx`
@@ -65,4 +65,4 @@ ht-degree: 0%
 
 ![產品索引表格](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
 
-此 **[!UICONTROL product index table(s)]** frame會檢視所選時間範圍內的產品索引表格。 此查詢會檢視針對具有下列專案的資料表的任何資料存放區作業的持續時間： `%product%` 在表格名稱中。
+此 **[!UICONTROL product index table(s)]** frame會檢視所選時間範圍內的產品索引表。 此查詢會檢視針對具有下列專案的資料表的任何資料存放區作業的持續時間： `%product%` 在表格名稱中。

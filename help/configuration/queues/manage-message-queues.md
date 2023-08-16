@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 程式管理
 
-Cron作業是重新啟動使用者的預設機制。 處理程式啟動者： `cron` 使用指定的訊息數，然後終止。 重新執行 `cron` 重新啟動消費者。
+Cron作業是重新啟動消費者的預設機制。 啟動的處理序 `cron` 使用指定數量的訊息，然後終止。 重新執行 `cron` 重新啟動消費者。
 
 下列範例顯示 `crontab` 用於執行消費者的設定：
 
@@ -33,11 +33,11 @@ Cron作業是重新啟動使用者的預設機制。 處理程式啟動者： `c
 >
 >您檢查訊息佇列的頻率取決於您的商業邏輯和可用的系統資源。 一般而言，您會想要檢查新客戶，並比更新目錄等資源較密集的程式更頻繁地傳送歡迎電子郵件。 您應定義 `cron` 根據您的業務需求排程。
 >
->您可以在管理商店>設定>設定>進階>系統> Cron設定選項中設定群組：消費者。
+>您可以在管理員商店>設定>設定>進階>系統> Cron設定選項中設定群組：消費者。
 >
->另請參閱 [設定並執行cron](../cli/configure-cron-jobs.md) 如需關於使用的詳細資訊 `cron` 搭配Commerce。
+>另請參閱 [設定並執行cron](../cli/configure-cron-jobs.md) 如需關於使用的詳細資訊 `cron` 使用Commerce。
 
-您也可以使用程式管理員，例如 [監督員](https://supervisord.readthedocs.io/en/latest/) 以監視處理序的狀態。 管理員可視需要使用命令列來重新啟動處理序。
+您也可以使用程式管理員，例如 [監督員](https://supervisord.readthedocs.io/en/latest/) 以監視處理作業的狀態。 管理員可視需要使用命令列來重新啟動程式。
 
 ## 設定
 
@@ -49,11 +49,11 @@ Cron作業是重新啟動使用者的預設機制。 處理程式啟動者： `c
 
 >[!INFO]
 >
->如果您的Adobe Commerce存放區託管於Cloud平台，請使用 [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) 設定 `consumers_runner` cron工作。
+>如果您的Adobe Commerce存放區託管於雲端平台，請使用 [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) 以設定 `consumers_runner` cron工作。
 
 ### 特定設定
 
-編輯 `/app/etc/env.php` 檔案以設定cron工作 `consumers_runner`.
+編輯 `/app/etc/env.php` 檔案以設定cron作業 `consumers_runner`.
 
 ```php
 ...
@@ -72,16 +72,16 @@ Cron作業是重新啟動使用者的預設機制。 處理程式啟動者： `c
 ```
 
 - `cron_run`  — 布林值，可啟用或停用 `consumers_runner` cron工作(預設= `true`)。
-- `max_messages`  — 在終止前，每個取用者必須處理的最大訊息數(預設值= `10000`)。 雖然我們不建議這麼做，但您可以使用0來防止消費者終止。 另請參閱 [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) 設定使用者如何處理來自訊息佇列的訊息。
+- `max_messages`  — 終止前，每個取用者必須處理的最大訊息數(預設值= `10000`)。 雖然我們不建議這麼做，但您可以使用0來防止消費者終止。 另請參閱 [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) 設定使用者處理訊息佇列訊息的方式。
 - `consumers`  — 字串陣列，指定要執行的使用者。 空陣列執行 *全部* 消費者。
 - `multiple_processes`  — 機碼值組的陣列，指定要在多少處理序中執行哪個取用者。 Commerce 2.4.4或更新版本支援。
 
   >[!INFO]
   >
-  >不建議在MySQL操作的佇列上執行多個消費者。 另請參閱 [將訊息佇列從MySQL變更為AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) 以取得詳細資訊。
+  >不建議在MySQL操作的佇列上執行多個取用者。 另請參閱 [將訊息佇列從MySQL變更為AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) 以取得詳細資訊。
 
   >[!INFO]
   >
-  >如果您的Adobe Commerce存放區託管於Cloud平台，請使用 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) 設定使用者如何處理來自訊息佇列的訊息。
+  >如果您的Adobe Commerce存放區託管於雲端平台，請使用 [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) 設定使用者處理訊息佇列訊息的方式。
 
-另請參閱 [啟動訊息佇列消費者](../cli/start-message-queues.md).
+另請參閱 [啟動訊息佇列取用者](../cli/start-message-queues.md).

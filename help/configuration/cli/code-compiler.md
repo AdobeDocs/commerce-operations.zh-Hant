@@ -13,10 +13,10 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-程式碼編譯包含下列內容（並無特定順序）：
+程式碼編譯包含下列專案（並無特定順序）：
 
 - 應用程式程式碼產生（工廠、代理）
-- 區域設定彙總（每個區域最佳化的相依性插入設定）
+- 區域組態彙總（每個區域最佳化的相依性插入組態）
 - 攔截器產生（最佳化的攔截器程式碼產生）
 - 攔截快取產生
 - 存放庫程式碼產生（為API產生的程式碼）
@@ -36,7 +36,7 @@ Generated code and dependency injection configuration successfully.
 
 若要在安裝Commerce應用程式之前編譯程式碼：
 
-在某些情況下，您可能需要在安裝Commerce應用程式之前編譯程式碼。
+在某些情況下，您可能會想要在安裝Commerce應用程式之前編譯程式碼。
 
 1. 啟用模組。
 
@@ -44,7 +44,7 @@ Generated code and dependency injection configuration successfully.
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   使用 `[-c|--clear-static-content]` 清除靜態內容的選項。 如果您先前已啟用或停用模組，且必須清除先前為其產生的靜態內容，則必須執行此動作。
+   使用 `[-c|--clear-static-content]` 清除靜態內容的選項。 如果您先前已啟用或停用模組，且必須清除先前為其產生的靜態內容，則需使用此選項。
 
    另請參閱 [啟用模組](../../installation/tutorials/manage-modules.md).
 

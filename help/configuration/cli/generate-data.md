@@ -1,12 +1,12 @@
 ---
-title: 產生資料以進行效能測試
+title: 產生效能測試資料
 description: 瞭解如何產生大量資料以用於效能測試。
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
 source-wordcount: '749'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -18,17 +18,17 @@ ht-degree: 8%
 
 ## 設定檔
 
-您可以調整您使用建立的資料量 _設定檔_ （小、中、大和特大）。 設定檔位於 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` 目錄。
+您可以調整您使用的建立資料量 _設定檔_ （小、中、大和特大）。 設定檔位於 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` 目錄。
 
 例如， `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-下圖說明如何使用將產品顯示在店面上。 _小_ 設定檔：
+下圖顯示如何使用 _小_ 設定檔：
 
 ![使用產生的資料取樣店面](../../assets/configuration/generate-data.png)
 
 下表提供有關資料產生器設定檔的詳細資訊：小、中、大和特大。
 
-| 引數 | 小型設定檔 | 中型設定檔 | 中型多網站設定檔 | 大型設定檔 | 超大型設定檔 |
+| 引數 | 小型設定檔 | 中等設定檔 | 中等多網站設定檔 | 大型設定檔 | 超大型設定檔 |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
@@ -97,7 +97,7 @@ Generating simple products...  done in <time>
 ... more ...
 ```
 
-## 效能夾具
+## 效能固定裝置
 
 ### 管理員使用者
 
@@ -125,7 +125,7 @@ Generating simple products...  done in <time>
 
 ### 套裝產品
 
-產生套件組合產品。 產生的束選取範圍不會單獨顯示在目錄中。 產品會依類別和網站統一發佈。 若  `assign_entities_to_all_websites` 從設定檔設定為 `1`. 產品會指派給所有網站。
+產生套件組合產品。 產生的束選取範圍不會單獨顯示在目錄中。 產品會依類別和網站均勻分佈。 如果  `assign_entities_to_all_websites` 從設定檔設定為 `1`. 產品會指派給所有網站。
 
 XML設定檔節點：
 
@@ -163,7 +163,7 @@ XML設定檔節點：
 
 ### 類別
 
-產生類別。 若 `assign_entities_to_all_websites` 設為 `0`，所有類別會依根類別均勻分佈；否則，所有類別都會指派給一個根類別。
+產生類別。 如果 `assign_entities_to_all_websites` 設為 `0`，所有類別會針對每個根類別均勻分佈；否則，所有類別都會指派給一個根類別。
 
 XML設定檔節點：
 
@@ -195,112 +195,112 @@ XML設定檔節點：
 
 ### 可設定的產品
 
-產生可設定的產品。 產生的可設定選項不會在目錄中單獨顯示。 產品會依類別和網站統一發佈。 若 `assign_entities_to_all_websites` 設為 `1`，產品會指派至所有網站。
+產生可設定的產品。 產生的可設定選項不會在目錄中個別顯示。 產品會依類別和網站均勻分佈。 如果 `assign_entities_to_all_websites` 設為 `1`，產品會指派至所有網站。
 
 支援下列XML節點格式：
 
 - 依預設和預先定義屬性集的分佈：
 
-   ```xml
-   <!-- Number of configurable products -->
-   <configurable_products>{int}</configurable_products>
-   ```
+  ```xml
+  <!-- Number of configurable products -->
+  <configurable_products>{int}</configurable_products>
+  ```
 
 - 根據現有屬性集產生產品：
 
-   ```xml
-   <configurable_products>
-   
-       <config>
-               <!-- Existing attribute set name -->
-               <attributeSet>{string}</attributeSet>
-   
-               <!-- Configurable sku pattern with %s -->
-               <sku>{string}</sku>
-   
-               <!-- Number of configurable products -->
-               <products>{int}</products>
-   
-               <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
-               <category>[{string}]</category>
-   
-               <!-- Type of Swatch attribute e.g. color|image -->
-               <swatches>{string}</swatches>
-       </config>
-   
-   <!-- ... more entries ... -->
-   </configurable_products>
-   ```
+  ```xml
+  <configurable_products>
+  
+      <config>
+              <!-- Existing attribute set name -->
+              <attributeSet>{string}</attributeSet>
+  
+              <!-- Configurable sku pattern with %s -->
+              <sku>{string}</sku>
+  
+              <!-- Number of configurable products -->
+              <products>{int}</products>
+  
+              <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
+              <category>[{string}]</category>
+  
+              <!-- Type of Swatch attribute e.g. color|image -->
+              <swatches>{string}</swatches>
+      </config>
+  
+  <!-- ... more entries ... -->
+  </configurable_products>
+  ```
 
 - 根據以指定數量的屬性和選項動態建立的屬性集來產生產品：
 
-   ```xml
-   <configurable_products>
-   
-       <config>
-           <!-- Number of attributes in configurable product -->
-           <attributes>{int}</attributes>
-   
-           <!-- Number of options per attribute -->
-           <options>{int}</options>
-   
-           <!-- Configurable sku pattern with %s -->
-           <sku>{string}</sku>
-   
-           <!-- Number of configurable products -->
-           <products>{int}</products>
-   
-           <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
-           <category>[{string}]</category>
-   
-           <!-- Type of Swatch attribute e.g. color|image -->
-           <swatches>{string}</swatches>
-       </config>
-   
-       <!-- ... more entries ... -->
-   </configurable_products>
-   ```
+  ```xml
+  <configurable_products>
+  
+      <config>
+          <!-- Number of attributes in configurable product -->
+          <attributes>{int}</attributes>
+  
+          <!-- Number of options per attribute -->
+          <options>{int}</options>
+  
+          <!-- Configurable sku pattern with %s -->
+          <sku>{string}</sku>
+  
+          <!-- Number of configurable products -->
+          <products>{int}</products>
+  
+          <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
+          <category>[{string}]</category>
+  
+          <!-- Type of Swatch attribute e.g. color|image -->
+          <swatches>{string}</swatches>
+      </config>
+  
+      <!-- ... more entries ... -->
+  </configurable_products>
+  ```
 
-- 根據每個屬性各自指定組態的動態建立屬性集來產生產品：
+- 根據每個屬性各自指定組態，以動態建立的屬性集來產生產品：
 
-   ```xml
-   <configurable_products>
-   
-       <config>
-           <attributes>
-               <!-- Configuration for a first attribute -->
-               <attribute>
-                   <!-- Amount of options per attribute -->
-                   <options>{int}</options>
-   
-                   <!-- Type of Swatch attribute -->
-                   <swatches>{string}</swatches>
-               </attribute>
-   
-               <!-- Configuration for a second attribute -->
-               <attribute>
-                   <!-- Amount of options per attribute -->
-                   <options>{int}</options>
-               </attribute>
-           </attributes>
-   
-           <!-- Configurable sku pattern with %s -->
-           <sku>{string}</sku>
-   
-           <!-- Number of configurable products -->
-           <products>{int}</products>
-   
-           <!-- Category Name. Optional. By default, the category name from Categories fixture will be used -->
-           <category>[{string}]</category>
-       </config>
-   
-       <!-- ... more entries ... -->
-   </configurable_products>
-   ```
+  ```xml
+  <configurable_products>
+  
+      <config>
+          <attributes>
+              <!-- Configuration for a first attribute -->
+              <attribute>
+                  <!-- Amount of options per attribute -->
+                  <options>{int}</options>
+  
+                  <!-- Type of Swatch attribute -->
+                  <swatches>{string}</swatches>
+              </attribute>
+  
+              <!-- Configuration for a second attribute -->
+              <attribute>
+                  <!-- Amount of options per attribute -->
+                  <options>{int}</options>
+              </attribute>
+          </attributes>
+  
+          <!-- Configurable sku pattern with %s -->
+          <sku>{string}</sku>
+  
+          <!-- Number of configurable products -->
+          <products>{int}</products>
+  
+          <!-- Category Name. Optional. By default, the category name from Categories fixture will be used -->
+          <category>[{string}]</category>
+      </config>
+  
+      <!-- ... more entries ... -->
+  </configurable_products>
+  ```
 
 ### 客戶
 
-產生客戶。 客戶在所有可用網站上皆為正常分佈。 除了客戶電子郵件、客戶群組和客戶地址以外，每個客戶都有相同的資料。
+產生客戶。 客戶在所有可用網站上皆為正常分佈。 每個客戶都有相同的資料，但客戶電子郵件、客戶群組和客戶地址除外。
 
 XML設定檔節點：
 
@@ -334,7 +334,7 @@ XML設定檔節點：
 </product-images>
 ```
 
-### 索引器狀態
+### 索引子狀態
 
 更新索引器的狀態。 XML設定檔節點：
 
@@ -348,7 +348,7 @@ XML設定檔節點：
 
 ### 訂購
 
-產生具有不同訂單料號型態的可設定數量之訂單。 選擇性地為產生的訂單產生無效報價。
+產生具有不同訂單料號型態的可設定數量之訂單。 選擇性地為產生的訂單產生無效報價單。
 
 XML設定檔節點：
 
@@ -380,9 +380,9 @@ XML設定檔節點：
 
 ### 簡單產品
 
-產生簡單產品。 產品會依預設和預先定義的屬性集分發。 如果在設定檔中指定額外的屬性集為： `<product_attribute_sets>{int}</product_attribute_sets>`，產品也會依其他屬性集分發。
+產生簡單產品。 產品會根據預設和預先定義的屬性集進行分配。 如果在設定檔中指定額外的屬性集為： `<product_attribute_sets>{int}</product_attribute_sets>`，產品也會根據其他屬性集分發。
 
-產品會依類別和網站統一發佈。 若 `assign_entities_to_all_websites` 設為 `1`，產品會指派至所有網站。
+產品會依類別和網站均勻分佈。 如果 `assign_entities_to_all_websites` 設為 `1`，產品會指派至所有網站。
 
 XML設定檔節點：
 
@@ -442,8 +442,8 @@ XML設定檔節點：
 
 - `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml` — 產品簡短說明設定
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` — 產品簡短及完整說明的設定。 提供此舊版實作是為了提供回溯相容性。
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` — 產品簡短說明和完整說明的設定。 提供此舊版實作是為了回溯相容性。
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` — 提供簡短的完整說明以取得少量搜尋字詞
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` — 提供簡短的完整說明的搜尋詞數目
 
 - `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` — 在簡短和完整說明中使用的搜尋字詞數目較多。

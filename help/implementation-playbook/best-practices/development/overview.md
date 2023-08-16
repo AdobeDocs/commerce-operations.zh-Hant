@@ -12,21 +12,21 @@ ht-degree: 0%
 
 # 開發階段
 
-開發階段包含下列活動：
+開發階段包括下列活動：
 
 - 本機和中繼環境設定
 - 衝刺計畫
 - 票證執行
-- 疑難排除
-- 程式碼審查、合併和測試
-- 衝刺稽核
+- 疑難排解
+- 程式碼檢閱、合併和測試
+- 衝刺檢閱
 - 客戶簽署
 
 以下章節包含開發階段的最佳實務資訊。
 
 ## 應用程式開發
 
-### 程式碼審查、合併和測試
+### 程式碼檢閱、合併和測試
 
 <!--Assets not yet integrated
 - Guidelines and standards
@@ -66,6 +66,6 @@ ht-degree: 0%
 - [建置和部署的最佳實務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
 - [靜態內容部署 — 雲端](static-content-deployment.md)
 - [最佳化CSS和JS檔案](optimize-css-js-files.md)
-- [最佳化影像，以建立回應速度更快的網站](image-optimization.md)
-- [雲端基礎結構上Adobe Commerce的疑難排解最佳實務](troubleshooting.md)
-- [瞭解何時及如何修改資料庫表格](modifying-core-and-third-party-tables.md)
+- [最佳化影像以建立回應速度較快的網站](image-optimization.md)
+- [雲端基礎結構上Adobe Commerce的疑難排解最佳做法](troubleshooting.md)
+- [瞭解何時以及如何修改資料庫表格](modifying-core-and-third-party-tables.md)

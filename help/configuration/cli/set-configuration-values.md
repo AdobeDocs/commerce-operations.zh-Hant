@@ -17,26 +17,26 @@ ht-degree: 0%
 
 - 從命令列設定任何組態選項
 - 可選擇鎖定任何設定選項，使其值無法在Admin中變更
-- 變更在管理員中鎖定的設定選項
+- 變更在Admin中鎖定的設定選項
 
-您可以使用這些命令來手動或使用指令碼設定Commerce設定。 您使用 _設定路徑_，亦即 `/` — 分隔的字串，可唯一識別該組態選項。 您可以在下列參照中找到組態路徑：
+您可以使用這些命令來手動或使用指令碼設定Commerce設定。 您使用 _設定路徑_，即 `/` — 分隔字串，可唯一識別該組態選項。 您可在下列參照中找到組態路徑：
 
-- [敏感和系統專屬設定路徑參考](../reference/config-reference-sens.md)
+- [敏感和系統特定設定路徑參考](../reference/config-reference-sens.md)
 - [付款設定路徑參考](../reference/config-reference-payment.md)
 - [一般設定路徑參考](../reference/config-reference-general.md)
 - [Commerce Enterprise B2B擴充功能設定路徑參考](../reference/config-reference-b2b.md)
 
 您可以在下列時間設定值：
 
-- 安裝Commerce之前，您只能設定預設範圍的設定值，因為它是唯一的有效範圍。
+- 在安裝Commerce之前，您可以僅設定預設範圍的設定值，因為它是唯一的有效範圍。
 
-- 安裝Commerce後，您可以設定任何網站或商店檢視範圍的設定值。
+- 安裝Commerce後，您可以為任何網站或商店檢視範圍設定設定值。
 
 使用下列命令：
 
 - `bin/magento config:set` 依其設定路徑設定任何非敏感設定值
 - `bin/magento config:sensitive:set` 依其設定路徑設定任何敏感設定值
-- `bin/magento config:show` 顯示儲存的組態值；加密設定的值顯示為星號
+- `bin/magento config:show` 顯示已儲存的組態值；加密設定的值會顯示為星號
 
 ## 必要條件
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 請參閱下列參考資料：
 
-- [敏感和系統專屬設定路徑參考](../reference/config-reference-sens.md)
+- [敏感和系統特定設定路徑參考](../reference/config-reference-sens.md)
 - [付款設定路徑參考](../reference/config-reference-payment.md)
 - [其他設定路徑參考](../reference/config-reference-general.md)
 - [Commerce Enterprise B2B擴充功能設定路徑參考](../reference/config-reference-b2b.md)
@@ -60,11 +60,11 @@ ht-degree: 0%
 
 您可以在Commerce資料庫或Commerce管理員中找到範圍代碼。
 
-**若要在管理員中尋找範圍代碼**：
+**若要在Admin中尋找範圍代碼**：
 
-1. 以可檢視網站和商店檢視的使用者身分登入管理員。
+1. 以可檢視網站和商店檢視的使用者身分登入「管理員」。
 1. 按一下 **[!UICONTROL Stores]** >設定> **[!UICONTROL All Stores]**.
-1. 在右窗格中，按一下網站或商店檢視的名稱以檢視其代碼。
+1. 在右窗格中，按一下網站或商店檢視的名稱，以檢視其程式碼。
 
    下圖顯示範例網站程式碼。
 
@@ -142,9 +142,9 @@ bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
 >
 >截至Commerce 2.2.4， `--lock-env` 和 `--lock-config` 選項會取代 `--lock` 選項。
 >
->如果您使用 `--lock-env` 或 `--lock-config` 選項來設定或變更值，您必須使用 [`bin/magento app:config:import` 命令](../cli/import-configuration.md) 以在存取「管理員」或「店面」之前匯入設定。
+>如果您使用 `--lock-env` 或 `--lock-config` 選項若要設定或變更值，您必須使用 [`bin/magento app:config:import` 命令](../cli/import-configuration.md) 以匯入設定，然後再存取管理員或店面。
 
-如果您輸入不正確的設定路徑，此命令會傳回錯誤
+如果您輸入的設定路徑不正確，這個命令會傳回錯誤
 
 ```text
 The "wrong/config/path" does not exist
@@ -152,14 +152,14 @@ The "wrong/config/path" does not exist
 
 如需詳細資訊，請參閱下列其中一節：
 
-- [設定可在管理員中編輯的設定值](#set-configuration-values-that-can-be-edited-in-the-admin)
-- [設定無法在管理員中編輯的設定值](#set-configuration-values-that-cannot-be-edited-in-the-admin)
+- [設定可在Admin中編輯的設定值](#set-configuration-values-that-can-be-edited-in-the-admin)
+- [設定無法在Admin中編輯的設定值](#set-configuration-values-that-cannot-be-edited-in-the-admin)
 
-### 設定可在管理員中編輯的設定值
+### 設定可在Admin中編輯的設定值
 
-使用 `bin/magento config:set` _不含_ `--lock-env` 或 `--lock-config` 將值寫入資料庫。 您透過此方式設定的值可在Admin中編輯。
+使用 `bin/magento config:set` _不含_ `--lock-env` 或 `--lock-config` 將值寫入資料庫。 您以這種方式設定的值可在Admin中編輯。
 
-以下是設定存放區基底URL的一些範例：
+設定存放區基底URL的部分範例如下：
 
 設定預設範圍的基底URL：
 
@@ -179,19 +179,19 @@ bin/magento config:set --scope=websites --scope-code=base web/unsecure/base_url 
 bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url http://example3.com/
 ```
 
-### 設定無法在管理員中編輯的設定值
+### 設定無法在Admin中編輯的設定值
 
-如果您使用 `--lock-env`  選項如下所示，該命令會將組態值儲存在 `<Commerce base dir>/app/etc/env.php` 和會停用「管理員」中用於編輯此值的欄位。
+如果您使用 `--lock-env`  選項如下，指令會將組態值儲存在 `<Commerce base dir>/app/etc/env.php` 和停用「管理員」中用於編輯此值的欄位。
 
 ```bash
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
 ```
 
-您可以使用 `--lock-env` 在未安裝Commerce時用來設定設定值的選項。 不過，您只能設定預設範圍的值。
+您可以使用 `--lock-env` 在未安裝Commerce時設定設定值的選項。 不過，您只能設定預設範圍的值。
 
 >[!INFO]
 >
->此 `env.php` 檔案是系統專屬的。 您不應該將它轉移給其他系統。 您可以使用它來覆寫資料庫中的組態值。 例如，您可以從另一個系統取得資料庫傾印並覆寫 `base_url` 和其他值，因此您不必修改資料庫。
+>此 `env.php` 檔案是系統專屬的。 您不應該將它轉移到另一個系統。 您可以使用它來覆寫資料庫中的組態值。 例如，您可以從另一個系統取得資料庫傾印並覆寫 `base_url` 和其他值，因此您不必修改資料庫。
 
 如果您使用 `--lock-config` 選項，組態值會儲存在 `<Commerce base dir>/app/etc/config.php`. 在管理員中編輯此值的欄位已停用。
 
@@ -203,7 +203,7 @@ bin/magento config:set --lock-config --scope=stores --scope-code=default web/url
 
 >[!INFO]
 >
->您可以轉移 `config.php` 至另一個系統，以使用相同的組態值。 例如，如果您有測試系統，則使用相同的 `config.php` 表示您不必再次設定相同的設定值。
+>您可以傳輸 `config.php` 到另一個系統，以在該處使用相同的組態值。 例如，如果您有測試系統，使用相同的 `config.php` 表示您不必再次設定相同的設定值。
 
 ## 顯示組態設定的值
 
@@ -221,7 +221,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->此 `bin/magento config:show` 命令會顯示下列專案的值 [加密的值](../reference/config-reference-sens.md) 以一連串星號表示： `******`.
+>此 `bin/magento config:show` 命令會顯示任何 [加密的值](../reference/config-reference-sens.md) 以一連串星號表示： `******`.
 
 ### 範例
 
@@ -266,7 +266,7 @@ bin/magento config:show web/unsecure/base_url
 web/unsecure/base_url - http://example.com/
 ```
 
-**若要顯示的基礎URL `base` 網站**：
+**顯示基礎URL `base` 網站**：
 
 ```bash
 bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
@@ -278,7 +278,7 @@ bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
 web/unsecure/base_url - http://example-for-website.com/
 ```
 
-**若要顯示的基礎URL `default` 儲存**：
+**顯示基礎URL `default` 儲存**：
 
 ```bash
 bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_url

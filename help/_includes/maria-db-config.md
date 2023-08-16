@@ -7,12 +7,12 @@ ht-degree: 0%
 ---
 # MariaDB組態設定
 
-與舊版MariaDB或MySQL相比，在MariaDB 10.4和10.6上重新索引需要更多時間。 若要加快重新索引的速度，建議您設定這些MariaDB設定引數：
+與舊版MariaDB或MySQL相比，在MariaDB 10.4和10.6上重新索引需要更多時間。 若要加速重新索引，建議您設定這些MariaDB設定引數：
 
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
 * [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
 
-如果您在升級至MariaDB 10.6後遇到與索引無關的效能下降，請考慮啟用 [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) 設定。 例如， `--query-cache-type=ON`.
+如果您在升級至MariaDB 10.6後遇到與索引無關的效能降低情形，請考慮啟用 [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) 設定。 例如， `--query-cache-type=ON`.
 
 除了這些建議之外，您應該洽詢資料庫管理員設定下列引數：
 

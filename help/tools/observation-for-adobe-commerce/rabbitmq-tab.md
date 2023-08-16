@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 此 [!UICONTROL [!DNL RabbitMQ]] 標籤
 
-此 **[!UICONTROL [!DNL RabbitMQ]]** 索引標籤包含重點關注的資訊 [!DNL RabbitMQ] 訊號。
+此 **[!UICONTROL [!DNL RabbitMQ]]** 索引標籤包含重點在以下的資訊 [!DNL RabbitMQ] 訊號。
 
 ## [!UICONTROL [!DNL RabbitMQ] Infrastructure events]
 
 ![[!DNL RabbitMQ] 基礎結構事件](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
 
-此 **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** 框架顯示涉及以下專案的基礎結構事件： [!DNL RabbitMQ] 在選取的時間範圍內發生的錯誤：
+此 **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** 框架顯示涉及以下專案的基礎結構事件： [!DNL RabbitMQ] 在選取的時間範圍內發生：
 
 * `%Response [error] for node [rabbit@host1]: unexpected http response from%`)作為 `unexpected_resp_node1`
 * `%Response [error] for node [rabbit@host2]: unexpected http response from%`)作為 `unexpected_resp_node2`
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ![[!DNL RabbitMQ] 依佇列的訊息高階摘要狀態](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
 
-此 **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** 圖表顯示已發佈訊息的數量，依 [!DNL RabbitMQ] 所選時間範圍的佇列。
+此 **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** 圖表顯示已發佈訊息的數量，依 [!DNL RabbitMQ] 已選取時間範圍的佇列。
 
 ## [!UICONTROL [!DNL RabbitMQ] Message Detail Summary]
 
@@ -90,28 +90,28 @@ ht-degree: 0%
 
 ![[!DNL RabbitMQ] 佇列消耗MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
 
-此 **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** 圖表顯示每個使用的位元組數 [!DNL RabbitMQ] 在選取的時間範圍內排入佇列。
+此 **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** 圖表顯示每個耗用的位元組數 [!DNL RabbitMQ] 在選取的時間範圍內佇列。
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
 ![[!DNL RabbitMQ] 依佇列發佈的訊息](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
 
-此 **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** 圖表顯示每個使用的位元組數 [!DNL RabbitMQ] 在選取的時間範圍內排入佇列。
+此 **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** 圖表顯示每個耗用的位元組數 [!DNL RabbitMQ] 在選取的時間範圍內佇列。
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
 ![[!DNL RabbitMQ] 依佇列發佈的訊息輸送量](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
 
-此 **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** 圖表顯示每個使用者每秒發佈訊息的平均數量 [!DNL RabbitMQ] 在選取的時間範圍內排入佇列。
+此 **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** 圖表顯示每個使用者每秒發佈訊息的平均數量 [!DNL RabbitMQ] 在選取的時間範圍內佇列。
 
 ## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
 ![[!DNL RabbitMQ] 依佇列的訊息總輸送量](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
 
-此 **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** 圖表顯示每個使用者每秒的平均訊息總數 [!DNL RabbitMQ] 在選取的時間範圍內排入佇列。
+此 **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** 圖表顯示每個使用者每秒的平均訊息總數 [!DNL RabbitMQ] 在選取的時間範圍內佇列。
 
 ## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
-![[!DNL RabbitMQ] 依佇列列出的消費者](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
+![[!DNL RabbitMQ] 依佇列的使用者](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
 
-此 **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** 圖表顯示每個專案的平均消費者總數 [!DNL RabbitMQ] 在選取的時間範圍內排入佇列。
+此 **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** 圖表顯示每個專案的消費者平均總數 [!DNL RabbitMQ] 在選取的時間範圍內佇列。

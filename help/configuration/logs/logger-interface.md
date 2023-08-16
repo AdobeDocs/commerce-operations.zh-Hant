@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 記錄器介面
 
-若要開始使用記錄器，您必須建立 `\Psr\Log\LoggerInterface`. 透過此介面，您可以呼叫下列函式以將資料寫入記錄檔：
+若要開始使用記錄器，您必須建立 `\Psr\Log\LoggerInterface`. 使用此介面，您可以呼叫下列函式，將資料寫入記錄檔：
 
 - [alert()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
 - [critical()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
@@ -24,7 +24,7 @@ ht-degree: 0%
 - [notice()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
 - [warning()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
 
-其中一個方法會在以下章節說明： [記錄資料庫活動](../logs/database-activity.md) 範例。
+一個方法是在 [記錄資料庫活動](../logs/database-activity.md) 範例。
 
 另一種方式如下：
 
@@ -49,6 +49,6 @@ class SomeModel
  }
 ```
 
-前面的範例顯示 `SomeModel` 接收 `\Psr\Log\LoggerInterface` 物件使用建構子插入。 在方法中 `doSomething`，如果發生一些錯誤，則會記錄到方法 `critical` (`$this->logger->critical($e);`)。
+前面的範例顯示 `SomeModel` 接收 `\Psr\Log\LoggerInterface` 使用建構函式插入的物件。 在方法中 `doSomething`，如果發生某些錯誤，則會記錄到方法 `critical` (`$this->logger->critical($e);`)。
 
-[RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) 會定義8個記錄層級（偵錯、資訊、通知、警告、錯誤、嚴重、警示和緊急）。
+[RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) 會定義八個記錄層級（除錯、資訊、通知、警告、錯誤、嚴重、警示和緊急）。

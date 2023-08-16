@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 記錄資料庫活動
 
-以下範例說明如何使用 [`Magento\Framework\DB\LoggerInterface`][interface]，有兩個實作：
+下列範例說明如何使用 [`Magento\Framework\DB\LoggerInterface`][interface]，有兩個實作：
 
 - 不記錄任何內容（預設）： [`Magento\Framework\DB\Logger\Quiet`][quiet]
 - 記錄到 `var/log` 目錄： [`Magento\Framework\DB\Logger\File`][file]
@@ -46,7 +46,7 @@ ht-degree: 0%
 </type>
 ```
 
-最後，編譯程式碼使用：
+最後，編譯程式碼為：
 
 ```bash
 bin/magento setup:di:compile

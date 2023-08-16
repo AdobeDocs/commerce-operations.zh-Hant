@@ -1,5 +1,5 @@
 ---
-title: 升級模組與擴充功能
+title: 升級模組和擴充功能
 description: 使用命令列介面和撰寫器來升級Adobe Commerce和Magento Open Source模組及擴充功能。
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 1. 如果模組存在撰寫器套件，請執行以下其中一項作業。
 
-   依據模組名稱更新：
+   每個模組名稱更新：
 
    ```bash
    composer update vendor/module-name
    ```
 
-   每個版本的更新：
+   每個版本更新：
 
    ```bash
    composer require vendor/module-name ^x.x.x
@@ -49,12 +49,12 @@ ht-degree: 0%
 
 Adobe已全部移除 [VBE](https://devdocs.magento.com/extensions/vendor/) 在2.4.4中。廠商持續在Adobe Commerce Marketplace上支援這些擴充功能。
 
-如果您想要繼續將這些擴充功能與Adobe Commerce 2.4.4和更新版本搭配使用，您必須更新中對應的套件相依性 `composer.json` 檔案 _早於_ 升級至2.4.4。請連絡廠商以取得要使用的套件名稱和版本。
+如果您想要繼續將這些擴充功能與Adobe Commerce 2.4.4和更新版本搭配使用，您必須更新中對應的套件相依性 `composer.json` 檔案 _早於_ 升級至2.4.4。請聯絡供應商，以取得要使用的套件名稱和版本。
 
 如需詳細資訊，請參閱下列Adobe Commerce Marketplace清單：
 
 - [Amazon Pay](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
 - [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
-- [克拉納](https://marketplace.magento.com/klarna-m2-klarna.html)
+- [卡拉納](https://marketplace.magento.com/klarna-m2-klarna.html)
 - [頂點](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
 - [Yotpo](https://marketplace.magento.com/yotpo-module-yotpo.html)

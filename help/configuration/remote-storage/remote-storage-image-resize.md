@@ -1,26 +1,26 @@
 ---
-title: 設定遠端儲存裝置的影像調整大小
-description: 透過設定伺服器端影像大小調整來最佳化磁碟資源。
+title: 設定遠端儲存裝置的影像大小調整
+description: 藉由設定伺服器端影像大小調整來最佳化磁碟資源。
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 設定遠端儲存裝置的影像調整大小
+# 設定遠端儲存裝置的影像大小調整
 
 依預設，Adobe Commerce支援在應用程式端調整影像大小。 不過，透過啟用「遠端儲存」模組，您可以使用Nginx將影像大小調整解除安裝到伺服器端，藉此節省磁碟資源並最佳化磁碟使用量。
 
-下圖顯示Nginx如何擷取、調整大小及儲存快取中的影像。 調整大小是由URL中包含的引數（例如高度和寬度）所決定。
+下圖顯示Nginx如何擷取、調整影像大小以及將其儲存在快取中。 調整大小是由URL中包含的引數（例如高度和寬度）所決定。
 
 ![調整影像大小](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >
->如需雲端基礎結構專案的Adobe Commerce，請參閱 [在雲端基礎結構上設定Commerce的遠端儲存](cloud-support.md)
+>如需雲端基礎結構專案的Adobe Commerce，請參閱 [在雲端基礎結構上為Commerce設定遠端儲存](cloud-support.md)
 
 ## 在Adobe Commerce中設定URL格式
 
@@ -44,9 +44,9 @@ ht-degree: 0%
 
 若要繼續設定伺服器端影像調整大小，您必須準備 `nginx.conf` 檔案並提供 `proxy_pass` 您所選介面卡的值。
 
-**啟用Nginx調整影像大小的方式**：
+**啟用Nginx調整影像大小**：
 
-1. 安裝 [Nginx影像篩選模組][nginx-module].
+1. 安裝 [Nginx影像濾鏡模組][nginx-module].
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;

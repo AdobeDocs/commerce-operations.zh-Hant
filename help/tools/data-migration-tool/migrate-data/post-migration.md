@@ -14,12 +14,12 @@ ht-degree: 0%
 
 完成移轉並徹底測試新的Magento2網站後，請執行以下工作：
 
-* 將Magento1置於維護模式，並永久停止所有管理員活動
+* 將Magento1置於維護模式並永久停止所有管理員活動
 
 * 開始Magento2 cron工作
 
 * [排清所有Magento2快取型別](../../../configuration/cli/manage-cache.md#clean-and-flush-cache-types)
 
-* [重新索引所有Magento2索引器](../../../configuration/cli/manage-indexers.md#reindex)
+* [重新索引所有Magento2索引子](../../../configuration/cli/manage-indexers.md#reindex)
 
 * 變更DNS和負載平衡器以指向Magento2生產硬體

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MySQL觸發程式使用的最佳實務
 
-本文說明在使用MySQL觸發程式時如何避免效能問題。 觸發器用於將變更記錄到稽核表中。
+本文說明在使用MySQL觸發程式時，如何避免效能問題。 觸發器用於將變更記錄到稽核表中。
 
 ## 受影響的產品和版本
 
@@ -26,11 +26,11 @@ ht-degree: 0%
 
 ## 瞭解效能影響
 
-觸發器會解譯為程式碼，表示MySQL不會預先編譯它們。
+觸發程式會解譯為程式碼，表示MySQL不會預先編譯它們。
 
-掛接到查詢的交易空間時，觸發器會為使用表格執行的每個查詢向剖析器和解譯器增加額外負荷。 觸發程式與原始查詢共用相同的交易空間，當這些查詢爭奪表格上的鎖定時，觸發程式會獨立爭奪其他表格上的鎖定。
+掛接到查詢的交易空間時，會觸發為使用表格執行的每個查詢向剖析器和解譯器增加額外負荷。 觸發程式與原始查詢共用相同的交易空間，當這些查詢競爭表格上的鎖定時，觸發程式會獨立競爭另一個表格上的鎖定。
 
-如果使用許多觸發程式，此額外額外開銷可能會對網站上的網站效能造成負面影響。
+如果使用許多觸發程式，這些額外的額外開銷可能會對網站上的網站效能產生負面影響。
 
 >[!WARNING]
 >
@@ -38,11 +38,11 @@ ht-degree: 0%
 
 ## 有效使用觸發程式
 
-若要防止使用觸發程式時發生效能問題，請遵循下列准則：
+若要在使用觸發程式時防止效能問題，請遵循下列准則：
 
-- 如果您有在執行觸發程式時寫入某些資料的自訂觸發程式，請移動此邏輯以直接寫入稽核表格。 例如，在應用程式程式碼中新增其他查詢，然後在您要為其建立觸發器的查詢後執行。
-- 檢閱現有的自訂觸發程式，並考慮移除這些觸發程式，然後直接從應用程式端寫入表格。 使用檢查資料庫中現有的觸發程式 [`SHOW TRIGGERS` SQL陳述式](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- 如需其他協助、疑問或顧慮， [提交Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
+- 如果您有在執行觸發程式時寫入某些資料的自訂觸發程式，請移動此邏輯以直接寫入稽核表格。 例如，在應用程式程式碼中新增其他查詢，然後在您打算為其建立觸發器的查詢後進行。
+- 檢閱現有的自訂觸發器，並考慮移除這些觸發器，然後直接從應用程式端寫入表格。 使用檢查資料庫中現有的觸發程式 [`SHOW TRIGGERS` SQL陳述式](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
+- 如需其他協助、問題或顧慮， [提交Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
 
 ## 其他資訊
 

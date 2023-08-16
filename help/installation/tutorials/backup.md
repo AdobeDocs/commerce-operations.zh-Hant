@@ -1,6 +1,6 @@
 ---
-title: 備份及復原檔案系統、媒體及資料庫
-description: 請依照下列步驟備份和還原Adobe Commerce或Magento Open Source應用程式。
+title: 備份及回覆檔案系統、媒體及資料庫
+description: 請依照下列步驟，備份並還原Adobe Commerce或Magento Open Source應用程式。
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,17 +9,17 @@ ht-degree: 0%
 
 ---
 
-# 備份及復原檔案系統、媒體及資料庫
+# 備份及回覆檔案系統、媒體及資料庫
 
-此命令可讓您備份：
+這個命令可讓您備份：
 
 * 檔案系統(不包括 `var` 和 `pub/static` 目錄)
 * 此 `pub/media` 目錄
 * 資料庫
 
-備份會儲存在 `var/backups` 目錄，並可隨時使用 [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) 命令。
+備份儲存在 `var/backups` 目錄，並可隨時使用 [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) 命令。
 
-備份之後，您可以 [復原](#rollback) 稍後。
+備份之後，您可以 [回覆](#rollback) 稍後。
 
 >[!TIP]
 >
@@ -36,19 +36,19 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**淘汰通知：**
->備份功能自2.1.16、2.2.7和2.3.0起已過時。我們建議調查其他備份技術和二進位備份工具（例如Percona XtraBackup）。
+>備份功能自2.1.16、2.2.7和2.3.0起已過時。我們建議您研究其他備份技術和二進位備份工具（例如Percona XtraBackup）。
 
 ## 設定開啟檔案限制
 
 復原到先前的備份可能會無訊息地失敗，導致使用寫入檔案系統或資料庫的不完整資料 [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) 命令。
 
-有時，長查詢字串會導致使用者配置的記憶體空間因太多遞回呼叫而用盡記憶體。
+有時，長查詢字串會導致使用者的記憶體空間因太多遞回呼叫而用盡記憶體。
 
 ## 如何設定開啟的檔案 `ulimit`
 
-建議您設定開啟的檔案 [`ulimit`](https://ss64.com/bash/ulimit.html) 將檔案系統使用者設為 `65536` 或更多。
+建議您設定開啟的檔案 [`ulimit`](https://ss64.com/bash/ulimit.html) 將檔案系統使用者的值設為 `65536` 或更多。
 
-您可以在命令列上執行此操作，也可以透過編輯使用者的shell指令碼將其設為使用者的永久設定。
+您可以在命令列上執行此操作，也可以透過編輯使用者的shell指令碼將其設為永久設定。
 
 在繼續之前，如果您尚未這樣做，請切換至 [檔案系統擁有者](../prerequisites/file-system/overview.md).
 
@@ -58,15 +58,15 @@ bin/magento config:set system/backup/functionality_enabled 1
 ulimit -s 65536
 ```
 
-您可以視需要將此變更為較大的值。
+如有需要，可將其變更為較大的值。
 
 >[!NOTE]
 >
 >開啟檔案的語法 `ulimit` 取決於您使用的UNIX shell。 前面的設定應該適用於CentOS和Ubuntu以及Bash shell。 不過，對於macOS，正確的設定是 `ulimit -S 65532`. 如需詳細資訊，請參閱線上手冊或作業系統參考資訊。
 
-若要選擇性設定使用者的Bash shell中的值：
+若要選擇設定使用者的Bash shell中的值：
 
-1. 如果您尚未這樣做，請切換至 [檔案系統擁有者](../prerequisites/file-system/overview.md).
+1. 如果您尚未這麼做，請切換至 [檔案系統擁有者](../prerequisites/file-system/overview.md).
 1. 開啟 `/home/<username>/.bashrc` 在文字編輯器中。
 1. 新增下列行：
 
@@ -78,7 +78,7 @@ ulimit -s 65536
 
 >[!WARNING]
 >
->建議您避免為「 」設定值 [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) 在 `php.ini` 因為會導致不完整的倒回，且沒有失敗通知。
+>建議您避免為設定值 [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) 在 `php.ini` 檔案的倒回可能會不完整，且不會出現失敗通知。
 
 ## 備份
 
@@ -90,13 +90,13 @@ bin/magento setup:backup [--code] [--media] [--db]
 
 指令會執行下列工作：
 
-1. 將存放區置於維護模式。
+1. 將商店置於維護模式。
 1. 執行下列其中一個命令選項。
 
    | 選項 | 含義 | 備份檔案名稱和位置 |
    |--- |--- |--- |
    | `--code` | 備份檔案系統（不包括var和pub/static目錄）。 | `var/backups/<timestamp>/_filesystem.tgz` |
-   | `--media` | 備份發佈/媒體目錄。 | `var/backups/<timestamp>/_filesystem_media.tgz` |
+   | `--media` | 備份pub/media目錄 | `var/backups/<timestamp>/_filesystem_media.tgz` |
    | `--db` | 備份資料庫。 | `var/backups/<timestamp>/_db.sql` |
 
 1. 將存放區帶出維護模式。
@@ -122,9 +122,9 @@ DB backup path: /var/www/html/magento2/var/backups/1434133011_db.sql
 Disabling maintenance mode
 ```
 
-## 復原
+## 回覆
 
-本節討論如何回覆至您先前建立的備份。 您必須知道要還原之備份檔案的檔案名稱。
+本節將討論如何回覆至您先前建立的備份。 您必須知道要還原之備份檔案的檔案名稱。
 
 若要尋找備份的名稱，請輸入：
 
@@ -134,7 +134,7 @@ bin/magento info:backups:list
 
 備份檔案名稱中的第一個字串是時間戳記。
 
-若要復原至先前的備份，請輸入：
+若要復原到先前的備份，請輸入：
 
 ```bash
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]

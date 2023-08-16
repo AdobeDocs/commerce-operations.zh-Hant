@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - **模組相依性**：顯示模組之間的相依性總數，以及相依性是硬式還是軟式。
 - **循環相依性**：顯示相依性鏈結的總數，以及每個模組的循環相依性數目和清單。
-- **框架相依性**：依模組顯示Commerce架構的相依性總數（包括每個程式庫的架構專案總數）。
+- **框架相依性**：按模組顯示Commerce架構的相依性總數（包括每個程式庫的架構專案總數）。
 
 註解中的相依性也是相依性。
 
@@ -37,9 +37,9 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 | `show-modules-circular` | 循環相依性報表。 | 是 |
 | `show-framework` | 框架相依性報表。 | 是 |
 | `-d --directory` | 要開始搜尋報表資料的基礎目錄路徑。 | 否 |
-| `-o --output` | 指定報表的逗號分隔值(csv)輸出檔案的絕對檔案系統路徑和檔案名稱。 | 否 |
+| `-o --output` | 指定報告的逗號分隔值(csv)輸出檔案的絕對檔案系統路徑和檔案名稱。 | 否 |
 
-如果未傳遞任何目錄或檔案名稱作為引數，則會使用下列應用程式根目錄作為預設目錄，並使用下列預設檔案名稱：
+如果未將任何目錄或檔案名稱作為引數傳遞，則會使用下列應用程式根目錄作為預設目錄，並使用下列預設檔案名稱：
 
 | 命令 | 檔案名稱 |
 | ----------------------------------------------------- | ----------------------------------- |
@@ -49,7 +49,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 ### 模組相依性報表範例
 
-以下是範例模組相依性報表的部分輸出：
+以下是範例模組相依性報表輸出的一部分：
 
 ```terminal
 "","All","Hard","Soft"
@@ -73,7 +73,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 ### 循環相依性報表範例
 
-以下是範例循環相依性報表輸出的一部分：
+以下是範例循環相依性報告的輸出部分：
 
 ```terminal
 "Circular dependencies:","Total number of chains"
@@ -97,9 +97,9 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 "magento/module-config->magento/module-backend->magento/module-sales->magento/module-checkout->magento/module-customer->magento/module-review->magento/module-catalog->magento/module-catalog-rule->magento/module-rule->magento/module-eav->magento/module-config"
 ```
 
-### 範例架構相依性報表
+### 框架相依性報表範例
 
-以下是範例架構相依性報表的部分輸出：
+以下是範例框架相依性報表輸出的一部份：
 
 ```terminal
 "Dependencies of framework:","Total number"

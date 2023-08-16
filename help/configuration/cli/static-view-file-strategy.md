@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # 靜態檢視檔案的部署策略
 
-部署靜態檢視檔案時，您可以選擇三種可用策略之一。 其中每個選項都針對不同使用案例提供最佳部署結果：
+部署靜態檢視檔案時，您可以選擇三種可用策略之一。 其中每個選項都可針對不同使用案例提供最佳部署結果：
 
 - [標準](#standard-strategy)：一般部署程式。
-- [快速](#quick-strategy) (_預設_)：在部署多個地區設定的檔案時，將部署所需的時間減到最少。
-- [壓縮](#compact-strategy)：將發佈檢視檔案所佔用的空間減到最少。
+- [快速](#quick-strategy) (_預設_)：在部署多個地區設定的檔案時，將部署所需的時間降到最低。
+- [精簡](#compact-strategy)：將發佈檢視檔案所佔用的空間減到最少。
 
 以下各節說明每個策略的實作詳細資訊和功能。
 
@@ -31,22 +31,22 @@ ht-degree: 0%
 快速策略會執行下列動作：
 
 1. 對於每個主題，選擇一個任意語言環境，並部署此語言環境的所有檔案，例如在標準策略中。
-1. 對於主題的所有其他區域設定：
+1. 對於主題的所有其他地區：
 
    1. 會定義並部署覆寫已部署地區設定的檔案。
-   1. 所有其他檔案在所有地區設定中都被視為類似，並從部署的地區設定中複製。
+   1. 對於所有語言環境，所有其他檔案都視為類似，並從已部署語言環境複製。
 
 >[!INFO]
 >
 >作者： _相似_，是指與地區、主題或區域無關的檔案。 這些檔案可能包含CSS、影像和字型。
 
-雖然有許多檔案重複，但此方法可將多個地區設定所需的部署時間減到最少。
+雖然有許多檔案重複，但此方法可儘量減少多個區域設定所需的部署時間。
 
-## 壓縮策略
+## 精簡策略
 
-壓縮策略可藉由將類似檔案儲存在中來避免檔案重複 `base` 子目錄。
+壓縮策略可透過將類似檔案儲存在來避免檔案重複 `base` 子目錄。
 
-為獲得最佳化結果，已分配了三個可能相似性的範圍：區域、主題和地區。 此 `base` 系統會為這些範圍的所有組合建立子目錄。
+為獲得最佳化結果，已分配了三個可能相似性的範圍：區域、主題和地區設定。 此 `base` 會為這些範圍的所有組合建立子目錄。
 
 檔案會根據下列模式部署至這些子目錄。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 | `<area>/<theme>/default` | 特定區域特定主題的所有區域設定類似的檔案。 |
 | `<area>/Magento/base/<locale>` | 特定區域和地區設定的特定檔案，但所有主題都類似。 |
 | `<area>/Magento/base/default` | 特定區域的特定檔案，但所有主題和區域設定都類似。 |
-| `base/Magento/base/<locale>` | 所有區域和主題都相似的檔案，但特定於特定地區設定。 |
+| `base/Magento/base/<locale>` | 所有區域和主題的檔案都類似，但特定於特定地區設定。 |
 | `base/Magento/base/default` | 所有區域、主題和區域設定都類似。 |
 
 ### 對應已部署的檔案
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 此 `map.php` 檔案使用者 [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) 以建置正確的URL。
 
-此 `requirejs-map.js` 由使用 `baseUrlResolver` RequireJS的外掛程式。
+此 `requirejs-map.js` 使用者 `baseUrlResolver` RequireJS的外掛程式。
 
 範例： `map.php`：
 
@@ -103,4 +103,4 @@ require.config({
 
 若要建置靜態檢視檔案的URL，請使用 [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
 
-請勿使用URL串連，以避免在頁面轉譯期間找不到靜態檔案且未顯示靜態檔案的問題。
+請勿使用URL串連來避免在頁面轉譯期間找不到且未顯示靜態檔案的問題。

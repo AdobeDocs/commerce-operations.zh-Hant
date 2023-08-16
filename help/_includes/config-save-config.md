@@ -18,7 +18,7 @@ ht-degree: 0%
    php bin/magento app:config:dump
    ```
 
-   例如，如果商務安裝在中 `/var/www/html/magento2`，輸入：
+   例如，如果Commerce安裝在中 `/var/www/html/magento2`，輸入：
 
    ```bash
    cd /var/www/html/magento2
@@ -43,9 +43,9 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >執行 _not_ 將變更提交至 `generated`， `pub/media`，或 `pub/static` 目錄至原始檔控制。 您會在組建系統上產生這些檔案。 開發系統可能有程式碼、主題等尚未準備好用於生產系統的專案。
+   >執行 _非_ 將變更提交至 `generated`， `pub/media`，或 `pub/static` 目錄至原始檔控制。 您會在建置系統上產生這些檔案。 開發系統可能有程式碼、主題等未準備好用於生產系統的專案。
 
-1. 將變更籤入 `app/etc/config.php` 僅限原始檔控制。
+1. 將您的變更籤入 `app/etc/config.php` 僅限原始檔控制。
 
    ```bash
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy

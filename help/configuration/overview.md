@@ -18,14 +18,14 @@ ht-degree: 0%
 - [快取選項](../configuration/cache/caching-overview.md)
 - [Cron工作管理](../configuration/cron/custom-cron.md)
 - [命令列使用方式](../configuration/cli/config-cli.md)
-- [記錄自訂](../configuration/logs/custom-logging.md)
+- [記錄檔自訂](../configuration/logs/custom-logging.md)
 - [安全性選項](../configuration/security/overview.md)
 - [搜尋引擎設定](../configuration/search/configure-search-engine.md)
 - [儲存方法](../configuration/storage/memcached.md)
 
 ## Commerce管理員設定
 
-以下為中的對應主題： [Commerce使用手冊](https://docs.magento.com/user-guide/stores/configuration.html) 可協助您瞭解Commerce Admin中每個設定之欄位說明。
+「 」中有對應的主題 [Commerce使用手冊](https://docs.magento.com/user-guide/stores/configuration.html) 可協助您瞭解Commerce Admin中每個組態設定的欄位說明。
 
 ## 雲端設定
 

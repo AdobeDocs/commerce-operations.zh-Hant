@@ -41,17 +41,17 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 <!-- Example 2: -->
 
-使用Adobe Commerce 2.3.4版或更早版本以及MariaDB 10.0版或更早版本在雲端基礎結構上使用Adobe Commerce。
+使用Adobe Commerce 2.3.4版或更舊版本以及MariaDB 10.0版或更舊版本的雲端基礎結構上的Adobe Commerce。
 
 &lt;! — 業務型別：B2C和B2B — 僅在需要時指定/)—>
 
 ## 頁首……
 
-將內容區塊化為區段以方便閱讀。 內容應包含行動號召的範例（好與壞）和檔案連結（如適用）
+將內容區塊化成區段，以方便閱讀。 內容應包含呼叫動作的相關範例（好與壞），以及適用的檔案連結
 
 ## 頁首……
 
-視需要使用儘可能多的區段
+請視需要使用儘可能多的區段
 
 ## 其他資訊
 

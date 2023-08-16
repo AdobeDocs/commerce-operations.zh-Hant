@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # 升級Git安裝
 
-本主題說明投稿開發人員如何在不重新安裝的情況下更新Adobe Commerce或Magento Open Source。 如果您不是參與開發人員，請參閱 [執行升級](../implementation/perform-upgrade.md).
+本主題說明投稿開發人員如何在不重新安裝的情況下更新Adobe Commerce或Magento Open Source。 如果您不是貢獻開發人員，請參閱 [執行升級](../implementation/perform-upgrade.md).
 
-如果您是參與開發人員，若要升級：
+若要升級您是參與開發人員：
 
 {{$include /help/_includes/server-login.md}}
 
-1. 儲存您對所做的任何變更 `composer.json` 檔案，因為後續步驟會加以覆寫。
+1. 儲存您對所做的任何變更 `composer.json` 檔案，因為後續步驟會覆寫它。
 
 1. 建立備份 `composer.json` 檔案。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
    cp composer.json composer.json.old
    ```
 
-1. 更新您的本機存放庫以取得最新的程式碼：
+1. 更新您的本機存放庫以取得最新程式碼：
 
    ```bash
    git pull origin develop
@@ -33,9 +33,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >若 `git pull origin develop` 失敗，請參閱 [疑難排解](https://support.magento.com/hc/en-us/articles/360034229872).
+   >如果 `git pull origin develop` 失敗，請參閱 [疑難排解](https://support.magento.com/hc/en-us/articles/360034229872).
 
-1. 比較並合併 `composer.json.old` 檔案包含 `composer.json` 檔案。
+1. 比較並合併 `composer.json.old` 含下列專案的檔案： `composer.json` 檔案。
 
 1. 解決相依性並將確切版本寫入 `composer.lock` 檔案。
 

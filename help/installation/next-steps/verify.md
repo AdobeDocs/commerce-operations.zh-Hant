@@ -13,15 +13,15 @@ ht-degree: 0%
 
 使用網頁瀏覽器前往店面。 例如，如果您的安裝基礎URL為 `http://www.example.com`，請在瀏覽器的位址或位置列輸入。
 
-下圖顯示店面頁面的範例。 如果它顯示如下，表示您的安裝成功！
+下圖顯示一個店面頁面的範例。 如果它顯示如下，表示您的安裝成功！
 
-![有Luma主題的店面](../../assets/installation/install-success_store-luma.png)
+![有Luma佈景主題的店面](../../assets/installation/install-success_store-luma.png)
 
 ## 驗證店面（無範例資料）
 
 使用網頁瀏覽器前往店面。 例如，如果您的安裝基礎URL為 `http://www.example.com`，請在瀏覽器的位址或位置列輸入。
 
-下圖顯示店面頁面的範例。 如果它顯示如下，表示您的安裝成功！
+下圖顯示一個店面頁面的範例。 如果它顯示如下，表示您的安裝成功！
 
 ![驗證安裝成功的店面](../../assets/installation/install-success_store.png)
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 驗證管理員
 
-在網頁瀏覽器中前往「管理員」。 例如，如果您的安裝基礎URL為 `http://www.example.com`，而且管理員URI為 `admin_au1nT`，輸入 `http://www.example.com/admin_au1nT` 位於瀏覽器的位址或位置列中。
+在網頁瀏覽器中前往「管理員」。 例如，如果您的安裝基礎URL為 `http://www.example.com`，管理員URI為 `admin_au1nT`，輸入 `http://www.example.com/admin_au1nT` 位於瀏覽器的位址或位置列中。
 
 (管理員URI是由 `backend-frontname` 安裝引數)。
 
@@ -41,6 +41,6 @@ ht-degree: 0%
 
 如果頁面未顯示樣式，請參閱 [疑難排解](https://support.magento.com/hc/en-us/articles/360032994352).
 
-如果您收到類似以下的404 （找不到）錯誤，請參閱 [在瀏覽器中存取Adobe Commerce時發生PHP版本錯誤或404](https://support.magento.com/hc/en-us/articles/360033117152).
+如果您收到類似以下的404 （找不到）錯誤，請參閱 [在瀏覽器中存取Adobe Commerce時出現PHP版本錯誤或404](https://support.magento.com/hc/en-us/articles/360033117152).
 
 `The requested URL /magento2index.php/admin/admin/dashboard/index/key/0c81957145a968b697c32a846598dc2e/ was not found on this server.`

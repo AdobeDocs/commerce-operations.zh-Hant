@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# 品質控制流程和工具
+# 品質控制流程與工具
 
 ![品質控制程式圖](../../assets/playbooks/quality-control-diagram.svg)
 
@@ -22,7 +22,7 @@ ht-degree: 0%
     <th>軟體開發程式</th>
     <th>QC工作流程</th>
     <th>QC</th>
-    <th>QC領導者</th>
+    <th>QC負責人</th>
   </tr>
 </thead>
 <tbody>
@@ -71,14 +71,14 @@ ht-degree: 0%
   <tr>
     <td></td>
     <td></td>
-    <td>檢查效能和掃描安全性 — 評估結果和預期結果的偏差</td>
+    <td>檢查效能和掃描安全性 — 評估結果與預期結果的偏差</td>
     <td>確保測試可追蹤至測試基礎，並追蹤Bug追蹤系統上的錯誤</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
     <td>將錯誤發佈到錯誤追蹤系統(Jira/Redmine/Trello)</td>
-    <td>排定測試的優先順序/排程以符合PM定義的專案計畫</td>
+    <td>排定測試的優先順序/排程，以符合PM定義的專案計畫</td>
   </tr>
   <tr>
     <td></td>
@@ -89,7 +89,7 @@ ht-degree: 0%
   <tr>
     <td></td>
     <td>評估與報告</td>
-    <td>向QC銷售機會與PM報告測試進度</td>
+    <td>向QC銷售機會和PM報告測試進度</td>
     <td>評估測試結果和進度</td>
   </tr>
   <tr>
@@ -101,7 +101,7 @@ ht-degree: 0%
   <tr>
     <td>UAT</td>
     <td>UAT</td>
-    <td>驗證客戶回饋或變更請求(CR)</td>
+    <td>驗證客戶反饋或變更請求(CR)</td>
     <td>後續追蹤</td>
   </tr>
   <tr>
@@ -143,7 +143,7 @@ ht-degree: 0%
 </tbody>
 </table>
 
-類似於 [工具](project-management-tools.md) 我們針對開發流程確定了幾項可供選擇的解決方案和平台，並經常將其用於品質控制測試。
+類似於 [工具](project-management-tools.md) 我們針對開發流程確定了幾項我們經常用於品質控制測試的解決方案和平台。
 
 | 用途 | 工具 |
 |---------------------------|---------------------------------------------------|
@@ -157,32 +157,32 @@ ht-degree: 0%
 
 ## 網站績效指數
 
-GooglePageSpeed會報告行動裝置和桌上型裝置上頁面的效能，並提供如何改善該頁面的建議。
+GooglePageSpeed會報告行動裝置和案頭裝置上頁面的效能，並提供如何改善該頁面的建議。
 
 WebPageTest是一種網頁效能工具，使用真正的瀏覽器來存取網頁並收集計時測量結果。
 
-JMeter是Apache專案，可作為負載測試工具，用於分析和測量各種服務的效能，專注於Web應用程式。
+JMeter是Apache專案，可作為負載測試工具，用於分析和測量各種服務的效能，其重心為Web應用程式。
 
 ## 安全性
 
-在開發過程中引入了SonarQube和ZAP，但我們也在此處加入有關它如何參與QC過程的更多資訊。
+SonarQube和ZAP已引進開發流程，但我們也在此處加入有關其如何參與QC流程的更多資訊。
 
-SonarQube也用於持續檢查計畫碼品質，透過計畫碼的靜態分析執行自動審查，以偵測錯誤、計畫碼異味和安全性漏洞。
+SonarQube也用於持續檢查程式碼品質，透過程式碼的靜態分析執行自動審查，以偵測錯誤、程式碼異味和安全性漏洞。
 
-OWASPZAP (Zed Attack Proxy)旨在供應用程式安全性新手以及專業滲透測試人員使用。 部分內建功能包括攔截Proxy伺服器、傳統和AJAX Web編目程式、自動化掃描器、被動掃描器、強制瀏覽、Fuzzer、WebSocket支援、指令碼語言和Plug-n-Hack支援。
+OWASPZAP (Zed Attack Proxy)旨在供應用程式安全性新手以及專業滲透測試人員使用。 部分內建功能包括攔截代理伺服器、傳統和AJAX Web編目程式、自動化掃描器、被動式掃描器、強制瀏覽、Fuzzier、WebSocket支援、指令碼語言和隨插即用支援。
 
 ## UI測試
 
-Perfect Pixel可讓開發人員和標籤設計人員將半透明影像覆蓋放在開發HTML上方，並在兩者之間執行畫素完美比較。
+Perfect Pixel可讓開發人員和標籤設計人員將半透明影像覆蓋圖放置在開發HTML上方，並在兩者之間執行完美的畫素比較。
 
-BrowserStack是雲端網頁和行動測試平台，可讓開發人員透過隨選瀏覽器、作業系統和真實行動裝置，測試其網站和行動應用程式。
+BrowserStack是雲端網頁和行動測試平台，可讓開發人員透過隨選瀏覽器、作業系統和真實行動裝置測試其網站和行動應用程式。
 
 ## API測試
 
-Postman是API開發的共同作業平台。 Postman簡化建立API的每個步驟，並簡化共同作業，讓您能建立更好的API。
+Postman是API開發的共同作業平台。 Postman可簡化建立API的每個步驟，並簡化共同作業，讓您建立更好的API。
 
 SoapUI是簡單物件存取通訊協定(SOAP)和代表性狀態傳輸(REST)的開放原始碼Web服務測試應用程式。 其功能涵蓋網站服務檢查；叫用、開發、模擬和模擬；功能測試；載入和合規性測試。
 
 ## 自動化測試
 
-Selenium由數個元件（Selenium使用者端API、Selenium WebDriver）組成，每個元件都承擔特定角色，協助開發Web應用程式測試自動化。
+Selenium由數個元件（Selenium使用者端API、Selenium WebDriver）組成，每個元件都承擔協助開發Web應用程式測試自動化的特定角色。

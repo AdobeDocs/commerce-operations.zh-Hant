@@ -6,7 +6,7 @@ exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 18%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 0%
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>升級</strong></a>
-      <p>瞭解如何升級您的Adobe Commerce專案，確保店面安全並有效率地運作。</p>
+      <p>瞭解如何升級您的Adobe Commerce專案，讓您的店面安全有效地運作。</p>
     </div>
   </td>
   <td valign="top">
@@ -94,11 +94,11 @@ ht-degree: 0%
 <tr>
   <td valign="top">
     <a href="../implementation-playbook/overview.md">
-      <img alt="實作" src="../assets/icons/play.svg" width="40" height="40"/>
+      <img alt="實施" src="../assets/icons/play.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>實施行動手冊</strong></a>
-      <p>瞭解規劃及實作成功Adobe Commerce網站的策略。</p>
+      <p>了解規劃及實施成功 Adobe Commerce 網站的策略。</p>
     </div>
   </td>
   <td valign="top">
@@ -106,8 +106,8 @@ ht-degree: 0%
        <img alt="作業" src="../assets/icons/refresh.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>營運Playbook</strong></a>
-      <p>瞭解如何讓您的企業做好營運準備，以便經營成功的電子商務網站。</p>
+      <a href="../operational-playbook/overview.md"><strong>營運行動手冊</strong></a>
+      <p>了解如何讓企業在營運上做好準備，以便經營成功的電子商務網站。</p>
     </div>
   </td>
   <td valign="top">
@@ -116,7 +116,7 @@ ht-degree: 0%
     </a>
     <div>
       <a href="../commerce-at-scale/overview.md"><strong>大規模商務</strong></a>
-      <p>瞭解如何透過Adobe Experience Manager使用Adobe Commerce大規模提供體驗。</p>
+      <p>了解如何透過 Adobe Experience Manager 使用 Adobe Commerce 大規模提供體驗。</p>
     </div>
   </td>
   <td valign="top">
@@ -125,7 +125,7 @@ ht-degree: 0%
     </a>
     <div>
       <a href="../security-and-compliance/overview.md"><strong>安全性與合規性</strong></a>
-      <p>瞭解Adobe Commerce商家如何負責維護安全環境。</p>
+      <p>瞭解Adobe Commerce商家如何負責維護安全的環境。</p>
     </div>
   </td>
 </tr>

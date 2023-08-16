@@ -1,6 +1,6 @@
 ---
 title: 安裝指南
-description: 使用本指南進行安裝 [!DNL Site-Wide Analysis Tool] 您的網站
+description: 使用本指南進行安裝 [!DNL Site-Wide Analysis Tool] 適用於您的網站
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
 source-git-commit: 163d12b1f30a3098932c62e11f24784422002c67
@@ -12,19 +12,19 @@ ht-degree: 0%
 
 # 安裝指南
 
-此 [!DNL Site-Wide Analysis Tool] 提供全天候的即時效能監控、報告和建議，以確保雲端基礎結構安裝上的Adobe Commerce安全性和可操作性。 此外，也提供可用和已安裝修補程式、協力廠商擴充功能以及Adobe Commerce安裝的詳細資訊。
+此 [!DNL Site-Wide Analysis Tool] 提供7天24小時的即時效能監控、報告和建議，以確保Adobe Commerce在雲端基礎結構安裝上的安全性和可操作性。 此外，也提供可用和已安裝修補程式、協力廠商擴充功能及Adobe Commerce安裝的詳細資訊。
 
 >[!INFO]
 >
 >瞭解 [如何啟用](../site-wide-analysis-tool/access.md) 此 [!DNL Site-Wide Analysis Tool] 並產生報表。
 
-如果您有內部部署的Adobe Commerce，請在您的基礎結構上安裝代理程式以使用此工具。 您不需要在雲端基礎結構專案上在Adobe Commerce上安裝代理程式。
+如果您有內部部署的Adobe Commerce，請在您的基礎結構上安裝代理程式以使用此工具。 您不需要在雲端基礎結構專案上安裝Adobe Commerce代理程式。
 
 ## 代理程式
 
 此 [!DNL Site-Wide Analysis Tool] 代理程式可讓您使用 [!DNL Site-Wide Analysis Tool] 用於Adobe Commerce的內部安裝。
 
-此 [!DNL Site-Wide Analysis Tool] 代理程式會收集應用程式和業務資料，加以分析，並提供關於安裝狀況的其他深入分析，以便您改善客戶體驗。 它會監視您的應用程式，並協助您識別效能、安全性、可用性和應用程式問題。
+此 [!DNL Site-Wide Analysis Tool] 代理程式會收集應用程式和業務資料、分析這些資料，並提供有關您安裝狀況的額外深入分析，以便您改善客戶體驗。 它可以監視您的應用程式，並協助您識別效能、安全性、可用性以及應用程式問題。
 
 安裝代理程式需要下列步驟：
 
@@ -42,17 +42,17 @@ ht-degree: 0%
 
 ## 系統需求
 
-安裝代理程式之前，您的內部部署基礎結構必須符合下列要求：
+安裝代理程式之前，您的內部部署基礎結構必須符合下列需求：
 
 - 作業系統
 
-   - [!DNL Linux x86-64] 分佈，例如 [!DNL Red Hat® Enterprise Linux (RHEL)]， [!DNL CentOS]， [!DNL Ubuntu]， [!DNL Debian]，和類似專案
+   - [!DNL Linux x86-64] 分配，例如 [!DNL Red Hat® Enterprise Linux (RHEL)]， [!DNL CentOS]， [!DNL Ubuntu]， [!DNL Debian]，和類似專案
 
   >[!IMPORTANT]
   >
   >Adobe Commerce不受支援 [!DNL Microsoft Windows] 或 [!DNL macOS].
 
-- Adobe Commerce 2.4.5-p1或更新版本（由於依賴Service Connector）
+- Adobe Commerce 2.4.5-p1或更新版本（因為依賴Service Connector）
 
 - [!DNL Commerce Services Connector extension]
 
@@ -74,13 +74,13 @@ ht-degree: 0%
 
 ## [!DNL Commerce Services Connector]
 
-代理程式需要 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 擴充功能將安裝在您的系統和 [已設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 使用API金鑰。 若要確認已安裝擴充功能，請執行以下命令：
+代理程式需要 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 擴充功能將安裝在您的系統和 [已設定](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 使用API金鑰。 若要驗證是否已安裝擴充功能，請執行以下命令：
 
 ```bash
 bin/magento module:status Magento_ServicesId
 ```
 
-如果您已安裝擴充功能，並使用其他服務的現有API金鑰進行設定，則 **必須重新產生API金鑰** 並在Adobe Commerce管理員中更新代理程式。
+如果您已安裝擴充功能，並使用不同服務的現有API金鑰進行設定，則 **必須重新產生API金鑰** 並在代理程式的Adobe Commerce管理員中更新。
 
 1. 將您的網站放入 [維護模式](../../installation/tutorials/maintenance-mode.md).
 
@@ -98,7 +98,7 @@ bin/magento module:status Magento_ServicesId
 
 >[!IMPORTANT]
 >
-> 如果您在API入口網站中產生新金鑰，請立即更新以下專案中的API金鑰： [!DNL Admin configuration]. 如果您產生新金鑰，但未更新中的金鑰 [!DNL Admin]，您的SaaS擴充功能將無法繼續運作，且您的寶貴資料將會遺失。
+> 如果您在API入口網站產生新金鑰，請立即更新以下專案中的API金鑰： [!DNL Admin configuration]. 如果您產生新的金鑰，但未更新中的金鑰 [!DNL Admin]，您的SaaS擴充功能將無法繼續運作，且您的寶貴資料將會遺失。
 
 如果未安裝擴充功能，請依照下列指示進行安裝：
 
@@ -159,9 +159,9 @@ bin/magento module:status Magento_ServicesId
    Success exit.
    ```
 
-1. 下載及安裝代理程式之後， [設定為執行](#run-the-agent) 使用下列其中一種方法：
+1. 下載並安裝代理程式之後， [將其設定為執行](#run-the-agent) 使用下列其中一種方法：
 
-   - [服務](#service) （如果您有根存取許可權，則偏好使用）
+   - [服務](#service) （如果您有根存取權，則為偏好設定）
 
    - [Cron](#cron)
 
@@ -179,7 +179,7 @@ bin/magento module:status Magento_ServicesId
 
    >[!INFO]
    >
-   >若要使用 [!DNL Site-Wide Analysis Tool]，您必須先閱讀並接受從Adobe Commerce管理員存取控制面板時顯示的使用條款。
+   >若要使用 [!DNL Site-Wide Analysis Tool]，您必須先閱讀並接受您從Adobe Commerce管理員存取控制面板時顯示的使用條款。
 
    對於 **AMD64** 架構：
 
@@ -225,7 +225,7 @@ bin/magento module:status Magento_ServicesId
    shasum -a 512 -c launcher.checksum
    ```
 
-1. 建立 `config.yaml` 檔案中包含下列內容。
+1. 建立 `config.yaml` 檔案包含下列內容。
 
    ```yaml
    project:
@@ -258,19 +258,19 @@ bin/magento module:status Magento_ServicesId
    Success exit.
    ```
 
-1. 下載及安裝代理程式之後，您必須 [設定為執行](#run-the-agent) 使用下列其中一種方法：
+1. 下載及安裝代理程式之後，您必須 [將其設定為執行](#run-the-agent) 使用下列其中一種方法：
 
-   - [服務](#service) （如果您有根存取許可權，則偏好使用）
+   - [服務](#service) （如果您有根存取權，則為偏好設定）
 
    - [Cron](#cron)
 
 ## 執行代理程式 {#run-the-agent}
 
-我們建議將代理程式設定為以服務形式執行。 如果您對基礎結構的存取權有限，但沒有根許可權，則您必須使用 [cron](#cron) 而非。
+我們建議將代理程式設定為以服務方式執行。 如果您對基礎結構的存取權有限，且不具備root許可權，則您必須使用 [cron](#cron) 而非。
 
 ### 服務 {#service}
 
-1. 建立系統單位檔案 `(/etc/systemd/system/scheduler.service)` 替換為以下設定(取代 `<filesystemowner>` 擁有代理程式和Adobe Commerce軟體安裝目錄的UNIX®使用者)。 如果您以root使用者身份下載代理程式，請變更目錄和巢狀檔案擁有者。
+1. 建立系統單位檔案 `(/etc/systemd/system/scheduler.service)` 搭配以下設定(取代 `<filesystemowner>` 擁有安裝代理程式和Adobe Commerce軟體之目錄的UNIX®使用者)。 如果您以root使用者身份下載代理程式，請變更目錄和巢狀檔案擁有者。
 
    ```config
    [Unit]
@@ -320,7 +320,7 @@ bin/magento module:status Magento_ServicesId
 
 ## 解除安裝
 
-執行以下命令，從系統解除安裝服務，並移除所有產生的檔案：
+執行以下命令，從您的系統解除安裝服務，並移除所有產生的檔案：
 
 1. 停止排程器。
 
@@ -346,7 +346,7 @@ bin/magento module:status Magento_ServicesId
    systemctl daemon-reload
    ```
 
-1. 重設任何 `systemd` 單位來自失敗狀態。
+1. 重設任何 `systemd` 來自失敗狀態的單位。
 
    ```bash
    systemctl reset-failed
@@ -364,7 +364,7 @@ bin/magento module:status Magento_ServicesId
    rm /usr/local/bin/scheduler
    ```
 
-如果您已設定代理程式改用cron執行，請使用下列指示：
+如果您將代理程式設定為使用cron執行，請使用下列指示：
 
 1. 從crontab清單中移除代理程式。
 
@@ -384,9 +384,9 @@ bin/magento module:status Magento_ServicesId
    rm -rf swat-agent
    ```
 
-## 疑難排除
+## 疑難排解
 
-### 未正確剖析存取金鑰
+### 存取金鑰未正確剖析
 
 如果您的存取金鑰未正確剖析，您可能會看到以下錯誤：
 
@@ -397,20 +397,20 @@ FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.a
 
 若要解決此錯誤，請嘗試下列步驟：
 
-1. 執行 [指令碼安裝](#scripted)，儲存輸出，然後檢閱輸出是否有錯誤。
-1. 檢閱產生的 `config.yaml` 檔案並驗證Commerce執行個體和PHP的路徑是否正確。
-1. 請確定執行排程器的使用者位於 [檔案系統擁有者](../../installation/prerequisites/file-system/overview.md) Unix群組或是與檔案系統擁有者相同的使用者。
-1. 請確定 [商務服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 金鑰已正確安裝，請嘗試更新金鑰，以將擴充功能連線至您的系統。
-1. [解除安裝](#uninstall) 代理程式在更新金鑰後使用 [安裝指令碼](#scripted).
-1. 執行排程器並檢視您是否仍收到相同的錯誤。
-1. 如果您還是收到相同的錯誤，請提高 `config.yaml` 以偵錯並開啟支援票證。
+1. 執行 [指令碼安裝](#scripted)，儲存輸出，並檢閱輸出是否有錯誤。
+1. 檢閱產生的 `config.yaml` 並驗證Commerce執行個體和PHP的路徑是否正確。
+1. 請確定正在執行排程器的使用者位於 [檔案系統擁有者](../../installation/prerequisites/file-system/overview.md) Unix群組或與檔案系統擁有者相同的使用者。
+1. 確定 [Commerce服務聯結器](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 金鑰已正確安裝，並嘗試更新金鑰，以將擴充功能連線至您的系統。
+1. [解除安裝](#uninstall) 代理程式在更新金鑰並使用 [安裝指令碼](#scripted).
+1. 執行排程器，檢視您是否仍收到相同的錯誤。
+1. 如果您還是收到相同的錯誤，請在中提高記錄層級 `config.yaml` 以偵錯並開啟支援票證。
 
 ### *SIGFAULT* 錯誤
 
-如果您看到 *SIGFAULT* 執行二進位檔時發生錯誤，您可能不會以Adobe Commerce和Agent檔案的檔案擁有者的身分執行此檔案。
-若要解決問題，請檢查代理程式目錄內是否有所有與Adobe Commerce檔案擁有者具有相同使用者的檔案，以及二進位檔是否應該在該使用者下執行。
-您可以使用 `chown` 命令來變更檔案擁有者並切換到適當的使用者。
-請確定您的資料庫化機制（Cron或System.d）會在適當的使用者下執行程式。
+如果您看到 *SIGFAULT* 執行二進位檔時發生錯誤，您可能不會以Adobe Commerce和Agent檔案的檔案擁有者的身分執行此命令。
+若要解決問題，請檢查代理程式目錄中所有與Adobe Commerce檔案擁有者具有相同使用者，以及二進位檔案的檔案，是否也應該在該使用者下執行。
+您可以使用 `chown` 命令變更檔案擁有者並切換到適當的使用者。
+請確定您的模組化機制（Cron或System.d）在適當的使用者下執行流程。
 
 >[!INFO]
 >

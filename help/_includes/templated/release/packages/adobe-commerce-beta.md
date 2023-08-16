@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Adobe Commerce使用Composer來管理PHP套件。
 
-此 `composer.json` 檔案會宣告套件清單，而 `composer.lock` file會儲存用來建置Adobe Commerce或Magento Open Source安裝的套件完整清單（每個套件及其相依性的完整版本）。
+此 `composer.json` 檔案會宣告套件清單，而 `composer.lock` file會儲存用來建置Adobe Commerce或Magento Open Source安裝的套件完整清單（每個套件的完整版本及其相依性）。
 
 下列參考檔案產生自 `composer.lock` 檔，並涵蓋Adobe Commerce 2.4.7-beta1中的必要套件。
 
@@ -275,7 +275,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/awslabs/aws-crt-php.git">aws/aws-crt-php</a>
     </td>
     <td>資料庫</td>
-    <td>PHP的AWS通用執行階段</td>
+    <td>適用於PHP的AWS Common Runtime</td>
   </tr>
   <tr>
     <td>
@@ -296,7 +296,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/wikimedia/less.php.git">wikimedia/less.php</a>
     </td>
     <td>資料庫</td>
-    <td>較少處理器的PHP連線埠</td>
+    <td>LESS處理器的PHP連線埠</td>
   </tr>
   </tbody>
 </table>
@@ -324,7 +324,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/beberlei/assert.git">beberlei/assert</a>
     </td>
     <td>資料庫</td>
-    <td>業務模型中用於輸入驗證的精簡宣告庫。</td>
+    <td>業務模型中用於輸入驗證的精簡宣告程式庫。</td>
   </tr>
   <tr>
     <td>
@@ -338,7 +338,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/webimpress/safe-writer.git">webimpress/safe-writer</a>
     </td>
     <td>資料庫</td>
-    <td>安全寫入檔案的工具，以避免競爭情況</td>
+    <td>安全寫入檔案的工具，避免競爭情況</td>
   </tr>
   </tbody>
 </table>
@@ -359,7 +359,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_File.git">colimollenhour/cache-backend-file</a>
     </td>
     <td>magento-module</td>
-    <td>坯件Zend_Cache_Backend_File後端的標籤清除效能極差，導致隨著快取專案數的增加無法使用。 此後端進行許多變更，大幅提升效能，尤其是標籤清理方面。</td>
+    <td>庫存Zend_Cache_Backend_File後端透過標籤進行清除的效能極差，導致隨著快取專案數的增加無法使用。 此後端進行許多變更，大幅提升效能，尤其是標籤清除作業。</td>
   </tr>
   <tr>
     <td>
@@ -380,18 +380,18 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/google/recaptcha.git">google/recaptcha</a>
     </td>
     <td>資料庫</td>
-    <td>reCAPTCHA的使用者端資料庫，此免費服務可保護網站免受垃圾郵件和濫用。</td>
+    <td>reCAPTCHA使用者端程式庫，此免費服務可保護網站遠離垃圾郵件與不當使用。</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-captcha.git">laminas/laminas-captcha</a>
+      <a href="https://github.com/laminas/laminas-captcha.git">拉米納斯/拉米納斯 — 驗證碼</a>
     </td>
     <td>資料庫</td>
-    <td>使用Figlet、影像、ReCaptcha等產生及驗證碼等</td>
+    <td>使用Figlet、影像、ReCaptcha等專案產生及驗證驗證碼</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-code.git">laminas/laminas-code</a>
+      <a href="https://github.com/laminas/laminas-code.git">laminas/laminas碼</a>
     </td>
     <td>資料庫</td>
     <td>PHP Reflection API、靜態程式碼掃描和程式碼產生的擴充功能</td>
@@ -401,60 +401,60 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/laminas/laminas-config.git">層板/層板 — 組態</a>
     </td>
     <td>資料庫</td>
-    <td>提供巢狀物件屬性型使用者介面，用於存取應用程式程式碼中的此設定資料</td>
+    <td>提供巢狀物件屬性型使用者介面，用於存取應用程式程式碼內的此設定資料</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-crypt.git">層板/層板 — 加密</a>
+      <a href="https://github.com/laminas/laminas-crypt.git">層粘連體/層粘連體</a>
     </td>
     <td>資料庫</td>
-    <td>強大的加密工具和密碼雜湊</td>
+    <td>強大的加密工具和密碼雜湊功能</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-db.git">laminas/laminas-db</a>
     </td>
     <td>資料庫</td>
-    <td>資料庫抽象層、SQL抽象化、結果集抽象化，以及RowDataGateway和TableDataGateway實作</td>
+    <td>資料庫抽象層、SQL抽象層、結果集抽象層，以及RowDataGateway和TableDataGateway實作</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-di.git">laminas/laminas-di</a>
+      <a href="https://github.com/laminas/laminas-di.git">萊米納斯/萊米納斯 — 迪</a>
     </td>
     <td>資料庫</td>
     <td>PSR-11容器的自動化相依性插入</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-escaper.git">層疊/層疊 — 逸出</a>
+      <a href="https://github.com/laminas/laminas-escaper.git">laminas/laminas-escaper</a>
     </td>
     <td>資料庫</td>
-    <td>安全地逸出HTML、HTML屬性、JavaScript、CSS和URL</td>
+    <td>安全且安全地逸出HTML、HTML屬性、JavaScript、CSS和URL</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-eventmanager.git">laminas/laminas-eventmanager</a>
     </td>
     <td>資料庫</td>
-    <td>在PHP應用程式中觸發和監聽事件</td>
+    <td>觸發並接聽PHP應用程式中的事件</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-feed.git">層合板/層合板饋送</a>
+      <a href="https://github.com/laminas/laminas-feed.git">層疊/層疊 — 饋送</a>
     </td>
     <td>資料庫</td>
     <td>提供建立和使用RSS和Atom摘要的功能</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-file.git">層疊/層疊 — 檔案</a>
+      <a href="https://github.com/laminas/laminas-file.git">laminas/laminas-file</a>
     </td>
     <td>資料庫</td>
     <td>找到PHP類別檔案</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-filter.git">圖層/圖層濾鏡</a>
+      <a href="https://github.com/laminas/laminas-filter.git">層疊/層疊 — 濾鏡</a>
     </td>
     <td>資料庫</td>
     <td>以程式設計方式篩選及標準化資料和檔案</td>
@@ -468,17 +468,17 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-i18n.git">層粘連體/層粘連體 — i18n</a>
+      <a href="https://github.com/laminas/laminas-i18n.git">雷米納斯/雷米納斯 — i18n</a>
     </td>
     <td>資料庫</td>
-    <td>為您的應用程式提供翻譯，並篩選及驗證國際化值</td>
+    <td>提供應用程式的翻譯，並篩選及驗證國際化值</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/laminas/laminas-json.git">laminas/laminas-json</a>
     </td>
     <td>資料庫</td>
-    <td>提供將原生PHP序列化為JSON並將JSON解碼為原生PHP的便利方法</td>
+    <td>提供了將原生PHP序列化為JSON並將JSON解碼為原生PHP的便利方法</td>
   </tr>
   <tr>
     <td>
@@ -489,10 +489,10 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-mail.git">層疊/層疊</a>
+      <a href="https://github.com/laminas/laminas-mail.git">層疊/層疊 — 郵件</a>
     </td>
     <td>資料庫</td>
-    <td>提供撰寫和傳送文字及MIME相容多部分電子郵件訊息的通用功能</td>
+    <td>提供一般化的功能，以撰寫及傳送文字和MIME相容的多部分電子郵件訊息</td>
   </tr>
   <tr>
     <td>
@@ -503,7 +503,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-mime.git">層疊/層疊 — mime</a>
+      <a href="https://github.com/laminas/laminas-mime.git">層板/層板MIME</a>
     </td>
     <td>資料庫</td>
     <td>建立和剖析MIME訊息和部分</td>
@@ -538,14 +538,14 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-recaptcha.git">laminas/laminas-recaptcha</a>
+      <a href="https://github.com/laminas/laminas-recaptcha.git">拉米納斯/拉米納斯 — 雷卡普查</a>
     </td>
     <td>資料庫</td>
     <td>ReCaptcha Web服務的OOP包裝函式</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-router.git">laminas/laminas-route</a>
+      <a href="https://github.com/laminas/laminas-router.git">laminas/laminas路由器</a>
     </td>
     <td>資料庫</td>
     <td>適用於HTTP和主控台應用程式的彈性路由系統</td>
@@ -562,7 +562,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/laminas/laminas-servicemanager.git">laminas/laminas-servicemanager</a>
     </td>
     <td>資料庫</td>
-    <td>工廠導向的相依性插入容器</td>
+    <td>工廠驅動相依性注入容器</td>
   </tr>
   <tr>
     <td>
@@ -573,7 +573,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-soap.git">羊層肉/羊層肉</a>
+      <a href="https://github.com/laminas/laminas-soap.git">羊皮面/羊皮面</a>
     </td>
     <td>資料庫</td>
     <td></td>
@@ -597,7 +597,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/laminas/laminas-uri.git">laminas/laminas-uri</a>
     </td>
     <td>資料庫</td>
-    <td>協助操控和驗證「統一資源識別碼(URI)」的元件</td>
+    <td>協助處理和驗證「統一資源識別碼(URI)」的元件</td>
   </tr>
   <tr>
     <td>
@@ -608,7 +608,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-view.git">laminas/laminas-view</a>
+      <a href="https://github.com/laminas/laminas-view.git">萊米納斯/萊米納斯維尤</a>
     </td>
     <td>資料庫</td>
     <td>彈性檢視層可支援並提供多個檢視層、協助程式等</td>
@@ -618,7 +618,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/laminas/laminas-zendframework-bridge.git">laminas/laminas-zendframework-bridge</a>
     </td>
     <td>資料庫</td>
-    <td>將舊版ZF類別名稱別名變更為Laminas專案的對等名稱。</td>
+    <td>將舊版ZF類別名稱命名為Laminas專案對等項。</td>
   </tr>
   <tr>
     <td>
@@ -632,7 +632,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/tedious/JShrink.git">tedivm/jshrink</a>
     </td>
     <td>資料庫</td>
-    <td>PHP內建的Javascript縮制器</td>
+    <td>內建於PHP的Javascript Minifier</td>
   </tr>
   <tr>
     <td>
@@ -678,7 +678,7 @@ wikimedia/less.php: ^3.2
   <tbody>
   <tr>
     <td>
-      <a href="https://github.com/ezyang/htmlpurifier.git">額澤洋/htmlpurifier</a>
+      <a href="https://github.com/ezyang/htmlpurifier.git">額則陽/htmlpurifier</a>
     </td>
     <td>資料庫</td>
     <td>以PHP撰寫的符合標準的HTML篩選器</td>
@@ -688,7 +688,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/php-amqplib/php-amqplib.git">php-amqplib/php-amqplib</a>
     </td>
     <td>資料庫</td>
-    <td>先前稱為videlalvaro/php-amqplib。  此程式庫是AMQP通訊協定的純PHP實作。 已針對RabbitMQ進行測試。</td>
+    <td>原稱videlalvaro/php-amqplib。  此程式庫是AMQP通訊協定的純PHP實作。 並針對RabbitMQ進行測試。</td>
   </tr>
   </tbody>
 </table>
@@ -723,7 +723,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/brick/varexporter.git">磚/varexporter</a>
     </td>
     <td>資料庫</td>
-    <td>var_export()的強大替代方法，可以在不使用__set_state()的情況下匯出封閉點和物件</td>
+    <td>var_export()的強大替代方案，可在不使用__set_state()的情況下匯出關閉項和物件</td>
   </tr>
   <tr>
     <td>
@@ -737,28 +737,28 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/colinmollenhour/credis.git">colimollenhour/credis</a>
     </td>
     <td>資料庫</td>
-    <td>Credis是Redis索引鍵值存放區的輕量型介面，可在取得phpredis資料庫時將其換行，以獲得更優異的效能。</td>
+    <td>Credis是Redis索引鍵值存放區的輕量型介面，可在取得phpredis資料庫時將其包裝起來，以提升效能。</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/composer/ca-bundle.git">composer/ca-bundle</a>
     </td>
     <td>資料庫</td>
-    <td>可讓您尋找系統CA套件的路徑，並包含Mozilla CA套件的備援。</td>
+    <td>可讓您尋找系統CA套件的路徑，並包含Mozilla CA套件的遞補內容。</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/composer/class-map-generator.git">composer/class-map-generator</a>
     </td>
     <td>資料庫</td>
-    <td>用來掃描PHP程式碼和產生類別對映的公用程式。</td>
+    <td>掃描PHP程式碼和產生類別對映的公用程式。</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/composer.git">composer/composer</a>
+      <a href="https://github.com/composer/composer.git">作曲者/作曲者</a>
     </td>
     <td>資料庫</td>
-    <td>Composer可協助您宣告、管理和安裝PHP專案的相依性。 它可確保您在任何地方都有正確的棧疊。</td>
+    <td>Composer可協助您宣告、管理和安裝PHP專案的相依性。 它可確保您隨時隨地擁有正確的棧疊。</td>
   </tr>
   <tr>
     <td>
@@ -772,7 +772,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/composer/pcre.git">composer/pcre</a>
     </td>
     <td>資料庫</td>
-    <td>PCRE包裝程式庫，提供型別安全的預浸料_*取代物。</td>
+    <td>提供型別安全預浸料取代的PCRE包裝程_*庫。</td>
   </tr>
   <tr>
     <td>
@@ -797,21 +797,21 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/doctrine/annotations.git">doctrine/annotations</a>
+      <a href="https://github.com/doctrine/annotations.git">學說/註解</a>
     </td>
     <td>資料庫</td>
     <td>Docblock註解剖析器</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/doctrine/deprecations.git">doctrine/deprecations</a>
+      <a href="https://github.com/doctrine/deprecations.git">學說/過時</a>
     </td>
     <td>資料庫</td>
-    <td>在trigger_error(E_USER_DEPRECATED)或PSR-3記錄之上的小層，提供選項以停用所有過時專案或選擇性地針對套件使用。</td>
+    <td>在trigger_error(E_USER_DEPRECATED)或PSR-3記錄檔之上的一小層，提供可停用所有過時專案或選擇性地停用套裝程式的選項。</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/doctrine/lexer.git">doctrine/lexer</a>
+      <a href="https://github.com/doctrine/lexer.git">學說/詞法分析器</a>
     </td>
     <td>資料庫</td>
     <td>PHP Doctrine Lexer剖析器程式庫，可用於自上而下的遞回下降剖析器。</td>
@@ -828,14 +828,14 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/ezimuel/guzzlestreams.git">ezimuel/guzzlestreams</a>
     </td>
     <td>資料庫</td>
-    <td>要與elasticsearch-php一起使用的插銷/串流（已捨棄）復本</td>
+    <td>要與elasticsearch-php一起使用的guzzle/streams （已捨棄）分支</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/ezimuel/ringphp.git">ezimuel/ringphp</a>
     </td>
     <td>資料庫</td>
-    <td>與elasticsearch-php一起使用的guzzle/RingPHP （已放棄）分支</td>
+    <td>要與elasticsearch-php一起使用的guzzle/RingPHP （已放棄）分支</td>
   </tr>
   <tr>
     <td>
@@ -856,7 +856,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/guzzle/psr7.git">guzzlehttp/psr7</a>
     </td>
     <td>資料庫</td>
-    <td>PSR-7訊息實作，也提供常見的公用程式方法</td>
+    <td>PSR-7訊息實作，也提供通用公用程式方法</td>
   </tr>
   <tr>
     <td>
@@ -870,7 +870,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/thephpleague/flysystem.git">league/flysystem</a>
     </td>
     <td>資料庫</td>
-    <td>PHP的檔案儲存擷取</td>
+    <td>PHP的檔案儲存抽象</td>
   </tr>
   <tr>
     <td>
@@ -888,10 +888,10 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/Seldaek/monolog.git">monolog/monolog</a>
+      <a href="https://github.com/Seldaek/monolog.git">獨白/獨白</a>
     </td>
     <td>資料庫</td>
-    <td>將您的記錄檔傳送至檔案、通訊端、收件匣、資料庫和各種網路服務</td>
+    <td>將您的記錄傳送至檔案、通訊端、收件匣、資料庫和各種網站服務</td>
   </tr>
   <tr>
     <td>
@@ -905,14 +905,14 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/paragonie/constant_time_encoding.git">paragonie/constant_time_encoding</a>
     </td>
     <td>資料庫</td>
-    <td>RFC 4648編碼的固定時間實作(Base-64、Base-32、Base-16)</td>
+    <td>RFC 4648編碼的常數時間實作(Base-64、Base-32、Base-16)</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/paragonie/random_compat.git">paragonie/random_compat</a>
     </td>
     <td>資料庫</td>
-    <td>PHP 7中的random_bytes()和random_int()的PHP 5.x polyfill</td>
+    <td>PHP 7的random_bytes()和random_int()的PHP 5.x polyfill</td>
   </tr>
   <tr>
     <td>
@@ -937,14 +937,14 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/phpseclib/mcrypt_compat.git">phpseclib/mcrypt_compat</a>
+      <a href="https://github.com/phpseclib/mcrypt_compat.git">phpseclab/mcrypt_compat</a>
     </td>
     <td>資料庫</td>
-    <td>PHP 5.x-8.x polyfill for mcrypt extension</td>
+    <td>PHP 5.x-8.x polyfill for mcrypt延伸模組</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/phpseclib/phpseclib.git">phpseclib/phpseclib</a>
+      <a href="https://github.com/phpseclib/phpseclib.git">phpseclab/phpseclab</a>
     </td>
     <td>資料庫</td>
     <td>PHP Secure Communications Library - RSA、AES、SSH2、SFTP、X.509等的純PHP實作。</td>
@@ -1014,7 +1014,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/ramsey/collection.git">ramsey/collection</a>
+      <a href="https://github.com/ramsey/collection.git">拉姆齊/collection</a>
     </td>
     <td>資料庫</td>
     <td>用於表示和處理集合的PHP程式庫。</td>
@@ -1031,14 +1031,14 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/reactphp/promise.git">react/promise</a>
     </td>
     <td>資料庫</td>
-    <td>PHP的CommonJS Promise/A的輕量型實作</td>
+    <td>PHP的CommonJS Promise/A的輕量級實作</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/sabberworm/PHP-CSS-Parser.git">sabberworm/php-css-parser</a>
     </td>
     <td>資料庫</td>
-    <td>以PHP寫入之CSS檔案的剖析器</td>
+    <td>以PHP撰寫之CSS檔案的剖析器</td>
   </tr>
   <tr>
     <td>
@@ -1052,7 +1052,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/Seldaek/phar-utils.git">seld/phar-utils</a>
     </td>
     <td>資料庫</td>
-    <td>PHAR檔案格式公用程式，當PHP朝上時適用</td>
+    <td>PHAR檔案格式公用程式，用於當PHP將您變成像片時</td>
   </tr>
   <tr>
     <td>
@@ -1073,28 +1073,28 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/Spomky-Labs/otphp.git">spomky-labs/otphp</a>
     </td>
     <td>資料庫</td>
-    <td>根據RFC 4226 （HOTP演演算法）和RFC 6238 （TOTP演演算法）產生一次性密碼且與Google Authenticator相容的PHP程式庫</td>
+    <td>用於根據RFC 4226 （HOTP演演算法）和RFC 6238 （TOTP演演算法）產生一次性密碼並與Google Authenticator相容的PHP程式庫</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/Spomky-Labs/pki-framework.git">spomky-labs/pki-framework</a>
     </td>
     <td>資料庫</td>
-    <td>用於管理公開金鑰基礎結構的PHP架構。 它包含X.509公開金鑰憑證、屬性憑證、憑證請求和憑證路徑驗證。</td>
+    <td>用於管理公開金鑰基礎結構的PHP架構。 它包含X.509公開金鑰憑證、屬性憑證、憑證要求及憑證路徑驗證。</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/config.git">symfony/config</a>
     </td>
     <td>資料庫</td>
-    <td>協助您尋找、載入、合併、自動填寫及驗證任何型別的設定值</td>
+    <td>協助您尋找、載入、組合、自動填寫及驗證任何型別的設定值</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/console.git">symfony/主控台</a>
     </td>
     <td>資料庫</td>
-    <td>輕鬆建立美觀且可測試的命令列介面</td>
+    <td>輕鬆建立美觀且可測試的指令行介面</td>
   </tr>
   <tr>
     <td>
@@ -1112,10 +1112,10 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/deprecation-contracts.git">symfony/deprecation-contracts</a>
+      <a href="https://github.com/symfony/deprecation-contracts.git">symfony/deprecation-contract</a>
     </td>
     <td>資料庫</td>
-    <td>觸發淘汰通知的一般函式和慣例</td>
+    <td>用於觸發淘汰通知的通用函式和慣例</td>
   </tr>
   <tr>
     <td>
@@ -1129,7 +1129,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/symfony/event-dispatcher.git">symfony/event-dispatcher</a>
     </td>
     <td>資料庫</td>
-    <td>提供可讓您的應用程式元件透過傳送事件並聆聽它們而彼此通訊的工具</td>
+    <td>提供工具，可讓您的應用程式元件透過傳送事件並接聽它們來彼此通訊</td>
   </tr>
   <tr>
     <td>
@@ -1171,14 +1171,14 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/symfony/intl.git">symfony/intl</a>
     </td>
     <td>資料庫</td>
-    <td>提供C intl擴充功能的PHP取代層，其中包含來自ICU程式庫的其他資料</td>
+    <td>為C intl擴充功能提供PHP取代層，其中包含來自ICU程式庫的其他資料</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/polyfill-ctype.git">symfony/polyfill-ctype</a>
     </td>
     <td>資料庫</td>
-    <td>用於Ctype函式的Symfony Polyfill</td>
+    <td>Ctype函式的Symfony Polyfill</td>
   </tr>
   <tr>
     <td>
@@ -1206,7 +1206,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/symfony/polyfill-mbstring.git">symfony/polyfill-mbstring</a>
     </td>
     <td>資料庫</td>
-    <td>Mbstring延伸的Symfony polyfill</td>
+    <td>Mbstring延伸的Symfony Polyfill</td>
   </tr>
   <tr>
     <td>
@@ -1227,7 +1227,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/symfony/polyfill-php80.git">symfony/polyfill-php80</a>
     </td>
     <td>資料庫</td>
-    <td>Symfony polyfill將某些PHP 8.0+功能回移植到較低的PHP版本</td>
+    <td>Symfony polyfill將一些PHP 8.0+功能回移植到較低的PHP版本</td>
   </tr>
   <tr>
     <td>
@@ -1255,14 +1255,14 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/symfony/string.git">symfony/string</a>
     </td>
     <td>資料庫</td>
-    <td>為字串提供物件導向的API，並以統一的方式處理位元組、UTF-8程式碼點和字形叢集</td>
+    <td>為字串提供物件導向的API，並以統一的方式處理位元組、UTF-8字碼點和字首叢集</td>
   </tr>
   <tr>
     <td>
       <a href="https://github.com/symfony/var-dumper.git">symfony/var-dumper</a>
     </td>
     <td>資料庫</td>
-    <td>提供用於瀏覽任何任意PHP變數的機制</td>
+    <td>提供用於瀏覽任意PHP變數的機制</td>
   </tr>
   <tr>
     <td>
@@ -1276,7 +1276,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/thecodingmachine/safe.git">編碼機器/保險箱</a>
     </td>
     <td>資料庫</td>
-    <td>擲回例外狀況而不是在錯誤時傳回FALSE的PHP核心函式</td>
+    <td>擲回例外狀況而非錯誤時傳回FALSE的PHP核心函式</td>
   </tr>
   <tr>
     <td>
@@ -1364,7 +1364,7 @@ wikimedia/less.php: ^3.2
   <tbody>
   <tr>
     <td>
-      temando/module-shipping
+      Temando/module-shipping
     </td>
     <td>中繼封裝</td>
     <td>Magento2的Temando多承運商延長運送期</td>

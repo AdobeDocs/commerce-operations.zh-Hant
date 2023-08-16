@@ -1,5 +1,5 @@
 ---
-title: 最佳化影像，以建立回應速度更快的網站
+title: 最佳化影像以建立回應速度較快的網站
 description: 瞭解最佳化影像的步驟，並使用Fastly影像最佳化來最佳化Adobe Commerce網站上的回應時間。
 role: Developer, Admin
 feature: Best Practices
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# 最佳化影像，以建立回應速度更快的網站
+# 最佳化影像以建立回應速度較快的網站
 
-針對雲端基礎結構部署的Adobe Commerce，請先最佳化影像再上傳檔案，即可縮短網站回應時間。 然後，使用Fastly影像最佳化來加速影像傳送並簡化影像來源集的維護。
+針對雲端基礎結構部署的Adobe Commerce，請先最佳化影像再上傳以縮短網站回應時間。 然後，使用Fastly影像最佳化來加速影像傳送並簡化影像來源集的維護。
 
 ## 受影響的產品和版本
 
@@ -26,9 +26,9 @@ ht-degree: 0%
 
 在將影像上傳到您的Commerce網站之前，請最佳化和壓縮影像，以平衡效能和檢視品質。 這有助於增加空間並減少頁面載入時間。
 
-- PNG格式可針對具有大面積純色區域的影像提供較小大小的影像。
+- PNG格式可針對具有大範圍的純色影像提供較小大小的影像。
 
-- JPEG格式可為所有其他影像型別提供較小大小的影像。 使用最高壓縮率（不會明顯降低）。 這通常是60%到80%。
+- JPEG格式可針對所有其他影像型別傳送較小大小的影像。 使用最高的壓縮率（不會明顯降低）。 這通常是60%到80%。
 
 ## 啟用和設定Fastly影像最佳化
 
@@ -37,4 +37,4 @@ ht-degree: 0%
 ## 其他資訊
 
 - [設定Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
-- [最佳化不良的影像可能會導致效能問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)
+- [影像最佳化不良可能會導致效能問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)

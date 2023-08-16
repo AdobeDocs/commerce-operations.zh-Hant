@@ -1,6 +1,6 @@
 ---
 title: 檢閱平台變更
-description: 在準備升級Adobe Commerce專案時，請熟悉版本中的主要平台變更。
+description: 當您準備升級Adobe Commerce專案時，請熟悉版本中的主要平台變更。
 exl-id: 08af5786-8d16-46da-90d4-5cc201288b1f
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 進一步瞭解中的技術平台變更 [發行說明](../../release/release-notes/overview.md) 和 [系統需求](../../installation/system-requirements.md).
 
-Adobe Commerce客戶和合作夥伴也可以存取 [Adobe Commerce測試版](../../release/beta.md) 在正式發行(GA)之前搶先使用程式碼。
+Adobe Commerce客戶和合作夥伴也可以存取 [Adobe Commerce測試版](../../release/beta.md) 以搶先使用一般可用性(GA)程式碼。
 
 >[!NOTE]
 >

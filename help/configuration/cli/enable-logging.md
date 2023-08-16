@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ## 偵錯記錄
 
-依預設，Commerce會寫入除錯記錄(`<install_directory>/var/log/debug.log`)處於預設或開發模式時，但處於生產模式時則不會。 使用 `bin/magento setup:config:set --enable-debug-logging` 命令來變更預設值。
+依預設，Commerce會將寫入偵錯紀錄(`<install_directory>/var/log/debug.log`)處於預設或開發模式時，但處於生產模式時則不會。 使用 `bin/magento setup:config:set --enable-debug-logging` 命令來變更預設值。
 
 >[!INFO]
 >
->自Commerce 2.3.1起，您無法再使用 `bin/magento config:set dev/debug/debug_logging` 命令來啟用或停用目前模式的偵錯記錄。
+>自Commerce 2.3.1起，您將無法再使用 `bin/magento config:set dev/debug/debug_logging` 命令來啟用或停用目前模式的偵錯記錄。
 
 ### 啟用偵錯記錄
 
@@ -30,7 +30,7 @@ ht-degree: 0%
    bin/magento setup:config:set --enable-debug-logging=true
    ```
 
-1. 清除快取。
+1. 排清快取。
 
    ```bash
    bin/magento cache:flush
@@ -38,13 +38,13 @@ ht-degree: 0%
 
 ### 停用偵錯記錄
 
-1. 使用 `setup:config:set` 命令停用目前模式的偵錯記錄。
+1. 使用 `setup:config:set` 命令可停用目前模式的偵錯記錄。
 
    ```bash
    bin/magento setup:config:set --enable-debug-logging=false
    ```
 
-1. 清除快取。
+1. 排清快取。
 
    ```bash
    bin/magento cache:flush
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ## 資料庫記錄
 
-根據預設，Commerce會將資料庫活動記錄檔寫入 `<install-dir>/var/debug/db.log` 檔案。
+依預設，Commerce會將資料庫活動記錄檔寫入 `<install-dir>/var/debug/db.log` 檔案。
 
 ### 啟用資料庫記錄
 
@@ -66,7 +66,7 @@ ht-degree: 0%
    bin/magento dev:query-log:disable
    ```
 
-1. 清除快取。
+1. 排清快取。
 
    ```bash
    bin/magento cache:flush
@@ -76,14 +76,14 @@ ht-degree: 0%
 
 在版本2.3.1中，Commerce現在會建立個別的 `cron` 記錄。 \
 Commerce最近讓cron記錄更詳細，這提供了更多資訊，但延長了 `system.log` 相當大。
-移動 `cron` 將資訊放入專用記錄檔可使兩個記錄檔更易於讀取。
+移動 `cron` 將資訊新增至專用記錄檔可讓兩個記錄檔更容易閱讀。
 
-依預設，Commerce會寫入 `cron` 的資訊 `<install-directory>/var/log/cron.log` 檔案。
+依預設，Commerce會寫入 `cron` 資訊至 `<install-directory>/var/log/cron.log` 檔案。
 
 ## Syslog記錄
 
 依預設，Commerce會寫入 _syslog_ 作業系統的記錄檔 `syslog` 檔案。
-自Commerce 2.3.1起，您必須使用 `magento` 啟用或停用syslog的命令。
+截至Commerce 2.3.1，您必須使用 `magento` 啟用或停用syslog的命令。
 管理員中的設定已移除。
 
 ### 啟用syslog記錄
@@ -96,7 +96,7 @@ Commerce最近讓cron記錄更詳細，這提供了更多資訊，但延長了 `
    bin/magento setup:config:set --enable-syslog-logging=true
    ```
 
-1. 清除快取。
+1. 排清快取。
 
    ```bash
    bin/magento cache:flush
@@ -110,7 +110,7 @@ Commerce最近讓cron記錄更詳細，這提供了更多資訊，但延長了 `
    bin/magento setup:config:set --enable-syslog-logging=false
    ```
 
-1. 清除快取。
+1. 排清快取。
 
    ```bash
    bin/magento cache:flush

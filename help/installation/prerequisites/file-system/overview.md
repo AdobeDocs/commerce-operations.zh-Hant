@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 檔案擁有權和許可權
 
-在開發環境中保護Adobe Commerce或Magento Open Source安裝安全，以協助防止未經授權人員或程式存取（並可能傷害）您的系統相關問題，這點很重要。 使用下列檔案系統擁有權和許可權准則來保護您的安裝。
+在開發環境中確保您的Adobe Commerce或Magento Open Source安裝安全，以協助防止與未授權人員或程式存取（並可能傷害）您的系統相關的問題，這點很重要。 請使用下列檔案系統擁有權和許可權准則來保護您的安裝。
 
 ## 檔案系統擁有者
 
@@ -21,16 +21,17 @@ ht-degree: 0%
 
 - **與單一使用者共用託管**
 
-   共用託管提供者可讓您以單一使用者身分登入應用程式伺服器。 您可以透過單一使用者身分登入、使用FTP傳輸檔案，以及執行網頁伺服器。 您可以選擇設定 [`umask`](#restrict-access-with-a-umask) 以進一步限制存取，尤其是在生產環境中。
+  共用託管提供者可讓您以單一使用者身分登入應用程式伺服器。 您可以以單一使用者身分登入、使用FTP傳輸檔案以及執行網頁伺服器。 您可以選擇設定 [`umask`](#restrict-access-with-a-umask) 以進一步限制存取，尤其是在生產環境中。
 
-- **由兩個使用者進行私人託管**
+- **兩個使用者的私人託管**
 
-   如果您管理應用程式伺服器，私人託管會很有用。 每位使用者都有特定的職責：
+  如果您管理應用程式伺服器，私人託管會很有用。 每個使用者都有特定的職責：
 
-   - 此 _網頁伺服器使用者_ 執行管理員和店面。
+   - 此 _Web伺服器使用者_ 執行管理員和店面。
 
    - 此 _命令列使用者_ 執行cron作業和命令列公用程式。
-   兩位使用者都需要相同的檔案系統許可權，因此最好使用 [共用群組](configure-permissions.md#set-ownership-and-permissions-for-two-users) 並設定 [`umask`](#restrict-access-with-a-umask).
+
+  兩位使用者都需要相同的檔案系統許可權，因此最好使用 [共用群組](configure-permissions.md#set-ownership-and-permissions-for-two-users) 並設定 [`umask`](#restrict-access-with-a-umask).
 
 ### 使用umask限制存取
 
@@ -38,17 +39,17 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->檔案系統安全性既複雜又重要。 強烈建議您先洽詢經驗豐富的系統管理員或網路管理員，再決定要設定的許可權層級。 我們提供您可使用的機制，但建立許可權策略是您的責任。
+>檔案系統安全性既複雜又重要。 強烈建議您在決定要設定的許可權層級之前，先洽詢經驗豐富的系統管理員或網路管理員。 我們提供您可使用的機制，但建立許可權策略是您的責任。
 
-Adobe Commerce和Magento Open Source使用三位元預設遮色片： `002`. 從UNIX預設值（檔案為666，目錄為777）中減去預設遮色片。
+Adobe Commerce和Magento Open Source使用三位元預設遮罩： `002`. 從UNIX預設值（檔案為666，目錄為777）中減去預設遮色片。
 
 例如：
 
-- **775用於目錄** — 由使用者完全控制、由群組完全控制，並讓每個人都能周遊目錄。 共用託管提供者通常需要這些許可權。
+- **775用於目錄** — 使用者可完全控制，群組可完全控制，且所有人都能周遊目錄。 共用託管提供者通常需要這些許可權。
 
-- **664 （檔案）** — 使用者可寫入、群組可寫入，其他所有人皆為唯讀。
+- **檔案為664** — 使用者可寫入、群組可寫入，其他使用者皆為唯讀。
 
-如需有關建立 `magento_umask` 檔案，請參閱 [設定umask](../../next-steps/set-umask.md).
+如需關於建立 `magento_umask` 檔案，請參閱 [設定umask](../../next-steps/set-umask.md).
 
 ## 許可權、擁有權和應用程式模式
 
@@ -64,4 +65,4 @@ Adobe Commerce和Magento Open Source使用三位元預設遮色片： `002`. 從
 
 >[!TIP]
 >
->安裝Adobe Commerce或Magento Open Source之前，請先檢閱 [設定檔案所有權與許可權](configure-permissions.md).
+>安裝Adobe Commerce或Magento Open Source之前，請先檢閱 [設定檔案擁有權和許可權](configure-permissions.md).

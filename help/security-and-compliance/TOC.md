@@ -5,7 +5,7 @@ feature: Security
 source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '72'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 0%
 - 隱私權法規 {#privacy}
    - [CCPA](privacy/ccpa.md)
    - [GDPR](privacy/gdpr.md)
-   - [Adobe隱私權JavaScript程式庫](privacy/adobe-javascript-library.md)
-   - [隱私權JavaScript程式庫](privacy/javascript-library.md)
-- 參考資料 {#reference}
+   - [Adobe隱私權JavaScript資料庫](privacy/adobe-javascript-library.md)
+   - [隱私權JavaScript資料庫](privacy/javascript-library.md)
+- 參考 {#reference}
    - [客戶個人資訊（2.x版）](privacy/data-m2.md)
    - [客戶個人資訊（1.x版）](privacy/data-m1.md)
 - [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

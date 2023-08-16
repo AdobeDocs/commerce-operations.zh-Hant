@@ -1,16 +1,16 @@
 ---
-user-guide-title: 營運Playbook
-user-guide-description: 瞭解如何讓您的企業做好營運準備，以便經營成功的電子商務網站。
+user-guide-title: 營運行動手冊
+user-guide-description: 了解如何讓企業在營運上做好準備，以便經營成功的電子商務網站。
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
 
-# 營運Playbook {#operational-playbook}
+# 營運行動手冊 {#operational-playbook}
 
 - [概觀](overview.md)
 - 商務 {#intro}
@@ -32,7 +32,7 @@ ht-degree: 0%
    - [協力廠商整合](solution/integrations.md)
    - [升級、備份及維護](solution/maintenance.md)
 - 策略 {#strategy}
-   - [Commerce策略](strategy/commerce.md)
+   - [商務策略](strategy/commerce.md)
    - [焦點](strategy/focus.md)
    - [內容策略](strategy/content.md)
    - [成熟度](strategy/maturity.md)
@@ -50,9 +50,9 @@ ht-degree: 0%
    - [團隊結構](people/team-structure.md)
    - [組織結構](people/organizational-structure.md)
    - [通訊](people/communication.md)
-   - [角色與責任](people/roles-responsibilities.md)
+   - [角色和責任](people/roles-responsibilities.md)
    - [資源](people/resources.md)
-   - [文化特性](people/culture.md)
+   - [文化](people/culture.md)
    - [專案團隊](people/project-teams.md)
 - 產品 {#product}
    - [訂單管理系統](product/order-management-systems.md)

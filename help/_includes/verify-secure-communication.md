@@ -2,7 +2,7 @@
 source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 # 驗證通訊是否安全
@@ -20,13 +20,13 @@ ht-degree: 0%
 curl -i http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
-例如，如果您在搜尋引擎伺服器上輸入命令，而您的Proxy使用連線埠8080：
+例如，如果您在搜尋引擎伺服器上輸入命令，且您的Proxy使用連線埠8080：
 
 ```bash
 curl -i http://localhost:8080/_cluster/health
 ```
 
-以下訊息顯示以指出驗證失敗：
+下列訊息會顯示以指出驗證失敗：
 
 ```terminal
 HTTP/1.1 401 Unauthorized
@@ -68,7 +68,7 @@ Connection: keep-alive
 
 ## 在Admin中設定HTTP基本驗證
 
-執行中討論的相同工作 [搜尋引擎設定](../configuration/search/configure-search-engine.md) *例外* 按一下 **[!UICONTROL Yes]** 從 **[!UICONTROL Enable HTTP Auth]** 清單並在提供的欄位中輸入您的使用者名稱和密碼。
+執行中討論的相同工作 [搜尋引擎設定](../configuration/search/configure-search-engine.md) *除了* 按一下 **[!UICONTROL Yes]** 從 **[!UICONTROL Enable HTTP Auth]** 清單並在提供的欄位中輸入您的使用者名稱和密碼。
 
 按一下 **[!UICONTROL Test Connection]** 以確定其運作正常，然後按一下 **[!UICONTROL Save Config]**.
 

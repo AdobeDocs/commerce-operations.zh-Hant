@@ -2,11 +2,11 @@
 title: 設定資料庫分析工具
 description: 請參閱如何設定資料庫效能分析工具輸出的範例。
 feature: Configuration, Storage
-badge: label="Contributed by Atish Goswami" type="Informational" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+badge: label="作者：阿提什·戈斯瓦米" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Commerce資料庫分析工具會顯示頁面上實作的所有查詢，包括每個查詢的時間以及套用的引數。
 
-## 步驟1：修改部署組態
+## 步驟1：修改部署設定
 
 修改 `<magento_root>/app/etc/env.php` 將下列參照新增至 [資料庫效能分析工具類別](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php)：
 
@@ -60,10 +60,10 @@ Commerce資料庫分析工具會顯示頁面上實作的所有查詢，包括每
 下列範例會在三欄表格中顯示結果：
 
 - 總時間（顯示頁面上執行所有查詢的總時間）
-- SQL （顯示所有SQL查詢；列標題顯示查詢計數）
+- SQL （顯示所有SQL查詢；資料列標題顯示查詢計數）
 - 查詢引數（顯示每個SQL查詢的引數）
 
-若要設定輸出，請在 `$bootstrap->run($app);` 在您的bootstrap檔案中的行：
+若要設定輸出，請在之後新增下列內容 `$bootstrap->run($app);` 在啟動程式檔案中的第行：
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -89,6 +89,6 @@ echo "</table>";
 
 ## 步驟3：檢視結果
 
-前往店面或管理員中的任何頁面檢視結果。 範例如下：
+前往店面或管理員中的任何頁面來檢視結果。 範例如下：
 
 ![範例資料庫效能分析工具結果](../../assets/configuration/db-profiler-results.png)

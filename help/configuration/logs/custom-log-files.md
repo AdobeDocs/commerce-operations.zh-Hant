@@ -2,11 +2,11 @@
 title: 寫入自訂記錄檔
 description: 瞭解如何設定自訂記錄檔。
 feature: Configuration, Logs
-badge: label="Contributed by Atwix" type="Informational" url="https://www.atwix.com/" tooltip="Atwix"
+badge: label="由Atwix提供" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 您可在以下連結中找到它們： `lib/internal/Magento/Framework/Logger/Handler` 目錄。
 
-您可以使用下列其中一種方式登入自訂檔案：
+您可以使用下列其中一種方法來登入自訂檔案：
 
 - 在中設定自訂記錄檔 `di.xml`
 - 在自訂記錄器處理常式類別中設定自訂檔案

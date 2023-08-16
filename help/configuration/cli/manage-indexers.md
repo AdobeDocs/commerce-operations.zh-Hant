@@ -1,5 +1,5 @@
 ---
-title: 管理索引器
+title: 管理索引子
 description: 請參閱如何檢視和管理Commerce索引器的範例。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
 source-git-commit: 795d4e9d1910d0ad826eb6c82ac451ac58e43063
@@ -9,11 +9,11 @@ ht-degree: 0%
 
 ---
 
-# 管理索引器
+# 管理索引子
 
 {{file-system-owner}}
 
-若要檢視所有索引器的清單：
+若要檢視所有索引子的清單：
 
 ```bash
 bin/magento indexer:info
@@ -39,11 +39,11 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> 使用「即時搜尋」、「目錄服務」或「產品Recommendations」的Adobe Commerce商家可以選擇使用 [以SaaS為基礎的價格索引](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html).
+> 使用「即時搜尋」、「目錄服務」或「產品Recommendations」的Adobe Commerce商家可選擇使用 [SaaS式價格索引](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html).
 
 ## 檢視索引器狀態
 
-使用此命令可檢視所有索引器或特定索引器的狀態。 例如，瞭解索引器是否需要重新索引。
+使用此指令可檢視所有索引器或特定索引器的狀態。 例如，瞭解索引器是否需要重新索引。
 
 命令選項：
 
@@ -51,7 +51,7 @@ salesrule_rule                           Sales Rule
 bin/magento indexer:status [indexer]
 ```
 
-位置 `[indexer]` 是以空格分隔的索引子清單。 省略 `[indexer]` 以檢視所有索引器的狀態。
+位置 `[indexer]` 是以空格分隔的索引子清單。 省略 `[indexer]` 以檢視所有索引子的狀態。
 
 範例結果：
 
@@ -75,7 +75,7 @@ bin/magento indexer:status [indexer]
 
 ## 重新索引
 
-使用此命令可只重新索引一次所有或選取的索引子。
+使用此指令可只重新索引一次所有或選取的索引子。
 
 >[!INFO]
 >
@@ -107,20 +107,20 @@ Catalog Search index has been rebuilt successfully in <time>
 
 >[!INFO]
 >
->對於擁有大量產品、客戶、類別和促銷規則的商店，重新索引所有索引子可能需要很長時間。
+>對於有大量產品、客戶、類別和促銷規則的商店，重新索引所有索引子可能需要很長的時間。
 
 ### 以平行模式重新索引
 
-索引器具有範圍和多執行緒，以支援在平行模式下重新索引。 它透過索引器的維度並行，並在多個執行緒上執行，以減少處理時間。
+索引器具有範圍和多執行緒，以支援在平行模式中重新索引。 它透過索引器的維度來平行處理，並在多個執行緒上執行，以減少處理時間。
 
-在此內容中， `dimension` 是重新索引的範圍，例如 `website` 或只是特定 `customer_group`.
+在此內容中， `dimension` 是重新索引的範圍，例如 `website` 或只是特定的 `customer_group`.
 
-索引平行化只會影響範圍的索引子，這表示Commerce會使用索引子作為其範圍將資料分割成多個表格，而不是將所有資料保留在一個表格中。
+索引平行化只會影響範圍的索引子，這表示Commerce會使用索引子做為範圍將資料分割成多個表格，而非將所有資料儲存在單一表格中。
 
 您可以在平行模式下執行下列索引：
 
-- `Catalog Search Fulltext` 可透過商店檢視來並行處理。
-- `Category Product` 可透過商店檢視來並行處理。
+- `Catalog Search Fulltext` 可透過商店檢視來平行。
+- `Category Product` 可透過商店檢視來平行。
 - `Catalog Price` 可依網站和客戶群組並行。
 - `Catalog Permissions` 可依客戶群組並行。
 
@@ -128,14 +128,14 @@ Catalog Search index has been rebuilt successfully in <time>
 >
 >目錄搜尋全文檢索與類別產品的平行化預設為啟用。
 
-若要使用平行化，請為產品價格索引器設定其中一個可用的維度模式：
+若要使用平行化，請針對產品價格索引器設定其中一個可用的維度模式：
 
 - `none` （預設）
 - `website`
 - `customer_group`
 - `website_and_customer_group`
 
-例如，若要設定每個網站的模式：
+例如，若要為每個網站設定模式：
 
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
@@ -190,10 +190,10 @@ Catalog Search indexer has been invalidated.
 
 ## 設定索引子
 
-使用此命令設定下列索引子選項：
+使用此指令來設定下列索引器選項：
 
-- **儲存時更新(`realtime`)**：在「管理員」中變更後，會更新索引資料。 （例如，將產品新增至管理員中的類別後，類別產品索引會重新索引。） 這是預設值。
-- **依排程更新(`schedule`)**：資料會根據cron作業設定的排程建立索引。
+- **儲存時更新(`realtime`)**：在Admin中進行變更時，會更新索引資料。 （例如，將產品新增至管理員中的類別後，類別產品索引會重新索引。） 這是預設值。
+- **依排程更新(`schedule`)**：資料會根據cron作業設定的排程編制索引。
 
 [進一步瞭解索引](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
@@ -205,7 +205,7 @@ Catalog Search indexer has been invalidated.
 bin/magento indexer:show-mode [indexer]
 ```
 
-位置 `[indexer]` 是以空格分隔的索引子清單。 省略 `[indexer]` 以顯示所有索引子模式。 例如，若要顯示所有索引器的模式：
+位置 `[indexer]` 是以空格分隔的索引子清單。 省略 `[indexer]` 以顯示所有索引子模式。 例如，若要顯示所有索引子的模式：
 
 範例結果：
 
@@ -227,7 +227,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->在切換索引器模式之前，建議您先將網站放到 [維護](../../installation/tutorials/maintenance-mode.md) 模式和 [停用cron工作](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). 這可確保您不會遭受資料庫鎖定的困擾。
+>在切換索引器模式之前，建議您先將網站放到 [維護作業](../../installation/tutorials/maintenance-mode.md) 模式和 [停用cron工作](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). 這可確保您不會遭受資料庫鎖定的困擾。
 
 若要指定索引器組態：
 
@@ -237,11 +237,11 @@ bin/magento indexer:set-mode {realtime|schedule} [indexer]
 
 其中：
 
-- `realtime` — 將選取的索引子設定為在儲存時更新。
+- `realtime` — 將選取的索引器設定為在儲存時更新。
 - `schedule` — 根據cron排程設定要儲存的指定索引子。
 - `indexer` — 是以空格分隔的索引子清單。 省略 `indexer` 以相同方式設定所有索引子。
 
-例如，若只要變更要依排程更新的類別產品和產品類別索引器，請輸入：
+例如，若要只變更類別產品和產品類別索引器，以依排程更新，請輸入：
 
 ```bash
 bin/magento indexer:set-mode schedule catalog_category_product catalog_product_category
@@ -254,4 +254,4 @@ Index mode for Indexer Category Products was changed from 'Update on Save' to 'U
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
 
-當索引器模式設定為時，會新增索引器相關的資料庫觸發程式 `schedule` 並在索引器模式設定為時移除 `realtime`. 如果索引子設定為時，資料庫中缺少觸發程式 `schedule`，將索引子變更為 `realtime` 然後變更回 `schedule`. 這會重設觸發程式。
+當索引器模式設定為時，會新增與索引器相關的資料庫觸發程式 `schedule` 並在索引子模式設定為時移除 `realtime`. 如果索引子設定為時，資料庫中缺少觸發程式 `schedule`，將索引子變更為 `realtime` 然後再變更回 `schedule`. 這會重設觸發程式。

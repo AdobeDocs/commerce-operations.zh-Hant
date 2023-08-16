@@ -15,9 +15,9 @@ ht-degree: 0%
 
 安全性是我們的首要任務之一，而Adobe也瞭解安全性對客戶來說也很重要。
 
-此 [!DNL Adobe Security Notification Service] 是免費的電子郵件通知服務，Adobe會使用此服務向客戶傳送有關Adobe產品安全性的資訊。
+此 [!DNL Adobe Security Notification Service] 是免費的電子郵件通知服務，Adobe可使用此服務向客戶傳送有關Adobe產品安全性的資訊。
 
-任何人都可以訂閱服務，而您隨時可以取消訂閱。
+任何人都可以訂閱服務，而您隨時都可以取消訂閱。
 
 ## 受影響的產品和版本
 

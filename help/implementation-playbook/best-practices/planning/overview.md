@@ -20,16 +20,16 @@ ht-degree: 0%
 - 目錄設計
 - 專案範圍
 - 帳戶布建
-- 使用者存取
+- 使用者存取權
 - 擴充功能採購
 
-以下小節包含規劃階段的最佳實務資訊。
+下列章節包含規劃階段的最佳實務資訊。
 
 ## 需求收集
 
 - **應用程式設定**
-   - [設定網站、商店和商店檢視的最佳實務（雲端基礎結構）](sites-stores-store-views.md)
-   - [如何防止及修正Adobe Commerce網站最常見的五個設定問題](https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales)
+   - [設定網站、存放區和存放區檢視的最佳實務（雲端基礎結構）](sites-stores-store-views.md)
+   - [如何預防並修正Adobe Commerce網站最常見的五個設定問題](https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales)
    - [快取的最佳實務](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
    - [全頁快取](https://developer.adobe.com/commerce/php/development/cache/page/public-content/)
    - [OPcache記憶體大小](opcache-memory-size.md)
@@ -43,7 +43,7 @@ ht-degree: 0%
 - **服務設定**
    - [設定Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
    - [New Relic — 設定通知通道](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
-   - [Redis服務設定的最佳實務&#x200B;。](redis-service-configuration.md)
+   - [Redis服務組態的最佳作法&#x200B;。](redis-service-configuration.md)
    - [Realpath快取大小最佳實務](realpath-cache-size.md)
 
 ## **架構設計**
@@ -55,10 +55,10 @@ ht-degree: 0%
 
 ## **目錄設計**
 
-下列主題說明設定Adobe Commerce目錄的效能最佳化最佳實務，包括類別數量、產品有效SKU、產品變化、產品屬性和選項等建議的最大值。
+下列主題說明設定Adobe Commerce目錄的效能最佳化最佳實務，包括類別數、產品有效SKU、產品變化、產品屬性和選項等建議的最大值。
 
 - [類別設定](category-limits.md)
-- [產品設定&#x200B;](product-sku-limits.md)
+- [產品組態&#x200B;](product-sku-limits.md)
 - [產品變數設定](product-variations.md)
 - [產品選項設定](product-options.md)
 - [產品屬性設定&#x200B;](product-attributes-and-options.md)
@@ -71,9 +71,9 @@ ht-degree: 0%
 
 ## **專案範圍**
 
-- [合作夥伴呈報](partner-escalation.md)
+- [合作夥伴升級](partner-escalation.md)
 - [付款儲存處理](payment-processing-storage.md)
 
-## **購買延長保固期**
+## **購買延長期**
 
 - [在Adobe Commerce中使用協力廠商擴充功能的最佳作法](extensions.md)

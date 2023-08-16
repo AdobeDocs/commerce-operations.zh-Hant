@@ -28,14 +28,14 @@ ht-degree: 0%
 ## 網站監視
 
 - [稽核前端效能](frontend-performance.md)
-- [就緒、設定、維護](https://business.adobe.com/blog/basics/ready-set-maintain)
+- [準備、設定、維護](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [使用SWAT工具確保Adobe Commerce的安全性和可操作性](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - CTAG投影片
 - [使用New Relic和健康情況通知來監視部署在雲端基礎結構上的Adobe Commerce網站的效能、磁碟空間和記錄](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
 
 ## 資料庫管理
 
 - [解決資料庫效能問題&#x200B;。](resolve-database-performance-issues.md)
-- [Adobe Commerce 2.3.5 MariaDB升級的必要條件&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md)
+- [MariaDB的Adobe Commerce 2.3.5升級先決條件&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md)
 
 ## 目錄管理
 
@@ -57,13 +57,13 @@ ht-degree: 0%
 
 ## 設定
 
-- [在生產網站上排程管理員更新](scheduling-admin-updates-in-production.md)
+- [正在排程生產網站上的管理員更新](scheduling-admin-updates-in-production.md)
 
 <!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
 
 ## 錯誤修正
 
-- [品質修補程式工具使用狀況](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+- [品質修補程式工具使用情形](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
 
 ## 功能增強功能
 

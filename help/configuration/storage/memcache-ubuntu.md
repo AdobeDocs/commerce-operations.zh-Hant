@@ -18,18 +18,18 @@ ht-degree: 0%
 >
 >Adobe建議使用memcached 3.0.5版或更新版本。
 
-由於PHP對memcache沒有原生支援，因此您必須安裝PHP擴充功能才能使用它。 有兩個可用的PHP擴充功能，請務必解碼要使用哪個：
+因為PHP對memcache沒有原生支援，所以您必須安裝擴充功能以供PHP使用。 有兩個可用的PHP擴充功能，請務必解碼要使用哪個：
 
 - `memcache` (_否d_) — 舊版但常用的擴充功能，不會定期維護。
 此 `memcache` 目前為擴充功能 _不會_ 使用PHP 7。 另請參閱 [memcache的PHP檔案](https://www.php.net/manual/en/book.memcache.php).
 
-   確切的名稱為 `php5-memcache` 適用於Ubuntu。
+  確切名稱為 `php5-memcache` 適用於Ubuntu。
 
-- `memcached` (_搭配`d`_) — 與PHP 7相容的更新和維護的擴充功能。 另請參閱 [memcached的PHP檔案](https://www.php.net/manual/en/book.memcached.php).
+- `memcached` (_與`d`_) — 與PHP 7相容的較新及維護的擴充功能。 另請參閱 [memcached的PHP檔案](https://www.php.net/manual/en/book.memcached.php).
 
-   確切的名稱為 `php5-memcached` 適用於Ubuntu。
+  確切名稱為 `php5-memcached` 適用於Ubuntu。
 
-## 在Ubuntu上安裝及設定記憶體
+## 在Ubuntu上安裝並設定memcached
 
 **若要在Ubuntu上安裝和設定記憶體**：
 
@@ -57,21 +57,21 @@ ht-degree: 0%
       service memcached restart
       ```
 
-1. 重新啟動網頁伺服器。
+1. 重新啟動您的網頁伺服器。
 
    對於Apache， `service apache2 restart`
 
 1. 繼續下一節。
 
-## 在安裝Magento之前驗證memcached是否有效
+## 在安裝Magento之前驗證memcached的運作方式
 
-Adobe建議先測試memcached以確保其可運作，然後再安裝Commerce。 只需幾分鐘即可完成，並可簡化後續的疑難排解。
+Adobe建議先測試memcached以確保其可運作，然後再安裝Commerce。 只需幾分鐘即可完成這項工作，並可簡化後續的疑難排解。
 
-### 確認網頁伺服器可辨識成員快取
+### 驗證Web伺服器是否可辨識memcached
 
 若要確認網頁伺服器可辨識memcached：
 
-1. 建立 `phpinfo.php` 網頁伺服器docroot中的檔案：
+1. 建立 `phpinfo.php` 網頁伺服器的docroot中的檔案：
 
    ```php
    <?php
@@ -95,7 +95,7 @@ Adobe建議先測試memcached以確保其可運作，然後再安裝Commerce。 
 
 ### 驗證memcached可以快取資料
 
-此測試使用PHP指令碼來驗證memcached是否可以儲存和擷取快取資料。
+此測試使用PHP指令碼來驗證memcached可以儲存和擷取快取資料。
 
 如需此測試的詳細資訊，請參閱 [如何在Ubuntu教學課程上安裝和使用Memcache](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 
@@ -116,7 +116,7 @@ if ($result) {
 }
 ```
 
-位置 `<memcached hostname or ip>` 為 `localhost`， `127.0.0.1`，或成員快取主機名稱或IP位址。 此 `<memcached port>` 是監聽連線埠；依預設， `11211`.
+位置 `<memcached hostname or ip>` 是 `localhost`， `127.0.0.1`、或memcache主機名稱或IP位址。 此 `<memcached port>` 是監聽連線埠；預設為 `11211`.
 
 在網頁瀏覽器中前往該頁面。 例如
 
@@ -155,7 +155,7 @@ STAT items:2:expired_unfetched 0
 STAT items:2:evicted_unfetched 0
 ```
 
-排清記憶體快取儲存體並結束Telnet：
+排清成員快取儲存體並結束Telnet：
 
 ```shell
 flush_all

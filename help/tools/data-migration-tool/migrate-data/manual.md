@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 需要手動移轉的資料
 
-有四種資料需要手動移轉：
+有四種型別的資料需要手動移轉：
 
 * 媒體
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 >自Magento2.4.3起，資料庫媒體儲存方法已過時。
 
 
-本節適用於您 *僅限* 如果您將媒體檔案儲存在Magento資料庫中。 此步驟應在之前執行 [資料移轉](data.md)：
+本章節適用於您 *僅限* 如果您將媒體檔案儲存在Magento資料庫中。 此步驟應於以下日期之前執行： [資料移轉](data.md)：
 
 1. 以管理員身分登入Magento1管理面板。
 
@@ -49,13 +49,13 @@ ht-degree: 0%
 
 ### 檔案系統中的媒體檔案
 
-所有媒體檔案（產品、類別、所見即所得編輯器等的影像）都應從手動複製 `<your Magento 1 install dir>/media` 至 `<your Magento 2 install dir>/pub/media`.
+所有媒體檔案（產品、類別、WYSIWYG編輯器等的影像）都應從手動複製 `<your Magento 1 install dir>/media` 至 `<your Magento 2 install dir>/pub/media`.
 
-不過，可以 *not* 複製 `.htaccess` 位於Magento1中的檔案 `media` 資料夾。 Magento2有其專屬的 `.htaccess` 應該保留的。
+但是，可以 *非* 複製 `.htaccess` Magento1中的檔案 `media` 資料夾。 Magento2有其專屬的 `.htaccess` 應該保留的。
 
 ## 店面設計
 
-* 以檔案（CSS、JS、範本、XML版面）設計會變更其位置和格式
+* 以檔案（CSS、JS、範本、XML配置）進行設計變更了其位置和格式
 
 * 配置更新儲存在資料庫中。 透過CMS頁面、CMS Widget、類別頁面和產品頁面中的Magento1管理員放置
 
@@ -65,8 +65,8 @@ ht-degree: 0%
 
 * Web服務API （SOAP、XML-RPC和REST）的認證
 
-* 管理使用者帳戶並將其與存取許可權建立關聯
+* 管理使用者帳戶並將其與存取許可權相關聯
 
 >[!NOTE]
 >
->您可以使用調整資料庫實體的時區 `\Migration\Handler\Timezone` 處理常式。 請參閱 [後續追蹤](follow-up.md) 區段以取得更多詳細資料。
+>您可以使用來調整資料庫實體的時區 `\Migration\Handler\Timezone` 處理常式。 請參閱 [後續追蹤](follow-up.md) 區段以取得更多詳細資料。

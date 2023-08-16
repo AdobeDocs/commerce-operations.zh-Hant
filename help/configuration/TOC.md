@@ -29,7 +29,7 @@ ht-degree: 0%
    + [生產系統設定](deployment/production-system.md)
    + [檔案系統存取許可權](deployment/file-system-permissions.md)
    + 範例 {#examples}
-      + [使用共用設定](deployment/example-shared-configuration.md)
+      + [使用共用組態](deployment/example-shared-configuration.md)
       + [使用CLI命令](deployment/example-using-cli.md)
       + [使用環境變數](deployment/example-environment-variables.md)
 + 快取 {#cache}
@@ -40,13 +40,13 @@ ht-degree: 0%
    + Redis {#redis}
       + [設定Redis](cache/config-redis.md)
       + [預設快取使用Redis](cache/redis-pg-cache.md)
-      + [將Redis用於工作階段儲存](cache/redis-session.md)
-   + 清漆 {#varnish}
+      + [使用Redis進行工作階段儲存](cache/redis-session.md)
+   + 亮漆 {#varnish}
       + [塗漆概述](cache/config-varnish.md)
       + [安裝清漆](cache/config-varnish-install.md)
    + [網頁伺服器](cache/config-varnish-server.md)
    + [設定商務應用程式](cache/configure-varnish-commerce.md)
-   + [進階清漆設定](cache/config-varnish-advanced.md)
+   + [進階清漆組態](cache/config-varnish-advanced.md)
    + [快取清除](cache/use-varnish-cache.md)
    + [快取清除多個Varnish例項](cache/use-multiple-varnish-cache.md)
    + [驗證清漆組態](cache/config-varnish-final.md)
@@ -58,10 +58,10 @@ ht-degree: 0%
    + [啟用記錄](cli/enable-logging.md)
    + [管理快取](cli/manage-cache.md)
    + [管理索引子](cli/manage-indexers.md)
-   + [設定cron工作](cli/configure-cron-jobs.md)
+   + [設定cron作業](cli/configure-cron-jobs.md)
    + [編譯程式碼](cli/code-compiler.md)
    + [操作模式](cli/set-mode.md)
-   + [啟動訊息佇列消費者](cli/start-message-queues.md)
+   + [啟動訊息佇列取用者](cli/start-message-queues.md)
    + [URN熒光筆](cli/urn-highlighter.md)
    + [相依性報表](cli/dependency-reports.md)
    + [本地化](cli/localization.md)
@@ -72,10 +72,10 @@ ht-degree: 0%
    + 靜態檢視 {#static-view}
       + [部署策略](cli/static-view-file-strategy.md)
       + [部署靜態檢視檔案](cli/static-view-file-deployment.md)
-   + [建立符號](cli/create-symlinks.md)
+   + [建立符號連結](cli/create-symlinks.md)
    + [執行單元測試](cli/unit-tests.md)
-   + [轉換配置檔案](cli/convert-layout-files.md)
-   + [產生資料以進行效能測試](cli/generate-data.md)
+   + [轉換版面檔案](cli/convert-layout-files.md)
+   + [產生效能測試資料](cli/generate-data.md)
    + [執行支援公用程式（僅限Commerce）](cli/run-support-utilities.md)
 + 組態檔 {#files}
    + [用於部署的組態檔](reference/deployment-files.md)
@@ -84,7 +84,7 @@ ht-degree: 0%
    + [模組輸出](reference/disable-module-output.md)
    + [config.php](reference/config-reference-configphp.md)
    + [env.php](reference/config-reference-envphp.md)
-   + [gitignore](reference/config-reference-gitignore.md)
+   + [吉蒂尼奧爾](reference/config-reference-gitignore.md)
    + [system.xml](reference/config-reference-systemxml.md)
 + 設定路徑 {#paths}
    + [一般](reference/config-reference-general.md)
@@ -94,19 +94,19 @@ ht-degree: 0%
    + [付款方法](reference/config-reference-payment.md)
    + [銷售](reference/config-reference-sales.md)
    + [服務](reference/config-reference-services.md)
-   + [敏感和系統專屬設定](reference/config-reference-sens.md)
+   + [敏感及系統專屬設定](reference/config-reference-sens.md)
    + [覆寫組態設定](reference/override-config-settings.md)
 + Cron工作 {#crons}
    + [Cron工作和群組](cron/custom-cron.md)
    + [自訂crons參考](cron/custom-cron-reference.md)
-   + [設定自訂cron工作](cron/custom-cron-tutorial.md)
+   + [設定自訂cron作業](cron/custom-cron-tutorial.md)
 + 記錄檔 {#logs}
    + [自訂記錄](logs/custom-logging.md)
    + [記錄器介面](logs/logger-interface.md)
    + [記錄資料庫活動](logs/database-activity.md)
    + [寫入自訂記錄檔](logs/custom-log-files.md)
 + 訊息佇列 {#message-queues}
-   + [訊息佇列架構](queues/message-queue-framework.md)
+   + [訊息佇列框架](queues/message-queue-framework.md)
    + [管理訊息佇列](queues/manage-message-queues.md)
    + [設定Amazon MQ](queues/aws-mq.md)
    + [消費者](queues/consumers.md)
@@ -121,15 +121,15 @@ ht-degree: 0%
    + [設定搜尋引擎](search/configure-search-engine.md)
    + [使用停用字詞篩選](search/search-stopwords.md)
 + 安全性 {#security}
-   + [安全性總覽](security/overview.md)
-   + [密碼雜湊](security/password-hashing.md)
+   + [安全性概覽](security/overview.md)
+   + [密碼雜湊處理](security/password-hashing.md)
    + [快取中毒](security/cache-poisoning.md)
    + [安全cron PHP](security/secure-cron-php.md)
    + [安全性TXT](security/security-txt.md)
    + [X-Frame-Options標頭](security/xframe-options.md)
 + 儲存 {#storage}
    + [資料庫分析工具](storage/db-profiler.md)
-   + 遠端儲存 {#remote-storage}
+   + 遠端儲存裝置 {#remote-storage}
       + [遠端儲存模組](remote-storage/remote-storage.md)
       + [AWS S3貯體](remote-storage/remote-storage-aws-s3.md)
       + [調整影像大小](remote-storage/remote-storage-image-resize.md)

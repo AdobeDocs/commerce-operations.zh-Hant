@@ -18,7 +18,7 @@ OpenSearch是在Elasticsearch授權變更後建立的Elasticsearch7.10.2的開�
 
 ## 移轉路徑
 
-移轉至OpenSearch的步驟非常簡單，並且基本上遵循Elasticsearch設定的步驟。 這些步驟假設Adobe Commerce是唯一使用搜尋引擎的應用程式。 如果有多個應用程式使用搜尋引擎，請遵循正式移轉指南 [從開放原始碼Elasticsearch移至OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
+移轉至OpenSearch的步驟非常簡單，而且基本上遵循Elasticsearch設定的步驟。 這些步驟假設Adobe Commerce是唯一使用搜尋引擎的應用程式。 如果有多個應用程式使用搜尋引擎，請遵循正式移轉指南 [從開放原始碼Elasticsearch移至OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
 
 1. 確保您的安裝符合 [搜尋引擎必要條件](../../installation/prerequisites/search-engine/overview.md).
 
@@ -28,6 +28,6 @@ OpenSearch是在Elasticsearch授權變更後建立的Elasticsearch7.10.2的開�
 
 1. [安裝OpenSearch](https://opensearch.org/docs/latest/opensearch/install/important-settings/).
 
-1. [設定搜尋引擎](../../configuration/search/configure-search-engine.md) 並執行相關工作，例如排清快取和重新索引目錄搜尋索引。
+1. [設定搜尋引擎](../../configuration/search/configure-search-engine.md) 並執行相關工作，例如排清快取及重新索引目錄搜尋索引。
 
 不需要進一步變更設定值。

@@ -1,6 +1,6 @@
 ---
 title: 管理模組和擴充功能
-description: 使用命令列介面來啟用、停用和解除安裝Adobe Commerce和Magento Open Source模組及擴充功能。
+description: 使用命令列介面來啟用、停用及解除安裝Adobe Commerce和Magento Open Source模組及擴充功能。
 feature: Upgrade, Extensions
 exl-id: a71de7c6-395a-4734-b3ad-b2879809be0b
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07

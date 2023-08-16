@@ -13,11 +13,11 @@ ht-degree: 0%
 
 本指南旨在提供您必要的工具，協助您執行成功、最佳化且健全的Adobe Commerce網站。
 
-## 本指南的對象為誰？
+## 本指南適用對象？
 
 本指南專為商家、開發人員和整合商所設計，協助他們發揮Adobe Commerce商店的最佳效能。
 
-## 指南中有哪些內容？
+## 指南內容？
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
 * [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}

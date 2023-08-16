@@ -1,6 +1,6 @@
 ---
 title: 為您的搜尋引擎設定Apache
-description: 請依照下列步驟，使用Apache Web Server設定搜尋引擎，以供Adobe Commerce和Magento Open Source的內部部署使用。
+description: 請依照下列步驟，使用Apache Web Server設定搜尋引擎，以供Adobe Commerce和Magento Open Source的內部部署安裝。
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
 source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
@@ -14,21 +14,21 @@ ht-degree: 0%
 
 {{$include /help/_includes/web-server-communication.md}}
 
-## 設定Proxy
+## 設定proxy
 
 >[!NOTE]
 >
->2.4.4版新增OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 另請參閱 [將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md) 以取得詳細資訊。
+>2.4.4版本新增OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 另請參閱 [將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md) 以取得詳細資訊。
 
 本節探討如何將Apache設定為 *不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在中討論 [與Apache的安全通訊](#secure-communication-with-apache).
 
 >[!NOTE]
 >
->在此範例中，Proxy不受保護的原因是它更容易設定和驗證。 您可以透過此Proxy使用TLS。 如果您想要這麼做，請務必將Proxy資訊新增至您的安全虛擬主機設定。
+>在此範例中，Proxy不受保護的原因是它更容易設定和驗證。 您可以透過此Proxy使用TLS。 如果您想要這麼做，請確定您將Proxy資訊新增至安全虛擬主機設定。
 
 ### 設定Apache 2.4的Proxy
 
-本節探討如何使用虛擬主機設定Proxy。
+本節探討如何使用虛擬主機來設定Proxy。
 
 1. 啟用 `mod_proxy` 如下所示：
 
@@ -58,19 +58,19 @@ ht-degree: 0%
    service apache2 restart
    ```
 
-1. 輸入下列命令來驗證Proxy是否運作：
+1. 輸入下列命令來驗證Proxy是否有效：
 
    ```bash
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
-   例如，如果您使用Elasticsearch，而Proxy使用連線埠8080：
+   例如，如果您使用Elasticsearch，而您的Proxy使用連線埠8080：
 
    ```bash
    curl -i http://localhost:8080/_cluster/health
    ```
 
-   類似下列的訊息會顯示以指示成功：
+   類似下列顯示以指示成功的訊息：
 
    ```terminal
    HTTP/1.1 200 OK
@@ -84,30 +84,30 @@ ht-degree: 0%
 
 ## 與Apache的安全通訊
 
-本節探討如何使用，保護Apache與搜尋引擎之間的通訊 [HTTP基本](https://datatracker.ietf.org/doc/html/rfc2617) 使用Apache進行驗證。 如需更多選項，請參閱下列資源之一：
+本節探討如何使用保護Apache與搜尋引擎之間的通訊 [HTTP基本](https://datatracker.ietf.org/doc/html/rfc2617) 使用Apache進行驗證。 如需更多選項，請參閱下列資源之一：
 
 * [Apache 2.4驗證和授權教學課程](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 請參閱下列其中一節：
 
 * [建立密碼檔案](#create-a-password)
-* [設定安全的虛擬主機](#secure-communication-with-apache)
+* [設定您的安全虛擬主機](#secure-communication-with-apache)
 
 ### 建立密碼
 
-基於安全理由，您可以在網頁伺服器docroot以外的任何地方找到密碼檔案。 在此範例中，我們說明如何將密碼檔案儲存在新目錄中。
+基於安全考量，您可以在網頁伺服器docroot以外的任何地方找到密碼檔案。 在此範例中，我們說明如何將密碼檔案儲存在新目錄中。
 
 #### 安裝htpasswd （如有必要）
 
 首先，檢視您是否擁有Apache `htpasswd` 公用程式的安裝方式如下：
 
-1. 輸入下列命令以判斷是否 `htpasswd` 已安裝：
+1. 輸入以下命令以確定 `htpasswd` 已安裝：
 
    ```bash
    which htpasswd
    ```
 
-   如果路徑顯示，則會安裝該路徑；如果命令未傳回任何輸出， `htpasswd` 未安裝。
+   如果顯示路徑，則安裝路徑；如果命令未傳回任何輸出， `htpasswd` 未安裝。
 
 1. 如有必要，請安裝 `htpasswd`：
 
@@ -136,14 +136,14 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 
    * 設定Elasticsearch：使用者已命名 `magento_elasticsearch` 在此範例中
 
-* `<password file name>` 必須為隱藏的檔案(開頭為 `.`)，且應反映使用者名稱。 如需詳細資訊，請參閱本節稍後的範例。
+* `<password file name>` 必須為隱藏的檔案(開頭為 `.`)，且應該反映使用者的名稱。 如需詳細資訊，請參閱本節稍後的範例。
 
-依照熒幕上的提示為使用者建立密碼。
+按照畫面上的提示為使用者建立密碼。
 
 #### 範例
 
 **範例1： cron**
-您必須為cron僅設定一個使用者的驗證；在此範例中，我們使用Web伺服器使用者。 若要為Web伺服器使用者建立密碼檔案，請輸入下列命令：
+您必須為cron僅設定一個使用者的驗證；在此範例中，我們使用web伺服器使用者。 若要建立Web伺服器使用者的密碼檔，請輸入下列命令：
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -166,7 +166,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticse
 
 #### 新增其他使用者
 
-若要將另一個使用者新增至您的密碼檔案，請輸入以下命令作為使用者 `root` 許可權：
+若要將其他使用者新增至您的密碼檔案，請輸入以下命令作為使用者 `root` 許可權：
 
 ```bash
 htpasswd /usr/local/apache/password/.htpasswd <username>
@@ -174,9 +174,9 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### 與Apache的安全通訊
 
-本節探討如何設定 [HTTP基本驗證](https://httpd.apache.org/docs/2.2/howto/auth.html). 同時使用TLS和HTTP基本驗證可防止任何人攔截與Elasticsearch、OpenSearch或您的應用程式伺服器的通訊。
+本節將討論如何設定 [HTTP基本驗證](https://httpd.apache.org/docs/2.2/howto/auth.html). 同時使用TLS和HTTP Basic驗證可防止任何人攔截與Elasticsearch、OpenSearch或您的應用程式伺服器的通訊。
 
-本節探討如何指定可以存取Apache Server的使用者。
+本節探討如何指定可以存取Apache伺服器的使用者。
 
 1. 使用文字編輯器將下列內容新增至您的安全虛擬主機。
 

@@ -11,6 +11,6 @@ ht-degree: 0%
 
 # Adobe Commerce功能
 
-下表按次要版本比較Adobe Commerce功能：
+下表依次要版本比較Adobe Commerce功能：
 
 {{$include /help/_includes/templated/release/features.md}}

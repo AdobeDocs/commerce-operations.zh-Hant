@@ -19,14 +19,14 @@ ht-degree: 0%
 >
 >如果商家使用管理員在舊版中停用模組輸出，您必須手動設定系統以移轉這些設定。
 
-停用輸出功能時，會在下列類別中執行：
+停用輸出功能會在下列類別中執行：
 
 - [\Magento\Framework\View\Element\AbstractBlock：：toHtml](https://github.com/magento/magento2/blob/36097739bbb0b8939ad9a2a0dadee64318153dca/lib/internal/Magento/Framework/View/Element/AbstractBlock.php#L651)
 - [\Magento\Backend\Block\Template：：isOutputEnabled](https://github.com/magento/magento2/blob/0c786907ffe03d0e2990612eec16ee58b00379c5/app/code/Magento/Backend/Block/Template.php#L96)
 
 >[!WARNING]
 >
->停用模組輸出並不會停用模組。 此模組會保持已啟用且運作中，但前端或後端不會呈現任何區塊、頁面或欄位。
+>停用模組輸出並不會停用模組。 此模組保持已啟用狀態並運作，但前端或後端不會轉譯任何區塊、頁面或欄位。
 
 ## 停用管道部署中的模組輸出
 
@@ -52,9 +52,9 @@ ht-degree: 0%
 
    - `<modules_disable_output>` 包含模組清單。
    - `<Magento_Newsletter></Magento_Newsletter>` 指定要停用輸出的模組。
-   - `1` 是停用「 」輸出的「 」旗標 `Magento_Newsletter` 模組。
+   - `1` 是停用「 」輸出的「 」標幟 `Magento_Newsletter` 模組。
 
-此設定的範例結果導致客戶無法再註冊接收電子報。
+此設定的範例結果是，客戶無法再註冊接收電子報。
 
 ### 匯出設定變更
 
@@ -76,10 +76,10 @@ bin/magento cache:clean config
 
 ## 在簡單部署中停用模組輸出
 
-在單一Commerce執行個體上停用模組輸出的程式較為簡單，因為不必散發變更。
+在Commerce的單一執行個體上停用模組輸出的程式較簡單，因為不必散發變更。
 
 1. 封存原始檔案 `<Magento_install_dir>/app/etc/config.php` 檔案。
-1. 新增 `advanced` 和 `modules_disable_output` 的區段 `config.php` 檔案（如果它們不存在）：
+1. 新增 `advanced` 和 `modules_disable_output` 的區段 `config.php` 檔案（如果沒有）：
 
    ```php
    'system' =>

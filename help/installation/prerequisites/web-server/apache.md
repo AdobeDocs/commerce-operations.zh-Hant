@@ -1,6 +1,6 @@
 ---
 title: Apache
-description: 請依照下列步驟安裝和設定Apache Web Server，以供Adobe Commerce和Magento Open Source的內部部署使用。
+description: 請依照這些步驟安裝和設定Apache Web Server，以供Adobe Commerce和Magento Open Source的內部部署使用。
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ Adobe Commerce支援Apache 2.4.x。
 
 ## Apache必要指示
 
-1. 設定 `AllowEncodedSlashes` 在伺服器設定（全域）或虛擬主機設定中，以避免解碼可能導致URL問題的編碼斜線。 例如，透過API在SKU中擷取斜線產品時，您不想要轉換該斜線。 範例區塊不完整，需要其他指令。
+1. 設定 `AllowEncodedSlashes` 在伺服器設定（全域）或虛擬主機設定中，避免將可能導致URL問題的編碼斜線解碼。 例如，透過API在SKU中擷取斜線形式的產品時，您不想要轉換該產品。 範例區塊不完整，需要其他指令。
 
    ```conf
    <VirtualHost *:443>
@@ -26,17 +26,17 @@ Adobe Commerce支援Apache 2.4.x。
 
 ## Apache重寫和htaccess
 
-本主題說明如何啟用Apache 2.4重新寫入，並指定 [分散式組態檔， `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
+本主題說明如何啟用Apache 2.4重新寫入，以及指定設定 [分散式組態檔， `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Adobe Commerce和Magento Open Source使用伺服器重寫和 `.htaccess` 以提供Apache的目錄層級指示。 以下指示也包含在本主題的所有其他章節中。
+Adobe Commerce和Magento Open Source使用伺服器重寫和 `.htaccess` 以提供Apache的目錄層級指示。 下列指示也包含在本主題的所有其他章節中。
 
-使用此區段來啟用Apache 2.4重新寫入，並指定 [分散式組態檔， `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
+您可以在此段落啟用Apache 2.4重新寫入，並指定 [分散式組態檔， `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
 Adobe Commerce和Magento Open Source使用伺服器重寫和 `.htaccess` 以提供Apache的目錄層級指示。
 
 >[!NOTE]
 >
->無法啟用這些設定通常會導致您的店面或管理員上沒有顯示任何樣式。
+>無法啟用這些設定通常會導致您的店面或管理員上不顯示任何樣式。
 
 1. 啟用Apache重寫模組：
 
@@ -44,11 +44,11 @@ Adobe Commerce和Magento Open Source使用伺服器重寫和 `.htaccess` 以提�
    a2enmod rewrite
    ```
 
-1. 啟用應用程式以使用分散式 `.htaccess` 設定檔案，請參閱 [Apache 2.4檔案](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+1. 啟用應用程式以使用分散式 `.htaccess` 組態檔，請參閱 [Apache 2.4檔案](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
 
    >[!TIP]
    >
-   >在Apache 2.4中，伺服器的預設網站設定檔案為 `/etc/apache2/sites-available/000-default.conf`.
+   >在Apache 2.4中，伺服器的預設站台設定檔案為 `/etc/apache2/sites-available/000-default.conf`.
 
    例如，您可以新增下列內容至 `000-default.conf`：
 
@@ -60,7 +60,7 @@ Adobe Commerce和Magento Open Source使用伺服器重寫和 `.htaccess` 以提�
 
    >[!NOTE]
    >
-   >有時可能需要其他引數。 如需詳細資訊，請參閱 [Apache 2.4檔案](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   >有時候，可能需要其他引數。 如需詳細資訊，請參閱 [Apache 2.4檔案](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
 
 1. 如果您已變更Apache設定，請重新啟動Apache：
 
@@ -71,12 +71,11 @@ Adobe Commerce和Magento Open Source使用伺服器重寫和 `.htaccess` 以提�
    >[!NOTE]
    >
    >- 如果您從舊版Apache升級，請先尋找 `<Directory "/var/www/html">` 或 `<Directory "/var/www">` 在 `000-default.conf`.
-   >- 您必須變更以下專案的值： `AllowOverride` 在您要安裝Adobe Commerce或Magento Open Source軟體之目錄的指示詞中。 例如，若要安裝在Web伺服器docroot中，請編輯 `<Directory /var/www>`.
-
+   >- 您必須變更值 `AllowOverride` 在您要安裝Adobe Commerce或Magento Open Source軟體的目錄的指示詞中。 例如，若要安裝在網頁伺服器docroot中，請編輯中的指令 `<Directory /var/www>`.
 
 >[!NOTE]
 >
->若未啟用這些設定，通常會導致樣式無法顯示在店面或管理員中。
+>若無法啟用這些設定，通常會導致樣式無法顯示在店面或管理員中。
 
 ## Apache必要模組
 
@@ -104,7 +103,7 @@ Server version: Apache/2.4.04 (Ubuntu)
 Server built: Jul 22 2020 14:35:32
 ```
 
-- 如果Apache是 *not* 已安裝，請參閱：
+- 如果Apache為 *非* 已安裝，請參閱：
    - [在Ubuntu上安裝或升級Apache](#installing-apache-on-ubuntu)
    - [在CentOS上安裝Apache](#installing-apache-on-centos)
 
@@ -144,7 +143,7 @@ Server built: Jul 22 2020 14:35:32
 
 若要升級至Apache 2.4：
 
-1. 新增 `ppa:ondrej` 存放庫，其中具有Apache 2.4：
+1. 新增 `ppa:ondrej` 存放庫，此存放庫具有Apache 2.4：
 
    ```bash
    apt-get -y update
@@ -197,7 +196,7 @@ Adobe Commerce和Magento Open Source需要Apache使用伺服器重寫。 您也�
    yum -y install httpd
    ```
 
-1. 驗證安裝：
+1. 確認安裝：
 
    ```bash
    httpd -v
@@ -214,7 +213,7 @@ Adobe Commerce和Magento Open Source需要Apache使用伺服器重寫。 您也�
 
    >[!NOTE]
    >
-   >即使Apache 2.4預設隨CentOS提供，請參閱下一節以設定它。
+   >即使Apache 2.4預設隨附於CentOS，請參閱下一節以設定它。
 
 ### 啟用CentOS的重寫和.htaccess
 
@@ -245,7 +244,7 @@ Adobe Commerce和Magento Open Source需要Apache使用伺服器重寫。 您也�
 
    >[!NOTE]
    >
-   >以下專案的先前值： `Order` 可能無法在所有情況下運作。 如需詳細資訊，請參閱Apache檔案([2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order))。
+   >下列專案的先前值： `Order` 可能無法在所有情況下都運作。 如需詳細資訊，請參閱Apache檔案([2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order))。
 
 1. 儲存檔案並退出文字編輯器。
 
@@ -257,7 +256,7 @@ Adobe Commerce和Magento Open Source需要Apache使用伺服器重寫。 您也�
 
 >[!NOTE]
 >
->無法啟用這些設定通常會導致您的店面或管理員上沒有顯示任何樣式。
+>無法啟用這些設定通常會導致您的店面或管理員上不顯示任何樣式。
 
 ### 啟用Ubuntu的重寫和.htaccess
 
@@ -296,7 +295,7 @@ Adobe Commerce和Magento Open Source需要Apache使用伺服器重寫。 您也�
    ln -s ../mods-available/rewrite.load
    ```
 
-1. 重新啟動Apache套用變更：
+1. 重新啟動Apache以套用變更：
 
    ```bash
    service apache2 restart
@@ -308,7 +307,7 @@ Adobe Commerce和Magento Open Source需要Apache使用伺服器重寫。 您也�
 
 ### 解決Apache 2.4的403禁止錯誤
 
-若要讓網站訪客能夠存取您的網站，請使用 [Require指示](https://httpd.apache.org/docs/2.4/howto/access.html).
+若要讓網站訪客能夠存取您的網站，請使用 [需要指示](https://httpd.apache.org/docs/2.4/howto/access.html).
 
 例如：
 
@@ -323,4 +322,4 @@ Adobe Commerce和Magento Open Source需要Apache使用伺服器重寫。 您也�
 
 >[!NOTE]
 >
->以下專案的先前值： `Order` 可能無法在所有情況下運作。 如需詳細資訊，請參閱 [Apache檔案](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+>下列專案的先前值： `Order` 可能無法在所有情況下都運作。 如需詳細資訊，請參閱 [Apache檔案](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).

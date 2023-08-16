@@ -1,6 +1,6 @@
 ---
 title: 升級的維護模式選項
-description: 建立自訂維護模式頁面，供您的客戶在執行升級時於您的Adobe Commerce或Magento Open Source店面檢視。
+description: 建立自訂維護模式頁面，供客戶在您執行升級時於您的Adobe Commerce或Magento Open Source店面檢視。
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # 升級的維護模式選項
 
-本主題說明如何建立自訂維護頁面，以在升級Magento應用程式時顯示給使用者。 建立自訂頁面為選用，但建議使用，因為您的網站在升級期間可供存取。
+本主題說明如何建立自訂維護頁面，以便在升級Magento應用程式時顯示給使用者。 建立自訂頁面為選用，但建議使用，因為您的網站在升級期間可供存取。
 
-建立自訂頁面，將使用者重新導向至該頁面，會阻止對該網站的任何存取，並會通知您的使用者該網站正在進行維護。
+建立自訂頁面，將使用者重新導向至該頁面，會防止使用者存取網站，並通知使用者網站正在進行維護。
 
 >[!NOTE]
 >
@@ -59,16 +59,16 @@ body
 本節中的範例說明如何修改下列檔案，這是設定維護頁面的一種方式：
 
 - Apache 2.4： `/etc/apache2/sites-available/000-default.conf`
-- Apache 2.2： `/etc/apache2/sites-available/default` (Ubuntu)、 `/etc/httpd/conf/httpd.conf` (CentOS)
+- Apache 2.2： `/etc/apache2/sites-available/default` (Ubuntu)， `/etc/httpd/conf/httpd.conf` (CentOS)
 
 若要將流量重新導向至自訂維護頁面：
 
-1. 更新您的Apache設定以執行下列操作：
+1. 更新Apache設定以執行下列操作：
 
    - 將所有流量重新導向至維護頁面
    - 允許列出某些IP，以便管理員可以升級Magento軟體。
 
-   以下範例允許清單192.0.2.110。
+   下列範例允許清單192.0.2.110。
 
    在Apache設定檔案的結尾新增下列內容：
 
@@ -107,7 +107,7 @@ body
 1. 使用文字編輯器開啟包含伺服器區塊的nginx組態檔。
 1. 將下列專案新增至伺服器區塊(`server` 僅供清楚說明之用；請勿新增第二個伺服器區塊)。
 
-   以下允許清單列出Magento安裝所在系統上的IP位址192.0.2.110和192.0.2.115 `/var/www/html/magento2`：
+   以下允許列出Magento安裝所在系統上的IP位址192.0.2.110和192.0.2.115 `/var/www/html/magento2`：
 
    ```conf
    server {

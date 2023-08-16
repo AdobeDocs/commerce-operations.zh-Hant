@@ -1,6 +1,6 @@
 ---
 title: 複製範例資料Git存放庫
-description: 請依照下列步驟，複製Git存放庫以安裝Adobe Commerce並Magento Open Source範例資料。
+description: 請依照下列步驟安裝Adobe Commerce，並複製Git存放庫以Magento Open Source範例資料。
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,18 +11,18 @@ ht-degree: 0%
 
 # 複製範例資料Git存放庫
 
-本主題說明如何在複製Magento Open SourceGitHub存放庫時複製和新增範例資料。 此方法僅適用於投稿開發人員(即計畫投稿至Magento Open Source程式碼基底的開發人員)。
+本主題說明如何複製Magento Open SourceGitHub存放庫並新增範例資料。 此方法僅適用於參與開發人員(即計畫參與Magento Open Source程式碼基底的開發人員)。
 
 如果您不是貢獻開發人員，請選擇頁面左側目錄中所顯示的其他選項之一。
 
-投稿開發人員可以使用此方法來安裝範例資料 *僅限* 如果下列為true：
+貢獻開發人員可使用此方法來安裝範例資料 *僅限* 如果下列為true：
 
 * 您使用Magento Open Source
-* 您 [克隆GitHub存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* 您 [複製GitHub存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 >[!WARNING]
 >
->您可以將範例資料與以下任一專案搭配使用： `develop` 分支（較新）或已發行分支(例如 `2.4` （較穩定）。 建議您使用已發行分支，因為其較穩定。 如果您要貢獻程式碼到存放庫並且需要最新的程式碼，請使用 `develop` 分支。 無論您選擇哪個分支，您都必須 [原地複製](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) Magento Open SourceGitHub存放庫的對應分支。 例如，的範例資料 `develop` 分支可以使用 *僅限* 使用Magento Open Source `develop` 分支。
+>您可以將範例資料與 `develop` 分支（較新）或已發行分支(例如 `2.4` （較穩定）。 建議您使用已發行的分支，因為其較穩定。 如果您要貢獻程式碼到存放庫且需要最新的程式碼，請使用 `develop` 分支。 無論您選擇哪個分支，您都必須 [原地複製](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) Magento Open SourceGitHub存放庫的對應分支。 例如，的範例資料 `develop` 分支可以使用 *僅限* 使用Magento Open Source `develop` 分支。
 
 ## 複製範例資料存放庫
 
@@ -151,20 +151,19 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->如果您正在安裝範例資料 *晚於* 安裝Adobe Commerce或Magento Open Source時，您也必須執行下列命令來更新資料庫和結構描述：
+>如果您正在安裝範例資料 *晚於* 安裝Adobe Commerce或Magento Open Source時，您也必須執行下列命令以更新資料庫和架構：
 >
->
-```bash
+>```bash
 ><magento_root>/bin/magento setup:upgrade
 >```
 
 ## 設定檔案系統擁有權和許可權
 
-因為 `php build-sample-data.php` 指令碼會在範例資料存放庫和Magento Open Source存放庫之間建立符號連結，您必須在範例資料存放庫中設定檔案系統許可權和擁有權。 若未這麼做，會導致存取店面時發生錯誤。
+因為 `php build-sample-data.php` 指令碼會在範例資料存放庫和您的Magento Open Source存放庫之間建立符號連結，您必須在範例資料存放庫中設定檔案系統許可權和擁有權。 若未這麼做，會導致存取店面時發生錯誤。
 
 若要設定範例資料存放庫的檔案系統許可權和擁有權：
 
-1. 變更為範例資料複製目錄。
+1. 變更至範例資料複製目錄。
 1. 設定擁有權：
 
    ```bash

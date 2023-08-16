@@ -1,6 +1,6 @@
 ---
 title: 升級歷程階段
-description: 瞭解Adobe Commerce和Magento Open Source專案的升級歷程的各個階段。
+description: 瞭解Adobe Commerce和Magento Open Source專案之升級歷程的不同階段。
 exl-id: c0e39102-5f37-47cb-9792-9eeb50707ec8
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -15,6 +15,6 @@ ht-degree: 0%
 
 - [專案啟動](project-launch.md)
 - [年度計畫](annual-planning.md)
-- [實作](implementation.md)
+- [實施](implementation.md)
 
 ![](../../assets/upgrade-guide/upgrade-journey-phases.svg)

@@ -13,13 +13,13 @@ ht-degree: 0%
 **版本**： 3.0.3
 
 此參照包含9個指令，這些指令可透過 `bin/uct` 命令列工具。
-初始清單會使用 `bin/uct list` Adobe Commerce命令。
+初始清單會使用 `bin/uct list` Adobe Commerce的命令。
 
 進一步瞭解中的工具 [概觀](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
 >[!NOTE]
 >
->此參考是從應用程式程式碼基底產生的。 若要變更內容，您可以更新中對應命令實作的原始程式碼 [程式碼基底](https://github.com/magento) 存放庫並提交您的變更以供檢閱。 另一種方式是 _提供我們意見反應_ （尋找右上方的連結）。 如需貢獻准則，請參閱 [程式碼協助撰寫](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>此參考是從應用程式程式碼基底產生的。 若要變更內容，您可以更新中對應命令實施的原始碼 [程式碼基底](https://github.com/magento) 存放庫並提交您的變更以供檢閱。 另一種方式是 _提供意見反應_ （尋找右上方的連結）。 如需貢獻准則，請參閱 [程式碼協助撰寫](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 
@@ -37,7 +37,7 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 ### `--input`, `-i`
 
-輸入權杖陣列（例如COMP_WORDS或argv）
+輸入權杖的陣列（例如COMP_WORDS或argv）
 
 - 預設： `[]`
 - 需要值
@@ -56,7 +56,7 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -114,7 +114,7 @@ bin/uct completion [--debug] [--] [<shell>]
 
 ### `shell`
 
-如果未提供殼層型別（例如「bash」），則會使用「$SHELL」環境變數的值
+如果未指定shell型別（例如&quot;bash&quot;），則會使用&quot;$SHELL&quot;環境變數的值
 
 
 ### `--debug`
@@ -126,7 +126,7 @@ bin/uct completion [--debug] [--] [<shell>]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -198,14 +198,14 @@ bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--raw`
 
-輸出原始命令說明
+輸出原始指令說明
 
 - 預設： `false`
 - 不接受值
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -268,7 +268,7 @@ bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ### `--raw`
 
-要輸出原始命令清單
+輸出原始命令清單
 
 - 預設： `false`
 - 不接受值
@@ -289,7 +289,7 @@ bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -353,7 +353,7 @@ bin/uct refactor <path>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -402,7 +402,7 @@ bin/uct refactor <path>
 
 ## `core:code:changes`
 
-升級相容性工具是命令列工具，可分析安裝在Adobe Commerce執行個體中的所有非Adobe Commerce模組，以針對特定版本檢查執行個體。 傳回在升級至新版Adobe Commerce程式碼之前必須解決的錯誤和警告清單。
+升級相容性工具是命令列工具，可分析安裝在Adobe Commerce執行個體中的所有非Adobe Commerce模組，以針對特定版本檢查執行個體。 傳回在升級至新版Adobe Commerce程式碼之前必須解決之錯誤和警告的清單。
 
 ```bash
 bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
@@ -417,7 +417,7 @@ Adobe Commerce安裝目錄。
 
 ### `vanilla-dir`
 
-Adobe Commerce vanilla安裝目錄
+Adobe Commerce一般安裝目錄。
 
 
 ### `--output`, `-o`
@@ -428,7 +428,7 @@ Adobe Commerce vanilla安裝目錄
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -478,7 +478,7 @@ Adobe Commerce vanilla安裝目錄
 ## `dbschema:diff`
 
 允許列出兩個所選版本之間的Adobe Commerce DB結構描述差異。
-可用版本： 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.5-p2 | 2.4.6
+可用版本： 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4 - p2 | 2.3.5 | 2.3.5-p1 | 2.3.5 - p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7 - p1 | 2.3.7 - p2 | 2.3.7 - p3 | 2.3.7 - p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4 - p2 | 2.4.5-p1 | 2.4.4 - p3 | 2.4.5 - p2 | 2.4.6
 
 ```bash
 bin/uct dbschema:diff <current-version> <target-version>
@@ -499,7 +499,7 @@ bin/uct dbschema:diff <current-version> <target-version>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -557,13 +557,13 @@ bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 
 ### `schema1`
 
-指向第一個GraphQL結構描述的端點URL。
+端點URL指向第一個GraphQL結構描述。
 
 - 必填
 
 ### `schema2`
 
-指向第二個GraphQL結構描述的端點URL。
+指向第二個GraphQL結構的端點URL。
 
 - 必填
 
@@ -575,7 +575,7 @@ bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
@@ -624,7 +624,7 @@ bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 
 ## `upgrade:check`
 
-升級相容性工具是命令列工具，可分析安裝在其中的所有模組，以針對特定版本檢查Adobe Commerce自訂執行個體。 傳回升級至最新版Adobe Commerce之前必須解決的錯誤和警告清單。
+升級相容性工具是命令列工具，可分析安裝在其中的所有模組，以針對特定版本檢查Adobe Commerce自訂執行個體。 傳回升級至最新版Adobe Commerce之前必須解決之錯誤和警告的清單。
 
 ```bash
 bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-version [COMING-VERSION]] [--json-output-path [JSON-OUTPUT-PATH]] [--html-output-path [HTML-OUTPUT-PATH]] [--min-issue-level [MIN-ISSUE-LEVEL]] [-i|--ignore-current-version-compatibility-issues] [--context CONTEXT] [--] <dir>
@@ -639,19 +639,19 @@ Adobe Commerce安裝目錄。
 
 ### `--current-version`, `-a`
 
-若省略，將會使用目前的Adobe Commerce版本、Adobe Commerce安裝版本。
+如果省略，將會使用目前的Adobe Commerce版本、Adobe Commerce安裝版本。
 
 - 接受值
 
 ### `--coming-version`, `-c`
 
-Target Adobe Commerce版本，若省略，將使用最新發行版本的Adobe Commerce。 可用的Adobe Commerce版本： 2.3.0 \| 2.3.1 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.5 \| 2.4.4-p2 \| 2.4.5-p1 \| 2.4.4 p3 \| 2.4.5 - p2 \| 2.4.6
+目標Adobe Commerce版本，如果省略，將使用最新發行版本的Adobe Commerce。 可用的Adobe Commerce版本： 2.3.0 \| 2.3.1 \| 2.3.2 - p2 \| 2.3.3 \| 2.3.3 \| 2.3.3 - p1 \| 2.3.4 \| 2.3.4 - p1 \| 2.3.4 \| 2.3.5 \| 2.3.5 - p1 \| 2.3.5 - p2 \| 2.3.6 \| 2.3.6 - p1 \| 2.3.7 \| 2.3.7 - p1 \| 2.3.7 - p2 \| 2.3.7 - p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4.4-p1 \| 2.4.5 \| 2.4.4-p2 \| 2.4.5-p1 \| 2.4.4 p3 \| 2.4.5 - p2 \| 2.4.6
 
 - 接受值
 
 ### `--json-output-path`
 
-輸出將匯出為json格式的檔案路徑
+輸出將匯出為JSON格式的檔案路徑
 
 - 接受值
 
@@ -663,7 +663,7 @@ Target Adobe Commerce版本，若省略，將使用最新發行版本的Adobe Co
 
 ### `--min-issue-level`
 
-您要在報告中看到的最小問題層級（警告、錯誤或嚴重）。
+您要在報告中看到的最低問題層級（警告、錯誤或嚴重）。
 
 - 預設： `warning`
 - 接受值
@@ -683,7 +683,7 @@ Target Adobe Commerce版本，若省略，將使用最新發行版本的Adobe Co
 
 ### `--help`, `-h`
 
-顯示指定命令的說明。 當沒有命令指定時，顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值

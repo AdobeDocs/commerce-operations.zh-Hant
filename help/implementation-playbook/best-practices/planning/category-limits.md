@@ -30,22 +30,22 @@ ht-degree: 0%
 使用下列策略來減少類別數量：
 
 - 透過屬性和自訂選項管理獨特的產品功能
-- 移除非使用中類別
+- 移除非作用中類別
 - 最佳化導覽中的目錄深度
 
 ## 對效能的潛在影響
 
 擁有超過建議的最大類別數可能會透過下列方式影響網站效能：
 
-- 非快取目錄頁面的回應時間明顯增加
+- 非快取型目錄頁面的回應時間明顯增加
 - 從管理員管理類別時的長時間執行和逾時
 - 增加對應資料庫表格的大小
-- 較大的索引表格會增加完成索引操作所需的時間 `[category/product relation index\]`
-- 增加處理時間，以完成類別樹狀結構建立、功能表擷取和類別規則管理作業
+- 較大的索引表格會增加完成索引作業所需的時間。 `[category/product relation index\]`
+- 增加處理時間，以完成類別樹狀結構建置、功能表擷取和類別規則管理作業
 
 ## 其他資訊
 
 - [類別概觀](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html)
 - [導覽概述](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html)
 - [產品指派](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)
-- [雲端基礎結構上的Adobe Commerce：商店設定的最佳實務](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)
+- [雲端基礎結構上的Adobe Commerce：存放區設定的最佳實務](https://devdocs.magento.com/cloud/configure/configure-best-practices.html)

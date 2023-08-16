@@ -13,38 +13,38 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這是一系列主題中的一個，可協助Adobe Commerce和Magento Open Source商家及開發人員為遵守隱私權法規做好準備。 請洽詢您的法律顧問，判斷您的企業是否及如何遵守任何法律義務。
+>這是一系列主題中的其中一項，可協助Adobe Commerce和Magento Open Source商家及開發人員為遵守隱私權法規做好準備。 請洽詢您的法律顧問，判斷您的企業是否應該及如何遵守任何法律義務。
 
-開發隱私權法規的規範遵循程式時，請參考下列資料流圖表和資料庫實體對應，例如：
+在開發隱私權法規的規範遵循程式時，請參考下列資料流圖表和資料庫實體對應，例如：
 
 - [GDPR](gdpr.md)
 - [CCPA](ccpa.md)
 
 ## 資料流圖表
 
-資料流圖表顯示客戶和管理員可以在店面和管理員上輸入和擷取的資料型別。
+資料流圖表顯示客戶和管理員可以在店面和管理程式上輸入和擷取的資料型別。
 
-### 前端資料輸入點
+### 前端資料進入點
 
-註冊帳戶時、結帳期間和類似事件時，使用者可以輸入客戶、地址和付款資訊。
+註冊帳戶時、結帳期間以及類似事件時，使用者可以輸入客戶、地址和付款資訊。
 
-![前端資料輸入點](../../assets/security-compliance/frontend-data-entry-points.svg)
+![前端資料進入點](../../assets/security-compliance/frontend-data-entry-points.svg)
 
 ### 前端資料存取點
 
-客戶登入並檢視數個不同頁面或簽出時，Commerce會載入客戶資訊。
+客戶登入並檢視數個不同頁面或結帳時，Commerce會載入客戶資訊。
 
 ![前端資料存取點](../../assets/security-compliance/frontend-data-access-points.svg)
 
-### 後端資料輸入點
+### 後端資料進入點
 
-商家可以輸入來自管理員的客戶、地址及付款資訊，以建立客戶或訂單。
+商家可以從「管理員」輸入客戶、地址及付款資訊，以建立客戶或訂單。
 
-![後端資料輸入點](../../assets/security-compliance/backend-data-entry-points.svg)
+![後端資料進入點](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### 後端資料存取點
 
-當商家檢視幾種型別的網格、按一下網格以檢視詳細資訊時，Commerce會載入客戶資訊，並執行各種其他工作。
+當商家檢視幾種型別的網格、按一下網格以檢視詳細資訊並執行各種其他工作時，Commerce會載入客戶資訊。
 
 ![後端資料存取點](../../assets/security-compliance/backend-data-access-points.svg)
 
@@ -200,7 +200,7 @@ Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_enti
 
 #### `sales_flat_quote_payment` 表格
 
-此 `sales_flat_quote_payment` 表格包含信用卡資訊和其他交易資訊。
+此 `sales_flat_quote_payment` 表格中包含信用卡資訊和其他交易資訊。
 
 | 欄 | 資料型別 |
 | --- | --- |
@@ -214,7 +214,7 @@ Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_enti
 
 ### 封存資料
 
-下清單格和欄位包含客戶資訊：
+下清單格和欄包含客戶資訊：
 
 | 表格 | 欄 | 資料型別 |
 | --- | --- | --- |
@@ -227,7 +227,7 @@ Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_enti
 
 ### 銷售資料
 
-下清單格和欄位包含客戶資訊：
+下清單格和欄包含客戶資訊：
 
 | 表格 | 欄 | 資料型別 |
 | --- | --- | --- |
@@ -246,7 +246,7 @@ Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_enti
 
 ### 其他資料
 
-下清單格和欄位包含客戶資訊：
+下清單格和欄包含客戶資訊：
 
 | 表格 | 欄 | 資料型別 |
 | --- | --- | --- |

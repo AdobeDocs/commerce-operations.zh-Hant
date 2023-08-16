@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Upgrade Compatibility Tool] 需求'
-description: 確認您的系統符合執行 [!DNL Upgrade Compatibility Tool] 在Adobe Commerce專案的命令列介面中。
+title: 『[!DNL Upgrade Compatibility Tool] 需求
+description: 確認您的系統符合執行 [!DNL Upgrade Compatibility Tool] 在指令行介面中設定Adobe Commerce專案。
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -34,22 +34,22 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 如果您未正確設定 **Adobe Commerce存取金鑰**，您無法下載 [!DNL Upgrade Compatibility Tool] 和 `composer create-project` 命令將失敗。
+> 如果您未正確設定 **Adobe Commerce存取金鑰**，您無法下載 [!DNL Upgrade Compatibility Tool] 和 `composer create-project` 命令將會失敗。
 
 執行 `composer install` 在終端機中安裝相依性。
 
 ## 系統需求
 
-使用「 」的最低需求 [!DNL Upgrade Compatibility Tool] 在命令列介面中：
+使用 [!DNL Upgrade Compatibility Tool] 在命令列介面中：
 
 | **需求** | **限制** |
 |----------------|-----------------|
 | PHP版本 | >= 7.3 |
-| Composer | 沒有已知的需求。 |
-| Node.js | Node.js版本 `^12.22.0`， `^14.17.0`，或 `>=16.0.0` (請參閱 [安裝Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs/)) |
+| 作曲者 | 沒有已知的需求。 |
+| Node.js | Node.js版本 `^12.22.0`， `^14.17.0`，或 `>=16.0.0` (請參閱 [安裝節點.js](https://nodejs.dev/en/learn/how-to-install-nodejs/)) |
 | 記憶體限制 | 至少2GB RAM。 |
 
-[!DNL Upgrade Compatibility Tool] 需要 [PCNTL](https://www.php.net/manual/en/book.pcntl.php) 和執行的其他PHP擴充功能。 使用以下專案檢查所需的PHP擴充功能 `composer check-platform-reqs` 命令：
+[!DNL Upgrade Compatibility Tool] 需要 [PCNTL](https://www.php.net/manual/en/book.pcntl.php) 和執行的其他PHP擴充功能。 使用檢查所需的PHP擴展 `composer check-platform-reqs` 命令：
 
 ```bash
 # Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
@@ -76,8 +76,8 @@ php           7.4.30    success
 
 只有Linux作業系統支援Adobe Commerce。 您可以執行 [!DNL Upgrade Compatibility Tool] 在Linux作業系統中。 您不必執行 [!DNL Upgrade Compatibility Tool] 您的Adobe Commerce執行個體所在的位置。
 
-這是必要的 [!DNL Upgrade Compatibility Tool] 以存取Adobe Commerce例項的原始程式碼。 例如，您可以將其安裝在一部伺服器上，並將其指向另一部伺服器上的Adobe Commerce安裝。
+此專案對於 [!DNL Upgrade Compatibility Tool] 以存取Adobe Commerce例項的原始程式碼。 例如，您可以將其安裝在一部伺服器上，並指向另一部伺服器上的Adobe Commerce安裝。
 
-如果您正在執行 [!DNL Upgrade Compatibility Tool] 針對具有大型模組和檔案的Adobe Commerce執行個體，此工具可能需要大量RAM （至少2GB）。
+如果您正在執行 [!DNL Upgrade Compatibility Tool] 針對具有大型模組和檔案的Adobe Commerce執行個體，此工具可能需要大量的RAM （至少2GB）。
 
 執行 [!DNL Upgrade Compatibility Tool] 從 [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) 的 [雲端基礎結構上的Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} 專案。

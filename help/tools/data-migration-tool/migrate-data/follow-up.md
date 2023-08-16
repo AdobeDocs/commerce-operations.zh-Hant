@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 資料移轉後續追蹤
 
-Magento1的某些行為和邏輯在Magento2中的實施方式不同。 此 [!DNL Data Migration Tool] 會妥善處理。 有些移轉方面您需有所瞭解，有時您必須採取次要步驟，才能讓某些功能在移轉後順暢運作。
+Magento1的某些行為和邏輯在Magento2中的實施方式不同。 此 [!DNL Data Migration Tool] 會處理好的。 有些移轉方面您應有所瞭解，有時您必須採取次要步驟，才能讓某些功能在移轉後順暢運作。
 
 ## 資訊
 
@@ -20,7 +20,7 @@ Magento1的某些行為和邏輯在Magento2中的實施方式不同。 此 [!DNL
 
 此 [!DNL Data Migration Tool] 不支援分割資料庫。
 
-### 群組價格已轉換為層級價格
+### 群組價格轉換為階層價格
 
 所有群組價格都會在移轉期間自動轉換為層級價格。
 
@@ -38,13 +38,13 @@ Magento1的某些行為和邏輯在Magento2中的實施方式不同。 此 [!DNL
 
 工具不會移轉時區設定，因此您必須在移轉後手動設定時區。 **商店** > **設定** > **地區設定選項** > **時區**.
 
-根據預設，Magento會將時間資料儲存在資料庫的UTC-0區域中，並根據目前的時區設定加以顯示。 如果時間資料已儲存在資料庫中UTC-0以外的區域，您必須使用將現有時間轉換為UTC-0 [!DNL Data Migration Tool]的 `\Migration\Handler\Timezone` 處理常式。
+依預設，Magento會將時間資料儲存在資料庫的UTC-0區域中，並根據目前的時區設定加以顯示。 如果時間資料已經儲存在UTC-0以外的資料庫區域中，您必須使用 [!DNL Data Migration Tool]的 `\Migration\Handler\Timezone` 處理常式。
 
-在下列範例中，Magento1在資料庫的UTC-7區域中不正確地節省時間（例如，由於錯誤的第三方擴充功能）。 若要在移轉時正確地將客戶帳戶建立時間轉換為UTC-0區域，請遵循下列步驟：
+在下列範例中，Magento1在資料庫的UTC-7區域中儲存的時間不正確（例如，由於第三方擴充功能發生錯誤）。 若要在移轉時正確地將客戶帳戶建立時間轉換為UTC-0區域，請執行下列步驟：
 
-1. 複製 `map-customer.xml.dist` 從的適當目錄中的組態檔 [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`)到 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` 檔案。
+1. 複製 `map-customer.xml.dist` 組態檔的適當目錄 [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`)至 `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml` 檔案。
 
-1. 更新 `<customer_map_file>` 中的節點 `config.xml` 並移除 `.dist` 擴充功能開始於 `map-customer.xml.dist`
+1. 更新 `<customer_map_file>` 中的節點 `config.xml` 並移除 `.dist` 擴充功能來自 `map-customer.xml.dist`
 
 1. 將下列規則新增至 `map-customer.xml` 檔案：
 

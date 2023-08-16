@@ -263,7 +263,7 @@ ht-degree: 0%
 | 閘道XML URL | `carriers/ups/gateway_xml_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 託運人編號 | `carriers/ups/shipper_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 偵錯 | `carriers/ups/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![敏感](/help/assets/configuration/cloud-sens.png) |
-| 帳戶ID | `carriers/fedex/account` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![已加密](/help/assets/configuration/cloud-enc.png) | | ![敏感](/help/assets/configuration/cloud-sens.png) |
+| 帳戶 ID | `carriers/fedex/account` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![已加密](/help/assets/configuration/cloud-enc.png) | | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 索引鍵 | `carriers/fedex/key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![已加密](/help/assets/configuration/cloud-enc.png) | | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 計量器編號 | `carriers/fedex/meter_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![已加密](/help/assets/configuration/cloud-enc.png) | | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 密碼 | `carriers/fedex/password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![已加密](/help/assets/configuration/cloud-enc.png) | | ![敏感](/help/assets/configuration/cloud-sens.png) |

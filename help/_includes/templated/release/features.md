@@ -13,7 +13,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
 <table style="table-layout:auto">
   <tbody>
     <tr style="background:lightgray;">
-      <th style="border-style:none;">最大化的轉換和銷售</th>
+      <th style="border-style:none;">最大程度提高轉換率與銷售率</th>
       <th style="border-style:none;">2.0</th>
       <th style="border-style:none;">2.1</th>
       <th style="border-style:none;">2.2</th>
@@ -37,7 +37,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Adobe Commerce的管道管理員</td>
+      <td>Adobe Commerce管道管理員</td>
       <td></td>
       <td></td>
       <td></td>
@@ -93,7 +93,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>PayPal內容中籤出</td>
+      <td>PayPal內容感知簽出</td>
       <td></td>
       <td>+</td>
       <td>+</td>
@@ -127,7 +127,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Walmart Technologies為Adobe Commerce提供商店履行</td>
+      <td>沃爾瑪技術為Adobe Commerce提供商店履行</td>
       <td></td>
       <td></td>
       <td></td>
@@ -135,7 +135,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>在店內購買線上取貨(BOPIS)</td>
+      <td>購買線上店內見面交收(BOPIS)</td>
       <td></td>
       <td></td>
       <td></td>
@@ -175,7 +175,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Adobe Commerce的目錄服務</td>
+      <td>適用於Adobe Commerce的目錄服務</td>
       <td></td>
       <td></td>
       <td></td>
@@ -233,7 +233,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>非同步訂單處理</td>
+      <td>非同步處理訂單</td>
       <td></td>
       <td></td>
       <td></td>
@@ -281,7 +281,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>安全性工具：/ 2FA、ReCAPTCHA、ACL、WAF</td>
+      <td>安全工具：/ 2FA、ReCAPTCHA、ACL、WAF</td>
       <td></td>
       <td></td>
       <td></td>
@@ -313,7 +313,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>在雲端基礎結構上觀察Adobe Commerce</td>
+      <td>雲端基礎結構上的Adobe Commerce觀察</td>
       <td></td>
       <td>+</td>
       <td>+</td>

@@ -32,7 +32,7 @@ ht-degree: 0%
 
 1. 以具有寫入檔案系統許可權的使用者身分登入應用程式伺服器，或切換至該使用者。 另請參閱 [切換到檔案系統擁有者](../../../installation/prerequisites/file-system/overview.md).
 
-   如果您使用bash shell，則可以使用以下語法切換到檔案系統擁有者並同時輸入命令：
+   如果您使用bash shell，則可以使用以下語法切換到檔案系統擁有者並同時輸入指令：
 
    ```bash
    su <file system owner> -s /bin/bash -c <command>
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 1. 若要從任何目錄執行Magento命令，請新增 `<magento_root>/bin` 至您的系統 `PATH`.
 
-   由於shell的語法不同，請參考參考如 [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   因為殼層有不同的語法，請參考如下的參照 [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    CentOS的bash shell範例：
 
@@ -54,7 +54,7 @@ ht-degree: 0%
    export PATH=$PATH:/var/www/html/magento2/bin
    ```
 
-   您可以選擇以下列方式執行命令：
+   您可以選擇以下列方式執行指令：
 
    - `cd <magento_root>/bin` 並以下列身分執行 `./magento <command name>`
    - `<magento_root>/bin/magento <command name>`
@@ -70,10 +70,10 @@ bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 其中：
 
-- `<mode>` 可以是： [`settings`](settings.md)， [`data`](data.md)，或 [`delta`](delta.md)
-- `[-r|--reset]` 是從頭開始移轉的可選引數。 您可以使用此引數來測試移轉。
+- `<mode>` 可能是： [`settings`](settings.md)， [`data`](data.md)，或 [`delta`](delta.md)
+- `[-r|--reset]` 是選用引數，會從頭開始移轉。 您可以使用此引數來測試移轉。
 - `[-a|--auto]` 是選用引數，可防止移轉在遇到完整性檢查錯誤時停止。
-- `{<path to config.xml>}` 為的絕對檔案系統路徑 `config.xml`；此引數為必要項。
+- `{<path to config.xml>}` 是絕對檔案系統路徑 `config.xml`；此引數為必要專案。
 
 >[!NOTE]
 >
@@ -82,10 +82,10 @@ bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 ## 移轉順序
 
-當我們建立 [!DNL Data Migration Tool]，我們假設了下列資料傳輸順序：
+當我們建立 [!DNL Data Migration Tool]時，我們假設使用下列資料傳輸順序：
 
 1. [設定](settings.md)
 1. [資料](data.md)
 1. [變更](delta.md)
 
-我們強烈建議您以相同的順序移轉資料。
+我們強烈建議您以相同順序移轉資料。

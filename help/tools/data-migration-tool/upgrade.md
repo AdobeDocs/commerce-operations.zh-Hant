@@ -1,6 +1,6 @@
 ---
 title: 升級 [!DNL Data Migration Tool]
-description: 瞭解如何升級 [!DNL Data Migration Tool] 以在Magento1和Magento2之間傳輸資料。
+description: 瞭解如何升級 [!DNL Data Migration Tool] 以在Magento1與Magento2之間傳輸資料。
 exl-id: c0d56d1d-b15b-437f-be72-74282dbe85c1
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 * 備份 `vendor/magento/data-migration-tool` 目錄
 
-* 請確定 [!DNL Data Migration Tool] 版本與Magento應用程式版本相符
+* 確定 [!DNL Data Migration Tool] 版本與Magento應用程式版本相符
 
 ### 升級您的Magento軟體
 
@@ -30,9 +30,9 @@ ht-degree: 0%
 
 ### 備份 `vendor/magento/data-migration-tool` 目錄
 
-升級之前 [!DNL Data Migration Tool]，至少備份 `vendor/magento/data-migration-tool` 目錄。 在升級期間，可將其刪除並由更新的程式碼取代。
+升級之前 [!DNL Data Migration Tool]，至少備份 `vendor/magento/data-migration-tool` 目錄。 在升級期間，它可能會被刪除並由更新的程式碼取代。
 
-您也可以使用下列命令備份整個Magento程式碼基底和資料庫：
+您也可以使用下列指令來備份整個Magento程式碼基底和資料庫：
 
 ```bash
 php <magento_root>/bin/magento setup:backup --code --db
@@ -40,20 +40,20 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 >[!WARNING]
 >
->此 `vendor/magento/data-migration-tool` 目錄包含您的自訂程式碼。 若未備份，升級期間可能會遺失自訂內容。
+>此 `vendor/magento/data-migration-tool` 目錄包含您的自訂程式碼。 若未進行備份，升級期間可能會遺失自訂內容。
 
 
 ### 確定版本相符
 
-的版本 [!DNL Data Migration Tool] 而且您的Magento軟體必須完全符合。 例如，Magento2.1.2需要2.1.2版的 [!DNL Data Migration Tool].
+的版本 [!DNL Data Migration Tool] 而且您的Magento軟體必須完全符合。 例如，Magento2.1.2需要版本2.1.2的 [!DNL Data Migration Tool].
 
-請參閱 [安裝 [!DNL Data Migration Tool]](install.md) 要瞭解如何執行下列操作的主題：
+請參閱 [安裝 [!DNL Data Migration Tool]](install.md) 要瞭解如何執行的主題：
 
-* [Check](install.md#check-your-version) 您的Magento2版本
+* [檢查](install.md#check-your-version) 您的Magento2版本
 
 * [尋找](install.md#find-released-versions-of-data-migration-tool) 的發行版本 [!DNL Data Migration Tool]
 
-* [Check](install.md#check-version-of-installed-data-migration-tool) 此 [!DNL Data Migration Tool] 版本
+* [檢查](install.md#check-version-of-installed-data-migration-tool) 此 [!DNL Data Migration Tool] 版本
 
 ## 升級 [!DNL Data Migration Tool]
 

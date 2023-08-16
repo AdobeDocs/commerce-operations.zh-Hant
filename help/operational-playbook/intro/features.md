@@ -11,8 +11,8 @@ ht-degree: 0%
 
 # Commerce功能
 
-要提供世界上最好的商業體驗，需要支援每個接觸點、商業模式和部署情境。
+要提供全球最佳的商務體驗，需要支援每個接觸點、商業模式和部署案例。
 
-## 支援您演化的開放平台
+## 支援您進化的開放平台
 
-![商務技術的價值](../../assets/playbooks/commerce-features.png)
+![商業技術的價值](../../assets/playbooks/commerce-features.png)

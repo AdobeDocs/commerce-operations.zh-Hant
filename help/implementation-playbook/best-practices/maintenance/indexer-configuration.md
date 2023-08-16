@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 索引器設定的最佳實務
 
-若要最佳化及維護網站效能，請使用本文所述的最佳效能實務來檢閱及更新索引器設定。
+為了最佳化及維護網站效能，請使用本文所述的效能最佳實務來檢閱及更新索引器設定。
 
 ## 受影響的產品和版本
 
@@ -22,20 +22,20 @@ ht-degree: 0%
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
 
-## 設定索引器以依排程更新
+## 設定索引子以依排程更新
 
-Adobe Commerce有兩種索引器模式： [!UICONTROL Update on Save] （預設設定）和 [!DNL Update on Schedule].
+Adobe Commerce有兩種索引子模式： [!UICONTROL Update on Save] （預設設定）和 [!DNL Update on Schedule].
 
-- **[!UICONTROL Update on Save]** 模式會在目錄或其他資料變更時立即更新索引。 例如，如果管理員使用者將新產品新增到類別，則儲存更新時，類別產品索引會立即重新索引。
+- **[!UICONTROL Update on Save]** 模式會在目錄或其他資料變更時立即更新索引。 例如，如果管理員使用者將新產品新增到類別，則類別產品索引會在儲存更新時立即重新索引。
 
 - **[!UICONTROL Update on Schedule]** 模式會儲存資料更新的相關資訊，而重新索引作業和索引更新則由cron作業管理，該作業會以排定的間隔在背景執行。
 
-如果大型存放區有多個管理員在後端工作或有許多匯入和匯出，就會觸發頻繁的索引更新。 如果您的網站索引設定設為 [!UICONTROL Update on Save] 模式，經常重新索引會降低資料庫效能，進而減慢網站效能，並造成重新索引程式長時間延遲，尤其是對於大型商店。
+如果大型存放區有多個管理員在後端工作或有許多匯入和匯出，則會觸發頻繁的索引更新。 如果您的網站索引設定設為 [!UICONTROL Update on Save] 模式，頻繁重新索引會降低資料庫效能，進而減慢網站效能，並造成重新索引程式長時間延遲，尤其是對於大型商店。
 
-若要最大化網站效能，請遵循以下最佳作法來編制索引：
+若要最大化網站效能，請遵循以下編制索引最佳實務：
 
 - 檢閱索引設定。
-- 將索引子設定為 _[!UICONTROL Update on Schedule]_適用於大型網站，以及經常更新且流量繁多的網站。 另請參閱 [索引管理](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
+- 將索引子設為 _[!UICONTROL Update on Schedule]_適用於經常更新且流量很大的大型網站和網站。 另請參閱 [索引管理](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 - 追隨 [效能最佳實務](../../../performance/configuration.md) 用於管理索引。
 
 >[!IMPORTANT]

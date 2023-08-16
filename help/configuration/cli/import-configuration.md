@@ -13,8 +13,8 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-當您使用Commerce 2.2設定生產系統時 [管道部署模型](../deployment/technical-details.md)，您必須 _匯入_ 組態設定來自 `config.php` 和 `env.php` 到資料庫中。
-這些設定包括設定路徑和值、網站、商店、商店檢視和主題。
+當您使用Commerce 2.2設定生產系統時 [管道部署模型](../deployment/technical-details.md)，您必須 _匯入_ 組態設定來源 `config.php` 和 `env.php` 到資料庫中。
+這些設定包括配置路徑和值、網站、商店、商店檢視和主題。
 
 匯入網站、商店、商店檢視和主題後，您可以在生產系統上建立產品屬性，並將其套用至網站、商店和商店檢視。
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 匯入命令
 
-在您的生產系統上，執行下列命令以從組態檔案匯入資料(`config.php` 和 `env.php`)至資料庫：
+在生產系統上，執行以下命令以從組態檔案匯入資料(`config.php` 和 `env.php`)至資料庫：
 
 ```bash
 bin/magento app:config:import [-n, --no-interaction]
@@ -34,7 +34,7 @@ bin/magento app:config:import [-n, --no-interaction]
 
 如果您輸入 `bin/magento app:config:import` 若沒有選用標幟，您必須確認變更。
 
-例如，如果設定檔案包含一個新網站和一個新商店，則會顯示以下訊息：
+例如，如果設定檔案包含一個新網站和一個新商店，則會顯示下列訊息：
 
 ```terminal
 These Websites will be created: New Website
@@ -51,46 +51,46 @@ Start import:
 Some information about importing
 ```
 
-如果部署組態檔不包含任何要匯入的資料，則會顯示類似下列的訊息：
+如果部署組態檔案未包含任何要匯入的資料，則會顯示類似下列的訊息：
 
 ```terminal
 Start import:
 Nothing to import
 ```
 
-## 我們匯入的內容
+## 匯入的內容
 
-以下各節將詳細討論我們匯入的資料。
+以下幾節將詳細討論我們匯入的資料。
 
-### 系統設定
+### 系統組態
 
 Commerce直接使用中的值 `system` 中的陣列 `config.php` 或 `env.php` 檔案，而非匯入資料庫中，因為它們需要一些前置和後置處理動作。
 
-例如，設定路徑的值 `web/secure/base_url` 必須透過後端模型驗證。
+例如，設定路徑的值 `web/secure/base_url` 必須以後端模型驗證。
 
 #### 後端模型
 
 後端模型是處理系統組態變更的機制。
 您在中定義後端模組 `<module_name>/adminhtml/system.xml`.
 
-所有後端模型都必須擴充 [`Magento\Framework\App\Config\Value`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config/Value.php) 類別。
+所有後端模型都必須延伸 [`Magento\Framework\App\Config\Value`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config/Value.php) 類別。
 
-當我們匯入後端模型時，不會儲存設定值。
+匯入後端模型時，不會儲存設定值。
 
 ### 網站、商店和商店群組設定
 
-我們匯入下列型別的設定。
+我們匯入下列型別的組態。
 (這些設定位於 `scopes` 中的陣列 `config.php`.)
 
 - `websites`：網站相關設定
 - `groups`：儲存相關設定
 - `stores`：存放區檢視相關設定
 
-上述設定可透過下列模式匯入：
+上述組態可以下列模式匯入：
 
-- `create`： `config.php` 包含新實體(`websites`， `groups`， `stores`)中不存在的URL。
-- `update`： `config.php` 包含實體(`websites`， `groups`， `stores`)與生產環境不同的
-- `delete`： `config.php` 會 _not_ 包含實體(`websites`， `groups`， `stores`)時，才會變更生產環境
+- `create`： `config.php` 包含新實體(`websites`， `groups`， `stores`)中不存在的URL清單
+- `update`： `config.php` 包含實體(`websites`， `groups`， `stores`)與生產環境不同
+- `delete`： `config.php` 會 _非_ 包含實體(`websites`， `groups`， `stores`)時，系統就會執行程式碼。
 
 >[!INFO]
 >
@@ -98,16 +98,16 @@ Commerce直接使用中的值 `system` 中的陣列 `config.php` 或 `env.php` �
 
 ### 主題設定
 
-主題設定包含您在Commerce系統中註冊的所有主題；資料直接來自 `theme` 資料庫表格。 (主題設定位於 `themes` 中的陣列 `config.php`.)
+主題設定包含在Commerce系統中註冊的所有主題；資料直接來自 `theme` 資料庫表格。 (主題設定位於 `themes` 中的陣列 `config.php`.)
 
-#### 主題資料的結構
+#### 佈景主題資料的結構
 
 陣列索引鍵是完整主題路徑： `area` + `theme path`
 
 例如， `frontend/Magento/luma`.
-`frontend` 為區域和 `Magento/luma` 是主題路徑。
+`frontend` 是區域和 `Magento/luma` 是主題路徑。
 
-陣列的值是有關佈景主題的資料：程式碼、標題、路徑、父系ID
+陣列的值是有關佈景主題的資料：程式碼、標題、路徑、上層ID
 
 完整範例：
 
@@ -126,6 +126,5 @@ Commerce直接使用中的值 `system` 中的陣列 `config.php` 或 `env.php` �
 
 >[!INFO]
 >
->- _主題註冊_. 如果主題資料定義於 `config.php` 但佈景主題的原始程式碼不存在於檔案系統中，佈景主題會遭忽略（亦即，未註冊）。
->- _主題移除_. 如果主題不存在於 `config.php` 但原始程式碼存在於檔案系統上，主題並未移除。
-
+>- _主題註冊_. 如果佈景主題資料定義於 `config.php` 但佈景主題的原始程式碼不存在檔案系統中，佈景主題會遭忽略（即未註冊）。
+>- _主題移除_. 如果佈景主題不存在於 `config.php` 但原始程式碼存在於檔案系統中，主題並未移除。

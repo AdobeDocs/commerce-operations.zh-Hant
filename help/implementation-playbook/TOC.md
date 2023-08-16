@@ -1,11 +1,11 @@
 ---
 user-guide-title: 實施行動手冊
-user-guide-description: 瞭解規劃及實作成功Adobe Commerce網站的策略。
+user-guide-description: 了解規劃及實施成功 Adobe Commerce 網站的策略。
 mini-toc-levels: 3
 source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
    - [平台開發原則](intro/platform-development.md)
 - 專案範圍 {#project-scope}
    - [知識就是力量](project-scope/knowledge.md)
-   - [主要利害關係人](project-scope/key-stakeholders.md)
+   - [主要關係人](project-scope/key-stakeholders.md)
    - [流程和時間表](project-scope/process-timeline.md)
    - [交付專案](project-scope/deliverables.md)
    - [需求檢查清單](project-scope/requirement-checklists.md)
@@ -29,7 +29,7 @@ ht-degree: 0%
    - [品質控制](development/quality-control.md)
 - 規劃與控管 {#planning}
    - [交付與規劃方法](planning/delivery.md)
-   - [職責與擁有權](planning/ownership.md)
+   - [責任與擁有權](planning/ownership.md)
    - [專案治理](planning/governance.md)
 - 架構與整合 {#architecture}
    - [功能](architecture/capabilities.md)
@@ -42,7 +42,7 @@ ht-degree: 0%
       - [Headless歷程](architecture/headless/journey-to-headless.md)
       - [微服務](architecture/headless/microservices.md)
       - [Headless的演化](architecture/headless/evolution.md)
-      - [耦合式店面架構](architecture/headless/legacy-storefront.md)
+      - [耦合的店面架構](architecture/headless/legacy-storefront.md)
       - [Headless架構](architecture/headless/adobe-commerce.md)
 - 基礎結構和部署 {#infrastructure}
    - [概觀](infrastructure/overview.md)
@@ -50,7 +50,7 @@ ht-degree: 0%
       - [概觀](infrastructure/self-hosting/overview.md)
       - [內部部署基礎結構](infrastructure/self-hosting/on-premises.md)
       - [安全性概念](infrastructure/self-hosting/security-concepts.md)
-      - [監控遙測和工具](infrastructure/self-hosting/monitoring-tools.md)
+      - [監視遙測和工具](infrastructure/self-hosting/monitoring-tools.md)
       - [災難回覆概念](infrastructure/self-hosting/disaster-recovery-ideas.md)
       - [效能提示](infrastructure/self-hosting/performance-tips.md)
    - 雲端基礎結構 {#cloud}
@@ -71,17 +71,17 @@ ht-degree: 0%
    - [啟動後的步驟](launch/post-launch-steps.md)
 - 維護與支援 {#maintenance}
    - [概觀](maintenance/overview.md)
-   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
+   - [AdobeManaged Services](maintenance/adobe-managed-services.md)
 - 最佳實務 {#best-practices}
    - [概觀](best-practices/phases.md)
    - 規劃 {#planning}
       - [概觀](best-practices/planning/overview.md)
       - [網站、商店和商店檢視設定](best-practices/planning/sites-stores-store-views.md)
       - [報告設定](best-practices/planning/reporting-configuration.md)
-      - [雲端部署的資料庫設定&#x200B;](best-practices/planning/database-on-cloud.md)
+      - [雲端部署的資料庫設定&#x200B;。](best-practices/planning/database-on-cloud.md)
       - [MySQL從屬連線組態&#x200B;](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
       - [MySQL觸發程式使用狀況](best-practices/planning/mysql-triggers-usage.md)
-      - [Redis服務設定](best-practices/planning/redis-service-configuration.md)
+      - [Redis服務組態](best-practices/planning/redis-service-configuration.md)
       - [OPcache記憶體大小](best-practices/planning/opcache-memory-size.md)
       - [Realpath快取大小](best-practices/planning/realpath-cache-size.md)
       - [類別](best-practices/planning/category-limits.md)
@@ -93,12 +93,12 @@ ht-degree: 0%
       - [產品購物車限制](best-practices/planning/product-cart.md)
       - [促銷活動](best-practices/planning/product-cart-promotions.md)
       - [擴充功能](best-practices/planning/extensions.md)
-      - [合作夥伴呈報](best-practices/planning/partner-escalation.md)
+      - [合作夥伴升級](best-practices/planning/partner-escalation.md)
       - [付款儲存處理](best-practices/planning/payment-processing-storage.md)
    - 開發 {#development}
       - [概觀](best-practices/development/overview.md)
       - [影像最佳化](best-practices/development/image-optimization.md)
-      - [疑難排除](best-practices/development/troubleshooting.md)
+      - [疑難排解](best-practices/development/troubleshooting.md)
       - [最佳化CSS和JS檔案](best-practices/development/optimize-css-js-files.md)
       - [私人內容區塊](best-practices/development/private-content-block-configuration.md)
       - [靜態內容部署](best-practices/development/static-content-deployment.md)
@@ -113,7 +113,7 @@ ht-degree: 0%
       - [稽核前端效能](best-practices/maintenance/frontend-performance.md)
       - [索引器設定](best-practices/maintenance/indexer-configuration.md)
       - [訂單處理](best-practices/maintenance/order-processing-configuration.md)
-      - [在生產網站上排程管理員更新](best-practices/maintenance/scheduling-admin-updates-in-production.md)
+      - [正在排程生產網站上的管理員更新](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [更新服務](best-practices/maintenance/update-services.md)
       - [升級檢查清單](best-practices/maintenance/upgrade-checklist.md)
       - [解決資料庫效能問題](best-practices/maintenance/resolve-database-performance-issues.md)

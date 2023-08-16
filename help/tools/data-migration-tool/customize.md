@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # 設定 [!DNL Data Migration Tool]
 
-有時建立的資料格式和結構 [擴充功能](https://marketplace.magento.com/extensions.html) 或自訂程式碼在Magento1和Magento2之間不同。 使用內的擴充點 [!DNL Data Migration Tool] 以移轉此資料。 如果資料格式和結構相同，工具可以自動移轉資料，無需使用者介入。
+有時建立的資料格式和結構 [擴充功能](https://marketplace.magento.com/extensions.html) 或自訂程式碼在Magento1和Magento2之間不同。 在內使用擴充點 [!DNL Data Migration Tool] 以移轉此資料。 如果資料格式和結構相同，則工具可自動移轉資料，無需使用者介入。
 
-在移轉期間， [地圖步驟](technical-specification.md#map-step) 會掃描並比較所有Magento1和Magento2表格，包括由擴充功能建立的表格。 如果表格相同，工具會自動移轉資料。 如果表格不同，工具會終止並通知使用者。
+在移轉期間， [地圖步驟](technical-specification.md#map-step) 會掃描並比較所有Magento1和Magento2表格，包括擴充功能建立的表格。 如果表格相同，工具會自動移轉資料。 如果表格不同，工具會終止並通知使用者。
 
 >[!NOTE]
 >
@@ -23,12 +23,12 @@ ht-degree: 0%
 
 ## 微幅資料格式和結構變更
 
-在大多數情況下， [地圖步驟](technical-specification.md#map-step) 使用下列方法，足以解析細微的資料格式和結構變更： `map.xml` 檔案：
+在大多數情況下， [地圖步驟](technical-specification.md#map-step) 已充分解決細微的資料格式和結構變更，使用下列方法： `map.xml` 檔案：
 
 - 使用對應規則變更表格或欄位名稱
 - 使用現有處理常式或自訂處理常式轉換資料格式
 
-以下同時使用對應規則和處理常式的範例。 此範例使用名為「GreatBlog」的假設Magento1擴充功能，此擴充功能已針對Magento2進行改善。
+以下顯示同時使用對應規則和處理常式的範例。 此範例使用名為「GreatBlog」的假設Magento1擴充功能，此擴充功能已針對Magento2進行改善。
 
 ```xml
 <source>
@@ -76,7 +76,7 @@ ht-degree: 0%
    - 此 `summary` 欄位已重新命名為 `title`，因此資料會移轉至新欄位。
    - 此 `priority` 欄位已移除，不再存在於Magento2中。
    - 中的資料 `body` 欄位已變更格式，應由自訂處理常式處理： `\Migration\Handler\GreatBlog\NewFormat`.
-- Magento2已為「GreatBlog」擴充功能開發新的評等功能。
+- 已為Magento2中的「GreatBlog」擴充功能開發新的評等功能。
    - 新 `great_blog_rating` 已建立表格。
    - 新 `great_blog_post.rating` 欄位已建立。
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 ## 重大資料格式和結構變更
 
-除了「地圖步驟」，還有其他步驟 `config.xml` 以主要格式和結構變更移轉資料的檔案，包括：
+除了「對映步驟」，還有其他步驟 `config.xml` 以主要格式和結構變更移轉資料的檔案，包括：
 
 - [Url重寫步驟](technical-specification.md#url-rewrite-step)
 - OrderGrid步驟
@@ -94,13 +94,13 @@ ht-degree: 0%
 
 不喜歡 [地圖步驟](technical-specification.md#map-step)，這些步驟會掃描預先定義的表格清單，而非所有表格。
 
-如需重大資料格式和結構變更，請建立自訂步驟。
+如需進行重大資料格式和結構變更，請建立自訂步驟。
 
 ### 建立自訂步驟
 
-使用相同的「GreatBlog」範例，假設擴充功能在Magento1中有一個表格，但重新設計後在Magento2中有兩個表格。
+使用相同的「GreatBlog」範例，假設擴充功能在Magento1中有一個表格，但重新設計為在Magento2中有兩個表格。
 
-在Magento1中，有一個 `greatblog_post` 表格：
+在Magento1中， `greatblog_post` 表格：
 
 ```text
 | Field     | Type     |
@@ -133,7 +133,7 @@ MAGENTO2 `greatblog_post` 表格現在看起來像這樣：
 | author_id | SMALLINT |
 ```
 
-若要將所有資料從舊表格結構移轉到新表格結構，您可以在 `config.xml` 檔案。 例如：
+若要將所有資料從舊表格結構移轉到新表格結構，您可在以下位置建立自訂步驟： `config.xml` 檔案。 例如：
 
 ```xml
 <steps mode="data">
@@ -153,23 +153,23 @@ MAGENTO2 `greatblog_post` 表格現在看起來像這樣：
 </steps>
 ```
 
-此工具會根據步驟在中的位置執行步驟 `config.xml` 檔案；從上到下。 在我們的範例中， `GreatBlog Step` 最後執行。
+此工具會根據步驟在 `config.xml` 檔案；從上到下。 在我們的範例中， `GreatBlog Step` 最後執行。
 
 步驟可包含四種類別：
 
 - 完整性檢查
 - 資料傳遞
-- 音量檢查
-- Delta傳遞
+- 磁碟區檢查
+- 差異傳遞
 
 >[!NOTE]
 >
 >請參閱 [設定](technical-specification.md#configuration)， [步驟內部](technical-specification.md#step-internals)， [階段](technical-specification.md#step-stages)、和 [執行模式](technical-specification.md#running-modes) 以取得詳細資訊。
 
 
-可以在這些類別中組合複雜的SQL查詢，以擷取和移轉資料。 此外，這些表格在下列位置中應被「忽略」： [地圖步驟](technical-specification.md#map-step) 因為它會掃描所有現有表格並嘗試移轉資料，除非資料位於 `<ignore>` 的標籤 `map.xml` 檔案。
+可以在這些類別中組合複雜的SQL查詢，以擷取和移轉資料。 此外，這些表格應在下列欄位中「忽略」 [地圖步驟](technical-specification.md#map-step) 因為它會掃描所有現有的表格，並嘗試移轉資料，除非資料位於 `<ignore>` 的標籤 `map.xml` 檔案。
 
-對於完整性檢查，請在 `config.xml` 檔案來驗證資料表結構是否如我們所預期。
+對於完整性檢查，請在 `config.xml` 以確認資料表結構如預期般運作。
 
 ```xml
 <config xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
@@ -355,7 +355,7 @@ class Volume extends \Migration\App\Step\AbstractVolume
 }
 ```
 
-若要新增差異移轉功能，請將新群組新增至 `deltalog.xml` 檔案。 在 `group`，指定必須檢查變更的資料表名稱：
+若要新增差異移轉功能，請將新群組新增至 `deltalog.xml` 檔案。 在 `group`，指定必須檢查變更之資料表的名稱：
 
 ```xml
 <groups>
@@ -366,7 +366,7 @@ class Volume extends \Migration\App\Step\AbstractVolume
 </groups>
 ```
 
-然後，建立 `Delta` 類別 `Vendor\Migration\Step\GreatBlog\Delta` 延伸功能 `Migration\App\Step\AbstractDelta`：
+然後，建立 `Delta` 類別 `Vendor\Migration\Step\GreatBlog\Delta` 延展性 `Migration\App\Step\AbstractDelta`：
 
 ```php
 class Delta extends \Migration\App\Step\AbstractDelta
@@ -406,10 +406,10 @@ class Delta extends \Migration\App\Step\AbstractDelta
 }
 ```
 
-在範例中提供的自訂步驟實作後，系統會從單一Magento1表格中取得資料，並使用進行處理 `Vendor\Migration\Step\GreatBlog\Data` 將資料分類並儲存在兩個Magento2表格中。 新記錄和變更記錄會在差異遷移時使用 `Vendor\Migration\Step\GreatBlog\Delta` 類別。
+在範例中提供的自訂步驟實作之後，系統會從單一Magento1表格中取得資料，並使用進行處理 `Vendor\Migration\Step\GreatBlog\Data` 類別並將資料儲存在兩個Magento2表格中。 新的和變更的記錄會在差異移轉時使用 `Vendor\Migration\Step\GreatBlog\Delta` 類別。
 
-## 禁止的擴充功能方法
+## 禁止的延伸方法
 
-由於 [!DNL Data Migration Tool] 和Magento2不斷演化，現有步驟和處理常式可能會有所變更。 我們強烈建議您不要覆寫此類步驟的行為 [地圖步驟](technical-specification.md#map-step)， [URL重寫步驟](technical-specification.md#url-rewrite-step)、和處理程式。
+由於 [!DNL Data Migration Tool] 而Magento2在持續進化，現有步驟和處理常式可能會有所變更。 我們強烈建議您不要覆寫此類步驟的行為 [地圖步驟](technical-specification.md#map-step)， [URL重寫步驟](technical-specification.md#url-rewrite-step)、和處理程式。
 
 某些步驟不支援對應，且無法在未變更程式碼的情況下變更。 您可以撰寫在移轉結束時變更資料的額外步驟，或建立 [GitHub問題](https://github.com/magento/data-migration-tool/issues) 並詢問現有步驟上的新擴充點。

@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Recommendations]'
-description: 瞭解 [!UICONTROL Recommendations] 索引標籤中的 [!DNL Site-Wide Analysis Tool]，以及何時使用、其好處和最佳實務。
+description: 瞭解 [!UICONTROL Recommendations] 索引標籤中的 [!DNL Site-Wide Analysis Tool]，瞭解何時使用、其好處及最佳實務。
 exl-id: 17ff57e2-5b51-4afb-b505-09e46f490509
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Recommendations]
 
-此 [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] 頁面會根據最佳做法列出建議，以解決在您的網站上偵測到的問題。 建議會依優先順序採購單排序至P4，其中PO是關鍵的，而P4是低的。 調查結果包括說明、建議、網站影響、根本原因、案例/先決條件、預期結果，以及使用的工具。
+此 [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Recommendations] 頁面會根據最佳做法列出建議，以解決在您的網站上偵測到的問題。 建議會依優先順序採購單排序至P4，其中PO是關鍵的，而P4是低的。 調查結果包括說明、建議、網站影響、根本原因、案例/先決條件、預期結果和使用的工具。
 
 ## 使用時機
 

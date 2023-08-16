@@ -1,6 +1,6 @@
 ---
 title: 「開始使用：選取帳戶和時間範圍」
-description: 瞭解如何開始使用 [!DNL Observation for Adobe Commerce] Nerdlet，只要選取帳戶和時間範圍即可。
+description: 瞭解如何開始使用 [!DNL Observation for Adobe Commerce] Nerdlet，只要選取帳戶和時間範圍。
 exl-id: f2364fa4-ef83-42f2-992f-e37ff1ac96a1
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -18,12 +18,12 @@ ht-degree: 0%
 
    ![選取帳戶](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
 
-1. 您可以貼上project_id，然後鍵入 [!DNL New Relic] 帳號或帳戶名稱，或瀏覽帳戶清單。
+1. 您可以貼上project_id，然後輸入 [!DNL New Relic] 帳號或帳戶名稱，或瀏覽帳戶清單。
 
    ![瀏覽帳戶清單](../../assets/tools/observation-for-adobe-commerce/start-using-2.jpg)
 
-1. 按一下 **淡藍色** （朝向nerdlet視窗的右上方）下拉式選單，內含時鐘圖示。
+1. 按一下 **淺藍色** （朝向nerdlet視窗的右上方）下拉式功能表與時鐘圖示。
 
    ![按一下下拉式功能表上的](../../assets/tools/observation-for-adobe-commerce/start-using-3.jpg)
 
-1. 您應該設定票證日期時間之前的時間，以檢視是否有任何先前的事件/資料。 您可以使用左側的預設時間範圍，或透過選取以下專案設定自訂時間範圍 **設定自訂**.
+1. 您應該設定票證日期時間之前的時間，以檢視是否有任何先前的事件/資料。 您可以使用左側的預設時間範圍，或透過選取以設定自訂時間範圍 **設定自訂**.

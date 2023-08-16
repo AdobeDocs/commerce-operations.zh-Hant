@@ -25,7 +25,7 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 * `--enabled` 列出所有已啟用的模組。
 * `--disabled` 列出所有已停用的模組。
-* `<module-list>` 是以空格分隔的模組清單，用於檢查狀態。 如果任何模組名稱包含特殊字元，請以單引號或雙引號將名稱括住。
+* `<module-list>` 是以空格分隔的模組清單，用於檢查狀態。 如果任何模組名稱包含特殊字元，請以單引號或雙引號括住名稱。
 
 ## 啟用、停用模組
 
@@ -41,14 +41,14 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 位置
 
-* `<module-list>` 是以空格分隔的模組清單，可啟用或停用。 如果任何模組名稱包含特殊字元，請以單引號或雙引號將名稱括住。
+* `<module-list>` 是要啟用或停用的模組清單（以空格分隔）。 如果任何模組名稱包含特殊字元，請以單引號或雙引號括住名稱。
 * `--all` 以同時啟用或停用所有模組。
 * `-f` 或 `--force` 以強制啟用或停用模組，無論是否有相依性。 使用此選項之前，請參閱 [關於啟用和停用模組](#about-enabling-and-disabling-modules).
 * `-c` 或 `--clear-static-content` 清除 [產生的靜態檢視檔案](../../configuration/cli/static-view-file-deployment.md).
 
-   如果存在多個同名檔案，但未全部清除，則無法清除靜態檢視檔案可能會導致問題。
+  如果存在多個同名檔案，但未全部清除，則無法清除靜態檢視檔案可能會導致問題。
 
-   換言之，由於 [靜態檔案遞補](../../configuration/cli/static-view-file-deployment.md) 規則（如果未清除靜態檔案，且有多個名為的檔案） `logo.svg` 不同，後援可能會導致顯示錯誤的檔案。
+  換言之，由於 [靜態檔案遞補](../../configuration/cli/static-view-file-deployment.md) 規則（如果未清除靜態檔案，且有多個名為的檔案） `logo.svg` 若兩者不同，遞補內容可能會導致顯示錯誤的檔案。
 
 例如，若要停用 `Magento_Weee` 模組，輸入：
 
@@ -74,9 +74,9 @@ bin/magento cache:clean
 
 ## 關於啟用和停用模組
 
-Adobe Commerce和Magento Open Source可讓您啟用或停用目前可用的模組；換言之，可啟用或停用任何Adobe提供的模組或任何目前可用的協力廠商模組。
+Adobe Commerce和Magento Open Source可讓您啟用或停用目前可用的模組；換言之，任何Adobe提供的模組或任何目前可用的協力廠商模組。
 
-某些模組具有對其他模組的相依性，在這種情況下，您可能無法啟用或停用模組，因為它有對其他模組的相依性。
+某些模組具有對其他模組的相依性，在這種情況下，您可能無法啟用或停用模組，因為它具有對其他模組的相依性。
 
 此外，可能會 *衝突* 無法同時啟用的模組。
 
@@ -88,7 +88,7 @@ Adobe Commerce和Magento Open Source可讓您啟用或停用目前可用的模�
 
 * 模組A與模組B衝突。您可以停用模組A和模組B，也可以停用任一模組，但您可以 *無法* 同時啟用模組A和模組B。
 
-* 相依性在 `require` Adobe Commerce和Magento Open Source中的欄位 `composer.json` 每個模組的檔案。 衝突宣告於 `conflict` 模組中的欄位 `composer.json` 檔案。 我們使用該資訊來建立相依性圖表： `A->B` 表示模組A相依於模組B。
+* 相依性在 `require` Adobe Commerce和Magento Open Source中的欄位 `composer.json` 每個模組的檔案。 衝突宣告於 `conflict` 模組中的欄位 `composer.json` 檔案。 我們使用這些資訊來建立相依性圖表： `A->B` 表示模組A相依於模組B。
 
 * A *相依性鏈結* 是從模組到另一個模組的路徑。 例如，如果模組A相依於模組B，而模組B相依於模組C，則相依性鏈為 `A->B->C`.
 
@@ -96,9 +96,9 @@ Adobe Commerce和Magento Open Source可讓您啟用或停用目前可用的模�
 
 >[!NOTE]
 >
->模組A有可能是 `composer.json` 會宣告與模組B的衝突，但不會反過來。
+>模組A可能是 `composer.json` 會宣告與模組B的衝突，但不會反過來。
 
-*僅限命令列：* 若要強制啟用或停用模組（無論其相依性為何），請使用選填的 `--force` 引數。
+*僅限命令列：* 若要強制啟用或停用模組（不論其相依性為何），請使用選填欄位 `--force` 引數。
 
 >[!NOTE]
 >

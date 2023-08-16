@@ -1,16 +1,16 @@
 ---
-title: 自動設定主資料庫
+title: 自動設定主要資料庫
 description: 請參閱自動設定分割資料庫解決方案的指南。
 recommendations: noCatalog
 exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 自動設定主資料庫
+# 自動設定主要資料庫
 
 {{ee-only}}
 
@@ -18,17 +18,17 @@ ht-degree: 0%
 
 本主題說明如何透過下列方式開始使用分割資料庫解決方案：
 
-1. 使用單一master資料庫安裝Adobe Commerce （已命名） `magento`)
-1. 建立兩個額外的主資料庫以用於簽出和OMS （已命名） `magento_quote` 和 `magento_sales`)
-1. 設定Adobe Commerce以使用結帳與銷售資料庫
+1. 使用單一Master資料庫安裝Adobe Commerce （已命名） `magento`)
+1. 為簽出和OMS建立另外兩個主資料庫（已命名） `magento_quote` 和 `magento_sales`)
+1. 設定Adobe Commerce使用結帳與銷售資料庫
 
 >[!INFO]
 >
->本指南假設所有三個資料庫與Commerce應用程式位於相同主機上，且已將它們命名為 `magento`， `magento_quote`、和 `magento_sales`. 不過，您可以自行選擇資料庫的所在位置及其命名名稱。 我們希望我們的範例能讓指示更容易遵循。
+>本指南假設所有三個資料庫與Commerce應用程式位於相同的主機上，且已將它們命名 `magento`， `magento_quote`、和 `magento_sales`. 不過，您可以自行選擇要在哪裡尋找資料庫以及命名資料庫的內容。 我們希望我們的範例能讓您更容易按照指示操作。
 
 ## 安裝Adobe Commerce軟體
 
-您可以在安裝Adobe Commerce軟體後隨時啟用分割資料庫；換言之，您可以將分割資料庫新增至已具有結帳和訂購資料的Adobe Commerce系統。 使用Adobe Commerce README中的指示或 [安裝指南](../../installation/overview.md) 使用單一master資料庫安裝Adobe Commerce軟體。
+安裝Adobe Commerce軟體後，您可以隨時啟用分割資料庫；換言之，您可以將分割資料庫新增至已具有結帳與訂購資料的Adobe Commerce系統。 使用Adobe Commerce README中的指示或 [安裝指南](../../installation/overview.md) 使用單一master資料庫安裝Adobe Commerce軟體。
 
 ## 設定其他主要資料庫
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 1. 輸入 `exit` 結束命令提示字元。
 
-1. 逐一驗證資料庫：
+1. 驗證資料庫，一次一個：
 
    簽出資料庫：
 
@@ -86,9 +86,9 @@ ht-degree: 0%
 
    如果顯示MySQL監督器，表示您已正確建立資料庫。 如果顯示錯誤，請重複上述命令。
 
-## 設定Commerce以使用主資料庫
+## 設定Commerce以使用主要資料庫
 
-在設定總共三個主要資料庫之後，請使用命令列來設定Commerce以使用它們。 （此指令會設定資料庫連線，並將表格分散到主要資料庫中。）
+設定總共三個主要資料庫後，請使用命令列設定Commerce使用它們。 （此指令會設定資料庫連線，並將表格分散到主要資料庫之間。）
 
 ### 首要步驟
 

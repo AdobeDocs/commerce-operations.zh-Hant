@@ -17,13 +17,13 @@ ht-degree: 0%
 
 - 您正在使用開發機器（筆記型電腦、虛擬機器器等）
 
-   在託管環境中部署多個網站可能需要執行其他工作；如需詳細資訊，請洽詢您的託管提供者。
+  在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
 
-   在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的任務後，請參閱 [設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 在 _雲端基礎結構上的Commerce指南_.
+  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的任務後，請參閱 [設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 在 _雲端基礎結構上的Commerce指南_.
 
-- 每個網站使用一個虛擬主機；虛擬主機設定檔案為 `/etc/httpd/httpd.conf`
+- 每個網站使用一個虛擬主機；虛擬主機設定檔為 `/etc/httpd/httpd.conf`
 
-   不同作業系統上的不同Apache版本會以不同方式設定虛擬主機。 請參閱 [Apache檔案](https://httpd.apache.org/docs/2.4/vhosts) 或網路管理員（如果您不確定如何設定虛擬主機）。
+  不同作業系統上的不同Apache版本會以不同方式設定虛擬主機。 請參閱 [Apache檔案](https://httpd.apache.org/docs/2.4/vhosts) 或網路管理員（如果您不確定如何設定虛擬主機）。
 
 - Commerce軟體安裝在 `/var/www/html/magento2`
 - 您有預設以外的兩個網站：
@@ -40,24 +40,24 @@ ht-degree: 0%
 
 ## 步驟1：在「管理員」中建立網站、商店和商店檢視
 
-另請參閱 [在「管理員」中設定多個網站、商店和商店檢視](ms-admin.md).
+另請參閱 [在管理員中設定多個網站、商店和商店檢視](ms-admin.md).
 
 ## 步驟2：建立Apache虛擬主機
 
-本節討論如何設定下列專案的值： `MAGE_RUN_TYPE` 和 `MAGE_RUN_CODE` 使用Apache伺服器變數 `SetEnvIf` 在虛擬主機中。
+本節探討如何設定值 `MAGE_RUN_TYPE` 和 `MAGE_RUN_CODE` 使用Apache伺服器變數 `SetEnvIf` 在虛擬主機中。
 
-如需有關的詳細資訊 `SetEnvIf`，請參閱：
+有關詳細資訊 `SetEnvIf`，請參閱：
 
 - [Apache 2.2](https://httpd.apache.org/docs/2.2/mod/mod_setenvif.html)
 - [Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html)
 
-**建立Apache虛擬主機的方式**：
+**建立Apache虛擬主機**：
 
 1. 作為使用者，具有 `root` 許可權，在文字編輯器中開啟虛擬主機組態檔。
 
    例如，開啟 `/etc/httpd/conf/httpd.conf`
 
-1. 找到開頭為的區段 `<VirtualHost *:80>`.
+1. 找到區段，開頭為 `<VirtualHost *:80>`.
 1. 在任何現有虛擬主機之後建立下列虛擬主機：
 
    ```conf
@@ -89,10 +89,10 @@ ht-degree: 0%
 
 ## 驗證您的網站
 
-除非您為商店的URL設定了DNS，否則您必須將靜態路由新增到中的主機。 `hosts` 檔案：
+除非您已為商店的URL設定DNS，否則您必須將靜態路由新增至中的主機。 `hosts` 檔案：
 
-1. 找到您的作業系統 `hosts` 檔案。
-1. 以下列格式新增靜態路由：
+1. 找出您的作業系統 `hosts` 檔案。
+1. 以格式新增靜態路由：
 
    ```conf
    <ip-address> french.mysite.mg
@@ -109,11 +109,10 @@ ht-degree: 0%
 
 >[!INFO]
 >
->- 在託管環境中部署多個網站可能需要執行其他工作；如需詳細資訊，請洽詢您的託管提供者。
+>- 在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
 >- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱 [設定多個Cloud網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 在 _雲端基礎結構上的Commerce指南_.
 
-
-### 疑難排除
+### 疑難排解
 
 - 如果您的法文和德文網站傳回404s，但您的管理員載入，請確定您已完成 [步驟6：將商店程式碼新增至基底URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - 如果所有URL都傳回404s，請確定您已重新啟動網頁伺服器。

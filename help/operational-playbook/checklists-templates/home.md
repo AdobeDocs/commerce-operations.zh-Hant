@@ -1,6 +1,6 @@
 ---
 title: Commerce檢查清單
-description: 尋找有用的檢查清單以協助組織您的電子商務專案。
+description: 尋找有用的核取清單，以協助組織您的電子商務專案。
 exl-id: 4b5e5bca-7b5b-46e7-b3eb-ef6289d238ed
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -30,5 +30,5 @@ ht-degree: 0%
 - [Commerce策略檔案](../../assets/playbooks/templates/commerce-strategy-document.pptx)
 - [電子商務營運整備](../../assets/playbooks/templates/ecommerce-operational-readiness.pptx)
 - [電子商務平台功能](../../assets/playbooks/templates/ecommerce-platform-features.pptx)
-- [商戶自我網站評估](../../assets/playbooks/templates/merchant-self-site-assessment.pptx)
+- [商家自行網站評估](../../assets/playbooks/templates/merchant-self-site-assessment.pptx)
 - [使用案例](../../assets/playbooks/templates/use-case.pptx)

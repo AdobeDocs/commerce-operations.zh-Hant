@@ -1,6 +1,6 @@
 ---
 title: 移除或更新範例資料模組
-description: 請依照下列步驟管理Adobe Commerce和Magento Open Source範例資料模組。
+description: 請依照下列步驟管理Adobe Commerce並Magento Open Source範例資料模組。
 exl-id: d23f999f-18bf-449b-be23-bdf392dda539
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 本主題說明如何：
 
-* [移除範例資料模組](#remove-sample-data-modules) 從Adobe Commerce或Magento Open Source安裝 `composer.json`. 此選項會 *not* 從資料庫移除範例資料。
+* [移除範例資料模組](#remove-sample-data-modules) 從Adobe Commerce或Magento Open Source安裝 `composer.json`. 此選項會 *非* 從資料庫移除範例資料。
 
 * [準備更新範例資料](#prepare-to-update-sample-data) (例如，在更新Magento應用程式之前)。
 

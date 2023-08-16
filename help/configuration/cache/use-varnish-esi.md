@@ -1,12 +1,12 @@
 ---
 title: 清漆ESI區塊
 description: 瞭解Edge Side Include以及如何使用它們來內嵌網頁。
-badge: label="Contributed by Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
+badge: label="康斯坦丁G供稿。" type="Informative" url="https://github.com/goivvy" tooltip="康斯坦丁G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ Edge Side Include (ESI)是特殊指令，可用來將網頁包含在其他網頁
 </div>
 ```
 
-清漆從擷取內容 `http://domain.com/index.php/page_cache/block/esi/blocks` 並取代 `<esi>` 標籤此專案。
+清漆從擷取內容 `http://domain.com/index.php/page_cache/block/esi/blocks` 並取代 `<esi>` 標籤之前是否有宣告。
 
-## Commerce與Varnish ESI
+## Commerce and Varnish ESI
 
 Commerce架構會在符合下列條件時建立ESI標籤：
 
@@ -46,7 +46,7 @@ Commerce架構會在符合下列條件時建立ESI標籤：
 
 ## 限制
 
-目前Varnish不支援HTTPS上的ESI，所以會自動切換至HTTP。
+目前Varnish不支援HTTPS上的ESI，因此會自動切換至HTTP。
 
 `Magento\PageCache\Observer\ProcessLayoutRenderElement`:
 

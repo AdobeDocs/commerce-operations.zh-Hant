@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 設定Amazon訊息佇列
 
-自Commerce 2.4.3起，Amazon Message Queue (MQ)可取代雲端就緒，供內部部署訊息佇列例項使用。
+截至Commerce 2.4.3，Amazon訊息佇列(MQ)可作為內部部署訊息佇列例項的雲端就緒替代專案。
 
 若要在AWS上建立訊息佇列，請參閱 [設定Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) 在 _AWS檔案_.
 
@@ -37,7 +37,7 @@ AWS訊息佇列需要SSL/TLS連線。
 
 其中：
 
-- `host`—AMQP端點的URL；按一下AWS中的代理人名稱即可使用(移除「https://」和尾端連線埠號碼)
+- `host`—AMQP端點的URL；按一下AWS中的代理程式名稱即可使用(移除「https://」和結尾的連線埠號碼)
 - `user` — 建立AWS MQ Broker時輸入的使用者名稱值
 - `password` — 建立AWS MQ Broker時輸入的密碼值
 
@@ -45,7 +45,7 @@ AWS訊息佇列需要SSL/TLS連線。
 >
 >Amazon MQ僅支援TLS連線。 不支援對等驗證。
 
-編輯後 `env.php` 檔案，執行以下命令以完成設定：
+編輯後 `env.php` 檔案，執行以下命令以完成安裝：
 
 ```bash
 bin/magento setup:upgrade
@@ -53,9 +53,9 @@ bin/magento setup:upgrade
 
 ## Commerce如何使用AWS MQ服務
 
-此 `async.operations.all` 訊息佇列消費者使用AMQP連線。
+此 `async.operations.all` 訊息佇列取用者使用AMQP連線。
 
-此消費者會路由任何前置詞為的主題名稱 `async` 透過AWS MQ連線。
+此取用者路由任何前置詞為的主題名稱 `async` 透過AWS MQ連線。
 
 例如，在 `InventoryCatalog` 有：
 
@@ -73,7 +73,7 @@ async.V1.inventory.bulk-product-source-transfer.POST
 
 1. 登入 [!DNL RabbitMQ] AWS中的Web主控台，用於監視佇列。
 1. 在「管理員」中建立產品。
-1. 建立「庫存管理系統」來源。
+1. 建立「詳細目錄」來源。
 1. 啟用 **商店** >設定> **目錄** > **詳細目錄** >管理員大量作業>非同步執行。
 1. 前往 **目錄** >產品。 從格線中，選取上面建立的產品，然後按一下 **指定存貨來源**.
 1. 按一下 **儲存並關閉** 以完成程式。
@@ -86,5 +86,5 @@ async.V1.inventory.bulk-product-source-transfer.POST
    bin/magento queue:consumers:start async.operations.all
    ```
 
-您現在應該會在中看到已佇列訊息已處理 [!DNL RabbitMQ] 網頁主控台。
+您現在應該會在中看到已處理佇列的訊息 [!DNL RabbitMQ] 網頁主控台。
 在「管理員」中確認產品上的詳細目錄來源已變更。
