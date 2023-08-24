@@ -4,9 +4,9 @@ description: 瞭解Adobe Commerce專案規劃階段的實作最佳實務。
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ ht-degree: 0%
 
 - **資料庫設定**
    - [雲端部署的資料庫設定最佳實務&#x200B;。](database-on-cloud.md)
-   - [MySQL從屬連線組態&#x200B;](configure-mysql-slave-connection-on-cloud.md)
-   - [MySQL觸發程式使用狀況](mysql-triggers-usage.md)
+   - [MySQL組態&#x200B;](mysql-configuration.md)
 
 - **服務設定**
    - [設定Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
@@ -57,17 +56,17 @@ ht-degree: 0%
 
 下列主題說明設定Adobe Commerce目錄的效能最佳化最佳實務，包括類別數、產品有效SKU、產品變化、產品屬性和選項等建議的最大值。
 
-- [類別設定](category-limits.md)
-- [產品組態&#x200B;](product-sku-limits.md)
-- [產品變數設定](product-variations.md)
-- [產品選項設定](product-options.md)
-- [產品屬性設定&#x200B;](product-attributes-and-options.md)
-- [產品清單的分頁設定](product-listing-pagination.md)
+- [類別設定](catalog-management.md#category-limits)
+- [產品組態&#x200B;](catalog-management.md#product-sku-limits)
+- [產品變數設定](catalog-management.md#product-variations)
+- [產品選項設定](catalog-management.md#product-options)
+- [產品屬性設定&#x200B;](catalog-management.md#product-attributes)
+- [產品清單的分頁設定](catalog-management.md#product-listing-pagination)
 
 ## **銷售與行銷**
 
-- [有關產品購物車限制的最佳實務](product-cart.md)
-- [設定促銷活動的最佳作法](product-cart-promotions.md)
+- [有關產品購物車限制的最佳實務](catalog-management.md#cart-limits)
+- [設定促銷活動的最佳作法](catalog-management.md#promotions)
 
 ## **專案範圍**
 

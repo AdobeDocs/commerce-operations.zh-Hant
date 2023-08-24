@@ -4,9 +4,9 @@ description: 瞭解如何在雲端基礎結構上部署Adobe Commerce時，設�
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Adobe建議您一律在雲端基礎結構專案中為您的Adobe Commerce設定E
 - 觸發器會解譯為程式碼，而MySQL不會預先編譯它們。 掛接至查詢的交易空間時，會為使用表格執行的每個查詢新增剖析器和解譯器的額外負荷。
 - 觸發程式與原始查詢共用相同的交易空間，當這些查詢競爭表格上的鎖定時，觸發程式會獨立競爭另一個表格上的鎖定。
 
-若要瞭解使用自訂觸發器的替代方案，請參閱 [有效使用MySQL觸發程式](mysql-triggers-usage.md) 在我們的支援知識庫中。
+若要瞭解使用自訂觸發器的替代方案，請參閱 [MySQL觸發程式](mysql-configuration.md#triggers).
 
 ## 升級 [!DNL ECE-Tools] 至2002.0.21版或更新版本 {#ece-tools-version}
 

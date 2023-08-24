@@ -1,7 +1,7 @@
 ---
-source-git-commit: a5d7167375328bebc6c9287731ff7bb9f74037a1
+source-git-commit: f67737451f12c17f3253582b44c2c504cbf98fb2
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '126'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 1%
 ## 實施最佳實務的新增功能
 
 此頁面包含我們認為您想要檢視的最近變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2023年8月23日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale.html">新主題</a> 為Adobe Commerce專案實作集中修補策略簡介。</p>
+</td>
+      <td>最佳實務</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/03cb50be0cb18b6079c5c69aafc74c6099610fb0">03cb50</a> （認可）</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 2023年3月9日
 
@@ -27,26 +47,6 @@ ht-degree: 1%
 </td>
       <td>最佳實務</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9d46893a25569b9cb00b45ab285758b3b74b410">f9d468</a> （認可）</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 2023年2月10日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>來源</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新執行「 」的最低需求說明 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html">資料庫升級</a> 並新增有關更新MariaDB的其他相關資源。</p>
-</td>
-      <td>最佳實務</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0efeef6f3d5276f42e4a67fe55f6108a399f45fb">0efeef</a> （認可）</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
