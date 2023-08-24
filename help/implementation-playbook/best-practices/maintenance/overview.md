@@ -3,9 +3,9 @@ title: 實作維護階段
 description: 瞭解Adobe Commerce專案維護階段的實作最佳實務。
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: d0cb3b81ee50ebd7cbf65a4dddbf5c58acf04f0d
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -73,5 +73,6 @@ ht-degree: 0%
 
 ### 升級
 
+- [大規模修補](patching-at-scale.md)
 - [將服務和元件更新至最新版本&#x200B;。](update-services.md)
 - [Adobe Commerce的升級檢查清單&#x200B;](upgrade-checklist.md)

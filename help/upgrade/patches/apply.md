@@ -2,9 +2,9 @@
 title: 套用修補程式
 description: 瞭解將修補程式套用至Adobe Commerce或Magento Open Source專案的方法。
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 454f586737292341b3e6dd9a57cc92b3472c4b31
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 0%
 - [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [命令列](../patches/apply.md#command-line)
 - [作曲者](../patches/apply.md#composer)
+
+
+>[!TIP]
+>
+>另請參閱 [最佳實務](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) 以取得有關企業規模Adobe Commerce集中修補的資訊。
 
 ## 作曲者
 
