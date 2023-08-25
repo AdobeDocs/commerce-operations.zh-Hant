@@ -2,9 +2,9 @@
 user-guide-title: 實施行動手冊
 user-guide-description: 了解規劃及實施成功 Adobe Commerce 網站的策略。
 mini-toc-levels: 3
-source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
+source-git-commit: 7ab0342e3897e2804f5a43876197308c69ac1bb7
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '250'
 ht-degree: 11%
 
 ---
@@ -97,7 +97,6 @@ ht-degree: 11%
       - [修改資料庫表格](best-practices/development/modifying-core-and-third-party-tables.md)
    - Launch {#launch}
       - [概觀](best-practices/launch/overview.md)
-      - [Adobe安全性通知服務](best-practices/launch/security-notification-service.md)
       - [設定robots.txt檔案](best-practices/launch/robots-txt.md)
       - [預防並回應安全性事件](best-practices/launch/prevent-respond-security-incident.md)
    - 維護 {#maintenance}
