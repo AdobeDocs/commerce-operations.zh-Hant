@@ -3,12 +3,14 @@ title: 實作開發階段
 description: 瞭解Adobe Commerce專案開發階段的實作最佳實務。
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+role: Developer
+source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 2%
 
 ---
+
 
 # 開發階段
 
@@ -22,50 +24,54 @@ ht-degree: 0%
 - 衝刺檢閱
 - 客戶簽署
 
+>[!TIP]
+>
+>另請參閱 [一般最佳實務](general.md) 以取得有關開發程式整體管理的高階建議。
+
 以下章節包含開發階段的最佳實務資訊。
 
-## 應用程式開發
+## 程式碼管理
 
-### 程式碼檢閱、合併和測試
+| 最佳實務 | 說明 |
+|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| [程式碼檢閱](code-review.md) | 建議的驗證程式，以確保實作的功能符合需求 |
+| [Composer與Git](code-management.md) | 決定如何發佈自訂程式碼，並考量發行管理、程式碼複雜性和相依性管理 |
+| [分支策略](git-branching.md) | 在Git存放庫中管理原始計畫碼 |
+| [GRA範例](../../architecture/global-reference/examples.md) | 瞭解組織網路的常見方法 [全球參考架構](../../architecture/global-reference/overview.md) 程式碼基底 |
 
-<!--Assets not yet integrated
-- Guidelines and standards
-  - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
-  - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
-  - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
--->
-- [最佳化CSS和JS檔案](optimize-css-js-files.md)
-- [私人內容區塊的最佳實務](private-content-block-configuration.md)
-- [擴充功能開發人員的最佳作法](https://developer.adobe.com/commerce/php/best-practices/)
+## 資料庫
 
-<!--Assets not yet integrated
+| 最佳實務 | 說明 |
+|----------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [表格修改](modifying-core-and-third-party-tables.md) | 決定如何以及何時修改Adobe Commerce和協力廠商資料庫表格 |
 
-  - [Best practices for theme development](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=MAGPS&title=Best+Practices+for+Theme+Development)
-  - [Module basis](https://wiki.corp.adobe.com/x/kz4ykw) (wiki) — Develop custom modules
-  - [Exception Handling](https://wiki.corp.adobe.com/x/nz4ykw)
-  - [Custom code copyrights](https://wiki.corp.adobe.com/x/lj4ykw)
-- Source control and package management - wiki articles
-  - [Code management - Git vs. Composer](https://wiki.corp.adobe.com/x/pz4ykw)
-  - [Git branching strategy](https://wiki.corp.adobe.com/display/MAGPS/Git+Branching+Strategy)
-  - [Composer development](https://wiki.corp.adobe.com/x/mD4ykw)
-  - [Composer patching](https://wiki.corp.adobe.com/x/mj4ykw)
-  - [Composer project structure](https://wiki.corp.adobe.com/x/mT4ykw)
-  - [Composer tips and tricks](https://wiki.corp.adobe.com/x/lz4ykw)
--->
+## 檔案最佳化
+
+| 最佳實務 | 說明 |
+|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| [目錄影像調整大小](catalog-image-resizing.md) | 在商店投入生產之前提供影像調整大小的指引，以確保最佳效能 |
+| [CSS與JS](optimize-css-js-files.md) | 從管理員或命令列合併及縮小階層式樣式表(CSS)和JavaScript (JS)檔案 |
+| [影像](image-optimization.md) | 最佳化影像並使用Fastly最佳化回應時間 |
+
+## 前端開發
+
+| 最佳實務 | 說明 |
+|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| [主題開發](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | 說明開發模式，以協助確保您的主題、未來版本的Adobe Commerce和自訂擴充功能之間的相容性 |
+
+## PHP開發
+
+| 最佳實務 | 說明 |
+|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| [例外狀況處理](exception-handling.md) | 說明記錄例外狀況的建議方法 |
+| [擴充功能](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | 說明開發模式，以協助確保擴充功能、未來Adobe Commerce版本和其他自訂擴充功能之間的相容性 |
+| [私人內容區塊](private-content-block-configuration.md) | 設定私人內容區塊以最佳化店面效能 |
 
 ## 平台和服務
 
-- [使用Fastly進行影像最佳化](image-optimization.md)
-
-### 本機和中繼環境設定
-
-- [雲端基礎結構上的開發工作流程](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
-
-## 程式碼、合併、測試
-
-- [建置和部署的最佳實務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
-- [靜態內容部署 — 雲端](static-content-deployment.md)
-- [最佳化CSS和JS檔案](optimize-css-js-files.md)
-- [最佳化影像以建立回應速度較快的網站](image-optimization.md)
-- [雲端基礎結構上Adobe Commerce的疑難排解最佳做法](troubleshooting.md)
-- [瞭解何時以及如何修改資料庫表格](modifying-core-and-third-party-tables.md)
+| 最佳實務 | 說明 |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| [建置和部署](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | 說明在雲端基礎結構專案上建置和部署Adobe Commerce階段的最佳做法 |
+| 偵錯 | 系統地有效偵錯Adobe Commerce架構 |
+| [靜態內容部署](static-content-deployment.md) | 避免靜態內容未出現在店面的問題 |
+| [疑難排解](troubleshooting.md) | 疑難排解常見的Adobe Commerce實作問題 |

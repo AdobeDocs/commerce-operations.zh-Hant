@@ -2,10 +2,10 @@
 user-guide-title: 實施行動手冊
 user-guide-description: 了解規劃及實施成功 Adobe Commerce 網站的策略。
 mini-toc-levels: 3
-source-git-commit: 42d027a3aedb8d395097d872a97998e76e547966
+source-git-commit: d33d1e24c38984d0abf0c7f8f5ad2eb804ff621d
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '278'
+ht-degree: 10%
 
 ---
 
@@ -36,7 +36,13 @@ ht-degree: 11%
    - [整合策略](architecture/integration-strategy.md)
    - [擴充性策略](architecture/extensibility-strategy.md)
    - [整合選項](architecture/integration-options.md)
-   - [全球參考架構](architecture/global-reference.md)
+   - 全球參考架構 {#global-reference-architecture}
+      - [概觀](architecture/global-reference/overview.md)
+      - [範例](architecture/global-reference/examples.md)
+      - Composer開發 {#composer}
+         - [概觀](architecture/global-reference/composer/overview.md)
+         - [專案結構](architecture/global-reference/composer/project-structure.md)
+         - [提示與秘訣](architecture/global-reference/composer/tips-and-tricks.md)
    - Headless商務 {#headless}
       - [優點](architecture/headless/benefits.md)
       - [Headless歷程](architecture/headless/journey-to-headless.md)
@@ -89,6 +95,13 @@ ht-degree: 11%
       - [付款儲存處理](best-practices/planning/payment-processing-storage.md)
    - 開發 {#development}
       - [概觀](best-practices/development/overview.md)
+      - [一般最佳實務](best-practices/development/general.md)
+      - [程式碼管理](best-practices/development/code-management.md)
+      - [程式碼檢閱](best-practices/development/code-review.md)
+      - [偵錯](best-practices/development/debugging.md)
+      - [例外狀況處理](best-practices/development/exception-handling.md)
+      - [Git分支](best-practices/development/git-branching.md)
+      - [目錄影像調整大小](best-practices/development/catalog-image-resizing.md)
       - [影像最佳化](best-practices/development/image-optimization.md)
       - [疑難排解](best-practices/development/troubleshooting.md)
       - [最佳化CSS和JS檔案](best-practices/development/optimize-css-js-files.md)
