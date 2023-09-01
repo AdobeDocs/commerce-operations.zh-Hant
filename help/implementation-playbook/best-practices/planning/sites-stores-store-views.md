@@ -4,20 +4,16 @@ description: 瞭解設定網站、商店和商店檢視的最佳實務，以最�
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
 # 設定網站、商店和商店檢視的最佳實務
 
-為獲得最佳網站效能，請在雲端基礎結構專案上為Adobe Commerce設定最多50個網站、50個商店和50個商店檢視。
-
->[!NOTE]
->
->針對雲端基礎結構上的Adobe Commerce，最佳實務尤其適用於生產環境（並可能適用於專業架構上的測試，受資源限制），其擁有的資源會多於整合和開發環境。 對於整合（Pro和Starter）和測試環境(Starter)，將商店檢視次數減少到5或10次以下（取決於技術審查）。
+針對雲端基礎結構上的Adobe Commerce，最佳實務尤其適用於生產環境（並可能適用於專業架構上的測試，受資源限制），其擁有的資源會多於整合和開發環境。
 
 ## 受影響的產品和版本
 
