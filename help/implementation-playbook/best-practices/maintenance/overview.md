@@ -3,10 +3,10 @@ title: 實作維護階段
 description: 瞭解Adobe Commerce專案維護階段的實作最佳實務。
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: d0cb3b81ee50ebd7cbf65a4dddbf5c58acf04f0d
+source-git-commit: aad06c1c2def87a319426860b47b8e5ff5e96780
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 0%
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
@@ -14,65 +14,71 @@ ht-degree: 0%
 
 維護階段包含下列活動：
 
-- 網站監視
+- 錯誤修正
 - 目錄管理
-- 索引
 - 設定
 - 功能增強功能
-- 錯誤修正
+- 索引
 - Managed Services
+- 網站監視
 - 升級
 
 以下小節包含維護階段的最佳實務資訊。
 
-## 網站監視
+## 錯誤修正
 
-- [稽核前端效能](frontend-performance.md)
-- [準備、設定、維護](https://business.adobe.com/blog/basics/ready-set-maintain)
-- [使用SWAT工具確保Adobe Commerce的安全性和可操作性](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - CTAG投影片
-- [使用New Relic和健康情況通知來監視部署在雲端基礎結構上的Adobe Commerce網站的效能、磁碟空間和記錄](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
-
-## 資料庫管理
-
-- [解決資料庫效能問題&#x200B;。](resolve-database-performance-issues.md)
-- [MariaDB的Adobe Commerce 2.3.5升級先決條件&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md)
+| 最佳實務 | 說明 |
+|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| [[!DNL Quality Patches Tool] 使用狀況](../../../tools/quality-patches-tool/usage.md) | 套用、還原及檢視所有Adobe Commerce修補程式的一般資訊。 |
 
 ## 目錄管理
 
-<!-- Asset not yet integrated
-- [Catalog Image Resizing](https://wiki.corp.adobe.com/x/oj4ykw) (wiki)
--->
-- [產品目錄管理](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL)
-
-## 索引
-
-<!-- Asset not yet integrated
-- [Reindexing - the safe way](https://wiki.corp.adobe.com/x/oj4ykw)(wiki)
--->
-- [如何重新索引](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
-- [索引器的設定最佳實&#x200B;務](indexer-configuration.md)
-- [訂單處理的設定最佳實務](order-processing-configuration.md)
-<!-- Asset not yet integrated from CTAG deck:
-- Plan upsizing for planned traffic increases during promotions or holidays -->
+| 最佳實務 | 說明 |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [產品目錄管理](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL) | 商務和咖啡錄製，說明管理產品目錄的策略。 |
 
 ## 設定
 
-- [正在排程生產網站上的管理員更新](scheduling-admin-updates-in-production.md)
+| 最佳實務 | 說明 |
+|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| [正在排程生產網站上的管理員更新](scheduling-admin-updates-in-production.md) | 管理重要的Adobe Commerce更新，以防止效能緩慢和中斷。 |
 
-<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
+## 資料庫管理
 
-## 錯誤修正
-
-- [品質修補程式工具使用情形](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+| 最佳實務 | 說明 |
+|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| [解決資料庫效能問題&#x200B;。](resolve-database-performance-issues.md) | 修正部署在雲端基礎結構上的Adobe Commerce網站上導致效能緩慢的資料庫問題。 |
+| [MariaDB的Adobe Commerce 2.3.5升級先決條件&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md) | 準備您的MariaDB資料庫以進行升級。 |
 
 ## 功能增強功能
 
-- [個人化](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL)
-- [電子商務趨勢](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL)
-- [AI自動化](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL)
+| 最佳實務 | 說明 |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| [個人化](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | 描述個人化策略的商務和咖啡錄製。 |
+| [電子商務趨勢](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | 描述電子商務趨勢的商務和咖啡錄製。 |
+| [AI自動化](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL) | 商務和咖啡錄製，說明人工智慧和自動化帶來的個人化可能性。 |
+
+## 索引
+
+| 最佳實務 | 說明 |
+|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| [如何重新索引](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | 使用cron作業或CLI工具來執行重新索引。 |
+| [設定索引子&#x200B;](indexer-configuration.md) | 遵循索引器設定的最佳實務，最佳化網站效能。 |
+| [訂單處理](order-processing-configuration.md) | 改善結帳與訂單處理效能。 |
+
+## 網站監視
+
+| 最佳實務 | 說明 |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| [稽核前端效能](frontend-performance.md) | 使用網站效能工具，識別並解決對網站效能產生負面影響的問題。 |
+| [準備、設定、維護](https://business.adobe.com/blog/basics/ready-set-maintain) | 維護您的Adobe Commerce網站以最大化業務價值和運作時間的秘訣。 |
+| [使用 [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | 在一個地方檢視您的Adobe Commerce網站的重要深入分析。 |
+| [監視效能、磁碟空間和記錄](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | 使用New Relic在雲端基礎結構網站上監視有關您Adobe Commerce的關鍵效能深入分析。 |
 
 ### 升級
 
-- [大規模修補](patching-at-scale.md)
-- [將服務和元件更新至最新版本&#x200B;。](update-services.md)
-- [Adobe Commerce的升級檢查清單&#x200B;](upgrade-checklist.md)
+| 最佳實務 | 說明 |
+|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| [大規模修補](patching-at-scale.md) | 瞭解Adobe Commerce的集中修補如何協助您管理企業專案。 |
+| [將服務和元件更新至最新版本&#x200B;。](update-services.md) | 讓您的雲端基礎結構技術棧疊上的Adobe Commerce保持更新。 |
+| [Adobe Commerce的升級檢查清單&#x200B;](upgrade-checklist.md) | 建立並使用升級檢查清單來規劃Adobe Commerce升級策略。 |
