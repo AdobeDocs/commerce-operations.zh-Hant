@@ -2,9 +2,9 @@
 title: 升級實作
 description: 瞭解Adobe Commerce專案升級實作的不同階段。
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -84,4 +84,4 @@ UAT是升級的最後階段之一，需要檢閱及驗證網站。 您也必須�
 
 網站啟動後，請務必檢查您的分析資料、Google Search Console和其他資源，確保沒有未預期的問題，且一切如預期般運作。
 
-透過精心設計的監控工具來監控效能，永遠是很好的做法。 監控網站效能的工具和方式有很多種，因此請務必挑選適合您組織的工具。 我們建議使用我們雲端基礎結構管理系統的Adobe Commerce客戶充分利用 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) 以監控網站效能。
+透過精心設計的監控工具來監控效能，永遠是很好的做法。 監控網站效能的工具和方式有很多種，因此請務必挑選適合您組織的工具。 我們建議使用我們雲端基礎結構管理系統的Adobe Commerce客戶充分利用 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) 以監控網站效能。

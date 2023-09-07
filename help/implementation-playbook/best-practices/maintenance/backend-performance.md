@@ -4,9 +4,9 @@ description: 瞭解如何最佳化Adobe Commerce網站的後端效能。
 badge: label="貢獻者： objectsource" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 2416357d8cacb5627fd24f92b16c2d9839f91082
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ GTmetrix是一種可用於壓力測試的工具。 設定GTmetrix來復寫並乘
 
 ### 識別並解決效能問題
 
-使用New Relic和Adobe Commerce的Observation等各種工具來偵測瓶頸並有效最佳化Commerce網站，以解決效能問題。 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) 包含在雲端基礎結構上的Adobe Commerce中，以及 [Adobe Commerce的觀察結果](/help/tools/observation-for-adobe-commerce/intro.md) 包含在雲端和內部部署中。
+使用New Relic和Adobe Commerce的Observation等各種工具來偵測瓶頸並有效最佳化Commerce網站，以解決效能問題。 [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) 包含在雲端基礎結構上的Adobe Commerce中，以及 [Adobe Commerce的觀察結果](/help/tools/observation-for-adobe-commerce/intro.md) 包含在雲端和內部部署中。
 
 使用這些工具來分析網站效能，並找出與下列相關之效能問題：
 
