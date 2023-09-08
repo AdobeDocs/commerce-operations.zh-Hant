@@ -4,9 +4,9 @@ description: 瞭解系統XML檔案如何管理Commerce應用程式設定。
 feature: Configuration, System
 badge: label="作者：David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,6 @@ A `<tab>`-Tag可以有下列屬性：
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------|----------|----------|
 | `id` | 定義參考區段所使用的識別碼。 | `typeId` | 必填 |
 | `translate` | 定義應可翻譯的欄位。 提供 `label` 讓標籤可翻譯。 | `string` | 可選 |
-| `type` | 定義演算HTML元素的輸入型別 — 預設為 `text`. | `string` | 可選 |
 | `sortOrder` | 定義區段的排序順序。 高數字會將區段推送至頁面底部；低數字會將區段推送至頁面頂部。 | `float` | 可選 |
 | `class` | 將定義的CSS類別新增至演算後的TabHTML元素。 | `string` | 可選 |
 
