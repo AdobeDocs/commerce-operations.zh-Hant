@@ -3,9 +3,9 @@ title: 啟動後的步驟
 description: 使用我們上市後的檢查清單，確保順利實施Adobe Commerce網站。
 exl-id: 0c3162d9-6475-4b34-9278-e5aea39bd0f9
 feature: Deploy
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ce41158f900fad27e3e7b8157f5c64ac988bbabf
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '165'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 - 將叢集標籤為已上線並建立支援票證以啟動高SLA監視
 - 轉換完成後，CSE （客戶成功工程師）和TAM （技術客戶經理）會立即執行下列工作：
    - 將叢集標籤為Adobe Commerce使用者端的高SLA並建立支援票證以啟動它
-   - 啟動Pingdom檢查網域名稱
+   - 啟動 **內部** Pingdom檢查網域名稱（無法公開存取Pingdom）
    - 檢閱監視狀態並確保所有專案都呈綠色
    - 上線當天透過電子郵件通知利害關係人保固期間和引數
 
