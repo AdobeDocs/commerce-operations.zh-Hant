@@ -4,9 +4,9 @@ description: 瞭解系統XML檔案如何管理Commerce應用程式設定。
 feature: Configuration, System
 badge: label="作者：David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
+source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,6 @@ A `<field>`-Tag可以有下列子系：
 | `more_url` | 無法擴充。 請參閱下文。 | `typeUrl` |
 | `demo_url` | 無法擴充。 請參閱下文。 | `typeUrl` |
 | `hide_in_single_store_mode` | 群組是否應該在單一存放區模式中可見。 `1` 隱藏群組； `0` 顯示群組。 | `int` |
-| `source_service` | 用於填入選取選項的服務。 | `complexType` |
 | `options` | 未使用。 可能已被取代。 | `complexType` |
 | `depends` | 可用於向其他欄位宣告相依性。 當指定欄位的值為，僅用於顯示特定欄位/群組 `1`. 此節點預期一個 `section/group/field`-string。 | `complexType` |
 | `attribute` | 前端模型可使用自訂屬性。 通常用於讓指定的前端模型更動態。 | `complexType` |
