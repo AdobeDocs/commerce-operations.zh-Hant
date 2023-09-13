@@ -3,12 +3,13 @@ title: PHP設定
 description: 按照以下步驟安裝必要的PHP擴充功能，並為Adobe Commerce和Magento Open Source的內部部署安裝設定必要的PHP設定。
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: aacc4332cecec0cb9b0f5c23d60b7abd1c63feea
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
+
 
 # PHP設定
 
@@ -16,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->另請參閱 [系統需求](../system-requirements.md) 支援的PHP版本。
+>最新版Adobe Commerce和Magento Open Source至少需要PHP 8.1。另請參閱 [系統需求](../system-requirements.md) PHP的所有支援版本。
 
 ## 驗證是否已安裝PHP
 
-大部分的Linux版本預設會安裝PHP。 本主題假設您已安裝PHP。 若要驗證是否已安裝PHP，請在命令列中鍵入：
+PHP預設會安裝在大多數Linux發行版本上。 本主題假設您已安裝PHP。 要驗證是否已安裝PHP，請在命令列中輸入以下內容：
 
 ```bash
 php -v
@@ -29,19 +30,17 @@ php -v
 如果已安裝PHP，則會顯示類似以下內容的訊息：
 
 ```terminal
-PHP 7.4.0 (cli) (built: Aug 14 2019 16:42:46) ( NTS )
-Copyright (c) 1997-2018 The PHP Group
-Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies with Zend OPcache v7.1.6, Copyright (c) 1999-2018, by Zend Technologies
+PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.2, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.2-1ubuntu2.14, Copyright (c), by Zend Technologies
 ```
 
-Adobe Commerce和Magento Open Source2.4與PHP 7.3相容，但我們使用PHP 7.4進行測試並建議使用。
-
-如果未安裝PHP，或需要版本升級，請按照針對您特定Linux風格的說明進行安裝。
-在CentOS上， [可能需要其他步驟](https://wiki.centos.org/HowTos/php7).
+如果未安裝PHP （或需要升級），請按照Linux發行版本的說明進行安裝。
 
 ## 驗證已安裝的擴充功能
 
-Adobe Commerce和Magento Open Source需要安裝一組擴充功能。
+Adobe Commerce和Magento Open Source需要特定的PHP擴充功能。 以下清單指定每個Commerce版本的必要副檔名。 清單會從執行每個版本最新版本的部署中自動產生。
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -54,11 +53,7 @@ Adobe Commerce和Magento Open Source需要安裝一組擴充功能。
    ```
 
 1. 確認已安裝所有必要的擴充功能。
-1. 使用用於安裝PHP的相同工作流程來新增任何缺少的模組。 例如，如果您使用 `yum` 若要安裝PHP，可以將PHP 7.4模組加入到：
-
-   ```bash
-    yum -y install php74u-pdo php74u-mysqlnd php74u-opcache php74u-xml php74u-gd php74u-devel php74u-mysql php74u-intl php74u-mbstring php74u-bcmath php74u-json php74u-iconv php74u-soap
-   ```
+1. 使用用於安裝PHP的相同工作流程來新增任何缺少的模組。
 
 ## 檢查PHP設定
 
@@ -74,7 +69,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - 設定PHP記憶體限制。
 
-  我們的詳細建議包括：
+  Adobe建議下列事項：
 
    - 編譯程式碼或部署靜態資產， `1G`
    - 偵錯， `2G`
@@ -87,17 +82,17 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
   realpath_cache_ttl=7200
   ```
 
-  這些設定可讓PHP處理作業快取檔案的路徑，而不是在每次頁面載入時查詢它們。 另請參閱 [效能調整](https://www.php.net/manual/en/ini.core.php) 在PHP檔案中。
+  這些設定可讓PHP程式快取檔案的路徑，而不是在頁面載入時查詢它們。 另請參閱 [效能調整](https://www.php.net/manual/en/ini.core.php) 在PHP檔案中。
 
 - 啟用 [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments)，此元件為Adobe Commerce和Magento Open Source 2.1及更新版本的必要元件。
 
-  建議您啟用 [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) 基於效能考量。 OPcache已在許多PHP分配中啟用。
+  Adobe建議啟用 [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) 基於效能考量。 OPcache已在許多PHP分配中啟用。
 
   Adobe Commerce和Magento Open Source 2.1及更高版本使用PHP程式碼註解來產生程式碼。
 
 >[!NOTE]
 >
->為避免在安裝和升級期間發生問題，我們強烈建議您對PHP命令列組態和PHP Web伺服器外掛程式組態都套用相同的PHP設定。 如需詳細資訊，請參閱下一節。
+>為避免在安裝和升級期間出現問題，Adobe強烈建議您對PHP命令列配置和PHP Web伺服器外掛程式配置都應用相同的PHP設定。 如需詳細資訊，請參閱下一節。
 
 ## 尋找PHP組態檔
 
@@ -117,7 +112,7 @@ php --ini | grep "Loaded Configuration File"
 
 >[!NOTE]
 >
->如果您只有一個 `php.ini` 檔案中，在該檔案中進行變更。 如果您有兩個 `php.ini` 檔案，變更於 *全部* 檔案。 若未這麼做，可能會導致無法預測的效能。
+>如果您只有一個 `php.ini` 檔案，變更該檔案。 如果您有兩個 `php.ini` 檔案，變更 *兩者* 檔案。 若未這麼做，可能會導致無法預測的效能。
 
 ### 尋找OPcache組態設定
 
@@ -137,7 +132,7 @@ PHP OPcache設定通常位於 `php.ini` 或 `opcache.ini`. 位置可能取決於
   sudo find / -name 'opcache.ini'
   ```
 
-- 使用PHP-FPM的nginx Web伺服器： `/etc/php/7.2/fpm/php.ini`
+- 使用PHP-FPM的nginx Web伺服器： `/etc/php/8.1/fpm/php.ini`
 
 如果您有多個 `opcache.ini`，修改全部。
 
@@ -189,7 +184,7 @@ PHP OPcache設定通常位於 `php.ini` 或 `opcache.ini`. 位置可能取決於
 
    - `opcache.ini` (CentOS)
    - `php.ini` (Ubuntu)
-   - `/etc/php/7.2/fpm/php.ini` (nginx網頁伺服器（CentOS或Ubuntu）)
+   - `/etc/php/8.1/fpm/php.ini` (nginx網頁伺服器（CentOS或Ubuntu）)
 
 1. 尋找 `opcache.save_comments` 並視需要取消註解。
 1. 確保其值設定為 `1`.

@@ -2,9 +2,9 @@
 title: 取得您的驗證金鑰
 description: 請依照下列步驟擷取憑證，以存取repo.magento.com上的Adobe Commerce和Magento Open Source撰寫器套件。
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ ht-degree: 0%
 
 若要建立驗證金鑰：
 
-1. 登入 [Commerce Marketplace](https://marketplace.magento.com). 如果您沒有帳戶，請按一下 **註冊**.
+1. 登入 [Commerce Marketplace](https://commercemarketplace.adobe.com/). 如果您沒有帳戶，請按一下 **註冊**.
+
 1. 按一下頁面右上角的帳戶名稱，然後選取「 」 **我的設定檔**.
 
 1. 按一下 **存取金鑰** 在Marketplace標籤中。
@@ -45,7 +46,7 @@ ht-degree: 0%
 
 ### 管理SSH存取權杖
 
-若要使用SSH下載Adobe Commerce版本，您必須產生下載存取權杖。 若要產生Token：
+若要使用SSH下載Adobe Commerce和Magento Open Source發行版本，您必須產生下載存取權杖。 若要產生Token：
 
 1. 登入您的 [magento.com帳戶](https://account.magento.com/customer/account/login).
 1. 按一下 **我的帳戶** ，位於頁面頂端。

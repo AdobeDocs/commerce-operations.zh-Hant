@@ -2,16 +2,18 @@
 title: 快速入門內部部署安裝
 description: 請依照下列步驟，在您擁有的基礎架構上安裝Adobe Commerce或Magento Open Source。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
 
 # 快速入門內部部署安裝
 
-我們使用 [作曲者](https://getcomposer.org/) 管理Adobe Commerce和Magento Open Source元件及其相依性。 使用Composer來取得Adobe Commerce和Magento Open Source中繼，可提供下列優點：
+本頁上的指示說明如何安裝Adobe Commerce和Magento Open Source [自行託管](../implementation-playbook/infrastructure/self-hosting/overview.md) 基礎結構。 如需升級現有安裝的指引，請參閱 [_升級指南_](../upgrade/overview.md).
+
+Adobe使用 [作曲者](https://getcomposer.org/) 管理Adobe Commerce和Magento Open Source元件及其相依性。 使用Composer來取得Adobe Commerce和Magento Open Source中繼，可提供下列優點：
 
 - 重複使用協力廠商程式庫，無需搭配原始程式碼使用
 - 使用元件式架構搭配強大的相依性管理，減少擴充功能衝突及相容性問題
@@ -33,7 +35,7 @@ ht-degree: 0%
 
 ## 以檔案系統擁有者身分登入
 
-瞭解所有權、許可權和檔案系統擁有者，請參閱 [所有權與許可權主題概觀](prerequisites/file-system/overview.md).
+瞭解中的所有權、許可權和檔案系統所有者 [所有權與許可權主題概觀](prerequisites/file-system/overview.md).
 
 若要切換到檔案系統擁有者：
 
@@ -53,7 +55,7 @@ ht-degree: 0%
 
 1. 若要從任何目錄執行CLI命令，請新增 `<app_root>/bin` 至您的系統 `PATH`.
 
-   因為殼層有不同的語法，請參考如下的參照 [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   由於shell有不同的語法，請參閱以下參照 [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    CentOS的bash shell範例：
 
@@ -73,7 +75,7 @@ ht-degree: 0%
 
 1. 以或切換方式登入應用程式伺服器 [檔案系統擁有者](prerequisites/file-system/overview.md).
 1. 變更至Web伺服器docroot目錄，或您設定為虛擬主機docroot的目錄。
-1. 使用Adobe Commerce或Magento Open Source中繼資料建立撰寫器專案。
+1. 使用Adobe Commerce或Magento Open Source中繼資料建立Composer專案。
 
    **Magento Open Source**
 
@@ -87,40 +89,36 @@ ht-degree: 0%
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   出現提示時，輸入您的驗證金鑰。 公開和私密金鑰是在以下位置建立和設定的： [Commerce Marketplace](https://marketplace.magento.com/customer/account/login/).
+   出現提示時，輸入您的驗證金鑰。 公開和私密金鑰是在以下位置建立和設定的： [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
 
    如果您遇到錯誤，例如 `Could not find package...` 或 `...no matching package found`，請確定您的命令中沒有拼寫錯誤。 如果您仍然遇到錯誤，您可能無權下載Adobe Commerce。 連絡人 [Adobe Commerce支援](https://support.magento.com/hc/en-us) 以取得協助。
 
    另請參閱 [疑難排除](https://support.magento.com/hc/en-us/articles/360033818091) 以取得更多錯誤的說明。
 
-   >[!NOTE]
-   >
-   >Adobe Commerce客戶可在正式發行(GA)日期之前兩週存取修補程式。 搶鮮版套件只能透過Composer取得。 在GA之前，您無法在Developer Portal或GitHub上存取發行前。 如果您在Composer中找不到這些套件，請聯絡Adobe Commerce支援。
-
 ### 範例 — 次要版本
 
-次要發行包含新功能、品質修正和安全性修正。 使用Composer指定次要版本。 例如，若要指定Adobe Commerce 2.4.5中繼資料：
+次要發行包含新功能、品質修正和安全性修正。 使用Composer指定次要版本。 例如，若要指定Adobe Commerce 2.4.6中繼資料：
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### 範例 — 品質修補程式
 
-品質修補程式主要包含功能性 _和_ 安全性修正。 不過，它們有時也可能包含向後相容的新功能。 使用Composer下載品質修補程式。 例如，若要指定Adobe Commerce 2.4.5中繼資料：
+品質修補程式主要包含功能性 _和_ 安全性修正。 不過，它們有時也可能包含向後相容的新功能。 使用Composer下載品質修補程式。 例如，若要指定Adobe Commerce 2.4.6中繼資料：
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### 範例 — 安全性修補程式
 
 安全性修補程式僅包含安全性修正。 這些設定可讓升級程式更快、更輕鬆。
 
-安全性修補程式使用撰寫器命名慣例 `2.4.5-px`. 使用Composer指定修補程式。 例如，若要下載Adobe Commerce 2.4.5-p1中繼資料：
+安全性修補程式使用撰寫器命名慣例 `2.4.6-px`. 使用Composer指定修補程式。 例如，若要下載Adobe Commerce 2.4.6-p1中繼資料：
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
 ## 設定檔案許可權
@@ -166,7 +164,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->您可以使用以下自訂管理員URI `--backend-frontname` 選項。 但是，我們建議省略此選項，並允許安裝命令自動產生隨機URI。 對於駭客或惡意軟體而言，隨機URI更難被利用。 安裝完成時，URI會顯示在主控台中。
+>您可以使用以下自訂管理員URI `--backend-frontname` 選項。 不過，Adobe建議省略此選項，並允許安裝命令自動產生隨機URI。 對於駭客或惡意軟體而言，隨機URI更難被利用。 安裝完成時，URI會顯示在主控台中。
 
 >[!TIP]
 >
@@ -230,4 +228,4 @@ bin/magento help cache:enable
 
 >[!NOTE]
 >
->恭喜！您已完成快速安裝。 需要更進階的協助嗎？ 請檢視我們的 [進階安裝](advanced.md) 指南。
+>恭喜！您已完成快速安裝。 需要更進階的協助嗎？ 檢視 [進階安裝](advanced.md) 指南。
