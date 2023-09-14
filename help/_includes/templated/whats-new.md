@@ -1,7 +1,7 @@
 ---
-source-git-commit: 525ac7ae2481be8c52b32471d14ceefba7b855a2
+source-git-commit: 366180602621742c40184192633863c5ce9a8e9f
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '639'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,46 @@ ht-degree: 1%
 ## 新增功能
 
 瞭解新檔案和現有檔案的重要更新。
+
+### 2023年9月11日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已更新 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/extensibility-strategy.html">擴充性策略</a> 包含App Builder、API Mesh和Adobe I/O事件的相關資訊。</p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f4f420cee5f9241f56107c4218793af394ba1193">f4f420</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023年9月6日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已發佈 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">發行說明</a> 適用於1.1.37 Quality Patches Tool (QPT)套件發行。</p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3290e58436259a7af81ed81b691a3ad032c812a5">3290e5</a> （認可）</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 2023年8月28日
 
@@ -151,66 +191,6 @@ ht-degree: 1%
 </td>
       <td>主要更新</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd3b93aaa79e84d356217b6adfe7181895e84f07">fd3b93</a> （認可）</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 2023年7月27日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>來源</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>重新設計 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">產品可用性</a> 頁面以改善版面配置和可讀性。</p>
-</td>
-      <td>主要更新</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6ed2a3e42cd0b85aae29652b8e36acbbda1b9e72">6ed2a3</a> （認可）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023年7月25日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>來源</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已發佈 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">發行說明</a> 適用於1.1.35 Quality Patches Tool (QPT)套件發行。</p>
-</td>
-      <td>主要更新</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ac0f04b7a04c5c7d3b3880b8231ffece05718558">ac0f04</a> （認可）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2023年7月11日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>來源</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增新已知問題的說明，此問題會影響Adobe Commerce的階段式銷售規則標籤 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">2.4.5</a> 和 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">2.4.6</a>.</p>
-</td>
-      <td>主要更新</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9e833dad884fa6146bb5e6ce6dd5ebcb23208b80">9e833d</a> （認可）</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
