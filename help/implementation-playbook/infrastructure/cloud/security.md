@@ -3,7 +3,7 @@ title: 雲端基礎結構安全性
 description: 瞭解Adobe如何確保雲端基礎結構上的Adobe Commerce安全。
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: afe70569796c056cd0ecab82898f0dec016e7a3f
+source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Adobe Commerce Pro計畫生產環境已設定為虛擬私人雲端(VPC)，因此
 
 ## 加密
 
-Amazon彈性區塊存放區(EBS)用於儲存。 所有EBS磁碟區都使用AES-265演演算法加密，這表示資料會靜態加密。 此系統也會加密CDN與來源之間以及來源伺服器之間傳輸中的資料。 客戶密碼會儲存為雜湊。 敏感認證（包括付款閘道認證）會使用SHA-256演演算法加密。
+Amazon彈性區塊存放區(EBS)用於儲存。 所有EBS磁碟區都使用AES-256演演算法加密，這表示資料會靜態加密。 此系統也會加密CDN與來源之間以及來源伺服器之間傳輸中的資料。 客戶密碼會儲存為雜湊。 敏感認證（包括付款閘道認證）會使用SHA-256演演算法加密。
 
 當資料不在伺服器之間靜止或傳輸中時，Adobe Commerce應用程式不支援欄或列層級的加密或加密。 客戶可以從應用程式內管理加密金鑰。 系統使用的金鑰儲存在AWS金鑰管理系統中，且必須由Managed Services管理，才能提供部分服務。
 
