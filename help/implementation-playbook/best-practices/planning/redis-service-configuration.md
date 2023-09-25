@@ -4,53 +4,121 @@ description: 瞭解如何使用Adobe Commerce的延伸Redis快取實作來改善
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 156e6412b9f94b74bad040b698f466808b0360e3
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 # Redis服務組態的最佳作法
 
-- 使用延伸的Redis快取實作，其中包括下列最佳化，以將對來自Adobe Commerce的每個請求執行的Redis查詢數量降至最低：
-   - 縮小Redis和Adobe Commerce之間的網路資料傳輸大小
-   - 藉由改善介面卡自動決定需要載入內容的能力，降低CPU週期的Redis耗用量
-   - 減少Redis寫入作業的競爭情形
+- 設定Redis L2快取
+- 啟用Redis從屬連線
+- 預先載入索引鍵
+- 啟用過時的快取
 - 將Redis快取與Redis工作階段分開
-- 壓縮Redis快取並使用 `gzip` 提升效能
+- 壓縮Redis快取並使用 `gzip` 以取得較高的壓縮率
 
-## 延伸的Redis快取實作
+## 設定Redis L2快取
 
-更新您的設定以使用延伸的Redis快取實作 `\Magento\Framework\Cache\Backend\Redis`.
-
-### 設定雲端部署
-
-設定，設定增強的Redis快取 `REDIS_BACKEND` 中的部署變數 `.magento.env.yaml` 組態檔。
+設定Redis L2快取記憶體，方法是設定 `REDIS_BACKEND` 中的部署變數 `.magento.env.yaml` 組態檔。
 
 ```yaml
 stage:
   deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\Redis'
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-如需詳細資訊，請參閱 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) 中的變數說明 _雲端基礎結構上的Commerce指南_.
+如需雲端基礎結構上的環境設定，請參閱 [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) 在 _雲端基礎結構上的Commerce指南_.
+
+若為內部部署安裝，請參閱 [設定Redis頁面快取](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) 在 _設定指南_.
 
 >[!NOTE]
 >
-> 檢查 `ece-tools` 版本已安裝在您的本機環境中，從命令列使用 `composer show magento/ece-tools` 命令。 如有需要， [更新至最新版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html).
+>確認您使用的是最新版本的 `ece-tools` 封裝。 如果沒有， [升級至最新版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). 您可以使用檢查安裝在本機環境中的版本 `composer show magento/ece-tools` CLI命令。
+
+## 啟用Redis從屬連線
+
+在中啟用Redis從屬連線 `.magento.env.yaml` 設定檔，僅允許一個節點處理讀寫流量，而其他節點則處理唯讀流量。
+
+```yaml
+stage:
+  deploy:
+    REDIS_USE_SLAVE_CONNECTION: true
+```
+
+另請參閱 [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) 在 _雲端基礎結構上的Commerce指南_.
+
+針對Adobe Commerce內部部署安裝，請使用 `bin/magento:setup` 命令。 另請參閱 [預設快取使用Redis](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) 在 _設定指南_.
 
 >[!WARNING]
 >
->執行 _非_ 使用設定雲端基礎結構專案的Redis從屬連線 [擴充架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). 這會導致Redis連線錯誤。 另請參閱 [Redis設定指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) 在 _雲端基礎結構上的Commerce_ 指南。
+>執行 _非_ 使用設定雲端基礎結構專案的Redis從屬連線 [縮放/分割架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). 這會導致Redis連線錯誤。 另請參閱 [Redis設定指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) 在 _雲端基礎結構上的Commerce_ 指南。
 
-### 設定內部部署
+## 預先載入索引鍵
 
-針對Adobe Commerce內部部署，請使用 `bin/magento:setup` 命令。 如需指示，請參閱 [預設快取使用Redis](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
+若要在頁面之間重複使用資料，請列出要在頁面中預先載入的金鑰， `.magento.env.yaml` 組態檔。
 
-## 個別的快取和工作階段執行個體
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          id_prefix: '061_'                       # Prefix for keys to be preloaded
+          backend_options:
+            preload_keys:                         # List the keys to be preloaded
+              - '061_EAV_ENTITY_TYPES:hash'
+              - '061_GLOBAL_PLUGIN_LIST:hash'
+              - '061_DB_IS_UP_TO_DATE:hash'
+              - '061_SYSTEM_DEFAULT:hash'
+```
 
-將Redis快取與Redis工作階段分開可讓您獨立管理快取和工作階段，以防止快取問題影響工作階段。
+若為內部部署安裝，請參閱 [Redis預先載入功能](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) 在 _設定指南_.
+
+## 啟用過時的快取
+
+使用過時的快取記憶體，並同時產生新的快取記憶體，可減少鎖定等待時間，並提升效能（尤其是在處理大量區塊和快取記憶體金鑰時）。 啟用過時的快取並在以下位置定義快取型別： `.magento.env.yaml` 設定檔：
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      default:
+        backend_options:
+          use_stale_cache: false
+      stale_cache_enabled:
+        backend_options:
+          use_stale_cache: true
+      type:
+        default:
+          frontend: "default"
+        layout:
+          frontend: "stale_cache_enabled"
+        block_html:
+          frontend: "stale_cache_enabled"
+        reflection:
+          frontend: "stale_cache_enabled"
+        config_integration:
+          frontend: "stale_cache_enabled"
+        config_integration_api:
+          frontend: "stale_cache_enabled"
+        full_page:
+          frontend: "stale_cache_enabled"
+        translate:
+          frontend: "stale_cache_enabled"
+```
+
+如需設定內部部署安裝，請參閱 [過時的快取選項](../../../configuration/cache/level-two-cache.md#stale-cache-options) 在 _設定指南_.
+
+## 單獨的Redis快取和工作階段例項
+
+將Redis快取與Redis工作階段分開可讓您分別管理快取與工作階段。 它可防止快取問題影響工作階段，進而影響收入。 每個Redis執行個體都以自己的核心執行，可改善效能。
 
 1. 更新 `.magento/services.yaml` 組態檔。
 
@@ -85,7 +153,7 @@ stage:
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. 提交 [Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 以變更Pro生產和中繼環境上的Redis服務設定。 包含更新的 `.magento/services.yaml` 和 `.magento.app.yaml` 組態檔。
+1. 提交 [Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 請求布建專用於生產和中繼環境工作階段的新Redis執行個體。 包含更新的 `.magento/services.yaml` 和 `.magento.app.yaml` 組態檔。 這不會造成任何停機時間，但需要部署才能啟用新服務。
 
 1. 確認新執行個體正在執行，並記下連線埠號碼。
 
@@ -134,7 +202,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## 快取壓縮
 
-使用快取壓縮，但請注意，使用者端效能是有代價的。 如果您有備用CPU，請啟用它。 另請參閱 [使用Redis進行工作階段儲存](../../../configuration/cache/redis-session.md).
+如果您使用超過6GB的Redis `maxmemory`，您可以使用快取壓縮來減少索引鍵使用的空間。 請注意，使用者端效能是有代價的。 如果您有備用CPU，請啟用它。 另請參閱 [使用Redis進行工作階段儲存](../../../configuration/cache/redis-session.md) 在 _設定指南_.
 
 ```yaml
 stage:
