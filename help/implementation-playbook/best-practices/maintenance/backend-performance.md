@@ -4,7 +4,8 @@ description: 瞭解如何最佳化Adobe Commerce網站的後端效能。
 badge: label="貢獻者： objectsource" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
+exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
+source-git-commit: e5df5a7242dbe8ceff548257daeb39f7c9fc5c69
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 0%
@@ -38,7 +39,7 @@ GTmetrix是一種可用於壓力測試的工具。 設定GTmetrix來復寫並乘
 
 進一步瞭解如何為高流量期間準備Commerce專案：
 
-- [假期整備](https://experienceleague.adobe.com/docs/events/mbi-webinars-recordings/2021/holiday-readiness.html)
+- [假期整備](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
 - [假日購物分析](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
 - [突波容量增加](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
 
