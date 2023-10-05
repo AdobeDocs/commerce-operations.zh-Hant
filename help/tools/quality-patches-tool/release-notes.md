@@ -2,9 +2,9 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 7e6e8f1ed15d88fc79e9a3ad5a4505b612564f71
+source-git-commit: 67d4f2dd6b3aedae51c9b81268f2ced12369becc
 workflow-type: tm+mt
-source-wordcount: '14539'
+source-wordcount: '14811'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,21 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需的相關資訊 [!DNL quality patches] 由社群建立以進行Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.39 {#v1-1-39}
+
+* **ACSD-53704** (適用於Adobe Commerce >=2.4.0 &lt;2.4.7) — 修正獎勵點到期後錯誤地計算獎勵點餘額歷史記錄的問題。
+* **ACSD-53583** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 改善部分重新索引效能， *類別產品* 和 *產品類別* 索引子。
+* **ACSD-54026** (適用於Adobe Commerce >=2.4.6 &lt;2.4.7) — 修正「 」的不正確錯誤訊息 `updateCompanyRole` 非授權使用者的GraphQL請求。
+* **ACSD-54106** (適用於Adobe Commerce和Magento Open Source >=2.4.1 &lt;2.4.5) — 修正土耳其文重音字元依名稱排序的類別產品錯誤問題。
+* **ACSD-52219** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) — 修正經常在書籤檢視之間切換時，管理員格線儲存的篩選器無法如預期運作的問題。
+* **ACSD-54342** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正不正確的錯誤訊息 *資料結構錯誤：值混合* 匯入沒有有效資料的CSV檔案時。
+* **ACSD-54660** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.6) — 新增輸入屬性 *sort* 若要在GraphQL中排序客戶訂單，排序依據： `sort_field` 和 `sort_direction`.
+* **ACSD-54776** (適用於Adobe Commerce >=2.4.5 &lt;2.4.7) — 修正未勾選的問題 *[!UICONTROL Use Default Value]* 且非預設的產品欄位值不會儲存為第二個網站、商店和商店檢視。
+* **ACSD-53998** (適用於Adobe Commerce和Magento Open Source >=2.4.4-p2 &lt;2.4.5) || >=2.4.5-p1 &lt;2.4.7) — 修正 **[!UICONTROL Dynamic Block]** 根據 **[!UICONTROL Customer Segment]** 從客戶帳戶登出後無法正常運作。
+* **ACSD-53204** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正 *無法儲存產品。* 同時要求使用將影像新增至產品庫時發生錯誤 `rest/V1/products/<sku>/media` 端點。
+* **ACSD-47657** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 新增AWS憑證的快取機制。 認證提供者現在會使用Magento快取來快取從AWS擷取的認證，以進行EC2設定。
+* 更新修補程式：ACSD-51984、ACSD-51574。
 
 ## v1.1.38 {#v1-1-38}
 
