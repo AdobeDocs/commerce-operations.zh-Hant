@@ -1,7 +1,7 @@
 ---
-source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
+source-git-commit: d720b64f315d1e4b6fb7868d911eb3af089e3fa4
 workflow-type: tm+mt
-source-wordcount: '19899'
+source-wordcount: '20131'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**版本**： 2.4.7-beta1
+**版本**： 2.4.7-beta2
 
-此參考包含132個指令，這些指令可透過 `bin/magento` 命令列工具。
+此參照包含134個指令，這些指令可透過 `bin/magento` 命令列工具。
 初始清單會使用 `bin/magento list` Adobe Commerce的命令。
 使用 [新增CLI命令](https://developer.adobe.com/commerce/php/development/cli-commands/) 新增自訂CLI命令的指南。
 
@@ -3756,6 +3756,120 @@ bin/magento events:metadata:populate
 - 不接受值
 
 
+## `events:provider:info`
+
+傳回已設定之事件提供者的詳細資訊
+
+```bash
+bin/magento events:provider:info
+```
+
+### `--help`, `-h`
+
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+
+- 預設： `false`
+- 不接受值
+
+### `--quiet`, `-q`
+
+不輸出任何訊息
+
+- 預設： `false`
+- 不接受值
+
+### `--verbose`, `-v|-vv|-vvv`
+
+增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
+
+- 預設： `false`
+- 不接受值
+
+### `--version`, `-V`
+
+顯示此應用程式版本
+
+- 預設： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或停用 — no-ansi） ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定「 — ansi」選項
+
+- 預設： `false`
+- 不接受值
+
+### `--no-interaction`, `-n`
+
+請勿詢問任何互動式問題
+
+- 預設： `false`
+- 不接受值
+
+
+## `events:registrations:list`
+
+列出App Builder專案中的事件註冊
+
+```bash
+bin/magento events:registrations:list
+```
+
+### `--help`, `-h`
+
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+
+- 預設： `false`
+- 不接受值
+
+### `--quiet`, `-q`
+
+不輸出任何訊息
+
+- 預設： `false`
+- 不接受值
+
+### `--verbose`, `-v|-vv|-vvv`
+
+增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
+
+- 預設： `false`
+- 不接受值
+
+### `--version`, `-V`
+
+顯示此應用程式版本
+
+- 預設： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或停用 — no-ansi） ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定「 — ansi」選項
+
+- 預設： `false`
+- 不接受值
+
+### `--no-interaction`, `-n`
+
+請勿詢問任何互動式問題
+
+- 預設： `false`
+- 不接受值
+
+
 ## `events:subscribe`
 
 訂閱事件
@@ -7221,7 +7335,7 @@ bin/magento security:tfa:reset <user> <provider>
 執行應用程式伺服器
 
 ```bash
-bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]]
+bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]]
 ```
 
 ### `--port`, `-p`
@@ -7250,6 +7364,13 @@ bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--a
 magento bootstrap初始引數
 
 - 預設： &quot;
+- 接受值
+
+### `--maxWaitTime`, `-mwt`
+
+重新載入後等候背景工作程式的時間長度(例如 設定變更)，然後將其刪除
+
+- 預設： `3600`
 - 接受值
 
 ### `--help`, `-h`
@@ -9417,7 +9538,7 @@ SSL連線的基礎URL。 已棄用，請使用config：set搭配路徑web/secure
 
 ### `--search-engine`
 
-搜尋引擎。 值： elasticsearch5， elasticsearch7， elasticsearch8， opensearch
+搜尋引擎。 值： elasticsearch7， elasticsearch8， opensearch
 
 - 需要值
 

@@ -2,9 +2,9 @@
 title: 設定設定值
 description: 瞭解如何設定設定值，以及變更在Admin中鎖定的值。
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 78a7e99ecaba6a6f7982123f5bd67efc740ec2ef
+source-git-commit: 473ab09f83a4cfc1809adff854d52a11ad49d3af
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -289,3 +289,8 @@ bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_ur
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>範圍代碼只能包含字母（a-z或A-Z）、數字(0-9)和底線(_)。 此外，第一個字元必須是字母。 如果在建立網站或商店檢視時使用大寫或駝峰式大小寫，則內部比對不區分大小寫，以透過環境變數來適應設定覆寫。 另請參閱 [使用環境變數覆寫組態設定](../reference/override-config-settings.md#environment-variables).
+

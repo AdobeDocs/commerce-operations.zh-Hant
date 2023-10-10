@@ -2,7 +2,7 @@
 title: 訊息佇列取用者
 description: 瞭解Adobe Commerce和Magento Open Source訊息佇列取用者，包括與其相關的功能和系統組態設定。
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 1d7f5f58f8c21013c2ab0d68ab93a125ba0f3764
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 0%
@@ -65,7 +65,7 @@ ht-degree: 0%
 | 傳送採購單電子郵件。 下列情況下需要 [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) 選項已啟用。 |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |
 | 根據相關驗證採購單 [核准規則](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html). 下列情況下需要 [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) 選項已啟用。 |                |                         |                     |
-| `saveConfigProcessor` [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="僅適用於2.4.7-beta1"} | + |                         | + |
+| `saveConfigProcessor` [!BADGE 2.4.7測試版]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="僅適用於2.4.7-beta版"} | + |                         | + |
 | 將儲存工作放入訊息佇列中，即可非同步儲儲存儲存存設定變更，如此可改善包含大量儲存層級設定的部署效能。 必須使用 [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) 模組。 |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
 | 防止 [問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) 其中單次使用抵用券可以多次使用。 |                |                         |                     |
