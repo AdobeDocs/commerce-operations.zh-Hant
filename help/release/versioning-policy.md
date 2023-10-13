@@ -2,7 +2,7 @@
 title: 發行原則
 description: 瞭解不同型別的Adobe Commerce版本，包括次要、修補程式、安全性修補程式、功能、Hotfix、個別修補程式和自訂修補程式。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
+source-git-commit: 9a74f87e0da5a7f11cd0930c8265556d80e3d1de
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Adobe Commerce和Magento Open Source使用 [語意版本設定](https://semver.o
    - **安全性修補程式發行版本**—2.4.5-p1
       - 安全性錯誤修正
       - 安全性增強功能
-- **BETA修補程式版本**—2.4.7-beta1
+- **BETA修補程式版本**—2.4.7-beta2
 - **擴充性、基礎結構和服務版本**
 - **Hotfix**
 - **個別修補程式**
