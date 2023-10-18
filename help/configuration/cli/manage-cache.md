@@ -2,9 +2,9 @@
 title: 管理快取
 description: 管理快取型別並檢視快取狀態。
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
+source-git-commit: 9476a8ee2ce49e635e17fbb25c74656ba30bf930
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ Commerce 2的快取型別如下：
 | 整合API設定 | config_integration_api | 已編譯存放區整合的整合API設定。 |
 | Web服務設定 | config_webservice | 快取Web API結構。 |
 | 客戶通知 | customer_notification | 顯示在使用者介面中的臨時通知。 |
+| 管理員UI SDK快取 | admin_ui_sdk | 快取使用新增的管理自訂 [Adobe Commerce管理員UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
 
 ## 檢視快取狀態
 
