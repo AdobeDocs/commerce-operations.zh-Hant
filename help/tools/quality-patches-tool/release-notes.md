@@ -2,9 +2,9 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 67d4f2dd6b3aedae51c9b81268f2ced12369becc
+source-git-commit: 6e82738ab9b3ea106b7987fac2f6f4a026ddc4f0
 workflow-type: tm+mt
-source-wordcount: '14811'
+source-wordcount: '15145'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,24 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需的相關資訊 [!DNL quality patches] 由社群建立以進行Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.40 {#v1-1-40}
+
+* **ACSD-54680** (適用於Adobe Commerce >=2.4.0 &lt;2.4.6) — 修正無法處理針對具有多個指派來源的產品所提交的B2B報價的問題。
+* **ACSD-54040** (適用於Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6) — 修正 *[!UICONTROL Created]* 啟用B2B模組時，欄位在順序詳細資料中是空白的。
+* **ACSD-54319** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.6) — 修正 *[!UICONTROL Product in Cart]* 報告。
+* **ACSD-53378** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) — 為擁有大型通訊錄的客戶改善結帳頁面載入時間。
+* **ACSD-52657** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) — 修正使用子網域的次要商店檢閱未更新minicart的問題。
+* **ACSD-53414** (適用於Adobe Commerce >=2.4.6 &lt;2.4.7) — 修正受限管理員使用者可在其許可權範圍外檢視CMS頁面的問題。
+* **ACSD-54472** (適用於Adobe Commerce >=2.4.6 &lt;2.4.7) — 修正被拒絕公司的客戶仍可驗證，以及被封鎖或被拒絕公司的客戶仍可下訂單的問題。 此修補程式新增了GraphQL端點的額外驗證。
+* **ACSD-52801** (Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 新增在GraphQL中搜尋產品時進行部分比對的選項。
+* **ACSD-55004** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正上傳大於中設定的值的匯入檔案時，驗證器當機的問題 `php.ini`.
+* **ACSD-54989** (適用於Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) — 修正公司管理員在 *[!UICONTROL Enable Purchase Orders]* 設為 *[!UICONTROL Yes]* 和 *[!UICONTROL Purchase Order]* 設為 *[!UICONTROL No]*.
+* **ACSD-54007** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正錯誤 *未定義的陣列索引鍵「_scope」* 匯入客戶資料時。
+* **ACSD-55031** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.6) — 修正 *型別「mixed」不能為空值* 編譯時發生錯誤。
+* **ACSD-54961** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正受限制的管理員使用者無法大量更新的問題 *產品評論* 狀態。
+* **ACSD-55256** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正影像滑桿中僅成功顯示第一個影像的問題。
+* 更新修補程式：ACSD-52041、ACSD-54106
 
 ## v1.1.39 {#v1-1-39}
 
