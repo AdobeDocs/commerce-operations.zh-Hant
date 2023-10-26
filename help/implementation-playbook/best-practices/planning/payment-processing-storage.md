@@ -4,9 +4,9 @@ description: 瞭解如何安全地處理和儲存付款詳細資料
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 1887d7b285008fc98579955274bbc4affb766d0c
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 維護的重要原則之一 [PCI法規遵循](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) 正在制定適當處理和儲存信用卡支付的策略。
 
-在Adobe Commerce中儲存持卡人資料為 **嚴禁** 這麼做可能會違反您身為商家的義務，違反支付卡產業資料安全標準(PCI-DSS)。 有關我們共同責任模式及商戶義務指引的詳細資訊，請參閱我們的 [Adobe Commerce的共用責任指南](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) 在Adobe信任中心。
+在Adobe Commerce中儲存持卡人資料為 **嚴禁** 這麼做可能會違反您身為商家的義務，違反支付卡產業資料安全標準(PCI-DSS)。 有關商戶義務之分擔責任模式與指引的詳細資訊，請參閱 [Adobe Commerce共用職責模型指南](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) 在Adobe信任中心。
 
-我們建議您遵循以下最佳實務，以協助確保您在電子商務網站上正確處理付款資訊。 有關整體安全性最佳實務的其他指引，請參閱我們的 [Adobe Commerce安全性最佳實務指南](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) 在Adobe信任中心
+請遵循下列最佳實務，以確保您在電子商務網站上正確處理付款資訊。 有關整體安全性最佳實務的其他指引，請參閱我們的 [Adobe Commerce安全性最佳實務指南](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) 在Adobe信任中心
 
 ## 受影響的產品和版本
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 密碼編譯金鑰的保護對資料保護策略至關重要。 由技術高超且值得信賴的保管人來監管這些金鑰非常重要。
 
-最後，主要帳號(PAN)在儲存期間必須無法讀取（例如，XXX等遮罩）。 這包括可攜式儲存和備份媒體，例如快閃磁碟機、USB和外部硬碟，甚至稽核記錄。
+最後，主要帳號(PAN)在儲存期間必須無法讀取，例如使用遮罩 `XXX`. 這包括可攜式儲存和備份媒體，例如快閃磁碟機、USB和外部硬碟，甚至稽核記錄。
 
 ## 加密持卡人資料的傳輸
 
@@ -49,8 +49,8 @@ ht-degree: 0%
 * 限制對持卡人資料的存取
 * 機密資訊的存取權應該視需要而加以限制，並且僅提供給有業務需要的授權人員
 
-處理持卡人資料的建議方法不是儲存主要帳號(PAN)，而是將信用卡與特定的付款處理提供者代碼化，並儲存代號、卡片型別和加密的到期日。 您可將代號作為檔案上的認證來使用，因為代號僅供每個商家使用。 由於代號是唯一的，因此如果有安全性問題，中的代號就會失效，有助於防止欺詐活動
+處理持卡人資料的建議方法是將資料代碼化，而非加以儲存。 將信用卡與特定的付款處理提供者記號，並儲存代號、信用卡型別和加密的到期日。 您可將代號作為檔案上的認證來使用，因為代號僅供每個商家使用。 由於代號是唯一的，因此如果有安全性問題，中的代號就會失效，有助於防止詐騙活動。
 
 ## 其他資訊
 
-如果您要尋找依Adobe區分的建議支付解決方案，請考慮 [Adobe支付服務](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+如果您要依Adobe尋找建議的支付解決方案，請考慮 [Adobe支付服務](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
