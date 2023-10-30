@@ -2,9 +2,9 @@
 title: 應用程式模式
 description: Commerce應用程式可依您的需求以不同模式運作。 檢視可用的應用程式模式詳細清單。
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 982c478f73bdd1301210db5a89fb09edf69a6c42
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ ht-degree: 0%
 
 ## 雲端支援
 
-不需要管理雲端基礎結構專案的應用程式模式。 因為唯讀檔案系統，您無法變更遠端雲端環境中的模式。 雲端基礎結構上的Adobe Commerce會自動在中執行應用程式 _維護作業_ 模式，可讓您的網站離線，直到部署完成。 否則，應用程式會保留在 _生產_ 模式。 另請參閱 [部署流程](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) 在 _雲端基礎結構上的Commerce指南_.
+不需要管理雲端基礎結構專案的應用程式模式。 因為唯讀檔案系統，您無法變更遠端雲端環境中的模式。 請勿嘗試透過修改 `app/etc/env.php` 檔案是因為 `ece-tools` 套件會根據多個組態來源覆寫檔案。
+
+雲端基礎結構上的Adobe Commerce會自動在中執行應用程式 _維護作業_ 模式，可讓您的網站離線，直到部署完成。 否則，應用程式會保留在 _生產_ 模式。 另請參閱 [部署流程](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) 在 _雲端基礎結構上的Commerce指南_.
 
 如果您使用Cloud Docker for Commerce作為開發工具，您可以在以下位置在Docker環境中部署雲端基礎結構專案 _開發人員_ 模式，但因為額外的檔案同步作業而造成效能變慢。 另請參閱 [部署Docker環境](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) 在 _Cloud Docker for Commerce指南_.
 
