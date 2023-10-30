@@ -3,13 +3,13 @@ title: 例外狀況處理最佳實務
 description: 瞭解開發Adobe Commerce專案時記錄例外狀況的建議方法。
 feature: Best Practices
 role: Developer
-source-git-commit: 94d37b6a95cae93f465daf8eb96363a198833e27
+exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
+source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
 
 ---
-
 
 # 例外狀況處理最佳實務
 
@@ -88,7 +88,7 @@ try {
 
 ### ![不正確](../../../assets/no.svg) 記錄前的邏輯
 
-記錄前的邏輯可能會導致另一個例外狀況或嚴重錯誤，這會防止例外狀況被記錄，因此應該取代為 [正確範例](#correct-logging-always-comes-first).
+記錄前的邏輯可能會導致另一個例外狀況或嚴重錯誤，這會防止例外狀況被記錄，因此應該取代為 [正確範例](#logging-always-comes-first).
 
 ```php
 try {
@@ -101,7 +101,7 @@ try {
 
 ### ![不正確](../../../assets/no.svg) 空白 `catch`
 
-空白 `catch` 區塊可能是非預期靜音的標誌，應取代為 [正確範例](#correct-mute-signals).
+空白 `catch` 區塊可能是非預期靜音的標誌，應取代為 [正確範例](#mute-signals).
 
 ```php
 try {
@@ -137,11 +137,11 @@ try {
 
 此方法在訊息中引入了分行符號，這與PSR-3不相容。 例外狀況（包括棧疊追蹤）必須屬於訊息內容的一部分，以確保其能正確與訊息一起儲存在New Relic或其他PSR-3單一記錄檔相容的記錄儲存體中。
 
-請依照中顯示的正確範例取代程式碼，以修正此問題 [寫入例外記錄](#correct-write-to-the-exception-log) 或 [降級例外狀況](#correct-downgrade-exceptions).
+請依照中顯示的正確範例取代程式碼，以修正此問題 [寫入例外記錄](#write-to-the-exception-log) 或 [降級例外狀況](#downgrade-exceptions).
 
 ### ![不正確](../../../assets/no.svg) 無內容的降級例外狀況
 
-例外狀況會降級為錯誤，不允許傳遞物件，但只能傳遞字串，因此 `getMessage()`. 這會導致追蹤遺失，且應該以中顯示的正確範例取代 [寫入例外記錄](#correct-write-to-the-exception-log) 或 [降級例外狀況](#correct-downgrade-exceptions).
+例外狀況會降級為錯誤，不允許傳遞物件，但只能傳遞字串，因此 `getMessage()`. 這會導致追蹤遺失，且應該以中顯示的正確範例取代 [寫入例外記錄](#write-to-the-exception-log) 或 [降級例外狀況](#downgrade-exceptions).
 
 ```php
 try {
@@ -153,7 +153,7 @@ try {
 
 ### ![不正確](../../../assets/no.svg) 僅將訊息記錄到例外狀況記錄檔
 
-不要傳遞物件 `$e`，僅限 `$e->getMessage()` 已通過。 這會導致追蹤遺失，且應該以顯示的正確範例取代 [寫入例外記錄](#correct-write-to-the-exception-log) 或 [降級例外狀況](#correct-downgrade-exceptions).
+不要傳遞物件 `$e`，僅限 `$e->getMessage()` 已通過。 這會導致追蹤遺失，且應該以顯示的正確範例取代 [寫入例外記錄](#write-to-the-exception-log) 或 [降級例外狀況](#downgrade-exceptions).
 
 ```php
 try {
@@ -165,7 +165,7 @@ try {
 
 ### ![不正確](../../../assets/no.svg) 遺失 `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-省略 `phpcs:ignore` line會在PHPCS中觸發警告，且不應傳遞您的CI。 此資訊應該由下列正確範例取代： [將訊號設為靜音](#correct-mute-signals).
+省略 `phpcs:ignore` line會在PHPCS中觸發警告，且不應傳遞您的CI。 此資訊應該由下列正確範例取代： [將訊號設為靜音](#mute-signals).
 
 ```php
 try {
