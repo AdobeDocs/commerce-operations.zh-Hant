@@ -1,19 +1,20 @@
 ---
-title: 設定'robots.txt'和'sitemap.xml'檔案的最佳做法
-description: 瞭解如何將您的Adobe Commerce網站相關指示傳遞給網頁編目程式。
+title: 設定Web編目程式的最佳做法
+description: 瞭解如何使用「robots.txt」和「sitemap.xml」檔案，將您的Adobe Commerce網站相關指示傳遞給網頁編目程式。
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
 
-# 設定的最佳實務 `robots.txt` 和 `sitemap.xml` 檔案
 
-本文提供使用的最佳實務 `robots.txt` 和 `sitemap.xml` Adobe Commerce中的檔案，包括設定和安全性。 這些檔案會指示Web機器人（通常是搜尋引擎機器人）如何編目網站上的頁面。 設定這些檔案可改善網站效能和搜尋引擎最佳化。
+# 設定Web編目程式的最佳做法
+
+本文提供使用的最佳實務 `robots.txt` 和 `sitemap.xml` Adobe Commerce中的檔案，包括設定和安全性。 這些檔案會指示Web編目程式（通常是搜尋引擎自動機制）如何編目網站上的頁面。 設定這些檔案可改善網站效能和搜尋引擎最佳化。
 
 >[!NOTE]
 >
