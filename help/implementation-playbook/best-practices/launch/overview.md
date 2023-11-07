@@ -3,9 +3,9 @@ title: 實作啟動階段
 description: 瞭解Adobe Commerce專案啟動階段的實作最佳實務。
 exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
-source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
+source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '173'
 ht-degree: 1%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 1%
 ## 安全性設定
 
 | 最佳實務 | 說明 |
-|------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [Adobe安全性通知服務&#x200B;](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | 訂閱Adobe安全性通知。 |
-| [預防並回應安全性事件](prevent-respond-security-incident.md) | 避免並回應雲端基礎結構專案中Adobe Commerce的安全事件。 |
+|------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Adobe安全性通知服務](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | 訂閱Adobe安全性通知。 |
+| [保護您的Commerce網站和基礎架構](security-best-practices.md) | 強化Commerce安裝的安全狀態，以保護Commerce店面、管理員、基礎架構和資料免受未經授權的存取和網路攻擊。 |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | 設定Google reCAPTCHA以取得管理員存取權，以及註冊客戶所啟動的各種店面動作。 |
-| [設定網頁編目程式](robots-txt.md) | 透過將您的Adobe Commerce網站相關指示傳遞給網頁編目程式 `robots.txt` 和 `sitemap.xml` 檔案。 |
+| [設定網頁編目程式](robots-txt.md) | 將您的Adobe Commerce網站相關指示傳遞給網頁編目程式。 |
 | [驗證安全性設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html) | 在雲端基礎結構網站上啟動Adobe Commerce之前，請先檢閱檢查清單專案。 |
 
 ## 效能監視

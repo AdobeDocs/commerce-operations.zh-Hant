@@ -1,20 +1,20 @@
 ---
-title: X-Frame-Options標頭
-description: 使用X-Frame-Options來控制頁面轉譯。
+title: 避免點選劫持利用漏洞
+description: 使用「X-Frame-Options」標頭控制頁面呈現，以防止點選劫持攻擊。
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# X-Frame-Options標頭
+# 避免點選劫持利用漏洞
 
-協助防止 [點選劫持](https://owasp.org/www-community/attacks/Clickjacking) 利用漏洞，我們新增了一個選項來使用 [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) 對您店面的請求中的HTTP請求標頭。
+避免 [點選劫持](https://owasp.org/www-community/attacks/Clickjacking) 藉由包含 [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) 對您店面的請求中的HTTP請求標頭。
 
-此 `X-Frame-Options` 頁首可讓您指定是否應該允許瀏覽器在 `<frame>`， `<iframe>`，或 `<object>` 如下所示：
+此 `X-Frame-Options` 頁首可讓您指定是否允許瀏覽器在中呈現頁面 `<frame>`， `<iframe>`，或 `<object>` 如下所示：
 
 - `DENY`：頁面無法顯示在框架中。
 - `SAMEORIGIN`：（預設）頁面只能在與頁面本身相同原始位置的框架中顯示。
