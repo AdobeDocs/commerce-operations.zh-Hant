@@ -4,7 +4,7 @@ description: 瞭解如何從管理員或命令列合併Adobe Commerce專案的CS
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 409bd4795704b9daec7773459e5a1f9f42ef5128
+source-git-commit: 2662ced484fb42bf2d32609e4e82364c1e47c8f0
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 >
 >雲端基礎結構上的Adobe Commerce一律會在生產模式中執行，否則無法進行設定，因此您必須使用命令列方法來啟用合併、縮制和整合。
 
-如果您的部署使用HTTP2，請勿合併或合併檔案。 HTTP2會以非同步方式下載靜態檔案。 瀏覽器必須先下載整個合併的檔案，才能處理檔案內容。
+如果您的部署使用HTTP/2，請勿合併或合併檔案。 HTTP/2會以非同步方式下載靜態檔案。 瀏覽器必須先下載整個合併的檔案，才能處理檔案內容。
 
 ### 使用Admin
 

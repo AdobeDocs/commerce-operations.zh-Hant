@@ -3,7 +3,7 @@ title: 設定最佳實務
 description: 使用這些最佳實務最佳化Adobe Commerce或Magento Open Source部署的回應時間。
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
+source-git-commit: 3c53efdaedea075e288d262e247bc9c42b5a2432
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 0%
@@ -106,7 +106,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 ### 套件組合提示
 
 * 建議您使用協力廠商工具進行縮制和套件組合(例如 [r.js](https://requirejs.org/))。 [!DNL Commerce] 內建機制並非最佳選擇，而是以備援方式出貨。
-* 啟動HTTP2通訊協定可能是使用JS套裝的好替代方案。 通訊協定的優點幾乎相同。
+* 啟動HTTP/2通訊協定可能是使用JS套裝的好替代方案。 通訊協定的優點幾乎相同。
 * 我們不建議使用已棄用的設定，例如合併JS和CSS檔案，因為這些設定是專為頁面的HEAD區段中同步載入的JS而設計。 使用此技術可能會導致套件組合，並要求JS邏輯無法正確運作。
 
 ## 客戶區段驗證
