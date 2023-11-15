@@ -2,9 +2,9 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
+source-git-commit: 704c3e2934c74ee4b06499bbfc4cb68b0a007a1e
 workflow-type: tm+mt
-source-wordcount: '15346'
+source-wordcount: '15669'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,23 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需的相關資訊 [!DNL quality patches] 由社群建立以進行Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.42 {#v1-1-42}
+
+* **ACSD-53658** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正以下問題： *[!UICONTROL Recently Viewed]* 存放區檢視中的產品資料未正確更新。
+* **ACSD-54626** (適用於Adobe Commerce >=2.4.6 &lt;2.4.7) — 修正您無法建立新採購單規則的問題(`createPurchaseOrderApprovalRule`)和 `NUMBER_OF_SKUS` 屬性透過 [!DNL GraphQL].
+* **ACSD-53845** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正 [!DNL MySQL] 發生下列情況時連線逾時問題： `consumer max_messages` = 0.
+* **ACSD-54890** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正以下問題： `aggregate_sales_report_bestsellers_data` 原因 [!DNL MySQL] 錯誤原因為 `/tmp` 磁碟空間不足。
+* **ACSD-55112** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正 *[!UICONTROL Submit review]* 您可以按幾下按鈕，不需要 [!DNL Google reCAPTCHA v3] 驗證。
+* **ACSD-54264** (適用於Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) — 修正錯誤訊息的問題 *「您無法更新要求的屬性。 列ID： store_id&quot;* 當客戶嘗試從其他商店檢視中取出可協商的報價時出現。
+* **ACSD-54418** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正動態定價套件組合的每個子產品不正確套用固定金額折扣的問題。
+* **ACSD-55238** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正儲存空白產品的錯誤 *[!UICONTROL Meta Description]*.
+* **ACSD-54966** (適用於Adobe Commerce及Magento Open Source >=2.4.5 &lt;2.4.7) — 修正先前訂單失敗時，無法重複使用每位客戶限量使用之優惠券代碼的問題。
+* **ACSD-54060** (適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.7) — 修正受限管理員無法儲存產品（若產品是指派給其他範圍之其他產品的子系）的問題。
+* **ACSD-48910** (適用於Adobe Commerce及Magento Open Source >=2.4.5 &lt;2.4.6) — 修正訂單開立商業發票及出貨後，即使訂單數量仍非零，指定至多個來源的套件產品也會無存貨的問題。
+* **ACSD-55381** (適用於Adobe Commerce >=2.4.2 &lt;2.4.7) — 修正查詢時的內部伺服器錯誤 `configurable_product_option_uid` 和 `configurable_product_option_value_uid` 來自的欄位 [!DNL B2B] *[!UICONTROL Requisition list]* via [!DNL GraphQL].
+* **ACSD-55628** (Adobe Commerce >=2.4.4-p2 &lt; 2.4.5 || >=2.4.5-p1 &lt; 2.4.6) — 修正了在公司登錄檔單上傳檔案，以及取代店面中客戶屬性的檔案。
+* 更新修補程式：ACSD-51240、ACSD-51890、ACSD-53098
 
 ## v1.1.41 {#v1-1-41}
 
