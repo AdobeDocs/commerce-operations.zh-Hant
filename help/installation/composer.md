@@ -2,9 +2,9 @@
 title: 快速入門內部部署安裝
 description: 請依照下列步驟，在您擁有的基礎架構上安裝Adobe Commerce或Magento Open Source。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
+source-git-commit: 3c6527e5936438d6f1f52b32082cc7dde5f87f22
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,10 @@ Adobe使用 [作曲者](https://getcomposer.org/) 管理Adobe Commerce和Magento
    ```
 
    出現提示時，輸入您的驗證金鑰。 公開和私密金鑰是在以下位置建立和設定的： [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+
+   >[!NOTE]
+   >
+   > 使用撰寫器時 `auth.json` 檔案或環境變數，系統不會提示您輸入驗證金鑰。
 
    如果您遇到錯誤，例如 `Could not find package...` 或 `...no matching package found`，請確定您的命令中沒有拼寫錯誤。 如果您仍然遇到錯誤，您可能無權下載Adobe Commerce。 連絡人 [Adobe Commerce支援](https://support.magento.com/hc/en-us) 以取得協助。
 
