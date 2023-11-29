@@ -3,9 +3,9 @@ title: 設定遠端儲存
 description: 瞭解如何為內部部署Commerce應用程式設定遠端儲存模組。
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->sync指令只會移轉 `pub/media` 目錄， _非_ 中的匯入/匯出檔案 `var` 目錄。 另請參閱 [排定的匯入/匯出][import-export] 在 _Commerce 2.4使用手冊_.
+>sync指令只會移轉 `pub/media` 目錄， _非_ 中的匯入/匯出檔案 `var` 目錄。 另請參閱 [排定的匯入/匯出](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) 在 _Commerce 2.4使用手冊_.
 
 <!-- link definitions -->
 

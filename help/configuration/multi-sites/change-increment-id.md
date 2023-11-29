@@ -2,9 +2,9 @@
 title: 變更增量ID
 description: 變更Commerce資料庫實體的增量ID。
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->您也可以在PayPal的「付款接收偏好設定」中，允許每個商業發票識別碼進行多項付款，以修正PayPal的付款閘道問題。 另請參閱 [PayPal閘道已拒絕請求 — 重複發票問題] 在 _知識庫_.
+>您也可以在PayPal的「付款接收偏好設定」中，允許每個商業發票識別碼進行多項付款，以修正PayPal的付款閘道問題。 另請參閱 [PayPal閘道已拒絕請求 — 重複發票問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) 在 _知識庫_.
 
 ## 必備條件步驟
 
@@ -55,7 +55,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 
 >[!INFO]
 >
-重要：新的增量值必須大於目前值。
+>重要：新的增量值必須大於目前值。
 
 執行以下查詢之後：
 
@@ -74,6 +74,6 @@ ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 
 <!-- Link Definitions -->
 
-[PayPal閘道已拒絕請求 — 重複發票問題]: https://support.magento.com/hc/en-us/articles/115002457473
+[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
 [建立資料庫備份]: https://support.magento.com/hc/en-us/articles/360003254334
 [任何支援的版本]
