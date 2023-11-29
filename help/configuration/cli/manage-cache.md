@@ -2,9 +2,9 @@
 title: 管理快取
 description: 管理快取型別並檢視快取狀態。
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 9476a8ee2ce49e635e17fbb25c74656ba30bf930
+source-git-commit: 604e2a1461e2cbbcc498dfed6018ba640efe8cde
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Commerce 2的快取型別如下：
 | 快取型別「易記」名稱 | 快取型別代碼名稱 | 說明 |
 |--- |--- |--- |
 | 設定 | 設定 | Commerce會從所有模組收集設定、合併設定，並將合併的結果儲存至快取。 此快取也包含儲存在檔案系統和資料庫中的存放區特定設定。 修改組態檔後，請清除或排清此快取型別。 |
-| 版面 | 版面 | 編譯的頁面配置（也就是來自所有元件的配置元件）。 在修改版面配置檔案後，清除或排清此快取型別。 |
+| 版面配置 | 版面 | 編譯的頁面配置（也就是來自所有元件的配置元件）。 在修改版面配置檔案後，清除或排清此快取型別。 |
 | 封鎖HTML輸出 | block_html | 每個區塊的頁面片段HTML。 修改檢視圖層後，請清除或排清此快取型別。 |
 | 集合資料 | 集合 | 資料庫查詢的結果。 如有必要，Commerce會自動清理此快取，但第三方開發人員可以將任何資料放入快取的任何區段中。 如果您的自訂模組使用邏輯而導致Commerce無法清除的快取專案，請清除或清除此快取型別。 |
 | DDL | db_ddl | 資料庫結構描述。 如有必要，Commerce會自動清理此快取，但第三方開發人員可以將任何資料放入快取的任何區段中。 在自訂變更資料庫結構描述後，清除或排清此快取型別。 （換言之，此更新不屬於Commerce本身。） 自動更新資料庫架構的一種方法是使用 `magento setup:db-schema:upgrade` 命令。 |
@@ -34,6 +34,7 @@ Commerce 2的快取型別如下：
 | Web服務設定 | config_webservice | 快取Web API結構。 |
 | 客戶通知 | customer_notification | 顯示在使用者介面中的臨時通知。 |
 | 管理員UI SDK快取 | admin_ui_sdk | 快取使用新增的管理自訂 [Adobe Commerce管理員UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
+| Webhooks回應快取 | webhooks_response | 將回應快取至 [webhook請求](https://developer.adobe.com/commerce/extensibility/webhooks/). |
 
 ## 檢視快取狀態
 
