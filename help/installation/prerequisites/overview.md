@@ -2,9 +2,9 @@
 title: 內部部署安裝必備條件
 description: 深入瞭解Adobe Commerce和Magento Open Source的內部安裝所需的軟體相依性。
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -66,9 +66,11 @@ Server built:   Jul 23 2017 14:17:29
 
 ### PHP
 
-另請參閱 [系統需求](../system-requirements.md) PHP和的支援版本 [PHP] 以滿足PHP需求。
+另請參閱 [系統需求](../system-requirements.md) PHP和的支援版本 [PHP](../system-requirements.md#php-settings) 以滿足PHP需求。
 
 ### MySQL
+
+檢查您是否有相容的MySQL版本，適用於您正在安裝的Adobe Commerce或Magento Open Source版本。 另請參閱 [系統需求](../system-requirements.md) 支援版本。
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -80,7 +82,7 @@ mysql -u <database root user or database owner name> -p
 mysql -u magento -p
 ```
 
-檢查您是否有正確版本的MySQL，適用於您正在安裝的Adobe Commerce或Magento Open Source版本([如需支援的版本，請參閱此處](../system-requirements.md). 以下結果表示您正在執行的版本。)
+下列結果表示您正在執行的版本。
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
