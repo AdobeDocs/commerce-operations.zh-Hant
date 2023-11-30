@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2727ddb18995ac2163276a0aa8573161add48971
+source-git-commit: 580a15c908fc8ac4ef5d62582dfdd87d75dde994
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '766'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ### 微幅變更
 
-若您出於好意想貢獻微幅更新內容，請前往文章，並按一下 **編輯** 文章中的連結，會前往文章的GitHub來源。 然後，只需使用GitHub UI進行更新即可。 檢視一般 [Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 以取得詳細資訊。
+若您正在貢獻微幅更新內容，請瀏覽該文章，然後按一下顯示在該文章底部的意見回饋區域，並按一下 **詳細的意見回饋選項**，然後按一下 **建議編輯** 前往GitHub上的Markdown來源檔案。 使用GitHub UI進行更新。 檢視一般 [Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 以取得詳細資訊。
 
 Adobe使用條款涵蓋您在本存放庫為檔案和程式碼範例提交的小幅更正或釐清。
 
