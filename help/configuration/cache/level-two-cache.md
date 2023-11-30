@@ -3,9 +3,9 @@ title: L2快取設定
 description: 瞭解如何設定L2快取。
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -47,8 +47,7 @@ Commerce會將雜湊資料版本儲存在Redis中，並在一般索引鍵後面�
                 'local_backend' => 'Cm_Cache_Backend_File',
                 'local_backend_options' => [
                     'cache_dir' => '/dev/shm/'
-                ],
-                'use_stale_cache' => false,
+                ]
             ],
             'frontend_options' => [
                 'write_control' => false,
@@ -69,8 +68,7 @@ Commerce會將雜湊資料版本儲存在Redis中，並在一般索引鍵後面�
    - `remote_backend_options` 是遠端快取設定。
    - `local_backend` 是本機快取實作： `Cm_Cache_Backend_File`
    - `local_backend_options` 是本機快取設定。
-      - `cache_dir` 是儲存本機快取之目錄的檔案快取特定選項。
-   - `use_stale_cache` 是啟用或停用使用過時快取的標幟。
+   - `cache_dir` 是儲存本機快取之目錄的檔案快取特定選項。
 
 Adobe建議使用Redis進行遠端快取(`\Magento\Framework\Cache\Backend\Redis`)和 `Cm_Cache_Backend_File` 對於共用記憶體中資料的本機快取，使用： `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
@@ -94,6 +92,8 @@ Adobe建議啟用 `use_stale_cache` 選項僅適用於從中獲益最大的快�
 - `reflection`
 - `translate`
 
+Adobe不建議啟用 `use_stale_cache` 的選項 `default` 快取型別。
+
 下列程式碼顯示設定範例：
 
 ```php
@@ -114,8 +114,7 @@ Adobe建議啟用 `use_stale_cache` 選項僅適用於從中獲益最大的快�
                 'local_backend' => 'Cm_Cache_Backend_File',
                 'local_backend_options' => [
                     'cache_dir' => '/dev/shm/'
-                ],
-                'use_stale_cache' => false,
+                ]
             ],
             'frontend_options' => [
                 'write_control' => false,
