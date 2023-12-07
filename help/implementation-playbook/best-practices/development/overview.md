@@ -4,9 +4,9 @@ description: 瞭解Adobe Commerce專案開發階段的實作最佳實務。
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+source-git-commit: ce386611834c4199e34b5d95ce76254957821f46
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 2%
 ## 檔案最佳化
 
 | 最佳實務 | 說明 |
-|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [目錄影像調整大小](catalog-image-resizing.md) | 在商店投入生產之前提供影像調整大小的指引，以確保最佳效能 |
 | [CSS與JS](optimize-css-js-files.md) | 從管理員或命令列合併及縮小階層式樣式表(CSS)和JavaScript (JS)檔案 |
 | [影像](image-optimization.md) | 最佳化影像並使用Fastly最佳化回應時間 |
@@ -62,10 +62,11 @@ ht-degree: 2%
 ## PHP開發
 
 | 最佳實務 | 說明 |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [例外狀況處理](exception-handling.md) | 說明記錄例外狀況的建議方法 |
 | [擴充功能](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | 說明開發模式，以協助確保擴充功能、未來Adobe Commerce版本和其他自訂擴充功能之間的相容性 |
 | [私人內容區塊](private-content-block-configuration.md) | 設定私人內容區塊以最佳化店面效能 |
+| [修改核心和第三方PHP程式碼](modifying-core-and-third-party-code.md) | 修改您未撰寫或未直接控制之任何程式碼的功能、結果或輸入 |
 
 ## 平台和服務
 
@@ -74,4 +75,4 @@ ht-degree: 2%
 | [建置和部署](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | 說明在雲端基礎結構專案上建置和部署Adobe Commerce階段的最佳做法 |
 | 偵錯 | 系統地有效偵錯Adobe Commerce架構 |
 | [靜態內容部署](static-content-deployment.md) | 避免靜態內容未出現在店面的問題 |
-| [疑難排解](troubleshooting.md) | 疑難排解常見的Adobe Commerce實作問題 |
+| [疑難排除](troubleshooting.md) | 疑難排解常見的Adobe Commerce實作問題 |
