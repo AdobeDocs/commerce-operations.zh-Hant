@@ -3,9 +3,9 @@ title: 靜態內容快取
 description: 瞭解靜態內容簽署以及如何啟用或停用此功能。
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,10 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 
 根據預設，Commerce會啟用此功能，Adobe建議啟用此功能，以防止瀏覽器提供舊靜態資源時出現問題。
 
-您可以在中找到此功能的組態 [**[!UICONTROL Stores]**>設定>設定>**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+靜態內容簽章的設定已存取 [**[!UICONTROL Stores]**>設定>設定>**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+
+- **僅限內部部署**：如果您的網站為 **非** 在 [生產模式](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **雲端**：此設定為隱藏，因為生產模式是強制性的；因此，您必須使用命令列，如下所示。
 
 ![靜態檔案設定](../../assets/configuration/static-files-settings.png)
 
