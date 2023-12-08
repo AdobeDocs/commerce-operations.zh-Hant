@@ -1,7 +1,7 @@
 ---
-source-git-commit: 20add0a748e8df38dff48a779c63e1177d2a022d
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >雖然這些發行說明中所述的增強功能和錯誤修正程式碼與Adobe Commerce捆綁在一起，但其中幾個專案(例如B2B、頁面產生器和Progressive Web Application(PWA) Studio)也獨立發行。 這些專案的錯誤修正記錄在每個專案檔案中提供的個別專案特定發行資訊中。 另請參閱 [產品版本總覽](/help/release/release-notes/overview.md).
+
+## PHP程式控制 {#php-process-control}
+
+在平行模式下執行索引器之前，您必須啟用「程式控制」支援(`pcntl`)。 另請參閱 [安裝](https://www.php.net/manual/en/pcntl.installation.php) 在PHP檔案中。

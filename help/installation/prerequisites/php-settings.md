@@ -3,9 +3,9 @@ title: PHP設定
 description: 按照以下步驟安裝必要的PHP擴充功能，並為Adobe Commerce和Magento Open Source的內部部署安裝設定必要的PHP設定。
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
+source-git-commit: 87e3109518fc06c655a3fc9446e2ecd648775da1
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 0%
 >最新版Adobe Commerce和Magento Open Source至少需要PHP 8.1。另請參閱 [系統需求](../system-requirements.md) PHP的所有支援版本。
 
 如需雲端設定指南，請參閱 [PHP設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) 在 _雲端基礎結構上的Commerce_ 指南。
+
+## PHP程式控制
+
+{{php-process-control}}
 
 ## 驗證是否已安裝PHP
 

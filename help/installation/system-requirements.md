@@ -2,9 +2,9 @@
 title: 系統需求
 description: 請使用此參考資料來識別已在Adobe Commerce和Magento Open Source版本中測試的所需軟體相依性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ad715d1581442fa447e394d88d496ec52519a1c3
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,10 @@ opensearch:
 如需內部部署，請確認PHP OPcache已安裝，請參閱 [PHP設定](prerequisites/php-settings.md). 或如需效能設定的特定指引，請參閱下列軟體建議： [PHP設定](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) 在 _效能最佳實務_ 指南。
 
 如果您必須單獨安裝OPcache，請參閱 [PHP OPcache檔案](https://www.php.net/manual/en/opcache.setup.php).
+
+### PHP程式控制
+
+{{php-process-control}}
 
 ### PHPUnit
 

@@ -2,9 +2,9 @@
 title: 管理索引子
 description: 請參閱如何檢視和管理Commerce索引器的範例。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 795d4e9d1910d0ad826eb6c82ac451ac58e43063
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,8 @@ Catalog Search index has been rebuilt successfully in <time>
 >對於有大量產品、客戶、類別和促銷規則的商店，重新索引所有索引子可能需要很長的時間。
 
 ### 以平行模式重新索引
+
+{{php-process-control}}
 
 索引器具有範圍和多執行緒，以支援在平行模式中重新索引。 它透過索引器的維度來平行處理，並在多個執行緒上執行，以減少處理時間。
 

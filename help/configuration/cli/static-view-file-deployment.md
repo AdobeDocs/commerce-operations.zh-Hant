@@ -2,9 +2,9 @@
 title: 部署靜態檢視檔案
 description: 瞭解在生產模式期間將靜態檔案寫入Commerce檔案系統。
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0a72bc492dfec0a9014a518282a97ab21e59f96d
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 0%
 | `--exclude-theme <theme>` | 部署靜態內容時要排除的主題。 預設值為 **無**.<br>例如， `--exclude-theme Magento/blank` | 否 |
 | `--area (-a)` | 只產生指定區域的檔案。 預設值是不指定任何選項，為所有的區域產生檔案。 有效值為 `adminhtml` 和 `frontend`. 預設值為 **全部**.<br>例如： `--area adminhtml` | 否 |
 | `--exclude-area` | 不要產生指定區域的檔案。 預設值為不排除任何專案，未指定選項。 預設值為 **無**. | 否 |
-| `--jobs (-j)` | 使用指定的作業數目啟用平行處理。 預設值為0 （不要在平行處理程式中執行）。 預設值為 **0**. | 否 |
+| `--jobs (-j)` | 啟用 [平行處理](manage-indexers.md#reindexing-in-parallel-mode) 使用指定的工作數目。 預設值為0 （不要在平行處理程式中執行）。 預設值為 **0**. | 否 |
 | `--symlink-locale` | 為這些區域設定的檔案建立符號連結，這些檔案會傳遞以進行部署，但沒有自訂。 | 否 |
 | `--content-version=CONTENT-VERSION` | 如果在多個節點上執行部署，則可以使用靜態內容的自訂版本，以確保靜態內容版本相同且快取可正常運作。 | 否 |
 | `--no-javascript` | 不要部署JavaScript檔案 | 否 |
