@@ -2,9 +2,9 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 704c3e2934c74ee4b06499bbfc4cb68b0a007a1e
+source-git-commit: 3364434c37935285214451a7d242ae38815f3453
 workflow-type: tm+mt
-source-wordcount: '15669'
+source-wordcount: '19210'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,24 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需的相關資訊 [!DNL quality patches] 由社群建立以進行Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.43 {#v1-1-43}
+
+* **ACSD-54972** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正標準類別URL在變更類別URL後未更新的問題。
+* **ACSD-53636** (適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.5) — 修正具有具有特殊價格子產品的可設定產品之產品清單頁面上未顯示一般價格的問題。
+* **ACSD-54885** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正當管理員使用者使用 *客戶登入* 功能。
+* **ACSD-55610** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正部分取消的訂單折扣金額不正確的問題。
+* **ACSD-55334** (適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.7) — 透過GraphQL回應中的翻譯字典修正標籤翻譯。
+* **ACSD-54739** (適用於Adobe Commerce >=2.4.5 &lt;2.4.7) — 修正相關產品規則未套用產品庫存狀態條件的問題。
+* **ACSD-53925** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正管理員在下列情況下無法透過產品輪播儲存CMS區塊的問題： `catalog_product_price` dimensions-mode設為 *網站*.
+* **ACSD-52714** (適用於Adobe Commerce及Magento Open Source >=2.4.2 &lt;2.4.7) — 修正日期格式設定為時，日期篩選器在管理格線中無法運作的問題 *Y-m-d*.
+* **ACSD-55055** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 改善在購物車中載入購物車價格規則中產品屬性的效能。
+* **ACSD-53790** (適用於Adobe Commerce >=2.4.6 &lt;2.4.7) — 修正可透過REST API為單一產品建立多個RMA的問題。
+* **ACSD-56090** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.5) — 修正GraphQL要求回應所有存放區資料（而非特別要求的存放區資料）的問題。
+* **ACSD-54983** (適用於Adobe Commerce >=2.4.2 &lt;2.4.7) — 修正當使用者狀態設為，無法使用GraphQL要求取得公司使用者UID的問題 *[!UICONTROL Inactive]*.
+* **ACSD-53309** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正 *[!UICONTROL Regular Price]* 標籤（當選取自訂選項時）。
+* **ACSD-55305** (適用於Adobe Commerce >=2.4.4 &lt;2.4.7) — 修正 *[!UICONTROL Edit Company User]* 上的快顯視窗 **[!UICONTROL myAccount]** > **[!UICONTROL Company Structure]** 在熒幕上使用載入器時，頁面會凍結。
+* 更新修補程式：ACSD-49013
 
 ## v1.1.42 {#v1-1-42}
 
