@@ -1,26 +1,28 @@
 ---
 title: 執行升級
-description: 請依照下列步驟升級Adobe Commerce或Magento Open Source專案。
+description: 請依照這些步驟升級Adobe Commerce的內部部署。
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
 
+
 # 執行升級
 
-如果您是透過下列方式安裝Adobe Commerce或Magento Open Source應用程式，則可從命令列進行升級：
+您可以升級 _內部部署_ 如果您是透過下列方式安裝軟體，請從命令列部署Adobe Commerce或Magento Open Source應用程式：
 
-- 使用下載中繼資料 `composer create-project` 命令。
+- 使用下載撰寫器中繼資料 `composer create-project` 命令。
 - 安裝壓縮的封存。
 
 >[!NOTE]
 >
->如果您複製GitHub存放庫，請勿使用此方法來升級。 請改為參閱 [升級Git安裝](../developer/git-installs.md) 以取得升級指示。
+>- 如需雲端基礎結構專案的Adobe Commerce，請參閱 [升級Commerce版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) （在雲端指南中）。
+>- 如果您複製GitHub存放庫，請勿使用此方法來升級。 另請參閱 [升級Git安裝](../developer/git-installs.md).
 
-下列指示說明如何使用Composer進行升級。 Adobe Commerce 2.4.2推出對Composer 2的支援。 如果您嘗試從&lt;2.4.1升級，您必須先使用Composer 1升級到與Composer 2相容的版本（例如，2.4.2） _早於_ 升級至Composer 2以進行> 2.4.2升級。 此外，您必須執行 [支援的版本](../../installation/system-requirements.md) 屬於PHP。
+下列指示說明如何使用Composer封裝管理員進行升級。 Adobe Commerce 2.4.2推出對Composer 2的支援。 如果您嘗試從&lt;2.4.1升級，您必須先使用Composer 1升級到與Composer 2相容的版本（例如，2.4.2） _早於_ 升級至Composer 2以進行> 2.4.2升級。 此外，您必須執行 [支援的版本](../../installation/system-requirements.md) 屬於PHP。
 
 >[!WARNING]
 >
@@ -34,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->請參閱本節結尾的範例，以取得指定不同發行層級的說明。 例如，次要版本、品質修補程式和安全性修補程式。 Adobe Commerce客戶可在正式發行(GA)日期之前兩週存取修補程式。 搶鮮版套件只能透過Composer取得。 在GA之前，您無法在下載入口網站或GitHub上找到他們。 如果您在Composer中找不到這些套件，請聯絡Adobe Commerce支援。
+>請參閱本節結尾的範例，以取得指定不同發行層級的說明。 例如，品質修補程式和安全修補程式。 如果您在Composer中找不到這些套件，請聯絡Adobe Commerce支援。
 
 1. 切換到維護模式，以防止在升級過程中存取您的存放區。
 
@@ -114,7 +116,7 @@ ht-degree: 0%
 
    - `--interactive-root-conflicts`  — （選擇性）可讓您以互動方式檢視及更新任何舊版中的過期值，或與您要升級之版本不相符的任何自訂值。
 
-   - `--force-root-updates`  — （選擇性）以預期的Magento值覆寫所有衝突的自訂值。
+   - `--force-root-updates`  — （選用）以預期的Commerce值覆寫所有衝突的自訂值。
 
    - `--help`  — （選用）提供外掛程式的詳細使用資訊。
 
@@ -142,58 +144,36 @@ _Adobe Commerce_：
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
 ```
 
-### 範例 — 次要版本
-
-次要發行包含新功能、品質修正和安全性修正。 使用Composer指定次要版本。 例如，若要指定Magento Open Source2.4.3的Metapackage：
-
-_Magento Open Source_：
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.0 --no-update
-```
-
-_Adobe Commerce_：
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.0 --no-update
-```
-
 ### 範例 — 品質修補程式
 
-品質修補程式主要包含功能性 _和_ 安全性修正。 但是，它們有時可以包含向後相容的新功能。 使用Composer下載品質修補程式。 例如，若要指定Magento Open Source2.4.1中繼套件：
+品質修補程式主要包含功能性 _和_ 安全性修正。 但是，它們有時可以包含向後相容的新功能。 使用Composer下載品質修補程式。
+
+_Adobe Commerce_：
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
 _Magento Open Source_：
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
-```
-
-_Adobe Commerce_：
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3 --no-update
+composer require-commerce magento/product-community-edition 2.4.6 --no-update
 ```
 
 ### 範例 — 安全性修補程式
 
-安全性修補程式僅包含安全性修正。 這些設定可讓升級程式更快、更輕鬆。
-
-安全性修補程式使用撰寫器命名慣例 `2.4.x-px`. 使用Composer指定修補程式。
-
-_Magento Open Source_：
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.3-p1 --no-update
-```
+安全性修補程式僅包含安全性修正。 這些設定可讓升級程式更快、更輕鬆。 安全性修補程式使用撰寫器命名慣例 `2.4.x-px`.
 
 _Adobe Commerce_：
 
 ```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
+```
+
+_Magento Open Source_：
+
+```bash
+composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
 ## 更新中繼資料
@@ -250,7 +230,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 ## 檢查您的工作
 
-在網頁瀏覽器中開啟店面URL，檢查升級是否成功。 如果您的升級不成功，您的店面將無法正確載入。
+若要檢查升級是否成功，請在網頁瀏覽器中開啟店面URL。 如果您的升級不成功，您的店面將無法正確載入。
 
 如果應用程式失敗並出現  `We're sorry, an error has occurred while generating this email.` 錯誤：
 
