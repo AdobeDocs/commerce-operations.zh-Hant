@@ -2,13 +2,13 @@
 title: 保護您的Commerce網站和基礎架構
 description: 在設定、設定和更新Adobe Commerce安裝時，透過實作安全性最佳實務來維護安全性。
 feature: Best Practices
-source-git-commit: cea5868ee37317ae9adfd8b580cd38c33c19761e
+exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
+source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---
-
 
 # 保護您的Commerce網站和基礎架構
 
@@ -148,14 +148,15 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 在最常見的攻擊中，惡意程式碼會插入客戶存放區的絕對頁首或絕對頁尾中。 在那裡，程式碼會收集客戶在店面中輸入的表單資料，包括客戶登入憑證和結帳表單資料。 然後，這些資料會出於惡意目的傳送到另一個位置，而不是傳送到Commerce後端。 此外，惡意程式碼可能會危及管理員執行代碼，以假表單取代原始付款表單，並覆寫付款提供者所設定的任何保護。
 
 使用者端信用卡掠奪者是一種將程式碼嵌入商家網站內容的惡意軟體，可在使用者的瀏覽器中執行，如下圖所示。
-在某些動作（例如使用者提交表單或修改欄位值）發生後，Skimmer會將資料序列化並傳送至第三方端點。 這些端點通常是其他受到侵害的網站，會作為轉送資料到其最終目的地的轉送。
 
 ![針對電子商務網站的惡意程式碼攻擊資料流程](../../../assets/playbooks/malware-data-flow.svg)
 
 在某些動作（例如使用者提交表單或修改欄位值）發生後，Skimmer會將資料序列化並傳送至第三方端點。 這些端點通常是其他受到侵害的網站，會作為轉送資料到其最終目的地的轉送。
 
 
-如果商務網站遭到攻擊，請遵循的Adobe Commerce最佳實務 [回應安全性事件](../maintenance/respond-to-security-incident.md).
+>[!TIP]
+>
+>如果Commerce網站受到惡意程式碼攻擊的影響，請遵循適用於的Adobe Commerce最佳實務 [回應安全性事件](../maintenance/respond-to-security-incident.md).
 
 ### 瞭解最常見的攻擊
 
