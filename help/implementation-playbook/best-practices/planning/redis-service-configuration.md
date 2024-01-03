@@ -4,9 +4,9 @@ description: 瞭解如何使用Adobe Commerce的延伸Redis快取實作來改善
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 156e6412b9f94b74bad040b698f466808b0360e3
+source-git-commit: 6772c4fe31cfcd18463b9112f12a2dc285b39324
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,49 @@ stage:
 >[!NOTE]
 >
 >確認您使用的是最新版本的 `ece-tools` 封裝。 如果沒有， [升級至最新版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). 您可以使用檢查安裝在本機環境中的版本 `composer show magento/ece-tools` CLI命令。
+
+
+### L2快取記憶體大小調整(Adobe Commerce Cloud)
+
+L2快取使用 [暫存檔案系統](https://en.wikipedia.org/wiki/Tmpfs) 作為儲存機制。 與專門化的索引鍵值資料庫系統相比，暫存檔案系統沒有控制記憶體使用的索引鍵逐出原則。
+
+缺少記憶體使用量控制會累積過時的快取記憶體，導致L2快取記憶體使用量隨著時間增長。
+
+為了避免L2快取記憶體耗盡，Adobe Commerce會在達到特定臨界值時清除儲存空間。 預設臨界值為95%。
+
+請務必根據快取儲存裝置的專案需求，調整L2快取記憶體的最大使用量。 使用下列其中一種方法來設定記憶體快取大小：
+
+- 建立支援票證以請求 `/dev/shm` 掛載。
+- 調整 `cleanup_percentage` 應用程式層級的屬性，以限制儲存體的最大填入百分比。 剩餘的可用記憶體可供其他服務使用。
+您可以在快取組態群組下的部署組態中調整組態 `cache/frontend/default/backend_options/cleanup_percentage`.
+
+>[!NOTE]
+>
+>此 `cleanup_percentage` 可設定的選項已在Adobe Commerce 2.4.4中推出。
+
+下列程式碼顯示 `.magento.env.yaml` 檔案：
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+快取需求可能會因專案設定和自訂第三方程式碼而異。 L2快取記憶體大小調整範圍可讓L2快取記憶體在不發生太多臨界值點選的情況下運作。
+理想情況下，L2快取記憶體的使用量應該穩定在低於臨界值的特定層級，以避免頻繁的儲存清除。
+
+您可以使用下列CLI命令來檢查叢集每個節點上的L2快取記憶體使用量，並尋找 `/dev/shm` 行。
+使用方式可能因不同節點而異，但應會收斂至相同值。
+
+```bash
+df -h
+```
 
 ## 啟用Redis從屬連線
 
