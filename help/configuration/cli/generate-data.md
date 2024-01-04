@@ -3,10 +3,10 @@ title: 產生效能測試資料
 description: 瞭解如何產生大量資料以用於效能測試。
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -51,6 +51,8 @@ ht-degree: 9%
 >[!WARNING]
 >
 >在執行資料產生器之前，請停用伺服器上執行的所有cron工作。 停用cron作業可防止資料產生器執行與作用中cron作業衝突的動作，並避免不必要的錯誤。
+>
+>如果您打算使用實作事件 [!DNL Adobe I/O Events for Adobe Commerce] 測試效能時，請先執行此命令再進行訂閱 [事件](https://developer.adobe.com/commerce/extensibility/events/). 先訂閱事件可能會導致錯誤。
 
 依照本節所述執行命令。 命令執行後，您必須 [重新索引所有索引子](../cli/manage-indexers.md).
 
