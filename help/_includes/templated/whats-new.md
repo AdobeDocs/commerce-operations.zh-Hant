@@ -1,8 +1,8 @@
 ---
-source-git-commit: ef734b35490a3aa37a81557119642a90af87a138
+source-git-commit: 903a5b52dd96423b7ac29997082b2feccdd3e10a
 workflow-type: tm+mt
-source-wordcount: '40'
-ht-degree: 2%
+source-wordcount: '84'
+ht-degree: 3%
 
 ---
 # 新功能範本
@@ -27,6 +27,46 @@ ht-degree: 2%
 </td>
       <td>主要更新</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> （認可）</td>
+    </tr>
+  </tbody>
+</table><!-- date_group --><!-- month_group -->
+
+### 2023年12月11日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已發佈 <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">發行說明</a> 適用於1.1.43 Quality Patches Tool (QPT)套件發行。</p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/90447e9b8c00c4901d0d62c9de36f21df55385dc">90447e</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2023年12月7日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增最佳實務主題，關於 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-code.html">修改核心和第三方PHP程式碼</a>.</p>
+</td>
+      <td>新主題</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21c0b6faab093bf9db860ce2f4d56072c4cc6e49">21c0b6</a> （認可）</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
