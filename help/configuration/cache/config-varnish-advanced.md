@@ -3,9 +3,9 @@ title: 進階清漆組態
 description: 設定進階Varnish功能，包括健康狀態檢查、寬限和saint模式。
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Varnish提供數項功能，可防止客戶在Commerce伺服器無法正常運作時遭遇長時間延遲和逾時。 這些功能可在以下位置設定： `default.vcl` 檔案。 本主題說明Commerce在您從Admin下載的VCL （清漆組態語言）檔案中提供的新增功能。
 
-請參閱 [清漆參考手冊](https://varnish-cache.org/docs/6.3/reference/index.html) 以取得有關使用清漆組態語言的詳細資訊。
+請參閱 [清漆參考手冊](https://varnish-cache.org/docs/index.html) 以取得有關使用清漆組態語言的詳細資訊。
 
 ## 健康情況檢查
 
@@ -36,7 +36,7 @@ Commerce會定義下列預設健康狀態檢查：
 
 此 `health_check.php` 指令碼位於 `pub` 目錄。 如果您的Commerce根目錄為 `pub`，然後請務必變更中的路徑 `url` 引數來源 `/pub/health_check.php` 至 `health_check.php`.
 
-如需詳細資訊，請參閱 [清漆健康狀態檢查](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) 檔案。
+如需詳細資訊，請參閱 [清漆健康狀態檢查](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) 檔案。
 
 ## 寬限模式
 
@@ -85,10 +85,7 @@ bin/magento cache:flush
 
 ### 安裝
 
-Saint模式不是主要Varnish套件的一部分。 它是一個單獨版本控制 `vmod` 必須下載並安裝的物件。 因此，您應該從來源重新編譯Varnish，如下列文章所述：
-
-- [安裝清漆6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
-- [安裝Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
+Saint模式不是主要Varnish套件的一部分。 它是一個單獨版本控制 `vmod` 必須下載並安裝的物件。 因此，您必須從來源重新編譯Varnish，如 [安裝指示](https://varnish-cache.org/docs/index.html) 適用於您的Varnish版本。
 
 重新編譯之後，您可以安裝Saint模式模組。 一般而言，請遵循下列步驟：
 

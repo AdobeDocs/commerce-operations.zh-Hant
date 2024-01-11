@@ -3,9 +3,9 @@ title: 設定及使用清漆
 description: 瞭解Varnish如何儲存檔案並改善HTTP流量。
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 [清漆快取] 是開放原始碼Web應用程式加速器(也稱為 _HTTP加速器_ 或 _快取HTTP反向proxy_)。 Varnish會將（或快取）檔案或檔案片段儲存在記憶體中，如此可讓Varnish減少回應時間，以及未來同等要求的網路頻寬消耗。 與Apache和nginx等網頁伺服器不同，Varnish是專為搭配HTTP通訊協定使用而設計。
 
-Commerce 2.4.2已使用Varnish 6.4進行測試。Commerce 2.4.x與Varnish 6.x相容
+[系統需求](../../installation/system-requirements.md) 列出支援的Varnish版本
 
 >[!WARNING]
 >
->三 _強烈建議_ 您會在生產中使用光亮漆。 內建的全頁快取 — 至檔案系統或 [資料庫] — 比Varnish慢得多，Varnish的設計目的是加速HTTP流量。
+>三 _強烈建議_ 您會在生產中使用光亮漆。 內建的全頁快取 — 至檔案系統或 [資料庫](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) — 比Varnish慢得多，Varnish的設計目的是加速HTTP流量。
 
 如需清漆的詳細資訊，請參閱：
 
@@ -53,9 +53,9 @@ Commerce 2.4.2已使用Varnish 6.4進行測試。Commerce 2.4.x與Varnish 6.x相
 
 >[!NOTE]
 >
-- 除非有註明，否則您必須以使用者身分輸入本主題中討論的所有命令 `root` 許可權。
+>- 除非有註明，否則您必須以使用者身分輸入本主題中討論的所有命令 `root` 許可權。
 >
-- 本主題是針對CentOS和Apache 2.4上的Varnish所撰寫。如果您是在不同的環境中設定Varnish，有些指令可能會不同。 如需詳細資訊，請參閱Varnish檔案。
+>- 本主題是針對CentOS和Apache 2.4上的Varnish所撰寫。如果您是在不同的環境中設定Varnish，有些指令可能會不同。 如需詳細資訊，請參閱Varnish檔案。
 
 ## 已知問題
 
@@ -96,7 +96,7 @@ Commerce 2.4.2已使用Varnish 6.4進行測試。Commerce 2.4.x與Varnish 6.x相
 
 >[!INFO]
 >
-本主題僅涵蓋前述清單中的預設選項。 有許多其他方法可在複雜情況下設定快取（例如使用內容傳遞網路）；這些方法不在本指南的涵蓋範圍內。
+>本主題僅涵蓋前述清單中的預設選項。 有許多其他方法可在複雜情況下設定快取（例如使用內容傳遞網路）；這些方法不在本指南的涵蓋範圍內。
 
 在第一次瀏覽器請求時，可快取的資產會從Varnish傳送至使用者端瀏覽器，並在瀏覽器上快取。
 
@@ -120,7 +120,7 @@ Commerce 2.4.2已使用Varnish 6.4進行測試。Commerce 2.4.x與Varnish 6.x相
 
 >[!NOTE]
 >
-大部分靜態資產都有HTTP 200 （確定）狀態代碼，表示資產是從伺服器擷取。
+>大部分靜態資產都有HTTP 200 （確定）狀態代碼，表示資產是從伺服器擷取。
 
 ### 第二個瀏覽器請求
 
@@ -148,7 +148,6 @@ Commerce 2.4.2已使用Varnish 6.4進行測試。Commerce 2.4.x與Varnish 6.x相
 
 <!-- Link Definitions -->
 
-[資料庫]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [大亮油漆圖片]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [清漆快取]: https://varnish-cache.org
 [清漆啟動選項]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options

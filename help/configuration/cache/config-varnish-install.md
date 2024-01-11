@@ -3,9 +3,9 @@ title: 安裝清漆
 description: 請參閱有關安裝光澤漆的建議。
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,4 @@ ht-degree: 0%
 varnishd -V
 ```
 
-範例如下：
-
-```terminal
-varnishd (varnish-6.3.2 revision 199de9b)
-Copyright (c) 2006 Verdens Gang AS
-Copyright (c) 2006-2019 Varnish Software AS
-```
-
-請確認版本為6.x，然後再繼續。 如果您執行版本低於6.x，則必須升級至支援的版本。 如需詳細資訊，請參閱Varnish安裝檔案。
+請確定 [Adobe Commerce和Magento Open Source支援](../../installation/system-requirements.md) 已安裝的Varnish版本，然後再繼續。 如果您執行的是不支援的版本，則必須升級至支援的版本。 如需詳細資訊，請參閱Varnish安裝檔案。
