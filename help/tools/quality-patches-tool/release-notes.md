@@ -2,9 +2,9 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 3364434c37935285214451a7d242ae38815f3453
+source-git-commit: 9d75675aed671b995f7bdda43abc5a06f2c03ee8
 workflow-type: tm+mt
-source-wordcount: '19210'
+source-wordcount: '19551'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,20 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需的相關資訊 [!DNL quality patches] 由社群建立以進行Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.44 {#v1-1-44}
+
+* **ACSD-56790** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正使用排序類別產品時，將使用者重新導向至管理員控制面板的問題 **從庫存移至底部** 選項與 `Invalid security or form key. Please refresh the page` 錯誤會出現在畫面頂端。
+* **ACSD-56280** (適用於Adobe Commerce >=2.4.4 &lt;2.4.7) — 修正從禮品註冊處訂購專案時發生例外狀況的問題。
+* **ACSD-56246** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正當產品的已排程更新作用中時，資料會從自訂多選屬性中移除的問題。
+* **ACSD-56193** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.4) — 修正使用Page Builder在類別說明中使用排程區塊時，Varnish/Fastly快取未更新的問題。
+* **ACSD-56158** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) — 修正「購物車」查詢傳回每個稅捐規則之總稅捐值的問題。
+* **ACSD-56023** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正啟用快取時，CMS頁面上的Widget內容未更新的問題。
+* **ACSD-55427** (適用於Adobe Commerce >=2.4.5 &lt;2.4.7) — 修正管理員使用者無法從管理員的產品頁面取消指派共用目錄中的產品的問題。
+* **ACSD-55352** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正以下問題：使用客戶獎勵點數建立部分銷退折讓單後，訂單狀態會變更為「已關閉」，且銷退折讓單選項會從管理員訂單頁面消失。
+* **ACSD-55231** (適用於Adobe Commerce >=2.4.2 &lt;2.4.7) — 修正無法使用快速訂購功能將產品新增至購物車的問題。
+* **ACSD-54283** (適用於Adobe Commerce >=2.4.3 &lt;2.4.4) — 修正未指派至預設共用目錄（一般群組）的產品/類別仍包含在XML Sitemap中的問題。
+* 更新修補程式：ACSD-52041、ACSD-54040、ACSD-51819
 
 ## v1.1.43 {#v1-1-43}
 
@@ -53,7 +67,7 @@ ht-degree: 0%
 * **ACSD-54060** (適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.7) — 修正受限管理員無法儲存產品（若產品是指派給其他範圍之其他產品的子系）的問題。
 * **ACSD-48910** (適用於Adobe Commerce及Magento Open Source >=2.4.5 &lt;2.4.6) — 修正訂單開立商業發票及出貨後，即使訂單數量仍非零，指定至多個來源的套件產品也會無存貨的問題。
 * **ACSD-55381** (適用於Adobe Commerce >=2.4.2 &lt;2.4.7) — 修正查詢時的內部伺服器錯誤 `configurable_product_option_uid` 和 `configurable_product_option_value_uid` 來自的欄位 [!DNL B2B] *[!UICONTROL Requisition list]* via [!DNL GraphQL].
-* **ACSD-55628** (Adobe Commerce >=2.4.4-p2 &lt; 2.4.5 || >=2.4.5-p1 &lt; 2.4.6) — 修正了在公司登錄檔單上傳檔案，以及取代店面中客戶屬性的檔案。
+* **ACSD-55628** (Adobe Commerce >=2.4.4-p2 &lt; 2.4.5 || >=2.4.5-p1 &lt; 2.4.6) — 修正了在公司登錄檔單上傳檔案和取代店面中客戶屬性的檔案。
 * 更新修補程式：ACSD-51240、ACSD-51890、ACSD-53098
 
 ## v1.1.41 {#v1-1-41}
@@ -79,7 +93,7 @@ ht-degree: 0%
 * **ACSD-54472** (適用於Adobe Commerce >=2.4.6 &lt;2.4.7) — 修正被拒絕公司的客戶仍可驗證，以及被封鎖或被拒絕公司的客戶仍可下訂單的問題。 此修補程式新增了GraphQL端點的額外驗證。
 * **ACSD-52801** (Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 新增在GraphQL中搜尋產品時進行部分比對的選項。
 * **ACSD-55004** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正上傳大於中設定的值的匯入檔案時，驗證器當機的問題 `php.ini`.
-* **ACSD-54989** (適用於Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) — 修正公司管理員在 *[!UICONTROL Enable Purchase Orders]* 設為 *[!UICONTROL Yes]* 和 *[!UICONTROL Purchase Order]* 設為 *[!UICONTROL No]*.
+* **ACSD-54989** (適用於Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) — 修正公司管理員在下列情況下無法下單的問題 *[!UICONTROL Enable Purchase Orders]* 設為 *[!UICONTROL Yes]* 和 *[!UICONTROL Purchase Order]* 設為 *[!UICONTROL No]*.
 * **ACSD-54007** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正錯誤 *未定義的陣列索引鍵「_scope」* 匯入客戶資料時。
 * **ACSD-55031** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.6) — 修正 *型別「mixed」不能為空值* 編譯時發生錯誤。
 * **ACSD-54961** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正受限制的管理員使用者無法大量更新的問題 *產品評論* 狀態。
@@ -230,7 +244,7 @@ ht-degree: 0%
 
 ## v1.1.31 {#v1-1-31}
 
-* **ACSD-50345** (適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.4 || >=2.4.4-p1 &lt;2.4.6) — 修正Recaptcha v2在提交失敗付款後未重新載入的問題。
+* **ACSD-50345** (適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.4 || >=2.4.4-p1 &lt;2.4.6) — 修正Recaptcha v2在提交失敗的付款後未重新載入的問題。
 * **ACSD-50817** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.7) — 最佳化Cron工作 `sales_clean_quotes` 以更快的速度執行。
 * **ACSD-49392** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.0) || >= 2.4.1 &lt;2.4.7) — 修正當套件產品的部分退款後，訂單狀態變更為已關閉的問題。
 * **ACSD-51036** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.5) — 修正同時執行REST API呼叫期間的競爭條件導致 [!UICONTROL Items Ordered] 表格。
@@ -300,7 +314,7 @@ ht-degree: 0%
 * **ACSD-48362** (適用於Adobe Commerce >=2.4.1 &lt;2.4.7) — 修正使用可轉讓報價下訂單時，使用預設送貨地址而非新送貨地址的問題。
 * **ACSD-48059** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正商家無法儲存「[!UICONTROL Match product by rule]」在類別中。
 * **ACSD-48216** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.3.8) || >=2.4.0 &lt;2.4.7) — 修正以下問題： [!UICONTROL AUTO_INCREMENT] 的 [!UICONTROL inventory_source_item] 表格於 [!UICONTROL UPDATE] 作業。
-* **ACSD-47908** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.3.8) || >=2.4.0 &lt;2.4.7) — 修正結帳期間，在出貨步驟上選取來源和數量時，出現「預期值小於或等於0 」的錯誤。
+* **ACSD-47908** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.3.8) || >=2.4.0 &lt;2.4.7) — 修正結帳期間，在出貨步驟上選取來源和數量時，出現「預期值小於或等於0」的錯誤。
 * **ACSD-49497** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.6) — 修正訂單在出貨後仍處於處理狀態且套用部分退款的問題。
 * **ACSD-48694** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.3.8) || >=2.4.1 &lt;2.4.7) — 修正錯誤「要求的狀態變更無效」導致客戶無法下訂單的問題。
 * **ACSD-49013** (適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.7) — 修正使用大量API建立客戶時，電子郵件確認未轉譯為網站地區設定的問題。
@@ -799,7 +813,7 @@ ht-degree: 0%
 * **MDVA-32133** (*若為Adobe Commerce >=2.4.0 &lt;2.4.1*) — 修正某些情況下媒體集未從頁面產生器載入的問題。
 * **MDVA-12304** (*適用於Adobe Commerce >=2.3.0*) — 將Cookie的最大數量從50增加到200。
 * **MDVA-32632** (*若為Adobe Commerce >=2.3.2 &lt;2.3.5*) — 修正訂單出現在付款系統中，但未出現在Adobe Commerce中的問題。
-* **MDVA-32449** (*若為Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 || >=2.4.1 &lt;2.4.2 （含B2B擴充功能）*) — 修正訂單歷史記錄載入非常緩慢或完全沒有載入的問題。
+* **MDVA-32449** (*若為Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 || >=2.4.1 &lt;2.4.2含B2B擴充功能*) — 修正訂單歷史記錄載入非常緩慢或完全沒有載入的問題。
 * **MDVA-32739** (*若為Adobe Commerce >=2.3.0 &lt;2.4.2*) — 修正啟用非同步電子郵件通知傳送舊銷售電子郵件的問題。
 
 ## v1.0.11 {#v1-0-11}
