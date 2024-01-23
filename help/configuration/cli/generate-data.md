@@ -3,18 +3,14 @@ title: 產生效能測試資料
 description: 瞭解如何產生大量資料以用於效能測試。
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
+source-git-commit: d4a6d5cd181c7c4426914bbe481f4d5d1e828b5e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '762'
+ht-degree: 9%
 
 ---
 
 # 效能測試資料
-
-若要使用 [Performance Toolkit](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) 或其他效能測試工具，您必須產生大量資料，例如商店、類別和產品。
-
-{{file-system-owner}}
 
 ## 設定檔
 
@@ -47,6 +43,8 @@ ht-degree: 0%
 | `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
 ### 執行資料產生器
+
+{{file-system-owner}}
 
 >[!WARNING]
 >
