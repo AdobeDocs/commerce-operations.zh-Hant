@@ -2,9 +2,9 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 9d75675aed671b995f7bdda43abc5a06f2c03ee8
+source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
 workflow-type: tm+mt
-source-wordcount: '19551'
+source-wordcount: '19799'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需的相關資訊 [!DNL quality patches] 由社群建立以進行Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.45 {#v1-1-45}
+
+* **ACSD-56886** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正排程更新停用兩個子項產品其中之一時，可設定產品無存貨的問題。
+* **ACSD-56616** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.6) — 修正當簡易產品無庫存時，店面捆綁產品顯示為庫存的問題。
+* **ACSD-56515** (適用於Adobe Commerce >=2.4.2 &lt;2.4.7) — 修正具有網站層級許可權的管理員無法新增或編輯動態區塊的問題。
+* **ACSD-56447** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正透過平行REST Web API請求將相同產品新增到購物車導致購物車中有兩個單獨專案的問題。
+* **ACSD-56415** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) — 修正由於 `DELETE` 當資料庫有大量要索引的部分價格資料時進行查詢。
+* **ACSD-54965** (適用於Adobe Commerce >=2.4.5 &lt;2.4.6) — 修正將產品僅指派給自訂庫存時，視覺銷售格線未顯示正確庫存的問題。
+* **ACSD-52824** (適用於Adobe Commerce >=2.4.5 &lt;2.4.7) — 修正公司設定中停用PayPal Express、Google Pay及Apple Pay按鈕時，公司客戶會看到這些付款方式的問題。
+* 更新修補程式：ACSD-56193
 
 ## v1.1.44 {#v1-1-44}
 
