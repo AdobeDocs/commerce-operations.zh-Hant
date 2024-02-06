@@ -1,11 +1,11 @@
 ---
 title: 發行排程
-description: 了解 Adobe 預計何時宣布推出 Adobe Commerce 的重要新功能。
+description: 瞭解Adobe計畫何時宣佈Adobe Commerce新功能的發行。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 7771c4f225f7f6f9729c432ad1bcb1dcd8b2dc40
+source-git-commit: cbcc688fb5b356b99d103259e85117bda82f36b9
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '504'
+ht-degree: 0%
 
 ---
 
