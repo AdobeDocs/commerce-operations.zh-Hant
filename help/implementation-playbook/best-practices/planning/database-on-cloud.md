@@ -4,9 +4,9 @@ description: 瞭解如何在雲端基礎結構上部署Adobe Commerce時，設�
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -100,5 +100,5 @@ Adobe建議您一律在雲端基礎結構專案中為您的Adobe Commerce設定E
 ## 其他資訊
 
 - [MySQL儲存引擎](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
-- [MariaDB的Adobe Commerce 2.3.5升級先決條件](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+- [MariaDB的Adobe Commerce 2.3.5升級先決條件](../maintenance/mariadb-upgrade.md)
 - [解決資料庫效能問題的最佳實務](../maintenance/resolve-database-performance-issues.md)

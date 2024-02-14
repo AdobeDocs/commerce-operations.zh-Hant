@@ -3,10 +3,10 @@ title: 實作維護階段
 description: 瞭解Adobe Commerce專案維護階段的實作最佳實務。
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 00036391366625ab256a4dc682d1ecbe9e46fa23
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 2%
+source-wordcount: '371'
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 2%
 | 最佳實務 | 說明 |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [解決資料庫效能問題&#x200B;。](resolve-database-performance-issues.md) | 修正部署在雲端基礎結構上的Adobe Commerce網站上導致效能緩慢的資料庫問題。 |
-| [MariaDB的Adobe Commerce 2.3.5升級先決條件&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md) | 準備您的MariaDB資料庫以進行升級。 |
+| [MariaDB的Adobe Commerce升級必要條件&#x200B;](mariadb-upgrade.md) | 準備您的MariaDB資料庫以進行升級。 |
 
 ## 功能增強功能
 

@@ -2,9 +2,9 @@
 title: 完成必要條件
 description: 完成這些先決條件步驟，準備您的Adobe Commerce專案以進行升級。
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Adobe Commerce 2.4.6已匯入對Elasticsearch 8.x的支援。下列指示顯示E
 
 ## 轉換資料庫表格格式
 
-您必須將所有資料庫表格的格式從 `COMPACT` 至 `DYNAMIC`. 您也必須轉換儲存引擎型別 `MyISAM` 至 `InnoDB`. 另請參閱 [最佳實務](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
+您必須將所有資料庫表格的格式從 `COMPACT` 至 `DYNAMIC`. 您也必須轉換儲存引擎型別 `MyISAM` 至 `InnoDB`. 另請參閱 [最佳實務](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md).
 
 ## 設定開啟檔案限制
 
