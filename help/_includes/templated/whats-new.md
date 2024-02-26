@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0cc92188c2af5aa37bb094921df86c703f6f0eb2
+source-git-commit: 0d6e2d58074b921466e5f4995a0c8e97a63e2d83
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '161'
 ht-degree: 3%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 3%
 ## 新增功能
 
 瞭解新檔案和現有檔案的重要更新。
+
+### 2024年2月14日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增以下專案的最佳實務 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">升級MariaDB</a> 至10.5.1和更新版本。</p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2024年2月13日
 
