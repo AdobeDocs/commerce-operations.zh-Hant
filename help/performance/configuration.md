@@ -3,9 +3,9 @@ title: 設定最佳實務
 description: 使用這些最佳實務最佳化Adobe Commerce或Magento Open Source部署的回應時間。
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 2fa587557db214ed2fbeb5e6c175a9a209883f94
+source-git-commit: 5a49aff28f1a7c87cd6135ca19b4436da41cbb1b
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Commerce提供許多設定和工具，可用來改善頁面上的回應時間，
 
 ## 索引子
 
-索引器可在以下任一位置執行： **[!UICONTROL Update on Save]** 或 **[!UICONTROL Update on Schedule]** 模式。 此 **[!UICONTROL Update on Save]** 模式會在目錄或其他資料變更時立即編制索引。 此模式假設您的存放區中的更新和瀏覽作業強度很低。 在高負載期間，這可能會導致嚴重的延遲和資料無法使用。 我們建議使用 **依排程更新** 生產中的模式，因為它儲存有關資料更新的資訊，並透過特定cron作業在背景中按部分執行索引。 您可以變更每個專案的模式 [!DNL Commerce] 索引器單獨位於  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** 設定頁面。
+索引器可在以下任一位置執行： **[!UICONTROL Update on Save]** 或 **[!UICONTROL Update on Schedule]** 模式。 此 **[!UICONTROL Update on Save]** 模式會在目錄或其他資料變更時立即編制索引。 此模式假設您的存放區中的更新和瀏覽作業強度很低。 在高負載期間，這可能會導致嚴重的延遲和資料無法使用。 我們建議使用 **依排程更新** 基於效能考量，因為它會儲存資料更新的相關資訊，並透過特定cron作業在背景依部分執行索引。 您可以變更每個專案的模式 [!DNL Commerce] 索引器單獨位於  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** 設定頁面。 此 [!UICONTROL Customer Grid] 索引必須一律設定為 **[!UICONTROL Update on Save]** 模式。
 
 >[!TIP]
 >
