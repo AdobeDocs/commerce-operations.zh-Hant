@@ -2,7 +2,7 @@
 title: 發行排程
 description: 了解 Adobe 預計何時宣布推出 Adobe Commerce 的新功能。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: cbcc688fb5b356b99d103259e85117bda82f36b9
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Adobe版本 [修補程式](versioning-policy.md#patch-release) 適用於核心Ad
 </thead>
 <tfoot>
    <tr>
-      <td colspan="3"><strong>圖例</strong>：
+      <td colspan="3"><strong>圖例：</strong>
          <ul>
             <li><strong><img alt="B2B功能圖示" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Adobe Commerce的B2B擴充功能新功能、增強功能和錯誤修正。</li>
             <li><strong><img alt="擴充功能圖示" src="../assets/icons/brackets.svg"></img> 擴充性</strong> — 新的開發人員工具和服務可用於跨處理序擴充，這些工具和服務是獨立於修補程式發行版本提供的。 例如，管理員UI SDK、Commerce的Adobe I/O事件和API Mesh。</li>

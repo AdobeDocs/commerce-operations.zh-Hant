@@ -2,9 +2,9 @@
 title: 進階內部部署安裝
 description: 瞭解有關Adobe Commerce的進階安裝案例，或是在您擁有的基礎架構上Magento Open Source。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2383'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,9 @@ Adobe Commerce和Magento Open Source擁有單一命令列介面，用於安裝�
 
 | 安裝程式引數 | 命令 |
 | ------------------ | ------------------------------- |
-| 語言 | bin/magento資訊:language:清單 |
-| 貨幣 | bin/magento資訊:currency:清單 |
-| 時區 | bin/magento資訊:timezone:清單 |
+| 語言 | `bin/magento info:language:list` |
+| 貨幣 | `bin/magento info:currency:list` |
+| 時區 | `bin/magento info:timezone:list` |
 
 >[!NOTE]
 >
