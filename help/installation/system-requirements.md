@@ -2,9 +2,9 @@
 title: 系統需求
 description: 請使用此參考資料來識別已在Adobe Commerce和Magento Open Source版本中測試的所需軟體相依性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 56052a5777b8719d5a9257d0c48e5640a6812a5f
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -112,9 +112,8 @@ PHPUnit （作為命令列工具） 9.0.0
 - Firefox （最新和先前的主要版本；任何作業系統）
 - Chrome （最新和先前的主要版本；任何作業系統）
 - Safari (最新和先前的主要版本；僅限macOS)
-- 適用於iPad 2、iPad Mini、iPad的Safari Mobile搭配Retina Display (iOS 12或更新版本)，適用於桌麵店面
-- 適用於iPhone 6或更新版本的Safari Mobile；適用於行動店面的iOS 12或更新版本
-- 適用於行動裝置的Chrome （最新和先前主要版本） [Android™ 4或更新版本] 適用於行動店面)
+- iOS適用的Safari （店面適用的最新和先前主要版本）
+- Chrome for Android （最新和先前主要版本，適用於店面）
 
 ### 郵件伺服器
 
