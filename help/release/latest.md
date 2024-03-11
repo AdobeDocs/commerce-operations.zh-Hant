@@ -4,13 +4,13 @@ description: 瞭解Adobe Commerce中最新可撰寫的開發工具和AI支援的
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: 2e17313c0a2c87ce4d2ee43e9b40277fda25edb9
+exl-id: 176886bc-733a-48d9-94dc-58fd8b24f54e
+source-git-commit: 1f2c2ca98ba7076cdc3512e30fdd7a8c76f86200
 workflow-type: tm+mt
 source-wordcount: '3078'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce 2月產品公告
 
@@ -22,7 +22,7 @@ Adobe Commerce一直與客戶密切合作，開發體驗導向的新商務功能
 
 參加這些面對面和虛擬活動，向電子商務領導和從業人員瞭解更多有關Adobe Commerce的資訊：
 
-- **2024年3月15日**： Adobe Commerce：格林威治標準時間上午10點/下午6點建置體驗導向的Commerce平台。 [報名參加即時網路研討會](https://engage.adobe.com/BdgxpComWBR-register.html).
+- **2024年3月14日**： Adobe Commerce：格林威治標準時間上午10點/下午5點建立體驗導向的Commerce平台。 [報名參加即時網路研討會](https://engage.adobe.com/BdgxpComWBR-register.html).
 
 - **2024年3月26日至28日**：加入數千名電子商務領袖和從業人員在拉斯維加斯的Adobe Summit直播行列。 進一步瞭解 [Adobe Summit](https://business.adobe.com/summit/adobe-summit.html) 和 [Commerce追蹤](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search.track=1601680652403006TXuG) 喇叭來自 [漢斯品牌](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S435)， [可口可樂](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S434)， [聯合利華](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=s430)、和 [雀巢普瑞納](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S437).
 
@@ -116,7 +116,7 @@ _「能像我們一樣順應業務需求，是夢想成真了。 我們說，�
 
 [!BADGE 現在可用]{type=Informative tooltip="現在可用"}
 
-Adobe擁有豐富的經驗，可為各種規模的醫療保健客戶部署HIPAA就緒服務。 從付款人到提供者，再到製藥和醫藥技術廠商，Adobe設定了負責任的消費者資料管理的標準。 透過Adobe Commerce雲端平台的HIPPA就緒版本，這項專業知識現在正擴充至快速增長的醫療保健數位商業市場。
+Adobe擁有豐富的經驗，可為各種規模的醫療保健客戶部署HIPAA就緒服務。 從付款人到提供者，再到製藥和醫藥技術廠商，Adobe設定了負責任的消費者資料管理的標準。 透過Adobe Commerce雲端平台的HIPAA就緒版本，這項專業知識現在正擴充至快速增長的醫療保健數位商業市場。
 
 Adobe Commerce Cloud和Managed Service客戶可使用HIPAA就緒產品。 它包含額外的安全性與隱私權控制，以確保保護電子個人健康資訊(ePHI)，讓醫療保健與生命科學組織能夠更輕鬆履行合規義務。 此解決方案支援各種使用案例，包括快速便捷的線上銷售醫療保險、處方、處方醫療裝置和醫療用品。 Adobe Commerce現在加入 [適用於醫療保健的Adobe Experience Cloud](https://business.adobe.com/solutions/industries/healthcare.html) 套裝解決方案，讓客戶在尊重消費者偏好設定的同時，也能提供安全且卓越的病人體驗。
 
