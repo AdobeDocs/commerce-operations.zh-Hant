@@ -1,7 +1,7 @@
 ---
-source-git-commit: d720b64f315d1e4b6fb7868d911eb3af089e3fa4
+source-git-commit: f51b6e6f5c030ed3ce5427a36bfe680667fc55ba
 workflow-type: tm+mt
-source-wordcount: '20131'
+source-wordcount: '21385'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**版本**： 2.4.7-beta2
+**版本**： 2.4.7-beta3
 
-此參照包含134個指令，這些指令可透過 `bin/magento` 命令列工具。
+此參考包含141個命令，這些命令可透過 `bin/magento` 命令列工具。
 初始清單會使用 `bin/magento list` Adobe Commerce的命令。
 使用 [新增CLI命令](https://developer.adobe.com/commerce/php/development/cli-commands/) 新增自訂CLI命令的指南。
 
@@ -30,56 +30,62 @@ ht-degree: 0%
 提供殼層完成建議的內部命令
 
 ```bash
-bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
+bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
-### `--shell`, `-s`
+### `--shell`， `-s`
 
-殼層型別(「bash」)
+殼層型別(「bash」、「fish」、「zsh」)
 
 - 需要值
 
-### `--input`, `-i`
+### `--input`， `-i`
 
 輸入權杖的陣列（例如COMP_WORDS或argv）
 
 - 預設： `[]`
 - 需要值
 
-### `--current`, `-c`
+### `--current`， `-c`
 
 游標所在的「輸入」陣列索引（例如COMP_CWORD）
 
 - 需要值
 
-### `--symfony`, `-S`
+### `--api-version`， `-a`
 
-完成指令碼的版本
+完成指令碼的API版本
 
 - 需要值
 
-### `--help`, `-h`
+### `--symfony`， `-S`
+
+已棄用
+
+- 需要值
+
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -99,7 +105,7 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -128,28 +134,28 @@ bin/magento completion [--debug] [--] [<shell>]
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -169,7 +175,7 @@ bin/magento completion [--debug] [--] [<shell>]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -207,28 +213,28 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -248,7 +254,7 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -291,28 +297,28 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -332,7 +338,7 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -348,28 +354,28 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 bin/magento admin:adobe-ims:disable
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -389,7 +395,7 @@ bin/magento admin:adobe-ims:disable
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -405,52 +411,52 @@ bin/magento admin:adobe-ims:disable
 bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|--client-id [CLIENT-ID]] [-s|--client-secret [CLIENT-SECRET]] [-t|--2fa [2FA]]
 ```
 
-### `--organization-id`, `-o`
+### `--organization-id`， `-o`
 
 設定Adobe IMS設定的組織ID 。 啟用模組時需要
 
 - 接受值
 
-### `--client-id`, `-c`
+### `--client-id`， `-c`
 
 設定Adobe IMS設定的使用者端ID。 啟用模組時需要
 
 - 接受值
 
-### `--client-secret`, `-s`
+### `--client-secret`， `-s`
 
 設定Adobe IMS設定的使用者端密碼。 啟用模組時需要
 
 - 接受值
 
-### `--2fa`, `-t`
+### `--2fa`， `-t`
 
 檢查Adobe Admin Console中是否為「組織」啟用2FA。 啟用模組時需要
 
 - 接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -470,7 +476,7 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -486,28 +492,28 @@ Adobe IMS模組設定資訊
 bin/magento admin:adobe-ims:info
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -527,7 +533,7 @@ bin/magento admin:adobe-ims:info
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -543,28 +549,28 @@ Adobe IMS模組的狀態
 bin/magento admin:adobe-ims:status
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -584,7 +590,7 @@ bin/magento admin:adobe-ims:status
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -636,28 +642,28 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -677,7 +683,7 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -700,28 +706,28 @@ bin/magento admin:user:unlock <username>
 
 - 必填
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -741,7 +747,7 @@ bin/magento admin:user:unlock <username>
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -766,28 +772,28 @@ bin/magento app:config:dump [<config-types>...]
 
 - 陣列
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -807,7 +813,7 @@ bin/magento app:config:dump [<config-types>...]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -823,28 +829,28 @@ bin/magento app:config:dump [<config-types>...]
 bin/magento app:config:import
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -864,7 +870,7 @@ bin/magento app:config:import
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -880,28 +886,28 @@ bin/magento app:config:import
 bin/magento app:config:status
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -921,7 +927,7 @@ bin/magento app:config:status
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -961,28 +967,28 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1002,7 +1008,7 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1033,28 +1039,28 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1074,7 +1080,7 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1105,28 +1111,28 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1146,7 +1152,7 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1177,28 +1183,28 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1218,7 +1224,7 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1249,28 +1255,28 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1290,7 +1296,7 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1312,28 +1318,28 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1353,7 +1359,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1369,7 +1375,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
 
-### `--async`, `-a`
+### `--async`， `-a`
 
 在非同步模式下調整影像大小
 
@@ -1383,28 +1389,28 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1424,7 +1430,7 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1440,28 +1446,28 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 bin/magento catalog:product:attributes:cleanup
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1481,7 +1487,7 @@ bin/magento catalog:product:attributes:cleanup
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1504,28 +1510,28 @@ y\n
 
 - 必填
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1545,7 +1551,7 @@ y\n
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1572,7 +1578,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 設定值
 
 
-### `--interactive`, `-i`
+### `--interactive`， `-i`
 
 啟用互動模式以設定所有敏感變數
 
@@ -1593,28 +1599,28 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 - 預設： &quot;
 - 接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1634,7 +1640,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1676,49 +1682,49 @@ bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env]
 
 - 需要值
 
-### `--lock-env`, `-e`
+### `--lock-env`， `-e`
 
 鎖定值，防止在Admin中進行修改(將儲存於app/etc/env.php)
 
 - 預設： `false`
 - 不接受值
 
-### `--lock-config`, `-c`
+### `--lock-config`， `-c`
 
 鎖定並與其他安裝專案共用值，防止在Admin中進行修改(將儲存在app/etc/config.php中)
 
 - 預設： `false`
 - 不接受值
 
-### `--lock`, `-l`
+### `--lock`， `-l`
 
 已棄用，請改用 — lock-env選項。
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1738,7 +1744,7 @@ bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1774,28 +1780,28 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 - 預設： &quot;
 - 接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1815,7 +1821,7 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1831,42 +1837,42 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
 
-### `--force`, `-f`
+### `--force`， `-f`
 
 強制安裝任務
 
 - 預設： `false`
 - 不接受值
 
-### `--non-optional`, `-d`
+### `--non-optional`， `-d`
 
 僅安裝非選擇性（預設）工作
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1886,7 +1892,7 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1902,28 +1908,28 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 bin/magento cron:remove
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -1943,7 +1949,7 @@ bin/magento cron:remove
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -1978,28 +1984,28 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2019,7 +2025,7 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2035,28 +2041,28 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 bin/magento customer:hash:upgrade
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2076,7 +2082,7 @@ bin/magento customer:hash:upgrade
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2099,35 +2105,35 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 - 必填
 
-### `--skip-compilation`, `-s`
+### `--skip-compilation`， `-s`
 
 略過清除和重新產生靜態內容（產生的程式碼、預先處理的CSS和pub/static/中的資產）
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2147,7 +2153,7 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2163,28 +2169,28 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 bin/magento deploy:mode:show
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2204,7 +2210,7 @@ bin/magento deploy:mode:show
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2227,28 +2233,28 @@ bin/magento dev:di:info <class>
 
 - 必填
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2268,7 +2274,7 @@ bin/magento dev:di:info <class>
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2284,28 +2290,28 @@ bin/magento dev:di:info <class>
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2325,7 +2331,7 @@ bin/magento dev:email:newsletter-compatibility-check
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2341,28 +2347,28 @@ bin/magento dev:email:newsletter-compatibility-check
 bin/magento dev:email:override-compatibility-check
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2382,7 +2388,7 @@ bin/magento dev:email:override-compatibility-check
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2398,28 +2404,28 @@ bin/magento dev:email:override-compatibility-check
 bin/magento dev:profiler:disable
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2439,7 +2445,7 @@ bin/magento dev:profiler:disable
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2461,28 +2467,28 @@ bin/magento dev:profiler:enable [<type>]
 效能分析工具型別
 
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2502,7 +2508,7 @@ bin/magento dev:profiler:enable [<type>]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2518,28 +2524,28 @@ bin/magento dev:profiler:enable [<type>]
 bin/magento dev:query-log:disable
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2559,7 +2565,7 @@ bin/magento dev:query-log:disable
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2596,28 +2602,28 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 - 預設： `true`
 - 接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2637,7 +2643,7 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2690,28 +2696,28 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 - 預設： `Magento/luma`
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2731,7 +2737,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2747,28 +2753,28 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 bin/magento dev:template-hints:disable
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2788,7 +2794,7 @@ bin/magento dev:template-hints:disable
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2804,28 +2810,28 @@ bin/magento dev:template-hints:disable
 bin/magento dev:template-hints:enable
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2845,7 +2851,7 @@ bin/magento dev:template-hints:enable
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2861,28 +2867,28 @@ bin/magento dev:template-hints:enable
 bin/magento dev:template-hints:status
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2902,7 +2908,7 @@ bin/magento dev:template-hints:status
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -2926,35 +2932,35 @@ bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 - 預設： `default`
 
 
-### `--arguments`, `-c`
+### `--arguments`， `-c`
 
 PHPUnit的其他引數。 範例：「 — c」 — filter=MyTest&#39;」（無空格）
 
 - 預設： &quot;
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -2974,7 +2980,7 @@ PHPUnit的其他引數。 範例：「 — c」 — filter=MyTest&#39;」（無�
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3004,28 +3010,28 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 - 預設： `phpstorm`
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3045,7 +3051,7 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3074,35 +3080,35 @@ bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 
 - 必填
 
-### `--overwrite`, `-o`
+### `--overwrite`， `-o`
 
 覆寫XML檔案
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3122,7 +3128,7 @@ bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3147,28 +3153,28 @@ bin/magento downloadable:domains:add [<domains>...]
 
 - 陣列
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3188,7 +3194,7 @@ bin/magento downloadable:domains:add [<domains>...]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3213,28 +3219,28 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 - 陣列
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3254,7 +3260,7 @@ bin/magento downloadable:domains:remove [<domains>...]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3270,28 +3276,28 @@ bin/magento downloadable:domains:remove [<domains>...]
 bin/magento downloadable:domains:show
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3311,7 +3317,7 @@ bin/magento downloadable:domains:show
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3327,28 +3333,28 @@ bin/magento downloadable:domains:show
 bin/magento encryption:payment-data:update
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3368,7 +3374,7 @@ bin/magento encryption:payment-data:update
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3401,28 +3407,28 @@ bin/magento events:provider:create
 
 - 接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3442,7 +3448,7 @@ bin/magento events:provider:create
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3458,28 +3464,28 @@ bin/magento events:provider:create
 bin/magento events:generate:module
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3499,7 +3505,7 @@ bin/magento events:generate:module
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3529,28 +3535,28 @@ bin/magento events:info [--depth [DEPTH]] [--] <event-code>
 - 預設： `2`
 - 接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3570,7 +3576,7 @@ bin/magento events:info [--depth [DEPTH]] [--] <event-code>
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3586,28 +3592,28 @@ bin/magento events:info [--depth [DEPTH]] [--] <event-code>
 bin/magento events:list
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3627,7 +3633,7 @@ bin/magento events:list
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3650,28 +3656,28 @@ bin/magento events:list:all <module_name>
 
 - 必填
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3691,7 +3697,7 @@ bin/magento events:list:all <module_name>
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3707,28 +3713,28 @@ bin/magento events:list:all <module_name>
 bin/magento events:metadata:populate
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3748,7 +3754,7 @@ bin/magento events:metadata:populate
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3764,28 +3770,28 @@ bin/magento events:metadata:populate
 bin/magento events:provider:info
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3805,7 +3811,7 @@ bin/magento events:provider:info
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3821,28 +3827,28 @@ bin/magento events:provider:info
 bin/magento events:registrations:list
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3862,7 +3868,7 @@ bin/magento events:registrations:list
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3875,7 +3881,7 @@ bin/magento events:registrations:list
 訂閱事件
 
 ```bash
-bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [--] <event-code>
+bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--] <event-code>
 ```
 
 
@@ -3885,7 +3891,7 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 - 必填
 
-### `--force`, `-f`
+### `--force`， `-f`
 
 強制訂閱指定的事件，即使它尚未在本機定義。
 
@@ -3912,35 +3918,42 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 - 預設： `[]`
 - 需要值
 
-### `--priority`, `-p`
+### `--priority`， `-p`
 
 加速此事件的傳輸。 為需要立即傳送的事件指定此選項。 依預設，事件會由cron每分鐘傳送一次。
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--destination`， `-d`
+
+此事件的目的地。 針對應傳送至自訂目的地的事件指定此選項。
+
+- 預設： `default`
+- 需要值
+
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -3960,7 +3973,7 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -3976,35 +3989,35 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 bin/magento events:sync-events-metadata [-d|--delete]
 ```
 
-### `--delete`, `-d`
+### `--delete`， `-d`
 
 刪除不再需要的事件中繼資料
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4024,7 +4037,7 @@ bin/magento events:sync-events-metadata [-d|--delete]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4047,28 +4060,28 @@ bin/magento events:unsubscribe <event-code>
 
 - 必填
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4088,7 +4101,7 @@ bin/magento events:unsubscribe <event-code>
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4110,41 +4123,41 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 要剖析的目錄路徑。 若已設定 — magento旗標，則不需要
 
 
-### `--output`, `-o`
+### `--output`， `-o`
 
 輸出檔案的路徑（包括檔案名稱）。 若未指定檔案，預設值為stdout。
 
 - 需要值
 
-### `--magento`, `-m`
+### `--magento`， `-m`
 
 使用 — magento引數來剖析目前的Magento程式碼基底。 若指定目錄，則省略引數。
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4164,7 +4177,7 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4193,42 +4206,42 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 - 必填
 
-### `--mode`, `-m`
+### `--mode`， `-m`
 
 字典儲存模式 — 「取代」 — 以新語言套件取代語言套件 — 「合併」 — 合併語言套件，預設為「取代」
 
 - 預設： `replace`
 - 需要值
 
-### `--allow-duplicates`, `-d`
+### `--allow-duplicates`， `-d`
 
 使用 — allow-duplicates引數以允許儲存轉譯的重複專案。 否則，請忽略引數。
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4248,7 +4261,7 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4274,35 +4287,35 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 - 必填
 - 陣列
 
-### `--backup-code`, `-b`
+### `--backup-code`， `-b`
 
 進行程式碼和組態檔備份（不包括暫存檔案）
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4322,7 +4335,7 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4338,28 +4351,28 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 bin/magento indexer:info
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4379,7 +4392,7 @@ bin/magento indexer:info
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4404,28 +4417,28 @@ bin/magento indexer:reindex [<index>...]
 
 - 陣列
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4445,7 +4458,7 @@ bin/magento indexer:reindex [<index>...]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4470,28 +4483,28 @@ bin/magento indexer:reset [<index>...]
 
 - 陣列
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4511,7 +4524,7 @@ bin/magento indexer:reset [<index>...]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4538,28 +4551,28 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 索引子維度模式catalog_product_price none，website，customer_group，website_and_customer_group目錄permissions_category none，customer_group
 
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4579,7 +4592,7 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4609,28 +4622,28 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 - 陣列
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4650,7 +4663,79 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
+
+請勿詢問任何互動式問題
+
+- 預設： `false`
+- 不接受值
+
+
+## `indexer:set-status`
+
+設定指定的索引器狀態
+
+```bash
+bin/magento indexer:set-status <status> [<index>...]
+```
+
+
+### `status`
+
+索引器狀態型別 [無效|已暫停|有效]
+
+- 必填
+
+### `index`
+
+以空格分隔的索引型別清單，或省略以套用至所有索引。
+
+- 預設： `[]`
+
+- 陣列
+
+### `--help`， `-h`
+
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+
+- 預設： `false`
+- 不接受值
+
+### `--quiet`， `-q`
+
+不輸出任何訊息
+
+- 預設： `false`
+- 不接受值
+
+### `--verbose`， `-v|-vv|-vvv`
+
+增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
+
+- 預設： `false`
+- 不接受值
+
+### `--version`， `-V`
+
+顯示此應用程式版本
+
+- 預設： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或停用 — no-ansi） ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定「 — ansi」選項
+
+- 預設： `false`
+- 不接受值
+
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4675,28 +4760,28 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 - 陣列
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4716,7 +4801,7 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4741,28 +4826,28 @@ bin/magento indexer:show-mode [<index>...]
 
 - 陣列
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4782,7 +4867,7 @@ bin/magento indexer:show-mode [<index>...]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4807,28 +4892,28 @@ bin/magento indexer:status [<index>...]
 
 - 陣列
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4848,7 +4933,7 @@ bin/magento indexer:status [<index>...]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4864,28 +4949,28 @@ bin/magento indexer:status [<index>...]
 bin/magento info:adminuri
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4905,7 +4990,7 @@ bin/magento info:adminuri
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4921,28 +5006,28 @@ bin/magento info:adminuri
 bin/magento info:backups:list
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -4962,7 +5047,7 @@ bin/magento info:backups:list
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -4978,28 +5063,28 @@ bin/magento info:backups:list
 bin/magento info:currency:list
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5019,7 +5104,7 @@ bin/magento info:currency:list
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5035,35 +5120,35 @@ bin/magento info:currency:list
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
 
-### `--output`, `-o`
+### `--output`， `-o`
 
 報表檔案名稱
 
 - 預設： `framework-dependencies.csv`
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5083,7 +5168,7 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5099,35 +5184,35 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 ```
 
-### `--output`, `-o`
+### `--output`， `-o`
 
 報表檔案名稱
 
 - 預設： `modules-dependencies.csv`
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5147,7 +5232,7 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5163,35 +5248,35 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 ```
 
-### `--output`, `-o`
+### `--output`， `-o`
 
 報表檔案名稱
 
 - 預設： `modules-circular-dependencies.csv`
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5211,7 +5296,7 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5227,28 +5312,28 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 bin/magento info:language:list
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5268,7 +5353,7 @@ bin/magento info:language:list
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5284,28 +5369,28 @@ bin/magento info:language:list
 bin/magento info:timezone:list
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5325,7 +5410,7 @@ bin/magento info:timezone:list
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5350,35 +5435,35 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 - 陣列
 
-### `--raw`, `-r`
+### `--raw`， `-r`
 
 原始輸出
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5398,7 +5483,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5414,56 +5499,56 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-i|--incomplete-orders] [-b|--bunch-size [BUNCH-SIZE]] [-r|--raw]
 ```
 
-### `--complete-orders`, `-c`
+### `--complete-orders`， `-c`
 
 僅顯示完整訂單的不一致
 
 - 預設： `false`
 - 不接受值
 
-### `--incomplete-orders`, `-i`
+### `--incomplete-orders`， `-i`
 
 僅顯示未完成訂單的不一致
 
 - 預設： `false`
 - 不接受值
 
-### `--bunch-size`, `-b`
+### `--bunch-size`， `-b`
 
 定義將同時載入多少訂單
 
 - 預設： `50`
 - 接受值
 
-### `--raw`, `-r`
+### `--raw`， `-r`
 
 原始輸出
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5483,7 +5568,7 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5509,28 +5594,28 @@ bin/magento inventory-geonames:import <countries>...
 - 必填
 - 陣列
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5550,7 +5635,7 @@ bin/magento inventory-geonames:import <countries>...
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5595,28 +5680,28 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5636,7 +5721,7 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5665,28 +5750,28 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5706,7 +5791,7 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5735,28 +5820,28 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5776,7 +5861,7 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5798,28 +5883,28 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5839,7 +5924,7 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5855,28 +5940,28 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 bin/magento media-content:sync
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5896,7 +5981,7 @@ bin/magento media-content:sync
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5912,28 +5997,28 @@ bin/magento media-content:sync
 bin/magento media-gallery:sync
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -5953,7 +6038,7 @@ bin/magento media-gallery:sync
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -5969,28 +6054,28 @@ bin/magento media-gallery:sync
 bin/magento module:config:status
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6010,7 +6095,7 @@ bin/magento module:config:status
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6035,7 +6120,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 - 陣列
 
-### `--force`, `-f`
+### `--force`， `-f`
 
 略過相依性檢查
 
@@ -6049,7 +6134,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 - 預設： `false`
 - 不接受值
 
-### `--clear-static-content`, `-c`
+### `--clear-static-content`， `-c`
 
 清除產生的靜態檢視檔案。 如果模組有靜態檢視檔案，則為必要
 
@@ -6062,28 +6147,28 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6103,7 +6188,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6128,7 +6213,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 - 陣列
 
-### `--force`, `-f`
+### `--force`， `-f`
 
 略過相依性檢查
 
@@ -6142,7 +6227,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 - 預設： `false`
 - 不接受值
 
-### `--clear-static-content`, `-c`
+### `--clear-static-content`， `-c`
 
 清除產生的靜態檢視檔案。 如果模組有靜態檢視檔案，則為必要
 
@@ -6155,28 +6240,28 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6196,7 +6281,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6241,28 +6326,28 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6282,7 +6367,7 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6308,7 +6393,7 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 - 必填
 - 陣列
 
-### `--remove-data`, `-r`
+### `--remove-data`， `-r`
 
 移除模組安裝的資料
 
@@ -6343,7 +6428,7 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 - 預設： `false`
 - 不接受值
 
-### `--clear-static-content`, `-c`
+### `--clear-static-content`， `-c`
 
 清除產生的靜態檢視檔案。 如果模組有靜態檢視檔案，則為必要
 
@@ -6356,28 +6441,28 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6397,7 +6482,7 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6436,28 +6521,28 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 修訂
 
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6477,7 +6562,7 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6493,28 +6578,28 @@ MessageQueue取用者清單
 bin/magento queue:consumers:list
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6534,7 +6619,7 @@ bin/magento queue:consumers:list
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6550,28 +6635,28 @@ bin/magento queue:consumers:list
 bin/magento queue:consumers:restart
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6591,7 +6676,7 @@ bin/magento queue:consumers:restart
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6651,28 +6736,28 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6692,7 +6777,7 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6708,28 +6793,28 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 bin/magento remote-storage:sync
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6749,7 +6834,7 @@ bin/magento remote-storage:sync
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6762,21 +6847,21 @@ bin/magento remote-storage:sync
 將摘要資料重新同步至SaaS服務。
 
 ```bash
-bin/magento saas:resync [--no-reindex] [--feed FEED] [--cleanup-feed]
+bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
 ```
-
-### `--no-reindex`
-
-執行只將摘要資料重新提交至SaaS服務的作業。 不會重新編列索引。
-
-- 預設： `false`
-- 不接受值
 
 ### `--feed`
 
-要完全重新同步至SaaS服務的摘要名稱。 可用的摘要：
+要完全重新同步至SaaS服務的摘要名稱。 可用摘要： Payment Services訂單生產、Payment Services訂單沙箱、Payment Services訂單狀態生產、Payment Services訂單狀態沙箱、Payment Services商店生產、Payment Services商店沙箱
 
 - 需要值
+
+### `--no-reindex`
+
+執行只將摘要資料重新提交至SaaS服務的作業。 不會重新編列索引。 （此選項不適用於產品、產品概述、價格摘要）
+
+- 預設： `false`
+- 不接受值
 
 ### `--cleanup-feed`
 
@@ -6785,28 +6870,54 @@ bin/magento saas:resync [--no-reindex] [--feed FEED] [--cleanup-feed]
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--dry-run`
+
+試試。 將不會匯出資料。 若要將裝載儲存至記錄檔var/log/saas-export.log ，請使用環境變數EXPORTER_EXTENDED_LOG=1執行。
+
+- 預設： `false`
+- 不接受值
+
+### `--thread-count`
+
+設定同步處理執行緒計數。
+
+- 需要值
+
+### `--batch-size`
+
+設定同步批次大小
+
+- 需要值
+
+### `--continue-resync`
+
+繼續從上次儲存的位置重新同步（此選項適用於產品、產品版本、價格摘要）
+
+- 預設： `false`
+- 不接受值
+
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6826,7 +6937,7 @@ bin/magento saas:resync [--no-reindex] [--feed FEED] [--cleanup-feed]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6849,28 +6960,28 @@ bin/magento sampledata:deploy [--no-update]
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6890,7 +7001,7 @@ bin/magento sampledata:deploy [--no-update]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6913,28 +7024,28 @@ bin/magento sampledata:remove [--no-update]
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -6954,7 +7065,7 @@ bin/magento sampledata:remove [--no-update]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -6970,28 +7081,28 @@ bin/magento sampledata:remove [--no-update]
 bin/magento sampledata:reset
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -7011,7 +7122,7 @@ bin/magento sampledata:reset
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -7027,28 +7138,28 @@ bin/magento sampledata:reset
 bin/magento security:recaptcha:disable-for-user-forgot-password
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -7068,7 +7179,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -7084,28 +7195,28 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 bin/magento security:recaptcha:disable-for-user-login
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -7125,7 +7236,7 @@ bin/magento security:recaptcha:disable-for-user-login
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -7154,28 +7265,28 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 - 必填
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -7195,7 +7306,7 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -7211,28 +7322,28 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 bin/magento security:tfa:providers
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -7252,7 +7363,7 @@ bin/magento security:tfa:providers
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -7281,28 +7392,28 @@ bin/magento security:tfa:reset <user> <provider>
 
 - 必填
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -7322,7 +7433,7 @@ bin/magento security:tfa:reset <user> <provider>
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -7335,66 +7446,73 @@ bin/magento security:tfa:reset <user> <provider>
 執行應用程式伺服器
 
 ```bash
-bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]]
+bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]] [--state-monitor]
 ```
 
-### `--port`, `-p`
+### `--port`， `-p`
 
 伺服器連線埠
 
 - 預設： `9501`
 - 接受值
 
-### `--background`, `-b`
+### `--background`， `-b`
 
 背景模式旗標
 
 - 預設： `0`
 - 接受值
 
-### `--area`, `-a`
+### `--area`， `-a`
 
 應用程式伺服器區域
 
 - 預設： `graphql`
 - 接受值
 
-### `--magento-init-params`, `-mip`
+### `--magento-init-params`， `-mip`
 
 magento bootstrap初始引數
 
 - 預設： &quot;
 - 接受值
 
-### `--maxWaitTime`, `-mwt`
+### `--maxWaitTime`， `-mwt`
 
 重新載入後等候背景工作程式的時間長度(例如 設定變更)，然後將其刪除
 
 - 預設： `3600`
 - 接受值
 
-### `--help`, `-h`
+### `--state-monitor`
+
+啟用狀態監視。 僅用於偵錯狀態問題！
+
+- 預設： `false`
+- 不接受值
+
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -7414,7 +7532,64 @@ magento bootstrap初始引數
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
+
+請勿詢問任何互動式問題
+
+- 預設： `false`
+- 不接受值
+
+
+## `server:state-monitor:aggregate-output`
+
+ApplicationServer狀態監視器的彙總輸出
+
+```bash
+bin/magento server:state-monitor:aggregate-output
+```
+
+### `--help`， `-h`
+
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+
+- 預設： `false`
+- 不接受值
+
+### `--quiet`， `-q`
+
+不輸出任何訊息
+
+- 預設： `false`
+- 不接受值
+
+### `--verbose`， `-v|-vv|-vvv`
+
+增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
+
+- 預設： `false`
+- 不接受值
+
+### `--version`， `-V`
+
+顯示此應用程式版本
+
+- 預設： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或停用 — no-ansi） ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定「 — ansi」選項
+
+- 預設： `false`
+- 不接受值
+
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -7457,28 +7632,28 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -7498,7 +7673,7 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -7511,14 +7686,8 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 建立或修改部署設定
 
 ```bash
-bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--config-async CONFIG-ASYNC] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
-
-### `--backend-frontname`
-
-後端前端名稱（如果遺失，則會自動產生）
-
-- 需要值
 
 ### `--enable-debug-logging`
 
@@ -7529,6 +7698,12 @@ bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-d
 ### `--enable-syslog-logging`
 
 啟用Syslog記錄
+
+- 需要值
+
+### `--backend-frontname`
+
+後端前端名稱（如果遺失，則會自動產生）
 
 - 需要值
 
@@ -7590,6 +7765,12 @@ graphql Salt
 
 - 需要值
 
+### `--config-async`
+
+啟用非同步管理設定儲存？ 1 — 是，0 — 否
+
+- 需要值
+
 ### `--checkout-async`
 
 啟用非同步訂單處理？ 1 — 是，0 — 否
@@ -7643,12 +7824,6 @@ Amqp SSL
 Amqp SSL選項(JSON)
 
 - 預設： &quot;
-- 需要值
-
-### `--config-async`
-
-啟用非同步管理設定儲存？ 1 — 是，0 — 否
-
 - 需要值
 
 ### `--consumers-wait-for-messages`
@@ -7723,7 +7898,7 @@ Amqp SSL選項(JSON)
 
 - 需要值
 
-### `--skip-db-validation`, `-s`
+### `--skip-db-validation`， `-s`
 
 若指定，則會略過資料庫連線驗證
 
@@ -8101,28 +8276,28 @@ Redis伺服器使用者
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -8142,7 +8317,7 @@ Redis伺服器使用者
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -8164,28 +8339,28 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -8205,7 +8380,7 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -8248,28 +8423,28 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 - 預設： `data`
 - 接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -8289,7 +8464,7 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -8312,28 +8487,28 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 - 預設： `all`
 - 接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -8353,7 +8528,7 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -8422,28 +8597,28 @@ bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--usernam
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -8463,7 +8638,7 @@ bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--usernam
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -8523,28 +8698,28 @@ bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--usern
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -8564,7 +8739,7 @@ bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--usern
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -8624,28 +8799,28 @@ bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--usern
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -8665,7 +8840,7 @@ bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--usern
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -8694,28 +8869,28 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -8735,7 +8910,7 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -8757,28 +8932,28 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -8798,7 +8973,7 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -8814,28 +8989,28 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 bin/magento setup:di:compile
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -8855,7 +9030,7 @@ bin/magento setup:di:compile
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -8868,14 +9043,8 @@ bin/magento setup:di:compile
 安裝Magento應用程式
 
 ```bash
-bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--config-async CONFIG-ASYNC] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
-
-### `--backend-frontname`
-
-後端前端名稱（如果遺失，則會自動產生）
-
-- 需要值
 
 ### `--enable-debug-logging`
 
@@ -8886,6 +9055,12 @@ bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debu
 ### `--enable-syslog-logging`
 
 啟用Syslog記錄
+
+- 需要值
+
+### `--backend-frontname`
+
+後端前端名稱（如果遺失，則會自動產生）
 
 - 需要值
 
@@ -8947,6 +9122,12 @@ graphql Salt
 
 - 需要值
 
+### `--config-async`
+
+啟用非同步管理設定儲存？ 1 — 是，0 — 否
+
+- 需要值
+
 ### `--checkout-async`
 
 啟用非同步訂單處理？ 1 — 是，0 — 否
@@ -9000,12 +9181,6 @@ Amqp SSL
 Amqp SSL選項(JSON)
 
 - 預設： &quot;
-- 需要值
-
-### `--config-async`
-
-啟用非同步管理設定儲存？ 1 — 是，0 — 否
-
 - 需要值
 
 ### `--consumers-wait-for-messages`
@@ -9080,7 +9255,7 @@ Amqp SSL選項(JSON)
 
 - 需要值
 
-### `--skip-db-validation`, `-s`
+### `--skip-db-validation`， `-s`
 
 若指定，則會略過資料庫連線驗證
 
@@ -9665,7 +9840,7 @@ OpenSearch伺服器逾時。
 - 預設： `false`
 - 接受值
 
-### `--interactive`, `-i`
+### `--interactive`， `-i`
 
 互動式Magento安裝
 
@@ -9697,28 +9872,28 @@ Magento安裝將以試執行模式執行
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -9738,7 +9913,7 @@ Magento安裝將以試執行模式執行
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -9761,35 +9936,35 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 - 必填
 
-### `--skip-reindex`, `-s`
+### `--skip-reindex`， `-s`
 
 略過重新索引
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -9809,7 +9984,7 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -9825,19 +10000,19 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-### `--code-file`, `-c`
+### `--code-file`， `-c`
 
 var/backups中程式碼備份檔案的基本名稱
 
 - 需要值
 
-### `--media-file`, `-m`
+### `--media-file`， `-m`
 
 var/backups中媒體備份檔案的基本名稱
 
 - 需要值
 
-### `--db-file`, `-d`
+### `--db-file`， `-d`
 
 var/backups中db備份檔案的基本名稱
 
@@ -9849,28 +10024,28 @@ var/backups中db備份檔案的基本名稱
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -9890,7 +10065,7 @@ var/backups中db備份檔案的基本名稱
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -9915,21 +10090,21 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 - 陣列
 
-### `--force`, `-f`
+### `--force`， `-f`
 
 以任何模式部署檔案。
 
 - 預設： `false`
 - 不接受值
 
-### `--strategy`, `-s`
+### `--strategy`， `-s`
 
 使用指定的策略部署檔案。
 
 - 預設： `quick`
 - 接受值
 
-### `--area`, `-a`
+### `--area`， `-a`
 
 只產生指定區域的檔案。
 
@@ -9943,7 +10118,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 - 預設： `none`
 - 接受多個值
 
-### `--theme`, `-t`
+### `--theme`， `-t`
 
 只為指定的主題產生靜態檢視檔案。
 
@@ -9957,7 +10132,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 - 預設： `none`
 - 接受多個值
 
-### `--language`, `-l`
+### `--language`， `-l`
 
 只產生指定語言的檔案。
 
@@ -9971,7 +10146,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 - 預設： `none`
 - 接受多個值
 
-### `--jobs`, `-j`
+### `--jobs`， `-j`
 
 使用指定的作業數目啟用平行處理。
 
@@ -10075,28 +10250,28 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -10116,7 +10291,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -10192,28 +10367,28 @@ SSL連線的基礎URL。 已棄用，請使用config：set搭配路徑web/secure
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -10233,7 +10408,7 @@ SSL連線的基礎URL。 已棄用，請使用config：set搭配路徑web/secure
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -10255,28 +10430,28 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -10296,7 +10471,7 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -10351,28 +10526,28 @@ Magento安裝將以試執行模式執行
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -10392,7 +10567,7 @@ Magento安裝將以試執行模式執行
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -10408,28 +10583,28 @@ Magento安裝將以試執行模式執行
 bin/magento store:list
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -10449,7 +10624,7 @@ bin/magento store:list
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -10465,28 +10640,28 @@ bin/magento store:list
 bin/magento store:website:list
 ```
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -10506,7 +10681,7 @@ bin/magento store:website:list
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -10528,41 +10703,41 @@ bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--log
 
 - 接受值
 
-### `--output`, `-o`
+### `--output`， `-o`
 
 輸出路徑
 
 - 接受值
 
-### `--logs`, `-l`
+### `--logs`， `-l`
 
 包含記錄
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -10582,7 +10757,7 @@ bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--log
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -10604,48 +10779,48 @@ bin/magento support:backup:db [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs]
 
 - 接受值
 
-### `--output`, `-o`
+### `--output`， `-o`
 
 輸出路徑
 
 - 接受值
 
-### `--logs`, `-l`
+### `--logs`， `-l`
 
 包含記錄
 
 - 預設： `false`
 - 不接受值
 
-### `--ignore-sanitize`, `-i`
+### `--ignore-sanitize`， `-i`
 
 忽略處理
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -10665,7 +10840,7 @@ bin/magento support:backup:db [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -10688,28 +10863,28 @@ bin/magento support:utility:check [--hide-paths]
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -10729,7 +10904,7 @@ bin/magento support:utility:check [--hide-paths]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -10745,35 +10920,35 @@ bin/magento support:utility:check [--hide-paths]
 bin/magento support:utility:paths [-f|--force]
 ```
 
-### `--force`, `-f`
+### `--force`， `-f`
 
 強制
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -10793,7 +10968,7 @@ bin/magento support:utility:paths [-f|--force]
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -10826,35 +11001,35 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 - 預設： `false`
 - 不接受值
 
-### `--clear-static-content`, `-c`
+### `--clear-static-content`， `-c`
 
 清除產生的靜態檢視檔案。
 
 - 預設： `false`
 - 不接受值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -10874,7 +11049,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
@@ -10931,28 +11106,28 @@ Web後端的連線埠
 
 - 需要值
 
-### `--help`, `-h`
+### `--help`， `-h`
 
 顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`, `-q`
+### `--quiet`， `-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`, `-v|-vv|-vvv`
+### `--verbose`， `-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`, `-V`
+### `--version`， `-V`
 
 顯示此應用程式版本
 
@@ -10972,7 +11147,333 @@ Web後端的連線埠
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`, `-n`
+### `--no-interaction`， `-n`
+
+請勿詢問任何互動式問題
+
+- 預設： `false`
+- 不接受值
+
+
+## `webhooks:dev:run`
+
+執行註冊的webhook以進行開發。
+
+```bash
+bin/magento webhooks:dev:run <name> <payload>
+```
+
+
+### `name`
+
+Webhook名稱
+
+- 必填
+
+### `payload`
+
+JSON格式的webhook裝載
+
+- 必填
+
+### `--help`， `-h`
+
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+
+- 預設： `false`
+- 不接受值
+
+### `--quiet`， `-q`
+
+不輸出任何訊息
+
+- 預設： `false`
+- 不接受值
+
+### `--verbose`， `-v|-vv|-vvv`
+
+增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
+
+- 預設： `false`
+- 不接受值
+
+### `--version`， `-V`
+
+顯示此應用程式版本
+
+- 預設： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或停用 — no-ansi） ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定「 — ansi」選項
+
+- 預設： `false`
+- 不接受值
+
+### `--no-interaction`， `-n`
+
+請勿詢問任何互動式問題
+
+- 預設： `false`
+- 不接受值
+
+
+## `webhooks:generate:module`
+
+根據webhook註冊產生外掛程式
+
+```bash
+bin/magento webhooks:generate:module
+```
+
+### `--help`， `-h`
+
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+
+- 預設： `false`
+- 不接受值
+
+### `--quiet`， `-q`
+
+不輸出任何訊息
+
+- 預設： `false`
+- 不接受值
+
+### `--verbose`， `-v|-vv|-vvv`
+
+增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
+
+- 預設： `false`
+- 不接受值
+
+### `--version`， `-V`
+
+顯示此應用程式版本
+
+- 預設： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或停用 — no-ansi） ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定「 — ansi」選項
+
+- 預設： `false`
+- 不接受值
+
+### `--no-interaction`， `-n`
+
+請勿詢問任何互動式問題
+
+- 預設： `false`
+- 不接受值
+
+
+## `webhooks:info`
+
+傳回指定webhook的裝載。
+
+```bash
+bin/magento webhooks:info [--depth [DEPTH]] [--] <webhook-name> [<webhook-type>]
+```
+
+
+### `webhook-name`
+
+Webhook方法名稱
+
+- 必填
+
+### `webhook-type`
+
+Webhook型別（前、後）
+
+- 預設： `before`
+
+
+### `--depth`
+
+要傳回的webhook承載中的層數
+
+- 預設： `3`
+- 接受值
+
+### `--help`， `-h`
+
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+
+- 預設： `false`
+- 不接受值
+
+### `--quiet`， `-q`
+
+不輸出任何訊息
+
+- 預設： `false`
+- 不接受值
+
+### `--verbose`， `-v|-vv|-vvv`
+
+增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
+
+- 預設： `false`
+- 不接受值
+
+### `--version`， `-V`
+
+顯示此應用程式版本
+
+- 預設： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或停用 — no-ansi） ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定「 — ansi」選項
+
+- 預設： `false`
+- 不接受值
+
+### `--no-interaction`， `-n`
+
+請勿詢問任何互動式問題
+
+- 預設： `false`
+- 不接受值
+
+
+## `webhooks:list`
+
+顯示已訂閱Webhook的清單
+
+```bash
+bin/magento webhooks:list
+```
+
+### `--help`， `-h`
+
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+
+- 預設： `false`
+- 不接受值
+
+### `--quiet`， `-q`
+
+不輸出任何訊息
+
+- 預設： `false`
+- 不接受值
+
+### `--verbose`， `-v|-vv|-vvv`
+
+增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
+
+- 預設： `false`
+- 不接受值
+
+### `--version`， `-V`
+
+顯示此應用程式版本
+
+- 預設： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或停用 — no-ansi） ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定「 — ansi」選項
+
+- 預設： `false`
+- 不接受值
+
+### `--no-interaction`， `-n`
+
+請勿詢問任何互動式問題
+
+- 預設： `false`
+- 不接受值
+
+
+## `webhooks:list:all`
+
+傳回指定模組支援的webhook方法名稱清單
+
+```bash
+bin/magento webhooks:list:all <module_name>
+```
+
+
+### `module_name`
+
+模組名稱
+
+- 必填
+
+### `--help`， `-h`
+
+顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+
+- 預設： `false`
+- 不接受值
+
+### `--quiet`， `-q`
+
+不輸出任何訊息
+
+- 預設： `false`
+- 不接受值
+
+### `--verbose`， `-v|-vv|-vvv`
+
+增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
+
+- 預設： `false`
+- 不接受值
+
+### `--version`， `-V`
+
+顯示此應用程式版本
+
+- 預設： `false`
+- 不接受值
+
+### `--ansi`
+
+強制（或停用 — no-ansi） ANSI輸出
+
+- 不接受值
+
+### `--no-ansi`
+
+否定「 — ansi」選項
+
+- 預設： `false`
+- 不接受值
+
+### `--no-interaction`， `-n`
 
 請勿詢問任何互動式問題
 
