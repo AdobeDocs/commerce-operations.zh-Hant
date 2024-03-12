@@ -1,8 +1,8 @@
 ---
-source-git-commit: 28425dbea555b892a1f1ad47f1232ce28f96d269
+source-git-commit: 3e2c2898831c735b17d0c13712824621c0705ca2
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 18%
+source-wordcount: '100'
+ht-degree: 0%
 
 ---
 # Adobe編寫擴充功能的產品可用性
@@ -12,7 +12,7 @@ ht-degree: 18%
   <thead>
     <tr>
       <th>Adobe Commerce版本</th>
-      <th>2.4.7-beta2</th>
+      <th>2.4.7-beta3</th>
       <th>2.4.6</th>
       <th>2.4.5</th>
       <th>2.4.4</th>
@@ -22,13 +22,35 @@ ht-degree: 18%
   <tbody>
       <tr>
           <td>Adobe Commerce的Adobe I/O事件</td>
-          <td>1.3.0</td>
-          <td>1.3.0</td>
-          <td>1.3.0</td>
-          <td>1.3.0</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">作曲者</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">發行說明</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Adobe Commerce管理員UI SDK</td>
+          <td>1.3+</td>
+          <td>1.3+</td>
+          <td>1.3+</td>
+          <td>-</td>
+          <td>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">作曲者</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">發行說明</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Adobe Commerce Webhooks</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>1.2+</td>
+          <td>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">作曲者</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">發行說明</a><br/>
           </td>
       </tr>
       <tr>
@@ -43,14 +65,14 @@ ht-degree: 18%
           </td>
       </tr>
       <tr>
-          <td>Experience Platform聯結器</td>
-          <td>3.0.0-beta1</td>
-          <td>1.0.0+</td>
+          <td>資料連線</td>
+          <td>3.2.0-beta3</td>
+          <td>2.1.1+</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">發行說明</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">發行說明</a><br/>
           </td>
       </tr>
       <tr>

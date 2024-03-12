@@ -2,9 +2,9 @@
 title: 管理索引子
 description: 請參閱如何檢視和管理Commerce索引器的範例。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 41082413e24733dde34542a2c9cb3cabbfdd4a35
+source-git-commit: a8f845813971eb32053cc5b2e390883abf3a104e
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -263,3 +263,51 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 ```
 
 當索引器模式設定為時，會新增與索引器相關的資料庫觸發程式 `schedule` 並在索引子模式設定為時移除 `realtime`. 如果索引子設定為時，資料庫中缺少觸發程式 `schedule`，將索引子變更為 `realtime` 然後再變更回 `schedule`. 這會重設觸發程式。
+
+### 設定索引子狀態 [!BADGE 2.4.7測試版]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="僅適用於2.4.7-beta版"}
+
+這個指令可讓管理員修改一或多個索引器的操作狀態，在資料匯入、更新或維護等大量操作期間最佳化系統效能。
+
+命令語法：
+
+```bash
+bin/magento indexer:set-status {invalid|suspended|valid} [indexer]
+```
+
+其中：
+
+- `invalid` — 將索引器標籤為過期，在下次cron執行時提示重新索引，除非它們被暫停。
+- `suspended` — 暫時停止索引器的自動cron觸發更新。 此狀態同時適用於即時和排程模式，確保在密集作業期間暫停自動更新。
+- `valid` — 表示索引器資料是最新的，不需要重新索引。
+- `indexer` — 是以空格分隔的索引子清單。 省略 `indexer` 以相同方式設定所有索引子。
+
+例如，若要暫停特定索引子，請輸入：
+
+```bash
+bin/magento indexer:set-status suspended catalog_category_product catalog_product_category
+```
+
+範例結果：
+
+```terminal
+Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
+Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
+```
+
+#### 管理暫停的索引器狀態
+
+當索引子設定為 `suspended` 狀態，它主要影響自動重新索引和具體化視觀表更新。 以下是簡短概述：
+
+**已略過重新索引**：略過自動重新索引 `suspended` 索引器和共用相同索引器的任何索引器 `shared_index`. 這樣可確保不會重新索引與已暫停處理序相關的資料，以節省系統資源。
+
+**已略過具體化視觀表更新**：類似於重新索引，更新了與下列專案相關的具體化視觀表： `suspended` 索引器或其共用索引也會暫停。 此動作會進一步減少暫停期間的系統負載。
+
+>[!INFO]
+>
+>此 `indexer:reindex` 命令會重新索引所有索引子，包括標示為 `suspended`，暫停自動更新時，此功能對手動更新很有用。
+
+>[!IMPORTANT]
+>
+>將索引器的狀態變更為 `valid` 從 `suspended` 或 `invalid` 需要注意。 如果有累積的未索引資料，此動作可能會導致效能降低。
+>
+>在手動將狀態更新到之前，請務必確保所有資料都正確編制索引 `valid` 以維持系統效能與資料完整性。

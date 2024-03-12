@@ -2,7 +2,7 @@
 title: 管理快取
 description: 管理快取型別並檢視快取狀態。
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 604e2a1461e2cbbcc498dfed6018ba640efe8cde
+source-git-commit: 6e0e7f209b265e5b924e0092fec020e0cefc165d
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ## 快取型別
 
-Commerce 2的快取型別如下：
+Commerce的快取型別如下：
 
 | 快取型別「易記」名稱 | 快取型別代碼名稱 | 說明 |
-|--- |--- |--- |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 設定 | 設定 | Commerce會從所有模組收集設定、合併設定，並將合併的結果儲存至快取。 此快取也包含儲存在檔案系統和資料庫中的存放區特定設定。 修改組態檔後，請清除或排清此快取型別。 |
 | 版面配置 | 版面 | 編譯的頁面配置（也就是來自所有元件的配置元件）。 在修改版面配置檔案後，清除或排清此快取型別。 |
 | 封鎖HTML輸出 | block_html | 每個區塊的頁面片段HTML。 修改檢視圖層後，請清除或排清此快取型別。 |
@@ -31,10 +31,9 @@ Commerce 2的快取型別如下：
 | 翻譯 | translate | 從所有模組合併翻譯後，合併快取將會清除。 |
 | 整合設定 | config_integration | 已編譯的整合。 變更或新增整合後，請清除或排清此快取。 |
 | 整合API設定 | config_integration_api | 已編譯存放區整合的整合API設定。 |
+| GraphQL查詢解析器結果 [!BADGE 2.4.7測試版]{type=Informational url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;僅適用於2.4.7-beta&quot;} | graphql_query_resolver_result | 快取客戶、CMS頁面、CMS區塊和產品媒體收藏集實體的GraphQL查詢解析器的結果。 讓此快取保持啟用，以改善GraphQL效能。 |
 | Web服務設定 | config_webservice | 快取Web API結構。 |
 | 客戶通知 | customer_notification | 顯示在使用者介面中的臨時通知。 |
-| 管理員UI SDK快取 | admin_ui_sdk | 快取使用新增的管理自訂 [Adobe Commerce管理員UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
-| Webhooks回應快取 | webhooks_response | 將回應快取至 [webhook請求](https://developer.adobe.com/commerce/extensibility/webhooks/). |
 
 ## 檢視快取狀態
 
@@ -63,6 +62,7 @@ Current status:
             config_integration: 1
         config_integration_api: 1
                    target_rule: 1
+ graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
@@ -171,6 +171,7 @@ bin/magento cache:disable db_ddl full_page
    config_integration
    config_integration_api
    full_page
+   graphql_query_resolver_results
    config_webservice
    translate
 ```
