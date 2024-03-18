@@ -3,9 +3,9 @@ title: GraphQL API的應用程式伺服器
 description: 請依照這些指示，在您的Adobe Commerce部署中啟用GraphQL API的應用程式伺服器。
 badgeCoreBeta: label="2.4.7測試版" type="informative"
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 1fdb29c1a6666aeeef7e546bc7d57a83a40b7542
+source-git-commit: 9d5795400880a65947b1b90c8806b9dcb14aba23
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1897'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ git push
 1. 請確定您所有的Commerce自訂專案和擴充功能都與應用程式伺服器相容。
 1. 確認 `CRYPT_KEY` 環境變數已針對您的執行個體設定。 您可以在雲端專案入口網站（入門UI）上檢視此變數的狀態。
 1. 複製您的Commerce Cloud專案。
-1. 將「application-server/.magento/.magento.app.yaml.sample」重新命名為「application-server/.magento/.magento.app.yaml」，並視需要調整.magento.app.yaml中的設定。
+1. 重新命名 `application-server/.magento/.magento.app.yaml.sample` 至 `application-server/.magento/.magento.app.yaml` 並視需要調整.magento.app.yaml中的設定。
 1. 取消註解下列路由在 `project_root/.magento/routes.yaml` 要重新導向的檔案 `/graphql` 應用程式伺服器的流量。
 
    ```yaml
@@ -108,6 +108,11 @@ git push
    ```bash
    git commit -m "AppServer Enabled"
    ```
+
+>[!NOTE]
+>
+> 確定您在根目錄中的所有自訂設定 `.magento.app.yaml` 檔案已適當移轉至 `application-server/.magento/.magento.app.yaml` 檔案。 一旦 `application-server/.magento/.magento.app.yaml` 檔案會新增至您的專案，因此您除了維護根以外，也應維護它 `.magento.app.yaml` 檔案。
+> 例如，如果您需要 [設定rabbitmq](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) 或 [管理Web屬性](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) 您應該將相同的設定新增到 `application-server/.magento/.magento.app.yaml` 以及。
 
 ### 在雲端入門程式上部署應用程式伺服器
 
