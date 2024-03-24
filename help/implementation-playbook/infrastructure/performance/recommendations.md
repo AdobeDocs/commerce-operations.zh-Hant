@@ -4,9 +4,9 @@ description: 依照下列建議最佳化Adobe Commerce實作的效能。
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
 feature: Cloud
 topic: Performance
-source-git-commit: 31c71af854a59381c7793f26ed9b121cd9bcac83
+source-git-commit: 8b09d734d8ac4490cd88af5673acd0a41b6cdf66
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Elasticsearch （或OpenSearch）自Adobe Commerce 2.4版起為必填，但最�
 
 ### Headless架構
 
-有一個專屬於 [headless](../../architecture/headless/adobe-commerce.md). 總而言之，它將店面圖層與平台本身分開。 這仍是相同的後端，但Adobe Commerce不再直接處理請求，而是僅透過GraphQL API支援自訂店面。
+有一個專屬於 [headless](../../architecture/enterprise-blueprint.md#headless-storefront). 總而言之，它將店面圖層與平台本身分開。 這仍是相同的後端，但Adobe Commerce不再直接處理請求，而是僅透過GraphQL API支援自訂店面。
 
 ### 讓Adobe Commerce保持更新
 
