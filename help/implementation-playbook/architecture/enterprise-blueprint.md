@@ -2,13 +2,13 @@
 title: 企業參考架構
 description: 瞭解如何使用Adobe最新的可撰寫商務技術實施Adobe Commerce。
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
-source-git-commit: 96afb0ccf5ea872cb42320babfd04ba51fa7dbf6
+exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
+source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce企業參考架構
 
@@ -78,3 +78,4 @@ Adobe提供一套豐富的智慧可撰寫商品化服務，協助您支援關鍵
 Headless商務是API優先的商務。 Adobe Commerce採用分離式架構，可透過GraphQL API層提供所有商務服務和資料，提供完整的Headless。 此架構可讓團隊獨立於核心應用程式開發前端，提供使用新興技術快速建立和測試新接觸點的靈活性。
 
 Adobe提供現代化的Headless店面技術，具備以下所提供的相同優勢和功能： [Edge Delivery Services](https://www.aem.live/home) 以檔案為基礎的製作、以效能為先的架構，以及現成可用的原生實驗。 那個充分運用Adobe Commerce的規模與效能 [店面服務](#storefront-services) 以及彈性與便利性 [外掛程式元件](https://experienceleague.adobe.com/developer/commerce/storefront/) 以提供商務功能。
+
