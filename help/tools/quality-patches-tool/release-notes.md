@@ -1,17 +1,17 @@
 ---
 title: 發行說明
-description: 瞭解 Adobe Systems Commerce 可用的修補程式及其可解決的問題。
+description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
+source-git-commit: f21891b1be51896efba83d36048c20119ea1edbf
 workflow-type: tm+mt
-source-wordcount: '20136'
+source-wordcount: '20493'
 ht-degree: 0%
 
 ---
 
 # 發行說明
 
-提供 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) 由Adobe Systems和Magento Open Source 社群開發的各個補丁。 它可讓您套用、還原和檢視已安裝的Adobe Commerce或Magento Open Source版本可用的所有個別修補程式的一般資訊。 無論誰開發修補程式，您都可以將修補程式套用至Adobe Commerce和Magento Open Source專案。 例如，您可以將社群開發的修補程式套用至Adobe Commerce專案。
+此 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) 提供由Adobe和Magento Open Source社群開發的個別修補程式。 它可讓您套用、還原和檢視已安裝的Adobe Commerce或Magento Open Source版本可用的所有個別修補程式的一般資訊。 無論誰開發修補程式，您都可以將修補程式套用至Adobe Commerce和Magento Open Source專案。 例如，您可以將社群開發的修補程式套用至Adobe Commerce專案。
 
 >[!INFO]
 >
@@ -21,13 +21,27 @@ ht-degree: 0%
 >
 >如需的相關資訊 [!DNL quality patches] 由社群建立以進行Magento Open Source，請參閱 [發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.48 {#v1-1-48}
+
+* **ACSD-55566** (適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.7) — 修正 `mergeCart` 突變失敗於&quot;*內部伺服器錯誤*&#x200B;中的&quot; [!DNL GraphQL] 在合併具有相同組合專案的來源和目的地購物車時回應。
+* **ACSD-56546** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正可設定和套件產品顯示為 **無庫存** 在店面，當 **顯示超出產品設定** 是 *已停用*.
+* **ACSD-56635** (適用於Adobe Commerce >=2.4.6 &lt;2.4.7) — 修正使用匯入時，匯入的客戶會以相同的電子郵件地址重複的問題 **帳戶共用** 設為 *全域*.
+* **ACSD-56741** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正錯誤訊息&quot;*正在嘗試存取型別為null的值上的陣列位移*」會在以下期間顯示： `setup:upgrade` 當資料庫包含自訂 [!DNL MySQL] 與索引機制無關的觸發程式和 [!DNL MView].
+* **ACSD-57315** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正在中建立新交易時的問題 [!DNL PayPal Payflow Pro] 每次 [!UICONTROL Fetch] 按鈕點選於 **[!UICONTROL View transaction]** 在Admin中的畫面。
+* **ACSD-57337** (適用於Adobe Commerce >=2.4.4 &lt;2.4.6) — 修正具有特定網站存取限制的管理員使用者可看見中所有網站的公司的問題。 **[!UICONTROL Companies]** 格線。
+* **ACSD-57394** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正中多個排序欄位排序錯誤的產品問題。 [!DNL GraphQL].
+* **ACSD-57565** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正 **[!UICONTROL Order]** 在更新時段之前，儀表板會顯示不正確的訂單資訊。 儀表板現在會在第一次載入時顯示正確的訂單統計資料。
+* **ACSD-57854** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) — 修正產品時的問題 [!DNL GraphQL] 請求在類別彙總中傳回已停用的類別。
+* **ACSD-58008** (適用於Adobe Commerce >=2.4.5 &lt;2.4.7) — 修正在未指定結束日期的情況下更新排程更新會移除分段專案的先前版本的問題。
+* 更新修補程式：MDVA-39305-V2、ACSD-48627、ACSD-54965
+
 ## v1.1.47 {#v1-1-47}
 
 * **ACSD-55241** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正以下問題： *[!UICONTROL Used]* 和 *[!UICONTROL Times Used]* 在多個位址結帳時，屬性對產生的抵用券顯示不正確的值。
 * **ACSD-56760** (適用於Adobe Commerce >=2.4.6 &lt;2.4.7) — 修正若網站商店有專屬的根類別，僅限特定網站的管理員使用者無法排序或新增類別內的新產品的問題。
 * **ACSD-56858** (適用於Adobe Commerce >=2.4.2 &lt;2.4.7) — 修正受限制公司管理員無法正確顯示B2B公司角色許可權的問題。
-* **ACSD-57074**（用於Adobe Systems商務和Magento Open Source >=2.4.6 *&lt;2.4.7) - Fixes the issue where the  是/否* 開頭為 的`attrbute_code``price_`自定義屬性在索引中無法正常工作，並且具有此類屬性的產品在前端不可用。
-* 更新的修補程式：ACSD-53378、ACSD-51819
+* **ACSD-57074** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正 *是/否* 自訂屬性搭配 `attrbute_code` 開始使用 `price_` 無法正確處理索引，且無法在前端使用具有此類屬性的產品。
+* 更新修補程式：ACSD-53378、ACSD-51819
 
 ## v1.1.46 {#v1-1-46}
 
@@ -46,14 +60,14 @@ ht-degree: 0%
 * **ACSD-56515** (適用於Adobe Commerce >=2.4.2 &lt;2.4.7) — 修正具有網站層級許可權的管理員無法新增或編輯動態區塊的問題。
 * **ACSD-56447** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正透過平行REST Web API請求將相同產品新增到購物車導致購物車中有兩個單獨專案的問題。
 * **ACSD-56415** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) — 修正由於 `DELETE` 當資料庫有大量要索引的部分價格資料時進行查詢。
-* **ACSD-54965** （Adobe Systems商務>=2.4.5 &lt;2.4.6) - Fixes the issue where the Visual Merchandising grid does not display the correct stock when a product is assigned to custom stock only.
-* **ACSD-52824** （Adobe Systems商務>=2.4.5 &lt;2.4.7) - Fixes the issue where PayPal Express, Google Pay, and Apple Pay buttons are displayed for company customers when such payment methods are disabled in company settings.
-* 更新的修補程式：ACSD-56193
+* **ACSD-54965** (適用於Adobe Commerce >=2.4.5 &lt;2.4.6) — 修正將產品僅指派給自訂庫存時，視覺銷售格線未顯示正確庫存的問題。
+* **ACSD-52824** (適用於Adobe Commerce >=2.4.5 &lt;2.4.7) — 修正公司設定中停用PayPal Express、Google Pay及Apple Pay按鈕時，公司客戶會看到這些付款方式的問題。
+* 更新修補程式：ACSD-56193
 
 ## v1.1.44 {#v1-1-44}
 
-* **ACSD-56790** （用於Adobe Systems商務和Magento Open Source >=2.4.6 &lt;2.4.7) - Fixes the issue where a user is redirected to the Admin Dashboard when sorting category products using the **移出Stock到底部** 選項， `Invalid security or form key. Please refresh the page` 錯誤將顯示在屏幕頂部。
-* **ACSD-56280** （用於Adobe Systems商務>=2.4.4 &lt;2.4.7) - Fixes the issue where ordering items from a gift registry leads to an exception.
+* **ACSD-56790** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正使用排序類別產品時，將使用者重新導向至管理員控制面板的問題 **從庫存移至底部** 選項與 `Invalid security or form key. Please refresh the page` 錯誤會出現在畫面頂端。
+* **ACSD-56280** (適用於Adobe Commerce >=2.4.4 &lt;2.4.7) — 修正從禮品註冊處訂購專案時發生例外狀況的問題。
 * **ACSD-56246** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正當產品的已排程更新作用中時，資料會從自訂多選屬性中移除的問題。
 * **ACSD-56193** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.4) — 修正使用Page Builder在類別說明中使用排程區塊時，Varnish/Fastly快取未更新的問題。
 * **ACSD-56158** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) — 修正「購物車」查詢傳回每個稅捐規則之總稅捐值的問題。
@@ -148,12 +162,12 @@ ht-degree: 0%
 
 * **ACSD-53098** (適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.4) — 修正執行部分索引時，指派給共用目錄的產品未出現在店面的問題。
 * **ACSD-54018** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.6) — 修正 [!UICONTROL Product List] 在widget條件中使用非全域屬性的widget。
-* **ACSD-54111** （用於Adobe Systems商務和Magento Open Source >=2.4.2 &lt;2.4.6) - Fixes the issue where the product thumbnail images are not displayed on the storefront when the aspect ratio of the watermark image does not match the product image.
-* **ACSD-47669** （用於Adobe Systems商務和Magento Open Source >=2.4.2 &lt;2.4.6) - Fixes *完整性約束衝突：1452 無法添加或更新子行：導入產品時外鍵約束失敗* 錯誤CSV。
-* **ACSD-53347** （用於Adobe Systems商務和Magento Open Source >=2.3.7 &lt;2.4.7) - Fixes the issue where the price indexer takes too much time to execute.
-* **ACSD-52287** （用於Adobe Systems商務>=2.3.7 &lt;2.4.7) - Fixes the issue with incorrect order status in the archived order grid when asynchronous grid indexing is enabled.
-* **ACSD-52929** （用於Adobe Systems商務和Magento Open Source >=2.3.7 &lt;2.4.7) - Fixes the issue with redundant requests to reindex default source items when the inventory indexer is configured in async mode.
-* **ACSD-53824** （用於Adobe Systems商務和 Magento Open Source >=2.4.4 &lt;2.4.7) - Fixes the issue where `UpdateMultiselectAttributesBackendTypes` 遷移數據修補程式在 期間 `setup:upgrade`超過資料庫事務大小限制。
+* **ACSD-54111** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.6) — 修正當浮水印影像的外觀比例與產品影像不相符時，店面未顯示產品縮圖影像的問題。
+* **ACSD-47669** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.6) — 修正 *完整性條件約束違規： 1452無法新增或更新子資料列：外部索引鍵條件約束失敗* 匯入產品CSV時發生錯誤。
+* **ACSD-53347** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.7) — 修正價格索引器耗費太多時間執行的問題。
+* **ACSD-52287** (適用於Adobe Commerce >=2.3.7 &lt;2.4.7) — 修正啟用非同步格線索引時，封存的訂單格線中順序狀態不正確的問題。
+* **ACSD-52929** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.7) — 修正當庫存索引器設定為非同步模式時，重新索引預設來源專案的備援請求問題。
+* **ACSD-53824** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正以下問題： `UpdateMultiselectAttributesBackendTypes` 移轉資料修補程式超過資料庫交易大小限制，於 `setup:upgrade`.
 
 ## v1.1.37 {#v1-1-37}
 
@@ -164,9 +178,9 @@ ht-degree: 0%
 * **ACSD-52606** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正錯誤訊息的問題 *您的訂單尚未準備好取貨* 當使用者點按時顯示 **[!UICONTROL Notify Order is Ready for Pickup]**.
 * **ACSD-51574** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正將影像取代為具有相同名稱的另一個影像後，影像沒有在前端更新的問題。
 * **ACSD-53728** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.7) — 修正產品EAV索引器需要更長時間才能完成的問題。
-* **ACSD-53979** （用於Adobe Systems商務和Magento Open Source >=2.4.6 &lt;2.4.7) - Fixes the JS issue that occurs on the homepage if the welcome message contains a single quote.
-* **ACSD-52085** （用於Adobe Systems商務和Magento Open Source >=2.4.5 &lt;2.4.7) - Fixes the issue where a configurable product with a special price is not visible in the product&#39;s carousel.
-* **ACSD-53795** （用於Adobe Systems商務和Magento Open Source >=2.4.2 &lt;2.4.7) - Fixes the issue with invalid data type in `indexer_update_all_views` cron 作業。
+* **ACSD-53979** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正如果歡迎訊息包含單引號，首頁上會發生的JS問題。
+* **ACSD-52085** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) — 修正產品轉盤中未顯示具有特殊價格的可設定產品的問題。
+* **ACSD-53795** (適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;2.4.7) — 修正中資料型別無效的問題 `indexer_update_all_views` cron工作。
 * **ACSD-52143** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正產品匯入後移除自訂選項的問題。
 * **ACSD-53750** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正 *管路中斷或連線已關閉* 執行多執行緒期間發生錯誤 `catalog_product_price` 重新索引。
 * **ACSD-49843** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.0) || >=2.4.1 &lt;2.4.7) — 修正使用線上付款方式自動開立訂購專案的發票後，無法使用產品下載連結的問題。 **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]** 設定已啟用。
@@ -283,11 +297,11 @@ ht-degree: 0%
 
 ## v1.1.30 {#v1-1-30}
 
-* **ACSD-50336** （用於Adobe Systems商務和Magento Open Source >=2.4.4-p1 &lt;2.4.4-p3) - Fixes the issue where product alert emails are not sent when a product is back in stock or the price is changed.
-* **ACSD-50367** （用於Adobe Systems商務和Magento Open Source >=2.3.7 &lt;2.4.7) - Fixes the issue where customer address export does not work when a multi-select customer address attribute without values is created.
-* **ACSD-49877** （用於Adobe Systems商務和Magento Open Source >=2.3.7 &lt;2.4.7) - Fixes the issue where video autoplay does not work on mobile [!DNL Safari] ，當視頻直接連結到遠端視頻檔而不是流服務時。
-* **ACSD-50165** （用於Adobe Systems商務和Magento Open Source >=2.4.0 &lt;2.4.7) - Fixes the error *無法刪除該檔。 警告！取消連結：從管理員刷新 JS/CSS 快取時沒有此類文件或目錄* 。
-* **ACSD-49737** （用於Adobe Systems商務和Magento Open Source >=2.4.1-p1 &lt;2.4.7) - Fixes the issue where a coupon is incorrectly marked as used after a failed card payment.
+* **ACSD-50336** (適用於Adobe Commerce和Magento Open Source >=2.4.4-p1 &lt;2.4.4-p3) — 修正當產品補貨或價格變更時，未傳送產品警報電子郵件的問題。
+* **ACSD-50367** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.7) — 修正建立不含值的多重選取客戶地址屬性時，客戶地址匯出無法運作的問題。
+* **ACSD-49877** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.7) — 修正行動裝置上無法自動播放視訊的問題 [!DNL Safari] 直接連結至遠端視訊檔案，而非串流服務時。
+* **ACSD-50165** (適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.7) — 修正錯誤 *無法刪除檔案。 Warning！unlink：沒有這樣的檔案或目錄* 從Admin排清JS/CSS快取時。
+* **ACSD-49737** (適用於Adobe Commerce和Magento Open Source >=2.4.1-p1 &lt;2.4.7) — 修正卡片付款失敗後，優惠券錯誤地標示為使用的問題。
 * **ACSD-50814** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正管理員使用者無法建立銷退折讓單的問題。
 * **ACSD-50116** (適用於Adobe Commerce和Magento Open Source >=2.3.7 &lt;2.4.7) — 修正管理員使用者無法建立3級或更低子類別之URL重寫的問題。
 * **ACSD-49513** (適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.5) — 修正遠端儲存體同步作業因0位元組檔案而失敗的問題。
@@ -636,9 +650,9 @@ ht-degree: 0%
 * **MDVA-37725** (*適用於Adobe Commerce和Magento Open Source >=2.3.0 &lt;=2.4.3-p1*) — 修正從非預設網站傳送的非同步訂單電子郵件包含預設網站的標誌URL的問題。
 * **MDVA-39482** (*適用於Adobe Commerce和Magento Open Source >=2.3.6 &lt;=2.3.7-p2 || >=2.4.1 &lt;2.4.4*) — 修正啟用延期交貨時，以「0」數量匯入的產品無存貨的問題。
 * **MDVA-40435** (*若為Adobe Commerce和Magento Open Source >=2.3.4 &lt;2.4.4*) — 修正透過GraphQL套用時，具有動態價格的套件組合產品折扣不正確的問題。
-* **MC-42528 （用於Adobe Systems商務和 Magento Open Source >=2.4.3 &lt;=2.4.3-p1 *） - 修復了 GraphQL 查詢同時返回已分配和未分配類別的問題。***`categoryList`
-* **MDVA-29400** （*適用於Adobe Systems商務和Magento Open Source >=&lt;=2.3.7-p1 ||=&quot;&quot;>2.3.0 =2.4.0 &lt;=2.4.0-p1*） - 修正了使用 .[!DNL PayPal Express Checkout]&lt;/=2.3.7-p1>
-* **MDVA-26005** （*適用於Adobe Systems商務且Magento Open Source >=2.3.4 &lt;=2.3.5-p2*） - 修復無法在類別樹中為購物車價格規則條件選擇類別的問題。
+* **MC-42528** (*適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;=2.4.3-p1*) — 修正 `categoryList` GraphQL查詢會傳回指派和未指派的類別。
+* **MDVA-29400** (*適用於Adobe Commerce和Magento Open Source >=2.3.0 &lt;=2.3.7-p1 || >=2.4.0 &lt;=2.4.0-p1*) — 修正以下專案的重複訂單問題： [!DNL PayPal Express Checkout].
+* **MDVA-26005** (*適用於Adobe Commerce和Magento Open Source >=2.3.4 &lt;=2.3.5-p2*) — 修正無法在購物車價格規則條件的類別樹狀結構中選取類別的問題。
 * **MDVA-25631** (*適用於Adobe Commerce和Magento Open Source >=2.3.3 &lt;=2.3.5-p2*) — 改善編輯和儲存包含大量客戶的客戶區段的效能。
 
 ## v1.1.3 {#v1-1-3}
@@ -652,8 +666,8 @@ ht-degree: 0%
 
 ## v1.1.2 {#v1-1-2}
 
-* **MDVA-38929** （*適用於Adobe Systems商務和 Magento Open Source >=2.3.0 &lt;2.4.4*） - 修復了從商店信用額度支付訂單時，帶有 FPT 的發票顯示錯誤的總量的問題。
-* **MDVA-37364** （*適用於Adobe Systems商務和 Magento Open Source >=2.4.0 &lt;=2.4.3*） - 修復日期類型的自定義 客戶 屬性中斷客戶網格UI的問題。
+* **MDVA-38929** (*若為Adobe Commerce和Magento Open Source >=2.3.0 &lt;2.4.4*) — 修正從商店貸方支付訂單時，具有FPT的商業發票顯示錯誤總金額的問題。
+* **MDVA-37364** (*適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;=2.4.3*) — 修正日期型別的自訂客戶屬性破壞客戶網格UI的問題。
 * **MDVA-39195** (*適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;=2.4.2-p2*) — 修正以下問題： *加入購物車* 重新導向至購物車已啟用時，類別頁面上的按鈕未啟用。
 * **MDVA-37115** (*適用於Adobe Commerce和Magento Open Source >=2.4.2 &lt;=2.4.2-p2*) — 修正非必要的問題 *只剩下0個* 通知會顯示在可設定的產品頁面上。
 * **MDVA-39521** (*若為Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.4*) — 修正使用者無法透過GraphQL以空白電話號碼在購物車上設定送貨地址的問題。
@@ -671,12 +685,12 @@ ht-degree: 0%
 * **MDVA-36021** (*若為Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.4*) — 修正 *呼叫成員函式getId()* 錯誤會顯示在管理員的訂單詳細資訊頁面上。
 * **MDVA-34948** (*適用於Adobe Commerce和Magento Open Source >=2.3.6 &lt;=2.3.6-p1 || >=2.4.0 &lt;=2.4.0-p1*) — 修正長期執行查詢(例如 `GET_LOCK`.
 * **MDVA-39305** (*適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;=2.4.2-p1*) — 修正註冊客戶無法以已啟用的Google ReCaptcha登入的問題。
-* **MDVA-37897** （*適用於Adobe Systems商務且 Magento Open Source >=2.3.0 &lt;2.4.4*） - 修復客戶嘗試使用「最近查看」小部件中的選項新增產品時出現錯誤重新導向的問題。
+* **MDVA-37897** (*若為Adobe Commerce和Magento Open Source >=2.3.0 &lt;2.4.4*) — 修正客戶嘗試使用「最近檢視」Widget的選項新增產品時，重新導向錯誤的問題。
 
 ## v1.1.0 {#v1-1-0}
 
-* 引入了補丁類別，以提高使用者體驗並使客户更容易搜索所需的補丁。
-* 這個檔案 `patches.json` 已重新命名為 `support-patches.json`。
+* 我們引進了修補程式類別，以改善使用者體驗，並讓客戶更輕鬆地搜尋所需的修補程式。
+* 此 `patches.json` 檔案已重新命名為 `support-patches.json`.
 * **MDVA-38799** (*若為Adobe Commerce >=2.3.0 &lt;2.4.3*) — 修正建立中繼更新後無法儲存可下載產品的問題。
 * **MDVA-37592** (*適用於Adobe Commerce >=2.3.6 &lt;=2.4.2-p1*) — 修正依價格排序時，對指定至共用目錄零價格的產品無法正確運作的問題。
 * **MDVA-38827** (*若為Adobe Commerce >=2.3.3-p1 &lt;2.4.4*) — 修正客戶收到包含錯誤訊息的訂單出貨電子郵件的問題。
@@ -781,13 +795,13 @@ ht-degree: 0%
 * **MDVA-35197** (*若為Adobe Commerce >=2.3.5 &lt;2.4.0*) — 修正先前新增的產品無存貨時，使用GraphQL新增購物車時出現錯誤的問題。
 * **MDVA-34850** (*若為Adobe Commerce >=2.3.1 &lt;2.4.0*) — 修正可設定產品無庫存選項未顯示而非顯示為刪除的問題。
 * **MDVA-34867** (*若為Adobe Commerce >=2.3.0 &lt;2.4.3*) — 修正排程更新的條件欄位集值未儲存的問題。
-* **MDVA-35092** （*適用於 Adobe Systems Commerce >=2.3.5&lt;2.4.3* ） - 修正使用者因 API 已停用[!DNL Vimeo]而無法新增[!DNL Vimeo]視訊的問題。
+* **MDVA-35092** (*若為Adobe Commerce >=2.3.5 &lt;2.4.3*) — 修正使用者無法新增的問題 [!DNL Vimeo] 因已棄用的影片 [!DNL Vimeo] API。
 
 ## v1.0.16 {#v1-0-16}
 
-* **MDVA-33453** （*適用於 Adobe Systems Commerce >=2.3.6 &lt;2.4.3*） - 修正下列問題：如果每個網站的頁面匹配產品具有不同的價格內容類型 預覽，生成器產品會中斷。
-* **MDVA-32634** （*用於Adobe Systems商務 ^2.3.1*） - 修復了在階層中移動類別后，分配給所有商店的類別保持不變的問題 `url_path` 。
-* **MDVA-33344** （*用於Adobe Systems商務 ^2.3.0*） - 修復了使用硬編碼 `rma_item` 實體默認屬性集 ID 而不是資料庫中的值的問題。
+* **MDVA-33453** (*若為Adobe Commerce >=2.3.6 &lt;2.4.3*) — 修正如果相符產品對每個網站的價格不同，頁面產生器產品內容型別預覽會中斷的問題。
+* **MDVA-32634** (*適用於Adobe Commerce ^2.3.1*) — 修正 `url_path` 在階層中移動類別後，指派給所有存放區的類別保持不變。
+* **MDVA-33344** (*適用於Adobe Commerce ^2.3.0*) — 修正硬式編碼的問題 `rma_item` 會使用實體預設屬性集ID，而非資料庫中的值。
 * **MDVA-34192** (*若為Adobe Commerce >=2.3.4 &lt;2.4.3*) — 修正無法使用dd/mm/yyyy格式修改/指定客戶出生日期的問題。
 * **MDVA-34847** (*適用於Adobe Commerce ^2.3.0*) — 修正具有自訂許可權之管理員使用者的管理員集合中，針對SQL條件將ID型別轉換儲存為整數的功能。
 * **MDVA-34886** (*適用於Adobe Commerce ^2.3.2*) — 修正下列情況下搜尋未傳回結果的問題 *權重* 產品屬性已設定為「可搜尋」。
@@ -799,9 +813,9 @@ ht-degree: 0%
 * **MDVA-32759** (*適用於Adobe Commerce >=2.3.1 &lt;2.4.3含B2B擴充功能*) — 修正「共用目錄」刪除現有層級定價的問題。
 * **MDVA-33482** (*適用於Adobe Commerce ^2.3.5*) — 修正針對部份商業發票產生「銷退折讓單」，導致訂單總額的稅捐，而非該部份商業發票的稅捐的問題。
 * **MDVA-33393** (*若為Adobe Commerce >=2.3.0 &lt;2.4.2*) — 修正錯誤 *提供的國家/地區識別碼不存在*.
-* **MDVA-33632** （*適用於Adobe Systems商務 >=2.3.0 &lt;2.3.7* ） - 修復了在嘗試重新訂購缺貨產品時，異常消息 *此產品缺貨* 現在會顯示給管理員使用者。
-* **MDVA-34469** （*用于Adobe Systems商務 >=2.4.1 &lt;2.4.2*） - 修復了使用多個商店視圖時，客戶購物車上的 GraphQL 突變失敗的問題。
-* **MDVA-33976***（適用於Adobe Systems商務>=2.3.0&lt;2.3.7*） - 修復了從捆綁產品中刪除第二個選項后，捆綁產品在店面上顯示為“Stock出”的問題。
+* **MDVA-33632** (*若為Adobe Commerce >=2.3.0 &lt;2.3.7*) — 提供例外狀況訊息的修正 *此產品無庫存* 嘗試重新訂購無庫存產品時，現在會向管理員使用者顯示。
+* **MDVA-34469** (*若為Adobe Commerce >=2.4.1 &lt;2.4.2*) — 修正使用多個商店檢視時，客戶購物車上的GraphQL突變失敗的問題。
+* **MDVA-33976** (*若為Adobe Commerce >=2.3.0 &lt;2.3.7*) — 修正將第二個選項從套件產品移除後，套件產品在店面顯示為無存貨的問題。
 * **MDVA-33894** (*適用於Adobe Commerce >=2.4.0 &lt;2.4.1含B2B擴充功能*) — 修正快速訂購功能的多個問題，包括新增和移除多個產品以及SKU區分大小寫。
 * **MDVA-27664** (*若為Adobe Commerce >=2.3.4 &lt;2.3.6*) — 修正客戶登錄檔單中顯示錯誤的問題： *錯誤 — 出生日期不應晚於今天。*
 * **MDVA-33970** (*若為Adobe Commerce >=2.3.4 &lt;2.4.2*) — 修正當價格屬性的範圍設定為網站時，銷退折讓單中的貨幣符號錯誤的問題。
@@ -921,14 +935,14 @@ ht-degree: 0%
 * **MDVA-28763** (*若為Adobe Commerce >=2.3.2 &lt;2.3.4*) — 修正使用REST API更新產品資訊多次後，產品影像重複的問題。
 * **MDVA-30284** (*若為Adobe Commerce >=2.3.0 &lt;2.4.2*) — 修正目錄搜尋索引器因下列原因而失敗的問題 *[!DNL Elasticsearch]錯誤：已超過索引中欄位總數的限制。*
 * **MDVA-29042** (*適用於Adobe Commerce >=2.3.3 &lt;=2.3.4-p2含B2B擴充功能*) — 修正目錄許可權變更為的問題。 *允許* 將新產品新增至共用目錄後自動進行。
-* **MDVA-30428** （*適用於Adobe Systems商務>=2.3.3 &lt;2.4.2*） - 修復了如果將產品分配給自定義庫存來源，客戶無法將產品添加到願望清單的問題。
-* **MDVA-28661** （*適用於 Adobe Systems Commerce >=2.3.0 &lt;2.4.2 with B2B extension*） - 修正在變更管理員后，「公司使用者公司 帳戶公司區段發生錯誤的問題。
+* **MDVA-30428** (*若為Adobe Commerce >=2.3.3 &lt;2.4.2*) — 修正客戶無法將產品新增至願望清單的問題（若此產品已指派給自訂詳細目錄來源）。
+* **MDVA-28661** (*適用於Adobe Commerce >=2.3.0 &lt;2.4.2 （含B2B擴充功能）*) — 修正變更公司管理員後，「公司使用者」公司帳戶區段中擲回錯誤的問題。
 
 ## v1.0.4 {#v1-0-4}
 
-* **MDVA-30195** （*適用於Adobe Systems商務 2.3.1 - 2.3.4-p2*） - 修復了在資料庫名稱過長時 cron 作業失敗的問題，導致前端的類別無法更新。
-* **MDVA-30106** （*適用於 Adobe Systems Commerce ^2.3.0*） - 修復了結帳時付款未載入 無法 *讀取 JS 控制台中空屬性“長度”* 錯誤的問題。
-* **MDVA-28656** （*適用於Adobe Systems商務>=2.3.1 &lt;2.3.6 ||=&quot;&quot;>=2.4.0 &lt;2.4.2*） - 修復了以下問題：如果下訂單時不需要付款資訊（例如，有 100% 折扣），並且為該訂單創建了發票，則訂單狀態將更改為 *“已關閉* ”而不是完整應用程式。&lt;/2.3.6>
+* **MDVA-30195** (*適用於Adobe Commerce 2.3.1 - 2.3.4-p2*) — 修正cron作業在資料庫名稱太長時失敗，導致前端未更新類別的問題。
+* **MDVA-30106** (*適用於Adobe Commerce ^2.3.0*) — 修正結帳期間付款未載入的問題 *無法讀取null的屬性&#39;length&#39;* JS主控台發生錯誤。
+* **MDVA-28656** (*若為Adobe Commerce >=2.3.1 &lt;2.3.6 || >=2.4.0 &lt;2.4.2*) — 修正下列問題：若下單時不需要付款資訊（例如，有100%折扣），且已建立訂單的商業發票，則訂單狀態會變更為 *已關閉* 而非「完成」。
 * **MDVA-30209** (*適用於Adobe Commerce 2.3.0至2.3.3-p1*) — 修正客戶更新其帳戶資訊時，客戶群組變更為預設的問題。
 * **MDVA-30123** (*若為Adobe Commerce >=2.3.4 &lt;2.4.2*) — 修正GraphQL查詢的屬性選項標籤未正確轉譯的問題。
 * **MDVA-29996** (*若為Adobe Commerce >=2.3.3 &lt;2.4.2*) — 修正啟用類別許可權後，完整頁面快取不會快取類別頁面的問題。
