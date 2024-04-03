@@ -1,7 +1,7 @@
 ---
-source-git-commit: 489cafa5fc2bc736ac873d1dd3008463c00b638a
+source-git-commit: febd2aa57434ec9b959a4aff6179ae00fe0ccba8
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '181'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 2%
 ## 新增功能
 
 瞭解新檔案和現有檔案的重要更新。
+
+### 2024年3月24日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint.html">架構Blueprint</a> 適用於企業的Commerce實作。</p>
+</td>
+      <td>新主題</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d33294d02b4431d4aa473aa5d0ab42e297cfed14">d33294</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2024年3月12日
 
@@ -22,6 +42,12 @@ ht-degree: 2%
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>已更新2.4.7-beta3版的下列主題：<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Adobe Commerce CLI （內部部署，測試版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">Magento Open SourceCLI (Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Adobe Commerce套件（測試版）</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Magento Open Source套件（測試版）</a></p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/28029603b0a23eb161480363b5106142beda4180">280296</a> （認可）</td>
+    </tr>
     <tr>
       <td><p>更新以下專案的設定指示： <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html">GraphQL API的應用程式伺服器</a> 功能。</p>
 </td>
