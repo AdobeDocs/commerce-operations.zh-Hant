@@ -1,8 +1,8 @@
 ---
-source-git-commit: febd2aa57434ec9b959a4aff6179ae00fe0ccba8
+source-git-commit: 018c61a4ea921b4a69cc854fde355606defe1215
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 2%
+source-wordcount: '307'
+ht-degree: 0%
 
 ---
 # 新功能範本
@@ -10,6 +10,78 @@ ht-degree: 2%
 ## 新增功能
 
 瞭解新檔案和現有檔案的重要更新。
+
+### 2024年4月9日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已更新 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">發行版本</a>.</p>
+</td>
+      <td>技術</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83">efd2fc</a> （認可）</td>
+    </tr>
+    <tr>
+      <td><ul>
+  <li>更新以下專案的發行套件主題： <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> 和 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">MagentoOpenSource</a>.<br /> — 新增的發行套件主題 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">商務用B2B</a>.</li>
+</ul>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> （認可）</td>
+    </tr>
+    <tr>
+      <td><p>已更新 <em>bin/magento</em> 的CLI參考檔案 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> 和 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">MagentoOpenSource</a>.</p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> （認可）</td>
+    </tr>
+    <tr>
+      <td><p>發佈日期2.4.7 GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">發行說明</a>.</p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> （認可）</td>
+    </tr>
+    <tr>
+      <td><p>新增2024年4月Adobe Commerce安全性版本(2.4.6-p5、2.4.5-p7、2.4.4-p8)的發行說明。 另請參閱 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe Commerce和Magento Open Source的發行說明</a></p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> （認可）</td>
+    </tr>
+    <tr>
+      <td><ul>
+  <li>更新以下專案的發行套件主題： <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> 和 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">MagentoOpenSource</a>.<br /> — 新增的發行套件主題 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">商務用B2B</a>.</li>
+</ul>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> （認可）</td>
+    </tr>
+    <tr>
+      <td><p>已更新 <em>bin/magento</em> 的CLI參考檔案 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> 和 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">MagentoOpenSource</a>.</p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> （認可）</td>
+    </tr>
+    <tr>
+      <td><p>發佈日期2.4.7 GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">發行說明</a>.</p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> （認可）</td>
+    </tr>
+    <tr>
+      <td><p>新增2024年4月Adobe Commerce安全性版本(2.4.6-p5、2.4.5-p7、2.4.4-p8)的發行說明。 另請參閱 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe Commerce和Magento Open Source的發行說明</a></p>
+</td>
+      <td>主要更新</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> （認可）</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 2024年3月24日
 
@@ -71,52 +143,6 @@ ht-degree: 2%
 </td>
       <td>主要更新</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/acacc285f8b977b33bb27af76c971bc4015a2b45">acacc2</a> （認可）</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 2024年2月14日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>來源</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增以下專案的最佳實務 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">升級MariaDB</a> 至10.5.1和更新版本。</p>
-</td>
-      <td>主要更新</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> （認可）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024年2月13日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>來源</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>將2024年2月安全性修補程式新增至 <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">系統需求</a>.</p>
-</td>
-      <td>主要更新</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/068eed591b461ba6c91b0e3d517dc712215c6b33">068eed</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>已新增 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">發行說明</a> 2024年2月安全性修補程式（2.4.4-p7、2.4.5-p6和2.4.6-p4）。</p>
-</td>
-      <td>主要更新</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8e5644951114daa5d0841b7fdd32ce37b9803118">8e5644</a> （認可）</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
