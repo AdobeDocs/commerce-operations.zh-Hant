@@ -1,10 +1,10 @@
 ---
 title: 管理快取
-description: 管理快取型別並檢視快取狀態。
+description: 使用Commerce CLI從命令列管理快取型別並檢視快取狀態
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 6e0e7f209b265e5b924e0092fec020e0cefc165d
+source-git-commit: 1070291396144f866cadd5e42ebca3e77a484a9b
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -15,29 +15,17 @@ ht-degree: 0%
 
 ## 快取型別
 
-Commerce的快取型別如下：
+您可以使用Adobe Commerce快取管理系統來改善網站的效能。 本主題說明系統管理員或有權存取Commerce應用程式伺服器的開發人員如何從命令列管理快取。
 
-| 快取型別「易記」名稱 | 快取型別代碼名稱 | 說明 |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 設定 | 設定 | Commerce會從所有模組收集設定、合併設定，並將合併的結果儲存至快取。 此快取也包含儲存在檔案系統和資料庫中的存放區特定設定。 修改組態檔後，請清除或排清此快取型別。 |
-| 版面配置 | 版面 | 編譯的頁面配置（也就是來自所有元件的配置元件）。 在修改版面配置檔案後，清除或排清此快取型別。 |
-| 封鎖HTML輸出 | block_html | 每個區塊的頁面片段HTML。 修改檢視圖層後，請清除或排清此快取型別。 |
-| 集合資料 | 集合 | 資料庫查詢的結果。 如有必要，Commerce會自動清理此快取，但第三方開發人員可以將任何資料放入快取的任何區段中。 如果您的自訂模組使用邏輯而導致Commerce無法清除的快取專案，請清除或清除此快取型別。 |
-| DDL | db_ddl | 資料庫結構描述。 如有必要，Commerce會自動清理此快取，但第三方開發人員可以將任何資料放入快取的任何區段中。 在自訂變更資料庫結構描述後，清除或排清此快取型別。 （換言之，此更新不屬於Commerce本身。） 自動更新資料庫架構的一種方法是使用 `magento setup:db-schema:upgrade` 命令。 |
-| 已編譯的設定 | compiled_config | 編譯設定 |
-| 實體屬性值(EAV) | eav | 與EAV屬性相關的中繼資料（例如，商店標籤、相關PHP代碼的連結、屬性呈現、搜尋設定等）。 您通常不需要清除或排清此快取型別。 |
-| 頁面快取 | full_page | 產生的HTML頁面。 如有必要，Commerce會自動清理此快取，但第三方開發人員可以將任何資料放入快取的任何區段中。 在修改影響HTML輸出的程式碼層級後，清除或排清此快取型別。 建議將此快取維持啟用，因為快取HTML可大幅改善效能。 |
-| 反射 | 反射 | 移除Webapi模組與客戶模組之間的相依性。 |
-| 翻譯 | translate | 從所有模組合併翻譯後，合併快取將會清除。 |
-| 整合設定 | config_integration | 已編譯的整合。 變更或新增整合後，請清除或排清此快取。 |
-| 整合API設定 | config_integration_api | 已編譯存放區整合的整合API設定。 |
-| GraphQL查詢解析器結果 [!BADGE 2.4.7測試版]{type=Informational url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;僅適用於2.4.7-beta&quot;} | graphql_query_resolver_result | 快取客戶、CMS頁面、CMS區塊和產品媒體收藏集實體的GraphQL查詢解析器的結果。 讓此快取保持啟用，以改善GraphQL效能。 |
-| Web服務設定 | config_webservice | 快取Web API結構。 |
-| 客戶通知 | customer_notification | 顯示在使用者介面中的臨時通知。 |
+>[!NOTE]
+>
+>
+>Commerce網站管理員可以使用「快取管理系統」工具從Admin管理快取。 另請參閱 [快取管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) 在 _Admin System指南_.
+
 
 ## 檢視快取狀態
 
-若要檢視快取的狀態，請輸入
+從Commerce應用程式伺服器的命令列，使用 `cache:status` Commerce CLI命令。
 
 ```bash
    bin/magento cache:status
@@ -56,16 +44,23 @@ Current status:
                     reflection: 1
                         db_ddl: 1
                compiled_config: 1
+             webhooks_response: 1
                            eav: 1
          customer_notification: 1
-                     full_page: 1
+ graphql_query_resolver_result: 1
             config_integration: 1
         config_integration_api: 1
+                  admin_ui_sdk: 1
+                     full_page: 1
                    target_rule: 1
- graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
+
+>[!TIP]
+>
+>如需Adobe Commerce支援之預設快取型別的詳細說明，請參閱 [快取](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) 在 _Admin System指南_.
+
 
 ## 啟用或停用快取型別
 

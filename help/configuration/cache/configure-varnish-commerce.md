@@ -3,9 +3,9 @@ title: 設定Commerce專用清漆
 description: 瞭解如何更新和管理Commerce應用程式的Varnish設定檔案。
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
    | 後端主機 | 輸入完整的主機名稱或IP位址，並接聽Varnish的連線埠 _後端_ 或 _原始伺服器_；也就是說，提供內容清漆的伺服器會加速。 通常這是您的網頁伺服器。 另請參閱 [清漆快取後端伺服器](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | 後端連線埠 | 原始伺服器的接聽連線埠。 |
    | 寬限期 | 決定如果後端沒有回應，Varnish提供過時內容的時間長度。 預設值為300秒。 |
-   | 處理引數大小  [!BADGE 2.4.7測試版]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="僅適用於2.4.7-beta版"} | 指定最大數量： [配置控點](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) 處理 [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) 完整頁面快取的HTTP端點。 限制大小可以改善安全性和效能。 預設值為100。 |
+   | 處理引數大小 | 指定最大數量： [配置控點](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) 處理 [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) 完整頁面快取的HTTP端點。 限制大小可以改善安全性和效能。 預設值為100。 |
 
 1. 按一下 **儲存設定**.
 

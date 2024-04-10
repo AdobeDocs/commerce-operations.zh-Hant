@@ -2,10 +2,10 @@
 title: 軟體生命週期原則
 description: 了解 Adobe Commerce 版本軟體支援終止的關鍵日期。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: bb90d7903eafe01b42d8c056db771769f9e4e752
+source-git-commit: 01e926e3cf36f27f5292a0b9ce7a6209d4960cc2
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 12%
+source-wordcount: '363'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 12%
 
 - 針對關鍵安全性問題，例如零日漏洞，Adobe提供 [Hotfix](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) 適用於使用支援版本的所有客戶，即使他們未使用最新修補程式或安全性修補程式版本。 請務必注意，Hotfix並非包羅萬象，也不會解決升級至最新版本後會修正的所有安全性問題。
 
-- Adobe不提供協力廠商服務和軟體相依性（例如PHP）的安全性和品質修正。 您有責任維護協力廠商軟體相依性的安全性和法規遵循（例如PCI、ISO、SOC）。 Adobe建議儘快更新您的環境，以使用Adobe Commerce支援的最新版PHP。 請勿使用已停止支援的PHP版本。
+- Adobe不針對客戶處於Adobe Commerce的三年支援期期間，而可能到期的第三方服務和軟體相依性（例如PHP和MySQL）提供安全性和品質修正。 請參閱 [系統需求](../installation/system-requirements.md) 以取得經過測試和支援的協力廠商技術完整清單。
 
 ## 終止軟體支援
 

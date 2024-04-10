@@ -3,9 +3,9 @@ title: 設定最佳實務
 description: 使用這些最佳實務最佳化Adobe Commerce或Magento Open Source部署的回應時間。
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 5a49aff28f1a7c87cd6135ca19b4436da41cbb1b
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1425'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Commerce提供許多設定和工具，可用來改善頁面上的回應時間，
 >
 >此 **[!UICONTROL Developer]** 標籤和選項僅適用於 [開發人員模式](../configuration/cli/set-mode.md). [雲端基礎結構上的Adobe Commerce](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) 不支援 `Developer` 模式。
 
-## 非同步設定儲存 [!BADGE 2.4.7測試版]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="僅適用於2.4.7-beta版"}
+## 非同步設定儲存
 
 對於具有大量存放區層級設定的專案，儲存存放區設定可能需要過多的時間或導致逾時。 此 _非同步設定_ 模組會透過執行cron作業來啟用非同步設定儲存，該作業會使用取用者來處理訊息佇列中的儲存。 AsyncConfig **已停用** 依預設。
 

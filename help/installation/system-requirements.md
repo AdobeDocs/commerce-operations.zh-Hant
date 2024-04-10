@@ -2,9 +2,9 @@
 title: 系統需求
 description: 請使用此參考資料來識別已在Adobe Commerce和Magento Open Source版本中測試的所需軟體相依性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 56052a5777b8719d5a9257d0c48e5640a6812a5f
+source-git-commit: 4087d5f5de0bc11ce120d61a539800a3533893f0
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ opensearch:
 
 ### PHPUnit
 
-PHPUnit （作為命令列工具） 9.0.0
+PHPUnit v9 （作為命令列工具）。
 
 ### PHP擴充功能
 
