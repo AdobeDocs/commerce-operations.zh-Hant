@@ -1,8 +1,8 @@
 ---
-source-git-commit: 018c61a4ea921b4a69cc854fde355606defe1215
+source-git-commit: 88cdf47409f45f9ba6de75701ab877c5e4604f13
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 0%
+source-wordcount: '224'
+ht-degree: 1%
 
 ---
 # 新功能範本
@@ -29,41 +29,13 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83">efd2fc</a> （認可）</td>
     </tr>
     <tr>
-      <td><ul>
-  <li>更新以下專案的發行套件主題： <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> 和 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">MagentoOpenSource</a>.<br /> — 新增的發行套件主題 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">商務用B2B</a>.</li>
-</ul>
+      <td><p>更新下列專案的發行套件主題： <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> 和 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento Open Source</a>.<br /> 已新增的發行套件主題 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">商務用B2B</a>.</p>
 </td>
       <td>主要更新</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> （認可）</td>
     </tr>
     <tr>
-      <td><p>已更新 <em>bin/magento</em> 的CLI參考檔案 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> 和 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">MagentoOpenSource</a>.</p>
-</td>
-      <td>主要更新</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>發佈日期2.4.7 GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">發行說明</a>.</p>
-</td>
-      <td>主要更新</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>新增2024年4月Adobe Commerce安全性版本(2.4.6-p5、2.4.5-p7、2.4.4-p8)的發行說明。 另請參閱 <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Adobe Commerce和Magento Open Source的發行說明</a></p>
-</td>
-      <td>主要更新</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><ul>
-  <li>更新以下專案的發行套件主題： <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> 和 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">MagentoOpenSource</a>.<br /> — 新增的發行套件主題 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">商務用B2B</a>.</li>
-</ul>
-</td>
-      <td>主要更新</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>已更新 <em>bin/magento</em> 的CLI參考檔案 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> 和 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">MagentoOpenSource</a>.</p>
+      <td><p>已更新 <em>bin/magento</em> 的CLI參考檔案 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> 和 <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento Open Source</a>.</p>
 </td>
       <td>主要更新</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> （認可）</td>
