@@ -1,10 +1,10 @@
 ---
 title: 檔案擁有權和許可權
-description: 瞭解使用Adobe Commerce和Magento Open Source的內部安裝時，檔案系統許可權的重要性。
+description: 瞭解使用Adobe Commerce內部部署安裝時檔案系統許可權的重要性。
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 >
 >檔案系統安全性既複雜又重要。 強烈建議您在決定要設定的許可權層級之前，先洽詢經驗豐富的系統管理員或網路管理員。 我們提供您可使用的機制，但建立許可權策略是您的責任。
 
-Adobe Commerce和Magento Open Source使用三位元預設遮罩： `002`. 從UNIX預設值（檔案為666，目錄為777）中減去預設遮色片。
+Adobe Commerce使用三位元預設遮罩： `002`. 從UNIX預設值（檔案為666，目錄為777）中減去預設遮色片。
 
 例如：
 
@@ -53,7 +53,7 @@ Adobe Commerce和Magento Open Source使用三位元預設遮罩： `002`. 從UNI
 
 ## 許可權、擁有權和應用程式模式
 
-建議您在使用不同的Adobe Commerce和Magento Open Source應用程式模式時，使用不同的許可權和擁有權：
+建議您在使用不同的Adobe Commerce應用程式模式時，使用不同的許可權和擁有權：
 
 - 預設
 - 開發人員

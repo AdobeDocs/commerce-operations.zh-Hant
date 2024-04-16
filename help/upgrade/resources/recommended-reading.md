@@ -2,22 +2,22 @@
 title: 建議的升級讀取
 description: 查看計畫 Adobe Commerce 升級的建議閱讀。
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 83ee645269b4fb0b63bb11f6d2255ef7fa52bc4f
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 2%
+source-wordcount: '264'
+ht-degree: 4%
 
 ---
 
 # 升級計畫的建議閱讀
 
-使用此頁面上的資源繼續瞭解Adobe Commerce和Magento Open Source升級。
+使用此頁面上的資源繼續瞭解Adobe Commerce升級。
 
 <table>
   <tbody>
     <tr>
       <td><strong>發行說明和公告</strong>
-        <p>瞭解Adobe Commerce和Magento Open Source的最新發展，包括產品策略、安全性、錯誤修正和已知問題。</p>
+        <p>瞭解Adobe Commerce的最新發展，包括產品策略、安全性、錯誤修正和已知問題。</p>
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe部落格</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
@@ -28,7 +28,7 @@ ht-degree: 2%
           </ul>
         </td>
       <td><strong>工具</strong>
-        <p>瀏覽工具的設計可讓您更輕鬆地尋找及使用Adobe Commerce和Magento Open Source軟體。</p>
+        <p>瀏覽旨在讓您更容易找到及使用Adobe Commerce軟體的工具。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">升級相容性工具PhpStorm外掛程式</a> （影片）</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">升級相容性工具</a></li>
@@ -39,7 +39,7 @@ ht-degree: 2%
     </tr>
     <tr>
       <td><strong>行事曆和原則</strong>
-        <p>檢閱Adobe Commerce和Magento Open Source發行與政策的詳細資訊。</p>
+        <p>檢閱Adobe Commerce發行版本和政策的詳細資訊。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Adobe Commerce軟體終止支援常見問題集</a></li>
             <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace原則</a></li>
@@ -50,7 +50,7 @@ ht-degree: 2%
           </ul>
         </td>
       <td><strong>功能與獨立服務</strong>
-        <p>探索可用作Adobe Commerce和Magento Open Source擴充功能的創新Commerce服務，以及到何處取得這些服務。</p>
+        <p>探索可用作Adobe Commerce擴充功能的創新Commerce服務以及取得這些服務的位置。</p>
           <ul>
             <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
             <li><a href="https://marketplace.magento.com/magento-live-search.html">即時搜尋</a></li>

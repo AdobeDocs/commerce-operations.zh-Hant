@@ -3,9 +3,9 @@ title: 解除安裝主題
 description: 請依照下列步驟解除安裝Adobe Commerce或Magento Open Source主題。
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 使用此指令之前，您必須知道佈景主題的相對路徑。 主題位於的子目錄中 `<magento_root>/app/design/<area name>`. 您必須指定以區域開頭的佈景主題路徑，也就是 `frontend` （店面佈景主題）或 `adminhtml` （適用於管理主題）。
 
-例如，Adobe Commerce和Magento Open Source提供的Luma主題的路徑為 `frontend/Magento/luma`.
+例如，Adobe Commerce提供的Luma主題的路徑為 `frontend/Magento/luma`.
 
 如需有關主題的詳細資訊，請參閱 [佈景主題結構](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -39,7 +39,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 位置
 
-* `{theme path}` 是佈景主題的相對路徑，從區域名稱開始。 例如，Adobe Commerce和Magento Open Source提供的空白主題路徑為 `frontend/Magento/blank`.
+* `{theme path}` 是佈景主題的相對路徑，從區域名稱開始。 例如，Adobe Commerce隨附的空白主題路徑為 `frontend/Magento/blank`.
 * `--backup-code` 備份程式碼基底，如下面的段落所述。
 * `--clear-static-content` 產生的清理 [靜態檢視檔案](../../configuration/cli/static-view-file-deployment.md)，這是讓靜態檢視檔案正確顯示所必需的。
 

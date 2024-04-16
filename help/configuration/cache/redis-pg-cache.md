@@ -1,11 +1,11 @@
 ---
 title: 預設快取使用Redis
-description: 瞭解如何設定Redis為Adobe Commerce和Magento Open Source的預設快取。
+description: 瞭解如何設定Redis為Adobe Commerce的預設快取。
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
 
 ## 結果
 
-由於這兩個範例命令，Commerce會將類似下列的行新增到 `<Commerce-install-dir>app/etc/env.php`：
+由於這兩個範例指令，Commerce將類似下列的行新增至 `<Commerce-install-dir>app/etc/env.php`：
 
 ```php
 'cache' => [
@@ -132,13 +132,13 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
      ```
 
-### 設定Commerce使用叢集
+### 設定Commerce以使用叢集
 
 Commerce支援多種型別的快取設定。 一般而言，快取設定會在前端和後端之間分割。 前端快取分類為 `default`，用於任何快取型別。 您可以自訂或分割為較低層級的快取以取得較佳的效能。 常見的Redis組態是將預設快取和頁面快取分隔到自己的Redis資料庫(RDB)中。
 
 執行 `setup` 用來指定Redis端點的命令。
 
-若要將Commerce for Redis設定為預設快取：
+若要設定用於Redis的Commerce作為預設快取：
 
 ```bash
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
@@ -150,7 +150,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
 ```
 
-若要設定Commerce以使用Redis作為工作階段存放區：
+若要設定Commerce以使用Redis進行工作階段儲存：
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=<ElastiCache Primary Endpoint host> --session-save-redis-port=<ElastiCache Primary Endpoint port> --session-save-redis-log-level=4 --session-save-redis-db=2
@@ -158,7 +158,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
 
 ### 驗證連線能力
 
-**驗證Commerce正在與ElastiCache交談**：
+**確認Commerce正在與ElastiCache通訊**：
 
 1. 開啟與Commerce EC2執行個體的SSH連線。
 1. 啟動Redis監視器。
@@ -172,7 +172,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
 
 ## 新的Redis快取實作
 
-截至Commerce 2.3.5，建議使用擴充的Redis快取實施： `\Magento\Framework\Cache\Backend\Redis`.
+截至Commerce 2.3.5，建議使用擴充的Redis快取實作： `\Magento\Framework\Cache\Backend\Redis`.
 
 ```php
 'cache' => [
@@ -271,7 +271,7 @@ bin/magento setup:config:set --allow-parallel-generation
 
 ## 驗證Redis連線
 
-若要確認Redis和Commerce是否共同運作，請登入執行Redis的伺服器、開啟終端機，然後使用Redis監視命令或ping命令。
+若要確認Redis與Commerce是否共同運作，請登入執行Redis的伺服器、開啟終端機，然後使用Redis監視指令或ping指令。
 
 ### Redis監視命令
 
@@ -316,4 +316,4 @@ redis-cli ping
 
 ### 檢查壓縮資料
 
-若要檢查壓縮的工作階段資料和頁面快取， [RESP.app](https://flathub.org/apps/details/app.resp.RESP) 支援自動解壓縮Commerce 2工作階段和頁面快取，並以可讀取的格式顯示PHP工作階段資料。
+若要檢查壓縮的工作階段資料和頁面快取， [RESP.app](https://flathub.org/apps/details/app.resp.RESP) 支援自動解壓縮Commerce 2階段作業和頁面快取，並以可讀取的格式顯示PHP階段作業資料。

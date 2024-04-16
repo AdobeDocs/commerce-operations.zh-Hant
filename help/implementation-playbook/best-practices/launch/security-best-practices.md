@@ -1,16 +1,16 @@
 ---
-title: 保護您的Commerce網站和基礎架構
+title: 保護您的Commerce網站與基礎架構
 description: 在設定、設定和更新Adobe Commerce安裝時，透過實作安全性最佳實務來維護安全性。
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2004'
 ht-degree: 0%
 
 ---
 
-# 保護您的Commerce網站和基礎架構
+# 保護您的Commerce網站與基礎架構
 
 為部署在雲端基礎結構上的Adobe Commerce專案建立和維護安全的環境，是Adobe Commerce客戶、解決方案合作夥伴和Adobe共同的責任。 本指南旨在為方程式中的客戶提供最佳實務。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 優先順序建議
 
-Adobe認為下列建議為所有客戶的最高優先順序。 在所有Commerce部署中實作這些重要安全性最佳實務：
+Adobe認為下列建議為所有客戶的最高優先順序。 在所有Commerce部署中實作這些重要的安全性最佳實務：
 
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **為您的管理員和所有SSH連線啟用雙因素驗證**
 
@@ -49,7 +49,7 @@ Adobe認為下列建議為所有客戶的最高優先順序。 在所有Commerce
 
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **升級至最新版Adobe Commerce**
 
-讓您的程式碼保持更新，方法是 [將您的Commerce專案升級至最新版本](#upgrade-to-the-latest-release) Adobe Commerce、Commerce Services和擴充功能的完整版本，包括Adobe提供的安全性修補程式、Hotfix和其他修補程式。
+讓您的程式碼保持更新，方法是 [將您的Commerce專案升級至最新版本](#upgrade-to-the-latest-release) Adobe Commerce、Commerce服務和擴充功能的修補程式，包括Adobe提供的安全性修補程式、Hotfix和其他修補程式。
 
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **保護敏感設定值**
 
@@ -59,7 +59,7 @@ Adobe認為下列建議為所有客戶的最高優先順序。 在所有Commerce
 
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **執行安全性掃描**
 
-使用 [Commerce安全性掃描服務](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) 監控所有Adobe Commerce和Magento Open Source網站是否有已知的安全性風險和惡意程式，並註冊接收修補程式更新和安全通知。
+使用 [Commerce安全性掃描服務](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) 監控所有Adobe Commerce網站是否有已知的安全性風險和惡意程式，並註冊以接收修補程式更新和安全通知。
 
 ## 確保擴充功能和自訂程式碼的安全性
 
@@ -67,13 +67,13 @@ Adobe認為下列建議為所有客戶的最高優先順序。 在所有Commerce
 
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **選擇精通安全性的合作夥伴或解決方案整合商(SI)** — 選擇遵循安全開發實務並具有防止和解決安全性問題的良好記錄的組織，確保安全整合及自訂程式碼的安全傳送。
 
-![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **使用安全擴充功能** — 請諮詢您的解決方案整合商或開發人員，並關注以下事項，以找出Commerce部署最適合且安全的擴充功能 [Adobe擴充功能最佳作法](../planning/extensions.md).
+![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **使用安全擴充功能** — 請洽詢您的解決方案整合商或開發人員，並完成下列事項，以找出Commerce部署最適合且安全的擴充功能 [Adobe擴充功能最佳作法](../planning/extensions.md).
 
 - 僅限來自Adobe Commerce Marketplace或透過解決方案整合商的來源擴充功能。 如果擴充功能是透過整合器取得，請確保擴充功能授權的所有權可轉移，以防整合器變更。
 
 - 限制擴充功能和廠商的數量，降低風險暴露。
 
-- 如果可行，請先檢閱擴充功能程式碼，以瞭解安全性，然後再與商務應用程式整合。
+- 如果可行，在與Commerce應用程式整合之前，請先檢閱擴充功能程式碼的安全性資訊。
 
 - 確保PHP擴充功能開發人員遵循Adobe Commerce開發指導方針、流程和安全性最佳實務。 具體來說，開發人員必須避免使用可能導致遠端程式碼執行或弱加密的PHP功能。 另請參閱 [安全性](https://developer.adobe.com/commerce/php/best-practices/security/) 在 *擴充功能開發人員的最佳實務指南*.
 
@@ -99,9 +99,9 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 
 ## 制定災難回覆計畫
 
-如果您的Commerce網站遭到破壞，請開發並實作完整的災難回覆計畫，以迅速控制損壞並恢復正常業務運作。
+如果您的Commerce網站遭到破壞，請開發並實作完整的災難回覆計畫，快速控制損壞並恢復正常的業務運作。
 
-如果客戶因災難而要求還原Commerce執行個體，Adobe可為客戶提供備份檔案。 如果適用，客戶和解決方案整合商可以執行還原。
+如果客戶因災難而需要還原Commerce執行個體，Adobe可為客戶提供備份檔案。 如果適用，客戶和解決方案整合商可以執行還原。
 
 作為災難回覆計畫的一部分，Adobe強烈建議客戶 [匯出其Adobe Commerce應用程式設定](../../../configuration/cli/export-configuration.md) 以便在因業務持續性目的而需要時輕鬆部署。 將組態匯出至檔案系統的主要原因是系統組態優先於資料庫組態。 在唯讀檔案系統中，必須重新部署應用程式以變更敏感的組態設定，以提供額外的保護層。
 
@@ -137,7 +137,7 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **設定進階密碼安全性設定** — 根據PCI資料安全標準8.2.4節的建議，設定強式密碼並至少每90天變更一次。另請參閱 [設定管理員安全性設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
 
-![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **使用HTTPS** — 如果商務網站是新實作，請使用HTTPS啟動整個網站。 Google不僅使用HTTPS作為排名因素，而且許多使用者甚至不會考慮從網站購買，除非網站受到HTTPS的保護。
+![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **使用HTTPS** — 如果是新實作Commerce網站，請使用HTTPS啟動整個網站。 Google不僅使用HTTPS作為排名因素，而且許多使用者甚至不會考慮從網站購買，除非網站受到HTTPS的保護。
 
 ## 針對惡意程式碼的Protect
 
@@ -176,18 +176,18 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 
 暴力密碼猜測攻擊可能導致未經授權的管理員存取。 依照下列最佳作法，從這些攻擊Protect您的網站：
 
-- 識別並保護可從外部存取Commerce安裝的所有點。
+- 識別並保護可從外部存取Commerce安裝的所有接觸點。
 
   您可以依照Adobe的，確保對管理員的存取安全，這通常需要最高的保護。 [優先順序建議](#priority-recommendations) 設定Commerce專案時。
 
-- 設定存取控制清單，只允許來自指定IP位址或網路的使用者存取，以控制對Commerce網站的存取。
+- 設定存取控制清單，只允許來自指定IP位址或網路的使用者存取，藉此控制對Commerce網站的存取。
 
   您可以使用Fastly Edge ACL搭配自訂VCL程式碼片段，篩選傳入的請求並允許IP位址存取。 另請參閱 [允許要求的自訂VCL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
 
   >[!TIP]
   >
-  >如果您僱用遠端員工，請確定遠端員工的IP位址包含在有權存取Commerce網站的位址清單中。
+  >如果您僱用遠端員工，請確保將遠端員工的IP位址包含在有權存取Commerce網站的位址清單中。
 
 ### 避免點選劫持利用漏洞
 

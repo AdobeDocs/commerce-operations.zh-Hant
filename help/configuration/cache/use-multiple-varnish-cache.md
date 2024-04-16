@@ -3,16 +3,16 @@ title: 使用多個Varnish執行個體進行快取清除
 description: 瞭解快取清除如何與多個Varnish執行個體搭配運作。
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '176'
 ht-degree: 1%
 
 ---
 
 # 快取清除多個Varnish例項
 
-Adobe Commerce和Magento Open Source可支援多個立即可用的Varnish例項。
+Adobe Commerce可支援多個Varnish執行個體。
 
 本主題說明使用Commerce設定多個Varnish執行個體的基本知識。
 
@@ -30,7 +30,7 @@ Adobe Commerce和Magento Open Source可支援多個立即可用的Varnish例項�
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-當您重新整理Commerce快取時，可以清除所有Varnish主機(也稱為 _清潔_ 快取)，或使用命令列。
+接著，您可以在重新整理Commerce快取時，清除所有的Varnish主機(也稱為 _清潔_ 快取)，或使用命令列。
 
 若要使用管理員重新整理快取，請按一下 **系統** >工具> **快取管理**，然後按一下 **排清Magento快取** ，位於頁面頂端。 （您也可以重新整理個別快取型別。）
 

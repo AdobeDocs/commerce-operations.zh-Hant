@@ -1,10 +1,10 @@
 ---
 title: 複製範例資料Git存放庫
-description: 請依照下列步驟安裝Adobe Commerce，並複製Git存放庫以Magento Open Source範例資料。
+description: 請依照下列步驟，複製Git存放庫以安裝Adobe Commerce範例資料。
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---

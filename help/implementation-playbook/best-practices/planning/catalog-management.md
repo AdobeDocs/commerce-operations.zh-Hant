@@ -3,13 +3,13 @@ title: 目錄管理最佳實務
 description: 瞭解設定購物車限制和產品屬性，以及列出分頁、選項、促銷活動和變數的建議。
 role: Developer
 feature: Best Practices, Catalog Management
-source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
+exl-id: 9a672017-9122-4841-a67b-a183224b67dc
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
-
 
 # 目錄管理最佳實務
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 購物車限制
 
-為獲得最佳效能，請使用下列准則來管理Adobe Commerce和Magento Open Source的購物車限制。
+為獲得最佳效能，請使用下列准則來管理Adobe Commerce的購物車限制。
 
 ### 受影響的產品和版本
 
@@ -262,4 +262,3 @@ ht-degree: 0%
 - 增載入入及轉譯迷你藝術的時間。
 - 增加轉譯購物車頁面的時間。
 - 增加呈現的時間 **總計** 在「結帳」頁面上封鎖。
-

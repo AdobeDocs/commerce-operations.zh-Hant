@@ -2,9 +2,9 @@
 title: 啟用或停用維護模式
 description: 請依照下列步驟，自訂當您的Adobe Commerce或Magento Open Source部署因維護而停止時，客戶會看到的內容。
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 下列指南參考標準維護模式頁面。 如果您需要使用自訂維護頁面，請參閱 [建立自訂維護頁面](../../upgrade/troubleshooting/maintenance-mode-options.md) 主題。
 
-Adobe Commerce和Magento Open Source使用 [維護模式](../../configuration/bootstrap/application-modes.md#maintenance-mode) 以停用啟動程式。 在維護、升級或重新設定網站時，停用啟動載入功能會很有幫助。
+Adobe Commerce使用 [維護模式](../../configuration/bootstrap/application-modes.md#maintenance-mode) 以停用啟動程式。 在維護、升級或重新設定網站時，停用啟動載入功能會很有幫助。
 
 應用程式會偵測維護模式，如下所示：
 

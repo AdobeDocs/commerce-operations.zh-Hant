@@ -2,9 +2,9 @@
 title: 瞭解升級範圍
 description: 瞭解版本中回溯不相容的變更，這些變更可能會影響Adobe Commerce或Magento Open Source自訂模組或協力廠商擴充功能。
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 與舊版不相容的變更
 
-Adobe Commerce和Magento Open Source版本可能包含與回溯不相容的變更。 檢閱不相容的回溯變更檔案，請參閱下列內容：
+Adobe Commerce發行版本可能包含與回溯不相容的變更。 檢閱不相容的回溯變更檔案，請參閱下列內容：
 
 - **[主要變更重點](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)** — 具有重大影響且需要詳細說明和特殊說明的變更，以確保協力廠商模組繼續運作。
 - **[微幅變更參考](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)** — 參考從程式碼基底產生的檔案，其中說明對類別、API成員資格、資料庫、相依性插入、介面、配置、系統和XSD所做的細微變更。

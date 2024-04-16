@@ -2,9 +2,9 @@
 title: 客戶個人資訊參考（1.x版）
 description: 瞭解Magento1.x中客戶個人資訊的資料流和資料庫實體對應。
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這是一系列主題中的其中一項，可協助Adobe Commerce和Magento Open Source商家及開發人員為遵守隱私權法規做好準備。 請洽詢您的法律顧問，判斷您的企業是否應該及如何遵守任何法律義務。
+>這是一系列主題中的其中一項，可協助Adobe Commerce商家和開發人員為遵守隱私權法規做好準備。 請洽詢您的法律顧問，判斷您的企業是否應該及如何遵守任何法律義務。
 
 在開發隱私權法規的規範遵循程式時，請參考下列資料流圖表和資料庫實體對應，例如：
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ### 後端資料存取點
 
-當商家檢視幾種型別的網格、按一下網格以檢視詳細資訊並執行各種其他工作時，Commerce會載入客戶資訊。
+當商家檢視幾種型別的網格、按一下網格以檢視詳細資訊時，Commerce會載入客戶資訊，並執行各種其他工作。
 
 ![後端資料存取點](../../assets/security-compliance/backend-data-access-points.svg)
 

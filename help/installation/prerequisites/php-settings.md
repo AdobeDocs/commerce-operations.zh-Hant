@@ -1,11 +1,11 @@
 ---
 title: PHP設定
-description: 按照以下步驟安裝必要的PHP擴充功能，並為Adobe Commerce和Magento Open Source的內部部署安裝設定必要的PHP設定。
+description: 按照以下步驟安裝必要的PHP擴充功能，並為Adobe Commerce的內部部署安裝設定必要的PHP設定。
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 87e3109518fc06c655a3fc9446e2ecd648775da1
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->最新版Adobe Commerce和Magento Open Source至少需要PHP 8.1。另請參閱 [系統需求](../system-requirements.md) PHP的所有支援版本。
+>最新版Adobe Commerce至少需要PHP 8.1。另請參閱 [系統需求](../system-requirements.md) PHP的所有支援版本。
 
 如需雲端設定指南，請參閱 [PHP設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) 在 _雲端基礎結構上的Commerce_ 指南。
 
@@ -46,7 +46,7 @@ Zend Engine v4.1.2, Copyright (c) Zend Technologies
 
 ## 驗證已安裝的擴充功能
 
-Adobe Commerce和Magento Open Source需要特定的PHP擴充功能。 以下清單指定每個Commerce版本的必要副檔名。 清單會從執行每個版本最新版本的部署中自動產生。
+Adobe Commerce需要特定的PHP擴充功能。 下列清單指定每個Commerce版本的必要擴充功能。 清單會從執行每個版本最新版本的部署中自動產生。
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -90,11 +90,11 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   這些設定可讓PHP程式快取檔案的路徑，而不是在頁面載入時查詢它們。 另請參閱 [效能調整](https://www.php.net/manual/en/ini.core.php) 在PHP檔案中。
 
-- 啟用 [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments)，此元件為Adobe Commerce和Magento Open Source 2.1及更新版本的必要元件。
+- 啟用 [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments)，此元件為Adobe Commerce 2.1和更新版本的必要元件。
 
   Adobe建議啟用 [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) 基於效能考量。 OPcache已在許多PHP分配中啟用。
 
-  Adobe Commerce和Magento Open Source 2.1及更高版本使用PHP程式碼註解來產生程式碼。
+  Adobe Commerce 2.1和更新版本使用PHP程式碼註解來產生程式碼。
 
 >[!NOTE]
 >

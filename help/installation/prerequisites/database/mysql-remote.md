@@ -1,10 +1,10 @@
 ---
 title: 設定遠端MySQL資料庫連線
-description: 請依照下列步驟，為Adobe Commerce和Magento Open Source的內部安裝設定遠端資料庫連線。
+description: 請依照下列步驟，為Adobe Commerce的內部安裝設定遠端資料庫連線。
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 有時候，您可能會想要將資料庫託管在不同伺服器上，而不是在同一部電腦上執行資料庫伺服器和網頁伺服器。
 
-Adobe已提供連線至其他電腦上的MySQL伺服器的方式。 自Adobe Commerce和Magento Open Source2.4.3起，您也可以將應用程式設定為使用Amazon Web Services (AWS) Aurora資料庫，而不會變更程式碼。
+Adobe已提供連線至其他電腦上的MySQL伺服器的方式。 自Adobe Commerce 2.4.3起，您也可以將應用程式設定為使用Amazon Web Services (AWS) Aurora資料庫，而不變更程式碼。
 
 Aurora是高效能、完全相容的MySQL伺服器，裝載於AWS上。
 
 ## 連線到AWS Aurora資料庫
 
-使用Aurora做為資料庫，就像使用預設的資料庫聯結器，在一般Adobe Commerce和Magento Open Source設定組態中指定資料庫一樣容易。
+使用Aurora做為資料庫，就像使用預設的資料庫聯結器，在一般Adobe Commerce安裝組態中指定資料庫一樣容易。
 
 執行時 `bin/magento setup:install`，請使用Aurora資訊於 `db-` 欄位：
 

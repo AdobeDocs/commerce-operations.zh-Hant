@@ -1,11 +1,11 @@
 ---
 title: 分割資料庫效能解決方案
-description: 閱讀Adobe Commerce和Magento Open Source的分割資料庫解決方案。
+description: 閱讀Adobe Commerce的分割資料庫解決方案。
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-Adobe Commerce提供數個擴充性優勢，包括能夠針對Commerce應用程式的不同功能區域使用三個單獨的主資料庫。
+Adobe Commerce提供數個擴充性優勢，包括能夠針對Commerce應用程式的不同功能區域使用三個不同的主資料庫。
 
 結帳、訂購和產品資料都可以使用個別的master資料庫，您可以選擇複製這些資料庫。 此分離會根據您的需求，獨立調整網站結帳、訂單管理活動、網站瀏覽和銷售活動的負載。 這些變更在如何擴充資料庫層級方面提供了相當大的彈性。
 
@@ -60,13 +60,13 @@ Adobe Commerce使用三個主要資料庫和可供設定的從屬資料庫數量
 
 這也表示您可以：
 
-- 設定分割資料庫解決方案 _早於_ 正在將Commerce投入生產。
+- 設定分割資料庫解決方案 _早於_ 將Commerce投入生產。
 
   Adobe建議您在安裝Commerce軟體後，儘快設定分割資料庫。
 
 - [手動設定](multi-master-manual.md) 分割資料庫解決方案。
 
-  如果您已安裝元件，或Commerce已在生產中，則必須執行此工作。 (_不要_ 更新生產系統；在開發系統中進行更新，並在您測試變更後同步化變更。)
+  如果您已安裝元件，或Commerce已在生產環境中，則必須執行此工作。 (_不要_ 更新生產系統；在開發系統中進行更新，並在您測試變更後同步化變更。)
 
   >[!WARNING]
   >
@@ -74,11 +74,11 @@ Adobe Commerce使用三個主要資料庫和可供設定的從屬資料庫數量
 
 ## 必要條件
 
-分割資料庫需要您在任一主機上設定三個MySQL master資料庫（三個Commerce伺服器上皆有，每個資料庫在個別伺服器上依此類推）。 這些是 _主版_ 資料庫及其使用方式如下：
+分割資料庫需要您在任一主機上設定三個MySQL master資料庫(全部三個Commerce伺服器上，每個資料庫在個別伺服器上，依此類推)。 這些是 _主版_ 資料庫及其使用方式如下：
 
 - 一個用於簽出表格的主資料庫
 - 一個銷售資料表的主資料庫(也稱為 _訂單管理系統_，或 _OMS_，表格)
-- Commerce 2應用程式表格的其餘部分有一個主資料庫
+- 一個用於Commerce 2應用程式表格的其餘主要資料庫
 
 此外，您可以選擇設定任意數量的 _從屬_ 做為負載平衡器和備份的資料庫。
 

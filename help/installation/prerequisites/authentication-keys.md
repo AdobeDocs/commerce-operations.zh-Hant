@@ -1,19 +1,19 @@
 ---
 title: 取得您的驗證金鑰
-description: 請依照下列步驟擷取憑證，以存取repo.magento.com上的Adobe Commerce和Magento Open Source撰寫器套件。
+description: 請依照下列步驟擷取憑證，以存取repo.magento.com上的Adobe Commerce Composer套件。
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
 # 取得您的驗證金鑰
 
-此 `repo.magento.com` 存放庫是儲存Adobe Commerce和Magento Open Source及協力廠商撰寫器套件的位置，且需要驗證。 使用您的Commerce Marketplace帳戶產生一對32個字元 *驗證金鑰* 以存取存放庫。
+此 `repo.magento.com` 存放庫是儲存Adobe Commerce和協力廠商撰寫器套件的位置，且需要驗證。 使用您的Commerce Marketplace帳戶產生一對32個字元 *驗證金鑰* 以存取存放庫。
 
-若要存取Adobe Commerce和Magento Open Source套件的許可權，您必須使用與已授予這些套件存取許可權的MAGEID相關聯的金鑰。 MAGEID通常是Adobe Commerce帳戶的主要聯絡人，不一定是雲端基礎結構專案的Adobe Commerce專案所有者。
+若要存取Adobe Commerce套件的許可權，您必須使用與已授予這些套件存取許可權的MAGEID相關聯的金鑰。 MAGEID通常是Adobe Commerce帳戶的主要聯絡人，不一定是雲端基礎結構專案的Adobe Commerce專案所有者。
 
 >[!TIP]
 >
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ### 管理SSH存取權杖
 
-若要使用SSH下載Adobe Commerce和Magento Open Source發行版本，您必須產生下載存取權杖。 若要產生Token：
+若要使用SSH下載Adobe Commerce版本，您必須產生下載存取權杖。 若要產生Token：
 
 1. 登入您的 [magento.com帳戶](https://account.magento.com/customer/account/login).
 1. 按一下 **我的帳戶** ，位於頁面頂端。

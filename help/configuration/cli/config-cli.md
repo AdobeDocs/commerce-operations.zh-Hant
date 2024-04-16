@@ -2,9 +2,9 @@
 title: 命令列工具
 description: 使用Commerce命令列工具執行安裝和設定工作。
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Commerce有一個命令列介面(CLI)—`<magento_root>/bin/magento` — 執行�
 - CLI可擴充，因此協力廠商開發人員可以「插入」至其中。 這還有消除使用者學習曲線的額外好處。
 - 已停用模組的命令不顯示。
 
-本主題說明如何使用CLI設定Adobe Commerce和Magento Open Source軟體。 如需有關安裝Commerce的資訊，請參閱 [安裝流程](../../installation/overview.md) 在 _安裝指南_.
+本主題說明如何使用CLI設定Adobe Commerce軟體。 如需有關安裝Commerce的資訊，請參閱 [安裝流程](../../installation/overview.md) 在 _安裝指南_.
 
 ## 必要條件
 
@@ -36,7 +36,7 @@ Commerce有一個命令列介面(CLI)—`<magento_root>/bin/magento` — 執行�
 
 1. 您的系統符合中討論的需求 [系統需求](../../installation/system-requirements.md) 在 _安裝指南_.
 1. 您已完成中討論的所有先決條件工作 [必要條件](../../installation/prerequisites/overview.md) 在 _安裝指南_.
-1. 登入Commerce伺服器後，切換為有權寫入Commerce檔案系統的使用者。 另請參閱 [切換到檔案系統擁有者](../../installation/prerequisites/file-system/overview.md) 在 _安裝指南_.
+1. 登入Commerce伺服器後，請切換為有權寫入Commerce檔案系統的使用者。 另請參閱 [切換到檔案系統擁有者](../../installation/prerequisites/file-system/overview.md) 在 _安裝指南_.
 
 ## 正在執行命令
 

@@ -3,9 +3,9 @@ title: 平台開發原則
 description: 瞭解使用Adobe Commerce時的基本平台開發原則。
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
 feature: Cloud
-source-git-commit: 3c1a49c2dc3dc0d3d47e16c724d4099b6a456c77
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ ht-degree: 0%
 
 ## 雲端基礎結構上的Adobe Commerce
 
-雲端基礎結構上的Adobe Commerce是適用於Adobe Commerce軟體的受管理、自動化託管平台。 雲端基礎結構上的Adobe Commerce提供各種功能，使其有別於內部部署Adobe Commerce和Magento Open Source實作。 請參閱 [雲端指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+雲端基礎結構上的Adobe Commerce是適用於Adobe Commerce軟體的受管理、自動化託管平台。 雲端基礎結構上的Adobe Commerce提供各種功能，使其有別於內部部署Adobe Commerce實施。 請參閱 [雲端指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).

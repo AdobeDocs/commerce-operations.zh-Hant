@@ -2,16 +2,16 @@
 title: 內容安全性原則概觀
 description: 瞭解如何使用內容安全性原則改善Adobe Commerce或Magento Open Source存放區的安全性狀態。
 exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
-source-git-commit: 8bb692518536f5e7403ed308328e6532c020a230
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 # 內容安全性原則概觀
 
-內容安全性原則(CSP)可協助偵測及緩解跨網站指令碼(XSS)和相關資料插入攻擊，為Adobe Commerce和Magento Open Source安裝提供額外防禦層。 這個常見的攻擊向量是透過插入惡意內容來運作，這些內容會不實地聲稱來自網站。 惡意內容載入並執行後，可能會起始未經授權的資料傳輸。
+內容安全性原則(CSP)可協助偵測及緩解跨網站指令碼(XSS)和相關資料插入攻擊，為Adobe Commerce安裝提供額外的防禦層。 這個常見的攻擊向量是透過插入惡意內容來運作，這些內容會不實地聲稱來自網站。 惡意內容載入並執行後，可能會起始未經授權的資料傳輸。
 
 CSP提供一組標準化的指示，告訴瀏覽器哪些內容資源可以信任，哪些應該封鎖。 使用謹慎定義的原則，CSP可以限制瀏覽器內容，使其只允許列入白名單的資源顯示。
 

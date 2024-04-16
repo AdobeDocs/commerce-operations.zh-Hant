@@ -1,10 +1,10 @@
 ---
 title: 訊息佇列總覽
-description: 閱讀訊息佇列架構及其如何與Adobe Commerce和Magento Open Source應用程式搭配運作。
+description: 閱讀訊息佇列架構及其如何與Adobe Commerce應用程式搭配運作。
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---

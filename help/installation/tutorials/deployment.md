@@ -3,9 +3,9 @@ title: 建立或更新部署設定
 description: 請依照這些步驟管理您的Adobe Commerce或Magento Open Source部署設定。
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ bin/magento setup:config:set [--<parameter>=<value>, ...]
 | `--db-name` | 您要安裝資料庫表格的資料庫執行處理名稱。<br><br>預設為 `magento2`. | 否 |
 | `--db-user` | 資料庫執行處理擁有者的使用者名稱。<br><br>預設為 `root`. | 否 |
 | `--db-password` | 資料庫執行處理擁有者的密碼。 | 否 |
-| `--db-prefix` | 只有在您要在已經有Adobe Commerce和Magento Open Source表格的資料庫執行個體中安裝資料庫表格時才使用。<br><br>在此情況下，請使用前置字元來識別此安裝的表格。 有些客戶有一個以上的Adobe Commerce或Magento Open Source執行個體在含有相同資料庫中所有表格的伺服器上執行。<br><br>首碼的長度最多可為5個字元。 它必須以字母開頭，並且只能包含字母、數字和下劃線字元。<br><br>此選項可讓這些客戶與多個Adobe Commerce或Magento Open Source安裝共用資料庫伺服器。 | 否 |
+| `--db-prefix` | 只有在您要在已經有Adobe Commerce表格的資料庫執行個體中安裝資料庫表格時才使用。<br><br>在此情況下，請使用前置字元來識別此安裝的表格。 有些客戶有一個以上的Adobe Commerce或Magento Open Source執行個體在含有相同資料庫中所有表格的伺服器上執行。<br><br>首碼的長度最多可為5個字元。 它必須以字母開頭，並且只能包含字母、數字和下劃線字元。<br><br>此選項可讓這些客戶與多個Adobe Commerce或Magento Open Source安裝共用資料庫伺服器。 | 否 |
 | `--session-save` | 使用下列任一項：<br><br>- `db` 若要將工作階段資料儲存在 [資料庫](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). 如果您有叢集資料庫，請選擇資料庫儲存體；否則，與檔案式儲存體相比，可能不會有多大好處。<br><br>- `files` 將工作階段資料儲存在檔案系統中。 除非檔案系統存取緩慢、您有叢集資料庫，或您想要將工作階段資料儲存在Redis中，否則檔案式工作階段儲存體是適當的。<br><br>- `redis` 將工作階段資料儲存在 [使用Redis進行工作階段儲存](../../configuration/cache/config-redis.md). 如果您使用Redis作為預設或頁面快取，則必須已安裝Redis。 | 否 |
 | `--key` | 如果您有金鑰，請指定要加密的金鑰 [敏感資料](#sensitive-data) 在資料庫中。 如果您沒有，應用程式會為您產生一個。 | 否 |
 | `--db-init-statements` | 進階MySQL設定引數。 在連線到MySQL資料庫時，使用資料庫初始化陳述式來執行。<br><br>預設為 `SET NAMES utf8;`.<br><br>請參閱參考檔案，類似於 [這個](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) 之後再設定任何值。 | 否 |

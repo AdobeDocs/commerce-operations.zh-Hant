@@ -1,18 +1,18 @@
 ---
 title: 最佳實務
-description: 使用Adobe建議的最佳實務來管理您Adobe Commerce和Magento Open Source專案的升級流程。
+description: 使用Adobe建議的最佳實務來管理您Adobe Commerce專案的升級流程。
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
 
 # 升級的最佳實務
 
-本主題列出您應採取的動作，以管理升級Adobe Commerce和Magento Open Source專案的複雜性。 您的團隊應該從專案開發開始時就開始考慮升級，並持續每個版本。 依照這些最佳實務，升級程式將可變得更容易、更快、更便宜。
+本主題列出在升級Adobe Commerce專案時，您應採取哪些動作來控制複雜性。 您的團隊應該從專案開發開始時就開始考慮升級，並持續每個版本。 依照這些最佳實務，升級程式將可變得更容易、更快、更便宜。
 
 >[!TIP]
 >

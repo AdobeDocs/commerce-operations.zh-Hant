@@ -1,10 +1,10 @@
 ---
 title: 訊息佇列取用者
-description: 瞭解Adobe Commerce和Magento Open Source訊息佇列取用者，包括與其相關的功能和系統組態設定。
+description: 瞭解Adobe Commerce訊息佇列使用者，包括與其相關的功能和系統組態設定。
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---

@@ -1,18 +1,18 @@
 ---
 title: 搜尋引擎設定
-description: 設定Adobe Commerce和Magento Open Source內部部署的搜尋引擎。
+description: 設定Adobe Commerce內部部署的搜尋引擎。
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
 
 # 搜尋引擎設定
 
-本節探討使用Adobe Commerce和Magento Open Source的內部部署測試Elasticsearch或OpenSearch時，您必須選擇的最低設定。
+本節討論測試Elasticsearch或OpenSearch與Adobe Commerce內部部署所需的最低設定。
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ ht-degree: 0%
    |--- |--- |
    | **[!UICONTROL Server Hostname]** | 輸入執行Elasticsearch或OpenSearch之電腦的完整主機名稱或IP位址。<br>雲端基礎結構上的Adobe Commerce：從您的整合系統中取得此價值。 |
    | **[!UICONTROL Server Port]** | 輸入Web伺服器Proxy連線埠。 預設值為9200<br>雲端基礎結構上的Adobe Commerce：從您的整合系統中取得此價值。 |
-   | **[!UICONTROL Index Prefix]** | 輸入搜尋引擎索引前置詞。 如果您將單一執行個體用於多個Commerce安裝（測試和生產環境），則必須為每個安裝指定唯一的前置詞。 否則，您可以使用預設首碼magento2。 |
+   | **[!UICONTROL Index Prefix]** | 輸入搜尋引擎索引前置詞。 如果您將單一執行個體用於多個Commerce安裝（測試和生產環境），則必須為每次安裝指定唯一的前置詞。 否則，您可以使用預設首碼magento2。 |
    | **[!UICONTROL Enable HTTP Auth]** | 按一下 **[!UICONTROL Yes]** 只有在您已啟用搜尋引擎伺服器的驗證時。 若是如此，請在提供的欄位中提供使用者名稱和密碼。 |
    | **[!UICONTROL Server Timeout]** | 輸入嘗試建立與Elasticsearch或OpenSearch伺服器的連線時等待的時間長度（以秒為單位）。 |
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 - 請確定搜尋引擎伺服器執行中。
 - 如果伺服器與Commerce位於不同的主機上，請登入Commerce伺服器並Ping搜尋引擎主機。 解決網路連線問題，並再次測試連線。
 - 檢查您開始Elasticsearch的命令視窗或OpenSearch，以找出棧疊追蹤和例外狀況。 您必須先解決這些問題，才能繼續。 特別是請確定您是以使用者的身分啟動搜尋引擎， `root` 許可權。
-- 請確定 [UNIX防火牆和SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) 都會停用，或設定規則以讓您的搜尋引擎和商務能夠相互通訊。
+- 請確定 [UNIX防火牆和SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) 都會停用，或設定規則讓您的搜尋引擎和Commerce相互通訊。
 - 驗證 **[!UICONTROL Server Hostname]** 欄位。 確定伺服器可供使用。 您可以改為嘗試伺服器的IP位址。
 - 使用 `netstat -an | grep <listen-port>` 命令來驗證在 **[!UICONTROL Server Port]** 欄位未由另一個處理序使用。
 

@@ -1,10 +1,10 @@
 ---
 title: 修補程式的運作方式
-description: 瞭解Adobe Commerce和Magento Open Source的各種型別的修補程式及其運作方式。
+description: 瞭解Adobe Commerce的各種修補程式型別及其運作方式。
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 915cac8c8d436105c4ae25f95bcaefbe19cc50c1
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---

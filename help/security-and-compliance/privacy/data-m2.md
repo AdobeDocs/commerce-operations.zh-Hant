@@ -1,10 +1,10 @@
 ---
 title: 客戶個人資訊參考（2.x版）
-description: 瞭解Adobe Commerce和Magento Open Source 2.x中客戶個人資訊的資料流圖表和資料庫實體對應。
+description: 瞭解Adobe Commerce 2.x中客戶個人資訊的資料流圖表和資料庫實體對應。
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這是一系列主題中的其中一項，可協助Adobe Commerce和Magento Open Source商家及開發人員為遵守隱私權法規做好準備。 請洽詢您的法律顧問，判斷您的企業是否應該及如何遵守任何法律義務。
+>這是一系列主題中的其中一項，可協助Adobe Commerce商家和開發人員為遵守隱私權法規做好準備。 請洽詢您的法律顧問，判斷您的企業是否應該及如何遵守任何法律義務。
 
 在開發隱私權法規的規範遵循程式時，請參考下列資料流圖表和資料庫實體對應，例如：
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ### 前端資料存取點
 
-客戶登入並檢視數個不同頁面或結帳時，Adobe Commerce和Magento Open Source會載入客戶資訊。
+客戶登入並檢視數個不同頁面或結帳時，Adobe Commerce會載入客戶資訊。
 
 ![前端資料存取點](../../assets/security-compliance/frontend-data-access-points.svg)
 
@@ -44,17 +44,17 @@ ht-degree: 0%
 
 ### 後端資料存取點
 
-當商家檢視幾種型別的網格、按一下網格以檢視詳細資訊並執行各種其他工作時，Adobe Commerce和Magento Open Source會載入客戶資訊。
+當商家檢視幾種型別的網格、按一下網格以檢視詳細資訊時，Adobe Commerce會載入客戶資訊，並執行各種其他工作。
 
 ![後端資料存取點](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## 資料庫實體
 
-Adobe Commerce和Magento Open Source主要將客戶特定的資訊儲存在客戶、地址、訂單、報價和付款表格中。 其他表格則包含對客戶ID的參照。
+Adobe Commerce主要儲存客戶、地址、訂單、報價和付款表格中的客戶特定資訊。 其他表格則包含對客戶ID的參照。
 
 ### 客戶資料
 
-Adobe Commerce和Magento Open Source可設定為儲存下列客戶屬性：
+Adobe Commerce可設定為儲存下列客戶屬性：
 
 - 出生日期
 - 電子郵件
@@ -119,7 +119,7 @@ Adobe Commerce和Magento Open Source可設定為儲存下列客戶屬性：
 
 ### 位址資料
 
-Adobe Commerce和Magento Open Source儲存下列客戶屬性：
+Adobe Commerce儲存下列客戶屬性：
 
 - 城市
 - 公司
@@ -295,7 +295,7 @@ Adobe Commerce和Magento Open Source儲存下列客戶屬性：
 
 ### 邀請資料
 
-可以設定Adobe Commerce和Magento Open Source，讓客戶可以傳送邀請給私人銷售和活動。
+可以設定Adobe Commerce，讓客戶可以傳送邀請給私人銷售和活動。
 
 #### `magento_invitation` 表格
 

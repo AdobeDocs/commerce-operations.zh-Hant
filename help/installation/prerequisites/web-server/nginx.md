@@ -1,10 +1,10 @@
 ---
 title: Nginx
-description: 請依照下列步驟，針對Adobe Commerce和Magento Open Source的內部部署安裝安裝並設定Nginx網頁伺服器。
+description: 請依照下列步驟安裝和設定Nginx網頁伺服器，以供Adobe Commerce的內部部署使用。
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 9ebf10bd3296495e33c91d930be023ea0124ff62
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Adobe Commerce支援nginx 1.x (或 [最新主線版本](https://nginx.org/en/lin
 
 ## 烏本圖
 
-以下章節說明如何使用nginx、PHP和MySQL在Ubuntu上安裝Adobe Commerce和Magento Open Source2.x。
+以下章節說明如何使用nginx、PHP和MySQL在Ubuntu上安裝Adobe Commerce 2.x。
 
 ### 安裝nginx
 
@@ -31,7 +31,7 @@ sudo apt -y install nginx
 
 ### 安裝和配置php-fpm
 
-Adobe Commerce和Magento Open Source需要數個 [PHP擴充功能](../php-settings.md) 以正常運作。 除了這些擴充功能外，您還必須安裝並設定 `php-fpm` 擴充功能（若您使用nginx）。
+Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作。 除了這些擴充功能外，您還必須安裝並設定 `php-fpm` 擴充功能（若您使用nginx）。
 
 安裝及設定 `php-fpm`：
 
@@ -65,7 +65,7 @@ Adobe Commerce和Magento Open Source需要數個 [PHP擴充功能](../php-settin
 
    >[!NOTE]
    >
-   >測試Adobe Commerce和Magento Open Source時，建議將記憶體限制設為2 G。 請參閱 [必要的PHP設定](../php-settings.md) 以取得詳細資訊。
+   >測試Adobe Commerce時，建議將記憶體限制設為2 G。 請參閱 [必要的PHP設定](../php-settings.md) 以取得詳細資訊。
 
 1. 儲存並退出編輯器。
 
@@ -81,7 +81,7 @@ Adobe Commerce和Magento Open Source需要數個 [PHP擴充功能](../php-settin
 
 ### 安裝與設定
 
-有數種方式可下載Adobe Commerce和Magento Open Source，包括：
+有數種方式可下載Adobe Commerce，包括：
 
 * [取得Composer中繼資料](../../composer.md)
 
@@ -235,7 +235,7 @@ Adobe Commerce和Magento Open Source需要數個 [PHP擴充功能](../php-settin
 
 ## CentOS 7
 
-以下章節說明如何使用nginx、PHP和MySQL在CentOS 7上安裝Adobe Commerce和Magento Open Source2.x。
+以下章節說明如何使用nginx、PHP和MySQL在CentOS 7上安裝Adobe Commerce 2.x。
 
 ### 安裝nginx
 
@@ -261,7 +261,7 @@ systemctl enable nginx
 
 ### 安裝和配置php-fpm
 
-Adobe Commerce和Magento Open Source需要數個 [PHP](../php-settings.md) 擴充功能正常運作。 除了這些擴充功能外，您還必須安裝並設定 `php-fpm` 擴充功能（若您使用nginx）。
+Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。 除了這些擴充功能外，您還必須安裝並設定 `php-fpm` 擴充功能（若您使用nginx）。
 
 1. 安裝 `php-fpm`：
 
@@ -360,7 +360,7 @@ Adobe Commerce和Magento Open Source需要數個 [PHP](../php-settings.md) 擴�
 
 ### 安裝與設定
 
-有數種方式可下載Adobe Commerce和Magento Open Source，包括：
+有數種方式可下載Adobe Commerce，包括：
 
 * [取得Composer中繼資料](../../composer.md)
 

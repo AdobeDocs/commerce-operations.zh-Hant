@@ -2,20 +2,20 @@
 title: 安裝擴充功能
 description: 請依照下列步驟安裝Adobe Commerce或Magento Open Source擴充功能。
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
 # 安裝擴充功能
 
-擴充或自訂Adobe Commerce和Magento Open Source行為的程式碼稱為擴充功能。 您可以選擇封裝並發佈擴充功能於 [Commerce Marketplace](https://marketplace.magento.com) 或其他擴充功能發佈系統。
+擴充或自訂Adobe Commerce行為的程式碼稱為擴充功能。 您可以選擇封裝並發佈擴充功能於 [Commerce Marketplace](https://marketplace.magento.com) 或其他擴充功能發佈系統。
 
 擴充功能包括：
 
-- 模組(擴充Adobe Commerce和Magento Open Source功能)
+- 模組(擴充Adobe Commerce功能)
 - 佈景主題（變更店面外觀和風格，以及管理員）
 - 語言套件（將店面和管理員本地化）
 

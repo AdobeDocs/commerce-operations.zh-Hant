@@ -1,10 +1,10 @@
 ---
 title: 進階內部部署安裝
-description: 瞭解有關Adobe Commerce的進階安裝案例，或是在您擁有的基礎架構上Magento Open Source。
+description: 瞭解您所擁有之基礎結構上的Adobe Commerce進階安裝案例。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2383'
+source-wordcount: '2375'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 命令列介面(CLI)
 
-Adobe Commerce和Magento Open Source擁有單一命令列介面，用於安裝和設定工作： `<magento_root>/bin/magento`. 介面會執行多項工作，包括：
+Adobe Commerce具有單一命令列介面，用於安裝和設定工作： `<magento_root>/bin/magento`. 介面會執行多項工作，包括：
 
 * 安裝（以及建立或更新資料庫架構、建立部署組態等相關工作）。
 * 正在清除快取。

@@ -1,18 +1,18 @@
 ---
 title: 搜尋引擎必要條件
-description: 請依照下列步驟，針對Adobe Commerce和Magento Open Source的內部部署安裝來安裝和設定支援的搜尋引擎軟體。
+description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝來安裝和設定支援的搜尋引擎軟體。
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
 # 搜尋引擎必要條件
 
-自Adobe Commerce和Magento Open Source 2.4起，所有安裝都必須設定為使用 [Elasticsearch](https://www.elastic.co) 或 [OpenSearch](https://opensearch.org/) 作為目錄搜尋解決方案。
+自Adobe Commerce 2.4起，所有安裝都必須設定為使用 [Elasticsearch](https://www.elastic.co) 或 [OpenSearch](https://opensearch.org/) 作為目錄搜尋解決方案。
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 * 每個主機都有自己的網頁伺服器；網頁伺服器不一定要相同。
 
-  例如，商務應用程式可以執行Apache，而搜尋引擎可以執行nginx。
+  例如，Commerce應用程式可以執行Apache，而搜尋引擎可以執行nginx。
 
 * 兩部Web伺服器都使用傳輸層安全性(TLS)。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 搜尋要求的處理方式如下：
 
-1. Commerce網頁伺服器會收到來自使用者的搜尋請求，並將請求轉送給搜尋引擎伺服器。
+1. Commerce網頁伺服器會收到來自使用者的搜尋請求，並轉送給搜尋引擎伺服器。
 
    您可以將搜尋引擎設定為連線到Proxy的主機與連線埠。 我們建議網頁伺服器的SSL連線埠（預設為443）。
 

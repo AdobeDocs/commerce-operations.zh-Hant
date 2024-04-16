@@ -1,21 +1,21 @@
 ---
 title: 系統需求
-description: 請使用此參考資料來識別已在Adobe Commerce和Magento Open Source版本中測試的所需軟體相依性。
+description: 請使用此參考資料來識別已在Adobe Commerce發行版本中測試的所需軟體相依性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 4087d5f5de0bc11ce120d61a539800a3533893f0
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
 # 系統需求
 
-以下摘要說明針對Adobe Commerce和Magento Open Source測試的軟體相依性和服務。
+以下摘要說明針對Adobe Commerce測試的軟體相依性和服務。
 
 雲端基礎結構上Commerce的相依性有一些差異。 雲端基礎結構上Adobe Commerce的服務版本和相容性支援取決於測試並部署至託管雲端環境的服務，有時與Adobe Commerce內部部署支援的版本不同。 例如，內部部署的Commerce 2.4.4支援Elasticsearch7.17，但雲端基礎結構上的Commerce 2.4.4支援OpenSearch 1.2。
 
-下表顯示Adobe已使用特定Adobe Commerce和Magento Open Source發行版本測試的第三方軟體相依性版本。
+下表顯示Adobe已使用特定Adobe Commerce發行版本測試的協力廠商軟體相依性版本。
 
 Adobe僅支援下表所述的系統需求組合。 例如，2.4.5已透過MariaDB 10.4完成測試。Adobe建議您在升級至2.4.5之前，先升級至MariaDB 10.4。
 
@@ -52,7 +52,7 @@ opensearch:
 
 ## PHP設定
 
-有特定的PHP組態設定，例如 `memory_limit` 設定，可協助您在使用Adobe Commerce和Magento Open Source時避免常見問題。 另請參閱 [必要的PHP設定](prerequisites/php-settings.md).
+有特定的PHP組態設定，例如 `memory_limit` 設定，可協助您在使用Adobe Commerce時避免常見問題。 另請參閱 [必要的PHP設定](prerequisites/php-settings.md).
 
 如需雲端設定指南，請參閱 [PHP設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) 在 _雲端基礎結構上的Commerce_ 指南。
 
@@ -102,7 +102,7 @@ PHPUnit v9 （作為命令列工具）。
 
 >[!NOTE]
 >
->下列需求適用於Adobe Commerce和Magento Open Source的最新2.4.x修補程式版本。 相關時，提供雲端基礎結構上的Commerce指引。
+>下列需求適用於Adobe Commerce的最新2.4.x修補程式版本。 相關時，提供雲端基礎結構上的Commerce指引。
 
 ### 瀏覽器
 
@@ -127,7 +127,7 @@ PHPUnit v9 （作為命令列工具）。
 
 Linux發行版本，例如RedHat Enterprise Linux (RHEL)、CentOS、Ubuntu、Debian等。 不支援Microsoft Windows和macOS。
 
-Adobe Commerce和Magento Open Source需要下列系統工具才能進行某些作業：
+Adobe Commerce的某些作業需要下列系統工具：
 
 - [[!DNL bash]](https://www.gnu.org/software/bash/)
 - [[!DNL gzip]](https://www.gzip.org/)
@@ -149,7 +149,7 @@ Adobe Commerce和Magento Open Source需要下列系統工具才能進行某些�
 
 ### Xdebug
 
-對於Adobe Commerce和Magento Open Source，請使用 [php_xdebug 2.5.x](https://xdebug.org/download) 或更新版本（僅限開發環境；可能會對效能造成負面影響）。
+若為Adobe Commerce，請使用 [php_xdebug 2.5.x](https://xdebug.org/download) 或更新版本（僅限開發環境；可能會對效能造成負面影響）。
 
 如需雲端上的Adobe Commerce，請參閱 [設定Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) 在 _雲端基礎結構上的Commerce_ 指南。
 

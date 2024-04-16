@@ -1,10 +1,10 @@
 ---
 title: 訊息代理人
-description: 請依照下列步驟安裝和設定必要的訊息代理程式軟體(例如 [!DNL RabbitMQ])進行內部部署安裝的Adobe Commerce和Magento Open Source。
+description: 請依照下列步驟安裝和設定必要的訊息代理程式軟體(例如 [!DNL RabbitMQ])進行內部部署安裝的Adobe Commerce。
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ sudo apt install -y rabbitmq-server
 
 此 [!DNL RabbitMQ] 伺服器包含在CentOS中，但版本通常較舊。 [!DNL RabbitMQ] 建議從他們的網站安裝套件。
 
-請參閱 [!DNL RabbitMQ] 安裝頁面以取得最新支援的版本。 Adobe Commerce和Magento Open Source 2.3及2.4支援 [!DNL RabbitMQ] 3.8.x。
+請參閱 [!DNL RabbitMQ] 安裝頁面以取得最新支援的版本。 Adobe Commerce 2.3和2.4支援 [!DNL RabbitMQ] 3.8.x。
 
 請參閱 [在RPM Linux上進行安裝](https://www.rabbitmq.com/install-rpm.html) 以取得詳細資訊。
 

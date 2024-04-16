@@ -1,10 +1,10 @@
 ---
 title: 解除安裝或重新安裝Adobe Commerce
-description: 請依照下列步驟，解除安裝並重新安裝Adobe Commerce和Magento Open Source的內部部署。
+description: 請依照下列步驟，解除安裝並重新安裝Adobe Commerce的內部部署。
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---

@@ -1,12 +1,12 @@
 ---
 title: Adobe隱私權JavaScript資料庫
-description: 瞭解如何使用自訂工具來存取和刪除Adobe Commerce和Magento Open Source收集的客戶個人資訊。
+description: 瞭解如何使用自訂工具來存取和刪除Adobe Commerce收集的客戶個人資訊。
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 此 [Adobe隱私權JavaScript資料庫](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) 是一組工具，可協助建立存取和刪除私人資料的程式。
 
-Adobe Commerce和Magento Open Source資料追蹤服務可儲存適用於隱私權法規的私人資訊，例如 [一般資料保護規範(GDPR)](gdpr.md) 和 [加州消費者隱私保護法(CCPA)](ccpa.md).
+Adobe Commerce資料追蹤服務可儲存適用於隱私權法規的私人資訊，例如 [一般資料保護規範(GDPR)](gdpr.md) 和 [加州消費者隱私保護法(CCPA)](ccpa.md).
 
 此程式庫提供一組統一的功能，可用於建立隱私權資料請求、傳送給每個產品的實施，以及收集回應。 使用此資料庫來擷取和移除這些資料追蹤服務儲存在瀏覽器中的資料。
 
@@ -28,7 +28,7 @@ Adobe Commerce和Magento Open Source資料追蹤服務可儲存適用於隱私�
 - npm： `npm install @adobe/adobe-privacy`
 - GitHub： [https://github.com/Adobe-Marketing-Cloud/adobe-privacy](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
-取得檔案後，您需要將其新增到Adobe Commerce和Magento Open Source執行個體中安裝的自訂模組或主題。 請依照以下說明操作 [使用自訂JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) 完成此任務的主題。
+取得檔案後，您需要將其新增到Adobe Commerce執行個體中安裝的自訂模組或主題。 請依照以下說明操作 [使用自訂JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) 完成此任務的主題。
 
 ## 使用狀況
 

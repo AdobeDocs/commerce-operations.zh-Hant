@@ -2,18 +2,18 @@
 title: 快速入門內部部署安裝
 description: 請依照下列步驟，在您擁有的基礎架構上安裝Adobe Commerce或Magento Open Source。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 3c6527e5936438d6f1f52b32082cc7dde5f87f22
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
 # 快速入門內部部署安裝
 
-本頁上的指示說明如何安裝Adobe Commerce和Magento Open Source [自行託管](../implementation-playbook/infrastructure/self-hosting/overview.md) 基礎結構。 如需升級現有安裝的指引，請參閱 [_升級指南_](../upgrade/overview.md).
+本頁上的指示說明如何在上安裝Adobe Commerce [自行託管](../implementation-playbook/infrastructure/self-hosting/overview.md) 基礎結構。 如需升級現有安裝的指引，請參閱 [_升級指南_](../upgrade/overview.md).
 
-Adobe使用 [作曲者](https://getcomposer.org/) 管理Adobe Commerce和Magento Open Source元件及其相依性。 使用Composer來取得Adobe Commerce和Magento Open Source中繼，可提供下列優點：
+Adobe使用 [作曲者](https://getcomposer.org/) 管理Adobe Commerce元件及其相依性。 使用Composer來取得Adobe Commerce中繼資料具備下列優點：
 
 - 重複使用協力廠商程式庫，無需搭配原始程式碼使用
 - 使用元件式架構搭配強大的相依性管理，減少擴充功能衝突及相容性問題
@@ -31,7 +31,7 @@ Adobe使用 [作曲者](https://getcomposer.org/) 管理Adobe Commerce和Magento
 
 - 全部完成 [先決條件任務](system-requirements.md).
 - [安裝撰寫器](https://getcomposer.org/download/).
-- Get [驗證金鑰](prerequisites/authentication-keys.md) 前往Adobe Commerce和Magento Open Source撰寫器存放庫。
+- Get [驗證金鑰](prerequisites/authentication-keys.md) 前往Adobe Commerce Composer存放庫。
 
 ## 以檔案系統擁有者身分登入
 

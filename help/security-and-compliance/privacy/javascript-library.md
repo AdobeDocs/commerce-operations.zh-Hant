@@ -1,10 +1,10 @@
 ---
 title: 隱私權JavaScript資料庫
-description: 瞭解如何使用自訂工具來存取和刪除Adobe Commerce和Magento Open Source收集的客戶個人資訊。
+description: 瞭解如何使用自訂工具來存取和刪除Adobe Commerce收集的客戶個人資訊。
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # 隱私權JavaScript資料庫
 
-隱私權JavaScript程式庫是一組工具，可協助建立存取和刪除Adobe Commerce和Magento Open Source所收集私人資料的程式。
+隱私權JavaScript程式庫是一組工具，可協助建立存取和刪除Adobe Commerce所收集私人資料的程式。
 
 Commerce資料追蹤服務可儲存適用於隱私權法規的私人資訊，例如 [一般資料保護規範(GDPR)](gdpr.md) 和 [加州消費者隱私保護法(CCPA)](ccpa.md).
 
-此程式庫提供一組函式，用於建立隱私權資料請求並收集其回應。 使用此資料庫可擷取和移除瀏覽器中儲存的資料(由Adobe Commerce和Magento Open Source資料追蹤服務執行)。
+此程式庫提供一組函式，用於建立隱私權資料請求並收集其回應。 使用此資料庫來擷取和移除瀏覽器中儲存的Adobe Commerce資料追蹤服務資料。
 
 >[!NOTE]
 >
->如果 [Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) 已啟用，在購物者同意之前，Commerce不會收集行為資料。 如果 [!UICONTROL **Cookie限制模式**] 已停用，Commerce會依預設收集行為資料。
+>如果 [Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) 已啟用，在購物者同意前，Commerce不會收集行為資料。 如果 [!UICONTROL **Cookie限制模式**] 已停用，Commerce會依預設收集行為資料。
 
 ## 安裝
 

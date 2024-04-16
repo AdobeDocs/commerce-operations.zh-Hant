@@ -1,11 +1,11 @@
 ---
 title: 設定應用程式
-description: 瞭解Adobe Commerce和Magento Open Source內部部署所需的安裝後設定。
+description: 瞭解Adobe Commerce內部部署所需的安裝後設定。
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 UNIX工作排程器cron對應用程式的日常作業至關重要。 它會排程重新索引、電子報、電子郵件和網站地圖。 A *crontab* 是cron設定。
 
-您必須安裝Adobe Commerce和Magento Open Source服務，在 *crontab*&#x200B;或某些核心功能（以及某些協力廠商擴充功能）無法正常運作。
+您必須在中安裝Adobe Commerce服務 *crontab*&#x200B;或某些核心功能（以及某些協力廠商擴充功能）無法正常運作。
 
 如需有關cron的詳細資訊，包括如何從命令列移除crontab以及執行cron，請參閱 [設定並執行cron](../../configuration/cli/configure-cron-jobs.md).
 
@@ -79,7 +79,7 @@ UNIX `logrotate` 公用程式可讓您管理產生大量記錄檔的系統。 �
 
 ### 設定電子郵件伺服器
 
-Adobe Commerce和Magento Open Source需要電子郵件伺服器。 我們不建議使用特定伺服器，但您可以嘗試下列任一操作：
+Adobe Commerce需要電子郵件伺服器。 我們不建議使用特定伺服器，但您可以嘗試下列任一操作：
 
 * CentOS的後置字元([數位海洋教學課程](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6)， [CentOS檔案](https://www.centos.org))
 * Ubuntu的後置字元([數位海洋教學課程](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04)， [Ubuntu檔案](https://help.ubuntu.com/community/MailServer))
@@ -92,7 +92,7 @@ Adobe Commerce和Magento Open Source需要電子郵件伺服器。 我們不建�
 
 ### 設定訊息佇列
 
-自2.3.0版開始，Adobe Commerce和Magento Open Source就包含訊息佇列功能。 在舊版中，它僅適用於Adobe Commerce。
+自2.3.0版開始，Adobe Commerce已加入訊息佇列功能。 在舊版中，它僅適用於Adobe Commerce。
 
 * [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 

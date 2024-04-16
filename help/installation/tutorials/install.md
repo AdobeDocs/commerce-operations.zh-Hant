@@ -2,9 +2,9 @@
 title: 安裝Adobe Commerce
 description: 請依照下列步驟，在您擁有的基礎架構上安裝Adobe Commerce或Magento Open Source。
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2102'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ magento setup:install --<option>=<value> ... --<option>=<value>
 | `--db-name` | 您要安裝資料庫表格的資料庫執行處理名稱。<br><br>預設為 `magento2`. | 是 |
 | `--db-user` | 資料庫執行處理擁有者的使用者名稱。<br><br>預設為 `root`. | 是 |
 | `--db-password` | 資料庫執行處理擁有者的密碼。 | 是 |
-| `--db-prefix` | 只有在您要在已經有Adobe Commerce或Magento Open Source表格的資料庫執行個體中安裝資料庫表格時才使用。<br><br>在此情況下，請使用前置字元來識別此安裝的表格。 有些客戶有一個以上的Adobe Commerce和Magento Open Source執行個體在含有相同資料庫中所有表格的伺服器上執行。<br><br>首碼的長度最多可為5個字元。 它必須以字母開頭，並且只能包含字母、數字和下劃線字元。<br><br>此選項可讓這些客戶透過一個以上的安裝共用資料庫伺服器。 | 否 |
+| `--db-prefix` | 只有在您要在已經有Adobe Commerce或Magento Open Source表格的資料庫執行個體中安裝資料庫表格時才使用。<br><br>在此情況下，請使用前置字元來識別此安裝的表格。 有些客戶在含有相同資料庫中所有表格的伺服器上執行多個Adobe Commerce執行個體。<br><br>首碼的長度最多可為5個字元。 它必須以字母開頭，並且只能包含字母、數字和下劃線字元。<br><br>此選項可讓這些客戶透過一個以上的安裝共用資料庫伺服器。 | 否 |
 | `--db-ssl-key` | 使用者端金鑰的路徑。 | 否 |
 | `--db-ssl-cert` | 使用者端憑證的路徑。 | 否 |
 | `--db-ssl-ca` | 伺服器憑證的路徑。 | 否 |

@@ -1,10 +1,10 @@
 ---
 title: 選購軟體
-description: 深入瞭解您可安裝的選用軟體，以支援Adobe Commerce和Magento Open Source的內部安裝。
+description: 深入瞭解您可安裝的選用軟體，以支援Adobe Commerce的內部安裝。
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---

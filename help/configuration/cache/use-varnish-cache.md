@@ -3,16 +3,16 @@ title: 使用清漆清除快取
 description: 瞭解快取清除如何與Varnish搭配運作，以及如何將其用作Adobe Commerce應用程式的網頁快取加速器。
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
 
 # 使用清漆清除快取
 
-本主題說明使用Varnish做為Adobe Commerce和Magento Open Source的網頁快取加速器的基本概念。
+本主題說明使用Varnish做為Adobe Commerce網頁快取加速器的基本概念。
 
 ## 清漆清除
 
@@ -30,7 +30,7 @@ ht-degree: 0%
    - **商店** > **設定** > **設定** >一般> **貨幣設定**
    - **商店** > **設定** > **設定** >一般> **儲存電子郵件地址**
 
-  當Commerce偵測到這類變更時，會顯示訊息，通知您重新整理快取。
+  當Commerce偵測到這類變更時，會顯示一則訊息，通知您重新整理快取。
 
 - 維護商店（例如，新增或編輯類別、價格、產品和促銷定價規則）。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-當您重新整理Commerce快取時，可以清除Varnish主機(也稱為 *清潔* 快取)，或使用命令列。
+接著，您可以在重新整理Commerce快取時，清除Varnish主機(也稱為 *清潔* 快取)，或使用命令列。
 
 若要使用管理員重新整理快取，請按一下 **[!UICONTROL SYSTEM]** >工具> **快取管理**，然後按一下 **排清Magento快取** ，位於頁面頂端。 （您也可以重新整理個別快取型別。）
 

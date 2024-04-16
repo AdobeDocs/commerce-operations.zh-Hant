@@ -2,9 +2,9 @@
 title: 執行升級
 description: 請依照這些步驟升級Adobe Commerce的內部部署。
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->升級Adobe Commerce和Magento Open Source的程式已變更。 您必須安裝新版本的 `magento/composer-root-update-plugin` 封裝(請參閱 [必備條件](../prepare/prerequisites.md))。 此外，用於升級的命令已由 `composer require magento/<package_name>` 至 `composer require-commerce magento/<package_name>`.
+>升級Adobe Commerce的程式已變更。 您必須安裝新版本的 `magento/composer-root-update-plugin` 封裝(請參閱 [必備條件](../prepare/prerequisites.md))。 此外，用於升級的命令已由 `composer require magento/<package_name>` 至 `composer require-commerce magento/<package_name>`.
 
 ## 開始之前
 
