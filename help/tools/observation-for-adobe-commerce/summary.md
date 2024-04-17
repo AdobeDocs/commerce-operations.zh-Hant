@@ -3,9 +3,9 @@ title: 此 [!UICONTROL Summary] 標籤
 description: 瞭解 [!UICONTROL Summary] 標籤之 [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ ht-degree: 0%
 
 ![redis從記錄檔同步](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/) 是開放原始碼（BSD授權）記憶體中的資料結構存放區，用於資料庫、快取和訊息代理人。 如果已設定，它可以執行資料庫和工作階段快取。 此 **[!UICONTROL Redis synchronization from Log]** 影格焦點在 [[!DNL Redis] 同步](https://redis.io/docs/manual/replication/). 越大 [!DNL Redis] 資料集，同步化發生問題的可能性就越高（需要保持同步的資料越多）。
+[[!DNL Redis]](https://redis.io/docs/about/) 是開放原始碼（BSD授權）記憶體中的資料結構存放區，用於資料庫、快取和訊息代理人。 如果已設定，它可以執行資料庫和工作階段快取。 此 **[!UICONTROL Redis synchronization from Log]** 影格焦點在 [[!DNL Redis] 同步](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). 越大 [!DNL Redis] 資料集，同步化發生問題的可能性就越高（需要保持同步的資料越多）。
 
 **[!DNL Redis]錯誤和訊息：**
 

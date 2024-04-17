@@ -3,9 +3,9 @@ title: 此 [!UICONTROL Redis] 標籤
 description: 瞭解 [!UICONTROL Redis] 標籤之 [!DNL Observation for Adobe Commerce].
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 06f015139683f319f11317f8d7f0029cbd2548e3
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ![自上次儲存資料庫後的Redis變更](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] 是記憶體駐留，並將資訊儲存到儲存空間。 此 **[!UICONTROL Redis changes since last db save]** frame表示自上次資料庫儲存至儲存體後，記憶體發生變更的次數。 請參閱 [Redis持續性](https://redis.io/docs/manual/persistence/) 如需更多說明，請參閱 [!DNL Redis's] 持續性。
+[!DNL Redis] 是記憶體駐留，並將資訊儲存到儲存空間。 此 **[!UICONTROL Redis changes since last db save]** frame表示自上次資料庫儲存至儲存體後，記憶體發生變更的次數。 請參閱 [Redis持續性](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) 如需更多說明，請參閱 [!DNL Redis's] 持續性。
 
 ## [!UICONTROL Redis synchronization from Log]
 
