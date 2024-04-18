@@ -2,9 +2,9 @@
 title: 取得Adobe Commerce軟體
 description: 瞭解如何下載Adobe Commerce軟體。
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 檢查是否有令人興奮的新功能和發行版本，並瞭解如何將其加入我們的 [產品可用性頁面](https://devdocs.magento.com/release/availability.html).
 
-請參閱下表，瞭解如何開始安裝Adobe Commerce或Magento Open Source。
+請參閱下表，瞭解如何開始安裝Adobe Commerce。
 
 <table>
     <tbody>

@@ -2,9 +2,9 @@
 title: 加州消費者隱私保護法(CCPA)
 description: 瞭解加州消費者隱私法(CCPA)，該法擴充了加州消費者決定如何收集、儲存和使用其個人資訊的權利。
 exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ CCPA授予消費者下列新權利：
 
 ## 個人資訊參考
 
-如需技術資訊，請參閱「個人資訊參考」中的資料流圖表和資料庫實體對應，其適用於您支援的每個Adobe Commerce版本或Magento Open Source。
+如需技術資訊，請參閱「個人資訊參考」中的資料流圖表和資料庫實體對應，其適用於您支援的每個Adobe Commerce版本。
 
 - [客戶個人資訊參考（2.x版）](data-m2.md)
 - [客戶個人資訊參考資料（版本） 1.x)](data-m1.md)

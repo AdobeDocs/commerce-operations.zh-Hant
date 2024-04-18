@@ -4,16 +4,16 @@ description: 瞭解如何從管理員或命令列合併Adobe Commerce專案的CS
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 2662ced484fb42bf2d32609e4e82364c1e47c8f0
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # 最佳化資源檔案
 
-對於回應速度較快的Commerce網站，請最佳化CSS和JavaScript (JS)資源檔案並消除轉譯器封鎖資源。
+若要獲得回應速度較快的Commerce網站，請最佳化CSS和JavaScript (JS)資源檔案，並消除轉譯器封鎖資源。
 
 - **最佳化CSS和JS檔案** — 藉由設定Adobe Commerce將個別檔案合併、縮制及繫結至單一檔案，減少載入CSS和JavaScript (JS)檔案所需的時間。
 - **消除轉譯器封鎖資源** — 考慮內嵌提供關鍵JS和CSS功能，並延遲所有非關鍵JS/CSS樣式。 如需指引，請參閱 [消除轉譯器封鎖資源](https://web.dev/render-blocking-resources/).
@@ -24,7 +24,6 @@ ht-degree: 0%
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
-- Magento Open Source
 
 ## 合併或縮制CSS檔案
 
@@ -82,7 +81,7 @@ ht-degree: 0%
 
 ## 合併及捆綁JS檔案
 
-您可以在商務管理員中開啟合併或套件組合（合併和套件組合不能同時啟用）： [!UICONTROL **商店** > **設定** > **設定** > **進階** > **開發人員** > **JavaScript設定**].
+您可以在Commerce管理中開啟合併或套件組合（合併和套件組合無法同時啟用）： [!UICONTROL **商店** > **設定** > **設定** > **進階** > **開發人員** > **JavaScript設定**].
 
 您也可以從命令列啟用Adobe Commerce內建套件組合（基本套件組合）：
 

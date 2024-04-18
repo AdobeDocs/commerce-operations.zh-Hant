@@ -1,7 +1,7 @@
 ---
-source-git-commit: 475dbc056ac3e6a00c8f794259bb0fbf04143687
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Elasticsearch本主題說明如何結合使用傳輸層安全性(TLS)加密與 [
 
 * 您的搜尋引擎會在與網頁伺服器相同的主機上執行。 在不同主機上執行搜尋引擎和網頁伺服器不在本主題的討論範圍內。
 
-  將搜尋引擎和網頁伺服器放在同一部主機上的優點是，它無法攔截加密的通訊。 搜尋引擎網頁伺服器不必與Adobe Commerce或Magento Open Source網頁伺服器相同；例如，Adobe Commerce可以執行Apache，而Elasticsearch/OpenSearch可以執行nginx。
+  將搜尋引擎和網頁伺服器放在同一部主機上的優點是，它無法攔截加密的通訊。 搜尋引擎網頁伺服器不必與Adobe Commerce網頁伺服器相同；例如，Adobe Commerce可以執行Apache，而Elasticsearch/OpenSearch可以執行nginx。
 
   如果搜尋引擎公開於公用網站，您應該設定驗證。 如果您的搜尋引擎執行個體在網路上受到保護，則可能沒有必要。 請與您的託管提供者合作，決定您應實作哪些安全性措施來保護您的執行個體。
 

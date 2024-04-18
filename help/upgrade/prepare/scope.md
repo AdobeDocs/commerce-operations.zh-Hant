@@ -1,10 +1,10 @@
 ---
 title: 瞭解升級範圍
-description: 瞭解版本中回溯不相容的變更，這些變更可能會影響Adobe Commerce或Magento Open Source自訂模組或協力廠商擴充功能。
+description: 瞭解版本中回溯不相容的變更，這些變更可能會影響Adobe Commerce自訂模組或協力廠商擴充功能。
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---

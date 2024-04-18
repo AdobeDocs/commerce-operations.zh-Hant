@@ -2,9 +2,9 @@
 title: 進階內部部署安裝
 description: 瞭解您所擁有之基礎結構上的Adobe Commerce進階安裝案例。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2314'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Adobe Commerce具有單一命令列介面，用於安裝和設定工作： `<mag
 * CLI可擴充，因此協力廠商開發人員可以「插入」至其中。 這還有消除使用者學習曲線的額外好處。
 * 已停用模組的命令不顯示。
 
-本主題說明如何使用CLI安裝Adobe Commerce或Magento Open Source軟體。 如需有關設定的詳細資訊，請參閱 [設定指南](../configuration/overview.md).
+本主題說明如何使用CLI安裝Adobe Commerce軟體。 如需有關設定的詳細資訊，請參閱 [設定指南](../configuration/overview.md).
 
 安裝程式可多次執行（如有必要），因此您可以：
 
@@ -47,7 +47,7 @@ Adobe Commerce具有單一命令列介面，用於安裝和設定工作： `<mag
   例如，在為Secure Sockets Layer (SSL)設定Web伺服器後，您可以執行安裝程式來設定SSL選項。
 
 * 更正先前安裝中的錯誤
-* 在其他資料庫執行個體中安裝Adobe Commerce或Magento Open Source
+* 在其他資料庫執行個體中安裝Adobe Commerce
 
 ## 開始安裝之前
 
@@ -65,7 +65,7 @@ Adobe Commerce具有單一命令列介面，用於安裝和設定工作： `<mag
 
 >[!NOTE]
 >
->您必須從安裝Adobe Commerce或Magento Open Source `bin` 子目錄。
+>您必須從安裝Adobe Commerce `bin` 子目錄。
 
 您可以使用不同的選項多次執行安裝程式，以完成如下的安裝工作：
 
@@ -73,7 +73,7 @@ Adobe Commerce具有單一命令列介面，用於安裝和設定工作： `<mag
 
 * 更正先前安裝中的錯誤。
 
-* 在其他資料庫執行個體中安裝Adobe Commerce或Magento Open Source。
+* 在其他資料庫執行個體中安裝Adobe Commerce。
 
 >[!NOTE]
 >
@@ -133,13 +133,13 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 | 名稱 | 值 | 必填？ |
 |--- |--- |--- |
-| `--base-url` | 用於以下列任何格式存取管理員和店面的基底URL：<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**注意：** 配置(http://或https://)和結尾斜線都是必要的。<br><br>`<your install dir>` 是安裝Adobe Commerce或Magento Open Source軟體的docroot相對路徑。 根據您設定網頁伺服器和虛擬主機的方式，路徑可能是magento2或可能為空白。<br><br>若要存取Adobe Commerce或localhost上的Magento Open Source，您可以使用 `http://127.0.0.1/<your install dir>/` 或 `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` 代表虛擬主機設定或虛擬化環境（如Docker）定義的基本URL。 例如，如果您以主機名稱設定虛擬主機 `magento.example.com`，您可以安裝軟體並搭配使用 `--base-url={{base_url}}` 並使用類似的URL存取管理員 `http://magento.example.com/admin`. | 是 |
+| `--base-url` | 用於以下列任何格式存取管理員和店面的基底URL：<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**注意：** 配置(http://或https://)和結尾斜線都是必要的。<br><br>`<your install dir>` 是安裝Adobe Commerce軟體的docroot相對路徑。 根據您設定網頁伺服器和虛擬主機的方式，路徑可能是magento2或可能為空白。<br><br>若要存取Adobe Commerce或MagenAdobe Commerceuse `http://127.0.0.1/<your install dir>/` 或 `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` 代表虛擬主機設定或虛擬化環境（如Docker）定義的基本URL。 例如，如果您以主機名稱設定虛擬主機 `magento.example.com`，您可以安裝軟體並搭配使用 `--base-url={{base_url}}` 並使用類似的URL存取管理員 `http://magento.example.com/admin`. | 是 |
 | `--backend-frontname` | 用於存取管理員的統一資源識別碼(URI)。 您可以省略此引數，讓應用程式為您產生隨機URI，其模式如下 <code>admin_jkhgdfq</code>.<br><br>基於安全考量，建議您使用隨機URI。 對於駭客或惡意軟體而言，隨機URI更難被利用。<br><br>URI會在安裝結束時顯示。 您稍後隨時可以使用 `bin/magento info:adminuri` 命令。<br><br>如果您選擇輸入值，建議您不要使用常見的字詞，例如admin、backend。 管理員URI可包含英數字元和底線字元(`_`)。 | 否 |
 | `--db-host` | 使用下列任一項：<br><br> — 資料庫伺服器的完整主機名稱或IP位址。<br><br>- `localhost` （預設）或 `127.0.0.1` 如果您的資料庫伺服器與Web伺服器位於相同的主機上。localhost表示MySQL使用者端程式庫使用UNIX通訊端連線到資料庫。 `127.0.0.1` 導致使用者端程式庫使用TCP通訊協定。 如需通訊端的詳細資訊，請參閱 [PHP PDO_MYSQL檔案](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**注意：** 您可以選擇在其主機名稱中指定資料庫伺服器連線埠，例如www.example.com:9000 | 是 |
 | `--db-name` | 您要安裝資料庫表格的資料庫執行處理名稱。<br><br>預設為 `magento2`. | 是 |
 | `--db-user` | 資料庫執行處理擁有者的使用者名稱。<br><br>預設為 `root`. | 是 |
 | `--db-password` | 資料庫執行處理擁有者的密碼。 | 是 |
-| `--db-prefix` | 只有在您要在已經有Adobe Commerce或Magento Open Source表格的資料庫執行個體中安裝資料庫表格時才使用。<br><br>在此情況下，請使用前置字元來識別此安裝的表格。 有些客戶有一個以上的Adobe Commerce或Magento Open Source執行個體在含有相同資料庫中所有表格的伺服器上執行。<br><br>首碼的長度最多可為5個字元。 它必須以字母開頭，並且只能包含字母、數字和下劃線字元。<br><br>此選項可讓這些客戶與多個Adobe Commerce或Magento Open Source安裝共用資料庫伺服器。 | 否 |
+| `--db-prefix` | 只有在您要在已經有Adobe Commerce表格的資料庫執行個體中安裝資料庫表格時才使用。<br><br>在此情況下，請使用前置字元來識別此安裝的表格。 有些客戶有多個Adobe Commerce或MagenAdobe Commerceserver，在相同資料庫中使用所有表格。<br><br>首碼的長度最多可為5個字元。 它必須以字母開頭，並且只能包含字母、數字和下劃線字元。<br><br>此選項可讓這些客戶透過多個Adobe Commerce安裝共用資料庫伺服器 |
 | `--db-ssl-key` | 使用者端金鑰的路徑。 | 否 |
 | `--db-ssl-cert` | 使用者端憑證的路徑。 | 否 |
 | `--db-ssl-ca` | 伺服器憑證的路徑。 | 否 |
@@ -153,7 +153,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--admin-use-security-key` | 1會使得應用程式使用隨機產生的索引鍵值來存取管理員和表單中的頁面。 這些金鑰值有助於防止跨網站指令碼偽造攻擊。 這是預設值。<br><br>`0` 停用金鑰。 | 否 |
 | `--session-save` | 使用下列任一項：<br><br>- `db` 將工作階段資料儲存在資料庫中。 如果您有叢集資料庫，請選擇資料庫儲存體；否則，與檔案式儲存體相比，可能不會有多大好處。<br><br>- `files` 將工作階段資料儲存在檔案系統中。 除非檔案系統存取緩慢、您有叢集資料庫，或您想要將工作階段資料儲存在Redis中，否則檔案式工作階段儲存體是適當的。<br><br>- `redis` 將工作階段資料儲存在Redis。 如果您使用Redis作為預設或頁面快取，則必須已安裝Redis。 如需設定對Redis支援的其他資訊，請參閱使用工作階段儲存體的Redis 。 | 否 |
 | `--key` | 如果您有金鑰，請指定金鑰以加密資料庫中的敏感資料。 如果您沒有，應用程式會為您產生一個。 | 是 |
-| `--cleanup-database` | 若要在安裝Adobe Commerce或Magento Open Source之前刪除資料庫表格，請指定此引數（不含值）。 否則，資料庫將保持不變。 | 否 |
+| `--cleanup-database` | 若要在安裝Adobe Commerce之前刪除資料庫表格，請指定此引數（不含值）。 否則，資料庫將保持不變。 | 否 |
 | `--db-init-statements` | 進階MySQL設定引數。 在連線到MySQL資料庫時，使用資料庫初始化陳述式來執行。 在設定任何值之前，請查閱與此類似的參考。<br><br>預設為 `SET NAMES utf8;`. | 否 |
 | `--sales-order-increment-prefix` | 指定字串值做為銷售訂單的前置詞。 通常，這是用來保證付款處理程式的唯一訂單編號。 | 否 |
 
@@ -205,7 +205,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 >[!NOTE]
 >
->若要在安裝Adobe Commerce或Magento Open Source後啟用或停用模組，請參閱 [啟用和停用模組](tutorials/manage-modules.md).
+>若要在安裝Adobe Commerce後啟用或停用模組，請參閱 [啟用和停用模組](tutorials/manage-modules.md).
 
 **敏感資料：**
 
@@ -217,7 +217,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 #### 範例1 — 使用管理員使用者帳戶進行基本安裝
 
-下列範例會安裝包含下列選項的Adobe Commerce或Magento Open Source：
+下列範例會安裝包含下列選項的Adobe Commerce：
 
 * 應用程式安裝在 `magento2` 與docroot開啟的網頁伺服器相關的目錄 `localhost` 管理員的路徑為 `admin`；因此：
 
@@ -262,7 +262,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 #### 範例2 — 無管理員使用者帳戶的基本安裝
 
-您可以安裝Adobe Commerce或Magento Open Source，而不需要建立管理員使用者，如下列範例所示。
+您可以安裝Adobe Commerce而不建立管理員使用者，如下列範例所示。
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -287,7 +287,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 #### 範例3 — 使用其他選項安裝
 
-下列範例會安裝包含下列選項的Adobe Commerce或Magento Open Source：
+下列範例會安裝包含下列選項的Adobe Commerce：
 
 * 應用程式安裝在 `magento2` 與docroot開啟的網頁伺服器相關的目錄 `localhost` 管理員的路徑為 `admin`；因此：
 

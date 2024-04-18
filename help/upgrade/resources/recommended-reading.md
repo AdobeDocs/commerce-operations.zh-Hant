@@ -2,9 +2,9 @@
 title: 建議的升級讀取
 description: 查看計畫 Adobe Commerce 升級的建議閱讀。
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '260'
 ht-degree: 4%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 4%
     </tr>
     <tr>
       <td><strong>升級資源</strong>
-        <p>確保店面安全且有效率地運作。 檢閱Adobe豐富的技術檔案，為您的Adobe Commerce或Magento Open Source升級做好準備。</p>
+        <p>確保店面安全且有效率地運作。 檢閱Adobe豐富的技術檔案，為您的Adobe Commerce升級做好準備。</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">建議的升級路徑</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4技術升級工作坊錄製</a></li>

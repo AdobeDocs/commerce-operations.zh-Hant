@@ -5,9 +5,9 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Adobe建議您先決定是否需要儲存此資料。 如果您要從舊版系�
 如果您判斷舊資料需要移轉，或新資料需要儲存在 [!DNL Adobe Commerce]，Adobe建議使用 [擴充功能屬性](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. 使用擴充功能屬性來儲存其他資料具備下列優點：
 
 - 您可以控制要儲存的資料和資料庫結構，以確保以正確的欄型別和正確的索引來儲存資料。
-- 中的大部分實體 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 支援使用擴充功能屬性。
+- 中的大部分實體 [!DNL Adobe Commerce] 支援使用擴充功能屬性。
 - 擴充功能屬性是一種不受儲存影響的機制，可讓您靈活地將資料儲存在專案的最佳位置。
 
 儲存位置的兩個範例是資料庫表格和 [!DNL Redis]. 選擇位置時需要考慮的關鍵事項是，位置是否會帶來額外的複雜性，或影響效能。

@@ -1,10 +1,10 @@
 ---
 title: 啟用或停用維護模式
-description: 請依照下列步驟，自訂當您的Adobe Commerce或Magento Open Source部署因維護而停止時，客戶會看到的內容。
+description: 請依照下列步驟，自訂當您的Adobe Commerce部署因維護而停止時，客戶會看到的內容。
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---

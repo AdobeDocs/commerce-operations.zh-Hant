@@ -2,9 +2,9 @@
 title: 進階設定
 description: 檢閱專為處理大量資料而設計的大型企業系統的最佳實務和建議。
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## 設定 [!DNL RabbitMQ]
 
-Magento Open Source和Adobe [!DNL Commerce] 透過實作的支援訊息佇列 [!DNL RabbitMQ]. [!DNL Commerce] 使用此服務執行許多非同步操作，包括B2B目錄操作和非同步庫存更新。 所有用於將更多作業新增至作業伺服器的介面都會隨產品分發，並可在第三方擴充功能的範圍內用於自訂非同步邏輯實施。 如同任何其他的整合， [!DNL Commerce] 提供下列專案的設定檔範例： [!DNL RabbitMQ] 包含所有建議的設定，並已完全準備好用於生產。
+Adobe Commerce支援透過實作的訊息佇列 [!DNL RabbitMQ]. [!DNL Commerce] 使用此服務執行許多非同步操作，包括B2B目錄操作和非同步庫存更新。 所有用於將更多作業新增至作業伺服器的介面都會隨產品分發，並可在第三方擴充功能的範圍內用於自訂非同步邏輯實施。 如同任何其他的整合， [!DNL Commerce] 提供下列專案的設定檔範例： [!DNL RabbitMQ] 包含所有建議的設定，並已完全準備好用於生產。
 
 ## 分割資料庫
 

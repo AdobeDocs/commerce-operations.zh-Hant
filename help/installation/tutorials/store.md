@@ -1,10 +1,10 @@
 ---
 title: 設定存放區
-description: 請依照這些步驟設定您的Adobe Commerce或Magento Open Source存放區。
+description: 請依照下列步驟設定您的Adobe Commerce存放區。
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---

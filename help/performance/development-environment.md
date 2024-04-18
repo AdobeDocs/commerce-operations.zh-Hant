@@ -1,10 +1,10 @@
 ---
 title: 開發環境Recommendations
-description: 瞭解設定本機Adobe Commerce或Magento Open Source開發環境的效能建議。
+description: 瞭解設定本機Adobe Commerce開發環境的效能建議。
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---

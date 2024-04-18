@@ -1,10 +1,10 @@
 ---
 title: 驗證安裝
-description: 請依照下列步驟，確認您內部部署的Adobe Commerce或Magento Open Source安裝成功。
+description: 請依照下列步驟，確認您內部部署的Adobe Commerce安裝成功。
 exl-id: 0bd7ec01-c616-4384-ae26-db2ce3668caf
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---

@@ -2,9 +2,9 @@
 title: 隱私權JavaScript資料庫
 description: 瞭解如何使用自訂工具來存取和刪除Adobe Commerce收集的客戶個人資訊。
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Commerce資料追蹤服務可儲存適用於隱私權法規的私人資訊，例
 
 隱私權JavaScript程式庫可在下列CDN位置取得： `commerce.adobe.net/magentoprivacy.js`
 
-取得檔案後，您需要將其新增到Adobe Commerce或Magento Open Source執行個體中安裝的自訂模組或主題。 請依照以下說明操作 [使用自訂JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) 完成此任務的主題。
+取得檔案後，您需要將其新增到Adobe Commerce執行個體中安裝的自訂模組或主題。 請依照以下說明操作 [使用自訂JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) 完成此任務的主題。
 
 ### 初始化
 

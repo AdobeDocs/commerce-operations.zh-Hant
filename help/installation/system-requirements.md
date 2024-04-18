@@ -2,9 +2,9 @@
 title: 系統需求
 description: 請使用此參考資料來識別已在Adobe Commerce發行版本中測試的所需軟體相依性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -155,4 +155,4 @@ Adobe Commerce的某些作業需要下列系統工具：
 
 >[!NOTE]
 >
->有一個已知問題 `xdebug` 可能會影響Adobe Commerce或Magento Open Source安裝，或安裝後對店面或管理員的存取權。 另請參閱 [影響以下的已知問題 `xdebug` 安裝](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) 在 _Commerce支援知識庫_.
+>有一個已知問題 `xdebug` 可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取許可權。 另請參閱 [影響以下的已知問題 `xdebug` 安裝](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) 在 _Commerce支援知識庫_.

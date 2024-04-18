@@ -1,7 +1,7 @@
 ---
-source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '2674'
+source-wordcount: '2196'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 雲端基礎結構上的Adobe Commerce使用Composer來管理PHP套件。
 
-此 `composer.json` 檔案會宣告套件清單，而 `composer.lock` file會儲存用來建置Adobe Commerce或Magento Open Source安裝的套件完整清單（每個套件的完整版本及其相依性）。
+此 `composer.json` 檔案會宣告套件清單，而 `composer.lock` 檔案會儲存用來建置Adobe Commerce安裝的套件完整清單（每個套件的完整版本及其相依性）。
 
 下列參考檔案產生自 `composer.lock` 檔案，並涵蓋雲端基礎結構2.4.6上Adobe Commerce中所包含的必要套件。
 

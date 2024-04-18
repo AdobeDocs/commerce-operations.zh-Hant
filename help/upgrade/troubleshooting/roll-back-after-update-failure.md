@@ -1,10 +1,10 @@
 ---
 title: 模組更新失敗後回覆
-description: 在遇到模組更新錯誤後，疑難排解Adobe Commerce或Magento Open Source升級。
+description: 在遇到模組更新錯誤後，疑難排解您的Adobe Commerce升級。
 exl-id: 1537a6b1-b450-4f90-bffb-73359fa71598
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---

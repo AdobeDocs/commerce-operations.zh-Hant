@@ -2,9 +2,9 @@
 title: 管理快取
 description: 使用Commerce CLI從命令列管理快取型別並檢視快取狀態
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 1070291396144f866cadd5e42ebca3e77a484a9b
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ bin/magento cache:disable db_ddl full_page
 
   >[!TIP]
   >
-  >升級Magento Open Source或Adobe Commerce版本、從Magento Open Source升級至Adobe Commerce，或安裝Adobe Commerce或任何模組適用的B2B後，請務必清理快取。
+  >升級Adobe Commerce版本、從Magento Open Source升級至Adobe Commerce，或安裝適用於Adobe Commerce或任何模組的B2B後，請務必清理快取。
 
 - 清除快取型別會清除快取儲存體，這可能會影響使用相同儲存體的其他程式應用程式。
 

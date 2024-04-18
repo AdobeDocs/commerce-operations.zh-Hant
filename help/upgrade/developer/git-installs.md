@@ -1,17 +1,17 @@
 ---
 title: 升級Git安裝
-description: 升級您從Git存放庫複製的Adobe Commerce或Magento Open Source安裝。
+description: 升級您從Git存放庫複製的Adobe Commerce安裝。
 exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
 
 # 升級Git安裝
 
-本主題說明投稿開發人員如何在不重新安裝的情況下更新Adobe Commerce或Magento Open Source。 如果您不是貢獻開發人員，請參閱 [執行升級](../implementation/perform-upgrade.md).
+本主題說明投稿開發人員如何在不重新安裝的情況下更新Adobe Commerce。 如果您不是貢獻開發人員，請參閱 [執行升級](../implementation/perform-upgrade.md).
 
 若要升級您是參與開發人員：
 

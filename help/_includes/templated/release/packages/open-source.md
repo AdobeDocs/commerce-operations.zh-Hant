@@ -1,7 +1,7 @@
 ---
-source-git-commit: d0304f4060080f70c079fb571210cd015407f1cf
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1986'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Magento Open Source使用Composer來管理PHP套件。
 
-此 `composer.json` 檔案會宣告套件清單，而 `composer.lock` file會儲存用來建置Adobe Commerce或Magento Open Source安裝的套件完整清單（每個套件的完整版本及其相依性）。
+此 `composer.json` 檔案會宣告套件清單，而 `composer.lock` file會儲存用來建置Magento Open Source安裝的套裝軟體完整清單（每個套裝軟體及其相依性的完整版本）。
 
 下列參考檔案產生自 `composer.lock` 檔案中，並涵蓋Magento Open Source2.4.7中包含的必要套件。
 

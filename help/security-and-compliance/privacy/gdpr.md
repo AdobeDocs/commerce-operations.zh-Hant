@@ -2,9 +2,9 @@
 title: 一般資料保護規範(GDPR)
 description: 瞭解一般資料保護規範(GDPR)，這項法規會針對歐盟和歐洲經濟區的所有個人監管資料保護和隱私權。
 exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 個人資訊參考
 
-如需技術資訊，請參閱「個人資訊參考」中的資料流圖表和資料庫實體對應，其適用於您支援的每個Adobe Commerce版本或Magento Open Source。
+如需技術資訊，請參閱「個人資訊參考」中的資料流圖表和資料庫實體對應，其適用於您支援的每個Adobe Commerce版本。
 
 - [客戶個人資訊參考（2.x版）](data-m2.md)
 - [客戶個人資訊參考資料（版本） 1.x)](data-m1.md)

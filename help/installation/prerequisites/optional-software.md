@@ -2,9 +2,9 @@
 title: 選購軟體
 description: 深入瞭解您可安裝的選用軟體，以支援Adobe Commerce的內部安裝。
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 我們強烈建議您安裝NTP，以確保cron相關工作可正常執行。 （例如，伺服器日期可以是過去或未來的日期。）
 
-本主題中討論的其他選用公用程式可協助您進行安裝；不過，安裝或使用Adobe Commerce或Magento Open Source並不需要這些公用程式。
+本主題中討論的其他選用公用程式可協助您進行安裝；不過，安裝或使用Adobe Commerce並不需要這些公用程式。
 
 ## 安裝和設定網路時間通訊協定(NTP)
 
 [NTP](https://www.ntp.org/) 可讓伺服器使用同步處理其系統時鐘 [全域可用的集區伺服器](https://www.ntppool.org/en/). 我們建議您使用您信任的NTP伺服器，不論是您內部網路或外部公用伺服器的專屬硬體解決方案。
 
-如果您要在多部主機上部署Adobe Commerce或Magento Open Source，NTP是保證其所有時鐘都同步的簡單方法，無論伺服器位於哪個時區。 此外，cron相關工作（例如索引和異動電子郵件）取決於伺服器時鐘是否準確。
+如果您要在多部主機上部署Adobe Commerce，NTP是保證其所有時鐘都同步的簡單方法，無論伺服器位於哪個時區。 此外，cron相關工作（例如索引和異動電子郵件）取決於伺服器時鐘是否準確。
 
 ### 在Ubuntu上安裝和設定NTP
 

@@ -1,10 +1,10 @@
 ---
 title: 套用修補程式
-description: 瞭解將修補程式套用至Adobe Commerce或Magento Open Source專案的方法。
+description: 瞭解將修補程式套用至Adobe Commerce專案的方法。
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: 454f586737292341b3e6dd9a57cc92b3472c4b31
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---

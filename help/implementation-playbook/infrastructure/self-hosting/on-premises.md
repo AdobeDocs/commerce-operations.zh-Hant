@@ -4,9 +4,9 @@ description: 瞭解Adobe Commerce內部部署基礎結構和第三方雲端服�
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: de1467be-acec-4a0d-8229-e7e87614bc55
 feature: Install
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 第二個Elastic Load Balancing應用程式負載平衡器會將Varnish快取的流量分散到多個可用區域的Adobe Commerce執行個體的AWS Auto Scaling群組中。
 
-1. 在Amazon EC2執行個體上安裝最新版的Magento Open Source或Adobe Commerce。 安裝包含Adobe Commerce應用程式、Nginx Web伺服器及PHP。 建置Amazon機器影像(AMI)以在Auto Scaling群組中啟動新執行個體。
+1. 在Amazon EC2執行個體上安裝最新版的Adobe Commerce。 安裝包含Adobe Commerce應用程式、Nginx Web伺服器及PHP。 建置Amazon機器影像(AMI)以在Auto Scaling群組中啟動新執行個體。
 
 1. AmazonElasticsearch服務是用於Adobe Commerce目錄搜尋的受管理Elasticsearch服務。
 
@@ -55,6 +55,6 @@ ht-degree: 0%
 
 AWS的Adobe Commerce設定可讓您在雲端中使用受完整管理的替代方案，取代特定應用程式相依性。 例如，許多應用程式的資料庫可輕鬆由Amazon關聯式資料庫服務(AmazonRDS)取代，而不用直接在EC2執行個體上託管關聯式資料庫。 此策略的優點在於，無差異元件的作業責任可以解除安裝至AWS，而不需要大幅變更核心應用程式。
 
-有數個部署選項可用於在AWS上執行Adobe Commerce (Magento Open Source和Adobe Commerce版本)。 最適合的選擇取決於您的成本、規模、可用性和彈性需求，以及貴組織的AWS和Adobe Commerce技能。
+有數個部署選項可用於在AWS上執行Adobe Commerce。 最適合的選擇取決於您的成本、規模、可用性和彈性需求，以及貴組織的AWS和Adobe Commerce技能。
 
 {{$include /help/_includes/hosting-related-links.md}}

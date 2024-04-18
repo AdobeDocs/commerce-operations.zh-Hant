@@ -3,16 +3,16 @@ title: 管理模組和擴充功能（開發人員）
 description: 使用命令列介面和撰寫器套件管理員來管理Adobe Commerce模組和擴充功能。
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 2%
+source-wordcount: '131'
+ht-degree: 3%
 
 ---
 
 # 管理模組和擴充功能
 
-協助開發人員在Adobe Commerce或Magento Open Source中指定其版本，以升級模組與擴充功能 `composer.json` 檔案。 如果您不是貢獻開發人員，請參閱 [執行升級](../implementation/perform-upgrade.md).
+協助開發人員在Adobe Commerce中指定其版本，以升級模組與擴充功能 `composer.json` 檔案。 如果您不是貢獻開發人員，請參閱 [執行升級](../implementation/perform-upgrade.md).
 
 您可以新增 `require` 區段至 `composer.json` 檔案或您可以使用 `composer require` 命令如下：
 

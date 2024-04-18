@@ -2,9 +2,9 @@
 title: 概述 [!DNL Upgrade Compatibility Tool]
 description: 瞭解 [!DNL Upgrade Compatibility Tool] 以及可如何協助您進行Adobe Commerce專案。
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 請參閱下列資源，協助您瞭解Adobe Commerce升級：
 
-- 此 [升級指南](../overview.md) 提供典型Adobe Commerce或Magento Open Source升級歷程的概觀，以及要在該歷程中遵循的最佳實務。
+- 此 [升級指南](../overview.md) 提供典型Adobe Commerce升級歷程的概觀，以及在此歷程中要遵循的最佳實務。
 - 此 [即將發行的版本](https://devdocs.magento.com/release/) 頁面提供已排程和即將發行的日期。
 - 此 [社群資源](https://developer.adobe.com/commerce/contributor/community/) 頁面是要放置以開始討論，或尋找更多資訊的位置。
 - 檢查 [相關工具](../upgrade-compatibility-tool/related-tools.md) 頁面，瞭解一般升級歷程中的實用工具。

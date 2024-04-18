@@ -2,9 +2,9 @@
 title: 複製範例資料Git存放庫
 description: 請依照下列步驟，複製Git存放庫以安裝Adobe Commerce範例資料。
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->如果您正在安裝範例資料 *晚於* 安裝Adobe Commerce或Magento Open Source時，您也必須執行下列命令以更新資料庫和架構：
+>如果您正在安裝範例資料 *晚於* 安裝Adobe Commerce時，您也必須執行下列命令來更新資料庫和架構：
 >
 >```bash
 ><magento_root>/bin/magento setup:upgrade

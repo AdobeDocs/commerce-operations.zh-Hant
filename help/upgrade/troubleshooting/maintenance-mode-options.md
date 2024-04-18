@@ -1,10 +1,10 @@
 ---
 title: 升級的維護模式選項
-description: 建立自訂維護模式頁面，供客戶在您執行升級時於您的Adobe Commerce或Magento Open Source店面檢視。
+description: 建立自訂維護模式頁面，以便客戶在您執行升級時於您的Adobe Commerce店面看到。
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---

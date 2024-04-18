@@ -1,10 +1,10 @@
 ---
 title: 升級資料庫結構和資料
-description: 請依照下列步驟升級Adobe Commerce或Magento Open Source資料庫架構。
+description: 請依照下列步驟升級Adobe Commerce資料庫架構。
 exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---

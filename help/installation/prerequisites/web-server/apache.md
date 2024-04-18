@@ -2,9 +2,9 @@
 title: Apache
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝來安裝和設定Apache Web Server。
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Adobe Commerce使用伺服器重寫和 `.htaccess` 以提供Apache的目錄層�
    >[!NOTE]
    >
    >- 如果您從舊版Apache升級，請先尋找 `<Directory "/var/www/html">` 或 `<Directory "/var/www">` 在 `000-default.conf`.
-   >- 您必須變更值 `AllowOverride` 在您要安裝Adobe Commerce或Magento Open Source軟體的目錄的指示詞中。 例如，若要安裝在網頁伺服器docroot中，請編輯中的指令 `<Directory /var/www>`.
+   >- 您必須變更值 `AllowOverride` 在您要安裝Adobe Commerce軟體之目錄的指示詞中。 例如，若要安裝在網頁伺服器docroot中，請編輯中的指令 `<Directory /var/www>`.
 
 >[!NOTE]
 >

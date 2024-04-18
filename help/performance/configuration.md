@@ -1,11 +1,11 @@
 ---
 title: 設定最佳實務
-description: 使用這些最佳實務最佳化Adobe Commerce或Magento Open Source部署的回應時間。
+description: 使用這些最佳實務最佳化Adobe Commerce部署的回應時間。
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ Commerce提供許多設定和工具，可用來改善頁面上的回應時間，
 
 ## 非同步電子郵件通知
 
-啟用「非同步電子郵件通知」設定，將處理結帳和訂單處理電子郵件通知的流程移至背景。 若要啟用此功能，請前往 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. 另請參閱 [銷售電子郵件](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) 在 _Magento Open Source使用手冊_ 以取得詳細資訊。
+啟用「非同步電子郵件通知」設定，將處理結帳和訂單處理電子郵件通知的流程移至背景。 若要啟用此功能，請前往 **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. 另請參閱 [銷售電子郵件](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) 在 _管理員使用手冊_ 以取得詳細資訊。
 
 ## 非同步處理訂單資料
 
-有時候，店面在進行密集銷售的同時，也會發生 [!DNL Commerce] 正在執行大量訂單處理。 您可以設定 [!DNL Commerce] 在資料庫層級區分這兩種流量模式，以避免對應表格中的讀取和寫入作業發生衝突。 您可以非同步方式儲存及索引訂單資料。 訂單會暫時存放並大量移至「訂單管理」格線，而不會發生衝突。 您可以從以下位置啟用此選項： **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. 另請參閱 [已排程的格線更新](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) 在 _Magento Open Source使用手冊_ 以取得詳細資訊。
+有時候，店面在進行密集銷售的同時，也會發生 [!DNL Commerce] 正在執行大量訂單處理。 您可以設定 [!DNL Commerce] 在資料庫層級區分這兩種流量模式，以避免對應表格中的讀取和寫入作業發生衝突。 您可以非同步方式儲存及索引訂單資料。 訂單會暫時存放並大量移至「訂單管理」格線，而不會發生衝突。 您可以從以下位置啟用此選項： **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. 另請參閱 [已排程的格線更新](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) 在 _管理員使用手冊_ 以取得詳細資訊。
 
 >[!WARNING]
 >

@@ -2,9 +2,9 @@
 title: Nginx
 description: 請依照下列步驟安裝和設定Nginx網頁伺服器，以供Adobe Commerce的內部部署使用。
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -97,13 +97,13 @@ Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作
    cd /var/www/html
    ```
 
-1. 全域安裝撰寫器。 安裝Adobe Commerce或Magento Open Source之前，需要撰寫器更新相依性：
+1. 全域安裝撰寫器。 安裝Adobe Commerce之前需要撰寫器更新相依性：
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. 使用Magento Open Source或Adobe Commerce中繼資料建立Composer專案。
+1. 使用Adobe Commerce中繼資料建立撰寫器專案。
 
    **Magento Open Source**
 
@@ -207,7 +207,7 @@ Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作
    >
    >此 `include` 指示必須指向安裝目錄中的nginx組態檔範例。
 
-1. 取代 `www.magento-dev.com` 使用您的網域名稱。 這必須符合您在安裝Adobe Commerce或Magento Open Source時指定的基底URL。
+1. 取代 `www.magento-dev.com` 使用您的網域名稱。 這必須符合您在安裝Adobe Commerce時指定的基底URL。
 
 1. 儲存並退出編輯器。
 
@@ -283,7 +283,7 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
 
    >[!NOTE]
    >
-   >測試Adobe Commerce或Magento Open Source時，建議將記憶體限制設為2G。 請參閱 [必要的PHP設定](../php-settings.md) 以取得詳細資訊。
+   >測試Adobe Commerce時，建議將記憶體限制設為2 G。 請參閱 [必要的PHP設定](../php-settings.md) 以取得詳細資訊。
 
 1. 取消註解工作階段路徑目錄並設定路徑：
 
@@ -376,13 +376,13 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
    cd /var/www/html
    ```
 
-1. 全域安裝撰寫器。 安裝Adobe Commerce或Magento Open Source之前，需要撰寫器更新相依性：
+1. 全域安裝撰寫器。 安裝Adobe Commerce之前需要撰寫器更新相依性：
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. 使用Magento Open Source或Adobe Commerce中繼資料建立Composer專案。
+1. 使用Adobe Commerce中繼資料建立撰寫器專案。
 
    **Magento Open Source**
 

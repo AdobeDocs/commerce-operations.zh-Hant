@@ -1,24 +1,24 @@
 ---
 title: 不支援目前的搜尋引擎
-description: 在遇到有關不支援的搜尋引擎的錯誤後，疑難排解Adobe Commerce或Magento Open Source升級。
+description: 在遇到有關不支援的搜尋引擎的錯誤後，疑難排解您的Adobe Commerce升級。
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
 # 不支援目前的搜尋引擎
 
-以下錯誤訊息指出您要升級的Adobe Commerce或Magento Open Source版本已設定為使用您要升級至的版本不支援的目錄搜尋引擎：
+以下錯誤訊息指出您要升級的Adobe Commerce版本已設定為使用目錄搜尋引擎，而您要升級到的版本不支援該目錄搜尋引擎：
 
 ```terminal
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 
-此錯誤表示在舊版Adobe Commerce或Magento Open Source中，有下列條件之一為true：
+此錯誤表示在舊版Adobe Commerce中，有下列條件之一為true：
 
 - 搜尋引擎設定為MySQL。
 - 搜尋引擎設定為不再支援的Elasticsearch版本。
@@ -62,7 +62,7 @@ bin/magento config:show catalog/search/engine
 
 不再支援Elasticsearch6及舊版。
 
-值 `elasticsearch` 表示您的Adobe Commerce低階版本或Magento Open Source已設定為使用Elasticsearch2.x。不再支援此版本的Elasticsearch。
+值 `elasticsearch` 表示您的Adobe Commerce低階版本設定為使用Elasticsearch2.x。不再支援此版本的Elasticsearch。
 
 升級至2.4之前，您必須執行下列工作：
 

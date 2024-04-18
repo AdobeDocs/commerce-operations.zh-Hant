@@ -3,16 +3,16 @@ title: 下載範例資料撰寫器套件
 description: 請依照下列步驟，使用Composer PHP Package Manager安裝Adobe Commerce範例資料。
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # 下載範例資料撰寫器套件
 
-本節探討如何安裝範例資料(若您透過下列任一方式取得Adobe Commerce或Magento Open Source軟體)：
+本節探討如何安裝範例資料(若您透過下列任一方式取得Adobe Commerce軟體)：
 
 * 已從下載壓縮封存 `https://magento.com/tech-resources/download`.
 

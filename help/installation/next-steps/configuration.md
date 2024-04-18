@@ -3,16 +3,16 @@ title: 設定應用程式
 description: 瞭解Adobe Commerce內部部署所需的安裝後設定。
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # 設定應用程式
 
-現在您已安裝Adobe Commerce或Magento Open Source，您需要進行設定。 本主題提供一些建議的組態設定。
+現在您已安裝Adobe Commerce，需要加以設定。 本主題提供一些建議的組態設定。
 
 ## 設定cron
 

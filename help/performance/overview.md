@@ -1,10 +1,10 @@
 ---
 title: 概觀
-description: 請依照這些最佳實務，最佳化Adobe Commerce或Magento Open Source部署的效能。
+description: 請依照這些最佳實務，最佳化Adobe Commerce部署的效能。
 exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '86'
 ht-degree: 1%
 
 ---
@@ -15,5 +15,5 @@ ht-degree: 1%
 
 ## 假設
 
-* 您已使用安裝Adobe Commerce或Magento Open Source [作曲者](../installation/composer.md).
-* 您可以使用此安裝來執行Adobe Commerce或Magento Open Source的即時生產執行個體。
+* 您已使用安裝Adobe Commerce [作曲者](../installation/composer.md).
+* 您可以使用此安裝來執行Adobe Commerce的即時生產執行個體。

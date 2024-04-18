@@ -1,10 +1,10 @@
 ---
 user-guide-title: 設定指南
-user-guide-description: 設定您的Adobe Commerce或Magento Open Source應用程式功能與服務。
+user-guide-description: 設定您的Adobe Commerce應用程式功能與服務。
 feature: Configuration
-source-git-commit: b61a2726e1a26229515d28332bbd88ba3d416a98
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
       + [塗漆概述](cache/config-varnish.md)
       + [安裝清漆](cache/config-varnish-install.md)
    + [網頁伺服器](cache/config-varnish-server.md)
-   + [設定商務應用程式](cache/configure-varnish-commerce.md)
+   + [設定Commerce應用程式](cache/configure-varnish-commerce.md)
    + [進階清漆組態](cache/config-varnish-advanced.md)
    + [快取清除](cache/use-varnish-cache.md)
    + [快取清除多個Varnish例項](cache/use-multiple-varnish-cache.md)
@@ -76,7 +76,7 @@ ht-degree: 0%
    + [執行單元測試](cli/unit-tests.md)
    + [轉換版面檔案](cli/convert-layout-files.md)
    + [產生效能測試資料](cli/generate-data.md)
-   + [執行支援公用程式（僅限Commerce）](cli/run-support-utilities.md)
+   + [執行支援公用程式(僅限Commerce)](cli/run-support-utilities.md)
 + 組態檔 {#files}
    + [用於部署的組態檔](reference/deployment-files.md)
    + [設定型別](reference/config-create-types.md)

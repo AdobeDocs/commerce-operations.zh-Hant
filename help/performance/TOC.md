@@ -1,12 +1,12 @@
 ---
 user-guide-title: 效能最佳實務
-user-guide-description: 使用我們的建議最佳化Adobe Commerce或Magento Open Source生產部署的效能。
+user-guide-description: 使用我們的建議最佳化Adobe Commerce生產部署的效能。
 feature: Best Practices
 topic: Administration, Commerce, Development, Performance
-source-git-commit: 51a86a24561e2c21b895dd59b3d784313b52d186
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 1%
+source-wordcount: '50'
+ht-degree: 2%
 
 ---
 

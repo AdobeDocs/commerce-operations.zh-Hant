@@ -1,10 +1,10 @@
 ---
 title: 檢查資料庫狀態
-description: 請依照下列步驟檢查Adobe Commerce或Magento Open Source資料庫狀態。
+description: 請依照下列步驟檢查Adobe Commerce資料庫狀態。
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '104'
 ht-degree: 3%
 
 ---

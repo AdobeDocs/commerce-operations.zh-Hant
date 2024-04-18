@@ -2,16 +2,16 @@
 title: 檔案擁有權和許可權
 description: 瞭解使用Adobe Commerce內部部署安裝時檔案系統許可權的重要性。
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
 # 檔案擁有權和許可權
 
-在開發環境中確保您的Adobe Commerce或Magento Open Source安裝安全，以協助防止與未授權人員或程式存取（並可能傷害）您的系統相關的問題，這點很重要。 請使用下列檔案系統擁有權和許可權准則來保護您的安裝。
+在開發環境中確保Adobe Commerce的安裝安全非常重要，這樣有助於防止未經授權的人員或程式存取（並可能損害）您的系統時出現問題。 請使用下列檔案系統擁有權和許可權准則來保護您的安裝。
 
 ## 檔案系統擁有者
 
@@ -65,4 +65,4 @@ Adobe Commerce使用三位元預設遮罩： `002`. 從UNIX預設值（檔案為
 
 >[!TIP]
 >
->安裝Adobe Commerce或Magento Open Source之前，請先檢閱 [設定檔案擁有權和許可權](configure-permissions.md).
+>安裝Adobe Commerce之前，請先檢閱 [設定檔案擁有權和許可權](configure-permissions.md).

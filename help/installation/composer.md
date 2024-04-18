@@ -1,10 +1,10 @@
 ---
 title: 快速入門內部部署安裝
-description: 請依照下列步驟，在您擁有的基礎架構上安裝Adobe Commerce或Magento Open Source。
+description: 請依照下列步驟，在您擁有的基礎設施上安裝Adobe Commerce。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe使用 [作曲者](https://getcomposer.org/) 管理Adobe Commerce元件及�
 - 使用元件式架構搭配強大的相依性管理，減少擴充功能衝突及相容性問題
 - 遵守 [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/) 標準
 - 使用其他元件重新封裝Magento Open Source
-- 在生產環境中使用Adobe Commerce或Magento Open Source軟體
+- 在生產環境中使用Adobe Commerce軟體
 
 >[!NOTE]
 >
@@ -71,11 +71,11 @@ Adobe使用 [作曲者](https://getcomposer.org/) 管理Adobe Commerce元件及�
 
 ## 取得中繼資料
 
-若要取得Adobe Commerce或Magento Open Source中繼資料：
+若要取得Adobe Commerce中繼資料：
 
 1. 以或切換方式登入應用程式伺服器 [檔案系統擁有者](prerequisites/file-system/overview.md).
 1. 變更至Web伺服器docroot目錄，或您設定為虛擬主機docroot的目錄。
-1. 使用Adobe Commerce或Magento Open Source中繼資料建立Composer專案。
+1. 使用Commerce中繼資料建立撰寫器專案。
 
    **Magento Open Source**
 
@@ -127,7 +127,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ## 設定檔案許可權
 
-您必須先設定網頁伺服器群組的讀寫許可權，才能安裝Adobe Commerce或Magento Open Source。 這是必要的，以便命令列可以將檔案寫入檔案系統。
+您必須先設定網頁伺服器群組的讀寫許可權，才能安裝Adobe Commerce。 這是必要的，以便命令列可以將檔案寫入檔案系統。
 
 ```terminal
 cd /var/www/html/<magento install directory>
@@ -139,7 +139,7 @@ chmod u+x bin/magento
 
 ## 安裝應用程式
 
-您必須使用命令列來安裝Adobe Commerce或Magento Open Source。
+您必須使用命令列安裝Adobe Commerce。
 
 此範例假設安裝目錄名為 `magento2ee`，則 `db-host` 在同一部電腦上(`localhost`)，且 `db-name`， `db-user`、和 `db-password` 全部 `magento`：
 

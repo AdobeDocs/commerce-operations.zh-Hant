@@ -2,9 +2,9 @@
 title: 修補程式的運作方式
 description: 瞭解Adobe Commerce的各種修補程式型別及其運作方式。
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Hotfix是包含高影響力安全性或品質修正（會影響到許多商家�
 
 ## 自訂修補程式
 
-有時Adobe工程團隊需要一點時間，才能在Adobe Commerce或Magento Open Source Composer版本中加入GitHub上的錯誤修正。 同時，您可以從GitHub建立修補程式，並使用 [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) 外掛程式，以將其套用至您的撰寫器式安裝。
+有時Adobe工程團隊需要一點時間，才能在Adobe Commerce Composer版本中加入GitHub上的錯誤修正。 同時，您可以從GitHub建立修補程式，並使用 [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) 外掛程式，以將其套用至您的撰寫器式安裝。
 
 使用 [命令列](apply.md#command-line) 或 [作曲者](apply.md#composer) 以套用自訂修補程式。
 

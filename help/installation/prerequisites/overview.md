@@ -2,16 +2,16 @@
 title: 內部部署安裝必備條件
 description: 深入瞭解Adobe Commerce內部部署安裝所需的軟體相依性。
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '316'
 ht-degree: 1%
 
 ---
 
 # 內部部署安裝必備條件
 
-安裝Adobe Commerce或Magento Open Source之前，您必須先執行下列動作：
+安裝Adobe Commerce之前，您必須先執行下列動作：
 
 * 設定一或多個符合條件的主機 [系統需求](../system-requirements.md).
 * 如果您設定多個具有負載平衡的Web節點，請設定並測試系統的該部分 _早於_ 您安裝應用程式。
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->我們假設您正在中安裝Adobe Commerce或Magento Open Source **開發環境**，表示您擁有該電腦的根使用者存取權， **和** 電腦不需要高度安全。 如果您要設定較安全的機器，強烈建議您向網路管理員尋求其他協助。
+>我們假設您正在中安裝Adobe Commerce **開發環境**，表示您擁有該電腦的根使用者存取權， **和** 電腦不需要高度安全。 如果您要設定較安全的機器，強烈建議您向網路管理員尋求其他協助。
 
 我們強烈建議您更新並升級作業系統軟體。 這些升級可提供安全性與軟體修正，以防止未來發生問題。 不知道這代表什麼嗎？ 請檢視我們的 [安裝概觀頁面](../overview.md).
 
@@ -70,7 +70,7 @@ Server built:   Jul 23 2017 14:17:29
 
 ### MySQL
 
-檢查您是否有相容的MySQL版本，適用於您正在安裝的Adobe Commerce或Magento Open Source版本。 另請參閱 [系統需求](../system-requirements.md) 支援版本。
+檢查您是否有相容的MySQL版本，適用於您正在安裝的Adobe Commerce版本。 另請參閱 [系統需求](../system-requirements.md) 支援版本。
 
 ```bash
 mysql -u <database root user or database owner name> -p

@@ -2,9 +2,9 @@
 title: 設定遠端MySQL資料庫連線
 description: 請依照下列步驟，為Adobe Commerce的內部安裝設定遠端資料庫連線。
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 
 * [安裝MySQL伺服器](mysql.md) 資料庫伺服器上。
 * [建立資料庫執行處理](mysql.md#configuring-the-database-instance) 資料庫伺服器上。
-* 在您的Adobe Commerce或Magento Open SourceWeb節點上安裝MySQL使用者端。 如需詳細資訊，請參閱MySQL檔案。
+* 在您的Adobe Commerce Web節點上安裝MySQL使用者端。 如需詳細資訊，請參閱MySQL檔案。
 
 ### 高可用性
 
@@ -136,7 +136,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-如果MySQL監視器顯示如下，則資料庫已準備好進行Adobe Commerce或Magento Open Source：
+如果MySQL監視器顯示如下，表示資料庫已準備好使用Adobe Commerce：
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -151,9 +151,9 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 如果您的Web伺服器是叢集化的，請在每個Web伺服器主機上輸入命令。
 
-## 安裝Adobe Commerce或Magento Open Source
+## 安裝Adobe Commerce
 
-安裝Adobe Commerce或Magento Open Source時，您必須指定下列專案：
+安裝Adobe Commerce時，您必須指定下列專案：
 
 * 基本URL (也稱為 *商店地址*)指定主機名稱或IP位址 *Web節點*
 * 資料庫主機為 *遠端資料庫伺服器* IP位址（如果資料庫伺服器是叢集化的，則為負載平衡器）

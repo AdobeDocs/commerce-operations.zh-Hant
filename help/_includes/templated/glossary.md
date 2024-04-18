@@ -1,7 +1,7 @@
 ---
-source-git-commit: 405c1d7073e5936aefc7fb3c6eb1d5dd4d69a066
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '6574'
+source-wordcount: '6363'
 ht-degree: 0%
 
 ---
@@ -128,13 +128,13 @@ _字詞屬性：_
 _名詞_
 
 描述產品某些層面的產品特性或屬性。
-Adobe Commerce或Magento Open Source使用者可建立自訂屬性，以新增至預設屬性集或自訂屬性集。
+Adobe Commerce使用者可建立自訂屬性，以新增至預設屬性集或自訂屬性集。
 透過「管理員」或以程式設計方式建立這些屬性。
 範例：顏色、大小、重量、價格、年齡、性別等。
 
 自訂屬性是一種Entity-Attribute-Value (EAV)屬性。
 
-對於Google購物廣告頻道和AmazonSales Channel等整合，您可以將Commerce屬性對應至協力廠商中的屬性，以正確顯示和銷售產品、顯示廣告。
+若是像Google購物廣告頻道和AmazonSales Channel這樣的整合，您可以將Commerce屬性對應至協力廠商中的屬性，以正確顯示和銷售產品、顯示廣告。
 
 瞭解更多： [EAV與extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
@@ -686,7 +686,7 @@ _字詞屬性：_
 
 _名詞_
 
-一組用來管理和部署Commerce應用程式的指令碼和工具。 此套件簡化了雲端基礎結構流程上的許多Adobe Commerce，包括部署到Docker環境、管理cron、驗證專案配置和套用Adobe修補程式。
+一組指令碼和工具，用來管理和部署Commerce應用程式。 此套件簡化了雲端基礎結構流程上的許多Adobe Commerce，包括部署到Docker環境、管理cron、驗證專案配置和套用Adobe修補程式。
 
 瞭解更多： [ece-tools套件](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
@@ -913,7 +913,7 @@ _字詞屬性：_
 
 _名詞_
 
-在Commerce頁面的建構中，版面配置是在階層中組裝的一系列區塊，代表頁面的結構。
+在Commerce頁面的建構中，版面配置是以階層方式組裝的一系列區塊，代表頁面的結構。
 
 頁面配置檔案著重於頁面結構的最高層級（頁首、頁尾、主要內容區域、左側邊欄等）。
 然後配置檔案將內容（區塊）組合到頁面上的這些不同區域中。
@@ -1085,7 +1085,7 @@ _字詞屬性：_
 
 _名詞_
 
-Page Builder是Commerce擴充功能，可拖放預先建立的控制項以定義自訂版面，藉此建立內容豐富的頁面。
+Page Builder是Commerce的擴充功能，可拖放預先建立的控制項以定義自訂版面，藉此建立內容豐富的頁面。
 這些控制項也稱為「內容型別」。
 商家不需要編碼體驗即可設計版面和頁面。
 為開發人員提供擴充功能支援，以擴充頁面產生器。
@@ -1313,7 +1313,7 @@ _字詞屬性：_
 
 _名詞_
 
-「商店」的商務範圍層級是網站階層的第二層，如下所示：網站>商店>商店檢視。
+「商店」的Commerce範圍層級是網站階層的第二層，如下所示：網站>商店>商店檢視。
 商店可以組織成一個或多個。 每個商店都可能有自己的根類別，而且所有類別都會共用目錄和客戶資料。
 
 每個商店可以有多個商店檢視，通常用於以不同的語言環境和語言呈現商店面。
@@ -1327,7 +1327,7 @@ _字詞屬性：_
 
 _名詞_
 
-「商店檢視」的Commerce範圍層級是指網站、商店和商店檢視的階層中的第三個層級。
+「商店檢視」的Commerce範圍層級，是指網站、商店和商店檢視階層中的第三個層級。
 存放區檢視通常以不同的地區設定和語言呈現存放區。
 若要變更存放區檢視，請使用標頭中的存放區選擇器。
 
@@ -1380,7 +1380,7 @@ _名詞_
 自訂商店的外觀。
 Adobe Commerce可以寄送（撰寫器）套件中的主題。
 但主題可以放置在應用程式/設計下，此應用程式/設計並非隨附在套件中。
-套件是Composer的下載單位，透過Commerce Marketplace，Commerce使用者可以下載CE或EE作為一系列套件，其中套件包含模組、主題或語言套件。
+套件是Composer的下載單位，透過Commerce Marketplace，Commerce使用者可以下載CE或EE作為一連串套件，其中套件包含模組、主題或語言套件。
 
 _字詞屬性：_
 
@@ -1437,8 +1437,8 @@ _字詞屬性：_
 
 _名詞_
 
-廠商產生的程式碼，若能延伸或自訂Commerce行為，且作為協力廠商擴充功能運作，即視為廠商套件擴充功能(VBE)。
-VBE經過徹底測試，並包含在每個支援的Magento Open Source和Adobe Commerce版本中。
+廠商產生的程式碼，若能擴充或自訂Commerce行為，且以協力廠商擴充功能運作，即視為廠商套件擴充功能(VBE)。
+VBE經過徹底測試，並包含在每個支援的Adobe Commerce版本中。
 VBE可包含模組、主題和語言套件。
 
 進一步瞭解 [廠商套件擴充功能主題](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
