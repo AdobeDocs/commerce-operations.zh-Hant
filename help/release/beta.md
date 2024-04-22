@@ -2,9 +2,9 @@
 title: Beta版本
 description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 07e616b26784a6e2e8994efc5816a5005619b5bb
+source-git-commit: 1dd4b44c6aa685795e16dccebfaf073dcc0062f2
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供
 
 #### 命名慣例和排程
 
-Adobe將每年發佈兩次測試版修補程式。 第一個Beta版修補程式通常會在新核心應用程式修補程式正式發行三個月後發行。
+Adobe通常會每年發佈兩次測試版修補程式。
 
 測試版套件具有 `-betaX` 尾碼。 例如，Adobe Commerce 2.4.7 Beta版套件會使用以下命名慣例：
 
