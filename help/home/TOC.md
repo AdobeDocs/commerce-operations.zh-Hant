@@ -1,11 +1,11 @@
 ---
 user-guide-title: 作業指南
-user-guide-description: 瞭解維護Adobe Commerce應用程式的作業層面。
+user-guide-description: 了解維護您的 Adobe Commerce 應用程式的作業層面。
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
 source-wordcount: '53'
-ht-degree: 5%
+ht-degree: 26%
 
 ---
 
