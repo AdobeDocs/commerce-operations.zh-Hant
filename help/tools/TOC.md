@@ -2,10 +2,10 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 1%
+source-wordcount: '182'
+ht-degree: 3%
 
 ---
 
@@ -30,6 +30,10 @@ ht-degree: 1%
    - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用狀況](quality-patches-tool/usage.md)
    - [發行說明](quality-patches-tool/release-notes.md)
+- 命令列工具參考 {#cli-reference}
+   - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
+   - [Magento Open Source](reference/magento-open-source.md)
+   - [升級相容性工具](reference/uct.md)
 - Adobe Commerce的觀察結果 {#observation-for-adobe-commerce}
    - [簡介](observation-for-adobe-commerce/intro.md)
    - [如何存取](observation-for-adobe-commerce/access.md)
@@ -73,6 +77,6 @@ ht-degree: 1%
       - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
       - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
    - 資源 {#resources}
-      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+      - [疑難排除](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
