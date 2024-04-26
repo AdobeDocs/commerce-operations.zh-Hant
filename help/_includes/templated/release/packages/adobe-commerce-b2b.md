@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 24c075622b569948292ca09136d4ac9225f33c18
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1994'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Adobe Commerce的B2B使用Composer來管理PHP套件。
 
-此 `composer.json` 檔案會宣告套件清單，而 `composer.lock` 檔案會儲存用來建置Adobe Commerce安裝的套件完整清單（每個套件的完整版本及其相依性）。
+此 `composer.json` 檔案會宣告套件清單，而 `composer.lock` file會儲存套件的完整清單（每個套件的完整版本及其相依性），用於建置Adobe Commerce的B2B安裝。
 
 下列參考檔案產生自 `composer.lock` 封面，並涵蓋Adobe Commerce 1.4.2的B2B中包含的必要套件。
 
