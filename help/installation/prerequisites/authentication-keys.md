@@ -2,9 +2,9 @@
 title: 取得您的驗證金鑰
 description: 請依照下列步驟擷取憑證，以存取repo.magento.com上的Adobe Commerce Composer套件。
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: fc63ca58cd2ff7c5ec597751980a39bfbe68aa5f
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 >如果您遇到 [錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)，您可能沒有存取封裝的授權，或存取許可權已過期，因為您的帳戶有未結清的發票。
 >
 >* 如果您是帳戶上的主要聯絡人，請確定帳戶上未列出未結商業發票。
->* 如果主要連絡人提供的金鑰無法運作，且帳戶中沒有未結商業發票，請連絡 [Adobe Commerce支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 以取得使用主要連絡人MAGEID的協助。
+>* 如果主要連絡人提供的金鑰無法運作，且帳戶中沒有未結商業發票，則主要連絡人應聯絡 [Adobe Commerce支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 以取得協助。
 
 若要建立驗證金鑰：
 
