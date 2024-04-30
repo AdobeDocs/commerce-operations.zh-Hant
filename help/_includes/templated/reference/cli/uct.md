@@ -1,7 +1,7 @@
 ---
-source-git-commit: 68ea73d407dd3e6daf880a66de8ef4b7bbef2360
+source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,12 @@ ht-degree: 0%
 
 ## `_complete`
 
-提供殼層完成建議的內部命令
-
 ```bash
 bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
 ```
+
+提供殼層完成建議的內部命令
+
 
 ### `--shell`， `-s`
 
@@ -56,7 +57,7 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -105,10 +106,40 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 
 ## `completion`
 
-傾印殼層完成指令碼
-
 ```bash
 bin/uct completion [--debug] [--] [<shell>]
+```
+
+傾印殼層完成指令碼
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently only bash completion is supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    uct/bin/uct completion bash | sudo tee /etc/bash_completion.d/uct
+
+Or dump the script to a local file and source it:
+
+    uct/bin/uct completion bash > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion bash)"
 ```
 
 
@@ -126,7 +157,7 @@ bin/uct completion [--debug] [--] [<shell>]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -175,10 +206,23 @@ bin/uct completion [--debug] [--] [<shell>]
 
 ## `help`
 
-顯示命令的說明
-
 ```bash
 bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+顯示命令的說明
+
+
+```
+The help command displays help for a given command:
+
+  uct/bin/uct help list
+
+You can also output the help in other formats by using the --format option:
+
+  uct/bin/uct help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -205,7 +249,7 @@ bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -254,10 +298,29 @@ bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ## `list`
 
-清單命令
-
 ```bash
 bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+清單命令
+
+
+```
+The list command lists all commands:
+
+  uct/bin/uct list
+
+You can also display the commands for a specific namespace:
+
+  uct/bin/uct list test
+
+You can also output the information in other formats by using the --format option:
+
+  uct/bin/uct list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  uct/bin/uct list --raw
 ```
 
 
@@ -289,7 +352,7 @@ bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -338,11 +401,12 @@ bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ## `refactor`
 
-解決可自動修正的問題。 將更新所提供路徑中的程式碼。
-
 ```bash
 bin/uct refactor <path>
 ```
+
+解決可自動修正的問題。 將更新所提供路徑中的程式碼。
+
 
 
 ### `path`
@@ -353,7 +417,7 @@ bin/uct refactor <path>
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -402,11 +466,12 @@ bin/uct refactor <path>
 
 ## `core:code:changes`
 
-升級相容性工具是命令列工具，可分析安裝在Adobe Commerce執行個體中的所有非Adobe Commerce模組，以針對特定版本檢查執行個體。 傳回在升級至新版Adobe Commerce程式碼之前必須解決之錯誤和警告的清單。
-
 ```bash
 bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
 ```
+
+升級相容性工具是命令列工具，可分析安裝在Adobe Commerce執行個體中的所有非Adobe Commerce模組，以針對特定版本檢查執行個體。 傳回在升級至新版Adobe Commerce程式碼之前必須解決之錯誤和警告的清單。
+
 
 
 ### `dir`
@@ -428,7 +493,7 @@ Adobe Commerce一般安裝目錄。
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -477,11 +542,12 @@ Adobe Commerce一般安裝目錄。
 
 ## `dbschema:diff`
 
-允許列出兩個所選版本之間的Adobe Commerce DB結構描述差異。 可用版本： 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2 - p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4 - p1 | 2.3.4 - p2 | 2.3.5 | 2.3.5 - p1 | 2.3.5 - p2 | 2.3.6 | 2.3.6 - p1 | 2.3.7 | 2.3.7 - p1 | 2.3.7 - p2 | 2.3.7 - p3 | 2.3.7 - p4 | 2.4.0 | 2.4.0 - p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2 - p1 | 2.4.2 - p2 | 2.4.3 | 2.4.3-p1 | 2.4.3 - p2 | 2.4.3 - p3 | 2.4.4 | 2.4.4 - p1 | 2.4.5 | 2.4.4 - p2 | 2.4.5 - p1 | 2.4.4 - p3 | 2.4.4 - p4 | 2.4.4 - p5 | 2.4.5 - p2 | 2.4.5 - p3 | 2.4.5 - p4 | 2.4.6 | 2.4.6 - p1 | 2.4.6 - p2 | 2.4.7-beta1 | 2.4.4 - p6 | 2.4.5 - p5 | 2.4.6 - p3 | 2.4.7-beta2 | 2.4.4 - p7 | 2.4.5 - p6 | 2.4.6 - p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6 - p5 | 2.4.5 - p7 | 2.4.4 - p8
-
 ```bash
 bin/uct dbschema:diff <current-version> <target-version>
 ```
+
+允許列出兩個所選版本之間的Adobe Commerce DB結構描述差異。 可用版本： 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2 - p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4 - p1 | 2.3.4 - p2 | 2.3.5 | 2.3.5 - p1 | 2.3.5 - p2 | 2.3.6 | 2.3.6 - p1 | 2.3.7 | 2.3.7 - p1 | 2.3.7 - p2 | 2.3.7 - p3 | 2.3.7 - p4 | 2.4.0 | 2.4.0 - p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2 - p1 | 2.4.2 - p2 | 2.4.3 | 2.4.3-p1 | 2.4.3 - p2 | 2.4.3 - p3 | 2.4.4 | 2.4.4 - p1 | 2.4.5 | 2.4.4 - p2 | 2.4.5 - p1 | 2.4.4 - p3 | 2.4.4 - p4 | 2.4.4 - p5 | 2.4.5 - p2 | 2.4.5 - p3 | 2.4.5 - p4 | 2.4.6 | 2.4.6 - p1 | 2.4.6 - p2 | 2.4.7-beta1 | 2.4.4 - p6 | 2.4.5 - p5 | 2.4.6 - p3 | 2.4.7-beta2 | 2.4.4 - p7 | 2.4.5 - p6 | 2.4.6 - p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6 - p5 | 2.4.5 - p7 | 2.4.4 - p8
+
 
 
 ### `current-version`
@@ -498,7 +564,7 @@ bin/uct dbschema:diff <current-version> <target-version>
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -547,11 +613,12 @@ bin/uct dbschema:diff <current-version> <target-version>
 
 ## `graphql:compare`
 
-GraphQL結構描述相容性驗證
-
 ```bash
 bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 ```
+
+GraphQL結構描述相容性驗證
+
 
 
 ### `schema1`
@@ -574,7 +641,7 @@ bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -623,11 +690,12 @@ bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 
 ## `upgrade:check`
 
-升級相容性工具是命令列工具，可分析安裝在其中的所有模組，以針對特定版本檢查Adobe Commerce自訂執行個體。 傳回升級至最新版Adobe Commerce之前必須解決之錯誤和警告的清單。
-
 ```bash
 bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-version [COMING-VERSION]] [--json-output-path [JSON-OUTPUT-PATH]] [--html-output-path [HTML-OUTPUT-PATH]] [--min-issue-level [MIN-ISSUE-LEVEL]] [-i|--ignore-current-version-compatibility-issues] [--context CONTEXT] [--] <dir>
 ```
+
+升級相容性工具是命令列工具，可分析安裝在其中的所有模組，以針對特定版本檢查Adobe Commerce自訂執行個體。 傳回升級至最新版Adobe Commerce之前必須解決之錯誤和警告的清單。
+
 
 
 ### `dir`
@@ -682,7 +750,7 @@ Adobe Commerce安裝目錄。
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值

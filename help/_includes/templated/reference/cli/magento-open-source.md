@@ -1,7 +1,7 @@
 ---
-source-git-commit: 755ea50a75924cc16f690ff888367abd305565e9
+source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
 workflow-type: tm+mt
-source-wordcount: '18031'
+source-wordcount: '17795'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,12 @@ ht-degree: 0%
 
 ## `_complete`
 
-提供殼層完成建議的內部命令
-
 ```bash
 bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
+
+提供殼層完成建議的內部命令
+
 
 ### `--shell`， `-s`
 
@@ -65,7 +66,7 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -114,10 +115,40 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 ## `completion`
 
-傾印殼層完成指令碼
-
 ```bash
 bin/magento completion [--debug] [--] [<shell>]
+```
+
+傾印殼層完成指令碼
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently, bash, fish, zsh completion are supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    bin/magento completion  | sudo tee /etc/bash_completion.d/magento
+
+Or dump the script to a local file and source it:
+
+    bin/magento completion  > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/www/html/magento2/bin/magento completion )"
 ```
 
 
@@ -135,7 +166,7 @@ bin/magento completion [--debug] [--] [<shell>]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -184,10 +215,23 @@ bin/magento completion [--debug] [--] [<shell>]
 
 ## `help`
 
-顯示命令的說明
-
 ```bash
 bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+顯示命令的說明
+
+
+```
+The help command displays help for a given command:
+
+  bin/magento help list
+
+You can also output the help in other formats by using the --format option:
+
+  bin/magento help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -214,7 +258,7 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -263,10 +307,29 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 ## `list`
 
-清單命令
-
 ```bash
 bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+清單命令
+
+
+```
+The list command lists all commands:
+
+  bin/magento list
+
+You can also display the commands for a specific namespace:
+
+  bin/magento list test
+
+You can also output the information in other formats by using the --format option:
+
+  bin/magento list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  bin/magento list --raw
 ```
 
 
@@ -298,7 +361,7 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -347,15 +410,16 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 
 ## `admin:adobe-ims:disable`
 
-停用Adobe IMS模組
-
 ```bash
 bin/magento admin:adobe-ims:disable
 ```
 
+停用Adobe IMS模組
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -404,11 +468,12 @@ bin/magento admin:adobe-ims:disable
 
 ## `admin:adobe-ims:enable`
 
-啟用Adobe IMS模組。
-
 ```bash
 bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|--client-id [CLIENT-ID]] [-s|--client-secret [CLIENT-SECRET]] [-t|--2fa [2FA]]
 ```
+
+啟用Adobe IMS模組。
+
 
 ### `--organization-id`， `-o`
 
@@ -436,7 +501,7 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -485,15 +550,16 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 ## `admin:adobe-ims:info`
 
-Adobe IMS模組設定資訊
-
 ```bash
 bin/magento admin:adobe-ims:info
 ```
 
+Adobe IMS模組設定資訊
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -542,15 +608,16 @@ bin/magento admin:adobe-ims:info
 
 ## `admin:adobe-ims:status`
 
-Adobe IMS模組的狀態
-
 ```bash
 bin/magento admin:adobe-ims:status
 ```
 
+Adobe IMS模組的狀態
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -599,11 +666,12 @@ bin/magento admin:adobe-ims:status
 
 ## `admin:user:create`
 
-建立管理員
-
 ```bash
 bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-PASSWORD] [--admin-email ADMIN-EMAIL] [--admin-firstname ADMIN-FIRSTNAME] [--admin-lastname ADMIN-LASTNAME] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+建立管理員
+
 
 ### `--admin-user`
 
@@ -643,7 +711,7 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -692,10 +760,17 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ## `admin:user:unlock`
 
-解除鎖定管理員帳戶
-
 ```bash
 bin/magento admin:user:unlock <username>
+```
+
+解除鎖定管理員帳戶
+
+
+```
+This command unlocks an admin account by its username.
+To unlock:
+      bin/magento admin:user:unlock username
 ```
 
 
@@ -707,7 +782,7 @@ bin/magento admin:user:unlock <username>
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -756,11 +831,12 @@ bin/magento admin:user:unlock <username>
 
 ## `app:config:dump`
 
-建立應用程式的傾印
-
 ```bash
 bin/magento app:config:dump [<config-types>...]
 ```
+
+建立應用程式的傾印
+
 
 
 ### `config-types`
@@ -773,7 +849,7 @@ bin/magento app:config:dump [<config-types>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -822,15 +898,16 @@ bin/magento app:config:dump [<config-types>...]
 
 ## `app:config:import`
 
-從共用組態檔匯入資料至適當的資料儲存體
-
 ```bash
 bin/magento app:config:import
 ```
 
+從共用組態檔匯入資料至適當的資料儲存體
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -879,15 +956,16 @@ bin/magento app:config:import
 
 ## `app:config:status`
 
-檢查設定傳播是否需要更新
-
 ```bash
 bin/magento app:config:status
 ```
 
+檢查設定傳播是否需要更新
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -936,11 +1014,12 @@ bin/magento app:config:status
 
 ## `braintree:migrate`
 
-從Magento1資料庫移轉儲存的卡片
-
 ```bash
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
+
+從Magento1資料庫移轉儲存的卡片
+
 
 ### `--host`
 
@@ -968,7 +1047,7 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1017,11 +1096,12 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 ## `cache:clean`
 
-清除快取型別
-
 ```bash
 bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+清除快取型別
+
 
 
 ### `types`
@@ -1040,7 +1120,7 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1089,11 +1169,12 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ## `cache:disable`
 
-停用快取型別
-
 ```bash
 bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+停用快取型別
+
 
 
 ### `types`
@@ -1112,7 +1193,7 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1161,11 +1242,12 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ## `cache:enable`
 
-啟用快取型別
-
 ```bash
 bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+啟用快取型別
+
 
 
 ### `types`
@@ -1184,7 +1266,7 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1233,11 +1315,12 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ## `cache:flush`
 
-清除快取型別使用的快取儲存體
-
 ```bash
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+清除快取型別使用的快取儲存體
+
 
 
 ### `types`
@@ -1256,7 +1339,7 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1305,11 +1388,12 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 ## `cache:status`
 
-檢查快取狀態
-
 ```bash
 bin/magento cache:status [--bootstrap BOOTSTRAP]
 ```
+
+檢查快取狀態
+
 
 ### `--bootstrap`
 
@@ -1319,7 +1403,7 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1368,11 +1452,12 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 ## `catalog:images:resize`
 
-建立調整大小的產品影像
-
 ```bash
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
+
+建立調整大小的產品影像
+
 
 ### `--async`， `-a`
 
@@ -1390,7 +1475,7 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1439,15 +1524,16 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 ## `catalog:product:attributes:cleanup`
 
-移除未使用的產品屬性。
-
 ```bash
 bin/magento catalog:product:attributes:cleanup
 ```
 
+移除未使用的產品屬性。
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1496,11 +1582,12 @@ bin/magento catalog:product:attributes:cleanup
 
 ## `cms:wysiwyg:restrict`
 
-設定是否要強制使用者HTML內容驗證，或改為顯示警告
-
 ```bash
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
+
+設定是否要強制使用者HTML內容驗證，或改為顯示警告
+
 
 
 ### `restrict`
@@ -1511,7 +1598,7 @@ y\n
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1560,11 +1647,12 @@ y\n
 
 ## `config:sensitive:set`
 
-設定敏感的設定值
-
 ```bash
 bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path> [<value>]]
 ```
+
+設定敏感的設定值
+
 
 
 ### `path`
@@ -1600,7 +1688,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1649,11 +1737,12 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ## `config:set`
 
-變更系統組態
-
 ```bash
 bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env] [-c|--lock-config] [-l|--lock] [--] <path> <value>
 ```
+
+變更系統組態
+
 
 
 ### `path`
@@ -1704,7 +1793,7 @@ bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1753,11 +1842,12 @@ bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env]
 
 ## `config:show`
 
-顯示指定路徑的設定值。 如果未指定路徑，則會顯示所有儲存的值
-
 ```bash
 bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path>]
 ```
+
+顯示指定路徑的設定值。 如果未指定路徑，則會顯示所有儲存的值
+
 
 
 ### `path`
@@ -1781,7 +1871,7 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1830,11 +1920,12 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 ## `cron:install`
 
-產生並安裝目前使用者的crontab
-
 ```bash
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
+
+產生並安裝目前使用者的crontab
+
 
 ### `--force`， `-f`
 
@@ -1852,7 +1943,7 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1901,15 +1992,16 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 ## `cron:remove`
 
-從crontab移除任務
-
 ```bash
 bin/magento cron:remove
 ```
 
+從crontab移除任務
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -1958,11 +2050,12 @@ bin/magento cron:remove
 
 ## `cron:run`
 
-依排程執行工作
-
 ```bash
 bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]
 ```
+
+依排程執行工作
+
 
 ### `--group`
 
@@ -1985,7 +2078,7 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2034,15 +2127,16 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 ## `customer:hash:upgrade`
 
-根據最新演演算法升級客戶的雜湊
-
 ```bash
 bin/magento customer:hash:upgrade
 ```
 
+根據最新演演算法升級客戶的雜湊
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2091,11 +2185,12 @@ bin/magento customer:hash:upgrade
 
 ## `deploy:mode:set`
 
-設定應用程式模式。
-
 ```bash
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
+
+設定應用程式模式。
+
 
 
 ### `mode`
@@ -2113,7 +2208,7 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2162,15 +2257,16 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 ## `deploy:mode:show`
 
-顯示目前的應用程式模式。
-
 ```bash
 bin/magento deploy:mode:show
 ```
 
+顯示目前的應用程式模式。
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2219,11 +2315,12 @@ bin/magento deploy:mode:show
 
 ## `dev:di:info`
 
-提供指令的相依性插入組態的資訊。
-
 ```bash
 bin/magento dev:di:info <class>
 ```
+
+提供指令的相依性插入組態的資訊。
+
 
 
 ### `class`
@@ -2234,7 +2331,7 @@ bin/magento dev:di:info <class>
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2283,15 +2380,16 @@ bin/magento dev:di:info <class>
 
 ## `dev:email:newsletter-compatibility-check`
 
-掃描Newsletter範本以找出潛在的變數使用相容性問題
-
 ```bash
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
+掃描Newsletter範本以找出潛在的變數使用相容性問題
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2340,15 +2438,16 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ## `dev:email:override-compatibility-check`
 
-掃描電子郵件範本覆寫，以找出潛在的變數使用相容性問題
-
 ```bash
 bin/magento dev:email:override-compatibility-check
 ```
 
+掃描電子郵件範本覆寫，以找出潛在的變數使用相容性問題
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2397,15 +2496,16 @@ bin/magento dev:email:override-compatibility-check
 
 ## `dev:profiler:disable`
 
-停用效能分析工具。
-
 ```bash
 bin/magento dev:profiler:disable
 ```
 
+停用效能分析工具。
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2454,11 +2554,12 @@ bin/magento dev:profiler:disable
 
 ## `dev:profiler:enable`
 
-啟用效能分析工具。
-
 ```bash
 bin/magento dev:profiler:enable [<type>]
 ```
+
+啟用效能分析工具。
+
 
 
 ### `type`
@@ -2468,7 +2569,7 @@ bin/magento dev:profiler:enable [<type>]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2517,15 +2618,16 @@ bin/magento dev:profiler:enable [<type>]
 
 ## `dev:query-log:disable`
 
-停用資料庫查詢記錄
-
 ```bash
 bin/magento dev:query-log:disable
 ```
 
+停用資料庫查詢記錄
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2574,11 +2676,12 @@ bin/magento dev:query-log:disable
 
 ## `dev:query-log:enable`
 
-啟用資料庫查詢記錄
-
 ```bash
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
 ```
+
+啟用資料庫查詢記錄
+
 
 ### `--include-all-queries`
 
@@ -2603,7 +2706,7 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2652,11 +2755,12 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 
 ## `dev:source-theme:deploy`
 
-收集和發佈佈景主題的來源檔案。
-
 ```bash
 bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA] [--theme THEME] [--] [<file>...]
 ```
+
+收集和發佈佈景主題的來源檔案。
+
 
 
 ### `file`
@@ -2697,7 +2801,7 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2746,15 +2850,16 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 ## `dev:template-hints:disable`
 
-停用前端範本提示。 可能需要快取排清。
-
 ```bash
 bin/magento dev:template-hints:disable
 ```
 
+停用前端範本提示。 可能需要快取排清。
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2803,15 +2908,16 @@ bin/magento dev:template-hints:disable
 
 ## `dev:template-hints:enable`
 
-啟用前端範本提示。 可能需要快取排清。
-
 ```bash
 bin/magento dev:template-hints:enable
 ```
 
+啟用前端範本提示。 可能需要快取排清。
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2860,15 +2966,16 @@ bin/magento dev:template-hints:enable
 
 ## `dev:template-hints:status`
 
-顯示前端範本提示狀態。
-
 ```bash
 bin/magento dev:template-hints:status
 ```
 
+顯示前端範本提示狀態。
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2917,11 +3024,12 @@ bin/magento dev:template-hints:status
 
 ## `dev:tests:run`
 
-執行測試
-
 ```bash
 bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 ```
+
+執行測試
+
 
 
 ### `type`
@@ -2940,7 +3048,7 @@ PHPUnit的其他引數。 範例：「 — c」 — filter=MyTest&#39;」（無�
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -2989,11 +3097,12 @@ PHPUnit的其他引數。 範例：「 — c」 — filter=MyTest&#39;」（無�
 
 ## `dev:urn-catalog:generate`
 
-產生URN的目錄至*.xsd對應，以便IDE反白顯示xml。
-
 ```bash
 bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 ```
+
+產生URN的目錄至*.xsd對應，以便IDE反白顯示xml。
+
 
 
 ### `path`
@@ -3011,7 +3120,7 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3060,11 +3169,12 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 ## `dev:xml:convert`
 
-使用XSL樣式表轉換XML檔案
-
 ```bash
 bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 ```
+
+使用XSL樣式表轉換XML檔案
+
 
 
 ### `xml-file`
@@ -3088,7 +3198,7 @@ bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3137,11 +3247,12 @@ bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 
 ## `downloadable:domains:add`
 
-將網域新增至可下載的網域白名單
-
 ```bash
 bin/magento downloadable:domains:add [<domains>...]
 ```
+
+將網域新增至可下載的網域白名單
+
 
 
 ### `domains`
@@ -3154,7 +3265,7 @@ bin/magento downloadable:domains:add [<domains>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3203,11 +3314,12 @@ bin/magento downloadable:domains:add [<domains>...]
 
 ## `downloadable:domains:remove`
 
-從可下載的網域白名單移除網域
-
 ```bash
 bin/magento downloadable:domains:remove [<domains>...]
 ```
+
+從可下載的網域白名單移除網域
+
 
 
 ### `domains`
@@ -3220,7 +3332,7 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3269,15 +3381,16 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 ## `downloadable:domains:show`
 
-顯示可下載的網域白名單
-
 ```bash
 bin/magento downloadable:domains:show
 ```
 
+顯示可下載的網域白名單
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3326,15 +3439,16 @@ bin/magento downloadable:domains:show
 
 ## `encryption:payment-data:update`
 
-使用最新的加密密碼重新加密已加密的信用卡資料。
-
 ```bash
 bin/magento encryption:payment-data:update
 ```
 
+使用最新的加密密碼重新加密已加密的信用卡資料。
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3383,11 +3497,12 @@ bin/magento encryption:payment-data:update
 
 ## `i18n:collect-phrases`
 
-探索程式碼基底中的片語
-
 ```bash
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
+
+探索程式碼基底中的片語
+
 
 
 ### `directory`
@@ -3410,7 +3525,7 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3459,11 +3574,12 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 ## `i18n:pack`
 
-儲存語言套件
-
 ```bash
 bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <locale>
 ```
+
+儲存語言套件
+
 
 
 ### `source`
@@ -3494,7 +3610,7 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3543,11 +3659,12 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 ## `i18n:uninstall`
 
-解除安裝語言套件
-
 ```bash
 bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 ```
+
+解除安裝語言套件
+
 
 
 ### `package`
@@ -3568,7 +3685,7 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3617,15 +3734,16 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 ## `indexer:info`
 
-顯示允許的索引子
-
 ```bash
 bin/magento indexer:info
 ```
 
+顯示允許的索引子
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3674,11 +3792,12 @@ bin/magento indexer:info
 
 ## `indexer:reindex`
 
-重新索引資料
-
 ```bash
 bin/magento indexer:reindex [<index>...]
 ```
+
+重新索引資料
+
 
 
 ### `index`
@@ -3691,7 +3810,7 @@ bin/magento indexer:reindex [<index>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3740,11 +3859,12 @@ bin/magento indexer:reindex [<index>...]
 
 ## `indexer:reset`
 
-將索引子狀態重設為無效
-
 ```bash
 bin/magento indexer:reset [<index>...]
 ```
+
+將索引子狀態重設為無效
+
 
 
 ### `index`
@@ -3757,7 +3877,7 @@ bin/magento indexer:reset [<index>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3806,11 +3926,12 @@ bin/magento indexer:reset [<index>...]
 
 ## `indexer:set-dimensions-mode`
 
-設定索引子Dimension模式
-
 ```bash
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
+
+設定索引子Dimension模式
+
 
 
 ### `indexer`
@@ -3825,7 +3946,7 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3874,11 +3995,12 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 ## `indexer:set-mode`
 
-設定索引模式型別
-
 ```bash
 bin/magento indexer:set-mode [<mode> [<index>...]]
 ```
+
+設定索引模式型別
+
 
 
 ### `mode`
@@ -3896,7 +4018,7 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -3945,11 +4067,12 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 ## `indexer:set-status`
 
-設定指定的索引器狀態
-
 ```bash
 bin/magento indexer:set-status <status> [<index>...]
 ```
+
+設定指定的索引器狀態
+
 
 
 ### `status`
@@ -3968,7 +4091,7 @@ bin/magento indexer:set-status <status> [<index>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4017,11 +4140,12 @@ bin/magento indexer:set-status <status> [<index>...]
 
 ## `indexer:show-dimensions-mode`
 
-顯示索引子Dimension模式
-
 ```bash
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
+
+顯示索引子Dimension模式
+
 
 
 ### `indexer`
@@ -4034,7 +4158,7 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4083,11 +4207,12 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 ## `indexer:show-mode`
 
-顯示索引模式
-
 ```bash
 bin/magento indexer:show-mode [<index>...]
 ```
+
+顯示索引模式
+
 
 
 ### `index`
@@ -4100,7 +4225,7 @@ bin/magento indexer:show-mode [<index>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4149,11 +4274,12 @@ bin/magento indexer:show-mode [<index>...]
 
 ## `indexer:status`
 
-顯示索引器的狀態
-
 ```bash
 bin/magento indexer:status [<index>...]
 ```
+
+顯示索引器的狀態
+
 
 
 ### `index`
@@ -4166,7 +4292,7 @@ bin/magento indexer:status [<index>...]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4215,15 +4341,16 @@ bin/magento indexer:status [<index>...]
 
 ## `info:adminuri`
 
-顯示Magento管理員URI
-
 ```bash
 bin/magento info:adminuri
 ```
 
+顯示Magento管理員URI
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4272,15 +4399,16 @@ bin/magento info:adminuri
 
 ## `info:backups:list`
 
-列印可用備份檔案的清單
-
 ```bash
 bin/magento info:backups:list
 ```
 
+列印可用備份檔案的清單
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4329,15 +4457,16 @@ bin/magento info:backups:list
 
 ## `info:currency:list`
 
-顯示可用貨幣的清單
-
 ```bash
 bin/magento info:currency:list
 ```
 
+顯示可用貨幣的清單
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4386,11 +4515,12 @@ bin/magento info:currency:list
 
 ## `info:dependencies:show-framework`
 
-顯示Magento架構的相依性數目
-
 ```bash
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
+
+顯示Magento架構的相依性數目
+
 
 ### `--output`， `-o`
 
@@ -4401,7 +4531,7 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4450,11 +4580,12 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 
 ## `info:dependencies:show-modules`
 
-顯示模組之間的相依性數目
-
 ```bash
 bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 ```
+
+顯示模組之間的相依性數目
+
 
 ### `--output`， `-o`
 
@@ -4465,7 +4596,7 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4514,11 +4645,12 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 ## `info:dependencies:show-modules-circular`
 
-顯示模組之間的循環相依性數目
-
 ```bash
 bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 ```
+
+顯示模組之間的循環相依性數目
+
 
 ### `--output`， `-o`
 
@@ -4529,7 +4661,7 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4578,15 +4710,16 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 ## `info:language:list`
 
-顯示可用語言地區設定的清單
-
 ```bash
 bin/magento info:language:list
 ```
 
+顯示可用語言地區設定的清單
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4635,15 +4768,16 @@ bin/magento info:language:list
 
 ## `info:timezone:list`
 
-顯示可用時區清單
-
 ```bash
 bin/magento info:timezone:list
 ```
 
+顯示可用時區清單
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4692,16 +4826,17 @@ bin/magento info:timezone:list
 
 ## `inventory:reservation:create-compensations`
 
-依據提供的薪酬引數建立預留
-
 ```bash
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
 ```
 
+依據提供的薪酬引數建立預留
+
+
 
 ### `compensations`
 
-補償引數清單，格式為「\」&lt;order_increment_id>：\&lt;sku>：\&lt;quantity>：\&lt;stock-id>&quot;
+補償引數清單，格式為「：：：」
 
 - 預設： `[]`
 
@@ -4716,7 +4851,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4765,11 +4900,12 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ## `inventory:reservation:list-inconsistencies`
 
-顯示所有具有可銷售數量不一致的訂單與產品
-
 ```bash
 bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-i|--incomplete-orders] [-b|--bunch-size [BUNCH-SIZE]] [-r|--raw]
 ```
+
+顯示所有具有可銷售數量不一致的訂單與產品
+
 
 ### `--complete-orders`， `-c`
 
@@ -4801,7 +4937,7 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4850,11 +4986,12 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 ## `inventory-geonames:import`
 
-下載並匯入來源選擇演演算法的地理名稱
-
 ```bash
 bin/magento inventory-geonames:import <countries>...
 ```
+
+下載並匯入來源選擇演演算法的地理名稱
+
 
 
 ### `countries`
@@ -4868,7 +5005,7 @@ bin/magento inventory-geonames:import <countries>...
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -4917,11 +5054,12 @@ bin/magento inventory-geonames:import <countries>...
 
 ## `maintenance:allow-ips`
 
-設定維護模式劐免IP
-
 ```bash
 bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<ip>...]
 ```
+
+設定維護模式劐免IP
+
 
 
 ### `ip`
@@ -4954,7 +5092,7 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5003,11 +5141,12 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 ## `maintenance:disable`
 
-停用維護模式
-
 ```bash
 bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+停用維護模式
+
 
 ### `--ip`
 
@@ -5024,7 +5163,7 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5073,11 +5212,12 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 ## `maintenance:enable`
 
-啟用維護模式
-
 ```bash
 bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+啟用維護模式
+
 
 ### `--ip`
 
@@ -5094,7 +5234,7 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5143,11 +5283,12 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 ## `maintenance:status`
 
-顯示維護模式狀態
-
 ```bash
 bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+顯示維護模式狀態
+
 
 ### `--magento-init-params`
 
@@ -5157,7 +5298,7 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5206,15 +5347,16 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ## `media-content:sync`
 
-將內容與資產同步
-
 ```bash
 bin/magento media-content:sync
 ```
 
+將內容與資產同步
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5263,15 +5405,16 @@ bin/magento media-content:sync
 
 ## `media-gallery:sync`
 
-同步資料庫中的媒體儲存和媒體資產
-
 ```bash
 bin/magento media-gallery:sync
 ```
 
+同步資料庫中的媒體儲存和媒體資產
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5320,15 +5463,16 @@ bin/magento media-gallery:sync
 
 ## `module:config:status`
 
-檢查「app/etc/config.php」檔案中的模組設定，並報告模組設定是否為最新狀態
-
 ```bash
 bin/magento module:config:status
 ```
 
+檢查「app/etc/config.php」檔案中的模組設定，並報告模組設定是否為最新狀態
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5377,11 +5521,12 @@ bin/magento module:config:status
 
 ## `module:disable`
 
-停用指定的模組
-
 ```bash
 bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
+
+停用指定的模組
+
 
 
 ### `module`
@@ -5421,7 +5566,7 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5470,11 +5615,12 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 ## `module:enable`
 
-啟用指定的模組
-
 ```bash
 bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
+
+啟用指定的模組
+
 
 
 ### `module`
@@ -5514,7 +5660,7 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5563,11 +5709,12 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 ## `module:status`
 
-顯示模組的狀態
-
 ```bash
 bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module-names>...]
 ```
+
+顯示模組的狀態
+
 
 
 ### `module-names`
@@ -5600,7 +5747,7 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5649,11 +5796,12 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 ## `module:uninstall`
 
-解除安裝撰寫器安裝的模組
-
 ```bash
 bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media] [--backup-db] [--non-composer] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] <module>...
 ```
+
+解除安裝撰寫器安裝的模組
+
 
 
 ### `module`
@@ -5715,7 +5863,7 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5764,11 +5912,12 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 ## `newrelic:create:deploy-marker`
 
-檢查部署佇列中是否有專案，並建立適當的部署標籤。
-
 ```bash
 bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revision>]]
 ```
+
+檢查部署佇列中是否有專案，並建立適當的部署標籤。
+
 
 
 ### `message`
@@ -5795,7 +5944,7 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5844,15 +5993,20 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 ## `queue:consumers:list`
 
-MessageQueue取用者清單
-
 ```bash
 bin/magento queue:consumers:list
 ```
 
+MessageQueue取用者清單
+
+
+```
+This command shows list of MessageQueue consumers.
+```
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5901,15 +6055,20 @@ bin/magento queue:consumers:list
 
 ## `queue:consumers:restart`
 
-重新啟動MessageQueue使用者
-
 ```bash
 bin/magento queue:consumers:restart
 ```
 
+重新啟動MessageQueue使用者
+
+
+```
+Command put poison pill for MessageQueue consumers and force to restart them after next status check.
+```
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -5958,10 +6117,43 @@ bin/magento queue:consumers:restart
 
 ## `queue:consumers:start`
 
-啟動MessageQueue取用者
-
 ```bash
 bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BATCH-SIZE] [--area-code AREA-CODE] [--single-thread] [--multi-process [MULTI-PROCESS]] [--pid-file-path PID-FILE-PATH] [--] <consumer>
+```
+
+啟動MessageQueue取用者
+
+
+```
+This command starts MessageQueue consumer by its name.
+
+To start consumer which will process all queued messages and terminate execution:
+
+    bin/magento queue:consumers:start someConsumer
+
+To specify the number of messages which should be processed by consumer before its termination:
+
+    bin/magento queue:consumers:start someConsumer --max-messages=50
+
+To specify the number of messages per batch for the batch consumer:
+
+    bin/magento queue:consumers:start someConsumer --batch-size=500
+
+To specify the preferred area:
+
+    bin/magento queue:consumers:start someConsumer --area-code='adminhtml'
+
+To do not run multiple copies of one consumer simultaneously:
+
+    bin/magento queue:consumers:start someConsumer --single-thread
+
+To save PID enter path (This option is deprecated, use --single-thread instead):
+
+    bin/magento queue:consumers:start someConsumer --pid-file-path='/var/someConsumer.pid'
+
+To define the number of processes per consumer:
+
+    bin/magento queue:consumers:start someConsumer --multi-process=4
 ```
 
 
@@ -6010,7 +6202,7 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -6059,15 +6251,16 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 
 ## `remote-storage:sync`
 
-將媒體檔案與遠端儲存裝置同步。
-
 ```bash
 bin/magento remote-storage:sync
 ```
 
+將媒體檔案與遠端儲存裝置同步。
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -6116,11 +6309,12 @@ bin/magento remote-storage:sync
 
 ## `saas:resync`
 
-將摘要資料重新同步至SaaS服務。
-
 ```bash
 bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
 ```
+
+將摘要資料重新同步至SaaS服務。
+
 
 ### `--feed`
 
@@ -6170,7 +6364,7 @@ bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -6219,11 +6413,12 @@ bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run
 
 ## `sampledata:deploy`
 
-部署範例資料模組，以進行Composer型Magento安裝
-
 ```bash
 bin/magento sampledata:deploy [--no-update]
 ```
+
+部署範例資料模組，以進行Composer型Magento安裝
+
 
 ### `--no-update`
 
@@ -6234,7 +6429,7 @@ bin/magento sampledata:deploy [--no-update]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -6283,11 +6478,12 @@ bin/magento sampledata:deploy [--no-update]
 
 ## `sampledata:remove`
 
-從composer.json移除所有範例資料套件
-
 ```bash
 bin/magento sampledata:remove [--no-update]
 ```
+
+從composer.json移除所有範例資料套件
+
 
 ### `--no-update`
 
@@ -6298,7 +6494,7 @@ bin/magento sampledata:remove [--no-update]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -6347,15 +6543,16 @@ bin/magento sampledata:remove [--no-update]
 
 ## `sampledata:reset`
 
-重設所有範例資料模組以重新安裝
-
 ```bash
 bin/magento sampledata:reset
 ```
 
+重設所有範例資料模組以重新安裝
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -6404,15 +6601,16 @@ bin/magento sampledata:reset
 
 ## `security:recaptcha:disable-for-user-forgot-password`
 
-停用管理員使用者忘記密碼表單的reCAPTCHA
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-forgot-password
 ```
 
+停用管理員使用者忘記密碼表單的reCAPTCHA
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -6461,15 +6659,16 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ## `security:recaptcha:disable-for-user-login`
 
-停用管理員使用者登入表單的reCAPTCHA
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-login
 ```
 
+停用管理員使用者登入表單的reCAPTCHA
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -6518,11 +6717,12 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ## `security:tfa:google:set-secret`
 
-設定用於產生Google OTP的密碼。
-
 ```bash
 bin/magento security:tfa:google:set-secret <user> <secret>
 ```
+
+設定用於產生Google OTP的密碼。
+
 
 
 ### `user`
@@ -6539,7 +6739,7 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -6588,15 +6788,16 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 ## `security:tfa:providers`
 
-列出所有可用的提供者
-
 ```bash
 bin/magento security:tfa:providers
 ```
 
+列出所有可用的提供者
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -6645,11 +6846,12 @@ bin/magento security:tfa:providers
 
 ## `security:tfa:reset`
 
-重設一位使用者的設定
-
 ```bash
 bin/magento security:tfa:reset <user> <provider>
 ```
+
+重設一位使用者的設定
+
 
 
 ### `user`
@@ -6666,7 +6868,7 @@ bin/magento security:tfa:reset <user> <provider>
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -6715,11 +6917,12 @@ bin/magento security:tfa:reset <user> <provider>
 
 ## `setup:backup`
 
-備份Magento應用程式程式碼基底、媒體和資料庫
-
 ```bash
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+備份Magento應用程式程式碼基底、媒體和資料庫
+
 
 ### `--code`
 
@@ -6750,7 +6953,7 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -6799,11 +7002,12 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 ## `setup:config:set`
 
-建立或修改部署設定
-
 ```bash
 bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+建立或修改部署設定
+
 
 ### `--backend-frontname`
 
@@ -7388,7 +7592,7 @@ Redis伺服器使用者
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -7437,11 +7641,12 @@ Redis伺服器使用者
 
 ## `setup:db-data:upgrade`
 
-在資料庫中安裝和升級資料
-
 ```bash
 bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+在資料庫中安裝和升級資料
+
 
 ### `--magento-init-params`
 
@@ -7451,7 +7656,7 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -7500,11 +7705,12 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ## `setup:db-declaration:generate-patch`
 
-產生修補程式並將其放在特定資料夾中。
-
 ```bash
 bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--type [TYPE]] [--] <module> <patch>
 ```
+
+產生修補程式並將其放在特定資料夾中。
+
 
 
 ### `module`
@@ -7535,7 +7741,7 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -7584,11 +7790,12 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 ## `setup:db-declaration:generate-whitelist`
 
-產生允許宣告安裝程式編輯的表格和欄的白名單
-
 ```bash
 bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]]
 ```
+
+產生允許宣告安裝程式編輯的表格和欄的白名單
+
 
 ### `--module-name`
 
@@ -7599,7 +7806,7 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -7648,11 +7855,12 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 ## `setup:db-schema:upgrade`
 
-安裝及升級資料庫結構描述
-
 ```bash
 bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+安裝及升級資料庫結構描述
+
 
 ### `--convert-old-scripts`
 
@@ -7669,7 +7877,7 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -7718,11 +7926,12 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 ## `setup:db:status`
 
-檢查資料庫結構描述或資料是否需要升級
-
 ```bash
 bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+檢查資料庫結構描述或資料是否需要升級
+
 
 ### `--magento-init-params`
 
@@ -7732,7 +7941,7 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -7781,15 +7990,16 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ## `setup:di:compile`
 
-產生DI組態以及所有可自動產生的遺漏類別
-
 ```bash
 bin/magento setup:di:compile
 ```
 
+產生DI組態以及所有可自動產生的遺漏類別
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -7838,11 +8048,12 @@ bin/magento setup:di:compile
 
 ## `setup:install`
 
-安裝Magento應用程式
-
 ```bash
 bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+安裝Magento應用程式
+
 
 ### `--backend-frontname`
 
@@ -8666,7 +8877,7 @@ Magento安裝將以試執行模式執行
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -8715,11 +8926,12 @@ Magento安裝將以試執行模式執行
 
 ## `setup:performance:generate-fixtures`
 
-產生夾具
-
 ```bash
 bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profile>
 ```
+
+產生夾具
+
 
 
 ### `profile`
@@ -8737,7 +8949,7 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -8786,11 +8998,12 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 ## `setup:rollback`
 
-回覆Magento應用程式程式碼基底、媒體及資料庫
-
 ```bash
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+回覆Magento應用程式程式碼基底、媒體及資料庫
+
 
 ### `--code-file`， `-c`
 
@@ -8818,7 +9031,7 @@ var/backups中db備份檔案的基本名稱
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -8867,11 +9080,12 @@ var/backups中db備份檔案的基本名稱
 
 ## `setup:static-content:deploy`
 
-部署靜態檢視檔案
-
 ```bash
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
+
+部署靜態檢視檔案
+
 
 
 ### `languages`
@@ -9044,7 +9258,7 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -9093,11 +9307,12 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 ## `setup:store-config:set`
 
-安裝存放區設定。 自2.2.0版起已棄用。請改用config：set
-
 ```bash
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+安裝存放區設定。 自2.2.0版起已棄用。請改用config：set
+
 
 ### `--base-url`
 
@@ -9161,7 +9376,7 @@ SSL連線的基礎URL。 已棄用，請使用config：set搭配路徑web/secure
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -9210,11 +9425,12 @@ SSL連線的基礎URL。 已棄用，請使用config：set搭配路徑web/secure
 
 ## `setup:uninstall`
 
-解除安裝Magento應用程式
-
 ```bash
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+解除安裝Magento應用程式
+
 
 ### `--magento-init-params`
 
@@ -9224,7 +9440,7 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -9273,11 +9489,12 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ## `setup:upgrade`
 
-升級Magento應用程式、資料庫資料和結構描述
-
 ```bash
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+升級Magento應用程式、資料庫資料和結構描述
+
 
 ### `--keep-generated`
 
@@ -9320,7 +9537,7 @@ Magento安裝將以試執行模式執行
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -9369,15 +9586,16 @@ Magento安裝將以試執行模式執行
 
 ## `store:list`
 
-顯示商店清單
-
 ```bash
 bin/magento store:list
 ```
 
+顯示商店清單
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -9426,15 +9644,16 @@ bin/magento store:list
 
 ## `store:website:list`
 
-顯示網站清單
-
 ```bash
 bin/magento store:website:list
 ```
 
+顯示網站清單
+
+
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -9483,11 +9702,12 @@ bin/magento store:website:list
 
 ## `theme:uninstall`
 
-解除安裝主題
-
 ```bash
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <theme>...
 ```
+
+解除安裝主題
+
 
 
 ### `theme`
@@ -9515,7 +9735,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
@@ -9564,11 +9784,12 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 ## `varnish:vcl:generate`
 
-產生清漆VCL並將其回溯至命令列
-
 ```bash
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
+
+產生清漆VCL並將其回溯至命令列
+
 
 ### `--access-list`
 
@@ -9619,7 +9840,7 @@ Web後端的連線埠
 
 ### `--help`， `-h`
 
-顯示指定指令的說明。 當沒有命令指定時，會顯示\&lt;info>list\&lt;/info> 命令
+顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
