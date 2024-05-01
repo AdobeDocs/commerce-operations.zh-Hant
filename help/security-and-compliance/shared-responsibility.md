@@ -2,9 +2,9 @@
 title: 共擔責任安全性與營運模式
 description: 瞭解在雲端基礎結構專案中，Adobe Commerce中涉及的每一方的安全性責任。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: d4ea2f3fe8d30749c96389655ef38cae482afc99
+source-git-commit: 75eafe97a69668e43818f1c01639956e9b677a69
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2804'
 ht-degree: 0%
 
 ---
@@ -890,5 +890,16 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | 為Cloud Pro測試和生產環境排程備份 | R |   |
 | 為Cloud Starter和Pro整合環境排程備份 |     | R |
 | 高可用性/容錯移轉 | R |   |
+
+{style="table-layout:auto"}
+
+#### 雲端伺服器和擴展
+
+|     | Adobe | 商家 |
+| --- | --- | --- |
+| CPU資源、資料中心、磁碟空間的可用性 | R |   |
+| 提供並執行突增容量或緊急規模調整 | R |   |
+| 請求突增容量 |     | R |
+| 根據限制監視vCPU使用量 | R |   |
 
 {style="table-layout:auto"}
