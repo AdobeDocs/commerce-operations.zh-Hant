@@ -2,9 +2,9 @@
 title: 發行原則
 description: 瞭解不同型別的Adobe Commerce版本，包括次要、修補程式、安全性修補程式、功能、Hotfix、個別修補程式和自訂修補程式。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
+source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -46,15 +46,7 @@ Adobe Commerce使用 [語意版本設定](https://semver.org/) 在個別模組�
 
 ### 安全性修補程式發行版本
 
-**安全性錯誤修正**：解決已識別的安全性問題並在受影響的產品區域提供預期結果的軟體程式碼變更。 這些修正通常會回溯相容。
-
-**安全性增強功能**：軟體改進或設定變更，以主動改善應用程式內的安全性。 這些安全性增強功能有助於解決安全性風險，這些風險會影響Adobe Commerce應用程式的安全狀態，但可能會與回溯不相容。
-
-使用安全性修補程式發行版本，您無需套用完整修補程式發行版本中包含的其他品質修正和增強功能，即可保持網站更安全。 安全性修補程式發行版本會附加&#39;-pN&#39;，其中N是從1開始的增量修補程式版本（例如2.3.5-p1）。 安全性修補程式發行版本也可包含解決影響Adobe Commerce應用程式之重大問題所需的Hotfix。
-
-每個安全性修補程式版本都是以之前的完整修補程式版本為基礎。 此版本包含先前修補程式版本的品質和安全修正，以及在先前完整修補程式版本和安全修補程式版本之間建立的安全性修正。
-
-如需下載和套用安全性修補程式的說明，請參閱 [快速入門安裝](../installation/composer.md#example---security-patch).
+{{$include /help/_includes/security-patch-release-overview.md}}
 
 ## BETA修補程式版本
 

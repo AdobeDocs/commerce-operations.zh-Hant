@@ -3,9 +3,9 @@ user-guide-title: 發行資訊
 user-guide-description: 在一個位置存取Adobe Commerce修補程式和服務的所有發行資訊。
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: 1eb4ac6e9f1cb0fda9b7a8daaa5696c2c1ed862c
+source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '108'
 ht-degree: 3%
 
 ---
@@ -38,30 +38,11 @@ ht-degree: 3%
       - [2.4.0](release-notes/open-source/2-4-0.md)
    - 安全性修補程式發行 {#security-patches}
       - [概觀](release-notes/security/overview.md)
-      - [2.4.6 - p5](release-notes/security/2-4-6-p5.md)
-      - [2.4.6 - p4](release-notes/security/2-4-6-p4.md)
-      - [2.4.6 - p3](release-notes/security/2-4-6-p3.md)
-      - [2.4.6 - p2](release-notes/security/2-4-6-p2.md)
-      - [2.4.6 - p1](release-notes/security/2-4-6-p1.md)
-      - [2.4.5 - p7](release-notes/security/2-4-5-p7.md)
-      - [2.4.5 - p6](release-notes/security/2-4-5-p6.md)
-      - [2.4.5 - p5](release-notes/security/2-4-5-p5.md)
-      - [2.4.5 - p4](release-notes/security/2-4-5-p4.md)
-      - [2.4.5 - p3](release-notes/security/2-4-5-p3.md)
-      - [2.4.5 - p2](release-notes/security/2-4-5-p2.md)
-      - [2.4.5 - p1](release-notes/security/2-4-5-p1.md)
-      - [2.4.4 - p8](release-notes/security/2-4-4-p8.md)
-      - [2.4.4 - p7](release-notes/security/2-4-4-p7.md)
-      - [2.4.4 - p6](release-notes/security/2-4-4-p6.md)
-      - [2.4.4 - p5](release-notes/security/2-4-4-p5.md)
-      - [2.4.4 - p4](release-notes/security/2-4-4-p4.md)
-      - [2.4.4 - p3](release-notes/security/2-4-4-p3.md)
-      - [2.4.4 - p2](release-notes/security/2-4-4-p2.md)
-      - [2.4.4 - p1](release-notes/security/2-4-4-p1.md)
-      - [2.4.3 - p3](release-notes/security/2-4-3-p3.md)
-      - [2.4.3 - p2](release-notes/security/2-4-3-p2.md)
-      - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
-      - [2.4.2 - p2](release-notes/security/2-4-2-p2.md)
+      - [2.4.6](release-notes/security/2-4-6-patches.md)
+      - [2.4.5](release-notes/security/2-4-5-patches.md)
+      - [2.4.4](release-notes/security/2-4-4-patches.md)
+      - [2.4.3](release-notes/security/2-4-3-patches.md)
+      - [2.4.2](release-notes/security/2-4-2-patches.md)
 - [產品可用性](product-availability.md)
 - [Beta版本](beta.md)
 - 規劃與原則 {#planning}
