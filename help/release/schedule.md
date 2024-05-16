@@ -2,7 +2,7 @@
 title: 發行排程
 description: 了解 Adobe 預計何時宣布推出 Adobe Commerce 的新功能。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 4d57c979e8e65e1463f4f16829104cfbde730cb2
+source-git-commit: 1eac85dd1cf90f6cb064dc68a4622a6343c84b4d
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Adobe版本 [修補程式](versioning-policy.md#patch-release) 適用於核心Ad
    <tr>
       <td colspan="3"><strong>圖例</strong>
          <ul>
-           <li><strong><img alt="B2B功能圖示" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Adobe Commerce的B2B擴充功能新功能、增強功能和錯誤修正。 如需B2B擴充功能發行版本的詳細資訊，請參閱[B2B發行說明](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)。</li>
+           <li><strong><img alt="B2B功能圖示" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Adobe Commerce的B2B擴充功能新功能、增強功能和錯誤修正。 如需B2B擴充功能發行版本的詳細資訊，請參閱[B2B發行說明](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html)。</li>
             <li><strong><img alt="擴充功能圖示" src="../assets/icons/brackets.svg"></img> 擴充性</strong> — 新的開發人員工具和服務可用於跨處理序擴充，這些工具和服務是獨立於修補程式發行版本提供的。 例如，管理UI SDK、Commerce的Adobe I/O事件和API Mesh。</li>
             <li><strong><img alt="基礎結構功能圖示" src="../assets/icons/servers.svg"></img> 基礎架構</strong> — 雲端基礎結構上的Adobe Commerce的新功能和增強功能，以及適用於Commerce套件的Cloud Tools Suite ，這些套件是專為在Cloud平台上部署和管理Adobe Commerce安裝和升級而設計。</li>
             <li><strong><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> 修補程式</strong> — 更新核心Adobe Commerce PHP應用程式，包括安全性、法規遵循、效能和高優先順序品質修正。</li>
