@@ -2,9 +2,9 @@
 title: 軟體生命週期原則
 description: 了解 Adobe Commerce 版本軟體支援終止的關鍵日期。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 01e926e3cf36f27f5292a0b9ce7a6209d4960cc2
+source-git-commit: 7df5edf2acba706fb01f58cc3749c4a2bf136fc5
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '426'
 ht-degree: 5%
 
 ---
@@ -22,22 +22,25 @@ ht-degree: 5%
 
 - Adobe不針對客戶處於Adobe Commerce的三年支援期期間，而可能到期的第三方服務和軟體相依性（例如PHP和MySQL）提供安全性和品質修正。 請參閱 [系統需求](../installation/system-requirements.md) 以取得經過測試和支援的協力廠商技術完整清單。
 
+- 在僅限安全性的修補程式發行範圍內，當客戶處於Adobe Commerce的三年支援期時，Adobe可提供與協力廠商服務和軟體相依性的相容性，但前提是客戶可以在不引入回溯不相容變更的情況下這樣做。
+
 ## 終止軟體支援
 
-| 版本 | 全面發佈 | 終止軟體支援<sup>1</sup> | 相依PHP版本 |
-|----------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.7 | 2024年4月9日 | 2027年4月9日 | 8.2和8.3 |
-| Adobe Commerce 2.4.6 | 2023年3月14日 | 2026年3月14日 | 8.1和8.2 |
-| Adobe Commerce 2.4.5 | 2022年8月9日 | 2025年8月9日 | 8.1 |
-| Adobe Commerce 2.4.4 | 2022年4月12日 | 2025年4月24日 | 8.1 |
+| 版本 | 全面發佈 | 終止軟體支援<sup>1</sup> | 相依PHP版本 | 相依MariaDB版本 |
+|----------------------|----------------------|-------------------------------------|-----------------------|------------------------------|
+| Adobe Commerce 2.4.7 | 2024年4月9日 | 2027年4月9日 | 8.2和8.3 | 10.6 |
+| Adobe Commerce 2.4.6 | 2023年3月14日 | 2026年3月14日 | 8.1和8.2 | 10.6 |
+| Adobe Commerce 2.4.5 | 2022年8月9日 | 2025年8月9日 | 8.1 | 10.5<sup>2</sup> |
+| Adobe Commerce 2.4.4 | 2022年4月12日 | 2025年4月24日 | 8.1 | 10.5<sup>3</sup> |
 
 {style="table-layout:auto"}
 
-<sup>1終止軟體支援包括終止品質修正和終止安全性修正。</sup><br>
-
 >[!NOTE]
 >
->另請參閱 [軟體生命週期原則](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- <sup>1</sup> 終止軟體支援包括終止品質修正和終止安全性修正。
+>- <sup>2</sup> 從2.4.5-p8安全性修補程式開始。
+>- <sup>3</sup> 從2.4.4-p9安全性修補程式開始。
+>- 另請參閱 [軟體生命週期原則](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
 <thead>
