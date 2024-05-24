@@ -1,11 +1,11 @@
 ---
 title: 營運行動手冊
-description: Commerce營運行動手冊的目標
+description: Commerce 營運教戰手冊的目標
 exl-id: f072f6ca-3654-4bd2-a32e-000358bb67b3
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '422'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

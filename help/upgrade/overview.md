@@ -1,11 +1,11 @@
 ---
 title: 升級程式概觀
-description: 瞭解升級您的Adobe Commerce專案如何協助確保店面安全並有效率地運作。
+description: 了解升級 Adobe Commerce 專案能夠如何保護您的店面安全而且有效運作。
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
