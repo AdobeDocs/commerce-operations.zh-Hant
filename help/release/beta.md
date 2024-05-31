@@ -2,9 +2,9 @@
 title: Beta版本
 description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 1dd4b44c6aa685795e16dccebfaf073dcc0062f2
+source-git-commit: d761bd089fbd2046e993d4652e9e0e2b3c4d2777
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -47,15 +47,6 @@ Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供
 - 支援多個資料集和資料串流
 
 若要參與此測試版，請傳送電子郵件要求至 [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
-
-### Backoffice整合入門套件（私人測試版）
-
-後台辦公室 [整合入門套件](https://developer-stage.adobe.com/commerce/extensibility/app-development/starter-kit/) 為開發人員提供加速器，以建立事件導向式與ERP、CRM和OMS等系統的整合。 使用入門套件，您最多可降低50%的開發成本。 入門套件也遵循Adobe Commerce最佳實務，大幅降低維護成本。 入門套件重點包括：
-- 產品、訂單、客戶、庫存和發貨等常用物件的資料同步
-- 遵循最佳實務的架構Blueprint
-- 入門指令碼以加速開發
-
-若要參與此Beta版，請完成 [登錄檔單](https://forms.office.com/r/YbYArqE3DT).
 
 ### Adobe Commerce Foundation （公開測試版）
 
