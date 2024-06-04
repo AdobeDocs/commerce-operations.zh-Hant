@@ -2,9 +2,9 @@
 title: 升級實作
 description: 瞭解Adobe Commerce專案升級實作的不同階段。
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: a81d2c0b6526c2c8c8c5c4652c83595667985543
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,10 @@ ht-degree: 1%
    - 目前安裝的版本
    - 升級目標版本
    - 發現嚴重錯誤的數量和詳細資訊
+
+  >[!TIP]
+  >
+  >所有這項資訊（及更多資訊）可在全網站分析工具中取得 [儀表板](../../tools/site-wide-analysis-tool/dashboard.md).
 
 - 正在升級服務以支援目標版本。 使用下表範本來對應您必須升級的服務。 使用 [系統需求](../../installation/system-requirements.md) 以決定要新增至的內容 _升級至_ 欄。
 

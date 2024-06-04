@@ -2,9 +2,9 @@
 title: 安全性與合規性
 description: 瞭解您的Adobe Commerce專案的安全性、隱私權和產業法規遵循資源。
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f5bcf5c875234875a61664214e50806cc6ba2119
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '182'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,9 @@ ht-degree: 0%
 
 ## 安全性
 
-- [Adobe產品安全性](https://helpx.adobe.com/security.html)：Adobe Commerce的最新修補程式、安全性更新和最佳實務。
-- [Adobe信任中心](https://www.adobe.com/trust.html)：有關Adobe雲端服務的運作狀況、安全性、隱私權和合規性的最新可用資訊。
+- [Adobe產品安全性](https://helpx.adobe.com/security.html)：瞭解Adobe Commerce的最新修補程式、安全性更新和最佳實務。
+- [Adobe信任中心](https://www.adobe.com/trust.html)：存取所有Adobe雲端服務運作狀況、安全性、隱私權和合規性的最新可用資訊。
+- [全網站分析工具](../tools/site-wide-analysis-tool/dashboard.md)：檢視有關您Adobe Commerce網站的簡化安全性深入分析，包括安全性掃描、服務終止和安全性建議。
 
 ## 合規性
 
