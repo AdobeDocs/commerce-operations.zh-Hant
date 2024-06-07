@@ -1,17 +1,18 @@
 ---
-title: 安裝擴充功能
-description: 請依照下列步驟安裝Adobe Commerce擴充功能。
+title: 管理協力廠商擴充功能
+description: 請依照下列步驟，安裝、啟用、升級和解除安裝Adobe Commerce擴充功能。
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 6da0e70acc77d2171d6336ab632e6a9a8dd16c67
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
 
-# 安裝擴充功能
 
-擴充或自訂Adobe Commerce行為的程式碼稱為擴充功能。 您可以選擇封裝並發佈擴充功能於 [Commerce Marketplace](https://marketplace.magento.com) 或其他擴充功能發佈系統。
+# 管理協力廠商擴充功能
+
+擴充或自訂Adobe Commerce行為的程式碼稱為擴充功能。 您可以選擇封裝並發佈擴充功能於 [Commerce Marketplace](https://commercemarketplace.adobe.com/) 或其他擴充功能發佈系統。
 
 擴充功能包括：
 
@@ -21,7 +22,9 @@ ht-degree: 0%
 
 >[!TIP]
 >
->本主題說明如何使用命令列來安裝您從Commerce Marketplace購買的擴充功能。 您可以使用相同的程式進行安裝 _任何_ 擴充功能；您只需要擴充功能的撰寫器名稱和版本。 若要尋找，請開啟擴充功能的 `composer.json` 檔案並記下值 `"name"` 和 `"version"`.
+>本主題說明如何使用命令列介面來管理您從Commerce Marketplace購買的協力廠商擴充功能。 您可以使用相同的程式進行安裝 _任何_ 擴充功能；您只需要擴充功能的撰寫器名稱和版本。 若要尋找，請開啟擴充功能的 `composer.json` 檔案並記下值 `"name"` 和 `"version"`.
+
+## 安裝
 
 安裝之前，您可能需要：
 
@@ -51,13 +54,13 @@ ht-degree: 0%
 1. 確認擴充功能已正確安裝。
 1. 啟用並設定擴充功能。
 
-## 取得擴充功能撰寫器名稱和版本
+### 取得擴充功能資訊
 
-如果您已知道擴充功能的撰寫器名稱和版本，請略過此步驟，並繼續使用 [更新您的 `composer.json` 檔案](#update-your-composer-file).
+如果您已知道擴充功能的撰寫器名稱和版本，請略過此步驟，並繼續使用 [更新您的 `composer.json` 檔案](#update-composer-dependencies).
 
 若要從Commerce Marketplace取得擴充功能的撰寫器名稱和版本：
 
-1. 登入 [Commerce Marketplace](https://marketplace.magento.com) 使用您購買擴充功能所用的使用者名稱和密碼。
+1. 登入 [Commerce Marketplace](https://commercemarketplace.adobe.com/) 使用您購買擴充功能所用的使用者名稱和密碼。
 
 1. 在右上角，按一下 **您的姓名** > **我的設定檔**.
 
@@ -75,7 +78,7 @@ ht-degree: 0%
 >
 >或者，您可以找到「撰寫器」名稱和版本 _任何_ 擴充功能(無論您是在Commerce Marketplace或其他地方購買)中的 `composer.json` 檔案。
 
-## 更新您的撰寫器檔案
+### 更新撰寫器相依性
 
 將擴充功能的名稱和版本新增至 `composer.json` 檔案：
 
@@ -103,7 +106,7 @@ ht-degree: 0%
    Generating autoload files
    ```
 
-## 驗證擴充功能
+### 驗證安裝
 
 若要確認擴充功能是否已正確安裝，請執行以下命令：
 
@@ -125,7 +128,7 @@ bin/magento module:status
 
 檢視「已停用模組清單」下的擴充功能。
 
-## 啟用擴充功能
+### 啟用
 
 除非您先清除產生的靜態檢視檔案，否則有些副檔名無法正常運作。 使用 `--clear-static-content` 啟用副檔名時清除靜態檢視檔案的選項。
 
@@ -183,7 +186,7 @@ bin/magento module:status
 >
 >如果您在瀏覽器中載入店面時發生錯誤，請使用下列命令清除快取： `bin/magento cache:flush`.
 
-## 升級擴充功能
+## 升級
 
 若要更新或升級模組或擴充功能：
 
@@ -218,3 +221,39 @@ bin/magento module:status
    ```bash
    bin/magento cache:clean
    ```
+
+## 解除安裝
+
+請聯絡擴充功能供應商，取得移除協力廠商擴充功能的指示。 指示應提供下列資訊：
+
+- 如何還原資料庫表格變更
+- 如何還原資料庫資料變更
+- 應該移除或還原哪些檔案
+
+>[!CAUTION]
+>
+>在非生產環境中執行解除安裝步驟 _第一_ 並在部署到生產環境之前進行徹底測試。
+
+下列指示提供解除安裝協力廠商擴充功能的一般資訊：
+
+1. 從您的Adobe Commerce專案存放庫移除擴充功能。
+
+   - 針對以Composer為基礎的擴充功能，請從您的Adobe Commerce移除擴充功能 `composer.json` 檔案。
+
+     ```bash
+     composer remove <package-name>
+     ```
+
+   - 對於非Composer型副檔名，請從您的Adobe Commerce專案存放庫中移除實體檔案。
+
+     ```bash
+     rm -rf app/code/<vendor-name>/<module-name>
+     ```
+
+1. 如果 `config.php` 檔案是由Adobe Commerce專案存放庫中的原始檔控制管理，請從移除副檔名 `config.php` 檔案。
+
+1. 測試您的本機資料庫，確保廠商提供的指示如預期般運作。
+
+1. 確認擴充功能已正確停用，且您的網站在中繼環境中可如預期般運作。
+
+1. 將變更部署到您的生產環境。
