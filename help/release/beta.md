@@ -2,9 +2,9 @@
 title: Beta版本
 description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: d761bd089fbd2046e993d4652e9e0e2b3c4d2777
+source-git-commit: 0e2dfc376a049a47348a7a913bd5181436227cc2
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供意見回饋，以及指引Adobe Commerce未來發展的方法。 測試版計畫有兩種型別：
 
 - 公開測試版：公開測試版計畫現可供所有Adobe Commerce客戶和合作夥伴使用
-- 私人測試版：私人測試版計畫可能需要根據資格標準進行核准才能參與
+- 私人測試版：私人測試版計畫可能需要根據參加者的資格條件進行核准
 
 >[!IMPORTANT]
 >
@@ -27,6 +27,22 @@ Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供
 ## 目前的Beta版計畫
 
 如需使用中Beta版計畫的清單，請參閱下列章節。
+
+### Commerce的Experience Manager Assets整合（私人測試版）
+
+適用於Commerce的Experience Manager Assets整合可讓您有效率地從Experience Manager Assets將大量產品影像管理和傳送至Adobe Commerce，而不需要耗費太多或完全不需要的營運工作。
+
+主要功能：
+
+- 隨插即用整合 — 開箱即用的Adobe可將Experience Manager Assets與Adobe Commerce整合，讓商家能夠專注於最重要的事項，同時降低營運成本並提高效率。
+
+- 大規模個人化產品影像 — 使用Experience Manager Assets透過簡易的UI式編輯工具、使用Adobe Firefly的創成式內容建立和指派資產工作流程，為個人化Commerce體驗產生數百萬種產品變體，以確保品牌一致性。 只要您對資產滿意，即可使用Experience Manager Assets整合，將資產順暢地傳送至Commerce店面。
+
+- 輕鬆上線 — 透過可設定的同步程式來簡化商家上線，該程式會啟用Experience Manager Assets存放庫和Commerce目錄之間的完整同步。
+
+- 彈性比對策略 — 此整合包括根據產品SKU的預設資產比對演演算法，可在AEM Assets和Commerce之間同步影像，並可使用Adobe Developer App Builder進行擴充。 與您的解決方案合作夥伴合作，在整合的基礎上建立自訂資產比對策略，以容納任何資產管理存放庫結構。
+
+若要參與測試版，請傳送電子郵件要求至 [肖恩·麥克蘭](mailto:mccran@adobe.com).
 
 ### IBM Sterling訂單管理系統整合（私人測試版）
 
