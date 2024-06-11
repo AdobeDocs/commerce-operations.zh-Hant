@@ -3,9 +3,9 @@ user-guide-title: 發行資訊
 user-guide-description: 在一個位置存取Adobe Commerce修補程式和服務的所有發行資訊。
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: 5ad3f01421b7724d1bc81cadfe7ce4528d8ba969
+source-git-commit: 47e152a68976936535fde55344e4ecde3c52ec05
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '106'
 ht-degree: 3%
 
 ---
@@ -38,6 +38,7 @@ ht-degree: 3%
       - [2.4.0](release-notes/open-source/2-4-0.md)
    - 安全性修補程式發行 {#security-patches}
       - [概觀](release-notes/security/overview.md)
+      - [2.4.7](release-notes/security/2-4-7-patches.md)
       - [2.4.6](release-notes/security/2-4-6-patches.md)
       - [2.4.5](release-notes/security/2-4-5-patches.md)
       - [2.4.4](release-notes/security/2-4-4-patches.md)
