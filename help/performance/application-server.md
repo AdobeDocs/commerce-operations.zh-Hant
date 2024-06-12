@@ -2,9 +2,9 @@
 title: GraphQL應用程式伺服器
 description: 請依照這些指示，在您的Adobe Commerce部署中啟用GraphQL應用程式伺服器。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 70d86569bef5c656fff3a8c6b4af142c81c81f10
+source-git-commit: c2f48db87f40498a84b2bf41569bb46202565701
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2088'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ GraphQL應用程式伺服器可讓Adobe Commerce在連續的Commerce GraphQL API
 在Pro專案上啟用「應用程式伺服器」功能後，請先完成下列步驟，再部署GraphQL Application Server：
 
 1. 使用來自的雲端範本，在雲端基礎結構上部署Adobe Commerce [2.4.7-appserver分支](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. 確保您的所有Commerce自訂和擴充功能都 [相容](https://developer.adobe.com/commerce/php/development/components/app-server/) 與GraphQL Application Server整合。
+1. 確認您所有的Commerce自訂專案和擴充功能皆為 [相容](https://developer.adobe.com/commerce/php/development/components/app-server/) 與GraphQL Application Server整合。
 1. 複製您的Commerce Cloud專案。
 1. 如有必要，請調整&#39;application-server/nginx.conf.sample&#39;檔案中的設定。
 1. 註解中的作用中&#39;web&#39;區段 `project_root/.magento.app.yaml` 檔案完成。
@@ -66,6 +66,12 @@ GraphQL應用程式伺服器可讓Adobe Commerce在連續的Commerce GraphQL API
            protocol: http
        commands:
            start: ./application-server/start.sh > var/log/application-server-status.log 2>&1
+   ```
+
+1. 確定 `/application-server/start.sh` 可執行下列命令：
+
+   ```bash
+   chmod +x application-server/start.sh
    ```
 
 1. 使用以下命令將更新的檔案新增到Git索引：
@@ -176,7 +182,7 @@ git push
 
 #### 設定Nginx
 
-您的特定Commerce部署會決定如何設定Nginx。 一般而言，Nginx組態檔案預設為 `nginx.conf` 和會放置在下列其中一個目錄中： `/usr/local/nginx/conf`， `/etc/nginx`，或 `/usr/local/etc/nginx`. 另請參閱 [初學者指南](https://nginx.org/en/docs/beginners_guide.html) 有關設定Nginx的詳細資訊。
+您特定的Commerce部署決定了如何設定Nginx。 一般而言，Nginx組態檔案預設為 `nginx.conf` 和會放置在下列其中一個目錄中： `/usr/local/nginx/conf`， `/etc/nginx`，或 `/usr/local/etc/nginx`. 另請參閱 [初學者指南](https://nginx.org/en/docs/beginners_guide.html) 有關設定Nginx的詳細資訊。
 
 Nginx設定範例：
 
