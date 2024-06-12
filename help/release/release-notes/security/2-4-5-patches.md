@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.5安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.5版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
+source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Adobe Commerce 2.4.5-p7安全性版本針對先前版本2.4.5中發現的弱點�
 ### 平台升級
 
 * **MariaDB 10.5支援**. 此修補程式發行版本引入與MariaDB 10.5版的相容性。Adobe Commerce仍與MariaDB 10.4版相容，但Adobe建議使用Adobe Commerce 2.4.5-p8以及所有即將發行的2.4.5僅限安全性修補程式版本，僅與MariaDB 10.5版相容，因為MariaDB 10.4的維護作業將於2024年6月18日結束。 <!--AC-11530-->
+
+### 其他安全性增強功能
+
+{{$include /help/_includes/release-notes/2-4-7-security.md}}
 
 ## Adobe Commerce 2.4.5-p7
 
