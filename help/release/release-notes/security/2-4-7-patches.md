@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerce 2.4.7安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.7版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
-source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
+source-git-commit: 4ed23e2a8319ff97f8206f752cf1cbe2e73ea5c5
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,6 @@ Adobe Commerce 2.4.7-p1安全性版本針對2.4.7舊版中發現的弱點提供�
 ### 安全性反白顯示
 
 此版本包含 [一次性密碼(OTP)設定](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) 讓Google Authenticator解決 [向後不相容的變更](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) 在2.4.7中。「 」的說明 **[!UICONTROL OTP Window]** 欄位現在會提供設定的精確說明，而且預設值已從 `1` 至 `29`.
-
-### 其他安全性增強功能
-
-{{$include /help/_includes/release-notes/2-4-7-security.md}}
 
 ### 此版本中包含的Hotfix
 
