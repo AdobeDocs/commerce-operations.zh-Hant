@@ -2,9 +2,9 @@
 title: 管理索引子
 description: 請參閱如何檢視和管理Commerce索引器的範例。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 5e1684d4d910f2ea52e12eeccdc291a54372f8d6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -266,7 +266,7 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 
 ### 設定索引子狀態
 
-這個指令可讓管理員修改一或多個索引器的操作狀態，在資料匯入、更新或維護等大量操作期間最佳化系統效能。
+此 `bin/magento indexer:set-status` Adobe Commerce 2.4.7中引入了命令。它可讓管理員修改一或多個索引器的運作狀態，在資料匯入、更新或維護等大量作業期間最佳化系統效能。
 
 命令語法：
 
