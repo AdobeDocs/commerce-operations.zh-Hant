@@ -2,9 +2,9 @@
 title: 啟動訊息佇列取用者
 description: 瞭解如何啟動訊息佇列消費者。
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
+source-git-commit: cdd752532d17e1168e0aa7d354ec283089d98be3
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-另請參閱 [`queue:consumers:start`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#queueconsumersstart) 在的商務區段中 _命令列工具參考_ 瞭解指令選項、引數和值的詳細資訊。
+另請參閱 [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart) 在的Commerce區段中 _命令列工具參考_ 瞭解指令選項、引數和值的詳細資訊。
 
 >[!INFO]
 >
