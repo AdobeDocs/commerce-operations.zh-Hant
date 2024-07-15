@@ -5,20 +5,20 @@ feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
 
 # 清漆組態的最終驗證
 
-現在您已使用 `default.vcl` 由Commerce為您產生，您可以執行一些最終驗證以確保Varnish正常運作。
+現在您正使用Commerce為您產生的`default.vcl`，您可以執行一些最終驗證，以確認Varnish正常運作。
 
 ## 驗證HTTP回應標題
 
-使用 `curl` 或其他公用程式，可在您瀏覽網頁瀏覽器中的任何Commerce頁面時檢視HTTP回應標題。
+當您在網頁瀏覽器中瀏覽任何Commerce頁面時，請使用`curl`或其他公用程式來檢視HTTP回應標題。
 
-首先，請確定您使用 [開發人員模式](../cli/set-mode.md#change-to-developer-mode)；否則，您將不會看到標題。
+首先，請確定您使用的是[開發人員模式](../cli/set-mode.md#change-to-developer-mode)；否則，您將不會看到標頭。
 
 例如，
 
@@ -36,11 +36,11 @@ X-Magento-Cache-Debug: MISS
 
 >[!INFO]
 >
->此值也可以接受： `X-Magento-Cache-Debug: HIT`.
+>這個值也可以接受： `X-Magento-Cache-Debug: HIT`。
 
 ## 檢查頁面載入時間
 
-如果Varnish正在運作，則任何具有可快取區塊的商務頁面應該會在150毫秒內載入。 此類頁面的範例是前門和店麵類別頁面。
+如果Varnish正常運作，則任何具有可快取區塊的Commerce頁面應在150毫秒內載入。 此類頁面的範例是前門和店麵類別頁面。
 
 使用瀏覽器檢測器來測量頁面載入時間。
 
@@ -48,12 +48,12 @@ X-Magento-Cache-Debug: MISS
 
 1. 存取Chrome中的任何可快取Commerce頁面。
 1. 以滑鼠右鍵按一下頁面上的任何位置。
-1. 在快顯功能表中，按一下 **[!UICONTROL Inspect Element]**
-1. 在檢視窗窗格中，按一下 **[!UICONTROL Network]** 標籤。
+1. 從快顯功能表，按一下&#x200B;**[!UICONTROL Inspect Element]**
+1. 在檢視窗窗格中，按一下&#x200B;**[!UICONTROL Network]**&#x200B;標籤。
 1. 重新整理頁面。
 1. 捲動至檢視窗窗窗格的頂端，以便檢視所檢視頁面的URL。
 
-   下圖是載入 `magento2` 索引頁面。
+   下圖顯示載入`magento2`索引頁面的範例。
 
    ![按一下您正在檢視的頁面](../../assets/configuration/varnish-inspector.png)
 
@@ -65,9 +65,9 @@ X-Magento-Cache-Debug: MISS
 
 ## 驗證Commerce快取
 
-確定 `<magento_root>/var/page_cache` 目錄是空的：
+確定`<magento_root>/var/page_cache`目錄是空的：
 
-1. 登入您的Commerce伺服器或切換到檔案系統擁有者。
+1. 登入您的Commerce伺服器，或切換到檔案系統擁有者。
 1. 輸入下列命令：
 
    ```bash
@@ -75,12 +75,12 @@ X-Magento-Cache-Debug: MISS
    ```
 
 1. 存取一或多個可快取的Commerce頁面。
-1. 檢查 `var/page_cache/` 目錄。
+1. 檢查`var/page_cache/`目錄。
 
-   如果目錄是空的，恭喜您！ 您已成功設定Varnish and Commerce搭配使用！
+   如果目錄是空的，恭喜您！ 您已成功設定Varnish與Commerce搭配運作！
 
-1. 如果您已清除 `var/page_cache/` 目錄，重新啟動Varnish。
+1. 如果您已清除`var/page_cache/`目錄，請重新啟動Varnish。
 
 >[!TIP]
 >
->如果您遇到503 （後端擷取失敗）錯誤，請參閱 [疑難排解503 （服務無法使用）錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) 在 _Adobe Commerce說明中心_.
+>如果您遇到503 （後端擷取失敗）錯誤，請參閱&#x200B;_Adobe Commerce說明中心_&#x200B;中的[疑難排解503 （服務無法使用）錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html)。

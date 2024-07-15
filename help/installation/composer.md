@@ -11,31 +11,31 @@ ht-degree: 0%
 
 # 快速入門內部部署安裝
 
-本頁上的指示說明如何在上安裝Adobe Commerce [自行託管](../implementation-playbook/infrastructure/self-hosting/overview.md) 基礎結構。 如需升級現有安裝的指引，請參閱 [_升級指南_](../upgrade/overview.md).
+此頁面上的指示說明如何在[自行託管](../implementation-playbook/infrastructure/self-hosting/overview.md)基礎結構上安裝Adobe Commerce。 如需升級現有安裝的指南，請參閱&#x200B;[_升級指南_](../upgrade/overview.md)。
 
-Adobe使用 [作曲者](https://getcomposer.org/) 管理Adobe Commerce元件及其相依性。 使用Composer來取得Adobe Commerce中繼資料具備下列優點：
+Adobe使用[撰寫器](https://getcomposer.org/)來管理Adobe Commerce元件及其相依性。 使用Composer來取得Adobe Commerce中繼資料具備下列優點：
 
 - 重複使用協力廠商程式庫，無需搭配原始程式碼使用
 - 使用元件式架構搭配強大的相依性管理，減少擴充功能衝突及相容性問題
-- 遵守 [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/) 標準
+- 遵守[PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)標準
 - 使用其他元件重新封裝Magento Open Source
 - 在生產環境中使用Adobe Commerce軟體
 
 >[!NOTE]
 >
->對Magento Open Source有所貢獻的開發人員 [git型](https://developer.adobe.com/commerce/contributor/guides/install/) 安裝方法。
+>參與Magento Open Source的開發人員應使用[Git型](https://developer.adobe.com/commerce/contributor/guides/install/)安裝方法。
 
 ## 必要條件
 
 繼續之前，您必須先執行下列動作：
 
-- 全部完成 [先決條件任務](system-requirements.md).
-- [安裝撰寫器](https://getcomposer.org/download/).
-- Get [驗證金鑰](prerequisites/authentication-keys.md) 前往Adobe Commerce Composer存放庫。
+- 完成所有[先決條件工作](system-requirements.md)。
+- [安裝撰寫器](https://getcomposer.org/download/)。
+- 取得Adobe Commerce Composer存放庫的[驗證金鑰](prerequisites/authentication-keys.md)。
 
 ## 以檔案系統擁有者身分登入
 
-瞭解中的所有權、許可權和檔案系統所有者 [所有權與許可權主題概觀](prerequisites/file-system/overview.md).
+在[所有權與許可權概觀主題](prerequisites/file-system/overview.md)中瞭解所有權、許可權和檔案系統擁有者。
 
 若要切換到檔案系統擁有者：
 
@@ -53,9 +53,9 @@ Adobe使用 [作曲者](https://getcomposer.org/) 管理Adobe Commerce元件及�
    sudo -u <file system owner>  <command>
    ```
 
-1. 若要從任何目錄執行CLI命令，請新增 `<app_root>/bin` 至您的系統 `PATH`.
+1. 若要從任何目錄執行CLI命令，請新增`<app_root>/bin`至您的系統`PATH`。
 
-   由於shell有不同的語法，請參閱以下參照 [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   因為殼層有不同的語法，請查閱參考資料，例如[unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables)。
 
    CentOS的bash shell範例：
 
@@ -65,15 +65,15 @@ Adobe使用 [作曲者](https://getcomposer.org/) 管理Adobe Commerce元件及�
 
    您可以選擇以下列方式執行指令：
 
-   - `cd <app_root>/bin` 並以下列身分執行 `./magento <command name>`
+   - `cd <app_root>/bin`並以`./magento <command name>`身分執行
    - `app_root>/bin/magento <command name>`
-   - `<app_root>` 是網頁伺服器docroot的子目錄
+   - `<app_root>`是網頁伺服器docroot的子目錄
 
 ## 取得中繼資料
 
 若要取得Adobe Commerce中繼資料：
 
-1. 以或切換方式登入應用程式伺服器 [檔案系統擁有者](prerequisites/file-system/overview.md).
+1. 以或切換至[檔案系統擁有者](prerequisites/file-system/overview.md)的身份登入您的應用程式伺服器。
 1. 變更至Web伺服器docroot目錄，或您設定為虛擬主機docroot的目錄。
 1. 使用Commerce中繼資料建立撰寫器專案。
 
@@ -89,15 +89,15 @@ Adobe使用 [作曲者](https://getcomposer.org/) 管理Adobe Commerce元件及�
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   出現提示時，輸入您的驗證金鑰。 公開和私密金鑰是在以下位置建立和設定的： [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+   出現提示時，輸入您的驗證金鑰。 已在您的[Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/)中建立並設定公開和私密金鑰。
 
    >[!NOTE]
    >
-   > 使用撰寫器時 `auth.json` 檔案或環境變數，系統不會提示您輸入驗證金鑰。
+   > 使用Composer `auth.json`檔案或環境變數時，系統不會提示您輸入驗證金鑰。
 
-   如果您遇到錯誤，例如 `Could not find package...` 或 `...no matching package found`，請確定您的命令中沒有拼寫錯誤。 如果您仍然遇到錯誤，您可能無權下載Adobe Commerce。 連絡人 [Adobe Commerce支援](https://support.magento.com/hc/en-us) 以取得協助。
+   如果您遇到錯誤（例如`Could not find package...`或`...no matching package found`），請確定您的命令中沒有拼寫錯誤。 如果您仍然遇到錯誤，您可能無權下載Adobe Commerce。 請連絡[Adobe Commerce支援](https://support.magento.com/hc/en-us)尋求協助。
 
-   另請參閱 [疑難排除](https://support.magento.com/hc/en-us/articles/360033818091) 以取得更多錯誤的說明。
+   如需更多錯誤的說明，請參閱[疑難排解](https://support.magento.com/hc/en-us/articles/360033818091)。
 
 ### 範例 — 次要版本
 
@@ -109,7 +109,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ### 範例 — 品質修補程式
 
-品質修補程式主要包含功能性 _和_ 安全性修正。 不過，它們有時也可能包含向後相容的新功能。 使用Composer下載品質修補程式。 例如，若要指定Adobe Commerce 2.4.6中繼資料：
+品質修補程式主要包含功能性&#x200B;_和_&#x200B;安全性修正。 不過，它們有時也可能包含向後相容的新功能。 使用Composer下載品質修補程式。 例如，若要指定Adobe Commerce 2.4.6中繼資料：
 
 ```bash
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
@@ -119,7 +119,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 安全性修補程式僅包含安全性修正。 這些設定可讓升級程式更快、更輕鬆。
 
-安全性修補程式使用撰寫器命名慣例 `2.4.6-px`. 使用Composer指定修補程式。 例如，若要下載Adobe Commerce 2.4.6-p1中繼資料：
+安全性修補程式使用Composer命名慣例`2.4.6-px`。 使用Composer指定修補程式。 例如，若要下載Adobe Commerce 2.4.6-p1中繼資料：
 
 ```bash
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
@@ -141,7 +141,7 @@ chmod u+x bin/magento
 
 您必須使用命令列安裝Adobe Commerce。
 
-此範例假設安裝目錄名為 `magento2ee`，則 `db-host` 在同一部電腦上(`localhost`)，且 `db-name`， `db-user`、和 `db-password` 全部 `magento`：
+此範例假設安裝目錄名為`magento2ee`，`db-host`在相同電腦(`localhost`)上，且`db-name`、`db-user`和`db-password`皆為`magento`：
 
 ```bash
 bin/magento setup:install \
@@ -168,11 +168,11 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->您可以使用以下自訂管理員URI `--backend-frontname` 選項。 不過，Adobe建議省略此選項，並允許安裝命令自動產生隨機URI。 對於駭客或惡意軟體而言，隨機URI更難被利用。 安裝完成時，URI會顯示在主控台中。
+>您可以使用`--backend-frontname`選項自訂管理員URI。 不過，Adobe建議省略此選項，並允許安裝命令自動產生隨機URI。 對於駭客或惡意軟體而言，隨機URI更難被利用。 安裝完成時，URI會顯示在主控台中。
 
 >[!TIP]
 >
->如需CLI安裝選項的完整說明，請參閱 [從命令列安裝應用程式](advanced.md).
+>如需CLI安裝選項的完整說明，請參閱[從命令列安裝應用程式](advanced.md)。
 
 ## 命令摘要
 
@@ -212,7 +212,7 @@ bin/magento help cache:enable
 | `magento setup:db-schema:upgrade` | 更新資料庫結構。 | 部署設定 |
 | `magento setup:db-data:upgrade` | 更新資料庫資料。 | 部署設定 |
 | `magento setup:db:status` | 檢查資料庫是否使用最新的程式碼。 | 部署設定 |
-| `magento admin:user:create` | 建立管理員使用者。 | 您可以建立下列專案的使用者：<br><br>部署設定<br><br>至少啟用 `Magento_User` 和 `Magento_Authorization` 模組<br><br>資料庫(最簡單的方式是使用 `bin/magento setup:upgrade`) |
+| `magento admin:user:create` | 建立管理員使用者。 | 您可以建立下列的使用者：<br><br>部署組態<br><br>至少啟用`Magento_User`和`Magento_Authorization`個模組<br><br>資料庫（最簡單的方式是使用`bin/magento setup:upgrade`） |
 | `magento list` | 列出所有可用的命令。 | 無 |
 | `magento help` | 提供指定命令的說明。 | 無 |
 
@@ -222,14 +222,14 @@ bin/magento help cache:enable
 
 | 長版本 | 簡短版本 | 含義 |
 |--- |--- |--- |
-| `--help` | `-h` | 取得任何命令的說明。 例如， `./magento help setup:install` 或 `./magento help setup:config:set`. |
+| `--help` | `-h` | 取得任何命令的說明。 例如，`./magento help setup:install`或`./magento help setup:config:set`。 |
 | `--quiet` | `-q` | 安靜模式；無輸出。 |
 | `--no-interaction` | `-n` | 無互動式問題。 |
-| `--verbose=1,2,3` | `-v, -vv, -vvv` | 詳細程度。 例如， `--verbose=3` 或 `-vvv` 顯示除錯詳細資訊，這是最詳細的輸出。 預設為 `--verbose=1` 或 `-v`. |
+| `--verbose=1,2,3` | `-v, -vv, -vvv` | 詳細程度。 例如，`--verbose=3`或`-vvv`會顯示偵錯詳細資訊，這是最詳細的輸出。 預設值為`--verbose=1`或`-v`。 |
 | `--version` | `-V` | 顯示此應用程式版本 |
 | `--ansi` | 不適用 | 強制ANSI輸出 |
 | `--no-ansi` | 不適用 | 停用ANSI輸出 |
 
 >[!NOTE]
 >
->恭喜！您已完成快速安裝。 需要更進階的協助嗎？ 檢視 [進階安裝](advanced.md) 指南。
+>恭喜！您已完成快速安裝。 需要更進階的協助嗎？ 請檢視[進階安裝](advanced.md)指南。

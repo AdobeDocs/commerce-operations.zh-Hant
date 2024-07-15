@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ MySQL資料庫會以非同步方式復寫，這表示從屬端不需要永久連
 有關資料庫復寫的深入討論不在本指南的討論範圍內。 若要進行設定，您可以諮詢資源，例如：
 
 - [MySQL檔案](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [如何在MySQL (digitalocean)中設定主從式複製](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [如何在MySQL (digitalocean)中設定主從式復寫](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerce提供從屬資料庫的MySQL設定範例。 簡單的設定隨附於 `ResourceConnections` 類別 `README.md`.
+Commerce提供從屬資料庫的MySQL設定範例。 提供簡單組態與`ResourceConnections`類別`README.md`。
 
 下列為更進階的內容，僅供您參考：
 
@@ -122,9 +122,9 @@ Commerce提供從屬資料庫的MySQL設定範例。 簡單的設定隨附於 `R
 
 ## 效能提升
 
-若要改善主從式複製的效能，您可以篩選從執行處理上的某些表格。 我們建議使用名稱模式篩選所有暫時表格 `search\_tmp\_%` 用於目錄搜尋。
+若要改善主從式複製的效能，您可以篩選從執行處理上的某些表格。 我們建議篩選用於目錄搜尋且名稱模式為`search\_tmp\_%`的所有暫存表格。
 
-若要這麼做，請將下列行新增至 `my.cnf` 從屬執行個體上的檔案：
+若要這麼做，請在您的從屬執行個體上的`my.cnf`檔案中新增下列行：
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

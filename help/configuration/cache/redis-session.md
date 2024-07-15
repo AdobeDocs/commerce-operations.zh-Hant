@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '712'
 ht-degree: 1%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->您必須 [安裝Redis](config-redis.md#install-redis) 然後再繼續。
+>您必須[安裝Redis](config-redis.md#install-redis)，才能繼續。
 
 
-Commerce現在提供命令列選項，可用於設定Redis工作階段存放區。 在舊版中，您已編輯 `<Commerce install dir>app/etc/env.php` 檔案。 命令列會提供驗證，且是建議的設定方法，但您仍可編輯 `env.php` 檔案。
+Commerce現在提供命令列選項，可用於設定Redis工作階段存放區。 在舊版中，您編輯了`<Commerce install dir>app/etc/env.php`檔案。 命令列提供驗證，且是建議的設定方法，但您仍可編輯`env.php`檔案。
 
-執行 `setup:config:set` 命令並指定Redis特定引數。
+執行`setup:config:set`命令並指定Redis特定引數。
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
@@ -27,9 +27,9 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 
 位置
 
-`--session-save=redis` 啟用Redis工作階段儲存。 如果已啟用此功能，請省略此引數。
+`--session-save=redis`啟用Redis工作階段存放區。 如果已啟用此功能，請省略此引數。
 
-`--session-save-redis-<parameter_name>=<parameter_value>` 是設定工作階段儲存的引數/值組清單：
+`--session-save-redis-<parameter_name>=<parameter_value>`是設定工作階段存放區的引數/值配對清單：
 
 | 命令列引數 | 引數名稱 | 含義 | 預設值 |
 |--- |--- |--- |--- |
@@ -37,9 +37,9 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-redis-port | 連線埠 | Redis伺服器接聽連線埠。 | 6379 |
 | session-save-redis-password | 密碼 | 如果Redis伺服器需要驗證，請指定密碼。 | 空白 |
 | session-save-redis-timeout | 逾時 | 連線逾時（秒）。 | 2.5 |
-| session-save-redis-persistent-id | persistent_identifier | 啟用持續連線的唯一字串（例如，sess-db0）。<br>[phpredis和php-fpm的已知問題](https://github.com/phpredis/phpredis/issues/70). |
-| session-save-redis-db | 資料庫 | 唯一的Redis資料庫編號，建議用來防止資料遺失。<br><br>**重要**：如果您將Redis用於多種型別的快取，則資料庫編號必須不同。 建議您將預設快取資料庫編號指派為0，將頁面快取資料庫編號指派為1，並將工作階段儲存資料庫編號指派為2。 | 0 |
-| session-save-redis-compression-threshold | compression_threshold | 設為0可停用壓縮(建議在 `suhosin.session.encrypt = On`)。<br>[字串超過64 KB的已知問題](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
+| session-save-redis-persistent-id | persistent_identifier | 啟用持續連線的唯一字串（例如，sess-db0）。<br>[phpredis和php-fpm的已知問題](https://github.com/phpredis/phpredis/issues/70)。 |
+| session-save-redis-db | 資料庫 | 唯一的Redis資料庫編號，建議用來防止資料遺失。<br><br>**重要**：如果您針對一種以上的快取型別使用Redis，則資料庫編號必須不同。 建議您將預設快取資料庫編號指派為0，將頁面快取資料庫編號指派為1，並將工作階段儲存資料庫編號指派為2。 | 0 |
+| session-save-redis-compression-threshold | compression_threshold | 設為0可停用壓縮（建議在`suhosin.session.encrypt = On`時使用）。<br>[字串超過64 KB的已知問題](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18)。 | 2048 |
 | session-save-redis-compression-lib | compression_library | 選項： gzip、lzf、lz4或snappy。 | gzip |
 | session-save-redis-log-level | log_level | 設為下列任一項，依從少到多的順序列出：<ul><li>0 （緊急：只有最嚴重的錯誤）<li>1 （警示：需要立即動作）<li>2 （嚴重：應用程式元件無法使用）<li>3 （錯誤：執行階段錯誤，非嚴重，但必須監視）<li>4 （警告：其他資訊，建議）<li>5 （注意：正常但重要的情況）<li>6 （資訊：資訊訊息）<li>7 （除錯：僅供開發或測試使用的最多資訊）</ul> | 1 |
 | session-save-redis-max-concurrency | max_concurrency | 可等候鎖定一個工作階段的最大處理序數目。 對於大型生產叢集，請將此項設定為至少PHP流程數的10%。 | 6 |
@@ -58,7 +58,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 
 ## 範例
 
-下列範例會將Redis設為工作階段資料存放區，並將主機設為 `127.0.0.1`，將記錄層級設為4，並將資料庫編號設為2。 所有其他引數都會設定為預設值。
+下列範例將Redis設為工作階段資料存放區，將主機設為`127.0.0.1`，將記錄層級設為4，並將資料庫編號設為2。 所有其他引數都會設定為預設值。
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
@@ -66,7 +66,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.
 
 ### 結果
 
-Commerce會將類似下列的行新增至 `<magento_root>app/etc/env.php`：
+Commerce將類似下列的行新增至`<magento_root>app/etc/env.php`：
 
 ```php
     'session' =>
@@ -102,7 +102,7 @@ Commerce會將類似下列的行新增至 `<magento_root>app/etc/env.php`：
 
 ## 驗證Redis連線
 
-若要確認Redis和Commerce是否共同運作，請登入執行Redis的伺服器、開啟終端機，然後使用Redis監視命令或ping命令。
+若要確認Redis與Commerce是否共同運作，請登入執行Redis的伺服器、開啟終端機，然後使用Redis監視指令或ping指令。
 
 ### Redis監視命令
 
@@ -127,10 +127,10 @@ redis-cli monitor
 redis-cli ping
 ```
 
-`PONG` 應為回應。
+`PONG`應為回應。
 
 如果兩個指令都成功，Redis就會正確設定。
 
 ### 檢查壓縮資料
 
-若要檢查壓縮的工作階段資料和頁面快取， [RESP.app](https://flathub.org/apps/details/app.resp.RESP) 支援自動解壓縮Commerce 2工作階段和頁面快取，並以可讀取的格式顯示PHP工作階段資料。
+若要檢查壓縮的「工作階段」資料和「頁面快取」，[RESP.app](https://flathub.org/apps/details/app.resp.RESP)支援Commerce 2「工作階段」和「頁面」快取的自動解壓縮，並以可讀取的格式顯示PHP工作階段資料。

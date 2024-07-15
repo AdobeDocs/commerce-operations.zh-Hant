@@ -4,7 +4,7 @@ description: 瞭解如何從命令列執行程式碼編譯器。
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 - 存放庫程式碼產生（為API產生的程式碼）
 - 服務資料屬性產生（為資料物件產生的擴充功能類別）
 
-您可以在下列位置找到程式碼編譯類別： [\Magento\Setup\Module\Di\App\Task\Operation][operation] 名稱空間。
+您可以在[\Magento\Setup\Module\Di\App\Task\Operation][operation]名稱空間中找到程式碼編譯類別。
 
 若要執行單一租使用者編譯器：
 
@@ -44,9 +44,9 @@ Generated code and dependency injection configuration successfully.
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   使用 `[-c|--clear-static-content]` 清除靜態內容的選項。 如果您先前已啟用或停用模組，且必須清除先前為其產生的靜態內容，則需使用此選項。
+   使用`[-c|--clear-static-content]`選項清除靜態內容。 如果您先前已啟用或停用模組，且必須清除先前為其產生的靜態內容，則需使用此選項。
 
-   另請參閱 [啟用模組](../../installation/tutorials/manage-modules.md).
+   請參閱[啟用模組](../../installation/tutorials/manage-modules.md)。
 
 1. 編譯程式碼。
 
@@ -58,7 +58,7 @@ Generated code and dependency injection configuration successfully.
    Generated code and dependency injection configuration successfully.
    ```
 
-若要在不使用資料庫的情況下編譯程式碼，請參閱 [部署靜態檢視檔案而不安裝Magento](../cli/static-view-file-deployment.md).
+若要編譯沒有資料庫的程式碼，請參閱[部署靜態檢視檔案而不安裝Magento](../cli/static-view-file-deployment.md)。
 
 <!-- link definitions -->
 

@@ -5,7 +5,7 @@ feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -15,16 +15,16 @@ ht-degree: 0%
 部署靜態檢視檔案時，您可以選擇三種可用策略之一。 其中每個選項都可針對不同使用案例提供最佳部署結果：
 
 - [標準](#standard-strategy)：一般部署程式。
-- [快速](#quick-strategy) (_預設_)：在部署多個地區設定的檔案時，將部署所需的時間降到最低。
-- [精簡](#compact-strategy)：將發佈檢視檔案所佔用的空間減到最少。
+- [快速](#quick-strategy) （_預設_）：部署一個以上地區設定的檔案時，將部署所需的時間減至最少。
+- [壓縮](#compact-strategy)：將發行檢視檔所佔用的空間減到最少。
 
 以下各節說明每個策略的實作詳細資訊和功能。
 
 ## 標準策略
 
-使用標準策略時，會部署所有套件的所有靜態檢視檔案，也就是由處理 [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
+使用標準策略時，會部署所有套件的所有靜態檢視檔案，也就是由[`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php)處理。
 
-如需詳細資訊，請參閱 [部署靜態檢視檔案](../cli/static-view-file-deployment.md).
+如需詳細資訊，請參閱[部署靜態檢視檔案](../cli/static-view-file-deployment.md)。
 
 ## 快速策略
 
@@ -38,15 +38,15 @@ ht-degree: 0%
 
 >[!INFO]
 >
->作者： _相似_，是指與地區、主題或區域無關的檔案。 這些檔案可能包含CSS、影像和字型。
+>按&#x200B;_similar_，我們是指與地區、佈景主題或區域無關的檔案。 這些檔案可能包含CSS、影像和字型。
 
 雖然有許多檔案重複，但此方法可儘量減少多個區域設定所需的部署時間。
 
 ## 精簡策略
 
-壓縮策略可透過將類似檔案儲存在來避免檔案重複 `base` 子目錄。
+壓縮策略藉由將類似的檔案儲存在`base`子目錄中來避免檔案重複。
 
-為獲得最佳化結果，已分配了三個可能相似性的範圍：區域、主題和地區設定。 此 `base` 會為這些範圍的所有組合建立子目錄。
+為獲得最佳化結果，已分配了三個可能相似性的範圍：區域、主題和地區設定。 會為這些範圍的所有組合建立`base`子目錄。
 
 檔案會根據下列模式部署至這些子目錄。
 
@@ -66,11 +66,11 @@ ht-degree: 0%
 - `map.php`
 - `requirejs-map.js`
 
-此 `map.php` 檔案使用者 [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) 以建置正確的URL。
+[`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php)已使用`map.php`檔案來建置正確的URL。
 
-此 `requirejs-map.js` 使用者 `baseUrlResolver` RequireJS的外掛程式。
+`requirejs-map.js`由`baseUrlResolver`外掛程式用於RequireJS。
 
-範例： `map.php`：
+`map.php`的範例：
 
 ```php?start_inline=1
 return [
@@ -87,7 +87,7 @@ return [
 ];
 ```
 
-範例： `requirejs-map.js`：
+`requirejs-map.js`的範例：
 
 ```js
 require.config({
@@ -101,6 +101,6 @@ require.config({
 
 ## 擴充功能開發人員的提示
 
-若要建置靜態檢視檔案的URL，請使用 [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
+若要建置靜態檢視檔案的URL，請使用[`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244)。
 
 請勿使用URL串連來避免在頁面轉譯期間找不到且未顯示靜態檔案的問題。

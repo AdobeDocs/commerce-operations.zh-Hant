@@ -5,20 +5,20 @@ feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
 source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
 
 # 目錄設定路徑參考
 
-本節列出「管理員」中選項可用的變數名稱和設定路徑，位於 **商店** >設定> **設定** > **目錄**.
+此區段列出&#x200B;**商店** >設定> **設定** > **目錄**&#x200B;底下「管理員」中選項可用的變數名稱和設定路徑。
 
-此 [`magento app:config:dump` 命令](../cli/export-configuration.md) 將這些值寫入共用組態檔， `app/etc/config.php`，這應該是在原始檔控制中。 若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱 [使用環境變數覆寫組態設定](override-config-settings.md#environment-variables). 此主題會 _非_ 清單 [敏感值和系統特定值](config-reference-sens.md).
+[`magento app:config:dump`命令](../cli/export-configuration.md)將這些值寫入到共用組態檔`app/etc/config.php`，它應該是在原始檔控制中。 若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱[使用環境變數覆寫組態設定](override-config-settings.md#environment-variables)。 此主題&#x200B;_不_&#x200B;列出[敏感值和系統特定值](config-reference-sens.md)。
 
 ## 目錄路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **目錄** > **目錄**.
+這些設定值可在&#x200B;**存放區** >設定> **設定** > **目錄** > **目錄**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -53,7 +53,7 @@ ht-degree: 0%
 | 顯示相關影片 | `catalog/product_video/show_related` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 自動重新啟動視訊 | `catalog/product_video/video_auto_restart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 目錄價格範圍 | `catalog/price/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 預設產品價格 | `catalog/price/default_product_price` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 預設產品價格 | `catalog/price/default_product_price` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 顯示產品計數 | `catalog/layered_navigation/display_product_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 價格瀏覽步驟計算 | `catalog/layered_navigation/price_range_calculation` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 預設價格導覽步驟 | `catalog/layered_navigation/price_range_step` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -64,14 +64,14 @@ ht-degree: 0%
 | 最小查詢長度 | `catalog/search/min_query_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 查詢長度上限 | `catalog/search/max_query_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 搜尋引擎 | `catalog/search/engine` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Solr伺服器逾時 | `catalog/search/solr_server_timeout` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| Solr伺服器逾時 | `catalog/search/solr_server_timeout` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 索引模式 | `catalog/search/engine_commit_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 啟用搜尋建議 | `catalog/search/search_suggestion_enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 搜尋建議計數 | `catalog/search/search_suggestion_count` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 顯示每個建議的結果計數 | `catalog/search/search_suggestion_count_results_enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 啟用搜尋Recommendations | `catalog/search/search_recommendations_enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 搜尋Recommendations計數 | `catalog/search/search_recommendations_count` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 顯示每個建議的結果計數 | `catalog/search/search_recommendations_count_results_enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 啟用搜尋建議 | `catalog/search/search_suggestion_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 搜尋建議計數 | `catalog/search/search_suggestion_count` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 顯示每個建議的結果計數 | `catalog/search/search_suggestion_count_results_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 啟用搜尋Recommendations | `catalog/search/search_recommendations_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 搜尋Recommendations計數 | `catalog/search/search_recommendations_count` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 顯示每個建議的結果計數 | `catalog/search/search_recommendations_count_results_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 要比對的最少字詞 | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 產生「類別/產品」URL重寫 | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 熱門搜尋詞 | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -82,15 +82,15 @@ ht-degree: 0%
 | 頁面標題分隔符號 | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 對類別使用標準連結中繼標籤 | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 對產品使用標準連結中繼標籤 | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 啟用 | `catalog/magento_catalogpermissions/enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許瀏覽類別 | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 客戶群組 | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 登陸頁面 | `catalog/magento_catalogpermissions/restricted_landing_page` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 顯示產品價格 | `catalog/magento_catalogpermissions/grant_catalog_product_price` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 客戶群組 | `catalog/magento_catalogpermissions/grant_catalog_product_price_groups` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許加入購物車 | `catalog/magento_catalogpermissions/grant_checkout_items` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 客戶群組 | `catalog/magento_catalogpermissions/grant_checkout_items_groups` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 不允許目錄搜尋依據 | `catalog/magento_catalogpermissions/deny_catalog_search` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 啟用 | `catalog/magento_catalogpermissions/enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許瀏覽類別 | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 客戶群組 | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 登陸頁面 | `catalog/magento_catalogpermissions/restricted_landing_page` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 顯示產品價格 | `catalog/magento_catalogpermissions/grant_catalog_product_price` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 客戶群組 | `catalog/magento_catalogpermissions/grant_catalog_product_price_groups` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許加入購物車 | `catalog/magento_catalogpermissions/grant_checkout_items` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 客戶群組 | `catalog/magento_catalogpermissions/grant_checkout_items_groups` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 不允許目錄搜尋依據 | `catalog/magento_catalogpermissions/deny_catalog_search` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 啟用下載的訂購專案狀態 | `catalog/downloadable/order_item_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 預設最大下載次數 | `catalog/downloadable/downloads_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 可共用 | `catalog/downloadable/shareable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -99,29 +99,29 @@ ht-degree: 0%
 | 在新視窗中開啟連結 | `catalog/downloadable/links_target_new_window` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 使用內容處置 | `catalog/downloadable/content_disposition` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 如果購物車包含可下載的專案，則停用訪客簽出 | `catalog/downloadable/disable_guest_checkout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 使用JavaScript日曆 | `catalog/custom_options/use_calendar` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 使用JavaScript行事曆 | `catalog/custom_options/use_calendar` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 日期欄位順序 | `catalog/custom_options/date_fields_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 時間格式 | `catalog/custom_options/time_format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 年份範圍 | `catalog/custom_options/year_range` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 啟用目錄事件功能 | `catalog/magento_catalogevent/enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 在店面啟用目錄事件Widget | `catalog/magento_catalogevent/lister_output` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 要在事件滑桿Widget中顯示的事件數 | `catalog/magento_catalogevent/lister_widget_limit` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 事件滑桿Widget中每次點按捲動的事件 | `catalog/magento_catalogevent/lister_widget_scroll` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 相關產品清單中的最大產品數量 | `catalog/magento_targetrule/related_position_limit` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 顯示相關產品 | `catalog/magento_targetrule/related_position_behavior` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 相關產品清單中產品的旋轉模式 | `catalog/magento_targetrule/related_rotation_mode` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 交叉銷售產品清單中的最大產品數量 | `catalog/magento_targetrule/crosssell_position_limit` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 顯示交叉銷售產品 | `catalog/magento_targetrule/crosssell_position_behavior` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 交叉銷售產品清單中產品的旋轉模式 | `catalog/magento_targetrule/crosssell_rotation_mode` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 追加銷售產品清單中的最大產品數量 | `catalog/magento_targetrule/upsell_position_limit` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 顯示追加銷售產品 | `catalog/magento_targetrule/upsell_position_behavior` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 追加銷售產品清單中產品的旋轉模式 | `catalog/magento_targetrule/upsell_rotation_mode` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 啟用目錄事件功能 | `catalog/magento_catalogevent/enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 在店面啟用目錄事件Widget | `catalog/magento_catalogevent/lister_output` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 要在事件滑桿Widget中顯示的事件數 | `catalog/magento_catalogevent/lister_widget_limit` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 事件滑桿Widget中每次點按捲動的事件 | `catalog/magento_catalogevent/lister_widget_scroll` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 相關產品清單中的最大產品數量 | `catalog/magento_targetrule/related_position_limit` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 顯示相關產品 | `catalog/magento_targetrule/related_position_behavior` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 相關產品清單中產品的旋轉模式 | `catalog/magento_targetrule/related_rotation_mode` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 交叉銷售產品清單中的最大產品數量 | `catalog/magento_targetrule/crosssell_position_limit` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 顯示交叉銷售產品 | `catalog/magento_targetrule/crosssell_position_behavior` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 交叉銷售產品清單中產品的旋轉模式 | `catalog/magento_targetrule/crosssell_rotation_mode` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 追加銷售產品清單中的最大產品數量 | `catalog/magento_targetrule/upsell_position_limit` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 顯示追加銷售產品 | `catalog/magento_targetrule/upsell_position_behavior` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 追加銷售產品清單中產品的旋轉模式 | `catalog/magento_targetrule/upsell_rotation_mode` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## 詳細目錄路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **目錄** > **詳細目錄**.
+這些組態值可在&#x200B;**存放區** >設定> **組態** > **目錄** > **詳細目錄**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -130,10 +130,10 @@ ht-degree: 0%
 | 顯示無庫存產品 | `cataloginventory/options/show_out_of_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 只有X個左臨界值 | `cataloginventory/options/stock_threshold_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 在店面顯示庫存產品可用性 | `cataloginventory/options/display_product_stock_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 與目錄同步 | `cataloginventory/options/synchronize_with_catalog` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 與目錄同步 | `cataloginventory/options/synchronize_with_catalog` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 管理庫存 | `cataloginventory/item_options/manage_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 延期交貨 | `cataloginventory/item_options/backorders` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 使用延期庫存更新 | `cataloginventory/item_options/use_deferred_stock_update` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 使用延期庫存更新 | `cataloginventory/item_options/use_deferred_stock_update` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 購物車中允許的最大數量 | `cataloginventory/item_options/max_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 缺貨臨界值 | `cataloginventory/item_options/min_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 購物車允許的最小數量 | `cataloginventory/item_options/min_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -141,8 +141,8 @@ ht-degree: 0%
 | 啟用數量增量 | `cataloginventory/item_options/enable_qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 數量增加 | `cataloginventory/item_options/qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 自動將銷退折讓單專案退回存貨 | `cataloginventory/item_options/auto_return` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 非同步執行 | `cataloginventory/bulk_operations/async` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 非同步批次大小 | `cataloginventory/bulk_operations/batch_size` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 非同步執行 | `cataloginventory/bulk_operations/async` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 非同步批次大小 | `cataloginventory/bulk_operations/batch_size` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 提供者 | `cataloginventory/source_selection_distance_based/provider` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 計算模式 | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 值 | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -151,20 +151,20 @@ ht-degree: 0%
 
 ## Visual Merchandiser路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **目錄** > **Visual Merchandiser**.
+這些設定值可在&#x200B;**存放區** >設定> **設定** > **目錄** > **Visual Merchandiser**&#x200B;的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
-| 類別規則的可見屬性 | `visualmerchandiser/options/smart_attributes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小庫存臨界值 | `visualmerchandiser/options/minimum_stock_threshold` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 色彩屬性代碼 | `visualmerchandiser/options/color_attribute_code` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 色彩順序 | `visualmerchandiser/options/color_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 類別規則的可見屬性 | `visualmerchandiser/options/smart_attributes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小庫存臨界值 | `visualmerchandiser/options/minimum_stock_threshold` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 色彩屬性代碼 | `visualmerchandiser/options/color_attribute_code` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 色彩順序 | `visualmerchandiser/options/color_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## XML Sitemap路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **目錄** > **XML Sitemap**.
+這些組態值可在&#x200B;**存放區** >設定> **組態** > **目錄** > **XML Sitemap**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -188,7 +188,7 @@ ht-degree: 0%
 
 ## RSS摘要路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **目錄** > **RSS摘要**.
+這些設定值可在&#x200B;**存放區** >設定> **設定** > **目錄** > **RSS摘要**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -204,7 +204,7 @@ ht-degree: 0%
 
 ## 傳送電子郵件給朋友路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **目錄** > **傳送電子郵件給朋友**.
+這些組態值可在&#x200B;**商店** >設定> **組態** > **目錄** > **傳送電子郵件給朋友**&#x200B;的Admin中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|

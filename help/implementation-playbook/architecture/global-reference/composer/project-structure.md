@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Composer專案結構
 
-本指南說明如何設定及維護 [個別套件選項](../examples.md#option-1-separate-packages) 全球參考架構(GRA)範例中說明。
+本指南說明如何設定及維護全域參考架構(GRA)範例中說明的[個別套件選項](../examples.md#option-1-separate-packages)。
 
 ## 必要條件
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 - 您有Git存放庫
 - 您有Composer存放庫（本主題重點說明Private Packagist）
-- 您已將Composer存放庫設定為映象 `repo.magento.com` 和 `packagist.org` 存放庫
+- 您已將Composer存放庫設定為映象`repo.magento.com`和`packagist.org`存放庫
 
 ## 主要Git專案存放庫
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 └─ composer.lock
 ```
 
-將下列內容新增至 `.gitignore` 檔案：
+將下列內容新增至`.gitignore`檔案：
 
 ```tree
 /*
@@ -47,9 +47,9 @@ ht-degree: 0%
 
 ## 初始化主要專案
 
-1. 建立名為的Git存放庫 `project-<region/country/brand>`.
+1. 建立名為`project-<region/country/brand>`的Git存放庫。
 
-1. 建立 `composer.json` 和 `composer.lock` 檔案：
+1. 建立`composer.json`和`composer.lock`檔案：
 
    ```bash
    composer create-project --no-install --repository-url=https://repo.magento.com/ magento/project-enterprise-edition project-<region/country/brand>
@@ -71,13 +71,13 @@ ht-degree: 0%
 
 ## 儲存非模組檔案
 
-1. 新增 `app/etc/config.xml` 檔案存放庫中。
+1. 將`app/etc/config.xml`檔案新增至Git存放庫。
 
-   您可以使用要建立的模組來安裝其他區域或品牌專屬檔案，例如 `.htaccess`、Google或Bing驗證文字檔、可執行檔，或其他不受Adobe Commerce模組管理的靜態檔案。
+   您可以使用要建立的模組來安裝其他區域或品牌特定檔案，例如`.htaccess`、Google或Bing驗證文字檔、可執行檔，或其他未由Adobe Commerce模組管理的靜態檔案。
 
-   使用 `magento2-component` 輸入套件以建立檔案對應，以在檔案複製期間將檔案複製到主Git存放庫 `composer install` 和 `composer update` 操作。
+   使用`magento2-component`型別套件建立檔案對應，以在`composer install`和`composer update`作業期間將檔案複製到主要Git存放庫。
 
-1. 建立遵循命名慣例的Git存放庫 `component-environment-<region/country/brand>`：
+1. 建立遵循命名慣例`component-environment-<region/country/brand>`的Git存放庫：
 
    ```bash
    bin/magento module:enable --all
@@ -94,7 +94,7 @@ ht-degree: 0%
    composer config -e
    ```
 
-1. 新增 `app/etc/config.php` 檔案作為中的對應 `extra.map` 您的屬性 `composer.json` 檔案：
+1. 將`app/etc/config.php`檔案新增為`composer.json`檔案的`extra.map`屬性中的對應：
 
    ```json
    {
@@ -115,7 +115,7 @@ ht-degree: 0%
    }
    ```
 
-1. 驗證您的 `composer.json` 檔案並將其提交到Git存放庫：
+1. 驗證`composer.json`檔案並將其提交至Git存放庫：
 
    ```bash
    composer validate
@@ -203,7 +203,7 @@ ht-degree: 0%
    git push --tags
    ```
 
-1. 確認撰寫器已複製 `app/etc/config.php` 檔案來源 `<client>/component-environment-<region/country/brand>`.
+1. 驗證Composer是否從`<client>/component-environment-<region/country/brand>`複製`app/etc/config.php`檔案。
 
 ## 部署程式碼
 
@@ -211,24 +211,24 @@ ht-degree: 0%
 
 ## 新增其他執行個體和套件
 
-每個例項(地區、品牌或其他獨特的Adobe Commerce安裝)應各有不同 **主要專案** 例項， **特定中繼**、和 **環境元件套件**. 此 **GRA中繼資料** 應為 **已共用** 橫跨所有執行個體。
+每個執行個體(地區、品牌或其他獨特的Adobe Commerce安裝)應該有自己的&#x200B;**主要專案**&#x200B;執行個體、**特定中繼套件**&#x200B;和&#x200B;**環境元件套件**。 **GRA中繼資料**&#x200B;應在所有執行個體之間&#x200B;**共用**。
 
 下列任一專案應需要功能套件(例如Adobe Commerce模組、主題、語言套件和程式庫)和協力廠商套件：
 
-- **GRA中繼資料** — 安裝於 _全部_ 執行個體
-- **例項特定中繼資料** — 適用於安裝在單一品牌或區域上
+- **GRA Metapackage** — 安裝在&#x200B;_所有_&#x200B;執行個體上
+- **執行個體專屬中繼套件** — 適用於安裝在單一品牌或區域上
 
 >[!IMPORTANT]
 >
->不需要主專案的套件 `composer.json` 上的檔案 `main` 或 `release` 分支。
+>不需要位於`main`或`release`分支上主要專案的`composer.json`檔案中的封裝。
 
 ## 準備開發
 
-若要進行開發，請安裝 `develop` 維護的所有模組版本。
+若要進行開發，請安裝您維護之所有模組的`develop`版本。
 
-根據您的分支策略，您可能會 `develop`， `qa`， `uat`、和 `main` 分支。 Composer中的每個分支都具有 `dev-` 前置詞。 因此 `develop` 可以透過Composer要求分支為版本 `dev-develop`.
+根據您的分支策略，您可能會有`develop`、`qa`、`uat`和`main`個分支。 每個分支都存在於具有`dev-`首碼的撰寫器中。 因此`develop`分支必須透過Composer做為版本`dev-develop`。
 
-1. 建立 `develop` 在所有模組和專案存放庫中分支。
+1. 在所有模組和專案存放庫中建立`develop`個分支。
 
    ```bash
    cd ../component-environment-<region/country/brand>
@@ -262,7 +262,7 @@ ht-degree: 0%
    "magento-services/component-environment-fantasy-corp:dev-develop as 0.999"
    ```
 
-   上一步驟會在 `composer.json` 檔案：
+   上一步會在`composer.json`檔案中產生下列各行：
 
    ```json
    "require": {
@@ -274,4 +274,4 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >**不要合併** 這些 `composer.json` 對您的生產分支的檔案變更。 僅在上安裝穩定版本的套件 `release` 和 `main` 分支。 您可以定義下列相依性 `qa` 分支和其他非主要分支。
+   >**請勿將這`composer.json`個檔案變更合併**&#x200B;至您的生產分支。 僅在`release`和`main`分支上安裝穩定版本的套件。 您可以為`qa`個分支和其他非主要分支定義這些相依性。

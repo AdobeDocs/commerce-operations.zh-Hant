@@ -5,7 +5,7 @@ exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
 feature: Integration, Cache
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ ht-degree: 0%
 
 完成此初始規劃後，即可開始設定技術設定，以根據這些需求設定快取。
 
-即使內容已更新且需要在快取TTL內上線，在大多數情況下也可以手動清除的快取 [AEM傳送器](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) 和 [Adobe Commerce](../configuration//cli/manage-cache.md#clean-and-flush-cache-types) 選擇性地快取該內容，這表示緊急的變更將立即反映出來。 手動清除快取的程式也應預先計畫和測試，以便如果需要手動強制更新某些內容，則將其記錄在網站操作Runbook中，並清除需要如何及誰參與才能執行此操作。
+即使內容已更新且需要在快取TTL內上線，在大多數情況下，也可以選擇性地手動清除[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en)和[Adobe Commerce](../configuration//cli/manage-cache.md#clean-and-flush-cache-types)快取的快取，這表示將立即反映緊急變更。 手動清除快取的程式也應預先計畫和測試，以便如果需要手動強制更新某些內容，則將其記錄在網站操作Runbook中，並清除需要如何及誰參與才能執行此操作。

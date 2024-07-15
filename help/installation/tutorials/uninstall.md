@@ -11,25 +11,25 @@ ht-degree: 0%
 
 # 解除安裝或重新安裝Adobe Commerce
 
-在使用這些指令之前，您必須 [安裝應用程式](../tutorials/install.md).
+使用這些命令之前，您必須[安裝應用程式](../tutorials/install.md)。
 
 ## 更新應用程式
 
 若要更新應用程式，請執行下列動作：
 
-* 如果您是從封存安裝軟體，或使用「composer-create-project」，請參閱 [升級指南](../../upgrade/overview.md).
-* 如果您是參與開發人員(也就是您使用 `git clone`)，請參閱 [更新應用程式](../../upgrade/developer/git-installs.md).
+* 若您是從封存安裝軟體，或使用&#39;composer-create-project&#39;，請參閱[升級指南](../../upgrade/overview.md)。
+* 如果您是參與開發人員（也就是您使用了`git clone`），請參閱[更新應用程式](../../upgrade/developer/git-installs.md)。
 
 ## 重新安裝應用程式
 
 從命令列重新安裝應用程式的方式取決於您的角色：
 
-* 如果您是從封存安裝軟體，或使用「composer-create-project」，請參閱 [更新安裝相依性](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
-* 如果您是參與開發人員(也就是說，您已開始使用 `git clone`)，請參閱 [更新安裝相依性](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+* 如果您是從封存安裝軟體，或使用&#39;composer-create-project&#39;，請參閱[更新安裝相依性](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/)。
+* 如果您是參與開發人員（亦即您已開始使用`git clone`），請參閱[更新安裝相依性](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/)。
 
 ## 解除安裝應用程式
 
-解除安裝應用程式會捨棄並還原資料庫、移除部署設定，並清除下的目錄 `var`.
+解除安裝應用程式會刪除並還原資料庫、移除部署設定，以及清除`var`下的目錄。
 
 若要解除安裝應用程式，請輸入下列命令：
 
@@ -45,9 +45,9 @@ bin/magento setup:uninstall
 
 ## 可選擇保留產生的檔案
 
-根據預設， `bin/magento setup:upgrade` 清除編譯的程式碼和快取。 通常您會使用 `bin/magento setup:upgrade` 更新元件時，每個元件可能需要不同的編譯類別。
+依預設，`bin/magento setup:upgrade`會清除編譯的程式碼和快取。 一般而言，您會使用`bin/magento setup:upgrade`來更新元件，而每個元件可能需要不同的編譯類別。
 
-但是，在某些情況下（特別是部署到生產環境），您可能希望避免清除編譯的程式碼，因為可能需要一些時間。 （快取仍會清除。） 更新資料庫架構和資料 *不含* 清除編譯的程式碼，輸入：
+但是，在某些情況下（特別是部署到生產環境），您可能希望避免清除編譯的程式碼，因為可能需要一些時間。 （快取仍會清除。） 若要更新資料庫結構描述和資料&#x200B;*，而不需要*&#x200B;清除編譯的程式碼，請輸入：
 
 ```bash
 bin/magento setup:upgrade --keep-generated
@@ -55,7 +55,7 @@ bin/magento setup:upgrade --keep-generated
 
 >[!WARNING]
 >
->選填 `--keep-generated` 選項應在有限的情況下由經驗豐富的系統整合經銷商使用 *僅限*. 此選項應 *從不* 用於開發環境中。 不當使用此選用引數，可能會在程式碼執行期間導致錯誤。
+>選擇性`--keep-generated`選項只應在有限的情況下由經驗豐富的系統整合器&#x200B;*使用*。 此選項應&#x200B;*永遠不要在開發環境中使用*。 不當使用此選用引數，可能會在程式碼執行期間導致錯誤。
 
 ## 安裝應用程式
 

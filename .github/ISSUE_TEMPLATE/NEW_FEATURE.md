@@ -7,7 +7,7 @@ assignees: dshevtsov
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
 source-wordcount: '10'
-ht-degree: 0%
+ht-degree: 50%
 
 ---
 

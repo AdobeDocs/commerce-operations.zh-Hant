@@ -12,14 +12,14 @@ ht-degree: 0%
 <!-- The template to render with above values -->
 **版本**： 3.0.17
 
-此參照包含9個指令，這些指令可透過 `bin/uct` 命令列工具。
-初始清單會使用 `bin/uct list` Adobe Commerce的命令。
+此參考包含9個可透過`bin/uct`命令列工具使用的命令。
+初始清單是在Adobe Commerce使用`bin/uct list`命令自動產生的。
 
-進一步瞭解中的工具 [概觀](/help/upgrade/upgrade-compatibility-tool/overview.md).
+在[總覽](/help/upgrade/upgrade-compatibility-tool/overview.md)中進一步瞭解工具。
 
 >[!NOTE]
 >
->此參考是從應用程式程式碼基底產生的。 若要變更內容，您可以更新中對應命令實施的原始碼 [程式碼基底](https://github.com/magento) 存放庫並提交您的變更以供檢閱。 另一種方式是 _提供意見反應_ （尋找右上方的連結）。 如需貢獻准則，請參閱 [程式碼協助撰寫](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>此參考是從應用程式程式碼基底產生的。 若要變更內容，您可以更新[程式碼基底](https://github.com/magento)存放庫中對應命令實作的原始程式碼，並提交變更以供檢閱。 另一種方式是&#x200B;_提供意見反應_ （在右上角尋找連結）。 如需貢獻准則，請參閱[程式碼貢獻](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)。
 
 ## `_complete`
 
@@ -30,53 +30,53 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 提供殼層完成建議的內部命令
 
 
-### `--shell`， `-s`
+### `--shell`，`-s`
 
 殼層型別(「bash」)
 
 - 需要值
 
-### `--input`， `-i`
+### `--input`，`-i`
 
-輸入權杖的陣列（例如COMP_WORDS或argv）
+輸入權杖陣列(例如COMP_WORDS或argv)
 
 - 預設： `[]`
 - 需要值
 
-### `--current`， `-c`
+### `--current`，`-c`
 
-游標所在的「輸入」陣列索引（例如COMP_CWORD）
+游標所在的「輸入」陣列索引(例如COMP_CWORD)
 
 - 需要值
 
-### `--symfony`， `-S`
+### `--symfony`，`-S`
 
 完成指令碼的版本
 
 - 需要值
 
-### `--help`， `-h`
+### `--help`，`-h`
 
 顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`， `-q`
+### `--quiet`，`-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`， `-v|-vv|-vvv`
+### `--verbose`，`-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`， `-V`
+### `--version`，`-V`
 
 顯示此應用程式版本
 
@@ -96,7 +96,7 @@ bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`， `-n`
+### `--no-interaction`，`-n`
 
 請勿詢問任何互動式問題
 
@@ -155,28 +155,28 @@ Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
 - 預設： `false`
 - 不接受值
 
-### `--help`， `-h`
+### `--help`，`-h`
 
 顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`， `-q`
+### `--quiet`，`-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`， `-v|-vv|-vvv`
+### `--verbose`，`-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`， `-V`
+### `--version`，`-V`
 
 顯示此應用程式版本
 
@@ -196,7 +196,7 @@ Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`， `-n`
+### `--no-interaction`，`-n`
 
 請勿詢問任何互動式問題
 
@@ -247,28 +247,28 @@ To display the list of available commands, please use the list command.
 - 預設： `false`
 - 不接受值
 
-### `--help`， `-h`
+### `--help`，`-h`
 
 顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`， `-q`
+### `--quiet`，`-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`， `-v|-vv|-vvv`
+### `--verbose`，`-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`， `-V`
+### `--version`，`-V`
 
 顯示此應用程式版本
 
@@ -288,7 +288,7 @@ To display the list of available commands, please use the list command.
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`， `-n`
+### `--no-interaction`，`-n`
 
 請勿詢問任何互動式問題
 
@@ -350,28 +350,28 @@ It's also possible to get raw list of commands (useful for embedding command run
 - 預設： `false`
 - 不接受值
 
-### `--help`， `-h`
+### `--help`，`-h`
 
 顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`， `-q`
+### `--quiet`，`-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`， `-v|-vv|-vvv`
+### `--verbose`，`-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`， `-V`
+### `--version`，`-V`
 
 顯示此應用程式版本
 
@@ -391,7 +391,7 @@ It's also possible to get raw list of commands (useful for embedding command run
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`， `-n`
+### `--no-interaction`，`-n`
 
 請勿詢問任何互動式問題
 
@@ -415,28 +415,28 @@ bin/uct refactor <path>
 
 - 必填
 
-### `--help`， `-h`
+### `--help`，`-h`
 
 顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`， `-q`
+### `--quiet`，`-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`， `-v|-vv|-vvv`
+### `--verbose`，`-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`， `-V`
+### `--version`，`-V`
 
 顯示此應用程式版本
 
@@ -456,7 +456,7 @@ bin/uct refactor <path>
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`， `-n`
+### `--no-interaction`，`-n`
 
 請勿詢問任何互動式問題
 
@@ -485,34 +485,34 @@ Adobe Commerce安裝目錄。
 Adobe Commerce一般安裝目錄。
 
 
-### `--output`， `-o`
+### `--output`，`-o`
 
 匯出輸出的檔案路徑（Json格式）
 
 - 接受值
 
-### `--help`， `-h`
+### `--help`，`-h`
 
 顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`， `-q`
+### `--quiet`，`-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`， `-v|-vv|-vvv`
+### `--verbose`，`-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`， `-V`
+### `--version`，`-V`
 
 顯示此應用程式版本
 
@@ -532,7 +532,7 @@ Adobe Commerce一般安裝目錄。
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`， `-n`
+### `--no-interaction`，`-n`
 
 請勿詢問任何互動式問題
 
@@ -562,28 +562,28 @@ bin/uct dbschema:diff <current-version> <target-version>
 
 - 必填
 
-### `--help`， `-h`
+### `--help`，`-h`
 
 顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`， `-q`
+### `--quiet`，`-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`， `-v|-vv|-vvv`
+### `--verbose`，`-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`， `-V`
+### `--version`，`-V`
 
 顯示此應用程式版本
 
@@ -603,7 +603,7 @@ bin/uct dbschema:diff <current-version> <target-version>
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`， `-n`
+### `--no-interaction`，`-n`
 
 請勿詢問任何互動式問題
 
@@ -633,34 +633,34 @@ GraphQL結構描述相容性驗證
 
 - 必填
 
-### `--output`， `-o`
+### `--output`，`-o`
 
 匯出輸出的檔案路徑（JSON格式）
 
 - 接受值
 
-### `--help`， `-h`
+### `--help`，`-h`
 
 顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`， `-q`
+### `--quiet`，`-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`， `-v|-vv|-vvv`
+### `--verbose`，`-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`， `-V`
+### `--version`，`-V`
 
 顯示此應用程式版本
 
@@ -680,7 +680,7 @@ GraphQL結構描述相容性驗證
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`， `-n`
+### `--no-interaction`，`-n`
 
 請勿詢問任何互動式問題
 
@@ -704,13 +704,13 @@ Adobe Commerce安裝目錄。
 
 - 必填
 
-### `--current-version`， `-a`
+### `--current-version`，`-a`
 
 如果省略，將會使用目前的Adobe Commerce版本、Adobe Commerce安裝版本。
 
 - 接受值
 
-### `--coming-version`， `-c`
+### `--coming-version`，`-c`
 
 目標Adobe Commerce版本。 如果省略，將使用最新發行的Adobe Commerce穩定版本。 可用的Adobe Commerce版本： 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7 - p2 \| 2.3.7 - p3 \| 2.3.7 - p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3 - p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.4-p2 \| 2.4.4 - p3 \| 2.4.4 - p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-p7 \| 2.4.4-p8 \| 2.4.4-p9 \| 2.4.5 \| 2.4.5-p1 \| 2.4.5-p2 \| 2.4.5 - p3 \| 2.4.5 - p4 \| 2.4.5-p5 \| 2.4.5-p6 \| 2.4.5-p7 \| 2.4.5-p8 \| 2.4.6 \| 2.4.6-p1 \| 2.4.6-p2 \| 2.4.6 - p3 \| 2.4.6 - p4 \| 2.4.6-p5 \| 2.4.6-p6 \| 2.4.7-beta1 \| 2.4.7-beta2 \| 2.4.7-beta3 \| 2.4.7 \| 2.4.7 - p1
 
@@ -735,7 +735,7 @@ Adobe Commerce安裝目錄。
 - 預設： `warning`
 - 接受值
 
-### `--ignore-current-version-compatibility-issues`， `-i`
+### `--ignore-current-version-compatibility-issues`，`-i`
 
 忽略目前和未來版本的常見問題
 
@@ -748,28 +748,28 @@ Adobe Commerce安裝目錄。
 
 - 需要值
 
-### `--help`， `-h`
+### `--help`，`-h`
 
 顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
 - 預設： `false`
 - 不接受值
 
-### `--quiet`， `-q`
+### `--quiet`，`-q`
 
 不輸出任何訊息
 
 - 預設： `false`
 - 不接受值
 
-### `--verbose`， `-v|-vv|-vvv`
+### `--verbose`，`-v|-vv|-vvv`
 
 增加訊息的詳細程度：1代表一般輸出，2代表較詳細輸出，3代表偵錯
 
 - 預設： `false`
 - 不接受值
 
-### `--version`， `-V`
+### `--version`，`-V`
 
 顯示此應用程式版本
 
@@ -789,7 +789,7 @@ Adobe Commerce安裝目錄。
 - 預設： `false`
 - 不接受值
 
-### `--no-interaction`， `-n`
+### `--no-interaction`，`-n`
 
 請勿詢問任何互動式問題
 

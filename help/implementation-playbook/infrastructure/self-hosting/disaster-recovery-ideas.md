@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: cab6213b-da44-498f-b5c1-e7f89e95038e
+exl-id: cd546571-0241-4619-8696-3c5ebead9939
 feature: Install
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1779'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 0%
 * 允許發生mysqldump，並允許在不鎖定資料庫的情況下發生正常交易
 * 允許從外部資料來源存取資料，而不會降低網站根據客戶請求交易資訊的能力。
 
-次要資料庫可用作 `warm standby`. 當您考慮如何從主要資料庫失敗中復原時，這可能會開始起作用。 將次要資料庫升級為主要資料庫，比將資料庫重建和還原至新建立的Mysql執行個體來得簡單。 這減少了復原作業期間的實際停機時間。
+次要資料庫可以當做`warm standby`使用。 當您考慮如何從主要資料庫失敗中復原時，這可能會開始起作用。 將次要資料庫升級為主要資料庫，比將資料庫重建和還原至新建立的Mysql執行個體來得簡單。 這減少了復原作業期間的實際停機時間。
 
 您可以轉移部分請求至次要資料庫。 若使用此方法，建議將次要資料庫設為唯讀。 允許Adobe Commerce應用程式使用此次要資料庫進行讀取作業，有助於接受部分讀取請求並允許次要資料庫回應。 不過，這項變更只佔所有請求的30-50%，但您可以從主要資料庫中帶走的任何負載都是勝利。
 

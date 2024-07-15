@@ -16,22 +16,22 @@ ht-degree: 0%
 
 ## 設定cron
 
-UNIX工作排程器cron對應用程式的日常作業至關重要。 它會排程重新索引、電子報、電子郵件和網站地圖。 A *crontab* 是cron設定。
+UNIX工作排程器cron對應用程式的日常作業至關重要。 它會排程重新索引、電子報、電子郵件和網站地圖。 *crontab*&#x200B;是cron設定。
 
-您必須在中安裝Adobe Commerce服務 *crontab*&#x200B;或某些核心功能（以及某些協力廠商擴充功能）無法正常運作。
+您必須在&#x200B;*crontab*&#x200B;中安裝Adobe Commerce服務，否則部分核心功能（以及部分協力廠商擴充功能）無法正常運作。
 
-如需有關cron的詳細資訊，包括如何從命令列移除crontab以及執行cron，請參閱 [設定並執行cron](../../configuration/cli/configure-cron-jobs.md).
+如需有關cron的詳細資訊，包括如何從命令列移除crontab並執行cron，請參閱[設定並執行cron](../../configuration/cli/configure-cron-jobs.md)。
 
 ## 安全性設定和建議
 
 安裝後，我們建議您進行下列操作：
 
 * 請確定您的檔案擁有權和許可權已正確設定
-* 我們強烈建議 [變更預設管理員URI](../tutorials/admin-uri.md) 從 `admin` 到其他內容
-* 確定 [`X-Frame-Option` HTTP標頭](../../configuration/security/xframe-options.md) 已正確設定。
-* 針對跨網站指令碼(XSS)採取預防措施，方法為 [保護範本安全](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
+* 我們強烈建議[將預設管理員URI](../tutorials/admin-uri.md)從`admin`變更為其他專案
+* 請確定已正確設定[`X-Frame-Option` HTTP標頭](../../configuration/security/xframe-options.md)。
+* 採取[保護您的範本](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)的預防措施，以防止跨網站指令碼(XSS)
 
-若您由安裝 [複製GitHub存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)，確保部署應用程式時，僅包含生產環境所需的檔案和資料夾。 不需要的檔案和資料夾可能會帶來安全性風險。
+如果您是透過[複製GitHub存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)進行安裝，請確定部署應用程式時，您僅包含生產環境所需的檔案和資料夾。 不需要的檔案和資料夾可能會帶來安全性風險。
 
 ## 啟用Apache伺服器重寫
 
@@ -41,9 +41,9 @@ UNIX工作排程器cron對應用程式的日常作業至關重要。 它會排�
 
 ## 多Webnode環境中的快取
 
-如果您有多個網頁節點，您可以 *無法* 使用應用程式的預設檔案快取，因為Web節點之間沒有同步處理。 換句話說，一個網頁節點上的活動只會寫入該網頁節點的檔案系統。 如果在其他網頁節點上執行後續活動，可能會導致寫入不必要的檔案或導致錯誤。
+如果您有多個Web節點，則&#x200B;*無法*&#x200B;使用應用程式的預設檔案快取，因為Web節點之間沒有同步處理。 換句話說，一個網頁節點上的活動只會寫入該網頁節點的檔案系統。 如果在其他網頁節點上執行後續活動，可能會導致寫入不必要的檔案或導致錯誤。
 
-請改用 [Redis](../../configuration/cache/config-redis.md) 預設快取和頁面快取記憶體。
+請改用[Redis](../../configuration/cache/config-redis.md)做為預設快取和頁面快取。
 
 ## 伺服器設定
 
@@ -51,13 +51,13 @@ UNIX工作排程器cron對應用程式的日常作業至關重要。 它會排�
 
 ### 記錄輪換
 
-UNIX `logrotate` 公用程式可讓您管理產生大量記錄檔的系統。 它允許自動旋轉、壓縮、移除和郵寄記錄檔。 每個記錄檔都可以每日、每週、每月或當記錄檔超過指定大小時處理。
+UNIX `logrotate`公用程式可讓您管理產生大量記錄檔的系統。 它允許自動旋轉、壓縮、移除和郵寄記錄檔。 每個記錄檔都可以每日、每週、每月或當記錄檔超過指定大小時處理。
 
 如需詳細資訊，請參閱下列其中一項：
 
-* [HowTo：終極記錄旋轉命令教學課程，包含十個範例](https://www.thegeekstuff.com/2010/07/logrotate-examples)
+* [HowTo：包含十個範例的終極記錄旋轉命令教學課程](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 * [棧疊交換](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
-* [`logrotate` 線上手冊](https://linuxconfig.org/logrotate-8-manual-page)
+* [`logrotate`線上手冊](https://linuxconfig.org/logrotate-8-manual-page)
 
 ### 設定iptables規則以啟用各種服務通訊
 
@@ -65,8 +65,8 @@ UNIX `logrotate` 公用程式可讓您管理產生大量記錄檔的系統。 �
 
 詳細資訊：
 
-* Ubuntu： [Ubuntu檔案頁面](https://help.ubuntu.com/community/IptablesHowTo).
-* CentOS： [CentOS操作說明](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
+* Ubuntu： [Ubuntu檔案頁面](https://help.ubuntu.com/community/IptablesHowTo)。
+* CentOS： [CentOS操作說明](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。
 
 ### 安全性增強型Linux (SELinux)規則
 
@@ -81,8 +81,8 @@ UNIX `logrotate` 公用程式可讓您管理產生大量記錄檔的系統。 �
 
 Adobe Commerce需要電子郵件伺服器。 我們不建議使用特定伺服器，但您可以嘗試下列任一操作：
 
-* CentOS的後置字元([數位海洋教學課程](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6)， [CentOS檔案](https://www.centos.org))
-* Ubuntu的後置字元([數位海洋教學課程](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04)， [Ubuntu檔案](https://help.ubuntu.com/community/MailServer))
+* CentOS的Postfix （[數位海洋教學課程](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6)，[CentOS檔案](https://www.centos.org)）
+* Ubuntu的Postfix （[數位海洋教學課程](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04)，[Ubuntu檔案](https://help.ubuntu.com/community/MailServer)）
 
 ### 精簡搜尋引擎以提升效能：
 

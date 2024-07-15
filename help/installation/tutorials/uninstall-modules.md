@@ -13,11 +13,11 @@ ht-degree: 0%
 
 本節說明如何解除安裝一或多個模組。 在解除安裝期間，您可以選擇移除模組的程式碼、資料庫架構和資料庫資料。 您可以先建立備份，以便稍後復原資料。
 
-您必須確定不會使用模組，才可解除安裝模組。 您可以停用模組，而非解除安裝模組，如中所述 [啟用或停用模組](manage-modules.md).
+您必須確定不會使用模組，才可解除安裝模組。 您可以依照[啟用或停用模組](manage-modules.md)中的說明來停用模組，而不是解除安裝模組。
 
 >[!NOTE]
 >
->這個命令只會檢查在 `composer.json` 檔案。 如果您解除安裝 _非_ 在中定義 `composer.json` 檔案時，這個命令會解除安裝模組，而不檢查相依性。 這個命令可以 _非_&#x200B;但是，請從檔案系統移除模組的程式碼。 您必須使用檔案系統工具來移除模組的程式碼(例如 `rm -rf <path to module>`)。 或者，您可以 [disable](manage-modules.md) 非撰寫器模組。
+>這個命令只會檢查在`composer.json`檔案中宣告的相依性。 如果您解除安裝在`composer.json`檔案中定義為&#x200B;_非_&#x200B;的模組，這個命令會解除安裝模組而不檢查相依性。 這個命令&#x200B;_不_，但是請從檔案系統移除模組的程式碼。 您必須使用檔案系統工具來移除模組的程式碼（例如，`rm -rf <path to module>`）。 或者，您可以[停用](manage-modules.md)非撰寫器模組。
 
 命令使用方式：
 
@@ -26,13 +26,13 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
   {ModuleName} ... {ModuleName}
 ```
 
-位置 `{ModuleName}` 指定模組名稱 `<VendorName>_<ModuleName>` 格式。 例如，客戶模組名稱為 `Magento_Customer`. 若要取得模組名稱清單，請輸入 `magento module:status`
+其中`{ModuleName}`以`<VendorName>_<ModuleName>`格式指定模組名稱。 例如，客戶模組名稱為`Magento_Customer`。 若要取得模組名稱清單，請輸入`magento module:status`
 
 模組解除安裝命令會執行下列工作：
 
 1. 驗證指定的模組存在於程式碼庫中，且是撰寫器所安裝的套件。
 
-   這個指令可以運作 _僅限_ 使用定義為撰寫器套件的模組。
+   這個命令只對定義為Composer套件的模組運作&#x200B;_1}。_
 
 1. 檢查與其他模組的相依性，如果有任何未滿足的相依性，則會終止指令。
 
@@ -44,25 +44,25 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
    | 選項 | 含義 | 備份檔案名稱和位置 |
    | ---------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
-   | `--backup-code` | 備份檔案系統(排除 `var` 和 `pub/static` 目錄)。 | `var/backups/<timestamp>_filesystem.tgz` |
+   | `--backup-code` | 備份檔案系統（不包括`var`和`pub/static`目錄）。 | `var/backups/<timestamp>_filesystem.tgz` |
    | `--backup-media` | 備份pub/media目錄 | `var/backups/<timestamp>_filesystem_media.tgz` |
    | `--backup-db` | 備份資料庫。 | `var/backups/<timestamp>_db.gz` |
 
-1. 如果 `--remove-data` 已指定，請移除模組的 `Uninstall` 類別。
+1. 若指定`--remove-data`，請移除在模組的`Uninstall`類別中定義的資料庫結構描述和資料。
 
-   對於要解除安裝的每個指定模組，會叫用 `uninstall` 方法在其中 `Uninstall` 類別。 此類別必須繼承自 [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
+   針對要解除安裝的每個指定模組，叫用其`Uninstall`類別中的`uninstall`方法。 此類別必須繼承自[Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php)。
 
-1. 從移除指定的模組 `setup_module` 資料庫表格。
-1. 從的模組清單中移除指定的模組 [部署設定](../../configuration/reference/deployment-files.md).
-1. 使用從程式碼基底移除程式碼 `composer remove`.
+1. 從`setup_module`資料庫資料表中移除指定的模組。
+1. 從[部署組態](../../configuration/reference/deployment-files.md)的模組清單移除指定的模組。
+1. 使用`composer remove`從程式碼基底移除程式碼。
 
    >[!NOTE]
    >
-   >解除安裝模組 _一直_ 執行 `composer remove`. 此 `--remove-data` 選項會移除模組所定義的資料庫資料和結構描述， `Uninstall` 類別。
+   >解除安裝模組&#x200B;_一律_&#x200B;執行`composer remove`。 `--remove-data`選項會移除模組的`Uninstall`類別所定義的資料庫資料與結構描述。
 
 1. 清除快取。
 1. 更新產生的類別。
-1. 如果 `--clear-static-content` 已指定，清除 [產生的靜態檢視檔案](../../configuration/cli/static-view-file-deployment.md).
+1. 若指定`--clear-static-content`，則清除[產生的靜態檢視檔](../../configuration/cli/static-view-file-deployment.md)。
 1. 將存放區帶出維護模式。
 
 例如，如果您嘗試解除安裝另一個模組所依賴的模組，會顯示下列訊息：
@@ -73,7 +73,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-另一種選擇是在備份模組檔案系統之後解除安裝兩個模組。 `pub/media` 檔案和資料庫表格，但 _非_ 移除模組的資料庫結構描述或資料：
+另一種選擇是在備份模組檔案系統、`pub/media`檔案和資料庫表格之後，解除安裝這兩個模組，但&#x200B;_不會_&#x200B;移除模組的資料庫結構描述或資料：
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
@@ -126,15 +126,15 @@ Disabling maintenance mode
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
-位置 `<filename>` 是中備份檔案的名稱 `<app_root>/var/backups` 目錄。 若要顯示備份檔案清單，請輸入 `magento info:backups:list`
+其中`<filename>`是`<app_root>/var/backups`目錄中備份檔案的名稱。 若要顯示備份檔案清單，請輸入`magento info:backups:list`
 
 >[!WARNING]
 >
->此命令會先刪除指定的檔案或資料庫，然後再還原它們。 例如， `--media-file` 選項會刪除底下的媒體資產 `pub/media` 目錄，然後再從指定的復原檔案還原。 使用此命令之前，請確定您尚未變更要保留的檔案系統或資料庫。
+>此命令會先刪除指定的檔案或資料庫，然後再還原它們。 例如，`--media-file`選項會先刪除`pub/media`目錄下的媒體資產，再從指定的復原檔案還原。 使用此命令之前，請確定您尚未變更要保留的檔案系統或資料庫。
 
 >[!NOTE]
 >
->若要顯示可用備份檔案的清單，請輸入 `magento info:backups:list`
+>若要顯示可用備份檔案的清單，請輸入`magento info:backups:list`
 
 此命令會執行下列工作：
 
@@ -142,7 +142,7 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
 1. 驗證備份檔案名稱。
 1. 如果您指定程式碼復原檔案：
 
-   a.驗證倒回目的地位置是否可寫入(請注意 `pub/static` 和 `var` 資料夾會被忽略)。
+   a.驗證復原目的地位置是否可寫入（請注意，`pub/static`和`var`資料夾將被忽略）。
 
    b.刪除應用程式安裝目錄下的所有檔案和目錄。
 
@@ -158,7 +158,7 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
 
    a.驗證倒回目的地位置是否可寫入。
 
-   b.刪除以下所有檔案和目錄： `pub/media`
+   b.刪除`pub/media`下的所有檔案和目錄
 
    c.將封存檔案擷取至目的地位置。
 
@@ -172,7 +172,7 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
   magento info:backups:list
   ```
 
-* 還原名為的檔案備份 `1433876616_filesystem.tgz`：
+* 還原名為`1433876616_filesystem.tgz`的檔案備份：
 
   ```bash
   magento setup:rollback --code-file="1433876616_filesystem.tgz"
@@ -191,4 +191,4 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
 
 >[!NOTE]
 >
->若要執行 `magento` 再次執行命令而不變更目錄，您可能需要輸入 `cd pwd`.
+>若要在不變更目錄的情況下再次執行`magento`命令，您可能需要輸入`cd pwd`。

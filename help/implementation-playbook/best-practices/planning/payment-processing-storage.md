@@ -6,22 +6,22 @@ feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
 source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
 
 # 付款處理與儲存的最佳作法
 
-維護的重要原則之一 [PCI法規遵循](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) 正在制定適當處理和儲存信用卡支付的策略。
+維護[PCI法規遵循](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html)的重要原則之一，是擁有適當處理和儲存信用卡付款的策略。
 
-在Adobe Commerce中儲存持卡人資料為 **嚴禁** 這麼做可能會違反您身為商家的義務，違反支付卡產業資料安全標準(PCI-DSS)。 有關商戶義務之分擔責任模式與指引的詳細資訊，請參閱 [Adobe Commerce共用職責模型指南](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) 在Adobe信任中心。
+在Adobe Commerce中儲存持卡人資料是&#x200B;**嚴格禁止的**，這麼做可能會違反您身為商家應盡的支付卡產業資料安全標準(PCI-DSS)義務。 在Adobe信任中心的[Adobe Commerce分擔責任模式指南](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf)中，可取得有關商戶責任的分擔責任模式和指引的詳細資訊。
 
-請遵循下列最佳實務，以確保您在電子商務網站上正確處理付款資訊。 如需安全性最佳實務的其他指引，請參閱 [保護您的網站與基礎建設](../launch/security-best-practices.md).
+請遵循下列最佳實務，以確保您在電子商務網站上正確處理付款資訊。 如需安全性最佳實務的其他指引，請參閱[保護您的網站和基礎結構](../launch/security-best-practices.md)。
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 * 雲端基礎結構上的Adobe Commerce
 * Adobe Commerce內部部署
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 密碼編譯金鑰的保護對資料保護策略至關重要。 由技術高超且值得信賴的保管人來監管這些金鑰非常重要。
 
-最後，主要帳號(PAN)在儲存期間必須無法讀取，例如使用遮罩 `XXX`. 這包括可攜式儲存和備份媒體，例如快閃磁碟機、USB和外部硬碟，甚至稽核記錄。
+最後，主要帳號(PAN)在儲存期間必須無法讀取，例如以`XXX`遮罩。 這包括可攜式儲存和備份媒體，例如快閃磁碟機、USB和外部硬碟，甚至稽核記錄。
 
 ## 加密持卡人資料的傳輸
 
@@ -53,4 +53,4 @@ ht-degree: 0%
 
 ## 其他資訊
 
-如果您要依Adobe尋找建議的支付解決方案，請考慮 [Adobe支付服務](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+如果您正在尋找依Adobe建議的付款解決方案，請考慮[Adobe付款服務](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html)。

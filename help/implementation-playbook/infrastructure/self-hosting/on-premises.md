@@ -17,7 +17,7 @@ ht-degree: 0%
 
 下圖顯示在AWS基礎結構上部署Adobe Commerce內部部署的參考架構。 Azure、Google Cloud和Alibaba Cloud等其他雲端服務供應商也有類似的基礎架構設計和同類服務。
 
-![在協力廠商雲端服務上自行託管Adobe Commerce基礎結構的圖表](/help/assets/playbooks/on-premises-infrastructure.svg)
+![在協力廠商雲端服務上顯示自行託管Adobe Commerce基礎結構的圖表](/help/assets/playbooks/on-premises-infrastructure.svg)
 
 讓我們更深入地探討上述基礎架構各層面的角色和功能：
 

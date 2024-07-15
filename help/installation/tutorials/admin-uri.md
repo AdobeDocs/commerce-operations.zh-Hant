@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # 顯示或變更管理員URI
 
-執行此命令之前，您必須 [建立或更新部署設定](deployment.md).
+執行此命令之前，您必須[建立或更新部署組態](deployment.md)。
 
 ## 顯示管理員URI
 
-本節討論如何使用命令列來顯示「管理員統一資源識別碼」([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2))。
+本節討論如何使用命令列來顯示Admin Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2))。
 
 命令選項：
 
@@ -30,7 +30,7 @@ bin/magento info:adminuri
 Admin Panel URI: /admin_1wgrah
 ```
 
-您也可以檢視管理員URI，位置如下： `<magento_root>/app/etc/env.php`. 程式碼片段如下：
+您也可以在`<magento_root>/app/etc/env.php`中檢視管理員URI。 程式碼片段如下：
 
 ```php?start_inline=1
   'backend' =>
@@ -41,4 +41,4 @@ Admin Panel URI: /admin_1wgrah
 
 ## 變更管理員URL
 
-若要變更管理員URI，請使用 [`magento setup:config:set`](deployment.md) 命令。
+若要變更管理員URI，請使用[`magento setup:config:set`](deployment.md)命令。

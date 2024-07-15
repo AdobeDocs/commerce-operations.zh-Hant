@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->請參閱 [_效能最佳實務指南_](../../../performance/overview.md) 以取得效能最佳化的詳細資訊。
+>如需效能最佳化的詳細資訊，請參閱&#x200B;[_效能最佳實務指南_](../../../performance/overview.md)。
 
 ## 基礎架構
 
@@ -58,15 +58,15 @@ N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
 
 最佳化這些設定取決於不同專案的效能測試結果。
 
-- **ByteCode** — 若要在PHP 7上以Adobe Commerce的最大速度運行，您必須啟動 `opcache` 模組，並正確加以設定。
+- **ByteCode** — 若要在PHP 7上取得Adobe Commerce的最大速度，您必須啟動`opcache`模組並正確設定。
 
 - **APCU**—Adobe建議啟用PHP APCu擴充功能，並設定Composer以最佳化效能。 此擴充功能會快取已開啟檔案的檔案位置，進而提高Adobe Commerce伺服器呼叫（包括頁面、Ajax呼叫和端點）的效能。
 
-- **Realpath_cacheconfiguration** — 最佳化 `realpath_cache` 可讓PHP處理序快取檔案的路徑，而不是在每次頁面載入時查詢它們。
+- **Realpath_cacheconfiguration** — 最佳化`realpath_cache`可讓PHP處理序快取檔案的路徑，而不是在每次頁面載入時查詢這些路徑。
 
 ### 網頁伺服器
 
-使用nginx做為Web伺服器只需要稍作重新配置。 nginx網頁伺服器提供更好的效能，而且使用Adobe Commerce的範例設定檔案即可輕鬆設定([`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample))。
+使用nginx做為Web伺服器只需要稍作重新配置。 nginx網頁伺服器提供較佳的效能，而且使用Adobe Commerce ([`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample))的範例組態檔可輕鬆設定。
 
 - 正確使用TCP設定PHP-FPM
 
@@ -80,7 +80,7 @@ N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
 
 Adobe Commerce資料庫（以及任何其他資料庫）對可用於儲存資料和索引的記憶體量很敏感。 為了有效使用MySQL資料索引，可用的記憶體量至少應該接近資料庫中儲存之資料大小的一半。
 
-最佳化 `innodb_buffer_pool_instances` 設定，以避免多個執行緒嘗試存取相同執行個體時發生問題。 的值 `max_connections` 引數應與應用程式伺服器中設定的PHP執行緒總數相關。 使用下列公式計算的最佳值 `innodb-thread-concurrency`：
+最佳化`innodb_buffer_pool_instances`設定，以避免多個執行緒嘗試存取相同執行個體時發生問題。 `max_connections`引數的值應該與應用程式伺服器中設定的PHP執行緒總數相關。 使用以下公式計算`innodb-thread-concurrency`的最佳值：
 
 ```
 innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
@@ -94,7 +94,7 @@ Redis應配置足夠的記憶體，以保留記憶體中的所有其他快取，
 
 ### 頁面快取
 
-Adobe強烈建議您在您的Adobe Commerce存放區中使用Varnish來取得完整頁面快取。 此 `PageCache` 程式碼基底中仍存在模組，但應僅將其用於開發目的。
+Adobe強烈建議您在您的Adobe Commerce存放區中使用Varnish來取得完整頁面快取。 `PageCache`模組仍存在於程式碼基底中，但應僅用於開發目的。
 
 將Varnish安裝在Web層前面的獨立伺服器上。 它應接受所有傳入請求並提供快取頁面副本。 為了讓Varnish能有效處理安全頁面，可在Varnish前面放置SSL終止Proxy。 Nginx可用於此用途。
 
@@ -102,7 +102,7 @@ Adobe強烈建議您在您的Adobe Commerce存放區中使用Varnish來取得完
 
 ### 訊息佇列
 
-Message Queue Framework (MQF)系統允許模組將訊息發佈至佇列。 它也會定義非同步接收訊息的消費者。 Adobe Commerce支援 [!DNL RabbitMQ] 作為傳訊代理人，提供可擴充的平台以傳送及接收訊息。
+Message Queue Framework (MQF)系統允許模組將訊息發佈至佇列。 它也會定義非同步接收訊息的消費者。 Adobe Commerce支援[!DNL RabbitMQ]作為傳訊代理人，提供可擴充的平台來傳送及接收訊息。
 
 ### 效能測試和監控
 
@@ -122,11 +122,11 @@ Elasticsearch （或OpenSearch）自Adobe Commerce 2.4版起為必填，但最�
 
 ### Headless架構
 
-有一個專屬於 [headless](../../architecture/enterprise-blueprint.md#headless-storefront). 總而言之，它將店面圖層與平台本身分開。 這仍是相同的後端，但Adobe Commerce不再直接處理請求，而是僅透過GraphQL API支援自訂店面。
+[headless](../../architecture/enterprise-blueprint.md#headless-storefront)有專屬的個別區段。 總而言之，它將店面圖層與平台本身分開。 這仍是相同的後端，但Adobe Commerce不再直接處理請求，而是僅透過GraphQL API支援自訂店面。
 
 ### 讓Adobe Commerce保持更新
 
-Adobe Commerce在執行最新版本時永遠會有更好的效能。 即便在每個新版本發行後無法讓Adobe Commerce保持最新狀態，仍建議使用 [升級](../../../upgrade/overview.md) 當Adobe Commerce推出顯著的效能最佳化時。
+Adobe Commerce在執行最新版本時永遠會有更好的效能。 即使在每個新版本發行後無法保持Adobe Commerce最新狀態，仍建議在Adobe Commerce引入重大效能最佳化時[升級](../../../upgrade/overview.md)。
 
 例如，在2020年，Adobe發佈了Redis層的最佳化，修正了許多低效率、連線問題，以及Redis和Adobe Commerce之間不必要的資料傳輸。 整體效能介於2.3和2.4之間，不分晝夜，而且由於Redis最佳化，在購物車、結帳、同時使用者等方面都有顯著改善。
 

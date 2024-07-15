@@ -20,12 +20,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >
->Commerce網站管理員可以使用「快取管理系統」工具從Admin管理快取。 另請參閱 [快取管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) 在 _Admin System指南_.
+>Commerce網站管理員可以使用「快取管理系統」工具從Admin管理快取。 請參閱&#x200B;_系統管理系統指南_&#x200B;中的[快取管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)。
 
 
 ## 檢視快取狀態
 
-從Commerce應用程式伺服器的命令列，使用 `cache:status` Commerce CLI命令。
+從Commerce應用程式伺服器的命令列，使用`cache:status` Commerce CLI命令檢視快取的狀態。
 
 ```bash
    bin/magento cache:status
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->如需Adobe Commerce支援之預設快取型別的詳細說明，請參閱 [快取](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) 在 _Admin System指南_.
+>如需Adobe Commerce支援之預設快取型別的詳細說明，請參閱&#x200B;_系統管理系統指南_&#x200B;中的[快取](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches)。
 
 
 ## 啟用或停用快取型別
@@ -68,9 +68,9 @@ Current status:
 
 >[!INFO]
 >
->從2.2版開始，在生產模式下執行Commerce時，您只能使用命令列啟用或停用快取型別。 如果在開發人員模式下執行Commerce，您可以使用命令列或手動啟用或停用快取型別。 在執行此操作之前，您必須手動進行 `<magento_root>/app/etc/env.php` 可由 [檔案系統擁有者](../../installation/prerequisites/file-system/overview.md).
+>從2.2版開始，您只能在生產模式下執行Commerce時，使用命令列來啟用或停用快取型別。 如果以開發人員模式執行Commerce，您可以使用命令列或手動啟用或停用快取型別。 在這樣做之前，您必須手動讓[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)可寫入`<magento_root>/app/etc/env.php`。
 
-您可以清除(也稱為 _排清_ 或 _重新整理_)使用命令列或Admin的快取型別。
+您可以使用命令列或Admin來清除（也稱為&#x200B;_排清_&#x200B;或&#x200B;_重新整理_）快取型別。
 
 命令選項：
 
@@ -82,7 +82,7 @@ bin/magento cache:enable [type] ... [type]
 bin/magento cache:disable [type] ... [type]
 ```
 
-省略 `[type]` 同時啟用或停用所有快取型別。 此 `type` option是以空格分隔的快取型別清單。
+省略`[type]`會同時啟用或停用所有快取型別。 `type`選項是以空格分隔的快取型別清單。
 
 <!-- `--bootstrap=` is a URL-encoded associative array of Commerce [application bootstrap parameters](../bootstrap/set-parameters.md#bootstrap-parameters) and values. -->
 
@@ -112,15 +112,15 @@ bin/magento cache:disable db_ddl full_page
 
 >[!INFO]
 >
->自2.3.4版起，Commerce會在擷取所有系統EAV屬性時加以快取。 以這種方式快取EAV屬性可改善效能，因為它會減少對DB的插入/選取要求量。 不過，它也會增加快取網路大小。 開發人員可藉由執行 `bin/magento config:set dev/caching/cache_user_defined_attributes 1` 命令。 這亦可由管理員在中完成 [開發人員模式](../bootstrap/application-modes.md) 透過設定 **商店** >設定 **設定** > **進階** > **開發人員** > **快取設定** > **快取使用者定義的屬性** 至 **是**.
+>自2.3.4版起，Commerce會在擷取所有系統EAV屬性時加以快取。 以這種方式快取EAV屬性可改善效能，因為它會減少對DB的插入/選取要求量。 不過，它也會增加快取網路大小。 開發人員可以執行`bin/magento config:set dev/caching/cache_user_defined_attributes 1`命令來快取自訂EAV屬性。 在[開發人員模式](../bootstrap/application-modes.md)中，也可以透過管理員完成，方法是將&#x200B;**存放區** >設定&#x200B;**組態** > **進階** > **開發人員** > **快取設定** > **快取使用者定義屬性**&#x200B;設定為&#x200B;**是**。
 
 ## 清除和排清快取型別
 
 >[!NOTE]
 >
->可同時自動讓多個頁面快取失效 **_不含_** 這些實體正在編輯。 例如，當目錄中的任何產品指派給任何類別時，或當任何 [!UICONTROL related product rule] 已修改。
+>可同時讓多個頁面快取失效，並自動&#x200B;**_而不需要_**&#x200B;這些實體進行編輯。 例如，當目錄中的任何產品指派給任何類別時，或當任何[!UICONTROL related product rule]被修改時。
 
-若要從快取中永久刪除過期的專案，您可以 _清除_ 或 _排清_ 快取型別：
+若要從快取中清除過期的專案，您可以&#x200B;_清除_&#x200B;或&#x200B;_排清_&#x200B;快取型別：
 
 - 清除快取型別只會從已啟用的Commerce快取型別中刪除所有專案。 換言之，此選項不會影響其他程式或應用程式，因為它只會清除Commerce使用的快取。
 
@@ -144,7 +144,7 @@ bin/magento cache:disable db_ddl full_page
    bin/magento cache:flush [type] ... [type]
 ```
 
-位置 `[type]` 是以空格分隔的快取型別清單。 省略 `[type]` 同時清除或排清所有快取型別。 例如，若要排清所有快取型別，請輸入
+其中`[type]`是以空格分隔的快取型別清單。 省略`[type]`會同時清除或排清所有快取型別。 例如，若要排清所有快取型別，請輸入
 
 ```bash
    bin/magento cache:flush
@@ -173,4 +173,4 @@ bin/magento cache:disable db_ddl full_page
 
 >[!TIP]
 >
->您也可以在Admin中清理和排清快取型別。 前往 **系統** > **工具** > **快取管理**. **排清快取儲存體** 相當於 `bin/magento cache:flush`. **排清Magento快取** 相當於 `bin/magento cache:clean`.
+>您也可以在Admin中清理和排清快取型別。 移至&#x200B;**系統** > **工具** > **快取管理**。 **排清快取存放區**&#x200B;相當於`bin/magento cache:flush`。 **排清Magento快取**&#x200B;相當於`bin/magento cache:clean`。

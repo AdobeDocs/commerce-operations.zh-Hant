@@ -4,8 +4,8 @@ user-guide-description: 了解如何讓企業在營運上做好準備，以便�
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 13%
+source-wordcount: '138'
+ht-degree: 14%
 
 ---
 
@@ -13,30 +13,30 @@ ht-degree: 13%
 # 營運行動手冊 {#operational-playbook}
 
 - [概觀](overview.md)
-- 商務 {#intro}
+- Commerce {#intro}
    - [Adobe Commerce](intro/commerce.md)
    - [什麼是電子商務？](intro/ecommerce.md)
    - [商業模式](intro/business-model.md)
-   - [商務操作](intro/operations.md)
+   - [Commerce作業](intro/operations.md)
    - [Commerce功能](intro/features.md)
-- 領導力 {#leadership}
+- 領導力{#leadership}
    - [原則](leadership/principles.md)
    - [目標](leadership/goals.md)
    - [Vision](leadership/vision.md)
    - [規劃](leadership/planning.md)
-- 解決方案 {#solution}
+- 解決方案{#solution}
    - [軟體即服務(SaaS)](solution/software-service.md)
    - [Platform-as-a-service (PaaS)](solution/platform-service.md)
    - [內部部署託管](solution/on-premises.md)
    - [雲端與內部部署](solution/hosting-comparison.md)
    - [協力廠商整合](solution/integrations.md)
    - [升級、備份及維護](solution/maintenance.md)
-- 策略 {#strategy}
-   - [商務策略](strategy/commerce.md)
+- 策略{#strategy}
+   - [Commerce策略](strategy/commerce.md)
    - [焦點](strategy/focus.md)
    - [內容策略](strategy/content.md)
    - [成熟度](strategy/maturity.md)
-- 程式 {#process}
+- 處理程式{#process}
    - [Order management](process/order-management.md)
    - [專案計畫](process/project-plan.md)
    - [專案範圍](process/project-scope.md)
@@ -45,7 +45,7 @@ ht-degree: 13%
    - [敏捷Scrum方法](process/agile-scrum.md)
    - [常見專案研討會](process/project-workshops.md)
    - [測試](process/testing.md)
-- 人員 {#people}
+- 人員{#people}
    - [團隊](people/teams.md)
    - [團隊結構](people/team-structure.md)
    - [組織結構](people/organizational-structure.md)
@@ -54,7 +54,7 @@ ht-degree: 13%
    - [資源](people/resources.md)
    - [文化](people/culture.md)
    - [專案團隊](people/project-teams.md)
-- 產品 {#product}
+- 產品{#product}
    - [訂單管理系統](product/order-management-systems.md)
    - [送貨與履行](product/shipping-fulfillment.md)
    - [付款閘道](product/payment-gateways.md)

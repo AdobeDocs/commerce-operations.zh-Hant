@@ -4,14 +4,14 @@ description: 請參閱config.php檔案中的值清單。
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '147'
 ht-degree: 1%
 
 ---
 
 # config.php參考
 
-此 `config.php` 檔案包含下列區段：
+`config.php`檔案包含下列區段：
 
 | 名稱 | 說明 |
 | --------- | -------------------|
@@ -34,7 +34,7 @@ ht-degree: 1%
 ]
 ```
 
-進一步瞭解 [模組].
+深入瞭解[模組]。
 
 ## 範圍
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 ]
 ```
 
-進一步瞭解 [商業範圍][scopes].
+深入瞭解[Commerce領域][scopes]。
 
 ## 系統
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 ]
 ```
 
-進一步瞭解 [系統特定組態](config-reference-sens.md).
+深入瞭解[系統特定組態](config-reference-sens.md)。
 
 ## 主題
 
@@ -120,7 +120,7 @@ ht-degree: 1%
 ]
 ```
 
-進一步瞭解 [主題].
+深入瞭解[主題]。
 
 <!-- link definitions -->
 

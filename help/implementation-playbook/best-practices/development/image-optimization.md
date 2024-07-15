@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 0%
+source-wordcount: '197'
+ht-degree: 1%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 雲端基礎結構上的Adobe Commerce
 
 
 ## 最佳化和壓縮影像
 
-在將影像上傳到您的Commerce網站之前，請最佳化和壓縮影像，以平衡效能和檢視品質。 這有助於增加空間並減少頁面載入時間。
+在將影像上傳至Commerce網站之前，請先最佳化並壓縮影像，以便在效能與檢視品質之間取得平衡。 這有助於增加空間並減少頁面載入時間。
 
 - PNG格式可針對具有大範圍的純色影像提供較小大小的影像。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 啟用和設定Fastly影像最佳化
 
-在您為Adobe Commerce Cloud專案設定Fastly服務後，請參閱 [Fastly影像最佳化](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) 以取得啟用和設定影像最佳化的指示。
+在您為您的Adobe Commerce Cloud專案設定Fastly服務後，請參閱[Fastly影像最佳化](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html)以取得啟用和設定影像最佳化的指示。
 
 ## 其他資訊
 

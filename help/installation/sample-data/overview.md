@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >若要檢閱和分析資料庫和各種功能，請考慮使用真實資料而不是範例資料。 範例資料設計為預先產生的商店模擬，以示範主題設計和基本商店行為。 安裝範例資料時，所有範例資料實體都會直接寫入資料庫表格。
 
-您可以在安裝Commerce軟體之前或之後安裝範例資料。 使用完範例資料後，您可以將其移除或全新安裝，如中所述 [移除範例資料模組或更新範例資料](remove-or-update.md).
+您可以在安裝Commerce軟體之前或之後安裝範例資料。 處理完範例資料後，您可以將其移除，也可以按照[移除範例資料模組或更新範例資料](remove-or-update.md)中所述重新安裝。
 
 >[!WARNING]
 >
@@ -27,5 +27,5 @@ ht-degree: 0%
 
 | 安裝方法 | 說明 | 所需技能等級 |
 |--- |--- |--- |
-| 使用撰寫器 | [執行 `magento sampledata:deploy` 修改應用程式的根目錄 `composer.json`](composer-packages.md) 以啟用範例資料模組。 | 需要Composer知識以及對Commerce檔案系統的存取權。 |
-| 複製存放庫 | [複製GitHub存放庫](git-repositories.md) 和範例資料存放庫，然後將它們連結在一起。 | 僅供參與開發人員使用。 其他人都應使用上述其中一種方法。 |
+| 使用撰寫器 | [執行`magento sampledata:deploy`以修改應用程式的根`composer.json`](composer-packages.md)以啟用範例資料模組。 | 需要Composer知識以及對Commerce檔案系統的存取權。 |
+| 複製存放庫 | [複製GitHub存放庫](git-repositories.md)和範例資料存放庫，然後將它們連結在一起。 | 僅供參與開發人員使用。 其他人都應使用上述其中一種方法。 |

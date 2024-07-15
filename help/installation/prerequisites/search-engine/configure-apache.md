@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4版本新增OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 另請參閱 [將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md) 以取得詳細資訊。
+>2.4.4版本新增OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
 
-本節探討如何將Apache設定為 *不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在中討論 [與Apache的安全通訊](#secure-communication-with-apache).
+本節探討如何將Apache設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與Apache](#secure-communication-with-apache)的[安全通訊中討論。
 
 >[!NOTE]
 >
@@ -30,13 +30,13 @@ ht-degree: 0%
 
 本節探討如何使用虛擬主機來設定Proxy。
 
-1. 啟用 `mod_proxy` 如下所示：
+1. 啟用`mod_proxy`，如下所示：
 
    ```bash
    a2enmod proxy_http
    ```
 
-1. 使用文字編輯器開啟 `/etc/apache2/sites-available/000-default.conf`
+1. 使用文字編輯器開啟`/etc/apache2/sites-available/000-default.conf`
 1. 在檔案頂端新增下列指令：
 
    ```conf
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 ## 與Apache的安全通訊
 
-本節探討如何使用保護Apache與搜尋引擎之間的通訊 [HTTP基本](https://datatracker.ietf.org/doc/html/rfc2617) 使用Apache進行驗證。 如需更多選項，請參閱下列資源之一：
+本節討論如何使用[HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617)驗證和Apache來保護Apache與搜尋引擎之間的通訊。 如需更多選項，請參閱下列資源之一：
 
 * [Apache 2.4驗證和授權教學課程](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
@@ -99,24 +99,24 @@ ht-degree: 0%
 
 #### 安裝htpasswd （如有必要）
 
-首先，檢視您是否擁有Apache `htpasswd` 公用程式的安裝方式如下：
+首先，檢視是否已依照以下方式安裝Apache `htpasswd`公用程式：
 
-1. 輸入以下命令以確定 `htpasswd` 已安裝：
+1. 輸入下列命令以判斷是否已安裝`htpasswd`：
 
    ```bash
    which htpasswd
    ```
 
-   如果顯示路徑，則安裝路徑；如果命令未傳回任何輸出， `htpasswd` 未安裝。
+   如果路徑顯示，則表示已安裝；如果命令未傳回任何輸出，則不安裝`htpasswd`。
 
-1. 如有必要，請安裝 `htpasswd`：
+1. 如有必要，請安裝`htpasswd`：
 
    * Ubuntu： `apt-get -y install apache2-utils`
    * CentOS： `yum -y install httpd-tools`
 
 #### 建立密碼檔案
 
-以使用者身分輸入以下命令，並附上 `root` 許可權：
+以具有`root`許可權的使用者身分輸入下列命令：
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -128,15 +128,15 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 
 位置
 
-* `<username>` 可以是：
+* `<username>`可以是：
 
    * 設定cron：網頁伺服器使用者或其他使用者。
 
   在此範例中，我們使用Web伺服器使用者，但使用者的選擇由您決定。
 
-   * 設定Elasticsearch：使用者已命名 `magento_elasticsearch` 在此範例中
+   * 設定Elasticsearch：在此範例中，使用者名為`magento_elasticsearch`
 
-* `<password file name>` 必須為隱藏的檔案(開頭為 `.`)，且應該反映使用者的名稱。 如需詳細資訊，請參閱本節稍後的範例。
+* `<password file name>`必須為隱藏的檔案（以`.`開頭），且應反映使用者的名稱。 如需詳細資訊，請參閱本節稍後的範例。
 
 按照畫面上的提示為使用者建立密碼。
 
@@ -166,7 +166,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticse
 
 #### 新增其他使用者
 
-若要將其他使用者新增至您的密碼檔案，請輸入以下命令作為使用者 `root` 許可權：
+若要將其他使用者新增至您的密碼檔案，請以具有`root`許可權的使用者身分輸入下列命令：
 
 ```bash
 htpasswd /usr/local/apache/password/.htpasswd <username>
@@ -174,13 +174,13 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### 與Apache的安全通訊
 
-本節將討論如何設定 [HTTP基本驗證](https://httpd.apache.org/docs/2.2/howto/auth.html). 同時使用TLS和HTTP Basic驗證可防止任何人攔截與Elasticsearch、OpenSearch或您的應用程式伺服器的通訊。
+本節討論如何設定[HTTP基本驗證](https://httpd.apache.org/docs/2.2/howto/auth.html)。 同時使用TLS和HTTP Basic驗證可防止任何人攔截與Elasticsearch、OpenSearch或您的應用程式伺服器的通訊。
 
 本節探討如何指定可以存取Apache伺服器的使用者。
 
 1. 使用文字編輯器將下列內容新增至您的安全虛擬主機。
 
-   * Apache 2.4：編輯 `/etc/apache2/sites-available/default-ssl.conf`
+   * Apache 2.4：編輯`/etc/apache2/sites-available/default-ssl.conf`
 
    ```conf
    <Proxy *>
@@ -200,7 +200,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
    </Proxy>
    ```
 
-1. 如果您已將前述新增至安全虛擬主機，請移除 `Listen 8080` 和 `<VirtualHost *:8080>` 您先前新增至不安全的虛擬主機的指示。
+1. 如果您已將前述新增至安全虛擬主機，請移除`Listen 8080`以及您先前新增至不安全虛擬主機的`<VirtualHost *:8080>`指示。
 
 1. 儲存變更、退出文字編輯器，然後重新啟動Apache：
 

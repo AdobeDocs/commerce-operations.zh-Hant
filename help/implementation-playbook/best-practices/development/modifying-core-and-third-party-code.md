@@ -4,7 +4,8 @@ description: 瞭解如何以及何時修改核心Adobe Commerce和第三方PHP�
 role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2023-12-8
-source-git-commit: ab02552939d595627f0de83b8508c7cd21777642
+exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
+source-git-commit: d47567a8d69ccdae3db01e964f1db12e8ae26717
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%
@@ -46,7 +47,7 @@ index 51b68411d40..ac4a3468322 100644
 
 #### 修補程式可變更的專案
 
-任何專案。 就字面上來說，任何目標檔案中的任何字元都可以變更。 修補程式並不限於任何特定檔案型別或程式碼語言。 通常，您會使用修補程式來鎖定中的檔案。 `vendor` 目錄。 
+任何專案。 就字面上來說，任何目標檔案中的任何字元都可以變更。 修補程式並不限於任何特定檔案型別或程式碼語言。 一般而言，您會使用修補程式來鎖定`vendor`目錄中的檔案。 
 
 #### 何時使用修補程式
 
@@ -69,7 +70,7 @@ Adobe Commerce平台使用「物件管理員」來例項化PHP類別，因為它
 
 #### 宣告偏好設定
 
-宣告偏好設定是一個相當簡單的程式。 需將一行程式碼新增至 `di.xml` 模組中的檔案。 這項工作可在全域或任何Adobe Commerce的「區域」內完成，例如 `frontend`， `adminhtml`， `graphql`， `webapi_rest`、和 `crontab`.
+宣告偏好設定是一個相當簡單的程式。 需要將一行程式碼新增至模組內的`di.xml`檔案。 這項工作可在全域或任何Adobe Commerce「區域」內完成，例如`frontend`、`adminhtml`、`graphql`、`webapi_rest`和`crontab`。
 
 ```xml
 <preference for="Magento\Elasticsearch7\SearchAdapter\Adapter" type="Vendor\Namespace\Adapter\AlgoliaElasticSearch7Adapter"/>
@@ -105,11 +106,11 @@ class AlgoliaElasticSearchAdapter extends \Magento\Elasticsearch7\SearchAdapter\
 
 觀察者是一種事件偵聽程式的概念，在許多應用程式、平台、程式庫和程式碼語言中都可找到。 這個概念並非Adobe Commerce平台所特有。 從Magento1起，觀察者就一直被植入平台，且被視為如何修改核心程式碼和協力廠商程式碼的主要選擇。 
 
-核心程式碼基底和任何協力廠商模組都可以在程式碼中的選定位置傳送事件。 在中宣告的觀察者 `events.xml` 檔案且正在接聽依名稱傳送的事件，可在全域層級運作或受限於任何Adobe Commerce「區域」，例如 `frontend`， `adminhtml`， `graphql`， `webapi_rest`、和 `crontab`.
+核心程式碼基底和任何協力廠商模組都可以在程式碼中的選定位置傳送事件。 在`events.xml`檔案中宣告且正在以名稱接聽分派事件的觀察者，可以在全域層級上運作或受限於任何Adobe Commerce「區域」，例如`frontend`、`adminhtml`、`graphql`、`webapi_rest`和`crontab`。
 
 #### 如何宣告觀察者
 
-觀察者可在全域或區域專屬中設定 `events.xml` 檔案。
+可以在全域或區域特定的`events.xml`檔案中設定觀察者。
 
 ```xml
     <event name="sales_model_service_quote_submit_before">
@@ -164,11 +165,11 @@ class SetOrderRewardFlag implements ObserverInterface
 
 ### 外掛程式
 
-外掛程式是Adobe Commerce平台中推出的彈性概念。 它可讓您擷取、取代和修改任何公用PHP方法。 外掛程式可讓您在執行目標方法之前修改進入方法的引數、在執行目標方法之後修改結果，或完全取代目標方法。 您可以在單一外掛程式檔案中修改目標PHP類別的許多方法。 此外，您也可以使用 `$subject` 用來執行目標PHP類別中存在的任何公用方法的引數。
+外掛程式是Adobe Commerce平台中推出的彈性概念。 它可讓您擷取、取代和修改任何公用PHP方法。 外掛程式可讓您在執行目標方法之前修改進入方法的引數、在執行目標方法之後修改結果，或完全取代目標方法。 您可以在單一外掛程式檔案中修改目標PHP類別的許多方法。 此外，您可以使用`$subject`引數來執行目標PHP類別中存在的任何公用方法。
 
 #### 如何宣告外掛程式
 
-外掛程式可在全域或區域專屬中設定 `di.xml` 檔案。
+外掛程式可以在全域或區域特定的`di.xml`檔案中設定。
 
 ```xml
     <type name="Magento\Catalog\Api\CategoryRepositoryInterface">

@@ -4,7 +4,7 @@ description: 包含基本量度，以便您做出資料導向式決策。
 exl-id: 5b946cce-25cd-4a69-b565-235acb16cad4
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---

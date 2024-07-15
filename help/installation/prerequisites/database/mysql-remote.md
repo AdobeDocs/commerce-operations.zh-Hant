@@ -21,26 +21,26 @@ Aurora是高效能、完全相容的MySQL伺服器，裝載於AWS上。
 
 使用Aurora做為資料庫，就像使用預設的資料庫聯結器，在一般Adobe Commerce安裝組態中指定資料庫一樣容易。
 
-執行時 `bin/magento setup:install`，請使用Aurora資訊於 `db-` 欄位：
+執行`bin/magento setup:install`時，請使用`db-`欄位中的Aurora資訊：
 
 ```bash
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
-此 `db-host` value是含有的Aurora URL `https://` 和結尾 `:portnumber`  已移除。
+`db-host`值是已移除`https://`及尾端`:portnumber`的Aurora URL。
 
 ## 設定遠端資料庫連線
 
 >[!NOTE]
 >
->這是進階主題，僅供經驗豐富的網路管理員或資料庫管理員使用。 您必須擁有 `root` 存取檔案系統，而且您必須能夠以 `root`.
+>這是進階主題，僅供經驗豐富的網路管理員或資料庫管理員使用。 您必須具有`root`檔案系統存取權，而且必須能夠以`root`身分登入MySQL。
 
 ### 必要條件
 
 開始之前，您必須：
 
-* [安裝MySQL伺服器](mysql.md) 資料庫伺服器上。
-* [建立資料庫執行處理](mysql.md#configuring-the-database-instance) 資料庫伺服器上。
+* [在資料庫伺服器上安裝MySQL伺服器](mysql.md)。
+* [在資料庫伺服器上建立資料庫執行個體](mysql.md#configuring-the-database-instance)。
 * 在您的Adobe Commerce Web節點上安裝MySQL使用者端。 如需詳細資訊，請參閱MySQL檔案。
 
 ### 高可用性
@@ -50,7 +50,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 * 您必須為每個Web伺服器節點設定連線。
 * 一般而言，您會設定資料庫連線到資料庫負載平衡器；不過，資料庫叢集可能很複雜，其設定取決於您。 Adobe沒有針對資料庫叢集提出特定建議。
 
-  如需詳細資訊，請參閱 [MySQL檔案](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  如需詳細資訊，請參閱[MySQL檔案](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html)。
 
 ### 解決連線問題
 
@@ -60,7 +60,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 
 若要建立遠端連線：
 
-1. 在您的資料庫伺服器上，以具有的使用者身分 `root` 許可權，開啟您的MySQL設定檔。
+1. 在您的資料庫伺服器上，以具有`root`許可權的使用者身分，開啟您的MySQL設定檔。
 
    若要尋找它，請輸入下列命令：
 
@@ -77,19 +77,19 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 
    >[!NOTE]
    >
-   >在Ubuntu 16上，路徑通常是 `/etc/mysql/mysql.conf.d/mysqld.cnf`.
+   >在Ubuntu 16上，路徑通常是`/etc/mysql/mysql.conf.d/mysqld.cnf`。
 
-1. 搜尋組態檔 `bind-address`.
+1. 搜尋`bind-address`的組態檔。
 
    如果值存在，請依下列方式變更值。
 
-   如果不存在，則將其新增到 `[mysqld]` 區段。
+   如果不存在，則將其新增到`[mysqld]`區段。
 
    ```conf
    bind-address = <ip address of your web node>
    ```
 
-   另請參閱 [MySQL檔案](https://dev.mysql.com/doc/refman/5.6/en/server-options.html)，尤其是如果您有叢集化的Web伺服器。
+   請參閱[MySQL檔案](https://dev.mysql.com/doc/refman/5.6/en/server-options.html)，尤其是如果您有叢集化網頁伺服器。
 
 1. 將變更儲存至組態檔並退出文字編輯器。
 1. 重新啟動MySQL服務：
@@ -100,18 +100,18 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 
    >[!NOTE]
    >
-   >如果MySQL無法啟動，請在syslog中尋找問題的來源。 使用解決問題 [MySQL檔案](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) 或其他權威來源。
+   >如果MySQL無法啟動，請在syslog中尋找問題的來源。 使用[MySQL檔案](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address)或其他授權來源來解決問題。
 
 ## 授與資料庫使用者的存取權
 
 若要讓Web節點連線到資料庫伺服器，您必須授予Web節點資料庫使用者對遠端伺服器上資料庫的存取權。
 
-此範例授予 `root` 資料庫使用者對遠端主機上資料庫的完整存取權。
+此範例授予`root`資料庫使用者對遠端主機上資料庫的完整存取權。
 
 若要將存取權授與資料庫使用者：
 
 1. 登入資料庫伺服器。
-1. 連線至MySQL資料庫，作為 `root` 使用者。
+1. 以`root`使用者身分連線至MySQL資料庫。
 1. 輸入下列命令：
 
    ```shell
@@ -155,8 +155,8 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 安裝Adobe Commerce時，您必須指定下列專案：
 
-* 基本URL (也稱為 *商店地址*)指定主機名稱或IP位址 *Web節點*
-* 資料庫主機為 *遠端資料庫伺服器* IP位址（如果資料庫伺服器是叢集化的，則為負載平衡器）
-* 資料庫使用者名稱是 *本機Web節點* 您授與存取權的資料庫使用者
+* 基底URL （也稱為&#x200B;*存放區位址*）指定&#x200B;*網頁節點*&#x200B;的主機名稱或IP位址
+* 資料庫主機是&#x200B;*遠端資料庫伺服器* IP位址（如果資料庫伺服器是叢集化的，則為負載平衡器）
+* 資料庫使用者名稱是您授與存取權的&#x200B;*本機Web節點*&#x200B;資料庫使用者
 * 資料庫密碼是本機Web節點使用者的密碼
 * 資料庫名稱是遠端伺服器上的資料庫名稱

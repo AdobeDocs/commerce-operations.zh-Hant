@@ -18,11 +18,11 @@ Adobe Commerce可支援多個Varnish執行個體。
 
 ## 清除多個Varnish例項的設定
 
-使用設定清漆主機後，Commerce會清除清漆主機 [`magento setup:config:set`](../../installation/tutorials/deployment.md) 命令。
+使用[`magento setup:config:set`](../../installation/tutorials/deployment.md)命令設定清漆主機後，Commerce會清除清漆主機。
 
-您應使用 `--http-cache-hosts` 引數，用於指定清漆主機和接聽連線埠的逗號分隔清單。 （請勿以空格字元分隔主機。）
+您應該使用`--http-cache-hosts`引數來指定Varnish主機和接聽連線埠的逗號分隔清單。 （請勿以空格字元分隔主機。）
 
-引數格式必須為 `<hostname or ip>:<listen port>`，可省略 `<listen port>` 若是連線埠80。
+引數格式必須是`<hostname or ip>:<listen port>`，若是連線埠80，則可以省略`<listen port>`。
 
 例如，
 
@@ -30,8 +30,8 @@ Adobe Commerce可支援多個Varnish執行個體。
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-接著，您可以在重新整理Commerce快取時，清除所有的Varnish主機(也稱為 _清潔_ 快取)，或使用命令列。
+當您在管理員中重新整理Commerce快取（也稱為&#x200B;_清除_&#x200B;快取）或使用命令列時，可以清除所有Varnish主機。
 
-若要使用管理員重新整理快取，請按一下 **系統** >工具> **快取管理**，然後按一下 **排清Magento快取** ，位於頁面頂端。 （您也可以重新整理個別快取型別。）
+若要使用Admin重新整理快取，請按一下[工具] > [快取管理] **** ****，然後按一下頁面頂端的[排清Magento快取] **。**（您也可以重新整理個別快取型別。）
 
-若要從cli重新整理多個Varnish執行個體的快取，請使用 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) 命令作為 [檔案系統擁有者](../../installation/prerequisites/file-system/overview.md).
+若要從cli重新整理多個Varnish執行個體的快取，請使用[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types)命令做為[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)。

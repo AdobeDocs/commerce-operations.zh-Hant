@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 部署流程
 
-此 [!DNL Commerce] 生產部署流程可協助存放區達到最高效能。
+[!DNL Commerce]生產部署流程可協助存放區達到最大效能。
 
 ## 安裝相依性
 
-此 `composer.json` 和 `composer.lock` 檔案管理 [!DNL Commerce] 相依性並為每個套件安裝適當的版本。 您必須先安裝相依性，然後才能安裝 [前置處理相依性插入指示](#preprocess-dependency-injection-instructions) 如果您計畫更新 [自動載入器](#update-the-autoloader).
+`composer.json`和`composer.lock`檔案管理[!DNL Commerce]相依性，並為每個套件安裝適當的版本。 如果您打算更新[自動載入器](#update-the-autoloader)，則必須在[前置處理相依性插入指示](#preprocess-dependency-injection-instructions)之前安裝相依性。
 
-若要安裝 [!DNL Commerce] 相依性：
+若要安裝[!DNL Commerce]相依性：
 
 ```bash
 composer install --no-dev
@@ -41,13 +41,13 @@ bin/magento setup:di:compile
 
 ## 更新自動載入器
 
-編譯完成後，請確認 [APCu已啟用](../performance/software.md#php-settings) 並更新自動載入器：
+編譯完成後，請確認[APCu已啟用](../performance/software.md#php-settings)並更新自動載入器：
 
 更新自動載入器：
 
 >[!INFO]
 >
->此 `-o` 選項會將PSR-0/4自動載入轉換成classmap，以獲得更快的自動載入器。 此 `--apcu` 選項使用APCu來快取「已找到/找不到」類別。
+>`-o`選項會將PSR-0/4自動載入轉換成classmap，以獲得更快的自動載入器。 `--apcu`選項使用APCu來快取found/not-found類別。
 
 ```bash
 composer dump-autoload -o --apcu
@@ -73,7 +73,7 @@ bin/magento setup:static-content:deploy
 
 ## 部署靜態內容
 
-部署靜態內容原因 [!DNL Commerce] 若要執行下列動作：
+部署靜態內容導致[!DNL Commerce]執行下列動作：
 
 * 分析所有靜態資源
 * 執行內容合併、最小化和整合
@@ -81,9 +81,9 @@ bin/magento setup:static-content:deploy
 * 分析主題遞補
 * 將所有已處理和具體化的內容儲存到特定資料夾，以供日後使用
 
-如果您的靜態內容未部署， [!DNL Commerce] 會即時執行所有列出的作業，大幅增加回應時間。
+如果未部署您的靜態內容，[!DNL Commerce]會即時執行所有列出的作業，導致回應時間大幅增加。
 
-您可以使用各種選項，根據存放區大小和履行需求來自訂部署作業。 最常見的是精簡部署策略。 另請參閱 [靜態檔案部署策略](../configuration/cli/static-view-file-strategy.md)
+您可以使用各種選項，根據存放區大小和履行需求來自訂部署作業。 最常見的是精簡部署策略。 請參閱[靜態檔案部署策略](../configuration/cli/static-view-file-strategy.md)
 
 若要部署靜態內容：
 
@@ -97,9 +97,9 @@ bin/magento setup:static-content:deploy
 
 >[!INFO]
 >
->將模式設定為生產自動執行 `setup:di:compile` 和 `setup:static-content:deploy`.
+>將模式設定為生產模式會自動執行`setup:di:compile`和`setup:static-content:deploy`。
 
-最後，您需要將商店置於生產模式。 生產模式經過專門最佳化，以發揮商店的最大效能。 這也會停用所有開發人員專屬功能。 這可在您的中完成 `.htaccess` 或 `nginx.conf` 檔案：
+最後，您需要將商店置於生產模式。 生產模式經過專門最佳化，以發揮商店的最大效能。 這也會停用所有開發人員專屬功能。 這可以在您的`.htaccess`或`nginx.conf`檔案中完成：
 
 `SetEnv MAGE_MODE production`
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 管理協力廠商擴充功能
 
-擴充或自訂Adobe Commerce行為的程式碼稱為擴充功能。 您可以選擇封裝並發佈擴充功能於 [Commerce Marketplace](https://commercemarketplace.adobe.com/) 或其他擴充功能發佈系統。
+擴充或自訂Adobe Commerce行為的程式碼稱為擴充功能。 您可以選擇在[Commerce Marketplace](https://commercemarketplace.adobe.com/)或其他擴充功能散發系統上封裝和散發擴充功能。
 
 擴充功能包括：
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->本主題說明如何使用命令列介面來管理您從Commerce Marketplace購買的協力廠商擴充功能。 您可以使用相同的程式進行安裝 _任何_ 擴充功能；您只需要擴充功能的撰寫器名稱和版本。 若要尋找，請開啟擴充功能的 `composer.json` 檔案並記下值 `"name"` 和 `"version"`.
+>本主題說明如何使用命令列介面來管理您從Commerce Marketplace購買的協力廠商擴充功能。 您可以使用相同的程式來安裝&#x200B;_any_&#x200B;擴充功能；您只需要該擴充功能的撰寫器名稱和版本。 若要尋找它，請開啟擴充功能的`composer.json`檔案，並記下`"name"`和`"version"`的值。
 
 ## 安裝
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 若要安裝擴充功能，您必須：
 
 1. 從Commerce Marketplace或其他擴充功能開發人員取得擴充功能。
-1. 如果您從Commerce Marketplace安裝擴充功能，請確定 `repo.magento.com` 存放庫存在於您的 `composer.json` 檔案：
+1. 如果您從Commerce Marketplace安裝擴充功能，請確定`composer.json`檔案中有`repo.magento.com`存放庫：
 
    ```bash
    "repositories": [
@@ -50,39 +50,39 @@ ht-degree: 0%
    ```
 
 1. 取得擴充功能的撰寫器名稱和版本。
-1. 更新 `composer.json` 檔案名稱，並搭配副檔名與版本。
+1. 以副檔名的名稱和版本更新專案中的`composer.json`檔案。
 1. 確認擴充功能已正確安裝。
 1. 啟用並設定擴充功能。
 
 ### 取得擴充功能資訊
 
-如果您已知道擴充功能的撰寫器名稱和版本，請略過此步驟，並繼續使用 [更新您的 `composer.json` 檔案](#update-composer-dependencies).
+如果您已經知道擴充功能的撰寫器名稱和版本，請略過此步驟，然後繼續[更新您的`composer.json`檔案](#update-composer-dependencies)。
 
 若要從Commerce Marketplace取得擴充功能的撰寫器名稱和版本：
 
-1. 登入 [Commerce Marketplace](https://commercemarketplace.adobe.com/) 使用您購買擴充功能所用的使用者名稱和密碼。
+1. 以您購買擴充功能所用的使用者名稱和密碼登入[Commerce Marketplace](https://commercemarketplace.adobe.com/)。
 
-1. 在右上角，按一下 **您的姓名** > **我的設定檔**.
+1. 在右上角，按一下&#x200B;**您的姓名** > **我的設定檔**。
 
    ![存取您的Marketplace帳戶](../../assets/installation/marketplace-my-profile.png)
 
-1. 按一下 **我的購買**.
+1. 按一下&#x200B;**我的購買**。
 
-   ![Marketplace購買記錄](../../assets/installation//marketplace-my-purchases.png)
+   ![市集購買記錄](../../assets/installation//marketplace-my-purchases.png)
 
-1. 找到您要安裝的擴充功能，然後按一下 **技術細節**.
+1. 找到您要安裝的擴充功能，然後按一下&#x200B;**技術詳細資料**。
 
-   ![技術詳細資訊會顯示擴充功能的撰寫器名稱](../../assets/installation/marketplace-extension-technical-details.png)
+   ![技術詳細資料顯示擴充功能的撰寫器名稱](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
->或者，您可以找到「撰寫器」名稱和版本 _任何_ 擴充功能(無論您是在Commerce Marketplace或其他地方購買)中的 `composer.json` 檔案。
+>或者，您可以在擴充功能的`composer.json`檔案中找到&#x200B;_any_&#x200B;擴充功能的撰寫器名稱和版本(無論您是透過Commerce Marketplace或其他方式購買)。
 
 ### 更新撰寫器相依性
 
-將擴充功能的名稱和版本新增至 `composer.json` 檔案：
+新增擴充功能的名稱和版本至`composer.json`檔案：
 
-1. 導覽至您的專案目錄並更新您的 `composer.json` 檔案。
+1. 導覽至您的專案目錄並更新您的`composer.json`檔案。
 
    ```bash
    composer require <component-name>:<version>
@@ -94,7 +94,7 @@ ht-degree: 0%
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. 輸入您的 [驗證金鑰](../prerequisites/authentication-keys.md). 您的公開金鑰是您的使用者名稱；您的私密金鑰是您的密碼。
+1. 輸入您的[驗證金鑰](../prerequisites/authentication-keys.md)。 您的公開金鑰是您的使用者名稱；您的私密金鑰是您的密碼。
 
 1. 請等待Composer完成更新您的專案相依性，並確認沒有任何錯誤：
 
@@ -120,7 +120,7 @@ bin/magento module:status J2t_Payplug
 Module is disabled
 ```
 
-副檔名採用格式 `<VendorName>_<ComponentName>`；此格式與Composer名稱不同。 使用此格式來啟用擴充功能。 如果您不確定擴充功能名稱，請執行：
+副檔名格式為`<VendorName>_<ComponentName>`；此格式與撰寫器名稱不同。 使用此格式來啟用擴充功能。 如果您不確定擴充功能名稱，請執行：
 
 ```bash
 bin/magento module:status
@@ -130,7 +130,7 @@ bin/magento module:status
 
 ### 啟用
 
-除非您先清除產生的靜態檢視檔案，否則有些副檔名無法正常運作。 使用 `--clear-static-content` 啟用副檔名時清除靜態檢視檔案的選項。
+除非您先清除產生的靜態檢視檔案，否則有些副檔名無法正常運作。 啟用副檔名時，請使用`--clear-static-content`選項清除靜態檢視檔案。
 
 1. 啟用擴充功能並清除靜態檢視檔案：
 
@@ -184,7 +184,7 @@ bin/magento module:status
 
 >[!TIP]
 >
->如果您在瀏覽器中載入店面時發生錯誤，請使用下列命令清除快取： `bin/magento cache:flush`.
+>如果您在瀏覽器中載入店面時發生錯誤，請使用下列命令清除快取： `bin/magento cache:flush`。
 
 ## 升級
 
@@ -232,13 +232,13 @@ bin/magento module:status
 
 >[!CAUTION]
 >
->在非生產環境中執行解除安裝步驟 _第一_ 並在部署到生產環境之前進行徹底測試。
+>在非生產環境&#x200B;_上執行解除安裝步驟_，並在部署到生產環境之前進行完整測試。
 
 下列指示提供解除安裝協力廠商擴充功能的一般資訊：
 
 1. 從您的Adobe Commerce專案存放庫移除擴充功能。
 
-   - 針對以Composer為基礎的擴充功能，請從您的Adobe Commerce移除擴充功能 `composer.json` 檔案。
+   - 對於以Composer為基礎的副檔名，請從您的Adobe Commerce `composer.json`檔案中移除該副檔名。
 
      ```bash
      composer remove <package-name>
@@ -250,7 +250,7 @@ bin/magento module:status
      rm -rf app/code/<vendor-name>/<module-name>
      ```
 
-1. 如果 `config.php` 檔案是由Adobe Commerce專案存放庫中的原始檔控制管理，請從移除副檔名 `config.php` 檔案。
+1. 如果`config.php`檔案是在您的Adobe Commerce專案存放庫中的原始檔控制之下，請從`config.php`檔案中移除副檔名。
 
 1. 測試您的本機資料庫，確保廠商提供的指示如預期般運作。
 

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 命令列工具
 
-Commerce有一個命令列介面(CLI)—`<magento_root>/bin/magento` — 執行安裝和設定工作，包括：
+Commerce有一個命令列介面(CLI) — `<magento_root>/bin/magento` — 可執行安裝和設定工作，包括：
 
 - 安裝Commerce （以及更新資料庫架構、建立部署設定等相關工作）
 - 清除快取
@@ -23,20 +23,20 @@ Commerce有一個命令列介面(CLI)—`<magento_root>/bin/magento` — 執行�
 
 其他優點包括：
 
-- 單一命令(`<magento_root>/bin/magento list`)列出所有可用的安裝和設定命令。
+- 單一命令(`<magento_root>/bin/magento list`)列出所有可用的安裝和組態命令。
 - 以Symfony為基礎的一致使用者介面。
 - CLI可擴充，因此協力廠商開發人員可以「插入」至其中。 這還有消除使用者學習曲線的額外好處。
 - 已停用模組的命令不顯示。
 
-本主題說明如何使用CLI設定Adobe Commerce軟體。 如需有關安裝Commerce的資訊，請參閱 [安裝流程](../../installation/overview.md) 在 _安裝指南_.
+本主題說明如何使用CLI設定Adobe Commerce軟體。 如需有關安裝Commerce的資訊，請參閱&#x200B;_安裝指南_&#x200B;中的[安裝流程](../../installation/overview.md)。
 
 ## 必要條件
 
 開始使用CLI之前，請確定：
 
-1. 您的系統符合中討論的需求 [系統需求](../../installation/system-requirements.md) 在 _安裝指南_.
-1. 您已完成中討論的所有先決條件工作 [必要條件](../../installation/prerequisites/overview.md) 在 _安裝指南_.
-1. 登入Commerce伺服器後，請切換為有權寫入Commerce檔案系統的使用者。 另請參閱 [切換到檔案系統擁有者](../../installation/prerequisites/file-system/overview.md) 在 _安裝指南_.
+1. 您的系統符合&#x200B;_安裝指南_&#x200B;中的[系統需求](../../installation/system-requirements.md)所討論的需求。
+1. 您已完成&#x200B;_安裝指南_&#x200B;中[先決條件](../../installation/prerequisites/overview.md)中討論的所有先決條件工作。
+1. 登入Commerce伺服器後，請切換為有權寫入Commerce檔案系統的使用者。 請參閱&#x200B;_安裝指南_&#x200B;中的[切換到檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)。
 
 ## 正在執行命令
 
@@ -52,9 +52,9 @@ su <file system owner> -s /bin/bash -c <command>
 sudo -u <file system owner> <command>
 ```
 
-**從任何目錄執行CLI命令**：
+**若要從任何目錄執行CLI命令**：
 
-新增 `<magento_root>/bin` 至您的系統 `PATH`.
+新增`<magento_root>/bin`至您的系統`PATH`。
 
 CentOS的bash shell範例：
 
@@ -64,6 +64,6 @@ export PATH=$PATH:/var/www/html/magento2/bin
 
 您可以選擇執行下列動作：
 
-- `cd <magento_root>/bin` 並以下列身分執行 `./magento <command name>`
+- `cd <magento_root>/bin`並以`./magento <command name>`身分執行
 - `<magento_root>/bin/magento <command name>`
-- `<magento_root>` 是網頁伺服器docroot的子目錄
+- `<magento_root>`是網頁伺服器docroot的子目錄

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 升級資料庫結構和資料
 
-使用此指令之前，您必須 [安裝應用程式](../advanced.md).
+使用此命令之前，您必須[安裝應用程式](../advanced.md)。
 
 ## 升級資料庫結構和資料
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A *元件* 可以是模組、主題或語言套件；元件是否來自Commerce Marketplace並不重要。
+>*元件*&#x200B;可以是模組、佈景主題或語言套件；元件是否來自Commerce Marketplace並不重要。
 
 1. 開始升級：
 
@@ -31,7 +31,7 @@ ht-degree: 0%
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   位置 `--keep-generated` 是不會更新的選用引數 [靜態檢視檔案](../../configuration/cli/static-view-file-deployment.md). 此選用引數可供使用 *僅限* 在有限的情況下，由經驗豐富的系統整合經銷商執行。 該使用 *僅限* 在 [生產模式](../../configuration/bootstrap/application-modes.md#production-mode). 它應該 *非* 使用於 [開發人員模式](../../configuration/bootstrap/application-modes.md#developer-mode).
+   其中`--keep-generated`是不更新[靜態檢視檔案](../../configuration/cli/static-view-file-deployment.md)的可選引數。 此選用引數僅供經驗豐富的系統整合經銷商在有限的情況下使用&#x200B;*之*。 在[生產模式](../../configuration/bootstrap/application-modes.md#production-mode)中只應使用&#x200B;*1}。*&#x200B;它應該&#x200B;*不*&#x200B;用於[開發人員模式](../../configuration/bootstrap/application-modes.md#developer-mode)。
 
 1. 清除快取：
 

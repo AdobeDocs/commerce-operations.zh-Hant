@@ -4,7 +4,7 @@ description: 執行Adobe Commerce程式碼庫中定義的單元測試。
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 0%
 
 ## 必要條件
 
-執行此指令之前，請先執行下列動作 _必須_ 為true：
+執行此命令之前，下列&#x200B;_必須_&#x200B;為true：
 
-- 此 `Magento_Developer` 模組必須啟用。 您可以依照以下方式啟用它：
+- 必須啟用`Magento_Developer`模組。 您可以依照以下方式啟用它：
 
   ```bash
   bin/magento module:enable [--force] Magento_Developer
   ```
 
-  使用 `--force` 選項（如有必要）。
+  只有在必要時才使用`--force`選項。
 
 - 您的系統必須設定為執行所需的測試。
 
-例如，若要執行整合測試，您應複製 `dev/tests/integration/etc/install-config-mysql.php.dist` 至 `dev/tests/integration/etc/install-config-mysql.php` 並加以修改以符合您的環境。
+例如，若要執行整合測試，您應該將`dev/tests/integration/etc/install-config-mysql.php.dist`複製到`dev/tests/integration/etc/install-config-mysql.php`，並修改它以符合您的環境。
 
 ## 正在執行測試
 

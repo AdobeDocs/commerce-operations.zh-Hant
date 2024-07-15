@@ -5,14 +5,14 @@ exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # 主要關係人
 
-在2021年，許多企業已逐漸意識到，成為「防疫病」與組織的數位實力直接相關。 以Forrester資料為基礎，[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)我們發現，電子商務在3個月的時間裡就實現了10年的增長，其增長動力來自與客戶進行數位交流的需求，而實體門卻被鎖上了。
+在2021年，許多企業已逐漸意識到，成為「防疫病」與組織的數位實力直接相關。 根據Forrester的資料，[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)發現，電子商務在短短三個月內，就有10年的成長，其成長是由與客戶的數位連線需求所驅動，而實體門卻被鎖上。
 
 當決定投資於商業轉型時，最重要的步驟之一是決定誰從組織參與流程。 對於小型企業，有時電子商務或數位團隊只有少數人，因此整個團隊都會承擔這項任務。 然而，對於較大的組織，一種方法是將其分為三個不同的區域，包括：
 
@@ -39,6 +39,6 @@ ht-degree: 0%
 
 ## 高階主管支援人是誰？
 
-Digital Commerce 360報告稱，組織尚未投資進行新商業轉型的頭號原因是他們缺乏領導力支援。 領導團隊的參與程度對品牌的成功至關重要。 建議完全支援以下角色，包括在商務實作期間定期舉行查核點會議：
+數位Commerce 360報告稱，組織尚未投資進行新商業轉型的頭號原因是他們缺乏領導力支援。 領導團隊的參與程度對品牌的成功至關重要。 建議完全支援以下角色，包括在商務實作期間定期舉行查核點會議：
 
 - 整個C-suite

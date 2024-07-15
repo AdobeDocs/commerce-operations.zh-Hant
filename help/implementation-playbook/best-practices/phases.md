@@ -43,7 +43,7 @@ ht-degree: 7%
       <img alt="Launch" src="../../assets/icons/launch.svg" width="80" height="80">
     </a>
     <div>
-    <a href="launch/overview.md"><strong>Launch</strong></a>
+    <a href="launch/overview.md"><strong>啟動</strong></a>
     </div>
     產品上市前後的最終檢查清單審查、生產部署、安全性設定、服務驗證及效能監控  
     <br>

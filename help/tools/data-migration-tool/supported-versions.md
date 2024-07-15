@@ -1,18 +1,18 @@
 ---
 title: 支援的資料移轉版本
-description: 瞭解Magento1和Magento2的哪些版本可以 [!DNL Data Migration Tool] 支援。
+description: 瞭解 [!DNL Data Migration Tool] 支援的Magento1和Magento2的哪些版本。
 exl-id: ba6398b4-66be-4d33-a4d3-a9f0aaa0fa81
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '81'
 ht-degree: 0%
 
 ---
 
 # 支援的資料移轉版本
 
-此 [!DNL Data Migration Tool] 支援移轉 _從_ 下列版本：
+[!DNL Data Migration Tool]支援下列版本從&#x200B;_移轉_：
 
 * Adobe Commerce：
    * 1.11.x
@@ -34,4 +34,4 @@ ht-degree: 0%
 
 ## 移轉至版本
 
-若要瞭解支援的版本（您要移轉至的版本），請參閱 [!DNL Data Migration Tool]的 [發行頁面](https://github.com/magento/data-migration-tool/releases).
+若要瞭解支援的版本（您要移轉至的版本），請參閱[!DNL Data Migration Tool]的[發行頁面](https://github.com/magento/data-migration-tool/releases)。

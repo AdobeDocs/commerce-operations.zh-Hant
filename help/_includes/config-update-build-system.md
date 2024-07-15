@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # 更新建置系統
 
-**更新建置系統的方式**：
+**若要更新組建系統**：
 
 1. 以檔案系統擁有者的身分登入組建系統。
 1. 變更至應用程式根目錄。
@@ -16,7 +16,7 @@ ht-degree: 0%
    cd <Magento root dir>
    ```
 
-1. 將變更提取至 `app/etc/config.php` 從原始檔控制。
+1. 從原始檔控制提取變更到`app/etc/config.php`。
 
    ```bash
    git pull mconfig m2.2_deploy

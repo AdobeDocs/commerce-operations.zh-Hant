@@ -3,13 +3,13 @@ title: 程式碼檢閱最佳實務
 description: 瞭解Adobe Commerce專案開發階段的程式碼檢閱最佳實務。
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1161'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce的程式碼檢閱最佳作法
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 執行PhpStorm檢查可自動測試樣式（請參閱下文）。
 
-請務必設定 [PHPMD與PHPC](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) 並執行 [編碼標準](https://github.com/magento/magento-coding-standard) 工具從CLI （也位於下方）。 有一些重疊，但也有獨特的測試。
+請務必設定[PHPMD和PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/)，並從CLI執行[Coding Standard](https://github.com/magento/magento-coding-standard)工具（亦見下文）。 有一些重疊，但也有獨特的測試。
 
 ### 慣例和結構
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 - 程式碼可否由設定啟用或停用，以及所有必要的程式碼是否都會如預期般運作？
 - 是否有票證中提及的所有設定？ 檢查範圍、資料型別、驗證、轉譯及預設值。
-- 是否一律會在最低層級（商店檢視層級、網站層級或全域層級）擷取設定？ 設定擷取必須符合中範圍的定義 `system.xml` 檔案。
+- 是否一律會在最低層級（商店檢視層級、網站層級或全域層級）擷取設定？ 設定擷取必須符合`system.xml`檔案中的範圍定義。
 - 是否涵蓋技術規格流程圖中的所有路徑？ 是否涵蓋所有其他技術規格？
 - 是否為新功能定義ACL？
 - PhpDocs是否清晰？ 認可訊息是否清除？
@@ -80,14 +80,14 @@ ht-degree: 0%
 效能的檢閱是手動完成的，如有疑問，程式碼執行可協助您進行。
 
 - 查詢是否在回圈中執行？ 此回圈可以在已編輯檔案之外。
-- 您能發現任何 `cachable="false"` 屬性？ 它們是否正確套用？
+- 您能發現任何`cachable="false"`屬性嗎？ 它們是否正確套用？
 
 ### 安全性
 
 安全性檢閱是手動完成的，可透過文字搜尋加以協助。 部分安全性檢查由自動化測試處理。
 
 - 需要時是否會記錄例外狀況？ 是否使用正確的例外型別？
-- 可以 `around` 要避免外掛程式？
+- 可以避免`around`外掛程式嗎？
 - 外掛程式是否傳回正確的資料型別？
 - 您可以找到任何應該使用資料庫抽象層建立的原始SQL查詢嗎？
 - 是否有任何新型別的資料公開給任何型別的使用者、管理員或前端？ 這是否會帶來安全性風險？
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ### 隱私權與GDPR
 
-檢閱隱私權和 [GDPR](../../../security-and-compliance/privacy/gdpr.md) 手動完成。
+隱私權和[GDPR](../../../security-and-compliance/privacy/gdpr.md)的檢閱是手動完成的。
 
 - 程式碼會處理客戶資料或電子郵件嗎？ 請特別注意。
 - 如果這個程式碼可以在回圈中執行，它是否可以將客戶資料從一個回圈循環洩漏到另一個回圈循環？
@@ -131,19 +131,19 @@ ht-degree: 0%
   bin/magento deploy:mode:set developer || exit;
   ```
 
-- 資料庫結構描述 `whitelist.json` — 執行下列CLI命令，並驗證 `db_schema_whitelist.json` 不會新增或變更檔案。
+- 資料庫結構描述`whitelist.json` — 執行下列CLI命令，並驗證`db_schema_whitelist.json`檔案是否未新增或變更。
 
   ```bash
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
-- Composer驗證 — 驗證 `composer.json` 在包含下列內容的目錄中執行下列CLI指令以建立檔案： `composer.json` 檔案。
+- Composer驗證 — 在包含`composer.json`檔案的目錄中執行下列CLI命令，以驗證`composer.json`檔案。
 
   ```bash
   composer validate
   ```
 
-- 編碼標準 — 安裝並執行「編碼標準」工具，並對您的模組執行它。 以下檔案顯示如何透過輸入 `mcs ./app/code/Vendor/Module/`.
+- 編碼標準 — 安裝並執行「編碼標準」工具，並對您的模組執行它。 下列檔案顯示如何透過輸入`mcs ./app/code/Vendor/Module/`使其在任何地方執行。
 
   ```bash
   #!/usr/bin/env bash

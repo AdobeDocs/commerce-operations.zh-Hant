@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 服務設定路徑參考
 
-本節列出「管理員」中選項可用的變數名稱和設定路徑，位於 **商店** >設定> **設定** > **服務**.
+此區段列出&#x200B;**商店** >設定> **設定** > **服務**&#x200B;底下「管理員」中選項的變數名稱和設定路徑。
 
-此 [`magento app:config:dump` 命令](../cli/export-configuration.md) 將這些值寫入共用組態檔， `app/etc/config.php`，這應該是在原始檔控制中。 若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱 [使用環境變數覆寫組態設定](override-config-settings.md#environment-variables). 此主題會 _非_ 清單 [敏感值和系統特定值](config-reference-sens.md).
+[`magento app:config:dump`命令](../cli/export-configuration.md)將這些值寫入到共用組態檔`app/etc/config.php`，它應該是在原始檔控制中。 若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱[使用環境變數覆寫組態設定](override-config-settings.md#environment-variables)。 此主題&#x200B;_不_&#x200B;列出[敏感值和系統特定值](config-reference-sens.md)。
 
 ## Commerce Web API路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **服務** > **Web API**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **服務** > **網頁API**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## OAuth路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **服務** > **OAuth**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **服務** > **OAuth**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -38,7 +38,7 @@ ht-degree: 0%
 | 清除機率 | `oauth/cleanup/cleanup_probability` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 有效期 | `oauth/cleanup/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 有效期 | `oauth/consumer/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| OAuth消費者憑證HTTP貼文最大重新導向 | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| OAuth消費者憑證HTTP Post最大重新導向 | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | OAuth消費者憑證HTTP Post逾時 | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}

@@ -4,7 +4,7 @@ description: 建立策略，根據市場狀況動態地變更產品價格，以�
 exl-id: 913dba96-d939-4e9a-b382-f22c6669fed1
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 有三種因素可推動動態定價，包括：
 
-- **產業** — 零售商需要檢查產品與其他品牌中最基本的價格。
+- **產業** — 零售商需要檢查產品與其他品牌之間的最基本價格。
 
 - **市場** — 目前的供給與需求為何？ 什麼是預測供給與需求？
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 當您制定動態定價策略時，必須審視每個層面。
 
-![動態定價圖表](../../assets/playbooks/dynamic-pricing-diagram.png)
+![動態價格圖表](../../assets/playbooks/dynamic-pricing-diagram.png)
 
 ## 優點
 

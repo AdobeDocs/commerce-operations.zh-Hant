@@ -6,7 +6,7 @@ feature: Integration, Cache
 topic: Commerce, Performance
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,14 @@ ht-degree: 0%
 
 ## Adobe Commerce中的GraphQL快取
 
-當使用者的瀏覽器或AEM發佈者呼叫Adobe Commerce的GraphQL時，某些呼叫將會在Fastly中快取。 快取的查詢通常包含非個人資料，而且不太可能經常變更。 例如：categories、categoryList和products。 明確未快取的是定期變更的專案，若快取，可能會對個人資料和網站作業（例如購物車和customerPaymentTokens等查詢）帶來風險。
+當使用者的瀏覽器或AEM發佈者呼叫Adobe Commerce的GraphQL時，將會快取某些呼叫
+在Fastly中。 快取的查詢通常包含非個人資料，而且不太可能經常變更。 例如：categories、categoryList和products。 明確未快取的是定期變更的專案，若快取，可能會對個人資料和網站作業（例如購物車和customerPaymentTokens等查詢）帶來風險。
 
 GraphQL可讓您在單一呼叫中進行多個查詢。 請務必注意，如果您指定甚至Adobe Commerce不會快取的一個查詢與許多無法快取的其他查詢，Adobe Commerce將略過呼叫中所有查詢的快取。 開發人員在合併多個查詢時，應考量這一點，以確保可快取的查詢不會無意間繞過‡。
 
 >[!NOTE]
 >
-> 如需可快取和不可快取查詢的詳細資訊，請參閱Adobe Commerce [開發人員檔案](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
+> 有關可快取和不可快取查詢的詳細資訊，請參閱Adobe Commerce [開發人員檔案](https://devdocs.magento.com/guides/v2.4/graphql/caching.html)。
 
 ## 目錄平面表格
 
@@ -41,7 +42,7 @@ GraphQL可讓您在單一呼叫中進行多個查詢。 請務必注意，如果
 
 啟用Fastly來源遮罩後，您就可以同時啟用Fastly Image Optimizer。 產品目錄影像儲存在Adobe Commerce上的位置，此服務可讓您將所有耗用大量資源的產品目錄影像轉換處理作業解除安裝到Fastly，並從Adobe Commerce來源移除。 一般使用者的回應時間也會因頁面載入時間而有所改善，這是因為影像會轉換至邊緣位置，減少傳回Adobe Commerce原始頁面的請求數量，進而消除延遲情形。
 
-Fastly影像最佳化可以透過Admin中Fastly設定的「啟用深層影像最佳化」來啟用，但前提是您的來源盾牌已啟動。 有關Fastly影像最佳化的設定更多詳細資訊，請參閱Adobe Commerce [開發人員檔案](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
+Fastly影像最佳化可以透過Admin中Fastly設定的「啟用深層影像最佳化」來啟用，但前提是您的來源盾牌已啟動。 有關Fastly影像最佳化的設定詳細資訊，請參閱Adobe Commerce [開發人員檔案](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html)。
 
 ![Adobe Commerce管理員中Fastly影像最佳化設定的熒幕擷圖](../assets/commerce-at-scale/image-optimization.svg)
 
@@ -57,7 +58,7 @@ Fastly影像最佳化可以透過Admin中Fastly設定的「啟用深層影像最
 
 作為指南，在正常負載的環境中，啟用從屬連線會使效能降低10-15%。 但在負載和流量較大的叢集上，效能可提升約10-15%。 因此，使用預期的流量層級負載測試您的環境以評估此設定是否對負載下的效能時間有益很重要。
 
-若要啟用/停用mysql和redis的從屬連線，您應該編輯 `.magento.env.yaml` 檔案以包含以下專案：
+若要啟用/停用mysql和redis的從屬連線，您應該編輯您的`.magento.env.yaml`檔案以包含下列專案：
 
 ```
 stage:

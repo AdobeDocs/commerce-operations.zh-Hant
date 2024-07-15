@@ -11,7 +11,7 @@ ht-degree: 9%
 
 # 設定指南
 
-此 _設定_ 指南提供管理可設定Commerce應用程式功能與服務的參考資料和有限指引。 負責設定Commerce應用程式的技術使用者可以找到下列領域的指引：
+_組態_&#x200B;指南提供管理可設定之Commerce應用程式功能與服務的參考資料與有限指引。 負責設定Commerce應用程式的技術使用者可以找到下列領域的指引：
 
 - [安裝](../configuration/bootstrap/initialization.md)
 - [部署方法](../configuration/deployment/overview.md)
@@ -25,8 +25,8 @@ ht-degree: 9%
 
 ## Commerce管理設定
 
-「 」中有對應的主題 [Commerce使用手冊](https://docs.magento.com/user-guide/stores/configuration.html) 可協助您瞭解「Commerce管理員」中每個組態設定的欄位說明。
+[Commerce使用手冊](https://docs.magento.com/user-guide/stores/configuration.html)中有對應的主題，可協助您瞭解Commerce管理員中每個組態設定的欄位說明。
 
 ## 雲端設定
 
-[!DNL Commerce on cloud infrastructure] 使用 [組態檔集](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) 更新託管環境中的Commerce應用程式功能與服務。 由於Adobe雲端託管環境的獨特性質，您應一律檢閱 [雲端指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) 以取得其他設定需求。
+[!DNL Commerce on cloud infrastructure]使用[組組態檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html)來更新託管環境中的Commerce應用程式功能與服務。 由於Adobe雲端託管環境的獨特性質，您應該一律檢閱[雲端指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html)以瞭解其他設定需求。

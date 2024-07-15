@@ -14,18 +14,18 @@ ht-degree: 2%
 
 - [概觀](overview.md)
 - [系統需求](system-requirements.md)
-- 必要條件 {#prerequisites}
-   - [概觀](prerequisites/overview.md)
-   - 檔案系統 {#file-system}
+- 先決條件{#prerequisites}
+   - [總覽](prerequisites/overview.md)
+   - 檔案系統{#file-system}
       - [概觀](prerequisites/file-system/overview.md)
       - [設定許可權](prerequisites/file-system/configure-permissions.md)
-   - 網頁伺服器 {#web-server}
+   - 網頁伺服器{#web-server}
       - [Nginx](prerequisites/web-server/nginx.md)
       - [Apache](prerequisites/web-server/apache.md)
-   - 資料庫伺服器 {#database-server}
+   - 資料庫伺服器{#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [遠端連線](prerequisites/database/mysql-remote.md)
-   - 搜尋引擎 {#search-engine}
+   - 搜尋引擎{#search-engine}
       - [概觀](prerequisites/search-engine/overview.md)
       - [AWS OpenSearch](prerequisites/search-engine/aws-opensearch.md)
       - [設定Nginx](prerequisites/search-engine/configure-nginx.md)
@@ -38,7 +38,7 @@ ht-degree: 2%
    - [選購軟體](prerequisites/optional-software.md)
 - [快速入門安裝](composer.md)
 - [進階安裝](advanced.md)
-- 安裝後步驟 {#next-steps}
+- Post安裝步驟{#next-steps}
    - [驗證安裝](next-steps/verify.md)
    - [設定應用程式](next-steps/configuration.md)
    - [設定umask （選擇性）](next-steps/set-umask.md)
@@ -47,7 +47,7 @@ ht-degree: 2%
       - [下載撰寫器套件](sample-data/composer-packages.md)
       - [複製Git存放庫](sample-data/git-repositories.md)
       - [移除或更新模組](sample-data/remove-or-update.md)
-- Tutorials {#tutorials}
+- Tutorials{#tutorials}
    - [備份及回覆檔案系統、媒體及資料庫](tutorials/backup.md)
    - [檢查資料庫狀態](tutorials/database-status.md)
    - [設定訊息消費者行為](tutorials/message-consumers.md)

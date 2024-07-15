@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # 付款設定路徑參考
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **付款方法**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **銷售** > **付款方式**&#x200B;中的管理員中使用。
 
-此 [`magento app:config:dump` 命令](../cli/export-configuration.md) 將這些值寫入共用組態檔， `app/etc/config.php`，這應該是在原始檔控制中。 若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱 [使用環境變數覆寫組態設定](override-config-settings.md#environment-variables). 此主題會 _非_ 清單 [敏感值和系統特定值](config-reference-sens.md).
+[`magento app:config:dump`命令](../cli/export-configuration.md)將這些值寫入到共用組態檔`app/etc/config.php`，它應該是在原始檔控制中。 若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱[使用環境變數覆寫組態設定](override-config-settings.md#environment-variables)。 此主題&#x200B;_不_&#x200B;列出[敏感值和系統特定值](config-reference-sens.md)。
 
 設定會依付款方式進一步組織。
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 ## Payments Pro託管解決方案（英國）
 
-只有當您選擇英國作為時，才可使用這些選項 [商戶國家](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
+只有當您選擇英國作為[商戶國家](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths)時，才能使用這些選項。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ | 已加密？ |
 |--------------|--------------|--------------|--------------|
@@ -260,7 +260,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->可用的路徑取決於您選擇的 [商戶國家](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
+>可用的路徑由您選擇的[商家國家](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths)決定。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ | 已加密？ |
 |--------------|--------------|--------------|--------------|
@@ -329,39 +329,39 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_nz/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_nz/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_nz/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_nz/cybersource/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_nz/cybersource/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_nz/cybersource/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 新訂單狀態 | `payment_nz/cybersource/order_status` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_nz/cybersource/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_nz/cybersource/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_nz/cybersource/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_nz/cybersource/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小訂購總計 | `payment_nz/cybersource/min_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最大訂單總計 | `payment_nz/cybersource/max_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_nz/cybersource/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_nz/worldpay/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_nz/worldpay/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許編輯聯絡資訊 | `payment_nz/worldpay/fix_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 隱藏連絡資訊 | `payment_nz/worldpay/hide_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 簽章欄位 | `payment_nz/worldpay/signature_fields` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_nz/worldpay/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試的付款動作 | `payment_nz/worldpay/test_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_nz/worldpay/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_nz/worldpay/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_nz/worldpay/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為CVV疑似詐騙 | `payment_nz/worldpay/cvv_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_nz/worldpay/avs_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_nz/worldpay/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_nz/eway/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 連線型別 | `payment_nz/eway/connection_type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_nz/eway/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_nz/eway/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_nz/eway/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_nz/eway/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_nz/eway/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_nz/eway/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_nz/eway/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_nz/cybersource/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_nz/cybersource/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_nz/cybersource/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 新訂單狀態 | `payment_nz/cybersource/order_status` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_nz/cybersource/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_nz/cybersource/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_nz/cybersource/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_nz/cybersource/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小訂購總計 | `payment_nz/cybersource/min_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最大訂單總計 | `payment_nz/cybersource/max_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_nz/cybersource/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_nz/worldpay/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_nz/worldpay/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許編輯聯絡資訊 | `payment_nz/worldpay/fix_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 隱藏連絡資訊 | `payment_nz/worldpay/hide_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 簽章欄位 | `payment_nz/worldpay/signature_fields` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_nz/worldpay/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試的付款動作 | `payment_nz/worldpay/test_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_nz/worldpay/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_nz/worldpay/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_nz/worldpay/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為CVV疑似詐騙 | `payment_nz/worldpay/cvv_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_nz/worldpay/avs_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_nz/worldpay/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_nz/eway/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 連線型別 | `payment_nz/eway/connection_type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_nz/eway/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_nz/eway/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_nz/eway/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_nz/eway/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_nz/eway/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_nz/eway/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_nz/eway/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 排程擷取 | `payment_hk/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal商家頁面樣式 | `payment_hk/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排程擷取 | `payment_hk/paypal_group_all_in_one/payments_pro_hosted_solution_hk/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -421,39 +421,39 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_hk/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_hk/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_hk/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_hk/cybersource/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_hk/cybersource/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_hk/cybersource/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 新訂單狀態 | `payment_hk/cybersource/order_status` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_hk/cybersource/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_hk/cybersource/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_hk/cybersource/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_hk/cybersource/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小訂購總計 | `payment_hk/cybersource/min_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最大訂單總計 | `payment_hk/cybersource/max_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_hk/cybersource/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_hk/worldpay/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_hk/worldpay/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許編輯聯絡資訊 | `payment_hk/worldpay/fix_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 隱藏連絡資訊 | `payment_hk/worldpay/hide_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_hk/worldpay/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試的付款動作 | `payment_hk/worldpay/test_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_hk/worldpay/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_hk/worldpay/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_hk/worldpay/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為CVV疑似詐騙 | `payment_hk/worldpay/cvv_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_hk/worldpay/avs_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_hk/worldpay/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_hk/eway/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 連線型別 | `payment_hk/eway/connection_type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_hk/eway/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 沙箱模式 | `payment_hk/eway/sandbox_flag` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_hk/eway/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_hk/eway/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_hk/eway/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_hk/eway/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_hk/eway/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_hk/eway/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_hk/cybersource/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_hk/cybersource/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_hk/cybersource/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 新訂單狀態 | `payment_hk/cybersource/order_status` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_hk/cybersource/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_hk/cybersource/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_hk/cybersource/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_hk/cybersource/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小訂購總計 | `payment_hk/cybersource/min_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最大訂單總計 | `payment_hk/cybersource/max_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_hk/cybersource/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_hk/worldpay/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_hk/worldpay/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許編輯聯絡資訊 | `payment_hk/worldpay/fix_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 隱藏連絡資訊 | `payment_hk/worldpay/hide_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_hk/worldpay/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試的付款動作 | `payment_hk/worldpay/test_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_hk/worldpay/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_hk/worldpay/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_hk/worldpay/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為CVV疑似詐騙 | `payment_hk/worldpay/cvv_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_hk/worldpay/avs_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_hk/worldpay/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_hk/eway/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 連線型別 | `payment_hk/eway/connection_type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_hk/eway/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 沙箱模式 | `payment_hk/eway/sandbox_flag` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_hk/eway/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_hk/eway/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_hk/eway/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_hk/eway/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_hk/eway/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_hk/eway/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 排程擷取 | `payment_es/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal商家頁面樣式 | `payment_es/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排程擷取 | `payment_es/paypal_group_all_in_one/payments_pro_hosted_solution_es/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -514,42 +514,42 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_es/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_es/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_es/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_es/cybersource/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_es/cybersource/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_es/cybersource/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 設定檔ID | `payment_es/cybersource/profile_id` | ![僅限商務](/help/assets/configuration/cloud-ee.png) | ![已加密](/help/assets/configuration/cloud-enc.png) |
-| 新訂單狀態 | `payment_es/cybersource/order_status` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_es/cybersource/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_es/cybersource/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_es/cybersource/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_es/cybersource/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小訂購總計 | `payment_es/cybersource/min_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最大訂單總計 | `payment_es/cybersource/max_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_es/cybersource/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_es/worldpay/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_es/worldpay/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 安裝ID | `payment_es/worldpay/installation_id` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 遠端管理安裝ID | `payment_es/worldpay/admin_installation_id` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許編輯聯絡資訊 | `payment_es/worldpay/fix_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 隱藏連絡資訊 | `payment_es/worldpay/hide_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 簽章欄位 | `payment_es/worldpay/signature_fields` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試模式 | `payment_es/worldpay/sandbox_flag` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試的付款動作 | `payment_es/worldpay/test_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_es/worldpay/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_es/worldpay/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_es/worldpay/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為CVV疑似詐騙 | `payment_es/worldpay/cvv_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_es/worldpay/avs_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_es/worldpay/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_es/eway/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 連線型別 | `payment_es/eway/connection_type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_es/eway/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_es/eway/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_es/eway/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_es/eway/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_es/eway/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_es/eway/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_es/eway/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_es/cybersource/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_es/cybersource/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_es/cybersource/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 設定檔ID | `payment_es/cybersource/profile_id` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) | ![已加密](/help/assets/configuration/cloud-enc.png) |
+| 新訂單狀態 | `payment_es/cybersource/order_status` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_es/cybersource/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_es/cybersource/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_es/cybersource/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_es/cybersource/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小訂購總計 | `payment_es/cybersource/min_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最大訂單總計 | `payment_es/cybersource/max_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_es/cybersource/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_es/worldpay/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_es/worldpay/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 安裝ID | `payment_es/worldpay/installation_id` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 遠端管理安裝ID | `payment_es/worldpay/admin_installation_id` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許編輯聯絡資訊 | `payment_es/worldpay/fix_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 隱藏連絡資訊 | `payment_es/worldpay/hide_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 簽章欄位 | `payment_es/worldpay/signature_fields` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試模式 | `payment_es/worldpay/sandbox_flag` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試的付款動作 | `payment_es/worldpay/test_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_es/worldpay/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_es/worldpay/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_es/worldpay/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為CVV疑似詐騙 | `payment_es/worldpay/cvv_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_es/worldpay/avs_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_es/worldpay/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_es/eway/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 連線型別 | `payment_es/eway/connection_type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_es/eway/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_es/eway/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_es/eway/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_es/eway/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_es/eway/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_es/eway/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_es/eway/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 排程擷取 | `payment_it/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal商家頁面樣式 | `payment_it/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排程擷取 | `payment_it/paypal_group_all_in_one/payments_pro_hosted_solution_it/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -609,39 +609,39 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_it/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_it/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_it/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_it/cybersource/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_it/cybersource/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_it/cybersource/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 新訂單狀態 | `payment_it/cybersource/order_status` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_it/cybersource/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_it/cybersource/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_it/cybersource/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_it/cybersource/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小訂購總計 | `payment_it/cybersource/min_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最大訂單總計 | `payment_it/cybersource/max_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_it/cybersource/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_it/worldpay/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_it/worldpay/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許編輯聯絡資訊 | `payment_it/worldpay/fix_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 隱藏連絡資訊 | `payment_it/worldpay/hide_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 簽章欄位 | `payment_it/worldpay/signature_fields` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_it/worldpay/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試的付款動作 | `payment_it/worldpay/test_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_it/worldpay/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_it/worldpay/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_it/worldpay/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為CVV疑似詐騙 | `payment_it/worldpay/cvv_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_it/worldpay/avs_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_it/worldpay/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_it/eway/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 連線型別 | `payment_it/eway/connection_type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_it/eway/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_it/eway/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_it/eway/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_it/eway/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_it/eway/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_it/eway/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_it/eway/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_it/cybersource/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_it/cybersource/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_it/cybersource/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 新訂單狀態 | `payment_it/cybersource/order_status` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_it/cybersource/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_it/cybersource/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_it/cybersource/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_it/cybersource/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小訂購總計 | `payment_it/cybersource/min_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最大訂單總計 | `payment_it/cybersource/max_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_it/cybersource/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_it/worldpay/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_it/worldpay/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許編輯聯絡資訊 | `payment_it/worldpay/fix_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 隱藏連絡資訊 | `payment_it/worldpay/hide_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 簽章欄位 | `payment_it/worldpay/signature_fields` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_it/worldpay/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試的付款動作 | `payment_it/worldpay/test_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_it/worldpay/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_it/worldpay/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_it/worldpay/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為CVV疑似詐騙 | `payment_it/worldpay/cvv_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_it/worldpay/avs_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_it/worldpay/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_it/eway/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 連線型別 | `payment_it/eway/connection_type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_it/eway/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_it/eway/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_it/eway/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_it/eway/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_it/eway/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_it/eway/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_it/eway/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 排程擷取 | `payment_fr/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal商家頁面樣式 | `payment_fr/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排程擷取 | `payment_fr/paypal_group_all_in_one/payments_pro_hosted_solution_fr/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -701,38 +701,38 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_fr/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_fr/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_fr/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_fr/cybersource/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_fr/cybersource/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_fr/cybersource/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 新訂單狀態 | `payment_fr/cybersource/order_status` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_fr/cybersource/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_fr/cybersource/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_fr/cybersource/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_fr/cybersource/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小訂購總計 | `payment_fr/cybersource/min_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最大訂單總計 | `payment_fr/cybersource/max_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_fr/cybersource/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_fr/worldpay/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_fr/worldpay/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許編輯聯絡資訊 | `payment_fr/worldpay/fix_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 隱藏連絡資訊 | `payment_fr/worldpay/hide_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_fr/worldpay/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試的付款動作 | `payment_fr/worldpay/test_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_fr/worldpay/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_fr/worldpay/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_fr/worldpay/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為CVV疑似詐騙 | `payment_fr/worldpay/cvv_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_fr/worldpay/avs_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_fr/worldpay/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_fr/eway/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 連線型別 | `payment_fr/eway/connection_type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_fr/eway/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_fr/eway/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_fr/eway/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_fr/eway/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_fr/eway/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_fr/eway/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_fr/eway/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_fr/cybersource/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_fr/cybersource/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_fr/cybersource/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 新訂單狀態 | `payment_fr/cybersource/order_status` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_fr/cybersource/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_fr/cybersource/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_fr/cybersource/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_fr/cybersource/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小訂購總計 | `payment_fr/cybersource/min_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最大訂單總計 | `payment_fr/cybersource/max_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_fr/cybersource/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_fr/worldpay/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_fr/worldpay/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許編輯聯絡資訊 | `payment_fr/worldpay/fix_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 隱藏連絡資訊 | `payment_fr/worldpay/hide_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_fr/worldpay/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試的付款動作 | `payment_fr/worldpay/test_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_fr/worldpay/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_fr/worldpay/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_fr/worldpay/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為CVV疑似詐騙 | `payment_fr/worldpay/cvv_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_fr/worldpay/avs_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_fr/worldpay/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_fr/eway/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 連線型別 | `payment_fr/eway/connection_type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_fr/eway/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_fr/eway/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_fr/eway/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_fr/eway/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_fr/eway/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_fr/eway/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_fr/eway/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 排程擷取 | `payment_jp/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal商家頁面樣式 | `payment_jp/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排程擷取 | `payment_jp/paypal_group_all_in_one/payments_pro_hosted_solution_jp/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -792,37 +792,37 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_jp/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_jp/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_jp/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_jp/cybersource/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_jp/cybersource/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_jp/cybersource/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_jp/cybersource/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_jp/cybersource/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_jp/cybersource/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_jp/cybersource/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小訂購總計 | `payment_jp/cybersource/min_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最大訂單總計 | `payment_jp/cybersource/max_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_jp/cybersource/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_jp/worldpay/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_jp/worldpay/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許編輯聯絡資訊 | `payment_jp/worldpay/fix_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 隱藏連絡資訊 | `payment_jp/worldpay/hide_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_jp/worldpay/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試的付款動作 | `payment_jp/worldpay/test_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_jp/worldpay/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_jp/worldpay/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_jp/worldpay/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為CVV疑似詐騙 | `payment_jp/worldpay/cvv_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_jp/worldpay/avs_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_jp/worldpay/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_jp/eway/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 連線型別 | `payment_jp/eway/connection_type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_jp/eway/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_jp/eway/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_jp/eway/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_jp/eway/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_jp/eway/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_jp/eway/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_jp/eway/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_jp/cybersource/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_jp/cybersource/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_jp/cybersource/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_jp/cybersource/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_jp/cybersource/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_jp/cybersource/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_jp/cybersource/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小訂購總計 | `payment_jp/cybersource/min_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最大訂單總計 | `payment_jp/cybersource/max_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_jp/cybersource/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_jp/worldpay/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_jp/worldpay/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許編輯聯絡資訊 | `payment_jp/worldpay/fix_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 隱藏連絡資訊 | `payment_jp/worldpay/hide_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_jp/worldpay/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試的付款動作 | `payment_jp/worldpay/test_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_jp/worldpay/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_jp/worldpay/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_jp/worldpay/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為CVV疑似詐騙 | `payment_jp/worldpay/cvv_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_jp/worldpay/avs_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_jp/worldpay/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_jp/eway/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 連線型別 | `payment_jp/eway/connection_type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_jp/eway/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_jp/eway/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_jp/eway/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_jp/eway/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_jp/eway/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_jp/eway/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_jp/eway/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 排程擷取 | `payment_au/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal商家頁面樣式 | `payment_au/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排程擷取 | `payment_au/paypal_group_all_in_one/payments_pro_hosted_solution_au/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -887,43 +887,43 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_au/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_au/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_au/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_au/cybersource/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_au/cybersource/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_au/cybersource/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 商家ID | `payment_au/cybersource/merchant_id` | ![僅限商務](/help/assets/configuration/cloud-ee.png) | ![已加密](/help/assets/configuration/cloud-enc.png) |
-| 設定檔ID | `payment_au/cybersource/profile_id` | ![僅限商務](/help/assets/configuration/cloud-ee.png) | ![已加密](/help/assets/configuration/cloud-enc.png) |
-| 新訂單狀態 | `payment_au/cybersource/order_status` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_au/cybersource/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_au/cybersource/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_au/cybersource/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_au/cybersource/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小訂購總計 | `payment_au/cybersource/min_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最大訂單總計 | `payment_au/cybersource/max_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_au/cybersource/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_au/worldpay/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_au/worldpay/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 安裝ID | `payment_au/worldpay/installation_id` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許編輯聯絡資訊 | `payment_au/worldpay/fix_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 隱藏連絡資訊 | `payment_au/worldpay/hide_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 簽章欄位 | `payment_au/worldpay/signature_fields` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_au/worldpay/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試模式 | `payment_au/worldpay/sandbox_flag` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試的付款動作 | `payment_au/worldpay/test_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_au/worldpay/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_au/worldpay/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_au/worldpay/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為CVV疑似詐騙 | `payment_au/worldpay/cvv_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_au/worldpay/avs_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_au/worldpay/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_au/eway/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 連線型別 | `payment_au/eway/connection_type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_au/eway/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_au/eway/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_au/eway/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_au/eway/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_au/eway/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_au/eway/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_au/eway/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_au/cybersource/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_au/cybersource/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_au/cybersource/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 商家ID | `payment_au/cybersource/merchant_id` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) | ![已加密](/help/assets/configuration/cloud-enc.png) |
+| 設定檔ID | `payment_au/cybersource/profile_id` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) | ![已加密](/help/assets/configuration/cloud-enc.png) |
+| 新訂單狀態 | `payment_au/cybersource/order_status` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_au/cybersource/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_au/cybersource/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_au/cybersource/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_au/cybersource/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小訂購總計 | `payment_au/cybersource/min_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最大訂單總計 | `payment_au/cybersource/max_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_au/cybersource/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_au/worldpay/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_au/worldpay/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 安裝ID | `payment_au/worldpay/installation_id` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許編輯聯絡資訊 | `payment_au/worldpay/fix_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 隱藏連絡資訊 | `payment_au/worldpay/hide_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 簽章欄位 | `payment_au/worldpay/signature_fields` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_au/worldpay/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試模式 | `payment_au/worldpay/sandbox_flag` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試的付款動作 | `payment_au/worldpay/test_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_au/worldpay/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_au/worldpay/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_au/worldpay/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為CVV疑似詐騙 | `payment_au/worldpay/cvv_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_au/worldpay/avs_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_au/worldpay/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_au/eway/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 連線型別 | `payment_au/eway/connection_type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_au/eway/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_au/eway/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_au/eway/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_au/eway/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_au/eway/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_au/eway/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_au/eway/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 排程擷取 | `payment_ca/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal商家頁面樣式 | `payment_ca/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排程擷取 | `payment_ca/paypal_group_all_in_one/wps_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -990,38 +990,38 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_ca/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_ca/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_ca/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_ca/cybersource/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_ca/cybersource/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_ca/cybersource/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_ca/cybersource/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_ca/cybersource/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_ca/cybersource/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_ca/cybersource/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小訂購總計 | `payment_ca/cybersource/min_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最大訂單總計 | `payment_ca/cybersource/max_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_ca/cybersource/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_ca/worldpay/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_ca/worldpay/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許編輯聯絡資訊 | `payment_ca/worldpay/fix_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 隱藏連絡資訊 | `payment_ca/worldpay/hide_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 簽章欄位 | `payment_ca/worldpay/signature_fields` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_ca/worldpay/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試的付款動作 | `payment_ca/worldpay/test_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_ca/worldpay/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_ca/worldpay/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_ca/worldpay/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為CVV疑似詐騙 | `payment_ca/worldpay/cvv_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_ca/worldpay/avs_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_ca/worldpay/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_ca/eway/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 連線型別 | `payment_ca/eway/connection_type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_ca/eway/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_ca/eway/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_ca/eway/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_ca/eway/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_ca/eway/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_ca/eway/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_ca/eway/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_ca/cybersource/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_ca/cybersource/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_ca/cybersource/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_ca/cybersource/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_ca/cybersource/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_ca/cybersource/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_ca/cybersource/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小訂購總計 | `payment_ca/cybersource/min_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最大訂單總計 | `payment_ca/cybersource/max_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_ca/cybersource/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_ca/worldpay/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_ca/worldpay/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許編輯聯絡資訊 | `payment_ca/worldpay/fix_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 隱藏連絡資訊 | `payment_ca/worldpay/hide_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 簽章欄位 | `payment_ca/worldpay/signature_fields` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_ca/worldpay/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試的付款動作 | `payment_ca/worldpay/test_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_ca/worldpay/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_ca/worldpay/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_ca/worldpay/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為CVV疑似詐騙 | `payment_ca/worldpay/cvv_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_ca/worldpay/avs_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_ca/worldpay/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_ca/eway/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 連線型別 | `payment_ca/eway/connection_type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_ca/eway/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_ca/eway/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_ca/eway/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_ca/eway/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_ca/eway/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_ca/eway/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_ca/eway/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 排程擷取 | `payment_other/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal商家頁面樣式 | `payment_other/express_checkout_other/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排程擷取 | `payment_other/paypal_group_all_in_one/wps_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1080,38 +1080,38 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_other/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_other/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_other/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_other/cybersource/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_other/cybersource/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_other/cybersource/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_other/cybersource/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_other/cybersource/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_other/cybersource/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_other/cybersource/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小訂購總計 | `payment_other/cybersource/min_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最大訂單總計 | `payment_other/cybersource/max_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_other/cybersource/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_other/worldpay/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_other/worldpay/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許編輯聯絡資訊 | `payment_other/worldpay/fix_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 隱藏連絡資訊 | `payment_other/worldpay/hide_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 簽章欄位 | `payment_other/worldpay/signature_fields` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_other/worldpay/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試的付款動作 | `payment_other/worldpay/test_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_other/worldpay/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_other/worldpay/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_other/worldpay/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為CVV疑似詐騙 | `payment_other/worldpay/cvv_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_other/worldpay/avs_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_other/worldpay/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_other/eway/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 連線型別 | `payment_other/eway/connection_type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_other/eway/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_other/eway/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_other/eway/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_other/eway/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_other/eway/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_other/eway/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_other/eway/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_other/cybersource/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_other/cybersource/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_other/cybersource/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_other/cybersource/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_other/cybersource/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_other/cybersource/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_other/cybersource/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小訂購總計 | `payment_other/cybersource/min_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最大訂單總計 | `payment_other/cybersource/max_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_other/cybersource/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_other/worldpay/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_other/worldpay/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許編輯聯絡資訊 | `payment_other/worldpay/fix_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 隱藏連絡資訊 | `payment_other/worldpay/hide_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 簽章欄位 | `payment_other/worldpay/signature_fields` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_other/worldpay/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試的付款動作 | `payment_other/worldpay/test_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_other/worldpay/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_other/worldpay/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_other/worldpay/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為CVV疑似詐騙 | `payment_other/worldpay/cvv_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_other/worldpay/avs_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_other/worldpay/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_other/eway/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 連線型別 | `payment_other/eway/connection_type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_other/eway/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_other/eway/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_other/eway/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_other/eway/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_other/eway/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_other/eway/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_other/eway/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 排程擷取 | `payment_de/paypal_payment_solutions/express_checkout_de/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal商家頁面樣式 | `payment_de/paypal_payment_solutions/express_checkout_de/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 已啟用 | `payment_de/checkmo/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1155,17 +1155,17 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_de/purchaseorder/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_de/purchaseorder/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_de/purchaseorder/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_de/cybersource/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_de/cybersource/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_de/cybersource/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 新訂單狀態 | `payment_de/cybersource/order_status` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_de/cybersource/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_de/cybersource/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_de/cybersource/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_de/cybersource/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小訂購總計 | `payment_de/cybersource/min_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最大訂單總計 | `payment_de/cybersource/max_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_de/cybersource/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_de/cybersource/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_de/cybersource/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_de/cybersource/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 新訂單狀態 | `payment_de/cybersource/order_status` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_de/cybersource/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_de/cybersource/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_de/cybersource/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_de/cybersource/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小訂購總計 | `payment_de/cybersource/min_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最大訂單總計 | `payment_de/cybersource/max_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_de/cybersource/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 已啟用 | `payment_de/authorizenet_directpost/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 付款動作 | `payment_de/authorizenet_directpost/payment_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 標題 | `payment_de/authorizenet_directpost/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1179,28 +1179,28 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_de/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_de/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_de/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_de/worldpay/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_de/worldpay/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許編輯聯絡資訊 | `payment_de/worldpay/fix_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 隱藏連絡資訊 | `payment_de/worldpay/hide_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 簽章欄位 | `payment_de/worldpay/signature_fields` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試模式 | `payment_de/worldpay/sandbox_flag` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試的付款動作 | `payment_de/worldpay/test_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_de/worldpay/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_de/worldpay/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_de/worldpay/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為CVV疑似詐騙 | `payment_de/worldpay/cvv_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_de/worldpay/avs_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_de/worldpay/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_de/eway/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 連線型別 | `payment_de/eway/connection_type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_de/eway/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_de/eway/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_de/eway/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_de/eway/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_de/eway/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_de/eway/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_de/eway/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_de/worldpay/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_de/worldpay/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許編輯聯絡資訊 | `payment_de/worldpay/fix_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 隱藏連絡資訊 | `payment_de/worldpay/hide_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 簽章欄位 | `payment_de/worldpay/signature_fields` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試模式 | `payment_de/worldpay/sandbox_flag` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試的付款動作 | `payment_de/worldpay/test_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_de/worldpay/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_de/worldpay/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_de/worldpay/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為CVV疑似詐騙 | `payment_de/worldpay/cvv_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_de/worldpay/avs_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_de/worldpay/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_de/eway/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 連線型別 | `payment_de/eway/connection_type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_de/eway/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_de/eway/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_de/eway/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_de/eway/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_de/eway/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_de/eway/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_de/eway/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 排程擷取 | `payment_gb/paypal_alternative_payment_methods/express_checkout_gb/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal商家頁面樣式 | `payment_gb/paypal_alternative_payment_methods/express_checkout_gb/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排程擷取 | `payment_gb/paypal_group_all_in_one/payments_pro_hosted_solution_with_express_checkout/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1249,17 +1249,17 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_gb/purchaseorder/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_gb/purchaseorder/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_gb/purchaseorder/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_gb/cybersource/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_gb/cybersource/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_gb/cybersource/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 新訂單狀態 | `payment_gb/cybersource/order_status` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_gb/cybersource/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_gb/cybersource/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_gb/cybersource/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_gb/cybersource/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小訂購總計 | `payment_gb/cybersource/min_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最大訂單總計 | `payment_gb/cybersource/max_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_gb/cybersource/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_gb/cybersource/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_gb/cybersource/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_gb/cybersource/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 新訂單狀態 | `payment_gb/cybersource/order_status` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_gb/cybersource/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_gb/cybersource/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_gb/cybersource/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_gb/cybersource/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小訂購總計 | `payment_gb/cybersource/min_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最大訂單總計 | `payment_gb/cybersource/max_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_gb/cybersource/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 已啟用 | `payment_gb/authorizenet_directpost/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 付款動作 | `payment_gb/authorizenet_directpost/payment_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 標題 | `payment_gb/authorizenet_directpost/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1273,29 +1273,29 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_gb/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_gb/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_gb/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_gb/worldpay/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_gb/worldpay/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 交易的MD5密碼 | `payment_gb/worldpay/md5_secret` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許編輯聯絡資訊 | `payment_gb/worldpay/fix_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 隱藏連絡資訊 | `payment_gb/worldpay/hide_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 簽章欄位 | `payment_gb/worldpay/signature_fields` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_gb/worldpay/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試的付款動作 | `payment_gb/worldpay/test_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_gb/worldpay/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_gb/worldpay/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_gb/worldpay/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為CVV疑似詐騙 | `payment_gb/worldpay/cvv_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_gb/worldpay/avs_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_gb/worldpay/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_gb/eway/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 連線型別 | `payment_gb/eway/connection_type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_gb/eway/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_gb/eway/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_gb/eway/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_gb/eway/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_gb/eway/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_gb/eway/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_gb/eway/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_gb/worldpay/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_gb/worldpay/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 交易的MD5密碼 | `payment_gb/worldpay/md5_secret` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許編輯聯絡資訊 | `payment_gb/worldpay/fix_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 隱藏連絡資訊 | `payment_gb/worldpay/hide_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 簽章欄位 | `payment_gb/worldpay/signature_fields` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_gb/worldpay/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試的付款動作 | `payment_gb/worldpay/test_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_gb/worldpay/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_gb/worldpay/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_gb/worldpay/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為CVV疑似詐騙 | `payment_gb/worldpay/cvv_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_gb/worldpay/avs_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_gb/worldpay/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_gb/eway/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 連線型別 | `payment_gb/eway/connection_type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_gb/eway/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_gb/eway/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_gb/eway/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_gb/eway/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_gb/eway/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_gb/eway/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_gb/eway/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 排程擷取 | `payment_us/paypal_alternative_payment_methods/express_checkout_us/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal商家頁面樣式 | `payment_us/paypal_alternative_payment_methods/express_checkout_us/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排程擷取 | `payment_us/paypal_group_all_in_one/payflow_advanced/settings_payments_advanced/settings_payments_advanced_advanced/settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -1368,38 +1368,38 @@ ht-degree: 0%
 | 最小訂購總計 | `payment_us/authorizenet_directpost/min_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 最大訂單總計 | `payment_us/authorizenet_directpost/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `payment_us/authorizenet_directpost/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `payment_us/cybersource/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_us/cybersource/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_us/cybersource/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 新訂單狀態 | `payment_us/cybersource/order_status` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_us/cybersource/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_us/cybersource/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_us/cybersource/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_us/cybersource/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最小訂購總計 | `payment_us/cybersource/min_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 最大訂單總計 | `payment_us/cybersource/max_order_total` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_us/cybersource/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_us/worldpay/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_us/worldpay/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許編輯聯絡資訊 | `payment_us/worldpay/fix_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 隱藏連絡資訊 | `payment_us/worldpay/hide_contact` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 簽章欄位 | `payment_us/worldpay/signature_fields` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_us/worldpay/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 測試的付款動作 | `payment_us/worldpay/test_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_us/worldpay/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_us/worldpay/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_us/worldpay/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為CVV疑似詐騙 | `payment_us/worldpay/cvv_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_us/worldpay/avs_fraud_case` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 排序順序 | `payment_us/worldpay/sort_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `payment_us/eway/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 連線型別 | `payment_us/eway/connection_type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 標題 | `payment_us/eway/title` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 付款動作 | `payment_us/eway/payment_action` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 偵錯 | `payment_us/eway/debug` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 信用卡型別 | `payment_us/eway/cctypes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自適用國家的付款 | `payment_us/eway/allowspecific` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來自特定國家的付款 | `payment_us/eway/specificcountry` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_us/cybersource/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_us/cybersource/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_us/cybersource/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 新訂單狀態 | `payment_us/cybersource/order_status` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_us/cybersource/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_us/cybersource/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_us/cybersource/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_us/cybersource/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最小訂購總計 | `payment_us/cybersource/min_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 最大訂單總計 | `payment_us/cybersource/max_order_total` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_us/cybersource/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_us/worldpay/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_us/worldpay/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許編輯聯絡資訊 | `payment_us/worldpay/fix_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 隱藏連絡資訊 | `payment_us/worldpay/hide_contact` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 簽章欄位 | `payment_us/worldpay/signature_fields` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_us/worldpay/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 測試的付款動作 | `payment_us/worldpay/test_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_us/worldpay/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_us/worldpay/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_us/worldpay/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為CVV疑似詐騙 | `payment_us/worldpay/cvv_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將訂單狀態設定為疑似詐騙（郵遞區號AVS） | `payment_us/worldpay/avs_fraud_case` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 排序順序 | `payment_us/worldpay/sort_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `payment_us/eway/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 連線型別 | `payment_us/eway/connection_type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 標題 | `payment_us/eway/title` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 付款動作 | `payment_us/eway/payment_action` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 偵錯 | `payment_us/eway/debug` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 信用卡型別 | `payment_us/eway/cctypes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自適用國家的付款 | `payment_us/eway/allowspecific` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來自特定國家的付款 | `payment_us/eway/specificcountry` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 排序順序 | `payment_us/eway/sort_order` | |
 
 {style="table-layout:auto"}

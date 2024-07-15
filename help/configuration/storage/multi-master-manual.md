@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -29,16 +29,16 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->如果有任何自訂程式碼使用JOINs搭配sales和quote資料庫中的表格，則您 _無法_ 使用分割資料庫。 如有疑問，請聯絡任何自訂程式碼或擴充功能的作者，確保其程式碼不會使用JOIN。
+>如果任何自訂程式碼使用JOIN搭配sales和quote資料庫中的資料表，則您&#x200B;_無法_&#x200B;使用分割資料庫。 如有疑問，請聯絡任何自訂程式碼或擴充功能的作者，確保其程式碼不會使用JOIN。
 
 本主題使用下列命名慣例：
 
-- 主要資料庫名稱為 `magento` 及其使用者名稱和密碼都是 `magento`
-- 引號資料庫名稱為 `magento_quote` 及其使用者名稱和密碼都是 `magento_quote`
+- 主要資料庫名稱為`magento`，其使用者名稱和密碼均為`magento`
+- 引號資料庫名稱為`magento_quote`，其使用者名稱和密碼均為`magento_quote`
 
-  報價資料庫也稱為 _簽出_ 資料庫。
+  引號資料庫也稱為&#x200B;_簽出_&#x200B;資料庫。
 
-- 銷售資料庫名稱為 `magento_sales` 及其使用者名稱和密碼都是 `magento_sales`
+- 銷售資料庫名稱為`magento_sales`，其使用者名稱和密碼均為`magento_sales`
 
   銷售資料庫也稱為OMS資料庫。
 
@@ -50,9 +50,9 @@ ht-degree: 0%
 
 Adobe強烈建議您備份目前的資料庫和檔案系統，以便在處理過程中發生問題時進行還原。
 
-**備份您的系統**：
+**若要備份您的系統**：
 
-1. 以或切換身分登入您的Commerce伺服器， [檔案系統擁有者](../../installation/prerequisites/file-system/overview.md).
+1. 以或切換到[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)的身份登入您的Commerce伺服器。
 1. 輸入下列命令：
 
    ```bash
@@ -65,7 +65,7 @@ Adobe強烈建議您備份目前的資料庫和檔案系統，以便在處理過
 
 本節說明如何建立銷售和報價表的資料庫執行處理。
 
-**建立銷售和OMS報價資料庫**：
+**若要建立銷售和OMS報價資料庫**：
 
 1. 以任何使用者身分登入您的資料庫伺服器。
 1. 輸入下列命令以進入MySQL命令提示字元：
@@ -74,8 +74,8 @@ Adobe強烈建議您備份目前的資料庫和檔案系統，以便在處理過
    mysql -u root -p
    ```
 
-1. 輸入MySQL `root` 提示時的使用者密碼。
-1. 按照顯示的順序輸入以下命令，以建立名為的資料庫執行處理 `magento_quote` 和 `magento_sales` 相同的使用者名稱和密碼：
+1. 出現提示時輸入MySQL `root`使用者的密碼。
+1. 按照顯示的順序輸入以下命令，以建立具有相同使用者名稱和密碼的名為`magento_quote`和`magento_sales`的資料庫執行個體：
 
    ```shell
    create database magento_quote;
@@ -87,7 +87,7 @@ Adobe強烈建議您備份目前的資料庫和檔案系統，以便在處理過
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. 輸入 `exit` 結束命令提示字元。
+1. 輸入`exit`以結束命令提示字元。
 
 1. 驗證資料庫，一次一個：
 
@@ -126,11 +126,11 @@ Sales資料庫表格名稱的開頭為：
 - `salesrule_`
 - `sales_`
 - `magento_sales_`
-- 此 `magento_customercustomattributes_sales_flat_order` 表格也會受到影響
+- `magento_customercustomattributes_sales_flat_order`資料表也會受到影響
 
 >[!INFO]
 >
->此段落包含具有特定資料庫表格名稱的命令檔。 如果您已執行自訂，或想在表格上執行動作之前檢視完整的表格清單，請參閱 [參考指令碼](#reference-scripts).
+>此段落包含具有特定資料庫表格名稱的命令檔。 如果您已執行自訂，或想在對表格執行動作之前檢視完整的表格清單，請參閱[參考指令碼](#reference-scripts)。
 
 如需詳細資訊，請參閱：
 
@@ -139,13 +139,13 @@ Sales資料庫表格名稱的開頭為：
 
 ### 建立銷售資料庫SQL指令碼
 
-在您登入Commerce伺服器的使用者可存取的位置中，建立下列SQL指令碼。 例如，如果您以以下身分登入或執行命令 `root`，您可在以下位置建立指令碼： `/root/sql-scripts` 目錄。
+在您登入Commerce伺服器的使用者可存取的位置，建立下列SQL指令碼。 例如，如果您以`root`身分登入或執行命令，可以在`/root/sql-scripts`目錄中建立指令碼。
 
 #### 移除外部索引鍵
 
 此指令碼會從sales資料庫移除參照非sales資料表的外部索引鍵。
 
-建立以下指令碼，並命名如下 `1_foreign-sales.sql`. 取代 `<your main DB name>` 使用資料庫名稱。
+建立下列指令碼，並指定其名稱，例如`1_foreign-sales.sql`。 將`<your main DB name>`取代為您的資料庫名稱。
 
 ```sql
 use <your main DB name>;
@@ -200,13 +200,13 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 執行前面的指令碼：
 
-1. 以以下身分登入您的MySQL資料庫 `root` 或管理使用者：
+1. 以`root`或管理使用者身分登入您的MySQL資料庫：
 
    ```bash
    mysql -u root -p
    ```
 
-1. 在 `mysql>` 提示，請依照以下步驟執行指令碼：
+1. 在`mysql>`提示下，執行指令碼，如下所示：
 
    ```shell
    source <path>/<script>.sql
@@ -218,20 +218,20 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
    source /root/sql-scripts/1_foreign-sales.sql
    ```
 
-1. 指令碼執行後，輸入 `exit`.
+1. 執行指令碼之後，請輸入`exit`。
 
 ### 備份銷售資料
 
-本節討論如何從主要Commerce資料庫備份銷售表格，以便在單獨的銷售資料庫中還原它們。
+本節說明如何從主要Commerce資料庫備份銷售表格，以便在個別的銷售資料庫中還原它們。
 
-如果您目前在 `mysql>` 提示，輸入 `exit` 以返回指令shell。
+如果您目前位於`mysql>`提示字元，請輸入`exit`以返回命令殼層。
 
-執行以下命令 `mysqldump` 指令shell中的指令，一次一個指令。 在每一個中，取代下列內容：
+從命令shell執行下列`mysqldump`個命令，一次執行一個。 在每一個中，取代下列內容：
 
-- `<your database root username>` 使用資料庫根使用者名稱
-- `<your database root user password>` 使用使用者密碼
-- `<your main Commerce DB name>` 使用您的Commerce資料庫名稱
-- `<path>` 具有可寫入的檔案系統路徑
+- `<your database root username>`與您的資料庫根使用者名稱
+- 使用使用者密碼的`<your database root user password>`
+- `<your main Commerce DB name>`使用您的Commerce資料庫名稱
+- 具有可寫入檔案系統路徑的`<path>`
 
 #### 指令碼1
 
@@ -263,7 +263,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> seque
 
 #### NDB需求
 
-如果您使用 [網路資料庫(NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) 叢集：
+如果您使用[網路資料庫(NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html)叢集：
 
 1. 將資料表從InnoDb轉換成傾印檔案中的NDB型別：
 
@@ -295,13 +295,13 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 位置
 
-- `<your sales DB name>` 與您的銷售資料庫名稱。
+- `<your sales DB name>`與您的銷售資料庫名稱。
 
-  在此主題中，範例資料庫名稱為 `magento_sales`.
+  在此主題中，範例資料庫名稱為`magento_sales`。
 
-- `<root username>` 使用您的MySQL根使用者名稱
-- `<root user password>` 使用使用者密碼
-- 確認您先前建立的備份檔案的位置(例如， `/var/sales.sql`)
+- 使用您的MySQL根使用者名稱`<root username>`
+- 使用使用者密碼的`<root user password>`
+- 驗證您先前建立的備份檔案的位置（例如，`/var/sales.sql`）
 
 ## 設定報價資料庫
 
@@ -309,15 +309,15 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 >[!INFO]
 >
->此段落包含具有特定資料庫表格名稱的命令檔。 如果您已執行自訂，或想在表格上執行動作之前檢視完整的表格清單，請參閱 [參考指令碼](#reference-scripts).
+>此段落包含具有特定資料庫表格名稱的命令檔。 如果您已執行自訂，或想在對表格執行動作之前檢視完整的表格清單，請參閱[參考指令碼](#reference-scripts)。
 
-引號資料庫表格名稱的開頭為 `quote`. 此 `magento_customercustomattributes_sales_flat_quote` 和 `magento_customercustomattributes_sales_flat_quote_address` 表格也會受到影響
+引號資料庫資料表名稱以`quote`開頭。 `magento_customercustomattributes_sales_flat_quote`和`magento_customercustomattributes_sales_flat_quote_address`資料表也受到影響
 
 ### 從引號表格中卸除外來索引鍵
 
-此指令碼會從引號表格中移除參照非引號表格的外來鍵。 取代 `<your main Commerce DB name>` ，並使用您的Commerce資料庫名稱。
+此指令碼會從引號表格中移除參照非引號表格的外來鍵。 將`<your main Commerce DB name>`取代為Commerce資料庫的名稱。
 
-建立以下指令碼，並命名如下 `2_foreign-key-quote.sql`：
+建立下列指令碼，並賦予其名稱，例如`2_foreign-key-quote.sql`：
 
 ```sql
 use <your main DB name>;
@@ -334,7 +334,7 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
    mysql -u root -p
    ```
 
-1. 在 `mysql >` 提示，請依照以下步驟執行指令碼：
+1. 在`mysql >`提示下，執行指令碼，如下所示：
    `source <path>/<script>.sql`
 
    例如，
@@ -343,7 +343,7 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
    source /root/sql-scripts/2_foreign-key-quote.sql
    ```
 
-1. 指令碼執行後，輸入 `exit`.
+1. 指令碼執行之後，請輸入`exit`。
 
 ### 備份報價表
 
@@ -357,7 +357,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### NDB需求
 
-如果您使用 [網路資料庫(NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) 叢集：
+如果您使用[網路資料庫(NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html)叢集：
 
 1. 將資料表從InnoDb轉換成傾印檔案中的NDB型別：
 
@@ -375,9 +375,9 @@ mysql -u root -p magento_quote < /<path>/quote.sql
 
 ## 從資料庫卸除銷售和報價表
 
-此指令碼會從Commerce資料庫中編寫銷售和報價表。 取代 `<your main DB name>` ，並使用您的Commerce資料庫名稱。
+此指令碼會從Commerce資料庫中編寫銷售和報價表。 將`<your main DB name>`取代為Commerce資料庫的名稱。
 
-建立以下指令碼，並命名如下 `3_drop-tables.sql`：
+建立下列指令碼，並賦予其名稱，例如`3_drop-tables.sql`：
 
 ```sql
 use <your main DB name>;
@@ -457,7 +457,7 @@ SET foreign_key_checks = 1;
    mysql -u root -p
    ```
 
-1. 在 `mysql>` 提示，請依照以下步驟執行指令碼：
+1. 在`mysql>`提示下，執行指令碼，如下所示：
 
    ```shell
    source <path>/<script>.sql
@@ -469,26 +469,26 @@ SET foreign_key_checks = 1;
    source /root/sql-scripts/3_drop-tables.sql
    ```
 
-1. 指令碼執行後，輸入 `exit`.
+1. 指令碼執行之後，請輸入`exit`。
 
 ## 更新您的部署設定
 
-手動分割資料庫的最後一步是將連線和資源資訊新增到Commerce的部署設定， `env.php`.
+手動分割資料庫的最後一步是將連線和資源資訊新增到Commerce的部署組態`env.php`。
 
 若要更新部署組態：
 
-1. 以或切換身分登入您的Commerce伺服器， [檔案系統擁有者](../../installation/prerequisites/file-system/overview.md).
+1. 以或切換到[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)的身份登入您的Commerce伺服器。
 1. 備份您的部署設定：
 
    ```bash
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 
-1. 開啟 `<magento_root>/app/etc/env.php` 在文字編輯器中，並使用以下各節中討論的指南進行更新。
+1. 在文字編輯器中開啟`<magento_root>/app/etc/env.php`，並使用下列各節中討論的准則加以更新。
 
 ### 更新資料庫連線
 
-找出區塊，開頭為 `'default'` (下 `'connection'`)並新增 `'checkout'` 和 `'sales'` 區段。 將範例值取代為您的網站適當的值。
+找出以`'default'` （在`'connection'`下）開頭的區塊，並新增`'checkout'`和`'sales'`區段。 將範例值取代為您的網站適當的值。
 
 ```php
  'default' =>
@@ -529,7 +529,7 @@ SET foreign_key_checks = 1;
 
 ### 更新資源
 
-找出區塊，開頭為 `'resource'` 並新增 `'checkout'` 和 `'sales'` 區段如下所示：
+找出以`'resource'`開頭的區塊，然後新增`'checkout'`和`'sales'`區段，如下所示：
 
 ```php
 'resource' =>
@@ -555,16 +555,16 @@ SET foreign_key_checks = 1;
 若要使用這些指令碼：
 
 1. 建立包含此段落中每個指令碼內容的SQL指令碼。
-1. 在每個指令碼中，取代 `<your main DB name>` ，並使用您的Commerce資料庫名稱。
+1. 在每個指令碼中，將`<your main DB name>`取代為Commerce資料庫的名稱。
 
-   在此主題中，範例資料庫名稱為 `magento`.
+   在此主題中，範例資料庫名稱為`magento`。
 
-1. 從以下位置執行每個指令碼： `mysql>` 提示為 `source <script name>`
+1. 從`mysql>`提示執行`source <script name>`的每個指令碼
 1. 檢查輸出。
 1. 將每個指令碼的結果複製到另一個SQL指令碼，移除垂直號字元(`|`)。
-1. 從以下位置執行每個指令碼： `mysql>` 提示為 `source <script name>`.
+1. 從`mysql>`提示執行`source <script name>`的每個指令碼。
 
-   執行此第二個指令碼會執行主要Commerce資料庫中的動作。
+   執行第二個指令碼會在主要Commerce資料庫中執行動作。
 
 ### 移除外部索引鍵（銷售表格）
 
@@ -672,4 +672,4 @@ select 'SET foreign_key_checks = 1;';
 
 ### 卸除引號表格
 
-拖放開頭為的所有表格 `quote_`.
+卸除以`quote_`開頭的所有資料表。

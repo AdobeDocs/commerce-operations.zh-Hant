@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # 內部部署安裝安全性
 
-[安全性增強型Linux (SELinux)](https://selinuxproject.org/page/Main_Page) 可讓CentOS和Ubuntu管理員對其伺服器執行更嚴格的存取控制。 如果您使用SELinux *和* Apache必須起始與另一台主機的連線，您必須執行本節中討論的命令。
+[Security Enhanced Linux (SELinux)](https://selinuxproject.org/page/Main_Page)讓CentOS和Ubuntu管理員能夠更深入控制其伺服器。 如果您使用SELinux *和* Apache必須起始與另一台主機的連線，您必須執行本節中討論的命令。
 
 >[!NOTE]
 >
->Adobe對使用SELinux沒有任何建議；您可以視需要將其用於增強安全性。 如果您使用SELinux，則必須正確設定，否則Adobe Commerce會無法預期地運作。 如果您選擇使用SELinux，請查閱資源，如 [CentOS wiki](https://wiki.centos.org/HowTos/SELinux) 設定規則以啟用通訊。
+>Adobe對使用SELinux沒有任何建議；您可以視需要將其用於增強安全性。 如果您使用SELinux，則必須正確設定，否則Adobe Commerce會無法預期地運作。 如果您選擇使用SELinux，請洽詢[CentOS wiki](https://wiki.centos.org/HowTos/SELinux)之類的資源，以設定規則來啟用通訊。
 
 ## 有關使用Apache安裝的建議
 
-如果您選擇啟用SELinux，除非您變更 *安全性內容* 部分目錄，如下所示：
+如果您選擇啟用SELinux，除非您變更某些目錄的&#x200B;*安全性內容*，否則執行安裝程式時可能會發生問題，如下所示：
 
 ```bash
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
@@ -49,7 +49,7 @@ chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 
 ## 啟用伺服器間通訊
 
-如果Apache和資料庫伺服器位於相同主機上，且您打算使用整合功能，請使用下列命令 `curl` (例如： Paypal和USPS)。
+如果Apache和資料庫伺服器位於相同主機上，如果您打算使用使用`curl`的整合(例如 Paypal和USPS)。
 若要讓Apache在啟用SELinux的情況下起始與其他主機的連線：
 
 1. 若要判斷是否已啟用SELinux，請使用下列指令：
@@ -58,7 +58,7 @@ chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
    getenforce
    ```
 
-   `Enforcing` 顯示以確認SELinux正在執行。
+   顯示`Enforcing`以確認SELinux正在執行。
 
    * CentOS： `setsebool -P httpd_can_network_connect=1`
    * Ubuntu： `setsebool -P apache2_can_network_connect=1`
@@ -68,4 +68,4 @@ chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 根據您的安全性需求，您可能會發現有必要開啟防火牆中的連線埠80和其他連線埠。 由於網路安全的敏感性質，Adobe強烈建議您先洽詢IT部門，再繼續進行。 以下是一些建議的參考資料：
 
 * Ubuntu： [Ubuntu檔案頁面](https://help.ubuntu.com/community/IptablesHowTo)
-* CentOS： [CentOS操作說明](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
+* CentOS： [CentOS操作說明](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)。

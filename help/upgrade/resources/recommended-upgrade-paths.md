@@ -4,7 +4,7 @@ description: 檢閱規劃Adobe Commerce升級的建議。
 exl-id: f776b000-0085-4b77-860f-623837c3c902
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -20,18 +20,18 @@ ht-degree: 0%
 - 更好的開發人員體驗和工具
 - 能夠與其他Adobe Experience Cloud應用程式更深入整合
 
-為了提供商戶在規劃升級時更大的彈性，我們最近更新了Adobe Commerce [發行排程](../../release/schedule.md)延長了2.3支援終止日期(EOS)，並宣佈為特定軟體版本提供新的延長支援選項。 如需這些更新的詳細資訊，請參閱 [擴大支援Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
+為了提供商戶在規劃升級時更靈活的彈性，我們最近更新了Adobe Commerce [發行排程](../../release/schedule.md)、延長了2.3支援終止日期(EOS)，並宣佈針對特定軟體版本的新延長支援選項。 如需這些更新的詳細資訊，請參閱[擴大對Adobe Commerce的支援](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support)。
 
 以下是Adobe Commerce建議的升級路徑，可讓您的網站在升級至其中一個最新版本時保持安全性和效能。
 
 ## 從2.3.7升級
 
-![從2.3.7升級路徑](../../assets/upgrade-guide/2.3.7.png)
+![從2.3.7](../../assets/upgrade-guide/2.3.7.png)升級路徑
 
 ## 從2.4.0升級至2.4.3
 
-![從2.4.0升級至2.4.3的升級路徑](../../assets/upgrade-guide/2.4.0-2.4.3.png)
+![從2.4.0到2.4.3](../../assets/upgrade-guide/2.4.0-2.4.3.png)的升級路徑
 
 ## 從2.4.4和2.4.5升級
 
-![從2.4.4升級至2.4.5的路徑](../../assets/upgrade-guide/2.4.4-and-2.4.5.png)
+![從2.4.4到2.4.5](../../assets/upgrade-guide/2.4.4-and-2.4.5.png)的升級路徑

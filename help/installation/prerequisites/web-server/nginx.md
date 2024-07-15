@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Nginx
 
-Adobe Commerce支援nginx 1.x (或 [最新主線版本](https://nginx.org/en/linux_packages.html#mainline))。 您也必須安裝最新版本的 `php-fpm`.
+Adobe Commerce支援nginx 1.x （或[最新的主線版本](https://nginx.org/en/linux_packages.html#mainline)）。 您也必須安裝最新版本的`php-fpm`。
 
-安裝指示會因您使用的作業系統而異。 另請參閱 [PHP](../php-settings.md) 以取得相關資訊。
+安裝指示會因您使用的作業系統而異。 如需詳細資訊，請參閱[PHP](../php-settings.md)。
 
 ## 烏本圖
 
@@ -25,17 +25,17 @@ Adobe Commerce支援nginx 1.x (或 [最新主線版本](https://nginx.org/en/lin
 sudo apt -y install nginx
 ```
 
-您也可以 [從來源建置nginx](https://www.armanism.com/blog/install-nginx-on-ubuntu)
+您也可以從來源[建置nginx](https://www.armanism.com/blog/install-nginx-on-ubuntu)
 
-完成下列各節並安裝應用程式後，我們將使用範例組態檔來 [設定nginx](#configure-nginx).
+完成下列章節並安裝應用程式之後，我們將使用範例組態檔來[設定nginx](#configure-nginx)。
 
 ### 安裝和配置php-fpm
 
-Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作。 除了這些擴充功能外，您還必須安裝並設定 `php-fpm` 擴充功能（若您使用nginx）。
+Adobe Commerce需要多個[PHP擴充功能](../php-settings.md)才能正常運作。 除了這些擴充功能之外，如果您使用nginx，您也必須安裝並設定`php-fpm`擴充功能。
 
-安裝及設定 `php-fpm`：
+若要安裝和設定`php-fpm`：
 
-1. 安裝 `php-fpm` 和 `php-cli`：
+1. 安裝`php-fpm`和`php-cli`：
 
    ```bash
    apt-get -y install php7.2-fpm php7.2-cli
@@ -43,9 +43,9 @@ Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作
 
    >[!NOTE]
    >
-   >這個指令會安裝最新可用的PHP 7.2.X版本。另請參閱 [系統需求](../../system-requirements.md) 支援的PHP版本。
+   >這個指令會安裝最新可用的PHP 7.2.X版本。請參閱支援的PHP版本[系統需求](../../system-requirements.md)。
 
-1. 開啟 `php.ini` 編輯器中的檔案：
+1. 在編輯器中開啟`php.ini`檔案：
 
    ```bash
    vim /etc/php/7.2/fpm/php.ini
@@ -65,11 +65,11 @@ Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作
 
    >[!NOTE]
    >
-   >測試Adobe Commerce時，建議將記憶體限制設為2 G。 請參閱 [必要的PHP設定](../php-settings.md) 以取得詳細資訊。
+   >測試Adobe Commerce時，建議將記憶體限制設為2 G。 如需詳細資訊，請參閱[必要的PHP設定](../php-settings.md)。
 
 1. 儲存並退出編輯器。
 
-1. 重新啟動 `php-fpm` 服務：
+1. 重新啟動`php-fpm`服務：
 
    ```bash
    systemctl restart php7.2-fpm
@@ -77,7 +77,7 @@ Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作
 
 ### 安裝及設定MySQL
 
-請參閱 [MySQL](../database/mysql.md) 以取得詳細資訊。
+如需詳細資訊，請參閱[MySQL](../database/mysql.md)。
 
 ### 安裝與設定
 
@@ -89,9 +89,9 @@ Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作
 
 此範例顯示使用命令列的Composer型安裝。
 
-1. 作為 [檔案系統擁有者](../file-system/overview.md)，登入您的應用程式伺服器。
+1. 以[檔案系統擁有者](../file-system/overview.md)的身分，登入您的應用程式伺服器。
 
-1. 變更至Web伺服器docroot目錄，或您設定為虛擬主機docroot的目錄。 在此範例中，我們使用Ubuntu預設值 `/var/www/html`.
+1. 變更至Web伺服器docroot目錄，或您設定為虛擬主機docroot的目錄。 在此範例中，我們使用Ubuntu預設值`/var/www/html`。
 
    ```bash
    cd /var/www/html
@@ -117,7 +117,7 @@ Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   出現提示時，輸入您的 [驗證金鑰](../authentication-keys.md). 您的 _公開金鑰_ 是您的使用者名稱；您的 _私密金鑰_ 是您的密碼。
+   出現提示時，請輸入您的[驗證金鑰](../authentication-keys.md)。 您的&#x200B;_公開金鑰_&#x200B;是您的使用者名稱；_私密金鑰_&#x200B;是您的密碼。
 
 1. 安裝應用程式之前，請先設定網頁伺服器群組的讀寫許可權。 這是必要的，以便命令列可以將檔案寫入檔案系統。
 
@@ -141,7 +141,7 @@ Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作
    chmod u+x bin/magento
    ```
 
-1. 從安裝 [命令列](../../advanced.md). 此範例假設安裝目錄名為 `magento2ee`，則 `db-host` 在同一部電腦上(`localhost`)，且 `db-name`， `db-user`、和 `db-password` 全部 `magento`：
+1. 從[命令列](../../advanced.md)安裝。 此範例假設安裝目錄名為`magento2ee`，`db-host`在相同電腦(`localhost`)上，且`db-name`、`db-user`和`db-password`皆為`magento`：
 
    ```bash
    bin/magento setup:install \
@@ -177,9 +177,9 @@ Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作
 
 ### 設定nginx
 
-我們建議使用 `nginx.conf.sample` 安裝目錄和nginx虛擬主機中提供的組態檔。
+我們建議使用安裝目錄和nginx虛擬主機中提供的`nginx.conf.sample`設定檔來設定nginx。
 
-這些指示假設您使用的是nginx虛擬主機的Ubuntu預設位置(例如 `/etc/nginx/sites-available`)和Ubuntu預設docroot (例如， `/var/www/html`)，但您可以變更這些位置以符合您的環境。
+這些指示假設您使用的是nginx虛擬主機的Ubuntu預設位置（例如`/etc/nginx/sites-available`）和Ubuntu預設docroot （例如`/var/www/html`），不過您可以變更這些位置以符合您的環境。
 
 1. 為您的網站建立新的虛擬主機：
 
@@ -205,13 +205,13 @@ Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作
 
    >[!NOTE]
    >
-   >此 `include` 指示必須指向安裝目錄中的nginx組態檔範例。
+   >`include`指示詞必須指向安裝目錄中的範例nginx組態檔。
 
-1. 取代 `www.magento-dev.com` 使用您的網域名稱。 這必須符合您在安裝Adobe Commerce時指定的基底URL。
+1. 將`www.magento-dev.com`取代為您的網域名稱。 這必須符合您在安裝Adobe Commerce時指定的基底URL。
 
 1. 儲存並退出編輯器。
 
-1. 於中建立指向新建立的虛擬主機的符號連結，以啟動該虛擬主機。 `/etc/nginx/sites-enabled` 目錄：
+1. 在`/etc/nginx/sites-enabled`目錄中建立新建立的虛擬主機的symlink以啟動它：
 
    ```bash
    ln -s /etc/nginx/sites-available/magento /etc/nginx/sites-enabled
@@ -231,7 +231,7 @@ Adobe Commerce需要數個 [PHP擴充功能](../php-settings.md) 以正常運作
 
 ### 驗證安裝
 
-開啟網頁瀏覽器，並導覽至您網站的基底URL，以 [驗證安裝](../../next-steps/verify.md).
+開啟網頁瀏覽器，並瀏覽至您網站的基底URL，以[驗證安裝](../../next-steps/verify.md)。
 
 ## CentOS 7
 
@@ -261,17 +261,17 @@ systemctl enable nginx
 
 ### 安裝和配置php-fpm
 
-Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。 除了這些擴充功能外，您還必須安裝並設定 `php-fpm` 擴充功能（若您使用nginx）。
+Adobe Commerce需要多個[PHP](../php-settings.md)擴充功能才能正常運作。 除了這些擴充功能之外，如果您使用nginx，您也必須安裝並設定`php-fpm`擴充功能。
 
-1. 安裝 `php-fpm`：
+1. 安裝`php-fpm`：
 
    ```bash
    yum -y install php70w-fpm
    ```
 
-1. 開啟 `/etc/php.ini` 編輯器中儲存的檔案。
+1. 在編輯器中開啟`/etc/php.ini`檔案。
 
-1. 取消註解 `cgi.fix_pathinfo` 行並將值變更為 `0`.
+1. 取消註解`cgi.fix_pathinfo`行並將值變更為`0`。
 
 1. 編輯檔案以符合下列各行：
 
@@ -283,7 +283,7 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
 
    >[!NOTE]
    >
-   >測試Adobe Commerce時，建議將記憶體限制設為2 G。 請參閱 [必要的PHP設定](../php-settings.md) 以取得詳細資訊。
+   >測試Adobe Commerce時，建議將記憶體限制設為2 G。 如需詳細資訊，請參閱[必要的PHP設定](../php-settings.md)。
 
 1. 取消註解工作階段路徑目錄並設定路徑：
 
@@ -293,7 +293,7 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
 
 1. 儲存並退出編輯器。
 
-1. 開啟 `/etc/php-fpm.d/www.conf` 在編輯器中。
+1. 在編輯器中開啟`/etc/php-fpm.d/www.conf`。
 
 1. 編輯檔案以符合下列各行：
 
@@ -318,7 +318,7 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
 
 1. 儲存並退出編輯器。
 
-1. 建立PHP階段作業路徑的目錄，並將擁有者變更為 `apache` 使用者和群組：
+1. 為PHP工作階段路徑建立目錄，並將擁有者變更為`apache`使用者和群組：
 
    ```bash
    mkdir -p /var/lib/php/session/
@@ -328,7 +328,7 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
    chown -R apache:apache /var/lib/php/
    ```
 
-1. 建立PHP階段作業路徑的目錄，並將擁有者變更為 `apache` 使用者和群組：
+1. 為PHP工作階段路徑建立目錄，並將擁有者變更為`apache`使用者和群組：
 
    ```bash
    mkdir -p /run/php-fpm/
@@ -338,7 +338,7 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
    chown -R apache:apache /run/php-fpm/
    ```
 
-1. 開始 `php-fpm` 服務，並將其設定為在開機時啟動：
+1. 啟動`php-fpm`服務，並將它設定為在開機時啟動：
 
    ```bash
    systemctl start php-fpm
@@ -348,7 +348,7 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
    systemctl enable php-fpm
    ```
 
-1. 確認 `php-fpm` 服務正在執行：
+1. 驗證`php-fpm`服務是否正在執行：
 
    ```bash
    netstat -pl | grep php-fpm.sock
@@ -356,7 +356,7 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
 
 ### 安裝及設定MySQL
 
-請參閱 [MySQL](..//database/mysql.md) 以取得詳細資訊。
+如需詳細資訊，請參閱[MySQL](..//database/mysql.md)。
 
 ### 安裝與設定
 
@@ -368,9 +368,9 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
 
 此範例顯示使用命令列的Composer型安裝。
 
-1. 作為 [檔案系統擁有者](../file-system/overview.md)，登入您的應用程式伺服器。
+1. 以[檔案系統擁有者](../file-system/overview.md)的身分，登入您的應用程式伺服器。
 
-1. 變更至Web伺服器docroot目錄，或您設定為虛擬主機docroot的目錄。 在此範例中，我們使用Ubuntu預設值 `/var/www/html`.
+1. 變更至Web伺服器docroot目錄，或您設定為虛擬主機docroot的目錄。 在此範例中，我們使用Ubuntu預設值`/var/www/html`。
 
    ```bash
    cd /var/www/html
@@ -396,7 +396,7 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   出現提示時，輸入您的 [驗證金鑰](../authentication-keys.md). 您的 _公開金鑰_ 是您的使用者名稱；您的 _私密金鑰_ 是您的密碼。
+   出現提示時，請輸入您的[驗證金鑰](../authentication-keys.md)。 您的&#x200B;_公開金鑰_&#x200B;是您的使用者名稱；_私密金鑰_&#x200B;是您的密碼。
 
 1. 安裝應用程式之前，請先設定網頁伺服器群組的讀寫許可權。 這是必要的，以便命令列可以將檔案寫入檔案系統。
 
@@ -420,7 +420,7 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
    chmod u+x bin/magento
    ```
 
-1. 從安裝 [命令列](../../advanced.md). 此範例假設安裝目錄名為 `magento2ee`，則 `db-host` 在同一部電腦上(`localhost`)，且 `db-name`， `db-user`、和 `db-password` 全部 `magento`：
+1. 從[命令列](../../advanced.md)安裝。 此範例假設安裝目錄名為`magento2ee`，`db-host`在相同電腦(`localhost`)上，且`db-name`、`db-user`和`db-password`皆為`magento`：
 
    ```bash
    bin/magento setup:install \
@@ -453,9 +453,9 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
 
 ### 設定nginx
 
-我們建議使用 `nginx.conf.sample` 安裝目錄和nginx虛擬主機中提供的組態檔。
+我們建議使用安裝目錄和nginx虛擬主機中提供的`nginx.conf.sample`設定檔來設定nginx。
 
-這些指示假設您使用的是nginx虛擬主機的CentOS預設位置(例如 `/etc/nginx/conf.d`)和預設docroot (例如， `/usr/share/nginx/html`)，但您可以變更這些位置以符合您的環境。
+這些指示假設您正在使用nginx虛擬主機的CentOS預設位置（例如`/etc/nginx/conf.d`）和預設docroot （例如`/usr/share/nginx/html`），但您可以變更這些位置以符合您的環境。
 
 1. 為您的網站建立新的虛擬主機：
 
@@ -481,9 +481,9 @@ Adobe Commerce需要數個 [PHP](../php-settings.md) 擴充功能正常運作。
 
    >[!NOTE]
    >
-   >此 `include` 指示必須指向安裝目錄中的nginx組態檔範例。
+   >`include`指示詞必須指向安裝目錄中的範例nginx組態檔。
 
-1. 取代 `www.magento-dev.com` 使用您的網域名稱。
+1. 將`www.magento-dev.com`取代為您的網域名稱。
 
 1. 儲存並退出編輯器。
 
@@ -569,4 +569,4 @@ sestatus
 
 ### 驗證安裝
 
-開啟網頁瀏覽器，並導覽至您網站的基底URL，以 [驗證安裝](../../next-steps/verify.md).
+開啟網頁瀏覽器，並瀏覽至您網站的基底URL，以[驗證安裝](../../next-steps/verify.md)。

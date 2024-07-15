@@ -21,11 +21,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有關成功升級的技術步驟的詳細說明，請參閱 [完成升級必要條件](../../../upgrade/prepare/prerequisites.md) 在我們的使用者檔案中。
+>如需成功升級之技術步驟的詳細說明，請參閱使用者檔案中的[完成升級必要條件](../../../upgrade/prepare/prerequisites.md)。
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 預算與時間
 
-▢使用Adobe Commerce [發行排程](../../../release/schedule.md) 以提前規劃下一次升級，並做好準備。
+▢使用Adobe Commerce [發行排程](../../../release/schedule.md)來規劃下一次升級，並提前準備。
 
 ▢根據預期需求，討論您認為將會採用哪個版本（完整或僅限安全性）。
 
@@ -60,14 +60,14 @@ ht-degree: 0%
 
 ▢立搶先存取活動
 
-- 合作夥伴參與 [測試版](../../../release/beta.md)
-- Beta版發行說明稽核。
+- 合作夥伴參與[Beta](../../../release/beta.md)
+- Beta發行說明稽核。
 
 ▢議定預算、時間表、範圍。
 
-▢執行 [升級相容性工具](../../../upgrade/upgrade-compatibility-tool/overview.md)
+▢執行[升級相容性工具](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-▢請考慮使用升級來解決由下列識別的問題： [全網站分析工具](../../../tools/site-wide-analysis-tool/intro.md).
+▢請考慮使用升級來處理[全網站分析工具](../../../tools/site-wide-analysis-tool/intro.md)所識別的問題。
 
 ▢ Document相依性和任何所需的技術棧疊變更，例如PHP或Elastic Search版本。
 
@@ -77,17 +77,17 @@ ht-degree: 0%
 
 ▢在預期停機時規劃維護期間。
 
-▢檢閱及核准測試策略；考慮使用Adobe Commerce [測試架構](https://developer.adobe.com/commerce/testing/) 或協力廠商自動化套裝。
+▢檢閱並核准測試策略；請考慮使用Adobe Commerce [測試架構](https://developer.adobe.com/commerce/testing/)或協力廠商自動化套件。
 
 ▢確認所有擴充功能和自訂內容都相容。
 
 ▢檢閱並更新上市後行動手冊；若在升級期間或升級後發現問題時使用。
 
-## 部署後
+## Post部署
 
 ▢監視網站的問題 — 效能、訂單處理、分析等。
 
-▢執行Adobe Commerce [安全性掃描](https://account.magento.com/scanner/dashboard/) 或其他協力廠商掃描並檢閱潛在的安全性弱點。
+▢執行Adobe Commerce [安全性掃描](https://account.magento.com/scanner/dashboard/)或其他協力廠商掃描，並檢閱潛在的安全性弱點。
 
 ▢與所有利害關係人進行回顧性分析，記錄哪些環節進展順利、哪些環節未順利，以及如何加以改善。
 

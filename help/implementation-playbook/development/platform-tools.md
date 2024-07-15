@@ -39,7 +39,7 @@ Percona是MySQL的一個分支，以效能和尖峰負載處理為中心。 如�
 
 ## 程式語言
 
-Adobe Commerce是以PHP為基礎的應用程式，且最新發行版本一律與最新穩定PHP版本相容(例如，Adobe Commerce 2.4版建議使用PHP 7.4)。 為了獲得更高的安全性和效能，在設定PHP以取得請求處理的最大速度和效率時，需要考慮幾個因素。 Adobe Commerce網站店面是以HTML、JavaScript和LESS CSS前置處理器建置而成。
+Adobe Commerce是以PHP為基礎的應用程式，且最新發行版本一律與最新穩定PHP版本相容(例如，Adobe Commerce 2.4版建議使用PHP 7.4)。 為了獲得更高的安全性和效能，在設定PHP以取得請求處理的最大速度和效率時，需要考慮幾個因素。 Adobe Commerce網頁店面是以HTML、JavaScript和LESS CSS前置處理器建置而成。
 
 ## Web伺服器
 
@@ -62,11 +62,11 @@ Adobe Commerce提供多種選項來儲存您的快取和工作階段資料，包
 
 ## 訊息佇列服務
 
-訊息佇列提供非同步通訊機制，讓訊息的傳送者與接收者不會相互聯絡。 [!DNL RabbitMQ] 是開放原始碼的訊息代理人，提供可靠、高可用性、可擴充且可攜式訊息系統。
+訊息佇列提供非同步通訊機制，讓訊息的傳送者與接收者不會相互聯絡。 [!DNL RabbitMQ]是開放原始碼訊息代理人，提供可靠、高可用性、可擴充且可攜式訊息系統。
 
 ## 安全性工具
 
-此 [Adobe Commerce安全性掃描工具](https://docs.magento.com/user-guide/magento/security-scan.html) 可讓您定期監視商店網站，並接收已知安全性風險、惡意程式碼和過時軟體的更新。 通常，當您開始使用者驗收測試(UAT)時，就會開始使用此工具。 Adobe Commerce安全性掃描工具是免費的，適用於Adobe Commerce的所有實作和版本，除此之外，還有其他選項可以在CI/CD流程期間和每個版本之前使用。
+[Adobe Commerce安全性掃描工具](https://docs.magento.com/user-guide/magento/security-scan.html)可讓您定期監視商店網站，並接收已知安全性風險、惡意程式碼和過時軟體的更新。 通常，當您開始使用者驗收測試(UAT)時，就會開始使用此工具。 Adobe Commerce安全性掃描工具是免費的，適用於Adobe Commerce的所有實作和版本，除此之外，還有其他選項可以在CI/CD流程期間和每個版本之前使用。
 
 SonarQube是開放原始碼品質管理平台，專為分析和測量程式碼的技術品質而設計。 SonarQube不僅提供完整的程式碼錯誤、語法錯誤和弱點報告，也提供修正程式碼的建議與範例。 SonarQube非常適合用於CI/CD環境，作為能夠在部署前分析程式碼的工具。
 

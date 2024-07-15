@@ -21,13 +21,13 @@ Adobe僅支援下表所述的系統需求組合。 例如，2.4.5已透過MariaD
 
 >[!BEGINTABS]
 
->[!TAB 雲端上的商務]
+>雲端上的[!TAB Commerce]
 
-此 [雲端上的Commerce範本](https://github.com/magento/magento-cloud) 提供與特定Commerce版本相容之服務的預設設定。
+雲端範本](https://github.com/magento/magento-cloud)上的[Commerce提供與特定Commerce版本相容之服務的預設設定。
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-服務和版本定義於 [此 `services.yaml` 檔案](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). 以下是雲端基礎結構上Commerce 2.4.6的預設服務設定：
+服務與版本定義於[的`services.yaml`檔案](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)。 以下是雲端基礎結構上Commerce 2.4.6的預設服務設定：
 
 ```yaml
 mysql:
@@ -42,9 +42,9 @@ opensearch:
     disk: 1024
 ```
 
-另請參閱 [設定服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) 在 _雲端基礎結構上的Commerce_ 指南。
+請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html)。
 
->[!TAB 商務內部部署]
+>[!TAB Commerce內部部署]
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
@@ -52,17 +52,17 @@ opensearch:
 
 ## PHP設定
 
-有特定的PHP組態設定，例如 `memory_limit` 設定，可協助您在使用Adobe Commerce時避免常見問題。 另請參閱 [必要的PHP設定](prerequisites/php-settings.md).
+有特定的PHP組態設定，例如`memory_limit`設定，可協助您在使用Adobe Commerce時避免常見問題。 請參閱[必要的PHP設定](prerequisites/php-settings.md)。
 
-如需雲端設定指南，請參閱 [PHP設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) 在 _雲端基礎結構上的Commerce_ 指南。
+如需雲端組態指南，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html)。
 
 ### PHP OPcache
 
-建議您確認 [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) 基於效能原因而啟用。 OPcache已在許多PHP分配中啟用。 此 `opcache` 擴充功能預設會安裝在雲端基礎結構的Commerce中。
+建議您確認[PHP OPcache](https://www.php.net/manual/en/intro.opcache.php)已因效能原因啟用。 OPcache已在許多PHP分配中啟用。 `opcache`擴充功能預設會安裝在雲端基礎結構上的Commerce中。
 
-如需內部部署，請確認PHP OPcache已安裝，請參閱 [PHP設定](prerequisites/php-settings.md). 或如需效能設定的特定指引，請參閱下列軟體建議： [PHP設定](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) 在 _效能最佳實務_ 指南。
+若為內部部署，請確認是否已安裝PHP OPcache，請參閱[PHP設定](prerequisites/php-settings.md)。 如需效能設定的特定指引，請參閱&#x200B;_效能最佳實務_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings)軟體建議。
 
-如果您必須單獨安裝OPcache，請參閱 [PHP OPcache檔案](https://www.php.net/manual/en/opcache.setup.php).
+如果您必須單獨安裝OPcache，請參閱[PHP OPcache檔案](https://www.php.net/manual/en/opcache.setup.php)。
 
 ### PHP程式控制
 
@@ -74,25 +74,25 @@ PHPUnit v9 （作為命令列工具）。
 
 ### PHP擴充功能
 
-此 [PHP安裝指示](prerequisites/php-settings.md) 包含安裝這些擴充功能的步驟。
+[PHP安裝指示](prerequisites/php-settings.md)包含安裝這些擴充功能的步驟。
 
 >[!TIP]
 >
->如需雲端基礎結構中的PHP擴充功能，請參閱 [啟用PHP擴充功能](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) 在 _雲端基礎結構上的Commerce_ 指南。
+>有關雲端基礎結構中的PHP擴充功能，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[啟用PHP擴充功能](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions)。
 
 >[!BEGINTABS]
 
->[!TAB 雲端上的商務]
+>雲端上的[!TAB Commerce]
 
 下表顯示在雲端平台上部署Adobe Commerce時支援的PHP擴充功能。
 
 {{$include /help/_includes/templated/php-extensions-cloud.md}}
 
->[!TAB 商務內部部署]
+>[!TAB Commerce內部部署]
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
-請參閱 [PHP官方檔案](https://www.php.net/manual/en/extensions.php) 以取得安裝詳細資料。
+如需安裝詳細資訊，請參閱[PHP檔案](https://www.php.net/manual/en/extensions.php)。
 
 >[!ENDTABS]
 
@@ -113,15 +113,15 @@ PHPUnit v9 （作為命令列工具）。
 - Chrome （最新和先前的主要版本；任何作業系統）
 - Safari (最新和先前的主要版本；僅限macOS)
 - iOS適用的Safari （店面適用的最新和先前主要版本）
-- Chrome for Android （最新和先前主要版本，適用於店面）
+- 適用於Android的Chrome （店面的最新和先前主要版本）
 
 ### 郵件伺服器
 
-郵件傳輸代理(MTA)或SMTP伺服器。 雲端基礎結構上的Commerce使用 [SendGrid電子郵件服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html).
+郵件傳輸代理(MTA)或SMTP伺服器。 雲端基礎結構上的Commerce使用[SendGrid電子郵件服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html)。
 
 ### 記憶體
 
-升級從Commerce Marketplace和其他來源取得的應用程式和擴充功能，最多可能需要2 GB的RAM。 如果您使用的系統RAM小於2 GB，請建立 [交換檔案](https://support.magento.com/hc/en-us/articles/360032980432)；否則，升級可能會失敗。
+升級從Commerce Marketplace和其他來源取得的應用程式和擴充功能，最多可能需要2 GB的RAM。 如果您使用的系統記憶體小於2 GB，請建立[交換檔案](https://support.magento.com/hc/en-us/articles/360032980432)；否則，您的升級可能會失敗。
 
 ### 作業系統(Linux x86-64)
 
@@ -143,16 +143,16 @@ Adobe Commerce的某些作業需要下列系統工具：
 
 - HTTPS需要有效的安全性憑證。
 - 不支援自我簽署SSL憑證。
-- 傳輸層安全性(TLS)需求 — PayPal和 `repo.magento.com` 兩者都需要TLS 1.2或更新版本。
+- 傳輸層安全性(TLS)需求 — PayPal和`repo.magento.com`都需要TLS 1.2或更新版本。
 
-如需雲端基礎結構上的Commerce，請參閱 [Fastly設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) 在 _雲端基礎結構上的Commerce_ 指南。
+如需雲端基礎結構上的Commerce，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[Fastly設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)。
 
 ### Xdebug
 
-若為Adobe Commerce，請使用 [php_xdebug 2.5.x](https://xdebug.org/download) 或更新版本（僅限開發環境；可能會對效能造成負面影響）。
+若為Adobe Commerce，請使用[php_xdebug 2.5.x](https://xdebug.org/download)或更新版本（僅限開發環境；可能會對效能造成不良影響）。
 
-如需雲端上的Adobe Commerce，請參閱 [設定Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) 在 _雲端基礎結構上的Commerce_ 指南。
+如需雲端上的Adobe Commerce，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[設定Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html)。
 
 >[!NOTE]
 >
->有一個已知問題 `xdebug` 可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取許可權。 另請參閱 [影響以下的已知問題 `xdebug` 安裝](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) 在 _Commerce支援知識庫_.
+>`xdebug`有已知問題，可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html)的[已知問題。

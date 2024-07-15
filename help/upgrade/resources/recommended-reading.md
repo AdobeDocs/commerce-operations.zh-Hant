@@ -38,7 +38,7 @@ ht-degree: 4%
       </td>
     </tr>
     <tr>
-      <td><strong>行事曆和原則</strong>
+      <td><strong>行事曆與原則</strong>
         <p>檢閱Adobe Commerce發行版本和政策的詳細資訊。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Adobe Commerce軟體終止支援常見問題集</a></li>
@@ -66,7 +66,7 @@ ht-degree: 4%
             <li><a href="recommended-upgrade-paths.md">建議的升級路徑</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4技術升級工作坊錄製</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">存取搶鮮版</a></li>
-            <li><a href="../../release/beta.md">Beta版總覽</a></li>
+            <li><a href="../../release/beta.md">Beta版本總覽</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">回溯不相容的開發</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/">與舊版不相容的變更</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">升級計畫檢查清單</a></li>

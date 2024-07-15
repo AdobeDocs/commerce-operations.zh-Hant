@@ -4,7 +4,7 @@ description: 讓您的Adobe Commerce和Adobe Experience Manager基礎架構保�
 exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 針對逾時設定，應檢閱設定並對齊，以防止在載入下出現503逾時錯誤。 有幾個基礎架構和應用程式逾時設定需要檢閱：
 
-![說明AEM逾時和連線限制的編號圖表](../assets/commerce-at-scale/timeout-settings.svg)
+![描述AEM逾時和連線限制的編號圖表](../assets/commerce-at-scale/timeout-settings.svg)
 
 ## AEM負載平衡器
 
@@ -41,7 +41,7 @@ Dispatcher的「renders」選項中的/timeout可指定存取AEM發佈執行個�
 
 ## 發佈者
 
-Publisher GraphQL連線限制和逾時：最初，Adobe Commerce CIF GraphQL Client Configuration Factory OSGI設定中的「最大HTTP連線」應該設定為預設的「Fastly最大連線限制」，目前則設定為200。 即使AEM陣列中有多個發佈者，每個發佈者的限制都應設定相同，並符合Fastly設定。 原因是在某些情況下，如果從陣列中取出關聯的Dispatcher，則一個發佈者可能會處理比其他發佈者更多的流量。 這表示所有流量都將透過單一剩餘的Dispatcher和發佈程式進行路由，在此情況下，單一發佈程式可能需要所有HTTP連線。
+Publisher GraphQL連線限制和逾時：最初，Adobe Commerce CIF GraphQL Client Configuration Factory OSGI設定中的「最大HTTP連線」應設定為預設的「Fastly最大連線限制」，目前設定為200。 即使AEM陣列中有多個發佈者，每個發佈者的限制都應設定相同，並符合Fastly設定。 原因是在某些情況下，如果從陣列中取出關聯的Dispatcher，則一個發佈者可能會處理比其他發佈者更多的流量。 這表示所有流量都將透過單一剩餘的Dispatcher和發佈程式進行路由，在此情況下，單一發佈程式可能需要所有HTTP連線。
 
 「預設HTTP方法」應從POST設定為GET。 Adobe Commerce GraphQL快取中只會快取GET請求，因此預設方法應一律設為GET。
 
@@ -49,8 +49,8 @@ http連線逾時和http通訊端逾時應該設定為符合Fastly逾時的值。
 
 下圖顯示MagentoCIF GraphQL Client Configuration Factory。 此處顯示的設定僅為範例，需要逐一調整：
 
-![Commerce Integration Framework組態設定熒幕擷圖](../assets/commerce-at-scale/cif-config.png)
+![Commerce integration framework組態設定的熒幕擷圖](../assets/commerce-at-scale/cif-config.png)
 
 下圖顯示Fastly後端設定。 此處顯示的設定僅為範例，需要逐一調整：
 
-![Fastly的Commerce管理員設定熒幕擷圖](../assets/commerce-at-scale/cif-config-advanced.png)
+![Fastly的Commerce管理員組態設定熒幕擷圖](../assets/commerce-at-scale/cif-config-advanced.png)

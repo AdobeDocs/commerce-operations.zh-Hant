@@ -6,7 +6,7 @@ badge: label="作者：阿提什·戈斯瓦米" type="Informative" url="https://
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Commerce資料庫分析工具會顯示頁面上實作的所有查詢，包括每
 
 ## 步驟1：修改部署設定
 
-修改 `<magento_root>/app/etc/env.php` 將下列參照新增至 [資料庫效能分析工具類別](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php)：
+修改`<magento_root>/app/etc/env.php`以新增下列對[資料庫分析工具類別](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php)的參考：
 
 ```php?start_inline=1
         'profiler' => [
@@ -55,7 +55,7 @@ Commerce資料庫分析工具會顯示頁面上實作的所有查詢，包括每
 
 ## 步驟2：設定輸出
 
-在Commerce應用程式啟動程式檔案中設定輸出；這可能是 `<magento_root>/pub/index.php` 或者，它可以位於Web伺服器虛擬主機設定中。
+在您的Commerce應用程式啟動程式檔案中設定輸出；這可能是`<magento_root>/pub/index.php`或它可能位於Web伺服器虛擬主機設定中。
 
 下列範例會在三欄表格中顯示結果：
 
@@ -63,7 +63,7 @@ Commerce資料庫分析工具會顯示頁面上實作的所有查詢，包括每
 - SQL （顯示所有SQL查詢；資料列標題顯示查詢計數）
 - 查詢引數（顯示每個SQL查詢的引數）
 
-若要設定輸出，請在之後新增下列內容 `$bootstrap->run($app);` 在啟動程式檔案中的第行：
+若要設定輸出，請在啟動程式檔案的`$bootstrap->run($app);`行後面新增下列內容：
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -91,4 +91,4 @@ echo "</table>";
 
 前往店面或管理員中的任何頁面來檢視結果。 範例如下：
 
-![範例資料庫效能分析工具結果](../../assets/configuration/db-profiler-results.png)
+![範例資料庫分析工具結果](../../assets/configuration/db-profiler-results.png)

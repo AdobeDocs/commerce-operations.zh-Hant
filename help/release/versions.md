@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 發行版本
 
-本頁列出Adobe Commerce的發行版本。 它包含每個次要、修補程式和安全性版本的發行日期，以及支援終止日期。 另請參閱 [生命週期原則](lifecycle-policy.md).
+本頁列出Adobe Commerce的發行版本。 它包含每個次要、修補程式和安全性版本的發行日期，以及支援終止日期。 請參閱[生命週期原則](lifecycle-policy.md)。
 
 >[!NOTE]
 >

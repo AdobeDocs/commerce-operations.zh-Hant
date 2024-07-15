@@ -27,7 +27,7 @@ ht-degree: 6%
           <td>4.3.0+</td>
           <td>4.3.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-module-amazon.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-module-amazon.html">市集</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">發行說明</a><br/>
           </td>
       </tr>
@@ -38,7 +38,7 @@ ht-degree: 6%
           <td>1.17</td>
           <td>1.17</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">概觀</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">總覽</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">發行說明</a><br/>
           </td>
       </tr>
@@ -49,7 +49,7 @@ ht-degree: 6%
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-channel-manager.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-channel-manager.html">市集</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">發行說明</a><br/>
           </td>
       </tr>
@@ -60,7 +60,7 @@ ht-degree: 6%
           <td>4.1.0</td>
           <td>4.1.0</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">市集</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">發行說明</a><br/>
           </td>
       </tr>
@@ -71,7 +71,7 @@ ht-degree: 6%
           <td>2.4.0 (PHP 8.1)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">市集</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">發行說明</a><br/>
           </td>
       </tr>
@@ -82,7 +82,7 @@ ht-degree: 6%
           <td>6.0.0</td>
           <td>6.0.0</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">市集</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">發行說明</a><br/>
           </td>
       </tr>
@@ -93,7 +93,7 @@ ht-degree: 6%
           <td>1.2.0+</td>
           <td>1.2.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html">市集</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">發行說明</a><br/>
           </td>
       </tr>

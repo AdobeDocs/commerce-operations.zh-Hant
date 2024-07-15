@@ -98,18 +98,18 @@ ht-degree: 1%
 
 | 最佳實務 | 說明 |
 |----------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [全球參考架構(GRA)](../../architecture/global-reference/examples.md) | 瞭解組織GRA程式碼基底的常用方法。 |
+| [全域參考架構(GRA)](../../architecture/global-reference/examples.md) | 瞭解組織GRA程式碼基底的常用方法。 |
 
 ## 目錄設計
 
 | 最佳實務 | 說明 |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [類別設定](catalog-management.md#category-limits) | 設定產品類別以獲得最佳效能。 |
+| [類別組態](catalog-management.md#category-limits) | 設定產品類別以獲得最佳效能。 |
 | [產品組態&#x200B;](catalog-management.md#product-sku-limits) | 設定產品SKU以獲得最佳效能。 |
 | [產品變數設定](catalog-management.md#product-variations) | 設定產品變數以獲得最佳效能。 |
-| [產品選項設定](catalog-management.md#product-options) | 設定產品選項以獲得最佳效能。 |
-| [產品屬性設定&#x200B;](catalog-management.md#product-attributes) | 設定產品屬性以獲得最佳效能。 |
-| [產品清單的分頁設定](catalog-management.md#product-listing-pagination) | 設定產品清單分頁以獲得最佳效能。 |
+| [產品選項組態](catalog-management.md#product-options) | 設定產品選項以獲得最佳效能。 |
+| [產品屬性組態&#x200B;](catalog-management.md#product-attributes) | 設定產品屬性以獲得最佳效能。 |
+| 產品清單的[分頁設定](catalog-management.md#product-listing-pagination) | 設定產品清單分頁以獲得最佳效能。 |
 
 ## 擴充功能
 

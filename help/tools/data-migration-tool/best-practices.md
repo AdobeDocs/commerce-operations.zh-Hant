@@ -6,7 +6,7 @@ feature: Best Practices, Configuration
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 本節提供加速及簡化移轉的最佳建議，以及可能需要多久時間的指引。
 
-* **使用Magento1執行處理的資料庫復本** 執行移轉測試時。 請勿使用Magento1存放區資料庫的生產執行個體。
+* **執行移轉測試時，請使用Magento1執行個體的資料庫復本**。 請勿使用Magento1存放區資料庫的生產執行個體。
 
-* **移除過時和備援的資料** 移轉前從您的Magento1資料庫取得。
+* **在移轉之前，從Magento1資料庫移除過時和備援的資料**。
 
 這類資料可能包括記錄、訂單報價、最近檢視或比較的產品、訪客、事件特定類別和促銷規則。
 
-* **請遵循 [成功移轉的一般規則](migrate-data/overview.md#migration-overview)**.
+* **請遵循[一般規則以成功移轉](migrate-data/overview.md#migration-overview)**。
 
-* 提升效能， **啟用 `direct_document_copy` 選項** 在您的 `config.xml` 檔案：
+* 若要提升效能，請&#x200B;**啟用您`config.xml`檔案中的`direct_document_copy`選項**：
 
   ```xml
   <direct_document_copy>1</direct_document_copy>

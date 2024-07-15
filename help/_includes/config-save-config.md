@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # 更新共用設定
 
-**更新設定的方式**：
+**若要更新組態**：
 
 1. 以檔案系統擁有者的身分登入或切換到您的開發系統。
 
@@ -18,14 +18,14 @@ ht-degree: 0%
    php bin/magento app:config:dump
    ```
 
-   例如，如果Commerce安裝在中 `/var/www/html/magento2`，輸入：
+   例如，如果Commerce安裝在`/var/www/html/magento2`中，請輸入：
 
    ```bash
    cd /var/www/html/magento2
    php bin/magento app:config:dump
    ```
 
-1. 確認 `app/etc/config.php` 已更新。
+1. 確認`app/etc/config.php`已更新。
 
    ```bash
    git status
@@ -43,9 +43,9 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >執行 _非_ 將變更提交至 `generated`， `pub/media`，或 `pub/static` 目錄至原始檔控制。 您會在建置系統上產生這些檔案。 開發系統可能有程式碼、主題等未準備好用於生產系統的專案。
+   >請&#x200B;_不_&#x200B;將變更提交至`generated`、`pub/media`或`pub/static`目錄至原始檔控制。 您會在建置系統上產生這些檔案。 開發系統可能有程式碼、主題等未準備好用於生產系統的專案。
 
-1. 將您的變更籤入 `app/etc/config.php` 僅限原始檔控制。
+1. 只將您對`app/etc/config.php`的變更籤入至原始檔控制。
 
    ```bash
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy

@@ -40,7 +40,7 @@ ht-degree: 0%
 
 商家在從「管理員」建立客戶或訂單時，可以輸入客戶資訊、地址資料及付款資料。
 
-![後端資料進入點](../../assets/security-compliance/backend-data-entry-points.svg)
+![後端資料輸入點](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### 後端資料存取點
 
@@ -69,9 +69,9 @@ Adobe Commerce可設定為儲存下列客戶屬性：
 >
 >為了遵循目前的安全性和隱私權最佳實務，在收集或處理此類資料之前，請務必瞭解任何與儲存客戶完整出生日期（月、日、年）及其他個人識別碼（例如全名）相關的潛在法律和安全風險。
 
-#### `customer_entity` 和「customer_entity」參考
+#### `customer_entity`和&#39;customer_entity&#39;參考
 
-下列欄位位於 `customer_entity` 表格包含客戶資訊：
+`customer_entity`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | ------------ | ------------ |
@@ -84,7 +84,7 @@ Adobe Commerce可設定為儲存下列客戶屬性：
 | `dob` | 日期 |
 | `gender` | smallint(5) |
 
-這些表格參考 `customer_entity` 並且可以包含自訂客戶屬性：
+這些資料表參考`customer_entity`，可以包含自訂客戶屬性：
 
 | 表格 | 欄 | 資料型別 |
 | -------------------------- | ------- | ------------- |
@@ -94,9 +94,9 @@ Adobe Commerce可設定為儲存下列客戶屬性：
 | `customer_entity_text` | `value` | 文字 |
 | `customer_entity_varchar` | `value` | varchar(255) |
 
-#### `customer_grid_flat` 表格
+#### `customer_grid_flat`資料表
 
-下列欄位位於 `customer_grid_flat` 表格包含客戶資訊：
+`customer_grid_flat`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | -------------------- | ------------ |
@@ -137,9 +137,9 @@ Adobe Commerce儲存下列客戶屬性：
 - VAT編號
 - 郵遞區號
 
-#### `customer_address_entity` 和 `customer_address_entity` 引用
+#### `customer_address_entity`和`customer_address_entity`個參考
 
-下列欄位位於 `customer_address_entity` 表格包含客戶資訊：
+`customer_address_entity`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | ------------ | ------------ |
@@ -158,7 +158,7 @@ Adobe Commerce儲存下列客戶屬性：
 | `telephone` | varchar(255) |
 | `vat_id` | varchar(255) |
 
-這些表格參考 `customer_address_entity` 並且可以包含自訂客戶屬性：
+這些資料表參考`customer_address_entity`，可以包含自訂客戶屬性：
 
 | 表格 | 欄 | 資料型別 |
 | ---------------------------------- | ------- | ------------- |
@@ -170,11 +170,11 @@ Adobe Commerce儲存下列客戶屬性：
 
 ### 訂單資料
 
-此 `sales_order` 和相關表格包含客戶名稱、帳單和送貨地址及相關資料。
+`sales_order`和相關表格包含客戶名稱、帳單和送貨地址及相關資料。
 
-#### `sales_order` 表格
+#### `sales_order`資料表
 
-下列欄位位於 `sales_order` 表格包含客戶資訊：
+`sales_order`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | --------------------- | ------------ |
@@ -193,9 +193,9 @@ Adobe Commerce儲存下列客戶屬性：
 | `remote_ip` | varchar(32) |
 | `x_forwarded_for` | varchar(32) |
 
-#### `sales_order_address` 表格
+#### `sales_order_address`資料表
 
-此 `sales_order_address` 表格包含客戶的地址。
+`sales_order_address`表格包含客戶的地址。
 
 | 欄 | 資料型別 |
 | --------------------- | ------------ |
@@ -216,9 +216,9 @@ Adobe Commerce儲存下列客戶屬性：
 | `suffix` | varchar(255) |
 | `company` | varchar(255) |
 
-#### `sales_order_grid` 表格
+#### `sales_order_grid`資料表
 
-下列欄位位於 `sales_order_grid` 表格包含客戶資訊：
+`sales_order_grid`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | ---------------------- | ------------ |
@@ -235,9 +235,9 @@ Adobe Commerce儲存下列客戶屬性：
 
 引號包含客戶名稱、電子郵件、地址及相關資訊。
 
-#### `quote` 表格
+#### `quote`資料表
 
-下列欄位位於 `quote` 表格包含客戶資訊：
+`quote`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | --------------------- | ------------ |
@@ -252,9 +252,9 @@ Adobe Commerce儲存下列客戶屬性：
 | `customer_taxvat` | varchar(255) |
 | `customer_gender` | varchar(255) |
 
-#### `quote_address` 表格
+#### `quote_address`資料表
 
-下列欄位位於 `quote_address` 表格包含客戶資訊：
+`quote_address`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | ------------- | ------------ |
@@ -277,7 +277,7 @@ Adobe Commerce儲存下列客戶屬性：
 
 ### 付款資料
 
-此 `sales_order_payment` 表格中包含信用卡資訊和其他交易資訊。
+`sales_order_payment`表格包含信用卡資訊和其他交易資訊。
 
 | 欄 | 資料型別 |
 | ------------------------ | ------------ |
@@ -297,9 +297,9 @@ Adobe Commerce儲存下列客戶屬性：
 
 可以設定Adobe Commerce，讓客戶可以傳送邀請給私人銷售和活動。
 
-#### `magento_invitation` 表格
+#### `magento_invitation`資料表
 
-此 `magento_invitation` 表格包含客戶ID、電子郵件和轉介ID。
+`magento_invitation`表格包含客戶ID、電子郵件和轉介ID。
 
 | 欄 | 資料型別 |
 | ------------- | ------------ |
@@ -307,9 +307,9 @@ Adobe Commerce儲存下列客戶屬性：
 | `email` | varchar(255) |
 | `referral_id` | int(10) |
 
-#### `magento_invitation_track` 表格
+#### `magento_invitation_track`資料表
 
-此 `magento_invitation_track` 表格也包含客戶資訊。
+`magento_invitation_track`表格也包含客戶資訊。
 
 | 欄 | 資料型別 |
 | ------------- | --------- |
@@ -318,7 +318,7 @@ Adobe Commerce儲存下列客戶屬性：
 
 ### 參考客戶的雜項表格
 
-下清單格包含 `customer_id` 欄：
+下列資料表包含`customer_id`資料行：
 
 - `catalog_compare_item`
 - `catalog_product_frontend_action`

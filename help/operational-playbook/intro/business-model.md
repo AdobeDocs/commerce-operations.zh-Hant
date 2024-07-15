@@ -4,8 +4,8 @@ description: 瞭解不同的Commerce商業模式。
 exl-id: d66b4a7f-d54b-4902-8791-7a8f67fa4b43
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 1%
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
 
@@ -52,9 +52,9 @@ B2B的客戶服務：
 B2C的客戶服務：
 
 - 全天候客戶服務
-- 售後退貨
-- 售後交易
-- 售後問題
+- Post-sale退貨
+- Post-sale exchange
+- Post-sale問題
 - 可用性
 
 ## B2B和B2C之間的差異摘要

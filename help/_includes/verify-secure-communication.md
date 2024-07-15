@@ -1,7 +1,7 @@
 ---
 source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 1%
 
 ---
@@ -9,10 +9,10 @@ ht-degree: 1%
 
 本節將討論驗證HTTP基本驗證是否正常運作的兩種方式：
 
-* 使用 `curl` 命令驗證您必須輸入使用者名稱和密碼才能取得叢集狀態
+* 使用`curl`命令來驗證您必須輸入使用者名稱和密碼才能取得叢集狀態
 * 在Admin中設定HTTP基本驗證
 
-## 使用 `curl` 驗證叢集狀態的命令
+## 使用`curl`命令來驗證叢集狀態
 
 輸入下列命令：
 
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## 在Admin中設定HTTP基本驗證
 
-執行中討論的相同工作 [搜尋引擎設定](../configuration/search/configure-search-engine.md) *除了* 按一下 **[!UICONTROL Yes]** 從 **[!UICONTROL Enable HTTP Auth]** 清單並在提供的欄位中輸入您的使用者名稱和密碼。
+執行[搜尋引擎組態](../configuration/search/configure-search-engine.md) *中討論過的相同工作（除了*），請從&#x200B;**[!UICONTROL Enable HTTP Auth]**&#x200B;清單中按一下&#x200B;**[!UICONTROL Yes]**，然後在提供的欄位中輸入您的使用者名稱和密碼。
 
-按一下 **[!UICONTROL Test Connection]** 以確定其運作正常，然後按一下 **[!UICONTROL Save Config]**.
+按一下「**[!UICONTROL Test Connection]**」以確認其運作正常，然後按一下「**[!UICONTROL Save Config]**」。
 
 您必須先清除快取並重新索引，才能繼續。

@@ -15,18 +15,18 @@ ht-degree: 0%
 
 # Composer開發
 
-本主題說明就地開發Composer模組的建議方法（如中的Git存放庫） `vendor/` 目錄)，並將這些模組新增至您的主要Git專案。
+本主題說明就地開發Composer模組（做為`vendor/`目錄中的Git存放庫）並將這些模組新增到您的主要Git專案的建議方法。
 
 >[!NOTE]
 >
->這些准則主要適用於 [全球參考架構(GRA)](../overview.md) 專案。
+>這些准則主要適用於[全域參考架構(GRA)](../overview.md)專案。
 
 ## 準備開發分支
 
 1. 在您的主要Git存放庫中建立或簽出開發分支。
 1. 您需要維護的每個模組都有開發版本。
 
-   在此範例中，主要Git存放庫中的每個分支都代表Composer套件版本。 此情境中建議的Composer版本命名慣例是 `dev-` 後面接著分支名稱。 例如：
+   在此範例中，主要Git存放庫中的每個分支都代表Composer套件版本。 此情境中建議的Composer版本命名慣例是`dev-`，後面接著分支名稱。 例如：
 
    - `dev-develop`
    - `dev-qa`
@@ -35,25 +35,25 @@ ht-degree: 0%
    composer require client/module-example:dev-develop
    ```
 
-1. 如果另一個撰寫器套件需要模組的特定版本(例如， `client/module-example 1.0.12`)，以別名安裝：
+1. 如果另一個撰寫器套件需要模組的特定版本（例如，`client/module-example 1.0.12`），請以別名安裝它：
 
    ```bash
    composer require 'client/module-example:dev-develop as 1.0.12'
    ```
 
-   對於 `qa` 分支，取代 `dev-develop` 替換為 `dev-qa`.
+   對於`qa`分支，將`dev-develop`取代為`dev-qa`。
 
 ## 將套件轉換為Git存放庫
 
-依預設，封裝不包含 `.git/` 目錄。 Composer可以從Git簽出套件，而不是使用預先建立的Composer套件。 此方法的優點是，您可以在開發期間輕鬆修改套件。
+依預設，封裝不包含`.git/`目錄。 Composer可以從Git簽出套件，而不是使用預先建立的Composer套件。 此方法的優點是，您可以在開發期間輕鬆修改套件。
 
-1. 從移除模組 `vendor/` 目錄。
+1. 從`vendor/`目錄移除模組。
 
    ```bash
    rm -rf vendor/client/module-example
    ```
 
-1. 使用重新安裝模組 [指定的Git來源](#prepare-a-development-branch).
+1. 使用[指定的Git來源](#prepare-a-development-branch)重新安裝模組。
 
    ```bash
    composer install --prefer-source
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ## 使用您的開發更新主要專案
 
-修改您的主要Git存放庫以更新您的 `composer.lock` 檔案。 如果您的模組是新的，請啟用它。
+修改`composer.lock`檔案以更新您的主要Git存放庫。 如果您的模組是新的，請啟用它。
 
 ```bash
 # to update your packages and all dependencies of the package

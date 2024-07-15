@@ -14,27 +14,27 @@ ht-degree: 0%
 
 本節探討如何安裝範例資料(若您透過下列任一方式取得Adobe Commerce軟體)：
 
-* 已從下載壓縮封存 `https://magento.com/tech-resources/download`.
+* 已從`https://magento.com/tech-resources/download`下載壓縮封存。
 
-  如果您從GitHub下載封存，則此方法無法運作，因為 `composer.json` 檔案不包含 `repo.magento.com` URL。
+  如果您從GitHub下載封存，此方法將無法運作，因為`composer.json`檔案不包含`repo.magento.com` URL。
 
-* 已使用 `composer create-project`
+* 已使用`composer create-project`
 
-您可以使用此方法來取得Adobe Commerce的範例資料，但必須使用相同方法 [驗證金鑰](../prerequisites/authentication-keys.md) 用來安裝應用程式的資訊。
+您可以使用這個方法取得Adobe Commerce的範例資料，但必須使用安裝應用程式時所用的相同[驗證金鑰](../prerequisites/authentication-keys.md)。
 
 >[!NOTE]
 >
->如果您遇到錯誤，例如 `Could not find package...` 或 `...no matching package found...`，請確認您的命令沒有任何拼寫錯誤。 如果您仍然遇到錯誤，則可能無法存取正確的Composer存放庫，尤其是當您使用Adobe Commerce時。 連絡人 [Adobe Commerce支援](https://support.magento.com/hc/en-us) 以取得協助。
+>如果您遇到錯誤（例如`Could not find package...`或`...no matching package found...`），請確定您的命令中沒有任何拼寫錯誤。 如果您仍然遇到錯誤，則可能無法存取正確的Composer存放庫，尤其是當您使用Adobe Commerce時。 請連絡[Adobe Commerce支援](https://support.magento.com/hc/en-us)尋求協助。
 
-您可以使用Composer在安裝應用程式之前或之後安裝範例資料；但是，可能會 [其他任務](remove-or-update.md).
+您可以使用Composer在安裝應用程式之前或之後安裝範例資料；但是，可能有[個其他工作](remove-or-update.md)。
 
-如果您是參與開發人員，請參閱 [透過複製存放庫進行安裝](git-repositories.md).
+如果您是參與開發人員，請參閱[複製存放庫以安裝](git-repositories.md)。
 
 >[!WARNING]
 >
->如果您的應用程式設定為，請勿安裝範例資料 [生產模式](../../configuration/bootstrap/application-modes.md#production-mode). 切換至 [開發人員模式](../../configuration/bootstrap/application-modes.md#developer-mode) 第一。 在生產模式中安裝範例資料 [失敗](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-).
+>如果您的應用程式設定為[生產模式](../../configuration/bootstrap/application-modes.md#production-mode)，請勿安裝範例資料。 請先切換至[開發人員模式](../../configuration/bootstrap/application-modes.md#developer-mode)。 在生產模式[中安裝範例資料失敗](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-)。
 
-若要使用命令列安裝範例資料，請輸入以下命令作為檔案系統擁有者 `<app_root>` 目錄：
+若要使用命令列安裝範例資料，請在`<app_root>`目錄中輸入下列命令作為檔案系統擁有者：
 
 ```bash
 bin/magento sampledata:deploy
@@ -42,13 +42,13 @@ bin/magento sampledata:deploy
 
 >[!WARNING]
 >
->如果您正在安裝範例資料 _晚於_ 安裝應用程式時，您還必須執行下列命令來更新中的資料庫和架構 `<app_root>` 目錄：
+>如果要在安裝應用程式&#x200B;_之後安裝範例資料_，您也必須執行下列命令來更新`<app_root>`目錄中的資料庫和結構描述：
 
 ```bash
 bin/magento setup:upgrade
 ```
 
-您必須 [驗證](../prerequisites/authentication-keys.md) 以完成動作。
+您必須[驗證](../prerequisites/authentication-keys.md)才能完成動作。
 
 ## 驗證錯誤
 
@@ -60,7 +60,7 @@ The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate
 ```
 
-如果顯示錯誤，請變更應用程式安裝目錄並執行 `composer update`，提示您輸入 [驗證金鑰](../prerequisites/authentication-keys.md).
+如果顯示錯誤，請變更至您的應用程式安裝目錄，並執行`composer update`，這會提示您輸入[驗證金鑰](../prerequisites/authentication-keys.md)。
 
 ## 完成範例資料安裝
 

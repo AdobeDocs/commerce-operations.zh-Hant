@@ -19,8 +19,8 @@ ht-degree: 0%
 
 ## 典型時間表範例
 
-![典型Commerce實作時間表範例](../../assets/playbooks/timeline-example.svg)
+![典型商務實作時間表範例](../../assets/playbooks/timeline-example.svg)
 
 ## 時間表活動範例
 
-![commerce實作時間表活動範例](../../assets/playbooks/timeline-activities-example.svg)
+![範例商務實作時間表活動](../../assets/playbooks/timeline-activities-example.svg)

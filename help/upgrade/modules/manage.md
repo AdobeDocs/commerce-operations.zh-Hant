@@ -16,10 +16,10 @@ ht-degree: 0%
 
 ## 啟用或停用模組
 
-若要啟用或停用模組，請參閱 [啟用或停用模組](../../installation/tutorials/manage-modules.md).
+若要啟用或停用模組，請參閱[啟用或停用模組](../../installation/tutorials/manage-modules.md)。
 
 ## 解除安裝模組
 
-若要解除安裝模組，請參閱 [解除安裝模組](../../installation/tutorials/uninstall-modules.md).
+若要解除安裝模組，請參閱[解除安裝模組](../../installation/tutorials/uninstall-modules.md)。
 
-若要解除安裝主題，請使用 [`theme:uninstall`](../../installation/tutorials/themes.md) 命令。
+若要解除安裝主題，請使用[`theme:uninstall`](../../installation/tutorials/themes.md)命令。

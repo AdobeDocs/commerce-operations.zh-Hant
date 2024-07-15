@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: c4912f02-0411-466f-8c77-d610de9eb35d
+exl-id: f76a8906-af31-4a61-be68-f5dad87161e2
 feature: Install, Security
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 唯讀檔案系統
 
-唯讀檔案系統概念是借用的 [雲端基礎結構上的Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. 這會完全移除不良執行者使用的主要區域。 許多利用漏洞的程式都利用變更商務應用程式中預期會存在的檔案來避免偵測。 這個錯誤的動作不會建立一個，而是會變更現有檔案的內容，以執行非預期的動作。 讓檔案系統成為唯讀，可大幅減少此攻擊向量。
+唯讀檔案系統概念是借自雲端基礎結構](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}上的[Adobe Commerce。 這會完全移除不良執行者使用的主要區域。 許多利用漏洞攻擊程式都利用變更預期會在Commerce應用程式中出現的檔案來避免偵測。 這個錯誤的動作不會建立一個，而是會變更現有檔案的內容，以執行非預期的動作。 讓檔案系統成為唯讀，可大幅減少此攻擊向量。
 
 ## 使用TWO Factor驗證和密碼管理員
 
@@ -34,13 +34,13 @@ ht-degree: 0%
 
 惡意程式碼掃描通常可以從嘗試在Adobe Commerce中專門化的託管提供者找到。 隨著新威脅的發現、分類和診斷，這個已知的惡意程式碼和漏洞庫日益增加。 查詢代管提供者是否有這類服務，以及這些服務是否可以自動執行或僅應要求執行。 您也可以訂閱一些服務，並使用自己的已知利用漏洞程式庫，持續檢查您的商業應用程式是否有利用漏洞。 其中有些只是外部的，有些可以新增到基礎結構以提供所有資料夾、檔案甚至資料庫的內部深層掃描。 從Sansec.io到Sucuri，當然還有MageReport，在此領域有數年經驗的提供者。 有些是免費的，有些則隨附相關費用。 有了這些可用資訊，並與Adobe Commerce架構師及DevOps團隊進行深入思考的對話，將能確保您找到正確的解決方案。
 
-## 適用於商務的全網站分析工具
+## 適用於Commerce的全網站分析工具
 
-此 [全網站分析工具](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} 是主動式自助服務工具和中央存放庫，其中包含詳細的系統分析和建議，以確保Adobe Commerce安裝的安全性和可操作性。 它提供全天候的即時效能監控、報告和建議，以找出潛在問題，並更清楚地瞭解網站健康狀況、安全性和應用程式設定。 這有助於縮短解決時間，並改善網站穩定性與效能。
+[全網站分析工具](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"}是主動式自助服務工具和中央存放庫，其中包含詳細的系統分析和建議，以確保Adobe Commerce安裝的安全性和可操作性。 它提供全天候的即時效能監控、報告和建議，以找出潛在問題，並更清楚地瞭解網站健康狀況、安全性和應用程式設定。 這有助於縮短解決時間，並改善網站穩定性與效能。
 
 ## 啟用及驗證管理員動作記錄的設定
 
-登入Adobe Commerce管理員並瀏覽至「商店>設定>進階>管理員>管理員動作記錄」，即可找到此選項。 這會提供受監視和記錄的事件清單。 如果懷疑他們已獲得商務管理員的存取許可權，則在對受利用網站進行鑑證分析時，此功能會很有用。 此記錄和報告有助於檢視不良執行者執行了哪些事件。 如果任何管理員動作記錄被停用，且這表示有人可能為了遮蓋在執行某些動作時刪除記錄。
+登入Adobe Commerce管理員並瀏覽至「商店>設定>進階>管理員>管理員動作記錄」，即可找到此選項。 這會提供受監視和記錄的事件清單。 如果懷疑使用者已取得Commerce管理員的存取許可權，則在對受利用網站進行鑑證分析時，此功能會很有用。 此記錄和報告有助於檢視不良執行者執行了哪些事件。 如果任何管理員動作記錄被停用，且這表示有人可能為了遮蓋在執行某些動作時刪除記錄。
 
 ## 用於ssh存取的Bastion Server
 
@@ -58,7 +58,8 @@ Adobe Commerce的每位管理員使用者都會獲得一個ACL角色。 應建�
 
 限制對生產資料的存取。 這些指定的隊友應該能夠拉下生產資料庫，並清除真實資料。 如果可以選擇移除資料，請截斷適當的表格，例如訂單、報價和客戶。 不過，有時候您會想要完整的資料集，但您可以匿名處理這些值。 在中繼環境中通常會發生這種情況。 在升級之前它也很有用。 擁有真實數量的資料，但匿名化可確保您測試並驗證正確執行部署以進行升級的時間。 如果您的資料集有限，可能會低估升級流程和時機。
 
-+++隨機化客戶資訊範例以下範例說明如何在Adobe Commerce儲存資料的部分標準表格中，以隨機字串及所有名字和姓氏欄位變更客戶電子郵件地址。 **請記得檢查所有表格中是否有敏感資料，此清單並非包含所有可能儲存客戶資料的表格**
++++隨機化客戶資訊範例
+以下範例說明如何使用Adobe Commerce儲存資料之部分標準表格中的隨機字串以及所有名字和姓氏欄位，變更客戶電子郵件地址。 **請記得檢查所有資料表是否有敏感資料，此清單並非包含所有可能儲存客戶資料的資料表**
 
 ```SQL
 SET FOREIGN_KEY_CHECKS=0;
@@ -104,7 +105,8 @@ SET FOREIGN_KEY_CHECKS=1;
 
 +++
 
-+++完全移除資訊範例以下範例說明在啟動前或較低開發環境移除所有訂單、報價單、銷退折讓單等專案的情形
++++完全移除資訊範例
+以下範例說明在啟動之前或在較低開發環境中移除所有訂單、報價單、銷退折讓單等專案
 
 ```SQL
 DELETE FROM `gift_message`;
@@ -210,11 +212,11 @@ ALTER TABLE sequence_shipment_7 AUTO_INCREMENT=1;
 
 ## 使用環境變數
 
-[!BADGE 僅限雲端上的Adobe Commerce]{type=Informative}
+[!BADGE 僅雲端上的Adobe Commerce]{type=Informative}
 
 使用環境變數可協助您設定特定值，這些值可以也應該針對每個環境變更。 例如，您可能希望每個環境有不同的管理員URL。 透過將此值設為環境變數，您可以進行此設定，並視需要從Cloud UI快速參考此值。
 
-您可以在Experience League中閱讀更多有關本主題的資訊 [雲端基礎結構環境變數上的Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
+如需此主題的詳細資訊，請參閱雲端基礎結構環境變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}的CommerceExperience League[
 
 ## 軟體弱點掃描工具
 
@@ -232,6 +234,6 @@ WAF會檢查網頁和管理流量，以識別任何可疑活動。 它會評估G
 
 作為雲端型服務，WAF不需要安裝或維護任何硬體或軟體。 Fastly是現有的技術合作夥伴，提供軟體與專業知識。 Fastly全球傳遞網路的每個快取節點都擁有高效能、永遠開啟的WAF。
 
-如需Fastly所提供雲端Adobe Commerce上WAF的詳細資訊，請參閱 [Adobe Commerce知識庫常見問題集](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
+如需Fastly所提供雲端Adobe Commerce上WAF的詳細資訊，請閱讀[Adobe Commerce知識庫常見問答集](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}。
 
 {{$include /help/_includes/hosting-related-links.md}}

@@ -13,27 +13,27 @@ ht-degree: 0%
 
 # 隱私權JavaScript資料庫
 
-隱私權JavaScript程式庫是一組工具，可協助建立存取和刪除Adobe Commerce所收集私人資料的程式。
+隱私權JavaScript資料庫是一組工具，可協助建立存取和刪除Adobe Commerce所收集私人資料的程式。
 
-Commerce資料追蹤服務可儲存適用於隱私權法規的私人資訊，例如 [一般資料保護規範(GDPR)](gdpr.md) 和 [加州消費者隱私保護法(CCPA)](ccpa.md).
+Commerce資料追蹤服務可儲存適用於隱私權法規的私人資訊，例如[一般資料保護規範(GDPR)](gdpr.md)和[加州消費者隱私保護法(CCPA)](ccpa.md)。
 
 此程式庫提供一組函式，用於建立隱私權資料請求並收集其回應。 使用此資料庫來擷取和移除瀏覽器中儲存的Adobe Commerce資料追蹤服務資料。
 
 >[!NOTE]
 >
->如果 [Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) 已啟用，在購物者同意前，Commerce不會收集行為資料。 如果 [!UICONTROL **Cookie限制模式**] 已停用，Commerce會依預設收集行為資料。
+>如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，Commerce會在購物者同意前不會收集行為資料。 如果&#x200B;[!UICONTROL **Cookie限制模式**]&#x200B;已停用，Commerce會依預設收集行為資料。
 
 ## 安裝
 
-隱私權JavaScript程式庫可在下列CDN位置取得： `commerce.adobe.net/magentoprivacy.js`
+隱私權JavaScript資料庫可在下列CDN位置使用： `commerce.adobe.net/magentoprivacy.js`
 
-取得檔案後，您需要將其新增到Adobe Commerce執行個體中安裝的自訂模組或主題。 請依照以下說明操作 [使用自訂JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) 完成此任務的主題。
+取得檔案後，您需要將其新增到Adobe Commerce執行個體中安裝的自訂模組或主題。 依照[使用自訂JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/)主題中說明的指示完成此工作。
 
 ### 初始化
 
-匯入並例項化新的 `MagentoPrivacy` 物件或使用 `window` 物件以存取隱私權JavaScript函式。
+匯入並具現化新的`MagentoPrivacy`物件，或使用`window`物件來存取隱私權JavaScript函式。
 
-使用的範例 `import`：
+使用`import`的範例：
 
 ```js
 import MagentoPrivacy from "./MagentoPrivacy"
@@ -41,7 +41,7 @@ import MagentoPrivacy from "./MagentoPrivacy"
 const magePriv = new MagentoPrivacy()
 ```
 
-使用的範例 `window`：
+使用`window`的範例：
 
 ```js
 const magePriv = new window.MagentoPrivacy()
@@ -61,7 +61,7 @@ magePriv.retrieveIdentity().then((ids)=>console.log(ids))
 
 `removeIdentity()`
 ：從瀏覽器中的服務移除身分資料。
-此函式傳回身分物件的JavaScript Promise，其中包含 `isDeleted` 表示資料是否已刪除的布林值屬性。
+此函式傳回具有`isDeleted`布林值屬性的身分識別物件的JavaScript Promise，以指出資料是否已刪除。
 
 ```js
 magePriv.removeIdentity().then((ids)=>console.log(ids))

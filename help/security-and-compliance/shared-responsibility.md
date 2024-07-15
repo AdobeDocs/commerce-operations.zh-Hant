@@ -106,10 +106,10 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 下列摘要表使用RACI模型來顯示Adobe、商家和雲端服務提供者之間共用的安全性責任：
 
-**R**  — 負責
-**A**  — 負責
-**C**  — 已諮詢
-**I**  — 已通知
+**R** — 負責
+**A** — 負責
+**C** — 已諮詢
+**I** — 已通知
 
 >[!ENDSHADEBOX]
 
@@ -132,7 +132,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
     <td></td>
   </tr>
   <tr>
-    <td>將修補程式套用至支援服務<br>（例如Nginx或MySQL。）</td>
+    <td>正在將修補程式套用至支援服務<br> （例如Nginx或MySQL。）</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -230,7 +230,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
     <td></td>
   </tr>
   <tr>
-    <td>設定來源存放庫<sup>1</sup></td>
+    <td>正在設定來源存放庫<sup>1</sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -356,7 +356,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
     <td></td>
   </tr>
   <tr>
-    <td>設定Nginx<sup>3</sup></td>
+    <td>正在設定Nginx<sup>3</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -440,7 +440,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
     <td></td>
   </tr>
   <tr>
-    <td>在雲端基礎結構上修復Adobe Commerce PCI掃描<sup>4</sup></td>
+    <td>正在修復雲端基礎結構上的Adobe Commerce PCI掃描<sup>4</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -520,10 +520,10 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 <tfoot>
   <tr>
     <td colspan="5">
-      <p><sup><strong>1</strong></sup> 僅限將雲端基礎結構存放庫上的Adobe Commerce作為主要存放庫時。 商家全權負責使用其他外部存放庫。</p>
-      <p><sup><strong>2</strong></sup> Adobe針對CDN提供者的問題提供第1級支援。</p>
-      <p><sup><strong>3</strong></sup> 商家需負責為其應用程式設定的任何Ngnix控制項。</p>
-      <p><sup><strong>4</strong></sup> 對於PCI，滲透測試需求在Adobe和商家之間共用。</p>
+      <p><sup><strong>1</strong></sup>僅限將雲端基礎結構存放庫上的Adobe Commerce作為主要存放庫時。 商家全權負責使用其他外部存放庫。</p>
+      <p><sup><strong>2</strong></sup>Adobe針對CDN提供者的問題提供第1級支援。</p>
+      <p><sup><strong>3</strong></sup>商家必須負責為其應用程式設定的任何Ngnix控制項。</p>
+      <p><sup><strong>4</strong></sup>對於PCI，滲透測試需求在Adobe和商家之間共用。</p>
     </td>
   </tr>
 </tfoot>
@@ -639,7 +639,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | --- | --- | --- |
 | 旋轉記錄檔 | R |   |
 | 自訂Adobe Commerce應用程式 | | R |
-| New Relic服務的可用性：<br>APM應用程式與代理程式整合、基礎架構應用程式、<br>記錄與整合 | R |   |
+| New Relic服務的可用性：<br>APM應用程式與代理程式整合、基礎結構應用程式、<br>記錄與整合 | R |   |
 | 設定New Relic警報 |     | R |
 | 在PaaS伺服器上部署New Relic代理程式 |     | R |
 
@@ -662,7 +662,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | --- | --- | --- |
 | 應用程式設定 |     | R |
 | 將網域新增至Adobe Commerce應用程式（基本URL） |     | R |
-| 將PaaS設定為使用已部署的Adobe Commerce版本支援的服務版本<br><br>例如，不同的Commerce版本與特定版本的PHP、Redis等相容。 |     | R |
+| 設定PaaS以使用已部署的Adobe Commerce版本<br><br>所支援的服務版本。例如，不同的Commerce版本與特定的PHP、Redis等版本相容。 |     | R |
 
 {style="table-layout:auto"}
 
@@ -702,8 +702,8 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 |     | Adobe | 商家 |
 | --- | --- | --- |
 | Galera和MariaDB服務的可用性 | R | |
-| 持續維護預設資料庫設定<br><br>（索引和最佳化核心表格，最佳化預設sys-admin設定） | R |   |
-| 持續維護商家資料和修改的設定<br><br>（設定正規化表格與一般表格、索引和最佳化自訂與協力廠商表格、封存或移除資料、設定系統管理設定） |     | R |
+| 持續維護預設資料庫設定<br><br> （索引和最佳化核心表格，最佳化預設sys-admin設定） | R |   |
+| 持續維護商家資料及修改設定<br><br> （設定正規化與一般資料表、索引及最佳化自訂與協力廠商資料表、封存或移除資料、設定系統管理設定） |     | R |
 | Galera和MySQL的設定 | R |   |
 | Galera和MariaDB的持續品質與修補 | R |   |
 | 持續性基礎架構最佳化 | R |   |
@@ -755,7 +755,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | --- | --- | --- |
 | SendGrid電子郵件服務的可用性及其整合 | R |   |
 | 監視商家的SendGrid使用量是否超過限制 | R |   |
-| 商家只負責將服務用於傳出異動電子郵件<br>此服務不支援傳送行銷電子郵件。 |     | R |
+| 商家只負責將服務用於外寄異動電子郵件<br>服務不支援行銷電子郵件的傳送。 |     | R |
 | 設定選用的協力廠商電子郵件服務 |     | R |
 
 {style="table-layout:auto"}
@@ -786,8 +786,8 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | Adobe CommerceBusiness Intelligence服務的可用性 | R |   |
 | MBI資料同步程式 | R |   |
 | 偵測MBI同步問題 | R |   |
-| 設定MBI資料同步處理至Adobe Commerce Cloud Pro、Starter、內部部署或非Adobe Commerce<br>(API、資料品質和格式、商家網路、<br>Adobe Commerce Cloud DB內外的DB連線（超過資料臨界值） |     | R |
-| 設定MBI資料同步處理至Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud資料庫設定) | R |   |
+| 設定MBI資料同步處理至Adobe Commerce Cloud Pro、Starter、內部部署或非Adobe Commerce<br>(API、資料品質和格式、商家網路、<br>Adobe Commerce Cloud DB內外的DB連線，超過資料臨界值) |     | R |
+| 正在設定MBI資料同步處理至Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud資料庫組態) | R |   |
 
 {style="table-layout:auto"}
 
@@ -857,7 +857,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | PrivateLink傳入商家VPC服務端點的設定 |     | R |
 | 接受傳入至商家VPC服務端點的PrivateLink | R |   |
 | PrivateLink整合（端點對帳戶）的設定 |     | R |
-| 為PrivateLink端點設定商家擁有的VPC<br><br> （包括任何VPN連線） |     | R |
+| PrivateLink端點<br><br>之商家擁有的VPC的設定（包括任何VPN連線） |     | R |
 
 {style="table-layout:auto"}
 

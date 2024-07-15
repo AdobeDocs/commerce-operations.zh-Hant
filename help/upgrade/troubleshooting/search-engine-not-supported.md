@@ -29,7 +29,7 @@ Your current search engine, <Engine Name>, is not supported. You must install a 
 bin/magento config:show catalog/search/engine
 ```
 
-如果傳回的值是 `mysql`， `elasticsearch`，或 `elasticsearch6`.
+如果傳回值為`mysql`、`elasticsearch`或`elasticsearch6`，就會發生錯誤。
 
 >[!WARNING]
 >
@@ -43,11 +43,11 @@ bin/magento config:show catalog/search/engine
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->位置 `<version>` 是您正在執行的Magento版本 **早於** 升級。 例如， `2.3.5`.
+>其中`<version>`是您在升級&#x200B;**之前**&#x200B;執行的Magento版本。 例如，`2.3.5`。
 
 請依照下列各節所述的准則，從不一致的狀態復原。
 
-## 如果您的搜尋引擎為 `mysql`
+## 如果您的搜尋引擎為`mysql`
 
 在2.4之前，MySQL是預設的目錄搜尋引擎，但此容量已不再支援MySQL。 現在，您必須先安裝並設定Elasticsearch或OpenSearch作為搜尋引擎，才能升級至2.4。
 
@@ -58,20 +58,20 @@ bin/magento config:show catalog/search/engine
 
 設定搜尋引擎並重新索引後，您就可以升級至2.4了。
 
-## 如果您的搜尋引擎為 `elasticsearch`
+## 如果您的搜尋引擎為`elasticsearch`
 
 不再支援Elasticsearch6及舊版。
 
-值 `elasticsearch` 表示您的Adobe Commerce低階版本設定為使用Elasticsearch2.x。不再支援此版本的Elasticsearch。
+值`elasticsearch`表示您的Adobe Commerce舊版已設定為使用Elasticsearch2.x。不再支援此版本的Elasticsearch。
 
 升級至2.4之前，您必須執行下列工作：
 
-1. 更新至Commerce支援的Elasticsearch版本。 請參閱 [升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) 有關備份資料、偵測潛在移轉問題，以及在部署到生產環境之前測試升級的完整指示。 根據您目前的Elasticsearch版本，可能不需要完全重新啟動叢集。
+1. 更新至Commerce支援的Elasticsearch版本。 請參閱[升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)，以取得有關備份資料、偵測可能的移轉問題，以及在部署到生產環境之前測試升級的完整指示。 根據您目前的Elasticsearch版本，可能不需要完全重新啟動叢集。
 
    >[!NOTE]
    >
-   >Elasticsearch需要JDK 1.8或更新版本。 另請參閱 [安裝Java軟體開發套件(JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) 以檢查已安裝的JDK版本。
+   >Elasticsearch需要JDK 1.8或更新版本。 請參閱[安裝Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk)以檢查已安裝的JDK版本。
 
-1. [設定Elasticsearch](../../configuration/search/configure-search-engine.md) 並重新索引。
+1. [設定Elasticsearch](../../configuration/search/configure-search-engine.md)並重新索引。
 
 設定搜尋引擎並重新索引後，您就可以升級至2.4了。

@@ -4,8 +4,8 @@ user-guide-description: 了解如何透過 Adobe Experience Manager 使用 Adobe
 feature: Integration
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 49%
+source-wordcount: '46'
+ht-degree: 54%
 
 ---
 

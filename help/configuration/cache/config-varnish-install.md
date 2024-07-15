@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >本主題是針對CentOS和Apache 2.4上的Varnish所撰寫。如果您是在不同的環境中設定Varnish，有些指令可能會不同。 如需詳細資訊，請參閱前述檔案。
 >
->如果您要安裝Vmods模組(vmod) （例如saint模式），您應該編譯程式碼來安裝Varnish，而不是從套件進行安裝。 另請參閱 [Saint模式](config-varnish-advanced.md#saint-mode) 以取得更多詳細資料。
+>如果您要安裝Vmods模組(vmod) （例如saint模式），您應該編譯程式碼來安裝Varnish，而不是從套件進行安裝。 如需詳細資訊，請參閱[Saint模式](config-varnish-advanced.md#saint-mode)。
 
 ## 確認您的清漆版本
 
@@ -32,4 +32,4 @@ ht-degree: 0%
 varnishd -V
 ```
 
-請確定 [Adobe Commerce支援](../../installation/system-requirements.md) 已安裝的Varnish版本，然後再繼續。 如果您執行的是不支援的版本，則必須升級至支援的版本。 如需詳細資訊，請參閱Varnish安裝檔案。
+在繼續之前，請確定[Adobe Commerce支援](../../installation/system-requirements.md)已安裝的Varnish版本。 如果您執行的是不支援的版本，則必須升級至支援的版本。 如需詳細資訊，請參閱Varnish安裝檔案。

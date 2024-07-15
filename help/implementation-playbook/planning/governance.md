@@ -16,7 +16,7 @@ ht-degree: 0%
 
 治理模式會定義、記錄並溝通自訂且有效的實務，以提供控制專案的全面方法，並在每個層級提供定期可見度以確保成功。 它包含決策架構；定義專案完成時的角色、責任和責任；並控制有效性。 治理結構會從執行團隊一直向上彙整至執行管理，定義活動、報告、向上呈報及資訊流程。
 
-![專案治理資訊圖](../../assets/playbooks/project-governance.svg)
+![專案治理資訊圖形](../../assets/playbooks/project-governance.svg)
 
 在不同層級，團隊會檢視特定的衝刺和專案量度，以瞭解進度並根據需要採取修正操作。 這些衝刺層級量度可包含每個衝刺的速度和待執行工作。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 分鏡指令碼和速度
 
-![Kanban面板範例](../../assets/playbooks/kanban-board-chart.svg)
+![範例Kanban面板](../../assets/playbooks/kanban-board-chart.svg)
 
 ## 衝刺和釋出待執行工作
 

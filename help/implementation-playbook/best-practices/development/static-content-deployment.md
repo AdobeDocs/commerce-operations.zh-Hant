@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 * 雲端基礎結構上的Adobe Commerce
 * Adobe Commerce內部部署
@@ -27,20 +27,20 @@ ht-degree: 0%
 若要避免靜態內容在網站上無法使用的問題，請遵循下列最佳實務，以確保您的靜態內容已正確設定和部署：
 
 1. 請務必遵循部署准則：
-   * 如需Adobe Commerce內部部署（所有版本）的相關資訊，請參閱 [部署概觀](../../../configuration/deployment/overview.md) （位於我們的開發人員檔案中）。
-   * 如需雲端基礎結構上的Adobe Commerce （所有版本），請參閱 [雲端部署程式](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html) 和 [靜態內容部署策略](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html) （位於我們的開發人員檔案中）。
+   * 若為Adobe Commerce內部部署（所有版本），請參閱我們的開發人員檔案中的[部署概觀](../../../configuration/deployment/overview.md)。
+   * 如需雲端基礎結構上的Adobe Commerce （所有版本），請參閱我們的開發人員檔案中的[雲端部署程式](https://devdocs.magento.com/cloud/deploy/cloud-deployment-process.html)和[靜態內容部署策略](https://devdocs.magento.com/cloud/deploy/static-content-deployment.html)。
 
-1. 針對雲端基礎結構上的Adobe Commerce （所有版本），請確定ece-tools使用的是最新版本。 請參閱： [更新ece-tools版本](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) （位於我們的開發人員檔案中）。
-1. 對於雲端基礎結構上的Adobe Commerce （所有版本），請確定在建置階段而非部署階段中部署靜態內容。 請參閱： [存放區設定的組態管理 — 靜態內容部署效能](https://devdocs.magento.com/cloud/live/sens-data-over.html#cloud-confman-scd-over) （位於我們的開發人員檔案中）。
+1. 針對雲端基礎結構上的Adobe Commerce （所有版本），請確定ece-tools使用的是最新版本。 請參閱我們的開發人員檔案中的[更新ece-tools版本](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html)。
+1. 對於雲端基礎結構上的Adobe Commerce （所有版本），請確定在建置階段而非部署階段中部署靜態內容。 請參閱：開發人員檔案中的[存放區設定的組態管理 — 靜態內容部署效能](https://devdocs.magento.com/cloud/live/sens-data-over.html#cloud-confman-scd-over)。
 1. 請確定您沒有長期執行的cron工作，並終止任何長期執行的cron程式。 長時間執行的cron工作可能會佔用CPU資源，並可能大幅增加部署時間。
-1. 針對Adobe Commerce內部部署（所有版本），請檢查 `php` CLI中的處理程式可以存取 `pub/static` 目錄。 否則，您可能會遇到靜態內容部署無法將檔案寫入該目錄的問題。 如需詳細資訊： [檔案系統存取許可權](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) （位於我們的開發人員檔案中）。
-1. 確保 `generated` 目錄不是跨組建的共用目錄；否則，組建可能會隨機失敗。 如需詳細資訊：
-   * Adobe Commerce內部部署（所有版本）： [技術細節](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) （位於我們的開發人員檔案中）。
-   * 雲端基礎結構上的Adobe Commerce （所有版本）： [部署程式 — 階段2：建置](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-build) （位於我們的開發人員檔案中）。
+1. 若為Adobe Commerce內部部署（所有版本），請檢查CLI中的`php`處理序是否可存取`pub/static`目錄。 否則，您可能會遇到靜態內容部署無法將檔案寫入該目錄的問題。 如需詳細資訊：開發人員檔案中的[檔案系統存取許可權](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html)。
+1. 請確定`generated`目錄不是跨組建的共用目錄；否則，組建可能會隨機失敗。 如需詳細資訊：
+   * Adobe Commerce內部部署（所有版本）：開發人員檔案中的[技術詳細資訊](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html)。
+   * 雲端基礎結構上的Adobe Commerce （所有版本）： [部署程式 — 階段2：我們的開發人員檔案中的組建](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-build)。
 
-1. 檢查您的SCD策略。 此 *快速* 策略是預設值。 如需詳細資訊：
-   * Adobe Commerce內部部署（所有版本）： [靜態檔案部署策略](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) （位於我們的開發人員檔案中）。
-   * 雲端基礎結構上的Adobe Commerce （所有版本）： [部署變數 — SCD\_STRATEGY](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_strategy) （位於我們的開發人員檔案中）。
+1. 檢查您的SCD策略。 *quick*&#x200B;策略為預設值。 如需詳細資訊：
+   * Adobe Commerce內部部署（所有版本）：開發人員檔案中的[靜態檔案部署策略](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html)。
+   * 雲端基礎結構上的Adobe Commerce （所有版本）： [在開發人員檔案中部署變數 — SCD\_STRATEGY](https://devdocs.magento.com/cloud/env/variables-deploy.html#scd_strategy)。
 
 ## 其他資訊
 

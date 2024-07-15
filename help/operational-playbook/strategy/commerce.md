@@ -1,15 +1,15 @@
 ---
-title: 商務策略
+title: Commerce策略
 description: 使用我們建議的策略框架解鎖核心電子商務功能。
 exl-id: 0efb424b-9026-439d-a50c-d2d935c07c8c
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# 商務策略
+# Commerce策略
 
 數位商業是一支快速發展的力量，每年都在快速演化。 雖然這對個人而言可能令人興奮，但對於嘗試在電子商務領域取得進展的組織而言，也帶來了許多挑戰。
 
@@ -79,4 +79,4 @@ ht-degree: 0%
 
 如需建議的電子商務策略架構，請參閱下圖：
 
-![商務策略架構圖](../../assets/playbooks/commerce-strategy-framework.png)
+![Commerce策略架構圖表](../../assets/playbooks/commerce-strategy-framework.png)

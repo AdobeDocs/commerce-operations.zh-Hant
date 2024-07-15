@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 將所有MyISAM表格轉換為InnoDB
 
-Adobe建議使用InnoDB資料庫引擎。 在預設的Adobe Commerce安裝中，資料庫中的所有表格都使用InnoDB引擎儲存。 不過，某些協力廠商模組（擴充功能）可能會以MyISAM格式引入表格。 安裝協力廠商模組後，請檢查資料庫以識別中的任何表格 `myisam` 格式並將它們轉換為 `innodb` 格式。
+Adobe建議使用InnoDB資料庫引擎。 在預設的Adobe Commerce安裝中，資料庫中的所有表格都使用InnoDB引擎儲存。 不過，某些協力廠商模組（擴充功能）可能會以MyISAM格式引入表格。 安裝協力廠商模組後，請檢查資料庫以識別`myisam`格式的任何資料表，並將它們轉換為`innodb`格式。
 
 ### 判斷模組是否包含MyISAM表格
 
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### 將儲存引擎變更為InnoDB
 
-在 `db_schema.xml` 檔案宣告表格，設定 `engine` 對應專案的屬性值 `table` 節點至 `innodb`. 如需參考資訊，請參閱 [設定宣告式綱要>表格節點](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) （位於我們的開發人員檔案中）。
+在宣告資料表的`db_schema.xml`檔案中，將對應的`table`節點的`engine`屬性值設定為`innodb`。 如需參考，請參閱我們的開發人員檔案中的[設定宣告式結構描述>資料表節點](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/)。
 
 宣告式配置是在Adobe Commerce的雲端基礎結構2.3版中引入。
 
@@ -72,22 +72,22 @@ Adobe建議您一律在雲端基礎結構專案中為您的Adobe Commerce設定E
 - 觸發器會解譯為程式碼，而MySQL不會預先編譯它們。 掛接至查詢的交易空間時，會為使用表格執行的每個查詢新增剖析器和解譯器的額外負荷。
 - 觸發程式與原始查詢共用相同的交易空間，當這些查詢競爭表格上的鎖定時，觸發程式會獨立競爭另一個表格上的鎖定。
 
-若要瞭解使用自訂觸發器的替代方案，請參閱 [MySQL觸發程式](mysql-configuration.md#triggers).
+若要瞭解使用自訂觸發器的替代方案，請參閱[MySQL觸發程式](mysql-configuration.md#triggers)。
 
-## 升級 [!DNL ECE-Tools] 至2002.0.21版或更新版本 {#ece-tools-version}
+## 將[!DNL ECE-Tools]升級至2002.0.21版或更新版本 {#ece-tools-version}
 
-若要避免cron死結的潛在問題，請將ECE-Tools升級至2002.0.21版或更新版本。 如需指示，請參閱 [更新 `ece-tools` 版本](https://devdocs.magento.com/cloud/project/ece-tools-update.html) （位於我們的開發人員檔案中）。
+若要避免cron死結的潛在問題，請將ECE-Tools升級至2002.0.21版或更新版本。 如需指示，請參閱我們的開發人員檔案中的[更新`ece-tools`版本](https://devdocs.magento.com/cloud/project/ece-tools-update.html)。
 
 ## 安全地切換索引器模式
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
-切換索引器會產生 [!DNL data definition language] (DDL)敘述句來建立可能引發資料庫鎖定的觸發程式。 您可以在變更設定前，先將網站置於維護模式並停用cron工作，即可避免此問題。
-如需指示，請參閱 [設定索引子](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) 在 *Adobe Commerce設定指南*.
+切換索引器會產生[!DNL data definition language] (DDL)陳述式來建立觸發程式，這可能會導致資料庫鎖定。 您可以在變更設定前，先將網站置於維護模式並停用cron工作，即可避免此問題。
+如需指示，請參閱*Adobe Commerce設定指南*&#x200B;中的[設定索引子](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1)。
 
 ## 請勿在生產環境中執行DDL陳述式
 
-請避免在生產環境中執行DDL陳述式以避免衝突（例如修改和建立表格）。 此 `setup:upgrade` 程式是個例外。
+請避免在生產環境中執行DDL陳述式以避免衝突（例如修改和建立表格）。 `setup:upgrade`處理序是一個例外狀況。
 
 如果您需要執行DDL陳述式，請將網站置於維護模式並停用cron （請參閱上一節中有關安全切換索引的說明）。
 
@@ -95,7 +95,7 @@ Adobe建議您一律在雲端基礎結構專案中為您的Adobe Commerce設定E
 
 啟用管理員的訂單封存，以隨著訂單資料成長，減少Sales表格所需的空間。 封存可節省MySQL磁碟空間並改善簽出效能。
 
-另請參閱 [啟用封存](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) Adobe Commerce商家檔案中的。
+請參閱Adobe Commerce商家檔案中的[啟用封存](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html)。
 
 ## 其他資訊
 

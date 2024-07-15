@@ -4,7 +4,7 @@ description: 使用內建的支援公用程式疑難排解您的Commerce專案�
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Adobe Commerce支援公用程式 — 也稱為 [資料收集器](https://docs.magento.com/user-guide/system/support-data-collector.html) — 讓使用者能夠收集您的系統相關疑難排解資訊，供我們的支援團隊使用。
+Adobe Commerce支援公用程式（也稱為[資料收集器](https://docs.magento.com/user-guide/system/support-data-collector.html)）可讓使用者收集有關您的系統的疑難排解資訊，供我們的支援團隊使用。
 
-Adobe Commerce使用這些備份，也稱為 _傾印_，以分析需要存取程式碼的問題。 典型的案例如下：
+Adobe Commerce使用這些備份（也稱為&#x200B;_傾印_）來分析需要存取您程式碼的問題。 典型的案例如下：
 
 1. 您的Commerce商店發生問題，請聯絡Adobe Commerce支援。
 1. 支援人員會判斷需要檢視您的程式碼或資料庫才能重現問題。
-1. 將程式碼備份至 `.tar.gz` 檔案。
+1. 將程式碼備份至`.tar.gz`檔案。
 
    此備份會排除您的媒體檔案，以加速處理過程，並產生更小的檔案(_E)。
 
-1. 將資料庫備份至 `.tar.gz` 檔案。
+1. 您將資料庫備份至`.tar.gz`檔案。
 
    依預設，進行備份時會雜湊敏感資料。
 
@@ -36,7 +36,7 @@ Adobe Commerce使用這些備份，也稱為 _傾印_，以分析需要存取程
 
 ## 建立程式碼備份
 
-這個指令會備份程式碼並將其壓縮到 `tar.gz` 格式。
+這個命令會備份程式碼並壓縮成`tar.gz`格式。
 
 {{tip-backup-command}}
 
@@ -48,11 +48,11 @@ bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--
 
 其中：
 
-- **`--name`** 指定傾印檔案名稱（選擇性）。 如果您省略此引數，傾印檔案會加上時間和日期戳記。
-- **`-o|--output=<path>`** 是儲存備份的絕對檔案系統路徑（必填）。
-- **`-l|--logs`** 包含記錄檔（選擇性）。
+- **`--name`**&#x200B;指定傾印檔案名稱（選擇性）。 如果您省略此引數，傾印檔案會加上時間和日期戳記。
+- **`-o|--output=<path>`**&#x200B;是儲存備份的絕對檔案系統路徑（必要）。
+- **`-l|--logs`**&#x200B;包含記錄檔（選擇性）。
 
-例如，若要建立名為的程式碼備份 `/var/www/html/magento2/var/log/mycodebackup.tar.gz`：
+例如，若要建立名為`/var/www/html/magento2/var/log/mycodebackup.tar.gz`的程式碼備份：
 
 ```bash
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
@@ -62,7 +62,7 @@ bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/va
 
 ## 建立資料庫備份
 
-此命令會備份Commerce資料庫並將其壓縮 `tar.gz` 格式。
+這個命令會備份Commerce資料庫，並以`tar.gz`格式壓縮。
 
 {{tip-backup-command}}
 
@@ -74,10 +74,10 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 其中：
 
-- **`--name`** 指定傾印檔案名稱（選擇性）。 如果您省略此引數，傾印檔案會加上時間和日期戳記。
-- **`-o|--output=<path>` 是儲存備份的絕對檔案系統路徑（必填）。
-- **`-l|--logs`** 包含記錄檔（選擇性）。
-- **`-i|--ignore-sanitize`** 表示資料會保留；建立備份時，省略將資料庫中儲存的敏感資料進行雜湊處理的標幟（選擇性）。
+- **`--name`**&#x200B;指定傾印檔案名稱（選擇性）。 如果您省略此引數，傾印檔案會加上時間和日期戳記。
+- **`-o|--output=<path>`是儲存備份的絕對檔案系統路徑（必要）。
+- **`-l|--logs`**&#x200B;包含記錄檔（選擇性）。
+- **`-i|--ignore-sanitize`**&#x200B;表示資料會保留；建立備份時，請省略資料庫中儲存之雜湊敏感資料的標幟（選擇性）。
 
 敏感資料包含來自下列資料庫表格的客戶資訊：
 
@@ -112,10 +112,10 @@ Utility lsof not found
 
    >[!INFO]
    >
-   >命令正確執行 _僅限_ 從您的安裝目錄。
+   >命令只能從您的安裝目錄&#x200B;_正確_&#x200B;執行。
 
-1. `bin/magento support:utility:paths` 建立 `<magento_root>/var/support/Paths.php`，其中列出公用程式使用之所有應用程式的路徑。
-1. `bin/magento support:utility:check` 顯示檔案系統路徑。
+1. `bin/magento support:utility:paths`建立`<magento_root>/var/support/Paths.php`，其中列出公用程式使用的所有應用程式的路徑。
+1. `bin/magento support:utility:check`顯示檔案系統路徑。
 
 範例如下：
 
@@ -131,4 +131,4 @@ Utility lsof not found
    mysql => /usr/bin/mysql
 ```
 
-若要解決執行工具的問題，請確定已安裝這些應用程式，並位於網頁伺服器使用者的 `$PATH` 環境變數。
+若要解決執行工具時的問題，請確定已安裝這些應用程式，且位於網頁伺服器使用者的`$PATH`環境變數中。

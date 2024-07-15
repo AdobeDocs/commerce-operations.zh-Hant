@@ -5,7 +5,7 @@ exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
 feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Delivery
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Adobe Commerce可讓商家打造獨特且吸引人的購物體驗。 此平台�
 
 ## 隨時隨地順暢購物
 
-滿足客戶需求帶動商業成長。 在一個平台中，擴大您的業務範圍並擴展至新的管道、地理區域，以及透過線上方式銷售給企業和消費者。 無論客戶選擇購買何種產品，隨時隨地都能為他們帶來商業利益。
+Commerce的成長是由滿足客戶需求所推動。 在一個平台中，擴大您的業務範圍並擴展至新的管道、地理區域，以及透過線上方式銷售給企業和消費者。 無論客戶選擇購買何種產品，隨時隨地都能為他們帶來商業利益。
 
 - Mobile commerce
 - B2B電子商務

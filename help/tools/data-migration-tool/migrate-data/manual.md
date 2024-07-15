@@ -5,7 +5,7 @@ exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -33,25 +33,25 @@ ht-degree: 0%
 >自Magento2.4.3起，資料庫媒體儲存方法已過時。
 
 
-本章節適用於您 *僅限* 如果您將媒體檔案儲存在Magento資料庫中。 此步驟應於以下日期之前執行： [資料移轉](data.md)：
+如果您將媒體檔案儲存在Magento資料庫中，此區段僅&#x200B;*適用*。 此步驟應在[移轉資料](data.md)之前執行：
 
 1. 以管理員身分登入Magento1管理面板。
 
-1. 按一下 **系統** > **設定** >進階> **系統**.
+1. 按一下&#x200B;**系統** > **組態** >進階> **系統**。
 
-1. 在右窗格中，捲動至 **媒體的儲存設定**.
+1. 在右窗格中，捲動至&#x200B;**媒體**&#x200B;的儲存設定。
 
-1. 從 **選取媒體資料庫** 清單中，按一下您的媒體儲存資料庫名稱。
+1. 從&#x200B;**選取媒體資料庫**&#x200B;清單中，按一下您的媒體儲存資料庫名稱。
 
-1. 按一下 **同步**.
+1. 按一下&#x200B;**同步處理**。
 
 然後，在您的Magento2管理面板中重複相同的步驟。
 
 ### 檔案系統中的媒體檔案
 
-所有媒體檔案（產品、類別、WYSIWYG編輯器等的影像）都應從手動複製 `<your Magento 1 install dir>/media` 至 `<your Magento 2 install dir>/pub/media`.
+所有媒體檔案（產品、類別、WYSIWYG編輯器等的影像）應從`<your Magento 1 install dir>/media`手動複製到`<your Magento 2 install dir>/pub/media`。
 
-但是，可以 *非* 複製 `.htaccess` Magento1中的檔案 `media` 資料夾。 Magento2有其專屬的 `.htaccess` 應該保留的。
+不過，請&#x200B;*不*&#x200B;複製Magento1 `media`資料夾中的`.htaccess`檔案。 Magento2有其應保留的`.htaccess`。
 
 ## 店面設計
 
@@ -63,10 +63,10 @@ ht-degree: 0%
 
 您必須手動重新建立全部：
 
-* Web服務API （SOAP、XML-RPC和REST）的認證
+* Web服務API (SOAP、XML-RPC及REST)的認證
 
 * 管理使用者帳戶並將其與存取許可權相關聯
 
 >[!NOTE]
 >
->您可以使用來調整資料庫實體的時區 `\Migration\Handler\Timezone` 處理常式。 請參閱 [後續追蹤](follow-up.md) 區段以取得更多詳細資料。
+>您可以使用`\Migration\Handler\Timezone`處理常式來調整資料庫實體的時區。 如需詳細資訊，請參閱[後續追蹤](follow-up.md)區段。

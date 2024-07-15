@@ -3,13 +3,13 @@ title: 偵錯最佳實務
 description: 瞭解解決常見Adobe Commerce開發問題的技巧。
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce的除錯最佳實務
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 ### 快取
 
 - 在進一步調查之前排清快取
-- 考慮APC快取、CDN、Varnish、產生的程式碼以及 `var/view_preprocessed` 和 `pub/static/` 目錄
+- 請考慮APC快取、CDN、Varnish、產生的程式碼以及`var/view_preprocessed`和`pub/static/`目錄
 - 排清快取或修改程式碼後，停止並重新啟動佇列處理常式
 
 以下程式碼範例提供與管理快取相關的實用命令（請勿在生產環境中執行）：
@@ -96,7 +96,7 @@ bin/magento cache:flush
 
 ### 開發人員模式
 
-請確定您的本機安裝位於 `developer` 模式。
+請確定您的本機安裝處於`developer`模式。
 
 ### 新模組
 
@@ -108,9 +108,9 @@ bin/magento cache:flush
   bin/magento module --enable Your_Module
   ```
 
-  檢查 `app/etc/config.php` 新模組的檔案。
+  檢查新模組的`app/etc/config.php`檔案。
 
-- 檢查檔案和目錄結構巢狀。 例如，配置檔案位於 `view/layout/` 目錄，而非 `view/frontend/layout` 目錄？ 範本是否在 `view/frontend/template` 目錄，而非 `view/frontend/templates` 目錄？
+- 檢查檔案和目錄結構巢狀。 例如，配置檔案是在`view/layout/`目錄中而非`view/frontend/layout`目錄中嗎？ 範本是在`view/frontend/template`目錄中而非`view/frontend/templates`目錄中嗎？
 
 ## 疑難排解：半分割
 
@@ -132,12 +132,12 @@ bin/magento cache:flush
 
 如果問題可能與程式碼無關，請先消除大區塊。 要考慮的一些大型區塊包括：
 
-- **Adobe Commerce框架** — 問題是否與Adobe Commerce有關，還是與其他連線系統有關？
+- **Adobe Commerce架構** — 問題是否與Adobe Commerce有關，或是否與其他連線系統有關？
 - **伺服器和使用者端** — 清除瀏覽器快取和儲存空間。 問題已解決嗎？ 這可能會排除與伺服器相關的原因。 問題是否仍然存在？ 不需再浪費時間進行瀏覽器偵錯。
-- **工作階段** — 問題是否發生在每個使用者身上？ 如果沒有，您的問題可能僅限於工作階段或瀏覽器相關主題。
+- **工作階段** — 問題是否對每個使用者都發生？ 如果沒有，您的問題可能僅限於工作階段或瀏覽器相關主題。
 - **快取** — 停用所有快取會變更任何專案嗎？ 若是如此，您可以專注於快取相關主題。
-- **資料庫** — 問題是否發生在每個執行相同程式碼的環境上？ 如果沒有，請尋找組態中的問題以及其他資料庫相關主題。
-- **程式碼** — 如果上述任何一項都無法解決問題，請尋找程式碼問題。
+- **資料庫** — 每個執行相同程式碼的環境是否會發生問題？ 如果沒有，請尋找組態中的問題以及其他資料庫相關主題。
+- **程式碼** — 如果上述任何專案都無法解決問題，請尋找程式碼問題。
 
 ### 步驟2：依認可二分
 
@@ -148,7 +148,7 @@ bin/magento cache:flush
 ### 步驟3：依檔案對等
 
 - 將Adobe Commerce除以檔案型別（核心與非核心）。 首先，停用所有客戶和市集模組。 問題是否仍然存在？ 這很可能是非核心問題。
-- 再次啟用（大約）中一半的模組 `app/etc/config.php` 檔案。 請注意相依性。 最好一次啟用具有相同主題的模組叢集。 問題是否仍然存在？
+- 再次啟用`app/etc/config.php`檔案中一半的模組。 請注意相依性。 最好一次啟用具有相同主題的模組叢集。 問題是否仍然存在？
 - 啟用剩餘模組的四分之一。 問題是否仍然存在？ 停用一半的已啟用專案。 此方法可協助您將根本原因隔離至單一模組。
 
 ## 節省時間
@@ -169,7 +169,7 @@ bin/magento cache:flush
 
 ### 網際網路搜尋
 
-使用與問題相關的詞匯進行網際網路搜尋。 其他人可能已經遇到相同問題的機率。 搜尋 [Adobe Commerce GitHub問題](https://github.com/magento/magento2/issues).
+使用與問題相關的詞匯進行網際網路搜尋。 其他人可能已經遇到相同問題的機率。 搜尋[Adobe Commerce GitHub問題](https://github.com/magento/magento2/issues)。
 
 ### 休息一下
 
@@ -189,9 +189,9 @@ n98-magerun2.phar index:trigger:recreate
 
 ## 程式碼片段
 
-下列主題提供的程式碼片段可用於記錄或識別Commerce專案中的問題。
+下列主題提供的程式碼片段可用來記錄或識別Commerce專案中的問題。
 
-### 檢查商務是否使用XML檔案
+### 檢查Commerce是否使用XML檔案
 
 在XML檔案中新增明顯的語法錯誤，以檢視它是否被使用。 開啟標籤，請勿針對例項關閉標籤：
 

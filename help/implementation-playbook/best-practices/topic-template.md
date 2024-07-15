@@ -7,8 +7,8 @@ hide: true
 hidefromtoc: true
 source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 0%
+source-wordcount: '92'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 <!-- Example 1: -->
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -43,7 +43,7 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 使用Adobe Commerce 2.3.4版或更舊版本以及MariaDB 10.0版或更舊版本的雲端基礎結構上的Adobe Commerce。
 
-&lt;! — 業務型別：B2C和B2B — 僅在需要時指定/)—>
+&lt;！ — 業務型別：B2C和B2B — 僅在需要時指定/)—>
 
 ## 頁首……
 

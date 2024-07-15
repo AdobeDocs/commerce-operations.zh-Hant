@@ -22,7 +22,7 @@ ht-degree: 0%
 - [效能](../../assets/playbooks/checklists/performance.pptx)
 - [Commerce平台移轉](../../assets/playbooks/checklists/commerce-platform-migration.pptx)
 
-## 商務範本
+## Commerce範本
 
 按一下連結以下載範本：
 

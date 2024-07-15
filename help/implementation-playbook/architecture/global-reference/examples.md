@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 全球參考架構範例
 
-本主題說明組織網路的常見方式 [全球參考架構(GRA)](overview.md) 程式碼基底。 雖然 [單獨的套件](#option-1-separate-packages) 建議使用選項，某些情況下則需要以下所述的其他選項之一。
+本主題說明組織[全域參考架構(GRA)](overview.md)程式碼基底的常見方式。 雖然偏好使用[個別套件](#option-1-separate-packages)選項，但某些情況需要其他選項之一，如下所述。
 
 ## 定義
 
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 ## 選項1：個別套件
 
-另請參閱 [Composer專案結構](composer/project-structure.md) 設定此方法的最佳作法。
+請參閱[Composer專案結構](composer/project-structure.md)設定此方法的最佳實務。
 
 ![說明全域參考架構之個別套件選項的圖表](../../../assets/playbooks/gra-separate-packages.png)
 
-管理GRA Composer套件的最靈活方式是透過中繼套件。 中繼資料包含 `composer.json` 僅檔案，定義其他套裝軟體相依性。 使用建立中繼套件 [私人封裝者](https://packagist.com/) 存放庫。
+管理GRA Composer套件的最靈活方式是透過中繼套件。 中繼封裝僅包含`composer.json`檔案，這會定義其他封裝相依性。 使用[Private Packagist](https://packagist.com/)存放庫建立中繼套件。
 
-### 主要專案 `composer.json`
+### 主要專案`composer.json`
 
 ```json
 {
@@ -82,7 +82,7 @@ ht-degree: 0%
 }
 ```
 
-每個模組、語言套件、主題和程式庫都有自己的Git存放庫。 每個Git存放庫都會自動同步至私人封裝存放庫，並在那裡產生套件（只要有） `composer.json` Git存放庫根目錄中的檔案。
+每個模組、語言套件、主題和程式庫都有自己的Git存放庫。 每個Git存放庫都會自動同步至私人Packagist存放庫，並在Git存放庫的根目錄中只要有`composer.json`檔案就產生套件。
 
 ## 選項2：大量套件
 
@@ -109,7 +109,7 @@ ht-degree: 0%
             └── composer.json
 ```
 
-此 `composer.json` 檔案應如下所示：
+`composer.json`檔案應該如下所示：
 
 ```json
 {
@@ -140,23 +140,23 @@ ht-degree: 0%
 
 - `core`：包含Adobe Commerce核心安裝。 用於升級Adobe Commerce版本。
 - `GRA`：包含GRA程式碼。 所有GRA模組、語言套件、白色標籤主題和程式庫。
-- `brand/region`：每個品牌或地區有其專屬的存放庫，僅包含品牌或地區專屬的程式碼。
-- `release`：上述所有專案都會合併至此Git存放庫。 此處只允許合併認可。
+- `brand/region`：每個品牌或地區都有自己的存放庫，只有品牌或地區特定程式碼。
+- `release`：以上所有專案已合併至此Git存放庫。 此處只允許合併認可。
 
-![說明全域參考架構之分割Git選項的圖表](../../../assets/playbooks/gra-split-git.png)
+![說明全域參考架構分割Git選項的圖表](../../../assets/playbooks/gra-split-git.png)
 
 若要設定此選項：
 
-1. 在Git中建立四種存放庫型別。 建立 `core` 和 `GRA` 存放庫僅一次。 建立一個 `brand/region` 和一個 `release` 每個品牌的存放庫。
+1. 在Git中建立四種存放庫型別。 僅建立`core`和`GRA`存放庫一次。 為每個品牌建立一個`brand/region`和一個`release`存放庫。
 
    建議的存放庫名稱：
 
    - `m2-core`
    - `m2-gra`
-   - `m2-region-x`/`m2-brand-x` (例如， `m2-emea`/`m2-adobe`)
-   - `m2-release-region-x`/`m2-release-brand-x` (例如， `m2-release-emea`/`m2-release-adobe`)
+   - `m2-region-x`/`m2-brand-x` （例如，`m2-emea`/`m2-adobe`）
+   - `m2-release-region-x`/`m2-release-brand-x` （例如，`m2-release-emea`/`m2-release-adobe`）
 
-1. 建立 `release/` 目錄，並執行下列動作，為所有存放庫建立共用的Git記錄。
+1. 建立`release/`目錄並執行下列動作，為所有存放庫建立共用Git記錄。
 
    ```bash
    git init
@@ -173,7 +173,7 @@ ht-degree: 0%
    git push region-x master
    ```
 
-1. 複製每個存放庫，但 `core`，位於電腦的不同目錄中。
+1. 將每個存放庫（`core`除外）複製至您電腦的不同目錄中。
 
    ```bash
    git clone git@github.com:example-client/m2-release-brand-x.git
@@ -181,7 +181,7 @@ ht-degree: 0%
    git clone git@github.com:example-client/m2-gra.git
    ```
 
-1. [使用撰寫器安裝Adobe Commerce](../../../installation/composer.md). 移除 `.gitignore` 檔案，新增 `core` 遠端、新增及認可程式碼，以及推播。
+1. [安裝Adobe Commerce與撰寫器](../../../installation/composer.md)。 移除`.gitignore`檔案、新增`core`遠端、新增並認可程式碼，以及推播。
 
    ```bash
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition m2-core
@@ -196,18 +196,18 @@ ht-degree: 0%
    git push
    ```
 
-1. 在 `GRA` 存放庫，建立下列目錄：
+1. 在`GRA`存放庫中，建立下列目錄：
 
    - `app/code/`
    - `app/design/`
    - `app/i18n/`
    - `lib/`
 
-1. 新增程式碼。 移除 `.gitignore` 檔案、新增並認可程式碼、新增遠端並推播。
+1. 新增程式碼。 移除`.gitignore`檔案、新增並認可程式碼、新增遠端及推播。
 
-1. 在 `brand/region` 存放庫。 執行與中的相同的操作 `GRA` 並牢記檔案必須是唯一的。 您無法同時在此存放庫和 `GRA` 存放庫。
+1. 在`brand/region`存放庫中。 執行`GRA`存放庫中的相同操作，並記住檔案必須是唯一的。 您無法在此存放庫和`GRA`存放庫中同時包含相同檔案。
 
-1. 在 `release` 存放庫，套用合併。
+1. 在`release`存放庫中，套用合併。
 
    ```bash
    git clone git@github.com:example-client/m2-release-brand-x.git
@@ -220,9 +220,9 @@ ht-degree: 0%
    git push
    ```
 
-1. 移除 `.gitkeep` 檔案。
+1. 移除`.gitkeep`檔案。
 
-1. 部署 `release` 存放庫至生產、測試、QA和開發伺服器。 升級 `core`， `GRA`、和 `brand` 程式碼可以輕鬆執行下列命令：
+1. 將`release`存放庫部署到生產、測試、QA和開發伺服器。 升級`core`、`GRA`和`brand`程式碼同樣可以輕鬆執行下列命令：
 
    ```bash
    git fetch --all
@@ -255,15 +255,15 @@ monorepo選項可讓您在單一存放庫中輕鬆工作，同時提供使用套
 
 ## 不要混合策略
 
-不建議針對GRA套件和 `app/` 品牌或區域套件的目錄。
+不建議針對GRA套件使用Composer，針對品牌或地區套件使用`app/`目錄。
 
-您不僅獲得 _優點_ 但也是 _缺點_ 兩種方法的。 您應該挑選其中一項（Git或撰寫器），才能以最佳方式運作。
+您不僅取得兩種方法的&#x200B;_優點_，而且取得兩種方法的&#x200B;_缺點_。 您應該挑選其中一項（Git或撰寫器），才能以最佳方式運作。
 
 ## 要避免的解決方案
 
 - **表示GRA或品牌的模組命名慣例**
 
-  代表GRA或品牌的命名模組導致缺乏彈性。 請改用Composer中繼資料來判斷模組所屬的群組。 例如，對於客戶VF，封裝 `vf/meta-gra` 包含所有GRA套件的參考，且可使用進行安裝。 `composer require vf/meta-gra` 命令。 封裝 `vf/meta-kipling` 包含所有Kipling特定套件的參考，以及 `vf/meta-gra` 封裝。 模組已命名 `vf/module-sales` 和 `vf/module-sap` 例如。 此命名慣例可讓您在品牌和GRA狀態之間移動套件，且影響較低。
+  代表GRA或品牌的命名模組導致缺乏彈性。 請改用Composer中繼資料來判斷模組所屬的群組。 例如，對於客戶VF，套件`vf/meta-gra`包含所有GRA套件的參考，可以使用`composer require vf/meta-gra`命令進行安裝。 封裝`vf/meta-kipling`包含所有Kipling特定封裝和`vf/meta-gra`封裝的參考。 例如，模組名為`vf/module-sales`和`vf/module-sap`。 此命名慣例可讓您在品牌和GRA狀態之間移動套件，且影響較低。
 
 - **每個執行個體的Adobe Commerce核心升級**
 

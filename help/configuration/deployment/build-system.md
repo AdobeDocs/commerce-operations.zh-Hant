@@ -5,7 +5,7 @@ feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -14,23 +14,23 @@ ht-degree: 0%
 
 您可以有一個符合下列要求的組建系統：
 
-- 所有Commerce程式碼都在與開發和生產系統相同的存放庫中進行原始檔控制
-- 請確定下列所有專案皆為 _已包含_ 在原始檔控制中：
+- 所有Commerce程式碼都位於與開發和生產系統相同的存放庫中，並受原始檔控制
+- 請確定下列所有專案都包含在原始檔控制中&#x200B;_包含_：
 
    - `app/etc/config.php`
-   - `generated` 目錄（和子目錄）
-   - `pub/media` 目錄
-   - `pub/media/wysiwyg` 目錄（和子目錄）
-   - `pub/static` 目錄（和子目錄）
+   - `generated`目錄（和子目錄）
+   - `pub/media`目錄
+   - `pub/media/wysiwyg`目錄（和子目錄）
+   - `pub/static`目錄（和子目錄）
 
 - 必須安裝相容的PHP版本
 - 必須安裝Composer
-- 它有檔案系統所有權和許可權設定，如中所述 [您的開發、建置和生產系統的先決條件](../deployment/technical-details.md).
+- 它已經設定檔案系統擁有權和許可權，如[您的開發、組建和生產系統的先決條件](../deployment/technical-details.md)中所述。
 - 組建系統不需要安裝Commerce，但程式碼必須可供使用。
 
 >[!WARNING]
 >
->如果資料庫連線已包含在，則不需要資料庫連線 `config.php`；請參閱 [匯出設定](../cli/export-configuration.md). 否則，需要資料庫連線。
+>如果資料庫連線已包含在`config.php`中，則不需要資料庫連線；請參閱[匯出組態](../cli/export-configuration.md)。 否則，需要資料庫連線。
 
 >[!INFO]
 >
@@ -67,11 +67,11 @@ ht-degree: 0%
    mv composer.phar /usr/local/bin/composer
    ```
 
-如需其他安裝選項，請參閱 [Composer安裝檔案][composer].
+如需其他安裝選項，請參閱[撰寫器安裝檔案][composer]。
 
 ### 安裝PHP
 
-安裝PHP於 [CentOS] 或 [烏本圖].
+在[CentOS]或[Ubuntu]上安裝PHP。
 
 ### 設定組建系統
 
@@ -105,8 +105,8 @@ ht-degree: 0%
    chown -R commerce-username:apache .
    ```
 
-1. 如果您使用Git，請開啟 `.gitignore` 在文字編輯器中。
-1. 以下各行以 `#` 字元來註解：
+1. 如果您使用Git，請在文字編輯器中開啟`.gitignore`。
+1. 以下各行以`#`字元開頭，以便註解：
 
    ```conf
    # app/etc/config.php
@@ -117,22 +117,22 @@ ht-degree: 0%
    # pub/static/*
    ```
 
-1. 將變更儲存至 `.gitignore` 並退出文字編輯器。
+1. 將變更儲存至`.gitignore`並結束文字編輯器。
 1. 如果您使用Git，請使用下列命令來確認變更：
 
    ```bash
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   請參閱 [`.gitignore` 參考](../reference/config-reference-gitignore.md) 以取得詳細資訊。
+   如需詳細資訊，請參閱[`.gitignore`參考](../reference/config-reference-gitignore.md)。
 
-1. 建置系統應使用 [預設模式](../bootstrap/application-modes.md#default-mode) 或 [開發人員模式](../bootstrap/application-modes.md#developer-mode)：
+1. 組建系統應該使用[預設模式](../bootstrap/application-modes.md#default-mode)或[開發人員模式](../bootstrap/application-modes.md#developer-mode)：
 
    ```bash
    bin/magento deploy:mode:set <mode>
    ```
 
-   `<mode>` 為必要項。 它可以是 `default` 或 `developer`.
+   `<mode>`為必要項。 它可以是`default`或`developer`。
 
 <!-- Link Definitions -->
 

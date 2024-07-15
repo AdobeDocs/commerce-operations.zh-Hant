@@ -5,7 +5,7 @@ feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 0%
 
 ## 偵錯記錄
 
-依預設，Commerce會將寫入偵錯紀錄(`<install_directory>/var/log/debug.log`)處於預設或開發模式時，但處於生產模式時則不會。 使用 `bin/magento setup:config:set --enable-debug-logging` 命令來變更預設值。
+依預設，Commerce在預設或開發模式中寫入偵錯記錄(`<install_directory>/var/log/debug.log`)，但在生產模式中則不寫入。 使用`bin/magento setup:config:set --enable-debug-logging`命令變更預設值。
 
 >[!INFO]
 >
->自Commerce 2.3.1起，您將無法再使用 `bin/magento config:set dev/debug/debug_logging` 命令來啟用或停用目前模式的偵錯記錄。
+>自Commerce 2.3.1起，您無法再使用`bin/magento config:set dev/debug/debug_logging`命令來啟用或停用目前模式的偵錯記錄。
 
 ### 啟用偵錯記錄
 
-1. 使用 `setup:config:set` 命令以啟用目前模式的偵錯記錄。
+1. 使用`setup:config:set`命令啟用目前模式的偵錯記錄。
 
    ```bash
    bin/magento setup:config:set --enable-debug-logging=true
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ### 停用偵錯記錄
 
-1. 使用 `setup:config:set` 命令可停用目前模式的偵錯記錄。
+1. 使用`setup:config:set`命令停用目前模式的偵錯記錄。
 
    ```bash
    bin/magento setup:config:set --enable-debug-logging=false
@@ -52,11 +52,11 @@ ht-degree: 0%
 
 ## 資料庫記錄
 
-依預設，Commerce會將資料庫活動記錄檔寫入 `<install-dir>/var/debug/db.log` 檔案。
+依預設，Commerce會將資料庫活動記錄檔寫入`<install-dir>/var/debug/db.log`檔案。
 
 ### 啟用資料庫記錄
 
-1. 使用 `dev:query-log` 啟用或停用資料庫記錄的命令。
+1. 使用`dev:query-log`命令來啟用或停用資料庫記錄。
 
    ```bash
    bin/magento dev:query-log:enable
@@ -74,23 +74,23 @@ ht-degree: 0%
 
 ## Cron記錄
 
-在版本2.3.1中，Commerce現在會建立個別的 `cron` 記錄。 \
-Commerce最近讓cron記錄更詳細，這提供了更多資訊，但延長了 `system.log` 相當大。
-移動 `cron` 將資訊新增至專用記錄檔可讓兩個記錄檔更容易閱讀。
+隨著2.3.1版的發行，Commerce現在會建立個別的`cron`記錄。 \
+Commerce最近讓cron記錄更詳細，這提供了更多資訊，但大幅延長了`system.log`。
+將`cron`資訊移至專用記錄檔可讓兩個記錄檔更容易閱讀。
 
-依預設，Commerce會寫入 `cron` 資訊至 `<install-directory>/var/log/cron.log` 檔案。
+依預設，Commerce會將`cron`資訊寫入`<install-directory>/var/log/cron.log`檔案。
 
 ## Syslog記錄
 
-依預設，Commerce會寫入 _syslog_ 作業系統的記錄檔 `syslog` 檔案。
-截至Commerce 2.3.1，您必須使用 `magento` 啟用或停用syslog的命令。
+依預設，Commerce會將&#x200B;_syslog_&#x200B;記錄檔寫入作業系統`syslog`檔案。
+自Commerce 2.3.1起，您必須使用`magento`命令來啟用或停用syslog。
 管理員中的設定已移除。
 
 ### 啟用syslog記錄
 
-登入 `syslog` 預設為停用。
+預設會停用登入`syslog`。
 
-1. 使用 `setup:config:set` 命令以變更 `dev/syslog/syslog_logging` 資料庫值至 `true`.
+1. 使用`setup:config:set`命令將`dev/syslog/syslog_logging`資料庫值變更為`true`。
 
    ```bash
    bin/magento setup:config:set --enable-syslog-logging=true
@@ -104,7 +104,7 @@ Commerce最近讓cron記錄更詳細，這提供了更多資訊，但延長了 `
 
 ### 停用syslog記錄
 
-1. 使用 `setup:config:set` 命令以變更 `dev/syslog/syslog_logging` 資料庫值至 `false`.
+1. 使用`setup:config:set`命令將`dev/syslog/syslog_logging`資料庫值變更為`false`。
 
    ```bash
    bin/magento setup:config:set --enable-syslog-logging=false

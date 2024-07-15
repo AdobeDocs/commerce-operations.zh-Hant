@@ -9,19 +9,20 @@ ht-degree: 0%
 
 ---
 
-# 使用Adobe Commerce、Commerce Integration Framework和Adobe Experience Manager大規模提供體驗
+# 使用Adobe Commerce、Commerce integration framework和Adobe Experience Manager大規模提供體驗
 
 建議使用CIF作為聯結器的AEM與Adobe Commerce之間的整合模式，是讓AEM擁有展示層（「玻璃」）和Adobe Commerce，將商業後端作為「無頭式」後端來提供。 此整合方法利用了每個應用程式的優勢：AEM的編寫、個人化和全通路功能，以及Adobe Commerce的電子商務操作。
 
 在AEM/CIF/Adobe Commerce環境中，電子商務網站的訪客將最先到達AEM。 AEM將檢查其Dispatcher快取中是否有請求的頁面可用。 如果頁面存在，則會將此快取頁面提供給訪客，不需要進一步處理。 如果Dispatcher不包含請求的頁面或頁面已過期，則Dispatcher會請求AEM發佈者建立頁面，發佈者會呼叫Adobe Commerce以取得電子商務資料，並視需要建立頁面。 隨後構建的頁面會傳遞給Dispatcher以提供給訪客，然後會進行快取，以防止其他訪客後續對相同頁面提出請求時，需要將進一步的載入放置到伺服器上。
 
-![AdobeExperience Manager和Adobe Commerce架構概觀圖表](../assets/commerce-at-scale/overview.png)
+![AdobeExperience Manager與Adobe Commerce架構的概觀圖表](../assets/commerce-at-scale/overview.png)
 
-AEM/CIF/Adobe Commerce模式中可以使用伺服器端轉譯和使用者端轉譯的組合：伺服器端轉譯可提供靜態內容，而使用者端轉譯則可從使用者瀏覽器內直接呼叫特定元件的Adobe Commerce，提供經常變更或個人動態內容。
+AEM/CIF/Adobe Commerce模式中可以使用伺服器端轉譯和使用者端轉譯的組合：伺服器端轉譯可直接呼叫特定元件的Adobe Commerce，提供靜態內容和使用者端轉譯，提供經常變更或個人動態內容
+從使用者的瀏覽器中。
 
 在以下的範例中可以看到AEM電子商務店面範例上，產品詳細資料頁面中不同元件的範例：
 
-![AdobeExperience Manager和Adobe Commerce架構概觀圖表](../assets/commerce-at-scale/product-details-page.svg)
+![AdobeExperience Manager與Adobe Commerce架構的概觀圖表](../assets/commerce-at-scale/product-details-page.svg)
 
 ## 伺服器端轉譯
 

@@ -18,17 +18,17 @@ ht-degree: 1%
 
 本主題說明如何透過下列方式開始使用分割資料庫解決方案：
 
-1. 使用單一Master資料庫安裝Adobe Commerce （已命名） `magento`)
-1. 為簽出和OMS建立另外兩個主資料庫（已命名） `magento_quote` 和 `magento_sales`)
+1. 使用單一Master資料庫（名為`magento`）安裝Adobe Commerce
+1. 正在建立兩個額外的主資料庫，以用於簽出和OMS （名為`magento_quote`和`magento_sales`）
 1. 設定Adobe Commerce使用結帳與銷售資料庫
 
 >[!INFO]
 >
->本指南假設所有三個資料庫與Commerce應用程式位於相同的主機上，且已將它們命名 `magento`， `magento_quote`、和 `magento_sales`. 不過，您可以自行選擇要在哪裡尋找資料庫以及命名資料庫的內容。 我們希望我們的範例能讓您更容易按照指示操作。
+>本指南假設所有三個資料庫與Commerce應用程式位於相同的主機上，且分別命名為`magento`、`magento_quote`和`magento_sales`。 不過，您可以自行選擇要在哪裡尋找資料庫以及命名資料庫的內容。 我們希望我們的範例能讓您更容易按照指示操作。
 
 ## 安裝Adobe Commerce軟體
 
-安裝Adobe Commerce軟體後，您可以隨時啟用分割資料庫；換言之，您可以將分割資料庫新增至已具有結帳與訂購資料的Adobe Commerce系統。 使用Adobe Commerce README中的指示或 [安裝指南](../../installation/overview.md) 使用單一master資料庫安裝Adobe Commerce軟體。
+安裝Adobe Commerce軟體後，您可以隨時啟用分割資料庫；換言之，您可以將分割資料庫新增至已具有結帳與訂購資料的Adobe Commerce系統。 使用Adobe Commerce README或[安裝指南](../../installation/overview.md)中的指示，使用單一master資料庫安裝Adobe Commerce軟體。
 
 ## 設定其他主要資料庫
 
@@ -41,8 +41,8 @@ ht-degree: 1%
    mysql -u root -p
    ```
 
-1. 輸入MySQL `root` 提示時的使用者密碼。
-1. 按照顯示的順序輸入以下命令，以建立名為的資料庫執行處理 `magento_quote` 和 `magento_sales` 相同的使用者名稱和密碼：
+1. 出現提示時輸入MySQL `root`使用者的密碼。
+1. 按照顯示的順序輸入以下命令，以建立具有相同使用者名稱和密碼的名為`magento_quote`和`magento_sales`的資料庫執行個體：
 
    ```shell
    create database magento_quote;
@@ -60,7 +60,7 @@ ht-degree: 1%
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. 輸入 `exit` 結束命令提示字元。
+1. 輸入`exit`以結束命令提示字元。
 
 1. 驗證資料庫，一次一個：
 
@@ -86,13 +86,13 @@ ht-degree: 1%
 
    如果顯示MySQL監督器，表示您已正確建立資料庫。 如果顯示錯誤，請重複上述命令。
 
-## 設定Commerce以使用主要資料庫
+## 設定Commerce以使用主資料庫
 
-設定總共三個主要資料庫後，請使用命令列設定Commerce使用它們。 （此指令會設定資料庫連線，並將表格分散到主要資料庫之間。）
+在設定總計三個主要資料庫之後，請使用命令列來設定Commerce以使用這些資料庫。 （此指令會設定資料庫連線，並將表格分散到主要資料庫之間。）
 
 ### 首要步驟
 
-另請參閱 [正在執行命令](../cli/config-cli.md#running-commands) 以登入並執行CLI命令。
+請參閱[執行命令](../cli/config-cli.md#running-commands)以登入並執行CLI命令。
 
 ### 設定簽出資料庫
 

@@ -5,7 +5,7 @@ exl-id: 7b1348b5-d379-48c1-9e9d-71a8d02b2ca4
 feature: Best Practices, Search
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,11 @@ SEO策略包括：
 
 - **關鍵字搜尋** — 客戶用來搜尋的關鍵字
 
-- **網站架構** — 對關鍵字進行研究
+- **網站架構** — 已針對關鍵字完成研究
 
-- **SEO （技術）** — 確保SEO對網站進行編目
+- **SEO （技術）** — 確保SEO編目網站
 
-- **頁面上的SEO** — 中繼標籤和內容可用來吸引客戶
+- **頁面**&#x200B;上的SEO — 中繼標籤和內容用於吸引客戶
 
 - **Analytics** — 用來追蹤SEO的工具，例如Google Analytics
 

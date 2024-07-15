@@ -27,7 +27,7 @@ ht-degree: 0%
           <td>1.5+</td>
           <td>1.5+</td>
           <td>
-              <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">作曲者</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">撰寫者</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">發行說明</a><br/>
           </td>
       </tr>
@@ -38,7 +38,7 @@ ht-degree: 0%
           <td>1.3+</td>
           <td>-</td>
           <td>
-              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">作曲者</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">撰寫者</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">發行說明</a><br/>
           </td>
       </tr>
@@ -49,7 +49,7 @@ ht-degree: 0%
           <td>1.2+</td>
           <td>1.2+</td>
           <td>
-              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">作曲者</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">撰寫者</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">發行說明</a><br/>
           </td>
       </tr>
@@ -60,7 +60,7 @@ ht-degree: 0%
           <td>1.3.4</td>
           <td>1.3.3</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html">作曲者</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html">撰寫者</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">發行說明</a><br/>
           </td>
       </tr>
@@ -71,7 +71,7 @@ ht-degree: 0%
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">市集</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">發行說明</a><br/>
           </td>
       </tr>

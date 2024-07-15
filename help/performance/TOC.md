@@ -21,8 +21,8 @@ ht-degree: 4%
 - [結帳程式](high-throughput-order-processing.md)
 - [設定](configuration.md)
 - [部署流程](deployment-flow.md)
-- 進階概念 {#concepts}
+- 進階概念{#concepts}
    - [進階設定](advanced-setup.md)
-   - [進階 [!DNL JavaScript] 套裝](advanced-js-bundling.md)
+   - [進階 [!DNL JavaScript] 組合](advanced-js-bundling.md)
    - [GraphQL應用程式伺服器](application-server.md)
 - [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

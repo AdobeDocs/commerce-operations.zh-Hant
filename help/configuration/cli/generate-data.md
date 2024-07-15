@@ -14,17 +14,17 @@ ht-degree: 9%
 
 ## 設定檔
 
-您可以調整您使用的建立資料量 _設定檔_ （小、中、大和特大）。 設定檔位於 `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` 目錄。
+您可以使用&#x200B;_設定檔_ （小、中、大和特大）調整您建立的資料量。 設定檔位於`<magento_root>/setup/performance-toolkit/profiles/<ce|ee>`目錄中。
 
 例如， `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-下圖顯示如何使用 _小_ 設定檔：
+下圖顯示如何使用&#x200B;_小型_&#x200B;設定檔在店面中顯示產品：
 
-![使用產生的資料取樣店面](../../assets/configuration/generate-data.png)
+![產生資料的店面範例](../../assets/configuration/generate-data.png)
 
 下表提供有關資料產生器設定檔的詳細資訊：小、中、大和特大。
 
-| 引數 | 小型設定檔 | 中等設定檔 | 中等多網站設定檔 | 大型設定檔 | 超大型設定檔 |
+| 引數 | 小型設定檔 | Medium設定檔 | Medium多網站設定檔 | 大型設定檔 | 超大型設定檔 |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
@@ -50,9 +50,9 @@ ht-degree: 9%
 >
 >在執行資料產生器之前，請停用伺服器上執行的所有cron工作。 停用cron作業可防止資料產生器執行與作用中cron作業衝突的動作，並避免不必要的錯誤。
 >
->如果您打算使用實作事件 [!DNL Adobe I/O Events for Adobe Commerce] 測試效能時，請先執行此命令再進行訂閱 [事件](https://developer.adobe.com/commerce/extensibility/events/). 先訂閱事件可能會導致錯誤。
+>如果您要在測試效能時使用[!DNL Adobe I/O Events for Adobe Commerce]實作事件，請在訂閱[個事件](https://developer.adobe.com/commerce/extensibility/events/)之前執行此命令。 先訂閱事件可能會導致錯誤。
 
-依照本節所述執行命令。 命令執行後，您必須 [重新索引所有索引子](../cli/manage-indexers.md).
+依照本節所述執行命令。 命令執行後，您必須[重新索引所有索引子](../cli/manage-indexers.md)。
 
 命令選項：
 
@@ -60,7 +60,7 @@ ht-degree: 9%
 bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
-位置 `<path-to-profile>` 指定設定檔的絕對檔案系統路徑和名稱。
+其中`<path-to-profile>`指定設定檔的絕對檔案系統路徑和名稱。
 
 例如，
 
@@ -125,7 +125,7 @@ Generating simple products...  done in <time>
 
 ### 套裝產品
 
-產生套件組合產品。 產生的束選取範圍不會單獨顯示在目錄中。 產品會依類別和網站均勻分佈。 如果  `assign_entities_to_all_websites` 從設定檔設定為 `1`. 產品會指派給所有網站。
+產生套件組合產品。 產生的束選取範圍不會單獨顯示在目錄中。 產品會依類別和網站均勻分佈。 如果設定檔中的`assign_entities_to_all_websites`設定為`1`。 產品會指派給所有網站。
 
 XML設定檔節點：
 
@@ -163,7 +163,7 @@ XML設定檔節點：
 
 ### 類別
 
-產生類別。 如果 `assign_entities_to_all_websites` 設為 `0`，所有類別會針對每個根類別均勻分佈；否則，所有類別都會指派給一個根類別。
+產生類別。 如果`assign_entities_to_all_websites`設為`0`，則所有類別會均勻分佈於每個根類別；否則，所有類別都會指派給一個根類別。
 
 XML設定檔節點：
 
@@ -195,7 +195,7 @@ XML設定檔節點：
 
 ### 可設定的產品
 
-產生可設定的產品。 產生的可設定選項不會在目錄中個別顯示。 產品會依類別和網站均勻分佈。 如果 `assign_entities_to_all_websites` 設為 `1`，產品會指派至所有網站。
+產生可設定的產品。 產生的可設定選項不會在目錄中個別顯示。 產品會依類別和網站均勻分佈。 如果`assign_entities_to_all_websites`設定為`1`，則會將產品指派給所有網站。
 
 支援下列XML節點格式：
 
@@ -380,9 +380,9 @@ XML設定檔節點：
 
 ### 簡單產品
 
-產生簡單產品。 產品會根據預設和預先定義的屬性集進行分配。 如果在設定檔中指定額外的屬性集為： `<product_attribute_sets>{int}</product_attribute_sets>`，產品也會根據其他屬性集分發。
+產生簡單產品。 產品會根據預設和預先定義的屬性集進行分配。 如果在設定檔中指定額外的屬性集為： `<product_attribute_sets>{int}</product_attribute_sets>`，產品也會依額外的屬性集分配。
 
-產品會依類別和網站均勻分佈。 如果 `assign_entities_to_all_websites` 設為 `1`，產品會指派至所有網站。
+產品會依類別和網站均勻分佈。 如果`assign_entities_to_all_websites`設定為`1`，則會將產品指派給所有網站。
 
 XML設定檔節點：
 
@@ -402,7 +402,7 @@ XML設定檔節點：
 
 ### 存放區群組
 
-產生存放區群組(在管理員中稱為 _商店_)。 商店群組通常在網站之間分配。
+產生商店群組（在管理員中稱為&#x200B;_商店_）。 商店群組通常在網站之間分配。
 
 XML設定檔節點：
 
@@ -436,14 +436,14 @@ XML設定檔節點：
 
 - `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml` — 預設屬性集
 
-- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml` — 客戶設定
+- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml` — 客戶組態
 
 - `<Commerce root dir>/setup/performance-toolkit/config/description.xml` — 產品完整說明設定
 
 - `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml` — 產品簡短說明設定
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` — 產品簡短說明和完整說明的設定。 提供此舊版實作是為了回溯相容性。
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` — 產品的設定簡短且完整說明。 提供此舊版實作是為了回溯相容性。
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` — 提供簡短的完整說明的搜尋詞數目
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` — 搜尋字詞數量較少，提供簡短且完整的說明
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` — 在簡短和完整說明中使用的搜尋字詞數目較多。
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` — 較多的搜尋字詞，以用作簡短且完整的說明。

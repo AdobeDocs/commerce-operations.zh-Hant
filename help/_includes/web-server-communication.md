@@ -7,13 +7,13 @@ ht-degree: 0%
 ---
 # 安全的Web伺服器通訊
 
-Elasticsearch本主題說明如何結合使用傳輸層安全性(TLS)加密與 [HTTP基本驗證](https://datatracker.ietf.org/doc/html/rfc2617). 您也可以選擇設定其他型別的驗證；我們提供該資訊的參考。
+此主題討論使用傳輸層安全性(TLS)加密與[HTTP基本驗證](https://datatracker.ietf.org/doc/html/rfc2617)的組合，保護網頁伺服器與搜尋引擎(Elasticsearch或OpenSearch)之間通訊安全的範例。 您也可以選擇設定其他型別的驗證；我們提供該資訊的參考。
 
-(舊稱Secure Sockets Layer (SSL)，經常與TLS互換使用。 在本主題中，我們稱為 *TLS*.)
+(舊稱Secure Sockets Layer (SSL)，經常與TLS互換使用。 在此主題中，我們稱為&#x200B;*TLS*。)
 
 >[!WARNING]
 >
->除非另有說明，否則本主題中的所有命令都必須以使用者身分輸入， `root` 許可權。
+>除非另有說明，否則此主題中的所有命令都必須以具有`root`許可權的使用者身分輸入。
 
 ## Recommendations
 
@@ -42,5 +42,5 @@ Elasticsearch本主題說明如何結合使用傳輸層安全性(TLS)加密與 [
 * Nginx
 
    * [Nginx SSL終止](https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/)
-   * [如何在Nginx for Ubuntu 14.04上建立SSL憑證（Digitalocean教學課程）](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
+   * [如何在Nginx上為Ubuntu 14.04建立SSL憑證（Digitalocean教學課程）](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
    * [Nginx SSL憑證安裝(digicert)](https://www.digicert.com/ssl-certificate-installation-nginx.htm)

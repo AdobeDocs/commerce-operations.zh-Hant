@@ -5,7 +5,7 @@ exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 口碑是最好的行銷策略之一。 例如，傳送轉介電子郵件給現有客戶。 例如，「推薦一位朋友並獲得$10！」 轉介電子郵件會促使客戶以有機方式散佈訊息，進而協助您贏得更多客戶。
 
-![反向連結行銷電子郵件範例](../../assets/playbooks/marketing-email-referral.png)
+![轉介行銷電子郵件範例](../../assets/playbooks/marketing-email-referral.png)
 
 ## 折扣電子郵件
 

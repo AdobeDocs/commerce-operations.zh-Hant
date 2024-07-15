@@ -40,7 +40,7 @@ ht-degree: 0%
 
 商家可以從「管理員」輸入客戶、地址及付款資訊，以建立客戶或訂單。
 
-![後端資料進入點](../../assets/security-compliance/backend-data-entry-points.svg)
+![後端資料輸入點](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### 後端資料存取點
 
@@ -54,17 +54,17 @@ Magento1會將客戶資訊儲存在客戶、銷售和其他資料庫表格中。
 
 ### 客戶資料
 
-Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_entity` 表格。 這兩個表格都有數個參考表格，可包含自訂客戶屬性。
+Magento1會將客戶資訊儲存在`customer_entity`和`customer_address_entity`資料表中。 這兩個表格都有數個參考表格，可包含自訂客戶屬性。
 
-#### `customer_entity` 和參考表格
+#### `customer_entity`和參考資料表
 
-下列欄位位於 `customer_entity`表格包含客戶資訊：
+`customer_entity`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | --- | --- |
 | `email` | varchar(255) |
 
-這些表格參考 `customer_entity` 並且可以包含自訂客戶屬性：
+這些資料表參考`customer_entity`，可以包含自訂客戶屬性：
 
 | 表格 | 欄 | 資料型別 |
 | --- | --- | --- |
@@ -74,9 +74,9 @@ Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_enti
 | `customer_entity_text` | `value` | 文字 |
 | `customer_entity_varchar` | `value` | varchar(255) |
 
-#### `customer_address_entity` 和參考表格
+#### `customer_address_entity`和參考資料表
 
-下清單格參考 `customer_address_entity` 並且可以包含自訂客戶屬性：
+下清單格參考`customer_address_entity`，可包含自訂客戶屬性：
 
 | 表格 | 欄 | 資料型別 |
 | --- | --- | --- |
@@ -88,11 +88,11 @@ Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_enti
 
 ### 訂單資料
 
-此 `sales_flat_order` 和相關表格包含客戶名稱、帳單和送貨地址及相關資訊。
+`sales_flat_order`和相關表格包含客戶名稱、帳單和送貨地址及相關資訊。
 
-#### `sales_flat_order` 表格
+#### `sales_flat_order`資料表
 
-下列欄位位於 `sales_order` 表格包含客戶資訊：
+`sales_order`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | --- | --- |
@@ -107,9 +107,9 @@ Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_enti
 | `customer_taxvat` | varchar(32) |
 | `remote_ip` | varchar(32) |
 
-#### `sales_flat_order_address` 表格
+#### `sales_flat_order_address`資料表
 
-此 `sales_flat_order_address` 表格包含客戶的地址。
+`sales_flat_order_address`表格包含客戶的地址。
 
 | 欄 | 資料型別 |
 | --- | --- |
@@ -129,9 +129,9 @@ Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_enti
 | `company` | varchar(255) |
 | `vat_id` | 文字 |
 
-#### `sales_flat_order_grid` 表格
+#### `sales_flat_order_grid`資料表
 
-下列欄位位於 `sales_flat_order_grid` 表格包含客戶資訊：
+`sales_flat_order_grid`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | --- | --- |
@@ -139,9 +139,9 @@ Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_enti
 | `shipping_name` | varchar(255) |
 | `billing_name` | varchar(255) |
 
-#### `sales_flat_order_payment` 表格
+#### `sales_flat_order_payment`資料表
 
-下列欄位位於 `sales_flat_order_payment` 表格包含客戶資訊：
+`sales_flat_order_payment`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | --- | --- |
@@ -159,9 +159,9 @@ Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_enti
 
 引號包含客戶名稱、電子郵件、地址及相關資訊。
 
-#### `sales_flat_quote` 表格
+#### `sales_flat_quote`資料表
 
-下列欄位位於 `sales_flat_quote` 表格包含客戶資訊：
+`sales_flat_quote`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | --- | --- |
@@ -179,9 +179,9 @@ Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_enti
 | `remote_ip` | varchar(255) |
 | `customer_gender` | varchar(255) |
 
-#### `sales_flat_quote_address` 表格
+#### `sales_flat_quote_address`資料表
 
-下列欄位位於 `sales_flat_quote_address` 表格包含客戶資訊：
+`sales_flat_quote_address`表格中的下列資料行包含客戶資訊：
 
 | 欄 | 資料型別 |
 | --- | --- |
@@ -198,9 +198,9 @@ Magento1會將客戶資訊儲存在 `customer_entity` 和 `customer_address_enti
 | `postcode` | varchar(255) |
 | `fax` | varchar(255) |
 
-#### `sales_flat_quote_payment` 表格
+#### `sales_flat_quote_payment`資料表
 
-此 `sales_flat_quote_payment` 表格中包含信用卡資訊和其他交易資訊。
+`sales_flat_quote_payment`表格包含信用卡資訊和其他交易資訊。
 
 | 欄 | 資料型別 |
 | --- | --- |

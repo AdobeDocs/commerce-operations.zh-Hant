@@ -5,24 +5,24 @@ feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # 一般和進階設定路徑參考
 
-本主題列出一般和進階組態路徑，以及 _非_ [敏感值和系統特定值](config-reference-sens.md). 此 [`magento app:config:dump` 命令](../cli/export-configuration.md) 將這些值寫入共用組態檔， `app/etc/config.php`，這應該是在原始檔控制中。
+此主題列出一般和進階設定路徑，_不是_ [敏感和系統特定值](config-reference-sens.md)。 [`magento app:config:dump`命令](../cli/export-configuration.md)將這些值寫入到共用組態檔`app/etc/config.php`，它應該是在原始檔控制中。
 
-若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱 [使用環境變數覆寫組態設定](override-config-settings.md#environment-variables).
+若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱[使用環境變數覆寫組態設定](override-config-settings.md#environment-variables)。
 
 ## 一般類別
 
-本節列出「管理員」底下選項可用的變數名稱和設定路徑。 **商店** >設定> **設定** > **一般**.
+本節列出&#x200B;**商店** >設定> **設定** > **一般**&#x200B;底下「管理員」中選項的變數名稱和設定路徑。
 
 ### 一般路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** >一般> **一般**.
+這些設定值可在&#x200B;**商店** >設定> **設定** >一般> **一般**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ | 敏感？ |
 |--------------|--------------|--------------|--------------|
@@ -38,11 +38,11 @@ ht-degree: 0%
 | 重量單位 | `general/locale/weight_unit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 一週的第一天 | `general/locale/firstday` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 週末 | `general/locale/weekend` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
-| 存取限制 | `general/restriction/is_active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) | |
-| 限制模式 | `general/restriction/mode` | ![僅限商務](/help/assets/configuration/cloud-ee.png) | |
-| 啟動頁面 | `general/restriction/http_redirect` | ![僅限商務](/help/assets/configuration/cloud-ee.png) | |
-| 登陸頁面 | `general/restriction/cms_page` | ![僅限商務](/help/assets/configuration/cloud-ee.png) | |
-| HTTP回應 | `general/restriction/http_status` | ![僅限商務](/help/assets/configuration/cloud-ee.png) | |
+| 存取限制 | `general/restriction/is_active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) | |
+| 限制模式 | `general/restriction/mode` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) | |
+| 啟動頁面 | `general/restriction/http_redirect` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) | |
+| 登陸頁面 | `general/restriction/cms_page` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) | |
+| HTTP回應 | `general/restriction/http_status` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) | |
 | 存放區名稱 | `general/store_information/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 商店電話號碼 | `general/store_information/phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 商店營業時間 | `general/store_information/hours` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ### Web路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **一般** > **Web**.
+這些組態值可在&#x200B;**商店** >設定> **組態** > **一般** > **網頁**&#x200B;的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 ### 貨幣設定路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **一般** > **貨幣設定**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **一般** > **貨幣設定**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -116,7 +116,7 @@ ht-degree: 0%
 
 ### 聯絡人路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **一般** > **連絡人**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **一般** > **連絡人**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -129,7 +129,7 @@ ht-degree: 0%
 
 ### 報表路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **一般** > **報表**.
+這些設定值可在&#x200B;**存放區** >設定> **設定** > **一般** > **報表**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -140,7 +140,7 @@ ht-degree: 0%
 
 ### 內容管理路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **一般** > **內容管理**.
+這些設定值可在&#x200B;**存放區** >設定> **設定** > **一般** > **內容管理**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 ### New Relic報告路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **一般** > **New Relic報告**.
+這些設定值可在&#x200B;**存放區** >設定> **設定** > **一般** > **New Relic報告**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -166,11 +166,11 @@ ht-degree: 0%
 
 ## 進階類別
 
-本節列出「管理員」中選項可用的變數名稱和設定路徑，位於 **商店** >設定> **設定** > **進階**.
+此區段列出&#x200B;**商店** >設定> **設定** > **進階**&#x200B;底下「管理員」中選項可用的變數名稱和設定路徑。
 
 ### 管理員路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **進階** > **管理員**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **進階** > **管理員**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -208,7 +208,7 @@ ht-degree: 0%
 
 ### 系統路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **進階** > **系統**.
+這些組態值可在&#x200B;**存放區** >設定> **組態** > **進階** > **系統**&#x200B;的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -229,20 +229,20 @@ ht-degree: 0%
 | 歷史記錄清理間隔 | `system/cron/default/history_cleanup_every` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 成功歷程記錄期限 | `system/cron/default/history_success_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 失敗歷程記錄存留期 | `system/cron/default/history_failure_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 產生排程間隔 | `system/cron/staging/schedule_generate_every` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 提前排程 | `system/cron/staging/schedule_ahead_for` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 如果未於內執行，則已錯過 | `system/cron/staging/schedule_lifetime` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 歷史記錄清理間隔 | `system/cron/staging/history_cleanup_every` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 成功歷程記錄期限 | `system/cron/staging/history_success_lifetime` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 失敗歷程記錄存留期 | `system/cron/staging/history_failure_lifetime` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 使用個別程式 | `system/cron/staging/use_separate_process` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 產生排程間隔 | `system/cron/catalog/event/schedule_generate_every` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 提前排程 | `system/cron/catalog/event/schedule_ahead_for` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 如果未於內執行，則已錯過 | `system/cron/catalog/event/schedule_lifetime` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 歷史記錄清理間隔 | `system/cron/catalog/event/history_cleanup_every` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 成功歷程記錄期限 | `system/cron/catalog/event/history_success_lifetime` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 失敗歷程記錄存留期 | `system/cron/catalog/event/history_failure_lifetime` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 使用個別程式 | `system/cron/catalog/event/use_separate_process` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 產生排程間隔 | `system/cron/staging/schedule_generate_every` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 提前排程 | `system/cron/staging/schedule_ahead_for` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 如果未於內執行，則已錯過 | `system/cron/staging/schedule_lifetime` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 歷史記錄清理間隔 | `system/cron/staging/history_cleanup_every` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 成功歷程記錄期限 | `system/cron/staging/history_success_lifetime` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 失敗歷程記錄存留期 | `system/cron/staging/history_failure_lifetime` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 使用個別程式 | `system/cron/staging/use_separate_process` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 產生排程間隔 | `system/cron/catalog/event/schedule_generate_every` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 提前排程 | `system/cron/catalog/event/schedule_ahead_for` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 如果未於內執行，則已錯過 | `system/cron/catalog/event/schedule_lifetime` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 歷史記錄清理間隔 | `system/cron/catalog/event/history_cleanup_every` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 成功歷程記錄期限 | `system/cron/catalog/event/history_success_lifetime` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 失敗歷程記錄存留期 | `system/cron/catalog/event/history_failure_lifetime` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 使用個別程式 | `system/cron/catalog/event/use_separate_process` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 使用個別程式 | `system/cron/default/use_separate_process` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 停用電子郵件通訊 | `system/smtp/disable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 設定傳迴路徑 | `system/smtp/set_return_path` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -264,7 +264,7 @@ ht-degree: 0%
 | 匯出設定 | `system/full_page_cache/varnish/export_button_version4` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 記錄中儲存的天數 | `system/bulk/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 媒體儲存 | `system/media_storage_configuration/media_storage` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 選取媒體資料庫 | `system/media_storage_configuration/media_database` （Commerce 2.4.3已棄用） | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 選取媒體資料庫 | `system/media_storage_configuration/media_database` (在Commerce 2.4.3中已過時) | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 環境更新時間 | `system/media_storage_configuration/configuration_update_time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 儲存檔案，天 | `system/magento_scheduled_import_export_log/save_days` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 啟用排定的檔案記錄清除 | `system/magento_scheduled_import_export_log/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -276,7 +276,7 @@ ht-degree: 0%
 
 ### 開發人員路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **進階** > **開發人員**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **進階** > **開發人員**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -291,8 +291,8 @@ ht-degree: 0%
 | 已針對店面啟用 | `dev/translate_inline/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 為管理員啟用 | `dev/translate_inline/active_admin` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 合併JavaScript檔案 | `dev/js/merge_files` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 啟用JavaScript套裝 | `dev/js/enable_js_bundling` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 縮制JavaScript檔案 | `dev/js/minify_files` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 啟用JavaScript套件組合 | `dev/js/enable_js_bundling` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 簡化JavaScript檔案 | `dev/js/minify_files` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 翻譯策略 | `dev/js/translate_strategy` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 將JS錯誤記錄到工作階段存放區 | `dev/js/session_storage_logging` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 合併CSS檔案 | `dev/css/merge_css_files` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

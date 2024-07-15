@@ -6,14 +6,14 @@ badge: label="由Atwix提供" type="Informative" url="https://www.atwix.com/" to
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
 
 # 寫入自訂記錄檔
 
-此 `Magento\Framework\Logger` 模組包含下列處理常式類別：
+`Magento\Framework\Logger`模組包含下列處理常式類別：
 
 | 類別 | 記錄檔 |
 | ----- | -------- |
@@ -23,18 +23,18 @@ ht-degree: 0%
 | [Magento\Framework\Logger\Handler\Syslog][syslog] | - |
 | [Magento\Framework\Logger\Handler\System][system] | `/var/log/system.log` |
 
-您可在以下連結中找到它們： `lib/internal/Magento/Framework/Logger/Handler` 目錄。
+您可以在`lib/internal/Magento/Framework/Logger/Handler`目錄中找到它們。
 
 您可以使用下列其中一種方法來登入自訂檔案：
 
-- 在中設定自訂記錄檔 `di.xml`
+- 在`di.xml`中設定自訂記錄檔
 - 在自訂記錄器處理常式類別中設定自訂檔案
 
-## 在中設定自訂記錄檔 `di.xml`
+## 在`di.xml`中設定自訂記錄檔
 
-此範例說明如何使用 [虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 以記錄 `debug` 將訊息放入自訂記錄檔而非標準記錄檔 `/var/log/debug.log`.
+此範例說明如何使用[虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)將`debug`訊息記錄到自訂記錄檔而非標準`/var/log/debug.log`中。
 
-1. 在 `di.xml` 模組的檔案，將自訂記錄檔定義為 [虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
+1. 在您的模組的`di.xml`檔案中，將自訂記錄檔定義為[虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)。
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -44,9 +44,9 @@ ht-degree: 0%
    </virtualType>
    ```
 
-   此 `name` 值 `Magento\Payment\Model\Method\MyCustomDebug` 必須是唯一的。
+   `Magento\Payment\Model\Method\MyCustomDebug`的`name`值必須是唯一的。
 
-1. 在另一個中定義處理常式 [虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 具有唯一 `name`：
+1. 在另一具有唯一`name`的[虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)中定義處理常式：
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. 插入 `MyCustomLogger` [虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 在 `Magento\Payment\Model\Method\Logger` 物件：
+1. 在`Magento\Payment\Model\Method\Logger`物件中插入`MyCustomLogger` [虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)：
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -68,7 +68,7 @@ ht-degree: 0%
    </type>
    ```
 
-1. 虛擬類別 `Magento\Payment\Model\Method\MyCustomDebug` 會插入至 `debug` 的處理常式 `$logger` 中的屬性 `Magento\Payment\Model\Method\Logger` 類別。
+1. 虛擬類別`Magento\Payment\Model\Method\MyCustomDebug`已插入`Magento\Payment\Model\Method\Logger`類別中`$logger`屬性的`debug`處理常式。
 
    ```xml
    ...
@@ -77,13 +77,13 @@ ht-degree: 0%
    </argument>
    ```
 
-例外狀況訊息會記錄到 `/var/log/payment.log` 檔案。
+例外狀況訊息已記錄到`/var/log/payment.log`檔案中。
 
 ## 在記錄器處理常式類別中設定自訂記錄檔
 
-此範例顯示如何使用自訂記錄器處理常式類別來記錄 `error` 訊息放入特定記錄檔。
+此範例說明如何使用自訂記錄器處理常式類別將`error`個訊息記錄到特定記錄檔中。
 
-1. 建立記錄資料的類別。 在此範例中，類別定義於 `app/code/Vendor/ModuleName/Logger/Handler/ErrorHandler.php`.
+1. 建立記錄資料的類別。 在此範例中，類別是在`app/code/Vendor/ModuleName/Logger/Handler/ErrorHandler.php`中定義。
 
    ```php
    <?php
@@ -117,7 +117,7 @@ ht-degree: 0%
    }
    ```
 
-1. 將此類別的處理常式定義為 [虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) 在模組的 `di.xml` 檔案。
+1. 在模組的`di.xml`檔案中，將此類別的處理常式定義為[虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)。
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -129,9 +129,9 @@ ht-degree: 0%
    </virtualType>
    ```
 
-   `MyCustomLogger` 是唯一識別碼。
+   `MyCustomLogger`是唯一識別碼。
 
-1. 在 `type` 定義，指定插入自訂記錄器處理常式的類別名稱。 使用上一個步驟的虛擬型別名稱作為此型別的引數。
+1. 在`type`定義中，指定插入自訂記錄器處理常式的類別名稱。 使用上一個步驟的虛擬型別名稱作為此型別的引數。
 
    ```xml
    <type name="Vendor\ModuleName\Observer\MyObserver">
@@ -141,7 +141,7 @@ ht-degree: 0%
    </type>
    ```
 
-   原始碼： `Vendor\ModuleName\Observer\MyObserver` 類別：
+   `Vendor\ModuleName\Observer\MyObserver`類別的Source程式碼：
 
    ```php
    <?php
@@ -193,7 +193,7 @@ ht-degree: 0%
    }
    ```
 
-1. 類別 `Vendor\ModuleName\Logger\Handler\ErrorHandler` 會插入至 `error` 的處理常式 `$logger` 中的屬性 `Vendor\ModuleName\Observer\MyObserver`.
+1. 類別`Vendor\ModuleName\Logger\Handler\ErrorHandler`已插入到`Vendor\ModuleName\Observer\MyObserver`中`$logger`屬性的`error`處理常式。
 
    ```xml
    ...
@@ -203,7 +203,7 @@ ht-degree: 0%
    ...
    ```
 
-例外狀況訊息會記錄在 `/var/log/my_custom_logger/error.log` 檔案。
+例外狀況訊息記錄在`/var/log/my_custom_logger/error.log`檔案中。
 
 <!-- link definitions -->
 

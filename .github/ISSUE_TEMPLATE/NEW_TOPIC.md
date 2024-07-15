@@ -6,8 +6,8 @@ labels: New Topic
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 0%
+source-wordcount: '36'
+ht-degree: 8%
 
 ---
 
@@ -22,10 +22,10 @@ ht-degree: 0%
 
 <!-- Use the following checklist template as a starting point -->
 
-- [ ] 本主題說明____的運作方式。
-- [ ] 本主題提供____的步驟。
-- [ ] 本主題包含顯示____的程式碼範例。
-- [ ] 其他（請說明）
+- [ ]本主題說明____的運作方式。
+- [ ]本主題提供____的步驟。
+- [ ]本主題包含顯示____的程式碼範例。
+- [ 其他]個（請指定）
 
 ## 其他資訊
 

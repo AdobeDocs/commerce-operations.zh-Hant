@@ -5,24 +5,24 @@ feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
 
 # 設定遠端儲存的AWS S3貯體
 
-此 [Amazon Simple Storage Service (Amazon S3)][AWS S3] 是物件儲存服務，提供領先業界的可擴充性、資料可用性、安全性和效能。 AWS S3服務使用貯體或容器來儲存資料。 此設定需要您建立 _私人_ 貯體。 如需雲端基礎結構上的Adobe Commerce，請參閱 [在雲端基礎結構上為Commerce設定遠端儲存](cloud-support.md).
+[Amazon Simple Storage Service (Amazon S3)][AWS S3]是物件儲存服務，提供領先業界的擴充性、資料可用性、安全性和效能。 AWS S3服務使用貯體或容器來儲存資料。 此設定需要您建立&#x200B;_私人_&#x200B;貯體。 如需雲端基礎結構上的Adobe Commerce，請參閱[在雲端基礎結構上設定Commerce的遠端儲存空間](cloud-support.md)。
 
 >[!WARNING]
 >
 >Adobe強烈建議不要使用公用儲存貯體，因為這會帶來嚴重的安全風險。
 
-**使用AWS S3配接卡啟用遠端儲存**：
+**若要使用AWS S3介面卡啟用遠端儲存**：
 
-1. 登入您的Amazon S3控制面板並建立 _私人_ 貯體。
+1. 登入您的Amazon S3儀表板並建立&#x200B;_私人_&#x200B;貯體。
 
-1. 設定 [AWS IAM] 角色。 或者，產生存取和秘密金鑰。
+1. 設定[AWS IAM]角色。 或者，產生存取和秘密金鑰。
 
 1. 停用預設資料庫儲存體。
 
@@ -30,7 +30,7 @@ ht-degree: 0%
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
-1. 設定Commerce使用私人貯體。 另請參閱 [遠端儲存選項](remote-storage.md#remote-storage-options) 以取得完整的引數清單。
+1. 設定Commerce以使用私人貯體。 如需完整的引數清單，請參閱[遠端儲存選項](remote-storage.md#remote-storage-options)。
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 設定Nginx
 
-Nginx需要額外的設定，才能使用 `proxy_pass` 指令。 將下列Proxy資訊新增至 `nginx.conf` 檔案：
+Nginx需要額外的設定，才能使用`proxy_pass`指示詞執行驗證。 將下列Proxy資訊新增至`nginx.conf`檔案：
 
 >nginx.conf
 
@@ -67,15 +67,15 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### 驗證
 
-如果您使用存取和秘密金鑰，而非 [AWS IAM] 角色，您必須包含 [`ngx_aws_auth` Nginx模組][ngx repo].
+如果您使用存取和秘密金鑰而非[AWS IAM]角色，則必須包含[`ngx_aws_auth` Nginx模組][ngx repo]。
 
 ### 許可權
 
-S3整合仰賴在本機檔案系統上產生及儲存快取影像的能力。 因此，的檔案夾許可權 `pub/media` S3和類似的目錄與使用本機儲存時相同。
+S3整合仰賴在本機檔案系統上產生及儲存快取影像的能力。 因此，`pub/media`和類似目錄的檔案夾許可權與S3使用本機儲存時的許可權相同。
 
 ### 檔案作業
 
-強烈建議您使用 [!DNL Commerce] 無論檔案儲存型別為何，編碼或擴充功能開發中的檔案配接器方法皆然。 使用S3進行儲存時，請勿使用原生PHP檔案I/O作業，例如 `copy`， `rename`，或 `file_put_contents`，因為S3檔案不在檔案系統中。 另請參閱 [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) 以取得程式碼範例。
+強烈建議您在程式碼或擴充功能開發中使用[!DNL Commerce]檔案配接器方法，無論檔案儲存型別為何。 使用S3進行儲存時，請勿使用原生PHP檔案I/O作業，例如`copy`、`rename`或`file_put_contents`，因為S3檔案不在檔案系統中。 如需程式碼範例，請參閱[DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18)。
 
 <!-- link definitions -->
 

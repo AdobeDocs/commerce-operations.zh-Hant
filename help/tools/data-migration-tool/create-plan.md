@@ -5,7 +5,7 @@ exl-id: a14237f3-c5fe-4f5f-86eb-ed4c39507bff
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 * 您是否確定新網站上是否需要所有這些擴充功能？ 可能有您可以安全移除的舊專案。
 
-* 您是否已判斷您是否有擴充功能的Magento2版本？ 造訪 [Commerce Marketplace] 以尋找最新版本，或聯絡您的擴充功能提供者。
+* 您是否已判斷您是否有擴充功能的Magento2版本？ 請造訪[Commerce Marketplace]以尋找最新版本，或連絡您的擴充功能提供者。
 
 * 您要移轉擴充功能中的哪些資料庫資產？
 
@@ -32,9 +32,9 @@ ht-degree: 0%
 
 * 使用至少符合您現有Magento1系統的拓撲和設計來設定Magento2硬體系統
 
-* 安裝Magento2.x （包含此版本的所有模組）及 [!DNL Data Migration Tool] 在符合 [系統需求](../../installation/system-requirements.md)
+* 在符合[系統需求](../../installation/system-requirements.md)的系統上安裝Magento2.x （包含此版本的所有模組）和[!DNL Data Migration Tool]
 
-* 對進行自訂調整 [!DNL Data Migration Tool] 程式碼，以備您不需要移轉部分資料（例如CMS Pages、Sales Rules），或想在移轉期間轉換Magento自訂時使用。 閱讀 [!DNL Data Migration Tool]的 [技術規格](technical-specification.md) 以更清楚瞭解移轉如何從內部運作
+* 對[!DNL Data Migration Tool]程式碼進行自訂調整，以備您不需要移轉部分資料（如CMS Pages、Sales Rules）或想要在移轉期間轉換Magento自訂時使用。 閱讀[!DNL Data Migration Tool]的[技術規格](technical-specification.md)，深入瞭解從內部移轉的運作方式
 
 ## 步驟3：試用
 
@@ -50,9 +50,9 @@ ht-degree: 0%
 
 ## 步驟4：開始移轉
 
-1. 確定 [!DNL Data Migration Tool] 具有網路存取權，可連線至Magento1和Magento2資料庫。 開啟防火牆中對應的連線埠。
+1. 請確定[!DNL Data Migration Tool]具有網路存取權，可連線至Magento1和Magento2資料庫。 開啟防火牆中對應的連線埠。
 
-1. 停止「Magento1.x管理面板」中的所有作業（訂單管理除外），例如出貨、建立商業發票及銷退折讓單。 您可以調整「 」中「差異」模式的設定，以擴充允許的活動清單。 [!DNL Data Migration Tool].
+1. 停止「Magento1.x管理面板」中的所有作業（訂單管理除外），例如出貨、建立商業發票及銷退折讓單。 可調整[!DNL Data Migration Tool]中Delta模式的設定，以擴充允許的活動清單。
 
    >[!NOTE]
    >
@@ -62,19 +62,19 @@ ht-degree: 0%
 
    不過，如果移轉期間需要執行某些工作，請確定它們不會建立新的資料庫實體，或變更現有實體，使得差異模式無法處理這些實體。
 
-   例如， `enterprise_salesarchive_archive_orders` cron工作會將舊訂單移至封存。 在移轉期間執行此作業是安全的，因為Delta模式可辨識此作業，並正確處理已封存的訂單。
+   例如，`enterprise_salesarchive_archive_orders` cron工作會移動要封存的舊訂單。 在移轉期間執行此作業是安全的，因為Delta模式可辨識此作業，並正確處理已封存的訂單。
 
-1. 使用 [!DNL Data Migration Tool] 移轉設定和網站。
+1. 使用[!DNL Data Migration Tool]移轉設定和網站。
 
 1. 將您的Magento1.x媒體檔案複製到Magento2.x。
 
-   您必須手動從 `magento1-root/media` 目錄至 `magento2-root/pub/media`.
+   您必須手動將這些檔案從`magento1-root/media`目錄複製到`magento2-root/pub/media`。
 
-1. 使用 [!DNL Data Migration Tool] 將資料從Magento1資料庫大量複製到Magento2資料庫。
+1. 使用[!DNL Data Migration Tool]將資料從Magento1資料庫大量複製到Magento2資料庫。
 
-   如果部分擴充功能含有您要移轉的資料，您可能需要安裝這些適用於Magento2的擴充功能。 如果Magento2資料庫中的擴充功能具有不同的結構，請使用隨附的對應檔案 [!DNL Data Migration Tool].
+   如果部分擴充功能含有您要移轉的資料，您可能需要安裝這些適用於Magento2的擴充功能。 如果Magento2資料庫中的副檔名具有不同的結構，請使用[!DNL Data Migration Tool]提供的對應檔案。
 
-1. 重新索引所有Magento2.x索引子。 如需詳細資訊，請參閱 [管理索引子](../../configuration/cli/manage-indexers.md) 在 _設定指南_.
+1. 重新索引所有Magento2.x索引子。 如需詳細資訊，請參閱&#x200B;_設定指南_&#x200B;中的[管理索引子](../../configuration/cli/manage-indexers.md)。
 
 ## 步驟5：視需要對移轉的資料進行變更
 
@@ -82,15 +82,15 @@ ht-degree: 0%
 
 進行手動資料變更時，請務必謹慎操作。 錯誤會在後續的增量資料移轉步驟中建立錯誤。
 
-例如，從Magento2刪除的產品：已在您的即時Magento1商店中購買且在您的Magento2商店中無法再使用的產品。 傳輸有關此類購買的資料可能會在執行 [!DNL Data Migration Tool] 在差異模式中。
+例如，從Magento2刪除的產品：已在您的即時Magento1商店中購買且在您的Magento2商店中無法再使用的產品。 在差異模式下執行[!DNL Data Migration Tool]時，傳輸有關此類購買的資料可能會導致錯誤。
 
 ## 步驟6：更新增量資料
 
 在移轉資料後，您必須逐步擷取已在Magento1存放區中新增的資料更新（例如新訂單、評論和客戶設定檔中的變更），並使用差異模式將這些更新傳輸到Magento2存放區。
 
-* 開始漸進式移轉；更新會持續執行。 您可以隨時按以停止傳輸更新 `Ctrl+C`.
+* 開始漸進式移轉；更新會持續執行。 您可以隨時按`Ctrl+C`來停止傳送更新。
 
-* 在此期間，請測試您的Magento2網站，以儘快發現任何問題。 如果您遇到問題，請按 `Ctrl+C` 停止增量移轉，並在您解決問題後重新啟動。
+* 在此期間，請測試您的Magento2網站，以儘快發現任何問題。 如果發生問題，請按`Ctrl+C`停止累加移轉，並在解決問題後重新啟動。
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 1. 開始您的Magento2 cron工作。
 
-1. 在您的Magento2系統中，重新索引股票索引器。 如需詳細資訊，請參閱 [設定指南].
+1. 在您的Magento2系統中，重新索引股票索引器。 如需詳細資訊，請參閱[設定指南]。
 
 1. 使用您選擇的工具，在客戶使用您的店面之前，點選Magento2系統中的頁面以快取頁面。
 

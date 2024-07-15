@@ -15,7 +15,7 @@ Adobe Commerce支援Apache 2.4.x。
 
 ## Apache必要指示
 
-1. 設定 `AllowEncodedSlashes` 在伺服器設定（全域）或虛擬主機設定中，避免將可能導致URL問題的編碼斜線解碼。 例如，透過API在SKU中擷取斜線形式的產品時，您不想要轉換該產品。 範例區塊不完整，需要其他指令。
+1. 在伺服器設定（全域）或虛擬主機設定中設定`AllowEncodedSlashes`，以避免解碼可能導致URL問題的編碼斜線。 例如，透過API在SKU中擷取斜線形式的產品時，您不想要轉換該產品。 範例區塊不完整，需要其他指令。
 
    ```conf
    <VirtualHost *:443>
@@ -26,13 +26,13 @@ Adobe Commerce支援Apache 2.4.x。
 
 ## Apache重寫和htaccess
 
-本主題說明如何啟用Apache 2.4重新寫入，以及指定設定 [分散式組態檔， `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
+本主題討論如何啟用Apache 2.4重寫並指定[分散式組態檔`.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)的設定。
 
-Adobe Commerce使用伺服器重寫和 `.htaccess` 以提供Apache的目錄層級指示。 下列指示也包含在本主題的所有其他章節中。
+Adobe Commerce使用伺服器重寫和`.htaccess`為Apache提供目錄層級的指示。 下列指示也包含在本主題的所有其他章節中。
 
-您可以在此段落啟用Apache 2.4重新寫入，並指定 [分散式組態檔， `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
+使用此區段來啟用Apache 2.4重寫，並指定[分散式組態檔`.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)的設定
 
-Adobe Commerce使用伺服器重寫和 `.htaccess` 以提供Apache的目錄層級指示。
+Adobe Commerce使用伺服器重寫和`.htaccess`為Apache提供目錄層級的指示。
 
 >[!NOTE]
 >
@@ -44,13 +44,13 @@ Adobe Commerce使用伺服器重寫和 `.htaccess` 以提供Apache的目錄層�
    a2enmod rewrite
    ```
 
-1. 啟用應用程式以使用分散式 `.htaccess` 組態檔，請參閱 [Apache 2.4檔案](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+1. 若要讓應用程式使用分散式`.htaccess`設定檔，請參閱[Apache 2.4檔案](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)中的准則。
 
    >[!TIP]
    >
-   >在Apache 2.4中，伺服器的預設站台設定檔案為 `/etc/apache2/sites-available/000-default.conf`.
+   >在Apache 2.4中，伺服器的預設站台組態檔為`/etc/apache2/sites-available/000-default.conf`。
 
-   例如，您可以新增下列內容至 `000-default.conf`：
+   例如，您可以在`000-default.conf`結尾新增下列內容：
 
    ```terminal
    <Directory "/var/www/html">
@@ -60,7 +60,7 @@ Adobe Commerce使用伺服器重寫和 `.htaccess` 以提供Apache的目錄層�
 
    >[!NOTE]
    >
-   >有時候，可能需要其他引數。 如需詳細資訊，請參閱 [Apache 2.4檔案](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   >有時候，可能需要其他引數。 如需詳細資訊，請參閱[Apache 2.4檔案](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order)。
 
 1. 如果您已變更Apache設定，請重新啟動Apache：
 
@@ -70,8 +70,8 @@ Adobe Commerce使用伺服器重寫和 `.htaccess` 以提供Apache的目錄層�
 
    >[!NOTE]
    >
-   >- 如果您從舊版Apache升級，請先尋找 `<Directory "/var/www/html">` 或 `<Directory "/var/www">` 在 `000-default.conf`.
-   >- 您必須變更值 `AllowOverride` 在您要安裝Adobe Commerce軟體之目錄的指示詞中。 例如，若要安裝在網頁伺服器docroot中，請編輯中的指令 `<Directory /var/www>`.
+   >- 如果您從舊版Apache升級，請先在`000-default.conf`中尋找`<Directory "/var/www/html">`或`<Directory "/var/www">`。
+   >- 您必須針對要安裝Adobe Commerce軟體的目錄，變更指示詞中`AllowOverride`的值。 例如，若要安裝在網頁伺服器docroot中，請在`<Directory /var/www>`中編輯指示詞。
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Server version: Apache/2.4.04 (Ubuntu)
 Server built: Jul 22 2020 14:35:32
 ```
 
-- 如果Apache為 *非* 已安裝，請參閱：
+- 如果Apache *未安裝*，請參閱：
    - [在Ubuntu上安裝或升級Apache](#installing-apache-on-ubuntu)
    - [在CentOS上安裝Apache](#installing-apache-on-centos)
 
@@ -137,13 +137,13 @@ Server built: Jul 22 2020 14:35:32
    Server built: 2020-04-15T18:00:57
    ```
 
-1. 啟用 [重寫和 `.htaccess`](#apache-rewrites-and-htaccess).
+1. 啟用[重寫和`.htaccess`](#apache-rewrites-and-htaccess)。
 
 ### 在Ubuntu上升級Apache
 
 若要升級至Apache 2.4：
 
-1. 新增 `ppa:ondrej` 存放庫，此存放庫具有Apache 2.4：
+1. 新增具有Apache 2.4的`ppa:ondrej`存放庫：
 
    ```bash
    apt-get -y update
@@ -165,7 +165,7 @@ Server built: Jul 22 2020 14:35:32
 
    >[!NOTE]
    >
-   >如果&#39;apt-get install&#39;命令因未滿足的相依性而失敗，請查閱資源，例如 [https://askubuntu.com/](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
+   >如果&#39;apt-get install&#39;命令因未滿足的相依性而失敗，請洽詢[https://askubuntu.com/](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa)之類的資源。
 
 1. 驗證安裝。
 
@@ -180,13 +180,13 @@ Server built: Jul 22 2020 14:35:32
    Server built: Jul 22 2020 22:46:25
    ```
 
-1. 啟用 [重寫和 `.htaccess`](#apache-rewrites-and-htaccess).
+1. 啟用[重寫和`.htaccess`](#apache-rewrites-and-htaccess)。
 
 ## 在CentOS上安裝Apache
 
-Adobe Commerce需要Apache伺服器重寫。 您也必須指定可以在下列專案中使用的指令型別： `.htaccess`，應用程式會使用它來指定重寫規則。
+Adobe Commerce需要Apache伺服器重寫。 您也必須指定可以在`.htaccess`中使用的指令型別，應用程式會使用它來指定重寫規則。
 
-安裝和設定Apache基本上是三個步驟的過程：安裝軟體、啟用重寫並指定 `.htaccess` 指令。
+安裝和設定Apache基本上是三個步驟的流程：安裝軟體、啟用重寫並指定`.htaccess`指令。
 
 ### 安裝Apache
 
@@ -217,7 +217,7 @@ Adobe Commerce需要Apache伺服器重寫。 您也必須指定可以在下列�
 
 ### 啟用CentOS的重寫和.htaccess
 
-1. 開啟 `/etc/httpd/conf/httpd.conf` 要編輯的檔案：
+1. 開啟`/etc/httpd/conf/httpd.conf`檔案進行編輯：
 
    ```bash
    vim /etc/httpd/conf/httpd.conf`
@@ -229,7 +229,7 @@ Adobe Commerce需要Apache伺服器重寫。 您也必須指定可以在下列�
    <Directory "/var/www/html">
    ```
 
-1. 變更值 `AllowOverride` 至 `All`.
+1. 將`AllowOverride`的值變更為`All`。
 
    例如，
 
@@ -244,7 +244,7 @@ Adobe Commerce需要Apache伺服器重寫。 您也必須指定可以在下列�
 
    >[!NOTE]
    >
-   >下列專案的先前值： `Order` 可能無法在所有情況下都運作。 如需詳細資訊，請參閱Apache檔案([2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order))。
+   >`Order`的前述值可能並非在所有情況下都有效。 如需詳細資訊，請參閱Apache檔案([2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order))。
 
 1. 儲存檔案並退出文字編輯器。
 
@@ -260,7 +260,7 @@ Adobe Commerce需要Apache伺服器重寫。 您也必須指定可以在下列�
 
 ### 啟用Ubuntu的重寫和.htaccess
 
-1. 開啟 `/etc/apache2/sites-available/default` 要編輯的檔案：
+1. 開啟`/etc/apache2/sites-available/default`檔案進行編輯：
 
    ```bash
    vim /etc/apache2/sites-available/default
@@ -270,7 +270,7 @@ Adobe Commerce需要Apache伺服器重寫。 您也必須指定可以在下列�
 
    `<Directory "/var/www/html">`
 
-1. 變更值 `AllowOverride` 至 `All`.
+1. 將`AllowOverride`的值變更為`All`。
 
    例如：
 
@@ -285,7 +285,7 @@ Adobe Commerce需要Apache伺服器重寫。 您也必須指定可以在下列�
 
 1. 儲存檔案並退出文字編輯器。
 
-1. 設定Apache以使用 `mod_rewrite` 模組：
+1. 設定Apache以使用`mod_rewrite`模組：
 
    ```bash
    cd /etc/apache2/mods-enabled
@@ -307,7 +307,7 @@ Adobe Commerce需要Apache伺服器重寫。 您也必須指定可以在下列�
 
 ### 解決Apache 2.4的403禁止錯誤
 
-若要讓網站訪客能夠存取您的網站，請使用 [需要指示](https://httpd.apache.org/docs/2.4/howto/access.html).
+若要讓網站訪客能夠存取您的網站，請使用[Require指示](https://httpd.apache.org/docs/2.4/howto/access.html)之一。
 
 例如：
 
@@ -322,4 +322,4 @@ Adobe Commerce需要Apache伺服器重寫。 您也必須指定可以在下列�
 
 >[!NOTE]
 >
->下列專案的先前值： `Order` 可能無法在所有情況下都運作。 如需詳細資訊，請參閱 [Apache檔案](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+>`Order`的前述值可能並非在所有情況下都有效。 如需詳細資訊，請參閱[Apache檔案](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order)。

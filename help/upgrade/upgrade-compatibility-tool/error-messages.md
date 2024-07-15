@@ -1,24 +1,24 @@
 ---
-title: 『[!DNL Upgrade Compatibility Tool] 錯誤訊息
-description: 進一步瞭解使用時遇到的錯誤訊息 [!DNL Upgrade Compatibility Tool] 在您的Adobe Commerce專案上。
+title: '[!DNL Upgrade Compatibility Tool]則錯誤訊息'
+description: 進一步瞭解您在您的Adobe Commerce專案上使用 [!DNL Upgrade Compatibility Tool] 時遇到的錯誤訊息。
 exl-id: fe4a17a9-a807-4315-b3cd-e35f34e39f6d
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '4113'
+source-wordcount: '4105'
 ht-degree: 4%
 
 ---
 
-# [!DNL Upgrade Compatibility Tool] 錯誤訊息
+# [!DNL Upgrade Compatibility Tool]則錯誤訊息
 
 {{commerce-only}}
 
-此錯誤訊息參考提供執行時可能發生之錯誤的相關資訊。 [!DNL Upgrade Compatibility Tool].
+此錯誤訊息參考提供執行[!DNL Upgrade Compatibility Tool]時可能發生之錯誤的相關資訊。
 
 錯誤訊息會依層級（嚴重問題、錯誤和警告）和型別(核心程式碼、自訂程式碼和GraphQL結構描述)進行分類。 每種型別都包含下列資訊：
 
-- **錯誤碼**：Adobe Commerce指派給錯誤訊息的識別碼。
-- **錯誤說明**：摘要說明錯誤原因。
+- **錯誤碼**： Adobe Commerce指派給錯誤訊息的識別碼。
+- **錯誤描述**：摘要說明錯誤原因。
 - **錯誤建議動作**：如果適用，提供疑難排解及解決錯誤的指引。
 
 ## 嚴重問題
@@ -29,10 +29,10 @@ ht-degree: 4%
 
 | 錯誤碼 | 錯誤說明 | 建議的動作 |
 | --- | --- | --- |
-| 2001 | 找不到核心檔案 | 執行 `composer install` 從專案的根目錄執行命令。 |
-| 2002 | 核心檔案已修改 | 執行 `composer install` 從專案的根目錄執行命令。 |
-| 2003 | 未安裝撰寫器相依性 | 缺少撰寫器相依性可能會導致問題。 執行以還原相依性 `composer require package_name`. |
-| 2005 | 找不到核心資料夾 | 執行 `composer install` 從專案的根目錄執行命令。 |
+| 2001 | 找不到核心檔案 | 從專案的根目錄執行`composer install`命令。 |
+| 2002 | 核心檔案已修改 | 從專案的根目錄執行`composer install`命令。 |
+| 2003 | 未安裝撰寫器相依性 | 缺少撰寫器相依性可能會導致問題。 執行`composer require package_name`以還原相依性。 |
+| 2005 | 找不到核心資料夾 | 從專案的根目錄執行`composer install`命令。 |
 
 {style="table-layout:auto"}
 
@@ -42,11 +42,11 @@ ht-degree: 4%
 
 | 錯誤碼 | 錯誤說明 | 建議的動作 |
 | --- | --- | --- |
-| 1110 | 具現化不存在的Adobe Commerce類別/介面 | 更新程式碼以使用標示為 `@api`. 正在具現化不存在的Adobe Commerce類別/介面。 |
-| 1111 | 從不存在的Adobe Commerce類別延伸 | 擴充類別不再存在於程式碼基底中。 不建議透過繼承來擴充Adobe Commerce功能。 更新程式碼以使用標示為 `@api`. |
-| 1112 | 匯入不存在的Adobe Commerce類別 | 更新程式碼以使用標示為 `@api`. |
-| 1113 | 正在載入不存在的Adobe Commerce類別 | 更新程式碼以使用標示為 `@api`. |
-| 1114 | 使用不存在的Adobe Commerce類別 | 更新程式碼以使用標示為 `@api`. |
+| 1110 | 具現化不存在的Adobe Commerce類別/介面 | 更新程式碼以使用標籤為`@api`的類別。 正在具現化不存在的Adobe Commerce類別/介面。 |
+| 1111 | 從不存在的Adobe Commerce類別延伸 | 擴充類別不再存在於程式碼基底中。 不建議透過繼承來擴充Adobe Commerce功能。 更新程式碼以使用標籤為`@api`的類別。 |
+| 1112 | 匯入不存在的Adobe Commerce類別 | 更新程式碼以使用標籤為`@api`的類別。 |
+| 1113 | 正在載入不存在的Adobe Commerce類別 | 更新程式碼以使用標籤為`@api`的類別。 |
+| 1114 | 使用不存在的Adobe Commerce類別 | 更新程式碼以使用標籤為`@api`的類別。 |
 | 1214 | 使用不存在的Adobe Commerce常數 | 請考慮改為在自訂程式碼中引進並使用必要值的私有常數。 |
 | 1215 | 覆寫不存在的Adobe Commerce常數 | 請考慮改為在自訂程式碼中引進並使用必要值的私有常數。 |
 | 1216 | 指派不存在的Adobe Commerce常數 | 請考慮改為在自訂程式碼中引進並使用必要值的私有常數。 |
@@ -54,10 +54,10 @@ ht-degree: 4%
 | 1314 | 使用不存在的Adobe Commerce介面 | 請考慮移除繼承，或使用自訂範圍中引進的介面來取代繼承。 |
 | 1317 | 繼承不存在的Adobe Commerce介面 | 請考慮移除繼承，或使用自訂範圍中引進的介面來取代繼承。 |
 | 1318 | 實作不存在的Adobe Commerce介面 | 請考慮移除繼承，或使用自訂範圍中引進的介面來取代繼承。 |
-| 1410 | 呼叫不存在的Adobe Commerce方法 | 更新程式碼以使用標示為 `@api`. |
-| 1514 | 使用不存在的Adobe Commerce屬性 | 更新程式碼以使用標示為 `@api`. |
-| 1515 | 覆寫不存在的Adobe Commerce屬性 | 更新程式碼以使用標示為 `@api`. |
-| 1516 | 指派不存在的Adobe Commerce屬性 | 更新程式碼以使用標示為 `@api`. 如果屬性存取層級只能在單一類別中使用，請將屬性存取層級更新為私人。 |
+| 1410 | 呼叫不存在的Adobe Commerce方法 | 更新程式碼以使用標籤為`@api`的類別。 |
+| 1514 | 使用不存在的Adobe Commerce屬性 | 更新程式碼以使用標籤為`@api`的類別。 |
+| 1515 | 覆寫不存在的Adobe Commerce屬性 | 更新程式碼以使用標籤為`@api`的類別。 |
+| 1516 | 指派不存在的Adobe Commerce屬性 | 更新程式碼以使用標籤為`@api`的類別。 如果屬性存取層級只能在單一類別中使用，請將屬性存取層級更新為私人。 |
 | 5002 | 開啟PHP標籤必須是檔案中的第一個內容 | 在PHP開始標籤之前，請確定檔案中沒有內容。 |
 | 5003 | 已棄用函式 | 使用錯誤訊息中建議的替代專案。 如果訊息未建議取代功能，則需要仔細檢閱以選取替代功能或實施。 |
 | 5005 | PHP語法錯誤 | 必須更新程式碼以符合PHP語法標準。 |
@@ -107,64 +107,64 @@ ht-degree: 4%
 
 ### 自訂程式碼
 
-當自訂程式碼使用未考慮/標籤為的Adobe Commerce進入點時，會引發自訂程式碼錯誤 `@api`. 無法保證這類進入點的保留行為。 自訂應依賴 `@api` 而是進入點。 升級後，應該測試基於非API Adobe Commerce程式碼的功能。 當主要編碼標準被破壞時，也會報告這些錯誤。
+當自訂程式碼使用未考慮/標籤為`@api`的Adobe Commerce進入點時，會引發自訂程式碼錯誤。 無法保證這類進入點的保留行為。 自訂應該依賴`@api`進入點。 升級後，應該測試基於非API Adobe Commerce程式碼的功能。 當主要編碼標準被破壞時，也會報告這些錯誤。
 
 | 錯誤碼 | 錯誤說明 | 建議的動作 |
 | --- | --- | --- |
-| 1104 | 使用繼承API介面的非API類別 | 未標示為的類別 `@api` 可能會變更。 請考慮更新程式碼以依賴標示為 `@api` 而非。 否則，依賴此實作的功能應在升級後進行測試。 |
-| 1121 | 從非Adobe Commerce API類別擴充 | 擴充類別不再存在於程式碼基底中。 不建議透過繼承來擴充Adobe Commerce功能。 更新程式碼以使用標示為 `@api`. |
-| 1122 | 匯入非Adobe Commerce API類別 | 擴充類別不再存在於程式碼基底中。 更新程式碼以使用標示為 `@api`. 否則，依賴此實作的功能應在升級後進行測試。 |
-| 1123 | 正在載入非Adobe Commerce API類別 | 擴充類別不再存在於程式碼基底中。 更新程式碼以使用標示為 `@api`. 否則，依賴此實作的功能應在升級後進行測試。 |
-| 1124 | 使用非Adobe Commerce API類別 | 擴充類別不再存在於程式碼基底中。 更新程式碼以使用標示為 `@api`. 否則，依賴此實作的功能應在升級後進行測試。 |
-| 1224 | 使用非Adobe Commerce API常數 | 未標示為的常數 `@api` 可能會變更。 請考慮改為在自訂程式碼中引進並使用必要值的私有常數。 |
-| 1225 | 覆寫非Adobe Commerce API常數 | 未標示為的常數 `@api` 可能會變更。 請考慮改為在自訂程式碼中引進並使用必要值的私有常數。 |
-| 1226 | 指派非Adobe Commerce API常數 | 未標示為的常數 `@api` 可能會變更。 請考慮改為在自訂程式碼中引進並使用必要值的私有常數。 |
-| 1322 | 匯入的非Adobe Commerce API介面 | 介面未標籤為 `@api` 可能會變更。 請考慮移除此繼承，或取代為標示為「 」的Adobe Commerce介面的繼承 `@api` 或是自訂程式碼範圍中匯入的介面。 |
-| 1324 | 使用的非Adobe Commerce API介面 | 介面未標籤為 `@api` 可能會變更。 請考慮移除此繼承，或取代為標示為「 」的Adobe Commerce介面的繼承 `@api` 或是自訂程式碼範圍中匯入的介面。 |
-| 1327 | 繼承的非Adobe Commerce API介面 | 未標示為的常數 `@api` 可能會變更。 請考慮改為在自訂程式碼中引進並使用必要值的私有常數。 |
-| 1328 | 實作非Adobe Commerce API介面 | 介面未標籤為 `@api` 可能會變更。 請考慮移除此繼承，或取代為標示為「 」的Adobe Commerce介面的繼承 `@api` 或是自訂程式碼範圍中匯入的介面。 |
-| 1420 | 具現化非Adobe Commerce API類別/介面 | 未標示為的類別 `@api` 可能會變更。 請考慮更新程式碼以依賴標示為 `@api` 而非。 否則，依賴此實作的功能應在升級後進行測試。 此外，擷取類別執行個體的建議方式是使用DI。 如果需要類別的新執行個體，請考慮使用工廠。 |
-| 1428 | 實作詳細資料的可能相依性。 | 未標示為的類別 `@api` 可能會變更。 請考慮更新程式碼以依賴標示為 `@api` 而非。 否則，依賴此實作的功能應在升級後進行測試。 |
-| 1429 | 呼叫非Adobe Commerce API方法 | 未標示為的方法 `@api` 或未在API類別/介面中宣告的或可能會變更。 即使在新版本中未更新方法的介面，其行為或輸出也可能會不同。 考慮依賴介面方法。 否則，依賴此實作的功能應在升級後進行測試。 |
+| 1104 | 使用繼承API介面的非API類別 | 未標示為`@api`的類別可能會變更。 請考慮更新程式碼以依賴標示為`@api`的介面。 否則，依賴此實作的功能應在升級後進行測試。 |
+| 1121 | 從非Adobe Commerce API類別擴充 | 擴充類別不再存在於程式碼基底中。 不建議透過繼承來擴充Adobe Commerce功能。 更新程式碼以使用標籤為`@api`的類別。 |
+| 1122 | 匯入非Adobe Commerce API類別 | 擴充類別不再存在於程式碼基底中。 更新程式碼以使用標籤為`@api`的類別。 否則，依賴此實作的功能應在升級後進行測試。 |
+| 1123 | 正在載入非Adobe Commerce API類別 | 擴充類別不再存在於程式碼基底中。 更新程式碼以使用標籤為`@api`的類別。 否則，依賴此實作的功能應在升級後進行測試。 |
+| 1124 | 使用非Adobe Commerce API類別 | 擴充類別不再存在於程式碼基底中。 更新程式碼以使用標籤為`@api`的類別。 否則，依賴此實作的功能應在升級後進行測試。 |
+| 1224 | 使用非Adobe Commerce API常數 | 未標示為`@api`的常數可能會變更。 請考慮改為在自訂程式碼中引進並使用必要值的私有常數。 |
+| 1225 | 覆寫非Adobe Commerce API常數 | 未標示為`@api`的常數可能會變更。 請考慮改為在自訂程式碼中引進並使用必要值的私有常數。 |
+| 1226 | 指派非Adobe Commerce API常數 | 未標示為`@api`的常數可能會變更。 請考慮改為在自訂程式碼中引進並使用必要值的私有常數。 |
+| 1322 | 匯入的非Adobe Commerce API介面 | 未標示為`@api`的介面可能已變更。 請考慮移除此繼承，或將其取代為標示為`@api`的Adobe Commerce介面的繼承，或是自訂程式碼範圍中匯入的介面。 |
+| 1324 | 使用的非Adobe Commerce API介面 | 未標示為`@api`的介面可能已變更。 請考慮移除此繼承，或將其取代為標示為`@api`的Adobe Commerce介面的繼承，或是自訂程式碼範圍中匯入的介面。 |
+| 1327 | 繼承的非Adobe Commerce API介面 | 未標示為`@api`的常數可能會變更。 請考慮改為在自訂程式碼中引進並使用必要值的私有常數。 |
+| 1328 | 實作非Adobe Commerce API介面 | 未標示為`@api`的介面可能已變更。 請考慮移除此繼承，或將其取代為標示為`@api`的Adobe Commerce介面的繼承，或是自訂程式碼範圍中匯入的介面。 |
+| 1420 | 具現化非Adobe Commerce API類別/介面 | 未標示為`@api`的類別可能會變更。 請考慮更新程式碼以依賴標示為`@api`的介面。 否則，依賴此實作的功能應在升級後進行測試。 此外，擷取類別執行個體的建議方式是使用DI。 如果需要類別的新執行個體，請考慮使用工廠。 |
+| 1428 | 實作詳細資料的可能相依性。 | 未標示為`@api`的類別可能會變更。 請考慮更新程式碼以依賴標示為`@api`的介面。 否則，依賴此實作的功能應在升級後進行測試。 |
+| 1429 | 呼叫非Adobe Commerce API方法 | 未標示為`@api`或未在API類別/介面中宣告的方法可能會變更。 即使在新版本中未更新方法的介面，其行為或輸出也可能會不同。 考慮依賴介面方法。 否則，依賴此實作的功能應在升級後進行測試。 |
 | 1449 | 呼叫非介面方法（存在於實作中） | 未在介面中宣告的方法可能會變更。 考慮依賴介面方法。 否則，依賴此實作的功能應在升級後進行測試。 |
-| 1524 | 使用非Adobe Commerce API屬性 | 未標示為的屬性值 `@api` 可能會變更。 請考慮改用API介面方法。 |
-| 1525 | 覆寫非Adobe Commerce API屬性 | 未標示為的屬性值 `@api` 可能會變更。 請考慮改用API介面方法。 |
-| 1526 | 指派非Adobe Commerce API屬性 | 未標示為的屬性值 `@api` 可能會變更。 請考慮改用API介面方法。 |
+| 1524 | 使用非Adobe Commerce API屬性 | 未標示為`@api`之屬性的值可能會變更。 請考慮改用API介面方法。 |
+| 1525 | 覆寫非Adobe Commerce API屬性 | 未標示為`@api`之屬性的值可能會變更。 請考慮改用API介面方法。 |
+| 1526 | 指派非Adobe Commerce API屬性 | 未標示為`@api`之屬性的值可能會變更。 請考慮改用API介面方法。 |
 | 5004 | 已棄用沒有引數的函式 | 傳遞輸入以驗證為函式的第一個引數。 |
 | 5007 | 不建議使用某些函式 | 請避免使用這些函式。 |
 | 5009 | 範本指令不能叫用方法。 只允許純量陣列存取 | 從範本移除方法引動過程。 |
-| 5010 | 範本 `@vars` 評論區塊包含無效的JSON | 修正無效的JSON。 |
-| 5011 | 範本 `@vars` 註解區塊包含無效的標籤 | 修正無效的標籤。 |
-| 5012 | 範本 `@vars` 註解區塊缺少範本中使用的變數 | 將缺少的變數新增@vars註解區塊。 |
+| 5010 | 範本`@vars`註解區塊包含無效的JSON | 修正無效的JSON。 |
+| 5011 | 範本`@vars`註解區塊包含無效的標籤 | 修正無效的標籤。 |
+| 5012 | 範本`@vars`註解區塊遺漏範本中使用的變數 | 將缺少的變數新增@vars註解區塊。 |
 | 5013 | 避免使用帶有非void html元素的自我關閉標籤 | 請改用關閉標籤。 |
-| 5014 | 此 `"active"` 屬性已過時 | 使用中模組清單是在部署設定中定義的。 |
-| 5015 | 此 `<param>` 節點已過時 | 使用 `<argument name="..." xsi:type="...">` 而非。 |
-| 5016 | 此 `<instance>` 節點已過時 | 使用 `<argument name="..." xsi:type="object">` 而非。 |
-| 5017 | 此 `<array>` 節點已過時 | 使用 `<argument name="..." xsi:type="array">` 而非。 |
-| 5018 | 此 `<item key="...">` 節點已過時 | 使用 `<item name="..." xsi:type="...">` 而非。 |
-| 5019 | 此 `<value>` 節點已過時 | 請改為提供實際值作為文字常值。 |
-| 5020 | 過時的節點： `<supported_blocks>` | 將取代為 `<supported_containers>`. |
-| 5021 | 過時的節點： `<block_name>` | 將取代為 `<container_name>`. |
+| 5014 | `"active"`屬性已過時 | 使用中模組清單是在部署設定中定義的。 |
+| 5015 | `<param>`節點已過時 | 請改用`<argument name="..." xsi:type="...">`。 |
+| 5016 | `<instance>`節點已過時 | 請改用`<argument name="..." xsi:type="object">`。 |
+| 5017 | `<array>`節點已過時 | 請改用`<argument name="..." xsi:type="array">`。 |
+| 5018 | `<item key="...">`節點已過時 | 請改用`<item name="..." xsi:type="...">`。 |
+| 5019 | `<value>`節點已過時 | 請改為提供實際值作為文字常值。 |
+| 5020 | 過時的節點： `<supported_blocks>` | 將取代為`<supported_containers>`。 |
+| 5021 | 過時的節點： `<block_name>` | 將取代為`<container_name>`。 |
 | 5022 | 偵測到工廠名稱 | Widget型別不應以/開頭。 |
 | 5023 | 線上上偵測到過時的ACL結構 | 請檢視lib/internal/Magento/Framework/Acl/etc/acl.xsd。 |
 | 5024 | 線上上偵測到過時的功能表結構 | 請檢視app/code/Magento/Backend/etc/menu.xsd。 |
 | 5025 | 在檔案中偵測到過時的系統組態結構 | 請檢視app/code/Magento/Config/etc/system_file.xsd。 |
-| 5026 | 不要使用 `"text/javascript"` type屬性 | 僅使用公用成員。 |
-| 5028 | 存取受保護與私人成員 `Block` 類別在phtml範本中已過時 | 僅使用公用成員。 |
-| 5031 | 包含過時的方法 | 使用 `getConnection()` 方法。 |
+| 5026 | 不要使用`"text/javascript"`型別屬性 | 僅使用公用成員。 |
+| 5028 | 在phtml範本中，`Block`類別的受保護和私用成員的存取權已過時 | 僅使用公用成員。 |
+| 5031 | 包含過時的方法 | 請改用`getConnection()`方法。 |
 | 5042 | PHP類別參考的格式不正確 | 檢查是否僅使用駝峰式大小寫字母、數字和正斜線來參考類別。 |
 | 5043 | 模組參考的格式不正確 | 檢查是否僅使用字母、數字、底線及前導斜線來參考模組。 |
-| 5044 | 類別 `Zend_Db_Select` 受限 | 建議的取代： `\Magento\Framework\DB\Select`. |
-| 5045 | 類別 `Zend_Db_Adapter_Pdo_Mysql` 受限 | 建議的取代： `\Magento\Framework\DB\Adapter\Pdo\Mysql`. |
-| 5046 | 類別 `Magento\Framework\Serialize\Serializer\Serialize` 受限 | 建議的取代： `Magento\Framework\Serialize\SerializerInterface`. |
-| 5047 | 類別 `ArrayObject` 受限 | 建議的取代：自訂類別，延伸自 `ArrayObject` 覆寫序列化/取消序列化方法。 |
-| 5048 | 類別 `Magento\Framework\View\Element\UiComponent\ArrayObjectFactory` 受限 | 建議的取代：建立自訂類別的工廠，從 `ArrayObject` 覆寫序列化/取消序列化方法。 |
+| 5044 | 類別`Zend_Db_Select`已受限制 | 建議的取代： `\Magento\Framework\DB\Select`。 |
+| 5045 | 類別`Zend_Db_Adapter_Pdo_Mysql`已受限制 | 建議的取代： `\Magento\Framework\DB\Adapter\Pdo\Mysql`。 |
+| 5046 | 類別`Magento\Framework\Serialize\Serializer\Serialize`已受限制 | 建議的取代： `Magento\Framework\Serialize\SerializerInterface`。 |
+| 5047 | 類別`ArrayObject`已受限制 | 建議的取代：自訂類別，使用覆寫的序列化/非序列化方法從`ArrayObject`擴充。 |
+| 5048 | 類別`Magento\Framework\View\Element\UiComponent\ArrayObjectFactory`已受限制 | 建議的取代：建立自訂類別的Factory，使用覆寫序列化/非序列化方法從`ArrayObject`延伸。 |
 | 5050 | 正在參考的區塊已移除 | 移除對區塊的參照。 |
-| 5051 | `output="toHtml"` 已過時 | 使用 `output="1"`. |
-| 5052 | 類別 `\Magento\Framework\View\Element\Text\ListText` 不應該再用於版面配置中 | 移除類別 `\Magento\Framework\View\Element\Text\ListText` 從配置。 |
-| 5053 | 透過版面配置指令呼叫方法 `<action>` 不允許 | 避免在中使用違反規定的方法 `<action>`. |
-| 5054 | `helper` 屬性包含 `/` | 移除 `/` 來自helper屬性。 |
-| 5055 | `helper` 屬性不包含 `::` | 新增 `::` 至helper屬性。 |
+| 5051 | `output="toHtml"`已過時 | 使用`output="1"`。 |
+| 5052 | 類別`\Magento\Framework\View\Element\Text\ListText`不應再用於配置中 | 從配置移除類別`\Magento\Framework\View\Element\Text\ListText`。 |
+| 5053 | 不允許透過配置指示`<action>`呼叫方法 | 避免在`<action>`中使用違規方法。 |
+| 5054 | `helper`屬性包含`/` | 移除helper屬性中的`/`。 |
+| 5055 | `helper`屬性不包含`::` | 將`::`新增至Helper屬性。 |
 | 5056 | 安裝指令碼已過時 | 在模組的etc/db_schema.xml檔案中使用宣告式結構描述方法。 |
 | 5057 | InstallSchema指令碼已過時 | 在模組的etc/db_schema.xml檔案中使用宣告式結構描述方法。 |
 | 5058 | InstallData指令碼已過時 | 使用模組設定/修補/資料目錄中的資料修補程式方法。 |
@@ -177,10 +177,10 @@ ht-degree: 4%
 | 5065 | &#39;data&#39;在無效的目錄中 | 在模組的Setup/Patch/Data資料夾中建立資料修補程式，以進行資料升級，或在模組的etc/db_schema.xml檔案中使用宣告式結構描述方法以進行結構描述變更。 |
 | 5066 | &#39;sql&#39;在無效的目錄中 | 在模組的Setup/Patch/Data資料夾中建立資料修補程式，以進行資料升級，或在模組的etc/db_schema.xml檔案中使用宣告式結構描述方法以進行結構描述變更。 |
 | 5067 | XPath識別的節點已過時 | 應更新錯誤中指出的過時XML。 按照錯誤訊息的建議進行。 |
-| 5068 | 指令 `{{htmlescape}}` 已過時 | 使用 `{{var}}` 而非。 |
-| 5069 | 指令 `{{escapehtml}}` 已過時 | 使用 `{{var}}` 而非。 |
-| 5070 | 不再需要使用第3個引數才能使用 `getChildHtml()` | 從對的呼叫移除第三個引數 `getChildHtml()`. |
-| 5071 | 不再需要第4個引數 `getChildHtml()` | 從對的呼叫移除第4個引數 `getChildHtml()`. |
+| 5068 | 指示詞`{{htmlescape}}`已過時 | 請改用`{{var}}`。 |
+| 5069 | 指示詞`{{escapehtml}}`已過時 | 請改用`{{var}}`。 |
+| 5070 | `getChildHtml()`不再需要第三個引數 | 從對`getChildHtml()`的呼叫移除第3個引數。 |
+| 5071 | `getChildHtml()`不再需要第4個引數 | 從對`getChildHtml()`的呼叫移除第4個引數。 |
 | 5073 | 含有斜線的舊式表格名稱必須固定至直接表格名稱 | 請改用直接資料表名稱。 |
 | 5075 | 應用程式模組不應使用來自測試模組的類別 | 從測試模組中移除類別的使用情況。 |
 | 5078 | 類別必須在建構函式中要求，否則編譯器將無法尋找及產生這些類別 | 將類別新增至建構函式。 |
@@ -190,25 +190,25 @@ ht-degree: 4%
 | 5082 | 不建議在範本中使用$this | 請改用$block。 |
 | 5083 | 不允許以常數作為轉譯函式的第一個引數 | 請改用字串常值。 |
 | 5085 | 不建議使用某些函式 | 請改用訊息上建議的替代函式。 |
-| 5087 | PHP跨版本相容性問題 | 按照郵件中的建議檢查 [移轉指南](https://www.php.net/manual/en/migration81.php). |
+| 5087 | PHP跨版本相容性問題 | 請依照訊息的建議來檢查[移轉指南](https://www.php.net/manual/en/migration81.php)。 |
 | 5088 | 在必要引數之後找到選用引數 | 將必要引數移至選用引數之後。 |
-| 5089 | 方法可見性 `final private` 找到 | 變更方法可見性 `final private` 至僅限 `private`. |
-| 5090 | 魔術方法 `__set_state` 未定義為 `static` | 魔術方法 `__set_state` 必須定義為 `static`. |
-| 5091 | 類別與 `__toString()` 不繼承自的方法 `Stringable` 介面 | 新增 `Stringable` 類別的介面，使用 `__toString()` 方法。 |
-| 5092 | `is_resource()` 用於傳回Object的函式的方法 | 變更 `is_resource()` 至 `instanceof` 物件。 |
-| 6001 | `jQuery.andSelf()` 已移除 | 使用 `jQuery.addBack()`. |
-| 6002 | j查詢 `$.bind` 和 `$.unbind` 已過時 | 使用 `$.on` 和 `$.off` 而非。 |
-| 6003 | 訂閱事件的jQuery方法已過時，不應使用 | 使用 `.on("event name", fn)` 方法而訂閱該事件。 |
-| 6003 | 用於觸發事件的jQuery方法已過時，不應使用 | 使用 `.trigger("event name")` 方法觸發該事件。 |
-| 6004 | j查詢 `$.delegate` 和 `$.undelegate` 已過時 | 使用 `$.on` 和 `$.off` 而非。 |
-| 6005 | (`jQuery.load()` / `jQuery.unload()` / `jQuery.error()`)已移除 | 使用(`.on("load", fn)` / `.on("unload", fn)` / `.on("error", fn)`)。 |
-| 6006 | `jQuery.size()` 已移除 | 使用 `jQuery.length`. |
-| 6007 | `jQuery.trim` 已過時 | 使用 `String.prototype.trim`. |
-| 6008 | (`addButton`， `addContextToolbar`， `addMenuItem`， `addSidebar`， `file_browser_callback`， `insert_button_items`， &#39;inlite&#39;主題， &#39;mobile&#39;主題， &#39;modern&#39;主題)已移除 | 更新程式碼以與tinymce5相容。 |
-| 6009 | `jQuery.isFunction()` 已過時 | 在大多數情況下，可以取代為 [「函式」===x型別]. |
-| 6009 | `jQuery.type()` 已過時 | 取代為適當的型別檢查，例如 [「函式」===x型別]. |
-| 6009 | `jQuery.isArray()` 已過時 | 請改用原生Array.isArray方法。 |
-| 6009 | `jQuery.parseJSON()` 已過時 | 若要剖析JSON字串，請改用原生JSON.parse方法。 |
+| 5089 | 找到方法可見性`final private` | 將方法可見性從`final private`變更為只有`private`。 |
+| 5090 | 魔術方法`__set_state`未定義為`static` | 魔術方法`__set_state`必須定義為`static`。 |
+| 5091 | 具有`__toString()`方法的類別未從`Stringable`介面繼承 | 使用`__toString()`方法將`Stringable`介面新增至類別。 |
+| 5092 | `is_resource()`方法用於現在傳回Object的函式 | 將`is_resource()`變更為`instanceof`物件。 |
+| 6001 | `jQuery.andSelf()`已移除 | 使用`jQuery.addBack()`。 |
+| 6002 | jQuery `$.bind`和`$.unbind`已過時 | 請改用`$.on`和`$.off`。 |
+| 6003 | 訂閱事件的jQuery方法已過時，不應使用 | 請改用`.on("event name", fn)`方法來訂閱該事件。 |
+| 6003 | 用於觸發事件的jQuery方法已過時，不應使用 | 請改用`.trigger("event name")`方法來觸發該事件。 |
+| 6004 | jQuery `$.delegate`和`$.undelegate`已過時 | 請改用`$.on`和`$.off`。 |
+| 6005 | (`jQuery.load()` / `jQuery.unload()` / `jQuery.error()`)已移除 | 請改用(`.on("load", fn)` / `.on("unload", fn)` / `.on("error", fn)`)。 |
+| 6006 | `jQuery.size()`已移除 | 使用`jQuery.length`。 |
+| 6007 | `jQuery.trim`已棄用 | 使用`String.prototype.trim`。 |
+| 6008 | （`addButton`， `addContextToolbar`， `addMenuItem`， `addSidebar`， `file_browser_callback`， `insert_button_items`， &#39;inlite&#39;主題， &#39;mobile&#39;主題， &#39;modern&#39;主題）已移除 | 更新程式碼以與tinymce5相容。 |
+| 6009 | `jQuery.isFunction()`已棄用 | 在大多數情況下，它可由[typeof x===「函式」]取代。 |
+| 6009 | `jQuery.type()`已棄用 | 取代為適當的型別檢查，例如[typeof x === &quot;function&quot;]。 |
+| 6009 | `jQuery.isArray()`已棄用 | 請改用原生Array.isArray方法。 |
+| 6009 | `jQuery.parseJSON()`已棄用 | 若要剖析JSON字串，請改用原生JSON.parse方法。 |
 | 6010 | (`jQuery.expr[":"]`， `jQuery.expr.filters`)已過時 | 請改用jQuery.expr.pseudos。 |
 
 {style="table-layout:auto"}
@@ -238,35 +238,35 @@ ht-degree: 4%
 
 | 錯誤碼 | 錯誤說明 | 建議的動作 |
 | --- | --- | --- |
-| 2004 | Composer相依性版本不符 | 問題表示標準設定中的Composer相依性版本與實際專案不同。 執行以更新相依性 `composer update <package_name>`. |
+| 2004 | Composer相依性版本不符 | 問題表示標準設定中的Composer相依性版本與實際專案不同。 執行`composer update <package_name>`以更新相依性。 |
 
 {style="table-layout:auto"}
 
 ### 自訂程式碼
 
-偵測到參考已棄用的程式碼時，會引發自訂程式碼警告。 這類參照應以支援的擴充點取代。 請留意 `@see` 建議之已棄用專案的註解。 當次要編碼標準被破壞時，也會報告這些錯誤。
+偵測到參考已棄用的程式碼時，會引發自訂程式碼警告。 這類參照應以支援的擴充點取代。 請注意Recommendations已棄用專案的`@see`註解。 當次要編碼標準被破壞時，也會報告這些錯誤。
 
 | 錯誤碼 | 錯誤說明 | 建議的動作 |
 | --- | --- | --- |
-| 1131 | 從Adobe Commerce擴充 ``@deprecated`` 類別 | 擴充類別將在未來版本中移除。 不建議透過繼承來擴充Adobe Commerce功能。 更新程式碼以使用標示為 `@api`. |
-| 1132 | 匯入Adobe Commerce `@deprecated` 類別 | 擴充類別將在未來版本中移除。 Adobe Commerce請考慮使用標示為 `@api` 而非。 |
-| 1133 | 正在載入Adobe Commerce `@deprecated` 類別 | 擴充類別將在未來版本中移除。 Adobe Commerce請考慮使用標示為 `@api` 而非。 |
-| 1134 | 使用Adobe Commerce `@deprecated` 類別 | 擴充類別將在未來版本中移除。 Adobe Commerce請考慮使用標示為 `@api` 而非。 |
-| 1234 | 使用Adobe Commerce `@deprecated` 常數 | 即將推出的版本將會移除已遭取代的常數。 請考慮使用標示為 `@api` 或實作中的私有常數。 |
-| 1235 | 覆寫Adobe Commerce `@deprecated` 常數 | 即將推出的版本將會移除已遭取代的常數。 請考慮使用標示為 `@api` 或實作中的私有常數。 |
-| 1236 | Adobe Commerce指派 `@deprecated` 常數 | 即將推出的版本將會移除已遭取代的常數。 請考慮使用標示為 `@api` 或實作中的私有常數。 |
-| 1332 | 已匯入Adobe Commerce `@deprecated` 介面 | 即將推出的版本將會移除已棄用的介面。 請考慮使用標籤為的介面或類別 `@api` 而非。 |
-| 1334 | 使用的Adobe Commerce `@deprecated` 介面 | 即將推出的版本將會移除已棄用的介面。 請考慮使用標籤為的介面或類別 `@api` 而非。 |
-| 1337 | 繼承自Adobe Commerce `@deprecated` 介面 | 即將推出的版本將會移除已棄用的介面。 請考慮使用標籤為的介面來移除介面繼承 `@api` 或是在實作中匯入的介面。 |
-| 1338 | 實作Adobe Commerce `@deprecated` 介面 | 即將推出的版本將會移除已棄用的介面。 請考慮使用標籤為的介面來移除介面繼承 `@api` 或是在實作中匯入的介面。 |
+| 1131 | 從Adobe Commerce ``@deprecated``類別延伸 | 擴充類別將在未來版本中移除。 不建議透過繼承來擴充Adobe Commerce功能。 更新程式碼以使用標籤為`@api`的類別。 |
+| 1132 | 正在匯入Adobe Commerce `@deprecated`類別 | 擴充類別將在未來版本中移除。 請考慮改用標示為`@api`的Adobe Commerce類別。 |
+| 1133 | 正在載入Adobe Commerce `@deprecated`類別 | 擴充類別將在未來版本中移除。 請考慮改用標示為`@api`的Adobe Commerce類別。 |
+| 1134 | 使用Adobe Commerce `@deprecated`類別 | 擴充類別將在未來版本中移除。 請考慮改用標示為`@api`的Adobe Commerce類別。 |
+| 1234 | 使用Adobe Commerce `@deprecated`常數 | 即將推出的版本將會移除已遭取代的常數。 請考慮改用實作中標示為`@api`的常數或私用常數。 |
+| 1235 | 正在覆寫Adobe Commerce `@deprecated`常數 | 即將推出的版本將會移除已遭取代的常數。 請考慮改用實作中標示為`@api`的常數或私用常數。 |
+| 1236 | 指派Adobe Commerce `@deprecated`常數 | 即將推出的版本將會移除已遭取代的常數。 請考慮改用實作中標示為`@api`的常數或私用常數。 |
+| 1332 | 已匯入Adobe Commerce `@deprecated`介面 | 即將推出的版本將會移除已棄用的介面。 請考慮改用標示為`@api`的介面或類別。 |
+| 1334 | 已使用Adobe Commerce `@deprecated`介面 | 即將推出的版本將會移除已棄用的介面。 請考慮改用標示為`@api`的介面或類別。 |
+| 1337 | 繼承自Adobe Commerce `@deprecated`介面 | 即將推出的版本將會移除已棄用的介面。 請考慮改用標示為`@api`的介面或實作中匯入的介面來移除介面繼承。 |
+| 1338 | 實作Adobe Commerce `@deprecated`介面 | 即將推出的版本將會移除已棄用的介面。 請考慮改用標示為`@api`的介面或實作中匯入的介面來移除介面繼承。 |
 | 1430 | 呼叫未宣告的資料物件方法 | 未宣告的魔術方法可能會變更。 請考慮改為依賴介面方法。 |
-| 1439 | 呼叫Adobe Commerce `@deprecated` 方法 | 即將推出的版本將會移除已棄用的方法。 請考慮改為依賴API介面中宣告的方法。 |
+| 1439 | 呼叫Adobe Commerce `@deprecated`方法 | 即將推出的版本將會移除已棄用的方法。 請考慮改為依賴API介面中宣告的方法。 |
 | 1440 | 方法簽章不符 | 使用不符合方法簽章的引數、引數或傳回型別偵測到呼叫或覆寫核心方法。 |
-| 1534 | 使用Adobe Commerce `@deprecated` 屬性 | 即將推出的版本將會移除已棄用的方法。 請考慮改為依賴API介面中宣告的方法。 |
-| 1535 | 覆寫Adobe Commerce `@deprecated` 屬性 | 即將推出的版本將會移除已棄用的屬性。 請考慮改為依賴API介面中宣告的方法，或使用實作中的私有屬性。 |
-| 1536 | Adobe Commerce指派 `@deprecated` 屬性 | 即將推出的版本將會移除已棄用的方法。 請考慮改為依賴API介面中宣告的方法。 |
+| 1534 | 使用Adobe Commerce `@deprecated`屬性 | 即將推出的版本將會移除已棄用的方法。 請考慮改為依賴API介面中宣告的方法。 |
+| 1535 | 正在覆寫Adobe Commerce `@deprecated`屬性 | 即將推出的版本將會移除已棄用的屬性。 請考慮改為依賴API介面中宣告的方法，或使用實作中的私有屬性。 |
+| 1536 | 指派Adobe Commerce `@deprecated`屬性 | 即將推出的版本將會移除已棄用的方法。 請考慮改為依賴API介面中宣告的方法。 |
 | 5006 | 建構函式中絕不可明確要求代理和攔截器 | 原始類別應該宣告為建構函式引數的型別。 攔截器/Proxy類別將由架構相依性插入實作傳遞。 |
-| 5074 | 使用已棄用的方法 `getResource()` 以偵測（儲存/載入/刪除）資料。 | 請使用存放庫。 |
+| 5074 | 使用已棄用的方法`getResource()`來偵測（儲存/載入/刪除）資料。 | 請使用存放庫。 |
 | 5086 | 可視性未在常數上宣告 | 宣告所有常數的可見度。 |
 
 {style="table-layout:auto"}

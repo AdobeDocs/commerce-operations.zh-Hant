@@ -4,7 +4,7 @@ description: 轉換XML配置檔案。
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '82'
 ht-degree: 0%
 
 ---

@@ -21,4 +21,4 @@ ht-degree: 0%
 >
 >在典型的電子商務工作流程中，集中式團隊是最常見的五種型別，如下所示。 蜂窩結構最符合敏捷工作流程。
 
-![群組結構圖](../../assets/playbooks/team-structure.png)
+![Team結構圖表](../../assets/playbooks/team-structure.png)

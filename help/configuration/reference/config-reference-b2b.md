@@ -5,35 +5,35 @@ feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
 
 # B2B擴充功能設定路徑參考
 
-_這適用於已安裝Adobe Commerce適用的B2B執行個體。_
+_這適用於已安裝Adobe Commerce之B2B的執行個體。_
 
-本主題列出Commerce Enterprise B2B擴充功能的設定路徑。 此 [`magento app:config:dump` 命令](../cli/export-configuration.md) 將這些值寫入共用組態檔， `app/etc/config.php`，這應該是在原始檔控制中。
+本主題列出Commerce Enterprise B2B擴充功能的設定路徑。 [`magento app:config:dump`命令](../cli/export-configuration.md)將這些值寫入到共用組態檔`app/etc/config.php`，它應該是在原始檔控制中。
 
 >[!INFO]
 >
->此參考資料清單 _僅限_ Adobe Commerce的B2B專屬設定路徑。 此擴充功能包含Adobe Commerce的所有設定路徑。
+>此參考僅列出Adobe Commerce中B2B唯一的&#x200B;_個_&#x200B;設定路徑。 此擴充功能包含Adobe Commerce的所有設定路徑。
 
 如需這些設定路徑的相關資訊，請參閱：
 
 - [付款設定路徑](config-reference-payment.md)
 - [敏感和系統特定設定路徑參考](config-reference-sens.md)
 
-若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱 [使用環境變數覆寫組態設定](override-config-settings.md#environment-variables).
+若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱[使用環境變數覆寫組態設定](override-config-settings.md#environment-variables)。
 
 ## 一般類別
 
-本節列出「管理員」底下選項可用的變數名稱和設定路徑。 **[!UICONTROL Stores]** >設定> **[!UICONTROL Configuration]** > **[!UICONTROL General]**.
+本節列出&#x200B;**[!UICONTROL Stores]** >設定> **[!UICONTROL Configuration]** > **[!UICONTROL General]**&#x200B;底下「管理員」中選項可用的變數名稱和設定路徑。
 
 ### B2B功能路徑
 
-這些設定值可在的「管理員」中使用 **[!UICONTROL Stores]** >設定> **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
+這些設定值可在&#x200B;**[!UICONTROL Stores]** >設定> **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 已加密？ | 系統專用？ | 敏感？ |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -49,11 +49,11 @@ _這適用於已安裝Adobe Commerce適用的B2B執行個體。_
 
 ## 客戶類別
 
-本節列出「管理員」中選項可用的變數名稱和設定路徑，位於 **[!UICONTROL Stores]** >設定> **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**.
+本節列出&#x200B;**[!UICONTROL Stores]** >設定> **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**&#x200B;底下「管理員」中選項可用的變數名稱和設定路徑。
 
 ### 公司設定路徑
 
-這些設定值可在的「管理員」中使用 **[!UICONTROL Stores]** >設定> **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
+這些設定值可在&#x200B;**[!UICONTROL Stores]** >設定> **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 已加密？ | 系統專用？ | 敏感？ |
 |--------------|--------------|--------------|--------------|--------------|
@@ -93,7 +93,7 @@ _這適用於已安裝Adobe Commerce適用的B2B執行個體。_
 
 ### 請購單清單路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **客戶** > **請購單清單**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **客戶** > **請購單清單**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 已加密？ | 系統專用？ | 敏感？ |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -103,11 +103,11 @@ _這適用於已安裝Adobe Commerce適用的B2B執行個體。_
 
 ## 銷售類別
 
-本節列出「管理員」中選項可用的變數名稱和設定路徑，位於 **商店** >設定> **設定** > **銷售**.
+此區段列出&#x200B;**商店** >設定> **設定** > **銷售**&#x200B;底下「管理員」中選項可用的變數名稱和設定路徑。
 
 ### 銷售電子郵件路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **銷售電子郵件**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **銷售** > **銷售電子郵件**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 已加密？ | 系統專用？ | 敏感？ |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -126,7 +126,7 @@ _這適用於已安裝Adobe Commerce適用的B2B執行個體。_
 
 ### 引號路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **引號**.
+這些組態值可在&#x200B;**商店** >設定> **組態** > **銷售** > **報價**&#x200B;的管理員中使用。
 
 | 名稱 | 設定路徑 | 已加密？ | 系統專用？ | 敏感？ |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -145,7 +145,7 @@ _這適用於已安裝Adobe Commerce適用的B2B執行個體。_
 
 ## 付款方法路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **付款方法**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **銷售** > **付款方式**&#x200B;中的管理員中使用。
 
 >[!INFO]
 >

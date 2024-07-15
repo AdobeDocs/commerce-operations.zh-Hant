@@ -13,9 +13,9 @@ ht-degree: 0%
 
 本節討論如何解除安裝一或多個語言套件，選擇性地包括檔案系統中的語言套件程式碼。 您可以先建立備份，以便稍後還原資料。
 
-此命令會解除安裝 *僅限* 中指定的語言套件 `composer.json`；換言之，就是提供為Composer套件的語言套件。 如果您的語言套件不是Composer套件，您必須從檔案系統移除語言套件程式碼，以手動方式解除安裝它。
+這個命令只會解除安裝`composer.json`中指定的&#x200B;*僅*&#x200B;語言套件；換句話說，會解除安裝提供為Composer套件的語言套件。 如果您的語言套件不是Composer套件，您必須從檔案系統移除語言套件程式碼，以手動方式解除安裝它。
 
-您可以隨時使用還原備份 [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) 命令。
+您可以隨時使用[`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files)命令還原備份。
 
 命令使用方式：
 
@@ -29,8 +29,8 @@ bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {langu
 
    若要解決此問題，您可以同時解除安裝所有相依的語言套件，或者先解除安裝相依的語言套件。
 
-1. 如果 `--backup code` 指定，備份檔案系統(不包括 `var` 和 `pub/static` 目錄) `var/backups/<timestamp>_filesystem.tgz`
-1. 使用從程式碼基底移除語言套件檔案 `composer remove`.
+1. 若指定`--backup code`，請將檔案系統（不包括`var`與`pub/static`目錄）備份至`var/backups/<timestamp>_filesystem.tgz`
+1. 使用`composer remove`從程式碼基底移除語言套件檔案。
 1. 清除快取。
 
 例如，如果您嘗試解除安裝其他語言套件所依賴的語言套件，會顯示下列訊息：

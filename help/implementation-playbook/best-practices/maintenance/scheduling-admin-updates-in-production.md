@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 0%
+source-wordcount: '135'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -32,6 +32,6 @@ ht-degree: 0%
 ## 其他資訊
 
 - [快取的最佳實務](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
-- [私人內容：讓私人內容失效](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [私人內容：使私人內容無效](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [硬體建議：快取](../../../performance/hardware.md#caches)
 - [進階設定：設定Redi](../../../performance/advanced-setup.md#set-up-redis)

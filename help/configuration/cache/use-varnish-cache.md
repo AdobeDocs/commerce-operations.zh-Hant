@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 清漆清除
 
-根據 [塗漆檔案](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html)， &quot;A *清除* 當您從快取中挑選出物件並捨棄它及其變體時，就會發生這種情況。」 清漆清除類似於快取清除指令(或按一下 **排清Magento快取** （在Admin中）。
+根據[Varnish檔案](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html)，「當您從快取中挑選物件並捨棄它及其變體時，就會發生&#x200B;*清除*。」 清漆清除類似於快取清除命令(或按一下Admin中的&#x200B;**排清Magento快取**)。
 
 事實上，當您清除、排清或重新整理Commerce快取時，「清漆」也會清除。
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
    - **商店** > **設定** > **設定** >一般> **一般**
    - **商店** > **設定** > **設定** >一般> **貨幣設定**
-   - **商店** > **設定** > **設定** >一般> **儲存電子郵件地址**
+   - **商店** > **設定** > **設定** >一般> **商店電子郵件地址**
 
   當Commerce偵測到這類變更時，會顯示一則訊息，通知您重新整理快取。
 
@@ -38,15 +38,15 @@ ht-degree: 0%
 
 - 維護原始程式碼。
 
-  您應該重新整理快取，並定期刪除 `generated/code` 和 `generated/metadata` 目錄。 如需重新整理快取的詳細資訊，請參閱下一節。
+  您應該重新整理快取，並定期刪除`generated/code`和`generated/metadata`目錄中的所有專案。 如需重新整理快取的詳細資訊，請參閱下一節。
 
 ## 設定Commerce以清除清漆
 
-使用設定清漆主機後，Commerce會清除清漆主機 [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) 命令。
+使用[`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset)命令設定Varnish主機後，Commerce會清除清漆主機。
 
-您可以使用選用的引數 `--http-cache-hosts` 引數，用於指定清漆主機和接聽連線埠的逗號分隔清單。 設定所有Varnish主機，無論您有一台或多台。 （請勿以空格字元分隔主機。）
+您可以使用選用的引數`--http-cache-hosts`引數，指定以逗號分隔的Varnish主機和監聽連線埠清單。 設定所有Varnish主機，無論您有一台或多台。 （請勿以空格字元分隔主機。）
 
-引數格式必須為 `<hostname or ip>:<listen port>`，可省略 `<listen port>` 若是連線埠80。
+引數格式必須是`<hostname or ip>:<listen port>`，若是連線埠80，則可以省略`<listen port>`。
 
 例如，
 
@@ -54,8 +54,8 @@ ht-degree: 0%
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-接著，您可以在重新整理Commerce快取時，清除Varnish主機(也稱為 *清潔* 快取)，或使用命令列。
+當您在管理員中重新整理Commerce快取（也稱為&#x200B;*清除*&#x200B;快取）或使用命令列時，就可以清除Varnish主機。
 
-若要使用管理員重新整理快取，請按一下 **[!UICONTROL SYSTEM]** >工具> **快取管理**，然後按一下 **排清Magento快取** ，位於頁面頂端。 （您也可以重新整理個別快取型別。）
+若要使用Admin重新整理快取，請按一下[工具] > [快取管理] ****，然後按一下頁面頂端的[排清Magento快取] **。**[!UICONTROL SYSTEM]****（您也可以重新整理個別快取型別。）
 
-若要使用命令列重新整理快取，您通常會使用 [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) 命令作為 [檔案系統擁有者](../../installation/prerequisites/file-system/overview.md).
+若要使用命令列重新整理快取，您通常使用[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types)命令作為[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)。

@@ -5,7 +5,7 @@ exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
 feature: Best Practices, Checkout
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 零售商應提供不同的送貨方式，以符合不同客戶的需求。
 
-除了付款選項，零售商也可以提供 [按一下並收集](click-collect.md).
+除了付款選項，零售商也可以提供[點按與收款](click-collect.md)等選項。
 
 ## 付款詳細資料
 

@@ -4,7 +4,7 @@ description: 瞭解目前支援的Adobe Commerce功能，並檢查其與特定Ad
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 source-git-commit: 9761e3827add0e8b60e1bb53664ff65170608317
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe已完整測試支援的版本。 Adobe客戶支援可提供支援版本的
 
 >[!NOTE]
 >
->對Adobe Commerce版本的支援還包括對 [可用的安全性修補程式](versions.md).
+>支援Adobe Commerce版本也包含支援[可用的安全性修補程式](versions.md)。
 
 ## Adobe編寫的擴充功能
 
@@ -31,12 +31,12 @@ Adobe已完整測試支援的版本。 Adobe客戶支援可提供支援版本的
 
 ## Commerce服務
 
-[Commerce服務](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) 是一套Adobe託管功能，結合您的Commerce執行個體，提供強大的功能及快速的回應時間。
+[Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)是一套Adobe託管功能，結合您的Commerce執行個體，提供強大的功能及快速的回應時間。
 
 建議商戶使用最新版本的服務，以確保最高的穩定性和功能。 本檔案說明目前發行的版本。
 
 * Adobe Commerce服務目前與Commerce 2.4.4和更新版本相容。 建議商戶使用最新版服務。
-* 系統將服務視為與舊版Commerce 2.4.x相容，但並不正式支援。
+* 系統會將服務視為與舊版Commerce 2.4.x相容，但並不正式支援。
 * 服務與Commerce 2.3.x不相容，除了產品Recommendations 3.3.7和更早版本。
 
 下表顯示各服務相對於Adobe Commerce版本的版本支援。

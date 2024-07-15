@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-您必須啟動 [訊息佇列取用者](../queues/consumers.md) 啟用非同步操作，例如Inventory management大量動作和REST大量和非同步端點。 若要啟用B2B功能，您必須啟動多個取用者。 協力廠商模組可能也需要您啟動自訂消費者。
+您必須啟動[訊息佇列取用者](../queues/consumers.md)以啟用非同步操作，例如Inventory management大量動作和REST大量與非同步端點。 若要啟用B2B功能，您必須啟動多個取用者。 協力廠商模組可能也需要您啟動自訂消費者。
 
 若要檢視所有使用者的清單，請執行下列動作：
 
@@ -27,14 +27,14 @@ bin/magento queue:consumers:list
 bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>] [--single-thread] [--area-code=<value>] [--multi-process=<value>] <consumer_name>
 ```
 
-使用所有可用訊息後，該命令即終止。 您可以手動或使用cron作業再次執行此命令。 您也可以執行多個 `magento queue:consumers:start` 處理大型訊息佇列的命令。 例如，您可以附加 `&` 使用命令在背景執行，返回提示字元並繼續執行命令：
+使用所有可用訊息後，該命令即終止。 您可以手動或使用cron作業再次執行此命令。 您也可以執行多個`magento queue:consumers:start`命令的執行個體來處理大型訊息佇列。 例如，您可以將`&`附加至命令，以便在背景執行、返回提示字元並繼續執行命令：
 
 ```bash
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-另請參閱 [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart) 在的Commerce區段中 _命令列工具參考_ 瞭解指令選項、引數和值的詳細資訊。
+如需有關命令選項、引數和值的詳細資訊，請參閱&#x200B;_命令列工具參考_&#x200B;的Commerce區段中的[`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart)。
 
 >[!INFO]
 >
->此 `--multi-process` 選項存在於 `queue:consumers:start` 命令，但若要以平行程式執行消費者，請設定 [`multiple_processes`](../queues/manage-message-queues.md#configuration) 中的選項 `/app/etc/env.php`. 否則，如果 `queue:consumers:start` 使用呼叫 `--multi-process` 選項，它僅適用於單一執行緒。
+>`--multi-process`選項存在於`queue:consumers:start`命令中，但若要以平行處理序執行消費者，請在`/app/etc/env.php`中設定[`multiple_processes`](../queues/manage-message-queues.md#configuration)選項。 否則，如果使用`--multi-process`選項呼叫`queue:consumers:start`，則它僅適用於單一執行緒。

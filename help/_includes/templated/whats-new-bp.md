@@ -18,12 +18,12 @@ ht-degree: 2%
     <tr>
       <th>說明</th>
       <th>型別</th>
-      <th>來源</th>
+      <th>Source</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><p>新增以下專案的最佳實務 <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">升級MariaDB</a> 至10.5.1和更新版本。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">將MariaDB</a>升級至10.5.1和更新版本的最佳實務。</p>
 </td>
       <td>最佳實務</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> （認可）</td>
@@ -38,12 +38,12 @@ ht-degree: 2%
     <tr>
       <th>說明</th>
       <th>型別</th>
-      <th>來源</th>
+      <th>Source</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增以下專案的詳細資料： <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">L2快取記憶體大小調整組態選項</a> 適用於Adobe Commerce的雲端基礎結構。</p>
+      <td><p>已新增雲端基礎結構上Adobe Commerce的<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">L2快取記憶體大小調整組態選項</a>的詳細資料。</p>
 </td>
       <td>最佳實務</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> （認可）</td>

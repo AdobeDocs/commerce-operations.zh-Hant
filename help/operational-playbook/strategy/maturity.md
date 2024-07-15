@@ -4,7 +4,7 @@ description: 根據此成熟度模型，評估您的業務處於哪個階段。
 exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 下圖會概述各成熟度層級的不同需求：
 
-![各成熟度層級的需求圖表](../../assets/playbooks/maturity-levels.png)
+![跨成熟度層級的需求圖表](../../assets/playbooks/maturity-levels.png)
 
 ## 成熟度等級
 

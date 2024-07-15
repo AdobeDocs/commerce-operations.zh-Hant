@@ -13,7 +13,7 @@ ht-degree: 0%
 
 本主題說明如何：
 
-* [移除範例資料模組](#remove-sample-data-modules) 從Adobe Commerce安裝 `composer.json`. 此選項會 *非* 從資料庫移除範例資料。
+* [從Adobe Commerce安裝`composer.json`移除範例資料模組](#remove-sample-data-modules)。 這個選項&#x200B;*不會*&#x200B;從資料庫移除範例資料。
 
 * [準備更新範例資料](#prepare-to-update-sample-data) (例如，在更新Magento應用程式之前)。
 
@@ -59,4 +59,4 @@ bin/magento sampledata:remove
 bin/magento sampledata:reset
 ```
 
-之後， [更新應用程式](../tutorials/uninstall.md#update-the-application).
+之後，[更新應用程式](../tutorials/uninstall.md#update-the-application)。

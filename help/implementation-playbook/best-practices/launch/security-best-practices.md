@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需在雲端基礎結構上保護和維護Adobe Commerce專案的角色和責任的資訊，請參閱 [共擔責任模型](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart))中 _Adobe Commerce安全性與合規性指南_.
+>如需在雲端基礎結構上保護和維護Adobe Commerce專案的角色和責任的詳細資訊，請參閱&#x200B;_Adobe Commerce安全性與合規性指南_&#x200B;中的[共用責任模式](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)。
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -31,43 +31,43 @@ Adobe認為下列建議為所有客戶的最高優先順序。 在所有Commerce
 
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **為您的管理員和所有SSH連線啟用雙因素驗證**
 
-- [Commerce管理員安全性](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
+- [Commerce管理員的安全性](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
 
-- [安全的SSH連線](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html) （雲端基礎結構）
+- [安全SSH連線](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html) （雲端基礎結構）
 
 在專案上啟用MFA時，具有SSH存取權的雲端基礎結構帳戶上的所有Adobe Commerce都必須遵循驗證工作流程。 此工作流程需要雙因素驗證(2FA)代碼，或API權杖和SSH憑證才能存取環境。
 
-![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **保護管理員的安全**
+![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **保護管理員**
 
-- [設定非預設管理員URL](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html#use-a-custom-admin-url) 而不使用預設值 `admin` 或常用辭彙，例如 `backend`. 此設定可減少嘗試取得未經授權存取您網站的指令碼暴露情形。
+- [設定非預設管理員URL](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html#use-a-custom-admin-url)，而不使用預設`admin`或常用辭彙（例如`backend`）。 此設定可減少嘗試取得未經授權存取您網站的指令碼暴露情形。
 
-- [設定進階安全性設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) — 將秘密金鑰新增至URL、要求密碼必須區分大小寫，並限制管理員工作階段長度、密碼存留時間間隔，以及鎖定管理員使用者帳戶之前允許的登入嘗試次數。 為了提高安全性，請設定目前工作階段到期前鍵盤閒置的時間長度，並要求使用者名稱和密碼區分大小寫。
+- [設定進階安全性設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) — 將機密金鑰新增至URL、要求密碼必須區分大小寫，並限制管理員工作階段長度、密碼存留時間間隔，以及在鎖定管理員使用者帳戶之前允許的登入嘗試次數。 為了提高安全性，請設定目前工作階段到期前鍵盤閒置的時間長度，並要求使用者名稱和密碼區分大小寫。
 
-- [啟用ReCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) 以保護管理員免受自動暴力攻擊。
+- [啟用ReCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html)以保護管理員不受自動暴力攻擊。
 
-- 指派時遵循最低許可權原則 [管理員許可權](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html) 角色與角色至管理員使用者帳戶。
+- 將[管理員許可權](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html)指派給角色和角色指派給管理員使用者帳戶時，請遵循最低許可權原則。
 
-![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **升級至最新版Adobe Commerce**
+![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **升級至Adobe Commerce的最新版本**
 
-讓您的程式碼保持更新，方法是 [將您的Commerce專案升級至最新版本](#upgrade-to-the-latest-release) Adobe Commerce、Commerce服務和擴充功能的修補程式，包括Adobe提供的安全性修補程式、Hotfix和其他修補程式。
+透過[將您的Commerce專案升級至Adobe Commerce、Commerce服務和擴充功能的最新版本](#upgrade-to-the-latest-release) (包括安全性修補程式、Hotfix和Adobe提供的其他修補程式)，保持您的程式碼更新。
 
-![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **保護敏感設定值**
+![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **安全敏感設定值**
 
-使用 [設定管理](../../../configuration/cli/set-configuration-values.md) 以鎖定關鍵組態值。
+使用[組態管理](../../../configuration/cli/set-configuration-values.md)來鎖定重要的組態值。
 
-此 `lock config` 和 `lock env` CLI命令可設定環境變數，以防止它們從管理員更新。 命令會將值寫入 `<Commerce base dir>/app/etc/env.php` 檔案。 (如需雲端基礎結構專案的Commerce，請參閱 [存放區設定管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
+`lock config`和`lock env` CLI命令會設定環境變數，以防止它們從管理員更新。 命令會將值寫入`<Commerce base dir>/app/etc/env.php`檔案。 (若為雲端基礎結構專案上的Commerce，請參閱[存放區組態管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data)。)
 
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **執行安全性掃描**
 
-使用 [Commerce安全性掃描服務](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) 監控所有Adobe Commerce網站是否有已知的安全性風險和惡意程式，並註冊以接收修補程式更新和安全通知。
+使用[Commerce安全性掃描服務](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)來監視所有Adobe Commerce網站是否有已知的安全性風險和惡意軟體，並註冊接收修補程式更新和安全通知。
 
 ## 確保擴充功能和自訂程式碼的安全性
 
 當您從Adobe Commerce Marketplace新增協力廠商擴充功能或新增自訂程式碼來擴充Adobe Commerce時，請套用下列最佳實務來確保這些自訂的安全性：
 
-![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **選擇精通安全性的合作夥伴或解決方案整合商(SI)** — 選擇遵循安全開發實務並具有防止和解決安全性問題的良好記錄的組織，確保安全整合及自訂程式碼的安全傳送。
+![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **選擇精通安全性的合作夥伴或解決方案整合商(SI)** — 選取遵循安全開發實務並具有防止和解決安全性問題的可靠記錄的組織，以確保安全整合及自訂程式碼的安全傳遞。
 
-![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **使用安全擴充功能** — 請洽詢您的解決方案整合商或開發人員，並完成下列事項，以找出Commerce部署最適合且安全的擴充功能 [Adobe擴充功能最佳作法](../planning/extensions.md).
+![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **使用安全擴充功能** — 請諮詢您的解決方案整合商或開發人員，並遵循[Adobe擴充功能最佳實務](../planning/extensions.md)，以識別Commerce部署最適當且安全的擴充功能。
 
 - 僅限來自Adobe Commerce Marketplace或透過解決方案整合商的來源擴充功能。 如果擴充功能是透過整合器取得，請確保擴充功能授權的所有權可轉移，以防整合器變更。
 
@@ -75,9 +75,9 @@ Adobe認為下列建議為所有客戶的最高優先順序。 在所有Commerce
 
 - 如果可行，在與Commerce應用程式整合之前，請先檢閱擴充功能程式碼的安全性資訊。
 
-- 確保PHP擴充功能開發人員遵循Adobe Commerce開發指導方針、流程和安全性最佳實務。 具體來說，開發人員必須避免使用可能導致遠端程式碼執行或弱加密的PHP功能。 另請參閱 [安全性](https://developer.adobe.com/commerce/php/best-practices/security/) 在 *擴充功能開發人員的最佳實務指南*.
+- 確保PHP擴充功能開發人員遵循Adobe Commerce開發指導方針、流程和安全性最佳實務。 具體來說，開發人員必須避免使用可能導致遠端程式碼執行或弱加密的PHP功能。 請參閱&#x200B;*擴充功能開發人員最佳實務指南*&#x200B;中的[安全性](https://developer.adobe.com/commerce/php/best-practices/security/)。
 
-![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **稽核代碼** — 檢閱伺服器和原始程式碼存放庫中的開發剩餘專案。 確保沒有可存取的記錄檔、公開可見的.git目錄、執行SQL敘述句的通道、資料庫傾印、php資訊檔案，或任何其他不需要而且可能在攻擊中使用的未受保護檔案。
+![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **稽核程式碼** — 檢閱您的伺服器和原始程式碼存放庫中的開發剩餘專案。 確保沒有可存取的記錄檔、公開可見的.git目錄、執行SQL敘述句的通道、資料庫傾印、php資訊檔案，或任何其他不需要而且可能在攻擊中使用的未受保護檔案。
 
 ## 升級至最新版本
 
@@ -95,7 +95,7 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 
 >[!TIP]
 >
->訂閱以取得最新的安全性資訊，並減輕已知安全性問題的困擾 [Adobe安全性通知服務](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
+>訂閱[Adobe安全性通知服務](https://www.adobe.com/subscription/adbeSecurityNotifications.html)，以取得最新的安全性資訊，並減輕已知安全性問題的困擾。
 
 ## 制定災難回覆計畫
 
@@ -103,17 +103,17 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 
 如果客戶因災難而需要還原Commerce執行個體，Adobe可為客戶提供備份檔案。 如果適用，客戶和解決方案整合商可以執行還原。
 
-作為災難回覆計畫的一部分，Adobe強烈建議客戶 [匯出其Adobe Commerce應用程式設定](../../../configuration/cli/export-configuration.md) 以便在因業務持續性目的而需要時輕鬆部署。 將組態匯出至檔案系統的主要原因是系統組態優先於資料庫組態。 在唯讀檔案系統中，必須重新部署應用程式以變更敏感的組態設定，以提供額外的保護層。
+在災難回覆計畫中，Adobe強烈建議客戶[匯出其Adobe Commerce應用程式組態](../../../configuration/cli/export-configuration.md)，以便在因業務持續性目的而需要時，輕鬆重新部署。 將組態匯出至檔案系統的主要原因是系統組態優先於資料庫組態。 在唯讀檔案系統中，必須重新部署應用程式以變更敏感的組態設定，以提供額外的保護層。
 
 ### 其他資訊
 
-**在雲端基礎結構上部署的Adobe Commerce**
+**已在雲端基礎結構上部署Adobe Commerce**
 
 - [備份與災難回覆](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#backup-and-disaster-recovery)
 
-- [雲端基礎結構上Adobe Commerce的存放區設定管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
+- [在雲端基礎結構上為Adobe Commerce儲存配置管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
 
-**內部部署的Adobe Commerce**
+**內部部署Adobe Commerce**
 
 - [災難回覆概念](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
 
@@ -129,15 +129,15 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 
 本節概述維護Adobe Commerce安裝的網站與基礎架構安全性的最佳實務。 這些最佳實務大多著重於保護電腦基礎建設的安全，因此其中有些建議可能已經實施。
 
-![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **封鎖未經授權的存取** — 與您的託管合作夥伴合作，設定VPN通道以封鎖對Commerce網站和客戶資料的未經授權存取。 設定SSH通道以封鎖對Commerce應用程式的未授權存取。
+![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **封鎖未經授權的存取** — 請與您的代管合作夥伴合作設定VPN通道，以封鎖對Commerce網站和客戶資料的未經授權存取。 設定SSH通道以封鎖對Commerce應用程式的未授權存取。
 
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **使用Web應用程式防火牆** — 分析流量並發現可疑模式，例如使用Web應用程式防火牆傳送至未知IP位址的信用卡資訊。
 
-部署在雲端基礎結構上的Adobe Commerce安裝可以使用隨附的內建WAF服務 [Fastly服務整合](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+部署在雲端基礎結構上的Adobe Commerce安裝可以使用內建的WAF服務（可與[Fastly服務整合](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)搭配使用）
 
-![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **設定進階密碼安全性設定** — 根據PCI資料安全標準8.2.4節的建議，設定強式密碼並至少每90天變更一次。另請參閱 [設定管理員安全性設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
+![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **設定進階密碼安全性設定** — 設定強式密碼，並按照PCI資料安全性標準在8.2.4節中的建議，至少每90天變更一次。請參閱[設定管理員安全性設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)。
 
-![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **使用HTTPS** — 如果是新實作Commerce網站，請使用HTTPS啟動整個網站。 Google不僅使用HTTPS作為排名因素，而且許多使用者甚至不會考慮從網站購買，除非網站受到HTTPS的保護。
+![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **使用HTTPS** — 如果Commerce網站是新實作，請使用HTTPS啟動整個網站。 Google不僅使用HTTPS作為排名因素，而且許多使用者甚至不會考慮從網站購買，除非網站受到HTTPS的保護。
 
 ## 針對惡意程式碼的Protect
 
@@ -149,14 +149,14 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 
 使用者端信用卡掠奪者是一種將程式碼嵌入商家網站內容的惡意軟體，可在使用者的瀏覽器中執行，如下圖所示。
 
-![針對電子商務網站的惡意程式碼攻擊資料流程](../../../assets/playbooks/malware-data-flow.svg)
+![以電子商務網站為目標的惡意程式碼攻擊資料流程](../../../assets/playbooks/malware-data-flow.svg)
 
 在某些動作（例如使用者提交表單或修改欄位值）發生後，Skimmer會將資料序列化並傳送至第三方端點。 這些端點通常是其他受到侵害的網站，會作為轉送資料到其最終目的地的轉送。
 
 
 >[!TIP]
 >
->如果Commerce網站受到惡意程式碼攻擊的影響，請遵循適用於的Adobe Commerce最佳實務 [回應安全性事件](../maintenance/respond-to-security-incident.md).
+>如果Commerce網站受到惡意程式碼攻擊的影響，請依照Adobe Commerce最佳作法[回應安全性事件](../maintenance/respond-to-security-incident.md)。
 
 ### 瞭解最常見的攻擊
 
@@ -164,13 +164,13 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 
 - **網站損毀** — 攻擊者透過變更網站的視覺外觀或新增自己的訊息來損害網站。 雖然對網站和使用者帳戶的存取權已受到危害，但付款資訊通常仍會保持安全。
 
-- **殭屍網路** — 客戶的Commerce伺服器會成為傳送垃圾電子郵件的botnet的一部分。 雖然使用者資料通常不會受到危害，但客戶的網域名稱可能會被垃圾郵件篩選器列入封鎖名單，以防止從網域傳送任何電子郵件。 或者，客戶的網站會成為殭屍網路的一部分，導致其他網站上的分散式阻斷服務(DDoS)攻擊。殭屍網路可能會封鎖傳入Commerce伺服器的IP流量，導致客戶無法購物。
+- **殭屍網路** — 客戶的Commerce伺服器會成為傳送垃圾電子郵件之殭屍網路的一部分。 雖然使用者資料通常不會受到危害，但客戶的網域名稱可能會被垃圾郵件篩選器列入封鎖名單，以防止從網域傳送任何電子郵件。 或者，客戶的網站會成為殭屍網路的一部分，導致其他網站上的分散式阻斷服務(DDoS)攻擊。殭屍網路可能會封鎖傳入Commerce伺服器的IP流量，導致客戶無法購物。
 
-- **直接伺服器攻擊** — 資料受到危害，後門和惡意程式碼已安裝，網站作業也受到影響。 未儲存在伺服器上的付款資訊不太可能因這些攻擊而受到危害。
+- **直接伺服器攻擊** — 資料遭到破壞、後門和惡意程式碼已安裝，且網站作業受到影響。 未儲存在伺服器上的付款資訊不太可能因這些攻擊而受到危害。
 
-- **無訊息卡擷取** — 在這次最災難性的攻擊中，入侵者會安裝隱藏的惡意程式碼或卡片擷取軟體，或更糟的是，會修改結帳程式以收集信用卡資料。 然後，資料會傳送到另一個網站，以供在黑暗網站上出售。 這類攻擊可能會在較長的一段時間內不被發現，並可能導致客戶帳戶和財務資訊的重大危害。
+- **無訊息卡擷取** — 在這個最災難性的攻擊中，入侵者會安裝隱藏的惡意程式碼或卡擷取軟體，或更糟的是，會修改結帳程式以收集信用卡資料。 然後，資料會傳送到另一個網站，以供在黑暗網站上出售。 這類攻擊可能會在較長的一段時間內不被發現，並可能導致客戶帳戶和財務資訊的重大危害。
 
-- **無訊息金鑰記錄** — 威脅執行者會在客戶伺服器上安裝金鑰記錄程式碼，以收集管理員使用者憑證，讓他們可以登入並啟動其他攻擊，而不會被偵測到。
+- **無訊息金鑰記錄** — 威脅執行者會在客戶伺服器上安裝金鑰記錄程式碼，以收集管理員使用者認證，讓他們可以登入並啟動其他攻擊，而不會被偵測到。
 
 ### Protect抵禦密碼猜測攻擊
 
@@ -178,11 +178,11 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 
 - 識別並保護可從外部存取Commerce安裝的所有接觸點。
 
-  您可以依照Adobe的，確保對管理員的存取安全，這通常需要最高的保護。 [優先順序建議](#priority-recommendations) 設定Commerce專案時。
+  設定Commerce專案時，您可以依照Adobe的[優先順序建議](#priority-recommendations)，確保對管理員的存取權（通常需要最嚴格的保護）。
 
 - 設定存取控制清單，只允許來自指定IP位址或網路的使用者存取，藉此控制對Commerce網站的存取。
 
-  您可以使用Fastly Edge ACL搭配自訂VCL程式碼片段，篩選傳入的請求並允許IP位址存取。 另請參閱 [允許要求的自訂VCL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
+  您可以使用Fastly Edge ACL搭配自訂VCL程式碼片段，篩選傳入的請求並允許IP位址存取。 檢視[允許要求](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html)的自訂VCL。
 
 
   >[!TIP]
@@ -191,4 +191,4 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 
 ### 避免點選劫持利用漏洞
 
-Adobe可提供 `X-Frame-Options` 您可以包含在店面要求中的HTTP要求標題。 另請參閱 [避免點選劫持利用漏洞](../../../configuration/security/xframe-options.md) 在 *Adobe Commerce設定指南*.
+Adobe會提供`X-Frame-Options` HTTP要求標頭，供您加入對店面的要求中，以保護您的店面免受點選劫持攻擊。 請參閱&#x200B;*Adobe Commerce設定指南*&#x200B;中的[避免點選劫持](../../../configuration/security/xframe-options.md)。

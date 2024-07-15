@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 客戶設定路徑參考
 
-本節列出「管理員」中選項可用的變數名稱和設定路徑，位於 **商店** >設定> **設定** > **客戶**.
+本節列出&#x200B;**商店** >設定> **設定** > **客戶**&#x200B;底下「管理員」中選項的變數名稱和設定路徑。
 
-此 [`magento app:config:dump` 命令](../cli/export-configuration.md) 將這些值寫入共用組態檔， `app/etc/config.php`，這應該是在原始檔控制中。 若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱 [使用環境變數覆寫組態設定](override-config-settings.md#environment-variables). 此主題會 _非_ 清單 [敏感值和系統特定值](config-reference-sens.md).
+[`magento app:config:dump`命令](../cli/export-configuration.md)將這些值寫入到共用組態檔`app/etc/config.php`，它應該是在原始檔控制中。 若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱[使用環境變數覆寫組態設定](override-config-settings.md#environment-variables)。 此主題&#x200B;_不_&#x200B;列出[敏感值和系統特定值](config-reference-sens.md)。
 
 ## Newsletter路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **客戶** > **電子報**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **客戶** > **電子報**&#x200B;的Admin中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## 客戶設定路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **客戶** > **客戶組態**.
+這些組態值可在&#x200B;**商店** >設定> **組態** > **客戶** > **客戶組態**&#x200B;的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -77,20 +77,20 @@ ht-degree: 0%
 | 顯示中間名（初始） | `customer/address/middlename_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示尾碼 | `customer/address/suffix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 尾碼下拉式清單選項 | `customer/address/suffix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 顯示出生日期 | `customer/address/dob_show`<br>為了遵循目前的安全性和隱私權最佳實務，在收集或處理此類資料之前，請務必瞭解任何與儲存客戶完整出生日期（月、日、年）及其他個人識別碼（例如全名）相關的潛在法律和安全風險。 | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 顯示出生日期 | `customer/address/dob_show`<br>根據目前的安全與隱私權最佳實務，在收集或處理這類資料之前，請務必瞭解任何與儲存客戶完整出生日期（月、日、年）相關的潛在法律與安全性風險，以及其他個人識別碼，例如全名。 | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示稅捐/VAT編號 | `customer/address/taxvat_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示性別 | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 啟用商店信用功能 | `customer/magento_customerbalance/is_enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 向客戶顯示商店信用記錄 | `customer/magento_customerbalance/show_history` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 自動退款商店點數 | `customer/magento_customerbalance/refund_automatically` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 儲存信用更新電子郵件寄件者 | `customer/magento_customerbalance/email_identity` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 商店信用更新電子郵件範本 | `customer/magento_customerbalance/email_template` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 啟用商店信用功能 | `customer/magento_customerbalance/is_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 向客戶顯示商店信用記錄 | `customer/magento_customerbalance/show_history` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 自動退款商店點數 | `customer/magento_customerbalance/refund_automatically` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 儲存信用更新電子郵件寄件者 | `customer/magento_customerbalance/email_identity` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 商店信用更新電子郵件範本 | `customer/magento_customerbalance/email_template` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 登入後將客戶重新導向至帳戶控制面板 | `customer/startup/redirect_dashboard` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 文字 | `customer/address_templates/text` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 文字一行 | `customer/address_templates/oneline` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | HTML | `customer/address_templates/html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PDF | `customer/address_templates/pdf` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 啟用客戶區段功能 | `customer/magento_customersegment/is_enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 啟用客戶區段功能 | `customer/magento_customersegment/is_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 在店面啟用驗證碼 | `customer/captcha/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 字型 | `customer/captcha/font` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Forms | `customer/captcha/forms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -105,13 +105,13 @@ ht-degree: 0%
 
 ## 希望清單路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **客戶** > **希望清單**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **客戶** > **願望清單**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
 | 已啟用 | `wishlist/general/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 啟用多個希望清單 | `wishlist/general/multiple_enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 多個希望清單的數量 | `wishlist/general/multiple_wishlist_number` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 啟用多個希望清單 | `wishlist/general/multiple_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 多個希望清單的數量 | `wishlist/general/multiple_wishlist_number` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 電子郵件寄件者 | `wishlist/email/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 電子郵件範本 | `wishlist/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 允許傳送的最大電子郵件數 | `wishlist/email/number_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -122,69 +122,69 @@ ht-degree: 0%
 
 ## 邀請路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **客戶** > **邀請**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **客戶** > **邀請**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
-| 啟用邀請功能 | `magento_invitation/general/enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 啟用店面的邀請 | `magento_invitation/general/enabled_on_front` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 引用的客戶群組 | `magento_invitation/general/registration_use_inviter_group` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 新帳戶註冊 | `magento_invitation/general/registration_required_invitation` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許客戶新增自訂訊息至邀請電子郵件 | `magento_invitation/general/allow_customer_message` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許一次傳送的最大邀請數 | `magento_invitation/general/max_invitation_amount_per_send` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 客戶邀請電子郵件寄件者 | `magento_invitation/email/identity` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 客戶邀請電子郵件範本 | `magento_invitation/email/template` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 啟用邀請功能 | `magento_invitation/general/enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 啟用店面的邀請 | `magento_invitation/general/enabled_on_front` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 引用的客戶群組 | `magento_invitation/general/registration_use_inviter_group` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 新帳戶註冊 | `magento_invitation/general/registration_required_invitation` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許客戶新增自訂訊息至邀請電子郵件 | `magento_invitation/general/allow_customer_message` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許一次傳送的最大邀請數 | `magento_invitation/general/max_invitation_amount_per_send` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 客戶邀請電子郵件寄件者 | `magento_invitation/email/identity` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 客戶邀請電子郵件範本 | `magento_invitation/email/template` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## 獎勵點數路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **客戶** > **獎勵點數**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **客戶** > **獎勵點數**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
-| 啟用獎勵點數功能 | `magento_reward/general/is_enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 啟用店面的獎勵點數功能 | `magento_reward/general/is_enabled_on_front` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 客戶可檢視獎勵點數歷史記錄 | `magento_reward/general/publish_history` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 獎勵點數餘額兌換臨界值 | `magento_reward/general/min_points_balance` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將獎勵點數餘額限制在 | `magento_reward/general/max_points_balance` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 獎勵點數的有效期限（天） | `magento_reward/general/expiration_days` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 獎勵積分到期計算 | `magento_reward/general/expiry_calculation` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 自動退款獎勵積分 | `magento_reward/general/refund_automatically` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 自動從退款金額中扣除獎勵積分 | `magento_reward/general/deduct_automatically` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 登陸頁面 | `magento_reward/general/landing_page` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 購買 | `magento_reward/points/order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 註冊 | `magento_reward/points/register` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| Newsletter註冊 | `magento_reward/points/newsletter` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將邀請轉換為客戶 | `magento_reward/points/invitation_customer` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 邀請客戶轉換數量限制 | `magento_reward/points/invitation_customer_limit` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 將邀請轉換為訂單 | `magento_reward/points/invitation_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 訂單轉換邀請數量限制 | `magento_reward/points/invitation_order_limit` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 邀請轉換至訂單獎勵 | `magento_reward/points/invitation_order_frequency` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 檢閱提交 | `magento_reward/points/review` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 獎勵複查提交數量限制 | `magento_reward/points/review_limit` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 電子郵件寄件者 | `magento_reward/notification/email_sender` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 預設訂閱客戶 | `magento_reward/notification/subscribe_by_default` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 餘額更新電子郵件 | `magento_reward/notification/balance_update_template` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 獎勵點數到期警告電子郵件 | `magento_reward/notification/expiry_warning_template` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| （天）前到期警告 | `magento_reward/notification/expiry_day_before` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 啟用獎勵點數功能 | `magento_reward/general/is_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 啟用店面的獎勵點數功能 | `magento_reward/general/is_enabled_on_front` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 客戶可檢視獎勵點數歷史記錄 | `magento_reward/general/publish_history` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 獎勵點數餘額兌換臨界值 | `magento_reward/general/min_points_balance` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將獎勵點數餘額限制在 | `magento_reward/general/max_points_balance` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 獎勵點數的有效期限（天） | `magento_reward/general/expiration_days` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 獎勵積分到期計算 | `magento_reward/general/expiry_calculation` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 自動退款獎勵積分 | `magento_reward/general/refund_automatically` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 自動從退款金額中扣除獎勵積分 | `magento_reward/general/deduct_automatically` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 登陸頁面 | `magento_reward/general/landing_page` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 購買 | `magento_reward/points/order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 註冊 | `magento_reward/points/register` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| Newsletter註冊 | `magento_reward/points/newsletter` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將邀請轉換為客戶 | `magento_reward/points/invitation_customer` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 邀請客戶轉換數量限制 | `magento_reward/points/invitation_customer_limit` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 將邀請轉換為訂單 | `magento_reward/points/invitation_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 訂單轉換邀請數量限制 | `magento_reward/points/invitation_order_limit` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 邀請轉換至訂單獎勵 | `magento_reward/points/invitation_order_frequency` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 檢閱提交 | `magento_reward/points/review` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 獎勵複查提交數量限制 | `magento_reward/points/review_limit` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 電子郵件寄件者 | `magento_reward/notification/email_sender` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 預設訂閱客戶 | `magento_reward/notification/subscribe_by_default` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 餘額更新電子郵件 | `magento_reward/notification/balance_update_template` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 獎勵點數到期警告電子郵件 | `magento_reward/notification/expiry_warning_template` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| （天）前到期警告 | `magento_reward/notification/expiry_day_before` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## 促銷活動路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **客戶** > **促銷活動**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **客戶** > **促銷活動**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
 | 啟用提醒電子郵件 | `promo/magento_reminder/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 頻率 | `promo/magento_reminder/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 間隔 | `promo/magento_reminder/interval` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 一小時中的分鐘 | `promo/magento_reminder/minutes` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 開始時間 | `promo/magento_reminder/time` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 每次執行的最大電子郵件數 | `promo/magento_reminder/limit` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 電子郵件傳送失敗閾值 | `promo/magento_reminder/threshold` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 提醒電子郵件寄件者 | `promo/magento_reminder/identity` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 一小時中的分鐘 | `promo/magento_reminder/minutes` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 開始時間 | `promo/magento_reminder/time` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 每次執行的最大電子郵件數 | `promo/magento_reminder/limit` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 電子郵件傳送失敗閾值 | `promo/magento_reminder/threshold` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 提醒電子郵件寄件者 | `promo/magento_reminder/identity` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 程式碼長度 | `promo/auto_generated_coupon_codes/length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 程式碼格式 | `promo/auto_generated_coupon_codes/format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 程式碼首碼 | `promo/auto_generated_coupon_codes/prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -195,7 +195,7 @@ ht-degree: 0%
 
 ## 贈品登入路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **客戶** > **贈品登入**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **客戶** > **禮品登入**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -213,7 +213,7 @@ ht-degree: 0%
 
 ## 永續性購物車路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **客戶** > **永久購物車**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **客戶** > **永久購物車**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|

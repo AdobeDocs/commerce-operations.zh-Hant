@@ -3,13 +3,13 @@ title: 程式碼管理最佳作法
 description: 瞭解Adobe Commerce專案開發階段的程式碼管理最佳實務。
 feature: Best Practices
 role: Developer
-source-git-commit: 0902997fb0bf862b37a5e29026f462bf8c86c96b
+exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce的程式碼管理最佳作法
 
@@ -21,12 +21,12 @@ ht-degree: 0%
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
 
-它同時涵蓋兩者 [全球參考架構(GRA)](../../architecture/global-reference/overview.md) 和單一執行個體安裝。
+它涵蓋[全域參考架構(GRA)](../../architecture/global-reference/overview.md)和單一執行個體安裝。
 
 ## 定義
 
@@ -80,35 +80,35 @@ ht-degree: 0%
 
 | 功能 | Git | 作曲者 |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| 主要程式碼存放庫 | 所有程式碼都位在單一或數個Git存放庫中 | 所有程式碼都位在Composer存放庫的套件中<br>每個單一Composer套件由Git存放庫表示 |
-| 程式碼位置 | 開發會在中進行 `app/` 目錄 | 開發會在中進行 `vendor/` 目錄 |
+| 主要程式碼存放庫 | 所有程式碼都位在單一或數個Git存放庫中 | 所有程式碼都在Composer存放庫中的套件中<br>每個單一Composer套件都由Git存放庫表示 |
+| 程式碼位置 | 開發發生在`app/`目錄中 | 開發發生在`vendor/`目錄中 |
 | 核心升級管理 | 使用Composer安裝及升級Adobe Commerce核心，結果會在Git中認可 | Adobe Commerce核心已使用Composer安裝和升級；結果會提交到Git中 |
-| 協力廠商模組管理 | 協力廠商模組安裝於中 `vendor/` 可透過marketplace或packagist.org安裝。 否則，它們會安裝在中 `app/` | 所有協力廠商模組都安裝在 `vendor/` 目錄 |
-| 發行版本 | 釋出的特點是 `git merge` 和 `git pull` 或 `git checkout` 命令 | 釋出的特點是 `composer update` 和 `git pull` 或 `git checkout` 命令 |
+| 協力廠商模組管理 | 協力廠商模組若是透過Marketplace或packagist.org安裝，則會安裝在`vendor/`中。 否則會安裝在`app/`中 | 所有協力廠商模組都安裝在`vendor/`目錄中 |
+| 發行版本 | 釋放的特徵為`git merge`和`git pull`或`git checkout`命令 | 釋放的特徵為`composer update`和`git pull`或`git checkout`命令 |
 | Git存放庫數量 | 少數 | 許多 |
 | 開發複雜性 | 簡單 | 複雜 |
 | 提取請求複雜性 | 簡單 | 複雜 |
 | 程式碼檢閱複雜性 | 簡單 | 簡單 |
 | 開發/QA/UAT環境更新複雜性 | 簡單 | 複雜 |
-| GRA支援 | ![「是」圖示](../../../assets/yes.svg) | ![「是」圖示](../../../assets/yes.svg) |
-| 模組可以自動安裝外部程式庫 | ![無圖示](../../../assets/no.svg) | ![「是」圖示](../../../assets/yes.svg) |
-| GRA組合中的彈性 | ![無圖示](../../../assets/no.svg) | ![「是」圖示](../../../assets/yes.svg) |
-| 模組相依性管理 | ![「是」圖示](../../../assets/yes.svg) 僅透過 `module.xml`，功能有限 | ![「是」圖示](../../../assets/yes.svg) 完整的相依性管理，透過 `composer.json` |
-| 模組版本設定 | ![「是」圖示](../../../assets/yes.svg) 您可以定義版本，但無法安裝特定版本 | ![「是」圖示](../../../assets/yes.svg) 完整版本支援 |
+| GRA支援 | ![是圖示](../../../assets/yes.svg) | ![是圖示](../../../assets/yes.svg) |
+| 模組可以自動安裝外部程式庫 | ![沒有圖示](../../../assets/no.svg) | ![是圖示](../../../assets/yes.svg) |
+| GRA組合中的彈性 | ![沒有圖示](../../../assets/no.svg) | ![是圖示](../../../assets/yes.svg) |
+| 模組相依性管理 | ![是圖示](../../../assets/yes.svg)僅透過`module.xml`，功能有限 | ![是圖示](../../../assets/yes.svg)透過`composer.json`進行完整相依性管理 |
+| 模組版本設定 | ![是圖示](../../../assets/yes.svg)您可以定義版本，但無法安裝特定版本 | ![是圖示](../../../assets/yes.svg)完整版本支援 |
 | 需要付費服務 | Git存放庫 | Git存放庫、私人封裝商(每年600±元) |
-| 可能與Jira整合Bitbucket | ![「是」圖示](../../../assets/yes.svg) | ![「是」圖示](../../../assets/yes.svg) |
-| 可立即安裝的程式碼變更 | ![「是」圖示](../../../assets/yes.svg) | ![「是」圖示](../../../assets/yes.svg) |
+| 可能與Jira整合Bitbucket | ![是圖示](../../../assets/yes.svg) | ![是圖示](../../../assets/yes.svg) |
+| 可立即安裝的程式碼變更 | ![是圖示](../../../assets/yes.svg) | ![是圖示](../../../assets/yes.svg) |
 
 ## 要避免的解決方案
 
-1. **組合撰寫器和 `app/code` 適用於您的模組**
+1. **為您的模組**&#x200B;組合撰寫器和`app/code`
 
    導致這兩個程式碼管理樣式在您的專案中結合的所有缺點。 這增加了不必要的複雜性、不穩定和缺乏彈性。
 
    例如：
    - 向開發團隊說明Git和撰寫器工作流程（而非只有一個）。
-   - 在中安裝不相容的模組 `app/code` 因為目前沒有任何方法可以阻止這種情況發生。
-   - 移動模組 `app/code` to Composer （或反之）很麻煩，尤其是在持續開發的過程中。
+   - 在`app/code`中安裝不相容的模組，因為沒有可以阻止其發生的專案。
+   - 將模組從`app/code`移至Composer （或反之）很麻煩，尤其是在進行中的開發中。
 
 1. **Satis封裝管理員**
 

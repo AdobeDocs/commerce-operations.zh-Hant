@@ -6,14 +6,14 @@ feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 0%
+source-wordcount: '138'
+ht-degree: 1%
 
 ---
 
 # Adobe Commerce中OPcache記憶體大小的最佳作法
 
-針對雲端基礎結構上的Adobe Commerce Pro計畫架構2.3.x，建議設定 `opcache.memory_consumption` 至至少2 GB，以避免效能降低。
+針對雲端基礎結構上的Adobe Commerce Pro計畫架構2.3.x，建議將`opcache.memory_consumption`設定為至少2 GB，以避免效能降低。
 
 ## 受影響的產品和版本
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 設定記憶體
 
-至少分配 **2GB** 的記憶體 [Opcache PHP模組](https://www.php.net/manual/en/book.opcache.php). OPcache模組設定於 `php.ini` 檔案。 若要配置2048 MB記憶體，請設定 `opcache.memory_consumption = 2048`.
+為[OPcache PHP模組](https://www.php.net/manual/en/book.opcache.php)分配至少&#x200B;**2GB**&#x200B;的記憶體。 OPcache模組設定在`php.ini`檔案中。 若要配置2048 MB的記憶體，請設定`opcache.memory_consumption = 2048`。
 
 ## 其他資訊
 

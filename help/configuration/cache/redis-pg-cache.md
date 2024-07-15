@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 預設快取使用Redis
 
-Commerce提供命令列選項來設定Redis頁面和預設快取。 雖然您可以透過編輯 `<Commerce-install-dir>app/etc/env.php` 建議使用檔案（使用命令列），尤其是針對初始配置。 命令列會提供驗證，確保組態語法正確。
+Commerce提供命令列選項來設定Redis頁面和預設快取。 雖然您可以透過編輯`<Commerce-install-dir>app/etc/env.php`檔案來設定快取，但建議使用命令列的方法，尤其是對於初始設定。 命令列會提供驗證，確保組態語法正確。
 
-您必須 [安裝Redis](config-redis.md#install-redis) 然後再繼續。
+您必須[安裝Redis](config-redis.md#install-redis)，才能繼續。
 
 ## 設定Redis預設快取
 
-執行 `setup:config:set` 命令並指定Redis預設快取的特定引數。
+執行`setup:config:set`命令並指定Redis預設快取的特定引數。
 
 ```bash
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parameter>=<value>...
@@ -26,20 +26,20 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parame
 
 ，並使用下列引數：
 
-- `--cache-backend=redis` 啟用Redis預設快取。 如果已啟用此功能，請省略此引數。
+- `--cache-backend=redis`啟用Redis預設快取。 如果已啟用此功能，請省略此引數。
 
-- `--cache-backend-redis-<parameter>=<value>` 是設定預設快取的機碼和值組清單：
+- `--cache-backend-redis-<parameter>=<value>`是設定預設快取的機碼和值組清單：
 
 | 命令列引數 | 值 | 含義 | 預設值 |
 | ------------------------------ | --------- | ------- | ------------- |
 | `cache-backend-redis-server` | 伺服器 | 完整的主機名稱、IP位址或UNIX通訊端的絕對路徑。 預設值127.0.0.1表示Commerce伺服器上已安裝Redis。 | `127.0.0.1` |
 | `cache-backend-redis-port` | 連線埠 | Redis伺服器接聽連線埠 | `6379` |
-| `cache-backend-redis-db` | 資料庫 | 如果您對預設和全頁快取都使用Redis，則此為必要專案。 您必須指定其中一個快取的資料庫編號；另一個快取預設使用0。<br><br>**重要**：如果您將Redis用於多種型別的快取，則資料庫編號必須不同。 建議您將預設快取資料庫編號指派為0，將頁面快取資料庫編號指派為1，並將工作階段儲存資料庫編號指派為2。 | `0` |
-| `cache-backend-redis-password` | 密碼 | 設定Redis密碼可啟用其中一項內建的安全性功能： `auth` 命令，要求使用者端驗證以存取資料庫。 密碼直接在Redis的設定檔案中設定： `/etc/redis/redis.conf` | |
+| `cache-backend-redis-db` | 資料庫 | 如果您對預設和全頁快取都使用Redis，則此為必要專案。 您必須指定其中一個快取的資料庫編號；另一個快取預設使用0。<br><br>**重要**：如果您針對一種以上的快取型別使用Redis，則資料庫編號必須不同。 建議您將預設快取資料庫編號指派為0，將頁面快取資料庫編號指派為1，並將工作階段儲存資料庫編號指派為2。 | `0` |
+| `cache-backend-redis-password` | 密碼 | 設定Redis密碼可啟用其中一項內建的安全性功能： `auth`命令，它要求使用者端驗證以存取資料庫。 密碼是直接在Redis的組態檔中設定： `/etc/redis/redis.conf` | |
 
 ### 命令範例
 
-下列範例會啟用Redis預設快取，並將主機設為 `127.0.0.1`，並將資料庫編號指派為0。 Redis會針對所有其他引數使用預設值。
+下列範例會啟用Redis預設快取，將主機設定為`127.0.0.1`，並將資料庫編號指派為0。 Redis會針對所有其他引數使用預設值。
 
 ```bash
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
@@ -47,7 +47,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 ## 設定Redis頁面快取
 
-若要在Commerce上設定Redis頁面快取，請執行 `setup:config:set` 命令與其他引數。
+若要在Commerce上設定Redis頁面快取，請使用其他引數執行`setup:config:set`命令。
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
@@ -55,20 +55,20 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<
 
 ，並使用下列引數：
 
-- `--page-cache=redis` 啟用Redis頁面快取。 如果已啟用此功能，請省略此引數。
+- `--page-cache=redis`啟用Redis頁面快取。 如果已啟用此功能，請省略此引數。
 
-- `--page-cache-redis-<parameter>=<value>` 是設定頁面快取的鍵值值組清單：
+- `--page-cache-redis-<parameter>=<value>`是設定頁面快取的機碼和值組清單：
 
 | 命令列引數 | 值 | 含義 | 預設值 |
 | ------------------------------ | --------- | ------- | ------------- |
 | `page-cache-redis-server` | 伺服器 | 完整的主機名稱、IP位址或UNIX通訊端的絕對路徑。 預設值127.0.0.1表示Commerce伺服器上已安裝Redis。 | `127.0.0.1` |
 | `page-cache-redis-port` | 連線埠 | Redis伺服器接聽連線埠 | `6379` |
-| `page-cache-redis-db` | 資料庫 | 如果您對預設和完整頁面快取都使用Redis，則此為必要專案。 您必須指定其中一個快取的資料庫編號；另一個快取預設使用0。<br/>**重要**：如果您將Redis用於多種型別的快取，則資料庫編號必須不同。 建議您將預設快取資料庫編號指派為0，將頁面快取資料庫編號指派為1，並將工作階段儲存資料庫編號指派為2。 | `0` |
-| `page-cache-redis-password` | 密碼 | 設定Redis密碼可啟用其中一項內建的安全性功能： `auth` 命令，要求使用者端驗證以存取資料庫。 在Redis組態檔中設定密碼： `/etc/redis/redis.conf` | |
+| `page-cache-redis-db` | 資料庫 | 如果您對預設和完整頁面快取都使用Redis，則此為必要專案。 您必須指定其中一個快取的資料庫編號；另一個快取預設使用0。<br/>**重要**：如果您針對一種以上的快取型別使用Redis，則資料庫編號必須不同。 建議您將預設快取資料庫編號指派為0，將頁面快取資料庫編號指派為1，並將工作階段儲存資料庫編號指派為2。 | `0` |
+| `page-cache-redis-password` | 密碼 | 設定Redis密碼可啟用其中一項內建的安全性功能： `auth`命令，它要求使用者端驗證以存取資料庫。 在Redis組態檔中設定密碼： `/etc/redis/redis.conf` | |
 
 ### 命令範例
 
-下列範例會啟用Redis頁面快取，並將主機設為 `127.0.0.1`，並將資料庫編號指派給1。 所有其他引數都會設定為預設值。
+下列範例會啟用Redis頁面快取，將主機設定為`127.0.0.1`，並將資料庫編號指派為1。 所有其他引數都會設定為預設值。
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
@@ -76,7 +76,7 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
 
 ## 結果
 
-由於這兩個範例指令，Commerce將類似下列的行新增至 `<Commerce-install-dir>app/etc/env.php`：
+由於這兩個範例命令，Commerce將類似下列的行新增到`<Commerce-install-dir>app/etc/env.php`：
 
 ```php
 'cache' => [
@@ -112,9 +112,9 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
 
 ### 設定Redis叢集
 
-晚於 [在AWS上設定Redis群集](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/)，設定EC2執行個體以使用ElastiCache。
+在[在AWS](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/)上設定Redis叢集後，請設定EC2執行個體以使用ElastiCache。
 
-1. [建立ElastiCache叢集](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) 與EC2執行個體的VPC位於相同區域。
+1. [在相同區域和EC2執行個體的VPC中建立ElastiCache叢集](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html)。
 1. 驗證連線。
 
    - 開啟與EC2執行個體的SSH連線
@@ -124,8 +124,8 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
      sudo apt-get install redis
      ```
 
-   - 將輸入規則新增至EC2安全性群組：型別 `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - 將輸入規則新增至ElastiCache叢集安全性群組：型別 `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
+   - 將輸入規則新增至EC2安全性群組：型別`- Custom TCP, port - 6379, Source - 0.0.0.0/0`
+   - 將輸入規則新增至ElastiCache叢集安全性群組：型別`- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - 連線至Redis CLI：
 
      ```bash
@@ -134,9 +134,9 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
 
 ### 設定Commerce以使用叢集
 
-Commerce支援多種型別的快取設定。 一般而言，快取設定會在前端和後端之間分割。 前端快取分類為 `default`，用於任何快取型別。 您可以自訂或分割為較低層級的快取以取得較佳的效能。 常見的Redis組態是將預設快取和頁面快取分隔到自己的Redis資料庫(RDB)中。
+Commerce支援多種型別的快取設定。 一般而言，快取設定會在前端和後端之間分割。 前端快取分類為`default`，用於任何快取型別。 您可以自訂或分割為較低層級的快取以取得較佳的效能。 常見的Redis組態是將預設快取和頁面快取分隔到自己的Redis資料庫(RDB)中。
 
-執行 `setup` 用來指定Redis端點的命令。
+執行`setup`命令以指定Redis端點。
 
 若要設定用於Redis的Commerce作為預設快取：
 
@@ -158,7 +158,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
 
 ### 驗證連線能力
 
-**確認Commerce正在與ElastiCache通訊**：
+**若要確認Commerce正在與ElastiCache通訊**：
 
 1. 開啟與Commerce EC2執行個體的SSH連線。
 1. 啟動Redis監視器。
@@ -168,11 +168,11 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
    ```
 
 1. 在Commerce UI中開啟頁面。
-1. 驗證 [快取輸出](#verify-redis-connection) 在您的終端機中。
+1. 驗證您終端機中的[快取輸出](#verify-redis-connection)。
 
 ## 新的Redis快取實作
 
-截至Commerce 2.3.5，建議使用擴充的Redis快取實作： `\Magento\Framework\Cache\Backend\Redis`.
+自Commerce 2.3.5起，建議使用擴充的Redis快取實作： `\Magento\Framework\Cache\Backend\Redis`。
 
 ```php
 'cache' => [
@@ -190,9 +190,9 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
 
 ## Redis預先載入功能
 
-由於Commerce會將設定資料儲存在Redis快取中，因此我們可以預先載入在頁面之間重複使用的資料。 若要尋找必須預先載入的金鑰，請分析從Redis傳輸到Commerce的資料。 我們建議預先載入每個頁面上載入的資料，例如 `SYSTEM_DEFAULT`， `EAV_ENTITY_TYPES`， `DB_IS_UP_TO_DATE`.
+由於Commerce會將設定資料儲存在Redis快取中，因此我們可以預先載入在頁面之間重複使用的資料。 若要尋找必須預先載入的金鑰，請分析從Redis傳輸到Commerce的資料。 我們建議預先載入每個頁面上載入的資料，例如`SYSTEM_DEFAULT`、`EAV_ENTITY_TYPES`、`DB_IS_UP_TO_DATE`。
 
-Redis使用 `pipeline` 以便複合載入請求。 金鑰應包含資料庫首碼；例如，如果資料庫首碼為 `061_`，預先載入金鑰看起來像這樣： `061_SYSTEM_DEFAULT`
+Redis使用`pipeline`來複合載入要求。 金鑰應包含資料庫首碼；例如，如果資料庫首碼為`061_`，預先載入金鑰看起來會像這樣： `061_SYSTEM_DEFAULT`
 
 ```php
 'cache' => [
@@ -222,7 +222,7 @@ Redis使用 `pipeline` 以便複合載入請求。 金鑰應包含資料庫首�
 ]
 ```
 
-如果您搭配L2快取使用預先載入功能，別忘了新增 `:hash` 字尾至您的金鑰，因為L2快取只會傳輸資料的雜湊，而非資料本身：
+如果您搭配L2快取使用預先載入功能，別忘了將`:hash`尾碼新增至您的金鑰，因為L2快取只會傳輸資料的雜湊，不會傳輸資料本身：
 
 ```php
 'preload_keys' => [
@@ -235,16 +235,16 @@ Redis使用 `pipeline` 以便複合載入請求。 金鑰應包含資料庫首�
 
 ## 平行產生
 
-從2.4.0版開始，我們推出了 `allow_parallel_generation` 使用者不想等候鎖定的選項。
+從2.4.0版開始，我們為想要消除等待鎖定的使用者引入了`allow_parallel_generation`選項。
 預設會停用，建議您先停用，直到設定和/或區塊過多為止。
 
-**啟用平行產生**：
+**若要啟用平行產生**：
 
 ```bash
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
-由於它是標幟，因此您無法使用命令將其停用。 您必須手動將設定值設為 `false`：
+由於它是標幟，因此您無法使用命令將其停用。 您必須手動將組態值設為`false`：
 
 ```php
     'cache' => [
@@ -310,10 +310,10 @@ redis-cli monitor
 redis-cli ping
 ```
 
-預期的回應為： `PONG`
+預期的回應是： `PONG`
 
 如果兩個指令都成功，Redis就會正確設定。
 
 ### 檢查壓縮資料
 
-若要檢查壓縮的工作階段資料和頁面快取， [RESP.app](https://flathub.org/apps/details/app.resp.RESP) 支援自動解壓縮Commerce 2階段作業和頁面快取，並以可讀取的格式顯示PHP階段作業資料。
+若要檢查壓縮的「工作階段」資料和「頁面快取」，[RESP.app](https://flathub.org/apps/details/app.resp.RESP)支援Commerce 2「工作階段」和「頁面」快取的自動解壓縮，並以可讀取的格式顯示PHP工作階段資料。

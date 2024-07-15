@@ -52,7 +52,7 @@ ht-degree: 20%
       <img alt="實施" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>實施行動手冊</strong></a>
+      <a href="../implementation-playbook/overview.md"><strong>實作行動手冊</strong></a>
       <p>了解規劃及實施成功 Adobe Commerce 網站的策略。</p>
     </div>
   </td>
@@ -70,7 +70,7 @@ ht-degree: 20%
        <img alt="企業" src="../assets/icons/enterprise.svg" width="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>大規模商務</strong></a>
+      <a href="../commerce-at-scale/overview.md"><strong>規模的Commerce</strong></a>
       <p>了解如何透過 Adobe Experience Manager 使用 Adobe Commerce 大規模提供體驗。</p>
     </div>
   </td>
@@ -95,7 +95,7 @@ ht-degree: 20%
       <img alt="設定" src="../assets/icons/settings.svg" width="40"/>
     </a>
     <div>
-      <a href="../configuration/overview.md"><strong>設定</strong></a>
+      <a href="../configuration/overview.md"><strong>組態</strong></a>
       <p>為您的Adobe Commerce應用程式設定功能與服務。</p>
     </div>
   </td>

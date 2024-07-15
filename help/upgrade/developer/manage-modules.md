@@ -12,9 +12,9 @@ ht-degree: 3%
 
 # 管理模組和擴充功能
 
-協助開發人員在Adobe Commerce中指定其版本，以升級模組與擴充功能 `composer.json` 檔案。 如果您不是貢獻開發人員，請參閱 [執行升級](../implementation/perform-upgrade.md).
+貢獻開發人員透過在Adobe Commerce `composer.json`檔案中指定其版本來升級模組與擴充功能。 如果您不是貢獻開發人員，請參閱[執行升級](../implementation/perform-upgrade.md)。
 
-您可以新增 `require` 區段至 `composer.json` 檔案或您可以使用 `composer require` 命令如下：
+您可以將`require`區段新增至`composer.json`檔案，也可以使用`composer require`命令，如下所示：
 
 {{$include /help/_includes/server-login.md}}
 
@@ -34,7 +34,7 @@ composer show --all <vendor>/<name>
 composer show --all example/module
 ```
 
-## 使用 `composer require` 命令
+## 使用`composer require`命令
 
 命令使用方式：
 
@@ -50,11 +50,11 @@ composer require example/module:1.0.0
 
 Composer正在更新相依性並安裝模組，請稍候。
 
-## 新增 `require` composer.json檔案的區段
+## 將`require`區段新增至composer.json檔案
 
-1. 開啟 `composer.json` 在文字編輯器中。
+1. 在文字編輯器中開啟`composer.json`。
 
-1. 新增 `require` 區段。
+1. 新增`require`區段。
 
    ```json
    "require": {
@@ -63,9 +63,9 @@ Composer正在更新相依性並安裝模組，請稍候。
    }
    ```
 
-1. 將變更儲存至 `composer.json` 檔案並退出文字編輯器。
+1. 儲存您對`composer.json`檔案所做的變更，並結束文字編輯器。
 
-1. 解決相依性並將確切版本寫入 `composer.lock` 檔案。
+1. 解決相依性並將確切版本寫入`composer.lock`檔案。
 
    ```bash
    composer update

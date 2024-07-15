@@ -17,14 +17,14 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您必須以使用者身分執行本節中的工作， `root` 許可權。 在開發人員模式中無法設定自訂維護頁面。
+>您必須以具有`root`許可權的使用者身分執行此段落中的工作。 在開發人員模式中無法設定自訂維護頁面。
 
 ## 建立自訂維護頁面
 
 若要建立維護頁面並重新導向至該頁面，請先建立維護頁面，命名為：
 
 - Apache： `<web server docroot>/maintenance.html`
-- Nginx： `<magento_root>/maintenance.html`
+- nginx： `<magento_root>/maintenance.html`
 
 新增下列內容：
 
@@ -59,7 +59,7 @@ body
 本節中的範例說明如何修改下列檔案，這是設定維護頁面的一種方式：
 
 - Apache 2.4： `/etc/apache2/sites-available/000-default.conf`
-- Apache 2.2： `/etc/apache2/sites-available/default` (Ubuntu)， `/etc/httpd/conf/httpd.conf` (CentOS)
+- Apache 2.2： `/etc/apache2/sites-available/default` (Ubuntu)、`/etc/httpd/conf/httpd.conf` (CentOS)
 
 若要將流量重新導向至自訂維護頁面：
 
@@ -94,9 +94,9 @@ body
    touch <web server docroot>/maintenance.enable
    ```
 
-1. [升級您的系統](../implementation/perform-upgrade.md).
+1. [升級您的系統](../implementation/perform-upgrade.md)。
 1. 測試您的網站以確保其正常運作。
-1. 升級完成後，刪除 `maintenance.enable`.
+1. 升級完成後，刪除`maintenance.enable`。
 
 ## Nginx的自訂維護頁面
 
@@ -105,9 +105,9 @@ body
 若要將流量重新導向至自訂維護頁面：
 
 1. 使用文字編輯器開啟包含伺服器區塊的nginx組態檔。
-1. 將下列專案新增至伺服器區塊(`server` 僅供清楚說明之用；請勿新增第二個伺服器區塊)。
+1. 新增下列內容至伺服器區塊（`server`僅供參考；請勿新增第二個伺服器區塊）。
 
-   以下允許列出Magento安裝所在系統上的IP位址192.0.2.110和192.0.2.115 `/var/www/html/magento2`：
+   下列允許清單IP位址192.0.2.110和192.0.2.115 (在`/var/www/html/magento2`中安裝Magento的系統上)：
 
    ```conf
    server {
@@ -154,9 +154,9 @@ body
    service nginx reload
    ```
 
-1. [升級您的系統](../implementation/perform-upgrade.md).
+1. [升級您的系統](../implementation/perform-upgrade.md)。
 1. 測試您的網站以確保其正常運作。
-1. 升級完成後，請刪除或重新命名 `maintenance.enable`
+1. 升級完成後，請刪除或重新命名`maintenance.enable`
 1. 重新載入nginx設定：
 
    ```bash

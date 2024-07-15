@@ -19,17 +19,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這些准則主要適用於 [全球參考架構(GRA)](../overview.md) 專案。
+>這些准則主要適用於[全域參考架構(GRA)](../overview.md)專案。
 
 ## 加速撰寫器
 
-安裝 [https://github.com/hirak/prestissimo](https://github.com/hirak/prestissimo) 以透過非同步套件下載來加速Composer。
+安裝[https://github.com/hirak/prestissimo](https://github.com/hirak/prestissimo)，以加速非同步套件下載的Composer。
 
 ```bash
 composer global require hirak/prestissimo
 ```
 
-如果發生問題，請解除安裝 `prestissimo`：
+如果發生問題，請解除安裝`prestissimo`：
 
 ```bash
 composer global remove hirak/prestissimo
@@ -45,7 +45,7 @@ Composer有時會在套件版本中遭到鎖死。 您可能會看到與版本�
    composer clearcache
    ```
 
-1. 移除 `composer.lock` 所有套件的檔案。
+1. 移除所有封裝的`composer.lock`檔案。
 
    ```bash
    rm -rf vendor/* composer.lock
@@ -59,7 +59,7 @@ Composer有時會在套件版本中遭到鎖死。 您可能會看到與版本�
 
 >[!TIP]
 >
->這些步驟會將所有套件更新至最新可用版本。 回覆 `composer.lock` Git中的檔案來復原這些升級。
+>這些步驟會將所有套件更新至最新可用版本。 從Git還原`composer.lock`檔案以復原這些升級。
 
 ## 檢查使用者端套件中可能的更新
 
@@ -69,7 +69,7 @@ Composer有時會在套件版本中遭到鎖死。 您可能會看到與版本�
    composer outdated
    ```
 
-1. 使用萬用字元和/或 `--minor-only` 跳過不相容於回溯的升級選項：
+1. 使用萬用字元和/或`--minor-only`選項進行篩選，以略過不向後相容的升級：
 
    ```bash
    composer outdated 'magento/*'
@@ -84,7 +84,7 @@ Composer有時會在套件版本中遭到鎖死。 您可能會看到與版本�
 composer info
 ```
 
-執行 `composer install` 切換Git分支之後和執行之前 `composer info`. 否則，Composer會顯示有關您簽出之先前分支的詳細資訊。
+在切換Git分支之後和執行`composer info`之前執行`composer install`。 否則，Composer會顯示有關您簽出之先前分支的詳細資訊。
 
 >[!TIP]
 >
@@ -123,24 +123,24 @@ composer why-not client/module-example
 
 ## 託管私人撰寫器存放庫
 
-如果您需要私人撰寫器存放庫，請使用 [私人封裝者](https://packagist.com/) 或 [JFrog製作工](https://jfrog.com/integration/php-composer-repository/). 不要使用 [薩提斯](https://github.com/composer/satis).
+如果您需要私人Composer存放庫，請使用[Private Packagist](https://packagist.com/)或[JFrog Artifactory](https://jfrog.com/integration/php-composer-repository/)。 請勿使用[Satis](https://github.com/composer/satis)。
 
-- **私人封裝者** 安全無虞，3名管理員使用者每年成本約$600美元，且託管系統。
+- **私人套件商**&#x200B;是安全的，每年大約花費$600美元給三名管理員使用者，而且是託管的。
 
-- **JFrog製作工** 起始價格為每年$1,176美元。 它並不像Packagist那樣常用，但它支援的語言比PHP多。
+- **JFrog Artifactory**&#x200B;起始價格為每年$1,176美元。 它並不像Packagist那樣常用，但它支援的語言比PHP多。
 
-- **薩提斯** 沒有內建安全性、沒有自動化功能，且需要額外的託管機制。 只有在您的時間也是免費的情況下，才有免費的空間。
+- **Satis**&#x200B;沒有內建安全性、沒有自動化功能，而且需要額外的託管。 只有在您的時間也是免費的情況下，才有免費的空間。
 
 ## 版本設定套件
 
-使用 [語意版本設定2.0.0](https://semver.org/spec/v2.0.0.html) 如Adobe Commerce中所述 [版本設定綱要](https://developer.adobe.com/commerce/php/development/versioning/). 不要再創造轉輪。
+使用[Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html)，如Adobe Commerce [版本化結構描述](https://developer.adobe.com/commerce/php/development/versioning/)中所述。 不要再創造轉輪。
 
-若為Adobe Commerce模組相依性，請遵循 [模組版本相依性](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) 檔案。
+若為Adobe Commerce模組相依性，請遵循[模組版本相依性](https://developer.adobe.com/commerce/php/development/versioning/dependencies/)檔案。
 
-請勿在內使用版本定義 `composer.json` 檔案。 請改用Git標籤來顯示版本。 另請參閱 [Composer版本和限制](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints).
+請勿在`composer.json`檔案內使用版本定義。 請改用Git標籤來顯示版本。 請參閱[Composer版本和限制](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints)。
 
 ## 將傳入而不透過Composer的模組放在何處
 
-為封存中的模組建立Git存放庫並自行託管。 每個Adobe Commerce模組都有 `composer.json` 檔案。 在Git中託管該檔案，並將其與Private Packagist同步之後，您就可以使用Composer進行安裝。
+為封存中的模組建立Git存放庫並自行託管。 每個Adobe Commerce模組都有`composer.json`檔案。 在Git中託管該檔案，並將其與Private Packagist同步之後，您就可以使用Composer進行安裝。
 
 當您收到新版本的套件時，請將程式碼上傳到Git、標籤它，然後使用撰寫器安裝新版本。

@@ -1,6 +1,6 @@
 ---
-title: 此 [!UICONTROL Summary] 標籤
-description: 瞭解 [!UICONTROL Summary] 標籤之 [!DNL Observation for Adobe Commerce].
+title: '[!UICONTROL Summary]索引標籤'
+description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL Summary]標籤。
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
 source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
@@ -10,89 +10,89 @@ ht-degree: 0%
 
 ---
 
-# 此 [!UICONTROL Summary] 標籤
+# [!UICONTROL Summary]索引標籤
 
-此 [!UICONTROL Summary] 標籤之 [!DNL Observation for Adobe Commerce] 其目的是快速檢視網站所遇到的一些問題，協助您自動解決或找出網站問題的潛在根本原因。 其他標籤提供有關元件服務、資料庫、基礎架構和流程狀態的更深入層級資訊。
+[!DNL Observation for Adobe Commerce]的[!UICONTROL Summary]標籤旨在快速檢視網站所遇到的一些問題，以幫助您自動解決或找出網站問題的潛在根本原因。 其他標籤提供有關元件服務、資料庫、基礎架構和流程狀態的更深入層級資訊。
 
 ## [!UICONTROL Transaction Overview]
 
-![交易概述](../../assets/tools/transaction-overview.jpg)
+![交易總覽](../../assets/tools/transaction-overview.jpg)
 
 ### [什麼是交易？](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-，什麼%20is%20a%20transaction%3F，工作%20in%20a%20software%20application。&amp;text=For%20APM%2C%20it%20will%20overly，當%20the%20response%20is%20sent)
 
-&quot;在 [!DNL New Relic]，交易被定義為軟體應用程式中的一個邏輯工作單位。 具體來說，這指的是組成該工作單位的函式呼叫和方法呼叫。 這通常指的是Web交易，代表應用程式在收到網路要求至傳送回應時所發生的活動。」
+「在[!DNL New Relic]，交易被定義為軟體應用程式中的一個邏輯工作單位。 具體來說，這指的是組成該工作單位的函式呼叫和方法呼叫。 這通常指的是Web交易，代表應用程式在收到網路要求至傳送回應時所發生的活動。」
 
 ### 交易型別：
 
-**網頁：** Web交易是以HTTP要求起始。 對於大多陣列織而言，這些代表以客戶為中心的互動，因此是需監控的最重要交易。
+**網頁：**&#x200B;網頁交易已透過HTTP要求起始。 對於大多陣列織而言，這些代表以客戶為中心的互動，因此是需監控的最重要交易。
 
-**非網頁：** 非Web交易並非以Web要求起始。 它們可包括非Web工作者處理序、背景處理序、指令碼、訊息佇列活動及其他工作。
+**非Web：**&#x200B;非Web交易不是以Web要求起始。 它們可包括非Web工作者處理序、背景處理序、指令碼、訊息佇列活動及其他工作。
 
-如果您檢視 **[!UICONTROL Transaction Overview]** 框架在上方，有將近53,000個交易，平均APDEX分數為。76，而且這些交易的95%發生在2.313秒以內。 如果短時間範圍內有APDEX點選，則較緊的時間範圍可能會顯示與目前平均值的偏離。
+如果您檢視上方的&#x200B;**[!UICONTROL Transaction Overview]**&#x200B;框架，平均在APDEX分數為。76的將近53,000個交易，而這些交易的95%發生在2.313秒以內。 如果短時間範圍內有APDEX點選，則較緊的時間範圍可能會顯示與目前平均值的偏離。
 
 ## [!UICONTROL 404 page errors frame]
 
 ![404頁錯誤框架](../../assets/tools/404-page-errors.jpg)
 
-此 **[!UICONTROL 404 page errors]** 框架列出 [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) 以及所選時間範圍內的404頁錯誤計數。
+**[!UICONTROL 404 page errors]**&#x200B;框架列出所選時間範圍內的[URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)和404頁錯誤的計數。
 
 ## [!UICONTROL % of Storage Free frame]
 
-![儲存空間可用影格的百分比](../../assets/tools/percent-of-storage-free.jpg)
+儲存可用框架的![百分比](../../assets/tools/percent-of-storage-free.jpg)
 
-此 **[!UICONTROL % of Storage Free]** frame會顯示叢集所有節點之儲存裝載的平均可用百分比。 例如，如果您有三節點叢集，框架會顯示\&lt;mount point=&quot;&quot;>， \&lt;environment name=&quot;&quot;>. 如果三個節點之間有變數，此框架可能會具有欺騙性。 變數的範例是 `/data/mysql` 掛接點free是三個節點叢集上的不同值。 下方有一個框架 [!UICONTROL MySQL] 標籤可依節點名稱來多面向掛載點，以更精確地檢視 `/data/mysql` 每個節點上的可用儲存空間實際上是。
+**[!UICONTROL % of Storage Free]**&#x200B;框架會顯示叢集所有節點之儲存裝載的平均可用百分比。 例如，如果您有三節點叢集，框架會顯示\&lt;掛載點\>、\&lt;環境名稱\>。 如果三個節點之間有變數，此框架可能會具有欺騙性。 變數的範例是，如果`/data/mysql`可用掛載點在三個節點叢集中是不同的值。 [!UICONTROL MySQL]標籤下有一個框架，可依節點名稱多面向掛接點，以更準確地檢視每個節點上的`/data/mysql`儲存空間實際是多少。
 
 ## [!UICONTROL % of system memory that is free frame]
 
-![可用框架的系統記憶體百分比](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
+可用框架系統記憶體的![百分比](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
-此 **可用系統記憶體的%** 框架會依節點顯示每個節點可用的系統記憶體數量。
+可用的&#x200B;**%系統記憶體**&#x200B;框架會依節點顯示每個節點可用的系統記憶體數量。
 
 ## [!UICONTROL Swap memory free in bytes]
 
-![交換可用記憶體（位元組）](../../assets/tools/swap-memory-free-in-bytes.jpg)
+![交換記憶體可用位元組](../../assets/tools/swap-memory-free-in-bytes.jpg)
 
-此 **[!UICONTROL Swap memory free in bytes]** 框架會依節點顯示節點上可用的SWAP記憶體數量。
+**[!UICONTROL Swap memory free in bytes]**&#x200B;框架會依節點顯示節點上可用的SWAP記憶體數量。
 
 ## [!UICONTROL CPU % by host]
 
-![依主機的CPU百分比](../../assets/tools/cpu-percent-by-host.jpg)
+主機](../../assets/tools/cpu-percent-by-host.jpg)的![CPU百分比
 
-所有環境和節點的彙總會顯示在 **[!UICONTROL CPU % by host]** 框架。 您應該取消選取非生產環境。 也請注意生產環境的所有節點都未出現的任何執行個體。 如需有關高CPU使用率的更多秘訣，請參閱 [在Adobe Commerce上使用New Relic進行效能疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+所有環境和節點的彙總會顯示在&#x200B;**[!UICONTROL CPU % by host]**&#x200B;框架中。 您應該取消選取非生產環境。 也請注意生產環境的所有節點都未出現的任何執行個體。 如需有關高CPU使用率的更多秘訣，請參閱[在Adobe Commerce上使用New Relic進行效能疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html)。
 
 ## [!UICONTROL Alerts during timeframe]
 
-![時間範圍內的警報](../../assets/tools/alerts-during-timeframe.jpg)
+時間範圍內![個警示](../../assets/tools/alerts-during-timeframe.jpg)
 
-此 **[!UICONTROL Alerts during timeframe]** 顯示所有警示，包括 [!UICONTROL Managed Alerts] 由Adobe Commerce支援新增。
+**[!UICONTROL Alerts during timeframe]**&#x200B;顯示所有警示，包括Adobe Commerce支援新增的[!UICONTROL Managed Alerts]。
 
 ## [!UICONTROL CPU Usage]
 
 ![CPU使用量](../../assets/tools/cpu-usage.jpg)
 
-如果 **[!UICONTROL CPU Usage]** 框架是空白的，這表示基礎建設應用程式 [!DNL New Relic] 未啟用。 如果您的網站位於入門版，則不會看到此資訊。 如果您的網站位於Pro，請開啟 [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 擁有 [!DNL New Relic Infrastructure] 已為您的網站啟用。
+如果&#x200B;**[!UICONTROL CPU Usage]**&#x200B;框架空白，表示未啟用[!DNL New Relic]的基礎結構應用程式。 如果您的網站位於入門版，則不會看到此資訊。 如果您的網站使用Pro，請開啟[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html)為您的網站啟用[!DNL New Relic Infrastructure]。
 
 ## [!UICONTROL Average Response Time]
 
 ![平均回應時間](../../assets/tools/average-response-time.jpg)
 
-此 **[!UICONTROL Average Response Time]** 圖表顯示交易的平均回應時間（網頁及其他）。
+**[!UICONTROL Average Response Time]**&#x200B;圖表顯示交易的平均回應時間（網頁及其他）。
 
 ## [!UICONTROL Long duration cron_schedule updates]
 
-![長時間的cron_schedule更新](../../assets/tools/long-duration-cron-schedule-updates.jpg)
+![長期間cron_schedule更新](../../assets/tools/long-duration-cron-schedule-updates.jpg)
 
-此 **[!UICONTROL cron_schedule]** 表格會在cron工作的開始和完成時寫入。 長時間的cron作業可能表示更新此表時的延遲，這可能表示cron棧疊或cron排程方式的問題。
+**[!UICONTROL cron_schedule]**&#x200B;表格會在cron工作的開始和完成時寫入。 長時間的cron作業可能表示更新此表時的延遲，這可能表示cron棧疊或cron排程方式的問題。
 
 ## [!UICONTROL Response Code]
 
 ![回應代碼](../../assets/tools/response-code.jpg)
 
-此 **[!UICONTROL Response Code]** 框架是網頁流量和請求回應代碼的良好指標。 它是 [!DNL New Relic's] 交易資料，並由 `httpResponseCode` 已傳回。
+**[!UICONTROL Response Code]**&#x200B;框架是網頁流量和要求的回應碼的良好指標。 它是[!DNL New Relic's]個交易資料，而且由傳回的`httpResponseCode`分面。
 
 ## [!UICONTROL Web Traffic volume compared with one week ago Magento Managed Alerts Information]
 
-![網站流量與一週前比較](../../assets/tools/web-traffic-volume-compared.jpg)
+![網頁流量與一星期前比較](../../assets/tools/web-traffic-volume-compared.jpg)
 
 此框架顯示過去一週與本週的比較網頁流量。
 
@@ -100,13 +100,13 @@ ht-degree: 0%
 
 ![部署記錄專案](../../assets/tools/deployment-log-entries.jpg)
 
-此 **[!UICONTROL Deployment Log Entries]** frame會顯示部署和雲端記錄專案的計數，並根據部署記錄名稱多面向計數。
+**[!UICONTROL Deployment Log Entries]**&#x200B;框架顯示部署和雲端記錄專案的計數，並根據部署記錄名稱多面向計數。
 
 ## [!UICONTROL Deployment State]
 
 ![部署狀態](../../assets/tools/deployment-state.jpg)
 
-此 **[!UICONTROL Deployment State]** 從部署記錄檔中框架Facet特定的部署階段。 以下是記錄檔和Facet名稱中計算的一些階段範例：
+**[!UICONTROL Deployment State]**&#x200B;框架會從部署記錄檔中多面向特定部署階段。 以下是記錄檔和Facet名稱中計算的一些階段範例：
 
 **部署記錄階段：**
 
@@ -116,64 +116,64 @@ ht-degree: 0%
 * &#39;%NOTICE：產生命令已完成%&#39;)為&#39;gen_compl&#39;
 * &#39;%NOTICE：部署已完成%&#39;)為&#39;deploy_compl&#39;
 * &#39;%NOTICE：正在開始後續部署。%&#39;)作為&#39;start_pdeploy&#39;
-* &#39;%NOTICE： Post-deploy已完成%&#39;)為&#39;pdeploy&#39;
+* &#39;%NOTICE： Post-deploy is complete%&#39;)為&#39;pdeploy&#39;
 * &#39;%deploy-complete%&#39;)做為&#39;cl_deploy_compl&#39;
 
 ## [!UICONTROL IP Frequency]
 
 ![IP頻率](../../assets/tools/ip-frequency.jpg)
 
-此 **[!UICONTROL IP Frequency]** frame會計算（&#39;MISS&#39;和&#39;PASS&#39;）中每個IP的狀態 [!DNL Fastly] 記錄。 具有這些狀態的網頁請求會連線至原始伺服器，並將新增負載至伺服器。 這會顯示頻率排名前20個位址。 此框架可用來偵測網站上的IP攻擊或負載過重的來源。
+**[!UICONTROL IP Frequency]**&#x200B;框架會計算[!DNL Fastly]記錄檔中每個IP的（&#39;MISS&#39;和&#39;PASS&#39;）狀態。 具有這些狀態的網頁請求會連線至原始伺服器，並將新增負載至伺服器。 這會顯示頻率排名前20個位址。 此框架可用來偵測網站上的IP攻擊或負載過重的來源。
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
-![ip回應 — 持續時間內前20個url](../../assets/tools/ip-response-top-20-urls.jpg)
+![ip回應 — 持續時間內前20個URL](../../assets/tools/ip-response-top-20-urls.jpg)
 
-此 **[!UICONTROL IP Response – top 20 URLs in duration]** 框架會顯示回應持續時間最長的URL。 這可能表示大型影像檔案或頁面、API或具有最長回應持續時間的頁面。
+**[!UICONTROL IP Response – top 20 URLs in duration]**&#x200B;框架會顯示回應持續時間最長的URL。 這可能表示大型影像檔案或頁面、API或具有最長回應持續時間的頁面。
 
 ## [!UICONTROL API Calls by IP]
 
-![依ip的api呼叫](../../assets/tools/api-calls-by-ip.jpg)
+由ip](../../assets/tools/api-calls-by-ip.jpg)進行的![api呼叫
 
-此 **[!UICONTROL API Calls by IP]** 框架有助於識別針對API和IP位址的大量流量，以便從API URL提出請求。
+**[!UICONTROL API Calls by IP]**&#x200B;框架可協助識別針對API和IP位址的大量流量，這些位址會從API URL發出請求。
 
 ## [!UICONTROL API Calls by IP, details by URL]
 
-![依ip依url的api呼叫詳細資料](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
+依IP依url的![api呼叫詳細資料](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
 
-此 **[!UICONTROL API Calls by IP, details by URL]** frame提供API繁重流量的詳細資訊，以及發出請求的URL的詳細資訊。
+**[!UICONTROL API Calls by IP, details by URL]**&#x200B;框架提供針對API的大量流量的詳細資訊，以及發出請求的URL的詳細資訊。
 
 ## [!UICONTROL IP Frequency Rate per minute]
 
-![每分鐘的IP頻率速率](../../assets/tools/ip-frequency-rate-per-minute.jpg)
+每分鐘![ip頻率速率](../../assets/tools/ip-frequency-rate-per-minute.jpg)
 
-有時很難分辨哪個IP位址在其他框架上的請求最多。 此 **[!UICONTROL IP Frequency Rate per minute]** 影格顯示每個IP位址每分鐘速率。
+有時很難分辨哪個IP位址在其他框架上的請求最多。 **[!UICONTROL IP Frequency Rate per minute]**&#x200B;框架顯示每個IP位址每分鐘的速率。
 
 ## [!UICONTROL Potential Bots]
 
 ![潛在的機器人](../../assets/tools/potential-bots.jpg)
 
-此 **[!UICONTROL Potential Bots]** frame會檢視具有request_user_agent名稱（例如NULL或&#39;%bot%&#39;）的請求。 通常&#39;%bot%&#39; request_user_agent會遵循中的原則設定 `robots.txt` 檔案。
+**[!UICONTROL Potential Bots]**&#x200B;框架會檢視具有request_user_agent名稱（例如NULL或&#39;%bot%&#39;）的請求。 一般而言，&#39;%bot%&#39; request_user_agent會遵循`robots.txt`檔案中的原則設定。
 
 ## [!UICONTROL Transaction Errors]
 
-![異動錯誤](../../assets/tools/transaction-errors.jpg)
+![交易錯誤](../../assets/tools/transaction-errors.jpg)
 
-此 **[!UICONTROL Transaction Errors]** 框架顯示來自的交易錯誤計數 [!DNL New Relic].
+**[!UICONTROL Transaction Errors]**&#x200B;框架顯示來自[!DNL New Relic]的交易錯誤計數。
 
 ## [!UICONTROL Nginx access by node]
 
-![依節點的nginx存取](../../assets/tools/nginx-access-by-node.jpg)
+![nginx存取，依節點](../../assets/tools/nginx-access-by-node.jpg)
 
-此 **[!UICONTROL Nginx access by node]** 影格會檢視以下專案的計數： `access.log` 依節點。 檢視負載是否均勻分佈會很有幫助。 它通常會在節點掉落時顯示。 框架也會顯示整個網站的負載。
+**[!UICONTROL Nginx access by node]**&#x200B;框架會依節點檢視來自`access.log`的計數。 檢視負載是否均勻分佈會很有幫助。 它通常會在節點掉落時顯示。 框架也會顯示整個網站的負載。
 
 ## [!UICONTROL Galera Log]
 
-![galera記錄](../../assets/tools/galera-log.jpg)
+![galera記錄檔](../../assets/tools/galera-log.jpg)
 
-[[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf) 用於資料庫叢集。 此影格著重於來自以下專案的特定訊號： [!UICONTROL Galera] 叢集。 這些訊號著重於進入和退出叢集的節點，這是維持資料庫資料完整性的正常行為。 節點會保持同步，做為 [!UICONTROL Galera] 叢集狀態變更。
+[[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf)已用於資料庫叢集。 此框架著重於來自[!UICONTROL Galera]叢集的特定訊號。 這些訊號著重於進入和退出叢集的節點，這是維持資料庫資料完整性的正常行為。 節點會隨著[!UICONTROL Galera]叢集狀態變更而保持同步。
 
-**清單 [!UICONTROL Galera] 狀態變更：**
+**[!UICONTROL Galera]狀態變更清單：**
 
 * &#39;%1047 WSREP尚未準備好節點以供應用程式使用%&#39;)做為&#39;node_not_prep_for_use&#39;
 * &#39;%\[ERROR\] WSREP：無法從wsrep_sst_xtrabackup-v2%&#39;讀取為&#39;xtrabackup_read_fail&#39;
@@ -199,7 +199,7 @@ ht-degree: 0%
 
 ![資料庫錯誤](../../assets/tools/database-errors.jpg)
 
-**偵測到資料庫錯誤或訊息的清單：**
+**偵測到資料庫錯誤或訊息清單：**
 
 * &#39;%配置給暫存資料表的記憶體大小超過innodb_buffer_pool_size%&#39;的20%)為&#39;temp_tbl_buff_pool&#39;
 * &#39;%\[ERROR\] WSREP： rbr write fail%&#39;)為&#39;rbr_write_fail&#39;
@@ -245,21 +245,21 @@ ht-degree: 0%
 
 ![資料庫追蹤](../../assets/tools/database-traces.jpg)
 
-此 **[!UICONTROL Database traces]** 框架會檢視以下來源的資料： [sql追蹤](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/) 實體 [!DNL New Relic] 並傳回追蹤的路徑。
+**[!UICONTROL Database traces]**&#x200B;框架會檢視[!DNL New Relic]之[sql追蹤](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/)實體的資料，並傳回追蹤的路徑。
 
 ## [!UICONTROL Database mysql-slow.log]
 
 ![資料庫mysql-slow.log](../../assets/tools/database-mysql-slow-log.jpg)
 
-此 **[!UICONTROL Database mysql-slow.log]** 框架會計算 [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) 依查詢要求型別。 這樣會以視覺化方式隔離您可能會對mysql-slow.log （緩慢查詢記錄）感興趣的時間範圍。 沒有索引的資料表查詢或更新大型資料表的查詢可能會封鎖其他查詢。
+**[!UICONTROL Database mysql-slow.log]**&#x200B;框架會依查詢要求型別計算[mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html)中的專案數。 這樣會以視覺化方式隔離您可能會對mysql-slow.log （緩慢查詢記錄）感興趣的時間範圍。 沒有索引的資料表查詢或更新大型資料表的查詢可能會封鎖其他查詢。
 
 ## [!UICONTROL Redis synchronization from Log]
 
-![redis從記錄檔同步](../../assets/tools/redis-synchronization-from-log.jpg)
+![記錄檔的redis同步處理](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/) 是開放原始碼（BSD授權）記憶體中的資料結構存放區，用於資料庫、快取和訊息代理人。 如果已設定，它可以執行資料庫和工作階段快取。 此 **[!UICONTROL Redis synchronization from Log]** 影格焦點在 [[!DNL Redis] 同步](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). 越大 [!DNL Redis] 資料集，同步化發生問題的可能性就越高（需要保持同步的資料越多）。
+[[!DNL Redis]](https://redis.io/docs/about/)是開放原始碼（BSD已授權）記憶體中的資料結構存放區，用於資料庫、快取和訊息代理人。 如果已設定，它可以執行資料庫和工作階段快取。 **[!UICONTROL Redis synchronization from Log]**&#x200B;框架主要針對[[!DNL Redis] 同步處理](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/)。 [!DNL Redis]資料集愈大，同步化發生問題的可能性就愈大（需要保持同步的資料愈多）。
 
-**[!DNL Redis]錯誤和訊息：**
+**[!DNL Redis]個錯誤和訊息：**
 
 * &#39;%SLAVE同步處理：裝置%&#39;上沒有剩餘的空間)做為&#39;space&#39;
 * &#39;%Server started， Redis version%&#39;)作為&#39;serv_start&#39;
@@ -284,13 +284,13 @@ ht-degree: 0%
 
 ![PHP處理狀態](../../assets/tools/php-process-states.jpg)
 
-PHP流程的行為方式取決於 [設定](https://www.php.net/manual/en/install.fpm.configuration.php). 設定很複雜，有許多變數和選項。 此 **[!UICONTROL PHP process states]** 框架可協助您瞭解PHP處理序何時終止及重新啟動。
+PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/install.fpm.configuration.php)。 設定很複雜，有許多變數和選項。 **[!UICONTROL PHP process states]**&#x200B;框架可協助您瞭解PHP處理序何時終止及重新啟動。
 
 ### [!UICONTROL PHP errors]
 
 ![php錯誤](../../assets/tools/php-errors.jpg)
 
-此 **[!UICONTROL PHP errors]** 框架顯示所選時間範圍內背景工作程式的PHP錯誤數目。 如需詳細資訊，請參閱 [Adobe Commerce PHP設定](../../installation/prerequisites/php-settings.md).
+**[!UICONTROL PHP errors]**&#x200B;框架顯示所選時間範圍內背景工作程式的PHP錯誤數目。 如需詳細資訊，請參閱[Adobe Commerce PHP設定](../../installation/prerequisites/php-settings.md)。
 
 **PHP錯誤和訊息：**
 
@@ -308,59 +308,59 @@ PHP流程的行為方式取決於 [設定](https://www.php.net/manual/en/install
 
 ## [!UICONTROL PHP processes]
 
-![php程式](../../assets/tools/php-processes.jpg)
+![php處理序](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/) 是 [!UICONTROL FastCGI Process Manager] 使用者 [!DNL Nginx]. 若要瞭解系統需求，請參閱 [對應至Adobe Commerce版本的PHP版本需求](../../installation/system-requirements.md). 此 **[!UICONTROL PHP processes]** frame顯示在所選時間軸中特定時間執行的PHP處理序數目。
+[PHP-FPM](https://php-fpm.org/)是[!DNL Nginx]使用的[!UICONTROL FastCGI Process Manager]。 若要瞭解系統需求，請參閱對應至Adobe Commerce版本](../../installation/system-requirements.md)的[PHP版本需求。 **[!UICONTROL PHP processes]**&#x200B;框架顯示所選時間表中特定時間執行的PHP處理序數目。
 
 ## [!UICONTROL Secondary processes]
 
-![次要流程](../../assets/tools/secondary-processes.jpg)
+![次要處理序](../../assets/tools/secondary-processes.jpg)
 
-次要程式可能會影響網站回應。 此 **[!UICONTROL Secondary processes]** 框架指示可能增加網站負載的一或多個程式。 資料庫的主要次要處理序執行次數最多。
+次要程式可能會影響網站回應。 **[!UICONTROL Secondary processes]**&#x200B;框架表示可能正在將負載增加到網站的一或多個處理程式。 資料庫的主要次要處理序執行次數最多。
 
 ## [!UICONTROL Traffic vs Week Ago]
 
 ![流量與周前](../../assets/tools/traffic-vs-week-ago.jpg)
 
-此 **[!UICONTROL Traffic vs Week Ago]** frame會檢視來自的網站流量（請求） [!DNL Fastly] 具有(&#39;MISS&#39;， &#39;PASS&#39;)快取狀態的記錄。 這些要求會將負載新增至原始伺服器。 此影格顯示本週與上週前在相同時間範圍內的比較Web請求量。
+**[!UICONTROL Traffic vs Week Ago]**&#x200B;框架會檢視來自[!DNL Fastly]記錄檔的網站流量（要求），其快取狀態為(&#39;MISS&#39;， &#39;PASS&#39;)。 這些要求會將負載新增至原始伺服器。 此影格顯示本週與上週前在相同時間範圍內的比較Web請求量。
 
 ## [!UICONTROL Fastly Cache]
 
-![fastly快取](../../assets/tools/fastly-cache.jpg)
+![快速快取](../../assets/tools/fastly-cache.jpg)
 
-此 **[!UICONTROL Fastly Cache]** frame顯示來自的請求之快取狀態的彙總檢視 [!DNL Fastly] 記錄。 如果您選取ERROR，它會顯示要求中的錯誤百分比。 當原始伺服器對頁面要求的回應速度不夠快時，這項數值通常會增加。
+**[!UICONTROL Fastly Cache]**&#x200B;框架顯示[!DNL Fastly]記錄檔中要求之快取狀態的彙總檢視。 如果您選取ERROR，它會顯示要求中的錯誤百分比。 當原始伺服器對頁面要求的回應速度不夠快時，這項數值通常會增加。
 
 ## [!UICONTROL Page Rendering]
 
 ![頁面呈現](../../assets/tools/page-rendering.jpg)
 
-此 **[!UICONTROL Page Rendering]** 框架顯示本週頁面檢視來源的平均頁面轉譯持續時間： [!DNL New Relic] 與前一週在相同時段內比較。
+**[!UICONTROL Page Rendering]**&#x200B;框架顯示來自頁面檢視來源[!DNL New Relic]的當週平均頁面轉譯持續時間，與相同時段的前一週比較。
 
 ## [!UICONTROL Page loading detail]
 
 ![頁面載入詳細資料](../../assets/tools/page-loading-detail.png)
 
-此 **[!UICONTROL Page loading detail]** 框架說明頁面載入事件。 它詳述這些Facet的意義。 以下是為此框架執行的查詢：
+**[!UICONTROL Page loading detail]**&#x200B;框架說明頁面載入事件。 它詳述這些Facet的意義。 以下是為此框架執行的查詢：
 
 `SELECT percentile(timeToResponseStart, 50) AS 'first byte', percentile(firstPaint, 50) as 'First paint', percentile(firstContentfulPaint, 50) as 'First contentful paint', percentile(timeToDomContentLoadedEventEnd, 50) AS 'DOM content loaded', percentile(duration, 50) AS 'Window load + AJAX' FROM BrowserInteraction TIMESERIES`
 
 ## [!UICONTROL Transactions – Avg, Max, Min]
 
-![交易 — 平均、最大、最小](../../assets/tools/transactions-avg-max-min.jpg)
+![個交易 — 平均，最大，最小](../../assets/tools/transactions-avg-max-min.jpg)
 
-交易持續時間以秒為單位。 視交易而定，如果交易長時間執行，可能會影響其他交易。 列在名稱和持續時間下的交易是針對特定時段。 如果有簡潔的問題時間範圍，請調整 [!DNL Observation for Adobe Commerce] 該狹窄時間範圍的日期/時間選擇器。
+交易持續時間以秒為單位。 視交易而定，如果交易長時間執行，可能會影響其他交易。 列在名稱和持續時間下的交易是針對特定時段。 如果有簡潔的問題時間範圍，請將[!DNL Observation for Adobe Commerce]日期/時間選擇器的大小調整為該較窄的時間範圍。
 
 ## [!UICONTROL Admin Activities]
 
 ![管理員活動](../../assets/tools/admin-activities.jpg)
 
-此 **[!UICONTROL Admin Activities]** frame會識別與管理員使用者的交易。
+**[!UICONTROL Admin Activities]**&#x200B;框架會識別與管理員使用者的交易。
 
 ## [!UICONTROL Order transactions (default?)]
 
-![訂單異動預設值](../../assets/tools/order-transactions-default.jpg)
+![訂單交易預設值](../../assets/tools/order-transactions-default.jpg)
 
-此 **[!UICONTROL Order transactions (default?)]** 框架會尋找交易 `request.headers.host` 來自交易，名稱= `WebTransaction/Action/checkout/onepage/success`. 如果訂購成功URL不同，此框架將沒有資料。
+**[!UICONTROL Order transactions (default?)]**&#x200B;框架會從名稱= `WebTransaction/Action/checkout/onepage/success`的交易中尋找交易`request.headers.host`。 如果訂購成功URL不同，此框架將沒有資料。
 
 ## [!UICONTROL Elasticsearch Index information]
 
@@ -376,7 +376,7 @@ PHP流程的行為方式取決於 [設定](https://www.php.net/manual/en/install
 
 ![elasticsearch錯誤](../../assets/tools/elasticsearch-errors.jpg)
 
-**[!DNL Elasticsearch]錯誤：**
+**[!DNL Elasticsearch]個錯誤：**
 
 * &#39;%all shards failed%&#39;為&#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39;做為&#39;no_alive_nodes&#39;
@@ -390,14 +390,14 @@ PHP流程的行為方式取決於 [設定](https://www.php.net/manual/en/install
 
 ![cron檢視](../../assets/tools/cron-view.jpg)
 
-此 **[!UICONTROL Cron view]** frame會檢視cron記錄，以取得開始的cron數目與cron完成數目之間的平衡。
+**[!UICONTROL Cron view]**&#x200B;框架會檢視cron記錄，以取得開始的cron數目與cron完成數目之間的平衡。
 
 
 ## [!UICONTROL Cron error]
 
 ![cron錯誤](../../assets/tools/cron-error.png)
 
-**cron.log的Cron錯誤：**
+來自cron.log的&#x200B;**個Cron錯誤：**
 
 * &#39;%_stg%&#39;做為&#39;stg_crons&#39;
 * &#39;%無法取得cron job%的鎖定，因為&#39;cron_lock&#39;
@@ -407,21 +407,21 @@ PHP流程的行為方式取決於 [設定](https://www.php.net/manual/en/install
 
 ## [!UICONTROL cron_schedule table updates]
 
-![cron_schedule表格更新](../../assets/tools/cron-schedule-table-updates.jpg)
+![cron_schedule資料表更新](../../assets/tools/cron-schedule-table-updates.jpg)
 
-此 **[!UICONTROL cron_schedule table updates]** frame會檢視資料存放區作業更新涉及cron_schedule表格的最長持續時間（以秒為單位）。 它以SQL要求型別為分面。
+**[!UICONTROL cron_schedule table updates]**&#x200B;框架會檢視資料存放區作業更新涉及cron_schedule表格的最長持續時間（以秒為單位）。 它以SQL要求型別為分面。
 
 ## [!UICONTROL Datastore Operations Tables]
 
-![資料存放區操作表格](../../assets/tools/datastore-operations-tables.jpg)
+![資料存放區操作資料表](../../assets/tools/datastore-operations-tables.jpg)
 
-這個 **[!UICONTROL Datastore Operations Tables]** frame會依持續時間、表格名稱和SQL要求型別顯示前25個作業。 暫留在尖峰上，可檢視正在存取哪個表格以及按哪個請求型別存取的詳細資訊。
+此&#x200B;**[!UICONTROL Datastore Operations Tables]**&#x200B;框架會依持續時間時間、表格名稱和SQL要求型別顯示前25個作業。 暫留在尖峰上，可檢視正在存取哪個表格以及按哪個請求型別存取的詳細資訊。
 
 ## [!UICONTROL Cache Flush]
 
 ![快取排清](../../assets/tools/cache-flush.jpg)
 
-**偵測到快取排清：**
+已偵測到&#x200B;**快取排清：**
 
 * &#39;%config%&#39;作為&#39;config_cache_flushed&#39;
 * &#39;%layout%&#39;做為&#39;layout_cache_flush&#39;

@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -16,18 +16,18 @@ ht-degree: 0%
 
 以下各節以連線埠8080為例。
 
-**變更Apache 2.4接聽連線埠**：
+**若要變更Apache 2.4接聽連線埠**：
 
-1. 開啟 `/etc/httpd/conf/httpd.conf` 在文字編輯器中。
-1. 找到 `Listen` 指令。
-1. 將監聽連線埠的值變更為 `8080`. （您可以使用任何可用的接聽連線埠。）
-1. 將變更儲存至 `httpd.conf` 並退出文字編輯器。
+1. 在文字編輯器中開啟`/etc/httpd/conf/httpd.conf`。
+1. 找到`Listen`指示詞。
+1. 將接聽連線埠的值變更為`8080`。 （您可以使用任何可用的接聽連線埠。）
+1. 將變更儲存至`httpd.conf`並結束文字編輯器。
 
 ## 修改Varnish系統設定
 
 若要修改Varnish系統組態：
 
-1. 作為使用者，具有 `root` 許可權，在文字編輯器中開啟您的「消失」設定檔：
+1. 以具有`root`許可權的使用者身分，在文字編輯器中開啟您的「消失」設定檔：
 
    - CentOS 6： `/etc/sysconfig/varnish`
    - CentOS 7： `/etc/varnish/varnish.params`
@@ -40,7 +40,7 @@ ht-degree: 0%
    VARNISH_LISTEN_PORT=80
    ```
 
-   對於Varnish 4.x，請確定DAEMON_OPTS包含正確的監聽連線埠 `-a` 引數（即使VARNISH_LISTEN_PORT設定為正確的值）：
+   對於Varnish 4.x，請確定DAEMON_OPTS包含`-a`引數的正確接聽連線埠（即使VARNISH_LISTEN_PORT設定為正確值）：
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -54,17 +54,17 @@ ht-degree: 0%
 
 ### 修改預設VCL
 
-本節探討如何提供最低限度的設定，好讓Varnish傳回HTTP回應標題。 這可讓您在設定 [!DNL Commerce] 使用Varnish的應用程式。
+本節探討如何提供最低限度的設定，好讓Varnish傳回HTTP回應標題。 這可讓您在設定[!DNL Commerce]應用程式使用Varnish之前，先驗證Varnish是否有效。
 
 若要將清漆設定為最少：
 
-1. 備份 `default.vcl`：
+1. 備份`default.vcl`：
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
-1. 開啟 `/etc/varnish/default.vcl` 在文字編輯器中。
+1. 在文字編輯器中開啟`/etc/varnish/default.vcl`。
 1. 找到下列區段：
 
    ```conf
@@ -74,11 +74,11 @@ ht-degree: 0%
    }
    ```
 
-1. 取代的值 `.host` 使用完整的主機名稱或IP位址，以及Varnish的接聽連線埠 _後端_ 或 _原始伺服器_；也就是說，提供內容Varnish的伺服器將會加速。
+1. 將`.host`的值取代為Varnish _後端_&#x200B;或&#x200B;_原始伺服器_&#x200B;的完整主機名稱或IP位址和接聽連線埠；也就是說，提供內容Varnish的伺服器將會加速。
 
-   通常這是您的網頁伺服器。 另請參閱 [後端伺服器](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) 在 _清漆指南_.
+   通常這是您的網頁伺服器。 請參閱&#x200B;_清漆指南_&#x200B;中的[後端伺服器](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)。
 
-1. 取代的值 `.port` 網頁伺服器的接聽連線埠（此範例中為8080）。
+1. 將`.port`的值取代為網頁伺服器的接聽連線埠（此範例中為8080）。
 
    範例： Apache已安裝於主機192.0.2.55上，且Apache正在連線埠8080上接聽：
 
@@ -91,9 +91,9 @@ ht-degree: 0%
 
    >[!INFO]
    >
-   >如果Varnish和Apache在相同主機上執行，Adobe建議您使用IP位址或主機名稱，而不要使用 `localhost`.
+   >如果Varnish和Apache在相同主機上執行，Adobe建議您使用IP位址或主機名稱，而非`localhost`。
 
-1. 將變更儲存至 `default.vcl` 並退出文字編輯器。
+1. 將變更儲存至`default.vcl`並結束文字編輯器。
 
 1. 重新啟動清漆：
 
@@ -116,7 +116,7 @@ varnishd -d -f /etc/varnish/default.vcl
 
 ## 確認亮光是否正常運作
 
-以下幾節將討論如何確認Varnish是否正常運作，但是 _不含_ 設定Commerce以使用它。 設定Commerce之前，請先嘗試此做法。
+以下各節討論如何驗證Varnish是否正常運作，但&#x200B;_沒有_&#x200B;設定Commerce以使用它。 在設定Commerce之前，請先嘗試此做法。
 
 依照顯示的順序，執行下列各節中討論的工作：
 
@@ -137,7 +137,7 @@ varnishd -d -f /etc/varnish/default.vcl
 
 1. 啟動Varnish子程式：
 
-   出現提示時，輸入 `start`
+   出現提示時，請輸入`start`
 
    系統會顯示下列訊息，確認啟動成功：
 
@@ -168,11 +168,11 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 前述顯示於連線埠80上執行的Varnish以及於連線埠8080上執行的Apache。
 
-如果您沒有看到輸出 `varnishd`，確認Varnish正在執行。
+如果您沒有看到`varnishd`的輸出，請確定Varnish正在執行。
 
-另請參閱 [`netstat` 選項](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+檢視[`netstat`選項](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html)。
 
-## 安裝Commerce軟
+## 安裝Commerce軟體
 
 安裝Commerce軟體（如果尚未安裝）。 提示輸入基底URL時，請使用Varnish主機和連線埠80 （適用於Varnish），因為Varnish會接收所有傳入的HTTP要求。
 
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-如果發生此錯誤，請編輯 `default.vcl` 並將逾時新增至 `backend` 區段如下：
+如果您發生此錯誤，請編輯`default.vcl`並將逾時新增至`backend`段落，如下所示：
 
 ```conf
 backend default {
@@ -199,11 +199,11 @@ backend default {
 
 現在，您可以檢視HTML從任何頁面傳回的回應標題，以確認Varnish正在為頁面提供服務。
 
-檢視標題之前，您必須先為開發人員模式設定Commerce 。 有幾種方法可以做到，最簡單的方法就是進行修改 `.htaccess` 商務應用程式根目錄中的。 您也可以使用 [`magento deploy:mode:set`](../cli/set-mode.md) 命令。
+在檢視標題之前，您必須先為開發人員模式設定Commerce 。 有幾種方法可以做到，最簡單的方法就是在Commerce應用程式根目錄中修改`.htaccess`。 您也可以使用[`magento deploy:mode:set`](../cli/set-mode.md)命令。
 
-### 為開發人員模式設定Commerce
+### 針對開發人員模式設定Commerce
 
-若要針對開發人員模式設定Commerce，請使用 [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) 命令。
+若要將Commerce設為開發人員模式，請使用[`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode)命令。
 
 ### 檢視清漆日誌
 
@@ -232,13 +232,13 @@ varnishlog
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-如果這類標題有 _非_ 顯示，停止塗漆，檢查您的 `default.vcl`，然後再試一次。
+如果這類標頭&#x200B;_不_&#x200B;顯示，請停止Varnish，檢查您的`default.vcl`，然後再試一次。
 
 ### 檢視HTML回應標頭
 
 有幾種方式可檢視回應標題，包括使用瀏覽器外掛程式或瀏覽器檢測器。
 
-以下範例使用 `curl`. 您可以從任何可以使用HTTP存取Commerce伺服器的電腦輸入此命令。
+下列範例使用`curl`。 您可以從任何可以使用HTTP存取Commerce伺服器的電腦輸入此命令。
 
 ```bash
 curl -I -v --location-trusted '<your Commerce base URL>'

@@ -12,9 +12,9 @@ ht-degree: 1%
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
 * [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
 
-如果您在升級至MariaDB 10.6後遇到與索引無關的效能降低情形，請考慮啟用 [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) 設定。 例如， `--query-cache-type=ON`.
+如果您在升級至MariaDB 10.6後遇到與索引無關的效能降低，請考慮啟用[`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type)設定。 例如，`--query-cache-type=ON`。
 
-在雲端基礎結構專案上升級Adobe Commerce之前，您可能還需要升級MariaDB ([請參閱MariaDB升級最佳作法](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md))。
+在雲端基礎結構專案上升級Adobe Commerce之前，您可能還需要升級MariaDB （[請參閱MariaDB升級最佳實務](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)）。
 
 例如：
 

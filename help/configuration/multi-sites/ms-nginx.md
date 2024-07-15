@@ -4,7 +4,7 @@ description: 按照本教學課程中的說明使用Nginx設定多個網站。
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -17,51 +17,51 @@ ht-degree: 0%
 
   在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
 
-  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的任務後，請參閱 [設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 在 _雲端基礎結構上的Commerce指南_.
+  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html)。
 
-- 您可以在一個虛擬主機檔案中接受多個網域，或為每個網站使用一個虛擬主機；虛擬主機設定檔案位於 `/etc/nginx/sites-available`.
-- 您使用 `nginx.conf.sample` 由Commerce提供，僅包含本教學課程中討論的修改。
-- Commerce軟體安裝在 `/var/www/html/magento2`.
+- 您在一個虛擬主機檔案中接受多個網域，或每個網站使用一個虛擬主機；虛擬主機組態檔位於`/etc/nginx/sites-available`。
+- 您僅使用本教學課程中討論的修改內容，再使用Commerce提供的`nginx.conf.sample`。
+- 已在`/var/www/html/magento2`中安裝Commerce軟體。
 - 您有預設以外的兩個網站：
 
-   - `french.mysite.mg` 使用網站程式碼 `french` 和存放區檢視代碼 `fr`
-   - `german.mysite.mg` 使用網站程式碼 `german` 和存放區檢視代碼 `de`
-   - `mysite.mg` 是預設網站和預設商店檢視
+   - 網站代碼為`french`且商店檢視代碼為`fr`的`french.mysite.mg`
+   - 網站代碼為`german`且商店檢視代碼為`de`的`german.mysite.mg`
+   - `mysite.mg`是預設網站和預設商店檢視
 
 >[!TIP]
 >
->請參閱 [建立網站](ms-admin.md#step-2-create-websites) 和 [建立商店檢視](ms-admin.md#step-4-create-store-views) 以取得找出這些值的協助。
+>如需尋找這些值的說明，請參閱[建立網站](ms-admin.md#step-2-create-websites)和[建立商店檢視](ms-admin.md#step-4-create-store-views)。
 
 以下是使用nginx設定多個網站的藍圖：
 
-1. [設定網站、商店和商店檢視](ms-admin.md) 在Admin中。
-1. 建立 [Nginx虛擬主機](#step-2-create-nginx-virtual-hosts))對應多個網站或每個Commerce網站一個Nginx虛擬主機（詳細步驟如下）。
-1. 傳遞下列專案的值： [影像變數](ms-overview.md) `$MAGE_RUN_TYPE` 和 `$MAGE_RUN_CODE` 使用Magento提供的nginx `nginx.conf.sample` （步驟詳見下文）。
+1. [在Admin中設定網站、商店和商店檢視](ms-admin.md)。
+1. 建立[Nginx虛擬主機](#step-2-create-nginx-virtual-hosts))，以對應多個網站或每個Commerce網站一個Nginx虛擬主機（詳細步驟如下）。
+1. 使用Magento提供的`nginx.conf.sample`將[MAGE變數](ms-overview.md) `$MAGE_RUN_TYPE`和`$MAGE_RUN_CODE`的值傳遞給nginx （詳細步驟如下）。
 
-   - `$MAGE_RUN_TYPE` 可以是 `store` 或 `website`：
+   - `$MAGE_RUN_TYPE`可以是`store`或`website`：
 
-      - 使用 `website` 將您的網站載入您的店面。
-      - 使用 `store` 以載入您店面中的任何商店檢視。
+      - 使用`website`在您的店面中載入您的網站。
+      - 使用`store`載入您店面中的任何商店檢視。
 
-   - `$MAGE_RUN_CODE` 是不重複網站或商店檢視代碼，會對應至 `$MAGE_RUN_TYPE`.
+   - `$MAGE_RUN_CODE`是與`$MAGE_RUN_TYPE`對應的唯一網站或商店檢視代碼。
 
 1. 更新Commerce管理員的基本URL設定。
 
 ## 步驟1：在「管理員」中建立網站、商店和商店檢視
 
-另請參閱 [在管理員中設定多個網站、商店和商店檢視](ms-admin.md).
+請參閱[在Admin](ms-admin.md)中設定多個網站、商店和商店檢視。
 
 ## 步驟2：建立nginx虛擬主機
 
-此步驟會討論如何在店面載入網站。 您可以使用網站或商店檢視；如果您使用商店檢視，則必須適當地調整引數值。 您必須以使用者的身分完成本節中的工作， `sudo` 許可權。
+此步驟會討論如何在店面載入網站。 您可以使用網站或商店檢視；如果您使用商店檢視，則必須適當地調整引數值。 您必須以具有`sudo`許可權的使用者身分完成此段落中的工作。
 
-只要使用一個 [nginx虛擬主機檔案](#step-2-create-nginx-virtual-hosts)，您可保持簡易的nginx設定。 透過使用數個虛擬主機檔案，您可以自訂每個存放區(以使用自訂位置 `french.mysite.mg` 例如)。
+只要使用一個[nginx虛擬主機檔案](#step-2-create-nginx-virtual-hosts)，您就可以讓nginx組態簡單整潔。 使用數個虛擬主機檔案，您就可以自訂每個存放區（以使用自訂位置執行`french.mysite.mg`）。
 
-**若要建立一個虛擬主機** （簡體）：
+**若要建立一個虛擬主機** （簡化）：
 
-此設定將展開於 [nginx設定](../../installation/prerequisites/web-server/nginx.md).
+此組態會展開至[nginx組態](../../installation/prerequisites/web-server/nginx.md)。
 
-1. 開啟文字編輯器，並將下列內容新增至名為的新檔案 `/etc/nginx/sites-available/magento`：
+1. 開啟文字編輯器，並將下列內容新增至名為`/etc/nginx/sites-available/magento`的新檔案：
 
    ```conf
    map $http_host $MAGE_RUN_CODE {
@@ -95,7 +95,7 @@ ht-degree: 0%
 
    如果顯示錯誤，請檢查虛擬主機組態檔的語法。
 
-1. 在中建立符號連結 `/etc/nginx/sites-enabled` 目錄：
+1. 在`/etc/nginx/sites-enabled`目錄中建立符號連結：
 
    ```bash
    cd /etc/nginx/sites-enabled
@@ -105,12 +105,12 @@ ht-degree: 0%
    ln -s /etc/nginx/sites-available/magento magento
    ```
 
-如需有關對應指示詞的詳細資訊，請參閱 [有關map指示詞的nginx檔案](http://nginx.org/en/docs/http/ngx_http_map_module.html#map).
+如需有關對應指示詞的詳細資訊，請參閱對應指示詞](http://nginx.org/en/docs/http/ngx_http_map_module.html#map)上的[nginx檔案。
 
 
 **若要建立多個虛擬主機**：
 
-1. 開啟文字編輯器，並將下列內容新增至名為的新檔案 `/etc/nginx/sites-available/french.mysite.mg`：
+1. 開啟文字編輯器，並將下列內容新增至名為`/etc/nginx/sites-available/french.mysite.mg`的新檔案：
 
    ```conf
    server {
@@ -124,7 +124,7 @@ ht-degree: 0%
    }
    ```
 
-1. 建立另一個名為的檔案 `german.mysite.mg` 在相同目錄中，包含以下內容：
+1. 在相同目錄中建立另一個名為`german.mysite.mg`的檔案，其內容如下：
 
    ```conf
    server {
@@ -153,7 +153,7 @@ ht-degree: 0%
 
    如果顯示錯誤，請檢查虛擬主機組態檔的語法。
 
-1. 在中建立符號連結 `/etc/nginx/sites-enabled` 目錄：
+1. 在`/etc/nginx/sites-enabled`目錄中建立符號連結：
 
    ```bash
    cd /etc/nginx/sites-enabled
@@ -171,13 +171,13 @@ ht-degree: 0%
 
 >[!TIP]
 >
->不要編輯 `nginx.conf.sample` 檔案；這是核心Commerce檔案，可能會隨著每個新發行版本而更新。 請改為複製 `nginx.conf.sample` 重新命名，然後編輯複製的檔案。
+>請勿編輯`nginx.conf.sample`檔案；它是核心Commerce檔案，可能會隨著每個新發行版本而更新。 請改為複製`nginx.conf.sample`檔案、重新命名，然後編輯複製的檔案。
 
-**編輯主要應用程式的PHP進入點**：
+**若要編輯主要應用程式的PHP進入點**：
 
-若要修改 `nginx.conf.sample` 檔案**：
+若要修改`nginx.conf.sample`檔案**：
 
-1. 開啟文字編輯器並檢閱 `nginx.conf.sample` 檔案，`<magento2_installation_directory>/nginx.conf.sample`. 尋找下列章節：
+1. 開啟文字編輯器並檢閱`nginx.conf.sample`檔案，`<magento2_installation_directory>/nginx.conf.sample`。 尋找下列章節：
 
    ```conf
    # PHP entry point for main application
@@ -197,7 +197,7 @@ ht-degree: 0%
    }
    ```
 
-1. 更新 `nginx.conf.sample` 檔案，在include陳述式前有下列兩行：
+1. 在include陳述式前使用以下兩行更新`nginx.conf.sample`檔案：
 
    ```conf
    fastcgi_param MAGE_RUN_TYPE $MAGE_RUN_TYPE;
@@ -231,27 +231,27 @@ location ~ (index|get|static|report|404|503|health_check)\.php$ {
 
 ## 步驟4：更新基底URL設定
 
-您必須更新基礎URL `french` 和 `german` Commerce管理員中的網站。
+您必須在Commerce管理員中更新`french`和`german`網站的基底URL。
 
 ### 更新法文網站基底URL
 
-1. 登入Commerce管理員並瀏覽至 **商店** > **設定** > **設定** > **一般** > **Web**.
-1. 變更 _設定範圍_ 至 `french` 網站。
-1. 展開 **基本URL** 區段並更新 **基礎URL** 和 **基礎連結URL** 值至 `http://french.magento24.com/`.
-1. 展開 **基礎URL （安全）** 區段並更新 **安全基底URL** 和 **安全基礎連結URL** 值至 `https://french.magento24.com/`.
-1. 按一下 **儲存設定** 並儲存設定變更。
+1. 登入Commerce管理員並瀏覽至&#x200B;**商店** > **設定** > **設定** > **一般** > **網頁**。
+1. 將&#x200B;_設定範圍_&#x200B;變更為`french`網站。
+1. 展開&#x200B;**基底URL**&#x200B;區段，並將&#x200B;**基底URL**&#x200B;和&#x200B;**基底連結URL**&#x200B;值更新為`http://french.magento24.com/`。
+1. 展開&#x200B;**基礎URL （安全）**&#x200B;區段，並將&#x200B;**安全基礎URL**&#x200B;和&#x200B;**安全基礎連結URL**&#x200B;值更新為`https://french.magento24.com/`。
+1. 按一下&#x200B;**儲存組態**&#x200B;並儲存組態變更。
 
 ### 更新德文網站基底URL
 
-1. 登入Commerce管理員並瀏覽至 **商店** > **設定** > **設定** > **一般** > **Web**.
-1. 變更 _設定範圍_ 至 `german` 網站。
-1. 展開 **基本URL** 區段並更新 **基礎URL** 和 **基礎連結URL** 值至 `http://german.magento24.com/`.
-1. 展開 **基礎URL （安全）** 區段並更新 **安全基底URL** 和 **安全基礎連結URL** 值至 `https://german.magento24.com/`.
-1. 按一下 **儲存設定** 並儲存設定變更。
+1. 登入Commerce管理員並瀏覽至&#x200B;**商店** > **設定** > **設定** > **一般** > **網頁**。
+1. 將&#x200B;_設定範圍_&#x200B;變更為`german`網站。
+1. 展開&#x200B;**基底URL**&#x200B;區段，並將&#x200B;**基底URL**&#x200B;和&#x200B;**基底連結URL**&#x200B;值更新為`http://german.magento24.com/`。
+1. 展開&#x200B;**基礎URL （安全）**&#x200B;區段，並將&#x200B;**安全基礎URL**&#x200B;和&#x200B;**安全基礎連結URL**&#x200B;值更新為`https://german.magento24.com/`。
+1. 按一下&#x200B;**儲存組態**&#x200B;並儲存組態變更。
 
 ### 清除快取
 
-執行以下命令以清除 `config` 和 `full_page` 快取。
+執行以下命令以清除`config`和`full_page`快取。
 
 ```bash
 bin/magento cache:clean config full_page
@@ -259,9 +259,9 @@ bin/magento cache:clean config full_page
 
 ## 驗證您的網站
 
-除非您已為商店的URL設定DNS，否則您必須將靜態路由新增至中的主機。 `hosts` 檔案：
+除非您已為存放區的URL設定DNS，否則您必須在`hosts`檔案中新增靜態路由至主機：
 
-1. 找出您的作業系統 `hosts` 檔案。
+1. 找到您的作業系統`hosts`檔案。
 1. 以格式新增靜態路由：
 
    ```conf
@@ -280,10 +280,10 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- 在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
->- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱 [設定多個Cloud網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) 在 _雲端基礎結構上的Commerce指南_.
+>- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個雲端網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html)。
 
 ### 疑難排解
 
-- 如果您的法文和德文網站傳回404s，但您的管理員載入，請確定您已完成 [步驟6：將商店程式碼新增至基底URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- 如果您的法文和德文網站傳回404s，但您的管理員載入，請確定您已完成[步驟6：將商店程式碼新增至基底URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url)。
 - 如果所有URL都傳回404s，請確定您已重新啟動網頁伺服器。
 - 如果管理員無法正常運作，請確定您正確設定虛擬主機。

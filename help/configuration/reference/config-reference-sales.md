@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # 銷售設定路徑參考
 
-本節列出「管理員」中選項可用的變數名稱和設定路徑，位於 **商店** >設定> **設定** > **銷售**.
+此區段列出&#x200B;**商店** >設定> **設定** > **銷售**&#x200B;底下「管理員」中選項可用的變數名稱和設定路徑。
 
-此 [`magento app:config:dump` 命令](../cli/export-configuration.md) 將這些值寫入共用組態檔， `app/etc/config.php`，這應該是在原始檔控制中。 若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱 [使用環境變數覆寫組態設定](override-config-settings.md#environment-variables). 此主題會 _非_ 清單 [敏感值和系統特定值](config-reference-sens.md).
+[`magento app:config:dump`命令](../cli/export-configuration.md)將這些值寫入到共用組態檔`app/etc/config.php`，它應該是在原始檔控制中。 若要選擇性地覆寫任何組態設定或設定敏感設定，請參閱[使用環境變數覆寫組態設定](override-config-settings.md#environment-variables)。 此主題&#x200B;_不_&#x200B;列出[敏感值和系統特定值](config-reference-sens.md)。
 
 ## 銷售路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **銷售**.
+這些組態值可在&#x200B;**商店** >設定> **組態** > **銷售** > **銷售**&#x200B;的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -29,8 +29,8 @@ ht-degree: 0%
 | 稅金 | `sales/totals_sort/tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 固定產品稅金 | `sales/totals_sort/weee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 全部總計 | `sales/totals_sort/grand_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 禮品卡 | `sales/totals_sort/giftcardaccount` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 商店點數 | `sales/totals_sort/customerbalance` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 禮品卡 | `sales/totals_sort/giftcardaccount` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 商店點數 | `sales/totals_sort/customerbalance` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 允許重新排序 | `sales/reorder/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PDF列印輸出的標誌(200x50) | `sales/identity/logo` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | HTML列印檢視的標誌 | `sales/identity/logo_html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -47,31 +47,31 @@ ht-degree: 0%
 | 暫緩付款訂單期限（分鐘） | `sales/orders/delete_pending_after` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 允許訂單層級的贈品訊息 | `sales/gift_options/allow_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 允許訂單專案的贈品訊息 | `sales/gift_options/allow_items` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 允許訂購層級的贈品包裝 | `sales/gift_options/wrapping_allow_order` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許訂購專案的贈品包裝 | `sales/gift_options/wrapping_allow_items` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許贈品收據 | `sales/gift_options/allow_gift_receipt` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 允許列印卡片 | `sales/gift_options/allow_printed_card` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 列印卡片的預設價格 | `sales/gift_options/printed_card_price` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 允許訂購層級的贈品包裝 | `sales/gift_options/wrapping_allow_order` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許訂購專案的贈品包裝 | `sales/gift_options/wrapping_allow_items` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許贈品收據 | `sales/gift_options/allow_gift_receipt` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 允許列印卡片 | `sales/gift_options/allow_printed_card` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 列印卡片的預設價格 | `sales/gift_options/printed_card_price` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 啟用地圖 | `sales/msrp/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示實際價格 | `sales/msrp/display_price_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 預設快顯文字訊息 | `sales/msrp/explanation_message` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 預設「這是什麼」文字訊息 | `sales/msrp/explanation_message_whats_this` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 在Storefront中啟用我的帳戶上的SKU訂單 | `sales/product_sku/my_account_enable` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 在Storefront中啟用我的帳戶上的SKU訂單 | `sales/product_sku/my_account_enable` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 已啟用 | `sales/instant_purchase/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 按鈕文字 | `sales/instant_purchase/button_text` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 客戶群組 | `sales/product_sku/allowed_groups` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 啟用封存 | `sales/magento_salesarchive/active` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 封存購買訂單 | `sales/magento_salesarchive/age` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 要封存的訂單狀態 | `sales/magento_salesarchive/order_statuses` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 在店面啟用RMA | `sales/magento_rma/enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 在產品層級啟用RMA | `sales/magento_rma/enabled_on_product` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 使用商店地址 | `sales/magento_rma/use_store_address` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 客戶群組 | `sales/product_sku/allowed_groups` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 啟用封存 | `sales/magento_salesarchive/active` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 封存購買訂單 | `sales/magento_salesarchive/age` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 要封存的訂單狀態 | `sales/magento_salesarchive/order_statuses` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 在店面啟用RMA | `sales/magento_rma/enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 在產品層級啟用RMA | `sales/magento_rma/enabled_on_product` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 使用商店地址 | `sales/magento_rma/use_store_address` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## 銷售電子郵件路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **銷售電子郵件**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **銷售** > **銷售電子郵件**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -116,26 +116,26 @@ ht-degree: 0%
 | 銷退折讓單註解電子郵件範本 | `sales_email/creditmemo_comment/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 來賓的銷退折讓單註解電子郵件範本 | `sales_email/creditmemo_comment/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 傳送銷退折讓單備註電子郵件複製方法 | `sales_email/creditmemo_comment/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用 | `sales_email/magento_rma/enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| RMA電子郵件寄件者 | `sales_email/magento_rma/identity` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| RMA電子郵件範本 | `sales_email/magento_rma/template` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來賓的RMA電子郵件範本 | `sales_email/magento_rma/guest_template` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 傳送RMA電子郵件複製方法 | `sales_email/magento_rma/copy_method` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `sales_email/magento_rma_auth/enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| RMA授權電子郵件寄件者 | `sales_email/magento_rma_auth/identity` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| RMA授權電子郵件範本 | `sales_email/magento_rma_auth/template` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來賓的RMA授權電子郵件範本 | `sales_email/magento_rma_auth/guest_template` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 傳送RMA授權電子郵件複製方法 | `sales_email/magento_rma_auth/copy_method` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `sales_email/magento_rma_comment/enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| RMA註解電子郵件寄件者 | `sales_email/magento_rma_comment/identity` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| RMA註解電子郵件範本 | `sales_email/magento_rma_comment/template` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 來賓的RMA註解電子郵件範本 | `sales_email/magento_rma_comment/guest_template` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 傳送RMA電子郵件複製方法 | `sales_email/magento_rma_comment/copy_method` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 已啟用 | `sales_email/magento_rma_customer_comment/enabled` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| RMA註解電子郵件寄件者 | `sales_email/magento_rma_customer_comment/identity` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| RMA註解電子郵件收件者 | `sales_email/magento_rma_customer_comment/recipient` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| RMA註解電子郵件範本 | `sales_email/magento_rma_customer_comment/template` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 傳送RMA電子郵件複製方法 | `sales_email/magento_rma_customer_comment/copy_method` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `sales_email/magento_rma/enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| RMA電子郵件寄件者 | `sales_email/magento_rma/identity` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| RMA電子郵件範本 | `sales_email/magento_rma/template` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來賓的RMA電子郵件範本 | `sales_email/magento_rma/guest_template` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 傳送RMA電子郵件複製方法 | `sales_email/magento_rma/copy_method` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `sales_email/magento_rma_auth/enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| RMA授權電子郵件寄件者 | `sales_email/magento_rma_auth/identity` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| RMA授權電子郵件範本 | `sales_email/magento_rma_auth/template` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來賓的RMA授權電子郵件範本 | `sales_email/magento_rma_auth/guest_template` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 傳送RMA授權電子郵件複製方法 | `sales_email/magento_rma_auth/copy_method` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `sales_email/magento_rma_comment/enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| RMA註解電子郵件寄件者 | `sales_email/magento_rma_comment/identity` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| RMA註解電子郵件範本 | `sales_email/magento_rma_comment/template` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 來賓的RMA註解電子郵件範本 | `sales_email/magento_rma_comment/guest_template` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 傳送RMA電子郵件複製方法 | `sales_email/magento_rma_comment/copy_method` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 已啟用 | `sales_email/magento_rma_customer_comment/enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| RMA註解電子郵件寄件者 | `sales_email/magento_rma_customer_comment/identity` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| RMA註解電子郵件收件者 | `sales_email/magento_rma_customer_comment/recipient` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| RMA註解電子郵件範本 | `sales_email/magento_rma_customer_comment/template` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 傳送RMA電子郵件複製方法 | `sales_email/magento_rma_customer_comment/copy_method` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 在標題中顯示訂單ID | `sales_pdf/invoice/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 在標題中顯示訂單ID | `sales_pdf/shipment/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 在標題中顯示訂單ID | `sales_pdf/creditmemo/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -144,12 +144,12 @@ ht-degree: 0%
 
 ## 稅捐路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **稅金**.
+這些組態值可在&#x200B;**商店** >設定> **組態** > **銷售** > **稅捐**&#x200B;的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
 | 出貨的稅捐類別 | `tax/classes/shipping_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 贈品選項的稅捐類別 | `tax/classes/wrapping_tax_class` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 贈品選項的稅捐類別 | `tax/classes/wrapping_tax_class` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 產品的預設稅捐類別 | `tax/classes/default_product_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 客戶的預設稅捐類別 | `tax/classes/default_customer_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 稅捐計算方式依據 | `tax/calculation/algorithm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -162,22 +162,22 @@ ht-degree: 0%
 | 啟用跨境貿易 | `tax/calculation/cross_border_trade_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 預設國家 | `tax/defaults/country` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 預設狀態 | `tax/defaults/region` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 預設郵遞區號 | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 預設Post程式碼 | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 在目錄中顯示產品價格 | `tax/display/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示送貨價格 | `tax/display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示價格 | `tax/cart_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示小計 | `tax/cart_display/subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示送貨金額 | `tax/cart_display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 顯示贈品包裝價格 | `tax/cart_display/gift_wrapping` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 顯示列印的卡片價格 | `tax/cart_display/printed_card` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 顯示贈品包裝價格 | `tax/cart_display/gift_wrapping` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 顯示列印的卡片價格 | `tax/cart_display/printed_card` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 包含訂單總金額中的稅捐 | `tax/cart_display/grandtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示完整稅捐彙總 | `tax/cart_display/full_summary` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示零稅捐小計 | `tax/cart_display/zero_tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示價格 | `tax/sales_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示小計 | `tax/sales_display/subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示送貨金額 | `tax/sales_display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 顯示贈品包裝價格 | `tax/sales_display/gift_wrapping` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 顯示列印的卡片價格 | `tax/sales_display/printed_card` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 顯示贈品包裝價格 | `tax/sales_display/gift_wrapping` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 顯示列印的卡片價格 | `tax/sales_display/printed_card` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 包含訂單總金額中的稅捐 | `tax/sales_display/grandtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示完整稅捐彙總 | `tax/sales_display/full_summary` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示零稅捐小計 | `tax/sales_display/zero_tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -193,7 +193,7 @@ ht-degree: 0%
 
 ## 結帳路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **簽出**.
+這些組態值可在&#x200B;**商店** >設定> **組態** > **銷售** > **結帳**&#x200B;的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -205,7 +205,7 @@ ht-degree: 0%
 | 新增產品後重新導向至購物車 | `checkout/cart/redirect_to_cart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 群組產品影像 | `checkout/cart/grouped_product_image` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 可設定的產品影像 | `checkout/cart/configurable_product_image` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 預覽報價存留期（分鐘） | `checkout/cart/preview_quota_lifetime` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 預覽報價存留期（分鐘） | `checkout/cart/preview_quota_lifetime` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 顯示購物車摘要 | `checkout/cart_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示購物車側欄 | `checkout/sidebar/display` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 顯示最近新增專案的最大值 | `checkout/sidebar/count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -218,7 +218,7 @@ ht-degree: 0%
 
 ## 送貨設定路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **送貨設定**.
+這些組態值可在&#x200B;**商店** >設定> **組態** > **銷售** > **送貨設定**&#x200B;的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -229,7 +229,7 @@ ht-degree: 0%
 
 ## 多送貨設定路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **多送貨設定**.
+這些組態值可在&#x200B;**商店** >設定> **組態** > **銷售** > **多重送貨設定**&#x200B;的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -240,7 +240,7 @@ ht-degree: 0%
 
 ## 傳遞方法路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **傳遞方法**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **銷售** > **傳遞方法**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
@@ -280,7 +280,7 @@ ht-degree: 0%
 | 顯示方法（若不適用） | `carriers/tablerate/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `carriers/tablerate/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 已啟用簽出 | `carriers/ups/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用RMA | `carriers/ups/active_rma` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用RMA | `carriers/ups/active_rma` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | UPS型別 | `carriers/ups/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 模式 | `carriers/ups/mode_xml` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 出貨來源 | `carriers/ups/origin_shipment` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -307,7 +307,7 @@ ht-degree: 0%
 | 顯示方法（若不適用） | `carriers/ups/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `carriers/ups/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 已啟用簽出 | `carriers/usps/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用RMA | `carriers/usps/active_rma` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用RMA | `carriers/usps/active_rma` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 模式 | `carriers/usps/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 套件要求型別 | `carriers/usps/shipment_requesttype` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 容器 | `carriers/usps/container` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -332,7 +332,7 @@ ht-degree: 0%
 | 顯示方法（若不適用） | `carriers/usps/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `carriers/usps/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 已啟用簽出 | `carriers/fedex/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用RMA | `carriers/fedex/active_rma` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用RMA | `carriers/fedex/active_rma` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 標題 | `carriers/fedex/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Web服務URL （生產） | `carriers/fedex/production_webservices_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Web服務URL （沙盒） | `carriers/fedex/sandbox_webservices_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -357,7 +357,7 @@ ht-degree: 0%
 | 顯示方法（若不適用） | `carriers/fedex/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 排序順序 | `carriers/fedex/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 已啟用簽出 | `carriers/dhl/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 已啟用RMA | `carriers/dhl/active_rma` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 已啟用RMA | `carriers/dhl/active_rma` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 標題 | `carriers/dhl/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 內容型別 | `carriers/dhl/content_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 計算手續費 | `carriers/dhl/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -386,19 +386,19 @@ ht-degree: 0%
 
 ## Google API路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **GOOGLE API**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **銷售** > **Google API**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
 | 啟用 | `google/analytics/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 帳戶型別 | `google/analytics/type` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 帳戶型別 | `google/analytics/type` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 啟用內容實驗 | `google/analytics/experiments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 目錄頁面的清單屬性 | `google/analytics/catalog_page_list_value` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 交叉銷售區塊的清單屬性 | `google/analytics/crosssell_block_list_value` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 向上銷售區塊的清單屬性 | `google/analytics/upsell_block_list_value` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 相關產品區塊的清單屬性 | `google/analytics/related_block_list_value` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 搜尋結果頁面的清單屬性 | `google/analytics/search_page_list_value` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
-| 「標籤」促銷活動欄位的「內部促銷活動」。 | `google/analytics/promotions_list_value` | ![僅限商務](/help/assets/configuration/cloud-ee.png) |
+| 目錄頁面的清單屬性 | `google/analytics/catalog_page_list_value` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 交叉銷售區塊的清單屬性 | `google/analytics/crosssell_block_list_value` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 向上銷售區塊的清單屬性 | `google/analytics/upsell_block_list_value` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 相關產品區塊的清單屬性 | `google/analytics/related_block_list_value` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 搜尋結果頁面的清單屬性 | `google/analytics/search_page_list_value` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 「標籤」促銷活動欄位的「內部促銷活動」。 | `google/analytics/promotions_list_value` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 啟用 | `google/adwords/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 轉換ID | `google/adwords/conversion_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 轉換語言 | `google/adwords/conversion_language` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -412,7 +412,7 @@ ht-degree: 0%
 
 ## 禮品卡路徑
 
-這些設定值可在的「管理員」中使用 **商店** >設定> **設定** > **銷售** > **禮品卡**.
+這些設定值可在&#x200B;**商店** >設定> **設定** > **銷售** > **禮卡**&#x200B;中的管理員中使用。
 
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|

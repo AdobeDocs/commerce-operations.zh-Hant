@@ -5,7 +5,7 @@ exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
 feature: Cloud
 source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 技術
 
-雲端基礎結構上的Adobe Commerce使用數個軟體解決方案來支援該平台。 請參閱 _雲端指南_ 如需更多詳細資料：
+雲端基礎結構上的Adobe Commerce使用數個軟體解決方案來支援該平台。 如需詳細資訊，請參閱&#x200B;_雲端指南_&#x200B;中的下列主題：
 
-- [專業環境架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#production-technology-stack)
+- [Pro環境架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#production-technology-stack)
 - [入門環境架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html#production-and-staging-technology-stack)
 
 ## 功能和優點

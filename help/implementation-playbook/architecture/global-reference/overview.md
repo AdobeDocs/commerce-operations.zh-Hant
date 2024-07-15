@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ![說明架構差異成本的表格](../../../assets/playbooks/divergent-architecture.svg)
 
-![說明在架構中整合之成本的表格](../../../assets/playbooks/consolidated-architecture.svg)
+![說明架構中整合成本的表格](../../../assets/playbooks/consolidated-architecture.svg)
 
 GRA為：
 
@@ -55,4 +55,4 @@ GRA影響：
 
 >[!TIP]
 >
->另請參閱 [GRA範例](examples.md).
+>請參閱[GRA範例](examples.md)。

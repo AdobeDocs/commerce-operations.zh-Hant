@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ### 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 使用下列策略管理購物車專案數量
 
-- 使用「 」將訂單分割為數筆較小的訂單，且列數較少。 [!UICONTROL Add Item by SKU] 功能。
+- 使用[!UICONTROL Add Item by SKU]功能將訂單分割為數筆較小的訂單，且列數較少。
 - 僅新增載入專案清單所需的自訂邏輯和購物車自訂。
 
 ## 類別限制
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ### 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ### 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 #### 檢閱屬性集組態
 
-1. [連線到站台資料庫](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database).
+1. [連線到站台資料庫](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database)。
 
 1. 使用MySQL尋找屬性集數目
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 
 ### 對效能的潛在影響
 
-設定多個 **產品屬性** 增加每個產品的產品範本大小（EAV結構），以及必須擷取的資料量。 這項增加會以下列方式影響作業：
+設定許多&#x200B;**產品屬性**&#x200B;會增加每個產品的產品範本大小（EAV結構）以及必須擷取的資料量。 這項增加會以下列方式影響作業：
 
 - 與EAV資料擷取相關的SQL查詢流量增加，以及處理的資料量增加，導致DB輸送量減少
 - Adobe Commerce索引和全文檢索搜尋索引的大小大幅增加
@@ -125,7 +125,7 @@ ht-degree: 0%
 - 可以封鎖「產品整批動作」功能。
 - 由於執行時間長，無法每天執行中型及大型目錄的索引重新建置時間。
 
-設定多個 **屬性選項** 可能會以下列方式影響網站效能：
+設定許多&#x200B;**屬性選項**&#x200B;可能會以下列方式影響網站效能：
 
 - 產品詳細資料(PDP)和包含複雜產品的類別頁面上的長請求和呈現時間。
 - 管理產品儲存作業回應時間會增加到最佳效能目標以上。
@@ -138,7 +138,7 @@ ht-degree: 0%
 
 ### 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 設定許多產品選項，會增加所有讀取和寫入作業中，每個產品擷取的資料量，進而導致：
 
-- 增加SQL查詢流量和負載 `JOIN` 作業會增加資料庫輸送量。
+- SQL查詢流量增加，而較重的`JOIN`作業會增加資料庫輸送量。
 - 增加Adobe Commerce索引和全文檢索搜尋索引的大小。
 
 以上列出的增加可能會以下列方式影響網站效能：
@@ -170,16 +170,16 @@ ht-degree: 0%
 
 ### 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
 
 ### 更新產品清單設定
 
-如果您的類別中有太多產品，請更新店面目錄設定以停用選項 **允許每頁所有產品**.
+如果類別中有太多產品，請更新storefront類別目錄組態以停用選項&#x200B;**允許每頁所有產品**。
 
-停用此選項後，Adobe Commerce會使用列出店面分頁控制項的產品清單，來管理顯示在店面元件中的產品數量。 如需指示，請參閱 [設定分頁控制項](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
+停用此選項後，Adobe Commerce會使用列出店面分頁控制項的產品清單，來管理顯示在店面元件中的產品數量。 如需指示，請參閱[設定分頁控制項](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls)。
 
 ## 產品SKU限制
 
@@ -187,7 +187,7 @@ ht-degree: 0%
 
 ### 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -205,7 +205,7 @@ ht-degree: 0%
    - 減少網站、客戶群組、共用目錄、產品數量或可設定產品選項的數量，以減少SKU數量
 - 使用自訂選項而非建立個別產品，提供更多產品變數。
 - 由於每個商店或客戶群組的價格指定方式不同，因此考慮到「有效SKU」可能包含多種可能的價格排列。
-- 停用或移除未使用的系統元件，例如模組。 另請參閱  [解除安裝模組](../../../installation/tutorials/uninstall-modules.md).
+- 停用或移除未使用的系統元件，例如模組。 請參閱[解除安裝模組](../../../installation/tutorials/uninstall-modules.md)。
 - 在外部平台管理系統(PMS)中管理產品。
 
 ## 產品變數
@@ -214,7 +214,7 @@ ht-degree: 0%
 
 ### 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -249,7 +249,7 @@ ht-degree: 0%
 
 ### 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -261,4 +261,4 @@ ht-degree: 0%
 - 將產品新增到購物車時增加回應時間。
 - 增載入入及轉譯迷你藝術的時間。
 - 增加轉譯購物車頁面的時間。
-- 增加呈現的時間 **總計** 在「結帳」頁面上封鎖。
+- 增加在結帳頁面上呈現&#x200B;**總計**&#x200B;區塊的時間。

@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
 source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 網站和商店是目錄資料的倍數，因此擁有許多網站和商店可能會對網站效能產生下列負面影響：
 
-- 較大的索引表格會增加完成索引作業所需的時間 [價格指數].
+- 較大的索引表格會增加完成索引作業[價格索引]所需的時間。
 - 擷取應用程式設定的時間增加，會降低非快取目錄頁面的店面回應時間。
 - 由於會針對每個網站個別儲存資料，因此在「管理員」中完成「儲存」作業所需的時間會大幅增加。
 

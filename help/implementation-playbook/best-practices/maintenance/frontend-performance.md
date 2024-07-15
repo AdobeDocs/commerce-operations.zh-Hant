@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 0%
+source-wordcount: '184'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md) 之：
+[所有支援的版本](../../../release/versions.md)：
 
 - 雲端基礎結構上的Adobe Commerce
 - Adobe Commerce內部部署
@@ -29,13 +29,13 @@ ht-degree: 0%
 
 1. 使用Web效能工具稽核前端效能，例如：
 
-   - **[Google燈塔](https://web.dev/measure/)**— Lighthouse針對效能、協助工具、漸進式網頁應用程式、SEO等專案進行稽核。 如需執行Lighthouse的不同方式的詳細資訊，請參閱 [Lighthouse概述](https://developer.chrome.com/docs/lighthouse/overview).)
-   - **[Google PageSpeed Insights](https://pagespeed.web.dev/)**—PageSpeed Insights可快速傳送詳細報表，說明網頁效能緩慢的原因，並提供修正建議。
+   - **[Google Lighthouse](https://web.dev/measure/)**—Lighthouse具有效能、協助工具、漸進式網頁應用程式、SEO等的稽核。 如需執行Lighthouse的不同方式的詳細資訊，請參閱[Lighthouse概觀](https://developer.chrome.com/docs/lighthouse/overview)。
+   - **[Google PageSpeed Insights](https://pagespeed.web.dev/)**—PageSpeed Insights會快速傳送關於網頁效能緩慢原因的詳細報告，以及修正建議。
 
 1. 檢閱稽核報告並實作所提供的建議以改善商店效能。
 
 ## 其他資訊
 
 - [管理員使用者的索引管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [使用CLI進行索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
-- [適用於開發人員的索引概觀](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- 使用CLI [索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [開發人員的索引概觀](https://developer.adobe.com/commerce/php/development/components/indexing/)

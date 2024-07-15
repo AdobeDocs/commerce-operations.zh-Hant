@@ -20,10 +20,10 @@ ht-degree: 0%
    - 確定網頁伺服器在所有系統上都以相同使用者身分執行
    - 確定檔案系統擁有者位於所有系統的網頁伺服器群組中
 
-- 使用下列准則，視需要變更每個系統上的Commerce檔案系統許可權和擁有權：
+- 視需要變更每個系統上的Commerce檔案系統許可權和擁有權，請遵循下列准則：
 
-   - 開發及建置： [設定安裝前的擁有權和許可權（兩個使用者）](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-   - 生產： [開發和生產中的商業擁有權和許可權](file-system-permissions.md)
+   - 開發和建置： [設定安裝前的擁有權和許可權（兩個使用者）](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
+   - 生產： [開發和生產中的Commerce擁有權和許可權](file-system-permissions.md)
 
 >[!INFO]
 >

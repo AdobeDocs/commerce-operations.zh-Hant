@@ -1,10 +1,10 @@
 ---
 title: 常用命令
-description: 檢視常見Commerce CLI命令和用法的取樣。
+description: 檢視常用Commerce CLI命令和用法的抽樣。
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 以下摘要說明部分可用的命令。
 
-**顯示完整的命令清單**：
+**若要顯示完整的命令清單**：
 
 ```bash
 bin/magento list
@@ -44,21 +44,21 @@ bin/magento help cache:enable
 | [`magento dev:tests:run`](../cli/unit-tests.md) | 執行自動化測試 |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | 更新您的版面XML檔案，以符合新的可延伸樣式表語言轉換(XSLT)樣式表 |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | 產生資料以用於效能測試。 |
-| [`magento sampledata:install`](../../installation/sample-data/overview.md) | 安裝Commerce應用程式後，安裝選用的範例資料。<br><br>如需有關範例資料的詳細資訊，請參閱 [選擇性範例資料](../../installation/sample-data/overview.md). |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | 安裝Commerce應用程式後，安裝選用的範例資料。<br><br>如需範例資料的詳細資訊，請參閱[選用範例資料](../../installation/sample-data/overview.md)。 |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | 管理後端設定 |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | 建立/編輯/解除鎖定管理員使用者。 |
 | [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | 啟用/停用開發人員範本提示。 |
 
 ## 通用引數
 
-以下引數是所有命令通用的引數。 這些命令可以在安裝Commerce軟體之前或之後執行：
+以下引數是所有命令通用的引數。 您可以在安裝Commerce軟體之前或之後執行這些命令：
 
 | 長版本 | 簡短版本 | 含義 |
 |--- |--- |--- |
-| `--help` | `-h` | 取得任何命令的說明。 例如， `./magento help setup:install` 或 `./magento help setup:config:set`. |
+| `--help` | `-h` | 取得任何命令的說明。 例如，`./magento help setup:install`或`./magento help setup:config:set`。 |
 | `--quiet` | `-q` | 安靜模式；無輸出。 |
 | `--no-interaction` | `-n` | 無互動式問題。 |
-| `--verbose=1,2,3` | `-v, -vv, -vvv` | 詳細程度。 例如， `--verbose=3` 或 `-vvv` 顯示除錯詳細資訊，這是最詳細的輸出。 預設為 `--verbose=1` 或 `-v`. |
+| `--verbose=1,2,3` | `-v, -vv, -vvv` | 詳細程度。 例如，`--verbose=3`或`-vvv`會顯示偵錯詳細資訊，這是最詳細的輸出。 預設值為`--verbose=1`或`-v`。 |
 | `--version` | `-V` | 顯示此應用程式版本 |
 | `--ansi` | 不適用 | 強制ANSI輸出 |
 | `--no-ansi` | 不適用 | 停用ANSI輸出 |

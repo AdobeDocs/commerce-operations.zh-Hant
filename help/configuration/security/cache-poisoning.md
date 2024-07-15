@@ -1,18 +1,18 @@
 ---
 title: 防止快取中毒
-description: 瞭解如何防止您的Commerce店面出現頁面快取中毒。
+description: 瞭解如何防止Commerce店面的頁面快取中毒。
 feature: Configuration, Cache, Security
 exl-id: 947024dd-d59d-480d-bb6c-8e0065054bb6
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
 # 防止快取中毒
 
-本主題說明使用Microsoft Internet Information Server (IIS)網頁伺服器時，如何防止快取中毒。 _快取中毒_ 是一種變更快取內容以包含相同網站中不同頁面的方法。 例如，可以插入HTTP 404 （找不到）錯誤頁面來取代某些良性頁面（例如店面首頁），這可能會導致潛在的拒絕服務(DoS)。 Varnish或Redis會快取惡意頁面URL，因此得名 _頁面快取中毒_.
+本主題說明使用Microsoft Internet Information Server (IIS)網頁伺服器時，如何防止快取中毒。 _快取中毒_&#x200B;是一種將快取內容變更為包含相同網站不同頁面的方法。 例如，可以插入HTTP 404 （找不到）錯誤頁面來取代某些良性頁面（例如店面首頁），這可能會導致潛在的拒絕服務(DoS)。 Varnish或Redis已快取惡意頁面URL，因此名稱為&#x200B;_頁面快取中毒_。
 
 這些型別的攻擊可能很難偵測，因為它們不會導致網頁伺服器記錄發生錯誤。
 
@@ -39,11 +39,11 @@ ht-degree: 0%
 
 ## 解決方案
 
-我們提供根據的IIS伺服器設定移除所有先前標題值的選項 `Enable_IIS_Rewrites`.
+我們提供根據`Enable_IIS_Rewrites`的IIS伺服器設定，移除所有先前標題的值的選項。
 
-- 如果 `Enable_IIS_Rewrites` 設為 `0`，則會移除標題的值。
-- 如果 `Enable_IIS_Rewrites` 設為 `1`，則標題的值保持不變。
+- 如果`Enable_IIS_Rewrites`設定為`0`，則會移除標頭的值。
+- 如果`Enable_IIS_Rewrites`設定為`1`，則標頭的值將保持不變。
 
 >[!WARNING]
 >
->如果您設定 `Enable_IIS_Rewrites` 至 `1`，您不得在請求送達IIS網頁伺服器之前變更前述標頭的值。
+>如果您將`Enable_IIS_Rewrites`設為`1`，則在要求傳至IIS網頁伺服器之前，您不得允許變更前述標頭的值。

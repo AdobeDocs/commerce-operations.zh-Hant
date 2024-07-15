@@ -11,7 +11,7 @@ ht-degree: 3%
 
 # 檢查資料庫狀態
 
-執行此命令之前，您必須 [建立或更新部署設定](deployment.md).
+執行此命令之前，您必須[建立或更新部署組態](deployment.md)。
 
 ## 命令使用方式
 
@@ -34,5 +34,5 @@ All modules are up to date.
 | 退出代碼 | 說明 | 建議的動作 |
 |--------------|--------------|---------------|
 | 0 | 一般 | 無 |
-| 1 | 某些模組使用比資料庫更新或舊的程式碼版本 | 執行 [`magento setup:upgrade`](database-upgrade.md) 更新資料庫結構描述並執行 `composer update` 從應用程式根目錄更新元件相依性 |
-| 2 | `magento setup:upgrade` 為必要項 | [`magento setup:upgrade`](database-upgrade.md) 更新資料庫綱要 |
+| 1 | 某些模組使用比資料庫更新或舊的程式碼版本 | 執行[`magento setup:upgrade`](database-upgrade.md)以更新資料庫結構描述，並從應用程式根目錄執行`composer update`以更新元件相依性 |
+| 2 | `magento setup:upgrade`為必要項 | [`magento setup:upgrade`](database-upgrade.md)以更新資料庫結構描述 |

@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # 搜尋引擎必要條件
 
-自Adobe Commerce 2.4起，所有安裝都必須設定為使用 [Elasticsearch](https://www.elastic.co) 或 [OpenSearch](https://opensearch.org/) 作為目錄搜尋解決方案。
+自Adobe Commerce 2.4起，所有安裝都必須設定為使用[Elasticsearch](https://www.elastic.co)或[OpenSearch](https://opensearch.org/)作為目錄搜尋解決方案。
 
 >[!NOTE]
 >
->2.4.4版本新增OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 設定Elasticsearch7的所有指示都適用於OpenSearch。 [從Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md) 提供切換至OpenSearch的相關指引。
+>2.4.4版本新增OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 設定Elasticsearch7的所有指示都適用於OpenSearch。 [從Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)提供切換至OpenSearch的指引。
 
 ## 支援的版本
 
 您必須先安裝並設定Elasticsearch或OpenSearch，才能安裝Adobe Commerce 2.4.4和更新版本。
 
-請參閱 [系統需求](../../system-requirements.md) 以取得特定版本資訊。
+如需特定版本資訊，請參閱[系統需求](../../system-requirements.md)。
 
 ## 建議的設定
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 * Commerce應用程式和搜尋引擎會安裝在不同的主機上。
 
-  在個別主機上執行需要代理程式才能運作。 (搜尋引擎叢集不在本指南的涵蓋範圍內，但您可以在以下連結中找到更多資訊： [Elasticsearch叢集檔案](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  在個別主機上執行需要代理程式才能運作。 (搜尋引擎叢集不在本指南的涵蓋範圍內，但您可以在[Elasticsearch叢集檔案](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html)中找到更多資訊。)
 
 * 每個主機都有自己的網頁伺服器；網頁伺服器不一定要相同。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 1. 搜尋引擎網頁伺服器（在連線埠443上接聽）會代理要求至搜尋引擎伺服器（預設會接聽連線埠9200）。
 
-1. HTTP基本驗證會進一步保護搜尋引擎的存取權。 若要讓請求連線至搜尋引擎，該請求必須透過SSL傳遞 *和* 提供有效的使用者名稱和密碼。
+1. HTTP基本驗證會進一步保護搜尋引擎的存取權。 若要要求連線至搜尋引擎，必須透過SSL *及*&#x200B;提供有效的使用者名稱和密碼。
 
 1. 搜尋引擎會處理請求。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 * [iptables操作說明](https://help.ubuntu.com/community/IptablesHowTo)
 * [如何編輯iptables規則（fedora專案）](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
 * [SELinux簡介(CentOS.org)](https://www.centos.org)
-* [SELinux操作說明Wiki (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
+* [SELinux How-To Wiki (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
 
 ### 安裝Java Software Development Kit
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 java -version
 ```
 
-如果訊息 `java: command not found` 顯示，您必須依照下一節所述安裝Java SDK。
+如果顯示訊息`java: command not found`，您必須按照下一節所述安裝Java SDK。
 
 請參閱下列其中一節：
 
@@ -104,9 +104,9 @@ java -version
 
 #### 在CentOS上安裝JDK
 
-檢視此 [數位海洋教學課程](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
+檢視此[數位海洋教學課程](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8)。
 
-請務必安裝JDK及 *非* JRE。
+請務必安裝JDK，並&#x200B;*不* JRE。
 
 ```bash
 yum -y install java-1.8.0-openjdk
@@ -114,11 +114,11 @@ yum -y install java-1.8.0-openjdk
 
 >[!NOTE]
 >
->Java版本8可能無法用於所有作業系統。 例如，您可以 [搜尋Ubuntu的可用套件清單](https://packages.ubuntu.com/).
+>Java版本8可能無法用於所有作業系統。 例如，您可以[搜尋Ubuntu的可用套件清單](https://packages.ubuntu.com/)。
 
 #### 在Ubuntu上安裝JDK
 
-若要在Ubuntu上安裝JDK 1.8，請以使用者身分輸入下列命令， `root` 許可權：
+若要在Ubuntu上安裝JDK 1.8，請以具有`root`許可權的使用者身分輸入下列命令：
 
 ```bash
 apt-get -y update
@@ -128,11 +128,11 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-如需其他選項，請參閱 [oracle檔案](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+如需其他選項，請參閱[Oracle檔案](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)。
 
 ### 安裝搜尋引擎
 
-追隨 [安裝Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) 或 [安裝及設定OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) 以瞭解您的平台專屬步驟。
+請依照[安裝Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)或[安裝並設定OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/)，以取得您的平台特定步驟。
 
 若要確認Elasticsearch是否正常運作，請在伺服器上輸入下列命令：
 
@@ -159,10 +159,10 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## 升級Elasticsearch
 
-請參閱 [升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) 有關備份資料、偵測潛在移轉問題，以及在部署到生產環境之前測試升級的完整指示。 根據您目前的Elasticsearch版本，可能不需要完全重新啟動叢集。
+請參閱[升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)，以取得有關備份資料、偵測可能的移轉問題，以及在部署到生產環境之前測試升級的完整指示。 根據您目前的Elasticsearch版本，可能不需要完全重新啟動叢集。
 
-Elasticsearch需要JDK 1.8或更新版本。 另請參閱 [安裝Java Software Development Kit](#install-the-java-software-development-kit) 以檢查已安裝的JDK版本。
+Elasticsearch需要JDK 1.8或更新版本。 請參閱[安裝Java Software Development Kit](#install-the-java-software-development-kit)以檢查已安裝的JDK版本。
 
 ## 其他資源
 
-請參閱 [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) 或 [OpenSearch](https://opensearch.org/docs/latest/) 檔案。
+請參閱[Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)或[OpenSearch](https://opensearch.org/docs/latest/)檔案。

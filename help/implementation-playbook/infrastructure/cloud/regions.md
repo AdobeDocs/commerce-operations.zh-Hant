@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## Azure地區
 
-![顯示Azure地區的圖表](../../../assets/playbooks/azure-regions.png)
+顯示Azure區域的![圖表](../../../assets/playbooks/azure-regions.png)
 
 >[!NOTE]
 >

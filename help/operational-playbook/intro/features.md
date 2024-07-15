@@ -15,4 +15,4 @@ ht-degree: 0%
 
 ## 支援您進化的開放平台
 
-![商業技術的價值](../../assets/playbooks/commerce-features.png)
+![商務技術的值](../../assets/playbooks/commerce-features.png)

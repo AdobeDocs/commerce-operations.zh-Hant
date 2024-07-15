@@ -6,14 +6,14 @@ feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
 # 清漆ESI區塊
 
-Edge Side Include (ESI)是特殊指令，可用來將網頁包含在其他網頁中。
+Edge Side Include (ESI)是特殊指示，可用來將網頁包含在其他網頁中。
 
 範例：
 
@@ -23,18 +23,18 @@ Edge Side Include (ESI)是特殊指令，可用來將網頁包含在其他網頁
 </div>
 ```
 
-清漆從擷取內容 `http://domain.com/index.php/page_cache/block/esi/blocks` 並取代 `<esi>` 標籤之前是否有宣告。
+清漆會從`http://domain.com/index.php/page_cache/block/esi/blocks`擷取內容，並以其取代`<esi>`標籤。
 
-## Commerce and Varnish ESI
+## Commerce與清漆ESI
 
 Commerce架構會在符合下列條件時建立ESI標籤：
 
-- 快取應用程式設定為 `Varnish Cache`
-- XML配置 `block` 元素新增了 `ttl` 屬性
+- 快取應用程式設定為`Varnish Cache`
+- 已新增具有`ttl`屬性的XML配置`block`專案
 
 ### 範例
 
-`cms_index_index.xml`:
+`cms_index_index.xml`：
 
 ```xml
   <referenceContainer name="content">
@@ -42,13 +42,13 @@ Commerce架構會在符合下列條件時建立ESI標籤：
    </referenceContainer>
 ```
 
-在上述範例中， `block` 元素新增以下專案的內容： `esi.phtml` 範本至首頁，Varnish每30秒會自動更新一次。
+在上述範例中，`block`元素從`esi.phtml`範本新增內容至首頁，Varnish每30秒自動更新一次。
 
 ## 限制
 
 目前Varnish不支援HTTPS上的ESI，因此會自動切換至HTTP。
 
-`Magento\PageCache\Observer\ProcessLayoutRenderElement`:
+`Magento\PageCache\Observer\ProcessLayoutRenderElement`：
 
 ```php
     private function _wrapEsi(

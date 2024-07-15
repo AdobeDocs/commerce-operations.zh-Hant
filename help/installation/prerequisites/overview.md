@@ -13,17 +13,17 @@ ht-degree: 1%
 
 安裝Adobe Commerce之前，您必須先執行下列動作：
 
-* 設定一或多個符合條件的主機 [系統需求](../system-requirements.md).
-* 如果您設定多個具有負載平衡的Web節點，請設定並測試系統的該部分 _早於_ 您安裝應用程式。
+* 設定一或多個符合[系統需求](../system-requirements.md)的主機。
+* 如果您設定一個以上具有負載平衡的Web節點，請在安裝應用程式&#x200B;_之前設定並測試系統_&#x200B;的該部分。
 * 請務必在安裝期間的各個時間點備份整個系統，以便在發生問題時將其回覆。
 
 >[!NOTE]
 >
->我們假設您正在中安裝Adobe Commerce **開發環境**，表示您擁有該電腦的根使用者存取權， **和** 電腦不需要高度安全。 如果您要設定較安全的機器，強烈建議您向網路管理員尋求其他協助。
+>我們假設您是在&#x200B;**開發環境**&#x200B;中安裝Adobe Commerce，而且您擁有電腦&#x200B;**和**&#x200B;的根使用者存取權，因此電腦不需要高度安全。 如果您要設定較安全的機器，強烈建議您向網路管理員尋求其他協助。
 
-我們強烈建議您更新並升級作業系統軟體。 這些升級可提供安全性與軟體修正，以防止未來發生問題。 不知道這代表什麼嗎？ 請檢視我們的 [安裝概觀頁面](../overview.md).
+我們強烈建議您更新並升級作業系統軟體。 這些升級可提供安全性與軟體修正，以防止未來發生問題。 不知道這代表什麼嗎？ 請檢視我們的[安裝概觀頁面](../overview.md)。
 
-以使用者身分輸入以下命令，並附上 `root` 許可權：
+以具有`root`許可權的使用者身分輸入下列命令：
 
 * 烏本圖
 
@@ -62,15 +62,15 @@ Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
 
-若要安裝或升級Apache，請參閱 [Apache](web-server/apache.md).
+若要安裝或升級Apache，請參閱[Apache](web-server/apache.md)。
 
 ### PHP
 
-另請參閱 [系統需求](../system-requirements.md) PHP和的支援版本 [PHP](../system-requirements.md#php-settings) 以滿足PHP需求。
+請參閱[系統需求](../system-requirements.md)，以取得支援的PHP版本和[PHP](../system-requirements.md#php-settings)，以瞭解PHP需求。
 
 ### MySQL
 
-檢查您是否有相容的MySQL版本，適用於您正在安裝的Adobe Commerce版本。 另請參閱 [系統需求](../system-requirements.md) 支援版本。
+檢查您是否有相容的MySQL版本，適用於您正在安裝的Adobe Commerce版本。 如需支援的版本，請參閱[系統需求](../system-requirements.md)。
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -96,11 +96,11 @@ affiliates. Other names may be trademarks of their respective
 owners.
 ```
 
-型別 `help` 或 `\h` 以取得協助。 型別 `\c` 以清除目前的輸入陳述式。
+輸入`help`或`\h`以取得說明。 鍵入`\c`以清除目前的輸入陳述式。
 
-輸入 `exit` 在 `mysql>` 提示結束。
+在`mysql>`提示下輸入`exit`以結束。
 
-若要安裝或升級MySQL，請參閱 [MySQL](database/mysql.md).
+若要安裝或升級MySQL，請參閱[MySQL](database/mysql.md)。
 
 ### 搜尋引擎
 

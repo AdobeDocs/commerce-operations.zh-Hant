@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # 升級Git安裝
 
-本主題說明投稿開發人員如何在不重新安裝的情況下更新Adobe Commerce。 如果您不是貢獻開發人員，請參閱 [執行升級](../implementation/perform-upgrade.md).
+本主題說明投稿開發人員如何在不重新安裝的情況下更新Adobe Commerce。 如果您不是貢獻開發人員，請參閱[執行升級](../implementation/perform-upgrade.md)。
 
 若要升級您是參與開發人員：
 
 {{$include /help/_includes/server-login.md}}
 
-1. 儲存您對所做的任何變更 `composer.json` 檔案，因為後續步驟會覆寫它。
+1. 儲存您對`composer.json`檔案所做的任何變更，因為後續步驟會覆寫它。
 
-1. 建立備份 `composer.json` 檔案。
+1. 建立`composer.json`檔案的備份。
 
    ```bash
    cp composer.json composer.json.old
@@ -33,11 +33,11 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果 `git pull origin develop` 失敗，請參閱 [疑難排解](https://support.magento.com/hc/en-us/articles/360034229872).
+   >如果`git pull origin develop`失敗，請參閱[疑難排解](https://support.magento.com/hc/en-us/articles/360034229872)。
 
-1. 比較並合併 `composer.json.old` 含下列專案的檔案： `composer.json` 檔案。
+1. 比較並合併您的`composer.json.old`檔案與`composer.json`檔案。
 
-1. 解決相依性並將確切版本寫入 `composer.lock` 檔案。
+1. 解決相依性並將確切版本寫入`composer.lock`檔案。
 
    ```bash
    composer update

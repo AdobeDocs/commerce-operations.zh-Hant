@@ -4,7 +4,7 @@ description: 電子商務說明
 exl-id: b418d36b-7dc6-49c7-95a8-03a55c69cb6f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 - 與實體店相比，電子商務的開銷很低
 - 線上商店全年無休開放
 - 立即購買
-- 個人化和自訂使用者體驗
+- Personalization和自訂使用者體驗
 - 全球客戶觸及潛力
 
 ### 缺點
@@ -71,8 +71,8 @@ ht-degree: 0%
 
 客戶期望值不斷提升，總有新的成長技術可大幅提高轉換率。 本教戰手冊將概述並詳細說明如何解決部分客戶挑戰，並成功運作電子商務網站，發揮其全部潛力。
 
-![商業技術的價值](../../assets/playbooks/commerce-tech.png)
+![商務技術的值](../../assets/playbooks/commerce-tech.png)
 
-## 商業產業
+## Commerce產業
 
-![商業技術的價值](../../assets/playbooks/commerce-industries.png)
+![商務技術的值](../../assets/playbooks/commerce-industries.png)
