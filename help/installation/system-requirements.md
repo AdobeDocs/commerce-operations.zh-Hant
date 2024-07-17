@@ -21,7 +21,7 @@ Adobe僅支援下表所述的系統需求組合。 例如，2.4.5已透過MariaD
 
 >[!BEGINTABS]
 
->雲端上的[!TAB Commerce]
+>[!TAB 雲端上的Commerce]
 
 雲端範本](https://github.com/magento/magento-cloud)上的[Commerce提供與特定Commerce版本相容之服務的預設設定。
 
@@ -82,7 +82,7 @@ PHPUnit v9 （作為命令列工具）。
 
 >[!BEGINTABS]
 
->雲端上的[!TAB Commerce]
+>[!TAB 雲端上的Commerce]
 
 下表顯示在雲端平台上部署Adobe Commerce時支援的PHP擴充功能。
 
