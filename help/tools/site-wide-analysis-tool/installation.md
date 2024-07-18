@@ -3,7 +3,7 @@ title: 安裝指南
 description: 使用本指南為您的網站安裝 [!DNL Site-Wide Analysis Tool]
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: f72316b3baee52ef6b000afa281a2e146f560ead
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 0%
@@ -394,7 +394,7 @@ bin/magento module:status Magento_ServicesId
 
 如果您的存取金鑰未正確剖析，您可能會看到以下錯誤：
 
-```terminal
+```
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
 FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```

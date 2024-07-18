@@ -2,7 +2,7 @@
 title: 進階 [!DNL JavaScript] 組合
 description: 瞭解JavaScript套件組合如何減少伺服器請求的大小和頻率。
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 0%
@@ -212,7 +212,7 @@ phantomjs deps.js <i>url-to-specific-page</i> &gt; <i>text-file-reporting-pagety
 
 例如，以下是Luma主題範例商店中的四個頁面，代表我們將用來建立四個組合（首頁、類別、產品、購物車）的四個頁面型別：
 
-```terminal
+```
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -234,7 +234,7 @@ Object.keys(window.require.s.contexts._.defined)
 
 將[!DNL RequireJS]相依性合併為頁面型別文字檔案後，您可以對每個頁面型別相依性檔案使用以下命令，將檔案中的逗號取代為新行：
 
-```terminal
+```bash
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -243,7 +243,7 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 您也應該移除每個檔案的所有mixin，因為mixin重複相依性。 對每個相依性檔案使用以下指令：
 
-```terminal
+```bash
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
@@ -262,7 +262,7 @@ sort bundle/*.txt |uniq -c |sort -n
 
 這個命令會合併和排序在`bundle/*.txt`檔案中找到的相依性。  輸出也顯示包含每個相依性的檔案數：
 
-```terminal
+```
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -317,7 +317,7 @@ bash deps-map.sh
 
 此指令碼的輸出套用至我們的三個範例頁面型別，看起來應該像這樣（但時間更長）：
 
-```terminal
+```
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -427,7 +427,7 @@ r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/stat
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```terminal
+```
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../

@@ -2,7 +2,7 @@
 title: 解除安裝模組
 description: 請依照下列步驟解除安裝Adobe Commerce模組。
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
@@ -67,7 +67,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 例如，如果您嘗試解除安裝另一個模組所依賴的模組，會顯示下列訊息：
 
-```terminal
+```
 magento module:uninstall Magento_SampleMinimal
     Cannot uninstall module 'Magento_SampleMinimal' because the following module(s) depend on it:
         Magento_SampleModifyContent
@@ -81,7 +81,7 @@ bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent -
 
 類似下列顯示的訊息：
 
-```terminal
+```
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...
@@ -180,7 +180,7 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
 
   類似下列顯示的訊息：
 
-  ```terminal
+  ```
   Enabling maintenance mode
   Code rollback is starting ...
   Code rollback filename: 1433876616_filesystem.tgz

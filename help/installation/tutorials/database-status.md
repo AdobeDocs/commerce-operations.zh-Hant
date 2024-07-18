@@ -2,7 +2,7 @@
 title: 檢查資料庫狀態
 description: 請依照下列步驟檢查Adobe Commerce資料庫狀態。
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 3%
@@ -25,7 +25,7 @@ bin/magento setup:db:status
 
 範例輸出如下：
 
-```terminal
+```
 All modules are up to date.
 ```
 

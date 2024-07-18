@@ -2,7 +2,7 @@
 title: 設定啟動程式引數的值
 description: 瞭解如何設定Commerce應用程式的啟動程式引數。
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 例如，您可以使用`MAGE_PROFILER`系統環境變數來指定模式，如下所示：
 
-```terminal
+```
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -80,7 +80,7 @@ export MAGE_PROFILER=firebug
 
 1. 將`MAGE_PROFILER`的值設定為下列任一值：
 
-   ```terminal
+   ```
    firebug
    csvfile
    <custom value>

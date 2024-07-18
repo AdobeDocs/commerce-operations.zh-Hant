@@ -2,7 +2,7 @@
 title: 相依性報表
 description: 建立顯示模組、循環和框架相依性總計的報告。
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -51,7 +51,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 以下是範例模組相依性報表輸出的一部分：
 
-```terminal
+```
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 以下是範例循環相依性報告的輸出部分：
 
-```terminal
+```
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework
 
 以下是範例框架相依性報表輸出的一部份：
 
-```terminal
+```
 "Dependencies of framework:","Total number"
 "","111"
 

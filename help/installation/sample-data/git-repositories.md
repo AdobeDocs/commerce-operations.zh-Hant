@@ -2,7 +2,7 @@
 title: 複製範例資料Git存放庫
 description: 請依照下列步驟，複製Git存放庫以安裝Adobe Commerce範例資料。
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -61,7 +61,7 @@ ht-degree: 0%
    >
    >如果顯示下列錯誤，請確定您已[與GitHub共用SSH金鑰](https://docs.github.com/articles/generating-ssh-keys/)：<br>
 
-   ```terminal
+   ```
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly

@@ -2,7 +2,7 @@
 title: 安裝Adobe Commerce
 description: 請依照下列步驟，在您擁有的基礎設施上安裝Adobe Commerce。
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 0%
@@ -218,7 +218,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 類似下列顯示以指示成功安裝的訊息：
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -240,7 +240,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 如果安裝成功，會顯示類似下列的訊息：
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -295,7 +295,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 如果安裝成功，會顯示類似下列的訊息：
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]

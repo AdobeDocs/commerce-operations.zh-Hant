@@ -2,7 +2,7 @@
 title: 快速入門內部部署安裝
 description: 請依照下列步驟，在您擁有的基礎設施上安裝Adobe Commerce。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -129,7 +129,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 您必須先設定網頁伺服器群組的讀寫許可權，才能安裝Adobe Commerce。 這是必要的，以便命令列可以將檔案寫入檔案系統。
 
-```terminal
+```bash
 cd /var/www/html/<magento install directory>
 find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
 find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +

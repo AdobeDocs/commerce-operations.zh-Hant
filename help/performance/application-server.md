@@ -2,7 +2,7 @@
 title: GraphQL應用程式伺服器
 description: 請依照這些指示，在您的Adobe Commerce部署中啟用GraphQL應用程式伺服器。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: c2f48db87f40498a84b2bf41569bb46202565701
+source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 0%
@@ -147,7 +147,7 @@ git push
 
    預期的回應應類似於以下範例：
 
-   ```terminal
+   ```json
    {    
     "data": {        
         "createEmptyCart": "HLATPzcLw5ylDf76IC92nxdO2hXSXOrv"    

@@ -3,7 +3,7 @@ title: 靜態內容快取
 description: 瞭解靜態內容簽署以及如何啟用或停用此功能。
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Commerce會將部署版本新增至靜態檔案的URL來達成此目的。
 
 以下是以版本簽署的URL範例：
 
-```terminal
+```
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 

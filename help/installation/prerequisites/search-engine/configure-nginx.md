@@ -3,7 +3,7 @@ title: 為您的搜尋引擎設定Nginx
 description: 請依照下列步驟，使用Nginx網頁伺服器設定搜尋引擎，以供Adobe Commerce的內部部署使用。
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
@@ -69,7 +69,7 @@ include /etc/nginx/conf.d/*.conf;
 
    類似下列顯示以指示成功的訊息：
 
-   ```terminal
+   ```
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8

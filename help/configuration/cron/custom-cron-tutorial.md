@@ -2,7 +2,7 @@
 title: 設定自訂cron作業和cron群組（教學課程）
 description: 使用此逐步教學課程來建立自訂cron工作。
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
@@ -61,7 +61,7 @@ ht-degree: 0%
 
    您應該會看到下列結果：
 
-   ```terminal
+   ```
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
    drwxrwsr-x. 121 magento_user apache  4096 Oct 30 13:19 ..
    -rw-rw-r--.   1 magento_user apache   372 Oct 30 13:19 composer.json
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 1. 確認模組已啟用。
 
-   ```terminal
+   ```
    Module is enabled
    ```
 
@@ -215,7 +215,7 @@ bin/magento cache:clean
 
       結果應類似下列：
 
-      ```terminal
+      ```
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       | schedule_id | job_code       | status  | messages | created_at        | scheduled_at        | executed_at         | finished_at     |
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -234,7 +234,7 @@ bin/magento cache:clean
 
    您應該會看到一或多個類似以下的專案：
 
-   ```terminal
+   ```
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 

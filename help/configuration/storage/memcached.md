@@ -3,7 +3,7 @@ title: 將記憶體快取用於工作階段儲存
 description: 瞭解如何將memcached用於Commerce工作階段存放區。
 feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Commerce會將memcached用於工作階段儲存，但不會用於頁面快取。
 
    結果顯示類似以下內容：
 
-   ```terminal
+   ```
    STAT items:3:number 1
    STAT items:3:age 7714
    STAT items:3:evicted 0

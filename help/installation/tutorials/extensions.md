@@ -2,7 +2,7 @@
 title: 管理協力廠商擴充功能
 description: 請依照下列步驟，安裝、啟用、升級和解除安裝Adobe Commerce擴充功能。
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 6da0e70acc77d2171d6336ab632e6a9a8dd16c67
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 1. 請等待Composer完成更新您的專案相依性，並確認沒有任何錯誤：
 
-   ```terminal
+   ```
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -116,7 +116,7 @@ bin/magento module:status J2t_Payplug
 
 依預設，擴充功能可能已停用：
 
-```terminal
+```
 Module is disabled
 ```
 
@@ -140,7 +140,7 @@ bin/magento module:status
 
    您應該會看到下列輸出：
 
-   ```terminal
+   ```
    The following modules have been enabled:
    - J2t_Payplug
    
@@ -170,7 +170,7 @@ bin/magento module:status
 
    您應該會看到驗證擴充功能是否已不再停用的輸出：
 
-   ```terminal
+   ```
    Module is enabled
    ```
 

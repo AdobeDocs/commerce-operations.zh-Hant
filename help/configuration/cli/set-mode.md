@@ -2,7 +2,7 @@
 title: 設定作業模式
 description: 閱讀有關設定Adobe Commerce操作模式的資訊。
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 當您變更為開發人員或生產模式時，我們會清除以下目錄的內容：
 
-```terminal
+```
 var/cache
 generated/metadata
 generated/code
@@ -54,7 +54,7 @@ bin/magento deploy:mode:show
 
 系統會顯示類似下列的訊息：
 
-```terminal
+```
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
@@ -86,7 +86,7 @@ bin/magento deploy:mode:set production
 
 類似下列顯示的訊息：
 
-```terminal
+```
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===
@@ -143,7 +143,7 @@ Enabled production mode.
 
    系統會顯示下列訊息：
 
-   ```terminal
+   ```
    Enabled developer mode.
    ```
 
@@ -155,7 +155,7 @@ bin/magento deploy:mode:set default
 
 系統會顯示下列訊息：
 
-```terminal
+```
 Enabled default mode.
 ```
 
