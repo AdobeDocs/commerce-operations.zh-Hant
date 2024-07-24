@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 50b87e6f2f604d195c2d079bd18451754edaa11c
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ ht-degree: 0%
 
 每個安全性修補程式版本都是以之前的完整修補程式版本為基礎。 此版本包含先前修補程式版本的品質和安全修正，以及在先前完整修補程式版本和安全修補程式版本之間建立的安全性修正。
 
-如需下載和套用安全性修補程式的說明，請參閱[快速入門安裝](../installation/composer.md#example---security-patch)。
+如需有關下載和套用安全性修補程式的說明，請參閱&#x200B;_升級指南_&#x200B;中的[Peform和升級](../installation/composer.md#example---security-patch)。
