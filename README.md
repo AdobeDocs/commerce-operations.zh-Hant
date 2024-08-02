@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0709cd6510adce0f513894fdecb2de5ac88d0e87
+source-git-commit: a6086afc0a1f099b62014ad61098a5a1dc9d4675
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 3%
@@ -9,19 +9,19 @@ ht-degree: 3%
 
 我們歡迎社群以及檔案團隊外部的Adobe員工出力貢獻。
 
-## Adobe開放原始碼行為準則
+## Adobe Open Source行為準則
 
 本專案已採用 [Adobe 開放原始碼管理辦法](code-of-conduct.md)或 [.NET Foundation 管理辦法](https://dotnetfoundation.org/code-of-conduct)。如需詳細資訊，請參閱[貢獻](contributing.md)一文。
 
 ## 關於您對Adobe內容的貢獻
 
-請參閱 [Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 貢獻方式取決於您的身分和您要貢獻的變更型別：
 
 ### 微幅變更
 
-若您正在貢獻微幅更新內容，請瀏覽該文章，然後按一下顯示在該文章底部的意見回饋區域，並按一下 **詳細的意見回饋選項**，然後按一下 **建議編輯** 前往GitHub上的Markdown來源檔案。 使用GitHub UI進行更新。 檢視一般 [Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 以取得詳細資訊。
+如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 Adobe使用條款涵蓋您在本存放庫為檔案和程式碼範例提交的小幅更正或釐清。
 
@@ -35,7 +35,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### 來自Adobe員工的重大變更
 
-若您是Adobe Experience Cloud解決方案產品團隊的技術撰寫人員、專案經理或開發人員，且您的工作正是貢獻或撰寫技術文章，請使用的私人存放庫： `https://git.corp.adobe.com/AdobeDocs`.
+若您是Adobe Experience Cloud解決方案產品團隊的技術撰寫人員、專案經理或開發人員，且您的工作正是貢獻或撰寫技術文章，請使用`https://git.corp.adobe.com/AdobeDocs`的私人存放庫。
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -43,7 +43,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 社群投稿人可以使用GitHub UI進行基本編輯或建立存放庫復本，以做出重大貢獻。
 
-請參閱 [Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) 以取得詳細資訊。
+如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 如何使用Markdown將主題格式化
 
@@ -69,28 +69,28 @@ If you submit a pull request with significant changes to documentation and code 
 
 一般而言，大部分的作者只需要將發行版本新增到產品可用性和系統需求表格。 所有其他樣板化內容的維護工作都是自動化的，或由專門的團隊成員管理。 這些指示適用於大部分的作者。
 
->**注意：**
+>**附註：**
 >
 >* 產生樣板化內容需要在終端機中的命令列上工作。
->* 您必須安裝Ruby才能執行轉譯指令碼。 另請參閱 [_jekyll/.ruby-version](_jekyll/.ruby-version) 以取得所需的版本。
+>* 您必須安裝Ruby才能執行轉譯指令碼。 如需所需版本，請參閱[_jekyll/.ruby-version](_jekyll/.ruby-version)。
 
 如需範本化內容的檔案結構說明，請參閱下列內容：
 
 * `_jekyll` — 包含範本化主題和必要資產
-* `_jekyll/_data` — 包含用於呈現範本的電腦可讀檔案格式
-* `_jekyll/templated` — 包含使用Liquid範本語言的HTML型範本檔案
-* `help/_includes/templated` — 包含在中範本化內容的產生輸出 `.md` 檔案格式，因此可在Experience League主題中發佈；轉譯指令碼會自動將產生的輸出寫入此目錄中
+* `_jekyll/_data` — 包含用來轉譯範本的電腦可讀檔案格式
+* `_jekyll/templated` — 包含使用Liquid範本語言的HTML式範本檔案
+* `help/_includes/templated` — 包含範本化內容以`.md`檔案格式產生的輸出，以便在Experience League主題中發佈；轉譯指令碼會自動將產生的輸出寫入此目錄中
 
 若要更新樣板化內容，請執行下列動作：
 
-1. 在文字編輯器中，開啟資料檔案，位置為 `/jekyll/_data` 目錄。 例如：
+1. 在文字編輯器中，開啟`/jekyll/_data`目錄中的資料檔案。 例如：
 
    * [產品可用性表格](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)： `/jekyll/_data/product-availability.yml`
-   * [系統需求表](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)： `/jekyll/_data/system-requirements.yml`
+   * [系統需求表格](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)： `/jekyll/_data/system-requirements.yml`
 
 1. 使用現有的YAML結構來建立專案。
 
-   例如，若要將Adobe Commerce版本新增至產品可用性表格，請在每個專案新增以下內容： `extensions` 和 `services` 的區段 `/jekyll/_data/product-availability.yml` 檔案（視需要修改版本號碼）：
+   例如，若要將Adobe Commerce版本新增至產品可用性表格，請在`/jekyll/_data/product-availability.yml`檔案的`extensions`和`services`區段中的每個專案新增下列內容（視需要修改版本號碼）：
 
    ```
    support:
@@ -98,27 +98,27 @@ If you submit a pull request with significant changes to documentation and code 
         version: 4.5.6
    ```
 
-1. 導覽至 `_jekyll` 目錄。
+1. 導覽至`_jekyll`目錄。
 
    ```
    cd _jekyll
    ```
 
-1. 產生樣板化內容並將輸出寫入 `help/_includes/templated` 目錄。
+1. 產生樣板化內容並將輸出寫入`help/_includes/templated`目錄。
 
    ```
    rake render
    ```
 
-   >**注意：** 您必須從以下位置執行指令碼： `_jekyll` 目錄。 如果您是第一次執行指令碼，您必須先安裝Ruby相依性 `bundle install` 命令。
+   >**注意：**&#x200B;您必須從`_jekyll`目錄執行指令碼。 如果這是您第一次執行指令碼，您必須先使用`bundle install`命令安裝Ruby相依性。
 
-1. 導覽回 `root` 目錄。
+1. 導覽回`root`目錄。
 
    ```
    cd ..
    ```
 
-1. 確認預期的 `help/_includes/templated` 檔案已修改。
+1. 確認預期的`help/_includes/templated`檔案已修改。
 
    ```
    git status
@@ -134,9 +134,9 @@ If you submit a pull request with significant changes to documentation and code 
 1. 推送您的變更。
 
    ```
-   git add
-   git commit -m "_descriptive message of the intended commit_"
+   git add .
+   git commit -m "descriptive message of the intended commit"
    git push
    ```
 
-請參閱Jekyll檔案，以取得更多關於 [資料檔案](https://jekyllrb.com/docs/datafiles)， [液體濾鏡](https://jekyllrb.com/docs/liquid/filters/)和其他功能。
+請參閱Jekyll檔案以取得有關[資料檔](https://jekyllrb.com/docs/datafiles)、[Liquid濾鏡](https://jekyllrb.com/docs/liquid/filters/)和其他功能的詳細資訊。
