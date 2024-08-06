@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.5安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.5版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
+source-git-commit: 6c8d686fd3a7ce76f966b9f390813f454aa093bf
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1111'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Adobe Commerce 2.4.5-p8
 
-Adobe Commerce 2.4.5-p7安全性版本針對先前版本2.4.5中發現的弱點提供安全性錯誤修正。
+Adobe Commerce 2.4.5-p8安全性版本針對先前版本2.4.5中發現的弱點提供安全性錯誤修正。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)。
 
@@ -34,13 +34,13 @@ Adobe Commerce 2.4.5-p7安全性版本針對先前版本2.4.5中發現的弱點�
 
 ## Adobe Commerce 2.4.5-p7
 
-Adobe Commerce 2.4.5-p7安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。
+Adobe Commerce 2.4.5-p7安全性版本針對先前版本2.4.5中發現的弱點提供安全性錯誤修正。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html)。
 
 ## Adobe Commerce 2.4.5-p6
 
-Adobe Commerce 2.4.5-p6安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
+Adobe Commerce 2.4.5-p6安全性版本針對2.4.5舊版中已發現的漏洞提供安全性錯誤修正。此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html)。
 
@@ -59,7 +59,7 @@ Adobe Commerce 2.4.5-p6安全性版本針對先前版本中發現的漏洞提供
 
 ## Adobe Commerce 2.4.5-p5
 
-Adobe Commerce 2.4.5-p5安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
+Adobe Commerce 2.4.5-p5安全性版本針對先前版本2.4.5中發現的弱點提供安全性錯誤修正。此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html)。
 
@@ -80,23 +80,23 @@ Adobe Commerce 2.4.5-p5安全性版本針對先前版本中發現的漏洞提供
 
 ## Adobe Commerce 2.4.5-p4
 
-Adobe Commerce 2.4.5-p4安全性版本針對先前版本中發現的弱點提供安全性錯誤修正。
+Adobe Commerce 2.4.5-p4安全性版本針對先前版本2.4.5中發現的弱點提供安全性錯誤修正。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html)。
 
 ### 套用修補程式以解決安全性弱點jQuery-UI程式庫中的CVE-2022-31160
 
-`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html)知識庫文章所指定的修補程式。
+`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6)知識庫文章所指定的修補程式。
 
 ## Adobe Commerce 2.4.5-p3
 
-Adobe Commerce 2.4.5-p3安全性版本針對先前版本中發現的弱點提供安全性修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
+Adobe Commerce 2.4.5-p3安全性版本針對先前版本2.4.5中發現的弱點提供安全性修正。此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告](https://helpx.adobe.com/security/products/magento/apsb23-35.html)。
 
 ### 套用修補程式以解決安全性弱點jQuery-UI程式庫中的CVE-2022-31160
 
-`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[查詢UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html)知識庫文章所指定的修補程式。
+`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[查詢UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6)知識庫文章所指定的修補程式。
 
 ### 安全性反白顯示
 
@@ -114,13 +114,13 @@ Adobe Commerce 2.4.5-p3安全性版本針對先前版本中發現的弱點提供
 
 ## Adobe Commerce 2.4.5-p2發行說明
 
-Adobe Commerce 2.4.5-p2安全性版本針對先前版本中發現的弱點提供三項安全性修正。
+Adobe Commerce 2.4.5-p2安全性版本針對先前版本2.4.5中發現的漏洞提供三項安全性修正。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html)。
 
 ## Adobe Commerce 2.4.5-p1
 
-Adobe Commerce 2.4.5-p1安全性版本針對先前版本(Adobe Commerce 2.4.5和Magento Open Source2.4.5)中發現的漏洞提供安全性錯誤修正。
+Adobe Commerce 2.4.5-p1安全性版本針對先前版本2.4.5中發現的弱點提供安全性錯誤修正。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html)。
 
