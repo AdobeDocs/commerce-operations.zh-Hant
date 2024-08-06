@@ -2,7 +2,7 @@
 title: 常用命令
 description: 檢視常用Commerce CLI命令和用法的抽樣。
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d0e6d6517e28a32816bfe2b328edfba97523740
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -51,7 +51,7 @@ bin/magento help cache:enable
 
 ## 通用引數
 
-以下引數是所有命令通用的引數。 您可以在安裝Commerce軟體之前或之後執行這些命令：
+下列引數是[所有命令](/help/tools/reference/commerce-on-premises.md)的通用引數。 您可以在安裝Commerce軟體之前或之後執行這些命令：
 
 | 長版本 | 簡短版本 | 含義 |
 |--- |--- |--- |
