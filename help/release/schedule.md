@@ -2,9 +2,9 @@
 title: 發行排程
 description: 了解 Adobe 預計何時宣布推出 Adobe Commerce 的新功能。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 2dd18f3eada5fc5e1abe9ecc7954df06986abcd1
+source-git-commit: dc493fc044401e33ef40e4e070b5d82977938eb1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -82,7 +82,7 @@ Adobe也會針對核心Adobe Commerce PHP應用程式的每個受支援發行行
   </tr>
   <tr>
     <td>2025年10月14日</td>
-    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：適用於2.4.8、2.4.7、2.4.6和2.4.5</td>
+    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：適用於2.4.8、2.4.7和2.4.6</td>
   </tr>
 </tbody>
 </table>
