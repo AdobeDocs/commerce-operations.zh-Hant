@@ -1,10 +1,10 @@
 ---
-title: Adobe Commerce 2.4.4安全性修補程式的發行說明
+title: Adobe Commerce 2.4.4安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.4版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
+source-git-commit: 3a2d104f0a689ac3715af302d470a1660857543c
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1461'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,21 @@ ht-degree: 0%
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
-## Adobe Commerce 2.4.4-p9
+## 2.4.4-p10
+
+Adobe Commerce 2.4.4-p10安全性版本針對2.4.4舊版中發現的漏洞提供安全性錯誤修正。
+
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)。
+
+### 反白顯示
+
+{{$include /help/_includes/release-notes/2024-08/security.md}}
+
+### 此版本中包含的Hotfix
+
+{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+
+## 2.4.4 - p9
 
 Adobe Commerce 2.4.4-p9安全性版本針對2.4.4先前版本中發現的弱點提供安全性錯誤修正。
 
@@ -28,7 +42,7 @@ Adobe Commerce 2.4.4-p9安全性版本針對2.4.4先前版本中發現的弱點�
 
 * **MariaDB 10.5支援**。 此修補程式發行版本引入與MariaDB 10.5版的相容性。Adobe Commerce仍與MariaDB 10.4版相容，但Adobe建議使用Adobe Commerce 2.4.4-p9以及所有即將發行的2.4.4僅限安全性修補程式版本，僅與MariaDB 10.5版相容，因為MariaDB 10.4維護作業將於2024年6月18日結束。<!--AC-11530-->
 
-### 其他安全性增強功能
+### 反白顯示
 
 {{$include /help/_includes/release-notes/2-4-7-security.md}}
 
@@ -44,7 +58,7 @@ Adobe Commerce 2.4.4-p7安全性版本針對先前版本中發現的漏洞提供
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html)。
 
-### 安全性重點專案
+### 反白顯示
 
 此版本引進了兩項重要的安全性增強功能：
 
@@ -63,7 +77,7 @@ Adobe Commerce 2.4.4-p6安全性版本針對先前版本中發現的漏洞提供
 
 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
-### 安全性反白顯示
+### 反白顯示
 
 此發行版本引入新的全頁快取組態設定，有助於減輕與`{BASE-URL}/page_cache/block/esi HTTP`端點相關的風險。 此端點支援來自Commerce配置控點和區塊結構的不受限制、動態載入的內容片段。 新的&#x200B;**[!UICONTROL Handles Param]**&#x200B;組態設定會設定此端點的`handles`引數值，此引數會決定每個API允許的控點數目上限。 此屬性的預設值為100。 商戶可從管理員(**[!UICONTROL Stores]** > **[!UICONTROL Settings: Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**)變更此值。<!-- AC-9113 -->
 
@@ -84,7 +98,7 @@ Adobe Commerce 2.4.4-p5安全性版本針對先前版本中發現的漏洞提供
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html)。
 
-### 套用修補程式以解決安全性弱點jQuery-UI程式庫中的CVE-2022-31160
+### 套用CVE-2022-31160的Hotfix
 
 `jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html)知識庫文章所指定的修補程式。
 
@@ -94,11 +108,11 @@ Adobe Commerce 2.4.4-p4安全性版本針對先前版本中發現的弱點提供
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html)。
 
-### 套用修補程式以解決安全性弱點jQuery-UI程式庫中的CVE-2022-31160
+### 套用CVE-2022-31160的Hotfix
 
 `jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html)知識庫文章所指定的修補程式。
 
-### 安全性反白顯示
+### 反白顯示
 
 [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) GraphQL查詢和([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) REST端點的預設行為已變更。 依預設，API現在一律會傳回`true`。 商家可以啟用原始行為，如果電子郵件不存在於資料庫中，則會傳回`true`；如果存在，則會傳回`false`。<!-- AC-6695 -->
 
@@ -138,7 +152,7 @@ Adobe Commerce 2.4.4-p1安全性版本針對先前版本中發現的弱點提供
 
 DHL已匯入schema 6.2版，並將在不久的未來淘汰schema 6.0版。 支援DHL整合的Adobe Commerce 2.4.4及舊版僅支援6.0版。部署這些版本的商戶應儘早套用`AC-3022.patch`，以繼續提供DHL作為運送承運商。 請參閱[套用修補程式，以繼續提供DHL作為運送業者](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier)知識庫文章，以取得有關下載和安裝修補程式的資訊。
 
-### 安全性重點專案
+### 反白顯示
 
 此版本的安全性改善專案可改善對最新安全性最佳實務的合規性，包括：
 

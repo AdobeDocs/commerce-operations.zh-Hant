@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.6安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.6版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 3a2d104f0a689ac3715af302d470a1660857543c
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1201'
 ht-degree: 0%
 
 ---
@@ -14,37 +14,51 @@ ht-degree: 0%
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
-## Adobe Commerce 2.4.6-p6
+## 2.4.6 - p7
+
+Adobe Commerce 2.4.6-p7安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
+
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)。
+
+### 反白顯示
+
+{{$include /help/_includes/release-notes/2024-08/security.md}}
+
+### 此版本中包含的Hotfix
+
+{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+
+## 2.4.6 - p6
 
 Adobe Commerce 2.4.6-p6安全性版本針對2.4.6舊版中已發現的漏洞提供安全性錯誤修正。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)。
 
+為了與Commerce 2.4.6-p6版相容，擁有Adobe Commerce B2B擴充功能的商家必須升級至[B2B 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)版。
+
 ### 套用CVE-2024-34102的Hotfix
 
 {{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
 
-### 安全性熒光燈
+為了與Commerce 2.4.6-p6版相容，擁有Adobe Commerce B2B擴充功能的商家必須升級至[B2B 1.4.2-p1](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes#b2b-v142p1.html)版。
 
-為了與Commerce 2.4.6-p6版相容，擁有Adobe Commerce B2B擴充功能的商家必須升級至[B2B 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)版。
-
-### 其他安全性增強功能
+### 反白顯示
 
 {{$include /help/_includes/release-notes/2-4-7-security.md}}
 
-## Adobe Commerce 2.4.6-p5
+## 2.4.6 - p5
 
 Adobe Commerce 2.4.6-p5安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
 如需這些修正的最新資訊，請參閱[Adobe安全性公告APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html)。
 
-## Adobe Commerce 2.4.6-p4
+## 2.4.6 - p4
 
 Adobe Commerce 2.4.6-p4安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html)。
 
-### 安全性重點專案
+### 反白顯示
 
 此版本引進了兩項重要的安全性增強功能：
 
@@ -55,13 +69,13 @@ Adobe Commerce 2.4.6-p4安全性版本針對先前版本中發現的漏洞提供
 
 * **自動產生優惠券代碼數目的限制**。 Commerce現在會限制自動產生的抵用券代碼數量。 預設最大值為250,000。 商戶可以使用新的&#x200B;**[!UICONTROL Code Quantity Limit]**&#x200B;組態選項(**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**)來控制這個新限制。<!-- AC-8753 -->
 
-## Adobe Commerce 2.4.6-p3
+## 2.4.6 - p3
 
 Adobe Commerce 2.4.6-p3安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
 如需安全性修正的最新資訊，請參閱[Adobe安全性公告APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html)。
 
-### 安全性重點專案
+### 反白顯示
 
 此發行版本引入新的全頁快取組態設定，有助於減輕與`{BASE-URL}/page_cache/block/esi HTTP`端點相關的風險。 此端點支援來自Commerce配置控點和區塊結構的不受限制、動態載入的內容片段。 新的&#x200B;**[!UICONTROL Handles Param]**&#x200B;組態設定會設定此端點的`handles`引數值，此引數會決定每個API允許的控點數目上限。 此屬性的預設值為100。 商戶可從管理員(**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**&#x200B;變更此值。<!-- AC-9113 -->
 
@@ -86,11 +100,11 @@ Adobe Commerce 2.4.6-p2安全性版本針對先前版本中發現的漏洞提供
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html)。
 
-### 套用修補程式以解決安全性弱點jQuery-UI程式庫中的CVE-2022-31160
+### 套用CVE-2022-31160的Hotfix
 
 `jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html)知識庫文章所指定的修補程式。
 
-### 安全性反白顯示
+### 反白顯示
 
 `nginx.sample`檔案中`fastcgi_pass`的值已傳回至它之前（2.4.6-p1之前）的`fastcgi_backend`值。 在Adobe Commerce 2.4.6-p1中，此值無意間變更為`php-fpm:9000`。
 
@@ -98,17 +112,17 @@ Adobe Commerce 2.4.6-p2安全性版本針對先前版本中發現的漏洞提供
 
 Adobe Commerce 2.4.6-p2包含修補程式ACSD-51892所解決之效能降低的解析度。 此修補程式解決的問題不會影響商家，相關說明請參閱[ACSD-51892：設定檔載入多次的效能問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html)知識庫文章。
 
-## Adobe Commerce 2.4.6-p1
+## 2.4.6 - p1
 
 Adobe Commerce 2.4.6-p1安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能和平台升級，以更符合最新的安全性最佳實務。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html)。
 
-### 套用修補程式以解決安全性弱點jQuery-UI程式庫中的CVE-2022-31160
+### 套用CVE-2022-31160的Hotfix
 
 `jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[查詢UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html)知識庫文章所指定的修補程式。
 
-#### 安全性反白顯示
+#### 反白顯示
 
 [`isEmailAvailable`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/is-email-available/) GraphQL查詢和([`V1/customers/isEmailAvailable`](https://adobe-commerce.redoc.ly/2.4.6-admin/tag/customersisEmailAvailable/#operation/PostV1CustomersIsEmailAvailable)) REST端點的預設行為已變更。 依預設，API現在一律會傳回`true`。 商家可以啟用原始行為，如果電子郵件不存在於資料庫中，則會傳回`true`；如果存在，則會傳回`false`。<!-- AC-6695 -->
 
