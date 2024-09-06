@@ -2,9 +2,9 @@
 title: 共擔責任安全性與營運模式
 description: 瞭解在雲端基礎結構專案中，Adobe Commerce中涉及的每一方的安全性責任。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 76aafb88855f7f41db8e57b06cf0e82370b57302
+source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2791'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Adobe負責雲端基礎結構環境及核心解決方案程式碼上的Adobe Com
 - 設定伺服器和周邊防火牆
 - 在雲端基礎結構存放庫上連線和設定Adobe Commerce
 - 為Adobe職責範圍內的領域定義、測試、實施和記錄災難回覆(DR)計畫
-- 定義全球平台網頁應用程式防火牆(WAF)規則
+- 定義全域平台網頁應用程式防火牆(WAF)規則
 - 強化作業系統(OS)
 - 在雲端基礎結構上實作並維護內容發佈網路(CDN)和應用程式效能管理(APM)解決方案與Adobe Commerce的整合
 - 在雲端基礎結構程式碼上發佈核心Adobe Commerce的定期安全性和其他更新（套用修補程式是商家的責任）
@@ -51,13 +51,13 @@ Adobe負責雲端基礎結構環境及核心解決方案程式碼上的Adobe Com
 - 監控平台作業，並在雲端基礎結構商家上提供Adobe Commerce的全天候支援
 - 布建生產和中繼環境
 - 評估平台作業與基礎建設的潛在安全性威脅
-- 根據與商戶的服務等級協定(SLA)的描述，擴充運算、儲存、網格和其他資源
+- 根據服務等級協定(SLA)和商家之間的說明，擴充運算、儲存、網格和其他資源
 - 設定DNS (僅限雲端基礎結構平台基礎結構上的Adobe Commerce)
 - 測試平台是否有安全漏洞
 
 Adobe負責維護Adobe Commerce解決方案使用之基礎結構和服務的PCI認證。  商戶需負責自訂程式碼、系統和網路程式的合規性，以及組織。
 
-Adobe還可確保商家基礎架構的可用性，如適用的SLA中商定。
+Adobe也可確保商家基礎建設的可用性，如適用的SLA中所商定。
 
 ## 商戶責任
 
@@ -153,7 +153,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
     <td>R</td>
   </tr>
   <tr>
-    <td>部署平台WAF規則</td>
+    <td>部署platform WAF規則</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -641,7 +641,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | 自訂Adobe Commerce應用程式 | | R |
 | New Relic服務的可用性：<br>APM應用程式與代理程式整合、基礎結構應用程式、<br>記錄與整合 | R |   |
 | 設定New Relic警報 |     | R |
-| 在PaaS伺服器上部署New Relic代理程式 |     | R |
+| 在PaaS伺服器上部署New Relic代理程式 | R |  |
 
 {style="table-layout:auto"}
 
@@ -724,7 +724,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | 頁面快取最佳化 |     | R |
 | 將網域新增至服務、CDN和基礎架構 | R |   |
 | 自訂VCL程式碼片段 |     | R |
-| WAF與WAF規則 | R |   |
+| WAF和WAF規則 | R |   |
 
 {style="table-layout:auto"}
 
@@ -824,11 +824,11 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
-| WAF的可用性與組態 | R |  |
-| 處理WAF規則誤判 | R | |
+| WAF的可用性和設定 | R |  |
+| 處理WAF規則的誤判 | R | |
 | 報告WAF規則誤判 |     | R |
 | WAF規則調整（不支援） |     |     |
-| WAF/CDN記錄 |     | R |
+| WAF/CDN記錄檔 |     | R |
 
 {style="table-layout:auto"}
 
@@ -841,7 +841,6 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | DDOS偵測 — 第3-4層 | R |   |
 | DDOS偵測 — 第7層 |     | R |
 | DDOS回應 | R |   |
-| 設定Fastly擴充速率限制和機器人保護（受限） |     | R |
 
 {style="table-layout:auto"}
 
@@ -849,12 +848,12 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
-| 使用Adobe擁有的VPC設定並維護PrivateLink連線（若已使用） | R |   |
+| 使用Adobe擁有的VPC設定並維護PrivateLink連線（如果使用） | R |   |
 | 使用商家擁有的VPC設定及維護PrivateLink連線（若已使用） |     | R |
 | SSH （非私人連結）的可用性 | R |   |
 | 傳入至Adobe Commerce Cloud服務端點的PrivateLink設定 | R |   |
 | 接受傳入至Adobe Commerce Cloud服務端點的PrivateLink |     | R |
-| PrivateLink傳入商家VPC服務端點的設定 |     | R |
+| 傳入至商家VPC服務端點的PrivateLink設定 |     | R |
 | 接受傳入至商家VPC服務端點的PrivateLink | R |   |
 | PrivateLink整合（端點對帳戶）的設定 |     | R |
 | PrivateLink端點<br><br>之商家擁有的VPC的設定（包括任何VPN連線） |     | R |
