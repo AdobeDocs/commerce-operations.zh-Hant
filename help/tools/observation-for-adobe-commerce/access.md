@@ -3,9 +3,9 @@ title: 正在存取 [!DNL Observation for Adobe Commerce] nerdlet
 description: 瞭解如何存取 [!DNL Observation for Adobe Commerce] nerdlet。
 exl-id: 4b6f554e-685b-465d-8676-b70e790606c6
 feature: Configuration, Observability
-source-git-commit: 0f237d0bb1c5f4369cb461dbad34da0901a5d09a
+source-git-commit: e6a62e774a233029acc38afd77981b5cfeeeca18
 workflow-type: tm+mt
-source-wordcount: '39'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,4 +16,4 @@ ht-degree: 0%
 
 然後從[!DNL New Relic]首頁選取[應用程式]功能表專案。
 
-    ！[New Relic首頁](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)
+![New Relic首頁](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)
