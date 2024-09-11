@@ -2,9 +2,9 @@
 title: Beta發行版本
 description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 0e2dfc376a049a47348a7a913bd5181436227cc2
+source-git-commit: 050d5877fae4cb9caaee06598f4429ea8857b1d2
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,7 @@ Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供
 ### IBM Sterling Order Management系統整合(Private Beta)
 
 此IBM Sterling Order Management整合加速器可讓Adobe Commerce客戶開始使用IBM Sterling OMS支援的進階訂單管理功能。 有了這項整合，商家可以：
+
 - 即時掌握客戶的存貨層次和準確的交貨日期。
 - 根據可設定規則自動搜尋訂單，以便最佳化履行網路與存貨。
 - 從單一儀表板跨管道的統一訂單檢視，讓您的支援團隊可以提供卓越的服務，並快速識別和處理例外狀況。
@@ -57,10 +58,9 @@ Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供
 ### 資料連線與Audience Activation(公開Beta)
 
 擴展Adobe Commerce與Adobe Experience Platform之間的資料共用，以產生更強大的個人化體驗。 此功能可讓商家：
+
 - 共用Commerce客戶設定檔
 - 建立自訂屬性
-- 在Real-Time CDP和Adobe Journey Optimizer中取得Commerce的深入分析
-- 支援多個資料集和資料串流
 
 若要參與此測試版，請傳送電子郵件要求給[DataConnection@adobe.com](mailto:DataConnection@adobe.com)。
 
