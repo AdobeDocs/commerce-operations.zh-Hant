@@ -1,7 +1,7 @@
 ---
-source-git-commit: aedbb5c550a088b67328891fbb788458d14f31a8
+source-git-commit: cd4655cf45df5293ef82a9fa2f411e8630524603
 workflow-type: tm+mt
-source-wordcount: '12351'
+source-wordcount: '13175'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 已修正的問題
 
-我們已修正Magento Open Source2.4.8核心程式碼中的231個問題。 此版本中包含的已修正問題子集說明如下。
+我們已修正Magento Open Source2.4.8核心程式碼中的253個問題。 此版本中包含的已修正問題子集說明如下。
 
 ### API
 
@@ -48,8 +48,9 @@ ht-degree: 0%
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38406>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38407>
 * _AC-11919_：管理員：頁面動作按鈕會向左浮動，而非向右
+   * _修正附註_：系統現在會將「頁面動作」按鈕正確地對齊管理面板中粘性標題的右側，強化專業的外觀和風格。 以前，這些按鈕錯誤地浮動到粘性標題的左側。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38701>
-   * _GitHub程式碼貢獻_： &lt;https://github.com/magento/magento2/ （內部，未合併）>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/44cef3a9>
 * _AC-11999_： magento 2.4.7中的dev:di:info錯誤
    * _修正附註_：系統現在會在執行dev:di:info命令時正確顯示建構函式引數，避免發生任何錯誤。 以前，執行此命令會導致錯誤，因為引數中的型別不相符。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38740>
@@ -100,9 +101,17 @@ ht-degree: 0%
 * _ACP2E-3125_：管理員使用者的密碼重設範本問題
    * _修正附註_：問題已透過使用正確金鑰解決，現在電子郵件範本中包含管理員使用者名稱，並正確完成主旨。 以前，該問題源自所使用的過時的鍵值。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-3149_：客戶區段URL中有雙斜線
+   * _修正附註_：在格線中按一下「重設篩選器」時，URL中不會出現雙斜線。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/8459b17d>
 * _ACP2E-3171_： COD不適用於允許的特定國家/地區
    * _修正附註_：現在只要有需要，且允許的特定國家/地區可以使用「貨到付款」   AC-3216如預期運作。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/6f4805f8>
+* _ACP2E-3178_：無法更新自訂建立的訂單狀態
+   * _修正備註_： &#39;
+我們現在可以更新自訂建立的訂單狀態，而先前只有在目前狀態為「處理」或「詐騙」時，才能變更狀態。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38659>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/8459b17d>
 
 ### 管理員UI、效能
 
@@ -150,7 +159,25 @@ ht-degree: 0%
 ### B2B，框架
 
 * _AC-9607_：篩選公司格線，然後嘗試格線CSV匯出會失敗並擲回例外狀況
-   * _GitHub程式碼貢獻_： &lt;https://github.com/magento/magento2/ （內部，未合併）>
+   * _修正附註_：系統現在允許管理面板中的公司格線資料成功CSV匯出，即使套用「未結餘額」和「公司型別」等篩選條件亦然。 以前，套用特定篩選條件並嘗試匯出網格資料會導致失敗並擲回例外狀況。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/44cef3a9>
+
+### Braintree
+
+* _套件–3367_：透過LPM付款
+   * _GitHub程式碼貢獻_： <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3368_：可設定為虛擬子產品
+   * _GitHub程式碼貢獻_： <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3369_： CVV驗證失敗錯誤
+   * _GitHub程式碼貢獻_： <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3370_：透過帳戶區域存放問題247
+   * _GitHub程式碼貢獻_： <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3371_：從不同國家寄送地址
+   * _GitHub程式碼貢獻_： <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3372_：信用卡 — Teardown函式
+   * _GitHub程式碼貢獻_： <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3373_： PayPal Express的送貨回呼
+   * _GitHub程式碼貢獻_： <https://github.com/magento/ext-braintree/pull/204>
 
 ### 購物車與結帳
 
@@ -378,6 +405,9 @@ ht-degree: 0%
 * _ACP2E-3090_：在GraphQL中處理類別篩選器： includeDirectChildrenOnly和category_uid
    * _修正附註_：依category_uid篩選時，只會擷取直接子類別。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-3166_： [雲端] Graphql產品排序無法運作
+   * _修正附註_：在變數中傳遞欄位時，GraphQl產品會依多個欄位排序，現在會如預期般運作。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/8459b17d>
 
 ### 目錄、定價、測試和預覽
 
@@ -471,6 +501,10 @@ ht-degree: 0%
    * _修正附註_：現在透過API處理密碼變更請求時，系統會遵守管理GUI內設定的限制，避免可能濫用密碼重設功能。 以前，API可以在管理GUI中定義的規則之外處理密碼變更請求，在已知有效電子郵件時，可能會允許不斷重設電子郵件。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38238>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/0c53bbf7>
+* _AC-10721_：
+   * _修正附註_：將League/Flysystem Composer相依性升級至最新版本
+   * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/91cb4d46>>
+   * _GitHub程式碼貢獻_：將2.x league/flysystem Composer相依性升級至最新版本3.x
 * _AC-10838_：目錄搜尋索引程式錯誤索引程式
    * _修正附註_：系統現在會順利完成重新索引命令，不會發生任何錯誤，無論使用PHP編譯的libxml版本為何。 以前，當使用特定版本的libxml編譯PHP時，執行「重新索引」命令會導致「索引處理期間目錄搜尋索引處理錯誤」錯誤。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38254>
@@ -506,7 +540,11 @@ ht-degree: 0%
 * _AC-11673_：
    * _修正附註_：調查php-amqplib/php-amqplib最新版本
    * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub程式碼貢獻_：請確定最新版本的php-amqplib/php-amqplib最新版本應該相容
+   * _GitHub程式碼貢獻_：已更新最新版本php-amqplib/php-amqplib ：^3.x
+* _AC-11681_： [問題] AC-2039 AC-1667升級TinyMCE參考
+   * _修正附註_：已更新composer.json中的tinymce最新版本
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38533>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/36543>，<https://github.com/magento/magento2/commit/b34c0a75>
 * _AC-11696_： ChangelogBatchWalker無法在多個執行緒中運作
    * _修正附註_：系統現在支援MView索引的處理程式復本，以防止在多個執行緒上執行索引器時出現錯誤。 以前，在多個執行緒上執行ChangelogBatchWalker會導致刪除其他執行緒使用的表格，進而在索引器執行期間造成錯誤。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38246>
@@ -534,14 +572,22 @@ ht-degree: 0%
    * _修正附註_：系統現在會在靜態內容部署期間正確處理空白的LESS檔案，並顯示「LESS檔案是空白的」錯誤訊息。 以前，在部署期間遇到空的LESS檔案時，會擲回不正確的型別錯誤。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38682>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38683>
+* _AC-11911_：
+   * _修正附註_：移轉至更新程式庫後，jQuery/fileuploader css清理
+   * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/7cabfb46>>
+   * _GitHub程式碼貢獻_：已移除jQuery/fileUploader程式庫，因為它已移轉至Uppy程式庫
 * _AC-12002_： [問題] [檢視]已移除連結和指令碼標籤中的額外空間
    * _修正附註_：系統現在可確保連結和指令碼標籤中沒有額外的空格，提供更乾淨且更有效率的程式碼。 之前，連結和指令碼標籤中的屬性之間可能會出現雙空格字元。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/32920>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/32919>
+* _AC-12015_：
+   * _修正附註_：移轉至jsTree程式庫後，ExtJs資料夾清理
+   * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/7cabfb46>>
+   * _GitHub程式碼貢獻_：已移除extJs資料夾，因為相關功能已移轉至jsTree
 * _AC-12022_：
    * _修正附註_：將獨白/獨白系統相依性升級至最新的主要版本
    * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/edcd0dcc>>
-   * _GitHub程式碼貢獻_：系統已更新為使用最新主要版本的「獨白/獨白」程式庫，確保相容性並改善效能。 以前，系統使用的是「monolog/monolog」程式庫的過時版本，這可能會導致潛在的問題和限制。
+   * _GitHub程式碼貢獻_：系統已更新為使用最新主要版本的「monolog/monolog：^3.x」程式庫，確保相容性並改善效能。 以前，系統使用的是「monolog/monolog」程式庫的過時版本，這可能會導致潛在的問題和限制。
 * _AC-12023_：
    * _修正附註_：將wikimedia/less.php相依性升級至最新的主要版本
    * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/edcd0dcc>>
@@ -549,15 +595,18 @@ ht-degree: 0%
 * _AC-12024_：
    * _修正附註_：將jquery/validate程式庫相依性升級至最新的次要版本
    * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub程式碼貢獻_：將jquery/validate程式庫相依性升級至最新的次要版本
+   * _GitHub程式碼貢獻_：將jquery/validate程式庫相依性升級至最新的次要版本1.20.0
 * _AC-12025_：
    * _修正附註_：將moment.js系統相依性升級至最新的次要版本
    * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub程式碼貢獻_：將moment.js系統相依性升級至最新的次要版本
+   * _GitHub程式碼貢獻_：將moment.js系統相依性升級至最新的次要版本2.30.1
 * _AC-12267_：
    * _修正附註_：支援Redis工作階段的連線重試，並與colimollenhour/php-redis-session-abstract v2.0.0相容
    * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/672a2e61>>
-   * _GitHub程式碼貢獻_：請確定最新版本的colimollenhour/php-redis-session-abstract v2.0.0與adobe commerce相容
+   * _GitHub程式碼貢獻_：更新了與adobe commerce相容的colimollenhour/php-redis-session-abstract v2.0.0最新版本
+* _AC-12268_：
+   * _修正附註_：將League/Flysystem Composer相依性升級至最新版本
+   * _GitHub程式碼貢獻_：將2.x league/flysystem Composer相依性升級至最新版本3.x
 * _AC-12594_： [問題]針對產生的資料使用已編譯的設定，而非一般設定
    * _修正備註_：系統現在會使用已編譯的組態來產生資料，而非一般組態，減少依賴特定程式碼版本的網路傳輸和資料開銷。 這項變更可防止在容器交換期間在共用執行個體中覆寫快取，進而改善穩定性並減少停機時間。 以前，某些核心類別使用共用設定型別，這可能會導致快取覆寫或應用程式停機，因為多個伺服器的程式碼版本不同。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38785>
@@ -566,6 +615,15 @@ ht-degree: 0%
    * _修正附註_：系統現在會從先前移除的extjs移除檔案參考，消除瀏覽器主控台和系統記錄檔中的錯誤。 以前，由於缺少參照的檔案，這些參照會導致錯誤。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38960>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38951>
+* _AC-12715_：
+   * _修正附註_：更新Laminas撰寫器相依性，升級至最新版本
+   * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/b34c0a75>>
+   * _GitHub程式碼貢獻_：系統現在支援最新版本的Laminas撰寫器相依性：
+laminas/laminas-servicemanager
+laminas/laminas-server
+laminas/laminas-stdlib
+laminas/laminas-validator
+確保相容性和最新功能。 以前，更新到這些相依性的最新版本可能會導致回溯不相容問題和測試失敗。
 * _AC-12778_： [問題]次要清除：修正sprintf的錯誤使用，此處只需要2個預留位置，而w...
    * _修正附註_：系統現在正確使用sprintf函式以及適當數量的預留位置，以提升程式碼清潔度和一致性。 先前，sprintf函式與額外的引數搭配使用不正確，這不會導致任何重大問題，但使用方式不正確。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/39062>
@@ -598,13 +656,6 @@ ht-degree: 0%
    * _修正附註_：系統現在會將4個空格縮排正確套用至composer和auth.json檔案，接著修正editorconfig中的語法錯誤。 先前，由於editorconfig語法中有空格，這些檔案的格式不正確，有2個空格的縮排。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/37394>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37395>
-* _AC-8714_：
-   * _修正附註_：塗漆7.3 — 預設類別的子類別連結/選項未顯示在商店首頁上
-   * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/d1c335aa>， &lt;https://github.com/magento/magento2/ （內部，未合併）>>
-   * _GitHub程式碼貢獻_： Storefront首頁現在會如預期顯示預設類別子類別。 過去，購物者只能透過URL存取子類別。
-* _AC-8714_：塗漆7.3 — 預設類別的子類別連結/選項未顯示在商店首頁上
-   * _修正附註_： Storefront首頁現在會如預期顯示預設類別子類別。 過去，購物者只能透過URL存取子類別。
-   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/d1c335aa>，&lt;https://github.com/magento/magento2/ （內部，未合併）>
 * _AC-8984_： [問題]在某些安裝程式cli命令的輸出中新增一些顏色
    * _修正附註_：系統現在會為某些安裝程式命令列介面(CLI)命令的輸出加入更多色彩，增強可讀性和使用者體驗。 以前，由於缺少色彩差異，這些指令的輸出比較難以讀取。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/29335>
@@ -615,8 +666,8 @@ ht-degree: 0%
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38076>
 * _AC-9712_： https://github.com/magento/magento2/issues/37841
    * _修正附註_：具有複雜`calc`運算式的php &amp; nodejs程式庫(grunt)之間較少編譯的差異
-   * _GitHub問題_： &lt;&lt;https://github.com/magento/magento2/ （內部，未合併）>>
-   * _GitHub程式碼貢獻_：修正php &amp; nodejs程式庫(grunt)之間較少編譯的差異
+   * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/b34c0a75>>
+   * _GitHub程式碼貢獻_：在更新wikimedia/less.php：^5.x後，修正php &amp; nodejs程式庫(grunt)之間較少編譯的差異
 * _ACP2E-2692_：執行部分索引時發生「找不到基底資料表或檢視」錯誤
    * _修正附註_：部分重新索引現在可正確搭配大型變更記錄檔使用，以備次要資料庫連線時使用
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/ba25af8a>
@@ -670,6 +721,9 @@ ht-degree: 0%
 * _ACP2E-3190_： [Cloud]當相同的簡單產品指派給多個可設定的產品時，產品graphql發生錯誤
    * _修正附註_：之前，若有具有相同簡單產品的個別可設定產品，grapQL會傳回錯誤。 此修正套用後，不同可設定產品具有相同的簡單產品，grapQL會傳回沒有錯誤的結果。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/148c3ead>
+* _ACP2E-3253_： GraphQL購物車專案V2分頁無法正常運作
+   * _修正附註_：已藉由傳遞集合查詢中目前頁面引數的正確值來修正問題。 之前，傳遞錯誤值以設定目前頁面，導致問題。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/8459b17d>
 
 ### GraphQL、詳細目錄/MSI
 
@@ -715,6 +769,9 @@ ht-degree: 0%
 * _ACP2E-2990_：客戶「created_at」日期未在匯出時轉換為存放區時區
    * _修正附註_：根據客戶匯出CSV區段中的存放區時區，「created_at」欄的日期值會轉換為適當的日期格式。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/3056e9cb>
+* _ACP2E-3165_： [雲端]使用CSV檢查匯入資料中的資料時發生錯誤
+   * _修正附註_：在CSV匯入期間檢查資料時沒有錯誤。 先前，顯示的錯誤訊息為：「使用管理員的CSV檢查匯入區段中的資料時，我們在列：1中找不到符合此電子郵件和網站代碼的客戶」。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/8459b17d>
 
 ### 安裝與管理
 
@@ -786,7 +843,7 @@ ht-degree: 0%
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38410>
 * _AC-12571_：導覽至類別樹狀結構會導致Redis發生錯誤：「Redis工作階段超過同時連線」
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38851>
-   * _GitHub程式碼貢獻_： &lt;https://github.com/magento/magento2/ （內部，未合併）>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/0611e750>
 
 ### 付款
 
@@ -858,8 +915,9 @@ ht-degree: 0%
 ### SEO
 
 * _AC-11907_：以重音符號新增URL重寫會造成無限載入
+   * _修正附註_：系統現在已成功建立並功能具有重音的URL重寫，以防止在儲存過程中無限載入。 之前，以重音符號新增URL重寫會造成無限載入問題。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38692>
-   * _GitHub程式碼貢獻_： &lt;https://github.com/magento/magento2/ （內部，未合併）>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/44cef3a9>
 * _ACP2E-2641_：多重存放區錯誤的類別URL重寫為第三層級類別
    * _修正附註_：使用自訂範圍URL索引鍵為父系的子系產生正確的URL重寫
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/ea79f7dd>
@@ -869,10 +927,21 @@ ht-degree: 0%
 
 ### 安全性
 
+* _AC-11762_：
+   * _修正附註_：在BiC變更後，以正確的描述和預設值更新2FA OTP視窗欄位
+   * _GitHub程式碼貢獻_：已更新命令，說明如何從現在bin/magento config：set twofactorauth/google/otp_window VALUE輸入otp_window期間
+至bin/magento config：set twofactorauth/google/leeway VALUE
 * _AC-11855_： [問題]遺失字型CSP付款器快顯功能表
    * _修正附註_：系統現在允許載入字型&#39;https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.woff&#39;，而不違反內容安全性原則指令，確保正確顯示Paylater快顯視窗。 先前，由於違反內容安全性原則指示，導致播放器快顯視窗顯示問題，因此拒絕載入字型。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38624>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37401>
+* _AC-11937_：
+   * _修正附註_：在BiC變更後，以正確的描述和預設值更新2FA OTP視窗欄位
+   * _GitHub程式碼貢獻_：已更新命令，說明如何從現在bin/magento config：set twofactorauth/google/otp_window VALUE輸入otp_window期間
+至bin/magento config：set twofactorauth/google/leeway VALUE
+* _AC-12309_：
+   * _修正附註_：更新雙因素驗證(2FA)的使用者檔案以變更otp_window命令
+   * _GitHub程式碼貢獻_：更新雙因素驗證(2FA)的使用者檔案，以變更OTP_WINDOW設定命令，依據： https://jira.corp.adobe.com/browse/AC-11762
 
 ### 送貨
 
@@ -880,10 +949,23 @@ ht-degree: 0%
    * _修正附註_：系統現在正確使用辭彙「carrier」，而不是在順序追蹤範本中使用的JavaScript處理常式函式中拼錯的「currier」，以確保正確的函式命名和程式碼明確無誤。 先前，我們使用拼字錯誤的辭彙「currier」，這可能會導致程式碼基底的混淆和不一致。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/34523>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/33414>
+* _AC-11811_：
+   * _修正注意事項_： UPS REST 「出貨不能以KGS/IN、LBS/CM或OZS/CM作為測量單位」
+   * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/9b1713d8>>
+   * _GitHub程式碼貢獻_：結帳和購物車中會顯示UPS費率。
+* _AC-11916_：
+   * _修正備註_： [QPT] UPS REST「出貨不能以KGS/IN、LBS/CM或OZS/CM作為其測量單位」
+   * _GitHub程式碼貢獻_：結帳和購物車中會顯示UPS費率。
 * _AC-11938_： UPS REST 「出貨不能以KGS/IN、LBS/CM或OZS/CM作為測量單位」
    * _修正附註_：請確定結帳和購物車中應該顯示UPS費率。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38618>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/493e01f5>
+* _AC-11983_：
+   * _修正備註_： [QPT] UPS REST「出貨不能以KGS/IN、LBS/CM或OZS/CM作為其測量單位」
+   * _GitHub程式碼貢獻_：結帳和購物車中會顯示UPS費率。
+* _AC-11984_：
+   * _修正備註_： [QPT] UPS REST「出貨不能以KGS/IN、LBS/CM或OZS/CM作為其測量單位」
+   * _GitHub程式碼貢獻_：結帳和購物車中會顯示UPS費率。
 * _ACP2E-2738_：追蹤視窗顯示錯誤的預期傳送日期
    * _修正備註_：顯示Fedex電信業者的正確交貨日期。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/57a32313>
@@ -913,20 +995,17 @@ ht-degree: 0%
 
 ### UI框架
 
-* _AC-12128_：
-   * _修正附註_： [Cloud] Prototype.js安全性弱點CVE-2020-27511
-   * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub程式碼貢獻_：應解決安全性弱點CVE-2020-27511
-* _AC-12128_： [Cloud] Prototype.js安全性弱點CVE-2020-27511
-   * _修正附註_：安全性弱點CVE-2020-27511應解決
+* _AC-12128_： Prototype.js安全性弱點修正CVE-2020-27511
+   * _修正附註_：系統已更新，以解決Prototype.js 1.7.3中的安全性弱點CVE-2020-27511，進而加強系統的整體安全性。 在此更新之前，系統容易遭受規則運算式拒絕服務(ReDOS)的影響，因為會移除精心製作的HTML標籤。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12128_：
+   * _修正附註_： Prototype.js安全性弱點修正CVE-2020-27511
+   * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
+   * _GitHub程式碼貢獻_：系統已更新，以解決Prototype.js 1.7.3中的安全性弱點CVE-2020-27511，進而增強系統的整體安全性。 在此更新之前，系統容易遭受規則運算式拒絕服務(ReDOS)的影響，因為會移除精心製作的HTML標籤。
 * _AC-12189_： Grunt Less使用pub/前置詞作為原始程式集
    * _修正備註_：系統現在會在使用grunt時，針對路徑產生較少/css來源地圖（不含/pub前置詞），因此不需要在Web伺服器設定中進行因應措施。 之前，在原始碼對應路徑中使用/pub首碼時，需要在Web伺服器中指定特定的設定才能正常運作。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38837>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38840>
-* _AC-12950_：在composer.json中更新tinymce 7.3.0並從tinymce 7的檔案中移除
-   * _修正附註_：讓TinyMCE 7.x成為Adobe Commerce 2.4.8-beta1的支援版本
-   * _GitHub程式碼貢獻_： &lt;https://github.com/magento/magento2/ （內部，未合併）>
 * _AC-1306_：正在為停用的模組部署靜態內容
    * _修正附註_：系統現在會從最終的CSS輸出檔案中排除與已停用模組相關的CSS，確保不會載入不必要的樣式。 以前，與已停用模組相關的CSS會包含在最終的CSS輸出檔案中，導致載入額外且不必要的樣式。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/24666>
