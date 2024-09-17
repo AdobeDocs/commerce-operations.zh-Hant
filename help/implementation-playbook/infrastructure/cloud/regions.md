@@ -3,7 +3,7 @@ title: 雲端基礎結構地區
 description: 檢閱顯示AWS和Azure區域可用於Adobe Commerce的圖表。
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
 feature: Cloud
-source-git-commit: 4b42fc5deb12c97c2c078d0a25992ba23735747e
+source-git-commit: b53cb97af72c262e236e4f2d103f70968386bdb1
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## AWS地區
 
-![顯示AWS地區的圖表](../../../assets/playbooks/aws-regions.png){zoomable="yes"}
+![顯示AWS地區的圖表](../../../assets/playbooks/aws-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## Azure地區
 
-顯示Azure區域的![圖表](../../../assets/playbooks/azure-regions.png){zoomable="yes"}
+顯示Azure區域的![圖表](../../../assets/playbooks/azure-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
