@@ -2,9 +2,9 @@
 title: Beta發行版本
 description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 050d5877fae4cb9caaee06598f4429ea8857b1d2
+source-git-commit: f90279e0e152204ac976db307ca14d4418cbcba8
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '1094'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,32 @@ Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供
 ## 目前的Beta計畫
 
 如需使用中Beta版計畫的清單，請參閱下列章節。
+
+### 增強即時搜尋的搜尋功能(公開Beta)
+
+此Beta版支援[`productSearch`查詢](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)的三個新功能：
+
+- **分層搜尋** — 在另一個搜尋內容中搜尋 — 使用此功能，您最多可以執行兩個層級的搜尋來搜尋您的搜尋查詢。 例如：
+
+   - **第1層搜尋** — 搜尋&quot;product_attribute_1&quot;上的&quot;motor&quot;。
+   - **第2層搜尋** — 搜尋「product_attribute_2」上的「零件編號123」。 此範例會在結果中搜尋「馬達」的「零件編號123」。
+
+  分層搜尋可用於`startsWith`搜尋索引和`contains`搜尋索引，如下所述：
+
+- **startsWith搜尋索引** — 使用`startsWith`索引搜尋。 這項新功能可讓：
+
+   - 搜尋屬性值以特定字串開頭的產品。
+   - 設定「結尾為」搜尋，讓購物者可以搜尋屬性值結尾為特定字串的產品。 若要啟用「結尾為」搜尋，產品屬性需要反向擷取，且API呼叫也應該為反向字串。
+
+- **包含搜尋索引** — 使用包含索引來搜尋屬性。 這項新功能可讓：
+
+   - 在較大的字串中搜尋查詢。 例如，如果購物者搜尋字串「HAPE-123」中的產品編號「PE-123」。
+
+      - 注意：此搜尋型別與執行自動完成搜尋的現有[片語搜尋](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase)不同。 例如，如果您的產品屬性值是&quot;outdoor pants&quot;，則短語搜尋會傳回&quot;out pan&quot;的回應，但不會傳回&quot;oor ants&quot;的回應。 但是，「包含搜尋」會傳回「或螞蟻」的回應。
+
+這些新條件會增強搜尋查詢篩選機制，以縮小搜尋結果。 這些新條件不會影響主要搜尋查詢。 若要存取Beta版，請傳送電子郵件給`sagonzal@adobe.com`或`alexj@adobe.com`。
+
+若要安裝即時搜尋測試版，請參閱[即時搜尋指南](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta)。
 
 ### Commerce (Private Beta)的Experience Manager Assets整合
 
