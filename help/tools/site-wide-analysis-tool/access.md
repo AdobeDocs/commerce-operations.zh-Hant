@@ -2,9 +2,9 @@
 title: 如何存取 [!DNL Site-Wide Analysis Tool]
 description: 瞭解如何存取 [!DNL Site-Wide Analysis Tool]
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 5f9f81b930a3b23c0b334ccbea94d296338a0048
+source-git-commit: 18416ae29cee182a5d088069065d73814fc7d860
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您有內部部署的Adobe Commerce，則必須在您的基礎結構上安裝[代理程式](../site-wide-analysis-tool/installation.md)才能使用此工具。
+>自2024年4月23日起，[!DNL Site-Wide Analysis Tool]已終止服務，不再供Adobe Commerce內部部署客戶使用。
+
 
 ![全網站分析儀表板](../../assets/tools/site-wide-analysis-tool-dashboard.png)
 *[!DNL Site-Wide Analysis Tool]儀表板*
