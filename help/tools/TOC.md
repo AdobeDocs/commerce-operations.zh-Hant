@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: b9164d958ddc366de3843c9f9b7f6521ad0b4ff2
+source-git-commit: af567e6643ef977671f8ba27dbb961bcc4c7d472
 workflow-type: tm+mt
-source-wordcount: '5888'
+source-wordcount: '5892'
 ht-degree: 0%
 
 ---
@@ -626,6 +626,8 @@ ht-degree: 0%
       - v1.1.51 {#v1-1-51}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
          - [ACSD-60538：如果產品已停用，則不會顯示屬性](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+      - v1.1.52 {#v1-1-52}
+         - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
       - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - 命令列工具參考{#cli-reference}
