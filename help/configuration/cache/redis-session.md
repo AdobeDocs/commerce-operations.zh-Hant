@@ -3,7 +3,7 @@ title: 使用Redis進行工作階段儲存
 description: 瞭解如何設定工作階段儲存的Redis。
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 3886bf261f8f9d2594602850bef9c54db03fb269
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 1%
@@ -69,11 +69,9 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.
 Commerce將類似下列的行新增至`<magento_root>app/etc/env.php`：
 
 ```php
-    'session' =>
-    array (
-      'save' => 'redis',
-      'redis' =>
-      array (
+'session' => [
+    'save' => 'redis',
+    'redis' => [
         'host' => '127.0.0.1',
         'port' => '6379',
         'password' => '',
@@ -91,9 +89,9 @@ Commerce將類似下列的行新增至`<magento_root>app/etc/env.php`：
         'bot_lifetime' => '7200',
         'disable_locking' => '0',
         'min_lifetime' => '60',
-        'max_lifetime' => '2592000'
-      )
-    ),
+        'max_lifetime' => '2592000',
+    ],
+],
 ```
 
 >[!INFO]
