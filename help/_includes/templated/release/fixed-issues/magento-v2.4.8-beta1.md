@@ -1,11 +1,146 @@
 ---
-source-git-commit: cd4655cf45df5293ef82a9fa2f411e8630524603
+source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
 workflow-type: tm+mt
-source-wordcount: '13175'
+source-wordcount: '14443'
 ht-degree: 0%
 
 ---
-# Magento Open Source已修正問題(v2.4.8-beta1)
+# Magento Open Source發行說明(v2.4.8-beta1)
+
+## 反白顯示
+
+下列49項重點內容適用於Magento Open Source 2.4.8版。
+
+### 框架
+
+* _AC-10721_：將League/Flysystem Composer相依性升級至最新版本
+   * _修正附註_：將2.x league/flysystem Composer相依性升級至最新版本3.x
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/91cb4d46>
+* _AC-11495_： 2.4.8-beta1平台元件升級
+* _AC-11673_：調查php-amqplib/php-amqplib最新版本
+   * _修正附註_：已更新最新版本的php-amqplib/php-amqplib ：^3.x
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-11723_：為phpunit 10相容性重構整合測試架構 — 找不到IntegrationTest.php
+   * _修正附註_： PHPUnit 9已升級為PHPUnit 10，並包含Adobe Commerce的整合和WebAPI測試架構變更。 PHPUnit 10變更向後相容。
+   * _GitHub程式碼貢獻_： &lt;https://github.com/magento/magento2/ （內部，未合併）>
+* _AC-11813_：適用於phpunit 10相容性的WebApi測試架構 — 與SOAP和B2B模組的RabbitMQ連線相關的問題
+   * _修正附註_： PHPUnit 9已升級為PHPUnit 10，並包含Adobe Commerce的整合和WebAPI測試架構變更。 PHPUnit 10變更向後相容。
+   * _GitHub程式碼貢獻_： &lt;https://github.com/magento/magento2/ （內部，未合併）>
+* _AC-11816_：新增與MySQL 8.4 LTS的相容性
+* _AC-11911_：移轉至更新程式庫後，jQuery/fileuploader css清理
+   * _修正附註_：已移除jQuery/fileUploader程式庫，因為它已移轉至Uppy程式庫
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-11995_：新增與MagentoCE的MySQL 8.4 LTS的相容性
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12014_：將elasticsearch 8模組標籤為已棄用
+* _AC-12015_：移轉至jsTree程式庫後，ExtJs資料夾清理
+   * _修正附註_：已移除extJs資料夾，因為相關功能已移轉至jsTree
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-12022_：將獨白/獨白系統相依性升級至最新的主要版本
+   * _修正附註_：系統已更新為使用最新主要版本的「monolog/monolog：^3.x」程式庫，確保相容性並改善效能。 以前，系統使用的是「monolog/monolog」程式庫的過時版本，這可能會導致潛在的問題和限制。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12023_：將wikimedia/less.php相依性升級至最新的主要版本
+   * _修正附註_：系統已更新為使用「wikimedia/less.php」程式庫的最新主要版本5.x，確保相容性和最新功能。 之前，系統使用的程式庫版本已過時，這可能會導致安全性問題。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12024_：將jquery/validate程式庫相依性升級至最新的次要版本
+   * _修正附註_：將jquery/validate程式庫相依性升級至最新的次要版本1.20.0
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12025_：將moment.js系統相依性升級至最新的次要版本
+   * _修正附註_：將moment.js系統相依性升級至最新的次要版本2.30.1
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12032_：新增與EE適用的MySQL 8.4 LTS的相容性
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12034_：新增與MySQL 8.4 LTS for B2B的相容性
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12074_：為套件組合延伸新增與MySQL 8.4 LTS的相容性
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12085_：新增與MariaDB 11.4 LTS For CE的相容性
+   * _修正附註_：新增Adobe Commerce和擴充功能的MariaDB 11.4支援
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12165_：訂閱者最佳化 — PhpUnit10
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/90e25b6b>
+* _AC-12267_：支援Redis工作階段的連線重試，並與colimollenhour/php-redis-session-abstract v2.0.0相容
+   * _修正附註_：更新了與adobe commerce相容的colimollenhour/php-redis-session-abstract v2.0.0最新版本
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12268_：將League/Flysystem Composer相依性升級至最新版本
+   * _修正附註_：將2.x league/flysystem Composer相依性升級至最新版本3.x
+* _AC-12576_：調查MySQL 8.4 LTS的自動化測試失敗
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12595_：新增與EE版MariaDB 11.4 LTS的相容性
+   * _修正附註_：新增Adobe Commerce和擴充功能的MariaDB 11.4支援
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12693_：使用MySQL 8.4 LTS調查資料移轉工具(DMT)
+* _AC-12715_：更新Laminas撰寫器相依性，升級至最新版本
+   * _修正附註_：系統現在支援最新版本的Laminas撰寫器相依性：
+laminas/laminas-servicemanager
+laminas/laminas-server
+laminas/laminas-stdlib
+laminas/laminas-validator
+確保相容性和最新功能。 以前，更新到這些相依性的最新版本可能會導致回溯不相容問題和測試失敗。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12752_：新增與MariaDB 11.4 LTS For Data Migration工具的相容性
+   * _修正附註_：新增Adobe Commerce和擴充功能的MariaDB 11.4支援
+* _AC-12823_：在元件升級期間，調查phpunit修補程式更新所造成的單元測試失敗
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12897_： SVC和EAT工具與MySQL 8.4的相容性
+* _AC-12898_： UCT工具與MySQL 8.4的相容性
+   * _修正注意事項_：升級相容性工具(UCT)現在與MySQL 8.4相容，確保此版本執行個體的順利作業和相容性檢查。 之前，UCT工具未經過相容於MySQL 8.4的測試和驗證。
+* _AC-9749_： PHPUnit 10升級
+   * _修正附註_：已將phpunit/phpunit撰寫器相依性更新為相容版本 — &quot;phpunit/phpunit&quot;：&quot;10.x&quot;
+
+### 安裝與管理
+
+* _AC-6819_：預設將索引子設為「依排程更新」
+
+### 訂購
+
+* _ACP2E-2709_： [功能要求]客戶建議「訂單詳細資料」頁面上的「提交註解」按鈕令人困惑，應變更為其他專案
+   * _修正附註_：為了將混淆最小化，訂單詳細資訊頁面中的[提交註解]按鈕標籤變更為[更新]。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/488c1034>
+
+### 其他
+
+* _AC-11420_：安裝新版Adobe Commerce時，設定索引子會以就緒狀態預設顯示
+   * _修正備註_：安裝Magento之後，索引器的狀態預設必須是&#x200B;*就緒*&#x200B;狀態。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/71432aeb>
+* _AC-11421_：在現有的Magento安裝中，當依排程安裝協力廠商索引器模組時，預設會在更新中設定索引器。
+   * _修正備註_：所有新索引子預設為[依排程更新]模式。 先前預設模式為[儲存時更新]。 這也適用於自訂索引子。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/71432aeb>
+* _AC-12480_：Elasticsearch7和8選項應隨附於Admin Config中的Deprecated。
+   * _修正附註_：「管理設定」選項中的「Elasticsearch8」選項會以「已棄用」文字顯示，以通知使用者不再建議使用「Elasticsearch8」選項。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/0611e750>
+* _AC-12481_：在管理組態中選取Elasticsearch選項時新增文字備註
+   * _修正附註_：新增文字附註，讓Adobe Commerce管理員使用者知道Adobe不再支援elasticsearch且已過時。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/0611e750>
+* _AC-12870_： SVC和EAT工具與MariaDB 11.4的相容性
+   * _修正附註_： SVC和EAT工具與MariaDB 11.4的相容性
+* _AC-12876_： UCT工具相容於MariaDB 11.4
+* _LYNX-374_：透過GraphQL的檔案電子郵件確認
+* _LYNX-376_：在GraphQL中取得reCAPTCHA設定的檔案
+* _LYNX-409_：更新購物車專案突變的資料庫查詢最佳化
+
+### 安全性
+
+* _AC-11041_：2024年6月發行版本2.4.8-beta1的安全性改善
+* _AC-11864_：2024年8月發行版本2.4.8-beta1的安全性改善
+* _AC-12346_：2024年10月發行版本2.4.8-beta1的安全性改善
+* _AC-12691_： [2.4.8-beta1]客戶更新REST API端點無法運作
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/a4102373>，<https://github.com/magento/magento2/commit/a4102373>
+
+### UI框架
+
+* _AC-12726_： [2.4.8-beta1] TinyMCE 5移轉至TinyMCE 7
+   * _修正附註_：已將TinyMCE 5移轉至TinyMCE 7.3.0，使其成為Adobe Commerce的支援版本，先前系統使用的是5.10.2，此版本已過時且回報安全性弱點
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12825_： [2.4.8-beta1] TinyMCE 5移轉至TinyMCE 7 Page Builder
+   * _修正附註_：已將TinyMCE 5移轉至TinyMCE 7.3.0，使其成為Adobe Commerce的支援版本，先前系統使用的是5.10.2，此版本已過時且回報安全性弱點
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12844_： [2.4.8-beta1] TinyMCE 5移轉至TinyMCE 7 - Magento2-infra — 禁止的字詞
+   * _修正附註_：已將TinyMCE 5移轉至TinyMCE 7.3.0，使其成為Adobe Commerce的支援版本，先前系統使用的是5.10.2，此版本已過時且回報安全性弱點
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12901_： Require.js升級至最新版本2.3.7 (安全性弱點CVE-2024-38999)
+   * _修正附註_： require.js已更新至最新版本2.3.7。舊版回報安全性弱點
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b34c0a75>
 
 ## 已修正的問題
 

@@ -2,9 +2,9 @@
 title: 管理索引子
 description: 請參閱如何檢視和管理Commerce索引器的範例。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 9a92204369d3a8310aadfb94f8193a6c89f78c30
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -194,7 +194,7 @@ Catalog Search indexer has been invalidated.
 
 使用此指令來設定下列索引器選項：
 
-- **儲存時更新(`realtime`)**：在管理員中進行變更時，索引資料會更新。 （例如，將產品新增至管理員中的類別後，類別產品索引會重新索引。） 這是預設值。
+- **儲存時更新(`realtime`)**：在管理員中進行變更時，索引資料會更新。 （例如，將產品新增至管理員中的類別後，類別產品索引會重新索引。）
 - **依排程更新(`schedule`)**：資料已根據cron工作設定的排程編制索引。
 
 [進一步瞭解索引](https://developer.adobe.com/commerce/php/development/components/indexing/)。

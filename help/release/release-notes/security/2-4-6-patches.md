@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.6安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.6版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 7024c6a9c464257df00ed98f435a3d7793478db5
+source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,22 @@ ht-degree: 0%
 # Adobe Commerce 2.4.6安全性修補程式的發行說明
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## 2.4.6 - p8
+
+Adobe Commerce 2.4.6-p8安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
+
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)。
+
+{{b2b-patches}}
+
+### 反白顯示
+
+{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+
+### 此版本中包含的Hotfix
+
+{{$include /help/_includes/release-notes/2024-10/hotfixes-included-foo.md}}
 
 ## 2.4.6 - p7
 

@@ -4,9 +4,9 @@ description: 遵循索引器設定的最佳實務，以維護並最佳化網站�
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
+source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 設定索引子以依排程更新
 
-Adobe Commerce有兩種索引子模式： [!UICONTROL Update on Save] （預設設定）和[!DNL Update on Schedule]。
+Adobe Commerce有兩種索引子模式： [!UICONTROL Update on Save]和[!DNL Update on Schedule]。
 
 - 當目錄或其他資料變更時，**[!UICONTROL Update on Save]**&#x200B;模式會立即更新索引。 例如，如果管理員使用者將新產品新增到類別，則類別產品索引會在儲存更新時立即重新索引。
 
