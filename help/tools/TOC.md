@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: a19b19560a84dcbc308c1f778262689bce0bdb65
+source-git-commit: 07d7aafc25c9d9cdf9b6adfe6ff09f1088c53749
 workflow-type: tm+mt
-source-wordcount: '5938'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -628,6 +628,7 @@ ht-degree: 0%
          - [ACSD-60632：每次嘗試訂購時儲存的地址](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
          - [ACSD-61195：購物車GraphQL請求無法傳回最終頁面上的專案](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
          - [ACSD-60538：如果產品已停用，則不會顯示屬性](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+         - [ACSD-60326：對客戶[!UICONTROL Returns]狀態的GraphQL查詢發生錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
       - v1.1.52 {#v1-1-52}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
          - [ACSD-61322：未指派給[!UICONTROL Shared Catalogue]的產品包含在XML網站地圖](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
