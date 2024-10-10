@@ -1,5 +1,5 @@
 ---
-source-git-commit: ecda5a5a9813bfb3788dccb99c3cae26f5360c34
+source-git-commit: b4b13acd4bfc4ccbab80a1f1823d833dc7669125
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 6%
@@ -55,10 +55,10 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>即時搜尋</td>
-          <td>4.1.0</td>
-          <td>4.1.0</td>
-          <td>4.1.0</td>
-          <td>4.1.0</td>
+          <td>4.2.1</td>
+          <td>4.2.1</td>
+          <td>4.2.1</td>
+          <td>4.2.1</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">市集</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">發行說明</a><br/>
@@ -77,10 +77,10 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>產品Recommendations</td>
-          <td>6.0.0</td>
-          <td>6.0.0</td>
-          <td>6.0.0</td>
-          <td>6.0.0</td>
+          <td>6.0.2</td>
+          <td>6.0.2</td>
+          <td>6.0.2</td>
+          <td>6.0.2</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">市集</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">發行說明</a><br/>
