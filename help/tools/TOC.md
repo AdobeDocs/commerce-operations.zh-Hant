@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 07d7aafc25c9d9cdf9b6adfe6ff09f1088c53749
+source-git-commit: d53bc380e3bb0a2e6e510f8e73f327c035088aab
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '5959'
 ht-degree: 0%
 
 ---
@@ -634,6 +634,7 @@ ht-degree: 0%
          - [ACSD-61322：未指派給[!UICONTROL Shared Catalogue]的產品包含在XML網站地圖](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
          - [ACSD-60590：提升Bestsellers每日彙總報表產生的效能](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925：排序[!UICONTROL Media Gallery]中的專案](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
+         - [ACSD-59865： [!UICONTROL Cart Price Rule]無法取消先前的規則，因為數量不足](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
       - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - 命令列工具參考{#cli-reference}
