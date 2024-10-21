@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: b8c0788fa99ff4e4965a12fd8c6177b919ace083
+source-git-commit: 4a595d153b7b14939f9238e404ea3485f348dcdb
 workflow-type: tm+mt
-source-wordcount: '5963'
+source-wordcount: '5975'
 ht-degree: 0%
 
 ---
@@ -631,6 +631,7 @@ ht-degree: 0%
          - [ACSD-60326：對客戶[!UICONTROL Returns]狀態的GraphQL查詢發生錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
       - v1.1.52 {#v1-1-52}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
+         - [ACSD-61366： bin/magento setup:static-content:deploy —jobs 4命令失敗並出現錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error.md)
          - [ACSD-61322：未指派給[!UICONTROL Shared Catalogue]的產品包含在XML網站地圖](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
          - [ACSD-60590：提升Bestsellers每日彙總報表產生的效能](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925：排序[!UICONTROL Media Gallery]中的專案](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
