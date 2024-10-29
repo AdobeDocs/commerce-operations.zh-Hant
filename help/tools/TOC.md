@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 1140bdcf13ad03703afe1c2e7290bcd743302a52
+source-git-commit: c489f77a9805ff3f96211f4ce2f47d8e963c47de
 workflow-type: tm+mt
-source-wordcount: '6013'
+source-wordcount: '6020'
 ht-degree: 0%
 
 ---
@@ -641,6 +641,7 @@ ht-degree: 0%
          - [ACSD-59952：刪除與其他共用目錄具有相同群組識別碼的共用目錄時發生錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
       - v1.1.53 {#v1-1-53}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
+         - [ACSD-59930：改善公司流程的效能](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
       - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - 命令列工具參考{#cli-reference}
