@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 46c1b2cdafe8335e604ee0391ca9aa8a32b54d84
+source-git-commit: 593d2f2fc5850e08f9568dba56d7b0c3378d9fbe
 workflow-type: tm+mt
-source-wordcount: '6035'
+source-wordcount: '6050'
 ht-degree: 0%
 
 ---
@@ -632,6 +632,7 @@ ht-degree: 0%
          - [ACSD-60816： [!DNL New Relic] 由APM代理程式插入的瀏覽器監視指令碼與CSP不相容](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
          - [ACSD-59967： JavaScript錯誤導致 [!DNL Google Maps] 無法正確呈現](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
          - [ACSD-60326：對客戶[!UICONTROL Returns]狀態的GraphQL查詢發生錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
+         - [ACSD-59786：GraphQL在擷取過期報價的報價ID時傳回錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired.quote.md)
       - v1.1.52 {#v1-1-52}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
          - [ACSD-61366： bin/magento setup:static-content:deploy —jobs 4命令失敗並出現錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error.md)
