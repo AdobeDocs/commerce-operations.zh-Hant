@@ -2,9 +2,9 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: f10eb87efbda20899574486f1e9db01f2a66f855
+source-git-commit: efa483b3e5a09bf2f4a472f9ee9e30512a0ca211
 workflow-type: tm+mt
-source-wordcount: '22258'
+source-wordcount: '22642'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,23 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需Community為Magento Open Source而建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.54 {#v1-1-54}
+
+* **AC-13283** (適用於Adobe Commerce和Magento Open Source 2.4.6-p8) - 2.4.6-p8中包含的回覆順序回溯不相容變更。
+* **ACSD-60267** (適用於Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.8) — 修正當直接將具有FPT的簡單產品新增至購物車時，修正修正產品稅額(FPT)正確套用的問題，但是在透過可設定產品選項選取這些產品時失敗。
+* **ACSD-61103** (適用於Adobe Commerce和Magento Open Source>=2.4.6 &lt;2.4.7) — 修正客戶透過API端點成功登入後，`customer_entity`表格中的失敗計數未重設為零的問題。
+* **ACSD-61134** (適用於Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.7) — 修正當購物者取消選取「*[!UICONTROL My billing and shipping address are the same]*」核取方塊以更新其帳單地址時，在結帳工作流程中自動取消選取「[!DNL Braintree Vault]」付款方式的問題。
+* **ACSD-61199** (適用於Adobe Commerce >=2.4.4 &lt;2.4.8) — 修正CMS頁面階層索引標籤在編輯具有現有階層的CMS頁面時未顯示正確樹狀結構的問題。
+* **ACSD-61200** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正銷售中&#x200B;*[!UICONTROL Total Amount]*&#x200B;和&#x200B;*[!UICONTROL Total Amount Actual]*&#x200B;的計算遺失&#x200B;*[!UICONTROL Discount Tax Compensation Amount]*&#x200B;和&#x200B;*[!UICONTROL Shipping Discount Tax Compensation Amount]*，而造成銷售訂單資料不一致的問題。
+* **ACSD-61522** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正可能將電子郵件地址輸入客體客戶的&#x200B;*[!UICONTROL First Name]*&#x200B;和&#x200B;*[!UICONTROL Last Name]*&#x200B;欄位並傳送無效訂單確認電子郵件的問題。
+* **ACSD-61756** (適用於Adobe Commerce >=2.4.4 &lt;2.4.7) — 改善`AdvancedSalesRule`篩選器的效能。
+* **ACSD-61799** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.5) — 修正將多個具有固定折扣的購物車規則套用至報價時，無法正確計算總折扣的問題。
+* **ACSD-61845** (適用於Adobe Commerce和Magento Open Source>=2.4.7-p1 &lt;2.4.8) — 修正只傳送&#x200B;*text/html*&#x200B;接受標頭時發生的錯誤。
+* **ACSD-62056** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正安裝MSI時可設定產品影像上傳失敗的問題。
+* **ACSD-62485** (適用於Adobe Commerce >=2.4.4 &lt;2.4.6-p8 || >=2.4.7 &lt;2.4.8) — 修正`async.operations.all`消費者在建立公司時停止運作的問題。
+* 更新修補程式：ACSD-48661、ACSD-51846、ACSD-55100、ACSD-61553
+* 已棄用的修補程式：ACSD-51846
 
 ## v1.1.53 {#v1-1-53}
 
