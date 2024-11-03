@@ -3,7 +3,7 @@ title: 「MDVA-44147：GraphQL請求未傳回請購單清單」
 description: MDVA-44147修補程式修正GraphQL要求未傳回請購單清單的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14時，即可使用此修補程式。 修補程式ID為MDVA-44147。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -35,8 +35,8 @@ GraphQL請求未傳回請購單清單。
 <u>要再現的步驟</u>：
 
 1. 移至&#x200B;**商店** > **設定** > **設定** > **一般** > **B2B功能**&#x200B;並啟用請購單清單。
-1. 以客戶身分登入，並將產品新增至[請購單清單](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html)。
-1. 建立[客戶權杖](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html)。
+1. 以客戶身分登入，並將產品新增至[請購單清單](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists)。
+1. 建立[客戶權杖](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html)。
 
    <pre>
     <code class="language-graphql">
@@ -51,7 +51,7 @@ GraphQL請求未傳回請購單清單。
       </code>
       </pre>
 
-1. 使用下列查詢，從客戶擷取所有「請購單清單」。 使用值為`Bearer <customer_token>`的&#x200B;**Authorization**&#x200B;標頭。 如需詳細資訊，請參閱開發人員檔案中的[客戶查詢](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html)文章。
+1. 使用下列查詢，從客戶擷取所有「請購單清單」。 使用值為`Bearer <customer_token>`的&#x200B;**Authorization**&#x200B;標頭。 如需詳細資訊，請參閱開發人員檔案中的[客戶查詢](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html)文章。
 
    要求：
 

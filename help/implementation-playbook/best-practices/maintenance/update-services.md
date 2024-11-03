@@ -4,7 +4,7 @@ description: 瞭解如何讓您的Adobe Commerce在雲端基礎結構技術棧�
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 在Adobe Commerce使用的服務和元件達到或接近生命週期結束日期之前升級。 這有助於遵循PCI法規並減少安全性漏洞。
 
-入門計畫客戶可自助服務升級。 請參閱[變更服務版本](https://devdocs.magento.com/cloud/project/services.html#change-service-version)，以取得如何執行此動作的詳細資訊。
+入門計畫客戶可自助服務升級。 請參閱[變更服務版本](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version)，以取得如何執行此動作的詳細資訊。
 
 Pro方案客戶只能在其[整合環境](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html)中自助服務升級。 若要在生產環境中升級服務，您必須[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)以要求升級。
 

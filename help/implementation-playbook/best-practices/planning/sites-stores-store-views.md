@@ -4,7 +4,7 @@ description: 瞭解設定網站、商店和商店檢視的最佳實務，以最�
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -41,5 +41,5 @@ ht-degree: 0%
 
 ## 其他資訊
 
-- [瞭解網站、商店和商店檢視](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [設定多個網站或商店](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
+- [瞭解網站、商店和商店檢視](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [設定多個網站或商店](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

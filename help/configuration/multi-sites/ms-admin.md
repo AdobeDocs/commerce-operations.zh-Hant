@@ -2,7 +2,7 @@
 title: 在管理員中設定多個網站、商店和商店檢視
 description: 在Commerce管理員中設定其他網站、商店和商店檢視。
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: f7c82844fd6d006e4ebbcf56f6e10338f67d0bdd
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 此工作需要您為每個存放區建立根類別(以及其他類別（如有需要）。 本主題中討論的任務提供設定多個存放區的方法。 如需詳細資訊，請參閱Commerce使用手冊中的下列資源：
 
-- [類別](https://docs.magento.com/user-guide/catalog/categories.html)
-- [新增網站](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [儲存URL](https://docs.magento.com/user-guide/stores/store-urls.html)
-- [內容](https://docs.magento.com/user-guide/cms/content-menu.html)
+- [類別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [新增網站](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [儲存URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [內容](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +34,7 @@ ht-degree: 0%
 1. 在&#x200B;**類別名稱**&#x200B;欄位中，輸入唯一名稱以識別此類別。
 1. 確定啟用類別設定為&#x200B;**是**。
 
-   如需此頁面上其他選項的相關資訊，請參閱[根類別](https://docs.magento.com/user-guide/catalog/category-root.html)。
+   如需此頁面上其他選項的相關資訊，請參閱[根類別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root)。
 
    下圖顯示一個範例。
 
@@ -131,7 +131,7 @@ Commerce提供將商店程式碼新增至網站基底URL的選項，可簡化設
 
 這可防止`index.php`和`.htaccess`在未來的升級中與Commerce程式碼基底不同步。
 
-請參閱[Commerce使用手冊](https://docs.magento.com/user-guide/stores/store-urls.html)。
+請參閱[Commerce使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)。
 
 若要將商店程式碼新增至基底URL：
 

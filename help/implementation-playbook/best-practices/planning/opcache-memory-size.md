@@ -4,7 +4,7 @@ description: 說明如何藉由Adobe Commerce專案中的OPcache記憶體耗用�
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -27,7 +27,7 @@ ht-degree: 1%
 ## 其他資訊
 
 * [效能最佳實務 — PHP設定](../../../performance/software.md#php-settings)
-* [設定PHP選項](https://devdocs.magento.com/cloud/project/project-conf-files_magento-app.html#customize-phpini-settings)
+* [設定PHP選項](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/overview)
 * [雲端基礎結構上Adobe Commerce的資料庫最佳實務](database-on-cloud.md)
 * [Adobe Commerce中雲端基礎結構最常見的資料庫問題](../maintenance/resolve-database-performance-issues.md)
 * [索引器「依排程更新」可最佳化Adobe Commerce效能](../maintenance/indexer-configuration.md)

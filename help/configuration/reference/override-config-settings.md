@@ -2,7 +2,7 @@
 title: 覆寫組態設定
 description: 瞭解如何使用環境變數來覆寫組態設定。
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -36,8 +36,8 @@ ht-degree: 0%
 
 - [敏感和系統特定設定路徑參考](config-reference-sens.md)
 - [付款設定路徑參考](config-reference-payment.md)
-- [Commerce B2B擴充功能設定路徑參考](config-reference-b2b.md)
-- [其他設定路徑參考](config-reference-general.md)
+- [Commerce B2B 擴充功能設定路徑參考](config-reference-b2b.md)
+- [其他配置路徑參考](config-reference-general.md)
 
 ### 變數名稱
 
@@ -62,18 +62,18 @@ ht-degree: 0%
   如需有關範圍的詳細資訊，請參閱：
 
    - [步驟1：尋找網站或商店檢視範圍值](#step-1-find-the-website-or-store-view-scope-value)
-   - [有關領域的Commerce使用手冊主題](https://docs.magento.com/user-guide/configuration/scope.html)
-   - [範圍快速參考](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
+   - [有關領域的Commerce使用手冊主題](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [範圍快速參考](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
-`<SYSTEM__VARIABLE__NAME>`是以雙底線字元取代`/`的設定路徑。 如需詳細資訊，請參閱[步驟2：設定系統變數](#step-2-set-global-website-or-store-view-variables)。
+`<SYSTEM__VARIABLE__NAME>` 是配置路徑，其中有兩次 個下劃線字元代替 `/`。 有關詳細資訊，請參閱 [步驟 2：設置系統變數](#step-2-set-global-website-or-store-view-variables)。
 
 ### 變數格式
 
-`<SCOPE>`與`<SYSTEM__VARIABLE__NAME>`之間以兩個底線字元分隔。
+`<SCOPE>` 用兩個底線字元分隔 `<SYSTEM__VARIABLE__NAME>` 。
 
-`<SYSTEM__VARIABLE__NAME>`衍生自組態設定的&#x200B;_組態路徑_，這是唯一識別特定設定的`/`分隔字串。 將設定路徑中的每個`/`字元取代為兩個底線字元，以建立系統變數。
+`<SYSTEM__VARIABLE__NAME>` 派生自配置設置的 _配置路徑，該路徑_&#x200B;是唯一 `/` 標識特定設置的分隔字串。 `/`使用兩個下劃線字元取代配置路徑中的每個字元以創建系統變數。
 
-如果設定路徑包含底線字元，底線字元仍會保留在變數中。
+如果配置路徑包含下劃線字元，則該下劃線字元將保留在變數中。
 
 您可以在下列位置找到設定路徑的完整清單：
 
@@ -91,15 +91,15 @@ ht-degree: 0%
 - `store`資料表指定存放區檢視名稱和代碼
 - `store_website`資料表指定網站名稱和代碼
 
-您也可以使用「管理員」來尋找代碼值。
+您也可以使用「管理」來確定程式代碼值。
 
-如何讀取表格：
+如何閱讀表格：
 
-- `Path in Admin`欄
+- `Path in Admin` 列
 
-  逗號前的值是管理員導覽中的路徑。 逗號後的值是右窗格中的選項。
+  逗号前的值是管理導覽中的路徑。 逗號后的值是右窗格中的選項。
 
-- `Variable name`欄是對應環境變數的名稱。
+- `Variable name` 欄是對應環境變數的名稱。
 
   您可以視需要將這些組態引數的系統值指定為環境變數。
 
@@ -135,19 +135,19 @@ ht-degree: 0%
 若要從資料庫取得這些值：
 
 1. 如果您尚未以檔案系統擁有者的身分登入您的開發系統，請先登入。
-1. 輸入下列命令：
+1. 輸入以下命令：
 
    ```bash
    mysql -u <database-username> -p
    ```
 
-1. 在`mysql>`提示字元處，按顯示的順序輸入下列命令：
+1. 在提示符下 `mysql>` ，按顯示的順序輸入以下命令：
 
    ```shell
    use <database-name>;
    ```
 
-1. 使用下列SQL查詢來尋找相關值：
+1. 使用以下 SQL 查詢搜尋相關值：
 
    ```shell
    SELECT * FROM STORE;
@@ -196,8 +196,8 @@ ht-degree: 0%
 
 | 說明 | 管理中的路徑（省略&#x200B;**存放區** > **設定** > **設定**） | 變數名稱 |
 |--------------|--------------|----------------------|
-| Elasticsearch伺服器主機名稱 | 目錄> **目錄**，**Elasticsearch伺服器主機名稱** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
-| Elasticsearch伺服器連線埠 | 目錄> **目錄**，**Elasticsearch伺服器連線埠** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT` |
+| Elasticsearch伺服器主機名稱 | 目錄>****&#x200B;目錄，**Elasticsearch伺服器主機名** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
+| Elasticsearch伺服器連接埠 | 目錄> **目錄**，**Elasticsearch伺服器連線埠** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT` |
 | 出貨國家/地區 | 銷售> **送貨設定** | `<SCOPE>__SHIPPING__ORIGIN__COUNTRY_ID` |
 | 自訂管理員URL | 進階> **管理員** | `<SCOPE>__ADMIN__URL__CUSTOM` |
 | 自訂管理路徑 | 進階> **管理員** | `<SCOPE>__ADMIN__URL__CUSTOM_PATH` |
@@ -208,15 +208,15 @@ ht-degree: 0%
 
 ### Elasticsearch伺服器主機名稱
 
-若要尋找全域HTML縮制的變數名稱：
+若要尋找全域 HTML 縮小的變數名稱：
 
-1. 決定範圍。
+1. 確定範圍。
 
-   這是全域範圍，所以變數名稱以`CONFIG__DEFAULT__`開頭
+   它是全域範圍因此變數名稱開頭為 `CONFIG__DEFAULT__`
 
-1. 變數名稱的其餘部分為`CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`。
+1. 變數名稱的其餘部分是 `CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`。
 
-   **結果**：變數名稱為`CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`
+   **結果**：變數名稱為 `CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`
 
 ### 出貨國家/地區
 
@@ -251,7 +251,7 @@ $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '123
 
 >[!WARNING]
 >
->- 若要使用您在`$_ENV`陣列中設定的值，您必須在`php.ini`檔案中設定`variables_order = "EGPCS"`(環境、Get、Post、Cookie和伺服器)。 如需詳細資訊，請參閱[PHP檔案](https://www.php.net/manual/en/ini.core.php)。
+>- 若要使用您在`$_ENV`陣列中設定的值，您必須在`php.ini`檔案中設定`variables_order = "EGPCS"`（環境、Get、Post、Cookie和伺服器）。 如需詳細資訊，請參閱[PHP檔案](https://www.php.net/manual/en/ini.core.php)。
 >
 >- 針對雲端基礎結構上的Adobe Commerce，如果您嘗試使用[Project Web介面](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)覆寫組態設定，您必須在變數名稱前面加上`env:`。 例如：
 >

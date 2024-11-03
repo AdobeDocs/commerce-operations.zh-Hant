@@ -4,7 +4,7 @@ description: 瞭解設定最佳實務，以改善結帳和訂單處理效能。
 role: Admin, User
 feature: Best Practices
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - **[!UICONTROL Asynchronous indexing]** — 啟用此選項可防止同時下大量訂單時資料庫鎖定並減緩處理速度。
 - **[!UICONTROL Asynchronous email notifications]** — 啟用此選項可透過以指定間隔傳送結帳和訂單處理電子郵件通知，而非立即傳送，來加速結帳效能。
-- **[!UICONTROL Enable Archiving]** — 啟用此選項可改善訂單、發票、出貨及銷退折讓單的效能，並保留您的工作區中無不必要的資訊，讓您能夠專心處理目前的業務。 請參閱[啟用封存](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving)。
+- **[!UICONTROL Enable Archiving]** — 啟用此選項可改善訂單、發票、出貨及銷退折讓單的效能，並保留您的工作區中無不必要的資訊，讓您能夠專心處理目前的業務。 請參閱[啟用封存](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive)。
 
 ## 受影響的產品和版本
 

@@ -2,7 +2,7 @@
 title: 模組組態檔
 description: 瞭解如何使用設定型別來自訂模組。
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Commerce應用程式合併演演算法：
 | --- | --- | --- | --- |
 | `address_formats.xml` | 位址格式宣告 | 主要，全域 | [\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml` | [存取控制清單](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml) | 全域 | [\Magento\Framework\Acl\AclResource\Provider](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
-| `analytics.xml` | [進階報告](https://devdocs.magento.com/guides/v2.4/advanced-reporting/data-collection.html) | 主要，全域 | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
+| `analytics.xml` | [進階報告]https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | 主要，全域 | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
 | `cache.xml` | 快取型別宣告 | 主要，全域 | [\Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
 | `catalog_attributes.xml` | 目錄屬性設定 | 全域 | [\Magento\Catalog\Model\Attribute\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Attribute/Config/Data.php) |
 | `config.php`和`env.php` | [部署組態](../reference/deployment-files.md) | 這些檔案可由內部設定處理器讀取/寫入。 | 沒有物件，無法自訂 |
@@ -111,7 +111,7 @@ Commerce應用程式合併演演算法：
 | `queue_consumer.xml` | [定義現有佇列與其消費者之間的關係](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_consumerxml) | 全域 | [\Magento\Framework\MessageQueue\Consumer\Config\Xml\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/MessageQueue/Consumer/Config/Xml/Reader.php) |
 | `queue_publisher.xml` | [定義發佈主題的Exchange。](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_publisherxml) | 全域 | [\Magento\WebapiAsync\Code\Generator\Config\RemoteServiceReader\Publisher](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Code/Generator/Config/RemoteServiceReader/Publisher.php) |
 | `queue_topology.xml` | [定義郵件路由規則，宣告佇列和交換](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_topologyxml) | 全域 | [\Magento\Framework\MessageQueue\Topology\Config\Xml\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/MessageQueue/Topology/Config/Xml/Reader.php) |
-| `reports.xml` | [進階報告](https://devdocs.magento.com/guides/v2.4/advanced-reporting/report-xml.html) | 全域 | [\Magento\Analytics\ReportXml\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config.php) |
+| `reports.xml` | [進階報告](https://developer.adobe.com/commerce/php/development/advanced-reporting/report-xml/) | 全域 | [\Magento\Analytics\ReportXml\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config.php) |
 | `resources.xml` | 定義模組資源 | 全域 | [\Magento\Framework\App\ResourceConnection\Config\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/ResourceConnection/Config/Reader.php) |
 | `routes.xml` | [路由](https://developer.adobe.com/commerce/php/development/components/routing/)設定 | 區域 | [Magento\Framework\App\Route\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Route/Config.php) |
 | `sales.xml` | 定義銷售總計設定 | 全域 | [\Magento\Sales\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Config/Data.php) |

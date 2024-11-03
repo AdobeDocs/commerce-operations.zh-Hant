@@ -2,7 +2,7 @@
 title: 設定指南總覽
 description: 了解 Adobe Commerce 應用程式所有可設定的功能和服務。
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 9%
@@ -25,7 +25,7 @@ _組態_&#x200B;指南提供管理可設定之Commerce應用程式功能與服�
 
 ## Commerce管理設定
 
-[Commerce使用手冊](https://docs.magento.com/user-guide/stores/configuration.html)中有對應的主題，可協助您瞭解Commerce管理員中每個組態設定的欄位說明。
+[Commerce使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview)中有對應的主題，可協助您瞭解Commerce管理員中每個組態設定的欄位說明。
 
 ## 雲端設定
 

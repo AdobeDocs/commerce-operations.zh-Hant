@@ -1,49 +1,49 @@
 ---
-title: 索引器的設定最佳實務
-description: 遵循索引器設定的最佳實務，以維護並最佳化網站效能。
+title: 索引器的配置最佳做法
+description: 按照索引器配置的最佳做法維護和優化網站績效。
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
-# 索引器設定的最佳實務
+# 索引器配置的最佳做法
 
-為了最佳化及維護網站效能，請使用本文所述的效能最佳實務來檢閱及更新索引器設定。
+若要優化和維護網站績效，請使用本文中所述的性能最佳做法查看和更新索引器配置。
 
 ## 受影響的產品和版本
 
-[所有支援的版本](../../../release/versions.md)：
+[所有受支援的版本](../../../release/versions.md) ：
 
-- 雲端基礎結構上的Adobe Commerce
-- Adobe Commerce內部部署
+- Adobe Systems Commerce on 雲端基礎結構
+- 本地Adobe Systems商務
 
-## 設定索引子以依排程更新
+## 將索引器設置為按計劃更新
 
-Adobe Commerce有兩種索引子模式： [!UICONTROL Update on Save]和[!DNL Update on Schedule]。
+Adobe Systems商務具有兩種類型的索引器模式： [!UICONTROL Update on Save] 和 [!DNL Update on Schedule]。
 
-- 當目錄或其他資料變更時，**[!UICONTROL Update on Save]**&#x200B;模式會立即更新索引。 例如，如果管理員使用者將新產品新增到類別，則類別產品索引會在儲存更新時立即重新索引。
+- **[!UICONTROL Update on Save]** 模式會在您的目錄或其他數據發生變更時立即更新索引。 例如，如果管理員用戶向類別添加新產品，則保存更新時會立即重新編製類別產品索引。
 
-- **[!UICONTROL Update on Schedule]**&#x200B;模式會儲存資料更新的相關資訊，而重新索引作業和索引更新是由在背景以排程間隔執行的cron作業所管理。 cron作業並不總是在每次執行時執行重新索引。 只有在索引器變更記錄中有新專案時（例如，索引器上有待處理專案），才會重新索引。
+- **[!UICONTROL Update on Schedule]**&#x200B;模式會儲存資料更新的相關資訊，而重新索引作業和索引更新是由在背景以排程間隔執行的cron作業所管理。 cron 作業並不總是在每次運行時都執行重新索引。 僅當索引器更改日誌中有新條目（例如，索引器上存在積壓）時，它才會重新編製索引。
 
-如果大型存放區有多個管理員在後端工作或有許多匯入和匯出，則會觸發頻繁的索引更新。 如果您的網站索引設定設為[!UICONTROL Update on Save]模式，經常重新索引會降低資料庫效能，進而減慢網站效能，並造成重新索引程式長時間延遲，尤其是對於大型商店。
+具有多個管理員在後端工作或具有許多導入和導出的大型商店會觸發頻繁的索引更新。 如果將網站索引配置設置為 [!UICONTROL Update on Save] 模式，則頻繁重新編製索引會降低資料庫性能，從而降低網站績效速度並導致重新編製索引過程出現長時間延遲，尤其是對於大型商店。
 
-若要最大化網站效能，請遵循以下編制索引最佳實務：
+為了最大程度地網站績效，追隨以下索引最佳實務：
 
-- 檢閱索引設定。
-- 針對大型網站、經常更新且流量很大的網站，將索引子設定為&#x200B;_[!UICONTROL Update on Schedule]_。 請參閱[索引管理](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode)。
-- 遵循[效能最佳實務](../../../performance/configuration.md)管理索引。
+- 查看索引配置。
+- 將索引器設置為 用於 _[!UICONTROL Update on Schedule]_大型網站以及更新頻繁且流量量大的網站。 請參閱 [Index管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)。
+- 遵循 [管理索引的性能最佳做法](../../../performance/configuration.md) 。
 
 >[!IMPORTANT]
 >
->只能使用[!UICONTROL Update on Save]選項來重新索引[!DNL Customer Grid]。 此索引不支援`Update by Schedule`選項。
+>只能 [!DNL Customer Grid] 使用 該 [!UICONTROL Update on Save] 選項重新編製索引。 此索引不支援該 `Update by Schedule` 選項。
 
 ## 其他資訊
 
-- [管理員使用者的索引管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
+- [管理員使用者的Index管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
 - [使用MagentoCLI的索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
-- [開發人員的索引概觀](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [面向開發人員的索引概述](https://developer.adobe.com/commerce/php/development/components/indexing/)

@@ -4,7 +4,7 @@ description: 瞭解如何在雲端基礎結構上部署Adobe Commerce時，設�
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -59,9 +59,9 @@ Adobe建議您一律在雲端基礎結構專案中為您的Adobe Commerce設定E
 
 如需設定指示，請參閱雲端上Adobe Commerce的開發人員指南：
 
-- [設定OpenSearch服務](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [設定OpenSearch服務](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [設定Elasticsearch服務](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [設定Elasticsearch服務](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## 避免自訂觸發器
 
@@ -76,7 +76,7 @@ Adobe建議您一律在雲端基礎結構專案中為您的Adobe Commerce設定E
 
 ## 將[!DNL ECE-Tools]升級至2002.0.21版或更新版本 {#ece-tools-version}
 
-若要避免cron死結的潛在問題，請將ECE-Tools升級至2002.0.21版或更新版本。 如需指示，請參閱我們的開發人員檔案中的[更新`ece-tools`版本](https://devdocs.magento.com/cloud/project/ece-tools-update.html)。
+若要避免cron死結的潛在問題，請將ECE-Tools升級至2002.0.21版或更新版本。 如需指示，請參閱我們的開發人員檔案中的[更新`ece-tools`版本](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package)。
 
 ## 安全地切換索引器模式
 

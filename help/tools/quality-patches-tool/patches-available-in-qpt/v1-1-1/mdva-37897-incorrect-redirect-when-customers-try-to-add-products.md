@@ -3,7 +3,7 @@ title: 'MDVA-37897：從「最近檢視的專案」新增產品時，重新導�
 description: MDVA-37897修補程式可解決使用者嘗試使用最近檢視的Widget中的選項新增產品時，所發生的重新導向錯誤問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1後，即可使用此修補程式。 修補程式ID為MDVA-37897。 請注意，此問題已排程在Adobe Commerce 2.4.4版中修正。
 feature: Products
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -51,8 +51,8 @@ MDVA-37897修補程式可解決使用者嘗試使用最近檢視的Widget中的�
 
 若要套用個別修補程式，請根據您的部署型別使用下列連結：
 
-* Adobe Commerce內部部署：開發人員檔案中的[軟體更新指南>套用修補程式](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html)。
-* 我們的雲端基礎結構上的Adobe Commerce：開發人員檔案中的[升級和修補程式>套用修補程式](https://devdocs.magento.com/cloud/project/project-patch.html)。
+* Adobe Commerce內部部署：開發人員檔案中的[軟體更新指南>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)。
+* 我們的雲端基礎結構上的Adobe Commerce：開發人員檔案中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

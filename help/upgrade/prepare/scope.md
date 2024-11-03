@@ -2,7 +2,7 @@
 title: 瞭解升級範圍
 description: 瞭解版本中回溯不相容的變更，這些變更可能會影響Adobe Commerce自訂模組或協力廠商擴充功能。
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -11,22 +11,22 @@ ht-degree: 0%
 
 # 瞭解升級範圍
 
-請檢閱[發行說明](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)以瞭解發行範圍，包括增強功能、錯誤修正，以及可能影響協力廠商和自訂模組的已知問題。
+請檢閱[發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)以瞭解發行範圍，包括增強功能、錯誤修正，以及可能影響協力廠商和自訂模組的已知問題。
 
 ## 與舊版不相容的變更
 
 Adobe Commerce發行版本可能包含與回溯不相容的變更。 檢閱不相容的回溯變更檔案，請參閱下列內容：
 
-- **[重大變更重點提示](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)** — 具有重大影響且需要詳細說明和特殊說明的變更，以確保協力廠商模組繼續運作。
-- **[次要變更參考](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)** — 參考從程式碼基底產生的檔案，其中說明類別、API成員資格、資料庫、相依性插入、介面、配置、系統和XSD的次要變更。
+- **[重大變更重點提示](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)** — 具有重大影響且需要詳細說明和特殊說明的變更，以確保協力廠商模組繼續運作。
+- **[次要變更參考](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** — 參考從程式碼基底產生的檔案，其中說明類別、API成員資格、資料庫、相依性插入、介面、配置、系統和XSD的次要變更。
 
-## 協力廠商擴充功能
+## 第三方擴充功能
 
-Adobe Commerce Marketplace的新相容性原則可確保&#x200B;_所有_&#x200B;列出的擴充功能與GA日期起30天內最新發行的版本相容。 因此，請務必儘可能透過Marketplace取得您的協力廠商擴充功能。
+Adobe Systems Commerce Marketplace 的新兼容性原則可確保 _所有_ 列出的擴展在正式發佈之日起 30 天内與最新發佈的版本兼容。 因此，請務必儘可能通過市場獲取協力廠商擴展。
 
 ## 自訂模組
 
-所有自訂模組都應針對您欲升級的目標版本進行檢查。 這是最耗用時間和資源的升級程式。 評估自訂模組時，您必須尋找與回溯不相容的變更，並注意新的作法，例如控制器分解。 您可以在[發行說明](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)中進一步瞭解此資訊。 此外，請確定您遵循模組開發的[最佳實務](https://developer.adobe.com/commerce/php/best-practices/extensions/)。
+所有自訂模組都應針對您欲升級的目標版本進行檢查。 這是最耗用時間和資源的升級程式。 評估自訂模組時，您必須尋找與回溯不相容的變更，並注意新的作法，例如控制器分解。 您可以在[發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)中進一步瞭解此資訊。 此外，請確定您遵循模組開發的[最佳實務](https://developer.adobe.com/commerce/php/best-practices/extensions/)。
 
 ## [!DNL Upgrade Compatibility Tool]
 
@@ -66,11 +66,11 @@ bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues �
 
 - `--ignore-current-version-compatibility-issues` — 隱藏目前版本的所有已知嚴重問題、錯誤和警告。 它只會針對您嘗試升級的版本提供錯誤。
 
-- `--min-issue-level` — 可讓您設定最低問題層級，協助僅優先處理升級時最重要的問題。 選項包括警告、錯誤和嚴重性遞增順序的關鍵。
+- `--min-issue-level`- 允許您設置最低問題級別，以説明僅確定升級中最重要的問題的優先順序。 選項是警告、錯誤和關鍵，按嚴重性升序排列。
 
-- `-m | [=MODULE-PATH]` — 如果您只想分析某個廠商、模組或甚至目錄，您也可以將路徑指定為選項。
+- `-m | [=MODULE-PATH]`- 如果只想分析某個供應商、模組或平均目錄，也可以將路徑指定為選項。
 
-- `--vanilla-dir` — 可讓您檢查核心程式碼是否有任何非標準的功能或自訂實作。 請務必預先清除這些專案。 系統會自動下載您版本的vanilla例項以供參考。
+- `--vanilla-dir`- 允許您檢查核心代碼中是否有任何功能或自定義項的非標準實施。 請務必預先清除這些專案。 系統會自動下載您版本的vanilla例項以供參考。
 
   >[!NOTE]
   >
@@ -109,6 +109,6 @@ bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues �
 
 我們建議您儲存每個升級專案的結果，以便您可以將未來的升級結果與之前的結果進行比較。 透過繼續使用，您將會從工具提供的摘要報告中，開始深入瞭解升級至下一個版本所需的精力。
 
-我們也建議您在處理升級時定期執行工具，以便檢視您的進度。 當您修正問題時，問題的數量應該會減少。 這也有助於您的團隊決定分發工作的最佳方式。
+我們還建議您在進行升級時定期運行工具，以便了解進度。 問題的數量應該隨著您修正而減少。 這也有助於您的團隊決定分配工作的最佳方法。
 
-[!DNL Upgrade Compatibility Tool]持續改進，未來發行版本將包含自動修正等功能，以協助您儘快修正問題。 2022年1月發佈的最新改進包括PHP 8.1相容性測試和HTML視覺化功能，可幫助您快速識別可能需要更多升級工作的區域。
+繼續 [!DNL Upgrade Compatibility Tool] 改進，未來的版本將包括自動修復等功能，以説明您儘快解決問題。 2022 年 1 月發布的最新改進包括 PHP 8.1 相容性測試和 HTML 可視化功能，可説明您快速識別可能需要更多努力升級的區域。

@@ -3,7 +3,7 @@ title: 平台工具
 description: 選擇建議的Adobe Commerce實作平台工具。
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
 feature: Configuration
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Adobe Commerce提供多種選項來儲存您的快取和工作階段資料，包
 
 ## 安全性工具
 
-[Adobe Commerce安全性掃描工具](https://docs.magento.com/user-guide/magento/security-scan.html)可讓您定期監視商店網站，並接收已知安全性風險、惡意程式碼和過時軟體的更新。 通常，當您開始使用者驗收測試(UAT)時，就會開始使用此工具。 Adobe Commerce安全性掃描工具是免費的，適用於Adobe Commerce的所有實作和版本，除此之外，還有其他選項可以在CI/CD流程期間和每個版本之前使用。
+[Adobe Commerce安全性掃描工具](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)可讓您定期監視商店網站，並接收已知安全性風險、惡意程式碼和過時軟體的更新。 通常，當您開始使用者驗收測試(UAT)時，就會開始使用此工具。 Adobe Commerce安全性掃描工具是免費的，適用於Adobe Commerce的所有實作和版本，除此之外，還有其他選項可以在CI/CD流程期間和每個版本之前使用。
 
 SonarQube是開放原始碼品質管理平台，專為分析和測量程式碼的技術品質而設計。 SonarQube不僅提供完整的程式碼錯誤、語法錯誤和弱點報告，也提供修正程式碼的建議與範例。 SonarQube非常適合用於CI/CD環境，作為能夠在部署前分析程式碼的工具。
 

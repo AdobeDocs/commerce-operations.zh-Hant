@@ -2,7 +2,7 @@
 title: env.php參考
 description: 請參閱env.php檔案的值清單。
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 0%
@@ -11,12 +11,12 @@ ht-degree: 0%
 
 # env.php參考
 
-`env.php`檔案包含下列區段：
+該檔案 `env.php` 包含以下部分：
 
-| 名稱 | 說明 |
+| 名字 | 說明 |
 |-------------------------------|-----------------------------------------------------------------|
-| `backend` | 管理區域的設定 |
-| `cache` | 設定Redis頁面和預設快取 |
+| `backend` | 設定管理區域 |
+| `cache` | 配置 redis 頁面和默認緩存 |
 | `cache_types` | 快取儲存設定 |
 | `consumers_wait_for_messages` | 設定使用者處理訊息佇列訊息的方式 |
 | `cron` | 啟用或停用cron工作 |
@@ -28,15 +28,15 @@ ht-degree: 0%
 | `install` | 安裝日期 |
 | `lock` | 鎖定提供者設定 |
 | `MAGE_MODE` | [應用程式模式](../bootstrap/application-modes.md) |
-| `queue` | [訊息佇列](../queues/manage-message-queues.md)設定 |
-| `resource` | 將資源名稱對應到連線 |
-| `session` | 工作階段儲存資料 |
+| `queue` | [新增訊息佇列設定](../queues/manage-message-queues.md) |
+| `resource` | 資源名稱到連接的映射 |
+| `session` | 會話儲存數據 |
 | `system` | 停用「管理員」中要編輯的欄位 |
 | `x-frame-options` | [x-frame-options][x-frame-options]的設定 |
 
 ## 後端
 
-使用env.php中的`backend`節點設定Commerce管理員URL的&#x200B;**frontName**。
+在 **env.php 中使用節點設定`backend`商務管理 url 的 frontName**。
 
 ```conf
 'backend' => [
@@ -44,9 +44,9 @@ ht-degree: 0%
 ]
 ```
 
-## 快取
+## 緩存
 
-使用`env.php`檔案中的`cache`節點，設定redis頁面和預設快取。
+使用文件中的節點`env.php`來`cache`配置 redis 頁面和預設快取。
 
 ```conf
 'cache' => [
@@ -72,9 +72,9 @@ ht-degree: 0%
 ]
 ```
 
-深入瞭解[Redis組態](../cache/redis-pg-cache.md)。
+在 Redis 配置](../cache/redis-pg-cache.md)中[瞭解更多資訊。
 
-## cache_type
+## cache_types
 
 所有快取型別設定都可從此節點取得。
 
@@ -136,7 +136,7 @@ ht-degree: 0%
 
 深入瞭解[Crons](../cli/configure-cron-jobs.md)。
 
-## 加密
+## 地穴
 
 Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會在安裝過程中產生。
 
@@ -146,7 +146,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-在&#x200B;_Commerce使用手冊_&#x200B;中進一步瞭解[加密金鑰](https://docs.magento.com/user-guide/system/encryption-key.html)。
+在&#x200B;_Commerce使用手冊_&#x200B;中進一步瞭解[加密金鑰](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)。
 
 ## db
 
@@ -185,7 +185,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 
 ## 目錄
 
-當網頁伺服器設定為從`/pub`目錄提供Commerce應用程式時，需要設定選擇性目錄對應選項，以提高[安全性](../../installation/tutorials/docroot.md)。
+當 Web 伺服器設定為從目錄提供 `/pub` Commerce 應用以提高安全性](../../installation/tutorials/docroot.md)時，需要[設置的可選目錄映射選項。
 
 ```conf
 'directories' => [
@@ -193,9 +193,9 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-## downloadable_domain
+## downloadable_domains
 
-此節點中可用的可下載網域清單。 您可以使用CLI指令來新增、移除或列出其他網域。
+此節點提供清單的可下載網域。 您可以使用CLI指令來新增、移除或列出其他網域。
 
 ```conf
 'downloadable_domains' => [
@@ -203,11 +203,11 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-深入瞭解[可下載的網域](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd)。
+深入瞭解[可下載的網域](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
 
 ## 安裝
 
-Commerce應用程式的安裝日期。
+Commerce 應用程式 的安裝日期。
 
 ```conf
 'install' => [
@@ -215,13 +215,13 @@ Commerce應用程式的安裝日期。
 ]
 ```
 
-## 鎖定
+## 鎖
 
-使用`lock`節點設定鎖定提供者設定。
+鎖定提供程序設置是使用 `lock` 節點配置的。
 
-深入瞭解[鎖定提供者組態](../../installation/tutorials/lock-provider.md)。
+詳細了解 [鎖定提供程式配置](../../installation/tutorials/lock-provider.md)。
 
-## 影像模式
+## MAGE_MODE
 
 可在此節點中設定部署模式。
 
@@ -272,13 +272,13 @@ Commerce應用程式的安裝日期。
 
 ## x-frame-options
 
-x-frame-options標頭可使用此節點進行設定。
+x-frame-options 標頭可使用此節點進行設定。
 
 ```conf
 'x-frame-options' => 'SAMEORIGIN'
 ```
 
-深入瞭解[x-frame-options](../security/xframe-options.md)。
+了解有關 x-frame-options](../security/xframe-options.md) 的更多資訊[。
 
 ## 系統
 

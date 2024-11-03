@@ -2,7 +2,7 @@
 title: 設定鎖定提供者
 description: 請依照下列步驟，防止重複的cron工作和cron群組在您的Adobe Commerce部署中執行。
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Adobe Commerce預設會使用資料庫儲存鎖定。 如果您的伺服器上有多個節點，建議您使用Zookeeper做為鎖定提供者。
 
-如果您在雲端基礎結構上執行Adobe Commerce，則不需要設定鎖定提供者設定。 應用程式會在布建程式期間為Pro專案設定檔案鎖定提供者。 請參閱[雲端變數](https://devdocs.magento.com/cloud/env/variables-cloud.html)。
+如果您在雲端基礎結構上執行Adobe Commerce，則不需要設定鎖定提供者設定。 應用程式會在布建程式期間為Pro專案設定檔案鎖定提供者。 請參閱[雲端變數](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)。
 
 ### 命令使用方式
 

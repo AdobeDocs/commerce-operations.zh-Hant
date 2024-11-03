@@ -4,7 +4,7 @@ description: 透過變更一些預設設定，準備您的Adobe Commerce專案�
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
 feature: Integration, Cache
 topic: Commerce, Performance
-source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 0%
@@ -26,7 +26,7 @@ GraphQL可讓您在單一呼叫中進行多個查詢。 請務必注意，如果
 
 >[!NOTE]
 >
-> 有關可快取和不可快取查詢的詳細資訊，請參閱Adobe Commerce [開發人員檔案](https://devdocs.magento.com/guides/v2.4/graphql/caching.html)。
+> 有關可快取和不可快取查詢的詳細資訊，請參閱Adobe Commerce [開發人員檔案](https://developer.adobe.com/commerce/webapi/graphql/caching.html)。
 
 ## 目錄平面表格
 
@@ -42,7 +42,7 @@ GraphQL可讓您在單一呼叫中進行多個查詢。 請務必注意，如果
 
 啟用Fastly來源遮罩後，您就可以同時啟用Fastly Image Optimizer。 產品目錄影像儲存在Adobe Commerce上的位置，此服務可讓您將所有耗用大量資源的產品目錄影像轉換處理作業解除安裝到Fastly，並從Adobe Commerce來源移除。 一般使用者的回應時間也會因頁面載入時間而有所改善，這是因為影像會轉換至邊緣位置，減少傳回Adobe Commerce原始頁面的請求數量，進而消除延遲情形。
 
-Fastly影像最佳化可以透過Admin中Fastly設定的「啟用深層影像最佳化」來啟用，但前提是您的來源盾牌已啟動。 有關Fastly影像最佳化的設定詳細資訊，請參閱Adobe Commerce [開發人員檔案](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html)。
+Fastly影像最佳化可以透過Admin中Fastly設定的「啟用深層影像最佳化」來啟用，但前提是您的來源盾牌已啟動。 有關Fastly影像最佳化的設定詳細資訊，請參閱Adobe Commerce [開發人員檔案](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization)。
 
 ![Adobe Commerce管理員中Fastly影像最佳化設定的熒幕擷圖](../assets/commerce-at-scale/image-optimization.svg)
 

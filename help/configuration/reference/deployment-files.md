@@ -3,7 +3,7 @@ title: 用於部署的組態檔
 description: 瞭解組態檔如何用於安裝Commerce應用程式。
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: b40d2bd4d466782ba5bc1b29ee8681756d9e85cc
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Adobe Commerce提供組態檔，可讓您輕鬆自訂元件並建立組態型別
 範例：
 
 - 解除安裝元件： [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- 檢查元件的狀態： [`bin/magento module:status`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#modulestatus)
+- 檢查元件的狀態： [`bin/magento module:status`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - 啟用或停用元件： [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md)、[`bin/magento module:enable`](../../installation/tutorials/manage-modules.md)。
 
 > _config.php_

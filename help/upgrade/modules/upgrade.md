@@ -2,7 +2,7 @@
 title: 升級模組和擴充功能
 description: 使用命令列介面和撰寫器來升級Adobe Commerce模組和擴充功能。
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 廠商套件擴充功能(VBE)
 
-Adobe已移除2.4.4中的所有[VBE](https://devdocs.magento.com/extensions/vendor/)。廠商持續在Adobe Commerce Marketplace上支援這些擴充功能。
+Adobe已移除2.4.4中的所有[VBE](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/modules/upgrade)。廠商持續在Adobe Commerce Marketplace上支援這些擴充功能。
 
 若要繼續將這些擴充功能與Adobe Commerce 2.4.4和更新版本搭配使用，您必須在&#x200B;_升級至2.4.4之前，更新`composer.json`檔案_&#x200B;中對應的套件相依性。請聯絡供應商，以取得要使用的套件名稱和版本。
 

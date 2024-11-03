@@ -2,7 +2,7 @@
 title: 參考架構
 description: 檢閱Adobe Commerce部署的建議參考架構圖表。
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 本主題說明一般建議設定，適用於Adobe Commerce執行個體，使用實體託管於資料中心（非虛擬化）的普通伺服器，資源不會與其他使用者共用。 您的託管提供者(尤其是擅長於Commerce高效能託管的供應商)可能會建議您採取對您的需求有相同或相同成效的其他設定。
 
-如需雲端基礎結構環境上的Adobe Commerce，請參閱[入門架構](https://devdocs.magento.com/cloud/architecture/starter-architecture.html)。
+如需雲端基礎結構環境上的Adobe Commerce，請參閱[入門架構](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture)。
 
 ## [!DNL Commerce]參考架構圖表
 

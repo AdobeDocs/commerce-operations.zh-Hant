@@ -3,7 +3,7 @@ title: 'MDVA-42806：每次更新現有公司時，都會傳送新的公司註�
 description: MDVA-42806修補程式可解決每次透過REST API更新現有公司時，都會傳送新公司註冊電子郵件的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9後，即可使用此修補程式。 修補程式ID為MDVA-42806。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: REST, B2B, Communications, Companies
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -39,7 +39,7 @@ B2B模組已安裝。
 <u>要再現的步驟</u>：
 
 1. 建立公司帳戶。
-1. 使用`/V1&#x200B;/company&#x200B;/<company_id>`端點。 若要更新已建立的公司，請參閱我們的開發人員檔案中的[更新公司](https://devdocs.magento.com/guides/v2.4/b2b/company-object.html#update-the-company)。 以下是範例裝載：
+1. 使用`/V1&#x200B;/company&#x200B;/<company_id>`端點。 若要更新已建立的公司，請參閱我們的開發人員檔案中的[更新公司](https://developer.adobe.com/commerce/webapi/rest/b2b/company-object/#update-the-company)。 以下是範例裝載：
 
 ```php
 {

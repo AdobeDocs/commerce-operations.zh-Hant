@@ -1,30 +1,30 @@
 ---
-title: 工作階段儲存位置
-description: 瞭解工作階段檔案儲存的位置。
+title: 會話儲存位置
+description: 瞭解會話檔的存儲位置。
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
-# 工作階段儲存位置
+# 會話儲存位置
 
-本主題說明如何找出工作階段檔案的儲存位置。 系統會使用以下邏輯來儲存工作階段檔案：
+本主題討論如何查找會話檔的存儲位置。 系統使用以下邏輯來商店會話檔：
 
-- 如果您已設定memcached，工作階段會儲存在RAM中；請參閱[使用工作階段儲存的memcached](memcached.md)。
-- 如果您已設定Redis，工作階段會儲存在Redis伺服器上；請參閱[使用Redis作為工作階段儲存體](../cache/redis-session.md)。
-- 如果您使用預設的檔案式工作階段儲存，我們會依照顯示的順序將工作階段儲存在下列位置：
+- 如果配置了記憶體緩存，則會話存儲在 RAM 中;請參閱 [將 memcached 用於會話儲存](memcached.md)。
+- 如果您配置了 Redis，會話將存儲在 Redis 伺服器上;請參閱將 [Redis 用於會話儲存](../cache/redis-session.md)。
+- 如果您使用的是預設的基於文件的會話儲存，我們將按顯示的順序在以下位置商店會話：
 
-   1. 在[`env.php`](#example-in-envphp)中定義的目錄
-   1. 在[`php.ini`](#example-in-phpini)中定義的目錄
-   1. `<magento_root>/var/session`目錄
+   1. 中定義的目錄 [`env.php`](#example-in-envphp)
+   1. 中定義的目錄 [`php.ini`](#example-in-phpini)
+   1. `<magento_root>/var/session` 目錄
 
-## `env.php`中的範例
+## 範例 `env.php`
 
-`<magento_root>/app/etc/env.php`中的範常式式碼片段如下：
+下面是一個範例 `<magento_root>/app/etc/env.php` 片段：
 
 ```php
  'session' => [
@@ -33,25 +33,25 @@ ht-degree: 0%
  ],
 ```
 
-上述範例將工作階段檔案儲存在`/var/www/session`
+前面的示例將會話檔存儲在 `/var/www/session`
 
 ## `php.ini`中的範例
 
-以具有`root`許可權的使用者身分，開啟您的`php.ini`檔案並搜尋`session.save_path`的值。 這會識別工作階段的儲存位置。
+作為具有 `root` 許可權的用戶，請打開文件 `php.ini` 並搜尋以獲取 的值 `session.save_path`。 這標識了會話的存儲位置。
 
-## 管理工作階段大小
+## 管理會話大小
 
-請參閱&#x200B;_使用手冊_&#x200B;中的[工作階段管理](https://docs.magento.com/user-guide/stores/security-session-management.html)。
+[請參閱使用者指南&#x200B;_中的_&#x200B;會話管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management)。
 
-## 記憶體回收組態
+## 垃圾集合配置
 
-若要清除過期的工作階段，系統會根據`gc_probability / gc_divisor`指示詞計算的機率，隨機呼叫`gc` （_記憶體回收_）處理常式。 例如，如果您分別將這些指示詞設為`1/100`，則表示`1%`的機率（每100個要求中&#x200B;_次呼叫記憶體回收的機率_）。
+為了清理過期的會話，系統會根據指令計算`gc_probability / gc_divisor`的概率隨機調用`gc`（_垃圾集合_）處理程式。例如，如果將這些指令`1/100`分別設置為，則表示概率（`1%`_每 100 個請求_&#x200B;調用一次垃圾集合的概率）。
 
-記憶體回收處理常式使用`gc_maxlifetime`指示詞 — 工作階段被視為&#x200B;_記憶體_&#x200B;且可能被清理的秒數。
+垃圾集合處理程式使用 `gc_maxlifetime` 指令，即會話被視為 _垃圾_ 並可能被清理的秒數。
 
-在某些作業系統(Debian/Ubuntu)上，預設`session.gc_probability`指示詞是`0`，可防止記憶體回收處理常式執行。
+在某些操作系統（Debian/Ubuntu）上，預設 `session.gc_probability` 指令是 `0`，這會阻止垃圾集合處理程序運行。
 
-您可以覆寫`<magento_root>/app/etc/env.php`檔案中`php.ini`檔案的`session.gc_`指示：
+您可以覆寫`session.gc_`檔案中檔案中的`php.ini``<magento_root>/app/etc/env.php`指令：
 
 ```php
  'session' => [
@@ -62,4 +62,4 @@ ht-degree: 0%
  ],
 ```
 
-此設定會依流量和商家網站的特定需求而有所不同。
+配置會有所不同，具體取決於商家網站流量和特定需求。

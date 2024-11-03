@@ -2,7 +2,7 @@
 title: 備份及回覆檔案系統、媒體及資料庫
 description: 請依照下列步驟備份和還原Adobe Commerce應用程式。
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 >[!TIP]
 >
->對於雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端指南_&#x200B;中的[快照和備份管理](https://devdocs.magento.com/cloud/project/project-webint-snap.html)。
+>對於雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端指南_&#x200B;中的[快照和備份管理](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)。
 
 ## 啟用備份
 
-備份功能預設為停用。 若要啟用，請輸入下列CLI命令：
+默認情況下，備份功能處於禁用狀態。 要啟用，請輸入以下 CLI 命令：
 
 ```bash
 bin/magento config:set system/backup/functionality_enabled 1
@@ -78,17 +78,17 @@ ulimit -s 65536
 
 >[!WARNING]
 >
->建議您避免在`php.ini`檔案中設定[`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php)的值，因為這會產生未完成且沒有失敗通知的回覆。
+>我們建議您避免在檔中設置的值[`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php)`php.ini`，因為它可能會導致不完全回滾且沒有失敗通知。
 
 ## 備份
 
-命令使用方式：
+命令用法：
 
 ```bash
 bin/magento setup:backup [--code] [--media] [--db]
 ```
 
-指令會執行下列工作：
+該指令執行以下任務：
 
 1. 將商店置於維護模式。
 1. 執行下列其中一個命令選項。

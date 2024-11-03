@@ -4,7 +4,7 @@ description: 如果您未使用報表模組，請將其移除，以最佳化網�
 role: Admin
 feature: Best Practices, Configuration
 exl-id: 8c991b8a-affb-4a9e-9383-671f595ff89e
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 報告設定的最佳實務
 
-如果您的企業不需要報告或動態客戶區段功能，請停用[報告功能](https://docs.magento.com/user-guide/configuration/general/reports.html)以改善商店效能。
+如果您的企業不需要報告或動態客戶區段功能，請停用[報告功能](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/reports)以改善商店效能。
 
 ## 受影響的產品和版本
 
@@ -32,5 +32,5 @@ ht-degree: 1%
 
 ## 其他資訊
 
-- [在Adobe Commerce中產生報告](https://docs.magento.com/user-guide/reports.html)
-- [客戶動態區段](https://docs.magento.com/user-guide/marketing/customer-segments.html)
+- [在Adobe Commerce中產生報告](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)
+- [客戶動態區段](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)

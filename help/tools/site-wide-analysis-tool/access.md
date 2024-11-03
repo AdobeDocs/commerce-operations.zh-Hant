@@ -2,7 +2,7 @@
 title: 如何存取 [!DNL Site-Wide Analysis Tool]
 description: 瞭解如何存取 [!DNL Site-Wide Analysis Tool]
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 18416ae29cee182a5d088069065d73814fc7d860
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 您可以直接從[[!DNL Site-Wide Analysis Tool] 網站](https://supportinsights.adobe.com/commerce)存取[!DNL dashboard] **(僅適用於雲端基礎結構上的Adobe Commerce)**&#x200B;並登入您的Adobe ID，或透過您商店的[!DNL Admin Panel]的[!DNL dashboard]存取。
 
-[!DNL Site-Wide Analysis Tool]服務可在[生產模式](https://docs.magento.com/user-guide/magento/installation-modes.html)中供具有存取使用者[角色資源](https://docs.magento.com/user-guide/system/permissions-user-roles.html)許可權的[!DNL Admin]使用者使用。
+[!DNL Site-Wide Analysis Tool]服務可在[生產模式](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes)中供具有存取使用者[角色資源](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)許可權的[!DNL Admin]使用者使用。
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ### 步驟1：驗證許可權
 
-驗證[!DNL Admin]使用者帳戶是否具有透過其[指派的使用者角色](https://docs.magento.com/user-guide/system/permissions-user-roles.html)存取[!DNL Site-Wide Analysis Tool]的許可權。
+驗證[!DNL Admin]使用者帳戶是否具有透過其[指派的使用者角色](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)存取[!DNL Site-Wide Analysis Tool]的許可權。
 
 >[!IMPORTANT]
 >
