@@ -4,9 +4,9 @@ description: 瞭解如何讓您的Adobe Commerce在雲端基礎結構技術棧�
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 5e3289b328b51eb50354efdc1571283791175b9a
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Pro方案客戶只能在其[整合環境](https://experienceleague.adobe.com/doc
 
 >[!WARNING]
 >
->若未提前48個營業時間通知我們的基礎建設團隊，服務升級就無法推送至生產環境。 這是必要措施，因為我們需要確保我們有一位基礎建設支援工程師在所需時間範圍內更新您的設定，將生產環境的停機時間降到最低。
+>若未提前48個營業時間通知Adobe的基礎建設團隊，服務升級就無法推送至生產環境。 這是必要的，如此Adobe才能確保基礎建設支援工程師在所需時間範圍內更新您的設定，將生產環境的停機時間降到最低。 Adobe建議在服務升級期間將您的網站置於維護模式。
 
 您可以在下列檔案中檢視服務版本清單和生命週期結束日期： [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml)。
 
