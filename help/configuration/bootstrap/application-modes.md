@@ -2,9 +2,9 @@
 title: 應用程式模式
 description: Commerce應用程式可依您的需求以不同模式運作。 檢視可用的應用程式模式詳細清單。
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 5003e8dcbb3736201ea19ebe30d5e56775096157
+source-git-commit: c415c3427f513255b9d4ebe1d24ba4024df21928
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,12 @@ ht-degree: 0%
 
 ## 雲端支援
 
-因為唯讀檔案系統，您無法變更遠端雲端環境中的模式。 請勿嘗試透過修改`app/etc/env.php`檔案來變更模式，因為`ece-tools`封裝會根據多個組態來源覆寫檔案。
+由於唯讀檔案系統，在遠端雲端環境中變更模式有嚴格限制，Adobe Commerce支援無法覆寫該模式。 請勿嘗試透過修改`app/etc/env.php`檔案來變更模式，因為`ece-tools`封裝會根據多個組態來源覆寫檔案。
 
 雲端基礎結構上的Adobe Commerce會在部署期間以&#x200B;_維護_&#x200B;模式自動執行應用程式，讓您的網站離線，直到部署完成。 否則，應用程式會維持在&#x200B;_生產_&#x200B;模式。 請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[部署程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase)。
 
 如果您使用Commerce的Cloud Docker作為開發工具，則可以在&#x200B;_開發人員_&#x200B;模式的Docker環境中部署雲端基礎結構專案，但由於額外的檔案同步處理作業，效能會變慢。 請參閱&#x200B;_適用於Commerce的Cloud Docker指南_&#x200B;中的[部署Docker環境](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode)。
+
 
 ## 預設模式
 
@@ -54,6 +55,10 @@ _預設_&#x200B;模式可讓您在單一伺服器上部署Commerce應用程式�
 - 錯誤處理常式中會擲回例外狀況，而非加以記錄
 - 無法叫用事件訂閱者時，會擲回例外狀況
 - 顯示自訂`X-Magento-*` HTTP要求與回應標頭
+
+>[!NOTE]
+>
+>Adobe Commerce Cloud環境不支援此模式，且Adobe Commerce支援無法協助變更應用程式模式。
 
 ## 生產模式
 
