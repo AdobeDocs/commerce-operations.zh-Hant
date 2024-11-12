@@ -2,9 +2,9 @@
 title: GraphQL應用程式伺服器
 description: 請依照這些指示，在您的Adobe Commerce部署中啟用GraphQL應用程式伺服器。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 620be59a5b66bd4f55997951c59e473ac14a5c21
+source-git-commit: c5446f0273705b158297c0a253054742ec95b44e
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2082'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ git push
 
 1. 從[2.4.7-appserver分支](https://github.com/magento/magento-cloud/tree/2.4.7-appserver)使用雲端範本，在雲端基礎結構上部署Adobe Commerce。
 1. 確認您所有的Commerce自訂專案和擴充功能都與GraphQL Application Server相容。
-1. 確認已為您的執行個體設定`CRYPT_KEY`環境變數。 您可以在雲端專案入口網站（入門UI）上檢視此變數的狀態。
+1. 確認已為您的執行個體設定`CRYPT_KEY`環境變數。 您可以在Cloud Console上檢查此變數的狀態。
 1. 複製您的Commerce Cloud專案。
 1. 將`application-server/.magento/.magento.app.yaml.sample`重新命名為`application-server/.magento/.magento.app.yaml`，並視需要調整.magento.app.yaml中的設定。
 1. 取消註解`project_root/.magento/routes.yaml`檔案中的下列路由設定，將`/graphql`流量重新導向至GraphQL應用程式伺服器。
@@ -174,7 +174,7 @@ git push
 
 在本機執行GraphQL Application Server需要安裝Swoole延伸模組，並對部署的Nginx設定檔進行微幅變更。
 
-### 必要條件
+### 先決條件
 
 在啟用`ApplicationServer`模組之前，請先完成下列步驟：
 
