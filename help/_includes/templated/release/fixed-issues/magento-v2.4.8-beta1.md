@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
+source-git-commit: e05e4e4ef547bfb95fdcc53c2095ef0725b0a6e1
 workflow-type: tm+mt
-source-wordcount: '14732'
+source-wordcount: '14731'
 ht-degree: 0%
 
 ---
@@ -809,10 +809,10 @@ laminas/laminas-validator
    * _修正附註_：系統現在只會在新增具有必要狀態的新國家/地區時，將修改過的國家新增至「一般/區域/州_必要」設定，以防止假設該區域已停用的自訂程式碼發生任何中斷。 以前，新增具有必要狀態的國家會將「一般/地區/州_必要」設定重設為具有必要狀態的預設國家/地區，這可能會中斷業務。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/37796>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38076>
-* _AC-9712_： https://github.com/magento/magento2/issues/37841
-   * _修正附註_：具有複雜`calc`運算式的php &amp; nodejs程式庫(grunt)之間較少編譯的差異
-   * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/b34c0a75>>
-   * _GitHub程式碼貢獻_：在更新wikimedia/less.php：^5.x後，修正php &amp; nodejs程式庫(grunt)之間較少編譯的差異
+* _AC-9712_：具有複雜`calc`運算式的php &amp; nodejs程式庫(grunt)之間較少編譯的差異
+   * _修正附註_：在更新wikimedia/less.php：^5.x之後，修正php與nodejs程式庫(grunt)之間較少編譯的差異
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/37841>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b34c0a75>
 * _ACP2E-2692_：執行部分索引時發生「找不到基底資料表或檢視」錯誤
    * _修正附註_：部分重新索引現在可正確搭配大型變更記錄檔使用，以備次要資料庫連線時使用
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/ba25af8a>
