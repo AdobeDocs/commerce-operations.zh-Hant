@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 8fa763e2c5ec006f638b7265c49f4576a6ab3b32
+source-git-commit: 737c3195b775e5385065fdf0789addfa21aa81e3
 workflow-type: tm+mt
-source-wordcount: '6137'
+source-wordcount: '6151'
 ht-degree: 0%
 
 ---
@@ -652,6 +652,7 @@ ht-degree: 0%
          - [ACSD-60584：為一個網站建立的存取Token可存取其他網站上的資訊](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites.md)
          - [ACSD-61528：使用GraphQL擷取角色未傳回任何結果](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318：&quot;system.log&quot;出現環境模擬巢狀錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
+         - [ACSD-60804：編輯與已刪除公司相關聯的客戶會導致錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
       - v1.1.54 {#v1-1-54}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
       - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
