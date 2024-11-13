@@ -1,7 +1,7 @@
 ---
-source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
+source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
 workflow-type: tm+mt
-source-wordcount: '14792'
+source-wordcount: '14732'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ laminas/laminas-validator
 
 ## 已修正的問題
 
-我們已修正Magento Open Source2.4.8核心程式碼中的254個問題。 此版本中包含的已修正問題子集說明如下。
+我們已修正Magento Open Source2.4.8核心程式碼中的253個問題。 此版本中包含的已修正問題子集說明如下。
 
 ### API
 
@@ -1143,10 +1143,6 @@ laminas/laminas-validator
 * _AC-12128_： Prototype.js安全性弱點修正CVE-2020-27511
    * _修正附註_：系統已更新，以解決Prototype.js 1.7.3中的安全性弱點CVE-2020-27511，進而加強系統的整體安全性。 在此更新之前，系統容易遭受規則運算式拒絕服務(ReDOS)的影響，因為會移除精心製作的HTML標籤。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12128_：
-   * _修正附註_： Prototype.js安全性弱點修正CVE-2020-27511
-   * _GitHub問題_： &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub程式碼貢獻_：系統已更新，以解決Prototype.js 1.7.3中的安全性弱點CVE-2020-27511，進而增強系統的整體安全性。 在此更新之前，系統容易遭受規則運算式拒絕服務(ReDOS)的影響，因為會移除精心製作的HTML標籤。
 * _AC-12189_： Grunt Less使用pub/前置詞作為原始程式集
    * _修正備註_：系統現在會在使用grunt時，針對路徑產生較少/css來源地圖（不含/pub前置詞），因此不需要在Web伺服器設定中進行因應措施。 之前，在原始碼對應路徑中使用/pub首碼時，需要在Web伺服器中指定特定的設定才能正常運作。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38837>
