@@ -1,18 +1,19 @@
 ---
-title: 「MDVA-44147：GraphQL請求未傳回請購單清單」
-description: MDVA-44147修補程式修正GraphQL要求未傳回請購單清單的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14時，即可使用此修補程式。 修補程式ID為MDVA-44147。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
+title: 「MDVA-44147： [!DNL GraphQL] 要求未傳回[!UICONTROL Requisition Lists]」
+description: MDVA-44147修補程式修正 [!DNL GraphQL] 要求未傳回[!UICONTROL Requisition Lists]的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14時，即可使用此修補程式。 修補程式ID為MDVA-44147。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+exl-id: 534c4e45-6521-45c0-ae4e-c60b754f432f
+source-git-commit: fa95ca5ac2f7606386a785fb3b29f56672d555b1
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
-# MDVA-44147： GraphQL請求未傳回請購單清單
+# MDVA-44147： [!DNL GraphQL]要求未傳回[!UICONTROL Requisition Lists]
 
-MDVA-44147修補程式修正GraphQL要求未傳回請購單清單的問題。 安裝[品質修補工具(QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14時，即可使用此修補程式。 修補程式ID為MDVA-44147。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
+MDVA-44147修補程式修正[!DNL GraphQL]要求未傳回[!UICONTROL Requisition Lists]的問題。 安裝[品質修補工具(QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14時，即可使用此修補程式。 修補程式ID為MDVA-44147。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 
 ## 受影響的產品和版本
 
@@ -30,12 +31,12 @@ MDVA-44147修補程式修正GraphQL要求未傳回請購單清單的問題。 �
 
 ## 問題
 
-GraphQL請求未傳回請購單清單。
+[!DNL GraphQL]要求未傳回[!UICONTROL Requisition Lists]。
 
 <u>要再現的步驟</u>：
 
-1. 移至&#x200B;**商店** > **設定** > **設定** > **一般** > **B2B功能**&#x200B;並啟用請購單清單。
-1. 以客戶身分登入，並將產品新增至[請購單清單](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists)。
+1. 移至&#x200B;**商店** > **設定** > **設定** > **一般** > **B2B功能**&#x200B;並啟用&#x200B;**[!UICONTROL Requisition List]**。
+1. 以客戶身分登入，並將產品新增至[[!UICONTROL Requisition List]](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists)。
 1. 建立[客戶權杖](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html)。
 
    <pre>
@@ -51,7 +52,7 @@ GraphQL請求未傳回請購單清單。
       </code>
       </pre>
 
-1. 使用下列查詢，從客戶擷取所有「請購單清單」。 使用值為`Bearer <customer_token>`的&#x200B;**Authorization**&#x200B;標頭。 如需詳細資訊，請參閱開發人員檔案中的[客戶查詢](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html)文章。
+1. 使用以下查詢來擷取客戶的所有[!UICONTROL Requisition Lists]。 使用值為`Bearer <customer_token>`的&#x200B;**Authorization**&#x200B;標頭。 如需詳細資訊，請參閱開發人員檔案中的[客戶查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/)文章。
 
    要求：
 
