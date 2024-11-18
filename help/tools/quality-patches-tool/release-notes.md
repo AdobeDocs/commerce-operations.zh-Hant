@@ -2,7 +2,7 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fb884f895cb03dcc920dc3de9baa63deb8737cd3
+source-git-commit: 3f6093b55c7bbfaf8666438ac1fef8f90432d947
 workflow-type: tm+mt
 source-wordcount: '23125'
 ht-degree: 0%
@@ -68,7 +68,7 @@ ht-degree: 0%
 * **ACSD-61553** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) — 修正將優先順序不同的多個折扣和&#x200B;**[!UICONTROL Maximum Qty Discount is Applied To]**&#x200B;套用至產品時，**[!UICONTROL Cart Price Rule]**&#x200B;折扣計算錯誤的問題。
 * **ACSD-61667** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 改善存貨效能，以建立出貨流程，適用於許多店內取貨的來源。
 * **ACSD-61969** (適用於Adobe Commerce >=2.4.7 &lt;2.4.8) — 修正使用者必須輸入區分大小寫的優惠券代碼，才能與優惠券代碼設定完全相符的問題。
-* 更新修補程式：ACSD-54989、ACSD-60632
+* 已更新的版本： **ACSD-54989**，**ACSD-60632**
 
 ## v1.1.52 {#v1-1-52}
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 * **ACSD-60788** (適用於Adobe Commerce >=2.4.7 &lt;2.4.8) — 修正由於內容安全性原則(CSP)錯誤而無法執行[!DNL Google Tag Manager]的自訂指令碼的問題。
 * **ACSD-61322** (適用於Adobe Commerce >=2.4.6 &lt;2.4.8) — 修正XML Sitemap中仍包含[!UICONTROL Products/Categories]未指派給預設值（一般群組）的[!UICONTROL Shared Catalog]的問題。
 * **ACSD-61366** (適用於Adobe Commerce和Magento Open Source>=2.4.7 &lt;2.4.8) — 修正為DB連線指定連線埠時，必須在主機引數&#x200B;*錯誤中設定*&#x200B;連線埠時，在多個工作失敗的情況下執行`setup:static-content:deploy --jobs 4`命令的問題。
-* 已更新的版本： **ACSD-54989**，**ACSD-60632**
+* 更新修補程式：ACSD-51857、ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
