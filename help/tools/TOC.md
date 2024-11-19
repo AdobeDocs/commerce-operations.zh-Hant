@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: b6ba3f3381c60e0158c85d77f70899f16ad7ca7b
+source-git-commit: f684470add56a13dc7bf898f50a73c792e26673c
 workflow-type: tm+mt
-source-wordcount: '6203'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -660,6 +660,8 @@ ht-degree: 0%
          - [ACSD-61200：修正銷售總額計算中的折扣稅捐補償](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522：名字和姓氏欄位中的電子郵件地址會傳送無效的訂單確認](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
          - [ACSD-61845：請求包含text/html accept標頭時發生錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
+      - v1.1.55 {#v1-1-55}
+         - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
       - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - 命令列工具參考{#cli-reference}
