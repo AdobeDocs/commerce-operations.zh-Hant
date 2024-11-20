@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 0d5eeb691281d7c62aa64a9d8cd042f18504a67f
 workflow-type: tm+mt
-source-wordcount: '6363'
+source-wordcount: '6370'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ _形容詞_
 
 擁有永久實體地點的零售企業，而非僅透過網際網路運作的企業。
 
-對於[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html)和[Order Management](https://omsdocs.magento.com/getting-started/terminology/)，此商店是追蹤產品數量、送貨訂單及支援店內取貨的來源。
+對於[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html)和[Order Management](#oms)，此商店是追蹤產品數量、送貨訂單及支援店內取貨的來源。
 
 _字詞屬性：_
 
@@ -1046,7 +1046,11 @@ _字詞屬性：_
 
 _名詞_
 
-[OMS](https://omsdocs.magento.com)是Adobe的Order Management系統產品。
+OMS是Adobe的Order Management系統產品。
+
+>[!IMPORTANT]
+>
+>Adobe Commerce Order Management (OMS)生命週期已結束，不再受支援。
 
 OMS是彈性且經濟實惠的解決方案，適用於管理、銷售及履行任何銷售管道的存貨。
 OMS提供順暢的客戶體驗，不但可以提升銷售額，同時還能降低成本，並加快上市時間。
@@ -1058,7 +1062,7 @@ OMS功能包括：
 * 更輕鬆、回應更迅速的客戶服務
 * 更佳的客戶體驗和忠誠度
 
-深入瞭解： [OMS快速入門](https://omsdocs.magento.com/en/getting-started/)，[OMS檔案網站](https://omsdocs.magento.com/en/)
+深入瞭解： [封存的OMS檔案網站](https://commerce-docs.github.io/oms-documentation-archive/)
 
 _字詞屬性：_
 
@@ -1279,7 +1283,7 @@ _字詞屬性：_
 
 _名詞_
 
-模組化的內容單位，使用者可將其放在CMS的頁面上，以顯示文字和影像，或執行程式碼片段。
+模組化的內容單位，使用者可將其放在CMS中的頁面上以顯示文字和影像，或執行程式碼片段。
 靜態區塊包含可編輯的內容，可做為產品類別的登入頁面。
 Widget可新增至靜態區塊，以提供其他功能。
 
