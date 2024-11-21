@@ -2,7 +2,7 @@
 title: 翻譯字典和語言套件
 description: 瞭解如何產生翻譯字典和建置語言套件。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 02c69e890b40643781ab8f48c3133527dd79386a
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 0%
@@ -47,9 +47,9 @@ bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--
 
 | 引數 | 值 | 必填？ |
 |--- |--- |--- |
-| `<path to directory to translate>` | 具有可翻譯代碼的目錄的路徑;換句話說，就是包含要翻譯的短語的 PHP、PHTML 或 XML 檔案。<br><br>工具從您輸入的路徑開始搜索，並搜索它包含的所有文件和子目錄。<br><br>如果使用 `-m --magento`，請不要使用此參數。 | 是（字典），否（包）。 |
-| `-m --magento` | 需要從此翻譯字典創建語言包。 如果使用，則搜索包含 bin/magento 的目錄。 此選項將主題或模組添加到字典中的每一行。<br><br>范例如下：「<br><br>No Items Found」，No Items Found“，模組，Magento_Wishlist | 不 |
-| `-o --output="<path>"` | 指定要建立的翻譯字典CSV絕對文件系統路徑和檔名。 您輸入的值區分大小寫。 CSV 檔的名稱必須與區域設置名稱（包括字元的大小寫）完全匹配。<br><br>如果省略此參數，輸出將定向到 stdout。 | 不 |
+| `<path to directory to translate>` | 具有可翻譯程式碼的目錄的路徑；換句話說，就是具有要翻譯之片語的PHP、PHTML或XML檔案。<br><br>工具會從您輸入的路徑開始搜尋，並搜尋它包含的所有檔案和子目錄。<br><br>如果您使用`-m --magento`，請勿使用此引數。 | 是（字典）、否（套件）。 |
+| `-m --magento` | 從此翻譯字典建立語言套件時需要。 若已使用，會搜尋包含bin/magento的目錄。 此選項會將主題或模組新增至字典中的每一行。<br><br>範例如下：<br><br>「找不到專案」、「找不到專案」、模組、Magento_願望清單 | 否 |
+| `-o --output="<path>"` | 指定要建立的翻譯字典CSV檔案的絕對檔案系統路徑和檔案名稱。 您輸入的值區分大小寫。 CSV檔案的名稱必須與地區設定名稱（包括字元的大小寫）完全相符。<br><br>如果省略此引數，輸出會導向至stdout。 | 否 |
 
 >[!INFO]
 >
@@ -61,9 +61,9 @@ bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--
 
 - 僅變更第二欄的內容。 將短語從英文(`US`)翻譯成所要的語言。
 - 建立地區設定的字典時，請使用預設的Commerce字串。
-- 翻譯時，請注意佔位元： `%1`， `%2`
+- 翻譯時，請注意預留位置： `%1`， `%2`
 
-商務使用佔位元插入上下文值; _它們不_ 用於翻譯。 例如：
+Commerce使用預留位置來插入內容值；它們&#x200B;_不_&#x200B;用於翻譯。 例如：
 
 ```text
 Product '%1' has been added to shopping cart.
@@ -94,9 +94,9 @@ Product 'Multimeter-2000' has been added to shopping cart.
 1. [建立目錄和檔案](#create-directories-and-files)。
 1. （選擇性。） [為語言](#configure-multiple-packages-for-a-language)設定多個套件。
 
-### 運行語言包命令
+### 執行語言套件命令
 
-命令用法：
+命令使用方式：
 
 ```bash
 bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <source> <locale>
@@ -132,16 +132,16 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 1. 新增必要的許可證檔案。
 1. 新增指定語言套件相依性的[`composer.json`]。
-1. 註冊語言包 [`registration.php`]
-1. 添加 `language.xml` 元資訊檔，如下一節所述。
+1. 向[`registration.php`]註冊語言套件
+1. 新增`language.xml`中繼資訊檔案，如下節所述。
 
-#### 語言套装language.xml
+#### 語言套件語言.xml
 
-在設定檔中 `language.xml` 聲明語言包時，必須指定此包的語言繼承序列。
+在`language.xml`組態檔中宣告語言套件時，您必須指定此套件的語言繼承順序。
 
-語言繼承使您能夠基於稱為父級的&#x200B;_現有翻譯創建稱為_&#x200B;子&#x200B;_級_&#x200B;的翻譯。子翻譯會覆蓋父翻譯。 但是，如果子翻譯無法上傳或顯示，或者缺少短語或單詞，則 Commerce 將使用父區域設置。 [語言包繼承](#example-of-language-inheritance)的範例。
+語言繼承可讓您根據名為&#x200B;_parent_&#x200B;的現有翻譯，建立名為&#x200B;_子項_&#x200B;的翻譯。 子翻譯會覆寫父翻譯。 但是，如果子翻譯無法上傳或顯示，或缺少短語或單字，Commerce會使用父級地區設定。 [語言套件繼承的範例](#example-of-language-inheritance)。
 
-若要聲明包，請指定以下資訊：
+若要宣告套件，請指定下列資訊：
 
 ```xml
 <?xml version="1.0"?>
@@ -154,10 +154,10 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 </language>
 ```
 
-哪裡：
+其中：
 
-- `code`- 語言包區域設置（必需）
-- `vendor`- 模組的供應商名稱（必填）
+- `code` — 語言套件地區設定（必要）
+- `vendor` — 模組的廠商名稱（必填）
 - `package` — 語言套件名稱（必填）
 - `sort_order` — 當有多個語言套件可供存放區使用時，上傳套件的優先順序
 - `use` — 要繼承字典的父語言套件地區設定
@@ -166,9 +166,9 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 #### 語言繼承範例
 
-假設一個語言包繼承自另外兩個包，並且這些包還具有父包和「祖父」包。
+假設語言套件繼承自其他兩個套件，且這些套件也有父和「祖父」套件。
 
-如果一個語言包繼承自兩個包，則其 `language.xml` 可能如下所示按讚：
+如果語言套件繼承自兩個套件，其`language.xml`可能如下所示：
 
 ```xml
 <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
@@ -181,12 +181,12 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 </language>
 ```
 
-在前面的示例中：
+在上述範例中：
 
-- `language_package_one` 繼承自 `en_au_package` 和 `en_au_package` 繼承自 `en_ie_package`
-- `language_package_two` 繼承自 `en_ca_package` 和 `en_ca_package` 繼承自 `en_us_package`
+- `language_package_one`繼承自`en_au_package`，而`en_au_package`繼承自`en_ie_package`
+- `language_package_two`繼承自`en_ca_package`，而`en_ca_package`繼承自`en_us_package`
 
-如果 Commerce 應用程式 在包中 `en_GB` 找不到字詞或短語，它會按以下序列在其他包中查找：
+如果Commerce應用程式在`en_GB`封裝中找不到字詞或片語，則會依下列順序尋找其他封裝：
 
 1. `parent-package-one/language_package_one`
 1. `<vendorname>/en_au_package`
@@ -195,13 +195,13 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-指定語言包之間的所有繼承可能會導致創建迴圈繼承鏈。 使用 [Magento\Test\Integrity\應用程式\語言\CircularDependencyTest] 測試 來定位和修復此類鏈。
+指定語言套件之間的所有繼承可能會導致建立循環繼承鏈。 使用[Magento\Test\Integrity\App\Language\CircularDependencyTest]測試來尋找並修正這類鏈結。
 
-### 為一種語言配置多個包
+### 針對一種語言設定多個套件
 
-為了説明您使商店更加靈活，您可以在商店中為同一語言上傳多個語言包。 因此，您可以對商店的不同部分使用不同的自定義包，因為系統會從可用於某種語言的所有包中編譯單個包。
+為協助您讓商店更具彈性，您可以在商店中上傳相同語言的多個語言套件。 因此，您可以針對商店的不同部分使用不同的自訂套件，因為系統會從可用于某語言的所有套件中編譯單一套件。
 
-若要為現有語言啟用其他包，請將新包命名為除現有語言代碼名稱之外的任何名稱（以避免混淆）。 在語言包的 `language.xml` 元資訊檔中指定包的配置，如下一節所述。
+若要為現有語言啟用其他套件，請將現有語言代碼名稱以外的任何名稱命名為新的套件（以避免混淆）。 依照下一節所述，在語言套件的`language.xml`中繼資訊檔案中指定套件的設定。
 
 ## 使用翻譯命令的範例
 
@@ -219,9 +219,9 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
    >[!INFO]
    >
-   >CSV檔名必須 _與區域設置完全匹配_ ，包括字元的大小寫。
+   >CSV檔案名稱必須&#x200B;_完全符合_&#x200B;地區設定，包括字元的大小寫。
 
-1. 使用這些指南](#translation-guidelines)翻譯[單詞和短語。
+1. 使用[這些准則](#translation-guidelines)翻譯文字與片語。
 1. 如有必要，請將`xx_YY.csv`複製到`/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n`或模組的主題目錄（視翻譯字典是用於模組還是主題而定）。
 
 ### 範例：建立語言套件
@@ -284,8 +284,8 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
    ```php
    <?php
    /**
-    * Copyright &copy; Magento, Inc. All rights reserved.
-    * See COPYING.txt for license details.
+    * Copyright Adobe
+    * All Rights Reserved.
     */
    
    use Magento\Framework\Component\ComponentRegistrar;
@@ -301,11 +301,10 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
    ```xml
    <?xml version="1.0"?>
-   /**
-   * Copyright &copy; Magento, Inc. All rights reserved.
-   * See COPYING.txt for license details.
-   */
-   
+   <!--
+   Copyright Adobe
+   All Rights Reserved.
+   -->
    <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
        <code>xx_YY</code>
        <vendor>examplecorp</vendor>
@@ -321,7 +320,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 [進一步瞭解語言套件]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
-[寄存 器]: https://developer.adobe.com/commerce/php/development/build/component-registration/
+[註冊]: https://developer.adobe.com/commerce/php/development/build/component-registration/
 [&#39;de_de&#39;]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
 [&#39;composer.json&#39;]: https://developer.adobe.com/commerce/php/development/build/composer-integration/
 [&#39;registration.php&#39;]: https://developer.adobe.com/commerce/php/development/build/component-registration/
