@@ -3,7 +3,7 @@ title: 設定Redis
 description: 取得Redis功能的概觀並開始您的Redis設定。
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Redis功能包括：
 
 您也可以同時啟用RDB和AOF選項。 如需其他詳細資訊，包括持續性選項的優缺點，請參閱[Redis持續性檔案](https://redis.io/topics/persistence)。
 
-對於快取執行個體，請設定執行個體，使其足以儲存整個Commerce快取。 大小需求取決於不同的因素，例如產品數量和商店檢視。 首先，您可以使用檔案系統上快取資料夾的大小。 例如，如果檔案系統上的`var/cache`資料夾為5 GB，請將Redis執行個體設定為至少5 GB才能啟動。 快取執行個體不需要持續性，因為Commerce快取可以復原。 請參閱[Redis快取指南](https://redis.io/docs/manual/eviction/)。
+對於快取執行個體，請設定執行個體，使其足以儲存整個Commerce快取。 大小需求取決於不同的因素，例如產品數量和商店檢視。 首先，您可以使用檔案系統上快取資料夾的大小。 例如，如果檔案系統上的`var/cache`資料夾為5 GB，請將Redis執行個體設定為至少5 GB才能啟動。 快取執行個體不需要持續性，因為Commerce快取可以復原。 請參閱[Redis快取指南](https://redis.io/docs/latest/develop/use/)。
 
 如需進行效能調整，您可以啟用下列非同步刪除的設定。 這些設定不會變更Redis的行為。
 
