@@ -5,7 +5,7 @@ badge: label="貢獻者： objectsource" type="Informative" url="https://objects
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 0%
@@ -81,7 +81,7 @@ GTmetrix是一種可用於壓力測試的工具。 設定GTmetrix來復寫並乘
 
 高流量的網站經常會遇到資料庫瓶頸，主要原因是依賴單一MySQL伺服器。 您可以實作資料庫叢集化來解決這些瓶頸問題，這是一種可改善效能並確保高可用性的分散式架構。
 
-資料庫叢集可讓多個Web節點連線至多個MySQL伺服器，將尖峰流量期間與資料庫相關問題的影響降到最低。 使用Galera Cluster之類的工具，為Commerce網站設定資料庫叢集。 Galera叢集包含在雲端基礎結構](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/technology.html)上部署的[個Adobe Commerce專案。
+資料庫叢集可讓多個Web節點連線至多個MySQL伺服器，將尖峰流量期間與資料庫相關問題的影響降到最低。 使用Galera Cluster之類的工具，為Commerce網站設定資料庫叢集。 Galera叢集包含在雲端基礎結構](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)上部署的[個Adobe Commerce專案。
 
 #### 最佳化MySQL查詢
 
