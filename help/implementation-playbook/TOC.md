@@ -2,10 +2,10 @@
 user-guide-title: 實施行動手冊
 user-guide-description: 了解規劃及實施成功 Adobe Commerce 網站的策略。
 mini-toc-levels: 3
-source-git-commit: 36a2a86cbafab1e4913573b1c8431524ba43dc6a
+source-git-commit: 3f6bf86091885ffa0c557b0c43ce3ff024076a45
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 12%
+source-wordcount: '160'
+ht-degree: 15%
 
 ---
 
@@ -13,56 +13,8 @@ ht-degree: 12%
 # 實施行動手冊 {#implementation-playbook}
 
 - [概觀](overview.md)
-- Commerce {#intro}
-   - [關於Adobe Commerce](intro/about-commerce.md)
-   - [平台開發原則](intro/platform-development.md)
-- 專案範圍{#project-scope}
-   - [知識就是力量](project-scope/knowledge.md)
-   - [主要關係人](project-scope/key-stakeholders.md)
-   - [流程和時間表](project-scope/process-timeline.md)
-   - [交付專案](project-scope/deliverables.md)
-   - [需求檢查清單](project-scope/requirement-checklists.md)
-- 開發{#development}
-   - [平台工具](development/platform-tools.md)
-   - [專案管理工具](development/project-management-tools.md)
-   - [專案實作方法](development/delivery.md)
-   - [品質控制](development/quality-control.md)
-- 規劃與治理{#planning}
-   - [交付與規劃方法](planning/delivery.md)
-   - [責任與擁有權](planning/ownership.md)
-   - [專案治理](planning/governance.md)
 - 架構與整合{#architecture}
    - [企業參考](architecture/enterprise-blueprint.md)
-   - 全域參考架構{#global-reference-architecture}
-      - [概觀](architecture/global-reference/overview.md)
-      - [範例](architecture/global-reference/examples.md)
-      - Composer開發{#composer}
-         - [概觀](architecture/global-reference/composer/overview.md)
-         - [專案結構](architecture/global-reference/composer/project-structure.md)
-         - [提示與秘訣](architecture/global-reference/composer/tips-and-tricks.md)
-- 基礎結構和部署{#infrastructure}
-   - [概觀](infrastructure/overview.md)
-   - 自行託管{#self-hosting}
-      - [概觀](infrastructure/self-hosting/overview.md)
-      - [內部部署基礎結構](infrastructure/self-hosting/on-premises.md)
-      - [安全性概念](infrastructure/self-hosting/security-concepts.md)
-      - [監視遙測和工具](infrastructure/self-hosting/monitoring-tools.md)
-      - [災難回覆概念](infrastructure/self-hosting/disaster-recovery-ideas.md)
-      - [效能提示](infrastructure/self-hosting/performance-tips.md)
-   - 雲端基礎結構{#cloud}
-      - [概觀](infrastructure/cloud/overview.md)
-      - [地區](infrastructure/cloud/regions.md)
-      - [技術](infrastructure/cloud/technology.md)
-      - [安全性與合規性](infrastructure/cloud/security.md)
-   - 效能最佳化{#performance}
-      - [典型問題](infrastructure/performance/optimization.md)
-      - [基準](infrastructure/performance/benchmarks.md)
-      - [Recommendations](infrastructure/performance/recommendations.md)
-- 啟動準備{#launch}
-   - [概觀](launch/overview.md)
-   - [啟動前的步驟](launch/pre-launch-steps.md)
-   - [啟動步驟](launch/launch-steps.md)
-   - [Post-launch步驟](launch/post-launch-steps.md)
 - 維護與支援{#maintenance}
    - [概觀](maintenance/overview.md)
    - [AdobeManaged Services](maintenance/adobe-managed-services.md)
@@ -103,6 +55,7 @@ ht-degree: 12%
       - [保護您的網站與基礎建設](best-practices/launch/security-best-practices.md)
    - 維護{#maintenance}
       - [概觀](best-practices/maintenance/overview.md)
+      - [啟動後支援](best-practices/maintenance/post-launch.md)
       - [稽核前端效能](best-practices/maintenance/frontend-performance.md)
       - [最佳化後端效能](best-practices/maintenance/backend-performance.md)
       - [索引器設定](best-practices/maintenance/indexer-configuration.md)
@@ -114,4 +67,5 @@ ht-degree: 12%
       - [更新服務](best-practices/maintenance/update-services.md)
       - [升級檢查清單](best-practices/maintenance/upgrade-checklist.md)
       - [升級MariaDB的必要條件](best-practices/maintenance/mariadb-upgrade.md)
+- [字彙表](glossary.md)
 - [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

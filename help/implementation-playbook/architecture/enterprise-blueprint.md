@@ -3,9 +3,9 @@ title: 企業參考架構
 description: 瞭解如何使用Adobe最新的可撰寫商務技術實施Adobe Commerce。
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
+source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,10 @@ Adobe Commerce與所有Experience Cloud解決方案整合，以大規模提供[�
 
 >[!NOTE]
 >
->如需更多技術詳細資訊，請參閱[數位體驗藍圖](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview)。
+>如需詳細資訊，請參閱下列資源：
+>
+>- [數位體驗藍圖](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview)，以取得更多技術細節。
+>- 請參閱[個人化客戶體驗](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)。
 
 
 ## 與協力廠商系統整合
@@ -63,6 +66,11 @@ Adobe提供下列開發人員工具，用於建立整合與自訂：
 - [**事件**](https://developer.adobe.com/commerce/extensibility/events/) — 使用自訂事件觸發程式與其他可擴充的開發工具互動。
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) — 使用Webhook自動觸發Commerce與協力廠商系統之間的互動。
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) — 使用商戶適用的新頁面和功能，自訂並增強Commerce Admin。
+- [**整合入門套件**](https://developer.adobe.com/commerce/extensibility/starter-kit/) — 透過參考整合、上線指令碼和標準化架構，加速您的Backoffice整合。
+
+>[!NOTE]
+>
+>請參閱[現代方法：在Adobe Commerce中有效的擴充性](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)。
 
 ## 店面服務
 

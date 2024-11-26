@@ -2,10 +2,10 @@
 title: 作業指南首頁
 description: 瀏覽Adobe Commerce系統管理和營運產品檔案的索引。
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
+source-git-commit: 5a2aae6a2f3b1353457f003460d230db2b57abdd
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 20%
+source-wordcount: '163'
+ht-degree: 7%
 
 ---
 
@@ -27,13 +27,13 @@ ht-degree: 20%
       <p>檢閱Adobe Commerce修補程式和服務的所有發行資訊。</p>
     </div>
   </td>
-  <td valign="top">
-    <a href="../performance/overview.md">
-       <img alt="效能" src="../assets/icons/gauge.svg" width="40"/>
+    <td valign="top">
+    <a href="../implementation-playbook/overview.md">
+      <img alt="實施" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong>效能最佳實務</strong></a>
-      <p>使用這些建議來最佳化Adobe Commerce部署的效能。</p>
+      <a href="../implementation-playbook/overview.md"><strong>實作行動手冊</strong></a>
+      <p>了解規劃及實施成功 Adobe Commerce 網站的策略。</p>
     </div>
   </td>
   <td valign="top">
@@ -45,33 +45,13 @@ ht-degree: 20%
       <p>瞭解Adobe Commerce商家如何負責維護安全的環境。</p>
     </div>
   </td>
-</tr>
-<tr>
-  <td valign="top">
-    <a href="../implementation-playbook/overview.md">
-      <img alt="實施" src="../assets/icons/play.svg" width="40"/>
+    <td valign="top">
+    <a href="../performance/overview.md">
+       <img alt="效能" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>實作行動手冊</strong></a>
-      <p>了解規劃及實施成功 Adobe Commerce 網站的策略。</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../operational-playbook/overview.md">
-       <img alt="作業" src="../assets/icons/refresh.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../operational-playbook/overview.md"><strong>營運行動手冊</strong></a>
-      <p>了解如何讓企業在營運上做好準備，以便經營成功的電子商務網站。</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../commerce-at-scale/overview.md">
-       <img alt="企業" src="../assets/icons/enterprise.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../commerce-at-scale/overview.md"><strong>規模的Commerce</strong></a>
-      <p>了解如何透過 Adobe Experience Manager 使用 Adobe Commerce 大規模提供體驗。</p>
+      <a href="../performance/overview.md"><strong>效能最佳實務</strong></a>
+      <p>使用這些建議來最佳化Adobe Commerce部署的效能。</p>
     </div>
   </td>
 </tr>

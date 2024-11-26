@@ -4,9 +4,9 @@ description: 瞭解開發Adobe Commerce專案的一般最佳實務。
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,6 @@ ht-degree: 0%
 1. 所有開發人員應該使用與（未來）生產伺服器上使用的相同技術棧疊來進行開發和測試。 此技術棧疊中的軟體版本必須與安裝在生產伺服器上的軟體主要和次要版本相符。 如需Adobe Commerce一般技術棧疊的詳細資訊，請參閱[系統需求](../../../installation/system-requirements.md)。
 1. 系統管理員或技術架構師可能會為團隊提供集中維護的本機開發環境，以確保和促進平等和最新的本機環境。
 1. 開發人員和QA工程師必須能夠存取QA環境的命令列、資料庫和記錄檔。 這可能需要VPN連線。
-
-## 編碼標準
-
-1. 所有程式碼都應遵循架構、方法和程式碼標準的慣例。 創意是功能所需，而非形式。
-1. 所有程式碼都應符合[Adobe Commerce架構指南](https://developer.adobe.com/commerce/php/architecture/){target="_blank}。
-1. 所有程式碼都應該遵守[Adobe Commerce編碼標準](https://developer.adobe.com/commerce/php/coding-standards/)。
-1. 所有程式碼都應該遵守[Adobe Commerce技術指導方針](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)。
-1. 所有程式碼都應該實作[Adobe Commerce最佳實務](../phases.md) （如果適用）。
-1. 所有程式碼都應該遵守[PHP-Framework Interoperability Group (FIG)標準](https://www.php-fig.org/)。
-1. 建議儘可能考慮[Adobe Commerce技術願景](https://developer.adobe.com/commerce/php/architecture/technical-vision/)。
-1. 所有與外部系統的整合都應該有可驗證業務流程的整合測試。
-1. 所有模組都應該有測試涵蓋範圍。 要測試確切的專案，應由開發團隊與技術架構師或主要開發人員共同決定。 此判斷應該以質化測量為基礎，而非量化測量；高程式碼涵蓋範圍百分比不是成功的指標，也並不意味著高程式碼品質。 反之，透過評估計畫該部分中的回歸可能性和嚴重性來判斷未涵蓋部分計畫碼的風險。
 
 ## 版本設定
 

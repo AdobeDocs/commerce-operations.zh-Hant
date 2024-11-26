@@ -5,16 +5,16 @@ role: Developer
 feature: Best Practices
 badge: label="由Adobe高級技術架構師Anton Evers提供" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="安東·埃弗斯撰寫"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1251'
 ht-degree: 0%
 
 ---
 
 # 大規模散佈Adobe Commerce修補程式的最佳作法
 
-如果您管理多個Adobe Commerce安裝，[修補](../../../upgrade/patches/apply.md)可能會是一個複雜的程式。 _集中式修正_&#x200B;是[全域參考架構](../../architecture/global-reference/overview.md)的重要部分，也是企業的最佳作法。 它可協助您在所有Adobe Commerce安裝上套用正確的修補程式。 本主題說明如何針對所有型別的Adobe Commerce [修補程式](../../../upgrade/patches/overview.md)達成集中式修補程式散佈。
+如果您管理多個Adobe Commerce安裝，[修補](../../../upgrade/patches/apply.md)可能會是一個複雜的程式。 _集中修補_&#x200B;是企業的最佳作法。 它可協助您在所有Adobe Commerce安裝上套用正確的修補程式。 本主題說明如何針對所有型別的Adobe Commerce [修補程式](../../../upgrade/patches/overview.md)達成集中式修補程式散佈。
 
 >[!NOTE]
 >

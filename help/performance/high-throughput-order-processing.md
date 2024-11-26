@@ -3,9 +3,9 @@ title: 結帳效能最佳實務
 description: 瞭解如何最佳化Adobe Commerce網站上結帳體驗的效能。
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: e4c1832076bb81cd3e70ff279a6921ffb29ea631
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Adobe Commerce中的[結帳](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process)程式是店面體驗的關鍵層面。 它仰賴內建的[購物車](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart)和[結帳](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page)功能。
 
-效能是維持良好使用者體驗的關鍵。 檢閱[效能基準摘要](../implementation-playbook/infrastructure/performance/benchmarks.md)以進一步瞭解效能期望。 您可以為&#x200B;**高輸送量訂單處理**&#x200B;設定下列選項，以最佳化結帳效能：
+效能是維持良好使用者體驗的關鍵。 您可以為&#x200B;**高輸送量訂單處理**&#x200B;設定下列選項，以最佳化結帳效能：
 
 - [AsyncOrder](#asynchronous-order-placement) — 使用佇列以非同步方式處理訂單。
 - [延後總計計算](#deferred-total-calculation) — 延後訂單總計計算，直到結帳開始。

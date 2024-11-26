@@ -3,9 +3,9 @@ title: 保護您的Commerce網站與基礎架構
 description: 在設定、設定和更新Adobe Commerce安裝時，透過實作安全性最佳實務來維護安全性。
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: a00b7b66beb6499f7fb19fda2dfd450799f73728
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -115,10 +115,6 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 
 **內部部署Adobe Commerce**
 
-- [災難回覆概念](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
-- [備份與復原](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
 - [匯出組態設定](../../../configuration/cli/export-configuration.md)
 
    - [匯入組態設定](../../../configuration/cli/import-configuration.md)
@@ -133,7 +129,7 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **使用Web應用程式防火牆** — 分析流量並發現可疑模式，例如使用Web應用程式防火牆傳送至未知IP位址的信用卡資訊。
 
-部署在雲端基礎結構上的Adobe Commerce安裝可以使用內建的WAF服務（可與[Fastly服務整合](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)搭配使用）
+部署在雲端基礎結構上的Adobe Commerce安裝可以使用內建的WAF服務，並與[Fastly服務整合](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)搭配使用
 
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **設定進階密碼安全性設定** — 設定強式密碼，並按照PCI資料安全性標準在8.2.4節中的建議，至少每90天變更一次。請參閱[設定管理員安全性設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)。
 

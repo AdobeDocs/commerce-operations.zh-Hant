@@ -2,7 +2,7 @@
 title: 快速入門內部部署安裝
 description: 請依照下列步驟，在您擁有的基礎設施上安裝Adobe Commerce。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 快速入門內部部署安裝
 
-此頁面上的指示說明如何在[自行託管](../implementation-playbook/infrastructure/self-hosting/overview.md)基礎結構上安裝Adobe Commerce。 如需升級現有安裝的指南，請參閱&#x200B;[_升級指南_](../upgrade/overview.md)。
+本頁上的指示說明如何在自行託管的基礎結構上安裝Adobe Commerce。 如需升級現有安裝的指南，請參閱&#x200B;[_升級指南_](../upgrade/overview.md)。
 
 Adobe使用[撰寫器](https://getcomposer.org/)來管理Adobe Commerce元件及其相依性。 使用Composer來取得Adobe Commerce中繼資料具備下列優點：
 
@@ -25,7 +25,7 @@ Adobe使用[撰寫器](https://getcomposer.org/)來管理Adobe Commerce元件及
 >
 >參與Magento Open Source的開發人員應使用[Git型](https://developer.adobe.com/commerce/contributor/guides/install/)安裝方法。
 
-## 必要條件
+## 先決條件
 
 繼續之前，您必須先執行下列動作：
 
@@ -200,7 +200,7 @@ bin/magento help cache:enable
 
 下表總結了可用的命令。 命令僅以摘要形式顯示。 如需命令的詳細資訊，請按一下「命令」欄中的連結。
 
-| 命令 | 說明 | 必要條件 |
+| 命令 | 說明 | 先決條件 |
 |--- |--- |--- |
 | `magento setup:install` | 安裝應用程式 | 無 |
 | `magento setup:uninstall` | 移除應用程式。 | 已安裝應用程式 |
