@@ -2,7 +2,7 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 9aeaa3faaf0aee1ed2e20cb86362d4246c858a05
+source-git-commit: 68bf1848d4e4724aacf408feab6a3b301e7b0ee3
 workflow-type: tm+mt
 source-wordcount: '6268'
 ht-degree: 0%
@@ -664,9 +664,9 @@ ht-degree: 0%
          - [ACSD-61845：請求包含text/html accept標頭時發生錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
-         - [ACSD-58735：受限制的管理員無法檢視相關網站客戶帳戶上的放棄購物車](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
          - [ACSD-58471：當型錄價格規則已排程時，無法在產品詳細資料頁面上載入動態內容](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
-         - [ACSD-58383：透過 [!DNL REST API]同時退款請求中的重複銷退折讓單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
+         - [ACSD-58383：透過 [!DNL REST API]的同步退款請求複製銷退折讓單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
+         - [ACSD-58735：受限制的管理員無法檢視相關網站客戶帳戶上的放棄購物車](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
       - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - 命令列工具參考{#cli-reference}

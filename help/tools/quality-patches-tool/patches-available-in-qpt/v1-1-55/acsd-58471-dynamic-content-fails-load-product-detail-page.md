@@ -1,15 +1,15 @@
 ---
-title: 「ACSD-58471：排程相關型錄價格規則時，動態內容無法在產品詳細資料頁面上載入」
+title: 「ACSD-58471：排程相關目錄價格規則時，動態內容無法在產品詳細資料頁面上載入」
 description: 套用ACSD-58471修補程式，修正排程相關目錄價格規則時，產品詳細資料頁面上無法載入動態內容的Adobe Commerce問題。
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: a3afb779006de95ac70dff39a737360112220af8
+exl-id: 6ff68b74-67fc-400c-aa79-a1274fd19708
+source-git-commit: 28390659fe180180c9b2c8d16239008a1f8a510b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58471：排程相關型錄價格規則時，無法在產品詳細資料頁面上載入動態內容
 
@@ -28,6 +28,8 @@ ACSD-58471修補程式解決排程相關目錄價格規則時，產品詳細資�
 >此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
+
+已排程目錄價格規則時，產品詳細資料頁面上未載入動態內容。
 
 <u>要再現的步驟</u>：
 

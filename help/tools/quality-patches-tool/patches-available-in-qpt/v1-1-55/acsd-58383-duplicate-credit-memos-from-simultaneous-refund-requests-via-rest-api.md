@@ -1,17 +1,17 @@
 ---
-title: 'ACSD-58383：透過 [!DNL REST API]同時退款請求中的重複銷退折讓單'
+title: 'ACSD-58383：透過 [!DNL REST API]的同步退款請求複製銷退折讓單'
 description: 套用ACSD-58383修補程式以修正Adobe Commerce的問題，也就是透過 [!DNL REST API] 同時執行兩個相同請求而發出退款，會建立重複的銷退折讓單。
 feature: REST, Payments, Returns
 role: Admin, Developer
-source-git-commit: ce3faa5dfc05500dcd672498761b48307064614e
+exl-id: 962970d5-22e7-4bdc-afa0-70e1fa21ecec
+source-git-commit: 28390659fe180180c9b2c8d16239008a1f8a510b
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-58383 Adobe Commerce修補程式：透過[!DNL REST API]同時退款請求中的重複銷退折讓單
+# ACSD-58383 Adobe Commerce修補程式：透過[!DNL REST API]複製同時退款請求中的銷退折讓單
 
 ACSD-58383修補程式修正透過[!DNL REST API]發行退款，且同時執行兩個相同請求時，導致銷退折讓單重複的問題。
 
