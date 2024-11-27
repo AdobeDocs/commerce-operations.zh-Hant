@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 69ae7045ed1ffc5ecf3c5e92f56ea82c0cf8adf6
+source-git-commit: 3c1c16839612aa70b2798ac1aaf0d352a8c4a972
 workflow-type: tm+mt
-source-wordcount: '6276'
+source-wordcount: '6286'
 ht-degree: 0%
 
 ---
@@ -655,6 +655,7 @@ ht-degree: 0%
          - [ACSD-61528：使用GraphQL擷取角色未傳回任何結果](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318：&quot;system.log&quot;出現環境模擬巢狀錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
          - [ACSD-60804：編輯與已刪除公司相關聯的客戶會導致錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
+         - [ACSD-61133：sales_clean_quotes cron會刪除未核准採購單中的報價單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders.md)
          - [ACSD-61667：改善建立出貨時的存貨效能](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
