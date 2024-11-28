@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 1699b863c80febd762c0d34f33f7af72777e82f2
+source-git-commit: d7106427b7c666995e62c6a51377497d01c2a9db
 workflow-type: tm+mt
-source-wordcount: '6301'
+source-wordcount: '6315'
 ht-degree: 0%
 
 ---
@@ -662,6 +662,7 @@ ht-degree: 0%
          - [ACSD-61199： CMS頁面的[!UICONTROL Hierarchy]索引標籤未顯示正確的樹狀結構](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200：修正銷售總額計算中的折扣稅捐補償](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522：名字和姓氏欄位中的電子郵件地址會傳送無效的訂單確認](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
+         - [ACSD-61103：客戶透過API成功登入後，失敗計數不會重設為零](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61103-customer-entity-failure-count-not-reset-after-login.md)
          - [ACSD-61799：套用至報價的多重固定折扣購物車規則的折扣總計計算不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules.md)
          - [ACSD-62485： async.operations.all consumer在建立公司時停止運作](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845：請求包含text/html accept標頭時發生錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
