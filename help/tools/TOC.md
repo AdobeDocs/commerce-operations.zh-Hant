@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 0f593cd529ee1b5d259c091758e141629e785ab8
+source-git-commit: 088b9ce70ba89bad4ea82f60093de0e3bf050cf9
 workflow-type: tm+mt
-source-wordcount: '6365'
+source-wordcount: '6377'
 ht-degree: 0%
 
 ---
@@ -658,8 +658,9 @@ ht-degree: 0%
          - [ACSD-61133：sales_clean_quotes cron會刪除未核准採購單中的報價單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders.md)
          - [ACSD-61667：改善建立出貨時的存貨效能](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
-         - [總覽： [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
-           [ACSD-60267：透過可設定的產品選項新增產品時，FPT套用不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
+         - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+         - [ACSD-61756：由於缺少資料庫索引，AdvancedSalesRule篩選器的效能降低](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter.md)
+         - [ACSD-60267：透過可設定的產品選項新增產品時，FPT套用不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
          - [ACSD-61199： CMS頁面的[!UICONTROL Hierarchy]索引標籤未顯示正確的樹狀結構](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200：修正銷售總額計算中的折扣稅捐補償](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522：名字和姓氏欄位中的電子郵件地址會傳送無效的訂單確認](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
