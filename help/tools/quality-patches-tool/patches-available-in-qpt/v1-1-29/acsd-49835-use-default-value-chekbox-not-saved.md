@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49835：未儲存[!UICONTROL Use Default Value]核取方塊'
+title: acsd-49835：未儲存[!UICONTROL Use Default Value]核取方塊
 description: 套用ACSD-49835修補程式以修正Adobe Commerce問題，該問題導致在多重選取屬性的存放區層級上未正確儲存[!UICONTROL Use Default Value]核取方塊。
 feature: Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e8d5a95f-b17d-49fc-a6d3-e03554667438
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%

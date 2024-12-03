@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51630：大量系統訊息導致管理頁面下載速度變慢」
+title: ACSD-51630：大量系統訊息導致管理頁面下載速度變慢
 description: 套用ACSD-51630修補程式來修正Adobe Commerce效能問題，此問題導致大量系統訊息減緩管理頁面下載速度。
 feature: Admin Workspace, System
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8f39afea-551a-4306-994a-cb8ce5bd5b4a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%

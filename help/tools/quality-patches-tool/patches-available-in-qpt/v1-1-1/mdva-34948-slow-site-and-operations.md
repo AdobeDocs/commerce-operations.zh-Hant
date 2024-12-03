@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-34948：網站速度變慢'
+title: MDVA-34948：網站速度變慢
 description: MDVA-34948 Adobe Commerce修補程式修正網站速度變慢的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1後，即可使用此修補程式。 修補程式ID為MDVA-34948。 請注意，Adobe Commerce 2.4.1版已修正問題。
 feature: Observability, Configuration
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 3c2a2d44-7d60-42da-a0a3-785fb61d571e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%

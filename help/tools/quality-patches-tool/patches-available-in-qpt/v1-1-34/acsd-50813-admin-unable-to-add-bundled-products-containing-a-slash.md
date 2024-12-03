@@ -1,7 +1,8 @@
 ---
-title: 「ACSD-50813：管理員無法新增包含斜線的套件組合產品」
+title: ACSD-50813：管理員無法新增包含斜線的套件組合產品
 description: 套用ACSD-50813修補程式以修正Adobe Commerce效能問題，該問題導致管理員無法透過*Add Products by SKU*功能在SKU中新增包含斜線標籤('/')的套件式產品至管理員訂單。
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ff6fa673-bac1-4ef8-a427-60c2f56068f3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

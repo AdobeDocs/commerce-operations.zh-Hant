@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48362：使用預設送貨地址，而非新送貨地址。'
+title: ACSD-48362：使用預設送貨地址，而非新送貨地址。
 description: 套用ACSD-48362修補程式，修正使用預設送貨地址的Adobe Commerce問題，而非使用可轉讓報價下訂單時的新送貨地址。
 feature: Admin Workspace, B2B, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6f0717a6-1e29-4059-9640-5b92586c36e4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%

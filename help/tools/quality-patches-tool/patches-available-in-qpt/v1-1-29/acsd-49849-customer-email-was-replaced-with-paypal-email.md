@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-49849：客戶電子郵件已由PayPal電子郵件取代」
+title: ACSD-49849：客戶電子郵件已由PayPal電子郵件取代
 description: 套用ACSD-49849修補程式，修正透過GraphQL向PayPal Express下訂單時，客戶電子郵件被PayPal電子郵件取代的Adobe Commerce問題。
 feature: Admin Workspace, Communications, Orders, Payments
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1d7a2bde-892a-4ded-a4b4-9450989c8aee
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%

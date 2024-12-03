@@ -1,9 +1,10 @@
 ---
-title: 「MDVA-38827：客戶透過電子郵件收到訂單出貨錯誤」
-description: 「MDVA-38827修補程式修正了客戶收到包含以下錯誤訊息的訂單運送電子郵件的問題：*很抱歉，產生此內容時發生錯誤*。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.0時，即可使用此修補程式。 修補程式ID為MDVA-38827。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。」
+title: MDVA-38827：客戶透過電子郵件收到訂單出貨錯誤
+description: MDVA-38827修補程式修正客戶收到包含以下錯誤訊息的訂單運送電子郵件的問題： *很抱歉，產生此內容時發生錯誤*。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.0時，即可使用此修補程式。 修補程式ID為MDVA-38827。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: Communications, Marketing Tools, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: ab522c9c-2983-4c2f-b341-4487bdbee34d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%

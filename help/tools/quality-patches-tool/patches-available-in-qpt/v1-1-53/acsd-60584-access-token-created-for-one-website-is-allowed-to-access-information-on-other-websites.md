@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-60584：為一個網站建立的存取Token可存取其他網站上的資訊」
+title: ACSD-60584：為一個網站建立的存取Token可存取其他網站上的資訊
 description: 套用ACSD-60584修補程式，修正一個網站上為使用者建立的存取Token可存取或變更其他網站上的客戶資訊的問題。
 feature: Customers, GraphQL
 role: Admin, Developer
-source-git-commit: eba4a8fd7bbf52fbc4295feab0d5bb79e7383b66
+exl-id: ea30ba92-4b7b-44f9-a1b1-97946061d9e6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%

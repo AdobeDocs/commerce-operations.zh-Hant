@@ -1,7 +1,8 @@
 ---
-title: 「ACSD-51907：受限制的管理員使用者無法建立離線退款的銷退折讓單」
+title: ACSD-51907：受限制的管理員使用者無法建立離線退款的銷退折讓單
 description: 套用ACSD-51907修補程式以修正Adobe Commerce限制管理員使用者無法以離線退款建立銷退折讓單的問題。
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1c44d99b-7633-4768-b7e7-332f3666a5d9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%

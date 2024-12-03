@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-49042：無法從店面訂購無限延期交貨的產品」
+title: ACSD-49042：無法從店面訂購無限延期交貨的產品
 description: 套用ACSD-49042修補程式來修正Adobe Commerce問題，此問題導致無法從店面訂購無限延期交貨的產品。
 feature: Admin Workspace, Orders, Products, Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b94d06c0-806a-40be-bcd4-d6b8e5e474c3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%

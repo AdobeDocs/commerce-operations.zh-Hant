@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-53378：為擁有大量通訊錄的客戶提供更優異的結帳體驗」
+title: ACSD-53378：為擁有豐富通訊錄的客戶提供更優異的結帳體驗
 description: 套用ACSD-53378修補程式，修正因大量客戶地址磁碟區而造成效能問題的Adobe Commerce問題。
 feature: Customers, Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 699d09fe-872f-44d3-88bb-b5b585e15067
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

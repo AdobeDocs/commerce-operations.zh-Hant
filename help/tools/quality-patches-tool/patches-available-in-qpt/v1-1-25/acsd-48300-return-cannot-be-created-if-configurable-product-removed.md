@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48300：如果移除可設定的產品，則無法建立傳回'
+title: ACSD-48300：如果移除可設定的產品，則無法建立傳回
 description: 套用ACSD-48300修補程式以修正移除可設定產品時無法建立傳回的Adobe Commerce問題。
 feature: Admin Workspace, Configuration, Orders, Products, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 50139364-e2ea-47a8-9bca-09876dd0e70d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

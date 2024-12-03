@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51845：無法透過非同步大量 [!DNL API]更新具有層級價格與不同屬性集的後續產品」
+title: ACSD-51845：無法透過非同步大量 [!DNL API]更新具有階層價格與不同屬性集的後續產品
 description: 套用ACSD-51845修補程式以修正Adobe Commerce問題，此問題導致您無法透過非同步大量 [!DNL REST API]以階層價格及不同屬性集更新後續產品。
 feature: REST, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 83d97946-83da-4c1b-8f2a-21a64ee84e93
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'B2B-2674：新增快取功能至customAttributeMetadata GraphQL查詢'
+title: B2B-2674：新增快取功能至customAttributeMetadata GraphQL查詢
 description: 套用B2B-2674修補程式以新增快取功能至customAttributeMetadata GraphQL查詢。
 feature: Attributes, B2B, Cache, GraphQL
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b49633f3-b144-405f-a21d-726e222a7bfe
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

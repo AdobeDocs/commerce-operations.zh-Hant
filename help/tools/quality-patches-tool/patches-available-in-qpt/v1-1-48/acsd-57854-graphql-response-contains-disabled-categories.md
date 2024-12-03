@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-57854： *GraphQL*回應包含停用的類別，這些類別不應列在類別彙總中」
+title: ACSD-57854： *GraphQL*回應包含停用的類別，這些類別不應列在類別彙總中
 description: 套用ACSD-57854修補程式以修正Adobe Commerce問題，其中的*GraphQL*回應包含不應列在類別彙總中的停用類別。
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 216aad2a-f470-49f9-b8ca-79107ca07891
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

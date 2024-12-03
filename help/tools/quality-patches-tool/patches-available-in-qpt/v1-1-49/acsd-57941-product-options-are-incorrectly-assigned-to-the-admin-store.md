@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-57941：產品選項未正確指派給管理存放區」
+title: ACSD-57941：產品選項未正確指派給管理存放區
 description: 套用ACSD-57941修補程式以修正Adobe Commerce產品選項未正確指派給管理員存放區（而非其個別存放區）的問題。
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a78c1797-c366-4931-b036-966d3dcf59bb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%

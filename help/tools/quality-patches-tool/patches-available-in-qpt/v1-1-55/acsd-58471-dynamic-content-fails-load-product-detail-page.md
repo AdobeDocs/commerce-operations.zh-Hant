@@ -1,5 +1,5 @@
 ---
-title: 「ACSD-58471：排程相關目錄價格規則時，動態內容無法在產品詳細資料頁面上載入」
+title: ACSD-58471：排程相關型錄價格規則時，無法在產品詳細資料頁面上載入動態內容
 description: 套用ACSD-58471修補程式，修正排程相關目錄價格規則時，產品詳細資料頁面上無法載入動態內容的Adobe Commerce問題。
 feature: Catalog Management
 role: Admin, Developer

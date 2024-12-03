@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49748：無法傳送電子郵件邀請'
+title: ACSD-49748：無法傳送電子郵件邀請
 description: 套用ACSD-49748修補程式以修正使用者無法傳送電子郵件邀請的Adobe Commerce問題。
 feature: Admin Workspace, Communications, Marketing Tools
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 03dad66c-4691-421e-8c80-eca12c60175c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -60,4 +61,3 @@ ACSD-49748修補程式修正使用者無法傳送電子郵件邀請的問題。 
 
 * [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)的新工具。
 * [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
-

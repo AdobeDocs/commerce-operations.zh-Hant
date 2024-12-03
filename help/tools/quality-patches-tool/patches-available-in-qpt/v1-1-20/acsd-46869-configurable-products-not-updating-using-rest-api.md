@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-46869：可設定的產品未在結帳時使用REST API進行更新」
+title: ACSD-46869：可設定的產品未在簽出時使用REST API進行更新
 description: ACSD-46869修補程式修正了可設定產品在結帳時未使用REST API更新的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20後，即可使用此修補程式。 修補程式ID為ACSD-46869。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%

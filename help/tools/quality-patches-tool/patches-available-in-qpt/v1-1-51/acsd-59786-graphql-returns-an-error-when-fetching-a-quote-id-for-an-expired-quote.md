@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-59786：為已到期的報價擷取「quote_id」時，GraphQL傳回錯誤」
+title: ACSD-59786：為已到期的報價擷取「quote_id」時，GraphQL傳回錯誤
 description: 套用ACSD-59786修補程式以修正Adobe Commerce問題，該問題導致GraphQL查詢在擷取過期報價的「quote_id」時傳回錯誤。
 feature: GraphQL, Quotes, Companies
 role: Admin, Developer
-source-git-commit: fec2ee4a047d8b33fa1cb3b2c4d9364f925fa028
+exl-id: 3c7aaa99-a2e0-44fe-9426-b24095615915
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%

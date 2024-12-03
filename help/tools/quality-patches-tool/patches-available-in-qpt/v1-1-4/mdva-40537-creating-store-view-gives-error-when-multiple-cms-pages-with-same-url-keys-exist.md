@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-40537：當數個CMS頁面具有相同的URL金鑰時，建立存放區檢視會發生錯誤。'
+title: MDVA-40537：當數個CMS頁面具有相同的URL金鑰時，建立存放區檢視會發生錯誤。
 description: MDVA-40537修補程式修正使用者建立存放區檢視時，若多個CMS頁面具有相同URL金鑰會發生錯誤的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4時，即可使用此修補程式。 修補程式ID為MDVA-40537。 請注意，問題已在Adobe Commerce 2.4.1中修正。
 feature: CMS
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 10c3d935-dbc9-4033-85a1-041b8af74d78
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%

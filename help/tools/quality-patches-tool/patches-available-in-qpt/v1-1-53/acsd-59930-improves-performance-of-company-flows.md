@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-59930：改善公司流程的效能」
+title: ACSD-59930：改善公司流程的效能
 description: 套用ACSD-59930修補程式可解決Adobe Commerce問題，其中建立、儲存或刪除通訊錄中具有*1000+*位址之管理員的公司時，管理面板中會顯示*Timeout*錯誤。
 feature: Customers, B2B
 role: Admin, Developer
-source-git-commit: bff014ede6ab7e8e72700814bb4edda2e733557a
+exl-id: eaa6c78d-13e3-439d-90f7-70c1c96c3197
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

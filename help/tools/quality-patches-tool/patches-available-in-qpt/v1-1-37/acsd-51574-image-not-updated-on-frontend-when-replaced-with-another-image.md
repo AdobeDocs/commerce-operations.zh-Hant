@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51574：影像被其他影像取代時未在前端更新'
+title: ACSD-51574：影像被其他影像取代時，前端未更新
 description: 套用ACSD-51574修補程式，以修正Adobe Commerce將影像取代為其他影像後未在前端更新影像的問題。
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 199674fc-c3b3-4fee-9061-f0546833c1cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%

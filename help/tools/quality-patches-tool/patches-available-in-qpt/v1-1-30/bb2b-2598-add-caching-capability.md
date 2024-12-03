@@ -1,9 +1,10 @@
 ---
-title: 「BB2B-2598：新增storeConfig、貨幣、國家/地區、availableStores GraphQl查詢的快取功能」
+title: BB2B-2598：新增快取功能以儲存storeConfig、貨幣、國家/地區、availableStores GraphQl查詢
 description: 套用BB2B-2598修補程式，將快取功能新增至storeConfig、貨幣、國家/地區、以及availableStores GraphQl查詢。
 feature: B2B, GraphQL, Cache
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b842fab4-d2c0-4ef1-be13-182f09015cd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

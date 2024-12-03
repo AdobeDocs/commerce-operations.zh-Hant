@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-47054：預覽內容速度變慢，因為所有存放區都會重新索引'
+title: ACSD-47054：預覽內容速度變慢，因為所有存放區都已重新索引
 description: 套用ACSD-47054修補程式以修正預覽頁面因所有存放區重新索引而載入緩慢的Adobe Commerce問題。
 feature: Page Content
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bfbda95a-354b-4b67-8081-84aefbbd7cb4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%

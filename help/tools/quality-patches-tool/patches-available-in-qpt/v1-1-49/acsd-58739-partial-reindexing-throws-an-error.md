@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-58739：部分重新索引擲回錯誤'
+title: ACSD-58739：部分重新索引擲回錯誤
 description: 套用ACSD-55241修補程式，修正部分重新索引擲回錯誤的Adobe Commerce問題。
 feature: Inventory, Products
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%

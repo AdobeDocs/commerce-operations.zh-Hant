@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-50949：與SKU篩選器搭配使用時，進階搜尋中的價格篩選器沒有傳回正確結果'
+title: ACSD-50949：與SKU篩選器搭配使用時，進階搜尋中的價格篩選器不會傳回正確結果
 description: 套用ACSD-50949修補程式來修正Adobe Commerce問題，該問題導致在搭配SKU篩選器使用時，進階搜尋中的價格篩選器無法傳回正確結果。
 feature: Orders, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 89e54940-e763-4554-8641-a162516bcabd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 1%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54040：啟用B2B模組時，順序詳細資料中的[!UICONTROL Created]欄位為空白'
+title: ACSD-54040：啟用B2B模組時，順序詳細資料中的[!UICONTROL Created]欄位為空白
 description: 套用ACSD-54040修補程式以修正Adobe Commerce的問題，亦即啟用B2B模組時，訂單詳細資料頁面上的[!UICONTROL Created]欄位為空白。
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09fc1e0f-2e02-4cfc-9a7a-7c6aacd9fee0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

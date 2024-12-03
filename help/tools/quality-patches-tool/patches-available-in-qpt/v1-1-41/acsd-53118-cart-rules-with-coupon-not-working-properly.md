@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-53118：含抵用券的購物車規則無法正常運作」
+title: ACSD-53118：包含抵用券的購物車規則無法正常運作
 description: 套用ACSD-53118修補程式以修正當購物車中的產品具有空白比對屬性時，使用優惠券代碼套用購物車價格規則的Adobe Commerce問題。
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8957790e-c22b-4a25-939b-94d7a9fb1cc7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%

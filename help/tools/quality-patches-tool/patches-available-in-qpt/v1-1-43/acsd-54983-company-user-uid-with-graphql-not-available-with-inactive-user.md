@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-54983：具有GraphQL的公司使用者UID不適用於非作用中使用者」
+title: ACSD-54983：具有GraphQL的公司使用者UID不適用於非作用中的使用者
 description: 套用ACSD-54983修補程式以修正Adobe Commerce問題，即當使用者狀態設為非使用中時，無法取得具有GraphQL要求的公司使用者UID。
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b188270f-5454-41c9-8370-f4c396095297
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

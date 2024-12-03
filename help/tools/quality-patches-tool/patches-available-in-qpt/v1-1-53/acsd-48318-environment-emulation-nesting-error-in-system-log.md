@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-48318：『system.log』中的環境模擬巢狀錯誤」
+title: ACSD-48318： 'system.log'中的環境模擬巢狀錯誤
 description: 套用ACSD-48318修補程式以修正Adobe Commerce中每次傳送發票電子郵件時出現錯誤訊息*main.ERROR：不允許環境模擬巢狀結構*的問題。
 feature: System, Orders
 role: Admin, Developer
-source-git-commit: 94b68d18bc46065b5803a2eb88f0e844f71f0386
+exl-id: 24af18de-80dd-4e0a-bdf9-5b9c075fc608
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%

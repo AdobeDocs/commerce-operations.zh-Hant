@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54966：修正訂單失敗後重複使用優惠券代碼'
+title: ACSD-54966：修復在訂單失敗後重複使用優惠券代碼的問題
 description: 套用ACSD-54966修補程式以修正Adobe Commerce問題，防止在先前失敗的訂單後，重複使用每個促銷和購物車限制的優惠券代碼。
 feature: Promotions/Events, Shopping Cart, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e08062e5-62ff-4da6-918f-896af36edccc
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

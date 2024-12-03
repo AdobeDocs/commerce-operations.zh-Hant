@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-54885：管理員以客戶身分登入時，在多個地址簽出期間發生例外狀況」
+title: ACSD-54885：當管理員以客戶身分登入時，在多個地址簽出期間發生例外狀況
 description: 套用ACSD-54885修補程式來修正Adobe Commerce問題，該問題發生在管理員使用*[!UICONTROL Login as Customer]*功能時多個位址簽出期間發生錯誤。
 feature: Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c146bc2a-2df1-4825-9cfc-69e04095b3c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%

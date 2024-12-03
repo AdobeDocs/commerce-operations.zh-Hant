@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-47497：遺失存放區/設定/服務[!UICONTROL OAuth]的ACL'
+title: ACSD-47497：遺失存放區/設定/服務[!UICONTROL OAuth]的ACL
 description: 為特定角色設定了許可權，而您無法定義設定區段的存取權時，請套用ACSD-47497修補程式以修正Adobe Commerce問題。
 feature: Configuration, Identity Management, Services
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4dbbd7df-f34b-4db8-a207-3de40fb39c6f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

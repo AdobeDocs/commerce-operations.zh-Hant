@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-53790：可透過Rest API為單一產品建立多個RMA」
+title: ACSD-53790：可透過Rest API為單一產品建立多個RMA
 description: 套用ACSD-53790修補程式以修正Adobe Commerce問題，亦即您可透過Rest API為單一產品建立多個RMA。
 feature: REST, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7feb29bd-cd81-4d84-b572-53f625743883
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%

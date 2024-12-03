@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-49433：在購物車中顯示為禮品卡小計的預設金額」
+title: ACSD-49433：在購物車中顯示為禮品卡小計的預設金額
 description: 套用ACSD-49433修補程式以修正Adobe Commerce問題，該問題導致預設金額在購物車中顯示為金額未結禮品卡的小計。
 feature: Admin Workspace, Gift, Orders, Shopping Cart
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 22691e35-0491-4935-8e7c-148900706491
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%

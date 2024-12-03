@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-43983：設為「個別不可見」的產品會出現在搜尋結果中'
+title: MDVA-43983：設為「個別不可見」的產品會出現在搜尋結果中
 description: MDVA-43983修補程式可解決設定為「無法個別顯示」的產品仍會出現在目錄進階搜尋結果中的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14時，即可使用此修補程式。 修補程式ID為MDVA-43983。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: Catalog Management, Products, Search
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: d494d263-016b-43fd-aa87-0d74eadc4a6a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

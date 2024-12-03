@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52815：非預設來源之數量欄位的輸入欄位最多只支援6位數'
+title: ACSD-52815：非預設來源之數量欄位的輸入欄位最多只支援6位數
 description: 套用ACSD-52815修補程式，修正Adobe Commerce效能問題，非預設來源的數量欄位輸入欄位最多只支援6位數，預設庫存則支援8位數。
 feature: Inventory, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d863af1f-8a7f-4a43-893e-54525ab68cd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-50234：使用 [!DNL PayPal]下訂單的確認電子郵件中的客戶名稱不正確'
+title: ACSD-50234：使用 [!DNL PayPal]下訂單的確認電子郵件中的客戶名稱不正確
 description: 套用ACSD-50234修補程式以修正使用 [!DNL PayPal]下訂單的確認電子郵件中客戶名稱顯示不正確的Adobe Commerce問題。
 feature: Admin Workspace, Communications, Orders, Payments
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9a8a7cef-0166-4b4b-96a0-87fd4f1a0ef3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%

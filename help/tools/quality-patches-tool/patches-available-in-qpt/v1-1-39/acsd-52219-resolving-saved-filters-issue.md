@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-52219：解決書籤檢視切換中的管理員格線篩選問題」
+title: ACSD-52219：解決書籤檢視切換中的管理員格線篩選問題
 description: 套用ACSD-52219修補程式，修正Adobe Commerce中當經常在書籤檢視之間切換時，管理員格線的已儲存篩選器無法正常運作的問題。
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3f1af6ba-88a0-480c-b16e-c00c655e346f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51892：設定檔案載入多次的效能問題'
+title: ACSD-51892：設定檔案載入多次的效能問題
 description: 套用ACSD-51892修補程式，修正部署期間設定檔案載入多次的Adobe Commerce效能問題。
 feature: Observability
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ef3d3b85-b6a0-4037-95c0-e84125fa9088
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

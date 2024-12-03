@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-46809：使用者指派大量產品來源時發生錯誤」
+title: ACSD-46809：使用者指派大量產品來源時發生錯誤
 description: 套用ACSD-46809修補程式以修正使用者在指派大量產品來源時收到錯誤的Adobe Commerce問題。
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4225f49b-84a1-4641-a05b-ba6ada6e83be
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%

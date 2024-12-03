@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53722：隨附的產品選項價格變更為$0'
+title: ACSD-53722：隨附的產品選項價格變更為$0
 description: 套用ACSD-53722修補程式以修正Adobe Commerce問題，此問題發生在不同範圍的排程更新生效時，隨附產品選項的價格會變更為$0。
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2e974a6a-0c79-442f-9b45-b4edf831a052
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

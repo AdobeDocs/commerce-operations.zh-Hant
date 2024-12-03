@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-60788：由於CSP錯誤， [!DNL Google Tag Manager] 的自訂指令碼未執行」
+title: ACSD-60788：由於CSP錯誤， [!DNL Google Tag Manager] 的自訂指令碼未執行
 description: 套用ACSD-60788修補程式以修正Adobe Commerce問題，該問題導致 [!DNL Google Tag Manager] 的自訂指令碼因內容安全性原則(CSP)錯誤而無法執行。
 feature: Security
 role: Admin, Developer
-source-git-commit: d1c643da36a200c6fb0a17139b12b6b91d9568e1
+exl-id: 3392da76-86cb-4357-8658-c95d914a5829
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

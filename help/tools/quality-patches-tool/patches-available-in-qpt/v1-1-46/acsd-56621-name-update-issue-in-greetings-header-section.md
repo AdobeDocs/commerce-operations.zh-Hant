@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56621：更新後的名稱未顯示在公司管理員使用者的問候語標題中'
+title: ACSD-56621：更新後的名稱未顯示在公司管理員使用者的問候語標題中
 description: 套用ACSD-56621修補程式以修正Adobe Commerce問題，該問題導致更新後的公司管理員使用者名字和姓氏未反映在問候語標題區段中。
 feature: Companies, B2B, User Account
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 739c1c8c-e079-4ad7-be97-7c60b0347e12
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%

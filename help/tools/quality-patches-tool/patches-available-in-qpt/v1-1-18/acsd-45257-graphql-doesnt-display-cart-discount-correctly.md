@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-45257：GraphQL未正確顯示購物車折扣」
+title: ACSD-45257： GraphQL未正確顯示購物車折扣
 description: ACSD-45257修補程式修正GraphQL未正確顯示購物車折扣的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18後，即可使用此修補程式。 修補程式ID為ACSD-45257。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 3d546768-7f7e-4724-a6d7-c88ca6b67e8c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-40311：如果已設定自訂管理路徑，登入Admin後會出現「安全性或表單金鑰無效」錯誤'
-description: 「MDVA-40311修補程式修正管理員使用者收到錯誤訊息的問題：*無效的安全性或表單金鑰。 如果已設定自訂管理路徑且啟用秘密金鑰，請在登入管理員後重新整理頁面*。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7時，即可使用此修補程式。 修補程式ID為MDVA-40311。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
+title: MDVA-40311：如果已設定自訂管理路徑，登入Admin後會出現「無效的安全性或表單金鑰」錯誤
+description: MDVA-40311修補程式修正管理員使用者收到錯誤訊息：*無效安全性或表單金鑰的問題。 如果已設定自訂管理路徑且啟用秘密金鑰，請在登入管理員後重新整理頁面*。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7時，即可使用此修補程式。 修補程式ID為MDVA-40311。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: Admin Workspace, Compliance, Security
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: dce4914b-e32e-4af0-be24-e55680191fa3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%

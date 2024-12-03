@@ -1,15 +1,15 @@
 ---
-title: 「ACSD-61103：客戶透過API成功登入後，失敗計數不會重設為零」
+title: ACSD-61103：客戶透過API成功登入後，失敗計數不會重設為零
 description: 套用ACSD-61103修補程式來修正Adobe Commerce問題，即客戶透過API端點成功登入後，「customer_entity」表格中的失敗計數未重設為零。
 feature: GraphQL, REST, Customers
 role: Admin, Developer
-source-git-commit: d53b747c3b2021e842647de5371a5f0f2a760f09
+exl-id: 9f5aac1f-c8a3-4255-8ebc-2268283b3384
+source-git-commit: acb5ff9656d7391de1e9b936909ce5a8a73d5d67
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61103：客戶透過API成功登入後，失敗計數不會重設為零
 
@@ -61,4 +61,3 @@ ACSD-61103修補程式解決客戶透過API端點成功登入後，`customer_ent
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
-

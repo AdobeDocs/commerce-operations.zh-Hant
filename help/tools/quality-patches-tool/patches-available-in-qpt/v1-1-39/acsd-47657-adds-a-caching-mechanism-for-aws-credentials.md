@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-47657：新增AWS憑證的快取機制'
+title: ACSD-47657：新增AWS憑證的快取機制
 description: 套用ACSD-47657修補程式，透過新增Adobe Commerce憑證的快取機制，修正AWS S3高負載請求期間發生的AWS問題。
 feature: Cache
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2851d511-a9b0-49f8-94ba-ad63d2397ca5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%

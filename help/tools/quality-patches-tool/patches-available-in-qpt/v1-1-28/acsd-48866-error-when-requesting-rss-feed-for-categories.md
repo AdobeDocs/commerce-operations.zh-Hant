@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-48866：請求類別的RSS摘要時發生錯誤」
+title: ACSD-48866：請求類別的RSS摘要時發生錯誤
 description: 套用ACSD-48866修補程式以修正請求類別的RSS摘要時發生錯誤的Adobe Commerce問題。
 feature: Admin Workspace, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f278a90f-f30c-401f-a544-713c89eb208a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%

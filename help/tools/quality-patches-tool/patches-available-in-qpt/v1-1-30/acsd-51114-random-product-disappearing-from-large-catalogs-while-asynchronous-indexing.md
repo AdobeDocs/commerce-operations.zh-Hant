@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51114：啟用非同步索引時，隨機產品從大型目錄中消失」
+title: ACSD-51114：啟用非同步索引時，隨機產品從大型目錄中消失
 description: 套用ACSD-51114修補程式來修正Adobe Commerce問題：啟用非同步索引時，大型目錄中的隨機產品會消失。
 feature: Catalog Management, Categories, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ab1816ef-fb09-46e7-8102-32865f806874
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

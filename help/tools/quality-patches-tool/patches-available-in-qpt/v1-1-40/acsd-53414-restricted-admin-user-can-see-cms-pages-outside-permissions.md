@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-53414：受限制的管理員使用者可以看到其許可權範圍以外的CMS頁面」
+title: ACSD-53414：受限制的管理員使用者可檢視其許可權範圍以外的CMS頁面
 description: 套用ACSD-53414修補程式以修正Adobe Commerce問題，該問題導致受限制的管理員使用者無法看到其許可權範圍以外的CMS頁面。
 feature: CMS
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 86658336-679b-4fe0-9d26-56064ff0c604
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%

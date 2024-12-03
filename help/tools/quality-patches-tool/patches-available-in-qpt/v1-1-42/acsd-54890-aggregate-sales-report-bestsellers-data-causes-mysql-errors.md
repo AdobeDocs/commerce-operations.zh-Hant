@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-54890： ''aggregate_sales_report_bestsellers_data''導致 [!DNL MySQL] 個錯誤'''
+title: ACSD-54890： 'aggregate_sales_report_bestsellers_data'導致 [!DNL MySQL] 個錯誤
 description: 套用ACSD-54890修補程式以修正Adobe Commerce問題，該問題導致「aggregate_sales_report_bestsellers_data」因為「/tmpdisk」空間不足而發生 [!DNL MySQL] 錯誤。
 feature: Attributes
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 21f926e0-a4f4-45ae-9397-4885a85db947
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%

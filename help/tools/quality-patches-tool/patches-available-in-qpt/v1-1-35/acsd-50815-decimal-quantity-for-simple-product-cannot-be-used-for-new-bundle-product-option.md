@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-50815：簡單產品的小數數量無法用於新的套件產品選項」
+title: ACSD-50815：簡單產品的小數數量無法用於新的套件產品選項
 description: 套用ACSD-50815修補程式，修正Adobe Commerce中簡單產品的小數點數量無法用於新捆綁產品選項的問題。
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5cd69abe-bd88-497d-9696-804c787b73ef
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%

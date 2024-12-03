@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-42326：工作階段逾時後，客戶在結帳時發生錯誤'
+title: MDVA-42326：工作階段逾時後，客戶在結帳時發生錯誤
 description: MDVA-42326修補程式可解決客戶在工作階段逾時後結帳時發生錯誤（即使已啟用永久購物車）的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8時，即可使用此修補程式。 修補程式ID為MDVA-42326。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: Checkout, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f9ef6778-298b-4ff9-9c4b-b3f47bb04b67
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%

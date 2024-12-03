@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52398：嘗試更新套件產品的數量時，無法使用要求的數量'
+title: ACSD-52398：嘗試更新套件產品的數量時，無法使用要求的數量
 description: 套用ACSD-52398修補程式以修正嘗試更新店面購物車中捆綁產品的數量時，無法取得請求數量的Adobe Commerce問題。
 feature: Shopping Cart, Quotes, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 75fa5f96-22e7-40a2-8b8a-f44452e5124d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

@@ -1,5 +1,5 @@
 ---
-title: 「MDVA-44147： [!DNL GraphQL] 要求未傳回[!UICONTROL Requisition Lists]」
+title: MDVA-44147： [!DNL GraphQL] 要求未傳回[!UICONTROL Requisition Lists]
 description: MDVA-44147修補程式修正 [!DNL GraphQL] 要求未傳回[!UICONTROL Requisition Lists]的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14時，即可使用此修補程式。 修補程式ID為MDVA-44147。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: B2B, GraphQL
 role: Admin

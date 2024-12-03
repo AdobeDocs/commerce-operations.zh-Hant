@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-48204：根據*是/否*屬性建立的型錄價格規則不考慮選取的範圍」
+title: ACSD-48204：根據*是/否*屬性建立的型錄價格規則不會考慮選取的範圍
 description: 套用ACSD-48204修正程式，修正根據*是/否*屬性建立的型錄價格規則未考慮所選範圍的Adobe Commerce問題。
 feature: Admin Workspace, Attributes, Catalog Management, Orders, Price Rules
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 69f2b35c-856e-4f96-ae2f-fb0c64d5eb94
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%

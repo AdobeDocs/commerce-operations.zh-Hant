@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-47937：由於應用程式層級的快取，未傳送價格下降通知'
+title: ACSD-47937：由於應用程式層級的快取，未傳送降價通知
 description: 套用ACSD-47937修補程式，修正Adobe Commerce因應用程式層級的快取而不一定傳送降價通知的問題。
 feature: Admin Workspace, Cache, Orders
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 91d8e677-c2bb-4230-bbe3-a2c5f9b82e16
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

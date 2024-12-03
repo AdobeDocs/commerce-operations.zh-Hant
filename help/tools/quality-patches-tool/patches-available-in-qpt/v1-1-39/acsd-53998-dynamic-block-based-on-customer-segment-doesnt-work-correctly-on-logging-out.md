@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-53998：登出後根據客戶區段的動態區塊無法正常運作」
+title: ACSD-53998：登出後根據客戶區段的動態區塊無法正常運作
 description: 套用ACSD-53998修補程式來修正Adobe Commerce問題，該問題導致基於客戶區段的動態區塊在從客戶帳戶登出後無法正常運作。
 feature: Customers, Page Builder, Personalization
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: aa7001c7-bb35-4e5c-8ac9-3ed84b75d7cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

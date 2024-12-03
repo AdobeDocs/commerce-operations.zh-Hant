@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-45255：受限制管理員使用者的低庫存報告頁面發生例外狀況」
+title: ACSD-45255：受限制管理員使用者的「低庫存」報告頁面出現例外狀況
 description: ACSD-45255修補程式解決在受限制管理員使用者的「低庫存報表」頁面上擲回例外狀況的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18後，即可使用此修補程式。 修補程式ID為ACSD-45255。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: bf7e0893-e4a7-4184-a223-02ceef7a30d9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-59865： [!UICONTROL Cart Price Rule]無法取消先前的規則，因為產品數量不足」
+title: ACSD-59865： [!UICONTROL Cart Price Rule]無法取消先前的規則，因為產品數量不足
 description: 套用ACSD-59865修補程式以修正Adobe Commerce問題，其中*固定金額折扣、* *產品價格折扣百分比*和*購買X取得Y* [!UICONTROL Cart Price Rules]中的*折扣數量步驟*值不再取消先前規則的動作。
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: 602a839708eab2551bd99a4f24e66edbde511150
+exl-id: 5838a740-018d-44c2-8135-54426ea08627
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

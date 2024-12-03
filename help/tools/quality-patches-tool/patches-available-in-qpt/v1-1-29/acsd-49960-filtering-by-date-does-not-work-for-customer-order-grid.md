@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-49960：依日期篩選不適用於客戶訂單網格」
+title: ACSD-49960：依日期篩選不適用於客戶訂單格線
 description: 套用ACSD-49960修補程式，修正Adobe Commerce中無法依日期篩選客戶訂單網格的問題。
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 0ca607b4-5500-4d70-be5e-a3a2b62c6864
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%

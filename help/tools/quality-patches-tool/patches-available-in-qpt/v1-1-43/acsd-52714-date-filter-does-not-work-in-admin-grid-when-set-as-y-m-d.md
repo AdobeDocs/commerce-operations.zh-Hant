@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-52714：日期篩選器設定為y-m-d時無法在管理格線中運作」
+title: ACSD-52714：設定為y-m-d時，日期篩選器在管理格線中無法運作
 description: 套用ACSD-52714修補程式，修正日期格式設為y-m-d時，日期篩選器在管理格線中無法運作的Adobe Commerce問題。
 feature: Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4a34900b-9566-41bb-8d3e-18a440117907
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

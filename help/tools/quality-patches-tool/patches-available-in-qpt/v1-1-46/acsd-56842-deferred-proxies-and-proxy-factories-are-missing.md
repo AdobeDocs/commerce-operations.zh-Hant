@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-56842：執行''setup:di:compile''後遺失延遲的代理程式和Proxy處理站'
+title: ACSD-56842：執行'setup:di:compile'後遺失延遲的代理程式和Proxy處理站
 description: 套用ACSD-56842修補程式，修正執行'setup:di:compile'後遺失延遲代理程式和Proxy工廠的Adobe Commerce問題。
 feature: Deploy, Catalog Management
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: cd29267f-e2f2-41b5-b374-ac96166af8ad
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%

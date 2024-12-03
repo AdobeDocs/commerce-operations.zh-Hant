@@ -1,11 +1,12 @@
 ---
-title: 「ACSD-60326：對客戶[!UICONTROL Returns]狀態的GraphQL查詢發生錯誤」
+title: ACSD-60326：對客戶[!UICONTROL Returns]狀態的GraphQL查詢發生錯誤
 description: 套用ACSD-60326修補程式以修正Adobe Commerce問題，該問題導致客戶[!UICONTROL Returns]狀態的GraphQL查詢發生錯誤。
 feature: GraphQL, Returns, Customers
 role: Admin, Developer
-source-git-commit: d7455f78009358bf20b07bd35122c4cab147351a
+exl-id: 5cfd7e0d-8703-43a0-86d3-e69612347534
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---

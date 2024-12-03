@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-56447：透過平行網頁REST API將相同產品新增到購物車中，導致購物車中有兩個單獨的專案」
+title: ACSD-56447：透過平行網頁REST API將相同產品新增到購物車中會產生兩個不同的專案
 description: 套用ACSD-56447修補程式以修正Adobe Commerce問題，其中透過平行網頁REST API請求將相同產品新增到購物車會在購物車中產生兩個單獨的專案。
 feature: Shopping Cart, REST
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ef0b2ce7-74f5-47b6-a44c-bda898c444b2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

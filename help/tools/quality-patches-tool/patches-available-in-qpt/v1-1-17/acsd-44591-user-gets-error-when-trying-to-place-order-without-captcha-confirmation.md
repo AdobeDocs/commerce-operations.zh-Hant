@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-44591：訂單未通過驗證碼確認時發生錯誤」
+title: ACSD-44591：未進行驗證碼確認的訂單發生錯誤
 description: ACSD-44591修補程式解決使用者嘗試下訂單時未經過驗證碼確認會發生錯誤的問題。
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 4b8a8090-a2ba-428c-9a04-7c0842e94a6f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

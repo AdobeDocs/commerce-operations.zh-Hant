@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-46617：小計大於設定的最小訂購量時，**[!UICONTROL Continue to Checkout]**按鈕會變成灰色」
+title: ACSD-46617：小計大於設定的最小訂購量時，**[!UICONTROL Continue to Checkout]**按鈕會變成灰色
 description: 套用ACSD-46617修補程式以解決Adobe Commerce的問題，即使**[!UICONTROL Continue to Checkout]**小計大於設定的最小訂購量，按鈕仍會呈現灰色。
 feature: Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8e808fce-d31c-49ef-94e5-f5c89fffaa73
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

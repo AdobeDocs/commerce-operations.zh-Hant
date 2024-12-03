@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-39711：刪除網站後無法存取客戶方格'
+title: MDVA-39711：刪除網站後無法存取客戶網格
 description: MDVA-39711修補程式修正管理員使用者在刪除網站後無法存取客戶網格的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7時，即可使用此修補程式。 修補程式ID為MDVA-39711。 請注意，問題已在Adobe Commerce 2.4.3中修正。
 feature: Configuration
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 7ddca2e7-86f5-4ffd-9c00-ea4c511ab663
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

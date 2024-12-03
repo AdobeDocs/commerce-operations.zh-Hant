@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51149：已排程[!UICONTROL ImportExport]且已啟用[!UICONTROL Catalog Permissions]，讓索引子失效'
+title: ACSD-51149：已啟用[!UICONTROL Catalog Permissions]且已排程[!UICONTROL ImportExport]讓索引子失效
 description: 套用ACSD-51149修補程式以修正已排程[!UICONTROL ImportExport]且已啟用[!UICONTROL Catalog Permissions]的索引器失效的Adobe Commerce效能問題。
 feature: Cache, Data Import/Export
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: eafc69ab-ec81-4192-85f8-a235f0a131a9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%

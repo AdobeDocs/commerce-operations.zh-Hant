@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52657：Minicart未在使用子網域的第二個商店更新'
+title: ACSD-52657：Minicart未在使用子網域的第二個存放區上更新
 description: 套用ACSD-52657修補程式，修正Adobe Commerce使用子網域的第二個商店未更新minicart的問題。
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: feec9dde-5532-481b-9410-7f6be9df4be7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%

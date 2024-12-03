@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-31590：無法使用MySQL非同步佇列大量更新屬性'
+title: MDVA-31590：無法使用MySQL非同步佇列大量更新屬性
 description: MDVA-31590修補程式解決使用者無法使用MySQL非同步佇列大量更新屬性的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3後，即可使用此修補程式。 修補程式ID為MDVA-31590。 請注意，問題已在Adobe Commerce 2.4.2中修正。
 feature: Attributes, Services
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f8d1c3bd-e995-41ef-89e1-93eec6e8b1f1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 0%

@@ -1,7 +1,8 @@
 ---
-title: '''ACSD-51739：在''CompanyTeam'' GraphQL請求中請求''structure_id''時發生錯誤'
+title: ACSD-51739：在「CompanyTeam」GraphQL請求中請求「structure_id」時發生錯誤
 description: 套用ACSD-51739修補程式以修正Adobe Commerce問題，亦即在「CompanyTeam」GraphQL請求中要求「structure_id」時傳回錯誤。
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 74c78278-779d-4fb6-ba10-501b25b9f1fe
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

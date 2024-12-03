@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-53176：具有''is one of''條件的產品規則不符合'''
+title: ACSD-53176：具有「為其中之一」條件的產品規則不相符
 description: 套用ACSD-53176修補程式以修正Adobe Commerce問題，該問題導致相關產品規則「為其中一項」條件無法正確用於「相符產品」。
 feature: Marketing Tools
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8260c6ac-3ca2-4361-9e36-a8a58468fa95
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%

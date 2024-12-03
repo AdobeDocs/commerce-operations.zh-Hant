@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-58446：透過GraphQL刪除具有子使用者或團隊的團隊會出現無法提供資訊的錯誤訊息」
+title: ACSD-58446：透過GraphQL刪除具有子使用者或團隊的團隊會產生無法提供資訊的錯誤訊息
 description: 套用ACSD-58446修補程式以修正Adobe Commerce的問題，也就是透過GraphQL刪除具有子使用者或團隊的團隊時，會傳回與UI不一致的無法提供資訊的錯誤訊息。
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 943ab281-cc41-4b96-8a7c-fff8c074267c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56090： GraphQL回應不是存放區專用'
+title: ACSD-56090： GraphQL回應不是特定於存放區
 description: 套用ACSD-56090修補程式以修正GraphQL回應包含所有存放區資料（而非存放區特定資料）的Adobe Commerce問題。
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 0909c09c-3260-43d2-8eac-0e5d7639f24b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

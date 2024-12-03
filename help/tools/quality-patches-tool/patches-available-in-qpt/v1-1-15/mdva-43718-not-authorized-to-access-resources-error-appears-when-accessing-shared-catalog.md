@@ -1,9 +1,10 @@
 ---
-title: 「MDVA-43718：存取共用目錄時出現『消費者無權存取資源』錯誤」
+title: MDVA-43718：存取共用目錄時出現「消費者無權存取資源」錯誤
 description: MDVA-43718修補程式解決錯誤*取用者無權存取%resources的問題。*從自訂整合存取共用目錄時顯示。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15時，即可使用此修補程式。 修補程式ID為MDVA-43718。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: Catalog Management
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 2ced2177-aeff-4c36-8d34-6028539b66bd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

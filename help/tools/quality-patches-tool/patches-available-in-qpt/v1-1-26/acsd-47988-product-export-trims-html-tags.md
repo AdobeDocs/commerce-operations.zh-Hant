@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-47988：產品匯出會修剪頁面產生器產品說明中的HTML標籤」
+title: ACSD-47988：產品匯出會修剪頁面產生器產品說明中的HTML標籤
 description: 套用ACSD-47988修補程式，修正產品匯出從頁面產生器產品說明中修剪HTML標籤的Adobe Commerce問題。
 feature: Admin Workspace, Data Import/Export, Page Builder, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2cb3b4ac-38df-4832-b894-b34bb3d7bbc6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%

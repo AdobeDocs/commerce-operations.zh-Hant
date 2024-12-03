@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-55241：**已使用**和**已使用次數**屬性針對產生的抵用券顯示不正確的值」
+title: ACSD-55241： **Used**和**Times Used**屬性針對產生的抵用券顯示不正確的值
 description: Adobe Commerce套用ACSD-55241修補程式，修正**使用**和**使用次數**屬性針對產生的抵用券顯示不正確值的問題
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a156f03c-c939-4ea7-bd34-03c2234edbff
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52613：快取和索引會重新整理而不更新'
+title: ACSD-52613：快取和索引會重新整理而不更新
 description: 套用ACSD-52613修補程式來修正Adobe Commerce問題，此問題會在 [!DNL REST API]未對'Inventory_source'專案進行更新時重新整理快取和索引。
 feature: REST
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 18878161-da4e-4d6e-9f58-706519f837f8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

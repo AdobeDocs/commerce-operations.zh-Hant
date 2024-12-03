@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-49970：GraphQL錯誤的處理不正確」
+title: ACSD-49970：GraphQL錯誤的處理不正確
 description: 套用ACSD-49970修補程式以修正[!UICONTROL New Relic Reporting]開啟時Adobe CommerceGraphQL錯誤處理方式不正確的問題。
 feature: GraphQL, Observability
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f06f6cbf-ea85-406a-850d-f63e1001ff82
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%

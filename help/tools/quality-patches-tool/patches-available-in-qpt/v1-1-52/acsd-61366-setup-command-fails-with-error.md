@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-61366：'bin/magento setup:static-content:deploy —jobs 4'命令遇到多個作業失敗並出現錯誤」
+title: ACSD-61366： 'bin/magento setup:static-content:deploy —jobs 4'命令遇到多個作業失敗並出現錯誤
 description: 套用ACSD-61366修補程式以修正Adobe Commerce問題，該問題導致「bin/magento setup:static-content:deploy —jobs 4」命令遇到多個作業失敗，且必須在主機引數*錯誤中設定*Port，儘管已指定DB連線的連線埠。
 feature: SCD
 role: Admin, Developer
-source-git-commit: b671dc30cd511d63dbbbaa6edd47ee36c1351620
+exl-id: d71a4833-a236-429b-a4e5-7d7d51c2caeb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

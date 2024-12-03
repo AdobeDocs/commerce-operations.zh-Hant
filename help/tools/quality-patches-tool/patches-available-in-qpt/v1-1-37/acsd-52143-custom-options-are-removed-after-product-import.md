@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52143：產品匯入後會移除自訂選項'
+title: ACSD-52143：產品匯入後會移除自訂選項
 description: 套用ACSD-52143修補程式來修正Adobe Commerce問題，此問題發生在產品匯入後，自訂選項遭到移除。
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 630fffa7-012c-4539-9745-9a34571bd2eb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

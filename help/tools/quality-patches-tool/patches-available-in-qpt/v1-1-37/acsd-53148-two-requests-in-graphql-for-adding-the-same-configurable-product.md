@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53148：在GraphQL中新增相同可設定產品的兩個平行請求'
+title: ACSD-53148：GraphQL中新增相同可設定產品的兩個平行請求
 description: 套用ACSD-53148修補程式以修正Adobe Commerce問題，其中在GraphQL中將相同可設定產品新增至購物車的兩個平行請求，會在購物車上產生兩個具有相同產品SKU的不同專案。
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e5e22bed-69de-4872-9aa8-ab228f640b30
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

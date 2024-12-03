@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51700：在可下載產品編輯頁面上切換商店檢視時發生錯誤」
+title: ACSD-51700：在可下載產品編輯頁面上切換商店檢視時發生錯誤
 description: 套用ACSD-51700修補程式以修正Adobe Commerce問題，該問題導致在管理員的可下載產品編輯頁面上切換商店檢視時出現錯誤。
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dd3da026-ac72-440c-8632-8a3ca27fc134
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

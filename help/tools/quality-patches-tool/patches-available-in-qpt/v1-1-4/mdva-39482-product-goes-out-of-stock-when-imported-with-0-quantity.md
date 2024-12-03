@@ -1,9 +1,10 @@
 ---
-title: 「MDVA-39482：如果以'0'數量匯入並啟用延期交貨，則產品無庫存」
+title: MDVA-39482：如果以「0」數量匯入並啟用延期交貨，則產品無庫存
 description: MDVA-39482修正啟用MSI和延期交貨且缺貨臨界值設定為負值時，以「0」數量匯入產品缺貨的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4時，即可使用此修補程式。 修補程式ID為MDVA-39482。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: Data Import/Export, Orders, Products
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 9d705ebf-2372-4e59-b447-cdb5b0db32f4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

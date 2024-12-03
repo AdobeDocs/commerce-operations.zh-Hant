@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53204： *無法儲存產品*同時要求將影像新增到相簿時發生錯誤'
+title: ACSD-53204： *無法儲存產品*將影像新增至相簿的同時請求發生錯誤
 description: 套用ACSD-53204修補程式以修正Adobe Commerce問題，其中使用rest/V1/products/&amp；lt；sku&amp；gt；/media端點同時請求將影像新增至產品相簿時會擲回無法儲存產品錯誤。
 feature: Catalog Management, Media, Products, REST
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7fdf41e5-46ef-4505-b8ce-c330bd899fa1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

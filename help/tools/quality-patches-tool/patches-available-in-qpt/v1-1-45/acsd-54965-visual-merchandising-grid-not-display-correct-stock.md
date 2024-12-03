@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54965： [!UICONTROL Visual Merchandising]格線未顯示正確的庫存'
+title: ACSD-54965： [!UICONTROL Visual Merchandising]格線未顯示正確的庫存
 description: 套用ACSD-54965修補程式來修正Adobe Commerce的問題，也就是當產品被指派給自訂庫存時，[!UICONTROL Visual Merchandising]格線無法顯示正確的庫存。
 feature: Merchandising, Categories
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bd8a3547-1d84-4a17-b006-b35d92256211
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

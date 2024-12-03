@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-42520：使用「啟用跨境貿易」時套用兩次的稅率'
+title: MDVA-42520：使用「啟用跨境貿易」時套用兩次的稅率
 description: MDVA-42520修補程式修正了使用**啟用跨境貿易**時套用稅率兩次的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.11後，即可使用此修補程式。 修補程式ID為MDVA-42520。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: Catalog Management, Orders, Taxes
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 34c101fd-3a47-4877-8a41-ccaeaa010969
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%

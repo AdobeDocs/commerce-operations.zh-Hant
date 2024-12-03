@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54776：未勾選[!UICONTROL Use Default Value]，且未儲存第二個網站、商店和商店檢視的非預設產品欄位值'
+title: ACSD-54776：未勾選[!UICONTROL Use Default Value]，第二個網站、商店和商店檢視不會儲存非預設產品欄位值
 description: 套用ACSD-54776修補程式以修正未核取的[!UICONTROL Use Default Value]和非預設產品欄位值未儲存至第二個網站、商店和商店檢視的Adobe Commerce問題。
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9f63abb-5d00-4777-a186-1120344af018
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%

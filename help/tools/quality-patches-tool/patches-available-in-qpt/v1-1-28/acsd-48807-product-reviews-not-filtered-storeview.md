@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48807：未由storeview篩選的產品評論'
+title: ACSD-48807：未由storeview篩選的產品評論
 description: 套用ACSD-48807修補程式以修正Adobe Commerce中儲存檢閱無法透過GraphQL篩選產品檢閱的問題。
 feature: Admin Workspace, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ce2cf5a1-a650-4eaa-8caf-f34dd0111c36
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

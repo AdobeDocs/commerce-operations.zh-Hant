@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48212：產品匯入會將產品指派給錯誤的來源'
+title: ACSD-48212：產品匯入會將產品指派給錯誤的來源
 description: 套用ACSD-48212修補程式來修正Adobe Commerce問題，此問題導致產品匯入將產品指派給錯誤的來源。
 feature: Admin Workspace, Data Import/Export, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d573d95b-95fc-4f59-b518-18088855a154
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

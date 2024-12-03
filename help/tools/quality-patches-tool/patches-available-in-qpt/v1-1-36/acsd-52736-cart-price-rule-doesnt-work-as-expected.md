@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-52736： [!UICONTROL Cart Price Rule]未如預期運作」
+title: ACSD-52736： [!UICONTROL Cart Price Rule]無法如預期運作
 description: 套用ACSD-52736修補程式以修正Adobe Commerce問題，該問題導致包含可設定產品數量需求的[!UICONTROL Cart Price Rule]無法如預期運作。
 feature: Shopping Cart, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 80c3b14e-62ce-4cfc-b1ff-968e70e3a6f8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

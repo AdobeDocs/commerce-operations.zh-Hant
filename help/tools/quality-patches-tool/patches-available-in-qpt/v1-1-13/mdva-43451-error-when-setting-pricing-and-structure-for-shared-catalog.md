@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-43451：設定共用型錄的定價和結構時發生錯誤'
+title: MDVA-43451：設定共用型錄的訂價與結構時發生錯誤
 description: MDVA-43451修補程式可解決使用者無法設定共用目錄之定價與結構的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13後，即可使用此修補程式。 修補程式ID為MDVA-43451。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: Catalog Management
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 2cddfca2-ee32-4e73-9ef6-78125fbaa13d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%

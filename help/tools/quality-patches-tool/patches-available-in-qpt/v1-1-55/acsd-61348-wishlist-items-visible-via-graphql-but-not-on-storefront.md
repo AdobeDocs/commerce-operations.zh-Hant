@@ -3,7 +3,8 @@ title: ACSD-61348：可透過GraphQL檢視但不在店面顯示的願望清單�
 description: 套用ACSD-61348修補程式來修正Adobe Commerce問題，在多網站環境中，希望清單專案可透過GraphQL顯示，但不會顯示在店面上。
 feature: Customers
 role: Admin, Developer
-source-git-commit: b3dcce33b5710cd3c4b835f5fc7fd8f16cdc6a7f
+exl-id: fcba2c28-077d-4663-b129-7da436e2791d
+source-git-commit: c1d3d3056d1ee3c33db6c14ed10a1df08f962795
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%

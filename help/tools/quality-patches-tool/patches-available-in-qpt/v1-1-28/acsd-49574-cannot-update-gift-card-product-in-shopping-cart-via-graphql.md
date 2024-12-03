@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-49574：無法透過GraphQL更新購物車中的禮品卡產品」
+title: ACSD-49574：無法透過GraphQL更新購物車中的禮品卡產品
 description: 套用ACSD-49574修補程式，修正無法透過GraphQL更新購物車中禮品卡產品的Adobe Commerce問題。
 feature: Admin Workspace, Gift, GraphQL, Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 31dede84-3733-4481-b21d-526494eb8e9b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%

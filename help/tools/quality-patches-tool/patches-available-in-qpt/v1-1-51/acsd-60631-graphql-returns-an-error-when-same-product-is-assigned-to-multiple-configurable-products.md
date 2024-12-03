@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-60631：將相同產品指派給多個可設定產品時，GraphQL傳回錯誤」
+title: ACSD-60631：將相同產品指派給多個可設定產品時，GraphQL傳回錯誤
 description: 套用ACSD-60631修補程式以修正Adobe Commerce問題，亦即當相同的產品指派給多個可設定的產品時，GraphQL查詢會傳回錯誤。
 feature: Attributes, GraphQL
 role: Admin, Developer
-source-git-commit: 093c5d030d38a108d8acb6e59455513db147dfdf
+exl-id: 2fcc0e06-390f-4803-8e43-db7bac1c51e8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

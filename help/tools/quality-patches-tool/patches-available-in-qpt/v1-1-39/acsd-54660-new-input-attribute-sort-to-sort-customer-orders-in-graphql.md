@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54660：新的輸入屬性排序，可在 [!DNL GraphQL]中排序客戶訂單'
+title: ACSD-54660：新的輸入屬性排序，可排序 [!DNL GraphQL]中的客戶訂單
 description: 套用ACSD-54660修補程式以修正Adobe Commerce問題，該問題導致新增輸入屬性「sort」，以透過「sort_field」和「sort_direction」對 [!DNL GraphQL] 中的客戶訂單進行排序。
 feature: GraphQL, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3962d4b6-634e-4164-adae-fa840ca7d869
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%

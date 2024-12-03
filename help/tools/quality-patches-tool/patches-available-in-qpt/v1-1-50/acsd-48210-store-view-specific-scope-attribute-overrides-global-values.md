@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48210：存放區檢視特定範圍屬性會覆寫全域值'
+title: ACSD-48210：存放區檢視特定範圍屬性會覆寫全域值
 description: 套用ACSD-48210修補程式以修正Adobe Commerce更新特定存放區檢視中的*[!UICONTROL Website Scope]*屬性會覆寫全域範圍內的屬性值的問題。
 feature: Products, Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 944089c6-2f05-4c51-86ea-ede124bff80b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

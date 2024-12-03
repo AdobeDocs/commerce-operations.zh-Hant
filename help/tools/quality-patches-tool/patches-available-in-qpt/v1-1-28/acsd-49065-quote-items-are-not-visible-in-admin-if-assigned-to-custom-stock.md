@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49065：報價專案在管理員中不可見'
+title: ACSD-49065：報價專案在管理員中不可見
 description: 套用ACSD-49065修補程式來修正Adobe Commerce問題，亦即如果報價專案僅指派給自訂庫存，則無法在管理員中看到報價專案。
 feature: Admin Workspace, B2B, Orders, Quotes
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fc3bea92-305b-4598-9915-3422d61c76ec
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%

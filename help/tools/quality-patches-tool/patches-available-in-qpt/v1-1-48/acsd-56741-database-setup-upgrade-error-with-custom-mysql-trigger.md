@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56741：使用自訂MySQL觸發程式疑難排解資料庫設定錯誤'
+title: ACSD-56741：疑難排解自訂MySQL觸發器的資料庫設定錯誤
 description: 套用ACSD-56741修補程式以修正Adobe Commerce問題，該問題導致在「setup：upgrade」期間出現錯誤訊息*嘗試存取型別為null*的值的陣列位移，這是因為資料庫中的自訂MySQL觸發程式與索引和 [!DNL MView]無關。
 feature: Install
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 93a1c75f-8a45-49df-9fa4-6ba1234c822d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53239：清查索引器清除所有快取'
+title: ACSD-53239：詳細目錄索引器清除所有快取
 description: 套用ACSD-53239修補程式以修正清查索引器在[!UICONTROL Update on Schedule]模式中清除所有快取的Adobe Commerce問題。
 feature: GraphQL, Inventory, Catalog Management
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 69e71e2d-8f26-4200-ad4a-6bd9e45627e4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%

@@ -1,7 +1,8 @@
 ---
-title: 「ACSD-52277：建立新訂單時，管理員使用者在選取商店檢視時被錯誤地重新導向」
+title: ACSD-52277：建立新訂單時，管理員使用者在選取商店檢視時被錯誤地重新導向
 description: 套用ACSD-52277修補程式來修正Adobe Commerce問題，其中管理員使用者在Admin中建立新訂單時，在選取存放區檢視後未正確重新導向。
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 61ef59a9-7a31-441f-a763-2d8016498fa7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

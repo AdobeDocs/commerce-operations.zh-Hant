@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48627：沒有庫存的可設定產品造成錯誤'
+title: ACSD-48627：沒有庫存的可設定產品導致錯誤
 description: 套用ACSD-48627修補程式以修正Adobe Commerce問題，該問題導致在傳送GraphQL請求以取得購物車詳細資料時出現錯誤。
 feature: Admin Workspace, Configuration, Orders, Products
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 457c605e-d0c3-479e-b515-9b2851a71a08
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%

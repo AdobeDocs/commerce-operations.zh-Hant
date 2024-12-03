@@ -3,7 +3,8 @@ title: ACSD-61785：無法透過GraphQL變異和REST API呼叫來更新reward_wa
 description: 套用ACSD-61785修補程式，修正無法透過Adobe Commerce突變和REST API呼叫更新「reward_warning_notification」屬性的GraphQL問題。
 feature: REST, GraphQL, Rewards
 role: Admin, Developer
-source-git-commit: 87ce6004a632f860447d55c13c08f78533ab093e
+exl-id: 41f40452-4240-4b4a-b1bc-0da23139f19f
+source-git-commit: c1d3d3056d1ee3c33db6c14ed10a1df08f962795
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56616：簡單存貨短缺期間套件式產品的店面展示'
+title: ACSD-56616：簡單存貨短缺期間套件式產品的店面顯示
 description: 套用ACSD-56616修補程式，修正Adobe Commerce發生的問題，亦即當所有相關的簡單產品無存貨時，店面會意外出現套裝產品。
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8b225d9d-1898-4c4d-81be-7b92cbf7d06f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

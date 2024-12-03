@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-55610：部份取消的訂單折扣金額不正確'
+title: ACSD-55610：部份取消的訂單折扣金額不正確
 description: 套用ACSD-55610修補程式，修正部分取消訂單折扣金額不正確的Adobe Commerce問題。
 feature: Invoices, Orders, Price Rules, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b7b94c9d-e027-4601-837b-d70b7ff8bd2c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

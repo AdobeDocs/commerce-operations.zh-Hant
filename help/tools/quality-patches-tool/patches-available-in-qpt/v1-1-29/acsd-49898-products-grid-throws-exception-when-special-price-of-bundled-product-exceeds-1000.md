@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49898：產品格線擲回例外狀況'
+title: ACSD-49898：產品格線擲回例外狀況
 description: 套用ACSD-49898修補程式，修正Adobe Commerce問題，若搭售產品的特殊價格超過1000，產品格線會擲回例外狀況。
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: adc8f12e-73e4-4ed5-8081-a9907ec13342
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

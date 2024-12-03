@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56635：帳戶共用設為 [!DNL Global]時，匯入的客戶會重複'
+title: ACSD-56635：帳戶共用設為 [!DNL Global]時，匯入的客戶會重複
 description: 套用ACSD-56635修補程式以修正當匯入使用且帳戶共用設為 [!DNL Global]時，匯入的客戶使用相同電子郵件地址重複的Adobe Commerce問題。
 feature: Customers, Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 73abec4a-03b0-45d4-bfc6-f3c6862e733c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

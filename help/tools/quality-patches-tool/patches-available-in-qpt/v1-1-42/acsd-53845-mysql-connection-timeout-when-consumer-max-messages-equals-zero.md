@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53845：消費者max_messages = 0時的MySQL連線逾時問題'
+title: ACSD-53845：消費者max_messages = 0時的MySQL連線逾時問題
 description: 套用ACSD-53845修補程式，修正Adobe Commerce中當消費者「max_messages = 0」時MySQL連線逾時的問題。
 feature: REST, Configuration
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 437e29f4-b11a-466c-9928-3867821d2b8d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%

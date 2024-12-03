@@ -1,9 +1,10 @@
 ---
-title: 「MDVA-39043：管理員使用者將Widget新增至CMS頁面時發生錯誤」
+title: MDVA-39043：管理員使用者將Widget新增至CMS頁面時發生錯誤
 description: MDVA-39043修補程式修正了具有有限存取權的管理員使用者將「產品」Widget新增至CMS頁面時出現錯誤的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2時，即可使用此修補程式。 修補程式ID為MDVA-39043。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: Admin Workspace, CMS, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 82488249-cca3-4a28-bdc1-fa93a4c9dc2f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

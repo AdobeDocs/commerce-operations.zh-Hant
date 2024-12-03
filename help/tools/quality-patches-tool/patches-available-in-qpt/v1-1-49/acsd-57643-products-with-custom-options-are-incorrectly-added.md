@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-57643：透過GraphQL將具有自訂選項的產品錯誤地新增到購物車中」
+title: ACSD-57643：透過GraphQL將具有自訂選項的產品錯誤地新增到購物車中
 description: 套用ACSD-57643修補程式，修正透過GraphQL將具有自訂選項的產品錯誤新增至購物車的Adobe Commerce問題。
 feature: Shopping Cart, GraphQL, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 568f820b-ecab-4839-b32e-b0b42c1d2342
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

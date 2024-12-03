@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51041：價格指數需要很長時間才能完成'
+title: ACSD-51041：價格指數需要很長時間才能完成
 description: 套用ACSD-51041修補程式，以修正Adobe Commerce價格指數需花很長時間才能在非常大的產品組合完成的問題。
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d45d4042-06a1-445d-bed3-803085626dd3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%

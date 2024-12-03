@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-47079：當子產品庫存狀態變更時，複合產品的庫存狀態未更新」
+title: ACSD-47079：子產品庫存狀態變更時複合產品的庫存狀態未更新
 description: 套用ACSD-47079修補程式以修正Adobe Commerce問題，其中當子產品庫存狀態透過REST APIPOST/rest/V1/inventory/source-items變更時，複合產品（套件、分組和可設定）庫存狀態未更新。
 feature: Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f035f530-fae5-4b61-8af9-044f6ec02284
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-55031：編譯期間發生''型別''mixed''不能為nullable''錯誤'''
+title: ACSD-55031：編譯期間發生「型別"mixed"不能為nullable」錯誤
 description: 套用ACSD-55031修補程式，修正Adobe Commerce安裝自訂擴充功能後，在編譯期間出現*型別「mixed」不能為空*錯誤的問題。
 feature: Extensions
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 770d35aa-7ce2-4517-b393-b7c623c9f779
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 0%

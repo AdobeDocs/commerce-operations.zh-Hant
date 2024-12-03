@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48262：當[!UICONTROL Allow All Products Per Page]設定為[!UICONTROL Yes]時，店面中不會顯示產品'
+title: ACSD-48262：當[!UICONTROL Allow All Products Per Page]設定為[!UICONTROL Yes]時，店面中不會顯示產品
 description: 套用ACSD-48262修補程式以修正[!UICONTROL Allow All Products Per Page]設定設為[!UICONTROL Yes]時店面中看不到產品的Adobe Commerce問題。
 feature: Admin Workspace, Cache, Categories, Orders, Products, Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 733ac476-5c3c-4cbe-88b7-f436d15f1c7d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

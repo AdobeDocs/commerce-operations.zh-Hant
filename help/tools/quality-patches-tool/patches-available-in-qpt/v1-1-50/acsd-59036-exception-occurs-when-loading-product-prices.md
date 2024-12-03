@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-59036：載入上下限均設為$0的產品價格時發生例外狀況'
+title: ACSD-59036：載入上下限均設為$0的產品價格時，會發生例外狀況
 description: 套用ACSD-59036修補程式，修正Adobe Commerce載入產品價格（上下限皆設為*$0*）時發生例外狀況的問題。
 feature: Categories, Products, Storefront, Search
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a7d05108-0b03-4eb4-84ab-0dc5601530cb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%

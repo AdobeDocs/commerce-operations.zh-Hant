@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-46541：如果刪除訂單專案，管理員使用者無法建立銷退折讓單」
+title: ACSD-46541：如果刪除訂單專案，管理員使用者無法建立銷退折讓單
 description: 套用ACSD-46541修補程式以修正Adobe Commerce問題，其中一旦刪除產品，您就無法在Adobe Commerce管理員中建立銷退折讓單。
 feature: Admin Workspace, Orders, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c46ee888-92b1-4798-bd2b-1a082fd1406a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

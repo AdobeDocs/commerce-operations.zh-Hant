@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48313：如果屬性值包含逗號，則未剖析[!UICONTROL configurable_variations]欄'
+title: ACSD-48313：如果屬性值包含逗號，則未剖析[!UICONTROL configurable_variations]欄
 description: 套用ACSD-48313修補程式以修正Adobe Commerce問題，若屬性值包含逗號，則不會剖析[!UICONTROL configurable_variations]欄。
 feature: Attributes, Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1ce0c8dc-0d03-4ebd-b02a-08090b244190
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%

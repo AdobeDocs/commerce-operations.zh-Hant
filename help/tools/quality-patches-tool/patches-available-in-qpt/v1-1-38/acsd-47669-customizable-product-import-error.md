@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-47669：匯入具有可自訂選項的產品時出現內部伺服器錯誤」
+title: ACSD-47669：匯入具有可自訂選項的產品時出現內部伺服器錯誤
 description: 套用ACSD-47669修補程式，修正在匯入具有可自訂選項的產品期間發生內部伺服器錯誤的Adobe Commerce問題。
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e1a3b3b4-0392-4325-9766-a83276c1a593
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

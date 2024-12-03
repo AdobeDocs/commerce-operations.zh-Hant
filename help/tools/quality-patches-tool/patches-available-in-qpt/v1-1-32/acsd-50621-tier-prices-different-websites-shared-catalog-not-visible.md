@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-50621：看不到共用目錄中不同網站的分層價格」
+title: ACSD-50621：看不到共用目錄中不同網站的分層價格
 description: 套用ACSD-50621修補程式，修正共用目錄中不同網站在多網站環境中編輯時，無法顯示其層級價格的Adobe Commerce問題。
 feature: Catalog Management, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2256dee7-e544-4723-9753-ba9cf7247880
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

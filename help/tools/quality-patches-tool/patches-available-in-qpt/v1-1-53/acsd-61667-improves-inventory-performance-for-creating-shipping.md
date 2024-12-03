@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-61667：改善建立出貨時的存貨效能'
+title: ACSD-61667：改善建立出貨時的存貨效能
 description: 套用ACSD-60584修補程式，以提升存貨效能，方便建立出貨流程，因應多個貨源在店內取貨的情況。
 feature: Customers, Shipping/Delivery
 role: Admin, Developer
-source-git-commit: 29748a439992c0e3efbbc84c5ab9c8239f460b73
+exl-id: 47682daf-9117-45f1-ab09-a66c13132ff3
+source-git-commit: c32684a09e4a99733feb198b1d353b090c68a7f5
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -65,4 +66,3 @@ Adobe Commerce詳細目錄模組已安裝並啟用。
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
-

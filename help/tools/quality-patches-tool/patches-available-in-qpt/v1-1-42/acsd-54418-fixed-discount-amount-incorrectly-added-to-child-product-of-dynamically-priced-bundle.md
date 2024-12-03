@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54418：固定折扣金額錯誤地新增到動態定價套件的子產品中'
+title: ACSD-54418：固定折扣金額錯誤地新增到動態定價套件的子產品中
 description: 套用ACSD-54418修補程式，修正動態定價套裝的每個子產品不正確套用固定折扣金額的Adobe Commerce問題。
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f7b57361-9056-4eec-a393-dadb65aa595b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

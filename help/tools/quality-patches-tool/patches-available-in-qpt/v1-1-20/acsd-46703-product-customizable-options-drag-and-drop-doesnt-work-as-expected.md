@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46703：產品自訂拖放無法運作'
+title: ACSD-46703：產品自訂拖放無法運作
 description: 針對產品可自訂選項拖放功能無法正常運作的問題，本文提供解決方案。
 feature: Products
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%

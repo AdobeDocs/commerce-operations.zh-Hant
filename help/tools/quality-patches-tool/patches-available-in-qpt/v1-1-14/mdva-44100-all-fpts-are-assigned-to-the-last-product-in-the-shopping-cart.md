@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-44100：所有FPT都指派給購物車中的最後一個產品'
+title: MDVA-44100：所有FPT都已指派給購物車中的最後一個產品
 description: MDVA-44100修補程式解決所有FPT指派給購物車中最後一個產品的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14時，即可使用此修補程式。 修補程式ID為MDVA-44100。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: b370dcbb-cbe9-4f5d-9b8f-1722ab521fcb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

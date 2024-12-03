@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48813：搜尋未根據屬性的搜尋權重顯示相關結果'
+title: ACSD-48813：搜尋未根據屬性的搜尋權重顯示相關結果
 description: 套用ACSD-48813修補程式，修正Adobe Commerce搜尋未根據屬性的搜尋權重顯示相關結果的問題。
 feature: Admin Workspace, Attributes, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 98ef7eb1-c13e-4c56-9a25-8e61cfb5fade
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46856：在更新層級價格時提升效能'
+title: ACSD-46856：改善更新層級價格時的效能
 description: 套用ACSD-46856修補程式，以在透過System &amp；Configuration &amp；gt；匯入&amp；gt；進階定價更新層級價格時提升效能。
 feature: Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5c954f2c-a55c-43ba-919f-406f4b173d30
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%

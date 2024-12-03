@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-38526：管理員使用者無法存取SWAT工具'
+title: MDVA-38526：管理員使用者無法存取SWAT工具
 description: MDVA-38526修補程式解決管理員使用者無法存取SWAT工具的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9後，即可使用此修補程式。 修補程式ID為MDVA-38526。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: Admin Workspace
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: de8691ce-5225-4409-8908-f2b23f1da166
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%

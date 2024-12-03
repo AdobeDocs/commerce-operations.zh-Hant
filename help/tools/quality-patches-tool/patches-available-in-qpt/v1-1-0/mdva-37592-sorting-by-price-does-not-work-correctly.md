@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-37592：依價格排序不適用於價格為零的產品'
+title: MDVA-37592：依價格排序不適用於價格為零的產品
 description: MDVA-37592 Adobe Commerce修補程式解決指派給共用目錄之價格為零的產品無法正確依價格排序的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.0時，即可使用此修補程式。 修補程式ID為MDVA-37592。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: B2B, Catalog Management, Categories, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 4d4a158c-2020-42a4-9b8b-14c9b48b4107
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

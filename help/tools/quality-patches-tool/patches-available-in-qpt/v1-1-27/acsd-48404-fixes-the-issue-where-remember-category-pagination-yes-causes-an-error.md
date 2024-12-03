@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-48404： *[!UICONTROL Remember Category Pagination] = [!UICONTROL Yes]*按下瀏覽器的[上一步]按鈕時導致錯誤」
+title: ACSD-48404： *[!UICONTROL Remember Category Pagination] = [!UICONTROL Yes]*在按下瀏覽器的返回按鈕時導致錯誤
 description: 套用ACSD-48404修補程式來修正Adobe Commerce問題，其中*[!UICONTROL Remember Category Pagination] = [!UICONTROL Yes]*會在按下瀏覽器的「上一步」按鈕時造成錯誤。
 feature: Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8c08f0e2-d4f9-4ac8-b8e8-85b4a7de98fb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

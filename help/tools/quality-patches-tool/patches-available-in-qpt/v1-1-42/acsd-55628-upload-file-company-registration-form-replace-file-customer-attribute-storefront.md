@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-55628：在公司登錄檔單上傳檔案；取代店面中客戶屬性的檔案'
+title: ACSD-55628：在公司登錄檔單上上傳檔案；取代店面中客戶屬性的檔案
 description: 套用ACSD-55628修補程式，修正上傳公司登錄檔格中的檔案並取代店面中客戶屬性的檔案時，所發生的Adobe Commerce問題。
 feature: Storefront, Attributes, B2B, Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a008a205-ec1d-4a1d-9cd2-75f10a937057
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

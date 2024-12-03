@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51230：已刪除禮卡帳戶'
+title: ACSD-51230：已刪除禮品卡帳戶
 description: 套用ACSD-51230修補程式，修正處理訂單中簡單產品的部分退款時，會刪除禮品卡帳戶的Adobe Commerce問題。
 feature: Customer Service, Gift, Marketing Tools
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4aed574-3908-42e0-ac32-911f61b44995
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

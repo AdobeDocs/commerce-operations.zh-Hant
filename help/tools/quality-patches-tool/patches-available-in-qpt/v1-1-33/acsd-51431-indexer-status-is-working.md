@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51431：索引子狀態為*[!UICONTROL Working]*，即使變更記錄檔中沒有專案'
+title: ACSD-51431：索引子狀態為*[!UICONTROL Working]*，即使變更記錄檔中沒有專案
 description: 套用ACSD-51431修補程式以修正索引器狀態為*[!UICONTROL Working]*的Adobe Commerce問題，即使變更記錄檔中沒有專案。
 feature: Logs, Price Indexer
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c87c059b-f435-468d-a7fe-e6786fdba1f8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%

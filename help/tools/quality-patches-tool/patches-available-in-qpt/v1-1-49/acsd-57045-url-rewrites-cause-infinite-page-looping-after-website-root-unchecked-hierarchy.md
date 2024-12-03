@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-57045： URL重寫導致在[!UICONTROL Website Root]取消核取[!UICONTROL Hierarchy]後出現無限的頁面回圈'
+title: ACSD-57045： URL重寫導致在[!UICONTROL Website Root]取消核取[!UICONTROL Hierarchy]後出現無限的頁面循環
 description: 套用ACSD-57045修補程式以修正Adobe Commerce問題，該問題導致URL重寫在[!UICONTROL Website Root]取消核取[!UICONTROL Hierarchy]後造成無限頁面循環。
 feature: CMS
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7beaee40-a392-4644-917e-c507e79bddcc
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57045： URL重寫導致在[!UICONTROL Website Root]取消核取[!UICONTROL Hierarchy]後出現無限的頁面循環
 

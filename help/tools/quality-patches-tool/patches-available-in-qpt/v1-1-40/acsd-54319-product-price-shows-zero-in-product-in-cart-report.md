@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54319：產品價格在*[!UICONTROL Products in Carts]*報表中顯示為零'
+title: ACSD-54319：產品價格在*[!UICONTROL Products in Carts]*報表中顯示為零
 description: 套用ACSD-54319修補程式，修正*[!UICONTROL Products in Carts]*報表中產品價格為零的Adobe Commerce問題
 feature: Reporting, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 10052d32-99f8-4b45-9fe9-a4c45bcaaa44
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%

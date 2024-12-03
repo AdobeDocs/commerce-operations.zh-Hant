@@ -1,15 +1,15 @@
 ---
-title: 「ACSD-59514：管理員中的Forms在瀏覽器控制檯中出現 [!DNL Page Builder] 擲回錯誤」
+title: ACSD-59514：Admin中的Forms在瀏覽器控制檯中出現 [!DNL Page Builder] 擲回錯誤
 description: 套用ACSD-59514修補程式以修正Admin中具有 [!DNL Page Builder] 擲回的表單錯誤「[!DNL Page Builder]」呈現達5秒而未釋放鎖定的Adobe Commerce問題。 在瀏覽器主控台中提交表單後，變更無法儲存。
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3d1167d2-0a75-48ac-bc31-5bbd3c4a409e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-59514：在瀏覽器控制檯中出現[!DNL Page Builder]擲回錯誤的Admin中的Forms
 

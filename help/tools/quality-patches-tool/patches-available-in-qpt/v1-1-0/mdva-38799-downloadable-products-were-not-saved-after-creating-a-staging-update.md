@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-38799：建立中繼更新後未儲存可下載的產品'
+title: MDVA-38799：建立中繼更新後未儲存可下載的產品
 description: MDVA-38799修補程式可解決建立中繼更新後無法儲存可下載產品的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.0時，即可使用此修補程式。 修補程式ID為MDVA-38799。 請注意，Adobe Commerce 2.4.3版已修正問題。
 feature: Products, Staging
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 0ae665a8-cda2-4340-91e7-5b9b969a6607
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%

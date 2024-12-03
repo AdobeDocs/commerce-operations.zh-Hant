@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53979：首頁上發生JS錯誤'
+title: ACSD-53979：首頁上發生JS錯誤
 description: 如果歡迎訊息包含單引號，請套用ACSD-53979修補程式以修正首頁上發生JavaScript錯誤的Adobe Commerce問題。
 feature: Page Content
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 34a1802e-b64c-4d5d-85df-356c0740aa41
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%

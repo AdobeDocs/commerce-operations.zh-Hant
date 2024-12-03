@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51379：未儲存透過 [!DNL Page Builder] 對頁面文字內容進行的變更」
+title: ACSD-51379：未儲存透過 [!DNL Page Builder] 對頁面文字內容所做的變更
 description: 套用ACSD-51379修補程式以修正無法透過 [!DNL Page Builder] 儲存對頁面文字內容所做變更的Adobe Commerce問題。
 feature: Page Builder, Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 03fc2865-04b6-4330-b80c-8d694baa8c88
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%

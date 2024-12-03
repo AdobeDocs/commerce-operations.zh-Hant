@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-42237：未更新可設定的產品特別價格'
+title: MDVA-42237：未更新可設定的產品特殊價格
 description: MDVA-42237修補程式修正了可設定產品的特殊價格在變更其次產品價格後未更新的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.11後，即可使用此修補程式。 修補程式ID為MDVA-42237。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: Admin Workspace, Configuration, Orders, Personalization, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 1bae9a14-d6c1-4ee3-85aa-5d80ef479385
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%

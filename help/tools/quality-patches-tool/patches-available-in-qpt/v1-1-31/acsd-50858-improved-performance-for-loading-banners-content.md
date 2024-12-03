@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-50858：改善載入橫幅內容的效能」
+title: ACSD-50858：改善載入橫幅內容的效能
 description: 套用ACSD-50858修補程式以修正Adobe Commerce問題，該問題導致購物車/結帳頁面中過多DB查詢及頁面載入時間增加，進而影響橫幅效能。
 feature: Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1b46e51f-70ad-4450-b3a8-173c2e4b7925
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%

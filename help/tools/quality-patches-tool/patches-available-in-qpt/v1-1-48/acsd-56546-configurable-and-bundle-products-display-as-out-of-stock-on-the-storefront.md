@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56546：可設定和套裝產品在店面顯示為無庫存'
+title: ACSD-56546：可設定和套裝產品在店面顯示為無庫存
 description: 套用ACSD-56546修補程式來修正Adobe Commerce問題，此問題發生在停用*[!UICONTROL Display Out of Stock Products]*組態選項時，可設定和套件組合產品在店面顯示為無庫存。
 feature: Storefront, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9bb05ca-a84e-48bb-957e-55b28631b3cb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%

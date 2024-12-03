@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-41350：當管理員在存取權之外新增產品時會發生例外狀況'
+title: MDVA-41350：當管理員在存取權之外新增產品時會發生例外狀況
 description: MDVA-41350修補程式修正了當管理員使用者按其存取權以外的SKU的順序新增產品時，擲回例外狀況錯誤，而非限制存取通知的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.11後，即可使用此修補程式。 修補程式ID為MDVA-41350。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: Admin Workspace, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 4dc5ee5c-bd93-42e1-9c63-93ffb8e5f21c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

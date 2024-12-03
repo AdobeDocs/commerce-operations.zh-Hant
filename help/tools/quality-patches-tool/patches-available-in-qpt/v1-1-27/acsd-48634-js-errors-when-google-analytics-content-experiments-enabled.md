@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48634： [!DNL Google Analytics Content Experiments] 啟用時發生 [!DNL JS] 錯誤'
+title: ACSD-48634： [!DNL Google Analytics Content Experiments] 啟用時發生 [!DNL JS] 錯誤
 description: 啟用 [!DNL Google Analytics Content Experiments] 時，套用ACSD-48634修補程式來修正 [!DNL staging] 更新頁面上的 [!DNL JS] 錯誤。
 feature: Catalog Management, Categories, Console, Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 99368346-157f-4283-bb8c-192a62501717
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

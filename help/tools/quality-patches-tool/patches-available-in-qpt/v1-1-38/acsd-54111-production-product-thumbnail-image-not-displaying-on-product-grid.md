@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54111：未顯示產品縮圖影像'
+title: ACSD-54111：未顯示產品縮圖影像
 description: 套用ACSD-54111修補程式以修正Adobe Commerce問題，其中所有影像會由預設產品預留位置影像取代。
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4615ebf6-aa68-4d49-8d91-e9756b3d4a05
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%

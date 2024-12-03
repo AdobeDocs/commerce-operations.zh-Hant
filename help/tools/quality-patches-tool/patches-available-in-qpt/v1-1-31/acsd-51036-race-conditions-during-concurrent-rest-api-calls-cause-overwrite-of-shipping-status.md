@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51036：同時REST API呼叫期間的競爭條件會導致出貨狀態覆寫」
+title: ACSD-51036：同時REST API呼叫期間的競爭條件會導致出貨狀態覆寫
 description: 套用ACSD-51036修補程式以修正Adobe Commerce問題，此問題會在同時REST API呼叫期間發生競爭狀況，導致訂購專案表格中的出貨狀態遭到覆寫。
 feature: REST, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6150d072-05fe-4010-b31b-8ccde9cab656
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%

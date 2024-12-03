@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-52801：GraphQL產品篩選器查詢未顯示部分符合結果」
+title: ACSD-52801： GraphQL產品篩選器查詢未顯示部分符合結果
 description: 套用ACSD-52801修補程式以修正GraphQL產品篩選器查詢未顯示部分符合結果的Adobe Commerce問題。
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 946a7189-60b2-4812-92ca-ed7ba35b2488
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%

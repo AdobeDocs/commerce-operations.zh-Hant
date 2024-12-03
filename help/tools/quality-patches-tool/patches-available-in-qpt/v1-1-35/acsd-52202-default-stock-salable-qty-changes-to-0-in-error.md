@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52202：當非預設庫存設定為0數量時，預設庫存可銷售數量錯誤地變更為0'
+title: ACSD-52202：當非預設庫存設定為0數量時，預設庫存可銷售數量錯誤地變更為0
 description: 套用ACSD-52202修補程式來修正Adobe Commerce問題，該問題導致當訂單中的非預設庫存設定為0數量時，預設庫存可銷售數量錯誤地變為0。
 feature: Inventory, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2ba5cc3b-9774-49f6-948f-371ab3c0c9df
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

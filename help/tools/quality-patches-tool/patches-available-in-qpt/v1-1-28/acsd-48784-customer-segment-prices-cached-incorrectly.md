@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-48784：客戶群組之間的客戶區段價格快取不正確」
+title: ACSD-48784：客戶群組之間的客戶區段價格快取不正確
 description: 套用ACSD-48784修補程式，修正客戶群組之間不正確快取客戶區段價格的Adobe Commerce問題。
 feature: Admin Workspace, Cache, Customer Service, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a691c61c-fdba-4d6a-8314-095dfb0ba4a1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%

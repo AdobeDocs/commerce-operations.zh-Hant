@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-58790：修正 [!DNL Chrome]上行動檢視中產品詳細資料頁面影像的夾捏縮放功能'
+title: ACSD-58790：修正 [!DNL Chrome]上行動檢視中產品詳細資料頁面影像的夾捏縮放功能
 description: ACSD-58790修正Adobe Commerce問題，亦即 [!DNL Chrome] 上行動檢視中的影像未如預期放大影像。
 feature: Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 46b324bf-c2a0-4086-87ee-96e8c4883494
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58790：修正[!DNL Chrome]上行動檢視中產品詳細資料頁面影像的夾捏縮放功能
 

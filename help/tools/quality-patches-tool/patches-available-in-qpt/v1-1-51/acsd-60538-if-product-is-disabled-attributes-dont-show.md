@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-60538：如果在[!UICONTROL All Store Views]中停用產品，則屬性無法正確顯示」
+title: ACSD-60538：如果在[!UICONTROL All Store Views]中停用產品，則屬性無法正確顯示
 description: 套用ACSD-60538修補程式以修正Adobe Commerce問題，若產品在*所有商店檢視*中停用，並只在特定商店檢視範圍中啟用，則產品屬性在GraphQL回應中無法正確顯示，導致產品無法正確顯示。
 feature: Attributes, GraphQL
 role: Admin, Developer
-source-git-commit: c394e003797d8095c17a0f6047024231e26a8321
+exl-id: 2ea9de11-b750-4ab6-9cc7-e940e1791f22
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%

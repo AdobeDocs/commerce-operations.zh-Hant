@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53309：可自訂選項和[!UICONTROL Regular Price]標籤的稅捐沖銷不完整'
+title: ACSD-53309：可自訂選項和[!UICONTROL Regular Price]標籤的稅捐沖銷不完整
 description: 套用ACSD-53309修補程式，以修正當選取可自訂選項時，'[!UICONTROL Regular Price]'標籤中未完全套用稅金的Adobe Commerce問題。
 feature: Taxes, Shipping/Delivery
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7f4a8923-11dd-48b2-9d97-77de5c2b24ce
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

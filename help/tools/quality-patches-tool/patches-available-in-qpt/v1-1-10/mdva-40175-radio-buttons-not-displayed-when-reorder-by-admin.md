@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-40175：重新排序時未顯示選項按鈕'
+title: MDVA-40175：重新排序時未顯示選項按鈕
 description: MDVA-40175修補程式可解決使用者嘗試重新排序時，選項按鈕未顯示的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.10時，即可使用此修補程式。 修補程式ID為MDVA-40175。 請注意，問題已在Adobe Commerce 2.4.3中修正。
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: e84ff581-13ba-4f9f-9247-519b0b54807a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%

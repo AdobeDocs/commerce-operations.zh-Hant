@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-57337：具有存取限制的管理員使用者可以在*公司*格線中檢視所有公司」
+title: ACSD-57337：具有存取限制的管理員使用者可以檢視*公司*格線中的所有公司
 description: 套用ACSD-57337修補程式以修正Adobe Commerce問題，其中具有特定網站存取限制的管理員使用者可檢視*公司*格線中所有網站的公司。
 feature: Companies, B2B, Configuration
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7a05d335-5ed8-460e-80c4-dbc51d06c5bd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

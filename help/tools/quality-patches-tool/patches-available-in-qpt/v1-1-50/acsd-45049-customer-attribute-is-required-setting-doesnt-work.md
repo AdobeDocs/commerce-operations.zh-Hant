@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-45049：客戶『必要』屬性設定無法按照管理員中的網站範圍運作」
+title: ACSD-45049：客戶「必要」屬性設定無法按照管理員中的網站範圍運作
 description: 套用ACSD-45049修補程式以修正Adobe Commerce中客戶「[!UICONTROL Is required]」屬性未依照Admin中的網站範圍正確覆寫的問題。
 feature: Attributes, Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 368af877-a3ec-431f-8f41-5d51354be571
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

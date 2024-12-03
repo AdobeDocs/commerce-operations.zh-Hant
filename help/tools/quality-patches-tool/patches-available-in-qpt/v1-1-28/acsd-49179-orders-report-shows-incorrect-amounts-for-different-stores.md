@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-49179：訂單報表顯示不同商店的錯誤金額。」
+title: ACSD-49179：「訂單」報表顯示不同商店的錯誤金額。
 description: 套用ACSD-49179修補程式，修正Adobe Commerce發生的問題：若不同商店使用不同貨幣，訂單報表會顯示不正確的金額。
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b10653ef-c4b1-40df-8bfe-7da755db621b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%

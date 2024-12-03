@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-39923：在B2B快速訂購功能中依SKU搜尋會區分大小寫'
+title: MDVA-39923：在B2B快速訂購功能中依SKU搜尋（區分大小寫）
 description: MDVA-39923修補程式修正了客戶在B2B快速訂購功能中，依SKU搜尋訂單（與儲存名稱的大小寫不同）時出現錯誤的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2時，即可使用此修補程式。 修補程式ID為MDVA-39923。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: B2B, Catalog Management, Orders, Search
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 9bed5615-b398-42f5-8313-ae2acca59155
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%

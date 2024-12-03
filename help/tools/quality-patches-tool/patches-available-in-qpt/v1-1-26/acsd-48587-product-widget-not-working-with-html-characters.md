@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48587：產品Widget無法使用包含HTML字元的SKU'
+title: ACSD-48587：產品Widget無法使用包含HTML字元的SKU
 description: 套用ACSD-48587修補程式，修正Adobe Commerce中在產品Widget比對規則中HTML特殊字元無法顯示相符產品的問題。
 feature: Admin Workspace, CMS, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c3e31835-03be-46b4-a080-09edf55b5b4e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%

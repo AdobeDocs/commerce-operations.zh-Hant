@@ -3,7 +3,8 @@ title: ACSD-61756：由於缺少資料庫索引，「AdvancedSalesRule」篩選�
 description: 套用ACSD-61756修補程式以修正Adobe Commerce問題，該問題導致「magento_salesrule_filter」查詢在不使用索引的情況下執行完整表格掃描，在處理大量記錄時導致效能降低。 此修補程式會為'AdvancedSalesRule'篩選器新增遺失的資料庫索引，藉此改善效能。
 feature: Price Rules, Price Indexer
 role: Admin, Developer
-source-git-commit: 42a376d1a791a17d88bea68dfef178a7b2849ce2
+exl-id: 418c7c40-83ee-4cd9-8ebb-b356886ffb58
+source-git-commit: 23e92bb9032001134d2696be498a4c384f323c36
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%

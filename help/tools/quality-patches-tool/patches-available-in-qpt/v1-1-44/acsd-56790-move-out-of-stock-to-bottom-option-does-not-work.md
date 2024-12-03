@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56790：排序 [!DNL Visual Merchandiser]中的產品時，**[!UICONTROL move out of stock to bottom]**選項無法運作'
+title: ACSD-56790：排序 [!DNL Visual Merchandiser]中的產品時，**[!UICONTROL move out of stock to bottom]**選項無法運作
 description: 套用ACSD-56790修補程式，修正Adobe Commerce在視覺化商品銷售中排序產品時，從庫存移至底部選項無法運作的問題。
 feature: Products, Categories
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a5e5f208-793d-45a5-a000-f8ff1c31d049
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%

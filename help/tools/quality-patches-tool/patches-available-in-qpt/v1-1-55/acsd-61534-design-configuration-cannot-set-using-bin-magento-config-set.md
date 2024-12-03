@@ -3,7 +3,8 @@ title: ACSD-61534：無法使用bin/magento config：set設定設計設定，並
 description: 套用ACSD-61534修補程式以修正Adobe Commerce無法使用命令「bin/magento config：set」設定設計設定，且鎖定值可透過表單操控進行變更的問題。
 feature: Configuration
 role: Admin, Developer
-source-git-commit: ef00c05593ad319caab8bb9e0f5090959786513f
+exl-id: 5bba3f05-e017-42b2-8a89-5471afb84ff3
+source-git-commit: bbf7df7fdca4c11f6f268344db00e2c8643b5dce
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

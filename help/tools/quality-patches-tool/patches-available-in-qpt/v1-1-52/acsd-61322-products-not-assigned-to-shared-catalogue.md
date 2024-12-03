@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-61322：未指派給[!UICONTROL Shared Catalogue]的產品包含在XML網站地圖」
+title: ACSD-61322：未指派給[!UICONTROL Shared Catalogue]的產品包含在XML網站地圖
 description: 套用ACSD-61322修補程式以修正Adobe Commerce未指派給預設（一般）群組[!UICONTROL Shared Catalog]的產品/類別仍包含在XML網站地圖中的問題。
 feature: Site Navigation, B2B
 role: Admin, Developer
-source-git-commit: 1eed4f1f6484112a0ec728659aa4b79855bf9612
+exl-id: 4698ba5a-673e-4bf0-b36c-39f6122dab26
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%

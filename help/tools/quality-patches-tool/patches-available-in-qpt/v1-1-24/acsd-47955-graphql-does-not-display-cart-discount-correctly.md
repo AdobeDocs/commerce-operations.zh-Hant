@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-47955：GraphQL未正確顯示購物車折扣'
+title: ACSD-47955： GraphQL未正確顯示購物車折扣
 description: 套用ACSD-47955修補程式以修正GraphQL未正確顯示購物車折扣的Adobe Commerce問題。
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bbfe9957-18f9-4874-8e11-2f7cfcb5b614
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

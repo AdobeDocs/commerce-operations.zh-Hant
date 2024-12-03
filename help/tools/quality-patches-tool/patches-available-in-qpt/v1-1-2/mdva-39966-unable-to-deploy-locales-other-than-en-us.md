@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-39966：無法部署en_US以外的地區設定'
+title: MDVA-39966：無法部署en_US以外的地區設定
 description: MDVA-39966修補程式解決使用者無法部署en_US以外的地區設定的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2時，即可使用此修補程式。 修補程式ID為MDVA-39966。 請注意，Adobe Commerce 2.4.1版已修正問題。
 feature: Deploy
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 03bb0002-9742-4f26-bb41-1b46f0a3573c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

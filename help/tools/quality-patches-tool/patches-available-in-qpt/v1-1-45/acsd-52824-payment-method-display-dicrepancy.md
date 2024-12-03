@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-52824：為公司客戶顯示的停用付款方法」
+title: ACSD-52824：為公司客戶顯示的停用付款方法
 description: 套用ACSD-52824修補程式，修正公司設定中雖已停用，但公司客戶仍會看到 [!DNL PayPal Express], [!DNL Google Pay], and [!DNL Apple Pay] 付款方法的Adobe Commerce問題。
 feature: Payments, B2B, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 39d67de6-1796-4067-ae7a-ef17fcf794e5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%

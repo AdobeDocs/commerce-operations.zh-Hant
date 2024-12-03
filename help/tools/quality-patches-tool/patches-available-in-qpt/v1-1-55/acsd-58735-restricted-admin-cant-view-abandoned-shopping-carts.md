@@ -1,16 +1,15 @@
 ---
-title: 「ACSD-58735：受限制的管理員無法在相關網站的客戶帳戶上檢視放棄的購物車」
+title: ACSD-58735：受限制的管理員無法檢視相關網站客戶帳戶上的放棄購物車
 description: 套用ACSD-58735修補程式以修正Adobe Commerce問題，該問題導致受限制的管理員無法檢視相關網站之Commerce管理員中客戶帳戶頁面上的放棄購物車。
 feature: Shopping Cart, Admin Workspace, Customers
 role: Admin, Developer
-source-git-commit: 35bae8cff40235957f8fea418a43ccead13536da
+exl-id: b5dcc12f-325d-4de5-bae5-ff938ec77b13
+source-git-commit: 8a33e0aadf3aab2b267f18b20a5195538b6990ef
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
 
 ---
-
-
 
 # ACSD-58735：受限制的管理員無法檢視相關網站客戶帳戶上的放棄購物車
 

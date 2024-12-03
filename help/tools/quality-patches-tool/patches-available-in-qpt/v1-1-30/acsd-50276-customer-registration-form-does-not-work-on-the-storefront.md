@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-50276：如果建立了多選客戶屬性，則店面無法使用客戶登錄檔單」
+title: ACSD-50276：如果建立了多選客戶屬性，則店面無法提供客戶登錄檔單
 description: 套用ACSD-50276修補程式，修正建立多選客戶屬性時，店面無法使用客戶登錄檔單的Adobe Commerce問題。
 feature: Attributes, Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e7cb2416-d10b-46b0-83c4-93b107560d71
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-47336：在Adobe Commerce管理中關閉通知時出現[!UICONTROL Something went wrong]錯誤'
+title: ACSD-47336：在Adobe Commerce管理中關閉通知時出現[!UICONTROL Something went wrong]錯誤
 description: 套用ACSD-47336修補程式來修正Adobe Commerce問題，此問題導致使用者在 [!DNL Commerce] 管理員中關閉通知時看到[!UICONTROL Something went wrong]錯誤。
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: da0c0119-6720-493f-a278-d573ed898a63
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%

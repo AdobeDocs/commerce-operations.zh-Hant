@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-52041：頁面產生器轉譯不會解除鎖定」
+title: ACSD-52041：頁面產生器演算不會解除鎖定
 description: 套用ACSD-52041修補程式來修正Adobe Commerce問題，此問題導致頁面產生器呈現五秒鐘，且未釋放鎖定。
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 48a7fc36-e98a-4a4e-bed3-248d7d73f6cb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%

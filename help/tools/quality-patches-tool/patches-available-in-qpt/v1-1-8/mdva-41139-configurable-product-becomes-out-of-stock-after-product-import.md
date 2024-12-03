@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-41139：可設定的產品在產品匯入後無庫存'
+title: MDVA-41139：可設定的產品在產品匯入後無庫存
 description: MDVA-41139修補程式修正了簡單產品其中一個來源的數量= 0時，可設定產品在產品匯入後無存貨的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8時，即可使用此修補程式。 修補程式ID為MDVA-41139。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: Data Import/Export, Configuration, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 7366230c-3b7f-4211-9f0d-55a528dffdbd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-60303：啟用HTML縮制後，管理員訂單放置問題已解決」
+title: ACSD-60303：啟用HTML縮制後，管理員訂單放置問題已解決
 description: 套用ACSD-60303修補程式以修正Adobe Commerce問題，若啟用HTML縮制，則無法發出管理員訂單。
 feature: Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 85b987e7-9d65-4d15-8099-985dc227b66c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%

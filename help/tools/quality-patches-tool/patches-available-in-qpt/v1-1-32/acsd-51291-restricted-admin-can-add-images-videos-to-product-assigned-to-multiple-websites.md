@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51291：受限制的管理員可將影像/影片新增至指派給多個網站的產品」
+title: ACSD-51291：受限制的管理員可將影像/影片新增至指派給多個網站的產品
 description: 套用ACSD-51291修補程式以修正Adobe Commerce問題，其中存取一個網站的受限管理員可將影像/影片新增至指派給多個網站的產品。
 feature: Admin Workspace, Products, Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4edd034-f718-4559-9993-11609f0d0efa
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%

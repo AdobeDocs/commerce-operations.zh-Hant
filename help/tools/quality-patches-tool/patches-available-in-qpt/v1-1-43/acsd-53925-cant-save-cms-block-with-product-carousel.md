@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53925：無法使用[!UICONTROL Product Carousel]儲存CMS區塊'
+title: ACSD-53925：無法以[!UICONTROL Product Carousel]儲存CMS區塊
 description: 套用ACSD-53925修補程式以修正將「catalog_product_price」的維度模式設為網站時，管理員無法透過產品輪播儲存CMS區塊的Adobe Commerce問題。
 feature: CMS, Page Builder, Price Indexer, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f6d286ab-d904-4f08-8265-99632f74b88a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%

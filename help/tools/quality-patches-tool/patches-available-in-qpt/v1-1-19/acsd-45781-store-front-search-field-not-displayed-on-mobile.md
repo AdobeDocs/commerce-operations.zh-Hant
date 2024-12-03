@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-45781：行動裝置上未顯示商店前端搜尋欄位'
+title: ACSD-45781：行動裝置上未顯示商店前端搜尋欄位
 description: MDVA-45781修補程式可解決行動裝置上未顯示商店前端搜尋欄位的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19後，即可使用此修補程式。 修補程式ID為MDVA-45781。 請注意，問題已在Adobe Commerce 2.4.3中修正。
 feature: Cache, Native Luma Frontend Development, Search
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f761461b-2dd0-45d2-b80d-57793f6f0924
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

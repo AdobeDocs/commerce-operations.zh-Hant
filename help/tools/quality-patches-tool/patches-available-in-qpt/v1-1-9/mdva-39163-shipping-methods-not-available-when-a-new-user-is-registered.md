@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-39163：新註冊的使用者無法透過來賓工作階段的產品使用送貨方法'
+title: MDVA-39163：新註冊的使用者無法從來賓工作階段取得產品的送貨方法
 description: MDVA-39163修補程式可解決當新使用者註冊且購物車中的產品來自訪客工作階段時，無法使用送貨方法的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9後，即可使用此修補程式。 修補程式ID為MDVA-39163。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: CMS, Marketing Tools, Orders, Products, Shipping/Delivery
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 781b466b-7d8f-4ad1-9fb4-5404cd02f7d8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 0%

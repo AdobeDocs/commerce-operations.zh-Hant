@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49973：改善透過 [!DNL GraphQL]擷取套件產品的效能'
+title: ACSD-49973：改善透過 [!DNL GraphQL]擷取套件產品的效能
 description: 套用ACSD-49973修補程式以修正透過 [!DNL GraphQL]擷取套件產品時發生效能降低的Adobe Commerce問題。
 feature: GraphQL, Products
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: d4817522-65dd-4ac8-8759-8518818684ed
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%

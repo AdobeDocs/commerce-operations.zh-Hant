@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-54680：無法處理具有多個指定來源之產品的B2B報價」
+title: ACSD-54680：無法處理具有多個指定來源之產品的B2B報價
 description: 套用ACSD-54680修補程式，修正Adobe Commerce無法處理具有多指定來源之產品的B2B報價的問題。
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c5307785-a4c6-4d0c-9009-0d0caee97b3d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

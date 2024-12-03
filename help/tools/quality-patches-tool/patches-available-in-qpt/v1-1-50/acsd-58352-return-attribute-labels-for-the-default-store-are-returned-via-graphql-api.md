@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-58352：透過 [!DNL GraphQL] API傳回預設存放區的傳回屬性標籤'
+title: ACSD-58352：透過 [!DNL GraphQL] API傳回預設存放區的傳回屬性標籤
 description: 套用ACSD-58352修補程式以修正Adobe Commerce問題，其中當在請求標頭中指定非預設存放區檢視時，會透過 [!DNL GraphQL] API傳回預設存放區的傳回屬性標籤。
 feature: GraphQL, Returns
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e513039e-42cd-4dac-963b-3068ba8bf7ee
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58352：透過[!DNL GraphQL] API傳回預設存放區的傳回屬性標籤
 

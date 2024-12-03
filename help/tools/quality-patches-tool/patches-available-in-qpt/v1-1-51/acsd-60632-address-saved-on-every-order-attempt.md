@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-60632：每次嘗試訂購時儲存的地址」
+title: ACSD-60632：每次嘗試訂購時儲存的地址
 description: 套用ACSD-60632修補程式以修正Adobe Commerce問題，其中新地址會與每次嘗試下訂單一併儲存，無論是否成功建立訂單。
 feature: Orders, Products
 role: Admin, Developer
-source-git-commit: d68d6f7501e7dd6faf36f8506d1b0aab028eed58
+exl-id: 9b623a1c-594f-47ed-82b4-d11ba20f3a58
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

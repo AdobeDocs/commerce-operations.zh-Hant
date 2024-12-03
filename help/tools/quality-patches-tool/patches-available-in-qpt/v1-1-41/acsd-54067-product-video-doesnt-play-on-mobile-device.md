@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54067：產品影片不會在行動裝置上播放'
+title: ACSD-54067：產品影片不會在行動裝置上播放
 description: 套用ACSD-54067修補程式以修正無法在行動裝置上播放產品影片的Adobe Commerce問題。
 feature: Media, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 023e7cf7-c344-4e86-850d-741b85df87a9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%

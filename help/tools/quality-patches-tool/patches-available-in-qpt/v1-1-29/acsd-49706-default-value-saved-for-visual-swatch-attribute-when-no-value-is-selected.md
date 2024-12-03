@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49706：未選取值時，為視覺色票屬性儲存的預設值'
+title: ACSD-49706：未選取任何值時，為視覺色票屬性儲存的預設值
 description: 套用ACSD-49706修補程式以修正Adobe Commerce的問題，亦即未選取任何值時，預設值會儲存為視覺色票屬性。
 feature: Admin Workspace, Attributes
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fa3cb0a1-f898-4826-aa64-efeba1af58a8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%

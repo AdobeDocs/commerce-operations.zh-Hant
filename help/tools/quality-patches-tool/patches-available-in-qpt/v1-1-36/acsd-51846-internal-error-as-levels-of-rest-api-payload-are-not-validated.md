@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51846：未驗證 [!DNL REST API] 裝載層級的內部錯誤」
+title: ACSD-51846：未驗證 [!DNL REST API] 裝載層級的內部錯誤
 description: 套用ACSD-51846修補程式以修正Adobe Commerce問題，其中發生「內部錯誤」，因為所有層級的 [!DNL REST API] 承載均未驗證。
 feature: REST
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 436b075c-d9df-4bf2-94a2-52f2e66e8a4c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54018：目錄Widget產品清單的效能問題'
+title: ACSD-54018：目錄Widget產品清單的效能問題
 description: 套用ACSD-54018修補程式，修正在新增具有條件和屬性型別布林值的目錄Widget產品清單時，頁面載入緩慢的Adobe Commerce問題。
 feature: Attributes, Catalog Management, Page Builder, Page Content, Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2fb7ca37-78cc-45f4-86a3-d922cf4d1457
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-50817：最佳化cron job sales_clean_quotes以更快執行'
+title: ACSD-50817：最佳化cron工作sales_clean_quotes以更快執行
 description: 套用ACSD-50817修補程式，透過在報價表的'store_id'和'updated_at'欄上新增複合索引，最佳化cron工作'sales_clean_quotes'以更快地執行。
 feature: Quotes
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b6cd412f-2f37-438b-9abc-d45de6ed54d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%

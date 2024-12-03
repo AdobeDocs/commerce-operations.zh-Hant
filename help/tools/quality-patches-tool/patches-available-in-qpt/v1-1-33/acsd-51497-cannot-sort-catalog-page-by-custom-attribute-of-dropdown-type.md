@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51497：無法依型別「下拉式清單」的自訂屬性排序目錄頁面'
+title: ACSD-51497：無法依「下拉式清單」型別的自訂屬性排序目錄頁面
 description: 套用ACSD-51497修補程式，修正Adobe Commerce中客戶無法依下拉式清單型別的自訂屬性排序目錄頁面的問題。
 feature: Attributes, Cache, Catalog Management, Categories
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c66a7e04-fd2a-47be-8f7a-7982780a5414
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%

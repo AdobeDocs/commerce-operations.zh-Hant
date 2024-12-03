@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52929：重新索引預設來源專案的備援請求'
+title: ACSD-52929：重新索引預設來源專案的備援請求
 description: 套用ACSD-52929修補程式來修正Adobe Commerce問題，其中當庫存索引器設定為非同步模式時，有重新索引預設來源專案的多餘請求。
 feature: Configuration, Inventory
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 904aed0e-a6cd-4a0f-949d-bb32fcd77356
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%

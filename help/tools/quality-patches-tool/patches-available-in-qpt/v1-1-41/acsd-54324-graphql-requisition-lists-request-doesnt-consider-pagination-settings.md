@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-54324：GraphQL requisition_lists請求不考慮分頁設定」
+title: ACSD-54324： GraphQL requisition_lists請求不考慮分頁設定
 description: 套用ACSD-54324修補程式，修正Adobe Commerce中GraphQL「requisition_lists」請求不考慮分頁設定並傳回所有結果的問題。
 feature: B2B, Customers, GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 60f82602-1cfc-4523-a50d-46af5d5f10d9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 「MDVA-39935：GraphQL會傳回在網站層級停用的可設定子產品」
+title: MDVA-39935：GraphQL會傳回在網站層級停用的可設定子產品'
 description: MDVA-39935 Adobe Commerce修補程式修正GraphQL傳回可在網站層級停用的可設定子產品的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2時，即可使用此修補程式。 修補程式ID為MDVA-39935。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: GraphQL, Configuration, Products
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: b86b1595-ddd5-41ce-b126-287046462561
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

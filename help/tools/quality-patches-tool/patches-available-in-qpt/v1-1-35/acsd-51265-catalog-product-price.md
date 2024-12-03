@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51265：最佳化套件產品的重新索引'
+title: ACSD-51265：最佳化套件產品的重新索引
 description: 套用ACSD-51265修補程式來修正Adobe Commerce問題，即當系統中捆綁的產品過多時，「catalog_product_price」重新索引效能偏低。
 feature: Products, Price Indexer
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1a173ca7-f99e-42d8-87d7-81a6b33f2d4d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

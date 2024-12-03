@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-25631：無法儲存並重新整理客戶區段'
+title: MDVA-25631：無法儲存和重新整理客戶區段
 description: MDVA-25631修補程式解決使用者無法儲存和重新整理包含大量客戶的客戶區段的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4時，即可使用此修補程式。 修補程式ID為MDVA-25631。 請注意，問題已在Adobe Commerce 2.4.2中修正。
 feature: Customer Service
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 3cf40538-822a-4d3e-b8fa-20f9ef9228ae
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%

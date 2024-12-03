@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-59925：在GraphQL中依位置排序[!UICONTROL Media Gallery]中的專案」
+title: ACSD-59925：在GraphQL中依位置排序[!UICONTROL Media Gallery]中的專案
 description: 套用ACSD-59925修補程式以修正Adobe Commerce問題，該問題導致[!UICONTROL Media Gallery]中的專案未依位置排序，進而導致顯示順序不正確。
 feature: Media, GraphQL
 role: Admin, Developer
-source-git-commit: 97e3ab77e7c8f5f1efd9b616b5e1d198a1b41ab0
+exl-id: a4dd840f-44d2-40dc-b0e1-13d55b688204
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

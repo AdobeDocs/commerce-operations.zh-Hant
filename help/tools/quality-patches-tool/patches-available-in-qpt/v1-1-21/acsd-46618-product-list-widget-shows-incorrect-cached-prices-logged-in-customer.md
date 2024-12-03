@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-46618：產品清單Widget針對登入的客戶顯示不正確的快取價格」
+title: ACSD-46618：產品清單Widget針對登入的客戶顯示不正確的快取價格
 description: 套用修補程式，修正Adobe Commerce產品清單Widget對登入客戶顯示錯誤快取價格的問題。
 feature: Cache, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fa350f84-2fe5-474b-b4fd-d6c1e8bb0f95
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%

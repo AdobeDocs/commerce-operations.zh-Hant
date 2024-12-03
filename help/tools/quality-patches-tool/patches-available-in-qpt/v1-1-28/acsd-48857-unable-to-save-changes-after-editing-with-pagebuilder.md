@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48857：使用 [!DNL Page Builder]編輯後無法儲存變更'
+title: ACSD-48857：使用 [!DNL Page Builder]編輯後無法儲存變更
 description: 套用ACSD-48857修補程式以修正使用者使用 [!DNL Page Builder]編輯後無法儲存變更的Adobe Commerce問題。
 feature: Admin Workspace, CMS, Page Builder
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b03cd597-8fef-4528-9699-793dc61d34da
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%

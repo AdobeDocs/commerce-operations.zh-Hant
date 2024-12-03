@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49392：部分退款後，訂單狀態變更為已關閉'
+title: ACSD-49392：部分退款後，訂單狀態變更為已關閉
 description: 套用ACSD-49392修補程式以修正Adobe Commerce問題，該問題導致捆綁產品的部分退款後，訂單狀態變更為已關閉。
 feature: Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e12cbf2d-219e-4cb5-a226-6c7ae4929549
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-49839：共用目錄定價和結構擲回錯誤」
+title: ACSD-49839：共用目錄定價和結構擲回錯誤
 description: 套用ACSD-49839修補程式以修正Adobe Commerce問題，該問題導致當產品在SKU中有單引號或雙引號時，共用目錄定價和結構在管理員中擲回錯誤。
 feature: Admin Workspace, Catalog Management, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b74e3926-16c8-4222-b642-ed1b7095dea4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

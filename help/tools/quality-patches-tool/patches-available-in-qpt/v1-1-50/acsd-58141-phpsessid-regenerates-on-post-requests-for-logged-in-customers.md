@@ -1,15 +1,15 @@
 ---
-title: 「ACSD-58141：為已啟用L2 Redis快取的登入客戶在POST請求時重新產生PHPSESSID」
+title: ACSD-58141：為已啟用L2 Redis快取的登入客戶在POST請求時重新產生PHPSESSID
 description: 套用ACSD-58141修補程式以修正Adobe Commerce問題，其中針對已啟用L2 Redis快取的登入客戶，在店面區域的POST請求上重新產生「PHPSESSID」，且客戶會從Admin更新。
 feature: Customers, Cache
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c188c215-204c-489f-8703-4c81ca8703b7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58141：如果L2 Redis快取已啟用，PHPSESSID會在登入客戶的[!DNL POST]個要求上重新產生
 

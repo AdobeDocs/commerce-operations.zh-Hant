@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49497：訂單在出貨後仍在處理且已部分退款'
+title: ACSD-49497：訂單在出貨後仍在處理，且已部分退款
 description: 套用ACSD-49497修補程式，以修正Adobe Commerce問題，此問題的訂單狀態在出貨後仍維持為處理狀態，且已套用部分退款。
 feature: Admin Workspace, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e2e3d2b3-24be-4827-a735-aebfc6f475ea
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-61195：購物車GraphQL請求無法傳回最終頁面上的專案」
+title: ACSD-61195：購物車GraphQL請求無法傳回最終頁面上的專案
 description: 套用ACSD-61195修補程式以修正購物車GraphQL請求的最後一頁未傳回購物車專案的Adobe Commerce問題。
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: f6e410e0787e56717b3910b7f3938108a7af9cd8
+exl-id: 15f0f29c-8517-4f1e-9370-772572e75c9a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%

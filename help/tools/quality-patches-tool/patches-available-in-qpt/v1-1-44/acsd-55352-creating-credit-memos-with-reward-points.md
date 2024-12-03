@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-55352：建立含獎勵積分的銷退折讓單'
+title: ACSD-55352：以獎勵點數建立銷退折讓單
 description: 套用ACSD-55352修補程式以修正Adobe Commerce問題，其中在建立包含客戶獎勵點數的部分銷退折讓單後，訂單狀態會變更為*closed*，而銷退折讓單選項會從管理訂單頁面消失。
 feature: Checkout, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%

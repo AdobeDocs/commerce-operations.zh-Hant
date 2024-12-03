@@ -1,7 +1,8 @@
 ---
-title: 'ACSD-51645：如果擴充功能Magento_OfflineShipping已停用，儲存新的購物車價格規則'
+title: ACSD-51645：如果停用擴充功能Magento_OfflineShipping，儲存新的購物車價格規則
 description: 套用ACSD-51645修補程式以修正Adobe Commerce問題，此問題會在停用擴充功能Magento_OfflineShipping的情況下，儲存新的購物車價格規則時發生錯誤。
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ce747ae4-6d2f-41c0-ba75-7da72be359c7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%

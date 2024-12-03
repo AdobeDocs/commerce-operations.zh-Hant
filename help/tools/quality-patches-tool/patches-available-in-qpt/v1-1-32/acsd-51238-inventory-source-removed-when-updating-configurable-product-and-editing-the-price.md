@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-51238：更新可設定產品並編輯價格時會移除存貨來源」
+title: ACSD-51238：更新可設定產品並編輯價格時，會移除存貨來源
 description: 套用ACSD-51238修補程式來修正Adobe Commerce問題，此問題會在更新可設定產品並編輯價格時移除庫存來源。
 feature: Configuration, Inventory, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 785f012f-e064-4ac6-b559-9e9aa42c679c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

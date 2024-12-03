@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-57086：來自啟用條款與條件之非預設網站的訂單會被錯誤處理」
+title: ACSD-57086：來自啟用條款與條件之非預設網站的訂單會遭到錯誤處理
 description: 套用ACSD-57086修補程式，修正來自啟用條款與條件之非預設網站的訂單無法正確處理的Adobe Commerce問題。
 feature: Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9f2ef50-12c4-4a2d-b140-dfd0e8948fd3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%

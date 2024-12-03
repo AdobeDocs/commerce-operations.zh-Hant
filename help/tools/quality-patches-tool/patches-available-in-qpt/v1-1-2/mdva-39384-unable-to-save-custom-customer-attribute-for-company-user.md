@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-39384：無法儲存公司使用者的自訂客戶屬性'
+title: MDVA-39384：無法儲存公司使用者的自訂客戶屬性
 description: MDVA-39384修補程式解決未儲存公司使用者的自訂客戶屬性的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2時，即可使用此修補程式。 修補程式ID為MDVA-39384。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: Attributes, B2B, Companies
 role: Developer
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 0ccaa4c5-ca43-4b25-963b-b9a547ecc71f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%

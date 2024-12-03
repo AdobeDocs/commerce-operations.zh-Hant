@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-58054：為非作用中客戶產生API Token」
+title: ACSD-58054：為非作用中客戶產生API Token
 description: 套用ACSD-58054修補程式以修正Adobe Commerce問題，其中可能透過API為非作用中客戶產生客戶權杖。
 feature: Customers, API Mesh
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 143cfc3e-0220-4950-8528-acf3bce686db
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%

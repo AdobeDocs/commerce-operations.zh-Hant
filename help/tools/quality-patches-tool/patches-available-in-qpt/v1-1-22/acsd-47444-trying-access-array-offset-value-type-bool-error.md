@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-47444：存取PHP 7.4上已知產品的特定非現有類別路徑時出現_[!UICONTROL Trying to access array offset on value of type bool]_錯誤」
+title: ACSD-47444：存取PHP 7.4上已知產品的特定非現有類別路徑時發生_[!UICONTROL Trying to access array offset on value of type bool]_錯誤
 description: 套用ACSD-47444修補程式來修正PHP 7.4上存取已知產品的特定非現有類別路徑時發生_[!UICONTROL Trying to access array offset on value of type bool]_錯誤的Adobe Commerce問題。
 feature: Categories, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9f04ee28-d22c-4fdf-9228-e436abe973e8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%

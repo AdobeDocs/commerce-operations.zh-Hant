@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-39986：無法在macOS上Safari瀏覽器的管理員中下訂單'
+title: MDVA-39986：無法在macOS上Safari瀏覽器的管理員中下訂單
 description: MDVA-39986修補程式修正使用者無法在macOS上使用Safari瀏覽器在管理員中下訂單的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2時，即可使用此修補程式。 修補程式ID為MDVA-39986。 請注意，問題已在Adobe Commerce 2.4.3中修正。
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: bd4e72fe-278d-40ae-98d3-1eeca0a0e70c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54972：標準類別URL未更新'
+title: ACSD-54972：規範類別URL未更新
 description: 套用ACSD-54972修補程式，修正Adobe Commerce中標準類別URL在變更類別URL後未更新的問題。
 feature: Catalog Management, Products, Categories
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c4b17c08-9a2b-44a2-925e-f4c5cce7b760
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%

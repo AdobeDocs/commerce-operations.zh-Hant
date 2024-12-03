@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-61845：請求包含text/html accept標頭時發生錯誤」
+title: ACSD-61845：請求包含text/html accept標頭時發生錯誤
 description: 套用ACSD-61845修補程式來修正Adobe Commerce的問題，即傳送僅含*text/html* accept標頭的HTTP請求會造成500錯誤，並安裝B2B模組。
 feature: B2B
 role: Admin, Developer
-source-git-commit: 8dbf91806097281fb4f7c74e182f10b09b18e925
+exl-id: 6fa6c3ff-bb45-4b9e-afd4-95692acb0a90
+source-git-commit: 29845fd4a8c1c744aa780e60bb4154dfc3c1a02c
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%

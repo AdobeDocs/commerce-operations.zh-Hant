@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-56193： [!DNL Fastly] 快取未針對內容分段更新清除'
+title: ACSD-56193： [!DNL Fastly] 快取未針對內容分段更新清除
 description: 套用ACSD-56193修補程式以修正Adobe Commerce中 [!DNL Fastly] 快取未清除以供內容分段更新的問題。
 feature: Cache, GraphQL, Staging
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a702ce22-cc85-4f58-8766-637a1b93d405
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

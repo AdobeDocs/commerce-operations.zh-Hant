@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-50887： *[!UICONTROL Use in Search Results Layered Navigation]*設定為Yes，不含*[!UICONTROL Use in Search]*選項'
+title: ACSD-50887： *[!UICONTROL Use in Search Results Layered Navigation]*設定為Yes而沒有*[!UICONTROL Use in Search]*選項
 description: 套用ACSD-50887修補程式以修正Adobe Commerce的問題，其中產品屬性屬性*[!UICONTROL Use in Search Results Layered Navigation]*可設為*Yes*，而*[!UICONTROL Use in Search]*選項也可設為*Yes*。
 feature: Attributes, Products, Search, Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5e797121-c386-4aca-9139-0a02a60be38a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-47137：改善影像集載入速度''pub/media''資料夾太大'''
+title: ACSD-47137：改善影像中心載入速度「pub/media」資料夾太大
 description: 當「pub/media」資料夾非常大時，套用ACSD-47137修補程式可改善影像庫的載入速度。
 feature: Cache, Catalog Management, Categories, Media
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8a5dd930-1940-486e-96db-ee1b166cf312
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

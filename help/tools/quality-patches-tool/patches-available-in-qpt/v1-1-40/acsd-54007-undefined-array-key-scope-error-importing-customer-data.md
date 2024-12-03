@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-54007：匯入客戶資料時出現未定義的陣列索引鍵範圍錯誤」
+title: ACSD-54007：匯入客戶資料時出現未定義的陣列機碼範圍錯誤(_S)
 description: 套用ACSD-54007修補程式，修正匯入客戶資料時顯示「未定義陣列機碼_scope」錯誤的Adobe Commerce問題。
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: df0fc9f4-1d42-47bc-b161-d2f109996684
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

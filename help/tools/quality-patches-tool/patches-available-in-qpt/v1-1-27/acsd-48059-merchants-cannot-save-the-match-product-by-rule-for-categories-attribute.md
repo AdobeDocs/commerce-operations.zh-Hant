@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48059：商家無法為Categories屬性儲存[!UICONTROL Match product by rule]。'
+title: ACSD-48059：商家無法為「類別」屬性儲存[!UICONTROL Match product by rule]。
 description: 套用ACSD-48059修補程式以修正Adobe Commerce商戶無法為Categories屬性儲存[!UICONTROL Match product by rule]的問題。
 feature: Admin Workspace, Attributes, Categories, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e156a752-81b3-4404-81e2-af7ed29f2b1d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

@@ -1,7 +1,8 @@
 ---
-title: 「ACSD-51120：未針對包含GraphQL區塊的CMS頁面清除CMSGET請求快取」
+title: ACSD-51120：未針對包含GraphQL區塊的CMS頁面清除CMSGET請求快取
 description: 套用ACSD-51120修補程式以修正Adobe Commerce頁面包含GraphQL區塊的CMSGET請求快取未清除的CMS問題。
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e1b84db0-2441-4729-aeeb-8486a623aebf
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-47910：個別實體網格中遺漏的訂單、商業發票、出貨、銷退折讓單'
+title: ACSD-47910：個別實體網格中遺漏的訂單、商業發票、出貨、銷退折讓單
 description: 套用ACSD-47910修補程式，修正個別實體網格中遺失訂單、商業發票、出貨及銷退折讓單的Adobe Commerce問題。
 feature: Admin Workspace, Invoices, Orders, Returns, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09115cf3-62c3-425e-bc99-e8971398dd20
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

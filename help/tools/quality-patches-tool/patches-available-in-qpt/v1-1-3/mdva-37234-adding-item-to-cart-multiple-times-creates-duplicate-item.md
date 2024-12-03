@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-37234：將專案多次新增到購物車會建立重複的行專案'
+title: MDVA-37234：將專案多次新增到購物車會建立重複的行專案
 description: MDVA-37234修補程式針對相同SKU將專案多次新增至購物車（平行請求）時，會為相同購物車ID建立重複條列專案，此問題已獲修正。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3後，即可使用此修補程式。 修補程式ID為MDVA-37234。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: Orders, Shopping Cart
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: d4e9fca1-7fba-4a33-9c5e-c9695cbfc61c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

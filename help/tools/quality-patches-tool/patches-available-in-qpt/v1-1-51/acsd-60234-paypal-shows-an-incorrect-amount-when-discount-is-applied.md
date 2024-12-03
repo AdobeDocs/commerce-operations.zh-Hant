@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-60234： [!DNL PayPal] 在套用折扣時顯示不正確的金額'
+title: ACSD-60234： [!DNL PayPal] 在套用折扣時顯示不正確的金額
 description: 套用ACSD-60234修補程式以修正Adobe Commerce問題，其中透過付款方式套用折扣時， [!DNL PayPal] 顯示不正確的金額。
 feature: Products, Configuration
 role: Admin, Developer
-source-git-commit: 334e9f740b49d87fc20ee8950d85adb9612c00b7
+exl-id: 2ce7bde5-02a4-4989-80d6-ab1be0ca5fe9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%

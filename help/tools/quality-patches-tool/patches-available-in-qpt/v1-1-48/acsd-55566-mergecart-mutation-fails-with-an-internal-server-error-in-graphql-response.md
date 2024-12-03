@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-55566： [!UICONTROL mergeCart]變異失敗，在 [!DNL GraphQL] 回應中發生內部伺服器錯誤'
+title: ACSD-55566： [!UICONTROL mergeCart]突變失敗，在 [!DNL GraphQL] 回應中發生內部伺服器錯誤
 description: 套用ACSD-55566修補程式，以修正合併來源與目的地購物車（具有相同的組合專案）時，「mergeCart」變異失敗且 [!DNL GraphQL] 回應中發生內部伺服器錯誤的Adobe Commerce問題。
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 84c6fbb9-73b3-4197-aff3-49743f0ebb2c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

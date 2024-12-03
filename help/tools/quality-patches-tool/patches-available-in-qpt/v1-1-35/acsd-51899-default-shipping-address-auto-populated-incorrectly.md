@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51899：預設送貨地址自動填入不正確'
+title: ACSD-51899：預設送貨地址自動填入不正確
 description: 套用ACSD-51899修補程式，修正Adobe Commerce中預設送貨地址自動填入錯誤地址的問題。
 feature: Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 14e48613-6af8-476c-978d-87c27a0b0d15
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

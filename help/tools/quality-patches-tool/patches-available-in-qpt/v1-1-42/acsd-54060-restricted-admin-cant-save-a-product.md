@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-54060：受限管理員無法儲存產品（如果它是其他產品的子項）」
+title: ACSD-54060：限制的管理員無法儲存產品（如果它是其他產品的子項）
 description: 套用ACSD-54060修補程式以修正Adobe Commerce限制管理員無法儲存產品（如果產品是指派給其他範圍之其他產品的子產品）的問題。
 feature: Admin Workspace, Roles/Permissions, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2af24cbf-65a1-4bd6-aad3-19b613bee7f2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

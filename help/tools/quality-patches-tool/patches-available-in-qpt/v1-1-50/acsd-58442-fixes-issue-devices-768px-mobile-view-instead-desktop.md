@@ -1,15 +1,15 @@
 ---
-title: 「ACSD-58442：修正將768px寬度裝置視為行動裝置，導致功能表和標題載入行動檢視而非桌上型電腦的問題」
+title: ACSD-58442：修正將768px寬度裝置視為行動裝置，導致功能表和標題載入行動檢視而非桌上型電腦的問題
 description: 套用ACSD-58442修補程式以修正Adobe Commerce將寬度768px的裝置視為行動裝置，導致選單和標題在行動檢視中載入而非桌上型電腦的問題。
 feature: Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 86ea64aa-10fc-4fa3-9902-918fb8983ca0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58442：修正將768px寬度裝置視為行動裝置，導致功能表和標題載入行動檢視而非桌上型電腦的問題
 
@@ -62,5 +62,3 @@ ACSD-58442修補程式修正Adobe Commerce將寬度768px的裝置視為行動裝
 
 
 如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。
-
-

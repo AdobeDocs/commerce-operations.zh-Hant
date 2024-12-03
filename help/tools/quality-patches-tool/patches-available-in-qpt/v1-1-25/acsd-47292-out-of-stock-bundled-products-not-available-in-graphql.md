@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-47292：GraphQL回應中無法使用無庫存套件產品」
+title: ACSD-47292：GraphQL回應中無法使用無庫存套件產品
 description: 套用ACSD-47292修補程式以修正Adobe CommerceGraphQL回應中無法使用無庫存套裝產品的問題，即使「顯示無庫存產品」設為「是」亦然。
 feature: Admin Workspace, Categories, GraphQL, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3b8114a3-cc45-4d65-af74-cb3e905d7f75
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

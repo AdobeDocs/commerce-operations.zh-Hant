@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51528：對snake_case格式的不同行為'
+title: ACSD-51528：對snake_case格式化的不同行為
 description: 套用ACSD-51528修補程式以修正Snake_case格式有不同行為的Adobe Commerce問題。
 feature: Variables
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5f2add4b-8209-47a7-bfbd-cc434a050f0f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%

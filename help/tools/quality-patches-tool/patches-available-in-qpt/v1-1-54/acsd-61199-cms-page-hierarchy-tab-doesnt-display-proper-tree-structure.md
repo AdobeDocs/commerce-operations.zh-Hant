@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-61199： CMS頁面[!UICONTROL Hierarchy]索引標籤未顯示正確的樹狀結構'
+title: ACSD-61199： CMS頁面[!UICONTROL Hierarchy]索引標籤未顯示正確的樹狀結構
 description: 套用ACSD-61199修補程式以修正Adobe Commerce問題，該問題導致CMS頁面的*[!UICONTROL Hierarchy]*索引標籤在編輯具有現有*[!UICONTROL Hierarchy]*的CMS頁面時未顯示正確的樹狀結構。
 feature: Page Content
 role: Admin, Developer

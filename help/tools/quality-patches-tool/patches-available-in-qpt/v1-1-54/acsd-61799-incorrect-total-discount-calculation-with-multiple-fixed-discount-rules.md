@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-61799：套用至報價的多重固定折扣購物車規則的折扣總計計算不正確'
+title: ACSD-61799：套用至報價的多重固定折扣購物車規則的折扣總計計算不正確
 description: 套用ACSD-61799修補程式以修正當對報價套用多個具有固定折扣的購物車規則時，總折扣無法正確計算的Adobe Commerce問題。
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: 0b4c46e0db3dbd7ce5914490ae20471709be261d
+exl-id: a87ec1cd-f141-43b9-bde1-eca354c12d4e
+source-git-commit: 737204ae7418f49fdebfffbf351304796e9f5eb0
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61799：套用至報價的多重固定折扣購物車規則的折扣總計計算不正確
 
@@ -66,4 +66,3 @@ ACSD-61799修補程式可解決/修正當對報價套用多個具有固定折扣
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
-

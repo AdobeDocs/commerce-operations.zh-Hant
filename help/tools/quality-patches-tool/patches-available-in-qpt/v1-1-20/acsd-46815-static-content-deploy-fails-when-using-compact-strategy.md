@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46815：靜態內容部署無法使用壓縮策略'
+title: ACSD-46815：靜態內容部署無法使用壓縮策略
 description: 套用ACSD-46815修補程式，修正使用壓縮策略時靜態內容部署失敗的Adobe Commerce問題。
 feature: Deploy, Page Content, SCD
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 66941a83-daf8-4bb2-a575-b615e1c5dc7c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

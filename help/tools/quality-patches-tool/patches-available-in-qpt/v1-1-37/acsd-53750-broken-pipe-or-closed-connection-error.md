@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53750：多執行緒catalog_product_price重新索引期間出現「管道中斷或連線關閉」錯誤'
+title: ACSD-53750：多執行緒catalog_product_price重新索引期間出現「管道中斷或連線關閉」錯誤
 description: 套用ACSD-53750修補程式來修正Adobe Commerce問題，在多執行緒catalog_product_price重新索引期間發生*管道中斷或連線關閉*錯誤。
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6c2f092f-a98e-4990-839c-a7291635f8af
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

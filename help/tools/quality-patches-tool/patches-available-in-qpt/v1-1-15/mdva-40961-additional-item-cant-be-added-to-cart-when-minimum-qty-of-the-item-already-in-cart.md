@@ -1,9 +1,10 @@
 ---
-title: 「MDVA-40961：當購物車中已有最小數量的專案時，無法將其他專案新增到購物車」
+title: MDVA-40961：當購物車中已有最小數量的專案時，無法將其他專案新增到購物車中
 description: MDVA-40961修補程式修正當購物車中已有最小專案數量時，無法將其他專案新增到購物車的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15時，即可使用此修補程式。 修補程式ID為MDVA-40961。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: Orders, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: b5191919-062d-4ddd-84e2-a4801501724d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-53704：過期後計算錯誤的獎勵積分餘額歷史記錄'
+title: ACSD-53704：過期後誤算的獎勵點數餘額歷史記錄
 description: 套用ACSD-53704修補程式，修正Adobe Commerce中在獎勵點到期日之後錯誤計算獎勵點餘額歷史記錄的問題。
 feature: Rewards
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 8cd297cc-9e9d-4615-b817-283065a79c2f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%

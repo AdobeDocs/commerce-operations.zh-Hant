@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-54961：受限制的管理員使用者無法大量更新[!UICONTROL Product Review status]」
+title: ACSD-54961：受限制的管理員使用者無法大量更新[!UICONTROL Product Review status]
 description: 套用ACSD-54961修補程式以修正Adobe Commerce中受限制的管理員使用者無法大量更新產品評論狀態的問題。
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d303365c-d7c7-4aca-9f33-75d67bcbe573
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%

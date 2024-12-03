@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-46938：在''setup：upgrade''期間資料庫觸發程式發生效能問題'
+title: ACSD-46938：在「setup：upgrade」期間資料庫觸發程式出現效能問題
 description: 套用ACSD-46938修補程式以修正Adobe Commerce問題，其中的「setup：upgrade」命令將索引器模式從排程變更為儲存，導致效能大幅降低。
 feature: Upgrade
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4e88329-c5bb-4666-8738-b78b86056b71
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%

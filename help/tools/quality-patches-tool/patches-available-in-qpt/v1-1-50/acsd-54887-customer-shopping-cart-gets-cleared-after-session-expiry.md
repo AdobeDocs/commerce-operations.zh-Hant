@@ -1,15 +1,15 @@
 ---
-title: 「ACSD-54887：客戶購物車在客戶工作階段過期後清除」
+title: ACSD-54887：客戶購物車在客戶工作階段過期後清除
 description: 套用ACSD-54887修補程式以修正Adobe Commerce問題，該問題導致客戶購物車在啟用[!UICONTROL Persistent Shopping Cart]的客戶工作階段過期後獲得清除。
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: de2a96b2-48ce-4b9b-93bc-f7b64c37463a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-54887：客戶購物車在客戶工作階段過期後清除
 
@@ -71,4 +71,3 @@ ACSD-54887修補程式修正了客戶工作階段過期（啟用[!UICONTROL Pers
 
 
 如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。
-

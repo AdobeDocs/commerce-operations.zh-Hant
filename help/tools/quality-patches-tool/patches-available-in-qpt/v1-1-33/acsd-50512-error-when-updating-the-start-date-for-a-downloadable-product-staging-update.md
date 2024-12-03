@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-50512：更新可下載產品測試更新的開始日期時發生錯誤」
+title: ACSD-50512：更新可下載產品中繼更新的開始日期時發生錯誤
 description: 套用ACSD-51892修補程式以修正Adobe Commerce效能問題，其中錯誤*可下載連結與產品無關。請確認連結，然後再試一次* （在更新可下載產品測試版更新的開始日期時發生）。
 feature: Products, Staging
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9c3b4d45-c500-46a7-8679-a8aa9e0a66d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

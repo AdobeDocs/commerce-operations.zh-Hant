@@ -1,7 +1,8 @@
 ---
-title: 'ACSD-50478：備份網格和資料庫復原命令中的復原動作出現JS問題'
+title: ACSD-50478：備份網格和資料庫復原命令中復原動作的JS問題
 description: 套用ACSD-50478修正程式，修正備份網格中復原動作的JS問題，以及資料庫復原命令（針對DB傾印包含觸發程式和*分隔符號* SQL命令的情況）。
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2f47fbf6-44fc-487c-91fe-6e2e52fcdb2b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

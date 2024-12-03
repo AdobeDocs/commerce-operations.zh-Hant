@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51819：使用單引號ID下多份訂單'
+title: ACSD-51819：使用單引號ID下多份訂單
 description: 套用ACSD-51819修補程式，修正Adobe Commerce中可透過相同報價識別碼下多份訂單的問題。
 feature: Orders, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dbca8790-d947-4104-bba9-b29abcfc0344
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

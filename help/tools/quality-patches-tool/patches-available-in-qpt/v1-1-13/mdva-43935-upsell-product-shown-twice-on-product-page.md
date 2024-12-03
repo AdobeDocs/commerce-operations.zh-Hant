@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-43935：產品頁面上顯示兩次追加銷售產品'
+title: MDVA-43935：產品頁面上顯示兩次追加銷售產品
 description: MDVA-43935修補程式修正了在產品頁面上顯示兩次追加銷售產品的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13後，即可使用此修補程式。 修補程式ID為MDVA-43935。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f076b29a-b2de-4549-9216-407c50a3e3e5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

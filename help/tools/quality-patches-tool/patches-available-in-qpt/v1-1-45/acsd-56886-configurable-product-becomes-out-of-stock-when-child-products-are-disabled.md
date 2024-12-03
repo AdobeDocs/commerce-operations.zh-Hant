@@ -1,9 +1,10 @@
 ---
-title: 「ACSD-56886：可設定的產品在子產品停用時無庫存」
+title: ACSD-56886：當子產品停用時，可設定的產品會無庫存
 description: 套用ACSD-56886修補程式來修正Adobe Commerce問題，此問題導致可設定產品在產品停用時失去庫存子項。
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5e9c1fd4-b56a-42c0-83e7-75e868213124
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-49628： [!DNL Page Builder] CORS錯誤導致無法儲存產品'
+title: ACSD-49628： [!DNL Page Builder] CORS錯誤導致無法儲存產品
 description: 套用ACSD-49628修補程式以修正Adobe Commerce問題，該問題導致 [!DNL Page Builder] CORS錯誤無法儲存產品。
 feature: Categories, Page Builder, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5bceddfa-5fbf-4ebe-a233-de7720764849
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

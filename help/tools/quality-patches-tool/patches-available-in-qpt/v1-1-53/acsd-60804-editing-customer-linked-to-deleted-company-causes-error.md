@@ -1,5 +1,5 @@
 ---
-title: 「ACSD-60804：編輯與已刪除公司相關聯的客戶會導致錯誤」
+title: ACSD-60804：編輯與已刪除公司相關聯的客戶會導致錯誤
 description: 套用ACSD-60804修補程式以修正Adobe Commerce問題，其中編輯與已刪除公司相關聯的客戶會導致錯誤*在null*上呼叫成員函式getSuperUserId()。
 feature: Companies, Customers, B2B
 role: Admin, Developer

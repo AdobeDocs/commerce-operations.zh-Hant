@@ -1,5 +1,5 @@
 ---
-title: '''MDVA-41631：擷取不含選擇性「電話」值的訂單資訊時發生錯誤'
+title: MDVA-41631：擷取不含可選「電話」值的訂單資訊時發生錯誤
 description: MDVA-41631修補程式修正使用者擷取訂單資訊時，若未透過選用的電話值，則會發生錯誤的問題。  [!DNL GraphQL]安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7時，即可使用此修補程式。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: Orders
 role: Admin

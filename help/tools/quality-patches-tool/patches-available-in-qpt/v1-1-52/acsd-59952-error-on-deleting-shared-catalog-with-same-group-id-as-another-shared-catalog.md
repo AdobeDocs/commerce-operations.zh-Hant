@@ -1,15 +1,15 @@
 ---
-title: 「ACSD-59952：刪除與其他共用目錄具有相同群組識別碼的共用目錄時發生錯誤」
+title: ACSD-59952：刪除與其他共用目錄具有相同群組識別碼的共用目錄時發生錯誤
 description: 套用ACSD-59952修補程式以修正Adobe Commerce問題，在刪除與其他共用目錄具有相同之「customer_group_id」的共用目錄時，系統擲回錯誤。
 feature: B2B, REST
 role: Admin, Developer
-source-git-commit: a67f31aa905b420dcd2a17645734632d3f94520c
+exl-id: 11cba2e6-dd62-4063-a38c-b98ea70a72e9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-59952：刪除與其他共用目錄具有相同群組識別碼的共用目錄時發生錯誤
 
