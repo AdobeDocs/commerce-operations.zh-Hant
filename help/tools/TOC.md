@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 8c7b6673ba27b4a36d7bf19722768a4ca24a9955
+source-git-commit: 948881a32a1723398e71c9bd3c2173336878ee0d
 workflow-type: tm+mt
-source-wordcount: '6390'
+source-wordcount: '6399'
 ht-degree: 0%
 
 ---
@@ -660,6 +660,7 @@ ht-degree: 0%
          - [ACSD-61667：改善建立出貨時的存貨效能](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+         - [ACSD-61134：在結帳工作流程中自動取消選取[!UICONTROL Braintree Vault]付款方式](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61134-braintree-vault-payment-method-is-automatically-deselected-in-the-checkout-workflow.md)
          - [ACSD-61756：由於缺少資料庫索引，AdvancedSalesRule篩選器的效能降低](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter.md)
          - [ACSD-60267：透過可設定的產品選項新增產品時，FPT套用不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
          - [ACSD-61199： CMS頁面的[!UICONTROL Hierarchy]索引標籤未顯示正確的樹狀結構](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
