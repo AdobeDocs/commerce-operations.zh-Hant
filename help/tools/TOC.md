@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: c03b0b3c81556f1c75ad5259a5905a5dd5b0224e
+source-git-commit: 73953020c85ffb0a941602e1dafe5de6a6175cff
 workflow-type: tm+mt
-source-wordcount: '6425'
+source-wordcount: '6437'
 ht-degree: 0%
 
 ---
@@ -670,6 +670,7 @@ ht-degree: 0%
          - [ACSD-61799：套用至報價的多重固定折扣購物車規則的折扣總計計算不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules.md)
          - [ACSD-62485： async.operations.all consumer在建立公司時停止運作](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845：請求包含text/html accept標頭時發生錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
+         - [ACSD-62056：如果安裝了MSI，可設定產品的影像上傳會失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
       - v1.1.55 {#v1-1-55}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
          - [ACSD-58828：任何空白的必填欄位都會顯示伺服器端「位址為必填」訊息，在使用者端驗證旁邊](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
