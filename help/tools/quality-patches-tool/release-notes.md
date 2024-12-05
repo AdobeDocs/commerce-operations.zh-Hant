@@ -2,9 +2,9 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 3f6093b55c7bbfaf8666438ac1fef8f90432d947
+source-git-commit: dd6824c3f030d76e93372b8410e42ac5cd2f04c6
 workflow-type: tm+mt
-source-wordcount: '23125'
+source-wordcount: '23648'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,29 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需Community為Magento Open Source而建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.56 {#v1-1-56}
+
+* **ACSD-63244** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正[!DNL JavaScript]錯誤導致[!DNL Google Maps]無法正確呈現的問題。 修正許多&#x200B;*Uncaught TypeError的問題：這個。_each不是[!UICONTROL Admin]面板中主控台中的函式*&#x200B;錯誤。
+* **ACSD-63242** (適用於Adobe Commerce和Magento Open Source >=2.4.6-p8 &lt;2.4.7) || >=2.4.7-p3 &lt;2.4.8) — 修正新增包含超過10,000個專案的目錄產品時，匯入緩慢的問題。
+* **ACSD-63062** (適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.8) — 修正套用多個重疊規則時會發生錯誤購物車折扣計算的問題。
+* **ACSD-62979** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正在[!DNL GraphQL]標頭中使用錯誤[!UICONTROL Store ID]導致嚴重記憶體錯誤的問題。
+* **ACSD-62971** (適用於Adobe Commerce和Magento Open Source>=2.4.4 &lt;2.4.8) — 修正匯入&#x200B;**quantity**&#x200B;欄中有非數值的庫存來源時，**quantity**&#x200B;設為&#x200B;*0*&#x200B;的問題。
+* **ACSD-62872** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正排程更新驗證不正確的唯一屬性驗證問題。
+* **ACSD-62755** (適用於Adobe Commerce和Magento Open Source >=2.4.4-p11 &lt;2.4.5) || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) — 修正[!DNL TinyMCE] 7需要在編輯器初始化設定中特別新增字型大小和字型的問題。
+* **ACSD-62670** (適用於Adobe Commerce和Magento Open Source >=2.4.4-p11 &lt;2.4.5) || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) — 修正[!UICONTROL Products Ordered]報告匯出至[!DNL CSV]且[!DNL XML]傳回錯誤的問題。
+* **ACSD-62577** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 透過最佳化查詢和表格索引，修正店面搜尋查詢效能緩慢的問題。
+* **ACSD-62475** (適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.8) — 修正[!UICONTROL Gift Card]產品在購物車中錯誤合併的問題。
+* **ACSD-62428** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正當[!DNL SKU]未設定為可搜尋屬性時，`is_out_of_stock`在目錄搜尋索引中設定為不正確值的問題。
+* **ACSD-62355** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.8) — 當可設定產品是以具有許多值的許多屬性為基礎時，可改善可設定產品編輯頁面的載入時間。
+* **ACSD-61805** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正透過[!DNL REST API]更新延期交貨狀態後，店面產品無存貨的問題。
+* **ACSD-60811** (適用於Adobe Commerce和Magento Open Source>=2.4.7 &lt;2.4.8) — 修正目前狀態為&#x200B;*處理*&#x200B;或&#x200B;*詐騙*&#x200B;時，才可能使用自訂值或註解更新訂單狀態的問題。
+* **ACSD-62952** (適用於Adobe Commerce >=2.4.4 &lt;2.4.8) — 修正店面未正確顯示[!UICONTROL Gift Registry]日期的問題。
+* **ACSD-55339** (適用於Adobe Commerce >=2.4.4 &lt;2.4.8) — 修正以&quot;0&quot; （零）開頭的產品[!DNL SKU]移除&quot;0&quot;，導致引號無法更新的問題。
+**
+* 更新的修補程式： **ACSD-59514**
+* 更新的版本： **ACSD-60816**
+* 已取代的修補程式： **ACSD-59967**
 
 ## v1.1.55 {#v1-1-55}
 
