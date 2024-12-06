@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 7fdaa4cb85abc76c307ca8aa5f43cfa394b8a1ce
+source-git-commit: f529a07568618b2b5e550896efaaf4d662445d30
 workflow-type: tm+mt
-source-wordcount: '6446'
+source-wordcount: '6456'
 ht-degree: 0%
 
 ---
@@ -672,6 +672,7 @@ ht-degree: 0%
          - [ACSD-61845：請求包含text/html accept標頭時發生錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
          - [ACSD-62056：如果安裝了MSI，可設定產品的影像上傳會失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
       - v1.1.55 {#v1-1-55}
+         - [ACSD-58566：採購單註釋的GraphQL內部伺服器錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58566-grapghql-internal-server-error-for-purchase-order-comments.md)
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
          - [ACSD-58685：停用的銷售電子郵件會在重新啟用時傳送](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling.md)
          - [ACSD-58828：任何空白的必填欄位都會顯示伺服器端「位址為必填」訊息，在使用者端驗證旁邊](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
