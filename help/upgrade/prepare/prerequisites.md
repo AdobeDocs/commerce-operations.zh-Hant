@@ -2,9 +2,9 @@
 title: 完成必要條件
 description: 完成這些先決條件步驟，準備您的Adobe Commerce專案以進行升級。
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1612'
 ht-degree: 0%
 
 ---
@@ -229,11 +229,11 @@ crontab -l
 
 cron未執行的另一個症狀是管理員中的以下錯誤：
 
-![](../../assets/upgrade-guide/cron-not-running.png)
+![系統訊息 — cron未執行](../../assets/upgrade-guide/cron-not-running.png)
 
 若要檢視錯誤，請按一下視窗頂端的&#x200B;**系統訊息**，如下所示：
 
-![](../../assets/upgrade-guide/system-messages.png)
+![系統訊息通知](../../assets/upgrade-guide/system-messages.png)
 
 如需詳細資訊，請參閱[設定並執行cron](../../configuration/cli/configure-cron-jobs.md)。
 
