@@ -3,16 +3,16 @@ title: ACSD-56760：管理員使用者僅限於特定網站，無法排序或新
 description: 套用ACSD-56760修補程式來修正Adobe Commerce問題，該問題導致僅限特定網站的管理員使用者無法排序或新增產品，以致於網路商店擁有自己的根類別。
 role: Admin
 exl-id: 2d75164e-c463-4e1a-aa6f-f420dbe0aaeb
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 881d33089b15b78583e09b79e93a3f78f38bc2ca
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # ACSD-56760：管理員使用者僅限於特定網站，無法排序或新增產品
 
-ACSD-56760修補程式修正僅限特定網站的Admin使用者無法排序或新增類別（萬一網站商店有自己的根類別）中的新產品問題。 安裝[!DNL Quality Patches Tool (QPT)] 1.1.47時，即可使用此修補程式。 修補程式ID為ACSD-56760。 請注意，此問題已排程在Adobe Commerce 2.4.7中修正。
+ACSD-56760修補程式修正僅限特定網站的Admin使用者無法排序或新增類別（萬一網站商店有自己的根類別）中的新產品問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.47時，即可使用此修補程式。 修補程式ID為ACSD-56760。 請注意，此問題已排程在Adobe Commerce 2.4.8-beta1中修正。
 
 ## 受影響的產品和版本
 
@@ -69,8 +69,4 @@ ACSD-56760修補程式修正僅限特定網站的Admin使用者無法排序或�
 
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
-* [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)的新工具。
-* [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
-
-
-如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。
+* [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
