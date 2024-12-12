@@ -4,14 +4,18 @@ description: 套用ACSD-55100修補程式，修正GraphQL未在搜尋結果中�
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: f08b62b9-ed56-4eca-b7e7-6e2bd99df01f
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
 
 # ACSD-55100： [!DNL GraphQL]不會在搜尋結果中傳回超過10k的產品
+
+>[!NOTE]
+>
+>已發行更新的修補程式([ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md))，以解決版本2.4.6 - 2.4.6-p8的相同問題。 如需詳細資訊，請參閱[ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)。
 
 ACSD-55100修補程式修正搜尋結果中[!DNL GraphQL]未傳回超過&#x200B;*10k*&#x200B;的產品的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46時，即可使用此修補程式。 修補程式ID為ACSD-55100。 請注意，此問題已排程在Adobe Commerce 2.4.7中修正。
 

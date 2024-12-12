@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 981de02b37590366e75eb605c671f0f0ec89feec
+source-git-commit: 089ef6e52b45a69455b80d0a43668e3250fb4b4f
 workflow-type: tm+mt
-source-wordcount: '6469'
+source-wordcount: '6485'
 ht-degree: 0%
 
 ---
@@ -683,6 +683,7 @@ ht-degree: 0%
          - [ACSD-58383：透過 [!DNL REST API]的同步退款請求複製銷退折讓單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
          - [ACSD-58735：受限制的管理員無法檢視相關網站客戶帳戶上的放棄購物車](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
          - [ACSD-60344：在使用[!UICONTROL Purchase Order]自動核準時復制訂單確認電子郵件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
+         - [ACSD-62332：產品清單GraphQL查詢限製為10,000個產品，且 [!DNL Live Search] 將目前頁面設為1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
       - v1.1.56 {#v1-1-56}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
          - [ACSD-62428：目錄搜尋索引中的庫存狀態錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
