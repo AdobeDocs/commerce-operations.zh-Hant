@@ -2,7 +2,7 @@
 title: ACSD-52160：根據購物車價格規則的產品驗證結果
 description: 套用ACSD-52160修補程式以修正Adobe Commerce問題，該問題導致根據規則條件*[!UICONTROL If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true]*未正確評估購物車價格規則的產品驗證結果。
 exl-id: 8f8799c9-850a-4c8f-bde4-68df64e46c85
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -54,7 +54,7 @@ ACSD-52160修補程式修正未根據規則條件&#x200B;*[!UICONTROL If an item
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](</help/tools/quality-patches-tool/usage.md>)。
+* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀

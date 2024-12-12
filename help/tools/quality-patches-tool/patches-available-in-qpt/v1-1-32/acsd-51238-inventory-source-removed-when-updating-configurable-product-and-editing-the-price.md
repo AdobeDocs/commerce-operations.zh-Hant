@@ -4,7 +4,7 @@ description: 套用ACSD-51238修補程式來修正Adobe Commerce問題，此問�
 feature: Configuration, Inventory, Orders, Products
 role: Admin
 exl-id: 785f012f-e064-4ac6-b559-9e9aa42c679c
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -55,7 +55,7 @@ ACSD-51238修補程式修正了更新可設定產品及編輯價格時，移除�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](</help/tools/quality-patches-tool/usage.md>)。
+* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
