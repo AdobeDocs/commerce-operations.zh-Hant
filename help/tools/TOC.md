@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: e48479b9beb3a75fb513edd4a5e1b6c8c932f45f
+source-git-commit: a7018909caf8147696a81afead8526946d076223
 workflow-type: tm+mt
-source-wordcount: '6495'
+source-wordcount: '6506'
 ht-degree: 0%
 
 ---
@@ -686,6 +686,7 @@ ht-degree: 0%
          - [ACSD-62332：產品清單GraphQL查詢限製為10,000個產品，且 [!DNL Live Search] 將目前頁面設為1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
       - v1.1.56 {#v1-1-56}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+         - [ACSD-63242：新增超過10,000種目錄產品時匯入速度緩慢](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062：具有多個重疊規則的購物車折扣計算不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428：目錄搜尋索引中的庫存狀態錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
       - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
