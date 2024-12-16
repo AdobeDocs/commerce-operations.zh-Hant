@@ -2,7 +2,7 @@
 title: Apache
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝來安裝和設定Apache Web Server。
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: f8c5d714a4e96d0508f745d1b7617696c8cc94a7
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Adobe Commerce支援Apache 2.4.x。
 
 ## Apache重寫和htaccess
 
-本主題討論如何啟用Apache 2.4重寫並指定[分散式組態檔`.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)的設定。
+本主題討論如何啟用Apache 2.4重寫並指定[分散式組態檔`.htaccess`](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample)的設定。
 
 Adobe Commerce使用伺服器重寫和`.htaccess`為Apache提供目錄層級的指示。 下列指示也包含在本主題的所有其他章節中。
 
