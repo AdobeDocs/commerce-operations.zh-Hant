@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 21a0dbfdb679a35d79f001f78c921aed8441f0d4
+source-git-commit: 152b51d45303b29a1d3d378af0e9fc8b02bbb6aa
 workflow-type: tm+mt
-source-wordcount: '6523'
+source-wordcount: '6531'
 ht-degree: 0%
 
 ---
@@ -685,6 +685,7 @@ ht-degree: 0%
          - [ACSD-62793：匯出中的Datetime屬性遺失時間元件。 此外，如果啟用[!UICONTROL Fields Enclosure]，屬性值會以雙引號括住](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes.md)
          - [ACSD-60344：在使用[!UICONTROL Purchase Order]自動核準時復制訂單確認電子郵件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
          - [ACSD-62332：產品清單GraphQL查詢限製為10,000個產品，且 [!DNL Live Search] 將目前頁面設為1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
+         - [ACSD-62591：設定[!UICONTROL User Agent Rules]時主題未正確切換](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
       - v1.1.56 {#v1-1-56}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
          - [ACSD-63242：新增超過10,000種目錄產品時匯入速度緩慢](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
