@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: c97ab644e6372cd6b2dac284d68eb2a79d02c908
+source-git-commit: 6ec6aec8747e4b40943c864dec84b98e6b293d07
 workflow-type: tm+mt
-source-wordcount: '6541'
+source-wordcount: '6547'
 ht-degree: 0%
 
 ---
@@ -692,6 +692,7 @@ ht-degree: 0%
          - [ACSD-63242：新增超過10,000種目錄產品時匯入速度緩慢](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062：具有多個重疊規則的購物車折扣計算不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428：目錄搜尋索引中的庫存狀態錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
+         - [ACSD-62577：店面搜尋效能最佳化](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
       - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - 命令列工具參考{#cli-reference}
