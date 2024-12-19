@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 152b51d45303b29a1d3d378af0e9fc8b02bbb6aa
+source-git-commit: c97ab644e6372cd6b2dac284d68eb2a79d02c908
 workflow-type: tm+mt
-source-wordcount: '6531'
+source-wordcount: '6541'
 ht-degree: 0%
 
 ---
@@ -688,6 +688,7 @@ ht-degree: 0%
          - [ACSD-62591：設定[!UICONTROL User Agent Rules]時主題未正確切換](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
       - v1.1.56 {#v1-1-56}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+         - [ACSD-62475：修正購物車中禮品卡合併的問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart.md)
          - [ACSD-63242：新增超過10,000種目錄產品時匯入速度緩慢](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062：具有多個重疊規則的購物車折扣計算不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428：目錄搜尋索引中的庫存狀態錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
