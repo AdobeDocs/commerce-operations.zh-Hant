@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: f8541ffca30199ab6f6409d79753c65e31fb13f6
+source-git-commit: 5e705bd71b9229e7040ed3c8fccd8057512ac710
 workflow-type: tm+mt
-source-wordcount: '6578'
+source-wordcount: '6582'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 - 品質修補工具{#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
-   - [使用狀況](quality-patches-tool/usage.md)
+   - [使用情況](quality-patches-tool/usage.md)
    - [發行說明](quality-patches-tool/release-notes.md)
    - 品質修補工具{#patches-available-in-qpt}中可用的修補程式
       - [概觀](quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview.md)
@@ -696,7 +696,8 @@ ht-degree: 0%
          - [ACSD-62428：目錄搜尋索引中的庫存狀態錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
          - [ACSD-62577：店面搜尋效能最佳化](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
       - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-
+      - v1.1.57 {#v1-1-57}
+         - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
 - 命令列工具參考{#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
    - [升級相容性工具](reference/uct.md)
