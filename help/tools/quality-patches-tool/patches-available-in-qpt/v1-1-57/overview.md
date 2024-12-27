@@ -3,7 +3,8 @@ title: 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.57
 description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.57中可用修補程式所修正問題的詳細說明。
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 82b8d22438107680cdf47057e0db3e15bf819599
+exl-id: 3e252a71-f35f-4046-9353-169060451ffe
+source-git-commit: fc5c790108a3c62d4591631128743259824c4c6b
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -27,7 +28,7 @@ QPT v1.1.57包含下列修補程式：
 1. **ACSD-62635**：修正[!DNL GraphQL]產品查詢中無法正確顯示多商店相關產品的問題。
 1. **ACSD-62671**：修正[!DNL GraphQL]請求在第一次嘗試時未傳回最新位址資訊的問題。
 1. **ACSD-62689**：修正客戶無法在深度4後新增[!UICONTROL Related Product Rules]和[!UICONTROL Widgets]中的類別的問題。
-1. **ACSD-62708**：修正套用[!UICONTROL ACP2E-3430]的修正後，管理員中的[!DNL TinyMCE] 7編輯器字型大小顯示[!UICONTROL px]而非[!UICONTROL pt]的問題。 現在，您也可以在[!UICONTROL px]中設定字型大小，而非[!UICONTROL pt]。
+1. **ACSD-62708**：修正套用[!UICONTROL ACP2E-3430]的修正後，管理員中的[!DNL TinyMCE] 7編輯器字型大小顯示[!UICONTROL pt]而非[!UICONTROL px]的問題。 現在，您也可以在[!UICONTROL px]中設定字型大小，而非[!UICONTROL pt]。
 1. **ACSD-62758**：修正URL包含選取的選項時，[!UICONTROL Configurable Product]詳細資料頁面上的產品影片無法正確轉譯的問題。
 1. **ACSD-62951**：修正傳送[!UICONTROL Credit Memo]電子郵件時不含專案和總計的問題。
 1. **ACSD-62965**：修正訂單位置[!DNL GraphQL response]中未包含&#x200B;*LocalizedException*&#x200B;訊息的問題。
