@@ -2,9 +2,9 @@
 title: 產品可用性
 description: 瞭解目前支援的Adobe Commerce功能，並檢查其與特定Adobe Commerce版本的相容性。
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 9761e3827add0e8b60e1bb53664ff65170608317
+source-git-commit: 56dabc0c35460a8ace6f6be455050f56119d1b16
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,7 @@ Adobe已完整測試支援的版本。 Adobe客戶支援可提供支援版本的
 * Adobe Commerce服務目前與Commerce 2.4.4和更新版本相容。 建議商戶使用最新版服務。
 * 系統會將服務視為與舊版Commerce 2.4.x相容，但並不正式支援。
 * 服務與Commerce 2.3.x不相容，除了產品Recommendations 3.3.7和更早版本。
+* Payments服務目前與Magento Open Source2.4.4和更新版本相容。 建議商戶使用最新版服務。
 
 下表顯示各服務相對於Adobe Commerce版本的版本支援。
 
