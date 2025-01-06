@@ -4,14 +4,14 @@ description: 套用ACSD-58383修補程式以修正Adobe Commerce的問題，也�
 feature: REST, Payments, Returns
 role: Admin, Developer
 exl-id: 962970d5-22e7-4bdc-afa0-70e1fa21ecec
-source-git-commit: 28390659fe180180c9b2c8d16239008a1f8a510b
+source-git-commit: d3d98c04afe32d80cdf985b1d93c8a2cb57236ed
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-# ACSD-58383 Adobe Commerce修補程式：透過[!DNL REST API]複製同時退款請求中的銷退折讓單
+# ACSD-58383：透過[!DNL REST API]的同步退款請求複製銷退折讓單
 
 ACSD-58383修補程式修正透過[!DNL REST API]發行退款，且同時執行兩個相同請求時，導致銷退折讓單重複的問題。
 
