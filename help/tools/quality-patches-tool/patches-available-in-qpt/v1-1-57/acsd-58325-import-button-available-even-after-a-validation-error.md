@@ -3,13 +3,13 @@ title: ACSD-58325：即使在驗證錯誤後也可使用[!UICONTROL Import]按�
 description: 套用ACSD-58325修補程式以修正Adobe Commerce問題，此問題導致[!UICONTROL Import]按鈕在驗證錯誤後仍可使用。
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: 5a2709014828810827e71d9dd91d34102d80bd66
+exl-id: 551a9ac7-9b7f-49b5-9255-2014c330fb07
+source-git-commit: c50fa066d02c04a08c28730afffe4508019a93aa
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58325：即使在驗證錯誤後也可使用[!UICONTROL Import]按鈕
 
@@ -21,8 +21,7 @@ ACSD-58325修補程式修正了在驗證錯誤後也可使用&#x200B;**[!UICONTR
 * Adobe Commerce （所有部署方法） 2.4.6-p3
 
 **與Adobe Commerce版本相容：**
-* Adobe Commerce內部部署2.4.6 - 2.4.6-p8
-* 雲端基礎結構上的Adobe Commerce 2.4.6 - 2.4.6-p8
+* Adobe Commerce （所有部署方法） 2.4.6 - 2.4.6-p8
 
 >[!NOTE]
 >
@@ -60,4 +59,3 @@ ACSD-58325修補程式修正了在驗證錯誤後也可使用&#x200B;**[!UICONTR
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
-
