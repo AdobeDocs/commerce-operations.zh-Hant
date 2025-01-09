@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: fa59bb2e45f7f7539f5a7515f02854b7066314fe
+source-git-commit: 7605d4a0e3c975f8ef67130a3ef58a34a41fd869
 workflow-type: tm+mt
-source-wordcount: '6739'
+source-wordcount: '6749'
 ht-degree: 0%
 
 ---
@@ -713,6 +713,7 @@ ht-degree: 0%
          - [ACSD-63326：從後端下訂單後，修正管理員重新導向問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
          - [ACSD-63286：指派給共用目錄的產品需要手動重新索引才能顯示](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325：即使在驗證錯誤後也可使用[!UICONTROL Import]按鈕](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
+         - [ACSD-62671： [!DNL GraphQL] 第一次嘗試時未傳回更新的位址](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
 - 命令列工具參考{#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
    - [升級相容性工具](reference/uct.md)
