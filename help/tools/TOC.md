@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 7605d4a0e3c975f8ef67130a3ef58a34a41fd869
+source-git-commit: 7fdd74ed6820b947563f3d887a666c02b9c37350
 workflow-type: tm+mt
-source-wordcount: '6749'
+source-wordcount: '6763'
 ht-degree: 0%
 
 ---
@@ -688,6 +688,7 @@ ht-degree: 0%
          - [ACSD-62591：設定[!UICONTROL User Agent Rules]時主題未正確切換](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
       - v1.1.56 {#v1-1-56}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+         - [ACSD-61805：透過REST API更新延期交貨狀態後，修正店面的庫存問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-61805-stock-status-issue-storefront-backorder-status-update-rest-api.md)
          - [ACSD-60811：修正將訂單狀態更新為自訂值的限制](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-60811-fixes-limitation-in-updating-order-status-to-custom-values.md)
          - [ACSD-62971：以非數字數量值匯入的庫存來源會導致數量設為0](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62971-stock-import-error-non-numeric-quantity.md)
          - [ACSD-62979： GraphQL標頭中的存放區ID不正確會導致嚴重的記憶體錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error.md)
