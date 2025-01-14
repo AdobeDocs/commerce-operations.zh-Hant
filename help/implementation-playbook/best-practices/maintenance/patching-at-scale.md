@@ -3,11 +3,11 @@ title: 大規模散發修補程式的最佳作法
 description: 瞭解Adobe Commerce的集中修補如何協助您管理企業專案。
 role: Developer
 feature: Best Practices
-badge: label="由Adobe高級技術架構師Anton Evers提供" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="安東·埃弗斯撰寫"
+badge: label="由Adobe高級技術架構師Tony Evers提供" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="托尼·埃弗斯撰寫"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
