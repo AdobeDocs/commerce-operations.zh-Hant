@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 32f3a7682ac13fdef7ff5694ef478b1d0704d8e9
+source-git-commit: 3b200e814ee973fde79b436d9efc5738b3420ee2
 workflow-type: tm+mt
-source-wordcount: '6807'
+source-wordcount: '6811'
 ht-degree: 0%
 
 ---
@@ -704,7 +704,6 @@ ht-degree: 0%
          - [ACSD-55339：解決Adobe Commerce可轉讓報價中的SKU微調問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce.md)
          - [ACSD-62670： [!UICONTROL Products Ordered]報告匯出為CSV和XML擲回錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error.md)
          - [ACSD-62755： [!DNL TinyMCE] 7需要在編輯器初始化設定中新增字型大小和字型](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
-      - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57 {#v1-1-57}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
          - [ACSD-62708：管理面板中的 [!DNL TinyMCE] 7編輯器字型大小顯示PT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue.md)
@@ -719,6 +718,9 @@ ht-degree: 0%
          - [ACSD-63286：指派給共用目錄的產品需要手動重新索引才能顯示](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325：即使在驗證錯誤後也可使用[!UICONTROL Import]按鈕](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
          - [ACSD-62671： [!DNL GraphQL] 第一次嘗試時未傳回更新的位址](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
+      - v1.1.58 {#v1-1-58}
+         - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
+   - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考{#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
    - [升級相容性工具](reference/uct.md)
