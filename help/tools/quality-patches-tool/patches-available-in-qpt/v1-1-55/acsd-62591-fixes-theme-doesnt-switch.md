@@ -3,17 +3,17 @@ title: ACSD-62591：設定**[!UICONTROL User Agent Rules]**時，主題不會切
 description: 套用ACSD-62591修補程式，修正設定**[!UICONTROL User Agent Rules]**時主題未正確切換的Adobe Commerce問題。
 feature: Themes
 role: Admin, Developer
-source-git-commit: 319ac7ea1fb8f33f4ed7bfa440477cf6d6657cb5
+exl-id: 7b206b25-8918-40a6-a956-d38d5058d38f
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62591：設定[!UICONTROL User Agent Rules]時主題未正確切換
 
-ACSD-62591修補程式修正設定&#x200B;**[!UICONTROL User Agent Rules]**&#x200B;時主題未正確切換的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55時，即可使用此修補程式。 修補程式ID為ACSD-62591。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
+ACSD-62591修補程式修正設定&#x200B;**[!UICONTROL User Agent Rules]**&#x200B;時主題未正確切換的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55時，即可使用此修補程式。 修補程式ID為ACSD-62591。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
 ## 受影響的產品和版本
 
@@ -61,3 +61,4 @@ ACSD-62591修補程式修正設定&#x200B;**[!UICONTROL User Agent Rules]**&#x20
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
+

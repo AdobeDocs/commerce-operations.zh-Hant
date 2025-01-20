@@ -3,16 +3,17 @@ title: ACSD-63286：指派給共用目錄的產品需要手動重新索引才能
 description: 套用ACSD-63286修補程式以修正Adobe Commerce問題，該問題導致透過API指派給共用目錄的產品在執行手動重新索引前不會出現在店面上。
 feature: Products, REST
 role: Admin, Developer
-source-git-commit: 00b2b9285ca27d630bd0ece2750b531710e8d196
+exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # ACSD-63286：指派給共用目錄的產品需要手動重新索引才能顯示
 
-ACSD-63286修補程式修正了手動重新索引執行前，透過API指派給共用目錄的產品未出現在店面的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-63286。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
+ACSD-63286修補程式修正了手動重新索引執行前，透過API指派給共用目錄的產品未出現在店面的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-63286。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
 ## 受影響的產品和版本
 

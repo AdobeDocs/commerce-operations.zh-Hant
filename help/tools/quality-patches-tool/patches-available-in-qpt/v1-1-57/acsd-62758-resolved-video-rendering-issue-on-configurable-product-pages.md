@@ -3,16 +3,17 @@ title: ACSD-62758：解決可設定產品頁面上的視訊轉譯問題
 description: 套用ACSD-62758修補程式以修正Adobe Commerce問題，亦即當URL包含預先選取的色票選項時，可設定產品詳細資料頁面上的產品影片無法正確轉譯。
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: 313709361ee86e39b89c416f71a92b078318f4fb
+exl-id: 084b497d-4471-4458-bc1d-2a452bfe2662
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
 # ACSD-62758：解決可設定產品頁面上的視訊轉譯問題
 
-ACSD-62758修補程式修正當URL包含預先選取的色票選項時，可設定產品詳細資料頁面上的產品影片無法正確轉譯的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-62758。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
+ACSD-62758修補程式修正當URL包含預先選取的色票選項時，可設定產品詳細資料頁面上的產品影片無法正確轉譯的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-62758。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
 ## 受影響的產品和版本
 
@@ -70,3 +71,4 @@ ACSD-62758修補程式修正當URL包含預先選取的色票選項時，可設�
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
+

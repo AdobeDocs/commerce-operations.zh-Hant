@@ -3,17 +3,17 @@ title: ACSD-62689：無法在深度4之後新增[!UICONTROL Related Product Rule
 description: 套用ACSD-62689修補程式來修正Adobe Commerce問題，其中客戶無法在深度四個巢狀之後新增[!UICONTROL Related Product Rules]和Widget中的類別。
 feature: Categories
 role: Admin, Developer
-source-git-commit: 154a017fbc6e069e8e59651db46955922c004955
+exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62689：無法在深度4之後新增&#x200B;*[!UICONTROL Related Product Rules]*&#x200B;和Widget中的類別
 
-ACSD-62689修補程式修正了客戶無法在深度4個巢狀結構之後新增&#x200B;*[!UICONTROL Related Product Rules]*&#x200B;和Widget類別的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-62689。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
+ACSD-62689修補程式修正了客戶無法在深度4個巢狀結構之後新增&#x200B;*[!UICONTROL Related Product Rules]*&#x200B;和Widget類別的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-62689。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
 ## 受影響的產品和版本
 
@@ -67,3 +67,4 @@ ACSD-62689修補程式修正了客戶無法在深度4個巢狀結構之後新增
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
+
