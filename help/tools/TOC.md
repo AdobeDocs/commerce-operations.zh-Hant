@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 30403c10ccb7332b0105c9859c37d7d23a784ce5
+source-git-commit: 34010e1b22e7230d7c249e06bff7061c38b7a805
 workflow-type: tm+mt
-source-wordcount: '6836'
+source-wordcount: '6845'
 ht-degree: 0%
 
 ---
@@ -718,6 +718,7 @@ ht-degree: 0%
          - [ACSD-63286：指派給共用目錄的產品需要手動重新索引才能顯示](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325：即使在驗證錯誤後也可使用[!UICONTROL Import]按鈕](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
          - [ACSD-62671： [!DNL GraphQL] 第一次嘗試時未傳回更新的位址](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
+         - [ACSD-62481：即使啟用[!UICONTROL Persistence]，購物車仍保持空白](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled.md)
       - v1.1.58 {#v1-1-58}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
          - [ACSD-63067：解決店面分組產品的數量驗證問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63067-resolving-quantity-validation-issues-in-grouped-products-on-storefront.md)
