@@ -2,20 +2,18 @@
 title: 如何存取 [!DNL Site-Wide Analysis Tool]
 description: 瞭解如何存取 [!DNL Site-Wide Analysis Tool]
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 2896442432158456698cac2d566cf0f61b5d7847
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
 # 如何存取[!DNL Site-Wide Analysis Tool]
 
-您可透過兩種方式存取[!DNL Site-Wide Analysis Tool Dashboard]。
+您可以從商店的[!UICONTROL Admin Panel]存取[!DNL Site-Wide Analysis Tool]儀表板。
 
-您可以直接從[[!DNL Site-Wide Analysis Tool] 網站](https://supportinsights.adobe.com/commerce)存取[!DNL dashboard] **(僅適用於雲端基礎結構上的Adobe Commerce)**&#x200B;並登入您的Adobe ID，或透過您商店的[!DNL Admin Panel]的[!DNL dashboard]存取。
-
-[!DNL Site-Wide Analysis Tool]服務可在[生產模式](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes)中供具有存取使用者[角色資源](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)許可權的[!DNL Admin]使用者使用。
+[!DNL Site-Wide Analysis Tool]服務可在[生產模式](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes)中供具有存取使用者[角色資源](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)許可權的[!UICONTROL Admin]使用者使用。
 
 >[!NOTE]
 >
@@ -25,28 +23,16 @@ ht-degree: 0%
 ![全網站分析儀表板](../../assets/tools/site-wide-analysis-tool-dashboard.png)
 *[!DNL Site-Wide Analysis Tool]儀表板*
 
-## 選項1：直接從[!DNL Site-Wide Analysis Tool]網域登入您的[!DNL Site-Wide Analysis Tool Dashboard] (僅適用於雲端基礎結構上的Adobe Commerce)
+>[!NOTE]
+>
+>您的帳戶應有權使用&#x200B;**[!DNL Support Permissions]**&#x200B;以存取[!DNL Site-Wide Analysis Tool Dashboard]。
+>請參閱我們的使用手冊中的[共用 [!DNL Commerce] 帳戶](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html)檢視更多詳細資料。
 
-需要&#x200B;**[!DNL Adobe ID]**&#x200B;才能存取[!DNL Commerce]帳戶。
-如果您已有[!DNL Commerce]帳戶，但沒有[!DNL Adobe ID]，則可以在登入過程中建立帳戶。
-
-1. 移至[https://supportinsights.adobe.com/commerce](https://supportinsights.adobe.com/commerce)。
-
-1. 按一下&#x200B;**[!UICONTROL Sign in with Adobe ID]**&#x200B;按鈕並依照提示操作。
-
-   ![全網站分析儀表板](../../assets/tools/adobe-id-login.jpg)
-   *[!DNL Adobe ID]登入畫面*
-
-1. 接受條款與條件。
-
-1. **<u>附註</u>：**&#x200B;您的帳戶應該有權使用&#x200B;**[!DNL Support Permissions]**&#x200B;才能存取[!DNL Site-Wide Analysis Tool Dashboard]。
-請參閱我們的使用手冊中的[共用 [!DNL Commerce] 帳戶](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html)檢視更多詳細資料。
-
-## 選項2：從您商店的[!DNL Admin Panel]登入您的[!DNL Site-Wide Analysis Tool Dashboard]
+## 從您商店的[!UICONTROL Admin Panel]登入[!DNL Site-Wide Analysis Tool Dashboard]
 
 ### 步驟1：驗證許可權
 
-驗證[!DNL Admin]使用者帳戶是否具有透過其[指派的使用者角色](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)存取[!DNL Site-Wide Analysis Tool]的許可權。
+驗證[!UICONTROL Admin]使用者帳戶是否具有透過其[指派的使用者角色](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)存取[!DNL Site-Wide Analysis Tool]的許可權。
 
 >[!IMPORTANT]
 >
@@ -65,14 +51,14 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您已驗證使用者帳戶具有存取[!DNL Site-Wide Analysis Tool]的許可權，且使用者嘗試從[!DNL Admin]存取工具時收到403錯誤，則您在雲端基礎結構上的Adobe Commerce執行個體可能已啟用HTTP存取控制。 如果您已啟用HTTP驗證，則不支援[!DNL Site-Wide Analysis Tool]儀表板。 如需解決此問題的詳細資訊，請參閱我們的[支援文章](https://support.magento.com/hc/en-us/articles/360057400172-403-errors-when-accessing-Site-Wide-Analysis-Tool-on-Magento?_ga=2.168901729.117144580.1649172612-1623400270.1640858671)。
+>如果您已驗證使用者帳戶具有存取[!DNL Site-Wide Analysis Tool]的許可權，且使用者嘗試從[!UICONTROL Admin]存取工具時收到403錯誤，則您在雲端基礎結構上的Adobe Commerce執行個體可能已啟用HTTP存取控制。 如果您已啟用HTTP驗證，則不支援[!DNL Site-Wide Analysis Tool]儀表板。 如需解決此問題的詳細資訊，請參閱我們的[支援文章](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento)。
 
 ### 步驟2：存取[!DNL Site-Wide Analysis Tool]
 
 1. 在&#x200B;*[!UICONTROL Admin]*&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]**。
 
    ![全網站分析儀表板](../../assets/tools/ac-admin-panel-marked.jpg)
-   在Adobe Commerce *的[!DNL Admin Panel]中的*[!DNL Site-Wide Analysis Tool]&#x200B;位置
+   在Adobe Commerce *的[!UICONTROL Admin Panel]中的*[!DNL Site-Wide Analysis Tool]&#x200B;位置
 
 1. 閱讀[!DNL Site-Wide Analysis Tool]的&#x200B;*使用條款*&#x200B;並按一下&#x200B;**[!UICONTROL Accept]**&#x200B;以繼續。
 
