@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 58e57bd106e7dbf9bab32fc9d93a9b1252592570
+source-git-commit: 79f587e1ed2f4117141cd29c7a512a6b677047d6
 workflow-type: tm+mt
-source-wordcount: '6891'
+source-wordcount: '6904'
 ht-degree: 0%
 
 ---
@@ -706,6 +706,7 @@ ht-degree: 0%
          - [ACSD-62755： [!DNL TinyMCE] 7需要在編輯器初始化設定中新增字型大小和字型](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
       - v1.1.57 {#v1-1-57}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+         - [ACSD-59083：同時mview更新期間出現「找不到基底資料表或檢視」錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-59083-fix-base-table-or-view-not-found-errors-during-simultaneous-mview-updates.md)
          - [ACSD-62951：修正透過REST API傳送的[!UICONTROL Credit Memo]封電子郵件中遺漏的專案和總計](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api.md)
          - [ACSD-62212： [!UICONTROL Forgot Password]電子郵件未翻譯成存放區檢視語言](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62212-forgot-password-email-not-translated-to-store-view-language.md)
          - [ACSD-62708：管理面板中的 [!DNL TinyMCE] 7編輯器字型大小顯示PT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue.md)
