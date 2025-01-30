@@ -3,13 +3,13 @@ title: ACSD-62872：排程更新驗證不正確
 description: 套用ACSD-62872修補程式，修正排程更新驗證錯誤且屬性驗證唯一的Adobe Commerce問題。
 feature: Catalog Management, Admin Workspace
 role: Admin, Developer
-source-git-commit: f734dab2316237d60164a430eeabed17782b0ae6
+exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
+source-git-commit: 4727a94178c642922224cb37ad5c1b2b4f6002cb
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62872：排程更新驗證不正確
 
@@ -23,7 +23,11 @@ ACSD-62872修補程式修正唯一屬性驗證的問題，即排程的更新驗�
 
 **與Adobe Commerce版本相容：**
 
-* Adobe Commerce （所有部署方法） 2.4.4 - 2.4.7-p3
+* Adobe Commerce （所有部署方法） 2.4.7 - 2.4.7-p3
+
+>[!NOTE]
+>
+>在1.1.58 QPT發行版本中，2.4.4 - 2.4.6-p8版的修補程式標示為已過時。
 
 >[!NOTE]
 >
@@ -39,7 +43,7 @@ ACSD-62872修補程式修正唯一屬性驗證的問題，即排程的更新驗�
 1. 導覽至&#x200B;**[!UICONTROL Catalog]** > **[!UICONTROL Categories]**。
 1. 建立新類別。
 1. 在相同類別中，移至&#x200B;**[!UICONTROL Scheduled Updates]**&#x200B;區段。
-1. 設定此類別在未來任何時間的新更新。
+1. 在未來的任何時間設定此類別的新更新。
 1. 在開始排程更新之前，請嘗試編輯類別的已建立排程更新。
 
 <u>預期結果</u>：
@@ -55,8 +59,7 @@ ACSD-62872修補程式修正唯一屬性驗證的問題，即排程的更新驗�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
-
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 
