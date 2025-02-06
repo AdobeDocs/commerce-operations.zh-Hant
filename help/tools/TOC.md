@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 3864c393e06eca769d29e20da62cd19dff1cbd7a
+source-git-commit: 420a74a1c0e4d4d242691968cfa6b515a9f91e77
 workflow-type: tm+mt
-source-wordcount: '6952'
+source-wordcount: '6970'
 ht-degree: 0%
 
 ---
@@ -732,6 +732,7 @@ ht-degree: 0%
          - [ACSD-48570：修正URL中存放區代碼的管理員重設密碼連結問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299：店面未顯示可設定產品的特殊價格](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325：提交空的 [!DNL GraphQL] 請求時出現「語法錯誤：意外&lt; EOF >」錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
+         - [ACSD-63329：使用REST API建立產品時，未設定日期和時間欄位的預設值](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考{#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
