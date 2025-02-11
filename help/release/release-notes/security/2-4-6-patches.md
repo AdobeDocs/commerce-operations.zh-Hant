@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.6安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.6版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
+source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,19 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.6安全性修補程式的發行說明
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.6 - p9
+
+Adobe Commerce 2.4.6-p9安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
+
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)。
+
+{{b2b-patches}}
+
+### 反白顯示
+
+{{$include /help/_includes/release-notes/highlights/security-2025-02.md}}
 
 ## 2.4.6 - p8
 
@@ -24,11 +36,11 @@ Adobe Commerce 2.4.6-p8安全性版本針對2.4.6舊版中發現的漏洞提供�
 
 ### 反白顯示
 
-{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
 
 ### 此版本中包含的Hotfix
 
-{{$include /help/_includes/release-notes/2024-10/hotfixes-included-foo.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-10.md}}
 
 ## 2.4.6 - p7
 
@@ -38,11 +50,11 @@ Adobe Commerce 2.4.6-p7安全性版本針對2.4.6舊版中發現的漏洞提供�
 
 ### 反白顯示
 
-{{$include /help/_includes/release-notes/2024-08/security.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
 ### 此版本中包含的Hotfix
 
-{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-08.md}}
 
 ## 2.4.6 - p6
 
@@ -54,13 +66,13 @@ Adobe Commerce 2.4.6-p6安全性版本針對2.4.6舊版中已發現的漏洞提�
 
 ### 套用CVE-2024-34102的Hotfix
 
-{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
 為了與Commerce 2.4.6-p6版相容，擁有Adobe Commerce B2B擴充功能的商家必須升級至[B2B 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)版。
 
 ### 反白顯示
 
-{{$include /help/_includes/release-notes/2-4-7-security.md}}
+{{$include /help/_includes/release-notes/highlights/2-4-7-security.md}}
 
 ## 2.4.6 - p5
 
@@ -118,7 +130,7 @@ Adobe Commerce 2.4.6-p2安全性版本針對先前版本中發現的漏洞提供
 
 ### 套用CVE-2022-31160的Hotfix
 
-`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html)知識庫文章所指定的修補程式。
+`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html)知識庫文章所指定的修補程式。
 
 ### 反白顯示
 
@@ -136,7 +148,7 @@ Adobe Commerce 2.4.6-p1安全性版本針對先前版本中發現的漏洞提供
 
 ### 套用CVE-2022-31160的Hotfix
 
-`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[查詢UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html)知識庫文章所指定的修補程式。
+`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[查詢UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html)知識庫文章所指定的修補程式。
 
 #### 反白顯示
 
@@ -146,9 +158,9 @@ Adobe Commerce 2.4.6-p1安全性版本針對先前版本中發現的漏洞提供
 
 此版本的平台升級可改善對最新安全性最佳實務的合規性。
 
-* **清漆快取7.3支援**。 此版本相容於最新版的Varnish Cache 7.3。6.0.x和7.2.x版本仍維持相容性，但Adobe建議使用Adobe Commerce 2.4.6-p1，僅搭配Varnish Cache 7.3或6.0版LTS。
+* **清漆快取7.3支援**。 此版本相容於最新版的Varnish Cache 7.3。6.0.x和7.2.x版本仍維持相容性，但Adobe建議僅搭配清漆快取版本7.3或版本6.0 LTS使用Adobe Commerce 2.4.6-p1。
 
-* **RabbitMQ 3.11支援**。 此版本與最新版RabbitMQ 3.11相容。RabbitMQ 3.9仍支援相容性至2023年8月，但Adobe建議僅將Adobe Commerce 2.4.6-p1與RabbitMQ 3.11搭配使用。
+* **RabbitMQ 3.11支援**。 此版本相容於最新版RabbitMQ 3.11。與RabbitMQ 3.9的相容性維持不變（2023年8月之前提供支援），但Adobe建議僅將Adobe Commerce 2.4.6-p1與RabbitMQ 3.11搭配使用。
 
 * **JavaScript資料庫**。 過時的JavaScript程式庫已升級至最新的次要或修補程式版本，包括`moment.js`程式庫(v2.29.4)、`jQuery UI`程式庫(v1.13.2)和`jQuery`驗證外掛程式程式庫(v1.19.5)。
 

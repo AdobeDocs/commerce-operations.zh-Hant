@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.2安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.2版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: e6058e96-b810-4a78-8804-15783afef951
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.2安全性修補程式的發行說明
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
 ## Adobe Commerce 2.4.2-p2
 

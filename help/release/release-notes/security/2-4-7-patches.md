@@ -2,16 +2,28 @@
 title: Adobe Commerce 2.4.7安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.7版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
+source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce 2.4.7安全性修補程式的發行說明
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.7 - p4
+
+Adobe Commerce 2.4.7-p4安全性版本針對2.4.7舊版中發現的漏洞提供安全性錯誤修正。
+
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)。
+
+{{b2b-patches}}
+
+### 反白顯示
+
+{{$include /help/_includes/release-notes/highlights/security-2025-02.md}}
 
 ## 2.4.7 - p3
 
@@ -23,11 +35,11 @@ Adobe Commerce 2.4.7-p3安全性版本針對2.4.7舊版中發現的漏洞提供�
 
 ### 反白顯示
 
-{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
 
 ### 此版本中包含的Hotfix
 
-{{$include /help/_includes/release-notes/2024-10/hotfixes-included-foo.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-10.md}}
 
 ## 2.4.7 - p2
 
@@ -37,11 +49,11 @@ Adobe Commerce 2.4.7-p2安全性版本針對2.4.7舊版中發現的漏洞提供�
 
 ### 反白顯示
 
-{{$include /help/_includes/release-notes/2024-08/security.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
 ### 此版本中包含的Hotfix
 
-{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-08.md}}
 
 ## 2.4.7 - p1
 
@@ -51,7 +63,7 @@ Adobe Commerce 2.4.7-p1安全性版本針對2.4.7舊版中發現的弱點提供�
 
 ### 套用CVE-2024-34102的Hotfix
 
-{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
 ### 反白顯示
 

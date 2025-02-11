@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.3安全性修補程式的發行說明
 description: 瞭解Adobe Commerce 2.4.3版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
+source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.3安全性修補程式的發行說明
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
@@ -59,10 +59,10 @@ DHL已匯入schema 6.2版，並將在不久的未來淘汰schema 6.0版。 支�
 
 ## 2.4.3-p1
 
-Adobe Commerce 2.4.3-p1安全性版本針對先前版本(Adobe Commerce 2.4.3和Magento Open Source2.4.3)中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
+Adobe Commerce 2.4.3-p1安全性版本針對先前版本(Adobe Commerce 2.4.3和Magento Open Source 2.4.3)中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html)。 此修補程式發行版本也針對[Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html)、[Klarna](https://marketplace.magento.com/klarna-m2-klarna.html)和[Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)廠商開發的擴充功能提供錯誤修正。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html)。 此修補程式發行版本也針對[Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html)、[Klarna](https://marketplace.magento.com/klarna-m2-klarna.html)及[Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)廠商開發的擴充功能提供錯誤修正。
 
 ### 套用`AC-3022.patch`以繼續提供DHL作為運送承運商
 
@@ -78,7 +78,7 @@ DHL已匯入schema 6.2版，並將在不久的未來淘汰schema 6.0版。 支�
 
 已從資料庫&#x200B;**移除**&#x200B;工作階段識別碼。 如果商戶有使用儲存在資料庫中的原始工作階段ID的自訂或安裝擴充功能，則此程式碼變更可能會導致重大變更。<!-- MC-40976-->
 
-**已限制管理員存取媒體集資料夾**。 預設媒體集許可權現在只允許設定明確允許的目錄操作（檢視、上傳、刪除和建立）。 管理員使用者無法再透過在`catalog/category`或`wysiwyg`目錄之外上傳的媒體集存取媒體資產。 管理員如果想要存取媒體資產，必須將其移至明確允許的資料夾，或調整其組態設定。 請參閱[修改Media Library資料夾許可權](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/)。<!-- B2B-1897-->
+**已限制管理員存取媒體集資料夾**。 預設媒體集許可權現在只允許設定明確允許的目錄操作（檢視、上傳、刪除和建立）。 管理員使用者無法再透過在`catalog/category`或`wysiwyg`目錄之外上傳的媒體集存取媒體資產。 管理員如果想要存取媒體資產，必須將其移至明確允許的資料夾，或調整其組態設定。 請參閱[修改媒體櫃資料夾許可權](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/)。<!-- B2B-1897-->
 
 **降低GraphQL查詢複雜度的限制**。 GraphQL允許的查詢複雜度上限已降低，以防止拒絕服務(DOS)攻擊。 檢視[GraphQL安全性組態](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/)。<!-- PWA-1700-->
 
