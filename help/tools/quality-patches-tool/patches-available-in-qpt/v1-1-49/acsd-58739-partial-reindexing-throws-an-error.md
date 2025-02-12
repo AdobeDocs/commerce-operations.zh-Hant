@@ -4,7 +4,7 @@ description: 套用ACSD-55241修補程式，修正部分重新索引擲回錯誤
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ACSD-58739修補程式修正部分重新索引擲回錯誤的問題。 安裝[[!
 
 <u>要再現的步驟</u>：
 
-1. 將從屬連線設定新增至`app/etc/ev.php`。
+1. 將從屬連線設定新增至`app/etc/env.php`。
 1. 產生最多10000個產品並執行下列命令：
 
    ```
@@ -68,7 +68,7 @@ ACSD-58739修補程式修正部分重新索引擲回錯誤的問題。 安裝[[!
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* 在[!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)
 
 ## 相關閱讀
