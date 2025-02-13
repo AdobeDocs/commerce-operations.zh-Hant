@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 183a83346633913b3b013732cbac8676a0756609
+source-git-commit: 329a9413eca2de00451ee694501cca2cf0c57c30
 workflow-type: tm+mt
-source-wordcount: '6981'
+source-wordcount: '6990'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 0%
       - v1.1.6 {#v1-1-6}
          - [概覽：品質修補工具(QPT) v1.1.6](quality-patches-tool/patches-available-in-qpt/v1-1-6/overview.md)
          - [MDVA-27456：使用者載入Swagger時發生錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-27456-users-get-error-when-loading-swagger.md)
-         - [MDVA-30862：列印的PDF商業發票上的訂單日期不正確](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-30862-incorrect-order-date-on-printed-pdf-invoice.md)
+         - [MDVA-30862：列印的PDF發票上的訂單日期不正確](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-30862-incorrect-order-date-on-printed-pdf-invoice.md)
          - [MDVA-32776：庫存狀態未更新訂單位置](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-32776-stock-status-not-updated-when-order-placed.md)
          - [MDVA-39031：可能透過GraphQL將未指派的產品新增至購物車](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-39031-adding-unassigned-products-to-cart-possible-via-graphql.md)
          - [MDVA-40120：GraphQL產品DESC/ASC排序無法運作](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-40120-graphql-product-desc-asc-sort-doesnt-work.md)
@@ -247,7 +247,7 @@ ht-degree: 0%
          - [ACSD-46541：刪除訂單專案時，管理員使用者無法建立銷退折讓單](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46541-admin-user-cannot-create-credit-memo-if-order-item-deleted.md)
          - [ACSD-46581：在購物車中選取國家/地區後，預估稅捐總計未更新](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46581-estimated-tax-total-is-not-updated-after-selecting-a-country-in-the-shopping-cart.md)
          - [ACSD-46618：產品清單Widget針對登入的客戶顯示不正確的快取價格](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46618-product-list-widget-shows-incorrect-cached-prices-logged-in-customer.md)
-         - [ACSD-46674：在客戶電子郵件中顯示為HTML的影像型別的自訂選項](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46674-custom-options-image-type-displayed-html.md)
+         - [ACSD-46674：在客戶電子郵件中顯示為HTML之影像型別的自訂選項](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46674-custom-options-image-type-displayed-html.md)
          - [ACSD-46809：使用者指派大量產品來源時發生錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46809-the-user-gets-an-error-when-assigning-a-large-number-of-product-sources.md)
          - [ACSD-46856：改善更新層級價格時的效能](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46856-improves-performance-when-updating-tier-prices.md)
          - [ACSD-46988：GraphQL貨幣API要求傳回null值](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46988-graphql-currency-api-request-returns-null-values.md)
@@ -300,7 +300,7 @@ ht-degree: 0%
          - [ACSD-48661：公司信用額度逗號分隔符號驗證問題](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48661-company-credit-limit-comma-separator-validation.md)
          - [ACSD-48587：產品Widget無法使用包含HTML字元的SKU](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48587-product-widget-not-working-with-html-characters.md)
          - [ACSD-48212：產品匯入會將產品指派給錯誤的來源](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48212-product-import-assigns-product-wrong-source.md)
-         - [ACSD-47988：產品匯出會修剪頁面產生器產品說明中的HTML標籤](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47988-product-export-trims-html-tags.md)
+         - [ACSD-47988：產品匯出會根據頁面產生器產品說明修剪HTML標籤](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47988-product-export-trims-html-tags.md)
          - [ACSD-48366：返回庫存電子郵件範本上未顯示產品影像](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48366-product-image-not-displayed-back-stock-email-template.md)
          - [ACSD-48417：建立排程變更後發生SQL錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48417-sql-error-after-creating-a-schedule-change.md)
       - V1.1.27 {#v1-1-27}
@@ -393,7 +393,7 @@ ht-degree: 0%
       - v1.1.33 {#v1-1-33}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
          - [ACSD-51792：頁面沒有曝光事件](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
-         - [ACSD-51645：如果停用擴充功能Magento_OfflineShipping，儲存新的購物車價格規則](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
+         - [ACSD-51645：如果Magento_OfflineShipping擴充功能已停用，儲存新的購物車價格規則](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
          - [ACSD-51240：透過公司登錄檔單註冊時遺失已上傳的檔案](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51240-uploaded-file-missing-while-registering-via-company-registration-form.md)
          - [ACSD-51907：受限制的管理員使用者無法建立離線退款的銷退折讓單](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51907-restricted-admin-user-cannot-create-a-credit-memo-with-an-offline-refund.md)
          - [ACSD-51892：設定檔案載入多次的效能問題](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md)
@@ -403,9 +403,9 @@ ht-degree: 0%
          - [acsd-52148：Google v3 reCAPTCHA管理員登入偶爾會失敗](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-52148-google-v3-recaptcha-admin-login-fails-occasionally.md)
          - [ACSD-51408：訂單料號狀態設為「延期交貨」](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51408-order-item-status-is-set-to-backordered.md)
          - [ACSD-50512：更新可下載產品中繼更新的開始日期時發生錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
-         - [ACSD-50895：如果未設定Google Analytics3 GTM，則不會觸發Google Analytics4 GTM標籤](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
+         - [ACSD-50895：如果未設定Google Analytics 3 GTM，則不會引發Google Analytics 4 GTM標籤](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471：管理員使用者無法儲存套件產品的排程更新](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120：未針對包含GraphQL區塊的CMS頁面清除CMSGET請求快取](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120：未針對包含GraphQL區塊的CMS頁面清除CMS GET請求快取](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700：在可下載產品編輯頁面上切換商店檢視時發生錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735：產品庫存為0時，訂單專案狀態未正確設定為[!UICONTROL Ordered]](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497：無法依「下拉式清單」型別的自訂屬性排序目錄頁面](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -454,7 +454,7 @@ ht-degree: 0%
          - [ACSD-53176：具有的產品規則is為其中一個條件不符合](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-53176-product-rule-with-is-one-of-condition-do-not-match.md)
          - [ACSD-47875：無法透過庫存管理將產品新增到購物車以商店檢視範圍](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-47875-unable-to-add-product-to-customer-cart-for-store-view-scope-with-inventory-management.md)
          - [ACSD-51666： 「工作階段已過期，請重新登入」錯誤。 在您登入後](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-51666-error-session-has-expired-please-login-again.md)
-         - [ACSD-52906：解決已登入客戶快取的X-Magento差異Cookie問題](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52906-resolving-x-magento-vary-cookie-issue-logged-in-customer-caching.md)
+         - [ACSD-52906：解決已登入客戶快取的X-Magento-Vary Cookie問題](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52906-resolving-x-magento-vary-cookie-issue-logged-in-customer-caching.md)
       - v1.1.37 {#v1-1-37}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.37](quality-patches-tool/patches-available-in-qpt/v1-1-37/overview.md)
          - [ACSD-52613：快取和索引會重新整理而不更新](quality-patches-tool/patches-available-in-qpt/v1-1-37/acsd-52613-cache-and-indexes-are-refreshed-with-no-updates.md)
@@ -614,8 +614,8 @@ ht-degree: 0%
          - [ACSD-59378：匯入期間儲存區層級 [!DNL URL] 重寫錯誤更新](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59378-store-level-url-rewrites-incorrectly-updated-during-import.md)
          - [ACSD-46938：設定：升級期間資料庫觸發程式發生效能問題](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
          - [ACSD-54887：客戶購物車在客戶工作階段過期後清除](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
-         - [ACSD-58141：如果啟用L2 Redis快取，PHPSESSID會針對登入客戶的POST請求重新產生](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
-         - [ACSD-59229：由於過期的X-VaryMagento，導致客戶群組資料配置錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
+         - [ACSD-58141：如果啟用L2 Redis快取，系統會為登入的客戶重新產生POST要求](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
+         - [ACSD-59229：由於過期的X-Magento-Vary值，導致客戶群組資料配置錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          - [ACSD-60441：透過V1/customers [!DNL REST] API端點更新客戶時擲回錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
          - [ACSD-58352：透過 [!DNL GraphQL] API傳回預設存放區的傳回屬性標籤](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
          - [ACSD-59514：Admin中的Forms在瀏覽器控制檯中出現 [!DNL Page Builder] 擲回錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
@@ -733,6 +733,7 @@ ht-degree: 0%
          - [ACSD-48570：修正URL中存放區代碼的管理員重設密碼連結問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299：店面未顯示可設定產品的特殊價格](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325：提交空的 [!DNL GraphQL] 請求時出現「語法錯誤：意外&lt; EOF >」錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
+         - [ACSD-63578：按一下[!UICONTROL Add to Order by SKU]中的[!UICONTROL Delete]圖示不會移除SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329：使用REST API建立產品時，未設定日期和時間欄位的預設值](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考{#cli-reference}
