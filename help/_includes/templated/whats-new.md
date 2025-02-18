@@ -1,7 +1,7 @@
 ---
-source-git-commit: 317a1f5d9a6b1ed4713fd7564f8afce12e519c90
+source-git-commit: 989bcdcb4bbd8f880a3e2c8add280a072998afd8
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '984'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,46 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2025年2月14日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增QPT 1.1.59版本</a>中可用修補程式所修正問題的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview">說明</p>
+</td>
+      <td>新主題</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8200051f16c7d12d09c1487a4e12258b52d8d805">820005</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025年2月13日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku">QPT 1.1.58版本</a>中ACSD-63578修補程式所修正問題的詳細說明</p>
+</td>
+      <td>新主題</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf22eac2923a78f112a999dbcb6be1bc6f5eb9db">bf22ea</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025年2月11日
 
@@ -447,90 +487,6 @@ ht-degree: 1%
 </td>
       <td>新主題</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/de06ef0133bf57169c80c82ca4bb4cb09671c63b">de06ef</a> （認可）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024年12月20日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增QPT 1.1.57版本</a>中可用修補程式所修正問題的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview">說明</p>
-</td>
-      <td>新主題</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d3b5a9b2706d3338c950dfc495188e2038e3c997">d3b5a9</a> （認可）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024年12月19日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">QPT 1.1.56版本</a>中ACSD-62979修補程式所修正問題的詳細說明</p>
-</td>
-      <td>新主題</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c9b27e2a82954a3874e9847eacc71f0515c99625">c9b27e</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization">QPT 1.1.56版本</a>中ACSD-62577修補程式所修正問題的詳細說明</p>
-</td>
-      <td>新主題</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/929a031257e68711734e9b90b1bd18bc751817c3">929a03</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62971-stock-import-error-non-numeric-quantity">QPT 1.1.56版本</a>中ACSD-62971修補程式所修正問題的詳細說明</p>
-</td>
-      <td>新主題</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8fb92489c1118782fcf4bacd0859e275c7617856">8fb924</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart">QPT 1.1.56版本</a>中ACSD-62475修補程式所修正問題的詳細說明</p>
-</td>
-      <td>新主題</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c4d223265301f560b0078e832c775c0e2946165e">c4d223</a> （認可）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2024年12月18日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch">QPT 1.1.55版本</a>中ACSD-62591修補程式所修正問題的詳細說明</p>
-</td>
-      <td>新主題</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e41bd2f6d7ad2183418942f628d9da3317016cde">e41bd2</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>將Adobe Commerce 2.4.4和2.4.5的延長支援日期新增至<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">生命週期原則</a>。</p>
-</td>
-      <td>主要更新</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad25af4928619fbf94671d15b1a5f6df30a16cc1">ad25af</a> （認可）</td>
     </tr>
   </tbody>
 </table>
