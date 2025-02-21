@@ -3,9 +3,9 @@ title: 設定應用程式
 description: 瞭解Adobe Commerce內部部署所需的安裝後設定。
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: e737ca014e90860b8ab023487625b07c0eeb1222
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,14 @@ UNIX `logrotate`公用程式可讓您管理產生大量記錄檔的系統。 它
 * [棧疊交換](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * [`logrotate`線上手冊](https://linuxconfig.org/logrotate-8-manual-page)
 
+>[!AVAILABILITY]
+>
+>下列可用性資訊適用於雲端基礎結構專案上的Adobe Commerce：
+>
+>* 入門環境沒有記錄輪換。
+>
+>* 您無法在Pro整合環境中設定記錄輪換。 您必須實作自訂解決方案/指令碼，並[設定您的cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)以視需要執行指令碼。
+
 ### 設定iptables規則以啟用各種服務通訊
 
 無論您有一台或多台伺服器，都必須在防火牆中開啟連線埠，以啟用服務通訊。 例如，如果您將Solr搜尋引擎與Adobe Commerce搭配使用，則必須啟用它以與網頁伺服器通訊。 如果您有多個Web節點，您必須啟用它們來彼此通訊。
@@ -86,7 +94,7 @@ Adobe Commerce需要電子郵件伺服器。 我們不建議使用特定伺服�
 
 ### 精簡搜尋引擎以提升效能：
 
-自2.4.0版起的所有安裝都需要Elasticsearch或OpenSearch。
+自2.4.0版起，所有安裝都需要Elasticsearch或OpenSearch。
 
 * [安裝及設定搜尋引擎](../../configuration/search/overview-search.md)
 
