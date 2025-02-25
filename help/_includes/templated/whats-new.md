@@ -1,7 +1,7 @@
 ---
-source-git-commit: 989bcdcb4bbd8f880a3e2c8add280a072998afd8
+source-git-commit: 9c2e080e25fd2919b5f178e5b73ce84a04caca21
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2025年2月21日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails">QPT 1.1.59版本</a>中ACSD-64112修補程式所修正問題的詳細說明。</p>
+</td>
+      <td>新主題</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c22cffcbac34ed45d0252a879fa714cf283be4fe">c22cff</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025年2月20日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown">QPT 1.1.59版本</a>中ACSD-63454修補程式所修正問題的詳細說明。</p>
+</td>
+      <td>新主題</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ee04269b7b443d9a75bc905e4dde2470e2c9eb7d">ee0426</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025年2月19日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change">QPT 1.1.59版本</a>中ACSD-63870修補程式所修正問題的詳細說明</p>
+</td>
+      <td>新主題</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/826125b9e176639a53c79ec7fea825b6963ffa3c">826125</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025年2月14日
 
