@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: d735bb2269331ae9768afbca384a85e03d727403
+source-git-commit: 4e4ae0e4c0d23b98a44ffcf1c9f4605d67e94714
 workflow-type: tm+mt
-source-wordcount: '7033'
+source-wordcount: '7043'
 ht-degree: 0%
 
 ---
@@ -740,6 +740,7 @@ ht-degree: 0%
          - [ACSD-64112：設定MAGE_INDEXER_THREADS_COUNT時，indexer_update_all_views cron執行失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
          - [ACSD-63454：下拉式清單和多選屬性的預設值未正確儲存在資料庫中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
          - [ACSD-63870：在公司狀態變更期間，客戶未正確登出](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
+         - [ACSD-63574：將[!UICONTROL Bundle Product]清單新增至via [!DNL Page Builder] 的區塊導致錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考{#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
