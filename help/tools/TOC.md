@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: f92cdabf58cf9f95c57312f7d3efb2b2ad098e2e
+source-git-commit: 9c2a1aea2fdadb12998773c324560faf6872bd82
 workflow-type: tm+mt
-source-wordcount: '7055'
+source-wordcount: '7069'
 ht-degree: 0%
 
 ---
@@ -740,6 +740,7 @@ ht-degree: 0%
          - [ACSD-64112：設定MAGE_INDEXER_THREADS_COUNT時，indexer_update_all_views cron執行失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
          - [ACSD-63454：下拉式清單和多選屬性的預設值未正確儲存在資料庫中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
          - [ACSD-63870：在公司狀態變更期間，客戶未正確登出](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
+         - [ACSD-64212：下訂單後，訂單未連結至透過 [!DNL GraphQL] 建立的客戶帳戶](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
          - [ACSD-63793：匯入程式會在不同的瀏覽器分頁中互相干擾](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
          - [ACSD-63574：將[!UICONTROL Bundle Product]清單新增至via [!DNL Page Builder] 的區塊導致錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
