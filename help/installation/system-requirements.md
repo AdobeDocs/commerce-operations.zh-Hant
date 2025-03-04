@@ -2,9 +2,9 @@
 title: 系統需求
 description: 請使用此參考資料來識別已在Adobe Commerce發行版本中測試的所需軟體相依性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 63c73a34eb6c61c83f00761e0510108485687596
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,11 @@ ht-degree: 0%
 
 以下摘要說明針對Adobe Commerce測試的軟體相依性和服務。
 
-雲端基礎結構上Commerce的相依性有一些差異。 雲端基礎結構上Adobe Commerce的服務版本和相容性支援取決於測試並部署至託管雲端環境的服務，有時與Adobe Commerce內部部署支援的版本不同。 例如，內部部署的Commerce 2.4.4支援Elasticsearch7.17，但雲端基礎結構上的Commerce 2.4.4支援OpenSearch 1.2。
+雲端基礎結構上Commerce的相依性有一些差異。 雲端基礎結構上Adobe Commerce的服務版本和相容性支援取決於測試並部署至託管雲端環境的服務，有時與Adobe Commerce內部部署支援的版本不同。 例如，內部部署的Elasticsearch 2.4.4支援Commerce 7.17，但雲端基礎結構上的Commerce 2.4.4支援OpenSearch 1.2。
+
+>[!NOTE]
+>
+>系統需求僅適用於Adobe Commerce的發行版本。 不包括Beta或搶先存取版本。 請參閱[發行說明](../release/release-notes/overview.md)以進一步瞭解Adobe Commerce的最新發行版本。
 
 下表顯示Adobe已使用特定Adobe Commerce發行版本測試的協力廠商軟體相依性版本。
 
@@ -21,7 +25,7 @@ Adobe僅支援下表所述的系統需求組合。 例如，2.4.5已透過MariaD
 
 >[!BEGINTABS]
 
->[!TAB 雲端上的Commerce]
+>雲端上的[!TAB Commerce]
 
 雲端範本](https://github.com/magento/magento-cloud)上的[Commerce提供與特定Commerce版本相容之服務的預設設定。
 
@@ -82,7 +86,7 @@ PHPUnit v9 （作為命令列工具）。
 
 >[!BEGINTABS]
 
->[!TAB 雲端上的Commerce]
+>雲端上的[!TAB Commerce]
 
 下表顯示在雲端平台上部署Adobe Commerce時支援的PHP擴充功能。
 
