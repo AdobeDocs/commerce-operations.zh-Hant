@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 2dc974d2887fb725e1854aef2cbdd63616e3846d
+source-git-commit: 3f2996a41f14d830c8023256c78c9bb85b1718d2
 workflow-type: tm+mt
-source-wordcount: '7108'
+source-wordcount: '7202'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,19 @@ ht-degree: 0%
    - [警報](site-wide-analysis-tool/alerts.md)
    - [修補程式](site-wide-analysis-tool/patches.md)
 
+- 在Adobe Commerce {#managed-alerts-for-adobe-commerce}上管理警報
+   - [Adobe Commerce上的受管理警示： [!DNL Redis] 記憶體嚴重警示](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
+   - [Adobe Commerce的管理警報：磁碟警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
+   - [Adobe Commerce的管理警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
+   - [Adobe Commerce的管理警示：磁碟嚴重警示](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert.md)
+   - [Adobe Commerce上的受管理警示： [!DNL Redis] 記憶體警告警示](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)
+   - [Adobe Commerce的管理警報：記憶體警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
+   - [Adobe Commerce上的受管警報：CPU嚴重警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
+   - [Adobe Commerce上的受管理警報：記憶體嚴重警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
+   - [已管理Adobe Commerce的警示： [!DNL Apdex] 嚴重警示](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
+   - [Adobe Commerce上的受管理警示： [!DNL MariaDB] 警示](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
+   - [已管理Adobe Commerce的警示： [!DNL Apdex] 警告警示](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
+   - [Adobe Commerce的管理警報： CPU警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質修補工具{#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
