@@ -1,6 +1,6 @@
 ---
 title: 實作階段
-description: 了解 Adobe Commerce 專案實作階段的最佳實務。
+description: 了解 Adobe Commerce 專案實作階段的最佳做法。
 exl-id: c5272f79-7315-46dc-a191-a40004aaa812
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9

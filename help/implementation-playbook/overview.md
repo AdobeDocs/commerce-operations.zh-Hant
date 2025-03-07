@@ -1,12 +1,12 @@
 ---
 title: 實施行動手冊
-description: 了解 Adobe Commerce 專案之規劃、開發、啟動與維護的最佳實務。
+description: 了解 Adobe Commerce 專案之規劃、開發、啟動與維護的最佳做法。
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration
 source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '251'
+ht-degree: 6%
 
 ---
 
