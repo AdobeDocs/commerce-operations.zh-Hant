@@ -4,9 +4,9 @@ description: 針對產品可自訂選項拖放功能無法正常運作的問題�
 feature: Products
 role: Developer
 exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: deb16062ed1e903655d49d8e835c2358377d63e3
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,6 @@ ACSD-46703修補程式修正了產品可自訂選項（拖放）無法如預期�
 
 ## 相關閱讀
 
-若要進一步瞭解「品質修補程式」工具，請參閱：
+若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
-* [已發行品質修補程式工具：支援知識庫中可自助提供品質修補程式](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)的新工具。
-* [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
-
-如需QPT中其他修補程式的詳細資訊，請參閱「品質修補程式工具」指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。
+* [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。

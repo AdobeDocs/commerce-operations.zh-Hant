@@ -4,9 +4,9 @@ description: 本文提供解決方案，解決使用商店積分退款時，使�
 feature: Orders, Returns
 role: Admin
 exl-id: 67740003-a71e-41bf-afda-ca3e32290115
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: ab6d0a9814fe5f9dae368a1adbf99d622cdc9d92
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,4 @@ ACSD-46520修補程式可解決使用者使用商店積分退款時，訂單狀�
 
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
-* [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)的新工具。
-* [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
-
-如需QPT中其他修補程式的詳細資訊，請參閱「品質修補程式工具」指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。
+* [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。

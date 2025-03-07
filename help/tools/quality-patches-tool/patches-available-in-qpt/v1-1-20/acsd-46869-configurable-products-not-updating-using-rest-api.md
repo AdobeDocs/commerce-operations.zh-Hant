@@ -4,9 +4,9 @@ description: ACSD-46869修補程式修正了可設定產品在結帳時未使用
 feature: REST, Checkout, Configuration, Orders, Products
 role: Admin
 exl-id: f03d4b24-ac95-406e-8e9d-908149b9207c
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: 470cee19ced38fb90a9565c8bb23e2f9fa97595a
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -59,14 +59,11 @@ ACSD-46869修補程式修正了可設定產品在結帳時未使用REST API更�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* 品質修補程式工具指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tools] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tools] >使用狀況](/help/tools/quality-patches-tool/usage.md) （在品質修補程式工具指南中）。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
-* [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)的新工具。
-* [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
-
-如需[!DNL QPT]中其他修補程式的詳細資訊，請參閱品質修補程式工具指南中 [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)的[修補程式。
+* [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
