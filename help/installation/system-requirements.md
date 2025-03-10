@@ -2,9 +2,9 @@
 title: 系統需求
 description: 請使用此參考資料來識別已在Adobe Commerce發行版本中測試的所需軟體相依性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 63c73a34eb6c61c83f00761e0510108485687596
+source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 以下摘要說明針對Adobe Commerce測試的軟體相依性和服務。
 
-雲端基礎結構上Commerce的相依性有一些差異。 雲端基礎結構上Adobe Commerce的服務版本和相容性支援取決於測試並部署至託管雲端環境的服務，有時與Adobe Commerce內部部署支援的版本不同。 例如，內部部署的Elasticsearch 2.4.4支援Commerce 7.17，但雲端基礎結構上的Commerce 2.4.4支援OpenSearch 1.2。
+雲端上Commerce的相依性存在某些差異。 雲端上Adobe Commerce的服務版本和相容性支援，取決於測試並部署至託管雲端環境的服務，有時與Adobe Commerce內部部署支援的版本不同。 例如，內部部署的Elasticsearch 2.4.4支援Commerce 7.17，但雲端上的Adobe Commerce 2.4.4支援OpenSearch 1。
 
 >[!NOTE]
 >
