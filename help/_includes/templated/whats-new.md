@@ -1,7 +1,7 @@
 ---
-source-git-commit: 15bf05143a3764db36a15ea7470cbb3dd29a92f3
+source-git-commit: 0cbcbee4b7e16d3059f9d77f3390b25dc20ba5a2
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '872'
 ht-degree: 2%
 
 ---
@@ -485,56 +485,6 @@ ht-degree: 2%
 </td>
       <td>新主題</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7e40cf7e683ac578614d61233cae2155ab2f777e">7e40cf</a> （認可）</td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025年1月6日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63244-resolves-admin-panel-javascript-issues-including-google-maps-rendering-and-console-errors">QPT 1.1.56版本</a>中ACSD-63244修補程式所修正問題的詳細說明</p>
-</td>
-      <td>新主題</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4bff3aebf07c922e1121468d556facdfd7c7bad1">4bff3a</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62355-improves-configurable-product-edit-performance-in-adobe-commerce">QPT 1.1.56版本</a>中ACSD-62355修補程式所修正問題的詳細說明</p>
-</td>
-      <td>新主題</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d6544587a287ce8374933f25bed69fa45dab2e97">d65445</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response">QPT 1.1.57版本</a>中ACSD-61622修補程式所修正問題的詳細說明</p>
-</td>
-      <td>新主題</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dd7956e3577b47faef15350b06c9f38ca36899da">dd7956</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62635-multistore-related-products-displayed-incorrectly-in-graphql">QPT 1.1.57版本</a>中ACSD-62635修補程式所修正問題的詳細說明</p>
-</td>
-      <td>新主題</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/71e2d772e0cf118c0f47a65e1b81360741d71f5a">71e2d7</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt">QPT 1.1.57版本</a>中ACSD-62671修補程式所修正問題的詳細說明</p>
-</td>
-      <td>新主題</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/72c7e7d96c9adffba8d3c48fc4a3f0f961268a4c">72c7e7</a> （認可）</td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear">QPT 1.1.57版本</a>中ACSD-63286修補程式所修正問題的詳細說明</p>
-</td>
-      <td>新主題</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a0a2b5ad10c5f38603963af036fb280988df612d">a0a2b5</a> （認可）</td>
     </tr>
   </tbody>
 </table>

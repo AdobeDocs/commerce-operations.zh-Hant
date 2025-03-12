@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4a97065049c5d88ce2a1cc169bfbedd370676ff4
+source-git-commit: a9d5616257758d7e1bec56aa25828c19dfeb6984
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '135'
 ht-degree: 6%
 
 ---
@@ -12,6 +12,7 @@ ht-degree: 6%
   <thead>
     <tr>
       <th>Adobe Commerce版本</th>
+      <th>2.4.8</th>
       <th>2.4.7</th>
       <th>2.4.6</th>
       <th>2.4.5</th>
@@ -21,7 +22,8 @@ ht-degree: 6%
   </thead>
   <tbody>
       <tr>
-          <td>AmazonSales Channel</td>
+          <td>Amazon Sales Channel</td>
+          <td>-</td>
           <td>-</td>
           <td>4.4.0+</td>
           <td>4.3.0+</td>
@@ -33,6 +35,7 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>適用於Adobe Commerce的目錄服務</td>
+          <td>-</td>
           <td>1.17</td>
           <td>1.17</td>
           <td>1.17</td>
@@ -44,6 +47,7 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>頻道管理員</td>
+          <td>-</td>
           <td>2.1.0</td>
           <td>2.0.0</td>
           <td>1.0.0+</td>
@@ -55,6 +59,7 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>即時搜尋</td>
+          <td>-</td>
           <td>4.2.1</td>
           <td>4.2.1</td>
           <td>4.2.1</td>
@@ -66,6 +71,7 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>付款服務</td>
+          <td>2.11.0 (PHP 8.3)</td>
           <td>2.10.0 (PHP 8.3)</td>
           <td>2.5.0 (PHP 8.2)</td>
           <td>2.4.0 (PHP 8.1)</td>
@@ -76,7 +82,8 @@ ht-degree: 6%
           </td>
       </tr>
       <tr>
-          <td>產品Recommendations</td>
+          <td>產品推薦</td>
+          <td>-</td>
           <td>6.0.3</td>
           <td>6.0.3</td>
           <td>6.0.3</td>
@@ -88,6 +95,7 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>Adobe Commerce 的 Store Fulfillment</td>
+          <td>-</td>
           <td>-</td>
           <td>1.5.0</td>
           <td>1.2.0+</td>
