@@ -4,14 +4,18 @@ description: 套用ACSD-56280修補程式，修正未完成購買禮品註冊的
 feature: Checkout
 role: Admin
 exl-id: a79f789f-999f-4d11-b7ee-2c065b681efb
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: ab02be3396e68044e9356f89fba6b55aa880056f
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
 # ACSD-56280：禮品註冊購買未完成
+
+>[!NOTE]
+>
+>此修補程式已由[ACSD-63283](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md)取代。
 
 ACSD-56280修補程式修正了禮品註冊購買未完成的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.44時，即可使用此修補程式。 修補程式ID為ACSD-56280。 請注意，此問題已排程在Adobe Commerce 2.4.7中修正。
 
@@ -55,7 +59,7 @@ ACSD-56280修補程式修正了禮品註冊購買未完成的問題。 安裝[[!
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
