@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 3f2996a41f14d830c8023256c78c9bb85b1718d2
+source-git-commit: a45b8e687d186f7a5ae540037dd3645a510f626a
 workflow-type: tm+mt
-source-wordcount: '7202'
+source-wordcount: '7217'
 ht-degree: 0%
 
 ---
@@ -759,6 +759,8 @@ ht-degree: 0%
          - [ACSD-64212：下訂單後，訂單未連結至透過 [!DNL GraphQL] 建立的客戶帳戶](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
          - [ACSD-63793：匯入程式會在不同的瀏覽器分頁中互相干擾](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
          - [ACSD-63574：將[!UICONTROL Bundle Product]清單新增至via [!DNL Page Builder] 的區塊導致錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
+      - v1.1.60 {#v1-1-60}
+         - [ACSD-63323：解析[!UICONTROL Select All]功能，並增強產品類別快顯視窗中的分頁和記錄計數](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考{#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
