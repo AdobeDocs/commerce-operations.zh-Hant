@@ -1,8 +1,8 @@
 ---
-source-git-commit: a9d5616257758d7e1bec56aa25828c19dfeb6984
+source-git-commit: a3f0b582b9a1fdd41f5f84ab9a7e73edc9fac89d
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 6%
+source-wordcount: '90'
+ht-degree: 4%
 
 ---
 # Commerce服務的產品可用性
@@ -22,18 +22,6 @@ ht-degree: 6%
   </thead>
   <tbody>
       <tr>
-          <td>Amazon Sales Channel</td>
-          <td>-</td>
-          <td>-</td>
-          <td>4.4.0+</td>
-          <td>4.3.0+</td>
-          <td>4.3.0+</td>
-          <td>
-              <a href="https://commercemarketplace.adobe.com/magento-module-amazon.html">市集</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">發行說明</a><br/>
-          </td>
-      </tr>
-      <tr>
           <td>適用於Adobe Commerce的目錄服務</td>
           <td>-</td>
           <td>1.17</td>
@@ -43,18 +31,6 @@ ht-degree: 6%
           <td>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">總覽</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">發行說明</a><br/>
-          </td>
-      </tr>
-      <tr>
-          <td>頻道管理員</td>
-          <td>-</td>
-          <td>2.1.0</td>
-          <td>2.0.0</td>
-          <td>1.0.0+</td>
-          <td>1.0.0+</td>
-          <td>
-              <a href="https://commercemarketplace.adobe.com/magento-channel-manager.html">市集</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">發行說明</a><br/>
           </td>
       </tr>
       <tr>
@@ -91,18 +67,6 @@ ht-degree: 6%
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">市集</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">發行說明</a><br/>
-          </td>
-      </tr>
-      <tr>
-          <td>Adobe Commerce 的 Store Fulfillment</td>
-          <td>-</td>
-          <td>-</td>
-          <td>1.5.0</td>
-          <td>1.2.0+</td>
-          <td>1.2.0+</td>
-          <td>
-              <a href="https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html">市集</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">發行說明</a><br/>
           </td>
       </tr>
   </tbody>
