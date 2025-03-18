@@ -2,9 +2,9 @@
 title: Beta發行版本
 description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c29602d6f1619c0b32feb48843ec01b350a3ae32
+source-git-commit: e569e8106930882323ab3ab046a3db0ee1da1503
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,20 @@ Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供
 ## 目前的Beta計畫
 
 如需使用中Beta版計畫的清單，請參閱下列章節。
+
+### Adobe Commerce Optimizer
+
+Adobe Commerce Optimizer透過高效能店面來強化您的電子商務體驗，提升有機流量、客戶參與度和收入。
+
+透過Adobe Commerce Optimizer，您可以：
+
+- 擴大並擴充您的目錄，無需重新平台化您的整個商務棧疊。
+- 從任何來源擷取目錄資料。
+- 定義業務管道和原則。
+- 使用AI和ML建立個人化搜尋和建議。
+- 檢視重要的產品資料可用性，包括同步化狀態和店面事件資料，以取得準確的實作和疑難排解。
+
+[進一步瞭解](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html)Adobe Commerce Optimizer。 如果您想要參與Adobe Commerce Optimizer搶先體驗計畫，請傳送電子郵件要求至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。
 
 ### 增強即時搜尋的搜尋功能(公開Beta)
 
