@@ -1,11 +1,11 @@
 ---
-source-git-commit: 7f7d8ca9ade089b305f0259d1caee8e20a1265a2
+source-git-commit: 1d192966d457d7f1b95254a3b9c59054e8b03629
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '124'
 ht-degree: 0%
 
 ---
-# Adobe編寫擴充功能的產品可用性
+# Adobe Authored Extensions的產品可用性
 
 
 <table style="table-layout:auto">
@@ -21,7 +21,7 @@ ht-degree: 0%
   </thead>
   <tbody>
       <tr>
-          <td>Adobe Commerce的Adobe I/O事件</td>
+          <td>適用於Adobe Commerce的Adobe I/O Events</td>
           <td>1.5+</td>
           <td>1.5+</td>
           <td>1.5+</td>
@@ -32,7 +32,7 @@ ht-degree: 0%
           </td>
       </tr>
       <tr>
-          <td>Adobe Commerce管理員UI SDK</td>
+          <td>Adobe Commerce管理UI SDK</td>
           <td>1.3+</td>
           <td>1.3+</td>
           <td>1.3+</td>
@@ -51,6 +51,17 @@ ht-degree: 0%
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">撰寫者</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">發行說明</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>適用於Commerce的Adobe Experience Manager Assets整合</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce">撰寫者</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes">發行說明</a><br/>
           </td>
       </tr>
       <tr>
