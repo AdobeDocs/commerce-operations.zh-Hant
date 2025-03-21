@@ -1,19 +1,23 @@
 ---
 title: MDVA-39305：已啟用Google reCAPTCHA的登入問題
-description: MDVA-39305修補程式修正了註冊客戶無法以已啟用的Google reCAPTCHA登入的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1後，即可使用此修補程式。 修補程式ID為MDVA-39305。 請注意，此問題已排程在Adobe Commerce 2.4.4和2.4.7版中修正。
+description: 套用MDVA-39305修補程式，修正啟用Adobe Commerce reCAPTCHA時註冊客戶無法登入的Google問題。
 feature: Console
 role: Admin
 exl-id: c40fd84a-73dc-42bd-8cda-58738615fbba
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 007fcb1308ba2c5b42755ee4c4c2ca598eb0e62e
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
 # MDVA-39305：已啟用Google reCAPTCHA的登入問題
 
-MDVA-39305修補程式修正了註冊客戶無法以已啟用的Google reCAPTCHA登入的問題。 安裝[品質修補工具(QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1時，即可使用此修補程式。 修補程式ID為MDVA-39305。 請注意，此問題已排程在Adobe Commerce 2.4.4和2.4.7版中修正。
+>[!NOTE]
+>
+>此修補程式已更新，最新的修補程式ID為MDVA-39305-V3。 新修補程式是針對Adobe Commerce 2.4.4、2.4.5-p2和2.4.7版建立的。如需詳細資訊，請參閱[MDVA-39305-V3](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha)修補程式文章。
+
+MDVA-39305修補程式修正啟用Google reCAPTCHA時，已註冊客戶無法登入的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1時，即可使用此修補程式。 修補程式ID為MDVA-39305。 請注意，Adobe Commerce 2.4.4和2.4.7版已修正問題。
 
 ## 受影響的產品和版本
 
@@ -51,7 +55,7 @@ MDVA-39305修補程式修正了註冊客戶無法以已啟用的Google reCAPTCHA
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
