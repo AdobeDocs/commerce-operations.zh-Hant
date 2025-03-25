@@ -2,9 +2,9 @@
 title: 完成必要條件
 description: 完成這些先決條件步驟，準備您的Adobe Commerce專案以進行升級。
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
+source-git-commit: d19051467efe7dcf7aedfa7a29460c72d896f5d4
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1717'
 ht-degree: 0%
 
 ---
@@ -41,11 +41,11 @@ Adobe Commerce需要安裝Elasticsearch或OpenSearch才能使用軟體。
 
 **如果您要從2.3.x升級至2.4**，您必須檢查您是否使用MySQL、Elasticsearch或協力廠商擴充功能作為2.3.x執行個體的目錄搜尋引擎。 結果會決定您必須在&#x200B;_升級至2.4之前_&#x200B;做什麼。
 
-**如果您要在2.3.x或2.4.x版本行**&#x200B;內升級修補程式版本，如果已安裝Elasticsearch7.x，您可以選擇性[移轉至OpenSearch](opensearch-migration.md)。
+**如果您要在2.3.x或2.4.x版本行內升級修補程式版本**，如果已安裝Elasticsearch 7.x，您可以選擇性[移轉至OpenSearch](opensearch-migration.md)。
 
 您可以使用命令列或管理員來決定您的目錄搜尋引擎：
 
-* 輸入`bin/magento config:show catalog/search/engine`命令。 命令傳回值`mysql`、`elasticsearch` (表示已設定Elasticsearch2)、`elasticsearch5`、`elasticsearch6`、`elasticsearch7`或自訂值，表示您已安裝協力廠商搜尋引擎。 若是2.4.6之前的版本，請使用Elasticsearch7或OpenSearch引擎的`elasticsearch7`值。 若是2.4.6版或更新版本，請使用OpenSearch引擎的`opensearch`值。
+* 輸入`bin/magento config:show catalog/search/engine`命令。 命令傳回值`mysql`、`elasticsearch` (表示已設定Elasticsearch 2)、`elasticsearch5`、`elasticsearch6`、`elasticsearch7`或自訂值，表示您已安裝協力廠商搜尋引擎。 若是2.4.6之前的版本，請使用Elasticsearch 7或OpenSearch引擎的`elasticsearch7`值。 若是2.4.6版或更新版本，請使用OpenSearch引擎的`opensearch`值。
 
 * 從Admin檢查&#x200B;**[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]**&#x200B;欄位的值。
 
@@ -53,7 +53,7 @@ Adobe Commerce需要安裝Elasticsearch或OpenSearch才能使用軟體。
 
 ### MySQL
 
-自2.4版起，MySQL不再支援目錄搜尋引擎。 您必須先安裝並設定Elasticsearch或OpenSearch，才能進行升級。 請使用下列資源來協助引導您完成此程式：
+自2.4版起，MySQL不再支援目錄搜尋引擎。 升級前，您必須先安裝並設定Elasticsearch或OpenSearch。 請使用下列資源來協助引導您完成此程式：
 
 * [安裝及設定Elasticsearch](../../configuration/search/overview-search.md)
 * [正在安裝Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
@@ -68,15 +68,15 @@ Adobe Commerce需要安裝Elasticsearch或OpenSearch才能使用軟體。
 
 ### 搜尋引擎
 
-在升級至2.4.0之前，您必須安裝並設定Elasticsearch7.6或更新版本或OpenSearch 1.2。Adobe不再支援Elasticsearch 2.x、5.x和6.x。_設定指南_&#x200B;中的[搜尋引擎設定](../../configuration/search/configure-search-engine.md)說明將Elasticsearch升級至支援的版本後必須執行的工作。
+在升級至2.4.0之前，您必須安裝並設定Elasticsearch 7.6或更新版本或OpenSearch 1.2。Adobe不再支援Elasticsearch 2.x、5.x和6.x。[搜尋引擎組態&#x200B;_組態指南_&#x200B;中的](../../configuration/search/configure-search-engine.md)說明將Elasticsearch升級至支援的版本後，您必須執行的工作。
 
-請參閱[升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)，以取得有關備份資料、偵測可能的移轉問題，以及在部署到生產環境之前測試升級的完整指示。 根據您目前的Elasticsearch版本，可能不需要完全重新啟動叢集。
+請參閱[升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)，以取得有關備份資料、偵測可能的移轉問題，以及在部署到生產環境之前測試升級的完整指示。 根據您目前的Elasticsearch版本，不一定需要重新啟動完整叢集。
 
 Elasticsearch需要Java Development Kit (JDK) 1.8或更新版本。 請參閱[安裝Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk)以檢查已安裝的JDK版本。
 
 #### OpenSearch
 
-OpenSearch是Elasticsearch授權變更後，Elasticsearch7.10.2的開放原始碼復本。 下列版本的Adobe Commerce皆支援OpenSearch：
+OpenSearch是Elasticsearch授權變更後，Elasticsearch 7.10.2的開放原始碼復本。 下列版本的Adobe Commerce皆支援OpenSearch：
 
 * 2.4.6 （OpenSearch有單獨的模組和設定）
 * 2.4.5
@@ -84,7 +84,7 @@ OpenSearch是Elasticsearch授權變更後，Elasticsearch7.10.2的開放原始�
 * 2.4.3 - p2
 * 2.3.7 - p3
 
-您必須升級至上述（或更新版本）的Adobe Commerce，才能[從Elasticsearch移轉至OpenSearch](opensearch-migration.md)。
+您必須升級至上述（或更新版本）的Elasticsearch版本，才能[從Adobe Commerce移轉至OpenSearch](opensearch-migration.md)。
 
 OpenSearch需要JDK 1.8或更新版本。 請參閱[安裝Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk)以檢查已安裝的JDK版本。
 
@@ -94,9 +94,13 @@ OpenSearch需要JDK 1.8或更新版本。 請參閱[安裝Java Software Developm
 
 Adobe Commerce 2.4.6已匯入對Elasticsearch 8.x的支援。下列指示顯示Elasticsearch從7.x升級至8.x的範例：
 
-1. 將Elasticsearch7.x伺服器升級至8.x，並確定已啟動且執行中。 請參閱[Elasticsearch檔案](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)。
+>[!NOTE]
+>
+>在即將發行的2.4.8版本中，這些步驟將不是必要的，因為預設會包含Elasticsearch 8模組，且您不需要另外安裝。
 
-1. 將下列設定新增至您的`elasticsearch.yml`檔案並重新啟動Elasticsearch8.x服務，以啟用`id_field_data`欄位。
+1. 將Elasticsearch 7.x伺服器升級至8.x，並確定已啟動且執行中。 請參閱[Elasticsearch檔案](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)。
+
+1. 將下列設定新增至您的`elasticsearch.yml`檔案並重新啟動Elasticsearch 8.x服務，以啟用`id_field_data`欄位。
 
    ```yaml
    indices:
@@ -106,13 +110,35 @@ Adobe Commerce 2.4.6已匯入對Elasticsearch 8.x的支援。下列指示顯示E
 
    >[!INFO]
    >
-   >為了支援Elasticsearch8.x，Adobe Commerce 2.4.6預設不允許使用`indices.id_field_data`屬性，並使用`docvalue_fields`屬性中的`_id`欄位。
+   >為了支援Elasticsearch 8.x，Adobe Commerce 2.4.6預設不允許使用`indices.id_field_data`屬性，並使用`docvalue_fields`屬性中的`_id`欄位。
 
 1. 在Adobe Commerce專案的根目錄中，更新您的撰寫器相依性以移除`Magento_Elasticsearch7`模組並安裝`Magento_Elasticsearch8`模組。
 
    ```bash
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
+
+   如果您遇到`psr/http-message`的相依性錯誤，請按一下以展開下列疑難排解區段：
+
+   +++疑難排除
+
+   如果在安裝Elasticsearch 8時遇到相依性衝突，尤其是與`psr/http-message`的衝突，您可以按照以下步驟解決此問題：
+
+   1. 首先，需要Elasticsearch 8模組，而不更新其他相依性：
+
+      ```bash
+      composer require magento/module-elasticsearch-8 --no-update
+      ```
+
+   1. 然後更新Elasticsearch 8模組和`aws/aws-sdk-php`套件：
+
+      ```bash
+      composer update magento/module-elasticsearch-8 aws/aws-sdk-php -W
+      ```
+
+   此方法適用於2.4.7-p4與PHP 8.3。發生此問題的原因是`aws/aws-sdk-php`需要`psr/http-message >= 2.0`，這可能會造成衝突。 上述步驟有助於解決這些相依性問題。
+
++++
 
 1. 更新您的專案元件。
 
@@ -136,9 +162,9 @@ Adobe Commerce 2.4.6已匯入對Elasticsearch 8.x的支援。下列指示顯示E
 
 #### 降級Elasticsearch
 
-如果您不小心升級伺服器上的Elasticsearch版本，或因任何其他原因而決定需要降級，您也必須更新Adobe Commerce專案相依性。 例如，從Elasticsearch8.x降級為7.x
+如果您不小心升級伺服器上的Elasticsearch版本，或因任何其他原因而決定需要降級，您也必須更新Adobe Commerce專案相依性。 例如，若要從Elasticsearch 8.x降級為7.x
 
-1. 將Elasticsearch8.x伺服器降級為7.x，並確定已啟動且執行中。 請參閱[Elasticsearch檔案](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)。
+1. 將Elasticsearch 8.x伺服器降級為7.x，並確定已啟動且執行中。 請參閱[Elasticsearch檔案](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)。
 
 1. 在Adobe Commerce專案的根目錄中，更新您的撰寫器相依性以移除`Magento_Elasticsearch8`模組及其撰寫器相依性，並安裝`Magento_Elasticsearch7`模組。
 
