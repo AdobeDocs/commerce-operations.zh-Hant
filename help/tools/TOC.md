@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 382702e6e267402d925f33460ea8e0135c528b84
+source-git-commit: bbbe5481d87c44fe22beb303bcc19dcc00984fac
 workflow-type: tm+mt
-source-wordcount: '7282'
+source-wordcount: '7271'
 ht-degree: 0%
 
 ---
@@ -763,7 +763,7 @@ ht-degree: 0%
       - v1.1.60 {#v1-1-60}
          - [總覽： [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323：解析[!UICONTROL Select All]功能，並增強產品類別快顯視窗中的分頁和記錄計數](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
-         - [ACSD-64111：修正在 [!DNL Page Builder]中設定產品元件的巢狀條件時，vendor/magento/module-rule/Model/ConditionFactory.php：50中發生InvalidArgumentException：類別不存在錯誤的問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
+         - [ACSD-64111：修正InvalidArgumentException：在 [!DNL Page Builder]中設定產品元件的巢狀條件時，類別不存在錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992：管理UI中有優惠券和送貨方法條件錯誤的[!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
          - [總覽： [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
