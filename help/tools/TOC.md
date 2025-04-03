@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 472b79822cfb103e1e3833622cfc2eb439016193
+source-git-commit: 382702e6e267402d925f33460ea8e0135c528b84
 workflow-type: tm+mt
-source-wordcount: '7272'
+source-wordcount: '7282'
 ht-degree: 0%
 
 ---
@@ -767,6 +767,7 @@ ht-degree: 0%
          - [ACSD-63992：管理UI中有優惠券和送貨方法條件錯誤的[!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
          - [總覽： [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
+         - [ACSD-64178： [!UICONTROL Edit Attribute Set]頁面載入速度緩慢，包含數千個產品屬性](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考{#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
