@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: bbbe5481d87c44fe22beb303bcc19dcc00984fac
+source-git-commit: 1e02a1831639368ba4640231a854d6f5613c60ad
 workflow-type: tm+mt
-source-wordcount: '7271'
+source-wordcount: '7287'
 ht-degree: 0%
 
 ---
@@ -766,7 +766,8 @@ ht-degree: 0%
          - [ACSD-64111：修正InvalidArgumentException：在 [!DNL Page Builder]中設定產品元件的巢狀條件時，類別不存在錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992：管理UI中有優惠券和送貨方法條件錯誤的[!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
-         - [總覽： [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
+         - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
+         - [ACP2E-3689：在較深的層級顯示類別樹狀結構並反映錨點/非錨點關係的多個問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178： [!UICONTROL Edit Attribute Set]頁面載入速度緩慢，包含數千個產品屬性](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考{#cli-reference}
