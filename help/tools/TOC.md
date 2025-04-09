@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: ecdc18ecee369cb94d5e86a78577d486f13de9e3
+source-git-commit: 77f3bb9b766eef3d56fc5d89b29daa9254992220
 workflow-type: tm+mt
-source-wordcount: '7351'
+source-wordcount: '7335'
 ht-degree: 0%
 
 ---
@@ -763,7 +763,6 @@ ht-degree: 0%
       - v1.1.60
          - [總覽： [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323：解析[!UICONTROL Select All]功能，並增強產品類別快顯視窗中的分頁和記錄計數](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
-         - [ACSD-64137：依郵遞區號搜尋取車地點不適用於荷蘭本地化](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code)
          - [ACSD-64111：修正InvalidArgumentException：在 [!DNL Page Builder]中設定產品元件的巢狀條件時，類別不存在錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992：管理UI中有優惠券和送貨方法條件錯誤的[!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61
@@ -824,6 +823,3 @@ ht-degree: 0%
       - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [變更記錄檔](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
-
-
-[def]: /help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code.md
