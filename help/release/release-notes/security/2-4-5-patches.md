@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.5安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.5版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
+source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1235'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,14 @@ ht-degree: 0%
 # Adobe Commerce 2.4.5安全性修補程式的發行說明
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.5-p12
+
+Adobe Commerce 2.4.5-p12安全性版本針對2.4.5舊版中發現的漏洞提供安全性錯誤修正。
+
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)。
+
+{{b2b-patches}}
 
 ## 2.4.5-p11
 

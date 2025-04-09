@@ -1,8 +1,8 @@
 ---
-source-git-commit: a8f4df78dfec2a1e94d650cac03c7fba21f398e8
+source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
 workflow-type: tm+mt
-source-wordcount: '8072'
-ht-degree: 0%
+source-wordcount: '8253'
+ht-degree: 1%
 
 ---
 # bin/magento (Adobe Commerce內部部署)
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**版本**： 2.4.7-p1
+**版本**： 2.4.8
 
-此參考包含141個可透過`bin/magento`命令列工具使用的命令。
+此參考包含145個可透過`bin/magento`命令列工具使用的命令。
 初始清單是在Adobe Commerce使用`bin/magento list`命令自動產生的。
 
 ## 一般
 
 使用[「新增CLI命令」](https://developer.adobe.com/commerce/php/development/cli-commands/)指南來新增自訂CLI命令。
 
-您可以使用捷徑來呼叫`bin/magento` CLI命令，而不使用完整的命令名稱。 例如，您可以使用`bin/magento s:up`、`bin/magento s:upg`呼叫`bin/magento setup:upgrade`。 請參閱[捷徑語法](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)，瞭解如何使用捷徑與任何CLI命令。
+您可以使用捷徑來呼叫`bin/magento` CLI命令，而不使用完整的命令名稱。 例如，您可以使用， `bin/magento s:upg`進行呼叫。`bin/magento s:up``bin/magento setup:upgrade`請參閱 [快捷方式語法](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) ，瞭解如何將快捷方式與任何 CLI 命令一起使用。
 
-此參考檔案是從應用程式原始碼產生。 若要變更檔案，您應在相關[程式碼基底](https://github.com/magento)存放庫中開啟對應命令的提取要求。 如需詳細資訊，請參閱[程式碼貢獻](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)。
+此參考文件是從應用程式原始碼生成的。 若要更改文檔，應在相關 [代碼庫](https://github.com/magento) 存放庫中打開相應命令的提取請求。 有關詳細資訊，請參閱 [Code貢獻](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) 。
 
 ### 全域選項
 
@@ -32,12 +32,12 @@ ht-degree: 0%
 
 顯示指定指令的說明。 當沒有指定命令時，顯示清單命令的說明
 
-- 預設： `false`
+- 違約： `false`
 - 不接受值
 
 #### `--quiet`，`-q`
 
-不輸出任何訊息
+不要輸出任何消息
 
 - 預設： `false`
 - 不接受值
@@ -158,11 +158,11 @@ Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
     eval "$(/var/www/html/magento2/bin/magento completion )"
 ```
 
-### 引數
+### 參數
 
 #### `shell`
 
-如果未指定shell型別（例如&quot;bash&quot;），則會使用&quot;$SHELL&quot;環境變數的值
+如果未給出外殼類型（例如“bash”），將使用“$SHELL”env var的值
 
 ### 選項
 
@@ -291,7 +291,7 @@ bin/magento admin:adobe-ims:disable
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 
 ## `admin:adobe-ims:enable`
@@ -300,7 +300,7 @@ bin/magento admin:adobe-ims:disable
 bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|--client-id [CLIENT-ID]] [-s|--client-secret [CLIENT-SECRET]] [-t|--2fa [2FA]]
 ```
 
-啟用Adobe IMS模組。
+啟用Adobe Systems IMS 模組。
 
 ### 選項
 
@@ -326,7 +326,7 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 #### `--2fa`，`-t`
 
-檢查Adobe Admin Console中是否為「組織」啟用2FA。 啟用模組時需要
+檢查是否為Adobe Admin Console中的組織啟用了 2FA。 啟用模組時需要
 
 - 接受值
 
@@ -445,14 +445,14 @@ bin/magento app:config:dump [<config-types>...]
 
 #### `config-types`
 
-以空格分隔的設定型別清單，或省略以傾印所有[範圍、系統、佈景主題、i18n]
+以空格分隔的設定型別清單，或省略以傾印所有[範圍、主題、系統、i18n]
 
-- 預設： `[]`
+- 違約： `[]`
 - 陣列
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 
 ## `app:config:import`
@@ -461,7 +461,7 @@ bin/magento app:config:dump [<config-types>...]
 bin/magento app:config:import
 ```
 
-從共用組態檔匯入資料至適當的資料儲存體
+匯入共用配置文件中的數據到適當的數據儲存
 
 ### 選項
 
@@ -478,7 +478,7 @@ bin/magento app:config:status
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 
 ## `braintree:migrate`
@@ -487,7 +487,7 @@ bin/magento app:config:status
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
 
-從Magento1資料庫移轉儲存的卡片
+從Magento 1資料庫遷移存儲的卡
 
 ### 選項
 
@@ -544,6 +544,19 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 新增或覆寫啟動程式的引數
 
 - 需要值
+
+
+## `cache:clean:payment_services_merchant_scopes`
+
+```bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
+
+清除付款服務商家範圍快取
+
+### 選項
+
+如需全域選項，請參閱[全域選項](#global-options)。
 
 
 ## `cache:disable`
@@ -722,7 +735,7 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 #### `path`
 
-設定路徑，例如group/section/field_name
+配置路徑，例如 群組/section/field_name
 
 
 #### `value`
@@ -731,11 +744,11 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 #### `--interactive`，`-i`
 
-啟用互動模式以設定所有敏感變數
+啟用交互模式以設置所有敏感變數
 
 - 預設： `false`
 - 不接受值
@@ -791,7 +804,7 @@ bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env]
 
 #### `--scope-code`
 
-範圍代碼（只有在範圍不是「預設」時才需要）
+作用域代碼 （僅當 範圍 不是「預設」時才需要）
 
 - 需要值
 
@@ -887,7 +900,7 @@ bin/magento cron:remove
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 
 ## `cron:run`
@@ -896,7 +909,7 @@ bin/magento cron:remove
 bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]
 ```
 
-依排程執行工作
+按計劃運行作業
 
 ### 選項
 
@@ -979,7 +992,7 @@ bin/magento deploy:mode:show
 ## `dev:di:info`
 
 ```bash
-bin/magento dev:di:info <class>
+bin/magento dev:di:info <class> [<area>]
 ```
 
 提供指令的相依性插入組態的資訊。
@@ -991,6 +1004,11 @@ bin/magento dev:di:info <class>
 類別名稱
 
 - 必填
+
+
+#### `area`
+
+區碼
 
 ### 選項
 
@@ -1210,7 +1228,7 @@ bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 #### `--arguments`，`-c`
 
@@ -1340,6 +1358,60 @@ bin/magento downloadable:domains:show
 如需全域選項，請參閱[全域選項](#global-options)。
 
 
+## `encryption:data:list-re-encryptors`
+
+```bash
+bin/magento encryption:data:list-re-encryptors
+```
+
+顯示可用資料重新加密程式的清單。
+
+### 選項
+
+如需全域選項，請參閱[全域選項](#global-options)。
+
+
+## `encryption:data:re-encrypt`
+
+```bash
+bin/magento encryption:data:re-encrypt [<encryptors>...]
+```
+
+使用目前的加密金鑰重新加密加密的資料。
+
+### 引數
+
+#### `encryptors`
+
+要使用的重新加密程式清單（以空格分隔）。
+
+- 預設： `[]`
+- 陣列
+
+### 選項
+
+有關全域選項，請參閱 [全域選項](#global-options)。
+
+
+## `encryption:key:change`
+
+```bash
+bin/magento encryption:key:change [-k|--key [KEY]]
+```
+
+更改env.php檔中的加密金鑰。
+
+### 選項
+
+有關全域選項，請參閱 [全域選項](#global-options)。
+
+#### `--key`，`-k`
+
+金鑰必須是 32 個字元長的字串。 如果未提供，將生成隨機金鑰。
+
+- 接受值
+
+
 ## `encryption:payment-data:update`
 
 ```bash
@@ -1350,7 +1422,7 @@ bin/magento encryption:payment-data:update
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 
 ## `events:create-event-provider`
@@ -1359,7 +1431,7 @@ bin/magento encryption:payment-data:update
 bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCRIPTION]]events:provider:create 
 ```
 
-在此例項的Adobe I/O事件中建立自訂事件提供者。 如果您未指定標籤和說明選項，則必須在系統app/etc/event-types.json檔案中定義它們。
+為此執行個體建立Adobe Systems I/O 事件中的自訂事件提供程序。 如果未指定標籤和描述選項，則必須在 system app/etc/事件-types.json 檔中定義它們。
 
 ### 選項
 
@@ -1438,9 +1510,9 @@ bin/magento events:list
 bin/magento events:list:all <module_name>
 ```
 
-傳回指定模組中定義的可訂閱事件清單
+返回在指定模組中定義的可訂閱事件的清單
 
-### 引數
+### 參數
 
 #### `module_name`
 
@@ -1459,7 +1531,7 @@ bin/magento events:list:all <module_name>
 bin/magento events:metadata:populate
 ```
 
-從組態清單（XML和應用程式組態）以Adobe I/O建立中繼資料
+從設定清單（XML和應用程式設定）在Adobe I/O中建立中繼資料
 
 ### 選項
 
@@ -1472,7 +1544,7 @@ bin/magento events:metadata:populate
 bin/magento events:provider:info
 ```
 
-傳回已設定之事件提供者的詳細資訊
+返回有關已配置事件提供程式的詳細資訊
 
 ### 選項
 
@@ -1500,11 +1572,11 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 訂閱事件
 
-### 引數
+### 參數
 
 #### `event-code`
 
-事件代碼
+事件程序代碼
 
 - 必填
 
@@ -1528,13 +1600,13 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 #### `--parent`
 
-具有規則的事件訂閱的父事件代碼。
+具有規則或別名之事件訂閱的父事件代碼。
 
 - 需要值
 
 #### `--rules`
 
-事件訂閱的規則清單，其中每個規則的格式為「field\|operator\|value」。
+事件訂閱的規則清單，其中每個規則的格式為「field\|operator\|value」。 若要使用此選項，您也必須指定「父項」選項。
 
 - 預設： `[]`
 - 需要值
@@ -1548,9 +1620,9 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 #### `--destination`，`-d`
 
-此事件的目的地。 針對應傳送至自訂目的地的事件指定此選項。
+此事件的目的地。 為應傳送至自定義目的地的事件指定此選項。
 
-- 預設： `default`
+- 違約： `default`
 - 需要值
 
 #### `--hipaaAuditRequired`
@@ -1608,7 +1680,7 @@ bin/magento events:unsubscribe <event-code>
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
 
-探索程式碼基底中的片語
+發現代碼庫中的短語
 
 ### 引數
 
@@ -1622,13 +1694,13 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 #### `--output`，`-o`
 
-輸出檔案的路徑（包括檔案名稱）。 若未指定檔案，預設值為stdout。
+輸出檔案的路徑（包括檔名）。 如果未指定檔案，則預設為 stdout。
 
 - 需要值
 
 #### `--magento`，`-m`
 
-使用 — magento引數來剖析目前的Magento程式碼基底。 若指定目錄，則省略引數。
+使用 --magento 參數來剖析目前Magento程序代碼庫。 如果指定了目錄，請省略該參數。
 
 - 預設： `false`
 - 不接受值
@@ -1682,13 +1754,13 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 ```
 
-解除安裝語言套件
+卸載語言包
 
-### 引數
+### 參數
 
 #### `package`
 
-語言套件名稱
+語言套装名稱
 
 - 預設： `[]`
 - 必填
@@ -1717,7 +1789,7 @@ bin/magento indexer:info
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 
 ## `indexer:reindex`
@@ -1726,7 +1798,7 @@ bin/magento indexer:info
 bin/magento indexer:reindex [<index>...]
 ```
 
-重新索引資料
+重新索引數據
 
 ### 引數
 
@@ -1770,7 +1842,7 @@ bin/magento indexer:reset [<index>...]
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
 
-設定索引子Dimension模式
+設定索引器維度模式
 
 ### 引數
 
@@ -1800,7 +1872,7 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 #### `mode`
 
-索引器模式型別[即時|排程]
+索引器模式類型 [即時|計劃]
 
 
 #### `index`
@@ -1955,7 +2027,7 @@ bin/magento info:currency:list
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
 
-顯示Magento架構的相依性數目
+顯示Magento架構的相依性數量
 
 ### 選項
 
@@ -2032,7 +2104,7 @@ bin/magento info:timezone:list
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 
 ## `inventory:reservation:create-compensations`
@@ -2041,26 +2113,26 @@ bin/magento info:timezone:list
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
 ```
 
-依據提供的薪酬引數建立預留
+通過提供補償論據建立保留
 
-### 引數
+### 參數
 
 #### `compensations`
 
-補償引數清單，格式為「：：：」
+“：： 格式中的補償參數清單
 
-- 預設： `[]`
+- 違約： `[]`
 - 陣列
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 #### `--raw`，`-r`
 
 原始輸出
 
-- 預設： `false`
+- 違約： `false`
 - 不接受值
 
 
@@ -2143,7 +2215,7 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 允許的IP位址
 
-- 預設： `[]`
+- 違約： `[]`
 - 陣列
 
 ### 選項
@@ -2159,9 +2231,9 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 #### `--add`
 
-將IP位址新增至現有清單
+將 IP 地址新增至現有清單
 
-- 預設： `false`
+- 違約： `false`
 - 不接受值
 
 #### `--magento-init-params`
@@ -2427,13 +2499,13 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media] [--backup-db] [--non-composer] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] <module>...
 ```
 
-解除安裝撰寫器安裝的模組
+卸載由撰寫器安裝的模組
 
-### 引數
+### 參數
 
 #### `module`
 
-模組名稱
+模組的名稱
 
 - 預設： `[]`
 - 必填
@@ -2619,7 +2691,7 @@ To define the number of processes per consumer:
 
 #### `--max-messages`
 
-處理序終止前，消費者要處理的訊息數目。 如果未指定 — 在處理所有佇列的訊息後終止。
+處理序終止前，消費者要處理的訊息數目。 如果未指定 - 在處理所有排隊的消息后終止。
 
 - 需要值
 
@@ -2671,7 +2743,7 @@ bin/magento remote-storage:sync
 ## `saas:resync`
 
 ```bash
-bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
+bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync] [--by-ids BY-IDS] [--id-type ID-TYPE]
 ```
 
 將摘要資料重新同步至SaaS服務。
@@ -2702,7 +2774,7 @@ bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run
 
 #### `--dry-run`
 
-試試。 將不會匯出資料。 若要將裝載儲存至記錄檔var/log/saas-export.log ，請使用環境變數EXPORTER_EXTENDED_LOG=1執行。
+試試。 不會匯出數據。 若要將裝載儲存至記錄檔var/log/saas-export.log ，請使用環境變數EXPORTER_EXTENDED_LOG=1執行。
 
 - 預設： `false`
 - 不接受值
@@ -2715,16 +2787,28 @@ bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run
 
 #### `--batch-size`
 
-設定同步批次大小
+設置同步批大小
 
 - 需要值
 
 #### `--continue-resync`
 
-繼續從上次儲存的位置重新同步（此選項適用於產品、產品版本、價格摘要）
+繼續從上次儲存的位置重新同步 （此選項適用於產品、產品覆蓋、價格饋送）
 
-- 預設： `false`
+- 違約： `false`
 - 不接受值
+
+#### `--by-ids`
+
+部分依照提供的識別碼清單重新同步。 （此選項適用於產品、產品覆寫和價格摘要）
+
+- 需要值
+
+#### `--id-type`
+
+用於部分重新同步的識別碼類型 （例如： sku、productId 等）
+
+- 需要值
 
 
 ## `sampledata:deploy`
@@ -2733,7 +2817,7 @@ bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run
 bin/magento sampledata:deploy [--no-update]
 ```
 
-部署範例資料模組，以進行Composer型Magento安裝
+為基於撰寫器的Magento安裝部署範例數據模組
 
 ### 選項
 
@@ -2753,15 +2837,15 @@ bin/magento sampledata:deploy [--no-update]
 bin/magento sampledata:remove [--no-update]
 ```
 
-從composer.json移除所有範例資料套件
+拿掉 composer.json 的所有範例數據報
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 #### `--no-update`
 
-更新composer.json而不執行composer更新
+在不執行撰寫器更新的情況下更新composer.json
 
 - 預設： `false`
 - 不接受值
@@ -2790,7 +2874,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 
 ## `security:recaptcha:disable-for-user-login`
@@ -2970,7 +3054,7 @@ ApplicationServer狀態監視器的彙總輸出
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-備份Magento應用程式程式碼基底、媒體和資料庫
+備份Magento應用程式的程式碼基底、媒體和資料庫
 
 ### 選項
 
@@ -2994,12 +3078,12 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 進行完整的資料庫備份
 
-- 預設： `false`
+- 違約： `false`
 - 不接受值
 
 #### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+新增至任何命令以自定義Magento初始化參數 例如：“MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache”
 
 - 需要值
 
@@ -3007,7 +3091,7 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 ## `setup:config:set`
 
 ```bash
-bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 建立或修改部署設定
@@ -3015,24 +3099,6 @@ bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--en
 ### 選項
 
 如需全域選項，請參閱[全域選項](#global-options)。
-
-#### `--enable-debug-logging`
-
-啟用偵錯記錄
-
-- 需要值
-
-#### `--enable-syslog-logging`
-
-啟用Syslog記錄
-
-- 需要值
-
-#### `--backend-frontname`
-
-後端前端名稱（如果遺失，則會自動產生）
-
-- 需要值
 
 #### `--remote-storage-driver`
 
@@ -3086,15 +3152,27 @@ bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--en
 - 預設： `0`
 - 需要值
 
-#### `--id_salt`
+#### `--backend-frontname`
 
-graphql Salt
+後端前端名稱（如果遺失，則會自動產生）
 
 - 需要值
 
-#### `--config-async`
+#### `--enable-debug-logging`
 
-啟用非同步管理設定儲存？ 1 — 是，0 — 否
+啟用偵錯記錄
+
+- 需要值
+
+#### `--enable-syslog-logging`
+
+啟用系統日誌記錄
+
+- 需要值
+
+#### `--id_salt`
+
+graphql Salt
 
 - 需要值
 
@@ -3104,16 +3182,22 @@ graphql Salt
 
 - 需要值
 
+#### `--config-async`
+
+啟用非同步管理設定儲存？ 1 — 是，0 — 否
+
+- 需要值
+
 #### `--amqp-host`
 
-Amqp伺服器主機
+Amqp 伺服器主機
 
-- 預設： &quot;
+- 預設值： &#39;&#39;
 - 需要值
 
 #### `--amqp-port`
 
-Amqp伺服器連線埠
+Amqp server 連接埠
 
 - 預設： `5672`
 - 需要值
@@ -3242,28 +3326,28 @@ http快取主機
 
 使用者端金鑰檔案的完整路徑，以透過SSL建立資料庫連線
 
-- 預設： &quot;
+- 預設值： &#39;&#39;
 - 需要值
 
 #### `--db-ssl-cert`
 
-使用者端憑證檔案的完整路徑，以便透過SSL建立資料庫連線
+用戶端憑證檔的完整路徑，以便通過SSL建立資料庫連接
 
-- 預設： &quot;
+- 預設值： &#39;&#39;
 - 需要值
 
 #### `--db-ssl-ca`
 
-伺服器憑證檔案的完整路徑，以透過SSL建立資料庫連線
+伺服器憑證檔的完整路徑，以便通過SSL建立資料庫連接
 
-- 預設： &quot;
+- 預設值： &#39;&#39;
 - 需要值
 
 #### `--db-ssl-verify`
 
 驗證伺服器認證
 
-- 預設： `false`
+- 違約： `false`
 - 不接受值
 
 #### `--session-save`
@@ -3293,6 +3377,12 @@ Redis伺服器密碼
 #### `--session-save-redis-timeout`
 
 連線逾時（以秒為單位）
+
+- 需要值
+
+#### `--session-save-redis-retries`
+
+Redis連線重試。
 
 - 需要值
 
@@ -3358,7 +3448,7 @@ Redis記錄層級。 值： 0 （最少詳細）至7 （最詳細）
 
 #### `--session-save-redis-bot-lifetime`
 
-機器人後續寫入的工作階段期限（使用0可停用）
+機器人在後續寫入時的會話存留期（使用 0 表示禁用）
 
 - 需要值
 
@@ -3376,7 +3466,7 @@ Redis最小工作階段存留期（以秒為單位）
 
 #### `--session-save-redis-max-lifetime`
 
-Redis最長工作階段存留期（以秒為單位）
+Redis 最大會話 期限，以秒為單位
 
 - 需要值
 
@@ -3452,6 +3542,12 @@ Redis伺服器密碼
 
 - 需要值
 
+#### `--cache-backend-redis-use-lua-on-gc`
+
+設為0可停用記憶體回收上的lua （預設為1，已啟用）
+
+- 需要值
+
 #### `--cache-id-prefix`
 
 快取金鑰的ID首碼
@@ -3473,7 +3569,7 @@ Redis伺服器密碼
 
 #### `--page-cache-redis-server`
 
-Redis伺服器
+Redis 伺服器
 
 - 需要值
 
@@ -3527,13 +3623,13 @@ Redis伺服器密碼
 
 #### `--lock-zookeeper-host`
 
-要連線至Zookeeper叢集的主機與連線埠。 例如： 127.0.0.1:2181
+要連線至Zookeeper叢集的主機與連線埠。 例如： 127.0.0.1：2181
 
 - 需要值
 
 #### `--lock-zookeeper-path`
 
-Zookeeper儲存鎖定的路徑。 預設路徑為： /magento/locks
+動物園管理員將保存鎖的路徑。 默認路徑為： /magento/locks
 
 - 需要值
 
@@ -3620,11 +3716,11 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 #### `--magento-init-params`
 
-新增至任何命令以自訂Magento初始化引數，例如：&quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+新增至任何命令以自定義Magento初始化參數 例如：“MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache”
 
 - 需要值
 
@@ -3665,7 +3761,7 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 #### `--type`
 
-找出應產生的修補程式型別。 可用值： `data`， `schema`。
+瞭解應生成哪種類型的修補程式。 可用值： `data`、 `schema`.
 
 - 預設： `data`
 - 接受值
@@ -3877,7 +3973,7 @@ bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--usern
 bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
-安裝及升級資料庫結構描述
+安裝和升級資料庫綱要
 
 ### 選項
 
@@ -3885,7 +3981,7 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 #### `--convert-old-scripts`
 
-允許將舊指令碼(InstallSchema、UpgradeSchema)轉換為db_schema.xml格式
+允許轉換舊腳本（InstallSchema、UpgradeSchema）到 db_綱要.xml 格式
 
 - 預設： `false`
 - 接受值
@@ -3932,7 +4028,7 @@ bin/magento setup:di:compile
 ## `setup:install`
 
 ```bash
-bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--backend-frontname BACKEND-FRONTNAME] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--checkout-async CHECKOUT-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
+bin/magento setup:install [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
 安裝Magento應用程式
@@ -3940,24 +4036,6 @@ bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enabl
 ### 選項
 
 如需全域選項，請參閱[全域選項](#global-options)。
-
-#### `--enable-debug-logging`
-
-啟用偵錯記錄
-
-- 需要值
-
-#### `--enable-syslog-logging`
-
-啟用Syslog記錄
-
-- 需要值
-
-#### `--backend-frontname`
-
-後端前端名稱（如果遺失，則會自動產生）
-
-- 需要值
 
 #### `--remote-storage-driver`
 
@@ -3967,20 +4045,20 @@ bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enabl
 
 #### `--remote-storage-prefix`
 
-遠端儲存首碼
+遠端儲存前綴
 
-- 預設： &quot;
+- 預設值： &#39;&#39;
 - 需要值
 
 #### `--remote-storage-endpoint`
 
-遠端儲存端點
+遠端儲存 端點
 
 - 需要值
 
 #### `--remote-storage-bucket`
 
-遠端儲存貯體
+遠端儲存桶
 
 - 需要值
 
@@ -4011,21 +4089,39 @@ bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enabl
 - 預設： `0`
 - 需要值
 
+#### `--backend-frontname`
+
+後端前端名稱（如果遺失，則會自動產生）
+
+- 需要值
+
+#### `--enable-debug-logging`
+
+啟用偵錯記錄
+
+- 需要值
+
+#### `--enable-syslog-logging`
+
+啟用Syslog記錄
+
+- 需要值
+
 #### `--id_salt`
 
 graphql Salt
 
 - 需要值
 
-#### `--config-async`
-
-啟用非同步管理設定儲存？ 1 — 是，0 — 否
-
-- 需要值
-
 #### `--checkout-async`
 
 啟用非同步訂單處理？ 1 — 是，0 — 否
+
+- 需要值
+
+#### `--config-async`
+
+啟用非同步管理設定儲存？ 1 — 是，0 — 否
 
 - 需要值
 
@@ -4073,9 +4169,9 @@ Amqp SSL
 
 #### `--amqp-ssl-options`
 
-Amqp SSL選項(JSON)
+Amqp SSL 選項 （JSON）
 
-- 預設： &quot;
+- 預設值： &#39;&#39;
 - 需要值
 
 #### `--consumers-wait-for-messages`
@@ -4221,6 +4317,12 @@ Redis伺服器密碼
 
 - 需要值
 
+#### `--session-save-redis-retries`
+
+Redis連線重試。
+
+- 需要值
+
 #### `--session-save-redis-persistent-id`
 
 啟用持續連線的唯一字串
@@ -4313,7 +4415,7 @@ Redis Sentinel主版
 
 #### `--session-save-redis-sentinel-servers`
 
-Redis Sentinel伺服器，以逗號分隔
+Redis Sentinel 伺服器，以逗號分隔
 
 - 需要值
 
@@ -4374,6 +4476,12 @@ Redis伺服器密碼
 #### `--cache-backend-redis-use-lua`
 
 設為1以啟用lua （預設為0，已停用）
+
+- 需要值
+
+#### `--cache-backend-redis-use-lua-on-gc`
+
+設為0可停用記憶體回收上的lua （預設為1，已啟用）
 
 - 需要值
 
@@ -4452,13 +4560,13 @@ Redis伺服器密碼
 
 #### `--lock-zookeeper-host`
 
-要連線至Zookeeper叢集的主機與連線埠。 例如： 127.0.0.1:2181
+要連線至Zookeeper叢集的主機與連線埠。 例如： 127.0.0.1：2181
 
 - 需要值
 
 #### `--lock-zookeeper-path`
 
-Zookeeper儲存鎖定的路徑。 預設路徑為： /magento/locks
+動物園管理員將保存鎖的路徑。 默認路徑為： /magento/locks
 
 - 需要值
 
@@ -4554,7 +4662,7 @@ Redis伺服器使用者
 
 #### `--use-rewrites`
 
-使用rewrites。 已棄用，請使用config：set搭配路徑web/seo/use_rewrites
+使用重寫。 不再提倡，使用 config：set with path web/seo/use_rewrites
 
 - 需要值
 
@@ -4566,25 +4674,25 @@ Redis伺服器使用者
 
 #### `--base-url-secure`
 
-SSL連線的基礎URL。 已棄用，請使用config：set搭配路徑web/secure/base_url
+SSL 連線的基本URL。 已棄用，請使用config：set搭配路徑web/secure/base_url
 
 - 需要值
 
 #### `--use-secure-admin`
 
-使用SSL執行管理介面。 已棄用，請使用config：set搭配路徑web/secure/use_in_adminhtml
+使用 SSL 運行管理介面。 不再提倡，使用 config：set with path web/secure/use_in_adminhtml
 
 - 需要值
 
 #### `--admin-use-security-key`
 
-是否在Magento管理員URL和表單中使用「安全性金鑰」功能。 已棄用，請使用config：set以及路徑admin/security/use_form_key
+是否要在Magento「管理員 URL 和窗體」中使用「安全密鑰」功能。 不再提倡，使用 config：set with path admin/security/use_form_key
 
 - 需要值
 
 #### `--admin-user`
 
-管理員使用者
+管理員用戶
 
 - 接受值
 
@@ -4614,7 +4722,7 @@ SSL連線的基礎URL。 已棄用，請使用config：set搭配路徑web/secure
 
 #### `--search-engine`
 
-搜尋引擎。 值： elasticsearch7， elasticsearch8， opensearch
+搜尋引擎。 值： elasticsearch8， opensearch
 
 - 需要值
 
@@ -4626,31 +4734,31 @@ Elasticsearch伺服器主機。
 
 #### `--elasticsearch-port`
 
-Elasticsearch的伺服器連線埠。
+Elasticsearch伺服器連接埠。
 
 - 需要值
 
 #### `--elasticsearch-enable-auth`
 
-設為1以啟用驗證。 （預設為0，已停用）
+設置為 1 以啟用身份驗證。 （預設為 0，停用）
 
 - 需要值
 
 #### `--elasticsearch-username`
 
-使用者名稱Elasticsearch。 僅在啟用HTTP驗證時適用
+Elasticsearch使用者名稱。 僅在啟用HTTP驗證時適用
 
 - 需要值
 
 #### `--elasticsearch-password`
 
-密碼Elasticsearch。 僅在啟用HTTP驗證時適用
+Elasticsearch密碼。 僅在啟用HTTP驗證時適用
 
 - 需要值
 
 #### `--elasticsearch-index-prefix`
 
-索引首碼Elasticsearch。
+Elasticsearch索引首碼。
 
 - 需要值
 
@@ -4662,13 +4770,13 @@ Elasticsearch伺服器逾時。
 
 #### `--opensearch-host`
 
-OpenSearch伺服器主機。
+OpenSearch 伺服器主機。
 
 - 需要值
 
 #### `--opensearch-port`
 
-OpenSearch伺服器連線埠。
+OpenSearch 伺服器連接埠。
 
 - 需要值
 
@@ -4730,13 +4838,13 @@ OpenSearch伺服器逾時。
 
 #### `--disable-modules`
 
-逗號分隔模組名稱清單。 安裝期間必須避免此情況。 可用的魔術引數「all」。
+逗號分隔模組名稱的清單。 在安裝過程中必須避免這種情況。 可用的魔術參數“全部”。
 
 - 接受值
 
 #### `--convert-old-scripts`
 
-允許將舊指令碼(InstallSchema、UpgradeSchema)轉換為db_schema.xml格式
+允許轉換舊腳本（InstallSchema、UpgradeSchema）到 db_綱要.xml 格式
 
 - 預設： `false`
 - 接受值
@@ -4745,7 +4853,7 @@ OpenSearch伺服器逾時。
 
 互動式Magento安裝
 
-- 預設： `false`
+- 違約： `false`
 - 不接受值
 
 #### `--safe-mode`
@@ -4762,7 +4870,7 @@ OpenSearch伺服器逾時。
 
 #### `--dry-run`
 
-Magento安裝將以試執行模式執行
+Magento安裝將以模擬執行模式執行
 
 - 預設： `false`
 - 接受值
@@ -4792,7 +4900,7 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 #### `--skip-reindex`，`-s`
 
@@ -5041,31 +5149,31 @@ bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [
 
 #### `--language`
 
-預設語言代碼。 已棄用，請使用config：set搭配路徑general/locale/code
+默認語言代碼。 不再提倡，使用 config：set with path general/locale/code
 
 - 需要值
 
 #### `--timezone`
 
-預設時區代碼。 已棄用，請使用config：set搭配路徑general/locale/timezone
+默認時區代碼。 不再提倡，使用 config：set with path general/locale/timezone
 
 - 需要值
 
 #### `--currency`
 
-預設貨幣代碼。 已棄用，請使用config：set以及路徑currency/options/base、currency/options/default和currency/options/allow
+默認貨幣代碼。 不再提倡，使用 config：set with path currency/options/base、currency/options/default 和 currency/options/allow
 
 - 需要值
 
 #### `--use-rewrites`
 
-使用rewrites。 已棄用，請使用config：set搭配路徑web/seo/use_rewrites
+使用重寫。 不再提倡，使用 config：set with path web/seo/use_rewrites
 
 - 需要值
 
 #### `--use-secure`
 
-使用安全URL。 只有在SSL可用時才啟用此選項。 已棄用，將config：set與路徑web/secure/use_in_frontend一起使用
+使用安全 URL。 只有在SSL可用時才啟用此選項。 已棄用，將config：set與路徑web/secure/use_in_frontend一起使用
 
 - 需要值
 
@@ -5083,7 +5191,7 @@ SSL連線的基礎URL。 已棄用，請使用config：set搭配路徑web/secure
 
 #### `--admin-use-security-key`
 
-是否在Magento管理員URL和表單中使用「安全性金鑰」功能。 已棄用，請使用config：set以及路徑admin/security/use_form_key
+是否要在Magento管理員URL和表單中使用「安全性金鑰」功能。 已棄用，請使用config：set以及路徑admin/security/use_form_key
 
 - 需要值
 
@@ -5147,15 +5255,15 @@ bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD
 
 #### `--data-restore`
 
-從傾印還原移除的資料
+從轉儲中還原已刪除的數據
 
 - 接受值
 
 #### `--dry-run`
 
-Magento安裝將以試執行模式執行
+Magento安裝將以模擬執行模式執行
 
-- 預設： `false`
+- 違約： `false`
 - 接受值
 
 #### `--magento-init-params`
@@ -5184,7 +5292,7 @@ bin/magento store:list
 bin/magento store:website:list
 ```
 
-顯示網站清單
+顯示網站的清單
 
 ### 選項
 
@@ -5205,7 +5313,7 @@ bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--log
 
 #### `--name`
 
-傾印名稱
+轉儲名稱
 
 - 接受值
 
@@ -5272,7 +5380,7 @@ bin/magento support:utility:check [--hide-paths]
 
 ### 選項
 
-如需全域選項，請參閱[全域選項](#global-options)。
+有關全域選項，請參閱 [全域選項](#global-options)。
 
 #### `--hide-paths`
 
@@ -5406,13 +5514,13 @@ Web後端的連線埠
 bin/magento webhooks:dev:run <name> <payload>
 ```
 
-執行註冊的webhook以進行開發。
+運行已註冊的 Webhook 用於開發目的。
 
 ### 引數
 
 #### `name`
 
-Webhook名稱
+網路鉤子名稱
 
 - 必填
 
@@ -5434,7 +5542,7 @@ JSON格式的webhook裝載
 bin/magento webhooks:generate:module
 ```
 
-根據webhook註冊產生外掛程式
+根據 Webhook 註冊生成外掛程式
 
 ### 選項
 
@@ -5447,7 +5555,7 @@ bin/magento webhooks:generate:module
 bin/magento webhooks:info [--depth [DEPTH]] [--] <webhook-name> [<webhook-type>]
 ```
 
-傳回指定webhook的裝載。
+返回指定 Webhook 的有效負載。
 
 ### 引數
 

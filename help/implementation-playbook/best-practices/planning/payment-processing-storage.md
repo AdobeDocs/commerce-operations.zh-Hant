@@ -4,7 +4,7 @@ description: 瞭解如何安全地處理和儲存付款詳細資料
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -53,4 +53,4 @@ ht-degree: 0%
 
 ## 其他資訊
 
-如果您正在尋找依Adobe建議的付款解決方案，請考慮[Adobe付款服務](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html)。
+如果您正在尋找Adobe建議的付款解決方案，請考慮[Adobe付款服務](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html)。

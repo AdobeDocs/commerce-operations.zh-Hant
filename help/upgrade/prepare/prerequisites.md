@@ -2,9 +2,9 @@
 title: 完成必要條件
 description: 完成這些先決條件步驟，準備您的Adobe Commerce專案以進行升級。
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: d19051467efe7dcf7aedfa7a29460c72d896f5d4
+source-git-commit: df185e21f918d32ed5033f5db89815b5fc98074f
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1866'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,60 @@ Adobe Commerce需要安裝Elasticsearch或OpenSearch才能使用軟體。
 * [設定Commerce以使用Elasticsearch](../../configuration/search/configure-search-engine.md)並重新索引
 
 部分協力廠商目錄搜尋引擎會在Adobe Commerce搜尋引擎上方執行。 請聯絡您的供應商，以決定是否必須更新擴充功能。
+
+### MySQL 8.4變更
+
+Adobe已在2.4.8版本中新增對MySQL 8.4的支援。
+本節說明開發人員應注意的MySQL 8.4重大變更。
+
+#### 過時的非標準金鑰
+
+使用非唯一或部份索引鍵做為外部索引鍵是不標準的，在MySQL 8.4中已過時。從MySQL 8.4.0開始，您必須透過將[`restrict_fk_on_non_standard_key`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key)設定為`OFF`或以`--skip-restrict-fk-on-non-standard-key`選項啟動伺服器來明確啟用這類金鑰。
+
+#### 從MySQL 8.0 （或更舊版本）升級至MySQL 8.4
+
+若要將MySQL從8.0版正確升級至8.4版，您必須依照下列順序執行步驟：
+
+1. 啟用維護模式：
+
+   ```bash
+   bin/magento maintenance:enable
+   ```
+
+1. 進行資料庫備份：
+
+   ```bash
+   bin/magento setup:backup --db
+   ```
+
+1. 將MySQL升級至8.4版。
+1. 在`my.cnf`檔案的`[mysqld]`中將`restrict_fk_on_non_standard_key`設定為`OFF`。
+
+   ```bash
+   [mysqld]
+   restrict_fk_on_non_standard_key = OFF 
+   ```
+
+   >[!WARNING]
+   >
+   >如果您未將`restrict_fk_on_non_standard_key`的值變更為`OFF`，則在匯入期間將會出現下列錯誤：
+   >
+   ```sql
+   > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
+   >```
+1. 重新啟動MySQL伺服器。
+1. 將備份的資料匯入MySQL。
+1. 清除快取：
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
+1. 停用維護模式：
+
+   ```bash
+   bin/magento maintenance:disable
+   ```
 
 #### MariaDB
 

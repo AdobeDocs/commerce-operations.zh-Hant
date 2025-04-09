@@ -2,7 +2,7 @@
 title: Beta發行版本
 description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c27867be74dfaa1bcd782a23db27db29fdccc4e3
+source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供
 
 >[!IMPORTANT]
 >
->Beta發行版本可能包含瑕疵，並依「現況」提供，並無任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援(透過Adobe支援服務或其他方式)測試版。 建議客戶謹慎使用，切勿依賴測試版和/或任何隨附檔案或資料的正確運作或效能。 Beta版中的功能和API可能會有所變更，恕不另行通知。 因此，使用測試版完全由客戶自行承擔風險。
+>Beta版本可能包含缺陷，並按“原樣”提供，不提供任何形式的保證。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援(透過Adobe支援服務或其他方式)測試版。 建議客戶謹慎使用，切勿依賴測試版和/或任何隨附檔案或資料的正確運作或效能。 Beta版中的功能和API可能會有所變更，恕不另行通知。 因此，使用測試版完全由客戶自行承擔風險。
 
 ## 參與的優點
 
@@ -51,7 +51,7 @@ Adobe Commerce Optimizer透過高效能店面來強化您的電子商務體驗�
    - **第1層搜尋** — 搜尋&quot;product_attribute_1&quot;上的&quot;motor&quot;。
    - **第2層搜尋** — 搜尋「product_attribute_2」上的「零件編號123」。 此範例會在結果中搜尋「馬達」的「零件編號123」。
 
-  分層搜尋可用於`startsWith`搜尋索引和`contains`搜尋索引，如下所述：
+  分層搜尋可用于 `startsWith` 搜尋索引和 `contains` 搜尋索引，如下所述：
 
 - **startsWith搜尋索引** — 使用`startsWith`索引搜尋。 這項新功能可讓：
 
@@ -66,7 +66,7 @@ Adobe Commerce Optimizer透過高效能店面來強化您的電子商務體驗�
 
 這些新條件會增強搜尋查詢篩選機制，以縮小搜尋結果。 這些新條件不會影響主要搜尋查詢。 若要參與測試版，請傳送電子郵件要求給[commerce-storefront-services](mailto:commerce-storefront-services@adobe.com)。
 
-若要安裝即時搜尋測試版，請參閱[即時搜尋指南](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta)。
+若要安裝即時搜尋測試版，請參閱[即時搜尋指南](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta)。
 
 ### IBM Sterling Order Management系統整合(Private Beta)
 
@@ -88,7 +88,7 @@ Adobe Commerce Optimizer透過高效能店面來強化您的電子商務體驗�
 - GraphQL改良功能
 - 一般品質錯誤修正
 - 社群貢獻
-- 支援與[Adobe Commerce服務](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)相容性所需的變更
+- 支援與[Adobe Commerce服務](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)相容性所需的變更
 
 #### 命名慣例和排程
 
@@ -111,6 +111,6 @@ Adobe Commerce Beta版的發佈方式與任何其他Adobe Commerce修補程式�
 
 Adobe不提供適用於測試版的標準Adobe支援服務。
 
-若要提交與Beta版相關的意見反應，請依照[GitHub](https://github.com/magento/magento2)上的[一般問題報告流程](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)操作。
+要提交與測試版相關的反饋，請在 GitHub 上追隨[我們的常規問題報告流程](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)。[](https://github.com/magento/magento2)
 
 我們的內部團隊將監控針對最新測試版報告的所有嚴重問題，並排定在GA發行日期之前要解決的優先順序。

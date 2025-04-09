@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.6安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.6版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
+source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,14 @@ ht-degree: 0%
 # Adobe Commerce 2.4.6安全性修補程式的發行說明
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.6-p10
+
+Adobe Commerce 2.4.6-p10安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
+
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)。
+
+{{b2b-patches}}
 
 ## 2.4.6 - p9
 
@@ -113,11 +121,11 @@ Adobe Commerce 2.4.6-p3包含修補程式ACSD-51892所修正的效能降低解�
 
 ### 已知問題
 
-**問題**： Adobe Commerce在Composer從`repo.magento.com`下載期間顯示`wrong checksum`錯誤，且封裝下載已中斷。 此問題可能發生於下載發行前期間可用的發行套件期間，而且是由重新封裝`magento/module-page-cache`套件所造成。
+**問題**：Adobe Systems Commerce 在 的 `repo.magento.com`Composer 下載期間顯示`wrong checksum`錯誤，並且包下載中斷。此問題可能發生於下載發行前期間可用的發行套件期間，而且是由重新封裝`magento/module-page-cache`套件所造成。
 
-**因應措施**：在下載期間看到此錯誤的商家可執行下列步驟：
+**解決辦法**：在下載期間看到此錯誤的商家可以執行以下步驟：
 
-1) 刪除專案內的`/vendor`目錄（如果存在）。
+1) `/vendor`刪除專案內的目錄（如果存在）。
 2) 執行`bin/magento composer update magento/module-page-cache`命令。 這個命令只會更新`page cache`封裝。
 
 如果檢查值問題持續發生，請先移除`composer.lock`檔案，再重新執行`bin/magento composer update`命令以更新每個封裝。
