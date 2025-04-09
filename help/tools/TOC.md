@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 1e02a1831639368ba4640231a854d6f5613c60ad
+source-git-commit: fd76886406710d98dafa22953950424d2037477a
 workflow-type: tm+mt
-source-wordcount: '7287'
+source-wordcount: '7312'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # 工具 {#tools}
 
 - [概觀](overview.md)
-- 全網站分析工具{#site-wide-analysis-tool}
+- 全網站分析工具 {#site-wide-analysis-tool}
    - [簡介](site-wide-analysis-tool/intro.md)
    - [安裝](site-wide-analysis-tool/installation.md)
    - [如何存取](site-wide-analysis-tool/access.md)
@@ -27,7 +27,7 @@ ht-degree: 0%
    - [警報](site-wide-analysis-tool/alerts.md)
    - [修補程式](site-wide-analysis-tool/patches.md)
 
-- 在Adobe Commerce {#managed-alerts-for-adobe-commerce}上管理警報
+- 在Adobe Commerce上管理警報 {#managed-alerts-for-adobe-commerce}
    - [Adobe Commerce上的受管理警示： [!DNL Redis] 記憶體嚴重警示](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Adobe Commerce的管理警報：磁碟警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
    - [Adobe Commerce的管理警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
@@ -40,12 +40,12 @@ ht-degree: 0%
    - [Adobe Commerce上的受管理警示： [!DNL MariaDB] 警示](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
    - [已管理Adobe Commerce的警示： [!DNL Apdex] 警告警示](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
    - [Adobe Commerce的管理警報： CPU警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
-- 品質修補工具{#quality-patches-tool}
+- 品質修補工具 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用情況](quality-patches-tool/usage.md)
    - [發行說明](quality-patches-tool/release-notes.md)
-   - 品質修補工具{#patches-available-in-qpt}中可用的修補程式
+   - Quality Patches Tool提供的修補程式 {#patches-available-in-qpt}
       - [概觀](quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview.md)
       - v1.1.0 {#v1-1-0}
          - [概覽：品質修補工具(QPT) v1.1.0](quality-patches-tool/patches-available-in-qpt/v1-1-0/overview.md)
@@ -766,14 +766,16 @@ ht-degree: 0%
          - [ACSD-64111：修正InvalidArgumentException：在 [!DNL Page Builder]中設定產品元件的巢狀條件時，類別不存在錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992：管理UI中有優惠券和送貨方法條件錯誤的[!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
+         - [ACSD-64546：在UPS標籤建立期間，UI和陣列到字串轉換例外中的一般錯誤訊息](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion.md)
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689：在較深的層級顯示類別樹狀結構並反映錨點/非錨點關係的多個問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178： [!UICONTROL Edit Attribute Set]頁面載入速度緩慢，包含數千個產品屬性](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-63974：修正分頁導致[!UICONTROL Requisition List]載入時間變慢的問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-- 命令列工具參考{#cli-reference}
+- 命令列工具參考 {#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
    - [升級相容性工具](reference/uct.md)
-- Adobe Commerce {#observation-for-adobe-commerce}的觀察結果
+- Adobe Commerce的觀察結果 {#observation-for-adobe-commerce}
    - [簡介](observation-for-adobe-commerce/intro.md)
    - [如何存取](observation-for-adobe-commerce/access.md)
    - [選取帳戶和時間範圍](observation-for-adobe-commerce/selecting-the-account.md)
@@ -795,11 +797,11 @@ ht-degree: 0%
    - [安全性索引標籤](observation-for-adobe-commerce/security-tab.md)
    - [「地下」標籤](observation-for-adobe-commerce/oac-infra.md)
    - [如何針對Adobe Commerce使用觀察](observation-for-adobe-commerce/how-to-use.md)
-- 資料移轉工具{#data-migration}
+- Data Migration Tool {#data-migration}
    - [移轉的運作方式](data-migration-tool/how-migration-works.md)
    - [最佳實務](data-migration-tool/best-practices.md)
    - [支援的版本](data-migration-tool/supported-versions.md)
-   - 基本知識{#basics}
+   - 基本知識 {#basics}
       - [建立計畫](data-migration-tool/create-plan.md)
       - [先決條件](data-migration-tool/prerequisites.md)
       - [安裝](data-migration-tool/install.md)
@@ -807,7 +809,7 @@ ht-degree: 0%
       - [設定](data-migration-tool/configure.md)
       - [自訂](data-migration-tool/customize.md)
       - [技術規格](data-migration-tool/technical-specification.md)
-   - 移轉資料{#migrate-data}
+   - 移轉資料 {#migrate-data}
       - [概觀](data-migration-tool/migrate-data/overview.md)
       - [設定](data-migration-tool/migrate-data/settings.md)
       - [資料](data-migration-tool/migrate-data/data.md)
@@ -815,7 +817,7 @@ ht-degree: 0%
       - [後續追蹤](data-migration-tool/migrate-data/follow-up.md)
       - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
       - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
-   - 資源{#resources}
+   - 資源 {#resources}
       - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [變更記錄檔](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
