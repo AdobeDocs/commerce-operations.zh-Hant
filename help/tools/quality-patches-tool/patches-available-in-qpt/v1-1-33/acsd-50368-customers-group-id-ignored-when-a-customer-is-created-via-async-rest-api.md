@@ -4,14 +4,18 @@ description: 套用ACSD-50368修補程式以修正Adobe Commerce問題，該問�
 feature: REST
 role: Admin
 exl-id: 1ca78717-2144-4410-a398-764864ee182f
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 9039635038bee9083fa3ed009e79c76e3655b357
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
 # ACSD-50368：透過非同步REST API或非同步大量REST API建立客戶時，會忽略客戶group_id
+
+>[!NOTE]
+>
+>ACSD-50368修補程式已部分淘汰，因為此問題已由2.4.4以上版本的強制安全性修補程式[APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08)解決。
 
 ACSD-50368修補程式修正了透過Async REST API或Async Bulk REST API建立客戶時，忽略客戶group_id的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.33時，即可使用此修補程式。 修補程式ID為ACSD-50368。 請注意，此問題已排程在Adobe Commerce 2.4.7中修正。
 
@@ -23,7 +27,7 @@ ACSD-50368修補程式修正了透過Async REST API或Async Bulk REST API建立�
 
 **與Adobe Commerce版本相容：**
 
-* Adobe Commerce （所有部署方法） 2.4.3 - 2.4.4-p4
+* Adobe Commerce （所有部署方法） 2.4.3 - 2.4.3-p3
 
 >[!NOTE]
 >
@@ -120,7 +124,7 @@ bin/magento setup:upgrade --keep-generated
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
