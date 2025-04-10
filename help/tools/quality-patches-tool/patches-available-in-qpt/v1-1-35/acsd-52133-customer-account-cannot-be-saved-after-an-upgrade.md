@@ -4,14 +4,18 @@ description: 套用ACSD-52133修補程式，修正Adobe Commerce升級後無法�
 feature: Customers, Upgrade
 role: Admin
 exl-id: 4a0e6ed8-3e35-40ce-bb49-8ccfcde437a0
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 82667023bbaa9d725eb52dacb8bd47042bdfe028
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # ACSD-52133：升級後無法儲存客戶帳戶
+
+>[!NOTE]
+>
+>由於與安全性修補程式[APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08)發生衝突，已棄用此修補程式。
 
 ACSD-52133修補程式修正了升級後無法儲存客戶帳戶的問題。 安裝[!DNL Quality Patches Tool (QPT)] 1.1.35時，即可使用此修補程式。 修補程式ID為ACSD-52133。 請注意，此問題已排程在Adobe Commerce 2.4.7中修正。
 
@@ -66,7 +70,7 @@ ACSD-52133修補程式修正了升級後無法儲存客戶帳戶的問題。 安
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* 在[!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)
 
 ## 相關閱讀
