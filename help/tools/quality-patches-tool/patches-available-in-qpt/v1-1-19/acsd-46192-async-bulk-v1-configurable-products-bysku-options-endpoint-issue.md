@@ -4,14 +4,18 @@ description: ACSD-46192修補程式修正「async/bulk/V1/configurable-products/
 feature: Configuration, Products
 role: Admin
 exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 2cd5a55d95fad071fe872fa466aaeb56c439dad1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
 # ACSD-46192：非同步/批次/V1/configurable-products/bySku/options端點問題
+
+>[!NOTE]
+>
+>ACSD-46192修補程式已部分淘汰，因為強制安全性修補程式[APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08)已解決此問題。
 
 ACSD-46192修補程式修正`async/bulk/V1/configurable-products/bySku/options`端點的問題。 安裝[品質修補工具(QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19時，即可使用此修補程式。 修補程式ID為ACSD-46192。 請注意，問題已在Adobe Commerce 2.4.5中修正。
 
@@ -23,7 +27,7 @@ ACSD-46192修補程式修正`async/bulk/V1/configurable-products/bySku/options`�
 
 **與Adobe Commerce版本相容：**
 
-* Adobe Commerce （所有部署方法） 2.4.3和2.4.4
+* Adobe Commerce （所有部署方法） 2.3.6 - 2.4.3-p3
 
 >[!NOTE]
 >
@@ -84,7 +88,7 @@ TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceInputProcessor::
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
