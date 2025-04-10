@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 58d57155fdb197897bff7647546b4a79740ebb38
+source-git-commit: b658fd11c7c178f41f9acec07a9aee6285991eda
 workflow-type: tm+mt
-source-wordcount: '7381'
+source-wordcount: '7397'
 ht-degree: 0%
 
 ---
@@ -766,6 +766,7 @@ ht-degree: 0%
          - [ACSD-64149：僅編輯一個日期時，可以儲存具有[!UICONTROL Date range]條件的客戶區段](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition.md)
          - [ACSD-64111：修正InvalidArgumentException：在 [!DNL Page Builder]中設定產品元件的巢狀條件時，類別不存在錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992：管理UI中有優惠券和送貨方法條件錯誤的[!UICONTROL Cart Price Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
+         - [ACSD-64137：依郵遞區號搜尋取車地點不適用於荷蘭本地化](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code.md)
       - v1.1.61 {#v1-1-61}
          - [ACSD-64546：在UPS標籤建立期間，UI和陣列到字串轉換例外中的一般錯誤訊息](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion.md)
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
