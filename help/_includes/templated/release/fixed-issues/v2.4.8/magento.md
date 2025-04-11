@@ -1,7 +1,7 @@
 ---
-source-git-commit: 62b6501fc2ba595146bf7f38a7d3352ef02be1a0
+source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
 workflow-type: tm+mt
-source-wordcount: '26051'
+source-wordcount: '26047'
 ht-degree: 0%
 
 ---
@@ -59,16 +59,16 @@ ht-degree: 0%
    * _修正附註_：新增Adobe Commerce和擴充功能的MariaDB 11.4支援
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b34c0a75>
 * _AC-12715_：更新Laminas撰寫器相依性，升級至最新版本
-   * _修正說明_：系統現在支援最新版本的 laminas composer 依賴項：
+   * _修正附註_：系統現在支援最新版本的Laminas撰寫器相依性：
 laminas/laminas-servicemanager
 laminas/laminas-server
 laminas/laminas-stdlib
-層/層板驗證器
-確保相容性和最新功能。 以前，更新到這些依賴項的最新版本可能會導致向後不相容問題和測試失敗。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/b34c0a75>
-* _AC-12823_：調查元件升級期間由於 phpunit 修補程序更新而導致的單元測試故障
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/b34c0a75>
-* _AC-13076_： [第 1] 部分 - 全部更新 js 資料庫 和 npm 依賴項與最新的可用版本
+laminas/laminas-validator
+確保相容性和最新功能。 以前，更新到這些相依性的最新版本可能會導致回溯不相容問題和測試失敗。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12823_：在元件升級期間，調查phpunit修補程式更新所造成的單元測試失敗
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-13076_： [第1]部分 — 使用最新可用版本更新所有js程式庫和npm相依性
    * _修正附註_： composer版本支援僅限於composer 2.2.x版。 現在支援也延伸至2.4.x版。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/19844aa0>
 
@@ -112,7 +112,7 @@ laminas/laminas-stdlib
    * _修正附註_：已將TinyMCE 5移轉至TinyMCE 7.3.0，使其成為Adobe Commerce的支援版本，先前系統使用的是5.10.2，此版本已過時且回報安全性弱點
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/edcd0dcc>
 * _AC-12901_： Require.js升級至最新版本2.3.7 (安全性弱點CVE-2024-38999)
-   * _Fix note_: Updated require.js to the latest version 2.3.7. In previous version reported security vulnerability
+   * _修正附註_： require.js已更新至最新版本2.3.7。舊版回報安全性弱點
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b34c0a75>
 
 ## 已修正的問題
@@ -162,13 +162,13 @@ laminas/laminas-stdlib
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/3f12d152>
 * _ACP2E-3486_：產品RestAPI的日期和時間屬性未設定預設值
    * _修正附註_：預設值現在已透過RestAPI正確設定日期、日期及時間屬性
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/1984c61c>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/1984c61c>
 
 ### API、購物車和結帳
 
-* _ACP2E-3343_：嚴重 500 錯誤：Magento\框架\Webapi\與接受 HTTP 標頭相關的異常
-   * _修正說明_：修正後，指定“接受”標頭沒有問題。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/1366ae5e>
+* _ACP2E-3343_：嚴重500錯誤：Magento\Framework\Webapi\Exception與Accept HTTP標頭有關
+   * _修正附註_：修正後，指定「接受」標頭沒有問題。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/1366ae5e>
 
 ### 帳戶
 
@@ -189,7 +189,7 @@ laminas/laminas-stdlib
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38539>
 * _AC-11755_： middlename(&#39;s)未儲存給來賓帳戶
    * _修正附註_：系統現在會在結帳時正確儲存來賓帳戶的中間名，使其可在電子郵件範本中存取。 之前，中間名未儲存在報價表中，且無法在來賓帳戶的電子郵件範本中存取。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38593>
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38593>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/39067>
 * _AC-11919_：管理員：頁面動作按鈕會向左浮動，而非向右
    * _修正附註_：系統現在會將「頁面動作」按鈕正確地對齊管理面板中粘性標題的右側，強化專業的外觀和風格。 以前，這些按鈕錯誤地浮動到粘性標題的左側。
@@ -200,9 +200,9 @@ laminas/laminas-stdlib
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38740>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-13000_：以客戶選擇加入身分登入核取方塊無法翻譯
-   * _修正注意_：系統現在允許在“商店視圖”範圍設置“以客戶身份登錄”複選框和“以選擇加入客户身份登錄”複選框工具提示“字段，從而啟用不同商店視圖的翻譯。 以前，這些欄位僅在「網站」範圍設置，無法翻譯個別商店檢視。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/32329>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/32359>
+   * _修正附註_：系統現在允許在「商店檢視」範圍中設定「以客戶身分登入」核取方塊和「以客戶身分登入」核取方塊工具提示」欄位，以啟用不同商店檢視的翻譯。 之前，這些欄位僅在「網站」範圍設定，無法翻譯個別商店檢視。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/32329>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/32359>
 * _AC-6071_：客戶已登入，但在前端顯示404錯誤。
    * _修正附註_： storefront客戶儀表板頁面現在會在客戶登入時依預期載入。 客戶以前可以登入，但此頁面顯示404錯誤。 [GitHub-35838](https://github.com/magento/magento2/issues/35838)
    * _GitHub問題_： <https://github.com/magento/magento2/issues/35838>
@@ -251,7 +251,7 @@ laminas/laminas-stdlib
 * _AC-11588_：資料驗證成功，且在具有取代行為的匯入產品期間出現匯入按鈕
    * _修正附註_：系統現在會正確驗證資料，並在產品匯入程式期間以「取代」行為隱藏「匯入」按鈕，以防止任何非預期的資料取代。 以前，系統錯誤地驗證資料並顯示「匯入」按鈕，導致潛在的資料不一致。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/0574ac23>
-* _AC-12167_: [Bug] Magento 2.4.7 doesn&#39;t allow product photo&#39;s with capital letter file extension.
+* _AC-12167_： [錯誤] Magento 2.4.7不允許產品像片的副檔名為大寫字母。
    * _修正附註_：系統現在接受具有大寫字母副檔名的產品影像上傳，以確保順利的產品建立程式。 之前，以大寫字母副檔名的影像上傳遭到拒絕，迫使使用者將副檔名變更為小寫。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38831>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/c8f87c25>
@@ -270,33 +270,33 @@ laminas/laminas-stdlib
    * _修正附註_：電話號碼未顯示較早的紅色星號，但是  電話號碼是強制性的。 現在已修正紅色星號，可在電話號碼上顯示為強制欄位。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/c699c206>
 * _AC-6975_： [問題]將預設索引子模式設定為「排程」
-   * _修正備註_：所有新索引子預設為&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;模式。  先前預設模式為&#x200B;**[!UICONTROL Update on Save]**。 現有索引器不受影響。 [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+   * _修正備註_：所有新索引子預設為&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;模式。  先前預設模式為&#x200B;**[!UICONTROL Update on Save]**。 現有的索引器不受影響。 [GitHub-36419](https://github.com/magento/magento2/issues/36419)
    * _GitHub問題_： <https://github.com/magento/magento2/issues/36419>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/0b410856>
 * _AC-7700_： [問題]在mview取消訂閱上卸除索引子變更記錄檔表格
    * _修正備註_：系統現在會在索引從「依排程更新」切換為「儲存時更新」時，自動移除未使用的變更記錄檔表格，將索引標籤為無效，以確保不會遺漏任何專案。 以前，將索引切換為「儲存時更新」會在系統中保留未使用的變更記錄檔表格，並將所有變更的索引標籤為「有效」。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/29789>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/25859>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/25859>
 * _AC-7962_：在行動電話檢視中結帳付款時，沒有運送連結
    * _修正附註_：系統現在可確保結帳標題/連結「送貨」和「檢閱與付款」一律顯示在行動檢視的頁面頂端，讓使用者能夠輕鬆地在步驟之間導覽，並進行必要的更正。 先前，這些標題/連結隱藏在行動檢視中，讓使用者難以瞭解他們目前的步驟或回到先前的步驟。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/36856>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/36982>
 * _AC-8109_：客戶訂單查詢出貨註解created_at傳回時區為+0，不在商店設定的時區內
    * _修正附註_：使用客戶「訂單」查詢時，系統現在會正確顯示客戶設定時區中出貨註解的「created_at」欄位。 以前，「created_at」欄位會顯示在+0時區，無論客戶的時區設定為何。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/36947>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/37642>
-* _AC-9843_：i18n：收集片語破壞翻譯完整性
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/36947>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37642>
+* _AC-9843_： i18n：collect-phrases中斷翻譯完整性
    * _修正附註_： `bin/magento i18n:collect-phrases -o`命令現在可以正確從JavaScript和.phtml檔案收集並新增新片語，確保翻譯檔案能正確反映翻譯。 以前，系統無法在翻譯檔案中包含來自JavaScript檔案的多行翻譯短語以及來自.phtml檔案的短語，導致翻譯不完整或不正確。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/0c53bbf7>
 * _ACP2E-2787_：存放區檢視名稱中的縮寫符號已取代為&#39;
    * _修正附註_：格線的存放區檢視篩選器現在會正確顯示單引號
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38395>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/39d54c2d>
-* _ACP2E-2847_：圖示上傳無法驗證.ico文件
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38395>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/39d54c2d>
+* _ACP2E-2847_： Favicon上傳無法驗證.ico檔案
    * _修正附註_：檔案驗證錯誤已更新為「檔案驗證失敗」。 請驗證存放區設定中的影像處理設定。」 以前只是「檔案驗證失敗」。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/39d54c2d>
 * _ACP2E-2957_： PageBuilder中的相簿顯示舊的影像縮圖，而非新上傳的影像
-   * _修正備註_：通過構建器內容中的圖庫，重新生成已刪除並重新上傳的同名媒體頁面圖片圖像預覽。
+   * _修正附註_：透過頁面產生器內容中的媒體集，重新產生已刪除及重新上傳之相同名稱影像的影像預覽。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2-page-builder/commit/60140cd2>，<https://github.com/magento/magento2/commit/001e5188>
 * _ACP2E-2978_：由具有不同角色範圍的管理員使用者儲存產品會覆寫/刪除產品中現有的相關產品資訊
    * _修正備註_：之前，修正前，當次要管理員使用者按一下「儲存」按鈕，而相關產品未變更時，相關產品會重設並變成空白。 此項修正後，次要管理員使用者按一下儲存按鈕，產品未重設且儲存成功。
@@ -306,9 +306,9 @@ laminas/laminas-stdlib
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/93d50f8d>
 * _ACP2E-3037_：結帳頁面驗證訊息不正確。
    * _修正附註_：如果任何必要欄位留空（例如「位址」），伺服器端驗證將不會顯示訊息。 使用者端驗證將確保必填欄位錯誤通知出現，指出「這是必填欄位」。 以前，如果任何必填欄位留空，除了使用者端驗證訊息之外，還會顯示「需要地址」訊息。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/9af794a4>
-* _ACP2E-3125_：密碼重置範本管理員用戶問題
-   * _修正說明_：此問題已通過使用正確的密鑰得到解決，該金鑰現在在電子郵件範本中包含管理員使用者名，並正確完成主題。 以前，問題源於正在使用的過時密鑰。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/9af794a4>
+* _ACP2E-3125_：管理員使用者的密碼重設範本問題
+   * _修正附註_：問題已透過使用正確金鑰解決，現在電子郵件範本中包含管理員使用者名稱，並正確完成主旨。 以前，該問題源自所使用的過時的鍵值。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/93d50f8d>
 * _ACP2E-3149_：客戶區段URL中有雙斜線
    * _修正附註_：在格線中按一下「重設篩選器」時，URL中不會出現雙斜線。
@@ -320,15 +320,15 @@ laminas/laminas-stdlib
    * _修正備註_： &#39;
 我們現在可以更新自訂建立的訂單狀態，而先前只有在目前狀態為「處理」或「詐騙」時，才能變更狀態。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38659>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/8459b17d>
-* _ACP2E-3294_：送貨地址狀態未自動更新
-   * _修正說明_：在修正之前，送貨地址區域（或區域 id）與地址帳單信息不同步。 現在，當地址信息更改時帳單送貨地址區域和區域 id都會正確更新。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/8459b17d>
+* _ACP2E-3294_：送貨地址狀態不是自動更新
+   * _修正備註_：修正前，送貨地址區域（或區域識別碼）與地址帳單資訊不同步。 現在，帳單地址資訊變更時，送貨地址區域和區域ID都會正確更新。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/581b7ef1>
 * _ACP2E-3364_：重設按鈕在新增/編輯管理員使用者上無法運作
-   * _修正附註_：之前，在[新增/編輯管理員使用者]頁面上，[重設]按鈕無法運作。 現在，在“系統”->許可權“-”>所有使用者“下的”管理“面板中，重設 按鈕將在”添加/編輯管理員使用者“頁面上正常工作。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/5184c067>
-* _ACP2E-3373_：Magento管理員URL路由錯誤的檢測和 CORS 錯誤
-   * _修正說明_：修正後，如果自定義管理域是主域的子域，則只能從配置的子域訪問管理員。
+   * _修正附註_：之前，在[新增/編輯管理員使用者]頁面上，[重設]按鈕無法運作。 現在，在「系統 — >許可權 — >所有使用者」下的「管理員」面板中，「新增/編輯管理員使用者」頁面上的「重設」按鈕將正確運作。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/5184c067>
+* _ACP2E-3373_： Magento管理員URL路由錯誤偵測與CORS錯誤
+   * _修正附註_：修正後，如果自訂管理網域是主網域的子網域，則只能從設定的子網域存取管理員。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/37663>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/3f12d152>
 * _ACP2E-3392_：「購物車允許的最大數量」的驗證中斷
@@ -350,7 +350,7 @@ laminas/laminas-stdlib
    * _修正附註_：新增至自訂模組的許可權將不再自動授與存取所有現有使用者角色，除非明確設定。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/3f12d152>
 * _ACP2E-3509_：管理動作記錄使用者報告未顯示adminhtml_user_delete的詳細資料
-   * _Fix note_: The adminhtml_user_delete now correctly logs important details. 以前，不會為使用者刪除產生記錄。
+   * _修正附註_： adminhtml_user_delete現在會正確記錄重要詳細資料。 以前，不會為使用者刪除產生記錄。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/4de008a9>
 * _ACP2E-3536_：從管理員下訂單時未套用送貨條件的購物車規則
    * _修正附註_：以前，如果購物車價格規則具有附帶優惠券的送貨方式折扣，則無法透過管理員UI套用。 套用此修正後，系統將會從管理員UI成功套用特定送貨方法的購物車價格規則折扣及優惠券。
@@ -369,12 +369,12 @@ laminas/laminas-stdlib
 
 * _AC-13520_： PayPal智慧型按鈕順序後，交易授權未顯示在[交易]索引標籤中
    * _修正附註_：使用PayPal智慧型按鈕下訂單後，系統現在會在「交易」標籤中正確顯示交易授權。 以前，在按一下「授權」按鈕後，授權交易未出現在Transaction標籤中，並且未建立「授權」型別的新交易。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/6cfb9b6b>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/6cfb9b6b>
 
-### 管理員UI，性能
+### 管理員UI、效能
 
-* _ACP2E-3169_：更新到 2.4.5-p8 後，從管理員創建訂單時發生 500 錯誤
-   * _修正注意_：以前啟用 HTML 縮小時，無法從管理員下訂單。 現在，啟用 HTML 縮小后，可以成功下來自管理員的訂單。
+* _ACP2E-3169_：更新至2.4.5-p8後，從管理員建立訂單時發生500錯誤
+   * _修正附註_：先前，啟用HTML縮制時，無法下管理員的訂單。 現在，啟用HTML縮制後，管理員的訂單就可以成功下達。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b21e5d91>
 
 ### 管理UI，運送
@@ -391,23 +391,23 @@ laminas/laminas-stdlib
 
 ### Analytics/報表
 
-* _AC-9922_： Google Analytics CSP 錯誤 https://region1.analytics.google.com
-   * _修正說明_：系統現在可以在啟用Google Analytics時正確允許連接“https://region1.analytics.google.com”，從而防止內容安全策略 （CSP） 錯誤。 以前，從歐盟啟用Google Analytics和查看網站會導致 CSP 控制台錯誤，因為拒絕連接到“https://region1.analytics.google.com”。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/37750>
+* _AC-9922_： Google Analytics CSP錯誤https://region1.analytics.google.com
+   * _修正附註_：啟用Google Analytics時，系統現在可正確連線至&#39;https://region1.analytics.google.com&#39;&#39;，避免內容安全性原則(CSP)錯誤。 之前，若啟用Google Analytics並從歐盟檢視網站，會因為拒絕連線至「https://region1.analytics.google.com&#39;」而導致CSP主控台錯誤。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/37750>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38991>
 * _ACP2E-2570_：進階報告無法運作
    * _修正附註_：系統現在支援以10,000批次載入和寫入報表，為超大型資料集產生進階報表資料檔案。 以前，進階報告模組無法為超大型資料集產生資料檔案，導致在執行analytics_collect_data cron作業期間出現「MySQL伺服器已消失」錯誤。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/a12063bd>
 * _ACP2E-3080_：管理員訂購產品報告日期範圍可見性問題。
-   * _修正說明_：用戶將能夠從訂購產品報表中選擇任何日期。 以前，重新整理表格後，選取「起始」日期將重設「結束」日期。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/6f4805f8>
-* _ACP2E-3096_：不正確的捲曲標題使新遺物:create:部署標記不起作用
-   * _修正說明_：系統現在可以正確格式化捲曲標題，允許 newrelic:create:部署-marker 命令在 新 Relic 中成功創建部署標記。 以前，不正確的捲曲標題會阻止在 新 Relic 中創建部署標記。
+   * _修正附註_：使用者將能夠從「訂購產品」報表中選取任何日期。 先前，重新整理表格後，選取「起始」日期會重設「截止」日期。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/6f4805f8>
+* _ACP2E-3096_：不正確的CURL標頭導致`newrelic:create:deploy-marker`無法運作
+   * _修正附註_：系統現在已正確設定curl標頭的格式，允許`newrelic:create:deploy-marker`命令在New Relic中成功建立部署標籤。 之前，不正確的curl標題無法在New Relic中建立部署標籤。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/37641>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/6a185204>
-* _ACP2E-3183_：NewRelic 瀏覽器 監視內聯 JS 腳本會導致 CSP 錯誤
-   * _修復說明_：NewRelic 瀏覽器監控腳本現在由 應用程式 而不是 APM 代理注入，以符合 CSP（內容安全策略）。 以前，APM 代理注入的 NewRelic 瀏覽器監控腳本不符合 CSP，導致腳本無法執行。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/66dea0de>
+* _ACP2E-3183_： NewRelic瀏覽器監視內嵌JS指令碼導致CSP錯誤
+   * _修正附註_：應用程式現在會插入NewRelic瀏覽器監視指令碼，而非APM代理程式，以符合CSP （內容安全性原則）。 先前，APM代理程式插入的NewRelic瀏覽器監視指令碼與CSP不相容，並導致無法執行指令碼。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/66dea0de>
 * _ACP2E-3189_：對sales_bestsellers_aggregated_daily資料表的INSERT查詢在銷售訂單數量很大的專案上變得緩慢
    * _修正附註_：以前，若訂購大量訂單，需花費大量時間才能產生最暢銷商品每日彙總報表。 現在會及時產生報表。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/7377de59>
@@ -469,11 +469,11 @@ laminas/laminas-stdlib
 * _AC-10698_： GTag未傳送交易價格與總計。
    * _修正附註_：系統現在會在啟用GTag時，正確傳送交易價格與總計至Google Tag，以確保電子商務資料的正確追蹤。 以前，貨幣會不正確地作為「所有」訂單的一部分傳送，而不是與個別訂單相關聯。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/37348>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/37504>， <https://github.com/magento/magento2/pull/37349>
-* _AC-11641_：[在][失敗的付款電子郵件範本中更新了結帳]相關指令
-   * _修正說明_：系統現在會從虛擬產品的失敗付款電子郵件範本中正確省略送貨位址和送貨方式，確保電子郵件中僅包含相關信息。 以前，虛擬產品的失敗付款電子郵件錯誤地包含送貨位址和送貨方式。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/32781>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/32511>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37504>，<https://github.com/magento/magento2/pull/37349>
+* _AC-11641_： [問題] [結帳] Depend指示詞已在失敗的付款電子郵件範本中更新
+   * _修正附註_：系統現在會從虛擬產品的失敗付款電子郵件範本中正確忽略送貨地址和送貨方法，確保電子郵件中僅包含相關資訊。 以前，虛擬產品付款失敗的電子郵件錯誤地包含送貨地址和送貨方法。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/32781>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/32511>
 * _AC-11717_：現有客戶的Magento 2登入在簽出內時，在Firefox瀏覽器中發生主控台錯誤
    * _修正附註_：系統現在可讓使用者在結帳程式期間登入，而不會在Firefox瀏覽器中遇到任何主控台錯誤。 之前，在結帳期間嘗試以現有客戶身分登入，會導致Firefox發生主控台錯誤。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38557>
@@ -496,21 +496,21 @@ laminas/laminas-stdlib
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/1bafc571>
 * _AC-12479_：條款與條件核取方塊不允許店面上的HTML
    * _修正附註_：系統現在支援店面之「條款與條件」核取方塊文字中的HTML格式，可加強自訂與可讀性。 以前，核取方塊文字會以純文字格式顯示，忽略使用的任何HTML標籤。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/6cfb9b6b>
-* _AC-12541_：為已登錄用戶創建的購物車價格規則錯誤地應用於未登錄用戶
-   * _修正說明_：當登錄使用者因到期而自動註銷時，系統現在可以正確刪除Cookie到期使用者的購物車價格規則，確保折扣不會應用於未登錄的使用者。 以前，購物車價格規則在註銷用戶時仍平均應用，從而導致對未登錄用戶應用不正確的折扣。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38944>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/7d5e3906>
-* _AC-13302_：[問題][功能] 通過防止...
-   * _修正說明_：系統現在通過阻止重複 getActions 調用來優化大型購物車的性能，從而提高購物車作的速度和效率。 以前，對於包含多個專案的購物車，getActions 函數被多次調用，從而降低系統性能。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/39292>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/39290>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/6cfb9b6b>
+* _AC-12541_：為登入使用者建立的購物車價格規則未正確地套用於未登入使用者
+   * _修正附註_：系統現在會在登入使用者因Cookie過期而自動登出時，正確移除購物車價格規則，確保折扣不會套用至非登入使用者。 先前，即使使用者已登出，仍會套用購物車價格規則，導致將錯誤的折扣套用至未登入的使用者。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38944>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/7d5e3906>
+* _AC-13302_： [問題] [功能]效能最佳化大型購物車，防止……
+   * _修正附註_：系統現在會防止重複的getActions呼叫，提升購物車操作的速度和效率，以最佳化大型購物車的效能。 之前，如果購物車有多個專案，系統會多次呼叫getActions函式，因而降低系統效能。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/39292>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/39290>
 * _AC-8103_：地址轉譯程式中的轉譯VAT
    * _修正附註_：系統現在允許翻譯地址轉譯器中的「VAT」、「T」、「F」文字，讓使用者可以將這些字詞翻譯成商店的特定語言。 以前，這些術語無法翻譯，迫使使用者採用因應措施。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/36942>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/36943>
-* _ACP2E-2055_：同時具有相同報價 ID 的重複訂單，時差很小
-   * _修正備註_： 修正 Adobe Systems Commerce 客戶在訂購時遇到相同 QuoteID 重複訂單的問題
+* _ACP2E-2055_：同時有相同報價識別碼的重複訂單，幾乎沒有時間差異
+   * _修正附註_：修正Adobe Commerce客戶使用相同QuoteID下重複訂單的問題
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/f89a447e>
 * _ACP2E-2470_：結帳步驟中永久性的購物車已清除
    * _修正附註_：修正後，在未登入時結帳時選取付款方式並不會終止持續工作階段。
@@ -539,15 +539,15 @@ laminas/laminas-stdlib
 * _ACP2E-2923_：結帳為新客戶時，有多個地址新增至帳戶
    * _修正附註_：系統現在只會在訂單無法建立時儲存一次新的客戶地址，以防止在訂單放置錯誤時建立多個相同的地址。 以前，每次嘗試下訂單時，系統都會儲存新地址，無論是否成功建立訂單。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/001e5188>，<https://github.com/magento/inventory/commit/2ebcef39>
-* _ACP2E-3004_：通過客人訂單重新訂購客戶訂單會導致空購物車
-   * _修正說明_：以前，通過“訂單和退貨”頁面下訂單時，客戶被重定向到登入頁面。 應用此修復程序後，在重新訂購時，已註冊客戶將正確重定向到檢視購物車頁面。 此流程的運作方式與訪客客戶相同。
+* _ACP2E-3004_：透過訪客訂單重新排序客戶訂單導致出現空購物車
+   * _修正附註_：先前透過「訂單與退貨」頁面進行重新排序時，會將客戶重新導向至登入頁面。 套用此修正後，進行重新訂購時，註冊的客戶會被正確重新導向至「檢視購物車」頁面。 此流程的運作方式與訪客客戶相同。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/6a185204>
 * _ACP2E-3025_：角色資源有限的管理員使用者無法檢視購物車
-   * _修正附註_：以前，受限制的管理員無法從相關網站的管理員面板中看到捨棄的購物車。 套用此修正後，受限管理員可從管理面板看到已放棄的購物車。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/d1f7dc95>
-* _ACP2E-3176_： [雲] 快速訂購量SKU性能
-   * _修正注意_：當並非所有產品都存在購物車價格規則條件中使用的屬性以及啟用了 MAP（最低廣告價格）功能時，結帳性能得到了改善。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/66dea0de>
+   * _修正附註_：以前，受限制的管理員無法從相關網站的管理員面板中看到捨棄的購物車。 套用此修正後，受限制的管理員可以從管理員面板檢視捨棄的購物車。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/d1f7dc95>
+* _ACP2E-3176_： [雲端]快速訂購大量SKU效能
+   * _修正附註_：當購物車價格規則條件中使用的屬性未針對所有產品出現，且啟用MAP （最低廣告價格）功能時，結帳效能已改善。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/66dea0de>
 * _ACP2E-3211_：購物車中有重複的專案
    * _修正附註_：系統現在可正確處理多個平行請求，以將相同產品加入購物車至單一條列專案，防止為相同的SKU建立個別條列專案。 以前，並行請求將相同產品新增到店面的購物車會導致同一SKU出現多個條列專案。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/66dea0de>
@@ -590,28 +590,28 @@ laminas/laminas-stdlib
 * _AC-12119_：可設定產品的「最便宜運費」立即購買中斷
    * _修正附註_：「立即購買」功能針對可設定組態的產品錯誤地選取了較昂貴的店內交貨選項，而不是最便宜的統一費率方法。 此修正可確保根據實際價格選擇正確的送貨方法。」
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38811>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/38819>， <https://github.com/magento/magento2/commit/29fe9097>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38819>，<https://github.com/magento/magento2/commit/29fe9097>
 
 ### 目錄
 
-* _AC-10910_：清理cron_schedule資料庫表不會清理不存在的作業
-   * _修正附註_：系統現在會自動清除cron_schedule資料庫表格，移除系統中已不存在的作業專案。 這通過在表中維護最少的行數來確保最佳性能。 以前，非作用中模組或已移除模組的工作專案不會清除，導致cron_schedule表格中發生不必要的資料累積。
+* _AC-10910_：清除cron_schedule資料庫資料表時沒有清除不存在的工作
+   * _修正附註_：系統現在會自動清除cron_schedule資料庫表格，移除系統中已不存在的作業專案。 這可透過在表格中維持最少列數來確保最佳效能。 以前，非作用中模組或已移除模組的工作專案不會清除，導致cron_schedule表格中發生不必要的資料累積。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38217>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38693>
 * _AC-10953_：未從可設定的產品中刪除層級價格
-   * _修正備註_：系統現在會在產品從簡單產品轉換為可設定產品時，正確移除產品的層級價格，確保前端顯示正確的價格。 以前，當產品從簡單產品轉換為可配置產品時，不會刪除可配置產品的層價格，從而導致顯示的價格不匹配。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38390>
+   * _修正備註_：系統現在會在產品從簡單產品轉換為可設定產品時，正確移除產品的層級價格，確保前端顯示正確的價格。 以前，將產品從簡單產品轉換為可設定產品時，不會刪除可設定產品的層級價格，從而導致顯示的價格不符。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38390>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38427>
 * _AC-11804_：類別描述WYSIWYG在非預設存放區上為空白
    * _修正附註_：在商店檢視層級編輯類別時，系統現在會在WYSIWYG編輯器中正確儲存並顯示類別說明。 以前，在商店檢視層級儲存類別說明後，WYSIWYG編輯器會顯示為空白。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38622>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38623>
-* _AC-11970_：無法在選中一個複選框自定義選項的情況下重新排序可配置產品
-   * _修正說明_：系統現在使用單個選定的複選框自定義選項正確處理可配置產品的重新訂購，從而成功創建購物籃。 以前，嘗試重新排序此類產品會導致錯誤，並阻止將專案添加到購物車中。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38736>
+* _AC-11970_：無法透過選取自訂選項的核取方塊來重新排序可設定的產品
+   * _修正附註_：系統現在會使用單一選取的核取方塊自訂選項，正確處理可設定產品的重新排序，以便成功建立購物籃。 之前，嘗試重新排序這類產品會導致錯誤，且無法將專案新增至購物車。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38736>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/1d144bce>
 * _AC-12076_： [問題]修正分層導覽上的篩選器專案用詞
-   * _修復說明_：系統現在在分層導覽篩選項中正確使用了“專案”和“專案”字樣，增強了篩選說明的清晰度和準確性。 以前，這些字詞的使用不正確，導致導覽篩選選項的使用者可能混淆。
+   * _修正附註_：系統現在會在階層式導覽篩選專案中正確使用「item」和「items」等字詞，提高篩選說明的清晰度和準確性。 以前，這些字詞的使用不正確，導致導覽篩選選項的使用者可能混淆。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38789>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37852>
 * _AC-12164_：自訂選項的日期和時間格式無法運作
@@ -621,10 +621,10 @@ laminas/laminas-stdlib
 * _AC-13068_：遺失下拉式清單選項
    * _修正附註_：現在當建立具有20個以上值的新屬性時，系統會在下拉式清單中正確顯示所有值。 以前，只顯示前20個值或其他選定的頁面值，導致剩餘的值遺失。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/47b448e2>
-* _AC-13296_： [問題] 使用當前 sore ID 進行運行時類別緩存
-   * _修正說明_：系統現在可以正確使用當前 商店 ID 進行運行時緩存類別從而防止在使用模擬或自定義代碼將類別保存在不同存儲區時覆蓋數據。 以前，存儲在運行時的物件可能來自錯誤的商店，從而導致數據覆蓋。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/39310>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/36394>
+* _AC-13296_： [問題]將目前的儲存區ID用於類別執行階段快取
+   * _修正附註_：系統現在會正確使用類別執行階段快取目前的存放區ID，以防止使用模擬或自訂程式碼將類別儲存在不同存放區時覆寫資料。 先前，儲存在執行階段的物件可能來自錯誤的存放區，導致資料覆寫。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/39310>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/36394>
 * _AC-13324_： bin/magento sampledata：deploy —no-update擲回例外狀況
    * _修正附註_：系統現在在使用sampledata：deploy命令中的 — no-update選項時，可以正確接受布林值，以防止在範例資料部署期間發生任何錯誤。 以前，使用此命令時會擲回錯誤，因為系統錯誤地預期了整數值。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/39344>
@@ -648,8 +648,8 @@ laminas/laminas-stdlib
    * _修正備註_：系統現在會使用類別產品索引子的可見度類別，而非硬式編碼值，以強化模組化。 以前，在類別產品索引器中會使用硬式編碼值，這會限制靈活性和適應性。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/37200>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37199>
-* _AC-9375_：產品小部件中的貨幣代碼未更改新
-   * _修正說明_：現在，當前端更改貨幣時，系統會正確更新新產品小部件中的貨幣代碼，從而確保整個網站貨幣顯示的一致性。 以前，更改前端中的貨幣不會影響新產品小組件中顯示的貨幣代碼。
+* _AC-9375_：新產品Widget中的貨幣代碼未變更
+   * _修正備註_：系統現在會在前端貨幣變更時，正確更新新產品小工具中的貨幣代碼，以確保網站間貨幣顯示的一致性。 之前，變更前端中的貨幣不會影響新產品介面工具集中顯示的貨幣代碼。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/37898>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37899>
 * _ACP2E-2224_：可設定產品的PLP上未顯示一般價格
@@ -702,10 +702,10 @@ laminas/laminas-stdlib
    * _修正附註_：將產品新增至某家商店的願望清單，不會再增加相同瀏覽器中開啟之其他商店的願望清單計數。 先前，如果兩個存放區都載入同一個瀏覽器，另一個存放區的願望清單計數也會增加。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/3a7c4d17>
 * _ACP2E-2874_：使用套件產品時，前端的「類別頁面」會顯示空的插槽
-   * _修正注意_：在當前商店上下文中不可銷售的捆綁產品不再編製索引。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/inventory/commit/bc37ec76>
-* _ACP2E-2905_： [多網站架構中的雲] 報價問題
-   * _修正說明_：以前，使用不同貨幣和客戶組的多網站架構無法正確將折扣應用於商店。 實施此修復后，具有不同客戶群組價格折扣的多網站架構將成功應用於不同的商店。
+   * _修正附註_：在目前存放區內容中無法銷售的套件組合產品不再編制索引。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/inventory/commit/bc37ec76>
+* _ACP2E-2905_： [雲端]多網站架構中的報價問題
+   * _修正備註_：之前，使用不同貨幣和客戶群組的多網站架構無法正確將折扣套用至商店。 實施此修正後，具有不同客戶群組價格折扣的多網站架構將成功套用至不同的商店。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38506>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/a4fbf702>
 * _ACP2E-2909_： dynamic-rows.js：658編輯套件組合產品時未擷取的TypeError： dataRecord.slice
@@ -721,10 +721,10 @@ laminas/laminas-stdlib
 * _ACP2E-2964_： [僅適用於store_id=0的Cloud] URL更新
    * _修正附註_：「URL路徑」現在已使用正確的存放區ID儲存。 以前，商店ID不正確，導致在移動類別時資料庫中保留不正確的URL路徑。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/9af794a4>
-* _ACP2E-3009_： async.operations.all 已執行並建立錯誤。
-   * _修正注意_： REST API 呼叫中的產品連結數據不正確不再導致關鍵錯誤。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/a4fbf702>
-* _ACP2E-3029_： [雲] 移動問題 僅無法捏合 PDP 圖像
+* _ACP2E-3009_： async.operations.all已執行並建立錯誤。
+   * _修正附註_： REST API呼叫中錯誤的產品連結資料不再導致嚴重錯誤。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/a4fbf702>
+* _ACP2E-3029_： [雲端]行動問題僅無法夾緊PDP影像
    * _修正附註_：系統現在支援Chrome上行動檢視中產品詳細資料頁面影像的縮放夾功能，可增強行動使用者體驗。 之前，在Chrome上的行動檢視中連按兩下影像時，系統無法如預期放大影像。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/148c3ead>
 * _ACP2E-3058_：選項名稱為0的LayeredNavigation中遺漏標籤
@@ -762,7 +762,7 @@ laminas/laminas-stdlib
    * _修正附註_：針對使用不同語言的多個商店檢視的網站，傳送庫存/價格警示時，建立警示的商店檢視語言將會用於電子郵件。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/a4cf5e62>，<https://github.com/magento/inventory/commit/9f3e63d1>
 * _ACP2E-3350_：已停用的類別在類別樹狀結構中的名稱不再為灰色
-   * _修正附註_：之前，已停用的類別在類別樹狀結構中不會呈現灰色。 Now, they are displayed with a gray-out effect.
+   * _修正附註_：之前，已停用的類別在類別樹狀結構中不會呈現灰色。 現在，它們會以灰顯效果顯示。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/d75cff27>
 * _ACP2E-3410_：可設定的產品編輯表單載入導致逾時和記憶體耗盡
    * _Fix備註_：在Fix可設定的產品變數之前，是根據所有可能的屬性選項組合所建構。 如果屬性有許多選項，這將導致冗長且耗用的資源作業。 現在，可設定的產品變數是根據現有的子產品屬性來建構。 如此可大幅減少計算，進而改善資源的使用狀況。
@@ -780,7 +780,7 @@ laminas/laminas-stdlib
    * _修正備註_：修正之後，變更特殊價格屬性的[用於產品清單]值不會影響顯示可設定產品的特殊價格。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/d4de4726>
 * _ACP2E-3516_：如果處理程式終止，索引子暫存資料表將不會清除
-   * _Fix note_: CatalogRule indexer temporary tables are now cleaned up if the indexer process is terminated
+   * _修正附註_：如果索引器處理序已終止，現在會清除CatalogRule索引器暫存資料表
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/1984c61c>
 * _ACP2E-3520_： [QUANS] 2.4.7-p3中的核心單元測試失敗
    * _修正附註_：此測試不需要發行說明，因為這是單元測試改進。
@@ -795,10 +795,10 @@ laminas/laminas-stdlib
 ### 目錄，內容
 
 * _ACP2E-3063_： [雲端]快取未失效。
-   * _修正附註_：以更新的設計配置儲存CMS頁面時，該頁面先前未正確反映於前端。 應用此修復程式后，當我們更改設計佈局並保存 CMS 頁面時，相應的設計佈局將在前端可見。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/66dea0de>
-* _ACP2E-3131_： [內容Widget中反轉的雲] 錨點/非錨點類別
-   * _修正說明_：以前，當我們選擇 顯示於 -> 錨點 類別 時，它會顯示所有未反映錨點和非錨點之間父子關係的類別。 套用此修正後，「顯示於」->錨點「類別」僅會顯示錨點「類別」（可選），而「顯示於」->「非錨點類別」會顯示非錨點類別（可選擇）
+   * _修正附註_：以更新的設計配置儲存CMS頁面時，該頁面先前未正確反映於前端。 套用此修正後，當我們變更設計版面並儲存CMS頁面時，前端會看到合適的設計版面。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/66dea0de>
+* _ACP2E-3131_： [雲端]錨點/非錨點類別在內容Widget中反轉
+   * _修正附註_：先前我們選取「顯示於 — >錨點類別」時，會顯示所有未反映錨點與非錨點之間父子關係的類別。 套用此修正後，「顯示於 — >錨點類別」只會顯示「錨點類別」（可選取），而「顯示於 — >非錨點類別」則會顯示「非錨點類別」（可選取）
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/7377de59>
 * _ACP2E-3152_：無法使用Widget的類別
    * _修正附註_：之前，如果我們為不同的錨點/非錨點類別儲存CMS區塊，則無法在前端顯示時用於子類別。 套用此修正後，區塊會顯示在不同類別的前端。
@@ -806,15 +806,15 @@ laminas/laminas-stdlib
 
 ### 目錄，框架
 
-* _AC-9111_： 訂單獲取（發貨|信用備忘錄|發票）收款 - 不應載入收款
-   * _修復註釋_：系統現在確保從訂單檢索時不會預先載入裝運和貸項通知單的收款，從而允許將其他篩選器或訂單應用於這些收款。 之前，這些集合會自動載入，防止任何進一步修改。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/37561>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/37562>
+* _AC-9111_：訂單取得（出貨|Creditmemos|發票）集合 — 集合不應載入
+   * _修正備註_：系統現在可確保從訂單擷取時，不會預先載入出貨與銷退折讓單的收貨，允許對這些收貨套用額外的過濾條件或訂單。 以前，這些集合會自動載入，以防止進行任何進一步的修改。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/37561>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37562>
 * _ACP2E-2949_： [雲端]後續追蹤：檢查資料是否有變更時，資料比較中的不相符
-   * _修正附註_：以往，儲存物件在每次都呼叫時不會有任何資料變更（針對任何數值資料欄位，如int/float/double）。 它會觸發 標幟 _hasDataChanges為 true 並調用 save 函數。 它也不會檢查由字串封裝的浮動數字。 套用此修正後，只有在數據發生變更時，才會呼叫save函數。 int/float/兩次-check 的數據值與傳遞給函數的值進行嚴格類型匹配
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/c8931218>
+   * _修正附註_：以往，儲存物件在每次都呼叫時不會有任何資料變更（針對任何數值資料欄位，如int/float/double）。 它會觸發標幟_hasDataChanges設為true並呼叫save函式。 它也不會檢查由字串封裝的浮動數字。 此修正套用後，只有在資料變更時，儲存函式才會呼叫。 int/float/double-check的資料值，其值會傳遞至函式，且會執行嚴格的型別比對
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/c8931218>
 
-### Catalog， GraphQL
+### 目錄， GraphQL
 
 * _ACP2E-3090_：在GraphQL中處理類別篩選器： includeDirectChildrenOnly和category_uid
    * _修正附註_：依category_uid篩選時，只會擷取直接子類別。
@@ -841,7 +841,7 @@ laminas/laminas-stdlib
 
 ### 目錄，SEO
 
-* _ACP2E-3653_：當頁面> 1 時，類別的規範URL不正確
+* _ACP2E-3653_：頁面> 1時類別的規範URL不正確
    * _修正附註_：之前，多頁內容的標準URL無法正常運作，只會顯示基礎URL。 不過，實施修正後，多頁內容的標準URL現在會正確顯示具有頁面ID的URL。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/982b1c42>
 
@@ -906,41 +906,41 @@ laminas/laminas-stdlib
 * _ACP2E-2693_： [雲端]前端未載入，因為新聞稿範本有問題
    * _修正附註_：透過CMS頁面內容區段新增區塊不會再導致例外狀況
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/ea79f7dd>
-* _ACP2E-2836_：ACP2E-2836： [日誌中發現雲] 調查異常：無效參數異常：供應商/洋紅色/模組-規則/型號/ConditionFactory.php中不存在類
-   * _修正注意事項_：移除 PageBuilder 產品內容設置上的條件不再會導致異常記錄在日誌文件中。 以前，刪除 PageBuilder 產品內容設置上的條件會導致在日誌中記錄關鍵異常，儘管不會在前端引起任何問題。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2-page-builder/commit/36c0f5df>
-* _ACP2E-2842_：切換到單商店模式 - 不再显示全域內容
-   * _修正說明_：現在啟用單商店模式時，系統會商店視圖設計配置與網站設計配置同步，確保內容更新在前端可見。 以前，切換到單商店模式會阻止內容更新反映在店面上。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/7e0e5582>
-* _ACP2E-2903_：嘗試添加連結和其他可用性故障時，頁面生成器會替換映射。
-   * _修復說明_：現在按兩下圖像，所見即所得編輯者生成器文本元素中的連結頁面將在圖像連結配置對話框中載入正確的數據。 現在，在編輯者中向影像新增連結也可以正常運作。 影像先前是以 連結 取代。
+* _ACP2E-2836_： ACP2E-2836： [Cloud]調查記錄中發現的例外狀況： InvalidArgumentException：類別不存在於vendor/magento/module-rule/Model/ConditionFactory.php中
+   * _修正附註_：移除PageBuilder產品內容設定的條件時，記錄檔中不會再記錄例外狀況。 先前，移除PageBuilder產品內容設定的條件會導致記錄中記錄嚴重例外狀況，而不會在前端造成任何問題。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2-page-builder/commit/36c0f5df>
+* _ACP2E-2842_：切換到單一存放區模式 — 不再顯示全域內容
+   * _修正附註_：系統現在會在啟用單一商店模式時，將商店檢視設計設定與網站設計設定同步，確保內容更新會顯示在前端。 以前，切換到單一商店模式會防止內容更新反映在店面上。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/7e0e5582>
+* _ACP2E-2903_：頁面產生器在嘗試新增連結和其他可用性問題時取代影像。
+   * _修正附註_：現在按一下影像，頁面產生器文字元素中wysiwyg編輯器中的連結會在影像的連結設定對話方塊中載入適當的資料。 現在，在編輯器中新增影像連結也可正常運作。 之前，影像已更換為連結。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2-page-builder/commit/4d5db10a>
 * _ACP2E-2970_：將0位元組影像放在目錄中時，舊媒體集無法轉譯影像
    * _修正備註_：系統現在可以處理媒體集中的0位元組影像，而不會中斷功能，讓目錄中的其他影像可以如預期顯示和選取。 以前，如果媒體集中有0位元組的影像，將無法顯示或選取目錄中的所有影像。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/35b1b1da>
 * _ACP2E-3064_：編輯CMS區塊時出現錯誤頁面產生器
-   * _修正附註_：系統現在會使用頁面產生器正確地儲存管理區域中所做的變更，而不會擲回「頁面產生器呈現了5秒鐘，但未釋放鎖定」錯誤。 在 瀏覽器 控制台中。 以前，嘗試儲存變更時會發生此錯誤，導致內容無法成功更新。
+   * _修正附註_：系統現在會使用頁面產生器正確地儲存管理區域中所做的變更，而不會擲回「頁面產生器呈現了5秒鐘，但未釋放鎖定」錯誤。 在瀏覽器主控台中。 以前，嘗試儲存變更時會發生此錯誤，導致內容無法成功更新。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/35b1b1da>，<https://github.com/magento/magento2-page-builder/commit/4d5db10a>
 * _ACP2E-3092_： [雲端]購物車區段上沒有結帳或編輯購物車的按鈕
    * _修正附註_：套件組合產品現在已透過Widget加入購物車，且未發生錯誤。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b21e5d91>，<https://github.com/magento/magento2-page-builder/commit/4ebe3f1d>
-* _ACP2E-3122_: [CLOUD] Upload image button doesn&#39;t work
+* _ACP2E-3122_： [雲端]上傳影像按鈕無法運作
    * _修正附註_：在PageBuilder中橫幅和滑桿的「上傳影像」按鈕未如預期運作，現在按一下按鈕時會開啟本機檔案管理員，以選取要上傳的影像。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2-page-builder/commit/476ef8ea>
-* _ACP2E-3127_： imagecreatetrueColor（）： 參數 #2 （$height） 必須大於 0。 無法上傳特定影像
+* _ACP2E-3127_： imagecreatetruecolor()：引數#2 ($height)必須大於0。 無法上傳特定影像
    * _修正附註_：解決透過媒體集上傳高度為0的影像時，造成管理員發生錯誤的問題，並成功使用sync命令同步資產。 先前無法透過媒體集上傳影像，當特定影像在媒體集中時，同步命令也會失敗。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/6f4805f8>
 * _ACP2E-3154_： Prototype.js Array.from與Google Maps API發生衝突
-   * _修正附註_： Google地圖現在會在PageBuilder編輯器中正確轉譯。 之前，JavaScript 錯誤會讓 Google 地圖無法正確呈現。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/148c3ead>
-* _ACP2E-3275_： [雲] - CMS 滑塊未反映最新更改
-   * _修正附註_：確保在編輯投影片熒幕上觸發儲存事件時，重新整理滑桿清單，已修正問題。 之前，它會觸發併導致問題。
+   * _修正附註_： Google地圖現在會在PageBuilder編輯器中正確轉譯。 以前，Javascript錯誤會導致Google地圖無法正確呈現。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/148c3ead>
+* _ACP2E-3275_： [Cloud] - CMS滑桿未反映最新變更
+   * _修正附註_：確保在編輯投影片熒幕上觸發儲存事件時，重新整理滑桿清單，已修正問題。 在過去，這會觸發並造成問題。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2-page-builder/commit/ae2cdeb0>
 * _ACP2E-3326_：使用頁面產生器依特定順序插入CMS區塊時，CSM頁面中會發生錯誤
-   * _修正附註_：先前在某些版本的PHP和OS (Linux)上，透過PageBuilder參考其他cms區塊的區塊轉譯會失敗並出現「發生未知錯誤」。 請再試一次。」 現在，cms塊的內容在PageBuilder控制的內容中正確呈現。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2-page-builder/commit/ae2cdeb0>
-* _ACP2E-3428_：大型內容的页面建立器的範本預覽失敗
-   * _修復注意_：大內容導致畫布元素溢出瀏覽器的限制，並返回不正確的值，從而破壞後端代碼（無法正確解碼圖像）。 已修正將畫布大小限製為通用瀏覽器上限的問題。
+   * _修正附註_：先前在某些版本的PHP和OS (Linux)上，透過PageBuilder參考其他cms區塊的區塊轉譯會失敗並出現「發生未知錯誤」。 請再試一次。」 現在，Cms區塊的內容會在PageBuilder控制的內容中正確呈現。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2-page-builder/commit/ae2cdeb0>
+* _ACP2E-3428_：大型內容的Pagebuilder範本預覽失敗
+   * _修正附註_：大型內容導致畫布元素超過瀏覽器的限制，並傳回不正確的值，這會破壞後端程式碼（無法正確解碼影像）。 已修正將畫布大小限製為通用瀏覽器上限的問題。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2-page-builder/commit/adfb1747>
 * _ACP2E-3430_：TinyMCE 7遺失字型大小的最新安全性更新
    * _修正附註_： WYSIWYG編輯器中現在提供字型大小和字型系列選取器。 在此修正之前，使用TinyMCE 7時，這些無法在編輯器介面中使用。
@@ -970,15 +970,15 @@ laminas/laminas-stdlib
 ### 框架
 
 * _AC-10037_： [問題]在`app/code/Magento/Translation/etc/di.xml`中未使用的型別設定
-   * _修復說明_：系統現在會刪除配置中未使用的依賴項，從而提高整體代碼清潔度和效率。 以前，配置中存在未使用的依賴項，這些依賴項對任何功能都沒有貢獻。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38030>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/38064>
-* _AC-10654_：V1/客戶/密碼端點問題
+   * _修正備註_：系統現在會移除組態中未使用的相依性，提升整體程式碼清潔度和效率。 之前，設定中有未使用的相依性，這些相依性不會貢獻任何功能。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38030>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38064>
+* _AC-10654_： V1/customers/password端點問題/問題
    * _修正附註_：現在透過API處理密碼變更請求時，系統會遵守管理GUI內設定的限制，避免可能濫用密碼重設功能。 以前，API可以在管理GUI中定義的規則之外處理密碼變更請求，在已知有效電子郵件時，可能會允許不斷重設電子郵件。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38238>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/0c53bbf7>
-* _AC-10738_：清漆配置不排除所有行銷參數
-   * _修復說明_：系統現在可以正確排除清漆配置中的所有常見行銷參數，從而確保準確的跟蹤和分析。 以前，某些行銷參數（如 gad_source、srsltid 和 msclkid）不會被排除，從而導致資料彙集中可能存在不準確之處。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38238>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/0c53bbf7>
+* _AC-10738_：清漆設定未排除所有行銷引數
+   * _修正附註_：系統現在已正確排除Varnish設定中的所有常見行銷引數，確保追蹤和分析準確。 之前，某些行銷引數（例如gad_source、srsltid和msclkid）未排除，導致資料收集可能不準確。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38298>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/39188>
 * _AC-10838_：目錄搜尋索引程式錯誤索引程式
@@ -993,50 +993,50 @@ laminas/laminas-stdlib
    * _修正附註_：系統現在會最佳化相關、向上銷售和交叉銷售區塊的查詢，提升效能並防止網站因過多查詢而停止運作。 以前，系統可能會因這些區塊中的查詢而變得超載，導致速度大幅減慢，並可能導致網站關閉。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/36667>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38050>
-* _AC-11423_：異常：警告：自升級到ICU 74.1（PHP 國際機場）以來，嘗試訪問陣列偏移量... -> Calendar.php
-   * _修正注意_：每當購物者或商家訪問店面或管理員 `main.CRITICAL: Exception: Warning: Trying to access array offset on value of type null in /vendor/magento/framework/View/Element/Html/Calendar.php on line 114 in /vendor/magento/framework/App/ErrorHandler.php:62`時，Commerce 不再在 exception.log 中記錄以下異常：。 [GitHub-38214](https://github.com/magento/magento2/issues/38214)
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38214>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/38364>
-* _AC-11476_： [問題] 修復表單包含具有名稱的元素時客戶數據的問題 `method`
+* _AC-11423_：例外狀況：警告：正在嘗試存取陣列位移，位於…… -> Calendar.php，因為升級至ICU 74.1 (PHP Intl)
+   * _修正附註_： Commerce不再於購物者或商家造訪店面或管理員時，於exception.log中記錄下列例外狀況： `main.CRITICAL: Exception: Warning: Trying to access array offset on value of type null in /vendor/magento/framework/View/Element/Html/Calendar.php on line 114 in /vendor/magento/framework/App/ErrorHandler.php:62`。 [GitHub-38214](https://github.com/magento/magento2/issues/38214)
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38214>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38364>
+* _AC-11476_： [問題]當表單包含名稱為`method`的元素時，修正客戶資料的問題
    * _修正附註_：系統現在會在表單提交中正確識別&#39;method&#39;屬性，即使表單中存在名為&#39;method&#39;的元素。 這可確保準確處理客戶資料。 先前，如果表單元素命名為「method」，則會干擾表單提交中「method」屬性的識別，導致客戶資料處理的潛在問題。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38484>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38449>
-* _AC-11489_： [修正] \Magento\Framework\Data\Collection：：getItemById 的 PHPDocs 問題
-   * _修正說明_： \Magento\Framework\Data\Collection：：getItemById 方法的 PHPDocs 已更新為包含 null 作為可能的返回類型，以解決靜態分析工具的問題。 先前，方法的PHPDocs並未指定null作為可能的傳回型別，導致在條件陳述式中使用方法時，靜態分析中出現警告或錯誤。
+* _AC-11489_： [問題]修正\Magento\Framework\Data\Collection：：getItemById的PHPDocs
+   * _修正附註_： \Magento\Framework\Data\Collection：：getItemById方法的PHPDocs已更新，可能包含null作為傳回型別，解決靜態分析工具的問題。 先前，方法的PHPDocs並未指定null作為可能的傳回型別，導致在條件陳述式中使用方法時，靜態分析中出現警告或錯誤。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38485>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38439>
 * _AC-11592_： [問題]安裝期間只允許有效的偏好設定:di:編譯
    * _修正附註_：如果偏好設定是針對不存在的類別建立或明確排除的類別，系統現在會在安裝:di:編譯命令期間擲回錯誤，確保只允許有效的偏好設定。 以前，這些案例會無訊息地失敗，可能會使任何與原始類別關聯的外掛程式變成無用。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38517>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/33161>
-* _AC-11651_：Magento嘗試在 LoggerProxy 方法中修改只讀屬性__wakeup
-   * _修復說明_：系統現在允許在LoggerProxy的 __wakeup方法中修改以前只讀的屬性，確保平穩運行，而無需強制使用者採用解決方法。 先前，嘗試重新指派LoggerProxy的__wakeUp方法中唯讀屬性的值會造成問題。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38526>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/c8f87c25>
-* _AC-11681_： [問題] AC-2039 AC-1667 升級 TinyMCE 參考
-   * _修正注意事項_：更新了 composer.json 中的最新版本
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38533>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/36543>， <https://github.com/magento/magento2/commit/b34c0a75>
-* _AC-11696_：ChangelogBatchWalker 在多個線程中不起作用
-   * _修正說明_：系統現在支援 MView 索引的進程分叉，防止在多個線程上作時索引器執行期間出現錯誤。 以前，在多個執行緒上執行ChangelogBatchWalker會導致刪除其他執行緒使用的表格，進而在索引器執行期間造成錯誤。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38246>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/38248>
-* _AC-11781_： [問題] 命名錯誤重新命名變數
-   * _修正說明_：系統現在可以正確命名包含仍可退款金額的變數，防止在調試期間出現混淆。 之前，此變數被錯誤地命名為totalReturn，這可能導致開發人員誤解。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38609>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/36205>
-* _AC-11809_： [通過] XML 將自定義屬性傳遞到當前連結
-   * _修正說明_：系統現在允許通過 XML 將自定義屬性傳遞到當前連結，從而確保這些屬性在連結為當前頁面時平均正確顯示。 之前，由於 getAttributesHtml（） 方法未用于當前連結，因此無法顯示當前頁面連結的自定義屬性。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38517>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/33161>
+* _AC-11651_： Magento嘗試修改LoggerProxy的__wakeUp方法中的唯讀屬性
+   * _修正附註_：系統現在允許修改LoggerProxy的__wakeUp方法中先前唯讀的屬性，以確保順利運作，而不會強制使用者採用因應措施。 先前，嘗試重新指派LoggerProxy的__wakeUp方法中唯讀屬性的值會造成問題。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38526>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-11681_： [問題] AC-2039 AC-1667升級TinyMCE參考
+   * _修正附註_：已更新composer.json中的tinymce最新版本
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38533>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/36543>，<https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-11696_： ChangelogBatchWalker無法在多個執行緒中運作
+   * _修正附註_：系統現在支援MView索引的處理程式復本，以防止在多個執行緒上執行索引器時出現錯誤。 以前，在多個執行緒上執行ChangelogBatchWalker會導致刪除其他執行緒使用的表格，進而在索引器執行期間造成錯誤。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38246>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38248>
+* _AC-11781_： [問題]重新命名錯誤的變數
+   * _修正附註_：系統現在會正確命名包含仍可退款的金額的變數，以防止在偵錯期間產生混淆。 之前，此變數被錯誤地命名為totalReturn，這可能導致開發人員誤解。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38609>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/36205>
+* _AC-11809_： [問題]透過XML傳遞自訂屬性至目前的連結
+   * _修正附註_：系統現在允許透過XML將自訂屬性傳遞至目前的連結，確保即使連結為目前頁面也能正確顯示這些屬性。 以前，由於getAttributesHtml()方法未用於目前連結，因此不會顯示目前頁面連結的自訂屬性。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38500>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/30070>
 * _AC-11819_：某些組態的內建FPC快取在2.4.7中損毀
    * _修正附註_：系統現在會在MAGE_RUN_CODE引數設定時正確快取頁面，確保最佳效能。 以前，在這些情況下不會快取頁面，這可能會導致潛在的效能問題。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38626>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/38646>， <https://github.com/magento/magento2/commit/0c53bbf7>
-* _AC-11829_： [問題] 修復了開發人員和生產模式之間的異常處理不一致
-   * _修正說明_：系統現在一致地處理開發人員和生產模式之間的異常，防止在引發異常時意外重定向到登入頁面。 以前，異常處理中的不一致可能會導致登入頁面在生產模式下重新導向，而不是顯示異常消息。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38639>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/37712>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38646>，<https://github.com/magento/magento2/commit/0c53bbf7>
+* _AC-11829_： [問題]修正開發人員與生產模式之間處理不一致的例外狀況
+   * _修正附註_：系統現在會一致地處理開發人員和生產模式之間的例外狀況，避免在擲回例外狀況時意外重新導向至登入頁面。 以前，例外狀況處理的不一致性可能會導致重新導向到生產模式的登入頁面，而不是顯示例外狀況訊息。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38639>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37712>
 * _AC-11852_：取代token_list.phtml中的「PayPal帳戶」翻譯
    * _修正附註_：系統現在會在「儲存的付款方法」頁面中，將可記號化帳戶付款方法的區段標示為「帳戶」，而非「PayPal帳戶」，使其更能代表其功能。 之前，此區段特別標示為「PayPal帳戶」，當新增其他可權杖化的帳戶付款方法時，會造成誤導。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/35622>
@@ -1050,8 +1050,8 @@ laminas/laminas-stdlib
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38683>
 * _AC-12002_： [問題] [檢視]已移除連結和指令碼標籤中的額外空間
    * _修正附註_：系統現在可確保連結和指令碼標籤中沒有額外的空格，提供更乾淨且更有效率的程式碼。 之前，連結和指令碼標籤中的屬性之間可能會出現雙空格字元。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/32920>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/32919>
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/32920>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/32919>
 * _AC-12127_： [問題]避免設定錯誤的無限回圈
    * _修正備註_：系統現在避免虛擬型別組態中的自我參考對應，以避免無限回圈。 這可確保應用程式在嘗試取消參考自我參考節點時，不會陷入無休止的回圈中。 先前，如果虛擬型別設定是自我參照，則會導致應用程式無限期迴轉。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38822>
@@ -1116,11 +1116,11 @@ laminas/laminas-stdlib
    * _修正附註_：已移除Magento\Framework\Filesystem\Driver\Http：：isExists中的[確定]片語檢查
    * _GitHub問題_： <https://github.com/magento/magento2/issues/39546>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/39558>
-* _AC-13810_：客戶網格索引器在“按計劃更新”模式下無法正常工作
-   * _修復注意_：早期的客戶網格會立即更新，但在修復后，客戶網格會在cron運行後更新，但不會立即反映。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/1da9ba6f>
-* _AC-6754_：js 檔案上的拼寫錯誤。
-   * _修正說明_：系統現在在JavaScript文件中正確使用術語「訂閱者」，確保相關功能正常運行。 以前，JavaScript檔中的印刷錯誤導致「訂閱者」一詞使用不正確。
+* _AC-13810_： Customer Grid Indexer在「依排程更新」模式中無法正常運作
+   * _修正備註_：先前的客戶格線已立即更新，但修正後客戶格線會在cron執行後更新，但不會立即反映。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/1da9ba6f>
+* _AC-6754_： js檔案出現錯字錯誤。
+   * _修正附註_：系統現在會在JavaScript檔案中正確使用「訂閱者」一詞，確保相關功能可正常運作。 之前，JavaScript檔案中的印刷錯誤會導致「subscribers」一詞使用錯誤。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/36163>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/36171>
 * _AC-8353_： [問題]移除禁止的`@author`標籤
@@ -1165,12 +1165,12 @@ laminas/laminas-stdlib
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/3a7c4d17>
 * _ACP2E-2966_：在ipad mini中，功能表和標題會以行動裝置載入，而應該以桌上型電腦載入。
    * _修正附註_：系統現在會將寬度為768px的裝置視為案頭，確保功能表和標題正確載入。 過去，寬度為768px的裝置會視為行動裝置，導致功能表和標題載入行動檢視。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/35b1b1da>， <https://github.com/magento/magento2-page-builder/commit/4d5db10a>
-* _ACP2E-3230_：使用外鍵時，通過 db_綱要.xml 修改列長度不起作用
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/35b1b1da>，<https://github.com/magento/magento2-page-builder/commit/4d5db10a>
+* _ACP2E-3230_：當有外來索引鍵時，無法透過db_schema.xml修改資料行長度
    * _修正附註_：透過宣告式結構描述修改含外部索引鍵的資料行現在不會在MariaDB中產生錯誤
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/581b7ef1>
 * _ACP2E-3361_：儲存訂單記錄時，會將部分關係記錄儲存至DB
-   * _修正附註_：觸發不必要的修正之前UPDATE查詢可能會影響效能。 修復后，消除了不必要的UPDATE查詢。
+   * _修正附註_：觸發不必要的修正之前UPDATE查詢可能會影響效能。 修正後，多餘的UPDATE查詢已消除。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/1366ae5e>
 * _ACP2E-3375_： [CLOUD]在管理員中，主控台中有許多javascript錯誤
    * _修正附註_：之前，在管理面板中，主控台有許多Javascript錯誤。 現在，在管理面板中，主控台中沒有JavaScript錯誤，所有預設JavaScript功能將順利執行且不會出現任何問題。
@@ -1181,7 +1181,7 @@ laminas/laminas-stdlib
 * _ACP2E-3537_：快取標籤中沒有對應的快取金鑰專案，因此快取清除無法正常運作
    * _修正附註_： Redis快取記憶體記憶體回收行程現在預設啟用LUA模式，以防止競爭情況
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/a52ff98f>
-* _ACP2E-3681_: MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK value is ignored
+* _ACP2E-3681_：已忽略MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK值
    * _修正備註_：修正之後，設為「false」的ENV變數將會視為bool false，而不是字串「false」。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/982b1c42>
 
@@ -1216,9 +1216,9 @@ laminas/laminas-stdlib
    * _修正附註_：當管理員組態設定為「目錄>分層導覽>顯示類別篩選」時，透過GraphQL查詢請求具有類別彙總的產品搜尋時，在套用檢查後已修正問題。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/12e071c3>
 * _ACP2E-2928_：包含價格篩選器{from：&quot;0&quot;}的GraphQL產品呼叫未傳回任何結果
-   * _修復說明_：以前，由於拋出異常，帶有零價格過濾器的 graphql 產品搜尋根本沒有返回任何結果。 現在，搜尋會按預期返回結果。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/c971859e>
-* _ACP2E-2974_：客戶返回屬性的轉換未反映在相應商店視圖的 GraphQL API 中
+   * _修正附註_：先前使用零價格篩選的graphql產品搜尋由於擲回例外狀況而完全未傳回任何結果。 現在，搜尋會如預期傳回結果。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/c971859e>
+* _ACP2E-2974_：客戶傳回屬性的轉譯未反映在個別StoreView的GraphQL API中
    * _修正附註_：客戶回訪屬性的轉譯會反映在個別StoreView的GraphQL API中。
 先前個別StoreView的客戶傳回屬性不會反映在GraphQL API中。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/ec7e32a9>
@@ -1237,7 +1237,7 @@ laminas/laminas-stdlib
 先前的查詢可在不確認客戶存在於多網站設定的非預設網站的情況下運作。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/581b7ef1>
 * _ACP2E-3253_： GraphQL購物車專案V2分頁無法正常運作
-   * _修正附註_：已藉由傳遞集合查詢中目前頁面引數的正確值來修正問題。 之前，傳遞錯誤的值來設定目前的頁面，從而導致此問題。
+   * _修正附註_：已藉由傳遞集合查詢中目前頁面引數的正確值來修正問題。 之前，傳遞錯誤值以設定目前頁面，導致問題。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/8459b17d>
 * _ACP2E-3255_：取得customerCart時應指定[GRAPHQL]模型值
    * _修正附註_： GraphQL &#39;customerCart&#39;查詢現在可以建立空的購物車，即使報價在資料庫中無法使用。 之前，此作業在建立空白購物車時因為國家/地區驗證問題而失敗。
@@ -1248,10 +1248,10 @@ laminas/laminas-stdlib
 * _ACP2E-3404_： [GraphQL]重設內容與主旨/連結之間的密碼電子郵件不一致
    * _修正附註_：在傳送密碼重設要求時，不論網站為何，藉由模擬客戶帳戶註冊的正確存放區，此問題已解決。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/5184c067>
-* _ACP2E-3419_： [雲] 產品 GraphQL 查詢 返回未分配給當前網站的相關產品
-   * _修正注意_：以前，對於 graphQL 查詢，多商店相關產品無法正確顯示產品查詢。 應用此修復程式后，對於產品，graphQL 查詢相應地顯示多商店相關產品。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/078c387e>
-* _ACP2E-3447_：在 GraphQL 標頭中使用錯誤的存儲 ID 會導致致命記憶體錯誤
+* _ACP2E-3419_： [Cloud]產品GraphQL查詢傳回未指派給目前網站的相關產品
+   * _修正附註_：先前針對graphQL查詢，多商店相關產品無法正確針對產品查詢顯示。 套用此修正後，對於產品，graphQL會查詢多存放區相關產品並相應地顯示。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/078c387e>
+* _ACP2E-3447_：在GraphQL標頭中使用錯誤的存放區識別碼會造成嚴重的記憶體錯誤
    * _修正附註_：在GraphQL要求中傳送錯誤的存放區代碼不會再導致記憶體耗用過多。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3467_： [Cloud] 2.4.7上對空白Graphql回應的500回應
@@ -1335,27 +1335,28 @@ laminas/laminas-stdlib
 ### 匯入/匯出
 
 * _AC-12172_：提供自訂選項型別時，產品匯入發生問題： file （已建立的產品不包含自訂選項的價格，並且僅顯示提供的第一個檔案型別副檔名）
-   * _修正說明_：系統現在使用類型為“file”的自定義選項正確導入商品數據，確保顯示所有提供的檔擴展名並包含自定義選項的價格。 先前，在產品匯入期間，如果「file」型別的自訂選項有多個副檔名，則只會顯示第一個副檔名，且遺漏自訂選項的價格。
+   * _修正附註_：系統現在會正確匯入具有「檔案」型別之自訂選項的產品資料，確保顯示所有提供的副檔名且包含自訂選項的價格。 先前，在產品匯入期間，如果「file」型別的自訂選項有多個副檔名，則只會顯示第一個副檔名，且遺漏自訂選項的價格。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38805>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38926>
 * _ACP2E-2710_：「匯入歷程記錄」格線中匯入作業的執行時間錯誤
    * _修正附註_：匯入報告執行時間正確顯示，不受管理員地區設定影響。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/ea79f7dd>
 * _ACP2E-2737_：使用匯入以相同電子郵件地址建立的重複客戶
-   * _修復注意_：在帳戶共享設置為全域時導入客戶，系統內存在導入客戶將更新。先前匯入的客戶重複。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/c971859e>
+   * _修正附註_：在[帳戶共用]設定為[全域]時匯入客戶，已更新系統中存在的匯入客戶。
+先前匯入的客戶重複。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/c971859e>
 * _ACP2E-2902_：新增/更新產品匯入複製可自訂選項
    * _修正附註_：在產品選項CSV匯入期間，將正確的存放區指派給產品選項，此問題已解決。
 先前指派給管理員存放區，而非其個別存放區。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/3a7c4d17>
-* _ACP2E-2990_：客戶“created_at”日期 匯出時未轉換為商店時區
-   * _修正注意_：客戶導出CSV部分中的商店時區，“created_at”日期值將轉換為正確的日期格式。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/3056e9cb>
-* _ACP2E-3165_： [使用 CSV 檢查導入數據中的數據時出現雲] 端錯誤
+* _ACP2E-2990_：客戶「created_at」日期未在匯出時轉換為存放區時區
+   * _修正附註_：根據客戶匯出CSV區段中的存放區時區，「created_at」欄的日期值會轉換為適當的日期格式。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/3056e9cb>
+* _ACP2E-3165_： [雲端]使用CSV檢查匯入資料中的資料時發生錯誤
    * _修正附註_：在CSV匯入期間檢查資料時沒有錯誤。 先前，顯示的錯誤訊息為：「使用管理員的CSV檢查匯入區段中的資料時，我們在列：1中找不到符合此電子郵件和網站代碼的客戶」。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/8459b17d>
 * _ACP2E-3172_：缺少匯入按鈕
-   * _修正說明_：使用CSV中正確和不正確的記錄進行數據檢查后，解決了匯入按鈕缺失的問題。 先前，透過CSV中的正確和不正確記錄檢查資料後，匯入按鈕不顯示。
+   * _修正附註_：解決CSV中有正確和不正確記錄的資料檢查後，匯入按鈕遺失的問題。 先前，透過CSV中的正確和不正確記錄檢查資料後，匯入按鈕不顯示。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/1819fe73>
 * _ACP2E-3382_：無法匯入匯出的客戶地址
    * _修正附註_：客戶地址匯入將如預期般進行。 先前，如果共用客戶帳戶=全域，則客戶地址匯入檔案不會通過驗證，而且有兩個網站的預設網站具有受限制國家/地區清單，而正在匯入的地址是用於另一個網站的允許國家/地區不同
@@ -1366,9 +1367,9 @@ laminas/laminas-stdlib
 * _ACP2E-3455_：匯入產品時產生的URL金鑰重複錯誤訊息（當URL金鑰已屬於類別時）不正確
    * _修正附註_：當客戶嘗試匯入產品，但產品的URL金鑰已屬於類別時，在產品匯入檢查期間顯示正確的錯誤訊息。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/d4de4726>
-* _ACP2E-3475_：產品導出導致 OOM 平均，記憶體限製為4G
-   * _修復說明_：上一個此修復，如果產品屬性具有數千個選項值平均具有 4G 可用記憶體，則產品導出失敗。 修正後，產品導出應完成 csv 檔案的導出。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/1984c61c>
+* _ACP2E-3475_：產品匯出導致OOM，即使有4G記憶體限制
+   * _修正附註_：在此修正之前，如果產品屬性具有數千個選項值（即使有4G可用記憶體），產品匯出會失敗。 此項修正後，產品匯出應會完成csv檔案的匯出。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/1984c61c>
 * _ACP2E-3527_： [雲端]匯入程式互相干擾
    * _修正附註_：如果相同的管理員使用者使用相同的使用者工作階段執行兩個或多個匯入作業，則會顯示正確的訊息。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/d4de4726>
@@ -1383,17 +1384,17 @@ laminas/laminas-stdlib
 
 * _AC-13242_： Magento升級在MariaDB 11.4 + 2.4.8-beta1上失敗
    * _修正備註_：升級應該會發生，且沒有任何錯誤。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/7b336d0a>
-* _ACP2E-2102_：管理面板中的清漆 7 按鈕無導出 VCL
-   * _修復說明_：「導出清漆 7 的 VCL」按鈕已添加到管理面板。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/7b336d0a>
+* _ACP2E-2102_：管理面板中沒有清漆7的匯出VCL按鈕
+   * _修正附註_：「Export VCL for Varnish 7」按鈕已新增至「管理」面板。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/a4fbf702>
 
 ### 庫存/MSI
 
 * _AC-10750_：資料庫使用首碼時，可設定產品的詳細目錄更新失敗
-   * _修正說明_：現在，當資料庫使用前綴時，系統會正確更新可配置產品的庫存，從而防止任何錯誤消息並確保保存正確的數量。 以前，如果資料庫使用前綴，則嘗試保存可配置產品中簡單產品的庫存數量時會發生錯誤。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38045>
-* _AC-11593_：添加包含屬性的地圖時，Google Google API 金鑰不起作用
+   * _修正備註_：當資料庫使用首碼時，系統現在會正確更新可設定產品的詳細目錄，避免任何錯誤訊息，並確保儲存正確的數量。 以前，如果資料庫使用前置詞，則在嘗試儲存可設定產品中簡單產品的庫存數量時會發生錯誤。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38045>
+* _AC-11593_：新增具有屬性的地圖時，Google google API金鑰無法運作
    * _修正附註_：系統現在支援最新的Google Maps API 3.56版，可讓使用者從PageBuilder功能表成功將地圖內容區塊新增到舞台，不會發生任何錯誤。 之前，由於Google地圖API版本的相容性問題，使用者無法新增地圖內容區塊，導致出現「發生錯誤」錯誤訊息。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/0574ac23>
 * _AC-13922_：無法為具有多個來源且SKU損毀的訂單專案建立出貨
@@ -1435,10 +1436,10 @@ laminas/laminas-stdlib
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38412>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37932>
 * _AC-11690_：加入處理器快取問題
-   * _修正說明_：系統現在為每次反覆運算正確應用 JoinProcessor，平均連續調用，確保準確的數據檢索。 以前，JoinProcessor 在連續反覆運算中被錯誤地標記為已應用，從而導致數據檢索錯誤。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/27504>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/37550>
-* _AC-11798_： [發行] 運費在列印的 pdf 中顯示不同
+   * _修正附註_：系統現在可正確套用每個反複專案的JoinProcessor，即使連續呼叫亦然，確保資料擷取準確。 以前，JoinProcessor錯誤地標籤為已在連續反複專案中套用，導致資料擷取錯誤。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/27504>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37550>
+* _AC-11798_： [問題]送貨價格在列印的pdf中顯示不同
    * _修正備註_：系統現在會根據稅捐組態設定，以列印的PDF正確顯示出貨價格，確保銷售訂單商業發票檢視頁面與列印商業發票之間的一致性。 以前，無論稅捐組態設定為何，列印PDF中顯示的運費都會排除稅捐。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38608>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38595>，<https://github.com/magento/magento2/commit/1bafc571>
@@ -1448,24 +1449,24 @@ laminas/laminas-stdlib
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/39601>
 * _AC-13924_： [問題]修正錯誤\Magento\Sales\Model\Order\Email\Container\Template：：$id屬性
    * _修正備註_：這修正了\Magento\Sales\Model\Order\Email\Container\Template：：$id的錯誤phpdoc，實際上$id是type int，但實際上是string。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/39151>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/39150>
-* _ACP2E-2622_：無法保存對現有訂單詳細資訊中電話號碼的更改
-   * _修復說明_：現在用戶可以在訂單地址的電話欄位中添加國際前綴00
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38201>
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/39151>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/39150>
+* _ACP2E-2622_：無法在現有訂單詳細資料中儲存電話號碼的變更
+   * _修正附註_：現在，使用者可以在訂單地址的電話欄位中新增國際首碼00
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38201>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/12e071c3>
 * _ACP2E-2734_：無法傳送電子郵件
    * _修正附註_：系統現在包含組態選項async_sending_attempts，可指定在停止前嘗試傳送電子郵件的次數，改善啟用「非同步傳送」時失敗的電子郵件傳送處理。 先前，如果電子郵件無法傳送，系統會持續嘗試重新傳送，導致系統記錄中出現無休止的錯誤訊息回圈。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b2286ecf>
 * _ACP2E-2756_： [Cloud]部分退款部份出貨的訂單狀態已變更為完成
-   * _修正注意事項_：發出貸項通知單時，如果有尚未發貨的商品，訂單狀態將不再更改為“已完成”。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/7e0e5582>
-* _ACP2E-3002_： [如開發文檔所示，CLOUD] 無法停用從管理員UI發送電子郵件
-   * _修正注意_：現在，當電子郵件通信被禁用時，系統可以正確阻止發送銷售電子郵件。 重新啟用電子郵件通訊後，將不再傳送這些電子郵件。 以前，在禁用電子郵件通信時啟動的銷售電子郵件仍將在重新啟用電子郵件通信後發送。
+   * _修正備註_：發行銷退折讓單時，如果料號尚未出貨，則訂單狀態不再變更為「已完成」。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/7e0e5582>
+* _ACP2E-3002_： [CLOUD]無法如開發檔案所示停用從管理員UI傳送電子郵件
+   * _修正附註_：系統現在會正確防止在電子郵件通訊停用時傳送銷售電子郵件。 重新啟用電子郵件通訊時，將不再傳送這些電子郵件。 以往，在電子郵件通訊停用時起始的銷售電子郵件，在電子郵件通訊重新啟用後仍會傳送。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/c8931218>
-* _ACP2E-3045_：訂單已關閉，未全額退款
-   * _修正說明_：當具有未扣付款的訂單創建了貨件時，系統現在可以將訂單狀態正確維護為“處理中”，發票狀態為“待處理”。 這可確保訂單僅在全額退款後才會標記為「已關閉」。 以前，使用待處理發票為訂單創建貨件會錯誤地將訂單狀態更改為「已關閉」。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/6a185204>
+* _ACP2E-3045_：未全額退款的訂單已結案
+   * _修正備註_：當具有未擷取付款的訂單已建立出貨時，系統現在會正確地將訂單狀態維持為「處理中」，並將商業發票狀態維持為「待處理」。 這可確保在全額退款後只將訂單標籤為「已結」。 先前，若為具有待處理商業發票的訂單建立出貨，則會錯誤地將訂單狀態變更為「已關閉」。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/6a185204>
 * _ACP2E-3311_： [Cloud]若未設定預設帳單地址，則無法在單一商店的admin中建立訂單
    * _修正附註_：現在相關的錯誤訊息「具有相同電子郵件地址的客戶已存在於關聯的網站中。」 如果客戶沒有預設帳單地址，但嘗試在其他商店建立訂單，則會顯示訂單。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/d75cff27>
@@ -1506,10 +1507,10 @@ laminas/laminas-stdlib
    * _修正附註_：修正將簡單產品（群組產品的一部分）新增至購物車時，即使產品已指派影像，仍傳回預留位置縮圖影像的問題。
 修正詳細資料：
 ·產品縮圖現在可以正確顯示指派的影像（如果有的話）。
-• The thumbnail selection respects the admin configuration under:
-Stores > Configuration > Sales > Checkout > Shopping Cart > Grouped Product Image.
-This ensures consistent thumbnail behavior for grouped products based on store settings.
-* _LYNX-400_: Customer&#39;s custom option attributes not working with integer values
+·縮圖選取專案依照下的管理員設定：
+商店>設定>銷售>結帳>購物車>分組產品影像。
+這可確保根據商店設定分組產品的一致縮圖行為。
+* _LYNX-400_：客戶的自訂選項屬性無法使用整數值
    * _修正附註_：修正當傳回的值為整數時，客戶的自訂選項屬性無法運作的問題。 自訂選項現在可正確處理並按預期傳回整數值。
 * _LYNX-402_：嘗試取得具有動態價格的套件組合產品的priceDetails時發生內部伺服器錯誤
    * _修正附註_：解決透過GraphQL查詢具有動態定價之套件組合產品的price_details時，導致內部伺服器錯誤的問題。 此增強功能使用設定了動態定價的套件組合產品時，可確保穩定的購物車查詢。
@@ -1547,12 +1548,12 @@ This ensures consistent thumbnail behavior for grouped products based on store s
 * _LYNX-643_：使用setBillingAddressOnCart GQL的same_as_shipping欄位時，無法儲存在通訊錄中
    * _修正附註_：修正使用setBillingAddressOnCart GraphQL突變（將same_as_shipping欄位設為true）時，送貨地址未儲存至客戶通訊錄的問題。 現在，送貨地址已如預期正確儲存。
 * _LYNX-650_：標準化變異中的order_id
-   * _修正說明_：標準化了突變中的order_id輸入，並更新了訂單取消確認電子郵件範本，以顯示增量id而不是訂單ID。
-* _LYNX-651_：客户訂單未显示訂單評論
-   * _修正注意_：解決了 CustomerOrder 在訪客和客戶訂單 GraphQL 查詢中包含訂單評論的問題。
-* _LYNX-652_：original_item_price不得包含任何折扣
-   * _修正注意_：更新了 GraphQL 購物車項目價格中original_item_price的邏輯，以排除折扣。
-* _LYNX-681_：捆綁產品之一缺貨時，捆綁產品仍顯示“IN_STOCK”
+   * _修正附註_：標準化變動的order_id輸入，並更新訂單取消確認電子郵件範本，以公開增量id而非訂單id。
+* _LYNX-651_： CustomerOrder未顯示訂單註解
+   * _修正附註_：解決CustomerOrder的問題，在來賓與客戶訂單GraphQL查詢中包含訂單註解。
+* _LYNX-652_： original_item_price不得包含任何折扣
+   * _修正備註_：已更新GraphQL購物車專案價格中original_item_price的邏輯，以排除折扣。
+* _LYNX-681_：當其中一個套件產品無存貨時，套件產品仍會顯示「IN_STOCK」
    * _修正附註_：解決即使其中一個套件專案無庫存，套件產品的product.stock_status仍顯示「IN_STOCK」的問題。
 * _LYNX-686_：如果客戶存在已刪除的自訂屬性的值，則客戶查詢會傳回內部伺服器錯誤
    * _修正附註_：修正當刪除的自訂屬性仍有儲存值時，客戶查詢傳回內部伺服器錯誤的問題。 現在，如果要求不存在的屬性，則會傳回適當的錯誤訊息。 刪除客戶自訂屬性時，必要的快取會失效。
@@ -1575,14 +1576,14 @@ This ensures consistent thumbnail behavior for grouped products based on store s
 
 ### 其他開發人員工具
 
-* _AC-10658_： [問題] ：修正visual.phtml中的HTML語法錯誤
-   * _修正注意_：系統現在可以正確關閉 visual.phtml 文件中的 開始 標記，確保正確的 HTML 語法。 以前，開始 標記未正確關閉，從而導致 HTML 語法錯誤。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38247>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/37457>
+* _AC-10658_： [問題]修正visual.phtml中的HTML語法錯誤
+   * _修正附註_：系統現在會正確關閉visual.phtml檔案中的開始標籤，確保使用正確的HTML語法。 之前，啟動標籤未正確關閉，導致HTML語法錯誤。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38247>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37457>
 * _AC-11474_： [問題]在bin/magento maintenance：status命令中將「作用中」變更為「已啟用」
    * _修正附註_：系統現在為維護模式命令提供更準確的狀態訊息，將狀態從「作用中」變更為「已啟用」，以及從「非作用中」變更為「已停用」。 之前，維護模式命令的狀態訊息會顯示為「作用中」或「非作用中」，這可能會造成混淆。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38486>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/38410>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38410>
 * _AC-12571_：導覽至類別樹狀結構會導致Redis發生錯誤：「Redis工作階段超過同時連線」
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38851>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/0611e750>
@@ -1609,11 +1610,11 @@ This ensures consistent thumbnail behavior for grouped products based on store s
 * _AC-13414_：信用卡（Payflow連結）付款無法運作
    * _修正備註_：在成功完成修正訂單後，使用信用卡下訂單時出現較早取得錯誤（付款遭拒）。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/a68324bc>
-* _ACP2E-2841_：每次我們在視圖交易屏幕上按兩下獲取按鈕時，Payflow都會創建新交易
-   * _修正說明_：系統現在可以正確獲取交易信息，而無需在每次按兩下視圖交易螢幕上的抓取按鈕時創建新的支付交易。 以前，按一下提取按鈕會錯誤地為已付款的訂單創建新的付款交易。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/b2286ecf>
-* _ACP2E-3028_：加拿大PayPal商家帳戶的 PDP 中未显示付款消息
-   * _修正說明_：現在，當可以從帳戶帳單地址或貨件確定買家的國家/地區時，系統現在可以在產品詳細資訊頁面 （PDP） 上正確顯示加拿大PayPal商家帳戶的 PayLater 消息。 之前，由於缺少參數，不會顯示PayLater消息，從而導致瀏覽器控制台出錯。
+* _ACP2E-2841_：每次在檢視交易畫面上按一下擷取按鈕時，Payflow都會建立新交易
+   * _修正附註_：系統現在會正確擷取交易資訊，而不需在每次按一下檢視交易畫面上的擷取按鈕時建立新的付款交易。 先前，按一下「擷取」按鈕會錯誤地為已支付的訂單建立新的付款交易。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/b2286ecf>
+* _ACP2E-3028_：加拿大貝寶商家帳戶的PDP中未顯示Paylater訊息
+   * _修正備註_：系統現在會在「產品詳細資料頁面(PDP)」上正確顯示加拿大PayPal商家帳戶的PayLater訊息，而可從帳戶帳單地址或出貨來決定買方的國家/地區。 以前，由於缺少引數，不會顯示PayLater訊息，這會導致瀏覽器主控台發生錯誤。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/6a185204>
 * _ACP2E-3143_： PayPal訂單退款導致重複銷退折讓單
    * _修正備註_：修正PayPal付款服務IPN建立的銷退折讓單並行處理的問題。
@@ -1628,10 +1629,10 @@ This ensures consistent thumbnail behavior for grouped products based on store s
 ### 效能
 
 * _AC-11932_：預設產品屬性設定問題
-   * _修正說明_：系統現在允許使用者取消選擇產品屬性的預設選項，確保該屬性並不總是有預設設置。 以前，一旦為產品屬性設置了預設值，就無法取消選擇它，從而導致該屬性始終具有預設設置。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38703>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/7d5e3906>
-* _AC-12000_： [在] 資產之前發出清理Code並添加新的關鍵頭塊和移動關鍵 CSS
+   * _修正附註_：系統現在允許使用者取消選取產品屬性的預設選項，確保屬性並非總是有預設集。 先前，一旦設定了產品屬性的預設值，就無法取消選取該屬性，導致屬性一律會有預設集。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38703>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/7d5e3906>
+* _AC-12000_： [問題]程式碼清理並新增重要標題區塊，以及在資產之前移動重要css
    * _修正附註_：系統現在包含新的關鍵Head區塊，並在資產之前移動關鍵CSS，以便在前端進行更多自訂和效能最佳化。 過去，關鍵CSS並不位於資產之前，限制了自訂和最佳化機會。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38748>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/35580>
@@ -1653,17 +1654,17 @@ This ensures consistent thumbnail behavior for grouped products based on store s
    * _修正附註_：現在會處理來自啟用條款與條件之非預設網站的訂單。
 在自動拒絕之前。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/57a32313>
-* _ACP2E-2910_：訂單靜止 API 調用需要很長時間才能執行
-   * _修正說明_：系統現在會在合理的時間範圍內執行訂單 Rest API 調用，提升獲取大量訂單時的性能。 以前，訂單 Rest API 調用需要很長時間才能執行，導致在檢索大量訂單時出現延遲。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/001e5188>
+* _ACP2E-2910_： Order Rest API呼叫需要很長時間才能執行
+   * _修正附註_：系統現在會在合理的時間範圍內執行Order Rest API呼叫，提高擷取大量訂單時的效能。 先前，Order Rest API呼叫執行時間過長，導致擷取大量訂單時發生延遲。
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/001e5188>
 
 ### 定價
 
-* _AC-11810_： Magento2.4.6-p4 訂購 API 簡單商品遺失價格
+* _AC-11810_： Magento2.4.6-p4訂單API簡單專案遺漏價格
    * _修正備註_：系統現在會透過Order API查詢時，正確顯示簡單產品的價格，以確保資料呈現準確。 先前，簡單產品的價格在API回應中錯誤地顯示為零。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38603>
 * _AC-13855_：目錄規則中有Penny舍入錯誤
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/276e0acd>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/276e0acd>
 
 ### 產品
 
@@ -1672,25 +1673,25 @@ This ensures consistent thumbnail behavior for grouped products based on store s
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38146>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38447>
 * _AC-10947_： ProductRepository函式GetById未建立正確的快取金鑰
-   * _修正說明_： 系統現在可以在 ProductRepository 的函數 GetById 中正確創建緩存鍵，無論 商店 ID 是以字串還是整數形式傳遞。 這可確保在後續調用時從記憶體中檢索產品，從而提高性能。 以前，由於緩存鍵創建不正確，系統將在每次調用函數時從資料庫中檢索產品，平均使用相同的參數。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38384>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/38433>
+   * _修正附註_：系統現在會在ProductRepository的GetById函式中正確建立快取金鑰，無論儲存ID是以字串還是整數傳遞。 這可確保在後續呼叫時從記憶體中擷取產品，進而改善效能。 以前，由於不正確的快取金鑰建立，系統會在每次呼叫函式時從資料庫擷取產品，即使引數相同。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38384>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38433>
 * _AC-11992_： [問題] [MFTF]已新增AdminClickAddOptionForBundleItemsActionGroup
-   * _修正附註_：系統現在包含AdminClickAddOptionForBundleItemsActionGroup，以增強Admin面板的功能。 之前，此作群組不可用。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/30857>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/30838>
-* _AC-13173_： [問題] 修正 PHPDoc 區塊中的拼寫錯誤
-   * _修正說明_：系統現在可以正確刪除 PHPDoc 中用於 $helper 變數 聲明的未知引用變數，從而提高代碼清晰度和準確性。 以前，PHPDoc 中的這個未知引用變數會導致代碼中的混亂和潛在的不準確。
+   * _修正附註_：系統現在包含AdminClickAddOptionForBundleItemsActionGroup，以增強Admin面板的功能。 之前，無法使用此動作群組。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/30857>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/30838>
+* _AC-13173_： [問題]修正PHPDoc區塊中的錯字
+   * _修正附註_：系統現在會正確移除$helper變數宣告在PHPDoc中未知的參考變數，以提高程式碼清晰度和準確性。 先前，PHPDoc中這個未知的參考變數會造成程式碼中的混淆和潛在的不準確性。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38961>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/pull/38940>
-* _AC-13423_： [修復了] >= 2.4.7 Magento中損壞的捆綁包和可下載產品頁面布局的問題
-   * _修正說明_：捆綁包和可下載產品頁面的佈局已修復，可確保所有裝置的顯示一致且正確。 以前，由於重新排列產品資訊媒體塊，這些頁面會遇到布局問題。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/39403>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38940>
+* _AC-13423_： [問題]修正Magento >= 2.4.7中損壞的套件組合和可下載的產品頁面配置
+   * _修正附註_：已修正套件組合及可下載產品頁面的配置，確保所有裝置顯示一致且正確。 先前，由於產品資訊媒體區塊重新排列，這些頁面會遇到版面問題。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/39403>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/6cfb9b6b>
-* _AC-5969_：警報處理器 - 參數 #2 （$storeId） 必須是 int 類型，給定字串
-   * _修正說明_：系統現在通過確保商店標識碼的數據類型正確觸發產品警報電子郵件。 以前，由於商店標識碼的類型不符，無法傳送產品警報電子郵件。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/35602>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/0574ac23>
+* _AC-5969_： AlertProcessor — 引數#2數($storeId)必須是int型別，必須提供字串
+   * _修正附註_：系統現在會確認商店識別碼為正確的資料型別，以正確觸發產品警示電子郵件。 以前，由於商店識別碼中的型別不符，不會傳送產品警報電子郵件。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/35602>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/0574ac23>
 * _ACP2E-2944_： [雲端] addFilterToMap函式無法用於某些資料行
    * _修正附註_：現在，可以在順序格線中使用自訂模組。 先前使用自訂模組時發生錯誤。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/3a7c4d17>
@@ -1716,7 +1717,7 @@ This ensures consistent thumbnail behavior for grouped products based on store s
    * _修正備註_：從管理區域建立訂單時，無論大寫或小寫為何，都將正確驗證優惠券代碼。 之前，如果優惠券代碼與設定購物車規則代碼的字母大小寫不符，系統不會驗證優惠券代碼。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/581b7ef1>
 * _ACP2E-3374_：在後端，預設產品屬性的存放區值（而不是預期的管理員值）
-   * _修正說明_：現在在後端中，使用管理員值代替產品屬性的預設商店值。
+   * _修正附註_：現在在後端，會使用管理員值，而非產品屬性的預設商店值。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/5184c067>
 * _ACP2E-3377_：新增套件組合產品時，購物車規則「整個購物車的固定金額折扣」動作套用折扣不正確
    * _修正附註_：未正確套用套件組合產品的固定數量購物車規則。 現在，在計算總折扣金額時，會考慮捆綁子產品，從而產生適當的折扣計算。
@@ -1795,11 +1796,11 @@ This ensures consistent thumbnail behavior for grouped products based on store s
    * _修正附註_：系統現在正確使用辭彙「carrier」，而不是在順序追蹤範本中使用的JavaScript處理常式函式中拼錯的「currier」，以確保正確的函式命名和程式碼明確無誤。 先前，我們使用拼字錯誤的辭彙「currier」，這可能會導致程式碼基底的混淆和不一致。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/34523>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/33414>
-* _AC-11938_： UPS REST “貨件不能以 KGS/IN 或 LBS/CM 或 OZS/CM 作為其計量單位”
-   * _修復注意事項_：確保 UPS 費率應在結帳和購物車時可見。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/38618>
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/493e01f5>
-* _AC-13172_： [問題] 客戶地址的變數拼寫正確
+* _AC-11938_： UPS REST 「出貨不能以KGS/IN、LBS/CM或OZS/CM作為測量單位」
+   * _修正附註_：請確定結帳和購物車中應該顯示UPS費率。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/38618>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/493e01f5>
+* _AC-13172_： [問題]客戶地址的變數拼字正確
    * _修正附註_：系統現在會正確拼寫客戶地址的變數，以確保前端帳戶區域的正確顯示。 以前，這些變數的拼字錯誤可能會導致本機程式碼審查期間發生錯誤。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/32817>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/32815>
@@ -1867,8 +1868,8 @@ This ensures consistent thumbnail behavior for grouped products based on store s
 * _AC-12128_： Prototype.js安全性弱點修正CVE-2020-27511
    * _修正附註_：系統已更新，以解決Prototype.js 1.7.3中的安全性弱點CVE-2020-27511，進而加強系統的整體安全性。 在此更新之前，系統可能會因為移除精心製作的HTML標籤而遭受規則運算式拒絕服務(ReDOS)攻擊。
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12189_: Grunt Less uses pub/ prefix for sourcemaps
-   * _Fix note_: The system now generates less/css sourcemaps without the /pub prefix for paths when using grunt, eliminating the need for a workaround in the webserver configuration. Previously, the use of the /pub prefix in sourcemaps paths required a specific configuration in the webserver to function correctly.
+* _AC-12189_： Grunt Less使用pub/前置詞作為原始程式集
+   * _修正備註_：系統現在會在使用grunt時，針對路徑產生較少/css來源地圖（不含/pub前置詞），因此不需要在Web伺服器設定中進行因應措施。 之前，在原始碼對應路徑中使用/pub首碼時，需要在Web伺服器中指定特定的設定才能正常運作。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38837>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38840>
 * _AC-12432_： Ui元件檔案欄位
@@ -1889,16 +1890,16 @@ This ensures consistent thumbnail behavior for grouped products based on store s
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/32922>
 * _AC-13459_：「無庫存」排序有最小庫存臨界值的不一致行為
    * _修正備註_：系統現在會根據存貨層次正確排序目錄中的產品，遵循設定的「最小存貨臨界值」，並一致地將無存貨專案移至清單底部。 先前，排序行為不一致，專案根據其庫存量並非總是以正確順序出現，而且在儲存、重新整理或修改類別階層後，排序的變更可能無法預測地發生。
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/47b448e2>
-* _AC-13472_：針對require.js載入問題改進錯誤報告的建議
-   * _修正說明_：此 PR 改進了 requirejs 無法載入元件時的錯誤消息。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/36761>
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/47b448e2>
+* _AC-13472_：針對require.js載入問題，建議改善錯誤報告功能
+   * _修正附註_：此PR可改善必要專案無法載入元件時的錯誤訊息。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/36761>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38971>
-* _AC-14004_:P HP 8.4 棄用錯誤導致 2.4-development 中的構建失敗
-   * _GitHub 代碼貢獻_： <https://github.com/magento/magento2/commit/1da9ba6f>
-* _AC-9007_： [問題] 不要在前端載入後端塊上下文
-   * _修正說明_：系統現在可確保後端塊上下文不會載入前端，從而防止創建不必要的後端會話和潛在的會話鎖定。 以前，系統在前端錯誤地載入後端塊上下文，導致創建後端工作階段和潛在的會話鎖定。
-   * _GitHub 問題_： <https://github.com/magento/magento2/issues/37617>
+* _AC-14004_： PHP 8.4取代錯誤導致2.4-develop中的組建失敗
+   * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/commit/1da9ba6f>
+* _AC-9007_： [問題]請勿在前端載入後端區塊內容
+   * _修正附註_：系統現在會確保前端未載入後端區塊內容，防止建立不必要的後端工作階段和潛在的工作階段鎖定。 以前，系統在前端錯誤載入後端區塊內容，導致建立後端工作階段和潛在的工作階段鎖定。
+   * _GitHub問題_： <https://github.com/magento/magento2/issues/37617>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/36368>
 * _AC-9168_： [問題]移除不必要的指令碼檢閱摘要
    * _修正附註_：系統現在會從評等區段中移除不必要的JavaScript指令碼，而使用內嵌CSS樣式以獲得更有效率、更可讀的程式碼，藉此最佳化頁面載入時間。 以往，針對評分割槽段使用JavaScript指令碼可能會導致頁面載入時間變慢。
