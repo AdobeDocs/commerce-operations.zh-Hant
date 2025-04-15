@@ -3,15 +3,19 @@ title: ACSD-64112：設定「MAGE_INDEXER_THREADS_COUNT」時，「indexer_updat
 description: 套用ACSD-64112修補程式以修正設定「MAGE_INDEXER_THREADS_COUNT」時，「indexer_update_all_views」cron執行失敗的Adobe Commerce問題。
 feature: Catalog Management, B2B
 role: Admin, Developer
-source-git-commit: 544c7b9664ccc9204c2c0c78b103ad823e18ef7d
+exl-id: c95f179d-5291-481f-b655-08a9db608513
+source-git-commit: 0078cf5fb6d6c3a8650762d7cdf5556de642e201
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-64112：設定`MAGE_INDEXER_THREADS_COUNT`時，`indexer_update_all_views` cron執行失敗
+
+>[!NOTE]
+>
+>已針對2.4.7以上的Adobe Commerce版本，將此修補程式取代為[ACP2E-3705](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)。
 
 ACSD-64112修補程式修正設定`MAGE_INDEXER_THREADS_COUNT`時`indexer_update_all_views` cron執行失敗的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59時，即可使用此修補程式。 修補程式ID為ACSD-64112。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
@@ -23,7 +27,7 @@ ACSD-64112修補程式修正設定`MAGE_INDEXER_THREADS_COUNT`時`indexer_update
 
 **與Adobe Commerce版本相容：**
 
-* Adobe Commerce （所有部署方法） 2.4.5 - 2.4.7-p3
+* Adobe Commerce （所有部署方法） 2.4.5 - 2.4.6-p10
 
 >[!NOTE]
 >
