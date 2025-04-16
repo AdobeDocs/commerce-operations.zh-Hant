@@ -1,5 +1,5 @@
 ---
-source-git-commit: 54757d09eb0f476229e567e43c58dc2130a59ac9
+source-git-commit: f756964406f101a93a513600f668edbffec17cb1
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8</a>
         </td>
-        <td>4月8， 2025</td>
+        <td>四月  2025年8月</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -44,7 +44,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5</a>
         </td>
-        <td>4月8， 2025</td>
+        <td>四月  2025年8月</td>
     </tr>
     <tr>
         <td>
@@ -95,7 +95,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p10">2.4.6-p10</a>
         </td>
-        <td>4月8， 2025</td>
+        <td>四月  2025年8月</td>
     </tr>
     <tr>
         <td>
@@ -131,7 +131,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p4">2.4.6-p4</a>
         </td>
-        <td>2月13， 2024</td>
+        <td>2024年2月13日</td>
     </tr>
     <tr>
         <td>
@@ -155,19 +155,19 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-6">2.4.6</a>
         </td>
-        <td>3月14， 2023</td>
+        <td>2023年3月14日</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
 
 ## 2.4.5
 
-對 2.4.5 發佈行的支援將於 2025 年 8 月 9 日結束。
+對2.4.5版本的支援將於8月終止  2025年9月。
 
 <table>
   <thead>
     <tr>
-      <th>補丁版本</th>
+      <th>修補程式版本</th>
       <th>發行日期</th>
     </tr>
   </thead>
@@ -218,31 +218,31 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p5">2.4.5-p5</a>
         </td>
-        <td>10月10， 2023</td>
+        <td>2023年10月10日</td>
     </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p4">2.4.5-p4</a>
         </td>
-        <td>8月8， 2023</td>
+        <td>八月  2023年8月</td>
     </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p3">2.4.5-p3</a>
         </td>
-        <td>6月13， 2023</td>
+        <td>2023年6月13日</td>
     </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p2">2.4.5-p2</a>
         </td>
-        <td>3月14， 2023</td>
+        <td>2023年3月14日</td>
     </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p1">2.4.5-p1</a>
         </td>
-        <td>10月11， 2022</td>
+        <td>2022年10月11日</td>
     </tr>
     <tr>
         <td>
@@ -255,7 +255,7 @@ ht-degree: 0%
 
 ## 2.4.4
 
-對2.4.4版本系列的支援將於2025年4月12日終止。
+對2.4.4版本的支援已於2025年4月12日終止。
 
 <table>
   <thead>
@@ -269,7 +269,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p13">2.4.4-p13</a>
         </td>
-        <td>4月8， 2025</td>
+        <td>四月  2025年8月</td>
     </tr>
     <tr>
         <td>
@@ -293,7 +293,7 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p9">2.4.4-p9</a>
         </td>
-        <td>6月11， 2024</td>
+        <td>2024年6月11日</td>
     </tr>
     <tr>
         <td>
@@ -368,19 +368,19 @@ ht-degree: 0%
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#adobe-commerce-243-p3">2.4.3-p3</a>
         </td>
-        <td>8月9， 2022</td>
+        <td>八月  2022年9月</td>
     </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#adobe-commerce-243-p2">2.4.3-p2</a>
         </td>
-        <td>4月12， 2022</td>
+        <td>2022年4月12日</td>
     </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#p1">2.4.3-p1</a>
         </td>
-        <td>10月12， 2021</td>
+        <td>2021年10月12日</td>
     </tr>
     <tr>
         <td>
@@ -422,13 +422,13 @@ ht-degree: 0%
         <td>
           2.4.0 - p1
         </td>
-        <td>10月15， 2020</td>
+        <td>2020年10月15日</td>
     </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-0">2.4.0</a>
         </td>
-        <td>7月28， 2020</td>
+        <td>2020年7月28日</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -449,7 +449,7 @@ ht-degree: 0%
         <td>
           2.3.7 - p4
         </td>
-        <td>8月9， 2022</td>
+        <td>八月  2022年9月</td>
     </tr>
     <tr>
         <td>
@@ -521,19 +521,19 @@ ht-degree: 0%
         <td>
           2.3.4
         </td>
-        <td>2020 年 1 月 28 日</td>
+        <td>2020年1月28日</td>
     </tr>
     <tr>
         <td>
           2.3.2 - p2
         </td>
-        <td>2019年10月9日</td>
+        <td>十月  2019年9月</td>
     </tr>
     <tr>
         <td>
           2.3.3
         </td>
-        <td>2019年10月8日</td>
+        <td>十月  2019年8月</td>
     </tr>
     <tr>
         <td>
@@ -545,13 +545,13 @@ ht-degree: 0%
         <td>
           2.3.1
         </td>
-        <td>2019年3月26日</td>
+        <td>2019年3月26</td>
     </tr>
     <tr>
         <td>
           2.3.0
         </td>
-        <td>2018 年 11 月 28 日</td>
+        <td>2018年11月28</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -578,7 +578,7 @@ ht-degree: 0%
         <td>
           2.2.10
         </td>
-        <td>2019年10月8日</td>
+        <td>十月  2019年8月</td>
     </tr>
     <tr>
         <td>
@@ -608,7 +608,7 @@ ht-degree: 0%
         <td>
           2.2.5
         </td>
-        <td>2018 年 6 月 27 日</td>
+        <td>2018年6月27日</td>
     </tr>
     <tr>
         <td>
@@ -719,13 +719,13 @@ ht-degree: 0%
         <td>
           2.1.8
         </td>
-        <td>2017 年 9 月 8 日</td>
+        <td>八月  2017年9月</td>
     </tr>
     <tr>
         <td>
           2.1.7
         </td>
-        <td>2017 年 5 月 31 日</td>
+        <td>2017年5月31日</td>
     </tr>
     <tr>
         <td>
@@ -812,7 +812,7 @@ ht-degree: 0%
         <td>
           2.0.14
         </td>
-        <td>2017 年 5 月 31 日</td>
+        <td>2017年5月31日</td>
     </tr>
     <tr>
         <td>
@@ -896,7 +896,7 @@ ht-degree: 0%
         <td>
           2.0.0
         </td>
-        <td>2015年11月17日</td>
+        <td>2015年11月17</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table> <!-- minor_releases -->
