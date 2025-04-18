@@ -2,9 +2,9 @@
 title: 軟體生命週期原則
 description: 了解 Adobe Commerce 版本軟體支援終止的關鍵日期。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 7b32ed40efb7e72810f571c8b4b71a77c8aa6a20
+source-git-commit: 6ad4d8b3843c029d8f2d3919874d4614d9928f69
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '597'
 ht-degree: 4%
 
 ---
@@ -18,11 +18,13 @@ ht-degree: 4%
 
 - Adobe透過安全性修補程式版本，在三年支援期間提供安全性修正。
 
-- 針對關鍵安全性問題，例如零日漏洞，Adobe會為支援版本的所有客戶提供[修補程式](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-)，即使他們不在最新修補程式或安全性修補程式發行版本中。 請注意，Hotfix並不完整，且無法解決升級至最新版本時可解決的所有安全性問題。
+- 針對關鍵安全性問題，例如零日漏洞，Adobe會為使用支援版本的所有客戶提供[修補程式](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-)，即使他們未使用最新修補程式或安全性修補程式版本。 請注意，Hotfix並不完整，且無法解決升級至最新版本時可解決的所有安全性問題。
 
-- Adobe不針對客戶處於Adobe Commerce的三年支援期期間，而可能到期的第三方服務和軟體相依性（例如PHP和MySQL）提供安全性和品質修正。 請參閱[系統需求](../installation/system-requirements.md)，以取得測試及支援的協力廠商技術的完整清單。
+- Adobe並未針對客戶處於Adobe Commerce的三年支援期期間，而可能到期的協力廠商服務和軟體相依性（例如PHP和MySQL）提供安全性和品質修正。 請參閱[系統需求](../installation/system-requirements.md)，以取得測試及支援的協力廠商技術的完整清單。
 
-- 在僅限安全性的修補程式發行範圍內，當客戶處於Adobe Commerce的三年支援期時，Adobe可提供與協力廠商服務和軟體相依性的相容性，但前提是客戶可以在不引入回溯不相容變更的情況下這樣做。
+- 對於使用版本2.4.4和2.4.5的雲端上的Adobe Commerce客戶，Adobe會自動將PHP 8.1期限安全性修正套用至基礎結構，因此這些客戶不會受到PHP 8.1支援終止的影響。 若內部部署客戶使用Adobe Commerce 2.4.4和2.4.5，則必須聯絡Adobe支援，要求PHP 8.1期限安全性修補程式（如有需要）。
+
+- Adobe提供與第三方服務和軟體相依性的相容性，而客戶在僅限安全性的修補程式發行範圍內享有Adobe Commerce的三年支援期，但前提是客戶可以在不引進回溯不相容變更的情況下提供支援。
 
 ## 延伸支援
 
@@ -36,6 +38,7 @@ Adobe鼓勵客戶儘快升級。 不過，為了提供更大的彈性以符合�
 
 | 版本 | 全面發佈 | 結束一般支援<sup>1</sup> | 終止延伸支援 | 相依PHP版本 | 相依MariaDB版本 |
 |----------------------|----------------------|------------------------------------|-------------------------|-----------------------|------------------------------|
+| Adobe Commerce 2.4.8 | 2025年4月8日 | 2028年4月11日 | 不適用 | 8.3和8.4 | 11.4 |
 | Adobe Commerce 2.4.7 | 2024年4月9日 | 2027年4月9日 | 不適用 | 8.2和8.3 | 10.6 |
 | Adobe Commerce 2.4.6 | 2023年3月14日 | 2026年8月11日<sup>2</sup> | 不適用 | 8.1和8.2 | 10.6 |
 | Adobe Commerce 2.4.5 | 2022年8月9日 | 2025年8月9日 | 2026年8月11日 | 8.1 | 10.6<sup>3</sup> |
@@ -61,11 +64,16 @@ Adobe鼓勵客戶儘快升級。 不過，為了提供更大的彈性以符合�
     <th colspan="4">2025</th>
     <th colspan="4">2026</th>
     <th colspan="4">2027</th>
+    <th colspan="4">2028</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td>Commerce</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
     <td>Q1</td>
     <td>Q2</td>
     <td>Q3</td>
@@ -96,24 +104,30 @@ Adobe鼓勵客戶儘快升級。 不過，為了提供更大的彈性以符合�
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
-    <td colspan="6"></td>
+    <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.5</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
-    <td colspan="6"></td>
+    <td colspan="9"></td>
   </tr>
   <tr>
     <td>2.4.6</td>
     <td colspan="4"></td>
     <td colspan="15" style="background-color:#67ac68;"></td>
-    <td colspan="8"></td>
+    <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.7</td>
     <td colspan="9"></td>
+    <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="6"></td>
+  </tr>
+  <tr>
+    <td>2.4.8</td>
+    <td colspan="13"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
   </tr>
