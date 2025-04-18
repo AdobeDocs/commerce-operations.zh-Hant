@@ -1,7 +1,7 @@
 ---
-source-git-commit: 934fe621356c45bcefd2f84b7d01986b4995b061
+source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
 workflow-type: tm+mt
-source-wordcount: '28390'
+source-wordcount: '28386'
 ht-degree: 0%
 
 ---
@@ -1089,8 +1089,8 @@ ht-degree: 0%
    * _修正附註_：系統現在會正確參考模組中的類別，確保作業更順暢，並防止因不存在類別而當機。 這包括Indexer和Creditmemo模組中的錯誤修正，以及PrintAction類別中HttpGetActionInterface的實作。 以前，不正確的類別引用會導致錯誤和潛在的系統當機，並且某些功能(例如creditmemo PDF檔案的檔案名稱和庫存的重新索引)無法按預期運作。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/39126>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/37784>
-* _AC-12964_：可定義dev:di:info CLI命令的區域
-   * _修正附註_：系統現在可讓開發人員定義dev:di:info CLI命令的區域，加強開發和偵錯程式。 以前，這個指令只能顯示GLOBAL區域的資訊。
+* _AC-12964_：可定義`dev:di:info` CLI命令的區域
+   * _修正附註_：系統現在可讓開發人員定義`dev:di:info` CLI命令的區域，加強開發和偵錯程式。 以前，這個指令只能顯示GLOBAL區域的資訊。
    * _GitHub問題_： <https://github.com/magento/magento2/issues/38758>
    * _GitHub程式碼貢獻_： <https://github.com/magento/magento2/pull/38759>
 * _AC-13149_： [問題]新增isMultipleFiles屬性至影像表單元素範本
@@ -1545,7 +1545,7 @@ ht-degree: 0%
 * only_x_left_in_stock值現在會正確反映所選子變體而非父SKU的庫存。
 * 這可確保在購物車和產品頁面中針對可設定的產品變化正確顯示庫存量。
 * _LYNX-405_： GraphQL錯誤：自訂選項查詢中不支援的&#39;file&#39;型別
-   * _修正附註_：修正GraphQL針對購物車專案中的型別「檔案」的可自訂選項傳回錯誤的問題。 現在，查詢可正確傳回所有可自訂選項型別的詳細資料，包括檔案型選項，而不會導致錯誤。
+   * _修正附註_：修正GraphQL針對購物車專案中的「檔案」型別之可自訂選項傳回錯誤的問題。 現在，查詢可正確傳回所有可自訂選項型別的詳細資料，包括檔案型選項，而不會導致錯誤。
 * _LYNX-411_： GraphQL查詢未傳回可自訂產品的正確計算正常價格
    * _修正附註_：修正GraphQL未傳回正確計算出的可自訂產品一般價格的問題。 現在，查詢會正確包含計算出的正常價格，並在價格屬性中套用可自訂的值（例如$125），以反映基本價格和任何其他自訂成本。
 * _LYNX-412_：透過EstimatedTotals保留的AppliedTaxes具有更新的變動
@@ -1565,7 +1565,7 @@ ht-degree: 0%
 * _LYNX-464_：移除購物車中其他可設定產品不足的產品時，GraphQL發生錯誤
    * _修正附註_：修正嘗試從購物車移除庫存產品時，如果購物車也包含庫存不足的可設定產品，會導致「無法取得請求數量」GraphQL錯誤的問題。 移除現在可如預期運作，不會觸發錯誤。
 * _LYNX-469_：由於SKU的變異區分大小寫，因此無法新增產品
-   * _修正附註_：解決使用具有不同大小寫的SKU時，addProductsToCart突變傳回「PRODUCT_NOT_FOUND」錯誤的問題。 變異現在會以不敏感的方式處理SKU，確保與目錄服務查詢和PDP行為一致。
+   * _修正附註_：解決addProductsToCart突變使用具有不同大小寫的SKU時傳回「PRODUCT_NOT_FOUND」錯誤的問題。 變異現在會以不敏感的方式處理SKU，確保與目錄服務查詢和PDP行為一致。
 * _LYNX-603_： Product attribute > trademark short form ™傳回為™
    * _修正附註_：解決GraphQL API產品名稱的字元編碼問題
 * _LYNX-619_： updateCustomerEmail突變問題
