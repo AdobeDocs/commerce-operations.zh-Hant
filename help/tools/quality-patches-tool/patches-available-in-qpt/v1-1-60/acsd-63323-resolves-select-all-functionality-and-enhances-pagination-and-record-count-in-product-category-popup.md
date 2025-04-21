@@ -3,17 +3,17 @@ title: ACSD-63323：解析[!UICONTROL Select All]功能，並增強產品類別�
 description: 套用ACSD-63323修補程式以修正Adobe Commerce將產品新增至類別時，[!UICONTROL Select All]選項無法運作的問題。 此外，透過快顯視窗格線將產品新增至類別時，它可確保分頁和紀錄計數標籤正確運作。
 feature: Products
 role: Admin, Developer
-source-git-commit: f3f0cc93adf83b485ca50811adcc561638e3c5c2
+exl-id: 96e318fd-f1dd-4b15-b171-78ae1c8e4e0d
+source-git-commit: d24909ea2571eacafac1ff6b225e87bc40d320bc
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-63323：解析[!UICONTROL Select All]功能，並增強產品類別快顯視窗中的分頁和記錄計數
 
-ACSD-63323修補程式修正將產品新增至類別時，**[!UICONTROL Select All]**&#x200B;選項無法運作的問題。 此外，透過快顯視窗格線將產品新增至類別時，它可確保分頁和紀錄計數標籤正確運作。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)時，便可以使用此修補程式。 修補程式ID為ACSD-63323。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
+ACSD-63323修補程式修正將產品新增至類別時，**[!UICONTROL Select All]**&#x200B;選項無法運作的問題。 此外，透過快顯視窗格線將產品新增至類別時，它可確保分頁和紀錄計數標籤正確運作。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60時，即可使用此修補程式。 修補程式ID為ACSD-63323。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
 ## 受影響的產品和版本
 
@@ -68,5 +68,3 @@ ACSD-63323修補程式修正將產品新增至類別時，**[!UICONTROL Select A
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
-
-
