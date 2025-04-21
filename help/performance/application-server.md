@@ -2,9 +2,9 @@
 title: GraphQL應用程式伺服器
 description: 請依照這些指示，在您的Adobe Commerce部署中啟用GraphQL應用程式伺服器。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: c5446f0273705b158297c0a253054742ec95b44e
+source-git-commit: 2f8396a367cbe1191bdf67aec75bd56f64d3fda8
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2074'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Commerce GraphQL應用程式伺服器可讓Adobe Commerce維護Commerce GraphQL API請求中的狀態。 GraphQL Application Server （以Swoole擴充功能為基礎）會以具有工作者執行緒的處理程式方式運作，以處理要求處理。 GraphQL Application Server可保留GraphQL API請求中的啟動載入應用程式狀態，藉此增強請求處理和整體產品效能。 API要求會大幅提高效率。
 
-GraphQL Application Server僅適用於Adobe Commerce。 它無法用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
+GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
 
 >[!NOTE]
 >
->GraphQL Application Server目前與[[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/)不相容。 目前將[!DNL AWS S3]用於[遠端儲存空間](../configuration/remote-storage/cloud-support.md)的雲端基礎結構上的Adobe Commerce客戶，在Adobe於2024年稍後發行Hotfix之前，無法使用GraphQL Application Server。
+>GraphQL Application Server目前與[[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/)不相容。 雲端基礎結構上的Adobe Commerce客戶目前將[!DNL AWS S3]用於[遠端儲存空間](../configuration/remote-storage/cloud-support.md)，無法使用GraphQL應用程式伺服器。
 
 ## 架構
 
@@ -55,7 +55,7 @@ GraphQL應用程式伺服器可讓Adobe Commerce在連續的Commerce GraphQL API
 
 1. 從[2.4.7-appserver分支](https://github.com/magento/magento-cloud/tree/2.4.7-appserver)使用雲端範本，在雲端基礎結構上部署Adobe Commerce。
 1. 確定您所有的Commerce自訂專案和擴充功能都與GraphQL Application Server [相容](https://developer.adobe.com/commerce/php/development/components/app-server/)。
-1. 複製您的Commerce Cloud專案。
+1. 複製Commerce Cloud專案。
 1. 如有必要，請調整&#39;application-server/nginx.conf.sample&#39;檔案中的設定。
 1. 完全註解`project_root/.magento.app.yaml`檔案中的作用中&#39;web&#39;區段。
 1. 取消註解`project_root/.magento.app.yaml`檔案中包含GraphQL應用程式伺服器`start`命令的以下&#39;web&#39;區段設定。
@@ -102,7 +102,7 @@ git push
 1. 從[2.4.7-appserver分支](https://github.com/magento/magento-cloud/tree/2.4.7-appserver)使用雲端範本，在雲端基礎結構上部署Adobe Commerce。
 1. 確認您所有的Commerce自訂專案和擴充功能都與GraphQL Application Server相容。
 1. 確認已為您的執行個體設定`CRYPT_KEY`環境變數。 您可以在Cloud Console上檢查此變數的狀態。
-1. 複製您的Commerce Cloud專案。
+1. 複製Commerce Cloud專案。
 1. 將`application-server/.magento/.magento.app.yaml.sample`重新命名為`application-server/.magento/.magento.app.yaml`，並視需要調整.magento.app.yaml中的設定。
 1. 取消註解`project_root/.magento/routes.yaml`檔案中的下列路由設定，將`/graphql`流量重新導向至GraphQL應用程式伺服器。
 
