@@ -4,9 +4,9 @@ description: 套用ACSD-54966修補程式以修正Adobe Commerce問題，防止�
 feature: Promotions/Events, Shopping Cart, Orders
 role: Admin, Developer
 exl-id: e08062e5-62ff-4da6-918f-896af36edccc
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: f109d3544912ee09b25d882333840cf81d2f08e3
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -20,10 +20,12 @@ ACSD-54966修補程式修正了先前訂單失敗後，無法重複使用每位�
 **已為Adobe Commerce版本建立修補程式：**
 
 * Adobe Commerce （所有部署方法） 2.4.6-p1
+* Adobe Commerce 2.4.7-p2
 
 **與Adobe Commerce版本相容：**
 
-* Adobe Commerce （所有部署方法） 2.4.5 - 2.4.6-p3
+* Adobe Commerce （所有部署方法） 2.4.5 - 2.4.5-p10、2.4.6 - 2.4.6-p8
+* Adobe Commerce： 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
@@ -53,7 +55,7 @@ ACSD-54966修補程式修正了先前訂單失敗後，無法重複使用每位�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
@@ -62,6 +64,5 @@ ACSD-54966修補程式修正了先前訂單失敗後，無法重複使用每位�
 
 * [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches)的新工具。
 * [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
-
 
 如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。
