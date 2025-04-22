@@ -4,9 +4,9 @@ description: 套用ACSD-57003修補程式以修正訂單狀態變更為*Complete
 feature: Orders, Invoices, Shipping/Delivery
 role: Admin, Developer
 exl-id: a28ecc35-5c9a-4bba-b0b9-67fbe37ed8c3
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 128107310416e97edca3b122e97456138d04073f
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ACSD-57003修補程式修正了訂單狀態變更為&#x200B;*完成*&#x200B;而�
 
 **已為Adobe Commerce版本建立修補程式：**
 
-* Adobe Commerce （所有部署方法） 2.4.6-p3
+* Adobe Commerce （所有部署方法） 2.4.6-p3、2.4.6-p8、2.4.7-p3
 
 **與Adobe Commerce版本相容：**
 
-* Adobe Commerce （所有部署方法） 2.4.6 - 2.4.6-p3
+* Adobe Commerce （所有部署方法） 2.4.6 - 2.4.6-p9、2.4.7-p2 - 2.4.7-p4
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ ACSD-57003修補程式修正了訂單狀態變更為&#x200B;*完成*&#x200B;而�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
