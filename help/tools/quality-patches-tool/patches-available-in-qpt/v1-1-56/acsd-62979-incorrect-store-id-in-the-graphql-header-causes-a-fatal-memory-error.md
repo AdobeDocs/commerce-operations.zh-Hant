@@ -3,13 +3,13 @@ title: ACSD-62979： GraphQL標頭中的存放區ID不正確會導致嚴重的�
 description: 套用ACSD-62979修補程式來修正Adobe Commerce問題，該問題導致在GraphQL標頭中使用不正確的存放區ID發生嚴重的記憶體錯誤
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: 16875f95ab23559d4e1081b8cfe0374e1394d87d
+exl-id: 832baae1-34b4-4ca8-bfa9-221aa60da67e
+source-git-commit: 187a0056971e6bec324b5cc9d374375bbfb84dd8
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62979： GraphQL標頭中的存放區ID不正確會導致嚴重的記憶體錯誤
 
@@ -19,11 +19,11 @@ ACSD-62979修補程式修正在GraphQL標頭中使用不正確的存放區ID會�
 
 **已為Adobe Commerce版本建立修補程式：**
 
-* Adobe Commerce （所有部署方法） 2.4.6-p7、2.4.6
+* Adobe Commerce （所有部署方法） 2.4.6、2.4.6-p7、2.4.7-p3
 
 **與Adobe Commerce版本相容：**
 
-* Adobe Commerce （所有部署方法） 2.4.4 - 2.4.6-p8
+* Adobe Commerce （所有部署方法） 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ ACSD-62979修補程式修正在GraphQL標頭中使用不正確的存放區ID會�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
@@ -93,4 +93,3 @@ ACSD-62979修補程式修正在GraphQL標頭中使用不正確的存放區ID會�
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
-
