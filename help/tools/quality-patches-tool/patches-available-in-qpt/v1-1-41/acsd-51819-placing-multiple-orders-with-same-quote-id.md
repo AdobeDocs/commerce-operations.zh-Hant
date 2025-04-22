@@ -4,9 +4,9 @@ description: 套用ACSD-51819修補程式，修正Adobe Commerce中可透過相�
 feature: Orders, Checkout
 role: Admin, Developer
 exl-id: dbca8790-d947-4104-bba9-b29abcfc0344
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 5f22591c499f0f5d349994195731c7c87512f5f0
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ACSD-51819修補程式修正了可透過相同報價識別碼下多份訂單的�
 
 **已為Adobe Commerce版本建立修補程式：**
 
-* Adobe Commerce （所有部署方法） 2.4.4-p2
+* Adobe Commerce （所有部署方法） 2.4.4-p2、2.4.5-p5、2.4.6、2.4.6-p4、2.4.7-p1
 
 **與Adobe Commerce版本相容：**
 
-* Adobe Commerce （所有部署方法） 2.4.4 - 2.4.4-p3
+* Adobe Commerce （所有部署方法） 2.4.4 - 2.4.4-p11， 2.4.5-p3 - 2.4.5-p10， 2.4.6 - 2.4.6-p8， 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ ACSD-51819修補程式修正了可透過相同報價識別碼下多份訂單的�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
