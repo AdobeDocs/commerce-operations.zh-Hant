@@ -2,9 +2,9 @@
 title: 內部部署安裝必備條件
 description: 深入瞭解Adobe Commerce內部部署安裝所需的軟體相依性。
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: db2256f5327897a4376a0d038ce697e8f93235af
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 安裝Adobe Commerce之前，您必須先執行下列動作：
 
-* 設定一或多個符合[系統需求](../system-requirements.md)的主機。
+* 設定一或多個符合&#x200B;*Commerce內部部署*&#x200B;標籤中所列[系統需求](../system-requirements.md)的主機。
 * 如果您設定一個以上具有負載平衡的Web節點，請在安裝應用程式&#x200B;_之前設定並測試系統_&#x200B;的該部分。
 * 請務必在安裝期間的各個時間點備份整個系統，以便在發生問題時將其回覆。
 
@@ -66,11 +66,11 @@ Server built:   Jul 23 2017 14:17:29
 
 ### PHP
 
-請參閱[系統需求](../system-requirements.md)，以取得支援的PHP版本和[PHP](../system-requirements.md#php-settings)，以瞭解PHP需求。
+請參閱[系統需求](../system-requirements.md)中的&#x200B;*Commerce內部部署*&#x200B;索引標籤，瞭解支援的PHP版本和[PHP](../system-requirements.md#php-settings)的PHP需求。
 
 ### MySQL
 
-檢查您是否有相容的MySQL版本，適用於您正在安裝的Adobe Commerce版本。 如需支援的版本，請參閱[系統需求](../system-requirements.md)。
+檢查您是否有相容的MySQL版本，適用於您正在安裝的Adobe Commerce版本。 如需支援的版本，請參閱[系統需求](../system-requirements.md)中的&#x200B;*Commerce內部部署*&#x200B;索引標籤。
 
 ```bash
 mysql -u <database root user or database owner name> -p
