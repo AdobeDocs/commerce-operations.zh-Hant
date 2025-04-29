@@ -2,9 +2,9 @@
 title: Adobe Commerce 2.4.7安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.7版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
+source-git-commit: 331a76e8389b1779dda402f506ddb9b76bea95b9
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,23 @@ ht-degree: 0%
 
 ## 2.4.7 - p5
 
-Adobe Systems Commerce 2.4.7-p5 安全版本為先前版本 2.4.7 中發現的漏洞提供了安全錯誤修復。
+Adobe Commerce 2.4.7-p5安全性版本針對2.4.7舊版中發現的漏洞提供安全性錯誤修正。
 
-有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告 APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)。
 
 {{b2b-patches}}
 
 ### 反白顯示
 
 此發行版本引入對Adobe Commerce [HIPAA就緒擴充功能](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)的支援。
+
+### 已知問題
+
+**問題**：安裝PHP 8.2或更新版本的2.4.7-p5時，系統會安裝2.4.8或更新版本的`paypal/module-braintree` 4.7.0版。 對於PHP 8.1，使用正確的Braintree版本4.6.1-p5。 這個不符是由於Metapackage中對`adobe-commerce/extensions-metapackage: ~2.0`的鬆散相依性所造成。 這會影響PHP 8.2+部署的相容性和支援的功能集。<!-- ACPLTSRV-6276) -->
+
+此外，針對2.4.7-p3、2.4.7-p4和2.4.7-p5版，可能會安裝Braintree擴充功能4.6.1-p5版，而部分使用者則預期4.6.1-p3或p4版，因為先前較嚴格的相依性已放鬆，而允許在發行版本線內進行擴充功能升級。<!-- AC-14430 -->
+
+**因應措施**：若要確保您的PHP版本有正確的Braintree版本，請執行`composer update`安裝由`adobe-commerce/extensions-metapackage:2.0.0`相依性指定的適當版本。
 
 ## 2.4.7 - p4
 
@@ -41,7 +49,7 @@ Adobe Commerce 2.4.7-p4安全性版本針對2.4.7舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.7-p3安全性版本針對2.4.7舊版中發現的漏洞提供安全性錯誤修正。
 
-有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)。
 
 {{b2b-patches}}
 
@@ -49,7 +57,7 @@ Adobe Commerce 2.4.7-p3安全性版本針對2.4.7舊版中發現的漏洞提供�
 
 {{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
 
-### 此版本中包含的修補程式
+### 此版本中包含的Hotfix
 
 {{$include /help/_includes/release-notes/hotfixes/included-2024-10.md}}
 
@@ -71,15 +79,15 @@ Adobe Commerce 2.4.7-p2安全性版本針對2.4.7舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.7-p1安全性版本針對2.4.7舊版中發現的弱點提供安全性錯誤修正。
 
-有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)。
 
-### CVE-2024-34102 的套用修補程式
+### 套用CVE-2024-34102的Hotfix
 
 {{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
 ### 反白顯示
 
-此版本包括以下亮點：
+此版本包含下列重點專案：
 
 * **更新Google Authenticator的[一次性密碼(OTP)設定](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google)** — 需要此更新來解決2.4.7中[回溯不相容變更](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value)所導致的錯誤。**[!UICONTROL OTP Window]**&#x200B;欄位的描述現在提供設定的正確說明，預設值已從`1`變更為`29`。
 
