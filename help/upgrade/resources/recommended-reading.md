@@ -2,7 +2,7 @@
 title: 建議的升級讀取
 description: 查看計畫 Adobe Commerce 升級的建議閱讀。
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 9542084e6ed1a4ebbbb33373d9c7bc9b463b9d5d
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
         <p>瞭解Adobe Commerce的最新發展，包括產品策略、安全性、錯誤修正和已知問題。</p>
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe部落格</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe支援中心</a></li>
             <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Adobe安全性公告</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">發行說明</a></li>
@@ -32,7 +32,7 @@ ht-degree: 4%
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">升級相容性工具PhpStorm外掛程式</a> （影片）</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">升級相容性工具</a></li>
-            <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool立Slack頻道</a></li>
+            <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool立Slack管道</a></li>
             <li><a href="../../tools/quality-patches-tool/usage.md">品質修補工具</a></li>
           </ul>
       </td>
@@ -55,20 +55,20 @@ ht-degree: 4%
             <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
             <li><a href="https://marketplace.magento.com/magento-live-search.html">即時搜尋</a></li>
             <li><a href="https://marketplace.magento.com/magento-payment-services.html">付款服務</a></li>
-            <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">產品Recommendations</a></li>
+            <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">產品推薦</a></li>
           </ul>
       </td>
     </tr>
     <tr>
       <td><strong>升級資源</strong>
-        <p>確保店面安全且有效率地運作。 檢閱Adobe豐富的技術檔案，為您的Adobe Commerce升級做好準備。</p>
+        <p>確保店面安全且有效率地運作。 檢閱Adobe Commerce豐富的技術檔案，為您的Adobe升級做好準備。</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">建議的升級路徑</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4技術升級工作坊錄製</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">存取搶鮮版</a></li>
             <li><a href="../../release/beta.md">Beta版本總覽</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">回溯不相容的開發</a></li>
-            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/">與舊版不相容的變更</a></li>
+            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">與舊版不相容的變更</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">升級計畫檢查清單</a></li>
             <li><a href="../prepare/best-practices.md">升級最佳實務</a></li>
             <li><a href="../../release/product-availability.md">軟體可用性</a></li>

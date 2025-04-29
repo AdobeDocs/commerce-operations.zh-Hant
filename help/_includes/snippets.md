@@ -1,5 +1,5 @@
 ---
-source-git-commit: ab3401c2629b550655c7b2a382b998ce2c8ac6f0
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->所有MagentoCLI命令都必須由[檔案系統擁有者](/help/configuration/cli/config-cli.md#prerequisites)執行。
+>所有Magento CLI命令都必須由[檔案系統擁有者](/help/configuration/cli/config-cli.md#prerequisites)執行。
 
 ## 備份命令 {#tip-backup-command}
 
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce版本可能包含與舊版不相容的變更(BIC)。 若要檢閱回溯不相容的變更，請參閱[BIC參考](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)。 在[BIC重點專案](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)中說明嚴重的回溯不相容問題。 並非所有發行版本都會推出主要BIC。
+>Adobe Commerce版本可能包含與舊版不相容的變更(BIC)。 若要檢閱回溯不相容的變更，請參閱[BIC參考](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)。 在[BIC重點專案](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)中說明嚴重的回溯不相容問題。 並非所有發行版本都會推出主要BIC。
 
 ## Beta免責宣告 {#beta}
 
 >[!IMPORTANT]
 >
->Beta發行版本可能包含瑕疵，並依「現況」提供，並無任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援(來自Adobe支援服務或任何其他服務)測試版。 客戶應謹慎使用，切勿依賴測試版和/或任何隨附檔案或資料的正確運作或效能。 因此，使用測試版完全由客戶自行承擔風險。
+>Beta發行版本可能包含瑕疵，並依「現況」提供，並無任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援(來自Adobe支援服務或任何其他服務)Beta版。 客戶應謹慎使用，切勿依賴測試版和/或任何隨附檔案或資料的正確運作或效能。 因此，使用測試版完全由客戶自行承擔風險。
 
 ## CVE通知 {#cve-notice}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->雖然這些發行說明中所述的增強功能和錯誤修正程式碼與Adobe Commerce捆綁在一起，但其中幾個專案(例如B2B、頁面產生器和Progressive Web Application(PWA) Studio)也獨立發行。 這些專案的錯誤修正記錄在每個專案檔案中提供的個別專案特定發行資訊中。 請參閱[產品版本總覽](/help/release/release-notes/overview.md)。
+>雖然這些發行說明中所述的增強功能和錯誤修正程式碼與Adobe Commerce捆綁在一起，但其中幾個專案(例如B2B、頁面產生器和Progressive Web Applications (PWA) Studio)也獨立發行。 這些專案的錯誤修正記錄在每個專案檔案中提供的個別專案特定發行資訊中。 請參閱[產品版本總覽](/help/release/release-notes/overview.md)。
 
 ## PHP程式控制 {#php-process-control}
 
