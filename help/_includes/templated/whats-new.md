@@ -1,7 +1,7 @@
 ---
-source-git-commit: 736e2b53cc6df0083fc02c7e6e88da1e7ca00b0d
+source-git-commit: a2c060d3bbc0b22034cd4deea382412426376fef
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 2%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2025年4月29日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>在<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5發行說明</a>中新增有關Braintree的已知問題。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e195b58c7ae5573373f644c583eb12633703591">0e195b</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025年4月22日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已更新ACSD-54966修補程式</a>中的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders">受影響的產品和版本區段</p>
+</td>
+      <td>
+        Qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aa47a83f4ec38aa6ff96008cbab2733602465435">aa47a8</a> （認可）</td>
+    </tr>
+    <tr>
+      <td><p>已更新ACSD-62979修補程式</a>中的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">受影響的產品和版本區段</p>
+</td>
+      <td>
+        Qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4f16e57e339fd9ef7de1e0da30eaec7b7bb38396">4f16e5</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025年4月18日
 
