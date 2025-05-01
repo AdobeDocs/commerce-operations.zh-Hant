@@ -1,7 +1,7 @@
 ---
-source-git-commit: a2c060d3bbc0b22034cd4deea382412426376fef
+source-git-commit: d755cea4bef9328a5e9ebb6d610922c70d8e4288
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '938'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 2%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2025年5月1日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> 2.4.8中的已修正問題，改善發行說明格式。 (<a href="https://github.com/hostep">@hostep</a>的積分)</p>
+</td>
+      <td>
+        技術
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35df05be16d3da775b9cead47d2895b63d575892">35df05</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025年4月30日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>修正<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a>發行說明中的文字轉譯。 (<a href="https://github.com/hostep">@hostep</a>的積分)</p>
+</td>
+      <td>
+        技術
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ce23f97dfa62e9b9b57b6db62a7d0c97d3faf7a6">ce23f9</a> （認可）</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025年4月29日
 
