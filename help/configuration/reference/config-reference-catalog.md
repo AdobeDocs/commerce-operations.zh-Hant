@@ -3,9 +3,9 @@ title: 目錄設定路徑參考
 description: 檢視目錄設定值的清單。
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
+source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ ht-degree: 0%
 | 啟用搜尋建議 | `catalog/search/search_suggestion_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 搜尋建議計數 | `catalog/search/search_suggestion_count` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 顯示每個建議的結果計數 | `catalog/search/search_suggestion_count_results_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
-| 啟用搜尋Recommendations | `catalog/search/search_recommendations_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
-| 搜尋Recommendations計數 | `catalog/search/search_recommendations_count` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 啟用搜尋建議 | `catalog/search/search_recommendations_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
+| 搜尋建議計數 | `catalog/search/search_recommendations_count` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 顯示每個建議的結果計數 | `catalog/search/search_recommendations_count_results_enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 要比對的最少字詞 | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 產生「類別/產品」URL重寫 | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -150,6 +150,8 @@ ht-degree: 0%
 {style="table-layout:auto"}
 
 ## Visual Merchandiser路徑
+
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"}
 
 這些設定值可在&#x200B;**存放區** >設定> **設定** > **目錄** > **Visual Merchandiser**&#x200B;的管理員中使用。
 
