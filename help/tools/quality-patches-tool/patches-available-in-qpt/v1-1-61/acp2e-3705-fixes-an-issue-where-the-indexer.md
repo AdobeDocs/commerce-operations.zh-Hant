@@ -31,7 +31,7 @@ ACP2E-3705 修補程式修復了 時 cron 執行失敗`MAGE_INDEXER_THREADS_COUN
 
 >[!NOTE]
 >
->此修補程式可能適用於具有新版本 [!DNL Quality Patches Tool] 的其他版本。 要檢查修補程式是否與您的 Adobe Systems Commerce 版本相容，請將軟體包更新 `magento/quality-patches` 到最新版本，並在 ： [[!DNL Quality Patches Tool]Search 上檢查修補程序頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)的相容性。 使用修補程序 ID 作為查找修補程序的搜尋關鍵字。
+>此修補程式可能適用於具有新版本 [!DNL Quality Patches Tool] 的其他版本。 要檢查修補程式是否與您的 Adobe Systems Commerce 版本相容，請將軟體包更新 `magento/quality-patches` 到最新版本，並在 ： [[!DNL Quality Patches Tool]Search 上檢查修補程序頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)的相容性。 使用修補程序 ID 作為查找修補程序的搜尋關鍵字。
 
 ## 問題
 

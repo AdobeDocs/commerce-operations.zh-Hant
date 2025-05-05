@@ -25,4 +25,4 @@ ht-degree: 4%
    - [進階設定](advanced-setup.md)
    - [進階 [!DNL JavaScript] 組合](advanced-js-bundling.md)
    - [GraphQL應用程式伺服器](application-server.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)

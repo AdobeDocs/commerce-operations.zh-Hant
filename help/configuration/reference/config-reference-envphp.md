@@ -146,7 +146,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-在&#x200B;_Commerce使用手冊_&#x200B;中進一步瞭解[加密金鑰](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)。
+在&#x200B;_Commerce使用手冊_&#x200B;中進一步瞭解[加密金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/encryption-key)。
 
 ## db
 
@@ -203,7 +203,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-深入瞭解[可下載的網域](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
+深入瞭解[可下載的網域](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
 
 ## 安裝
 

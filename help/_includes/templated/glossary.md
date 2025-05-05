@@ -54,7 +54,7 @@ _名詞_
 在Adobe Commerce中，管理員使用者擁有「管理員」中所有功能、選項和功能的完整許可權和存取權。
 他們也可以建立使用者和角色。
 
-深入瞭解： [新增使用者](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
+深入瞭解： [新增使用者](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=zh-Hant)
 
 _字詞屬性：_
 
@@ -70,7 +70,7 @@ _名詞_
 使用者可存取管理區域來管理商店，包括產品、訂單、出貨、CMS內容、商店設計、客戶資訊等。
 管理員使用者擁有相關角色，其許可權可控制對功能、選項和功能的存取權。
 
-深入瞭解： [Adobe Commerce使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+深入瞭解： [Adobe Commerce使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=zh-Hant)
 
 _字詞屬性：_
 
@@ -84,7 +84,7 @@ _名詞_
 
 管理員變數是專案環境變數，可覆寫管理員使用者帳戶的組態設定以存取管理員UI。
 
-深入瞭解： [管理員變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
+深入瞭解： [管理員變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=zh-Hant)
 
 _字詞屬性：_
 
@@ -96,7 +96,7 @@ _名詞_
 
 指派給管理員的內部區域名稱。
 
-深入瞭解： [Adobe Commerce使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+深入瞭解： [Adobe Commerce使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=zh-Hant)
 
 _字詞屬性：_
 
@@ -190,7 +190,7 @@ _名詞_
 貨幣符號會出現在產品價格和銷售檔案中，例如訂單和發票。
 您可以視需要自訂貨幣符號，並為每個商店或檢視分別設定價格的顯示。
 
-深入瞭解： [貨幣](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
+深入瞭解： [貨幣](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html?lang=zh-Hant)
 
 _字詞屬性：_
 
@@ -212,13 +212,13 @@ _字詞屬性：_
 _名詞_
 
 一種頁面輸出單位，可呈現一些獨特內容（一段資訊、使用者介面元素），任何對一般使用者來說視覺上可見的內容。
-[個區塊](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html)是由模組實作及提供。
+[個區塊](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=zh-Hant)是由模組實作及提供。
 區塊使用範本來產生HTML。
 區塊的範例包括類別清單、迷你購物車、產品標籤和產品清單。
 
-[動態區塊](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html)會根據邏輯提供內容，例如價格規則。
+[動態區塊](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html?lang=zh-Hant)會根據邏輯提供內容，例如價格規則。
 
-Page Builder會展開互動式並建立[區塊](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html)和[動態區塊](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html)。
+Page Builder會展開互動式並建立[區塊](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html?lang=zh-Hant)和[動態區塊](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html?lang=zh-Hant)。
 
 _字詞屬性：_
 
@@ -248,7 +248,7 @@ _形容詞_
 
 擁有永久實體地點的零售企業，而非僅透過網際網路運作的企業。
 
-對於[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html)和[Order Management](#oms)，此商店是追蹤產品數量、送貨訂單及支援店內取貨的來源。
+對於[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html?lang=zh-Hant)和[Order Management](#oms)，此商店是追蹤產品數量、送貨訂單及支援店內取貨的來源。
 
 _字詞屬性：_
 
@@ -274,7 +274,7 @@ _名詞_
 可讓客戶利用各種選項和設定，組合「打造專屬的」可自訂產品。
 套件組合中的每個專案都是個別的簡單或虛擬產品。
 
-深入瞭解： [可設定的產品](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
+深入瞭解： [可設定的產品](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=zh-Hant)
 
 _字詞屬性：_
 
@@ -448,7 +448,7 @@ _名詞_
 
 雲端變數是雲端基礎結構上Adobe Commerce專屬的環境變數，並使用&#x200B;**`MAGENTO_CLOUD`**&#x200B;前置詞。
 
-深入瞭解： [雲端變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
+深入瞭解： [雲端變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=zh-Hant)
 
 _字詞屬性：_
 
@@ -458,7 +458,7 @@ _字詞屬性：_
 
 _名詞_
 
-[區塊](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html)的特殊變體，只能在Admin中建立，無法透過配置檔案參考。
+[區塊](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=zh-Hant)的特殊變體，只能在Admin中建立，無法透過配置檔案參考。
 
 _字詞屬性：_
 
@@ -619,7 +619,7 @@ _名詞_
 
 部署金鑰是您的專案SSH公開金鑰，可讓您以唯讀或讀寫（如果已啟用）方式存取Git存放庫。
 
-深入瞭解： [安全連線](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
+深入瞭解： [安全連線](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=zh-Hant)
 
 _字詞屬性：_
 
@@ -688,7 +688,7 @@ _名詞_
 
 一組指令碼和工具，用來管理和部署Commerce應用程式。 此套件簡化了雲端基礎結構流程上的許多Adobe Commerce，包括部署到Docker環境、管理cron、驗證專案配置和套用Adobe修補程式。
 
-深入瞭解： [ece-tools套件](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
+深入瞭解： [ece-tools套件](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html?lang=zh-Hant)
 
 _字詞屬性：_
 
@@ -967,7 +967,7 @@ _名詞_
 MAGEID通常是Adobe Commerce帳戶的計費聯絡人(可能不是雲端基礎結構專案的Adobe Commerce專案所有者)。
 若要取得雲端基礎結構套件上Adobe Commerce和Adobe Commerce的存取許可權，您必須使用與已獲得這些套件存取許可權的MAGEID相關聯的存取金鑰。
 
-深入瞭解： [取得您的驗證金鑰](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
+深入瞭解： [取得您的驗證金鑰](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=zh-Hant)
 
 _字詞屬性：_
 
@@ -978,7 +978,7 @@ _字詞屬性：_
 _名詞_
 
 在行銷和零售中，為決定零售價而新增至專案成本的百分比。
-[透過產品可自訂選項來設定產品的標籤](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html)或Markdown。
+[透過產品可自訂選項來設定產品的標籤](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=zh-Hant)或Markdown。
 
 在開發中，控制文書處理、簡報及格式化的電腦語言。
 此外，標籤標籤是可將功能或內容新增至CMS頁面或區塊的程式碼片段。
@@ -1076,7 +1076,7 @@ _名詞_
 
 來源遮罩是一項安全性功能，可讓雲端基礎結構上的Adobe Commerce封鎖任何非Fastly流量，以防止DDoS攻擊，進而連線至雲端基礎結構（來源）。
 
-深入瞭解： [Fastly來源遮罩](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
+深入瞭解： [Fastly來源遮罩](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=zh-Hant)
 
 _字詞屬性：_
 
@@ -1094,7 +1094,7 @@ Page Builder是Commerce的擴充功能，可拖放預先建立的控制項以定
 商家不需要編碼體驗即可設計版面和頁面。
 為開發人員提供擴充功能支援，以擴充頁面產生器。
 
-深入瞭解： [頁面產生器使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)，[頁面產生器DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+深入瞭解： [頁面產生器使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=zh-Hant)，[頁面產生器DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
 _字詞屬性：_
 
@@ -1406,7 +1406,7 @@ UI元件系統的目標包括下列專案：
 * 使用AJAX更新元件資料
 * 介紹用於建立上述專案的新DSL
 
-深入瞭解： [UI元件指南](https://developer.adobe.com/commerce/frontend-core/ui-components/)，[頁面產生器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
+深入瞭解： [UI元件指南](https://developer.adobe.com/commerce/frontend-core/ui-components/)，[頁面產生器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=zh-Hant)
 
 _字詞屬性：_
 
@@ -1445,7 +1445,7 @@ _名詞_
 VBE經過徹底測試，並包含在每個支援的Adobe Commerce版本中。
 VBE可包含模組、主題和語言套件。
 
-深入瞭解[廠商套件擴充功能主題](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html)。
+深入瞭解[廠商套件擴充功能主題](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=zh-Hant)。
 
 _字詞屬性：_
 
@@ -1511,7 +1511,7 @@ _字詞屬性：_
 
 _名詞_
 
-[Widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html)是已準備好的程式碼片段，可用來將區塊、連結及動態內容放在商店頁面上的特定位置。
+[Widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html?lang=zh-Hant)是已準備好的程式碼片段，可用來將區塊、連結及動態內容放在商店頁面上的特定位置。
 您可以使用Widget建立行銷活動的登陸頁面，並在整個商店的特定位置顯示促銷內容。
 Widget也可用來為外部稽核系統、視訊聊天、投票和訂閱表單新增互動元素和動作區塊，或為標籤雲和影像滑桿提供導覽元素。
 

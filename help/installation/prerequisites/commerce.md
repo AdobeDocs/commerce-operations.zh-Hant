@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 如何取得軟體
 
-檢查令人興奮的新功能和發行版本的可用性，並瞭解如何在我們的[產品可用性頁面](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)上取得這些功能和版本。
+檢查令人興奮的新功能和發行版本的可用性，並瞭解如何在我們的[產品可用性頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)上取得這些功能和版本。
 
 請參閱下表，瞭解如何開始安裝Adobe Commerce。
 

@@ -21,7 +21,7 @@ Commerce資料追蹤服務可儲存適用於隱私權法規的私人資訊，例
 
 >[!NOTE]
 >
->如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，Commerce會在購物者同意前不會收集行為資料。 如果&#x200B;[!UICONTROL **Cookie限制模式**]&#x200B;已停用，Commerce會依預設收集行為資料。
+>如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hant)，Commerce會在購物者同意前不會收集行為資料。 如果&#x200B;[!UICONTROL **Cookie限制模式**]&#x200B;已停用，Commerce會依預設收集行為資料。
 
 ## 安裝
 

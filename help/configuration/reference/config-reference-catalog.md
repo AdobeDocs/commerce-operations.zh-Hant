@@ -151,7 +151,7 @@ ht-degree: 0%
 
 ## Visual Merchandiser路徑
 
-僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"}
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"}
 
 這些設定值可在&#x200B;**存放區** >設定> **設定** > **目錄** > **Visual Merchandiser**&#x200B;的管理員中使用。
 

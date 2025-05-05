@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Adobe Systems Commerce 2.4.4-p13 安全版本為以前版本的 2.4.4 中發現的漏洞提供了安全錯誤修復。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-26](https://helpx.adobe.com/tw/security/products/magento/apsb25-26.html)。
 
 {{b2b-patches}}
 
@@ -26,7 +26,7 @@ Adobe Systems Commerce 2.4.4-p13 安全版本為以前版本的 2.4.4 中發現�
 
 Adobe Commerce 2.4.4-p12安全性版本針對2.4.4舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-08](https://helpx.adobe.com/tw/security/products/magento/apsb25-08.html)。
 
 {{b2b-patches}}
 
@@ -38,7 +38,7 @@ Adobe Commerce 2.4.4-p12安全性版本針對2.4.4舊版中發現的漏洞提供
 
 Adobe Commerce 2.4.4-p11安全性版本針對2.4.4舊版中發現的漏洞提供安全性錯誤修正。
 
-有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告 APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)。
+有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告 APSB24-73](https://helpx.adobe.com/tw/security/products/magento/apsb24-73.html)。
 
 {{b2b-patches}}
 
@@ -50,7 +50,7 @@ Adobe Commerce 2.4.4-p11安全性版本針對2.4.4舊版中發現的漏洞提供
 
 Adobe Systems Commerce 2.4.4-p10 安全版本為以前版本的 2.4.4 中識別的漏洞提供了安全錯誤修復。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-61](https://helpx.adobe.com/tw/security/products/magento/apsb24-61.html)。
 
 ### 反白顯示
 
@@ -64,7 +64,7 @@ Adobe Systems Commerce 2.4.4-p10 安全版本為以前版本的 2.4.4 中識別�
 
 Adobe Systems Commerce 2.4.4-p9 安全版本為先前版本 2.4.4 中已識別的漏洞提供了安全錯誤修復。
 
-有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告 APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)。
+有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告 APSB24-40](https://helpx.adobe.com/tw/security/products/magento/apsb24-40.html)。
 
 ### CVE-2024-34102 的套用修補程式
 
@@ -82,13 +82,13 @@ Adobe Systems Commerce 2.4.4-p9 安全版本為先前版本 2.4.4 中已識別�
 
 Adobe Commerce 2.4.4-p8安全性版本為Adobe Commerce 2.4.4部署提供安全性錯誤修正。 這些更新會修正先前版本中發現的漏洞。
 
-有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告 APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html)。
+有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告 APSB24-18](https://helpx.adobe.com/tw/security/products/magento/apsb24-18.html)。
 
 ## 2.4.4-p7
 
 Adobe Systems Commerce 2.4.4-p7 安全版本為以前版本中已識別的漏洞提供了安全錯誤修復。 此版本還包括安全增強功能，可提高對最新安全最佳做法的合規性。
 
-有關安全漏洞修復的最新資訊，請參閱 [Adobe Systems安全公告 APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html)。
+有關安全漏洞修復的最新資訊，請參閱 [Adobe Systems安全公告 APSB24-03](https://helpx.adobe.com/tw/security/products/magento/apsb24-03.html)。
 
 ### 突出
 
@@ -105,7 +105,7 @@ Adobe Systems Commerce 2.4.4-p7 安全版本為以前版本中已識別的漏洞
 
 Adobe Commerce 2.4.4-p6安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-50](https://helpx.adobe.com/tw/security/products/magento/apsb23-50.html)。
 
 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
@@ -128,21 +128,21 @@ Adobe Commerce 2.4.4-p6安全性版本針對先前版本中發現的漏洞提供
 
 Adobe Commerce 2.4.4-p5安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-42](https://helpx.adobe.com/tw/security/products/magento/apsb23-42.html)。
 
 ### 套用CVE-2022-31160的Hotfix
 
-`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html)知識庫文章所指定的修補程式。
+`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html?lang=zh-Hant)知識庫文章所指定的修補程式。
 
 ## 2.4.4 - p4
 
 Adobe Commerce 2.4.4-p4安全性版本針對先前版本中發現的弱點提供安全性錯誤修正。 此版本還包括安全增強功能和平台升級，以提高對最新安全最佳實踐的合規性。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-35](https://helpx.adobe.com/tw/security/products/magento/apsb23-35.html)。
 
 ### 套用CVE-2022-31160的Hotfix
 
-`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html)知識庫文章所指定的修補程式。
+`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html?lang=zh-Hant)知識庫文章所指定的修補程式。
 
 ### 反白顯示
 
@@ -162,13 +162,13 @@ Adobe Commerce 2.4.4-p4安全性版本針對先前版本中發現的弱點提供
 
 Adobe Commerce 2.4.4-p3安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。
 
-有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告 APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html)。
+有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告 APSB23-17](https://helpx.adobe.com/tw/security/products/magento/apsb23-17.html)。
 
 ## 2.4.4-p2
 
 Adobe Systems Commerce 2.4.4-p2 安全版本提供了對以前版本中已識別的漏洞的修復。 一個修復包括創建新的配置設置。 “ **如果電子郵件已更改** ，則要求電子郵件確認”配置設置允許管理員在管理員用戶更改其電子郵件位址時要求電子郵件確認。 <!-- AC-6292-->
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB22-48](https://helpx.adobe.com/tw/security/products/magento/apsb22-48.html)。
 
 ### 套用AC-3022.patch以繼續提供DHL作為運送業者
 
@@ -178,7 +178,7 @@ DHL已匯入schema 6.2版，並將在不久的未來淘汰schema 6.0版。 支�
 
 Adobe Systems Commerce 2.4.4-p1 安全版本為以前版本中已識別的漏洞提供了修補程式。 此版本還包括安全增強功能，以提高對最新安全最佳做法的符合性。
 
-有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告](https://helpx.adobe.com/security/products/magento/apsb22-38.html)。
+有關安全 bug 修補程式的最新資訊，請參閱 [Adobe Systems安全公告](https://helpx.adobe.com/tw/security/products/magento/apsb22-38.html)。
 
 ### `AC-3022.patch`套用繼續提供DHL作為承運商
 

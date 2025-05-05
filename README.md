@@ -15,13 +15,13 @@ ht-degree: 3%
 
 ## 關於您對Adobe內容的貢獻
 
-請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
 
 貢獻方式取決於您的身分和您要貢獻的變更型別：
 
 ### 微幅變更
 
-如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
 
 Adobe使用條款涵蓋您在本存放庫為檔案和程式碼範例提交的小幅更正或釐清。
 
@@ -43,7 +43,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 社群投稿人可以使用GitHub UI進行基本編輯或建立存放庫復本，以做出重大貢獻。
 
-如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
 
 ## 如何使用Markdown將主題格式化
 
@@ -62,8 +62,8 @@ If you submit a pull request with significant changes to documentation and code 
 樣板化內容的範例包括但不限於：
 
 * [CLI工具參考](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-* [產品可用性表格](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
-* [系統需求表](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+* [產品可用性表格](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=zh-Hant)
+* [系統需求表](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)
 
 ### 產生樣板化內容
 
@@ -85,8 +85,8 @@ If you submit a pull request with significant changes to documentation and code 
 
 1. 在文字編輯器中，開啟`/jekyll/_data`目錄中的資料檔案。 例如：
 
-   * [產品可用性表格](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)： `/jekyll/_data/product-availability.yml`
-   * [系統需求表格](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)： `/jekyll/_data/system-requirements.yml`
+   * [產品可用性表格](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=zh-Hant)： `/jekyll/_data/product-availability.yml`
+   * [系統需求表格](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)： `/jekyll/_data/system-requirements.yml`
 
 1. 使用現有的YAML結構來建立專案。
 

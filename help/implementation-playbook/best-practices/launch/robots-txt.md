@@ -35,7 +35,7 @@ This article provides best practices for using `robots.txt` and `sitemap.xml` fi
 
 Follow these best practices when configuring the `robots.txt` and `sitemap.xml` files for single-site storefronts:
 
-- Make sure that your project is using [`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) version 2002.0.12 or later.
+- Make sure that your project is using [`ece-tools`](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) version 2002.0.12 or later.
 - Use the Admin application to add content to the `robots.txt` file.
 
   >[!TIP]
@@ -64,12 +64,12 @@ Follow these best practices when configuring the `robots.txt` and `sitemap.xml` 
 
 >[!INFO]
 >
->如需詳細指示，請參閱[新增網站地圖和搜尋引擎自動機制](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap)。
+>如需詳細指示，請參閱[新增網站地圖和搜尋引擎自動機制](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap)。
 
 
 ### Multi-site storefronts
 
-您可以在雲端基礎結構上透過單一實施Adobe Commerce來設定和執行數個存放區。 請參閱[設定多個網站或商店](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)。
+您可以在雲端基礎結構上透過單一實施Adobe Commerce來設定和執行數個存放區。 請參閱[設定多個網站或商店](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)。
 
 The same best practices for configuring the `robots.txt` and `sitemap.xml` files for [single-site storefronts](#single-site-storefronts) applies to multi-site storefronts with two important differences:
 
@@ -93,7 +93,7 @@ The same best practices for configuring the `robots.txt` and `sitemap.xml` files
 
 ## Adobe Commerce內部部署
 
-使用管理應用程式來設定`robots.txt`和`sitemap.xml`檔案，以防止機器人掃描和索引不必要的內容（請參閱[搜尋引擎機器人](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)）。
+使用管理應用程式來設定`robots.txt`和`sitemap.xml`檔案，以防止機器人掃描和索引不必要的內容（請參閱[搜尋引擎機器人](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=zh-Hant#search-engine-robots)）。
 
 >[!TIP]
 >
@@ -103,15 +103,15 @@ The same best practices for configuring the `robots.txt` and `sitemap.xml` files
 
 Do not expose your Admin path in your `robots.txt` file. Having the Admin path exposed is a vulnerability for site hacking and potential loss of data. Remove the Admin path from the `robots.txt` file.
 
-For steps to edit the `robots.txt` file and remove all entries of the Admin path, see [Marketing User Guide > SEO and Search > Search Engine Robots](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
+For steps to edit the `robots.txt` file and remove all entries of the Admin path, see [Marketing User Guide > SEO and Search > Search Engine Robots](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=zh-Hant#search-engine-robots).
 
 >[!TIP]
 >
->If you need help, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+>If you need help, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket).
 
 ## 其他資訊
 
-- [Understanding websites, stores, and store views](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Adding websites](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Use Fastly to block malicious traffic for your Adobe Commerce sites](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
-- [robots.txt gives a 404 error in Adobe Commerce on cloud infrastructure 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)
+- [Understanding websites, stores, and store views](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Adding websites](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Use Fastly to block malicious traffic for your Adobe Commerce sites](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+- [robots.txt gives a 404 error in Adobe Commerce on cloud infrastructure 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html?lang=zh-Hant)

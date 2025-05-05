@@ -57,7 +57,7 @@ ht-degree: 0%
 
 隨著我們不斷擴展 Adobe Systems Commerce 的功能，您關鍵在最新的可用版本上進行開發並在專案計劃中定義升級策略。 如此一來，您就能夠確保安全、符合法規，並掌握最新的增強功能，讓您能更快速地增加銷售量、更有效地營運，並在現在和未來保持競爭優勢。
 
-為了協助您規劃並編列升級預算，您應該監視我們的[發行排程](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)。 提前在團隊的待辦專案中規劃升級任務。 目標是使用GA完成這項工作。
+為了協助您規劃並編列升級預算，您應該監視我們的[發行排程](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)。 提前在團隊的待辦專案中規劃升級任務。 目標是使用GA完成這項工作。
 
 - 使用搶鮮版來瞭解每個新版本。 搶鮮版是「一般可用性」程式碼，可供Adobe Commerce商家和所有合作夥伴在正式可用性兩週前使用。 如果您有多個商店，請使用基礎商店中的發行前，並確認您的自訂模組和主題與其相容。
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 評估升級所需完成的工作：
 
-- 請檢閱[發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)以瞭解新版本的範圍與影響。
+- 請檢閱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)以瞭解新版本的範圍與影響。
 
 - 使用[[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md)來識別在嘗試升級至較新版本之前，必須在自訂程式碼中修正的潛在問題。
 

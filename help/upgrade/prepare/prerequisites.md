@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->對於雲端基礎結構專業專案上的Adobe Commerce，您必須建立[支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)票證，才能在中繼和生產環境中安裝或更新服務。 指示所需的服務變更，並將更新的`.magento.app.yaml`和`services.yaml`檔案及PHP版本加入票證中。 雲端基礎結構團隊更新您的專案最多可能需要48小時的時間。 請參閱[支援的軟體與服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services)。
+>對於雲端基礎結構專業專案上的Adobe Commerce，您必須建立[支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)票證，才能在中繼和生產環境中安裝或更新服務。 指示所需的服務變更，並將更新的`.magento.app.yaml`和`services.yaml`檔案及PHP版本加入票證中。 雲端基礎結構團隊更新您的專案最多可能需要48小時的時間。 請參閱[支援的軟體與服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=zh-Hant#supported-software-and-services)。
 
 ## 確認已安裝支援的搜尋引擎
 

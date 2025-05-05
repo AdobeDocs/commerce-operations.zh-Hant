@@ -231,11 +231,11 @@ Catalog Search:                                    Update on Save
 >
 >請務必以`realtime`設定[!DNL Customer Grid]，而非`schedule`。 只能使用[!UICONTROL Update on Save]選項來重新索引[!DNL Customer Grid]。 此索引不支援`Update by Schedule`選項。 使用以下命令列，設定此索引器在儲存時更新： `php bin/magento indexer:set-mode realtime customer_grid`
 >
->請參閱&#x200B;_實作行動手冊_&#x200B;中的[索引子組態的最佳實務](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)。
+>請參閱&#x200B;_實作行動手冊_&#x200B;中的[索引子組態的最佳實務](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=zh-Hant)。
 
 >[!INFO]
 >
->在切換索引器模式之前，請將您的網站設定為[維護](../../installation/tutorials/maintenance-mode.md)模式和[停用cron工作](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs)。 這可確保您不會遭受資料庫鎖定的困擾。
+>在切換索引器模式之前，請將您的網站設定為[維護](../../installation/tutorials/maintenance-mode.md)模式和[停用cron工作](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=zh-Hant#disable-cron-jobs)。 這可確保您不會遭受資料庫鎖定的困擾。
 
 若要指定索引器組態：
 

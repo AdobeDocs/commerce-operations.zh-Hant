@@ -316,7 +316,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 [翻譯概觀]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [翻譯字典]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[設定轉換]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
+[設定轉換]: https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-localize
 [進一步瞭解語言套件]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

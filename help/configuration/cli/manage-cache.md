@@ -20,7 +20,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >
->Commerce網站管理員可以使用「快取管理系統」工具從Admin管理快取。 請參閱&#x200B;_系統管理系統指南_&#x200B;中的[快取管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)。
+>Commerce網站管理員可以使用「快取管理系統」工具從Admin管理快取。 請參閱&#x200B;_系統管理系統指南_&#x200B;中的[快取管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management)。
 
 
 ## 檢視快取狀態
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->如需Adobe Commerce支援之預設快取型別的詳細說明，請參閱&#x200B;_系統管理系統指南_&#x200B;中的[快取](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches)。
+>如需Adobe Commerce支援之預設快取型別的詳細說明，請參閱&#x200B;_系統管理系統指南_&#x200B;中的[快取](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management#caches)。
 
 
 ## 啟用或停用快取型別

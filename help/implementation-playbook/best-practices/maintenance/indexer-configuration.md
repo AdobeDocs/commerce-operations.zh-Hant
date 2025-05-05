@@ -35,7 +35,7 @@ Adobe Systems商務具有兩種類型的索引器模式： [!UICONTROL Update on
 為了最大程度地網站績效，追隨以下索引最佳實務：
 
 - 查看索引配置。
-- 將索引器設置為 用於 _[!UICONTROL Update on Schedule]_&#x200B;大型網站以及更新頻繁且流量量大的網站。 請參閱 [Index管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)。
+- 將索引器設置為 用於 _[!UICONTROL Update on Schedule]_&#x200B;大型網站以及更新頻繁且流量量大的網站。 請參閱 [Index管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)。
 - 遵循 [管理索引的性能最佳做法](../../../performance/configuration.md) 。
 
 >[!IMPORTANT]
@@ -45,5 +45,5 @@ Adobe Systems商務具有兩種類型的索引器模式： [!UICONTROL Update on
 ## 其他資訊
 
 - [管理員使用者的Index管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [使用MagentoCLI的索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [使用MagentoCLI的索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=zh-Hant)
 - [面向開發人員的索引概述](https://developer.adobe.com/commerce/php/development/components/indexing/)

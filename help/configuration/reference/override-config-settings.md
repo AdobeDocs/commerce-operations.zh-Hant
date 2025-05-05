@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->檢視&#x200B;_雲端基礎結構上的Commerce_&#x200B;中的[設定環境](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html)主題。
+>檢視&#x200B;_雲端基礎結構上的Commerce_&#x200B;中的[設定環境](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=zh-Hant)主題。
 
 ## 環境變數
 
@@ -62,8 +62,8 @@ ht-degree: 0%
   如需有關範圍的詳細資訊，請參閱：
 
    - [步驟1：尋找網站或商店檢視範圍值](#step-1-find-the-website-or-store-view-scope-value)
-   - [有關領域的Commerce使用手冊主題](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [範圍快速參考](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [有關領域的Commerce使用手冊主題](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [範圍快速參考](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` 是配置路徑，其中有兩次 個下劃線字元代替 `/`。 有關詳細資訊，請參閱 [步驟 2：設置系統變數](#step-2-set-global-website-or-store-view-variables)。
 
@@ -253,6 +253,6 @@ $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '123
 >
 >- 若要使用您在`$_ENV`陣列中設定的值，您必須在`php.ini`檔案中設定`variables_order = "EGPCS"`（環境、Get、Post、Cookie和伺服器）。 如需詳細資訊，請參閱[PHP檔案](https://www.php.net/manual/en/ini.core.php)。
 >
->- 針對雲端基礎結構上的Adobe Commerce，如果您嘗試使用[Project Web介面](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)覆寫組態設定，您必須在變數名稱前面加上`env:`。 例如：
+>- 針對雲端基礎結構上的Adobe Commerce，如果您嘗試使用[Project Web介面](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=zh-Hant#configure-the-project)覆寫組態設定，您必須在變數名稱前面加上`env:`。 例如：
 >
 >![環境變數範例](../../assets/configuration/cloud-console-envvariable.png)

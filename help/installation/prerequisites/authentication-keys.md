@@ -17,10 +17,10 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您遇到[錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)，您可能沒有存取封裝的授權，或者存取許可權已過期，因為您的帳戶有未結清的發票。
+>如果您遇到[錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=zh-Hant)，您可能沒有存取封裝的授權，或者存取許可權已過期，因為您的帳戶有未結清的發票。
 >
 >* 如果您是帳戶上的主要聯絡人，請確定帳戶上未列出未結商業發票。
->* 如果主要連絡人提供的金鑰無法運作，且帳戶中沒有未結清的發票，則主要連絡人應聯絡[Adobe Commerce支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)以尋求協助。
+>* 如果主要連絡人提供的金鑰無法運作，且帳戶中沒有未結清的發票，則主要連絡人應聯絡[Adobe Commerce支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)以尋求協助。
 
 若要建立驗證金鑰：
 

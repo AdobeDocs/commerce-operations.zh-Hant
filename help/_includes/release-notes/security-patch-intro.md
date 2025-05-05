@@ -18,4 +18,4 @@ ht-degree: 0%
 深入瞭解安全性修補程式發行版本：
 
 * [Adobe Commerce安全性修補程式發行概述](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* [升級指南](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)提供下載及套用安全性修補程式發行版本的指示
+* [升級指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)提供下載及套用安全性修補程式發行版本的指示

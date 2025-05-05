@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ## [!DNL Commerce Services Connector]
 
-代理要求 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) 在系統上安裝擴展並使用 [API 金鑰進行配置](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) 。 若要驗證是否已安裝擴展，請執行以下命令：
+代理要求 [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=zh-Hant) 在系統上安裝擴展並使用 [API 金鑰進行配置](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=zh-Hant) 。 若要驗證是否已安裝擴展，請執行以下命令：
 
 ```bash
 bin/magento module:status Magento_ServicesId
@@ -92,13 +92,13 @@ bin/magento module:status Magento_ServicesId
 
    >[!NOTE]
    >
-   > 如果您在訪問帳戶時遇到問題，請参閱 [無法登錄 Adobe Systems Commerce 支持或雲端帳戶](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) 以獲取故障排除説明。
+   > 如果您在訪問帳戶時遇到問題，請参閱 [無法登錄 Adobe Systems Commerce 支持或雲端帳戶](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html?lang=zh-Hant) 以獲取故障排除説明。
 
 1. 按兩下 **[!UICONTROL API Portal]**。
 
 1. 按兩下 **[!UICONTROL Delete]** 現有 API 金鑰旁邊的按鈕。
 
-1. [設定](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) 新的 API 金鑰。
+1. [設定](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=zh-Hant) 新的 API 金鑰。
 
 >[!IMPORTANT]
 >
@@ -130,7 +130,7 @@ bin/magento module:status Magento_ServicesId
    bin/magento cache:clean
    ```
 
-1. [配置 API 金鑰](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) 以將擴展連接到系統。
+1. [配置 API 金鑰](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=zh-Hant) 以將擴展連接到系統。
 
 ## 安裝代理
 
@@ -404,7 +404,7 @@ FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.a
 1. [執行文稿安裝](#scripted)，保存輸出，並查看輸出是否存在錯誤。
 1. 檢查生成的 `config.yaml` 文件，並驗證 Commerce 執行個體 和 PHP 的路徑是否正確。
 1. 確保運行排程器的用戶位於文件系統擁有者[&#128279;](../../installation/prerequisites/file-system/overview.md) Unix 群組 中，或者與文件系統擁有者用戶相同。
-1. 確保 [正確安裝了商務服務連接器](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) 密鑰，並嘗試更新它們以將擴展連接到系統。
+1. 確保 [正確安裝了商務服務連接器](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=zh-Hant) 密鑰，並嘗試更新它們以將擴展連接到系統。
 1. [更新金鑰后卸載](#uninstall)代理，然後使用安裝腳本[&#128279;](#scripted)重新安裝。
 1. 運行排程器，看看是否仍然收到相同的錯誤。
 1. 如果仍然收到相同的錯誤，請提高 to `config.yaml` 偵錯 中的日誌級別並打開支援票證。

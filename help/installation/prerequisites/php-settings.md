@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >最新版Adobe Commerce至少需要PHP 8.1。如需所有支援的PHP版本，請參閱[系統需求](../system-requirements.md)。
 
-如需雲端組態指南，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html)。
+如需雲端組態指南，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=zh-Hant)。
 
 ## PHP程式控制
 

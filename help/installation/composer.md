@@ -93,7 +93,7 @@ Adobe使用[撰寫器](https://getcomposer.org/)來管理Adobe Commerce元件及
 
    >[!NOTE]
    >
-   > 如果您使用以Commerce驗證金鑰設定的Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`檔案或環境變數，則系統不會提示您輸入驗證金鑰。
+   > 如果您使用以Commerce驗證金鑰設定的Composer `[auth.json](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`檔案或環境變數，則系統不會提示您輸入驗證金鑰。
 
    如果您遇到錯誤（例如`Could not find package...`或`...no matching package found`），請確定您的命令中沒有拼寫錯誤。 如果您仍然遇到錯誤，您可能無權下載Adobe Commerce。 請連絡[Adobe Commerce支援](https://support.magento.com/hc/en-us)尋求協助。
 

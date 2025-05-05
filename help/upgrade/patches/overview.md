@@ -43,7 +43,7 @@ Hotfix是包含高影響力安全性或品質修正（會影響到許多商家�
 
 個別修補程式包含特定問題的低影響品質修正。 這些修正會套用至最近支援的次要版本（例如2.4.x），但可能從先前支援的次要版本（例如2.3.x）中遺失。 Adobe會視需要發行個別修補程式。
 
-使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}套用個別修補程式。
+使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}套用個別修補程式。
 
 >[!NOTE]
 >
@@ -90,10 +90,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 您可以使用下列任一方法來套用修補程式：
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
 - [命令列](/help/upgrade/patches/apply.md#command-line)
 - [作曲者](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->若要將修補程式套用至雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端上的Commerce指南_&#x200B;中的[套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
+>若要將修補程式套用至雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端上的Commerce指南_&#x200B;中的[套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。

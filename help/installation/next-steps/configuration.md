@@ -65,7 +65,7 @@ UNIX `logrotate`公用程式可讓您管理產生大量記錄檔的系統。 它
 >
 >* 入門環境沒有記錄輪換。
 >
->* 您無法在Pro整合環境中設定記錄輪換。 您必須實作自訂解決方案/指令碼，並[設定您的cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)以視需要執行指令碼。
+>* 您無法在Pro整合環境中設定記錄輪換。 您必須實作自訂解決方案/指令碼，並[設定您的cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)以視需要執行指令碼。
 
 ### 設定iptables規則以啟用各種服務通訊
 

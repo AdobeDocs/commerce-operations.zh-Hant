@@ -31,4 +31,4 @@ ht-degree: 1%
 ## 其他資訊
 
 - [私人內容](../../../performance/configuration.md#client-side-optimization-settings)
-- [高輸送量AJAX要求造成效能不佳](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [高輸送量AJAX要求造成效能不佳](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=zh-Hant)

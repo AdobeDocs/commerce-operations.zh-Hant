@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## 管理會話大小
 
-[請參閱使用者指南&#x200B;_中的_&#x200B;會話管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management)。
+[請參閱使用者指南&#x200B;_中的_&#x200B;會話管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security-session-management)。
 
 ## 垃圾集合配置
 

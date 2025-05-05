@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->對於雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端指南_&#x200B;中的[快照和備份管理](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)。
+>對於雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端指南_&#x200B;中的[快照和備份管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)。
 
 ## 啟用備份
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
   在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
 
-  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html)。
+  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=zh-Hant)。
 
 - 您在一個虛擬主機檔案中接受多個網域，或每個網站使用一個虛擬主機；虛擬主機組態檔位於`/etc/nginx/sites-available`。
 - 您僅使用本教學課程中討論的修改內容，再使用Commerce提供的`nginx.conf.sample`。
@@ -280,7 +280,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- 在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
->- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個雲端網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html)。
+>- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個雲端網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=zh-Hant)。
 
 ### 疑難排解
 

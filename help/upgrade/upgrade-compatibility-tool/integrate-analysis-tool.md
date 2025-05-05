@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool]現在已與[!DNL Site-Wide Analysis Tool]整合，以便讓非技術人員能夠執行[!DNL Upgrade Compatibility Tool]並取得包含每個檔案的問題清單的[報告](../upgrade-compatibility-tool/reports.md)。
 
-如需詳細資訊，請參閱[[!DNL Site-Wide Analysis Tool] 使用手冊](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)。
+如需詳細資訊，請參閱[[!DNL Site-Wide Analysis Tool] 使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/site-wide-analysis-tool/access)。
 
 ## 從[!DNL Site-Wide Analysis Tool]執行[!DNL Upgrade Compatibility Tool]
 

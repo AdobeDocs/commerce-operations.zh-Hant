@@ -19,7 +19,7 @@ ht-degree: 0%
 
   在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
 
-  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html)。
+  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=zh-Hant)。
 
 - 您對每個網站使用一個虛擬主機；虛擬主機設定檔為`/etc/httpd/httpd.conf`
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 >[!INFO]
 >
 >- 在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
->- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個雲端網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html)。
+>- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個雲端網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=zh-Hant)。
 
 ### 疑難排解
 

@@ -38,7 +38,7 @@ Adobe Systems Commerce on 雲端基礎結構
 如果您的Adobe Commerce專案部署在Pro架構上，您可以使用Percona Toolkit來分析查詢。
 
 1. 對MySQL慢速查詢記錄檔執行`pt-query-digest --type=slowlog`命令。
-   * 要查找慢速查詢日誌的位置，請參閱 **[!UICONTROL Log locations > Service Logs]**&#x200B;開發人員文檔中的 （https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs）。
+   * 要查找慢速查詢日誌的位置，請參閱 **[!UICONTROL Log locations > Service Logs]**&#x200B;開發人員文檔中的 （https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs）。
    * [請參閱 Percona 工具包 > pt-查詢-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) 文檔。
 1. 根據發現的問題，採取措施修復查詢，使其運行得更快。
 

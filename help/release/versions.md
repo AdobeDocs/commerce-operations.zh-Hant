@@ -17,7 +17,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe建議您安裝或升級Adobe Commerce，以使用每個版本適用的最新安全性修補程式。
->如需其他安全性更新，請參閱[Magento / Adobe Commerce的安全性更新](https://helpx.adobe.com/security/products/magento.html)。
+>如需其他安全性更新，請參閱[Magento / Adobe Commerce的安全性更新](https://helpx.adobe.com/tw/security/products/magento.html)。
 >如需定價，請參閱[Adobe Commerce定價](https://business.adobe.com/products/magento/pricing.html)。
 
 {{$include /help/_includes/templated/release/core-releases.md}}

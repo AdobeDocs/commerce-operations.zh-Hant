@@ -30,13 +30,13 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-如需雲端基礎結構上的環境設定，請參閱雲端基礎結構上的&#x200B;_Commerce指南_&#x200B;中的[`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)。
+如需雲端基礎結構上的環境設定，請參閱雲端基礎結構上的&#x200B;_Commerce指南_&#x200B;中的[`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#redis_backend)。
 
 若為內部部署安裝，請參閱&#x200B;_設定指南_&#x200B;中的[設定Redis頁面快取](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)。
 
 >[!NOTE]
 >
->確認您使用的是最新版本的`ece-tools`封裝。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
+>確認您使用的是最新版本的`ece-tools`封裝。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=zh-Hant)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
 
 
 ### L2快取記憶體大小調整(Adobe Commerce Cloud)
@@ -91,13 +91,13 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-請參閱雲端基礎結構指南&#x200B;_上的_ Commerce中的[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)。
+請參閱雲端基礎結構指南&#x200B;_上的_ Commerce中的[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#redis_use_slave_connection)。
 
 針對Adobe Commerce內部部署安裝，請使用`bin/magento:setup`命令設定新的Redis快取實作。 請參閱&#x200B;_組態指南_&#x200B;中的[使用預設快取](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)的Redis。
 
 >[!WARNING]
 >
->請&#x200B;_不_&#x200B;為雲端基礎結構專案設定Redis從屬連線（使用[縮放/分割架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)）。 這會導致Redis連線錯誤。 請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[Redis設定指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)。
+>請&#x200B;_不_&#x200B;為雲端基礎結構專案設定Redis從屬連線（使用[縮放/分割架構](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html?lang=zh-Hant)）。 這會導致Redis連線錯誤。 請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[Redis設定指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#redis_use_slave_connection)。
 
 ## 預先載入索引鍵
 
@@ -159,7 +159,7 @@ stage:
 
 >[!NOTE]
 >
->在上一個範例中，`full_page`快取與雲端基礎結構專案上的Adobe Commerce無關，因為它們使用[Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)。
+>在上一個範例中，`full_page`快取與雲端基礎結構專案上的Adobe Commerce無關，因為它們使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/fastly)。
 
 若要設定內部部署安裝，請參閱&#x200B;_設定指南_&#x200B;中的[過時快取選項](../../../configuration/cache/level-two-cache.md#stale-cache-options)。
 
@@ -200,7 +200,7 @@ stage:
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. 提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)，以請求布建專用於生產和中繼環境工作階段的新Redis執行個體。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。 這不會造成任何停機時間，但需要部署才能啟用新服務。
+1. 提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)，以請求布建專用於生產和中繼環境工作階段的新Redis執行個體。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。 這不會造成任何停機時間，但需要部署才能啟用新服務。
 
 1. 確認新執行個體正在執行，並記下連線埠號碼。
 
@@ -237,7 +237,7 @@ stage:
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-部署期間，您應該會在[建置和部署記錄檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs)中看到下列行：
+部署期間，您應該會在[建置和部署記錄檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=zh-Hant#build-and-deploy-logs)中看到下列行：
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)

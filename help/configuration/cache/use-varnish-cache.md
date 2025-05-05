@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 設定Commerce以清除清漆
 
-使用[`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset)命令設定Varnish主機後，Commerce會清除清漆主機。
+使用[`magento setup:config:set`](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset)命令設定Varnish主機後，Commerce會清除清漆主機。
 
 您可以使用選用的引數`--http-cache-hosts`引數，指定以逗號分隔的Varnish主機和監聽連線埠清單。 設定所有Varnish主機，無論您有一台或多台。 （請勿以空格字元分隔主機。）
 

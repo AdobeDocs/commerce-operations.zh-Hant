@@ -68,4 +68,4 @@ ht-degree: 15%
       - [升級檢查清單](best-practices/maintenance/upgrade-checklist.md)
       - [升級MariaDB的必要條件](best-practices/maintenance/mariadb-upgrade.md)
 - [字彙表](glossary.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
