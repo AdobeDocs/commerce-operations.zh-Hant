@@ -95,7 +95,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 >[!INFO]
 >
->**[!UICONTROL Developer]**&#x200B;索引標籤和選項只能在[開發人員模式](../configuration/cli/set-mode.md)中使用。 雲端基礎結構](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)上的[Adobe [!DNL Commerce] 不支援`Developer`模式。
+>**[!UICONTROL Developer]**&#x200B;索引標籤和選項只能在[開發人員模式](../configuration/cli/set-mode.md)中使用。 雲端基礎結構[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)上的Adobe [!DNL Commerce] 不支援`Developer`模式。
 
 當您啟用&#x200B;**[!UICONTROL Enable [!DNL JavaScript] Bundling]**&#x200B;選項時，可允許Commerce將所有JS資源合併為一個或一組載入店面頁面的組合。 整合JS可減少伺服器要求，進而改善頁面效能。 它還有助於瀏覽器在第一次呼叫時快取JS資源，並在所有進一步的瀏覽中重複使用。 此選項也會帶來延遲評估，因為所有JS都會載入為文字。 它只會在頁面上觸發特定動作後，才會起始程式碼分析和評估。 不過，不建議將此設定用於第一個頁面載入時間極為重要的存放區，因為所有JS內容都將在第一次呼叫時載入。
 
@@ -134,7 +134,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 若要改善大型目錄的產品格線效能，建議使用&#x200B;**[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] >[!UICONTROL Limit Number of Products in Grid]**&#x200B;系統組態設定來限制格線中的產品數量。
 
 此系統組態設定預設為停用。 一旦啟用，您就可以將格線中的產品數量限製為特定值。 **[!UICONTROL Records Limit]**&#x200B;是可自訂的設定，預設最小值為`20000`。
-當啟用**[!UICONTROL Limit Number of Products in Grid]**&#x200B;設定且網格中的產品數目大於記錄限制時，則會傳回有限的記錄集合。 當達到限制時，找到的記錄總數、選取的記錄數以及分頁元素將從網格標頭中隱藏。
+當啟用&#x200B;**[!UICONTROL Limit Number of Products in Grid]**&#x200B;設定且網格中的產品數目大於記錄限制時，則會傳回有限的記錄集合。 當達到限制時，找到的記錄總數、選取的記錄數以及分頁元素將從網格標頭中隱藏。
 
 當格線中的產品總數有限時，它不會影響產品格線大量動作。 它只會影響產品格線表示層。 例如，格線中的`20000`產品數目有限，使用者按一下&#x200B;**[!UICONTROL Select All]**，選取&#x200B;**[!UICONTROL Update attributes]**&#x200B;大量動作，並更新部分屬性。 因此，所有產品都會更新，而不是有限的`20000`記錄集合。
 

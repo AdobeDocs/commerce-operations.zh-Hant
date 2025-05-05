@@ -46,16 +46,16 @@ Adobe Commerce （所有部署方法） 2.4.2-p1 - 2.4.2-p2
 1. 在「**相關產品**」下方，新增兩個旅行袋（識別碼7和13）。
 1. 傳送&#x200B;**Post**&#x200B;要求：
 
-<pre>{
-  products(filter： {sku： {eq： "24-MB01"}}， sort： {name： ASC}) {
-    專案{
-      related_products {
+<pre>&lbrace;
+  products(filter： {sku： {eq： "24-MB01"}}， sort： {name： ASC}) &lbrace;
+    專案&lbrace;
+      related_products &lbrace;
         uid
         名稱
-      }
-    }
-  }
-}</pre>
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 <u>預期結果</u>：
 
@@ -65,7 +65,7 @@ Adobe Commerce （所有部署方法） 2.4.2-p1 - 2.4.2-p2
 
 使用者收到以下錯誤：
 
-<pre>Magento\CatalogPermissionsGraphQl\Model\Store\StoreProcessor：：getStoreId()的傳回值必須是int型別，null傳回{"exception"："[object] (GraphQL\\Error\\Error(code： 0)：Magento\\CatalogPermissionsGraphQl\\Model\\Store\\StoreProcessor：：getStoreId()的傳回值必須是int型別，傳回null </pre>
+<pre>Magento\CatalogPermissionsGraphQl\Model\Store\StoreProcessor：：getStoreId()的傳回值必須是int型別，null傳回&lbrace;"exception"："[object] (GraphQL\\Error\\Error(code： 0)：Magento\\CatalogPermissionsGraphQl\\Model\\Store\\StoreProcessor：：getStoreId()的傳回值必須是int型別，傳回null </pre>
 
 ## 套用修補程式
 

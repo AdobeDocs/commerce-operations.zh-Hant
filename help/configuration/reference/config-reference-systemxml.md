@@ -248,7 +248,7 @@ ht-degree: 0%
 | `select` | 一般下拉式清單，可能需要自訂`source_model`。 也用於`Yes/No`選擇。 如需範例，請參閱`Magento\Search\Model\Adminhtml\System\Config\Source\Engine`。 |
 | `multiselect` | 類似`select`，但多個選項有效。 |
 | `button` | 觸發立即事件的按鈕。 需要自訂前端模型來定義按鈕文字和動作。 如需範例，請參閱`Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean`。 |
-| `obscure` | 已加密且顯示為`****`值的文字欄位。 在瀏覽器中使用「Inspect元素」變更型別不會顯示值。 |
+| `obscure` | 已加密且顯示為`**&#x200B;**`值的文字欄位。 在瀏覽器中使用「Inspect元素」變更型別不會顯示值。 |
 | `password` | 類似`obscure`，但隱藏值並未加密，在瀏覽器中使用「Inspect Element」強制變更型別時，不會顯示值。 |
 | `file` | 允許上傳檔案以供處理。 |
 | `label` | 顯示標籤而非可編輯的欄位。 當欄位只能在特定範圍上編輯時（例如，只能在「存放區檢視」層級），請使用此型別。 |

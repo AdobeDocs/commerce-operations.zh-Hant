@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Commands per second by node]
 
-節點](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)每秒的![個命令
+節點![&#128279;](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)每秒的個命令
 
 **[!UICONTROL Commands per second by node]**&#x200B;影格會在選取的時間範圍內每秒依節點顯示[!DNL Redis]命令。
 

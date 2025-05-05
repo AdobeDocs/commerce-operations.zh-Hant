@@ -119,4 +119,4 @@ bin/magento remote-storage:sync
 
 1. 建立[AWS S3驗證](https://docs.fastly.com/en/guides/amazon-s3#using-an-amazon-s3-private-bucket)的VCL邏輯。
 
-1. 為AWS S3儲存貯體](https://developer.fastly.com/reference/vcl/variables/backend-connection/req-backend/)的[後端請求建立VCL邏輯。
+1. 為AWS S3儲存貯體[&#128279;](https://developer.fastly.com/reference/vcl/variables/backend-connection/req-backend/)的後端請求建立VCL邏輯。

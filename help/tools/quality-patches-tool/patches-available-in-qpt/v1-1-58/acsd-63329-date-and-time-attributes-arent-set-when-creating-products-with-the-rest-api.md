@@ -35,7 +35,7 @@ ACSD-63329修補程式修正使用REST API建立新產品時，未設定日期�
 
 <u>要再現的步驟</u>：
 
-1. 建立&#x200B;**[!UICONTROL Product]**&#x200B;屬性，將其預設值設為`12/31/2020`，並將&#x200B;**[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;設為&#x200B;***[!UICONTROL Date]***&#x200B;或***[!UICONTROL Date and Time]***。
+1. 建立&#x200B;**[!UICONTROL Product]**&#x200B;屬性，將其預設值設為`12/31/2020`，並將&#x200B;**[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;設為&#x200B;***[!UICONTROL Date]***&#x200B;或&#x200B;***[!UICONTROL Date and Time]***。
 1. 建立另一個文字型別屬性，並將預設值設定為&#x200B;***測試值***。
 1. 使用`/rest/all/V1/products/`的REST APIPOST要求建立新產品。
 

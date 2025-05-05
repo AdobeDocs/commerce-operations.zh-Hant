@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Alerts]
 
-[!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts]頁面會顯示商戶的Adobe Commerce Managed Alerts修補程式。 Adobe提供[!DNL Managed Alerts]功能，可讓您使用業界最佳實務來追蹤績效量度。 參考我們[!DNL support knowledge base]中Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce)文章的[受管理警示。
+[!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts]頁面會顯示商戶的Adobe Commerce Managed Alerts修補程式。 Adobe提供[!DNL Managed Alerts]功能，可讓您使用業界最佳實務來追蹤績效量度。 參考我們[!DNL support knowledge base]中Adobe Commerce[&#128279;](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce)文章的受管理警示。
 
 ## 使用時機
 

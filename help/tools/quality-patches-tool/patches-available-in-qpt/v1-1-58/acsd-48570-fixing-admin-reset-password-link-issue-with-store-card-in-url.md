@@ -30,7 +30,7 @@ ACSD-48570修正程式，修正啟用&#x200B;*[!UICONTROL Add Store Code to URLs
 
 ## 問題
 
-啟用&#x200B;**[!UICONTROL Add Store Code to URLs]**設定時，管理員重設密碼功能無法正常運作。
+啟用&#x200B;**[!UICONTROL Add Store Code to URLs]**&#x200B;設定時，管理員重設密碼功能無法正常運作。
 在管理員使用者請求重設密碼並按一下電子郵件中的復原連結後，他們被重新導向到登入頁面或收到404錯誤，而不是被帶往重設密碼表單。 如此可防止管理員無需手動介入即可復原帳戶。
 
 <u>要再現的步驟</u>：

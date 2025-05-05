@@ -15,7 +15,7 @@ ht-degree: 1%
 
 當私人內容區塊包含`_isScopePrivate`變數時，該區塊將無法快取。 由於未快取私人區塊，因此Adobe Commerce必須針對每個會增加伺服器負載的客戶請求擷取相同的資料。
 
-不要將`_isScopePrivate`變數用於私人內容，請建立區塊和範本以顯示與使用者無關的資料。 此資料會由Adobe Commerce UI元件取代為使用者特定資料，此元件可更有效率地處理預先呈現資料。 如需指示，請參閱&#x200B;_[!DNL Commerce PHP Extensions Guide]_中的[私人內容](https://developer.adobe.com/commerce/php/development/cache/page/private-content/)。
+不要將`_isScopePrivate`變數用於私人內容，請建立區塊和範本以顯示與使用者無關的資料。 此資料會由Adobe Commerce UI元件取代為使用者特定資料，此元件可更有效率地處理預先呈現資料。 如需指示，請參閱&#x200B;_[!DNL Commerce PHP Extensions Guide]_&#x200B;中的[私人內容](https://developer.adobe.com/commerce/php/development/cache/page/private-content/)。
 
 ## 受影響的產品和版本
 

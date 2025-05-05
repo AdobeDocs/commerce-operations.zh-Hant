@@ -47,7 +47,7 @@ ht-degree: 0%
 
 開始採用 Adobe Systems Commerce 擴充性平臺（如果尚未這樣做）。 該平台允許您高效地自定義流程、集成系統和部署新功能，同時保持 SaaS-按讚 的可升級性。 其功能包括：
 
-- **UI**&#x200B;可擴充性。 使用 PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 獨立於[後端和中間件擴展和發展您的店面。
+- **UI**&#x200B;可擴充性。 使用 PWA Studio[&#128279;](https://developer.adobe.com/commerce/pwa-studio/) 獨立於後端和中間件擴展和發展您的店面。
 
 - **API擴充性**。 使用[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html)來擴充網頁API層，方法是演化圖形資料模型並直接從圖形層執行Lambda函式。
 

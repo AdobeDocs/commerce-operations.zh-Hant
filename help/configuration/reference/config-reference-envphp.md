@@ -72,7 +72,7 @@ ht-degree: 0%
 ]
 ```
 
-在 Redis 配置](../cache/redis-pg-cache.md)中[瞭解更多資訊。
+在 Redis 配置[&#128279;](../cache/redis-pg-cache.md)中瞭解更多資訊。
 
 ## cache_types
 
@@ -185,7 +185,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 
 ## 目錄
 
-當 Web 伺服器設定為從目錄提供 `/pub` Commerce 應用以提高安全性](../../installation/tutorials/docroot.md)時，需要[設置的可選目錄映射選項。
+當 Web 伺服器設定為從目錄提供 `/pub` Commerce 應用以提高安全性[&#128279;](../../installation/tutorials/docroot.md)時，需要設置的可選目錄映射選項。
 
 ```conf
 'directories' => [
@@ -278,7 +278,7 @@ x-frame-options 標頭可使用此節點進行設定。
 'x-frame-options' => 'SAMEORIGIN'
 ```
 
-了解有關 x-frame-options](../security/xframe-options.md) 的更多資訊[。
+了解有關 x-frame-options[&#128279;](../security/xframe-options.md) 的更多資訊。
 
 ## 系統
 

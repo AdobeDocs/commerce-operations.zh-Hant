@@ -179,7 +179,7 @@ ht-degree: 0%
 ## v1.1.53 {#v1-1-53}
 
 * **ACSD-48318** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正不允許環境模擬巢狀的問題。 現在，一旦模擬在呼叫期間`getInfoBlockHtml()`停止，模擬就會在呼叫期間`send()`開始。
-* **ACSD-59930** （用於Adobe Systems商務>=2.4.6 &lt;2.4.8) - Improves performance of the company&#39;s **[!UICONTROL Create]**&#x200B;和&#x200B;**[!UICONTROL Save]****[!UICONTROL Delete]**&#x200B;流量。
+* **ACSD-59930** （用於Adobe Systems商務>=2.4.6 &lt;2.4.8) - Improves performance of the company&#39;s **[!UICONTROL Create]**&#x200B;和&#x200B;**[!UICONTROL Save]**&#x200B;**[!UICONTROL Delete]**&#x200B;流量。
 * **ACSD-60584** （用於Adobe Systems商業和Magento Open Source>=2.4.5 &lt;2.4.7) - Fixes the issue where an access token created for the user on one website is allowed to access or change customer information on other websites.
 * **ACSD-60804** (適用於Adobe Commerce >=2.4.4 &lt;2.4.8) — 修正編輯連結至已刪除公司的客戶會在null *上造成錯誤*&#x200B;呼叫成員函式`getSuperUserId()`的問題。
 * **ACSD-61133** (Adobe Commerce >=2.4.4-p5 &lt;2.4.5) || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.8) — 修正`sales_clean_quotes` [!DNL cron]從未核准的採購單中刪除報價的問題。

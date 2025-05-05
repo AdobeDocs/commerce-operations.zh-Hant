@@ -403,9 +403,9 @@ FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.a
 
 1. [執行文稿安裝](#scripted)，保存輸出，並查看輸出是否存在錯誤。
 1. 檢查生成的 `config.yaml` 文件，並驗證 Commerce 執行個體 和 PHP 的路徑是否正確。
-1. 確保運行排程器的用戶位於文件系統擁有者](../../installation/prerequisites/file-system/overview.md) Unix 群組 中[，或者與文件系統擁有者用戶相同。
+1. 確保運行排程器的用戶位於文件系統擁有者[&#128279;](../../installation/prerequisites/file-system/overview.md) Unix 群組 中，或者與文件系統擁有者用戶相同。
 1. 確保 [正確安裝了商務服務連接器](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) 密鑰，並嘗試更新它們以將擴展連接到系統。
-1. [更新金鑰后卸載](#uninstall)代理，然後使用安裝腳本](#scripted)重新安裝[。
+1. [更新金鑰后卸載](#uninstall)代理，然後使用安裝腳本[&#128279;](#scripted)重新安裝。
 1. 運行排程器，看看是否仍然收到相同的錯誤。
 1. 如果仍然收到相同的錯誤，請提高 to `config.yaml` 偵錯 中的日誌級別並打開支援票證。
 

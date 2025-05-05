@@ -196,7 +196,7 @@ ht-degree: 0%
 
 | 說明 | 管理中的路徑（省略&#x200B;**存放區** > **設定** > **設定**） | 變數名稱 |
 |--------------|--------------|----------------------|
-| Elasticsearch伺服器主機名稱 | 目錄>****&#x200B;目錄，**Elasticsearch伺服器主機名** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
+| Elasticsearch伺服器主機名稱 | 目錄>**&#x200B;**&#x200B;目錄，**Elasticsearch伺服器主機名** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
 | Elasticsearch伺服器連接埠 | 目錄> **目錄**，**Elasticsearch伺服器連線埠** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT` |
 | 出貨國家/地區 | 銷售> **送貨設定** | `<SCOPE>__SHIPPING__ORIGIN__COUNTRY_ID` |
 | 自訂管理員URL | 進階> **管理員** | `<SCOPE>__ADMIN__URL__CUSTOM` |
@@ -224,7 +224,7 @@ ht-degree: 0%
 
 1. 決定範圍。
 
-   如步驟1所述，在[資料庫](#find-a-website-or-store-view-scope-in-the-database)中尋找範圍：尋找網站或存放區檢視範圍值。 (您也可以在Admin中找到值，如步驟2：設定全域、網站或存放區檢視變數](#step-2-set-global-website-or-store-view-variables中的[表格中所示。
+   如步驟1所述，在[資料庫](#find-a-website-or-store-view-scope-in-the-database)中尋找範圍：尋找網站或存放區檢視範圍值。 (您也可以在Admin中找到值，如步驟2：設定全域、網站或存放區檢視變數&rbrack;(#step-2-set-global-website-or-store-view-variables中的&lbrack;表格中所示。
 
    例如，範圍可以是`CONFIG__WEBSITES__DEFAULT`。
 
@@ -247,7 +247,7 @@ $_ENV['CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME'] = 'http
 $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '1234';
 ```
 
-使用環境變數](../deployment/example-environment-variables.md)設定組態值[中顯示的逐步範例。
+使用環境變數[&#128279;](../deployment/example-environment-variables.md)設定組態值中顯示的逐步範例。
 
 >[!WARNING]
 >

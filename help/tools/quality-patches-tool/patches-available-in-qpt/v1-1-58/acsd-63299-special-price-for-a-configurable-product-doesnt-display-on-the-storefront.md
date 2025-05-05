@@ -36,7 +36,7 @@ ACSD-63299修補程式修正了特殊價格屬性不再影響可設定產品之�
 
 1. 前往&#x200B;**[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Products]**。
 1. 尋找&#x200B;***[!UICONTROL special_price]***&#x200B;屬性並導覽至&#x200B;**[!UICONTROL Storefront Properties]**。
-1. 將&#x200B;***[!UICONTROL Used in Product Listing]***&#x200B;變更為***[!UICONTROL No]***。
+1. 將&#x200B;***[!UICONTROL Used in Product Listing]***&#x200B;變更為&#x200B;***[!UICONTROL No]***。
 1. 建立一個可設定的產品以及一個子項：
    * 名稱和SKU：測試
    * 價格：$159.00

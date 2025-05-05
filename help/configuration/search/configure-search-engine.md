@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->在2.4.4和2.4.3-p2版中，所有標示為&#x200B;**Elasticsearch**的欄位也適用於OpenSearch。
+>在2.4.4和2.4.3-p2版中，所有標示為&#x200B;**Elasticsearch**&#x200B;的欄位也適用於OpenSearch。
 >2.4.6版開始支援Elasticsearch8.x時，建立了新標籤以區分Elasticsearch和OpenSearch設定。
 
 如需設定搜尋引擎的詳細資訊，請參閱[使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html)。

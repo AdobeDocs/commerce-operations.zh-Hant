@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # 最佳做法：內容建立工作流程
 
-本檔案說明在&#x200B;*Adobe Commerce實作行動手冊*&#x200B;中要求變更或新增&#x200B;*[最佳實務](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html*&#x200B;內容的使用者工作流程。
+本檔案說明在&#x200B;*Adobe Commerce實作行動手冊*&#x200B;中要求變更或新增&#x200B;*[最佳實務] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html*&#x200B;內容的使用者工作流程。
 
 ## 誰可以建立請求？
 

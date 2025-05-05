@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ## [!UICONTROL CPU % by host]
 
-主機](../../assets/tools/cpu-percent-by-host.jpg)的![CPU百分比
+主機![&#128279;](../../assets/tools/cpu-percent-by-host.jpg)的CPU百分比
 
 所有環境和節點的彙總會顯示在&#x200B;**[!UICONTROL CPU % by host]**&#x200B;框架中。 您應該取消選取非生產環境。 也請注意生產環境的所有節點都未出現的任何執行個體。 如需有關高CPU使用率的更多秘訣，請參閱[在Adobe Commerce上使用New Relic進行效能疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html)。
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## [!UICONTROL API Calls by IP]
 
-由ip](../../assets/tools/api-calls-by-ip.jpg)進行的![api呼叫
+由ip![&#128279;](../../assets/tools/api-calls-by-ip.jpg)進行的api呼叫
 
 **[!UICONTROL API Calls by IP]**&#x200B;框架可協助識別針對API和IP位址的大量流量，這些位址會從API URL發出請求。
 
@@ -310,7 +310,7 @@ PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/in
 
 ![php處理序](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/)是[!DNL Nginx]使用的[!UICONTROL FastCGI Process Manager]。 若要瞭解系統需求，請參閱對應至Adobe Commerce版本](../../installation/system-requirements.md)的[PHP版本需求。 **[!UICONTROL PHP processes]**&#x200B;框架顯示所選時間表中特定時間執行的PHP處理序數目。
+[PHP-FPM](https://php-fpm.org/)是[!DNL Nginx]使用的[!UICONTROL FastCGI Process Manager]。 若要瞭解系統需求，請參閱對應至Adobe Commerce版本[&#128279;](../../installation/system-requirements.md)的PHP版本需求。 **[!UICONTROL PHP processes]**&#x200B;框架顯示所選時間表中特定時間執行的PHP處理序數目。
 
 ## [!UICONTROL Secondary processes]
 
@@ -384,7 +384,7 @@ PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/in
 * &#39;%您可以修正此問題，方法是將Magento雲端基礎結構上的Elasticsearch服務升級為&#39;ver_err&#39;版本%&#39;
 * &#39;%cluster健全狀態已從\[YELLOW\]變更為\[RED\] (原因：%&#39;為&#39;yel_red&#39;
 * &#39;%裝置%&#39;上沒有剩餘的空間，因為&#39;no_space&#39;
-* &#39;%無法執行[SearchRequest{searchType=%&#39;，因為&#39;failed_query&#39;
+* &#39;%無法執行&lbrack;SearchRequest&lbrace;searchType=%&#39;，因為&#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

@@ -13,7 +13,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->下圖提供Adobe Commerce中&#x200B;_**內部部署**_&#x200B;安裝的高階概觀：
+>下圖提供Adobe Commerce中&#x200B;_&#x200B;**內部部署**&#x200B;_&#x200B;安裝的高階概觀：
 
 ![安裝的運作方式](../assets/installation/install-diagram-24.svg)
 

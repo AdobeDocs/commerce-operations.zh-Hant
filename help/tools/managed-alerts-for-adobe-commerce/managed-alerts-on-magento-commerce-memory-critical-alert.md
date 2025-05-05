@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 問題
 
-如果您已為Adobe Commerce](managed-alerts-for-magento-commerce.md)註冊了[個Managed警示，且超過一或多個警示臨界值，則您將在[!DNL New Relic]中收到一個Managed警示。 這些警報由Adobe開發，可讓客戶運用支援和工程部門的見解獲得標準集合。
+如果您已為Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)註冊了個Managed警示，且超過一或多個警示臨界值，則您將在[!DNL New Relic]中收到一個Managed警示。 這些警報由Adobe開發，可讓客戶運用支援和工程部門的見解獲得標準集合。
 
 <u> **做！** </u>
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 1. **[!DNL Redis]**：如果[!DNL Redis]是記憶體耗用的最上層來源，請[提交支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)。
 1. **PHP**：如果PHP是記憶體耗用的主要來源，請在CLI/終端機中執行`ps aufx`來複查執行中的處理序。 在終端機輸出中，您會看到目前執行的cron作業和程式。 檢查處理序執行時間的輸出。 如果有一個執行時間較長的cron，則cron可能會掛起。 如需疑難排解步驟，請參閱Commerce支援知識庫中的[效能緩慢、執行緩慢且時間較長的Cron](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons)和[Cron工作卡在「執行中」狀態](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status)。
 1. 如果您仍在努力找出問題的來源，請使用[[!DNL New Relic] APM的「交易」頁面](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems)來識別具有效能問題的交易：
-   * 依遞增[!DNL Apdex]分數排序交易。 [[!DNL Apdex]](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction)表示使用者對您的Web應用程式與服務的回應時間感到滿意。 [[!DNL Apdex score]](managed-alerts-for-magento-commerce-apdex-warning-alert.md)可能表示瓶頸（回應時間較長的交易）。 通常是資料庫[!DNL  Redis]或PHP。 如需相關步驟，請參考[[!DNL New Relic] 檢視最高 [!DNL Apdex] 不滿意度的交易](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/view-your-apdex-score#apdex-dissat)。
+   * 依遞增[!DNL Apdex]分數排序交易。 [[!DNL Apdex]](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction)表示使用者對您的Web應用程式與服務的回應時間感到滿意。 [[!DNL Apdex score]](managed-alerts-for-magento-commerce-apdex-warning-alert.md)可能表示瓶頸（回應時間較長的交易）。 通常是資料庫[!DNL &#x200B; Redis]或PHP。 如需相關步驟，請參考[[!DNL New Relic] 檢視最高 [!DNL Apdex] 不滿意度的交易](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/view-your-apdex-score#apdex-dissat)。
    * 依最高輸送量、最慢的平均回應時間、最耗時的值和其他臨界值來排序交易。 如需相關步驟，請參閱[[!DNL New Relic] [尋找特定效能問題]](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems)。 如果您仍在努力找出問題，請使用[[!DNL New Relic] APM的基礎結構頁面](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/)。
 1. 如果您無法找出記憶體耗用量增加的原因，請檢閱最近的趨勢，以找出最近的程式碼部署或設定變更（例如，新客戶群組和目錄的大型變更）所造成的問題。 建議您檢閱過去7天的活動，以瞭解程式碼部署或變更中的任何關聯。
 1. 如果上述方法無法協助您在合理的時間內找到原因和/或解決方案，請要求升級或將網站置於維護模式（如果尚未進行）。 如需相關步驟，請參閱Commerce支援知識庫中的[如何要求暫時調整大小](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize)，以及Commerce安裝指南中的[啟用或停用維護模式](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)。

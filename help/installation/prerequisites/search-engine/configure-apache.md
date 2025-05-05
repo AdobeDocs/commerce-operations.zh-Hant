@@ -20,7 +20,7 @@ ht-degree: 0%
 >
 >2.4.4版本新增OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
 
-本節探討如何將Apache設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與Apache](#secure-communication-with-apache)的[安全通訊中討論。
+本節探討如何將Apache設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與Apache[&#128279;](#secure-communication-with-apache)的安全通訊中討論。
 
 >[!NOTE]
 >

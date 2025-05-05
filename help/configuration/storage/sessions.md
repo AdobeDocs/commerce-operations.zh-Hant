@@ -51,7 +51,7 @@ ht-degree: 0%
 
 在某些操作系統（Debian/Ubuntu）上，預設 `session.gc_probability` 指令是 `0`，這會阻止垃圾集合處理程序運行。
 
-您可以覆寫`session.gc_`檔案中檔案中的`php.ini``<magento_root>/app/etc/env.php`指令：
+您可以覆寫`session.gc_`檔案中檔案中的`php.ini` `<magento_root>/app/etc/env.php`指令：
 
 ```php
  'session' => [

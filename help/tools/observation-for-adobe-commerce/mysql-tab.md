@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## [!UICONTROL MySQL% free storage by node]
 
-依節點](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)的![MySQL%可用儲存空間
+依節點![&#128279;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)的MySQL%可用儲存空間
 
 許多問題是由指派給MySQL之存放區中的MySQL用盡存放區所造成（`datadir` MySQL組態設定，預設值為`/data/mysql`），或是`tmpdir`空間不足。 預設`tmpdir` （MySQL設定）是`/tmp`。 **[!UICONTROL MySQL% free storage by node]**&#x200B;框架會檢視`/, /tmp` （若定義為個別掛載）和`/data/mysql`可用儲存空間百分比。 從MySQL 5.7版（MariaDB 10.2版）開始，未壓縮的`tmp`資料表會寫入檔案(ibtmp1)中`/data/mysql`目錄的`tmp`表格空間。 依預設，此檔案會無限制地自動展開。 因為它是表格空間，所以不會減少大小，而且在MySQL重新啟動時會重設為12MB。
 

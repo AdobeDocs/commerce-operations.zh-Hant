@@ -53,7 +53,7 @@ Adobe Commerce有一個用於安裝和設定工作的單一命令列介面： `<
 
 開始之前，請完成下列步驟：
 
-* 驗證您的系統是否滿足系統要求](system-requirements.md)中[討論的要求。
+* 驗證您的系統是否滿足系統要求[&#128279;](system-requirements.md)中討論的要求。
 
 * 完整應用程式所有 [先決條件](prerequisites/overview.md) 工作。
 

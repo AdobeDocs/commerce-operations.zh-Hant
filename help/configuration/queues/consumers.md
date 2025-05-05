@@ -16,11 +16,11 @@ ht-degree: 0%
 | 消費者和說明 | Adobe Commerce | 具有B2B的Adobe Commerce | Magento Open Source |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-------------------------|---------------------|
 | `async.operations.all` | + | + | + |
-| 為[大量作業](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)的每個個別工作建立訊息，例如匯入或匯出料號、變更大量價格，以及將產品指定至倉庫。 當Admin系統組態設定中的&#x200B;[**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations)選項設為&#x200B;**[!UICONTROL Run asynchronously]**時為必要。 |                |                         |                     |
+| 為[大量作業](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)的每個個別工作建立訊息，例如匯入或匯出料號、變更大量價格，以及將產品指定至倉庫。 當Admin系統組態設定中的&#x200B;[**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations)選項設為&#x200B;**[!UICONTROL Run asynchronously]**&#x200B;時為必要。 |                |                         |                     |
 | `codegeneratorProcessor` | + | + | + |
 | 以非同步方式在背景產生抵用券。 必須使用[批次抵用券產生](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html#method-2%3A-generate-a-batch-of-coupons)功能。 |                |                         |                     |
 | `commerce.eventing.event.publish` | + | + |                     |
-| 檢查已在Adobe Commerce](https://developer.adobe.com/commerce/events/get-started/)的[Adobe I/O事件中註冊為優先順序的事件。 |
+| 檢查已在Adobe Commerce[&#128279;](https://developer.adobe.com/commerce/events/get-started/)的Adobe I/O事件中註冊為優先順序的事件。 |
 | `exportProcessor` | + | + | + |
 | 防止在大型資料集的[匯出](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html)期間發生連線逾時（例如200,000個產品）。 |                |                         |                     |
 | `inventoryQtyCounter` | + | + |                     |

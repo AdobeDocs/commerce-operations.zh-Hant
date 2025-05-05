@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47336：在Adobe Commerce管理中關閉通知時出現&#x200B;_[!UICONTROL Something went wrong]_錯誤
+# ACSD-47336：在Adobe Commerce管理中關閉通知時出現&#x200B;_[!UICONTROL Something went wrong]_&#x200B;錯誤
 
-ACSD-47336修補程式修正了使用者在[!DNL Commerce] Admin中關閉通知時看到&#x200B;_[!UICONTROL Something went wrong]_錯誤的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.24時，即可使用此修補程式。 修補程式ID為ACSD-47336。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。
+ACSD-47336修補程式修正了使用者在[!DNL Commerce] Admin中關閉通知時看到&#x200B;_[!UICONTROL Something went wrong]_&#x200B;錯誤的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.24時，即可使用此修補程式。 修補程式ID為ACSD-47336。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。
 
 ## 受影響的產品和版本
 
@@ -31,7 +31,7 @@ ACSD-47336修補程式修正了使用者在[!DNL Commerce] Admin中關閉通知�
 
 ## 問題
 
-在[!DNL Commerce]管理員中關閉通知時，使用者會看到&#x200B;_[!UICONTROL Something went wrong]_錯誤。
+在[!DNL Commerce]管理員中關閉通知時，使用者會看到&#x200B;_[!UICONTROL Something went wrong]_&#x200B;錯誤。
 
 <u>要再現的步驟</u>：
 
@@ -41,11 +41,11 @@ ACSD-47336修補程式修正了使用者在[!DNL Commerce] Admin中關閉通知�
 
 <u>預期結果</u>：
 
-清除已完成的任務時，不應顯示&#x200B;_[!UICONTROL Something went wrong]_錯誤。
+清除已完成的任務時，不應顯示&#x200B;_[!UICONTROL Something went wrong]_&#x200B;錯誤。
 
 <u>實際結果</u>：
 
-顯示&#x200B;_[!UICONTROL Something went wrong]_錯誤。
+顯示&#x200B;_[!UICONTROL Something went wrong]_&#x200B;錯誤。
 
 ## 套用修補程式
 

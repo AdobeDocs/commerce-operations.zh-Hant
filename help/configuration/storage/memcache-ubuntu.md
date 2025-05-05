@@ -21,11 +21,11 @@ ht-degree: 0%
 因為PHP對memcache沒有原生支援，所以您必須安裝擴充功能以供PHP使用。 有兩個可用的PHP擴充功能，請務必解碼要使用哪個：
 
 - `memcache` (_no d_) — 不是定期維護的舊版但常用的擴充功能。
-`memcache`延伸模組目前&#x200B;_不適用於PHP 7。_ 請參閱memcache](https://www.php.net/manual/en/book.memcache.php)的[PHP檔案。
+`memcache`延伸模組目前&#x200B;_不適用於PHP 7。_ 請參閱memcache[&#128279;](https://www.php.net/manual/en/book.memcache.php)的PHP檔案。
 
   Ubuntu的確切名稱是`php5-memcache`。
 
-- `memcached` （_具有`d`_） — 與PHP 7相容的較新且已維護的擴充功能。 請參閱memcached](https://www.php.net/manual/en/book.memcached.php)的[PHP檔案。
+- `memcached` （_具有`d`_） — 與PHP 7相容的較新且已維護的擴充功能。 請參閱memcached[&#128279;](https://www.php.net/manual/en/book.memcached.php)的PHP檔案。
 
   Ubuntu的確切名稱是`php5-memcached`。
 

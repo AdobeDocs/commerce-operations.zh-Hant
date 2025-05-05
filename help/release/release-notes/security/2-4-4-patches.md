@@ -195,4 +195,4 @@ DHL 已推出 綱要 6.2 版，並將在不久的將來棄用綱要 6.0 版。 A
 
 **問題**：在 2.4.4-p1 套件上運行時，Web API 和整合測試顯示此錯誤： `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`。 **因應措施**：執行`require monolog/monolog:2.6.0`命令以安裝舊版的Monolog。<!-- AC-3651-->
 
-**問題**：商家在從Adobe Commerce 2.4.4升級至Adobe Commerce 2.4.4-p1時，可能會注意到套件版本降級通知。 可以忽略這些訊息。 套件版本中的差異是因為產生套件期間發生異常所導致。 沒有任何產品功能受到影響。 請參閱從2.4.4升級為2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949)知識庫文章後降級的[套件，瞭解受影響的案例和因應措施。
+**問題**：商家在從Adobe Commerce 2.4.4升級至Adobe Commerce 2.4.4-p1時，可能會注意到套件版本降級通知。 可以忽略這些訊息。 套件版本中的差異是因為產生套件期間發生異常所導致。 沒有任何產品功能受到影響。 請參閱從2.4.4升級為2.4.4-p1[&#128279;](https://support.magento.com/hc/en-us/articles/8214752983949)知識庫文章後降級的套件，瞭解受影響的案例和因應措施。

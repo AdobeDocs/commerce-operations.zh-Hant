@@ -31,7 +31,7 @@ ACSD-52606修補程式修正了使用者按一下&#x200B;**[!UICONTROL Notify Or
 
 ## 問題
 
-錯誤訊息&#x200B;*當使用者按一下&#x200B;**[!UICONTROL Notify Order is Ready for Pickup]**時，畫面會顯示您的訂單未準備好取貨*。
+錯誤訊息&#x200B;*當使用者按一下&#x200B;**[!UICONTROL Notify Order is Ready for Pickup]**&#x200B;時，畫面會顯示您的訂單未準備好取貨*。
 
 <u>必要條件</u>：
 

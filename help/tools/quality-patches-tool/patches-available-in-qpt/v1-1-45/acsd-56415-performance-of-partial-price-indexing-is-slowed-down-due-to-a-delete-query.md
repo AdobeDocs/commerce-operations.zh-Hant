@@ -40,15 +40,15 @@ ACSD-56415修補程式修正了資料庫含有大量部分價格資料索引時�
 1. 建立&#x200B;*10個客戶群組*。
 1. 執行以下查詢以將產品新增到`_cl`資料表：
 
-   ``
+   &grave;&grave;
     insert into catalog_product_price_cl (entity_id) select entity_id from catalog_product_entity
- ``
+ &grave;&grave;
 
 1. 執行以下命令以觸發部分價格索引程式：
 
-   ``
+   &grave;&grave;
     bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1
- ``
+ &grave;&grave;
 
 <u>預期結果</u>：
 

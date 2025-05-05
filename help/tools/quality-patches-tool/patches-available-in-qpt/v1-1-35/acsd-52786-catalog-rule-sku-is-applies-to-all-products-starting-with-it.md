@@ -38,7 +38,7 @@ ACSD-52786修補程式修正了目錄規則條件&#x200B;*[!UICONTROL SKU is]*&#
 1. 建立兩個產品，一個使用SKU「24」，另一個使用SKU「24-MB01」。
 1. 導覽至&#x200B;**[!UICONTROL Marketing]** > **[!UICONTROL Catalog Price Rule]** > **[!UICONTROL Add New Rule]**。
 1. 套用下列條件：
-   * *[!UICONTROL If **&#x200B;所有&#x200B;**條件皆為** TRUE **]*： *[!UICONTROL SKU is 24]*
+   * *[!UICONTROL If **&#x200B;所有&#x200B;**&#x200B;條件皆為 **&#x200B; TRUE &#x200B;**]*： *[!UICONTROL SKU is 24]*
 1. 設定動作中的任何折扣金額。
 1. 按一下&#x200B;**[!UICONTROL Save and Apply]**。
 1. 排清快取。

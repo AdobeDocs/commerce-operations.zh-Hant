@@ -22,7 +22,7 @@ ht-degree: 1%
 
 使用[「新增CLI命令」](https://developer.adobe.com/commerce/php/development/cli-commands/)指南來新增自訂CLI命令。
 
-您可以使用捷徑來呼叫`bin/magento` CLI命令，而不使用完整的命令名稱。 例如，您可以使用， `bin/magento s:upg`進行呼叫。`bin/magento s:up``bin/magento setup:upgrade`請參閱 [快捷方式語法](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) ，瞭解如何將快捷方式與任何 CLI 命令一起使用。
+您可以使用捷徑來呼叫`bin/magento` CLI命令，而不使用完整的命令名稱。 例如，您可以使用， `bin/magento s:upg`進行呼叫。`bin/magento s:up` `bin/magento setup:upgrade`請參閱 [快捷方式語法](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) ，瞭解如何將快捷方式與任何 CLI 命令一起使用。
 
 此參考文件是從應用程式原始碼生成的。 若要更改文檔，應在相關 [代碼庫](https://github.com/magento) 存放庫中打開相應命令的提取請求。 有關詳細資訊，請參閱 [Code貢獻](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) 。
 
