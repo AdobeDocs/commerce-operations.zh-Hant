@@ -1,7 +1,7 @@
 ---
-source-git-commit: 53b2494d848c027e32f1493bbc7a9f204677afaa
+source-git-commit: 5d6d60b99d883f0a83cdcfc1c65c04d2f4ef09b7
 workflow-type: tm+mt
-source-wordcount: '27958'
+source-wordcount: '27937'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ API裝載中缺少ID金鑰的問題解決後，API端點現在會如預期運作
 * __在管理員中，當我們嘗試重新排序提交訂單按鈕時，無法點選。 （斷斷續續）__
   _AC-14300_
 * __[問題]將預設索引子模式設定為「排程」__
-所有新索引子預設為&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;模式。  先前預設模式為&#x200B;**[!UICONTROL Update on Save]**。 現有的索引器不受影響。 [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+所有新索引子預設為**[!UICONTROL Update by Schedule]**&#x200B;模式。  先前預設模式為&#x200B;**[!UICONTROL Update on Save]**。 現有的索引器不受影響。 [GitHub-36419](https://github.com/magento/magento2/issues/36419)
   _AC-6975 - [GitHub問題](https://github.com/magento/magento2/issues/36419) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/0b410856)_
 * __[問題]在mview取消訂閱上卸除索引子變更記錄檔表格__
 現在，當索引從「依排程更新」切換到「儲存時更新」時，系統會自動移除未使用的變更記錄表，將索引標籤為無效，以確保沒有遺漏任何專案。 以前，將索引切換為「儲存時更新」會在系統中保留未使用的變更記錄檔表格，並將所有變更的索引標籤為「有效」。
@@ -549,7 +549,7 @@ shippingAddressFromData現在會儲存至每個網站的本機儲存空間。 �
 ### 購物車與結帳、結帳/單頁結帳
 
 * __[隨機錯誤]電子郵件欄位未呈現，或需要很長時間才能顯示在結帳送貨或付款頁面__
-Commerce現在會依預期在結帳送貨與付款頁面上轉譯&#x200B;**[!UICONTROL Email]**&#x200B;欄位。 之前，此欄位不存在或呈現緩慢。
+Commerce現在會依預期在結帳送貨與付款頁面上轉譯**[!UICONTROL Email]**欄位。 之前，此欄位不存在或呈現緩慢。
   _AC-9386 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/e1babcfd)_
 
 ### 購物車與結帳、訂購
@@ -1638,9 +1638,6 @@ GraphQl中依多個欄位排序的產品現在能如檔案所述運作
 * __使用虛擬型別來設定外掛程式，無法在`setup:di:compile`命令__中正確產生攔截器方法
 系統現在會在使用虛擬型別來設定外掛程式時正確產生攔截器方法，確保不論是預先編譯還是執行階段編譯，結果都一致。 以前，與執行階段編譯相比，系統會在預先編譯時產生不正確的結果。
   _AC-13398 - [GitHub問題](https://github.com/magento/magento2/issues/33980) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/38141)_
-* __無法從資料收集器下載檔案__
-下載備份不再顯示空白頁面而非下載檔案。
-  _ACP2E-3441_
 * __Adobe Commerce 2.4.7-p3單元測試失敗__
 不需要發行說明。
   _ACP2E-3631 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/982b1c42)_
