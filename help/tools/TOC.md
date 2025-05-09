@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 3814759565837a42c62577733149f243d1ff1004
+source-git-commit: 10aa4812976e9d87d76a37fc4c9f7996e1142e8c
 workflow-type: tm+mt
-source-wordcount: '7458'
+source-wordcount: '7470'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
    - [Adobe Commerce的管理警報： CPU警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質修補工具 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用情況](quality-patches-tool/usage.md)
    - [發行說明](quality-patches-tool/release-notes.md)
    - Quality Patches Tool提供的修補程式 {#patches-available-in-qpt}
@@ -780,6 +780,7 @@ ht-degree: 0%
          - [ACSD-64209： Cron排程器會擷取可協商的報價，而不會排除[!UICONTROL Ordered]個報價](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64209-excludes-ordered-quotes-in-cron-scheduler-to-prevent-email-triggers.md)
       - v1.1.62 {#v1-1-62}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.62](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview.md)
+         - [ACSD-63406：persistent_clear_expired cron工作執行時未清除過期的永久性引號](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared.md)
          - [ACSD-64592：非預設商店禮品卡宣告連結重新導向至預設網站](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website.md)
          - [ACSD-64523： REST端點無法驗證必要欄位](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields.md)
          - [ACSD-63520：透過[!UICONTROL Image Upload Configuration]上傳的影像超過設定的大小限制](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits.md)
@@ -830,6 +831,6 @@ ht-degree: 0%
       - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
       - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
    - 資源 {#resources}
-      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=zh-Hant)
+      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [變更記錄檔](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
