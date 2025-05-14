@@ -2,7 +2,7 @@
 title: 共擔責任安全性與營運模式
 description: 瞭解在雲端基礎結構專案中，Adobe Commerce中涉及的每一方的安全性責任。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
+source-git-commit: 4cd71d156ef6833185565180b297ba1b7f42a032
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 0%
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 此共用模式可讓商戶設計和實作高度彈性、可自訂且可擴充的解決方案，以符合其業務需求，同時將營運責任和成本降至最低。
 
-一般來說，Adobe的職責如下：
+>[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
+
+一般而言，Adobe的職責如下：
 
 - 開發及維護安全的核心應用程式程式碼
 - 維護平台的安全性
@@ -32,16 +34,16 @@ ht-degree: 0%
 
 ## Adobe責任
 
-Adobe負責雲端基礎結構環境及核心解決方案程式碼上的Adobe Commerce安全性和可用性。 此外，Adobe還負責維護雲端基礎結構解決方案上Adobe Commerce安全性的必要活動和機制，包括：
+Adobe負責雲端基礎結構環境及核心解決方案程式碼上的Adobe Commerce安全性和可用性。 此外，Adobe還負責必要的活動和機制，以維護Adobe Commerce在雲端基礎結構解決方案上的安全性，包括：
 
 - 在雲端基礎結構上為Adobe Commerce支援的應用程式套用伺服器層級安全性和修補程式，例如雲端資料儲存和搜尋功能
 - 在雲端基礎結構程式碼上執行核心Adobe Commerce的滲透測試和掃描
 - 對公共雲端服務提供者的身分與存取管理(IAM)解決方案和許可權管理（PCI法規遵循要求）進行半年一度的審查和稽核
-- 對授權使用者進行半年一度的審查和稽核，包括Adobe員工和承包商（PCI法規遵循要求）
+- 對授權的使用者進行半年一度的審查和稽核，包括Adobe員工和承包商（PCI法規遵循要求）
 - 進行備份和還原功能的年度測試和檔案記錄
 - 設定伺服器和周邊防火牆
 - 在雲端基礎結構存放庫上連線和設定Adobe Commerce
-- 為Adobe職責範圍內的領域定義、測試、實施和記錄災難回覆(DR)計畫
+- 為Adobe職責範圍內的區域定義、測試、實施和記錄災難回覆(DR)計畫
 - 定義全域平台網頁應用程式防火牆(WAF)規則
 - 強化作業系統(OS)
 - 在雲端基礎結構上實作並維護內容發佈網路(CDN)和應用程式效能管理(APM)解決方案與Adobe Commerce的整合
@@ -55,16 +57,16 @@ Adobe負責雲端基礎結構環境及核心解決方案程式碼上的Adobe Com
 - 設定DNS (僅限雲端基礎結構平台基礎結構上的Adobe Commerce)
 - 測試平台是否有安全漏洞
 
-Adobe負責維護Adobe Commerce解決方案使用之基礎結構和服務的PCI認證。  商戶需負責自訂程式碼、系統和網路程式的合規性，以及組織。
+Adobe維護Adobe Commerce解決方案使用之基礎結構和服務的PCI認證。  商戶需負責自訂程式碼、系統和網路程式的合規性，以及組織。
 
-Adobe也可確保商家基礎建設的可用性，如適用的SLA中所商定。
+Adobe也會確保商家基礎建設的可用性，如適用的SLA中所商定。
 
 ## 商戶責任
 
 該商戶負責針對雲端基礎結構解決方案上其特定的Adobe Commerce自訂執行個體，遵循下列安全性最佳實務：
 
 - 將雲端基礎結構設定檔案上的必要Adobe Commerce新增到存放庫
-- 在依Adobe發行雲端基礎結構解決方案的自訂Adobe Commerce中立即套用安全性和其他修補程式
+- 在Adobe發佈雲端基礎結構解決方案的自訂Adobe Commerce後，立即套用安全性和其他修補程式至其自訂
 - 在廠商發佈所有自訂擴充功能和程式碼後，立即套用安全性和其他修補程式
 - 建立、部署和測試自訂Vcl檔案
 - 在雲端基礎結構解決方案上設計、設定主題、安裝、整合及保護自訂Adobe Commerce，包括所有自訂擴充功能和程式碼
@@ -503,7 +505,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
     <td></td>
   </tr>
   <tr>
-    <td>AdobeDR計畫及備份與還原的年度測試與檔案</td>
+    <td>Adobe DR計畫及備份與還原的年度測試和檔案</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -521,9 +523,9 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
   <tr>
     <td colspan="5">
       <p><sup><strong>1</strong></sup>僅限將雲端基礎結構存放庫上的Adobe Commerce作為主要存放庫時。 商家全權負責使用其他外部存放庫。</p>
-      <p><sup><strong>2</strong></sup>Adobe針對CDN提供者的問題提供第1級支援。</p>
+      <p><sup><strong>2</strong></sup> Adobe針對CDN提供者的問題提供第1級支援。</p>
       <p><sup><strong>3</strong></sup>商家必須負責為其應用程式設定的任何Ngnix控制項。</p>
-      <p><sup><strong>4</strong></sup>對於PCI，滲透測試需求在Adobe和商家之間共用。</p>
+      <p><sup><strong>4</strong></sup>針對PCI，滲透測試需求會在Adobe與商家之間共用。</p>
     </td>
   </tr>
 </tfoot>
@@ -533,7 +535,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 >[!BEGINSHADEBOX]
 
-下列摘要表格說明在雲端基礎結構上開發、部署、維護及保護Adobe Commerce時，Adobe和商家應負的營運責任。
+下列摘要表格說明在雲端基礎結構上開發、部署、維護及保護Adobe時，Adobe Commerce和商家的營運責任。
 
 >[!ENDSHADEBOX]
 
@@ -570,7 +572,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 {style="table-layout:auto"}
 
-#### COMMERCE CLOUDCLI
+#### COMMERCE CLOUD CLI
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
@@ -682,7 +684,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | RabbitMQ服務的可用性 | R |   |
 | 預設RabbitMQ設定的組態 | R |   |
 | RabbitMQ的持續品質和修補 | R |   |
-| 提交服務請求以安裝與已安裝RabbitMQ版本相容的Adobe Commerce版本 |   | R |
+| 提交服務請求以安裝與已安裝Adobe Commerce版本相容的RabbitMQ版本 |   | R |
 
 {style="table-layout:auto"}
 
@@ -709,7 +711,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | 持續性基礎架構最佳化 | R |   |
 | 識別並修正緩慢查詢 |     | R |
 | 提交服務要求以安裝與已安裝Adobe Commerce版本相容的MariaDB版本 |     | R |
-| 設定並維護商家特定的資料保留原則(Adobe的資料保留原則會在商家合約中定義) |     | R |
+| 設定及維護商家特定的資料保留原則(Adobe的資料保留原則會在商家合約中定義) |     | R |
 
 {style="table-layout:auto"}
 
@@ -745,7 +747,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | --- | --- | --- |
 | Elasticsearch的可用性 | R |   |
 | 預設Elasticsearch設定的組態 | R |   |
-| 提交服務要求以安裝與已安裝Adobe Commerce版本相容的Elasticsearch版本 |  | R |
+| 提交服務請求以安裝與已安裝Elasticsearch版本相容的Adobe Commerce版本 |  | R |
 
 {style="table-layout:auto"}
 
@@ -783,19 +785,19 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
-| Adobe CommerceBusiness Intelligence服務的可用性 | R |   |
+| Adobe Commerce Business Intelligence服務的可用性 | R |   |
 | MBI資料同步程式 | R |   |
 | 偵測MBI同步問題 | R |   |
-| 設定MBI資料同步處理至Adobe Commerce Cloud Pro、Starter、內部部署或非Adobe Commerce<br>(API、資料品質和格式、商家網路、<br>Adobe Commerce Cloud DB內外的DB連線，超過資料臨界值) |     | R |
-| 正在設定MBI資料同步處理至Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud資料庫組態) | R |   |
+| 設定MBI資料同步處理至Adobe Commerce Cloud Pro、Starter、內部部署或非Adobe Commerce<br>（API、資料品質和格式、商家網路、<br>Adobe Commerce Cloud DB內外的DB連線，超過資料臨界值） |     | R |
+| 正在設定MBI資料同步處理至Adobe Commerce Cloud Pro<br>（Adobe Commerce Cloud資料庫設定） | R |   |
 
 {style="table-layout:auto"}
 
-#### 產品Recommendations
+#### 產品推薦
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
-| 產品Recommendations服務的可用性 | R |   |
+| Product Recommendations服務的可用性 | R |   |
 
 {style="table-layout:auto"}
 
@@ -816,7 +818,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | --- | --- | --- |
 | SSL專用憑證 — 到期 | R |  |
 | 布建SSL憑證 | R |  |
-| 購買與維護EV/特定SSL憑證（提供的預設值除外）並提供Adobe |     | R |
+| 購買及維護EV/特定SSL憑證（提供的預設值除外）並提供給Adobe |     | R |
 
 {style="table-layout:auto"}
 
@@ -851,8 +853,8 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | 使用Adobe擁有的VPC設定並維護PrivateLink連線（如果使用） | R |   |
 | 使用商家擁有的VPC設定及維護PrivateLink連線（若已使用） |     | R |
 | SSH （非私人連結）的可用性 | R |   |
-| 傳入至Adobe Commerce Cloud服務端點的PrivateLink設定 | R |   |
-| 接受傳入至Adobe Commerce Cloud服務端點的PrivateLink |     | R |
+| PrivateLink傳入至Adobe Commerce雲端服務端點的設定 | R |   |
+| 接受傳入至Adobe Commerce雲端服務端點的PrivateLink |     | R |
 | 傳入至商家VPC服務端點的PrivateLink設定 |     | R |
 | 接受傳入至商家VPC服務端點的PrivateLink | R |   |
 | PrivateLink整合（端點對帳戶）的設定 |     | R |
