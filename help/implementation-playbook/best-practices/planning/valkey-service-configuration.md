@@ -24,13 +24,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-如需雲端基礎結構上的環境設定，請參閱雲端基礎結構上的&#x200B;_Commerce指南_&#x200B;中的[`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)。
+如需雲端基礎結構上的環境設定，請參閱雲端基礎結構上的&#x200B;_Commerce指南_&#x200B;中的[`VALKEY_BACKEND`](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)。
 
 如需內部部署安裝，請參閱&#x200B;_設定指南_&#x200B;中的[設定Valkey頁面快取](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)。
 
 >[!NOTE]
 >
->確認您使用的是最新版本的`ece-tools`封裝。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
+>確認您使用的是最新版本的`ece-tools`封裝。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
 
 ### L2快取記憶體大小(Adobe Commerce Cloud)
 
@@ -90,7 +90,7 @@ stage:
 
 >[!WARNING]
 >
->請&#x200B;_不_&#x200B;為雲端基礎結構專案設定Valkey從屬連線，並採用[縮放/分割架構](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。 這會導致Redis連線錯誤。 如需詳細資訊，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[Redis設定指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)。
+>請&#x200B;_不_&#x200B;為雲端基礎結構專案設定Valkey從屬連線，並採用[縮放/分割架構](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。 這會導致Redis連線錯誤。 如需詳細資訊，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[Redis設定指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)。
 
 ## 預先載入索引鍵
 
@@ -152,7 +152,7 @@ stage:
 
 >[!NOTE]
 >
->在上一個範例中，`full_page`快取與雲端基礎結構專案上的Adobe Commerce無關，因為它們使用[Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)。
+>在上一個範例中，`full_page`快取與雲端基礎結構專案上的Adobe Commerce無關，因為它們使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly)。
 
 若要設定內部部署安裝，請參閱&#x200B;_設定指南_&#x200B;中的[過時快取選項](../../../configuration/cache/level-two-cache.md#stale-cache-options)。
 
