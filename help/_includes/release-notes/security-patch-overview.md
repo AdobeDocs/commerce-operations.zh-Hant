@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9514f6655bb6d99205c3799a164b6db62887362c
+source-git-commit: 0eb7528ebcc1515defd672830b8f00e460819aa1
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ ht-degree: 0%
 
 每個安全性修補程式版本都是以之前的完整修補程式版本為基礎。 此版本包含先前修補程式版本的品質和安全修正，以及在先前完整修補程式版本和安全修補程式版本之間建立的安全性修正。
 
-如需有關下載和套用安全性修補程式的說明，請參閱&#x200B;_升級指南_&#x200B;中的[Peform和升級](../../installation/composer.md#example---security-patch)。
+如需有關下載和套用安全性修補程式的說明，請參閱&#x200B;_Adobe Commerce知識庫_&#x200B;中的[如何取得和套用安全性修補程式](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)。
