@@ -2,9 +2,9 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 729670154dcca1df590f60d534af162fbcc57c94
+source-git-commit: 811c29c722448a0dc0c9172f58020bd17241513c
 workflow-type: tm+mt
-source-wordcount: '26107'
+source-wordcount: '26381'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,24 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.65 {#v1-1-65}
+
+* **ACP2E-3753** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正多存放區設定中的產品警報電子郵件一律使用預設主題傳送的問題，無論存放區或主題設定為何。
+* **ACSD-64118** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正同時要求儲存和更新相同產品導致資料不一致或產品重複的問題。
+* **ACSD-64813** (適用於Adobe Commerce >=2.4.4 &lt;2.4.9) — 修正透過[!DNL REST] API從[!DNL B2B]共用目錄取消指派類別太久或大型目錄逾時的問題。
+* **ACSD-65202** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正「我的帳戶」頁面未顯示同一商店內其他商店檢視的最近訂單的問題。
+* **ACSD-65254** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正使用`updateCustomerEmail` [!DNL GraphQL]突變更新客戶帳戶上的電子郵件地址後，未傳送電子郵件通知給客戶的問題。
+* **ACSD-65331** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正重複導覽回結帳頁面後，[!UICONTROL Pick in Store]中選取的存放區被清除的問題。
+* **ACSD-65822** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正[!UICONTROL Customer's Activities]下購物車面板中無法正確顯示套件組合和可設定產品數量的問題。
+* **ACSD-66093** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正電子郵件地址可能輸入到訪客客戶的[!UICONTROL First Name]和[!UICONTROL Last Name]欄位中，導致訂單確認電子郵件無效的問題。
+* 更新的版本： **ACSD-51291**
+* 已取代的修補程式： **ACSD-61522**
 
 ## v1.1.64 {#v1-1-64}
 
