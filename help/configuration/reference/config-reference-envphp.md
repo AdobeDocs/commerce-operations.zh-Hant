@@ -2,21 +2,21 @@
 title: env.php參考
 description: 請參閱env.php檔案的值清單。
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
 
 # env.php參考
 
-該檔案 `env.php` 包含以下部分：
+`env.php`檔案包含下列區段：
 
-| 名字 | 說明 |
+| 名稱 | 說明 |
 |-------------------------------|-----------------------------------------------------------------|
-| `backend` | 設定管理區域 |
-| `cache` | 配置 redis 頁面和默認緩存 |
+| `backend` | 管理區域的設定 |
+| `cache` | 設定Redis頁面和預設快取 |
 | `cache_types` | 快取儲存設定 |
 | `consumers_wait_for_messages` | 設定使用者處理訊息佇列訊息的方式 |
 | `cron` | 啟用或停用cron工作 |
@@ -28,15 +28,15 @@ ht-degree: 0%
 | `install` | 安裝日期 |
 | `lock` | 鎖定提供者設定 |
 | `MAGE_MODE` | [應用程式模式](../bootstrap/application-modes.md) |
-| `queue` | [新增訊息佇列設定](../queues/manage-message-queues.md) |
-| `resource` | 資源名稱到連接的映射 |
-| `session` | 會話儲存數據 |
+| `queue` | [訊息佇列](../queues/manage-message-queues.md)設定 |
+| `resource` | 將資源名稱對應到連線 |
+| `session` | 工作階段儲存資料 |
 | `system` | 停用「管理員」中要編輯的欄位 |
 | `x-frame-options` | [x-frame-options][x-frame-options]的設定 |
 
 ## 後端
 
-在 **env.php 中使用節點設定`backend`商務管理 url 的 frontName**。
+使用env.php中的`backend`節點設定Commerce管理員URL的&#x200B;**frontName**。
 
 ```conf
 'backend' => [
@@ -44,9 +44,9 @@ ht-degree: 0%
 ]
 ```
 
-## 緩存
+## 快取
 
-使用文件中的節點`env.php`來`cache`配置 redis 頁面和預設快取。
+使用`env.php`檔案中的`cache`節點，設定redis頁面和預設快取。
 
 ```conf
 'cache' => [
@@ -72,9 +72,9 @@ ht-degree: 0%
 ]
 ```
 
-在 Redis 配置[&#128279;](../cache/redis-pg-cache.md)中瞭解更多資訊。
+深入瞭解[Redis組態](../cache/redis-pg-cache.md)。
 
-## cache_types
+## cache_type
 
 所有快取型別設定都可從此節點取得。
 
@@ -136,7 +136,7 @@ ht-degree: 0%
 
 深入瞭解[Crons](../cli/configure-cron-jobs.md)。
 
-## 地穴
+## 加密
 
 Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會在安裝過程中產生。
 
@@ -146,7 +146,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-在&#x200B;_Commerce使用手冊_&#x200B;中進一步瞭解[加密金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/encryption-key)。
+在&#x200B;_Commerce使用手冊_&#x200B;中進一步瞭解[加密金鑰](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)。
 
 ## db
 
@@ -185,7 +185,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 
 ## 目錄
 
-當 Web 伺服器設定為從目錄提供 `/pub` Commerce 應用以提高安全性[&#128279;](../../installation/tutorials/docroot.md)時，需要設置的可選目錄映射選項。
+當網頁伺服器設定為從`/pub`目錄提供Commerce應用程式時，需要設定選擇性目錄對應選項，以提高[安全性](../../installation/tutorials/docroot.md)。
 
 ```conf
 'directories' => [
@@ -193,9 +193,9 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-## downloadable_domains
+## downloadable_domain
 
-此節點提供清單的可下載網域。 您可以使用CLI指令來新增、移除或列出其他網域。
+此節點中可用的可下載網域清單。 您可以使用CLI指令來新增、移除或列出其他網域。
 
 ```conf
 'downloadable_domains' => [
@@ -203,11 +203,11 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-深入瞭解[可下載的網域](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
+深入瞭解[可下載的網域](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
 
 ## 安裝
 
-Commerce 應用程式 的安裝日期。
+Commerce應用程式的安裝日期。
 
 ```conf
 'install' => [
@@ -215,13 +215,13 @@ Commerce 應用程式 的安裝日期。
 ]
 ```
 
-## 鎖
+## 鎖定
 
-鎖定提供程序設置是使用 `lock` 節點配置的。
+使用`lock`節點設定鎖定提供者設定。
 
-詳細了解 [鎖定提供程式配置](../../installation/tutorials/lock-provider.md)。
+深入瞭解[鎖定提供者組態](../../installation/tutorials/lock-provider.md)。
 
-## MAGE_MODE
+## 影像模式
 
 可在此節點中設定部署模式。
 
@@ -272,13 +272,13 @@ Commerce 應用程式 的安裝日期。
 
 ## x-frame-options
 
-x-frame-options 標頭可使用此節點進行設定。
+x-frame-options標頭可使用此節點進行設定。
 
 ```conf
 'x-frame-options' => 'SAMEORIGIN'
 ```
 
-了解有關 x-frame-options[&#128279;](../security/xframe-options.md) 的更多資訊。
+深入瞭解[x-frame-options](../security/xframe-options.md)。
 
 ## 系統
 
@@ -300,3 +300,74 @@ x-frame-options 標頭可使用此節點進行設定。
 <!-- Link definitions -->
 
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
+
+
+## 將變數新增至檔案設定
+
+您可以使用作業系統(OS)層級的環境變數來設定或覆寫每個組態選項（具有值的變數）。
+
+`env.php`設定儲存在具有巢狀層級的陣列中。 若要將巢狀陣列路徑轉換成OS環境變數的字串，請將路徑中的每個索引鍵串連為雙底線字元`__`、大寫及首碼為`MAGENTO_DC_`。
+
+例如，我們將工作階段儲存處理常式從`env.php`設定轉換為作業系統環境變數。
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+```
+
+與`__`串連，且大寫金鑰將變成`SESSION__SAVE`。
+
+接著，我們會使用`MAGENTO_DC_`加上前置詞，以取得產生的OS環境變數名稱`MAGENTO_DC_SESSION__SAVE`。
+
+```shell
+export MAGENTO_DC_SESSION__SAVE=files
+```
+
+另一個範例，讓我們轉換純量`env.php`組態選項路徑。
+
+```conf
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+>[!INFO]
+>
+>雖然變數名稱應大寫，但值區分大小寫，並應依檔案紀錄保留。
+
+我們只要將其大寫並加上前置詞`MAGENTO_DC_`即可接收最終的OS環境變數名稱`MAGENTO_DC_X-FRAME-OPTIONS`。
+
+```shell
+export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
+```
+
+>[!INFO]
+>
+>請注意，`env.php`內容優先順序將高於OS環境變數。
+
+## 使用變數覆寫檔案設定
+
+若要以OS環境變數覆寫現有的`env.php`設定選項，設定的陣列元素必須經過JSON編碼，並設定為`MAGENTO_DC__OVERRIDE` OS變數的值。
+
+如果您需要覆寫多個設定選項，請在JSON編碼之前將所有選項組合在單一陣列中。
+
+例如，讓我們覆寫下列`env.php`設定：
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+上述陣列的JSON編碼文字會是
+`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`。
+
+現在，將它設定為`MAGENTO_DC__OVERRIDE`作業系統變數的值。
+
+```shell
+export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}'
+```
+
+>[!INFO]
+>
+>如有必要，請確定JSON編碼陣列已正確加上引號及/或逸出，以防止作業系統損毀編碼字串。
