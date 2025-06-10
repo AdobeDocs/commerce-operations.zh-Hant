@@ -253,7 +253,7 @@ API裝載中缺少ID金鑰的問題解決後，API端點現在會如預期運作
 電話號碼未顯示較早的紅色星號，但是  電話號碼是強制性的。 現在已修正紅色星號，可在電話號碼上顯示為強制欄位。
   _AC-13850 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/c699c206)_
 * __[問題]將預設索引子模式設定為「排程」__
-所有新索引子預設為**[!UICONTROL Update by Schedule]**&#x200B;模式。  先前預設模式為&#x200B;**[!UICONTROL Update on Save]**。 現有的索引器不受影響。 [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+所有新索引子預設為&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;模式。  先前預設模式為&#x200B;**[!UICONTROL Update on Save]**。 現有的索引器不受影響。 [GitHub-36419](https://github.com/magento/magento2/issues/36419)
   _AC-6975 - [GitHub問題](https://github.com/magento/magento2/issues/36419) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/0b410856)_
 * __[問題]在mview取消訂閱上卸除索引子變更記錄檔表格__
 現在，當索引從「依排程更新」切換到「儲存時更新」時，系統會自動移除未使用的變更記錄表，將索引標籤為無效，以確保沒有遺漏任何專案。 以前，將索引切換為「儲存時更新」會在系統中保留未使用的變更記錄檔表格，並將所有變更的索引標籤為「有效」。
@@ -538,7 +538,7 @@ shippingAddressFromData現在會儲存至每個網站的本機儲存空間。 �
 ### 購物車與結帳、結帳/單頁結帳
 
 * __[隨機錯誤]電子郵件欄位未呈現，或需要很長時間才能顯示在結帳送貨或付款頁面__
-Commerce現在會依預期在結帳送貨與付款頁面上轉譯**[!UICONTROL Email]**欄位。 之前，此欄位不存在或呈現緩慢。
+Commerce現在會依預期在結帳送貨與付款頁面上轉譯&#x200B;**[!UICONTROL Email]**&#x200B;欄位。 之前，此欄位不存在或呈現緩慢。
   _AC-9386 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/e1babcfd)_
 
 ### 購物車與結帳、訂購
