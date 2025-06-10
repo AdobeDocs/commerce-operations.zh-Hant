@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8959ba231cbef269bebcc686d1e8ed4d3d53f354
+source-git-commit: 6048a374f6ea2aaae950ca46e801e0b7cee46e91
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '908'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>2025年6月安全性修補程式和2.4.9-alpha1修補程式的發行說明：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8-p1</a><br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p6</a><br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p11</a><br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p13</a><br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p14</a></p>
+      <td><p>2025年6月安全性修補程式和2.4.9-alpha1修補程式的發行說明：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">2.4.9-alpha1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8-p1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p6</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p11</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p13</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p14</a></p>
 </td>
       <td>
         重大更新
@@ -31,12 +31,126 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7cd58c1fe597258ee1f4514acfb08e71bee1c848">認可</a></td>
     </tr>
     <tr>
-      <td><p>更新2025年6月修補程式發行版本的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>。</p>
+      <td><p>更新2025年6月修補程式發行版本的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>。</p>
 </td>
       <td>
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/71ddfd423cbf8b1bb76155a9f1d67e90f46c5c46">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025年6月6日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65540-sql-syntax-error-occurs-due-to-the-absence-of-the-regexp-like-function-when-updating-the-company-structure-table">QPT 1.1.64版本</a>中ACSD-65540修補程式所修正問題的詳細說明。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e93994b6e0f716e965e7b867b29033a6e4d9d29c">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000">QPT 1.1.64版本</a>中ACSD-65684修補程式所修正問題的詳細說明。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0eb017ba4e948d5b6cfe8705b545d6ee47e58e7b">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>新增在<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-envphp"><code class="language-plaintext highlighter-rouge">env.php</code>組態檔</a>中使用作業系統層級環境變數的指示。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6ebc002a540e548810b1e8a3b0bee8e731b16044">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025年6月4日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-63139-product-export-fails-when-product-attributes-contain-thousands-of-option-values">QPT 1.1.64版本</a>中ACSD-63139修補程式所修正問題的詳細說明。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b138f3fa5a1ec6f08fa9a98295486d158c47514a">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65100-removing-the-values-for-maximum-width-and-maximum-height-in-the-media-gallery-image-optimization-configuration-causes-an-error-during-the-image-optimization-process">QPT 1.1.64版本</a>中ACSD-65100修補程式所修正問題的詳細說明。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a19a17d62f9d4fc2e7c5357e4a5c2ab24604192">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025年6月3日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增QPT 1.1.64版本</a>中ACP2E-3838修補程式所修正問題的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3838-page-builder-cors-errors-prevent-saving-changes-in-the-admin-panel-in-production-mode">詳細說明。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6310184efab4867687ba78ca97fbde7ec807b0f8">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65127-javascript-minification-in-production-mode-causes-tinymce-6-errors-in-the-browser">QPT 1.1.64版本</a>中ACSD-65127修補程式所修正問題的詳細說明。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9c96484a500065b25c87a68db2bcdfb9fde8ea62">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65223-manually-selected-terms-and-agreements-for-b2b-purchase-orders-result-in-an-error">QPT 1.1.64版本</a>中ACSD-65223修補程式所修正問題的詳細說明</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/589c7d37a1dada8a9bcab1ebf0f8d54f5dac25b1">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65787-schemabuilder-crashes-during-schema-creation-updates-due-to-undefined-array-key-column-in-table-data">QPT 1.1.64版本</a>中ACSD-65787修補程式所修正問題的詳細說明。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2bd2f42139a7849583086406d8b2923ef8ab98ef">認可</a></td>
     </tr>
   </tbody>
 </table>
@@ -53,7 +167,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已發佈1.1.65 Quality Patches Tool (QPT)套件發行版本的<a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=zh-Hant">發行說明</a>。</p>
+      <td><p>已發佈1.1.65 Quality Patches Tool (QPT)套件發行版本的<a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">發行說明</a>。</p>
 </td>
       <td>
         重大更新，qpt
@@ -75,7 +189,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增QPT 1.1.64版本</a>中ACP2E-3841修補程式所修正問題的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled">詳細說明</p>
+      <td><p>新增QPT 1.1.64版本</a>中ACP2E-3841修補程式所修正問題的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled">詳細說明</p>
 </td>
       <td>
         新主題qpt
@@ -97,7 +211,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已在2025年4月安全性修補程式的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>表格中新增RabbitMQ 3.13。</p>
+      <td><p>已在2025年4月安全性修補程式的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>表格中新增RabbitMQ 3.13。</p>
 </td>
       <td>
         技術
@@ -105,7 +219,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cdf687ce0f1201e57b66d2b9232ed8820a116d6f">認可</a></td>
     </tr>
     <tr>
-      <td><p>已在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule">發行排程</a>中新增2.4.9 Alpha修補程式。</p>
+      <td><p>已在<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">發行排程</a>中新增2.4.9 Alpha修補程式。</p>
 </td>
       <td>
         重大更新
@@ -127,7 +241,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已發佈1.1.64 Quality Patches Tool (QPT)套件發行版本的<a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=zh-Hant">發行說明</a>。</p>
+      <td><p>已發佈1.1.64 Quality Patches Tool (QPT)套件發行版本的<a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">發行說明</a>。</p>
 </td>
       <td>
         重大更新，qpt
@@ -149,7 +263,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly">QPT 1.1.62版本</a>中ACSD-64732修補程式所修正問題的詳細說明</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64732-third-party-controllers-are-not-cached-correctly">QPT 1.1.62版本</a>中ACSD-64732修補程式所修正問題的詳細說明</p>
 </td>
       <td>
         新主題qpt
@@ -157,7 +271,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7d2d6c5fb9b72dd7fcf6aed6c87568903219b5d6">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering">QPT 1.1.62版本</a>中ACSD-65164修補程式所修正問題的詳細說明</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-65164-the-error-message-occurs-when-reordering">QPT 1.1.62版本</a>中ACSD-65164修補程式所修正問題的詳細說明</p>
 </td>
       <td>
         新主題qpt
@@ -179,7 +293,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles">QPT 1.1.63版本</a>中ACSD-64627修補程式所修正問題的詳細說明</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-64627-fixes-saving-issues-for-custom-attributes-in-user-profiles">QPT 1.1.63版本</a>中ACSD-64627修補程式所修正問題的詳細說明</p>
 </td>
       <td>
         新主題qpt
@@ -201,7 +315,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany">QPT 1.1.63版本</a>中ACSD-65195修補程式所修正問題的詳細說明。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/acsd-65195-fixes-the-issue-where-the-graphql-mutation-createcompany">QPT 1.1.63版本</a>中ACSD-65195修補程式所修正問題的詳細說明。</p>
 </td>
       <td>
         新主題qpt
@@ -209,7 +323,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a6a8ad44c339b95b4afcedbd33b84c1d8b3411cc">認可</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532修補程式</a>修正了將ENV變數設為false視為字串false而非BOOLEAN FALSE的問題。</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64532-env-variable-set-to-string-false-instead-of-boolean-false">ACSD-64532修補程式</a>修正了將ENV變數設為false視為字串false而非BOOLEAN FALSE的問題。</p>
 </td>
       <td>
         新主題qpt
@@ -231,7 +345,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增QPT 1.1.63版本</a>中可用修補程式所修正問題的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview">說明</p>
+      <td><p>已新增QPT 1.1.63版本</a>中可用修補程式所修正問題的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/overview">說明</p>
 </td>
       <td>
         新主題qpt
@@ -239,7 +353,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/73e94802a4fbf4dfcbfb50be1a8a23d831368168">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared">QPT 1.1.62版本</a>中ACSD-63406修補程式所修正問題的詳細說明</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63406-expired-persistent-quotes-not-cleared">QPT 1.1.62版本</a>中ACSD-63406修補程式所修正問題的詳細說明</p>
 </td>
       <td>
         新主題qpt
@@ -247,7 +361,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9661351d137ebd704c884f2dc1459eee26a3fdc4">認可</a></td>
     </tr>
     <tr>
-      <td><p>已更新ACSD-64592修補程式</a>中的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website">受影響的產品和版本區段。</p>
+      <td><p>已更新ACSD-64592修補程式</a>中的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64592-non-default-store-gift-card-claim-links-redirect-to-default-website">受影響的產品和版本區段。</p>
 </td>
       <td>
         新主題qpt
@@ -269,7 +383,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已將RabbitMQ 4.1新增至2025年6月修補程式的支援<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>清單（2.4.4-p13除外）。<br />- 2.4.8<br />- 2.4.7-p5<br />- 2.4.6-p10<br />- 2.4.5-p12</p>
+      <td><p>已將RabbitMQ 4.1新增至2025年6月修補程式的支援<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>清單（2.4.4-p13除外）。<br />- 2.4.8<br />- 2.4.7-p5<br />- 2.4.6-p10<br />- 2.4.5-p12</p>
 </td>
       <td>
         技術
@@ -291,7 +405,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields">QPT 1.1.62版本</a>中ACSD-64523修補程式所修正問題的詳細說明</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-64523-rest-endpoint-fails-to-validate-mandatory-fields">QPT 1.1.62版本</a>中ACSD-64523修補程式所修正問題的詳細說明</p>
 </td>
       <td>
         新主題qpt
@@ -299,7 +413,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55dd9097d014d37d519ff0ce00fee03c82fbc0ac">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits">QPT 1.1.62版本</a>中ACSD-64684修補程式所修正問題的詳細說明</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/acsd-63520-image-upload-configuration-does-not-adhere-to-maximum-upload-size-limits">QPT 1.1.62版本</a>中ACSD-64684修補程式所修正問題的詳細說明</p>
 </td>
       <td>
         新主題qpt
@@ -321,7 +435,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增QPT 1.1.62版本</a>中可用修補程式所修正問題的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview">說明</p>
+      <td><p>已新增QPT 1.1.62版本</a>中可用修補程式所修正問題的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-62/overview">說明</p>
 </td>
       <td>
         新主題qpt
@@ -343,7 +457,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已改善<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> 2.4.8中修正問題的發行說明格式。<br /><em>給<a href="https://github.com/hostep">@hostep</a>.</em>的積分</p>
+      <td><p>已改善<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> 2.4.8中修正問題的發行說明格式。<br /><em>給<a href="https://github.com/hostep">@hostep</a>.</em>的積分</p>
 </td>
       <td>
         技術
@@ -365,7 +479,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已發佈1.1.63 Quality Patches Tool (QPT)套件發行版本的<a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=zh-Hant">發行說明</a>。</p>
+      <td><p>已發佈1.1.63 Quality Patches Tool (QPT)套件發行版本的<a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">發行說明</a>。</p>
 </td>
       <td>
         重大更新，qpt
@@ -373,7 +487,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f112a65859e1337183ab49aff9b6a812f9caa569">認可</a></td>
     </tr>
     <tr>
-      <td><p>修正<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a>發行說明中的文字轉譯。<br /><em>給<a href="https://github.com/hostep">@hostep</a>.</em>的積分</p>
+      <td><p>修正<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a>發行說明中的文字轉譯。<br /><em>給<a href="https://github.com/hostep">@hostep</a>.</em>的積分</p>
 </td>
       <td>
         技術
@@ -395,7 +509,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5發行說明</a>中新增有關Braintree的已知問題。</p>
+      <td><p>在<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5發行說明</a>中新增有關Braintree的已知問題。</p>
 </td>
       <td>
         重大更新
@@ -417,7 +531,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新ACSD-54966修補程式</a>中的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders">受影響的產品和版本區段</p>
+      <td><p>已更新ACSD-54966修補程式</a>中的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders">受影響的產品和版本區段</p>
 </td>
       <td>
         Qpt
@@ -425,7 +539,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aa47a83f4ec38aa6ff96008cbab2733602465435">認可</a></td>
     </tr>
     <tr>
-      <td><p>已更新ACSD-62979修補程式</a>中的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">受影響的產品和版本區段</p>
+      <td><p>已更新ACSD-62979修補程式</a>中的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">受影響的產品和版本區段</p>
 </td>
       <td>
         Qpt
@@ -447,7 +561,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增2.4.8至<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy">生命週期原則</a>。</p>
+      <td><p>已新增2.4.8至<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">生命週期原則</a>。</p>
 </td>
       <td>
         重大更新
@@ -469,7 +583,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error">QPT 1.1.61版本</a>中ACSD-64431修補程式所修正問題的詳細說明。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error">QPT 1.1.61版本</a>中ACSD-64431修補程式所修正問題的詳細說明。</p>
 </td>
       <td>
         新主題qpt
