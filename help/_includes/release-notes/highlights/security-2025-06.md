@@ -1,7 +1,7 @@
 ---
-source-git-commit: f9cc5ab0cb1b64455e12081ffbf719e0f2a791ad
+source-git-commit: cbf41054a2a8ffefa38049e1bf6e4a2f09e06ce1
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,8 @@ ht-degree: 0%
 
 * **修正CVE-2025-47110** — 解決電子郵件範本的弱點。<!-- AC-14695 -->
 
-* **VULN-31547的修正** — 解決類別規範連結弱點。<!-- AC-14713 -->
-
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110 VULN-31547的修正專案也以獨立修補程式的形式提供。 如需詳細資訊，請參閱[知識庫文章](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)。
+CVE-2025-47110的修正也以隔離修補程式的形式提供。 如需詳細資訊，請參閱[知識庫文章](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)。
 
 >[!ENDSHADEBOX]
