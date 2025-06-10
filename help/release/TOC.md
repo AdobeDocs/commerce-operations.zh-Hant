@@ -3,9 +3,9 @@ user-guide-title: 發行資訊
 user-guide-description: 在一個位置存取Adobe Commerce修補程式和服務的所有發行資訊。
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: 7c4734c89dcb0d1c175cabe0d565a4d62d062890
+source-git-commit: 5e8ff044ed2426bfdcfea79f6ed26407caf94444
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '114'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
    - [與舊版不相容的變更](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
       - [概觀](release-notes/commerce/overview.md)
-      - [2.4.9](release-notes/commerce/2-4-9.md)
+      - [2.4.9阿爾法](release-notes/commerce/2-4-9.md)
       - [2.4.8](release-notes/commerce/2-4-8.md)
       - [2.4.7](release-notes/commerce/2-4-7.md)
       - [2.4.6](release-notes/commerce/2-4-6.md)
@@ -30,7 +30,7 @@ ht-degree: 5%
       - [2.4.0](release-notes/commerce/2-4-0.md)
    - Magento Open Source {#magento-open-source}
       - [概觀](release-notes/open-source/overview.md)
-      - [2.4.9](release-notes/open-source/2-4-9.md)
+      - [2.4.9阿爾法](release-notes/open-source/2-4-9.md)
       - [2.4.8](release-notes/open-source/2-4-8.md)
       - [2.4.7](release-notes/open-source/2-4-7.md)
       - [2.4.6](release-notes/open-source/2-4-6.md)
@@ -60,4 +60,4 @@ ht-degree: 5%
 - 封裝 {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

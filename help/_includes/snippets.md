@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
+source-git-commit: 102fee9672c75c94c7d18d47562338f8eff97f11
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->安裝此安全性修補程式後，Adobe Commerce B2B商家也必須更新至最新相容的B2B安全性修補程式版本。 請參閱[B2B發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/release-notes)。
+>安裝此安全性修補程式後，Adobe Commerce B2B商家也必須更新至最新相容的B2B安全性修補程式版本。 請參閱[B2B發行說明](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)。
 
 ## 僅限Adobe Commerce {#ee-only}
 
@@ -52,6 +52,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe Commerce版本可能包含與舊版不相容的變更(BIC)。 若要檢閱回溯不相容的變更，請參閱[BIC參考](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)。 在[BIC重點專案](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)中說明嚴重的回溯不相容問題。 並非所有發行版本都會推出主要BIC。
+
+## Alpha免責宣告 {#alpha}
+
+>[!IMPORTANT]
+>
+>[Alpha](/help/release/versioning-policy.md#alpha-patch-release)發行版本可能不完整，且可能包含瑕疵。 產品依原樣提供，不含任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援(透過Adobe支援服務或其他方式) Alpha版本。 客戶不應依賴Alpha發行版本或任何隨附檔案或資料的正確運作或效能。 使用Alpha版本須完全由客戶自行承擔風險。
 
 ## Beta免責宣告 {#beta}
 
