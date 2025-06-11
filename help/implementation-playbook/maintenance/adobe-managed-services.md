@@ -1,25 +1,25 @@
 ---
-title: AdobeManaged Services
-description: 瞭解AdobeManaged Services如何協助支援及維護您的Adobe Commerce實作。
+title: Adobe Managed Services
+description: 瞭解Adobe Managed Services如何協助支援及維護您的Adobe Commerce實作。
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
 
 
-# AdobeManaged Services
+# Adobe Managed Services
 
 Adobe Commerce是一個提供電子商務功能的平台，其中包含強大的現成可用功能、廣泛的自訂選項和協力廠商整合。
 
-AdobeManaged Services在雲端基礎結構Pro計畫上為Adobe Commerce提供託管和受管理的應用程式和基礎結構。
+Adobe Managed Services在雲端基礎結構Pro計畫上為Adobe Commerce提供託管和受管理的應用程式和基礎結構。
 
 ## 優點
 
-![顯示AdobeManaged Services優點的Infographic](../../assets/playbooks/managed-services-benefits.png)
+![顯示Adobe Managed Services權益的資訊圖](../../assets/playbooks/managed-services-benefits.png)
 
 ### 實作選項的比較
 
@@ -35,9 +35,26 @@ Adobe Managed Services比內部部署和非Managed Cloud實作提供主要優點
    - 透過規劃、執行和監控提供事件支援
    - 雲端支援和專業知識（主動最佳化、報告和最佳實務）
 
-請檢閱下列資訊圖表，以取得主要Managed Services權益的更詳細比較：
+如需主要Managed Services權益的更詳細比較，請參閱下表：
 
-![顯示Managed Services與其他Adobe Commerce實作選項Adobe比較的資訊圖表](../../assets/playbooks/managed-services-compare.png)
+| 功能 | Adobe Commerce內部部署 | 雲端上的Adobe Commerce | Managed Services上的Adobe Commerce |
+|---------|---------------------------|-------------------------|-----------------------------------|
+| Adobe的企業軟體 | ✓ | ✓ | ✓ |
+| 安全且專用的雲端基礎結構 | | ✓ | ✓ |
+| 增強的事件服務層級目標 | | P1： 1小時 | P1:15分鐘 |
+| 突波容量監控與回應 | | | ✓ |
+| 基礎建設安全性 | | | ✓ |
+| 基礎建設等級99.99% SLA | | | ✓ |
+| 應用程式層級99.9% SLA | | | |
+| 指定的基礎建設專家資源（客戶成功工程師） | | | |
+| 計畫事件管理 | | | |
+| 自訂網站監控和個人化Runbook | | | |
+| 升級與修補部署協助 | | | |
+| 上線流程協調 | | | |
+| 專屬的向上呈報管理 | | | |
+| 應用程式監控和協助 | | | |
+
+如果您想要將此檔案匯出至Excel或其他格式，請通知我。
 
 ## 角色和責任
 
@@ -370,13 +387,13 @@ Adobe圍繞Managed Services系統上Adobe Commerce的設定、開發、測試和
 
 ## 安全性
 
-Managed Services的Adobe安全性棧疊會使用自動化和一致性來減少人為錯誤，以在的每個層級中建立安全性。 開發和作業團隊會自動從棧疊的不同層級繼承安全性控制項。
+適用於Managed Services的Adobe安全性棧疊會使用自動化和一致性來減少人為錯誤，於每個層級中建立安全性。 開發和作業團隊會自動從棧疊的不同層級繼承安全性控制項。
 
-Platform合作夥伴(例如Amazon Web Services和Microsoft Azure)在套用平台自訂時，可確保最高的安全性涵蓋範圍，而Adobe的Managed Services團隊則提供核心安全性服務，例如法規遵循、記錄、驗證、掃描和監控，以及伺服器安全性和安全應用程式設定。 如需詳細資訊，請參閱[Adobe Commerce安全性](https://business.adobe.com/products/magento/secure-ecommerce.html)。
+Platform合作夥伴(例如Amazon Web Services和Microsoft Azure)在套用平台自訂時，可確保最高的安全性涵蓋範圍，而Adobe的Managed Services團隊可提供核心安全性服務，例如法規遵循、記錄、驗證、掃描和監控，以及伺服器安全性和安全應用程式設定。 如需詳細資訊，請參閱[Adobe Commerce安全性](https://business.adobe.com/products/magento/secure-ecommerce.html)。
 
-下圖顯示AdobeManaged Services安全性技術棧疊：
+下圖顯示Adobe Managed Services安全性技術棧疊：
 
-![顯示AdobeManaged Services安全性棧疊的圖表](../../assets/playbooks/managed-services-security-stack.svg)
+![顯示Adobe Managed Services安全性棧疊的圖表](../../assets/playbooks/managed-services-security-stack.svg)
 
 ## 升級協助
 
@@ -455,7 +472,7 @@ Adobe圍繞Managed Services系統的布建、開發、測試和生產提供了�
     <td>參與者<br />CSE排程啟動會議事件。</td>
   </tr>
   <tr>
-    <td>Post-Launch</td>
+    <td>啟動後</td>
     <td></td>
     <td>投稿人</td>
     <td>投稿人</td>
