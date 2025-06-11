@@ -1,7 +1,7 @@
 ---
 title: Adobe Commerce 2.4.8安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.7版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
-source-git-commit: e996ef274920b1828331e2bb1eadacbb2cde59a6
+source-git-commit: 33debd1c742698e8242faaef1ff83bb2a9e5ee58
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.8-p1安全性版本針對2.4.8舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-50](https://helpx.adobe.com/tw/security/products/magento/apsb25-50.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)。
 
 {{b2b-patches}}
 
@@ -33,7 +33,7 @@ Adobe Commerce 2.4.8-p1安全性版本針對2.4.8舊版中發現的漏洞提供�
 
 * **Cookie限制相容性** — 解決框架中涉及`MAX_NUM_COOKIES`常數的回溯不相容變更。 此更新會還原預期行為，並確保與Cookie限制互動的擴充功能或自訂功能的相容性。<!-- AC-14475 -->
 
-* **CVE-2024-34104**&#x200B;的修正 — 解決不適當的授權漏洞。<!-- AC-13917 -->
+* **非同步作業** — 已限制用於覆寫先前客戶訂單的非同步作業。<!-- AC-13917 -->
 
 * **修正CVE-2025-47110** — 解決電子郵件範本的弱點。<!-- AC-14695 -->
 
