@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: 瞭解Adobe Managed Services如何協助支援及維護您的Adobe Commerce實作。
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
+source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,6 @@ Adobe Managed Services比內部部署和非Managed Cloud實作提供主要優點
 | 上線流程協調 | | | |
 | 專屬的向上呈報管理 | | | |
 | 應用程式監控和協助 | | | |
-
-如果您想要將此檔案匯出至Excel或其他格式，請通知我。
 
 ## 角色和責任
 
