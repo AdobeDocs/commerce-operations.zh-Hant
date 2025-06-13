@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47444：存取PHP 7.4上已知產品的特定非現有類別路徑時發生&#x200B;_[!UICONTROL Trying to access array offset on value of type bool]_錯誤
+# ACSD-47444：存取PHP 7.4上已知產品的特定非現有類別路徑時發生&#x200B;_[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;錯誤
 
-ACSD-47444修補程式可解決在存取PHP 7.4上已知產品的特定非現有類別路徑時，您會看到&#x200B;_[!UICONTROL Trying to access array offset on value of type bool]_錯誤的問題。安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.22時，即可使用此修補程式。
+ACSD-47444修補程式可解決在存取PHP 7.4上已知產品的特定非現有類別路徑時，您會看到&#x200B;_[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;錯誤的問題。安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.22時，即可使用此修補程式。
 
 ## 受影響的產品和版本
 

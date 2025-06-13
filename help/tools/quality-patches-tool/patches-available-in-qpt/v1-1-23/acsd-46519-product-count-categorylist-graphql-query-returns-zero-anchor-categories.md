@@ -36,34 +36,34 @@ ACSD-46519修補程式解決了[!UICONTROL categoryList] [!DNL GraphQL]查詢中
 1. 使用下列[!DNL GraphQL]要求取得具有[!UICONTROL product_count]的類別階層：
 
 <pre><code>
-{
-  categoryList(filters: { ids: { eq: "2" } }) {
+&lbrace;
+  categoryList(filters: { ids: { eq: "2" } }) &lbrace;
     id
     name
     product_count
     level
-    children {
+    children &lbrace;
       name
       product_count
       level
-      children {
+      children &lbrace;
         name
         product_count
         level
-        children {
+        children &lbrace;
           name
           product_count
           level
-          children {
+          children &lbrace;
             name
             product_count
             level
-          }
-        }
-      }
-    }
-  }
-}
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code></pre>
 
 <u>預期結果</u>：
@@ -75,46 +75,46 @@ ACSD-46519修補程式解決了[!UICONTROL categoryList] [!DNL GraphQL]查詢中
 如果上階分類是錨定分類，則分類層次2與下方的產品會顯示為0。
 
 <pre><code>
-{
-    "data": {
-        "categoryList": [
-            {
+&lbrace;
+    "data": &lbrace;
+        "categoryList": &lbrack;
+            &lbrace;
                 "id": 2,
                 "name": "Default Category",
                 "product_count": 186,
                 "level": 1,
-                "children": [
-                    {
+                "children": &lbrack;
+                    &lbrace;
                         "name": "What's New",
                         "product_count": 0,
                         "level": 2,
                         "children": []
-                    },
-                    {
+                    &rbrace;,
+                    &lbrace;
                         "name": "Women",
                         "product_count": 0,
                         "level": 2,
-                        "children": [
-                            {
+                        "children": &lbrack;
+                            &lbrace;
                                 "name": "Tops",
                                 "product_count": 0,
                                 "level": 3,
                                 "children": []
-                            },
-                            {
+                            &rbrace;,
+                            &lbrace;
                                 "name": "Bottoms",
                                 "product_count": 0,
                                 "level": 3,
                                 "children": []
-                            }
-                        ]
-                    },
+                            &rbrace;
+                        &rbrack;
+                    &rbrace;,
                     ...
-                ]
-            }
-        ]
-    }
-}
+                &rbrack;
+            &rbrace;
+        &rbrack;
+    &rbrace;
+&rbrace;
 </code></pre>
 
 ## 套用修補程式

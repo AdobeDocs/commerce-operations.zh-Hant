@@ -40,7 +40,7 @@ ACSD-46520修補程式可解決使用者使用商店積分退款時，訂單狀�
 1. 使用商店積分下訂單。
 1. 為訂單開立商業發票。
 1. 建立銷退折讓單以退回訂單的全部金額。
-選取**[!UICONTROL Refund to store credit]**&#x200B;核取方塊。
+選取&#x200B;**[!UICONTROL Refund to store credit]**&#x200B;核取方塊。
 1. 檢查訂單狀態。
 
 <u>預期結果</u>：

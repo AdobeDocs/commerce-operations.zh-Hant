@@ -44,7 +44,7 @@ MDVA-39305-V3修補程式修正啟用[!DNL Google reCAPTCHA]時註冊客戶無�
 
 <u>要再現的步驟</u>：
 
-1. 前往「**[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > **[!DNL Google reCAPTCHA Storefront]**」並啟用***[!DNL Google reCAPTCHA]***。
+1. 前往「**[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > **[!DNL Google reCAPTCHA Storefront]**」並啟用&#x200B;***[!DNL Google reCAPTCHA]***。
 1. 前往前端。
 1. 在瀏覽器中開啟&#x200B;**[!UICONTROL Developer Tool Console]**。
 

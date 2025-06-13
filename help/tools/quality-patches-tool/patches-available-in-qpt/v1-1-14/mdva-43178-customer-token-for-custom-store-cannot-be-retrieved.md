@@ -44,10 +44,10 @@ MDVA-43178修補程式修正無法在GraphQL中擷取自訂存放區之客戶權
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "username": "login",
       "password": "password"
-    }
+    &rbrace;
     </code>
     </pre>
 

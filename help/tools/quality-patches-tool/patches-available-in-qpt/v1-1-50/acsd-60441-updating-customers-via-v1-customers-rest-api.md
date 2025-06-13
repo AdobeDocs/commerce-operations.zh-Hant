@@ -56,12 +56,12 @@ ACSD-60441修補程式修正了使用後端產生的整合存取權杖時，透�
 
 您會收到下列錯誤：
 
-    ``json
-    {
-    ``message`： &quot;關聯網站中已存在具有相同電子郵件地址的客戶。&quot;，
-    `trace&quot;： ...
-    }
-    ``
+    &grave;&grave;json
+    &lbrace;
+    &grave;&grave;message&grave;： &quot;關聯網站中已存在具有相同電子郵件地址的客戶。&quot;，
+    &grave;trace&quot;： ...
+    &rbrace;
+    &grave;&grave;
 
 ## 套用修補程式
 

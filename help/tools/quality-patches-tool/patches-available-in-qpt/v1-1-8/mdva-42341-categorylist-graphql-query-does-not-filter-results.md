@@ -42,19 +42,19 @@ MDVA-42341修補程式解決當請求具有Store標頭時，「categoryList」Gr
 
 <pre>
 <code class="language-graphql">
-{
-  categoryList(filters: {name: {match: "category1"}}) {
+&lbrace;
+  categoryList(filters: {name: {match: "category1"}}) &lbrace;
     uid
     level
     name
-    breadcrumbs {
+    breadcrumbs &lbrace;
       category_uid
       category_name
       category_level
       category_url_key
-    }
-  }
-}
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 

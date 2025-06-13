@@ -33,7 +33,7 @@ ACSD-48210修補程式修正了在特定存放區檢視中更新&#x200B;*[!UICON
 
 更新特定存放區檢視中的&#x200B;*[!UICONTROL Website Scope]*&#x200B;屬性時，會覆寫全域範圍內的屬性值。
 
-匯入產品價格時，多個資料列共用相同的`SKU`和`store_view_code`，導致&#x200B;*[!UICONTROL All Store View]*&#x200B;和&#x200B;*[!UICONTROL Default Store]*範圍內的價格更新不正確。 修改特定存放區檢視中的網站範圍屬性時，不再覆寫全域範圍中的屬性值。
+匯入產品價格時，多個資料列共用相同的`SKU`和`store_view_code`，導致&#x200B;*[!UICONTROL All Store View]*&#x200B;和&#x200B;*[!UICONTROL Default Store]*&#x200B;範圍內的價格更新不正確。 修改特定存放區檢視中的網站範圍屬性時，不再覆寫全域範圍中的屬性值。
 <u>要再現的步驟</u>：
 
 1. 將&#x200B;*[!UICONTROL Catalog Price Scope]*&#x200B;設定為&#x200B;*[!UICONTROL Website]*。
