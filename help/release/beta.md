@@ -2,9 +2,9 @@
 title: Beta發行版本
 description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: ea4f340540e57b282657a44502d80f1d5c409c6a
+source-git-commit: 1c0dd720df944a5784c850a3f4ea63b8984069f1
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Adobe Commerce Optimizer透過高效能店面來強化您的電子商務體驗�
 - 使用AI和ML建立個人化搜尋和建議。
 - 檢視重要的產品資料可用性，包括同步化狀態和店面事件資料，以取得準確的實作和疑難排解。
 
-[進一步瞭解](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html?lang=zh-Hant)Adobe Commerce Optimizer。 如果您有興趣進一步瞭解[!DNL Adobe Commerce Optimizer]搶先存取方案，請完成[搶先存取申請表](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)。
+[進一步瞭解](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html)Adobe Commerce Optimizer。 如果您有興趣進一步瞭解[!DNL Adobe Commerce Optimizer]搶先存取方案，請完成[搶先存取申請表](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)。
 
 ### 增強即時搜尋的搜尋功能(公開Beta)
 
@@ -66,7 +66,7 @@ Adobe Commerce Optimizer透過高效能店面來強化您的電子商務體驗�
 
 這些新條件會增強搜尋查詢篩選機制，以縮小搜尋結果。 這些新條件不會影響主要搜尋查詢。 若要參與測試版，請傳送電子郵件要求給[commerce-storefront-services](mailto:commerce-storefront-services@adobe.com)。
 
-若要安裝即時搜尋測試版，請參閱[即時搜尋指南](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/install#install-the-live-search-beta)。
+若要安裝即時搜尋測試版，請參閱[即時搜尋指南](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta)。
 
 ### IBM Sterling Order Management系統整合(Private Beta)
 
@@ -79,38 +79,43 @@ Adobe Commerce Optimizer透過高效能店面來強化您的電子商務體驗�
 
 若要參與此測試版，請傳送電子郵件要求給[sbieber@adobe.com](mailto:sbieber@adobe.com)。
 
-### Adobe Commerce Foundation (公用Beta)
+### Adobe Commerce基礎(公開Alpha/Beta)
 
-每個Adobe Commerce Foundation測試版包含排程發行日期前提供給Adobe Commerce核心程式碼的所有變更，包括但不限於下列功能區域：
+每個Adobe Commerce Foundation alpha和Beta版都包含排程發行日期前提供給Adobe Commerce核心程式碼的所有變更，包括但不限於下列功能區域：
 
 - 最新的安全性修正
 - 效能改良
 - GraphQL改良功能
 - 一般品質錯誤修正
 - 社群貢獻
-- 支援與[Adobe Commerce服務](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)相容性所需的變更
+- 支援與[Adobe Commerce服務](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)相容性所需的變更
 
 #### 命名慣例和排程
 
-Adobe通常會每年發佈兩次測試版修補程式。
+Adobe通常每年會發行數次alpha和beta修補程式。
+
+Alpha發行套件有`-alphaX`尾碼。 例如，Adobe Commerce 2.4.7 alpha發行套件會使用以下命名慣例：
+
+- `2.4.7-alpha1`
+- `2.4.7-alpha2`
 
 Beta發行套件有`-betaX`尾碼。 例如，Adobe Commerce 2.4.7 Beta版套件會使用以下命名慣例：
 
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-如需即將發佈的公開測試版發行日期清單，請參閱[發行排程](schedule.md)。
+請參閱[發行排程](schedule.md)，以取得即將發行的公開Alpha和Beta版的發行日期清單。
 
-#### Beta版本存取權
+#### 發行存取權
 
-Adobe Commerce Beta版的發佈方式與任何其他Adobe Commerce修補程式版本相同： `https://repo.magento.com`上的Composer中繼套件。 原始程式碼可在[GitHub](https://github.com/magento/magento2)上取得。
+Adobe Commerce Alpha和Beta版本的發行方式與任何其他Adobe Commerce修補程式版本相同：做為`https://repo.magento.com`上的撰寫器中繼資料。 原始程式碼可在[GitHub](https://github.com/magento/magento2)上取得。
 
 如需詳細資訊，請參閱[撰寫器安裝快速入門](../installation/composer.md)。
 
 #### 問題報告
 
-Adobe不提供適用於測試版的標準Adobe支援服務。
+Adobe不提供alpha版和beta版的標準Adobe支援服務。
 
-若要提交與Beta版相關的意見反應，請依照[GitHub](https://github.com/magento/magento2)上的[一般問題報告流程](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)操作。
+若要提交與Alpha和Beta版相關的意見反應，請依照[GitHub](https://github.com/magento/magento2)上的[一般問題報告流程](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)操作。
 
-我們的內部團隊將監控針對最新測試版報告的所有嚴重問題，並排定在GA發行日期之前要解決的優先順序。
+Adobe會監控針對最新Alpha或Beta版本報告的所有重大問題，並排定在GA發行日期之前要解決的優先順序。
