@@ -2,7 +2,7 @@
 title: 軟體生命週期原則
 description: 了解 Adobe Commerce 版本軟體支援終止的關鍵日期。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 5a45f2b0ad2485014abd3b807a5797f9fc82388b
+source-git-commit: 2e81a28502d369bc8903e6b9e9154e693260234d
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 對於Adobe Commerce 2.4.4和後續版本：
 
-- 為了簡化Adobe Commerce生命週期政策及支援客戶的關鍵任務需求，Adobe將支援期間從Adobe Commerce 2.4.4和更新版本的「一般可用性」(GA)日期延長至三年。 Adobe提供2.4.4及更新版本的品質修正，支援期為三年。 客戶可以聯絡[Adobe Commerce支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)或自助服務[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)來存取品質修正（若其版本仍符合品質支援資格）。 下表說明Adobe Commerce發行版本的軟體支援終止日期。
+- 為了簡化Adobe Commerce生命週期政策及支援客戶的關鍵任務需求，Adobe將支援期間從Adobe Commerce 2.4.4和更新版本的「一般可用性」(GA)日期延長至三年。 Adobe提供2.4.4及更新版本的品質修正，支援期為三年。 客戶可以聯絡[Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)或自助服務[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)來存取品質修正（若其版本仍符合品質支援資格）。 下表說明Adobe Commerce發行版本的軟體支援終止日期。
 
 - Adobe透過安全性修補程式版本，在三年支援期間提供安全性修正。
 
@@ -41,7 +41,7 @@ Adobe鼓勵客戶儘快升級。 不過，為了提供更大的彈性以符合�
 | Adobe Commerce 2.4.8 | 2025年4月8日 | 2028年4月11日 | 不適用 | 8.3和8.4 | 11.4 |
 | Adobe Commerce 2.4.7 | 2024年4月9日 | 2027年4月9日 | 不適用 | 8.2和8.3 | 10.11<sup>3</sup> |
 | Adobe Commerce 2.4.6 | 2023年3月14日 | 2026年8月11日<sup>2</sup> | 不適用 | 8.1和8.2 | 10.11<sup>4</sup> |
-| Adobe Commerce 2.4.5 | 2022年8月9日 | 2025年8月9日 | 2026年8月11日 | 8.1 | 10.6<sup>5</sup> |
+| Adobe Commerce 2.4.5 | 2022年8月9日 | 2025年8月12日 | 2026年8月11日 | 8.1 | 10.6<sup>5</sup> |
 | Adobe Commerce 2.4.4 | 2022年4月12日 | 2025年4月12日 | 2026年4月14日 | 8.1 | 10.6<sup>6</sup> |
 
 {style="table-layout:auto"}
