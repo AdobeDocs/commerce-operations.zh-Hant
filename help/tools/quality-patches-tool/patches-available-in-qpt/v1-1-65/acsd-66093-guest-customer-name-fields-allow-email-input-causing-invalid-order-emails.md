@@ -50,7 +50,7 @@ ACSD-66093修補程式修正了電子郵件地址可能輸入到客體客戶的&
 <u>實際結果</u>：
 
 已下訂單。
-**[!UICONTROL First Name]**&#x200B;和&#x200B;**[!UICONTROL Last Name]**欄位已儲存為已輸入的內容。
+**[!UICONTROL First Name]**&#x200B;和&#x200B;**[!UICONTROL Last Name]**&#x200B;欄位已儲存為已輸入的內容。
 訂單確認電子郵件會傳送至所有三封電子郵件：test1@gmail.co、test2@gmail.co及test3@gmail.co。
 
 ## 套用修補程式
