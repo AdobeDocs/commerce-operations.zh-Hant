@@ -50,26 +50,26 @@ GraphQL回應中會傳回「無法個別顯示」可設定的子產品，並使�
   $search：字串
   $pageSize： Int！
   $currentPage： Int！
-) {
+) &lbrace;
   products(
     篩選器：$filter
     排序：$sort
     搜尋：$search
     pageSize： $pageSize
     currentPage： $currentPage
-  ) {
+  ) &lbrace;
     total_count
-    page_info {
+    page_info &lbrace;
       total_pages
       current_page
       page_size
-    }
-    專案{
+    &rbrace;
+    專案&lbrace;
       名稱
       sku
-    }
-  }
-}</pre>
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 變數：
 
@@ -98,4 +98,4 @@ GraphQL回應中會傳回「無法個別顯示」可設定的子產品，並使�
 * [已發行品質修補程式工具：支援知識庫中可自助提供品質修補程式](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)的新工具。
 * [使用[!DNL Quality Patches Tool]指南中的「品質修補工具」](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查是否有修補程式可用於您的Adobe Commerce問題。
 
-如需QPT中其他修補程式的詳細資訊，請參閱QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)中可用的[修補程式區段。
+如需QPT中其他修補程式的詳細資訊，請參閱QPT[&#128279;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)中可用的修補程式區段。
