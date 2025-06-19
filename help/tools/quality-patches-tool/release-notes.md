@@ -2,9 +2,9 @@
 title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 811c29c722448a0dc0c9172f58020bd17241513c
+source-git-commit: 883d9cd90a70dc898766f89ee4d8e8adb1583c08
 workflow-type: tm+mt
-source-wordcount: '26381'
+source-wordcount: '26682'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,24 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.66 {#v1-1-66}
+
+* **ACP2E-3789** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.9) — 修正提供媒體ID時，透過[!DNL WebAPI]重複媒體檔案更新產品的問題。
+* **ACP2E-3918** (適用於Adobe Commerce >=2.4.5 &lt;2.4.9) — 修正登入公司客戶在沒有預設帳單地址的情況下使用店內見面交收服務的結帳失敗問題。
+* **ACSD-65750** (適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9) — 修正GraphQL `route`查詢傳回產品在頁面產生器產品內容型別中順序不正確的問題。
+* **ACSD-65775** (適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9) — 修正訂購相同專案的多個數量時，[!DNL REST] API訂購詳細資料傳回不正確`base_row_total`和`row_total`值的問題。
+* **ACSD-65777** (適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9) — 修正`MediaGallery` GraphQL請求中產品影像型別缺少`types`欄位的問題。
+* **ACSD-65848** (適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9) — 修正使用子選取計算類別中產品總數的問題，方法是重構方法以使用連線。
+* **ACSD-65913** (適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9) — 修正具有相同價格之產品類別的[!DNL OpenSearch]擲回&#x200B;*illegal_argument_exception*&#x200B;錯誤的問題。
+* **ACSD-66041** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正因缺少`CountryID`而無法搜尋取車地點愛爾蘭(IE)郵遞區號的問題。
+* **ACSD-66212** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正匯入客戶CSV檔案兩次，導致第二次和後續嘗試失敗的問題。
+* 已更新的版本： **MDVA-12304**、**MDVA-19640**、**ACP2E-3841**、**ACSD-65100**、**ACSD-65787**、**ACP2E-3753**、**ACSD-65202**、**ACSD-65331**、**ACSD-65822**
 
 ## v1.1.65 {#v1-1-65}
 
