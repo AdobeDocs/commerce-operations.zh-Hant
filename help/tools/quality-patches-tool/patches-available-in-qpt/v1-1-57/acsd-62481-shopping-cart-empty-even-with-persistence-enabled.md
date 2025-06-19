@@ -3,13 +3,14 @@ title: ACSD-62481：即使啟用[!UICONTROL Persistence]，購物車仍保持空
 description: 套用ACSD-62481修補程式，修正結帳期間使用登入快顯視窗時，永久購物車功能無法運作的Adobe Commerce問題。
 feature: Shopping Cart, Checkout
 role: Admin, Developer
-source-git-commit: 27a98c42f2c514b3dd1a2f59c140b60b7ac26592
+exl-id: 79fb3161-f56e-45f3-9933-cf95703f1554
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62481：即使啟用&#x200B;*[!UICONTROL Persistence]*，購物車仍保持空白
 
@@ -27,7 +28,7 @@ ACSD-62481修補程式修正了在結帳時使用登入快顯視窗時，持續�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -69,7 +70,7 @@ ACSD-62481修補程式修正了在結帳時使用登入快顯視窗時，持續�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的升級和修補程式>套用修補程式。
 
 ## 相關閱讀

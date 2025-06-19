@@ -3,13 +3,14 @@ title: ACSD-64732：未正確使用客戶區段快取協力廠商控制器
 description: 套用ACSD-64732修補程式，修正Adobe Commerce中第三方控制器無法正確隨客戶區段快取的問題。
 feature: Cache
 role: Admin, Developer
-source-git-commit: 047de42098f711036f1f5252d2cbc4a329ebbfb2
+exl-id: 378e5a96-06dd-4796-9e45-a67cf539fcce
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64732：未正確使用客戶區段快取協力廠商控制器
 
@@ -27,7 +28,7 @@ ACSD-64732修補程式修正了協力廠商控制器無法正確隨客戶區段�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 

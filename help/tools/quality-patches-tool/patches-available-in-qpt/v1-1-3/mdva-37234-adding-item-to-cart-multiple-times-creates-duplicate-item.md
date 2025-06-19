@@ -1,10 +1,11 @@
 ---
 title: MDVA-37234：將專案多次新增到購物車會建立重複的行專案
-description: MDVA-37234修補程式針對相同SKU將專案多次新增至購物車（平行請求）時，會為相同購物車ID建立重複條列專案，此問題已獲修正。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3後，即可使用此修補程式。 修補程式ID為MDVA-37234。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
+description: MDVA-37234修補程式針對相同SKU將專案多次新增至購物車（平行請求）時，會為相同購物車ID建立重複條列專案，此問題已獲修正。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3後，即可使用此修補程式。 修補程式ID為MDVA-37234。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 feature: Orders, Shopping Cart
 role: Admin
 exl-id: d4e9fca1-7fba-4a33-9c5e-c9695cbfc61c
-source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # MDVA-37234：將專案多次新增到購物車會建立重複的行專案
 
-MDVA-37234修補程式針對相同SKU將專案多次新增至購物車（平行請求）時，會為相同購物車ID建立重複條列專案，此問題已獲修正。 安裝[品質修補工具(QPT)](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3時，即可使用此修補程式。 修補程式ID為MDVA-37234。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
+MDVA-37234修補程式針對相同SKU將專案多次新增至購物車（平行請求）時，會為相同購物車ID建立重複條列專案，此問題已獲修正。 安裝[品質修補工具(QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3時，即可使用此修補程式。 修補程式ID為MDVA-37234。 請注意，此問題已排程在Adobe Commerce 2.4.4中修正。
 
 ## 受影響的產品和版本
 
@@ -27,7 +28,7 @@ Adobe Commerce （所有部署方法） 2.3.5 - 2.3.7-p1和2.4.1 - 2.4.2-p1
 
 >[!NOTE]
 >
->此修補程式可能適用於其他發行了「品質修補程式」工具的版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於其他發行了「品質修補程式」工具的版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -41,15 +42,15 @@ Adobe Commerce （所有部署方法） 2.3.5 - 2.3.7-p1和2.4.1 - 2.4.2-p1
 
    <pre>
     <code class="language-graphql">
-    mutation &lbrace;
+    mutation {
         generateCustomerToken(
             email: "customer email"
             password: "customer password"
         )
-        &lbrace;
+        {
             token
-        &rbrace;
-    &rbrace;
+        }
+    }
     </code>
     </pre>
 
@@ -57,9 +58,9 @@ Adobe Commerce （所有部署方法） 2.3.5 - 2.3.7-p1和2.4.1 - 2.4.2-p1
 
    <pre>
     <code class="language-graphql">
-    mutation&lbrace;
+    mutation{
      createEmptyCart
-    &rbrace;
+    }
     </code>
     </pre>
 
@@ -87,13 +88,13 @@ Adobe Commerce （所有部署方法） 2.3.5 - 2.3.7-p1和2.4.1 - 2.4.2-p1
 若要套用個別修補程式，請根據您的部署型別使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 
 若要進一步瞭解Adobe Commerce的品質修補程式，請參閱：
 
-* [已發行品質修補程式工具：支援知識庫中可自助提供品質修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)的新工具。
+* [已發行品質修補程式工具：支援知識庫中可自助提供品質修補程式](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)的新工具。
 * [使用[!DNL Quality Patches Tool]指南中的「品質修補工具」](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查是否有修補程式可用於您的Adobe Commerce問題。
 
-如需QPT中其他修補程式的詳細資訊，請參閱QPT[&#128279;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)中可用的修補程式區段。
+如需QPT中其他修補程式的詳細資訊，請參閱QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)中可用的[修補程式區段。

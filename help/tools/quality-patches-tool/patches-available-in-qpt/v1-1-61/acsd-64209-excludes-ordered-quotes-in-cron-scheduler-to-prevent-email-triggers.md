@@ -3,7 +3,9 @@ title: ACSD-64209： Cron排程器會擷取可協商的報價，而不會排除[
 description: 套用ACSD-64209修補程式以修正Adobe Commerce問題，該問題導致cron排程器擷取所有可協商的引號，而不排除狀態為[!UICONTROL Ordered]的引號，進而觸發電子郵件或電子郵件。
 feature:  B2B, Communications
 role: Admin, Developer
-source-git-commit: 6fbe987dca81065071b611bfe0bfd0cb7baf1938
+exl-id: 51ba0edc-ad0c-4e32-acd7-2337a62bff53
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -26,7 +28,7 @@ ACSD-64209修補程式修正了cron排程器擷取所有可協商的引號，而
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -61,7 +63,7 @@ cron排程器會擷取所有可協商的報價，而不會排除狀態為&#x200B
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

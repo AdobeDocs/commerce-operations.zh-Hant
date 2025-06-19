@@ -4,7 +4,8 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.14中可用�
 feature: Tools and External Services
 role: Admin
 exl-id: 467dcc93-a778-4d76-87b1-1083bbbf66c1
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%

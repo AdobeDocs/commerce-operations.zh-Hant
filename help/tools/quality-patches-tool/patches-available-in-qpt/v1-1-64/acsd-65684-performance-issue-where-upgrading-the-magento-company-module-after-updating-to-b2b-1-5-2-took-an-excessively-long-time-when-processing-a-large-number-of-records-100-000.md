@@ -3,13 +3,14 @@ title: ACSD-65684：在B2B 1.5.2中升級Magento_Company緩慢，company_structu
 description: 套用ACSD-65684修補程式以修正Adobe Commerce的問題，其中升級B2B 1.5.2中的Magento_Company模組耗時過長，因為company_structure表格中處理大量記錄(~100,000+)。
 feature: B2B
 role: Admin, Developer
-source-git-commit: dbf1bf3483aa7e52f5d1c950ab82f504c44fc989
+type: Troubleshooting
+exl-id: 1b45ebe4-4fb4-4fb5-b107-a2d44ec784e0
+source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65684： [!DNL B2B] 1.5.2中的`Magento_Company`升級緩慢，`company_structure`中有超過100,000筆記錄
 
@@ -27,7 +28,7 @@ ACSD-65684修補程式修正了在[!DNL B2B] 1.5.2中升級`Magento_Company`模�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -58,7 +59,7 @@ bin/magento setup:upgrade
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

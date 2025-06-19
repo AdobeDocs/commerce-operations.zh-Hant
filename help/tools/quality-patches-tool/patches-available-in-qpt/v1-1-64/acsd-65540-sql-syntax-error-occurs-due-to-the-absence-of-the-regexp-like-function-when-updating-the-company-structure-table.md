@@ -3,13 +3,14 @@ title: ACSD-65540：發生SQL錯誤的原因是company_structure更新中缺少R
 description: 套用ACSD-65540修補程式來修正Adobe Commerce問題，該問題導致在company_structure更新中缺少REGEXP_LIKE函式而發生SQL錯誤。
 feature: B2B
 role: Admin, Developer
-source-git-commit: 105bc9bd1b234a7cc582f072f4ede03b82cc81bc
+type: Troubleshooting
+exl-id: a3e60742-60d4-41e3-93c3-506cc5a1c4a3
+source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65540： `company_structure`更新中遺失`REGEXP_LIKE`函式，導致SQL錯誤發生
 
@@ -27,7 +28,7 @@ ACSD-65540修補程式修正了`company_structure`更新中遺失`REGEXP_LIKE`�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -57,7 +58,7 @@ Unable to apply data patch Magento\Company\Setup\Patch\Data\SetCompanyForStructu
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

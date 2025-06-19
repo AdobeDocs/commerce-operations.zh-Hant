@@ -3,13 +3,14 @@ title: ACSD-64546：在UPS標籤建立期間UI和陣列至字串轉換例外中�
 description: 套用ACSD-64546修補程式以修正UI中出現一般錯誤訊息，且在UPS標籤建立期間會記錄陣列至字串轉換例外狀況的Adobe Commerce問題。 修補程式可確保UI和記錄中顯示正確的錯誤。
 feature: Shipping/Delivery
 role: Admin, Developer
-source-git-commit: f50da09cec35b3a72208f17b6832e3068de9c874
+exl-id: 458371bc-4afe-4675-b090-5797e05c5b88
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64546：UI中的一般錯誤訊息，以及UPS標籤建立期間的&#x200B;*陣列到字串的轉換*&#x200B;例外狀況
 
@@ -25,7 +26,7 @@ ACSD-64546修補程式修正UI中出現一般錯誤訊息，且UPS標籤建立�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 

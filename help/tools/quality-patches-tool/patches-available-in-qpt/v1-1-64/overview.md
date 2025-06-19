@@ -3,7 +3,9 @@ title: 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.64
 description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.64中可用修補程式所修正問題的詳細說明。
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: f6013ec84c1b3c65e2fe2ca062616976326d2fef
+exl-id: e86b8557-a14a-40e2-a181-56efa4383a1c
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%

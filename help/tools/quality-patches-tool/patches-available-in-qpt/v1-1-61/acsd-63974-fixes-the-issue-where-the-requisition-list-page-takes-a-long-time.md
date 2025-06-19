@@ -3,13 +3,14 @@ title: ACSD-63974：修正分頁導致[!UICONTROL Requisition List]載入時間�
 description: 套用ACSD-63974修補程式以修正[!UICONTROL Requisition List]頁面有太多專案時需花很長時間載入的問題。
 feature: B2B
 role: Admin, Developer
-source-git-commit: e5f8112b870e3550b4f3a9113be48428a54d454a
+exl-id: 1798baa3-da2f-44eb-8312-1f1b3f75b24d
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63974：修正分頁導致[!UICONTROL Requisition List]載入時間變慢的問題
 
@@ -27,7 +28,7 @@ ACSD-63974修補程式修正專案過多時&#x200B;**[!UICONTROL Requisition Lis
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 

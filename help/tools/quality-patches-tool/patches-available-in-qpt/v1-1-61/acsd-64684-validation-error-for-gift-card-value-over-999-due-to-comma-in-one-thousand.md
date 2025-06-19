@@ -3,13 +3,14 @@ title: ACSD-64684：儲存值超過999的禮品卡時發生驗證錯誤，因為
 description: 套用ACSD-64684修補程式以修正Adobe Commerce問題，在儲存值超過999的禮品卡時，由於逗號為「1,000」(1,000)而導致驗證錯誤。
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: 58d385c0e3479f5f9d826dc6e892c8ec2ebfdbb5
+exl-id: 327c5d28-b52c-4da9-a905-8a3deb755241
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64684：儲存值超過999的禮品卡時發生驗證錯誤，因為一千位以逗號分隔(1,000)
 
@@ -27,7 +28,7 @@ ACSD-64684修補程式修正了儲存禮品卡時，由於逗號「1,000」(1,00
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -52,7 +53,7 @@ ACSD-64684修補程式修正了儲存禮品卡時，由於逗號「1,000」(1,00
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

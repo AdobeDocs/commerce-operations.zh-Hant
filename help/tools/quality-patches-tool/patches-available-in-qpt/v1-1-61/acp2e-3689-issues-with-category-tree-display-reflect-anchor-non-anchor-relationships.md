@@ -3,13 +3,14 @@ title: ACP2E-3689：在較深的層級顯示類別樹狀結構並反映錨點/�
 description: 套用ACP2E-3689修補程式來修正Adobe Commerce的問題，在超過深度的四個巢狀結構中顯示類別樹狀結構，並反映錨點/非錨點關係。
 feature: Categories, Page Content
 role: Admin, Developer
-source-git-commit: af8b7b44274b828b3f60f92fd78f9f3d3983abb8
+exl-id: 8d3c484f-3f8d-4fc1-8b31-e850cb34341c
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3689：在較深的層級顯示類別樹狀結構並反映錨點/非錨點關係的多個問題
 
@@ -31,7 +32,7 @@ ACP2E-3689修補程式修正了在深度超過四的巢狀結構中顯示類別�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -57,7 +58,7 @@ ACP2E-3689修補程式修正了在深度超過四的巢狀結構中顯示類別�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

@@ -3,13 +3,14 @@ title: ACSD-62793：匯出中的Datetime屬性遺失時間元件。 此外，如
 description: 套用ACSD-62793修補程式，修正匯出資料中的日期時間屬性遺失時間元件的Adobe Commerce問題。 此外，如果已啟用**[!UICONTROL Fields Enclosure]**，則*additional_attributes*欄中的屬性值將會括在雙引號中。
 feature: Attributes, Data Import/Export, Catalog Service
 role: Admin, Developer
-source-git-commit: 1645006f142c902ac729a99502f59b6d42266691
+exl-id: 340dcc84-dcb8-40ed-b2ab-2d950d1dd1ca
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62793：匯出中的Datetime屬性遺失時間元件。 此外，如果啟用&#x200B;**[!UICONTROL Fields Enclosure]**，屬性值會以雙引號括住
 
@@ -27,7 +28,7 @@ ACSD-62793修補程式修正匯出資料中的日期時間屬性遺失時間元�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -56,8 +57,8 @@ ACSD-62793修補程式修正匯出資料中的日期時間屬性遺失時間元�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 
 ## 相關閱讀

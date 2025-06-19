@@ -3,13 +3,14 @@ title: ACSD-63182：在重複套件產品後儲存產品時發生錯誤
 description: 套用ACSD-63182修補程式以修正Adobe Commerce問題，此問題發生在啟用MSI的套件產品重複後儲存產品時發生錯誤。
 feature: Inventory, Catalog Management
 Role: Admin, Developer
-source-git-commit: e532323a743512f0fdd12b6ba30d1c56e8e37e20
+exl-id: 2c664c89-e00e-40a8-9127-8c3f36c5bab9
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63182：在重複套件產品後儲存產品時發生錯誤
 
@@ -27,7 +28,7 @@ ACSD-63182修補程式修正了套裝產品複製後，無法儲存作為套裝�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -38,7 +39,7 @@ ACSD-63182修補程式修正了套裝產品複製後，無法儲存作為套裝�
 1. 建立新的MSI來源和庫存。
 1. 建立兩個簡單的產品： **p1**&#x200B;和&#x200B;**p2**。
 1. 建立搭售產品&#x200B;**b1**，並將&#x200B;**p1**&#x200B;和&#x200B;**p2**&#x200B;作為搭售選項。
-1. 編輯&#x200B;**組合產品b1**&#x200B;並按一下&#x200B;***[!UICONTROL Save and Duplicate]***。
+1. 編輯&#x200B;**組合產品b1**&#x200B;並按一下***[!UICONTROL Save and Duplicate]***。
 1. 編輯&#x200B;**簡單產品p1**&#x200B;並按一下&#x200B;**[!UICONTROL Save]**。
 
 <u>預期結果</u>：
@@ -54,8 +55,8 @@ ACSD-63182修補程式修正了套裝產品複製後，無法儲存作為套裝�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

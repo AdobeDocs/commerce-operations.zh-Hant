@@ -3,13 +3,14 @@ title: ACSD-64592：非預設商店禮品卡宣告連結重新導向至預設網
 description: 套用ACSD-64592修補程式以修正多網站設定中，從次要（非預設）網站購買虛擬禮卡時，電子郵件中的禮卡代碼連結會有預設網站URL的問題。
 feature: Gift, Products
 role: Admin, Developer
-source-git-commit: 39866e1cf8f2afd892c9e151259a446d0277d58f
+exl-id: 1cc026c0-7487-48e8-a092-3e72085ca38a
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64592：非預設商店禮品卡宣告連結重新導向至預設網站
 
@@ -27,7 +28,7 @@ ACSD-64592修補程式可修正多網站環境中，如果從次要（非主要�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -56,7 +57,7 @@ ACSD-64592修補程式可修正多網站環境中，如果從次要（非主要�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

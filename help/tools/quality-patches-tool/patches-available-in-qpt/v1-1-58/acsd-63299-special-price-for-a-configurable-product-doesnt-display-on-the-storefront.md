@@ -3,7 +3,9 @@ title: ACSD-63299：店面未顯示可設定產品的特殊價格
 description: 套用ACSD-63299修補程式，修正Adobe Commerce特殊價格屬性不再影響可設定產品之特殊價格顯示的問題。
 feature: Catalog Management
 Role: Admin, Developer
-source-git-commit: 238d3fa6d7729f729aeb79c98ae28db331ad7509
+exl-id: cd1775c5-783e-4ed5-a148-1dae0b7542f8
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -26,7 +28,7 @@ ACSD-63299修補程式修正了特殊價格屬性不再影響可設定產品之�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -36,7 +38,7 @@ ACSD-63299修補程式修正了特殊價格屬性不再影響可設定產品之�
 
 1. 前往&#x200B;**[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Products]**。
 1. 尋找&#x200B;***[!UICONTROL special_price]***&#x200B;屬性並導覽至&#x200B;**[!UICONTROL Storefront Properties]**。
-1. 將&#x200B;***[!UICONTROL Used in Product Listing]***&#x200B;變更為&#x200B;***[!UICONTROL No]***。
+1. 將&#x200B;***[!UICONTROL Used in Product Listing]***&#x200B;變更為***[!UICONTROL No]***。
 1. 建立一個可設定的產品以及一個子項：
    * 名稱和SKU：測試
    * 價格：$159.00
@@ -62,8 +64,8 @@ ACSD-63299修補程式修正了特殊價格屬性不再影響可設定產品之�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

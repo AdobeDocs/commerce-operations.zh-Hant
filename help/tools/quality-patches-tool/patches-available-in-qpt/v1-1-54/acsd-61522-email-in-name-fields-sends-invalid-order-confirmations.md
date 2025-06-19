@@ -1,15 +1,16 @@
 ---
-title: 「ACSD-61522：在*名字和姓氏*欄位中的電子郵件地址會傳送無效的訂單確認」
+title: ACSD-61522： *名字和姓氏*欄位中的電子郵件地址會傳送無效的訂單確認
 description: 套用ACSD-61522修補程式以修正Adobe Commerce問題，該問題導致可能在來賓客戶的*[!UICONTROL First Name]*和*[!UICONTROL Last Name]*欄位中輸入電子郵件地址，從而導致傳送的訂單確認電子郵件無效。
 feature: Checkout, Customers
 role: Admin, Developer
-source-git-commit: d56f4fda007c1499bdba82ac3db9ac5ea1d34b0e
+exl-id: e1ed7a57-4054-44db-bc17-9b9056096fce
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61522： *名字和姓氏*&#x200B;欄位中的電子郵件地址會傳送無效的訂單確認
 
@@ -27,7 +28,7 @@ ACSD-61522修補程式修正了來賓客戶的&#x200B;*[!UICONTROL First Name]*&
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -57,8 +58,8 @@ ACSD-61522修補程式修正了來賓客戶的&#x200B;*[!UICONTROL First Name]*&
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

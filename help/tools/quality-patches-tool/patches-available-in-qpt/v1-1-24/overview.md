@@ -4,7 +4,8 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.24中可用�
 feature: Tools and External Services
 role: Admin
 exl-id: 7f88a28b-f166-4c5b-8d69-239c57cc4001
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -22,7 +23,7 @@ QPT v1.1.24包含下列修補程式：
 1. **ACSD-46770**：修正即使未勾選&#x200B;*電子郵件訂單確認*，仍傳送管理員訂單電子郵件的問題。
 1. **ACSD-46865**：修正啟用非同步索引時[!UICONTROL Shipment and Credit Memo]格線未填入的問題。
 1. **ACSD-47004**：修正無VAT ID的帳單地址未套用VAT的問題。
-1. **ACSD-47079**：修正當子產品庫存狀態透過REST APIPOST/rest/V1/inventory/source-items變更時，複合產品（套件、分組和可設定）庫存狀態未更新的問題。
+1. **ACSD-47079**：修正當子產品庫存狀態透過REST API POST /rest/V1/inventory/source-items變更時，複合產品（套件、分組和可設定）庫存狀態未更新的問題。
 1. **ACSD-47137**：當pub/media資料夾非常大時，提升影像庫的載入速度。
 1. **ACSD-47336**：修正&#x200B;*發生錯誤。在Commerce管理員中關閉通知時發生*&#x200B;錯誤。
 1. **ACSD-47559**：修正預覽電子郵件範本區域未完全顯示的問題。

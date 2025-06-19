@@ -3,13 +3,14 @@ title: ACSD-65202：「我的帳戶」頁面不會顯示其他商店檢視的最
 description: 套用ACSD-65202修補程式來修正Adobe Commerce問題，該問題導致「我的帳戶」頁面無法顯示同一商店內其他商店檢視的最近訂單。
 feature: Orders, User Account
 role: Admin, Developer
-source-git-commit: 0af6ab4ef15e8aa56354886b341b70a080662eae
+type: Troubleshooting
+exl-id: 031f12f2-1b70-4cbc-92a0-8eb561e34067
+source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65202： [!UICONTROL My Account]頁面未顯示其他商店檢視的最近訂單
 
@@ -27,7 +28,7 @@ ACSD-65202修補程式修正&#x200B;**[!UICONTROL My Account]**&#x200B;頁面未
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -60,7 +61,7 @@ ACSD-65202修補程式修正&#x200B;**[!UICONTROL My Account]**&#x200B;頁面未
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

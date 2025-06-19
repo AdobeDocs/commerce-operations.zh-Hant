@@ -3,7 +3,9 @@ title: ACSD-62671： [!DNL GraphQL] 第一次嘗試時未傳回更新的位址
 description: 套用ACSD-62671修補程式以修正Adobe Commerce問題，亦即 [!DNL GraphQL] 請求在第一次嘗試時未傳回最新位址資訊。
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: 697b0e3d7789b0324866d2192f56613f5526e4df
+exl-id: afd75ad2-e801-4f8a-b68f-526ca5168413
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
@@ -12,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-62671： [!DNL GraphQL]第一次嘗試時未傳回更新的地址
 
-ACSD-62671修補程式修正了[!DNL GraphQL]請求在第一次嘗試時未傳回最新地址資訊的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-62671。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
+ACSD-62671修補程式修正了[!DNL GraphQL]請求在第一次嘗試時未傳回最新地址資訊的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-62671。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
 ## 受影響的產品和版本
 
@@ -26,7 +28,7 @@ ACSD-62671修補程式修正了[!DNL GraphQL]請求在第一次嘗試時未傳�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -58,8 +60,8 @@ ACSD-62671修補程式修正了[!DNL GraphQL]請求在第一次嘗試時未傳�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* [!DNL Quality Patches Tool]指南中的Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

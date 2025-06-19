@@ -4,7 +4,8 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.57中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 3e252a71-f35f-4046-9353-169060451ffe
-source-git-commit: fc5c790108a3c62d4591631128743259824c4c6b
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -20,7 +21,7 @@ QPT v1.1.57包含下列修補程式：
 1. **ACSD-57570**：修正具有特定商店存取權的受限管理員使用者無法一律看見產品所指派的所有共用目錄，或無法看見客戶儲存，導致系統不一致的問題。
 1. **ACSD-58325**：修正[!UICONTROL Import]按鈕在驗證錯誤後仍可用的問題。
 1. **ACSD-59083**：修正某些資料庫更新作業導致&#x200B;_找不到基底資料表或檢視的問題_&#x200B;錯誤（如果[!DNL mview]更新同時執行）。
-1. **ACSD-61622**：修正回應中缺少[!DNL FedEx]帳戶特定費率的問題。 ACSD-61622取代[[!DNL FedEx] 送貨方法整合從 [!DNL SOAP] 移轉至 [!DNL RESTful API]](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api)中記錄的修正。
+1. **ACSD-61622**：修正回應中缺少[!DNL FedEx]帳戶特定費率的問題。 ACSD-61622取代[[!DNL FedEx] 送貨方法整合從 [!DNL SOAP] 移轉至 [!DNL RESTful API]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api)中記錄的修正。
 1. **ACSD-61895**：修正即使根類別沒有&#x200B;*允許*&#x200B;許可權，類別[!DNL GraphQL]查詢傳回具有&#x200B;*允許*&#x200B;許可權的類別的問題。
 1. **ACSD-62212**：修正[!UICONTROL Forgot Password]電子郵件內容未翻譯成商店檢視語言的問題。
 1. **ACSD-62481**：修正即使啟用[!UICONTROL Persistence]，客戶的購物車還是空白的問題。
