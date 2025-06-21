@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails">QPT 1.1.65版本</a>中ACSD-66093修補程式所修正問題的詳細說明。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails">QPT 1.1.65版本</a>中ACSD-66093修補程式所修正問題的詳細說明。</p>
 </td>
       <td>
         新主題qpt
