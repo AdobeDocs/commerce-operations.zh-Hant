@@ -47,7 +47,7 @@ opensearch:
     disk: 1024
 ```
 
-請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html)。
+請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=zh-Hant)。
 
 >[!TAB Commerce內部部署]
 
@@ -59,13 +59,13 @@ opensearch:
 
 有特定的PHP組態設定，例如`memory_limit`設定，可協助您在使用Adobe Commerce時避免常見問題。 請參閱[必要的PHP設定](prerequisites/php-settings.md)。
 
-如需雲端組態指南，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html)。
+如需雲端組態指南，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=zh-Hant)。
 
 ### PHP OPcache
 
 建議您確認[PHP OPcache](https://www.php.net/manual/en/intro.opcache.php)已因效能原因啟用。 OPcache已在許多PHP分配中啟用。 `opcache`擴充功能預設會安裝在雲端基礎結構上的Commerce中。
 
-若為內部部署，請確認是否已安裝PHP OPcache，請參閱[PHP設定](prerequisites/php-settings.md)。 如需效能設定的特定指引，請參閱&#x200B;_效能最佳實務_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings)軟體建議。
+若為內部部署，請確認是否已安裝PHP OPcache，請參閱[PHP設定](prerequisites/php-settings.md)。 如需效能設定的特定指引，請參閱&#x200B;_效能最佳實務_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html?lang=zh-Hant#php-settings)軟體建議。
 
 如果您必須單獨安裝OPcache，請參閱[PHP OPcache檔案](https://www.php.net/manual/en/opcache.setup.php)。
 
@@ -83,7 +83,7 @@ PHPUnit v9 （作為命令列工具）。
 
 >[!TIP]
 >
->有關雲端基礎結構中的PHP擴充功能，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[啟用PHP擴充功能](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions)。
+>有關雲端基礎結構中的PHP擴充功能，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[啟用PHP擴充功能](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=zh-Hant#enable-extensions)。
 
 >[!BEGINTABS]
 >[!TAB 雲端上的 Commerce]
@@ -121,7 +121,7 @@ PHPUnit v9 （作為命令列工具）。
 
 ### 郵件伺服器
 
-郵件傳輸代理(MTA)或SMTP伺服器。 雲端基礎結構上的Commerce使用[SendGrid電子郵件服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html)。
+郵件傳輸代理(MTA)或SMTP伺服器。 雲端基礎結構上的Commerce使用[SendGrid電子郵件服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=zh-Hant)。
 
 ### 記憶體
 
@@ -151,14 +151,14 @@ Adobe Commerce的某些作業需要下列系統工具：
 - 不支援自我簽署SSL憑證。
 - 傳輸層安全性(TLS)需求 — PayPal和`repo.magento.com`都需要TLS 1.2或更新版本。
 
-如需雲端基礎結構上的Commerce，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[Fastly設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)。
+如需雲端基礎結構上的Commerce，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[Fastly設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=zh-Hant)。
 
 ### Xdebug
 
 若為Adobe Commerce，請使用[php_xdebug 2.5.x](https://xdebug.org/download)或更新版本（僅限開發環境；可能會對效能造成不良影響）。
 
-如需雲端上的Adobe Commerce，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[設定Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html)。
+如需雲端上的Adobe Commerce，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[設定Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html?lang=zh-Hant)。
 
 >[!NOTE]
 >
->`xdebug`有已知問題，可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝[&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html)的已知問題。
+>`xdebug`有已知問題，可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝[&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html?lang=zh-Hant)的已知問題。
