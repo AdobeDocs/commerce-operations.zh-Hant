@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 773bc7a5b34a2b5f7314929be435c842a755de54
+source-git-commit: e0c067d567d0b1845655053a29704d18ac6c072f
 workflow-type: tm+mt
-source-wordcount: '7747'
+source-wordcount: '7759'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Adobe Commerce的管理警報： CPU警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質修補工具 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用情況](quality-patches-tool/usage.md)
    - [發行說明](quality-patches-tool/release-notes.md)
    - Quality Patches Tool提供的修補程式 {#patches-available-in-qpt}
@@ -804,6 +804,7 @@ ht-degree: 0%
          - [ACP2E-3841：使用子選取條件並啟用免運費時，多送貨產品的購物車價格規則無法正確套用](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled.md)
       - v1.1.65 {#v1-1-65}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.65](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/overview.md)
+         - [ACSD-64813：透過REST API取消指派 [!DNL B2B] 共用目錄中的類別緩慢](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64813-unassigning-categories-in-b2b-shared-catalog-via-rest-api-is-slow.md)
          - [ACSD-65822： [!UICONTROL Shopping Cart]中未正確反映套件組合和可設定的產品數量](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65822-bundle-and-configurable-product-quantities-not-reflected-correctly-in-shopping-cart.md)
          - [ACP2E-3753：庫存警示電子郵件未在多重商店設定中使用商店特定的主題範本](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acp2e-3753-stock-alert-emails-not-using-store-specific-theme-templates-in-multi-store-setup.md)
          - [ACSD-65202： [!UICONTROL My Account]頁面未顯示其他商店檢視的最近訂單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65202-my-account-page-doesnt-show-recent-orders-from-other-store-views.md)
@@ -855,6 +856,6 @@ ht-degree: 0%
       - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
       - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
    - 資源 {#resources}
-      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=zh-Hant)
+      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [變更記錄檔](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
