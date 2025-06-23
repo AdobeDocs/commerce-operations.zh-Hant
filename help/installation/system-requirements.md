@@ -2,9 +2,9 @@
 title: 系統需求
 description: 請使用此參考資料來識別已在Adobe Commerce發行版本中測試的所需軟體相依性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ca0c47cf9882bccbc55aca786f3e6615503662f3
+source-git-commit: 8593b3867f052ed8486d3f4eddbb060ca496ec99
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,13 @@ ht-degree: 0%
 
 Adobe僅支援下表所述的系統需求組合。 例如，2.4.5已透過MariaDB 10.4完成測試。Adobe建議您在升級至2.4.5之前，先升級至MariaDB 10.4。
 
->[!BEGINTABS]
->[!TAB 雲端上的 Commerce]
+為了確保順利升級程式並防止部署失敗，Adobe建議您逐步升級RabbitMQ版本。 例如，從版本3.8升級至4.1時，您應該先從3.8升級至3.9，再從3.9升級至3.10，以此類推。 到達版本3.13之後，您才應該繼續升級至版本4.1。
 
-雲端範本[&#128279;](https://github.com/magento/magento-cloud)上的Commerce提供與特定Commerce版本相容之服務的預設設定。
+>[!BEGINTABS]
+
+>雲端上的[!TAB Commerce]
+
+雲端範本](https://github.com/magento/magento-cloud)上的[Commerce提供與特定Commerce版本相容之服務的預設設定。
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
@@ -45,7 +48,7 @@ opensearch:
     disk: 1024
 ```
 
-請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=zh-Hant)。
+請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html)。
 
 >[!TAB Commerce內部部署]
 
@@ -57,13 +60,13 @@ opensearch:
 
 有特定的PHP組態設定，例如`memory_limit`設定，可協助您在使用Adobe Commerce時避免常見問題。 請參閱[必要的PHP設定](prerequisites/php-settings.md)。
 
-如需雲端組態指南，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=zh-Hant)。
+如需雲端組態指南，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html)。
 
 ### PHP OPcache
 
 建議您確認[PHP OPcache](https://www.php.net/manual/en/intro.opcache.php)已因效能原因啟用。 OPcache已在許多PHP分配中啟用。 `opcache`擴充功能預設會安裝在雲端基礎結構上的Commerce中。
 
-若為內部部署，請確認是否已安裝PHP OPcache，請參閱[PHP設定](prerequisites/php-settings.md)。 如需效能設定的特定指引，請參閱&#x200B;_效能最佳實務_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html?lang=zh-Hant#php-settings)軟體建議。
+若為內部部署，請確認是否已安裝PHP OPcache，請參閱[PHP設定](prerequisites/php-settings.md)。 如需效能設定的特定指引，請參閱&#x200B;_效能最佳實務_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings)軟體建議。
 
 如果您必須單獨安裝OPcache，請參閱[PHP OPcache檔案](https://www.php.net/manual/en/opcache.setup.php)。
 
@@ -81,10 +84,11 @@ PHPUnit v9 （作為命令列工具）。
 
 >[!TIP]
 >
->有關雲端基礎結構中的PHP擴充功能，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[啟用PHP擴充功能](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=zh-Hant#enable-extensions)。
+>有關雲端基礎結構中的PHP擴充功能，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[啟用PHP擴充功能](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions)。
 
 >[!BEGINTABS]
->[!TAB 雲端上的 Commerce]
+
+>雲端上的[!TAB Commerce]
 
 下表顯示在雲端平台上部署Adobe Commerce時支援的PHP擴充功能。
 
@@ -119,7 +123,7 @@ PHPUnit v9 （作為命令列工具）。
 
 ### 郵件伺服器
 
-郵件傳輸代理(MTA)或SMTP伺服器。 雲端基礎結構上的Commerce使用[SendGrid電子郵件服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=zh-Hant)。
+郵件傳輸代理(MTA)或SMTP伺服器。 雲端基礎結構上的Commerce使用[SendGrid電子郵件服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html)。
 
 ### 記憶體
 
@@ -149,14 +153,14 @@ Adobe Commerce的某些作業需要下列系統工具：
 - 不支援自我簽署SSL憑證。
 - 傳輸層安全性(TLS)需求 — PayPal和`repo.magento.com`都需要TLS 1.2或更新版本。
 
-如需雲端基礎結構上的Commerce，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[Fastly設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=zh-Hant)。
+如需雲端基礎結構上的Commerce，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[Fastly設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)。
 
 ### Xdebug
 
 若為Adobe Commerce，請使用[php_xdebug 2.5.x](https://xdebug.org/download)或更新版本（僅限開發環境；可能會對效能造成不良影響）。
 
-如需雲端上的Adobe Commerce，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[設定Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html?lang=zh-Hant)。
+如需雲端上的Adobe Commerce，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[設定Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html)。
 
 >[!NOTE]
 >
->`xdebug`有已知問題，可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝[&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html?lang=zh-Hant)的已知問題。
+>`xdebug`有已知問題，可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html)的[已知問題。
