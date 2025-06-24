@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: b9d0739e13488640adf0a7fad64c95c9369e5b9f
+source-git-commit: d097f4d48582b1ad7bbdacfe9c0621d72d12c671
 workflow-type: tm+mt
-source-wordcount: '7772'
+source-wordcount: '7776'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Adobe Commerce的管理警報： CPU警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質修補工具 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用情況](quality-patches-tool/usage.md)
    - [發行說明](quality-patches-tool/release-notes.md)
    - Quality Patches Tool提供的修補程式 {#patches-available-in-qpt}
@@ -810,6 +810,8 @@ ht-degree: 0%
          - [ACP2E-3753：庫存警示電子郵件未在多重商店設定中使用商店特定的主題範本](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acp2e-3753-stock-alert-emails-not-using-store-specific-theme-templates-in-multi-store-setup.md)
          - [ACSD-65202： [!UICONTROL My Account]頁面未顯示其他商店檢視的最近訂單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65202-my-account-page-doesnt-show-recent-orders-from-other-store-views.md)
          - [ACSD-66093：訪客客戶名稱欄位允許電子郵件輸入，導致無效的訂單電子郵件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails.md)
+      - v1.1.66 {#v1-1-66}
+         - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.66](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
@@ -857,6 +859,6 @@ ht-degree: 0%
       - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
       - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
    - 資源 {#resources}
-      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=zh-Hant)
+      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [變更記錄檔](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
