@@ -3,9 +3,9 @@ title: 設定遠端儲存的AWS S3貯體
 description: 設定您的Commerce專案，以使用AWS S3儲存服務進行遠端儲存。
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Adobe強烈建議不要使用公用儲存貯體，因為這會帶來嚴重的安全風險。
+>Adobe強烈建議不要使用公用儲存貯體，因為這樣會帶來嚴重的安全風險。
 
 **若要使用AWS S3介面卡啟用遠端儲存**：
 
@@ -44,6 +44,10 @@ ht-degree: 0%
 
 ## 設定Nginx
 
+>[!NOTE]
+>
+>此方法不適用於雲端基礎結構專案上的Adobe Commerce 。 無法在雲端基礎結構上的Adobe Commerce上設定Nginx。 如需詳細資訊，請參閱[雲端專屬檔案](cloud-support.md)。
+
 Nginx需要額外的設定，才能使用`proxy_pass`指示詞執行驗證。 將下列Proxy資訊新增至`nginx.conf`檔案：
 
 >nginx.conf
@@ -69,7 +73,7 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 如果您使用存取和秘密金鑰而非[AWS IAM]角色，則必須包含[`ngx_aws_auth` Nginx模組][ngx repo]。
 
-### 許可權
+### 權限
 
 S3整合仰賴在本機檔案系統上產生及儲存快取影像的能力。 因此，`pub/media`和類似目錄的檔案夾許可權與S3使用本機儲存時的許可權相同。
 
