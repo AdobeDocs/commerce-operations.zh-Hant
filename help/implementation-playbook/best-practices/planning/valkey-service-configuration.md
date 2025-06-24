@@ -3,9 +3,10 @@ title: Valkey服務設定的最佳實務
 description: 瞭解如何使用Adobe Commerce的延伸Valkey快取實作來改善快取效能。
 role: Developer, Admin
 feature: Best Practices, Cache
-source-git-commit: 107b5bb19c3375be64c216bd89feb8410e2fc2bd
+exl-id: ca1598b0-07c6-4338-aed1-f2ba05375197
+source-git-commit: 1ab977bf2b30c2851609f0bfcc636978e974f07a
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -24,13 +25,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-如需雲端基礎結構上的環境設定，請參閱雲端基礎結構上的&#x200B;_Commerce指南_&#x200B;中的[`VALKEY_BACKEND`](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)。
+如需雲端基礎結構上的環境設定，請參閱雲端基礎結構上的&#x200B;_Commerce指南_&#x200B;中的[`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)。
 
-如需內部部署安裝，請參閱&#x200B;_設定指南_&#x200B;中的[設定Valkey頁面快取](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)。
+如需內部部署安裝，請參閱&#x200B;_設定指南_&#x200B;中的[設定Valkey頁面快取](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)。
 
 >[!NOTE]
 >
->確認您使用的是最新版本的`ece-tools`封裝。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
+>確認您使用的是最新版本的`ece-tools`封裝。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
 
 ### L2快取記憶體大小(Adobe Commerce Cloud)
 
@@ -86,11 +87,11 @@ stage:
 
 如需詳細資訊，請參閱雲端基礎結構指南&#x200B;_上_ Commerce中的[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection)。
 
-針對Adobe Commerce內部部署安裝，請使用`bin/magento:setup`命令設定新的Valkey快取實作。 如需詳細資訊，請參閱&#x200B;_組態指南_&#x200B;中的[使用預設快取的Valkey](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)。
+針對Adobe Commerce內部部署安裝，請使用`bin/magento:setup`命令設定新的Valkey快取實作。 如需詳細資訊，請參閱&#x200B;_組態指南_&#x200B;中的[使用預設快取的Valkey](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)。
 
 >[!WARNING]
 >
->請&#x200B;_不_&#x200B;為雲端基礎結構專案設定Valkey從屬連線，並採用[縮放/分割架構](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。 這會導致Redis連線錯誤。 如需詳細資訊，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[Redis設定指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)。
+>請&#x200B;_不_&#x200B;為雲端基礎結構專案設定Valkey從屬連線，並採用[縮放/分割架構](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。 這會導致Valkey連線錯誤。 如需詳細資訊，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[Valkey設定指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)。
 
 ## 預先載入索引鍵
 
@@ -113,7 +114,7 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-如需內部部署安裝，請參閱&#x200B;_設定指南_&#x200B;中的[Valkey預先載入功能](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature)。
+如需內部部署安裝，請參閱&#x200B;_設定指南_&#x200B;中的[Valkey預先載入功能](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature)。
 
 ## 啟用過時的快取
 
@@ -152,7 +153,7 @@ stage:
 
 >[!NOTE]
 >
->在上一個範例中，`full_page`快取與雲端基礎結構專案上的Adobe Commerce無關，因為它們使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly)。
+>在上一個範例中，`full_page`快取與雲端基礎結構專案上的Adobe Commerce無關，因為它們使用[Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)。
 
 若要設定內部部署安裝，請參閱&#x200B;_設定指南_&#x200B;中的[過時快取選項](../../../configuration/cache/level-two-cache.md#stale-cache-options)。
 
@@ -172,7 +173,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## 快取壓縮
 
-如果您使用超過6GB的Valkey `maxmemory`，則可以使用快取壓縮來減少金鑰所消耗的空間。 請注意，使用者端效能是有代價的。 如果您有備用CPU，Adobe建議啟用它們。 請參閱&#x200B;_組態指南_&#x200B;中的[使用工作階段存放區](../../../configuration/cache/redis-session.md)的Redis。
+如果您使用超過6GB的Valkey `maxmemory`，則可以使用快取壓縮來減少金鑰所消耗的空間。 請注意，使用者端效能是有代價的。 如果您有備用CPU，Adobe建議啟用它們。 請參閱&#x200B;_組態指南_&#x200B;中的[使用工作階段存放區](../../../configuration/cache/valkey-session.md)的Valkey。
 
 ```yaml
 stage:
@@ -188,8 +189,3 @@ stage:
             compress_threshold: 20480     # do not compress files smaller than this value
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~70%)
 ```
-
-## 其他資訊
-
-- [Redis頁面快取](../../../configuration/cache/redis-pg-cache.md)
-- [使用Redis進行工作階段儲存](../../../configuration/cache/redis-session.md)
