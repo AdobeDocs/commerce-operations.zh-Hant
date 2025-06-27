@@ -3,9 +3,9 @@ title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: fe1bec27cb9aa420fd71a0542edd5f82492e17aa
+source-git-commit: c14532e7390a3c123a4f673fca2211bfea9bcaa1
 workflow-type: tm+mt
-source-wordcount: '26682'
+source-wordcount: '26993'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,25 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.67 {#v1-1-67}
+
+* **ACSD-65935** (適用於Adobe Commerce >=2.4.4 &lt;2.4.8) — 修正刪除產品時，`customerOrders` GraphQL查詢傳回內部伺服器錯誤的問題。
+* **ACSD-66049** (適用於Adobe Commerce和Magento Open Source >=2.4.5-p3 &lt;2.4.6) || >=2.4.7 &lt;2.4.9) — 修正非英文店面因ICU程式庫版本而顯示不正確定價的問題。
+* **ACSD-66084** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.9) — 修正訂單API回應中將`row_total_incl_tax`傳回為接近零的殘值的問題，而非完全折扣專案的0.00。
+* **ACSD-66118** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正未重新整理設定快取時，更新存放區檢視程式碼會清除[!UICONTROL Design Configuration]設定的問題。
+* **ACSD-66139** (適用於Adobe Commerce >=2.4.7 &lt;2.4.8) — 修正GraphQL呼叫對不存在或非使用中的購物車下訂單時傳回&#x200B;*未定義*&#x200B;錯誤碼的問題。
+* **ACSD-66301** (適用於Adobe Commerce和Magento Open Source >=2.4.6-p9 &lt;2.4.7) || >=2.4.7-p4 &lt;2.4.8) — 修正在「管理員」中將產品從訂單移回購物車導致數量不符的問題。
+* **ACSD-66434** (適用於Adobe Commerce >=2.4.6-p8 &lt;2.4.9) — 修正公司GraphQL查詢中缺少客戶ID的問題。
+* **ACSD-66441** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.8) — 修正當索引多存放區設定的可設定產品時，存放區在階層式導覽中顯示不正確索引資料的問題。
+* **AC-14984** (適用於Adobe Commerce和Magento Open Source >=2.4.6-p10 &lt;2.4.7) || >=2.4.8 &lt;2.4.9) — 修正RabbitMQ SSL連線上的錯誤&#x200B;*無效的框架型別21*。
+* **AC-14985** (適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9) — 修正使用啟用TLS的外部`smtp`伺服器時未傳送電子郵件的問題。
+* 已更新的版本： **MDVA-12304**、**ACSD-47920**、**ACSD-56447**、**ACSD-61845**、**ACSD-64118**
 
 ## v1.1.66 {#v1-1-66}
 
