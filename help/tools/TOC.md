@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: d097f4d48582b1ad7bbdacfe9c0621d72d12c671
+source-git-commit: 0663fb96c7d975b22e5445943f7dc9a435bd7bd1
 workflow-type: tm+mt
-source-wordcount: '7776'
+source-wordcount: '7786'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Adobe Commerce的管理警報： CPU警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質修補工具 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用情況](quality-patches-tool/usage.md)
    - [發行說明](quality-patches-tool/release-notes.md)
    - Quality Patches Tool提供的修補程式 {#patches-available-in-qpt}
@@ -317,7 +317,7 @@ ht-degree: 0%
       - V1.1.27 {#v1-1-27}
          - [概觀](quality-patches-tool/patches-available-in-qpt/v1-1-27/overview.md)
          - [ACSD-48404：記住類別分頁= yes會導致錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48404-fixes-the-issue-where-remember-category-pagination-yes-causes-an-error.md)
-         - [ACSD-48634： [!DNL Google Analytics Content Experiments] 啟用時發生 [!DNL JS] 錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48634-js-errors-when-google-analytics-content-experiments-enabled.md)
+         - [ACSD-48634： [!DNL JS] 啟用時發生 [!DNL Google Analytics Content Experiments] 錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48634-js-errors-when-google-analytics-content-experiments-enabled.md)
          - [ACSD-49042：無法從店面訂購無限延期交貨的產品](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-49042-product-with-infinite-backorder-cant-be-ordered-from-storefront.md)
          - [ACSD-47908：結帳期間應該出現小於或等於0的值](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-47908-a-value-less-than-or-equal-to-0-is-expected-error-during-checkout.md)
          - [ACSD-48059：商家無法依規則儲存「類別」屬性的「符合產品」](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48059-merchants-cannot-save-the-match-product-by-rule-for-categories-attribute.md)
@@ -438,7 +438,7 @@ ht-degree: 0%
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.35](quality-patches-tool/patches-available-in-qpt/v1-1-35/overview.md)
          - [ACSD-52095：匯出CSV時，管理股票值錯誤](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52095-manage-stock-value-wrong-while-exporting-csv.md)
          - [ACSD-51358：缺少排程更新](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51358-schedule-updates-are-missing.md)
-         - [ACSD-51149：已啟用[!UICONTROL Catalog Permissions]且已排程[!UICONTROL ImportExport]讓索引子失效](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51149-scheduled-importexport-enabled-catalog-permissions-invalidates-indexers.md)
+         - [ACSD-51149：已啟用[!UICONTROL ImportExport]且已排程[!UICONTROL Catalog Permissions]讓索引子失效](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51149-scheduled-importexport-enabled-catalog-permissions-invalidates-indexers.md)
          - [ACSD-50815：簡單產品的小數數量無法用於新的套件產品選項](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-50815-decimal-quantity-for-simple-product-cannot-be-used-for-new-bundle-product-option.md)
          - [ACSD-52202：當非預設庫存設定為0數量時，預設庫存可銷售數量錯誤地變更為0](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52202-default-stock-salable-qty-changes-to-0-in-error.md)
          - [ACSD-51845：無法透過非同步大量API更新具有層級價格與不同屬性集的後續產品](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51845-cant-update-subsequent-products-with-tier-prices.md)
@@ -556,7 +556,7 @@ ht-degree: 0%
          - [ACSD-54885：當管理員以客戶身分登入時，在多個地址簽出期間發生例外狀況](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54885-exception-during-multiple-address-checkout.md)
          - [ACSD-53309：可自訂選項和&#39;[!UICONTROL Regular Price]&#39;標籤的稅捐應用模組不完整](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-53309-incomplete-tax-application-for-customizable-options.md)
          - [ACSD-53790：可透過Rest API為單一產品建立多個RMA](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-53790-multiple-rmas-for-single-product-can-be-created-via-rest-api.md)
-         - [ACSD-54739： [!UICONTROL Related Product Rules]未套用[!UICONTROL Product Stock]狀態](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54739-product-stock-status-not-applied-for-related-product-rules.md)
+         - [ACSD-54739： [!UICONTROL Product Stock]未套用[!UICONTROL Related Product Rules]狀態](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54739-product-stock-status-not-applied-for-related-product-rules.md)
          - [ACSD-54983：具有GraphQL的公司使用者UID不適用於非作用中的使用者](quality-patches-tool/patches-available-in-qpt/v1-1-43/acsd-54983-company-user-uid-with-graphql-not-available-with-inactive-user.md)
       - v1.1.44 {#v1-1-44}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.44](quality-patches-tool/patches-available-in-qpt/v1-1-44/overview.md)
@@ -744,7 +744,7 @@ ht-degree: 0%
          - [ACSD-48570：修正URL中存放區代碼的管理員重設密碼連結問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299：店面未顯示可設定產品的特殊價格](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325：提交空的 [!DNL GraphQL] 請求時出現「語法錯誤：意外&lt; EOF >」錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
-         - [ACSD-63578：按一下[!UICONTROL Add to Order by SKU]中的[!UICONTROL Delete]圖示不會移除SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
+         - [ACSD-63578：按一下[!UICONTROL Delete]中的[!UICONTROL Add to Order by SKU]圖示不會移除SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329：使用REST API建立產品時，未設定日期和時間欄位的預設值](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
          - [MDVA-39305-V3：已啟用 [!DNL Google reCAPTCHA]的登入問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha.md)
          - [ACSD-63572：如果索引器處理序已終止，則不會清除catalogrule索引器暫存資料表](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated.md)
@@ -796,7 +796,7 @@ ht-degree: 0%
          - [ACSD-65684：在B2B 1.5.2中升級Magento_Company緩慢，company_structure中有超過100,000筆記錄](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
          - [ACSD-65540：發生SQL錯誤的原因是company_structure更新中缺少REGEXP_LIKE函式](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65540-sql-syntax-error-occurs-due-to-the-absence-of-the-regexp-like-function-when-updating-the-company-structure-table.md)
          - [ACSD-63139：當產品屬性包含數千個選項值時，產品匯出會失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-63139-product-export-fails-when-product-attributes-contain-thousands-of-option-values.md)
-         - [ACSD-65100：移除[!UICONTROL Media Gallery Image Optimization]設定中的[!UICONTROL Maximum Width]和[!UICONTROL Maximum Height]值會導致錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65100-removing-the-values-for-maximum-width-and-maximum-height-in-the-media-gallery-image-optimization-configuration-causes-an-error-during-the-image-optimization-process.md)
+         - [ACSD-65100：移除[!UICONTROL Maximum Width]設定中的[!UICONTROL Maximum Height]和[!UICONTROL Media Gallery Image Optimization]值會導致錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65100-removing-the-values-for-maximum-width-and-maximum-height-in-the-media-gallery-image-optimization-configuration-causes-an-error-during-the-image-optimization-process.md)
          - [ACSD-65127：生產模式中的JavaScript縮製造成瀏覽器發生 [!DNL TinyMCE] 6錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65127-javascript-minification-in-production-mode-causes-tinymce-6-errors-in-the-browser.md)
          - [ACP2E-3838： [!DNL Page Builder] CORS錯誤導致無法在生產模式的管理面板中儲存變更](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3838-page-builder-cors-errors-prevent-saving-changes-in-the-admin-panel-in-production-mode.md)
          - [ACSD-65787：由於表格資料中未定義的陣列索引鍵「欄」，SchemaBuilder在結構描述建立或更新期間當機](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65787-schemabuilder-crashes-during-schema-creation-updates-due-to-undefined-array-key-column-in-table-data.md)
@@ -812,6 +812,7 @@ ht-degree: 0%
          - [ACSD-66093：訪客客戶名稱欄位允許電子郵件輸入，導致無效的訂單電子郵件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails.md)
       - v1.1.66 {#v1-1-66}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.66](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview.md)
+         - [ACP2E-3789：透過WebAPI在產品更新上複製的媒體檔案](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3789-media-files-duplicated-on-product-update-via-webapi.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
@@ -859,6 +860,6 @@ ht-degree: 0%
       - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
       - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
    - 資源 {#resources}
-      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=zh-Hant)
+      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [變更記錄檔](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
