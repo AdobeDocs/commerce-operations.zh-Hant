@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: 瞭解Adobe Managed Services如何協助支援及維護您的Adobe Commerce實作。
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
+source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -40,19 +40,20 @@ Adobe Managed Services比內部部署和非Managed Cloud實作提供主要優點
 | 功能 | Adobe Commerce內部部署 | 雲端上的Adobe Commerce | Managed Services上的Adobe Commerce |
 |---------|---------------------------|-------------------------|-----------------------------------|
 | Adobe的企業軟體 | ✓ | ✓ | ✓ |
-| 安全且專用的雲端基礎結構 | | ✓ | ✓ |
-| 增強的事件服務層級目標 | | P1： 1小時 | P1:15分鐘 |
-| 突波容量監控與回應 | | | ✓ |
-| 基礎建設安全性 | | | ✓ |
-| 基礎建設等級99.99% SLA | | | ✓ |
-| 應用程式層級99.9% SLA | | | |
-| 指定的基礎建設專家資源（客戶成功工程師） | | | |
-| 計畫事件管理 | | | |
-| 自訂網站監控和個人化Runbook | | | |
-| 升級與修補部署協助 | | | |
-| 上線流程協調 | | | |
-| 專屬的向上呈報管理 | | | |
-| 應用程式監控和協助 | | | |
+| Adobe Developer App Builder | | ✓ | ✓ |
+| 安全且專用的雲端基礎結構 | | ✓ P1： 1小時 | ✓ P1： 15分鐘 |
+| 增強的事件服務層級目標 | | ✓ | ✓ |
+| 突波容量監控和回應 | | ✓ | ✓ |
+| 基礎建設安全性 | | ✓ | ✓ |
+| 基礎建設等級99.99% SLA | | ✓ | ✓ |
+| 應用程式層級99.9% SLA | | | ✓ |
+| 指定的基礎建設專家資源（客戶成功工程師） | | | ✓ |
+| 計畫事件管理 | | | ✓ |
+| 自訂網站監控與個人化Runbook | | | ✓ |
+| 升級和修補部署協助 | | | ✓ |
+| 上線流程協調 | | | ✓ |
+| 專屬的向上呈報管理 | | | ✓ |
+| 應用程式監控和協助 | | | ✓ |
 
 ## 角色和責任
 
