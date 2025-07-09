@@ -2,9 +2,9 @@
 title: GraphQL應用程式伺服器
 description: 請依照這些指示，在您的Adobe Commerce部署中啟用GraphQL應用程式伺服器。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 2f8396a367cbe1191bdf67aec75bd56f64d3fda8
+source-git-commit: 8427460cd11169ffe7dd2d4ba0cc1fdaea513702
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL應用程式伺服器可讓Adobe Commerce維護Commerce GraphQL API請求中的狀態。 GraphQL Application Server （以Swoole擴充功能為基礎）會以具有工作者執行緒的處理程式方式運作，以處理要求處理。 GraphQL Application Server可保留GraphQL API請求中的啟動載入應用程式狀態，藉此增強請求處理和整體產品效能。 API要求會大幅提高效率。
 
-GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
+GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
 
 >[!NOTE]
 >
@@ -112,29 +112,154 @@ git push
        upstream: "application-server:http"
    ```
 
+1. 取消註解`files`檔案中的`.magento/services.yaml`區段。
+
+   ```yaml
+   files:
+       type: network-storage:2.0
+       disk: 5120
+   ```
+
+1. 取消註解`TEMPORARY SHARED MOUNTS`檔案中裝載組態的`.magento.app.yaml`部分。
+
+   ```yaml
+   "var_shared":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc_shared":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media_shared":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static_shared":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
 1. 將更新的檔案新增至Git索引：
 
    ```bash
-   git add -f .magento/routes.yaml application-server/.magento/*
+   git add -f .magento.app.yaml .magento/routes.yaml .magento/services.yaml application-server/.magento/*
    ```
 
-1. 提交您的變更：
+1. 提交您的變更並推送以觸發部署：
 
    ```bash
-   git commit -m "AppServer Enabled"
+   git commit -m "Enabling AppServer: initial changes"
+   git push
+   ```
+
+1. 使用SSH登入遠端雲端環境（_不是_ `application-server`應用程式）：
+
+   ```bash
+   magento-cloud ssh -p <project-ID> -e <environment-ID>
+   ```
+
+1. 將資料從本機掛載同步到共用掛載：
+
+   ```bash
+   rsync -avz var/* var_shared/
+   rsync -avz app/etc/* app/etc_shared/
+   rsync -avz pub/media/* pub/media_shared/
+   rsync -avz pub/static/* pub/static_shared/
+   ```
+
+1. 註解`DEFAULT MOUNTS`檔案中裝載組態的`TEMPORARY SHARED MOUNTS`和`.magento.app.yaml`部分。
+
+   ```yaml
+   #"var": "shared:files/var"
+   #"app/etc": "shared:files/etc"
+   #"pub/media": "shared:files/media"
+   #"pub/static": "shared:files/static"
+   
+   #"var_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "var"
+   #"app/etc_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "etc"
+   #"pub/media_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "media"
+   #"pub/static_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "static"
+   ```
+
+1. 取消註解`OLD LOCAL MOUNTS`檔案中裝載組態的`SHARED MOUNTS`和`.magento.app.yaml`部分。
+
+   ```yaml
+   "var_old": "shared:files/var"
+   "app/etc_old": "shared:files/etc"
+   "pub/media_old": "shared:files/media"
+   "pub/static_old": "shared:files/static"
+   
+   "var":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
+1. 將更新的檔案新增到Git索引、認可變更並推播以觸發部署：
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: switch mounts"
+   git push
+   ```
+
+1. 確定來自`*_old`目錄的檔案存在於實際目錄中。
+
+1. 清理舊的本機掛載：
+
+   ```bash
+   rm -rf var_old/*
+   rm -rf app/etc_old/*
+   rm -rf pub/media_old/*
+   rm -rf pub/static_old/*
+   ```
+
+1. 註解`OLD LOCAL MOUNTS`檔案中裝載組態的`.magento.app.yaml`部分。
+
+   ```yaml
+   #"var_old": "shared:files/var"
+   #"app/etc_old": "shared:files/etc"
+   #"pub/media_old": "shared:files/media"
+   #"pub/static_old": "shared:files/static"
+   ```
+
+1. 將更新的檔案新增到Git索引、認可變更並推播以觸發部署：
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: finish"
+   git push
    ```
 
 >[!NOTE]
 >
->確定您的根`.magento.app.yaml`檔案中的所有自訂設定都已適當地移轉至`application-server/.magento/.magento.app.yaml`檔案。 將`application-server/.magento/.magento.app.yaml`檔案新增至專案後，除了根`.magento.app.yaml`檔案之外，您還應維護該檔案。 例如，如果您需要[設定RabbitMQ服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)或[管理Web屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property)，您也應該將相同的設定新增到`application-server/.magento/.magento.app.yaml`。
-
-### 部署入門專案
-
-完成啟用[步驟](#before-you-begin-a-cloud-starter-deployment)後，將變更推送至您的Git存放庫以部署GraphQL應用程式伺服器：
-
-```bash
-git push
-```
+>確定您的根`.magento.app.yaml`檔案中的所有自訂設定都已適當地移轉至`application-server/.magento/.magento.app.yaml`檔案。 將`application-server/.magento/.magento.app.yaml`檔案新增至專案後，除了根`.magento.app.yaml`檔案之外，您還應維護該檔案。 例如，如果您需要[設定RabbitMQ服務](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)或[管理Web屬性](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property)，您也應該將相同的設定新增到`application-server/.magento/.magento.app.yaml`。
 
 ### 驗證雲端專案是否啟用
 
@@ -289,7 +414,7 @@ ps aux | grep php
 
 ### 確認正在處理GraphQL請求
 
-GraphQL Application Server將值為`graphql_server`的`X-Backend`回應標頭新增至其處理的每個要求。 若要檢查GraphQL應用程式伺服器是否已處理要求，請檢查此回應標頭。
+GraphQL Application Server將值為`X-Backend`的`graphql_server`回應標頭新增至其處理的每個要求。 若要檢查GraphQL應用程式伺服器是否已處理要求，請檢查此回應標頭。
 
 ### 確認擴充功能和自訂相容性
 
@@ -322,7 +447,7 @@ GraphQL Application Server將值為`graphql_server`的`X-Backend`回應標頭新
 
 ### 停用GraphQL應用程式伺服器（內部部署）
 
-1. 請註解您在啟用GraphQL應用程式伺服器時新增的`nginx.conf`檔案的`/graphql`區段。
+1. 請註解您在啟用GraphQL應用程式伺服器時新增的`/graphql`檔案的`nginx.conf`區段。
 1. 重新啟動nginx。
 
 此停用GraphQL應用程式伺服器的方法有助於快速測試或比較效能。
@@ -354,7 +479,7 @@ GraphQL Application Server將值為`graphql_server`的`X-Backend`回應標頭新
 
 * **在初始化訊息**&#x200B;之前，不能存取Typed屬性$x。 這類訊息的失敗表示建構函式尚未初始化指定的屬性。 這是暫時耦合的形式，因為物件在初始建構後就無法使用。 即使屬性是私有的，也會發生這種耦合，因為從屬性中擷取資料的收集器正在使用PHP反射特徵。 在這種情況下，請嘗試重構類別以避免暫時耦合併避免可變狀態。 如果該重構無法解決失敗，您可以將屬性型別變更為空型別，以便將其初始化為空值。  如果屬性是陣列，請嘗試將屬性初始化為空陣列。
 
-執行`vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php`以執行`GraphQlStateTest`。
+執行`GraphQlStateTest`以執行`vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php`。
 
 ### ResetAfterRequestTest
 
@@ -366,7 +491,7 @@ GraphQL Application Server將值為`graphql_server`的`X-Backend`回應標頭新
 
 * **在初始化訊息**&#x200B;之前，不能存取Typed屬性$x。 `GraphQlStateTest`也會發生此問題。
 
-  執行`vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php`以執行`ResetAfterRequestTest`。
+  執行`ResetAfterRequestTest`以執行`vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php`。
 
 ### 功能測試
 
