@@ -14,7 +14,7 @@ ht-degree: 0%
 
 若要使用[!DNL New Relic Observation for Adobe Commerce] Nerdlet，請確定您有[!DNL New Relic]的存取權。
 
-[New Relic帳戶管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
+[New Relic帳戶管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/monitor/new-relic/account-management)
 
 然後從[!DNL New Relic]首頁選取[應用程式]功能表專案。
 
