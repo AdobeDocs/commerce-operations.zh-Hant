@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: ec7907a22a00f5c398c8ddc39d56c05c4bcbe175
+source-git-commit: 17c44a40eed91f38272956cd043122c14b4b7267
 workflow-type: tm+mt
-source-wordcount: '7817'
+source-wordcount: '7827'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Adobe Commerce的管理警報： CPU警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質修補工具 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用情況](quality-patches-tool/usage.md)
    - [發行說明](quality-patches-tool/release-notes.md)
    - Quality Patches Tool提供的修補程式 {#patches-available-in-qpt}
@@ -811,6 +811,7 @@ ht-degree: 0%
          - [ACP2E-3753：庫存警示電子郵件未在多重商店設定中使用商店特定的主題範本](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acp2e-3753-stock-alert-emails-not-using-store-specific-theme-templates-in-multi-store-setup.md)
          - [ACSD-65202： [!UICONTROL My Account]頁面未顯示其他商店檢視的最近訂單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65202-my-account-page-doesnt-show-recent-orders-from-other-store-views.md)
          - [ACSD-66093：訪客客戶名稱欄位允許電子郵件輸入，導致無效的訂單電子郵件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails.md)
+         - [ACSD-65331：回到結帳後，[!UICONTROL Pick in Store]中選取的存放區已清除](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65331-selected-store-in-pick-in-store-cleared-after-returning-to-checkout-page.md)
       - v1.1.66 {#v1-1-66}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.66](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview.md)
          - [ACSD-65775：REST API訂單明細中，多重數量的base_row_total與row_total值不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65775-incorrect-order-detail-values-in-rest-api-order-details-for-multiple-quantities.md)
@@ -862,6 +863,6 @@ ht-degree: 0%
       - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
       - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
    - 資源 {#resources}
-      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=zh-Hant)
+      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [變更記錄檔](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
