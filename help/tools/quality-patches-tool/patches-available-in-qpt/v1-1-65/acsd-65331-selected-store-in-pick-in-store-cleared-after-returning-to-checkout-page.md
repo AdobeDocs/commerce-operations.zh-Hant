@@ -78,11 +78,11 @@ ACSD-65331修補程式修正使用者重複返回結帳頁面時，**[!UICONTROL
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[**** >使用狀況][!DNL Quality Patches Tool]**(/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[**&#x200B;** >使用狀況][!DNL Quality Patches Tool]**(/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce： Commerce on Cloud Infrastructure指南中的[升級和修補程式>套用修補程式]**(https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 
 若要進一步瞭解[!DNL Quality Patches Tool]**，請參閱：
 
-* [[!DNL Quality Patches Tool]**： Tools指南中，品質修補程式的自助服務工具]**(/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!DNL Quality Patches Tool]&#x200B;**： Tools指南中，品質修補程式的自助服務工具]**(/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
