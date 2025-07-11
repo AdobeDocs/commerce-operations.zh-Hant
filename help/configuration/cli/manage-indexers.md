@@ -2,9 +2,9 @@
 title: 管理索引子
 description: 請參閱如何檢視和管理Commerce索引器的範例。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
+source-git-commit: ceefb9371dd0a85046cc5bfc0ddc72144d649608
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ bin/magento indexer:info
 
 清單顯示如下：
 
-```
+```text
+cataloginventory_stock                   Stock
 design_config_grid                       Design Config Grid
 customer_grid                            Customer Grid
 catalog_category_product                 Category Products
@@ -29,18 +30,20 @@ catalog_product_category                 Product Categories
 catalogrule_rule                         Catalog Rule Product
 catalog_product_attribute                Product EAV
 inventory                                Inventory
+catalog_product_price                    Product Price
 catalogrule_product                      Catalog Product Rule
-cataloginventory_stock                   Stock
 targetrule_product_rule                  Product/Target Rule
 targetrule_rule_product                  Target Rule/Product
-catalog_product_price                    Product Price
 catalogsearch_fulltext                   Catalog Search
 salesrule_rule                           Sales Rule
+sales_order_data_exporter                Sales Order Feed
+sales_order_status_data_exporter         Sales Order Statuses Feed
+store_data_exporter                      Stores Feed
 ```
 
 >[!NOTE]
 >
-> 使用Live Search、目錄服務或產品推薦的Adobe Commerce商家可選擇使用[SaaS式價格索引](https://experienceleague.adobe.com/zh-hant/docs/commerce/price-indexer/price-indexing)。
+> 使用Live Search、目錄服務或產品推薦的Adobe Commerce商家可選擇使用[SaaS式價格索引](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing)。
 
 ## 檢視索引器狀態
 
@@ -56,22 +59,28 @@ bin/magento indexer:status [indexer]
 
 範例結果：
 
-```
-+----------------------+------------------+-----------+---------------------+---------------------+
-| Title                | Status           | Update On | Schedule Status     | Schedule Updated    |
-+----------------------+------------------+-----------+---------------------+---------------------+
-| Catalog Product Rule | Reindex required | Save      |                     |                     |
-| Catalog Rule Product | Reindex required | Save      |                     |                     |
-| Catalog Search       | Ready            | Save      |                     |                     |
-| Category Products    | Reindex required | Schedule  | idle (0 in backlog) | 2021-06-28 09:45:53 |
-| Customer Grid        | Ready            | Schedule  | idle (0 in backlog) | 2021-06-28 09:45:52 |
-| Design Config Grid   | Ready            | Schedule  | idle (0 in backlog) | 2018-06-28 09:45:52 |
-| Inventory            | Ready            | Save      |                     |                     |
-| Product Categories   | Reindex required | Schedule  | idle (0 in backlog) | 2021-06-28 09:45:53 |
-| Product EAV          | Reindex required | Save      |                     |                     |
-| Product Price        | Reindex required | Save      |                     |                     |
-| Stock                | Reindex required | Save      |                     |                     |
-+----------------------+------------------+-----------+---------------------+---------------------+
+```text
++----------------------------------+---------------------------+--------+-----------+---------------------+---------------------+
+| ID                               | Title                     | Status | Update On | Schedule Status     | Schedule Updated    |
++----------------------------------+---------------------------+--------+-----------+---------------------+---------------------+
+| catalogrule_product              | Catalog Product Rule      | Ready  | Schedule  | idle (0 in backlog) | 2025-07-11 08:00:52 |
+| catalogrule_rule                 | Catalog Rule Product      | Ready  | Schedule  | idle (0 in backlog) | 2025-07-11 08:00:52 |
+| catalogsearch_fulltext           | Catalog Search            | Ready  | Schedule  | idle (0 in backlog) | 2025-07-11 08:01:02 |
+| catalog_category_product         | Category Products         | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:33 |
+| customer_grid                    | Customer Grid             | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:31 |
+| design_config_grid               | Design Config Grid        | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:31 |
+| inventory                        | Inventory                 | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:36 |
+| catalog_product_category         | Product Categories        | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:33 |
+| catalog_product_attribute        | Product EAV               | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:36 |
+| catalog_product_price            | Product Price             | Ready  | Schedule  | idle (0 in backlog) | 2025-07-11 08:00:54 |
+| targetrule_product_rule          | Product/Target Rule       | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:39 |
+| sales_order_data_exporter        | Sales Order Feed          | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:12:10 |
+| sales_order_status_data_exporter | Sales Order Statuses Feed | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:12:10 |
+| salesrule_rule                   | Sales Rule                | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:12:10 |
+| cataloginventory_stock           | Stock                     | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:31 |
+| store_data_exporter              | Stores Feed               | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:12:11 |
+| targetrule_rule_product          | Target Rule/Product       | Ready  | Schedule  | idle (0 in backlog) | 2025-06-03 14:11:39 |
++----------------------------------+---------------------------+--------+-----------+---------------------+---------------------+
 ```
 
 ## 重新索引
@@ -92,7 +101,8 @@ bin/magento indexer:reindex [indexer]
 
 範例結果：
 
-```
+```text
+Stock index has been rebuilt successfully in <time>
 Design Config Grid index has been rebuilt successfully in <time>
 Customer Grid index has been rebuilt successfully in <time>
 Category Products index has been rebuilt successfully in <time>
@@ -100,10 +110,15 @@ Product Categories index has been rebuilt successfully in <time>
 Catalog Rule Product index has been rebuilt successfully in <time>
 Product EAV index has been rebuilt successfully in <time>
 Inventory index has been rebuilt successfully in <time>
-Catalog Product Rule index has been rebuilt successfully in <time>
-Stock index has been rebuilt successfully in <time>
 Product Price index has been rebuilt successfully in <time>
+Catalog Product Rule index has been rebuilt successfully in <time>
+Product/Target Rule index has been rebuilt successfully in <time>
+Target Rule/Product index has been rebuilt successfully in <time>
 Catalog Search index has been rebuilt successfully in <time>
+Sales Rule index has been rebuilt successfully in <time>
+Sales Order Feed index has been rebuilt successfully in <time>
+Sales Order Statuses Feed index has been rebuilt successfully in <time>
+Stores Feed index has been rebuilt successfully in <time>
 ```
 
 >[!INFO]
@@ -177,7 +192,8 @@ bin/magento indexer:reset [indexer]
 
 範例結果：
 
-```
+```text
+Stock indexer has been invalidated.
 Design Config Grid indexer has been invalidated.
 Customer Grid indexer has been invalidated.
 Category Products indexer has been invalidated.
@@ -185,10 +201,15 @@ Product Categories indexer has been invalidated.
 Catalog Rule Product indexer has been invalidated.
 Product EAV indexer has been invalidated.
 Inventory indexer has been invalidated.
-Catalog Product Rule indexer has been invalidated.
-Stock indexer has been invalidated.
 Product Price indexer has been invalidated.
+Catalog Product Rule indexer has been invalidated.
+Product/Target Rule indexer has been invalidated.
+Target Rule/Product indexer has been invalidated.
 Catalog Search indexer has been invalidated.
+Sales Rule indexer has been invalidated.
+Sales Order Feed indexer has been invalidated.
+Sales Order Statuses Feed indexer has been invalidated.
+Stores Feed indexer has been invalidated.
 ```
 
 ## 設定索引子
@@ -212,31 +233,47 @@ bin/magento indexer:show-mode [indexer]
 
 範例結果：
 
-```
-Design Config Grid:                                Update on Save
-Customer Grid:                                     Update on Save
-Category Products:                                 Update on Save
-Product Categories:                                Update on Save
-Catalog Rule Product:                              Update on Save
-Product EAV:                                       Update on Save
-Inventory:                                         Update on Save
-Catalog Product Rule:                              Update on Save
-Stock:                                             Update on Save
-Product Price:                                     Update on Save
-Catalog Search:                                    Update on Save
+```text
+Stock:                                             Update by Schedule
+Design Config Grid:                                Update by Schedule
+Customer Grid:                                     Update by Schedule
+Category Products:                                 Update by Schedule
+Product Categories:                                Update by Schedule
+Catalog Rule Product:                              Update by Schedule
+Product EAV:                                       Update by Schedule
+Inventory:                                         Update by Schedule
+Product Price:                                     Update by Schedule
+Catalog Product Rule:                              Update by Schedule
+Product/Target Rule:                               Update by Schedule
+Target Rule/Product:                               Update by Schedule
+Catalog Search:                                    Update by Schedule
+Sales Rule:                                        Update by Schedule
+Sales Order Feed:                                  Update by Schedule
+Sales Order Statuses Feed:                         Update by Schedule
+Stores Feed:                                       Update by Schedule
 ```
 
 ### 設定索引器模式
 
 >[!IMPORTANT]
 >
->請務必以`realtime`設定[!DNL Customer Grid]，而非`schedule`。 只能使用[!UICONTROL Update on Save]選項來重新索引[!DNL Customer Grid]。 此索引不支援`Update by Schedule`選項。 使用以下命令列，設定此索引器在儲存時更新： `php bin/magento indexer:set-mode realtime customer_grid`
+>[!DNL Customer Grid]索引子行為在2.4.8中變更：
 >
->請參閱&#x200B;_實作行動手冊_&#x200B;中的[索引子組態的最佳實務](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=zh-Hant)。
+>- **2.4.8**&#x200B;之前： [!DNL Customer Grid]索引子只能使用[!UICONTROL Update on Save]選項重新索引，不支援[!UICONTROL Update by Schedule]選項。
+>
+>   使用下列命令設定此索引器在儲存時更新：
+>
+>   ```bash
+>   bin/magento indexer:set-mode realtime customer_grid
+>   ```
+>
+>- **2.4.8和更新版本**： [!DNL Customer Grid]索引子同時支援[!UICONTROL Update on Save]和[!UICONTROL Update by Schedule]模式，且預設為[!UICONTROL Update by Schedule]。
+>
+>請參閱[實作行動手冊](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration)中的&#x200B;_索引子組態的最佳實務_。
 
 >[!INFO]
 >
->在切換索引器模式之前，請將您的網站設定為[維護](../../installation/tutorials/maintenance-mode.md)模式和[停用cron工作](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=zh-Hant#disable-cron-jobs)。 這可確保您不會遭受資料庫鎖定的困擾。
+>在切換索引器模式之前，請將您的網站設定為[維護](../../installation/tutorials/maintenance-mode.md)模式和[停用cron工作](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)。 這樣可確保不會發生資料庫鎖定的情況。
 
 若要指定索引器組態：
 
@@ -299,16 +336,16 @@ Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspe
 
 當索引子設定為`suspended`狀態時，它主要影響自動重新索引和具體化視觀表更新。 以下是簡短概述：
 
-**已略過重新索引**：已略過`suspended`個索引子及任何共用相同`shared_index`的索引子的自動重新索引。 這樣可確保不會重新索引與已暫停處理序相關的資料，以節省系統資源。
+**已略過重新索引**：系統略過`suspended`個索引器及共用相同`shared_index`的任何索引器的自動重新索引。 此方法可避免重新索引與已暫停程式相關的資料，以節省系統資源。
 
-**已略過具體化視觀表更新**：與重新索引類似，也會暫停與`suspended`索引子或其共用索引相關的具體化視觀表更新。 此動作會進一步減少暫停期間的系統負載。
+**已略過具體化視觀表更新**：與重新索引類似，系統也會暫停與`suspended`索引器或其共用索引相關的具體化視觀表更新。 此暫停會進一步減少暫停期間的系統負載。
 
 >[!INFO]
 >
->`indexer:reindex`命令會重新索引所有索引子，包括標示為`suspended`的索引子，以便在自動索引子暫停時手動更新。
+>`indexer:reindex`命令會重新索引所有索引子，包括標示為`suspended`的索引子，以便在自動索引子暫停時進行手動更新時非常有用。
 
 >[!IMPORTANT]
 >
->將索引器的狀態從`suspended`或`invalid`變更為`valid`需要謹慎。 如果有累積的未索引資料，此動作可能會導致效能降低。
+>將索引器的狀態從`valid`或`suspended`變更為`invalid`需要謹慎。 如果有累積的未索引資料，此動作可能會導致效能降低。
 >
 >在手動將狀態更新為`valid`以維持系統效能和資料完整性之前，請務必確保所有資料都正確編制索引。
