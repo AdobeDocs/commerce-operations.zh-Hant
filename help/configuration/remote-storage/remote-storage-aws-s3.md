@@ -3,9 +3,9 @@ title: 設定遠端儲存的AWS S3貯體
 description: 設定您的Commerce專案，以使用AWS S3儲存服務進行遠端儲存。
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
+source-git-commit: 3690043019d70ad15332f757158937a7d5305043
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 >[!WARNING]
 >
 >Adobe強烈建議不要使用公用儲存貯體，因為這樣會帶來嚴重的安全風險。
+>
+>使用客戶提供的S3儲存貯體存放資產或媒體儲存時，Adobe不負責亦不支援與S3儲存貯體的設定、管理或作業相關的任何問題、資料遺失或中斷。 S3儲存貯體的所有疑難排解和維護全權由客戶負責。
 
 **若要使用AWS S3介面卡啟用遠端儲存**：
 
