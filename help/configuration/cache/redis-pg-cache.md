@@ -3,9 +3,9 @@ title: 預設快取使用Redis
 description: 瞭解如何設定Redis為Adobe Commerce的預設快取。
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 2c489f2655e6fb067de1730355df6cd3683ea562
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parame
 | `cache-backend-redis-port` | 連線埠 | Redis伺服器接聽連線埠 | `6379` |
 | `cache-backend-redis-db` | 資料庫 | 如果您對預設和全頁快取都使用Redis，則此為必要專案。 您必須指定其中一個快取的資料庫編號；另一個快取預設使用0。<br><br>**重要**：如果您針對一種以上的快取型別使用Redis，則資料庫編號必須不同。 建議您將預設快取資料庫編號指派為0，將頁面快取資料庫編號指派為1，並將工作階段儲存資料庫編號指派為2。 | `0` |
 | `cache-backend-redis-password` | 密碼 | 設定Redis密碼可啟用其中一項內建的安全性功能： `auth`命令，它要求使用者端驗證以存取資料庫。 密碼是直接在Redis的組態檔中設定： `/etc/redis/redis.conf` | |
+| `--cache-backend-redis-use-lua` | use_lua | 啟用或停用LUA。 <br><br>**LUA**： Lua可讓我們在Redis內執行部分應用程式邏輯，藉由原子執行來改善效能並確保資料的一致性。 | `0` |
+| `--cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | 啟用或停用記憶體回收的LUA。 <br><br>**LUA**： Lua可讓我們在Redis內執行部分應用程式邏輯，藉由原子執行來改善效能並確保資料的一致性。 | `1` |
 
 ### 命令範例
 
