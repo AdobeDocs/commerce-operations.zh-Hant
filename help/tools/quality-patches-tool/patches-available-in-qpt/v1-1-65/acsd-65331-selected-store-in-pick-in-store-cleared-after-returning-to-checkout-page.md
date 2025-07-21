@@ -4,13 +4,13 @@ description: 套用ACSD-65331修補程式以修正Adobe Commerce問題，該問�
 feature: Inventory
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a322e822ccf0b584d2385d3f38a3b92ebe3a23d3
+exl-id: 10aaf898-feca-4485-90f6-6b3a9ea013b2
+source-git-commit: dc5df9e918adffe8d6901478a676d9da36b33bcc
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65331：回到結帳後，**[!UICONTROL Pick in Store]**&#x200B;中選取的存放區已清除
 
@@ -28,7 +28,7 @@ ACSD-65331修補程式修正使用者重複返回結帳頁面時，**[!UICONTROL
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -78,11 +78,11 @@ ACSD-65331修補程式修正使用者重複返回結帳頁面時，**[!UICONTROL
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[**&#x200B;** >使用狀況][!DNL Quality Patches Tool]**(/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce： Commerce on Cloud Infrastructure指南中的[升級和修補程式>套用修補程式]**(https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 
-若要進一步瞭解[!DNL Quality Patches Tool]**，請參閱：
+若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
-* [[!DNL Quality Patches Tool]&#x200B;**： Tools指南中，品質修補程式的自助服務工具]**(/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。
+* [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
