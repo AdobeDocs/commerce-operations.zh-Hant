@@ -4,9 +4,9 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.66中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: f24e6b4cc973247cb176b7e6b10cc9c61e1c16c2
+source-git-commit: a7cbe756f73211e4cc400ea27e357e99aa39605c
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ QPT v1.1.66包含下列修補程式：
 1. **ACSD-65775**：多個數量的REST API訂單詳細資料中的`base_row_total`和`row_total`值不正確。
 1. **ACSD-65777**： `MediaGallery` GraphQL請求中的產品影像型別缺少「型別」欄位。
 1. **ACSD-65848**：管理員中的類別載入速度非常慢。
-1. **ACSD-65913**： OpenSearch針對具有相同價格之產品的類別擲回`illegal_argument_exception`。
+1. **ACSD-65913**： [!DNL OpenSearch]會針對具有相同價格之產品的類別擲回`illegal_argument_exception`。
 1. **ACSD-66041**：由於遺失CountryID，無法搜尋取車地點的愛爾蘭(IE)郵遞區號。
 1. **ACSD-66212**：修正匯入客戶CSV檔案兩次，導致第二次和後續嘗試失敗的問題。
 
