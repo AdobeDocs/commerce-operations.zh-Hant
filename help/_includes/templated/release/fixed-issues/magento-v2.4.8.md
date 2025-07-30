@@ -1,5 +1,5 @@
 ---
-source-git-commit: 92907752d92cd7f4a81377a5239dfded10fe3655
+source-git-commit: 1f377ab6e4dcdd2d350366f3889b8befd233474b
 workflow-type: tm+mt
 source-wordcount: '25720'
 ht-degree: 0%
@@ -1878,7 +1878,7 @@ _AC-8353 - [GitHub問題](https://github.com/magento/magento2/issues/37253) - [G
 
 _AC-8356 - [GitHub問題](https://github.com/magento/magento2/issues/37250) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/37000)_
 
-#### editorconfig語法中的空格中斷`[&lbrace;composer,auth&rbrace;.json]`的規則
+#### editorconfig語法中的空格中斷`[{composer,auth}.json]`的規則
 
 修正editorconfig中的語法錯誤後，系統現在可正確將4空格縮排套用至composer和auth.json檔案。 先前，由於editorconfig語法中有空格，這些檔案的格式不正確，有2個空格的縮排。
 
@@ -2022,7 +2022,7 @@ _ACP2E-2642 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 _ACP2E-2653 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### 包含價格篩選器`&lbrace;from:&quot;0&quot;&rbrace;`的GraphQL產品呼叫未傳回任何結果
+#### 包含價格篩選器`{from:&quot;0&quot;}`的GraphQL產品呼叫未傳回任何結果
 
 先前，使用零價格篩選條件搜尋的graphql產品由於擲回例外狀況，完全沒有傳回任何結果。 現在，搜尋會如預期傳回結果。
 
@@ -2559,8 +2559,8 @@ _LYNX-382_
 
 修正將簡單產品（分組產品的一部分）新增到購物車時，即使產品已指派影像，仍會傳回預留位置縮圖影像的問題。
 修正詳細資料：
-* 產品縮圖現在可以正確顯示指派的影像（若有）。
-* 縮圖選取專案依照下的管理員設定：
+- 產品縮圖現在可以正確顯示指派的影像（若有）。
+- 縮圖選取專案依照下的管理員設定：
 商店>設定>銷售>結帳>購物車>分組產品影像。
 這可確保根據商店設定分組產品的一致縮圖行為。
 
@@ -2582,8 +2582,8 @@ _LYNX-402_
 
 解決使用具有選項的父SKU新增可設定產品時，only_x_left_in_stock屬性一律傳回0的問題。
 修正詳細資料：
-* only_x_left_in_stock值現在會正確反映所選子變體而非父SKU的庫存。
-* 這可確保在購物車和產品頁面中針對可設定的產品變化正確顯示庫存量。
+- only_x_left_in_stock值現在會正確反映所選子變體而非父SKU的庫存。
+- 這可確保在購物車和產品頁面中針對可設定的產品變化正確顯示庫存量。
 
 _LYNX-403_
 
