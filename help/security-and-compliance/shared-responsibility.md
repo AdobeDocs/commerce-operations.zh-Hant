@@ -2,9 +2,9 @@
 title: 共擔責任安全性與營運模式
 description: 瞭解在雲端基礎結構專案中，Adobe Commerce中涉及的每一方的安全性責任。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 4cd71d156ef6833185565180b297ba1b7f42a032
+source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
@@ -798,6 +798,28 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 |     | Adobe | 商家 |
 | --- | --- | --- |
 | Product Recommendations服務的可用性 | R |   |
+
+{style="table-layout:auto"}
+
+#### 即時搜尋
+
+|     | Adobe | 商家 |
+| --- | --- | --- |
+| 即時搜尋服務的可用性 | R |   |
+
+{style="table-layout:auto"}
+
+#### 店面活動（資料收集）的品質，可支援產品建議和即時搜尋輸出
+
+|     | Adobe | 商家 |
+| --- | --- | --- |
+| 核心主題(Luma) | R |   |
+| 自訂主題 |  | R |
+| 核心PWA實施 | R |   |
+| 自訂PWA實施 |  | R |
+| 核心AEM EDS實作(Commerce樣板) | R |   |
+| 自訂AEM EDS實施 |  | R |
+| 任何其他自訂店面實作 |  | R |
 
 {style="table-layout:auto"}
 
