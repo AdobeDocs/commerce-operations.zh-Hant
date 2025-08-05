@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 099985e4ddb4f911dc5106162b96b07a008a9b57
+source-git-commit: d9b9520f4a9d20fbf7fef43b6df1c80fb15eedb2
 workflow-type: tm+mt
-source-wordcount: '7919'
+source-wordcount: '7923'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Adobe Commerce的管理警報： CPU警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質修補工具 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用情況](quality-patches-tool/usage.md)
    - [發行說明](quality-patches-tool/release-notes.md)
    - Quality Patches Tool提供的修補程式 {#patches-available-in-qpt}
@@ -826,6 +826,8 @@ ht-degree: 0%
       - v1.1.67 {#v1-1-67}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.67](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview.md)
          - [ACSD-66434：公司[!UICONTROL Customer ID]查詢中缺少 [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
+      - v1.1.68 {#v1-1-68}
+         - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
@@ -873,6 +875,6 @@ ht-degree: 0%
       - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
       - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
    - 資源 {#resources}
-      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=zh-Hant)
+      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [變更記錄檔](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
