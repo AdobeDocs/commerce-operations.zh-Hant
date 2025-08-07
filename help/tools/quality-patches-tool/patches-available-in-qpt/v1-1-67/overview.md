@@ -4,7 +4,7 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.67中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: 7fd88da04ca147829aa5aa7f90d05d8760ff0f3d
+source-git-commit: f26ada4171197107866c45db7a711bce8be1d18e
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.67中可用修補程式所修正問題的詳細說明。
 
 QPT v1.1.67包含下列修補程式：
-1. **AC-14985**：與TLS一併傳送的SMTP郵件傳回錯誤。
+1. **AC-14985**：使用TLS傳送SMTP電子郵件時發生錯誤。
 1. **AC-14984**： php-amqplib/php-amqplib ^3.2.0的SSL連線問題。
 1. **ACSD-65935**： `customerOrders` GraphQL查詢在刪除產品時傳回內部伺服器錯誤。
 1. **ACSD-66049**：非英文店面因為ICU的資料庫版本而顯示不正確的價格。
