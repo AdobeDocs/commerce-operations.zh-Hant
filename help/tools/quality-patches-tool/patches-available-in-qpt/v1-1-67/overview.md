@@ -4,9 +4,9 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.67中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: 6758b85e797de75ea5430062c8335fa903f00838
+source-git-commit: a0bf44520c0d355c9aca3aaab55306a2d0fe018e
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ QPT v1.1.67包含下列修補程式：
 1. **ACSD-65935**： `customerOrders` GraphQL查詢在刪除產品時傳回內部伺服器錯誤。
 1. **ACSD-66049**：非英文店面因為ICU的資料庫版本而顯示不正確的價格。
 1. **ACSD-66084**： `row_total_incl_tax`針對訂單API回應中的完全折扣專案，傳回接近零的殘值，而非0.00。
-1. **ACSD-66118**：若未重新整理組態快取，更新存放區檢視程式碼會清除設計組態設定。
+1. **ACSD-66118**：若未重新整理組態快取，更新&#x200B;**[!UICONTROL Store View]**&#x200B;程式碼會清除&#x200B;**[!UICONTROL Design Configuration]**&#x200B;設定。
 1. **ACSD-66139**： GraphQL在訂購期間傳回不存在的或非使用中購物車的UNDEFINED錯誤。
 1. **ACSD-66301**：將產品從訂單移回Admin中的購物車導致數量不符。
 1. **ACSD-66434**：公司GraphQL查詢中缺少客戶ID。
