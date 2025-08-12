@@ -2,9 +2,10 @@
 title: 設定Valkey
 description: 取得Valkey功能的概觀並開始您的Valkey設定。
 feature: Configuration, Cache
-source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
+exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
+source-git-commit: b2cf71bfda3e5db8e27eb28d764cf99216454e33
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -27,13 +28,13 @@ ht-degree: 0%
 
 ## 設定值鍵組態
 
-視您的安裝而定，您通常可以在`/etc/valkey/valkey.conf`或`/etc/valkey/<port>.conf`中找到您的Valkey組態。
+視您的安裝而定，您通常可以在`/etc/valkey/valkey.conf`檔案或`/etc/valkey/<port>.conf`檔案中找到您的Valkey組態。
 
 若要針對您的需求最佳化Valkey執行個體，請為每個工作階段使用專屬的執行個體、Commerce快取和FPC，以獲得最佳結果。
 
 Adobe建議對工作階段啟用持續性，以便將Valkey資料複製到磁碟。 您可以使用Valkey Database Backup (RDB)快照或僅附加檔案(AOF)持續性記錄檔。
 
-- **RDB** （Valkey資料庫）快照在指定時間後，將完整的資料庫儲存在傾印檔案中，而自上次儲存後的最小金鑰數目已變更。 使用`valkey.conf`檔案內的`save`設定來設定此設定。
+- **RDB** （Valkey資料庫）快照在指定時間後，將完整的資料庫儲存在傾印檔案中，而自上次儲存後的最小金鑰數目已變更。 使用`save`檔案內的`valkey.conf`設定來設定此設定。
 
 - **僅附加檔案** (AOF)會將每個傳送給Valkey的寫入作業儲存在日誌檔中。 Valkey只會在重新啟動時讀取此檔案，並使用它來還原原始資料集。
 

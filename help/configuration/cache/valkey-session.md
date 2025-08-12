@@ -2,12 +2,14 @@
 title: 使用Valkey進行工作階段儲存
 description: 瞭解如何設定工作階段存放區的Valkey。
 feature: Configuration, Cache
-source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
+exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
+source-git-commit: bc0274074c0254f649af2f9e2b288017ac82ce9b
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 1%
 
 ---
+
 
 # 使用Valkey進行工作階段儲存
 
