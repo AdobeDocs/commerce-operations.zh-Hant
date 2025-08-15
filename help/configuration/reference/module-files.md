@@ -2,7 +2,7 @@
 title: 模組組態檔
 description: 瞭解如何使用設定型別來自訂模組。
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 80d7a7f2592e547ef70f2fac63c25be0cce9365d
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Commerce應用程式合併演演算法：
 | --- | --- | --- | --- |
 | `address_formats.xml` | 位址格式宣告 | 主要，全域 | [\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml` | [存取控制清單](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml) | 全域 | [\Magento\Framework\Acl\AclResource\Provider](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
-| `analytics.xml` | [進階報告]https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | 主要，全域 | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
+| `analytics.xml` | [進階報告](https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | 主要，全域 | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
 | `cache.xml` | 快取型別宣告 | 主要，全域 | [\Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
 | `catalog_attributes.xml` | 目錄屬性設定 | 全域 | [\Magento\Catalog\Model\Attribute\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Attribute/Config/Data.php) |
 | `config.php`和`env.php` | [部署組態](../reference/deployment-files.md) | 這些檔案可由內部設定處理器讀取/寫入。 | 沒有物件，無法自訂 |
