@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL MySQL]索引標籤'
-description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL MySQL]標籤。
+description: 瞭解[!UICONTROL MySQL]的 [!DNL Observation for Adobe Commerce]標籤。
 exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 ## [!UICONTROL MySQL% free storage by node]
 
-依節點![&#128279;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)的MySQL%可用儲存空間
+依節點![的](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)MySQL%可用儲存空間
 
-許多問題是由指派給MySQL之存放區中的MySQL用盡存放區所造成（`datadir` MySQL組態設定，預設值為`/data/mysql`），或是`tmpdir`空間不足。 預設`tmpdir` （MySQL設定）是`/tmp`。 **[!UICONTROL MySQL% free storage by node]**&#x200B;框架會檢視`/, /tmp` （若定義為個別掛載）和`/data/mysql`可用儲存空間百分比。 從MySQL 5.7版（MariaDB 10.2版）開始，未壓縮的`tmp`資料表會寫入檔案(ibtmp1)中`/data/mysql`目錄的`tmp`表格空間。 依預設，此檔案會無限制地自動展開。 因為它是表格空間，所以不會減少大小，而且在MySQL重新啟動時會重設為12MB。
+許多問題是由指派給MySQL之存放區中的MySQL用盡存放區所造成（`datadir` MySQL組態設定，預設值為`/data/mysql`），或是`tmpdir`空間不足。 預設`tmpdir` （MySQL設定）是`/tmp`。 **[!UICONTROL MySQL% free storage by node]**&#x200B;框架會檢視`/, /tmp` （若定義為個別掛載）和`/data/mysql`可用儲存空間百分比。 從MySQL 5.7版（MariaDB 10.2版）開始，未壓縮的`tmp`資料表會寫入檔案(ibtmp1)中`tmp`目錄的`/data/mysql`表格空間。 依預設，此檔案會無限制地自動展開。 因為它是表格空間，所以不會減少大小，而且在MySQL重新啟動時會重設為12MB。
 
 ## [!UICONTROL MySQL Connections by Node]
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 **[!UICONTROL Deadlocks]**&#x200B;框架會檢視從MySQL記錄檔剖析的下列字串：
 
 * &#39;%PHP嚴重錯誤：允許的記憶體大小為%&#39;)為php_mem_error
-* &#39;%get lock；嘗試重新啟動交易，查詢為：DELETE自\&#39;cron_schedule%&#39;)為cron_sched_lock_del
+* &#39;%get lock；嘗試重新啟動交易，查詢為： DELETE FROM \&#39;cron_schedule%&#39;) as cron_sched_lock_del
 * &#39;% lock for cron job： indexer_reindex_all_invalid%&#39;)設為&#39;lock_indexer_reindex_all_invalid%&#39;
 * &#39;%鎖定cron工作： cron_schedule%&#39;)為&#39;lock_cron_schedule&#39;
 * &#39;% lock for cron job：%&#39;)作為&#39;total_cron_lock&#39;

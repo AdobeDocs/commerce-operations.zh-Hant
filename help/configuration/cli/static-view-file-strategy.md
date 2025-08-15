@@ -66,7 +66,7 @@ ht-degree: 0%
 - `map.php`
 - `requirejs-map.js`
 
-[`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php)已使用`map.php`檔案來建置正確的URL。
+`map.php`[`Magento\Framework\View\Asset\Repository`已使用](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php)檔案來建置正確的URL。
 
 `requirejs-map.js`由`baseUrlResolver`外掛程式用於RequireJS。
 

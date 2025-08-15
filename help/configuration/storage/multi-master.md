@@ -72,7 +72,7 @@ Adobe Commerce使用三個主要資料庫和可供設定的從屬資料庫數量
   >
   >您必須手動備份另外兩個資料庫執行處理。 Commerce僅備份主要資料庫執行個體。 [`magento setup:backup --db`](../../installation/tutorials/backup.md)命令和Admin選項不會備份其他表格。
 
-## 必要條件
+## 先決條件
 
 分割資料庫需要您在任一主機上設定三個MySQL master資料庫(全部三個Commerce伺服器上，每個資料庫在個別伺服器上，依此類推)。 這些是&#x200B;_master_&#x200B;資料庫，使用方式如下：
 

@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Quality Patches Tool]：品質修補程式的自助服務工具'
-description: '[!DNL Quality Patches Tool]可讓您套用、還原及檢視已安裝Adobe Commerce版本（內部部署和雲端基礎結構）或Magento Open Source可用的品質修補程式的一般資訊。'
+description: '[!DNL Quality Patches Tool]可讓您套用、還原及檢視已安裝的Adobe Commerce版本（內部部署和雲端基礎結構）或Magento Open Source可用的品質修補程式的一般資訊。'
 feature: Tools and External Services
 role: Admin
 exl-id: a83d3834-841d-4b90-b40a-fda985a85452
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # [!DNL Quality Patches Tool]：品質修補程式的自助服務工具
 
-[!DNL Quality Patches Tool]可讓您套用、還原及檢視已安裝Adobe Commerce版本（內部部署和雲端基礎結構）或Magento Open Source可用的品質修補程式的一般資訊。
+[!DNL Quality Patches Tool]可讓您套用、還原及檢視已安裝的Adobe Commerce版本（內部部署和雲端基礎結構）或Magento Open Source可用的品質修補程式的一般資訊。
 
 此工具可讓您更快速地自助解決問題，以便輕鬆套用Adobe Commerce支援建議的修補程式，以解決可能在Adobe Commerce中遇到的問題。
 
 >[!NOTE]
 >
->您應視需要使用工具，僅針對個別情況提取必要的品質修正，而不要將其視為維護Adobe Commerce和Magento Open Source程式碼的長期方法。 升級至最新版的Adobe Commerce或Magento Open Source仍是解決品質問題的最佳方法，應優先處理。
+>您應視需要使用工具，僅針對個別情況提取必要的品質修正，而不要將其視為維護Adobe Commerce和Magento Open Source程式碼的長期方法。 升級至最新版Adobe Commerce或Magento Open Source仍是解決品質問題的最佳方法，應優先進行。
 
 ## 取得並使用[!DNL Quality Patches Tool]
 

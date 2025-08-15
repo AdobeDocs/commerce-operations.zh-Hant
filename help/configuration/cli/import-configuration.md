@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-當您使用Commerce 2.2 [管線部署模型](../deployment/technical-details.md)設定生產系統時，必須&#x200B;_從`config.php`和`env.php`匯入_組態設定至資料庫。
+當您使用Commerce 2.2 [管線部署模型](../deployment/technical-details.md)設定生產系統時，必須&#x200B;_從_&#x200B;和`config.php`匯入`env.php`組態設定至資料庫。
 這些設定包括配置路徑和值、網站、商店、商店檢視和主題。
 
 匯入網站、商店、商店檢視和主題後，您可以在生產系統上建立產品屬性，並將其套用至網站、商店和商店檢視。
@@ -64,7 +64,7 @@ Nothing to import
 
 ### 系統組態
 
-Commerce直接使用`config.php`或`env.php`檔案中`system`陣列的值，而非將其匯入資料庫，因為這些值需要一些前置和後置處理動作。
+Commerce直接使用`system`或`config.php`檔案中`env.php`陣列的值，而非將其匯入資料庫，因為這些值需要一些前置和後置處理動作。
 
 例如，必須使用後端模型驗證設定路徑`web/secure/base_url`的值。
 
@@ -80,7 +80,7 @@ Commerce直接使用`config.php`或`env.php`檔案中`system`陣列的值，而�
 ### 網站、商店和商店群組設定
 
 我們匯入下列型別的組態。
-（這些組態位於`config.php`中的`scopes`陣列下。）
+（這些組態位於`scopes`中的`config.php`陣列下。）
 
 - `websites`：網站相關設定
 - `groups`：儲存相關設定
@@ -98,7 +98,7 @@ Commerce直接使用`config.php`或`env.php`檔案中`system`陣列的值，而�
 
 ### 主題設定
 
-主題設定包含在Commerce系統中註冊的所有主題；資料直接來自`theme`資料庫表格。 （主題設定在`config.php`中的`themes`陣列中。）
+主題設定包含在Commerce系統中註冊的所有主題；資料直接來自`theme`資料庫表格。 （主題設定在`themes`中的`config.php`陣列中。）
 
 #### 佈景主題資料的結構
 

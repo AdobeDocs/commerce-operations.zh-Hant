@@ -1,6 +1,6 @@
 ---
-title: 配置遠端存儲
-description: 了解如何為本地商務應用程式配置遠端存儲模組。
+title: 設定遠端儲存
+description: 瞭解如何為內部部署Commerce應用程式設定遠端儲存模組。
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
 source-git-commit: 419a21604d1fda0a76dd0375ae2340fd6e59ec89
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# 配置遠端存儲
+# 設定遠端儲存
 
-遠端存儲 模組 提供了商店媒體文件以及使用 AWS S3 等儲存服務在持久性遠端儲存容器中計劃導入和導出的選項。
+「遠端儲存」模組提供儲存媒體檔案的選項，並可使用儲存服務(例如AWS S3)在永久性的遠端儲存容器中排程匯入和匯出。
 
-默認情況下，Adobe Systems Commerce 應用程式 將媒體文件存儲在包含應用程式的同一文件系統中。 這對於複雜的多伺服器配置效率低下，並且可能導致共用資源時性能下降。 使用遠端儲存模組，您可以在目錄中商店媒體 `pub/media` 文件，並在遠端物件儲存的目錄中導入/匯出文件 `var` ，以利用伺服器端圖像大小調整。
+依預設，Adobe Commerce應用程式會將媒體檔案儲存在包含該應用程式的相同檔案系統中。 對於複雜的多伺服器設定，這會造成低效率，並可能導致共用資源時效能降低。 使用遠端儲存模組，您可以將媒體檔案儲存在`pub/media`目錄中，並將匯入/匯出檔案儲存在遠端物件儲存的`var`目錄中，以利用伺服器端影像大小調整功能。
 
 >[!BEGINSHADEBOX]
 
-不能同時啟用遠端儲存 _和_ 資料庫儲存。 必須先禁用資料庫儲存，然後才能啟用遠端儲存。
+您無法同時啟用遠端存放區&#x200B;_和_&#x200B;資料庫存放區。 您必須先停用資料庫儲存，才能啟用遠端儲存。
 
 ```bash
 bin/magento config:set system/media_storage_configuration/media_database 0
@@ -30,7 +30,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->- 遠端儲存僅適用於Commerce 2.4.2版和更新版本。 請參閱[2.4.2發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-2)。
+>- 遠端儲存僅適用於Commerce 2.4.2版和更新版本。 請參閱[2.4.2發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2)。
 >
 >- 遠端儲存模組在雲端基礎結構上的Adobe Commerce上有&#x200B;_限制_&#x200B;支援。 Adobe無法完全疑難排解協力廠商儲存配接器服務。 請參閱[在雲端基礎結構上設定Commerce的遠端儲存](cloud-support.md)，以取得為雲端專案實作遠端儲存的指引。
 
@@ -46,24 +46,24 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 `parameter-name`參考特定的遠端儲存體引數名稱。 下表列出可用於設定遠端儲存的引數：
 
-| 命令行參數 | 參數名稱 | 說明 | 預設值 |
+| 命令列引數 | 引數名稱 | 說明 | 預設值 |
 |--- |--- |--- |--- |
-| `remote-storage-driver` | 司機 | 適配器名稱<br>可能的值：<br>**file**：禁用遠端儲存並使用本地文件系統&#x200B;<br>**aws-s3**：使用 [Amazon 簡單存儲服務 （Amazon S3）](remote-storage-aws-s3.md) | 沒有 |
-| `remote-storage-bucket` | 桶 | 物件儲存或容器名稱 | 沒有 |
-| `remote-storage-prefix` | 前綴 | 選擇性首碼（物件儲存內的位置） | 空白 |
+| `remote-storage-driver` | 驅動程式 | 介面卡名稱<br>可能的值： <br>**檔案**：停用遠端儲存體並使用本機檔案系統&#x200B;<br>**aws-s3**：使用[Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md) | 無 |
+| `remote-storage-bucket` | 貯體 | 物件儲存或容器名稱 | 無 |
+| `remote-storage-prefix` | 前置詞 | 選擇性首碼（物件儲存內的位置） | 空白 |
 | `remote-storage-region` | 區域 | 區域名稱 | 無 |
 | `remote-storage-key` | 存取金鑰 | 選用的存取金鑰 | 空白 |
 | `remote-storage-secret` | 秘密金鑰 | 選擇性秘密金鑰 | 空白 |
 
-### 存儲配接器
+### 儲存配接卡
 
-預設儲存位置位於本地文件系統中。 _儲存適配器_&#x200B;使您能夠連接到 儲存 服務並在任何地方商店檔。[!DNL Commerce] 支持配置以下儲存服務：
+預設儲存位置位於本機檔案系統中。 _儲存配接卡_&#x200B;可讓您連線至儲存服務，並將您的檔案存放於任何地方。 [!DNL Commerce]支援設定下列儲存服務：
 
-- [Amazon 簡單存儲服務 （Amazon S3）](remote-storage-aws-s3.md)
+- [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 
 ## 啟用遠端儲存
 
-您可以在 Adobe Systems Commerce 安裝過程中安裝遠端儲存，也可以將遠端儲存添加到現有的商務執行個體。 下列範例示範使用一組`remote-storage`引數搭配Commerce `setup` CLI命令的每個方法。 至少您必須提供存放裝置`driver`、`bucket`和`region`。
+您可以在Adobe Commerce安裝期間安裝遠端儲存裝置，或將遠端儲存裝置新增至現有的Commerce執行個體。 下列範例示範使用一組`remote-storage`引數搭配Commerce `setup` CLI命令的每個方法。 至少您必須提供存放裝置`driver`、`bucket`和`region`。
 
 - 範例：使用遠端儲存裝置安裝Commerce
 
@@ -91,7 +91,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->同步命令只會移轉`pub/media`目錄中的檔案，_不會_ `var`目錄中的匯入/匯出檔案。 請參閱&#x200B;_Commerce 2.4使用手冊_&#x200B;中的[排程匯入/匯出](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=zh-Hant)。
+>同步命令只會移轉`pub/media`目錄中的檔案，_不會_ `var`目錄中的匯入/匯出檔案。 請參閱[Commerce 2.4使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)中的&#x200B;_排程匯入/匯出_。
 
 <!-- link definitions -->
 

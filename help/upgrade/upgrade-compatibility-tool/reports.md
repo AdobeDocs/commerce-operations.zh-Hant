@@ -4,7 +4,7 @@ description: 請依照下列步驟，在您的Adobe Commerce專案上執行 [!DN
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 
 - *目前的版本*：目前安裝的版本。
 - *目標版本*：您要升級的目標版本。
-- *執行時間*：分析建立報告所花費的時間(mm：ss)。
+- *執行時間*：分析建立報告所花費的時間(mm:ss)。
 - *需要更新的模組*：包含相容性問題且需要更新的模組百分比。
 - *需要更新的檔案*：包含相容性問題且需要更新的檔案百分比。
 - *嚴重錯誤總數*：找到嚴重錯誤的數目。
@@ -96,7 +96,7 @@ bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 
 右上角有一個下拉式清單，可讓您選取不同層級。 識別的問題清單會據此篩選。
 
-![HTML報告 — 下拉式清單使用量](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+![HTML報告 — 下拉式清單使用情形](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ HTML報表也包含四個不同的圖表：
 
 ![HTML報告 — 圖表](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-HTML報表圖表也會隨之更新，但`Modules with relative sizes and issues`的唯一例外情況（由原本設定的`min-issue-level`產生）。
+HTML報表圖表也會據此更新，但`Modules with relative sizes and issues`是唯一例外，這是使用原本設定的`min-issue-level`所產生。
 
 如果要檢視`Modules with relative sizes and issues`圖表的不同結果，您必須重新執行命令，為`--min-issue-level`選項提供另一個值。
 

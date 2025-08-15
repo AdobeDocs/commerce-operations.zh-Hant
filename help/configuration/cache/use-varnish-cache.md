@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 清漆清除
 
-根據[Varnish檔案](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html)，「當您從快取中挑選物件並捨棄它及其變體時，就會發生&#x200B;*清除*。」 清漆清除類似於快取清除命令(或按一下Admin中的&#x200B;**排清Magento快取**)。
+根據[Varnish檔案](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html)，「當您從快取中挑選物件並捨棄它及其變體時，就會發生&#x200B;*清除*。」 清漆清除類似於快取清除命令(或按一下[管理員]中的[清除Magento快取] **。**
 
 事實上，當您清除、排清或重新整理Commerce快取時，「清漆」也會清除。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 設定Commerce以清除清漆
 
-使用[`magento setup:config:set`](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset)命令設定Varnish主機後，Commerce會清除清漆主機。
+使用[`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset)命令設定Varnish主機後，Commerce會清除清漆主機。
 
 您可以使用選用的引數`--http-cache-hosts`引數，指定以逗號分隔的Varnish主機和監聽連線埠清單。 設定所有Varnish主機，無論您有一台或多台。 （請勿以空格字元分隔主機。）
 
@@ -56,6 +56,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 
 當您在管理員中重新整理Commerce快取（也稱為&#x200B;*清除*&#x200B;快取）或使用命令列時，就可以清除Varnish主機。
 
-若要使用Admin重新整理快取，請按一下[工具] > [快取管理] **&#x200B;**，然後按一下頁面頂端的[排清Magento快取] **。**&#x200B;[!UICONTROL SYSTEM]&#x200B;**&#x200B;**（您也可以重新整理個別快取型別。）
+若要使用Admin重新整理快取，請按一下[工具] > [快取管理] **[!UICONTROL SYSTEM]** **，然後按一下頁面頂端的[排清Magento快取]**。 ****（您也可以重新整理個別快取型別。）
 
 若要使用命令列重新整理快取，您通常使用[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types)命令作為[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)。

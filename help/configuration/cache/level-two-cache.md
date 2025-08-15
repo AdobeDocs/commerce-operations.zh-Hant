@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 - 檢查快取資料版本，並確定最新的快取儲存在本機
 - 將最新的快取從遠端電腦傳輸至本機電腦
 
-Commerce會將雜湊資料版本儲存在Redis中，並在一般索引鍵後面加上「：hash」尾碼。 如果有過時的本機快取，資料會透過快取配接器傳輸到本機電腦。
+Commerce會將雜湊資料版本儲存在Redis中，尾碼為&#39;:hash&#39;附加至一般索引鍵。 如果有過時的本機快取，資料會透過快取配接器傳輸到本機電腦。
 
 >[!INFO]
 >
->對於雲端基礎結構上的Adobe Commerce，您可以針對L2快取設定使用[部署變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#redis_backend)。
+>對於雲端基礎結構上的Adobe Commerce，您可以針對L2快取設定使用[部署變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)。
 
 ## 設定範例
 
@@ -72,7 +72,7 @@ Commerce會將雜湊資料版本儲存在Redis中，並在一般索引鍵後面�
 
 Adobe建議使用Redis進行遠端快取(`\Magento\Framework\Cache\Backend\Redis`)，並使用`Cm_Cache_Backend_File`進行共用記憶體中資料的本機快取，使用： `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
-Adobe建議使用[`cache preload`](redis-pg-cache.md#redis-preload-feature)功能，因為它可大幅降低Redis的壓力。 別忘了為預先載入金鑰新增尾碼「：hash」。
+Adobe建議使用[`cache preload`](redis-pg-cache.md#redis-preload-feature)功能，因為它可大幅降低Redis的壓力。 別忘了為預先載入金鑰新增尾碼&#39;:hash&#39;。
 
 ## 過時的快取選項
 
@@ -92,7 +92,7 @@ Adobe建議僅對從中獲益最大的快取型別啟用`use_stale_cache`選項�
 - `reflection`
 - `translate`
 
-Adobe不建議為`default`快取型別啟用`use_stale_cache`選項。
+Adobe不建議為`use_stale_cache`快取型別啟用`default`選項。
 
 下列程式碼顯示設定範例：
 

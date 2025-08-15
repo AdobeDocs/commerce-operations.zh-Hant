@@ -1,5 +1,5 @@
 ---
-title: 軟體Recommendations
+title: 軟體建議
 description: 檢閱與Adobe Commerce部署最佳效能相關的建議軟體清單。
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
@@ -132,7 +132,7 @@ memory_limit=1G
 
 #### Realpath_cache設定
 
-若要改善[!DNL Commerce]效能，請在`php.ini`檔案中新增或更新下列建議的`realpath_cache`設定。 此組態可讓PHP處理序快取檔案的路徑，而不是在每次頁面載入時查詢它們。 請參閱PHP檔案中的[效能調整](https://www.php.net/manual/en/ini.core.php)。
+若要改善[!DNL Commerce]效能，請在`realpath_cache`檔案中新增或更新下列建議的`php.ini`設定。 此組態可讓PHP處理序快取檔案的路徑，而不是在每次頁面載入時查詢它們。 請參閱PHP檔案中的[效能調整](https://www.php.net/manual/en/ini.core.php)。
 
 ```text
 realpath_cache_size=10M
@@ -151,7 +151,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-微調opcache的記憶體配置時，請考慮Magento程式碼庫的大小和所有擴充功能。 Magento的效能團隊會使用上述範例中的值進行測試，因為它在opcache中提供的空間足以容納已安裝擴充功能的平均數量。
+當您微調opcache的記憶體配置時，請考慮Magento程式碼庫的大小和所有擴充功能。 Magento的效能團隊會使用前述範例中的值進行測試，因為它在opcache中提供的空間足以供平均已安裝擴充功能數目使用。
 
 如果您的電腦記憶體不足，但未安裝許多擴充功能或自訂專案，請使用下列設定來取得類似的結果：
 
@@ -221,9 +221,9 @@ Magento強烈建議使用[!DNL Varnish]作為商店的完整頁面快取伺服�
 
 如果您的網站不需要部署大量地區設定，且您的伺服器位於與大多數客戶相同的區域，您可以將資產儲存在[!DNL Varnish]中，而不使用CDN，以較低的成本獲得顯著的效能提升。
 
-若要將您的資產儲存在[!DNL Varnish]，請在[!DNL Commerce]為[!DNL Varnish] 5產生的`default.vcl`檔案中新增下列VCL專案。
+若要將您的資產儲存在[!DNL Varnish]，請在`default.vcl`為[!DNL Commerce] 5產生的[!DNL Varnish]檔案中新增下列VCL專案。
 
-在`vcl_recv`子常式中PURGE要求的`if`陳述式結尾處，新增：
+在`if`子常式中PURGE要求的`vcl_recv`陳述式結尾處，新增：
 
 ```javascript
 # static files are cacheable. remove SSL flag and cookie
@@ -235,7 +235,7 @@ if (req.url ~ "^/(pub/)?(media|static)/.*\.(ico|html|css|js|jpg|jpeg|png|gif|tif
 }
 ```
 
-在`vcl_backend_response`子常式中，尋找為`GET`或`HEAD`要求取消設定Cookie的`if`陳述式。
+在`vcl_backend_response`子常式中，尋找為`if`或`GET`要求取消設定Cookie的`HEAD`陳述式。
 更新的`if`區塊應如下所示：
 
 ```javascript

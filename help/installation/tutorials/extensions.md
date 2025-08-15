@@ -20,7 +20,7 @@ ht-degree: 0%
 - 佈景主題（變更店面外觀和風格，以及管理員）
 - 語言套件（將店面和管理員本地化）
 
-本主題說明如何使用命令列介面來管理您從Commerce Marketplace為&#x200B;_內部部署_&#x200B;專案購買的協力廠商擴充功能。 若為雲端基礎結構專案，請參閱[管理擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/extensions)。
+本主題說明如何使用命令列介面來管理您從Commerce Marketplace為&#x200B;_內部部署_&#x200B;專案購買的協力廠商擴充功能。 若為雲端基礎結構專案，請參閱[管理擴充功能](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions)。
 
 您可以使用相同的程式來安裝&#x200B;_any_&#x200B;擴充功能；您只需要該擴充功能的撰寫器名稱和版本。 若要尋找它，請開啟擴充功能的`composer.json`檔案，並記下`"name"`和`"version"`的值。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 若要安裝擴充功能，您必須：
 
 1. 從Commerce Marketplace或其他擴充功能開發人員取得擴充功能。
-1. 如果您從Commerce Marketplace安裝擴充功能，請確定`composer.json`檔案中有`repo.magento.com`存放庫：
+1. 如果您從Commerce Marketplace安裝擴充功能，請確定`repo.magento.com`檔案中有`composer.json`存放庫：
 
    ```bash
    "repositories": [
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->或者，您可以在擴充功能的`composer.json`檔案中找到&#x200B;_any_&#x200B;擴充功能的撰寫器名稱和版本(無論您是透過Commerce Marketplace或其他方式購買)。
+>或者，您可以在擴充功能的&#x200B;_檔案中找到_ any`composer.json`擴充功能的撰寫器名稱和版本(無論您是在Commerce Marketplace上或其他地方購買)。
 
 ### 更新撰寫器相依性
 

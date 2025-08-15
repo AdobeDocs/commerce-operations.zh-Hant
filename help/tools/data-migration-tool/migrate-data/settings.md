@@ -1,6 +1,6 @@
 ---
 title: 資料移轉設定
-description: 瞭解如何使用 [!DNL Data Migration Tool]開始將設定從Magento1移轉至Magento2。
+description: 瞭解如何使用 [!DNL Data Migration Tool]開始將設定從Magento 1移轉至Magento 2。
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->請確定Magento2已部署為`default`模式。 開發人員模式可能會在移轉工具中造成驗證錯誤。
+>請確定Magento 2已部署為`default`模式。 開發人員模式可能會在移轉工具中造成驗證錯誤。
 
 
 如需詳細資訊，請參閱[第一個步驟](overview.md#first-steps)區段。
@@ -45,7 +45,7 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 >[!NOTE]
 >
->這個命令不會移轉所有組態設定。 在繼續之前，請先驗證Magento2管理員中的所有設定。
+>這個命令不會移轉所有組態設定。 在繼續之前，請先驗證Magento 2管理員中的所有設定。
 
 
 設定傳輸成功後會顯示`Migration completed`訊息。
@@ -78,9 +78,9 @@ bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 1. 在`settings.xml`中進行變更。
 
-1. 若要指定對應設定檔的新名稱，請變更`path/to/config.xml`檔案中的`<settings_map_file>`標籤。
+1. 若要指定對應設定檔的新名稱，請變更`<settings_map_file>`檔案中的`path/to/config.xml`標籤。
 
-如需詳細資訊，請參閱工具[規格](../technical-specification.md)的[設定移轉模式](../technical-specification.md#settings-migration-mode)區段。
+如需詳細資訊，請參閱工具[規格](../technical-specification.md#settings-migration-mode)的[設定移轉模式](../technical-specification.md)區段。
 
 ## 下一個移轉步驟
 

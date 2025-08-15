@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL Alerts]索引標籤'
-description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL Alerts]標籤。
+description: 瞭解[!UICONTROL Alerts]的 [!DNL Observation for Adobe Commerce]標籤。
 exl-id: e9305576-6ed2-48f3-baec-36e081b0d04b
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 ![開啟嚴重警示](../../assets/tools/observation-for-adobe-commerce/alerts-tab-1.jpg)
 
-**[!UICONTROL Open Alert Details]**&#x200B;時間範圍顯示所選時間範圍內未解決的嚴重性警報的計數。 警報將包含Adobe建立的警報，以及合作夥伴或商家建立的任何警報。
+**[!UICONTROL Open Alert Details]**&#x200B;時間範圍顯示所選時間範圍內未解決的嚴重性警報的計數。 警報將包含Adobe建立的警報，以及任何由合作夥伴或商家建立的警報。
 
 ## [!UICONTROL Closed Critical Alerts]
 
 ![關閉嚴重警示](../../assets/tools/observation-for-adobe-commerce/alerts-tab-2.jpg)
 
-**[!UICONTROL Closed Critical Alerts]**&#x200B;時間範圍顯示所選時間範圍內已關閉嚴重性警示的計數。 警報將包含Adobe建立的警報，以及合作夥伴或商家建立的任何警報。
+**[!UICONTROL Closed Critical Alerts]**&#x200B;時間範圍顯示所選時間範圍內已關閉嚴重性警示的計數。 警報將包含Adobe建立的警報，以及任何由合作夥伴或商家建立的警報。
 
 ## [!UICONTROL Critical Alert Details]
 

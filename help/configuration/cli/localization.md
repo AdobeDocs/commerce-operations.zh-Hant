@@ -48,7 +48,7 @@ bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--
 | 引數 | 值 | 必填？ |
 |--- |--- |--- |
 | `<path to directory to translate>` | 具有可翻譯程式碼的目錄的路徑；換句話說，就是具有要翻譯之片語的PHP、PHTML或XML檔案。<br><br>工具會從您輸入的路徑開始搜尋，並搜尋它包含的所有檔案和子目錄。<br><br>如果您使用`-m --magento`，請勿使用此引數。 | 是（字典）、否（套件）。 |
-| `-m --magento` | 從此翻譯字典建立語言套件時需要。 若已使用，會搜尋包含bin/magento的目錄。 此選項會將主題或模組新增至字典中的每一行。<br><br>範例如下：<br><br>「找不到專案」、「找不到專案」、模組、Magento_願望清單 | 否 |
+| `-m --magento` | 從此翻譯字典建立語言套件時需要。 若已使用，會搜尋包含bin/magento的目錄。 此選項會將主題或模組新增至字典中的每一行。<br><br>範例如下：<br><br>「找不到專案」、「找不到專案」、模組、Magento_Wishlist | 否 |
 | `-o --output="<path>"` | 指定要建立的翻譯字典CSV檔案的絕對檔案系統路徑和檔案名稱。 您輸入的值區分大小寫。 CSV檔案的名稱必須與地區設定名稱（包括字元的大小寫）完全相符。<br><br>如果省略此引數，輸出會導向至stdout。 | 否 |
 
 >[!INFO]
@@ -117,7 +117,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 - 必要的授權檔案
 - `composer.json`
-- [註冊]語言套件的`registration.php`
+- `registration.php`註冊[語言套件的]
 - [`language.xml`](#language-package-languagexml)中繼資訊檔案
 
 >[!INFO]
@@ -316,7 +316,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 [翻譯概觀]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [翻譯字典]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[設定轉換]: https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-localize
+[設定轉換]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
 [進一步瞭解語言套件]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

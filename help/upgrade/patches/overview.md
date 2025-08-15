@@ -25,7 +25,7 @@ ht-degree: 0%
 
 有三種型別的修補程式：
 
-- **修補程式**—Adobe在[安全中心](https://magento.com/security/patches)發佈的修補程式。
+- **修補程式**—Adobe在[安全性中心](https://magento.com/security/patches)發佈的修補程式。
 - **個別的修補程式**—Adobe Commerce支援以個別為基礎建立和分發的修補程式。
 - **自訂修補程式** — 您可以從Git認可建立的非正式修補程式。
 
@@ -43,7 +43,7 @@ Hotfix是包含高影響力安全性或品質修正（會影響到許多商家�
 
 個別修補程式包含特定問題的低影響品質修正。 這些修正會套用至最近支援的次要版本（例如2.4.x），但可能從先前支援的次要版本（例如2.3.x）中遺失。 Adobe會視需要發行個別修補程式。
 
-使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}套用個別修補程式。
+使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}套用個別的修補程式。
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Hotfix是包含高影響力安全性或品質修正（會影響到許多商家�
 
 ## 自訂修補程式
 
-有時Adobe工程團隊需要一點時間，才能在Adobe Commerce Composer版本中加入GitHub上的錯誤修正。 同時，您可以從GitHub建立修補程式，並使用[`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/)外掛程式將其套用至您的Composer式安裝。
+有時候，Adobe工程團隊需要一點時間，才能在Adobe Commerce Composer版本中加入GitHub上的錯誤修正。 同時，您可以從GitHub建立修補程式，並使用[`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/)外掛程式將其套用至您的Composer式安裝。
 
 使用[命令列](apply.md#command-line)或[撰寫器](apply.md#composer)套用自訂修補程式。
 
@@ -90,10 +90,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 您可以使用下列任一方法來套用修補程式：
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [命令列](/help/upgrade/patches/apply.md#command-line)
 - [作曲者](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->若要將修補程式套用至雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端上的Commerce指南_&#x200B;中的[套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+>若要將修補程式套用至雲端基礎結構專案上的Adobe Commerce，請參閱[雲端上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)中的&#x200B;_套用修補程式_。

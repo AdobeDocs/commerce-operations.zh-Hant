@@ -31,7 +31,7 @@ ht-degree: 0%
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   其中`--keep-generated`是不更新[靜態檢視檔案](../../configuration/cli/static-view-file-deployment.md)的可選引數。 此選用引數僅供經驗豐富的系統整合經銷商在有限的情況下使用&#x200B;*之*。 在[生產模式](../../configuration/bootstrap/application-modes.md#production-mode)中只應使用&#x200B;*1&rbrace;。*&#x200B;它應該&#x200B;*不*&#x200B;用於[開發人員模式](../../configuration/bootstrap/application-modes.md#developer-mode)。
+   其中`--keep-generated`是不更新[靜態檢視檔案](../../configuration/cli/static-view-file-deployment.md)的可選引數。 此選用引數僅供經驗豐富的系統整合經銷商在有限的情況下使用&#x200B;*之*。 在&#x200B;*生產模式*&#x200B;中只應使用[1}。 ](../../configuration/bootstrap/application-modes.md#production-mode)它應該&#x200B;*不*&#x200B;用於[開發人員模式](../../configuration/bootstrap/application-modes.md#developer-mode)。
 
 1. 清除快取：
 

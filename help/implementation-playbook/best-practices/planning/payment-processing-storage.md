@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 付款處理與儲存的最佳作法
 
-維護[PCI法規遵循](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=zh-Hant)的重要原則之一，是擁有適當處理和儲存信用卡付款的策略。
+維護[PCI法規遵循](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html)的重要原則之一，是擁有適當處理和儲存信用卡付款的策略。
 
 在Adobe Commerce中儲存持卡人資料是&#x200B;**嚴格禁止的**，這麼做可能會違反您身為商家應盡的支付卡產業資料安全標準(PCI-DSS)義務。 在Adobe信任中心的[Adobe Commerce分擔責任模式指南](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf)中，可取得有關商戶責任的分擔責任模式和指引的詳細資訊。
 
@@ -53,4 +53,4 @@ ht-degree: 0%
 
 ## 其他資訊
 
-如果您正在尋找Adobe建議的付款解決方案，請考慮[Adobe付款服務](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=zh-Hant)。
+如果您正在尋找Adobe建議的付款解決方案，請考慮[Adobe付款服務](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html)。

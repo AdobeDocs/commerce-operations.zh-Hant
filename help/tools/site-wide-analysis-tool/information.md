@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Information]'
-description: 瞭解 [!DNL Site-Wide Analysis Tool]中的[!UICONTROL Information]標籤、使用時機、其優點以及最佳實務。
+description: 瞭解[!UICONTROL Information]中的 [!DNL Site-Wide Analysis Tool]標籤、使用時機、其優點以及最佳實務。
 exl-id: 5f18b4c1-1812-4e9d-8b81-88cf6b9af860
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt

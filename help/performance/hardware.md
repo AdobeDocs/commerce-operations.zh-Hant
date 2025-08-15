@@ -1,5 +1,5 @@
 ---
-title: 硬體Recommendations
+title: 硬體建議
 description: 檢閱與Adobe Commerce部署最佳效能相關的建議硬體清單。
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## CPU
 
-[!DNL Commerce]網站節點會提供所有未快取或無法透過應用程式快取的要求。 一個CPU核心可以有效地處理大約兩個（有時最多四個） [!DNL Commerce]請求。 使用以下方程式來決定您需要處理所有傳入請求而不將其放入佇列中的網路節點/核心數：
+[!DNL Commerce]網站節點會提供所有未快取或無法透過應用程式快取的要求。 一個CPU核心能夠有效地處理大約兩個（有時最多四個） [!DNL Commerce]請求。 使用以下方程式來決定您需要處理所有傳入請求而不將其放入佇列中的網路節點/核心數：
 
 ```
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
@@ -26,7 +26,7 @@ N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 
 ### PHP
 
-根據您系統部署的方式，Magento有不同的PHP記憶體需求。  一般來說，如果您要設定單一伺服器存放區，建議您為2G設定PHP記憶體。  如果您使用管道部署來設定網站，建議在您的組建伺服器上使用2 GB，在網頁節點上使用1 GB。
+根據您的系統部署方式，Magento有不同的PHP記憶體需求。  一般來說，如果您要設定單一伺服器存放區，建議您為2G設定PHP記憶體。  如果您使用管道部署來設定網站，建議在您的組建伺服器上使用2 GB，在網頁節點上使用1 GB。
 
 案例和預期的PHP記憶體需求：
 

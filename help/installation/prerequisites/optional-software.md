@@ -59,7 +59,7 @@ apt-get install ntp
 
 ### 使用NTP集區伺服器
 
-選擇集區伺服器由您決定。 若您使用NTP集區伺服器，ntp.org建議您使用[NTP集區專案頁面](https://www.ntppool.org/en/use.html)中討論的[集區伺服器](https://www.ntppool.org/en/)，這些伺服器會接近您伺服器的時區。 如果您有部署中所有主機都可用的私人NTP伺服器，您可以改用該伺服器。
+選擇集區伺服器由您決定。 若您使用NTP集區伺服器，ntp.org建議您使用[NTP集區專案頁面](https://www.ntppool.org/en/)中討論的[集區伺服器](https://www.ntppool.org/en/use.html)，這些伺服器會接近您伺服器的時區。 如果您有部署中所有主機都可用的私人NTP伺服器，您可以改用該伺服器。
 
 1. 在文字編輯器中開啟`/etc/ntp.conf`。
 
@@ -103,7 +103,7 @@ apt-get install ntp
 
 >[!NOTE]
 >
->只會在開發系統&#x200B;_中使用`phpinfo.php`_。 這可能是生產中的安全性問題。
+>只會在開發系統`phpinfo.php`中使用&#x200B;__。 這可能是生產中的安全性問題。
 
 將下列程式碼新增至網頁伺服器docroot中的任何位置：
 

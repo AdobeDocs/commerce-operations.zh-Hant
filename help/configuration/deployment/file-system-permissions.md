@@ -104,7 +104,7 @@ ht-degree: 0%
 
 ### 選擇性設定`magento_umask`
 
-請參閱&#x200B;_安裝指南_&#x200B;中的[選擇性設定umask](../../installation/next-steps/set-umask.md)。
+請參閱[安裝指南](../../installation/next-steps/set-umask.md)中的&#x200B;_選擇性設定umask_。
 
 ## 私人託管的生產檔案系統所有權（兩個使用者）
 

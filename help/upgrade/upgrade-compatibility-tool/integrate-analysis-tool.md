@@ -1,6 +1,6 @@
 ---
 title: 整合 [!DNL Site-Wide Analysis Tool]
-description: 請依照下列步驟，從您Adobe Commerce專案的 [!DNL Site-Wide Analysis Tool] 儀表板擷取 [!DNL Upgrade Compatibility Tool] 報告。
+description: 請依照下列步驟，從您Adobe Commerce專案的 [!DNL Upgrade Compatibility Tool] 儀表板擷取 [!DNL Site-Wide Analysis Tool] 報告。
 exl-id: 1ef37294-a837-47a4-841c-4027087acf12
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool]現在已與[!DNL Site-Wide Analysis Tool]整合，以便讓非技術人員能夠執行[!DNL Upgrade Compatibility Tool]並取得包含每個檔案的問題清單的[報告](../upgrade-compatibility-tool/reports.md)。
 
-如需詳細資訊，請參閱[[!DNL Site-Wide Analysis Tool] 使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/site-wide-analysis-tool/access)。
+如需詳細資訊，請參閱[[!DNL Site-Wide Analysis Tool] 使用手冊](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)。
 
-## 從[!DNL Site-Wide Analysis Tool]執行[!DNL Upgrade Compatibility Tool]
+## 從[!DNL Upgrade Compatibility Tool]執行[!DNL Site-Wide Analysis Tool]
 
 導覽至專案的[!DNL Site-Wide Analysis Tool]儀表板，並找到[!DNL Upgrade Compatibility Tool] Widget。
 
@@ -36,4 +36,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 透過[!DNL Site-Wide Analysis Tool]執行[!DNL Upgrade Compatibility Tool]可最佳化您的結果，並幫助您專注於目標升級的新問題與重要問題。 它會使用[`--ignore-current-version-compatibility-errors`](run.md#optimize-your-results)選項，並一律顯示比較您專案版本與最新發行版本的結果。
+> 透過[!DNL Upgrade Compatibility Tool]執行[!DNL Site-Wide Analysis Tool]可最佳化您的結果，並幫助您專注於目標升級的新問題與重要問題。 它會使用[`--ignore-current-version-compatibility-errors`](run.md#optimize-your-results)選項，並一律顯示比較您專案版本與最新發行版本的結果。

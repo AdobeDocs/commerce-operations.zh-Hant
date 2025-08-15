@@ -48,7 +48,7 @@ ht-degree: 0%
 1. 建立您的XML檔案。
 1. 在`di.xml`中定義您的設定物件。
 
-   以下Magento_Sales模組的[di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml)範例說明組態物件的外觀。
+   Magento_Sales模組的[di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml)中的下列範例說明組態物件的外觀。
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">

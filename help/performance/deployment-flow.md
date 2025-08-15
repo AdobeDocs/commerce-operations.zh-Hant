@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 安裝相依性
 
-`composer.json`和`composer.lock`檔案管理[!DNL Commerce]相依性，並為每個套件安裝適當的版本。 如果您打算更新[自動載入器](#update-the-autoloader)，則必須在[前置處理相依性插入指示](#preprocess-dependency-injection-instructions)之前安裝相依性。
+`composer.json`和`composer.lock`檔案管理[!DNL Commerce]相依性，並為每個套件安裝適當的版本。 如果您打算更新[自動載入器](#preprocess-dependency-injection-instructions)，則必須在[前置處理相依性插入指示](#update-the-autoloader)之前安裝相依性。
 
 若要安裝[!DNL Commerce]相依性：
 
@@ -26,7 +26,7 @@ composer install --no-dev
 
 ## 預先處理相依性插入指示
 
-當您預先處理和編譯相依性插入(DI)指示時，請Magento：
+當您預先處理和編譯相依性插入(DI)指示時，Magento會：
 
 * 讀取及處理所有現有的組態
 * 分析類別之間的相依性

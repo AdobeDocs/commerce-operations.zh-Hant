@@ -14,7 +14,7 @@ ht-degree: 0%
 
 一般而言，_停用詞_&#x200B;是搜尋引擎在處理文字後篩選掉的常用詞。 最初，當磁碟空間和記憶體極為有限時，每儲存KB意味著效能大幅提升。 因此，搜尋引擎透過忽略特定字詞並維持較小的索引來提升效能。
 
-雖然我們目前擁有更多儲存空間，但效能仍然很重要。 Elasticsearch和OpenSearch就像其他搜尋引擎一樣，仍使用停用字詞來改善效能。
+雖然我們目前擁有更多儲存空間，但效能仍然很重要。 Elasticsearch和OpenSearch就像其他搜尋引擎一樣，仍使用停用詞來改善效能。
 
 您必須使用位於`<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`目錄或`<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`目錄中的CSV檔案來管理您的停用詞，這取決於您安裝Commerce軟體的方式。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 1. 登入您的Commerce伺服器，或切換至[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)。
 
-1. 使用文字編輯器在`<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`目錄中建立名為`stopwords_<locale_code>.csv`的停用字檔案。
+1. 使用文字編輯器在`stopwords_<locale_code>.csv`目錄中建立名為`<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`的停用字檔案。
 
    例如，若要為義大利語言環境建立停用詞，請將檔案命名為`stopwords_it_IT.csv`。
 
@@ -102,11 +102,11 @@ ht-degree: 0%
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-此位置視您安裝Commerce軟體的方式而定。 如果您複製Magento2 GitHub存放庫，則路徑位於`app/code`下。 如果您已安裝壓縮封存或中繼資料，則路徑在`vendor`之下。
+此位置視您安裝Commerce軟體的方式而定。 如果您複製Magento 2 GitHub存放庫，則路徑位於`app/code`下。 如果您已安裝壓縮封存或中繼資料，則路徑在`vendor`之下。
 
 **若要變更目錄**：
 
-1. 以檔案系統擁有者的身分，在文字編輯器中開啟Elasticsearch`di.xml`。
+1. 以檔案系統擁有者的身分，在文字編輯器中開啟Elasticsearch `di.xml`。
 
    如果您複製存放庫，則它位於`app/code/Magento/Elasticsearch/etc/di.xml`
 

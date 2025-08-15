@@ -26,7 +26,7 @@ Web伺服器群組必須具有檔案系統中特定目錄的寫入許可權；�
 
 * 664適用於檔案，這表示使用者可寫入、群組可寫入，而其他所有人則為唯讀
 
-常見的建議是在`magento_umask`檔案中使用`022`的值，這表示：
+常見的建議是在`022`檔案中使用`magento_umask`的值，這表示：
 
 * 755適用於目錄：使用者的完整控制許可權，其他所有人都可周遊目錄。
 * 644適用於檔案：使用者的讀寫許可權，其他所有人設為唯讀。
@@ -46,6 +46,6 @@ Web伺服器群組必須具有檔案系統中特定目錄的寫入許可權；�
    echo <desired umask number> > magento_umask
    ```
 
-   您現在應該在`<Magento install dir>`中有一個名為`magento_umask`的檔案，其唯一內容為`umask`數字。
+   您現在應該在`magento_umask`中有一個名為`<Magento install dir>`的檔案，其唯一內容為`umask`數字。
 
 1. 登出並以[檔案系統擁有者](../prerequisites/file-system/overview.md)的身分重新登入以套用變更。

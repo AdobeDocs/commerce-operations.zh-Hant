@@ -29,7 +29,7 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 >[!NOTE]
 >
->您無法直接在雲端專案上啟用或停用模組。 您必須在本機執行這些命令，然後將變更推送到環境的`app/etc/config.php`檔案。 請參閱[Pro專案工作流程：部署工作流程](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=zh-Hant#deployment-workflow)。
+>您無法直接在雲端專案上啟用或停用模組。 您必須在本機執行這些命令，然後將變更推送到環境的`app/etc/config.php`檔案。 請參閱[Pro專案工作流程：部署工作流程](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow)。
 
 ## 啟用、停用模組
 
@@ -92,7 +92,7 @@ Adobe Commerce可讓您啟用或停用目前可用的模組；換言之，任何
 
 * 模組A與模組B衝突。您可以停用模組A和模組B，也可以停用任一模組，但您&#x200B;*無法*&#x200B;同時啟用模組A和模組B。
 
-* 相依性在每個模組的Adobe Commerce `composer.json`檔案的`require`欄位中宣告。 在模組`composer.json`檔案的`conflict`欄位中宣告衝突。 我們使用該資訊來建置相依性圖表： `A->B`表示模組A相依於模組B。
+* 相依性在每個模組的Adobe Commerce `require`檔案的`composer.json`欄位中宣告。 在模組`conflict`檔案的`composer.json`欄位中宣告衝突。 我們使用該資訊來建置相依性圖表： `A->B`表示模組A相依於模組B。
 
 * *相依性鏈結*&#x200B;是從模組到另一個模組的路徑。 例如，如果模組A相依於模組B，而模組B相依於模組C，則相依性鏈結為`A->B->C`。
 

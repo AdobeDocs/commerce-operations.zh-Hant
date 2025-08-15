@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> 使用Live Search、目錄服務或產品推薦的Adobe Commerce商家可選擇使用[SaaS式價格索引](https://experienceleague.adobe.com/zh-hant/docs/commerce/price-indexer/price-indexing)。
+> 使用Live Search、目錄服務或產品推薦的Adobe Commerce商家可選擇使用[SaaS式價格索引](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing)。
 
 ## 檢視索引器狀態
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8和更新版本**： [!DNL Customer Grid]索引子同時支援[!UICONTROL Update on Save]和[!UICONTROL Update by Schedule]模式，且預設為[!UICONTROL Update by Schedule]。
 >
->請參閱[實作行動手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration)中的&#x200B;_索引子組態的最佳實務_。
+>請參閱[實作行動手冊](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration)中的&#x200B;_索引子組態的最佳實務_。
 
 >[!INFO]
 >
->在切換索引器模式之前，請將您的網站設定為[維護](../../installation/tutorials/maintenance-mode.md)模式和[停用cron工作](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)。 這樣可確保不會發生資料庫鎖定的情況。
+>在切換索引器模式之前，請將您的網站設定為[維護](../../installation/tutorials/maintenance-mode.md)模式和[停用cron工作](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)。 這樣可確保不會發生資料庫鎖定的情況。
 
 若要指定索引器組態：
 

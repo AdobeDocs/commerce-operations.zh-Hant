@@ -19,7 +19,7 @@ ht-degree: 0%
 QPT v1.1.35包含下列修補程式：
 
 1. **ACSD-51899**：修正結帳出貨步驟上的預設出貨地址自動填入先前選取的店內取貨地址的問題。
-1. **ACSD-52041**：修正錯誤訊息： *[錯誤] [!DNL Page Builder]呈現5秒而未解除鎖定*&#x200B;的問題。 儲存使用[!DNL Page Builder]編輯的內容時在[!DNL Chrome]瀏覽器中顯示。
+1. **ACSD-52041**：修正錯誤訊息： *[錯誤] [!DNL Page Builder]呈現5秒而未解除鎖定*&#x200B;的問題。 儲存使用[!DNL Chrome]編輯的內容時在[!DNL Page Builder]瀏覽器中顯示。
 1. **ACSD-52095**：修正產品匯出後，CSV檔案中的`manage_stock`值未正確設為0的問題。
 1. **ACSD-51358**：修正移除沒有結束日期的排程更新會導致移除相同實體的其他排程更新的問題。
 1. **ACSD-48070**：修正編輯排程更新時觸發例外狀況的問題。
@@ -35,7 +35,7 @@ QPT v1.1.35包含下列修補程式：
 1. **ACSD-52831**：修正啟用[!DNL Google reCAPTCHA v3 Invisible]時，客戶無法下可轉讓報價單的問題。
 1. **ACSD-51845**：修正無法透過非同步大量REST API更新含有階層價格及不同屬性集的後續產品的問題。
 1. **ACSD-52815**：修正非預設來源之數量欄位輸入最多只支援6位數（預設庫存則支援8位數）的問題。
-1. **ACSD-51149**：修正啟用[!UICONTROL Catalog Permissions]的[!UICONTROL Scheduled ImportExport]使索引子失效，然後由cron快取排清的問題。
+1. **ACSD-51149**：修正啟用[!UICONTROL Scheduled ImportExport]的[!UICONTROL Catalog Permissions]使索引子失效，然後由cron快取排清的問題。
 1. **ACSD-50815**：修正簡單產品的小數點數量無法用於新捆綁產品選項的問題。
 1. **ACSD-52399**：修正可銷售數量為0的可設定產品選項在產品頁面上顯示&#x200B;*庫存*&#x200B;的問題。
 

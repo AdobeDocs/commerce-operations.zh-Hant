@@ -146,12 +146,12 @@ ht-degree: 0%
 | Elasticsearch伺服器主機名稱 | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | Elasticsearch伺服器連線埠 | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | Elasticsearch索引首碼 | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) | ![敏感](/help/assets/configuration/cloud-sens.png) |
-| 啟用ElasticsearchHTTP驗證 | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) |
-| ElasticsearchHTTP使用者名稱 | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) |
-| ElasticsearchHTTP密碼 | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) |
+| 啟用Elasticsearch HTTP驗證 | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch HTTP使用者名稱 | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch HTTP密碼 | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch伺服器逾時 | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) |
-| ElasticsearchHTTP使用者名稱 | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) |
-| ElasticsearchHTTP密碼 | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch HTTP使用者名稱 | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch HTTP密碼 | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch伺服器逾時 | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) |
 | OpenSearch伺服器主機名稱 | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | OpenSearch伺服器連線埠 | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![系統特定](/help/assets/configuration/cloud-env.png) | ![敏感](/help/assets/configuration/cloud-sens.png) |
@@ -254,9 +254,9 @@ ht-degree: 0%
 | 閘道URL | `carriers/usps/gateway_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 安全閘道URL | `carriers/usps/gateway_secure_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 標題 | `carriers/usps/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 使用者ID | `carriers/usps/userid` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![已加密](/help/assets/configuration/cloud-enc.png) | | ![敏感](/help/assets/configuration/cloud-sens.png) |
+| 使用者 ID | `carriers/usps/userid` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![已加密](/help/assets/configuration/cloud-enc.png) | | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 密碼 | `carriers/usps/password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![已加密](/help/assets/configuration/cloud-enc.png) | | ![敏感](/help/assets/configuration/cloud-sens.png) |
-| 使用者ID | `carriers/ups/username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![已加密](/help/assets/configuration/cloud-enc.png) | | ![敏感](/help/assets/configuration/cloud-sens.png) |
+| 使用者 ID | `carriers/ups/username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![已加密](/help/assets/configuration/cloud-enc.png) | | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 密碼 | `carriers/ups/password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![已加密](/help/assets/configuration/cloud-enc.png) | | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 存取授權號碼 | `carriers/ups/access_license_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![已加密](/help/assets/configuration/cloud-enc.png) | | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 追蹤XML URL | `carriers/ups/tracking_xml_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![敏感](/help/assets/configuration/cloud-sens.png) |

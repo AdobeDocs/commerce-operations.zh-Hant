@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Adobe Commerce發行原則
 
-Adobe Commerce在個別模組層級（例如`magento/framework 101.1.1`）使用[語意版本設定](https://semver.org/)，但行銷版本編號不使用。 例如：
+Adobe Commerce在個別模組層級（例如[）使用](https://semver.org/)語意版本設定`magento/framework 101.1.1`，但行銷版本編號不使用。 例如：
 
 - **主要版本**—2
 - **次要版本**—2.4
@@ -92,4 +92,4 @@ Hotfix是包含高影響力安全性或品質修正的修補程式，例如影�
 
 ## 自訂修補程式
 
-由非Adobe人員建立，用於修正問題或因各種原因修改Adobe Commerce程式碼。 自訂修補程式是透過[品質修補程式工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/usage)提供。
+由非Adobe人員建立，用於修正問題或因各種原因修改Adobe Commerce程式碼。 自訂修補程式是透過[品質修補程式工具](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)提供。

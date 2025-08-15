@@ -4,7 +4,7 @@ description: 請依照下列步驟，自訂當您的Adobe Commerce部署因維�
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
 source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ bin/magento maintenance:status
 
 >[!NOTE]
 >
->搭配`magento maintenance:disable`使用`--ip=<ip address>`可儲存IP清單以供稍後使用。 若要清除劐免IP清單，請使用`magento maintenance:enable --ip=none`或參閱[維護劐免IP位址清單](#maintain-the-list-of-exempt-ip-addresses)。
+>搭配`--ip=<ip address>`使用`magento maintenance:disable`可儲存IP清單以供稍後使用。 若要清除劐免IP清單，請使用`magento maintenance:enable --ip=none`或參閱[維護劐免IP位址清單](#maintain-the-list-of-exempt-ip-addresses)。
 
 `bin/magento maintenance:status`命令會顯示維護模式的狀態。
 
@@ -86,7 +86,7 @@ bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 
 在下列範例中，我們使用`503`型別錯誤範本檔案，這需要當地語系化的內容。
 
-`Error_Processor`類別的建構函式接受`skin`個GET引數以變更配置：
+`Error_Processor`類別的建構函式接受`skin` GET引數以變更配置：
 
 ```php
 if (isset($_GET['skin'])) {

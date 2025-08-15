@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 複製範例資料Git存放庫
 
-本主題說明如何複製Magento Open SourceGitHub存放庫並新增範例資料。 此方法僅適用於參與開發人員(即計畫參與Magento Open Source程式碼基底的開發人員)。
+本主題說明如何複製Magento Open Source GitHub存放庫並新增範例資料。 此方法僅適用於參與開發人員(即計畫參與Magento Open Source程式碼基底的開發人員)。
 
 如果您不是貢獻開發人員，請選擇頁面左側目錄中所顯示的其他選項之一。
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->您可以將範例資料搭配`develop`分支（較新）或已發行分支(例如`2.4` （較穩定）)使用。 建議您使用已發行的分支，因為其較穩定。 如果您要貢獻程式碼到存放庫，而且需要最新的程式碼，請使用`develop`分支。 無論您選擇哪個分支，都必須[複製](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)Magento Open SourceGitHub存放庫的對應分支。 例如，`develop`分支的範例資料只能&#x200B;*使用*&#x200B;和Magento Open Source`develop`分支。
+>您可以將範例資料搭配`develop`分支（較新）或已發行分支(例如`2.4` （較穩定）)使用。 建議您使用已發行的分支，因為其較穩定。 如果您要貢獻程式碼到存放庫，而且需要最新的程式碼，請使用`develop`分支。 無論您選擇哪個分支，都必須[複製](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) Magento Open Source GitHub存放庫的對應分支。 例如，`develop`分支的範例資料&#x200B;*只能*&#x200B;搭配Magento Open Source `develop`分支使用。
 
 ## 複製範例資料存放庫
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
    例如：
 
-   如果您使用Magento Open SourceGitHub存放庫的`2.4-develop`分支，範例資料分支應為`2.4-develop`。
+   如果您使用Magento Open Source GitHub存放庫的`2.4-develop`分支，範例資料分支應為`2.4-develop`。
 
    若要簽出正確的分支，請從範例資料存放庫的根目錄執行下列命令（假設您需要`2.4-develop`分支）：
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
    例如：
 
-   如果您使用Magento Open SourceGitHub存放庫的`2.4-develop`分支，範例資料分支應為`2.4-develop`。
+   如果您使用Magento Open Source GitHub存放庫的`2.4-develop`分支，範例資料分支應為`2.4-develop`。
 
    若要簽出正確的分支，請從範例資料存放庫的根目錄執行下列命令（假設您需要`2.4-develop`分支）：
 

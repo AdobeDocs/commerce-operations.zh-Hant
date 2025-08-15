@@ -4,7 +4,7 @@ description: 請參閱範例，瞭解如何使用共用組態檔來變更開發�
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 0%
 
    您剛才設定的選項顯示如下：
 
-   在Admin![&#128279;](../../assets/configuration/split-deploy-not-editable.png)中無法編輯設定選項
+   在Admin![中無法編輯](../../assets/configuration/split-deploy-not-editable.png)設定選項
 
 >[!INFO]
 >

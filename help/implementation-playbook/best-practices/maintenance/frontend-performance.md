@@ -37,5 +37,5 @@ ht-degree: 1%
 ## 其他資訊
 
 - [管理員使用者的索引管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- 使用CLI [索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=zh-Hant)
+- 使用CLI [索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [開發人員的索引概觀](https://developer.adobe.com/commerce/php/development/components/indexing/)

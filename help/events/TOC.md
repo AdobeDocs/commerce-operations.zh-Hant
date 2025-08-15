@@ -12,5 +12,5 @@ ht-degree: 5%
 
 # Adobe Commerce事件摘要 {#events}
 
-+ 高峰{#summit}
++ Summit {#summit}
    + [2024](summit/2024.md)

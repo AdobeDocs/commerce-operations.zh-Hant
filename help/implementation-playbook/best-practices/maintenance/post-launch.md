@@ -3,13 +3,13 @@ title: 上市後支援與維護
 description: 使用我們完整的啟動後支援和維護最佳實務，確保Adobe Commerce商店的最佳效能和安全性。
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: bcb45d53aba4a73a5730989e9bf29ccba6e9bf35
+exl-id: f02a13ca-c851-4508-a2bd-e5bc196a330c
+source-git-commit: 60444d3ef7208d12af3f06af6e3cab2cae93700b
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce的啟動後支援與維護
 
@@ -35,10 +35,10 @@ ht-degree: 0%
 
   >[!TIP]
   >
-  >請參閱&#x200B;_雲端指南_&#x200B;中的[效能監視](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/monitor/performance)。
+  >請參閱[雲端指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance)中的&#x200B;_效能監視_。
 
 
-- **資料庫效能最佳化**：若要在Adobe Commerce Cloud中最佳化資料庫效能，請實作下列專案：
+- **最佳化資料庫效能**：若要最佳化Adobe Commerce Cloud中的資料庫效能，請實作下列專案：
 
    - **監視和最佳化MySQL查詢**：識別並解決執行緩慢的查詢，這可以使用MySQL的SHOW FULL PROCESSLIST和EXPLAIN命令完成。 對於更複雜的設定，Pro架構使用者可利用Percona Toolkit來分析查詢記錄檔中的效能問題。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
    - **使用cURL命令**：執行具有Fastly特定標頭的cURL命令以檢查網站的快取狀態。 金鑰回應標頭包含`X-Cache` (HIT/MISS)、`Fastly-Module-Enabled`、`Fastly-Magento-VCL-Uploaded`和`Cache-Control`，以驗證快取和模組狀態。 Adobe為中繼和生產環境提供範例cURL命令。
 
-   - **檢查標頭資訊**： Inspect標頭（例如`Cache-Control`、`Pragma`和`X-Magento-Tags`）以確認是否對快取的內容有適當的快取行為和標籤處理。 適當的標頭值可指出快取設定是否有效地套用在整個CDN。
+   - **檢查標頭資訊**：檢查標頭（例如`Cache-Control`、`Pragma`和`X-Magento-Tags`），以確認是否對快取的內容有適當的快取行為和標籤處理。 適當的標頭值可指出快取設定是否有效地套用在整個CDN。
 
    - **Fastly偵錯和測試**：使用Fastly的偵錯功能來識別和疑難排解快取HIT和MISS率、快取邏輯或不正確的標頭回應等問題，這些問題可能指向設定問題或與預期的快取規則不符。
 
@@ -66,11 +66,11 @@ ht-degree: 0%
 
 >[!TIP]
 >
->請參閱&#x200B;_雲端指南_&#x200B;中的[Fastly服務總覽](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/fastly)。
+>請參閱[雲端指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)中的&#x200B;_Fastly服務總覽_。
 
 #### 定期安全性監控
 
-為了在Adobe Commerce Cloud中維持定期的安全性監控，Adobe建議採用多層面的方法，包括持續掃描、記錄和主動式安全性做法。 以下是確保持續安全性的幾個核心動作：
+為了在Adobe Commerce Cloud中維持定期安全性監控，Adobe建議採用多層面的方法，包括持續掃描、記錄和主動式安全性做法。 以下是確保持續安全性的幾個核心動作：
 
 - **安全性掃描**：使用Adobe的安全性掃描工具來監視您Commerce網站上的已知漏洞和惡意軟體。 此工具會針對潛在安全性風險和法規遵循問題提供警示。
 
@@ -82,11 +82,11 @@ ht-degree: 0%
 
 - **Web應用程式防火牆(WAF)**：使用整合的Fastly WAF偵測並減輕惡意流量模式的威脅，例如未經授權的資料擷取嘗試。
 
-- **自訂程式碼和擴充功能安全性**：執行一般程式碼稽核，並將擴充功能限製為經Adobe驗證的擴充功能，以保護任何自訂程式碼或協力廠商擴充功能的安全。
+- **自訂程式碼和擴充功能安全性**：執行一般程式碼稽核，並將擴充功能限制在Adobe所審查的專案，以保護任何自訂程式碼或協力廠商擴充功能的安全。
 
 >[!TIP]
 >
->請參閱&#x200B;_系統管理系統指南_&#x200B;中的[安全性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security)。
+>請參閱[系統管理系統指南](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security)中的&#x200B;_安全性_。
 
 #### 錯誤記錄與監視
 
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如需Adobe Commerce Cloud中記錄與錯誤追蹤實務的詳細資訊，請參閱[New Relic記錄管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management)與[例外狀況監視](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions)。
+>如需Adobe Commerce Cloud中記錄與錯誤追蹤實務作法的詳細資訊，請參閱[New Relic記錄管理](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management)和[例外狀況監視](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions)。
 
 ### 安全性與更新
 
@@ -110,33 +110,33 @@ ht-degree: 0%
 
 為了持續更新並確保Adobe Commerce Cloud系統的安全性，以下提供監控安全性修補程式和更新的一些主要作法：
 
-- **訂閱Adobe Commerce安全性警示**：透過[註冊來自Adobe](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security)的通知，隨時掌握安全性弱點的最新資訊。
+- **訂閱Adobe Commerce安全性警示**：透過[註冊來自Adobe的通知](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security)，隨時掌握安全性弱點的最新資訊。
 
-- **檢查發行說明**：定期檢閱[安全性修補程式發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/overview)，這些發行說明在版本（例如2.3.5-p1）上標示「 — pN」，並包含關鍵修正和改良。
+- **檢查發行說明**：定期檢閱[安全性修補程式發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/overview)，這些發行說明在版本（例如2.3.5-p1）上標示「 — pN」，並包含關鍵修正和改良。
 
 - **立即套用安全性修補程式**：一旦有可用的安全性修補程式，立即套用。 這包括更新至最新版本或套用特定修補程式檔案。
 
-- **使用雲端修補程式**：若為Adobe Commerce Cloud，可在Cloud Tools Suite中整合安全性修補程式。 請務必升級套裝或Commerce版本，以接收這些修正。
+- **使用雲端修補程式**：針對Adobe Commerce Cloud，安全性修補程式可整合至Cloud Tools Suite。 請務必升級套裝或Commerce版本，以接收這些修正。
 
-- **自動修補管理**：請考慮使用集中式修補程式之類的工具，自動[管理和套用多個存放區的修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale)。
+- **自動修補管理**：請考慮使用集中式修補程式之類的工具，自動[管理和套用多個存放區的修補程式](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale)。
 
 >[!TIP]
 >
->如需套用修補程式和維護安全性的詳細資訊和逐步指示，請參閱[安全性修補程式發行說明](../../../release/release-notes/security/overview.md)和[如何套用安全性修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)。 您也應該檢閱[全網站分析工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/site-wide-analysis-tool/access)報告。
+>如需套用修補程式和維護安全性的詳細資訊和逐步指示，請參閱[安全性修補程式發行說明](../../../release/release-notes/security/overview.md)和[如何套用安全性修補程式](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)。 您也應該檢閱[全網站分析工具](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)報告。
 
 #### PCI法規遵循
 
-若要確保Adobe Commerce Cloud符合PCI規範，請遵循下列主要作法：
+若要確保Adobe Commerce Cloud符合PCI規範，請遵循以下主要實務：
 
-- **Protect持卡人資料**：請勿在Adobe Commerce中儲存持卡人資料。 如果需要儲存，請使用加密和代碼化方法來保護儲存。
+- **保護持卡人資料**：請勿在Adobe Commerce中儲存持卡人資料。 如果需要儲存，請使用加密和代碼化方法來保護儲存。
 
 - **使用安全傳輸通訊協定**：一律透過TLS等安全通訊協定傳輸付款資料，並具備加密和適當的金鑰管理。
 
-- **利用Web應用程式防火牆(WAF)**： Fastly支援的WAF服務可在惡意流量到達您的網站之前，封鎖惡意流量，協助您符合PCI DSS 6.6需求，並防止常見漏洞。 在[這裡](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage)和[這裡](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service)檢視更多資訊。
+- **利用Web應用程式防火牆(WAF)**： Fastly支援的WAF服務可在惡意流量到達您的網站之前，封鎖惡意流量，協助您符合PCI DSS 6.6需求，並防止常見漏洞。 在[這裡](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage)和[這裡](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service)檢視更多資訊。
 
-- **限制存取**：確保只有授權人員才能存取敏感的付款資料，並[套用存取控制以降低暴露風險](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage)。
+- **限制存取**：確保只有授權人員才能存取敏感的付款資料，並[套用存取控制以降低暴露風險](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage)。
 
-- **一般安全性掃描**：執行一般PCI ASV掃描和[監視您的環境](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/security-and-compliance/shared-responsibility)，以解決潛在的漏洞。
+- **一般安全性掃描**：執行一般PCI ASV掃描和[監視您的環境](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)，以解決潛在的漏洞。
 
 >[!TIP]
 >
@@ -202,13 +202,13 @@ ht-degree: 0%
 
 - **自動縮放流量處理**：
 
-   - Adobe Commerce Cloud支援自動調整規模，以根據即時流量需求動態調整伺服器資源（例如網頁節點），確保您的商店可以處理大量訪客，無需手動干預。 請參閱&#x200B;_雲端指南_&#x200B;中的[自動縮放](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/architecture/autoscaling)。
+   - Adobe Commerce Cloud支援自動縮放，以根據即時流量需求動態調整伺服器資源（例如網頁節點），確保您的商店可以處理大量訪客，無需手動干預。 請參閱[雲端指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/autoscaling)中的&#x200B;_自動縮放_。
 
-   - Web和服務層可以獨立擴展，新增更多的Web節點以增加流量，並擴展資料庫或服務節點以在尖峰期間提高後端效能。 請參閱&#x200B;_雲端指南_&#x200B;中的[縮放架構](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)。
+   - Web和服務層可以獨立擴展，新增更多的Web節點以增加流量，並擴展資料庫或服務節點以在尖峰期間提高後端效能。 請參閱[雲端指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture)中的&#x200B;_縮放架構_。
 
 - **效能監視**：
 
-   - 使用&#x200B;**New Relic**&#x200B;來監視即時效能測量結果（例如CPU使用率、流量等級），並視需要進行調整。
+   - 使用&#x200B;**New Relic**&#x200B;來監視即時效能測量結果(例如CPU使用狀況、流量等級)，並視需要進行調整。
 
    - 在縮放之前在中繼環境中測試效能，以避免生產中的問題。
 
@@ -230,13 +230,13 @@ ht-degree: 0%
 
 ### 報告與分析
 
-- **Adobe Commerce Intelligence：** Commerce Intelligence是Adobe Commerce的核心功能，可跨多個資料來源提供最佳實務深入分析，讓商家能夠做出科學資料導向式決策，並採取清楚且明智的動作。 請參閱&#x200B;[_Commerce Intelligence使用手冊_](https://experienceleague.adobe.com/zh-hant/docs/commerce-business-intelligence/mbi/getting-started)。
+- **Adobe Commerce Intelligence：** Commerce Intelligence是Adobe Commerce的核心功能，可跨多個資料來源提供最佳實務深入分析，讓商家能夠做出科學資料導向式決策，並採取清楚且明智的動作。 請參閱&#x200B;[_Commerce Intelligence使用手冊_](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/getting-started)。
 
 - **Adobe Analytics：** Adobe Analytics提供強大的解決方案，可追蹤、分析和最佳化您的線上商店效能。 Adobe Analytics可協助電子商務企業深入瞭解客戶行為、產品績效、轉換率和其他關鍵量度，進而制定資料導向式決策。
 
 - **Google Analytics：**&#x200B;使用Google Analytics追蹤客戶行為、流量來源和轉換率。
 
-- **其他Commerce Intelligence工具：** Adobe Commerce包含進階報告。 此功能可讓您存取一套以您的產品、訂單和客戶資料為根據的動態報表，以及根據您的業務需求量身打造的個人化儀表板。如需詳細資訊，請參閱&#x200B;_管理員使用指南_&#x200B;中的[進階報表](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting)。
+- **其他Commerce Intelligence工具：** Adobe Commerce包含進階報告。 此功能可讓您存取一套以您的產品、訂單和客戶資料為根據的動態報表，以及根據您的業務需求量身打造的個人化儀表板。如需詳細資訊，請參閱[管理員使用指南](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting)中的&#x200B;_進階報表_。
 
 ### 結論
 

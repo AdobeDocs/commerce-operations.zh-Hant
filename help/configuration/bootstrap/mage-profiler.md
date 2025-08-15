@@ -29,7 +29,7 @@ Commerce在[`Magento\Framework\Profiler`][profiler]中提供基礎功能。
 
 ## 設定MAGE_PROFILER
 
-您可以使用[中討論的任何方法來設定`MAGE_PROFILER`的值。請設定啟動程式引數的值](../bootstrap/set-parameters.md)。
+您可以使用`MAGE_PROFILER`中討論的任何方法來設定[的值。請設定啟動程式引數的值](../bootstrap/set-parameters.md)。
 
 `MAGE_PROFILER`支援下列值：
 
@@ -37,7 +37,7 @@ Commerce在[`Magento\Framework\Profiler`][profiler]中提供基礎功能。
 
   您可以使用下列其中一個值來啟用特定的效能評測器：
 
-   - 使用[`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]的`csvfile`
+   - 使用`csvfile`的[`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
    - 任何其他值（除了`2`），包括使用[`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]的空白值
 
 - `2`以啟用相依性圖形。
@@ -50,7 +50,7 @@ Commerce在[`Magento\Framework\Profiler`][profiler]中提供基礎功能。
 
 您可以使用CLI指令來啟用或停用效能評測器：
 
-- `dev:profiler:enable <type>`會啟用`html`的`type` （預設）或`csvfile`的效能評測器。 啟用時，會建立flagfile `var/profiler.flag`。
+- `dev:profiler:enable <type>`會啟用`type`的`html` （預設）或`csvfile`的效能評測器。 啟用時，會建立flagfile `var/profiler.flag`。
 - `dev:profiler:disable`停用效能分析工具。 停用時，會移除flagfile `var/profiler.flag`。
 
 若要啟用相依性圖形，請使用變數選項。

@@ -76,7 +76,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 其中一個方法是依頁面型別定義您的組合。 您可以將[!DNL Commerce]的頁面分類為數種頁面型別，包括「類別」、「產品」、「CMS」、「客戶」、「購物車」和「結帳」。 分類為其中一種頁面型別的每個頁面都有一組不同的RequireJS模組相依性。 當您依頁面型別捆綁RequireJS模組時，您最後將只有少數捆綁包涵蓋存放區中任何頁面的相依性。
 
-例如，您最終可能會有適用於所有頁面的通用相依性的套件、適用於僅限CMS頁面的套件、適用於僅限目錄頁面的套件、適用於僅限搜尋頁面的另一個套件和適用於出庫頁面的套件。
+例如，您最終可能會有適用於所有頁面的通用相依性的套件、適用於僅限CMS頁面的套件、適用於僅限目錄頁面的套件、適用於僅限搜尋頁面的另一個套件，以及適用於結帳頁面的套件。
 
 您也可以依用途建立組合：用於一般功能、產品相關功能、送貨功能、結帳功能、稅金及表單驗證。 如何定義您的套件組合取決於您和商店的結構。 您可能會發現某些套件組合策略的效果優於其他策略。
 
@@ -102,7 +102,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 #### 1\. 新增build.js檔案
 
-在[!DNL Commerce]根目錄中建立`build.js`檔案。 此檔案將包含您的套件組合的完整組建組態。
+在`build.js`根目錄中建立[!DNL Commerce]檔案。 此檔案將包含您的套件組合的完整組建組態。
 
 ```javascript
 ({
@@ -131,13 +131,13 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 #### 3\. 彙總requirejs-config.js例項值
 
-在此步驟中，您需要將所有存放區`requirejs-config.js`檔案中的多個`deps`、`shim`、`paths`和`map`設定節點彙總至`build.js`檔案中的對應節點。 若要這麼做，您可以在瀏覽器的「開發人員工具」面板中開啟&#x200B;**[!UICONTROL Network]**&#x200B;標籤，並導覽至商店中的任何頁面，例如首頁。 在「網路」標籤中，您會在頂端附近看到商店的`requirejs-config.js`檔案執行個體，並在這裡反白顯示：
+在此步驟中，您需要將所有存放區`deps`檔案中的多個`shim`、`paths`、`map`和`requirejs-config.js`設定節點彙總至`build.js`檔案中的對應節點。 若要這麼做，您可以在瀏覽器的「開發人員工具」面板中開啟&#x200B;**[!UICONTROL Network]**&#x200B;標籤，並導覽至商店中的任何頁面，例如首頁。 在「網路」標籤中，您會在頂端附近看到商店的`requirejs-config.js`檔案執行個體，並在這裡反白顯示：
 
 ![RequireJS組態](../assets/performance/images/RequireJSConfig.png)
 
-在此檔案中，您會找到每個設定節點(`deps`、`shim`、`paths`、`map`)的多個專案。 您需要將這些多個節點值彙總到您的build.js檔案的單一設定節點中。 例如，如果存放區的`requirejs-config.js`執行個體有15個不同`map`節點的專案，您需要將所有15個節點的專案合併到`build.js`檔案中的單一`map`節點。 `deps`、`shim`和`paths`節點也會有相同情況。 如果沒有指令碼來自動化此程式，則可能需要時間。
+在此檔案中，您會找到每個設定節點(`deps`、`shim`、`paths`、`map`)的多個專案。 您需要將這些多個節點值彙總到您的build.js檔案的單一設定節點中。 例如，如果存放區的`requirejs-config.js`執行個體有15個不同`map`節點的專案，您需要將所有15個節點的專案合併到`map`檔案中的單一`build.js`節點。 `deps`、`shim`和`paths`節點也會有相同情況。 如果沒有指令碼來自動化此程式，則可能需要時間。
 
-您必須將路徑`mage/requirejs/text`變更為`paths`設定節點中的`requirejs/text`，如下所示：
+您必須將路徑`mage/requirejs/text`變更為`requirejs/text`設定節點中的`paths`，如下所示：
 
 ```javascript
 ({
@@ -176,7 +176,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 #### 若要使用[!DNL PhantomJS]：
 
-在[!DNL Commerce]根目錄中，建立名為`deps.js`的新檔案，並複製下列程式碼。 此程式碼使用[!DNL [!DNL PhantomJS]]開啟頁面，並等待瀏覽器載入所有頁面資產。 然後輸出指定頁面的所有[!DNL RequireJS]相依性。
+在[!DNL Commerce]根目錄中，建立名為`deps.js`的新檔案，並複製下列程式碼。 此程式碼使用[！DNL [!DNL PhantomJS]]開啟頁面，並等待瀏覽器載入所有頁面資產。 然後輸出指定頁面的所有[!DNL RequireJS]相依性。
 
 ```javascript
 "use strict";
@@ -337,7 +337,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 開啟`build.js`設定檔並將您的組合新增至`modules`節點。 每個束都應該定義以下屬性：
 
-- `name` — 組合的名稱。 例如，`bundles/cart`的名稱會在`bundles`子目錄中產生`cart.js`組合。
+- `name` — 組合的名稱。 例如，`bundles/cart`的名稱會在`cart.js`子目錄中產生`bundles`組合。
 
 - `create` — 建立組合包的布林值標幟（值： `true`或`false`）。
 
@@ -413,7 +413,7 @@ mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US
 
 #### 3.執行r.js最佳化程式
 
-然後從[!DNL Commerce]的根目錄對`build.js`檔案執行r.js最佳化程式。 所有目錄和檔案的路徑都相對於工作目錄。
+然後從`build.js`的根目錄對[!DNL Commerce]檔案執行r.js最佳化程式。 所有目錄和檔案的路徑都相對於工作目錄。
 
 ```bash
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
@@ -440,7 +440,7 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 
 #### 4.設定RequireJS使用套件組合
 
-若要讓RequireJS使用您的組合，請在`build.js`檔案中的`modules`節點之後新增`onModuleBundleComplete`回呼：
+若要讓RequireJS使用您的組合，請在`onModuleBundleComplete`檔案中的`modules`節點之後新增`build.js`回呼：
 
 ```javascript
 [
@@ -482,7 +482,7 @@ require.config({});
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
-開啟`pub/static/frontend/Magento/luma/en_US`目錄中的`requirejs-config.js`，以驗證RequireJS是否已將檔案附加至套件組合組態呼叫：
+開啟`requirejs-config.js`目錄中的`pub/static/frontend/Magento/luma/en_US`，以驗證RequireJS是否已將檔案附加至套件組合組態呼叫：
 
 ```javascript
 require.config({
@@ -509,7 +509,7 @@ require.config({
 
 即使gzipped，[!DNL JavaScript]檔案仍然很大。 使用RequireJS來縮制這些值，這使用精簡字元來縮制[!DNL JavaScript]以取得良好的結果。
 
-若要在您的`build.js`檔案中啟用最佳化工具，請在`build.js`檔案頂端新增`uglify2`作為最佳化屬性的值：
+若要在您的`build.js`檔案中啟用最佳化工具，請在`uglify2`檔案頂端新增`build.js`作為最佳化屬性的值：
 
 ```javascript
 ({

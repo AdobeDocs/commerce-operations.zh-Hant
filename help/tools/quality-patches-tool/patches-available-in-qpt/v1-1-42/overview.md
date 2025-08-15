@@ -19,7 +19,7 @@ ht-degree: 0%
 QPT v1.1.42包含下列修補程式：
 
 1. **ACSD-53658**：修正商店檢視中&#x200B;*[!UICONTROL Recently Viewed]*&#x200B;產品資料未正確更新的問題。
-1. **ACSD-54626**：修正無法透過GraphQL建立具有`NUMBER_OF_SKUS`屬性的新採購單規則(`createPurchaseOrderApprovalRule`)的問題。
+1. **ACSD-54626**：修正無法透過GraphQL建立具有`createPurchaseOrderApprovalRule`屬性的新採購單規則(`NUMBER_OF_SKUS`)的問題。
 1. **ACSD-53845**：修正`consumer max_messages` = 0時的MySQL連線逾時問題。
 1. **ACSD-54890**：修正`aggregate_sales_report_bestsellers_data`由於`/tmp`磁碟空間不足而導致MySQL錯誤的問題。
 1. **ACSD-55112**：修正可多次點選「*[!UICONTROL Submit review]*」按鈕而無需[!DNL Google reCAPTCHA v3]驗證的問題。
@@ -29,7 +29,7 @@ QPT v1.1.42包含下列修補程式：
 1. **ACSD-54966**：修正先前訂單失敗時，無法重新使用每位客戶有限使用優惠券代碼的問題。
 1. **ACSD-54060**：修正受限管理員無法儲存產品（若為指派給不同範圍之其他產品的子項）的問題。
 1. **ACSD-48910**：修正訂單開立商業發票及出貨後，即使數量非零，指定給多個來源的套件產品也會缺貨的問題。
-1. **ACSD-55381**：修正透過GraphQL從B2B *[!UICONTROL Requisition list]*&#x200B;查詢`configurable_product_option_uid`和`configurable_product_option_value_uid`欄位時的內部伺服器錯誤。
+1. **ACSD-55381**：修正透過GraphQL從B2B `configurable_product_option_uid`查詢`configurable_product_option_value_uid`和&#x200B;*[!UICONTROL Requisition list]*&#x200B;欄位時的內部伺服器錯誤。
 1. **ACSD-55628**：修正上傳公司登錄檔單上的檔案，並取代店面中客戶屬性的檔案。
 
 使用左側的功能表，導覽至特定的修補程式頁面。

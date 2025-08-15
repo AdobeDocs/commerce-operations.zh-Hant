@@ -40,7 +40,7 @@ ht-degree: 0%
 
 ## [!UICONTROL vCPU tier view over timeline BY NODE]
 
-依節點![&#128279;](../../assets/tools/observation-for-adobe-commerce/infra_by_node.png)在時間線上檢視vCPU層
+依節點![在時間線上檢視](../../assets/tools/observation-for-adobe-commerce/infra_by_node.png)vCPU層
 
 **[!UICONTROL vCPU tier view over timeline BY NODE]**&#x200B;框架會依節點顯示所選時間範圍內的vCPU層檢視。 此框架有助於偵測節點遺失，或節點已放大或縮小時。 依節點依時間表的vCPU層檢視，應檢視少於24小時的時間表。
 

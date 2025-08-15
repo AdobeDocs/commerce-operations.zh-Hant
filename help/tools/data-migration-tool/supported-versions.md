@@ -1,6 +1,6 @@
 ---
 title: 支援的資料移轉版本
-description: 瞭解 [!DNL Data Migration Tool] 支援的Magento1和Magento2的哪些版本。
+description: 瞭解 [!DNL Data Migration Tool] 支援的Magento 1和Magento 2版本。
 exl-id: ba6398b4-66be-4d33-a4d3-a9f0aaa0fa81
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7

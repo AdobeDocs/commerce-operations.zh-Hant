@@ -80,4 +80,4 @@ php           7.4.30    success
 
 如果您針對具有大型模組和檔案的Adobe Commerce執行個體執行[!DNL Upgrade Compatibility Tool]，則工具可能需要大量RAM （至少2GB）。
 
-針對雲端基礎結構[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=zh-Hant){target=_blank}專案上的Adobe Commerce，從[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=zh-Hant)執行[!DNL Upgrade Compatibility Tool]。
+針對雲端基礎結構[!DNL Upgrade Compatibility Tool]專案上的[[!DNL Site-Wide Analysis Tool]Adobe Commerce，從](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html)[執行](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}。

@@ -4,7 +4,7 @@ description: 請依照下列步驟，在您擁有的基礎設施上安裝Adobe C
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: '2093'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ magento setup:install --<option>=<value> ... --<option>=<value>
 | 名稱 | 值 | 必填？ |
 |--- |--- |--- |
 | `--base-url` | 用於以下列任何格式存取管理員和店面的基底URL：<br><br>`http[s]://<host or ip>/<your install dir>/`。<br><br>**注意：**&#x200B;配置(http://或https://)和結尾斜線都是必要的。<br><br>`<your install dir>`是安裝應用程式的docroot相對路徑。 根據您設定網頁伺服器和虛擬主機的方式，路徑可能是magento2或可能為空白。<br><br>若要存取localhost上的應用程式，您可以使用`http://127.0.0.1/<your install dir>/`或`http://127.0.0.1/<your install dir>/`。<br><br>- `{{base_url}}`，代表虛擬主機設定或Docker等虛擬化環境所定義的基底URL。 例如，若您以主機名稱commerce.example.com設定虛擬主機，則可以以`--base-url={{base_url}}`安裝應用程式，並以`http://commerce.example.com/admin`之類的URL存取管理員。 | 是 |
-| `--backend-frontname` | 用於存取管理員的統一資源識別碼(URI)。 您可以省略此引數，讓應用程式為您產生隨機URI，其模式如下： <code>admin_jkhgdfq</code>.<br><br>基於安全考量，建議您使用隨機URI。 對於駭客或惡意軟體而言，隨機URI更難被利用。<br><br>URI會在安裝結束時顯示。 您稍後隨時可以使用`magento info:adminuri`命令來顯示。<br><br>如果您選擇輸入值，建議您不要使用admin、backend等常見字詞。 管理員URI只能包含英數字元和底線字元(`_`)。 | 否 |
+| `--backend-frontname` | 用於存取管理員的統一資源識別碼(URI)。 您可以省略此引數，讓應用程式為您產生隨機URI，其模式如下： <code>admin_jkhgdfq</code>。<br><br>基於安全考量，建議您使用隨機URI。 對於駭客或惡意軟體而言，隨機URI更難被利用。<br><br>URI會在安裝結束時顯示。 您稍後隨時可以使用`magento info:adminuri`命令來顯示。<br><br>如果您選擇輸入值，建議您不要使用admin、backend等常見字詞。 管理員URI只能包含英數字元和底線字元(`_`)。 | 否 |
 | `--db-host` | 使用下列任一項：<br><br> — 資料庫伺服器的完整主機名稱或IP位址。<br><br>- `localhost` （預設）或`127.0.0.1` （若您的資料庫伺服器與web伺服器位於相同的主機上）。localhost表示MySQL使用者端程式庫使用UNIX通訊端連線到資料庫。 `127.0.0.1`導致使用者端資料庫使用TCP通訊協定。 如需通訊端的詳細資訊，請參閱[PHP PDO_MYSQL檔案](https://www.php.net/manual/en/ref.pdo-mysql.php)。<br><br>**注意：**&#x200B;您可以選擇在其主機名稱中指定資料庫伺服器連線埠，例如www.example.com:9000 | 是 |
 | `--db-name` | 您要安裝資料庫表格的資料庫執行處理名稱。<br><br>預設為`magento2`。 | 是 |
 | `--db-user` | 資料庫執行處理擁有者的使用者名稱。<br><br>預設為`root`。 | 是 |
@@ -117,13 +117,13 @@ magento setup:install --<option>=<value> ... --<option>=<value>
 
 >[!TIP]
 >
->若要在安裝期間啟用遠端儲存服務，請參閱&#x200B;_設定指南_&#x200B;中的[設定遠端儲存](../../configuration/remote-storage/remote-storage.md)。
+>若要在安裝期間啟用遠端儲存服務，請參閱[設定指南](../../configuration/remote-storage/remote-storage.md)中的&#x200B;_設定遠端儲存_。
 
 **搜尋引擎組態選項：**
 
 | 名稱 | 值 | 必填？ |
 |--- |--- |--- |
-| `--search-engine` | 搜尋引擎的版本。 可能的值為`elasticsearch7`、`elasticsearch6`和`elasticsearch5`。 預設值為`elasticsearch7`。 如果您已安裝OpenSearch做為搜尋引擎，請指定值`elasticsearch7`。 Elasticsearch5已過時，不建議使用。 | 否 |
+| `--search-engine` | 搜尋引擎的版本。 可能的值為`elasticsearch7`、`elasticsearch6`和`elasticsearch5`。 預設值為`elasticsearch7`。 如果您已安裝OpenSearch做為搜尋引擎，請指定值`elasticsearch7`。 Elasticsearch 5已過時，不建議使用。 | 否 |
 | `--elasticsearch-host` | 執行搜尋引擎的主機名稱或IP位址。 預設值為`localhost`。 | 否 |
 | `--elasticsearch-port` | 傳入HTTP要求的連線埠。 預設值為`9200`。 | 否 |
 | `--elasticsearch-index-prefix` | 識別搜尋索引的前置詞。 預設值為`magento2`。 | 否 |
@@ -185,7 +185,7 @@ magento setup:install --<option>=<value> ... --<option>=<value>
 
 下列範例會安裝具有以下選項的應用程式：
 
-* 應用程式安裝在`localhost`上相對於Web伺服器docroot的`magento2`目錄中，而且管理員的路徑是`admin`；因此：
+* 應用程式安裝在`magento2`上相對於Web伺服器docroot的`localhost`目錄中，而且管理員的路徑是`admin`；因此：
 
   您的店面URL是`http://127.0.0.1`
 
@@ -204,7 +204,7 @@ magento setup:install --<option>=<value> ... --<option>=<value>
 * 預設語言為`en_US` （美式英文）
 * 預設貨幣為美元
 * 預設時區為美國中部（美洲/芝加哥）
-* Elasticsearch7已安裝在`es-host.example.com`上，並連線到連線埠9200
+* Elasticsearch 7已安裝在`es-host.example.com`上，並連線到連線埠9200
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -255,7 +255,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 下列範例會安裝具有以下選項的應用程式：
 
-* Magapplication安裝在`localhost`上相對於Web伺服器docroot的`magento2`目錄中，且管理員的路徑為`admin`；因此：
+* Magapplication安裝在`magento2`上相對於Web伺服器docroot的`localhost`目錄中，且管理員的路徑為`admin`；因此：
 
   您的店面URL是`http://127.0.0.1`
 
@@ -276,7 +276,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 * 您使用`ORD$`銷售訂單增量前置詞（由於它包含特殊字元[`$`]，因此值必須用雙引號括住）
 * 工作階段資料儲存在資料庫中
 * 使用伺服器重寫
-* Elasticsearch7已安裝在`es-host.example.com`上，並連線到連線埠9200
+* Elasticsearch 7已安裝在`es-host.example.com`上，並連線到連線埠9200
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \

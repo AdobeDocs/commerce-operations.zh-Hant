@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >最新版Adobe Commerce至少需要PHP 8.1。如需所有支援的PHP版本，請參閱[系統需求](../system-requirements.md)。
 
-如需雲端組態指南，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=zh-Hant)。
+如需雲端組態指南，請參閱[雲端基礎結構上的Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html)指南中的&#x200B;_PHP設定_。
 
 ## PHP程式控制
 
@@ -65,7 +65,7 @@ Adobe Commerce需要特定的PHP擴充功能。 下列清單指定每個Commerce
 
 >[!WARNING]
 >
->如果您使用PHP 7.4.20，請在`php.ini`檔案中設定`pcre.jit=0`。 這會繞過PHP [錯誤](https://bugs.php.net/bug.php?id=81101)，導致CSS無法載入。
+>如果您使用PHP 7.4.20，請在`pcre.jit=0`檔案中設定`php.ini`。 這會繞過PHP [錯誤](https://bugs.php.net/bug.php?id=81101)，導致CSS無法載入。
 
 - 設定PHP的系統時區；否則，在安裝期間顯示以下錯誤以及與時間相關的操作（如cron）可能無法運作：
 
@@ -98,7 +98,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 >[!NOTE]
 >
->為避免在安裝和升級期間出現問題，Adobe強烈建議您對PHP命令列配置和PHP Web伺服器外掛程式配置都應用相同的PHP設定。 如需詳細資訊，請參閱下一節。
+>為避免在安裝和升級期間出現問題，Adobe強烈建議您對PHP命令列配置和PHP Web伺服器外掛程式配置都套用相同的PHP設定。 如需詳細資訊，請參閱下一節。
 
 ## 尋找PHP組態檔
 

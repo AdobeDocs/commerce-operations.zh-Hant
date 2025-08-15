@@ -31,7 +31,7 @@ try {
 }
 ```
 
-此方法會依照[PSR-3內容標準](https://www.php-fig.org/psr/psr-3/#13-context)，自動將`$e->getMessage`儲存至記錄訊息，並將`$e`物件儲存至內容。 這已在`\Magento\Framework\Logger\Monolog::addRecord`內完成。
+此方法會依照`$e->getMessage`PSR-3內容標準`$e`，自動將[儲存至記錄訊息，並將](https://www.php-fig.org/psr/psr-3/#13-context)物件儲存至內容。 這已在`\Magento\Framework\Logger\Monolog::addRecord`內完成。
 
 ### ![正確](../../../assets/yes.svg)靜音訊號
 

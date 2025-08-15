@@ -36,5 +36,5 @@ Adobe Commerce協力廠商擴充功能（模組）可能會造成各種問題，
 
 - [規劃升級的最佳實務](../../../upgrade/prepare/best-practices.md)
 - 在雲端基礎結構上搭配使用協力廠商擴充功能與Adobe Commerce
-   - [技術與需求 — 開發與測試](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [為何要在整合與測試中完整測試？](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+   - [技術與需求 — 開發與測試](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [為何要在整合與測試中完整測試？](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

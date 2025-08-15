@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->- 如需雲端基礎結構專案上的Adobe Commerce，請參閱雲端指南中的[升級Commerce版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=zh-Hant)。
+>- 如需雲端基礎結構專案上的Adobe Commerce，請參閱雲端指南中的[升級Commerce版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html)。
 >- 如果您複製GitHub存放庫，請勿使用此方法來升級。 請參閱[升級Git安裝](../developer/git-installs.md)。
 
 下列指示說明如何使用Composer封裝管理員進行升級。 Adobe Commerce 2.4.2推出對Composer 2的支援。 如果您嘗試從&lt;2.4.1升級，您必須先使用Composer 1 _升級到Composer 2以進行>2.4.2升級之前_，升級到與Composer 2相容的版本（例如，2.4.2）。 此外，您必須執行[支援的PHP版本](../../installation/system-requirements.md)。
@@ -48,13 +48,13 @@ ht-degree: 0%
 
 1. 在非同步處理序（例如訊息佇列取用者）執行時啟動升級處理序，可能會導致資料損毀。 若要防止資料損毀，請停用所有cron工作。
 
-   雲端基礎結構上的&#x200B;_Adobe Commerce：_
+   雲端基礎結構上的Adobe Commerce :_(_W)
 
    ```bash
    ./vendor/bin/ece-tools cron:disable
    ```
 
-   _Magento Open Source：_
+   _Magento Open Source :_
 
    ```bash
    bin/magento cron:remove
@@ -88,13 +88,13 @@ ht-degree: 0%
    composer require <sample data module-1>:<version> ... <sample data module-n>:<version> --no-update
    ```
 
-   - _Adobe Commerce：_
+   - _Adobe Commerce :_
 
      ```bash
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
      ```
 
-   - _Magento Open Source：_
+   - _Magento Open Source :_
 
      ```bash
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
@@ -178,7 +178,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 ## 更新中繼資料
 
-1. 視需要更新`composer.json`檔案中的`"name"`、`"version"`和`"description"`欄位。
+1. 視需要更新`"name"`檔案中的`"version"`、`"description"`和`composer.json`欄位。
 
    >[!NOTE]
    >
@@ -234,7 +234,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 如果應用程式失敗並出現`We're sorry, an error has occurred while generating this email.`錯誤：
 
-1. 將[檔案系統擁有權和許可權重設為具有`root`許可權的使用者](../../installation/prerequisites/file-system/configure-permissions.md)。
+1. 將[檔案系統擁有權和許可權重設為具有](../../installation/prerequisites/file-system/configure-permissions.md)許可權的使用者`root`。
 1. 清除下列目錄：
    - `var/cache/`
    - `var/page_cache/`

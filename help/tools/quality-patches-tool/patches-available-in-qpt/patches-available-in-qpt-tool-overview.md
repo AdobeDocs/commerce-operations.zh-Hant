@@ -39,12 +39,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->QPT僅適用於品質修補程式。 安全性修補程式可在Adobe Commerce和Magento Open Source的[發行說明中取得](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=zh-Hant)。
+>QPT僅適用於品質修補程式。 安全性修補程式可在Adobe Commerce和Magento Open Source的[發行說明中取得](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html)。
 
 ## [!DNL Quality Patches Tool]中可用的修補程式
 
 在Adobe Commerce支援知識庫的這個區段中，您會找到按QPT發行版本分組的QPT修補程式所解決之問題的詳細說明。
-您也可以檢視可用的QPT修補程式清單，並使用支援知識庫中[[!DNL Quality Patches Tool]：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)上動態產生的表格來依元件篩選。
+您也可以檢視可用的QPT修補程式清單，並使用支援知識庫中[[!DNL Quality Patches Tool]：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)上動態產生的表格來依元件篩選。
 
 ## 如何安裝及使用[!DNL Quality Patches Tool]
 
@@ -56,8 +56,8 @@ ht-degree: 0%
 
 ### 如何在雲端基礎結構上安裝和使用適用於Adobe Commerce的QPT
 
-請參閱開發人員檔案中的[雲端基礎結構上的Commerce指南>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)，以取得有關如何在Adobe Commerce上安裝和使用QPT來套用及還原修補程式的詳細資訊。
+請參閱開發人員檔案中的[雲端基礎結構上的Commerce指南>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)，以取得有關如何在Adobe Commerce上安裝和使用QPT來套用及還原修補程式的詳細資訊。
 
 ## 相關閱讀
 
-* 在開發人員檔案中[[!DNL Quality Patches Tool] 發行說明](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=zh-Hant)。
+* 在開發人員檔案中[[!DNL Quality Patches Tool] 發行說明](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)。

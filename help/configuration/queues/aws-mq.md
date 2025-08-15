@@ -13,11 +13,11 @@ ht-degree: 0%
 
 自Commerce 2.4.3起，Amazon訊息佇列(MQ)可作為內部部署訊息佇列例項的雲端就緒替代專案。
 
-若要在AWS上建立訊息佇列，請參閱&#x200B;_Amazon檔案_&#x200B;中的[設定AWS MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html)。
+若要在AWS上建立訊息佇列，請參閱[Amazon檔案](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html)中的&#x200B;_設定AWS MQ_。
 
 ## 設定適用於AWS MQ的Commerce
 
-若要連線到AWS MQ服務，請設定`env.php`檔案中的`queue.amqp`物件。
+若要連線到AWS MQ服務，請設定`queue.amqp`檔案中的`env.php`物件。
 AWS訊息佇列需要SSL/TLS連線。
 
 ```php

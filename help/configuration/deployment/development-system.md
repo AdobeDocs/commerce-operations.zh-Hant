@@ -17,7 +17,7 @@ ht-degree: 0%
 - 所有Commerce程式碼都在與組建和生產系統相同的存放庫中進行原始檔控制
 - 每個開發系統都應該使用[預設模式](../bootstrap/application-modes.md#default-mode)或[開發人員模式](../bootstrap/application-modes.md#developer-mode)
 - 它已經設定檔案系統擁有權和許可權，如[您的開發、組建和生產系統的先決條件](../deployment/technical-details.md)中所述。
-- 確定下列所有專案皆已從原始檔控制中排除&#x200B;_1&rbrace;：_
+- 確定下列所有專案皆已從原始檔控制中排除&#x200B;_1}：_
 
    - `vendor`目錄（和子目錄）
    - `generated`目錄（和子目錄）

@@ -68,7 +68,7 @@ Connection: keep-alive
 
 ## 在Admin中設定HTTP基本驗證
 
-執行[搜尋引擎組態](../configuration/search/configure-search-engine.md) *中討論過的相同工作（除了*），請從&#x200B;**[!UICONTROL Enable HTTP Auth]**&#x200B;清單中按一下&#x200B;**[!UICONTROL Yes]**，然後在提供的欄位中輸入您的使用者名稱和密碼。
+執行[搜尋引擎組態](../configuration/search/configure-search-engine.md) *中討論過的相同工作（除了*），請從&#x200B;**[!UICONTROL Yes]**&#x200B;清單中按一下&#x200B;**[!UICONTROL Enable HTTP Auth]**，然後在提供的欄位中輸入您的使用者名稱和密碼。
 
 按一下「**[!UICONTROL Test Connection]**」以確認其運作正常，然後按一下「**[!UICONTROL Save Config]**」。
 

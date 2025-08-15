@@ -21,7 +21,7 @@ Your current search engine, <Engine Name>, is not supported. You must install a 
 此錯誤表示在舊版Adobe Commerce中，有下列條件之一為true：
 
 - 搜尋引擎設定為MySQL。
-- 搜尋引擎設定為不再支援的Elasticsearch版本。
+- 搜尋引擎已設定為不再支援的Elasticsearch版本。
 
 使用以下命令檢查目前的搜尋引擎：
 
@@ -60,13 +60,13 @@ bin/magento config:show catalog/search/engine
 
 ## 如果您的搜尋引擎為`elasticsearch`
 
-不再支援Elasticsearch6及舊版。
+不再支援Elasticsearch 6和更早版本。
 
-值`elasticsearch`表示您的Adobe Commerce舊版已設定為使用Elasticsearch2.x。不再支援此版本的Elasticsearch。
+值`elasticsearch`表示您的Adobe Commerce舊版已設定為使用Elasticsearch 2.x。不再支援此版本的Elasticsearch。
 
 升級至2.4之前，您必須執行下列工作：
 
-1. 更新至Commerce支援的Elasticsearch版本。 請參閱[升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)，以取得有關備份資料、偵測可能的移轉問題，以及在部署到生產環境之前測試升級的完整指示。 根據您目前的Elasticsearch版本，可能不需要完全重新啟動叢集。
+1. 更新至Commerce支援的Elasticsearch版本。 請參閱[升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)，以取得有關備份資料、偵測可能的移轉問題，以及在部署到生產環境之前測試升級的完整指示。 根據您目前的Elasticsearch版本，不一定需要重新啟動完整叢集。
 
    >[!NOTE]
    >

@@ -26,7 +26,7 @@ CCPA授予消費者下列新權利：
 
 ## CCPA法規遵循
 
-制定及實作CCPA法規遵循計畫需要協調一致的努力。 我們鼓勵商戶組建跨職能團隊，並遵循[CCPA合規性指南](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=zh-Hant)中概述的藍圖，讓公司遵守法規。 身為開發人員，您可能會受邀以利害關係人身分參與，重點放在程式的步驟2到5。 如需詳細資訊，請參閱[CCPA法規遵循指南](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=zh-Hant)。
+制定及實作CCPA法規遵循計畫需要協調一致的努力。 我們鼓勵商戶組建跨職能團隊，並遵循[CCPA合規性指南](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html)中概述的藍圖，讓公司遵守法規。 身為開發人員，您可能會受邀以利害關係人身分參與，重點放在程式的步驟2到5。 如需詳細資訊，請參閱[CCPA法規遵循指南](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html)。
 
 1. 組建跨職能團隊以符合CCPA規定。
 

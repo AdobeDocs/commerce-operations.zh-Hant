@@ -20,7 +20,7 @@ QPT v1.1.54包含下列修補程式：
 
 1. **ACSD-60267**：修正當直接將具有FPT的簡單產品新增至購物車時，Fixed Product Tax (FPT)會正確套用的問題，但在透過可設定的產品選項選取這些產品時失敗。
 1. **ACSD-61103**：修正客戶透過API端點成功登入後，`customer_entity`表格中的失敗計數未重設為零的問題。
-1. **ACSD-61134**：修正當購物者取消選取&#x200B;*[!UICONTROL My billing and shipping address are the same]*&#x200B;核取方塊以更新其帳單地址時，在結帳工作流程中自動取消選取[!DNL Braintree Vault]付款方式的問題。
+1. **ACSD-61134**：修正當購物者取消選取[!DNL Braintree Vault]核取方塊以更新其帳單地址時，在結帳工作流程中自動取消選取&#x200B;*[!UICONTROL My billing and shipping address are the same]*&#x200B;付款方式的問題。
 1. **ACSD-61199**：修正CMS頁面階層索引標籤在編輯具有現有階層的CMS頁面時未顯示正確樹狀結構的問題。
 1. **ACSD-61200**：修正銷售中&#x200B;*[!UICONTROL Total Amount]*&#x200B;與&#x200B;*[!UICONTROL Total Amount Actual]*&#x200B;的計算遺失&#x200B;*[!UICONTROL Discount Tax Compensation Amount]*&#x200B;與&#x200B;*[!UICONTROL Shipping Discount Tax Compensation Amount]*，造成銷售訂單資料不一致的問題。
 1. **ACSD-61522**：修正可能將電子郵件地址輸入客體客戶的&#x200B;*[!UICONTROL First Name]*&#x200B;和&#x200B;*[!UICONTROL Last Name]*&#x200B;欄位，並傳送無效訂單確認電子郵件的問題。

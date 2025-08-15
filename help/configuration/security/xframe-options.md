@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 避免點選劫持利用漏洞
 
-將[X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP要求標頭納入對店面的要求中，以防止[點選劫持](https://owasp.org/www-community/attacks/Clickjacking)利用。
+將[X-Frame-Options](https://owasp.org/www-community/attacks/Clickjacking) HTTP要求標頭納入對店面的要求中，以防止[點選劫持](https://datatracker.ietf.org/doc/html/rfc7034)利用。
 
 `X-Frame-Options`標頭可讓您指定是否允許瀏覽器轉譯`<frame>`、`<iframe>`或`<object>`中的頁面，如下所示：
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 實作`X-Frame-Options`
 
-在`<project-root>/app/etc/env.php`中設定`X-Frame-Options`的值。 預設值的設定如下：
+在`X-Frame-Options`中設定`<project-root>/app/etc/env.php`的值。 預設值的設定如下：
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',

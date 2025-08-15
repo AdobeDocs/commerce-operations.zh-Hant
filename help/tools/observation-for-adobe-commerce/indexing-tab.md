@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL Indexing]索引標籤'
-description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL Indexing]標籤。
+description: 瞭解[!UICONTROL Indexing]的 [!DNL Observation for Adobe Commerce]標籤。
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7

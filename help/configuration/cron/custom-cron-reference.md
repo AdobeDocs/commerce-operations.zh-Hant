@@ -82,7 +82,7 @@ _cron群組_&#x200B;是邏輯群組，可讓您一次輕鬆執行一個以上處
 </config>
 ```
 
-例如，請參閱[Magento_客戶crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml)。
+例如，請參閱[Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml)。
 
 ### 指定Cron群組選項
 
@@ -123,9 +123,9 @@ _cron群組_&#x200B;是邏輯群組，可讓您一次輕鬆執行一個以上處
 
 ## 停用cron工作
 
-Cron工作沒有我們為[觀察者](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers)所擁有的`disable`功能。 但是，可以使用下列技巧停用cron工作： `schedule`一次包含永遠不會發生的日期的時間。
+Cron工作沒有我們為`disable`觀察者[所擁有的](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers)功能。 但是，可以使用下列技巧停用cron工作： `schedule`一次包含永遠不會發生的日期的時間。
 
-例如，停用`Magento_Customer`模組中定義的`visitor_clean` cron工作：
+例如，停用`visitor_clean`模組中定義的`Magento_Customer` cron工作：
 
 ```xml
 ...

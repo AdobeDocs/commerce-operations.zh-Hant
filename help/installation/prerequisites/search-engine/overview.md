@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4版本新增OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 設定Elasticsearch7的所有指示都適用於OpenSearch。 [從Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)提供切換至OpenSearch的指引。
+>2.4.4版本新增OpenSearch支援。OpenSearch是Elasticsearch的相容復本。 設定Elasticsearch 7的所有指示均適用於OpenSearch。 [從Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)提供切換至OpenSearch的指引。
 
 ## 支援的版本
 
@@ -63,9 +63,9 @@ ht-degree: 0%
 
 1. 搜尋引擎會處理請求。
 
-1. 通訊會沿著相同的路徑傳回，Elasticsearch網頁伺服器會充當安全的反向Proxy。
+1. 通訊會沿著相同的路徑傳回，而Elasticsearch網頁伺服器會充當安全的反向Proxy。
 
-## 必要條件
+## 先決條件
 
 本節討論的任務需要下列專案：
 
@@ -132,9 +132,9 @@ apt-get install -y openjdk-8-jdk
 
 ### 安裝搜尋引擎
 
-請依照[安裝Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)或[安裝並設定OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/)，以取得您的平台特定步驟。
+請依照[安裝Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)或[安裝並設定OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/)以瞭解您的平台特定步驟。
 
-若要確認Elasticsearch是否正常運作，請在伺服器上輸入下列命令：
+若要驗證Elasticsearch是否正常運作，請在執行它的伺服器上輸入下列命令：
 
 ```bash
 curl -XGET '<host>:9200/_cat/health?v&pretty'
@@ -159,7 +159,7 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## 升級Elasticsearch
 
-請參閱[升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)，以取得有關備份資料、偵測可能的移轉問題，以及在部署到生產環境之前測試升級的完整指示。 根據您目前的Elasticsearch版本，可能不需要完全重新啟動叢集。
+請參閱[升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)，以取得有關備份資料、偵測可能的移轉問題，以及在部署到生產環境之前測試升級的完整指示。 根據您目前的Elasticsearch版本，不一定需要重新啟動完整叢集。
 
 Elasticsearch需要JDK 1.8或更新版本。 請參閱[安裝Java Software Development Kit](#install-the-java-software-development-kit)以檢查已安裝的JDK版本。
 

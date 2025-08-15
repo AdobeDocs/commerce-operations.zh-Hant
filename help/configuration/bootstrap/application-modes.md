@@ -26,9 +26,9 @@ ht-degree: 0%
 
 由於唯讀檔案系統，在遠端雲端環境中變更模式有嚴格限制，Adobe Commerce支援無法覆寫該模式。 請勿嘗試透過修改`app/etc/env.php`檔案來變更模式，因為`ece-tools`封裝會根據多個組態來源覆寫檔案。
 
-雲端基礎結構上的Adobe Commerce會在部署期間以&#x200B;_維護_&#x200B;模式自動執行應用程式，讓您的網站離線，直到部署完成。 否則，應用程式會維持在&#x200B;_生產_&#x200B;模式。 請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[部署程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=zh-Hant#deploy-phase)。
+雲端基礎結構上的Adobe Commerce會在部署期間以&#x200B;_維護_&#x200B;模式自動執行應用程式，讓您的網站離線，直到部署完成。 否則，應用程式會維持在&#x200B;_生產_&#x200B;模式。 請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase)中的&#x200B;_部署程式_。
 
-如果您使用Commerce的Cloud Docker作為開發工具，則可以在&#x200B;_開發人員_&#x200B;模式的Docker環境中部署雲端基礎結構專案，但由於額外的檔案同步處理作業，效能會變慢。 請參閱&#x200B;_適用於Commerce的Cloud Docker指南_&#x200B;中的[部署Docker環境](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode)。
+如果您使用Commerce的Cloud Docker作為開發工具，則可以在&#x200B;_開發人員_&#x200B;模式的Docker環境中部署雲端基礎結構專案，但由於額外的檔案同步處理作業，效能會變慢。 請參閱[適用於Commerce的Cloud Docker指南](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode)中的&#x200B;_部署Docker環境_。
 
 
 ## 預設模式
@@ -58,13 +58,13 @@ _預設_&#x200B;模式可讓您在單一伺服器上部署Commerce應用程式�
 
 >[!NOTE]
 >
->Adobe Commerce Cloud環境不支援此模式，且Adobe Commerce支援無法協助變更應用程式模式。
+>Adobe Commerce雲端環境不支援此模式，且Adobe Commerce支援無法協助變更應用程式模式。
 
 ## 生產模式
 
 _生產_&#x200B;模式最適合在生產系統上部署Commerce應用程式。 在最佳化伺服器環境（例如資料庫和網頁伺服器）之後，您應該執行[靜態檢視檔案部署工具](../cli/static-view-file-deployment.md)，將靜態檢視檔案寫入`pub/static`目錄。 這可透過在部署時提供所有必要的靜態檔案來改善效能，而不是強制Commerce應用程式在執行階段期間依需求動態尋找和複製（具體化）靜態檔案。
 
-某些欄位，例如管理員中的進階和開發人員系統設定區段，在生產模式中無法使用。 例如，您&#x200B;_無法_&#x200B;使用Admin啟用或停用快取型別。 您可以使用[命令列](../cli/manage-cache.md#config-cli-subcommands-cache-en)來啟用和停用快取型別&#x200B;_僅限_。
+某些欄位，例如管理員中的進階和開發人員系統設定區段，在生產模式中無法使用。 例如，您&#x200B;_無法_&#x200B;使用Admin啟用或停用快取型別。 您可以使用&#x200B;_命令列_&#x200B;來啟用和停用快取型別[僅限](../cli/manage-cache.md#config-cli-subcommands-cache-en)。
 
 在生產模式中：
 
@@ -76,9 +76,9 @@ _生產_&#x200B;模式最適合在生產系統上部署Commerce應用程式。 �
 
 _維護_&#x200B;模式會在改善、更新及設定工作期間，限制或防止存取網站。 依預設，網站會將訪客重新導向預設`Service Temporarily Unavailable`頁面。
 
-您可以建立[自訂維護頁面](../../upgrade/troubleshooting/maintenance-mode-options.md)、手動啟用和停用維護模式，以及設定維護模式，以允許來自授權IP位址的訪客正常檢視存放區。 請參閱&#x200B;_安裝指南_&#x200B;中的[啟用和停用維護模式](../../installation/tutorials/maintenance-mode.md)。
+您可以建立[自訂維護頁面](../../upgrade/troubleshooting/maintenance-mode-options.md)、手動啟用和停用維護模式，以及設定維護模式，以允許來自授權IP位址的訪客正常檢視存放區。 請參閱[安裝指南](../../installation/tutorials/maintenance-mode.md)中的&#x200B;_啟用和停用維護模式_。
 
-如果您在雲端基礎結構上使用Commerce，Commerce應用程式會在部署階段以維護模式執行。 部署成功完成時，Commerce應用程式會回到生產模式中執行。 請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[部署勾點](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=zh-Hant#phase-5%3A-deployment-hooks)。
+如果您在雲端基礎結構上使用Commerce，Commerce應用程式會在部署階段以維護模式執行。 部署成功完成時，Commerce應用程式會回到生產模式中執行。 請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks)中的&#x200B;_部署勾點_。
 
 在維護模式中：
 

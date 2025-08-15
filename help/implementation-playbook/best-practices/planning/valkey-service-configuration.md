@@ -17,7 +17,7 @@ Adobe建議您在設定Valkey服務時遵循下列最佳實務：
 
 ## 設定Valkey L2快取
 
-在`.magento.env.yaml`組態檔中設定`VALKEY_BACKEND`部署變數，以設定Valkey L2快取。
+在`VALKEY_BACKEND`組態檔中設定`.magento.env.yaml`部署變數，以設定Valkey L2快取。
 
 ```yaml
 stage:
@@ -25,13 +25,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-如需雲端基礎結構上的環境設定，請參閱雲端基礎結構上的&#x200B;_Commerce指南_&#x200B;中的[`VALKEY_BACKEND`](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)。
+如需雲端基礎結構上的環境設定，請參閱雲端基礎結構上的[`VALKEY_BACKEND`Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)中的&#x200B;__。
 
-如需內部部署安裝，請參閱&#x200B;_設定指南_&#x200B;中的[設定Valkey頁面快取](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)。
+如需內部部署安裝，請參閱[設定指南](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)中的&#x200B;_設定Valkey頁面快取_。
 
 >[!NOTE]
 >
->確認您使用的是最新版本的`ece-tools`封裝。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
+>確認您使用的是最新版本的`ece-tools`封裝。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
 
 ### L2快取記憶體大小(Adobe Commerce Cloud)
 
@@ -51,7 +51,7 @@ L2快取使用[暫存檔案系統](https://en.wikipedia.org/wiki/Tmpfs)做為儲
 >
 >Adobe Commerce 2.4.4已匯入`cleanup_percentage`組態選項。
 
-下列範例顯示`.magento.env.yaml`檔案中的`CACHE_CONFIGURATION`：
+下列範例顯示`CACHE_CONFIGURATION`檔案中的`.magento.env.yaml`：
 
 ```yaml
 stage:
@@ -85,13 +85,13 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-如需詳細資訊，請參閱雲端基礎結構指南&#x200B;_上_ Commerce中的[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection)。
+如需詳細資訊，請參閱雲端基礎結構指南[上](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection)Commerce中的&#x200B;_VALKEY_USE_SLAVE_CONNECTION_。
 
-針對Adobe Commerce內部部署安裝，請使用`bin/magento:setup`命令設定新的Valkey快取實作。 如需詳細資訊，請參閱&#x200B;_組態指南_&#x200B;中的[使用預設快取的Valkey](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)。
+針對Adobe Commerce內部部署安裝，請使用`bin/magento:setup`命令設定新的Valkey快取實作。 如需詳細資訊，請參閱[組態指南](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)中的&#x200B;_使用預設快取的Valkey_。
 
 >[!WARNING]
 >
->請&#x200B;_不_&#x200B;為雲端基礎結構專案設定Valkey從屬連線，並採用[縮放/分割架構](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。 這會導致Valkey連線錯誤。 如需詳細資訊，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[Valkey設定指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)。
+>請&#x200B;_不_&#x200B;為雲端基礎結構專案設定Valkey從屬連線，並採用[縮放/分割架構](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。 這會導致Valkey連線錯誤。 如需詳細資訊，請參閱[雲端基礎結構上的Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)指南中的&#x200B;_Valkey設定指南_。
 
 ## 預先載入索引鍵
 
@@ -114,7 +114,7 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-如需內部部署安裝，請參閱&#x200B;_設定指南_&#x200B;中的[Valkey預先載入功能](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature)。
+如需內部部署安裝，請參閱[設定指南](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature)中的&#x200B;_Valkey預先載入功能_。
 
 ## 啟用過時的快取
 
@@ -153,9 +153,9 @@ stage:
 
 >[!NOTE]
 >
->在上一個範例中，`full_page`快取與雲端基礎結構專案上的Adobe Commerce無關，因為它們使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly)。
+>在上一個範例中，`full_page`快取與雲端基礎結構專案上的Adobe Commerce無關，因為它們使用[Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)。
 
-若要設定內部部署安裝，請參閱&#x200B;_設定指南_&#x200B;中的[過時快取選項](../../../configuration/cache/level-two-cache.md#stale-cache-options)。
+若要設定內部部署安裝，請參閱[設定指南](../../../configuration/cache/level-two-cache.md#stale-cache-options)中的&#x200B;_過時快取選項_。
 
 部署期間，您應該會在[建置和部署記錄檔](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations.html#build-and-deploy-logs)中看到下列行：
 
@@ -173,7 +173,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## 快取壓縮
 
-如果您使用超過6GB的Valkey `maxmemory`，則可以使用快取壓縮來減少金鑰所消耗的空間。 請注意，使用者端效能是有代價的。 如果您有備用CPU，Adobe建議啟用它們。 請參閱&#x200B;_組態指南_&#x200B;中的[使用工作階段存放區](../../../configuration/cache/valkey-session.md)的Valkey。
+如果您使用超過6GB的Valkey `maxmemory`，則可以使用快取壓縮來減少金鑰所消耗的空間。 請注意，使用者端效能是有代價的。 如果您有備用CPU，Adobe建議啟用它們。 請參閱[組態指南](../../../configuration/cache/valkey-session.md)中的&#x200B;_使用工作階段存放區_&#x200B;的Valkey。
 
 ```yaml
 stage:

@@ -1,6 +1,6 @@
 ---
 title: 客戶個人資訊參考（1.x版）
-description: 瞭解Magento1.x中客戶個人資訊的資料流和資料庫實體對應。
+description: 瞭解Magento 1.x中客戶個人資訊的資料流和資料庫實體對應。
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
@@ -50,11 +50,11 @@ ht-degree: 0%
 
 ## 資料庫實體
 
-Magento1會將客戶資訊儲存在客戶、銷售和其他資料庫表格中。
+Magento 1會將客戶資訊儲存在客戶、銷售和其他資料庫表格中。
 
 ### 客戶資料
 
-Magento1會將客戶資訊儲存在`customer_entity`和`customer_address_entity`資料表中。 這兩個表格都有數個參考表格，可包含自訂客戶屬性。
+Magento 1會將客戶資訊儲存在`customer_entity`和`customer_address_entity`資料表中。 這兩個表格都有數個參考表格，可包含自訂客戶屬性。
 
 #### `customer_entity`和參考資料表
 

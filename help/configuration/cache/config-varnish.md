@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ![基本清漆圖表](../../assets/configuration/varnish-basic.png)
 
-在上圖中，使用者透過網際網路發出的HTTP請求會產生許多對CSS、HTML、JavaScript和影像的請求（統稱為&#x200B;_資產_）。 清漆位於網頁伺服器前，並代理這些要求至網頁伺服器。
+在上圖中，使用者透過網際網路發出的HTTP請求會導致產生CSS、HTML、JavaScript和影像的大量請求（統稱為&#x200B;_資產_）。 清漆位於網頁伺服器前，並代理這些要求至網頁伺服器。
 
 當網頁伺服器傳回資產時，可快取的資產會儲存在Varnish中。 後續對這些資產的任何請求都會由Varnish履行（這表示這些請求不會到達網頁伺服器）。 清漆會非常快速地傳回快取的內容。 如此一來，將內容傳回使用者的回應時間就會變快，而Commerce必須完成的請求數量也會減少。
 
@@ -90,9 +90,9 @@ ht-degree: 0%
 
 清漆快取可與Commerce搭配使用，使用：
 
-- 來自Magento2 GitHub存放庫的[`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)
+- Magento 2 GitHub存放庫中的[`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)
 - Commerce提供的Apache適用的`.htaccess`分散式設定檔
-- 使用[管理員](../cache/configure-varnish-commerce.md)產生的清漆的`default.vcl`設定
+- 使用`default.vcl`管理員[產生的清漆的](../cache/configure-varnish-commerce.md)設定
 
 >[!INFO]
 >

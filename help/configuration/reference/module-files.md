@@ -104,7 +104,7 @@ Commerce應用程式合併演演算法：
 | `module.xml` | 定義模組設定資料和軟性相依性 | 主要，全域 | [\Magento\Framework\Module\ModuleList\Loader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Module/ModuleList/Loader.php) |
 | `mview.xml` | [MView設定](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/#mview-configuration) | 主要，全域 | [\Magento\Framework\Mview\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview/Config/Data.php) |
 | `payment.xml` | 付款模組設定 | 主要，全域 | [\Magento\Payment\Model\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Config.php) |
-| `persistent.xml` | [Magento_持續](https://developer.adobe.com/commerce/php/module-reference/module-persistent/)設定檔 | 全域 | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
+| `persistent.xml` | [Magento_Persistent](https://developer.adobe.com/commerce/php/module-reference/module-persistent/)設定檔 | 全域 | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
 | `pdf.xml` | PDF設定 | 全域 | [\Magento\Sales\Model\Order\Pdf\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config/Reader.php) |
 | `product_options.xml` | 提供產品選項設定 | 全域 | [\Magento\Catalog\Model\ProductOptions\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductOptions/Config.php) |
 | `product_types.xml` | 定義產品型別 | 全域 | [\Magento\Catalog\Model\ProductTypes\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductTypes/Config.php) |
@@ -128,7 +128,7 @@ Commerce應用程式合併演演算法：
 
 ### 設定介面
 
-您可以使用[Magento\架構\組態](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Config)下的介面與組態檔互動。
+您可以使用[Magento\Framework\Config](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Config)下的介面與組態檔互動。
 
 如果您[建立組態型別](../reference/config-create-types.md#create-configuration-types)，就可以使用這些介面。
 

@@ -28,7 +28,7 @@ ht-degree: 0%
 
    * 雲端基礎結構上的Adobe Commerce提供[!DNL Managed alerts]。 您可以按一下標題中的連結來檢視[!DNL Support Knowledge Base]篇文章，這些文章將協助您判斷特定警示的動作。
 
-* 檢查&#x200B;**[!UICONTROL CPU % by host]**&#x200B;框架：如果它顯示高CPU使用率，請檢查框架標頭中的[!DNL Support Knowledge Base]文章。 此外，檢查以確保資料庫匯入/匯出或備份未在尖峰流量期間完成。
+* 檢查&#x200B;**[!UICONTROL CPU % by host]**&#x200B;框架：如果它顯示有高的CPU使用率，請檢查框架標題中的[!DNL Support Knowledge Base]文章。 此外，檢查以確保資料庫匯入/匯出或備份未在尖峰流量期間完成。
 
 * 檢查&#x200B;**[!UICONTROL Web Traffic volume compared to one week ago]**&#x200B;時間格：如果流量遠高於同一期間的前一週，可以解釋嗎（例如，促銷活動或已經行銷的新產品）？
    * 如果無法解釋流量增加，請檢視生產環境的平均回應時間（毫秒）。 對回應時間有貢獻的流量是否與正常情況不同？ 展開時間範圍以檢視是否為異常。

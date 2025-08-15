@@ -4,13 +4,13 @@ description: 套用ACSD-66118修補程式以修正Adobe Commerce問題，其中�
 feature: Cache, Configuration, Themes
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ef4d6e420f304b0229c54c8ec7bd5500039bcb6b
+exl-id: ecfdff54-99e0-4dbe-a0bb-80f60aafc7b6
+source-git-commit: 468c780f355c99cf06d557e530e81c414a01961e
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66118：更新&#x200B;**[!UICONTROL Store View Code]**&#x200B;會在未重新整理&#x200B;**[!UICONTROL Design Configuration]**&#x200B;時清除&#x200B;**[!UICONTROL Configuration Cache]**&#x200B;設定
 
@@ -28,7 +28,7 @@ ACSD-66118修補程式修正了&#x200B;**[!UICONTROL Store View Code]**&#x200B;�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -56,7 +56,7 @@ ACSD-66118修補程式修正了&#x200B;**[!UICONTROL Store View Code]**&#x200B;�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

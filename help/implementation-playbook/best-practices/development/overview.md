@@ -42,7 +42,7 @@ ht-degree: 2%
 
 | 最佳實務 | 說明 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [建置和部署](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=zh-Hant){target="_blank"} | 說明在雲端基礎結構專案上建置和部署Adobe Commerce階段的最佳做法 |
+| [建置和部署](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | 說明在雲端基礎結構專案上建置和部署Adobe Commerce階段的最佳做法 |
 | 偵錯 | 系統地有效偵錯Adobe Commerce架構 |
 | [靜態內容部署](static-content-deployment.md) | 避免靜態內容未出現在店面的問題 |
 | [疑難排解](troubleshooting.md) | 疑難排解常見的Adobe Commerce實作問題 |

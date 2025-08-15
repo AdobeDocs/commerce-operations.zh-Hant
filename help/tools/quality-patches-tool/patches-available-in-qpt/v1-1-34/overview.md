@@ -24,7 +24,7 @@ QPT v1.1.34包含下列修補程式：
 1. **ACSD-51853**：修正使用[!DNL Page Builder]時未套用複製文字樣式的問題。
 1. **ACSD-52160**：修正未根據規則條件&#x200B;*如果在購物車中找到/找不到專案，且所有條件皆為true*，正確評估購物車價格規則之產品驗證結果的問題。
 1. **ACSD-51636**：修正管理員無法從客戶帳戶區段新增使用者（儘管擁有所有必要的角色和許可權）的問題。
-1. **ACSD-51739**：修正在`CompanyTeam` GraphQL要求中要求`structure_id`時傳回錯誤的問題。
+1. **ACSD-51739**：修正在`structure_id` GraphQL要求中要求`CompanyTeam`時傳回錯誤的問題。
 1. **ACSD-51857**：修正`aggregate_sales_report_bestsellers_data` cron報告效能緩慢影響大型`sales_order`和`sales_order_item`資料庫資料表的問題。
 1. **ACSD-48448**：修正取消訂單期間發生競爭條件問題，而此問題會造成&#x200B;*inventory_reservation*&#x200B;表格中出現重複專案的問題。
 1. **ACSD-52689**：修正無法使用REST API將影像上傳至[!DNL Amazon S3]儲存空間的問題。

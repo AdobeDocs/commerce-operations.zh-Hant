@@ -28,7 +28,7 @@ ACSD-63974修補程式修正專案過多時&#x200B;**[!UICONTROL Requisition Lis
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -38,7 +38,7 @@ ACSD-63974修補程式修正專案過多時&#x200B;**[!UICONTROL Requisition Lis
 
 1. 前往「**[!UICONTROL Admin]** > **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > *[!UICONTROL General]* > **[!UICONTROL B2B features]**」。
 1. 將&#x200B;**[!UICONTROL Enable Requisition List]**&#x200B;設為&#x200B;*是*。
-1. 編輯`setup/performance-toolkit/profiles/ce/small.xml`中的`simple_products`節點，產生2000+個產品。
+1. 編輯`simple_products`中的`setup/performance-toolkit/profiles/ce/small.xml`節點，產生2000+個產品。
 1. 執行命令：
 
    ```bash
@@ -63,7 +63,7 @@ ACSD-63974修補程式修正專案過多時&#x200B;**[!UICONTROL Requisition Lis
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的升級和修補程式>套用修補程式。
 
 ## 相關閱讀

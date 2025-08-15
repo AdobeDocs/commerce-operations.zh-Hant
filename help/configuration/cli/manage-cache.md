@@ -20,7 +20,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >
->Commerce網站管理員可以使用「快取管理系統」工具從Admin管理快取。 請參閱&#x200B;_系統管理系統指南_&#x200B;中的[快取管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management)。
+>Commerce網站管理員可以使用「快取管理系統」工具從Admin管理快取。 請參閱[系統管理系統指南](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)中的&#x200B;_快取管理_。
 
 
 ## 檢視快取狀態
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->如需Adobe Commerce支援之預設快取型別的詳細說明，請參閱&#x200B;_系統管理系統指南_&#x200B;中的[快取](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management#caches)。
+>如需Adobe Commerce支援之預設快取型別的詳細說明，請參閱[系統管理系統指南](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches)中的&#x200B;_快取_。
 
 
 ## 啟用或停用快取型別
@@ -68,7 +68,7 @@ Current status:
 
 >[!INFO]
 >
->從2.2版開始，您只能在生產模式下執行Commerce時，使用命令列來啟用或停用快取型別。 如果以開發人員模式執行Commerce，您可以使用命令列或手動啟用或停用快取型別。 在這樣做之前，您必須手動讓[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)可寫入`<magento_root>/app/etc/env.php`。
+>從2.2版開始，您只能在生產模式下執行Commerce時，使用命令列來啟用或停用快取型別。 如果以開發人員模式執行Commerce，您可以使用命令列或手動啟用或停用快取型別。 在這樣做之前，您必須手動讓`<magento_root>/app/etc/env.php`檔案系統擁有者[可寫入](../../installation/prerequisites/file-system/overview.md)。
 
 您可以使用命令列或Admin來清除（也稱為&#x200B;_排清_&#x200B;或&#x200B;_重新整理_）快取型別。
 

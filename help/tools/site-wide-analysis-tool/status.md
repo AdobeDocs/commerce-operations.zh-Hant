@@ -19,4 +19,4 @@ ht-degree: 0%
 
 **[!UICONTROL Health Index Bar]**：它會測量從0到100的整體網站健康狀態，其中零是最差的，100是完美的健康狀態。 它是根據使用中建議的數量和優先權權重係數來計算。
 
-**[!UICONTROL Download Recommendations Report]**： Recommendations報告提供適用於您專案的個人化建議。 您可以按一下此區段來下載PDF報表。
+**[!UICONTROL Download Recommendations Report]**： Recommendations報告提供適用於您專案的個人化建議。 您可以按一下本區段來下載PDF報表。

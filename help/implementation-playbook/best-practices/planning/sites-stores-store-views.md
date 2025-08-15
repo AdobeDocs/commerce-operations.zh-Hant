@@ -28,7 +28,7 @@ ht-degree: 0%
 
 - 將邏輯切換到類別來重新建構目錄
 - 使用外部價格與「價格管理系統(PMS)」，將價目表與型錄資料分開。
-- 使用替代noSQL資料儲存體，例如Elasticsearch
+- 使用替代noSQL資料儲存，例如Elasticsearch
 
 ## 對效能的潛在影響
 
@@ -41,5 +41,5 @@ ht-degree: 0%
 
 ## 其他資訊
 
-- [瞭解網站、商店和商店檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [設定多個網站或商店](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [瞭解網站、商店和商店檢視](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [設定多個網站或商店](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

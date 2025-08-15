@@ -23,11 +23,11 @@ ht-degree: 0%
 
 >[!TIP]
 >
->對於雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端指南_&#x200B;中的[快照和備份管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)。
+>對於雲端基礎結構專案上的Adobe Commerce，請參閱[雲端指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)中的&#x200B;_快照和備份管理_。
 
 ## 啟用備份
 
-默認情況下，備份功能處於禁用狀態。 要啟用，請輸入以下 CLI 命令：
+備份功能預設為停用。 若要啟用，請輸入下列CLI命令：
 
 ```bash
 bin/magento config:set system/backup/functionality_enabled 1
@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**淘汰通知：**
->備份功能自2.1.16、2.2.7和2.3.0起已過時。我們建議您研究其他備份技術和二進位備份工具（例如Percona XtraBackup）。
+>>備份功能自2.1.16、2.2.7和2.3.0起已過時。我們建議您研究其他備份技術和二進位備份工具（例如Percona XtraBackup）。
 
 ## 設定開啟檔案限制
 
@@ -78,17 +78,17 @@ ulimit -s 65536
 
 >[!WARNING]
 >
->我們建議您避免在檔中設置的值[`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php)`php.ini`，因為它可能會導致不完全回滾且沒有失敗通知。
+>建議您避免在[`pcre.recursion_limit`檔案中設定](https://www.php.net/manual/en/pcre.configuration.php)`php.ini`的值，因為這會產生未完成且沒有失敗通知的回覆。
 
 ## 備份
 
-命令用法：
+命令使用方式：
 
 ```bash
 bin/magento setup:backup [--code] [--media] [--db]
 ```
 
-該指令執行以下任務：
+指令會執行下列工作：
 
 1. 將商店置於維護模式。
 1. 執行下列其中一個命令選項。

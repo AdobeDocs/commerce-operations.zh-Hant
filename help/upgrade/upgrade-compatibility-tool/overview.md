@@ -21,11 +21,11 @@ ht-degree: 0%
 
 ## 使用[!DNL Upgrade Compatibility Tool]
 
-您可以通過以下方式使用：[!DNL Upgrade Compatibility Tool]
+您可以透過以下方式使用[!DNL Upgrade Compatibility Tool]：
 
-- 作為獨立的 [命令行介面](../upgrade-compatibility-tool/run.md) 工具。 有關可用命令的完整清單，請參閱 [`bin/uct` 參考](../../tools/reference/uct.md)。
+- 作為獨立[命令列介面](../upgrade-compatibility-tool/run.md)工具。 如需可用命令的完整清單，請參閱[`bin/uct`參考](../../tools/reference/uct.md)。
 - 整合[!DNL Upgrade Compatibility Tool]與[[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md)。
-- [MagentoPHPStorm外掛程式](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)中的執行組態。
+- [Magento PHPStorm外掛程式](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)中的執行組態。
 
 ## 工作流程
 
@@ -41,19 +41,19 @@ ht-degree: 0%
 
 ## 協助改善[!DNL Upgrade Compatibility Tool]
 
-如果您需要本指南未涵蓋的資訊或有疑問，請使用以下資源：
+如果您需要本指南未涵蓋的資訊或問題，請使用下列資源：
 
-要與 [!DNL Upgrade Compatibility Tool] 團隊聯繫，請通過工程 Slack 通道 [#upgrade 相容性工具](https://magentocommeng.slack.com/archives/C019Y143U9F)與我們聯繫。 我們希望聽到您的反饋、問題和建議，以幫助我們改進工具。
+若要與[!DNL Upgrade Compatibility Tool]團隊連線，請透過工程Slack管道[#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F)聯絡我們。 我們希望聽到您的意見、問題和建議，以協助我們改進工具。
 
 [!DNL Upgrade Compatibility Tool]使用我們[編碼標準](https://developer.adobe.com/commerce/php/coding-standards/)中定義的規則，以確保您的專案遵循Adobe Commerce最佳實務，並協助您改善及擴充[!DNL Upgrade Compatibility Tool]。
 
-請參考[Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/)主題以取得有關貢獻編碼標準的更多資訊。
+請參考[Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/)主題，以取得有關協助撰寫程式碼標準的更多資訊。
 
 ## 資源
 
 請參閱下列資源，協助您瞭解Adobe Commerce升級：
 
 - [升級指南](../overview.md)提供典型Adobe Commerce升級歷程的概觀，以及此歷程中要遵循的最佳實務。
-- [即將發行版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)頁面提供已排程和即將發行的日期。
+- [即將發行版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)頁面提供已排程和即將發行的日期。
 - [社群資源](https://developer.adobe.com/commerce/contributor/community/)頁面將放置以開始討論，或尋找更多資訊。
 - 請檢視[相關工具](../upgrade-compatibility-tool/related-tools.md)頁面，瞭解一般升級歷程中的實用工具。

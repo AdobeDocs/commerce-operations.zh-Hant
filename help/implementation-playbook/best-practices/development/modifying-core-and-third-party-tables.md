@@ -18,11 +18,11 @@ ht-degree: 0%
 
 從[!DNL Magento 1]和其他電子商務平台移轉，或使用來自[!DNL Adobe Commerce] Marketplace的模組，可能需要新增和儲存額外的資料。 您的第一反應可能是將資料行新增至資料庫表格，或是調整現有的資料行。 不過，您只能在有限的情況下修改核心[!DNL Adobe Commerce]表格（或協力廠商表格）。
 
-## 為什麼Adobe建議避免修改
+## 為何Adobe建議避免修改
 
 避免修改核心資料表的主要原因在於Adobe Commerce包含包含原始SQL查詢的基礎邏輯。 變更表格結構可能會造成難以疑難排解的意外副作用。 此變更也會影響DDL （資料定義語言）作業，對效能造成非預期和無法預測的影響。
 
-避免變更資料庫表格結構的另一個原因是，如果核心開發團隊或第三方開發人員變更其資料庫表格的結構，則您的變更可能會導致問題。 例如，有一些核心資料庫資料表有一個名為`additional_data`的資料行。 這始終是`text`資料行型別。 然而，基於效能考量，核心團隊可能會將欄變更為`longtext`。 此型別的欄是JSON的別名。 透過轉換為此欄型別，該欄會增加效能和搜尋能力，但不會以`text`型別的形式存在。 您可以閱讀[JSON資料型別](https://mariadb.com/kb/en/json-data-type/){target="_blank"}中有關此主題的詳細資訊。
+避免變更資料庫表格結構的另一個原因是，如果核心開發團隊或第三方開發人員變更其資料庫表格的結構，則您的變更可能會導致問題。 例如，有一些核心資料庫資料表有一個名為`additional_data`的資料行。 這始終是`text`資料行型別。 然而，基於效能考量，核心團隊可能會將欄變更為`longtext`。 此型別的欄是JSON的別名。 透過轉換為此欄型別，該欄會增加效能和搜尋能力，但不會以`text`型別的形式存在。 您可以在[JSON資料型別](https://mariadb.com/kb/en/json-data-type/){target="_blank"}中閱讀有關此主題的詳細資訊。
 
 ## 知道何時儲存或移除資料
 
@@ -36,13 +36,13 @@ Adobe建議您先決定是否需要儲存此資料。 如果您要從舊版系�
 
 另一個將資料保留在商業外部，但可讓您即時使用的相關選項是運用其他工具，例如GraphQL mesh。 此選項會結合不同的資料來源，並將其傳回為單一回應。
 
-例如，您可以`stitch`將來自外部資料庫的舊訂單(可能是已停止支援的舊Magento1網站)合併在一起。 然後使用GraphQL網格，將其顯示為客戶訂單歷史記錄的一部分。 這些舊訂單可與您目前[!DNL Adobe Commerce]環境中的訂單合併。
+例如，您可以`stitch`從外部資料庫(可能是已停用的舊Magento 1網站)將舊訂單放在一起。 然後使用GraphQL網格，將其顯示為客戶訂單歷史記錄的一部分。 這些舊訂單可與您目前[!DNL Adobe Commerce]環境中的訂單合併。
 
-如需搭配GraphQL使用API網狀架構的詳細資訊，請參閱[什麼是API網狀架構](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"})和[GraphQL網狀架構](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}。
+如需搭配GraphQL使用API網狀架構的詳細資訊，請參閱[什麼是API網狀架構](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}和[GraphQL網狀架構](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}。
 
 ## 使用擴充功能屬性移轉舊資料
 
-如果您判斷舊版資料需要移轉，或新資料需要儲存在[!DNL Adobe Commerce]中，Adobe建議使用[延伸屬性](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}。 使用擴充功能屬性來儲存其他資料具備下列優點：
+如果您判斷舊版資料需要移轉，或新資料需要儲存在[!DNL Adobe Commerce]中，Adobe建議使用[擴充功能屬性](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}。 使用擴充功能屬性來儲存其他資料具備下列優點：
 
 - 您可以控制要儲存的資料和資料庫結構，以確保以正確的欄型別和正確的索引來儲存資料。
 - [!DNL Adobe Commerce]中的大部分實體都支援使用擴充屬性。
@@ -52,9 +52,9 @@ Adobe建議您先決定是否需要儲存此資料。 如果您要從舊版系�
 
 ### 考慮其他替代方案
 
-作為開發人員，一定要考慮使用您[!DNL Adobe Commerce]環境以外的工具，例如GraphQL mesh和AdobeApp Builder。 這些工具可協助您保留資料的存取權，但對核心商務應用程式或其基礎資料庫表格沒有影響。 使用此方法，您可以透過API公開您的資料。 接著，將資料來源新增至App Builder設定。 使用GraphQL Mesh，您可以合併這些資料來源，並產生[舊資料](#legacy-data)中提到的單一回應。
+作為開發人員，您必須一律考慮使用您[!DNL Adobe Commerce]環境以外的工具，例如GraphQL mesh和Adobe App Builder。 這些工具可協助您保留資料的存取權，但對核心商務應用程式或其基礎資料庫表格沒有影響。 使用此方法，您可以透過API公開您的資料。 接著，將資料來源新增至App Builder設定。 使用GraphQL Mesh，您可以合併這些資料來源，並產生[舊資料](#legacy-data)中提到的單一回應。
 
-如需GraphQL Mesh的其他詳細資料，請參閱[GraphQL Mesh閘道](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}。 如需App BuilderAdobe的相關資訊，請參閱[App Builder簡介](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=zh-Hant){target="_blank"}。
+如需GraphQL Mesh的詳細資訊，請參閱[GraphQL Mesh閘道](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}。 如需Adobe App Builder的相關資訊，請參閱[App Builder簡介](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}。
 
 ## 修改核心表格或協力廠商表格
 
@@ -67,15 +67,15 @@ Adobe建議您先決定是否需要儲存此資料。 如果您要從舊版系�
 
 ## 修改外部資料庫表格的最佳作法
 
-當您將資料行新增至核心資料庫表格或協力廠商表格時，Adobe建議遵循下列步驟：
+當您將資料行新增至核心資料庫表格或協力廠商表格時，Adobe建議您遵循下列步驟：
 
 1. 在名稱空間中建立一個模組，使用代表您正在更新的專案之名稱。
 
    例如： `app/code/YourCompany/Customer`
 
-1. 建立適當的檔案以啟用模組(請參閱[建立模組](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=zh-Hant){target="_blank"}。
+1. 建立適當的檔案以啟用模組（請參閱[建立模組](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}）。
 
-1. 在`etc`資料夾中建立名為`db_schema.xml`的檔案，並進行適當的變更。
+1. 在`db_schema.xml`資料夾中建立名為`etc`的檔案，並進行適當的變更。
 
    如果適用，請產生`db_schema_whitelist.json`檔案。 如需詳細資訊，請參閱[宣告式結構描述](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"}。
 

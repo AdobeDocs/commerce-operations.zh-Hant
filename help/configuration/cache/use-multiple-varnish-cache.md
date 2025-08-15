@@ -32,6 +32,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 
 當您在管理員中重新整理Commerce快取（也稱為&#x200B;_清除_&#x200B;快取）或使用命令列時，可以清除所有Varnish主機。
 
-若要使用Admin重新整理快取，請按一下[工具] > [快取管理] **&#x200B;**&#x200B;**&#x200B;**，然後按一下頁面頂端的[排清Magento快取] **。**（您也可以重新整理個別快取型別。）
+若要使用Admin重新整理快取，請按一下[工具] > [系統] **> [快取管理]** **，然後按一下頁面頂端的[排清Magento快取]**。 ****（您也可以重新整理個別快取型別。）
 
 若要從cli重新整理多個Varnish執行個體的快取，請使用[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types)命令做為[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)。

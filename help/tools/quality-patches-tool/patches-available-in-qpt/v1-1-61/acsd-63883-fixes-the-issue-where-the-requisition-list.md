@@ -1,6 +1,6 @@
 ---
-title: ACSD-63883：修正[!UICONTROL Requisition List]在 [!DNL GraphQL] 回應中錯誤的「items_count」
-description: 套用ACSD-63883修補程式以修正 [!DNL GraphQL] 回應中[!UICONTROL Requisition List]傳回不正確「items_count」的問題。
+title: ACSD-63883：修正 [!DNL GraphQL] 在[!UICONTROL Requisition List]回應中錯誤的「items_count」
+description: 套用ACSD-63883修補程式以修正[!UICONTROL Requisition List]回應中 [!DNL GraphQL] 傳回不正確「items_count」的問題。
 feature: B2B, GraphQL
 role: Admin, Developer
 exl-id: 8946d7fb-558a-4867-a843-a61715416f25
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-63883：修正[!UICONTROL Requisition List]在[!DNL GraphQL]回應中錯誤的`items_count`
+# ACSD-63883：修正`items_count`在[!DNL GraphQL]回應中錯誤的[!UICONTROL Requisition List]
 
-ACSD-63883修補程式修正[!DNL GraphQL]回應中&#x200B;**[!UICONTROL Requisition List]**&#x200B;傳回不正確`items_count`的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61時，即可使用此修補程式。 修補程式ID為ACSD-63883。 請注意，此問題已排程在Adobe Commerce B2B 1.5.3中修正。
+ACSD-63883修補程式修正&#x200B;**[!UICONTROL Requisition List]**&#x200B;回應中`items_count`傳回不正確[!DNL GraphQL]的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61時，即可使用此修補程式。 修補程式ID為ACSD-63883。 請注意，此問題已排程在Adobe Commerce B2B 1.5.3中修正。
 
 ## 受影響的產品和版本
 
@@ -28,11 +28,11 @@ ACSD-63883修補程式修正[!DNL GraphQL]回應中&#x200B;**[!UICONTROL Requisi
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
-**[!UICONTROL Requisition List]**&#x200B;在[!DNL GraphQL]回應中傳回不正確的`items_count`。
+**[!UICONTROL Requisition List]**&#x200B;在`items_count`回應中傳回不正確的[!DNL GraphQL]。
 
 
 <u>要再現的步驟</u>：
@@ -73,8 +73,8 @@ ACSD-63883修補程式修正[!DNL GraphQL]回應中&#x200B;**[!UICONTROL Requisi
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 
 ## 相關閱讀

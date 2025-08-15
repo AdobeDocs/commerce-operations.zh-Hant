@@ -1,6 +1,6 @@
 ---
 title: 移轉變更
-description: 瞭解如何僅移轉自您上次使用 [!DNL Data Migration Tool]移轉Magento1資料以來變更的資料。
+description: 瞭解如何僅移轉自您上次使用 [!DNL Data Migration Tool]移轉Magento 1資料以來變更的資料。
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 移轉變更
 
-增量移轉工具會在[資料移轉](data.md)期間，在Magento1資料庫中安裝deltalog表格（首碼為`m2_cl_*`）和觸發器（用於追蹤變更）。 若要確保僅移轉自上次移轉資料以來在Magento1中所做的變更，這些刪除表格和觸發程式至關重要。 這些變更包括：
+增量移轉工具會在`m2_cl_*`資料移轉[期間，在Magento 1資料庫中安裝deltalog表格（前置詞為](data.md)）和觸發器（用於追蹤變更）。 若要確保僅移轉上次移轉資料後在Magento 1中進行的變更，這些對話表格和觸發器至關重要。 這些變更包括：
 
 * 客戶透過店面新增的資料（已建立的訂單、評論和客戶設定檔中的變更）
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->所有其他透過管理員輸入的新實體或更新實體（例如屬性或CMS頁面）不會納入增量移轉中，也不會移轉。
+>透過管理員輸入的所有其他新實體或更新實體(例如屬性或CMS頁面)不會納入增量移轉，也不會移轉。
 
 
 開始之前，請採取下列步驟進行準備：
@@ -53,7 +53,7 @@ bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 ## 移轉由協力廠商擴充功能建立的資料
 
-在`Delta`模式中，[!DNL Data Migration Tool]會移轉僅由Magento自己的模組所建立的資料，且不負責協力廠商開發人員所編寫的程式碼或擴充功能。 如果這些擴充功能在店面資料庫中建立了資料，且商家想要在Magento2中擁有這些資料，則應建立並相應修改[!DNL Data Migration Tool]的設定檔。
+在`Delta`模式中，[!DNL Data Migration Tool]會移轉僅由Magento自己的模組所建立的資料，且不負責協力廠商開發人員所編寫的程式碼或擴充功能。 如果這些擴充功能在店面資料庫中建立了資料，且商家想要在Magento 2中擁有此資料，則應建立和修改[!DNL Data Migration Tool]的設定檔。
 
 如果擴充功能有自己的表格，而您需要追蹤其變更以進行差異移轉，請遵循下列步驟：
 

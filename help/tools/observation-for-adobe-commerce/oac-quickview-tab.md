@@ -30,4 +30,4 @@ ht-degree: 0%
 
 ![CPU使用率](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
 
-**[!UICONTROL CPU Utilization]**&#x200B;框架顯示所選時間範圍內節點的CPU使用率。
+**[!UICONTROL CPU Utilization]**&#x200B;框架會依所選時間範圍內的節點顯示CPU使用率。

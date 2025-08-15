@@ -18,7 +18,7 @@ ht-degree: 0%
 
 QPT v1.1.31包含下列修補程式：
 
-1. **ACSD-50817**：透過在引號資料表的`store_id`和`updated_at`資料行上新增複合索引，將cron工作`sales_clean_quotes`最佳化以更快地執行。
+1. **ACSD-50817**：透過在引號資料表的`sales_clean_quotes`和`store_id`資料行上新增複合索引，將cron工作`updated_at`最佳化以更快地執行。
 1. **ACSD-50345**：修正下列問題： [!DNL Google reCAPTCHA v2]在提交失敗的付款後未重新載入、[!DNL Google reCAPTCHA v3 Invisible]無法正常結帳，且無法下訂單，以及未觸發[!UICONTROL PlaceOrder]事件。
 1. **ACSD-49392**：修正套件產品部分退款後，訂單狀態變更為已關閉的問題。
 1. **ACSD-51036**：修正同時REST API呼叫期間的競爭條件導致[!UICONTROL Items Ordered]表格中出貨狀態資訊覆寫的問題。

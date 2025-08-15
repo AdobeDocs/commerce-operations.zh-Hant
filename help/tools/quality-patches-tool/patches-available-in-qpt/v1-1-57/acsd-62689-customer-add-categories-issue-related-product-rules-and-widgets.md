@@ -32,7 +32,7 @@ ACSD-62689修補程式修正了客戶無法在深度4個巢狀結構之後新增
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -41,14 +41,14 @@ ACSD-62689修補程式修正了客戶無法在深度4個巢狀結構之後新增
 <u>要再現的步驟</u>：
 
 1. 在預設根類別下建立兩個名為&#x200B;*[!UICONTROL Anchor]*&#x200B;和&#x200B;*[!UICONTROL Non-Anchor]*&#x200B;的類別。
-   * 請確定&#x200B;*[!UICONTROL Non-Anchor]*&#x200B;類別的&#x200B;*[!UICONTROL Is Anchor]*&#x200B;旗標已停用。
+   * 請確定&#x200B;*[!UICONTROL Is Anchor]*&#x200B;類別的&#x200B;*[!UICONTROL Non-Anchor]*&#x200B;旗標已停用。
 1. 前往「**[!UICONTROL Content]** > **[!UICONTROL Widgets]**」並建立Widget。
-1. 在&#x200B;*[!UICONTROL Layout Updates]*&#x200B;底下，選取&#x200B;*[!UICONTROL Display on]*&#x200B;欄位中的&#x200B;**[!UICONTROL Non-Anchor Categories]**。
+1. 在&#x200B;*[!UICONTROL Layout Updates]*&#x200B;底下，選取&#x200B;**[!UICONTROL Non-Anchor Categories]**&#x200B;欄位中的&#x200B;*[!UICONTROL Display on]*。
 1. 按一下&#x200B;**[!UICONTROL Specific Categories]**。
 1. 按一下類別選取圖示。
 1. 展開根類別。
 1. 檢查類別。 兩者皆應停用，且不可選取。
-1. 在&#x200B;*[!UICONTROL Layout Updates]*&#x200B;底下，選取&#x200B;*[!UICONTROL Display on]*&#x200B;欄位中的&#x200B;**[!UICONTROL Anchor Categories]**。 然後依照步驟5和6操作。
+1. 在&#x200B;*[!UICONTROL Layout Updates]*&#x200B;底下，選取&#x200B;**[!UICONTROL Anchor Categories]**&#x200B;欄位中的&#x200B;*[!UICONTROL Display on]*。 然後依照步驟5和6操作。
 1. 檢查類別。 兩者皆應啟用且可供選取。
 
 <u>預期結果</u>：
@@ -63,8 +63,8 @@ ACSD-62689修補程式修正了客戶無法在深度4個巢狀結構之後新增
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 
 ## 相關閱讀

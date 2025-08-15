@@ -13,7 +13,7 @@ ht-degree: 1%
 
 安裝Adobe Commerce之前，您必須先執行下列動作：
 
-* 設定一或多個符合&#x200B;*Commerce內部部署*&#x200B;標籤中所列[系統需求](../system-requirements.md)的主機。
+* 設定一或多個符合[Commerce內部部署](../system-requirements.md)標籤中所列&#x200B;*系統需求*&#x200B;的主機。
 * 如果您設定一個以上具有負載平衡的Web節點，請在安裝應用程式&#x200B;_之前設定並測試系統_&#x200B;的該部分。
 * 請務必在安裝期間的各個時間點備份整個系統，以便在發生問題時將其回覆。
 
@@ -66,11 +66,11 @@ Server built:   Jul 23 2017 14:17:29
 
 ### PHP
 
-請參閱[系統需求](../system-requirements.md)中的&#x200B;*Commerce內部部署*&#x200B;索引標籤，瞭解支援的PHP版本和[PHP](../system-requirements.md#php-settings)的PHP需求。
+請參閱&#x200B;*系統需求*&#x200B;中的[Commerce內部部署](../system-requirements.md)索引標籤，瞭解支援的PHP版本和[PHP](../system-requirements.md#php-settings)的PHP需求。
 
 ### MySQL
 
-檢查您是否有相容的MySQL版本，適用於您正在安裝的Adobe Commerce版本。 如需支援的版本，請參閱[系統需求](../system-requirements.md)中的&#x200B;*Commerce內部部署*&#x200B;索引標籤。
+檢查您是否有相容的MySQL版本，適用於您正在安裝的Adobe Commerce版本。 如需支援的版本，請參閱&#x200B;*系統需求*&#x200B;中的[Commerce內部部署](../system-requirements.md)索引標籤。
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -98,7 +98,7 @@ owners.
 
 輸入`help`或`\h`以取得說明。 鍵入`\c`以清除目前的輸入陳述式。
 
-在`mysql>`提示下輸入`exit`以結束。
+在`exit`提示下輸入`mysql>`以結束。
 
 若要安裝或升級MySQL，請參閱[MySQL](database/mysql.md)。
 

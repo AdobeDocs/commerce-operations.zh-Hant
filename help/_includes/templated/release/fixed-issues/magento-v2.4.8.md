@@ -1878,7 +1878,7 @@ _AC-8353 - [GitHub問題](https://github.com/magento/magento2/issues/37253) - [G
 
 _AC-8356 - [GitHub問題](https://github.com/magento/magento2/issues/37250) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/37000)_
 
-#### editorconfig語法中的空格中斷`[&lbrace;composer,auth&rbrace;.json]`的規則
+#### editorconfig語法中的空格中斷`[{composer,auth}.json]`的規則
 
 修正editorconfig中的語法錯誤後，系統現在可正確將4空格縮排套用至composer和auth.json檔案。 先前，由於editorconfig語法中有空格，這些檔案的格式不正確，有2個空格的縮排。
 
@@ -2022,7 +2022,7 @@ _ACP2E-2642 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 _ACP2E-2653 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### 包含價格篩選器`&lbrace;from:&quot;0&quot;&rbrace;`的GraphQL產品呼叫未傳回任何結果
+#### 包含價格篩選器`{from:&quot;0&quot;}`的GraphQL產品呼叫未傳回任何結果
 
 先前，使用零價格篩選條件搜尋的graphql產品由於擲回例外狀況，完全沒有傳回任何結果。 現在，搜尋會如預期傳回結果。
 

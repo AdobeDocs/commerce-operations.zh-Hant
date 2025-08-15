@@ -33,11 +33,11 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 當您執行命令[`setup:static-content:deploy`](../cli/static-view-file-deployment.md)以部署靜態內容時，Commerce會自動變更部署版本。
 這會變更靜態檔案的URL，並強制瀏覽器載入檔案的新版本。
 
-Commerce預設會啟用此功能，而Adobe建議啟用此功能，以防止瀏覽器處理舊靜態資源時出現問題。
+Commerce預設會啟用此功能，而Adobe建議啟用此功能，以防止瀏覽器提供舊靜態資源時出現問題。
 
-靜態內容簽章的組態位於&#x200B;[**[!UICONTROL Stores]**>設定>組態>**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)。
+靜態內容簽章的組態位於&#x200B;[**[!UICONTROL Stores]**>設定>組態>**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)。
 
-- **僅限內部部署**：如果您的網站是[生產模式](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=zh-Hant#production-mode)中的&#x200B;**非**，則可使用此設定。
+- **僅限內部部署**：如果您的網站是&#x200B;**生產模式**&#x200B;中的[非](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode)，則可使用此設定。
 - **雲端**：此設定已隱藏，因為生產模式是強制性的；因此，您必須使用命令列，如下所示。
 
 ![靜態檔案設定](../../assets/configuration/static-files-settings.png)

@@ -73,7 +73,7 @@ ht-degree: 3%
 | [稽核前端效能](frontend-performance.md) | 使用網站效能工具，識別並解決對網站效能產生負面影響的問題。 |
 | [就緒，設定，維護](https://business.adobe.com/blog/basics/ready-set-maintain) | 維護您的Adobe Commerce網站以最大化業務價值和運作時間的秘訣。 |
 | [使用 [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | 在一個地方檢視您的Adobe Commerce網站的重要深入分析。 |
-| [監視效能、磁碟空間和記錄](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=zh-Hant) | 使用New Relic在雲端基礎結構網站上監視有關您Adobe Commerce的關鍵效能深入分析。 |
+| [監視效能、磁碟空間和記錄](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | 使用New Relic在雲端基礎結構網站上監視有關您Adobe Commerce的關鍵效能深入分析。 |
 | [回應安全性事件](respond-to-security-incident.md) | 使用New Relic在雲端基礎結構網站上監視有關您Adobe Commerce的關鍵效能深入分析。 |
 
 ### 升級

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 雖然Commerce也提供在資料庫中儲存記錄檔的靈活性，但本主題著重於檔案型記錄。
 
-Adobe建議使用集中式應用程式記錄，原因如下：
+Adobe建議您使用集中式應用程式記錄，原因如下：
 
 - 它允許在應用程式伺服器以外的伺服器上儲存記錄檔，並減少磁碟I/O作業，簡化對應用程式伺服器的支援。
 
@@ -34,7 +34,7 @@ Adobe建議使用集中式應用程式記錄，原因如下：
 
 ## 獨白
 
-Commerce 2符合PSR-3標準。 依預設，Commerce使用[獨白]。 在Commerce應用程式[`di.xml`][di]中實作為`Psr\Log\LoggerInterface`偏好設定的獨白。
+Commerce 2符合PSR-3標準。 依預設，Commerce使用[獨白]。 在Commerce應用程式`Psr\Log\LoggerInterface`中實作為[`di.xml`][di]偏好設定的獨白。
 
 Monolog是一種常用的PHP記錄解決方案，具有廣泛的處理常式，可讓您建置進階記錄策略。 以下是「獨白」運作方式的摘要。
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 本節討論如何解除安裝一或多個語言套件，選擇性地包括檔案系統中的語言套件程式碼。 您可以先建立備份，以便稍後還原資料。
 
-這個命令只會解除安裝`composer.json`中指定的&#x200B;*僅*&#x200B;語言套件；換句話說，會解除安裝提供為Composer套件的語言套件。 如果您的語言套件不是Composer套件，您必須從檔案系統移除語言套件程式碼，以手動方式解除安裝它。
+這個命令只會解除安裝&#x200B;*中指定的*&#x200B;僅`composer.json`語言套件；換句話說，會解除安裝提供為Composer套件的語言套件。 如果您的語言套件不是Composer套件，您必須從檔案系統移除語言套件程式碼，以手動方式解除安裝它。
 
 您可以隨時使用[`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files)命令還原備份。
 

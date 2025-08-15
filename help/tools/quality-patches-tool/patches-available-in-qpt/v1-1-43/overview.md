@@ -30,6 +30,6 @@ QPT v1.1.43包含下列修補程式：
 1. **ACSD-56090**：修正GraphQL要求回應所有存放區資料（而非特別要求的存放區資料）的問題。
 1. **ACSD-54983**：修正使用者狀態設為&#x200B;*[!UICONTROL Inactive]*&#x200B;時，無法以GraphQL要求取得公司使用者ID的問題。
 1. **ACSD-53309**：修正當選取可自訂選項時，*[!UICONTROL Regular Price]*&#x200B;標籤中未完全套用稅金的問題。
-1. **ACSD-55305**：修正&#x200B;**[!UICONTROL myAccount]** > **[!UICONTROL Company Structure]**&#x200B;頁面上的&#x200B;*[!UICONTROL Edit Company User]*&#x200B;快顯視窗因熒幕上的載入器而凍結的問題。
+1. **ACSD-55305**：修正&#x200B;*[!UICONTROL Edit Company User]* > **[!UICONTROL myAccount]**&#x200B;頁面上的&#x200B;**[!UICONTROL Company Structure]**&#x200B;快顯視窗因熒幕上的載入器而凍結的問題。
 
 使用左側的功能表，導覽至特定的修補程式頁面。

@@ -19,8 +19,8 @@ ht-degree: 0%
 QPT v1.1.27包含下列修補程式：
 
 1. ACSD-48362：修正使用可轉讓報價下訂單時，使用預設送貨地址而非新地址的問題。
-1. ACSD-48059：修正[!UICONTROL Visual Merchandiser]商戶無法為[!UICONTROL Categories]屬性儲存「[!UICONTROL Match product by rule]」的問題。
-1. ACSD-48216：修正[!UICONTROL UPDATE]作業中[!UICONTROL inventory_source_item]資料表的[!UICONTROL AUTO_INCREMENT]增加的問題。
+1. ACSD-48059：修正[!UICONTROL Visual Merchandiser]商戶無法為[!UICONTROL Match product by rule]屬性儲存「[!UICONTROL Categories]」的問題。
+1. ACSD-48216：修正[!UICONTROL AUTO_INCREMENT]作業中[!UICONTROL inventory_source_item]資料表的[!UICONTROL UPDATE]增加的問題。
 1. ACSD-47908：修正在結帳期間，在運送步驟上選取來源和數量時，出現「預期值小於或等於0」的錯誤。
 1. ACSD-49497：修正訂單在出貨後仍為處理狀態，且套用部分退款的問題。
 1. ACSD-48694：修正錯誤「要求的狀態變更無效」導致客戶無法下訂單的問題。

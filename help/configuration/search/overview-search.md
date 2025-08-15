@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 搜尋引擎概觀
 
-自2.4.4版起，Adobe Commerce需要[Elasticsearch]或[OpenSearch]做為目錄搜尋引擎。 舊版2.4.x需要Elasticsearch。 如需有關安裝搜尋引擎和初始設定的詳細資訊，請參閱下列主題：
+截至2.4.4版，Adobe Commerce需要[Elasticsearch]或[OpenSearch]做為目錄搜尋引擎。 舊版2.4.x需要Elasticsearch。 如需有關安裝搜尋引擎和初始設定的詳細資訊，請參閱下列主題：
 
 - [搜尋引擎必要條件](../../installation/prerequisites/search-engine/overview.md)
 - [為您的搜尋引擎設定nginx](../../installation/prerequisites/search-engine/configure-nginx.md)

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 瞭解升級範圍
 
-請檢閱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)以瞭解發行範圍，包括增強功能、錯誤修正，以及可能影響協力廠商和自訂模組的已知問題。
+請檢閱[發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)以瞭解發行範圍，包括增強功能、錯誤修正，以及可能影響協力廠商和自訂模組的已知問題。
 
 ## 與舊版不相容的變更
 
@@ -26,7 +26,7 @@ Adobe Commerce Marketplace的新相容性原則可確保&#x200B;_所有_&#x200B;
 
 ## 自訂模組
 
-所有自訂模組都應針對您欲升級的目標版本進行檢查。 這是最耗用時間和資源的升級程式。 評估自訂模組時，您必須尋找與回溯不相容的變更，並注意新的作法，例如控制器分解。 您可以在[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)中進一步瞭解此資訊。 此外，請確定您遵循模組開發的[最佳實務](https://developer.adobe.com/commerce/php/best-practices/extensions/)。
+所有自訂模組都應針對您欲升級的目標版本進行檢查。 這是最耗用時間和資源的升級程式。 評估自訂模組時，您必須尋找與回溯不相容的變更，並注意新的作法，例如控制器分解。 您可以在[發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)中進一步瞭解此資訊。 此外，請確定您遵循模組開發的[最佳實務](https://developer.adobe.com/commerce/php/best-practices/extensions/)。
 
 ## [!DNL Upgrade Compatibility Tool]
 

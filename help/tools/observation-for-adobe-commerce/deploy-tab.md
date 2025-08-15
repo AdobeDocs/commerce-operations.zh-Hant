@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL Deploy]索引標籤'
-description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL Deploy]標籤。
+description: 瞭解[!UICONTROL Deploy]的 [!DNL Observation for Adobe Commerce]標籤。
 exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![Post部署記錄檔詳細資料](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
+![部署記錄檔詳細資料](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
 **[!UICONTROL Post Deploy Log Detail]**&#x200B;框架會顯示所選時間範圍內發生的部署後記錄檔詳細資料。 此框架著重於包含以下字串的特定記錄訊息：
 

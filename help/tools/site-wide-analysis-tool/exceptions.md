@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Exceptions]'
-description: 瞭解 [!DNL Site-Wide Analysis Tool]中的[!UICONTROL Exceptions]標籤、使用時機、其優點以及最佳實務。
+description: 瞭解[!UICONTROL Exceptions]中的 [!DNL Site-Wide Analysis Tool]標籤、使用時機、其優點以及最佳實務。
 exl-id: bd793536-b95c-47db-9372-33c00be8e144
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
@@ -27,4 +27,4 @@ ht-degree: 0%
 
 ## 最佳實務
 
-監視[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions]頁面以檢視發生哪些例外狀況。 如需詳細資訊，請參閱我們的開發人員檔案中的[檢視及管理記錄檔](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/test/log-locations)。
+監視[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions]頁面以檢視發生哪些例外狀況。 如需詳細資訊，請參閱我們的開發人員檔案中的[檢視及管理記錄檔](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)。

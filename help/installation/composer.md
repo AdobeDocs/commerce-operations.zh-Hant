@@ -13,7 +13,7 @@ ht-degree: 0%
 
 本頁上的指示說明如何在自行託管的基礎結構上安裝Adobe Commerce。 如需升級現有安裝的指南，請參閱&#x200B;[_升級指南_](../upgrade/overview.md)。
 
-Adobe使用[撰寫器](https://getcomposer.org/)來管理Adobe Commerce元件及其相依性。 使用Composer來取得Adobe Commerce中繼資料具備下列優點：
+Adobe使用[Composer](https://getcomposer.org/)管理Adobe Commerce元件及其相依性。 使用Composer來取得Adobe Commerce中繼資料具備下列優點：
 
 - 重複使用協力廠商程式庫，無需搭配原始程式碼使用
 - 使用元件式架構搭配強大的相依性管理，減少擴充功能衝突及相容性問題
@@ -89,11 +89,11 @@ Adobe使用[撰寫器](https://getcomposer.org/)來管理Adobe Commerce元件及
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   出現提示時，輸入您的驗證金鑰。 從[Commerce Marketplace — 存取金鑰](https://commercemarketplace.adobe.com/customer/account/login/)建立並設定公開和私密金鑰。 針對`[!UICONTROL username]`，複製並貼上公開金鑰值。 針對`[!UICONTROL password]`，複製並貼上私密金鑰值。
+   出現提示時，輸入您的驗證金鑰。 從[Commerce Marketplace — 存取金鑰](https://commercemarketplace.adobe.com/customer/account/login/)建立和設定公開和私密金鑰。 針對`[!UICONTROL username]`，複製並貼上公開金鑰值。 針對`[!UICONTROL password]`，複製並貼上私密金鑰值。
 
    >[!NOTE]
    >
-   > 如果您使用以Commerce驗證金鑰設定的Composer `[auth.json](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`檔案或環境變數，則系統不會提示您輸入驗證金鑰。
+   > 如果您使用以Commerce驗證金鑰設定的Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`檔案或環境變數，則系統不會提示您輸入驗證金鑰。
 
    如果您遇到錯誤（例如`Could not find package...`或`...no matching package found`），請確定您的命令中沒有拼寫錯誤。 如果您仍然遇到錯誤，您可能無權下載Adobe Commerce。 請連絡[Adobe Commerce支援](https://support.magento.com/hc/en-us)尋求協助。
 

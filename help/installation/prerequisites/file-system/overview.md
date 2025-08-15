@@ -59,9 +59,9 @@ Adobe Commerce使用三位元預設遮罩： `002`。 從UNIX預設值（檔案�
 - 開發人員
 - 生產
 
-請參閱&#x200B;_組態指南_&#x200B;中的[關於模式](../../../configuration/bootstrap/application-modes.md)。
+請參閱[組態指南](../../../configuration/bootstrap/application-modes.md)中的&#x200B;_關於模式_。
 
-我們在&#x200B;_設定指南_&#x200B;的[檔案系統存取許可權](../../../configuration/deployment/file-system-permissions.md)中進一步討論許可權建議。
+我們在[設定指南](../../../configuration/deployment/file-system-permissions.md)的&#x200B;_檔案系統存取許可權_&#x200B;中進一步討論許可權建議。
 
 >[!TIP]
 >

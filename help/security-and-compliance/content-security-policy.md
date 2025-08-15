@@ -25,13 +25,13 @@ CSP提供一組標準化的指示，告訴瀏覽器哪些內容資源可以信�
 
 **限制模式**：指示瀏覽器強制執行所有內容原則，並將發佈限制在白名單上的資源。
 
-Adobe Commerce CSP實作的第一個階段已在Adobe Commerce 2.3.5中推出，並依預設在`report-only mode`中提供CSP。  在Adobe Commerce 2.4.7及更新版本中，CSP預設會針對店面和管理區域中的付款頁面設定為`restrict-mode`，而針對所有其他頁面則設定為`report-only`模式。 對應的CSP標頭在付款頁面的`script-src`指示詞內未包含`unsafe-inline`關鍵字。 此外，只允許列入白名單的內嵌指令碼。
+Adobe Commerce CSP實作的第一個階段已在Adobe Commerce 2.3.5中推出，並依預設在`report-only mode`中提供CSP。  在Adobe Commerce 2.4.7及更新版本中，CSP預設會針對店面和管理區域中的付款頁面設定為`restrict-mode`，而針對所有其他頁面則設定為`report-only`模式。 對應的CSP標頭在付款頁面的`unsafe-inline`指示詞內未包含`script-src`關鍵字。 此外，只允許列入白名單的內嵌指令碼。
 
-由於CSP是從伺服器（而非管理員）設定，因此大多數商家需要系統整合商或開發人員的協助才能正確設定。 請參閱&#x200B;_Commerce PHP開發人員指南_&#x200B;中的[內容安全性原則](https://developer.adobe.com/commerce/php/development/security/content-security-policies/)。
+由於CSP是從伺服器（而非管理員）設定，因此大多數商家需要系統整合商或開發人員的協助才能正確設定。 請參閱[Commerce PHP開發人員指南](https://developer.adobe.com/commerce/php/development/security/content-security-policies/)中的&#x200B;_內容安全性原則_。
 
 
 ## 報告
 
-依預設，CSP會將錯誤傳送至瀏覽器主控台，但可設定為透過HTTP要求收集錯誤記錄。 此外，您有數個第三方服務可用來監視、收集和報告CSP違規。 透過從管理員或自訂模組的`config.xml`檔案新增URI，可以將CSP違規報告至集合的端點。  請參閱&#x200B;_Commerce PHP擴充功能開發人員指南_&#x200B;中的[報表URI組態](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#report-uri-configuration)。
+依預設，CSP會將錯誤傳送至瀏覽器主控台，但可設定為透過HTTP要求收集錯誤記錄。 此外，您有數個第三方服務可用來監視、收集和報告CSP違規。 透過從管理員或自訂模組的`config.xml`檔案新增URI，可以將CSP違規報告至集合的端點。  請參閱[Commerce PHP擴充功能開發人員指南](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#report-uri-configuration)中的&#x200B;_報表URI組態_。
 
 [報告URI](https://report-uri.io/)是一項監視CSP違規並在儀表板中顯示結果的服務。 商戶和開發人員都可以使用此服務，在發生CSP違規時接收報表。

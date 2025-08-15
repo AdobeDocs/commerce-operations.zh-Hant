@@ -38,7 +38,7 @@ ht-degree: 0%
 - `bin/magento config:sensitive:set`會依據其設定路徑設定任何敏感的設定值
 - `bin/magento config:show`顯示已儲存的設定值；加密設定的值顯示為星號
 
-## 必要條件
+## 先決條件
 
 若要設定組態值，您必須至少知道下列其中一項：
 
@@ -221,7 +221,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show`命令會將任何[加密值](../reference/config-reference-sens.md)的值顯示為一系列星號： `**&#x200B;**&#x200B;**`。
+>`bin/magento config:show`命令會將任何[加密值](../reference/config-reference-sens.md)的值顯示為一系列星號： `******`。
 
 ### 範例
 

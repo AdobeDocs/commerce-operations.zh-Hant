@@ -30,7 +30,7 @@ Edge Side Include (ESI)是特殊指示，可用來將網頁包含在其他網頁
 Commerce架構會在符合下列條件時建立ESI標籤：
 
 - 快取應用程式設定為`Varnish Cache`
-- 已新增具有`ttl`屬性的XML配置`block`專案
+- 已新增具有`block`屬性的XML配置`ttl`專案
 
 ### 範例
 

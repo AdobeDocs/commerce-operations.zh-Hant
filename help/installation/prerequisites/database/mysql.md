@@ -13,12 +13,12 @@ ht-degree: 0%
 
 如需支援的MySQL版本，請參閱[系統需求](../../system-requirements.md)。
 
-Adobe _強烈_&#x200B;建議您在設定資料庫時遵循下列標準：
+Adobe _強烈_&#x200B;建議您在設定資料庫時，遵循下列標準：
 
 * Adobe Commerce使用[MySQL資料庫觸發程式](https://dev.mysql.com/doc/refman/8.0/en/triggers.html)來改善重新索引期間的資料庫存取。 當索引子模式設定為[排程](../../../configuration/cli/manage-indexers.md#configure-indexers)時，就會建立這些專案。 應用程式不支援資料庫中的任何自訂觸發器，因為自訂觸發器可能會造成與未來Adobe Commerce版本不相容。
 * 繼續之前，請先熟悉[這些潛在的MySQL觸發程式限制](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html)。
 * 若要增強您的資料庫安全狀態，請啟用[`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL模式，以防止儲存無效的資料值，這可能會造成不必要的資料庫互動。
-* Adobe Commerce _不_&#x200B;支援MySQL陳述式式復寫。 請確定您只使用&#x200B;_1&rbrace; [資料列式復寫](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html)。_
+* Adobe Commerce _不_&#x200B;支援MySQL陳述式式復寫。 請確定您只使用&#x200B;_1}_&#x200B;資料列式復寫[。](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html)
 
 >[!WARNING]
 >
@@ -73,7 +73,7 @@ SHOW VARIABLES LIKE 'max_allowed_packet';
 | `username` | `varchar(40)` | 是 | UNI | `NULL` | |
 | `password` | `varchar(255)` | 否 | | `NULL` | |
 | `created` | `timestamp` | 否 | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
-| `modified` | `timestamp` | 否 | | `CURRENT_TIMESTAMP` | 更新`CURRENT_TIMESTAMP`上的`DEFAULT_GENERATED` |
+| `modified` | `timestamp` | 否 | | `CURRENT_TIMESTAMP` | 更新`DEFAULT_GENERATED`上的`CURRENT_TIMESTAMP` |
 | `logdate` | `timestamp` | 是 | | `NULL` | |
 | `lognum` | `smallint unsigned` | 否 | | `0` | |
 
@@ -88,7 +88,7 @@ SHOW VARIABLES LIKE 'max_allowed_packet';
 
 ### GROUP BY的已過時ASC和DESC限定詞
 
-自MySQL 8.0.13起，已移除`GROUP BY`子句的已棄用`ASC`或`DESC`限定詞。 先前依賴`GROUP BY`排序的查詢可能會產生與先前MySQL版本不同的結果。 若要產生指定的排序順序，請提供`ORDER BY`子句。
+自MySQL 8.0.13起，已移除`ASC`子句的已棄用`DESC`或`GROUP BY`限定詞。 先前依賴`GROUP BY`排序的查詢可能會產生與先前MySQL版本不同的結果。 若要產生指定的排序順序，請提供`ORDER BY`子句。
 
 ## Commerce和MySQL 8
 

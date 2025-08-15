@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此主題包含業界標準的軟體術語，有些人可能會發現這些術語具有種族主義、性別歧視或壓迫性，可能會讓讀者感到傷害、創傷或不受歡迎。 Adobe正在從程式碼、檔案和使用者體驗中移除這些詞語。
+>此主題包含業界標準的軟體術語，有些人可能會發現這些術語具有種族主義、性別歧視或壓迫性，可能會讓讀者感到傷害、創傷或不受歡迎。 Adobe正致力於從程式碼、檔案和使用者體驗中移除這些詞語。
 
 ## 觸發器
 
@@ -48,11 +48,11 @@ ht-degree: 0%
 
 - 如果您有在執行觸發程式時寫入某些資料的自訂觸發程式，請移動此邏輯以直接寫入稽核表格。 例如，在應用程式程式碼中新增其他查詢，然後在您打算為其建立觸發器的查詢後進行。
 - 檢閱現有的自訂觸發器，並考慮移除這些觸發器，然後直接從應用程式端寫入表格。 使用[`SHOW TRIGGERS` SQL陳述式](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html)檢查資料庫中現有的觸發程式。
-- 如需其他協助、問題或顧慮，[請提交Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant&#submit-ticket)。
+- 如需其他協助、問題或顧慮，[請提交Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket)。
 
 ## 從屬連線
 
-Adobe Commerce可以非同步讀取多個資料庫。 如果您預期部署在雲端基礎結構Pro架構上的Commerce站台的MySQL資料庫會有高負載，Adobe建議啟用MYSQL從屬連線。
+Adobe Commerce可以非同步讀取多個資料庫。 如果您預期部署在雲端基礎結構Pro架構上的Commerce網站的MySQL資料庫會有高負載，Adobe建議您啟用MYSQL從屬連線。
 
 當您啟用MYSQL從屬連線時，Adobe Commerce會使用資料庫的唯讀連線，來接收非主節點上的唯讀流量。 當只有一個節點處理讀寫流量時，可透過負載平衡來改善效能。
 
@@ -62,7 +62,7 @@ Adobe Commerce可以非同步讀取多個資料庫。 如果您預期部署在�
 
 ### 設定
 
-在雲端基礎結構上的Adobe Commerce中，您可以設定[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#mysql_use_slave_connection)變數，覆寫MYSQL從屬連線的預設設定。 將此變數設為`true`以自動使用資料庫的唯讀連線。
+在雲端基礎結構上的Adobe Commerce中，您可以設定[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection)變數，覆寫MYSQL從屬連線的預設設定。 將此變數設為`true`以自動使用資料庫的唯讀連線。
 
 **若要啟用MySQL從屬連線**：
 

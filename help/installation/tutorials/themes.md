@@ -22,9 +22,9 @@ ht-degree: 0%
 
 本節討論如何解除安裝一或多個主題，選擇性地包括檔案系統中的主題程式碼。 您可以先建立備份，以便稍後還原資料。
 
-這個命令只會解除安裝`composer.json`中指定的&#x200B;*僅*&#x200B;個主題；換言之，是提供為Composer套件的主題。 如果您的佈景主題不是Composer套件，則必須透過以下方式手動解除安裝：
+這個命令只會解除安裝&#x200B;*中指定的*&#x200B;僅`composer.json`個主題；換言之，是提供為Composer套件的主題。 如果您的佈景主題不是Composer套件，則必須透過以下方式手動解除安裝：
 
-* 正在更新`theme.xml`中的`parent`節點資訊以移除對主題的參照。
+* 正在更新`parent`中的`theme.xml`節點資訊以移除對主題的參照。
 * 正在從檔案系統移除主題程式碼。
 
   [主題繼承的詳細資訊](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/)。

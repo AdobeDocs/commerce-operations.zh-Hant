@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # 設定Web編目程式的最佳做法
 
-This article provides best practices for using `robots.txt` and `sitemap.xml` files in Adobe Commerce, including configuration and security. These files instruct web crawlers (typically search engine robots) how to crawl pages on a website. Configuring these files can improve site performance and search engine optimization.
+本文提供在Adobe Commerce中使用`robots.txt`和`sitemap.xml`檔案的最佳實務，包括設定和安全性。 這些檔案會指示Web編目程式（通常是搜尋引擎自動機制）如何編目網站上的頁面。 設定這些檔案可改善網站效能和搜尋引擎最佳化。
 
 >[!NOTE]
 >
->These best practices apply to projects using the native Adobe Commerce storefront only. 它們不適用於使用其他店面解決方案(例如Adobe Experience Manager、Headless)的Adobe Commerce專案。
+>這些最佳實務僅適用於使用原生Adobe Commerce店面的專案。 它們不適用於使用其他店面解決方案(例如Adobe Experience Manager、Headless)的Adobe Commerce專案。
 
 ## 受影響的產品和版本
 
@@ -31,16 +31,16 @@ This article provides best practices for using `robots.txt` and `sitemap.xml` fi
 
 預設Adobe Commerce專案包含階層，其中包含單一網站、商店和商店檢視。 對於更複雜的實作，您可以為&#x200B;_多網站_&#x200B;店面建立其他網站、商店和商店檢視。
 
-### Single-site storefronts
+### 單一網站店面
 
-Follow these best practices when configuring the `robots.txt` and `sitemap.xml` files for single-site storefronts:
+設定單一網站店面的`robots.txt`和`sitemap.xml`檔案時，請遵循下列最佳實務：
 
-- Make sure that your project is using [`ece-tools`](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) version 2002.0.12 or later.
-- Use the Admin application to add content to the `robots.txt` file.
+- 確定您的專案使用[`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) 2002.0.12版或更新版本。
+- 使用Admin應用程式新增內容至`robots.txt`檔案。
 
   >[!TIP]
   >
-  >在`<domain.your.project>/robots.txt`檢視您商店的自動產生`robots.txt`檔案。
+  >在`robots.txt`檢視您商店的自動產生`<domain.your.project>/robots.txt`檔案。
 
 - 使用Admin應用程式產生`sitemap.xml`檔案。
 
@@ -64,14 +64,14 @@ Follow these best practices when configuring the `robots.txt` and `sitemap.xml` 
 
 >[!INFO]
 >
->如需詳細指示，請參閱[新增網站地圖和搜尋引擎自動機制](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap)。
+>如需詳細指示，請參閱[新增網站地圖和搜尋引擎自動機制](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap)。
 
 
-### Multi-site storefronts
+### 多網站店面
 
-您可以在雲端基礎結構上透過單一實施Adobe Commerce來設定和執行數個存放區。 請參閱[設定多個網站或商店](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)。
+您可以在雲端基礎結構上透過單一實施Adobe Commerce來設定和執行數個存放區。 請參閱[設定多個網站或商店](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)。
 
-The same best practices for configuring the `robots.txt` and `sitemap.xml` files for [single-site storefronts](#single-site-storefronts) applies to multi-site storefronts with two important differences:
+為`robots.txt`單一網站店面`sitemap.xml`設定[和](#single-site-storefronts)檔案的相同最佳實務適用於具有兩個重要差異的多網站店面：
 
 - 請確定`robots.txt`和`sitemap.xml`檔案名稱包含對應網站的名稱。 例如：
    - `domaineone_robots.txt`
@@ -93,7 +93,7 @@ The same best practices for configuring the `robots.txt` and `sitemap.xml` files
 
 ## Adobe Commerce內部部署
 
-使用管理應用程式來設定`robots.txt`和`sitemap.xml`檔案，以防止機器人掃描和索引不必要的內容（請參閱[搜尋引擎機器人](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=zh-Hant#search-engine-robots)）。
+使用管理應用程式來設定`robots.txt`和`sitemap.xml`檔案，以防止機器人掃描和索引不必要的內容（請參閱[搜尋引擎機器人](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)）。
 
 >[!TIP]
 >
@@ -101,17 +101,17 @@ The same best practices for configuring the `robots.txt` and `sitemap.xml` files
 
 ## 安全性
 
-Do not expose your Admin path in your `robots.txt` file. Having the Admin path exposed is a vulnerability for site hacking and potential loss of data. Remove the Admin path from the `robots.txt` file.
+請勿在您的`robots.txt`檔案中公開您的管理員路徑。 公開管理員路徑是網站駭客活動的弱點，且可能會遺失資料。 從`robots.txt`檔案中移除管理員路徑。
 
-For steps to edit the `robots.txt` file and remove all entries of the Admin path, see [Marketing User Guide > SEO and Search > Search Engine Robots](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=zh-Hant#search-engine-robots).
+如需編輯`robots.txt`檔案及移除管理員路徑之所有專案的步驟，請參閱[行銷使用手冊> SEO與搜尋>搜尋引擎機器人](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)。
 
 >[!TIP]
 >
->If you need help, [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket).
+>若您需要協助，請[提交Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)。
 
 ## 其他資訊
 
-- [Understanding websites, stores, and store views](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Adding websites](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Use Fastly to block malicious traffic for your Adobe Commerce sites](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
-- [robots.txt gives a 404 error in Adobe Commerce on cloud infrastructure 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html?lang=zh-Hant)
+- [瞭解網站、商店和商店檢視](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [正在新增網站](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [使用Fastly封鎖您Adobe Commerce網站的惡意流量](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+- [robots.txt在雲端基礎結構2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)上的Adobe Commerce中發生404錯誤

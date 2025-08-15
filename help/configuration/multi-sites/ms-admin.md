@@ -13,10 +13,10 @@ ht-degree: 0%
 
 此工作需要您為每個存放區建立根類別(以及其他類別（如有需要）。 本主題中討論的任務提供設定多個存放區的方法。 如需詳細資訊，請參閱Commerce使用手冊中的下列資源：
 
-- [類別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/categories)
-- [新增網站](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [儲存URL](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [內容](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/content-menu)
+- [類別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [新增網站](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [儲存URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [內容](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +34,7 @@ ht-degree: 0%
 1. 在&#x200B;**類別名稱**&#x200B;欄位中，輸入唯一名稱以識別此類別。
 1. 確定啟用類別設定為&#x200B;**是**。
 
-   如需此頁面上其他選項的相關資訊，請參閱[根類別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/category-root)。
+   如需此頁面上其他選項的相關資訊，請參閱[根類別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root)。
 
    下圖顯示一個範例。
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 1. 在右窗格中，展開&#x200B;**基礎URL**。
 1. 在&#x200B;_基底URL_&#x200B;區段中，清除&#x200B;**使用系統值**。
-1. 在&#x200B;**基底URL**&#x200B;和&#x200B;**基底連結URL**&#x200B;欄位中輸入`http://french.magento.mg` URL。
+1. 在`http://french.magento.mg`基底URL **和**&#x200B;基底連結URL **欄位中輸入** URL。
 
 1. 重複&#x200B;_基礎URL （安全）_&#x200B;區段中的上一步。
 
@@ -131,7 +131,7 @@ Commerce提供將商店程式碼新增至網站基底URL的選項，可簡化設
 
 這可防止`index.php`和`.htaccess`在未來的升級中與Commerce程式碼基底不同步。
 
-請參閱[Commerce使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-urls)。
+請參閱[Commerce使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)。
 
 若要將商店程式碼新增至基底URL：
 
@@ -141,7 +141,7 @@ Commerce提供將商店程式碼新增至網站基底URL的選項，可簡化設
    ![選取預設設定範圍](../../assets/configuration/multi-site-default.png)
 
 1. 在右窗格中，展開&#x200B;**Url選項**。
-1. 清除&#x200B;_將存放區代碼新增至Url_&#x200B;旁的&#x200B;**使用系統值**&#x200B;核取方塊。
+1. 清除&#x200B;**將存放區代碼新增至Url**&#x200B;旁的&#x200B;_使用系統值_&#x200B;核取方塊。
 1. 從&#x200B;_新增存放區代碼至Url_&#x200B;清單，按一下&#x200B;**是**。
 
    ![將商店代碼新增至商店基底URL](../../assets/configuration/multi-site-add-store-url.png)
@@ -163,7 +163,7 @@ Commerce提供將商店程式碼新增至網站基底URL的選項，可簡化設
 
 1. 在右窗格中，展開&#x200B;**基礎URL**。
 1. 在&#x200B;_基底URL_&#x200B;區段中，清除&#x200B;**使用系統值**。
-1. 在&#x200B;**基底URL**&#x200B;和&#x200B;**基底連結URL**&#x200B;欄位中輸入`http://magento.mg` URL。
+1. 在`http://magento.mg`基底URL **和**&#x200B;基底連結URL **欄位中輸入** URL。
 
 1. 重複&#x200B;**基礎URL （安全）**&#x200B;區段中的上一步。
 

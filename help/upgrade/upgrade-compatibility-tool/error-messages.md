@@ -61,7 +61,7 @@ ht-degree: 4%
 | 5002 | 開啟PHP標籤必須是檔案中的第一個內容 | 在PHP開始標籤之前，請確定檔案中沒有內容。 |
 | 5003 | 已棄用函式 | 使用錯誤訊息中建議的替代專案。 如果訊息未建議取代功能，則需要仔細檢閱以選取替代功能或實施。 |
 | 5005 | PHP語法錯誤 | 必須更新程式碼以符合PHP語法標準。 |
-| 5072 | 可能違反Magento2設計。 偵測到典型的Magento1.x建構 | 更新建構以Magento2標準。 |
+| 5072 | 可能違反Magento 2設計。 偵測到典型的Magento 1.x建構 | 將建構更新為Magento 2標準。 |
 | 5076 | 無法在名稱空間中使用，因為名稱空間是保留的，因為PHP 7是 | 以非保留關鍵字取代名稱空間中的保留字。 |
 | 5077 | 因為類別名稱是保留名稱，所以無法使用，因為PHP 7是保留名稱 | 以非保留名稱取代保留的類別名稱。 |
 
@@ -194,7 +194,7 @@ ht-degree: 4%
 | 5088 | 在必要引數之後找到選用引數 | 將必要引數移至選用引數之後。 |
 | 5089 | 找到方法可見性`final private` | 將方法可見性從`final private`變更為只有`private`。 |
 | 5090 | 魔術方法`__set_state`未定義為`static` | 魔術方法`__set_state`必須定義為`static`。 |
-| 5091 | 具有`__toString()`方法的類別未從`Stringable`介面繼承 | 使用`__toString()`方法將`Stringable`介面新增至類別。 |
+| 5091 | 具有`__toString()`方法的類別未從`Stringable`介面繼承 | 使用`Stringable`方法將`__toString()`介面新增至類別。 |
 | 5092 | `is_resource()`方法用於現在傳回Object的函式 | 將`is_resource()`變更為`instanceof`物件。 |
 | 6001 | `jQuery.andSelf()`已移除 | 使用`jQuery.addBack()`。 |
 | 6002 | jQuery `$.bind`和`$.unbind`已過時 | 請改用`$.on`和`$.off`。 |

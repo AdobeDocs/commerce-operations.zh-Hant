@@ -28,15 +28,15 @@ Commerce有一個命令列介面(CLI) — `<magento_root>/bin/magento` — 可�
 - CLI可擴充，因此協力廠商開發人員可以「插入」至其中。 這還有消除使用者學習曲線的額外好處。
 - 已停用模組的命令不顯示。
 
-本主題說明如何使用CLI設定Adobe Commerce軟體。 如需有關安裝Commerce的資訊，請參閱&#x200B;_安裝指南_&#x200B;中的[安裝流程](../../installation/overview.md)。
+本主題說明如何使用CLI設定Adobe Commerce軟體。 如需有關安裝Commerce的資訊，請參閱[安裝指南](../../installation/overview.md)中的&#x200B;_安裝流程_。
 
-## 必要條件
+## 先決條件
 
 開始使用CLI之前，請確定：
 
-1. 您的系統符合&#x200B;_安裝指南_&#x200B;中的[系統需求](../../installation/system-requirements.md)所討論的需求。
-1. 您已完成&#x200B;_安裝指南_&#x200B;中[先決條件](../../installation/prerequisites/overview.md)中討論的所有先決條件工作。
-1. 登入Commerce伺服器後，請切換為有權寫入Commerce檔案系統的使用者。 請參閱&#x200B;_安裝指南_&#x200B;中的[切換到檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)。
+1. 您的系統符合[安裝指南](../../installation/system-requirements.md)中的&#x200B;_系統需求_&#x200B;所討論的需求。
+1. 您已完成[安裝指南](../../installation/prerequisites/overview.md)中&#x200B;_先決條件_&#x200B;中討論的所有先決條件工作。
+1. 登入Commerce伺服器後，請切換為有權寫入Commerce檔案系統的使用者。 請參閱[安裝指南](../../installation/prerequisites/file-system/overview.md)中的&#x200B;_切換到檔案系統擁有者_。
 
 ## 正在執行命令
 

@@ -104,7 +104,7 @@ class AlgoliaElasticSearchAdapter extends \Magento\Elasticsearch7\SearchAdapter\
 
 ### 觀察者
 
-觀察者是一種事件偵聽程式的概念，在許多應用程式、平台、程式庫和程式碼語言中都可找到。 這個概念並非Adobe Commerce平台所特有。 從Magento1起，觀察者就一直被植入平台，且被視為如何修改核心程式碼和協力廠商程式碼的主要選擇。 
+觀察者是一種事件偵聽程式的概念，在許多應用程式、平台、程式庫和程式碼語言中都可找到。 這個概念並非Adobe Commerce平台所特有。 從Magento 1時代起，觀察者就一直在平台內實作，且被視為如何修改核心程式碼和協力廠商程式碼的主要選擇。 
 
 核心程式碼基底和任何協力廠商模組都可以在程式碼中的選定位置傳送事件。 在`events.xml`檔案中宣告且正在以名稱接聽分派事件的觀察者，可以在全域層級上運作或受限於任何Adobe Commerce「區域」，例如`frontend`、`adminhtml`、`graphql`、`webapi_rest`和`crontab`。
 

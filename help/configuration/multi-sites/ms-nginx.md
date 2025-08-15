@@ -17,15 +17,15 @@ ht-degree: 0%
 
   在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
 
-  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=zh-Hant)。
+  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html)中的&#x200B;_設定多個網站或商店_。
 
 - 您在一個虛擬主機檔案中接受多個網域，或每個網站使用一個虛擬主機；虛擬主機組態檔位於`/etc/nginx/sites-available`。
 - 您僅使用本教學課程中討論的修改內容，再使用Commerce提供的`nginx.conf.sample`。
 - 已在`/var/www/html/magento2`中安裝Commerce軟體。
 - 您有預設以外的兩個網站：
 
-   - 網站代碼為`french`且商店檢視代碼為`fr`的`french.mysite.mg`
-   - 網站代碼為`german`且商店檢視代碼為`de`的`german.mysite.mg`
+   - 網站代碼為`french.mysite.mg`且商店檢視代碼為`french`的`fr`
+   - 網站代碼為`german.mysite.mg`且商店檢視代碼為`german`的`de`
    - `mysite.mg`是預設網站和預設商店檢視
 
 >[!TIP]
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 1. [在Admin中設定網站、商店和商店檢視](ms-admin.md)。
 1. 建立[Nginx虛擬主機](#step-2-create-nginx-virtual-hosts))，以對應多個網站或每個Commerce網站一個Nginx虛擬主機（詳細步驟如下）。
-1. 使用Magento提供的`nginx.conf.sample`將[MAGE變數](ms-overview.md) `$MAGE_RUN_TYPE`和`$MAGE_RUN_CODE`的值傳遞給nginx （詳細步驟如下）。
+1. 使用Magento提供的[將](ms-overview.md)MAGE變數`$MAGE_RUN_TYPE` `$MAGE_RUN_CODE`和`nginx.conf.sample`的值傳遞給nginx （詳細步驟如下）。
 
    - `$MAGE_RUN_TYPE`可以是`store`或`website`：
 
@@ -105,7 +105,7 @@ ht-degree: 0%
    ln -s /etc/nginx/sites-available/magento magento
    ```
 
-如需有關對應指示詞的詳細資訊，請參閱對應指示詞[&#128279;](http://nginx.org/en/docs/http/ngx_http_map_module.html#map)上的nginx檔案。
+如需有關對應指示詞的詳細資訊，請參閱對應指示詞[上的](http://nginx.org/en/docs/http/ngx_http_map_module.html#map)nginx檔案。
 
 
 **若要建立多個虛擬主機**：
@@ -280,7 +280,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- 在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
->- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個雲端網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=zh-Hant)。
+>- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html)中的&#x200B;_設定多個雲端網站或商店_。
 
 ### 疑難排解
 

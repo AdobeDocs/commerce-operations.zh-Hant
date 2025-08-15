@@ -1,6 +1,6 @@
 ---
 title: 安裝 [!DNL Data Migration Tool]
-description: 瞭解如何安裝 [!DNL Data Migration Tool] 以在Magento1和Magento2之間傳輸資料。
+description: 瞭解如何安裝 [!DNL Data Migration Tool] 以在Magento 1和Magento 2之間傳輸資料。
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
@@ -18,7 +18,7 @@ ht-degree: 0%
 >Magento和[!DNL Data Migration Tool]的版本必須相符。
 
 
-請確定您同時使用Magento2和[!DNL Data Migration Tool]的&#x200B;*相同發行版本*。 例如，對於Magento版本2.2.0，您也必須使用[!DNL Data Migration Tool]版本2.2.0。
+請確定您同時使用Magento 2和&#x200B;*的*&#x200B;相同發行版本[!DNL Data Migration Tool]。 例如，對於Magento 2.2.0版，您也必須使用[!DNL Data Migration Tool] 2.2.0版。
 
 ## 檢查您的版本
 
@@ -37,7 +37,7 @@ php <magento_root>/bin/magento --version
 
 ### GitHub存放庫
 
-如果您複製Magento2 GitHub存放庫，請輸入下列命令：
+如果您複製Magento 2 GitHub存放庫，請輸入下列命令：
 
 ```bash
 cd <your Magento 2 clone directory>
@@ -54,7 +54,7 @@ git branch
 
 ## 尋找[!DNL Data Migration Tool]的發行版本
 
-前往[!DNL Data Migration Tool] GitHub存放庫的[版本](https://github.com/magento/data-migration-tool/releases)頁面以尋找可用的發行版本。
+前往[ GitHub存放庫的](https://github.com/magento/data-migration-tool/releases)版本[!DNL Data Migration Tool]頁面以尋找可用的發行版本。
 
 ## 安裝[!DNL Data Migration Tool]
 
@@ -66,7 +66,7 @@ git branch
 安裝之前，請確定您擁有：
 
 - 已完成[先決條件](prerequisites.md)區段中提及的所有工作
-- [已驗證Magento2軟體的版本](install.md#check-your-version)
+- [已驗證Magento 2軟體的版本](install.md#check-your-version)
 
 ### 從`repo.magento.com`安裝
 
@@ -84,7 +84,7 @@ git branch
    composer require magento/data-migration-tool:<version>
    ```
 
-   其中`<version>`必須符合Magento2程式碼基底的版本。
+   其中`<version>`必須符合Magento 2程式碼基底的版本。
 
    例如，對於2.2.0版，輸入：
 
@@ -114,7 +114,7 @@ git branch
    composer require magento/data-migration-tool:<version>
    ```
 
-   其中`<version>`必須符合Magento2程式碼基底的版本。
+   其中`<version>`必須符合Magento 2程式碼基底的版本。
 
    例如，對於2.2.0版，輸入：
 

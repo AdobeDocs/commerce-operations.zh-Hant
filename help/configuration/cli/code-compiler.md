@@ -58,7 +58,7 @@ Generated code and dependency injection configuration successfully.
    Generated code and dependency injection configuration successfully.
    ```
 
-若要編譯沒有資料庫的程式碼，請參閱[部署靜態檢視檔案而不安裝Magento](../cli/static-view-file-deployment.md)。
+若要在不使用資料庫的情況下編譯程式碼，請參閱[部署靜態檢視檔案而不安裝Magento](../cli/static-view-file-deployment.md)。
 
 <!-- link definitions -->
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這個命令只會檢查在`composer.json`檔案中宣告的相依性。 如果您解除安裝在`composer.json`檔案中定義為&#x200B;_非_&#x200B;的模組，這個命令會解除安裝模組而不檢查相依性。 這個命令&#x200B;_不_，但是請從檔案系統移除模組的程式碼。 您必須使用檔案系統工具來移除模組的程式碼（例如，`rm -rf <path to module>`）。 或者，您可以[停用](manage-modules.md)非撰寫器模組。
+>這個命令只會檢查在`composer.json`檔案中宣告的相依性。 如果您解除安裝在&#x200B;_檔案中定義為_&#x200B;非`composer.json`的模組，這個命令會解除安裝模組而不檢查相依性。 這個命令&#x200B;_不_，但是請從檔案系統移除模組的程式碼。 您必須使用檔案系統工具來移除模組的程式碼（例如，`rm -rf <path to module>`）。 或者，您可以[停用](manage-modules.md)非撰寫器模組。
 
 命令使用方式：
 
@@ -32,7 +32,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 1. 驗證指定的模組存在於程式碼庫中，且是撰寫器所安裝的套件。
 
-   這個命令只對定義為Composer套件的模組運作&#x200B;_1&rbrace;。_
+   這個命令只對定義為Composer套件的模組運作&#x200B;_1}。_
 
 1. 檢查與其他模組的相依性，如果有任何未滿足的相依性，則會終止指令。
 
@@ -50,7 +50,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 1. 若指定`--remove-data`，請移除在模組的`Uninstall`類別中定義的資料庫結構描述和資料。
 
-   針對要解除安裝的每個指定模組，叫用其`Uninstall`類別中的`uninstall`方法。 此類別必須繼承自[Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php)。
+   針對要解除安裝的每個指定模組，叫用其`uninstall`類別中的`Uninstall`方法。 此類別必須繼承自[Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php)。
 
 1. 從`setup_module`資料庫資料表中移除指定的模組。
 1. 從[部署組態](../../configuration/reference/deployment-files.md)的模組清單移除指定的模組。

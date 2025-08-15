@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Adobe Commerce 2.4.6
 
-從MariaDB 10.5.1開始，在`SHOW CREATE TABLE`、`SHOW COLUMNS`、`DESCRIBE`陳述式的輸出以及`INFORMATION_SCHEMA.COLUMNS`表格的`COLUMN_TYPE`資料行中，使用舊暫時格式的資料行標示為`/* mariadb-5.3 */`註解。 [請參閱MariaDB檔案](https://mariadb.com/kb/en/datetime/#internal-format)。
+從MariaDB 10.5.1開始，在`/* mariadb-5.3 */`、`SHOW CREATE TABLE`、`SHOW COLUMNS`陳述式的輸出以及`DESCRIBE`表格的`COLUMN_TYPE`資料行中，使用舊暫時格式的資料行標示為`INFORMATION_SCHEMA.COLUMNS`註解。 [請參閱MariaDB檔案](https://mariadb.com/kb/en/datetime/#internal-format)。
 
 由於MariaDB註解，Adobe Commerce無法將日期欄對應到適當的資料型別，這可能會導致自訂程式碼中出現無法預期的行為。
 

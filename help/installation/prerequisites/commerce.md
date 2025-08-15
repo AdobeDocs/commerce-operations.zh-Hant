@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 如何取得軟體
 
-檢查令人興奮的新功能和發行版本的可用性，並瞭解如何在我們的[產品可用性頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)上取得這些功能和版本。
+檢查令人興奮的新功能和發行版本的可用性，並瞭解如何在我們的[產品可用性頁面](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)上取得這些功能和版本。
 
 請參閱下表，瞭解如何開始安裝Adobe Commerce。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
         </tr>
     <tr>
         <td><p>Integrator， packager</p></td>
-        <td><p>想要完整控制所有已安裝的元件、存取應用程式伺服器、技術含量高，可能會將Magento Open Source與其他元件重新封裝。</p>
+        <td><p>想要完整控制所有安裝的元件、存取應用程式伺服器、擁有高度的技術能力，可能會將Magento Open Source與其他元件重新封裝。</p>
         </td>
         <td><ol><li>建立包含要使用的元件清單的撰寫器<em>專案</em>。</li>
             <li>使用Composer更新套件相依性；使用<code>composer create-project</code>取得Composer中繼套件。</li>
@@ -39,7 +39,7 @@ ht-degree: 0%
     </tr>
     <tr>
         <td><p>參與開發人員</p></td>
-        <td><p>參與Magento Open Source程式碼基底、檔案錯誤和自訂應用程式。 技術含量高，擁有自己的開發伺服器，瞭解Composer和GitHub。</p>
+        <td><p>會貢獻Magento Open Source程式碼基底、檔案錯誤和自訂應用程式。 技術含量高，擁有自己的開發伺服器，瞭解Composer和GitHub。</p>
             <p>您<em>無法</em>在生產環境中使用應用程式。</p>
       <p>您必須使用<a href="../../upgrade/developer/git-installs.md">Composer和Git命令</a>升級。</p></td>
         <td><ol><li>複製GitHub存放庫。</li>

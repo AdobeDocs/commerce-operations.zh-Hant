@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL WAF] 標籤'
-description: 瞭解 [!DNL Observation for Adobe Commerce]的 [!DNL WAF] 標籤。
+description: 瞭解 [!DNL WAF] 的 [!DNL Observation for Adobe Commerce]標籤。
 exl-id: e36986d7-d903-4154-bb09-6962b99ae35f
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## [!DNL WAF Top 10 countries for blocked requests]
 
-![WAF前10個國家封鎖的要求](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
+![WAF前10個封鎖要求的國家/地區](../../assets/tools/observation-for-adobe-commerce/waf-3.jpg)
 
 **[!DNL WAF Top 10 countries for blocked requests]**&#x200B;框架顯示[!DNL firewall]針對封鎖的請求前10名國家/地區的封鎖請求計數。
 
@@ -52,6 +52,6 @@ ht-degree: 0%
 
 ## [!DNL WAF Blocked Details]
 
-![WAF封鎖詳細資料](../../assets/tools/observation-for-adobe-commerce/waf-7.jpg)
+![WAF已封鎖的詳細資料](../../assets/tools/observation-for-adobe-commerce/waf-7.jpg)
 
 **[!DNL WAF Blocked Details]**&#x200B;框架顯示被[!DNL firewall]封鎖的請求，包括時間戳記、城市、地區和資料中心等詳細資訊。

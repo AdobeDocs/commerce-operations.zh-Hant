@@ -85,7 +85,7 @@ ht-degree: 0%
 
 ### 排除主題和HTML縮制
 
-下列命令會部署美式英文(`en_US`)語言的靜態內容、排除Commerce提供的Luma主題，且不會縮小HTML檔案。
+下列命令會部署美式英文(`en_US`)語言的靜態內容、排除Commerce提供的Luma主題，且不會縮制HTML檔案。
 
 ```bash
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 有時候，您可能會想要將資料庫託管在不同伺服器上，而不是在同一部電腦上執行資料庫伺服器和網頁伺服器。
 
-Adobe已提供連線至其他電腦上的MySQL伺服器的方式。 自Adobe Commerce 2.4.3起，您也可以將應用程式設定為使用Amazon Web Services (AWS) Aurora資料庫，而不變更程式碼。
+Adobe已提供一種連線至其他電腦上的MySQL伺服器的方式。 自Adobe Commerce 2.4.3起，您也可以將應用程式設定為使用Amazon Web Services (AWS) Aurora資料庫，而不變更程式碼。
 
 Aurora是高效能、完全相容的MySQL伺服器，裝載於AWS上。
 
@@ -35,7 +35,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 >
 >這是進階主題，僅供經驗豐富的網路管理員或資料庫管理員使用。 您必須具有`root`檔案系統存取權，而且必須能夠以`root`身分登入MySQL。
 
-### 必要條件
+### 先決條件
 
 開始之前，您必須：
 
@@ -48,7 +48,7 @@ bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws
 如果您的Web伺服器或資料庫伺服器是叢集化的，請使用下列准則來設定遠端資料庫連線：
 
 * 您必須為每個Web伺服器節點設定連線。
-* 一般而言，您會設定資料庫連線到資料庫負載平衡器；不過，資料庫叢集可能很複雜，其設定取決於您。 Adobe沒有針對資料庫叢集提出特定建議。
+* 一般而言，您會設定資料庫連線到資料庫負載平衡器；不過，資料庫叢集可能很複雜，其設定取決於您。 Adobe未針對資料庫叢集提出特定建議。
 
   如需詳細資訊，請參閱[MySQL檔案](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html)。
 

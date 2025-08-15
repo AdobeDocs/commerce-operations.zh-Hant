@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # 搜尋引擎設定
 
-本節討論測試Elasticsearch或OpenSearch與Adobe Commerce內部部署所需的最低設定。
+本節探討測試Elasticsearch或OpenSearch與Adobe Commerce內部部署時必須選擇的最低設定。
 
 >[!TIP]
 >
->在2.4.4和2.4.3-p2版中，所有標示為&#x200B;**Elasticsearch**&#x200B;的欄位也適用於OpenSearch。
->2.4.6版開始支援Elasticsearch8.x時，建立了新標籤以區分Elasticsearch和OpenSearch設定。
+>在2.4.4和2.4.3-p2版中，所有標示為&#x200B;**Elasticsearch**的欄位也適用於OpenSearch。
+>>當版本2.4.6中引入Elasticsearch 8.x支援時，已建立新標籤以區分Elasticsearch和OpenSearch設定。
 
-如需設定搜尋引擎的詳細資訊，請參閱[使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=zh-Hant)。
+如需設定搜尋引擎的詳細資訊，請參閱[使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html)。
 
 ## 從管理員設定搜尋引擎
 
@@ -41,7 +41,7 @@ ht-degree: 0%
    | **[!UICONTROL Server Port]** | 輸入Web伺服器Proxy連線埠。 雲端基礎結構上的預設值為9200<br>Adobe Commerce：從您的整合系統中取得此值。 |
    | **[!UICONTROL Index Prefix]** | 輸入搜尋引擎索引前置詞。 如果您將單一執行個體用於多個Commerce安裝（測試和生產環境），則必須為每次安裝指定唯一的前置詞。 否則，您可以使用預設首碼magento2。 |
    | **[!UICONTROL Enable HTTP Auth]** | 只有在您已啟用搜尋引擎伺服器的驗證時，才按一下&#x200B;**[!UICONTROL Yes]**。 若是如此，請在提供的欄位中提供使用者名稱和密碼。 |
-   | **[!UICONTROL Server Timeout]** | 輸入嘗試建立與Elasticsearch或OpenSearch伺服器的連線時等待的時間長度（以秒為單位）。 |
+   | **[!UICONTROL Server Timeout]** | 輸入嘗試建立與Elasticsearch或OpenSearch伺服器的連線時要等候的時間長度（以秒為單位）。 |
 
 1. 按一下&#x200B;**[!UICONTROL Test Connection]**。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 - 請確定搜尋引擎伺服器執行中。
 - 如果伺服器與Commerce位於不同的主機上，請登入Commerce伺服器並Ping搜尋引擎主機。 解決網路連線問題，並再次測試連線。
-- 檢查您開始Elasticsearch的命令視窗或OpenSearch，以找出棧疊追蹤和例外狀況。 您必須先解決這些問題，才能繼續。 特別是，請確定您是以具有`root`許可權的使用者身份啟動您的搜尋引擎。
+- 檢查您啟動Elasticsearch或OpenSearch的命令視窗，以尋找棧疊追蹤和例外狀況。 您必須先解決這些問題，才能繼續。 特別是，請確定您是以具有`root`許可權的使用者身份啟動您的搜尋引擎。
 - 請確定[UNIX防火牆和SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux)皆已停用，或設定規則讓您的搜尋引擎和Commerce能夠相互通訊。
 - 驗證&#x200B;**[!UICONTROL Server Hostname]**&#x200B;欄位的值。 確定伺服器可供使用。 您可以改為嘗試伺服器的IP位址。
 - 使用`netstat -an | grep <listen-port>`命令確認&#x200B;**[!UICONTROL Server Port]**&#x200B;欄位中指定的連線埠並未由其他處理序使用。

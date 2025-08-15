@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->對於雲端基礎結構專業專案上的Adobe Commerce，您必須建立[支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)票證，才能在中繼和生產環境中安裝或更新服務。 指示所需的服務變更，並將更新的`.magento.app.yaml`和`services.yaml`檔案及PHP版本加入票證中。 雲端基礎結構團隊更新您的專案最多可能需要48小時的時間。 請參閱[支援的軟體與服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=zh-Hant#supported-software-and-services)。
+>對於雲端基礎結構專業專案上的Adobe Commerce，您必須建立[支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)票證，才能在中繼和生產環境中安裝或更新服務。 指示所需的服務變更，並將更新的`.magento.app.yaml`和`services.yaml`檔案及PHP版本加入票證中。 雲端基礎結構團隊更新您的專案最多可能需要48小時的時間。 請參閱[支援的軟體與服務](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services)。
 
 ## 確認已安裝支援的搜尋引擎
 
@@ -88,7 +88,7 @@ Adobe已在2.4.8版本中新增對MySQL 8.4的支援。
    ```
 
 1. 將MySQL升級至8.4版。
-1. 在`my.cnf`檔案的`[mysqld]`中將`restrict_fk_on_non_standard_key`設定為`OFF`。
+1. 在`restrict_fk_on_non_standard_key`檔案的`OFF`中將`[mysqld]`設定為`my.cnf`。
 
    ```bash
    [mysqld]
@@ -99,7 +99,7 @@ Adobe已在2.4.8版本中新增對MySQL 8.4的支援。
    >
    >如果您未將`restrict_fk_on_non_standard_key`的值變更為`OFF`，則在匯入期間將會出現下列錯誤：
    >
-   >```sql
+   ```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. 重新啟動MySQL伺服器。
@@ -122,7 +122,7 @@ Adobe已在2.4.8版本中新增對MySQL 8.4的支援。
 
 ### 搜尋引擎
 
-在升級至2.4.0之前，您必須安裝並設定Elasticsearch 7.6或更新版本或OpenSearch 1.2。Adobe不再支援Elasticsearch 2.x、5.x和6.x。[搜尋引擎組態&#x200B;_組態指南_&#x200B;中的](../../configuration/search/configure-search-engine.md)說明將Elasticsearch升級至支援的版本後，您必須執行的工作。
+在升級至2.4.0之前，您必須安裝並設定Elasticsearch 7.6或更新版本或OpenSearch 1.2。Adobe不再支援Elasticsearch 2.x、5.x和6.x。[搜尋引擎組態](../../configuration/search/configure-search-engine.md)組態指南&#x200B;_中的_&#x200B;說明將Elasticsearch升級至支援的版本後，您必須執行的工作。
 
 請參閱[升級Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)，以取得有關備份資料、偵測可能的移轉問題，以及在部署到生產環境之前測試升級的完整指示。 根據您目前的Elasticsearch版本，不一定需要重新啟動完整叢集。
 
@@ -154,7 +154,7 @@ Adobe Commerce 2.4.6已匯入對Elasticsearch 8.x的支援。下列指示顯示E
 
 1. 將Elasticsearch 7.x伺服器升級至8.x，並確定已啟動且執行中。 請參閱[Elasticsearch檔案](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)。
 
-1. 將下列設定新增至您的`elasticsearch.yml`檔案並重新啟動Elasticsearch 8.x服務，以啟用`id_field_data`欄位。
+1. 將下列設定新增至您的`id_field_data`檔案並重新啟動Elasticsearch 8.x服務，以啟用`elasticsearch.yml`欄位。
 
    ```yaml
    indices:
@@ -164,7 +164,7 @@ Adobe Commerce 2.4.6已匯入對Elasticsearch 8.x的支援。下列指示顯示E
 
    >[!INFO]
    >
-   >為了支援Elasticsearch 8.x，Adobe Commerce 2.4.6預設不允許使用`indices.id_field_data`屬性，並使用`docvalue_fields`屬性中的`_id`欄位。
+   >為了支援Elasticsearch 8.x，Adobe Commerce 2.4.6預設不允許使用`indices.id_field_data`屬性，並使用`_id`屬性中的`docvalue_fields`欄位。
 
 1. 在Adobe Commerce專案的根目錄中，更新您的撰寫器相依性以移除`Magento_Elasticsearch7`模組並安裝`Magento_Elasticsearch8`模組。
 
@@ -174,7 +174,7 @@ Adobe Commerce 2.4.6已匯入對Elasticsearch 8.x的支援。下列指示顯示E
 
    如果您遇到`psr/http-message`的相依性錯誤，請按一下以展開下列疑難排解區段：
 
-   +++疑難排除
+   +++疑難排解
 
    如果在安裝Elasticsearch 8時遇到相依性衝突，尤其是與`psr/http-message`的衝突，您可以按照以下步驟解決此問題：
 
@@ -200,7 +200,7 @@ Adobe Commerce 2.4.6已匯入對Elasticsearch 8.x的支援。下列指示顯示E
    bin/magento setup:upgrade
    ```
 
-1. 在[!DNL Admin]中[設定Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin)。
+1. 在[中](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin)設定Elasticsearch[!DNL Admin]。
 
 1. 重新索引目錄索引。
 
@@ -232,7 +232,7 @@ Adobe Commerce 2.4.6已匯入對Elasticsearch 8.x的支援。下列指示顯示E
    bin/magento setup:upgrade
    ```
 
-1. 在[!DNL Admin]中[設定Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin)。
+1. 在[中](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin)設定Elasticsearch[!DNL Admin]。
 
 1. 重新索引目錄索引。
 
@@ -283,7 +283,7 @@ Adobe建議將開啟的檔案[ulimit](https://ss64.com/bash/ulimit.html)設定�
 
 >[!IMPORTANT]
 >
->建議您避免在`php.ini`檔案中設定`pcre.recursion_limit`屬性的值，因為這會產生未完成且無失敗通知的回覆。
+>建議您避免在`pcre.recursion_limit`檔案中設定`php.ini`屬性的值，因為這會產生未完成且無失敗通知的回覆。
 
 ## 確認cron工作正在執行
 

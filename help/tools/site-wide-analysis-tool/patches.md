@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Patches]'
-description: 瞭解 [!DNL Site-Wide Analysis Tool]中的[!UICONTROL Patches]標籤、使用時間及其優點。
+description: 瞭解[!UICONTROL Patches]中的 [!DNL Site-Wide Analysis Tool]標籤、使用時間及其優點。
 exl-id: 40bc9b38-2a70-40ec-8278-231c78193248
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Patches]
 
-[!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches]頁面會顯示您的Adobe Commerce存放區可用的所有修補程式。 這些修補程式可協助解決您在Adobe Commerce中可能遇到的問題。 請參閱我們在[!DNL support knowledge base]中發行的[品質修補程式工具：自助提供品質修補程式的新工具](https://support.magento.com/hc/en-us/articles/360047139492)文章。
+[!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches]頁面會顯示您的Adobe Commerce存放區可用的所有修補程式。 這些修補程式可協助解決您在Adobe Commerce中可能遇到的問題。 請參閱我們在[中發行的](https://support.magento.com/hc/en-us/articles/360047139492)品質修補程式工具：自助提供品質修補程式的新工具[!DNL support knowledge base]文章。
 
 >[!NOTE]
 >

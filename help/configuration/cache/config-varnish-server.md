@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -76,11 +76,11 @@ ht-degree: 0%
 
 1. 將`.host`的值取代為Varnish _後端_&#x200B;或&#x200B;_原始伺服器_&#x200B;的完整主機名稱或IP位址和接聽連線埠；也就是說，提供內容Varnish的伺服器將會加速。
 
-   通常這是您的網頁伺服器。 請參閱&#x200B;_清漆指南_&#x200B;中的[後端伺服器](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)。
+   通常這是您的網頁伺服器。 請參閱[清漆指南](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)中的&#x200B;_後端伺服器_。
 
 1. 將`.port`的值取代為網頁伺服器的接聽連線埠（此範例中為8080）。
 
-   範例： Apache已安裝於主機192.0.2.55上，且Apache正在連線埠8080上接聽：
+   範例： Apache安裝在主機192.0.2.55上，且Apache正在連線埠8080上接聽：
 
    ```conf
    backend default {

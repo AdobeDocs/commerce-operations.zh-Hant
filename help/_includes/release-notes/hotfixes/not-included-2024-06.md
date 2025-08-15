@@ -17,30 +17,30 @@ ht-degree: 0%
 
 1. 套用2024年6月11日發行的其中一個安全性修補程式：
 
-   * [2.4.7-p1](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#adobe-commerce-247-p1)
+   * [2.4.7-p1](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#adobe-commerce-247-p1)
 
-   * [2.4.6-p6](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#adobe-commerce-246-p6)
+   * [2.4.6-p6](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#adobe-commerce-246-p6)
 
-   * [2.4.5-p8](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p8)
+   * [2.4.5-p8](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p8)
 
-   * [2.4.4-p9](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#adobe-commerce-244-p9)
+   * [2.4.4-p9](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#adobe-commerce-244-p9)
 
-1. 套用2024年7月17日發行的[Hotfix](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102)。
+1. 套用2024年7月17日發行的[Hotfix](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102)。
 
-1. [旋轉](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/encryption-key)加密金鑰。
+1. [旋轉](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)加密金鑰。
 
 選項2：
 
-1. 套用[隔離的修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102)。
+1. 套用[隔離的修補程式](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102)。
 
-1. [旋轉](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/encryption-key)加密金鑰。
+1. [旋轉](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)加密金鑰。
 
 **對於已套用2024年6月11日發行的安全性修補程式或2024年6月28日發行的隔離修補程式的客戶：**
 
-1. 套用2024年7月17日發行的[Hotfix](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102)。
+1. 套用2024年7月17日發行的[Hotfix](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102)。
 
-1. [旋轉](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/encryption-key)加密金鑰。
+1. [旋轉](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)加密金鑰。
 
 **針對已套用1)於2024年6月11日發行的安全性修補程式的客戶，或2)於2024年6月28日發行的隔離修補程式，以及3)輪換其加密金鑰的客戶：**
  
-1. 套用2024年7月17日發行的[Hotfix](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102)。
+1. 套用2024年7月17日發行的[Hotfix](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102)。

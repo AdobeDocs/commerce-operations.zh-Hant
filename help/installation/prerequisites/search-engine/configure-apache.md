@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4版本新增OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
+>2.4.4版本新增OpenSearch支援。OpenSearch是Elasticsearch的相容復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
 
-本節探討如何將Apache設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與Apache[&#128279;](#secure-communication-with-apache)的安全通訊中討論。
+本節探討如何將Apache設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與Apache[的](#secure-communication-with-apache)安全通訊中討論。
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ ht-degree: 0%
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
-   例如，如果您使用Elasticsearch，而您的Proxy使用連線埠8080：
+   例如，如果您使用Elasticsearch，而Proxy使用連線埠8080：
 
    ```bash
    curl -i http://localhost:8080/_cluster/health
@@ -153,8 +153,8 @@ mkdir -p /usr/local/apache/password
 htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
-**範例2：Elasticsearch**
-您必須為兩個使用者設定驗證：一個具有nginx存取權，另一個具有Elasticsearch存取權。 若要為這些使用者建立密碼檔案，請輸入下列命令：
+**範例2： Elasticsearch**
+您必須為兩個使用者設定驗證：一個能存取nginx，另一個能存取Elasticsearch。 若要為這些使用者建立密碼檔案，請輸入下列命令：
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### 與Apache的安全通訊
 
-本節討論如何設定[HTTP基本驗證](https://httpd.apache.org/docs/2.2/howto/auth.html)。 同時使用TLS和HTTP Basic驗證可防止任何人攔截與Elasticsearch、OpenSearch或您的應用程式伺服器的通訊。
+本節討論如何設定[HTTP基本驗證](https://httpd.apache.org/docs/2.2/howto/auth.html)。 同時使用TLS和HTTP基本驗證可防止任何人攔截與Elasticsearch、OpenSearch或您的應用程式伺服器的通訊。
 
 本節探討如何指定可以存取Apache伺服器的使用者。
 

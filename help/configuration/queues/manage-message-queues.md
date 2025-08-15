@@ -35,7 +35,7 @@ Cron作業是重新啟動消費者的預設機制。 由`cron`啟動的處理序
 >
 >您可以在管理員商店>設定>設定>進階>系統> Cron設定選項中設定群組：消費者。
 >
->如需搭配Commerce使用`cron`的詳細資訊，請參閱[設定並執行cron](../cli/configure-cron-jobs.md)。
+>如需搭配Commerce使用[的詳細資訊，請參閱](../cli/configure-cron-jobs.md)設定並執行cron`cron`。
 
 您也可以使用程式管理員（例如[監督員](https://supervisord.readthedocs.io/en/latest/)）來監視程式的狀態。 管理員可視需要使用命令列來重新啟動程式。
 
@@ -49,7 +49,7 @@ Cron作業是重新啟動消費者的預設機制。 由`cron`啟動的處理序
 
 >[!INFO]
 >
->如果您的Adobe Commerce存放區託管在Cloud平台上，請使用[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#cron_consumers_runner)設定`consumers_runner` cron工作。
+>如果您的Adobe Commerce存放區託管在Cloud平台上，請使用[`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner)設定`consumers_runner` cron工作。
 
 ### 特定設定
 
@@ -82,6 +82,6 @@ Cron作業是重新啟動消費者的預設機制。 由`cron`啟動的處理序
 
   >[!INFO]
   >
-  >如果您的Adobe Commerce存放區託管於雲端平台，請使用[`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#consumers_wait_for_max_messages)設定消費者處理訊息佇列訊息的方式。
+  >如果您的Adobe Commerce存放區託管於雲端平台，請使用[`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages)設定消費者處理訊息佇列訊息的方式。
 
 請參閱[啟動訊息佇列消費者](../cli/start-message-queues.md)。

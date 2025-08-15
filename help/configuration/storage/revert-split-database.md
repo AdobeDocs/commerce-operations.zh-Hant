@@ -56,7 +56,7 @@ ht-degree: 0%
    mysql -h "magento2-mysql" -u root -p -e "DROP DATABASE magento_quote;"
    ```
 
-1. 移除`env.php`檔案之`connections`和`resources`區段中`checkout`和`sales`的部署組態。
+1. 移除`checkout`檔案之`sales`和`connections`區段中`resources`和`env.php`的部署組態。
 1. 還原外部索引鍵：
 
    ```bash
@@ -65,8 +65,8 @@ ht-degree: 0%
 
 ## 驗證您的工作
 
-若要驗證您的單一資料庫實作是否正常運作，請使用如[phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin)的資料庫工具，執行下列工作，並驗證資料是否已新增至`magento_main`資料庫表格：
+若要驗證您的單一資料庫實作是否正常運作，請使用如`magento_main`phpMyAdmin[的資料庫工具，執行下列工作，並驗證資料是否已新增至](../../installation/prerequisites/optional-software.md#phpmyadmin)資料庫表格：
 
-1. 確認外部索引鍵已還原。 例如，`quote`資料庫資料表中的`QUOTE_STORE_ID_STORE_STORE_ID`索引鍵。
+1. 確認外部索引鍵已還原。 例如，`QUOTE_STORE_ID_STORE_STORE_ID`資料庫資料表中的`quote`索引鍵。
 1. 確認客戶可以從店面下訂單。
 1. 確認在將分割資料庫還原為單一資料庫之前建立的訂單可在Admin中使用。

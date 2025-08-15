@@ -19,7 +19,7 @@ _形容詞_
 使用行動裝置和平板電腦，摺頁上方區域會有大幅差異，尤其是熒幕大小和尺寸，以及檢視時的方向（直向與橫向）。
 使用回應式主題和測試有助於找到內容和配置的正確組合。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：設計_
 
@@ -31,7 +31,7 @@ _名詞_
 當您停用時，會移除與服務和執行中執行個體的連線，但會保留程式碼。
 它會變成一個普通的Git分支。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位： cloud_
 
@@ -42,7 +42,7 @@ _名詞_
 一種類別，可讓兩個原本不相容的系統共同運作，而不需修改系統的原始程式碼。
 例如，資料庫配接卡、快取配接卡、檔案系統配接卡、後處理器程式庫配接卡以及其他型別的運算配接卡。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 
@@ -54,9 +54,9 @@ _名詞_
 在Adobe Commerce中，管理員使用者擁有「管理員」中所有功能、選項和功能的完整許可權和存取權。
 他們也可以建立使用者和角色。
 
-深入瞭解： [新增使用者](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=zh-Hant)
+深入瞭解： [新增使用者](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _同義字：管理員，超級使用者_
@@ -70,9 +70,9 @@ _名詞_
 使用者可存取管理區域來管理商店，包括產品、訂單、出貨、CMS內容、商店設計、客戶資訊等。
 管理員使用者擁有相關角色，其許可權可控制對功能、選項和功能的存取權。
 
-深入瞭解： [Adobe Commerce使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=zh-Hant)
+深入瞭解： [Adobe Commerce使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _同義字：管理員、管理面板、後端、管理介面、管理UI_
@@ -84,9 +84,9 @@ _名詞_
 
 管理員變數是專案環境變數，可覆寫管理員使用者帳戶的組態設定以存取管理員UI。
 
-深入瞭解： [管理員變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=zh-Hant)
+深入瞭解： [管理員變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：管理員，雲端_
 
@@ -96,9 +96,9 @@ _名詞_
 
 指派給管理員的內部區域名稱。
 
-深入瞭解： [Adobe Commerce使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=zh-Hant)
+深入瞭解： [Adobe Commerce使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _相關辭彙：區域，商務管理員_
@@ -118,7 +118,7 @@ Adobe Commerce區域包括：
 * 店面
 * Web API REST (webapi_rest)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _相關辭彙：商務元件，店面_
@@ -134,11 +134,11 @@ Adobe Commerce使用者可建立自訂屬性，以新增至預設屬性集或自
 
 自訂屬性是一種Entity-Attribute-Value (EAV)屬性。
 
-若是像Google購物廣告頻道和AmazonSales Channel這樣的整合，您可以將Commerce屬性對應至協力廠商中的屬性，以正確顯示和銷售產品、顯示廣告。
+若為像Google Shopping Ads Channel和Amazon Sales Channel這樣的整合，您可以將Commerce屬性對應至協力廠商中的屬性，以正確顯示和銷售產品、顯示廣告。
 
 深入瞭解： [EAV和extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 * _同義字：產品屬性，自訂屬性_
@@ -150,7 +150,7 @@ _名詞_
 
 屬性集中屬性的邏輯分組。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _相關辭彙： attribute_
@@ -162,7 +162,7 @@ _名詞_
 針對特定產品自訂的屬性群組集合。
 範例： T恤屬性集可能包含顏色、大小、性別和品牌。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 * _相關辭彙： attribute_
@@ -174,7 +174,7 @@ _名詞_
 產品價格，減去優惠券或折扣，加上運費與適用稅金。
 平均值的決定方式是加上每月存貨的開始成本，加上期間最後一個月存貨的結束成本。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：產品、定價、存貨_
 
@@ -190,9 +190,9 @@ _名詞_
 貨幣符號會出現在產品價格和銷售檔案中，例如訂單和發票。
 您可以視需要自訂貨幣符號，並為每個商店或檢視分別設定價格的顯示。
 
-深入瞭解： [貨幣](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html?lang=zh-Hant)
+深入瞭解： [貨幣](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：定價_
 
@@ -202,7 +202,7 @@ _名詞_
 
 若要執行工作或一次變更多個專案，不需要手動重複。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 * _同義字：大量作業_
@@ -212,15 +212,15 @@ _字詞屬性：_
 _名詞_
 
 一種頁面輸出單位，可呈現一些獨特內容（一段資訊、使用者介面元素），任何對一般使用者來說視覺上可見的內容。
-[個區塊](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=zh-Hant)是由模組實作及提供。
+[個區塊](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html)是由模組實作及提供。
 區塊使用範本來產生HTML。
 區塊的範例包括類別清單、迷你購物車、產品標籤和產品清單。
 
-[動態區塊](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html?lang=zh-Hant)會根據邏輯提供內容，例如價格規則。
+[動態區塊](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html)會根據邏輯提供內容，例如價格規則。
 
-Page Builder會展開互動式並建立[區塊](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html?lang=zh-Hant)和[動態區塊](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html?lang=zh-Hant)。
+Page Builder會展開互動式並建立[區塊](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html)和[動態區塊](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html)。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _同義字：動態區塊_
@@ -236,9 +236,9 @@ _名詞，動詞_
 
 使用自訂屬性來儲存產品的品牌資訊。
 
-有些擴充功能和整合功能可能會使用或要求您的產品使用品牌，例如Google購物廣告頻道和AmazonSales Channel。
+有些擴充功能和整合功能可能會使用或要求您的產品使用品牌，例如Google Shopping ads Channel和Amazon Sales Channel。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業_
 
@@ -248,9 +248,9 @@ _形容詞_
 
 擁有永久實體地點的零售企業，而非僅透過網際網路運作的企業。
 
-對於[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html?lang=zh-Hant)和[Order Management](#oms)，此商店是追蹤產品數量、送貨訂單及支援店內取貨的來源。
+對於[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html)和[Order Management](#oms)，此商店是追蹤產品數量、送貨訂單及支援店內取貨的來源。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業，詳細目錄_
 
@@ -263,7 +263,7 @@ _名詞_
 
 深入瞭解： [DevDocs大量作業](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 
@@ -274,9 +274,9 @@ _名詞_
 可讓客戶利用各種選項和設定，組合「打造專屬的」可自訂產品。
 套件組合中的每個專案都是個別的簡單或虛擬產品。
 
-深入瞭解： [可設定的產品](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=zh-Hant)
+深入瞭解： [可設定的產品](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 * _相關辭彙：簡單產品、虛擬產品、產品型別_
@@ -288,7 +288,7 @@ _名詞_
 擴充或自訂Adobe Commerce行為的程式碼會視為套件擴充功能。
 其中可包含模組、主題和語言套件。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：套件擴充功能，擴充功能_
 * _同義字：延伸_
@@ -304,7 +304,7 @@ _名詞_
 第一級快取是很快的，例如APC或Memcached後端，但是會受到限制，而且不支援標籤和分組快取專案。
 第二層級快取（例如檔案系統或Redis後端）速度較慢，但支援標籤和群組。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 * _相關辭彙：後端_
@@ -315,7 +315,7 @@ _名詞_
 
 指定快取後端要儲存何種資料。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 * _相關辭彙： frontend_
@@ -347,7 +347,7 @@ Adobe Commerce包含下列型別：
 
 可以建立及定義其他型別。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 
@@ -358,7 +358,7 @@ _動詞_
 將授權訂單金額轉換為可開立帳單交易的處理。
 在授權之前，無法擷取異動，而在貨品或服務出貨之前，無法擷取授權。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業_
 * _相關條款：授權，訂單狀態_
@@ -369,7 +369,7 @@ _名詞_
 
 金融機構授權在信用卡帳戶中進行購買的人員。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業，訂單_
 
@@ -380,7 +380,7 @@ _名詞_
 套用至購物車並觸發動作以回應一組條件的價格規則。
 用於建立促銷活動。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，定價，產品_
 * _相關辭彙：目錄規則，購物車_
@@ -399,7 +399,7 @@ _名詞_
 
 您可以建立任意數目的根類別，但一次只能使用一個（預設）。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，定價，產品_
 * _相關辭彙：共用目錄，目錄規則_
@@ -411,7 +411,7 @@ _名詞_
 套用至特定產品的價格規則，並依據一組條件而觸發動作。
 用於建立促銷活動。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，定價，產品_
 * _相關辭彙：購物車規則，目錄_
@@ -423,7 +423,7 @@ _名詞_
 具有共同點的一組產品。
 商店的主功能表會整理為產品的類別和子類別。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 
@@ -438,7 +438,7 @@ _名詞_
 
 深入瞭解： [結帳教學課程](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業、設計、訂購、產品、程式設計_
 
@@ -448,9 +448,9 @@ _名詞_
 
 雲端變數是雲端基礎結構上Adobe Commerce專屬的環境變數，並使用&#x200B;**`MAGENTO_CLOUD`**&#x200B;前置詞。
 
-深入瞭解： [雲端變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=zh-Hant)
+深入瞭解： [雲端變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位： cloud_
 
@@ -458,9 +458,9 @@ _字詞屬性：_
 
 _名詞_
 
-[區塊](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=zh-Hant)的特殊變體，只能在Admin中建立，無法透過配置檔案參考。
+[區塊](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html)的特殊變體，只能在Admin中建立，無法透過配置檔案參考。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _相關辭彙：區塊，靜態區塊_
@@ -471,7 +471,7 @@ _名詞_
 
 與多個產品選項關聯的資料。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 
@@ -481,7 +481,7 @@ _名詞_
 
 用於參考Adobe Commerce中的模組、主題或語言套件。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _同義字：元件_
@@ -503,7 +503,7 @@ _名詞_
 六個變體必須建立為個別產品（每個產品都有自己的SKU）。
 然後，所有變體都會新增至可設定的產品，讓客戶選擇大小和顏色，然後將其新增至購物車。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 * _相關辭彙：產品型別_
@@ -514,7 +514,7 @@ _名詞_
 
 轉換為購買者的訪客百分比。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業，訂單_
 
@@ -522,9 +522,9 @@ _字詞屬性：_
 
 _名詞_
 
-核心層級擴充包含三個服務節點，用於資料儲存、快取和服務，例如OpenSearch、Elasticsearch、MariaDB、Redis。
+核心層級擴充功能包含三個服務節點，分別用於資料儲存、快取和服務，例如OpenSearch、Elasticsearch、MariaDB、Redis。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位： cloud_
 
@@ -535,7 +535,7 @@ _名詞_
 由商家核發給客戶的檔案，用以註銷因超額借記、退款或退貨而產生的未結餘額。
 備忘錄會將資金還原至客戶的帳戶。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業，訂單_
 
@@ -545,7 +545,7 @@ _名詞_
 
 銷退折讓單金額貸記至客戶的明細。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業，訂單_
 
@@ -555,7 +555,7 @@ _名詞_
 
 商戶建立銷退折讓單之已開立商業發票的專案。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業，訂單_
 
@@ -567,7 +567,7 @@ _名詞，形容詞，動詞_
 當客戶導覽至購物車頁面時，這些產品會顯示為對已在購物車中的專案進行交叉銷售。
 類似衝動購買，如雜誌和雜貨店收銀機上的糖果。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業、產品_
 * _相關條款：向上銷售_
@@ -579,7 +579,7 @@ _名詞_
 「持卡人驗證方法」的縮寫。
 一種驗證客戶身分的方式，透過付款處理者確認3位數或4位數的信用卡安全代碼。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業，訂單_
 * _同義字：持卡人驗證方法_
@@ -595,7 +595,7 @@ _名詞_
 定義資料的整理方式以及資料關係的控管方式，包括套用至資料的所有限制。
 如果某個模組具有必須儲存在資料庫中的資料，則該模組可以包含資料庫架構的片段。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 * _同義字：結構描述_
@@ -609,7 +609,7 @@ _名詞_
 用來讓測試更容易。
 若要定義類別的相依性，請編輯di.xml組態檔。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 
@@ -619,9 +619,9 @@ _名詞_
 
 部署金鑰是您的專案SSH公開金鑰，可讓您以唯讀或讀寫（如果已啟用）方式存取Git存放庫。
 
-深入瞭解： [安全連線](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=zh-Hant)
+深入瞭解： [安全連線](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位： cloud_
 
@@ -631,7 +631,7 @@ _名詞，動詞_
 
 需要潛在訂閱者完成第二個步驟，以確認其訂閱意圖的電子郵件驗證程式。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業_
 
@@ -645,7 +645,7 @@ _名詞_
 
 可下載的檔案可位於伺服器上，或以URL的形式提供給任何其他伺服器或內容傳遞網路。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 * _相關辭彙：產品型別_
@@ -657,7 +657,7 @@ _名詞_
 由程式碼產生，而非從靜態範本讀取的內容。
 在使用者造訪頁面時最初呈現動態內容後，有時可以快取內容並重複使用，而不要求在重新造訪時進行另一個動態呼叫。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：設計_
 * _相關辭彙： php_
@@ -675,7 +675,7 @@ _名詞_
 
 程式碼格式：媒體url=&quot;path/to/image.jpg&quot;
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 * _相關辭彙：內容傳遞網路，url_
@@ -686,11 +686,11 @@ _字詞屬性：_
 
 _名詞_
 
-一組指令碼和工具，用來管理和部署Commerce應用程式。 此套件簡化了雲端基礎結構流程上的許多Adobe Commerce，包括部署到Docker環境、管理cron、驗證專案配置和套用Adobe修補程式。
+一組指令碼和工具，用來管理和部署Commerce應用程式。 此套件簡化了雲端基礎結構流程上的許多Adobe Commerce，包括部署到Docker環境、管理cron、驗證專案設定和套用Adobe修補程式。
 
-深入瞭解： [ece-tools套件](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html?lang=zh-Hant)
+深入瞭解： [ece-tools套件](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位： cli，雲端，部署_
 
@@ -702,7 +702,7 @@ _名詞_
 包含可修改的屬性或引數。
 範例包括測試 — 更新可以變更實體，例如價格規則、產品或類別 — 以及資料庫記錄 — 其中服務合約包括傳送和接收的資料結構。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _相關辭彙：屬性、購物車規則、目錄規則_
@@ -718,7 +718,7 @@ _名詞_
 
 深入瞭解： [EAV和extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 * _同義字： eav_
@@ -729,7 +729,7 @@ _名詞_
 
 儲存期較長或可重複使用的內容。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業_
 
@@ -741,7 +741,7 @@ _名詞_
 您可以選擇在Commerce Marketplace或其他擴充功能發佈系統上封裝和發佈擴充功能。
 Commerce擴充功能可包含模組、主題和語言套件。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _相關辭彙：元件、模組、封裝_
@@ -754,7 +754,7 @@ _名詞_
 
 深入瞭解： [新增擴充功能屬性至實體](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _相關辭彙：屬性，實體屬性值_
@@ -768,7 +768,7 @@ _名詞_
 在國際出貨中，此術語表示收貨方需負責出貨費用。
 FOB可依據產地或目的地，並指定為運費收取或預付運費。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業、訂單、定價_
 * _同義字： fob_
@@ -785,7 +785,7 @@ _形容詞_
 
 注意：在過去，店面稱為「前端」，管理員稱為「後端」。 不再支援此用法。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：設計，程式設計_
 * _同義字：使用者端_
@@ -797,7 +797,7 @@ _名詞_
 
 從商店中客戶的觀點來決定屬性的呈現和行為的屬性。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：設計，程式設計_
 
@@ -807,7 +807,7 @@ _名詞_
 
 管理客戶出貨的處理。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業_
 
@@ -832,7 +832,7 @@ _名詞_
 禮品卡也有助於促銷活動，因為商店管理員可以在後端手動建立禮品卡帳戶，並將禮品卡代碼傳送至特定客戶區段。
 禮品卡可作為忠誠度計畫，針對在節日期間從網路商店或特定促銷活動購買過多次的最活躍客戶。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _相關辭彙：產品型別_
@@ -843,7 +843,7 @@ _名詞_
 
 產品的成本與價格之間的差異。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業_
 
@@ -858,7 +858,7 @@ _名詞_
 例如，對於有四種尺寸的刀具，所有四種刀具都可以顯示在分組產品頁面中。
 客戶可以選取他們想要的大小，然後從此頁面新增到購物車。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 * _相關辭彙：簡單產品，產品型別_
@@ -875,7 +875,7 @@ _名詞_
 例如，在客戶模組中，有一個名為「view/frontend/layout/checkout_cart_index.xml」的版面配置檔案。
 其中「frontend」是區域名稱，「checkout_cart_index」是控制代碼名稱，兩者都是衍生自URL。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 * _同義字：頁面控制代碼_
@@ -886,7 +886,7 @@ _名詞_
 
 水準擴充（也稱為向外擴充）是指將額外的節點或機器新增至您的基礎建設，以符合不斷增長的需求的程式。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位： cloud_
 
@@ -902,7 +902,7 @@ _名詞_
 外掛程式透過相依性插入組態檔(di.xml)與攔截點相關聯。
 如果在相同函式上定義了多個外掛程式，相依性插入設定會定義外掛程式的叫用順序，好讓您可以在不發生衝突的情況下使用多個外掛程式。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 * _相關辭彙：外掛程式_
@@ -918,7 +918,7 @@ _名詞_
 頁面配置檔案著重於頁面結構的最高層級（頁首、頁尾、主要內容區域、左側邊欄等）。
 然後配置檔案將內容（區塊）組合到頁面上的這些不同區域中。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位： design， commerce software_
 * _相關辭彙：配置指示，區塊_
@@ -931,7 +931,7 @@ _名詞_
 單一配置檔案可以包含多個配置指示。
 配置指示在配置檔案中以XML編碼。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：設計，程式設計_
 * _相關辭彙：配置、區塊、容器、使用者介面元件_
@@ -942,7 +942,7 @@ _名詞_
 
 用於新增的程式碼片段，以修改XML配置或從其他檔案匯入配置指示。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位： design， commerce software_
 
@@ -951,10 +951,10 @@ _字詞屬性：_
 _名詞_
 
 授權擁有者（也稱為帳戶擁有者）是企業組織中的指定人員，負責管理雲端基礎結構帳戶上Adobe Commerce的付款和其他業務相關問題。
-此人可作為Adobe的聯絡點。
+此人負責與Adobe聯絡。
 企業購買雲端基礎結構訂閱上的Adobe Commerce後，初始專案和程式碼存取權僅供指定為授權擁有者的人員使用。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業_
 
@@ -967,9 +967,9 @@ _名詞_
 MAGEID通常是Adobe Commerce帳戶的計費聯絡人(可能不是雲端基礎結構專案的Adobe Commerce專案所有者)。
 若要取得雲端基礎結構套件上Adobe Commerce和Adobe Commerce的存取許可權，您必須使用與已獲得這些套件存取許可權的MAGEID相關聯的存取金鑰。
 
-深入瞭解： [取得您的驗證金鑰](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=zh-Hant)
+深入瞭解： [取得您的驗證金鑰](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 
@@ -978,12 +978,12 @@ _字詞屬性：_
 _名詞_
 
 在行銷和零售中，為決定零售價而新增至專案成本的百分比。
-[透過產品可自訂選項來設定產品的標籤](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=zh-Hant)或Markdown。
+[透過產品可自訂選項來設定產品的標籤](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html)或Markdown。
 
 在開發中，控制文書處理、簡報及格式化的電腦語言。
 此外，標籤標籤是可將功能或內容新增至CMS頁面或區塊的程式碼片段。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業，程式設計_
 * _同義字： Markdown_
@@ -994,7 +994,7 @@ _名詞_
 
 在雲端基礎結構上的Adobe Commerce上，Pro專案會使用名為master的作用中Platform as a Service (PaaS)環境，其中包括您的生產環境資料庫和Web伺服器的復本。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位： cloud_
 
@@ -1004,7 +1004,7 @@ _名詞_
 
 在銀行或金融機構中可以接受信用卡交易的帳戶。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業_
 
@@ -1016,7 +1016,7 @@ MFTF是[功能測試架構](https://developer.adobe.com/commerce/testing/functio
 它為Commerce開發人員和軟體工程師提供測試架構，例如QA專家、PHP開發人員和系統整合商。
 開發人員和QA可以編寫測試來嘗試使用者與網頁應用程式的互動、驗證功能，並自動化回歸測試。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，程式設計_
 * _相關辭彙： cms區塊、靜態區塊、容器、配置_
@@ -1035,7 +1035,7 @@ _名詞_
 您可以停用或移除模組，而不會破壞Magento應用程式的一致性。
 一個例外情況：當模組相依於其他模組時，需要停用或移除相依模組。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _相關辭彙： php、xml、區塊_
@@ -1064,7 +1064,7 @@ OMS功能包括：
 
 深入瞭解： [封存的OMS檔案網站](https://commerce-docs.github.io/oms-documentation-archive/)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：功能，商務軟體，訂單管理_
 * _同義字：訂單管理、MOM、訂單管理系統、Magento Order Management_
@@ -1076,9 +1076,9 @@ _名詞_
 
 來源遮罩是一項安全性功能，可讓雲端基礎結構上的Adobe Commerce封鎖任何非Fastly流量，以防止DDoS攻擊，進而連線至雲端基礎結構（來源）。
 
-深入瞭解： [Fastly來源遮罩](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=zh-Hant)
+深入瞭解： [Fastly來源遮罩](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：安全性_
 * _相關辭彙： Web應用程式防火牆_
@@ -1094,9 +1094,9 @@ Page Builder是Commerce的擴充功能，可拖放預先建立的控制項以定
 商家不需要編碼體驗即可設計版面和頁面。
 為開發人員提供擴充功能支援，以擴充頁面產生器。
 
-深入瞭解： [頁面產生器使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=zh-Hant)，[頁面產生器DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+深入瞭解： [頁面產生器使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)，[頁面產生器DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，設計_
 * _同義字：管理員、管理面板、後端、管理介面、管理UI_
@@ -1108,7 +1108,7 @@ _名詞_
 
 付款閘道是第三方服務，可順暢地處理信用卡交易，無需客戶離開商家網站。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業、訂單、程式設計_
 
@@ -1121,7 +1121,7 @@ _名詞_
 一種產品選擇，以獎勵您購買其他專案。
 例如，如果客戶正在檢視相機的產品頁面，則相關產品可能包含其他類似的相機、相機機殼和三腳架。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 
@@ -1133,7 +1133,7 @@ _名詞_
 
 包含購物車和目錄規則，這些規則用於為促銷活動定價產品。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 * _相關辭彙：購物車規則，目錄規則_
@@ -1152,7 +1152,7 @@ _名詞_
 
 在階層中，在較低層級套用的設定可以覆寫某些較高層級的設定。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 
@@ -1164,7 +1164,7 @@ _名詞_
 服務合約包括資料介面（保留資料完整性）和服務介面(隱藏業務邏輯詳細資訊，不讓服務請求者（例如控制器、Web服務和其他模組）。
 Web API可以透過設定檔繫結至服務合約。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 * _相關辭彙： php， web api_
@@ -1175,7 +1175,7 @@ _名詞_
 
 當收購銀行與發行者交換資金且所得存入商家帳戶時，即會發生結算。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業_
 
@@ -1194,7 +1194,7 @@ _名詞_
 * 客戶2型錄（可能是整個型錄，有10%的折扣）
 * 客戶3目錄（主要目錄折扣為5%至60%的幾十種產品）。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 * _相關辭彙：目錄， b2b_
@@ -1206,7 +1206,7 @@ _名詞_
 出貨包含要交貨的產品，並產生已出貨訂單中產品的記錄。
 一個訂單可以關聯多個出貨。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業，訂單_
 
@@ -1216,7 +1216,7 @@ _名詞_
 
 伴隨出貨的檔案。 檔案會列出交貨包裝中的產品及其數量。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業，訂單_
 
@@ -1226,7 +1226,7 @@ _名詞_
 
 傳輸套件的公司。 常見的電信業者包括UPS、FedEx、DHL和USPS。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業，訂單_
 
@@ -1237,7 +1237,7 @@ _名詞_
 客戶已選取要購買但尚未購買的產品集。
 也指電子商務網站的區域，這些產品可在其中檢閱和結帳。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業、設計、產品、程式設計_
 * _同義字：購物車，購物籃_
@@ -1252,7 +1252,7 @@ _名詞_
 簡單產品可與群組、套件組合和可設定產品關聯使用。
 具有自訂選項的簡單產品有時稱為複合產品。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 * _相關辭彙：產品型別_
@@ -1264,7 +1264,7 @@ _名詞_
 庫存單位的縮寫。
 指派給產品的編號或代碼，用於識別產品、選項、價格和製造商。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業、定價、產品、程式設計_
 * _相關辭彙：共用目錄_
@@ -1275,7 +1275,7 @@ _名詞_
 
 具有產品或廣告的促銷頁面；通常顯示在首頁之前。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：設計_
 
@@ -1287,7 +1287,7 @@ _名詞_
 靜態區塊包含可編輯的內容，可做為產品類別的登入頁面。
 Widget可新增至靜態區塊，以提供其他功能。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _相關辭彙： cms區塊，區塊_
@@ -1298,7 +1298,7 @@ _名詞_
 
 使用者產生的內容（不是由程式碼產生），不會經常變更。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：設計_
 * _相關辭彙：動態內容_
@@ -1309,7 +1309,7 @@ _名詞_
 
 佈景主題所使用的資產(例如CSS、字型、影像和JavaScript)集合。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 
@@ -1322,7 +1322,7 @@ _名詞_
 
 每個商店可以有多個商店檢視，通常用於以不同的語言環境和語言呈現商店面。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 * _相關辭彙：商店檢視，網站_
@@ -1335,7 +1335,7 @@ _名詞_
 存放區檢視通常以不同的地區設定和語言呈現存放區。
 若要變更存放區檢視，請使用標頭中的存放區選擇器。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 * _相關辭彙：商店，網站_
@@ -1346,7 +1346,7 @@ _名詞_
 
 客戶造訪您的Commerce網站時所體驗的線上商店。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 
@@ -1358,7 +1358,7 @@ _名詞_
 
 產品稅捐類別、客戶稅捐類別與稅率的組合。 此規則會定義套用的稅捐計算。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：企業_
 
@@ -1371,7 +1371,7 @@ PHTML檔案包含HTML標籤和PHP程式碼的混合，以將動態內容插入HT
 大部分割槽塊至少有一個PHTML （範本）檔案，其中包含區塊產生的靜態HTML。
 在管理員中，電子郵件和新聞稿範本將文字、影像和變數與HTML標籤結合，以產生系統傳送的個人化內容。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 * _相關辭彙：區塊_
@@ -1386,7 +1386,7 @@ Adobe Commerce可以寄送（撰寫器）套件中的主題。
 但主題可以放置在應用程式/設計下，此應用程式/設計並非隨附在套件中。
 套件是Composer的下載單位，透過Commerce Marketplace，Commerce使用者可以下載CE或EE作為一連串套件，其中套件包含模組、主題或語言套件。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體_
 
@@ -1406,9 +1406,9 @@ UI元件系統的目標包括下列專案：
 * 使用AJAX更新元件資料
 * 介紹用於建立上述專案的新DSL
 
-深入瞭解： [UI元件指南](https://developer.adobe.com/commerce/frontend-core/ui-components/)，[頁面產生器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=zh-Hant)
+深入瞭解： [UI元件指南](https://developer.adobe.com/commerce/frontend-core/ui-components/)，[頁面產生器](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 * _相關辭彙： JavaScript、配置、元件、頁面產生器_
@@ -1422,17 +1422,17 @@ UPPER是Unified Progressive Web App Response Definition的縮寫。
 UPLOAD定義檔說明網頁伺服器如何傳遞及支援Progressive Web Application。
 
 UPWARD定義檔案使用平台無關的宣告式語言提供伺服器行為的詳細資訊。
-這允許Progressive Web Application在任何技術棧疊上以任何語言在符合UPPER的伺服器上執行，因為應用程式只關心來自UPPER伺服器的HTTP端點行為。
+這可讓Progressive Web Application在任何技術棧疊上，以任何語言在符合UPPER規範的伺服器上執行，因為應用程式只關注UPPER伺服器的HTTP端點行為。
 
 UPLOAD伺服器使用定義檔來決定應用程式Shell要求的適當程式或服務。
 它說明伺服器應如何處理請求並為其建立回應。
 
-PWA專案可以包含UPPER定義檔案，以指定其服務相依性。
+PWA專案可以包含UPLOAD定義檔案，以指定其服務相依性。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：設計，商務軟體，程式設計_
-* _同義字：PWA Studio，統一的漸進式Web應用程式回應定義_
+* _同義字： PWA Studio，統一漸進式Web應用程式回應定義_
 * _相關辭彙： pwa_
 
 ## V
@@ -1445,9 +1445,9 @@ _名詞_
 VBE經過徹底測試，並包含在每個支援的Adobe Commerce版本中。
 VBE可包含模組、主題和語言套件。
 
-深入瞭解[廠商套件擴充功能主題](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=zh-Hant)。
+深入瞭解[廠商套件擴充功能主題](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html)。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務擴充功能、廠商套件擴充功能、擴充功能、VBE_
 * _同義字：延伸， VBE_
@@ -1459,7 +1459,7 @@ _名詞_
 
 垂直縮放（縮放）是指透過增加磁碟或網路I/O、CPU或RAM，來增加單一伺服器或叢集的處理能力。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：環境_
 
@@ -1474,7 +1474,7 @@ _名詞_
 建立虛擬產品和簡單產品的程式幾乎相同。
 不過，由於虛擬產品未出貨，因此沒有「重量」欄位或選項可包含禮品卡。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，產品_
 * _相關辭彙：產品型別_
@@ -1487,7 +1487,7 @@ _名詞_
 虛擬型別只能由di.xml檔案中`<type>`專案的引數覆寫所參照，絕對不能由原始程式碼參照。
 它們不能被延伸，也不能作為類別建構函式中的相依性參考。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：程式設計_
 * _相關辭彙： php_
@@ -1502,7 +1502,7 @@ _名詞_
 您可以有多個網站，而每個網站可以有不同的網域名稱。
 網站可以設定為共用客戶資料或不共用資料。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務軟體，設計，產品_
 * _相關辭彙：商店，商店檢視_
@@ -1511,11 +1511,11 @@ _字詞屬性：_
 
 _名詞_
 
-[Widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html?lang=zh-Hant)是已準備好的程式碼片段，可用來將區塊、連結及動態內容放在商店頁面上的特定位置。
+[Widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html)是已準備好的程式碼片段，可用來將區塊、連結及動態內容放在商店頁面上的特定位置。
 您可以使用Widget建立行銷活動的登陸頁面，並在整個商店的特定位置顯示促銷內容。
 Widget也可用來為外部稽核系統、視訊聊天、投票和訂閱表單新增互動元素和動作區塊，或為標籤雲和影像滑桿提供導覽元素。
 
-_字詞屬性：_
+字詞屬性&#x200B;:_(_T)
 
 * _欄位：商務、商務軟體、設計_
 * _相關辭彙：區塊_

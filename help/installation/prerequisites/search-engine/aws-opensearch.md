@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AWS OpenSearch
 
-Adobe Commerce 2.4.5支援使用Amazon OpenSearch Service叢集。 此服務是AmazonElasticsearch服務的後續服務。 本主題說明如何設定Commerce以使用AWS OpenSearch，以及如何將資料從本機Elasticsearch或OpenSearch執行個體移轉至AWS OpenSearch叢集。
+Adobe Commerce 2.4.5支援使用Amazon OpenSearch Service叢集。 此服務是Amazon Elasticsearch服務的後續服務。 本主題說明如何設定Commerce以使用AWS OpenSearch，以及如何將資料從本機Elasticsearch或OpenSearch執行個體移轉至AWS OpenSearch叢集。
 
 ## 建立AWS OpenSearch服務網域
 
@@ -28,7 +28,7 @@ Adobe Commerce 2.4.5支援使用Amazon OpenSearch Service叢集。 此服務是A
 * 重新建立索引是一項快速操作。
 * 舊執行個體和AWS執行個體之間可能存在版本不相容問題，直接在AWS執行個體上建置可以避免這些不相容問題。
 
-大型安裝可能會考慮將其資料索引從現有執行個體移轉至AWS。 雖然這樣可以減少停機時間，但由於舊版Elasticsearch伺服器與AWS之間的版本不同，因此發生不相容問題的風險仍然很小。
+大型安裝可能會考慮將其資料索引從現有執行個體移轉至AWS。 雖然這樣可以減少停機時間，但由於舊版Elasticsearch伺服器與AWS之間的版本不同，因此仍然存在不相容問題的小風險。
 
 不需要移轉索引，因為這些可在AWS例項上輕鬆重新建立。
 不過，移轉資料索引時，請確保Elasticsearch/OpenSearch的版本相容。

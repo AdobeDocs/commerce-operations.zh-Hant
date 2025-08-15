@@ -22,12 +22,12 @@ ht-degree: 1%
 
 ## 設定記憶體
 
-為[OPcache PHP模組](https://www.php.net/manual/en/book.opcache.php)分配至少&#x200B;**2GB**&#x200B;的記憶體。 OPcache模組設定在`php.ini`檔案中。 若要配置2048 MB的記憶體，請設定`opcache.memory_consumption = 2048`。
+為&#x200B;**OPcache PHP模組**&#x200B;分配至少[2GB](https://www.php.net/manual/en/book.opcache.php)的記憶體。 OPcache模組設定在`php.ini`檔案中。 若要配置2048 MB的記憶體，請設定`opcache.memory_consumption = 2048`。
 
 ## 其他資訊
 
 * [效能最佳實務 — PHP設定](../../../performance/software.md#php-settings)
-* [設定PHP選項](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
+* [設定PHP選項](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
 * [雲端基礎結構上Adobe Commerce的資料庫最佳實務](database-on-cloud.md)
 * [Adobe Commerce中雲端基礎結構最常見的資料庫問題](../maintenance/resolve-database-performance-issues.md)
 * [索引器「依排程更新」可最佳化Adobe Commerce效能](../maintenance/indexer-configuration.md)

@@ -12,13 +12,13 @@ ht-degree: 0%
 
 ---
 
-# ACP2E-3705：設定`MAGE_INDEXER_THREADS_COUNT`時，`indexer_update_all_views` cron執行失敗
+# ACP2E-3705：設定`indexer_update_all_views`時，`MAGE_INDEXER_THREADS_COUNT` cron執行失敗
 
 >[!NOTE]
 >
 >此修補程式取代2.4.7及更高版本的[ACSD-64112](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)。
 
-ACP2E-3705修補程式修正設定`MAGE_INDEXER_THREADS_COUNT`時`indexer_update_all_views` cron執行失敗的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61時，即可使用此修補程式。 修補程式ID為ACP2E-3705。 請注意，此問題已排程在Adobe Commerce 2.4.9中修正。
+ACP2E-3705修補程式修正設定`indexer_update_all_views`時`MAGE_INDEXER_THREADS_COUNT` cron執行失敗的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61時，即可使用此修補程式。 修補程式ID為ACP2E-3705。 請注意，此問題已排程在Adobe Commerce 2.4.9中修正。
 
 ## 受影響的產品和版本
 
@@ -32,11 +32,11 @@ ACP2E-3705修補程式修正設定`MAGE_INDEXER_THREADS_COUNT`時`indexer_update
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
-當`MAGE_INDEXER_THREADS_COUNT`設定為大於&#x200B;*2*&#x200B;的值時，`indexer_update_all_views` cron執行失敗，特別影響已啟用B2B的[!UICONTROL Customer Segments]索引器。
+當`indexer_update_all_views`設定為大於`MAGE_INDEXER_THREADS_COUNT`2 *的值時，* cron執行失敗，特別影響已啟用B2B的[!UICONTROL Customer Segments]索引器。
 
 <u>要再現的步驟</u>：
 
@@ -71,7 +71,7 @@ Magento\Framework\DB\Adapter\TableNotFoundException: SQLSTATE[42S02]: Base table
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的升級和修補程式>套用修補程式。
 
 ## 相關閱讀

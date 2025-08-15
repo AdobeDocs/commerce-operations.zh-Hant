@@ -70,7 +70,7 @@ Adobe Commerce使用伺服器重寫和`.htaccess`為Apache提供目錄層級的�
 
    >[!NOTE]
    >
-   >- 如果您從舊版Apache升級，請先在`000-default.conf`中尋找`<Directory "/var/www/html">`或`<Directory "/var/www">`。
+   >- 如果您從舊版Apache升級，請先在`<Directory "/var/www/html">`中尋找`<Directory "/var/www">`或`000-default.conf`。
    >- 您必須針對要安裝Adobe Commerce軟體的目錄，變更指示詞中`AllowOverride`的值。 例如，若要安裝在網頁伺服器docroot中，請在`<Directory /var/www>`中編輯指示詞。
 
 >[!NOTE]

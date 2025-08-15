@@ -38,13 +38,13 @@ ht-degree: 0%
 
 共用組態儲存在`app/etc/config.php`中，應該是在原始檔控制中。
 
-在開發中的管理員(或雲端基礎結構&#x200B;_整合_&#x200B;上的Adobe Commerce)系統中設定共用設定，並使用[`magento app:config:dump`命令](../cli/export-configuration.md)將設定寫入`config.php`。
+在開發中的管理員(或雲端基礎結構&#x200B;_整合_&#x200B;上的Adobe Commerce)系統中設定共用設定，並使用`config.php`命令[`magento app:config:dump`將設定寫入](../cli/export-configuration.md)。
 
 ### 管理系統特定設定
 
 系統特定組態儲存在`app/etc/env.php`中，它應該&#x200B;_不_&#x200B;在原始檔控制中。
 
-在您的開發(或雲端基礎結構整合上的Adobe Commerce)系統中，於Admin中設定系統專屬設定，並使用[`magento app:config:dump`命令](../cli/export-configuration.md)將設定寫入`env.php`。
+在您的開發(或雲端基礎結構整合上的Adobe Commerce)系統中，於Admin中設定系統專屬設定，並使用`env.php`命令[`magento app:config:dump`將設定寫入](../cli/export-configuration.md)。
 
 這個命令也會將敏感設定寫入`env.php`。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 您可以透過下列任何方式管理敏感設定：
 
 - 環境變數
-- 使用[`magento config:set:sensitive`命令](../cli/set-configuration-values.md)將敏感設定儲存在生產系統上的`env.php`中
+- 使用`env.php`命令[`magento config:set:sensitive`將敏感設定儲存在生產系統上的](../cli/set-configuration-values.md)中
 
 ### 在Admin中鎖定的組態設定
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
   建議您先進行這些變更，然後再切換至生產模式。
 
-  您仍然可以使用環境變數或路徑為`general/locale/code`的`config:set` CLI命令來設定地區設定。
+  您仍然可以使用環境變數或路徑為`config:set`的`general/locale/code` CLI命令來設定地區設定。
 
 ## 安裝和移除cron
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->請謹慎使用上述方法。 刪除`generated`或`pub`資料夾中的`.htacces`檔案可能會導致問題。
+>請謹慎使用上述方法。 刪除`.htacces`或`generated`資料夾中的`pub`檔案可能會導致問題。
 
 ### 建置系統
 
@@ -178,9 +178,9 @@ ht-degree: 0%
 
 ### 變更預設地區設定
 
-此區段顯示當您使用管理員（**商店** >設定> **組態** >一般> **一般** > **地區設定選項**）變更預設權重單位時對`config.php`所做的變更。
+此區段顯示當您使用管理員（`config.php`商店&#x200B;**>設定>**&#x200B;組態&#x200B;**>一般>**&#x200B;一般&#x200B;**>**&#x200B;地區設定選項&#x200B;**）變更預設權重單位時對**&#x200B;所做的變更。
 
-在管理員中進行變更後，請執行`bin/magento app:config:dump`將值寫入`config.php`。 值會寫入`locale`下的`general`陣列，因為`config.php`中的下列程式碼片段顯示：
+在管理員中進行變更後，請執行`bin/magento app:config:dump`將值寫入`config.php`。 值會寫入`general`下的`locale`陣列，因為`config.php`中的下列程式碼片段顯示：
 
 ```php
 'general' =>

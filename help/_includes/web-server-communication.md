@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # 安全的Web伺服器通訊
 
-此主題討論使用傳輸層安全性(TLS)加密與[HTTP基本驗證](https://datatracker.ietf.org/doc/html/rfc2617)的組合，保護網頁伺服器與搜尋引擎(Elasticsearch或OpenSearch)之間通訊安全的範例。 您也可以選擇設定其他型別的驗證；我們提供該資訊的參考。
+本主題討論使用傳輸層安全性(TLS)加密與[HTTP基本驗證](https://datatracker.ietf.org/doc/html/rfc2617)的組合，保護網頁伺服器與搜尋引擎(Elasticsearch或OpenSearch)之間通訊安全的範例。 您也可以選擇設定其他型別的驗證；我們提供該資訊的參考。
 
 (舊稱Secure Sockets Layer (SSL)，經常與TLS互換使用。 在此主題中，我們稱為&#x200B;*TLS*。)
 

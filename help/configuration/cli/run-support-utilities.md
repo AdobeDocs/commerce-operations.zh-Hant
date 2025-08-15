@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Adobe Commerce支援公用程式（也稱為[資料收集器](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/support#data-collector)）可讓使用者收集有關您的系統的疑難排解資訊，供我們的支援團隊使用。
+Adobe Commerce支援公用程式（也稱為[資料收集器](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector)）可讓使用者收集有關您的系統的疑難排解資訊，供我們的支援團隊使用。
 
-Adobe Systems Commerce 使用這些備份（也稱為 _轉儲_）來分析需要訪問您的代碼的問題。 典型場景如下：
+Adobe Commerce使用這些備份（也稱為&#x200B;_傾印_）來分析需要存取您程式碼的問題。 典型的案例如下：
 
-1. 您的商務商店發生問題，請聯絡Adobe Systems商務支援。
-1. 支持人員確定他們需要查看您的代碼或資料庫才能重現問題。
-1. 將代碼備份到 `.tar.gz` 檔中。
+1. 您的Commerce商店發生問題，請聯絡Adobe Commerce支援。
+1. 支援人員會判斷需要檢視您的程式碼或資料庫才能重現問題。
+1. 將程式碼備份至`.tar.gz`檔案。
 
-   此備份_excludes您的媒體文件，以加快該過程並生成更小的文件。
+   此備份會排除您的媒體檔案，以加速處理過程，並產生更小的檔案(_E)。
 
-1. 將資料庫備份到檔 `.tar.gz` 。
+1. 您將資料庫備份至`.tar.gz`檔案。
 
    依預設，進行備份時會雜湊敏感資料。
 
@@ -34,9 +34,9 @@ Adobe Systems Commerce 使用這些備份（也稱為 _轉儲_）來分析需要
 
 公用程式可能需要幾分鐘才能完成。
 
-## 建立代碼備份
+## 建立程式碼備份
 
-此命令備份代碼並將其壓縮 `tar.gz` 為 格式。
+這個命令會備份程式碼並壓縮成`tar.gz`格式。
 
 {{tip-backup-command}}
 
@@ -46,10 +46,10 @@ Adobe Systems Commerce 使用這些備份（也稱為 _轉儲_）來分析需要
 bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--logs]
 ```
 
-哪裡：
+其中：
 
-- **`--name`** 指定轉儲檔名（可選）。 如果省略此參數，轉儲檔將帶有時間和日期戳。
-- **`-o|--output=<path>`** 是商店備份（必需）的絕對文件系統路徑。
+- **`--name`**&#x200B;指定傾印檔案名稱（選擇性）。 如果您省略此引數，傾印檔案會加上時間和日期戳記。
+- **`-o|--output=<path>`**&#x200B;是儲存備份的絕對檔案系統路徑（必要）。
 - **`-l|--logs`**&#x200B;包含記錄檔（選擇性）。
 
 例如，若要建立名為`/var/www/html/magento2/var/log/mycodebackup.tar.gz`的程式碼備份：
@@ -72,12 +72,12 @@ bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/va
 bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
-哪裡：
+其中：
 
-- **`--name`** 指定轉儲檔名（可選）。 如果省略此參數，轉儲檔將帶有時間和日期戳。
-- `-o|--output=<path>`** 是商店備份的絕對文件系統路徑（必需）。
-- **`-l|--logs`** 包括紀錄檔（選擇）。
-- **`-i|--ignore-sanitize`** 意味著數據被保留;创建備份時省略標幟以雜湊存儲在資料庫中的敏感数据（可選）。
+- **`--name`**&#x200B;指定傾印檔案名稱（選擇性）。 如果您省略此引數，傾印檔案會加上時間和日期戳記。
+- **`-o|--output=<path>`是儲存備份的絕對檔案系統路徑（必要）。
+- **`-l|--logs`**&#x200B;包含記錄檔（選擇性）。
+- **`-i|--ignore-sanitize`**&#x200B;表示資料會保留；建立備份時，請省略資料庫中儲存之雜湊敏感資料的標幟（選擇性）。
 
 敏感資料包含來自下列資料庫表格的客戶資訊：
 
@@ -104,17 +104,17 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 Utility lsof not found
 ```
 
-按顯示的順序運行以下命令，以顯示支援實用程式和資料收集器使用的應用程式的路徑：
+按照顯示的順序執行以下命令，以顯示支援公用程式和「資料收集器」所使用之應用程式的路徑：
 
-1. 更改為商務安裝目錄。
+1. 變更至Commerce安裝目錄。
 
    例如， `cd /var/www/magento2`
 
    >[!INFO]
    >
-   >這些命令僅在&#x200B;_安裝目錄中正常運行_。
+   >命令只能從您的安裝目錄&#x200B;_正確_&#x200B;執行。
 
-1. `bin/magento support:utility:paths` 建立 `<magento_root>/var/support/Paths.php`，其中列出了公用程式使用的所有應用程式的路徑。
+1. `bin/magento support:utility:paths`建立`<magento_root>/var/support/Paths.php`，其中列出公用程式使用的所有應用程式的路徑。
 1. `bin/magento support:utility:check`顯示檔案系統路徑。
 
 範例如下：

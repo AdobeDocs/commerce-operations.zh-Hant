@@ -26,7 +26,7 @@ UNIX工作排程器cron對應用程式的日常作業至關重要。 它會排�
 
 安裝後，我們建議您進行下列操作：
 
-* 請確定您的檔案擁有權和許可權已正確設定[&#128279;](../prerequisites/file-system/configure-permissions.md)
+* 請確定您的檔案擁有權和許可權已正確設定[](../prerequisites/file-system/configure-permissions.md)
 * 我們強烈建議[將預設管理員URI](../tutorials/admin-uri.md)從`admin`變更為其他專案
 * 請確定已正確設定[`X-Frame-Option` HTTP標頭](../../configuration/security/xframe-options.md)。
 * 採取[保護您的範本](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)的預防措施，以防止跨網站指令碼(XSS)
@@ -65,7 +65,7 @@ UNIX `logrotate`公用程式可讓您管理產生大量記錄檔的系統。 它
 >
 >* 入門環境沒有記錄輪換。
 >
->* 您無法在Pro整合環境中設定記錄輪換。 您必須實作自訂解決方案/指令碼，並[設定您的cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)以視需要執行指令碼。
+>* 您無法在Pro整合環境中設定記錄輪換。 您必須實作自訂解決方案/指令碼，並[設定您的cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)以視需要執行指令碼。
 
 ### 設定iptables規則以啟用各種服務通訊
 

@@ -19,12 +19,12 @@ ht-degree: 0%
 QPT v1.1.59包含下列修補程式：
 
 1. **ACSD-63454**：修正下拉式清單和多選屬性的預設值未正確儲存在資料庫中的問題。
-1. **ACSD-63574**：修正透過[!DNL Page Builder]將&#x200B;**[!UICONTROL Bundle Product]**&#x200B;清單新增至區塊導致錯誤的問題。
+1. **ACSD-63574**：修正透過&#x200B;**[!UICONTROL Bundle Product]**&#x200B;將[!DNL Page Builder]清單新增至區塊導致錯誤的問題。
 1. **ACSD-63793**：修正不同瀏覽器分頁中匯入程式互相干擾的問題。
 1. **ACSD-64113**：修正透過媒體集以相對較小的寬度上傳影像（或反之亦然）時，導致管理員發生錯誤的問題。
 1. **ACSD-64212**：修正下訂單後透過[!DNL GraphQL]建立帳戶時，訂單未與客戶帳戶關聯的問題。
 1. **ACSD-63469**：修正套用多個規則時，無法正確套用整個購物車的固定金額折扣的問題。
 1. **ACSD-63870**：修正當公司狀態在客戶作用中工作階段期間變更時，公司客戶未正確登出的問題。
-1. **ACSD-64112**：修正設定`MAGE_INDEXER_THREADS_COUNT`時`indexer_update_all_views` cron執行失敗的問題。
+1. **ACSD-64112**：修正設定`indexer_update_all_views`時`MAGE_INDEXER_THREADS_COUNT` cron執行失敗的問題。
 
 使用左側的功能表，導覽至特定的修補程式頁面。

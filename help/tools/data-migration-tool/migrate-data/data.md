@@ -1,6 +1,6 @@
 ---
 title: 移轉資料
-description: 瞭解如何使用 [!DNL Data Migration Tool]開始將資料從Magento1移轉至Magento2。
+description: 瞭解如何使用 [!DNL Data Migration Tool]開始將資料從Magento 1移轉至Magento 2。
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -35,7 +35,7 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 * `{<path to config.xml>}`是`config.xml`的絕對檔案系統路徑；此引數為必要項
 
-在此步驟中，[!DNL Data Migration Tool]會為Magento1資料庫中的移轉表格建立其他表格和觸發程式。 它們用於[增量/差異](delta.md)移轉步驟。 其他表格包含最終移轉執行後變更記錄的相關資訊。 資料庫觸發程式用於填入這些額外的表格，因此，如果正在特定表格上執行新作業（新增/修改/移除記錄），這些資料庫觸發程式會將此作業的相關資訊儲存至額外的表格。 當我們執行差異移轉程式時，[!DNL Data Migration Tool]會檢查這些表格中是否有未處理的記錄，並將必要的內容移轉到Magento2資料庫。
+在此步驟中，[!DNL Data Migration Tool]會為Magento 1資料庫中的移轉表格建立其他表格和觸發器。 它們用於[增量/差異](delta.md)移轉步驟。 其他表格包含最終移轉執行後變更記錄的相關資訊。 資料庫觸發程式用於填入這些額外的表格，因此，如果正在特定表格上執行新作業（新增/修改/移除記錄），這些資料庫觸發程式會將此作業的相關資訊儲存至額外的表格。 當我們執行差異移轉程式時，[!DNL Data Migration Tool]會檢查這些表格中是否有未處理的記錄，並將必要的內容移轉到Magento 2資料庫。
 
 每個新表格都包含：
 
@@ -85,12 +85,12 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 >[!NOTE]
 >
->[!DNL Data Migration Tool]在執行時儲存其目前的進度。 如果發生錯誤或使用者介入導致其停止執行，「工具」會以最後已知的良好狀態繼續進度。 若要強制從頭執行[!DNL Data Migration Tool]，請使用`--reset`引數。 在這種情況下，建議您還原Magento2資料庫傾印，以防止重複先前移轉的資料。
+>[!DNL Data Migration Tool]在執行時儲存其目前的進度。 如果發生錯誤或使用者介入導致其停止執行，「工具」會以最後已知的良好狀態繼續進度。 若要強制從頭執行[!DNL Data Migration Tool]，請使用`--reset`引數。 在這種情況下，建議您還原Magento 2資料庫傾印，以防止重複先前移轉的資料。
 
 
 ## 可能的一致性錯誤
 
-執行時，[!DNL Data Migration Tool]可能會報告Magento1和Magento2資料庫之間的不一致，並顯示如下的訊息：
+執行時，[!DNL Data Migration Tool]可能會報告Magento 1和Magento 2資料庫之間的不一致，並顯示如下的訊息：
 
 * `Source documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
 * `Destination documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`

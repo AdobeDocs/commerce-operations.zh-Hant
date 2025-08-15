@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL Security]索引標籤'
-description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL Security]標籤。
+description: 瞭解[!UICONTROL Security]的 [!DNL Observation for Adobe Commerce]標籤。
 exl-id: b567e4a4-534e-4151-b6f6-bf59b1bd4028
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -34,20 +34,20 @@ ht-degree: 0%
 
 ## [!UICONTROL POST activities]
 
-**[!UICONTROL POST activities]**&#x200B;框架顯示網站的`POST`活動，從[!DNL Fastly]記錄檔植入`client_ip`。 它也會顯示IP位址所存取的URL。
+**[!UICONTROL POST activities]**&#x200B;框架顯示網站的`POST`活動，從`client_ip`記錄檔植入[!DNL Fastly]。 它也會顯示IP位址所存取的URL。
 
-![POST活動](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
+![張貼活動](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-**[!UICONTROL POST activities summary table]**&#x200B;框架顯示網站的摘要`POST`活動，從[!DNL Fastly]記錄檔植入`client_ip`。 它也會顯示IP位址所存取URL的計數。 此計數適用於所選的時間範圍。
+**[!UICONTROL POST activities summary table]**&#x200B;框架顯示網站的摘要`POST`活動，從`client_ip`記錄檔植入[!DNL Fastly]。 它也會顯示IP位址所存取URL的計數。 此計數適用於所選的時間範圍。
 
-![POST — 活動 — 摘要](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
+![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-**[!UICONTROL POST activities details table]**&#x200B;框架顯示[!DNL Fastly]記錄檔中網站的`POST`活動。 它也會顯示這些要求的[!DNL Fastly]記錄檔中的所有詳細資料。 僅限於最後2000個請求。
-![POST — 活動 — 詳細資料](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
+**[!UICONTROL POST activities details table]**&#x200B;框架顯示`POST`記錄檔中網站的[!DNL Fastly]活動。 它也會顯示這些要求的[!DNL Fastly]記錄檔中的所有詳細資料。 僅限於最後2000個請求。
+![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 

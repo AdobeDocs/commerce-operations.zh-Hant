@@ -45,7 +45,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>由Adobe Sensei支援的產品Recommendations （B2C和B2B）</td>
+      <td>由Adobe Sensei （B2C和B2B）支援的產品推薦</td>
       <td></td>
       <td></td>
       <td></td>
@@ -69,7 +69,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>AmazonSales Channel</td>
+      <td>Amazon Sales Channel</td>
       <td></td>
       <td></td>
       <td>+</td>
@@ -289,7 +289,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Adobe Commerce的Adobe I/O事件</td>
+      <td>適用於Adobe Commerce的Adobe I/O Events</td>
       <td></td>
       <td></td>
       <td></td>

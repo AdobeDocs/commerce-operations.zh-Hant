@@ -18,7 +18,7 @@ ht-degree: 1%
 | Bootstrap引數 | 說明 |
 | ------------------- | -------------------------------------------- |
 | MAGE_DIRS | 指定自訂目錄和URL路徑 |
-| MAGE_PROFILER | 啟用相依性圖表和HTML設定檔 |
+| MAGE_PROFILER | 啟用相依性圖表和HTML設定檔分析 |
 
 >[!INFO]
 >
@@ -57,7 +57,7 @@ export MAGE_PROFILER=firebug
 
 ### Nginx設定
 
-檢視&#x200B;_GitHub_&#x200B;上的[Nginx範例組態]。
+檢視[GitHub]上的&#x200B;_Nginx範例組態_。
 
 ### Apache .htaccess設定
 
@@ -92,7 +92,7 @@ export MAGE_PROFILER=firebug
 
 Apache Web Server支援使用`mod_env`指令設定應用程式模式。
 
-在[Apache版本2.2]和[Apache版本2.4]中，Apache `mod_env`指示詞稍有不同。
+在`mod_env`Apache版本2.2[和]Apache版本2.4[中，Apache ]指示詞稍有不同。
 
 下列程式說明如何在Apache虛擬主機中設定應用程式模式。 這不是使用`mod_env`指示詞的唯一方法；如需詳細資訊，請參閱Apache檔案。
 

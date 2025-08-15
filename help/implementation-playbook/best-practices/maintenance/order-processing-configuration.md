@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - **[!UICONTROL Asynchronous indexing]** — 啟用此選項可防止同時下大量訂單時資料庫鎖定並減緩處理速度。
 - **[!UICONTROL Asynchronous email notifications]** — 啟用此選項可透過以指定間隔傳送結帳和訂單處理電子郵件通知，而非立即傳送，來加速結帳效能。
-- **[!UICONTROL Enable Archiving]** — 啟用此選項可改善訂單、發票、出貨及銷退折讓單的效能，並保留您的工作區中無不必要的資訊，讓您能夠專心處理目前的業務。 請參閱[啟用封存](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/order-archive)。
+- **[!UICONTROL Enable Archiving]** — 啟用此選項可改善訂單、發票、出貨及銷退折讓單的效能，並保留您的工作區中無不必要的資訊，讓您能夠專心處理目前的業務。 請參閱[啟用封存](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive)。
 
 ## 受影響的產品和版本
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 啟用非同步訂單處理的步驟取決於部署模式：
 
-- 對於雲端基礎結構上的Adobe Commerce和生產模式下的內部部署網站，請使用以下MagentoCLI命令來啟用非同步索引：
+- 對於雲端基礎結構上的Adobe Commerce和生產模式下的內部部署網站，請使用以下Magento CLI命令來啟用非同步索引：
 
   ```php
   php bin/magento config:set dev/grid/async_indexing 1
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 - 對於處於預設或生產模式的Adobe Commerce內部部署網站，請透過更新「管理員」中的「網格設定」設定來啟用非同步索引。
 
-  請參閱[啟用排定的網格更新並重新索引](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html?lang=zh-Hant#enable-scheduled-grid-updates-and-reindexing)
+  請參閱[啟用排定的網格更新並重新索引](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
   >[!WARNING]
   >

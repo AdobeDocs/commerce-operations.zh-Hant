@@ -24,7 +24,7 @@ QPT v1.1.36包含下列修補程式：
 1. **ACSD-52906**：修正屬於相同客戶區段的登入客戶若未正確設定X-Magento-Vary Cookie，會導致某些頁面快取不當的問題。
 1. **ACSD-52736**：修正包含可設定產品數量需求的[!UICONTROL Cart Price Rule]無法如預期運作的問題。
 1. **ACSD-47875**：修正管理員使用者無法針對具有庫存管理的特定商店檢視範圍，從管理員新增產品至客戶購物車的問題。
-1. **ACSD-53176**：修正具有&#x200B;*[!UICONTROL is one of]*&#x200B;條件的&#x200B;*[!UICONTROL Related Product Rule]*&#x200B;不符合產品的問題。
+1. **ACSD-53176**：修正具有&#x200B;*[!UICONTROL Related Product Rule]*&#x200B;條件的&#x200B;*[!UICONTROL is one of]*&#x200B;不符合產品的問題。
 1. **ACSD-51666**：修正錯誤： *工作階段已過期，請重新登入。在客戶嘗試登入後發生的*。
 
 使用左側的功能表，導覽至特定的修補程式頁面。

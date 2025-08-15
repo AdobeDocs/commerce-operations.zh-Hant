@@ -44,9 +44,9 @@ ht-degree: 0%
    </virtualType>
    ```
 
-   `Magento\Payment\Model\Method\MyCustomDebug`的`name`值必須是唯一的。
+   `name`的`Magento\Payment\Model\Method\MyCustomDebug`值必須是唯一的。
 
-1. 在另一具有唯一`name`的[虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)中定義處理常式：
+1. 在另一具有唯一[的](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)虛擬型別`name`中定義處理常式：
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. 在`Magento\Payment\Model\Method\Logger`物件中插入`MyCustomLogger` [虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)：
+1. 在`MyCustomLogger`物件中插入[ ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)虛擬型別`Magento\Payment\Model\Method\Logger`：
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -68,7 +68,7 @@ ht-degree: 0%
    </type>
    ```
 
-1. 虛擬類別`Magento\Payment\Model\Method\MyCustomDebug`已插入`Magento\Payment\Model\Method\Logger`類別中`$logger`屬性的`debug`處理常式。
+1. 虛擬類別`Magento\Payment\Model\Method\MyCustomDebug`已插入`debug`類別中`$logger`屬性的`Magento\Payment\Model\Method\Logger`處理常式。
 
    ```xml
    ...
@@ -117,7 +117,7 @@ ht-degree: 0%
    }
    ```
 
-1. 在模組的`di.xml`檔案中，將此類別的處理常式定義為[虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)。
+1. 在模組的[檔案中，將此類別的處理常式定義為](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)虛擬型別`di.xml`。
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -193,7 +193,7 @@ ht-degree: 0%
    }
    ```
 
-1. 類別`Vendor\ModuleName\Logger\Handler\ErrorHandler`已插入到`Vendor\ModuleName\Observer\MyObserver`中`$logger`屬性的`error`處理常式。
+1. 類別`Vendor\ModuleName\Logger\Handler\ErrorHandler`已插入到`error`中`$logger`屬性的`Vendor\ModuleName\Observer\MyObserver`處理常式。
 
    ```xml
    ...

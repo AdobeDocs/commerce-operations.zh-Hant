@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4版本新增OpenSearch支援。OpenSearch是相容的Elasticsearch復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
+>2.4.4版本新增OpenSearch支援。OpenSearch是Elasticsearch的相容復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
 
-本節討論如何將nginx設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與nginx[&#128279;](#secure-communication-with-nginx)的安全通訊中討論。
+本節討論如何將nginx設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與nginx[的](#secure-communication-with-nginx)安全通訊中討論。
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ include /etc/nginx/conf.d/*.conf;
 
 ## 與nginx的安全通訊
 
-本節討論如何使用您的安全Proxy設定[HTTP基本驗證](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html)。 同時使用TLS和HTTP Basic驗證可防止任何人攔截與Elasticsearch、OpenSearch或您的應用程式伺服器的通訊。
+本節討論如何使用您的安全Proxy設定[HTTP基本驗證](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html)。 同時使用TLS和HTTP基本驗證可防止任何人攔截與Elasticsearch、OpenSearch或您的應用程式伺服器的通訊。
 
 由於nginx原生支援HTTP基本驗證，因此我們建議將其覆寫為[摘要式驗證](https://www.nginx.com/resources/wiki/modules/auth_digest/)，在生產環境中不建議這樣做。
 
@@ -89,7 +89,7 @@ include /etc/nginx/conf.d/*.conf;
 
 * [如何在Ubuntu 14.04 (Digital Ocean)上設定Nginx的密碼驗證](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 * [使用Nginx (HowtoForge)進行基本HTTP驗證](https://www.howtoforge.com/basic-http-authentication-with-nginx)
-* [Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)的Nginx設定範例
+* [Elasticsearch的Nginx設定範例](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
 如需詳細資訊，請參閱下列章節：
 
@@ -100,7 +100,7 @@ include /etc/nginx/conf.d/*.conf;
 
 ### 建立密碼
 
-建議您使用Apache `htpasswd`命令，為具有Elasticsearch或OpenSearch存取權（在此範例中名稱為`magento_elasticsearch`）的使用者編碼密碼。
+建議您使用Apache `htpasswd`命令，為可存取Elasticsearch或OpenSearch （在此範例中名稱為`magento_elasticsearch`）的使用者編碼密碼。
 
 若要建立密碼：
 

@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-63574：透過[!DNL Page Builder]新增[!UICONTROL Bundle Product]清單至區塊導致錯誤
+# ACSD-63574：透過[!UICONTROL Bundle Product]新增[!DNL Page Builder]清單至區塊導致錯誤
 
-ACSD-63574修補程式修正透過[!DNL Page Builder]將具有`Checkbox`或`Multi Select`選項的&#x200B;**[!UICONTROL Bundle Product]**&#x200B;新增至區塊導致錯誤的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59時，即可使用此修補程式。 修補程式ID為ACSD-63574。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
+ACSD-63574修補程式修正透過&#x200B;**[!UICONTROL Bundle Product]**&#x200B;將具有`Checkbox`或`Multi Select`選項的[!DNL Page Builder]新增至區塊導致錯誤的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.59時，即可使用此修補程式。 修補程式ID為ACSD-63574。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
 ## 受影響的產品和版本
 
@@ -28,15 +28,15 @@ Adobe Commerce （所有部署方法） 2.4.4 - 2.4.4-p11
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
-使用[!DNL Page Builder]將&#x200B;**[!UICONTROL Bundle Product]**&#x200B;新增至區塊時，產品Widget預覽會中斷，並顯示錯誤訊息&#x200B;*很抱歉，產生此內容時發生錯誤*。 當套件組合產品包含`Checkbox`或`Multi Select`選項型別，且`indexer dimension mode`設定為`website_and_customer_group`時，會發生此問題。 例外狀況記錄會顯示下列錯誤：
+使用&#x200B;**[!UICONTROL Bundle Product]**&#x200B;將[!DNL Page Builder]新增至區塊時，產品Widget預覽會中斷，並顯示錯誤訊息&#x200B;*很抱歉，產生此內容時發生錯誤*。 當套件組合產品包含`Checkbox`或`Multi Select`選項型別，且`indexer dimension mode`設定為`website_and_customer_group`時，會發生此問題。 例外狀況記錄會顯示下列錯誤：
 
-    &grave;&grave;
+    ``
     report.CRITICAL： PDOException： SQLSTATE[42S02]：找不到基底資料表或檢視： 1146資料表`db_name.catalog_product_index_price_cg0_ws0`在/home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php：90
-    &grave;&grave;
+    ``
 中不存在
 <u>要再現的步驟</u>：
 
@@ -47,7 +47,7 @@ Adobe Commerce （所有部署方法） 2.4.4 - 2.4.4-p11
 
    `bin/magento indexer:set-dimensions-mode catalog_product_price website_and_customer_group`
 
-1. 使用套件組合選項型別`Checkbox`或`Multi Select`建立&#x200B;**[!UICONTROL Bundle Product]**，並將產品指派至類別。
+1. 使用套件組合選項型別&#x200B;**[!UICONTROL Bundle Product]**&#x200B;或`Checkbox`建立`Multi Select`，並將產品指派至類別。
 1. 前往&#x200B;**[!UICONTROL Content]** > **[!UICONTROL Blocks]** > **[!UICONTROL Edit Content with Page Builder]**。
 1. 選取已建立產品指派到的類別，並嘗試&#x200B;**[!UICONTROL Save]**。
 
@@ -57,15 +57,15 @@ Adobe Commerce （所有部署方法） 2.4.4 - 2.4.4-p11
 
 <u>實際結果</u>：
 
-當&#x200B;**[!UICONTROL Bundle Product]**&#x200B;選項型別為`Checkbox`或`Multi Select`，且`indexer dimension mode`設定為`website_and_customer_group`時，無法透過[!DNL Page Builder]新增產品。 它擲回錯誤： *很抱歉，產生此內容時發生錯誤*。
+當[!DNL Page Builder]選項型別為&#x200B;**[!UICONTROL Bundle Product]**&#x200B;或`Checkbox`，且`Multi Select`設定為`indexer dimension mode`時，無法透過`website_and_customer_group`新增產品。 它擲回錯誤： *很抱歉，產生此內容時發生錯誤*。
 
 
 ## 套用修補程式
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 
 ## 相關閱讀

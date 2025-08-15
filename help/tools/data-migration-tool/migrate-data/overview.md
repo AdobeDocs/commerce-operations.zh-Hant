@@ -1,6 +1,6 @@
 ---
 title: 移轉概述
-description: 瞭解如何使用 [!DNL Data Migration Tool]開始將資料從Magento1移轉至Magento2。
+description: 瞭解如何使用 [!DNL Data Migration Tool]開始將資料從Magento 1移轉至Magento 2。
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # 移轉概述
 
-開始移轉之前，請停止所有Magento1 cron工作。
+開始移轉之前，請停止所有Magento 1 cron工作。
 
 在移轉程式中，請遵循下列一般規則才能成功移轉：
 
-1. **不要**&#x200B;在「Magento1管理員」中進行變更，但訂單管理（出貨、建立商業發票及銷退折讓單）除外
+1. **不要**&#x200B;在Magento 1管理員中進行變更，但訂單管理（出貨、建立發票及銷退折讓單）除外
 1. **不**&#x200B;變更任何程式碼
-1. **不要**&#x200B;在Magento2管理員和店面中進行變更
+1. **不要**&#x200B;在Magento 2管理員和店面中進行變更
 
 >[!TIP]
 >
->允許Magento1店面中的所有操作。
+>Magento 1店面允許所有操作。
 
 ## 執行[!DNL Data Migration Tool]
 

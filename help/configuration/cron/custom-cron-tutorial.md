@@ -147,7 +147,7 @@ ht-degree: 0%
 
 `crontab.xml`檔案會設定執行自訂cron程式碼的排程。
 
-在`/var/www/html/magento2/app/code/Magento/SampleMinimal/etc`目錄中建立`crontab.xml`，如下所示：
+在`crontab.xml`目錄中建立`/var/www/html/magento2/app/code/Magento/SampleMinimal/etc`，如下所示：
 
 ```xml
 <?xml version="1.0"?>
@@ -238,7 +238,7 @@ bin/magento cache:clean
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
-   這些訊息來自`Test.php`中的`execute`方法：
+   這些訊息來自`execute`中的`Test.php`方法：
 
    ```php
    public function execute() {

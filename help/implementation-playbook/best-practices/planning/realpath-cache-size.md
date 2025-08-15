@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Realpath快取會快取參照之檔案名稱的真實檔案系統路徑，而非每次都查詢。 每次執行各種檔案功能或需要檔案並使用相對路徑時，PHP都必須尋找該檔案真正存在的位置。
 
-若要改善Commerce效能，請使用下列建議的設定來設定`php.ini`檔案中的`realpath_cache`設定：
+若要改善Commerce效能，請使用下列建議的設定來設定`realpath_cache`檔案中的`php.ini`設定：
 
 - 將快取大小設定為10 MB (`realpath cache_size=10M`)
 - 將存留時間(ttl)設定為7200秒(`realpath_cache_ttl=7200`)

@@ -90,7 +90,7 @@ sudo apt install -y rabbitmq-server
 
 ## 連線[!DNL RabbitMQ]
 
-如果您已安裝Adobe Commerce且想要將其連線至[!DNL RabbitMQ]，請在`<install_directory>/app/etc/env.php`檔案中新增`queue`區段，使其類似於以下內容：
+如果您已安裝Adobe Commerce且想要將其連線至[!DNL RabbitMQ]，請在`queue`檔案中新增`<install_directory>/app/etc/env.php`區段，使其類似於以下內容：
 
 ```php
 'queue' =>
@@ -106,7 +106,7 @@ sudo apt install -y rabbitmq-server
   ),
 ```
 
-您也可以使用`bin/magento setup:config:set`命令設定[!DNL RabbitMQ]組態值：
+您也可以使用[!DNL RabbitMQ]命令設定`bin/magento setup:config:set`組態值：
 
 ```bash
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"
@@ -116,7 +116,7 @@ bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="112
 
 ## 設定SSL
 
-若要設定對SSL的支援，請編輯`<install_directory>/app/etc/env.php`檔案中的`ssl`和`ssl_options`引數，使其類似下列：
+若要設定對SSL的支援，請編輯`ssl`檔案中的`ssl_options`和`<install_directory>/app/etc/env.php`引數，使其類似下列：
 
 ```php
 'queue' =>
