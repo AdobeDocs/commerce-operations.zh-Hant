@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 報告設定的最佳實務
 
-如果您的企業不需要報告或動態客戶區段功能，請停用[報告功能](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/reports)以改善商店效能。
+如果您的企業不需要報告或動態客戶區段功能，請停用[報告功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/general/reports)以改善商店效能。
 
 ## 受影響的產品和版本
 
@@ -32,5 +32,5 @@ ht-degree: 1%
 
 ## 其他資訊
 
-- [在Adobe Commerce中產生報告](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)
-- [客戶動態區段](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)
+- [在Adobe Commerce中產生報告](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/reporting/reports-menu)
+- [客戶動態區段](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/segments/customer-segments)

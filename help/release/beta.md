@@ -52,7 +52,7 @@ Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供
 
 這些新條件會增強搜尋查詢篩選機制，以縮小搜尋結果。 這些新條件不會影響主要搜尋查詢。 若要參與測試版，請傳送電子郵件要求給[commerce-storefront-services](mailto:commerce-storefront-services@adobe.com)。
 
-若要安裝即時搜尋測試版，請參閱[即時搜尋指南](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta)。
+若要安裝即時搜尋測試版，請參閱[即時搜尋指南](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/install#install-the-live-search-beta)。
 
 ### IBM Sterling Order Management系統整合(Private Beta)
 
@@ -74,7 +74,7 @@ Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供
 - GraphQL改良功能
 - 一般品質錯誤修正
 - 社群貢獻
-- 支援與[Adobe Commerce服務](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)相容性所需的變更
+- 支援與[Adobe Commerce服務](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)相容性所需的變更
 
 #### 命名慣例和排程
 

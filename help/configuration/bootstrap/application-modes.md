@@ -26,7 +26,7 @@ ht-degree: 0%
 
 由於唯讀檔案系統，在遠端雲端環境中變更模式有嚴格限制，Adobe Commerce支援無法覆寫該模式。 請勿嘗試透過修改`app/etc/env.php`檔案來變更模式，因為`ece-tools`封裝會根據多個組態來源覆寫檔案。
 
-雲端基礎結構上的Adobe Commerce會在部署期間以&#x200B;_維護_&#x200B;模式自動執行應用程式，讓您的網站離線，直到部署完成。 否則，應用程式會維持在&#x200B;_生產_&#x200B;模式。 請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase)中的&#x200B;_部署程式_。
+雲端基礎結構上的Adobe Commerce會在部署期間以&#x200B;_維護_&#x200B;模式自動執行應用程式，讓您的網站離線，直到部署完成。 否則，應用程式會維持在&#x200B;_生產_&#x200B;模式。 請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=zh-Hant#deploy-phase)中的&#x200B;_部署程式_。
 
 如果您使用Commerce的Cloud Docker作為開發工具，則可以在&#x200B;_開發人員_&#x200B;模式的Docker環境中部署雲端基礎結構專案，但由於額外的檔案同步處理作業，效能會變慢。 請參閱[適用於Commerce的Cloud Docker指南](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode)中的&#x200B;_部署Docker環境_。
 
@@ -78,7 +78,7 @@ _維護_&#x200B;模式會在改善、更新及設定工作期間，限制或防�
 
 您可以建立[自訂維護頁面](../../upgrade/troubleshooting/maintenance-mode-options.md)、手動啟用和停用維護模式，以及設定維護模式，以允許來自授權IP位址的訪客正常檢視存放區。 請參閱[安裝指南](../../installation/tutorials/maintenance-mode.md)中的&#x200B;_啟用和停用維護模式_。
 
-如果您在雲端基礎結構上使用Commerce，Commerce應用程式會在部署階段以維護模式執行。 部署成功完成時，Commerce應用程式會回到生產模式中執行。 請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks)中的&#x200B;_部署勾點_。
+如果您在雲端基礎結構上使用Commerce，Commerce應用程式會在部署階段以維護模式執行。 部署成功完成時，Commerce應用程式會回到生產模式中執行。 請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=zh-Hant#phase-5%3A-deployment-hooks)中的&#x200B;_部署勾點_。
 
 在維護模式中：
 

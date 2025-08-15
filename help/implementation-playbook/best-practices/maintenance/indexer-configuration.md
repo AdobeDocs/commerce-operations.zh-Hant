@@ -35,7 +35,7 @@ Adobe Commerce有兩種索引子模式： [!UICONTROL Update on Save]和[!DNL Up
 若要最大化網站效能，請遵循以下編制索引最佳實務：
 
 - 檢閱索引設定。
-- 針對大型網站、經常更新且流量很大的網站，將索引子設定為&#x200B;_[!UICONTROL Update on Schedule]_。 請參閱[索引管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)。
+- 針對大型網站、經常更新且流量很大的網站，將索引子設定為&#x200B;_[!UICONTROL Update on Schedule]_。 請參閱[索引管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)。
 - 遵循[效能最佳實務](../../../performance/configuration.md)管理索引。
 
 >[!IMPORTANT]
@@ -48,5 +48,5 @@ Adobe Commerce有兩種索引子模式： [!UICONTROL Update on Save]和[!DNL Up
 ## 其他資訊
 
 - [管理員使用者的索引管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- 使用Magento CLI的[索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- 使用Magento CLI的[索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=zh-Hant)
 - [開發人員的索引概觀](https://developer.adobe.com/commerce/php/development/components/indexing/)

@@ -63,7 +63,7 @@ ht-degree: 0%
 
 事件分析的第一個步驟是儘可能快速地收集儘可能多的事實。 收集事件相關資訊有助於判斷事件的可能原因。 Adobe Commerce提供下列工具，協助您進行事件分析。
 
-- [稽核管理員動作記錄檔](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html)。
+- [稽核管理員動作記錄檔](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=zh-Hant)。
 
   「動作記錄報表」會顯示所有已啟用記錄功能的管理員動作的詳細記錄。 每個記錄都加蓋時間戳記，並註冊使用者的IP位址和名稱。 記錄詳細資訊包括管理員使用者資料以及在動作期間完成的相關變更。
 
@@ -73,9 +73,9 @@ ht-degree: 0%
 
   使用工具中的&#x200B;**安全性**&#x200B;索引標籤，以清楚檢視潛在的安全性問題，協助找出根本原因，讓網站維持最佳效能。
 
-- 分析包含[New Relic記錄檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)的記錄檔
+- 分析包含[New Relic記錄檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=zh-Hant)的記錄檔
 
-  雲端基礎結構上的Adobe Commerce Pro專案包含[New Relic記錄檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html)服務。 此服務已預先設定為彙總來自測試和生產環境的所有記錄資料，以便在集中式記錄管理控制面板中顯示，您可在此搜尋和視覺化彙總的資料。
+  雲端基礎結構上的Adobe Commerce Pro專案包含[New Relic記錄檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=zh-Hant)服務。 此服務已預先設定為彙總來自測試和生產環境的所有記錄資料，以便在集中式記錄管理控制面板中顯示，您可在此搜尋和視覺化彙總的資料。
 
   對於其他Commerce專案，您可以設定並使用[New Relic記錄檔](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/)服務來完成下列工作：
    - 使用[New Relic查詢](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)來搜尋彙總記錄檔資料。
@@ -89,17 +89,17 @@ ht-degree: 0%
 
 ### 稽核管理員使用者帳戶
 
-- [檢閱管理員使用者存取權](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html) — 移除舊的、未使用的或可疑的帳號，並為所有管理員使用者輪換密碼。
+- [檢閱管理員使用者存取權](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=zh-Hant) — 移除舊的、未使用的或可疑的帳號，並為所有管理員使用者輪換密碼。
 
-- [檢閱管理員安全性設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) — 確認管理員安全性設定遵循安全性最佳實務。
+- [檢閱管理員安全性設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=zh-Hant) — 確認管理員安全性設定遵循安全性最佳實務。
 
-- [在雲端基礎結構專案上檢閱Adobe Commerce的使用者帳戶](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) — 移除舊的、未使用的或可疑的帳戶，並為所有雲端專案管理員使用者輪換密碼。 請確定已正確設定帳戶安全性設定。
+- [在雲端基礎結構專案上檢閱Adobe Commerce的使用者帳戶](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=zh-Hant) — 移除舊的、未使用的或可疑的帳戶，並為所有雲端專案管理員使用者輪換密碼。 請確定已正確設定帳戶安全性設定。
 
-- 在雲端基礎結構上[稽核Adobe Commerce的SSH金鑰](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) — 檢閱、刪除和輪換SSH金鑰。
+- 在雲端基礎結構上[稽核Adobe Commerce的SSH金鑰](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=zh-Hant) — 檢閱、刪除和輪換SSH金鑰。
 
 ### 稽核代碼
 
-- 從管理員中，檢閱所有範圍層級（包括[和](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html)）中的`website`HTML頁首與頁尾設定`store view`。 從指令碼和樣式表中移除任何未知的JavaScript程式碼，以及其他HTML設定。 僅保留可辨識的程式碼，例如追蹤代碼片段。
+- 從管理員中，檢閱所有範圍層級（包括[和](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=zh-Hant)）中的`website`HTML頁首與頁尾設定`store view`。 從指令碼和樣式表中移除任何未知的JavaScript程式碼，以及其他HTML設定。 僅保留可辨識的程式碼，例如追蹤代碼片段。
 
 - 將目前的生產程式碼庫與儲存在版本控制系統(VCS)中的程式碼庫進行比較。
 

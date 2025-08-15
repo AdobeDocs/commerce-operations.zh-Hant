@@ -29,7 +29,7 @@ ht-degree: 0%
 **做！**
 
 * 中止任何排定的部署，直到清除此警示為止。
-* 如果您的網站沒有回應或完全沒有回應，請立即將網站置於維護模式。 如需相關步驟，請參閱Commerce安裝指南中的[啟用或停用維護模式](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)。 請務必將您的IP新增至劐免IP位址清單，以確保您仍可存取您的網站以進行疑難排解。 如需相關步驟，請參閱[維護免除IP位址清單](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses)。
+* 如果您的網站沒有回應或完全沒有回應，請立即將網站置於維護模式。 如需相關步驟，請參閱Commerce安裝指南中的[啟用或停用維護模式](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)。 請務必將您的IP新增至劐免IP位址清單，以確保您仍可存取您的網站以進行疑難排解。 如需相關步驟，請參閱[維護免除IP位址清單](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses)。
 * 結束任何指令碼，例如匯入，在網站效能受到影響時可能導致警示。
 
 **不要！**
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 如果您收到「DML查詢嚴重」警示，請從步驟1開始。 如果您收到「DML查詢警告」警示，請從步驟2開始。
 
-1. 檢查Adobe Commerce支援票證是否存在。 如需相關步驟，請參閱我們的知識庫[追蹤您的支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case)。 支援人員可能已收到[!DNL New Relic]臨界值警示、建立票證並開始處理問題。 如果票證不存在，請建立一個。 票證應具有下列資訊：
+1. 檢查Adobe Commerce支援票證是否存在。 如需相關步驟，請參閱我們的知識庫[追蹤您的支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case)。 支援人員可能已收到[!DNL New Relic]臨界值警示、建立票證並開始處理問題。 如果票證不存在，請建立一個。 票證應具有下列資訊：
    * 連絡原因：選取&#x200B;**[!UICONTROL New Relic MariaDB alert received]**。
    * 警示的說明。
    * [[!DNL New Relic] 事件連結](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents)。 這包含在您的[Adobe Commerce](managed-alerts-for-magento-commerce.md)受管理警示中。
@@ -56,4 +56,4 @@ ht-degree: 0%
    1. 尋找程式碼最佳化或作業最佳化：
       * 程式碼最佳化：透過大量插入/更新、減少索引使用或節流程式碼，將查詢最佳化。
       * 作業最佳化：解除安裝資源密集的資料修改，以縮短流量時間。
-      * 其他最佳化：確保您使用最新版的ECE-Tools。 如需相關步驟，請參閱Commerce on Cloud指南中的[更新ece-tools版本](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。
+      * 其他最佳化：確保您使用最新版的ECE-Tools。 如需相關步驟，請參閱Commerce on Cloud指南中的[更新ece-tools版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。

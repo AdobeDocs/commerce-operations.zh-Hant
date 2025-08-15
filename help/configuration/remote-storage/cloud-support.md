@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 環境變數
 
-`REMOTE_STORAGE`變數用於雲端基礎結構專案的[部署階段](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html)。
+`REMOTE_STORAGE`變數用於雲端基礎結構專案的[部署階段](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=zh-Hant)。
 
 ### `REMOTE_STORAGE`
 
@@ -40,7 +40,7 @@ stage:
 
 ### 使用雲端CLI設定變數
 
-將`REMOTE_STORAGE`變數設為[環境層級變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html)，這樣就不會在生產、測試和整合環境之間共用檔案。 在環境層級設定變數，可讓您靈活地在選取的環境上僅使用遠端儲存，例如排除使用遠端儲存的整合環境。
+將`REMOTE_STORAGE`變數設為[環境層級變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=zh-Hant)，這樣就不會在生產、測試和整合環境之間共用檔案。 在環境層級設定變數，可讓您靈活地在選取的環境上僅使用遠端儲存，例如排除使用遠端儲存的整合環境。
 
 **若要使用Cloud CLI新增遠端儲存體變數**：
 
@@ -89,7 +89,7 @@ magento-cloud variable:create --level environment --name REMOTE_STORAGE --json t
 
 ### 使用選擇性驗證
 
-`key`和`secret`是選用專案。 當您建立變數時，可以選取`key`選項以隱藏`secret`和`sensitive`。 使用此設定時，網頁介面中不會顯示值。 請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility)中的&#x200B;_變數可見度_。
+`key`和`secret`是選用專案。 當您建立變數時，可以選取`key`選項以隱藏`secret`和`sensitive`。 使用此設定時，網頁介面中不會顯示值。 請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=zh-Hant#visibility)中的&#x200B;_變數可見度_。
 
 如果您想使用不同的驗證方法，請從JSON設定中省略`key`和`secret`。 設定替代驗證方法，並確認伺服器已獲得S3儲存貯體的授權。
 
@@ -111,7 +111,7 @@ bin/magento remote-storage:sync
 
 如果您選擇在雲端基礎結構專案上搭配Adobe Commerce使用遠端儲存解決方案，請使用[Fastly](https://docs.fastly.com/en/guides/amazon-s3)檔案中的&#x200B;_Amazon S3_&#x200B;指南，以確保Fastly影像最佳化可搭配AWS S3使用。
 
-準備您的[Fastly認證](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials)。 在Pro專案上，使用SSH連線到您的伺服器並從`/mnt/shared/fastly_tokens.txt`檔案取得Fastly認證。 測試和生產環境都有獨特的認證。 您必須取得每個環境的認證。
+準備您的[Fastly認證](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=zh-Hant#get-fastly-credentials)。 在Pro專案上，使用SSH連線到您的伺服器並從`/mnt/shared/fastly_tokens.txt`檔案取得Fastly認證。 測試和生產環境都有獨特的認證。 您必須取得每個環境的認證。
 
 請繼續設定雲端專案的遠端儲存空間，完成下列工作：
 

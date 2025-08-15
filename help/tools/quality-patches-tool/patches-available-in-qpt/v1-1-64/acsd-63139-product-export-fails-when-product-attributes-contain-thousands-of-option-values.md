@@ -28,7 +28,7 @@ ACSD-63139修補程式修正產品屬性包含數千個選項值時產品匯出�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -47,7 +47,7 @@ ACSD-63139修補程式修正產品屬性包含數千個選項值時產品匯出�
    bin/magento cron:install
    ```
 
-1. 依照[!DNL RabbitMQ]必要條件[[!DNL RabbitMQ] 中的指示設定](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/rabbitmq)。
+1. 依照[!DNL RabbitMQ]必要條件[[!DNL RabbitMQ] 中的指示設定](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/rabbitmq)。
 1. 開啟`php.ini`檔案，將記憶體限制設定為4G，然後重新啟動PHP服務。
 1. 在管理面板中，移至&#x200B;**[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**。
 1. 在&#x200B;*[!UICONTROL Export Settings]*&#x200B;區段中，將&#x200B;**[!UICONTROL Entity Type]**&#x200B;設為&#x200B;*產品*，捲動至底部並按一下&#x200B;**[!UICONTROL Continue]**。
@@ -74,7 +74,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
 
 ## 相關閱讀
 

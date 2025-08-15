@@ -32,9 +32,9 @@ ht-degree: 1%
 
 ## 啟用和設定Fastly影像最佳化
 
-在您為Adobe Commerce Cloud專案設定Fastly服務後，請參閱[Fastly影像最佳化](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization)以取得啟用和設定影像最佳化的指示。
+在您為Adobe Commerce Cloud專案設定Fastly服務後，請參閱[Fastly影像最佳化](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization)以取得啟用和設定影像最佳化的指示。
 
 ## 其他資訊
 
-- [設定Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
-- [影像最佳化不良可能會導致效能問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)
+- [設定Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
+- [影像最佳化不良可能會導致效能問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html?lang=zh-Hant)

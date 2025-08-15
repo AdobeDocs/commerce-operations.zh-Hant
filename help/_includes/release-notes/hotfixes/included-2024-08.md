@@ -9,7 +9,7 @@ ht-degree: 0%
 
 此版本包含下列Hotfix：
 
-* 解決JavaScript錯誤(導致Google Map無法在&#x200B;[!UICONTROL **PageBuilder**]&#x200B;編輯器中正確呈現)的Hotfix。 如需詳細資訊，請參閱[所有Adobe Commerce版本](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions)知識庫文章中Google地圖存取遺失的修訂修補程式。
+* 解決JavaScript錯誤(導致Google Map無法在&#x200B;[!UICONTROL **PageBuilder**]&#x200B;編輯器中正確呈現)的Hotfix。 如需詳細資訊，請參閱[所有Adobe Commerce版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions)知識庫文章中Google地圖存取遺失的修訂修補程式。
 
 <!--
 ACP2E-3156
@@ -18,7 +18,7 @@ ACP2E-3158
 ACP2E-3159
 -->
 
-* 解決與CVE-2024-34102相關的JSON Web權杖(JWT)驗證問題的Hotfix。 如需詳細資訊，請參閱Adobe Commerce-APSB24-40[知識庫文章中可用的](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102)安全性更新。
+* 解決與CVE-2024-34102相關的JSON Web權杖(JWT)驗證問題的Hotfix。 如需詳細資訊，請參閱Adobe Commerce-APSB24-40[知識庫文章中可用的](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102)安全性更新。
 
 <!--
 AC-12486

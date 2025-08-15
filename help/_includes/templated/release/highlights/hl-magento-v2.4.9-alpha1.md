@@ -59,6 +59,6 @@ _AC-13258_
 
 ### 安全性
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-71](https://helpx.adobe.com/tw/security/products/magento/apsb25-71.html)。
 
 {{$include /help/_includes/release-notes/highlights/security-2025-06.md}}

@@ -21,5 +21,5 @@ Commerce應用程式提供下列cron群組：
 - `index`，它會重新整理[索引子](../cli/manage-indexers.md)
 - `consumers`，執行訊息佇列[消費者](../cli/start-message-queues.md)
 - 這些主題僅適用於Adobe Commerce
-   - `staging`，執行[與暫存相關的](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)工作
+   - `staging`，執行[與暫存相關的](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/staging/content-staging)工作
    - `catalog_event`，執行目標與購物車規則的工作

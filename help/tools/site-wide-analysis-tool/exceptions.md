@@ -27,4 +27,4 @@ ht-degree: 0%
 
 ## 最佳實務
 
-監視[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions]頁面以檢視發生哪些例外狀況。 如需詳細資訊，請參閱我們的開發人員檔案中的[檢視及管理記錄檔](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)。
+監視[!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions]頁面以檢視發生哪些例外狀況。 如需詳細資訊，請參閱我們的開發人員檔案中的[檢視及管理記錄檔](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/test/log-locations)。

@@ -67,4 +67,4 @@ ht-degree: 3%
    - [解除安裝或重新安裝Commerce](tutorials/uninstall.md)
    - [解除安裝主題](tutorials/themes.md)
    - [升級資料庫結構描述](tutorials/database-upgrade.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)

@@ -51,7 +51,7 @@ Adobe Commerce提供組態檔，可讓您輕鬆自訂元件並建立組態型別
 範例：
 
 - 解除安裝元件： [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- 檢查元件的狀態： [`bin/magento module:status`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- 檢查元件的狀態： [`bin/magento module:status`](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
 - 啟用或停用元件： [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md)、[`bin/magento module:enable`](../../installation/tutorials/manage-modules.md)。
 
 > _config.php_

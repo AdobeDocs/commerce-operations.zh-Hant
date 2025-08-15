@@ -13,7 +13,7 @@ ht-degree: 0%
 
 許多公司都依據年度預算和藍圖開展工作。 在這些年度討論中，您必須談論您平台的健康狀況、方向以及當年的升級策略，以及它如何配合企業的整體目標與關鍵績效指標(KPI)。
 
-依照[發行排程](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，指派預算與發行時段進行升級，避免假日、公司停業與高峰時間。 透過[發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)，瞭解Adobe發行排程並瞭解每個發行包含哪些變更和改良，您就能更妥善地規劃年份。
+依照[發行排程](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)，指派預算與發行時段進行升級，避免假日、公司停業與高峰時間。 透過[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)，瞭解Adobe發行排程並瞭解每個發行包含哪些變更和改良，您就能更妥善地規劃年份。
 
 在規劃期間，您可能會想問自己：
 

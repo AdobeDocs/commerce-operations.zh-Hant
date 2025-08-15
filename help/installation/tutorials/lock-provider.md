@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Adobe Commerce預設會使用資料庫儲存鎖定。 如果您的伺服器上有多個節點，建議您使用Zookeeper做為鎖定提供者。
 
-如果您在雲端基礎結構上執行Adobe Commerce，則不需要設定鎖定提供者設定。 應用程式會在布建程式期間為Pro專案設定檔案鎖定提供者。 請參閱[雲端變數](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)。
+如果您在雲端基礎結構上執行Adobe Commerce，則不需要設定鎖定提供者設定。 應用程式會在布建程式期間為Pro專案設定檔案鎖定提供者。 請參閱[雲端變數](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)。
 
 ### 命令使用方式
 

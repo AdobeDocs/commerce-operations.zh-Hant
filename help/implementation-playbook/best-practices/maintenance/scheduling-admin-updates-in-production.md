@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ## 其他資訊
 
-- [快取的最佳實務](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [快取的最佳實務](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
 - [私人內容：使私人內容無效](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [硬體建議：快取](../../../performance/hardware.md#caches)
 - [進階設定：設定Redi](../../../performance/advanced-setup.md#set-up-redis)
