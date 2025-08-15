@@ -2,9 +2,9 @@
 title: 發行原則
 description: 瞭解不同型別的Adobe Commerce發行版本。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 0ea8c2bfffe81d27547c0330abdd75fc078542cf
+source-git-commit: f7b22089bcf88f6c881b0cbd4d7f77d795d9071b
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,10 @@ Hotfix是包含高影響力安全性或品質修正的修補程式，例如影�
 
 ## 隔離的修補程式
 
-獨立修補程式包含包含在最新僅限安全性修補程式中的獨立修正，或是即將發佈的僅限安全性修補程式，可單獨發行以加速實作。
+隔離的修補程式是獨立於完整安全性修補程式發行的安全性修正，可加快實作。 每個獨立的修補程式都會解決特定的安全性問題，並包含在最新或即將推出的完整安全性修補程式中。 有關問題的詳細資訊可在相關安全性公告中提供，該公告連結至知識庫(KB)文章，其中包含修正詳細資訊、如何套用修正程式以及其他資訊。
+
+請參閱[安全性中心](https://helpx.adobe.com/security/products/magento.html)以尋找Adobe Commerce的最新安全性更新。
 
 ## 自訂修補程式
 
-由非Adobe人員建立，用於修正問題或因各種原因修改Adobe Commerce程式碼。 自訂修補程式是透過[品質修補程式工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/usage)提供。
+由非Adobe人員建立，用於修正問題或因各種原因修改Adobe Commerce程式碼。 自訂修補程式是透過[品質修補程式工具](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)提供。
