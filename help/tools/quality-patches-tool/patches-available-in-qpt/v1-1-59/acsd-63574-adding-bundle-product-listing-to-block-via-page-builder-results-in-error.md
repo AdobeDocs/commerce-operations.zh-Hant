@@ -34,9 +34,9 @@ Adobe Commerce （所有部署方法） 2.4.4 - 2.4.4-p11
 
 使用&#x200B;**[!UICONTROL Bundle Product]**&#x200B;將[!DNL Page Builder]新增至區塊時，產品Widget預覽會中斷，並顯示錯誤訊息&#x200B;*很抱歉，產生此內容時發生錯誤*。 當套件組合產品包含`Checkbox`或`Multi Select`選項型別，且`indexer dimension mode`設定為`website_and_customer_group`時，會發生此問題。 例外狀況記錄會顯示下列錯誤：
 
-    ``
+    &grave;&grave;
     report.CRITICAL： PDOException： SQLSTATE[42S02]：找不到基底資料表或檢視： 1146資料表`db_name.catalog_product_index_price_cg0_ws0`在/home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php：90
-    ``
+    &grave;&grave;
 中不存在
 <u>要再現的步驟</u>：
 

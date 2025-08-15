@@ -26,7 +26,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >您的帳戶應有權使用&#x200B;**[!DNL Support Permissions]**&#x200B;以存取[!DNL Site-Wide Analysis Tool Dashboard]。
->>請參閱我們的使用手冊中的[共用 [!DNL Commerce] 帳戶](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html)檢視更多詳細資料。
+>&#x200B;>請參閱我們的使用手冊中的[共用 [!DNL Commerce] 帳戶](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html)檢視更多詳細資料。
 
 ## 從您商店的[!DNL Site-Wide Analysis Tool Dashboard]登入[!UICONTROL Admin Panel]
 

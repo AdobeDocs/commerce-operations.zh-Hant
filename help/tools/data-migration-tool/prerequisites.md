@@ -44,6 +44,6 @@ ht-degree: 0%
 
 將Magento 1擴充功能程式碼移轉至Magento 2。
 
-若要尋找最新的擴充功能版本，請造訪[!DNL [Commerce Marketplace]](https://marketplace.magento.com/)或連絡您的擴充功能提供者。
+若要尋找最新的擴充功能版本，請造訪[[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/)或連絡您的擴充功能提供者。
 
-您也可以使用[!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md)。
+您也可以使用[[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md)。

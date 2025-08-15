@@ -50,26 +50,26 @@ GraphQL回應中會傳回「無法個別顯示」可設定的子產品，並使�
   $search：字串
   $pageSize： Int！
   $currentPage： Int！
-) {
+) &lbrace;
   products(
     篩選器：$filter
     排序：$sort
     搜尋：$search
     pageSize： $pageSize
     currentPage： $currentPage
-  ) {
+  ) &lbrace;
     total_count
-    page_info {
+    page_info &lbrace;
       total_pages
       current_page
       page_size
-    }
-    專案{
+    &rbrace;
+    專案&lbrace;
       名稱
       sku
-    }
-  }
-}</pre>
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 變數：
 

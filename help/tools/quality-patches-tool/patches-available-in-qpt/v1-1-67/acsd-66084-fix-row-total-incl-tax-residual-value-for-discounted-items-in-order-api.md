@@ -37,7 +37,7 @@ ACSD-66084修補程式修正了在訂單API回應中將`row_total_incl_tax`以�
 <u>要再現的步驟</u>：
 
 1. 建立有價格和特價的產品。 移至「**[!UICONTROL Catalog]**」>「**[!UICONTROL Products]**」>按一下「**[!UICONTROL Add Product]**」>在「**[!UICONTROL Price]**」下將「**[!UICONTROL Special Price]**」設為$25並將「**[!UICONTROL Advanced Pricing]**」設為$16.99。
-1. 前往「**[!UICONTROL Stores]** > **[!UICONTROL Taxes]** > **[!UICONTROL Tax Zones and Rates]**」並新增20%的費率。 然後前往&#x200B;**[!UICONTROL Tax Rules]**並建立規則並指派
+1. 前往「**[!UICONTROL Stores]** > **[!UICONTROL Taxes]** > **[!UICONTROL Tax Zones and Rates]**」並新增20%的費率。 然後前往&#x200B;**[!UICONTROL Tax Rules]**&#x200B;並建立規則並指派
    **[!UICONTROL Taxable Goods]**&#x200B;作為產品稅捐類別。
 1. 建立具有100%折扣與優惠券的銷售規則。 移至&#x200B;**[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]**&#x200B;並新增包含100%折扣的規則，然後使用&#x200B;**[!UICONTROL Specific Coupon]**&#x200B;並輸入您的代碼。
 1. 移至「**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]**」>並設定稅捐設定。

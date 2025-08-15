@@ -260,7 +260,7 @@ bin/uct upgrade:check --help
 - 避免有兩個名稱相同的模組。
 - 遵循Adobe Commerce [編碼標準](https://developer.adobe.com/commerce/php/coding-standards/)。
 - Adobe Commerce 2.4 [升級指南](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf)最佳作法。
-- 針對雲端基礎結構[!DNL Upgrade Compatibility Tool]專案上的[[!DNL Site-Wide Analysis Tool]Adobe Commerce，從](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html)[執行](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}。
+- 針對雲端基礎結構[!DNL Upgrade Compatibility Tool]專案上的[[!DNL Site-Wide Analysis Tool]Adobe Commerce，從](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) [執行](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}。
 
 ## 最佳化您的結果
 

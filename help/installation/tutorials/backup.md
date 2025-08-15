@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**淘汰通知：**
->>備份功能自2.1.16、2.2.7和2.3.0起已過時。我們建議您研究其他備份技術和二進位備份工具（例如Percona XtraBackup）。
+>&#x200B;>備份功能自2.1.16、2.2.7和2.3.0起已過時。我們建議您研究其他備份技術和二進位備份工具（例如Percona XtraBackup）。
 
 ## 設定開啟檔案限制
 
