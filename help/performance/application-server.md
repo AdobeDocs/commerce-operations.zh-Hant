@@ -2,9 +2,9 @@
 title: GraphQL應用程式伺服器
 description: 請依照這些指示，在您的Adobe Commerce部署中啟用GraphQL應用程式伺服器。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 8427460cd11169ffe7dd2d4ba0cc1fdaea513702
+source-git-commit: ed46f48472a51db17e1c3ade9bfe3ab134098548
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2212'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL應用程式伺服器可讓Adobe Commerce維護Commerce GraphQL API請求中的狀態。 GraphQL Application Server （以Swoole擴充功能為基礎）會以具有工作者執行緒的處理程式方式運作，以處理要求處理。 GraphQL Application Server可保留GraphQL API請求中的啟動載入應用程式狀態，藉此增強請求處理和整體產品效能。 API要求會大幅提高效率。
 
-GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
+GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ GraphQL Application Server可維護Commerce GraphQL API請求之間的狀態，�
 
 ## 優點
 
-GraphQL應用程式伺服器可讓Adobe Commerce在連續的Commerce GraphQL API請求之間維持狀態。 跨請求共用應用程式狀態透過最小化處理開銷和最佳化請求處理來增強API請求效率。 因此，GraphQL要求回應時間最多可減少30%。
+GraphQL應用程式伺服器可讓Adobe Commerce在連續的Commerce GraphQL API請求之間維持狀態。 跨請求共用應用程式狀態透過最小化處理開銷和最佳化請求處理來增強API請求效率。 如此一來，您最多可以將GraphQL請求的回應時間減少30%。
 
 ## 系統需求
 
@@ -38,8 +38,22 @@ GraphQL應用程式伺服器可讓Adobe Commerce在連續的Commerce GraphQL API
 
 * Commerce 2.4.7+版
 * PHP 8.2或更高版本
-* 已安裝Swool PHP擴充功能v5+
 * 根據預期負載提供足夠的RAM和CPU
+* Swoole PHP擴充功能v5+ （請參閱下列專案特定需求）
+
+### 雲端專案
+
+根據預設，雲端基礎結構專案上的Adobe Commerce包含Swoole擴充功能。 您可以在[檔案的](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)屬性中`runtime`啟用`.magento.app.yaml`。 例如：
+
+```yaml
+runtime:
+    extensions:
+        - swoole
+```
+
+### 內部部署專案
+
+您必須手動[安裝並設定](#install-and-configure-swoole)內部部署專案的Swoole PHP擴充功能。
 
 ## 在雲端基礎結構上啟用和部署
 
@@ -259,7 +273,7 @@ git push
 
 >[!NOTE]
 >
->確定您的根`.magento.app.yaml`檔案中的所有自訂設定都已適當地移轉至`application-server/.magento/.magento.app.yaml`檔案。 將`application-server/.magento/.magento.app.yaml`檔案新增至專案後，除了根`.magento.app.yaml`檔案之外，您還應維護該檔案。 例如，如果您需要[設定RabbitMQ服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)或[管理Web屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property)，您也應該將相同的設定新增到`application-server/.magento/.magento.app.yaml`。
+>確定您的根`.magento.app.yaml`檔案中的所有自訂設定都已適當地移轉至`application-server/.magento/.magento.app.yaml`檔案。 將`application-server/.magento/.magento.app.yaml`檔案新增至專案後，除了根`.magento.app.yaml`檔案之外，您還應維護該檔案。 例如，如果您需要[設定RabbitMQ服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)或[管理Web屬性](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)，您也應該將相同的設定新增到`application-server/.magento/.magento.app.yaml`。
 
 ### 驗證雲端專案是否啟用
 
@@ -414,7 +428,7 @@ ps aux | grep php
 
 ### 確認正在處理GraphQL請求
 
-GraphQL Application Server將值為`X-Backend`的`graphql_server`回應標頭新增至其處理的每個要求。 若要檢查GraphQL應用程式伺服器是否已處理要求，請檢查此回應標頭。
+GraphQL Application Server將值為`X-Backend`的`graphql_server`回應標頭新增至其處理的每個要求。 若要檢查GraphQL應用程式伺服器是否已處理請求，請檢查此回應標頭。
 
 ### 確認擴充功能和自訂相容性
 
@@ -473,7 +487,7 @@ GraphQL Application Server將值為`X-Backend`的`graphql_server`回應標頭新
 
 #### GraphQlStateTest失敗和可能的補救
 
-* **無法新增、略過或篩選清單**。 如果您看到有關新增、略過或篩選清單的錯誤，請考慮是否可以向後相容的方式重構類別，以使用具有可變狀態的服務類別之工廠。
+* **無法新增、略過或篩選清單**。 如果出現此錯誤，請嘗試重構類別，以便使用工廠處理具有可變狀態的服務類別。
 
 * **類別呈現可變狀態**。 如果類別本身呈現可變狀態，請嘗試重寫您的程式碼以規避此狀態。 如果因為效能原因需要可變狀態，則實作`ResetAfterRequestInterface`並使用`_resetState()`將物件重設為初始建構狀態。
 
