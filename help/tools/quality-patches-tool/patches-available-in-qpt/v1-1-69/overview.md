@@ -4,7 +4,7 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.69中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 0dd91496c3117a424c71382e18b9689fff016ada
+source-git-commit: c701c9ff7385821b771af2d19920ead192e4410a
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -26,7 +26,7 @@ QPT v1.1.69包含下列修補程式：
 1. **ACSD-57477**：銷售規則處理會減緩購物車相關請求的效能。
 1. **ACSD-58108**：遺漏聯結資料表名稱，導致順序網格自訂模組延伸發生SQL錯誤。
 1. **ACSD-65983**：在Admin中重新設定捆綁的產品報價時發生錯誤。
-1. **[ACSD-66149](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66149-ipn-handler-returns-500-for-unsupported-types.md)**： IPN處理常式會針對不支援的型別傳回500。
+1. **ACSD-66149**： IPN處理常式會針對不支援的型別傳回500。
 1. **ACSD-66153**：由於快取不正確的配置結構，頁面傳回500。
 1. **ACSD-66302**：依商店ID （而非網站）篩選的願望清單專案。
 1. **ACSD-66311**：受限制管理員的公司格線載入緩慢。
