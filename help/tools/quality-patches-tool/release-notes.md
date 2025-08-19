@@ -3,9 +3,9 @@ title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 00153baf1c4a52d17b750db35a678b1950e00ed1
+source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
 workflow-type: tm+mt
-source-wordcount: '27482'
+source-wordcount: '28046'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,33 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.69 {#v1-1-69}
+
+* **AC-15223** (適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9) — 修正2.4.8店面中在切換存放區後，從快取中提供頁面且未反映所選存放區的問題。
+* **ACP2E-3731** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正可見度為&#x200B;**[!UICONTROL Catalog, Search]**&#x200B;的產品匯出不正確地包含多商店環境中其他商店檢視的記錄的問題。
+* **ACP2E-3767** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正無法移除套件組合產品中最後一個套件組合選項的問題。
+* **ACP2E-3964** (適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.8) — 修正在相簿中設定視訊時，無法透過REST API列出可設定產品的子產品的問題。
+* **ACP2E-3977** (適用於Adobe Commerce >=2.4.4 &lt;2.4.9) — 修正設定&#x200B;**[!UICONTROL Cap Reward Points Balance At]**&#x200B;時[!UICONTROL Rewards Points Balance Redemption Threshold]欄位不能為空白而導致驗證錯誤的問題。
+* **ACP2E-4050** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.8) — 修正當使用套件組合產品且使用子選取條件並啟用免費送貨時，購物車價格規則無法正確適用於多送貨產品的問題。
+* **ACSD-56226** (適用於Adobe Commerce >=2.4.6 &lt;2.4.7) — 修正啟用`synchronous_replication`標幟時，從節點的「讀取」查詢傳回過期資料的問題。
+* **ACSD-57477** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7) — 修正銷售規則處理導致購物車相關請求效能緩慢的問題。
+* **ACSD-58108** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.8) — 修正原始擷取表格中缺少聯結表格名稱導致順序格線中的自訂模組擴充功能SQL發生錯誤的問題。
+* **ACSD-65983** (適用於Adobe Commerce >=2.4.6-p10 &lt;2.4.9) — 修正在Admin後端重新設定套件產品報價時擲回錯誤的問題。
+* **ACSD-66149** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正IPN處理常式針對不支援或未知的IPN型別傳回&#x200B;*500*&#x200B;錯誤的問題。
+* **ACSD-66153** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正快取配置結構不正確導致頁面傳回&#x200B;*500*&#x200B;錯誤的問題。
+* **ACSD-66302** (適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9) — 修正按商店ID錯誤篩選願望清單專案，而非按網站篩選的問題。
+* **ACSD-66311** (適用於Adobe Commerce >=2.4.6-p9 &lt;2.4.9) — 修正具有受限制網站存取權的管理員使用者的「公司」格線載入緩慢的問題。
+* **ACSD-66404** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正cron工作無法清除changelog表格、在處理大量資料時導致[!DNL Galera Cluster]當機的問題。
+* **ACSD-66952** (適用於Adobe Commerce >=2.4.4 &lt;2.4.9) — 修正每次PLP或購物車造訪時清除快取的問題，這會在設定目標規則時造成效能額外負荷。
+* **ACSD-67264** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正跨裝置的套件組合和可下載產品頁面配置不一致的問題。
+* **ACSD-67347** (適用於Adobe Commerce和Magento Open Source >=2.4.5-p11 &lt;2.4.6) — 修正當使用具有特殊字元的優惠券且啟用檔案鎖定時，順序失敗的&#x200B;*無法取得鎖定*&#x200B;錯誤的問題。
+* 已取代的修補程式： **ACP2E-3841**
 
 ## v1.1.68 {#v1-1-68}
 
