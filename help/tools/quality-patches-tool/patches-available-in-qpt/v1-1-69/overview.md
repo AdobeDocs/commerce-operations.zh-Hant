@@ -4,7 +4,7 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.69中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: c701c9ff7385821b771af2d19920ead192e4410a
+source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -27,7 +27,7 @@ QPT v1.1.69包含下列修補程式：
 1. **ACSD-58108**：遺漏聯結資料表名稱，導致順序網格自訂模組延伸發生SQL錯誤。
 1. **ACSD-65983**：在Admin中重新設定捆綁的產品報價時發生錯誤。
 1. **ACSD-66149**： IPN處理常式會針對不支援的型別傳回500。
-1. **ACSD-66153**：由於快取不正確的配置結構，頁面傳回500。
+1. **ACSD-66153**：由於快取不正確的配置結構，頁面傳回500錯誤。
 1. **ACSD-66302**：依商店ID （而非網站）篩選的願望清單專案。
 1. **ACSD-66311**：受限制管理員的公司格線載入緩慢。
 1. **ACSD-66404**：由於[!DNL Galera Cluster]個交易大小限制，Cron工作無法清除changelog表格。
