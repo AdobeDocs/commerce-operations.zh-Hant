@@ -3,13 +3,14 @@ title: ACSD-66952：設定目標規則時，在每個PLP或購物車造訪時清
 description: 套用ACSD-66952修補程式以修正設定目標規則時，在每個PLP或購物車造訪中清除快取而導致不必要的效能開銷的Adobe Commerce問題。
 feature: Shopping Cart, Cache, Price Rules
 role: Admin, Developer
-source-git-commit: 1aec8de86696ffc9ecb13100e6ffa1f912b281fb
+type: Troubleshooting
+exl-id: abff5761-bcf1-4cfc-b5d9-6a7e1ca907e7
+source-git-commit: cf0f5992c7b2a51b270a4a1a81fd50305a92759c
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66952：設定目標規則時，在每個PLP或購物車造訪時清除快取
 
@@ -27,7 +28,7 @@ ACSD-66952修補程式修正了每次PLP或購物車造訪時清除快取的問�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -62,7 +63,7 @@ ACSD-66952修補程式修正了每次PLP或購物車造訪時清除快取的問�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)
 
 ## 相關閱讀
 
