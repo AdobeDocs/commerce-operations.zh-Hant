@@ -4,7 +4,7 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.68中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: fa5164f3118ec51e4562f7ae5073781307452bc4
+source-git-commit: 53768b017845d0ea8033ebd7651421877ed36a55
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 QPT v1.1.68包含下列修補程式：
 1. **ACSD-58131**：媒體集中出現0位元組影像，無法顯示或選取目錄中的所有影像。
 1. **ACSD-62146**：啟用地址搜尋且「客戶地址數限制」設為1時，選取的帳單地址會在結帳付款頁面上消失。
-1. **ACSD-62415**： Adobe Commerce後端載入類別的速度非常慢。
+1. **[ACSD-62415](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)**： Adobe Commerce後端載入類別的速度非常慢。
 1. **ACSD-65938**：即使發票建立失敗，也會傳送禮品卡電子郵件。
 1. **ACSD-66072**：設定[!UICONTROL Related Products Rule]時發生內部伺服器錯誤，因此產品詳細資料頁面上未透過GraphQL傳回相關產品。
 1. **ACSD-66082**：無法透過產品匯入更新產品的色票影像。
