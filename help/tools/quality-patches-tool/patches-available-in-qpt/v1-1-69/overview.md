@@ -4,7 +4,7 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.69中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
+source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 QPT v1.1.69包含下列修補程式：
 1. **AC-15223**： Storefront頁面會在切換存放區後顯示快取的內容。
-1. **ACP2E-3731**：具有&#x200B;**[!UICONTROL Catalog, Search]**&#x200B;可見度的產品匯出包含其他商店檢視的記錄。
+1. **ACP2E-3731**：具有&#x200B;*[!UICONTROL Catalog, Search]*&#x200B;可見度的產品匯出包含其他商店檢視的記錄。
 1. **ACP2E-3767**：儲存套件組合產品後，最後一個套件組合選項會重新出現。
 1. **ACP2E-3964**：可設定的子產品未透過REST API列出視訊。
 1. **ACP2E-3977**： [!UICONTROL Cap Reward Points Balance At]欄位不可留空。
