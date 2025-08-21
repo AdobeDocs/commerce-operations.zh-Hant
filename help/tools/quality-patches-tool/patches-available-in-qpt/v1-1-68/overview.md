@@ -4,9 +4,9 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.68中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 937acc659427b788b8af778f5ea826eacccdc70e
+source-git-commit: ba4154c109c64d3e45e6de8dc8ffd9bb9741e5b2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ QPT v1.1.68包含下列修補程式：
 1. **ACSD-66179**：取消付款型別為「Not Capture」的商業發票會導致404錯誤頁面。
 1. **ACSD-66233**：管理員無法新增產品，因為產品清單快顯視窗沒有回應。
 1. **ACSD-66506**：刪除先前指派的共用目錄產品並指派新產品時發生後端錯誤。
-1. **ACSD-66865**：儲存目錄價格規則會使索引子失效，並提供僅重新索引受影響產品的替代方式。
+1. **ACSD-66865**：儲存&#x200B;**[!UICONTROL Catalog Price Rule]**&#x200B;會使索引子失效，並提供僅重新索引受影響產品的替代方式。
 1. **ACSD-66889**：在CLI中重新索引清查時發生錯誤。
 1. **ACSD-66963**：將折扣代碼套用至具有虛擬產品的購物車時，EstimateTotal突變會傳回null的折扣。
 1. **ACSD-66965**：「請購單清單」頁面上的「列印」選項造成錯誤。
