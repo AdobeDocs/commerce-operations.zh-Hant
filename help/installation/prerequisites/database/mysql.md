@@ -18,7 +18,7 @@ Adobe _強烈_&#x200B;建議您在設定資料庫時，遵循下列標準：
 * Adobe Commerce使用[MySQL資料庫觸發程式](https://dev.mysql.com/doc/refman/8.0/en/triggers.html)來改善重新索引期間的資料庫存取。 當索引子模式設定為[排程](../../../configuration/cli/manage-indexers.md#configure-indexers)時，就會建立這些專案。 應用程式不支援資料庫中的任何自訂觸發器，因為自訂觸發器可能會造成與未來Adobe Commerce版本不相容。
 * 繼續之前，請先熟悉[這些潛在的MySQL觸發程式限制](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html)。
 * 若要增強您的資料庫安全狀態，請啟用[`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL模式，以防止儲存無效的資料值，這可能會造成不必要的資料庫互動。
-* Adobe Commerce _不_&#x200B;支援MySQL陳述式式復寫。 請確定您只使用&#x200B;_1}_&#x200B;資料列式復寫[。](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html)
+* Adobe Commerce _不_&#x200B;支援MySQL陳述式式復寫。 請確定您只使用&#x200B;_1&rbrace;_&#x200B;資料列式復寫[。](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html)
 
 >[!WARNING]
 >
