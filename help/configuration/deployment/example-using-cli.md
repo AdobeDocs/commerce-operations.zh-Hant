@@ -2,7 +2,7 @@
 title: 使用CLI命令的範例
 description: 請參閱如何使用命令列在開發系統中設定共用、系統專屬和敏感值的範例。
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -64,7 +64,7 @@ ht-degree: 0%
 1. 在欄位中輸入數字（例如，`12345`）。
 1. 在&#x200B;**存放區名稱**&#x200B;欄位中，輸入值（如`My Store`）。
 1. 按一下&#x200B;**儲存設定**。
-1. 在左側導覽列的[一般]底下，按一下[連絡人]。**&#x200B;**
+1. 在左側導覽列的[一般]底下，按一下[連絡人]。****
 1. 在右窗格中，展開&#x200B;**電子郵件選項**。
 1. 如有必要，請清除&#x200B;**傳送電子郵件給**&#x200B;欄位旁的&#x200B;**使用預設值**&#x200B;核取方塊。
 1. 在欄位中輸入電子郵件地址。
@@ -169,7 +169,7 @@ bin/magento config:sensitive:set contact/email/recipient_email --scope=website -
    >**存放區名稱**&#x200B;欄位可在網站範圍中編輯，但如果您切換至預設設定範圍，則無法編輯。 這是您在開發系統中設定選項的結果。 **VAT編號**&#x200B;的值在網站範圍中不可編輯。
 
 1. 如果您尚未這樣做，請切換到預設設定範圍。
-1. 在左側導覽列的[一般]底下，按一下[連絡人]。**&#x200B;**
+1. 在左側導覽列的[一般]底下，按一下[連絡人]。****
 
    無法編輯&#x200B;**傳送電子郵件給**&#x200B;欄位，如下圖所示。 此為敏感設定。
 
@@ -181,3 +181,5 @@ bin/magento config:sensitive:set contact/email/recipient_email --scope=website -
    **預設電子郵件網域**&#x200B;欄位的值顯示如下。 此為系統專屬設定。
 
    ![檢查生產系統中的設定](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

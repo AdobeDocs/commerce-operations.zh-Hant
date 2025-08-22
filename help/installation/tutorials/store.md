@@ -2,7 +2,7 @@
 title: 設定存放區
 description: 請依照下列步驟設定您的Adobe Commerce存放區。
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -42,3 +42,5 @@ bin/magento setup:store-config:set [--<parameter_name>=<value>, ...]
 | `--use-secure-admin` | `1`表示您使用SSL來存取管理員。 在選取此選項之前，請確定您的網頁伺服器支援SSL。<br><br>`0`表示您沒有使用SSL與管理員。 這是預設值。 | 否 |
 | `--admin-use-security-key` | `1`導致應用程式使用隨機產生的金鑰值來存取管理員和表單中的頁面。 這些金鑰值有助於防止跨網站指令碼偽造攻擊。 這是預設值。<br/><br/>`0`停用金鑰。 | 否 |
 | `--magento-init-params` | 新增至任何命令以自訂應用程式初始化引數<br/><br/>例如： `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | 否 |
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

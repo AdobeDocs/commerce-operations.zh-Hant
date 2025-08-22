@@ -2,7 +2,7 @@
 title: 複製範例資料Git存放庫
 description: 請依照下列步驟，複製Git存放庫以安裝Adobe Commerce範例資料。
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -195,3 +195,5 @@ ht-degree: 0%
 ## 完成範例資料安裝
 
 {{$include /help/_includes/sample-data-complete.md}}
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

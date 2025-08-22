@@ -1,7 +1,7 @@
 ---
-source-git-commit: ca9e04d50e69b8a51ec4a6fbcf1d35f0fb363fab
+source-git-commit: 9994f486c38df4c0dc2ff477c48f3e8f3259aa9f
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,18 @@ ht-degree: 0%
 
 ### `render`
 
-轉譯`_jekyll/templates`目錄中包含`_jekyll/_data/`資料的樣板化檔案。 結果可在`help/includes/templated`目錄中找到。
+轉譯`_jekyll/templates`目錄中包含`_jekyll/_data/`資料的樣板化檔案。 結果可在`help/includes/templated`目錄中找到。 此任務在呈現後自動維護包含關係和時間戳記。
 
 **使用狀況：**
 
 ```sh
 rake render
 ```
+
+**它的功能：**
+- 執行轉譯器指令碼以產生樣板化檔案
+- 執行`includes:maintain_all`以更新包含關係和時間戳記
+- 確保呈現後所有包含中繼資料都是最新的
 
 ### `image_optim`
 
@@ -79,11 +84,139 @@ rake whatsnew_bp since="jul 4"
 rake azure_regions
 ```
 
+### `includes:maintain_relationships`
+
+使用模式`include-relationships.yml`掃描`help`目錄中的所有Markdown檔案以尋找包含陳述式，以探索並更新`{{$include /help/_includes/filename.md}}`檔案。 此工作會自動維護主要內容檔案與其包含檔案之間的關係。
+
+**使用狀況：**
+
+```sh
+rake includes:maintain_relationships
+```
+
+**它的功能：**
+- 從`help/_includes`目錄讀取現有的包含檔案清單
+- 搜尋所有主要Markdown檔案，找出參照各檔案的檔案
+- 使用`{{$include /help/_includes/filename.md}}`模式來識別參考
+- 以探索到的關係更新`include-relationships.yml`檔案
+- 提供所做變更的摘要，並識別未參考的專案，包括
+
+### `includes:maintain_timestamps`
+
+將最新的包含檔案變更時間戳記新增至主要檔案，以維護包含時間戳記。 此工作會讀取`include-relationships.yml`檔案、檢查每個包含檔案的Git歷程記錄，以及在主要檔案結尾新增或更新時間戳記。
+
+**使用狀況：**
+
+```sh
+rake includes:maintain_timestamps
+```
+
+**它的功能：**
+- 載入包含來自`include-relationships.yml`的關係
+- 對於每個主要檔案，在其包含檔案中尋找最新的Git認可日期
+- 在主檔案結尾以時間戳記新增或更新HTML註解
+- 使用格式： `<!-- Last updated from includes: YYYY-MM-DD HH:MM:SS -->`
+- 提供詳細輸出，顯示已檢查哪些包含檔案及其時間戳記
+
+**範例輸出：**
+
+```console
+Processing installation/advanced.md...
+  Latest include change: 2024-04-16 09:42:31
+  Include files checked: help/_includes/cli-consumers.md (2022-09-12 09:38:25), help/_includes/secure-install.md (2022-09-08 11:33:05), help/_includes/sensitive-data.md (2024-04-16 09:42:31)
+  Added new timestamp
+```
+
+### `includes:maintain_all`
+
+同時依序執行`includes:maintain_relationships`和`includes:maintain_timestamps`的便利工作。 這是維護包含關係和時間戳記的建議方法。
+
+**使用狀況：**
+
+```sh
+rake includes:maintain_all
+```
+
+### `unused_includes`
+
+在`help/_includes`目錄中尋找未由任何Markdown檔案參考的包含檔案。 這有助於識別可安全移除的孤立包含檔案。
+
+**使用狀況：**
+
+```sh
+rake unused_includes
+```
+
+## 列出可用工作
+
+若要檢視所有可用的Rake工作及其說明，請使用：
+
+```sh
+rake --tasks
+```
+
+如需特定工作的詳細資訊，請使用：
+
+```sh
+rake -T [task_name]
+```
+
+## 包含管理任務
+
+所有與包含相關的任務都會在`includes`名稱空間下組織，以便擁有更好的組織：
+
+```sh
+# Discover and maintain include relationships
+rake includes:maintain_relationships
+
+# Add/update timestamps based on include file changes
+rake includes:maintain_timestamps
+
+# Do both operations in sequence (recommended)
+rake includes:maintain_all
+```
+
+## 包含關係檔案格式
+
+`include-relationships.yml`檔案追蹤主要內容檔案與其包含檔案之間的關係。 此檔案由`maintain_include_relationships` Rake工作自動維護，透過讀取現有的包含檔案並尋找參照它們的主要檔案來探索關係。
+
+**檔案結構：**
+
+```yaml
+---
+metadata:
+  last_updated: '2025-08-22 14:04:37'
+  description: 'Index of main files and their included files for automatic timestamp updates'
+  total_relationships: 57
+  auto_discovered: true
+  discovery_date: '2025-08-22 14:04:37'
+relationships:
+  configuration/deployment/example-environment-variables.md:
+    - "/help/_includes/config-save-config.md"
+    - "/help/_includes/config-update-build-system.md"
+    - "/help/_includes/config-update-prod-system.md"
+  # ... more relationships
+```
+
+**欄位：**
+- `metadata.last_updated`：上次更新的時間戳記
+- `metadata.total_relationships`：包含的主要檔案總數
+- `metadata.auto_discovered`：表示檔案是自動產生的
+- `metadata.discovery_date`：首次探索關係的日期
+- `relationships`：主要檔案對應至其包含的檔案
+
+**Include陳述式格式：**
+主要內容檔案使用以下語法來包含其他檔案：
+
+```markdown
+{{$include /help/_includes/filename.md}}
+```
+
 ## 先決條件
 
 - 已安裝Ruby和Bundler。
 - Gemfile中指定的必要gems。
-- `azure_regions`任務的Python、[PyGMT](https://www.pygmt.org/latest/install.html)和[pdf2svg](https://formulae.brew.sh/formula/pdf2svg)。
+- [任務的Python、](https://www.pygmt.org/latest/install.html)PyGMT[和](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`。
 
 ## 設定
 

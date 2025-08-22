@@ -3,7 +3,7 @@ title: 管理模組和擴充功能（開發人員）
 description: 使用命令列介面和撰寫器套件管理員來管理Adobe Commerce模組和擴充功能。
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 3%
@@ -70,3 +70,5 @@ Composer正在更新相依性並安裝模組，請稍候。
    ```bash
    composer update
    ```
+
+<!-- Last updated from includes: 2022-09-08 16:00:49 -->

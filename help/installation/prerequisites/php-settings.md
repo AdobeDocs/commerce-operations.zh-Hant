@@ -3,7 +3,7 @@ title: PHP設定
 description: 按照以下步驟安裝必要的PHP擴充功能，並為Adobe Commerce的內部部署安裝設定必要的PHP設定。
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >最新版Adobe Commerce至少需要PHP 8.1。如需所有支援的PHP版本，請參閱[系統需求](../system-requirements.md)。
 
-如需雲端組態指南，請參閱[雲端基礎結構上的Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=zh-Hant)指南中的&#x200B;_PHP設定_。
+如需雲端組態指南，請參閱[雲端基礎結構上的Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html)指南中的&#x200B;_PHP設定_。
 
 ## PHP程式控制
 
@@ -210,3 +210,5 @@ PHP OPcache設定通常位於`php.ini`或`opcache.ini`中。 位置可能取決�
 - [PHP mcrypt延伸未正確安裝](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
 - [PHP版本整備檢查問題](https://support.magento.com/hc/en-us/articles/360033546411)
 - [常見的PHP嚴重錯誤與解決方法](https://support.magento.com/hc/en-us/articles/360030568432)
+
+<!-- Last updated from includes: 2025-04-04 22:27:22 -->

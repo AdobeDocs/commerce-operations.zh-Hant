@@ -2,7 +2,7 @@
 title: MySQL准則
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝安裝並設定MySQL和MariaDB。
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Adobe _強烈_&#x200B;建議您在設定資料庫時，遵循下列標準：
 * Adobe Commerce使用[MySQL資料庫觸發程式](https://dev.mysql.com/doc/refman/8.0/en/triggers.html)來改善重新索引期間的資料庫存取。 當索引子模式設定為[排程](../../../configuration/cli/manage-indexers.md#configure-indexers)時，就會建立這些專案。 應用程式不支援資料庫中的任何自訂觸發器，因為自訂觸發器可能會造成與未來Adobe Commerce版本不相容。
 * 繼續之前，請先熟悉[這些潛在的MySQL觸發程式限制](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html)。
 * 若要增強您的資料庫安全狀態，請啟用[`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL模式，以防止儲存無效的資料值，這可能會造成不必要的資料庫互動。
-* Adobe Commerce _不_&#x200B;支援MySQL陳述式式復寫。 請確定您只使用&#x200B;_1&rbrace;_&#x200B;資料列式復寫[。](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html)
+* Adobe Commerce _不_&#x200B;支援MySQL陳述式式復寫。 請確定您只使用&#x200B;_1}_&#x200B;資料列式復寫[。](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html)
 
 >[!WARNING]
 >
@@ -200,3 +200,5 @@ Adobe Commerce已透過在`/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.
 >對於雲端基礎結構專案上的Adobe Commerce，MySQL (MariaDB)的`explicit_defaults_for_timestamp`設定預設為&#x200B;_OFF_。
 
 {{$include /help/_includes/maria-db-config.md}}
+
+<!-- Last updated from includes: 2024-02-12 09:51:27 -->

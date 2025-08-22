@@ -4,7 +4,7 @@ description: 瞭解Adobe Commerce專案開發階段的程式碼管理最佳實�
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -115,3 +115,5 @@ ht-degree: 0%
 1. **從Git開始，然後移至撰寫器**
 
    在專案開始時選擇程式碼管理方法。 從Git切換到Composer或反之，進行中的開發很麻煩，並可能導致程式碼遺失和修訂記錄遺失。
+
+<!-- Last updated from includes: 2023-08-23 15:56:59 -->

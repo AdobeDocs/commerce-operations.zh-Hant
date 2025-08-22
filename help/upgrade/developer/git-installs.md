@@ -2,7 +2,7 @@
 title: 升級Git安裝
 description: 升級您從Git存放庫複製的Adobe Commerce安裝。
 exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 0%
@@ -54,3 +54,5 @@ ht-degree: 0%
    ```bash
    bin/magento cache:clean
    ```
+
+<!-- Last updated from includes: 2022-09-08 16:00:49 -->

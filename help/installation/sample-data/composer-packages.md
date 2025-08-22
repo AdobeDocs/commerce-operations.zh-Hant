@@ -3,7 +3,7 @@ title: 下載範例資料撰寫器套件
 description: 請依照下列步驟，使用Composer PHP Package Manager安裝Adobe Commerce範例資料。
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -65,3 +65,5 @@ You must be using the interactive console to authenticate
 ## 完成範例資料安裝
 
 {{$include /help/_includes/sample-data-complete.md}}
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

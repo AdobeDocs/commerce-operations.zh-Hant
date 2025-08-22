@@ -2,7 +2,7 @@
 title: 設定鎖定提供者
 description: 請依照下列步驟，防止重複的cron工作和cron群組在您的Adobe Commerce部署中執行。
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Adobe Commerce預設會使用資料庫儲存鎖定。 如果您的伺服器上有多個節點，建議您使用Zookeeper做為鎖定提供者。
 
-如果您在雲端基礎結構上執行Adobe Commerce，則不需要設定鎖定提供者設定。 應用程式會在布建程式期間為Pro專案設定檔案鎖定提供者。 請參閱[雲端變數](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)。
+如果您在雲端基礎結構上執行Adobe Commerce，則不需要設定鎖定提供者設定。 應用程式會在布建程式期間為Pro專案設定檔案鎖定提供者。 請參閱[雲端變數](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)。
 
 ### 命令使用方式
 
@@ -43,3 +43,5 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 | `--lock-zookeeper-host` | 使用`zookeeper`鎖定提供者時，要連線至Zookeeper叢集的主機與連線埠。<br><br>例如： `127.0.0.1:2181` | 是，如果您設定`--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | Zookeeper儲存鎖定的路徑。<br><br>預設路徑為： `/magento/locks` | 否 |
 | `--lock-file-path` | 儲存檔案鎖定的路徑。 | 是，如果您設定`--lock-provider=file` |
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

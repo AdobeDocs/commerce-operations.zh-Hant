@@ -3,7 +3,7 @@ title: 為您的搜尋引擎設定Apache
 description: 請依照下列步驟，使用Apache Web Server設定搜尋引擎，以供Adobe Commerce的內部部署安裝。
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 0%
@@ -210,3 +210,5 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 #### 驗證
 
 {{$include /help/_includes/verify-secure-communication.md}}
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

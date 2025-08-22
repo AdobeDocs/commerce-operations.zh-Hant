@@ -2,7 +2,7 @@
 title: 安裝Adobe Commerce
 description: 請依照下列步驟，在您擁有的基礎設施上安裝Adobe Commerce。
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '2093'
 ht-degree: 0%
@@ -306,3 +306,5 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 >[!TIP]
 >
 >如果您有一個使用者帳戶可存取應用程式伺服器，請參閱[設定umask](../next-steps/set-umask.md)。 此類設定是共用託管的典型設定。
+
+<!-- Last updated from includes: 2024-04-16 09:42:31 -->
