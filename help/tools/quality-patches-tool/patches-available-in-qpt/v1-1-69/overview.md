@@ -4,9 +4,9 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.69中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
+source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,6 @@ QPT v1.1.69包含下列修補程式：
 1. **ACSD-66404**：由於[!DNL Galera Cluster]個交易大小限制，Cron工作無法清除changelog表格。
 1. **ACSD-66952**：設定目標規則時，每次PLP或購物車造訪時都會清除快取。
 1. **ACSD-67264**：套件組合和可下載的產品頁面配置在裝置間不一致。
-1. **ACSD-67347**：使用特殊字元抵用券和檔案鎖定時，排序失敗並發生鎖定錯誤。
+1. **ACSD-67347**：訂單失敗，因為使用優惠券代碼時無法取得鎖定。
 
 使用左側的功能表，導覽至特定的修補程式頁面。
