@@ -4,9 +4,9 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.68中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: f04931fb8223f404bbdab8371cc1e4952948f1c1
+source-git-commit: 674aa68a0f7ecf30481a6d4f33b119d295c51a6b
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,9 @@ QPT v1.1.68包含下列修補程式：
 1. **ACSD-66506**：刪除先前指派的共用目錄產品並指派新產品時發生後端錯誤。
 1. **ACSD-66865**：儲存&#x200B;**[!UICONTROL Catalog Price Rule]**&#x200B;會使索引子失效，並提供僅重新索引受影響產品的替代方式。
 1. **ACSD-66889**：在CLI中重新索引清查時發生錯誤。
+1. **ACSD-66963**： `estimateTotals`突變傳回null的虛擬產品折扣。
+1. **ACSD-66965**：「請購單清單」頁面上的「列印」選項造成錯誤。
+1. **ACSD-67039**：未儲存客戶記錄，因為rp_token系統屬性已驗證。
 1. **ACSD-66963**：將折扣代碼套用至具有虛擬產品的購物車時，EstimateTotal突變會傳回null的折扣。
 1. **ACSD-66965**： **[!UICONTROL Print]**&#x200B;頁面上的&#x200B;**[!UICONTROL Requisition List]**&#x200B;選項造成錯誤。
 1. **ACSD-67039**：由於`rp_token`系統屬性的驗證，未儲存客戶記錄。
