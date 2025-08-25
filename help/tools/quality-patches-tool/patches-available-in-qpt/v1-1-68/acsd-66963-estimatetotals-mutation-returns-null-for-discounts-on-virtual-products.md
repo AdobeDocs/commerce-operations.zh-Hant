@@ -82,31 +82,31 @@ ACSD-66963修補程式修正了當折扣代碼套用至僅包含虛擬產品的�
 僅包含虛擬產品的購物車折扣資訊。
 
     &quot;
-    {
-    &quot;資料&quot;： {
-    &quot;estimateTotals&quot;： {
-    &quot;cart&quot;： {
-    &quot;prices&quot;： {
-    &quot;discounts&quot;： [
-    {
-    &quot;amount&quot;： {
+    &lbrace;
+    &quot;資料&quot;： &lbrace;
+    &quot;estimateTotals&quot;： &lbrace;
+    &quot;cart&quot;： &lbrace;
+    &quot;prices&quot;： &lbrace;
+    &quot;discounts&quot;： &lbrack;
+    &lbrace;
+    &quot;amount&quot;： &lbrace;
     &quot;value&quot;： 100.5，
     &quot;currency&quot;： &quot;USD&quot;
-    }，
+    &rbrace;，
     &quot;label&quot;： &quot;第二個測試折扣代碼&quot;，
-    &quot;coupon&quot;： {
+    &quot;coupon&quot;： &lbrace;
     &quot;code&quot;： &quot;z3r0c00l&quot;
-    }，
+    &rbrace;，
     &quot;applied_to&quot;： &quot;ITEM&quot;，
     &quot;type&quot;： null
-    }
-    ]
-    }
-    }
-    }
-    }，
+    &rbrace;
+    &rbrack;
+    &rbrace;
+    &rbrace;
+    &rbrace;
+    &rbrace;，
     &quot;extensions&quot;：{}
-    }
+    &rbrace;
     &quot;&#39;
 
 <u>實際結果</u>：
@@ -114,18 +114,18 @@ ACSD-66963修補程式修正了當折扣代碼套用至僅包含虛擬產品的�
 僅含虛擬產品的購物車折扣資訊傳回為&#x200B;*null*。
 
     &quot;&#39;
-    {
-    &quot;資料&quot;： {
-    &quot;estimateTotals&quot;： {
-    &quot;cart&quot;： {
-    &quot;prices&quot;： {
+    &lbrace;
+    &quot;資料&quot;： &lbrace;
+    &quot;estimateTotals&quot;： &lbrace;
+    &quot;cart&quot;： &lbrace;
+    &quot;prices&quot;： &lbrace;
     &quot;discounts&quot;： null
-    }
-    }
-    }
-    }，
+    &rbrace;
+    &rbrace;
+    &rbrace;
+    &rbrace;，
     &quot;extensions&quot;： {}
-    }
+    &rbrace;
     &quot;&#39;
 
 ## 套用修補程式
