@@ -4,13 +4,13 @@ description: 套用ACSD-66311修補程式，修正Adobe Commerce網站存取受�
 role: Admin, Developer
 feature: B2B
 type: Troubleshooting
-source-git-commit: 841e660136354800dd9758d8c10e86c966be3a1e
+exl-id: e470078b-dd10-4b0b-a489-bc88f025fded
+source-git-commit: 3337907b1893260d6cb18b1c4fbf45dfa1f3d6d5
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '405'
 ht-degree: 2%
 
 ---
-
 
 # ACSD-66311：受限制管理員使用者的公司格線載入緩慢
 
@@ -28,7 +28,7 @@ ACSD-66311修補程式修正具有受限制網站存取權的管理員使用者�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -54,7 +54,6 @@ ACSD-66311修補程式修正具有受限制網站存取權的管理員使用者�
       | 2 | 1,500 |
       | 3 | 500 |
 
-
    1. 執行以下查詢以驗證分配：
 
       ```
@@ -76,14 +75,13 @@ ACSD-66311修補程式修正具有受限制網站存取權的管理員使用者�
       ```
             SELECT customer_count, COUNT(*) AS number_of_companies
             FROM (
-      
-            選取company_id， COUNT(customer_id) AS customer_count
-            從company_advanced_customer_entity
-            依company_id分組
-)作為子查詢
-依customer_count分組
-ORDER BY customer_count；
-```
+              SELECT company_id, COUNT(customer_id) AS customer_count
+              FROM company_advanced_customer_entity
+              GROUP BY company_id
+            ) AS subquery
+            GROUP BY customer_count
+            ORDER BY customer_count; 
+      ```
 
 1. 重新索引所有資料以產生&#x200B;**customer_grid_flat**&#x200B;中的專案。
 1. 以&#x200B;**管理員範圍**&#x200B;登入。
@@ -102,7 +100,7 @@ ORDER BY customer_count；
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 
