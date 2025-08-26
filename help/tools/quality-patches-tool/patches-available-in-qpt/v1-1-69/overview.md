@@ -4,9 +4,9 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.69中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
+source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ QPT v1.1.69包含下列修補程式：
 1. **ACP2E-3731**：具有&#x200B;*[!UICONTROL Catalog, Search]*&#x200B;可見度的產品匯出包含其他商店檢視的記錄。
 1. **ACP2E-3767**：儲存套件組合產品後，最後一個套件組合選項會重新出現。
 1. **ACP2E-3964**：可設定的子產品未透過REST API列出視訊。
+1. **ACP2E-3977**： **[!UICONTROL Cap Reward Points Balance At]**&#x200B;不能留空。
+1. **ACP2E-4050**： **[!UICONTROL Free Shipping]**&#x200B;未套用多位址簽出。
 1. **ACP2E-3977**： [!UICONTROL Cap Reward Points Balance At]欄位不可留空。
 1. **ACP2E-4050**：套裝產品和免費送貨的多重送貨購物車價格規則失敗。
 1. **ACSD-56226**：讀取查詢傳回啟用`synchronous_replication`的過期資料。
