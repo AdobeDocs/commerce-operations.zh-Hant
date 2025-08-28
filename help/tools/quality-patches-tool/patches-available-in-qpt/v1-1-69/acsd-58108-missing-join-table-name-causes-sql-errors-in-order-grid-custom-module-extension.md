@@ -36,12 +36,12 @@ ACSD-58108修補程式修正了順序格線自訂模組擴充功能中遺失聯�
 
 <u>要再現的步驟</u>：
 
-01. 安裝2.4開發執行個體。
-02. 建立新訂單。
-03. 安裝具有SQL擴充功能的自訂模組。
-04. 導覽至&#x200B;**[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**。
-05. 套用&#x200B;**[!UICONTROL Purchase Date]**&#x200B;篩選器並等待結果。
-06. 套用&#x200B;**[!UICONTROL Product SKU]**&#x200B;篩選器。
+&#x200B;01. 安裝2.4開發執行個體。
+&#x200B;02. 建立新訂單。
+&#x200B;03. 安裝具有SQL擴充功能的自訂模組。
+&#x200B;04. 導覽至&#x200B;**[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**。
+&#x200B;05. 套用&#x200B;**[!UICONTROL Purchase Date]**&#x200B;篩選器並等待結果。
+&#x200B;06. 套用&#x200B;**[!UICONTROL Product SKU]**&#x200B;篩選器。
 
 <u>預期結果</u>：
 
