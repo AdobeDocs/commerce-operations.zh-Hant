@@ -3,9 +3,9 @@ title: 使用Valkey作為預設快取
 description: 瞭解如何設定Valkey為Adobe Commerce的預設快取。
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: bc0274074c0254f649af2f9e2b288017ac82ce9b
+source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,14 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 
 - `--cache-backend-valkey-<parameter>=<value>`是設定預設快取的機碼值組清單：
 
+>[!NOTE]
+>
+>從&#x200B;**Adobe Commerce 2.4.9-alpha2**&#x200B;開始，**Valkey**&#x200B;已因授權變更正式取代CLI工具中的Redis。 Valkey是Redis的分支，可維護幾乎相同的功能。 對於&#x200B;**版本2.4.8和更早版本**，用於設定Valkey的CLI命令與Redis的命令相同，可確保順暢的回溯相容性，並簡化移轉或雙環境支援。 下列範例顯示Valkey特定命令。
+
+```bash
+bin/magento setup:config:set --cache-backend=redis --cache-backend-valkey-<parameter>=<value>...
+```
+
 | 命令列引數 | 值 | 含義 | 預設值 |
 |---------------------------------| --------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `cache-backend-valkey-server` | 伺服器 | 完整的主機名稱、IP位址或UNIX通訊端的絕對路徑。 預設值`127.0.0.1`表示Valkey已安裝在Commerce伺服器上。 | `127.0.0.1` |
@@ -42,6 +50,14 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 
 ```bash
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-server=127.0.0.1 --cache-backend-valkey-db=0
+```
+
+>[!NOTE]
+>
+>從&#x200B;**Adobe Commerce 2.4.9-alpha2**&#x200B;開始，**Valkey**&#x200B;已因授權變更正式取代CLI工具中的Redis。 Valkey是Redis的分支，可維護幾乎相同的功能。 對於&#x200B;**版本2.4.8和更早版本**，用於設定Valkey的CLI命令與Redis的命令相同，可確保順暢的回溯相容性，並簡化移轉或雙環境支援。 下列範例顯示Valkey特定命令。
+
+```bash
+bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
 ```
 
 ## 設定頁面快取
@@ -58,6 +74,14 @@ bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-<parameter>
 
 - `--page-cache-valkey-<parameter>=<value>`是設定頁面快取的機碼和值組清單：
 
+>[!NOTE]
+>
+>從&#x200B;**Adobe Commerce 2.4.9-alpha2**&#x200B;開始，**Valkey**&#x200B;已因授權變更正式取代CLI工具中的Redis。 Valkey是Redis的分支，可維護幾乎相同的功能。 對於&#x200B;**版本2.4.8和更早版本**，用於設定Valkey的CLI命令與Redis的命令相同，可確保順暢的回溯相容性，並簡化移轉或雙環境支援。 下列範例顯示Valkey特定命令。
+
+```bash
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
+```
+
 | 命令列引數 | 值 | 含義 | 預設值 |
 |------------------------------| --------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `page-cache-valkey-server` | 伺服器 | 完整的主機名稱、IP位址或UNIX通訊端的絕對路徑。 預設值`127.0.0.1`表示Valkey已安裝在Commerce伺服器上。 | `127.0.0.1` |
@@ -71,6 +95,14 @@ bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-<parameter>
 
 ```bash
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.0.0.1 --page-cache-valkey-db=1
+```
+
+>[!NOTE]
+>
+>從&#x200B;**Adobe Commerce 2.4.9-alpha2**&#x200B;開始，**Valkey**&#x200B;已因授權變更正式取代CLI工具中的Redis。 Valkey是Redis的分支，可維護幾乎相同的功能。 對於&#x200B;**版本2.4.8和更早版本**，用於設定Valkey的CLI命令與Redis的命令相同，可確保順暢的回溯相容性，並簡化移轉或雙環境支援。 下列範例顯示Valkey特定命令。
+
+```bash
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-valkey-db=1
 ```
 
 ## 結果
