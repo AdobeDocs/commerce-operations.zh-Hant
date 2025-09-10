@@ -2,9 +2,9 @@
 title: 套用修補程式
 description: 瞭解將修補程式套用至Adobe Commerce專案的方法。
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 您可以使用下列任一方法來套用修補程式：
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [命令列](../patches/apply.md#command-line)
 - [作曲者](../patches/apply.md#composer)
 
@@ -24,9 +24,7 @@ ht-degree: 0%
 
 ## 作曲者
 
->[!IMPORTANT]
->
->若要套用正式品質修補程式，請使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}。 在部署任何自訂修補程式之前，請務必執行完整的測試。
+{{custom-patches-disclaimer}}
 
 若要使用Composer套用自訂修補程式：
 
