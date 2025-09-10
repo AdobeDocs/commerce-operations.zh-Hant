@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7f23a1b123d2ca2e1d116eb66344a67cfe45e409
+source-git-commit: 21a4ec57b49f896cffefbec8db4ce97c161315a0
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '850'
 ht-degree: 3%
 
 ---
@@ -43,13 +43,13 @@ ht-degree: 3%
 
 ## 關於您對Adobe內容的貢獻
 
-請參閱[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+請參閱[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 貢獻方式取決於您的身分和您要貢獻的變更型別：
 
 ### 微幅變更
 
-如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 您在本存放庫為檔案和程式碼範例提交的小幅更正或釐清均包含在Adobe使用條款中。
 
@@ -67,7 +67,7 @@ ht-degree: 3%
 
 社群投稿人可以使用GitHub UI進行基本編輯或建立存放庫復本，以做出重大貢獻。
 
-如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 如何使用Markdown將主題格式化
 
@@ -86,8 +86,8 @@ ht-degree: 3%
 樣板化內容的範例包括但不限於：
 
 - [CLI工具參考](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [產品可用性表格](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=zh-Hant)
-- [系統需求表](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)
+- [產品可用性表格](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+- [系統需求表](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### 產生樣板化內容
 
@@ -96,7 +96,7 @@ ht-degree: 3%
 >**附註：**
 >
 >- 產生樣板化內容需要在終端機中的命令列上工作。
->- 您必須安裝Ruby才能執行轉譯指令碼。 如需所需版本，請參閱[_jekyll/.ruby-version] (_jekyll/.ruby-version)。
+>- 您必須安裝Ruby才能執行轉譯指令碼。 如需所需版本，請參閱[_jekyll/.ruby-version](_jekyll/.ruby-version)。
 
 如需範本化內容的檔案結構說明，請參閱下列內容：
 
@@ -109,8 +109,8 @@ ht-degree: 3%
 
 1. 在文字編輯器中，開啟`/jekyll/_data`目錄中的資料檔案。 例如：
 
-   - [產品可用性表格](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=zh-Hant)： `/jekyll/_data/product-availability.yml`
-   - [系統需求表格](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)： `/jekyll/_data/system-requirements.yml`
+   - [產品可用性表格](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)： `/jekyll/_data/product-availability.yml`
+   - [系統需求表格](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)： `/jekyll/_data/system-requirements.yml`
 
 1. 使用現有的YAML結構來建立專案。
 
@@ -131,10 +131,10 @@ ht-degree: 3%
 1. 產生樣板化內容並將輸出寫入`help/_includes/templated`目錄。
 
    ```bash
-   rake render
+   bundle exec rake render
    ```
 
-   >**注意：**&#x200B;您必須從`_jekyll`目錄執行指令碼。 如果這是您第一次執行指令碼，您必須先使用`bundle install`命令安裝Ruby相依性。
+   >**注意：**&#x200B;您必須從`_jekyll`目錄執行指令碼。 如果這是您第一次執行指令碼，您必須先使用`bundle install`命令安裝Ruby相依性。 Rake工作由`adobe-comdox-exl-rake-tasks` gem提供，以便在整個Adobe Commerce檔案存放庫中提供更好的可維護性。
 
 1. 導覽回`root`目錄。
 
@@ -164,3 +164,12 @@ ht-degree: 3%
    ```
 
 請參閱Jekyll檔案以取得有關[資料檔](https://jekyllrb.com/docs/datafiles)、[Liquid濾鏡](https://jekyllrb.com/docs/liquid/filters/)和其他功能的詳細資訊。
+
+## 可用的Rake任務
+
+此存放庫使用`adobe-comdox-exl-rake-tasks` gem提供的Rake工作。 若要檢視所有可用的工作，請執行：
+
+```bash
+cd _jekyll
+bundle exec rake --tasks
+```
