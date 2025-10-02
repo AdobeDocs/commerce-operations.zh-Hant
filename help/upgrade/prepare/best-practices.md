@@ -3,7 +3,7 @@ title: 最佳實務
 description: 使用Adobe建議的最佳實務來管理您Adobe Commerce專案的升級程式。
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -57,11 +57,11 @@ ht-degree: 0%
 
 隨著我們不斷擴充Adobe Commerce的功能，請務必在最新可用版本上進行開發，並為您的專案計畫定義升級策略。 如此一來，您就能夠確保安全、符合法規，並掌握最新的增強功能，讓您能更快速地增加銷售量、更有效地營運，並在現在和未來保持競爭優勢。
 
-為了協助您規劃並編列升級預算，您應該監視我們的[發行排程](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)。 提前在團隊的待辦專案中規劃升級任務。 目標是使用GA完成這項工作。
+為了協助您規劃並編列升級預算，您應該監視我們的[發行排程](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)。 提前在團隊的待辦專案中規劃升級任務。 目標是使用GA完成這項工作。
 
 - 使用搶鮮版來瞭解每個新版本。 搶鮮版是「一般可用性」程式碼，可供Adobe Commerce商家和所有合作夥伴在正式可用性兩週前使用。 如果您有多個商店，請使用基礎商店中的發行前，並確認您的自訂模組和主題與其相容。
 
-- 檢閱Adobe Commerce的[升級計畫檢查清單](https://support.magento.com/hc/en-us/articles/360057968951)，協助您規劃升級。
+- 檢閱Adobe Commerce的[升級計畫檢查清單](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist)，協助您規劃升級。
 
 - 在年初規劃升級。 您必須預訂預算和資源，才能完成每次升級。 請記住，不同專案的升級工作量可能大不相同。 儘可能利用您的經驗和知識來制定正確的計畫。
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 評估升級所需完成的工作：
 
-- 請檢閱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)以瞭解新版本的範圍與影響。
+- 請檢閱[發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)以瞭解新版本的範圍與影響。
 
 - 使用[[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md)來識別在嘗試升級至較新版本之前，必須在自訂程式碼中修正的潛在問題。
 
