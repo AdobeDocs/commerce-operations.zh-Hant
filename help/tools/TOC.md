@@ -833,7 +833,7 @@ ht-degree: 0%
          - [ACSD-66049：非英文店面會因為ICU的資料庫版本而顯示不正確的定價](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66049-non-english-storefronts-display-incorrect-pricing-due-to-the-icu-library-version.md)
          - [ACSD-66441：階層式導覽在多儲存設定中顯示不正確的屬性選項](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66441-layered-navigation-displays-incorrect-attribute-in-multi-store-setup.md)
          - [AC-14985：使用TLS傳送SMTP電子郵件時發生錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14985-error-when-sending-smtp-emails-using-tls.md)
-         - [ACSD-66434：公司[!UICONTROL Customer ID]查詢中缺少 [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
+         - [ACSD-66434：公司[!UICONTROL Customer ID]查詢中缺少 [!DNL GraphQL] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
       - v1.1.68 {#v1-1-68}
          - [ACSD-66072：由於[!UICONTROL Related Products Rule]組態期間發生內部伺服器錯誤，GraphQL無法傳回產品詳細資料頁面上的相關產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66072-graphql-fails-to-return-related-products-due-to-server-error-in-related-product-rules.md)
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
@@ -878,7 +878,7 @@ ht-degree: 0%
          - [ACSD-67166：在店面載入報價時，重複執行cataloginventory_stock_status查詢](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
       - v1.1.71 {#v1-1-71}
          - [總覽： [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)
-         - [ACSD-67904：如果城市名稱包含數字(0-9)、&amp;符號(&amp;)、句點(.)或括弧()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)，則無法下訂單
+         - [ACSD-67904：如果城市名稱包含數字(0-9)、&amp;符號(&amp;)、句點(.)或括弧()，則無法下訂單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
          - [ACSD-67643：在高巢狀類別環境中排程更新期間建立的重複專案](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643.md)
          - [ACSD-67603：針對已啟用影像包含功能的產品，產生Sitemap需要較長的處理時間](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
@@ -900,7 +900,7 @@ ht-degree: 0%
    - [警示標籤](observation-for-adobe-commerce/alerts-tab.md)
    - [WAF標籤](observation-for-adobe-commerce/waf-tab.md)
    - [CDN索引標籤](observation-for-adobe-commerce/cdn-tab.md)
-   - [ [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [&#x200B; [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Cron標籤](observation-for-adobe-commerce/cron-tab.md)
    - [索引標籤](observation-for-adobe-commerce/indexing-tab.md)
    - [快速檢視標籤](observation-for-adobe-commerce/oac-quickview-tab.md)
