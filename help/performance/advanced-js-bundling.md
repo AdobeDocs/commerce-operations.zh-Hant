@@ -176,7 +176,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 #### 若要使用[!DNL PhantomJS]：
 
-在[!DNL Commerce]根目錄中，建立名為`deps.js`的新檔案，並複製下列程式碼。 此程式碼使用[！DNL [!DNL PhantomJS]]開啟頁面，並等待瀏覽器載入所有頁面資產。 然後輸出指定頁面的所有[!DNL RequireJS]相依性。
+在[!DNL Commerce]根目錄中，建立名為`deps.js`的新檔案，並複製下列程式碼。 此程式碼使用[!DNL [!DNL PhantomJS]]開啟頁面，並等待瀏覽器載入所有頁面資產。 然後輸出指定頁面的所有[!DNL RequireJS]相依性。
 
 ```javascript
 "use strict";

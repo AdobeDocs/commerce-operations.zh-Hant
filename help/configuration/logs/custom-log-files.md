@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. 在`MyCustomLogger`物件中插入[ ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)虛擬型別`Magento\Payment\Model\Method\Logger`：
+1. 在`MyCustomLogger`物件中插入[&#x200B; &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)虛擬型別`Magento\Payment\Model\Method\Logger`：
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">

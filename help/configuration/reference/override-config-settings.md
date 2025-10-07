@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->檢視[雲端基礎結構上的Commerce ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html)中的&#x200B;_設定環境_&#x200B;主題。
+>檢視[雲端基礎結構上的Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html)中的&#x200B;_設定環境_&#x200B;主題。
 
 ## 環境變數
 

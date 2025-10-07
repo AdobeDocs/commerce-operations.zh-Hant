@@ -97,7 +97,7 @@ Adobe建議先測試memcached以確保其可正常運作，然後再安裝Commer
 
 此測試使用PHP指令碼來驗證memcached可以儲存和擷取快取資料。
 
-如需此測試的詳細資訊，請參閱[如何在Ubuntu教學課程中安裝及使用Memcache ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04)。
+如需此測試的詳細資訊，請參閱[如何在Ubuntu教學課程中安裝及使用Memcache &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04)。
 
 在網頁伺服器的docroot中建立`cache-test.php`，其內容如下：
 

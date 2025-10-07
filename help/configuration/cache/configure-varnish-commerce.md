@@ -26,7 +26,7 @@ ht-degree: 0%
    | 後端主機 | 輸入完整的主機名稱或IP位址，並接聽Varnish _後端_&#x200B;或&#x200B;_原始伺服器_&#x200B;的連線埠；也就是說，提供內容Varnish的伺服器會加速。 通常這是您的網頁伺服器。 請參閱[清漆快取後端伺服器](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)。 |
    | 後端連線埠 | 原始伺服器的接聽連線埠。 |
    | 寬限期 | 決定如果後端沒有回應，Varnish提供過時內容的時間長度。 預設值為300秒。 |
-   | 處理引數大小 | 指定全頁快取在[ HTTP端點上要處理的](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles)配置控制代碼[`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md)最大數量。 限制大小可以改善安全性和效能。 預設值為100。 |
+   | 處理引數大小 | 指定全頁快取在[&#x200B; HTTP端點上要處理的](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles)配置控制代碼[`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md)最大數量。 限制大小可以改善安全性和效能。 預設值為100。 |
 
 1. 按一下&#x200B;**儲存設定**。
 
