@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL應用程式伺服器可讓Adobe Commerce維護Commerce GraphQL API請求中的狀態。 GraphQL Application Server （以Swoole擴充功能為基礎）會以具有工作者執行緒的處理程式方式運作，以處理要求處理。 GraphQL Application Server可保留GraphQL API請求中的啟動載入應用程式狀態，藉此增強請求處理和整體產品效能。 API要求會大幅提高效率。
 
-GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
+GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ GraphQL應用程式伺服器可讓Adobe Commerce在連續的Commerce GraphQL API
 
 ### 雲端專案
 
-根據預設，雲端基礎結構專案上的Adobe Commerce包含Swoole擴充功能。 您可以在[檔案的](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)屬性中`runtime`啟用`.magento.app.yaml`。 例如：
+根據預設，雲端基礎結構專案上的Adobe Commerce包含Swoole擴充功能。 您可以在[檔案的](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)屬性中`runtime`啟用`.magento.app.yaml`。 例如：
 
 ```yaml
 runtime:
@@ -273,7 +273,7 @@ git push
 
 >[!NOTE]
 >
->確定您的根`.magento.app.yaml`檔案中的所有自訂設定都已適當地移轉至`application-server/.magento/.magento.app.yaml`檔案。 將`application-server/.magento/.magento.app.yaml`檔案新增至專案後，除了根`.magento.app.yaml`檔案之外，您還應維護該檔案。 例如，如果您需要[設定RabbitMQ服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)或[管理Web屬性](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)，您也應該將相同的設定新增到`application-server/.magento/.magento.app.yaml`。
+>確定您的根`.magento.app.yaml`檔案中的所有自訂設定都已適當地移轉至`application-server/.magento/.magento.app.yaml`檔案。 將`application-server/.magento/.magento.app.yaml`檔案新增至專案後，除了根`.magento.app.yaml`檔案之外，您還應維護該檔案。 例如，如果您需要[設定RabbitMQ服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)或[管理Web屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)，您也應該將相同的設定新增到`application-server/.magento/.magento.app.yaml`。
 
 ### 驗證雲端專案是否啟用
 

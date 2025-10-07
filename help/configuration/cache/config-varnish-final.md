@@ -83,4 +83,4 @@ X-Magento-Cache-Debug: MISS
 
 >[!TIP]
 >
->如果您遇到503 （後端擷取失敗）錯誤，請參閱[Adobe Commerce說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html)中的&#x200B;_疑難排解503 （服務無法使用）錯誤_。
+>如果您遇到503 （後端擷取失敗）錯誤，請參閱[Adobe Commerce說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=zh-Hant)中的&#x200B;_疑難排解503 （服務無法使用）錯誤_。
