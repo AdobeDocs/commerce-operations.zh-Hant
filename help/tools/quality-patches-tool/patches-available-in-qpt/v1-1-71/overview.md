@@ -3,9 +3,9 @@ title: 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.71
 description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.71中可用修補程式所修正問題的詳細說明。
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 57fea42c0c893166c3489f6b95e09ccba787b9f1
+source-git-commit: 4660942d90435eaeb6960206c29733bed6453b6a
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 QPT v1.1.71包含下列修補程式：
 
 
-* **ACSD-60624**： **[!UICONTROL Upload Image]**&#x200B;無法用於[!UICONTROL Image]中[!UICONTROL Banner]、[!UICONTROL Slider]和[!DNL Page Builder]區段中的空白內容。
+* **ACSD-60624**： [!DNL Page Builder]中影像、橫幅和滑桿區段中的空白內容無法上傳影像
 * **ACSD-67089**： `inventory/export-stock-salable-qty` API中的分頁問題，這會將`total_count`錯誤地限製為頁面大小。
 * **ACSD-67093**：使用日期範圍篩選器透過[!DNL GraphQL]擷取訂單時，傳回不正確的結果。
 * **ACSD-67459**：無法匯入描述超過65,536個字元的產品。
