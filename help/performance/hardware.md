@@ -1,11 +1,11 @@
 ---
 title: 硬體建議
-description: 檢閱與Adobe Commerce部署最佳效能相關的建議硬體清單。
+description: 瞭解最佳化Adobe Commerce效能的硬體建議。 瞭解生產部署的CPU、記憶體和儲存需求。
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: 設定作業模式
-description: 閱讀有關設定Adobe Commerce操作模式的資訊。
+description: 瞭解如何在開發人員與生產環境之間設定Adobe Commerce操作模式。 探索模式切換命令和安全性影響。
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---

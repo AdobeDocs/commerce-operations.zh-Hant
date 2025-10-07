@@ -1,11 +1,11 @@
 ---
 title: 使用Valkey作為預設快取
-description: 瞭解如何設定Valkey為Adobe Commerce的預設快取。
+description: 瞭解如何將Valkey設定為Adobe Commerce的預設快取。 探索命令列設定、設定選項和驗證技術。
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---

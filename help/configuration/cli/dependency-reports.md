@@ -1,10 +1,10 @@
 ---
 title: 相依性報表
-description: 建立顯示模組、循環和框架相依性總計的報告。
+description: 瞭解如何在Adobe Commerce中建立相依性報表，顯示模組、循環和框架相依性。 探索分析和報告工具。
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---

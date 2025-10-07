@@ -1,11 +1,11 @@
 ---
 title: 產生效能測試資料
-description: 瞭解如何產生大量資料以用於效能測試。
+description: 瞭解如何產生大量資料以進行Adobe Commerce效能測試。 探索資料產生設定檔和測試策略。
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '768'
 ht-degree: 9%
 
 ---

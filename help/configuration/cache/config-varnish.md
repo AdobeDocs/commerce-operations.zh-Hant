@@ -1,11 +1,11 @@
 ---
 title: 設定及使用清漆
-description: 瞭解Varnish如何儲存檔案並改善HTTP流量。
+description: 瞭解如何設定和使用Adobe Commerce的Varnish快取。 探索HTTP加速、檔案儲存和效能最佳化技術。
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---

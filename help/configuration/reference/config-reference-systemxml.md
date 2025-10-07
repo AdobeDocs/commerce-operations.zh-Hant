@@ -1,12 +1,12 @@
 ---
 title: system.xml參考
-description: 瞭解系統XML檔案如何管理Commerce應用程式設定。
+description: 瞭解system.xml檔案如何管理Adobe Commerce應用程式設定。 探索系統組態管理、XML結構和實作技術。
 feature: Configuration, System
 badge: label="作者：David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2717'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ ht-degree: 0%
 | `select` | 一般下拉式清單，可能需要自訂`source_model`。 也用於`Yes/No`選擇。 如需範例，請參閱`Magento\Search\Model\Adminhtml\System\Config\Source\Engine`。 |
 | `multiselect` | 類似`select`，但多個選項有效。 |
 | `button` | 觸發立即事件的按鈕。 需要自訂前端模型來定義按鈕文字和動作。 如需範例，請參閱`Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean`。 |
-| `obscure` | 已加密且顯示為`**&#x200B;**`值的文字欄位。 在瀏覽器中使用「檢查元素」變更型別不會顯示值。 |
+| `obscure` | 已加密且顯示為`****`值的文字欄位。 在瀏覽器中使用「檢查元素」變更型別不會顯示值。 |
 | `password` | 類似`obscure`，但隱藏值並未加密，在瀏覽器中使用「檢查元素」強制變更型別時，不會顯示值。 |
 | `file` | 允許上傳檔案以供處理。 |
 | `label` | 顯示標籤而非可編輯的欄位。 當欄位只能在特定範圍上編輯時（例如，只能在「存放區檢視」層級），請使用此型別。 |

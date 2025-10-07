@@ -5,9 +5,9 @@ feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -33,18 +33,18 @@ ht-degree: 0%
 
 以下是您可以取得狀態表以檢視可用修補程式的範例：
 
-![Magento_patches_list](/help/assets/tools/status_table.png)
+![品質修補程式工具狀態表，顯示可用的修補程式及其安裝狀態](/help/assets/tools/status_table.png)
 
 此工具旨在協助您針對使用Adobe Commerce時可能遇到的問題自助提供修補程式，或輕鬆套用Adobe Commerce支援人員建議的修補程式。
 
 >[!NOTE]
 >
->QPT僅適用於品質修補程式。 安全性修補程式可在Adobe Commerce和Magento Open Source的[發行說明中取得](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=zh-Hant)。
+>QPT僅適用於品質修補程式。 安全性修補程式可在Adobe Commerce和Magento Open Source的[發行說明中取得](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html)。
 
 ## [!DNL Quality Patches Tool]中可用的修補程式
 
 在Adobe Commerce支援知識庫的這個區段中，您會找到按QPT發行版本分組的QPT修補程式所解決之問題的詳細說明。
-您也可以檢視可用的QPT修補程式清單，並使用支援知識庫中[[!DNL Quality Patches Tool]：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)上動態產生的表格來依元件篩選。
+您也可以檢視可用的QPT修補程式清單，並使用支援知識庫中[[!DNL Quality Patches Tool]：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)上動態產生的表格來依元件篩選。
 
 ## 如何安裝及使用[!DNL Quality Patches Tool]
 
@@ -56,8 +56,8 @@ ht-degree: 0%
 
 ### 如何在雲端基礎結構上安裝和使用適用於Adobe Commerce的QPT
 
-請參閱開發人員檔案中的[雲端基礎結構上的Commerce指南>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)，以取得有關如何在Adobe Commerce上安裝和使用QPT來套用及還原修補程式的詳細資訊。
+請參閱開發人員檔案中的[雲端基礎結構上的Commerce指南>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)，以取得有關如何在Adobe Commerce上安裝和使用QPT來套用及還原修補程式的詳細資訊。
 
 ## 相關閱讀
 
-* 在開發人員檔案中[[!DNL Quality Patches Tool] 發行說明](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=zh-Hant)。
+* 在開發人員檔案中[[!DNL Quality Patches Tool] 發行說明](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html)。

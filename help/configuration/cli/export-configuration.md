@@ -1,10 +1,10 @@
 ---
 title: 匯出組態設定
-description: 將Adobe Commerce組態設定匯出至組態檔（也稱為組態傾印）。
+description: 瞭解如何使用設定傾印將Adobe Commerce設定匯出至檔案。 探索管道部署和設定管理。
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---

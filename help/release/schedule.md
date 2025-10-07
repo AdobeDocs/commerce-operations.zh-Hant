@@ -1,11 +1,11 @@
 ---
 title: 發行排程
-description: 了解 Adobe 預計何時宣布推出 Adobe Commerce 的新功能。
+description: 瞭解Adobe計畫何時公佈Adobe Commerce的新功能和發行版本。 探索即將推出的修補程式排程和功能交付時間表，以更妥善規劃。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: b908b468f0b8abe8bb7904b9c4a626201dc919bc
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 2%
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +18,9 @@ Adobe持續努力在簡化產品升級且可預測之間取得適當的平衡，
 
 新功能、功能更新、雲端基礎結構和擴充性更新會在修補程式發行版本之外獨立提供，並可透過外部模組、擴充功能、工具或Web服務取得。 例如：
 
-- ![功能圖示](../assets/icons/feature.svg) [**功能和特性**](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/release-information/release-notes-all) — 新功能和特性是與修補程式發行分開提供。 例如，[B2B](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/release-notes)、目錄服務、資料連線、即時搜尋和產品推薦。
+- ![功能圖示](../assets/icons/feature.svg) [**功能和特性**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) — 新功能和特性是與修補程式發行分開提供。 例如，[B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)、目錄服務、資料連線、即時搜尋和產品推薦。
 
-- ![基礎結構圖示](../assets/icons/servers.svg) [**雲端基礎結構**](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) — 雲端基礎結構上的Adobe Commerce新功能和增強功能，以及適用於Commerce套件的Cloud Tools Suite，可在Cloud平台上部署和管理Adobe Commerce安裝和升級。
+- ![基礎結構圖示](../assets/icons/servers.svg) [**雲端基礎結構**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) — 雲端基礎結構上的Adobe Commerce新功能和增強功能，以及適用於Commerce套件的Cloud Tools Suite，可在Cloud平台上部署和管理Adobe Commerce安裝和升級。
 
 - ![擴充性圖示](../assets/icons/brackets.svg) [**擴充性**](https://developer.adobe.com/commerce/extensibility/) — 新的開發人員工具與服務，適用於程式外擴充性，與修補程式發行版本分開提供。 例如，整合入門套件、管理UI SDK、Adobe I/O Events for Commerce和API Mesh。
 

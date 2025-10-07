@@ -1,11 +1,11 @@
 ---
 title: B2B擴充功能設定路徑參考
-description: 請參閱B2B相關設定值清單。
+description: 瞭解Adobe Commerce的B2B擴充功能設定路徑和值。 探索公司、付款、報價和B2B專屬設定選項。
 feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '849'
 ht-degree: 0%
 
 ---

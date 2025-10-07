@@ -1,11 +1,11 @@
 ---
 title: 設定快取
-description: 瞭解快取以及如何設定Adobe Commerce應用程式的快取機制。
+description: 瞭解Adobe Commerce應用程式的快取機制和設定選項。 探索預設檔案系統快取的替代方案。
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---

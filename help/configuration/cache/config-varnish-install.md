@@ -1,11 +1,11 @@
 ---
 title: 安裝清漆
-description: 請參閱有關安裝光澤漆的建議。
+description: 瞭解Adobe Commerce快取的Varnish安裝需求。 探索安裝資源及設定指南。
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---

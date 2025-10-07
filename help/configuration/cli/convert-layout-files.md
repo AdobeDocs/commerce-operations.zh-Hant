@@ -1,10 +1,10 @@
 ---
 title: 轉換版面檔案
-description: 轉換XML配置檔案。
+description: 瞭解如何使用Adobe Commerce命令列工具轉換XML配置檔案。 探索XSLT樣式表更新和檔案轉換程式。
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---

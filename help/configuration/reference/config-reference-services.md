@@ -1,11 +1,11 @@
 ---
 title: 服務設定路徑參考
-description: 請參閱服務組態值清單。
+description: 瞭解Adobe Commerce管理設定中的服務設定路徑和值。 探索Web API、OAuth和服務整合設定選項。
 feature: Configuration, Services
 exl-id: 77818c54-21ae-4a66-81bf-468bd7d09cda
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---

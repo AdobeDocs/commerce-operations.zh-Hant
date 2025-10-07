@@ -1,10 +1,10 @@
 ---
 title: 自訂cron工作和cron群組參考
-description: 瞭解如何使用cron群組自訂cron。
+description: 瞭解如何使用Adobe Commerce中的cron群組和crontab來自訂cron。 探索自訂模組設定和排程工作設定。
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---

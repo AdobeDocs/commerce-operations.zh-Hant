@@ -1,10 +1,10 @@
 ---
 title: 啟動訊息佇列取用者
-description: 瞭解如何啟動訊息佇列消費者。
+description: 瞭解如何為Adobe Commerce非同步操作啟動訊息佇列取用者。 探索消費者管理和B2B功能設定。
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: cdd752532d17e1168e0aa7d354ec283089d98be3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---

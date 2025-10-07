@@ -1,12 +1,12 @@
 ---
 title: 寫入自訂記錄檔
-description: 瞭解如何設定自訂記錄檔。
+description: 瞭解如何在Adobe Commerce中建立和設定自訂記錄檔。 探索記錄器處理常式和自訂記錄實作。
 feature: Configuration, Logs
 badge: label="由Atwix提供" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. 在`MyCustomLogger`物件中插入[&#128279;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)虛擬型別`Magento\Payment\Model\Method\Logger`：
+1. 在`MyCustomLogger`物件中插入[ ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)虛擬型別`Magento\Payment\Model\Method\Logger`：
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">

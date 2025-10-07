@@ -1,11 +1,11 @@
 ---
 title: 快取型別
-description: 將快取前端與快取型別建立關聯。
+description: 瞭解如何在Adobe Commerce中將快取前端與快取型別建立關聯。 探索快取設定和管理技術。
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---

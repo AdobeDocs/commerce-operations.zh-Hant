@@ -1,11 +1,11 @@
 ---
 title: 目錄設定路徑參考
-description: 檢視目錄設定值的清單。
+description: 瞭解Adobe Commerce管理設定中的目錄設定路徑和值。 探索產品、類別和目錄管理設定選項。
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 | 名稱 | 設定路徑 | 僅限Commerce？ |
 |--------------|--------------|--------------|
 | SKU遮罩 | `catalog/fields_masks/sku` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 中繼標題的遮罩 | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 中繼關鍵字的遮罩 | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 中繼說明的遮罩 | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Meta標題的遮罩 | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Meta關鍵字的遮罩 | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Meta說明的遮罩 | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 清單模式 | `catalog/frontend/list_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 網格上每頁的產品允許值 | `catalog/frontend/grid_per_page_values` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 網格上每頁產品預設值 | `catalog/frontend/grid_per_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -80,8 +80,8 @@ ht-degree: 0%
 | 使用產品URL的類別路徑 | `catalog/seo/product_use_categories` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 如果URL金鑰已變更，請建立URL的永久重新導向 | `catalog/seo/save_rewrites_history` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 頁面標題分隔符號 | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 對類別使用標準連結中繼標籤 | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 對產品使用標準連結中繼標籤 | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 對類別使用標準連結Meta標籤 | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 對產品使用標準連結Meta標籤 | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 啟用 | `catalog/magento_catalogpermissions/enabled` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 允許瀏覽類別 | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
 | 客戶群組 | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![僅限Commerce](/help/assets/configuration/cloud-ee.png) |
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 ## Visual Merchandiser路徑
 
-僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"}
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"}
 
 這些設定值可在&#x200B;**存放區** >設定> **設定** > **目錄** > **Visual Merchandiser**&#x200B;的管理員中使用。
 

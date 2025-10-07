@@ -1,10 +1,10 @@
 ---
 title: 翻譯字典和語言套件
-description: 瞭解如何產生翻譯字典和建置語言套件。
+description: 瞭解如何產生Adobe Commerce的翻譯字典和建置語言套件。 探索當地語系化及多語言商店設定。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1441'
 ht-degree: 0%
 
 ---
@@ -316,7 +316,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 [翻譯概觀]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [翻譯字典]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[設定轉換]: https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-localize
+[設定轉換]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
 [進一步瞭解語言套件]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

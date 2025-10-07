@@ -1,10 +1,10 @@
 ---
 title: 執行支援公用程式
-description: 使用內建的支援公用程式疑難排解您的Commerce專案。
+description: 瞭解如何執行支援公用程式，以疑難排解您的Adobe Commerce專案。 探索內建診斷與支援工具。
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Adobe Commerce支援公用程式（也稱為[資料收集器](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/support#data-collector)）可讓使用者收集有關您的系統的疑難排解資訊，供我們的支援團隊使用。
+Adobe Commerce支援公用程式（也稱為[資料收集器](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector)）可讓使用者收集有關您的系統的疑難排解資訊，供我們的支援團隊使用。
 
 Adobe Commerce使用這些備份（也稱為&#x200B;_傾印_）來分析需要存取您程式碼的問題。 典型的案例如下：
 

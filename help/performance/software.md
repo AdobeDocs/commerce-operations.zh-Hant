@@ -1,11 +1,11 @@
 ---
 title: 軟體建議
-description: 檢閱與Adobe Commerce部署最佳效能相關的建議軟體清單。
+description: 瞭解Adobe Commerce的軟體需求與建議。 探索生產環境的支援版本和設定最佳實務。
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1396'
 ht-degree: 0%
 
 ---

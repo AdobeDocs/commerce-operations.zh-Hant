@@ -1,10 +1,10 @@
 ---
 title: URN熒光筆
-description: 瞭解如何在IDE中設定URN醒目提示。
+description: 瞭解如何在IDE中為Adobe Commerce開發設定URN醒目提示。 探索XSD結構描述設定和開發最佳化。
 exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---

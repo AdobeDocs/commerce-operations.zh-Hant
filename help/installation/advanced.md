@@ -1,10 +1,10 @@
 ---
 title: 進階內部部署安裝
-description: 瞭解您所擁有之基礎結構上的Adobe Commerce進階安裝案例。
+description: 瞭解Adobe Commerce內部部署的進階安裝案例。 探索複雜的設定和自訂設定選項。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2317'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 您可以在安裝期間或安裝後建立「管理員」使用者。 如果您在安裝期間建立使用者，則需要所有管理員認證變數。 請參閱[範例localhost安裝](#sample-localhost-installations)。
 
-下清單格提供許多（但並非全部）可用的安裝引數。 如需完整清單，請參閱[命令列工具參考](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises)。
+下清單格提供許多（但並非全部）可用的安裝引數。 如需完整清單，請參閱[命令列工具參考](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)。
 
 | 名稱 | 值 | 必填？ |
 |--- |--- |--- |

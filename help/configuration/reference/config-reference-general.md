@@ -1,11 +1,11 @@
 ---
 title: 一般設定路徑參考
-description: 請參閱一般和進階組態值清單。
+description: 瞭解Adobe Commerce的一般和進階設定路徑和值。 探索系統、安全性及系統管理組態選項。
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---

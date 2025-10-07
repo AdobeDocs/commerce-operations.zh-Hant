@@ -1,10 +1,10 @@
 ---
 title: 部署靜態檢視檔案
-description: 瞭解如何在生產模式期間將靜態檔案寫入Commerce檔案系統。
+description: 瞭解如何在生產模式下將靜態檢視檔案部署至Adobe Commerce檔案系統。 探索部署命令和最佳化技術。
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---

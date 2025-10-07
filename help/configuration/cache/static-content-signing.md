@@ -1,11 +1,11 @@
 ---
 title: 靜態內容快取
-description: 瞭解靜態內容簽署以及如何啟用或停用此功能。
+description: 瞭解Adobe Commerce中的靜態內容快取簽署和效能最佳化。 瞭解如何啟用、停用及設定快取功能。
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -35,9 +35,9 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 
 Commerce預設會啟用此功能，而Adobe建議啟用此功能，以防止瀏覽器提供舊靜態資源時出現問題。
 
-靜態內容簽章的組態位於&#x200B;[**[!UICONTROL Stores]**>設定>組態>**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)。
+靜態內容簽章的組態位於&#x200B;[**[!UICONTROL Stores]**>設定>組態>**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures)。
 
-- **僅限內部部署**：如果您的網站是&#x200B;**生產模式**&#x200B;中的[非](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=zh-Hant#production-mode)，則可使用此設定。
+- **僅限內部部署**：如果您的網站是&#x200B;**生產模式**&#x200B;中的[非](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode)，則可使用此設定。
 - **雲端**：此設定已隱藏，因為生產模式是強制性的；因此，您必須使用命令列，如下所示。
 
 ![靜態檔案設定](../../assets/configuration/static-files-settings.png)

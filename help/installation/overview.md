@@ -1,11 +1,11 @@
 ---
 title: 內部部署安裝概述
-description: 了解 Adobe Commerce 內部部署的安裝程序。
+description: 瞭解Adobe Commerce的內部部署安裝程式。 探索伺服器需求、設定步驟和部署最佳實務。
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
+source-git-commit: 062267b8b06e41d89f704144e640fc1254952532
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 2%
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 >
 >您應該具備中級技術知識和伺服器存取權才能成功繼續。
 
-安裝會建立功能齊全的Adobe Commerce商店，其中包含[客戶對面的店面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/storefront/storefront)和[系統管理面板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/admin/admin)。 在開始程式之前，您必須準備好您的資料庫認證、網域資訊和驗證金鑰。
+安裝會建立功能齊全的Adobe Commerce商店，其中包含[客戶對面的店面](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront)和[系統管理面板](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin)。 在開始程式之前，您必須準備好您的資料庫認證、網域資訊和驗證金鑰。
 
 ## 商戶責任
 

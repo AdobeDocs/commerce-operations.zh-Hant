@@ -1,11 +1,11 @@
 ---
 title: 工作階段儲存位置
-description: 瞭解工作階段檔案儲存的位置。
+description: 瞭解Adobe Commerce中的工作階段儲存位置與檔案管理。 探索儲存邏輯和設定選項。
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ## 管理工作階段大小
 
-請參閱[使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security-session-management)中的&#x200B;_工作階段管理_。
+請參閱[使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management)中的&#x200B;_工作階段管理_。
 
 ## 記憶體回收組態
 

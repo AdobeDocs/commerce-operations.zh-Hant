@@ -1,11 +1,11 @@
 ---
 title: 設定最佳實務
-description: 使用這些最佳實務最佳化Adobe Commerce部署的回應時間。
+description: 瞭解最佳化Adobe Commerce效能的設定最佳實務。 探索設定和工具以改善回應時間和輸送量。
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ Commerce提供許多設定和工具，可用來改善頁面上的回應時間，
 
 ## 非同步電子郵件通知
 
-啟用「非同步電子郵件通知」設定，將處理結帳和訂單處理電子郵件通知的流程移至背景。 若要啟用此功能，請移至&#x200B;**[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**。 如需詳細資訊，請參閱[管理員使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/sales/sales-emails)中的&#x200B;_銷售電子郵件_。
+啟用「非同步電子郵件通知」設定，將處理結帳和訂單處理電子郵件通知的流程移至背景。 若要啟用此功能，請移至&#x200B;**[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**。 如需詳細資訊，請參閱[管理員使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales-emails)中的&#x200B;_銷售電子郵件_。
 
 ## 非同步處理訂單資料
 
-有時候，店面上的密集銷售會在[!DNL Commerce]執行密集訂單處理的同時發生。 您可以設定[!DNL Commerce]來區分資料庫層級的這兩個流量模式，以避免對應資料表中的讀取和寫入作業發生衝突。 您可以非同步方式儲存及索引訂單資料。 訂單會暫時存放並大量移至Order Management網格，而不會出現任何衝突。 您可以從「**[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**」啟用此選項。 如需詳細資訊，請參閱[管理員使用指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing)中的&#x200B;_排程網格更新_。
+有時候，店面上的密集銷售會在[!DNL Commerce]執行密集訂單處理的同時發生。 您可以設定[!DNL Commerce]來區分資料庫層級的這兩個流量模式，以避免對應資料表中的讀取和寫入作業發生衝突。 您可以非同步方式儲存及索引訂單資料。 訂單會暫時存放並大量移至Order Management網格，而不會出現任何衝突。 您可以從「**[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**」啟用此選項。 如需詳細資訊，請參閱[管理員使用指南](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing)中的&#x200B;_排程網格更新_。
 
 >[!WARNING]
 >
->**[!UICONTROL Developer]**&#x200B;索引標籤和選項只能在[開發人員模式](../configuration/cli/set-mode.md)中使用。 雲端基礎結構上的[Adobe Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)不支援`Developer`模式。
+>**[!UICONTROL Developer]**&#x200B;索引標籤和選項只能在[開發人員模式](../configuration/cli/set-mode.md)中使用。 雲端基礎結構上的[Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)不支援`Developer`模式。
 
 ## 非同步設定儲存
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 已延期的庫存更新
 
-在密集銷售期間，[!DNL Commerce]可以延遲與訂單相關的庫存更新。 如此可儘量減少作業次數，並加快下單程式。 但是，此選項有風險，而且只能在啟用商店中的延期交貨訂單時使用，因為此選項可能導致存貨數量為負數。 此選項可大幅改善商店結帳流程的效能，這些商店可輕易地隨選重新補充庫存。 若要啟用您網站上的遞延庫存更新，請前往&#x200B;**[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**。 如需詳細資訊，請參閱[Adobe Commerce使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)中的&#x200B;_管理詳細目錄_。
+在密集銷售期間，[!DNL Commerce]可以延遲與訂單相關的庫存更新。 如此可儘量減少作業次數，並加快下單程式。 但是，此選項有風險，而且只能在啟用商店中的延期交貨訂單時使用，因為此選項可能導致存貨數量為負數。 此選項可大幅改善商店結帳流程的效能，這些商店可輕易地隨選重新補充庫存。 若要啟用您網站上的遞延庫存更新，請前往&#x200B;**[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**。 如需詳細資訊，請參閱[Adobe Commerce使用手冊](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud)中的&#x200B;_管理詳細目錄_。
 
 >[!INFO]
 >
@@ -77,7 +77,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 >[!INFO]
 >
->此選項也可搭配[非同步訂購](high-throughput-order-processing.md#asynchronous-order-placement)和[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html?lang=zh-Hant)使用。
+>此選項也可搭配[非同步訂購](high-throughput-order-processing.md#asynchronous-order-placement)和[Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html)使用。
 
 ## 使用者端最佳化設定
 
@@ -95,7 +95,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 >[!INFO]
 >
->**[!UICONTROL Developer]**&#x200B;索引標籤和選項只能在[開發人員模式](../configuration/cli/set-mode.md)中使用。 雲端基礎結構[上的 [!DNL Commerce] Adobe](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)不支援`Developer`模式。
+>**[!UICONTROL Developer]**&#x200B;索引標籤和選項只能在[開發人員模式](../configuration/cli/set-mode.md)中使用。 雲端基礎結構[上的 [!DNL Commerce] Adobe](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)不支援`Developer`模式。
 
 當您啟用&#x200B;**[!UICONTROL Enable [!DNL JavaScript] Bundling]**&#x200B;選項時，可允許Commerce將所有JS資源合併為一個或一組載入店面頁面的組合。 整合JS可減少伺服器要求，進而改善頁面效能。 它還有助於瀏覽器在第一次呼叫時快取JS資源，並在所有進一步的瀏覽中重複使用。 此選項也會帶來延遲評估，因為所有JS都會載入為文字。 它只會在頁面上觸發特定動作後，才會起始程式碼分析和評估。 不過，不建議將此設定用於第一個頁面載入時間極為重要的存放區，因為所有JS內容都將在第一次呼叫時載入。
 
@@ -111,7 +111,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## 客戶區段驗證
 
-具有大量[客戶區段](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/segments/customer-segments)的商家，可能會因為客戶動作（例如客戶登入以及將產品加入購物車）而發生效能大幅降低的情況。
+具有大量[客戶區段](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)的商家，可能會因為客戶動作（例如客戶登入以及將產品加入購物車）而發生效能大幅降低的情況。
 
 客戶動作會觸發客戶區段的驗證程式，而此程式可能會導致效能降低。 依預設，Adobe Commerce會即時驗證每個區段，以定義哪些客戶區段符合，哪些客戶區段不符合。
 
@@ -134,7 +134,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 若要改善大型目錄的產品格線效能，建議使用&#x200B;**[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] >[!UICONTROL Limit Number of Products in Grid]**&#x200B;系統組態設定來限制格線中的產品數量。
 
 此系統組態設定預設為停用。 一旦啟用，您就可以將格線中的產品數量限製為特定值。 **[!UICONTROL Records Limit]**&#x200B;是可自訂的設定，預設最小值為`20000`。
-當啟用&#x200B;**[!UICONTROL Limit Number of Products in Grid]**&#x200B;設定且網格中的產品數目大於記錄限制時，則會傳回有限的記錄集合。 當達到限制時，找到的記錄總數、選取的記錄數以及分頁元素將從網格標頭中隱藏。
+當啟用**[!UICONTROL Limit Number of Products in Grid]**&#x200B;設定且網格中的產品數目大於記錄限制時，則會傳回有限的記錄集合。 當達到限制時，找到的記錄總數、選取的記錄數以及分頁元素將從網格標頭中隱藏。
 
 當格線中的產品總數有限時，它不會影響產品格線大量動作。 它只會影響產品格線表示層。 例如，格線中的`20000`產品數目有限，使用者按一下&#x200B;**[!UICONTROL Select All]**，選取&#x200B;**[!UICONTROL Update attributes]**&#x200B;大量動作，並更新部分屬性。 因此，所有產品都會更新，而不是有限的`20000`記錄集合。
 

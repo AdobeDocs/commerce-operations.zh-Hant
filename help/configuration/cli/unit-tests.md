@@ -1,10 +1,10 @@
 ---
 title: 執行單元測試
-description: 執行Adobe Commerce程式碼庫中定義的單元測試。
+description: 瞭解如何執行Adobe Commerce程式碼基底中定義的單元測試。 探索測試命令、執行選項和結果報告。
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---

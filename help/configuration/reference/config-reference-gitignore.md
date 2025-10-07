@@ -1,10 +1,10 @@
 ---
 title: .gitignore參考
-description: 瞭解如何新增包含在忽略清單中的檔案。
+description: 瞭解如何將檔案新增至Adobe Commerce專案的.gitignore清單。 探索版本控制管理和檔案排除的最佳實務。
 exl-id: 7c53b50a-7bdf-433b-bebb-0129f792a1a4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '60'
 ht-degree: 0%
 
 ---

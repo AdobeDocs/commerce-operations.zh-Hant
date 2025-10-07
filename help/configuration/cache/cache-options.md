@@ -1,11 +1,11 @@
 ---
 title: 快取選項
-description: 設定對低階快取儲存體的存取權。
+description: 瞭解Adobe Commerce中的低階快取選項和儲存設定。 探索Redis和資料庫的前端、後端和儲存設定。
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: 進階 [!DNL JavaScript] 組合
-description: 瞭解JavaScript套件組合如何減少伺服器請求的大小和頻率。
+description: 瞭解Adobe Commerce中的進階 [!DNL javascript] 套件組合。 探索實作指引和最佳化策略。
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2133'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 #### 若要使用[!DNL PhantomJS]：
 
-在[!DNL Commerce]根目錄中，建立名為`deps.js`的新檔案，並複製下列程式碼。 此程式碼使用[!DNL [!DNL PhantomJS]]開啟頁面，並等待瀏覽器載入所有頁面資產。 然後輸出指定頁面的所有[!DNL RequireJS]相依性。
+在[!DNL Commerce]根目錄中，建立名為`deps.js`的新檔案，並複製下列程式碼。 此程式碼使用[！DNL [!DNL PhantomJS]]開啟頁面，並等待瀏覽器載入所有頁面資產。 然後輸出指定頁面的所有[!DNL RequireJS]相依性。
 
 ```javascript
 "use strict";

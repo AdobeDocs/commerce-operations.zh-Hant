@@ -1,11 +1,11 @@
 ---
 title: 最終驗證
-description: 確認您的Varnish設定已正確設定為搭配Adobe Commerce應用程式使用。
+description: 瞭解如何使用Adobe Commerce執行清漆設定的最終驗證。 探索測試步驟和疑難排解技術。
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -83,4 +83,4 @@ X-Magento-Cache-Debug: MISS
 
 >[!TIP]
 >
->如果您遇到503 （後端擷取失敗）錯誤，請參閱[Adobe Commerce說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=zh-Hant)中的&#x200B;_疑難排解503 （服務無法使用）錯誤_。
+>如果您遇到503 （後端擷取失敗）錯誤，請參閱[Adobe Commerce說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html)中的&#x200B;_疑難排解503 （服務無法使用）錯誤_。

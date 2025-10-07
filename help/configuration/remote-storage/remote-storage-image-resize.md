@@ -3,9 +3,9 @@ title: 設定遠端儲存裝置的影像大小調整
 description: 藉由設定伺服器端影像大小調整來最佳化磁碟資源。
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 下圖顯示Nginx如何擷取、調整影像大小以及將其儲存在快取中。 調整大小是由URL中包含的引數（例如高度和寬度）所決定。
 
-![影像調整大小](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![Nginx設定，用於調整遠端儲存影像大小，顯示伺服器區塊設定](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >

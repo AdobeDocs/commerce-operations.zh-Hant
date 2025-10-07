@@ -1,11 +1,11 @@
 ---
 title: 使用Valkey進行工作階段儲存
-description: 瞭解如何設定工作階段存放區的Valkey。
+description: 瞭解如何在Adobe Commerce中設定工作階段存放區的Valkey。 探索設定步驟、設定選項和效能最佳化技術。
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '807'
 ht-degree: 1%
 
 ---

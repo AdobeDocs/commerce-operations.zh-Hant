@@ -3,9 +3,9 @@ title: '[!UICONTROL Summary]索引標籤'
 description: 瞭解[!UICONTROL Summary]的 [!DNL Observation for Adobe Commerce]標籤。
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2494'
 ht-degree: 0%
 
 ---
@@ -32,19 +32,19 @@ ht-degree: 0%
 
 ## [!UICONTROL 404 page errors frame]
 
-![404頁錯誤框架](../../assets/tools/404-page-errors.jpg)
+![404錯誤監視儀表板顯示一段時間內找不到事件的頁面](../../assets/tools/404-page-errors.jpg)
 
 **[!UICONTROL 404 page errors]**&#x200B;框架列出所選時間範圍內的[URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)和404頁錯誤的計數。
 
 ## [!UICONTROL % of Storage Free frame]
 
-儲存可用框架的![百分比](../../assets/tools/percent-of-storage-free.jpg)
+![顯示可用磁碟空間百分比的存放裝置使用率圖表](../../assets/tools/percent-of-storage-free.jpg)
 
 **[!UICONTROL % of Storage Free]**&#x200B;框架會顯示叢集所有節點之儲存裝載的平均可用百分比。 例如，如果您有三節點叢集，框架會顯示\&lt;掛載點\>、\&lt;環境名稱\>。 如果三個節點之間有變數，此框架可能會具有欺騙性。 變數的範例是，如果`/data/mysql`可用掛載點在三個節點叢集中是不同的值。 [!UICONTROL MySQL]標籤下有一個框架，可依節點名稱多面向掛接點，以更準確地檢視每個節點上的`/data/mysql`儲存空間實際是多少。
 
 ## [!UICONTROL % of system memory that is free frame]
 
-可用框架系統記憶體的![百分比](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
+![系統記憶體使用率圖表顯示可用的RAM百分比](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
 可用的&#x200B;**%系統記憶體**&#x200B;框架會依節點顯示每個節點可用的系統記憶體數量。
 
@@ -58,11 +58,11 @@ ht-degree: 0%
 
 主機![的](../../assets/tools/cpu-percent-by-host.jpg)CPU百分比
 
-所有環境和節點的彙總會顯示在&#x200B;**[!UICONTROL CPU % by host]**&#x200B;框架中。 您應該取消選取非生產環境。 也請注意生產環境的所有節點都未出現的任何執行個體。 如需有關高CPU使用率的更多秘訣，請參閱[在Adobe Commerce上使用New Relic進行效能疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=zh-Hant)。
+所有環境和節點的彙總會顯示在&#x200B;**[!UICONTROL CPU % by host]**&#x200B;框架中。 您應該取消選取非生產環境。 也請注意生產環境的所有節點都未出現的任何執行個體。 如需有關高CPU使用率的更多秘訣，請參閱[在Adobe Commerce上使用New Relic進行效能疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html)。
 
 ## [!UICONTROL Alerts during timeframe]
 
-時間範圍內![個警示](../../assets/tools/alerts-during-timeframe.jpg)
+![警示通知儀表板顯示所選時段內的事件](../../assets/tools/alerts-during-timeframe.jpg)
 
 **[!UICONTROL Alerts during timeframe]**&#x200B;顯示所有警示，包括Adobe Commerce支援新增的[!UICONTROL Managed Alerts]。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ![CPU使用量](../../assets/tools/cpu-usage.jpg)
 
-如果&#x200B;**[!UICONTROL CPU Usage]**&#x200B;框架空白，表示未啟用[!DNL New Relic]的基礎結構應用程式。 如果您的網站位於入門版，則不會看到此資訊。 如果您的網站使用Pro，請開啟[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant)為您的網站啟用[!DNL New Relic Infrastructure]。
+如果&#x200B;**[!UICONTROL CPU Usage]**&#x200B;框架空白，表示未啟用[!DNL New Relic]的基礎結構應用程式。 如果您的網站位於入門版，則不會看到此資訊。 如果您的網站使用Pro，請開啟[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html)為您的網站啟用[!DNL New Relic Infrastructure]。
 
 ## [!UICONTROL Average Response Time]
 
@@ -139,7 +139,7 @@ ht-degree: 0%
 
 ## [!UICONTROL API Calls by IP, details by URL]
 
-依IP依url的![api呼叫詳細資料](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
+![API要求分析顯示依IP位址和端點URL分組的呼叫](../../assets/tools/api-calls-by-ip-details-by-url.jpg)
 
 **[!UICONTROL API Calls by IP, details by URL]**&#x200B;框架提供針對API的大量流量的詳細資訊，以及發出請求的URL的詳細資訊。
 
@@ -332,13 +332,13 @@ PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/in
 
 ## [!UICONTROL Page Rendering]
 
-![頁面呈現](../../assets/tools/page-rendering.jpg)
+![顯示轉譯時間分析的頁面效能測量結果](../../assets/tools/page-rendering.jpg)
 
 **[!UICONTROL Page Rendering]**&#x200B;框架顯示來自頁面檢視來源[!DNL New Relic]的當週平均頁面轉譯持續時間，與相同時段的前一週比較。
 
 ## [!UICONTROL Page loading detail]
 
-![頁面載入詳細資料](../../assets/tools/page-loading-detail.png)
+![顯示載入時間元件的詳細頁面載入效能劃分](../../assets/tools/page-loading-detail.png)
 
 **[!UICONTROL Page loading detail]**&#x200B;框架說明頁面載入事件。 它詳述這些Facet的意義。 以下是為此框架執行的查詢：
 
@@ -384,7 +384,7 @@ PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/in
 * &#39;%您可以修正此問題，方法是將Magento雲端基礎結構上的Elasticsearch服務升級為&#39;version%&#39;作為&#39;ver_err&#39;
 * &#39;%cluster健全狀態已從\[YELLOW\]變更為\[RED\] (原因：%&#39;為&#39;yel_red&#39;
 * &#39;%裝置%&#39;上沒有剩餘的空間，因為&#39;no_space&#39;
-* &#39;%無法執行&lbrack;SearchRequest&lbrace;searchType=%&#39;，因為&#39;failed_query&#39;
+* &#39;%無法執行[SearchRequest{searchType=%&#39;，因為&#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

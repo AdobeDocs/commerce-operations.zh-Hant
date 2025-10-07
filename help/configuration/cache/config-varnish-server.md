@@ -1,11 +1,11 @@
 ---
 title: 設定網頁伺服器
-description: 瞭解如何設定網頁伺服器以使用Varnish。
+description: 瞭解如何設定網頁伺服器以搭配Adobe Commerce的Varnish快取。 探索連線埠組態和設定需求。
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---

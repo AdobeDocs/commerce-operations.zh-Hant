@@ -1,10 +1,10 @@
 ---
 title: 概觀
-description: 請依照這些最佳實務，最佳化Adobe Commerce部署的效能。
+description: 瞭解最佳化Adobe Commerce部署的效能最佳實務。 探索備受肯定的策略，以提升速度、效率和使用者體驗。
 exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '94'
 ht-degree: 1%
 
 ---

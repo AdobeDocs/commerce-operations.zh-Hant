@@ -1,10 +1,10 @@
 ---
 title: 設定設定值
-description: 瞭解如何設定設定值，以及變更在Admin中鎖定的值。
+description: 瞭解如何在Adobe Commerce中設定設定值及變更鎖定的管理員值。 探索進階設定指令和技術。
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show`命令會將任何[加密值](../reference/config-reference-sens.md)的值顯示為一系列星號： `**&#x200B;**&#x200B;**`。
+>`bin/magento config:show`命令會將任何[加密值](../reference/config-reference-sens.md)的值顯示為一系列星號： `******`。
 
 ### 範例
 

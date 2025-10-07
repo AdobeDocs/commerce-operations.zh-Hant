@@ -1,11 +1,11 @@
 ---
 title: 記錄器介面
-description: 開始使用記錄器介面。
+description: 瞭解如何在Adobe Commerce中使用記錄器介面進行自訂記錄。 探索PSR-3實作和記錄函式。
 feature: Configuration, Logs
 exl-id: fdb1b431-405a-4c32-aff1-9e50bf0a2c90
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---

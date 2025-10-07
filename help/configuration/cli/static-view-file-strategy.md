@@ -1,11 +1,11 @@
 ---
 title: 靜態檢視檔案的部署策略
-description: 閱讀Commerce應用程式的部署策略。
+description: 瞭解Adobe Commerce應用程式中靜態檢視檔案的部署策略。 探索不同使用案例的最佳部署方法。
 feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---

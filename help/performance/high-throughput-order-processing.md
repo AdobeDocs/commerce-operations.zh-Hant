@@ -1,11 +1,11 @@
 ---
 title: 結帳效能最佳實務
-description: 瞭解如何最佳化Adobe Commerce網站上結帳體驗的效能。
+description: 瞭解Adobe Commerce中的結帳效能最佳實務。 探索實作指引和最佳化策略。
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 結帳效能最佳實務
 
-Adobe Commerce中的[結帳](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process)程式是店面體驗的關鍵層面。 它仰賴內建的[購物車](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/storefront/storefront#shopping-cart)和[結帳](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/storefront/storefront#checkout-page)功能。
+Adobe Commerce中的[結帳](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process)程式是店面體驗的關鍵層面。 它仰賴內建的[購物車](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart)和[結帳](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page)功能。
 
 效能是維持良好使用者體驗的關鍵。 您可以為&#x200B;**高輸送量訂單處理**&#x200B;設定下列選項，以最佳化結帳效能：
 
@@ -174,13 +174,13 @@ _在購物車載入時啟用詳細目錄_&#x200B;全域設定決定在購物車�
 
 停用時，將產品新增到購物車時不會進行詳細目錄檢查。 如果跳過此庫存檢查，則某些缺貨情況可能會擲回其他型別的錯誤。 庫存檢查&#x200B;_一律_&#x200B;會發生在訂單放置步驟，即使停用也一樣。
 
-**購物車載入時啟用存貨檢查**&#x200B;預設為啟用（設定為「是」）。 若要在載入購物車時停用詳細目錄檢查，請在管理UI **[!UICONTROL Enable Inventory Check On Cart Load]**&#x200B;商店`No` > **設定** > **目錄** > **詳細目錄** > **庫存選項**&#x200B;區段中，將&#x200B;**設定為**。 請參閱[使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/configuration/global-options)中的[設定全域選項](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/guide-overview)和&#x200B;_目錄詳細目錄_。
+**購物車載入時啟用存貨檢查**&#x200B;預設為啟用（設定為「是」）。 若要在載入購物車時停用詳細目錄檢查，請在管理UI **[!UICONTROL Enable Inventory Check On Cart Load]**&#x200B;商店`No` > **設定** > **目錄** > **詳細目錄** > **庫存選項**&#x200B;區段中，將&#x200B;**設定為**。 請參閱[使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options)中的[設定全域選項](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview)和&#x200B;_目錄詳細目錄_。
 
 ## 負載平衡
 
 您可以啟用MySQL資料庫和Redis執行個體的次要連線，協助平衡不同節點的負載。
 
-Adobe Commerce可以非同步方式讀取多個資料庫或Redis執行個體。 如果您在雲端基礎結構上使用Commerce，您可以編輯[檔案中的](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)MYSQL_USE_SLAVE_CONNECTION[和](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)REDIS_USE_SLAVE_CONNECTION`.magento.env.yaml`值來設定次要連線。 只有一個節點需要處理讀寫流量，因此將變數設定為`true`會導致建立唯讀流量的次要連線。 將值設定為`false`以從`env.php`檔案中移除任何現有的唯讀連線陣列。
+Adobe Commerce可以非同步方式讀取多個資料庫或Redis執行個體。 如果您在雲端基礎結構上使用Commerce，您可以編輯[檔案中的](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)MYSQL_USE_SLAVE_CONNECTION[和](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)REDIS_USE_SLAVE_CONNECTION`.magento.env.yaml`值來設定次要連線。 只有一個節點需要處理讀寫流量，因此將變數設定為`true`會導致建立唯讀流量的次要連線。 將值設定為`false`以從`env.php`檔案中移除任何現有的唯讀連線陣列。
 
 `.magento.env.yaml`檔案的範例：
 

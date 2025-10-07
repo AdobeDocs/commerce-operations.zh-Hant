@@ -1,10 +1,10 @@
 ---
 title: 管理快取
-description: 使用Commerce CLI從命令列管理快取型別並檢視快取狀態
+description: 瞭解如何使用Adobe Commerce CLI命令管理快取型別和檢視快取狀態。 探索快取管理和最佳化技術。
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >
->Commerce網站管理員可以使用「快取管理系統」工具從Admin管理快取。 請參閱[系統管理系統指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management)中的&#x200B;_快取管理_。
+>Commerce網站管理員可使用快取管理系統工具，從管理員管理快取。 請參閱[系統管理系統指南](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)中的&#x200B;_快取管理_。
 
 
 ## 檢視快取狀態
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->如需Adobe Commerce支援之預設快取型別的詳細說明，請參閱[系統管理系統指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management#caches)中的&#x200B;_快取_。
+>如需Adobe Commerce支援之預設快取型別的詳細說明，請參閱[系統管理系統指南](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches)中的&#x200B;_快取_。
 
 
 ## 啟用或停用快取型別
