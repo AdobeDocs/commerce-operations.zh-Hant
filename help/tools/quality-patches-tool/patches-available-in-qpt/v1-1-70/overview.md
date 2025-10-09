@@ -3,9 +3,9 @@ title: 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.70
 description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.70中可用修補程式所修正問題的詳細說明。
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 19e32289f4a7954d070370e065bc683d5f9b54e5
+source-git-commit: cafb2df4ca11dd74d7dfb461e8130704f52f6f27
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -22,5 +22,6 @@ QPT v1.1.70包含下列修補程式：
 1. **ACSD-67166**：在店面載入報價時執行重複的`cataloginventory_stock_status`查詢。
 1. **[ACSD-67030](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67030.md)**：當由受限角色管理員編輯時，會從可設定的中取消指派簡單產品。
 1. **ACSD-67289**：套用特殊價格時無法顯示一般價格。
+1. **AC-15210**：將USPS整合從網站工具API移轉至新的RESTful USPS API。
 
 使用左側的功能表，導覽至特定的修補程式頁面。
