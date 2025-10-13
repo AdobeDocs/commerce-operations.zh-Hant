@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0eb7528ebcc1515defd672830b8f00e460819aa1
+source-git-commit: 4a2266f2df235b98ed3b738af4b97cb4b74dc664
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,8 @@ ht-degree: 0%
 
 每個安全性修補程式版本都是以之前的完整修補程式版本為基礎。 此版本包含先前修補程式版本的品質和安全修正，以及在先前完整修補程式版本和安全修補程式版本之間建立的安全性修正。
 
-如需有關下載和套用安全性修補程式的說明，請參閱[Adobe Commerce知識庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)中的&#x200B;_如何取得和套用安全性修補程式_。
+如需有關下載和套用安全性修補程式的說明，請參閱[Adobe Commerce知識庫](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)中的&#x200B;_如何取得和套用安全性修補程式_。
+
+>[!NOTE]
+>
+>2.4.4和2.4.5的延伸支援安全性修補程式僅適用於Adobe Commerce客戶，不適用於Magento Open Source程式碼基底。 請參閱[延伸支援](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)。
