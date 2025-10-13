@@ -20,7 +20,7 @@ ht-degree: 0%
 >
 >您應該具備中級技術知識和伺服器存取權才能成功繼續。
 
-安裝會建立功能齊全的Adobe Commerce商店，其中包含[客戶對面的店面](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront)和[系統管理面板](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin)。 在開始程式之前，您必須準備好您的資料庫認證、網域資訊和驗證金鑰。
+安裝會建立功能齊全的Adobe Commerce商店，其中包含[客戶對面的店面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/storefront/storefront)和[系統管理面板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/admin/admin)。 在開始程式之前，您必須準備好您的資料庫認證、網域資訊和驗證金鑰。
 
 ## 商戶責任
 
