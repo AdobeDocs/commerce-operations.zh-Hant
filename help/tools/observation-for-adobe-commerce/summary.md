@@ -3,7 +3,7 @@ title: '[!UICONTROL Summary]索引標籤'
 description: 瞭解[!UICONTROL Summary]的 [!DNL Observation for Adobe Commerce]標籤。
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 5a0455b61824cb1946e29dba3ff7bfd9d225b110
 workflow-type: tm+mt
 source-wordcount: '2494'
 ht-degree: 0%
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 主機![的](../../assets/tools/cpu-percent-by-host.jpg)CPU百分比
 
-所有環境和節點的彙總會顯示在&#x200B;**[!UICONTROL CPU % by host]**&#x200B;框架中。 您應該取消選取非生產環境。 也請注意生產環境的所有節點都未出現的任何執行個體。 如需有關高CPU使用率的更多秘訣，請參閱[在Adobe Commerce上使用New Relic進行效能疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=zh-Hant)。
+所有環境和節點的彙總會顯示在&#x200B;**[!UICONTROL CPU % by host]**&#x200B;框架中。 您應該取消選取非生產環境。 也請注意生產環境的所有節點都未出現的任何執行個體。 如需有關高CPU使用率的更多秘訣，請參閱[在Adobe Commerce上使用New Relic進行效能疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html)。
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ![CPU使用量](../../assets/tools/cpu-usage.jpg)
 
-如果&#x200B;**[!UICONTROL CPU Usage]**&#x200B;框架空白，表示未啟用[!DNL New Relic]的基礎結構應用程式。 如果您的網站位於入門版，則不會看到此資訊。 如果您的網站使用Pro，請開啟[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant)為您的網站啟用[!DNL New Relic Infrastructure]。
+如果&#x200B;**[!UICONTROL CPU Usage]**&#x200B;框架空白，表示未啟用[!DNL New Relic]的基礎結構應用程式。 如果您的網站位於入門版，則不會看到此資訊。 如果您的網站使用Pro，請開啟[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html)為您的網站啟用[!DNL New Relic Infrastructure]。
 
 ## [!UICONTROL Average Response Time]
 
@@ -257,7 +257,7 @@ ht-degree: 0%
 
 ![記錄檔的redis同步處理](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/)是開放原始碼（BSD已授權）記憶體中的資料結構存放區，用於資料庫、快取和訊息代理人。 如果已設定，它可以執行資料庫和工作階段快取。 **[!UICONTROL Redis synchronization from Log]**&#x200B;框架主要針對[[!DNL Redis] 同步處理](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/)。 [!DNL Redis]資料集愈大，同步化發生問題的可能性就愈大（需要保持同步的資料愈多）。
+[[!DNL Redis]](https://redis.io/about/)是開放原始碼（BSD已授權）記憶體中的資料結構存放區，用於資料庫、快取和訊息代理人。 如果已設定，它可以執行資料庫和工作階段快取。 **[!UICONTROL Redis synchronization from Log]**&#x200B;框架主要針對[[!DNL Redis] 同步處理](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/)。 [!DNL Redis]資料集愈大，同步化發生問題的可能性就愈大（需要保持同步的資料愈多）。
 
 **[!DNL Redis]個錯誤和訊息：**
 
@@ -384,7 +384,7 @@ PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/in
 * &#39;%您可以修正此問題，方法是將Magento雲端基礎結構上的Elasticsearch服務升級為&#39;version%&#39;作為&#39;ver_err&#39;
 * &#39;%cluster健全狀態已從\[YELLOW\]變更為\[RED\] (原因：%&#39;為&#39;yel_red&#39;
 * &#39;%裝置%&#39;上沒有剩餘的空間，因為&#39;no_space&#39;
-* &#39;%無法執行&lbrack;SearchRequest&lbrace;searchType=%&#39;，因為&#39;failed_query&#39;
+* &#39;%無法執行[SearchRequest{searchType=%&#39;，因為&#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 
