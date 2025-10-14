@@ -49,7 +49,7 @@ ht-degree: 0%
    * 警示的說明。
    * [[!DNL New Relic] 事件連結](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents/)。 這包含在您的[Adobe Commerce](managed-alerts-for-magento-commerce.md)受管理警示中。
 
-1. 如果沒有支援票證，請前往[!DNL Redis]one.newrelic.com[ > ](https://login.newrelic.com) > **[!UICONTROL Infrastructure]**&#x200B;頁面，檢查&#x200B;**[!UICONTROL Third-party services]**&#x200B;已使用的記憶體是否在增加或減少，然後選取[!DNL Redis]儀表板。 如果它是穩定或遞增的，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)以升級您的叢集，或將`maxmemory`限制增加到下一個層級。
+1. 如果沒有支援票證，請前往[!DNL Redis]one.newrelic.com[&#x200B; > &#x200B;](https://login.newrelic.com) > **[!UICONTROL Infrastructure]**&#x200B;頁面，檢查&#x200B;**[!UICONTROL Third-party services]**&#x200B;已使用的記憶體是否在增加或減少，然後選取[!DNL Redis]儀表板。 如果它是穩定或遞增的，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)以升級您的叢集，或將`maxmemory`限制增加到下一個層級。
 1. 如果您無法識別[!DNL Redis]記憶體耗用量增加的原因，請檢閱最近的趨勢，以識別最近的程式碼部署或設定變更（例如，新客戶群組和目錄的大型變更）的相關問題。 建議您檢閱過去七天的活動，以瞭解程式碼部署或變更中的任何關聯。
 1. 檢查協力廠商擴充功能是否有不當行為：
 

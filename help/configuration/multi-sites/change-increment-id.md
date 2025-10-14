@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->您也可以在PayPal的「付款接收偏好設定」中，允許每個商業發票識別碼進行多項付款，以修正PayPal的付款閘道問題。 請參閱[PayPal閘道拒絕的要求 — ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=zh-Hant)知識庫&#x200B;_中的重複發票問題_。
+>您也可以在PayPal的「付款接收偏好設定」中，允許每個商業發票識別碼進行多項付款，以修正PayPal的付款閘道問題。 請參閱[PayPal閘道拒絕的要求 — &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=zh-Hant)知識庫&#x200B;_中的重複發票問題_。
 
 ## 必備條件步驟
 
