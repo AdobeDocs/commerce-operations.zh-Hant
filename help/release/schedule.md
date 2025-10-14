@@ -1,78 +1,37 @@
 ---
-title: 發行排程
-description: 瞭解Adobe計畫何時公佈Adobe Commerce的新功能和發行版本。 探索即將推出的修補程式排程和功能交付時間表，以更妥善規劃。
+title: 修補程式發行排程
+description: 瞭解Adobe計畫何時公佈Adobe Commerce的新修補程式和安全性修正。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5f9f0e1dab7f5e4580f077693039ea387df23880
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
 
 
-# 發行排程
+# 修補程式發行排程
 
-Adobe持續努力在簡化產品升級且可預測之間取得適當的平衡，同時更快速地為早期採用者提供改善和新功能（請參閱[版本設定原則](versioning-policy.md)）。 此排程的目的是提供Adobe計畫宣佈推出重要新功能的日期。
+Adobe持續努力在簡化產品升級且可預測之間取得適當的平衡，同時加快改善早期採用者的速度（請參閱[版本設定原則](versioning-policy.md)）。
 
-## 功能、雲端基礎結構和擴充性
-
-新功能、功能更新、雲端基礎結構和擴充性更新會在修補程式發行版本之外獨立提供，並可透過外部模組、擴充功能、工具或Web服務取得。 例如：
-
-- ![功能圖示](../assets/icons/feature.svg) [**功能和特性**](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/release-information/release-notes-all) — 新功能和特性是與修補程式發行分開提供。 例如，[B2B](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/release-notes)、目錄服務、資料連線、即時搜尋和產品推薦。
-
-- ![基礎結構圖示](../assets/icons/servers.svg) [**雲端基礎結構**](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) — 雲端基礎結構上的Adobe Commerce新功能和增強功能，以及適用於Commerce套件的Cloud Tools Suite，可在Cloud平台上部署和管理Adobe Commerce安裝和升級。
-
-- ![擴充性圖示](../assets/icons/brackets.svg) [**擴充性**](https://developer.adobe.com/commerce/extensibility/) — 新的開發人員工具與服務，適用於程式外擴充性，與修補程式發行版本分開提供。 例如，整合入門套件、管理UI SDK、Adobe I/O Events for Commerce和API Mesh。
-
-下列清單提供排程功能、雲端基礎結構和擴充性版本的日期（日期可能會變更）：
-
-- 2025年2月11日
-- 2025年4月8日
-- 2025年6月10日
-- 2025年8月12日
-- 2025年10月14日
+此排程的目的是提供Adobe計畫針對核心Adobe Commerce PHP應用程式的每個受支援的發行行宣佈[修補程式](versioning-policy.md#patch-release)發行的日期。 修補程式發行可升級核心程式碼基底，確保平台安全、可靠及效能。
 
 >[!NOTE]
 >
->功能、雲端基礎結構和擴充性發行可能會在一年中有所差異。 不過，Adobe會在本頁面所指定日期之間，定期並持續發佈這些區域的改善專案。 請參閱[什麼是Adobe Commerce？](https://business.adobe.com/products/magento/magento-commerce.html)以進一步瞭解最新功能。
-
-## 修補程式
-
-Adobe也會針對核心Adobe Commerce PHP應用程式的每個受支援發行行發行[修補程式](versioning-policy.md#patch-release)。 修補程式發行可升級核心程式碼基底，確保平台安全、可靠及效能。
+>若要進一步瞭解新功能、雲端基礎結構和擴充功能發行，請參閱[Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)發行說明檔案。
 
 除了此頁面上列出的排程品質、安全性及Beta版修補程式之外，Adobe還透過[品質修補程式工具](versioning-policy.md#individual-patch)提供[個別修補程式](../tools/quality-patches-tool/usage.md)的存取權。 此工具可讓您套用、還原及檢視已安裝Adobe Commerce版本可用的所有個別修補程式的一般資訊。
 
-下表提供排程的修補程式發行日期（日期可能會變更）：
+自2026年1月起，Adobe Commerce將改採下列策略移至每月修補程式發行排程：
 
-<table>
-<thead>
-  <tr>
-    <th>全面發佈</th>
-    <th>修補程式</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-  <tr>
-    <td>2025年2月11日</td>
-    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Beta修補程式</a>： 2.4.8-beta2<br><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：適用於2.4.7、2.4.6、2.4.5和2.4.4</td>
-  </tr>
-  <tr>
-    <tr>
-    <td>2025年4月8日</td>
-    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.8</a></strong>：<ul><li>效能改良</li><li>品質增強功能</li><li>安全性增強功能</li><li>協力廠商相依性更新</li></ul><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：適用於2.4.7、2.4.6、2.4.5和2.4.4</td>
-  </tr>
-  <tr>
-    <td>2025年6月10日</td>
-    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha修補程式</a>： 2.4.9-alpha1<br><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：適用於2.4.8、2.4.7、2.4.6和2.4.5</td>
-  </tr>
-  <tr>
-    <td>2025年8月12日</td>
-    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha修補程式</a>： 2.4.9-alpha2<br><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：適用於2.4.8、2.4.7、2.4.6和2.4.5</td>
-  </tr>
-  <tr>
-    <td>2025年10月14日</td>
-    <td><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha修補程式</a>： 2.4.9-alpha3<br><img alt="修補程式版本圖示" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">安全性修補程式</a>：適用於2.4.8、2.4.7和2.4.6</td>
-  </tr>
-</tbody>
-</table>
+- **隔離的安全性修正** — 個別非累積的[安全性修正](versioning-policy.md#isolated-patch)可能每月發行，並包含所有[支援的](lifecycle-policy.md)發行行安全性修正（包含一般和延伸支援）。
+
+- **安全性修補程式** — 至少每年（5月）都會針對所有[支援的](versioning-policy.md#security-patch-release)發行行發行[安全性修補程式](lifecycle-policy.md)。 這些修補程式包含所有先前發行的獨立安全性修正。 如有必要，Adobe可能會在11月發佈其他安全性修補程式，但並非板上釘釘。
+
+- **修補程式** — 每年（5月）都會發行Adobe Commerce 2.4.x LTS發行系列的完整[修補程式](versioning-policy.md#patch-release) （3年支援期）。
+
+- **Beta修補程式** — 每年發行兩次Adobe Commerce 2.4.x LTS版本系列的[Beta修補程式](versioning-policy.md#beta-patch-release) （三月和十一月）。
+
+如需詳細資訊，請參閱下列影像：
+
+![2026 Adobe Commerce發行行事曆](../assets/release/release-calendar.drawio.svg)

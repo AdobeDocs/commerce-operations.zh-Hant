@@ -2,9 +2,9 @@
 title: 進階內部部署安裝
 description: 瞭解Adobe Commerce內部部署的進階安裝案例。 探索複雜的設定和自訂設定選項。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2485'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 您可以在安裝期間或安裝後建立「管理員」使用者。 如果您在安裝期間建立使用者，則需要所有管理員認證變數。 請參閱[範例localhost安裝](#sample-localhost-installations)。
 
-下清單格提供許多（但並非全部）可用的安裝引數。 如需完整清單，請參閱[命令列工具參考](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises)。
+下清單格提供許多（但並非全部）可用的安裝引數。 如需完整清單，請參閱[命令列工具參考](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)。
 
 | 名稱 | 值 | 必填？ |
 |--- |--- |--- |
@@ -187,6 +187,21 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--amqp-password` | 連線到[!DNL RabbitMQ]的密碼。 不要使用預設密碼`guest`。 | 否 |
 | `--amqp-virtualhost` | 連線至[!DNL RabbitMQ]的虛擬主機。 預設值為`/`。 | 否 |
 | `--amqp-ssl` | 指示是否要連線到[!DNL RabbitMQ]。 預設值為`false`。 如需為[!DNL RabbitMQ]設定SSL的相關資訊，請參閱[!DNL RabbitMQ]。 | 否 |
+| `--consumers-wait-for-messages` | 消費者是否應該等候佇列中的訊息？ 1 — 是，0 — 否 | 否 |
+
+**ActiveMQ Artemis組態選項：**
+
+>[!NOTE]
+>
+>ActiveMQ Artemis是在Adobe Commerce 2.4.6和更新版本中引入。
+
+| 名稱 | 值 | 必填？ |
+|--- |--- |--- |
+| `--stomp-host` | 請勿使用`--stomp`選項，除非您已設定ActiveMQ Artemis的安裝。 請參閱ActiveMQ Artemis安裝，以取得有關安裝和設定ActiveMQ Artemis的詳細資訊。<br><br>安裝ActiveMQ Artemis的主機名稱。 | 否 |
+| `--stomp-port` | 用來連線到ActiveMQ Artemis的連線埠。 預設值為61613。 | 否 |
+| `--stomp-user` | 連線到ActiveMQ Artemis的使用者名稱。 不要使用預設使用者`artemis`。 | 否 |
+| `--stomp-password` | 用來連線到ActiveMQ Artemis的密碼。 不要使用預設密碼`artemis`。 | 否 |
+| `--stomp-ssl` | 指示是否使用SSL連線至ActiveMQ Artemis。 預設值為`false`。 如需為ActiveMQ Artemis設定SSL的相關資訊，請參閱ActiveMQ Artemis。 | 否 |
 | `--consumers-wait-for-messages` | 消費者是否應該等候佇列中的訊息？ 1 — 是，0 — 否 | 否 |
 
 **鎖定組態選項：**
@@ -336,5 +351,24 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Magento installation complete.
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
+
+#### 範例4 — 使用ActiveMQ Artemis安裝
+
+以下範例說明如何將ActiveMQ Artemis作為訊息代理人來安裝Adobe Commerce：
+
+```bash
+bin/magento setup:install --base-url=http://127.0.0.1/magento2/ \
+--db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
+--admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
+--admin-user=admin --admin-password=admin123 --language=en_US \
+--currency=USD --timezone=America/Chicago --use-rewrites=1 \
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200 --stomp-host=localhost --stomp-port=61613 \
+--stomp-user=artemis --stomp-password=artemis
+```
+
+>[!NOTE]
+>
+>ActiveMQ Artemis安裝需要Adobe Commerce 2.4.6或更新版本。
 
 <!-- Last updated from includes: 2024-04-16 09:42:31 -->

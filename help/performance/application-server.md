@@ -2,9 +2,9 @@
 title: GraphQL應用程式伺服器
 description: 瞭解Adobe Commerce中的graphql應用程式伺服器。 探索實作指引和最佳化策略。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2360'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL應用程式伺服器可讓Adobe Commerce維護Commerce GraphQL API請求中的狀態。 GraphQL Application Server （以Swoole擴充功能為基礎）會以具有工作者執行緒的處理程式方式運作，以處理要求處理。 GraphQL Application Server可保留GraphQL API請求中的啟動載入應用程式狀態，藉此增強請求處理和整體產品效能。 API要求會大幅提高效率。
 
-GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
+GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ GraphQL應用程式伺服器可讓Adobe Commerce在連續的Commerce GraphQL API
 
 ### 雲端專案
 
-根據預設，雲端基礎結構專案上的Adobe Commerce包含Swoole擴充功能。 您可以在[檔案的](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)屬性中`runtime`啟用`.magento.app.yaml`。 例如：
+根據預設，雲端基礎結構專案上的Adobe Commerce包含Swoole擴充功能。 您可以在[檔案的](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)屬性中`runtime`啟用`.magento.app.yaml`。 例如：
 
 ```yaml
 runtime:
@@ -273,7 +273,7 @@ git push
 
 >[!NOTE]
 >
->確定您的根`.magento.app.yaml`檔案中的所有自訂設定都已適當地移轉至`application-server/.magento/.magento.app.yaml`檔案。 將`application-server/.magento/.magento.app.yaml`檔案新增至專案後，除了根`.magento.app.yaml`檔案之外，您還應維護該檔案。 例如，如果您需要[設定RabbitMQ服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)或[管理Web屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)，您也應該將相同的設定新增到`application-server/.magento/.magento.app.yaml`。
+>確定您的根`.magento.app.yaml`檔案中的所有自訂設定都已適當地移轉至`application-server/.magento/.magento.app.yaml`檔案。 將`application-server/.magento/.magento.app.yaml`檔案新增至專案後，除了根`.magento.app.yaml`檔案之外，您還應維護該檔案。 例如，如果您需要[設定RabbitMQ服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)或[管理Web屬性](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)，您也應該將相同的設定新增到`application-server/.magento/.magento.app.yaml`。
 
 ### 驗證雲端專案是否啟用
 
@@ -537,3 +537,30 @@ bin/magento server:run --state-monitor
 >[!NOTE]
 >
 >由於PHP記憶體回收行程發生錯誤，`--state-monitor`與PHP版本`8.3.0` - `8.3.4`不相容。 如果您使用PHP 8.3，您必須升級至`8.3.5`或更新版本才能使用此功能。
+
+## 設定使用者端IP偵測的alternativeHeaders
+
+依預設，GraphQL Application Server支援`x-forwarded-for`檔案中定義之`app/etc/di.xml`標頭的標準設定，可在一般Proxy和CDN環境中精確擷取使用者端IP位址。
+
+如果您需要支援其他或自訂標頭（例如`x-client-ip`、`fastly-client-ip`或`x-real-ip`），您可以擴充或覆寫`alternativeHeaders`檔案中的`app/etc/di.xml`引數。 只有在您的環境使用`x-forwarded-for`以外的標頭來傳遞使用者端IP位址時，才需要這樣做。
+
+例如，若要新增對其他標頭的支援，請依照以下方式更新您的`app/etc/di.xml`：
+
+```xml
+<type name="Magento\Framework\HTTP\PhpEnvironment\RemoteAddress">
+    <arguments>
+        <argument name="alternativeHeaders" xsi:type="array">
+            <item name="x-client-ip" xsi:type="string">HTTP_X_CLIENT_IP</item>
+            <item name="fastly-client-ip" xsi:type="string">HTTP_FASTLY_CLIENT_IP</item>
+            <item name="x-real-ip" xsi:type="string">HTTP_X_REAL_IP</item>
+            <item name="x-forwarded-for" xsi:type="string">HTTP_X_FORWARDED_FOR</item>
+        </argument>
+    </arguments>
+</type>
+```
+
+您可以視需要新增、移除或重新排序標頭，以確保從設定的正確來源擷取使用者端IP。
+
+>[!NOTE]
+>
+>如果您使用Adobe Commerce Cloud搭配Fastly CDN模組，此設定會自動處理，不需要手動變更。 只有在自訂CDN、Proxy或非標準標題設定時才需要手動設定。

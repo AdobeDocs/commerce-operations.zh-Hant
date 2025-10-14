@@ -2,9 +2,9 @@
 title: 發行原則
 description: 瞭解不同型別的Adobe Commerce發行版本。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: fd2ebc358850e47975ce6a3b8df058774440bcf2
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,6 @@ Adobe Commerce功能正式發行前的版本已開放給所有Adobe Commerce客�
 
 Beta發行版本可能包含瑕疵，並依「現況」提供，並無任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援(透過Adobe支援服務或其他方式) Beta版本。 客戶不應依賴Beta發行版本或任何隨附檔案或資料的正確運作或效能。 因此，客戶自行承擔使用Beta發行版本所面對的風險。
 
-## 功能、雲端基礎結構和擴充性版本
-
-雲端基礎結構和功能發行包含新功能和功能更新，這些功能和更新以獨立服務的形式提供，與修補程式發行版本分開。 範例包括但不限於：
-
-- 雲端託管服務和基礎結構的更新
-- B2B
-- SaaS產品（目錄服務、資料連線、產品建議和即時搜尋）
-- 擴充性技術(Admin UI SDK、API Mesh、App Builder Starter Kit、Eventing和Webhooks)
-
 ## Hotfix
 
 Hotfix是包含高影響力安全性或品質修正的修補程式，例如影響許多商家的零日漏洞修正。 Adobe會視需要發行支援Adobe Commerce版本的Hotfix，在這些版本發生重大安全性或品質問題時提供支援。 Hotfix已發佈至知識庫的[已知問題區段](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-)。 這些修正包含在下一個計畫的修補程式發行版本中。
@@ -86,14 +77,14 @@ Hotfix是包含高影響力安全性或品質修正的修補程式，例如影�
 >
 >個別修補程式不包含與回溯不相容的變更。
 
-## 隔離的修補程式
+## 隔離的安全性修正
 
-隔離的修補程式是獨立於完整安全性修補程式發行的安全性修正，可加快實作。 每個獨立的修補程式都會解決特定的安全性問題，並包含在最新或即將推出的完整安全性修補程式中。 有關問題的詳細資訊可在相關安全性公告中提供，該公告連結至知識庫(KB)文章，其中包含修正詳細資訊、如何套用修正程式以及其他資訊。
+隔離的修補程式是獨立發行之非累積式安全性修正，與完整安全性修補程式無關，可加快實作。 每個隔離的安全性修正程式都會解決特定的安全性問題，並包含在最新或即將推出的完整安全性修補程式中。 有關問題的詳細資訊會在相關安全性公告中提供，該公告連結至知識庫(KB)文章，其中包含Fix詳細資料、如何套用Fix以及其他資訊。
 
-請參閱[安全性中心](https://helpx.adobe.com/tw/security/products/magento.html)以尋找Adobe Commerce的最新安全性更新。
+請參閱[安全性中心](https://helpx.adobe.com/security/products/magento.html)以尋找Adobe Commerce的最新安全性更新。
 
 ## 自訂修補程式
 
-由非Adobe人員建立，用於修正問題或因各種原因修改Adobe Commerce程式碼。 自訂修補程式是透過[品質修補程式工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/usage)提供。
+由非Adobe人員建立，用於修正問題或因各種原因修改Adobe Commerce程式碼。 自訂修補程式是透過[品質修補程式工具](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)提供。
 
 <!-- Last updated from includes: 2025-05-28 16:37:31 -->

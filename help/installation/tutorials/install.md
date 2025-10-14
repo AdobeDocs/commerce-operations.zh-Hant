@@ -2,9 +2,9 @@
 title: 安裝Adobe Commerce
 description: 請依照下列步驟，在您擁有的基礎設施上安裝Adobe Commerce。
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2261'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,21 @@ magento setup:install --<option>=<value> ... --<option>=<value>
 | `--amqp-password` | 連線到[!DNL RabbitMQ]的密碼。 不要使用預設密碼`guest`。 | 否 |
 | `--amqp-virtualhost` | 連線至[!DNL RabbitMQ]的虛擬主機。 預設值為`/`。 | 否 |
 | `--amqp-ssl` | 指示是否要連線到[!DNL RabbitMQ]。 預設值為`false`。 如需為[!DNL RabbitMQ]設定SSL的相關資訊，請參閱[!DNL RabbitMQ]。 | 否 |
+| `--consumers-wait-for-messages` | 消費者是否應該等候佇列中的訊息？ 1 — 是，0 — 否 | 否 |
+
+**ActiveMQ Artemis組態選項：**
+
+>[!NOTE]
+>
+>ActiveMQ Artemis是在Adobe Commerce 2.4.6和更新版本中引入。
+
+| 名稱 | 值 | 必填？ |
+|--- |--- |--- |
+| `--stomp-host` | 請勿使用`--stomp`選項，除非您已設定ActiveMQ Artemis的安裝。 請參閱ActiveMQ Artemis安裝，以取得有關安裝和設定ActiveMQ Artemis的詳細資訊。<br><br>安裝ActiveMQ Artemis的主機名稱。 | 否 |
+| `--stomp-port` | 用來連線到ActiveMQ Artemis的連線埠。 預設值為61613。 | 否 |
+| `--stomp-user` | 連線到ActiveMQ Artemis的使用者名稱。 不要使用預設使用者`artemis`。 | 否 |
+| `--stomp-password` | 用來連線到ActiveMQ Artemis的密碼。 不要使用預設密碼`artemis`。 | 否 |
+| `--stomp-ssl` | 指示是否使用SSL連線至ActiveMQ Artemis。 預設值為`false`。 如需為ActiveMQ Artemis設定SSL的相關資訊，請參閱ActiveMQ Artemis。 | 否 |
 | `--consumers-wait-for-messages` | 消費者是否應該等候佇列中的訊息？ 1 — 是，0 — 否 | 否 |
 
 **遠端儲存選項：**
@@ -302,6 +317,25 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Magento installation complete.
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
+
+#### 範例4 — 使用ActiveMQ Artemis安裝
+
+以下範例說明如何將ActiveMQ Artemis作為訊息代理人來安裝Adobe Commerce：
+
+```bash
+magento setup:install --base-url=http://127.0.0.1/magento2/ \
+--db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
+--admin-firstname=Commerce --admin-lastname=User --admin-email=user@example.com \
+--admin-user=admin --admin-password=admin123 --language=en_US \
+--currency=USD --timezone=America/Chicago --use-rewrites=1 \
+--search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
+--elasticsearch-port=9200 --stomp-host=localhost --stomp-port=61613 \
+--stomp-user=artemis --stomp-password=artemis
+```
+
+>[!NOTE]
+>
+>ActiveMQ Artemis安裝需要Adobe Commerce 2.4.6或更新版本。
 
 >[!TIP]
 >

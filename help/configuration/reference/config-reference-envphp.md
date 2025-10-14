@@ -2,9 +2,9 @@
 title: env.php參考
 description: 瞭解Adobe Commerce中的env.php檔案配置值和區段。 探索環境設定和組態選項。
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-在[Commerce使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/encryption-key)中進一步瞭解&#x200B;_加密金鑰_。
+在[Commerce使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)中進一步瞭解&#x200B;_加密金鑰_。
 
 ## db
 
@@ -172,11 +172,19 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 
 ## default_connection
 
-定義訊息佇列的預設連線。 值可以是`db`、`amqp`或自訂佇列系統（如`redismq`）。 如果您指定`db`以外的任何值，則必須先安裝並設定訊息佇列軟體。 否則，訊息將無法正確處理。
+定義訊息佇列的預設連線。 值可以是`db`、`amqp`、`stomp`或自訂佇列系統（例如`redismq`）。 如果您指定`db`以外的任何值，則必須先安裝並設定訊息佇列軟體。 否則，訊息將無法正確處理。
 
 ```conf
 'queue' => [
     'default_connection' => 'amqp'
+]
+```
+
+對於STOMP (ActiveMQ Artemis)：
+
+```conf
+'queue' => [
+    'default_connection' => 'stomp'
 ]
 ```
 
@@ -203,7 +211,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-深入瞭解[可下載的網域](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
+深入瞭解[可下載的網域](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
 
 ## 安裝
 
@@ -233,13 +241,13 @@ Commerce應用程式的安裝日期。
 
 ## 佇列
 
-此節點提供訊息佇列設定。
+此節點提供訊息佇列設定。 您可以將RabbitMQ (AMQP)或ActiveMQ Artemis (STOMP)設定為訊息代理人。
 
 ```conf
 'queue' => [
   'topics' => [
-    'customer.created' => [publisher="default-rabitmq"],
-    'order.created' => [publisher="default-rabitmq"],
+    'customer.created' => [publisher="default-broker"],
+    'order.created' => [publisher="default-broker"],
   ]
 ]
 ```
