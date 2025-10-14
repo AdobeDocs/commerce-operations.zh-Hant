@@ -384,7 +384,7 @@ PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/in
 * &#39;%您可以修正此問題，方法是將Magento雲端基礎結構上的Elasticsearch服務升級為&#39;version%&#39;作為&#39;ver_err&#39;
 * &#39;%cluster健全狀態已從\[YELLOW\]變更為\[RED\] (原因：%&#39;為&#39;yel_red&#39;
 * &#39;%裝置%&#39;上沒有剩餘的空間，因為&#39;no_space&#39;
-* &#39;%無法執行[SearchRequest{searchType=%&#39;，因為&#39;failed_query&#39;
+* &#39;%無法執行&lbrack;SearchRequest&lbrace;searchType=%&#39;，因為&#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 
