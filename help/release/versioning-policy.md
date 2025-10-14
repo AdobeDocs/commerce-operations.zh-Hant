@@ -81,10 +81,10 @@ Hotfix是包含高影響力安全性或品質修正的修補程式，例如影�
 
 隔離的修補程式是獨立發行之非累積式安全性修正，與完整安全性修補程式無關，可加快實作。 每個隔離的安全性修正程式都會解決特定的安全性問題，並包含在最新或即將推出的完整安全性修補程式中。 有關問題的詳細資訊會在相關安全性公告中提供，該公告連結至知識庫(KB)文章，其中包含Fix詳細資料、如何套用Fix以及其他資訊。
 
-請參閱[安全性中心](https://helpx.adobe.com/security/products/magento.html)以尋找Adobe Commerce的最新安全性更新。
+請參閱[安全性中心](https://helpx.adobe.com/tw/security/products/magento.html)以尋找Adobe Commerce的最新安全性更新。
 
 ## 自訂修補程式
 
-由非Adobe人員建立，用於修正問題或因各種原因修改Adobe Commerce程式碼。 自訂修補程式是透過[品質修補程式工具](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)提供。
+由非Adobe人員建立，用於修正問題或因各種原因修改Adobe Commerce程式碼。 自訂修補程式是透過[品質修補程式工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/usage)提供。
 
 <!-- Last updated from includes: 2025-10-09 22:53:22 -->
