@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.4-p16是延伸支援安全性版本，針對舊版2.4.4中發現的漏洞提供安全性錯誤修正。它僅適用於Adobe Commerce客戶。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/tw/security/products/magento/apsb25-94.html)。
 
 {{b2b-patches}}
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.8-p3安全性版本針對2.4.8舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/tw/security/products/magento/apsb25-94.html)。
 
 {{b2b-patches}}
 

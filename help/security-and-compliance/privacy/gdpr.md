@@ -32,4 +32,4 @@ ht-degree: 0%
 如需Adobe Commerce如何協助商家遵守GDPR的詳細資訊，請參閱下列內容：
 
 - [GDPR法規遵循](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=zh-Hant)
-- [Adobe Commerce已準備好迎接GDPR](https://business.adobe.com/privacy/general-data-protection-regulation.html)
+- [Adobe Commerce已準備好迎接GDPR](https://business.adobe.com/tw/privacy/general-data-protection-regulation.html)

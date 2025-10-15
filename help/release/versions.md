@@ -24,7 +24,7 @@ Adobe為Adobe Commerce客戶2.4.4和2.4.5版提供一年支援延長服務，不
 >
 >- Adobe建議您安裝或升級Adobe Commerce，以使用每個版本適用的最新安全性修補程式。
 >- 如需其他安全性更新，請參閱[Magento / Adobe Commerce的安全性更新](https://helpx.adobe.com/tw/security/products/magento.html)。
->- 如需定價，請參閱[Adobe Commerce定價](https://business.adobe.com/products/magento/pricing.html)。
+>- 如需定價，請參閱[Adobe Commerce定價](https://business.adobe.com/tw/products/magento/pricing.html)。
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
