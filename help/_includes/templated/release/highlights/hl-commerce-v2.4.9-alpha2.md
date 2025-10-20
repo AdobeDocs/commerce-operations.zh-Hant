@@ -1,5 +1,5 @@
 ---
-source-git-commit: bfad68a46b9b1a79a702f04efd39129decda1a1c
+source-git-commit: c71367c553dce66c146540389461f36eaa529bfc
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -93,17 +93,20 @@ _AC-14610_
 #### 將USPS整合從過時的網頁工具API移轉至新的RESTful USPS API
 
 為了遵循USPS在2026年1月25日宣佈淘汰舊版Web Tools API，Adobe Commerce USPS整合已移轉至新的RESTful USPS API。
+
 重要增強功能：
-- Dual API支援：管理員使用者現在可以透過組態設定，在舊版Web Tools API和新RESTful USPS API之間選擇。
-- 驗證升級：實作OAuth 2.0以安全API存取。
-- 改善資料格式：從XML轉換為JSON，以實現更乾淨、更有效的通訊。
-- 新增管理欄位：
-閘道REST URL （根據模式：開發或即時）
-使用者端ID與密碼
-帳戶型別、帳戶號碼
-CRID、MID、郵件程式識別碼
-適用於國際出貨的AES/ITN
-REST特定允許的送貨方法
+
+* Dual API支援：管理員使用者現在可以透過組態設定，在舊版Web Tools API和新RESTful USPS API之間選擇。
+* 驗證升級：實作OAuth 2.0以安全API存取。
+* 改善資料格式：從XML轉換為JSON，以實現更乾淨、更有效的通訊。
+* 新增管理欄位：
+   * 閘道REST URL （根據模式：開發或即時）
+   * 使用者端ID與密碼
+   * 帳戶型別、帳戶號碼
+   * CRID、MID、郵件程式識別碼
+   * 適用於國際出貨的AES/ITN
+   * REST特定允許的送貨方法
+
 此移轉作業可確保Adobe Commerce符合USPS標準、提升系統可靠性，並保障商家的航運整合。
 
 _AC-13257_

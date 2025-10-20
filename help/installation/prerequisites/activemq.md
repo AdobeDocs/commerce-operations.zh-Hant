@@ -1,9 +1,9 @@
 ---
 title: 訊息代理人(ActiveMQ Artemis)
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝來安裝和設定Apache ActiveMQ Artemis訊息代理人。
-source-git-commit: 6f15a24e650a7138bae6d0b40f230e6970a943b0
+source-git-commit: 46816b42ea30cb6c5f5ce59752cc00c38d221610
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,10 @@ ht-degree: 0%
 
 Adobe Commerce也透過Simple Text Oriented Messaging Protocol (STOMP)支援ActiveMQ Artemis開放原始碼訊息代理人。 它提供可靠且可擴充的傳訊系統，提供彈性的STOMP式整合。
 
+
 >[!NOTE]
 >
->ActiveMQ Artemis是在Adobe Commerce 2.4.6和更新版本中引入。
+>ActiveMQ Artemis是在Adobe Commerce 2.4.6和更新版本中引入。 如需有關在雲端基礎結構專案上在Adobe Commerce中安裝ActiveMQ Artemis的詳細資訊，請參閱[雲端上的Commerce ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemqsee)中的&#x200B;*設定ActiveMQ服務*。
 
 訊息佇列提供非同步通訊機制，讓訊息的傳送者與接收者不會相互聯絡。 也不需要同時與訊息佇列通訊。 當寄件者將郵件放入佇列時，郵件會儲存到收件者收到郵件為止。
 
