@@ -2,7 +2,7 @@
 title: Adobe Commerce 2.4.8安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.7版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-source-git-commit: b0756431d8ddf0833ef8c13528f7681a1a92a3ca
+source-git-commit: 40328796c25c56c101f95e286298325b5d1ef439
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.8-p3安全性版本針對2.4.8舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/tw/security/products/magento/apsb25-94.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)。
 
 {{b2b-patches}}
 
@@ -31,13 +31,13 @@ Adobe Commerce 2.4.8-p3安全性版本針對2.4.8舊版中發現的漏洞提供�
 
 * -AC-15446的修正：修正`Magento\Framework\Mail\EmailMessage`中`getBodyText()`嘗試在`getTextBody()`上呼叫不存在的`Symfony\Component\Mime\Message`方法的錯誤，確保與Magento 2.4.8-p2和`magento/framework` 103.0.8-p2相容。
 
-{{oct-2025-backports}}<!--AC-15446-->
+{{oct-2025-backports}}
 
 ## 2.4.8 - p2
 
 Adobe Commerce 2.4.8-p2安全性版本針對2.4.8舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-71](https://helpx.adobe.com/tw/security/products/magento/apsb25-71.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)。
 
 {{b2b-patches}}
 
@@ -45,7 +45,7 @@ Adobe Commerce 2.4.8-p2安全性版本針對2.4.8舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.8-p1安全性版本針對2.4.8舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-50](https://helpx.adobe.com/tw/security/products/magento/apsb25-50.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)。
 
 {{b2b-patches}}
 
@@ -69,7 +69,7 @@ Adobe Commerce 2.4.8-p1安全性版本針對2.4.8舊版中發現的漏洞提供�
 
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110和VULN-31547的修正也以獨立修補程式的形式提供。 如需詳細資訊，請參閱[知識庫文章](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)。
+CVE-2025-47110和VULN-31547的修正也以獨立修補程式的形式提供。 如需詳細資訊，請參閱[知識庫文章](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)。
 
 >[!ENDSHADEBOX]
 
