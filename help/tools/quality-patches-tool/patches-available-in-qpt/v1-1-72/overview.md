@@ -4,7 +4,7 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.72中可用�
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 89b78f72fce3f65b8f282038cc4e2ef0f190bda3
+source-git-commit: a6a18a4cbab9d2e5a0c4824fc5ad9463f9e61c1c
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -23,7 +23,7 @@ QPT v1.1.72包含下列修補程式：
 1. **ACSD-67383**：以客戶身分登入時，若在同一個工作階段中有兩個公司管理員帳戶，會導致&#x200B;*沒有此類實體出現cartId*&#x200B;錯誤。
 1. **ACSD-67518**：進階報表在資料列計數超過批次大小時產生重複的標題資料列。
 1. **ACSD-67639**：為&#x200B;**[!UICONTROL Dynamic Price]**&#x200B;設為&#x200B;*No*&#x200B;的套件組合產品建立銷退折讓單失敗。
-1. **ACSD-67696**：快取排清後，`media_gallery`專案沒有傳回購物車GraphQL產品節點。
+1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**：快取排清後，`media_gallery`專案沒有傳回購物車GraphQL產品節點。
 1. **ACSD-67946**：購物車更新顯示重複的錯誤橫幅。
 1. **ACSD-68011**：可以透過`/V1/sharedCatalog/:id/assignProducts` [!DNL REST] API將不存在的SKU指派給共用目錄。
 1. **ACSD-68118**： `customerCart` GraphQL查詢傳回的產品屬性值未反映商店標題，導致本地化不一致。
