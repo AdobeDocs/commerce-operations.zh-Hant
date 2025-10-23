@@ -1,7 +1,7 @@
 ---
-source-git-commit: c71367c553dce66c146540389461f36eaa529bfc
+source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ _AC-14610_
 * 改善資料格式：從XML轉換為JSON，以實現更乾淨、更有效的通訊。
 * 新增管理欄位：
    * 閘道REST URL （根據模式：開發或即時）
-   * 使用者端ID與密碼
+   * 使用者端ID &amp;amp；amp；密碼
    * 帳戶型別、帳戶號碼
    * CRID、MID、郵件程式識別碼
    * 適用於國際出貨的AES/ITN
