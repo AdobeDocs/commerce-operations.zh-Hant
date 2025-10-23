@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->- 如需雲端基礎結構專案上的Adobe Commerce，請參閱雲端指南中的[升級Commerce版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html)。
+>- 如需雲端基礎結構專案上的Adobe Commerce，請參閱雲端指南中的[升級Commerce版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=zh-Hant)。
 >- 如果您複製GitHub存放庫，請勿使用此方法來升級。 請參閱[升級Git安裝](../developer/git-installs.md)。
 
 下列指示說明如何使用Composer封裝管理員進行升級。 Adobe Commerce 2.4.2推出對Composer 2的支援。 如果您嘗試從&lt;2.4.1升級，您必須先使用Composer 1 _升級到Composer 2以進行>2.4.2升級之前_，升級到與Composer 2相容的版本（例如，2.4.2）。 此外，您必須執行[支援的PHP版本](../../installation/system-requirements.md)。
