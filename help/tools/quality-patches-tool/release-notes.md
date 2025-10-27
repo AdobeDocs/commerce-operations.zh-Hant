@@ -3,9 +3,9 @@ title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 8ca7b1b616bd5733cc2ecc18cef50dbb176ea0c3
+source-git-commit: 828be0e395980ddd9fca3424dc08324c3fe87244
 workflow-type: tm+mt
-source-wordcount: '29060'
+source-wordcount: '29260'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,21 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.73 {#v1-1-73}
+
+* **ACSD-67171** (適用於Adobe Commerce >=2.4.4 &lt;2.4.9) — 修正B2B使用者在工作階段過期或在結帳期間被移除時看到&#x200B;*[!UICONTROL Access Denied]*&#x200B;頁面的問題。
+* **ACSD-67908** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正JS檔案無法在多存放區設定中正確合併的問題。
+* **ACSD-68190** (適用於Adobe Commerce >=2.4.4 &lt;2.4.7) — 修正未套用折扣、套用折扣未正確顯示在GraphQL購物車檢視回應中，以及移除優惠券折扣時移除非優惠券折扣的問題。
+* **ACSD-68206** (適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9) — 修正使用GraphQL應用程式伺服器並安裝&#x200B;**[!UICONTROL Rate Limiting]**&#x200B;功能和[!DNL PHP Redis]擴充功能時的錯誤。
+* **ACSD-68356** (適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9) — 修正GraphQL購物車查詢傳回虛擬報價不正確折扣金額的問題。
+* **ACSD-68391** (適用於Adobe Commerce >=2.4.6-p10 &lt;2.4.9) — 修正&#x200B;**[!UICONTROL Quick Order]**&#x200B;和&#x200B;**[!UICONTROL Requisition Lists]**&#x200B;中未正確套用類別相關許可權的問題。
+* **ACSD-68400** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正虛擬禮卡數量未準確反映在庫存預訂表格中的問題。
 
 ## v1.1.72 {#v1-1-72}
 
