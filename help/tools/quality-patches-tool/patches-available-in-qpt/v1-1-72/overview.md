@@ -4,9 +4,9 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.72中可用�
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4a3060235a4d22764cbb231aca7c1f835d357906
+source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ QPT v1.1.72包含下列修補程式：
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**：快取排清後，`media_gallery`專案沒有傳回購物車GraphQL產品節點。
 1. **ACSD-67946**：購物車更新顯示重複的錯誤橫幅。
 1. **ACSD-68011**：透過/V1/sharedCatalog/:id/assignProducts API指派給共用目錄的不存在SKU。
-1. **ACSD-68118**： `customerCart` GraphQL查詢傳回的產品屬性值未反映商店標題，導致本地化不一致。
+1. **ACSD-68118**： `customerCart` [!DNL GraphQL]查詢傳回不正確的商店檢視產品屬性值。
 1. **ACSD-68092**：由於排定的更新與基本產品資料之間的同步處理錯誤，多次儲存後套裝產品選項會遺失。
 1. **ACSD-67424**： `updated_at` `GET /carts/search` API回應中的[!DNL REST]值與使用可轉讓引號時&#x200B;**[!UICONTROL Admin panel]**&#x200B;中顯示的值不符。
 1. **ACSD-67187**：限制在非預設網站的管理員使用者看見錯誤，*「*」請至少建立公開共用目錄以繼續*，並且無法存取公司格線上的&#x200B;**[!UICONTROL Add New Company]**&#x200B;按鈕。
