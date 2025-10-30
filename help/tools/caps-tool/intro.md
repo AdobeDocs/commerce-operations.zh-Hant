@@ -3,9 +3,9 @@ title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: 瞭解 [!DNL Cloud Automation Patching Service (CAPS)]、其用途、存取方法，以及自動修補的最佳實務
 hide: true
 hidefromtoc: true
-source-git-commit: 6db46ef802edaeeec8a6986d4621ea647b171b0c
+source-git-commit: 4bb2d597e93379dbe81bae100ccc0b94b39acf26
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,12 @@ ht-degree: 0%
 ## 與Adobe Commerce Cloud的整合
 
 [!DNL CAPS]與Adobe Commerce Cloud基礎架構完全整合，並與您現有的雲端環境無縫運作。 其運用雲端原生功能以獲得最佳效能、提供詳細的記錄與監控，以及與Adobe Commerce雲端支援工具整合。
+
+## 教學課程影片
+
+瞭解Adobe雲端自動修補服務，以及此工具如何協助使用者快速尋找及套用安全性修補程式。 下列影片說明如何透過SWAT儀表板存取、選擇您的專案和環境，以及按一下即可套用修補程式。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## 常見使用案例
 
