@@ -23,7 +23,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424">ACSD-67424新增QPT 1.1.72修正的詳細說明： GET /carts/search REST API回應中的Updated_at值不符合使用可協商引號</a>時管理面板中顯示的值。</p>
+      <td><p>已針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424">ACSD-67424新增QPT 1.1.72修正的詳細說明： GET /carts/search REST API回應中的Updated_at值不符合使用可協商引號</a>時管理面板中顯示的值。</p>
 </td>
       <td>
         新主題qpt
@@ -31,7 +31,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8967a4cc8006fc5fa4319f7ffd6d8c7f3edf3d1">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383之QPT 1.1.72修正的詳細說明：在同一工作階段中，以具有兩個公司管理員帳戶的客戶的身分登入會導致「沒有具有cartId的這類實體」錯誤</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383之QPT 1.1.72修正的詳細說明：在同一工作階段中，以具有兩個公司管理員帳戶的客戶的身分登入會導致「沒有具有cartId的這類實體」錯誤</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -53,7 +53,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview">概觀：品質修補工具(QPT) v1.1.73</a>。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview">概觀：品質修補工具(QPT) v1.1.73</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -75,7 +75,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064">ACSD-68064的QPT 1.1.72修正的詳細說明：建立排程更新會在巢狀類別數目很高的環境中產生重複專案</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064">ACSD-68064的QPT 1.1.72修正的詳細說明：建立排程更新會在巢狀類別數目很高的環境中產生重複專案</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -83,7 +83,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8d4046ce9ea0d085cc11f5631d04a8b3adb3239">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946">ACSD-67946之QPT 1.1.72修正的詳細說明：購物車更新顯示重複的錯誤橫幅</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946">ACSD-67946之QPT 1.1.72修正的詳細說明：購物車更新顯示重複的錯誤橫幅</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -113,7 +113,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040">ACSD-68040之QPT 1.1.72修正的詳細說明：前端搜尋頁面在MariaDB 10.6和11.4上出現效能降低的情況，並含有許多歷史搜尋要求</a>。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040">ACSD-68040之QPT 1.1.72修正的詳細說明：前端搜尋頁面在MariaDB 10.6和11.4上出現效能降低的情況，並含有許多歷史搜尋要求</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -121,7 +121,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6dff1447a89c083fb8bd867281d20462cc843baa">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118">ACSD-68118的QPT 1.1.72修正的詳細說明： CustomerCart GraphQL查詢傳回的產品屬性值未反映商店標題，導致本地化不一致</a>。</p>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118">ACSD-68118的QPT 1.1.72修正的詳細說明： CustomerCart GraphQL查詢傳回的產品屬性值未反映商店標題，導致本地化不一致</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -129,7 +129,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7dec696f3d87d91902a166314199cf3b6c161f85">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807">ACSD-66807之QPT 1.1.72修正的詳細說明： Report_viewed_product_index表格顯示不正確的產品頁面檢視次數</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807">ACSD-66807之QPT 1.1.72修正的詳細說明： Report_viewed_product_index表格顯示不正確的產品頁面檢視次數</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -151,7 +151,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639之QPT 1.1.72修正的詳細說明：針對「動態價格」設為「否</a>」的套件組合產品建立銷退折讓單失敗。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639之QPT 1.1.72修正的詳細說明：針對「動態價格」設為「否</a>」的套件組合產品建立銷退折讓單失敗。</p>
 </td>
       <td>
         新主題qpt
