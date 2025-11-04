@@ -2,9 +2,9 @@
 title: 共擔責任安全性與營運模式
 description: 瞭解在雲端基礎結構專案中，Adobe Commerce中涉及的每一方的安全性責任。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
+source-git-commit: aac78fc95b86951f352a636eef33e0b79b22a183
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2939'
 ht-degree: 0%
 
 ---
@@ -745,9 +745,9 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
-| Elasticsearch的可用性 | R |   |
-| 預設Elasticsearch設定的組態 | R |   |
-| 提交服務請求以安裝與已安裝Elasticsearch版本相容的Adobe Commerce版本 |  | R |
+| Elasticsearch或OpenSearch的可用性 | R |   |
+| 預設Elasticsearch或OpenSearch設定的組態 | R |   |
+| 提交服務要求以安裝與已安裝的Elasticsearch版本相容的Adobe Commerce或OpenSearch版本 |  | R |
 
 {style="table-layout:auto"}
 
@@ -793,11 +793,17 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 {style="table-layout:auto"}
 
+>
+>商戶必須使用最新版的即時搜尋、產品建議和支付服務，以確保最高的穩定性、功能和支援資格。
+>Adobe不支援過時的版本，而升級可確保您受益於最新的增強功能和錯誤修正。
+>如需支援版本的詳細資訊，請參閱[Commerce服務的產品可用性矩陣](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)。
+
 #### 產品推薦
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
 | Product Recommendations服務的可用性 | R |   |
+| 升級Product Recommendations模組 |   | R |
 
 {style="table-layout:auto"}
 
@@ -806,6 +812,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 |     | Adobe | 商家 |
 | --- | --- | --- |
 | 即時搜尋服務的可用性 | R |   |
+| 升級即時搜尋模組 |   | R |
 
 {style="table-layout:auto"}
 
@@ -820,6 +827,15 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | 核心AEM EDS實作(Commerce樣板) | R |   |
 | 自訂AEM EDS實施 |  | R |
 | 任何其他自訂店面實作 |  | R |
+
+{style="table-layout:auto"}
+
+#### 付款服務
+
+|     | Adobe | 商家 |
+| --- | --- | --- |
+| 付款服務的可用性 | R |   |
+| 升級付款模組 |   | R |
 
 {style="table-layout:auto"}
 
