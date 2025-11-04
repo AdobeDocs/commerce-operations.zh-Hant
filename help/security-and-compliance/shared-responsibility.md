@@ -796,7 +796,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 >
 >商戶必須使用最新版的即時搜尋、產品建議和支付服務，以確保最高的穩定性、功能和支援資格。
 >Adobe不支援過時的版本，而升級可確保您受益於最新的增強功能和錯誤修正。
->如需支援版本的詳細資訊，請參閱[Commerce服務的產品可用性矩陣](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)。
+>如需支援版本的詳細資訊，請參閱[Commerce服務的產品可用性矩陣](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability#commerce-services)。
 
 #### 產品推薦
 
