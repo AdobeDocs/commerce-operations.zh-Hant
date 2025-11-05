@@ -3,10 +3,10 @@ user-guide-title: 升級指南
 user-guide-description: 瞭解為什麼升級您的Adobe Commerce應用程式如此重要，以及如何成功規劃和執行升級。
 feature: Upgrade
 topic: Administration, Commerce, Development, Upgrade
-source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
+source-git-commit: 4616cc6990921b531483213f2904a24b483fb7ac
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 5%
+source-wordcount: '144'
+ht-degree: 4%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 5%
    - [檢閱平台變更](prepare/platform-changes.md)
    - [完成升級必要條件](prepare/prerequisites.md)
    - [從Elasticsearch移轉至OpenSearch](prepare/opensearch-migration.md)
+   - [從RabbitMQ移轉至ActiveMQ](prepare/activemq-migration.md)
    - [瞭解升級範圍](prepare/scope.md)
 - 實施 {#implementation}
    - [執行升級](implementation/perform-upgrade.md)
@@ -54,4 +55,4 @@ ht-degree: 5%
 - 資源 {#resources}
    - [建議閱讀](resources/recommended-reading.md)
    - [使用Adobe Commerce匯入最新的平台](resources/recommended-upgrade-paths.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
