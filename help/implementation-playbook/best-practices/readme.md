@@ -18,7 +18,7 @@ Adobe接受來自內部和外部利害關係人的請求，包括但不限於以
 
 ## 如何建立請求？
 
-**內部利害關係人**&#x200B;可以透過在COMDOX專案中開啟Jira問題來提交請求。 **外部利害關係人**&#x200B;可以透過開啟此存放庫中的[GitHub問題](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose)來提交請求。
+**內部利害關係人**&#x200B;可以透過在COMDOX專案中開啟Jira問題來提交請求。 **外部利害關係人**&#x200B;可以透過開啟此存放庫中的[GitHub問題](https://github.com/AdobeDocs/commerce-operations.zh-Hant/issues/new/choose)來提交請求。
 
 您可以提交下列型別的請求：
 
@@ -29,7 +29,7 @@ Adobe接受來自內部和外部利害關係人的請求，包括但不限於以
 ## 整體程式為何？
 
 
-**建立Jira票證或問題** — 內部關係人在COMDOX專案中建立Jira票證。 外部利益關係人提交GitHub問題。 在Jira或[GitHub問題](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose)中包含完整的詳細資料，以協助團隊瞭解內容並排定請求的優先順序。
+**建立Jira票證或問題** — 內部關係人在COMDOX專案中建立Jira票證。 外部利益關係人提交GitHub問題。 在Jira或[GitHub問題](https://github.com/AdobeDocs/commerce-operations.zh-Hant/issues/new/choose)中包含完整的詳細資料，以協助團隊瞭解內容並排定請求的優先順序。
 
 **Adobe專案團隊會評估請求並排定其優先順序** — 團隊會定期監控請求以確定優先順序，並評估請求的變更以納入Implementation Playbook最佳實務中。 例如，團隊可能會決定不建立新的最佳實務主題，而是將請求的內容新增至Experience League或Adobe Developer網站上的現有產品檔案。
 

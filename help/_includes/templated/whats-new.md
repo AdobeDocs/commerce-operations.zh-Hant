@@ -614,7 +614,7 @@ ht-degree: 1%
       <td>
         重大更新
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">提取請求</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.zh-Hant/pull/161">提取請求</a></td>
     </tr>
   </tbody>
 </table>
