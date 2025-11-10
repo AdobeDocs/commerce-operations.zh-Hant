@@ -17,4 +17,4 @@ ht-degree: 0%
 
 {{bics}}
 
-使用Composer將您的Commerce安裝更新至最新發行版本，以運用新功能、效能改善和安全性修補程式。 如需詳細的升級指示，請參閱[Adobe Commerce升級指南](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)。
+使用Composer將您的Commerce安裝更新至最新發行版本，以運用新功能、效能改善和安全性修補程式。 如需詳細的升級指示，請參閱[Adobe Commerce升級指南](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=zh-Hant)。
