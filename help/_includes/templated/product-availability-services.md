@@ -1,5 +1,5 @@
 ---
-source-git-commit: 4f72726e9e49521db486d5b61e0e598f9f6f87dd
+source-git-commit: 7e145d727fb844c8d984ab6806af475237cb3be5
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 5%
@@ -23,14 +23,14 @@ ht-degree: 5%
   <tbody>
       <tr>
           <td>適用於Adobe Commerce的目錄服務</td>
-          <td>1.32</td>
-          <td>1.32</td>
-          <td>1.32</td>
-          <td>1.32</td>
-          <td>1.32</td>
+          <td>1.42</td>
+          <td>1.42</td>
+          <td>1.42</td>
+          <td>1.42</td>
+          <td>1.42</td>
           <td>
-              <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/catalog-service/guide-overview">總覽</a><br/>
-              <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/catalog-service/release-notes">發行說明</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">總覽</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">發行說明</a><br/>
           </td>
       </tr>
       <tr>
@@ -42,7 +42,7 @@ ht-degree: 5%
           <td>4.6.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">市集</a><br/>
-              <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/release-notes">發行說明</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">發行說明</a><br/>
           </td>
       </tr>
       <tr>
@@ -54,7 +54,7 @@ ht-degree: 5%
           <td>2.4.0 (PHP 8.1)</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">市集</a><br/>
-              <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/release-notes">發行說明</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">發行說明</a><br/>
           </td>
       </tr>
       <tr>
@@ -66,7 +66,7 @@ ht-degree: 5%
           <td>6.5.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">市集</a><br/>
-              <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/release-notes">發行說明</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">發行說明</a><br/>
           </td>
       </tr>
   </tbody>
