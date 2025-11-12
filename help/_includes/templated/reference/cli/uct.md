@@ -1,7 +1,7 @@
 ---
-source-git-commit: e044459f849f35a4a1e161a191bc7497fcef9281
+source-git-commit: 92685411a41cb03f1ac9408b0cef2fe83b4a2a16
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,10 @@ ht-degree: 1%
 ## 一般
 
 在[總覽](/help/upgrade/upgrade-compatibility-tool/overview.md)中進一步瞭解工具。
+
+>[!NOTE]
+>
+>`composer update`命令無法升級此工具 — 您必須[下載並安裝最新版本](/help/upgrade/upgrade-compatibility-tool/run.md)。
 
 此參考檔案是從應用程式原始碼產生。 若要變更檔案，您應在相關[程式碼基底](https://github.com/magento)存放庫中開啟對應命令的提取要求。 如需詳細資訊，請參閱[程式碼貢獻](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)。
 
