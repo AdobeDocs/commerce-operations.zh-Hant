@@ -3,7 +3,7 @@ title: 使用Valkey作為預設快取
 description: 瞭解如何將Valkey設定為Adobe Commerce的預設快取。 探索命令列設定、設定選項和驗證技術。
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: e9f1bef9f97a0e1d738f1221758f1b9a0a238da1
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -34,7 +34,7 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 >從&#x200B;**Adobe Commerce 2.4.9-alpha2**&#x200B;開始，**Valkey**&#x200B;已因授權變更正式取代CLI工具中的Redis。 Valkey是Redis的分支，可維護幾乎相同的功能。 對於&#x200B;**版本2.4.8和更早版本**，用於設定Valkey的CLI命令與Redis的命令相同，可確保順暢的回溯相容性，並簡化移轉或雙環境支援。 下列範例顯示Valkey特定命令。
 
 ```bash
-bin/magento setup:config:set --cache-backend=redis --cache-backend-valkey-<parameter>=<value>...
+bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
 ```
 
 | 命令列引數 | 值 | 含義 | 預設值 |
@@ -272,7 +272,7 @@ valkey-cli monitor
 ### Valkey ping命令
 
 ```bash
-redis-cli ping
+valkey-cli ping
 ```
 
 預期的回應是： `PONG`
