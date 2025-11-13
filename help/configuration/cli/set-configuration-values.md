@@ -2,9 +2,9 @@
 title: 設定設定值
 description: 瞭解如何在Adobe Commerce中設定設定值及變更鎖定的管理員值。 探索進階設定指令和技術。
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 2672c696d672ad72bef7537570ed630bc33c41b4
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -124,19 +124,19 @@ bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [
 **若要設定敏感的組態值**：
 
 ```bash
-bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
+bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
 下表說明`set`命令引數：
 
 | 引數 | 說明 |
-| --- | --- |
+| --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `--scope` | 設定的範圍。 可能的值為`default`、`website`或`store`。 預設值為`default`。 |
 | `--scope-code` | 設定的範圍代碼（網站代碼或商店檢視代碼） |
 | `-e or --lock-env` | 鎖定值，使其無法在管理員中編輯，或變更已在管理員中鎖定的設定。 命令會將值寫入`<Commerce base dir>/app/etc/env.php`檔案。 |
 | `-c or --lock-config` | 鎖定值，使其無法在管理員中編輯，或變更已在管理員中鎖定的設定。 命令會將值寫入`<Commerce base dir>/app/etc/config.php`檔案。 如果您同時指定兩個選項，`--lock-config`選項會覆寫`--lock-env`。 |
 | `path` | _必要_。 設定路徑 |
-| `value` | _必要_。 設定的值 |
+| `value` | _必要_。 設定的值。 雖然可以在CLI命令中作為個別引數傳遞，但Adobe建議您不要在原始命令中指定它。 請改為執行不含值的命令，然後在出現提示時輸入值。 使用此方法可防止將敏感的存取值寫入bash_history，這是設定組態最安全的方法。 |
 
 >[!INFO]
 >
@@ -221,7 +221,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show`命令會將任何[加密值](../reference/config-reference-sens.md)的值顯示為一系列星號： `**&#x200B;**&#x200B;**`。
+>`bin/magento config:show`命令會將任何[加密值](../reference/config-reference-sens.md)的值顯示為一系列星號： `******`。
 
 ### 範例
 
