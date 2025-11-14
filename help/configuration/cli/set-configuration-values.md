@@ -2,9 +2,9 @@
 title: 設定設定值
 description: 瞭解如何在Adobe Commerce中設定設定值及變更鎖定的管理員值。 探索進階設定指令和技術。
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 2672c696d672ad72bef7537570ed630bc33c41b4
+source-git-commit: 5e2d11330d3334df36ba8b3d176fbe2d8bfe0486
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -140,9 +140,7 @@ bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 
 >[!INFO]
 >
->截至Commerce 2.2.4，`--lock-env`和`--lock-config`選項會取代`--lock`選項。
->
->如果您使用`--lock-env`或`--lock-config`選項來設定或變更值，則必須使用[`bin/magento app:config:import`命令](../cli/import-configuration.md)來匯入設定，然後才能存取Admin或Storefront。
+>截至Commerce 2.2.4，`--lock-env`和`--lock-config`選項會取代`--lock`選項。 若您使用其中一個選項，值會直接寫入`app/etc/env.php`或`app/etc/config.php`檔案，且在Admin中成為唯讀。 若要將這些檔案的組態變更匯入資料庫，請執行`bin/magento app:config:import`命令，例如，在手動編輯或重新部署檔案之後。
 
 如果您輸入的設定路徑不正確，這個命令會傳回錯誤
 
@@ -191,7 +189,7 @@ bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecu
 
 >[!INFO]
 >
->`env.php`檔案是系統特定的。 您不應該將它轉移到另一個系統。 您可以使用它來覆寫資料庫中的組態值。 例如，您可以從另一個系統取得資料庫傾印並覆寫`base_url`和其他值，因此您不必修改資料庫。
+>`env.php`檔案是系統特定的。 請勿將其傳輸到其他系統。 您可以使用它來覆寫資料庫中的組態值。 例如，您可以從另一個系統取得資料庫傾印並覆寫`base_url`和其他值，因此您不必修改資料庫。
 
 如果您依下列方式使用`--lock-config`選項，組態值會儲存在`<Commerce base dir>/app/etc/config.php`中。 在管理員中編輯此值的欄位已停用。
 
@@ -221,7 +219,7 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 >[!INFO]
 >
->`bin/magento config:show`命令會將任何[加密值](../reference/config-reference-sens.md)的值顯示為一系列星號： `**&#x200B;**&#x200B;**`。
+>`bin/magento config:show`命令會將任何[加密值](../reference/config-reference-sens.md)的值顯示為一系列星號： `******`。
 
 ### 範例
 
