@@ -4,9 +4,9 @@ description: 瞭解如何從管理員或命令列合併Adobe Commerce專案的CS
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 19f874130645fcabe3178a37ec6dedcf75b93afa
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -89,9 +89,19 @@ ht-degree: 0%
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
+## 延遲非關鍵性標題指令碼
+
+啟用此設定以自動遞延在Head區段載入的非關鍵Javascript： [!UICONTROL **商店** > **設定** > **設定** > **進階** > **開發人員** > **JavaScript設定**]。
+
+您也可以從命令列啟用此標幟：
+
+```bash
+php -f bin/magento config:set dev/js/defer_non_critical 1
+```
+
 ## 其他資訊
 
 - [使用者端最佳化設定](../../../performance/configuration.md#client-side-optimization-settings)
-- [使用手冊：最佳化資源檔](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [使用手冊：最佳化資源檔](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [前端開發人員指南： CSS合併、縮制和網站效能](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [進階JavaScript套件組合](../../../performance/advanced-js-bundling.md)
