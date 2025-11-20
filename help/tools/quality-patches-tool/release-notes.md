@@ -3,9 +3,9 @@ title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 828be0e395980ddd9fca3424dc08324c3fe87244
+source-git-commit: fff49f8c9b0c1def976c14e72b4ae7ee08f823b9
 workflow-type: tm+mt
-source-wordcount: '29260'
+source-wordcount: '29413'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,20 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.74 {#v1-1-74}
+
+* **ACSD-68636** (適用於Adobe Commerce >=2.4.4 &lt;2.4.9) — 修正從其他商店建立發票時，商店擁有者的名稱未正確顯示在禮品卡電子郵件標題的問題。
+* **ACSD-68430** (適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.8) — 修正記錄中包含多個已從屬性設定刪除的屬性選項時，無法儲存客戶或客戶地址的問題。
+* **ACSD-68499** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正GraphQL `updateCartItems`突變在更新數量超過可用庫存時傳回錯誤成功回應，導致數量和總數膨脹的問題。
+* **ACSD-68810** (適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9) — 修正將訂單指派給在其他網站上建立之客戶（不論&#x200B;**[!UICONTROL Customer Account Sharing]**&#x200B;設定為何）的問題。
+* 已更新的版本： **ACSD-49737**、**ACSD-57003-V2**
+* 已取代的修補程式： **ACSD-61969**
 
 ## v1.1.73 {#v1-1-73}
 
