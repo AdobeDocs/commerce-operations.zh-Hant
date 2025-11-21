@@ -92,6 +92,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 ## 其他資訊
 
 - [使用者端最佳化設定](../../../performance/configuration.md#client-side-optimization-settings)
-- [使用手冊：最佳化資源檔](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [使用手冊：最佳化資源檔](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [前端開發人員指南： CSS合併、縮制和網站效能](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [進階JavaScript套件組合](../../../performance/advanced-js-bundling.md)
