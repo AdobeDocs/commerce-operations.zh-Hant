@@ -116,5 +116,5 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 >[!NOTE]
 >
->- 雲端基礎結構專案上的Adobe Commerce可將產品影像調整大小解除安裝到Fastly服務。 請參閱[雲端指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html#deep-image-optimization)中的&#x200B;_深度影像最佳化_。
->- 如果您使用遠端儲存模組，也可以嘗試將影像大小調整解除安裝到nginx。 請參閱[設定指南](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html)中的&#x200B;_設定遠端儲存裝置的影像大小_。
+>- 雲端基礎結構專案上的Adobe Commerce可將產品影像調整大小解除安裝到Fastly服務。 請參閱[雲端指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=zh-Hant#deep-image-optimization)中的&#x200B;_深度影像最佳化_。
+>- 如果您使用遠端儲存模組，也可以嘗試將影像大小調整解除安裝到nginx。 請參閱[設定指南](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=zh-Hant)中的&#x200B;_設定遠端儲存裝置的影像大小_。

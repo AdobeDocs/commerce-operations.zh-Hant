@@ -14,11 +14,11 @@ ht-degree: 0%
 # Adobe Commerce的管理警報
 
 
-我們設定了重要的儀表板和警示，協助您瞭解網站何時達到關鍵儲存空間和[!DNL Apdex]等級（使用者對應用程式和服務回應時間的滿意度）。 這可協助您在注意到回應時間緩慢或中斷之前採取行動。 您將能夠使用下列文章來疑難排解警示。 在使用警示之前，請先設定通知通道。 請參閱雲端上的Commerce指南中的[[!DNL New Relic] 設定通知通道](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)。
+我們設定了重要的儀表板和警示，協助您瞭解網站何時達到關鍵儲存空間和[!DNL Apdex]等級（使用者對應用程式和服務回應時間的滿意度）。 這可協助您在注意到回應時間緩慢或中斷之前採取行動。 您將能夠使用下列文章來疑難排解警示。 在使用警示之前，請先設定通知通道。 請參閱雲端上的Commerce指南中的[[!DNL New Relic] 設定通知通道](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)。
 
 >[!NOTE]
 >
->如果Adobe Commerce警示原則的已管理警示無法使用，可能是因為此帳戶是新建的或最近已設定[!DNL New Relic]。 每個星期二都會執行一個程式，將警示原則新增至這些帳戶。 下次程式執行後的第二天，您應該可以使用警示原則。 如果原則仍然遺失，[請提交Adobe Commerce支援請求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)並包含您的專案ID。
+>如果Adobe Commerce警示原則的已管理警示無法使用，可能是因為此帳戶是新建的或最近已設定[!DNL New Relic]。 每個星期二都會執行一個程式，將警示原則新增至這些帳戶。 下次程式執行後的第二天，您應該可以使用警示原則。 如果原則仍然遺失，[請提交Adobe Commerce支援請求](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)並包含您的專案ID。
 
 請參閱下表中的知識庫文章連結，提供這些警示的疑難排解步驟：
 
@@ -54,4 +54,4 @@ ht-degree: 0%
 
 ## 複查為受管理警示設定的警示臨界值
 
-您可以從您的New Relic帳戶檢閱為受管理警示設定的警示臨界值。 如需指示，請參閱[監視受管理警示的效能](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts)。
+您可以從您的New Relic帳戶檢閱為受管理警示設定的警示臨界值。 如需指示，請參閱[監視受管理警示的效能](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts)。
