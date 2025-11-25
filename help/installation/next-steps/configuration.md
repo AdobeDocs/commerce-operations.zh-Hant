@@ -26,7 +26,7 @@ UNIX工作排程器cron對應用程式的日常作業至關重要。 它會排�
 
 安裝後，我們建議您進行下列操作：
 
-* 請確定您的檔案擁有權和許可權已正確設定[](../prerequisites/file-system/configure-permissions.md)
+* 請確定您的檔案擁有權和許可權已正確設定[&#128279;](../prerequisites/file-system/configure-permissions.md)
 * 我們強烈建議[將預設管理員URI](../tutorials/admin-uri.md)從`admin`變更為其他專案
 * 請確定已正確設定[`X-Frame-Option` HTTP標頭](../../configuration/security/xframe-options.md)。
 * 採取[保護您的範本](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)的預防措施，以防止跨網站指令碼(XSS)

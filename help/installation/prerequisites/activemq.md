@@ -15,7 +15,7 @@ Adobe Commerce也透過Simple Text Oriented Messaging Protocol (STOMP)支援Acti
 
 >[!NOTE]
 >
->ActiveMQ Artemis是在Adobe Commerce 2.4.6和更新版本中引入。 如需有關在雲端基礎結構專案上在Adobe Commerce中安裝ActiveMQ Artemis的詳細資訊，請參閱[雲端上的Commerce ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq)中的&#x200B;*設定ActiveMQ服務*。
+>ActiveMQ Artemis是在Adobe Commerce 2.4.6和更新版本中引入。 如需有關在雲端基礎結構專案上在Adobe Commerce中安裝ActiveMQ Artemis的詳細資訊，請參閱[雲端上的Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq)中的&#x200B;*設定ActiveMQ服務*。
 
 訊息佇列提供非同步通訊機制，讓訊息的傳送者與接收者不會相互聯絡。 也不需要同時與訊息佇列通訊。 當寄件者將郵件放入佇列時，郵件會儲存到收件者收到郵件為止。
 
