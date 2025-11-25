@@ -2,7 +2,7 @@
 title: 複製範例資料Git存放庫
 description: 請依照下列步驟，複製Git存放庫以安裝Adobe Commerce範例資料。
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -18,11 +18,11 @@ ht-degree: 0%
 如果下列情況為真，貢獻開發人員只能使用此方法來安裝範例資料&#x200B;*才能使用*：
 
 * 您使用Magento Open Source
-* 您[複製GitHub存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* 您[複製GitHub存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 >[!WARNING]
 >
->您可以將範例資料搭配`develop`分支（較新）或已發行分支(例如`2.4` （較穩定）)使用。 建議您使用已發行的分支，因為其較穩定。 如果您要貢獻程式碼到存放庫，而且需要最新的程式碼，請使用`develop`分支。 無論您選擇哪個分支，都必須[複製](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) Magento Open Source GitHub存放庫的對應分支。 例如，`develop`分支的範例資料&#x200B;*只能*&#x200B;搭配Magento Open Source `develop`分支使用。
+>您可以將範例資料搭配`develop`分支（較新）或已發行分支(例如`2.4` （較穩定）)使用。 建議您使用已發行的分支，因為其較穩定。 如果您要貢獻程式碼到存放庫，而且需要最新的程式碼，請使用`develop`分支。 無論您選擇哪個分支，都必須[複製](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) Magento Open Source GitHub存放庫的對應分支。 例如，`develop`分支的範例資料&#x200B;*只能*&#x200B;搭配Magento Open Source `develop`分支使用。
 
 ## 複製範例資料存放庫
 

@@ -1,5 +1,5 @@
 ---
-source-git-commit: d7926b9150137813b1161581bb1d7884a6fe11e9
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -10,7 +10,7 @@ ht-degree: 1%
 與舊版MariaDB或MySQL相比，在MariaDB 10.4和10.6上重新索引需要更多時間。 若要加速重新索引，建議您設定這些MariaDB設定引數：
 
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
-* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
+* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#optimizer_use_condition_selectivity)
 
 如果您在升級至MariaDB 10.6後遇到與索引無關的效能降低，請考慮啟用[`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type)設定。 例如，`--query-cache-type=ON`。
 

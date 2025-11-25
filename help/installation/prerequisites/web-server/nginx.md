@@ -2,7 +2,7 @@
 title: Nginx
 description: 請依照下列步驟安裝和設定Nginx網頁伺服器，以供Adobe Commerce的內部部署使用。
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '1110'
 ht-degree: 0%
@@ -85,7 +85,7 @@ Adobe Commerce需要多個[PHP擴充功能](../php-settings.md)才能正常運�
 
 * [取得Composer中繼資料](../../composer.md)
 
-* [複製Git存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [複製Git存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 此範例顯示使用命令列的Composer型安裝。
 
@@ -364,7 +364,7 @@ Adobe Commerce需要多個[PHP](../php-settings.md)擴充功能才能正常運�
 
 * [取得Composer中繼資料](../../composer.md)
 
-* [複製Git存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [複製Git存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 此範例顯示使用命令列的Composer型安裝。
 

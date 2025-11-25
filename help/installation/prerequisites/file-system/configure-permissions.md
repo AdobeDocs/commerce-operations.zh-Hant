@@ -2,7 +2,7 @@
 title: 設定檔案擁有權和許可權
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝設定檔案系統許可權。
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -58,7 +58,7 @@ ht-degree: 0%
 1. 如果您尚未這麼做，請以下列其中一種方式取得應用程式：
 
    * [Composer中繼資料](../../composer.md)
-   * [複製存放庫（僅限貢獻開發人員）](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+   * [複製存放庫（僅限貢獻開發人員）](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 1. 在您設定檔案系統擁有權和許可權後，[安裝應用程式](../../advanced.md)
 
@@ -192,7 +192,7 @@ magento_user : magento_user apache
 如果您尚未這樣做，請以下列其中一種方式取得軟體：
 
 * [Composer中繼資料](../../composer.md)
-* [複製存放庫（僅限貢獻開發人員）](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [複製存放庫（僅限貢獻開發人員）](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 ### 設定共用群組的擁有權和許可權
 

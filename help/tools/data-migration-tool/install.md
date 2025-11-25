@@ -4,7 +4,7 @@ description: 瞭解如何安裝 [!DNL Data Migration Tool] 以在Magento 1和Mag
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -47,14 +47,14 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-如果您目前在`develop`分支中，您必須變更為[已發行分支](https://developer.adobe.com/commerce/contributor/guides/install/change-version/)，才能繼續。
+如果您目前在`develop`分支中，您必須變更為[已發行分支](https://developer.adobe.com/commerce/contributor/guides/install/change-version)，才能繼續。
 
 如果您尚未安裝Adobe Commerce軟體，請[立即安裝](../../installation/prerequisites/commerce.md)。
-如果您正在複製GitHub存放庫，請務必取出版本標籤，如[&#x200B; （參與者）複製GitHub存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)中所述。
+如果您正在複製GitHub存放庫，請務必取出版本標籤，如[ （參與者）複製GitHub存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)中所述。
 
 ## 尋找[!DNL Data Migration Tool]的發行版本
 
-前往[&#x200B; GitHub存放庫的](https://github.com/magento/data-migration-tool/releases)版本[!DNL Data Migration Tool]頁面以尋找可用的發行版本。
+前往[ GitHub存放庫的](https://github.com/magento/data-migration-tool/releases)版本[!DNL Data Migration Tool]頁面以尋找可用的發行版本。
 
 ## 安裝[!DNL Data Migration Tool]
 

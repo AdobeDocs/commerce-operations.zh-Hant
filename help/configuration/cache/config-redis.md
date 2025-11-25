@@ -3,7 +3,7 @@ title: 設定Redis
 description: 瞭解如何設定Redis快取以最佳化Adobe Commerce效能。 探索功能、設定步驟和設定最佳實務。
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Redis功能包括：
 安裝和設定Redis軟體不屬於本指南的範圍。 諮詢資源，例如：
 
 - [下載Redis頁面](https://redis.io/download)
-- [Redis快速入門](https://redis.io/docs/getting-started/)
+- [Redis快速入門](https://redis.io/docs/latest/)
 - [數位海洋](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
 - [Redis檔案頁面](https://redis.io/docs)
 

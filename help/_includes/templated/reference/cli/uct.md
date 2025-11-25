@@ -1,5 +1,5 @@
 ---
-source-git-commit: 92685411a41cb03f1ac9408b0cef2fe83b4a2a16
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 >
 >`composer update`命令無法升級此工具 — 您必須[下載並安裝最新版本](/help/upgrade/upgrade-compatibility-tool/run.md)。
 
-此參考檔案是從應用程式原始碼產生。 若要變更檔案，您應在相關[程式碼基底](https://github.com/magento)存放庫中開啟對應命令的提取要求。 如需詳細資訊，請參閱[程式碼貢獻](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)。
+此參考檔案是從應用程式原始碼產生。 若要變更檔案，您應在相關[程式碼基底](https://github.com/magento)存放庫中開啟對應命令的提取要求。 如需詳細資訊，請參閱[程式碼貢獻](https://developer.adobe.com/commerce/contributor/guides/code-contributions)。
 
 ### 全域選項
 

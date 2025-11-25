@@ -2,7 +2,7 @@
 title: 解除安裝或重新安裝Adobe Commerce
 description: 請依照下列步驟，解除安裝並重新安裝Adobe Commerce的內部部署。
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -24,8 +24,8 @@ ht-degree: 0%
 
 從命令列重新安裝應用程式的方式取決於您的角色：
 
-* 如果您是從封存安裝軟體，或使用&#39;composer-create-project&#39;，請參閱[更新安裝相依性](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/)。
-* 如果您是參與開發人員（亦即您已開始使用`git clone`），請參閱[更新安裝相依性](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/)。
+* 如果您是從封存安裝軟體，或使用&#39;composer-create-project&#39;，請參閱[更新安裝相依性](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)。
+* 如果您是參與開發人員（亦即您已開始使用`git clone`），請參閱[更新安裝相依性](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)。
 
 ## 解除安裝應用程式
 
