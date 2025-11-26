@@ -2,7 +2,7 @@
 title: 快速入門內部部署安裝
 description: 瞭解如何使用撰寫器在您自己的基礎架構上安裝Adobe Commerce。 探索快速入門步驟和設定需求。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 0532977ff0aeb5d221b1901d73a374cadf95f83b
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Adobe使用[Composer](https://getcomposer.org/)管理Adobe Commerce元件及其�
 
 >[!NOTE]
 >
->參與Magento Open Source的開發人員應使用[Git型](https://developer.adobe.com/commerce/contributor/guides/install)安裝方法。
+>參與Magento Open Source的開發人員應使用[Git型](https://developer.adobe.com/commerce/contributor/guides/install/)安裝方法。
 
 ## 先決條件
 
@@ -93,7 +93,7 @@ Adobe使用[Composer](https://getcomposer.org/)管理Adobe Commerce元件及其�
 
    >[!NOTE]
    >
-   > 如果您使用以Commerce驗證金鑰設定的Composer `[auth.json](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`檔案或環境變數，則系統不會提示您輸入驗證金鑰。
+   > 如果您使用以Commerce驗證金鑰設定的Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`檔案或環境變數，則系統不會提示您輸入驗證金鑰。
 
    如果您遇到錯誤（例如`Could not find package...`或`...no matching package found`），請確定您的命令中沒有拼寫錯誤。 如果您仍然遇到錯誤，您可能無權下載Adobe Commerce。 請連絡[Adobe Commerce支援](https://support.magento.com/hc/en-us)尋求協助。
 
