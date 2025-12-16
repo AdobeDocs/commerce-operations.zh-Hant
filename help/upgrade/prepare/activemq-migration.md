@@ -2,9 +2,9 @@
 title: 從RabbitMQ移轉至ActiveMQ
 description: 瞭解如何取代用於Adobe Commerce內部部署安裝的訊息佇列代理人。
 feature: Services, Configuration
-source-git-commit: 8f57a4fa7744f4647ab96d0fcfae08b8eb4927c6
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ActiveMQ (Apache ActiveMQ Artemis)是高效能、多通訊協定訊息代理人，可作為RabbitMQ的替代方案，用於處理Adobe Commerce中的訊息佇列。
 
-截至2.4.8-p3、2.4.7-p8和2.4.6-p13，Adobe Commerce支援ActiveMQ做為訊息佇列代理人。 這可讓內部部署安裝根據基礎架構需求和專業知識，在RabbitMQ和ActiveMQ之間做出選擇。
+截至2.4.8-p3、2.4.7-p8、2.4.6-p13和2.4.5-p16，Adobe Commerce支援ActiveMQ作為訊息佇列代理人。 這可讓內部部署安裝根據基礎架構需求和專業知識，在RabbitMQ和ActiveMQ之間做出選擇。
 
 ## 開始之前
 

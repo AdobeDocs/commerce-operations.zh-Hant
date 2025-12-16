@@ -2,7 +2,7 @@
 title: 訊息佇列總覽
 description: 閱讀訊息佇列架構及其如何與Adobe Commerce應用程式搭配運作。
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
-source-git-commit: 6f15a24e650a7138bae6d0b40f230e6970a943b0
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 Message Queue Framework (MQF)系統允許模組將訊息發佈至佇列。 它也會定義將非同步接收訊息的[消費者](consumers.md)。 MQF支援多個傳訊代理：
 
 - **[[!DNL RabbitMQ]](https://www.rabbitmq.com)** — 主要傳訊代理人，提供可擴充的平台來傳送及接收訊息。 它包含儲存未傳遞訊息的機制，並以進階訊息佇列通訊協定(AMQP) 0.9.1規格為基礎。
-- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** — 使用STOMP （簡單文字導向傳訊通訊協定）進行可靠且可擴充的傳訊的替代傳訊代理人。 在Adobe Commerce 2.4.6及更新版本中推出。
+- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** — 使用STOMP （簡單文字導向傳訊通訊協定）進行可靠且可擴充的傳訊的替代傳訊代理人。 在Adobe Commerce 2.4.5和更新版本中推出。
 
 ## RabbitMQ (AMQP)
 
@@ -38,7 +38,7 @@ Message Queue Framework (MQF)系統允許模組將訊息發佈至佇列。 它�
 
 >[!NOTE]
 >
->ActiveMQ Artemis是在Adobe Commerce 2.4.6和更新版本中引入。
+>ActiveMQ Artemis是在Adobe Commerce 2.4.5和更新版本中引入。
 
 下圖說明具有ActiveMQ Artemis的STOMP架構：
 
