@@ -23,12 +23,12 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已提供有關<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">設定組態值</a>的更多詳細資料。</p>
+      <td><p>已提供有關<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">設定組態值</a>的更多詳細資料。</p>
 </td>
       <td>
         最佳實務
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/147">提取請求</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.zh-Hant/pull/147">提取請求</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新<code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code>設定Valkey預設快取<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">指示中的</a> CLI命令，以指定<code class="language-plaintext highlighter-rouge">cache-backend</code>引數的正確值。</p>
+      <td><p>更新<code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code>設定Valkey預設快取<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">指示中的</a> CLI命令，以指定<code class="language-plaintext highlighter-rouge">cache-backend</code>引數的正確值。</p>
 </td>
       <td>
         最佳實務
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/159">提取請求</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.zh-Hant/pull/159">提取請求</a></td>
     </tr>
   </tbody>
 </table>
