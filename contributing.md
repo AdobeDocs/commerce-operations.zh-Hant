@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4dd926ca7014c9e007a8c2c847e076064eb8d170
+source-git-commit: 86d7fba92705b808b45d655a432bb92ed9f9181a
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 1%
 您應遵守此准則。 如發現不良行為，請向
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com)。
 
-## 貢獻者指南檔案
+## 投稿人指南檔案
 
-請參閱[貢獻者指南](https://experienceleague.adobe.com/zh-hant/docs/contributor/contributor-guide/introduction)。
+請參閱[貢獻者指南](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction)。
 
 ## 有疑問嗎？
 
@@ -41,10 +41,9 @@ ht-degree: 1%
 依專案提交者。 閱讀[GitHub的提取請求檔案](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 以取得傳送提取請求的詳細資訊。
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+最後，請於下列時間遵循[提取請求範本](PULL_REQUEST_TEMPLATE.md)：
+提交提取請求！
+
 
 ## 從貢獻者晉升提交者
 
@@ -57,11 +56,11 @@ submitting a pull request!
 
 ## 安全性問題
 
-不應在此問題追蹤器上回報安全性問題。 請改為向我們的安全性專家[提出問題](https://helpx.adobe.com/tw/security/alertus.html)。
+不應在此問題追蹤器上回報安全性問題。 請改為向我們的安全性專家[提出問題](https://helpx.adobe.com/security/alertus.html)。
 
-## 新增功能亮點
+## 最新資訊
 
-如果您的變更引進新主題、重大更新或需要強調的更正，您可以從提取要求內文直接在[新增功能區段](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/operational-guides/home#whats-new)新增簡短說明。
+如果您的變更引進新主題、重大更新或需要強調的更正，您可以從提取要求內文直接在[新增功能區段](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new)新增簡短說明。
 
 新增「新增功能」反白顯示：
 
@@ -109,4 +108,4 @@ submitting a pull request!
 1. `whatsnew`部分必須從`whatsnew`標籤開始，並且位於提取請求主體的結尾。
 1. 變更的說明必須包含工作連結。 請確定連結正確且指向預期的主題。 如果是新主題，請在合併提取請求並發佈新主題後，確認連結運作正常。 可以在提取請求合併後修正連結。
 
-例如，搜尋存放庫中的已關閉提取要求，瞭解現有醒目提示的格式設定，並與[新增功能區段](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/operational-guides/home#whats-new)進行比較，瞭解它們在檔案中的顯示方式。
+例如，搜尋存放庫中的已關閉提取要求，瞭解現有醒目提示的格式設定，並與[新增功能區段](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new)進行比較，瞭解它們在檔案中的顯示方式。
