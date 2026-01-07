@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9994f486c38df4c0dc2ff477c48f3e8f3259aa9f
+source-git-commit: 4589c405bab743001e967a9825d578ee1a03c216
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,32 @@ rake whatsnew_bp since="jul 4"
 ```sh
 rake azure_regions
 ```
+
+### `get_released_versions`
+
+從`magento/magento2`存放庫取得最後10個已發行版本。 需要安裝及驗證[GitHub CLI](https://cli.github.com/)。
+
+**使用狀況：**
+
+```sh
+rake get_released_versions
+```
+
+**輸出：**&#x200B;產生具有發行標籤名稱和日期的`tmp/core-release.txt`。
+
+### `first_merge_date`
+
+取得第一次合併至指定分支的日期。 需要安裝及驗證[GitHub CLI](https://cli.github.com/)。
+
+**使用狀況：**
+
+```sh
+rake first_merge_date base=develop
+```
+
+**引數：**
+
+- `base` （必要）：要檢查合併的目標分支名稱。
 
 ### `includes:maintain_relationships`
 
@@ -215,7 +241,8 @@ relationships:
 ## 先決條件
 
 - 已安裝Ruby和Bundler。
-- Gemfile中指定的必要gems。
+- Gemfile中指定的必要GEM （核心相依性由`adobe-comdox-exl-rake-tasks`提供）。
+- [GitHub CLI](https://cli.github.com/)用於`get_released_versions`和`first_merge_date`工作。
 - [任務的Python、](https://www.pygmt.org/latest/install.html)PyGMT[和](https://formulae.brew.sh/formula/pdf2svg)pdf2svg`azure_regions`。
 
 ## 設定
