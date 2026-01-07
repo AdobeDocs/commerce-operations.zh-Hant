@@ -2,9 +2,9 @@
 user-guide-title: 設定指南
 user-guide-description: 設定您的Adobe Commerce應用程式功能與服務。
 feature: Configuration
-source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
+source-git-commit: d86b9eb07a9da6dc93234f8a02103c543bbead68
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '372'
 ht-degree: 1%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 1%
       + [設定Redis](cache/config-redis.md)
       + [預設快取使用Redis](cache/redis-pg-cache.md)
       + [使用Redis進行工作階段儲存](cache/redis-session.md)
+      + [設定EC2執行處理的ElastiCache](cache/redis-elasticache-for-ec2.md)
    + Valkey {#valkey}
       + [設定Valkey](cache/config-valkey.md)
       + [使用Valkey作為預設快取](cache/valkey-pg-cache.md)
@@ -150,4 +151,4 @@ ht-degree: 1%
       + [驗證分割資料庫](storage/multi-master-verify.md)
       + [資料庫復寫](storage/multi-master-replication.md)
       + [還原為單一資料庫](storage/revert-split-database.md)
-+ [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
++ [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

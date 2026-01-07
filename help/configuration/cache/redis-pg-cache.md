@@ -3,9 +3,9 @@ title: 預設快取使用Redis
 description: 瞭解如何將Redis設定為Adobe Commerce的預設快取。 探索命令列設定、設定選項和驗證技術。
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: ee4a873a73e8fd747e7d4c8e157327fab1074cc9
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 Commerce提供命令列選項來設定Redis頁面和預設快取。 雖然您可以透過編輯`<Commerce-install-dir>app/etc/env.php`檔案來設定快取，但建議使用命令列的方法，尤其是對於初始設定。 命令列會提供驗證，確保組態語法正確。
 
 您必須[安裝Redis](config-redis.md#install-redis)，才能繼續。
+
+>[!NOTE]
+>
+>對於在EC2上託管的Commerce執行個體，您可以使用AWS ElastiCache來取代本機Redis執行個體。 請參閱[為EC2執行個體設定Elasticache](redis-elasticache-for-ec2.md)。
 
 ## 設定Redis預設快取
 
@@ -76,9 +80,9 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
 ```
 
-## 結果
+## 檢閱Commerce環境設定
 
-由於這兩個範例命令，Commerce將類似下列的行新增到`<Commerce-install-dir>app/etc/env.php`：
+執行命令設定Redis快取，更新Commerce環境設定(`<Commerce-install-dir>app/etc/env.php`)：
 
 ```php
 'cache' => [
@@ -104,93 +108,11 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
 ],
 ```
 
-## 搭配您的EC2執行個體使用AWS ElastiCache
+## 設定其他快取選項
 
-自Commerce 2.4.3起，Amazon EC2上代管的執行個體可能會使用AWS ElastiCache來取代本機Redis執行個體。
+本節說明如何啟用預設為停用的選擇性組態設定。
 
->[!WARNING]
->
->本節僅適用於在Amazon EC2 VPC上執行的Commerce執行個體。 它不適用於內部部署安裝。
-
-### 設定Redis叢集
-
-在[在AWS](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/)上設定Redis叢集後，請設定EC2執行個體以使用ElastiCache。
-
-1. [在相同區域和EC2執行個體的VPC中建立ElastiCache叢集](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html)。
-1. 驗證連線。
-
-   - 開啟與EC2執行個體的SSH連線
-   - 在EC2執行個體上，安裝Redis使用者端：
-
-     ```bash
-     sudo apt-get install redis
-     ```
-
-   - 將輸入規則新增至EC2安全性群組：型別`- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - 將輸入規則新增至ElastiCache叢集安全性群組：型別`- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - 連線至Redis CLI：
-
-     ```bash
-     redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
-     ```
-
-### 設定Commerce以使用叢集
-
-Commerce支援多種型別的快取設定。 一般而言，快取設定會在前端和後端之間分割。 前端快取分類為`default`，用於任何快取型別。 您可以自訂或分割為較低層級的快取以取得較佳的效能。 常見的Redis組態是將預設快取和頁面快取分隔到自己的Redis資料庫(RDB)中。
-
-執行`setup`命令以指定Redis端點。
-
-若要設定用於Redis的Commerce作為預設快取：
-
-```bash
-bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
-```
-
-若要設定Commerce以進行Redis頁面快取：
-
-```bash
-bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
-```
-
-若要設定Commerce以使用Redis進行工作階段儲存：
-
-```bash
-bin/magento setup:config:set --session-save=redis --session-save-redis-host=<ElastiCache Primary Endpoint host> --session-save-redis-port=<ElastiCache Primary Endpoint port> --session-save-redis-log-level=4 --session-save-redis-db=2
-```
-
-### 驗證連線能力
-
-**若要確認Commerce正在與ElastiCache通訊**：
-
-1. 開啟與Commerce EC2執行個體的SSH連線。
-1. 啟動Redis監視器。
-
-   ```bash
-   redis-cli -h <ElastiCache-Primary-Endpoint-host> -p <ElastiCache-Primary-Endpoint-port> monitor
-   ```
-
-1. 在Commerce UI中開啟頁面。
-1. 驗證您終端機中的[快取輸出](#verify-redis-connection)。
-
-## 新的Redis快取實作
-
-自Commerce 2.3.5起，建議使用擴充的Redis快取實作： `\Magento\Framework\Cache\Backend\Redis`。
-
-```php
-'cache' => [
-    'frontend' => [
-        'default' => [
-            'backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
-            'backend_options' => [
-                'server' => '127.0.0.1',
-                'database' => '0',
-                'port' => '6379'
-            ],
-        ],
-],
-```
-
-## Redis預先載入功能
+### Redis預先載入功能
 
 由於Commerce會將設定資料儲存在Redis快取中，因此我們可以預先載入在頁面之間重複使用的資料。 若要尋找必須預先載入的金鑰，請分析從Redis傳輸到Commerce的資料。 我們建議預先載入每個頁面上載入的資料，例如`SYSTEM_DEFAULT`、`EAV_ENTITY_TYPES`、`DB_IS_UP_TO_DATE`。
 
@@ -235,10 +157,11 @@ Redis使用`pipeline`來複合載入要求。 金鑰應包含資料庫首碼；�
 ],
 ```
 
-## 平行產生
+### 平行產生
 
-從2.4.0版開始，我們為想要消除等待鎖定的使用者引入了`allow_parallel_generation`選項。
-預設會停用，建議您先停用，直到設定和/或區塊過多為止。
+啟用`allow_parallel_generation`選項，消除等待鎖定的情況。
+
+此選項預設為停用，Adobe建議您在有大量設定或區塊之前先將其停用。
 
 **若要啟用平行產生**：
 
@@ -246,7 +169,7 @@ Redis使用`pipeline`來複合載入要求。 金鑰應包含資料庫首碼；�
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
-由於它是標幟，因此您無法使用命令將其停用。 您必須手動將組態值設為`false`：
+由於此選項是標幟，因此您無法使用命令將其停用。 您必須手動將組態值設為`false`：
 
 ```php
     'cache' => [
