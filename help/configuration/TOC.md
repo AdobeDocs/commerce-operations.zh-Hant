@@ -151,4 +151,4 @@ ht-degree: 1%
       + [驗證分割資料庫](storage/multi-master-verify.md)
       + [資料庫復寫](storage/multi-master-replication.md)
       + [還原為單一資料庫](storage/revert-split-database.md)
-+ [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
++ [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
