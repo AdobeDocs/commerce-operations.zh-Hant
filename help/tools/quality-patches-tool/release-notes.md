@@ -3,9 +3,9 @@ title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: fff49f8c9b0c1def976c14e72b4ae7ee08f823b9
+source-git-commit: f08af2909959bf8fb14b279f904e91a90f4e3d44
 workflow-type: tm+mt
-source-wordcount: '29413'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,25 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.75 {#v1-1-75}
+
+* **ACSD-68289** (適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9) — 修正如果所有可搜尋欄位整體符合最低相符條件，全文檢索搜尋現在會傳回相符產品的問題，而非要求條件由單一欄位滿足。
+* **ACSD-68359** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正使用[!UICONTROL Pick in Store]結帳時選取商店不再因購物車中有許多產品時具有長URL而失敗的問題。 之前，這會在選取商店期間產生過長的URL，導致客戶無法完成結帳，進而觸發&#x200B;*414錯誤*。
+* **ACSD-68451** (針對Adobe Commerce，B2B >=1.5.2-p1 &lt;1.5.3) — 修正多個網站的問題，其中公司管理員登入一個網站、在另一個網站上建立不相關的公司，但錯誤地連結到該不相關的公司。
+* **ACSD-68490** (適用於Adobe Commerce >=2.4.6 &lt;2.4.7) — 修正受限管理員使用者在可設定產品建立期間看見[!UICONTROL Add New Attribute]按鈕的問題。
+* **ACSD-68517** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7) — 修正目錄和目錄搜尋頁面上的表單重新提交錯誤。
+* **ACSD-68573** (適用於Adobe Commerce >=2.4.5 &lt;2.4.9) — 修正類別許可權未正確套用至客戶願望清單專案的問題。 修正後，願望清單專案可在網頁和GraphQL中正確顯示和分頁。
+* **ACSD-68615** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正當處理的組合遺失訂單識別碼時，存貨預留補償CLI會顯示例外狀況的問題。
+* **ACSD-68793** (針對Adobe Commerce，B2B >=1.5.1 &lt;1.5.3) — 修正將有效產品指派至共用目錄時，有效產品會不正確地遭到拒絕的問題。
+* **ACSD-68925** (適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9) — 修正GraphQL要求的回應現在透過HTTP規格與GraphQL對齊的問題。 當請求無法剖析、未獲授權或遇到一般問題時，會傳回4XX回應代碼。 如果請求經過剖析且可以處理，則會傳回200回應代碼。
+* 已更新的版本： **MDVA-19640**、**ACSD-47910**、**ACSD-68040**、**ACSD-62965**
+* 已取代的修補程式： **ACSD-62577**，**ACSD-68011**
 
 ## v1.1.74 {#v1-1-74}
 
