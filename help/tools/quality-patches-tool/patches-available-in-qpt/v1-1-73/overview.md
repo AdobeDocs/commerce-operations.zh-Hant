@@ -26,5 +26,5 @@ QPT v1.1.73包含下列修補程式：
 1. **ACSD-68206**：修正安裝PHP **[!UICONTROL Rate Limiting]**&#x200B;擴充功能並搭配[!DNL Redis]功能使用GraphQL應用程式伺服器時的錯誤。
 1. **ACSD-68391**： **[!UICONTROL Quick Order]**&#x200B;和&#x200B;**[!UICONTROL Requisition Lists]**&#x200B;中未套用類別相關許可權。
 1. **ACSD-68356**： [!DNL GraphQL]購物車查詢傳回虛擬報價的折扣金額不正確。
-1. **ACSD-68400**：虛擬禮卡數量未正確反映在&#x200B;**[!UICONTROL Inventory reservation table]**中。
+1. **ACSD-68400**：虛擬禮卡數量未正確反映在&#x200B;**[!UICONTROL Inventory reservation table]**&#x200B;中。
 使用左側的功能表，導覽至特定的修補程式頁面。
