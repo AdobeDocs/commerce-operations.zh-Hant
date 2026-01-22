@@ -2,9 +2,9 @@
 title: 修補程式發行排程
 description: 瞭解Adobe計畫何時公佈Adobe Commerce的新修補程式和安全性修正。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: f4601034e3e988b3058946b263ec5e8da41fce16
+source-git-commit: ee39af1beb8df93b179c2e5dee3942b3f367e51a
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Adobe持續努力在簡化產品升級且可預測之間取得適當的平衡，
 
 >[!NOTE]
 >
->若要進一步瞭解新功能、雲端基礎結構和擴充功能發行，請參閱[Adobe Commerce Services](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/release-information/release-notes-all)發行說明檔案。
+>若要進一步瞭解新功能、雲端基礎結構和擴充功能發行，請參閱[Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)發行說明檔案。
 
 除了此頁面上列出的排程品質、安全性及Beta版修補程式之外，Adobe還透過[品質修補程式工具](versioning-policy.md#individual-patch)提供[個別修補程式](../tools/quality-patches-tool/usage.md)的存取權。 此工具可讓您套用、還原及檢視已安裝Adobe Commerce版本可用的所有個別修補程式的一般資訊。
 
-自2026年1月起，Adobe Commerce將改採下列策略移至每月修補程式發行排程：
+Adobe Commerce會遵循每月修補程式發行排程，其策略如下：
 
 - **隔離的安全性修正** — 個別非累積的[安全性修正](versioning-policy.md#isolated-patch)可能每月發行，並包含所有[支援的](lifecycle-policy.md)發行行安全性修正（包含一般和延伸支援）。
 
@@ -37,3 +37,16 @@ Adobe持續努力在簡化產品升級且可預測之間取得適當的平衡，
 <!-- The SVG source for the following image is located here: /help/assets/release/release-calendar.drawio.svg -->
 
 ![2026 Adobe Commerce發行行事曆](../assets/release/release-calendar.drawio.png)
+
+
+## 發行通知通道
+
+Adobe會透過下列管道，通知客戶有關新修補程式發行的資訊：
+
+- [Adobe安全性佈告欄和建議](https://helpx.adobe.com/security/security-bulletin.html#magento)
+- 電子郵件
+- 產品內警示
+
+>[!NOTE]
+>
+> 如需每個次要、修補程式和安全性版本的發行日期，以及定期支援結束的日期，請參閱[已發行版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions)。
