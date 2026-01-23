@@ -30,7 +30,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->- 遠端儲存僅適用於Commerce 2.4.2版和更新版本。 請參閱[2.4.2發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2)。
+>- 遠端儲存僅適用於Commerce 2.4.2版和更新版本。 請參閱[2.4.2發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-2)。
 >
 >- 遠端儲存模組在雲端基礎結構上的Adobe Commerce上有&#x200B;_限制_&#x200B;支援。 Adobe無法完全疑難排解協力廠商儲存配接器服務。 請參閱[在雲端基礎結構上設定Commerce的遠端儲存](cloud-support.md)，以取得為雲端專案實作遠端儲存的指引。
 
@@ -91,5 +91,5 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->同步命令只會移轉`pub/media`目錄中的檔案，_不會_ `var`目錄中的匯入/匯出檔案。 請參閱[Commerce 2.4使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)中的&#x200B;_排程匯入/匯出_。
+>同步命令只會移轉`pub/media`目錄中的檔案，_不會_ `var`目錄中的匯入/匯出檔案。 請參閱[Commerce 2.4使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=zh-Hant)中的&#x200B;_排程匯入/匯出_。
 
