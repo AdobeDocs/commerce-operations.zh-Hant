@@ -3,7 +3,7 @@ title: '[!DNL Data Migration Tool]必要條件'
 description: 瞭解在開始使用 [!DNL Data Migration Tool] 在Magento 1和Magento 2之間傳輸資料之前，您需要做什麼。
 exl-id: 42dfa1ca-41ed-453d-a3e4-41ff36817ca3
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -44,6 +44,6 @@ ht-degree: 0%
 
 將Magento 1擴充功能程式碼移轉至Magento 2。
 
-若要尋找最新的擴充功能版本，請造訪[[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/)或連絡您的擴充功能提供者。
+若要尋找最新的擴充功能版本，請造訪[!DNL [Commerce Marketplace]](https://commercemarketplace.adobe.com//)或連絡您的擴充功能提供者。
 
-您也可以使用[[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md)。
+您也可以使用[!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md)。

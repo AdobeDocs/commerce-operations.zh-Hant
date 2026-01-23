@@ -3,16 +3,16 @@ title: 設定及使用清漆
 description: 瞭解如何設定和使用Adobe Commerce的Varnish快取。 探索HTTP加速、檔案儲存和效能最佳化技術。
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # 設定清漆
 
-[清漆快取]是開放原始碼網頁應用程式加速器（也稱為&#x200B;_HTTP加速器_&#x200B;或&#x200B;_快取HTTP反向Proxy_）。 Varnish會將（或快取）檔案或檔案片段儲存在記憶體中，如此可讓Varnish減少回應時間，以及未來同等要求的網路頻寬消耗。 與Apache和nginx等網頁伺服器不同，Varnish是專為搭配HTTP通訊協定使用而設計。
+[清漆快取](https://varnish-cache.org)是開放原始碼網頁應用程式加速器（也稱為&#x200B;_HTTP加速器_&#x200B;或&#x200B;_快取HTTP反向Proxy_）。 Varnish會將（或快取）檔案或檔案片段儲存在記憶體中，如此可讓Varnish減少回應時間，以及未來同等要求的網路頻寬消耗。 與Apache和nginx等網頁伺服器不同，Varnish是專為搭配HTTP通訊協定使用而設計。
 
 [系統需求](../../installation/system-requirements.md)列出支援的清漆版本。
 
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 如需清漆的詳細資訊，請參閱：
 
-- [大型塗漆圖片]
-- [清漆啟動選項]
-- [塗漆和網站效能]
+- [大型塗漆圖片](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
+- [清漆啟動選項](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
+- [塗漆和網站效能](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
 
 ## 塗漆拓朴圖
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 我們知道下列有關Varnish的問題：
 
-- [清漆不支援SSL]
+- [清漆不支援SSL](https://www.varnish-cache.org/docs/3.0/phk/ssl.html)
 
   或者，使用SSL終止或SSL終止Proxy。
 
@@ -146,10 +146,3 @@ ht-degree: 0%
 
 如果伺服器上的內容變更，使用者端會下載包含HTTP 200 （確定）狀態碼和新ETag的靜態資產。
 
-<!-- Link Definitions -->
-
-[大亮油漆圖片]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
-[清漆快取]: https://varnish-cache.org
-[清漆啟動選項]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
-[塗漆與網站效能]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
-[清漆不支援SSL]: https://www.varnish-cache.org/docs/3.0/phk/ssl.html

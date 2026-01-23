@@ -2,7 +2,7 @@
 title: 啟用設定檔分析
 description: 深入瞭解如何讓MAGE Profiler搭配您的分析工具使用。
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
   您應該特別關注&#x200B;_未使用相依性_&#x200B;的清單，這些物件是因為某些建構函式要求而建立的，但是從未使用過（亦即，未呼叫任何方法）。 因此，建立這些相依性所花費的處理器時間和記憶體都會被浪費。
 
-Commerce在[`Magento\Framework\Profiler`][profiler]中提供基礎功能。
+Commerce在[`Magento\Framework\Profiler`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler.php)中提供基礎功能。
 
 您可以使用MAGE_PROFILER變數或命令列來啟用及設定效能評測器。
 
@@ -37,8 +37,8 @@ Commerce在[`Magento\Framework\Profiler`][profiler]中提供基礎功能。
 
   您可以使用下列其中一個值來啟用特定的效能評測器：
 
-   - 使用`csvfile`的[`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
-   - 任何其他值（除了`2`），包括使用[`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]的空白值
+   - 使用`csvfile`[`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`的](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)
+   - 任何其他值（除了`2`），包括使用[`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)的空白值
 
 - `2`以啟用相依性圖形。
 
@@ -81,8 +81,3 @@ Commerce在[`Magento\Framework\Profiler`][profiler]中提供基礎功能。
    bin/magento dev:profiler:disable
    ```
 
-<!-- link definitions -->
-
-[csvfile]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php
-[html]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php
-[profiler]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler.php

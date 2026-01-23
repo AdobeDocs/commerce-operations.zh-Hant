@@ -3,28 +3,28 @@ title: 應用程式初始化和啟動程式
 description: 閱讀Commerce應用程式的初始化和啟動程式邏輯。
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
 
 # 初始化和啟動程式概述
 
-若要執行Commerce應用程式，請在[pub/index.php][index]中實作下列動作：
+若要執行Commerce應用程式，請在[pub/index.php](https://github.com/magento/magento2/tree/2.4.8/pub/index.php)中實作下列動作：
 
-- 包含[app/bootstrap.php][bootinitial]，它會執行必要的初始化常式，例如錯誤處理、初始化自動載入器、設定設定檔選項，以及設定預設時區。
-- 建立[\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->的執行個體
-- 建立Commerce應用程式執行個體： [\Magento\Framework\AppInterface][app-face]
+- 包含部署至您環境之Commerce版本的[app/bootstrap.php](https://github.com/magento/magento2/blob/2.4.8/app/bootstrap.php)檔案。 此檔案會執行必要的初始化常式，例如錯誤處理、初始化自動載入器、設定設定檔選項以及設定預設時區。
+- 建立[\Magento\Framework\App\Bootstrap.php](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Bootstrap.php) <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->的執行個體
+- 建立Commerce應用程式執行個體： [\Magento\Framework\AppInterface](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/AppInterface.php)
 - 執行Commerce
 
 ## Bootstrap執行邏輯
 
-[啟動程式物件][bootinitial]使用下列演演算法來執行Commerce應用程式：
+[啟動程式物件](https://github.com/magento/magento2/tree/2.4.8/app/bootstrap.php)使用下列演演算法來執行Commerce應用程式：
 
 1. 初始化錯誤處理常式。
-1. 建立隨處使用且受環境影響的[物件管理員][object]和基本共用服務。 環境引數會適當地插入這些物件中。
+1. 建立隨處使用且受環境影響的[物件管理員](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/ObjectManager)和基本共用服務。 環境引數會適當地插入這些物件中。
 1. 判斷維護模式是&#x200B;_未啟用_，否則會終止。
 1. 判斷是否已安裝Commerce應用程式；否則，會終止。
 1. 啟動Commerce應用程式。
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 ### HTTP進入點
 
-[\Magento\Framework\App\Http][http]的運作方式如下：
+[\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http)的運作方式如下：
 
 1. 決定[應用程式區域](https://developer.adobe.com/commerce/php/architecture/modules/areas/)。
 1. 啟動前端控制器和路由系統，以尋找並執行控制器動作。
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ### 靜態資源進入點
 
-[\Magento\Framework\App\StaticResource][static-resource]是用於擷取靜態資源(例如CSS、JavaScript和影像)的應用程式。 它會延遲對靜態資源的所有動作，直到請求資源為止。
+[\Magento\Framework\App\StaticResource](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/StaticResource.php)是用於擷取靜態資源(例如CSS、JavaScript和影像)的應用程式。 它會延遲對靜態資源的所有動作，直到請求資源為止。
 
 >[!INFO]
 >
@@ -105,17 +105,7 @@ ht-degree: 0%
 
 ### 媒體資源進入點
 
-[Magento\MediaStorage\App\Media][media]會從資料庫擷取媒體資源（亦即任何上傳至媒體儲存空間的檔案）。 只要將資料庫設定為媒體儲存體，就會使用它。
+[Magento\MediaStorage\App\Media](https://github.com/magento/magento2/tree/2.4.8/app/code/Magento/MediaStorage/App/Media.php)會從資料庫擷取媒體資源（亦即任何上傳至媒體儲存空間的檔案）。 只要將資料庫設定為媒體儲存體，就會使用它。
 
 `\Magento\Core\App\Media`嘗試在設定的資料庫儲存空間中尋找媒體檔案，並將其寫入`pub/static`目錄，然後傳回其內容。 發生錯誤時，它會在沒有內容的標頭中傳回HTTP 404 （找不到）狀態代碼。
 
-<!-- Link Definitions -->
-
-[app-face]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/AppInterface.php
-[bootinitial]: https://github.com/magento/magento2/tree/2.4/app/bootstrap.php
-[bootstrap]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/Bootstrap.php
-[http]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/Http
-[index]: https://github.com/magento/magento2/tree/2.4/pub/index.php
-[media]: https://github.com/magento/magento2/tree/2.4/app/code/Magento/MediaStorage/App/Media.php
-[object]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/ObjectManager
-[static-resource]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/StaticResource.php

@@ -3,9 +3,9 @@ title: 建置系統設定
 description: 瞭解如何將Commerce部署至組建系統。
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -67,11 +67,11 @@ ht-degree: 0%
    mv composer.phar /usr/local/bin/composer
    ```
 
-如需其他安裝選項，請參閱[撰寫器安裝檔案][composer]。
+如需其他安裝選項，請參閱[撰寫器安裝檔案](https://getcomposer.org/download/)。
 
 ### 安裝PHP
 
-在[CentOS]或[Ubuntu]上安裝PHP。
+在[CentOS](https://wiki.centos.org/HowTos/php7)或[Ubuntu](https://help.ubuntu.com/lts/serverguide/php.html)上安裝PHP。
 
 ### 設定組建系統
 
@@ -134,8 +134,3 @@ ht-degree: 0%
 
    `<mode>`為必要項。 它可以是`default`或`developer`。
 
-<!-- Link Definitions -->
-
-[CentOS]: https://wiki.centos.org/HowTos/php7
-[composer]: https://getcomposer.org/download/
-[烏本圖]: https://help.ubuntu.com/lts/serverguide/php.html

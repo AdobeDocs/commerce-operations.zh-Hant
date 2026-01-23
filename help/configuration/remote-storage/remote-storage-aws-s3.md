@@ -3,16 +3,16 @@ title: 設定遠端儲存的AWS S3貯體
 description: 設定您的Commerce專案，以使用AWS S3儲存服務進行遠端儲存。
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3690043019d70ad15332f757158937a7d5305043
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
 # 設定遠端儲存的AWS S3貯體
 
-[Amazon Simple Storage Service (Amazon S3)][AWS S3]是物件儲存服務，提供領先業界的擴充性、資料可用性、安全性和效能。 AWS S3服務使用貯體或容器來儲存資料。 此設定需要您建立&#x200B;_私人_&#x200B;貯體。 如需雲端基礎結構上的Adobe Commerce，請參閱[在雲端基礎結構上設定Commerce的遠端儲存空間](cloud-support.md)。
+[Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3)是物件儲存服務，提供領先業界的擴充性、資料可用性、安全性和效能。 AWS S3服務使用貯體或容器來儲存資料。 此設定需要您建立&#x200B;_私人_&#x200B;貯體。 如需雲端基礎結構上的Adobe Commerce，請參閱[在雲端基礎結構上設定Commerce的遠端儲存空間](cloud-support.md)。
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 1. 登入您的Amazon S3儀表板並建立&#x200B;_私人_&#x200B;貯體。
 
-1. 設定[AWS IAM]角色。 或者，產生存取和秘密金鑰。
+1. 設定[AWS IAM](https://aws.amazon.com/iam/)角色。 或者，產生存取和秘密金鑰。
 
 1. 停用預設資料庫儲存體。
 
@@ -73,7 +73,7 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### 驗證
 
-如果您使用存取和秘密金鑰而非[AWS IAM]角色，則必須包含[`ngx_aws_auth` Nginx模組][ngx repo]。
+如果您使用存取和秘密金鑰而非[AWS IAM](https://aws.amazon.com/iam/)角色，則必須包含[`ngx_aws_auth` Nginx模組](https://github.com/anomalizer/ngx_aws_auth)。
 
 ### 權限
 
@@ -83,8 +83,3 @@ S3整合仰賴在本機檔案系統上產生及儲存快取影像的能力。 �
 
 強烈建議您在程式碼或擴充功能開發中使用[!DNL Commerce]檔案配接器方法，無論檔案儲存型別為何。 使用S3進行儲存時，請勿使用原生PHP檔案I/O作業，例如`copy`、`rename`或`file_put_contents`，因為S3檔案不在檔案系統中。 如需程式碼範例，請參閱[DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18)。
 
-<!-- link definitions -->
-
-[AWS S3]: https://aws.amazon.com/s3
-[AWS IAM]: https://aws.amazon.com/iam/
-[ngx repo]: https://github.com/anomalizer/ngx_aws_auth

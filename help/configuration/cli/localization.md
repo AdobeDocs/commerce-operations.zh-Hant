@@ -2,9 +2,9 @@
 title: 翻譯字典和語言套件
 description: 瞭解如何產生Adobe Commerce的翻譯字典和建置語言套件。 探索當地語系化及多語言商店設定。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Commerce翻譯可讓您針對多個地區和市場自訂您的商店並將其當
 - **翻譯字典**，這是自訂或翻譯&#x200B;_某些_&#x200B;單字和短語的便利方式，例如自訂模組或佈景主題的單字和短語。
 - **語言套件**，可讓您在Commerce應用程式中翻譯&#x200B;_任何或全部_&#x200B;個字詞和片語。
 
-請參閱[翻譯概觀]。
+請參閱[翻譯概觀](https://developer.adobe.com/commerce/frontend-core/guide/translations/)。
 
 ## 產生翻譯字典
 
-您可以產生[翻譯字典]，以自訂現有的字串、翻譯自訂模組中的單字與片語、本地化佈景主題或建立語言套件。
+您可以產生[翻譯字典](https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries)，以自訂現有的字串、翻譯自訂模組中的單字與片語、本地化佈景主題或建立語言套件。
 
 若要開始翻譯，請使用命令產生字典CSV檔案，其中包含所有現有短語和單字的收集清單。
 
@@ -35,7 +35,7 @@ Commerce翻譯可讓您針對多個地區和市場自訂您的商店並將其當
 
 1. 您可以將翻譯字典封裝成語言套件，然後提供套件給Commerce商店管理員。
 
-1. 在管理員中，商店管理員[設定翻譯]。
+1. 在管理員中，商店管理員[設定翻譯](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize)。
 
 命令選項：
 
@@ -85,7 +85,7 @@ Product 'Multimeter-2000' has been added to shopping cart.
 
 ## 建立語言套件
 
-與翻譯字典相反，您可以使用語言套件翻譯Commerce應用程式中的任何或所有字詞和片語。 您可以使用翻譯字典來翻譯特定元件（例如模組或主題）。 [進一步瞭解語言套件]。
+與翻譯字典相反，您可以使用語言套件翻譯Commerce應用程式中的任何或所有字詞和片語。 您可以使用翻譯字典來翻譯特定元件（例如模組或主題）。 [進一步瞭解語言套件](https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages)。
 
 本節將討論如何建立語言套件，其會將CSV檔案寫入模組和主題。 若要建立語言套件，您必須執行下列各節中討論的工作：
 
@@ -107,7 +107,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 | 引數 | 值 | 必填？ |
 |--- |--- |--- |
 | `<source>` | CSV檔案的絕對檔案系統路徑和檔案名稱，該檔案包含劃分成語言套件所需的合併翻譯字典和中繼資訊。<br><br>使用[`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict)建立CSV檔案，然後建立語言套件，如[建立目錄和檔案](#m2devgde-xlate-files)中所述。 | 是 |
-| `<locale>` | [ISO 639-1] （語言）和[ISO 3166] （國家/地區）識別碼，用來作為所有產生的CSV檔案的檔案名稱。 範例： `de_DE`、`pt_PT`、`pt_BR`。 | 是 |
+| `<locale>` | [ISO 639-1](https://www.iso.org/iso-639-language-codes.html) （語言）和[ISO 3166](https://www.iso.org/iso-3166-country-codes.html) （國家/地區）識別碼，用來作為所有產生的CSV檔案的檔案名稱。 範例： `de_DE`、`pt_PT`、`pt_BR`。 | 是 |
 | `-m --mode` | 如果目標檔案存在，請指定取代現有的語言套件還是與新的語言套件合併。 合併會覆寫任何現有的短語，並加入新的短語。<br><br>值：合併或取代（預設）。 | 否 |
 | `-d --allow-duplicates` | 包含此選項以允許語言套件中出現重複專案。 否則，如果命令在多個包含不同翻譯的專案中遇到相同的片語，則會失敗並出現錯誤。 | 否 |
 
@@ -117,12 +117,12 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 - 必要的授權檔案
 - `composer.json`
-- `registration.php`註冊[語言套件的]
+- `registration.php`註冊[語言套件的](https://developer.adobe.com/commerce/php/development/build/component-registration/)
 - [`language.xml`](#language-package-languagexml)中繼資訊檔案
 
 >[!INFO]
 >
->您必須將整個路徑變為小寫。 例如，請參閱[`de_de`]。
+>您必須將整個路徑變為小寫。 例如，請參閱[`de_de`](https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php)。
 
 若要建立這些檔案：
 
@@ -131,8 +131,8 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
    例如，Commerce語言套件位於`app/i18n/magento`
 
 1. 新增必要的許可證檔案。
-1. 新增指定語言套件相依性的[`composer.json`]。
-1. 向[`registration.php`]註冊語言套件
+1. 新增指定語言套件相依性的[`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/)。
+1. 向[`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/)註冊語言套件
 1. 新增`language.xml`中繼資訊檔案，如下節所述。
 
 #### 語言套件語言.xml
@@ -195,7 +195,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-指定語言套件之間的所有繼承可能會導致建立循環繼承鏈。 使用[Magento\Test\Integrity\App\Language\CircularDependencyTest]測試來尋找並修正這類鏈結。
+指定語言套件之間的所有繼承可能會導致建立循環繼承鏈。 使用[Magento\Test\Integrity\App\Language\CircularDependencyTest](https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php)測試來尋找並修正這類鏈結。
 
 ### 針對一種語言設定多個套件
 
@@ -312,16 +312,3 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
    </language>
    ```
 
-<!-- link definitions -->
-
-[翻譯概觀]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
-[翻譯字典]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[設定轉換]: https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-localize
-[進一步瞭解語言套件]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
-[ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
-[ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
-[註冊]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[&#39;de_de&#39;]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
-[&#39;composer.json&#39;]: https://developer.adobe.com/commerce/php/development/build/composer-integration/
-[&#39;registration.php&#39;]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[Magento\Test\Integrity\App\Language\CircularDependencyTest]: https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php

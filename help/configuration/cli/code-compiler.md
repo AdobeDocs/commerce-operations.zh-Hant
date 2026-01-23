@@ -2,7 +2,7 @@
 title: 程式碼編譯器
 description: 瞭解如何從命令列執行Adobe Commerce程式碼編譯器。 探索編譯流程和最佳化技術。
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 - 存放庫程式碼產生（為API產生的程式碼）
 - 服務資料屬性產生（為資料物件產生的擴充功能類別）
 
-您可以在[\Magento\Setup\Module\Di\App\Task\Operation][operation]名稱空間中找到程式碼編譯類別。
+您可以在[\Magento\Setup\Module\Di\App\Task\Operation](https://github.com/magento/magento2/blob/2.4.8/setup/src/Magento/Setup/Module/Di/App/Task/Operation)名稱空間中找到程式碼編譯類別。
 
 若要執行單一租使用者編譯器：
 
@@ -60,6 +60,3 @@ Generated code and dependency injection configuration successfully.
 
 若要在不使用資料庫的情況下編譯程式碼，請參閱[部署靜態檢視檔案而不安裝Magento](../cli/static-view-file-deployment.md)。
 
-<!-- link definitions -->
-
-[operation]: https://github.com/magento/magento2/blob/2.4/setup/src/Magento/Setup/Module/Di/App/Task/Operation

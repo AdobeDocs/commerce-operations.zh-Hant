@@ -2,9 +2,9 @@
 title: config.php參考
 description: 瞭解Adobe Commerce設定的config.php檔案值和區段。 探索模組、範圍、系統設定和部署最佳實務。
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '156'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 1%
 ]
 ```
 
-深入瞭解[模組]。
+深入瞭解[模組](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html)。
 
 ## 範圍
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 ]
 ```
 
-深入瞭解[Commerce領域][scopes]。
+深入瞭解[Commerce領域](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 
 ## 系統
 
@@ -120,10 +120,5 @@ ht-degree: 1%
 ]
 ```
 
-深入瞭解[主題]。
+深入瞭解[主題](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/)。
 
-<!-- link definitions -->
-
-[模組]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=zh-Hant
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings
-[主題]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

@@ -3,7 +3,7 @@ title: 單一電腦部署
 description: 瞭解如何使用命令列在生產伺服器上部署對Commerce的更新。
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 >[!WARNING]
 >
 >如果您使用`git clone`安裝Commerce，則本指南不適用。
->貢獻開發人員應使用[本指南][install]更新其Commerce安裝。
+>貢獻開發人員應使用[本指南](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies)更新其Commerce安裝。
 
 ## 部署步驟
 
@@ -91,6 +91,3 @@ ht-degree: 1%
    bin/magento maintenance:disable
    ```
 
-<!-- link definitions -->
-
-[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies

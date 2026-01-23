@@ -3,7 +3,7 @@ title: 自訂 [!DNL Data Migration Tool]
 description: 瞭解如何自訂 [!DNL Data Migration Tool] 以在Magento 1和Magento 2之間傳輸擴充功能建立的資料。
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # 設定[!DNL Data Migration Tool]
 
-有時候，由[擴充功能](https://marketplace.magento.com/extensions.html)或自訂程式碼建立的資料格式和結構在Magento 1和Magento 2之間會有所不同。 使用[!DNL Data Migration Tool]內的擴充點來移轉此資料。 如果資料格式和結構相同，則工具可自動移轉資料，無需使用者介入。
+有時候，由[擴充功能](https://commercemarketplace.adobe.com//extensions.html)或自訂程式碼建立的資料格式和結構在Magento 1和Magento 2之間會有所不同。 使用[!DNL Data Migration Tool]內的擴充點來移轉此資料。 如果資料格式和結構相同，則工具可自動移轉資料，無需使用者介入。
 
 在移轉期間，[Map Step](technical-specification.md#map-step)會掃描並比較所有Magento 1和Magento 2表格，包括由擴充功能建立的表格。 如果表格相同，工具會自動移轉資料。 如果表格不同，工具會終止並通知使用者。
 

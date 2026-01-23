@@ -2,7 +2,7 @@
 title: env.php參考
 description: 瞭解Adobe Commerce中的env.php檔案配置值和區段。 探索環境設定和組態選項。
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 | `resource` | 將資源名稱對應到連線 |
 | `session` | 工作階段儲存資料 |
 | `system` | 停用「管理員」中要編輯的欄位 |
-| `x-frame-options` | [x-frame-options][x-frame-options]的設定 |
+| `x-frame-options` | [x-frame-options](../security/xframe-options.md)的設定 |
 
 ## 後端
 
@@ -146,7 +146,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-在[Commerce使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/encryption-key)中進一步瞭解&#x200B;_加密金鑰_。
+在[Commerce使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)中進一步瞭解&#x200B;_加密金鑰_。
 
 ## db
 
@@ -211,7 +211,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-深入瞭解[可下載的網域](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
+深入瞭解[可下載的網域](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
 
 ## 安裝
 
@@ -252,7 +252,7 @@ Commerce應用程式的安裝日期。
 ]
 ```
 
-深入瞭解[訊息佇列][message-queue]。
+深入瞭解[訊息佇列](https://developer.adobe.com/commerce/php/development/components/message-queues/)。
 
 ## resource
 
@@ -305,9 +305,6 @@ x-frame-options標頭可使用此節點進行設定。
 
 深入瞭解[env-php-config-set](../cli/set-configuration-values.md)。
 
-<!-- Link definitions -->
-
-[message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
 
 
 ## 將變數新增至檔案設定

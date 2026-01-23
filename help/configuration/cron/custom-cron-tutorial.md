@@ -2,16 +2,16 @@
 title: 設定自訂cron作業和cron群組（教學課程）
 description: 瞭解如何使用此Adobe Commerce的逐步教學課程來建立自訂cron作業。 探索模組設定和Cron群組設定。
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
 
 # 設定自訂cron作業
 
-此逐步教學課程說明如何在範例模組中建立自訂cron工作以及選用的cron群組。 您可以使用您已擁有的模組，或使用我們[`magento2-samples`存放庫][samples]的範例模組。
+此逐步教學課程說明如何在範例模組中建立自訂cron工作以及選用的cron群組。 您可以使用您已擁有的模組，或使用我們[`magento2-samples`存放庫](https://github.com/magento/magento2-samples)的範例模組。
 
 執行cron工作會導致將資料列新增到`cron_schedule`表格中，且名稱為cron工作`custom_cron`。
 
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 1. 以或切換到[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)的身份登入您的Commerce伺服器。
 1. 變更至不在Commerce應用程式根目錄中的目錄（例如您的主目錄）。
-1. 複製[`magento2-samples`存放庫][samples]。
+1. 複製[`magento2-samples`存放庫](https://github.com/magento/magento2-samples)。
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   如果命令因錯誤`Permission denied (publickey).`而失敗，您必須[將您的SSH公開金鑰新增至GitHub.com][git-ssh]。
+   如果命令因錯誤`Permission denied (publickey).`而失敗，您必須[將您的SSH公開金鑰新增至GitHub.com](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)。
 
 1. 建立要將範常式式碼複製到其中的目錄：
 
@@ -303,7 +303,3 @@ bin/magento cache:clean
 
    ![您的自訂cron群組](../../assets/configuration/cron-group.png)
 
-<!-- link definitions -->
-
-[git-ssh]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-[samples]: https://github.com/magento/magento2-samples

@@ -3,7 +3,7 @@ title: 資料移轉的運作方式
 description: 瞭解Magento 1與Magento 2之間的資料移轉程式，包括術語、工作流程圖表和步驟。
 exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Magento 2移轉包含四個元件：資料、擴充功能和自訂程式碼、�
 
 ### 擴充功能與自訂程式碼
 
-我們一直與開發社群合作，協助您在Magento 2中使用Magento 1擴充功能。 現在我們自豪地推出[Commerce Marketplace](https://marketplace.magento.com/)，您可以在其中下載或購買您最愛擴充功能的最新版本。
+我們一直與開發社群合作，協助您在Magento 2中使用Magento 1擴充功能。 現在我們自豪地推出[Commerce Marketplace](https://commercemarketplace.adobe.com//)，您可以在其中下載或購買您最愛擴充功能的最新版本。
 
 有關為Magento 2開發擴充功能的詳細資訊，請參閱[PHP開發人員指南](https://developer.adobe.com/commerce/php/development/)。
 

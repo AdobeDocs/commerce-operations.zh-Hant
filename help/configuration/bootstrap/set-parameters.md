@@ -2,9 +2,9 @@
 title: 設定啟動程式引數的值
 description: 瞭解如何設定Commerce應用程式的啟動程式引數。
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '559'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
-使用殼層特定的命令設定變數。 因為殼層有不同的語法，請查閱參考資料，例如[unix.stackexchange.com][unix-stackx]。
+使用殼層特定的命令設定變數。 因為殼層有不同的語法，請查閱參考資料，例如[unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables)。
 
 CentOS的Bash shell範例：
 
@@ -57,7 +57,7 @@ export MAGE_PROFILER=firebug
 
 ### Nginx設定
 
-檢視[GitHub]上的&#x200B;_Nginx範例組態_。
+檢視[GitHub](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16)上的&#x200B;_Nginx範例組態_。
 
 ### Apache .htaccess設定
 
@@ -92,7 +92,7 @@ export MAGE_PROFILER=firebug
 
 Apache Web Server支援使用`mod_env`指令設定應用程式模式。
 
-在`mod_env`Apache版本2.2[和]Apache版本2.4[中，Apache ]指示詞稍有不同。
+在`mod_env`Apache版本2.2[和](https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv)Apache版本2.4[中，Apache ](https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv)指示詞稍有不同。
 
 下列程式說明如何在Apache虛擬主機中設定應用程式模式。 這不是使用`mod_env`指示詞的唯一方法；如需詳細資訊，請參閱Apache檔案。
 
@@ -166,9 +166,3 @@ Apache Web Server支援使用`mod_env`指令設定應用程式模式。
    - Ubuntu： `service apache2 restart`
    - CentOS： `service httpd restart`
 
-<!-- link definitions -->
-
-[Apache 2.2版]: https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
-[Apache 2.4版]: https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
-[Nginx範例設定]: https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16
-[unix-stackx]: https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables
