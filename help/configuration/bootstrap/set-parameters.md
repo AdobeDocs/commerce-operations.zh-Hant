@@ -92,7 +92,7 @@ export MAGE_PROFILER=firebug
 
 Apache Web Server支援使用`mod_env`指令設定應用程式模式。
 
-在`mod_env`Apache版本2.2[和](https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv)Apache版本2.4[中，Apache ](https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv)指示詞稍有不同。
+在`mod_env`Apache版本2.2[和](https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv)Apache版本2.4[中，Apache &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv)指示詞稍有不同。
 
 下列程式說明如何在Apache虛擬主機中設定應用程式模式。 這不是使用`mod_env`指示詞的唯一方法；如需詳細資訊，請參閱Apache檔案。
 
