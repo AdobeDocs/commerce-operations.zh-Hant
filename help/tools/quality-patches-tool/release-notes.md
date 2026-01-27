@@ -3,9 +3,9 @@ title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: f08af2909959bf8fb14b279f904e91a90f4e3d44
+source-git-commit: a233f39557ef1cc4f27f3e4ce015de554941d676
 workflow-type: tm+mt
-source-wordcount: '29786'
+source-wordcount: '30379'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,30 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.76 {#v1-1-76}
+
+* **ACSD-67091** (適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9) — 修正最大寫入集大小錯誤，以透過根據資料量實作兩種刪除策略來確保目錄規則產品索引清理。
+* **ACSD-67370** (適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9) — 修正PDP/PLP上套件組合產品的價格不正確以及多貨幣商店購物車頁面的多個問題。
+* **ACSD-68410** (針對Adobe Commerce，B2B >=1.3.3 &lt;1.5.3) — 修正針對可轉讓報價下訂單時，不正確地新增或合併額外購物車明細至報價的問題。 離開可協商報價結帳的最後一步後，產品現在可以正確新增到購物車中。
+* **ACSD-69086** (適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.8) — 修正cron工作無法清除changelog表格、導致在處理大量資料時蓋拉叢集當機的問題。
+* **ACSD-69115** (適用於Adobe Commerce >=2.4.4 &lt;2.4.9) — 修正為指派給非預設網站的客戶管理購物車時，未向管理員使用者顯示購物車錯誤的問題。
+* **ACSD-69129** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.7) || >=2.4.8 &lt;2.4.9) — 修正當嘗試透過REST API更新次要網站的層級價格時，刪除預設基本網站並使用次要網站作為預設值會導致錯誤的問題。
+* **ACSD-69203** (適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9) — 修正當類別條件中列出多個類別時，產品清單Widget傳回錯誤結果的問題。
+* **ACSD-69261** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正因部分發票中`times_used`屬性的處理不正確及剩餘數量取消情況，而多次重複使用設定為每位客戶單次使用的購物車價格規則優惠券的問題。
+* **ACSD-69308** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正僅於網站層級設定`special_price`時（非「所有商店檢視」），目錄價格規則不適用的問題。 修正後，請先檢查網站的預設商店，正確套用目錄價格規則。
+* **ACSD-69319** (適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9) — 修正當子產品有自訂來源下的存貨時，套件價格未正確編制索引的問題。
+* **ACSD-69325** (適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9) — 修正修改SKU案例導致產品在店面無存貨的問題。
+* **ACSD-69331** (適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.9) — 修正媒體集中的內容建立者無法僅以`create_folder`許可權建立資料夾的問題。 完成修正後，他們就能如預期建立資料夾。
+* **ACSD-69333** (適用於Adobe Commerce >=2.4.7 &lt;2.4.9) — 修正具有作用中排程更新的產品允許SKU變更的問題。 修正後，SKU變更在作用中更新期間被禁止；儲存失敗並出現明確錯誤，管理SKU欄位被停用。 這可防止在預備倒回期間，SKU變更所導致的MSI詳細目錄不一致。
+* **ACSD-69541** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9) — 修正將管理員中的產品數量減少到低於購物車中已有的產品數量時，無法透過GraphQL編輯該購物車中的產品數量的問題。
+* 已更新的版本： **ACSD-46541**、**ACSD-53750**、**ACSD-66404**
+* 已取代的修補程式： **ACSD-66404**，**ACSD-68499**
 
 ## v1.1.75 {#v1-1-75}
 
