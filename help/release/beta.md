@@ -2,9 +2,9 @@
 title: Beta發行版本
 description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 937e883e74d3a0b32a25dbdf3db0347398ef6ba3
+source-git-commit: c5d43d79679a1036f207313464f2a43bc197a3b5
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供
 
 如需使用中Beta版計畫的清單，請參閱下列章節。
 
+### App Builder (公用Beta)的資料庫儲存
+
+[App Builder的資料庫儲存空間](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database)是內建在Adobe Developer App Builder中的新受管理、檔案式資料存放空間，可讓您的Commerce應用程式永久儲存結構化JSON資料，並可查詢。 所有擁有App Builder授權的客戶都可以布建此功能。
+
 ### 語意搜尋：更聰明、內容感知的購物體驗（私人測試版）
 
 語意搜尋是一種電子商務搜尋技術，可瞭解購物者查詢背後的&#x200B;*含義*，而不只是確切的字詞。 傳統關鍵字式搜尋在查詢包含不熟悉或拼錯的辭彙時通常失敗，不同於這種方式，AI支援的方法使用自然語言處理(NLP)和上下文來解譯意圖，以提供更相關的結果。
@@ -43,9 +47,9 @@ Adobe Commerce測試版計畫是商家存取發行前功能和程式碼、提供
 
 ### 雲端自動化修補服務(Private Beta)
 
-[Cloud Automation Patching Service](../tools/caps-tool/intro.md)會自動在雲端基礎結構[環境中將隔離的安全性修補程式套用至您的](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)Adobe Commerce。
+[Cloud Automation Patching Service](../tools/caps-tool/intro.md)會自動在雲端基礎結構[環境中將隔離的安全性修補程式套用至您的](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)Adobe Commerce。
 
-在2025年10月，Cloud Automation Patching Service的測試版將新增至[全網站分析工具儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)。 此服務透過簡化的修補工作流程支援Commerce專案管理員，包括：
+在2025年10月，Cloud Automation Patching Service的測試版將新增至[全網站分析工具儀表板](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)。 此服務透過簡化的修補工作流程支援Commerce專案管理員，包括：
 
 - 自動安裝修補程式
 - 復原復原
@@ -60,7 +64,7 @@ Beta版包含下列功能：
 
 >[!NOTE]
 >
->由於Cloud Automation修補服務會自動套用隔離的安全性修補程式，因此您必須擁有[貢獻者或專案管理員角色](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/user-access)才能使用它。
+>由於Cloud Automation修補服務會自動套用隔離的安全性修補程式，因此您必須擁有[貢獻者或專案管理員角色](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)才能使用它。
 
 若要參與此測試版，請完成並提交[Cloud Automation Patching Service - Beta登錄檔單](https://forms.office.com/r/3Wfxj5nPdB)。
 
@@ -84,7 +88,7 @@ Beta版包含下列功能：
 - GraphQL改良功能
 - 一般品質錯誤修正
 - 社群貢獻
-- 支援與[Adobe Commerce服務](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)相容性所需的變更
+- 支援與[Adobe Commerce服務](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)相容性所需的變更
 
 #### 命名慣例和排程
 
