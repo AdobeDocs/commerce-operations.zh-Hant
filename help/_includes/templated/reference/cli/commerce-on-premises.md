@@ -1,5 +1,5 @@
 ---
-source-git-commit: 937e883e74d3a0b32a25dbdf3db0347398ef6ba3
+source-git-commit: e50883135e13621f9668914a260bd5a2bf48641d
 workflow-type: tm+mt
 source-wordcount: '8232'
 ht-degree: 1%
@@ -24,7 +24,9 @@ ht-degree: 1%
 
 您可以使用捷徑來呼叫`bin/magento` CLI命令，而不使用完整的命令名稱。 例如，您可以使用`bin/magento setup:upgrade`、`bin/magento s:up`呼叫`bin/magento s:upg`。 請參閱[捷徑語法](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax)，瞭解如何使用捷徑與任何CLI命令。
 
-此參考檔案是從應用程式原始碼產生。 若要變更檔案，您應在相關[程式碼基底](https://github.com/magento)存放庫中開啟對應命令的提取要求。 如需詳細資訊，請參閱[程式碼貢獻](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)。
+此參考檔案是從應用程式原始碼產生。 若要變更檔案，您應開啟
+相關[程式碼基底](https://github.com/magento)存放庫中對應命令的提取要求。 另請參閱
+[程式碼貢獻](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)以取得詳細資訊。
 
 ### 全域選項
 
