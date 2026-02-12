@@ -39,7 +39,7 @@ ht-degree: 0%
    - 顯示提供下列資源連結的&#x200B;**[!UICONTROL Security Center Widget]**：
       - [技術 [!DNL Stack] 版本相容性 [!DNL end of life (EOL)]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
       - [Adobe安全性公告](https://helpx.adobe.com/security/security-bulletin.html)
-      - 來自[ [!DNL Security Scan Tool]的](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)建議
+      - 來自[&#x200B; [!DNL Security Scan Tool]的](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)建議
       - [[!DNL Site-Wide Analysis Tool] 最佳實務安全性建議](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations)
 
 - **資訊** — 提供客戶連絡資訊和目前票證的摘要，以及每個Adobe Commerce產品的詳細資訊。
