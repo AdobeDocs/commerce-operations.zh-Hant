@@ -4,7 +4,7 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.66中可用�
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: 8e7cec268cf4d0022cf5037f5effcaa8a13b55ca
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -16,6 +16,7 @@ ht-degree: 0%
 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.66中可用修補程式所修正問題的詳細說明。
 
 QPT v1.1.66包含下列修補程式：
+
 1. **ACP2E-3918**：使用店內取貨的公司客戶無法結帳。
 1. **ACP2E-3789**：透過WebAPI在產品更新時重複的媒體檔案。
 1. **ACSD-65750**： GraphQL「route」查詢傳回的產品在頁面產生器產品內容型別中順序不對。

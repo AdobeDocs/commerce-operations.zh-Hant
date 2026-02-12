@@ -5,7 +5,7 @@ feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 6cfe4f4c-cdb3-49b3-84d0-ad794dfcafc3
-source-git-commit: 9acccaadf718775430e858da3390e666633ecbd7
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.65中可用修補程式所修正問題的詳細說明。
 
 QPT v1.1.65包含下列修補程式：
+
 1. **ACP2E-3753**：庫存警示電子郵件未在多存放區設定中使用存放區特定的主題範本。
 1. **ACSD-64118**：相同產品的並行產品儲存請求造成資料不一致和重複專案。
 1. **ACSD-64813**：透過REST API取消指派B2B共用目錄中的類別緩慢。
