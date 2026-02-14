@@ -20,7 +20,7 @@ ht-degree: 0%
 - 更好的開發人員體驗和工具
 - 能夠與其他Adobe Experience Cloud應用程式更深入整合
 
-為了提供商戶在規劃升級時更靈活的彈性，我們最近更新了Adobe Commerce [發行排程](../../release/schedule.md)、延長了2.3支援終止日期(EOS)，並宣佈針對特定軟體版本的新延長支援選項。 如需這些更新的詳細資訊，請參閱[擴大對Adobe Commerce的支援](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support)。
+為了提供商戶在規劃升級時更靈活的彈性，我們最近更新了Adobe Commerce [發行排程](../../release/schedule.md)、延長了2.3支援終止日期(EOS)，並宣佈針對特定軟體版本的新延長支援選項。 如需這些更新的詳細資訊，請參閱[擴大對Adobe Commerce的支援](https://business.adobe.com/tw/blog/the-latest/adobe-announces-expanded-support)。
 
 以下是Adobe Commerce建議的升級路徑，可讓您的網站在升級至其中一個最新版本時保持安全性和效能。
 

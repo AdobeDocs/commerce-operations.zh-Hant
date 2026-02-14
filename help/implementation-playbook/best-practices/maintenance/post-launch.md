@@ -226,7 +226,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如需詳細指引，請參閱[維護最佳實務](overview.md)、[個人化](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)和[功能開發](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)。
+>如需詳細指引，請參閱[維護最佳實務](overview.md)、[個人化](https://business.adobe.com/tw/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)和[功能開發](https://business.adobe.com/tw/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)。
 
 ### 報告與分析
 

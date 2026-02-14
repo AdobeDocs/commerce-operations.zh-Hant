@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517的QPT 1.1.75修正的詳細說明：修正目錄和目錄搜尋頁面</a>上的表單重新提交錯誤。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517的QPT 1.1.75修正的詳細說明：修正目錄和目錄搜尋頁面</a>上的表單重新提交錯誤。</p>
 </td>
       <td>
         新主題qpt
@@ -53,7 +53,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8ee6404271170b19ff27a3ab64711061505494b3">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">概觀：品質修補工具(QPT) v1.1.76</a>。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">概觀：品質修補工具(QPT) v1.1.76</a>。</p>
 </td>
       <td>
         新主題qpt

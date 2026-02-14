@@ -42,7 +42,7 @@ ht-degree: 1%
     <td>設定網站、商店和商店檢視以最大化網站效能。</td>
   </tr>
   <tr>
-    <td><a href="https://business.adobe.com/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">常見設定問題</a></td>
+    <td><a href="https://business.adobe.com/tw/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">常見設定問題</a></td>
     <td>修正和防止Adobe Commerce網站最常見的五個設定問題。</td>
   </tr>
   <tr>
