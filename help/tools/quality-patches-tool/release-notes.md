@@ -292,7 +292,7 @@ ht-degree: 0%
 
 ## v1.1.58 {#v1-1-58}
 
-* **ACSD-48570**（用於 Adobe Commerce 和 Magento 開源 >=2.4.4 &lt;2.4.7) - Fixes the issue where the reset password page couldn&#39;t be reached by clicking the [!UICONTROL Admin] 重設密碼連結，啟用 **URL 新增商店代碼****，過去會顯示登入頁面或 404 頁面。
+* **ACSD-48570**（用於 Adobe Commerce 和 Magento 開源 >=2.4.4 &lt;2.4.7) - Fixes the issue where the reset password page couldn&#39;t be reached by clicking the [!UICONTROL Admin] 重設密碼連結，啟用 **URL 新增商店代碼**&#x200B;**，過去會顯示登入頁面或 404 頁面。
 * **ACSD-62118** (適用於Adobe Commerce >=2.4.6 &lt;2.4.8) — 修正使用「採購單」方法下達`sales_order_tax_item`份訂單時，[!DNL B2B]表格未完全更新的問題。
 * **ACSD-63067** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正所有產品數量皆未正確標示的問題，且僅有一個數量不正確時，會針對分組產品中的所有產品顯示訊息&#x200B;*[!DNL Please specify the quantity of product(s).]*。
 * **ACSD-63090** (適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8) — 修正將產品新增到購物車後，當產品被刪除時購物車專案被移除的問題。
@@ -1279,7 +1279,7 @@ ht-degree: 0%
 
 ## v1.0.13 {#v1-0-13}
 
-* **MDVA-30858**（*用於 Adobe Commerce >=2.3.0&lt;2.4.2*）— 修正[!DNL PayPal]了結算報告無法如預期在&#x200B;**銷售報告**> **** 結算>**[!DNL PayPal]**&#x200B;中提供的問題。
+* **MDVA-30858**（*用於 Adobe Commerce >=2.3.0&lt;2.4.2*）— 修正[!DNL PayPal]了結算報告無法如預期在&#x200B;**銷售報告**> **&#x200B;**&#x200B;結算>**[!DNL PayPal]**&#x200B;中提供的問題。
 * **MCP-87** （*用於 Adobe Commerce >=2.3.1 &lt;2.4.2*）- 改善大型投資組合類別產品及股票索引器的索引時間。
 * **MDVA-33106** (*適用於Adobe Commerce >=2.3.0 &lt;2.4.2*) — 修正執行cron `run`命令後清除重新排程產品變更的問題。
 * **MDVA-19391** (*適用於Adobe Commerce >=2.3.0 &lt;2.3.5*) — 修正`analytics_collect_data`因`catalog_category_entity_text`表格中有NULL描述記錄而發生錯誤的問題。
