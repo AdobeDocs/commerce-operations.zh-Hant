@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->請參閱 [「套用修補」](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) 了解如何將修補程式套用到 Adobe Commerce 專案。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
+>請參閱 [「套用修補」](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches) 了解如何將修補程式套用到 Adobe Commerce 專案。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
