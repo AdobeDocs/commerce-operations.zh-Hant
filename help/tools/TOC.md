@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: f230c5fe7a2678f091dfff559c21bdb0d349b062
+source-git-commit: f1295699c0b0b7bbb44acb02684d3121818593e0
 workflow-type: tm+mt
-source-wordcount: '9142'
+source-wordcount: '9146'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Adobe Commerce的管理警報： CPU警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質修補工具 {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+   - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [使用情況](quality-patches-tool/usage.md)
    - [發行說明](quality-patches-tool/release-notes.md)
    - Quality Patches Tool提供的修補程式 {#patches-available-in-qpt}
@@ -841,7 +841,7 @@ ht-degree: 0%
          - [ACSD-66049：非英文店面會因為ICU的資料庫版本而顯示不正確的定價](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66049-non-english-storefronts-display-incorrect-pricing-due-to-the-icu-library-version.md)
          - [ACSD-66441：階層式導覽在多儲存設定中顯示不正確的屬性選項](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66441-layered-navigation-displays-incorrect-attribute-in-multi-store-setup.md)
          - [AC-14985：使用TLS傳送SMTP電子郵件時發生錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14985-error-when-sending-smtp-emails-using-tls.md)
-         - [ACSD-66434：公司[!UICONTROL Customer ID]查詢中缺少 [!DNL GraphQL] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
+         - [ACSD-66434：公司[!UICONTROL Customer ID]查詢中缺少 [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
       - v1.1.68 {#v1-1-68}
          - [ACSD-66072：由於[!UICONTROL Related Products Rule]組態期間發生內部伺服器錯誤，GraphQL無法傳回產品詳細資料頁面上的相關產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66072-graphql-fails-to-return-related-products-due-to-server-error-in-related-product-rules.md)
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
@@ -895,8 +895,8 @@ ht-degree: 0%
          - [ACSD-67603：針對已啟用影像包含功能的產品，產生Sitemap需要較長的處理時間](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
          - [ACSD-67093：使用日期範圍篩選器透過GraphQL擷取訂單時，傳回錯誤結果](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
          - [ACSD-67652：將產品狀態於GraphQL呼叫中傳回為無庫存狀態，且子產品和父產品有庫存](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-         - [ACSD-60624：上傳影像失敗，因為 [!DNL Page Builder]中的影像、橫幅和滑桿區段有空白內容](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
-         - [ACSD-67904：如果城市名稱包含數字(0-9)、&amp;符號(&amp;)、句點(.)或括弧()，則無法下訂單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
+         - [ACSD-60624：上傳影像失敗，因為 [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)中的影像、橫幅和滑桿區段有空白內容
+         - [ACSD-67904：如果城市名稱包含數字(0-9)、&amp;符號(&amp;)、句點(.)或括弧()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)，則無法下訂單
          - [ACSD-67459：無法匯入說明長度超過65,536個字元的產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -942,6 +942,8 @@ ht-degree: 0%
          - [ACSD-68490：可設定產品建立期間，[!UICONTROL Add New Attribute]按鈕對受限制的管理員可見](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490.md)
       - v1.1.76 {#v1-1-76}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
+      - v1.1.77 {#v1-1-77}
+         - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.77](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
@@ -961,7 +963,7 @@ ht-degree: 0%
    - [警示標籤](observation-for-adobe-commerce/alerts-tab.md)
    - [WAF標籤](observation-for-adobe-commerce/waf-tab.md)
    - [CDN索引標籤](observation-for-adobe-commerce/cdn-tab.md)
-   - [&#x200B; [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [ [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Cron標籤](observation-for-adobe-commerce/cron-tab.md)
    - [索引標籤](observation-for-adobe-commerce/indexing-tab.md)
    - [快速檢視標籤](observation-for-adobe-commerce/oac-quickview-tab.md)
@@ -989,6 +991,6 @@ ht-degree: 0%
       - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
       - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
    - 資源 {#resources}
-      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=zh-Hant)
+      - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [變更記錄檔](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
