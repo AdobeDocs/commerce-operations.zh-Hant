@@ -4,9 +4,9 @@ description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.77中可用�
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ba9d41179fe253634b9de3e3711c19b6fe797a69
+source-git-commit: cb5efec8e323dbe49fe38a4cf2977718b28c835f
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ QPT v1.1.77包含下列修補程式：
 1. **ACSD-69016**：不同時區的網站未套用特別價格。
 1. **ACSD-69020**：當子產品符合篩選器時，可設定的產品會出現在[!UICONTROL Page Builder]輪播中。
 1. **ACSD-69237**： `sales_*_async_insert` cron工作處理每個執行僅處理100個專案。
-1. **ACSD-69311**：從商業發票部份退款後，貸項通知單中的稅捐計算不正確。
+1. **[ACSD-69311](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)**：修正商業發票部份退款後貸項通知單中錯誤的稅捐計算。
 1. **ACSD-69351**：在不正確的網站上顯示的禮品卡餘額與到期日。
 1. **ACSD-69494**：具有`is_online`的非同步退款請求不會觸發線上退款。
 
