@@ -23,7 +23,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308之QPT 1.1.76修正的詳細說明：當<code class="language-plaintext highlighter-rouge">special_price</code>僅於網站層級（而非在「所有商店檢視」）設定時，目錄價格規則不適用。 修正後，請先檢查網站的預設商店</a>，以正確套用目錄價格規則。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308之QPT 1.1.76修正的詳細說明：當<code class="language-plaintext highlighter-rouge">special_price</code>僅於網站層級（而非在「所有商店檢視」）設定時，目錄價格規則不適用。 修正後，請先檢查網站的預設商店</a>，以正確套用目錄價格規則。</p>
 </td>
       <td>
         新主題qpt
@@ -31,7 +31,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/db07a5d6f991ff36536a4365ee88fa25062dbe43">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增適用於<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541的QPT 1.1.76修正的詳細說明：將管理員中的產品數量減少至低於購物車中現有的數量，導致無法透過GraphQL</a>編輯該購物車中的產品數量。</p>
+      <td><p>新增適用於<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541的QPT 1.1.76修正的詳細說明：將管理員中的產品數量減少至低於購物車中現有的數量，導致無法透過GraphQL</a>編輯該購物車中的產品數量。</p>
 </td>
       <td>
         新主題qpt
@@ -39,7 +39,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增適用於<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020的QPT 1.1.77修正的詳細說明：當子產品符合篩選器</a>時，可設定的產品會出現在頁面產生器輪播中。</p>
+      <td><p>新增適用於<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020的QPT 1.1.77修正的詳細說明：當子產品符合篩選器</a>時，可設定的產品會出現在頁面產生器輪播中。</p>
 </td>
       <td>
         新主題qpt
