@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1f377ab6e4dcdd2d350366f3889b8befd233474b
+source-git-commit: 4f2ca409bbad8b399e61577484a6e0d5a549d5c3
 workflow-type: tm+mt
-source-wordcount: '25720'
+source-wordcount: '25717'
 ht-degree: 0%
 
 ---
@@ -470,7 +470,7 @@ _AC-8109 - [GitHub問題](https://github.com/magento/magento2/issues/36947) - [G
 
 _AC-9843 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/0c53bbf7)_
 
-#### 存放區檢視名稱中的撇號會由&amp;#039；取代
+#### 存放區檢視名稱中的單引號已取代為「
 
 格線的存放區檢視篩選器現在會正確顯示單引號
 
@@ -1878,7 +1878,7 @@ _AC-8353 - [GitHub問題](https://github.com/magento/magento2/issues/37253) - [G
 
 _AC-8356 - [GitHub問題](https://github.com/magento/magento2/issues/37250) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/37000)_
 
-#### editorconfig語法中的空格中斷`[&lbrace;composer,auth&rbrace;.json]`的規則
+#### editorconfig語法中的空格中斷`[{composer,auth}.json]`的規則
 
 修正editorconfig中的語法錯誤後，系統現在可正確將4空格縮排套用至composer和auth.json檔案。 先前，由於editorconfig語法中有空格，這些檔案的格式不正確，有2個空格的縮排。
 
@@ -2022,7 +2022,7 @@ _ACP2E-2642 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 _ACP2E-2653 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### 包含價格篩選器`&lbrace;from:&quot;0&quot;&rbrace;`的GraphQL產品呼叫未傳回任何結果
+#### 包含價格篩選器`{from:"0"}`的GraphQL產品呼叫未傳回任何結果
 
 先前，使用零價格篩選條件搜尋的graphql產品由於擲回例外狀況，完全沒有傳回任何結果。 現在，搜尋會如預期傳回結果。
 
@@ -2641,7 +2641,7 @@ _LYNX-464_
 
 _LYNX-469_
 
-#### Product attribute > trademark short form &amp;amp；trade；傳回為&amp;amp；trade；
+#### 產品屬性>商標短格式™傳回為™
 
 解決GraphQL API產品名稱中的字元編碼問題
 
