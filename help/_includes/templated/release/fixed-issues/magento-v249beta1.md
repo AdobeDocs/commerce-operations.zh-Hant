@@ -61,7 +61,7 @@ _AC-15473 - [GitHub問題](https://github.com/magento/magento2/issues/39943) - [
 
 _AC-6419 - [GitHub問題](https://github.com/magento/magento2/issues/35934) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### `/V1/order/{orderId}/ship` API端點發生內部伺服器錯誤
+#### `/V1/order/&lbrace;orderId&rbrace;/ship` API端點發生內部伺服器錯誤
 
 系統現在修正`/V1/order/{orderId}/ship` API端點中的內部伺服器錯誤，並傳回400錯誤，因為要求的格式不正確。
 
@@ -2168,7 +2168,7 @@ _AC-8949 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/3b
 
 #### GraphQL對訂單位置的回應不包含例外訊息
 
-還原先前以不同格式傳回錯誤的變更。 現在系統會以一致的方式傳回潛在錯誤，而不會破壞GraphQL結構描述。 此資訊應新增為已知的BIC，由PM核准，網址： https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+還原先前以不同格式傳回錯誤的變更。 現在系統會以一致的方式傳回潛在錯誤，而不會破壞GraphQL結構描述。 此資訊應新增為已知的BIC，由PM核准，網址： https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/9608ca21)_
 
