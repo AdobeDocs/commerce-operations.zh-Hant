@@ -1,7 +1,7 @@
 ---
-source-git-commit: c699c3db054dbfb6d43ad18ced4d4d860e2c9db5
+source-git-commit: fd421e8c2455a2b45d3f3cc93573d2a609e4936d
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2408'
 ht-degree: 0%
 
 ---
@@ -137,12 +137,6 @@ Adobe Commerce 2.4.9-beta1新增對Valkey 8.x的完整支援，作為與Redis相
 
 _AC-14103、AC-14604_
 
-#### 將Nginx版本從1.26更新至1.28
-
-用於開發和測試環境且目前支援所有Adobe Commerce版本的Nginx版本已更新至1.28，且與最新穩定Nginx版本一致。 PR層級測試現在會針對Nginx 1.28執行，以確認所有Adobe Commerce版本的完整相容性和支援。
-
-_AC-14104_
-
 #### Apache ActiveMQ Artemis支援已取代RabbitMQ
 
 新增對Apache ActiveMQ Artemis的支援，作為RabbitMQ的策略替代方案，由RabbitMQ 4相關的支援終止風險驅動。 Commerce發行版本2.4.6到2.4.9-beta1完全支援ActiveMQ Artemis，包括使用AWS ActiveMQ進行雲端原生部署的Adobe Commerce Cloud，並且支援佇列消費者和發行者的STOMP設定。 現有的RabbitMQ 4安裝仍與想要繼續使用目前訊息佇列服務的商戶相容。
@@ -162,12 +156,6 @@ _AC-15615_
 從Adobe Commerce 2.4.9-beta1開始，不再支援PHP 8.2。 此平台現在針對PHP 8.3和更新版本，更新了核心程式碼、相依性和工具，以便在PHP 8.4和8.5上以簡潔可靠的方式執行。
 
 _AC-15758_
-
-#### 擴展的Composer 2.x版本支援
-
-之前，Composer版本支援限製為2.2.x。Adobe Commerce 2.4.9 Beta1擴充了支援，加入Composer 2.4.x及更新版本，擴大開發和部署環境的相容性。
-
-_AC-13792 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/19844aa0)_
 
 #### 已驗證Composer 2.9相容性
 
@@ -276,12 +264,6 @@ _AC-15461_
   _AC-14420 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/98b2848a)_
 
 ### 安全性
-
-#### 全面的多站台存取控制強化
-
-此更新提供在Adobe Commerce管理員中強化多站台存取控制清單(ACL)的全面功能，解決多站台存取控制設定中的已知和先前未知的許可權問題。 有權存取特定網站或商店的管理員使用者無法再檢視或修改屬於其他網站或多網站部署中商店的資料。
-
-_AC-11899_
 
 #### REST和GraphQL API現已強制進行驗證碼驗證
 

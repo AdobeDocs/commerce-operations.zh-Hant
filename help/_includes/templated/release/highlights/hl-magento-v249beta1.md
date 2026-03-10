@@ -1,7 +1,7 @@
 ---
-source-git-commit: 56974b4ada65c21ce1303e4b93bd8acb9fe41b28
+source-git-commit: 65a9bd667d434f1deae69798696f66998e6024a0
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,6 @@ _ACP2E-4358 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 作為持續安全性審查程式的一部分，我們評估了最新主要版本的JWT框架，以確保未來相容性並維持強大的安全性標準。 此版本中的現有功能不受影響。
 
 _AC-13209 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/2bac8114) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/09b36ebb) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/33b81f28)_
-
-#### [第2]部分 — 使用最新可用版本更新所有js程式庫和npm相依性
-
-composer版本支援僅針對composer版本2.2.x。 現在支援也延伸至2.4.x版。
-
-_AC-13792 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/19844aa0)_
 
 #### 以PHP原生函式取代carlos-mg89/oauth
 
