@@ -841,7 +841,7 @@ ht-degree: 0%
          - [ACSD-66049：非英文店面會因為ICU的資料庫版本而顯示不正確的定價](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66049-non-english-storefronts-display-incorrect-pricing-due-to-the-icu-library-version.md)
          - [ACSD-66441：階層式導覽在多儲存設定中顯示不正確的屬性選項](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66441-layered-navigation-displays-incorrect-attribute-in-multi-store-setup.md)
          - [AC-14985：使用TLS傳送SMTP電子郵件時發生錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14985-error-when-sending-smtp-emails-using-tls.md)
-         - [ACSD-66434：公司[!UICONTROL Customer ID]查詢中缺少 [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
+         - [ACSD-66434：公司[!UICONTROL Customer ID]查詢中缺少 [!DNL GraphQL] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
       - v1.1.68 {#v1-1-68}
          - [ACSD-66072：由於[!UICONTROL Related Products Rule]組態期間發生內部伺服器錯誤，GraphQL無法傳回產品詳細資料頁面上的相關產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66072-graphql-fails-to-return-related-products-due-to-server-error-in-related-product-rules.md)
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
@@ -895,8 +895,8 @@ ht-degree: 0%
          - [ACSD-67603：針對已啟用影像包含功能的產品，產生Sitemap需要較長的處理時間](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
          - [ACSD-67093：使用日期範圍篩選器透過GraphQL擷取訂單時，傳回錯誤結果](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
          - [ACSD-67652：在GraphQL呼叫中，捆綁產品狀態返回為庫存不足，而子產品和父產品則處於庫存狀態](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-         - [ACSD-60624：在 [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)中的「影像」、「橫幅」和「滑塊」部分中，對空內容上載映像失敗
-         - [ACSD-67904：如果城市名稱包含數字(0-9)、和符號(&amp;)、句點(.)或括弧()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)，則無法下訂單
+         - [ACSD-60624：在 [!DNL Page Builder]中的「影像」、「橫幅」和「滑塊」部分中，對空內容上載映像失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
+         - [ACSD-67904：如果城市名稱包含數字(0-9)、和符號(&amp;)、句點(.)或括弧()，則無法下訂單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
          - [ACSD-67459：無法匯入說明長度超過65,536個字元的產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [概述： [!DNL Quality Patches Tool] (QPT)v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -960,7 +960,7 @@ ht-degree: 0%
          - [ACSD-69016：特殊價格不適用於時區不同的網站](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016.md)
          - [ACSD-69351：禮品卡餘額和過期日期顯示在不正確的網站上](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69351.md)
          - [ACSD-69020：當子產品與篩選器匹配時，可配置產品將出現在 [!DNL Page Builder] 菜單中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)
-         - [ACSD-68892：可快取頁的快取行為不一致 [!DNL Fastly] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)
+         - [ACSD-68892：可快取頁的快取行為不一致 [!DNL Fastly] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)
          - [ACSD-68664：定時更新預覽在自定義儲存域上有錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)
          - [ACSD-63687：由於 [!DNL Redis] 快取清理問題，顯示了不正確的價格](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-63687.md)
          - [ACSD-69494：使用「is_online」的非同步退款請求不會觸發線上退款](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
@@ -987,7 +987,7 @@ ht-degree: 0%
    - [警示標籤](observation-for-adobe-commerce/alerts-tab.md)
    - [WAF標籤](observation-for-adobe-commerce/waf-tab.md)
    - [CDN索引標籤](observation-for-adobe-commerce/cdn-tab.md)
-   - [ [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [&#x200B; [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Cron頁籤](observation-for-adobe-commerce/cron-tab.md)
    - [「索引」頁籤](observation-for-adobe-commerce/indexing-tab.md)
    - [「快速查看」頁籤](observation-for-adobe-commerce/oac-quickview-tab.md)
