@@ -2,9 +2,9 @@
 title: MySQL准則
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝安裝並設定MySQL和MariaDB。
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 2d17da1f8cbda1462839ad2fa3ea569833443827
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 0%
 
 Adobe _強烈_&#x200B;建議您在設定資料庫時，遵循下列標準：
 
-* Adobe Commerce使用[MySQL資料庫觸發程式](https://dev.mysql.com/doc/refman/8.0/en/triggers.html)來改善重新索引期間的資料庫存取。 當索引子模式設定為[排程](../../../configuration/cli/manage-indexers.md#configure-indexers)時，就會建立這些專案。 應用程式不支援資料庫中的任何自訂觸發器，因為自訂觸發器可能會造成與未來Adobe Commerce版本不相容。
-* 繼續之前，請先熟悉[這些潛在的MySQL觸發程式限制](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html)。
-* 若要增強您的資料庫安全狀態，請啟用[`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL模式，以防止儲存無效的資料值，這可能會造成不必要的資料庫互動。
-* Adobe Commerce _不_&#x200B;支援MySQL陳述式式復寫。 請確定您只使用&#x200B;_1&rbrace;_&#x200B;資料列式復寫[。](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html)
+* Adobe Commerce使用[MySQL資料庫觸發程式](https://dev.mysql.com/doc/refman/8.4/en/triggers.html)來改善重新索引期間的資料庫存取。 當索引子模式設定為[排程](../../../configuration/cli/manage-indexers.md#configure-indexers)時，就會建立這些專案。 應用程式不支援資料庫中的任何自訂觸發器，因為自訂觸發器可能會造成與未來Adobe Commerce版本不相容。
+* 繼續之前，請先熟悉[這些潛在的MySQL觸發程式限制](https://dev.mysql.com/doc/refman/8.4/en/stored-program-restrictions.html)。
+* 若要增強您的資料庫安全狀態，請啟用[`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/8.4/en/sql-mode.html#sqlmode_strict_all_tables) SQL模式，以防止儲存無效的資料值，這可能會造成不必要的資料庫互動。
+* Adobe Commerce _不_&#x200B;支援MySQL陳述式式復寫。 請確定您只使用&#x200B;_1}_&#x200B;資料列式復寫[。](https://dev.mysql.com/doc/refman/8.4/en/replication-formats.html)
 
 >[!WARNING]
 >
->Adobe Commerce目前在交易內使用`CREATE TEMPORARY TABLE`陳述式，這些陳述式與資料庫實作的[不相容](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html)，使用以GTID為基礎的復寫，例如[Google Cloud SQL第二代執行個體](https://cloud.google.com/sql/docs/features#differences)。 考慮使用MySQL for Cloud SQL 8.0作為替代方案。
+>Adobe Commerce目前在交易內使用`CREATE TEMPORARY TABLE`陳述式，這些陳述式與資料庫實作的[不相容](https://dev.mysql.com/doc/refman/8.4/en/replication-gtids-restrictions.html)，使用以GTID為基礎的復寫，例如[Google Cloud SQL第二代執行個體](https://docs.cloud.google.com/sql/docs/features#differences)。 考慮使用MySQL for Cloud SQL 8.0作為替代方案。
 
 >[!NOTE]
 >
@@ -30,12 +30,12 @@ Adobe _強烈_&#x200B;建議您在設定資料庫時，遵循下列標準：
 
 ## 在Ubuntu上安裝MySQL
 
-Adobe Commerce 2.4需要全新安裝MySQL 8.0。請遵循下列連結，取得在您的電腦上安裝MySQL的說明。
+根據您安裝的版本，Adobe Commerce 2.4支援不同的MySQL 8版本。 使用[系統需求](../../system-requirements.md)中列出的版本，然後依照下列連結取得有關在電腦上安裝MySQL的說明。
 
-* [Ubuntu](https://ubuntu.com/server/docs/databases-mysql)
-* [CentOS](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
+* [Ubuntu](https://ubuntu.com/server/docs/databases-mysql/)
+* [CentOS](https://dev.mysql.com/doc/refman/8.4/en/linux-installation-yum-repo.html)
 
-如果您預期要匯入大量產品，您可以增加[`max_allowed_packet`](https://dev.mysql.com/doc/refman/5.6/en/program-variables.html)的值，使其大於預設值16 MB。
+如果您預期要匯入大量產品，可以將[`max_allowed_packet`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_max_allowed_packet)的值增加到大於預設值16 MB的值。
 
 >[!NOTE]
 >
@@ -186,8 +186,8 @@ Adobe Commerce已透過在`/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.
 
    引用：
 
-   * [MySQL 5.7](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
-   * [MariaDB](https://mariadb.com/kb/en/server-system-variables/#explicit_defaults_for_timestamp)
+   * [MySQL 8.4](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
+   * [MariaDB](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#explicit_defaults_for_timestamp)
 
    如果未啟用此設定，`bin/magento setup:db:status`一律會報告`Declarative Schema is not up to date`。
 
