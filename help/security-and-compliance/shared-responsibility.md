@@ -2,7 +2,7 @@
 title: 共擔責任安全性與營運模式
 description: 瞭解在雲端基礎結構專案中，Adobe Commerce中涉及的每一方的安全性責任。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: aac78fc95b86951f352a636eef33e0b79b22a183
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '2939'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Adobe負責雲端基礎結構環境及核心解決方案程式碼上的Adobe Com
 - 布建生產和中繼環境
 - 評估平台作業與基礎建設的潛在安全性威脅
 - 根據服務等級協定(SLA)和商家之間的說明，擴充運算、儲存、網格和其他資源
-- 設定DNS (僅限雲端基礎結構平台基礎結構上的Adobe Commerce)
+- 設定DNS （僅限雲端基礎結構平台基礎結構上的Adobe Commerce）
 - 測試平台是否有安全漏洞
 
 Adobe維護Adobe Commerce解決方案使用之基礎結構和服務的PCI認證。  商戶需負責自訂程式碼、系統和網路程式的合規性，以及組織。
@@ -711,7 +711,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | 持續性基礎架構最佳化 | R |   |
 | 識別並修正緩慢查詢 |     | R |
 | 提交服務要求以安裝與已安裝Adobe Commerce版本相容的MariaDB版本 |     | R |
-| 設定及維護商家特定的資料保留原則(Adobe的資料保留原則會在商家合約中定義) |     | R |
+| 設定及維護商家特定的資料保留原則（Adobe的資料保留原則會在商家合約中定義） |     | R |
 
 {style="table-layout:auto"}
 
@@ -793,10 +793,11 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 {style="table-layout:auto"}
 
+>[!NOTE]
 >
 >商戶必須使用最新版的即時搜尋、產品建議和支付服務，以確保最高的穩定性、功能和支援資格。
 >Adobe不支援過時的版本，而升級可確保您受益於最新的增強功能和錯誤修正。
->如需支援版本的詳細資訊，請參閱[Commerce服務的產品可用性矩陣](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability#commerce-services)。
+>如需支援版本的詳細資訊，請參閱[Commerce服務的產品可用性矩陣](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services)。
 
 #### 產品推薦
 
@@ -824,7 +825,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | 自訂主題 |  | R |
 | 核心PWA實施 | R |   |
 | 自訂PWA實施 |  | R |
-| 核心AEM EDS實作(Commerce樣板) | R |   |
+| 核心AEM EDS實作（Commerce樣板） | R |   |
 | 自訂AEM EDS實施 |  | R |
 | 任何其他自訂店面實作 |  | R |
 

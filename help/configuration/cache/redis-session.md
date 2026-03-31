@@ -3,7 +3,7 @@ title: 使用Redis進行工作階段儲存
 description: 瞭解如何在Adobe Commerce中設定工作階段儲存的Redis。 探索命令列設定、設定選項和效能最佳化技術。
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
@@ -37,7 +37,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-redis-port | 連線埠 | Redis伺服器接聽連線埠。 | 6379 |
 | session-save-redis-password | 密碼 | 如果Redis伺服器需要驗證，請指定密碼。 | 空白 |
 | session-save-redis-timeout | 逾時 | 連線逾時（秒）。 | 2.5 |
-| session-save-redis-persistent-id | persistent_identifier | 啟用持續連線的唯一字串（例如，sess-db0）。<br>[phpredis和php-fpm的已知問題](https://github.com/phpredis/phpredis/issues/70)。 |
+| session-save-redis-persistent-id | persistent_identifier | 啟用持續連線的唯一字串（例如，sess-db0）。<br>[phpredis和php-fpm的已知問題](https://github.com/phpredis/phpredis/issues/70)。 |  |
 | session-save-redis-db | 資料庫 | 唯一的Redis資料庫編號，建議用來防止資料遺失。<br><br>**重要**：如果您針對一種以上的快取型別使用Redis，則資料庫編號必須不同。 建議您將預設快取資料庫編號指派為0，將頁面快取資料庫編號指派為1，並將工作階段儲存資料庫編號指派為2。 | 0 |
 | session-save-redis-compression-threshold | compression_threshold | 設為0可停用壓縮（建議在`suhosin.session.encrypt = On`時使用）。<br>[字串超過64 KB的已知問題](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18)。 | 2048 |
 | session-save-redis-compression-lib | compression_library | 選項： gzip、lzf、lz4或snappy。 | gzip |

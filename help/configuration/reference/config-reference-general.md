@@ -3,7 +3,7 @@ title: 一般設定路徑參考
 description: 瞭解Adobe Commerce的一般和進階設定路徑和值。 探索系統、安全性及系統管理組態選項。
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
@@ -30,8 +30,8 @@ ht-degree: 0%
 | 允許國家/地區 | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 郵遞區號為選填 | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![敏感](/help/assets/configuration/cloud-sens.png) |
 | 歐盟國家 | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![敏感](/help/assets/configuration/cloud-sens.png) |
-| 熱門目的地 | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 以下專案需要狀態： | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 熱門目的地 | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| 以下專案需要狀態： | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 若國家/地區選擇州，則允許選擇州 | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 時區 | `general/locale/timezone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | 地區設定 | `general/locale/code` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
@@ -264,7 +264,7 @@ ht-degree: 0%
 | 匯出設定 | `system/full_page_cache/varnish/export_button_version4` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 記錄中儲存的天數 | `system/bulk/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 媒體儲存 | `system/media_storage_configuration/media_storage` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| 選取媒體資料庫 | `system/media_storage_configuration/media_database` (在Commerce 2.4.3中已過時) | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| 選取媒體資料庫 | `system/media_storage_configuration/media_database` （在Commerce 2.4.3中已過時） | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 環境更新時間 | `system/media_storage_configuration/configuration_update_time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 儲存檔案，天 | `system/magento_scheduled_import_export_log/save_days` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | 啟用排定的檔案記錄清除 | `system/magento_scheduled_import_export_log/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

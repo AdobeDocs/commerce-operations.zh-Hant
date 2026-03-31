@@ -1,5 +1,5 @@
 ---
-source-git-commit: fd421e8c2455a2b45d3f3cc93573d2a609e4936d
+source-git-commit: adda02b9d05b66ab066f110e877584bc1c77515d
 workflow-type: tm+mt
 source-wordcount: '2408'
 ht-degree: 0%
@@ -97,7 +97,7 @@ _ACP2E-3397 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 - **Braintree存放卡的即時帳戶更新程式(RTAU)**
 
-  Braintree新增的即時帳戶更新程式(RTAU)功能可確保當卡片過期或被取代時，保險儲存的Visa、萬事達卡和Discover卡片詳細資料會自動更新。 這樣可將失敗的付款減至最少，使Commerce Vault保持最新狀態，並跳過不支援的型別(預付、Apple支付、Google支付)，而不會發生錯誤。
+  Braintree新增的即時帳戶更新程式(RTAU)功能可確保當卡片過期或被取代時，保險儲存的Visa、萬事達卡和Discover卡片詳細資料會自動更新。 這樣可將失敗的付款減至最少，使Commerce Vault保持最新狀態，並跳過不支援的型別（預付、Apple支付、Google支付），而不會發生錯誤。
 
   _BUNDLE-3462_
 
@@ -279,9 +279,9 @@ _AC-14078 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/9
 
 #### 簡化的雙因素驗證設定
 
-現在，管理員使用者只需設定商家其中一個已啟用的2FA提供者(例如，Google Authenticator或U2F)，即可存取管理員面板。 之後可視需要設定其他啟用的提供者。 先前，當多個2FA提供者已啟用時，每個管理員使用者都必須在可登入前設定所有已啟用的提供者，這會對無法存取所有因數的使用者造成摩擦。
+現在，管理員使用者只需設定商家其中一個已啟用的2FA提供者（例如，Google Authenticator或U2F），即可存取管理員面板。 之後可視需要設定其他啟用的提供者。 先前，當多個2FA提供者已啟用時，每個管理員使用者都必須在可登入前設定所有已啟用的提供者，這會對無法存取所有因數的使用者造成摩擦。
 
-_AC-8253 - [GitHub程式碼貢獻](https://github.com/magento/security-package/commit/71e7936b)_
+_AC-8253 - [GitHub程式碼貢獻](https://github.com/magento-commerce/security-package/commit/41e5a26bd36528cb6b1bdc27b249696a2c721779)_
 
 ### 送貨
 

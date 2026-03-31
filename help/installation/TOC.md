@@ -2,10 +2,10 @@
 user-guide-title: 安裝指南
 user-guide-description: 瞭解如何安裝Adobe Commerce以進行內部部署。
 feature: Install
-source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
+source-git-commit: 53f21e0588603ecf19d4d904a8926c978009d449
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 3%
+source-wordcount: '175'
+ht-degree: 4%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 3%
 - [概觀](overview.md)
 - [系統需求](system-requirements.md)
 - 先決條件 {#prerequisites}
-   - [總覽](prerequisites/overview.md)
+   - [概觀](prerequisites/overview.md)
    - 檔案系統 {#file-system}
       - [概觀](prerequisites/file-system/overview.md)
       - [設定許可權](prerequisites/file-system/configure-permissions.md)
    - 網頁伺服器 {#web-server}
-      - [Nginx](prerequisites/web-server/nginx.md)
-      - [Apache](prerequisites/web-server/apache.md)
+      - [安裝Nginx](prerequisites/web-server/nginx.md)
+      - [安裝Apache](prerequisites/web-server/apache.md)
    - 資料庫伺服器 {#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [遠端連線](prerequisites/database/mysql-remote.md)
@@ -69,4 +69,4 @@ ht-degree: 3%
    - [解除安裝或重新安裝Commerce](tutorials/uninstall.md)
    - [解除安裝主題](tutorials/themes.md)
    - [升級資料庫結構描述](tutorials/database-upgrade.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

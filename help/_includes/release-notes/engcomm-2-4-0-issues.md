@@ -1,5 +1,5 @@
 ---
-source-git-commit: 85e9a890f8ccb0f4d8b63c9c96971cf6e011f992
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '3292'
 ht-degree: 0%
@@ -113,7 +113,7 @@ ht-degree: 0%
 | 喬瓦尼·菲利普·佩雷拉·德梅特里奧 | [#26157](https://github.com/magento/magento2/pull/26157) | 不適用 |
 | Ravi Chandra | [#26160](https://github.com/magento/magento2/pull/26160) | [26155](https://github.com/magento/magento2/issues/26155) |
 | 愛德華·奇托拉加 | [#26154](https://github.com/magento/magento2/pull/26154) | 不適用 |
-| 愛德華·奇托拉加 | [#26150](https://github.com/magento/magento2/pull/26150) | [#26148](https://github.com/magento/magento2/pull/26148) |  |
+| 愛德華·奇托拉加 | [#26150](https://github.com/magento/magento2/pull/26150) | [#26148](https://github.com/magento/magento2/pull/26148) |
 | 段伊甸園 | [#26140](https://github.com/magento/magento2/pull/26140) | 不適用 |
 | 沙撒文Subramanian | [#26136](https://github.com/magento/magento2/pull/26136) | 不適用 |
 | Lukasz Bajsarowicz | [#26128](https://github.com/magento/magento2/pull/26128) | 不適用 |

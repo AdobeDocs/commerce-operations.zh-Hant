@@ -2,9 +2,9 @@
 title: 取得您的驗證金鑰
 description: 請依照下列步驟擷取憑證，以存取repo.magento.com上的Adobe Commerce Composer套件。
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 4a4fd51891b7a98529d00d51c94ed10429218726
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -17,14 +17,18 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您遇到[錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=zh-Hant)或在Marketplace標籤中未看到[!UICONTROL Access Keys]區段，則您可能沒有存取套件的授權，或存取許可權已過期，因為您的帳戶有未結清的發票。
+>如果您遇到[錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)或在Marketplace標籤中未看到[!UICONTROL Access Keys]區段，則您可能沒有存取套件的授權，或存取許可權已過期，因為您的帳戶有未結清的發票。
 >
 >* 如果您是帳戶上的主要聯絡人，請確定帳戶上未列出未結商業發票。
->* 如果主要連絡人提供的金鑰無法運作，且帳戶中沒有未結清的發票，則主要連絡人應聯絡[Adobe Commerce支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)以尋求協助。
+>* 如果主要連絡人提供的金鑰無法運作，且帳戶中沒有未結清的發票，則主要連絡人應聯絡[Adobe Commerce支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)以尋求協助。
 
 若要建立驗證金鑰：
 
-1. 登入[Commerce Marketplace](https://commercemarketplace.adobe.com/)。 如果您沒有帳戶，請按一下[註冊]。**&#x200B;**
+>[!NOTE]
+>
+>自2022年8月起，帳戶擁有者必須擁有Adobe ID，並確保其已連結至其Commerce帳戶。 如果帳戶擁有者沒有Adobe ID，他們必須先建立一個，並將其連結至他們的Commerce帳戶，才能產生驗證金鑰： [建立並存取您的Commerce帳戶](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
+
+1. 登入[Commerce Marketplace](https://commercemarketplace.adobe.com/)。 如果您沒有帳戶，請按一下[註冊]。****
 
 1. 按一下頁面右上角的帳戶名稱，然後選取&#x200B;**我的設定檔**。
 
@@ -41,7 +45,7 @@ ht-degree: 0%
 您也可以停用或刪除驗證金鑰。 例如，在某人離開您的組織後，基於安全考量，您可以停用或刪除金鑰。
 
 * 若要停用金鑰：按一下&#x200B;**停用**。 如果您要暫停使用金鑰，可以執行此動作。
-* 若要啟用先前停用的金鑰：按一下[啟用]。**&#x200B;**
+* 若要啟用先前停用的金鑰：按一下[啟用]。****
 * 若要刪除金鑰：按一下&#x200B;**刪除**。
 
 ### 管理SSH存取權杖

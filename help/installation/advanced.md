@@ -2,9 +2,9 @@
 title: 進階內部部署安裝
 description: 瞭解Adobe Commerce內部部署的進階安裝案例。 探索複雜的設定和自訂設定選項。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2484'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 您可以在安裝期間或安裝後建立「管理員」使用者。 如果您在安裝期間建立使用者，則需要所有管理員認證變數。 請參閱[範例localhost安裝](#sample-localhost-installations)。
 
-下清單格提供許多（但並非全部）可用的安裝引數。 如需完整清單，請參閱[命令列工具參考](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises)。
+下清單格提供許多（但並非全部）可用的安裝引數。 如需完整清單，請參閱[命令列工具參考](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)。
 
 | 名稱 | 值 | 必填？ |
 |--- |--- |--- |
@@ -133,13 +133,13 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 | 名稱 | 值 | 必填？ |
 |--- |--- |--- |
-| `--base-url` | 用於以下列任何格式存取管理員和店面的基底URL：<br><br>`http[s]://<host or ip>/<your install dir>/`。<br><br>**注意：**&#x200B;配置(http://或https://)和結尾斜線都是必要的。<br><br>`<your install dir>`是安裝Adobe Commerce軟體的docroot相對路徑。 根據您設定網頁伺服器和虛擬主機的方式，路徑可能是magento2或可能為空白。<br><br>存取Adobe Commerce或MagenAdobe Commerceuse `http://127.0.0.1/<your install dir>/`或`http://127.0.0.1/<your install dir>/`。<br><br>- `{{base_url}}`，代表虛擬主機設定或Docker等虛擬化環境所定義的基底URL。 例如，如果您設定主機名稱為`magento.example.com`的虛擬主機，則可以使用`--base-url={{base_url}}`安裝軟體，並以`http://magento.example.com/admin`之類的URL存取管理員。 | 是 |
+| `--base-url` | 用於以下列任何格式存取管理員和店面的基底URL：<br><br>`http[s]://<host or ip>/<your install dir>/`。<br><br>**注意：**&#x200B;配置（http://或https://）和結尾斜線都是必要的。<br><br>`<your install dir>`是安裝Adobe Commerce軟體的docroot相對路徑。 根據您設定網頁伺服器和虛擬主機的方式，路徑可能是magento2或可能為空白。<br><br>存取Adobe Commerce或MagenAdobe Commerceuse `http://127.0.0.1/<your install dir>/`或`http://127.0.0.1/<your install dir>/`。<br><br>- `{{base_url}}`，代表虛擬主機設定或Docker等虛擬化環境所定義的基底URL。 例如，如果您設定主機名稱為`magento.example.com`的虛擬主機，則可以使用`--base-url={{base_url}}`安裝軟體，並以`http://magento.example.com/admin`之類的URL存取管理員。 | 是 |
 | `--backend-frontname` | 用於存取管理員的統一資源識別碼(URI)。 您可以省略此引數，讓應用程式為您產生隨機URI，其模式如下： <code>admin_jkhgdfq</code>。<br><br>基於安全考量，建議您使用隨機URI。 對於駭客或惡意軟體而言，隨機URI更難被利用。<br><br>URI會在安裝結束時顯示。 您稍後隨時可以使用`bin/magento info:adminuri`命令來顯示。<br><br>如果您選擇輸入值，建議您不要使用admin、backend等常見字詞。 管理員URI只能包含英數字元和底線字元(`_`)。 | 否 |
-| `--db-host` | 使用下列任一項：<br><br> — 資料庫伺服器的完整主機名稱或IP位址。<br><br>- `localhost` （預設）或`127.0.0.1` （若您的資料庫伺服器與web伺服器位於相同的主機上）。localhost表示MySQL使用者端程式庫使用UNIX通訊端連線到資料庫。 `127.0.0.1`導致使用者端資料庫使用TCP通訊協定。 如需通訊端的詳細資訊，請參閱[PHP PDO_MYSQL檔案](https://www.php.net/manual/en/ref.pdo-mysql.php)。<br><br>**注意：**&#x200B;您可以選擇在其主機名稱中指定資料庫伺服器連線埠，例如www.example.com:9000 | 是 |
+| `--db-host` | 使用下列任一項：<br><br> — 資料庫伺服器的完整主機名稱或IP位址。<br><br>- `localhost` （預設）或`127.0.0.1` （若您的資料庫伺服器與web伺服器位於相同的主機上）。localhost表示MySQL使用者端程式庫使用UNIX通訊端連線到資料庫。 `127.0.0.1`導致使用者端資料庫使用TCP通訊協定。 如需通訊端的詳細資訊，請參閱[PHP PDO_MYSQL檔案](https://www.php.net/manual/en/ref.pdo-mysql.php)。<br><br>**注意：**&#x200B;您可以選擇在其主機名稱中指定資料庫伺服器連線埠，例如`www.example.com:9000` | 是 |
 | `--db-name` | 您要安裝資料庫表格的資料庫執行處理名稱。<br><br>預設為`magento2`。 | 是 |
 | `--db-user` | 資料庫執行處理擁有者的使用者名稱。<br><br>預設為`root`。 | 是 |
 | `--db-password` | 資料庫執行處理擁有者的密碼。 | 是 |
-| `--db-prefix` | 只有在您要在已經有Adobe Commerce表格的資料庫執行個體中安裝資料庫表格時才使用。<br><br>在這種情況下，請使用前置字元來識別此安裝的資料表。 有些客戶有多個Adobe Commerce或MagenAdobe Commerceserver，在相同資料庫中使用所有表格。<br><br>首碼的長度最多可為5個字元。 它必須以字母開頭，並且只能包含字母、數字和下劃線字元。<br><br>此選項可讓這些客戶共用一個以上Adobe Commerce安裝的資料庫伺服器 |
+| `--db-prefix` | 只有在您要在已經有Adobe Commerce表格的資料庫執行個體中安裝資料庫表格時才使用。<br><br>在這種情況下，請使用前置字元來識別此安裝的資料表。 有些客戶有多個Adobe Commerce或MagenAdobe Commerceserver，在相同資料庫中使用所有表格。<br><br>首碼的長度最多可為5個字元。 它必須以字母開頭，並且只能包含字母、數字和下劃線字元。<br><br>此選項可讓這些客戶共用一個以上Adobe Commerce安裝的資料庫伺服器 | |
 | `--db-ssl-key` | 使用者端金鑰的路徑。 | 否 |
 | `--db-ssl-cert` | 使用者端憑證的路徑。 | 否 |
 | `--db-ssl-ca` | 伺服器憑證的路徑。 | 否 |

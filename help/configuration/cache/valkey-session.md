@@ -3,7 +3,7 @@ title: 使用Valkey進行工作階段儲存
 description: 瞭解如何在Adobe Commerce中設定工作階段存放區的Valkey。 探索設定步驟、設定選項和效能最佳化技術。
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 1%
@@ -44,7 +44,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-valkey-port | 連線埠 | Valkey伺服器接聽連線埠。 | 6379 |
 | session-save-valkey-password | 密碼 | 如果Valkey伺服器需要驗證，請指定密碼。 | 空白 |
 | session-save-valkey-timeout | 逾時 | 連線逾時（秒）。 | 2.5 |
-| session-save-valkey-persistent-id | persistent_identifier | 啟用持續連線的唯一字串（例如，sess-db0）。<br>[phpredis和php-fpm的已知問題](https://github.com/phpredis/phpredis/issues/70)。 |
+| session-save-valkey-persistent-id | persistent_identifier | 啟用持續連線的唯一字串（例如，sess-db0）。<br>[phpredis和php-fpm的已知問題](https://github.com/phpredis/phpredis/issues/70)。 |  |
 | session-save-valkey-db | 資料庫 | 唯一的Valkey資料庫編號，建議用來防止資料遺失。<br><br>**重要**：如果您將Valkey用於多種快取型別，則資料庫編號必須不同。 建議您將預設快取資料庫編號指派給`0`，將分頁快取資料庫編號指派給`1`，並將工作階段儲存資料庫編號指派給`2`。 | 0 |
 | session-save-valkey-compression-threshold | compression_threshold | 設定為`0`以停用壓縮（建議在`suhosin.session.encrypt = On`時使用）。 | 2048 |
 | session-save-valkey-compression-lib | compression_library | 選項： gzip、lzf、lz4或snappy。 | gzip |
