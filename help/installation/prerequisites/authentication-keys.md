@@ -17,16 +17,16 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您遇到[錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)或在Marketplace標籤中未看到[!UICONTROL Access Keys]區段，則您可能沒有存取套件的授權，或存取許可權已過期，因為您的帳戶有未結清的發票。
+>如果您遇到[錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=zh-Hant)或在Marketplace標籤中未看到[!UICONTROL Access Keys]區段，則您可能沒有存取套件的授權，或存取許可權已過期，因為您的帳戶有未結清的發票。
 >
 >* 如果您是帳戶上的主要聯絡人，請確定帳戶上未列出未結商業發票。
->* 如果主要連絡人提供的金鑰無法運作，且帳戶中沒有未結清的發票，則主要連絡人應聯絡[Adobe Commerce支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)以尋求協助。
+>* 如果主要連絡人提供的金鑰無法運作，且帳戶中沒有未結清的發票，則主要連絡人應聯絡[Adobe Commerce支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)以尋求協助。
 
 若要建立驗證金鑰：
 
 >[!NOTE]
 >
->自2022年8月起，帳戶擁有者必須擁有Adobe ID，並確保其已連結至其Commerce帳戶。 如果帳戶擁有者沒有Adobe ID，他們必須先建立一個，並將其連結至他們的Commerce帳戶，才能產生驗證金鑰： [建立並存取您的Commerce帳戶](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
+>自2022年8月起，帳戶擁有者必須擁有Adobe ID，並確保其已連結至其Commerce帳戶。 如果帳戶擁有者沒有Adobe ID，他們必須先建立一個，並將其連結至他們的Commerce帳戶，才能產生驗證金鑰： [建立並存取您的Commerce帳戶](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
 
 1. 登入[Commerce Marketplace](https://commercemarketplace.adobe.com/)。 如果您沒有帳戶，請按一下[註冊]。**&#x200B;**
 
