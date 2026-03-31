@@ -28,7 +28,7 @@ ht-degree: 0%
 >
 >自2022年8月起，帳戶擁有者必須擁有Adobe ID，並確保其已連結至其Commerce帳戶。 如果帳戶擁有者沒有Adobe ID，他們必須先建立一個，並將其連結至他們的Commerce帳戶，才能產生驗證金鑰： [建立並存取您的Commerce帳戶](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
 
-1. 登入[Commerce Marketplace](https://commercemarketplace.adobe.com/)。 如果您沒有帳戶，請按一下[註冊]。****
+1. 登入[Commerce Marketplace](https://commercemarketplace.adobe.com/)。 如果您沒有帳戶，請按一下[註冊]。**&#x200B;**
 
 1. 按一下頁面右上角的帳戶名稱，然後選取&#x200B;**我的設定檔**。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 您也可以停用或刪除驗證金鑰。 例如，在某人離開您的組織後，基於安全考量，您可以停用或刪除金鑰。
 
 * 若要停用金鑰：按一下&#x200B;**停用**。 如果您要暫停使用金鑰，可以執行此動作。
-* 若要啟用先前停用的金鑰：按一下[啟用]。****
+* 若要啟用先前停用的金鑰：按一下[啟用]。**&#x200B;**
 * 若要刪除金鑰：按一下&#x200B;**刪除**。
 
 ### 管理SSH存取權杖
