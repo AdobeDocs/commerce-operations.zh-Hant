@@ -1,28 +1,30 @@
 ---
-title: 進階 [!DNL JavaScript] 組合
-description: 瞭解Adobe Commerce中的進階 [!DNL javascript] 套件組合。 探索實作指引和最佳化策略。
+title: 進階JavaScript套件組合
+description: 瞭解Adobe Commerce中的進階JavaScript套件組合。 探索實作指引和最佳化策略。
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5d827da35414fa75649f86a2d96fa8ab9086601a
 workflow-type: tm+mt
-source-wordcount: '2133'
+source-wordcount: '2224'
 ht-degree: 0%
 
 ---
 
-# 進階[!DNL JavaScript]組合
+# 進階JavaScript套件組合
 
-整合[!DNL JavaScript]模組以獲得更優異的效能，就是要減少兩件事：
+搭配JavaScript模組以獲得更優異的效能，需要減少兩個專案：
 
 1. 伺服器要求的數目。
 1. 這些伺服器要求的大小。
 
-在模組化應用程式中，伺服器要求的數量可能會高達數百個。 例如，下列熒幕擷取畫面僅顯示載入全新安裝首頁的[!DNL JavaScript]模組清單的開頭。
+在模組化應用程式中，伺服器要求的數量可能會高達數百個。 例如，下列熒幕擷取畫面僅顯示全新安裝首頁上載入的JavaScript模組清單的開頭。
 
 ![沒有組合](../assets/performance/images/noBundling.png)
 
 ## 合併與捆綁
 
-[!DNL Commerce]可立即提供兩種方法來減少伺服器要求數目：合併和捆綁。 這些設定預設為關閉。 您可以在&#x200B;**[!UICONTROL Stores]** > **設定** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**&#x200B;中的管理員UI中，或從命令列將其開啟。
+Commerce支援套件組合，以減少伺服器請求的數量。 繫結預設為關閉。 您可以在「**[!UICONTROL Stores]** > **設定** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**」中開啟，或是從命令列開啟。
+
+如需協力廠商工具、HTTP/2以及已棄用的JS和CSS合併的相關指引，請參閱[組態最佳實務](configuration.md#bundling-tips)中的&#x200B;*套件提示*。
 
 ![組合](../assets/performance/images/bundlingImage.png)
 
@@ -34,15 +36,20 @@ ht-degree: 0%
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
-這是原生[!DNL Commerce]機制，結合系統中存在的所有資產，並將它們分散到大小相同的組合(bundle_0.js、bundle_1.js ... bundle_x.js)中：
+這是原生Commerce機制，會結合系統中存在的所有資產，並在相同大小的組合(bundle_0.js、bundle_1.js ... bundle_x.js)之間分配資產：
 
-![[!DNL Commerce]組合](../assets/performance/images/magentoBundling.png)
+![Commerce組合](../assets/performance/images/magentoBundling.png)
 
-更好，但瀏覽器仍會載入所有[!DNL JavaScript]套裝，而不只是所需的套裝。
+雖然這樣很好，但瀏覽器仍會載入所有JavaScript套裝，而不只是所需的套裝。
 
-[!DNL Commerce]套件組合可減少每頁的連線數量，但對於每頁請求，它會載入所有套件組合，即使請求的頁面可能僅取決於一或兩個套件組合中的檔案。 在瀏覽器快取套件組合後，效能會有所改善。 但是，由於瀏覽器同步載入這些組合，使用者第一次造訪[!DNL Commerce]店面可能需要一點時間才能呈現，並損害使用者體驗。
+Commerce套件組合可減少每頁的連線數量，但即使要求的頁面可能僅取決於一或兩個套件組合中的檔案，系統仍會針對每個頁面請求載入所有套件組合。 在瀏覽器快取套件組合後，效能會有所改善。 但是，由於瀏覽器同步載入這些組合，使用者第一次造訪Commerce店面可能需要一點時間，才能呈現並損害使用者體驗。
 
-### 基本合併
+### 基本合併（不建議）
+
+>[!NOTE]
+>
+>我們不建議使用&#x200B;**[!UICONTROL Merge JavaScript Files]**。 此設定僅針對頁面中HEAD區段的同步載入JavaScript而設計，可能會導致套件組合和[!DNL RequireJS]邏輯無法正確運作。 保留它只是為了回溯相容性，啟用HTTP/2時不會提供效能優勢。
+>如果您已啟用&#x200B;**[!UICONTROL Merge JavaScript Files]**&#x200B;且遇到問題，請嘗試在套用任何修補程式之前先停用它。 如果無法停用合併，請參閱[ACSD-67908](../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md)。
 
 若要從命令列啟用內建合併：
 
@@ -50,7 +57,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
-此命令會將所有同步[!DNL JavaScript]檔案合併到一個檔案中。 啟用合併而不啟用繫結沒有用處，因為[!DNL Commerce]使用RequireJS。 如果未啟用整合，[!DNL Commerce]只會合併RequireJS及其組態。 當您同時啟用組合和合併時，[!DNL Commerce]會建立單一[!DNL JavaScript]檔案：
+此命令會將所有同步JavaScript檔案合併到一個檔案中。 啟用合併而不啟用繫結沒有用處，因為Commerce使用[!DNL RequireJS]。 如果您未啟用套件組合，Commerce只會合併[!DNL RequireJS]及其設定。 當您啟用套件組合和合併功能時，Commerce會建立單一JavaScript檔案：
 
 ![真實世界合併](../assets/performance/images/magentoMergingDevWorld.png)
 
@@ -62,25 +69,25 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 ![真實世界的組合](../assets/performance/images/magentoBundlingRealWorld.png)
 
-在慢速3G連線中，載入全新安裝[!DNL Commerce]之首頁的所有套件組合大約需要44秒。
+在慢速3G連線中，載入整潔Commerce安裝之首頁的所有套件組合大約需要44秒。
 
 將組合合併到單一檔案中也是同樣的情形。 使用者仍可等待約42秒才開始載入頁面，如下所示：
 
 ![真實世界合併](../assets/performance/images/magentoMergingRealWorld.png)
 
-使用更進階的[!DNL JavaScript]套件組合方法，我們可以改善這些載入時間。
+透過更進階的JavaScript套件組合方法，我們可以改善這些載入時間。
 
 ## 進階套裝
 
-請記住，[!DNL JavaScript]套裝的目標是減少瀏覽器中載入之每個頁面的請求資產數目與大小。 為此，我們想要建立套件組合，讓商店中的每個頁面只需要下載通用的套件組合，以及每個存取頁面的頁面特定套件組合。
+請記住，JavaScript套件組合的目標是減少瀏覽器中載入之每個頁面的請求資產數量和大小。 為此，我們想要建立套件組合，讓商店中的每個頁面只需要下載通用的套件組合，以及每個存取頁面的頁面特定套件組合。
 
-其中一個方法是依頁面型別定義您的組合。 您可以將[!DNL Commerce]的頁面分類為數種頁面型別，包括「類別」、「產品」、「CMS」、「客戶」、「購物車」和「結帳」。 分類為其中一種頁面型別的每個頁面都有一組不同的RequireJS模組相依性。 當您依頁面型別捆綁RequireJS模組時，您最後將只有少數捆綁包涵蓋存放區中任何頁面的相依性。
+其中一個方法是依頁面型別定義您的組合。 您可以將Commerce的頁面分類為數種頁面型別，包括「類別」、「產品」、「CMS」、「客戶」、「購物車」和「結帳」。 分類為其中一種頁面型別的每個頁面都有一組不同的[!DNL RequireJS]模組相依性。 當您依頁面型別捆綁[!DNL RequireJS]模組時，您最後將只有少數捆綁包涵蓋存放區中任何頁面的相依性。
 
 例如，您最終可能會有適用於所有頁面的通用相依性的套件、適用於僅限CMS頁面的套件、適用於僅限目錄頁面的套件、適用於僅限搜尋頁面的另一個套件，以及適用於結帳頁面的套件。
 
 您也可以依用途建立組合：用於一般功能、產品相關功能、送貨功能、結帳功能、稅金及表單驗證。 如何定義您的套件組合取決於您和商店的結構。 您可能會發現某些套件組合策略的效果優於其他策略。
 
-乾淨的[!DNL Commerce]安裝可讓您透過依頁面型別分割套件組合，達到足夠的良好效能，但某些自訂可能需要更深入的分析和其他資產分配。
+乾淨的Commerce安裝可讓您透過依頁面型別分割套件組合，達到足夠的良好效能，但部分自訂可能需要更深入的分析和其他資產分配。
 
 ### 必要工具
 
@@ -102,7 +109,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 #### 1\. 新增build.js檔案
 
-在`build.js`根目錄中建立[!DNL Commerce]檔案。 此檔案將包含您的套件組合的完整組建組態。
+在Commerce根目錄中建立`build.js`檔案。 此檔案將包含您的套件組合的完整組建組態。
 
 ```javascript
 ({
@@ -113,9 +120,9 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 稍後，我們將將`optimize:`設定從_ `none`變更為`uglify2`以縮小組合輸出。 但就目前而言，在開發期間，您可以將其設為`none`以確保更快的建置。
 
-#### 2\. 新增RequireJS相依性、填料、路徑和對應
+#### 2\. 新增[!DNL RequireJS]相依性、填色、路徑和對應
 
-將下列RequireJS組建組態節點`deps`、`shim`、`paths`和`map`新增至您的組建檔案：
+將下列[!DNL RequireJS]組建組態節點`deps`、`shim`、`paths`和`map`新增至您的組建檔案：
 
 ```javascript
 ({
@@ -129,11 +136,11 @@ php -f bin/magento config:set dev/js/merge_files 1
 })
 ```
 
-#### 3\. 彙總requirejs-config.js例項值
+#### 3\. 彙總`requirejs-config.js`執行個體值
 
 在此步驟中，您需要將所有存放區`deps`檔案中的多個`shim`、`paths`、`map`和`requirejs-config.js`設定節點彙總至`build.js`檔案中的對應節點。 若要這麼做，您可以在瀏覽器的「開發人員工具」面板中開啟&#x200B;**[!UICONTROL Network]**&#x200B;標籤，並導覽至商店中的任何頁面，例如首頁。 在「網路」標籤中，您會在頂端附近看到商店的`requirejs-config.js`檔案執行個體，並在這裡反白顯示：
 
-![RequireJS組態](../assets/performance/images/RequireJSConfig.png)
+![[!DNL RequireJS]組態](../assets/performance/images/RequireJSConfig.png)
 
 在此檔案中，您會找到每個設定節點(`deps`、`shim`、`paths`、`map`)的多個專案。 您需要將這些多個節點值彙總到您的build.js檔案的單一設定節點中。 例如，如果存放區的`requirejs-config.js`執行個體有15個不同`map`節點的專案，您需要將所有15個節點的專案合併到`map`檔案中的單一`build.js`節點。 `deps`、`shim`和`paths`節點也會有相同情況。 如果沒有指令碼來自動化此程式，則可能需要時間。
 
@@ -167,16 +174,16 @@ php -f bin/magento config:set dev/js/merge_files 1
 })
 ```
 
-#### 5\. 擷取RequireJS相依性
+#### 5\. 擷取[!DNL RequireJS]相依性
 
 您可以使用下列方式，從存放區的頁面型別擷取所有[!DNL RequireJS]模組相依性：
 
 1. 命令列[!DNL PhantomJS] （假設您已安裝[!DNL PhantomJS]）。
-1. 瀏覽器主控台中的RequireJS命令。
+1. 瀏覽器主控台中的[!DNL RequireJS]命令。
 
 #### 若要使用[!DNL PhantomJS]：
 
-在[!DNL Commerce]根目錄中，建立名為`deps.js`的新檔案，並複製下列程式碼。 此程式碼使用[!DNL [!DNL PhantomJS]]開啟頁面，並等待瀏覽器載入所有頁面資產。 然後輸出指定頁面的所有[!DNL RequireJS]相依性。
+在Commerce根目錄中，建立名為`deps.js`的新檔案，並複製下列程式碼。 此程式碼使用[！DNL [!DNL PhantomJS]]開啟頁面，並等待瀏覽器載入所有頁面資產。 然後輸出指定頁面的所有[!DNL RequireJS]相依性。
 
 ```javascript
 "use strict";
@@ -204,7 +211,7 @@ if (system.args.length === 1) {
 }
 ```
 
-開啟[!DNL Commerce]根目錄內的終端機，並對存放區中代表特定頁面型別的每個頁面執行指令碼：
+在Commerce根目錄中開啟終端機，並對存放區中代表特定頁面型別的每個頁面執行指令碼：
 
 <pre>
 phantomjs deps.js <i>url-to-specific-page</i> &gt; <i>text-file-reporting-pagetype-dependencies</i>
@@ -252,9 +259,9 @@ sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 
 #### 7\. 識別唯一和常見的組合
 
-目標是建立所有頁面所需的[!DNL JavaScript]個檔案的共同組合。 如此一來，瀏覽器只需要載入通用套件組合以及一或多個特定頁面型別。
+目標是建立所有頁面所需的通用JavaScript檔案套件。 如此一來，瀏覽器只需要載入通用套件組合以及一或多個特定頁面型別。
 
-在[!DNL Commerce]根目錄中開啟終端機，並使用下列命令來確認您是否有相依性可以分割成個別的組合：
+在Commerce根目錄中開啟終端機，然後使用以下命令來驗證您是否具有相依性，您可以將其分割為單獨的組合：
 
 ```bash
 sort bundle/*.txt |uniq -c |sort -n
@@ -287,7 +294,7 @@ sort bundle/*.txt |uniq -c |sort -n
 
 #### 8\. 建立相依性發佈檔案
 
-若要找出哪些頁面型別需要哪些相依性，請在[!DNL Commerce]根目錄中建立一個名為`deps-map.sh`的新檔案，並複製下列程式碼：
+若要找出哪些頁面型別需要哪些相依性，請在Commerce根目錄`deps-map.sh`中建立新檔案，並複製下列程式碼：
 
 ```shell
 awk 'END {
@@ -309,7 +316,7 @@ awk 'END {
 
 您也可以在[https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html)找到指令碼
 
-在[!DNL Commerce]根目錄中開啟終端機並執行檔案：
+在Commerce根目錄中開啟終端機，然後執行檔案：
 
 ```bash
 bash deps-map.sh
@@ -341,7 +348,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 - `create` — 建立組合包的布林值標幟（值： `true`或`false`）。
 
-- `include` — 包含作為頁面相依性的一組資產（字串）。 RequireJS會追蹤所有相依性，並將它們包含在套件中（除非排除）。
+- `include` — 包含作為頁面相依性的一組資產（字串）。 [!DNL RequireJS]追蹤所有相依性並將它們包含在套件中，除非排除。
 
 - `exclude` — 要從套件組合排除的套件組合或資產陣列。
 
@@ -378,7 +385,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 ### 第2部分：產生組合
 
-下列步驟說明產生更有效率[!DNL Commerce]套裝的基本程式。 您可以透過任何想要的方式自動化此程式，但您仍需使用`nodejs`和`r.js`才能實際產生您的組合。 如果您的主題具有與[!DNL JavaScript]相關的自訂，且無法重複使用相同的`build.js`檔案，則可能需要為每個主題建立數個`build.js`設定。
+下列步驟說明產生更有效率Commerce套裝的基本程式。 您可以透過任何想要的方式自動化此程式，但您仍需使用`nodejs`和`r.js`才能實際產生您的組合。 如果您的主題有與JavaScript相關的自訂，且無法重複使用相同的`build.js`檔案，則可能需要為每個主題建立數個`build.js`設定。
 
 #### 1.產生靜態存放區網站
 
@@ -399,7 +406,7 @@ php -f bin/magento setup:static-content:deploy -f -a frontend
 
 #### 2.將靜態存放區內容移至暫存目錄
 
-首先，您必須將靜態內容從目標目錄移至某個暫存目錄，因為RequireJS會取代目標目錄中的所有內容。
+首先，您必須將靜態內容從目標目錄移至某個暫存目錄，因為[!DNL RequireJS]會取代目標目錄中的所有內容。
 
 ```bash
 mv pub/static/frontend/Magento/{theme}/{locale} pub/static/frontend/Magento/{theme}/{locale}_tmp
@@ -413,7 +420,7 @@ mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US
 
 #### 3.執行r.js最佳化程式
 
-然後從`build.js`的根目錄對[!DNL Commerce]檔案執行r.js最佳化程式。 所有目錄和檔案的路徑都相對於工作目錄。
+然後在Commerce根目錄的`build.js`檔案上執行r.js最佳化程式。 所有目錄和檔案的路徑都相對於工作目錄。
 
 ```bash
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
@@ -438,9 +445,9 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 -rw-r--r--  1 root root   74233 Mar 28 11:24 shipping.js
 ```
 
-#### 4.設定RequireJS使用套件組合
+#### 4.設定[!DNL RequireJS]使用組合
 
-若要讓RequireJS使用您的組合，請在`onModuleBundleComplete`檔案中的`modules`節點之後新增`build.js`回呼：
+若要取得[!DNL RequireJS]以使用您的組合，請在`onModuleBundleComplete`檔案中的`modules`節點之後新增`build.js`回呼：
 
 ```javascript
 [
@@ -482,7 +489,7 @@ require.config({});
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
-開啟`requirejs-config.js`目錄中的`pub/static/frontend/Magento/luma/en_US`，以驗證RequireJS是否已將檔案附加至套件組合組態呼叫：
+開啟`requirejs-config.js`目錄中的`pub/static/frontend/Magento/luma/en_US`，以驗證[!DNL RequireJS]是否已附加檔案與套件組合組態呼叫：
 
 ```javascript
 require.config({
@@ -503,11 +510,11 @@ require.config({
 
 ![快一倍](../assets/performance/images/TwiceAsFast.png)
 
-空白首頁的頁面載入時間現在比使用原生[!DNL Commerce]套裝快兩倍。 但是我們可以做得更好。
+空白首頁的頁面載入時間現在比使用原生Commerce套裝快一倍。 但是我們可以做得更好。
 
 #### 7.最佳化組合
 
-即使gzipped，[!DNL JavaScript]檔案仍然很大。 使用RequireJS來縮制這些值，這使用精簡字元來縮制[!DNL JavaScript]以取得良好的結果。
+即使gzipped，JavaScript檔案仍很大。 使用[!DNL RequireJS]縮小它們，這會使用精簡符號將JavaScript縮小為良好的結果。
 
 若要在您的`build.js`檔案中啟用最佳化工具，請在`uglify2`檔案頂端新增`build.js`作為最佳化屬性的值：
 
@@ -521,4 +528,4 @@ require.config({
 結果可能會相當可觀：
 ![快三倍](../assets/performance/images/ThreeTimesFaster.png)
 
-載入時間現在比使用原生[!DNL Commerce]套件組合快三倍。
+載入時間現在比原生Commerce套件快3倍。

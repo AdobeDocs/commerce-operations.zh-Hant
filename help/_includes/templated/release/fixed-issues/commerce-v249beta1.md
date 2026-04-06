@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0a22d08d6965c6abc288a1a171d25f4ff8bbd7ce
+source-git-commit: 34e2262ad8b4fa1a2e7ade8d3b16258f9873822d
 workflow-type: tm+mt
-source-wordcount: '26969'
+source-wordcount: '26949'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ _AC-15473 - [GitHub問題](https://github.com/magento/magento2/issues/39943) - [
 
 _AC-6419 - [GitHub問題](https://github.com/magento/magento2/issues/35934) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### `/V1/order/&lbrace;orderId&rbrace;/ship` API端點發生內部伺服器錯誤
+#### `/V1/order/{orderId}/ship` API端點發生內部伺服器錯誤
 
 系統現在修正`/V1/order/{orderId}/ship` API端點中的內部伺服器錯誤，並傳回400錯誤，因為要求的格式不正確。
 
@@ -150,7 +150,7 @@ _ACP2E-4227 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 在修正之前，您可以建立不在全球範圍中包含金額的禮卡產品。 透過此修正，已新增檢查全域範圍中金額的驗證。
 
-_ACP2E-4395 - [GitHub問題](https://mcstaging.panini.it/shp_ita_it/)_
+_ACP2E-4395_
 
 ### API、購物車和結帳
 
@@ -261,7 +261,7 @@ _AC-15074 - [GitHub問題](https://github.com/magento/magento2/issues/40036) - [
 
 #### Storefront客戶帳戶註冊：電子郵件地址格式已轉換為不同的網域格式
 
-此錯誤解決網域中包含特殊字元(例如tec55241@adòbe.com)的客戶電子郵件自動轉換為副檔名格式(tec55241@xn--adbe-mqa.com)的問題。
+此錯誤解決網域中包含特殊字元（例如òbe.com）的客戶電子郵件自動轉換為副檔名格式(tec55241@xn--adbe-mqa.com)的問題。
 在Magento 2.4.9-alpha3中，此修正會確保這類電子郵件ID維持不變且有效，以避免傳送錯誤。
 
 _AC-15177 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/68a45d0a)_
@@ -406,11 +406,11 @@ _AC-14020 - [GitHub問題](https://github.com/magento/magento2/issues/39654) - [
 
 _AC-14266 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/b5e99d20)_
 
-#### Symfony\Component\Mime\Exception\LogicException： 「Sender」標頭必須是「Symfony\Component\Mime\Header\MailboxHeader」的例項(取得「Symfony\Component\Mime\Header\MailboxListHeader」)
+#### Symfony\Component\Mime\Exception\LogicException： 「Sender」標頭必須是「Symfony\Component\Mime\Header\MailboxHeader」的例項（取得「Symfony\Component\Mime\Header\MailboxListHeader」）
 
-現在當為SMTP設定自訂傳迴路徑位址時，Adobe Commerce會成功傳送註冊電子郵件。 先前，在system/smtp/set_return_path設為2、system/smtp/return_path_email設為自訂地址的vanilla Adobe Commerce 2.4.8上，客戶註冊已完成但未傳送註冊電子郵件，而Adobe Commerce記錄此錯誤：Symfony\Component\Mime\Exception\LogicException：「Sender」標頭必須是「Symfony\Component\Mime\Header\MailboxHeader」的例項(取得「Symfony\Component\Mime\Header\MailboxListHeader」)。
+現在當為SMTP設定自訂傳迴路徑位址時，Adobe Commerce會成功傳送註冊電子郵件。 先前，在system/smtp/set_return_path設為2、system/smtp/return_path_email設為自訂地址的vanilla Adobe Commerce 2.4.8上，客戶註冊已完成但未傳送註冊電子郵件，而Adobe Commerce記錄此錯誤：Symfony\Component\Mime\Exception\LogicException：「Sender」標頭必須是「Symfony\Component\Mime\Header\MailboxHeader」的例項（取得「Symfony\Component\Mime\Header\MailboxListHeader」）。
 
-_AC-14520 - [GitHub問題](https://github.com/magento/magento2/issues/39823) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/1e14bd72) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/1514117f)_
+_AC-14520 - [GitHub問題](https://github.com/magento/magento2/issues/39823) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/1e14bd72)_
 
 #### 重新整理訂單未取得最新的自訂屬性資料
 
@@ -467,7 +467,7 @@ _AC-2916 - [GitHub問題](https://github.com/magento/magento2/issues/35358) - [G
 
 _AC-3179 - [GitHub問題](https://github.com/magento/magento2/issues/34975) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/4f7e5983) - [GitHub程式碼貢獻](https://github.com/magento/security-package/commit/804dbc2a)_
 
-#### 條件SKU的購物車價格規則不會考慮SKU中的「前導零」(sku： 01234與1234相同)
+#### 條件SKU的購物車價格規則不會考慮SKU中的「前導零」（sku： 01234與1234相同）
 
 系統現在會正確處理購物車價格規則，且條件SKU會考慮SKU中的「前導零」
 
@@ -525,13 +525,13 @@ _ACP2E-4044 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 生日篩選器和欄將使用統一格式M/d/y，與「客戶加入時間」篩選/欄相同
 
-_ACP2E-4052 - [GitHub問題](https://stg1.navi-online.kakuyasu.co.jp/adminCgWN7zCh/admin/system_account/index/key/d6fdbee50ff25178d1fef981ec823c5e82e8cee6959717790031bb900c4d6633/) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/52f46328)_
+_ACP2E-4052 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/52f46328)_
 
 #### 出現在Admin Grid標頭兩側的白色區塊
 
 修正管理網格中的視覺對齊問題。 先前，在管理面板中水準捲動產品格線時，白色區塊會在格線標頭的左右兩側顯示為未對齊。 現在捲動時，網格標頭元素會維持正確的垂直對齊方式，為管理員管理大型產品目錄提供更簡潔的視覺體驗。
 
-_ACP2E-4104 - [GitHub問題](https://mcprod.pap-store.acer.com/index.html)_
+_ACP2E-4104_
 
 #### Ui元件檔案在2.4.8-p1/ 2.4-develop上無法正常運作
 
@@ -585,7 +585,7 @@ _ACP2E-4336 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 修正頁面載入後，儘管勾選「使用預設/網站」，「系統設定」欄位仍可能啟用的問題。
 
-_ACP2E-4337 - [GitHub問題](https://mcstaging.pap-store.acer.com) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/31258bf6)_
+_ACP2E-4337 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/31258bf6)_
 
 #### 管理員儀表板順序圖表以動畫呈現最終大小
 
@@ -651,7 +651,7 @@ _ACP2E-3679_
 
 #### 稅率管理員UI錯誤
 
-此票證修正了稅率管理員UI的問題，該問題導致切換國家/地區(例如從美國→英國)仍顯示先前選取的美國州別，誤導使用者。
+此票證修正了稅率管理員UI的問題，該問題導致切換國家/地區（例如從美國→英國）仍顯示先前選取的美國州別，誤導使用者。
 在2.4.9-alpha3中，現在當選取的國家沒有狀態時，狀態列位會重設為*。
 
 _AC-8440 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/a3b1abc2)_
@@ -664,7 +664,7 @@ _AC-8440 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/a3
 
 _AC-16311 - [GitHub問題](https://github.com/magento/magento2/issues/40051) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/40032)_
 
-#### 管理動作記錄使用者報表未顯示套用篩選器時所用篩選器的詳細資訊
+#### 管理動作記錄使用者報告未顯示套用篩選器時所用篩選器的詳細資訊
 
 修正前，管理員活動報表中未記錄篩選引數。 修正之後，現在會記錄所有請求資料。
 
@@ -818,7 +818,7 @@ _AC-14464 - [GitHub問題](https://github.com/magento/magento2/issues/39820) - [
 
 #### [2.4.8]無法在城市名稱中置入數字0-9、與號、句號或括弧的訂單
 
-修正包含特殊字元（例如）的城市名稱簽出失敗的問題。、和，或括弧。
+修正包含特殊字元（如。 、 &amp;或括弧）的城市名稱簽出失敗的問題。
 現在，已成功下具有此類城市名稱的訂單，且沒有驗證錯誤。
 
 _AC-14495 - [GitHub問題](https://github.com/magento/magento2/issues/39854) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/b9f5d6f7)_
@@ -892,7 +892,7 @@ _ACP2E-3493 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### 為非作用中公司簽出時出現「發生錯誤」錯誤
 
-修正之前，如果不再啟用使用者公司中的長期專案，購物車頁面上的登出動作就無法正常完成。 現在，如果該公司不再可用，則會正確執行登出。
+修正前，如果登入的使用者公司不再啟用，購物車頁面上的登出動作就無法正常完成。 現在，如果該公司不再可用，則會正確執行登出。
 
 _ACP2E-3541 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/df92debe)_
 
@@ -942,7 +942,7 @@ _ACP2E-4223 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 修正多貨幣商店購物車頁面上的套件產品價格問題
 
-_ACP2E-4245 - [GitHub問題](https://www.techbuyer.com/) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/cbca0396)_
+_ACP2E-4245 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/cbca0396)_
 
 #### 管理購物車存放區範圍問題
 
@@ -991,7 +991,7 @@ _ACP2E-3885 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 當購物車中有許多產品時，在結帳期間使用「在商店內挑選」選取商店不再因為URL過長而失敗。
 之前，這會在選取商店期間產生過長的URL，進而觸發414錯誤，導致客戶無法完成結帳。
 
-_ACP2E-4266 - [GitHub問題](https://mcstaging.casamyers.com.mx/) - [GitHub程式碼貢獻](https://github.com/magento/inventory/commit/ae1f272f)_
+_ACP2E-4266 - [GitHub程式碼貢獻](https://github.com/magento/inventory/commit/ae1f272f)_
 
 ### 購物車與結帳、訂購、產品
 
@@ -1007,7 +1007,7 @@ _ACP2E-3905_
 
 已限制與已指派網站範圍的禮品卡餘額檢查。
 
-_ACP2E-4379 - [GitHub問題](https://www.panini.it)_
+_ACP2E-4379_
 
 ### 購物車與結帳、SEO
 
@@ -1023,7 +1023,7 @@ _ACP2E-3699_
 
 啟用縮制和套件組合時，修正Mixin之前的版本將不會載入購物車和結帳。 修正後，所有mixin都應如預期載入。
 
-_ACP2E-4128 - [GitHub問題](https://ansg.integration-5ojmyuq-f46gejjrfa7be.ap-3.magentosite.cloud/) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/e457c5e2)_
+_ACP2E-4128 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/e457c5e2)_
 
 ### 購物車與結帳、送貨
 
@@ -1100,7 +1100,7 @@ _AC-13671 - [GitHub問題](https://github.com/magento/magento2/issues/39521) - [
 
 _AC-13857 - [GitHub問題](https://github.com/magento/magento2/issues/33559)_
 
-#### [\Magento\ConfigurableProduct\Model\Product\Type\Configurable] PHP錯誤未通知
+#### 未注意到[\Magento\ConfigurableProduct\Model\Product\Type\Configurable] PHP錯誤
 
 已變更回圈變數名稱，以便在指定的產品上正確新增「_cache_instance_product_ids」資料，以用於後續呼叫。
 
@@ -1195,6 +1195,8 @@ _AC-15833 - [GitHub問題](https://github.com/magento/magento2/issues/40216) - [
 _AC-16066 - [GitHub問題](https://github.com/magento/magento2/issues/33965) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/3b5ac075)_
 
 #### 在產品頁面上建立屬性時，刪除下拉式選項無法運作
+
+沒有可用的說明。
 
 _AC-16437_
 
@@ -1493,7 +1495,7 @@ _AC-13556 - [GitHub問題](https://github.com/magento/magento2/issues/39481) - [
 
 #### [小錯誤]當欄位值包含`listing component`時，無法點選管理面板`\`的篩選器
 
-當我們篩選含有斜線的頁面標題時(例如： Magento\Store)，系統可正常運作
+當我們篩選含有斜線的頁面標題時（例如： Magento\Store），系統可正常運作
 
 _AC-13661 - [GitHub問題](https://github.com/magento/magento2/issues/39513) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/39535)_
 
@@ -1676,7 +1678,7 @@ _AC-15336 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/6
 
 ### 框架
 
-#### 正在完成已停用模組的程式碼。
+#### 正在編譯已停用模組的程式碼
 
 此提取請求逸出在程式碼編譯之前已停用模組。
 
@@ -1786,7 +1788,7 @@ _AC-13719 - [GitHub問題](https://github.com/magento/magento2/issues/39456) - [
 
 #### [問題] [PHPDOC]修正Magento\Framework\Message\ManagerInterface的錯誤phpdoc
 
-此PR修正\Magento\Framework\Message\ManagerInterface的錯誤phpdoc，並移除\Magento\Framework\Message\Manager中的所有重複phpdoc （使用inheritdoc syntaxe）。
+此PR修正\Magento\Framework\Message\ManagerInterface的錯誤phpdoc，並移除\Magento\Framework\Message\Manager中所有重複的phpdoc （使用inheritdoc語法）。
 
 _AC-14312 - [GitHub問題](https://github.com/magento/magento2/issues/39593) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/39153)_
 
@@ -1873,7 +1875,7 @@ _AC-14807 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/7
 以前，透過SMTP傳送包含TLS的電子郵件會導致錯誤： error:1408F10B:SSL常式:ssl3_get_record:版本號碼錯誤。
 AC-14883
 
-_AC-14883 - [GitHub問題](https://github.com/magento/magento2/issues/39947) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/3717e6cb) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/8b453942) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/d3ea191d)_
+_AC-14883 - [GitHub問題](https://github.com/magento/magento2/issues/39947) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/3717e6cb) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/d3ea191d)_
 
 #### [問題]修正靜態內容部署中的並行問題
 
@@ -1992,7 +1994,7 @@ EmailMessage類別現在可以正確處理電子郵件內文擷取。
 之前，在搭配magento/framework 103.0.8-p2版的Magento 2.4.8-p2中，Magento\Framework\Mail\EmailMessage類別嘗試在Symfony郵件訊息物件上呼叫不存在的方法(getTextBody)。 當第三方模組或自訂依賴此方法處理電子郵件時，這會導致錯誤。
 現在，EmailMessage類別不再呼叫未定義的方法，以防止這些錯誤。 AC-15446
 
-_AC-15446 - [GitHub問題](https://github.com/magento/magento2/issues/40170) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/059fd469) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/e9412b24)_
+_AC-15446 - [GitHub問題](https://github.com/magento/magento2/issues/40170) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/e9412b24)_
 
 #### [Magento 2.3.x]資料/結構描述修補程式getAliases()在`setup:upgrade`期間造成錯誤
 
@@ -2001,6 +2003,8 @@ getAliases()在安裝:upgrade期間造成錯誤，此PR修正了相同的
 _AC-15559 - [GitHub問題](https://github.com/magento/magento2/issues/31396) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/38239)_
 
 #### 作業的定序混合不合法
+
+沒有可用的說明。
 
 _AC-15614 - [GitHub問題](https://github.com/magento/magento2/issues/40138) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/44329e9d)_
 
@@ -2011,6 +2015,8 @@ _AC-15614 - [GitHub問題](https://github.com/magento/magento2/issues/40138) - [
 _AC-15626 - [GitHub問題](https://github.com/magento/magento2/issues/39598) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/39581)_
 
 #### Urlrewrite模組中歸類混合不合法
+
+沒有可用的說明。
 
 _AC-15647 - [GitHub問題](https://github.com/magento/magento2/issues/40189) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/44329e9d)_
 
@@ -2076,6 +2082,8 @@ _AC-16244 - [GitHub問題](https://github.com/magento/magento2/issues/40006) - [
 _AC-16313 - [GitHub問題](https://github.com/magento/magento2/issues/40438) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/36600)_
 
 #### 偽模組需要擴充功能存放庫中的dev/目錄
+
+沒有可用的說明。
 
 _AC-16487_
 
@@ -2275,7 +2283,7 @@ _ACP2E-4058 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 修正指派給自訂屬性群組時，日期屬性的行事曆快顯視窗會出現在畫面外的問題。
 
-_ACP2E-4060 - [GitHub問題](https://integration-5ojmyuq-3ssteurpe3xzy.us-5.magentosite.cloud/) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/6dd3fa99)_
+_ACP2E-4060 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/6dd3fa99)_
 
 #### 生產ACL許可權檢查導致效能降低 — populateAcl方法是瓶頸
 
@@ -2285,7 +2293,7 @@ _ACP2E-4114 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### 使用AC-15867 + ACP2E-4296和SCD壓縮功能，簽出時未載入最新版本
 
-在修正之前，透過head區段載入自訂JavaScript可能會導致問題。 匯入新設定後，這些指令碼會自動延遲，以確保與Magento 2框架有更大的相容性。
+在修正之前，透過head區段載入自訂JavaScript可能會導致問題。 匯入新設定後，這類指令碼會自動延後，以確保與Magento 2框架更相容。
 
 _ACP2E-4319 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/1c547060)_
 
@@ -2351,7 +2359,7 @@ _AC-8949 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/3b
 
 #### GraphQL對訂單位置的回應不包含例外訊息
 
-還原先前以不同格式傳回錯誤的變更。 現在系統會以一致的方式傳回潛在錯誤，而不會破壞GraphQL結構描述。 此資訊應新增為已知的BIC，由PM核准，網址： https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+還原先前以不同格式傳回錯誤的變更。 現在系統會以一致的方式傳回潛在錯誤，而不會破壞GraphQL結構描述。 此資訊應新增為已知的BIC，由PM核准，網址： https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/9608ca21)_
 
@@ -2377,7 +2385,7 @@ _ACP2E-3785 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 之前，在透過updateGiftRegistry變異進行此修正之前，贈品登入的自訂屬性並未透過GraphQL變異進行修改或更新。 套用此修正後，可以透過updateGiftRegistry變異成功更新贈品登入的動態屬性。
 
-_ACP2E-3805 - [GitHub問題](https://mcstaging.briscoes.co.nz/)_
+_ACP2E-3805_
 
 #### 刪除產品時customerOrders graphql傳回錯誤
 
@@ -2424,7 +2432,7 @@ _ACP2E-4090 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### 解決ACP2E-4031中提出的問題
 
-在修正之前，錯誤節點位置未提供與2.4.7和2.4.9版本的無縫相容性。 現在，在修正之後，錯誤節點會正確放置以容納兩個版本。
+在修正之前，錯誤節點位置未提供與2.4.7和2.4.9版本的無縫相容性。 現在，修正後，錯誤節點已正確放置以容納兩個版本。
 
 _ACP2E-4115 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/e457c5e2)_
 
@@ -2682,6 +2690,8 @@ _AC-10568 - [GitHub問題](https://github.com/magento/magento2/issues/31644)_
 
 #### 當客戶設定為報價單時，仍為客服訂單
 
+沒有可用的說明。
+
 _AC-11689 - [GitHub問題](https://github.com/magento/magento2/issues/38540)_
 
 #### 混合虛擬、已退款及已出貨料號時，訂單未完成
@@ -2803,7 +2813,7 @@ _ACP2E-3662_
 
 #### 訂單狀態卡在處理中
 
-修正前，當訂購啟用「一併送貨」選項的套件組合產品時，訂單狀態在發票和送貨後不會自動切換為「完成」。 現在，修正之後，訂單狀態會在開立商業發票並出貨後，自動切換為「完成」。
+在修正前，當訂購啟用「一起出貨」選項的捆綁產品時，在發票和出貨後，訂單狀態不會自動切換為「完成」。 現在，修正之後，訂單狀態會在開立商業發票並出貨後，自動切換為「完成」。
 
 _ACP2E-3947 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/2a252ae6)_
 
@@ -2899,10 +2909,10 @@ _AC-10980 - [GitHub問題](https://github.com/magento/magento2/issues/38424) - [
 
 _AC-12783 - [GitHub問題](https://github.com/magento/magento2/issues/39054) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/39164)_
 
-#### 停用captcha storefont設定仍載入captcha js檔案
+#### 停用驗證碼店面設定仍載入驗證碼js檔案
 
 停用驗證碼時，系統現在不會載入驗證碼js檔案
-適用於storefont
+店面
 
 _AC-14267 - [GitHub問題](https://github.com/magento/magento2/issues/32987) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/39154)_
 
@@ -2986,7 +2996,7 @@ _AC-16109 - [GitHub問題](https://github.com/magento/magento2/issues/40282) - [
 
 #### 類別許可權模組可能會阻止快取
 
-第三方控制器現在會與客戶區段正確快取
+第三方控制器現在可透過客戶區段正確快取
 
 _ACP2E-3721_
 
@@ -3022,7 +3032,7 @@ _ACP2E-4324 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### 調查增加redis金鑰和快取金鑰建立的原因
 
-在修正之前，用於遠端儲存中繼資料的快取鍵不會到期。 現在，修正後，您可以透過相依性插入為此等快取金鑰設定TTL。
+在修正之前，用於遠端儲存中繼資料的快取金鑰不會過期。 現在，修正後，您可以透過相依性插入為此等快取金鑰設定TTL。
 
 _ACP2E-4345 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/0a3b7032)_
 
@@ -3170,7 +3180,7 @@ _AC-15199 - [GitHub問題](https://github.com/magento/magento2/issues/40090) - [
 
 _AC-15753 - [GitHub問題](https://github.com/magento/magento2/issues/40213) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/a06a4a57)_
 
-#### 退款，含負數總退款折扣
+#### 含負數的退款一律會退款折扣
 
 修正建立負數數量的銷退折讓單時，錯誤退款折扣金額的問題。
 現在，負數量的折扣不會退款，且退款數量會正確設定為零。
@@ -3255,7 +3265,7 @@ _AC-14889 - [GitHub問題](https://github.com/magento/magento2/issues/39962) - [
 
 _ACP2E-4299_
 
-#### [雲端][experienceleague]目錄價格規則未套用
+#### `[Cloud][experienceleague]`目錄價格規則未套用
 
 在修正目錄價格規則之前，當`special_price`僅在網站層級設定（而不是在「所有商店檢視」）時，不會套用。 現在，在網站層級設定`special_price`時，透過先檢查網站的預設商店，在固定目錄價格規則之後可正確套用。
 
@@ -3303,9 +3313,9 @@ _ACP2E-3902 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### [雲端]存放區切換器無法從EN工作到FR以取得常見問題頁面
 
-修正在商店檢視之間切換時，將使用者重新導向至首頁而非對應的翻譯CMS頁面的問題。 存放區切換器現在會檢查目標存放區中的URL重新寫入，以確保重新導向正確(例如英文的常見問題頁面→法文的常見問題頁面)。
+修正在商店檢視之間切換時，將使用者重新導向至首頁而非對應的翻譯CMS頁面的問題。 存放區切換器現在會檢查目標存放區中的URL重新寫入，以確保重新導向正確（例如英文的常見問題頁面→法文的常見問題頁面）。
 
-_ACP2E-4112 - [GitHub問題](https://adobe-ent.crm.dynamics.com/main.aspx?appid=f2e74f34-7119-ea11-a811-000d3a5936c5&forceUCI=1&pagetype=entityrecord&etn=incident&id=3e1df344-8a69-f011-bec3-6045bd04f475)_
+_ACP2E-4112_
 
 #### [雲端]停用舊的Sitemap產生
 
@@ -3361,7 +3371,7 @@ _AC-16344 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/8
 
 #### 套件式/合併式JS不屬於SRI雜湊
 
-在修正之前，產生的套件組合或合併的檔案並未新增至SRI雜湊清單。 現在，檔案已適當地新增至SRI雜湊。
+在修正之前，產生的套件組合或合併的檔案並未新增至SRI雜湊清單。 現在，檔案已正確新增至SRI雜湊。
 
 _ACP2E-3854 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/4ca73607)_
 
@@ -3481,13 +3491,13 @@ _ACP2E-4212 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### 促銷活動預覽模式中套用的抵用券在套用後不久消失的問題。
 
-修正前，驗證器程式碼無法在中繼預覽模式中正確使用。 現在，修正後，憑單代碼已正確套用至結帳頁面。
+在修正之前，憑單代碼無法在預備預覽模式中正確使用。 現在，修正後，憑單代碼已正確套用至結帳頁面。
 
 _ACP2E-4226_
 
 #### 無法在排程更新預覽中的網站之間導覽
 
-在此修正之前，嘗試預覽具有自訂網域的存放區內容時，排定的更新預覽會中斷。 此項修正後，自訂商店網域可依原樣預覽，並在預覽iframe中導覽。 此修正涵蓋產品、類別、CMS頁面和CMS區塊，並支援使用`{{store url}}`標籤標籤的導覽連結，如[Adobe Commerce變數和標籤標籤](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/variables/markup-tags)中所述。
+在此修正之前，嘗試預覽具有自訂網域的存放區內容時，排定的更新預覽會中斷。 此項修正後，自訂商店網域可依原樣預覽，並在預覽iframe中導覽。 此修正涵蓋產品、類別、CMS頁面和CMS區塊，並支援使用`{{store url}}`標籤標籤的導覽連結，如[Adobe Commerce變數和標籤標籤](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)中所述。
 
 _ACP2E-4308 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/0a3b7032)_
 
@@ -3546,13 +3556,19 @@ _AC-13492 - [GitHub問題](https://github.com/magento/magento2/issues/39462) - [
 
 #### [雲端原生服務] CNS建置失敗 — 2.4.9-beta1 — 整合
 
+沒有可用的說明。
+
 _AC-16427_
 
 #### 硬式編碼固定路徑在撰寫器組建中失敗
 
+沒有可用的說明。
+
 _AC-16488_
 
 #### PR和Composer組建之間的PHPUnit設定檔案不相符
+
+沒有可用的說明。
 
 _AC-16501_
 
@@ -3642,6 +3658,8 @@ AC-12343
 _AC-12343 - [GitHub問題](https://github.com/magento/magento2/issues/37469)_
 
 #### GUID未儲存為安全格式
+
+沒有可用的說明。
 
 _AC-15809_
 
