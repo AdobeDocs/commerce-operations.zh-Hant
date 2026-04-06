@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 此參考會記錄Adobe Commerce的&#x200B;**2.4.9-beta1**版本
+> 此參考會記錄Adobe Commerce的&#x200B;**2.4.9-beta1**&#x200B;版本
 > 內部部署CLI。
 
 {{$include /help/_includes/templated/reference/cli/commerce-on-premises-beta.md}}
