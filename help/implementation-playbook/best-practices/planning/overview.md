@@ -42,11 +42,11 @@ ht-degree: 1%
     <td>設定網站、商店和商店檢視以最大化網站效能。</td>
   </tr>
   <tr>
-    <td><a href="https://business.adobe.com/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">常見設定問題</a></td>
+    <td><a href="https://business.adobe.com/tw/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">常見設定問題</a></td>
     <td>修正和防止Adobe Commerce網站最常見的五個設定問題。</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">快取</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=zh-Hant">快取</a></td>
     <td>使用快取管理工具來改善網站的效能。</td>
   </tr>
   <tr>
@@ -76,11 +76,11 @@ ht-degree: 1%
     <td colspan="2"><em>服務設定</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html">設定Fastly</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=zh-Hant">設定Fastly</a></td>
     <td>在雲端基礎結構專案上為您的Adobe Commerce設定Fastly服務。</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html">設定New Relic的通知通道</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=zh-Hant">設定New Relic的通知通道</a></td>
     <td>存取您的New Relic控制面板，並分析雲端基礎結構專案上Adobe Commerce的資料。</td>
   </tr>
   <tr>
