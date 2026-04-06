@@ -1,11 +1,17 @@
 ---
-source-git-commit: 1e3508e2e8e99d686dfa692415e2b4b41e8b80e8
+source-git-commit: c297996273c42481fe9d3ee20ec3b9256e27fb5f
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 # 代碼片段
+
+## 延伸支援的安全性修補程式 {#extended-support}
+
+>[!NOTE]
+>
+>2.4.5的延伸支援安全性修補程式僅供Adobe Commerce客戶使用。 這些修補程式不適用於Magento Open Source程式碼基底。 請參閱[延伸支援](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)。
 
 ## 僅限Commerce {#commerce-only}
 
@@ -31,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->安裝此安全性修補程式後，Adobe Commerce B2B商家也必須更新至最新相容的B2B安全性修補程式版本。 請參閱[B2B發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/release-notes)。
+>安裝此安全性修補程式後，Adobe Commerce B2B商家也必須更新至最新相容的B2B安全性修補程式版本。 請參閱[B2B發行說明](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)。
 
 ## 僅限Adobe Commerce {#ee-only}
 
@@ -57,13 +63,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[Alpha](/help/release/versioning-policy.md#alpha-patch-release)發行版本可能不完整，且可能包含瑕疵。 產品依原樣提供，不含任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援(透過Adobe支援服務或其他方式) Alpha版本。 客戶不應依賴Alpha發行版本或任何隨附檔案或資料的正確運作或效能。 使用Alpha版本須完全由客戶自行承擔風險。
+>[Alpha](/help/release/versioning-policy.md#alpha-patch-release)發行版本可能不完整，且可能包含瑕疵。 產品依原樣提供，不含任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援（透過Adobe支援服務或其他方式） Alpha版本。 客戶不應依賴Alpha發行版本或任何隨附檔案或資料的正確運作或效能。 使用Alpha版本須完全由客戶自行承擔風險。
 
 ## Beta免責宣告 {#beta}
 
 >[!IMPORTANT]
 >
->Beta發行版本可能包含瑕疵，並依「現況」提供，並無任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援(來自Adobe支援服務或任何其他服務)Beta版。 客戶應謹慎使用，切勿依賴測試版和/或任何隨附檔案或資料的正確運作或效能。 因此，使用測試版完全由客戶自行承擔風險。
+>Beta發行版本可能包含瑕疵，並依「現況」提供，並無任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援（來自Adobe支援服務或任何其他服務）Beta版。 客戶應謹慎使用，切勿依賴測試版和/或任何隨附檔案或資料的正確運作或效能。 因此，使用測試版完全由客戶自行承擔風險。
 
 ## CVE通知 {#cve-notice}
 
@@ -85,7 +91,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe不支援使用此方法套用Adobe提供的官方修補程式。 請自行承擔下列方法的風險。 若要套用正式修補程式，請使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}。 在部署任何自訂修補程式之前，請務必執行完整的測試。
+>Adobe不支援使用此方法套用Adobe提供的官方修補程式。 請自行承擔下列方法的風險。 若要套用正式修補程式，請使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}。 在部署任何自訂修補程式之前，請務必執行完整的測試。
 
 ## 2025年10月安全性修補程式反向移植 {#oct-2025-backports}
 
@@ -99,7 +105,7 @@ ht-degree: 0%
 
 * **已新增對Apache ActiveMQ Artemis STOMP通訊協定的支援**
 
-  透過Simple Text Oriented Messaging Protocol (STOMP)新增對ActiveMQ Artemis開放原始碼訊息代理程式的支援。 它提供可靠且可擴充的傳訊系統，提供彈性的STOMP式整合。 請參閱[Commerce設定指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)中的&#x200B;*Apache ActiveMQ Artemis*。
+  透過Simple Text Oriented Messaging Protocol (STOMP)新增對ActiveMQ Artemis開放原始碼訊息代理程式的支援。 它提供可靠且可擴充的傳訊系統，提供彈性的STOMP式整合。 請參閱[Commerce設定指南](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)中的&#x200B;*Apache ActiveMQ Artemis*。
 
 ## 簽出頁面無法載入static.min.js和mixins.min.js {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
@@ -116,4 +122,4 @@ ht-degree: 0%
 
 **Hotfix**：
 
-有可用的Hotfix。 請參閱知識庫中的[啟用JS縮制和套件組合時，簽出失敗](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27997)以取得修補程式詳細資料。
+有可用的Hotfix。 請參閱知識庫中的[啟用JS縮制和套件組合時，簽出失敗](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)以取得修補程式詳細資料。

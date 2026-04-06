@@ -2,9 +2,9 @@
 user-guide-title: 實施行動手冊
 user-guide-description: 了解規劃及實施成功 Adobe Commerce 網站的策略。
 mini-toc-levels: 3
-source-git-commit: 8d2dd409741717b534e4aef5e252a614ccb81f4a
+source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '161'
 ht-degree: 14%
 
 ---
@@ -27,8 +27,7 @@ ht-degree: 14%
       - [報告設定](best-practices/planning/reporting-configuration.md)
       - [雲端部署的資料庫設定&#x200B;。](best-practices/planning/database-on-cloud.md)
       - [MySQL設定](best-practices/planning/mysql-configuration.md)
-      - [Redis服務組態](best-practices/planning/redis-service-configuration.md)
-      - [Valkey服務組態](best-practices/planning/valkey-service-configuration.md)
+      - [Redis/Valkey服務組態](best-practices/planning/redis-valkey-service-configuration.md)
       - [OPcache記憶體大小](best-practices/planning/opcache-memory-size.md)
       - [Realpath快取大小](best-practices/planning/realpath-cache-size.md)
       - [擴充功能](best-practices/planning/extensions.md)
@@ -52,7 +51,7 @@ ht-degree: 14%
       - [正在修改核心與協力廠商代碼](best-practices/development/modifying-core-and-third-party-code.md)
    - Launch {#launch}
       - [概觀](best-practices/launch/overview.md)
-      - [設定網頁編目程式](best-practices/launch/robots-txt.md)
+      - [設定網頁爬蟲](best-practices/launch/robots-txt.md)
       - [保護您的網站與基礎建設](best-practices/launch/security-best-practices.md)
    - 維護 {#maintenance}
       - [概觀](best-practices/maintenance/overview.md)
@@ -69,4 +68,4 @@ ht-degree: 14%
       - [升級檢查清單](best-practices/maintenance/upgrade-checklist.md)
       - [升級MariaDB的必要條件](best-practices/maintenance/mariadb-upgrade.md)
 - [字彙表](glossary.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
