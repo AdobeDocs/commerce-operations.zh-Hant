@@ -8,9 +8,9 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: aedff83fe473691340f0f254e7c79ef7e632ac0d
+source-git-commit: 381d58d5fc9844aca88239e8e7ac39151dfc766c
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->針對雲端基礎結構環境上的Commerce，請確認您使用的是最新版本的`ece-tools`套件。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=zh-Hant)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
+>針對雲端基礎結構環境上的Commerce，請確認您使用的是最新版本的`ece-tools`套件。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
 
 ## 設定L2快取
 
@@ -48,7 +48,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-如需雲端基礎結構上的環境設定，請參閱[`REDIS_BACKEND`雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#redis_backend)中的&#x200B;__&#x200B;設定參考。
+如需雲端基礎結構上的環境設定，請參閱[`REDIS_BACKEND`雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)中的&#x200B;__&#x200B;設定參考。
 
 若為內部部署安裝，請參閱[設定指南](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)中的&#x200B;_設定Redis頁面快取_。
 
@@ -62,7 +62,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-如需雲端基礎結構上的環境設定，請參閱[`VALKEY_BACKEND`雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)中的&#x200B;__&#x200B;設定參考。
+如需雲端基礎結構上的環境設定，請參閱[`VALKEY_BACKEND`雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)中的&#x200B;__&#x200B;設定參考。
 
 如需內部部署安裝，請參閱[設定指南](../../../configuration/cache/config-valkey.md)中的&#x200B;_設定Valkey_。
 
@@ -129,60 +129,6 @@ df -h /dev/shm
 
 使用方式會因節點而異，但應該會收斂到類似的值。
 
-## 設定L2快取的自訂目錄
-
-最佳化L2快取效能時，您可以選擇將本機快取檔案儲存在自訂的高效能目錄中，例如RAM磁碟(`/dev/shm/`)。
-
-若要確保應用程式範圍的一致性並防止零碎的快取儲存，請在`app/etc/env.php`檔案中設定特定的L2後端選項和全域目錄登入。
-
-**最佳實務：**&#x200B;同時定義`local_backend_options['cache_dir']`和全域`directories['cache']['path']`。
-
-- **`local_backend_options['cache_dir']`**：指示後端快取配接器（例如`Cm_Cache_Backend_File`）將其同步的L2快取檔案儲存在指定的位置。
-- **`directories['cache']['path']`**：更新Adobe Commerce `DirectoryList`登入，將自訂路徑建立為整個應用程式的最終系統快取目錄。
-
-### 防止分割快取目錄和GlusterFS分段錯誤
-
-如果您只在`local_backend_options`中定義自訂路徑，則L2快取引擎會正確運作，但全域應用程式登入仍會將`var/cache`識別為預設快取位置。
-
-此組態不符會導致「腦分割」的情況，即協力廠商擴充功能或核心遞補處理作業將暫存檔案寫入預設的`var/cache`目錄。
-
-**對Adobe Commerce Cloud的嚴重影響：**&#x200B;在Pro架構上，`var/`目錄掛載在共用的分散式檔案系統上。 透過此網路掛載強制高速快取I/O會壓垮使用者端，而且是&#x200B;**GlusterFS分段錯誤和整個叢集中斷的主要觸發條件**。 設定這兩個設定可確保所有的快取I/O都嚴格保留在本機高效能磁碟上。
-
-### 設定範例
-
-若要強制執行單一、統一的快取目錄，請更新您的`env.php`檔案以包含兩個設定：
-
-```php
-return [
-    // 1. Override the global directory registry
-    'directories' => [
-        'cache' => [
-            'path' => '/dev/shm/magento_cache'
-        ]
-    ],
-    // 2. Configure the L2 cache engine
-    'cache' => [
-        'frontend' => [
-            'default' => [
-                'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
-                'backend_options' => [
-                    'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
-                    'server' => '127.0.0.1',
-                    'port' => '6379',
-                    'database' => '1',
-                    // ... other redis configurations ...
-                    'local_backend' => 'Cm_Cache_Backend_File',
-                    'local_backend_options' => [
-                        'cache_dir' => '/dev/shm/magento_cache' 
-                    ]
-                ]
-            ]
-        ]
-    ],
-    // ...
-];
-```
-
 ## 啟用從屬連線
 
 啟用`.magento.env.yaml`檔案中的從屬連線，讓Adobe Commerce使用額外的唯讀快取連線進行讀取，同時繼續使用主要端點進行寫入。 此設定可減少主要快取服務的讀取負載，並更有效地分配讀取流量。
@@ -199,7 +145,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-如需Commerce Cloud基礎結構的環境設定，請參閱雲端基礎結構指南[上的](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#redis_use_slave_connection)Commerce中的&#x200B;_REDIS_USE_SLAVE_CONNECTION_。
+如需Commerce Cloud基礎結構的環境設定，請參閱雲端基礎結構指南[上的](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection)Commerce中的&#x200B;_REDIS_USE_SLAVE_CONNECTION_。
 
 針對Adobe Commerce內部部署安裝，請使用`bin/magento setup`命令設定新的Redis快取實作。 請參閱[組態指南](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)中的&#x200B;_使用預設快取_&#x200B;的Redis。
 
@@ -213,7 +159,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-如需Commerce Cloud基礎結構的環境設定，請參閱雲端基礎結構指南[上的](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#valkey_use_slave_connection)Commerce中的&#x200B;_VALKEY_USE_SLAVE_CONNECTION_。
+如需Commerce Cloud基礎結構的環境設定，請參閱雲端基礎結構指南[上的](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection)Commerce中的&#x200B;_VALKEY_USE_SLAVE_CONNECTION_。
 
 針對Adobe Commerce內部部署安裝，請使用`bin/magento setup`命令設定新的Valkey快取實作。 請參閱[設定指南](../../../configuration/cache/config-valkey.md)中的&#x200B;_設定Valkey_。
 
@@ -359,7 +305,7 @@ stage:
 
 >[!NOTE]
 >
->`full_page`快取型別與雲端基礎結構專案上的Adobe Commerce無關，因為它們使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/fastly)。
+>`full_page`快取型別與雲端基礎結構專案上的Adobe Commerce無關，因為它們使用[Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)。
 
 如需內部部署安裝，請參閱[設定指南](../../../configuration/cache/level-two-cache.md#stale-cache-options)中的&#x200B;_過時快取選項_。
 
@@ -544,7 +490,7 @@ stage:
 
 1. 請求專用於生產和中繼環境工作階段的新Redis執行個體。
 
-   提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。
+   提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。
 
    此更新不會造成任何停機時間，但需要部署才能啟用新服務。
 
@@ -619,7 +565,7 @@ stage:
 
 1. 請求專用於生產和中繼環境工作階段的新Valkey執行個體。
 
-   提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。
+   提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。
 
    此更新不會造成任何停機時間，但需要部署才能啟用新服務。
 
@@ -679,7 +625,7 @@ stage:
 
 ## 啟用非同步釋放
 
-若要在雲端基礎結構上的Adobe Commerce上啟用`lazyfree`，請提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)，要求將下列Redis或Valkey設定套用至您的環境：
+若要在雲端基礎結構上的Adobe Commerce上啟用`lazyfree`，請提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)，要求將下列Redis或Valkey設定套用至您的環境：
 
 ```text
 lazyfree-lazy-eviction yes
@@ -701,7 +647,7 @@ lazyfree-lazy-user-del yes
 
 ## 啟用多執行緒I/O
 
-若要在雲端基礎結構上的Adobe Commerce上啟用Redis I/O執行緒，請提交請求下列I/O執行緒設定的[Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)。 此設定可從主執行緒解除安裝通訊端讀取和寫入以及命令剖析，藉此提高輸送量，但代價是需提高CPU使用量。 在載入下驗證並監視主機。
+若要在雲端基礎結構上的Adobe Commerce上啟用Redis I/O執行緒，請提交請求下列I/O執行緒設定的[Adobe Commerce支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)。 此設定可從主執行緒解除安裝通訊端讀取和寫入以及命令剖析，藉此提高輸送量，但代價是需提高CPU使用量。 在載入下驗證並監視主機。
 
 >[!BEGINTABS]
 
@@ -714,7 +660,7 @@ io-threads-do-reads yes
 io-threads 8 # Choose a value lower than the number of CPU cores (check with nproc), and then tune under load.
 ```
 
->[!TAB 設定Valkey的I/O執行緒]
+>[!TAB 設定Valkey]的I/O執行緒
 
 若為Valkey：
 
