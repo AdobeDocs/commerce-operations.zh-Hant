@@ -1,0 +1,42 @@
+---
+title: 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.78
+description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.78中可用修補程式所修正問題的詳細說明。
+feature: Tools and External Services
+role: Admin, Developer
+type: Troubleshooting
+source-git-commit: 3e003e0cf2428a5e6ec45292fa19aaa2b9e9324d
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 0%
+
+---
+
+# 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.78
+
+此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.78中可用修補程式所修正問題的詳細說明。
+
+QPT v1.1.78包含下列修補程式：
+1. **ACP2E-4416**：修正在Admin中建立客戶獎勵點時未初始化的問題。
+1. **ACP2E-4419**：修正成功在店面進行reCAPTCHA v2 （「我不是機器人」）驗證後，禮品卡在結帳時未正確套用的問題。
+1. **ACP2E-4431**：修正重新索引程式期間刪除符合目標規則之相關產品的問題。
+1. **ACP2E-4448**：修正Redis復原後，Redis中斷期間所做的設定變更未反映出來，而造成儲存過時值的問題。
+1. **ACP2E-4452**：修正「快速訂購」頁面上的產品價格包含稅捐（無論稅捐顯示組態為何）的問題。
+1. **ACP2E-4456**：修正使用GraphQL突變取消訂單時，無法將完全使用禮品卡支付的訂單轉換成「已結」狀態的問題。
+1. **ACP2E-4507**：修正透過GraphQL變動提出的客戶密碼重設請求未套用密碼選項組態的問題。
+1. **ACP2E-4513**：修正系統未刪除過期驗證碼影像的問題。
+1. **ACP2E-4522**：修正同時執行多個購物車合併或報價儲存請求時，quote_coupons表格發生間歇性重複金鑰錯誤的問題。
+1. **ACP2E-4528**：修正客戶地址中的城市驗證問題，該問題現在允許正斜線(/)字元，並拒絕無效字元，例如！、&#39;、#和？。
+1. **ACP2E-4535**：修正送出忘記密碼表單導致工作階段損毀或重新產生（PHPSESSID變更），且訪客購物車已清除的問題。
+1. **ACP2E-4540**：修正Fotorama程式庫未正確載入的問題，此問題會導致系統只顯示第一個附加的影像。
+1. **ACP2E-4555**：修正包含「。」的現代電話號碼的問題。 或「/」未正確驗證。
+1. **ACP2E-4565**：修正使用X-Adobe-Company標頭時，GraphQL公司查詢傳回「目前客戶未獲授權」的問題。
+1. **ACP2E-4591**：修正透過REST API下訂單時，根據訂單數的客戶區段（例如「首次購買者」）未更新的問題。
+1. **ACP2E-4609**：修正部分引號包含已刪除產品時，我的引號頁面未顯示引號的問題。
+1. **ACP2E-4613**：修正大型媒體目錄結構導致gettree回應緩慢，導致Media Gallery目錄樹狀目錄載入時間延長的問題。
+1. **ACP2E-4628**：修正當「帳戶共用」設定為「全域」時，匯入具有大寫電子郵件地址的客戶會導致未定義陣列金鑰錯誤的問題。
+1. **ACP2E-4665**：修正透過REST API提出要求時，產品相簿中含有視訊之可設定產品的子產品未列出的問題。
+1. **ACP2E-4732**: Fixes an issue where partial indexation stopped for customers with a large number of updates when the version_id column in the changelog table reached its maximum value.
+1. **ACP2E-4763**: Fixes the issue where the GraphQL customerOrders query returns inflated original_price_including_tax and original_row_total_including_tax values when Catalog Prices are set to Including Tax, due to tax being applied twice.
+1. **ACSD-60989**: Fixes the issue where modifying a column with a foreign key through a declarative schema causes errors on MariaDB.
+
+Use the menu on the left to navigate to a specific patch page.
