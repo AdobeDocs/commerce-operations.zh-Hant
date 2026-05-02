@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Adobe Commerce支援公用程式（也稱為[資料收集器](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector)）可讓使用者收集有關您的系統的疑難排解資訊，供我們的支援團隊使用。
+Adobe Commerce支援公用程式（也稱為[資料收集器](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/support#data-collector)）可讓使用者收集有關您的系統的疑難排解資訊，供我們的支援團隊使用。
 
 Adobe Commerce使用這些備份（也稱為&#x200B;_傾印_）來分析需要存取您程式碼的問題。 典型的案例如下：
 

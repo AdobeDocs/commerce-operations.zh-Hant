@@ -61,4 +61,4 @@ def verify(password, hash):
 
 ## 實施
 
-`\Magento\Framework\Encryption\Encryptor`類別負責密碼雜湊產生與驗證。 [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade)命令會將客戶密碼雜湊升級為最新的雜湊演演算法。
+`\Magento\Framework\Encryption\Encryptor`類別負責密碼雜湊產生與驗證。 [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade)命令會將客戶密碼雜湊升級為最新的雜湊演演算法。

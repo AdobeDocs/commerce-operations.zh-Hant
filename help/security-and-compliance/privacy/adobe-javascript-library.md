@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-[Adobe隱私權JavaScript資料庫](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)是一組工具，可協助建立存取和刪除私人資料的程式。
+[Adobe隱私權JavaScript資料庫](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=zh-Hant)是一組工具，可協助建立存取和刪除私人資料的程式。
 
 Adobe Commerce資料追蹤服務可儲存適用於隱私權法規的私人資訊，例如[一般資料保護規範(GDPR)](gdpr.md)和[加州消費者隱私保護法(CCPA)](ccpa.md)。
 
@@ -43,7 +43,7 @@ AdobePrivacy JS資料庫提供多種功能，用於管理儲存在瀏覽器中�
 `retrieveThenRemoveIdentities()`
 ：此函式類似於`removeIdentities()`，因為它會擷取身分識別陣列，並從瀏覽器中移除身分識別。
 
-如需有關使用這些函式的詳細資訊和範例，請參閱[正式程式庫檔案](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)。
+如需有關使用這些函式的詳細資訊和範例，請參閱[正式程式庫檔案](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=zh-Hant)。
 
 ### 初始化
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 建構函式在具現化期間接受具有引數的設定物件。
-如需這些組態引數的清單，請參閱[官方程式庫檔案](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)。
+如需這些組態引數的清單，請參閱[官方程式庫檔案](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=zh-Hant)。

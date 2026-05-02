@@ -13,7 +13,7 @@ ht-degree: 0%
 
 您可以使用下列任一方法來套用修補程式：
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
 - [命令列](../patches/apply.md#command-line)
 - [作曲者](../patches/apply.md#composer)
 

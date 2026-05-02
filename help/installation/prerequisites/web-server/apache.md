@@ -2,7 +2,7 @@
 title: 安裝Apache以供內部部署使用
 description: 瞭解如何為內部部署Adobe Commerce安裝並設定Apache。 啟用必要的模組、重寫和'.htaccess'設定。
 feature: Install, Configuration
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt

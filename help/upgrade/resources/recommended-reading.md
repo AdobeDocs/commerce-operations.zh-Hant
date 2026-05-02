@@ -21,17 +21,17 @@ ht-degree: 2%
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe部落格</a></li>
             <li><a href="https://blog.adobe.com/">Adobe開發人員部落格</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe支援中心</a></li>
-            <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Adobe安全性公告</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=zh-Hant">Adobe支援中心</a></li>
+            <li><a href="https://helpx.adobe.com/tw/security/security-bulletin.html">Adobe安全性公告</a></li>
             <li><a href="https://developer.adobe.com/commerce/">Adobe Developer網站上的Adobe Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">雲端或內部部署上的Adobe Commerce發行說明</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=zh-Hant">雲端或內部部署上的Adobe Commerce發行說明</a></li>
             <li><a href="https://solutionpartners.adobe.com/solution-partners.html">解決方案合作夥伴入口網站</a></li>
           </ul>
         </td>
       <td><strong>工具</strong>
         <p>瀏覽旨在讓您更容易找到及使用Adobe Commerce軟體的工具。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/uct-phpstorm">升級相容性工具PhpStorm外掛程式</a> （影片）</li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/uct-phpstorm">升級相容性工具PhpStorm外掛程式</a> （影片）</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">升級相容性工具</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool立Slack管道</a></li>
             <li><a href="../../tools/quality-patches-tool/usage.md">品質修補工具</a></li>
@@ -42,9 +42,9 @@ ht-degree: 2%
       <td><strong>行事曆與原則</strong>
         <p>檢閱Adobe Commerce發行版本和政策的詳細資訊。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Adobe Commerce軟體終止支援常見問題集</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html?lang=zh-Hant">Adobe Commerce軟體終止支援常見問題集</a></li>
             <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements">Commerce Marketplace原則</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">新Adobe Commerce發行策略、更新生命週期原則及延長支援的常見問題集</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html?lang=zh-Hant">新Adobe Commerce發行策略、更新生命週期原則及延長支援的常見問題集</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">生命週期原則</a></li>
             <li><a href="../../release/schedule.md">發行排程</a></li>
             <li><a href="../../release/versioning-policy.md">發行型別</a></li>
@@ -65,8 +65,8 @@ ht-degree: 2%
         <p>確保店面安全且有效率地運作。 檢閱Adobe Commerce豐富的技術檔案，為您的Adobe升級做好準備。</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">建議的升級路徑</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/2-4-upgrade-workshop">2.4技術升級工作坊錄製</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">存取搶鮮版</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/backend-development/upgrade/2-4-upgrade-workshop">2.4技術升級工作坊錄製</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html?lang=zh-Hant">存取搶鮮版</a></li>
             <li><a href="../../release/beta.md">Beta版本總覽</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy">回溯不相容的開發</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes">與舊版不相容的變更</a></li>
