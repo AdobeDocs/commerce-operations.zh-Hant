@@ -2,9 +2,9 @@
 title: 進階內部部署安裝
 description: 瞭解Adobe Commerce內部部署的進階安裝案例。 探索複雜的設定和自訂設定選項。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2527'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Adobe Commerce有一個用於安裝和設定工作的單一命令列介面： `<
 
 install指令會使用以下格式：
 
-```bash
+```shell
 bin/magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
@@ -119,7 +119,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 您可以在安裝期間或安裝後建立「管理員」使用者。 如果您在安裝期間建立使用者，則需要所有管理員認證變數。 請參閱[範例localhost安裝](#sample-localhost-installations)。
 
-下清單格提供許多（但並非全部）可用的安裝引數。 如需完整清單，請參閱[命令列工具參考](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises)。
+下清單格提供許多（但並非全部）可用的安裝引數。 如需完整清單，請參閱[命令列工具參考](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)。
 
 | 名稱 | 值 | 必填？ |
 |--- |--- |--- |
@@ -133,9 +133,9 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 | 名稱 | 值 | 必填？ |
 |--- |--- |--- |
-| `--base-url` | 用於以下列任何格式存取管理員和店面的基底URL：<br><br>`http[s]://<host or ip>/<your install dir>/`。<br><br>**注意：**&#x200B;配置（http://或https://）和結尾斜線都是必要的。<br><br>`<your install dir>`是安裝Adobe Commerce軟體的docroot相對路徑。 根據您設定網頁伺服器和虛擬主機的方式，路徑可能是magento2或可能為空白。<br><br>存取Adobe Commerce或MagenAdobe Commerceuse `http://127.0.0.1/<your install dir>/`或`http://127.0.0.1/<your install dir>/`。<br><br>- `{{base_url}}`，代表虛擬主機設定或Docker等虛擬化環境所定義的基底URL。 例如，如果您設定主機名稱為`magento.example.com`的虛擬主機，則可以使用`--base-url={{base_url}}`安裝軟體，並以`http://magento.example.com/admin`之類的URL存取管理員。 | 是 |
-| `--backend-frontname` | 用於存取管理員的統一資源識別碼(URI)。 您可以省略此引數，讓應用程式為您產生隨機URI，其模式如下： <code>admin_jkhgdfq</code>。<br><br>基於安全考量，建議您使用隨機URI。 對於駭客或惡意軟體而言，隨機URI更難被利用。<br><br>URI會在安裝結束時顯示。 您稍後隨時可以使用`bin/magento info:adminuri`命令來顯示。<br><br>如果您選擇輸入值，建議您不要使用admin、backend等常見字詞。 管理員URI只能包含英數字元和底線字元(`_`)。 | 否 |
-| `--db-host` | 使用下列任一項：<br><br> — 資料庫伺服器的完整主機名稱或IP位址。<br><br>- `localhost` （預設）或`127.0.0.1` （若您的資料庫伺服器與web伺服器位於相同的主機上）。localhost表示MySQL使用者端程式庫使用UNIX通訊端連線到資料庫。 `127.0.0.1`導致使用者端資料庫使用TCP通訊協定。 如需通訊端的詳細資訊，請參閱[PHP PDO_MYSQL檔案](https://www.php.net/manual/en/ref.pdo-mysql.php)。<br><br>**注意：**&#x200B;您可以選擇在其主機名稱中指定資料庫伺服器連線埠，例如`www.example.com:9000` | 是 |
+| `--base-url` | 以下列任何格式存取管理員和店面的基底URL： <br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**注意：**&#x200B;配置（http://或https://）和結尾斜線都是必要的。<br><br>`<your install dir>` 是安裝Adobe Commerce軟體的docroot相對路徑。 根據您設定網頁伺服器和虛擬主機的方式，路徑可能是magento2或可能為空白。<br><br>若要存取Adobe Commerce或MagenAdobe Commerceuse `http://127.0.0.1/<your install dir>/`或`http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}`，代表虛擬主機設定或Docker等虛擬化環境所定義的基底URL。 例如，如果您設定主機名稱為`magento.example.com`的虛擬主機，則可以使用`--base-url={{base_url}}`安裝軟體，並以`http://magento.example.com/admin`之類的URL存取管理員。 | 是 |
+| `--backend-frontname` | 用於存取管理員的統一資源識別碼(URI)。 您可以省略此引數，讓應用程式為您產生隨機URI，其模式如下： <code>admin_jkhgdfq</code>.<br><br>基於安全考量，建議您使用隨機URI。 對於駭客或惡意軟體而言，隨機URI更難被利用。<br><br>URI會在安裝結束時顯示。 您稍後隨時可以使用`bin/magento info:adminuri`命令來顯示。<br><br>如果您選擇輸入值，建議您不要使用admin、backend等常見字詞。 管理員URI只能包含英數字元和底線字元(`_`)。 | 否 |
+| `--db-host` | 使用下列任一專案：<br><br> — 資料庫伺服器的完整主機名稱或IP位址。<br><br>- `localhost` （預設）或`127.0.0.1` (如果您的資料庫伺服器與Web伺服器位於相同的主機上。localhost表示MySQL使用者端程式庫使用UNIX通訊端連線到資料庫。 `127.0.0.1`導致使用者端資料庫使用TCP通訊協定。 如需通訊端的詳細資訊，請參閱[PHP PDO_MYSQL檔案](https://www.php.net/manual/en/ref.pdo-mysql.php)。<br><br>**注意：**&#x200B;您可以選擇在其主機名稱中指定資料庫伺服器連線埠，例如`www.example.com:9000` | 是 |
 | `--db-name` | 您要安裝資料庫表格的資料庫執行處理名稱。<br><br>預設為`magento2`。 | 是 |
 | `--db-user` | 資料庫執行處理擁有者的使用者名稱。<br><br>預設為`root`。 | 是 |
 | `--db-password` | 資料庫執行處理擁有者的密碼。 | 是 |
@@ -145,13 +145,13 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 | `--db-ssl-ca` | 伺服器憑證的路徑。 | 否 |
 | `--language` | 在管理員和店面中使用的語言代碼。 （如果您尚未這樣做，您可以從bin目錄輸入`bin/magento info:language:list`來檢視語言代碼清單。） | 否 |
 | `--currency` | 店面中使用的預設貨幣。 （如果尚未這樣做，您可以從bin目錄輸入`bin/magento info:currency:list`來檢視貨幣清單。） | 否 |
-| `--timezone` | 在管理員和店面中使用的預設時區。 （如果您尚未這樣做，您可以從`bin/magento info:timezone:list`目錄輸入`bin/`來檢視時區清單。） | 否 |
-| `--use-rewrites` | `1`表示您對店面和管理程式中產生的連結使用網頁伺服器重寫。<br><br>`0`停用網頁伺服器重寫的使用。 這是預設值。 | 否 |
-| `--use-secure` | `1`允許在店面URL中使用安全通訊端層(SSL)。 在選取此選項之前，請確定您的網頁伺服器支援SSL。<br><br>`0`停用使用SSL。 在此情況下，所有其他安全URL選項也假設為0。 這是預設值。 | 否 |
+| `--timezone` | 在管理員和店面中使用的預設時區。 （如果您尚未這樣做，您可以從`bin/`目錄輸入`bin/magento info:timezone:list`來檢視時區清單。） | 否 |
+| `--use-rewrites` | `1`表示您對店面和管理程式中產生的連結使用網頁伺服器重寫。<br><br>`0` 停用使用web伺服器重寫。 這是預設值。 | 否 |
+| `--use-secure` | `1`允許在店面URL中使用安全通訊端層(SSL)。 在選取此選項之前，請確定您的網頁伺服器支援SSL。<br><br>`0` 停用SSL。 在此情況下，所有其他安全URL選項也假設為0。 這是預設值。 | 否 |
 | `--base-url-secure` | 安全基底URL，用於以下列格式存取您的管理員和店面： `http[s]://<host or ip>/<your install dir>/` | 否 |
-| `--use-secure-admin` | `1`表示您使用SSL來存取管理員。 在選取此選項之前，請確定您的網頁伺服器支援SSL。<br><br>`0`表示您沒有使用SSL與管理員。 這是預設值。 | 否 |
-| `--admin-use-security-key` | 1會使得應用程式使用隨機產生的索引鍵值來存取管理員和表單中的頁面。 這些金鑰值有助於防止跨網站指令碼偽造攻擊。 這是預設值。<br><br>`0`停用金鑰。 | 否 |
-| `--session-save` | 使用下列任一項： <br><br>- `db`將工作階段資料儲存在資料庫中。 如果您有叢集資料庫，請選擇資料庫儲存體；否則，與檔案式儲存體相比，可能不會有多大好處。<br><br>- `files`將工作階段資料儲存在檔案系統中。 除非檔案系統存取緩慢、您有叢集資料庫，或您想要將工作階段資料儲存在Redis中，否則檔案式工作階段儲存體是適當的。<br><br>- `redis`以將工作階段資料儲存在Redis。 如果您使用Redis作為預設或頁面快取，則必須已安裝Redis。 如需設定對Redis支援的其他資訊，請參閱使用工作階段儲存體的Redis 。 | 否 |
+| `--use-secure-admin` | `1`表示您使用SSL來存取管理員。 在選取此選項之前，請確定您的網頁伺服器支援SSL。<br><br>`0` 表示您未對管理員使用SSL。 這是預設值。 | 否 |
+| `--admin-use-security-key` | 1會使得應用程式使用隨機產生的索引鍵值來存取管理員和表單中的頁面。 這些金鑰值有助於防止跨網站指令碼偽造攻擊。 這是預設值。<br><br>`0` 停用金鑰。 | 否 |
+| `--session-save` | 使用下列任一項： <br><br>- `db`將工作階段資料儲存在資料庫中。 如果您有叢集資料庫，請選擇資料庫儲存體；否則，與檔案式儲存體相比，可能不會有多大好處。<br><br>- `files`可將工作階段資料儲存在檔案系統中。 除非檔案系統存取速度緩慢、您有叢集資料庫，或您想要將工作階段資料儲存在Redis中，否則檔案式工作階段儲存體是適當的。<br><br>- `redis`可將工作階段資料儲存在Redis中。 如果您使用Redis作為預設或頁面快取，則必須已安裝Redis。 如需設定對Redis支援的其他資訊，請參閱使用工作階段儲存體的Redis 。 | 否 |
 | `--key` | 如果您有金鑰，請指定金鑰以加密資料庫中的敏感資料。 如果您沒有，應用程式會為您產生一個。 | 是 |
 | `--cleanup-database` | 若要在安裝Adobe Commerce之前刪除資料庫表格，請指定此引數（不含值）。 否則，資料庫將保持不變。 | 否 |
 | `--db-init-statements` | 進階MySQL設定引數。 在連線到MySQL資料庫時，使用資料庫初始化陳述式來執行。 在設定任何值之前，請查閱與此類似的參考。<br><br>預設為`SET NAMES utf8;`。 | 否 |
@@ -181,7 +181,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 | 名稱 | 值 | 必填？ |
 |--- |--- |--- |
-| `--amqp-host` | 請勿使用`--amqp`選項，除非您已設定[!DNL RabbitMQ]的安裝。 請參閱[!DNL RabbitMQ]安裝，以取得有關安裝和設定[!DNL RabbitMQ]的詳細資訊。<br><br>安裝[!DNL RabbitMQ]的主機名稱。 | 否 |
+| `--amqp-host` | 請勿使用`--amqp`選項，除非您已設定[!DNL RabbitMQ]的安裝。 請參閱[!DNL RabbitMQ]安裝以取得有關安裝和設定[!DNL RabbitMQ]的詳細資訊。<br><br>安裝[!DNL RabbitMQ]的主機名稱。 | 否 |
 | `--amqp-port` | 用來連線到[!DNL RabbitMQ]的連線埠。 預設值為5672。 | 否 |
 | `--amqp-user` | 連線到[!DNL RabbitMQ]的使用者名稱。 不要使用預設使用者`guest`。 | 否 |
 | `--amqp-password` | 連線到[!DNL RabbitMQ]的密碼。 不要使用預設密碼`guest`。 | 否 |
@@ -234,7 +234,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 下列範例會安裝包含下列選項的Adobe Commerce：
 
-* 應用程式安裝在`magento2`上相對於Web伺服器docroot的`localhost`目錄中，而且管理員的路徑是`admin`；因此：
+* 應用程式安裝在`localhost`上相對於Web伺服器docroot的`magento2`目錄中，而且管理員的路徑是`admin`；因此：
 
   您的店面URL是`http://127.0.0.1`
 
@@ -255,7 +255,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 * 預設時區為美國中部（美洲/芝加哥）
 * OpenSearch 1.2已安裝在`os-host.example.com`上，並連線到連線埠9200
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
@@ -267,7 +267,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 類似下列顯示以指示成功安裝的訊息：
 
-```
+```text
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -279,7 +279,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 您可以安裝Adobe Commerce而不建立管理員使用者，如下列範例所示。
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 \
@@ -289,7 +289,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 如果安裝成功，會顯示類似下列的訊息：
 
-```
+```text
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -304,7 +304,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 下列範例會安裝包含下列選項的Adobe Commerce：
 
-* 應用程式安裝在`magento2`上相對於Web伺服器docroot的`localhost`目錄中，而且管理員的路徑是`admin`；因此：
+* 應用程式安裝在`localhost`上相對於Web伺服器docroot的`magento2`目錄中，而且管理員的路徑是`admin`；因此：
 
   您的店面URL是`http://127.0.0.1`
 
@@ -327,7 +327,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 * 使用伺服器重寫
 * OpenSearch已安裝在`os-host.example.com`上，並連線到連線埠9200
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
@@ -344,7 +344,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 如果安裝成功，會顯示類似下列的訊息：
 
-```
+```text
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -356,7 +356,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 以下範例說明如何將ActiveMQ Artemis作為訊息代理人來安裝Adobe Commerce：
 
-```bash
+```shell
 bin/magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \

@@ -3,16 +3,16 @@ title: 設定遠端儲存
 description: 瞭解如何為內部部署Commerce應用程式設定遠端儲存模組。
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
 
 # 設定遠端儲存
 
-「遠端儲存」模組提供儲存媒體檔案的選項，並可使用儲存服務(例如AWS S3)在永久性的遠端儲存容器中排程匯入和匯出。
+「遠端儲存」模組提供儲存媒體檔案的選項，並可使用儲存服務（例如AWS S3）在永久性的遠端儲存容器中排程匯入和匯出。
 
 依預設，Adobe Commerce應用程式會將媒體檔案儲存在包含該應用程式的相同檔案系統中。 對於複雜的多伺服器設定，這會造成低效率，並可能導致共用資源時效能降低。 使用遠端儲存模組，您可以將媒體檔案儲存在`pub/media`目錄中，並將匯入/匯出檔案儲存在遠端物件儲存的`var`目錄中，以利用伺服器端影像大小調整功能。
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 您無法同時啟用遠端存放區&#x200B;_和_&#x200B;資料庫存放區。 您必須先停用資料庫儲存，才能啟用遠端儲存。
 
-```bash
+```shell
 bin/magento config:set system/media_storage_configuration/media_database 0
 ```
 
@@ -30,7 +30,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->- 遠端儲存僅適用於Commerce 2.4.2版和更新版本。 請參閱[2.4.2發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-2)。
+>- 遠端儲存僅適用於Commerce 2.4.2版和更新版本。 請參閱[2.4.2發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2)。
 >
 >- 遠端儲存模組在雲端基礎結構上的Adobe Commerce上有&#x200B;_限制_&#x200B;支援。 Adobe無法完全疑難排解協力廠商儲存配接器服務。 請參閱[在雲端基礎結構上設定Commerce的遠端儲存](cloud-support.md)，以取得為雲端專案實作遠端儲存的指引。
 
@@ -67,13 +67,13 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 - 範例：使用遠端儲存裝置安裝Commerce
 
-  ```bash
+  ```shell
   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
 - 範例：在現有Commerce上啟用遠端儲存
 
-  ```bash
+  ```shell
   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
@@ -85,11 +85,11 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 為特定介面卡啟用遠端存放裝置後，您可以使用CLI將現有的&#x200B;_媒體_&#x200B;檔案移轉至遠端存放裝置。
 
-```bash
+```shell
 ./magento2ce/bin/magento remote-storage:sync
 ```
 
 >[!INFO]
 >
->同步命令只會移轉`pub/media`目錄中的檔案，_不會_ `var`目錄中的匯入/匯出檔案。 請參閱[Commerce 2.4使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=zh-Hant)中的&#x200B;_排程匯入/匯出_。
+>同步命令只會移轉`pub/media`目錄中的檔案，_不會_ `var`目錄中的匯入/匯出檔案。 請參閱&#x200B;_Commerce 2.4使用手冊_&#x200B;中的[排程匯入/匯出](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)。
 

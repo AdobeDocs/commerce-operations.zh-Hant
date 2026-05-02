@@ -2,9 +2,9 @@
 title: 翻譯字典和語言套件
 description: 瞭解如何產生Adobe Commerce的翻譯字典和建置語言套件。 探索當地語系化及多語言商店設定。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1513'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ Commerce翻譯可讓您針對多個地區和市場自訂您的商店並將其當
 
 1. 您可以將翻譯字典封裝成語言套件，然後提供套件給Commerce商店管理員。
 
-1. 在管理員中，商店管理員[設定翻譯](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-localize)。
+1. 在管理員中，商店管理員[設定翻譯](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize)。
 
 命令選項：
 
-```bash
+```shell
 bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--magento] <path to directory to translate>
 ```
 
@@ -48,7 +48,7 @@ bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--
 | 引數 | 值 | 必填？ |
 |--- |--- |--- |
 | `<path to directory to translate>` | 具有可翻譯程式碼的目錄的路徑；換句話說，就是具有要翻譯之片語的PHP、PHTML或XML檔案。<br><br>工具會從您輸入的路徑開始搜尋，並搜尋它包含的所有檔案和子目錄。<br><br>如果您使用`-m --magento`，請勿使用此引數。 | 是（字典）、否（套件）。 |
-| `-m --magento` | 從此翻譯字典建立語言套件時需要。 若已使用，會搜尋包含bin/magento的目錄。 此選項會將主題或模組新增至字典中的每一行。<br><br>範例如下：<br><br>「找不到專案」、「找不到專案」、模組、Magento_Wishlist | 否 |
+| `-m --magento` | 從此翻譯字典建立語言套件時需要。 若已使用，會搜尋包含bin/magento的目錄。 此選項會將主題或模組新增至字典中的每一行。<br><br>範例如下： <br><br>「找不到專案」、「找不到專案」、模組、Magento_Wishlist | 否 |
 | `-o --output="<path>"` | 指定要建立的翻譯字典CSV檔案的絕對檔案系統路徑和檔案名稱。 您輸入的值區分大小寫。 CSV檔案的名稱必須與地區設定名稱（包括字元的大小寫）完全相符。<br><br>如果省略此引數，輸出會導向至stdout。 | 否 |
 
 >[!INFO]
@@ -98,7 +98,7 @@ Product 'Multimeter-2000' has been added to shopping cart.
 
 命令使用方式：
 
-```bash
+```shell
 bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <source> <locale>
 ```
 
@@ -117,7 +117,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 - 必要的授權檔案
 - `composer.json`
-- `registration.php`註冊[語言套件的](https://developer.adobe.com/commerce/php/development/build/component-registration/)
+- [註冊](https://developer.adobe.com/commerce/php/development/build/component-registration/)語言套件的`registration.php`
 - [`language.xml`](#language-package-languagexml)中繼資訊檔案
 
 >[!INFO]
@@ -213,7 +213,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 1. 從模組收集片語：
 
-   ```bash
+   ```shell
    bin/magento i18n:collect-phrases -o "/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n/xx_YY.csv" /var/www/html/magento2/app/code/ExampleCorp/SampleModule
    ```
 
@@ -230,7 +230,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 1. 從模組收集片語：
 
-   ```bash
+   ```shell
    bin/magento i18n:collect-phrases -o "/var/www/html/magento2/xx_YY.csv" -m
    ```
 
@@ -241,7 +241,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 1. 使用[這些准則](#translation-guidelines)翻譯文字與片語。
 1. 建立語言套件。
 
-   ```bash
+   ```shell
    bin/magento i18n:pack /var/www/html/magento2/xx_YY.csv -d xx_YY
    ```
 

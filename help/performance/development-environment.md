@@ -2,9 +2,9 @@
 title: 開發環境建議
 description: 瞭解Adobe Commerce中的開發環境建議。 探索實作指引和最佳化策略。
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 清除快取而非停用
 
-許多開發人員傾向於在其開發人員執行個體上停用所有快取。 我們建議只清除快取，不要停用所有快取。 當您[!DNL Commerce]清除快取[而不是完全停用它們時，](../configuration/cli/manage-cache.md#clean-and-flush-cache-types)會更有效率地執行。 大部分型別的快取在開發期間很少會失效。
+許多開發人員傾向於在其開發人員執行個體上停用所有快取。 我們建議只清除快取，不要停用所有快取。 當您[清除快取](../configuration/cli/manage-cache.md#clean-and-flush-cache-types)而不是完全停用它們時，[!DNL Commerce]會更有效率地執行。 大部分型別的快取在開發期間很少會失效。
 
 如果您[停用快取](../configuration/cli/manage-cache.md#enable-or-disable-cache-types)，我們建議只在開發執行個體中停用頁面和封鎖快取。 請記得在測試期間啟用所有快取。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * `setup:di:compile`會產生自動產生的類別和最佳化的設定快取。
 
-  ```bash
+  ```shell
   bin/magento setup:di:compile
   ```
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 * `setup:static-content:deploy`為存放區部署靜態內容。
 
-  ```bash
+  ```shell
   bin/magento setup:static-content:deploy
   ```
 

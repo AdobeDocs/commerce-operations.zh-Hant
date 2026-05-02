@@ -3,16 +3,16 @@ title: 下載範例資料撰寫器套件
 description: 請依照下列步驟，使用Composer PHP Package Manager安裝Adobe Commerce範例資料。
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
 # 下載範例資料撰寫器套件
 
-本節探討如何安裝範例資料(若您透過下列任一方式取得Adobe Commerce軟體)：
+本節探討如何安裝範例資料（若您透過下列任一方式取得Adobe Commerce軟體）：
 
 * 已從`https://magento.com/tech-resources/download`下載壓縮封存。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 若要使用命令列安裝範例資料，請在`<app_root>`目錄中輸入下列命令作為檔案系統擁有者：
 
-```bash
+```shell
 bin/magento sampledata:deploy
 ```
 
@@ -44,7 +44,7 @@ bin/magento sampledata:deploy
 >
 >如果要在安裝應用程式&#x200B;_之後安裝範例資料_，您也必須執行下列命令來更新`<app_root>`目錄中的資料庫和結構描述：
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -54,7 +54,7 @@ bin/magento setup:upgrade
 
 可能會顯示下列驗證錯誤：
 
-```
+```text
 [Composer\Downloader\TransportException]
 The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate

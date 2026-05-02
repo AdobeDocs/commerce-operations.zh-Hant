@@ -2,9 +2,9 @@
 title: 設定檔案擁有權和許可權
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝設定檔案系統許可權。
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
@@ -33,25 +33,25 @@ ht-degree: 0%
 
 1. 如果您有命令列存取權，請依照顯示的順序輸入下列命令：
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
    若要選擇在一行中輸入所有命令，請輸入下列內容（假設應用程式安裝在`/var/www/html/magento2`中）：
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
    ```
 
@@ -97,13 +97,13 @@ ht-degree: 0%
 
 若要在CentOS或Ubuntu上建立使用者，請輸入以下命令作為具有`root`許可權的使用者：
 
-```bash
+```shell
 adduser <username>
 ```
 
 若要提供使用者密碼，請以具有`root`許可權的使用者身分輸入下列命令：
 
-```bash
+```shell
 passwd <username>
 ```
 
@@ -115,11 +115,11 @@ passwd <username>
 
 例如，若要建立名為`magento_user`的使用者，並為使用者提供密碼，請輸入：
 
-```bash
+```shell
 sudo adduser magento_user
 ```
 
-```bash
+```shell
 sudo passwd magento_user
 ```
 
@@ -133,13 +133,13 @@ sudo passwd magento_user
 
 * CentOS：
 
-  ```bash
+  ```shell
   grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
   或
 
-  ```bash
+  ```shell
   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
@@ -162,19 +162,19 @@ sudo passwd magento_user
 
 例如，若要將使用者`magento_user`新增至CentOS上的`apache`主要群組：
 
-```bash
+```shell
 sudo usermod -a -G apache magento_user
 ```
 
 若要確認您的使用者是Web伺服器群組的成員，請輸入下列命令：
 
-```bash
+```shell
 groups magento_user
 ```
 
 下列範例結果顯示使用者的主要(`magento`)和次要(`apache`)群組。
 
-```bash
+```shell
 magento_user : magento_user apache
 ```
 
@@ -201,35 +201,35 @@ magento_user : magento_user apache
 1. 以檔案系統擁有者的身分登入或切換到您的應用程式伺服器。
 1. 依照顯示的順序輸入下列命令：
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :<web server group> .
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
 若要選擇在一行中輸入所有命令，請輸入下列內容（假設應用程式安裝在`/var/www/html/magento2`中，且Web伺服器群組名稱為`apache`）：
 
-```bash
+```shell
 cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
 如果檔案系統許可權設定不正確，且檔案系統擁有者無法變更，您可以以`root`許可權的使用者身分輸入命令：
 
-```bash
+```shell
 cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && sudo find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && sudo chown -R :apache . && sudo chmod u+x bin/magento
 ```
 
@@ -242,6 +242,6 @@ cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media
 
 例如，
 
-```bash
+```shell
 su magento_user
 ```

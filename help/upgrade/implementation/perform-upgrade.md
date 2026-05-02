@@ -2,9 +2,9 @@
 title: 執行升級
 description: 請依照這些步驟升級Adobe Commerce的內部部署。
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -19,10 +19,10 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->- 如需雲端基礎結構專案上的Adobe Commerce，請參閱雲端指南中的[升級Commerce版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=zh-Hant)。
+>- 如需雲端基礎結構專案上的Adobe Commerce，請參閱雲端指南中的[升級Commerce版本](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html)。
 >- 如果您複製GitHub存放庫，請勿使用此方法來升級。 請參閱[升級Git安裝](../developer/git-installs.md)。
 
-下列指示說明如何使用Composer封裝管理員進行升級。 Adobe Commerce 2.4.2推出對Composer 2的支援。 如果您嘗試從&lt;2.4.1升級，您必須先使用Composer 1 _升級到Composer 2以進行>2.4.2升級之前_，升級到與Composer 2相容的版本（例如，2.4.2）。 此外，您必須執行[支援的PHP版本](../../installation/system-requirements.md)。
+下列指示說明如何使用Composer封裝管理員進行升級。 Adobe Commerce 2.4.2推出對Composer 2的支援。 如果您嘗試從&lt;2.4.1升級，您必須先使用Composer 1 _升級到Composer 2以進行>2.4.2升級前，升級到與Composer 2相容的版本（例如，2.4.2）。_&#x200B;此外，您必須執行[支援的PHP版本](../../installation/system-requirements.md)。
 
 >[!WARNING]
 >
@@ -34,9 +34,8 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe Commerce版本2.4.6-p13不包含`magento/inventory-composer-installer`套件，這是從具有回溯不相容變更的較舊次要版本順利升級所必需的。<br>
->&#x200B;>如果您從2.3升級至2.4.6-p13，請先執行下列命令以安裝`magento/inventory-composer-installer`封裝，然後再進行升級：
->&#x200B;>`composer require magento/inventory-composer-installer`
+>Adobe Commerce 2.4.6-p13版不包含`magento/inventory-composer-installer`套件，這是從具有回溯不相容變更的較舊次要版本順利升級所需。<br>
+>如果您從2.3升級至2.4.6-p13，請先執行下列命令以安裝`magento/inventory-composer-installer`封裝，然後再進行升級：>`composer require magento/inventory-composer-installer`
 
 ## 管理套件
 
@@ -46,7 +45,7 @@ ht-degree: 0%
 
 1. 切換到維護模式，以防止在升級過程中存取您的存放區。
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
@@ -56,19 +55,19 @@ ht-degree: 0%
 
    雲端基礎結構上的Adobe Commerce :_(_W)
 
-   ```bash
+   ```shell
    ./vendor/bin/ece-tools cron:disable
    ```
 
    _Magento Open Source :_
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
 1. 手動啟動所有訊息佇列取用者，以確保所有訊息都已使用。
 
-   ```bash
+   ```shell
    bin/magento cron:run --group=consumers
    ```
 
@@ -76,7 +75,7 @@ ht-degree: 0%
 
 1. 建立`composer.json`檔案的備份。
 
-   ```bash
+   ```shell
    cp composer.json composer.json.bak
    ```
 
@@ -84,31 +83,31 @@ ht-degree: 0%
 
    例如，如果您要從Magento Open Source升級至Adobe Commerce，請移除Magento Open Source套件。
 
-   ```bash
+   ```shell
    composer remove magento/product-community-edition --no-update
    ```
 
    您也可以升級範例資料。
 
-   ```bash
+   ```shell
    composer require <sample data module-1>:<version> ... <sample data module-n>:<version> --no-update
    ```
 
    - _Adobe Commerce :_
 
-     ```bash
+     ```shell
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
      ```
 
    - _Magento Open Source :_
 
-     ```bash
+     ```shell
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
      ```
 
 1. 使用下列`composer require-commerce`命令語法升級您的執行個體：
 
-   ```bash
+   ```shell
    composer require-commerce magento/<product> <version> --no-update [--interactive-root-conflicts] [--force-root-updates] [--help]
    ```
 
@@ -130,7 +129,7 @@ ht-degree: 0%
 
 1. 更新相依性。
 
-   ```bash
+   ```shell
    composer update
    ```
 
@@ -140,13 +139,13 @@ ht-degree: 0%
 
 _Magento Open Source_：
 
-```bash
+```shell
 composer show magento/product-community-edition 2.4.* --available | grep -m 1 versions
 ```
 
 _Adobe Commerce_：
 
-```bash
+```shell
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
 ```
 
@@ -156,13 +155,13 @@ composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 v
 
 _Adobe Commerce_：
 
-```bash
+```shell
 composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
 _Magento Open Source_：
 
-```bash
+```shell
 composer require-commerce magento/product-community-edition 2.4.6 --no-update
 ```
 
@@ -172,19 +171,19 @@ composer require-commerce magento/product-community-edition 2.4.6 --no-update
 
 _Adobe Commerce_：
 
-```bash
+```shell
 composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
 ```
 
 _Magento Open Source_：
 
-```bash
+```shell
 composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
 ## 更新中繼資料
 
-1. 視需要更新`"name"`檔案中的`"version"`、`"description"`和`composer.json`欄位。
+1. 視需要更新`composer.json`檔案中的`"name"`、`"version"`和`"description"`欄位。
 
    >[!NOTE]
    >
@@ -192,21 +191,21 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 1. 套用更新。
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. 清除`var/`和`generated/`子目錄：
 
-   ```bash
+   ```shell
    rm -rf var/cache/*
    ```
 
-   ```bash
+   ```shell
    rm -rf var/page_cache/*
    ```
 
-   ```bash
+   ```shell
    rm -rf generated/code/*
    ```
 
@@ -216,13 +215,13 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 1. 更新資料庫結構和資料。
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. 停用維護模式。
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -230,7 +229,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
    如果您使用Varnish來快取頁面，請重新啟動它：
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
@@ -240,7 +239,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 如果應用程式失敗並出現`We're sorry, an error has occurred while generating this email.`錯誤：
 
-1. 將[檔案系統擁有權和許可權重設為具有](../../installation/prerequisites/file-system/configure-permissions.md)許可權的使用者`root`。
+1. 將[檔案系統擁有權和許可權重設為具有`root`許可權的使用者](../../installation/prerequisites/file-system/configure-permissions.md)。
 1. 清除下列目錄：
    - `var/cache/`
    - `var/page_cache/`

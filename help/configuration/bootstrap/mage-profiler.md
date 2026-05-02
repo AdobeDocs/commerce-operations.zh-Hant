@@ -2,9 +2,9 @@
 title: 啟用設定檔分析
 description: 深入瞭解如何讓MAGE Profiler搭配您的分析工具使用。
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Commerce在[`Magento\Framework\Profiler`](https://github.com/magento/magento2/bl
 
 ## 設定MAGE_PROFILER
 
-您可以使用`MAGE_PROFILER`中討論的任何方法來設定[的值。請設定啟動程式引數的值](../bootstrap/set-parameters.md)。
+您可以使用[中討論的任何方法來設定`MAGE_PROFILER`的值。請設定啟動程式引數的值](../bootstrap/set-parameters.md)。
 
 `MAGE_PROFILER`支援下列值：
 
@@ -37,7 +37,7 @@ Commerce在[`Magento\Framework\Profiler`](https://github.com/magento/magento2/bl
 
   您可以使用下列其中一個值來啟用特定的效能評測器：
 
-   - 使用`csvfile`[`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`的](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)
+   - 使用[`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)的`csvfile`
    - 任何其他值（除了`2`），包括使用[`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)的空白值
 
 - `2`以啟用相依性圖形。
@@ -50,7 +50,7 @@ Commerce在[`Magento\Framework\Profiler`](https://github.com/magento/magento2/bl
 
 您可以使用CLI指令來啟用或停用效能評測器：
 
-- `dev:profiler:enable <type>`會啟用`type`的`html` （預設）或`csvfile`的效能評測器。 啟用時，會建立flagfile `var/profiler.flag`。
+- `dev:profiler:enable <type>`會啟用`html`的`type` （預設）或`csvfile`的效能評測器。 啟用時，會建立flagfile `var/profiler.flag`。
 - `dev:profiler:disable`停用效能分析工具。 停用時，會移除flagfile `var/profiler.flag`。
 
 若要啟用相依性圖形，請使用變數選項。
@@ -63,13 +63,13 @@ Commerce在[`Magento\Framework\Profiler`](https://github.com/magento/magento2/bl
 
    若要使用型別`html`啟用效能分析工具並建立flagfile：
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable html
    ```
 
    若要使用型別`csvfile`啟用效能分析工具並建立flagfile：
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable csvfile
    ```
 
@@ -77,7 +77,7 @@ Commerce在[`Magento\Framework\Profiler`](https://github.com/magento/magento2/bl
 
    若要停用效能分析工具並移除flagfile：
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:disable
    ```
 

@@ -5,16 +5,16 @@ feature: Orders, GraphQL
 role: Admin, Developer
 exl-id: cf9d1409-6fe3-4019-9207-df5f12a41505
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # ACSD-62965：修正GraphQL訂單放置回應中遺失`LocalizedException`訊息的問題
 
-ACSD-62965修補程式修正了下單期間GraphQL回應中未包含`LocalizedException`訊息的問題。 此修補程式可用於[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57。修補程式ID為ACSD-62965。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
+ACSD-62965修補程式修正了下單期間GraphQL回應中未包含`LocalizedException`訊息的問題。 此修補程式可用於[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57。 修補程式ID為ACSD-62965。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
 ## 受影響的產品和版本
 
@@ -28,7 +28,7 @@ Adobe Commerce （所有部署方法） 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -38,22 +38,22 @@ Adobe Commerce （所有部署方法） 2.4.7 - 2.4.7-p3
 
 1. 安裝乾淨的&#x200B;**[!DNL Adobe Commerce]**&#x200B;執行個體。
 1. 將產品新增到購物車並繼續訂單放置步驟。
-1. 在`LocalizedException`中新增`Magento\Framework\Exception\LocalizedException`至`app/code/Magento/QuoteGraphQl/Model/Resolver/PlaceOrder.php`。
+1. 在`app/code/Magento/QuoteGraphQl/Model/Resolver/PlaceOrder.php`中新增`LocalizedException`至`Magento\Framework\Exception\LocalizedException`。
 1. 在下列行之後插入例外：
 
-   ```
+   ```shell
    $cart = $this->getCartForCheckout->execute($maskedCartId, $userId, $storeId);
    ```
 
    新增例外：
 
-   ```
+   ```text
    throw new LocalizedException(new Phrase("Test LocalizedException"));
    ```
 
 1. 執行下單GraphQL請求：
 
-   ```
+   ```graphql
    mutation {
    placeOrder(input: {cart_id: "cart_id"}) {
        order {
@@ -67,7 +67,7 @@ Adobe Commerce （所有部署方法） 2.4.7 - 2.4.7-p3
    1. 回應不包含`LocalizedException`訊息。
    1. 不正確回應的範例：
 
-      ```
+      ```json
       {
       "data": {
           "placeOrder": {
@@ -89,8 +89,8 @@ Adobe Commerce （所有部署方法） 2.4.7 - 2.4.7-p3
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

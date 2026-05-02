@@ -3,9 +3,9 @@ title: 硬體建議
 description: 瞭解最佳化Adobe Commerce效能的硬體建議。 瞭解生產部署的CPU、記憶體和儲存需求。
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Commerce]網站節點會提供所有未快取或無法透過應用程式快取的要求。 一個CPU核心能夠有效地處理大約兩個（有時最多四個） [!DNL Commerce]請求。 使用以下方程式來決定您需要處理所有傳入請求而不將其放入佇列中的網路節點/核心數：
 
-```
+```text
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 ```
 

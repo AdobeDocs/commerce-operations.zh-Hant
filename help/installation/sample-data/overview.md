@@ -1,10 +1,10 @@
 ---
 title: 範例資料概述
-description: 瞭解如何在Adobe Commerce專案中使用範例資料。
+description: 瞭解如何安裝Adobe Commerce範例資料以進行示範和培訓、Luma型店面的行為方式，以及生產開發的限制。
 exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---

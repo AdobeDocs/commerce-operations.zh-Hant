@@ -2,16 +2,16 @@
 title: 複製範例資料Git存放庫
 description: 請依照下列步驟，複製Git存放庫以安裝Adobe Commerce範例資料。
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
 
 # 複製範例資料Git存放庫
 
-本主題說明如何複製Magento Open Source GitHub存放庫並新增範例資料。 此方法僅適用於參與開發人員(即計畫參與Magento Open Source程式碼基底的開發人員)。
+本主題說明如何複製Magento Open Source GitHub存放庫並新增範例資料。 此方法僅適用於參與開發人員（即計畫參與Magento Open Source程式碼基底的開發人員）。
 
 如果您不是貢獻開發人員，請選擇頁面左側目錄中所顯示的其他選項之一。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
    範例如下：
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-sample-data.git
    ```
 
@@ -61,7 +61,7 @@ ht-degree: 0%
    >
    >如果顯示下列錯誤，請確定您已[與GitHub共用SSH金鑰](https://docs.github.com/articles/generating-ssh-keys/)：<br>
 
-   ```
+   ```text
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly
@@ -75,14 +75,14 @@ ht-degree: 0%
 
    若要簽出正確的分支，請從範例資料存放庫的根目錄執行下列命令（假設您需要`2.4-develop`分支）：
 
-   ```bash
+   ```shell
    git checkout 2.4-develop
    ```
 
 1. 變更為`<app_root>`。
 1. 輸入下列命令，在您複製的檔案之間建立符號連結，讓範例資料正常運作：
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 1. 執行以下命令：
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -116,7 +116,7 @@ ht-degree: 0%
 
    範例如下：
 
-   ```bash
+   ```shell
    git clone https://github.com/magento/magento2-sample-data.git
    ```
 
@@ -129,20 +129,20 @@ ht-degree: 0%
 
    若要簽出正確的分支，請從範例資料存放庫的根目錄執行下列命令（假設您需要`2.4-develop`分支）：
 
-   ```bash
+   ```shell
    git checkout 2.4-develop
    ```
 
 1. 變更為`<magento_root>`。
 1. 輸入下列命令，在您複製的檔案之間建立符號連結，讓範例資料正常運作：
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
    例如，
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="/var/www/magento2"
    ```
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 >
 >如果您在安裝Adobe Commerce *之後安裝範例資料*，您也必須執行下列命令來更新資料庫和結構描述：
 >
->```bash
+>```shell
 ><magento_root>/bin/magento setup:upgrade
 >```
 
@@ -166,7 +166,7 @@ ht-degree: 0%
 1. 變更至範例資料複製目錄。
 1. 設定擁有權：
 
-   ```bash
+   ```shell
    chown -R :<your web server group name> .
    ```
 
@@ -178,17 +178,17 @@ ht-degree: 0%
 
 1. 設定許可權：
 
-   ```bash
+   ```shell
    find . -type d -exec chmod g+ws {} +
    ```
 
 1. 清除靜態檔案：
 
-   ```bash
+   ```shell
    cd <your Magento Open Source install dir>
    ```
 
-   ```bash
+   ```shell
    rm -rf var/cache/* var/page_cache/* generated/*
    ```
 

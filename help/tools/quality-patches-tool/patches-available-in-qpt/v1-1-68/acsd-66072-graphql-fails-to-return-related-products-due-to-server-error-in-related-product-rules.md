@@ -5,9 +5,9 @@ feature: GraphQL, Products
 role: Admin, Developer
 type: Troubleshooting
 exl-id: a706a710-aed3-41a4-bc87-3150e9ba95f7
-source-git-commit: 8bb921704239d2b4622931a7814759bda5e9401f
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ACSD-66072修補程式修正設定&#x200B;**[!UICONTROL Related Products Rule]**
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -46,22 +46,22 @@ ACSD-66072修補程式修正設定&#x200B;**[!UICONTROL Related Products Rule]**
 
 1. 導覽至「**[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Related Products Rule]**」，然後使用下列設定建立新規則：
 
-   * **[!UICONTROL Priority]**： 1
-   * **[!UICONTROL Applies To]**： **[!UICONTROL Related Products]**
-   * **[!UICONTROL Result Limit]**： 10
-   * **[!UICONTROL Products to Match]**： **[!UICONTROL Attribute Set is Default]**
-   * **[!UICONTROL Products to Display]**： `Product Category is the Same as Matched Product Categories`
+   * **[!UICONTROL Priority]**: 1
+   * **[!UICONTROL Applies To]**: **[!UICONTROL Related Products]**
+   * **[!UICONTROL Result Limit]**: 10
+   * **[!UICONTROL Products to Match]**: **[!UICONTROL Attribute Set is Default]**
+   * **[!UICONTROL Products to Display]**: `Product Category is the Same as Matched Product Categories`
 
 1. 執行下列Magento CLI命令：
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex
    bin/magento cache:clean
    ```
 
 1. 使用下列裝載傳送POST要求給`../graphql`：
 
-   ```
+   ```graphql
    query getRelatedProductsForProductPage($urlKey: String!) 
    {
        products(filter: { url_key: { eq: $urlKey } }) 
@@ -172,7 +172,7 @@ ACSD-66072修補程式修正設定&#x200B;**[!UICONTROL Related Products Rule]**
 
 `var/log/exception.log`檔案包含：
 
-```
+```text
 report.ERROR: Deprecated Functionality: explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/magento2ee/app/code/Magento/TargetRule/Model/ResourceModel/Index.php on line 557
 ```
 
@@ -180,8 +180,8 @@ report.ERROR: Deprecated Functionality: explode(): Passing null to parameter #2 
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

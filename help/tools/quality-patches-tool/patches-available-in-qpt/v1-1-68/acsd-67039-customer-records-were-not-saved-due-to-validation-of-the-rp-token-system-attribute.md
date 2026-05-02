@@ -5,10 +5,10 @@ feature: Customers, Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
 exl-id: e5995e28-b6b5-4955-a52a-895842c6b6e8
-source-git-commit: 17c35f6da57440c2704879309a58c46b2c4eea25
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 0%
+source-wordcount: '394'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ ACSD-67039修補程式修正了由於`rp_token`系統屬性驗證而未儲存客
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -43,7 +43,7 @@ ACSD-67039修補程式修正了由於`rp_token`系統屬性驗證而未儲存客
    *d337b914e91ff703b1e94ba4156aadf0*
 1. 在`customer_entity`資料表下的任何客戶中，將下列值設定到資料庫中：
 *`rp_token` = *incr4869*
-*`rp_token_created_at` = *2021-04-29 20:06:14*
+*`rp_token_created_at` =* 2021-04-29 20:06:14*
 1. 在[管理]面板中，移至&#x200B;**[!UICONTROL Customers]** > **[!UICONTROL All Customers]**。
 1. 編輯您剛更新上述值的客戶。
 1. 按一下&#x200B;**[!UICONTROL Save Customer]**&#x200B;或&#x200B;**[!UICONTROL Save and Continue Edit]**。
@@ -57,7 +57,7 @@ ACSD-67039修補程式修正了由於`rp_token`系統屬性驗證而未儲存客
 未儲存客戶記錄，且管理員使用者看到錯誤訊息： *儲存客戶時發生錯誤。*
 `system.log`包含下列錯誤：
 
-```
+```text
 report.CRITICAL: Exception message: Notice: iconv(): Detected an incomplete multibyte character in input string in /vendor/magento/module-eav/Model/Attribute/Data/Text.php on line 190
 ```
 
@@ -65,8 +65,8 @@ report.CRITICAL: Exception message: Notice: iconv(): Detected an incomplete mult
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)
 
 ## 相關閱讀
 

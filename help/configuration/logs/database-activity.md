@@ -3,9 +3,9 @@ title: 記錄資料庫活動
 description: 設定Commerce以使用記錄器介面記錄資料庫活動。
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ ht-degree: 0%
 
 最後，編譯程式碼為：
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 並使用以下方法清除快取：
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 

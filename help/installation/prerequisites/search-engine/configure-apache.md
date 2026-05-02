@@ -3,9 +3,9 @@ title: 為您的搜尋引擎設定Apache
 description: 請依照下列步驟，使用Apache Web Server設定搜尋引擎，以供Adobe Commerce的內部部署安裝。
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4版本新增OpenSearch支援。OpenSearch是Elasticsearch的相容復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
+>2.4.4版本新增OpenSearch支援。 OpenSearch是Elasticsearch的相容復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
 
-本節探討如何將Apache設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與Apache[的](#secure-communication-with-apache)安全通訊中討論。
+本節探討如何將Apache設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與Apache](#secure-communication-with-apache)的[安全通訊中討論。
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 1. 啟用`mod_proxy`，如下所示：
 
-   ```bash
+   ```shell
    a2enmod proxy_http
    ```
 
@@ -54,25 +54,25 @@ ht-degree: 0%
 
 1. 重新啟動Apache：
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
 1. 輸入下列命令來驗證Proxy是否有效：
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    例如，如果您使用Elasticsearch，而Proxy使用連線埠8080：
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    類似下列顯示以指示成功的訊息：
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 1. 輸入下列命令以判斷是否已安裝`htpasswd`：
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
@@ -118,11 +118,11 @@ ht-degree: 0%
 
 以具有`root`許可權的使用者身分輸入下列命令：
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.<password file name> <username>
 ```
 
@@ -145,22 +145,22 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 **範例1： cron**
 您必須為cron僅設定一個使用者的驗證；在此範例中，我們使用web伺服器使用者。 若要建立Web伺服器使用者的密碼檔，請輸入下列命令：
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
-**範例2： Elasticsearch**
+**範例2：Elasticsearch**
 您必須為兩個使用者設定驗證：一個能存取nginx，另一個能存取Elasticsearch。 若要為這些使用者建立密碼檔案，請輸入下列命令：
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticsearch
 ```
 
@@ -168,7 +168,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticse
 
 若要將其他使用者新增至您的密碼檔案，請以具有`root`許可權的使用者身分輸入下列命令：
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/.htpasswd <username>
 ```
 

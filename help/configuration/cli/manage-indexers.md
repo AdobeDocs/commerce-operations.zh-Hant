@@ -2,9 +2,9 @@
 title: 管理索引子
 description: 瞭解如何使用命令列工具檢視和管理Adobe Commerce索引子。 探索索引器命令、狀態檢查和重新索引技術。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: ed21cbaf145493614d274da6eee41f6b1ae39ff2
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1025'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> 使用Live Search、目錄服務或產品推薦的Adobe Commerce商家可選擇使用[SaaS式價格索引](https://experienceleague.adobe.com/zh-hant/docs/commerce/price-indexer/price-indexing)。
+> 使用Live Search、目錄服務或產品推薦的Adobe Commerce商家可選擇使用[SaaS式價格索引](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing)。
 
 ## 檢視索引器狀態
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8和更新版本**： [!DNL Customer Grid]索引子同時支援[!UICONTROL Update on Save]和[!UICONTROL Update by Schedule]模式，且預設為[!UICONTROL Update by Schedule]。
 >
->請參閱[實作行動手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration)中的&#x200B;_索引子組態的最佳實務_。
+>請參閱&#x200B;_實作行動手冊_&#x200B;中的[索引子組態的最佳實務](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration)。
 
 >[!INFO]
 >
->在切換索引器模式之前，請將您的網站設定為[維護](../../installation/tutorials/maintenance-mode.md)模式和[停用cron工作](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)。 這樣可確保不會發生資料庫鎖定的情況。
+>在切換索引器模式之前，請將您的網站設定為[維護](../../installation/tutorials/maintenance-mode.md)模式和[停用cron工作](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property)。 這樣可確保不會發生資料庫鎖定的情況。
 
 若要指定索引器組態：
 
@@ -295,7 +295,7 @@ bin/magento indexer:set-mode schedule catalog_category_product catalog_product_c
 
 範例結果：
 
-```
+```text
 Index mode for Indexer Category Products was changed from 'Update on Save' to 'Update by Schedule'
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
@@ -304,7 +304,7 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 
 ### 設定索引子狀態
 
-已在Adobe Commerce 2.4.7中引入`bin/magento indexer:set-status`命令。它可讓管理員修改一或多個索引器的運作狀態，在資料匯入、更新或維護等大量作業期間最佳化系統效能。
+已在Adobe Commerce 2.4.7中引入`bin/magento indexer:set-status`命令。 它可讓管理員修改一或多個索引器的運作狀態，在資料匯入、更新或維護等大量作業期間最佳化系統效能。
 
 命令語法：
 
@@ -327,7 +327,7 @@ bin/magento indexer:set-status suspended catalog_category_product catalog_produc
 
 範例結果：
 
-```
+```text
 Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
 Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
 ```
@@ -346,6 +346,6 @@ Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspe
 
 >[!IMPORTANT]
 >
->將索引器的狀態從`valid`或`suspended`變更為`invalid`需要謹慎。 如果有累積的未索引資料，此動作可能會導致效能降低。
+>將索引器的狀態從`suspended`或`invalid`變更為`valid`需要謹慎。 如果有累積的未索引資料，此動作可能會導致效能降低。
 >
 >在手動將狀態更新為`valid`以維持系統效能和資料完整性之前，請務必確保所有資料都正確編制索引。

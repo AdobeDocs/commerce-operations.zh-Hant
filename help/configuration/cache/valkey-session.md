@@ -3,9 +3,9 @@ title: 使用Valkey進行工作階段儲存
 description: 瞭解如何在Adobe Commerce中設定工作階段存放區的Valkey。 探索設定步驟、設定選項和效能最佳化技術。
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '915'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Adobe Commerce提供命令列選項，用於設定Valkey工作階段存放區。
 
 執行`setup:config:set`命令並指定Valkey特定引數。
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parameter_name>=<parameter_value>...
 ```
 
@@ -34,7 +34,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 >
 >從&#x200B;**Adobe Commerce 2.4.9-alpha2**&#x200B;開始，**Valkey**&#x200B;已因授權變更正式取代CLI工具中的Redis。 Valkey是Redis的分支，可維護幾乎相同的功能。 對於&#x200B;**版本2.4.8和更早版本**，用於設定Valkey的CLI命令與Redis的命令相同，可確保順暢的回溯相容性，並簡化移轉或雙環境支援。 下列範例顯示Valkey特定命令。
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
 ```
 
@@ -44,7 +44,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-valkey-port | 連線埠 | Valkey伺服器接聽連線埠。 | 6379 |
 | session-save-valkey-password | 密碼 | 如果Valkey伺服器需要驗證，請指定密碼。 | 空白 |
 | session-save-valkey-timeout | 逾時 | 連線逾時（秒）。 | 2.5 |
-| session-save-valkey-persistent-id | persistent_identifier | 啟用持續連線的唯一字串（例如，sess-db0）。<br>[phpredis和php-fpm的已知問題](https://github.com/phpredis/phpredis/issues/70)。 |  |
+| session-save-valkey-persistent-id | persistent_identifier | 啟用持續連線的唯一字串（例如sess-db0）。<br>[phpredis和php-fpm](https://github.com/phpredis/phpredis/issues/70)的已知問題。 |  |
 | session-save-valkey-db | 資料庫 | 唯一的Valkey資料庫編號，建議用來防止資料遺失。<br><br>**重要**：如果您將Valkey用於多種快取型別，則資料庫編號必須不同。 建議您將預設快取資料庫編號指派給`0`，將分頁快取資料庫編號指派給`1`，並將工作階段儲存資料庫編號指派給`2`。 | 0 |
 | session-save-valkey-compression-threshold | compression_threshold | 設定為`0`以停用壓縮（建議在`suhosin.session.encrypt = On`時使用）。 | 2048 |
 | session-save-valkey-compression-lib | compression_library | 選項： gzip、lzf、lz4或snappy。 | gzip |
@@ -67,7 +67,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 
 下列範例將Valkey設為工作階段資料存放區，將主機設為`127.0.0.1`，將記錄層級設為`4`，並將資料庫編號設為`2`。 所有其他引數都會設定為預設值。
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=127.0.0.1 --session-save-valkey-log-level=4 --session-save-valkey-db=2
 ```
 
@@ -75,7 +75,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=12
 >
 >從&#x200B;**Adobe Commerce 2.4.9**&#x200B;開始，**Valkey**&#x200B;已因授權變更正式取代CLI工具中的Redis。 Valkey是Redis的分支，可維護幾乎相同的功能。 對於&#x200B;**版本2.4.8和更早版本**，用於設定Valkey的CLI命令與Redis的命令相同，可確保順暢的回溯相容性，並簡化移轉或雙環境支援。 下列範例顯示Valkey特定命令。
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
@@ -119,13 +119,13 @@ Commerce將類似下列的行新增至`<magento_root>app/etc/env.php`：
 
 ### Valkey monitor命令
 
-```bash
+```shell
 valkey-cli monitor
 ```
 
 工作階段儲存輸出範例：
 
-```
+```text
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
 1476824834.187587 [0 127.0.0.1:52353] "hmget" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "data" "writes"
 1476824834.187939 [0 127.0.0.1:52353] "expire" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "1200"
@@ -136,7 +136,7 @@ valkey-cli monitor
 
 ### Valkey ping命令
 
-```bash
+```shell
 valkey-cli ping
 ```
 

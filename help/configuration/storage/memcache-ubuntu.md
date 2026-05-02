@@ -3,9 +3,9 @@ title: 在Ubuntu上設定memcached
 description: 瞭解如何在Ubuntu上安裝和設定Memcached，以供Adobe Commerce快取使用。 探索設定指示和最佳化秘訣。
 feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 因為PHP對memcache沒有原生支援，所以您必須安裝擴充功能以供PHP使用。 有兩個可用的PHP擴充功能，請務必解碼要使用哪個：
 
 - `memcache` (_no d_) — 不是定期維護的舊版但常用的擴充功能。
-`memcache`延伸模組目前&#x200B;_不適用於PHP 7。_ 請參閱memcache[的](https://www.php.net/manual/en/book.memcache.php)PHP檔案。
+`memcache`延伸模組目前&#x200B;_不適用於PHP 7。_ 請參閱memcache](https://www.php.net/manual/en/book.memcache.php)的[PHP檔案。
 
   Ubuntu的確切名稱是`php5-memcache`。
 
-- `memcached` （_具有`d`_） — 與PHP 7相容的較新且已維護的擴充功能。 請參閱memcached[的](https://www.php.net/manual/en/book.memcached.php)PHP檔案。
+- `memcached` （_具有`d`_） — 與PHP 7相容的較新且已維護的擴充功能。 請參閱memcached](https://www.php.net/manual/en/book.memcached.php)的[PHP檔案。
 
   Ubuntu的確切名稱是`php5-memcached`。
 
@@ -35,11 +35,11 @@ ht-degree: 0%
 
 1. 以具有`root`許可權的使用者身分，輸入下列命令：
 
-   ```bash
+   ```shell
    apt-get -y update
    ```
 
-   ```bash
+   ```shell
    apt-get -y install php5-memcached memcached
    ```
 
@@ -53,7 +53,7 @@ ht-degree: 0%
    1. 將變更儲存至`memcached.conf`並結束文字編輯器。
    1. 重新啟動memcached。
 
-      ```bash
+      ```shell
       service memcached restart
       ```
 
@@ -97,7 +97,7 @@ Adobe建議先測試memcached以確保其可正常運作，然後再安裝Commer
 
 此測試使用PHP指令碼來驗證memcached可以儲存和擷取快取資料。
 
-如需此測試的詳細資訊，請參閱[如何在Ubuntu教學課程中安裝及使用Memcache &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04)。
+如需此測試的詳細資訊，請參閱[如何在Ubuntu教學課程中安裝及使用Memcache ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04)。
 
 在網頁伺服器的docroot中建立`cache-test.php`，其內容如下：
 
@@ -130,7 +130,7 @@ http://192.0.2.1/cache-test.php
 
 最後，您可以使用Telnet檢視memcache金鑰：
 
-```bash
+```shell
 telnet localhost <memcache port>
 ```
 
@@ -142,7 +142,7 @@ stats items
 
 結果類似下列：
 
-```
+```text
 STAT items:2:number 1
 STAT items:2:age 106
 STAT items:2:evicted 0
@@ -165,4 +165,4 @@ flush_all
 quit
 ```
 
-[有關Telnet測試的其他資訊](https://darkcoding.net/software/memcached-list-all-keys/)
+[Telnet測試的其他資訊](https://darkcoding.net/software/memcached-list-all-keys/)

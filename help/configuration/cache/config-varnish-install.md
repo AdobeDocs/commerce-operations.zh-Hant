@@ -3,9 +3,9 @@ title: 安裝清漆
 description: 瞭解Adobe Commerce快取的Varnish安裝需求。 探索安裝資源及設定指南。
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->本主題是針對CentOS和Apache 2.4上的Varnish所撰寫。如果您是在不同的環境中設定Varnish，有些指令可能會不同。 如需詳細資訊，請參閱前述檔案。
+>本主題是針對CentOS和Apache 2.4上的Varnish所撰寫。 如果您是在不同的環境中設定Varnish，有些指令可能會不同。 如需詳細資訊，請參閱前述檔案。
 >
 >如果您要安裝Vmods模組(vmod) （例如saint模式），您應該編譯程式碼來安裝Varnish，而不是從套件進行安裝。 如需詳細資訊，請參閱[Saint模式](config-varnish-advanced.md#saint-mode)。
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 開啟終端機，然後輸入下列命令來顯示Varnish的版本：
 
-```bash
+```shell
 varnishd -V
 ```
 

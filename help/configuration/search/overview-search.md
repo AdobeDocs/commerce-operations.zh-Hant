@@ -1,11 +1,11 @@
 ---
 title: 搜尋引擎概觀
-description: Adobe Commerce的搜尋引擎選項概觀。
+description: 瞭解Elasticsearch和OpenSearch，以進行Adobe Commerce目錄搜尋、先決條件、網頁伺服器設定和安裝後維護工作。
 feature: Configuration, Search
 exl-id: 0ea78ca2-0bca-4d61-980a-02fb7da04553
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---

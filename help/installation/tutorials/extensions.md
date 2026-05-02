@@ -2,9 +2,9 @@
 title: 管理協力廠商擴充功能
 description: 請依照下列步驟，安裝、啟用、升級和解除安裝Adobe Commerce擴充功能。
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 擴充功能包括：
 
-- 模組(擴充Adobe Commerce功能)
+- 模組（擴充Adobe Commerce功能）
 - 佈景主題（變更店面外觀和風格，以及管理員）
 - 語言套件（將店面和管理員本地化）
 
-本主題說明如何使用命令列介面來管理您從Commerce Marketplace為&#x200B;_內部部署_&#x200B;專案購買的協力廠商擴充功能。 若為雲端基礎結構專案，請參閱[管理擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/extensions)。
+本主題說明如何使用命令列介面來管理您從Commerce Marketplace為&#x200B;_內部部署_&#x200B;專案購買的協力廠商擴充功能。 若為雲端基礎結構專案，請參閱[管理擴充功能](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions)。
 
 您可以使用相同的程式來安裝&#x200B;_any_&#x200B;擴充功能；您只需要該擴充功能的撰寫器名稱和版本。 若要尋找它，請開啟擴充功能的`composer.json`檔案，並記下`"name"`和`"version"`的值。
 
@@ -31,16 +31,16 @@ ht-degree: 0%
 1. 備份您的資料庫。
 1. 啟用維護模式：
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 若要安裝擴充功能，您必須：
 
 1. 從Commerce Marketplace或其他擴充功能開發人員取得擴充功能。
-1. 如果您從Commerce Marketplace安裝擴充功能，請確定`repo.magento.com`檔案中有`composer.json`存放庫：
+1. 如果您從Commerce Marketplace安裝擴充功能，請確定`composer.json`檔案中有`repo.magento.com`存放庫：
 
-   ```bash
+   ```shell
    "repositories": [
        {
            "type": "composer",
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->或者，您可以在擴充功能的&#x200B;_檔案中找到_ any`composer.json`擴充功能的撰寫器名稱和版本(無論您是在Commerce Marketplace上或其他地方購買)。
+>或者，您可以在擴充功能的`composer.json`檔案中找到&#x200B;_any_&#x200B;擴充功能的撰寫器名稱和版本（無論您是在Commerce Marketplace上或其他地方購買）。
 
 ### 更新撰寫器相依性
 
@@ -84,13 +84,13 @@ ht-degree: 0%
 
 1. 導覽至您的專案目錄並更新您的`composer.json`檔案。
 
-   ```bash
+   ```shell
    composer require <component-name>:<version>
    ```
 
    例如，
 
-   ```bash
+   ```shell
    composer require j2t/module-payplug:2.0.2
    ```
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 1. 請等待Composer完成更新您的專案相依性，並確認沒有任何錯誤：
 
-   ```
+   ```text
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -110,19 +110,19 @@ ht-degree: 0%
 
 若要確認擴充功能是否已正確安裝，請執行以下命令：
 
-```bash
+```shell
 bin/magento module:status J2t_Payplug
 ```
 
 依預設，擴充功能可能已停用：
 
-```
+```text
 Module is disabled
 ```
 
 副檔名格式為`<VendorName>_<ComponentName>`；此格式與撰寫器名稱不同。 使用此格式來啟用擴充功能。 如果您不確定擴充功能名稱，請執行：
 
-```bash
+```shell
 bin/magento module:status
 ```
 
@@ -134,13 +134,13 @@ bin/magento module:status
 
 1. 啟用擴充功能並清除靜態檢視檔案：
 
-   ```bash
+   ```shell
    bin/magento module:enable J2t_Payplug --clear-static-content
    ```
 
    您應該會看到下列輸出：
 
-   ```
+   ```text
    The following modules have been enabled:
    - J2t_Payplug
    
@@ -152,31 +152,31 @@ bin/magento module:status
 
 1. 註冊擴充功能：
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. 重新編譯專案：在生產模式中，您可能會收到「請重新執行Magento編譯命令」的訊息。 應用程式不會提示您以開發人員模式執行compile指令。
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. 確認擴充功能已啟用：
 
-   ```bash
+   ```shell
    bin/magento module:status J2t_Payplug
    ```
 
    您應該會看到驗證擴充功能是否已不再停用的輸出：
 
-   ```
+   ```text
    Module is enabled
    ```
 
 1. 清除快取：
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -198,27 +198,27 @@ bin/magento module:status
 
    每個模組名稱更新：
 
-   ```bash
+   ```shell
    composer update vendor/module-name
    ```
 
    每個版本更新：
 
-   ```bash
+   ```shell
    composer require vendor/module-name ^x.x.x
    ```
 
 1. 執行以下命令以升級、部署和清除快取。
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade --keep-generated
    ```
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -240,13 +240,13 @@ bin/magento module:status
 
    - 對於以Composer為基礎的副檔名，請從您的Adobe Commerce `composer.json`檔案中移除該副檔名。
 
-     ```bash
+     ```shell
      composer remove <component-name>
      ```
 
    - 對於非Composer型副檔名，請從您的Adobe Commerce專案存放庫中移除實體檔案。
 
-     ```bash
+     ```shell
      rm -rf app/code/<vendor-name>/<component-name>
      ```
 

@@ -1,11 +1,11 @@
 ---
 title: 將記憶體快取用於工作階段儲存
-description: 瞭解如何將memcached用於Commerce工作階段存放區。
+description: 瞭解如何設定Adobe Commerce以使用memcached在env.php中儲存工作階段，以及何時偏好使用Redis或Varnish來儲存其他快取圖層。
 feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Commerce會將memcached用於工作階段儲存，但不會用於頁面快取。
 
 1. 刪除Commerce安裝目錄下下列目錄的內容：
 
-   ```bash
+   ```shell
    rm -rf var/cache/* var/page_cache/* var/session/*
    ```
 
@@ -62,17 +62,17 @@ Commerce會將memcached用於工作階段儲存，但不會用於頁面快取。
 
 1. （選擇性。） 使用Telnet檢視記憶體快取儲存體。
 
-   ```bash
+   ```shell
    telnet <memcached host or ip> <memcached port>
    ```
 
-   ```bash
+   ```shell
    stats items
    ```
 
    結果顯示類似以下內容：
 
-   ```
+   ```text
    STAT items:3:number 1
    STAT items:3:age 7714
    STAT items:3:evicted 0

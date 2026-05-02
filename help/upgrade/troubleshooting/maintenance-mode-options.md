@@ -2,7 +2,7 @@
 title: 升級的維護模式選項
 description: 建立自訂維護模式頁面，以便客戶在您執行升級時於您的Adobe Commerce店面看到。
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -72,7 +72,7 @@ body
 
    在Apache設定檔案的結尾新增下列內容：
 
-   ```
+   ```text
    RewriteEngine On
    RewriteCond %{REMOTE_ADDR} !^192\.0\.2\.110
    RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f
@@ -90,7 +90,7 @@ body
 
 1. 輸入下列命令：
 
-   ```bash
+   ```shell
    touch <web server docroot>/maintenance.enable
    ```
 
@@ -144,13 +144,13 @@ body
 
 1. 輸入下列命令：
 
-   ```bash
+   ```shell
    touch <magento_root>/maintenance.enable
    ```
 
 1. 重新載入nginx設定：
 
-   ```bash
+   ```shell
    service nginx reload
    ```
 
@@ -159,6 +159,6 @@ body
 1. 升級完成後，請刪除或重新命名`maintenance.enable`
 1. 重新載入nginx設定：
 
-   ```bash
+   ```shell
    service nginx reload
    ```

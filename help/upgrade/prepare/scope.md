@@ -2,16 +2,16 @@
 title: 瞭解升級範圍
 description: 瞭解版本中回溯不相容的變更，這些變更可能會影響Adobe Commerce自訂模組或協力廠商擴充功能。
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
 
 # 瞭解升級範圍
 
-請檢閱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)以瞭解發行範圍，包括增強功能、錯誤修正，以及可能影響協力廠商和自訂模組的已知問題。
+請檢閱[發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)以瞭解發行範圍，包括增強功能、錯誤修正，以及可能影響協力廠商和自訂模組的已知問題。
 
 ## 與舊版不相容的變更
 
@@ -26,7 +26,7 @@ Adobe Commerce Marketplace的新相容性原則可確保&#x200B;_所有_&#x200B;
 
 ## 自訂模組
 
-所有自訂模組都應針對您欲升級的目標版本進行檢查。 這是最耗用時間和資源的升級程式。 評估自訂模組時，您必須尋找與回溯不相容的變更，並注意新的作法，例如控制器分解。 您可以在[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)中進一步瞭解此資訊。 此外，請確定您遵循模組開發的[最佳實務](https://developer.adobe.com/commerce/php/best-practices/extensions/)。
+所有自訂模組都應針對您欲升級的目標版本進行檢查。 這是最耗用時間和資源的升級程式。 評估自訂模組時，您必須尋找與回溯不相容的變更，並注意新的作法，例如控制器分解。 您可以在[發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)中進一步瞭解此資訊。 此外，請確定您遵循模組開發的[最佳實務](https://developer.adobe.com/commerce/php/best-practices/extensions/)。
 
 ## [!DNL Upgrade Compatibility Tool]
 
@@ -38,9 +38,9 @@ Adobe Commerce Marketplace的新相容性原則可確保&#x200B;_所有_&#x200B;
 
 ### 下載工具
 
-使用Composer下載工具。 它需要PHP 7.3或更高版本、至少2GB的RAM、Node.js (如果您正在檢查GraphQL相容性)以及Adobe Commerce授權。
+使用Composer下載工具。 它需要PHP 7.3或更高版本、至少2GB的RAM、Node.js （如果您正在檢查GraphQL相容性）以及Adobe Commerce授權。
 
-```bash
+```shell
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
@@ -48,7 +48,7 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 若要分析您的執行個體並檢查錯誤、警告和嚴重問題：
 
-```bash
+```shell
 bin/uct upgrade:check <dir> -c <coming version> 
 ```
 
@@ -58,7 +58,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 找出團隊要處理的最重要問題：
 
-```bash
+```shell
 bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues –min-issue-level critical --vanilla-dir /path/to/vanilla/code/ /path/to/magento/app/code/Vendor/
 ```
 

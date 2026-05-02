@@ -1,5 +1,5 @@
 ---
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -13,27 +13,27 @@ ht-degree: 0%
 
 1. 變更至應用程式根目錄，然後執行傾印命令。
 
-   ```bash
+   ```shell
    cd <Magento root dir>
    php bin/magento app:config:dump
    ```
 
    例如，如果Commerce安裝在`/var/www/html/magento2`中，請輸入：
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2
    php bin/magento app:config:dump
    ```
 
 1. 確認`app/etc/config.php`已更新。
 
-   ```bash
+   ```shell
    git status
    ```
 
    範例回應：
 
-   ```
+   ```text
    On branch m2.2_deploy
    Changed but not updated:
      (use "git add <file>..." to update what will be committed)
@@ -47,6 +47,6 @@ ht-degree: 0%
 
 1. 只將您對`app/etc/config.php`的變更籤入至原始檔控制。
 
-   ```bash
+   ```shell
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy
    ```

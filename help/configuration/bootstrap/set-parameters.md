@@ -2,9 +2,9 @@
 title: 設定啟動程式引數的值
 description: 瞭解如何設定Commerce應用程式的啟動程式引數。
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 例如，您可以使用`MAGE_PROFILER`系統環境變數來指定模式，如下所示：
 
-```
+```text
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -43,7 +43,7 @@ MAGE_PROFILER={firebug|csv|<custom value>}
 
 CentOS的Bash shell範例：
 
-```bash
+```shell
 export MAGE_PROFILER=firebug
 ```
 
@@ -57,7 +57,7 @@ export MAGE_PROFILER=firebug
 
 ### Nginx設定
 
-檢視[GitHub](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16)上的&#x200B;_Nginx範例組態_。
+檢視&#x200B;_GitHub_&#x200B;上的[Nginx範例組態](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16)。
 
 ### Apache .htaccess設定
 
@@ -80,7 +80,7 @@ export MAGE_PROFILER=firebug
 
 1. 將`MAGE_PROFILER`的值設定為下列任一值：
 
-   ```
+   ```text
    firebug
    csvfile
    <custom value>
@@ -92,7 +92,7 @@ export MAGE_PROFILER=firebug
 
 Apache Web Server支援使用`mod_env`指令設定應用程式模式。
 
-在`mod_env`Apache版本2.2[和](https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv)Apache版本2.4[中，Apache &#x200B;](https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv)指示詞稍有不同。
+在[Apache版本2.2](https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv)和[Apache版本2.4](https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv)中，Apache `mod_env`指示詞稍有不同。
 
 下列程式說明如何在Apache虛擬主機中設定應用程式模式。 這不是使用`mod_env`指示詞的唯一方法；如需詳細資訊，請參閱Apache檔案。
 
@@ -124,13 +124,13 @@ Apache Web Server支援使用`mod_env`指令設定應用程式模式。
 1. 儲存變更並退出文字編輯器。
 1. 啟用虛擬主機（如果尚未啟用）：
 
-   ```bash
+   ```shell
    a2ensite <virtual host config file name>
    ```
 
    例如，
 
-   ```bash
+   ```shell
    a2ensite my.magento.conf
    ```
 

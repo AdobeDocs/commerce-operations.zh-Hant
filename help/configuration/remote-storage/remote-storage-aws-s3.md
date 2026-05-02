@@ -3,9 +3,9 @@ title: 設定遠端儲存的AWS S3貯體
 description: 設定您的Commerce專案，以使用AWS S3儲存服務進行遠端儲存。
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -28,19 +28,19 @@ ht-degree: 0%
 
 1. 停用預設資料庫儲存體。
 
-   ```bash
+   ```shell
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
 1. 設定Commerce以使用私人貯體。 如需完整的引數清單，請參閱[遠端儲存選項](remote-storage.md#remote-storage-options)。
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
    ```
 
 1. 將媒體檔案與遠端儲存裝置同步。
 
-   ```bash
+   ```shell
    bin/magento remote-storage:sync
    ```
 
@@ -71,7 +71,7 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 }
 ```
 
-### 驗證
+### Authentication
 
 如果您使用存取和秘密金鑰而非[AWS IAM](https://aws.amazon.com/iam/)角色，則必須包含[`ngx_aws_auth` Nginx模組](https://github.com/anomalizer/ngx_aws_auth)。
 

@@ -3,9 +3,9 @@ title: 單一電腦部署
 description: 瞭解如何使用命令列在生產伺服器上部署對Commerce的更新。
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '188'
 ht-degree: 1%
 
 ---
@@ -30,19 +30,19 @@ ht-degree: 1%
 
 1. 將目錄變更為Commerce基底目錄：
 
-   ```bash
+   ```shell
    cd <Commerce base directory>
    ```
 
 1. 使用命令啟用維護模式：
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. 使用下列命令模式將更新套用至Commerce或其元件：
 
-   ```bash
+   ```shell
    composer require-commerce <package> <version> --no-update
    ```
 
@@ -57,37 +57,37 @@ ht-degree: 1%
 
 1. 使用Composer更新元件：
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. 更新資料庫架構和資料：
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. 編譯程式碼：
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. 部署靜態內容：
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
 1. 清除快取：
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. 退出維護模式：
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 

@@ -4,10 +4,10 @@ description: 瞭解Adobe Commerce專案開發階段的實作最佳實務。
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 2%
+source-wordcount: '363'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 | 最佳實務 | 說明 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [建置和部署](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=zh-Hant){target="_blank"} | 說明在雲端基礎結構專案上建置和部署Adobe Commerce階段的最佳做法 |
+| [建置和部署](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | 說明在雲端基礎結構專案上建置和部署Adobe Commerce階段的最佳做法 |
 | 偵錯 | 系統地有效偵錯Adobe Commerce架構 |
 | [靜態內容部署](static-content-deployment.md) | 避免靜態內容未出現在店面的問題 |
 | [疑難排解](troubleshooting.md) | 疑難排解常見的Adobe Commerce實作問題 |
@@ -65,7 +65,7 @@ ht-degree: 2%
 
 | 最佳實務 | 說明 |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [佈景主題開發](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | 說明開發模式，以協助確保您的主題、未來版本的Adobe Commerce和自訂擴充功能之間的相容性 |
+| [佈景主題開發](https://developer.adobe.com/commerce/frontend-core/guide/best-practices){target="_blank"} | 說明開發模式，以協助確保您的主題、未來版本的Adobe Commerce和自訂擴充功能之間的相容性 |
 
 ## PHP開發
 

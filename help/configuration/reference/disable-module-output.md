@@ -2,9 +2,9 @@
 title: 停用模組輸出
 description: 瞭解如何在Adobe Commerce中停用模組輸出而不移除相依性。 探索設定步驟和使用案例。
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 執行以下命令以匯出組態變更：
 
-```bash
+```shell
 bin/magento app:config:dump
 ```
 
@@ -68,7 +68,7 @@ bin/magento app:config:dump
 
 接下來，清除快取以啟用新設定：
 
-```bash
+```shell
 bin/magento cache:clean config
 ```
 

@@ -1,5 +1,5 @@
 ---
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%
@@ -16,19 +16,19 @@ ht-degree: 1%
 
 輸入下列命令：
 
-```bash
+```shell
 curl -i http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
 例如，如果您在搜尋引擎伺服器上輸入命令，且您的Proxy使用連線埠8080：
 
-```bash
+```shell
 curl -i http://localhost:8080/_cluster/health
 ```
 
 下列訊息會顯示以指出驗證失敗：
 
-```
+```text
 HTTP/1.1 401 Unauthorized
 Date: Tue, 23 Feb 2016 20:35:29 GMT
 Content-Type: text/html
@@ -45,19 +45,19 @@ WWW-Authenticate: Basic realm="Restricted"
 
 現在嘗試下列命令：
 
-```bash
+```shell
 curl -i -u <username>:<password> http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
 例如：
 
-```bash
+```shell
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health
 ```
 
 這次命令會成功，並出現類似下列的訊息：
 
-```
+```text
 HTTP/1.1 200 OK
 Date: Tue, 23 Feb 2016 20:38:03 GMT
 Content-Type: application/json; charset=UTF-8
@@ -68,7 +68,7 @@ Connection: keep-alive
 
 ## 在Admin中設定HTTP基本驗證
 
-執行[搜尋引擎組態](../configuration/search/configure-search-engine.md) *中討論過的相同工作（除了*），請從&#x200B;**[!UICONTROL Yes]**&#x200B;清單中按一下&#x200B;**[!UICONTROL Enable HTTP Auth]**，然後在提供的欄位中輸入您的使用者名稱和密碼。
+執行[搜尋引擎組態](../configuration/search/configure-search-engine.md) *中討論過的相同工作（除了*），請從&#x200B;**[!UICONTROL Enable HTTP Auth]**&#x200B;清單中按一下&#x200B;**[!UICONTROL Yes]**，然後在提供的欄位中輸入您的使用者名稱和密碼。
 
 按一下「**[!UICONTROL Test Connection]**」以確認其運作正常，然後按一下「**[!UICONTROL Save Config]**」。
 

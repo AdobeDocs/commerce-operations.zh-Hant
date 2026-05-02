@@ -3,9 +3,9 @@ title: 設定網頁伺服器
 description: 瞭解如何設定網頁伺服器以搭配Adobe Commerce的Varnish快取。 探索連線埠組態和設定需求。
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 1. 備份`default.vcl`：
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 1. 將`.host`的值取代為Varnish _後端_&#x200B;或&#x200B;_原始伺服器_&#x200B;的完整主機名稱或IP位址和接聽連線埠；也就是說，提供內容Varnish的伺服器將會加速。
 
-   通常這是您的網頁伺服器。 請參閱[清漆指南](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)中的&#x200B;_後端伺服器_。
+   通常這是您的網頁伺服器。 請參閱&#x200B;_清漆指南_&#x200B;中的[後端伺服器](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)。
 
 1. 將`.port`的值取代為網頁伺服器的接聽連線埠（此範例中為8080）。
 
@@ -97,13 +97,13 @@ ht-degree: 0%
 
 1. 重新啟動清漆：
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
 如果Varnish無法啟動，請嘗試從命令列執行，如下所示：
 
-```bash
+```shell
 varnishd -d -f /etc/varnish/default.vcl
 ```
 
@@ -121,7 +121,7 @@ varnishd -d -f /etc/varnish/default.vcl
 依照顯示的順序，執行下列各節中討論的工作：
 
 - [開始塗漆](#start-varnish)
-- [&#39;netstat&#39;](#netstat)
+- [`netstat`](#netstat)
 
 ### 開始塗漆
 
@@ -131,7 +131,7 @@ varnishd -d -f /etc/varnish/default.vcl
 
 1. 啟動Varnish CLI：
 
-   ```bash
+   ```shell
    varnishd -d -f /etc/varnish/default.vcl
    ```
 
@@ -141,7 +141,7 @@ varnishd -d -f /etc/varnish/default.vcl
 
    系統會顯示下列訊息，確認啟動成功：
 
-   ```
+   ```text
    child (29805) Started
    200 0
    
@@ -153,13 +153,13 @@ varnishd -d -f /etc/varnish/default.vcl
 
 登入Varnish伺服器並輸入下列命令：
 
-```bash
+```shell
 netstat -tulpn
 ```
 
 請特別尋找下列輸出：
 
-```
+```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -178,7 +178,7 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 安裝Commerce時可能發生錯誤：
 
-```
+```text
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -209,7 +209,7 @@ backend default {
 
 請確定Varnish正在執行，然後在Varnish伺服器上輸入下列命令：
 
-```bash
+```shell
 varnishlog
 ```
 
@@ -217,7 +217,7 @@ varnishlog
 
 命令提示字元視窗中會顯示一長串回應標頭清單。 尋找類似以下內容的標頭：
 
-```
+```text
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -240,19 +240,19 @@ varnishlog
 
 下列範例使用`curl`。 您可以從任何可以使用HTTP存取Commerce伺服器的電腦輸入此命令。
 
-```bash
+```shell
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
 例如，
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 尋找類似以下內容的標頭：
 
-```
+```text
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

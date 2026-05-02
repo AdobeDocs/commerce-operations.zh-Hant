@@ -2,9 +2,9 @@
 title: URN熒光筆
 description: 瞭解如何在IDE中為Adobe Commerce開發設定URN醒目提示。 探索XSD結構描述設定和開發最佳化。
 exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Commerce程式碼會以[統一資源名稱(URN)](https://www.ietf.org/rfc/rfc214
 
 命令語法：
 
-```bash
+```shell
 bin/magento dev:urn-catalog:generate <path>
 ```
 
@@ -41,4 +41,4 @@ bin/magento dev:urn-catalog:generate <path>
 
 >[!INFO]
 >
->若要讓您的「結構描述和DTD」保持最新狀態，請每次新增、修改或移除包含`dev:urn-catalog:generate`檔案的Commerce 2模組時執行`*.xsd`命令。
+>若要讓您的「結構描述和DTD」保持最新狀態，請每次新增、修改或移除包含`*.xsd`檔案的Commerce 2模組時執行`dev:urn-catalog:generate`命令。

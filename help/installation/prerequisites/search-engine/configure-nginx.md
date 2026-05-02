@@ -3,9 +3,9 @@ title: 為您的搜尋引擎設定Nginx
 description: 請依照下列步驟，使用Nginx網頁伺服器設定搜尋引擎，以供Adobe Commerce的內部部署使用。
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4版本新增OpenSearch支援。OpenSearch是Elasticsearch的相容復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
+>2.4.4版本新增OpenSearch支援。 OpenSearch是Elasticsearch的相容復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
 
-本節討論如何將nginx設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與nginx[的](#secure-communication-with-nginx)安全通訊中討論。
+本節討論如何將nginx設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與nginx](#secure-communication-with-nginx)的[安全通訊中討論。
 
 >[!NOTE]
 >
@@ -51,25 +51,25 @@ include /etc/nginx/conf.d/*.conf;
 
 1. 重新啟動nginx：
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 
 1. 輸入下列命令來驗證Proxy是否有效：
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    例如，如果您的Proxy使用連線埠8080：
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    類似下列顯示以指示成功的訊息：
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -87,8 +87,8 @@ include /etc/nginx/conf.d/*.conf;
 
 其他資源：
 
-* [如何在Ubuntu 14.04 (Digital Ocean)上設定Nginx的密碼驗證](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
-* [使用Nginx (HowtoForge)進行基本HTTP驗證](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+* [如何在Ubuntu 14.04 (Digital Ocean)上使用Nginx設定密碼驗證](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+* [使用Nginx進行基本HTTP驗證(HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 * [Elasticsearch的Nginx設定範例](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
 如需詳細資訊，請參閱下列章節：
@@ -106,7 +106,7 @@ include /etc/nginx/conf.d/*.conf;
 
 1. 輸入下列命令以判斷是否已安裝`htpasswd`：
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
@@ -119,11 +119,11 @@ include /etc/nginx/conf.d/*.conf;
 
 1. 建立`/etc/nginx/passwd`目錄以儲存密碼：
 
-   ```bash
+   ```shell
    mkdir -p /etc/nginx/passwd
    ```
 
-   ```bash
+   ```shell
    htpasswd -c /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -131,9 +131,9 @@ include /etc/nginx/conf.d/*.conf;
    >
    >基於安全理由，`<filename>`應該隱藏；也就是說，它必須以句點開頭。
 
-1. *（選擇性）。*&#x200B;若要將其他使用者新增至您的密碼檔案，請輸入相同的命令，但不使用`-c` （建立）選項：
+1. *（選擇性）。* 若要將其他使用者新增至您的密碼檔案，請輸入相同的命令，但不使用`-c` （建立）選項：
 
-   ```bash
+   ```shell
    htpasswd /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -188,7 +188,7 @@ server {
 
 1. 輸入以下命令來建立儲存驗證組態的目錄：
 
-   ```bash
+   ```shell
    mkdir /etc/nginx/auth/
    ```
 
@@ -209,7 +209,7 @@ server {
 1. 如果您設定安全Proxy，請刪除`/etc/nginx/conf.d/magento_es_auth.conf`。
 1. 重新啟動nginx並繼續下一節：
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 

@@ -1,11 +1,11 @@
 ---
 title: 解除安裝主題
-description: 請依照下列步驟解除安裝Adobe Commerce佈景主題。
+description: 瞭解如何在變更前，從命令列解除安裝Adobe Commerce主題，包括撰寫器套件、程式碼移除和備份。
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -16,24 +16,24 @@ ht-degree: 0%
 
 例如，Adobe Commerce提供的Luma主題路徑是`frontend/Magento/luma`。
 
-如需主題的詳細資訊，請參閱[主題結構](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/)。
+如需主題的詳細資訊，請參閱[主題結構](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure)。
 
 ## 解除安裝主題概觀
 
 本節討論如何解除安裝一或多個主題，選擇性地包括檔案系統中的主題程式碼。 您可以先建立備份，以便稍後還原資料。
 
-這個命令只會解除安裝&#x200B;*中指定的*&#x200B;僅`composer.json`個主題；換言之，是提供為Composer套件的主題。 如果您的佈景主題不是Composer套件，則必須透過以下方式手動解除安裝：
+這個命令只會解除安裝`composer.json`中指定的&#x200B;*僅*&#x200B;個主題；換言之，是提供為Composer套件的主題。 如果您的佈景主題不是Composer套件，則必須透過以下方式手動解除安裝：
 
-* 正在更新`parent`中的`theme.xml`節點資訊以移除對主題的參照。
+* 正在更新`theme.xml`中的`parent`節點資訊以移除對主題的參照。
 * 正在從檔案系統移除主題程式碼。
 
-  [主題繼承的詳細資訊](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/)。
+  [主題繼承的詳細資訊](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance)。
 
 ## 解除安裝主題
 
 命令使用方式：
 
-```bash
+```shell
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme path} ... {theme path}
 ```
 
@@ -68,20 +68,20 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 例如，如果您嘗試解除安裝另一個主題所依賴的主題，會顯示以下訊息：
 
-```
+```text
 Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following package(s) depend on it:
         ExampleCorp/sample-module-theme-depend
 ```
 
 另一種選擇是同時解除安裝兩個主題，如備份程式碼基底：
 
-```bash
+```shell
 bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/ExampleCorp/SampleModuleThemeDepend --backup-code
 ```
 
 類似下列顯示的訊息：
 
-```
+```text
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

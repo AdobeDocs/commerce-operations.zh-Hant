@@ -3,9 +3,9 @@ title: 修改docroot以提高安全性
 description: 防止未經授權的瀏覽器架構存取Adobe Commerce內部部署檔案系統。
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -62,14 +62,14 @@ server {
 >
 >如需詳細資訊，請參閱[先決條件](../prerequisites/overview.md)和[安裝指南](../overview.md)。
 
-## 1.編輯伺服器設定
+## &#x200B;1. 編輯您的伺服器設定
 
 虛擬主機檔案的名稱和位置取決於您執行的Apache版本。 此範例顯示Apache v2.4上虛擬主機檔案的名稱和位置。
 
 1. 登入您的應用程式伺服器。
 1. 編輯您的虛擬主機檔案：
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -92,11 +92,11 @@ server {
 
 1. 重新啟動Apache：
 
-   ```bash
+   ```shell
    systemctl restart apache2
    ```
 
-## 2.更新您的基底URL
+## &#x200B;2. 更新您的基底URL
 
 如果您在伺服器主機名稱或IP位址中附加目錄名稱，以便在安裝應用程式（例如`http://192.168.33.10/magento2`）時建立基礎URL，則需要將其移除。
 
@@ -106,7 +106,7 @@ server {
 
 1. 登入資料庫：
 
-   ```bash
+   ```shell
    mysql -u <user> -p
    ```
 
@@ -122,7 +122,7 @@ server {
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
    ```
 
-## 3.更新env.php檔案
+## &#x200B;3. 更新env.php檔案
 
 將下列節點附加至`env.php`檔案。
 
@@ -134,7 +134,7 @@ server {
 
 如需詳細資訊，請參閱[env.php參考](../../configuration/reference/config-reference-envphp.md)。
 
-## 4.切換模式
+## &#x200B;4. 切換模式
 
 [應用程式模式](../../configuration/bootstrap/application-modes.md) （包括`production`和`developer`）的設計目的是為了改善安全性並使開發更容易。 如名稱所建議，您應在擴充或自訂應用程式時切換至`developer`模式，並在即時環境中執行時切換至`production`模式。
 
@@ -143,28 +143,28 @@ server {
 1. 移至您的安裝目錄。
 1. 切換至`production`模式。
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. 重新整理瀏覽器，並確認店面是否正確顯示。
 1. 切換至`developer`模式。
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. 重新整理瀏覽器，並確認店面是否正確顯示。
 
-## 5.確認店面
+## &#x200B;5. 驗證店面
 
 使用網頁瀏覽器前往店面，確認一切都正常運作。
 

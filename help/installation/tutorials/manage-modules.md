@@ -1,10 +1,10 @@
 ---
 title: 啟用或停用模組
-description: 請依照下列步驟管理Adobe Commerce模組。
+description: 瞭解如何使用模組狀態和相關選項，從命令列啟用、停用和檢查Adobe Commerce模組的狀態。
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 使用下列命令列出已啟用和已停用的模組：
 
-```bash
+```shell
 bin/magento module:status [--enabled] [--disabled] <module-list>
 ```
 
@@ -29,17 +29,17 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 >[!NOTE]
 >
->您無法直接在雲端專案上啟用或停用模組。 您必須在本機執行這些命令，然後將變更推送到環境的`app/etc/config.php`檔案。 請參閱[Pro專案工作流程：部署工作流程](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=zh-Hant#deployment-workflow)。
+>您無法直接在雲端專案上啟用或停用模組。 您必須在本機執行這些命令，然後將變更推送到環境的`app/etc/config.php`檔案。 請參閱[Pro專案工作流程：部署工作流程](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow)。
 
 ## 啟用、停用模組
 
 若要啟用或停用可用的模組，請使用下列命令：
 
-```bash
+```shell
 bin/magento module:enable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
 ```
 
-```bash
+```shell
 bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
 ```
 
@@ -56,7 +56,7 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 例如，若要停用`Magento_Weee`模組，請輸入：
 
-```bash
+```shell
 bin/magento module:disable Magento_Weee
 ```
 
@@ -66,13 +66,13 @@ bin/magento module:disable Magento_Weee
 
 如果您啟用一或多個模組，請執行以下命令來更新資料庫：
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
 然後清除快取：
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 
@@ -92,7 +92,7 @@ Adobe Commerce可讓您啟用或停用目前可用的模組；換言之，任何
 
 * 模組A與模組B衝突。您可以停用模組A和模組B，也可以停用任一模組，但您&#x200B;*無法*&#x200B;同時啟用模組A和模組B。
 
-* 相依性在每個模組的Adobe Commerce `require`檔案的`composer.json`欄位中宣告。 在模組`conflict`檔案的`composer.json`欄位中宣告衝突。 我們使用該資訊來建置相依性圖表： `A->B`表示模組A相依於模組B。
+* 相依性在每個模組的Adobe Commerce `composer.json`檔案的`require`欄位中宣告。 在模組`composer.json`檔案的`conflict`欄位中宣告衝突。 我們使用該資訊來建置相依性圖表： `A->B`表示模組A相依於模組B。
 
 * *相依性鏈結*&#x200B;是從模組到另一個模組的路徑。 例如，如果模組A相依於模組B，而模組B相依於模組C，則相依性鏈結為`A->B->C`。
 

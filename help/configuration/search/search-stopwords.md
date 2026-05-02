@@ -3,9 +3,9 @@ title: 設定搜尋停用詞
 description: 瞭解如何使用CSV檔案管理Adobe Commerce的停用詞。
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 如需Elasticsearch和OpenSearch如何使用停用字詞的詳細資訊，請參閱下列資源：
 
 - [停用詞：效能與精確度](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
-- [停用字詞的優點和缺點](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
+- [停用字詞的利弊](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
 - [使用停用詞](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
-- [停用字詞與效能](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
+- [停用字詞和效能](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
 
 ## 設定停用詞
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
    - 命令列：以檔案系統擁有者的身分，輸入下列命令：
 
-     ```bash
+     ```shell
      php <magento_root>/bin/magento cache:clean config
      ```
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 1. 登入您的Commerce伺服器，或切換至[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)。
 
-1. 使用文字編輯器在`stopwords_<locale_code>.csv`目錄中建立名為`<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`的停用字檔案。
+1. 使用文字編輯器在`<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`目錄中建立名為`stopwords_<locale_code>.csv`的停用字檔案。
 
    例如，若要為義大利語言環境建立停用詞，請將檔案命名為`stopwords_it_IT.csv`。
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
    - 命令列：以檔案系統擁有者的身分，輸入下列命令：
 
-     ```bash
+     ```shell
      php <magento_root>/bin/magento magento cache:clean config
      ```
 

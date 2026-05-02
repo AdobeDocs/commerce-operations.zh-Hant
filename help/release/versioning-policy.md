@@ -1,10 +1,10 @@
 ---
 title: 發行原則
-description: 瞭解不同型別的Adobe Commerce發行版本。
+description: 瞭解Adobe Commerce版本型別、行銷與模組版本設定、修補程式和安全性版本、測試版本、Hotfix和整體發行原則。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---

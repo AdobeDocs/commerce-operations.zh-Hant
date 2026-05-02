@@ -5,9 +5,9 @@ feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
 exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -40,7 +40,7 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 1. 建立&#x200B;**[!UICONTROL Cart Price Rule]**、將&#x200B;**[!UICONTROL Coupon]**&#x200B;設為`Specific Coupon`並輸入&#x200B;_TEST1234_&#x200B;作為抵用券代碼。
 1. 建立客戶：
 
-   ```
+   ```graphql
    mutation {
    createCustomer(
        input: {
@@ -63,7 +63,7 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 
 1. 產生客戶權杖。 您可以針對後續請求使用此代號。
 
-   ```
+   ```graphql
    mutation {
    generateCustomerToken(email: "john.doe@example.com", password: "b1b2b3l@w+") {
        token
@@ -73,7 +73,7 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 
 1. 建立空的購物車。 儲存購物車ID並用於後續請求。
 
-   ```
+   ```graphql
    mutation {
        createEmptyCart
    } 
@@ -81,7 +81,7 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 
 1. 將產品新增至購物車：
 
-   ```
+   ```graphql
    mutation {
        addProductsToCart(
            cartId: "xxxx"
@@ -120,7 +120,7 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 
 1. 套用抵用券：
 
-   ```
+   ```graphql
    mutation {
        applyCouponToCart(input: { cart_id: "xxxx", coupon_code: "TEST1234" }) {
            cart {
@@ -154,7 +154,7 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 
 1. 設定送貨地址：
 
-   ```
+   ```graphql
    mutation {
        setShippingAddressesOnCart(
            input: {
@@ -209,7 +209,7 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 
 1. 設定送貨方法：
 
-   ```
+   ```graphql
    mutation {
        setShippingMethodsOnCart(
            input: {
@@ -237,7 +237,7 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 
 1. 設定帳單地址：
 
-   ```
+   ```graphql
    mutation {
        setBillingAddressOnCart(
            input: {
@@ -284,7 +284,7 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 
 1. 設定付款方式：
 
-   ```
+   ```graphql
    mutation {
        setPaymentMethodOnCart(
            input: { cart_id: "xxxx", payment_method: { code: "checkmo" } }
@@ -300,7 +300,7 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 
 1. 下訂單：
 
-   ```
+   ```graphql
    mutation {
    placeOrder(
        input: {
@@ -331,7 +331,7 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 
 `exception.log`包含下列錯誤：
 
-```
+```text
     report.ERROR: "discount_model" value should be specifiedGraphQL (1:135)
     1: mutation { placeOrder(input: {cart_id: "xxxx"}) { orderV2 { total { discounts { amount { currency value } coupon { code } } } } errors { message code } } }
 ```
@@ -340,8 +340,8 @@ ACSD-64431修補程式修正了要求中包含優惠券代碼資訊的`placeOrde
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

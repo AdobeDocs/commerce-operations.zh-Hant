@@ -3,9 +3,9 @@ title: 手動設定主要資料庫
 description: 請參閱手動設定分割資料庫解決方案的指南。
 recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Adobe強烈建議您備份目前的資料庫和檔案系統，以便在程式期
 1. 以或切換到[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)的身份登入您的Commerce伺服器。
 1. 輸入下列命令：
 
-   ```bash
+   ```shell
    magento setup:backup --code --media --db
    ```
 
@@ -70,7 +70,7 @@ Adobe強烈建議您備份目前的資料庫和檔案系統，以便在程式期
 1. 以任何使用者身分登入您的資料庫伺服器。
 1. 輸入下列命令以進入MySQL命令提示字元：
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -93,7 +93,7 @@ Adobe強烈建議您備份目前的資料庫和檔案系統，以便在程式期
 
    報價資料庫：
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
@@ -101,11 +101,11 @@ Adobe強烈建議您備份目前的資料庫和檔案系統，以便在程式期
    exit
    ```
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
-   ```bash
+   ```shell
    mysql -u magento_sales -p
    ```
 
@@ -202,7 +202,7 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 1. 以`root`或管理使用者身分登入您的MySQL資料庫：
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -235,25 +235,25 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 #### 指令碼1
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> sales_bestsellers_aggregated_daily sales_bestsellers_aggregated_monthly sales_bestsellers_aggregated_yearly sales_creditmemo sales_creditmemo_comment sales_creditmemo_grid sales_creditmemo_item sales_invoice sales_invoice_comment sales_invoice_grid sales_invoice_item sales_invoiced_aggregated sales_invoiced_aggregated_order sales_order sales_order_address sales_order_aggregated_created sales_order_aggregated_updated sales_order_grid sales_order_item sales_order_payment sales_order_status sales_order_status_history sales_order_status_label sales_order_status_state sales_order_tax sales_order_tax_item sales_payment_transaction sales_refunded_aggregated sales_refunded_aggregated_order sales_sequence_meta sales_sequence_profile sales_shipment sales_shipment_comment sales_shipment_grid sales_shipment_item sales_shipment_track sales_shipping_aggregated sales_shipping_aggregated_order > /<path>/sales.sql
 ```
 
 #### 指令碼2
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_sales_creditmemo_grid_archive magento_sales_invoice_grid_archive magento_sales_order_grid_archive magento_sales_shipment_grid_archive > /<path>/salesarchive.sql
 ```
 
 #### 指令碼3
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_customercustomattributes_sales_flat_order magento_customercustomattributes_sales_flat_order_address > /<path>/customercustomattributes.sql
 ```
 
 #### 指令碼4
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> sequence_creditmemo_0 sequence_creditmemo_1 sequence_invoice_0 sequence_invoice_1 sequence_order_0 sequence_order_1 sequence_rma_item_0 sequence_rma_item_1 sequence_shipment_0 sequence_shipment_1 > /<path>/sequence.sql
 ```
 
@@ -267,7 +267,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> seque
 
 1. 將資料表從InnoDb轉換成傾印檔案中的NDB型別：
 
-   ```bash
+   ```shell
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
@@ -277,19 +277,19 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> seque
 
 執行以下命令：
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/sales.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/sequence.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/salesarchive.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattributes.sql
 ```
 
@@ -330,7 +330,7 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
 
 1. 以root或管理使用者身分登入MySQL資料庫：
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -351,7 +351,7 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
 
 從命令提示字元執行下列命令：
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_customercustomattributes_sales_flat_quote magento_customercustomattributes_sales_flat_quote_address quote quote_address quote_address_item quote_item quote_item_option quote_payment quote_shipping_rate quote_id_mask > /<path>/quote.sql;
 ```
 
@@ -361,7 +361,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 1. 將資料表從InnoDb轉換成傾印檔案中的NDB型別：
 
-   ```bash
+   ```shell
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
@@ -369,7 +369,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### 將表格還原至報價資料庫
 
-```bash
+```shell
 mysql -u root -p magento_quote < /<path>/quote.sql
 ```
 
@@ -453,7 +453,7 @@ SET foreign_key_checks = 1;
 
 1. 以root或管理使用者身分登入MySQL資料庫：
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -480,7 +480,7 @@ SET foreign_key_checks = 1;
 1. 以或切換到[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)的身份登入您的Commerce伺服器。
 1. 備份您的部署設定：
 
-   ```bash
+   ```shell
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 

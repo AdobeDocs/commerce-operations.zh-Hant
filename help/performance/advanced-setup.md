@@ -2,9 +2,9 @@
 title: 進階設定
 description: 瞭解如何為Adobe Commerce進行進階設定。 探索逐步指示和設定需求。
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: da9ce645d4d32c1368da442d9bd260f5fb3cdb98
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 在處理大量資料時，重新索引可能會成為一個問題。 [!DNL Commerce]團隊選取了載入次數最多的索引並啟用批次索引，這可讓您設定要在每個反複專案上處理的一部分資料。 如此一來，使用者就可以根據資料庫中的資料型別和大小調整批次大小。
 
-若要管理此設定，請在對應模組的`batchRowsCount`檔案中編輯`di.xml`引數。 下列索引支援此功能：
+若要管理此設定，請在對應模組的`di.xml`檔案中編輯`batchRowsCount`引數。 下列索引支援此功能：
 
 * 類別產品索引（目錄模組）
 * 價格索引（目錄模組）
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 您可以調整索引器批次大小變數，以調整索引器效能。 這會控制索引器一次處理多少個實體。 在部分情況下，我們發現索引時間已大幅減少。
 
-例如，如果您執行類似B2B Medium的設定檔，您可以在`batchRowsCount`中覆寫設定值`app/code/Magento/catalog/etc/di.xml`，並覆寫預設值`5000`至`1000`。 這使用預設[!DNL MySQL]設定，將完整索引時間從4小時減少到2小時。
+例如，如果您執行類似B2B Medium的設定檔，您可以在`app/code/Magento/catalog/etc/di.xml`中覆寫設定值`batchRowsCount`，並覆寫預設值`5000`至`1000`。 這使用預設[!DNL MySQL]設定，將完整索引時間從4小時減少到2小時。
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Adobe Commerce支援透過[!DNL RabbitMQ]實作的訊息佇列。 [!DNL Commerce
 
 >[!WARNING]
 >
->Adobe Commerce 2.4.2版中的分割資料庫功能已[棄用](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187)。 請參閱[從分割資料庫還原至單一資料庫](../configuration/storage/revert-split-database.md)。
+>Adobe Commerce 2.4.2版已棄用分割資料庫功能。 請參閱[從分割資料庫還原至單一資料庫](../configuration/storage/revert-split-database.md)。
 
 Adobe Commerce可讓您設定可擴充的資料庫儲存空間，以符合成長中企業的需求。 您可以設定三個獨立的主資料庫，提供特定網域：
 
@@ -68,13 +68,13 @@ Adobe Commerce可讓您設定可擴充的資料庫儲存空間，以符合成長
 
 用於簽出主資料庫
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote
 ```
 
 針對OMS主資料庫
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales
 ```
 
@@ -86,13 +86,13 @@ bin/magento setup:db-schema:split-sales
 
 您可以執行下列命令來新增從屬資料庫：
 
-```bash
+```shell
 bin/magento setup:db-schema:add-slave
 ```
 
 此命令會執行組態變更，但不會設定復寫本身。 這應該以手動方式完成。
 
-分割主資料庫並設定從屬資料庫後，[!DNL Commerce]會自動調整與特定資料庫的連線，根據要求型別(POST、PUT、GET等)和資料資源做出決策。 如果[!DNL Commerce]或其擴充功能對GET要求執行寫入作業，系統會自動將連線從從屬資料庫切換至主資料庫。 它對master資料庫的運作方式相同：當您使用與出庫相關的表格時，系統會將所有查詢重新導向至特定資料庫。 同時，所有與目錄相關的查詢將移至主資料庫。
+分割主資料庫並設定從屬資料庫後，[!DNL Commerce]會自動調整與特定資料庫的連線，根據要求型別（POST、PUT、GET等）和資料資源做出決策。 如果[!DNL Commerce]或其擴充功能對GET要求執行寫入作業，系統會自動將連線從從屬資料庫切換至主資料庫。 它對master資料庫的運作方式相同：當您使用與出庫相關的表格時，系統會將所有查詢重新導向至特定資料庫。 同時，所有與目錄相關的查詢將移至主資料庫。
 
 如需有關設定以及多重主設定/從屬設定的優點之詳細資訊，請參閱
 [分割資料庫效能解決方案](../configuration/storage/multi-master.md)。

@@ -3,9 +3,9 @@ title: 設定Commerce的光漆
 description: 瞭解如何專門為Adobe Commerce應用程式設定Varnish。 探索設定檔更新和管理技術。
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 0%
    | 後端主機 | 輸入完整的主機名稱或IP位址，並接聽Varnish _後端_&#x200B;或&#x200B;_原始伺服器_&#x200B;的連線埠；也就是說，提供內容Varnish的伺服器會加速。 通常這是您的網頁伺服器。 請參閱[清漆快取後端伺服器](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html)。 |
    | 後端連線埠 | 原始伺服器的接聽連線埠。 |
    | 寬限期 | 決定如果後端沒有回應，Varnish提供過時內容的時間長度。 預設值為300秒。 |
-   | 處理引數大小 | 指定全頁快取在[&#x200B; HTTP端點上要處理的](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles)配置控制代碼[`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md)最大數量。 限制大小可以改善安全性和效能。 預設值為100。 |
+   | 處理引數大小 | 指定全頁快取在[`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) HTTP端點上要處理的[配置控制代碼](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles)最大數量。 限制大小可以改善安全性和效能。 預設值為100。 |
 
 1. 按一下&#x200B;**儲存設定**。
 
 您也可以使用C命令列介面工具，從命令列啟動Varnish （而不是登入Admin）：
 
-```bash
+```shell
 bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2
 ```
 
@@ -50,15 +50,15 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
 
 1. 備份您現有的`default.vcl`。 然後將您剛匯出的`varnish.vcl`檔案重新命名為`default.vcl`。 然後將檔案複製到`/etc/varnish/`目錄。
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
    ```
 
-   ```bash
+   ```shell
    mv <download_directory>/varnish.vcl default.vcl
    ```
 
-   ```bash
+   ```shell
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
@@ -76,11 +76,11 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
 
 1. 重新啟動Varnish與您的網頁伺服器：
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 

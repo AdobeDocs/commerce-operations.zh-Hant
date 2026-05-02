@@ -3,9 +3,9 @@ title: '[!DNL Data Migration Tool]技術規格'
 description: 瞭解 [!DNL Data Migration Tool] 的實作詳細資料，以及在Magento 1和Magento 2之間傳輸資料時如何擴充。
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2113'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 系統需求
 
-[的](../../installation/system-requirements.md)系統需求[!DNL Data Migration Tool]與Magento 2相同。
+[!DNL Data Migration Tool]的[系統需求](../../installation/system-requirements.md)與Magento 2相同。
 
 ## 內部結構
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 下圖代表[!DNL Data Migration Tool]的目錄結構：
 
-```
+```shell
 ├── etc                                    --- all configuration files
 │   ├── opensource-to-opensource            --- configuration files for migration from Magento Open Source 1 to Magento Open Source 2
 │   │   ├── 1.9.1.1
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 ## 設定
 
-組態`config.xsd`檔案的結構描述位於`etc/`目錄中。 預設組態檔(`config.xml.dist`)會針對每個Magento 1.x版本建立。它位於`etc/`下的另一個目錄中。
+組態`config.xsd`檔案的結構描述位於`etc/`目錄中。 預設組態檔(`config.xml.dist`)會針對每個Magento 1.x版本建立。 它位於`etc/`下的另一個目錄中。
 
 預設組態檔可以自訂組態檔取代（請參閱[命令語法](migrate-data/overview.md#command-syntax)）。
 
@@ -279,7 +279,7 @@ $this->progress->finish();
 
 ### 完整性檢查
 
-每個步驟都必須檢查資料來源的結構(預設為Magento 1)和資料目的地的結構(Magento 2)是否相容。 如果沒有 — 不相容的實體會顯示錯誤。 如果欄位有不同的資料型別(相同欄位在Magento 1有十進位資料型別，在Magento 2有整數)，則會顯示警告訊息（除非其包含在Map檔案中）。
+每個步驟都必須檢查資料來源的結構（預設為Magento 1）和資料目的地的結構(Magento 2)是否相容。 如果沒有 — 不相容的實體會顯示錯誤。 如果欄位有不同的資料型別（相同欄位在Magento 1有十進位資料型別，在Magento 2有整數），則會顯示警告訊息（除非其包含在Map檔案中）。
 
 ### 資料傳輸
 
@@ -523,7 +523,7 @@ $this->logger->pushProcessor([$this->processor, 'setExtra']);
 
 您可以使用單色格式化程式來格式化記錄訊息。 若要讓格式化程式功能運作，您必須使用`setFormatter()`方法指定記錄處理常式。 目前，我們有一個格式化程式類別(`MessageFormatter`)，在訊息處理期間（透過從處理常式執行的`format()`方法）設定特定格式（取決於詳細程度層級）。
 
-在`process()`類別的`Migration\Logger\Manager`方法中執行以詳細模式操控記錄器（新增處理常式與處理器）與處理。 方法會在應用程式啟動時呼叫。
+在`Migration\Logger\Manager`類別的`process()`方法中執行以詳細模式操控記錄器（新增處理常式與處理器）與處理。 方法會在應用程式啟動時呼叫。
 
 ## 自動測試
 
@@ -535,12 +535,12 @@ $this->logger->pushProcessor([$this->processor, 'setExtra']);
 
 它們位於工具的`tests/`目錄中，與測試型別相同（單元測試位於`tests/unit`目錄中）。 若要啟動測試，您應該已安裝phpunit。 將目前目錄切換到測試目錄並啟動phpunit。 例如：
 
-```bash
+```shell
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]
 $ cd tests/unit
 ```
 
-```bash
+```shell
 [10:33 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool/tests/unit]-[git master]
 $ phpunit
 PHPUnit 8.1.0 by Sebastian Bergmann.

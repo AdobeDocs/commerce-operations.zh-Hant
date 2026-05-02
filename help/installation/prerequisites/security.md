@@ -3,9 +3,9 @@ title: 內部部署安裝安全性
 description: 瞭解改善Adobe Commerce內部部署安裝之安全性狀態的方法。
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -22,23 +22,23 @@ ht-degree: 0%
 
 如果您選擇啟用SELinux，除非您變更某些目錄的&#x200B;*安全性內容*，否則執行安裝程式時可能會發生問題，如下所示：
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/var
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/media
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/static
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 ```
 
@@ -54,7 +54,7 @@ chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 
 1. 若要判斷是否已啟用SELinux，請使用下列指令：
 
-   ```bash
+   ```shell
    getenforce
    ```
 

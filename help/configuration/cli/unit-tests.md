@@ -2,7 +2,7 @@
 title: 執行單元測試
 description: 瞭解如何執行Adobe Commerce程式碼基底中定義的單元測試。 探索測試命令、執行選項和結果報告。
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 - 必須啟用`Magento_Developer`模組。 您可以依照以下方式啟用它：
 
-  ```bash
+  ```shell
   bin/magento module:enable [--force] Magento_Developer
   ```
 
@@ -35,24 +35,24 @@ ht-degree: 0%
 
 命令使用方式：
 
-```bash
+```shell
 bin/magento dev:tests:run <test>
 ```
 
 列出可用的測試型別：
 
-```bash
+```shell
 bin/magento dev:tests:run --help
 ```
 
 範例傳回：
 
-```
+```text
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 
 例如，若要執行整合測試：
 
-```bash
+```shell
 bin/magento dev:tests:run integration
 ```

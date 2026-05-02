@@ -2,9 +2,9 @@
 title: 設定自訂cron作業和cron群組（教學課程）
 description: 瞭解如何使用此Adobe Commerce的逐步教學課程來建立自訂cron作業。 探索模組設定和Cron群組設定。
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 1. 變更至不在Commerce應用程式根目錄中的目錄（例如您的主目錄）。
 1. 複製[`magento2-samples`存放庫](https://github.com/magento/magento2-samples)。
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-samples.git
    ```
 
@@ -43,25 +43,25 @@ ht-degree: 0%
 
 1. 建立要將範常式式碼複製到其中的目錄：
 
-   ```bash
+   ```shell
    mkdir -p /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. 複製範例模組程式碼：
 
-   ```bash
+   ```shell
    cp -r ~/magento2-samples/sample-module-minimal/* /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. 驗證已正確複製檔案：
 
-   ```bash
+   ```shell
    ls -al /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
    您應該會看到下列結果：
 
-   ```
+   ```text
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
    drwxrwsr-x. 121 magento_user apache  4096 Oct 30 13:19 ..
    -rw-rw-r--.   1 magento_user apache   372 Oct 30 13:19 composer.json
@@ -75,13 +75,13 @@ ht-degree: 0%
 
 1. 更新Commerce資料庫和結構：
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. 清除快取：
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -91,13 +91,13 @@ ht-degree: 0%
 
 1. 執行以下命令：
 
-   ```bash
+   ```shell
    bin/magento module:status Magento_SampleMinimal
    ```
 
 1. 確認模組已啟用。
 
-   ```
+   ```text
    Module is enabled
    ```
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 1. 為類別建立目錄，並變更至該目錄：
 
-   ```bash
+   ```shell
    mkdir /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron && cd /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron
    ```
 
@@ -147,7 +147,7 @@ ht-degree: 0%
 
 `crontab.xml`檔案會設定執行自訂cron程式碼的排程。
 
-在`crontab.xml`目錄中建立`/var/www/html/magento2/app/code/Magento/SampleMinimal/etc`，如下所示：
+在`/var/www/html/magento2/app/code/Magento/SampleMinimal/etc`目錄中建立`crontab.xml`，如下所示：
 
 ```xml
 <?xml version="1.0"?>
@@ -181,13 +181,13 @@ ht-degree: 0%
 
 使用下列命令編譯程式碼：
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 並使用以下命令清除快取：
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 
@@ -199,7 +199,7 @@ bin/magento cache:clean
 
 1. 執行Commerce cron工作：
 
-   ```bash
+   ```shell
    bin/magento cron:run
    ```
 
@@ -215,7 +215,7 @@ bin/magento cache:clean
 
       結果應類似下列：
 
-      ```
+      ```text
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       | schedule_id | job_code       | status  | messages | created_at        | scheduled_at        | executed_at         | finished_at     |
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -228,17 +228,17 @@ bin/magento cache:clean
 
 1. （可選）確認訊息已寫入Commerce的系統記錄檔：
 
-   ```bash
+   ```shell
    cat /var/www/html/magento2/var/log/system.log
    ```
 
    您應該會看到一或多個類似以下的專案：
 
-   ```
+   ```text
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
-   這些訊息來自`execute`中的`Test.php`方法：
+   這些訊息來自`Test.php`中的`execute`方法：
 
    ```php
    public function execute() {
@@ -283,7 +283,7 @@ bin/magento cache:clean
 
 1. 執行自訂群組的Commerce cron工作：
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cron:run --group="custom_crongroup"
    ```
 
@@ -291,7 +291,7 @@ bin/magento cache:clean
 
 1. 清除快取：
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cache:clean
    ```
 

@@ -2,9 +2,9 @@
 title: 啟用或停用維護模式
 description: 請依照下列步驟，自訂當您的Adobe Commerce部署因維護而停止時，客戶會看到的內容。
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -30,15 +30,15 @@ Adobe Commerce使用[維護模式](../../configuration/bootstrap/application-mod
 
 命令使用方式：
 
-```bash
+```shell
 bin/magento maintenance:enable [--ip=<ip address> ... --ip=<ip address>] | [ip=none]
 ```
 
-```bash
+```shell
 bin/magento maintenance:disable [--ip=<ip address> ... --ip=<ip address>] | [ip=none]
 ```
 
-```bash
+```shell
 bin/magento maintenance:status
 ```
 
@@ -46,19 +46,19 @@ bin/magento maintenance:status
 
 >[!NOTE]
 >
->搭配`--ip=<ip address>`使用`magento maintenance:disable`可儲存IP清單以供稍後使用。 若要清除劐免IP清單，請使用`magento maintenance:enable --ip=none`或參閱[維護劐免IP位址清單](#maintain-the-list-of-exempt-ip-addresses)。
+>搭配`magento maintenance:disable`使用`--ip=<ip address>`可儲存IP清單以供稍後使用。 若要清除劐免IP清單，請使用`magento maintenance:enable --ip=none`或參閱[維護劐免IP位址清單](#maintain-the-list-of-exempt-ip-addresses)。
 
 `bin/magento maintenance:status`命令會顯示維護模式的狀態。
 
 例如，啟用沒有IP位址劐免的維護模式：
 
-```bash
+```shell
 bin/magento maintenance:enable
 ```
 
 若要為192.0.2.10和192.0.2.11以外的所有使用者端啟用維護模式：
 
-```bash
+```shell
 bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
 ```
 
@@ -69,7 +69,7 @@ bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
 
 若要維護免除IP位址清單，您可以使用上述命令中的`[--ip=<ip list>]`選項，或使用下列選項：
 
-```bash
+```shell
 bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 ```
 

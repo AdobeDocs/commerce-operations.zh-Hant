@@ -3,16 +3,16 @@ title: 避免點選劫持利用漏洞
 description: 使用「X-Frame-Options」標頭控制頁面呈現，以防止點選劫持攻擊。
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # 避免點選劫持利用漏洞
 
-將[X-Frame-Options](https://owasp.org/www-community/attacks/Clickjacking) HTTP要求標頭納入對店面的要求中，以防止[點選劫持](https://datatracker.ietf.org/doc/html/rfc7034)利用。
+將[X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP要求標頭納入對店面的要求中，以防止[點選劫持](https://owasp.org/www-community/attacks/Clickjacking)利用。
 
 `X-Frame-Options`標頭可讓您指定是否允許瀏覽器轉譯`<frame>`、`<iframe>`或`<object>`中的頁面，如下所示：
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ## 實作`X-Frame-Options`
 
-在`X-Frame-Options`中設定`<project-root>/app/etc/env.php`的值。 預設值的設定如下：
+在`<project-root>/app/etc/env.php`中設定`X-Frame-Options`的值。 預設值的設定如下：
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 以下範例使用curl，您可以從任何可以透過HTTP通訊協定連線至您的Commerce伺服器的電腦上執行它。
 
-```bash
+```shell
 curl -I -v --location-trusted '<storefront-URL>'
 ```
 

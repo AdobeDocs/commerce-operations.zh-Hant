@@ -3,9 +3,9 @@ title: 檔案系統存取許可權
 description: 瞭解如何為開發和生產系統設定Commerce應用程式檔案系統的擁有者或擁有者。
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -74,19 +74,19 @@ ht-degree: 0%
 
 1. 變更為生產模式。
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. 移除下列目錄的寫入許可權。
 
-   ```bash
+   ```shell
    find app/code var/view_preprocessed vendor pub/static app/etc generated/code generated/metadata \( -type f -or -type d \) -exec chmod u-w {} + && chmod o-rwx app/etc/env.php
    ```
 
 1. 讓指令行工具可執行。
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
@@ -98,13 +98,13 @@ ht-degree: 0%
 1. 變更至Commerce安裝目錄。
 1. 輸入下列命令：
 
-   ```bash
+   ```shell
    chmod -R u+w .
    ```
 
 ### 選擇性設定`magento_umask`
 
-請參閱[安裝指南](../../installation/next-steps/set-umask.md)中的&#x200B;_選擇性設定umask_。
+請參閱&#x200B;_安裝指南_&#x200B;中的[選擇性設定umask](../../installation/next-steps/set-umask.md)。
 
 ## 私人託管的生產檔案系統所有權（兩個使用者）
 
@@ -139,7 +139,7 @@ ht-degree: 0%
 - `pub/media`
 - `app/etc`
 
-設定目錄上的[`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/)位元，讓許可權一律繼承自父目錄。
+設定目錄上的[`setgid`](https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits)位元，讓許可權一律繼承自父目錄。
 
 >[!INFO]
 >
@@ -154,15 +154,15 @@ ht-degree: 0%
 1. 以檔案系統擁有者的身分登入或切換到您的Commerce伺服器。
 1. 依照顯示的順序輸入下列命令：
 
-   ```bash
+   ```shell
    cd <magento_root>
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
@@ -188,13 +188,13 @@ ht-degree: 0%
 1. 變更至Commerce安裝目錄。
 1. 以檔案系統擁有者的身分，輸入下列命令以變更至生產模式：
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. 以具有`root`許可權的使用者身分輸入下列命令：
 
-   ```bash
+   ```shell
    find app/code lib pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type d -or -type f \) -exec chmod g-w {} + && chmod o-rwx app/etc/env.php
    ```
 
@@ -206,6 +206,6 @@ ht-degree: 0%
 1. 變更至Commerce安裝目錄。
 1. 輸入下列命令：
 
-   ```bash
+   ```shell
    find app/code lib var generated vendor pub/static pub/media app/etc \( -type d -or -type f \) -exec chmod g+w {} + && chmod o+rwx app/etc/env.php
    ```

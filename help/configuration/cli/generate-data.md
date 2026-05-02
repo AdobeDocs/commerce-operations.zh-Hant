@@ -3,9 +3,9 @@ title: 產生效能測試資料
 description: 瞭解如何產生大量資料以進行Adobe Commerce效能測試。 探索資料產生設定檔和測試策略。
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '775'
 ht-degree: 9%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 9%
 
 命令選項：
 
-```bash
+```shell
 bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
@@ -64,13 +64,13 @@ bin/magento setup:perf:generate-fixtures <path-to-profile>
 
 例如，
 
-```bash
+```shell
 bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performance-toolkit/profiles/ce/small.xml
 ```
 
 小型設定檔的範例輸出：
 
-```
+```text
 Generating profile with following params:
     |- Websites: 1
     |- Store Groups Count: 1

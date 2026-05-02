@@ -3,9 +3,9 @@ title: 搜尋引擎設定
 description: 設定Adobe Commerce內部部署的搜尋引擎。
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -16,10 +16,10 @@ ht-degree: 0%
 
 >[!TIP]
 >
->在2.4.4和2.4.3-p2版中，所有標示為&#x200B;**Elasticsearch**&#x200B;的欄位也適用於OpenSearch。
->&#x200B;>當版本2.4.6中引入Elasticsearch 8.x支援時，已建立新標籤以區分Elasticsearch和OpenSearch設定。
+>在2.4.4和2.4.3-p2版中，所有標示為&#x200B;**Elasticsearch**的欄位也適用於OpenSearch。
+>當版本2.4.6中引入Elasticsearch 8.x支援時，已建立新標籤以區分Elasticsearch和OpenSearch設定。
 
-如需設定搜尋引擎的詳細資訊，請參閱[使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=zh-Hant)。
+如需設定搜尋引擎的詳細資訊，請參閱[使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html)。
 
 ## 從管理員設定搜尋引擎
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
    | 選項 | 說明 |
    |--- |--- |
-   | **[!UICONTROL Server Hostname]** | 輸入執行Elasticsearch或OpenSearch之電腦的完整主機名稱或IP位址。雲端基礎結構上的<br>Adobe Commerce：從您的整合系統取得此值。 |
+   | **[!UICONTROL Server Hostname]** | 輸入在雲端基礎結構上執行Elasticsearch或OpenSearch之電腦的完整主機名稱或IP位址。<br>Adobe Commerce：從您的整合系統取得此值。 |
    | **[!UICONTROL Server Port]** | 輸入Web伺服器Proxy連線埠。 雲端基礎結構上的預設值為9200<br>Adobe Commerce：從您的整合系統中取得此值。 |
    | **[!UICONTROL Index Prefix]** | 輸入搜尋引擎索引前置詞。 如果您將單一執行個體用於多個Commerce安裝（測試和生產環境），則必須為每次安裝指定唯一的前置詞。 否則，您可以使用預設首碼magento2。 |
    | **[!UICONTROL Enable HTTP Auth]** | 只有在您已啟用搜尋引擎伺服器的驗證時，才按一下&#x200B;**[!UICONTROL Yes]**。 若是如此，請在提供的欄位中提供使用者名稱和密碼。 |
@@ -69,13 +69,13 @@ ht-degree: 0%
 
   例如，若要檢視搜尋引擎是否在其預設連線埠上執行，請使用下列命令：
 
-  ```bash
+  ```shell
   netstat -an | grep 9200
   ```
 
   如果是在連線埠9200上執行，則會顯示類似下列的內容：
 
-  ```
+  ```text
   `tcp        0      0 :::9200            :::-         LISTEN`
   ```
 
@@ -100,13 +100,13 @@ ht-degree: 0%
 
    輸入以下命令，只將目錄搜尋索引重新編列索引：
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
    輸入下列命令以重新索引所有索引子：
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex
    ```
 

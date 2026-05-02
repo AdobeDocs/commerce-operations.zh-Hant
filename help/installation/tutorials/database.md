@@ -2,7 +2,7 @@
 title: 建立資料庫綱要
 description: 請依照下列步驟，為您的Adobe Commerce專案建立資料庫。
 exl-id: 860c9918-44c4-4ef1-88a5-12614566307c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '49'
 ht-degree: 0%
@@ -17,12 +17,12 @@ ht-degree: 0%
 
 命令使用方式：
 
-```bash
+```shell
 bin/magento setup:db-schema:upgrade
 ```
 
 若要檢視資料庫的狀態，請輸入
 
-```bash
+```shell
 bin/magento setup:db:status
 ```

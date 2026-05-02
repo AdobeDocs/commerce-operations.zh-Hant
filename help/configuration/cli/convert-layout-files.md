@@ -2,9 +2,9 @@
 title: 轉換版面檔案
 description: 瞭解如何使用Adobe Commerce命令列工具轉換XML配置檔案。 探索XSLT樣式表更新和檔案轉換程式。
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 如果您更新對應的可延伸樣式表語言轉換(XSLT)樣式表，請使用此指令來更新版面XML檔案。
 
-- [配置指示](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
-- [配置檔案型別](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
+- [配置指示](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions)
+- [配置檔案型別](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-files-types-and-conventions)
 
 命令選項：
 
-```bash
+```shell
 bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
 ```
 

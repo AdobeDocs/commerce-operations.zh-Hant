@@ -3,9 +3,9 @@ title: 設定 [!DNL Data Migration Tool]
 description: 瞭解設定 [!DNL Data Migration Tool] 在Magento 1和Magento 2之間傳輸資料的兩種方法。
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 有兩種方法可設定[!DNL Data Migration Tool]：
 
 * 在個別模組中設定[!DNL Data Migration Tool] （建議）
-* 變更[!DNL Data Migration Tool]目錄中的`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/`組態。
+* 變更`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/`目錄中的[!DNL Data Migration Tool]組態。
 
 若要使用原始檔控制來管理您的移轉設定並用於部署，您必須建立個別的模組。
 如果您只打算在本機執行[!DNL Data Migration Tool]，可以直接編輯`<your Magento 2 install dir>/vendor/magento/data-migration-tool/`目錄中的檔案。
@@ -96,11 +96,11 @@ ht-degree: 0%
 
    例如，如果您將`Magento 1.9.3.6 Community Edition`移轉至`Magento 2 Open Source`：
 
-   ```bash
+   ```shell
    cd <your Magento 2 install dir>
    ```
 
-   ```bash
+   ```shell
    cp vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.6/config.xml.dist app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.3.6/config.xml
    ```
 
@@ -118,13 +118,13 @@ ht-degree: 0%
 
 1. 變更至下列目錄：
 
-   ```bash
+   ```shell
    <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>
    ```
 
 1. 輸入下列命令，從提供的範例建立`config.xml`：
 
-   ```bash
+   ```shell
    cp config.xml.dist config.xml
    ```
 
@@ -152,7 +152,7 @@ ht-degree: 0%
    * 資料庫自訂連線埠： `port=<port>`
    * 資料表首碼： `<source_prefix>`， `<dest_prefix>`
 
-   例如，如果您的資料庫擁有者使用者名稱是密碼為`root`的`pass`，而您在Magento 1資料庫中使用前置詞`magento1`，請在`config.xml`中使用下列專案：
+   例如，如果您的資料庫擁有者使用者名稱是密碼為`pass`的`root`，而您在Magento 1資料庫中使用前置詞`magento1`，請在`config.xml`中使用下列專案：
 
    ```xml
    <source>
@@ -206,9 +206,9 @@ ht-degree: 0%
 
 1. 將它們從`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/`複製到`<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/`並移除`.dist`副檔名。
 
-1. 更新`<options>`的`config.xml`節點中新複製的檔案的路徑。 更新的路徑應為下列其中一項：
+1. 更新`config.xml`的`<options>`節點中新複製的檔案的路徑。 更新的路徑應為下列其中一項：
 
-   1. 絕對檔案路徑，例如`/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. 絕對檔案路徑，例如 g. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. magento/data-migration-tool模組相對檔案路徑： `etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. Magento根目錄相對檔案路徑： `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 

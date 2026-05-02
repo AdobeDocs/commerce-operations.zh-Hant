@@ -1,10 +1,10 @@
 ---
 title: 取得Adobe Commerce軟體
-description: 瞭解如何下載Adobe Commerce軟體。
+description: 瞭解如何使用Composer取得Adobe Commerce軟體、檢查擴充功能相容性，以及選擇正確的散發方式以進行安裝。
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## 如何取得軟體
 
-請檢視我們的[產品可用性頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)，瞭解適用於Adobe Commerce和Magento Open Source的Adobe編寫擴充功能與Commerce服務的可用性及相容性。
+請檢視我們的[產品可用性頁面](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)，瞭解適用於Adobe Commerce和Magento Open Source的Adobe編寫擴充功能與Commerce服務的可用性及相容性。
 
 >[!NOTE]
 >
 >由於原則變更，Adobe Commerce程式碼基底現在只能透過Composer發佈。 使用Composer可下載任何列出的Adobe Commerce版本，因為下載區段已不提供程式碼基底。
 >
->如需詳細資訊，請參閱[無法存取帳單帳單和下載雲端基礎結構上Adobe Commerce的程式碼基底](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>如需詳細資訊，請參閱[無法存取帳單帳單和下載雲端基礎結構上Adobe Commerce的程式碼基底](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 請參閱下表，瞭解如何開始安裝Adobe Commerce。
 

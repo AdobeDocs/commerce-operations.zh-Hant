@@ -4,13 +4,13 @@ description: 套用ACSD-66889修補程式，修正在執行詳細目錄索引器
 feature: Inventory
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9631e0864b2ad8fc09734aedd476e96852cd70fb
+exl-id: 289bd211-99f5-489e-9005-58c711ef128e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66889：在CLI中重新索引清查時發生錯誤
 
@@ -28,7 +28,7 @@ ACSD-66889修補程式修正了執行清查索引器時發生的錯誤。 安裝
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -38,7 +38,7 @@ ACSD-66889修補程式修正了執行清查索引器時發生的錯誤。 安裝
 
 1. 使用CLI命令執行清查重新索引：
 
-   ```
+   ```shell
    php bin/magento indexer:reindex inventory
    ```
 
@@ -50,7 +50,7 @@ CLI已成功重建清查索引器。
 
 CLI擲回已棄用的功能錯誤，且詳細目錄索引保持在&#x200B;*需要重新索引*&#x200B;狀態：
 
-```
+```shell
 Deprecated Functionality: Using ${var} in strings is deprecated, use {$var} instead in /home/vendor/magento/module-elasticsearch-catalog-permissions/Model/Adapter/FieldMapper/Product/FieldProvider/FieldName/Resolver/CategoryPermission.php on line 24
 ```
 
@@ -58,8 +58,8 @@ Deprecated Functionality: Using ${var} in strings is deprecated, use {$var} inst
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 

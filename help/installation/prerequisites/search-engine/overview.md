@@ -3,9 +3,9 @@ title: 搜尋引擎必要條件
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝來安裝和設定支援的搜尋引擎軟體。
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->2.4.4版本新增OpenSearch支援。OpenSearch是Elasticsearch的相容復本。 設定Elasticsearch 7的所有指示均適用於OpenSearch。 [從Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)提供切換至OpenSearch的指引。
+>2.4.4版本新增OpenSearch支援。 OpenSearch是Elasticsearch的相容復本。 設定Elasticsearch 7的所有指示均適用於OpenSearch。 [從Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)提供切換至OpenSearch的指引。
 
 ## 支援的版本
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 * Commerce應用程式和搜尋引擎會安裝在不同的主機上。
 
-  在個別主機上執行需要代理程式才能運作。 (搜尋引擎叢集不在本指南的涵蓋範圍內，但您可以在[Elasticsearch叢集檔案](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html)中找到更多資訊。)
+  在個別主機上執行需要代理程式才能運作。 （搜尋引擎叢集不在本指南的涵蓋範圍內，但您可以在[Elasticsearch叢集檔案](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html)中找到更多資訊。）
 
 * 每個主機都有自己的網頁伺服器；網頁伺服器不一定要相同。
 
@@ -85,13 +85,13 @@ ht-degree: 0%
 * [iptables操作說明](https://help.ubuntu.com/community/IptablesHowTo)
 * [如何編輯iptables規則（fedora專案）](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
 * [SELinux簡介(CentOS.org)](https://www.centos.org)
-* [SELinux How-To Wiki (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
+* [SELinux操作說明Wiki (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
 
 ### 安裝Java Software Development Kit
 
 若要判斷是否已安裝Java，請輸入下列命令：
 
-```bash
+```shell
 java -version
 ```
 
@@ -108,7 +108,7 @@ java -version
 
 請務必安裝JDK，並&#x200B;*不* JRE。
 
-```bash
+```shell
 yum -y install java-1.8.0-openjdk
 ```
 
@@ -120,11 +120,11 @@ yum -y install java-1.8.0-openjdk
 
 若要在Ubuntu上安裝JDK 1.8，請以具有`root`許可權的使用者身分輸入下列命令：
 
-```bash
+```shell
 apt-get -y update
 ```
 
-```bash
+```shell
 apt-get install -y openjdk-8-jdk
 ```
 
@@ -136,24 +136,24 @@ apt-get install -y openjdk-8-jdk
 
 若要驗證Elasticsearch是否正常運作，請在執行它的伺服器上輸入下列命令：
 
-```bash
+```shell
 curl -XGET '<host>:9200/_cat/health?v&pretty'
 ```
 
 系統會顯示類似下列的訊息：
 
-```
+```text
 epoch      timestamp cluster       status node.total node.data shards pri relo init unassign pending_tasks
 1519701563 03:19:23  elasticsearch green           1         1      0   0    0    0        0             0
 ```
 
 若要確認OpenSearch是否正常運作，請輸入下列命令：
 
-```bash
+```shell
 curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 ```
 
-```bash
+```shell
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 

@@ -2,9 +2,9 @@
 title: GraphQL應用程式伺服器
 description: 瞭解Adobe Commerce中的graphql應用程式伺服器。 探索實作指引和最佳化策略。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2464'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL應用程式伺服器可讓Adobe Commerce維護Commerce GraphQL API請求中的狀態。 GraphQL Application Server （以Swoole擴充功能為基礎）會以具有工作者執行緒的處理程式方式運作，以處理要求處理。 GraphQL Application Server可保留GraphQL API請求中的啟動載入應用程式狀態，藉此增強請求處理和整體產品效能。 API要求會大幅提高效率。
 
-GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
+GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ GraphQL應用程式伺服器可讓Adobe Commerce在連續的Commerce GraphQL API
 
 ### 雲端專案
 
-根據預設，雲端基礎結構專案上的Adobe Commerce包含Swoole擴充功能。 您可以在[檔案的](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)屬性中`runtime`啟用`.magento.app.yaml`。 例如：
+根據預設，雲端基礎結構專案上的Adobe Commerce包含Swoole擴充功能。 您可以在`.magento.app.yaml`檔案的`runtime`屬性中[啟用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)。 例如：
 
 ```yaml
 runtime:
@@ -85,19 +85,19 @@ runtime:
 
 1. 執行下列命令，確定`/application-server/start.sh`是可執行的命令：
 
-   ```bash
+   ```shell
    chmod +x application-server/start.sh
    ```
 
 1. 使用以下命令將更新的檔案新增到Git索引：
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml application-server/*
    ```
 
 1. 使用此命令提交您的變更：
 
-   ```bash
+   ```shell
    git commit -m "AppServer Enabled"
    ```
 
@@ -105,7 +105,7 @@ runtime:
 
 完成啟用步驟後，將變更推送至您的Git存放庫以部署GraphQL應用程式伺服器：
 
-```bash
+```shell
 git push
 ```
 
@@ -126,7 +126,7 @@ git push
        upstream: "application-server:http"
    ```
 
-1. 取消註解`files`檔案中的`.magento/services.yaml`區段。
+1. 取消註解`.magento/services.yaml`檔案中的`files`區段。
 
    ```yaml
    files:
@@ -134,7 +134,7 @@ git push
        disk: 5120
    ```
 
-1. 取消註解`TEMPORARY SHARED MOUNTS`檔案中裝載組態的`.magento.app.yaml`部分。
+1. 取消註解`.magento.app.yaml`檔案中裝載組態的`TEMPORARY SHARED MOUNTS`部分。
 
    ```yaml
    "var_shared":
@@ -157,33 +157,33 @@ git push
 
 1. 將更新的檔案新增至Git索引：
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml .magento/routes.yaml .magento/services.yaml application-server/.magento/*
    ```
 
 1. 提交您的變更並推送以觸發部署：
 
-   ```bash
+   ```shell
    git commit -m "Enabling AppServer: initial changes"
    git push
    ```
 
 1. 使用SSH登入遠端雲端環境（_不是_ `application-server`應用程式）：
 
-   ```bash
+   ```shell
    magento-cloud ssh -p <project-ID> -e <environment-ID>
    ```
 
 1. 將資料從本機掛載同步到共用掛載：
 
-   ```bash
+   ```shell
    rsync -avz var/* var_shared/
    rsync -avz app/etc/* app/etc_shared/
    rsync -avz pub/media/* pub/media_shared/
    rsync -avz pub/static/* pub/static_shared/
    ```
 
-1. 註解`DEFAULT MOUNTS`檔案中裝載組態的`TEMPORARY SHARED MOUNTS`和`.magento.app.yaml`部分。
+1. 註解`.magento.app.yaml`檔案中裝載組態的`DEFAULT MOUNTS`和`TEMPORARY SHARED MOUNTS`部分。
 
    ```yaml
    #"var": "shared:files/var"
@@ -209,7 +209,7 @@ git push
    #    source_path: "static"
    ```
 
-1. 取消註解`OLD LOCAL MOUNTS`檔案中裝載組態的`SHARED MOUNTS`和`.magento.app.yaml`部分。
+1. 取消註解`.magento.app.yaml`檔案中裝載組態的`OLD LOCAL MOUNTS`和`SHARED MOUNTS`部分。
 
    ```yaml
    "var_old": "shared:files/var"
@@ -237,7 +237,7 @@ git push
 
 1. 將更新的檔案新增到Git索引、認可變更並推播以觸發部署：
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml
    git commit -m "Enabling AppServer: switch mounts"
    git push
@@ -247,14 +247,14 @@ git push
 
 1. 清理舊的本機掛載：
 
-   ```bash
+   ```shell
    rm -rf var_old/*
    rm -rf app/etc_old/*
    rm -rf pub/media_old/*
    rm -rf pub/static_old/*
    ```
 
-1. 註解`OLD LOCAL MOUNTS`檔案中裝載組態的`.magento.app.yaml`部分。
+1. 註解`.magento.app.yaml`檔案中裝載組態的`OLD LOCAL MOUNTS`部分。
 
    ```yaml
    #"var_old": "shared:files/var"
@@ -265,7 +265,7 @@ git push
 
 1. 將更新的檔案新增到Git索引、認可變更並推播以觸發部署：
 
-   ```bash
+   ```shell
    git add -f .magento.app.yaml
    git commit -m "Enabling AppServer: finish"
    git push
@@ -273,13 +273,13 @@ git push
 
 >[!NOTE]
 >
->確定您的根`.magento.app.yaml`檔案中的所有自訂設定都已適當地移轉至`application-server/.magento/.magento.app.yaml`檔案。 將`application-server/.magento/.magento.app.yaml`檔案新增至專案後，除了根`.magento.app.yaml`檔案之外，您還應維護該檔案。 例如，如果您需要[設定RabbitMQ服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)或[管理Web屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)，您也應該將相同的設定新增到`application-server/.magento/.magento.app.yaml`。
+>確定您的根`.magento.app.yaml`檔案中的所有自訂設定都已適當地移轉至`application-server/.magento/.magento.app.yaml`檔案。 將`application-server/.magento/.magento.app.yaml`檔案新增至專案後，除了根`.magento.app.yaml`檔案之外，您還應維護該檔案。 例如，如果您需要[設定RabbitMQ服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)或[管理Web屬性](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)，您也應該將相同的設定新增到`application-server/.magento/.magento.app.yaml`。
 
 ### 驗證雲端專案是否啟用
 
 1. 對您的執行個體執行GraphQL查詢或突變，以確認`graphql`端點可存取。 例如：
 
-   ```
+   ```graphql
    mutation {  
     createEmptyCart
    }
@@ -299,7 +299,7 @@ git push
 
 1. 您也可以執行下列命令，檢查GraphQL Application Server是否正在執行：
 
-   ```bash
+   ```shell
    ps aux|grep php
    ```
 
@@ -341,7 +341,7 @@ location /graphql {
 
 下列程式說明如何在OSX系統上安裝PHP 8.2的Swoole擴充功能。 這是安裝Swoole擴充功能的數種方式之一。
 
-```bash
+```shell
 pecl install swoole
 ```
 
@@ -351,7 +351,7 @@ pecl install swoole
 
 確認擴充功能已成功啟用：
 
-```bash
+```shell
 php -m | grep swoole
 ```
 
@@ -361,7 +361,7 @@ php -m | grep swoole
 
 * 執行，以檢查`openssl`的位置：
 
-```bash
+```shell
 openssl version -d
 ```
 
@@ -369,17 +369,17 @@ openssl version -d
 
 * 執行，以檢查`pcre2`的位置：
 
-```bash
+```shell
 pcre2-config --prefix 
 ```
 
 如果命令輸出指出遺失檔案，請使用Homebrew安裝遺失的套件：
 
-```bash
+```shell
 brew install openssl
 ```
 
-```bash
+```shell
 brew install pcre2
 ```
 
@@ -387,7 +387,7 @@ brew install pcre2
 
 若要解決與`openssl`相關的問題，請執行：
 
-```bash
+```shell
 export LDFLAGS="-L/opt/homebrew/etc/openssl@3/lib" export CPPFLAGS="-I/opt/homebrew/etc/openssl@3/include"
 ```
 
@@ -397,7 +397,7 @@ export LDFLAGS="-L/opt/homebrew/etc/openssl@3/lib" export CPPFLAGS="-I/opt/homeb
 
 您可以再次執行以下命令，以檢查是否已解決與openssl相關的問題：
 
-```bash
+```shell
 pecl install swoole
 ```
 
@@ -409,7 +409,7 @@ pecl install swoole
 
 啟動GraphQL應用程式伺服器：
 
-```bash
+```shell
 bin/magento server:run
 ```
 
@@ -417,7 +417,7 @@ bin/magento server:run
 
 若要確認GraphQL Application Server正在您的部署中執行：
 
-```bash
+```shell
 ps aux | grep php
 ```
 
@@ -428,7 +428,7 @@ ps aux | grep php
 
 ### 確認正在處理GraphQL請求
 
-GraphQL Application Server將值為`X-Backend`的`graphql_server`回應標頭新增至其處理的每個要求。 若要檢查GraphQL應用程式伺服器是否已處理請求，請檢查此回應標頭。
+GraphQL Application Server將值為`graphql_server`的`X-Backend`回應標頭新增至其處理的每個要求。 若要檢查GraphQL應用程式伺服器是否已處理請求，請檢查此回應標頭。
 
 ### 確認擴充功能和自訂相容性
 
@@ -449,19 +449,19 @@ GraphQL Application Server將值為`X-Backend`的`graphql_server`回應標頭新
 
 1. 使用此命令確認您的變更：
 
-   ```bash
+   ```shell
    git commit -m "AppServer Disabled"
    ```
 
 1. 使用此命令部署這些變更：
 
-   ```bash
+   ```shell
    git push
    ```
 
 ### 停用GraphQL應用程式伺服器（內部部署）
 
-1. 請註解您在啟用GraphQL應用程式伺服器時新增的`/graphql`檔案的`nginx.conf`區段。
+1. 請註解您在啟用GraphQL應用程式伺服器時新增的`nginx.conf`檔案的`/graphql`區段。
 1. 重新啟動nginx。
 
 此停用GraphQL應用程式伺服器的方法有助於快速測試或比較效能。
@@ -493,7 +493,7 @@ GraphQL Application Server將值為`X-Backend`的`graphql_server`回應標頭新
 
 * **在初始化訊息**&#x200B;之前，不能存取Typed屬性$x。 這類訊息的失敗表示建構函式尚未初始化指定的屬性。 這是暫時耦合的形式，因為物件在初始建構後就無法使用。 即使屬性是私有的，也會發生這種耦合，因為從屬性中擷取資料的收集器正在使用PHP反射特徵。 在這種情況下，請嘗試重構類別以避免暫時耦合併避免可變狀態。 如果該重構無法解決失敗，您可以將屬性型別變更為空型別，以便將其初始化為空值。  如果屬性是陣列，請嘗試將屬性初始化為空陣列。
 
-執行`GraphQlStateTest`以執行`vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php`。
+執行`vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/GraphQl/App/GraphQlStateTest.php`以執行`GraphQlStateTest`。
 
 ### ResetAfterRequestTest
 
@@ -505,7 +505,7 @@ GraphQL Application Server將值為`X-Backend`的`graphql_server`回應標頭新
 
 * **在初始化訊息**&#x200B;之前，不能存取Typed屬性$x。 `GraphQlStateTest`也會發生此問題。
 
-  執行`ResetAfterRequestTest`以執行`vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php`。
+  執行`vendor/bin/phpunit -c $(pwd)/dev/tests/integration/phpunit.xml dev/tests/integration/testsuite/Magento/Framework/ObjectManager/ResetAfterRequestTest.php`以執行`ResetAfterRequestTest`。
 
 ### 功能測試
 
@@ -515,7 +515,7 @@ GraphQL Application Server將值為`X-Backend`的`graphql_server`回應標頭新
 
 執行功能測試（或手動測試）時，GraphQL Application Server可在啟用`--state-monitor mode`的情況下執行，以協助尋找無意中重複使用狀態的類別。 正常啟動應用程式伺服器，但新增`--state-monitor`引數除外。
 
-```
+```shell
 bin/magento server:run --state-monitor
 ```
 
@@ -523,7 +523,7 @@ bin/magento server:run --state-monitor
 
 範例：
 
-```
+```text
 /var/workspace/var/tmp/StateMonitor-json-2024-04-10T18:50:39Z-hW0ucN.json
 /var/workspace/var/tmp/StateMonitor-junit-2024-04-10T18:50:39Z-oreUco.xml
 ```
@@ -540,9 +540,9 @@ bin/magento server:run --state-monitor
 
 ## 設定使用者端IP偵測的alternativeHeaders
 
-依預設，GraphQL Application Server支援`x-forwarded-for`檔案中定義之`app/etc/di.xml`標頭的標準設定，可在一般Proxy和CDN環境中精確擷取使用者端IP位址。
+依預設，GraphQL Application Server支援`app/etc/di.xml`檔案中定義之`x-forwarded-for`標頭的標準設定，可在一般Proxy和CDN環境中精確擷取使用者端IP位址。
 
-如果您需要支援其他或自訂標頭（例如`x-client-ip`、`fastly-client-ip`或`x-real-ip`），您可以擴充或覆寫`alternativeHeaders`檔案中的`app/etc/di.xml`引數。 只有在您的環境使用`x-forwarded-for`以外的標頭來傳遞使用者端IP位址時，才需要這樣做。
+如果您需要支援其他或自訂標頭（例如`x-client-ip`、`fastly-client-ip`或`x-real-ip`），您可以擴充或覆寫`app/etc/di.xml`檔案中的`alternativeHeaders`引數。 只有在您的環境使用`x-forwarded-for`以外的標頭來傳遞使用者端IP位址時，才需要這樣做。
 
 例如，若要新增對其他標頭的支援，請依照以下方式更新您的`app/etc/di.xml`：
 

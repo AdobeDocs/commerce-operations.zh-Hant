@@ -2,9 +2,9 @@
 title: 常用命令
 description: 瞭解常見的Adobe Commerce CLI命令及其使用範例。 探索開發和管理所需的基本命令列工具。
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 **若要顯示完整的命令清單**：
 
-```bash
+```shell
 bin/magento list
 ```
 
 說明命令範例：
 
-```bash
+```shell
 bin/magento help <command>
 ```
 
-```bash
+```shell
 bin/magento help cache:enable
 ```
 
@@ -47,7 +47,7 @@ bin/magento help cache:enable
 | [`magento sampledata:install`](../../installation/sample-data/overview.md) | 安裝Commerce應用程式後，安裝選用的範例資料。<br><br>如需範例資料的詳細資訊，請參閱[選用範例資料](../../installation/sample-data/overview.md)。 |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | 管理後端設定 |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | 建立/編輯/解除鎖定管理員使用者。 |
-| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | 啟用/停用開發人員範本提示。 |
+| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug) | 啟用/停用開發人員範本提示。 |
 
 ## 通用引數
 

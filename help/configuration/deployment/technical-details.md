@@ -2,9 +2,9 @@
 title: 技術細節
 description: 閱讀有關管道部署的技術細節、設定型別和建議的工作流程。
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,13 @@ ht-degree: 0%
 
 共用組態儲存在`app/etc/config.php`中，應該是在原始檔控制中。
 
-在開發中的管理員(或雲端基礎結構&#x200B;_整合_&#x200B;上的Adobe Commerce)系統中設定共用設定，並使用`config.php`命令[`magento app:config:dump`將設定寫入](../cli/export-configuration.md)。
+在開發中的管理員（或雲端基礎結構&#x200B;_整合_&#x200B;上的Adobe Commerce）系統中設定共用設定，並使用[`magento app:config:dump`命令](../cli/export-configuration.md)將設定寫入`config.php`。
 
 ### 管理系統特定設定
 
 系統特定組態儲存在`app/etc/env.php`中，它應該&#x200B;_不_&#x200B;在原始檔控制中。
 
-在您的開發(或雲端基礎結構整合上的Adobe Commerce)系統中，於Admin中設定系統專屬設定，並使用`env.php`命令[`magento app:config:dump`將設定寫入](../cli/export-configuration.md)。
+在您的開發（或雲端基礎結構整合上的Adobe Commerce）系統中，於Admin中設定系統專屬設定，並使用[`magento app:config:dump`命令](../cli/export-configuration.md)將設定寫入`env.php`。
 
 這個命令也會將敏感設定寫入`env.php`。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 您可以透過下列任何方式管理敏感設定：
 
 - 環境變數
-- 使用`env.php`命令[`magento config:set:sensitive`將敏感設定儲存在生產系統上的](../cli/set-configuration-values.md)中
+- 使用[`magento config:set:sensitive`命令](../cli/set-configuration-values.md)將敏感設定儲存在生產系統上的`env.php`中
 
 ### 在Admin中鎖定的組態設定
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
   建議您先進行這些變更，然後再切換至生產模式。
 
-  您仍然可以使用環境變數或路徑為`config:set`的`general/locale/code` CLI命令來設定地區設定。
+  您仍然可以使用環境變數或路徑為`general/locale/code`的`config:set` CLI命令來設定地區設定。
 
 ## 安裝和移除cron
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 1. 若要在開發期間移除產生的php程式碼和靜態資產檔案，請執行以下命令：
 
-   ```bash
+   ```shell
    rm -r var/view_preprocessed/*
    rm -r pub/static/*/*
    rm -r generated/*/*
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->請謹慎使用上述方法。 刪除`.htacces`或`generated`資料夾中的`pub`檔案可能會導致問題。
+>請謹慎使用上述方法。 刪除`generated`或`pub`資料夾中的`.htacces`檔案可能會導致問題。
 
 ### 建置系統
 
@@ -178,9 +178,9 @@ ht-degree: 0%
 
 ### 變更預設地區設定
 
-此區段顯示當您使用管理員（`config.php`商店&#x200B;**>設定>**&#x200B;組態&#x200B;**>一般>**&#x200B;一般&#x200B;**>**&#x200B;地區設定選項&#x200B;**）變更預設權重單位時對**&#x200B;所做的變更。
+此區段顯示當您使用管理員（**商店** >設定> **組態** >一般> **一般** > **地區設定選項**）變更預設權重單位時對`config.php`所做的變更。
 
-在管理員中進行變更後，請執行`bin/magento app:config:dump`將值寫入`config.php`。 值會寫入`general`下的`locale`陣列，因為`config.php`中的下列程式碼片段顯示：
+在管理員中進行變更後，請執行`bin/magento app:config:dump`將值寫入`config.php`。 值會寫入`locale`下的`general`陣列，因為`config.php`中的下列程式碼片段顯示：
 
 ```php
 'general' =>
@@ -287,10 +287,10 @@ ht-degree: 0%
 
 PayPal設定不會寫入這兩個檔案，因為`bin/magento app:config:dump`命令不會寫入敏感性設定。 您必須使用下列命令在生產系統上設定PayPal設定：
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_username <username>
 ```
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_password <password>
 ```

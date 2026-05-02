@@ -1,10 +1,10 @@
 ---
 title: 解除安裝模組
-description: 請依照下列步驟解除安裝Adobe Commerce模組。
+description: 瞭解如何透過選擇性移除程式碼、結構描述和資料來解除安裝Adobe Commerce模組，以及何時停用模組而非解除安裝。
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->這個命令只會檢查在`composer.json`檔案中宣告的相依性。 如果您解除安裝在&#x200B;_檔案中定義為_&#x200B;非`composer.json`的模組，這個命令會解除安裝模組而不檢查相依性。 這個命令&#x200B;_不_，但是請從檔案系統移除模組的程式碼。 您必須使用檔案系統工具來移除模組的程式碼（例如，`rm -rf <path to module>`）。 或者，您可以[停用](manage-modules.md)非撰寫器模組。
+>這個命令只會檢查在`composer.json`檔案中宣告的相依性。 如果您解除安裝在`composer.json`檔案中定義為&#x200B;_非_&#x200B;的模組，這個命令會解除安裝模組而不檢查相依性。 這個命令&#x200B;_不_，但是請從檔案系統移除模組的程式碼。 您必須使用檔案系統工具來移除模組的程式碼（例如，`rm -rf <path to module>`）。 或者，您可以[停用](manage-modules.md)非撰寫器模組。
 
 命令使用方式：
 
-```bash
+```shell
 bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|--remove-data] [-c|--clear-static-content] \
   {ModuleName} ... {ModuleName}
 ```
@@ -32,7 +32,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 1. 驗證指定的模組存在於程式碼庫中，且是撰寫器所安裝的套件。
 
-   這個命令只對定義為Composer套件的模組運作&#x200B;_1&rbrace;。_
+   這個命令只對定義為Composer套件的模組運作&#x200B;_1}。_
 
 1. 檢查與其他模組的相依性，如果有任何未滿足的相依性，則會終止指令。
 
@@ -50,7 +50,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 1. 若指定`--remove-data`，請移除在模組的`Uninstall`類別中定義的資料庫結構描述和資料。
 
-   針對要解除安裝的每個指定模組，叫用其`uninstall`類別中的`Uninstall`方法。 此類別必須繼承自[Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php)。
+   針對要解除安裝的每個指定模組，叫用其`Uninstall`類別中的`uninstall`方法。 此類別必須繼承自[Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php)。
 
 1. 從`setup_module`資料庫資料表中移除指定的模組。
 1. 從[部署組態](../../configuration/reference/deployment-files.md)的模組清單移除指定的模組。
@@ -67,7 +67,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 例如，如果您嘗試解除安裝另一個模組所依賴的模組，會顯示下列訊息：
 
-```
+```shell
 magento module:uninstall Magento_SampleMinimal
     Cannot uninstall module 'Magento_SampleMinimal' because the following module(s) depend on it:
         Magento_SampleModifyContent
@@ -75,13 +75,13 @@ magento module:uninstall Magento_SampleMinimal
 
 另一種選擇是在備份模組檔案系統、`pub/media`檔案和資料庫表格之後，解除安裝這兩個模組，但&#x200B;_不會_&#x200B;移除模組的資料庫結構描述或資料：
 
-```bash
+```shell
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
 ```
 
 類似下列顯示的訊息：
 
-```
+```text
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...
@@ -122,7 +122,7 @@ Disabling maintenance mode
 
 若要將程式碼基底還原成您備份它的狀態，請使用下列指令：
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
@@ -142,25 +142,25 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
 1. 驗證備份檔案名稱。
 1. 如果您指定程式碼復原檔案：
 
-   a.驗證復原目的地位置是否可寫入（請注意，`pub/static`和`var`資料夾將被忽略）。
+   答： 驗證復原目的地位置是否可寫入（請注意，`pub/static`和`var`資料夾將被忽略）。
 
-   b.刪除應用程式安裝目錄下的所有檔案和目錄。
+   b. 刪除應用程式安裝目錄下的所有檔案和目錄。
 
-   c.將封存檔案擷取至目的地位置。
+   c. 將封存檔案擷取到目的地位置。
 
 1. 如果您指定資料庫倒回檔案：
 
-   a.卸除整個資料庫。
+   答： 卸除整個資料庫。
 
-   b.使用資料庫備份還原資料庫。
+   b. 使用資料庫備份還原資料庫。
 
 1. 如果您指定媒體倒回檔案：
 
-   a.驗證倒回目的地位置是否可寫入。
+   答： 驗證回覆目的地位置是否可寫入。
 
-   b.刪除`pub/media`下的所有檔案和目錄
+   b. 刪除`pub/media`下的所有檔案和目錄
 
-   c.將封存檔案擷取至目的地位置。
+   c. 將封存檔案擷取到目的地位置。
 
 1. 將存放區帶出維護模式。
 
@@ -168,19 +168,19 @@ bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<file
 
 * 顯示備份清單：
 
-  ```bash
+  ```shell
   magento info:backups:list
   ```
 
 * 還原名為`1433876616_filesystem.tgz`的檔案備份：
 
-  ```bash
+  ```shell
   magento setup:rollback --code-file="1433876616_filesystem.tgz"
   ```
 
   類似下列顯示的訊息：
 
-  ```
+  ```text
   Enabling maintenance mode
   Code rollback is starting ...
   Code rollback filename: 1433876616_filesystem.tgz

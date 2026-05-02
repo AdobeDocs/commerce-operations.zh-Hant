@@ -4,9 +4,9 @@ description: 瞭解如何從管理員或命令列合併Adobe Commerce專案的CS
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: a08560eb307638a36fdc52224c41bdf2c5d47763
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. 在本機執行此命令：
 
-   ```bash
+   ```shell
    bin/magento config:set --lock-config dev/css/merge_css_files 1
    ```
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 1. 在本機執行此命令：
 
-   ```bash
+   ```shell
    bin/magento config:set --lock-config dev/css/minify_files 1
    ```
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 1. 在本機執行此命令：
 
-   ```bash
+   ```shell
    bin/magento config:set --lock-config dev/js/minify_files 1
    ```
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 您也可以從命令列啟用Adobe Commerce內建套件組合（基本套件組合）：
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
@@ -104,7 +104,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 ## 其他資訊
 
 - [使用者端最佳化設定](../../../performance/configuration.md#client-side-optimization-settings)
-- 在[組態最佳實務](../../../performance/configuration.md#bundling-tips)中的&#x200B;*套件組合提示* — 協力廠商套件組合工具、HTTP/2以及已棄用的JS和CSS合併指南
-- [使用手冊：最佳化資源檔](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
-- [前端開發人員指南： CSS合併、縮制和網站效能](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- 在&#x200B;*組態最佳實務*&#x200B;中的[套件組合提示](../../../performance/configuration.md#bundling-tips) — 協力廠商套件組合工具、HTTP/2以及已棄用的JS和CSS合併指南
+- [使用手冊：最佳化資源檔案](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [前端開發人員指南：CSS合併、縮制和網站效能](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [進階JavaScript套件組合](../../../performance/advanced-js-bundling.md)

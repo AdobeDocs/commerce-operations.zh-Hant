@@ -2,9 +2,9 @@
 title: 解除安裝或重新安裝Adobe Commerce
 description: 請依照下列步驟，解除安裝並重新安裝Adobe Commerce的內部部署。
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ ht-degree: 0%
 
 若要解除安裝應用程式，請輸入下列命令：
 
-```bash
+```shell
 bin/magento setup:uninstall
 ```
 
 系統會顯示下列訊息，確認解除安裝成功：
 
-```
+```text
 [SUCCESS]: Magento uninstallation complete.
 ```
 
@@ -49,7 +49,7 @@ bin/magento setup:uninstall
 
 但是，在某些情況下（特別是部署到生產環境），您可能希望避免清除編譯的程式碼，因為可能需要一些時間。 （快取仍會清除。） 若要更新資料庫結構描述和資料&#x200B;*，而不需要*&#x200B;清除編譯的程式碼，請輸入：
 
-```bash
+```shell
 bin/magento setup:upgrade --keep-generated
 ```
 

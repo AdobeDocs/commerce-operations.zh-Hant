@@ -3,16 +3,16 @@ title: 移轉變更
 description: 瞭解如何僅移轉自您上次使用 [!DNL Data Migration Tool]移轉Magento 1資料以來變更的資料。
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
 
 # 移轉變更
 
-增量移轉工具會在`m2_cl_*`資料移轉[期間，在Magento 1資料庫中安裝deltalog表格（前置詞為](data.md)）和觸發器（用於追蹤變更）。 若要確保僅移轉上次移轉資料後在Magento 1中進行的變更，這些對話表格和觸發器至關重要。 這些變更包括：
+增量移轉工具會在[資料移轉](data.md)期間，在Magento 1資料庫中安裝deltalog表格（前置詞為`m2_cl_*`）和觸發器（用於追蹤變更）。 若要確保僅移轉上次移轉資料後在Magento 1中進行的變更，這些對話表格和觸發器至關重要。 這些變更包括：
 
 * 客戶透過店面新增的資料（已建立的訂單、評論和客戶設定檔中的變更）
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->透過管理員輸入的所有其他新實體或更新實體(例如屬性或CMS頁面)不會納入增量移轉，也不會移轉。
+>透過管理員輸入的所有其他新實體或更新實體（例如屬性或CMS頁面）不會納入增量移轉，也不會移轉。
 
 
 開始之前，請採取下列步驟進行準備：
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 若要開始移轉增量變更，請執行：
 
-```bash
+```shell
 bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 

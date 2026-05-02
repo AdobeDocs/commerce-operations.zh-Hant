@@ -1,9 +1,9 @@
 ---
 title: 訊息代理人(ActiveMQ Artemis)
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝來安裝和設定Apache ActiveMQ Artemis訊息代理人。
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Adobe Commerce也透過Simple Text Oriented Messaging Protocol (STOMP)支援Acti
 
 >[!NOTE]
 >
->ActiveMQ Artemis是在Adobe Commerce 2.4.5和更新版本中引入。 如需有關在雲端基礎結構專案上在Adobe Commerce中安裝ActiveMQ Artemis的詳細資訊，請參閱[雲端上的Commerce &#x200B;](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/activemq)中的&#x200B;*設定ActiveMQ服務*。
+>ActiveMQ Artemis是在Adobe Commerce 2.4.5和更新版本中引入。 如需有關在雲端基礎結構專案上在Adobe Commerce中安裝ActiveMQ Artemis的詳細資訊，請參閱&#x200B;*雲端上的Commerce*&#x200B;中的[設定ActiveMQ服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq)。
 
 訊息佇列提供非同步通訊機制，讓訊息的傳送者與接收者不會相互聯絡。 也不需要同時與訊息佇列通訊。 當寄件者將郵件放入佇列時，郵件會儲存到收件者收到郵件為止。
 
@@ -51,7 +51,7 @@ Adobe Commerce也透過Simple Text Oriented Messaging Protocol (STOMP)支援Acti
 
 1. 使用官方Docker映像執行ActiveMQ Artemis：
 
-   ```bash
+   ```shell
    # Run with default configuration
    docker run --detach \
      --name artemis \
@@ -63,7 +63,7 @@ Adobe Commerce也透過Simple Text Oriented Messaging Protocol (STOMP)支援Acti
 
 1. 使用自訂認證執行：
 
-   ```bash
+   ```shell
    # Run with custom username/password
    docker run --detach \
      --name artemis \
@@ -77,7 +77,7 @@ Adobe Commerce也透過Simple Text Oriented Messaging Protocol (STOMP)支援Acti
 
 #### Docker管理命令
 
-```bash
+```shell
 # Check container status
 docker ps | grep artemis
 
@@ -99,7 +99,7 @@ docker rm artemis
 在Docker容器運行後，您可以訪問：
 
 - **網頁主控台**： http://localhost:8161/主控台（預設認證： artemis/artemis）
-- **STOMP連線埠**： localhost:61613 (用於Adobe Commerce連線)
+- **STOMP連線埠**： localhost:61613 （用於Adobe Commerce連線）
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ docker rm artemis
 
 1. 從[Apache ActiveMQ Artemis網站](https://activemq.apache.org/components/artemis/download/)下載並安裝最新版本。 截至2025年9月，最新穩定版本為2.42.0：
 
-   ```bash
+   ```shell
    sudo mkdir -p /opt/artemis
    cd /opt/artemis
    sudo curl -O https://downloads.apache.org/activemq/activemq-artemis/2.42.0/apache-artemis-2.42.0-bin.tar.gz
@@ -125,7 +125,7 @@ docker rm artemis
 
 1. 建立`artemis`使用者並設定擁有權：
 
-   ```bash
+   ```shell
    # Create artemis user and set ownership
    sudo useradd -r -s /bin/false artemis 2>/dev/null || true
    sudo chown -R artemis:artemis /opt/artemis
@@ -133,14 +133,14 @@ docker rm artemis
 
 1. 建立Broker執行個體：
 
-   ```bash
+   ```shell
    sudo /opt/artemis/bin/artemis create /var/lib/artemis-instance --user artemis --password artemis --allow-anonymous
    sudo chown -R artemis:artemis /var/lib/artemis-instance
    ```
 
 1. 啟動代理人：
 
-   ```bash
+   ```shell
    # Start in foreground (for testing)
    sudo /var/lib/artemis-instance/bin/artemis run
    
@@ -195,7 +195,7 @@ docker rm artemis
 
 如果您在&#x200B;_之後安裝Adobe Commerce_，則在安裝ActiveMQ Artemis時新增下列命令列引數：
 
-```bash
+```shell
 --stomp-host="<hostname>" --stomp-port="61613" --stomp-user="<user_name>" --stomp-password="<password>"
 ```
 
@@ -232,7 +232,7 @@ docker rm artemis
 
 您也可以使用`bin/magento setup:config:set`命令設定ActiveMQ組態值（如果AMQP組態存在於`app/etc/env.php`檔案中，請將其移除）：
 
-```bash
+```shell
 bin/magento setup:config:set --stomp-host="activemq.example.com" --stomp-port="61613" --stomp-user="magento" --stomp-password="magento"
 ```
 
@@ -240,7 +240,7 @@ bin/magento setup:config:set --stomp-host="activemq.example.com" --stomp-port="6
 
 ## 設定SSL
 
-若要設定對SSL的支援，請編輯`ssl`檔案中的`ssl_options`和`<install_directory>/app/etc/env.php`引數，使其類似下列：
+若要設定對SSL的支援，請編輯`<install_directory>/app/etc/env.php`檔案中的`ssl`和`ssl_options`引數，使其類似下列：
 
 ```php
 'queue' =>
@@ -337,13 +337,13 @@ ActiveMQ Artemis提供可在下列位置存取的網頁式管理主控台：
 
 使用telnet測試STOMP連線：
 
-```bash
+```shell
 telnet localhost 61613
 ```
 
 您應該會看到連線已建立。 若要使用STOMP指令進行測試：
 
-```bash
+```shell
 # Test basic STOMP connection
 echo -e "CONNECT\nhost:localhost\n\n\x00" | telnet localhost 61613
 ```

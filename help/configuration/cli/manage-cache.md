@@ -2,9 +2,9 @@
 title: 管理快取
 description: 瞭解如何使用Adobe Commerce CLI命令管理快取型別和檢視快取狀態。 探索快取管理和最佳化技術。
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 0%
 >[!NOTE]
 >
 >
->Commerce網站管理員可使用快取管理系統工具，從管理員管理快取。 請參閱[系統管理系統指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management)中的&#x200B;_快取管理_。
+>Commerce網站管理員可使用快取管理系統工具，從管理員管理快取。 請參閱&#x200B;_系統管理系統指南_&#x200B;中的[快取管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)。
 
 
 ## 檢視快取狀態
 
 從Commerce應用程式伺服器的命令列，使用`cache:status` Commerce CLI命令檢視快取的狀態。
 
-```bash
+```shell
    bin/magento cache:status
 ```
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 範例如下：
 
-```
+```text
 Current status:
                         config: 1
                         layout: 1
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->如需Adobe Commerce支援之預設快取型別的詳細說明，請參閱[系統管理系統指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management#caches)中的&#x200B;_快取_。
+>如需Adobe Commerce支援之預設快取型別的詳細說明，請參閱&#x200B;_系統管理系統指南_&#x200B;中的[快取](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches)。
 
 
 ## 啟用或停用快取型別
@@ -68,17 +68,17 @@ Current status:
 
 >[!INFO]
 >
->從2.2版開始，您只能在生產模式下執行Commerce時，使用命令列來啟用或停用快取型別。 如果以開發人員模式執行Commerce，您可以使用命令列或手動啟用或停用快取型別。 在這樣做之前，您必須手動讓`<magento_root>/app/etc/env.php`檔案系統擁有者[可寫入](../../installation/prerequisites/file-system/overview.md)。
+>從2.2版開始，您只能在生產模式下執行Commerce時，使用命令列來啟用或停用快取型別。 如果以開發人員模式執行Commerce，您可以使用命令列或手動啟用或停用快取型別。 在這樣做之前，您必須手動讓[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)可寫入`<magento_root>/app/etc/env.php`。
 
 您可以使用命令列或Admin來清除（也稱為&#x200B;_排清_&#x200B;或&#x200B;_重新整理_）快取型別。
 
 命令選項：
 
-```bash
+```shell
 bin/magento cache:enable [type] ... [type]
 ```
 
-```bash
+```shell
 bin/magento cache:disable [type] ... [type]
 ```
 
@@ -88,19 +88,19 @@ bin/magento cache:disable [type] ... [type]
 
 若要列出快取型別及其狀態：
 
-```bash
+```shell
 bin/magento cache:status
 ```
 
 例如，若要停用完整頁面快取和DDL快取：
 
-```bash
+```shell
 bin/magento cache:disable db_ddl full_page
 ```
 
 範例結果：
 
-```
+```text
    Changed cache status:
        db_ddl: 1 -> 0
     full_page: 1 -> 0
@@ -136,23 +136,23 @@ bin/magento cache:disable db_ddl full_page
 
 命令使用方式：
 
-```bash
+```shell
    bin/magento cache:clean [type] ... [type]
 ```
 
-```bash
+```shell
    bin/magento cache:flush [type] ... [type]
 ```
 
 其中`[type]`是以空格分隔的快取型別清單。 省略`[type]`會同時清除或排清所有快取型別。 例如，若要排清所有快取型別，請輸入
 
-```bash
+```shell
    bin/magento cache:flush
 ```
 
 範例結果：
 
-```
+```text
    Flushed cache types:
    config
    layout

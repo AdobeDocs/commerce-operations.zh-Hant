@@ -1,11 +1,11 @@
 ---
 title: 分割資料庫效能解決方案
-description: 閱讀Adobe Commerce的分割資料庫解決方案。
+description: 瞭解適用於Adobe Commerce的分割資料庫效能解決方案，將結帳、訂購和主要產品分隔開來，以供內部部署。
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Adobe Commerce使用三個主要資料庫和可供設定的從屬資料庫數量
 
 因為分割資料庫效能解決方案的設計方式，您的自訂程式碼和已安裝的元件&#x200B;_無法_&#x200B;執行下列任一動作：
 
-- 直接寫入資料庫(您必須改用Adobe Commerce資料庫介面)
+- 直接寫入資料庫（您必須改用Adobe Commerce資料庫介面）
 - 使用影響銷售或報價資料庫的JOIN
 - 在簽出、銷售或主要資料庫中使用資料表的外部索引鍵
 
@@ -74,10 +74,10 @@ Adobe Commerce使用三個主要資料庫和可供設定的從屬資料庫數量
 
 ## 先決條件
 
-分割資料庫需要您在任一主機上設定三個MySQL master資料庫(全部三個Commerce伺服器上，每個資料庫在個別伺服器上，依此類推)。 這些是&#x200B;_master_&#x200B;資料庫，使用方式如下：
+分割資料庫需要您在任一主機上設定三個MySQL master資料庫（全部三個Commerce伺服器上，每個資料庫在個別伺服器上，依此類推）。 這些是&#x200B;_master_&#x200B;資料庫，使用方式如下：
 
 - 一個用於簽出表格的主資料庫
-- 一個銷售資料表(也稱為&#x200B;_Order Management System_&#x200B;或&#x200B;_OMS_&#x200B;資料表)的主資料庫
+- 一個銷售資料表（也稱為&#x200B;_Order Management System_&#x200B;或&#x200B;_OMS_&#x200B;資料表）的主資料庫
 - 一個用於Commerce 2應用程式表格的其餘主要資料庫
 
 此外，您可以選擇設定任何數目的&#x200B;_從屬_&#x200B;資料庫，做為負載平衡器和備份。

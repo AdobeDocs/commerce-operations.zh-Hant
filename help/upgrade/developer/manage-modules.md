@@ -3,9 +3,9 @@ title: 管理模組和擴充功能（開發人員）
 description: 使用命令列介面和撰寫器套件管理員來管理Adobe Commerce模組和擴充功能。
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '132'
 ht-degree: 3%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 3%
 
 命令使用方式：
 
-```bash
+```shell
 composer show --all <vendor>/<name>
 ```
 
 例如：
 
-```bash
+```shell
 composer show --all example/module
 ```
 
@@ -38,13 +38,13 @@ composer show --all example/module
 
 命令使用方式：
 
-```bash
+```shell
 composer require <vendor>/<name>:<version>
 ```
 
 例如：
 
-```bash
+```shell
 composer require example/module:1.0.0
 ```
 
@@ -67,7 +67,7 @@ Composer正在更新相依性並安裝模組，請稍候。
 
 1. 解決相依性並將確切版本寫入`composer.lock`檔案。
 
-   ```bash
+   ```shell
    composer update
    ```
 

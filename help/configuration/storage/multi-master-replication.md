@@ -1,11 +1,11 @@
 ---
 title: 資料庫復寫
-description: 瞭解設定資料庫復寫的優點。
+description: 瞭解Adobe Commerce的資料庫復寫優點，包括備份、分析解除安裝和非同步MySQL從屬設定。
 recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ MySQL資料庫會以非同步方式復寫，這表示從屬端不需要永久連
 有關資料庫復寫的深入討論不在本指南的討論範圍內。 若要進行設定，您可以諮詢資源，例如：
 
 - [MySQL檔案](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [如何在MySQL (digitalocean)中設定主從式復寫](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [如何在MySQL (digitalocean)中設定主從式複製](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
 Commerce提供從屬資料庫的MySQL設定範例。 提供簡單組態與`ResourceConnections`類別`README.md`。
 

@@ -1,10 +1,10 @@
 ---
 title: Magento Open Source發行說明
-description: 檢閱Magento Open Source程式碼基底的發行說明。
+description: 請檢閱Magento Open Source發行說明，瞭解支援的開放Source版本中的增強功能、安全性更新、錯誤修正和已知問題。
 exl-id: 6a7b195c-54d5-4827-81e1-e74453350f5e
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '38'
+source-wordcount: '49'
 ht-degree: 0%
 
 ---

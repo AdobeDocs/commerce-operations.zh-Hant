@@ -1,10 +1,10 @@
 ---
 title: 設定Amazon訊息佇列
-description: 瞭解如何設定Commerce以使用AWS MQ服務。
+description: 瞭解如何在env.php中為Amazon MQ配置Adobe Commerce訊息佇列，包括雲端就緒AMQP連線的SSL和TLS要求。
 exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 自Commerce 2.4.3起，Amazon訊息佇列(MQ)可作為內部部署訊息佇列例項的雲端就緒替代專案。
 
-若要在AWS上建立訊息佇列，請參閱[Amazon檔案](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html)中的&#x200B;_設定AWS MQ_。
+若要在AWS上建立訊息佇列，請參閱&#x200B;_Amazon檔案_&#x200B;中的[設定AWS MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html)。
 
 ## 設定適用於AWS MQ的Commerce
 
-若要連線到AWS MQ服務，請設定`queue.amqp`檔案中的`env.php`物件。
+若要連線到AWS MQ服務，請設定`env.php`檔案中的`queue.amqp`物件。
 AWS訊息佇列需要SSL/TLS連線。
 
 ```php
@@ -37,7 +37,7 @@ AWS訊息佇列需要SSL/TLS連線。
 
 其中：
 
-- `host`—AMQP端點的URL；按一下AWS中的代理程式名稱即可使用(移除「https://」和尾端連線埠號碼)
+- `host`—AMQP端點的URL；按一下AWS中的代理程式名稱即可使用（移除「https://」和尾端連線埠號碼）
 - `user` — 建立AWS MQ代理人時輸入的使用者名稱值
 - `password` — 建立AWS MQ Broker時輸入的密碼值
 
@@ -47,7 +47,7 @@ AWS訊息佇列需要SSL/TLS連線。
 
 編輯`env.php`檔案後，請執行以下命令以完成安裝：
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -82,7 +82,7 @@ async.V1.inventory.bulk-product-source-transfer.POST
 
 1. 啟動`async.operations.all`訊息佇列消費者。
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:start async.operations.all
    ```
 

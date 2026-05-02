@@ -5,14 +5,14 @@ feature: System
 role: Admin, Developer
 exl-id: a0fa2ac9-e61f-43d5-81ff-edf178b1abc0
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
 
-# ACSD-59083：在同時&#x200B;*更新期間找不到*&#x200B;基底資料表或檢視`mview`個錯誤
+# ACSD-59083：在同時`mview`更新期間找不到&#x200B;*基底資料表或檢視*&#x200B;個錯誤
 
 ACSD-59083修補程式修正了同時執行`mview`更新時，某些資料庫更新作業失敗並出現「找不到基底資料表或檢視」錯誤的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-59083。 請注意，問題已在Adobe Commerce 2.4.8中修正。
 
@@ -28,7 +28,7 @@ Adobe Commerce （所有部署方法） 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -39,7 +39,7 @@ Adobe Commerce （所有部署方法） 2.4.4 - 2.4.7-p3
 1. 將索引子模式設定為&#x200B;**[!UICONTROL Update on Schedule]**。
 1. 使用下列SQL命令將記錄插入`cl`資料表：
 
-   ```
+   ```sql
    INSERT INTO catalogrule_product_cl SELECT NULL, entity_id FROM catalog_product_entity;
    INSERT INTO catalogrule_rule_cl SELECT NULL, entity_id FROM catalog_product_entity;
    INSERT INTO catalogsearch_fulltext_cl SELECT NULL, entity_id FROM catalog_product_entity;
@@ -69,7 +69,7 @@ Adobe Commerce （所有部署方法） 2.4.4 - 2.4.7-p3
 
 執行期間發生錯誤：
 
-```
+```text
 SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento24.design_config_dummy_cl__tmp663bb682960345_17794892' doesn't exist in /www/magento24/lib/internal/Magento/Framework/DB/Statement/Pdo/Mysql.php:90
 ```
 
@@ -77,8 +77,8 @@ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'magento24.design_conf
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 
 ## 相關閱讀

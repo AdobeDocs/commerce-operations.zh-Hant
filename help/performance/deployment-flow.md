@@ -3,9 +3,9 @@ title: 部署流程
 description: 瞭解Adobe Commerce生產環境的部署流程流程。 探索實現最高效能與可靠性的步驟。
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ## 安裝相依性
 
-`composer.json`和`composer.lock`檔案管理[!DNL Commerce]相依性，並為每個套件安裝適當的版本。 如果您打算更新[自動載入器](#preprocess-dependency-injection-instructions)，則必須在[前置處理相依性插入指示](#update-the-autoloader)之前安裝相依性。
+`composer.json`和`composer.lock`檔案管理[!DNL Commerce]相依性，並為每個套件安裝適當的版本。 如果您打算更新[自動載入器](#update-the-autoloader)，則必須在[前置處理相依性插入指示](#preprocess-dependency-injection-instructions)之前安裝相依性。
 
 若要安裝[!DNL Commerce]相依性：
 
-```bash
+```shell
 composer install --no-dev
 ```
 
@@ -35,7 +35,7 @@ composer install --no-dev
 
 若要預先處理和編譯DI指示，請執行下列動作：
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
@@ -49,25 +49,25 @@ bin/magento setup:di:compile
 >
 >`-o`選項會將PSR-0/4自動載入轉換成classmap，以獲得更快的自動載入器。 `--apcu`選項使用APCu來快取found/not-found類別。
 
-```bash
+```shell
 composer dump-autoload -o --apcu
 ```
 
 如果您計畫更新自動載入器，則必須依序執行下列命令：
 
-```bash
+```shell
 composer install --no-dev
 ```
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```bash
+```shell
 composer dump-autoload -o
 ```
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -87,7 +87,7 @@ bin/magento setup:static-content:deploy
 
 若要部署靜態內容：
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -105,7 +105,7 @@ bin/magento setup:static-content:deploy
 
 您也可以部署靜態內容、編譯內容，以及在一個CLI命令中設定模式：
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 
@@ -117,4 +117,4 @@ bin/magento deploy:mode:set production
 
 * 重新索引資料以避免在索引中出現任何不一致的資料。
 * 排清快取以確定快取中沒有任何舊資料或不正確的資料。
-* 預熱快取，它會預先呼叫最受歡迎或最關鍵的儲存頁面，以便產生並儲存這些頁面的快取。 此作業可以使用任何網際網路編目程式執行，或者手動執行（如果您有小型存放區）。
+* 預熱快取，它會預先呼叫最受歡迎或最關鍵的儲存頁面，以便產生並儲存這些頁面的快取。 這項操作可以用任何網際網路爬蟲執行，或者如果您有小型商店，也可以手動執行。

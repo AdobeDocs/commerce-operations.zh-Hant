@@ -1,5 +1,5 @@
 ---
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '24'
 ht-degree: 8%
@@ -11,6 +11,6 @@ ht-degree: 8%
 1. 切換至[檔案系統擁有者](../installation/prerequisites/file-system/overview.md)。
 1. 變更至複製應用程式的目錄。 例如，
 
-   ```bash
+   ```shell
    cd /var/www/magento2
    ```

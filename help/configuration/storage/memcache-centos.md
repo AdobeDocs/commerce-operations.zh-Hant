@@ -3,9 +3,9 @@ title: 在CentOS上設定記憶體快取
 description: 瞭解如何在CentOS上安裝並設定Memcached以供Adobe Commerce快取。 探索設定指示和最佳化秘訣。
 feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 因為PHP對memcache沒有原生支援，所以您必須安裝擴充功能以供PHP使用。 有兩個可用的PHP擴充功能，請務必解碼要使用哪個：
 
 - `memcache` (_no d_) — 不是定期維護的舊版但常用的擴充功能。
-`memcache`延伸模組目前&#x200B;_不適用於PHP 7。_ 請參閱memcache[的](https://www.php.net/manual/en/book.memcache.php)PHP檔案。
+`memcache`延伸模組目前&#x200B;_不適用於PHP 7。_ 請參閱memcache](https://www.php.net/manual/en/book.memcache.php)的[PHP檔案。
 
   CentOS的確切名稱是`php-pecl-memcache`。
 
-- `memcached` （_具有`d`_） — 與PHP 7相容的較新且已維護的擴充功能。 請參閱memcached[的](https://www.php.net/manual/en/book.memcached.php)PHP檔案。
+- `memcached` （_具有`d`_） — 與PHP 7相容的較新且已維護的擴充功能。 請參閱memcached](https://www.php.net/manual/en/book.memcached.php)的[PHP檔案。
 
   CentOS的確切名稱是`php-pecl-memcached`。
 
@@ -35,19 +35,19 @@ ht-degree: 0%
 
 1. 安裝memcached及其相依性：
 
-   ```bash
+   ```shell
    yum -y update
    ```
 
-   ```bash
+   ```shell
    yum install -y libevent libevent-devel
    ```
 
-   ```bash
+   ```shell
    yum install -y memcached
    ```
 
-   ```bash
+   ```shell
    yum install -y php-pecl-memcache
    ```
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 1. 將變更儲存至`memcached`並結束文字編輯器。
 1. 重新啟動memcached。
 
-   ```bash
+   ```shell
    service memcached restart
    ```
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
    若為Apache：
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 
@@ -116,11 +116,11 @@ Adobe建議先測試memcached以確保其可正常運作，然後再安裝Commer
 
 此測試使用MySQL資料庫、表格和資料，以確認您可以擷取資料庫資料並將其儲存在memcache中。 PHP指令碼會先搜尋快取。 如果結果不存在，指令碼會查詢資料庫。 在原始資料庫完成查詢之後，指令碼會使用`set`命令將結果儲存在memcache中。
 
-[此測試的詳細資料](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
+[此測試的更多詳細資料](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 
 建立MySQL資料庫：
 
-```bash
+```shell
 mysql -u root -p
 ```
 
@@ -167,11 +167,11 @@ return 0;
 
 從命令列執行指令碼。
 
-```bash
+```shell
 cd <web server docroot>
 ```
 
-```bash
+```shell
 php cache-test.php
 ```
 
@@ -181,19 +181,19 @@ php cache-test.php
 
 最後，您可以使用Telnet檢視memcache金鑰：
 
-```bash
+```shell
 telnet localhost <memcache port>
 ```
 
 出現提示時，輸入
 
-```bash
+```shell
 stats items
 ```
 
 結果類似下列：
 
-```
+```text
 STAT items:3:number 1
 STAT items:3:age 1075
 STAT items:3:evicted 0
@@ -205,12 +205,12 @@ STAT items:3:tailrepairs 0
 
 清除memcache儲存體並結束Telnet：
 
-```bash
+```shell
 flush_all
 ```
 
-```bash
+```shell
 quit
 ```
 
-[有關Telnet測試的其他資訊](https://darkcoding.net/software/memcached-list-all-keys/)
+[Telnet測試的其他資訊](https://darkcoding.net/software/memcached-list-all-keys/)

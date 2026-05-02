@@ -3,16 +3,16 @@ title: 設定及使用清漆
 description: 瞭解如何設定和使用Adobe Commerce的Varnish快取。 探索HTTP加速、檔案儲存和效能最佳化技術。
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
 
 # 設定清漆
 
-[清漆快取](https://varnish-cache.org)是開放原始碼網頁應用程式加速器（也稱為&#x200B;_HTTP加速器_&#x200B;或&#x200B;_快取HTTP反向Proxy_）。 Varnish會將（或快取）檔案或檔案片段儲存在記憶體中，如此可讓Varnish減少回應時間，以及未來同等要求的網路頻寬消耗。 與Apache和nginx等網頁伺服器不同，Varnish是專為搭配HTTP通訊協定使用而設計。
+[清漆快取](https://www.varnish.org/)是開放原始碼網頁應用程式加速器（也稱為&#x200B;_HTTP加速器_&#x200B;或&#x200B;_快取HTTP反向Proxy_）。 Varnish會將（或快取）檔案或檔案片段儲存在記憶體中，如此可讓Varnish減少回應時間，以及未來同等要求的網路頻寬消耗。 與Apache和nginx等網頁伺服器不同，Varnish是專為搭配HTTP通訊協定使用而設計。
 
 [系統需求](../../installation/system-requirements.md)列出支援的清漆版本。
 
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 如需清漆的詳細資訊，請參閱：
 
-- [大型塗漆圖片](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
-- [清漆啟動選項](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
-- [塗漆和網站效能](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
+- [大亮油漆圖片](https://www.varnish.org/docs/users-guide/intro/#users-intro)
+- [清漆啟動選項](https://www.varnish.org/docs/users-guide/running/#users-running)
+- [塗漆與網站效能](https://www.varnish.org/docs/users-guide/performance/)
 
 ## 塗漆拓朴圖
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 >
 >- 除非另有說明，否則您必須以具有`root`許可權的使用者身分，輸入本主題中討論的所有命令。
 >
->- 本主題是針對CentOS和Apache 2.4上的Varnish所撰寫。如果您是在不同的環境中設定Varnish，有些指令可能會不同。 如需詳細資訊，請參閱Varnish檔案。
+>- 本主題是針對CentOS和Apache 2.4上的Varnish所撰寫。 如果您是在不同的環境中設定Varnish，有些指令可能會不同。 如需詳細資訊，請參閱Varnish檔案。
 
 ## 已知問題
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 - 安裝Commerce時可能發生錯誤：
 
-  ```
+  ```text
   Error 503 Service Unavailable
   Service Unavailable
   XID: 303394517
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 - Magento 2 GitHub存放庫中的[`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)
 - Commerce提供的Apache適用的`.htaccess`分散式設定檔
-- 使用`default.vcl`管理員[產生的清漆的](../cache/configure-varnish-commerce.md)設定
+- 使用[管理員](../cache/configure-varnish-commerce.md)產生的清漆的`default.vcl`設定
 
 >[!INFO]
 >

@@ -2,11 +2,11 @@
 title: 安裝Apache以供內部部署使用
 description: 瞭解如何為內部部署Adobe Commerce安裝並設定Apache。 啟用必要的模組、重寫和'.htaccess'設定。
 feature: Install, Configuration
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Adobe支援您的Adobe Commerce發行版本的[系統需求](../../system-requir
 
 1. 啟用Apache重寫模組：
 
-   ```bash
+   ```shell
    a2enmod rewrite
    ```
 
@@ -68,11 +68,11 @@ Adobe支援您的Adobe Commerce發行版本的[系統需求](../../system-requir
 
    >[!NOTE]
    >
-   >如果您從舊版Apache升級，請先在`<Directory "/var/www/html">`中尋找現有的`<Directory "/var/www">`或`000-default.conf`區塊。 如果您在不同的`docroot`中安裝Adobe Commerce，請更新該路徑的相符`<Directory>`區塊。
+   >如果您從舊版Apache升級，請先在`000-default.conf`中尋找現有的`<Directory "/var/www/html">`或`<Directory "/var/www">`區塊。 如果您在不同的`docroot`中安裝Adobe Commerce，請更新該路徑的相符`<Directory>`區塊。
 
 1. 重新啟動Apache以套用變更：
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -91,7 +91,7 @@ Adobe Commerce需要安裝下列Apache模組：
 
 若要確認Apache已安裝並檢視目前版本，請輸入：
 
-```bash
+```shell
 apache2 -v
 ```
 
@@ -120,13 +120,13 @@ Server built: <build-date>
 
 1. 安裝Apache （如果尚未安裝）：
 
-   ```bash
+   ```shell
    apt-get -y install apache2
    ```
 
 1. 確認安裝：
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
@@ -149,7 +149,7 @@ Server built: <build-date>
 
 1. 更新封裝資訊：
 
-   ```bash
+   ```shell
    apt-get -y update
    ```
 
@@ -157,7 +157,7 @@ Server built: <build-date>
 
 1. 安裝或升級Apache：
 
-   ```bash
+   ```shell
    apt-get install -y apache2
    ```
 
@@ -167,19 +167,19 @@ Server built: <build-date>
 
 1. 確認安裝：
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
 1. 在[系統需求](../../system-requirements.md)中，確認安裝的版本符合您的Adobe Commerce版本支援的版本。
 
-1. 啟用Ubuntu[的`.htaccess`重寫和](#enable-rewrites-and-htaccess-for-ubuntu)。
+1. 啟用Ubuntu](#enable-rewrites-and-htaccess-for-ubuntu)的[重寫和`.htaccess`。
 
 ### 啟用Ubuntu的重寫和.htaccess
 
 1. 開啟`/etc/apache2/sites-available/000-default.conf`檔案進行編輯：
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -206,17 +206,17 @@ Server built: <build-date>
 
 1. 設定Apache以使用`mod_rewrite`模組：
 
-   ```bash
+   ```shell
    cd /etc/apache2/mods-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s ../mods-available/rewrite.load
    ```
 
 1. 重新啟動Apache以套用變更：
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -238,13 +238,13 @@ Server built: <build-date>
 
 1. 安裝Apache （如果尚未安裝）。
 
-   ```bash
+   ```shell
    yum -y install httpd
    ```
 
 1. 確認安裝：
 
-   ```bash
+   ```shell
    httpd -v
    ```
 
@@ -265,7 +265,7 @@ Server built: <build-date>
 
 1. 開啟`/etc/httpd/conf/httpd.conf`檔案進行編輯：
 
-   ```bash
+   ```shell
    vim /etc/httpd/conf/httpd.conf
    ```
 
@@ -296,7 +296,7 @@ Server built: <build-date>
 
 1. 若要套用Apache設定，請重新啟動Apache。
 
-   ```bash
+   ```shell
    systemctl restart httpd
    ```
 

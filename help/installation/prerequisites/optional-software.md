@@ -2,9 +2,9 @@
 title: 選購軟體
 description: 深入瞭解您可安裝的選用軟體，以支援Adobe Commerce的內部安裝。
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 輸入下列命令以安裝NTP：
 
-```bash
+```shell
 apt-get install ntp
 ```
 
@@ -37,7 +37,7 @@ apt-get install ntp
 
 1. 輸入下列命令以尋找適當的NTP軟體：
 
-   ```bash
+   ```shell
    yum search ntp
    ```
 
@@ -45,13 +45,13 @@ apt-get install ntp
 
 1. 安裝套件。
 
-   ```bash
+   ```shell
    yum -y install ntp.x86_64
    ```
 
 1. 輸入下列命令，讓NTP在伺服器啟動時啟動。
 
-   ```bash
+   ```shell
    chkconfig ntpd on
    ```
 
@@ -59,7 +59,7 @@ apt-get install ntp
 
 ### 使用NTP集區伺服器
 
-選擇集區伺服器由您決定。 若您使用NTP集區伺服器，ntp.org建議您使用[NTP集區專案頁面](https://www.ntppool.org/en/)中討論的[集區伺服器](https://www.ntppool.org/en/use.html)，這些伺服器會接近您伺服器的時區。 如果您有部署中所有主機都可用的私人NTP伺服器，您可以改用該伺服器。
+選擇集區伺服器由您決定。 若您使用NTP集區伺服器，ntp.org建議您使用[NTP集區專案頁面](https://www.ntppool.org/en/use.html)中討論的[集區伺服器](https://www.ntppool.org/en/)，這些伺服器會接近您伺服器的時區。 如果您有部署中所有主機都可用的私人NTP伺服器，您可以改用該伺服器。
 
 1. 在文字編輯器中開啟`/etc/ntp.conf`。
 
@@ -103,7 +103,7 @@ apt-get install ntp
 
 >[!NOTE]
 >
->只會在開發系統`phpinfo.php`中使用&#x200B;__。 這可能是生產中的安全性問題。
+>只會在開發系統&#x200B;_中使用`phpinfo.php`_。 這可能是生產中的安全性問題。
 
 將下列程式碼新增至網頁伺服器docroot中的任何位置：
 
@@ -126,9 +126,9 @@ http://<web server host or IP>/phpinfo.php
 * 視需要啟動網頁伺服器。
 * 請確定您的防火牆允許連線埠80上的流量。
 
-  Ubuntu的[說明](https://help.ubuntu.com/community/UFW)
+  [Ubuntu說明](https://help.ubuntu.com/community/UFW)
 
-  CentOS的[說明](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
+  [CentOS的說明](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
 
 ## phpMyAdmin
 

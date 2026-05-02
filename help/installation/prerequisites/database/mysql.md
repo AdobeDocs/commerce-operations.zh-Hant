@@ -2,9 +2,9 @@
 title: MySQL准則
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝安裝並設定MySQL和MariaDB。
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Adobe _強烈_&#x200B;建議您在設定資料庫時，遵循下列標準：
 * Adobe Commerce使用[MySQL資料庫觸發程式](https://dev.mysql.com/doc/refman/8.4/en/triggers.html)來改善重新索引期間的資料庫存取。 當索引子模式設定為[排程](../../../configuration/cli/manage-indexers.md#configure-indexers)時，就會建立這些專案。 應用程式不支援資料庫中的任何自訂觸發器，因為自訂觸發器可能會造成與未來Adobe Commerce版本不相容。
 * 繼續之前，請先熟悉[這些潛在的MySQL觸發程式限制](https://dev.mysql.com/doc/refman/8.4/en/stored-program-restrictions.html)。
 * 若要增強您的資料庫安全狀態，請啟用[`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/8.4/en/sql-mode.html#sqlmode_strict_all_tables) SQL模式，以防止儲存無效的資料值，這可能會造成不必要的資料庫互動。
-* Adobe Commerce _不_&#x200B;支援MySQL陳述式式復寫。 請確定您只使用&#x200B;_1&rbrace;_&#x200B;資料列式復寫[。](https://dev.mysql.com/doc/refman/8.4/en/replication-formats.html)
+* Adobe Commerce _不_&#x200B;支援MySQL陳述式式復寫。 請確定您只使用&#x200B;_1} [資料列式復寫](https://dev.mysql.com/doc/refman/8.4/en/replication-formats.html)。_
 
 >[!WARNING]
 >
@@ -32,7 +32,7 @@ Adobe _強烈_&#x200B;建議您在設定資料庫時，遵循下列標準：
 
 根據您安裝的版本，Adobe Commerce 2.4支援不同的MySQL 8版本。 使用[系統需求](../../system-requirements.md)中列出的版本，然後依照下列連結取得有關在電腦上安裝MySQL的說明。
 
-* [Ubuntu](https://ubuntu.com/server/docs/databases-mysql/)
+* [烏本圖](https://ubuntu.com/server/docs/databases-mysql/)
 * [CentOS](https://dev.mysql.com/doc/refman/8.4/en/linux-installation-yum-repo.html)
 
 如果您預期要匯入大量產品，可以將[`max_allowed_packet`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_max_allowed_packet)的值增加到大於預設值16 MB的值。
@@ -58,13 +58,13 @@ SHOW VARIABLES LIKE 'max_allowed_packet';
 
 ### 已移除整數型別（內距）的寬度
 
-整數資料型別(TINYINT、SMALLINT、MEDIUMINT、INT、BIGINT)的顯示寬度規格在MySQL 8.0.17中已過時。在輸出中包含資料型別定義的陳述式不再顯示整數型別的顯示寬度，TINYINT(1)除外。 MySQL聯結器假設TINYINT(1)欄是以BOOLEAN欄為起源。 此例外可讓他們繼續做出該假設。
+整數資料型別(TINYINT、SMALLINT、MEDIUMINT、INT、BIGINT)的顯示寬度規格在MySQL 8.0.17中已過時。 在輸出中包含資料型別定義的陳述式不再顯示整數型別的顯示寬度，TINYINT(1)除外。 MySQL聯結器假設TINYINT(1)欄是以BOOLEAN欄為起源。 此例外可讓他們繼續做出該假設。
 
 #### 範例
 
 請說明mysql 8.19中的admin_user
 
-| 欄位 | 型別 | 空 | 索引鍵 | 預設 | 額外 |
+| 欄位 | 型別 | Null | 索引鍵 | 預設 | 額外 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | user\_id | `int unsigned` | 否 | PRI | `NULL` | `auto_increment` |
 | `firstname` | `varchar(32)` | 是 | | `NULL` | |
@@ -73,7 +73,7 @@ SHOW VARIABLES LIKE 'max_allowed_packet';
 | `username` | `varchar(40)` | 是 | UNI | `NULL` | |
 | `password` | `varchar(255)` | 否 | | `NULL` | |
 | `created` | `timestamp` | 否 | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
-| `modified` | `timestamp` | 否 | | `CURRENT_TIMESTAMP` | 更新`DEFAULT_GENERATED`上的`CURRENT_TIMESTAMP` |
+| `modified` | `timestamp` | 否 | | `CURRENT_TIMESTAMP` | 更新`CURRENT_TIMESTAMP`上的`DEFAULT_GENERATED` |
 | `logdate` | `timestamp` | 是 | | `NULL` | |
 | `lognum` | `smallint unsigned` | 否 | | `0` | |
 
@@ -88,7 +88,7 @@ SHOW VARIABLES LIKE 'max_allowed_packet';
 
 ### GROUP BY的已過時ASC和DESC限定詞
 
-自MySQL 8.0.13起，已移除`ASC`子句的已棄用`DESC`或`GROUP BY`限定詞。 先前依賴`GROUP BY`排序的查詢可能會產生與先前MySQL版本不同的結果。 若要產生指定的排序順序，請提供`ORDER BY`子句。
+自MySQL 8.0.13起，已移除`GROUP BY`子句的已棄用`ASC`或`DESC`限定詞。 先前依賴`GROUP BY`排序的查詢可能會產生與先前MySQL版本不同的結果。 若要產生指定的排序順序，請提供`ORDER BY`子句。
 
 ## Commerce和MySQL 8
 
@@ -106,13 +106,13 @@ Adobe Commerce已透過在`/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.
 測試所有專案，並確定您的系統可如預期般運作。
 1. 啟用維護模式：
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. 進行資料庫備份：
 
-   ```bash
+   ```shell
    bin/magento setup:backup --db
    ```
 
@@ -120,13 +120,13 @@ Adobe Commerce已透過在`/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.
 1. 將備份的資料匯入MySQL。
 1. 清除快取：
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. 停用維護模式：
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -139,7 +139,7 @@ Adobe Commerce已透過在`/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.
 1. 以任何使用者身分登入您的資料庫伺服器。
 1. 前往MySQL命令提示字元：
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -166,7 +166,7 @@ Adobe Commerce已透過在`/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.
 
 1. 驗證資料庫：
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 
