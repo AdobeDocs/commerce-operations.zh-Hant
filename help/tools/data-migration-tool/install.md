@@ -50,7 +50,7 @@ git branch
 如果您目前在`develop`分支中，您必須變更為[已發行分支](https://developer.adobe.com/commerce/contributor/guides/install/change-version)，才能繼續。
 
 如果您尚未安裝Adobe Commerce軟體，請[立即安裝](../../installation/prerequisites/commerce.md)。
-如果您正在複製GitHub存放庫，請務必取出版本標籤，如[ （參與者）複製GitHub存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)中所述。
+如果您正在複製GitHub存放庫，請務必取出版本標籤，如[&#x200B; （參與者）複製GitHub存放庫](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)中所述。
 
 ## 尋找[!DNL Data Migration Tool]的發行版本
 

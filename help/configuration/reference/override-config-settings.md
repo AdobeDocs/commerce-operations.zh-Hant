@@ -224,7 +224,7 @@ ht-degree: 0%
 
 1. 決定範圍。
 
-   如步驟1所述，在[資料庫](#find-a-website-or-store-view-scope-in-the-database)中尋找範圍：尋找網站或存放區檢視範圍值。 (您也可以在Admin中找到值，如步驟2：設定全域、網站或存放區檢視變數]&#x200B;(#step-2-set-global-website-or-store-view-variables中的[表格中所示。
+   如步驟1所述，在[資料庫](#find-a-website-or-store-view-scope-in-the-database)中尋找範圍：尋找網站或存放區檢視範圍值。 (您也可以在Admin中找到值，如步驟2：設定全域、網站或存放區檢視變數&rbrack;&#x200B;(#step-2-set-global-website-or-store-view-variables中的&lbrack;表格中所示。
 
    例如，範圍可以是`CONFIG__WEBSITES__DEFAULT`。
 
@@ -247,7 +247,7 @@ $_ENV['CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME'] = 'http
 $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '1234';
 ```
 
-使用環境變數](../deployment/example-environment-variables.md)設定組態值[中顯示的逐步範例。
+使用環境變數[&#128279;](../deployment/example-environment-variables.md)設定組態值中顯示的逐步範例。
 
 >[!WARNING]
 >

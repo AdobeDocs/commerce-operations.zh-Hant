@@ -32,7 +32,7 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
 
 1. 驗證指定的模組存在於程式碼庫中，且是撰寫器所安裝的套件。
 
-   這個命令只對定義為Composer套件的模組運作&#x200B;_1}。_
+   這個命令只對定義為Composer套件的模組運作&#x200B;_1&rbrace;。_
 
 1. 檢查與其他模組的相依性，如果有任何未滿足的相依性，則會終止指令。
 

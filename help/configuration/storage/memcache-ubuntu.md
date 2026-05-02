@@ -21,11 +21,11 @@ ht-degree: 0%
 因為PHP對memcache沒有原生支援，所以您必須安裝擴充功能以供PHP使用。 有兩個可用的PHP擴充功能，請務必解碼要使用哪個：
 
 - `memcache` (_no d_) — 不是定期維護的舊版但常用的擴充功能。
-`memcache`延伸模組目前&#x200B;_不適用於PHP 7。_ 請參閱memcache](https://www.php.net/manual/en/book.memcache.php)的[PHP檔案。
+`memcache`延伸模組目前&#x200B;_不適用於PHP 7。_ 請參閱memcache[&#128279;](https://www.php.net/manual/en/book.memcache.php)的PHP檔案。
 
   Ubuntu的確切名稱是`php5-memcache`。
 
-- `memcached` （_具有`d`_） — 與PHP 7相容的較新且已維護的擴充功能。 請參閱memcached](https://www.php.net/manual/en/book.memcached.php)的[PHP檔案。
+- `memcached` （_具有`d`_） — 與PHP 7相容的較新且已維護的擴充功能。 請參閱memcached[&#128279;](https://www.php.net/manual/en/book.memcached.php)的PHP檔案。
 
   Ubuntu的確切名稱是`php5-memcached`。
 
@@ -97,7 +97,7 @@ Adobe建議先測試memcached以確保其可正常運作，然後再安裝Commer
 
 此測試使用PHP指令碼來驗證memcached可以儲存和擷取快取資料。
 
-如需此測試的詳細資訊，請參閱[如何在Ubuntu教學課程中安裝及使用Memcache ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04)。
+如需此測試的詳細資訊，請參閱[如何在Ubuntu教學課程中安裝及使用Memcache &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04)。
 
 在網頁伺服器的docroot中建立`cache-test.php`，其內容如下：
 

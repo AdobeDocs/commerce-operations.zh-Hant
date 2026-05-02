@@ -105,7 +105,7 @@ ht-degree: 0%
    ln -s /etc/nginx/sites-available/magento magento
    ```
 
-如需有關對應指示詞的詳細資訊，請參閱對應指示詞](http://nginx.org/en/docs/http/ngx_http_map_module.html#map)上的[nginx檔案。
+如需有關對應指示詞的詳細資訊，請參閱對應指示詞[&#128279;](http://nginx.org/en/docs/http/ngx_http_map_module.html#map)上的nginx檔案。
 
 
 **若要建立多個虛擬主機**：
