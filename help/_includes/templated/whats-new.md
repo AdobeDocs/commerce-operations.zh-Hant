@@ -23,7 +23,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665">ACP2E-4665的QPT 1.1.78修正的詳細說明：當透過REST API</a>提出要求時，產品相簿中含有視訊的可設定產品之子產品不會出現。</p>
+      <td><p>已新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665">ACP2E-4665的QPT 1.1.78修正的詳細說明：當透過REST API</a>提出要求時，產品相簿中含有視訊的可設定產品之子產品不會出現。</p>
 </td>
       <td>
         新主題qpt
@@ -45,7 +45,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613">ACP2E-4613的QPT 1.1.78修正的詳細說明：大型媒體目錄結構緩慢的gettree回應和延遲Media Gallery目錄樹狀結構載入</a>。</p>
+      <td><p>已新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613">ACP2E-4613的QPT 1.1.78修正的詳細說明：大型媒體目錄結構緩慢的gettree回應和延遲Media Gallery目錄樹狀結構載入</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -67,7 +67,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535">ACP2E-4535的QPT 1.1.78修正的詳細說明：提交忘記密碼表單會破壞或重新產生工作階段（PHPSESSID變更）並清除來賓購物車</a>。</p>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535">ACP2E-4535的QPT 1.1.78修正的詳細說明：提交忘記密碼表單會破壞或重新產生工作階段（PHPSESSID變更）並清除來賓購物車</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -75,7 +75,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/953e231d2161d84e2444fa46ac95b93dbba28241">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507">ACP2E-4507的QPT 1.1.78修正的詳細說明：「密碼選項」組態不適用於透過GraphQL變動</a>提出的客戶密碼重設請求。</p>
+      <td><p>新增對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507">ACP2E-4507的QPT 1.1.78修正的詳細說明：「密碼選項」組態不適用於透過GraphQL變動</a>提出的客戶密碼重設請求。</p>
 </td>
       <td>
         新主題qpt
@@ -83,7 +83,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b657f2e50d48c9179d1c6b3559ee7e6ee99b306d">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609">ACP2E-4609的QPT 1.1.78修正的詳細說明：當部分引號包含已刪除的產品時，「我的引號」頁面不會顯示任何引號</a>。</p>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609">ACP2E-4609的QPT 1.1.78修正的詳細說明：當部分引號包含已刪除的產品時，「我的引號」頁面不會顯示任何引號</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -91,7 +91,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/670dacfa2bdc211eb9f4ed6788144ba6c1dac678">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431">ACP2E-4431的QPT 1.1.78修正的詳細說明：在重新索引程式</a>期間已刪除符合目標規則的相關產品。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431">ACP2E-4431的QPT 1.1.78修正的詳細說明：在重新索引程式</a>期間已刪除符合目標規則的相關產品。</p>
 </td>
       <td>
         新主題qpt
@@ -99,7 +99,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9424da66669c54eb0a794555ea7df66625f6c71">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416">ACP2E-4416的QPT 1.1.78修正的詳細說明：在Admin</a>中建立時，客戶獎勵點不會初始化。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416">ACP2E-4416的QPT 1.1.78修正的詳細說明：在Admin</a>中建立時，客戶獎勵點不會初始化。</p>
 </td>
       <td>
         新主題qpt
