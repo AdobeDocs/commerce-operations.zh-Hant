@@ -2,105 +2,115 @@
 title: 共擔責任安全性與營運模式
 description: 瞭解在雲端基礎結構專案中，Adobe Commerce中涉及的每一方的安全性責任。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 4e5477a247b272dc17863a84bd3b9a55bf36d688
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '3227'
 ht-degree: 0%
 
 ---
 
 # 共擔責任安全性與營運模式
 
-雲端基礎結構上的Adobe Commerce是一項平台即服務(PaaS)產品，仰賴共同責任的安全性和營運模式。 這些責任由Adobe、商家、雲端服務提供者和內容傳遞網路(CDN)提供者共用。 各方都有責任保護及營運Adobe Commerce應用程式，以及雲端基礎結構上部署之商家專用程式碼和擴充功能。
+雲端基礎結構上的Adobe Commerce是一項平台即服務(PaaS)產品，仰賴共同責任的安全性和營運模式。 Adobe、商家、雲端服務提供者和內容傳遞網路(CDN)提供者都有這些責任。 各方都有責任保護及營運Adobe Commerce應用程式，以及雲端基礎結構上部署之商家專用程式碼和擴充功能。
 
-此共用模式可讓商戶設計和實作高度彈性、可自訂且可擴充的解決方案，以符合其業務需求，同時將營運責任和成本降至最低。
+此共用模型可讓商戶設計和實作彈性、可自訂且可擴充的解決方案，以符合其業務需求，同時將營運責任和成本降至最低。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
 
-一般而言，Adobe的職責如下：
+Adobe負責下列工作：
 
-- 開發及維護安全的核心應用程式程式碼
-- 維護平台的安全性
-- 確保平台符合SOC 2和PCI標準，並與PCI標準的技術元件（例如PHP、Redis）相容
-- 回應核心平台的安全問題
-- 與雲端服務供應商和CDN合作夥伴合作，解決發生的任何問題
+* 開發及維護安全的核心應用程式程式碼
+* 維護平台的安全性
+* 確保平台符合SOC 2和PCI標準，並與PCI標準的技術元件（例如PHP、Redis）相容
+* 回應核心平台的安全問題
+* 與雲端服務供應商和CDN合作夥伴合作，解決發生的任何問題
 
 商家需負責下列事項：
 
-- 維護自訂程式碼的安全性以及與協力廠商應用程式的整合
-- 確保安全的應用程式開發
-- 如果商戶的付款處理程式要求，請取得PCI認證
-- 回應和回應安全性事件
+* 維護自訂程式碼的安全性以及與協力廠商應用程式的整合
+* 確保安全的應用程式開發
+* 如果商戶的付款處理程式要求，請取得PCI認證
+* 回應和回應安全性事件
+* 在主動支援的版本上維護所有協力廠商相依性、平台服務和Adobe Commerce服務擴充功能。 Adobe不針對執行不支援之相依性版本的部署提供安全性支援或協助。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)和[產品可用性矩陣](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
+
+{{supported-versions-only}}
 
 ## Adobe責任
 
-Adobe負責雲端基礎結構環境及核心解決方案程式碼上的Adobe Commerce安全性和可用性。 此外，Adobe還負責必要的活動和機制，以維護Adobe Commerce在雲端基礎結構解決方案上的安全性，包括：
+Adobe負責雲端基礎結構環境及核心解決方案程式碼上的Adobe Commerce安全性和可用性。 Adobe也會執行維護Adobe Commerce雲端基礎結構解決方案安全性的活動，包括：
 
-- 在雲端基礎結構上為Adobe Commerce支援的應用程式套用伺服器層級安全性和修補程式，例如雲端資料儲存和搜尋功能
-- 在雲端基礎結構程式碼上執行核心Adobe Commerce的滲透測試和掃描
-- 對公共雲端服務提供者的身分與存取管理(IAM)解決方案和許可權管理（PCI法規遵循要求）進行半年一度的審查和稽核
-- 對授權的使用者進行半年一度的審查和稽核，包括Adobe員工和承包商（PCI法規遵循要求）
-- 進行備份和還原功能的年度測試和檔案記錄
-- 設定伺服器和周邊防火牆
-- 在雲端基礎結構存放庫上連線和設定Adobe Commerce
-- 為Adobe職責範圍內的區域定義、測試、實施和記錄災難回覆(DR)計畫
-- 定義全域平台網頁應用程式防火牆(WAF)規則
-- 強化作業系統(OS)
-- 在雲端基礎結構上實作並維護內容發佈網路(CDN)和應用程式效能管理(APM)解決方案與Adobe Commerce的整合
-- 在雲端基礎結構程式碼上發佈核心Adobe Commerce的定期安全性和其他更新（套用修補程式是商家的責任）
-- 管理商家支援和支援存取控制（例如Zendesk）
-- 監控、記錄及修正雲端基礎結構上Adobe Commerce的安全事件
-- 監控平台作業，並在雲端基礎結構商家上提供Adobe Commerce的全天候支援
-- 布建生產和中繼環境
-- 評估平台作業與基礎建設的潛在安全性威脅
-- 根據服務等級協定(SLA)和商家之間的說明，擴充運算、儲存、網格和其他資源
-- 設定DNS （僅限雲端基礎結構平台基礎結構上的Adobe Commerce）
-- 測試平台是否有安全漏洞
+* 在雲端基礎結構上為Adobe Commerce支援的應用程式套用伺服器層級安全性和修補程式，例如雲端資料儲存和搜尋功能
+* 在雲端基礎結構程式碼上執行核心Adobe Commerce的滲透測試和掃描
+* 對公共雲端服務提供者的身分與存取管理(IAM)解決方案和許可權管理（PCI法規遵循要求）進行半年一度的審查和稽核
+* 對授權的使用者進行半年一度的審查和稽核，包括Adobe員工和承包商（PCI法規遵循要求）
+* 進行備份和還原功能的年度測試和檔案記錄
+* 設定伺服器和周邊防火牆
+* 在雲端基礎結構存放庫上連線和設定Adobe Commerce
+* 為Adobe職責範圍內的區域定義、測試、實施和記錄災難回覆(DR)計畫
+* 定義全域平台網頁應用程式防火牆(WAF)規則
+* 強化作業系統(OS)
+* 在雲端基礎結構上實作並維護內容發佈網路(CDN)和應用程式效能管理(APM)解決方案與Adobe Commerce的整合
+* 在雲端基礎結構程式碼上發佈核心Adobe Commerce的定期安全性和其他更新（套用修補程式是商家的責任）
+* 管理商家支援和支援存取控制（例如Experience League支援）
+* 監控、記錄及修正雲端基礎結構上Adobe Commerce的安全事件
+* 監控平台作業，並在雲端基礎結構商家上提供Adobe Commerce的全天候支援
+* 布建生產和中繼環境
+* 評估平台作業與基礎建設的潛在安全性威脅
+* 根據服務等級協定(SLA)和商家之間的說明，擴充運算、儲存、網格和其他資源
+* 設定DNS （僅限雲端基礎結構平台基礎結構上的Adobe Commerce）
+* 測試平台是否有安全漏洞
 
-Adobe維護Adobe Commerce解決方案使用之基礎結構和服務的PCI認證。  商戶需負責自訂程式碼、系統和網路程式的合規性，以及組織。
+Adobe維護Adobe Commerce解決方案使用之基礎結構和服務的PCI認證。 商戶需負責其自訂程式碼、系統和網路程式以及組織的合規性。
 
 Adobe也會確保商家基礎建設的可用性，如適用的SLA中所商定。
 
 ## 商戶責任
 
-該商戶負責針對雲端基礎結構解決方案上其特定的Adobe Commerce自訂執行個體，遵循下列安全性最佳實務：
+該商戶負責針對其雲端基礎結構解決方案上的Adobe Commerce自訂執行個體，遵循下列安全性最佳實務：
 
-- 將雲端基礎結構設定檔案上的必要Adobe Commerce新增到存放庫
-- 在Adobe發佈雲端基礎結構解決方案的自訂Adobe Commerce後，立即套用安全性和其他修補程式至其自訂
-- 在廠商發佈所有自訂擴充功能和程式碼後，立即套用安全性和其他修補程式
-- 建立、部署和測試自訂Vcl檔案
-- 在雲端基礎結構解決方案上設計、設定主題、安裝、整合及保護自訂Adobe Commerce，包括所有自訂擴充功能和程式碼
-- 授予和撤銷使用者對雲端基礎結構設定、應用程式和平台上Adobe Commerce商家例項的存取權
-- 處理與商戶的內部網路、伺服器、基礎結構和任何在雲端基礎建設平台上的Adobe Commerce上建置的自訂應用程式相關的安全性問題
-- 在雲端基礎結構上安裝Adobe Commerce命令列整合(CLI)工具
-- 根據PCI-DSS准則的定義，維持自訂應用程式和其他內部程式所需的PCI相容性等級
+* 將雲端基礎結構設定檔案上的必要Adobe Commerce新增到存放庫
+* 在Adobe發佈雲端基礎結構解決方案的自訂Adobe Commerce後，立即套用安全性和其他修補程式至其自訂
+* 供應商發佈所有自訂擴充功能和程式碼後，立即套用安全性和其他修補程式
+* 建立、部署和測試自訂Vcl檔案
+* 在雲端基礎結構解決方案上設計、設定主題、安裝、整合及保護自訂Adobe Commerce，包括所有自訂擴充功能和程式碼
+* 授予和撤銷使用者對雲端基礎結構設定、應用程式和平台上Adobe Commerce商家例項的存取權
+* 處理與商戶的內部網路、伺服器、基礎結構和任何在雲端基礎建設平台上的Adobe Commerce上建置的自訂應用程式相關的安全性問題
+* 在雲端基礎結構上安裝Adobe Commerce命令列整合(CLI)工具
+* 根據PCI-DSS准則的定義，維持自訂應用程式和其他內部程式所需的PCI相容性等級
 
   >[!NOTE]
   >
   >為了將必須檢視的領域降到最低，商家的PCI法規遵循建立在Adobe Commerce和雲端主機供應商的PCI認證上。
 
-- 在雲端基礎結構程式碼和平台執行PCI ASV掃描並修正核心Adobe Commerce中的問題
-- 監控所有可能顯示潛在安全威脅的應用程式活動，包括滲透測試、弱點掃描和記錄
-- 監控及回應安全性事件，包括與商家Adobe Commerce相關的法證、補救及報告，用於雲端基礎結構解決方案和使用者帳戶
-- 取得DNS提供者，以及設定和維護任何商家特定的DNS記錄
-- 在自訂應用程式上執行效能測試
-- 保護對平台帳戶的存取權、執行個體存取權和應用程式
-- 自訂應用程式的測試和QA
-- 維護商戶在雲端基礎結構應用程式上連線至Adobe Commerce的任何系統或網路的安全性
+* 在雲端基礎結構程式碼和平台執行PCI ASV掃描並修正核心Adobe Commerce中的問題
+* 監控所有可能顯示潛在安全威脅的應用程式活動，包括滲透測試、弱點掃描和記錄
+* 監控及回應安全性事件，包括與商家Adobe Commerce相關的法證、補救及報告，用於雲端基礎結構解決方案和使用者帳戶
+* 取得DNS提供者，以及設定和維護任何商家特定的DNS記錄
+* 在自訂應用程式上執行效能測試
+* 保護對平台帳戶的存取權、執行個體存取權和應用程式
+* 自訂應用程式的測試和QA
+* 維護商戶在雲端基礎結構應用程式上連線至Adobe Commerce的任何系統或網路的安全性
+* 針對各自廠商主動支援的版本或Adobe主動支援的版本，維護所有平台服務、第三方相依性和Adobe Commerce服務擴充功能。 其中包括：
 
-## Cloud Service提供者責任
+   * 基礎架構服務，例如，資料庫、快取、搜尋、PHP執行階段和Web伺服器
+   * Adobe Commerce服務擴充功能
+   * 所有協力廠商擴充功能與自訂整合
 
-Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commerce託管雲端伺服器基礎結構。 這些提供者負責網路安全，包括路由、交換及周邊網路安全，透過防火牆系統和入侵偵測系統(IDS)。 雲端服務供應商也負責在雲端基礎結構解決方案上託管Adobe Commerce的資料中心的實體安全性，以及資料中心的環境安全性。
+  Adobe不支援執行不支援版本之部署。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)和[產品可用性矩陣](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
+
+## 雲端服務提供者的責任
+
+Adobe仰賴雲端服務提供者，在雲端基礎結構上為Adobe Commerce託管雲端伺服器基礎結構。 這些提供者負責網路安全，包括透過防火牆系統和入侵偵測系統(IDS)進行路由、交換和周邊網路安全。 雲端服務供應商也負責雲端基礎結構解決方案上託管Adobe Commerce之資料中心的實體和環境安全。
 
 雲端服務供應商也負責：
 
-- 維護其雲端服務的PCI DSS、SOC 2和ISO 27001認證
-- 保護Hypervisor
-- 保護資料中心的安全，包括實體及網路存取
+* 維護其雲端服務的PCI DSS、SOC 2和ISO 27001認證
+* 保護Hypervisor
+* 保護資料中心的安全，包括實體及網路存取
 
 ## CDN提供者責任
 
-雲端基礎結構解決方案的Adobe Commerce使用CDN提供者來加速頁面載入時間、快取內容，並立即清除過時的內容。 這些提供者也負責與其CDN直接相關或影響其安全性的問題，以及定義和維護CDN WAF規則。
+雲端基礎結構解決方案的Adobe Commerce使用CDN提供者來加速頁面載入時間、快取內容，並立即清除過時的內容。 這些提供者也負責影響其CDN的安全性問題，以及定義和維護CDN WAF規則。
 
 ## 安全性責任摘要
 
@@ -484,7 +494,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
     <td></td>
   </tr>
   <tr>
-    <td>在雲端基礎結構上管理Adobe Commerce的IAMand許可權</td>
+    <td>在雲端基礎結構上管理Adobe Commerce的IAM和許可權</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -518,14 +528,21 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
     <td></td>
     <td></td>
   </tr>
+  <tr>
+    <td>在主動支援的版本上維護所有平台服務、協力廠商相依性和Commerce服務擴充功能（包括但不限於基礎結構服務、SaaS Commerce附加元件和協力廠商擴充功能）</td>
+    <td>I</td>
+    <td>R</td>
+    <td></td>
+    <td></td>
+  </tr>
 </tbody>
 <tfoot>
   <tr>
     <td colspan="5">
-      <p><sup><strong>1</strong></sup>僅限將雲端基礎結構存放庫上的Adobe Commerce作為主要存放庫時。 商家全權負責使用其他外部存放庫。</p>
-      <p><sup><strong>2</strong></sup> Adobe針對CDN提供者的問題提供第1級支援。</p>
-      <p><sup><strong>3</strong></sup>商家必須負責為其應用程式設定的任何Ngnix控制項。</p>
-      <p><sup><strong>4</strong></sup>針對PCI，滲透測試需求會在Adobe與商家之間共用。</p>
+      <p><sup>1</sup>僅限將雲端基礎結構存放庫上的Adobe Commerce作為主要存放庫時。 商家全權負責使用其他外部存放庫。</p>
+      <p><sup>2</sup> Adobe針對CDN提供者的問題提供第1級支援。</p>
+      <p><sup>3</sup>商家必須負責為其應用程式設定的任何Nginx控制項。</p>
+      <p><sup>4</sup>針對PCI，滲透測試需求會在Adobe與商家之間共用。</p>
     </td>
   </tr>
 </tfoot>
@@ -640,10 +657,10 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 |     | Adobe | 商家 |
 | --- | --- | --- |
 | 旋轉記錄檔 | R |   |
-| 自訂Adobe Commerce應用程式 | | R |
+| 自訂Adobe Commerce應用程式 |   | R |
 | New Relic服務的可用性：<br>APM應用程式與代理程式整合、基礎結構應用程式、<br>記錄與整合 | R |   |
 | 設定New Relic警報 |     | R |
-| 在PaaS伺服器上部署New Relic代理程式 | R |  |
+| 在PaaS伺服器上部署New Relic代理程式 | R |   |
 
 {style="table-layout:auto"}
 
@@ -696,6 +713,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | 預設PHP設定的組態 | R |     |
 | 自訂PHP設定的組態 |     | R |
 | YAML檔案的設定，以調整與已安裝的Adobe Commerce版本相容的PHP版本 |    | R |
+| 商家必須在支援的版本上維護PHP。 不支援版本上的部署不符合Adobe支援的資格，且可能包含未修補的安全漏洞。 |     | R |
 
 {style="table-layout:auto"}
 
@@ -704,13 +722,14 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 |     | Adobe | 商家 |
 | --- | --- | --- |
 | Galera和MariaDB服務的可用性 | R | |
-| 持續維護預設資料庫設定<br><br> （索引和最佳化核心表格，最佳化預設sys-admin設定） | R |   |
+| 持續維護預設資料庫設定<br><br> （索引和最佳化核心表格，最佳化預設系統管理設定） | R |   |
 | 持續維護商家資料及修改設定<br><br> （設定正規化與一般資料表、索引及最佳化自訂與協力廠商資料表、封存或移除資料、設定系統管理設定） |     | R |
 | Galera和MySQL的設定 | R |   |
 | Galera和MariaDB的持續品質與修補 | R |   |
 | 持續性基礎架構最佳化 | R |   |
 | 識別並修正緩慢查詢 |     | R |
 | 提交服務要求以安裝與已安裝Adobe Commerce版本相容的MariaDB版本 |     | R |
+| 商家必須在支援的版本上維護MariaDB。 不支援版本上的部署不符合Adobe支援的資格，且可能包含未修補的安全漏洞。 |     | R |
 | 設定及維護商家特定的資料保留原則（Adobe的資料保留原則會在商家合約中定義） |     | R |
 
 {style="table-layout:auto"}
@@ -720,12 +739,12 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 |     | Adobe | 商家 |
 | --- | --- | --- |
 | CDN的可用性和品質 | R |   |
-| Fastly服務設定（透過擴充功能/API） |     | R |
+| Fastly服務設定（透過擴充功能或API） |     | R |
 | Fastly擴充品質 | R |   |
-| Fastly整合VCL程式碼片段（與Fastly擴充功能整合）品質 | R |   |
+| Fastly整合VCL片段品質（與Fastly擴充功能整合） | R |   |
 | 頁面快取最佳化 |     | R |
-| 將網域新增至服務、CDN和基礎架構 | R |   |
-| 自訂VCL程式碼片段 |     | R |
+| 新增網域至服務、CDN和基礎結構 | R |   |
+| 自訂VCL片段 |     | R |
 | WAF和WAF規則 | R |   |
 
 {style="table-layout:auto"}
@@ -738,6 +757,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | 預設Redis設定的設定 | R |   |
 | Redis的持續品質與修補 | R |   |
 | 提交服務要求以安裝與已安裝Adobe Commerce版本相容的Redis版本 |     | R |
+| 商家必須在支援的版本上維護Redis。 不支援版本上的部署不符合Adobe支援的資格，且可能包含未修補的安全漏洞。 |     | R |
 
 {style="table-layout:auto"}
 
@@ -745,9 +765,10 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
-| Elasticsearch或OpenSearch的可用性 | R |   |
-| 預設Elasticsearch或OpenSearch設定的組態 | R |   |
-| 提交服務要求以安裝與已安裝的Elasticsearch版本相容的Adobe Commerce或OpenSearch版本 |  | R |
+| 開放搜尋的可用性 | R |   |
+| 預設OpenSearch設定的組態 | R |   |
+| 提交服務要求以安裝與已安裝的Adobe Commerce版本相容的OpenSearch版本 |   | R |
+| 商家必須在支援的版本上維護OpenSearch。 不支援版本上的部署&#x200B;_不符合Adobe支援的資格_，且可能包含未修補的安全性弱點。 |     | R |
 
 {style="table-layout:auto"}
 
@@ -756,8 +777,8 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 |     | Adobe | 商家 |
 | --- | --- | --- |
 | SendGrid電子郵件服務的可用性及其整合 | R |   |
-| 監視商家的SendGrid使用量是否超過限制 | R |   |
-| 商家只負責將服務用於外寄異動電子郵件<br>服務不支援行銷電子郵件的傳送。 |     | R |
+| 根據限制監視商家的SendGrid使用情況 | R |   |
+| 僅針對傳出異動電子郵件使用服務。 此服務不支援傳送行銷電子郵件。 |     | R |
 | 設定選用的協力廠商電子郵件服務 |     | R |
 
 {style="table-layout:auto"}
@@ -793,11 +814,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 {style="table-layout:auto"}
 
->[!NOTE]
->
->商戶必須使用最新版的即時搜尋、產品建議和支付服務，以確保最高的穩定性、功能和支援資格。
->Adobe不支援過時的版本，而升級可確保您受益於最新的增強功能和錯誤修正。
->如需支援版本的詳細資訊，請參閱[Commerce服務的產品可用性矩陣](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability#commerce-services)。
+{{supported-versions-only}}
 
 #### 產品推薦
 
@@ -805,6 +822,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | --- | --- | --- |
 | Product Recommendations服務的可用性 | R |   |
 | 升級Product Recommendations模組 |   | R |
+| 僅支援最新發行版本的Product Recommendations。 商家必須在每次發行後立即升級。 |     | R |
 
 {style="table-layout:auto"}
 
@@ -814,10 +832,13 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | --- | --- | --- |
 | 即時搜尋服務的可用性 | R |   |
 | 升級即時搜尋模組 |   | R |
+| 僅支援最新發行版本的Live Search。 商家必須在每次發行後立即升級。 |     | R |
 
 {style="table-layout:auto"}
 
-#### 店面活動（資料收集）的品質，可支援產品建議和即時搜尋輸出
+#### 店面事件資料品質
+
+店面活動收集推動產品建議和即時搜尋輸出的品質。 職責視店面實作而定：
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
@@ -825,8 +846,8 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | 自訂主題 |  | R |
 | 核心PWA實施 | R |   |
 | 自訂PWA實施 |  | R |
-| 核心AEM EDS實作（Commerce樣板） | R |   |
-| 自訂AEM EDS實施 |  | R |
+| 核心Edge Delivery Services實施（Commerce樣板） | R |   |
+| 自訂Edge Delivery Services實施 |   | R |
 | 任何其他自訂店面實作 |  | R |
 
 {style="table-layout:auto"}
@@ -837,6 +858,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | --- | --- | --- |
 | 付款服務的可用性 | R |   |
 | 升級付款模組 |   | R |
+| 僅支援最新發行的付款服務版本。 商家必須在每次發行後立即升級。 |     | R |
 
 {style="table-layout:auto"}
 
@@ -846,7 +868,7 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
-| 影像最佳化的可用性和品質 | R |  |
+| 影像最佳化的可用性和品質 | R |   |
 | 影像最佳化的設定 |     | R |
 
 {style="table-layout:auto"}
@@ -855,33 +877,33 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
-| SSL專用憑證 — 到期 | R |  |
-| 布建SSL憑證 | R |  |
-| 購買及維護EV/特定SSL憑證（提供的預設值除外）並提供給Adobe |     | R |
+| 專用SSL憑證到期 | R |   |
+| 布建SSL憑證 | R |   |
+| 購買並維護EV或其他特定SSL憑證（提供的預設值除外），並將這些憑證提供給Adobe |     | R |
 
 {style="table-layout:auto"}
 
-#### Web應用程式防火牆(WAF)
+#### 網頁應用程式防火牆(WAF)
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
-| WAF的可用性和設定 | R |  |
-| 處理WAF規則的誤判 | R | |
+| WAF的可用性和設定 | R |   |
+| 處理WAF規則的誤判 | R |   |
 | 報告WAF規則誤判 |     | R |
 | WAF規則調整（不支援） |     |     |
-| WAF/CDN記錄檔 |     | R |
+| WAF和CDN記錄 |     | R |
 
 {style="table-layout:auto"}
 
-#### DDOS
+#### DDoS
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
-| 主動IP封鎖 |     | R |
+| 主動式IP封鎖 |     | R |
 | 機器人保護 |     | R |
-| DDOS偵測 — 第3-4層 | R |   |
-| DDOS偵測 — 第7層 |     | R |
-| DDOS回應 | R |   |
+| DDoS偵測 — 第3-4層 | R |   |
+| DDoS偵測 — 第7層 |     | R |
+| DDoS回應 | R |   |
 
 {style="table-layout:auto"}
 
@@ -891,11 +913,11 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 | --- | --- | --- |
 | 使用Adobe擁有的VPC設定並維護PrivateLink連線（如果使用） | R |   |
 | 使用商家擁有的VPC設定及維護PrivateLink連線（若已使用） |     | R |
-| SSH （非私人連結）的可用性 | R |   |
-| PrivateLink傳入至Adobe Commerce雲端服務端點的設定 | R |   |
+| SSH （非PrivateLink）可用性 | R |   |
+| 設定傳入Adobe Commerce雲端服務端點的PrivateLink | R |   |
 | 接受傳入至Adobe Commerce雲端服務端點的PrivateLink |     | R |
-| 傳入至商家VPC服務端點的PrivateLink設定 |     | R |
-| 接受傳入至商家VPC服務端點的PrivateLink | R |   |
+| 傳入商家VPC服務端點的PrivateLink設定 |     | R |
+| 接受傳入到商家VPC服務端點的PrivateLink | R |   |
 | PrivateLink整合（端點對帳戶）的設定 |     | R |
 | PrivateLink端點<br><br>之商家擁有的VPC的設定（包括任何VPN連線） |     | R |
 
@@ -937,9 +959,10 @@ Adobe仰賴成熟雲端服務提供者，在雲端基礎結構上為Adobe Commer
 
 |     | Adobe | 商家 |
 | --- | --- | --- |
-| CPU資源、資料中心、磁碟空間的可用性 | R |   |
+| CPU資源、資料中心及磁碟空間的可用性 | R |   |
 | 提供並執行突增容量或緊急規模調整 | R |   |
 | 請求突增容量 |     | R |
 | 根據限制監視vCPU使用量 | R |   |
 
 {style="table-layout:auto"}
+
