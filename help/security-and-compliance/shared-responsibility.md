@@ -31,7 +31,7 @@ Adobe負責下列工作：
 * 確保安全的應用程式開發
 * 如果商戶的付款處理程式要求，請取得PCI認證
 * 回應和回應安全性事件
-* 在主動支援的版本上維護所有協力廠商相依性、平台服務和Adobe Commerce服務擴充功能。 Adobe不針對執行不支援之相依性版本的部署提供安全性支援或協助。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)和[產品可用性矩陣](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
+* 在主動支援的版本上維護所有協力廠商相依性、平台服務和Adobe Commerce服務擴充功能。 Adobe不針對執行不支援之相依性版本的部署提供安全性支援或協助。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)和[產品可用性矩陣](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
 
 {{supported-versions-only}}
 
@@ -96,7 +96,7 @@ Adobe也會確保商家基礎建設的可用性，如適用的SLA中所商定。
    * Adobe Commerce服務擴充功能
    * 所有協力廠商擴充功能與自訂整合
 
-  Adobe不支援執行不支援版本之部署。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)和[產品可用性矩陣](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
+  Adobe不支援執行不支援版本之部署。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)和[產品可用性矩陣](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
 
 ## 雲端服務提供者的責任
 
