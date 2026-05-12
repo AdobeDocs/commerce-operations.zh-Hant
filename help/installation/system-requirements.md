@@ -27,9 +27,9 @@ Adobe僅支援下表所述的系統需求組合。 例如，2.4.9已透過MariaD
 
 >[!BEGINTABS]
 
->雲端上的[!TAB Commerce]
+>[!TAB 雲端上的 Commerce]
 
-雲端範本](https://github.com/magento/magento-cloud)上的[Commerce提供與特定Commerce版本相容之服務的預設設定。
+雲端範本[&#128279;](https://github.com/magento/magento-cloud)上的Commerce提供與特定Commerce版本相容之服務的預設設定。
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
@@ -98,7 +98,7 @@ Adobe建議您基於效能原因來驗證[PHP OPcache](https://www.php.net/manua
 
 >[!BEGINTABS]
 
->雲端上的[!TAB Commerce]
+>[!TAB 雲端上的 Commerce]
 
 下表顯示在雲端平台上部署Adobe Commerce時支援的PHP擴充功能。
 
@@ -173,6 +173,6 @@ Adobe Commerce的某些作業需要下列系統工具：
 
 >[!NOTE]
 >
->`xdebug`有已知問題，可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)的[已知問題。
+>`xdebug`有已知問題，可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)的已知問題。
 
 <!-- Last updated from includes: 2026-05-11 20:38:54 -->
