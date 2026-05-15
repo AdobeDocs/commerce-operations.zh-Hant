@@ -1,8 +1,8 @@
 ---
 title: '[!DNL Recommendations]'
-description: 瞭解[!UICONTROL Recommendations]中的 [!DNL Site-Wide Analysis Tool]標籤、使用時機、其優點以及最佳實務。
+description: 瞭解 [!DNL Site-Wide Analysis Tool]中的[!UICONTROL Recommendations]標籤、使用時機、其優點以及最佳實務。
 exl-id: 17ff57e2-5b51-4afb-b505-09e46f490509
-source-git-commit: e39e0229538bb245fbe744ebfd642572fc2dc790
+source-git-commit: b1cfa656e3393bd47fb2c1557ff75db3ec6c6a67
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # [!DNL Recommendations]
 
-[!UICONTROL Recommendations page]頁面中的[!DNL Site-Wide Analysis Tool]提供：
+[!DNL Site-Wide Analysis Tool]頁面中的[!UICONTROL Recommendations page]提供：
 
-* [SWAT健康指數分數](#swat-health-index.md)可協助您監控及改善Adobe Commerce網站的整體健康狀況
+* [SWAT健康指數分數](swat-health-index.md)可協助您監控及改善Adobe Commerce網站的整體健康狀況
 * Recommendations清單是根據最佳實務，用來解決網站上偵測到的問題。
 
 建議會依優先順序從PO排序至P4，其中PO是關鍵的，而P4是低的。 調查結果包括說明、建議、網站影響、根本原因、案例/先決條件、預期結果和使用的工具。

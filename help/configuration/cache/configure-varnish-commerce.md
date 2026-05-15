@@ -3,14 +3,14 @@ title: 設定Commerce的光漆
 description: 瞭解如何專門為Adobe Commerce應用程式設定Varnish。 探索設定檔更新和管理技術。
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
-# 設定Commerce應用程式以使用Varnish
+# 設定Commerce的光漆
 
 若要設定Commerce使用光澤處理：
 

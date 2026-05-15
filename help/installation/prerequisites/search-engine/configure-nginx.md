@@ -3,7 +3,7 @@ title: 為您的搜尋引擎設定Nginx
 description: 請依照下列步驟，使用Nginx網頁伺服器設定搜尋引擎，以供Adobe Commerce的內部部署使用。
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 >
 >2.4.4版本新增OpenSearch支援。 OpenSearch是Elasticsearch的相容復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
 
-本節討論如何將nginx設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與nginx[&#128279;](#secure-communication-with-nginx)的安全通訊中討論。
+本節討論如何將nginx設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與nginx](#secure-communication-with-nginx)的[安全通訊中討論。
 
 >[!NOTE]
 >
@@ -217,4 +217,4 @@ server {
 
 {{$include /help/_includes/verify-secure-communication.md}}
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

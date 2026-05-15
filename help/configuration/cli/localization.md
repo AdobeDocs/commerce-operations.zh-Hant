@@ -2,7 +2,7 @@
 title: 翻譯字典和語言套件
 description: 瞭解如何產生Adobe Commerce的翻譯字典和建置語言套件。 探索當地語系化及多語言商店設定。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Commerce翻譯可讓您針對多個地區和市場自訂您的商店並將其當
 
 1. 您可以將翻譯字典封裝成語言套件，然後提供套件給Commerce商店管理員。
 
-1. 在管理員中，商店管理員[設定翻譯](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-localize)。
+1. 在管理員中，商店管理員[設定翻譯](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize)。
 
 命令選項：
 
@@ -106,7 +106,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 | 引數 | 值 | 必填？ |
 |--- |--- |--- |
-| `<source>` | CSV檔案的絕對檔案系統路徑和檔案名稱，該檔案包含劃分成語言套件所需的合併翻譯字典和中繼資訊。<br><br>使用[`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict)建立CSV檔案，然後建立語言套件，如[建立目錄和檔案](#m2devgde-xlate-files)中所述。 | 是 |
+| `<source>` | CSV檔案的絕對檔案系統路徑和檔案名稱，該檔案包含劃分成語言套件所需的合併翻譯字典和中繼資訊。<br><br>使用[`bin/magento i18n:collect-phrases`](#generate-a-translation-dictionary)建立CSV檔案，然後建立語言套件，如[建立目錄和檔案](#create-directories-and-files)中所述。 | 是 |
 | `<locale>` | [ISO 639-1](https://www.iso.org/iso-639-language-codes.html) （語言）和[ISO 3166](https://www.iso.org/iso-3166-country-codes.html) （國家/地區）識別碼，用來作為所有產生的CSV檔案的檔案名稱。 範例： `de_DE`、`pt_PT`、`pt_BR`。 | 是 |
 | `-m --mode` | 如果目標檔案存在，請指定取代現有的語言套件還是與新的語言套件合併。 合併會覆寫任何現有的短語，並加入新的短語。<br><br>值：合併或取代（預設）。 | 否 |
 | `-d --allow-duplicates` | 包含此選項以允許語言套件中出現重複專案。 否則，如果命令在多個包含不同翻譯的專案中遇到相同的片語，則會失敗並出現錯誤。 | 否 |

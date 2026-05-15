@@ -2,7 +2,7 @@
 title: 技術細節
 description: 閱讀有關管道部署的技術細節、設定型別和建議的工作流程。
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -14,10 +14,10 @@ ht-degree: 0%
 本主題說明Commerce 2.2和更新版本中管道部署的技術實作詳細資訊。 改良功能可劃分為下列領域：
 
 - [設定管理](#configuration-management)
-- [管理員中的變更](#changes-in-the-admin)
+- [管理員中的變更](#the-commerce-admin)
 - [安裝和移除cron](#install-and-remove-cron)
 
-此主題也會討論用於管道部署的[建議工作流程](#recommended-workflow)，並提供一些範例來協助您瞭解其運作方式。
+此主題也會討論用於管道部署的[建議工作流程](#recommended-pipeline-deployment-workflow)，並提供一些範例來協助您瞭解其運作方式。
 
 開始之前，請先檢閱開發、組建和生產系統的[必要條件](../deployment/prerequisites.md)。
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 ### 在Admin中鎖定的組態設定
 
 `config.php`或`env.php`中的任何組態設定已在Admin中鎖定；也就是說，這些設定無法在Admin中變更。
-使用[`magento config:set`或`magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set)命令變更`config.php`或`env.php`檔案中的設定。
+使用[`magento config:set`或`magento config:set --lock`](../cli/set-configuration-values.md#set-values)命令變更`config.php`或`env.php`檔案中的設定。
 
 ## Commerce管理員
 

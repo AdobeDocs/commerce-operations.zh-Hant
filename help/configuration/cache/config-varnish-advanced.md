@@ -3,7 +3,7 @@ title: 進階清漆組態
 description: 瞭解如何為Adobe Commerce設定進階塗漆功能，包括健康狀態檢查、寬限和saint模式。 探索VCL最佳化技術。
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%

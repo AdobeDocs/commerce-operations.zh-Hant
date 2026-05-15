@@ -1,30 +1,34 @@
 ---
-title: 快取型別
-description: 瞭解如何在Adobe Commerce中將快取前端與快取型別建立關聯。 探索快取設定和管理技術。
+title: 設定快取前端
+description: 瞭解如何定義快取前端，並將其與Adobe Commerce中的快取型別建立關聯。 探索env.php和di.xml的組態語法。
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: de613310ad701dd594a6ee8fcd973aa2c3769870
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
-# 快取型別
+# 設定快取前端
+
+快取前端是Commerce與快取儲存後端之間的介面。 您可以定義多個前端，每個前端都有不同的後端設定，然後將特定的[快取型別](../cli/manage-cache.md#clean-and-flush-cache-types)指派給每個前端。
+
+如果您想要針對不同型別的快取資料使用不同的快取後端或設定，這會很有用。 例如，您可能會想要在專用的Redis資料庫上進行`full_page`快取，同時使用單獨的資料庫進行`default`快取。
+
+## 使用預設前端
+
+Commerce提供適用於所有快取型別的`default`快取前端。 它藉由實作[Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php)前端快取來擴充[Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html)。
+
+在大多數情況下，您不需要自訂前端。 您只需要設定後端。 請參閱[快取後端選項](cache-options.md)。
+
+## 定義自訂快取前端
 
 下列步驟將逐步說明將快取前端與快取型別建立關聯的步驟。
 
-## 步驟1：定義快取前端
+### 步驟1：定義快取前端並指派快取型別
 
-Commerce應用程式有`default`快取前端可用於任何[快取型別](../cli/manage-cache.md#clean-and-flush-cache-types)。 本節探討如何選擇性地定義具有不同名稱的快取前端，如果您希望自訂前端，這會比較好。
-
->[!INFO]
->
->若要使用`default`快取型別，您完全不需要修改`env.php`；您修改了Commerce的全域`di.xml`。 請參閱[低階快取選項](cache-options.md)。
-
-您必須指定自訂快取前端`app/etc/env.php`或Commerce的全域`app/etc/di.xml`。
-
-下列範例說明如何在`env.php`檔案中定義它，該檔案會覆寫`di.xml`檔案：
+若要定義自訂快取前端，請將組態新增至`app/etc/env.php` （覆寫`di.xml`）：
 
 ```php?start_inline=1
 'cache' => [
@@ -37,8 +41,6 @@ Commerce應用程式有`default`快取前端可用於任何[快取型別](../cli
          <cache type 1> => [
              'frontend' => '<unique frontend id>'
         ],
-    ],
-    'type' => [
          <cache type 2> => [
              'frontend' => '<unique frontend id>'
         ],
@@ -46,11 +48,19 @@ Commerce應用程式有`default`快取前端可用於任何[快取型別](../cli
 ],
 ```
 
-其中`<unique frontend id>`是用於識別前端的唯一名稱，`<cache options>`是各快取型別（資料庫、Redis等）專屬主題中討論的選項。
+其中：
 
-## 步驟2：設定快取
+- `<unique frontend id>` — 識別前端的唯一名稱（例如，`default`、`page_cache`、`stale_cache_enabled`）
+- `<cache options>` — 此前端的後端型別和選項（請參閱[快取選項](cache-options.md)）
+- `<cache type>` — 要指派給此前端的Commerce快取型別（例如，`config`、`layout`、`block_html`、`full_page`）
 
-您可以在`env.php`或`di.xml`中指定前端和後端快取組態選項。 此為選擇性工作。
+>[!TIP]
+>
+>**現代Symfony快取實作(2.4.9+)：**&#x200B;從Commerce 2.4.9開始，您可以將`redis`、`valkey`或`file`等簡化的後端型別與現代Symfony快取實作搭配使用。 請參閱[使用Redis作為預設快取](redis-pg-cache.md)和[使用Valkey作為預設快取](valkey-pg-cache.md)以取得詳細資料。
+
+### 步驟2：設定前端和後端選項
+
+您可以在`env.php`或`di.xml`中指定前端和後端快取組態選項。 此為選擇性工作。 如果您未指定選項，Commerce會使用預設的前端和後端設定。
 
 `env.php`範例：
 
@@ -67,13 +77,26 @@ Commerce應用程式有`default`快取前端可用於任何[快取型別](../cli
 ],
 ```
 
-位置
+其中：
 
-- `<frontend_type>`是低階前端快取型別。 指定與`Zend\Cache\Core`相容的類別名稱。
-若您省略`<frontend_type>`，則會使用[Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php)。
+- `<frontend_type>` — 低階前端快取型別。 指定與`Zend\Cache\Core`相容的類別名稱。
+如果省略，則使用[Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php)。
 
-- `<frontend_option>`、`<frontend_option_value>`是Commerce架構在建立時以關聯陣列形式傳遞給前端快取的選項名稱和值。
-- `<backend_type>`是低階後端快取型別。 指定與`Zend_Cache_Backend`相容且實作`Zend_Cache_Backend_Interface`的類別名稱。
-- `<backend_option>`和`<backend_option_value>`是Commerce架構在建立後端cache時，以關聯陣列形式傳遞的選項名稱和值。
+- `<frontend_option>`， `<frontend_option_value>` — Commerce架構在建立時以關聯陣列形式傳遞給前端快取的選項名稱和值。
 
-如需最新的Zend資訊，請參閱[Laminas檔案](https://docs.laminas.dev/)。
+- `<backend_type>` — 低階後端快取型別。 您可以指定：
+   - **現代Symfony快取（2.4.9+，建議）**：簡化名稱，如`redis`、`valkey`或`file`
+   - **舊版（Zend型）**：與實作`Zend_Cache_Backend_Interface`的`Zend_Cache_Backend`相容的完整類別名稱
+
+- `<backend_option>`， `<backend_option_value>` — Commerce架構在建立時以關聯陣列形式傳遞給後端快取的選項名稱和值。
+
+>[!NOTE]
+>
+>**舊版與現代實作：**
+>
+>- **舊版（Zend型）**： `'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis'`
+>- **現代（Symfony快取）**： `'backend' => 'redis'` （建議用於Commerce 2.4.9+）
+>
+>現代Symfony快取實作可透過PSR-6法規遵循、Igbinary序列化、gzip壓縮、Lua指令碼和持續連線提供更優異的效能。
+
+請參閱[Laminas檔案](https://docs.laminas.dev/)以瞭解Zend型選項，或是[Redis](redis-pg-cache.md)與[Valkey](valkey-pg-cache.md)的現代Symfony快取指南。

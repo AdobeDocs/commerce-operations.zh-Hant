@@ -1,18 +1,18 @@
 ---
-title: 設定Redis
-description: 瞭解如何設定Redis快取以最佳化Adobe Commerce效能。 探索功能、設定步驟和設定最佳實務。
+title: 安裝及設定Redis
+description: 瞭解如何使用Adobe Commerce安裝和設定Redis的快取和工作階段儲存。 探索最佳化和效能調整的選項。
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: de613310ad701dd594a6ee8fcd973aa2c3769870
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-# 設定Redis
+# 安裝及設定Redis
 
-Redis功能包括：
+Redis是記憶體中的資料存放區，可作為快取後端及工作階段存放區使用。 主要功能包括：
 
 - PHP工作階段儲存
 - 標籤式快取清除，不含`foreach`回圈
@@ -24,7 +24,7 @@ Redis功能包括：
 
 - [下載Redis頁面](https://redis.io/download)
 - [Redis快速入門](https://redis.io/docs/latest/)
-- [數位海洋](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
+- [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
 - [Redis檔案頁面](https://redis.io/docs)
 
 ## 設定Redis
@@ -35,7 +35,7 @@ Redis功能包括：
 
 對於工作階段，Adobe建議您啟用持續性，以使用下列任一持續性選項將Redis資料複製到磁碟：一般Redis資料庫備份(RDB)快照或僅附加檔案(AOF)持續性記錄。
 
-- **Redis Database Backup** (RDB)快照在指定時間後，將完整的資料庫儲存在傾印檔案中，而自上次儲存後的最小金鑰數目已變更。 使用`save`檔案內的`redis.conf`設定來設定此設定。
+- **Redis Database Backup** (RDB)快照在指定時間後，將完整的資料庫儲存在傾印檔案中，而自上次儲存後的最小金鑰數目已變更。 使用`redis.conf`檔案內的`save`設定來設定此設定。
 
 - **僅附加檔案** (AOF)會將每個傳送至Redis的寫入作業儲存在日誌檔中。 Redis只會在重新啟動時讀取此檔案，並使用它來還原原始資料集。
 

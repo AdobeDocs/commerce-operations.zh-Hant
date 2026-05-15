@@ -1,16 +1,16 @@
 ---
-title: 使用Redis進行工作階段儲存
-description: 瞭解如何在Adobe Commerce中設定工作階段儲存的Redis。 探索命令列設定、設定選項和效能最佳化技術。
+title: 為工作階段儲存設定Redis
+description: 瞭解如何在Adobe Commerce中設定工作階段儲存的Redis。 探索CLI設定、工作階段引數和連線驗證技術。
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '835'
 ht-degree: 1%
 
 ---
 
-# 使用Redis進行工作階段儲存
+# 設定工作階段儲存的Redis
 
 >[!IMPORTANT]
 >

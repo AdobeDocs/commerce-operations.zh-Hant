@@ -2,7 +2,7 @@
 title: 設定檔案擁有權和許可權
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝設定檔案系統許可權。
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 0%
@@ -111,7 +111,7 @@ passwd <username>
 
 >[!WARNING]
 >
->如果您在應用程式伺服器上沒有`root`許可權，則可以使用其他本機使用者帳戶。 請確定使用者有強式密碼，並繼續[將檔案系統擁有者放入網頁伺服器群組](#step-3-put-the-file-system-owner-in-the-web-servers-group)。
+>如果您在應用程式伺服器上沒有`root`許可權，則可以使用其他本機使用者帳戶。 請確定使用者有強式密碼，並繼續[將檔案系統擁有者放入網頁伺服器群組](#put-the-file-system-owner-in-the-web-server-group)。
 
 例如，若要建立名為`magento_user`的使用者，並為使用者提供密碼，請輸入：
 

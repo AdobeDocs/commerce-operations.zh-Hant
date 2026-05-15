@@ -3,7 +3,7 @@ title: 設定 [!DNL Data Migration Tool]
 description: 瞭解設定 [!DNL Data Migration Tool] 在Magento 1和Magento 2之間傳輸資料的兩種方法。
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 0%
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 1. 在`config.xml`檔案中，您必須設定M1和M2資料庫的存取詳細資訊以及加密金鑰。
 
-1. 如果您的M1存放區有自訂變更，則應將其餘設定檔案對應至Magento 1存放區自訂。 請參閱[使用組態和對應檔案](#migration-config)。
+1. 如果您的M1存放區有自訂變更，則應將其餘設定檔案對應至Magento 1存放區自訂。 請參閱[使用組態和對應檔案](#work-with-configuration-and-mapping-files)。
 
 ### 在`vendor`資料夾中設定移轉
 

@@ -2,9 +2,9 @@
 user-guide-title: 設定指南
 user-guide-description: 設定您的Adobe Commerce應用程式功能與服務。
 feature: Configuration
-source-git-commit: d86b9eb07a9da6dc93234f8a02103c543bbead68
+source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -34,28 +34,28 @@ ht-degree: 1%
       + [使用環境變數](deployment/example-environment-variables.md)
 + 快取 {#cache}
    + [快取概述](cache/caching-overview.md)
-   + [快取型別](cache/cache-types.md)
-   + [快取選項](cache/cache-options.md)
-   + [L2快取](cache/level-two-cache.md)
+   + [設定快取前端](cache/cache-types.md)
+   + [快取後端選項](cache/cache-options.md)
+   + [L2快取設定](cache/level-two-cache.md)
    + Redis {#redis}
-      + [設定Redis](cache/config-redis.md)
-      + [預設快取使用Redis](cache/redis-pg-cache.md)
-      + [使用Redis進行工作階段儲存](cache/redis-session.md)
-      + [設定EC2執行處理的ElastiCache](cache/redis-elasticache-for-ec2.md)
+      + [安裝及設定Redis](cache/config-redis.md)
+      + [為預設和頁面快取設定Redis](cache/redis-pg-cache.md)
+      + [設定工作階段儲存的Redis](cache/redis-session.md)
+      + [使用AWS ElastiCache設定Redis](cache/redis-elasticache-for-ec2.md)
    + Valkey {#valkey}
-      + [設定Valkey](cache/config-valkey.md)
-      + [使用Valkey作為預設快取](cache/valkey-pg-cache.md)
-      + [使用Valkey進行工作階段儲存](cache/valkey-session.md)
+      + [安裝及設定Valkey](cache/config-valkey.md)
+      + [設定預設和頁面快取的Valkey](cache/valkey-pg-cache.md)
+      + [設定Valkey以儲存工作階段](cache/valkey-session.md)
    + 亮漆 {#varnish}
       + [塗漆概述](cache/config-varnish.md)
       + [安裝清漆](cache/config-varnish-install.md)
-   + [網頁伺服器](cache/config-varnish-server.md)
-   + [設定Commerce應用程式](cache/configure-varnish-commerce.md)
-   + [進階清漆組態](cache/config-varnish-advanced.md)
-   + [快取清除](cache/use-varnish-cache.md)
-   + [快取清除多個Varnish例項](cache/use-multiple-varnish-cache.md)
-   + [驗證清漆組態](cache/config-varnish-final.md)
-   + [清漆ESI區塊](cache/use-varnish-esi.md)
+      + [設定網頁伺服器](cache/config-varnish-server.md)
+      + [設定Commerce應用程式](cache/configure-varnish-commerce.md)
+      + [進階清漆組態](cache/config-varnish-advanced.md)
+      + [驗證清漆組態](cache/config-varnish-final.md)
+      + [使用清漆清除快取](cache/use-varnish-cache.md)
+      + [使用多個Varnish執行個體進行快取清除](cache/use-multiple-varnish-cache.md)
+      + [清漆ESI區塊](cache/use-varnish-esi.md)
    + [靜態內容快取](cache/static-content-signing.md)
 + 命令列 {#cli}
    + [命令列工具](cli/config-cli.md)
@@ -81,7 +81,7 @@ ht-degree: 1%
    + [執行單元測試](cli/unit-tests.md)
    + [轉換版面檔案](cli/convert-layout-files.md)
    + [產生效能測試資料](cli/generate-data.md)
-   + [執行支援公用程式(僅限Commerce)](cli/run-support-utilities.md)
+   + [執行支援公用程式（僅限Commerce）](cli/run-support-utilities.md)
 + 組態檔 {#files}
    + [用於部署的組態檔](reference/deployment-files.md)
    + [設定型別](reference/config-create-types.md)
@@ -151,4 +151,4 @@ ht-degree: 1%
       + [驗證分割資料庫](storage/multi-master-verify.md)
       + [資料庫復寫](storage/multi-master-replication.md)
       + [還原為單一資料庫](storage/revert-split-database.md)
-+ [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
++ [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

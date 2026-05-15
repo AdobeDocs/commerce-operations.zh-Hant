@@ -1,16 +1,16 @@
 ---
-title: 設定網頁伺服器
+title: 設定網頁伺服器以供清漆快取
 description: 瞭解如何設定網頁伺服器以搭配Adobe Commerce的Varnish快取。 探索連線埠組態和設定需求。
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# 設定網頁伺服器
+# 設定Varnish快取的網頁伺服器
 
 將網頁伺服器設定為在預設連線埠80以外的連線埠上接聽，因為Varnish會直接回應傳入的HTTP要求，而非網頁伺服器。
 

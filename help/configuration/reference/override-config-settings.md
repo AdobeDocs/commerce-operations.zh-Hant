@@ -2,9 +2,9 @@
 title: 覆寫組態設定
 description: 瞭解如何使用環境變數覆寫Adobe Commerce組態設定。 探索設定管理和部署最佳實務。
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1270'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->檢視&#x200B;_雲端基礎結構上的Commerce_&#x200B;中的[設定環境](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=zh-Hant)主題。
+>檢視&#x200B;_雲端基礎結構上的Commerce_&#x200B;中的[設定環境](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html)主題。
 
 ## 環境變數
 
@@ -62,8 +62,8 @@ ht-degree: 0%
   如需有關範圍的詳細資訊，請參閱：
 
    - [步驟1：尋找網站或商店檢視範圍值](#step-1-find-the-website-or-store-view-scope-value)
-   - [有關範圍的Commerce使用手冊主題](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [範圍快速參考](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [有關範圍的Commerce使用手冊主題](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [範圍快速參考](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>`是以雙底線字元取代`/`的設定路徑。 如需詳細資訊，請參閱[步驟2：設定系統變數](#step-2-set-global-website-or-store-view-variables)。
 
@@ -224,7 +224,7 @@ ht-degree: 0%
 
 1. 決定範圍。
 
-   如步驟1所述，在[資料庫](#find-a-website-or-store-view-scope-in-the-database)中尋找範圍：尋找網站或存放區檢視範圍值。 (您也可以在Admin中找到值，如步驟2：設定全域、網站或存放區檢視變數&rbrack;&#x200B;(#step-2-set-global-website-or-store-view-variables中的&lbrack;表格中所示。
+   如步驟1所述，在[資料庫](#find-a-website-or-store-view-scope-in-the-database)中尋找範圍：尋找網站或存放區檢視範圍值。 (您也可以在Admin中找到值，如步驟2：設定全域、網站或商店檢視變數](#step-2-set-global-website-or-store-view-variables)中的[表格中所示。
 
    例如，範圍可以是`CONFIG__WEBSITES__DEFAULT`。
 
@@ -247,12 +247,12 @@ $_ENV['CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME'] = 'http
 $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '1234';
 ```
 
-使用環境變數[&#128279;](../deployment/example-environment-variables.md)設定組態值中顯示的逐步範例。
+使用環境變數](../deployment/example-environment-variables.md)設定組態值[中顯示的逐步範例。
 
 >[!WARNING]
 >
 >- 若要使用您在`$_ENV`陣列中設定的值，您必須在`php.ini`檔案中設定`variables_order = "EGPCS"`（環境、Get、Post、Cookie和伺服器）。 如需詳細資訊，請參閱[PHP檔案](https://www.php.net/manual/en/ini.core.php)。
 >
->- 針對雲端基礎結構上的Adobe Commerce，如果您嘗試使用[Project Web介面](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=zh-Hant#configure-the-project)覆寫組態設定，您必須在變數名稱前面加上`env:`。 例如：
+>- 針對雲端基礎結構上的Adobe Commerce，如果您嘗試使用[Project Web介面](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)覆寫組態設定，您必須在變數名稱前面加上`env:`。 例如：
 >
 >![環境變數範例](../../assets/configuration/cloud-console-envvariable.png)

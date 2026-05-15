@@ -3,7 +3,7 @@ title: '[!DNL Data Migration Tool]技術規格'
 description: 瞭解 [!DNL Data Migration Tool] 的實作詳細資料，以及在Magento 1和Magento 2之間傳輸資料時如何擴充。
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '2113'
 ht-degree: 0%
@@ -227,7 +227,7 @@ ht-degree: 0%
 
 步驟是一個單位，提供移轉一些個別資料所需的功能。 步驟可包含一或多個階段（完整性檢查、資料、磁碟區檢查以及差異）。
 
-依預設，有幾個步驟（[對應](#map-step)、[EAV](#eav)、[URL重寫](#url-rewrite-step)等）。 您也可以選擇新增自己的步驟。
+依預設，有幾個步驟（[對應](#map-step)、[EAV](#eav-step)、[URL重寫](#url-rewrite-step)等）。 您也可以選擇新增自己的步驟。
 
 步驟相關類別位於src/Migration/Step目錄中。
 

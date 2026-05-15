@@ -3,7 +3,7 @@ title: 為您的搜尋引擎設定Apache
 description: 請依照下列步驟，使用Apache Web Server設定搜尋引擎，以供Adobe Commerce的內部部署安裝。
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 >
 >2.4.4版本新增OpenSearch支援。 OpenSearch是Elasticsearch的相容復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
 
-本節探討如何將Apache設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與Apache[&#128279;](#secure-communication-with-apache)的安全通訊中討論。
+本節探討如何將Apache設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與Apache](#secure-communication-with-apache)的[安全通訊中討論。
 
 >[!NOTE]
 >
@@ -211,4 +211,4 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 {{$include /help/_includes/verify-secure-communication.md}}
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->
