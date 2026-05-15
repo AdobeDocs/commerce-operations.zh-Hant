@@ -84,7 +84,7 @@ ht-degree: 0%
 
    您剛才設定的選項顯示如下：
 
-   在Admin](../../assets/configuration/split-deploy-not-editable.png)中無法編輯![設定選項
+   在Admin![&#128279;](../../assets/configuration/split-deploy-not-editable.png)中無法編輯設定選項
 
 >[!INFO]
 >
