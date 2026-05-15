@@ -35,7 +35,7 @@ Commerce翻譯可讓您針對多個地區和市場自訂您的商店並將其當
 
 1. 您可以將翻譯字典封裝成語言套件，然後提供套件給Commerce商店管理員。
 
-1. 在管理員中，商店管理員[設定翻譯](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize)。
+1. 在管理員中，商店管理員[設定翻譯](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-localize)。
 
 命令選項：
 

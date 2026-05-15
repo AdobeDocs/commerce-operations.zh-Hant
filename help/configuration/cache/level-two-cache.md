@@ -30,7 +30,7 @@ Commerce會將雜湊資料版本儲存在遠端快取中，並將尾碼附加至
 
 >[!INFO]
 >
->對於雲端基礎結構上的Adobe Commerce，您可以針對L2快取設定使用[部署變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)。
+>對於雲端基礎結構上的Adobe Commerce，您可以針對L2快取設定使用[部署變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#redis_backend)。
 
 ## 舊版L2快取設定(RemoteSynchronizedCache)
 
