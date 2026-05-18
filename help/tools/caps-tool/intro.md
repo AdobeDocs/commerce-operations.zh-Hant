@@ -2,8 +2,7 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: 瞭解 [!DNL Cloud Automation Patching Service (CAPS)]、其用途、存取方法，以及自動修補的最佳實務
 hide: true
-hidefromtoc: true
-source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -53,7 +52,7 @@ ht-degree: 0%
 
 瞭解Adobe雲端自動修補服務，以及此工具如何協助使用者快速尋找及套用安全性修補程式。 下列影片說明如何透過SWAT儀表板存取、選擇您的專案和環境，以及按一下即可套用修補程式。
 
->[!VIDEO](https://video.tv.adobe.com/v/3476258/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## 常見使用案例
 

@@ -2,8 +2,7 @@
 title: ' [!DNL Cloud Automation Patching Service (CAPS)] 工作流程的運作方式'
 description: 瞭解 [!DNL Cloud Automation Patching Service (CAPS)] 工作流程程式，包括術語、工作流程階段和自動化修補管理作業。
 hide: true
-hidefromtoc: true
-source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 0%
