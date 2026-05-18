@@ -23,4 +23,4 @@ ht-degree: 1%
 - 參考 {#reference}
    - [客戶個人資訊（2.x版）](privacy/data-m2.md)
    - [客戶個人資訊（1.x版）](privacy/data-m1.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
