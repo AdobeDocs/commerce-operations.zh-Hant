@@ -3,9 +3,9 @@ title: 維護與支援概述
 description: 正確維護及支援您新啟動的Adobe Commerce實作。
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 下圖顯示成功轉換結果中將包含的階段和活動：
 
-![顯示轉換程式階段的圖表](../../assets/playbooks/transition-diagram.svg)
+![顯示轉換程式階段的圖表](../../assets/playbooks/transition-diagram.png)
 
 >[!NOTE]
 >
@@ -33,5 +33,5 @@ ht-degree: 0%
 為您的企業找出正確的支援模式，以持續增強和最佳化您的平台（以及整體商務實務），是維持實施過程中所做所有艱苦工作的關鍵步驟。 有了完整的持續支援計畫，您的商務網站就可以跟上客戶的期望，並持續達成您的目標。
 
 部署Adobe Commerce時，請務必思考維護和支援策略中應包含哪些專案。
-Adobe Commerce授權包含專家支援。 如需專家支援與Adobe支援計畫的詳細資訊，請參閱[Adobe支援計畫](https://business.adobe.com/tw/customers/consulting-services/premier-support.html)。
+Adobe Commerce授權包含專家支援。 如需專家支援與Adobe支援計畫的詳細資訊，請參閱[Adobe支援計畫](https://business.adobe.com/customers/consulting-services/premier-support.html)。
 除了Adobe支援計畫之外，還有舊版的Magento支援條款。 若要瞭解哪些支援服務適用於您，請參閱您的合約以瞭解您擁有哪些支援合約，或聯絡您的Adobe客戶團隊。

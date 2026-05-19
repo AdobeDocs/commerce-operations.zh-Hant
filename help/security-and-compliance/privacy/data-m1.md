@@ -2,9 +2,9 @@
 title: 客戶個人資訊參考（1.x版）
 description: 瞭解Magento 1.x中客戶個人資訊的資料流和資料庫實體對應。
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 客戶登入並檢視數個不同頁面或結帳時，Commerce會載入客戶資訊。
 
-![前端資料存取點](../../assets/security-compliance/frontend-data-access-points.svg)
+![前端資料存取點](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### 後端資料進入點
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 當商家檢視幾種型別的網格、按一下網格以檢視詳細資訊時，Commerce會載入客戶資訊，並執行各種其他工作。
 
-![後端資料存取點](../../assets/security-compliance/backend-data-access-points.svg)
+![後端資料存取點](../../assets/security-compliance/backend-data-access-points.png)
 
 ## 資料庫實體
 
