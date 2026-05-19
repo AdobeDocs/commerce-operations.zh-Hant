@@ -2,9 +2,9 @@
 title: 客戶個人資訊參考（2.x版）
 description: 瞭解Adobe Commerce 2.x中客戶個人資訊的資料流圖表和資料庫實體對應。
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 客戶登入並檢視數個不同頁面或結帳時，Adobe Commerce會載入客戶資訊。
 
-![前端資料存取點](../../assets/security-compliance/frontend-data-access-points.svg)
+![前端資料存取點](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### 後端資料進入點
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 當商家檢視幾種型別的網格、按一下網格以檢視詳細資訊時，Adobe Commerce會載入客戶資訊，並執行各種其他工作。
 
-![後端資料存取點](../../assets/security-compliance/backend-data-access-points.svg)
+![後端資料存取點](../../assets/security-compliance/backend-data-access-points.png)
 
 ## 資料庫實體
 

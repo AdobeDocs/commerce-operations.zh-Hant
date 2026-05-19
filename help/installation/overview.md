@@ -1,11 +1,11 @@
 ---
 title: 內部部署安裝概述
-description: 瞭解Adobe Commerce的內部部署安裝程式。 探索伺服器需求、設定步驟和部署最佳實務。
+description: 了解 Adobe Commerce 的內部部署安裝程序。 探索伺服器需求、設定步驟和部署最佳做法。
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
+source-wordcount: '540'
+ht-degree: 3%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 下圖說明為內部部署環境安裝Adobe Commerce的主要步驟：
 
-![安裝的運作方式](../assets/installation/on-premises-install.drawio.svg)
+![安裝的運作方式](../assets/installation/on-premises-install.png)
 
 ### 設定您的伺服器環境
 
