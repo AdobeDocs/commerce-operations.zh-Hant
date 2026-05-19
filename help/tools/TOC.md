@@ -2,7 +2,7 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: bf7216db7919b3f62e66cd7c27c0db023b2b6441
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
 source-wordcount: '9953'
 ht-degree: 0%
@@ -27,11 +27,11 @@ ht-degree: 0%
    - [警報](site-wide-analysis-tool/alerts.md)
    - [修補程式](site-wide-analysis-tool/patches.md)
 - 大寫 {#caps-tool}
-   - [簡介](caps-tool/intro.md)
-   - [存取](caps-tool/access.md)
-   - [工作流程](caps-tool/workflow.md)
-   - [最佳實務](caps-tool/best-practices.md)
-   - [疑難排解](caps-tool/troubleshooting.md)
+   - {hide-from-toc}[簡介](caps-tool/intro.md)
+   - {hide-from-toc}[存取](caps-tool/access.md)
+   - {hide-from-toc}[工作流程](caps-tool/workflow.md)
+   - {hide-from-toc}[最佳實務](caps-tool/best-practices.md)
+   - {hide-from-toc}[疑難排解](caps-tool/troubleshooting.md)
 - 在Adobe Commerce上管理警報 {#managed-alerts-for-adobe-commerce}
    - [Adobe Commerce上的受管理警示： [!DNL Redis] 記憶體嚴重警示](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Adobe Commerce的管理警報：磁碟警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
