@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 description: Adobe Commerce作業指南
 feature-set: Commerce
-git-repo: https://github.com/AdobeDocs/commerce-operations.zh-Hant
+git-repo: https://github.com/AdobeDocs/commerce-operations.en
 index: true
 level: Experienced
 landing-page-name: commerce
@@ -11,13 +11,13 @@ mini-toc-levels: 2
 product: magento
 role: Admin, Developer
 solution: Commerce
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+usetq: true
 solution-title: Commerce
 topic: Administration, Commerce, Development
 type: Documentation
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
-source-git-commit: 7cc8aed1a128e22fc588e9c8fb8ff6fa4a4b75b1
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+source-git-commit: 1c6e6ee398f55823cbbcd7aa8a69507f769a15d2
 workflow-type: tm+mt
 source-wordcount: 176
 ht-degree: 0%
