@@ -3,9 +3,9 @@ title: 設定預設和頁面快取的Redis
 description: 瞭解如何將Redis設定為Adobe Commerce的預設和頁面快取後端。 探索CLI命令、env.php設定和連線驗證。
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: d82061ad2fa4676bd8fa71a9d34a954444eb0f54
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,19 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parame
 | `cache-backend-redis-port` | 連線埠 | Redis伺服器接聽連線埠 | `6379` |
 | `cache-backend-redis-db` | 資料庫 | 如果您對預設和全頁快取都使用Redis，則此為必要專案。 指定其中一個快取的資料庫編號；另一個快取預設使用0。<br><br>**重要事項**：如果您對多種型別的快取使用Redis，則資料庫編號必須不同。 建議您將預設快取資料庫編號指派為0，將頁面快取資料庫編號指派為1，並將工作階段儲存資料庫編號指派為2。 | `0` |
 | `cache-backend-redis-password` | 密碼 | 設定Redis密碼可啟用其中一項內建的安全性功能： `auth`命令，它要求使用者端驗證以存取資料庫。 密碼是直接在Redis的組態檔中設定： `/etc/redis/redis.conf` | |
-| `cache-backend-redis-use-lua` | use_lua | 啟用或停用Lua。 <br><br>**Lua**： Lua可執行Redis內的部分應用程式邏輯，藉由原子執行來改善效能並確保資料的一致性。 | `0` |
-| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | 啟用或停用記憶體回收的Lua。 <br><br>**Lua**： Lua可執行Redis內的部分應用程式邏輯，藉由原子執行來改善效能並確保資料的一致性。 | `1` |
+| `cache-backend-redis-use-lua` | use_lua | 啟用或停用所有Redis作業的Lua指令碼。 <br><br>**預設：保留在`0`.** Lua模式預設為停用，以防止在啟用Lua時，隨附的Redis程式庫(1.17.x)出現的已知效能回歸和GraphQL快取遺漏問題。 | `0` |
+| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | 啟用或停用記憶體回收的Lua指令碼（`backend_clean_cache` cron工作）。 <br><br>**預設：保留在`1`.** 刻意啟用，以確保在GC期間進行原子標籤設定清理。 若沒有它，當`backend_clean_cache` cron與快取儲存作業同時執行時，可能會發生競爭條件，使快取專案在快取標籤索引中沒有對應的記錄。 這會導致標籤式失效自動失敗 — 例如，更新產品價格可能不會使產品快取失效，而是需要完整的快取排清。 | `1` |
+
+### Lua模式
+
+啟用時，Lua模式會將多個Redis作業（快取寫入、標籤更新、記憶體回收）整合到透過`EVALSHA`在伺服器端執行的單一Atomic指令碼。 這可防止並行請求中的交錯，例如，確保將快取專案及其標籤成員資格一起寫入。
+
+>[!WARNING]
+>
+>不瞭解Adobe Commerce版本的影響，請勿變更`use_lua`和`use_lua_on_gc`的預設值：
+>
+>- **`use_lua`**：在Adobe Commerce 2.4.7或2.4.8 （資料庫`colinmollenhour/cache-backend-redis` 1.17.1）上啟用此專案可能會導致快取損毀，以及GraphQL快取遺漏問題。
+>- **`use_lua_on_gc`**：在Adobe Commerce 2.4.8上停用此專案會移除廢棄專案收集期間的原子保護，而且可能導致標籤式快取失效無訊息地失敗，需要完整快取排清才能復原。
 
 ## 命令範例（預設快取）
 
