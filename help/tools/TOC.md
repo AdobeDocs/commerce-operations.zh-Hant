@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: 08e7a82bb2f079d404250011b2822980601394ca
 workflow-type: tm+mt
-source-wordcount: '9953'
+source-wordcount: '9970'
 ht-degree: 0%
 
 ---
@@ -994,6 +994,7 @@ ht-degree: 0%
          - [ACP2E-4419：成功在店面進行reCAPTCHA v2驗證後，禮品卡在結帳時未正確套用](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4601：重新儲存付款授權交易自我參考parent_id並觸發無限回圈/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
