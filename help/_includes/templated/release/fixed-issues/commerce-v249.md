@@ -73,7 +73,7 @@ _AC-1608 - [GitHub問題](https://github.com/magento/magento2/issues/34342) - [G
 
 _AC-6419 - [GitHub問題](https://github.com/magento/magento2/issues/35934) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### `/V1/order/{orderId}/ship` API端點發生內部伺服器錯誤
+#### `/V1/order/&lbrace;orderId&rbrace;/ship` API端點發生內部伺服器錯誤
 
 系統現在修正`/V1/order/{orderId}/ship` API端點中的內部伺服器錯誤，並傳回400錯誤，因為要求的格式不正確。
 
