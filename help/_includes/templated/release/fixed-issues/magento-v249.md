@@ -1,7 +1,7 @@
 ---
-source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
+source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '32485'
+source-wordcount: '32399'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 已修正v2.4.9中的問題
 
-我們已修正Magento Open Source 2.4.9核心程式碼中的581個問題。 此版本中包含的已修正問題子集說明如下。
+我們已修正Magento Open Source 2.4.9核心程式碼中的580個問題。 此版本中包含的已修正問題子集說明如下。
 
 ### API
 
@@ -73,7 +73,7 @@ _AC-1608 - [GitHub問題](https://github.com/magento/magento2/issues/34342) - [G
 
 _AC-6419 - [GitHub問題](https://github.com/magento/magento2/issues/35934) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### `/V1/order/&lbrace;orderId&rbrace;/ship` API端點發生內部伺服器錯誤
+#### `/V1/order/{orderId}/ship` API端點發生內部伺服器錯誤
 
 系統現在修正`/V1/order/{orderId}/ship` API端點中的內部伺服器錯誤，並傳回400錯誤，因為要求的格式不正確。
 
@@ -1805,7 +1805,7 @@ _AC-15336 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/6
 
 #### 正在編譯已停用模組的程式碼
 
-此提取請求逸出在程式碼編譯之前已停用模組。
+已將`setup:di:compile`的行為變更為不再編譯已停用模組的程式碼。
 
 _AC-10933 - [GitHub問題](https://github.com/magento/magento2/issues/38241) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/39723)_
 
@@ -1924,15 +1924,6 @@ _AC-14312 - [GitHub問題](https://github.com/magento/magento2/issues/39593) - [
 AC-14424
 
 _AC-14424 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/7bdafaa2)_
-
-#### Magento 2.4.8使用不遵循語意版本設定的開發套件
-
-Magento 2.4.8需要pdein/pdepend和phpmd/phpmd (3.x-dev)的開發版本才能與PHP 8.4相容。
-這些開發版本與協力廠商工具衝突，這些工具預期會符合SemVer的套件，因此無法進行某些升級。
-暫時解決方法是為composer.json中的開發版本取名（例如「3.x-dev as 3.99.0」），以便在滿足語意版本化的同時提供相容性。
-這可確保PHP 8.4的支援並避免衝突，直到穩定發行版本可用。
-
-_AC-14519 - [GitHub問題](https://github.com/magento/magento2/issues/39796)_
 
 #### MView機制會在執行觸發程式時無訊息地忽略錯誤
 
@@ -3657,7 +3648,7 @@ _ACP2E-4212 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### 無法在排程更新預覽中的網站之間導覽
 
-在此修正之前，嘗試預覽具有自訂網域的存放區內容時，排定的更新預覽會中斷。 此項修正後，自訂商店網域可依原樣預覽，並在預覽iframe中導覽。 此修正涵蓋產品、類別、CMS頁面和CMS區塊，並支援使用`{{store url}}`標籤標籤的導覽連結，如[Adobe Commerce變數和標籤標籤](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/variables/markup-tags)中所述。
+在此修正之前，嘗試預覽具有自訂網域的存放區內容時，排定的更新預覽會中斷。 此項修正後，自訂商店網域可依原樣預覽，並在預覽iframe中導覽。 此修正涵蓋產品、類別、CMS頁面和CMS區塊，並支援使用`{{store url}}`標籤標籤的導覽連結，如[Adobe Commerce變數和標籤標籤](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)中所述。
 
 _ACP2E-4308 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/0a3b7032)_
 
