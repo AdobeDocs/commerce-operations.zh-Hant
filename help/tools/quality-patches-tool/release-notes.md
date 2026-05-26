@@ -3,7 +3,7 @@ title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 5b81bd7baa4b00a9100c3e01a20a2b0189b85f92
+source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
 workflow-type: tm+mt
 source-wordcount: '30379'
 ht-degree: 0%
@@ -745,7 +745,7 @@ ht-degree: 0%
 * **ACSD-51792** （適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.6） — 修正啟用[!DNL Google Tag Manager] 4時頁面沒有曝光事件的問題。
 * **ACSD-51471** （適用於Adobe Commerce >=2.4.3 &lt;2.4.7） — 修正管理員使用者無法針對使用簡單產品（本身已有排程更新）的套件產品儲存排程更新的問題。
 * **ACSD-51700** （適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.7） — 修正在Admin的可下載產品編輯頁面上切換商店檢視時發生的錯誤。
-* **ACSD-51120** （適用於Adobe Commerce >=2.3.7 &lt;2.4.3） — 修正包含透過中繼更新更新的GraphQL區塊的GET頁面未清除CMSCMS請求快取的問題。
+* **ACSD-51120** （適用於Adobe Commerce >=2.3.7 &lt;2.4.3） — 修正包含透過測試更新更新更新的GraphQL區塊的CMS頁面未清除CMS GET要求快取的問題。
 * **ACSD-51240** （適用於Adobe Commerce >=2.4.4 &lt;2.4.6） — 修正透過公司登錄檔格進行註冊時，所上傳檔案遺失的問題。
 * **ACSD-51907** （適用於Adobe Commerce >=2.4.2 &lt;2.4.3） — 修正受限管理員使用者無法以離線退款建立銷退折讓單的問題。
 * **ACSD-52148** （適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.4） — 修正[!DNL Google V3 reCAPTCHA]管理員登入偶爾失敗的問題。
@@ -991,7 +991,7 @@ ht-degree: 0%
 * **MDVA-40961** （*適用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.4*） — 修正當購物車中已有最小專案數量時，無法將其他專案新增到購物車的問題。
 * **MDVA-44887** （*用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.5*） — 修正&#x200B;*Uncaught SyntaxError： Admin面板中意外的權杖&#39;const&#39;*&#x200B;錯誤。
 * **MDVA-43718** （*用於Adobe Commerce和Magento Open Source >=2.3.0 &lt;2.4.5*） — 修正&#x200B;*消費者無權存取%資源。* 從自訂整合存取共用目錄時顯示的錯誤。
-* **MDVA-44660** （*適用於Adobe Commerce和Magento Open Source >=2.4.2-p1 &lt;2.4.5*） — 修正重音符號字元``` ` ```無法用於客戶名字和姓氏的問題。
+* **MDVA-44660** （*適用於Adobe Commerce和Magento Open Source >=2.4.2-p1 &lt;2.4.5*） — 修正重音符號字元(\&#39;)無法用於客戶名字和姓氏的問題。
 * **MDVA-40896** （*用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.4*） — 修正&#x200B;*錯誤： TypeError：傳遞至Magento的引數3非同步產品批次API中出現*&#x200B;錯誤。
 * **MDVA-38559** （*適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.3*） — 修正具有多個訂閱之客戶的&#x200B;*/V1/customers/search API*&#x200B;錯誤。
 * **MDVA-44533** （*適用於Adobe Commerce和Magento Open Source >=2.3.1 &lt;2.4.4*） — 修正錯誤將折扣套用至套件組合子產品的問題。
@@ -1373,7 +1373,7 @@ ht-degree: 0%
 * **MDVA-31242** (*適用於Adobe Commerce >=2.3.0 &lt;2.4.1 （含B2B副檔名*）) — 修正「銷退折讓單」格線中顯示錯誤貨幣符號的問題。
 * **MDVA-31295** （*適用於Adobe Commerce >=2.3.0 &lt;2.4.2*） — 修正部分訂單完成且專案徵稅時未計算獎勵點數的問題。
 * **MDVA-30112** （*適用於Adobe Commerce >=2.3.4 &lt;2.4.2*） — 修正若訂購數量超過&#x200B;*bunch-size*&#x200B;值，Adobe Commerce會將狀態為&#x200B;*擱置*&#x200B;的訂購視為不一致的問題。
-* **MDVA-31150** （*適用於Adobe Commerce >=2.3.0 &lt;2.4.2*） — 修正GET Invoice Rest API呼叫未傳回商店信用卡與禮品卡餘額的問題，當商業發票以Rest API呼叫過帳且訂單部份由商店信用卡與禮品卡帳戶支付時。
+* **MDVA-31150** （*適用於Adobe Commerce >=2.3.0 &lt;2.4.2*） — 修正GET Invoice Rest API呼叫未傳回商店信用卡與禮品卡餘額的問題，當商業發票以Rest API呼叫過帳且訂單部分由商店信用卡與禮品卡帳戶支付時。
 * **MDVA-30963** （*適用於Adobe Commerce >=2.3.2 &lt;2.4.2*） — 修正產品篩選結果設為僅包含針對Admin中的&#x200B;*所有商店檢視*&#x200B;範圍所指定值的問題，其中包括在商店檢視層級上覆寫值的產品。
 * **MDVA-29954** (*適用於Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 || 2.4.2含B2B擴充功能*) — 修正&#x200B;*新公司註冊要求*&#x200B;與&#x200B;*您已連結至公司*&#x200B;電子郵件傳送錯誤地址的問題。
 * **MDVA-28357** (*適用於Adobe Commerce >=2.3.2 &lt;2.3.6 || >=2.4.0 &lt;2.4.1*) — 在[!DNL ElasticSearch]索引的SKU欄位中，以具有關鍵字tokenizer的自訂分析器取代標準分析器，讓萬用字元搜尋查詢可搭配包含連字型大小(&quot;-&quot;)的SKU運作。

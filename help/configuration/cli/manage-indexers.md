@@ -2,7 +2,7 @@
 title: 管理索引子
 description: 瞭解如何使用命令列工具檢視和管理Adobe Commerce索引子。 探索索引器命令、狀態檢查和重新索引技術。
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ed21cbaf145493614d274da6eee41f6b1ae39ff2
+source-git-commit: 2c221ccf793a0b469fc6984b443699c30a6064ce
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 0%
@@ -188,7 +188,7 @@ MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fu
 bin/magento indexer:reset [indexer]
 ```
 
-其中```[indexer]```是以空格分隔的索引子清單。 省略`[indexer]`以讓所有索引子失效。
+其中`[indexer]`是以空格分隔的索引子清單。 省略`[indexer]`以讓所有索引子失效。
 
 範例結果：
 

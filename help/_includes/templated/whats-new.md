@@ -1,7 +1,7 @@
 ---
-source-git-commit: d90419967a22835efff29ff609caea342a86a438
+source-git-commit: 75c28c839ee5e6405550df0149ef4196f7e15a1c
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2685'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9發行說明</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9發行說明</a>：釐清AC-10933 <code class="language-plaintext highlighter-rouge">setup:di:compile</code>修正、移除已取消的修正AC-14519以及已調整的修正問題計數。<br /><em>評分： <a href="https://github.com/hostep">hostep</a></em></p>
+      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9發行說明</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9發行說明</a>：釐清AC-10933 <code>setup:di:compile</code>修正、移除已取消的修正AC-14519以及已調整的修正問題計數。<br /><em>評分： <a href="https://github.com/hostep">hostep</a></em></p>
 </td>
       <td>
         技術意見回饋
@@ -31,7 +31,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e5a69a282839a393d6eb873af9938208706af50">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737之QPT 1.1.79修正的詳細說明： Bin/magento設定:db:狀態命令無法辨識JSON資料型別</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737之QPT 1.1.79修正的詳細說明： Bin/magento <code>setup:db:status</code>命令無法辨識JSON資料型別</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -53,7 +53,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601的QPT 1.1.79修正的詳細說明：重新儲存付款授權交易自我參照parent_id並觸發無限回圈/OOM</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601的QPT 1.1.79修正的詳細說明：重新儲存付款授權交易自我參照parent_id並觸發無限回圈/OOM</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -129,7 +129,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/12093993f31c321afc75da6f2c661b4a9e6fd711">認可</a></td>
     </tr>
     <tr>
-      <td><p>已更新v2.4.9的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/packages/adobe-commerce">套件</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions">必要的PHP延伸模組</a>。<br />已更新安全性修補程式發行說明(2.4.4、2.4.5、2.4.6、2.4.7、2.4.8)，以參考<a href="https://helpx.adobe.com/tw/security/products/magento/apsb26-49.html">Adobe安全性公告APSB26-49</a>並記錄<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8修補程式</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7修補程式</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6的新平台相容性亮點修補程式</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5修補程式</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4修補程式</a>。<br />已更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9發行說明</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9發行說明</a> （含GA已修正問題資料），並包含與2.4.9發行版本一致的路徑（取代Beta版的已修正問題來源）。<br />已更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9發行說明</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9發行說明</a> （含GA）的重點區段。<br />已更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a> （含2.4.9）、最近的安全性修補程式行，以及內部部署和雲端相依性表格。<br />已將<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/uct">UCT CLI參考</a>更新為3.0.27版。<br />已更新Commerce 2.4.9 Symfony快取支援的快取設定檔案：<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache">將Redis用於預設快取</a> — 已新增將Zend和Symfony快取實作搭配效能最佳化的索引標籤內容。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache">將Valkey用於預設快取</a> — 已新增將Zend和Symfony快取實作搭配效能最佳化的索引標籤內容。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/level-two-cache"> — 已新增現代快取symfony L2快取實現（<code class="language-plaintext highlighter-rouge">symfony_l2</code>後端）支援過時的快取。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/cache-options">快取選項</a> — 新增了比較基於Zend的快取後端和Symfony快取後端的實現選項。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/cache-types">快取型別</a> — 新增了對新式Symfony快取後端型別的引用。</a></p>
+      <td><p>已更新v2.4.9的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/packages/adobe-commerce">套件</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions">必要的PHP延伸模組</a>。<br />已更新安全性修補程式發行說明(2.4.4、2.4.5、2.4.6、2.4.7、2.4.8)，以參考<a href="https://helpx.adobe.com/tw/security/products/magento/apsb26-49.html">Adobe安全性公告APSB26-49</a>並記錄<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8修補程式</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7修補程式</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6的新平台相容性亮點修補程式</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5修補程式</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4修補程式</a>。<br />已更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9發行說明</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9發行說明</a> （含GA已修正問題資料），並包含與2.4.9發行版本一致的路徑（取代Beta版的已修正問題來源）。<br />已更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9發行說明</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9發行說明</a> （含GA）的重點區段。<br />已更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a> （含2.4.9）、最近的安全性修補程式行，以及內部部署和雲端相依性表格。<br />已將<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/uct">UCT CLI參考</a>更新為3.0.27版。<br />已更新Commerce 2.4.9 Symfony快取支援的快取設定檔案：<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache">將Redis用於預設快取</a> — 已新增將Zend和Symfony快取實作搭配效能最佳化的索引標籤內容。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache">將Valkey用於預設快取</a> — 已新增將Zend和Symfony快取實作搭配效能最佳化的索引標籤內容。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/level-two-cache"> — 已新增現代快取symfony L2快取實現（<code>symfony_l2</code>後端）支援過時的快取。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/cache-options">快取選項</a> — 新增了比較基於Zend的快取後端和Symfony快取後端的實現選項。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/cache-types">快取型別</a> — 新增了對新式Symfony快取後端型別的引用。</a></p>
 </td>
       <td>
         重大更新
@@ -521,7 +521,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增正確覆寫<code class="language-plaintext highlighter-rouge">env.php</code>中Adobe Commerce預設L2快取目錄的指示，以確保快取檔案儲存在預期的位置，並防止分割快取目錄和GlusterFS分段錯誤。 請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">Redis與Valkey服務組態的最佳實務</a>中的更新指南。</p>
+      <td><p>新增正確覆寫<code>env.php</code>中Adobe Commerce預設L2快取目錄的指示，以確保快取檔案儲存在預期的位置，並防止分割快取目錄和GlusterFS分段錯誤。 請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">Redis與Valkey服務組態的最佳實務</a>中的更新指南。</p>
 </td>
       <td>
         技術，意見回饋

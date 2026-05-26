@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin
 exl-id: f30a9554-cacf-4406-b6b4-a43d680597bc
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ QPT v1.1.15包含下列修補程式：
 1. **MDVA-38559**：修正具有多個訂閱之客戶的&#x200B;*/V1/customers/search API*&#x200B;錯誤。
 1. **MDVA-40896**：修正非同步產品批次API中的&#x200B;*錯誤： TypeError：傳遞至Magento的引數3錯誤*。
 1. **MDVA-40961**：修正當購物車中已有專案的最低數量時，無法將其他專案新增到購物車的問題。
-1. **MDVA-43718**：修正&#x200B;*消費者無權存取%resources。從自訂整合存取共用目錄時出現*&#x200B;錯誤。
+1. **MDVA-43718**：修正&#x200B;*消費者無權存取%resources。* 從自訂整合存取共用目錄時顯示的錯誤。
 1. **MDVA-44533**：修正錯誤將折扣套用至套件組合子產品的問題。
-1. **MDVA-44660**：修正重音符號字元``` ` ```無法用於客戶名字和姓氏的問題。
+1. **MDVA-44660**：修正重音符號字元(\&#39;)無法用於客戶名字與姓氏的問題。
 1. **MDVA-44887**：修正&#x200B;*Uncaught SyntaxError： Admin面板中意外的權杖&#39;const&#39;*&#x200B;錯誤。
 
 使用左側的功能表，導覽至特定的修補程式頁面。
