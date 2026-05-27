@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: cfac00d94a7ac89c2a36aa122a18f89e5f77f630
+source-git-commit: 09abc74b48c1ac07a3553aed37fcb0c80e3bbefe
 workflow-type: tm+mt
-source-wordcount: '9992'
+source-wordcount: '10033'
 ht-degree: 0%
 
 ---
@@ -994,8 +994,10 @@ ht-degree: 0%
          - [ACP2E-4419：成功在店面進行reCAPTCHA v2驗證後，禮品卡在結帳時未正確套用](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4411：在多貨幣設定中，組合產品價格在產品詳細資料頁面與購物車之間顯示不正確的稅捐與貨幣值](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
+         - [ACP2E-4110：以PDP/PLP和購物車非預設貨幣搭配&#x200B;**[!UICONTROL Special Price]**&#x200B;的產品價格](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
          - [ACP2E-4603：目錄許可權產品重新索引會留下過時的許可權索引列和MySQL死結](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
-         - [AC-10737： `bin/magento setup:db:status`命令無法辨識JSON資料型別](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
+         - [AC-10737： `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md1`命令無法辨識JSON資料型別](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
          - [ACP2E-4601：重新儲存付款授權交易自我參考parent_id並觸發無限回圈/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
