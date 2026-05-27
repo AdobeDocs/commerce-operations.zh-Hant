@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 09abc74b48c1ac07a3553aed37fcb0c80e3bbefe
+source-git-commit: 36e8242f67e80504118e36574cfe4d3b799b849c
 workflow-type: tm+mt
-source-wordcount: '10033'
+source-wordcount: '10059'
 ht-degree: 0%
 
 ---
@@ -994,6 +994,8 @@ ht-degree: 0%
          - [ACP2E-4419：成功在店面進行reCAPTCHA v2驗證後，禮品卡在結帳時未正確套用](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [AC-10698：交易價格和總計未傳送至Google Tag](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
+         - [ACP2E-4475：依價格排序或篩選不適用於無存貨的套件組合產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
          - [ACP2E-4411：在多貨幣設定中，組合產品價格在產品詳細資料頁面與購物車之間顯示不正確的稅捐與貨幣值](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
          - [ACP2E-4110：以PDP/PLP和購物車非預設貨幣搭配&#x200B;**[!UICONTROL Special Price]**&#x200B;的產品價格](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
          - [ACP2E-4603：目錄許可權產品重新索引會留下過時的許可權索引列和MySQL死結](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
