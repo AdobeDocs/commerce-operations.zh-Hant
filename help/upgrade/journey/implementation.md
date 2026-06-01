@@ -2,9 +2,9 @@
 title: 升級實作
 description: 瞭解Adobe Commerce專案升級實作的不同階段。
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 3c54a3c429a3dadc826bffcb91f99a5a3a31b42c
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '856'
 ht-degree: 1%
 
 ---
@@ -42,13 +42,13 @@ ht-degree: 1%
 
   | 服務 | 目前版本 | 升級至 | 附註 |
   |-----------------|-----------------|------------|----------------------------------------------------------|
-  | PHP | 7.4 | 8.1 |                                                          |
-  | Redis | 6.0 | 6.2 |                                                          |
-  | [!DNL RabbitMQ] | 3.8 | 3.9 | 目前未使用，但我們應考慮加以使用 |
-  | MariaDB （雲端） | 10.4 | 10.6 |                                                          |
-  | MySQL | 8.0 | -/-/ |                                                          |
-  | 作曲者 | 1.9.2 | 2.2 |                                                          |
-  | Elasticsearch | 7.10 | 7.17 |                                                          |
+  | PHP | 7.4 | 8.5 |                                                          |
+  | Valkey | 8.0 | 9 |                                                          |
+  | [!DNL RabbitMQ] | 3.8 | 4.3 | 目前未使用，但我們應考慮加以使用 |
+  | MariaDB （雲端） | 10.4 | 12.3 |                                                          |
+  | MySQL | 8.0 | 不適用 |                                                          |
+  | 作曲者 | 1.9.2 | 2.9 |                                                          |
+  | OpenSearch | 1 | 3 |                                                          |
 
 - **擴充功能與協力廠商模組** — 使用此表格範本可協助您瞭解擴充功能與自訂專案的狀態，以便您做出策略決定並定義動作。 這是取代Adobe Commerce原生擴充功能的機會，可讓您的專案複雜度降至最低。 使用`bin/magento module:status`命令檢視模組和擴充功能的清單。
 

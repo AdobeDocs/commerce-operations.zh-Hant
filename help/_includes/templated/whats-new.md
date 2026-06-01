@@ -1,7 +1,7 @@
 ---
-source-git-commit: 75c28c839ee5e6405550df0149ef4196f7e15a1c
+source-git-commit: 7e5c9d7f4bbd1f47ef9ef10dc21e2b0f1cfac356
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2608'
 ht-degree: 0%
 
 ---
@@ -527,36 +527,6 @@ ht-degree: 0%
         技術，意見回饋
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c3030226d7832b17c82be375431795cba44d72f9">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月1日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>以最新版本資訊更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule">2026 Adobe Commerce發行行事曆</a>。</p>
-</td>
-      <td>
-        發行說明
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f32d342cbdc3e962fede45de828d836c242bc9a">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已更新Redis和Valkey組態</a>的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">最佳實務，並提供相關組態指引。</p>
-</td>
-      <td>
-        技術，意見回饋
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96e5b397a2ffee8fadaf638e721799b40d320d3">認可</a></td>
     </tr>
   </tbody>
 </table>

@@ -3,9 +3,18 @@ title: 發行說明
 description: 瞭解Adobe Commerce可用的修補程式及其解決的問題。
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
+autotag-review: '2026-05-29T17:40:45.034Z'
+TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
 workflow-type: tm+mt
-source-wordcount: '30379'
+source-wordcount: 30977
 ht-degree: 0%
 
 ---
@@ -21,6 +30,27 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.80 {#v1-1-80}
+
+* **ACP2E-4239** （適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9） — 修正由於選取的日期、儲存的UTC值和設定的存放區時區之間的時區差異，使用日期屬性的管理員格線篩選器傳回錯誤結果的問題。
+* **ACP2E-4472** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9） — 修正「以客戶身分登入」流程期間建立Null引號的問題。
+* **ACP2E-4481** （適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9） — 修正取消訂單後，無法正確重新計算套件組合產品可銷售性的問題。
+* **ACP2E-4488** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9） — 修正具有大型屬性集的產品在Admin中儲存或編輯產品速度緩慢的問題。
+* **ACP2E-4493** （適用於Adobe Commerce >=2.4.4 &lt;2.4.9） — 修正啟用非同步索引時，銷售訂單封存格線顯示錯誤訂單狀態的問題。
+* **ACP2E-4496** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正Analytics cron工作在執行期間導致效能降低，進而改善整體系統效能的問題。
+* **ACP2E-4533** （適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.8） — 修正URL中包含商店程式碼時，店面未載入預留位置影像的問題。
+* **ACP2E-4552** （對於Adobe Commerce，B2B >=1.5.0 &lt;1.5.3） — 修正GraphQL回應中未傳回公司狀態的問題。
+* **ACP2E-4610** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9） — 修正sales_clean_quotes cron工作出現效能問題的問題。
+* **ACP2E-4615** (適用於Adobe Commerce >=2.4.4-p13 &lt;2.4.4-p17 || >=2.4.4-p18 &lt;2.4.5 || >=2.4.5-p12 &lt;2.4.6 || >=2.4.6-p10 &lt;2.4.7 || >=2.4.7-p5 &lt;2.4.9) — 修正線上訂單退款失敗並出現PayPal錯誤，指出「PayPal閘道拒絕要求」的問題。 內部錯誤。」
+* **ACP2E-4626** （適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9） — 修正部分Storefront JavaScript檔案被請求並執行兩次，而造成間歇性重複載入和不穩定行為的問題。
+* **ACP2E-4653** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正透過REST API擷取或更新規則時，未公開「類別（僅限父項）」和「類別（僅限子項）」的購物車價格規則條件屬性範圍的問題。
+* **ACP2E-4808** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.10） — 修正店面產品頁面上的「重量」屬性在「其他資訊」或「更多資訊」區段中只顯示原始數值而沒有設定測量單位（磅或公斤）的問題。
+* **ACP2E-4156** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正REST API中出貨地址驗證不符合管理員中定義屬性組態的問題。
+* **ACP2E-4813** （適用於Adobe Commerce和Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15） || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) — 修正結帳時無法使用USPS送貨方法，且某些產品的送貨預估不正確（包括分割成多個套件的訂單）的問題。
+* **ACSD-53502** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.6） — 修正在iOS Safari中，由於對New Relic監視指令碼的遞回呼叫，導致在店面新增購物車間歇性失敗而導致頁面重新載入的問題。
+* 已更新的版本： **AC-15210**、**MDVA-12304**、**ACSD-46520**、**ACSD-48627**、**ACSD-49898**、**ACSD-51291**、**ACSD-51358**、**ACSD-50815**、**ACSD-54106**、**ACSD-53636**、**ACSD acsd-55100**、**ACSD-58008**、**ACSD-61133**、**ACSD-63286**、**ACSD-67941**、**ACSD-64546**、**ACSD-64118**、**ACSD-65822**、**ACSD-57477**、**ACSD ACSD-58108**，**ACSD-66149**，**ACSD-66404**，**ACSD-67250**，**ACSD-67686**，**ACSD-68925**，**ACP2E-4402**，**ACP2E-4505**，**ACP2A e-4603**，**ACP2E-4706**
+* 已取代的修補程式： **AC-15210**，**ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
 
