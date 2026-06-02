@@ -1,7 +1,7 @@
 ---
-source-git-commit: eca5c109548e0d92435b3dca90a905ef2efaa504
+source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
 workflow-type: tm+mt
-source-wordcount: '3357'
+source-wordcount: '3282'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513之QPT 1.1.78修正的詳細說明：過期的CAPTCHA影像不會從系統</a>中移除。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513之QPT 1.1.78修正的詳細說明：過期的CAPTCHA影像不會從系統</a>中移除。</p>
 </td>
       <td>
         新主題qpt
@@ -39,7 +39,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0a726754a6e171a60a07ccedf76db7505f19706a">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505的QPT 1.1.79修正的詳細說明：在重複的瀏覽器索引標籤</a>中儲存過時資料的類別會有循環類別相依性。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505的QPT 1.1.79修正的詳細說明：在重複的瀏覽器索引標籤</a>中儲存過時資料的類別會有循環類別相依性。</p>
 </td>
       <td>
         新主題qpt
@@ -77,7 +77,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720的QPT 1.1.79修正詳細說明：免費送貨購物車價格規則不會個別重設固定價格套裝產品的送貨專案</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720的QPT 1.1.79修正詳細說明：免費送貨購物車價格規則不會個別重設固定價格套裝產品的送貨專案</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -265,7 +265,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>將<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5安全性修補程式版本</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6安全性修補程式版本</a>及<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8安全性修補程式版本</a>主題中的Valkey LTS相容性更正為8.1，使快取後端指引符合Adobe Commerce上支援的Valkey。<br /><em>處理問題<a href="https://github.com/AdobeDocs/commerce-operations.zh-Hant/issues/177">#177</a>.</em></p>
+      <td><p>將<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5安全性修補程式版本</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6安全性修補程式版本</a>及<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8安全性修補程式版本</a>主題中的Valkey LTS相容性更正為8.1，使快取後端指引符合Adobe Commerce上支援的Valkey。<br /><em>處理問題<a href="https://github.com/AdobeDocs/commerce-operations.en/issues/177">#177</a>.</em></p>
 </td>
       <td>
         技術、意見回饋、發行說明
@@ -687,28 +687,6 @@ ht-degree: 0%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a9f3594a0ccf4326b0541a4f2b07fdf49cde7148">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月3日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增正確覆寫<code>env.php</code>中Adobe Commerce預設L2快取目錄的指示，以確保快取檔案儲存在預期的位置，並防止分割快取目錄和GlusterFS分段錯誤。 請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">Redis與Valkey服務組態的最佳實務</a>中的更新指南。</p>
-</td>
-      <td>
-        技術，意見回饋
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c3030226d7832b17c82be375431795cba44d72f9">認可</a></td>
     </tr>
   </tbody>
 </table>
