@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 9de5006ef5231f1009e3b6b44a365e151d56e998
+source-git-commit: bbe7d69e0cf7a1cdfdbf6ed60b853ace38ae227a
 workflow-type: tm+mt
-source-wordcount: '10131'
+source-wordcount: '10140'
 ht-degree: 0%
 
 ---
@@ -996,6 +996,7 @@ ht-degree: 0%
          - [ACP2E-4419：成功在店面進行reCAPTCHA v2驗證後，禮品卡在結帳時未正確套用](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4706： Target規則索引器cron不會挑選只在商店檢視範圍啟用的產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706.md)
          - [ACP2E-4402： Target規則增量索引器不會挑選停用的產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
          - [ACP2E-4505：循環類別相依性，不會將包含過時資料的類別儲存在重複的瀏覽器分頁中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
          - [ACP2E-4720：固定價格的套裝產品與出貨專案分開時，免運費購物車價格規則不會重設](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
