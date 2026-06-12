@@ -4,9 +4,9 @@ description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: 300ed6b9123701244042abccf70ff774ac05b0fa
+source-git-commit: 41e4aa725848fd7fa4910eaea09a802326fa3995
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1451'
 ht-degree: 0%
 
 ---
@@ -31,68 +31,26 @@ ht-degree: 0%
 
 如需使用中Beta版計畫的清單，請參閱下列章節。
 
-### 全域銷售規則和依目錄檢視（公開Beta）
+### 搜尋比對和排名(Private Beta)
 
 僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
 
-Adobe Commerce Optimizer匯入了使用彈性範圍定義銷售規則的功能，讓商家可以跨所有目錄檢視套用規則，或將規則範圍設定為特定目錄檢視。 此功能針對經營多個店面、品牌或語言的商家，簡化銷售規則管理。 目錄檢視特定規則可讓商家在需要本地化或品牌特定體驗時，針對個別管道量身打造搜尋結果和銷售邏輯。 如果目錄檢視特定規則存在，則會覆寫該檢視的全域規則，提供精確的控制同時維持有效的組態管理。
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+
+Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commerce Optimizer]上為[!DNL Live Search]的搜尋結果排名。 更新會將&#x200B;**精確和接近的字詞比對**&#x200B;優先排序，然後比對&#x200B;**所有查詢詞出現在相同可搜尋屬性**&#x200B;中的位置，最後&#x200B;**跨欄位**&#x200B;比對（包括支援自動完成樣式建議的行為）。 這種分層模型可協助高意圖查詢先呈現最相關的產品，同時仍傳回有用的替代方案。
+
+相同的關聯性模型會與&#x200B;**搜尋權重**、**智慧型排名**、**同義字**&#x200B;和&#x200B;**銷售規則** （圖釘、提升、埋藏）互動。 德文店面可針對複合字詞使用&#x200B;**解組合**，採用相同的整體優先順序方法。
 
 **主要優點**
 
-- 跨所有目錄檢視全域定義銷售規則。
-- 需要本地化體驗時，覆寫特定目錄檢視的規則。
-- 減少跨店面的設定重複。
-- 改善多品牌和多語言商務實作的擴充能力。
+- 更強大的提升功能，可精確和近似地比對片語（包括標準化形式，例如單數與複數）。
+- 當所有查詢字詞一起出現在一個可搜尋欄位中時排名較高。
+- 在查詢時，更明確地期望權重、智慧型排名和手動規則如何結合。
+- 有關在變更後驗證高值查詢和調校提升規則的指南。
 
-此功能可改善銷售彈性和營運效率，協助商家大規模提供更相關的產品探索體驗。 若要深入瞭解，請參閱[銷售規則](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add)。
+深入瞭解[Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/en/docs/commerce/optimizer/search-relevance-matching)和[即時搜尋(PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/search-relevance-matching)中的搜尋比對和排名策略。
 
->[!NOTE]
->
->Beta參與者將需要重新建立任何現有的銷售規則，以善用新的目錄檢視範圍。
-
-若要在使用此測試版功能時分享您的意見，請傳送電子郵件至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。
-
-### 全域和每個目錄檢視的產品建議（公開Beta）
-
-僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
-
-Adobe Commerce Optimizer引進對產品建議設定的增強控制，使商家能夠在所有目錄檢視中全域定義建議單位，或特別針對個別目錄檢視定義建議單位。
-
-此功能可針對經營多個店面、品牌、地區或語言的企業簡化建議管理。 商家可以在全球範圍內建立建議單位一次，並將套用至所有目錄檢視，以確保跨管道的一致產品探索策略。 同時，目錄檢視特定的建議單位可讓商家在需要時為特定店面量身打造體驗。
-
-店面參與事件和建議量度會在目錄檢視層級進行追蹤，針對不同店面的購物者行為提供更準確的深入分析。
-
-**主要優點**
-
-- 在所有目錄檢視中全域設定產品推薦單位。
-- 針對當地語系化的店面體驗，建立目錄檢視專屬建議。
-- 減少跨多品牌或多語言店面的重複設定。
-- 透過目錄檢視追蹤的量度和事件，獲得更精確的深入分析。
-
-此增強功能有助於商家提供更相關的產品探索體驗，同時簡化複雜商業環境中的建議管理。 若要深入瞭解，請參閱[建議](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/manage-results/recommendation-performance)
-
->[!NOTE]
->
->Beta參與者將需要重新建立任何現有的建議單位，以善用新的目錄檢視範圍。
-
-若要在使用此測試版功能時分享您的意見，請傳送電子郵件至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。
-
-### 類別銷售（公開Beta）
-
-僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
-
-Adobe Commerce Optimizer類別銷售可協助商家控制產品在類別頁面上的訂購方式。 商戶在銷售規則工作流程中將行為設定為&#x200B;**類別規則**，以及[搜尋規則和預設產品清單規則](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/overview)。 每個規則都可以結合&#x200B;**智慧型排名** （適用的行為訊號和AI）、選擇性的&#x200B;**價格型排序**&#x200B;以及&#x200B;**手動**&#x200B;動作，例如釘選、提升和埋藏，讓團隊可以在沒有外部工具的情況下組織探索、執行促銷活動，以及將類別頁面與策略對齊。
-
-**主要優點**
-
-- 使用用於搜尋和預設清單的相同規則型工作流程，鎖定一或多個類別。
-- 使用智慧型排名策略（例如，檢視次數最多、購買最多、加入購物車、個人化推薦、趨勢）加上可選價格排序的訂單類別清單。
-- 當您需要精準放置時，在智慧型排名之上分層手動釘選、提升及隱藏動作。
-- 當您的設定使用多個目錄檢視時，依目錄檢視來範圍規則。
-
-若要深入瞭解，請參閱[類別銷售](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add)。
-
-若要在使用此測試版功能時分享您的意見，請傳送電子郵件至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。
+若要要求此私人測試版的邀請，請傳送電子郵件至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。 Adobe團隊會採取後續步驟和資格要求來回應。
 
 ### 建議價格篩選器（公用Beta） {#recommendation-price-filters-public-beta}
 
