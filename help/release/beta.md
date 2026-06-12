@@ -2,8 +2,8 @@
 title: Beta發行版本
 description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
-badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 source-git-commit: 41e4aa725848fd7fa4910eaea09a802326fa3995
 workflow-type: tm+mt
 source-wordcount: '1451'
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce測試版
 
-適用於[Adobe Commerce產品解決方案](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions)的Beta方案是商家存取發行前功能與程式碼、提供意見回饋，以及引導Adobe Commerce未來的方法。 測試版計畫有兩種型別：
+適用於[Adobe Commerce產品解決方案](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions)的Beta方案是商家存取發行前功能與程式碼、提供意見回饋，以及引導Adobe Commerce未來的方法。 測試版計畫有兩種型別：
 
 - 公用Beta：公用Beta計畫可供所有Adobe Commerce客戶和合作夥伴使用
 - Private Beta：私人Beta版計畫可能需要根據資格條件來核准才能參與
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 ### 搜尋比對和排名(Private Beta)
 
-僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
+僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
 
-僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 
 Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commerce Optimizer]上為[!DNL Live Search]的搜尋結果排名。 更新會將&#x200B;**精確和接近的字詞比對**&#x200B;優先排序，然後比對&#x200B;**所有查詢詞出現在相同可搜尋屬性**&#x200B;中的位置，最後&#x200B;**跨欄位**&#x200B;比對（包括支援自動完成樣式建議的行為）。 這種分層模型可協助高意圖查詢先呈現最相關的產品，同時仍傳回有用的替代方案。
 
@@ -54,7 +54,7 @@ Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commer
 
 ### 建議價格篩選器（公用Beta） {#recommendation-price-filters-public-beta}
 
-僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
+僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
 
 [!DNL Adobe Commerce Optimizer]將&#x200B;**價格篩選器**&#x200B;新增至「產品建議」，這樣當您建立或編輯建議單位時，就可以根據價格包含或排除建議產品。 篩選器會使用店面&#x200B;**使用中價格簿**&#x200B;中每個產品的&#x200B;**最終計算價格**，包括該價格簿中的折扣和促銷（不單單是定價）。 價格規則會精簡候選者集；它們不會重新排名產品。
 
@@ -67,17 +67,17 @@ Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commer
 - 使用產品詳細資料頁面上的動態價格規則，可針對檢視的產品，顯示可比價格範圍內的替代方案。
 - 讓篩選與購物者看到的價格保持一致，這是用於篩選和顯示的作用中價格簿的相同最終價格。
 
-若要深入瞭解，請參閱商家指南中的[建議篩選器 — 價格](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters#price)以及店面下拉式指南中的[產品建議設定](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/)。
+若要深入瞭解，請參閱商家指南中的[建議篩選器 — 價格](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/recommendations/filters#price)以及店面下拉式指南中的[產品建議設定](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/?lang=zh-Hant)。
 
 若要在使用此測試版功能時分享您的意見，請傳送電子郵件至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。
 
 ### 雲端自動化修補服務(Private Beta)
 
-僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 
-[Cloud Automation Patching Service](../tools/caps-tool/intro.md)會自動在雲端基礎結構[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)環境中將隔離的安全性修補程式套用至您的Adobe Commerce。
+[Cloud Automation Patching Service](../tools/caps-tool/intro.md)會自動在雲端基礎結構[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)環境中將隔離的安全性修補程式套用至您的Adobe Commerce。
 
-在2025年10月，Cloud Automation Patching Service的測試版將新增至[全網站分析工具儀表板](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)。 此服務透過簡化的修補工作流程支援Commerce專案管理員，包括：
+在2025年10月，Cloud Automation Patching Service的測試版將新增至[全網站分析工具儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)。 此服務透過簡化的修補工作流程支援Commerce專案管理員，包括：
 
 - 自動安裝修補程式
 - 復原復原
@@ -92,7 +92,7 @@ Beta版包含下列功能：
 
 >[!NOTE]
 >
->由於Cloud Automation修補服務會自動套用隔離的安全性修補程式，因此您必須擁有[貢獻者或專案管理員角色](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)才能使用它。
+>由於Cloud Automation修補服務會自動套用隔離的安全性修補程式，因此您必須擁有[貢獻者或專案管理員角色](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/user-access)才能使用它。
 
 若要參與此測試版，請完成並提交[Cloud Automation Patching Service - Beta登錄檔單](https://forms.office.com/r/3Wfxj5nPdB)。
 
@@ -111,7 +111,7 @@ Beta版包含下列功能：
 
 ### Adobe Commerce基礎（公開Alpha/Beta）
 
-僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 
 每個Adobe Commerce Foundation Alpha和Beta版都包含依排程發行日期傳送至Adobe Commerce核心程式碼的所有變更，包括但不限於下列功能區域：
 
@@ -120,7 +120,7 @@ Beta版包含下列功能：
 - GraphQL改良功能
 - 一般品質錯誤修正
 - 社群貢獻
-- 支援與[Adobe Commerce服務](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)相容性所需的變更
+- 支援與[Adobe Commerce服務](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)相容性所需的變更
 
 #### 命名慣例和排程
 
