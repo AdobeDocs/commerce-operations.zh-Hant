@@ -75,7 +75,7 @@ Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commer
 
 僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 
-[Cloud Automation Patching Service](../tools/caps-tool/intro.md)會自動在雲端基礎結構](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)環境中將隔離的安全性修補程式套用至您的[Adobe Commerce。
+[Cloud Automation Patching Service](../tools/caps-tool/intro.md)會自動在雲端基礎結構[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)環境中將隔離的安全性修補程式套用至您的Adobe Commerce。
 
 在2025年10月，Cloud Automation Patching Service的測試版將新增至[全網站分析工具儀表板](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)。 此服務透過簡化的修補工作流程支援Commerce專案管理員，包括：
 
