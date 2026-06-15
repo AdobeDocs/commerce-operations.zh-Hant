@@ -2,9 +2,9 @@
 title: 系統需求
 description: 瞭解Adobe Commerce的軟體相依性和系統需求。 檢視經過測試的設定，瞭解與部署環境的相容性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
+source-git-commit: 4ffbd0ab5109fb242d3d83c8f6c19c58d1bcb822
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Adobe僅支援下表所列的系統需求組合。 Adobe不會驗證或支援不
 
 >[!TAB 雲端上的 Commerce]
 
-雲端範本[&#128279;](https://github.com/magento/magento-cloud)上的Commerce提供與特定Commerce版本相容之服務的預設設定。
+雲端上的[Commerce範本](https://github.com/magento/magento-cloud)針對與每個發行版本的最新Commerce版本相容的服務，提供預設設定。
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
