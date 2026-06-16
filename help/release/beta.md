@@ -4,9 +4,9 @@ description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: 41e4aa725848fd7fa4910eaea09a802326fa3995
+source-git-commit: bf0f269900468870a1da7b5360548d49e009097c
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -33,10 +33,6 @@ ht-degree: 0%
 
 ### 搜尋比對和排名(Private Beta)
 
-僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
-
-僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
-
 Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commerce Optimizer]上為[!DNL Live Search]的搜尋結果排名。 更新會將&#x200B;**精確和接近的字詞比對**&#x200B;優先排序，然後比對&#x200B;**所有查詢詞出現在相同可搜尋屬性**&#x200B;中的位置，最後&#x200B;**跨欄位**&#x200B;比對（包括支援自動完成樣式建議的行為）。 這種分層模型可協助高意圖查詢先呈現最相關的產品，同時仍傳回有用的替代方案。
 
 相同的關聯性模型會與&#x200B;**搜尋權重**、**智慧型排名**、**同義字**&#x200B;和&#x200B;**銷售規則** （圖釘、提升、埋藏）互動。 德文店面可針對複合字詞使用&#x200B;**解組合**，採用相同的整體優先順序方法。
@@ -48,7 +44,7 @@ Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commer
 - 在查詢時，更明確地期望權重、智慧型排名和手動規則如何結合。
 - 有關在變更後驗證高值查詢和調校提升規則的指南。
 
-深入瞭解[Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/en/docs/commerce/optimizer/search-relevance-matching)和[即時搜尋(PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/search-relevance-matching)中的搜尋比對和排名策略。
+深入瞭解[Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/manage-results/search-relevance-matching)和[即時搜尋(PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching)中的搜尋比對和排名策略。
 
 若要要求此私人測試版的邀請，請傳送電子郵件至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。 Adobe團隊會採取後續步驟和資格要求來回應。
 
