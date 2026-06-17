@@ -1,7 +1,7 @@
 ---
-source-git-commit: b552c5e9aa33c33efe962f5f3661ca26b29ef0b6
+source-git-commit: b8c97f7a7d92a75ce54d323344460e2e71e8f548
 workflow-type: tm+mt
-source-wordcount: '3380'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 0%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年6月12日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">概觀：品質修補工具(QPT) v1.1.80</a>。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e585cb2150ca7dc2ae6ae883339ef9b894741f0">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>已將搜尋比對與排名(Private Beta)方案新增至<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta">Beta版本</a>，包括階層比對模型、與權重和銷售規則的互動以及邀請指示。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年6月8日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706">ACP2E-4706的QPT 1.1.79修正的詳細說明： Target規則索引器cron不會挑選只在商店檢視範圍</a>啟用的產品。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1f9890a2a2b7dbe501037ca8dbe919865012b6f">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年6月5日
 
@@ -701,36 +753,6 @@ ht-degree: 0%
         技術、重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bc6807d7f4bfd84ac698de81f8cf6f56d849af7">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月8日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已更新雲端上的New Relic (APM)支援版本的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a> （依發行版本）。</p>
-</td>
-      <td>
-        技術，意見回饋
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f82d05cf0f7d2749b313ef5f7e89e1e36248bf30">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已針對SaaS專案更新類別銷售（公開Beta）計畫的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta">Beta版本</a>，包括<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add">類別銷售</a>的連結和相關銷售規則主題。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a9f3594a0ccf4326b0541a4f2b07fdf49cde7148">認可</a></td>
     </tr>
   </tbody>
 </table>
