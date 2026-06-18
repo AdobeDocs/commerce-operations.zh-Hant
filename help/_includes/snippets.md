@@ -1,7 +1,7 @@
 ---
-source-git-commit: d22f1c660ba2b6bdc507fa8ba728e0a4269bef8d
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 >
 >Adobe僅支援執行所有相依性和服務之支援版本的部署。 這適用於：
 >
->* **Platform服務** （包含但不限於PHP、MariaDB/MySQL、Redis、Elasticsearch/OpenSearch、RabbitMQ和Nginx） — 商家必須維持與其已部署的Adobe Commerce版本相容的版本。 請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)。
+>* **Platform服務** （包含但不限於PHP、MariaDB/MySQL、Redis、Elasticsearch/OpenSearch、RabbitMQ和Nginx） — 商家必須維持與其已部署的Adobe Commerce版本相容的版本。 請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)。
 >* **Commerce Services擴充功能** （包含但不限於「即時搜尋」、「產品建議」和「付款服務」） — 僅支援最新發行的版本。
 >* **自訂擴充功能和協力廠商整合** — 商家有責任確保這些功能仍使用廠商支援的版本。
 >
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 ## 延伸支援的安全性修補程式 {#extended-support}
 
->[!NOTE]
->
->2.4.5的延伸支援安全性修補程式僅供Adobe Commerce客戶使用。 這些修補程式不適用於Magento Open Source程式碼基底。 請參閱[延伸支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)。
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## 僅限Commerce {#commerce-only}
 

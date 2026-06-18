@@ -2,10 +2,10 @@
 title: Adobe Commerce發行說明
 description: 了解在哪裡可以取得 Adobe Commerce 特定版本的資訊。
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 3%
+source-wordcount: '462'
+ht-degree: 2%
 
 ---
 
@@ -28,6 +28,8 @@ ht-degree: 3%
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">與舊版不相容的變更</a></li>
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="security/overview.md">安全性修補程式</a></li>
+            <li><a href="../../lifecycle-policy.md">軟體生命週期原則</a></li>
+            <li><a href="../../version-upgrade-enforcement-policy.md">雲端版本升級執行原則</a></li>
             <li><a href="https://helpx.adobe.com/tw/security/products/magento.html">Adobe安全性公告</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=zh-Hant">適用於Adobe Commerce的B2B</a></li>
           </ul>
@@ -73,7 +75,7 @@ ht-degree: 3%
         <p>瞭解店面技術的最新改善，這些改善可用於為客戶打造獨一無二的體驗。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant">Adobe Commerce店面</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=zh-Hant">頁面產生器</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">頁面產生器</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
       </td>

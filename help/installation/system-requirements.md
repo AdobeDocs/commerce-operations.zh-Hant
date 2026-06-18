@@ -2,9 +2,9 @@
 title: 系統需求
 description: 瞭解Adobe Commerce的軟體相依性和系統需求。 檢視經過測試的設定，瞭解與部署環境的相容性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 4ffbd0ab5109fb242d3d83c8f6c19c58d1bcb822
+source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,8 @@ Commerce版本行。
 執行2.4.7、2.4.6、2.4.5、2.4.4版的所有Adobe Commerce內部部署客戶為
 建議將其資料庫伺服器移轉至相容的MariaDB版本。
 
+雲端上的Adobe Commerce客戶必須在支援的版本上維持平台相依性。 請參閱生命週期原則中的[平台相依性](../release/lifecycle-policy.md#platform-dependencies)。
+
 **Elasticsearch 7.17於2026年1月15日終止支援(EOS)。**
 在此日期之後，Adobe Commerce 2.4.6、2.4.5和2.4.4將不提供相容性或
 支援在Elasticsearch 7之後發行的任何Elasticsearch版本。Adobe不會
@@ -71,6 +73,10 @@ Commerce版本行。
 下表列出Adobe Commerce發行版本的系統需求，包括延伸支援中的系統需求。 這些表格僅供參考。 Adobe不建議使用不支援的軟體相依性版本，而支援需要您先將環境調整為支援的設定，我們才能調查、疑難排解或驗證回報的行為。
 
 >[!NOTE]
+>
+>Adobe Commerce 2.4.6在[延伸支援](../release/lifecycle-policy.md#extended-support)到&#x200B;**2027年8月30日**&#x200B;之間，接著是[僅限安全性過渡期間](../release/lifecycle-policy.md#security-only-transitional-period)到&#x200B;**2028年5月31日**。 這些布建僅供Adobe Commerce客戶使用。 它們不會擴充對第三方相依性（例如MySQL）的支援。
+>
+>如果您在雲端上執行Adobe Commerce，則必須在&#x200B;**2028年6月1日** [版本升級強制日期](../release/version-upgrade-enforcement-policy.md)之前升級至支援的版本或移轉至[!DNL Adobe Commerce as a Cloud Service]。 如需完整生命週期日期，請參閱[支援結束日期](../release/lifecycle-policy.md#end-of-support-dates)表格。
 >
 >表格會收合以將此文章的長度最小化。 選取標題以展開。
 
@@ -98,6 +104,8 @@ Commerce版本行。
 Commerce版本行。
 執行2.4.7、2.4.6、2.4.5、2.4.4版的所有Adobe Commerce內部部署客戶為
 建議將其資料庫伺服器移轉至相容的MariaDB版本。
+
+雲端上的Adobe Commerce客戶必須在支援的版本上維持平台相依性。 請參閱生命週期原則中的[平台相依性](../release/lifecycle-policy.md#platform-dependencies)。
 
 **Elasticsearch 7.17於2026年1月15日終止支援(EOS)。**
 在此日期之後，Adobe Commerce 2.4.6、2.4.5和2.4.4將不提供相容性或

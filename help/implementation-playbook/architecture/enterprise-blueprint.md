@@ -3,7 +3,7 @@ title: 企業參考架構
 description: 瞭解如何使用Adobe的最新可撰寫商務技術實施Adobe Commerce。
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 0d0922b23bfe9152ef7f8b942b0e839a189e5abf
+source-git-commit: dc4747d96e6f226e90ed95c93512c3e879d408ab
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Commerce已經進化，可滿足企業對效能、規模及安全性的需求。
 
 下列架構圖說明Adobe Commerce與所有Adobe Experience Cloud解決方案之間的資料流程。
 
-![顯示Adobe Commerce如何連線至Experience Cloud解決方案的架構圖表](../../assets/playbooks/commerce-architecture-v3.png){width="800" zoomable="yes"}
+![顯示Adobe Commerce如何連線至Experience Cloud解決方案的架構圖表](../../assets/playbooks/commerce-architecture.png){width="800" zoomable="yes"}
 
 >[!NOTE]
 >
