@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >執行不支援的版本可能會讓您的存放區暴露於安全漏洞，而Adobe無法為不再由其廠商維護的相依性提供安全修補程式。
 >
->如需支援版本的完整清單，請參閱[產品可用性矩陣](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
+>如需支援版本的完整清單，請參閱[產品可用性矩陣](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
 
 ## 延伸支援的安全性修補程式 {#extended-support}
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->安裝此安全性修補程式後，Adobe Commerce B2B商家也必須更新至最新相容的B2B安全性修補程式版本。 請參閱[B2B發行說明](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)。
+>安裝此安全性修補程式後，Adobe Commerce B2B商家也必須更新至最新相容的B2B安全性修補程式版本。 請參閱[B2B發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/release-notes)。
 
 ## 僅限Adobe Commerce {#ee-only}
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe不支援使用此方法套用Adobe提供的官方修補程式。 請自行承擔下列方法的風險。 若要套用正式修補程式，請使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}。 在部署任何自訂修補程式之前，請務必執行完整的測試。
+>Adobe不支援使用此方法套用Adobe提供的官方修補程式。 請自行承擔下列方法的風險。 若要套用正式修補程式，請使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}。 在部署任何自訂修補程式之前，請務必執行完整的測試。
 
 ## 2025年10月安全性修補程式反向移植 {#oct-2025-backports}
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 * **已新增對Apache ActiveMQ Artemis STOMP通訊協定的支援**
 
-  透過Simple Text Oriented Messaging Protocol (STOMP)新增對ActiveMQ Artemis開放原始碼訊息代理程式的支援。 它提供可靠且可擴充的傳訊系統，提供彈性的STOMP式整合。 請參閱&#x200B;*Commerce設定指南*&#x200B;中的[Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)。
+  透過Simple Text Oriented Messaging Protocol (STOMP)新增對ActiveMQ Artemis開放原始碼訊息代理程式的支援。 它提供可靠且可擴充的傳訊系統，提供彈性的STOMP式整合。 請參閱&#x200B;*Commerce設定指南*&#x200B;中的[Apache ActiveMQ Artemis](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)。
 
 ## 簽出頁面無法載入static.min.js和mixins.min.js {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
@@ -134,7 +134,7 @@ ht-degree: 0%
 
 **Hotfix**：
 
-有可用的Hotfix。 請參閱知識庫中的[啟用JS縮制和套件組合時，簽出失敗](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)以取得修補程式詳細資料。
+有可用的Hotfix。 請參閱知識庫中的[啟用JS縮制和套件組合時，簽出失敗](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27997)以取得修補程式詳細資料。
 
 ## Valkey Redis CLI注意事項 {#valkey-redis-cli-note}
 

@@ -15,5 +15,5 @@ ht-degree: 0%
 >
 >另請參閱：
 >
->- [軟體生命週期原則](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) — 支援終止日期、延長支援及僅限安全性的轉換規定
+>- [軟體生命週期原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy) — 支援終止日期、延長支援及僅限安全性的轉換規定
 >- [雲端版本升級執行原則](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) — 執行日期和必要的動作
