@@ -1,8 +1,8 @@
 ---
 title: 雲端版本升級執行原則
 description: 瞭解Adobe Commerce在雲端上的版本升級實作 — 為何Adobe會實作升級、實作日期、淘汰和必要的動作。 請參閱生命週期政策，了解轉換規定和移轉路徑。
-nudge: true
-source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
+nudge: false
+source-git-commit: 797f067de451c8b1b4d735e82de66a3fd9b56563
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
