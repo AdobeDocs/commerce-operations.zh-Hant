@@ -1,7 +1,7 @@
 ---
-source-git-commit: 52c330f62d722a4cae7f7f360ca61eca0f04b961
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,9 @@ ht-degree: 0%
 
 每個安全性修補程式版本都是以之前的完整修補程式版本為基礎。 此版本包含先前修補程式版本的品質和安全修正，以及在先前完整修補程式版本和安全修補程式版本之間建立的安全性修正。
 
-如需有關下載和套用安全性修補程式的說明，請參閱[Adobe Commerce知識庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)中的&#x200B;_如何取得和套用安全性修補程式_。
+如需有關下載和套用安全性修補程式的說明，請參閱&#x200B;_Adobe Commerce知識庫_&#x200B;中的[如何取得和套用安全性修補程式](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches)。
 
->[!NOTE]
->
->延伸支援安全性修補程式僅適用於Adobe Commerce客戶，不適用於Magento Open Source程式碼基底。 請參閱[延伸支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy#extended-support)。
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## 隔離的安全性修補程式檔案
 
@@ -29,5 +27,5 @@ ht-degree: 0%
 
 若要套用隔離的安全性修補程式檔案，客戶必須在其支援的發行版本行上使用最新的僅限安全性的修補程式發行版本（最新的 — p版本），因為隔離的安全性修補程式檔案是專門針對該版本進行測試的。
 
-請參閱[安全性中心](https://helpx.adobe.com/tw/security/products/magento.html)以尋找Adobe Commerce的最新安全性更新。
+請參閱[安全性中心](https://helpx.adobe.com/security/products/magento.html)以尋找Adobe Commerce的最新安全性更新。
 
