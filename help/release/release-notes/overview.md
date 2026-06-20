@@ -75,7 +75,7 @@ ht-degree: 2%
         <p>瞭解店面技術的最新改善，這些改善可用於為客戶打造獨一無二的體驗。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant">Adobe Commerce店面</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">頁面產生器</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=zh-Hant">頁面產生器</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
       </td>

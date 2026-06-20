@@ -13,7 +13,7 @@ ht-degree: 0%
 >
 >Adobe僅支援執行所有相依性和服務之支援版本的部署。 這適用於：
 >
->* **Platform服務** （包含但不限於PHP、MariaDB/MySQL、Redis、Elasticsearch/OpenSearch、RabbitMQ和Nginx） — 商家必須維持與其已部署的Adobe Commerce版本相容的版本。 請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)。
+>* **Platform服務** （包含但不限於PHP、MariaDB/MySQL、Redis、Elasticsearch/OpenSearch、RabbitMQ和Nginx） — 商家必須維持與其已部署的Adobe Commerce版本相容的版本。 請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)。
 >* **Commerce Services擴充功能** （包含但不限於「即時搜尋」、「產品建議」和「付款服務」） — 僅支援最新發行的版本。
 >* **自訂擴充功能和協力廠商整合** — 商家有責任確保這些功能仍使用廠商支援的版本。
 >
