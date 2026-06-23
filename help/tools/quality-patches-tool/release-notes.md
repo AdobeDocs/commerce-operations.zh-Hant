@@ -5,16 +5,12 @@ exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
 autotag-review: '2026-05-29T17:40:45.034Z'
 TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: f1cae5b4ad3d75dbc7f83b7687a4614f678263cd
 workflow-type: tm+mt
-source-wordcount: 30977
+source-wordcount: 31322
 ht-degree: 0%
 
 ---
@@ -25,11 +21,26 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.81 {#v1-1-81}
+
+* **ACP2E-4300** （適用於Adobe Commerce >=2.4.5 &lt;2.4.9） — 修正變更Admin中的客戶群組未在店面更新目錄許可權，導致目錄和購物車反映過時許可權的問題。
+* **ACP2E-4401** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正含有可設定產品之首頁的排程更新預覽連結重新導向至維護頁面而不是顯示產品清單的問題。
+* **ACP2E-4395** （適用於Adobe Commerce >=2.4.5 &lt;2.4.9） — 修正未針對全域範圍指定金額時，禮卡API產品建立未顯示錯誤的問題。
+* **ACP2E-4468** （適用於Adobe Commerce >=2.4.8 &lt;2.4.9） — 修正具有網站範圍許可權的Admin使用者無法編輯橫幅內容的問題。
+* **ACP2E-4630** （適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9） — 修正含有自訂選項的長產品名稱在分頁後與多頁發票、出貨、銷退折讓單和退貨PDF中的相鄰欄或專案重疊的問題，導致行專案無法讀取。
+* **ACP2E-4680** （針對Adobe Commerce，B2B >=1.5.0 &lt;1.5.3） — 修正不可銷售或刪除的產品從最終可協商的報價中消失的問題。
+* **ACP2E-4709** （適用於Adobe Commerce >=2.4.7 &lt;2.4.9） — 修正使用頁面產生器時CMS頁面無法儲存的問題。
+* **ACP2E-4786** （適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.10） — 修正設定AWS S3遠端儲存體時，由於儲存驅動程式中的路徑解析不正確，匯出產品無法寫入檔案的問題。
+* **ACP2E-4801** （針對Adobe Commerce，B2B >=1.4.2 &lt;1.5.3） — 修正透過管理員可轉讓報價中的「設定」按鈕更新套件組合產品選項數量時未套用，且已捨棄變更的問題。
+* **ACP2E-4815** （適用於Adobe Commerce和Magento Open Source >=2.4.6-p15 &lt;2.4.7） || >=2.4.7-p1 &lt;2.4.9) — 修正記錄中造成PHP例外的多個GraphQL問題、修正透過GraphQL在訂購後建立的訂單與客戶帳戶之間的關聯，以及透過HTTP規格將回應與GraphQL保持一致。
+* 已更新的版本： **ACSD-64212**、**ACSD-64523**、**ACSD-67347**
+* 已取代的修補程式： **ACSD-67941**、**ACSD-64212**、**ACSD-68925**
 
 ## v1.1.80 {#v1-1-80}
 
@@ -93,7 +104,7 @@ ht-degree: 0%
 * **ACP2E-4732** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8） — 修正當changelog表格中的version_id欄達到最大值時，有大量更新的客戶停止部分索引的問題。
 * **ACP2E-4763** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正當「目錄價格」設定為「包含稅捐」時，由於套用兩次稅捐，GraphQL customerOrders查詢會傳回膨脹的original_price_include_tax和original_row_total_include_tax值的問題。
 * **ACSD-60989** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8） — 修正透過宣告式結構描述修改具有外部索引鍵的欄時，在MariaDB上造成錯誤的問題。
-* 已更新的版本： **ACSD-59280**、**ACSD-45255**、**ACSD-50336**、**ACSD-49737**、**ACSD-50849**、**ACSD-53750**、**ACSD-55031**、**ACSD-51819**、**ACSD-55628**、**ACSD-54965-V2** **ACSD-56546**、**ACSD-61756**、**ACSD-68040**、**ACSD-62708**、**ACSD-63283**、**ACSD-64732**、**ACSD-65775**、**ACSD-66965**、**ACP2E-4050&lbrace;37**
+* 已更新的版本： **ACSD-59280**、**ACSD-45255**、**ACSD-50336**、**ACSD-49737**、**ACSD-50849**、**ACSD-53750**、**ACSD-55031**、**ACSD-51819**、**ACSD-55628**、**ACSD-54965-V2** **ACSD-56546**、**ACSD-61756**、**ACSD-68040**、**ACSD-62708**、**ACSD-63283**、**ACSD-64732**、**ACSD-65775**、**ACSD-66965**、**ACP2E-4050{37**
 * 已取代的修補程式： **ACSD-58446**，**ACSD-67904**
 
 ## v1.1.77 {#v1-1-77}
