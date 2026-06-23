@@ -3,9 +3,17 @@ title: 使用清漆清除快取
 description: 瞭解快取清除如何與Adobe Commerce的Varnish網頁快取加速器搭配運作。 探索快取管理和最佳化技術。
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+autotag-review: '2026-06-22T22:18:33.462Z'
+TQID: 'https://experienceleague.adobe.com/ePhbVWjx-hX99p8OKiKqzT-w2KZu-XjS1XieuStKqc4'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: 405
 ht-degree: 0%
 
 ---
@@ -13,6 +21,8 @@ ht-degree: 0%
 # 使用清漆清除快取
 
 本主題說明使用Varnish做為Adobe Commerce網頁快取加速器的基本概念。
+
+{{varnish-config-cloud}}
 
 ## 清漆清除
 
@@ -42,7 +52,7 @@ ht-degree: 0%
 
 ## 設定Commerce以清除清漆
 
-使用[`magento setup:config:set`](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset)命令設定Varnish主機後，Commerce會清除清漆主機。
+使用[`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset)命令設定Varnish主機後，Commerce會清除清漆主機。
 
 您可以使用選用的引數`--http-cache-hosts`引數，指定以逗號分隔的Varnish主機和監聽連線埠清單。 設定所有Varnish主機，無論您有一台或多台。 （請勿以空格字元分隔主機。）
 
@@ -56,6 +66,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 
 當您在管理員中重新整理Commerce快取（也稱為&#x200B;*清除*&#x200B;快取）或使用命令列時，就可以清除Varnish主機。
 
-若要使用Admin重新整理快取，請按一下[工具] > [快取管理] **&#x200B;**，然後按一下頁面頂端的[排清Magento快取] **。**&#x200B;[!UICONTROL SYSTEM]&#x200B;**&#x200B;**（您也可以重新整理個別快取型別。）
+若要使用Admin重新整理快取，請按一下[工具] > [快取管理] ****，然後按一下頁面頂端的[排清Magento快取] **。**[!UICONTROL SYSTEM]****（您也可以重新整理個別快取型別。）
 
 若要使用命令列重新整理快取，您通常使用[`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types)命令作為[檔案系統擁有者](../../installation/prerequisites/file-system/overview.md)。

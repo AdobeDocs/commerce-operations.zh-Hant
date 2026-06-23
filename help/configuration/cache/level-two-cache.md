@@ -3,9 +3,16 @@ title: 效能最佳化的L2快取記憶體設定
 description: 瞭解如何在Adobe Commerce中設定L2快取，以減少網路流量並改善效能。 探索舊版和Symfony實作選項。
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: 738
 ht-degree: 0%
 
 ---
@@ -28,9 +35,9 @@ Commerce會將雜湊資料版本儲存在遠端快取中，並將尾碼附加至
 | [舊版(`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | Zend型兩級快取，具有`Cm_Cache_Backend_File`用於本機儲存 |
 | [現代(`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache架構的L2，符合PSR-6規範，效能更佳 |
 
->[!INFO]
+>[!NOTE]
 >
->對於雲端基礎結構上的Adobe Commerce，您可以針對L2快取設定使用[部署變數](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#redis_backend)。
+>對於雲端上的Adobe Commerce，請在`.magento.env.yaml`中設定[`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)或[`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)部署變數來設定L2快取。 如需設定範例，請參閱[設定L2快取](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)。
 
 ## 舊版L2快取設定(RemoteSynchronizedCache)
 
@@ -166,8 +173,6 @@ Adobe不建議為`default`快取型別啟用`use_stale_cache`選項。
 ```
 
 ## 現代Symfony L2快取實作
-
-[!BADGE 2.4.9-beta]{type=Negative tooltip="僅適用於2.4.9 Beta版。"}
 
 從Commerce 2.4.9開始，您可以使用Symfony快取型的L2快取實作（`symfony_l2`後端），此實作提供符合PSR 6的現代化快取實作，其效能比傳統`RemoteSynchronizedCache`有顯著改善。
 

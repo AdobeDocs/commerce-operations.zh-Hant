@@ -3,16 +3,23 @@ title: 設定及使用清漆
 description: 瞭解如何設定和使用Adobe Commerce的Varnish快取。 探索HTTP加速、檔案儲存和效能最佳化技術。
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+autotag-review: '2026-06-22T21:50:49.341Z'
+TQID: 'https://experienceleague.adobe.com/BsUTkhb2QhntUOT3EC181zdsQjqk8Dw0T5Iac0LS318'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 8cbff72c3b765c6ff85a34a3ec3d2f58b52bb9c3
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: 1077
 ht-degree: 0%
 
 ---
 
 # 設定及使用清漆
 
-[清漆快取](https://www.varnish.org/)是開放原始碼網頁應用程式加速器（也稱為&#x200B;_HTTP加速器_&#x200B;或&#x200B;_快取HTTP反向Proxy_）。 Varnish會將（或快取）檔案或檔案片段儲存在記憶體中，如此可讓Varnish減少回應時間，以及未來同等要求的網路頻寬消耗。 與Apache和nginx等網頁伺服器不同，Varnish是專為搭配HTTP通訊協定使用而設計。
+[清漆快取](https://www.varnish.org/)是開放原始碼網頁應用程式加速器（也稱為&#x200B;_HTTP加速器_&#x200B;或&#x200B;_快取HTTP反向Proxy_）。 Varnish會將（或快取）檔案或檔案片段儲存在記憶體中，如此可讓Varnish減少回應時間，以及未來同等要求的網路頻寬消耗。 與nginx等網頁伺服器不同，Varnish是專為搭配HTTP通訊協定使用而設計。
 
 [系統需求](../../installation/system-requirements.md)列出支援的清漆版本。
 
@@ -53,9 +60,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->- 除非另有說明，否則您必須以具有`root`許可權的使用者身分，輸入本主題中討論的所有命令。
->
->- 本主題是針對CentOS和Apache 2.4上的Varnish所撰寫。 如果您是在不同的環境中設定Varnish，有些指令可能會不同。 如需詳細資訊，請參閱Varnish檔案。
+>除非另有說明，否則您必須以具有`root`許可權的使用者身分，輸入本主題中討論的所有命令。
 
 ## 已知問題
 
@@ -88,11 +93,10 @@ ht-degree: 0%
 
 ## 清漆快取概觀
 
-清漆快取可與Commerce搭配使用，使用：
+在典型的nginx型部署中，Varnish會接受連線埠80上的傳入HTTP流量，並將要求轉送至後端連線埠（例如8080）上的nginx。 Adobe Commerce為原始網頁伺服器提供`nginx.conf.sample`，並從管理員產生Varnish `default.vcl`。
 
-- Magento 2 GitHub存放庫中的[`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)
-- Commerce提供的Apache適用的`.htaccess`分散式設定檔
-- 使用[管理員](../cache/configure-varnish-commerce.md)產生的清漆的`default.vcl`設定
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)已隨Adobe Commerce提供
+- 從[管理員](../cache/configure-varnish-commerce.md)產生的`default.vcl`
 
 >[!INFO]
 >
@@ -114,7 +118,7 @@ ht-degree: 0%
 
 下圖顯示使用瀏覽器檢測器的範例：
 
-![第一次要求可快取物件時，Varnish會將其傳送給瀏覽器](../../assets/configuration/varnish-apache-first-visit.png)
+![第一次要求可快取物件時，Varnish會將其傳送給瀏覽器](../../assets/configuration/varnish-webserver-first-visit.png)
 
 前面的範例顯示對店面首頁面(`m2_ce_my`)的請求。 使用者端瀏覽器會快取CSS和JavaScript資產。
 
@@ -126,7 +130,7 @@ ht-degree: 0%
 
 如果相同的瀏覽器再次要求相同的頁面，這些資產會從本機瀏覽器快取中傳送，如下圖所示。
 
-![下次要求相同物件時，從本機瀏覽器快取載入資產](../../assets/configuration/varnish-apache-second-visit.png)
+![下次要求相同物件時，從本機瀏覽器快取載入資產](../../assets/configuration/varnish-webserver-second-visit.png)
 
 請注意第一個和第二個請求之間的回應時間差異。 同樣地，靜態資產也有200 （確定）回應代碼，因為它們是首次從本機快取中傳遞。
 
