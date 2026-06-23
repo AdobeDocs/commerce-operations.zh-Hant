@@ -14,7 +14,7 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 393900188a9b3c08184a84665d32890f09703d35
+source-git-commit: 3eff1670dd536175d4905d386027674431831ae8
 workflow-type: tm+mt
 source-wordcount: 409
 ht-degree: 0%
@@ -40,7 +40,7 @@ QPT v1.1.80包含下列修補程式：
 1. **ACP2E-4626**：修正部分Storefront JavaScript檔案被要求並執行兩次，而造成間歇性重複載入和不穩定行為的問題。
 1. **ACP2E-4653**：修正透過REST API擷取或更新規則時，**[!UICONTROL Category (Parent Only)]**&#x200B;和&#x200B;**[!UICONTROL Category (Children Only)]**&#x200B;的&#x200B;**[!UICONTROL Cart Price Rule]**&#x200B;條件屬性範圍未公開的問題。
 1. **ACP2E-4808**：修正店面產品頁面的Weight屬性在&#x200B;**[!UICONTROL Additional Information]**&#x200B;或&#x200B;**[!UICONTROL More Information]**&#x200B;區段中只顯示原始數值而沒有設定測量單位（lbs或kgs）的問題。
-1. **ACP2E-4156**：修正REST API中的送貨地址驗證不符合[!UICONTROL Admin]中定義的屬性組態的問題。
+1. **[ACP2E-4156](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)**：修正[!DNL REST] API中的送貨地址驗證未遵循Admin中定義的屬性組態的問題。
 1. **ACP2E-4813**：修正某些產品在結帳時無法使用USPS送貨方法，且送貨預估不正確的問題，包括分割成多個套件的訂單。
 1. **ACSD-53502**：修正在iOS [!DNL Safari]中，由於遞回呼叫New Relic監視指令碼而導致&#x200B;**[!UICONTROL Add to Cart]**&#x200B;在店面間歇性失敗而導致頁面重新載入的問題。
 
