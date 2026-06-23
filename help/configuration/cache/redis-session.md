@@ -3,21 +3,38 @@ title: 為工作階段儲存設定Redis
 description: 瞭解如何在Adobe Commerce中設定工作階段儲存的Redis。 探索CLI設定、工作階段引數和連線驗證技術。
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+autotag-review: '2026-06-22T21:56:59.687Z'
+TQID: 'https://experienceleague.adobe.com/deiikp11GlXtMJFkhT7DhgguCYFkplQgr2fYm8MMN7I'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: 859
 ht-degree: 1%
 
 ---
 
 # 設定工作階段儲存的Redis
 
->[!IMPORTANT]
->
->您必須[安裝Redis](config-redis.md#install-redis)，才能繼續。
-
+{{cloud-cache-config}}
 
 Commerce現在提供命令列選項，可用於設定Redis工作階段存放區。 在舊版中，您編輯了`<Commerce install dir>app/etc/env.php`檔案。 命令列提供驗證，且是建議的設定方法，但您仍可編輯`env.php`檔案。
+
+>[!IMPORTANT]
+>
+>您必須先安裝[Redis](config-redis.md#install-redis)，才能設定工作階段存放區。
 
 執行`setup:config:set`命令並指定Redis特定引數。
 

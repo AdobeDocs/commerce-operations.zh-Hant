@@ -1,11 +1,23 @@
 ---
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: f08c48c7e39c506a71bf9e13d0adc06315013d69
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
 # 代碼片段
+
+## 雲端快取上的Commerce設定附註（附參考） {#cloud-cache-config}
+
+>[!NOTE]
+>
+>若為雲端專案上的Adobe Commerce，請參閱[Redis與Valkey服務組態的最佳實務](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)以取得快取組態指示。
+
+## 雲端上清漆組態注意事項參考Commerce {#varnish-config-cloud}
+
+>[!NOTE]
+>
+>如果您的Commerce專案部署在雲端，則整頁快取會使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/fastly)，而非Varnish。 本節中的主題僅適用於內部部署。
 
 ## Adobe服務版本支援 {#supported-versions-only}
 

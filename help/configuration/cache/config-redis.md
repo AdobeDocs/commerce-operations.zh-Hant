@@ -3,9 +3,24 @@ title: 安裝及設定Redis
 description: 瞭解如何使用Adobe Commerce安裝和設定Redis的快取和工作階段儲存。 探索最佳化和效能調整的選項。
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: de613310ad701dd594a6ee8fcd973aa2c3769870
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+autotag-review: '2026-06-22T20:26:29.348Z'
+TQID: 'https://experienceleague.adobe.com/N61AAy4ihSIlhEjdvpji2XVOdZuHWhytp9zgoAU41K4'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: 456
 ht-degree: 0%
 
 ---
@@ -17,6 +32,8 @@ Redis是記憶體中的資料存放區，可作為快取後端及工作階段存
 - PHP工作階段儲存
 - 標籤式快取清除，不含`foreach`回圈
 - 磁碟上儲存和主/從復寫
+
+{{cloud-cache-config}}
 
 ## 安裝Redis
 

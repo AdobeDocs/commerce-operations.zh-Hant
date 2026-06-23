@@ -1,56 +1,92 @@
 ---
-title: 設定網頁伺服器以供清漆快取
+title: 設定nginx做為清漆快取
 description: 瞭解如何設定網頁伺服器以搭配Adobe Commerce的Varnish快取。 探索連線埠組態和設定需求。
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+autotag-review: '2026-06-22T21:49:41.837Z'
+TQID: 'https://experienceleague.adobe.com/0vOg86gRkST8CZGhdIESzhld63HQ5IUlO4go-Hgw9Xs'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: c8faa589c9e9d1dbc01863d90aad5f91b11c0140
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: 806
 ht-degree: 0%
 
 ---
 
-# 設定Varnish快取的網頁伺服器
+# 設定清漆快取的nginx {#configure-web-server-for-varnish-caching}
 
-將網頁伺服器設定為在預設連線埠80以外的連線埠上接聽，因為Varnish會直接回應傳入的HTTP要求，而非網頁伺服器。
+當Varnish用作Adobe Commerce前面的全頁快取時，Varnish通常會監聽公用HTTP連線埠，並在非預設後端連線埠（例如8080）上轉送要求給nginx。 更新Commerce原始伺服器的nginx網站設定，以便接聽Varnish將使用的後端連線埠。
+
+{{varnish-config-cloud}}
 
 以下各節以連線埠8080為例。
 
-**若要變更Apache 2.4接聽連線埠**：
+**變更Commerce原始伺服器的nginx接聽連線埠**：
 
-1. 在文字編輯器中開啟`/etc/httpd/conf/httpd.conf`。
-1. 找到`Listen`指示詞。
-1. 將接聽連線埠的值變更為`8080`。 （您可以使用任何可用的接聽連線埠。）
-1. 將變更儲存至`httpd.conf`並結束文字編輯器。
+1. 在文字編輯器中開啟Adobe Commerce原始伺服器的nginx網站設定。
+
+位置取決於您的作業系統和Nginx配置。 例如，Ubuntu經常使用`/etc/nginx/sites-available/`下的檔案。
+
+1. 在Commerce網站的`server`區塊中，將`listen`指示詞從公用HTTP連線埠變更為Varnish用來連線nginx的後端連線埠。
+
+   例如，變更
+
+   ```conf
+   server {
+       listen 80;
+       server_name example.com;
+       root /var/www/html/magento2;
+       include /var/www/html/magento2/nginx.conf.sample;
+   }
+   ```
+
+   至：
+
+   ```conf
+   server {
+       listen 8080;
+       server_name example.com;
+       root /var/www/html/magento2;
+       include /var/www/html/magento2/nginx.conf.sample;
+   }
+   ```
+
+1. 儲存檔案。
+
+1. 驗證nginx設定：
+
+   ```shell
+   nginx -t
+   ```
+
+1. 重新啟動nginx：
+
+   ```shell
+   systemctl restart nginx
+   ```
 
 ## 修改Varnish系統設定
 
-若要修改Varnish系統組態：
+更新nginx以監聽後端連線埠後，設定Varnish以轉送要求至該主機和連線埠。 例如：
 
-1. 以具有`root`許可權的使用者身分，在文字編輯器中開啟您的「消失」設定檔：
-
-   - CentOS 6： `/etc/sysconfig/varnish`
-   - CentOS 7： `/etc/varnish/varnish.params`
-   - Debian： `/etc/default/varnish`
-   - Ubuntu： `/etc/default/varnish`
-
-1. 將Varnish接聽連線埠設定為80：
-
-   ```conf
-   VARNISH_LISTEN_PORT=80
-   ```
-
-   對於Varnish 4.x，請確定DAEMON_OPTS包含`-a`引數的正確接聽連線埠（即使VARNISH_LISTEN_PORT設定為正確值）：
-
-   ```conf
-   DAEMON_OPTS="-a :80 \
-      -T localhost:6082 \
-      -f /etc/varnish/default.vcl \
-      -S /etc/varnish/secret \
-      -s malloc,256m"
-   ```
-
-1. 將變更儲存至「清漆」組態檔，並退出文字編輯器。
+```conf
+backend default {
+    .host = "192.0.2.55";
+    .port = "8080";
+}
+```
 
 ### 修改預設VCL
 
@@ -80,7 +116,7 @@ ht-degree: 0%
 
 1. 將`.port`的值取代為網頁伺服器的接聽連線埠（此範例中為8080）。
 
-   範例： Apache安裝在主機192.0.2.55上，且Apache正在連線埠8080上接聽：
+   範例： nginx安裝在主機192.0.2.55上並在連線埠8080上接聽：
 
    ```conf
    backend default {
@@ -91,7 +127,7 @@ ht-degree: 0%
 
    >[!INFO]
    >
-   >如果Varnish和Apache在相同主機上執行，Adobe建議您使用IP位址或主機名稱，而非`localhost`。
+   >如果Varnish和nginx在相同主機上執行，Adobe建議您使用IP位址或主機名稱，而非`localhost`。
 
 1. 將變更儲存至`default.vcl`並結束文字編輯器。
 
@@ -162,11 +198,11 @@ netstat -tulpn
 ```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
-tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
+tcp        0      0 :::8080                     :::*                        LISTEN      26822/nginx
 tcp        0      0 ::1:48509                   :::*                        LISTEN      32604/varnishd
 ```
 
-前述顯示於連線埠80上執行的Varnish以及於連線埠8080上執行的Apache。
+前文顯示了在連線埠80上執行的Varnish，以及在連線埠8080上執行的nginx。
 
 如果您沒有看到`varnishd`的輸出，請確定Varnish正在執行。
 
