@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: dace5fedf8e247c3391a8ffae1b2050f3e37367e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
 workflow-type: tm+mt
-source-wordcount: 410
+source-wordcount: 465
 ht-degree: 0%
 
 ---
@@ -39,6 +34,8 @@ QPT v1.1.80包含下列修補程式：
 1. **ACP2E-4615**：修正線上訂單退款失敗並出現PayPal錯誤的問題，指出&#x200B;*PayPal閘道拒絕要求。 內部錯誤。*。
 1. **ACP2E-4626**：修正部分Storefront JavaScript檔案被要求並執行兩次，而造成間歇性重複載入和不穩定行為的問題。
 1. **ACP2E-4653**：修正透過REST API擷取或更新規則時，**[!UICONTROL Category (Parent Only)]**&#x200B;和&#x200B;**[!UICONTROL Category (Children Only)]**&#x200B;的&#x200B;**[!UICONTROL Cart Price Rule]**&#x200B;條件屬性範圍未公開的問題。
+1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**：修正店面產品頁面的Weight屬性在&#x200B;**[!UICONTROL Additional Information]**&#x200B;或&#x200B;**[!UICONTROL More Information]**&#x200B;區段中只顯示原始數值而沒有設定測量單位（lbs或kgs）的問題。
+1. **ACP2E-4156**：修正REST API中的送貨地址驗證不符合[!UICONTROL Admin]中定義的屬性組態的問題。
 1. **ACP2E-4808**：修正店面產品頁面的Weight屬性在&#x200B;**[!UICONTROL Additional Information]**&#x200B;或&#x200B;**[!UICONTROL More Information]**&#x200B;區段中只顯示原始數值而沒有設定測量單位（lbs或kgs）的問題。
 1. **[ACP2E-4156](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)**：修正[!DNL REST] API中的送貨地址驗證未遵循Admin中定義的屬性組態的問題。
 1. **ACP2E-4813**：修正某些產品在結帳時無法使用USPS送貨方法，且送貨預估不正確的問題，包括分割成多個套件的訂單。
