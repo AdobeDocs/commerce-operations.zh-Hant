@@ -59,7 +59,7 @@ ht-degree: 2%
         <p>瞭解創新性Commerce銷售服務的最新改善。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=zh-Hant">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">目錄服務</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=zh-Hant">目錄服務</a></li>
             <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/release-notes">Experience Platform聯結器</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=zh-Hant">即時搜尋</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=zh-Hant">付款服務</a></li>
