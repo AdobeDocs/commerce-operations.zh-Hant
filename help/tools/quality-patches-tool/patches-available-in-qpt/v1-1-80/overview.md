@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
+source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
 workflow-type: tm+mt
-source-wordcount: 465
+source-wordcount: 461
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 QPT v1.1.80包含下列修補程式：
 
 1. **ACP2E-4239**：修正由於選取的日期、儲存的UTC值和設定的存放區時區之間的時區差異，使用日期屬性的管理員格線篩選器傳回錯誤結果的問題。
-1. **ACP2E-4472**：修正在&#x200B;**[!UICONTROL Login as Customer]**&#x200B;流程中建立Null引號的問題。
+1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)**：修正在&#x200B;**[!UICONTROL Login as Customer]**&#x200B;流程期間`quote`資料庫表格中建立Null引號記錄的問題。
 1. **ACP2E-4481**：修正取消訂單後，無法正確重新計算套件組合產品可銷售性的問題。
 1. **ACP2E-4488**：修正屬性集大的產品在[!UICONTROL Admin]中儲存或編輯產品速度緩慢的問題。
 1. **ACP2E-4493**：修正啟用非同步索引時，銷售訂單封存格線顯示不正確訂單狀態的問題。
