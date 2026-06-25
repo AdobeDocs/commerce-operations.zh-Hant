@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
+source-git-commit: f1c04fe69abdcdbb425d4488e3095baa2debc274
 workflow-type: tm+mt
-source-wordcount: '10196'
+source-wordcount: '10206'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601：重新儲存付款授權交易自我參考parent_id並觸發無限回圈/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4653： [!DNL REST] API中遺漏購物車價格規則類別範圍條件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
          - [ACP2E-4472：使用「登入為客戶流程」建立的Null報價單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
          - [ACP2E-4808：產品重量顯示不含店面的度量單位](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533：當URL包含商店程式碼時，預留位置影像無法在店面載入](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
