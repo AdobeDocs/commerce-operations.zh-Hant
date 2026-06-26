@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 1816dfaa5145de416decf64482ed81ee82c7448d
+source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
 workflow-type: tm+mt
-source-wordcount: 463
+source-wordcount: 541
 ht-degree: 0%
 
 ---
@@ -39,6 +39,9 @@ QPT v1.1.80包含下列修補程式：
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**：修正URL中包含商店程式碼時，店面沒有載入預留位置影像的問題。
 1. **ACP2E-4610**：修正`sales_clean_quotes` cron工作發生效能問題的問題。
 1. **ACP2E-4615**：修正線上訂單退款失敗並出現PayPal錯誤的問題，指出&#x200B;*PayPal閘道拒絕要求。 內部錯誤。*。
+1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)**：修正部分Storefront JavaScript檔案被要求並執行兩次，而造成間歇性重複載入和不穩定行為的問題。
+1. **ACP2E-4653**：修正透過REST API擷取或更新規則時，**[!UICONTROL Category (Parent Only)]**&#x200B;和&#x200B;**[!UICONTROL Category (Children Only)]**&#x200B;的&#x200B;**[!UICONTROL Cart Price Rule]**&#x200B;條件屬性範圍未公開的問題。
+1. **ACP2E-4808**：修正店面產品頁面的Weight屬性在&#x200B;**[!UICONTROL Additional Information]**&#x200B;或&#x200B;**[!UICONTROL More Information]**&#x200B;區段中只顯示原始數值而沒有設定測量單位（lbs或kgs）的問題。
 1. **ACP2E-4626**：修正部分Storefront JavaScript檔案被要求並執行兩次，而造成間歇性重複載入和不穩定行為的問題。
 1. **[ACP2E-4653](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)**：修正透過[!DNL REST] API擷取或更新規則時，**[!UICONTROL Category (Parent Only)]**&#x200B;和&#x200B;**[!UICONTROL Category (Children Only)]**&#x200B;的購物車價格規則條件屬性範圍未公開的問題。
 1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**：修正店面產品頁面的Weight屬性在&#x200B;**[!UICONTROL Additional Information]**&#x200B;或&#x200B;**[!UICONTROL More Information]**&#x200B;區段中只顯示原始數值而沒有設定測量單位（lbs或kgs）的問題。
