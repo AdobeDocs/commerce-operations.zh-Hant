@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: f8a08611109d9c8e5e686e0c451b0a58ecc12e21
+source-git-commit: b5c22a88e9eb9c4e8122a853deee34a9521c263c
 workflow-type: tm+mt
-source-wordcount: '10293'
+source-wordcount: '10303'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601：重新儲存付款授權交易自我參考parent_id並觸發無限回圈/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4481：訂單取消後套件產品可銷售性重新計算不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)
          - [ACSD-53502：由於New Relic指令碼遞回，**[!UICONTROL Add to Cart]**&#x200B;在iOS [!DNL Safari] 上間歇性地失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
          - [ACP2E-4813：多包裝訂單無法使用USPS送貨方法或不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
          - [ACP2E-4615： PayPal線上訂單退款失敗，錯誤為&#x200B;*PayPal閘道拒絕要求。 內部錯誤。*](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)
