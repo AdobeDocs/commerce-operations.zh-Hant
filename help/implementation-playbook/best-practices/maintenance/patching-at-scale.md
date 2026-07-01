@@ -7,7 +7,7 @@ badge: label="由Adobe資深技術架構師Tony Evers撰寫" type="Informative" 
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
 source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,8 @@ ht-degree: 0%
 
 1. **安全性修補程式**&#x200B;是Adobe Commerce發行版本的靜態程式碼基底的一部分。
 1. **Composer修補程式**&#x200B;透過`composer install`和`composer update`外掛程式，例如[cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches)。
-1. 所有&#x200B;**必要的修補程式**&#x200B;包含在Commerce[封裝的](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=zh-Hant)雲端修補程式。
-1. 已選取包含在&#x200B;**中的**&#x200B;品質修補程式[[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md)。
+1. 所有&#x200B;**必要的修補程式**&#x200B;包含在Commerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=zh-Hant)封裝的雲端修補程式。
+1. 已選取包含在[[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md)中的&#x200B;**品質修補程式**。
 1. **自訂修補程式**&#x200B;以及`/m2-hotfixes`目錄中的Adobe Commerce支援修補程式，依修補程式名稱的字母順序排列。
 
    >[!IMPORTANT]
@@ -62,11 +62,11 @@ ht-degree: 0%
 - **元件封裝：** `centralized-patcher`
 
    - 定義品質修補程式清單及要安裝的`m2-hotfixes`
-   - 需要`centralized-patcher-composer-plugin`套件，該套件會在`vendor/bin/magento-patches apply`作業之後執行`composer install`命令
+   - 需要`centralized-patcher-composer-plugin`套件，該套件會在`composer install`作業之後執行`vendor/bin/magento-patches apply`命令
 
 - **外掛程式套件：** `centralized-patcher-composer-plugin`
 
-   - 定義從`CentralizedPatcher`封裝讀取品質修補程式清單的`centralized-patcher` PHP類別
+   - 定義從`centralized-patcher`封裝讀取品質修補程式清單的`CentralizedPatcher` PHP類別
    - 執行`vendor/bin/magento-patches apply`命令以在`composer install`作業之後安裝品質修補程式清單
 
 ### `centralized-patcher`
@@ -85,7 +85,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >下列範例中的`require`屬性顯示您稍後必須建立的`require`外掛程式套件[上的](#centralized-patcher-composer-plugin)相依性。
+   >下列範例中的`require`屬性顯示您稍後必須建立的[外掛程式套件](#centralized-patcher-composer-plugin)上的`require`相依性。
 
    ```json
    {
@@ -109,7 +109,7 @@ ht-degree: 0%
    }
    ```
 
-1. 在您的套件中建立`/m2-hotfixes`目錄，並將其新增至`map`檔案中的`composer.json`屬性。 `map`屬性包含要從此套件複製到要修補之目標專案根目錄的檔案。
+1. 在您的套件中建立`/m2-hotfixes`目錄，並將其新增至`composer.json`檔案中的`map`屬性。 `map`屬性包含要從此套件複製到要修補之目標專案根目錄的檔案。
 
    ```json
    {
@@ -148,7 +148,7 @@ ht-degree: 0%
    ```
 
 
-上述程式碼範例中的`quality-patches`屬性包含[完整修補程式清單](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)中的兩個修補程式，以為例。  這些品質修補程式會使用`centralized-patcher`命令安裝在需要`vendor/bin/magento-patches apply`套件的每個專案上。
+上述程式碼範例中的`quality-patches`屬性包含[完整修補程式清單](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)中的兩個修補程式，以為例。  這些品質修補程式會使用`vendor/bin/magento-patches apply`命令安裝在需要`centralized-patcher`套件的每個專案上。
 
 您可以建立範例修補程式(`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`)以進行測試。
 
@@ -338,7 +338,7 @@ index 03a3bf9..681e0b0 100644
 
 您可能會遇到在所有專案中僅需要95%的修補程式，而少數修補程式僅套用至特定執行個體的情況。 套用修補的常規方法仍然有效。 您可以在`/m2-hotfixes`目錄中保留專案特定的修補程式，並為每個專案安裝品質修補程式。
 
-如果您使用此方法，**不會**&#x200B;認可`/m2-hotfixes`目錄中任何已由`centralized-patcher`元件封裝複製到專案中的修補程式。 您可以將`/m2-hotfixes`新增至您的`.gitignore`檔案，以防止意外認可。 更新`.gitignore`檔案後，請記住，必須使用`/m2-hotfixes`命令新增任何專案特定的`git add –force`。
+如果您使用此方法，**不會**&#x200B;認可`/m2-hotfixes`目錄中任何已由`centralized-patcher`元件封裝複製到專案中的修補程式。 您可以將`/m2-hotfixes`新增至您的`.gitignore`檔案，以防止意外認可。 更新`.gitignore`檔案後，請記住，必須使用`git add –force`命令新增任何專案特定的`/m2-hotfixes`。
 
 ## 執行不同的Adobe Commerce版本
 
@@ -360,7 +360,7 @@ index 03a3bf9..681e0b0 100644
 
 1. 部署
 
-   - 已根據`.magento.env.yaml`檔案安裝必要的修補程式和專案特定的品質修補程式(僅限雲端基礎結構專案上的Adobe Commerce)。
+   - 已根據`.magento.env.yaml`檔案安裝必要的修補程式和專案特定的品質修補程式（僅限雲端基礎結構專案上的Adobe Commerce）。
    - 自訂修補程式和`/m2-hotfixes`目錄中的支援修補程式會依修補程式名稱的字母順序安裝。
 
 如此一來，您可以集中管理所有安裝的所有修補程式，更能保證Adobe Commerce存放區的安全性和穩定性。 請使用下列方法檢查修正程式狀態：
@@ -371,6 +371,6 @@ index 03a3bf9..681e0b0 100644
 ## 程式碼範例
 
 - [Magento Open Source中的集中式修補程式](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
-- [在雲端基礎結構上的Adobe Commerce中集中修補程式](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
+- [雲端基礎結構上的Adobe Commerce集中式修補程式](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
 - [集中式修補程式撰寫器外掛程式](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
 - [集中式修補程式元件](https://github.com/AntonEvers/centralized-patcher)
