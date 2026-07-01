@@ -33,8 +33,8 @@ ht-degree: 0%
 
 1. **安全性修補程式**&#x200B;是Adobe Commerce發行版本的靜態程式碼基底的一部分。
 1. **Composer修補程式**&#x200B;透過`composer install`和`composer update`外掛程式，例如[cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches)。
-1. 所有&#x200B;**必要的修補程式**&#x200B;包含在Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html)封裝的[雲端修補程式。
-1. 已選取包含在[!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md)中的&#x200B;**品質修補程式**。
+1. 所有&#x200B;**必要的修補程式**&#x200B;包含在Commerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html)封裝的雲端修補程式。
+1. 已選取包含在[[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md)中的&#x200B;**品質修補程式**。
 1. **自訂修補程式**&#x200B;以及`/m2-hotfixes`目錄中的Adobe Commerce支援修補程式，依修補程式名稱的字母順序排列。
 
    >[!IMPORTANT]
