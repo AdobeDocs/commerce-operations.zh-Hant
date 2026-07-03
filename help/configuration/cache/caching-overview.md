@@ -40,7 +40,7 @@ Adobe Commerce仰賴多層快取架構來減少資料庫負載、將備援處理
 
 ## 使用Varnish的全頁快取
 
-[清漆快取](config-varnish.md)是快取記憶體中完整頁面的HTTP加速器。 對於內部部署生產環境，Adobe強烈建議使用Varnish，因為它比內建全頁快取快很多。 雲端環境上的Commerce使用[Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)進行整頁快取，而非Varnish。
+[清漆快取](config-varnish.md)是快取記憶體中完整頁面的HTTP加速器。 對於內部部署生產環境，Adobe強烈建議使用Varnish，因為它比內建全頁快取快很多。 雲端環境上的Commerce使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/fastly)進行整頁快取，而非Varnish。
 
 >[!NOTE]
 >
