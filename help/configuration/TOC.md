@@ -2,10 +2,10 @@
 user-guide-title: 設定指南
 user-guide-description: 設定您的Adobe Commerce應用程式功能與服務。
 feature: Configuration
-source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 1%
+source-wordcount: '401'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 1%
       + [使用環境變數](deployment/example-environment-variables.md)
 + 快取 {#cache}
    + [快取概述](cache/caching-overview.md)
-   + [設定快取前端](cache/cache-types.md)
+   + [設定快取前端和型別](cache/cache-types.md)
    + [快取後端選項](cache/cache-options.md)
    + [L2快取設定](cache/level-two-cache.md)
    + Redis {#redis}
@@ -151,4 +151,4 @@ ht-degree: 1%
       + [驗證分割資料庫](storage/multi-master-verify.md)
       + [資料庫復寫](storage/multi-master-replication.md)
       + [還原為單一資料庫](storage/revert-split-database.md)
-+ [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
++ [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

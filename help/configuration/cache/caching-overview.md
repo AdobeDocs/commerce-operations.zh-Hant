@@ -5,21 +5,14 @@ feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
 autotag-review: '2026-06-22T20:28:12.484Z'
 TQID: 'https://experienceleague.adobe.com/oDoZ1o2IWXsDTo84XQygWZYVmfVHWbk-CuqaU47laU4'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 589
+source-wordcount: 593
 ht-degree: 0%
 
 ---
@@ -32,7 +25,7 @@ Adobe Commerce仰賴多層快取架構來減少資料庫負載、將備援處理
 
 ## 快取前端
 
-快取前端是Commerce與快取儲存後端之間的介面。 您可以定義多個前端，每個前端都有不同的後端設定，然後將特定的[快取型別](../cli/manage-cache.md#clean-and-flush-cache-types)指派給每個前端。  如需設定詳細資料，請參閱[設定快取前端](cache-types.md)。
+快取前端是Commerce與快取儲存後端之間的介面。 您可以定義多個前端，每個前端都有不同的後端設定，然後將特定的[快取型別](../cli/manage-cache.md#clean-and-flush-cache-types)指派給每個前端。 如需設定詳細資料，請參閱[設定快取前端和型別](cache-types.md)。
 
 ## 快取後端
 
@@ -40,7 +33,7 @@ Adobe Commerce仰賴多層快取架構來減少資料庫負載、將備援處理
 
 ## 使用Varnish的全頁快取
 
-[清漆快取](config-varnish.md)是快取記憶體中完整頁面的HTTP加速器。 對於內部部署生產環境，Adobe強烈建議使用Varnish，因為它比內建全頁快取快很多。 雲端環境上的Commerce使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/fastly)進行整頁快取，而非Varnish。
+[清漆快取](config-varnish.md)是快取記憶體中完整頁面的HTTP加速器。 對於內部部署生產環境，Adobe強烈建議使用Varnish，因為它比內建全頁快取快很多。 雲端環境上的Commerce使用[Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly)進行整頁快取，而非Varnish。
 
 >[!NOTE]
 >
@@ -74,7 +67,7 @@ Adobe Commerce仰賴多層快取架構來減少資料庫負載、將備援處理
 
 如需詳細資訊，請參閱：
 
-- [設定快取前端](cache-types.md) — 將快取前端與特定快取型別建立關聯
+- [設定快取前端與型別](cache-types.md) — 將快取前端與特定快取型別建立關聯
 - [快取後端選項](cache-options.md) — 後端選項參考
 
 雲端上的&#x200B;**Adobe Commerce** — 使用`.magento.env.yaml`中的`CACHE_CONFIGURATION`設定快取。 檢視[Redis與Valkey服務組態的最佳實務](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md)。
