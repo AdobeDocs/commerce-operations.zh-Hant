@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 7f3767864abdc38fcc0978f174f16632190112cf
 workflow-type: tm+mt
-source-wordcount: 738
+source-wordcount: 764
 ht-degree: 0%
 
 ---
@@ -185,6 +185,10 @@ Adobe不建議為`default`快取型別啟用`use_stale_cache`選項。
 ## 現代Symfony L2快取實作
 
 從Commerce 2.4.9開始，您可以使用Symfony快取型的L2快取實作（`symfony_l2`後端），此實作提供符合PSR 6的現代化快取實作，其效能比傳統`RemoteSynchronizedCache`有顯著改善。
+
+>[!NOTE]
+>
+>此功能目前僅適用於Adobe Commerce On Premises 2.4.9客戶。 並將於2026年7月下旬在Adobe Commerce On Cloud上啟用。」
 
 ### Symfony L2快取記憶體的優點
 

@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 589
+source-wordcount: 593
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Adobe Commerce仰賴多層快取架構來減少資料庫負載、將備援處理
 
 ## 快取前端
 
-快取前端是Commerce與快取儲存後端之間的介面。 您可以定義多個前端，每個前端都有不同的後端設定，然後將特定的[快取型別](../cli/manage-cache.md#clean-and-flush-cache-types)指派給每個前端。  如需設定詳細資料，請參閱[設定快取前端](cache-types.md)。
+快取前端是Commerce與快取儲存後端之間的介面。 您可以定義多個前端，每個前端都有不同的後端設定，然後將特定的[快取型別](../cli/manage-cache.md#clean-and-flush-cache-types)指派給每個前端。 如需設定詳細資料，請參閱[設定快取前端和型別](cache-types.md)。
 
 ## 快取後端
 
@@ -74,7 +74,7 @@ Adobe Commerce仰賴多層快取架構來減少資料庫負載、將備援處理
 
 如需詳細資訊，請參閱：
 
-- [設定快取前端](cache-types.md) — 將快取前端與特定快取型別建立關聯
+- [設定快取前端與型別](cache-types.md) — 將快取前端與特定快取型別建立關聯
 - [快取後端選項](cache-options.md) — 後端選項參考
 
 雲端上的&#x200B;**Adobe Commerce** — 使用`.magento.env.yaml`中的`CACHE_CONFIGURATION`設定快取。 檢視[Redis與Valkey服務組態的最佳實務](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md)。
