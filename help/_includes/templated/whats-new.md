@@ -23,7 +23,7 @@ ht-degree: 0%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615的QPT 1.1.80修正的詳細說明： PayPal線上訂單退款失敗並出現錯誤「PayPal閘道拒絕要求。 內部錯誤。"</a>。</p>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615的QPT 1.1.80修正的詳細說明： PayPal線上訂單退款失敗並出現錯誤「PayPal閘道拒絕要求。 內部錯誤。"</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -47,7 +47,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55fad95c3110f8150097f410115d89299b9e681b">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增適用於<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813的QPT 1.1.80修正的詳細說明： USPS送貨方法無法用於或不適用於多包訂單</a>。</p>
+      <td><p>新增適用於<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813的QPT 1.1.80修正的詳細說明： USPS送貨方法無法用於或不適用於多包訂單</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -55,7 +55,7 @@ ht-degree: 0%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94b45f953d8a91814fa7359369f976e0cbd94a36">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610： sales_clean_quotes cron</a>的QPT 1.1.80修正的詳細說明。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610： sales_clean_quotes cron</a>的QPT 1.1.80修正的詳細說明。</p>
 </td>
       <td>
         新主題qpt
