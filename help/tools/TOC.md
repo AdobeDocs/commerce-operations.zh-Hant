@@ -2,9 +2,9 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
+source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
 workflow-type: tm+mt
-source-wordcount: '10316'
+source-wordcount: '10330'
 ht-degree: 0%
 
 ---
@@ -1009,7 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601：重新儲存付款授權交易自我參考parent_id並觸發無限回圈/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
-         - [ACP2E-4239：由於時區不符，管理格線日期篩選器未傳回任何結果](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)
+         - [ACP2E-4493：啟用非同步索引時，銷售訂單封存格線顯示不正確的訂單狀態](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493.md) - [ACP2E-4239：管理格線日期篩選器不會因為時區不符傳回任何結果](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)
          - [ACP2E-4481：訂單取消後套件產品可銷售性重新計算不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)
          - [ACSD-53502：由於New Relic指令碼遞回，**[!UICONTROL Add to Cart]**&#x200B;在iOS [!DNL Safari] 上間歇性地失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
          - [ACP2E-4813：多包裝訂單無法使用USPS送貨方法或不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
