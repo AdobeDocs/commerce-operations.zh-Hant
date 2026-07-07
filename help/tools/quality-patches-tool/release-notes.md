@@ -5,16 +5,12 @@ exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
 autotag-review: '2026-05-29T17:40:45.034Z'
 TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: f1cae5b4ad3d75dbc7f83b7687a4614f678263cd
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 09557adb586946f1a7c4f94cb7675dc2aa83551d
 workflow-type: tm+mt
-source-wordcount: 31322
+source-wordcount: 31872
 ht-degree: 0%
 
 ---
@@ -25,11 +21,32 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.82 {#v1-1-82}
+
+* **ACP2E-4194** （適用於Adobe Commerce和Magento Open Source >=2.4.7-p10 &lt;2.4.8） || >=2.4.8-p5 &lt;2.4.9) — 修正GraphQL回應針對無效、未授權或格式錯誤的請求傳回不正確HTTP狀態代碼的問題。
+* **ACP2E-4547** （針對Adobe Commerce，B2B >=1.5.0 &lt;1.5.3） — 修正管理員使用者無法在管理員中使用「依SKU新增產品」，將標準目錄中的產品新增至可協商報價單，因為公司已指派給未連結至共用目錄的客戶群組。
+* **ACP2E-4593** （適用於Adobe Commerce >=2.4.5 &lt;2.4.10） — 修正多網站部署中，次要網站上針對網站限制顯示的CMS頁面可能錯誤的問題。
+* **ACP2E-4682** （適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.10） — 修正每次載入頁面時，造訪檢查報價的店面頁面時，`isActive`狀態會建立空白報價記錄的問題。
+* **ACP2E-4695** （適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.8） — 修正目錄規則索引器耗用過多記憶體且無法完成，導致不穩定和記憶體不足錯誤的問題。
+* **ACP2E-4698** （適用於Adobe Commerce和Magento Open Source >=2.4.7-p9 &lt;2.4.8） || >=2.4.8-p4 &lt;2.4.9) — 修正再次在頁面產生器文字內容中編輯影像時，可以儲存絕對媒體URL，而非保留可攜式媒體指示詞的問題。
+* **ACP2E-4748** （適用於Adobe Commerce >=2.4.7 &lt;2.4.9） — 修正具有大量獎勵點歷史記錄的商店中，獎勵點過期程式緩慢的問題，導致獎勵點過期延遲。
+* **ACP2E-4797** （適用於Adobe Commerce >=2.4.8 &lt;2.4.9） — 修正在WYSIWYG編輯器或管理員中的頁面產生器內容中輸入4位元組Unicode字元時，即使資料庫設定為支援utf8mb4，仍會遭到錯誤封鎖的問題。
+* **ACP2E-4799** （針對Adobe Commerce，B2B >=1.5.0 &lt;1.5.3） — 修正GraphQL查詢傳回「total_count」值的問題，該值僅反映目前頁面的專案數，而非符合查詢條件的請購單清單總數。`requisition_lists`
+* **ACP2E-4805** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正清單中第一個可銷售子產品延遲出現時，包含許多子產品的可設定產品之結帳API請求速度會顯著變慢的問題。
+* **ACP2E-4840** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正「產品」GraphQL查詢中要求的數量值傳回null的問題。
+* **ACP2E-4870** （適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.10） — 修正產品警報電子郵件通知忽略商店檢視電子郵件設定的問題。
+* **ACP2E-4875** （適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.10） — 修正在Admin中檢視具有大型通訊錄的客戶帳戶可能會意外登出Admin使用者的問題。
+* **ACP2E-4894** （適用於Adobe Commerce >=2.4.7 &lt;2.4.9） — 修正當在大量存放區上啟用非同步索引時，新訂單在管理訂單管理網格中出現的延遲問題。
+* **ACP2E-4981** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正頁面產生器產品輪播以不正確的類別位置順序顯示產品的問題，以及在可個別顯示相符的子產品時包含可設定的產品。
+* 已更新的版本： **ACSD-45255**，**ACSD-50849**
+* 已取代的修補程式： **ACSD-49970-V3**、**ACSD-50260-V2**、**ACSD-54966**、**ACSD-63325**、**ACSD-64212**、**ACSD-66865**、**ACSD-69237**
+* 已棄用的修補程式： **ACP2E-4815**
 
 ## v1.1.81 {#v1-1-81}
 
@@ -58,7 +75,7 @@ ht-degree: 0%
 * **ACP2E-4552** （對於Adobe Commerce，B2B >=1.5.0 &lt;1.5.3） — 修正GraphQL回應中未傳回公司狀態的問題。
 * **ACP2E-4610** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.9） — 修正sales_clean_quotes cron工作出現效能問題的問題。
 * **ACP2E-4615** (適用於Adobe Commerce >=2.4.4-p13 &lt;2.4.4-p17 || >=2.4.4-p18 &lt;2.4.5 || >=2.4.5-p12 &lt;2.4.6 || >=2.4.6-p10 &lt;2.4.7 || >=2.4.7-p5 &lt;2.4.9) — 修正線上訂單退款失敗並出現PayPal錯誤，指出「PayPal閘道拒絕要求」的問題。 內部錯誤。」
-* **ACP2E-4626** （適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9） — 修正部分Storefront JavaScript檔案被請求並執行兩次，而造成間歇性重複載入和不穩定行為的問題。
+* **ACP2E-4626** （適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9） — 修正部分店面JavaScript檔案被請求並執行兩次，而造成間歇性重複載入和不穩定行為的問題。
 * **ACP2E-4653** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正透過REST API擷取或更新規則時，未公開「類別（僅限父項）」和「類別（僅限子項）」的購物車價格規則條件屬性範圍的問題。
 * **ACP2E-4808** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.10） — 修正店面產品頁面上的「重量」屬性在「其他資訊」或「更多資訊」區段中只顯示原始數值而沒有設定測量單位（磅或公斤）的問題。
 * **ACP2E-4156** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正REST API中出貨地址驗證不符合管理員中定義屬性組態的問題。
@@ -108,7 +125,7 @@ ht-degree: 0%
 * **ACP2E-4732** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8） — 修正當changelog表格中的version_id欄達到最大值時，有大量更新的客戶停止部分索引的問題。
 * **ACP2E-4763** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正當「目錄價格」設定為「包含稅捐」時，由於套用兩次稅捐，GraphQL customerOrders查詢會傳回膨脹的original_price_include_tax和original_row_total_include_tax值的問題。
 * **ACSD-60989** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8） — 修正透過宣告式結構描述修改具有外部索引鍵的欄時，在MariaDB上造成錯誤的問題。
-* 已更新的版本： **ACSD-59280**、**ACSD-45255**、**ACSD-50336**、**ACSD-49737**、**ACSD-50849**、**ACSD-53750**、**ACSD-55031**、**ACSD-51819**、**ACSD-55628**、**ACSD-54965-V2** **ACSD-56546**、**ACSD-61756**、**ACSD-68040**、**ACSD-62708**、**ACSD-63283**、**ACSD-64732**、**ACSD-65775**、**ACSD-66965**、**ACP2E-4050&lbrace;37**
+* 已更新的版本： **ACSD-59280**、**ACSD-45255**、**ACSD-50336**、**ACSD-49737**、**ACSD-50849**、**ACSD-53750**、**ACSD-55031**、**ACSD-51819**、**ACSD-55628**、**ACSD-54965-V2** **ACSD-56546**、**ACSD-61756**、**ACSD-68040**、**ACSD-62708**、**ACSD-63283**、**ACSD-64732**、**ACSD-65775**、**ACSD-66965**、**ACP2E-4050{37**
 * 已取代的修補程式： **ACSD-58446**，**ACSD-67904**
 
 ## v1.1.77 {#v1-1-77}
@@ -435,8 +452,7 @@ ht-degree: 0%
 * **ACSD-61805** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8） — 修正透過[!DNL REST API]更新延期交貨狀態後，店面產品無存貨的問題。
 * **ACSD-60811** （適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.8） — 修正當目前狀態為&#x200B;*處理*&#x200B;或&#x200B;*詐騙*&#x200B;時，才能使用自訂值或註解更新訂單狀態的問題。
 * **ACSD-62952** （適用於Adobe Commerce >=2.4.4 &lt;2.4.8） — 修正店面未正確顯示[!UICONTROL Gift Registry]日期的問題。
-* **ACSD-55339** （適用於Adobe Commerce >=2.4.4 &lt;2.4.8） — 修正以&quot;0&quot; （零）開頭之產品[!DNL SKU]移除&quot;0&quot;，導致引號無法更新的問題。
-**
+* **ACSD-55339** （適用於Adobe Commerce >=2.4.4 &lt;2.4.8） — 修正以&quot;0&quot; （零）開頭之產品[!DNL SKU]移除&quot;0&quot;，導致引號無法更新的問題。**
 * 更新的修補程式： **ACSD-59514**
 * 更新的版本： **ACSD-60816**
 * 已取代的修補程式： **ACSD-59967**
