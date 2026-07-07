@@ -1,11 +1,11 @@
 ---
 title: '[!UICONTROL bots]索引標籤'
-description: 瞭解[!UICONTROL bots]的 [!DNL Observation for Adobe Commerce]標籤。
+description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL bots]標籤。
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1951'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## [!DNL bots]的高階概觀：
 
-* [!DNL bot]是執行重複式自動化工作的軟體。 隨著人工智慧和機器學習的演化，[!DNL bots]的任務、方法和互動正在改變。 有&#x200B;*個良好* [!DNL bots]可透過編目並將網站新增至網際網路搜尋引擎來使網站受益。 這會引導網際網路使用者透過搜尋引擎結果前往網站。 *良好* [!DNL bot]通常會遵守[!DNL bot]檔案或搜尋引擎主控台設定置於`robots.txt`上的界限。 邊界可以限制對場地或部分場地的存取。
+* [!DNL bot]是執行重複式自動化工作的軟體。 隨著人工智慧和機器學習的演化，[!DNL bots]的任務、方法和互動正在改變。 有&#x200B;*個良好* [!DNL bots]可抓取網站並將其新增至網際網路搜尋引擎，使其受益。 這會引導網際網路使用者透過搜尋引擎結果前往網站。 *良好* [!DNL bot]通常會遵守`robots.txt`檔案或搜尋引擎主控台設定置於[!DNL bot]上的界限。 邊界可以限制對場地或部分場地的存取。
 * 惡意的[!DNL bots]會忽略`robots.txt`檔案，或透過HTTP要求資料的要求使用者代理程式欄位，偽裝好的[!DNL bot]。 惡意[!DNL bots]所做的某些動作：
    * 將負載新增至網站，以拒絕合法使用者存取該網站。
    * 未經許可刮取及重複使用內容。
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 **[!UICONTROL Rate of HTTP request per second (top 25) during requested time period]**&#x200B;框架顯示所選時間範圍內每秒最高IP位址要求數。 如果這些位址也在上表中，請確定它們不是CDN位址且是惡意的，並透過[!DNL Fastly]封鎖它們。
 
-## [!UICONTROL Total Bot traffic by bot name]：
+## [!UICONTROL Total Bot traffic by bot name]:
 
 在選取的時段內，依機器人名稱區分的機器人流量總計![：](../../assets/tools/observation-for-adobe-commerce/total-bot-traffic-bot-name.png)
 
@@ -146,7 +146,7 @@ ht-degree: 0%
 
 ![此表格顯示每個IP位址的使用者代理程式數目、成功、失敗和封鎖的要求數目：](../../assets/tools/observation-for-adobe-commerce/unsuccessful-attempts.png)
 
-惡意[!DNL bots]經常透過[!DNL bots]欄位的值欺騙其他[!UICONTROL Request User Agent]。 此表格顯示IP位址在該欄位中有多少個唯一值。 [!UICONTROL Request User Agent]欄位中的值越高，IP位址就越可疑。
+惡意[!DNL bots]經常透過[!UICONTROL Request User Agent]欄位的值欺騙其他[!DNL bots]。 此表格顯示IP位址在該欄位中有多少個唯一值。 [!UICONTROL Request User Agent]欄位中的值越高，IP位址就越可疑。
 
 ## [!UICONTROL IP with non-200 status errors]
 

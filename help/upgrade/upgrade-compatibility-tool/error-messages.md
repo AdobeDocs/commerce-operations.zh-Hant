@@ -4,7 +4,7 @@ description: 進一步瞭解您在您的Adobe Commerce專案上使用 [!DNL Upgr
 exl-id: fe4a17a9-a807-4315-b3cd-e35f34e39f6d
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '4105'
+source-wordcount: '4151'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 此錯誤訊息參考提供執行[!DNL Upgrade Compatibility Tool]時可能發生之錯誤的相關資訊。
 
-錯誤訊息會依層級（嚴重問題、錯誤和警告）和型別(核心程式碼、自訂程式碼和GraphQL結構描述)進行分類。 每種型別都包含下列資訊：
+錯誤訊息會依層級（嚴重問題、錯誤和警告）和型別（核心程式碼、自訂程式碼和GraphQL結構描述）進行分類。 每種型別都包含下列資訊：
 
 - **錯誤碼**： Adobe Commerce指派給錯誤訊息的識別碼。
 - **錯誤描述**：摘要說明錯誤原因。
@@ -194,7 +194,7 @@ ht-degree: 4%
 | 5088 | 在必要引數之後找到選用引數 | 將必要引數移至選用引數之後。 |
 | 5089 | 找到方法可見性`final private` | 將方法可見性從`final private`變更為只有`private`。 |
 | 5090 | 魔術方法`__set_state`未定義為`static` | 魔術方法`__set_state`必須定義為`static`。 |
-| 5091 | 具有`__toString()`方法的類別未從`Stringable`介面繼承 | 使用`Stringable`方法將`__toString()`介面新增至類別。 |
+| 5091 | 具有`__toString()`方法的類別未從`Stringable`介面繼承 | 使用`__toString()`方法將`Stringable`介面新增至類別。 |
 | 5092 | `is_resource()`方法用於現在傳回Object的函式 | 將`is_resource()`變更為`instanceof`物件。 |
 | 6001 | `jQuery.andSelf()`已移除 | 使用`jQuery.addBack()`。 |
 | 6002 | jQuery `$.bind`和`$.unbind`已過時 | 請改用`$.on`和`$.off`。 |
