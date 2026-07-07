@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **[!UICONTROL Experimental Potential Malicious Bots frame]**&#x200B;框架會執行12個不同的複雜查詢。 它會偵測惡意IP要求籤章，然後彙總結果，並以遞減順序加總及排序結果。 查詢包含CVE利用漏洞攻擊和其他惡意要求的許多資料簽章。 即使安全性修正/修補程式封鎖了利用漏洞，且對網站沒有威脅，該請求仍必須由網站處理。 要求數量可能會在短時間內變得相當大。 此框架不會顯示來自IP位址的總請求數，而是顯示有訊號指出請求具有可疑意圖的要求。
 
-請確定該流量為可疑流量，且並非源自可能傳送有效請求的[!DNL Content Distributed Network] (CDN)位址。 如果判斷要求來自CDN IP位址，請連絡該服務供應商，協助封鎖透過其網路的可疑流量。 如果您需要封鎖位址或要求URL，請參閱Adobe Commerce支援知識庫中的[在 [!DNL Fastly] 層級](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html)封鎖Adobe Commerce的惡意流量。
+請確定該流量為可疑流量，且並非源自可能傳送有效請求的[!DNL Content Distributed Network] (CDN)位址。 如果判斷要求來自CDN IP位址，請連絡該服務供應商，協助封鎖透過其網路的可疑流量。 如果您需要封鎖位址或要求URL，請參閱Adobe Commerce支援知識庫中的[在 [!DNL Fastly] 層級](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=zh-Hant)封鎖Adobe Commerce的惡意流量。
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 
