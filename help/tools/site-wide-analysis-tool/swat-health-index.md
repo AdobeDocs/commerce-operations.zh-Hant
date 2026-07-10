@@ -3,14 +3,14 @@ title: 瞭解SWAT健康指數分數和建議
 description: 瞭解全網站分析工具健康指數對您的Adobe Commerce網站的意義。 瞭解如何解讀分數並有效使用建議。
 source-git-commit: d9b598e9399c26c8fb7c52e9f211029689343ce9
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
 
 # 瞭解SWAT健康指數
 
-當您從SWAT儀表板下載&#x200B;**[!DNL Recommendations Report]**&#x200B;時，PDF會在&#x200B;**[!DNL Site Wide Analysis Tool Health Index]**&#x200B;簡介&#x200B;**區段中加入**&#x200B;分數：
+當您從SWAT儀表板下載&#x200B;**[!DNL Recommendations Report]**&#x200B;時，PDF會在&#x200B;**簡介**&#x200B;區段中加入&#x200B;**[!DNL Site Wide Analysis Tool Health Index]**&#x200B;分數：
 
 在產生的Recommendations報告中![全網站分析工具健康指數分數](/help/assets/tools/swat-health-index-scroe.png)
 
