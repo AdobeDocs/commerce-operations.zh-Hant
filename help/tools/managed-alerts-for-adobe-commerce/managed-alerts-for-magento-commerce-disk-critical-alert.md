@@ -6,7 +6,7 @@ role: Admin
 exl-id: 1378dcfd-cf7c-4234-82bb-6697e23d54ca
 source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Pro計畫架構上的Adobe Commerce雲端基礎結構
 
 ## 問題
 
-如果您已為Adobe Commerce[!DNL New Relic]註冊了[個受管理的警示，且超過一或多個警示臨界值，則您將在](managed-alerts-for-magento-commerce.md)中收到警示。 這些警報由Adobe開發，可讓客戶運用支援和工程部門的見解獲得標準集合。
+如果您已為Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)註冊了個受管理的警示，且超過一或多個警示臨界值，則您將在[!DNL New Relic]中收到警示。 這些警報由Adobe開發，可讓客戶運用支援和工程部門的見解獲得標準集合。
 
 <u> **做！** </u>
 
@@ -34,7 +34,7 @@ Pro計畫架構上的Adobe Commerce雲端基礎結構
 
 * 啟動其他行銷活動，為您的網站帶來其他頁面檢視。
 * 執行索引器或其他cron，可能會在CPU或磁碟上造成額外的壓力。
-* 執行任何主要管理任務(即Commerce管理、資料匯入/匯出)。
+* 執行任何主要管理任務（即Commerce管理、資料匯入/匯出）。
 * 清除您的快取。
 
 如果您在調查並解決警示原因之前，執行了任何「不執行」動作，您的網站可能會停止回應（如果您尚未發生網站中斷）。
@@ -51,9 +51,9 @@ Pro計畫架構上的Adobe Commerce雲端基礎結構
    * 連絡原因：選取&#x200B;**[!UICONTROL New Relic CRITICAL alert received]**。
    * 警示的說明。
    * [[!DNL New Relic] 事件連結](https://docs.newrelic.com/docs/alerts/incident-management/view-event-details-incidents/)。 這包含在您的[Adobe Commerce](managed-alerts-for-magento-commerce.md)受管理警示中。
-1. 在[!DNL New Relic]中，檢閱磁碟以取得最高使用率。 如需相關步驟，請參閱&#x200B;**[!UICONTROL Storage]**&#x200B;基礎結構監視主機頁面上的[[!DNL New Relic] 標籤： [!UICONTROL Storage]標籤](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage)：
+1. 在[!DNL New Relic]中，檢閱磁碟以取得最高使用率。 如需相關步驟，請參閱[[!DNL New Relic] 基礎結構監視主機頁面上的&#x200B;**[!UICONTROL Storage]**&#x200B;標籤： [!UICONTROL Storage]標籤](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage)：
    * 如果您在[!DNL New Relic]中看到磁碟使用量緩慢增加，請嘗試下列選項：
-      * 調整空間配置，最佳化磁碟空間。 如需相關步驟，請參閱雲端上的Commerce指南中的[管理磁碟空間](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=zh-Hant)。 您可能還需要請求更多磁碟空間(請聯絡您的Adobe帳戶團隊)。
+      * 調整空間配置，最佳化磁碟空間。 如需相關步驟，請參閱雲端上的Commerce指南中的[管理磁碟空間](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=zh-Hant)。 您可能還需要請求更多磁碟空間（請聯絡您的Adobe帳戶團隊）。
       * 清除MySQL的磁碟空間。 請參閱Commerce支援知識庫中的[MySQL磁碟空間不足](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud)以取得步驟。
       * 如果[!DNL New Relic]顯示磁碟使用量快速增加，這可能表示發生問題，導致目錄中的檔案快速增加。 進行下列檢查：
          1. 在CLI/終端機中執行以下命令，檢查整體磁碟空間以找出問題： `df -h`

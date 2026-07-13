@@ -5,7 +5,7 @@ feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
 source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 0%
 
   「動作記錄報表」會顯示所有已啟用記錄功能的管理員動作的詳細記錄。 每個記錄都加蓋時間戳記，並註冊使用者的IP位址和名稱。 記錄詳細資訊包括管理員使用者資料以及在動作期間完成的相關變更。
 
-- 使用Adobe Commerce工具[的](../../../tools/observation-for-adobe-commerce/intro.md)觀察分析事件。
+- 使用Adobe Commerce工具[&#128279;](../../../tools/observation-for-adobe-commerce/intro.md)的觀察分析事件。
 
   Adobe Commerce觀察工具可讓您分析複雜的問題，協助找出根本原因。 與其追蹤不同的資料，您可以花時間將事件和錯誤建立關聯，以更深入地瞭解效能瓶頸的成因。
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 ### 稽核代碼
 
-- 從管理員中，檢閱所有範圍層級（包括[和](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=zh-Hant)）中的`website`HTML頁首與頁尾設定`store view`。 從指令碼和樣式表中移除任何未知的JavaScript程式碼，以及其他HTML設定。 僅保留可辨識的程式碼，例如追蹤代碼片段。
+- 從管理員中，檢閱所有範圍層級（包括`website`和`store view`）中的[HTML頁首與頁尾設定](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=zh-Hant)。 從指令碼和樣式表中移除任何未知的JavaScript程式碼，以及其他HTML設定。 僅保留可辨識的程式碼，例如追蹤代碼片段。
 
 - 將目前的生產程式碼庫與儲存在版本控制系統(VCS)中的程式碼庫進行比較。
 

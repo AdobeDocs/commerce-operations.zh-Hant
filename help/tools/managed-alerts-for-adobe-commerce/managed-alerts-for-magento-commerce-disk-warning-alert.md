@@ -6,7 +6,7 @@ role: Admin
 exl-id: 90ea4384-97aa-499d-93c1-b40c3a4eed42
 source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 問題
 
-如果您已為Adobe Commerce[!DNL New Relic]註冊了[個受管理的警示，且超過一或多個警示臨界值，則您將在](managed-alerts-for-magento-commerce.md)中收到警示。 這些警報由Adobe開發，可讓客戶運用支援和工程部門的見解獲得標準集合。
+如果您已為Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)註冊了個受管理的警示，且超過一或多個警示臨界值，則您將在[!DNL New Relic]中收到警示。 這些警報由Adobe開發，可讓客戶運用支援和工程部門的見解獲得標準集合。
 
 <u> **做！** </u>
 
@@ -34,16 +34,16 @@ ht-degree: 0%
 
 * 啟動其他行銷活動，可能會為您的網站帶來其他頁面檢視。
 * 執行索引器或其他cron，可能會在CPU或磁碟上造成額外的壓力。
-* 執行任何主要管理工作(例如Commerce管理、資料匯入/匯出)。
+* 執行任何主要管理工作（例如Commerce管理、資料匯入/匯出）。
 * 清除您的快取。 如果您在調查並解決警示原因之前，執行了任何「不執行」動作，您的網站可能會停止回應（如果您尚未發生網站中斷）。
 
 ## 解決方案
 
 請依照下列步驟，找出原因並加以疑難排解：
 
-1. 在[!DNL New Relic]中，檢閱磁碟以取得最高使用率。 如需相關步驟，請參閱&#x200B;**[!UICONTROL Storage]**&#x200B;基礎結構監視主機頁面上的[[!DNL New Relic] 標籤： [!UICONTROL Storage]標籤](https://docs.newrelic.com/docs/infrastructure/infrastructure-data/infrastructure-ui-pages/infra-hosts-ui-page/#storage)：
+1. 在[!DNL New Relic]中，檢閱磁碟以取得最高使用率。 如需相關步驟，請參閱[[!DNL New Relic] 基礎結構監視主機頁面上的&#x200B;**[!UICONTROL Storage]**&#x200B;標籤： [!UICONTROL Storage]標籤](https://docs.newrelic.com/docs/infrastructure/infrastructure-data/infrastructure-ui-pages/infra-hosts-ui-page/#storage)：
    * 如果您在[!DNL New Relic]中看到磁碟使用量緩慢增加，請嘗試下列選項：
-      * 調整空間配置，最佳化磁碟空間。 如需相關步驟，請參閱雲端上的Commerce指南中的[管理磁碟空間](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)。 您可能還需要請求更多磁碟空間(請聯絡您的Adobe帳戶團隊)。
+      * 調整空間配置，最佳化磁碟空間。 如需相關步驟，請參閱雲端上的Commerce指南中的[管理磁碟空間](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)。 您可能還需要請求更多磁碟空間（請聯絡您的Adobe帳戶團隊）。
       * 清除MySQL的磁碟空間。 如需步驟，請參閱[MySQL磁碟空間不足](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud)。
       * 如果[!DNL New Relic]顯示磁碟使用量快速增加，這可能表示發生問題，導致目錄中的檔案快速增加。 進行下列檢查：
          1. 在CLI/終端機中執行以下命令，檢查整體磁碟空間以找出問題： `df -h`

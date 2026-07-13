@@ -1,19 +1,19 @@
 ---
 title: 已管理Adobe Commerce的警示： [!DNL Apdex] 嚴重警示
-description: 本文提供當您在 [!DNL Apdex] 分數中收到Adobe Commerce的 [!DNL New Relic]. The [!DNL Apdex] 嚴重警示時，用於衡量使用者對Web應用程式和服務回應時間的滿意度的疑難排解步驟。 需要立即採取行動來解決問題。
+description: 本文提供當您在 [!DNL New Relic]. The [!DNL Apdex] 分數中收到Adobe Commerce的 [!DNL Apdex] 嚴重警示時，用於衡量使用者對Web應用程式和服務回應時間的滿意度的疑難排解步驟。 需要立即採取行動來解決問題。
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 exl-id: 00e29611-fd4b-45c8-a1e0-56fc3cbe90e0
 source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
 
 # 已管理Adobe Commerce的警示： [!DNL Apdex]嚴重警示
 
-本文提供當您在[!DNL Apdex]中收到Adobe Commerce的[!DNL New Relic]嚴重警示時的疑難排解步驟。 [!DNL Apdex]分數會測量使用者對Web應用程式與服務回應時間的滿意度。 需要立即採取行動來解決問題。 根據您選取的警報通知通道，警報看起來類似以下內容。
+本文提供當您在[!DNL New Relic]中收到Adobe Commerce的[!DNL Apdex]嚴重警示時的疑難排解步驟。 [!DNL Apdex]分數會測量使用者對Web應用程式與服務回應時間的滿意度。 需要立即採取行動來解決問題。 根據您選取的警報通知通道，警報看起來類似以下內容。
 
 ![apdex嚴重警示](../../assets/managed-alerts/apdex-critical-magento-managed.png){width="500"}
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 問題
 
-如果您已為Adobe Commerce[!DNL New Relic]註冊了[個Managed警示，且超過一或多個警示臨界值，則您將在](managed-alerts-for-magento-commerce.md)中收到一個Managed警示。 這些警報由Adobe開發，使用支援和工程部門的見解為商家提供標準集。
+如果您已為Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)註冊了個Managed警示，且超過一或多個警示臨界值，則您將在[!DNL New Relic]中收到一個Managed警示。 這些警報由Adobe開發，使用支援和工程部門的見解為商家提供標準集。
 
 <u> **做！** </u>
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 * 啟動其他行銷活動，為您的網站帶來其他頁面檢視。
 * 執行索引器或其他cron，可能會在CPU或磁碟上造成額外的壓力。
-* 執行任何主要管理工作(例如Commerce管理、資料匯入/匯出)。
+* 執行任何主要管理工作（例如Commerce管理、資料匯入/匯出）。
 * 清除您的快取。
 
 如果您尚未發生網站中斷，在您收到嚴重警示且尚未疑難排解警示原因之前，執行上述動作可能會導致您的網站無回應。
@@ -64,4 +64,4 @@ ht-degree: 0%
 1. 識別來源後，會透過SSH連線至環境以進行進一步調查。 如需相關步驟，請參閱「雲端上的Commerce指南」中的[SSH至您的環境](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh)。
 1. 如果您仍在努力識別來源，請檢閱最近的趨勢，以識別最近的程式碼部署或設定變更（例如，新客戶群組和目錄的大型變更）的相關問題。 建議您檢閱過去七天的活動，以瞭解程式碼部署或變更中的任何關聯。
 1. 如果您無法在合理的時間內找到解決方案，請要求升級網站，或讓網站進入維護模式（如果尚未這麼做的話）。 如需相關步驟，請參閱Commerce支援知識庫中的[如何要求暫時調整大小](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize)，以及Commerce安裝指南中的[啟用或停用維護模式](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)。
-1. 如果升級將網站恢復為正常運作，請考慮請求永久升級(聯絡您的Adobe客戶團隊)，或嘗試透過執行負載測試和最佳化查詢，或降低服務壓力的程式碼，在您的專用測試中重現問題。 請參閱Commerce on Cloud指南中的[負載和壓力測試](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production#load-and-stress-testing)。
+1. 如果升級將網站恢復為正常運作，請考慮請求永久升級（聯絡您的Adobe客戶團隊），或嘗試透過執行負載測試和最佳化查詢，或降低服務壓力的程式碼，在您的專用測試中重現問題。 請參閱Commerce on Cloud指南中的[負載和壓力測試](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production#load-and-stress-testing)。
