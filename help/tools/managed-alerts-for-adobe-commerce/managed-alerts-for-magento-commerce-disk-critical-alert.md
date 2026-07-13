@@ -23,7 +23,7 @@ Pro計畫架構上的Adobe Commerce雲端基礎結構
 
 ## 問題
 
-如果您已為Adobe Commerce](managed-alerts-for-magento-commerce.md)註冊了[個受管理的警示，且超過一或多個警示臨界值，則您將在[!DNL New Relic]中收到警示。 這些警報由Adobe開發，可讓客戶運用支援和工程部門的見解獲得標準集合。
+如果您已為Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)註冊了個受管理的警示，且超過一或多個警示臨界值，則您將在[!DNL New Relic]中收到警示。 這些警報由Adobe開發，可讓客戶運用支援和工程部門的見解獲得標準集合。
 
 <u> **做！** </u>
 
