@@ -2,9 +2,14 @@
 title: '[!DNL Commerce Version Tool]疑難排解'
 description: 瞭解如何疑難排解 [!DNL Commerce Version Tool] Composer偵測、內部試執行檢查、登入快取、JSON輸出和稽核記錄問題。
 TQID: 'https://experienceleague.adobe.com/JwRSy7pfM89WoifYUzTVPhR-WrDIvj2A2B8SaEnmyWM'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: eafe79321da03f4778dd9e1b290141ef082a5eaf
 workflow-type: tm+mt
 source-wordcount: 1222
