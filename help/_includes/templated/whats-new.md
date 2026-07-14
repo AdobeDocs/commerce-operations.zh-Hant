@@ -1,7 +1,7 @@
 ---
-source-git-commit: d0924a41a4ea7813699eaefadb024881862ff7b4
+source-git-commit: 5629025bd6a2fd492ac368e2680a70f9cc256339
 workflow-type: tm+mt
-source-wordcount: '4004'
+source-wordcount: '2448'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,94 @@ ht-degree: 0%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年7月10日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview">概觀：品質修補工具(QPT) v1.1.81</a>。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cc434ac8efd0d9344140ad07f2f68d2d48b1fb4">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月6日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493">ACP2E-4493的QPT 1.1.80修正的詳細說明：啟用非同步索引時，「銷售訂單封存」格線顯示不正確的訂單狀態</a>。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2fdbf6a4fd4924947a2cb2a508e067b8bb0d694c">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月2日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239">ACP2E-4239的QPT 1.1.80修正的詳細說明：由於時區不符，「管理格線日期」篩選器未傳回任何結果</a>。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/58f157a5f863973df723a6bce5844883f2aa12f4">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年6月29日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481">ACP2E-4481的QPT 1.1.80修正的詳細說明：在訂單取消後</a>未正確地重新計算套件組合產品的銷售性。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ccea0456268862ba11e77ef16318bc8b2d76b0b1">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年6月26日
 
@@ -587,322 +675,6 @@ ht-degree: 0%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cd0f27ae6a8dcec9b25af15386d8350c22d2fb95">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月13日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>將<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5安全性修補程式版本</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6安全性修補程式版本</a>及<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8安全性修補程式版本</a>主題中的Valkey LTS相容性更正為8.1，使快取後端指引符合Adobe Commerce上支援的Valkey。<br /><em>處理問題<a href="https://github.com/AdobeDocs/commerce-operations.en/issues/177">#177</a>.</em></p>
-</td>
-      <td>
-        技術、意見回饋、發行說明
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c84f28dc9b90b9206147dffe1eed909d86525345">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>新增舊版Commerce的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>可摺疊區段，其中包含參考表格和舊版Adobe Commerce的MySQL 8.0 / Elasticsearch 7.17支援終止指南。</p>
-</td>
-      <td>
-        技術，意見回饋
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07e7c6904ead0c730597bc6d0899f4c988b7725b">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月12日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/versions">發行版本</a>中記錄2026年5月12日安全性修補程式發行版本和2.4.9 GA。 另外：<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">Adobe Commerce 2.4.7安全性修補程式</a>中修正了2.4.7-p10平台重點專案(MariaDB 11.8、Valkey 8.1 LTS)。<br /> — 修正了<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">Adobe Commerce 2.4.8安全性修補程式</a>中的2.4.8安全性修補程式主題描述中繼資料。</p>
-</td>
-      <td>
-        重大更新，意見反應
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c138beddb066fe26f9e57afbd9b6e74f978a8407">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview">概觀：品質修補工具(QPT) v1.1.79</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/12093993f31c321afc75da6f2c661b4a9e6fd711">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已更新v2.4.9的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/packages/adobe-commerce">套件</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions">必要的PHP延伸模組</a>。<br />已更新安全性修補程式發行說明(2.4.4、2.4.5、2.4.6、2.4.7、2.4.8)，以參考<a href="https://helpx.adobe.com/tw/security/products/magento/apsb26-49.html">Adobe安全性公告APSB26-49</a>並記錄<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8修補程式</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7修補程式</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6的新平台相容性亮點修補程式</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5修補程式</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4修補程式</a>。<br />已更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9發行說明</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9發行說明</a> （含GA已修正問題資料），並包含與2.4.9發行版本一致的路徑（取代Beta版的已修正問題來源）。<br />已更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9發行說明</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Magento Open Source 2.4.9發行說明</a> （含GA）的重點區段。<br />已更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a> （含2.4.9）、最近的安全性修補程式行，以及內部部署和雲端相依性表格。<br />已將<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/uct">UCT CLI參考</a>更新為3.0.27版。<br />已更新Commerce 2.4.9 Symfony快取支援的快取設定檔案：<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache">將Redis用於預設快取</a> — 已新增將Zend和Symfony快取實作搭配效能最佳化的索引標籤內容。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache">將Valkey用於預設快取</a> — 已新增將Zend和Symfony快取實作搭配效能最佳化的索引標籤內容。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/level-two-cache"> — 已新增現代快取symfony L2快取實現（<code>symfony_l2</code>後端）支援過時的快取。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/cache-options">快取選項</a> — 新增了比較基於Zend的快取後端和Symfony快取後端的實現選項。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/cache-types">快取型別</a> — 新增了對新式Symfony快取後端型別的引用。</a></p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/baa2cd68fe266f6f31113ff1adba4342e6f427ef">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月11日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628">ACP2E-4628的QPT 1.1.78修正的詳細說明：當「帳戶共用」設定為「全域</a>」時，匯入具有大寫電子郵件地址的客戶會觸發未定義的陣列金鑰錯誤。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c2c4f04d05b5bd1b60936256d3dbd6be5f396c5b">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763">ACP2E-4763的QPT 1.1.78修正詳細說明： GraphQL customerOrders查詢傳回膨脹的original_price_include_tax和original_row_total_include_tax</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6f156475e60ca0f8ac365306e282c90156837567">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989">ACSD-60989之QPT 1.1.78修正的詳細說明：透過宣告式結構描述修改具有外部索引鍵的欄會導致MariaDB</a>發生錯誤。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9001c0e440f8a80e618bcf68a72cb6ac1533a2c0">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/security-and-compliance/shared-responsibility">共用責任安全性和作業模型</a>，以澄清商戶必須在主動支援的版本上保留平台服務、協力廠商相依性和Commerce服務擴充功能，以符合Adobe安全性支援的資格，並針對PHP、MariaDB、Redis和OpenSearch提供新的指引。</p>
-</td>
-      <td>
-        技術
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4b841ca5a55640e770fdbec71869fad6d6564fe8">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月7日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732">ACP2E-4732的QPT 1.1.78修正的詳細說明：當changelog表格中的version_id欄達到其最大值</a>時，具有許多更新的客戶會停止部分索引。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/063a15996a683a90770b699b413fb25dd7489035">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4591">ACP2E-4591的QPT 1.1.78修正的詳細說明：根據訂單計數的客戶區段（例如「首次購買者」）在透過REST API</a>下訂單時不會更新。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/53cdfe439238edc2148004efab3300653e891765">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月6日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456">ACP2E-4456的QPT 1.1.78修正的詳細說明：取消具有GraphQL突變的訂單並不會將完全使用禮品卡支付的訂單移至「已關閉」狀態</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/570b9f8230384387166412ddd418f8130e2853bd">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月4日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448">ACP2E-4448的QPT 1.1.78修正的詳細說明：在[!DNL Redis]中斷期間所做的設定變更不會在[!DNL Redis]復原後反映，而過時的值會持續存在</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd467c92e3fa56db4a606118afe571ed932185fd">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452">ACP2E-4452的QPT 1.1.78修正的詳細說明：「快速訂購」頁面上的產品價格包含稅捐，無論稅捐顯示組態</a>為何。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cf3a631a71997d54cd28de9afecaae0769d602b6">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月1日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665">ACP2E-4665的QPT 1.1.78修正的詳細說明：當透過REST API</a>提出要求時，產品相簿中含有視訊的可設定產品之子產品不會出現。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8753c098963a0b2df6a4135e9a8038211bbb93d1">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月30日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613">ACP2E-4613的QPT 1.1.78修正的詳細說明：大型媒體目錄結構緩慢的gettree回應和延遲Media Gallery目錄樹狀結構載入</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ae0f38980186b40f4ffd6d81bbe2104f3e8238fc">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月29日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535">ACP2E-4535的QPT 1.1.78修正的詳細說明：提交忘記密碼表單會破壞或重新產生工作階段（PHPSESSID變更）並清除來賓購物車</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/953e231d2161d84e2444fa46ac95b93dbba28241">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>新增對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507">ACP2E-4507的QPT 1.1.78修正的詳細說明：「密碼選項」組態不適用於透過GraphQL變動</a>提出的客戶密碼重設請求。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b657f2e50d48c9179d1c6b3559ee7e6ee99b306d">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609">ACP2E-4609的QPT 1.1.78修正的詳細說明：當部分引號包含已刪除的產品時，「我的引號」頁面不會顯示任何引號</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/670dacfa2bdc211eb9f4ed6788144ba6c1dac678">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431">ACP2E-4431的QPT 1.1.78修正的詳細說明：在重新索引程式</a>期間已刪除符合目標規則的相關產品。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9424da66669c54eb0a794555ea7df66625f6c71">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416">ACP2E-4416的QPT 1.1.78修正的詳細說明：在Admin</a>中建立時，客戶獎勵點不會初始化。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/517b6c299474497378966a4a2122a6854f3f7be1">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月28日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4540">ACP2E-4540 QPT 1.1.78修正的詳細說明： Fotorama程式庫未正確載入，因此只顯示第一個附加的影像</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bfab19dc07ecc1c314c530d053b82e3408478c41">認可</a></td>
     </tr>
   </tbody>
 </table>
