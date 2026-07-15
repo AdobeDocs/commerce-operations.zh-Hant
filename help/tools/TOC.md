@@ -2,9 +2,11 @@
 user-guide-title: 工具
 user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具、其用途、安裝過程以及如何取得存取權。
 feature: Configuration
-source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
+nduge: true
+color: red
+source-git-commit: afd48570ab4ab29b2d5946e2805b3124b0b7fe82
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10365'
 ht-degree: 0%
 
 ---
@@ -26,6 +28,11 @@ ht-degree: 0%
    - [擴充功能](site-wide-analysis-tool/extensions.md)
    - [警報](site-wide-analysis-tool/alerts.md)
    - [修補程式](site-wide-analysis-tool/patches.md)
+- [!DNL Commerce Version Tool] {#commerce-version-tool}
+   - [簡介](commerce-version-tool/intro.md)
+   - [產生修補程式狀態報告](commerce-version-tool/generate-report.md)
+   - [疑難排解](commerce-version-tool/troubleshooting.md)
+   - [發行說明](commerce-version-tool/release-notes.md)
 - 大寫 {#caps-tool}
    - {hide-from-toc}[簡介](caps-tool/intro.md)
    - {hide-from-toc}[存取](caps-tool/access.md)
@@ -1026,6 +1033,8 @@ ht-degree: 0%
          - [ACP2E-4156： [!DNL REST] API送貨地址驗證會忽略管理員屬性設定](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4680：不可銷售產品從最終議價報價中消失](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
+         - [ACP2E-4300：管理員客戶群組變更後店面目錄許可權未更新](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
    - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
