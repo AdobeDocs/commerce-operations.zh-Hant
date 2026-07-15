@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: afd48570ab4ab29b2d5946e2805b3124b0b7fe82
+source-git-commit: 11f63d811ab907de5e93c121ef8fdf0de294b25f
 workflow-type: tm+mt
-source-wordcount: '10365'
+source-wordcount: '10381'
 ht-degree: 0%
 
 ---
@@ -1033,6 +1033,7 @@ ht-degree: 0%
          - [ACP2E-4156： [!DNL REST] API送貨地址驗證會忽略管理員屬性設定](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4630：長產品名稱在多頁銷售PDF中分頁後與相鄰欄重疊](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
          - [ACP2E-4680：不可銷售產品從最終議價報價中消失](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
          - [ACP2E-4300：管理員客戶群組變更後店面目錄許可權未更新](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
    - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)

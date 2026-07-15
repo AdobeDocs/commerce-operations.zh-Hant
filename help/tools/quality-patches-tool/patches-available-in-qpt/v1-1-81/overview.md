@@ -14,7 +14,7 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: afd48570ab4ab29b2d5946e2805b3124b0b7fe82
+source-git-commit: 11f63d811ab907de5e93c121ef8fdf0de294b25f
 workflow-type: tm+mt
 source-wordcount: 272
 ht-degree: 0%
@@ -31,7 +31,7 @@ QPT v1.1.81包含下列修補程式：
 1. **ACP2E-4401**：修正含有可設定產品之首頁連結的[!UICONTROL Scheduled Update Preview]重新導向至維護頁面，而非顯示產品清單的問題。
 1. **ACP2E-4395**：如果未指定全域範圍的金額，Giftcard API產品建立現在會顯示錯誤。
 1. **ACP2E-4468**：修正具有網站範圍許可權的[!UICONTROL Admin]使用者無法編輯橫幅內容的問題。
-1. **ACP2E-4630**：修正含有自訂選項的長產品名稱在分頁後與多頁發票、出貨、銷退折讓單和退貨PDF中的相鄰欄或專案重疊的問題，使行專案無法讀取。
+1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**：修正含有自訂選項的長產品名稱在分頁後與多頁發票、出貨、銷退折讓單和退貨PDF中的相鄰欄或專案重疊的問題，使行專案無法讀取。
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**：修正非銷售產品或刪除的產品從最終可協商的報價中消失的問題。
 1. **ACP2E-4709**：修正使用頁面產生器時CMS頁面無法儲存的問題。
 1. **ACP2E-4786**：修正設定AWS S3遠端儲存體時，由於儲存驅動程式中的路徑解析不正確，匯出產品無法寫入檔案的問題。
