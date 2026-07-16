@@ -1,24 +1,24 @@
 ---
 title: '[!UICONTROL Summary]索引標籤'
-description: 瞭解[!UICONTROL Summary]的 [!DNL Observation for Adobe Commerce]標籤。
+description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL Summary]標籤。
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
 source-git-commit: 5a0455b61824cb1946e29dba3ff7bfd9d225b110
 workflow-type: tm+mt
-source-wordcount: '2494'
+source-wordcount: '2632'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Summary]索引標籤
 
-[!UICONTROL Summary]的[!DNL Observation for Adobe Commerce]標籤旨在快速檢視網站所遇到的一些問題，以幫助您自動解決或找出網站問題的潛在根本原因。 其他標籤提供有關元件服務、資料庫、基礎架構和流程狀態的更深入層級資訊。
+[!DNL Observation for Adobe Commerce]的[!UICONTROL Summary]標籤旨在快速檢視網站所遇到的一些問題，以幫助您自動解決或找出網站問題的潛在根本原因。 其他標籤提供有關元件服務、資料庫、基礎架構和流程狀態的更深入層級資訊。
 
 ## [!UICONTROL Transaction Overview]
 
 ![交易總覽](../../assets/tools/transaction-overview.jpg)
 
-### [什麼是交易？](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-，什麼%20is%20a%20transaction%3F，工作%20in%20a%20software%20application。&text=For%20APM%2C%20it%20will%20overly，當%20the%20response%20is%20sent)
+### [什麼是交易？](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
 
 「在[!DNL New Relic]，交易被定義為軟體應用程式中的一個邏輯工作單位。 具體來說，這指的是組成該工作單位的函式呼叫和方法呼叫。 這通常指的是Web交易，代表應用程式在收到網路要求至傳送回應時所發生的活動。」
 
@@ -56,9 +56,9 @@ ht-degree: 0%
 
 ## [!UICONTROL CPU % by host]
 
-主機![的](../../assets/tools/cpu-percent-by-host.jpg)CPU百分比
+主機](../../assets/tools/cpu-percent-by-host.jpg)的![CPU百分比
 
-所有環境和節點的彙總會顯示在&#x200B;**[!UICONTROL CPU % by host]**&#x200B;框架中。 您應該取消選取非生產環境。 也請注意生產環境的所有節點都未出現的任何執行個體。 如需有關高CPU使用率的更多秘訣，請參閱[在Adobe Commerce上使用New Relic進行效能疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=zh-Hant)。
+所有環境和節點的彙總會顯示在&#x200B;**[!UICONTROL CPU % by host]**&#x200B;框架中。 您應該取消選取非生產環境。 也請注意生產環境的所有節點都未出現的任何執行個體。 如需有關高CPU使用率的更多秘訣，請參閱[在Adobe Commerce上使用New Relic進行效能疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html)。
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ![CPU使用量](../../assets/tools/cpu-usage.jpg)
 
-如果&#x200B;**[!UICONTROL CPU Usage]**&#x200B;框架空白，表示未啟用[!DNL New Relic]的基礎結構應用程式。 如果您的網站位於入門版，則不會看到此資訊。 如果您的網站使用Pro，請開啟[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant)為您的網站啟用[!DNL New Relic Infrastructure]。
+如果&#x200B;**[!UICONTROL CPU Usage]**&#x200B;框架空白，表示未啟用[!DNL New Relic]的基礎結構應用程式。 如果您的網站位於入門版，則不會看到此資訊。 如果您的網站使用Pro，請開啟[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html)為您的網站啟用[!DNL New Relic Infrastructure]。
 
 ## [!UICONTROL Average Response Time]
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 * &#39;%Set flag： .static_content_deploy%&#39;)設為&#39;SCD&#39;
 * &#39;%NOTICE：產生命令已完成%&#39;)為&#39;gen_compl&#39;
 * &#39;%NOTICE：部署已完成%&#39;)為&#39;deploy_compl&#39;
-* &#39;%NOTICE：正在開始後續部署。%&#39;)作為&#39;start_pdeploy&#39;
+* &#39;%NOTICE：正在開始後續部署。%&#39;)做為&#39;start_pdeploy&#39;
 * &#39;%NOTICE： Post-deploy已完成%&#39;)為&#39;pdeploy&#39;
 * &#39;%deploy-complete%&#39;)做為&#39;cl_deploy_compl&#39;
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ## [!UICONTROL API Calls by IP]
 
-由ip![進行的](../../assets/tools/api-calls-by-ip.jpg)api呼叫
+由ip](../../assets/tools/api-calls-by-ip.jpg)進行的![api呼叫
 
 **[!UICONTROL API Calls by IP]**&#x200B;框架可協助識別針對API和IP位址的大量流量，這些位址會從API URL發出請求。
 
@@ -184,7 +184,7 @@ ht-degree: 0%
 * &#39;%members = 2/3 （已加入/總計）%&#39;)做為&#39;2of3&#39;
 * &#39;%members = 2/2%&#39;) as &#39;2of2&#39; * &#39;%members = 1/2%&#39;) as &#39;1of2&#39; * &#39;%members = 1/3%&#39;) as &#39;1of3&#39;
 * &#39;%members = 1/1%&#39;)做為&#39;1of1&#39;
-* &#39;%\[注意\] /usr/sbin/mysqld (mysqld 10。%&#39;)作為&#39;sql_restart&#39;
+* &#39;%\[注意\] /usr/sbin/mysqld (mysqld 10.%&#39;)作為&#39;sql_restart&#39;
 * &#39;%Quorum：沒有具有完整狀態的節點：%&#39;)為&#39;no_node_count&#39;
 * &#39;%WSREP：成員0%&#39;)為&#39;mem_0&#39;
 * &#39;%WSREP：成員1.0%&#39;)為&#39;mem_1&#39;
@@ -245,7 +245,7 @@ ht-degree: 0%
 
 ![資料庫追蹤](../../assets/tools/database-traces.jpg)
 
-**[!UICONTROL Database traces]**&#x200B;框架會檢視[之](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/)sql追蹤[!DNL New Relic]實體的資料，並傳回追蹤的路徑。
+**[!UICONTROL Database traces]**&#x200B;框架會檢視[!DNL New Relic]之[sql追蹤](https://docs.newrelic.com/docs/apm/transactions/transaction-traces/transaction-traces-database-queries-page/)實體的資料，並傳回追蹤的路徑。
 
 ## [!UICONTROL Database mysql-slow.log]
 
@@ -264,7 +264,7 @@ ht-degree: 0%
 * &#39;%SLAVE同步處理：裝置%&#39;上沒有剩餘的空間)做為&#39;space&#39;
 * &#39;%Server started， Redis version%&#39;)作為&#39;serv_start&#39;
 * &#39;%伺服器現在已準備好接受連線%&#39;)為&#39;ready&#39;
-* &#39;%Master連線已中斷。%&#39;)，作為&#39;mstr_lost&#39;
+* &#39;%Connection with master lost.%&#39;)為&#39;mstr_lost&#39;
 * &#39;%+sdown sentinel%&#39;)做為&#39;+sentinal&#39;
 * &#39;%-sdown sentinel%&#39;)做為&#39;-sentinal&#39;
 * &#39;%-sdown slave%&#39;)作為&#39;-slave&#39;，&#39;%+sdown slave%&#39;)作為&#39;+slave&#39;
@@ -295,7 +295,7 @@ PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/in
 **PHP錯誤和訊息：**
 
 * &#39;%worker_connections不足%&#39;)做為&#39;worker&#39;
-* &#39;%PHP嚴重錯誤：允許的記憶體大小！%&#39;)，作為&#39;mem_size&#39;
+* &#39;%PHP嚴重錯誤：允許的記憶體大小！%&#39;)為&#39;mem_size&#39;
 * &#39;%exited on signal 11 (SIGSEGV)%&#39;)為&#39;sig_11&#39;
 * &#39;%exited on signal 7 (SIGBUS)%&#39;)為&#39;sig_7&#39;
 * &#39;%increase pm.start_servers%&#39;)作為&#39;pmstart_serv&#39;
@@ -310,7 +310,7 @@ PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/in
 
 ![php處理序](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/)是[!UICONTROL FastCGI Process Manager]使用的[!DNL Nginx]。 若要瞭解系統需求，請參閱對應至Adobe Commerce版本[的](../../installation/system-requirements.md)PHP版本需求。 **[!UICONTROL PHP processes]**&#x200B;框架顯示所選時間表中特定時間執行的PHP處理序數目。
+[PHP-FPM](https://php-fpm.org/)是[!DNL Nginx]使用的[!UICONTROL FastCGI Process Manager]。 若要瞭解系統需求，請參閱對應至Adobe Commerce版本](../../installation/system-requirements.md)的[PHP版本需求。 **[!UICONTROL PHP processes]**&#x200B;框架顯示所選時間表中特定時間執行的PHP處理序數目。
 
 ## [!UICONTROL Secondary processes]
 
@@ -360,7 +360,7 @@ PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/in
 
 ![訂單交易預設值](../../assets/tools/order-transactions-default.jpg)
 
-**[!UICONTROL Order transactions (default?)]**&#x200B;框架會從名稱= `request.headers.host`的交易中尋找交易`WebTransaction/Action/checkout/onepage/success`。 如果訂購成功URL不同，此框架將沒有資料。
+**[!UICONTROL Order transactions (default?)]**&#x200B;框架會從名稱= `WebTransaction/Action/checkout/onepage/success`的交易中尋找交易`request.headers.host`。 如果訂購成功URL不同，此框架將沒有資料。
 
 ## [!UICONTROL Elasticsearch Index information]
 
@@ -384,7 +384,7 @@ PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/in
 * &#39;%您可以修正此問題，方法是將Magento雲端基礎結構上的Elasticsearch服務升級為&#39;version%&#39;作為&#39;ver_err&#39;
 * &#39;%cluster健全狀態已從\[YELLOW\]變更為\[RED\] (原因：%&#39;為&#39;yel_red&#39;
 * &#39;%裝置%&#39;上沒有剩餘的空間，因為&#39;no_space&#39;
-* &#39;%無法執行&lbrack;SearchRequest&lbrace;searchType=%&#39;，因為&#39;failed_query&#39;
+* &#39;%無法執行[SearchRequest{searchType=%&#39;，因為&#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 
