@@ -388,7 +388,7 @@ Adobe圍繞Managed Services系統上Adobe Commerce的設定、開發、測試和
 
 適用於Managed Services的Adobe安全性棧疊會使用自動化和一致性來減少人為錯誤，於每個層級中建立安全性。 開發和作業團隊會自動從棧疊的不同層級繼承安全性控制項。
 
-Amazon Web Services和Microsoft Azure等平台合作夥伴會在套用平台自訂功能時，確保最高的安全性涵蓋範圍，而Adobe的Managed Services團隊會提供核心安全性服務，例如法規遵循、記錄、驗證、掃描和監控，以及伺服器安全性和安全應用程式設定。 如需詳細資訊，請參閱[Adobe Commerce安全性](https://business.adobe.com/products/magento/secure-ecommerce.html)。
+Amazon Web Services和Microsoft Azure等平台合作夥伴會在套用平台自訂功能時，確保最高的安全性涵蓋範圍，而Adobe的Managed Services團隊會提供核心安全性服務，例如法規遵循、記錄、驗證、掃描和監控，以及伺服器安全性和安全應用程式設定。 如需詳細資訊，請參閱[Adobe Commerce安全性](https://business.adobe.com/tw/products/magento/secure-ecommerce.html)。
 
 下圖顯示Adobe Managed Services安全性技術棧疊：
 
