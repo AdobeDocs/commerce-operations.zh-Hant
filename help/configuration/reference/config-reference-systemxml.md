@@ -6,7 +6,7 @@ badge: label="作者：David Lambauer" type="Informative" url="https://github.co
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2748'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 0%
 ```
 
 上述程式碼片段會建立識別碼為`A_UNIQUE_ID`的新標籤。 由於`translate` — 屬性已定義並參考標籤，因此`label` — 節點是可轉譯的。 在轉譯程式期間，CSS類別`a-custom-css-class-to-style-this-tab`將套用至為此索引標籤建立的HTML專案。
-值為`sortOrder`的`10`屬性定義轉譯時索引標籤在所有索引標籤清單中的位置。
+值為`10`的`sortOrder`屬性定義轉譯時索引標籤在所有索引標籤清單中的位置。
 
 ## 部分
 
@@ -248,7 +248,7 @@ ht-degree: 0%
 | `select` | 一般下拉式清單，可能需要自訂`source_model`。 也用於`Yes/No`選擇。 如需範例，請參閱`Magento\Search\Model\Adminhtml\System\Config\Source\Engine`。 |
 | `multiselect` | 類似`select`，但多個選項有效。 |
 | `button` | 觸發立即事件的按鈕。 需要自訂前端模型來定義按鈕文字和動作。 如需範例，請參閱`Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean`。 |
-| `obscure` | 已加密且顯示為`**&#x200B;**`值的文字欄位。 在瀏覽器中使用「檢查元素」變更型別不會顯示值。 |
+| `obscure` | 已加密且顯示為`****`值的文字欄位。 在瀏覽器中使用「檢查元素」變更型別不會顯示值。 |
 | `password` | 類似`obscure`，但隱藏值並未加密，在瀏覽器中使用「檢查元素」強制變更型別時，不會顯示值。 |
 | `file` | 允許上傳檔案以供處理。 |
 | `label` | 顯示標籤而非可編輯的欄位。 當欄位只能在特定範圍上編輯時（例如，只能在「存放區檢視」層級），請使用此型別。 |
@@ -348,7 +348,7 @@ ht-degree: 0%
 ```
 
 上述範例會建立兩個欄位，兩者在預設和存放區檢視中均為可見/可設定。 這兩個欄位都有註解和工具提示，可向使用者說明其用途。 `label`節點是可翻譯的。
-當`ANOTHER_UNIQUE_FIELD_ID`中的指定模組全域啟用時，識別碼為`if_module_enabled`的欄位會顯示。 欄位也依據規則`required-entry`和`no-whitespace`驗證其值。
+當`if_module_enabled`中的指定模組全域啟用時，識別碼為`ANOTHER_UNIQUE_FIELD_ID`的欄位會顯示。 欄位也依據規則`required-entry`和`no-whitespace`驗證其值。
 識別碼為`A_UNIQUE_FIELD_ID`的欄位定義不同的來源模型，提供該值`Yes`和`No`。
 
 ### 通用來源模型
@@ -391,14 +391,14 @@ Commerce 2核心提供下列來源模型。 一般而言，來源模型還有許
 | `no-whitespace` | 不允許空格。 |
 | `phoneUK` | 允許（英國）電話號碼。 |
 | `phoneUS` | 允許（美國）電話號碼。 |
-| `required-entry` | 不允許空值（等同於`validate-no-empty`的驗證）。<br>驗證失敗訊息：「這是必填欄位。」 |
+| `required-entry` | 不允許空值（等同於`validate-no-empty`的驗證）。<br>驗證失敗訊息：「這是必要欄位。」 |
 | `time` | 允許24小時格式的有效時間，介於00:00到23:59之間。 例如`15`、`15:05`或`15:05:48`。 |
 | `time12h` | 允許以12小時格式顯示有效時間，介於上午12:00到晚上11:59:59之間。 例如`3 am`、`11:30 pm`、`02:15:00 pm`。 |
 | `validate-admin-password` | 允許7個或更多字元，使用數字和字母組合。 |
 | `validate-alphanum-with-spaces` | 僅允許使用字母（a-z或A-Z）、數字(0-9)或空格。 |
 | `validate-clean-url` | 允許有效的URL。 例如，`https://www.example.com`或`www.example.com`。 |
 | `validate-currency-dollar` | 允許有效的（美元）金額。 例如$100.00。 |
-| `validate-data` | 僅允許使用字母（a-z或A-Z）、數字(0-9)或底線(\_)。<br>第一個字元必須是字母。<br>（必須符合運算式： `/^[A-Za-z]+[A-Za-z0-9_]+$/`）<br>驗證失敗訊息：「在此欄位中僅使用字母（a-z或A-Z）、數字(0-9)或底線(\_)，第一個字元應為字母。」 |
+| `validate-data` | 僅允許使用字母（a-z或A-Z）、數字(0-9)或底線(\_)。<br>第一個字元必須是字母。<br>（必須符合運算式： `/^[A-Za-z]+[A-Za-z0-9_]+$/`）<br>驗證失敗訊息：「在此欄位中請只使用字母（a-z或A-Z）、數字(0-9)或底線(\_)，第一個字元應該是字母。」 |
 | `validate-date-au` | 強制下列日期格式： dd/mm/yyyy。 例如，2006年3月17日的17/03/2006。 |
 | `validate-email` | 允許有效的電子郵件地址。 例如， johndoe@domain.com。 |
 | `validate-emailSender` | 允許有效的電子郵件地址。 例如， johndoe@domain.com。 |
@@ -411,14 +411,14 @@ Commerce 2核心提供下列來源模型。 一般而言，來源模型還有許
 | `validate-select` | 強制所選的選取選項不具有`null`值、字串值`none`或字串長度0。 |
 | `validate-ssn` | 允許有效的（美國）社會保險號碼。 例如：123-45-6789。 |
 | `validate-street` | 僅允許使用字母（a-z或A-Z）、數字(0-9)、空格和「#」。 |
-| `validate-url` | 允許有效的URL。 需要通訊協定(http://、https://或ftp://)。 |
+| `validate-url` | 允許有效的URL。 需要通訊協定（http://、https://或ftp://）。 |
 | `validate-xml-identifier` | 允許有效的XML識別碼。 例如，something_1、block5、id-4。 |
 | `validate-zip-us` | 允許有效的（美國）郵遞區號。 例如，90602或90602-1234。 |
 | `vinUS` | 允許(US)車輛識別碼(VIN)值。 |
 
 ### 預設值
 
-可在`etc/config.xml`節點中指定預設值，以在模組的`section/group/field_ID`檔案中設定欄位預設值。
+可在`section/group/field_ID`節點中指定預設值，以在模組的`etc/config.xml`檔案中設定欄位預設值。
 
 #### 範例：設定`ANOTHER_UNIQUE_FIELD_ID`的預設值（預設範圍）
 
