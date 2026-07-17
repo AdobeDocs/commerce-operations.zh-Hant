@@ -3,9 +3,9 @@ title: '[!UICONTROL Summary]索引標籤'
 description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL Summary]標籤。
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 5a0455b61824cb1946e29dba3ff7bfd9d225b110
+source-git-commit: 818c25db0442f5288191ee414b7e2ab07c4cbedf
 workflow-type: tm+mt
-source-wordcount: '2632'
+source-wordcount: '2636'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,9 @@ ht-degree: 0%
 
 ![交易總覽](../../assets/tools/transaction-overview.jpg)
 
-### [什麼是交易？](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
+### 什麼是交易？
+
+[什麼是交易？](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
 
 「在[!DNL New Relic]，交易被定義為軟體應用程式中的一個邏輯工作單位。 具體來說，這指的是組成該工作單位的函式呼叫和方法呼叫。 這通常指的是Web交易，代表應用程式在收到網路要求至傳送回應時所發生的活動。」
 
