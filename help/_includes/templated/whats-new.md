@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5629025bd6a2fd492ac368e2680a70f9cc256339
+source-git-commit: 970dcea74edf889a6cb5abf1449d63dfe2d7d654
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2772'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,96 @@ ht-degree: 0%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年7月16日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801">ACP2E-4801的QPT 1.1.81修正的詳細說明：在Admin</a>中重新設定可轉讓的報價時，套件產品選項數量不會更新。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/31872eee953126b52f1c13444dd46140edc879c6">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786">ACP2E-4786的QPT 1.1.81修正的詳細說明：設定AWS S3遠端儲存時，產品匯出會失敗</a>。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b7ca2e40743aa512b0bc785e486d3e7d1c6dbefc">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月15日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630">ACP2E-4630的QPT 1.1.81修正的詳細說明：長產品名稱在多頁銷售PDF中分頁後與相鄰欄重疊</a>。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5581e6f7a507bb83a3fc0fd7229239137b15acd7">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月14日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300">ACP2E-4300的QPT 1.1.81修正的詳細說明： Storefront目錄許可權在管理員客戶群組變更</a>後未更新。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2c26efeb7aa734e4dcc8d0131cb82a96d35e8f32">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680">ACP2E-4680的QPT 1.1.81修正的詳細說明：不可銷售產品從最終可協商的報價單中消失</a>。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1448b291e70cdf515872f019028c15bd703f80fe">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/commerce-version-tool/intro">Commerce版本工具檔案</a>，其中包含可用性、報表產生、JSON和CSV輸出、疑難排解以及每月Adobe Commerce安全性修補程式狀態報告的發行說明。</p>
+</td>
+      <td>
+        新主題
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/43571d84d9a27ffa113ba4f3a8a08883602211f6">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月10日
 
