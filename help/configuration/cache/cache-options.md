@@ -3,7 +3,7 @@ title: 快取後端選項和儲存參考
 description: 瞭解Adobe Commerce中的快取後端選項，包括檔案系統、Redis、Valkey和資料庫儲存。 探索舊版和現代方法。
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
 product_v2:
@@ -42,7 +42,7 @@ Commerce應用程式使用低階快取前端和後端來提供對快取儲存體
 | 後端 | 說明 | 設定指南 |
 | ------- | ----------- | ------------------- |
 | 檔案系統 | 預設。 將快取資料儲存在`var/cache/`下的檔案中。 不需要設定。 | 不適用 |
-| [Redis](config-redis.md) | 記憶體中的資料存放區，用於高效能快取。 | [預設快取使用Redis](redis-pg-cache.md)<br>**注意：Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的修補程式版本不支援Redis快取。 對於不支援Redis的快取設定，請使用Valkey。 如需依版本支援的快取服務，請參閱[系統需求](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)。 |
+| [Redis](config-redis.md) | 記憶體中的資料存放區，用於高效能快取。 | [預設快取使用Redis](redis-pg-cache.md)<br>**注意：Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的修補程式版本不支援Redis快取。 對於不支援Redis的快取設定，請使用Valkey。 如需依版本支援的快取服務，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements)。 |
 | [Valkey](config-valkey.md) | 開放原始碼、與Redis相容的替代方案。 | [使用預設快取的Valkey](valkey-pg-cache.md) |
 | [資料庫](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | 資料庫支援的快取。 | [建立自訂快取引擎](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} （Adobe開發人員檔案） |
 
