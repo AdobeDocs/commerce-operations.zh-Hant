@@ -683,7 +683,7 @@ io-threads-do-reads yes
 io-threads 8 # Choose a value lower than the number of CPU cores (check with nproc), and then tune under load.
 ```
 
->[!TAB 設定Valkey]的I/O執行緒
+>[!TAB 設定Valkey的I/O執行緒]
 
 若為Valkey：
 
