@@ -20,7 +20,7 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: efeccc00d057a7e7115f1b156c3d9202ab476ded
+source-git-commit: 5f20ef1b6e40728e38d06f5c9f90f72ba1eb43e0
 workflow-type: tm+mt
 source-wordcount: 764
 ht-degree: 0%
@@ -88,11 +88,11 @@ Commerce會將雜湊資料版本儲存在遠端快取中，並將尾碼附加至
 
 - `backend`是L2快取實作。
 - `backend_options`是L2快取設定。
-   - `remote_backend`是遠端快取實作： Redis或MySQL。
-   - `remote_backend_options`是遠端快取設定。
-   - `local_backend`是本機快取實作： `Cm_Cache_Backend_File`
-   - `local_backend_options`是本機快取設定。
-   - `cache_dir`是儲存本機快取之目錄的檔案快取特定選項。
+  - `remote_backend`是遠端快取實作： Redis或MySQL。
+  - `remote_backend_options`是遠端快取設定。
+  - `local_backend`是本機快取實作： `Cm_Cache_Backend_File`
+  - `local_backend_options`是本機快取設定。
+  - `cache_dir`是儲存本機快取之目錄的檔案快取特定選項。
 
 Adobe建議使用Redis進行遠端快取(`\Magento\Framework\Cache\Backend\Redis`)，並使用`Cm_Cache_Backend_File`進行共用記憶體中資料的本機快取，使用： `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
@@ -188,7 +188,7 @@ Adobe不建議為`default`快取型別啟用`use_stale_cache`選項。
 
 >[!NOTE]
 >
->此功能目前僅適用於Adobe Commerce內部部署2.4.9客戶。 2026年7月下旬，它將在Adobe Commerce雲端上啟用。
+>此功能目前僅適用於Adobe Commerce On Premises 2.4.9客戶。 2026年7月下旬，它將在Adobe Commerce on Cloud上啟用。
 
 ### Symfony L2快取記憶體的優點
 
