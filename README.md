@@ -1,7 +1,7 @@
 ---
-source-git-commit: 44c3c7eaf57d858b5810e6ba6f510e9fea4e1a1a
+source-git-commit: 73d9b59320fac5ad73e893e87aea1edb4bb72a06
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -76,11 +76,14 @@ ht-degree: 0%
 
 ## 可用的Rake任務
 
-此存放庫使用`adobe-comdox-exl-rake-tasks` gem提供的Rake工作。 若要檢視所有可用的工作，請執行：
+此存放庫使用
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+珠寶。若要檢視所有可用的工作，請執行：
 
 ```bash
 cd _jekyll
 bundle exec rake --tasks
 ```
 
-
+針對存放庫特定作業，包含關係檔案格式及設定
+詳細資料，請參閱[`_jekyll/ReadMe.md`](_jekyll/ReadMe.md)。
