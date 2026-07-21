@@ -18,7 +18,7 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 3d64249bf778a5aa73db22a532a454bb37d6dd37
 workflow-type: tm+mt
 source-wordcount: 309
 ht-degree: 0%
@@ -31,6 +31,10 @@ ht-degree: 0%
 
 Commerce應用程式使用低階快取前端和後端來提供對快取儲存體的存取權。 Commerce支援數個快取後端和策略，分別適用於不同的使用案例。 此頁面說明可用的後端及其差異。
 
+>[!NOTE]
+>
+>[Varnish](config-varnish.md)在HTTP層級處理整頁快取，不使用低層級快取後端。
+
 ## 後端快取選項
 
 下表總結列出可用的後端快取：
@@ -42,9 +46,9 @@ Commerce應用程式使用低階快取前端和後端來提供對快取儲存體
 | [Valkey](config-valkey.md) | 開放原始碼、與Redis相容的替代方案。 | [使用預設快取的Valkey](valkey-pg-cache.md) |
 | [資料庫](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | 資料庫支援的快取。 | [建立自訂快取引擎](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} （Adobe開發人員檔案） |
 
->[!NOTE]
+>[!IMPORTANT]
 >
->[Varnish](config-varnish.md)在HTTP層級處理整頁快取，不使用低層級快取後端。
+>{{redis-cache-support}}
 
 ## 實作方法
 

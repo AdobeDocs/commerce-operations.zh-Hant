@@ -9,9 +9,10 @@ feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="雲端上的Commerce" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案上的Adobe Commerce 。"
-source-git-commit: e8e8471313a4e9f7a595b1222d7a246bce63f097
+nudge: true
+source-git-commit: 78f8259a686402045614210efe6488c5cf5cc6bd
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2337'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,6 @@ ht-degree: 0%
 
 如需實作詳細資料、設定範例，以及部署特定的指南，請參閱效能最佳化的[L2快取設定](../../../configuration/cache/level-two-cache.md)。
 
-
 >[!IMPORTANT]
 >
 >Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p4的修補程式版本不支援Redis快取。 對於不支援Redis的快取設定，請使用Valkey。 如需依版本支援的快取服務，請參閱[系統需求](../../../installation/system-requirements.md)。
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!TAB Valkey組態]
 
-對於Valkey，請使用：
+對於使用舊版快取實作的Valkey，請使用：
 
 ```yaml
 stage:
@@ -58,7 +58,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-如需環境組態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[`VALKEY_BACKEND`](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)組態變數。
+如需使用現代Symfony L2快取實作的Valkey，請參閱[設定Symfony L2快取](#configure-symfony-l2-cache)。
 
 >[!TAB Redis組態]
 
@@ -76,92 +76,29 @@ stage:
 
 ### 設定[!DNL Symfony] L2快取
 
-Adobe Commerce 2.4.9和更新版本支援`symfony_l2`快取後端。 在雲端基礎結構上的Adobe Commerce上，只有在您的專案使用`.magento.env.yaml`中支援`symfony_l2`的`ece-tools`版本後，才設定此後端。
-
-`symfony_l2`後端是Adobe Commerce用來管理L1和L2快取行為的快取實作。 它不會取代Redis或Valkey做為遠端快取服務。 對於Adobe Commerce 2.4.9，請以Valkey作為遠端後端來設定`symfony_l2`。
+Adobe Commerce 2.4.9和更新版本支援`symfony_l2`快取後端。 `symfony_l2`後端是Adobe Commerce用來管理L1和L2快取行為的快取實作。 它不會取代Redis或Valkey做為遠端快取服務。
 
 >[!IMPORTANT]
 >
->在您的專案有`ece-tools`支援可用之前，請勿在`app/etc/env.php`中手動將`symfony_l2`設定為雲端基礎結構上Adobe Commerce的永久性設定。 部署可以覆寫手動`env.php`變更。 如果`ece-tools`不套用`symfony_l2`，Commerce可以回覆為檔案式快取。 此遞補功能可能會增加磁碟I/O、增加多節點環境的檔案系統複製負荷，並降低效能。
+>請勿在`app/etc/env.php`中手動將`symfony_l2`設定為雲端基礎結構上Adobe Commerce的永久性設定。 部署可以覆寫手動`env.php`變更。 如果`ece-tools`不套用`symfony_l2`，Commerce可以回覆為檔案式快取。 此遞補功能可能會增加磁碟I/O、增加多節點環境的檔案系統複製負荷，並降低效能。
 
-當`ece-tools`支援可用時，將Valkey後端變數設定為`symfony_l2`並在`CACHE_CONFIGURATION`中定義L2後端選項。
+若要針對Adobe Commerce 2.4.9使用`symfony_l2`快取，請完成下列步驟：
 
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: symfony_l2
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 1
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_default
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1
-```
+- 確定雲端專案使用[ECE Tools package v2002.1.12](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)或更新版本。
 
-若要為具有`symfony_l2`的選取快取型別啟用過時的快取，請定義具有`use_stale_cache: true`的第二個前端，然後將選取的快取型別對應至該前端。 針對每個前端使用不同的本機快取目錄和永久ID。
+- 在`.magento.env.yaml`檔案中設定部署變數： `VALKEY_BACKEND`=`symfony_l2`。
 
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: symfony_l2
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 0
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_default
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1
-        stale_cache_enabled:
-          backend: symfony_l2
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 0
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_stale
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1_stale
-            use_stale_cache: true
-      type:
-        default:
-          frontend: default
-        layout:
-          frontend: stale_cache_enabled
-        block_html:
-          frontend: stale_cache_enabled
-        reflection:
-          frontend: stale_cache_enabled
-        config_integration:
-          frontend: stale_cache_enabled
-        config_integration_api:
-          frontend: stale_cache_enabled
-        translate:
-          frontend: stale_cache_enabled
-```
+  ```yaml
+  stage:
+    deploy:
+      VALKEY_BACKEND: symfony_l2
+  ```
 
+將`VALKEY_BACKEND`部署變數設為`symfony_l2`會自動從您的Valkey服務連線詳細資料建置完整的L2快取設定，包括`default`前端和`stale_cache_enabled`前端，可快取的型別如`layout`、`block_html`、`full_page`和`translate`已對應到啟用過時的前端。 您不需要定義`CACHE_CONFIGURATION`即可使用`symfony_l2`。
+
+>[!CAUTION]
+>
+>更新`.magento.env.yaml`設定時，請勿覆寫`server`或`port`，除非您有意指向專案Valkey服務以外的快取端點。 ECE工具套件會自動從您的Valkey服務關係衍生這些值。 以不正確的值覆寫這些變數會導致部署失敗，並出現快取連線錯誤。
 
 ### 適用於Adobe Commerce Cloud的L2快取記憶體大小
 
@@ -170,7 +107,8 @@ L2快取使用[暫存檔案系統](https://en.wikipedia.org/wiki/Tmpfs) (`/dev/s
 根據您的專案需求，調整L2快取記憶體使用量上限。 使用下列其中一種方法：
 
 - 建立支援票證以調整`/dev/shm`掛載大小。 針對此案例，Adobe建議將`/dev/shm`掛載大小設定為15 GB。
-- 在應用程式層級調整`cleanup_percentage`屬性，以限制儲存使用量，並釋放其他服務可用的記憶體。您可以在快取組態群組`cache/frontend/default/backend_options/cleanup_percentage`下的部署組態中調整組態。
+- 在應用程式層級調整`cleanup_percentage`屬性，以限制儲存使用量，並釋放其他服務可用的記憶體。
+您可以在快取組態群組`cache/frontend/default/backend_options/cleanup_percentage`下的部署組態中調整組態。
 
 >[!NOTE]
 >
