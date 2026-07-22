@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: db5e09759abee078ed36e097b397f2dacbc2fef7
+source-git-commit: f28140efde87efac04d64121ecbc603dbe87e6b6
 workflow-type: tm+mt
-source-wordcount: '10433'
+source-wordcount: '10465'
 ht-degree: 0%
 
 ---
@@ -1033,6 +1033,7 @@ ht-degree: 0%
       - [ACP2E-4156： [!DNL REST] API送貨地址驗證會忽略管理員屬性設定](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
     - v1.1.81 {#v1-1-81}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+      - [ACP2E-4395：可透過API建立禮卡產品，全球範圍內不需使用任何金額](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)
       - [ACP2E-4401：可設定產品重新導向至[!UICONTROL maintenance page]的[!UICONTROL Home Page]的[!UICONTROL Scheduled Update Preview]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)
       - [ACP2E-4468：網站範圍內的管理員使用者無法在頁面產生器中儲存動態區塊](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)
       - [ACP2E-4786：設定AWS S3遠端儲存時，產品匯出失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)
@@ -1040,6 +1041,7 @@ ht-degree: 0%
       - [ACP2E-4630：長產品名稱在多頁銷售PDF中分頁後與相鄰欄重疊](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
       - [ACP2E-4680：不可銷售產品從最終議價報價中消失](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
       - [ACP2E-4300：管理員客戶群組變更後店面目錄許可權未更新](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
+      - [ACP2E-4709：當頁面階層包含雙引號時，CMS頁面不會儲存在頁面產生器中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
   - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
   - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
