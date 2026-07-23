@@ -3,26 +3,16 @@ title: 效能最佳化的L2快取記憶體設定
 description: 瞭解如何在Adobe Commerce中設定L2快取，以減少網路流量並改善效能。 探索舊版和Symfony實作選項。
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: d92082d5311d8cfccc1299d0014c238cbaf102e3
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: a816ed6fff5e2573b93712069bc7b1524dcad403
 workflow-type: tm+mt
-source-wordcount: 826
+source-wordcount: 1166
 ht-degree: 0%
 
 ---
@@ -42,18 +32,18 @@ Commerce會將雜湊資料版本儲存在遠端快取中，並將尾碼附加至
 
 | 實施 | 版本 | 說明 |
 | -------------- | ------- | ----------- |
-| [舊版(`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | Zend型兩級快取，具有`Cm_Cache_Backend_File`用於本機儲存 |
-| [現代(`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache架構的L2，符合PSR-6規範，效能更佳 |
+| [舊版(`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | &lt;2.4.9 | Zend型兩級快取，具有`Cm_Cache_Backend_File`用於本機儲存 |
+| [現代(`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony快取型L2，符合PSR-6規範，效能更佳。 僅支援Valkey。 |
 
 ## 舊版L2快取設定(RemoteSynchronizedCache)
 
 >[!NOTE]
 >
->舊版L2快取設定指示適用於舊版Adobe Commerce。 如果您使用Adobe Commerce 2.4.9或更新版本，Adobe建議將[Symfony 2用於L2快取](#modern-symfony-l2-cache-implementation)。
+>舊版L2快取設定指示適用於舊版Adobe Commerce。 如果您使用Adobe Commerce 2.4.9或更新版本，請使用Valkey搭配[Symfony 2進行L2快取](#modern-symfony-l2-cache-implementation)。
 
 快取設定指示取決於您的部署型別：
 
-- **對於雲端上的Adobe Commerce**，請在`.magento.env.yaml`中設定[`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#redis_backend)或[`VALKEY_BACKEND`](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)部署變數來設定L2快取。 如需設定範例，請參閱[設定L2快取](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)。
+- **對於雲端上的Adobe Commerce**，請在`.magento.env.yaml`中設定[`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)或[`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)部署變數來設定L2快取。 如需設定範例，請參閱[設定L2快取](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)。
 
 - **對於支援Redis**&#x200B;的Adobe Commerce內部部署版本，請使用下列範例來修改或取代`app/etc/env.php`檔案中的現有快取區段。
 
@@ -188,20 +178,26 @@ Adobe不建議為`default`快取型別啟用`use_stale_cache`選項。
 
 ## 現代Symfony L2快取實作
 
-在Commerce 2.4.9+版中，請使用Symfony快取架構的L2快取實作（`symfony_l2`後端），而非舊版的L2快取。  Symfony L2快取提供符合PSR 6的現代化快取實作，其效能比傳統`RemoteSynchronizedCache`有顯著改善。
+在Commerce 2.4.9+版中，請使用Symfony快取架構的L2快取實作（`symfony_l2`後端），而非舊版的L2快取。 Symfony L2快取提供符合PSR 6的現代化快取實作，其效能比傳統`RemoteSynchronizedCache`有顯著改善。
 
 >[!NOTE]
 >
 >對於雲端上的Adobe Commerce，ECE工具套件(`ece-tools`)會自動管理此設定。 不要直接編輯`app/etc/env.php` — 部署會覆寫手動變更。 如需雲端設定，請參閱[改為設定Symfony L2快取](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache)。
 
+>[!IMPORTANT]
+>
+>{{redis-cache-support}}
+>
+>由於`symfony_l2`僅可在Adobe Commerce 2.4.9及更高版本中使用，請將其設定為Valkey作為遠端後端。 Redis不是正式支援的`symfony_l2`遠端後端。 如需依版本支援的快取服務，請參閱[系統需求](../../installation/system-requirements.md)。
+
 ### Symfony L2快取記憶體的優點
 
 - **現代架構**：建置在Symfony快取元件上（符合PSR-6）
 - **效能更佳**：原生支援Igbinary序列化、gzip壓縮和Lua指令碼
-- **持續連線**：減少連線集區的Redis或Valkey連線負荷
+- **持續連線**：減少連線集區的Valkey連線額外負荷
 - **預先載入金鑰**：支援重要資料的快取金鑰預先載入
 - **過時快取支援**：與`use_stale_cache`選項完全相容
-- **簡化組態**：清除後端型別名稱(`redis`、`valkey`、`file`)
+- **簡化組態**：清除後端型別名稱(`valkey`， `file`)
 
 ### 使用Symfony L2快取的設定範例
 
@@ -213,8 +209,8 @@ Adobe不建議為`default`快取型別啟用`use_stale_cache`選項。
         'default' => [
             'backend' => 'symfony_l2',
             'backend_options' => [
-                // L2 (Remote): Redis with Symfony Cache
-                'remote_backend' => 'redis',
+                // L2 (Remote): Valkey with Symfony Cache
+                'remote_backend' => 'valkey',
                 'remote_backend_options' => [
                     'server' => 'localhost',
                     'database' => '0',
@@ -259,7 +255,7 @@ Adobe不建議為`default`快取型別啟用`use_stale_cache`選項。
         'default' => [
             'backend' => 'symfony_l2',
             'backend_options' => [
-                'remote_backend' => 'redis',
+                'remote_backend' => 'valkey',
                 'remote_backend_options' => [
                     'server' => 'localhost',
                     'database' => '0',
@@ -278,7 +274,7 @@ Adobe不建議為`default`快取型別啟用`use_stale_cache`選項。
         'stale_cache_enabled' => [
             'backend' => 'symfony_l2',
             'backend_options' => [
-                'remote_backend' => 'redis',
+                'remote_backend' => 'valkey',
                 'remote_backend_options' => [
                     'server' => 'localhost',
                     'database' => '0',
@@ -312,31 +308,47 @@ Adobe不建議為`default`快取型別啟用`use_stale_cache`選項。
 
 | 選項 | 型別 | 預設 | 說明 |
 |--------|------|---------|-------------------------------------------------------------------|
-| `remote_backend` | 字串 | `'redis'` | 遠端後端型別： `redis`、`valkey`或`file` |
-| `remote_backend_options` | 陣列 | `[]` | 遠端後端設定（請參閱Redis/Valkey檔案） |
+| `remote_backend` | 字串 | `'valkey'` | 遠端後端型別： `valkey`或`file`。 使用`valkey`進行L2快取。 |
+| `remote_backend_options` | 陣列 | `[]` | 遠端後端設定（請參閱Valkey檔案） |
 | `local_backend` | 字串 | `'file'` | 本機後端型別： `file`或`apcu` |
 | `local_backend_options` | 陣列 | `[]` | 本機後端設定 |
-| `cleanup_percentage` | 整數 | `90` | L1快取清理閾值(1-100) |
+| `cleanup_percentage` | 整數 | `95` | L1快取清理閾值(1-100) |
 | `use_stale_cache` | 布林值 | `false` | 啟用過時的快取，以獲得高可用性 |
 
-### Valkey支援
+>[!NOTE]
+>
+>`remote_backend`選項也接受`redis`的值。 不過，Redis不是官方支援的Adobe Commerce 2.4.9及更新版本的快取服務。 Adobe建議僅使用`valkey`設定`symfony_l2`。 如需依版本支援的快取服務，請參閱[系統需求](../../installation/system-requirements.md)。
 
-`symfony_l2`後端也支援Valkey做為遠端後端：
+### 增強的Symfony L2快取記憶體效能與可靠性
 
-```php
-'backend_options' => [
-    'remote_backend' => 'valkey',  // Use Valkey instead of Redis
-    'remote_backend_options' => [
-        'server' => 'localhost',
-        'database' => '0',
-        'port' => '6379',
-        'serializer' => 'igbinary',
-        'compression_lib' => 'gzip',
-    ],
-    // ... rest of configuration
-]
-```
+>[!NOTE]
+>
+>這些改善適用於使用`symfony_l2`的Adobe Commerce 2.4.9部署，並可搭配ACP2E-5132修補程式使用。 如需最新修補程式發行說明，請參閱[Commerce雲端修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)。
+
+#### 最佳化的Symfony L2快取標籤儲存
+
+針對Valkey支援的部署最佳化Symfony L2快取行為，消除多餘的檔案系統標籤索引寫入。 快取標籤現在僅儲存在Valkey中，使Symfony L2快取行為與舊版快取實施一致。 這樣可以減少不必要的磁碟I/O，改善快取寫入效能，並防止`var/cache/symfony/tags/`目錄成長。
+
+#### 改善檔案式快取行為
+
+對於使用檔案式快取（沒有Valkey）的部署，會繼續維護本機標籤索引以支援快取失效。 標籤索引現在會寫入已設定的`cache_dir`，而不是先前硬式編碼的`var/cache`位置，以確保一致的快取目錄使用方式，並改善對自訂快取設定的支援。
+
+#### 改善快取失效
+
+快取失效現在會使用以TTL為基礎的重新產生鎖定搭配適當的L1標籤清除，消除標籤失效後可能持續存在的過時快取專案。
+
+#### 預設為啟用壓縮
+
+Symfony L2快取記憶體現在預設啟用Redis/Valkey壓縮(`compress_data`)，減少記憶體耗用和網路流量，並符合舊版快取實作的預設行為。
+
+#### 影響
+
+- 針對Valkey支援的Symfony L2快取部署，消除多餘的檔案系統標籤索引寫入。
+- 減少磁碟I/O並改善快取寫入效能。
+- 防止`var/cache/symfony/tags/`目錄的不必要增長。
+- 確保檔案式快取部署一致地使用設定的`cache_dir`，同時保留快取失效行為。
+- 透過以TTL為基礎的重新產生鎖定和適當的L1標籤清除，消除過時的快取專案。
+- 在預設啟用`compress_data`的情況下，減少記憶體耗用和網路流量。
 
 如需詳細的組態選項，請參閱：
-- [使用Symfony快取的Redis快取設定](redis-pg-cache.md)
 - [具有Symfony快取的Valkey快取設定](valkey-pg-cache.md)
