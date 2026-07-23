@@ -2,9 +2,9 @@
 title: 系統需求
 description: 瞭解Adobe Commerce的軟體相依性和系統需求。 檢視經過測試的設定，瞭解與部署環境的相容性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
+source-git-commit: 7c944faaf6f9769ee6aba1e811aa93a5263f13cf
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -37,9 +37,6 @@ Adobe僅支援下表所列的系統需求組合。 Adobe不會驗證或支援不
 雲端上的[Commerce範本](https://github.com/magento/magento-cloud)針對與每個發行版本的最新Commerce版本相容的服務，提供預設設定。
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
-
-**<sup>1</sup>MariaDB 12.3與Adobe Commerce 2.4.9之間的相容性**
-MariaDB 12.3正式發行後，MariaDB 12.3與Adobe Commerce 2.4.9之間的相容性將得到確認，預計在5月至6月的時間範圍內發行。
 
 針對預設組態，服務與版本定義於[的`services.yaml`檔案](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)。
 如需詳細資訊，請參閱*雲端基礎結構上的Commerce*&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)。
@@ -131,8 +128,8 @@ Adobe建議您基於效能原因來驗證[PHP OPcache](https://www.php.net/manua
 
 - **對於雲端基礎結構部署上的Adobe Commerce**，預設會安裝`opcache`擴充功能。
 - **對於Adobe Commerce內部部署：**
-   - [確認已安裝PHP OPcache延伸模組](prerequisites/php-settings.md#verify-php-is-installed)。
-   - 如需效能設定的特定指引，請參閱&#x200B;*效能最佳實務*&#x200B;指南中的[PHP設定](../performance/software.md#php-settings)軟體建議。
+  - [確認已安裝PHP OPcache延伸模組](prerequisites/php-settings.md#verify-php-is-installed)。
+  - 如需效能設定的特定指引，請參閱&#x200B;*效能最佳實務*&#x200B;指南中的[PHP設定](../performance/software.md#php-settings)軟體建議。
 
 
 如果您必須單獨安裝OPcache，請參閱[PHP OPcache檔案](https://www.php.net/manual/en/opcache.setup.php)。
@@ -232,4 +229,4 @@ Adobe Commerce的某些作業需要下列系統工具：
 >
 >`xdebug`有已知問題，可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)的已知問題。
 
-<!-- Last updated from includes: 2026-06-01 15:26:19 -->
+<!-- Last updated from includes: 2026-06-16 11:15:50 -->
