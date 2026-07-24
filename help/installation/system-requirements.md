@@ -2,7 +2,7 @@
 title: 系統需求
 description: 瞭解Adobe Commerce的軟體相依性和系統需求。 檢視經過測試的設定，瞭解與部署環境的相容性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 7c944faaf6f9769ee6aba1e811aa93a5263f13cf
+source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
@@ -229,4 +229,5 @@ Adobe Commerce的某些作業需要下列系統工具：
 >
 >`xdebug`有已知問題，可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)的已知問題。
 
-<!-- Last updated from includes: 2026-06-16 11:15:50 -->
+<!-- Last updated from includes: 2026-07-22 16:57:39 -->
+

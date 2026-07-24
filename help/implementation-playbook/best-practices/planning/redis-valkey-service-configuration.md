@@ -10,9 +10,9 @@ topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="雲端上的Commerce" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案上的Adobe Commerce 。"
 nudge: true
-source-git-commit: 78f8259a686402045614210efe6488c5cf5cc6bd
+source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2454'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Adobe Commerce 2.4.9和更新版本支援`symfony_l2`快取後端。 `symfony_l2
 
 若要針對Adobe Commerce 2.4.9使用`symfony_l2`快取，請完成下列步驟：
 
-- 確定雲端專案使用[ECE Tools package v2002.1.12](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)或更新版本。
+- 確定雲端專案使用[ECE Tools package v2002.2.12](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)或更新版本。
 
 - 在`.magento.env.yaml`檔案中設定部署變數： `VALKEY_BACKEND`=`symfony_l2`。
 
@@ -94,11 +94,44 @@ Adobe Commerce 2.4.9和更新版本支援`symfony_l2`快取後端。 `symfony_l2
       VALKEY_BACKEND: symfony_l2
   ```
 
-將`VALKEY_BACKEND`部署變數設為`symfony_l2`會自動從您的Valkey服務連線詳細資料建置完整的L2快取設定，包括`default`前端和`stale_cache_enabled`前端，可快取的型別如`layout`、`block_html`、`full_page`和`translate`已對應到啟用過時的前端。 您不需要定義`CACHE_CONFIGURATION`即可使用`symfony_l2`。
+將`VALKEY_BACKEND`部署變數設為`symfony_l2`會自動從您的Valkey服務連線詳細資料建置完整的L2快取設定，包括`default`前端和`stale_cache_enabled`前端，可快取的型別如`layout`、`block_html`、`full_page`和`translate`已對應到啟用過時的前端。 定義`CACHE_CONFIGURATION`是選擇性的，只有在您想要自訂特定的後端選項時才需要。
+
+>[!NOTE]
+>
+>Adobe Commerce 2.4.9包含Symfony L2快取改善功能，包括快取標籤儲存、失效和壓縮，以及修補程式ACP2E-5132，減少磁碟I/O、消除過時的快取專案，並降低記憶體與網路負荷。 請參閱&#x200B;_Adobe Commerce設定指南_&#x200B;中的[增強型Symfony L2快取效能和可靠性](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)。
+
+#### 自訂Symfony L2快取設定
+
+`ece-tools`會自動衍生`default`和`stale_cache_enabled`前端的Valkey連線詳細資料(`server`、`port`、`database`、`serializer`、`compression_lib`、`persistent_id`)。 若要自訂其他後端選項（例如本機快取目錄），請將`CACHE_CONFIGURATION`與`_merge: true`以及`VALKEY_BACKEND: symfony_l2`一起定義。 您在此處定義的值會覆寫對應的自動產生預設值；任何忽略的選項都會繼續使用`ece-tools`自動衍生的值。
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: symfony_l2
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            remote_backend: valkey
+            local_backend: file
+            local_backend_options:
+              cache_dir: /dev/shm/magento_l1
+        stale_cache_enabled:
+          backend: symfony_l2
+          backend_options:
+            remote_backend: valkey
+            local_backend: file
+            local_backend_options:
+              cache_dir: /dev/shm/magento_l1_stale
+            use_stale_cache: true
+```
 
 >[!CAUTION]
 >
->更新`.magento.env.yaml`設定時，請勿覆寫`server`或`port`，除非您有意指向專案Valkey服務以外的快取端點。 ECE工具套件會自動從您的Valkey服務關係衍生這些值。 以不正確的值覆寫這些變數會導致部署失敗，並出現快取連線錯誤。
+>定義`symfony_l2`的`CACHE_CONFIGURATION`時，請勿覆寫`server`或`port`，除非您有意指向專案Valkey服務以外的快取端點。 ECE工具套件會自動從您的Valkey服務關係衍生這些值。
+>
+>如果您覆寫`server`，則連線至專案的Valkey服務時，其值必須是`localhost`。 提供不正確的`server`或`port`值會導致部署失敗，並出現快取連線錯誤。
 
 ### 適用於Adobe Commerce Cloud的L2快取記憶體大小
 
@@ -1022,4 +1055,5 @@ stage:
 - [設定Valkey服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/valkey)
 - [設定Redis服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/redis)
 - [部署變數](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+
 
