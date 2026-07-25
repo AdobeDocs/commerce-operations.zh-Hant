@@ -1,8 +1,8 @@
 ---
-source-git-commit: 06df92107c98f188a5dcb4b56aa6d61d3c594a7e
+source-git-commit: 462c3bcd5e4359d2be1a8f112c2dc50d3b8825bd
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 0%
+source-wordcount: '2666'
+ht-degree: 1%
 
 ---
 # 新功能範本
@@ -10,6 +10,80 @@ ht-degree: 0%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年7月23日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>，其中包含Adobe Commerce 2.4.9的MariaDB Cloud版本支援詳細資料（建議使用12.3，支援使用11.8）。</p>
+</td>
+      <td>
+        技術
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eaf47339d87d296799367f699f9322c14e6ee780">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月22日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>以雲端服務版本的最新Commerce更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>主題，包括RabbitMQ 4.3更新以及確認與MariaDB 12.3的相容性。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6607852ba3221a1120f3c88007c106ed9704dcec">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月21日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401： Scheduled Update首頁的詳細描述QPT 1.1.81修正，其中包含可設定產品重新導向至維護頁面</a>。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/41aac13f73ff0836f93b8ec30a709bd89fa34a94">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468的QPT 1.1.81修正的詳細說明：以網站範圍設定的管理員使用者無法在頁面產生器</a>中儲存動態區塊。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f5fbe594284c05aaa9b2461e3628a3444229efb6">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月16日
 
