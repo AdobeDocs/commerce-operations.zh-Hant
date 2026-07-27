@@ -1,7 +1,7 @@
 ---
-source-git-commit: 73d9b59320fac5ad73e893e87aea1edb4bb72a06
+source-git-commit: 33d2ca6bac7fb0108ff6f236d82f6d97c3ad95c8
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -60,10 +60,11 @@ ht-degree: 0%
 
 ### 鉤子會做什麼
 
-- 自動偵測分階段影像檔案(PNG、JPG、JPEG、GIF、SVG)
-- 執行`image_optim`以壓縮和最佳化影像
+- 自動偵測暫存的影像檔案(`.png`， `.jpeg`， `.jpg`， `.gif`， `.svg`)
+- 執行`image_optim`以壓縮和最佳化點陣影像(`.png`， `.jpeg`， `.jpg`， `.gif`)
 - 自動重新存放最佳化的影像
-- 確保所有認可的影像都已適當最佳化
+- 確保所有認可的點陣化影像都已適當最佳化
+- 根據大小限制檢查分段的SVG，如果從`help/`引用了過大的SVG，則中止認可（否則僅警告）
 
 ### 優點
 

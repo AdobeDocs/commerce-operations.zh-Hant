@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: f28140efde87efac04d64121ecbc603dbe87e6b6
+source-git-commit: 5dec405e9f116622903e9b0e2fbbd255ca28a8e8
 workflow-type: tm+mt
-source-wordcount: '10465'
+source-wordcount: '10469'
 ht-degree: 0%
 
 ---
@@ -1042,6 +1042,8 @@ ht-degree: 0%
       - [ACP2E-4680：不可銷售產品從最終議價報價中消失](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
       - [ACP2E-4300：管理員客戶群組變更後店面目錄許可權未更新](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
       - [ACP2E-4709：當頁面階層包含雙引號時，CMS頁面不會儲存在頁面產生器中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
+    - v1.1.82 {#v1-1-82}
+      - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
   - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
   - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
