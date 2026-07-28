@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 6b7e2463ee1f743fb5e8451a7f9832309aa68ab0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 4358eb2865fbd8a66716ffc6b7a7b133a7e10e5d
 workflow-type: tm+mt
 source-wordcount: 485
 ht-degree: 0%
@@ -34,7 +29,7 @@ QPT v1.1.82包含下列修補程式：
 1. **ACP2E-4682**：修正每次載入頁面時，造訪檢查報價單`isActive`狀態的Storefront頁面會建立空白報價記錄的問題。
 1. **ACP2E-4695**：修正目錄規則索引器耗用過多記憶體且無法完成，導致不穩定及記憶體不足錯誤的問題。
 1. **ACP2E-4698**：修正在「頁面產生器」文字內容中再次編輯影像時，會儲存絕對媒體URL，而非保留可攜式媒體指示詞的問題。
-1. **ACP2E-4748**：修正具有大量獎勵點歷史記錄的商店中，獎勵點過期程式緩慢的問題，造成獎勵點過期的延遲。
+1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**：修正獎勵點過期時間在含有大量獎勵點歷史記錄的商店中緩慢執行，造成獎勵點過期延遲的問題。
 1. **ACP2E-4797**：修正即使資料庫設定為支援`utf8mb4`，在WYSIWYG編輯器或管理員的頁面產生器內容中輸入4位元組Unicode字元時仍遭到錯誤封鎖的問題。
 1. **ACP2E-4799**：修正`requisition_lists` GraphQL查詢傳回`total_count`值的問題，該值僅反映目前頁面的專案數，而非符合查詢條件的請購單清單總數。
 1. **ACP2E-4805**：修正清單中第一個可銷售子產品出現延遲時，含有許多子產品之可設定產品之簽出API要求顯著變慢的問題。
