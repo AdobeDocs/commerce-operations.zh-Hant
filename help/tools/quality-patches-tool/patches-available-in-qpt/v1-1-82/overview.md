@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 4358eb2865fbd8a66716ffc6b7a7b133a7e10e5d
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: e52becee703b046f5ffb00b01ca780311d711ec8
 workflow-type: tm+mt
 source-wordcount: 485
 ht-degree: 0%
@@ -37,7 +32,7 @@ QPT v1.1.82包含下列修補程式：
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**：修正獎勵點過期時間在含有大量獎勵點歷史記錄的商店中緩慢執行，造成獎勵點過期延遲的問題。
 1. **ACP2E-4797**：修正即使資料庫設定為支援`utf8mb4`，在WYSIWYG編輯器或管理員的頁面產生器內容中輸入4位元組Unicode字元時仍遭到錯誤封鎖的問題。
 1. **ACP2E-4799**：修正`requisition_lists` GraphQL查詢傳回`total_count`值的問題，該值僅反映目前頁面的專案數，而非符合查詢條件的請購單清單總數。
-1. **ACP2E-4805**：修正清單中第一個可銷售子產品出現延遲時，含有許多子產品之可設定產品之簽出API要求顯著變慢的問題。
+1. **[ACP2E-4805](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)**：修正清單中第一個可銷售子產品出現延遲時，含有許多子產品之可設定產品之簽出API要求顯著變慢的問題。
 1. **ACP2E-4840**：修正`products` GraphQL查詢中要求的數量值傳回&#x200B;*null*&#x200B;的問題。
 1. **ACP2E-4870**：修正&#x200B;**[!UICONTROL Product Alerts]**&#x200B;電子郵件通知忽略商店檢視電子郵件設定的問題。
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**：修正在「管理員」中檢視含大量通訊錄的客戶帳戶時，管理員使用者意外登出的問題。
