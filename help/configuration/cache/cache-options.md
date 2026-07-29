@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
+source-git-commit: 37196b2d34951dd2df4d1e459cc9e29480f4f6e1
 workflow-type: tm+mt
-source-wordcount: 331
+source-wordcount: 395
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Commerce應用程式使用低階快取前端和後端來提供對快取儲存體
 
 >[!IMPORTANT]
 >
->{{redis-cache-support}}
+>Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的修補程式版本不支援Redis快取。 如果您要升級至不支援Redis的版本，您必須設定Valkey並更新快取設定以使用它。 若為Commerce內部部署，請參閱[設定Valkey](config-valkey.md)。 若為雲端上的Commerce，請參閱[設定Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md){target="_blank"}。
 
 ## 實作方法
 

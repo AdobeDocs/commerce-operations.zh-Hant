@@ -10,9 +10,9 @@ topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="雲端上的Commerce" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案上的Adobe Commerce 。"
 nudge: true
-source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
+source-git-commit: 0c69ccdfcb3592a717b8b3a5a59762c8daeceec7
 workflow-type: tm+mt
-source-wordcount: '2454'
+source-wordcount: '2524'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ Adobe Commerce 2.4.9和更新版本支援`symfony_l2`快取後端。 `symfony_l2
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9包含Symfony L2快取改善功能，包括快取標籤儲存、失效和壓縮，以及修補程式ACP2E-5132，減少磁碟I/O、消除過時的快取專案，並降低記憶體與網路負荷。 請參閱&#x200B;_Adobe Commerce設定指南_&#x200B;中的[增強型Symfony L2快取效能和可靠性](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)。
+>Adobe Commerce 2.4.9的修補程式ACP2E-5132改善了Symfony L2快取記憶體的效能和可靠性：最佳化的標籤儲存、過時的快取重新產生鎖定，以及重新標籤後對過時的標籤成員資格進行修正、未變更的儲存上多餘的遠端寫入，以及L1依大小執行的逐出(`cleanup_percentage`)。 這樣可以減少磁碟I/O和後端負載，同時改善快取一致性。 請參閱&#x200B;_Adobe Commerce設定指南_&#x200B;中的[增強型Symfony L2快取效能和可靠性](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)。
+>
+>此修補程式包含在Commerce套件[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)的雲端修補程式中（相依性`ece-tools`），並在您更新至最新的`ece-tools`版本時於部署期間自動套用。 更新至最新版本的`ece-tools`以接收修補程式。
 
 #### 自訂Symfony L2快取設定
 
