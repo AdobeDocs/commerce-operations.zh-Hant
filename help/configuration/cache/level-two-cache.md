@@ -3,7 +3,7 @@ title: 效能最佳化的L2快取記憶體設定
 description: 瞭解如何在Adobe Commerce中設定L2快取，以減少網路流量並改善效能。 探索舊版和Symfony實作選項。
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -53,7 +53,7 @@ Commerce會將雜湊資料版本儲存在遠端快取中，並將尾碼附加至
 
 快取設定指示取決於您的部署型別：
 
-- **對於雲端上的Adobe Commerce**，請在`.magento.env.yaml`中設定[`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend)或[`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)部署變數來設定L2快取。 如需設定範例，請參閱[設定L2快取](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)。
+- **對於雲端上的Adobe Commerce**，請在`.magento.env.yaml`中設定[`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#redis_backend)或[`VALKEY_BACKEND`](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend)部署變數來設定L2快取。 如需設定範例，請參閱[設定L2快取](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)。
 
 - **對於支援Redis**&#x200B;的Adobe Commerce內部部署版本，請使用下列範例來修改或取代`app/etc/env.php`檔案中的現有快取區段。
 
@@ -333,7 +333,7 @@ Adobe不建議為`default`快取型別啟用`use_stale_cache`選項。
 
 >[!NOTE]
 >
->這些改善適用於使用`symfony_l2`的Adobe Commerce 2.4.9部署，並可搭配ACP2E-5132修補程式使用。 如需最新修補程式發行說明，請參閱[Commerce雲端修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)。
+>這些改善適用於使用`symfony_l2`的Adobe Commerce 2.4.9部署，並可搭配ACP2E-5132修補程式使用。 如需最新修補程式發行說明，請參閱[Commerce雲端修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)。
 
 #### 最佳化的Symfony L2快取標籤儲存
 
