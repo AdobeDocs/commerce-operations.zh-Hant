@@ -21,7 +21,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-badgePaas: label="僅限雲端上的Adobe Commerce" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce on Cloud 2.4.4版 — 2.4.9"
+badgePaas: label="僅限雲端上的Adobe Commerce" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce on Cloud 2.4.4版 — 2.4.9"
 hide: true
 source-git-commit: 0bc5d38693008f2203fe496773aa90c0418d566e
 workflow-type: tm+mt
@@ -82,7 +82,7 @@ Adobe企業安全性原則要求雲端上Adobe Commerce的所有Adobe代管環�
 
    目前版本應顯示在任何Admin頁面的右下角。
 
-1. 如果版本未顯示在Admin中，請使用[Adobe Commerce命令列工具](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"}執行版本命令：
+1. 如果版本未顯示在Admin中，請使用[Adobe Commerce命令列工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"}執行版本命令：
 
    ```shell
    bin/magento --version
@@ -97,7 +97,7 @@ Adobe企業安全性原則要求雲端上Adobe Commerce的所有Adobe代管環�
 
 ## 為什麼此安全性授權很重要
 
-已超過廠商支援終止的軟體不再接收安全性修補程式，這表示該軟體中的已知安全性問題無法修正。 此外，根據[Adobe生命週期原則](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)：
+已超過廠商支援終止的軟體不再接收安全性修補程式，這表示該軟體中的已知安全性問題無法修正。 此外，根據[Adobe生命週期原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy)：
 
 * **Adobe Commerce 2.4.4和2.4.5**&#x200B;版現在只接收核心應用程式的限制、獨立安全性修正，直到2027年5月31日為止。 這項有限支援不包括品質修正、應用程式相依性（例如PHP）的相容性支援，或平台相依性更新
 
@@ -136,7 +136,7 @@ Adobe企業安全性原則要求雲端上Adobe Commerce的所有Adobe代管環�
 
 Adobe將協助您直接升級這些軟體相依性。
 
-* **快速入門：**&#x200B;開啟[支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，其中列出您需要升級的環境和相關的相依性。 請在執法日期前至少30天開啟票證，以便我們的團隊能排程工作。
+* **快速入門：**&#x200B;開啟[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，其中列出您需要升級的環境和相關的相依性。 請在執法日期前至少30天開啟票證，以便我們的團隊能排程工作。
 
 * **停機時間：** Adobe會在排程時與您確認預期的視窗。
 
@@ -169,7 +169,7 @@ Adobe將協助您直接升級這些軟體相依性。
 
 | | 雲端上的Adobe Commerce 2.4.9版 | Adobe Commerce as a Cloud Service |
 | --- | --- | --- |
-| 內容 | 最新Adobe Commerce版本包含完整的安全性涵蓋範圍、品質修正和平台相依性更新。 | Adobe完全受管理的commerce平台，專為持續創新而打造，不需要升級額外負荷。 [了解更多](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)。 |
+| 內容 | 最新Adobe Commerce版本包含完整的安全性涵蓋範圍、品質修正和平台相依性更新。 | Adobe完全受管理的commerce平台，專為持續創新而打造，不需要升級額外負荷。 [了解更多](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview)。 |
 | 最適合您的是 | 您現在想要持續管理自己的基礎建設、升級和修補程式。 您隨時都可以移轉至Adobe Commerce as a Cloud Service 。 | 您想要永遠保留升級週期、降低總體擁有成本，並自動取得Adobe的最新功能，而不需額外付費。 |
 | 主要優點 | 立即符合安全性需求，同時保留現有的設定。 | 快如閃電的邊緣交付店面、高度擴充的目錄、原生數位資產管理，以及內建的創作AI，全都由Adobe管理的基礎建設上。 |
 
@@ -187,16 +187,16 @@ Adobe將協助您直接升級這些軟體相依性。
 
 * **升級相容性報告：** Adobe提供詳細報告，明確說明升級至Adobe Commerce 2.4.9版所需的專案，包括時間和成本範圍。 [產生您的升級相容性報告](https://supportinsights.adobe.com/commerce/tab/main)。
 
-* **軟體相依性升級：**&#x200B;由於您無法直接升級軟體相依性，請[開啟Adobe的支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"}為您處理升級。 如需詳細資訊，請參閱[設定服務](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}。
+* **軟體相依性升級：**&#x200B;由於您無法直接升級軟體相依性，請[開啟Adobe的支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"}為您處理升級。 如需詳細資訊，請參閱[設定服務](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}。
 
 **如果您選擇移轉至Adobe Commerce as a Cloud Service**
 
-Adobe提供的工具可減少移轉至Adobe Commerce as a Cloud Service的成本和時間。 您無須為此付費。 這些工具僅適用於移轉，不用於雲端上的Adobe Commerce版本升級。 如需完整的移轉指南，包括移轉路徑和階段，請參閱[移轉概觀](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview)。
+Adobe提供的工具可減少移轉至Adobe Commerce as a Cloud Service的成本和時間。 您無須為此付費。 這些工具僅適用於移轉，不用於雲端上的Adobe Commerce版本升級。 如需完整的移轉指南，包括移轉路徑和階段，請參閱[移轉概觀](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/migration/overview)。
 
-* **移轉評估：**&#x200B;評定自訂的移轉複雜性。 請參閱[移轉評估工具總覽](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/assessment)。
+* **移轉評估：**&#x200B;評定自訂的移轉複雜性。 請參閱[移轉評估工具總覽](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/migration/migration-tools/assessment)。
 
 * **資料移轉：** [大量與增量資料移轉工具](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data)會將您的資料移至新的Adobe Commerce as a Cloud Service環境。
 
 * Adobe的[AI輔助移轉和開發人員工具](https://developer.adobe.com/commerce/extensibility/developer-agent/) （包括&#x200B;**[!DNL Adobe Developer App Builder]**&#x200B;和&#x200B;**[!DNL Commerce Storefront powered by Edge Delivery Services]**）可協助加速店面現代化及擴充功能重新平台。
 
-如果您有任何問題，請連絡您的客戶團隊、解決方案客戶經理、續約專家，或聯絡[支援服務](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)。
+如果您有任何問題，請連絡您的客戶團隊、解決方案客戶經理、續約專家，或聯絡[支援服務](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)。
