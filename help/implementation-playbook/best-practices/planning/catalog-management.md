@@ -6,7 +6,7 @@ feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1444'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 #### 檢閱屬性集組態
 
-1. [連線到站台資料庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database)。
+1. [連線到站台資料庫](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database)。
 
 1. 使用MySQL尋找屬性集數目
 
@@ -179,7 +179,7 @@ ht-degree: 0%
 
 如果類別中有太多產品，請更新storefront類別目錄組態以停用選項&#x200B;**允許每頁所有產品**。
 
-停用此選項後，Adobe Commerce會使用列出店面分頁控制項的產品清單，來管理顯示在店面元件中的產品數量。 如需指示，請參閱[設定分頁控制項](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=zh-Hant#configure-the-pagination-controls)。
+停用此選項後，Adobe Commerce會使用列出店面分頁控制項的產品清單，來管理顯示在店面元件中的產品數量。 如需指示，請參閱[設定分頁控制項](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls)。
 
 ## 產品SKU限制
 
@@ -197,12 +197,12 @@ ht-degree: 0%
 使用下列策略來減少產品數量(SKU)：
 
 - 最小化乘數 — 
-   - 合併網站可減少乘數。
-   - 使用自訂定價的替代產品功能來取代共用目錄與客戶群組乘數。
-   - 客戶群組和共用目錄兩者都會當做商店中有效SKU數量的乘數。
+  - 合併網站可減少乘數。
+  - 使用自訂定價的替代產品功能來取代共用目錄與客戶群組乘數。
+  - 客戶群組和共用目錄兩者都會當做商店中有效SKU數量的乘數。
 - 重新建構目錄 — 
-   - 減少指派給類別的產品數量。
-   - 減少網站、客戶群組、共用目錄、產品數量或可設定產品選項的數量，以減少SKU數量
+  - 減少指派給類別的產品數量。
+  - 減少網站、客戶群組、共用目錄、產品數量或可設定產品選項的數量，以減少SKU數量
 - 使用自訂選項而非建立個別產品，提供更多產品變數。
 - 由於每個商店或客戶群組的價格指定方式不同，因此考慮到「有效SKU」可能包含多種可能的價格排列。
 - 停用或移除未使用的系統元件，例如模組。 請參閱[解除安裝模組](../../../installation/tutorials/uninstall-modules.md)。
@@ -241,11 +241,11 @@ ht-degree: 0%
 請依照下列最佳實務，為購物車中的商品設定銷售和促銷活動：
 
 - **銷售規則（購物車價格規則）**
-   - 管理和移除未使用的規則。
-   - 新增嚴格的規則條件（如屬性或類別篩選）以獲得最有效的比對。
+  - 管理和移除未使用的規則。
+  - 新增嚴格的規則條件（如屬性或類別篩選）以獲得最有效的比對。
 - **優惠券**
-   - 移除未使用和過期的抵用券。
-   - 僅產生符合行銷活動需求所需的抵用券數目。
+  - 移除未使用和過期的抵用券。
+  - 僅產生符合行銷活動需求所需的抵用券數目。
 
 ### 受影響的產品和版本
 

@@ -6,7 +6,7 @@ role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
 source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -93,13 +93,13 @@ ht-degree: 0%
 | GRA組合中的彈性 | ![沒有圖示](../../../assets/no.svg) | ![是圖示](../../../assets/yes.svg) |
 | 模組相依性管理 | ![是圖示](../../../assets/yes.svg)僅透過`module.xml`，功能有限 | ![是圖示](../../../assets/yes.svg)透過`composer.json`進行完整相依性管理 |
 | 模組版本設定 | ![是圖示](../../../assets/yes.svg)您可以定義版本，但無法安裝特定版本 | ![是圖示](../../../assets/yes.svg)完整版本支援 |
-| 需要付費服務 | Git存放庫 | Git存放庫、私人封裝商(每年600±元) |
+| 需要付費服務 | Git存放庫 | Git存放庫、私人封裝商（每年600±元） |
 | 可能與Jira整合Bitbucket | ![是圖示](../../../assets/yes.svg) | ![是圖示](../../../assets/yes.svg) |
 | 可立即安裝的程式碼變更 | ![是圖示](../../../assets/yes.svg) | ![是圖示](../../../assets/yes.svg) |
 
 ## 要避免的解決方案
 
-1. **為您的模組`app/code`組合撰寫器和**
+1. **為您的模組**&#x200B;組合撰寫器和`app/code`
 
    導致這兩個程式碼管理樣式在您的專案中結合的所有缺點。 這增加了不必要的複雜性、不穩定和缺乏彈性。
 
