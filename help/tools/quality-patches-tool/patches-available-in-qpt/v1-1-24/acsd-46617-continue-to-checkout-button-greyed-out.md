@@ -7,12 +7,12 @@ exl-id: 8e808fce-d31c-49ef-94e5-f5c89fffaa73
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
 
-# ACSD-46617：小計大於&quot;[!UICONTROL Continue to Checkout]&quot;時，&quot;[!UICONTROL Minimum Order Amount]&quot;按鈕會變成灰色
+# ACSD-46617：小計大於&quot;[!UICONTROL Minimum Order Amount]&quot;時，&quot;[!UICONTROL Continue to Checkout]&quot;按鈕會變成灰色
 
 此ACSD-46617修補程式解決&#x200B;**[!UICONTROL Continue to Checkout]**&#x200B;按鈕灰顯的問題，即使小計大於設定的最小訂購量。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.24時，即可使用此修補程式。 修補程式ID為ACSD-46617。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。
 
@@ -37,18 +37,18 @@ ht-degree: 0%
 <u>要再現的步驟</u>：
 
 1. 前往Adobe Commerce Admin > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]**&#x200B;並設定下列專案：
-   * [!UICONTROL Enable]： *[!UICONTROL Yes]*
+   * [!UICONTROL Enable]: *[!UICONTROL Yes]*
    * &#x200B;
      [!UICONTROL Minimum Amount]: *2*
 
 1. 建立[!UICONTROL Cart Price Rule]。
-   * [!UICONTROL Coupon Code]： *[!UICONTROL TEST (optional)]*
-   * [!UICONTROL Conditions]： *[!UICONTROL Keep empty]*
-   * [!UICONTROL Actions]：
-      * [!UICONTROL Apply]： *[!UICONTROL Percent of product price discount]*
-      * &#x200B;
-        [!UICONTROL Discount Amount]: *92*
-      * [!UICONTROL Apply to Shipping Amount]： *[!UICONTROL Yes]*
+   * [!UICONTROL Coupon Code]: *[!UICONTROL TEST (optional)]*
+   * [!UICONTROL Conditions]: *[!UICONTROL Keep empty]*
+   * [!UICONTROL Actions]:
+     * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
+     * &#x200B;
+       [!UICONTROL Discount Amount]: *92*
+     * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
 1. 建立價格為$25的產品。
 1. 將產品新增至購物車。
 1. 前往購物車，選取$5 **[!UICONTROL Flat Rate shipping]**&#x200B;方法並套用優惠券代碼。
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
 
 ## 相關閱讀
@@ -76,7 +76,7 @@ ht-degree: 0%
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)的新工具。
-* [使用 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)指南中的[!UICONTROL Quality Patches Tool]，檢查您的Adobe Commerce問題是否有修補程式可用。
+* [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
 
 
-如需QPT中其他修補程式的詳細資訊，請參閱[[!DNL Quality Patches Tool]指南中的](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)：搜尋修補程式[!DNL Quality Patches Tool]。
+如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。

@@ -7,7 +7,7 @@ exl-id: 79fb3161-f56e-45f3-9933-cf95703f1554
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -40,12 +40,12 @@ ACSD-62481修補程式修正了在結帳時使用登入快顯視窗時，持續�
 
    * 導覽至&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Checkout Options]**，並將&#x200B;*[!UICONTROL Allow Guest Checkout]*&#x200B;設為&#x200B;*否*。
 
-      * 按一下&#x200B;**[!UICONTROL Save Config]**。
+     * 按一下&#x200B;**[!UICONTROL Save Config]**。
 
    * 導覽至&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Persistent Shopping Cart]** > **[!UICONTROL General Options]**，並將&#x200B;*[!UICONTROL Enable Persistence]*&#x200B;設為&#x200B;*是*。
    * 保留所有其他設定為預設值，但將&#x200B;*[!UICONTROL Clear Persistence on Sign Out]*&#x200B;變更為&#x200B;*否*。
 
-      * 按一下&#x200B;**[!UICONTROL Save Config]**。
+     * 按一下&#x200B;**[!UICONTROL Save Config]**。
 
 1. 前往「**[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Add product]**」將簡單產品加入目錄。
 
@@ -70,7 +70,7 @@ ACSD-62481修補程式修正了在結帳時使用登入快顯視窗時，持續�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的升級和修補程式>套用修補程式。
 
 ## 相關閱讀

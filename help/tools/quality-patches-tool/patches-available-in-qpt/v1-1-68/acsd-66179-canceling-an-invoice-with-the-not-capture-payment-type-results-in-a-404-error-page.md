@@ -7,7 +7,7 @@ type: Troubleshooting
 exl-id: a7c1827d-fe28-40e2-9ec6-a04b4a5d33ee
 source-git-commit: a35beeb278ac3b72701c54ac7727fd5423e687e7
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ACSD-66179修補程式修正取消以&#x200B;*[!UICONTROL Not Capture]*&#x200B;�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
 
 ## 相關閱讀

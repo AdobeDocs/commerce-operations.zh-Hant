@@ -7,7 +7,7 @@ exl-id: e1ed7a57-4054-44db-bc17-9b9056096fce
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ACSD-61522修補程式修正了來賓客戶的&#x200B;*[!UICONTROL First Name]*&
 1. 移至&#x200B;**[!UICONTROL Checkout]**。
 1. 在&#x200B;*[!UICONTROL Email Address]*&#x200B;欄位中填入&#x200B;*test1@example.com*。
 1. 在&#x200B;*[!UICONTROL First Name]*&#x200B;欄位中填入&#x200B;*<test2@example.com>*。
-1. 以&#x200B;*[!UICONTROL Last Name]*&#x200B;填滿&#x200B;*<test3@example.com>*。
+1. 以&#x200B;*<test3@example.com>*&#x200B;填滿&#x200B;*[!UICONTROL Last Name]*。
 1. 填寫其他必填欄位。
 1. 下訂單。
 
@@ -58,7 +58,7 @@ ACSD-61522修補程式修正了來賓客戶的&#x200B;*[!UICONTROL First Name]*&
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
 
 ## 相關閱讀

@@ -22,8 +22,8 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="僅限雲端上的Adobe Commerce" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce on Cloud 2.4.4版 — 2.4.9"
-hide: true
-source-git-commit: 0bc5d38693008f2203fe496773aa90c0418d566e
+nudge: true
+source-git-commit: 85ff49e8a7dbf4ee8c2eef801bd44f45db0a21a5
 workflow-type: tm+mt
 source-wordcount: 1983
 ht-degree: 0%

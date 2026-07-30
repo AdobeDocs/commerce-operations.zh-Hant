@@ -7,7 +7,7 @@ exl-id: ebd79187-2835-403b-945d-80ac34d6fb9c
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -49,20 +49,20 @@ Adobe Commerce Inventory management (MSI)模組已安裝。
    * 優先順序= 1
    * 條件：小計等於或大於&#x200B;*$75*
    * 動作：
-      * 套用至出貨金額=是
-      * 捨棄後續規則=否
-      * 免費出貨=具有相符料號的出貨
+     * 套用至出貨金額=是
+     * 捨棄後續規則=否
+     * 免費出貨=具有相符料號的出貨
 1. 建立另一個購物車價格規則：
    * 名稱= *35off*
    * 優先順序= 0
    * 抵用券=特定抵用券
    * 優惠券代碼= 35off
    * 動作：
-      * 套用=產品價格折扣百分比
-      * 折扣金額= 35
-      * 套用至出貨金額=否
-      * 捨棄後續規則=是
-      * 免運費=否
+     * 套用=產品價格折扣百分比
+     * 折扣金額= 35
+     * 套用至出貨金額=否
+     * 捨棄後續規則=是
+     * 免運費=否
 1. 開啟店面，然後新增三種產品至購物車，讓小計超過$75。
 1. 以來賓身份繼續結帳。
 1. 在送貨步驟中，選取&#x200B;**$0 — 免運費**，然後繼續付款步驟。
@@ -82,7 +82,7 @@ Adobe Commerce Inventory management (MSI)模組已安裝。
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
 
 ## 相關閱讀
@@ -90,7 +90,7 @@ Adobe Commerce Inventory management (MSI)模組已安裝。
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)的新工具。
-* [使用 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)指南中的[!UICONTROL Quality Patches Tool]，檢查您的Adobe Commerce問題是否有修補程式可用。
+* [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
 
 
-如需QPT中其他修補程式的詳細資訊，請參閱[[!DNL Quality Patches Tool]指南中的](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)：搜尋修補程式[!DNL Quality Patches Tool]。
+如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。

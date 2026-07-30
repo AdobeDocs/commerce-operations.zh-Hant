@@ -39,14 +39,14 @@ ACSD-66093修補程式修正了電子郵件地址可能輸入到客體客戶的&
 1. 以訪客客戶的身分將產品新增到購物車。
 2. 前往結帳。
 3. 將電子郵件地址填入「test1@gmail.co」。
-4. 以&quot;**[!UICONTROL First Name]**&quot;填入<test2@gmail.co>。
-5. 以&quot;**[!UICONTROL Last Name]**&quot;填入<test3@gmail.co>。
+4. 以&quot;<test2@gmail.co>&quot;填入&#x200B;**[!UICONTROL First Name]**。
+5. 以&quot;<test3@gmail.co>&quot;填入&#x200B;**[!UICONTROL Last Name]**。
 6. 填寫其他必填欄位。
 7. 下單。
 
 <u>預期結果</u>：
 
-應該會顯示驗證訊息，指出&#x200B;**[!UICONTROL First Name]**&#x200B;和&#x200B;**[!UICONTROL Last Name]**&#x200B;欄位無效，例如&#x200B;*名字無效！ 和姓氏無效！*&#x200B;且不得下訂單。
+應該會顯示驗證訊息，指出&#x200B;**[!UICONTROL First Name]**&#x200B;和&#x200B;**[!UICONTROL Last Name]**&#x200B;欄位無效，例如&#x200B;*名字無效！ 和姓氏無效！* 且不得下訂單。
 
 <u>實際結果</u>：
 
@@ -58,7 +58,7 @@ ACSD-66093修補程式修正了電子郵件地址可能輸入到客體客戶的&
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
 
 ## 相關閱讀

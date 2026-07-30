@@ -7,7 +7,7 @@ exl-id: 2ce7bde5-02a4-4989-80d6-ab1be0ca5fe9
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ Adobe Commerce （所有部署方法） 2.4.4 - 2.4.7-p2
 
 <u>要再現的步驟</u>：
 
-1. 在&#x200B;*[!DNL PayPal Express]* > **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL Sales]** > **[!UICONTROL Payment methods]** > **[!DNL PayPal]**&#x200B;中設定&#x200B;**[!UICONTROL Express checkout]**。
+1. 在&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL Sales]** > **[!UICONTROL Payment methods]** > **[!DNL PayPal]** > **[!UICONTROL Express checkout]**&#x200B;中設定&#x200B;*[!DNL PayPal Express]*。
    * [!UICONTROL Enable In-Context Checkout]可以是[!UICONTROL Yes]或[!UICONTROL NO]，此問題會在兩種情況下重現。
-1. 在&#x200B;*[!UICONTROL Cart Rule]* > **[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]**&#x200B;中建立&#x200B;**[!UICONTROL Add New Rule]**。
+1. 在&#x200B;**[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** > **[!UICONTROL Add New Rule]**&#x200B;中建立&#x200B;*[!UICONTROL Cart Rule]*。
    * 條件：如果所有這些條件皆為True： *[!UICONTROL Payment Method]*&#x200B;為&#x200B;*[!DNL PayPal Express Checkout]*。
    * 動作：任何動作。
 1. 建立產品。
@@ -59,7 +59,7 @@ Adobe Commerce （所有部署方法） 2.4.4 - 2.4.7-p2
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
 
 ## 相關閱讀
@@ -67,6 +67,6 @@ Adobe Commerce （所有部署方法） 2.4.4 - 2.4.7-p2
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)的新工具。
-* [使用 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)指南中的[!DNL Quality Patches Tool]，檢查您的Adobe Commerce問題是否有修補程式可用。
+* [使用[!DNL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
 
-如需QPT中其他修補程式的詳細資訊，請參閱[[!DNL Quality Patches Tool]指南中的](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)：搜尋修補程式[!DNL Quality Patches Tool]。
+如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。

@@ -7,7 +7,7 @@ exl-id: 8e7dd72e-c21e-46cf-8e2b-9dccedfd8b04
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -47,8 +47,8 @@ ACSD-64627修補程式修正在&#x200B;**[!UICONTROL Company Structure]**&#x200B
 1. 以公司管理員身分登入店面。
 1. 導覽至&#x200B;**[!UICONTROL Customer Account]** > **[!UICONTROL Company Structure]**&#x200B;或&#x200B;**[!UICONTROL Customer Account]** > **[!UICONTROL Company Users]**。
 1. 按一下&#x200B;**[!UICONTROL Add New User]**。
-1. 按一下&#x200B;**[!UICONTROL Upload]** custom_upload *屬性的*。
-1. 按一下&#x200B;**[!UICONTROL Select file]** image_attachment *屬性的*。
+1. 按一下&#x200B;*custom_upload*&#x200B;屬性的&#x200B;**[!UICONTROL Upload]**。
+1. 按一下&#x200B;*image_attachment*&#x200B;屬性的&#x200B;**[!UICONTROL Select file]**。
 
 <u>預期結果</u>：
 
@@ -62,7 +62,7 @@ ACSD-64627修補程式修正在&#x200B;**[!UICONTROL Company Structure]**&#x200B
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
 * 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
 
 ## 相關閱讀
