@@ -4,13 +4,13 @@ description: 套用ACSD-62146修補程式，修正啟用地址搜尋且「客戶
 feature: Customers, Checkout
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3de3de80383372d0e3bec5485fd65b9d70fe8860
+exl-id: 2a2f1afe-8a48-4beb-b78d-a894b685717d
+source-git-commit: 4e6eaf9519fd74e407c25992d367babfddf404a7
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62146：選取的帳單地址會在結帳付款頁面上消失
 
@@ -28,7 +28,7 @@ ACSD-62146修補程式修正了啟用地址搜尋且[!UICONTROL Number of Custom
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -58,8 +58,8 @@ ACSD-62146修補程式修正了啟用地址搜尋且[!UICONTROL Number of Custom
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)。
 
 ## 相關閱讀
 
