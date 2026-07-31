@@ -3,7 +3,8 @@ title: PHP設定
 description: 按照以下步驟安裝必要的PHP擴充功能，並為Adobe Commerce的內部部署安裝設定必要的PHP設定。
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 >
 >支援的PHP版本因Adobe Commerce發行版本而異。 請參閱[系統需求](../system-requirements.md)，以取得您所安裝之發行版本所支援的確切PHP版本。
 
-如需雲端組態指南，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/php-settings)。
+如需雲端組態指南，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings)。
 
 ## PHP程式控制
 
@@ -77,9 +78,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Adobe建議下列事項：
 
-   - 正在編譯程式碼或部署靜態資產，`1G`
-   - 偵錯，`2G`
-   - 測試，`~3-4G`
+  - 正在編譯程式碼或部署靜態資產，`1G`
+  - 偵錯，`2G`
+  - 測試，`~3-4G`
 
 - 將PHP `realpath_cache_size`和`realpath_cache_ttl`的值增加到建議的設定：
 
@@ -206,8 +207,8 @@ PHP OPcache設定通常位於`php.ini`或`opcache.ini`中。 位置可能取決�
 請參閱下列Adobe Commerce支援文章，以取得疑難排解PHP問題的說明：
 
 - [在瀏覽器中存取Adobe Commerce時，出現PHP版本錯誤或404錯誤](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [PHP設定錯誤](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [PHP版本整備檢查問題](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [常見的PHP嚴重錯誤和解決方案](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [PHP設定錯誤](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [PHP版本整備檢查問題](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [常見的PHP嚴重錯誤和解決方案](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2026-05-11 20:38:54 -->

@@ -3,7 +3,8 @@ title: 為您的搜尋引擎設定Apache
 description: 請依照下列步驟，使用Apache Web Server設定搜尋引擎，以供Adobe Commerce的內部部署安裝。
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 0%
@@ -20,7 +21,7 @@ ht-degree: 0%
 >
 >2.4.4版本新增OpenSearch支援。 OpenSearch是Elasticsearch的相容復本。 如需詳細資訊，請參閱[將Elasticsearch移轉至OpenSearch](../../../upgrade/prepare/opensearch-migration.md)。
 
-本節探討如何將Apache設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與Apache[&#128279;](#secure-communication-with-apache)的安全通訊中討論。
+本節探討如何將Apache設定為&#x200B;*不安全* Proxy，讓Adobe Commerce能夠使用在此伺服器上執行的搜尋引擎。 本節不討論設定HTTP基本驗證；這將在與Apache](#secure-communication-with-apache)的[安全通訊中討論。
 
 >[!NOTE]
 >
@@ -130,11 +131,11 @@ htpasswd -c /usr/local/apache/password/.<password file name> <username>
 
 * `<username>`可以是：
 
-   * 設定cron：網頁伺服器使用者或其他使用者。
+  * 設定cron：網頁伺服器使用者或其他使用者。
 
   在此範例中，我們使用Web伺服器使用者，但使用者的選擇由您決定。
 
-   * 設定Elasticsearch：在此範例中，使用者名為`magento_elasticsearch`
+  * 設定Elasticsearch：在此範例中，使用者名為`magento_elasticsearch`
 
 * `<password file name>`必須為隱藏的檔案（以`.`開頭），且應反映使用者的名稱。 如需詳細資訊，請參閱本節稍後的範例。
 

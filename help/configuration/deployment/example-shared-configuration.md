@@ -2,9 +2,10 @@
 title: 使用共用設定的範例
 description: 請參閱範例，瞭解如何使用共用組態檔來變更開發系統中的設定。
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -84,7 +85,7 @@ ht-degree: 0%
 
    您剛才設定的選項顯示如下：
 
-   在Admin![&#128279;](../../assets/configuration/split-deploy-not-editable.png)中無法編輯設定選項
+   在Admin](../../assets/configuration/split-deploy-not-editable.png)中無法編輯![設定選項
 
 >[!INFO]
 >

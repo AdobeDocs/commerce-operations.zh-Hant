@@ -2,7 +2,8 @@
 title: 進階內部部署安裝
 description: 瞭解Adobe Commerce內部部署的進階安裝案例。 探索複雜的設定和自訂設定選項。
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '2527'
 ht-degree: 0%
@@ -119,7 +120,7 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 您可以在安裝期間或安裝後建立「管理員」使用者。 如果您在安裝期間建立使用者，則需要所有管理員認證變數。 請參閱[範例localhost安裝](#sample-localhost-installations)。
 
-下清單格提供許多（但並非全部）可用的安裝引數。 如需完整清單，請參閱[命令列工具參考](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises)。
+下清單格提供許多（但並非全部）可用的安裝引數。 如需完整清單，請參閱[命令列工具參考](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises)。
 
 | 名稱 | 值 | 必填？ |
 |--- |--- |--- |
@@ -246,9 +247,9 @@ bin/magento setup:install --<option>=<value> ... --<option>=<value>
 
 * 管理員具有下列屬性：
 
-   * 名字和姓氏為`Magento User`
-   * 使用者名稱是`admin`，密碼是`admin123`
-   * 電子郵件地址為`user@example.com`
+  * 名字和姓氏為`Magento User`
+  * 使用者名稱是`admin`，密碼是`admin123`
+  * 電子郵件地址為`user@example.com`
 
 * 預設語言為`en_US` （美式英文）
 * 預設貨幣為美元
@@ -314,9 +315,9 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 * 管理員具有下列屬性：
 
-   * 名字和姓氏為`Magento User`
-   * 使用者名稱是`admin`，密碼是`admin123`
-   * 電子郵件地址為`user@example.com`
+  * 名字和姓氏為`Magento User`
+  * 使用者名稱是`admin`，密碼是`admin123`
+  * 電子郵件地址為`user@example.com`
 
 * 預設語言為`en_US` （美式英文）
 * 預設貨幣為美元

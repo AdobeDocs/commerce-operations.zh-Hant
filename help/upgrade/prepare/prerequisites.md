@@ -2,9 +2,10 @@
 title: 完成必要條件
 description: 完成這些先決條件步驟，準備您的Adobe Commerce專案以進行升級。
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '1985'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->對於雲端基礎結構專業專案上的Adobe Commerce，您必須建立[支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)票證，才能在中繼和生產環境中安裝或更新服務。 指示所需的服務變更，並將更新的`.magento.app.yaml`和`services.yaml`檔案及PHP版本加入票證中。 雲端基礎結構團隊更新您的專案最多可能需要48小時的時間。 請參閱[支援的軟體與服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services)。
+>對於雲端基礎結構專業專案上的Adobe Commerce，您必須建立[支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)票證，才能在中繼和生產環境中安裝或更新服務。 指示所需的服務變更，並將更新的`.magento.app.yaml`和`services.yaml`檔案及PHP版本加入票證中。 雲端基礎結構團隊更新您的專案最多可能需要48小時的時間。 請參閱[支援的軟體與服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services)。
 
 ## 確認已安裝支援的搜尋引擎
 
