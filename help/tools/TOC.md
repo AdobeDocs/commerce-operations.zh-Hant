@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: e52becee703b046f5ffb00b01ca780311d711ec8
+source-git-commit: d8ad9344c866eeffeda81e45ebe7de9376905638
 workflow-type: tm+mt
-source-wordcount: '10517'
+source-wordcount: '10538'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
   - [Adobe Commerce的管理警報： CPU警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質修補工具 {#quality-patches-tool}
   - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-  - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+  - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
   - [使用情況](quality-patches-tool/usage.md)
   - [發行說明](quality-patches-tool/release-notes.md)
   - Quality Patches Tool提供的修補程式 {#patches-available-in-qpt}
@@ -902,8 +902,8 @@ ht-degree: 0%
       - [ACSD-67603：針對已啟用影像包含功能的產品，產生Sitemap需要較長的處理時間](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
       - [ACSD-67093：使用日期範圍篩選器透過GraphQL擷取訂單時，傳回錯誤結果](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
       - [ACSD-67652：將產品狀態於GraphQL呼叫中傳回為無庫存狀態，且子產品和父產品有庫存](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-      - [ACSD-60624：上傳影像失敗，因為 [!DNL Page Builder]中的影像、橫幅和滑桿區段有空白內容](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
-      - [ACSD-67904：如果城市名稱包含數字(0-9)、&amp;符號(&amp;)、句點(.)或括弧()，則無法下訂單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
+      - [ACSD-60624：上傳影像失敗，因為 [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)中的影像、橫幅和滑桿區段有空白內容
+      - [ACSD-67904：如果城市名稱包含數字(0-9)、&amp;符號(&amp;)、句點(.)或括弧()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)，則無法下訂單
       - [ACSD-67459：無法匯入說明長度超過65,536個字元的產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
     - v1.1.72 {#v1-1-72}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -1044,6 +1044,7 @@ ht-degree: 0%
       - [ACP2E-4709：當頁面階層包含雙引號時，CMS頁面不會儲存在頁面產生器中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4547：當報價未指派給使用者的共用目錄時，管理員無法將預設目錄產品新增到報價中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
       - [ACP2E-4805：當第一個可銷售子項稍後出現在清單中時，可設定產品的簽出請求速度會變慢](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
       - [ACP2E-4748：獎勵點有效期限在具有大量獎勵點歷史記錄的商店上執行緩慢](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
       - [ACP2E-4875：在開啟具有大型通訊錄的客戶帳戶時，管理員使用者會登出](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
@@ -1067,7 +1068,7 @@ ht-degree: 0%
   - [警示標籤](observation-for-adobe-commerce/alerts-tab.md)
   - [WAF標籤](observation-for-adobe-commerce/waf-tab.md)
   - [CDN索引標籤](observation-for-adobe-commerce/cdn-tab.md)
-  - [&#x200B; [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
+  - [ [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
   - [Cron標籤](observation-for-adobe-commerce/cron-tab.md)
   - [索引標籤](observation-for-adobe-commerce/indexing-tab.md)
   - [快速檢視標籤](observation-for-adobe-commerce/oac-quickview-tab.md)
@@ -1095,6 +1096,6 @@ ht-degree: 0%
     - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
     - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
   - 資源 {#resources}
-    - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=zh-Hant)
+    - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
     - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
