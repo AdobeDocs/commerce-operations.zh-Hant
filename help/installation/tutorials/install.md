@@ -2,9 +2,10 @@
 title: 安裝Adobe Commerce
 description: 請依照下列步驟，在您擁有的基礎設施上安裝Adobe Commerce。
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '2281'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -212,9 +213,9 @@ magento setup:install --<option>=<value> ... --<option>=<value>
 
 * 管理員具有下列屬性：
 
-   * 名字和姓氏為`Commerce User`
-   * 使用者名稱是`admin`，密碼是`admin123`
-   * 電子郵件地址為`user@example.com`
+  * 名字和姓氏為`Commerce User`
+  * 使用者名稱是`admin`，密碼是`admin123`
+  * 電子郵件地址為`user@example.com`
 
 * 預設語言為`en_US` （美式英文）
 * 預設貨幣為美元
@@ -280,9 +281,9 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 * 管理員具有下列屬性：
 
-   * 名字和姓氏為`Commerce User`
-   * 使用者名稱是`admin`，密碼是`admin123`
-   * 電子郵件地址為`user@example.com`
+  * 名字和姓氏為`Commerce User`
+  * 使用者名稱是`admin`，密碼是`admin123`
+  * 電子郵件地址為`user@example.com`
 
 * 預設語言為`en_US` （美式英文）
 * 預設貨幣為美元

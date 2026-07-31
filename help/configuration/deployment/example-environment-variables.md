@@ -2,7 +2,8 @@
 title: 使用環境變數的範例
 description: 請參閱如何使用環境變數在開發系統中設定共用、系統專用和敏感值的範例。
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 0%

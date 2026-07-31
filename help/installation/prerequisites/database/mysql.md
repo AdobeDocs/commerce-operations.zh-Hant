@@ -2,9 +2,10 @@
 title: MySQL准則
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝安裝並設定MySQL和MariaDB。
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -83,7 +84,7 @@ SHOW VARIABLES LIKE 'max_allowed_packet';
 
 ### 預設ORDER BY行為
 
-在8.0之前，專案是依外部索引鍵排序。 預設排序順序取決於使用的引擎。
+在8.0之前，專案是依外部索引鍵排序。預設排序順序取決於使用的引擎。
 如果您的程式碼相依於特定排序，請一律指定排序順序。
 
 ### GROUP BY的已過時ASC和DESC限定詞

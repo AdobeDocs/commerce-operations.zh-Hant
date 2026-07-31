@@ -23,9 +23,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="僅限雲端上的Adobe Commerce" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce on Cloud 2.4.4版 — 2.4.9"
 nudge: true
-source-git-commit: 7512d5cd3fa1917c87b53e25ca69a3dc3c813727
+source-git-commit: 6ecb6002982432b8d67c122569043da55939d915
 workflow-type: tm+mt
-source-wordcount: 1985
+source-wordcount: 1981
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Adobe企業安全性原則要求雲端上Adobe Commerce的所有Adobe代管環�
 
 ### 動作1：升級協力廠商軟體相依性
 
-視軟體而定，所有不支援的軟體相依性都必須依照下表所共用的時間表進行升級。 您可以在[雲端主控台](https://console.adobecommerce.com/)中檢視環境，並使用這些[指示](#check-software-dependency-versions)檢查執行中的相依性版本。 軟體相依性升級適用於Cloud 2.4.4到2.4.9版的所有Adobe Commerce。
+視軟體而定，所有不支援的軟體相依性都必須依照下表所共用的時間表進行升級。 您可以在[雲端主控台](https://console.adobecommerce.com/)中檢視環境，並使用這些[指示](#how-to-check-the-versions-you-are-running)檢查執行中的相依性版本。 軟體相依性升級適用於Cloud 2.4.4到2.4.9版的所有Adobe Commerce。
 
 | 相依性 | 版本 | 必須升級至 | 執行日期 |
 | --- | --- | --- | --- |
@@ -136,7 +136,7 @@ Adobe企業安全性原則要求雲端上Adobe Commerce的所有Adobe代管環�
 
 Adobe將協助您直接升級這些軟體相依性。
 
-* **快速入門：**&#x200B;開啟[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，其中列出您需要升級的環境和相關的相依性。 請在執法日期前至少30天開啟票證，以便我們的團隊能排程工作。
+* **快速入門：**&#x200B;開啟[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)，其中列出您需要升級的環境和相關的相依性。 請在執法日期前至少30天開啟票證，以便我們的團隊能排程工作。
 
 * **停機時間：** Adobe會在排程時與您確認預期的視窗。
 
@@ -187,7 +187,7 @@ Adobe將協助您直接升級這些軟體相依性。
 
 * **升級相容性報告：** Adobe提供詳細報告，明確說明升級至Adobe Commerce 2.4.9版所需的專案，包括時間和成本範圍。 [產生您的升級相容性報告](https://supportinsights.adobe.com/commerce/tab/main)。
 
-* **軟體相依性升級：**&#x200B;由於您無法直接升級軟體相依性，請[開啟Adobe的支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"}為您處理升級。 如需詳細資訊，請參閱[設定服務](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}。
+* **軟體相依性升級：**&#x200B;由於您無法直接升級軟體相依性，請[開啟Adobe的支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}為您處理升級。 如需詳細資訊，請參閱[設定服務](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}。
 
 **如果您選擇移轉至Adobe Commerce as a Cloud Service**
 

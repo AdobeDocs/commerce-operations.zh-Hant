@@ -3,7 +3,8 @@ title: PHP設定
 description: 按照以下步驟安裝必要的PHP擴充功能，並為Adobe Commerce的內部部署安裝設定必要的PHP設定。
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -77,9 +78,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Adobe建議下列事項：
 
-   - 正在編譯程式碼或部署靜態資產，`1G`
-   - 偵錯，`2G`
-   - 測試，`~3-4G`
+  - 正在編譯程式碼或部署靜態資產，`1G`
+  - 偵錯，`2G`
+  - 測試，`~3-4G`
 
 - 將PHP `realpath_cache_size`和`realpath_cache_ttl`的值增加到建議的設定：
 
