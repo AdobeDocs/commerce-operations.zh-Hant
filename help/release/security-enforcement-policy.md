@@ -23,9 +23,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="僅限雲端上的Adobe Commerce" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce on Cloud 2.4.4版 — 2.4.9"
 nudge: true
-source-git-commit: 85ff49e8a7dbf4ee8c2eef801bd44f45db0a21a5
+source-git-commit: 7512d5cd3fa1917c87b53e25ca69a3dc3c813727
 workflow-type: tm+mt
-source-wordcount: 1983
+source-wordcount: 1985
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ Adobe提供的工具可減少移轉至Adobe Commerce as a Cloud Service的成本
 
 * **移轉評估：**&#x200B;評定自訂的移轉複雜性。 請參閱[移轉評估工具總覽](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/migration/migration-tools/assessment)。
 
-* **資料移轉：** [大量與增量資料移轉工具](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data)會將您的資料移至新的Adobe Commerce as a Cloud Service環境。
+* **資料移轉：** [大量與增量資料移轉工具](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool)會將您的資料移至新的Adobe Commerce as a Cloud Service環境。
 
 * Adobe的[AI輔助移轉和開發人員工具](https://developer.adobe.com/commerce/extensibility/developer-agent/) （包括&#x200B;**[!DNL Adobe Developer App Builder]**&#x200B;和&#x200B;**[!DNL Commerce Storefront powered by Edge Delivery Services]**）可協助加速店面現代化及擴充功能重新平台。
 

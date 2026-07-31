@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: e52becee703b046f5ffb00b01ca780311d711ec8
+source-git-commit: d8ad9344c866eeffeda81e45ebe7de9376905638
 workflow-type: tm+mt
-source-wordcount: '10517'
+source-wordcount: '10538'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,7 @@ ht-degree: 0%
       - [ACP2E-4709：當頁面階層包含雙引號時，CMS頁面不會儲存在頁面產生器中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4547：當報價未指派給使用者的共用目錄時，管理員無法將預設目錄產品新增到報價中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
       - [ACP2E-4805：當第一個可銷售子項稍後出現在清單中時，可設定產品的簽出請求速度會變慢](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
       - [ACP2E-4748：獎勵點有效期限在具有大量獎勵點歷史記錄的商店上執行緩慢](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
       - [ACP2E-4875：在開啟具有大型通訊錄的客戶帳戶時，管理員使用者會登出](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
