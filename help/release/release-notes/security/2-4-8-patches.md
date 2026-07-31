@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.8-p5安全性版本針對2.4.8舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-49](https://helpx.adobe.com/tw/security/products/magento/apsb26-49.html)。
 
 {{b2b-patches}}
 
@@ -54,7 +54,7 @@ Adobe Commerce 2.4.8現在與RabbitMQ 4.2相容，後者處理RabbitMQ 4.1支援
 
 Adobe Commerce 2.4.8-p4安全性版本針對2.4.8舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-05](https://helpx.adobe.com/tw/security/products/magento/apsb26-05.html)。
 
 {{b2b-patches}}
 
@@ -74,7 +74,7 @@ Adobe Commerce 2.4.8已更新，以支援Composer 2.9.x，同時繼續與Compose
 
 Adobe Commerce 2.4.8-p3安全性版本針對2.4.8舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/tw/security/products/magento/apsb25-94.html)。
 
 {{b2b-patches}}
 
@@ -100,7 +100,7 @@ Adobe Commerce 2.4.8-p3安全性版本針對2.4.8舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.8-p2安全性版本針對2.4.8舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-71](https://helpx.adobe.com/tw/security/products/magento/apsb25-71.html)。
 
 {{b2b-patches}}
 
@@ -108,7 +108,7 @@ Adobe Commerce 2.4.8-p2安全性版本針對2.4.8舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.8-p1安全性版本針對2.4.8舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-50](https://helpx.adobe.com/tw/security/products/magento/apsb25-50.html)。
 
 {{b2b-patches}}
 
@@ -132,7 +132,7 @@ Adobe Commerce 2.4.8-p1安全性版本針對2.4.8舊版中發現的漏洞提供�
 
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110和VULN-31547的修正也以獨立修補程式的形式提供。 如需詳細資訊，請參閱[知識庫文章](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)。
+CVE-2025-47110和VULN-31547的修正也以獨立修補程式的形式提供。 如需詳細資訊，請參閱[知識庫文章](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)。
 
 >[!ENDSHADEBOX]
 
