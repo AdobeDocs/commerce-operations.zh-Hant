@@ -4,9 +4,9 @@ description: 瞭解如何透過更新PHP Readlpath快取設定以使用建議的
 role: Developer
 feature: Best Practices, Cache
 exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: bdb900e81b3088ac452b7bfb975d5a68ecc44e7e
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '187'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 Realpath快取會快取參照之檔案名稱的真實檔案系統路徑，而非每次都查詢。 每次執行各種檔案功能或需要檔案並使用相對路徑時，PHP都必須尋找該檔案真正存在的位置。
 
-若要改善Commerce效能，請使用下列建議的設定來設定`realpath_cache`檔案中的`php.ini`設定：
+若要改善Commerce效能，請使用下列建議的設定來設定`php.ini`檔案中的`realpath_cache`設定：
 
-- 將快取大小設定為10 MB (`realpath cache_size=10M`)
+- 將快取大小設定為10 MB (`realpath_cache_size=10M`)
 - 將存留時間(ttl)設定為7200秒(`realpath_cache_ttl=7200`)
 
 如需組態指示，請參閱[如何設定PHP選項](../../../installation/prerequisites/php-settings.md#how-to-set-php-options)。
@@ -35,6 +35,6 @@ Realpath快取會快取參照之檔案名稱的真實檔案系統路徑，而非
 
 - [內部部署： PHP設定](../../../performance/software.md#php-settings)
 - 在雲端基礎結構上：
-   - [資料庫最佳實務](database-on-cloud.md)
-   - [Magento Commerce Cloud中最常見的資料庫問題](../maintenance/resolve-database-performance-issues.md)
+  - [資料庫最佳實務](database-on-cloud.md)
+  - [Magento Commerce Cloud中最常見的資料庫問題](../maintenance/resolve-database-performance-issues.md)
 - [索引器「依排程更新」可最佳化Magento效能](../maintenance/indexer-configuration.md)
