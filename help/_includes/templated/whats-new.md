@@ -1,7 +1,7 @@
 ---
-source-git-commit: 462c3bcd5e4359d2be1a8f112c2dc50d3b8825bd
+source-git-commit: 05769de0613c19ab0b0a008db523a380d0b62d5b
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,110 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年7月31日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547">ACP2E-4547之QPT 1.1.82修正的詳細說明：當報價未指派給使用者的共用目錄</a>時，管理員無法將預設目錄產品新增至報價單。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6d0313c01e979d3d4bd3e781e2f0e9c336bbd8c5">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月30日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/security-enforcement-policy">安全性原則：雲端上的Adobe Commerce客戶所需動作和截止日期</a>，以說明在執行不支援版本或協力廠商軟體相依性的雲端部署上升級Adobe Commerce的需求、時間表和指示。</p>
+</td>
+      <td>
+        新主題
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b7649aae1f8cab020c1081db2b2363bca22adfed">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月28日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805">ACP2E-4805的QPT 1.1.82修正的詳細說明：當第一個可銷售子項稍後出現在清單</a>中時，可設定產品的簽出請求速度會變慢。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1b5fb4826f6599d7b7609dedfeb545f29454ba4d">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748">ACP2E-4748的QPT 1.1.82修正的詳細說明：在擁有大量獎勵點歷程記錄</a>的商店中，獎勵點到期執行速度緩慢。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/30fe149f9743ceca7f40374246b4fc9b9503c590">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875">ACP2E-4875的QPT 1.1.82修正的詳細說明：開啟具有大型通訊錄的客戶帳戶時，管理員使用者會登出</a>。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3174f84e0a8c64aaed50cc075a9287bc011778ef">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月27日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview">概觀：品質修補工具(QPT) v1.1.82</a>。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ddfb8e85d015b8ab675a3af56cf5d2bb72e535c4">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月23日
 
@@ -575,188 +679,6 @@ ht-degree: 1%
         新主題qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e5aa6a001b0c96b2d0489a444c227a8f0d406675">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月2日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/versions">已發行版本</a>，附帶2.4.4和2.4.5發行系列（2027年5月）的其他安全性修正布建結束日期。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7457647b2fc4c0a4786146a9eee74b2050bf5ad9">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月1日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513之QPT 1.1.78修正的詳細說明：過期的CAPTCHA影像不會從系統</a>中移除。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/86d06d83592f40bd181b30158cb9d83a2e963b07">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531">ACP2E-4531的QPT 1.1.79修正的詳細說明：子頁面URL索引鍵變更時，CMS階層不會更新階層URL</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0a726754a6e171a60a07ccedf76db7505f19706a">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505的QPT 1.1.79修正的詳細說明：在重複的瀏覽器索引標籤</a>中儲存過時資料的類別會有循環類別相依性。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bc87b7024550f49756be23108030fe7bdd571855">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>針對2.4.8至2.4.4最新修補程式版本，<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>將內部部署Adobe Commerce支援的Nginx版本從1.28更新至1.30。 雲端基礎結構上的Adobe Commerce繼續使用Nginx 1.28。</p>
-</td>
-      <td>
-        技術
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e407df8cff6711d69f0dea5bceff031123e1bee6">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>針對v2.4.9的「內部部署」索引標籤更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>中的MariaDB和Nginx版本。</p>
-</td>
-      <td>
-        技術
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96653313a98e9fe2e12b26236e0a985049ec523">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月29日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720的QPT 1.1.79修正詳細說明：免費送貨購物車價格規則不會個別重設固定價格套裝產品的送貨專案</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8aec766f7377e1ed5a08987a433e676794fc2a59">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/upgrade-guide/journey/implementation">升級分析指南</a>中的系統相依性版本。</p>
-</td>
-      <td>
-        技術
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dd93d4c8f52d0852f0459e234d66fda2063b6bee">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月28日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增適用於<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528">ACP2E-4528的QPT 1.1.78修正的詳細說明：客戶地址城市驗證錯誤處理正斜線(/)和無效字元，例如！、''、#和？</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7cd24cd0182fc191f64733c2bac361404f9f9a08">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月27日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411">ACP2E-4411的QPT 1.1.79修正的詳細說明：多貨幣設定</a>中，套件產品價格在產品詳細資料頁面與購物車之間顯示不正確的稅金與貨幣值。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29ef4059b5ca8b48c628c396771659a39413573e">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110">ACP2E-4110的QPT 1.1.79修正的詳細說明：以非預設貨幣</a>，在PDP/PLP和購物車之間捆綁特價的產品價格。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0133d7598293f529b285737c6ef51613dc5bd826">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475">ACP2E-4475的QPT 1.1.79修正的詳細說明：訂單或價格篩選不適用於無存貨的套件組合產品</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2728ac1f484659b1db69b537640e3a5da8f965a7">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603">ACP2E-4603的QPT 1.1.79修正的詳細說明：目錄許可權產品重新索引會留下過時的許可權索引列和MySQL死結</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e8f56414b758832c77e7f2f93009df527f506c5b">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698">AC-10698之QPT 1.1.79修正的詳細說明：交易價格與總計不會傳送至Google標籤</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21979ca7c9dd21a871c22271603bcd09b9dfd29a">認可</a></td>
     </tr>
   </tbody>
 </table>
