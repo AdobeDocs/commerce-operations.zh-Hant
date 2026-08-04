@@ -2,9 +2,9 @@
 title: 共擔責任安全性與營運模式
 description: 瞭解在雲端基礎結構專案中，Adobe Commerce中涉及的每一方的安全性責任。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 7dcd7f79417df28402a29e1e52d99eb288e8c6b9
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3270'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ Adobe負責下列工作：
 >
 >* [軟體生命週期原則](../release/lifecycle-policy.md) — 支援終止日期、延長支援及僅限安全性的轉換規定
 >* [雲端版本升級執行原則](../release/version-upgrade-enforcement-policy.md) — 執行日期和必要的動作
+>* [安全性與合規性通知](../release/security-enforcement-policy.md) — Cloud 2.4.4到2.4.9版上Adobe Commerce的必要動作和截止日期
 
 {{supported-versions-only}}
 
@@ -99,9 +100,9 @@ Adobe也會確保商家基礎建設的可用性，如適用的SLA中所商定。
 * 維護商戶在雲端基礎結構應用程式上連線至Adobe Commerce的任何系統或網路的安全性
 * 針對各自廠商主動支援的版本或Adobe主動支援的版本，維護所有平台服務、第三方相依性和Adobe Commerce服務擴充功能。 其中包括：
 
-   * 基礎架構服務，例如，資料庫、快取、搜尋、PHP執行階段和Web伺服器
-   * Adobe Commerce服務擴充功能
-   * 所有協力廠商擴充功能與自訂整合
+  * 基礎架構服務，例如，資料庫、快取、搜尋、PHP執行階段和Web伺服器
+  * Adobe Commerce服務擴充功能
+  * 所有協力廠商擴充功能與自訂整合
 
   Adobe不支援執行不支援版本之部署。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)和[產品可用性矩陣](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
 

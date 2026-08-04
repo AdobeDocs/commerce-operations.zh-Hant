@@ -2,9 +2,9 @@
 title: 安全性與合規性
 description: 瞭解您的Adobe Commerce專案的安全性、隱私權和合規性資源。 瞭解如何維護安全環境並符合法規要求。
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 0%
 - [Adobe產品安全性](https://helpx.adobe.com/tw/security.html)：瞭解Adobe Commerce的最新修補程式、安全性更新和最佳實務。
 - [Adobe信任中心](https://www.adobe.com/trust.html)：存取所有Adobe雲端服務運作狀況、安全性、隱私權及法規遵循的最新可用資訊。
 - [全網站分析工具](../tools/site-wide-analysis-tool/dashboard.md)：檢視簡化的Adobe Commerce網站安全性深入分析，包括安全性掃描、服務終止以及安全性建議。
+- [安全性與合規性通知](../release/security-enforcement-policy.md)：瞭解Adobe Commerce在Cloud 2.4.4到2.4.9版本上的必要動作和截止日期，以保持安全性與合規性。
 
 ## 合規性
 
