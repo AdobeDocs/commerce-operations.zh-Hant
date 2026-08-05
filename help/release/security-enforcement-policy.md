@@ -1,5 +1,5 @@
 ---
-title: 安全性與法規遵循：必要的動作與截止日期
+title: 確保安全和合規的必要動作和截止日期
 description: 瞭解雲端版本和軟體相依性不支援的Adobe Commerce的安全性強制執行，包括截止日期、所需行動和風險。
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -21,16 +21,16 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="僅限雲端上的Adobe Commerce" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce on Cloud 2.4.4到2.4.9版"
-color: blue
-source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
+nudge: true
+source-git-commit: 9e4142150097f7d1109929c3785e3448288bb8ff
 workflow-type: tm+mt
-source-wordcount: 2040
+source-wordcount: 2144
 ht-degree: 0%
 
 ---
 
 
-# 安全性與法規遵循通知：必要的動作與截止日期
+# 確保安全和合規的必要動作和截止日期
 
 >[!NOTE]
 >
@@ -38,27 +38,34 @@ ht-degree: 0%
 >
 > 此指引不適用於[!DNL Adobe Commerce as a Cloud Service] (SaaS)環境或Adobe Commerce內部部署。
 
-網路安全的格局正在發生根本性的改變，企業已具備的防禦機制需要快速演化。 安全性對電子商務企業至關重要，因為線上交易需要他們處理敏感的個人和業務資料，在違規事件中使他們面臨財務和身分風險。 PaaS電子商務環境在Adobe和我們的客戶之間具有共同的安全責任模式，客戶負責維護應用程式層相依性、與第三方軟體的整合以及部署管道。
+網路安全的格局正在發生根本性的改變，企業已具備的防禦機制需要快速演化。 安全性對電子商務企業至關重要，因為線上交易需要他們處理敏感的個人和業務資料，在違規事件中使他們面臨財務和身分風險。 PaaS電子商務環境具有共同責任模式，客戶負責應用程式層相依性的安全性與維護、與協力廠商軟體的整合以及部署管道。
 
-Adobe會主動處理不斷演變的風險，並確保我們在雲端上設定Adobe Commerce的客戶，以達到最高的安全性標準。 其中包括：
+在Adobe，我們仍致力解決持續演變的風險，並確保在雲端上設定Adobe Commerce的客戶符合最高安全性標準。 其中包括：
 
-* 每月和隔離的安全性修正，針對關鍵弱點提供更快速且可預測的保護
-* 提供長期支援的年度修補程式發行
-* 透過3年的支援期間，簡化每個版本的生命週期原則
+1. 每月進行隔離式安全性修正，針對關鍵弱點提供更快速且可預測的保護
 
-雖然Adobe會採取必要步驟來保護客戶的安全，但Adobe Commerce on Cloud的[共用責任模式](../security-and-compliance/shared-responsibility.md)要求我們的客戶一律使用Adobe Commerce on Cloud的支援版本和協力廠商軟體、套用應用程式修補程式、稽核協力廠商擴充功能，以及安全自訂程式碼。 已超過廠商支援期限的軟體不再接收安全性修補程式，因此軟體中的安全性問題無法解決。 繼續在不支援的軟體上執行您的電子商務店面，會產生真實且不斷增加的安全性風險。
+2. Commerce的雲端修補程式套件可確保提供Adobe修補程式和修補程式，改善與雲端環境的整合，並允許快速解決嚴重問題
 
-本頁面概述雲端Adobe Commerce （版本2.4.4到2.4.9）上所有客戶為確保其電子商務環境安全所需採取的行動、強制執行日期，以及未符合安全需求時的期望。
+3. 生命週期執行原則
 
-## 維護安全、合規的環境所需的動作
+4. 如有必要，請使用非週期Hotfix
 
-為了確保您的電子商務環境安全且相容，Adobe Commerce on Cloud的所有客戶都必須使用：
+5. 提供長期支援的年度修補程式發行
 
-1. 所有協力廠商軟體相依性的支援版本：PHP、MariaDB、Elasticsearch/OpenSearch、Redis和RabbitMQ
 
-1. 雲端上的Adobe Commerce的安全且支援版本
+雖然Adobe會採取必要步驟來保障客戶的安全，但Adobe Commerce on Cloud的共同責任模式要求，我們的客戶必須一律使用Adobe Commerce on Cloud的支援版本和協力廠商軟體、套用應用程式修補程式、稽核協力廠商擴充功能，以及安全自訂程式碼。 已超過廠商支援期限的軟體不再接收安全性修補程式，因此軟體中的安全性問題仍未解決。繼續在不支援的軟體上執行您的電子商務店面，會產生真實且不斷增加的安全性風險。
 
-請依照下列准則檢查您是否需要採取動作來保護雲端環境上的Adobe Commerce。 不符合下表1所列截止日期之安全性需求的環境，將會暫停傳入流量，使店面離線。 若您對完成期限有任何顧慮，且需要短期的延長時間，請連絡您的客戶團隊或Adobe [支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)。
+本頁面概述所有雲端Adobe Commerce （2.4.4版至2.4.9版）客戶為確保其電子商務環境安全所需採取的行動，以及執行日期，和不符合安全需求時的期望。
+
+## 維護安全且合規的環境所需的動作
+
+為了確保您的電子商務環境安全並減輕風險，雲端Adobe Commerce （版本2.4.4至2.4.9）上的所有客戶都必須使用：
+
+1. 所有協力廠商軟體相依專案(PHP、MariaDB、Elasticsearch、OpenSearch、Redis、RabbitMQ)的支援版本
+
+1. 雲端上安全且受支援的Adobe Commerce版本。 完整支援的版本包括2.4.8、2.4.9或最新可用版本。 請參閱生命週期原則[這裡](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy)。
+
+請依照下列准則檢查您是否需要採取動作來保護雲端環境上的Adobe Commerce。 不符合下表1所列截止日期之安全性需求的環境，將會暫停傳入流量，使店面離線。 若您對完成截止日期有任何顧慮，且需要短期的延長時間，請連絡您的客戶團隊或[Adobe支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)。
 
 **表1：安全性需求與截止日期**
 
@@ -70,19 +77,20 @@ Adobe會主動處理不斷演變的風險，並確保我們在雲端上設定Ado
 
 ## 保護環境的詳細步驟
 
+請讓您的電子商務管理員進行以下步驟。
+
 ### 動作1：驗證及升級協力廠商軟體相依性
 
-檢查您的環境是否正在執行下列協力廠商軟體相依性的廠商支援版本：PHP、MariaDB、Elasticsearch/OpenSearch、Redis、RabbitMQ。 如果沒有，請將軟體相依性升級至支援的版本。
+檢查您的環境是否正在執行下列協力廠商軟體相依性的廠商支援版本：PHP、MariaDB、Elasticsearch、OpenSearch、Redis、RabbitMQ。 如果沒有，請將軟體相依性升級至支援的版本。
 
 #### 步驟1：檢查您的協力廠商軟體相依性版本
 
-1. 登入[雲端主控台](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/start/cloud-console)。
+1. 登入[雲端主控台](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/start/cloud-console)。 您可以在Cloud Console中檢視所有環境。
 2. 開啟相關專案，然後選取您要檢閱的環境。
 3. 檢查`.magento/services.yaml`檔案中該環境的服務設定，其定義雲端上的Adobe Commerce所支援的服務名稱和版本。
+4. 使用[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)中的指示檢查每個環境正在執行的相依性版本。
 
-如需詳細指示，請參閱[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)。
-
-所有不支援的軟體相依性都必須升級至下表2中時間表所列的版本。
+所有不支援的軟體相依性都必須升級至下表2中分享的時間表所列的版本。
 
 **表2：必要的相依性升級**
 
@@ -90,7 +98,7 @@ Adobe會主動處理不斷演變的風險，並確保我們在雲端上設定Ado
 | --- | --- | --- | --- |
 | PHP | 8.1及以下的版本 | 8.2或更新版本 | 2027年5月31日 |
 | MariaDB/Galera | 10.5及以下 | 10.6或更新版本 | 2026年10月30日 |
-| MariaDB/Galera | 高於10.5但低於10.11 | 10.11版或更新版本 | 2027年5月31日 |
+| MariaDB/Galera | 高於10.5但低於10.11 | 10.11或更新版本 | 2027年5月31日 |
 | Elasticsearch | 任何版本 | OpenSearch：2.19版，適用於2.4.4和2.4.5客戶。 2.4.6及更高版本客戶的第3版。 | 2026年10月30日 |
 | OpenSearch | 1.x | 2.19版（適用於2.4.4和2.4.5客戶）。 2.4.6及更高版本客戶的第3版。 | 2027年5月31日 |
 | Redis | 5以下（含） | Valkey 8或更高版本 | 2027年5月31日 |
@@ -109,14 +117,12 @@ Adobe將協助您直接升級這些軟體相依性。
 
 * **相容性：**&#x200B;這些變更大多是相同軟體中的版本升級，而且風險很低。 下列變更值得密切關注：
 
-  * **Elasticsearch到OpenSearch**&#x200B;和&#x200B;**Redis到Valkey**&#x200B;正在移轉至不同的軟體，而非版本升級。 參照原始服務的自訂程式碼、擴充功能或設定可能需要更新。
-  * 從&#x200B;**PHP 8.1升級至8.2**&#x200B;時，可能會出現自訂程式碼和協力廠商擴充功能中的棄用警告。
+  * **Elasticsearch到OpenSearch**&#x200B;和&#x200B;**Redis到Valkey**&#x200B;正在移轉至不同的軟體，而非版本升級。 參考原始服務的自訂程式碼、擴充功能或設定可能需要更新。
+  * 從&#x200B;**PHP 8.1升級至8.2**&#x200B;可能會導致自訂程式碼和協力廠商擴充功能中出現棄用專案。
 
-如果您使用協力廠商擴充功能，請向您的廠商確認其最新版本支援您的目標軟體版本。 如果您與解決方案整合商合作，請讓他們及早參與升級規劃、測試和驗證。
+如果您使用協力廠商擴充功能，請向您的廠商確認其最新版本支援您的目標版本。 如果您與解決方案整合商合作，請讓他們參與規劃和驗證。
 
-### 動作2：檢查雲端上的Commerce版本，並升級至支援的版本
-
-檢查您的環境執行雲端上的Adobe Commerce版本。 如果任何環境不在支援的版本上，您可以升級至2.4.9版或最新支援的版本，或移轉至[!DNL Adobe Commerce as a Cloud Service]。
+### 動作2：檢查您的Adobe Commerce on Cloud版本，並升級至支援的版本
 
 #### 步驟1：檢查您的Adobe Commerce on Cloud版本和所需動作
 
@@ -124,24 +130,21 @@ Adobe將協助您直接升級這些軟體相依性。
 
    目前版本會顯示在任何Admin頁面的右下角。
 
-1. 如果版本在「管理員」面板中隱藏：
+1. 如果版本在[管理]面板中隱藏，請使用Adobe Commerce [命令列工具](../configuration/cli/config-cli.md)執行以下命令來檢視版本：
 
-   * 連線到[遠端環境](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/secure-connections#connect-to-a-remote-environment)。
-   * 使用Adobe Commerce [命令列工具](../configuration/cli/config-cli.md)檢查版本。
-
-     ```shell
-     bin/magento --version
-     ```
+   ```shell
+   bin/magento --version
+   ```
 
 請檢視下表中您的Adobe Commerce版本所需的動作。
 
 **表3：雲端上的Adobe Commerce版本升級需求**
 
 | 雲端上的Adobe Commerce目前版本 | 必要動作 | 期限 |
-|---|---|---|
-| 版本2.4.4或2.4.5 | 在Cloud 2.4.9版（或最新版本）上升級至Adobe Commerce或移轉至[!DNL Adobe Commerce as a Cloud Service]。<br>原因： v2.4.4和2.4.5僅接收核心應用程式的限制、獨立安全性修正，直到2027年5月31日 — 這不包括品質修正、應用程式相依性的相容性支援（例如PHP）或平台相依性更新。 請參閱Adobe的[生命週期原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy)。 | 2027年6月1日 |
-| 版本2.4.6或2.4.7 | 在Cloud 2.4.9版（或最新版本）上升級至Adobe Commerce，或移轉至[!DNL Adobe Commerce as a Cloud Service]。<br>原因： 2.4.6版直到2027年8月30日為止仍可繼續支援，而且在2028年5月31日之前，僅會收到核心應用程式的有限且獨立的安全性修正。 2.4.7版於2027年5月31日前獲得標準支援，並於2028年5月31日前獲得延長支援。 請參閱Adobe的[生命週期原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy)。 | 2028年6月1日 |
-| 2.4.8或2.4.9版 | 不需要Adobe Commerce on Cloud版本升級動作。 動作1中的協力廠商軟體相依性截止日期仍適用。<br>原因：尚未設定截止日期。 | 目前不需要 |
+| --- |--- |--- |
+| 版本2.4.4或2.4.5 | 升級至Cloud 2.4.9版（或最新版本）上的Adobe Commerce或移轉至[!DNL Adobe Commerce as a Cloud Service]。<br>原因： v2.4.4和2.4.5版直到2027年5月31日才會收到核心應用程式的限制、獨立安全性修正 — 這不包括品質修正、應用程式相依性的相容性支援（例如PHP）或平台相依性更新。 請參閱Adobe的[生命週期原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy)。 | 2027年6月1日 |
+| 版本2.4.6或2.4.7 | 升級至Cloud 2.4.9版的Adobe Commerce （或最新版本）或移轉至[!DNL Adobe Commerce as a Cloud Service]。<br>原因： 2.4.6版將在2027年8月30日之前獲得延伸支援，並將在2028年5月31日之前僅獲得核心應用程式的有限且獨立的安全性修正。 2.4.7版將可於2027年5月31日前獲得標準支援，並於2028年5月31日前獲得延長支援。 請參閱Adobe的[生命週期原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy)。 | 2028年6月1日 |
+| 2.4.8或2.4.9版 | 不需要Adobe Commerce on Cloud版本升級動作。 動作1中的協力廠商軟體相依性截止日期仍適用。<br>原因：尚未設定截止日期。 | 不適用 |
 
 #### 步驟2：決定升級或移轉路徑
 
@@ -150,7 +153,7 @@ Adobe將協助您直接升級這些軟體相依性。
 1. 升級至雲端上支援的Adobe Commerce版本
 1. 移轉至[!DNL Adobe Commerce as a Cloud Service] (SaaS)
 
-若要協助您決定最佳路徑，請使用下表來比較您的選項：
+下表可協助您比較選項並決定最適合您的路徑。
 
 **表格4：雲端上的Adobe Commerce與[!DNL Adobe Commerce as a Cloud Service]**&#x200B;的比較
 
@@ -162,17 +165,17 @@ Adobe將協助您直接升級這些軟體相依性。
 
 ## 如果在截止日期前沒有採取任何動作，會發生什麼情況？
 
-Adobe會繼續致力協助您採取必要步驟，以升級到雲端和協力廠商軟體上的Adobe Commerce支援版本。
+Adobe會繼續致力協助您執行必要的步驟，以採用支援的第三方軟體版本、升級至雲端上的Adobe Commerce最新版本，或移轉至Adobe Commerce as a Cloud Service。  如果您對完成期限有任何顧慮且需要短時間延長，請連絡您的客戶團隊或[Adobe支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)。
 
-如果環境在上述共用強制執行日期前未符合安全性需求，Adobe將被強制採取適當的行動來保證較大安裝群的安全性。 這包括暫停流向受影響基礎結構的流量，因此，您的電子商務店面將會離線。
+如果環境在上述共用強制執行日期前未符合安全性需求，Adobe將被迫採取適當的行動來保證Adobe Commerce平台及其客戶的安全性。 這包括暫停流向受影響基礎結構的流量，因此，您的電子商務店面將會離線。
 
 如果環境在流量暫停後繼續不相容，Adobe可以終止雲端服務，啟動解除委任程式。 退役後，託管電子商務環境中的所有資料和資產（包括所有例項、環境和分支）將會永久刪除且無法還原。
 
-## 支援升級或移轉的資源
+## 支援您升級或移轉的資源
 
 **如果您選擇升級至Cloud 2.4.9版的Adobe Commerce：**
 
-* **升級相容性報告：** Adobe提供詳細報告，明確說明升級至Adobe Commerce 2.4.9版所需的專案，包括成本範圍。 [產生您的升級相容性報告](https://supportinsights.adobe.com/commerce/tab/main)。
+* **升級相容性報告：** Adobe提供詳細報告，明確識別升級至Adobe Commerce 2.4.9版所需的專案，包括識別需要更新的模組與檔案、嚴重問題數量等。 [產生您的升級相容性報告](https://supportinsights.adobe.com/commerce/tab/main)。
 
 * **軟體相依性升級：**&#x200B;由於您無法直接升級軟體相依性，請開啟Adobe的[支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)為您處理升級。 如需詳細資訊，請參閱[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)。
 
@@ -186,7 +189,7 @@ Adobe提供的工具可減少移轉至[!DNL Adobe Commerce as a Cloud Service]�
 
 * **AI輔助移轉和開發人員工具：**&#x200B;由Edge Delivery Services支援的Adobe Developer App Builder和Commerce店面，可加速店面現代化和擴充功能重新平台。
 
-如有疑問，請連絡您的帳戶團隊或聯絡[支援服務](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)。
+如果您有任何問題，請連絡您的帳戶團隊或連絡[支援服務](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket)。
 
 >[!MORELIKETHIS]
 >
