@@ -3,9 +3,9 @@ title: 軟體生命週期原則
 description: 了解 Adobe Commerce 版本軟體支援終止的關鍵日期。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
+source-git-commit: ab694358487537670cd0e4527d88548fe024ba66
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1468'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Adobe並未針對客戶處於Adobe Commerce三年或延長支援期間期間，�
 
 一般可用性(GA)日期的標準三年支援期間。 標準支援包括品質修正、安全性修補程式，以及完整的Adobe Commerce電話支援。
 
-- **品質修正** — 客戶可以連絡[Adobe Commerce支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)或自助服務[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)來存取品質修正。
+- **品質修正** — 客戶可以連絡[Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)或自助服務[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)來存取品質修正。
 
 - **安全性修正** - Adobe透過累積安全性修補程式和非累積[隔離安全性修補程式檔案](versioning-policy.md#isolated-security-patch-file)，在三年支援期間提供安全性修正。
 
@@ -33,7 +33,7 @@ Adobe鼓勵客戶儘快升級。 但是，為了提供更大的彈性以符合�
 
 >[!NOTE]
 >
->Adobe正推出適用於Adobe Commerce on Cloud的強製版本升級政策，協助每位客戶維持在安全、支援的平台上。 自&#x200B;**2027年6月1日**&#x200B;起，Adobe將不再維護執行不支援Commerce版本的雲端環境，並保留解除其委任的權利。 如果您在Cloud上執行，則必須移至支援的Adobe Commerce版本，或在您發行版本的已發佈[終止延伸支援](lifecycle-policy.md#end-of-support-dates)日期之前移轉至[!DNL Adobe Commerce as a Cloud Service]。 如果您使用2.4.4版到2.4.9版，請參閱[安全性與合規性通知](security-enforcement-policy.md)，以瞭解適用於您環境的特定動作和截止日期。
+>Adobe正推出適用於Adobe Commerce on Cloud的強製版本升級政策，協助每位客戶維持在安全、支援的平台上。 自&#x200B;**2027年6月1日**&#x200B;起，Adobe將不再維護執行不支援Commerce版本的雲端環境，並將強制採取適當的動作來保證Adobe Commerce平台及其客戶的安全性。 這包括暫停流向受影響基礎結構的流量。 因此，您的電子商務店面將會離線。 如果您在Cloud上執行，則必須移至支援的Adobe Commerce版本，或在您發行版本的已發佈[終止延伸支援](lifecycle-policy.md#end-of-support-dates)日期之前移轉至[!DNL Adobe Commerce as a Cloud Service]。 如果您使用2.4.4版到2.4.9版，請參閱[安全性與合規性通知](security-enforcement-policy.md)，以瞭解適用於您環境的特定動作和截止日期。
 
 ## 僅限安全性的過渡期
 
@@ -173,7 +173,9 @@ Adobe鼓勵客戶儘快升級。 但是，為了提供更大的彈性以符合�
 
 >[!IMPORTANT]
 >
->執行不受支援的相依性版本可能會導致Adobe無法解析的雲端例項出現安全性弱點。 在這種情況下，無論您的Adobe版本支援狀態為何，Adobe Commerce都會保留強制升級受影響的軟體相依性，或在不可能升級的情況下停用執行個體的權利。 請參閱[安全性與合規性通知](security-enforcement-policy.md)，瞭解這些升級的排程方式以及在整個過程中可供您使用的支援。
+>執行不受支援的相依性版本可能會導致Adobe無法解析的雲端例項出現安全性弱點。 在這種情況下，Adobe將被迫採取適當的行動來保證Adobe Commerce平台及其客戶的安全。 這包括暫停流向受影響基礎結構的流量。 因此，您的電子商務店面將會離線。
+
+如果環境在流量暫停後繼續不相容，Adobe可以終止雲端服務，啟動解除委任程式。 退役後，託管電子商務環境中的所有資料和資產（包括所有例項、環境和分支）將會永久刪除且無法還原。 請參閱[保護Commerce環境所需的動作和截止日期](security-enforcement-policy.md)，以瞭解這些升級的排程方式以及在整個過程中可供您使用的支援。
 
 ## PHP生命週期結束與PCI法規遵循
 
@@ -205,7 +207,7 @@ Adobe鼓勵客戶儘快升級。 但是，為了提供更大的彈性以符合�
 - 您可以存取Adobe的最新功能：AI支援的銷售、可撰寫的店面架構，以及原生Adobe Experience Cloud整合。
 - 您可消除週期性升級週期。
 
-請連絡您的Adobe客戶團隊，以開始移轉評估。 如需產品概述，請參閱[Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview)。
+請連絡您的Adobe客戶團隊，以開始移轉評估。 如需產品概述，請參閱[Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)。
 
 ### 替代路徑：在雲端或內部部署版本上升級至支援的Adobe Commerce
 
