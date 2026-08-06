@@ -1,7 +1,7 @@
 ---
-source-git-commit: 05769de0613c19ab0b0a008db523a380d0b62d5b
+source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2220'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547">ACP2E-4547之QPT 1.1.82修正的詳細說明：當報價未指派給使用者的共用目錄</a>時，管理員無法將預設目錄產品新增至報價單。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547">ACP2E-4547之QPT 1.1.82修正的詳細說明：當報價未指派給使用者的共用目錄</a>時，管理員無法將預設目錄產品新增至報價單。</p>
 </td>
       <td>
         新主題qpt
@@ -45,7 +45,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/security-enforcement-policy">安全性原則：雲端上的Adobe Commerce客戶所需動作和截止日期</a>，以說明在執行不支援版本或協力廠商軟體相依性的雲端部署上升級Adobe Commerce的需求、時間表和指示。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/security-enforcement-policy">安全性原則：雲端上的Adobe Commerce客戶所需動作和截止日期</a>，以說明在執行不支援版本或協力廠商軟體相依性的雲端部署上升級Adobe Commerce的需求、時間表和指示。</p>
 </td>
       <td>
         新主題
@@ -67,7 +67,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805">ACP2E-4805的QPT 1.1.82修正的詳細說明：當第一個可銷售子項稍後出現在清單</a>中時，可設定產品的簽出請求速度會變慢。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805">ACP2E-4805的QPT 1.1.82修正的詳細說明：當第一個可銷售子項稍後出現在清單</a>中時，可設定產品的簽出請求速度會變慢。</p>
 </td>
       <td>
         新主題qpt
@@ -75,7 +75,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1b5fb4826f6599d7b7609dedfeb545f29454ba4d">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748">ACP2E-4748的QPT 1.1.82修正的詳細說明：在擁有大量獎勵點歷程記錄</a>的商店中，獎勵點到期執行速度緩慢。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748">ACP2E-4748的QPT 1.1.82修正的詳細說明：在擁有大量獎勵點歷程記錄</a>的商店中，獎勵點到期執行速度緩慢。</p>
 </td>
       <td>
         新主題qpt
@@ -83,7 +83,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/30fe149f9743ceca7f40374246b4fc9b9503c590">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875">ACP2E-4875的QPT 1.1.82修正的詳細說明：開啟具有大型通訊錄的客戶帳戶時，管理員使用者會登出</a>。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875">ACP2E-4875的QPT 1.1.82修正的詳細說明：開啟具有大型通訊錄的客戶帳戶時，管理員使用者會登出</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -105,7 +105,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview">概觀：品質修補工具(QPT) v1.1.82</a>。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview">概觀：品質修補工具(QPT) v1.1.82</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -127,7 +127,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>，其中包含Adobe Commerce 2.4.9的MariaDB Cloud版本支援詳細資料（建議使用12.3，支援使用11.8）。</p>
+      <td><p>更新<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>，其中包含Adobe Commerce 2.4.9的MariaDB Cloud版本支援詳細資料（建議使用12.3，支援使用11.8）。</p>
 </td>
       <td>
         技術
@@ -149,7 +149,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>以雲端服務版本的最新Commerce更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>主題，包括RabbitMQ 4.3更新以及確認與MariaDB 12.3的相容性。</p>
+      <td><p>以雲端服務版本的最新Commerce更新<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>主題，包括RabbitMQ 4.3更新以及確認與MariaDB 12.3的相容性。</p>
 </td>
       <td>
         重大更新
@@ -171,7 +171,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401： Scheduled Update首頁的詳細描述QPT 1.1.81修正，其中包含可設定產品重新導向至維護頁面</a>。</p>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401： Scheduled Update首頁的詳細描述QPT 1.1.81修正，其中包含可設定產品重新導向至維護頁面</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -179,7 +179,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/41aac13f73ff0836f93b8ec30a709bd89fa34a94">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468的QPT 1.1.81修正的詳細說明：以網站範圍設定的管理員使用者無法在頁面產生器</a>中儲存動態區塊。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468的QPT 1.1.81修正的詳細說明：以網站範圍設定的管理員使用者無法在頁面產生器</a>中儲存動態區塊。</p>
 </td>
       <td>
         新主題qpt
@@ -201,7 +201,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801">ACP2E-4801的QPT 1.1.81修正的詳細說明：在Admin</a>中重新設定可轉讓的報價時，套件產品選項數量不會更新。</p>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801">ACP2E-4801的QPT 1.1.81修正的詳細說明：在Admin</a>中重新設定可轉讓的報價時，套件產品選項數量不會更新。</p>
 </td>
       <td>
         新主題qpt
@@ -209,7 +209,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/31872eee953126b52f1c13444dd46140edc879c6">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786">ACP2E-4786的QPT 1.1.81修正的詳細說明：設定AWS S3遠端儲存時，產品匯出會失敗</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786">ACP2E-4786的QPT 1.1.81修正的詳細說明：設定AWS S3遠端儲存時，產品匯出會失敗</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -231,7 +231,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630">ACP2E-4630的QPT 1.1.81修正的詳細說明：長產品名稱在多頁銷售PDF中分頁後與相鄰欄重疊</a>。</p>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630">ACP2E-4630的QPT 1.1.81修正的詳細說明：長產品名稱在多頁銷售PDF中分頁後與相鄰欄重疊</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -253,7 +253,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300">ACP2E-4300的QPT 1.1.81修正的詳細說明： Storefront目錄許可權在管理員客戶群組變更</a>後未更新。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300">ACP2E-4300的QPT 1.1.81修正的詳細說明： Storefront目錄許可權在管理員客戶群組變更</a>後未更新。</p>
 </td>
       <td>
         新主題qpt
@@ -261,7 +261,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2c26efeb7aa734e4dcc8d0131cb82a96d35e8f32">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680">ACP2E-4680的QPT 1.1.81修正的詳細說明：不可銷售產品從最終可協商的報價單中消失</a>。</p>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680">ACP2E-4680的QPT 1.1.81修正的詳細說明：不可銷售產品從最終可協商的報價單中消失</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -269,7 +269,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1448b291e70cdf515872f019028c15bd703f80fe">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/commerce-version-tool/intro">Commerce版本工具檔案</a>，其中包含可用性、報表產生、JSON和CSV輸出、疑難排解以及每月Adobe Commerce安全性修補程式狀態報告的發行說明。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro">Commerce版本工具檔案</a>，其中包含可用性、報表產生、JSON和CSV輸出、疑難排解以及每月Adobe Commerce安全性修補程式狀態報告的發行說明。</p>
 </td>
       <td>
         新主題
@@ -291,7 +291,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview">概觀：品質修補工具(QPT) v1.1.81</a>。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview">概觀：品質修補工具(QPT) v1.1.81</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -313,7 +313,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493">ACP2E-4493的QPT 1.1.80修正的詳細說明：啟用非同步索引時，「銷售訂單封存」格線顯示不正確的訂單狀態</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493">ACP2E-4493的QPT 1.1.80修正的詳細說明：啟用非同步索引時，「銷售訂單封存」格線顯示不正確的訂單狀態</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -335,7 +335,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239">ACP2E-4239的QPT 1.1.80修正的詳細說明：由於時區不符，「管理格線日期」篩選器未傳回任何結果</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239">ACP2E-4239的QPT 1.1.80修正的詳細說明：由於時區不符，「管理格線日期」篩選器未傳回任何結果</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -357,7 +357,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481">ACP2E-4481的QPT 1.1.80修正的詳細說明：在訂單取消後</a>未正確地重新計算套件組合產品的銷售性。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481">ACP2E-4481的QPT 1.1.80修正的詳細說明：在訂單取消後</a>未正確地重新計算套件組合產品的銷售性。</p>
 </td>
       <td>
         新主題qpt
@@ -379,7 +379,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615的QPT 1.1.80修正的詳細說明： PayPal線上訂單退款失敗並出現錯誤「PayPal閘道拒絕要求。 內部錯誤。"</a>。</p>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615的QPT 1.1.80修正的詳細說明： PayPal線上訂單退款失敗並出現錯誤「PayPal閘道拒絕要求。 內部錯誤。"</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -387,7 +387,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/056f30558d8d9f3e218f589e2819ec5d8d6274e3">認可</a></td>
     </tr>
     <tr>
-      <td><p>已針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502">ACSD-53502新增QPT 1.1.80修正的詳細說明：由於New Relic指令碼遞回</a>，在iOS Safari上新增到購物車間歇性失敗。</p>
+      <td><p>已針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502">ACSD-53502新增QPT 1.1.80修正的詳細說明：由於New Relic指令碼遞回</a>，在iOS Safari上新增到購物車間歇性失敗。</p>
 </td>
       <td>
         新主題qpt
@@ -395,7 +395,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/95cfe4554c4501fa9526e0c8b0c039cf99228207">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626">ACP2E-4626的QPT 1.1.80修正的詳細說明：Storefront JavaScript檔案載入兩次，導致重複載入和不穩定的行為</a>。</p>
+      <td><p>新增針對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626">ACP2E-4626的QPT 1.1.80修正的詳細說明：Storefront JavaScript檔案載入兩次，導致重複載入和不穩定的行為</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -403,7 +403,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55fad95c3110f8150097f410115d89299b9e681b">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增適用於<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813的QPT 1.1.80修正的詳細說明： USPS送貨方法無法用於或不適用於多包訂單</a>。</p>
+      <td><p>新增適用於<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813的QPT 1.1.80修正的詳細說明： USPS送貨方法無法用於或不適用於多包訂單</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -411,7 +411,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94b45f953d8a91814fa7359369f976e0cbd94a36">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610： sales_clean_quotes cron</a>的QPT 1.1.80修正的詳細說明。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610： sales_clean_quotes cron</a>的QPT 1.1.80修正的詳細說明。</p>
 </td>
       <td>
         新主題qpt
@@ -433,7 +433,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488">ACP2E-4488：大型屬性集</a>的緩慢管理產品儲存/編輯的QPT 1.1.80修正的詳細說明。</p>
+      <td><p>新增對<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488">ACP2E-4488：大型屬性集</a>的緩慢管理產品儲存/編輯的QPT 1.1.80修正的詳細說明。</p>
 </td>
       <td>
         新主題qpt
@@ -441,7 +441,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ac57acc5c527f1c7cc7dbd3198f23e75f08fe207">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496">ACP2E-4496的QPT 1.1.80修正的詳細說明： Analytics cron工作在執行期間</a>會降低效能。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496">ACP2E-4496的QPT 1.1.80修正的詳細說明： Analytics cron工作在執行期間</a>會降低效能。</p>
 </td>
       <td>
         新主題qpt
@@ -449,7 +449,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0b7826459c116ef03a34f0a01e5db235294c3cb1">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552">ACP2E-4552的QPT 1.1.80修正的詳細說明： GraphQL回應未傳回公司狀態</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552">ACP2E-4552的QPT 1.1.80修正的詳細說明： GraphQL回應未傳回公司狀態</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -471,7 +471,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808">ACP2E-4808 QPT 1.1.80修正的詳細說明：店面</a>上顯示不含測量單位的產品重量。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808">ACP2E-4808 QPT 1.1.80修正的詳細說明：店面</a>上顯示不含測量單位的產品重量。</p>
 </td>
       <td>
         新主題qpt
@@ -479,7 +479,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/538221930434b21b92d587fd889e556564a0a45c">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472">ACP2E-4472 QPT 1.1.80修正的詳細說明：使用「以客戶身分登入」流程</a>建立的Null報價。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472">ACP2E-4472 QPT 1.1.80修正的詳細說明：使用「以客戶身分登入」流程</a>建立的Null報價。</p>
 </td>
       <td>
         新主題qpt
@@ -487,7 +487,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/49b49560901525aa9e635eb0ea6542339270cabf">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653">ACP2E-4653的QPT 1.1.80修正的詳細說明：REST API</a>中遺漏購物車價格規則類別範圍條件。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653">ACP2E-4653的QPT 1.1.80修正的詳細說明：REST API</a>中遺漏購物車價格規則類別範圍條件。</p>
 </td>
       <td>
         新主題qpt
@@ -509,7 +509,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/caching-overview">設定指南</a>中澄清了跨快取設定主題的雲端與內部部署範圍，並更新了雲端部署上Commerce的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis和Valkey服務設定</a>最佳實務。</p>
+      <td><p>在<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/caching-overview">設定指南</a>中澄清了跨快取設定主題的雲端與內部部署範圍，並更新了雲端部署上Commerce的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis和Valkey服務設定</a>最佳實務。</p>
 </td>
       <td>
         意見反應
@@ -517,7 +517,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5d8876789a01e0e27cedfb67e0dd8b3dbc4543f7">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156">ACP2E-4156的QPT 1.1.80修正的詳細說明： REST API送貨地址驗證會忽略管理員屬性設定</a>。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156">ACP2E-4156的QPT 1.1.80修正的詳細說明： REST API送貨地址驗證會忽略管理員屬性設定</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -525,7 +525,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/897bbc5b6624dfe17deac6ca878669a5245c34ea">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增適用於<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533">ACP2E-4533的QPT 1.1.80修正的詳細說明：當URL包含商店代碼</a>時，預留位置影像無法在店面載入。</p>
+      <td><p>新增適用於<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533">ACP2E-4533的QPT 1.1.80修正的詳細說明：當URL包含商店代碼</a>時，預留位置影像無法在店面載入。</p>
 </td>
       <td>
         新主題qpt
@@ -547,7 +547,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy">軟體生命週期原則</a>，其中包含雲端版本升級強制日期、支援期間定義（包括僅限安全性的過渡期間）、2.4.4至2.4.9的擴充終止支援表格、PHP PCI指引，以及移轉至Adobe Commerce as a Cloud Service或在PaaS上升級的路徑。</p>
+      <td><p>更新<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">軟體生命週期原則</a>，其中包含雲端版本升級強制日期、支援期間定義（包括僅限安全性的過渡期間）、2.4.4至2.4.9的擴充終止支援表格、PHP PCI指引，以及移轉至Adobe Commerce as a Cloud Service或在PaaS上升級的路徑。</p>
 </td>
       <td>
         重大更新
@@ -569,7 +569,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>將Composer版本更新至<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>表格（適用於Cloud）和On-Prem （適用於Adobe Commerce 2.4.9、2.4.8和2.4.7）中的2.10。</p>
+      <td><p>將Composer版本更新至<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>表格（適用於Cloud）和On-Prem （適用於Adobe Commerce 2.4.9、2.4.8和2.4.7）中的2.10。</p>
 </td>
       <td>
         技術
@@ -591,7 +591,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已使用最新的Payment Services v2.15.0版本更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability#commerce-services">產品可用性</a>表格。</p>
+      <td><p>已使用最新的Payment Services v2.15.0版本更新<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services">產品可用性</a>表格。</p>
 </td>
       <td>
         重大更新，發行說明
@@ -599,7 +599,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a47aff5b5ae138748584cb5dbd646ca7b69e294a">認可</a></td>
     </tr>
     <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">Commerce系統需求</a>，以澄清Commerce on Cloud範本現在提供與每個發行版本的最新Commerce版本相容的預設服務設定。</p>
+      <td><p>更新<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">Commerce系統需求</a>，以澄清Commerce on Cloud範本現在提供與每個發行版本的最新Commerce版本相容的預設服務設定。</p>
 </td>
       <td>
         技術意見回饋
@@ -621,7 +621,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">概觀：品質修補工具(QPT) v1.1.80</a>。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">概觀：品質修補工具(QPT) v1.1.80</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -629,7 +629,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e585cb2150ca7dc2ae6ae883339ef9b894741f0">認可</a></td>
     </tr>
     <tr>
-      <td><p>已將搜尋比對與排名(Private Beta)方案新增至<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta">Beta版本</a>，包括階層比對模型、與權重和銷售規則的互動以及邀請指示。</p>
+      <td><p>已將搜尋比對與排名(Private Beta)方案新增至<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta">Beta版本</a>，包括階層比對模型、與權重和銷售規則的互動以及邀請指示。</p>
 </td>
       <td>
         重大更新
@@ -651,34 +651,12 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706">ACP2E-4706的QPT 1.1.79修正的詳細說明： Target規則索引器cron不會挑選只在商店檢視範圍</a>啟用的產品。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706">ACP2E-4706的QPT 1.1.79修正的詳細說明： Target規則索引器cron不會挑選只在商店檢視範圍</a>啟用的產品。</p>
 </td>
       <td>
         新主題qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1f9890a2a2b7dbe501037ca8dbe919865012b6f">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月5日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402">ACP2E-4402的QPT 1.1.79修正的詳細說明：目標規則增量索引器不會挑選停用的產品</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e5aa6a001b0c96b2d0489a444c227a8f0d406675">認可</a></td>
     </tr>
   </tbody>
 </table>
