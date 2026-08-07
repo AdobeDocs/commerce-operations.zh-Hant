@@ -3,9 +3,9 @@ title: 系統需求
 description: 瞭解Adobe Commerce的軟體相依性和系統需求。 檢視經過測試的設定，瞭解與部署環境的相容性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 last-update: 2026-07-23T00:00:00Z
-source-git-commit: 6da5a8645b46807eed654f6958f19f10d0095945
+source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -46,9 +46,9 @@ Adobe僅支援下表所列的系統需求組合。 Adobe不會驗證或支援不
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
-**MySQL 8.0已於2026年4月30日停止支援(EOS)。**
+**MySQL 8.0於2026年4月30日終止支援(EOS)。**
 在此日期之後，Adobe Commerce 2.4.7、2.4.6、2.4.5和2.4.4將不提供相容性或
-支援在MySQL 8.0之後發行的任何MySQL版本。Adobe不會
+支援在MySQL 8.0之後發行的任何MySQL版本。 Adobe不會
 在此Adobe上驗證或支援較新的MySQL主要版本
 Commerce版本行。
 執行2.4.7、2.4.6、2.4.5、2.4.4版的所有Adobe Commerce內部部署客戶為
@@ -58,7 +58,7 @@ Commerce版本行。
 
 **Elasticsearch 7.17於2026年1月15日終止支援(EOS)。**
 在此日期之後，Adobe Commerce 2.4.6、2.4.5和2.4.4將不提供相容性或
-支援在Elasticsearch 7之後發行的任何Elasticsearch版本。Adobe不會
+支援在Elasticsearch 7之後發行的任何Elasticsearch版本。 Adobe不會
 在此Adobe上驗證或提供對較新Elasticsearch主要版本的支援
 Commerce版本行。
 執行2.4.6、2.4.5、2.4.4版的所有Adobe Commerce內部部署客戶為
@@ -95,9 +95,9 @@ Commerce版本行。
 
 {{$include /help/_includes/templated/system-requirements-table-old-releases.md}}
 
-**MySQL 8.0已於2026年4月30日停止支援(EOS)。**
+**MySQL 8.0於2026年4月30日終止支援(EOS)。**
 在此日期之後，Adobe Commerce 2.4.7、2.4.6、2.4.5和2.4.4將不提供相容性或
-支援在MySQL 8.0之後發行的任何MySQL版本。Adobe不會
+支援在MySQL 8.0之後發行的任何MySQL版本。 Adobe不會
 在此Adobe上驗證或支援較新的MySQL主要版本
 Commerce版本行。
 執行2.4.7、2.4.6、2.4.5、2.4.4版的所有Adobe Commerce內部部署客戶為
@@ -107,7 +107,7 @@ Commerce版本行。
 
 **Elasticsearch 7.17於2026年1月15日終止支援(EOS)。**
 在此日期之後，Adobe Commerce 2.4.6、2.4.5和2.4.4將不提供相容性或
-支援在Elasticsearch 7之後發行的任何Elasticsearch版本。Adobe不會
+支援在Elasticsearch 7之後發行的任何Elasticsearch版本。 Adobe不會
 在此Adobe上驗證或提供對較新Elasticsearch主要版本的支援
 Commerce版本行。
 執行2.4.6、2.4.5、2.4.4版的所有Adobe Commerce內部部署客戶為
@@ -230,5 +230,4 @@ Adobe Commerce的某些作業需要下列系統工具：
 >
 >`xdebug`有已知問題，可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)的已知問題。
 
-<!-- Last updated from includes: 2026-07-22 16:57:39 -->
-
+<!-- Last updated from includes: 2026-07-23 16:17:19 -->
