@@ -1,7 +1,7 @@
 ---
-source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
+source-git-commit: 2c9dd65bbfff402767450508d3760d0281cb3296
 workflow-type: tm+mt
-source-wordcount: '2220'
+source-wordcount: '2201'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年8月6日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>修正Adobe Commerce 2.4.6、2.4.7和2.4.8的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability">產品可用性</a>中的B2B擴充功能版本支援矩陣。</p>
+</td>
+      <td>
+        技術
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/50fb71aa968abf1302e86ffeb3d3b3a66b3c33d5">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月31日
 
@@ -635,28 +657,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月8日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706">ACP2E-4706的QPT 1.1.79修正的詳細說明： Target規則索引器cron不會挑選只在商店檢視範圍</a>啟用的產品。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1f9890a2a2b7dbe501037ca8dbe919865012b6f">認可</a></td>
     </tr>
   </tbody>
 </table>
