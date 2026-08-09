@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 9ea2dec8843119280f9ee291a89590024ddd2973
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: f9962ead84372461e69df158f17456d5cdf0d89e
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: 485
 ht-degree: 0%
 
 ---
@@ -29,8 +24,8 @@ QPT v1.1.82包含下列修補程式：
 
 1. **ACP2E-4815**：修正記錄中造成PHP例外的多個GraphQL問題、修正透過GraphQL在訂購後建立的訂單與客戶帳戶之間的關聯，以及透過HTTP規格將回應與GraphQL保持一致。
 1. **ACP2E-4194**：修正GraphQL回應針對無效、未授權或格式錯誤的請求傳回不正確HTTP狀態代碼的問題。
+1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**：修正多網站部署中，次要網站上針對網站限制顯示的CMS頁面可能不正確的問題。
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**：修正管理員使用者無法在管理員中使用&#x200B;**[!UICONTROL Add Products By SKU]**，將預設目錄中的產品新增至指定給未連結至共用目錄之客戶群組的公司的訂單的問題。
-1. **ACP2E-4593**：修正多網站部署中，次要網站上針對網站限制顯示的CMS頁面不正確的問題。
 1. **ACP2E-4682**：修正每次載入頁面時，造訪檢查報價單`isActive`狀態的Storefront頁面會建立空白報價記錄的問題。
 1. **ACP2E-4695**：修正目錄規則索引器耗用過多記憶體且無法完成，導致不穩定及記憶體不足錯誤的問題。
 1. **ACP2E-4698**：修正在「頁面產生器」文字內容中再次編輯影像時，會儲存絕對媒體URL，而非保留可攜式媒體指示詞的問題。
