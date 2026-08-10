@@ -12,7 +12,7 @@ badgePaas: label="雲端上的Commerce" type="Informative" url="https://experien
 nudge: true
 source-git-commit: 0c69ccdfcb3592a717b8b3a5a59762c8daeceec7
 workflow-type: tm+mt
-source-wordcount: '2524'
+source-wordcount: '2543'
 ht-degree: 0%
 
 ---
