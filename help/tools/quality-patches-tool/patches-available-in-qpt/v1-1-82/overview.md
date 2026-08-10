@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: f9962ead84372461e69df158f17456d5cdf0d89e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 35bad8e2071ee36c0bafccf542035564aeeebc59
 workflow-type: tm+mt
-source-wordcount: 485
+source-wordcount: 487
 ht-degree: 0%
 
 ---
@@ -29,13 +24,13 @@ QPT v1.1.82包含下列修補程式：
 
 1. **ACP2E-4815**：修正記錄中造成PHP例外的多個GraphQL問題、修正透過GraphQL在訂購後建立的訂單與客戶帳戶之間的關聯，以及透過HTTP規格將回應與GraphQL保持一致。
 1. **ACP2E-4194**：修正GraphQL回應針對無效、未授權或格式錯誤的請求傳回不正確HTTP狀態代碼的問題。
-1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**：修正多網站部署中，次要網站上針對網站限制顯示的CMS頁面可能不正確的問題。
+1. **[ACP2E-4682](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)**：修正每次載入頁面時，造訪檢查報價為isActive狀態的店面頁面會建立空白報價記錄的問題。
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**：修正管理員使用者無法在管理員中使用&#x200B;**[!UICONTROL Add Products By SKU]**，將預設目錄中的產品新增至指定給未連結至共用目錄之客戶群組的公司的訂單的問題。
-1. **ACP2E-4682**：修正每次載入頁面時，造訪檢查報價單`isActive`狀態的Storefront頁面會建立空白報價記錄的問題。
+1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**：修正多網站部署中，次要網站上針對網站限制顯示的CMS頁面可能不正確的問題。
 1. **ACP2E-4695**：修正目錄規則索引器耗用過多記憶體且無法完成，導致不穩定及記憶體不足錯誤的問題。
 1. **ACP2E-4698**：修正在「頁面產生器」文字內容中再次編輯影像時，會儲存絕對媒體URL，而非保留可攜式媒體指示詞的問題。
+1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**：修正即使資料庫設定為支援utf8mb4，在WYSIWYG編輯器或管理員的頁面產生器內容中輸入4位元組Unicode字元時仍會遭到錯誤封鎖的問題。
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**：修正獎勵點過期時間在含有大量獎勵點歷史記錄的商店中緩慢執行，造成獎勵點過期延遲的問題。
-1. **ACP2E-4797**：修正即使資料庫設定為支援`utf8mb4`，在WYSIWYG編輯器或管理員的頁面產生器內容中輸入4位元組Unicode字元時仍遭到錯誤封鎖的問題。
 1. **ACP2E-4799**：修正`requisition_lists` GraphQL查詢傳回`total_count`值的問題，該值僅反映目前頁面的專案數，而非符合查詢條件的請購單清單總數。
 1. **[ACP2E-4805](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)**：修正清單中第一個可銷售子產品出現延遲時，含有許多子產品之可設定產品之簽出API要求顯著變慢的問題。
 1. **ACP2E-4840**：修正`products` GraphQL查詢中要求的數量值傳回&#x200B;*null*&#x200B;的問題。
