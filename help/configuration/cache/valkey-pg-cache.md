@@ -3,24 +3,14 @@ title: 設定預設和頁面快取的Valkey
 description: 瞭解如何設定Valkey為Adobe Commerce的預設和頁面快取後端。 探索CLI命令、env.php設定和連線驗證。
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 autotag-review: '2026-06-22T22:00:55.389Z'
 TQID: 'https://experienceleague.adobe.com/AjJ86dYGRVFuY1T73ct1Gpcf6iDbb4ewP8OiGX8otQs'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
 source-wordcount: 1315
@@ -50,19 +40,19 @@ Commerce提供命令列選項，用於設定Valkey預設值和頁面快取。 �
 >[!TAB Zend快取（2.4.8和更早版本）]
 
 - **Zend快取（2.4.8和更早版本）** — Commerce 2.4.8和更早版本的舊版Valkey後端：
-   - **舊版Valkey後端** — 使用完整類別路徑(`Magento\Framework\Cache\Backend\Valkey`)
-   - **預先載入金鑰** — 支援預先載入常用的快取金鑰
-   - **Lua指令碼** — 記憶體回收的Lua
-   - **壓縮** — 支援資料壓縮
+  - **舊版Valkey後端** — 使用完整類別路徑(`Magento\Framework\Cache\Backend\Valkey`)
+  - **預先載入金鑰** — 支援預先載入常用的快取金鑰
+  - **Lua指令碼** — 記憶體回收的Lua
+  - **壓縮** — 支援資料壓縮
 
 >[!TAB Symfony快取(2.4.9+)]
 
 - **Symfony快取(2.4.9+)** — 從Commerce 2.4.9開始，Symfony快取為Valkey提供符合PSR 6規範的現代化快取實作，並大幅改善效能：
-   - **自動Valkey流水線** — 將多個作業批次化為單一請求，減少延遲
-   - **PSR-6 TagAwareAdapter** — 利用原子作業有效率地讓標籤式快取失效
-   - **Igbinary序列化** — 二進位序列化將快取專案大小減少45%，並將速度提高5-10%
-   - **增強型持續連線** — 更穩定的連線集區，以及更妥善的處理分叉的處理程式
-   - **最佳化的Lua指令碼** — 伺服器端執行結合流水線以發揮最大效率
+  - **自動Valkey流水線** — 將多個作業批次化為單一請求，減少延遲
+  - **PSR-6 TagAwareAdapter** — 利用原子作業有效率地讓標籤式快取失效
+  - **Igbinary序列化** — 二進位序列化將快取專案大小減少45%，並將速度提高5-10%
+  - **增強型持續連線** — 更穩定的連線集區，以及更妥善的處理分叉的處理程式
+  - **最佳化的Lua指令碼** — 伺服器端執行結合流水線以發揮最大效率
 
 >[!ENDTABS]
 

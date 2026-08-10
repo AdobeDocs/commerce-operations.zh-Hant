@@ -1,7 +1,7 @@
 ---
 source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '36655'
+source-wordcount: '37133'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ _AC-1608 - [GitHub問題](https://github.com/magento/magento2/issues/34342) - [G
 
 _AC-6419 - [GitHub問題](https://github.com/magento/magento2/issues/35934) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### `/V1/order/&lbrace;orderId&rbrace;/ship` API端點發生內部伺服器錯誤
+#### `/V1/order/{orderId}/ship` API端點發生內部伺服器錯誤
 
 系統現在修正`/V1/order/{orderId}/ship` API端點中的內部伺服器錯誤，並傳回400錯誤，因為要求的格式不正確。
 
@@ -3925,9 +3925,9 @@ _AC-15345 - [GitHub問題](https://github.com/magento/magento2/issues/40146) - [
 
 _AC-15547 - [GitHub問題](https://github.com/magento/magento2/issues/40185) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/c95ed7d7)_
 
-#### 未針對GET請求呈現錯誤訊息
+#### 未針對GET要求呈現錯誤訊息
 
-修正無效GET請求的錯誤訊息未立即顯示的問題。 錯誤訊息現在可以正確顯示，而不需要其他使用者動作，以改善使用者意見反應和一致性。
+修正無效GET要求的錯誤訊息未立即顯示的問題。 錯誤訊息現在可以正確顯示，而不需要其他使用者動作，以改善使用者意見反應和一致性。
 
 _AC-16296 - [GitHub問題](https://github.com/magento/magento2/issues/40411) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/8391dbcc)_
 
@@ -4003,7 +4003,7 @@ _ACP2E-4285 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### 內部伺服器錯誤
 
-Magento現在於使用非同步REST端點POST /rest/default/async/V1/carts/mine/items時，成功將產品新增至客戶的購物車。 之前，這個非同步「加入購物車」要求導致內部伺服器錯誤，且Magento記錄下列錯誤：錯誤：在app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162的null上呼叫成員函式setFinalPrice()。
+Magento現在於使用非同步REST端點POST /rest/default/async/V1/carts/mine/items時，成功將產品新增至客戶的購物車。 先前，這個非同步「加入購物車」要求會導致內部伺服器錯誤，且Magento記錄下列錯誤：錯誤：在app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php：162的null上呼叫成員函式setFinalPrice()。
 
 _AC-16344 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/8670a2b4)_
 
@@ -4158,7 +4158,7 @@ _ACP2E-4226_
 
 #### 無法在排程更新預覽中的網站之間導覽
 
-在此修正之前，嘗試預覽具有自訂網域的存放區內容時，排定的更新預覽會中斷。 此項修正後，自訂商店網域可依原樣預覽，並在預覽iframe中導覽。 此修正涵蓋產品、類別、CMS頁面和CMS區塊，並支援使用`{{store url}}`標籤標籤的導覽連結，如[Adobe Commerce變數和標籤標籤](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/variables/markup-tags)中所述。
+在此修正之前，嘗試預覽具有自訂網域的存放區內容時，排定的更新預覽會中斷。 此項修正後，自訂商店網域可依原樣預覽，並在預覽iframe中導覽。 此修正涵蓋產品、類別、CMS頁面和CMS區塊，並支援使用`{{store url}}`標籤標籤的導覽連結，如[Adobe Commerce變數和標籤標籤](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)中所述。
 
 _ACP2E-4308 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/0a3b7032)_
 
