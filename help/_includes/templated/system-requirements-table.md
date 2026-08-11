@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7c944faaf6f9769ee6aba1e811aa93a5263f13cf
+source-git-commit: 59432a000c5664c5136f10265745effad23343a9
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 39%
+source-wordcount: '352'
+ht-degree: 36%
 
 ---
 # 系統需求
@@ -96,7 +96,7 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-          Redis OSS適用的ElastiCache 7.1 （增強功能）。Valkey 8可供使用。
+          Redis OSS適用的ElastiCache 7.1 （增強功能）。 Valkey 8可供使用。
       </td>
     </tr>
     <tr>
@@ -246,10 +246,10 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-          Redis OSS適用的ElastiCache 7.1 （增強功能）。Valkey 8可供使用。
+          Redis OSS適用的ElastiCache 7.1 （增強功能）。 Valkey 8可供使用。
       </td>
       <td>
-          Redis OSS適用的ElastiCache 7.1 （增強功能）。Valkey 8可供使用。
+          Redis OSS適用的ElastiCache 7.1 （增強功能）。 Valkey 8可供使用。
       </td>
     </tr>
     <tr>
@@ -411,10 +411,10 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-          Redis OSS適用的ElastiCache 7.1 （增強功能）。Valkey 8可供使用。
+          Redis OSS適用的ElastiCache 7.1 （增強功能）。 Valkey 8可供使用。
       </td>
       <td>
-          Redis OSS適用的ElastiCache 7.1 （增強功能）。Valkey 8可供使用。
+          Redis OSS適用的ElastiCache 7.1 （增強功能）。 Valkey 8可供使用。
       </td>
     </tr>
     <tr>
@@ -576,10 +576,10 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-          Redis OSS適用的ElastiCache 7.1 （增強功能）。Valkey 8可供使用。
+          Redis OSS適用的ElastiCache 7.1 （增強功能）。 Valkey 8可供使用。
       </td>
       <td>
-          Redis OSS適用的ElastiCache 7.1 （增強功能）。Valkey 8可供使用。
+          Redis OSS適用的ElastiCache 7.1 （增強功能）。 Valkey 8可供使用。
       </td>
     </tr>
     <tr>
@@ -780,7 +780,7 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          3.9
+          3.13, 3.9
       </td>
       <td>
           3.9
