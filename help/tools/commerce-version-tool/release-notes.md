@@ -13,10 +13,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: eafe79321da03f4778dd9e1b290141ef082a5eaf
+source-git-commit: 6b3a77ca95f7de23f044e531f1639c1aee1bbcef
 workflow-type: tm+mt
-source-wordcount: 180
-ht-degree: 2%
+source-wordcount: 236
+ht-degree: 1%
 
 ---
 
@@ -24,10 +24,22 @@ ht-degree: 2%
 
 這些發行說明說明[!DNL Commerce Version Tool] ([!DNL CVT])的更新。
 
-## 1.0.0版 — 2026年6月 {#version-1-0-0}
+支援最新發行版本。 舊版的發行說明僅供參考。
+更新包括：
+
+![新](../../assets/new.svg)新功能
+![修正](../../assets/fix.svg)修正和改良
+![錯誤](../../assets/bug.svg)已知問題
+
+## 1.0.2版 — 2026年8月 {#version-1-0-2}
 
 ### 新功能
 
+![新的](../../assets/new.svg) **撰寫器`replace`支援** — 已新增透過撰寫器`replace`移除核心模組的安裝支援，並改善這些模組的修補程式偵測準確度。<!-- ACSEC-527 -->
+
+## 1.0.0版 — 2026年6月 {#version-1-0-0}
+
+![新](../../assets/new.svg)更新包括：
 - **修補程式狀態報告** — 報告Adobe Commerce安全性修補程式每月套用、遺失或無法分類以安裝Adobe Commerce的修補程式。
 - **CVE保護狀態** — 將修補程式結果對應到每個CVE保護狀態值： `PROTECTED`、`VULNERABLE`、`UNKNOWN`和`NOT_APPLICABLE`。
 - **多元件支援** — 偵測來自`composer.lock`的已安裝Adobe Commerce元件，包括Adobe Commerce企業對企業(B2B)、Adobe Commerce Page Builder、Adobe Commerce Inventory以及修補程式登入檔案中代表的其他元件。
