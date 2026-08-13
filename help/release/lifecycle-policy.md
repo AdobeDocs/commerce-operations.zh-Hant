@@ -3,7 +3,7 @@ title: 軟體生命週期原則
 description: 了解 Adobe Commerce 版本軟體支援終止的關鍵日期。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: e40305c77d2900a7741f1d97e022a28c04c0630c
+source-git-commit: bde0fd61b02eaf5a962cc9b79cf39a08199e83c8
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Adobe並未針對客戶處於Adobe Commerce三年或延長支援期間期間，�
 
 一般可用性(GA)日期的標準三年支援期間。 標準支援包括品質修正、安全性修補程式，以及完整的Adobe Commerce電話支援。
 
-- **品質修正** — 客戶可以連絡[Adobe Commerce支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)或自助服務[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)來存取品質修正。
+- **品質修正** — 客戶可以連絡[Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)或自助服務[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)來存取品質修正。
 
 - **安全性修正** - Adobe透過累積安全性修補程式和非累積[隔離安全性修補程式檔案](versioning-policy.md#isolated-security-patch-file)，在三年支援期間提供安全性修正。
 
@@ -52,8 +52,8 @@ Adobe鼓勵客戶儘快升級。 但是，為了提供更大的彈性以符合�
 | Adobe Commerce 2.4.9 | 2026年5月12日 | 2029年5月31日 | 待定 | 不適用 | 待定 |
 | Adobe Commerce 2.4.8 | 2025年4月8日 | 2028年5月31日 | 待定 | 不適用 | 待定 |
 | Adobe Commerce 2.4.7 | 2024年4月9日 | 2027年5月31日 | 2028年5月31日 | 不適用 | 2028年6月1日 |
-| Adobe Commerce 2.4.6 | 2023年3月14日 | 2026年8月11日 | 2027年8月30日 | 2028年5月31日 | 2028年6月1日 |
-| Adobe Commerce 2.4.5 | 2022年8月9日 | 2025年8月12日 | 2026年8月12日 | 2027年5月31日 | 2027年6月1日 |
+| Adobe Commerce 2.4.6 | 2023年3月14日 | 2026年8月11日 | 2027年8月31日 | 2028年5月31日 | 2028年6月1日 |
+| Adobe Commerce 2.4.5 | 2022年8月9日 | 2025年8月12日 | 2026年8月11日 | 2027年5月31日 | 2027年6月1日 |
 | Adobe Commerce 2.4.4 | 2022年4月12日 | 2025年4月12日 | 2026年4月14日 | 2027年5月31日 | 2027年6月1日 |
 
 {style="table-layout:auto"}
@@ -207,7 +207,7 @@ Adobe鼓勵客戶儘快升級。 但是，為了提供更大的彈性以符合�
 - 您可以存取Adobe的最新功能：AI支援的銷售、可撰寫的店面架構，以及原生Adobe Experience Cloud整合。
 - 您可消除週期性升級週期。
 
-請連絡您的Adobe客戶團隊，以開始移轉評估。 如需產品概述，請參閱[Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview)。
+請連絡您的Adobe客戶團隊，以開始移轉評估。 如需產品概述，請參閱[Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)。
 
 ### 替代路徑：在雲端或內部部署版本上升級至支援的Adobe Commerce
 
