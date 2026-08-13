@@ -1,7 +1,7 @@
 ---
-source-git-commit: b829cf3685457f9f9ad3dfca2d294b6167accb82
+source-git-commit: 332c042213d3ee25cc5d60c35570a41543e24bfc
 workflow-type: tm+mt
-source-wordcount: '3479'
+source-wordcount: '3474'
 ht-degree: 0%
 
 ---
@@ -276,17 +276,17 @@ _AC-16533_
 
 #### php 8.5相容性
 
-Adobe Commerce 2.4.9現在支援PHP 8.5和PHP 8.4，可讓您在最新安全且相容的PHP版本上執行您的商店。 所有核心功能、套件擴充功能（包括頁面產生器、B2B、Braintree等）和Adobe SaaS服務都與PHP 8.5相容。
+Adobe Commerce 2.4.9現在支援PHP 8.5，可讓您在最新安全且相容的PHP版本上執行存放區。 所有核心功能、套件擴充功能（包括頁面產生器、B2B、Braintree等）和Adobe SaaS服務都與PHP 8.5相容。
 
-- PHP 8.5和8.4完全受支援。
-- PHP 8.3僅允許用於升級目的（不建議用於生產）。
+- PHP 8.5完全受支援。
+- PHP 8.4僅允許用於升級目的（不建議用於生產）。
 - 確保Adobe Commerce安裝符合PCI規範並符合未來需求。
 
 _AC-15615_
 
 #### PHP 8.2支援已移除
 
-從Adobe Commerce 2.4.9開始，不再支援PHP 8.2。 此平台現在針對PHP 8.3和更新版本，更新了核心程式碼、相依性和工具，以便在PHP 8.4和8.5上以簡潔可靠的方式執行。
+從Adobe Commerce 2.4.9開始，不再支援PHP 8.2和PHP 8.3。 此平台現在鎖定了PHP 8.4和更新版本，更新了核心程式碼、相依性和工具，以便在8.5上以簡潔可靠的方式執行。
 
 _AC-15758_
 
@@ -428,12 +428,12 @@ _AC-8253 - [GitHub程式碼貢獻](https://github.com/magento-commerce/security-
 - 驗證升級：使用OAuth 2.0進行安全API存取。
 - 改善資料格式：使用JSON而非XML，以實現更清晰、更有效的通訊。
 - 新增管理欄位：
-   - 閘道REST URL （根據模式：開發或即時）
-   - 使用者端ID和密碼
-   - 帳戶型別、帳戶號碼
-   - CRID、MID、郵件程式識別碼
-   - 適用於國際出貨的AES/ITN
-   - REST特定允許的送貨方法
+  - 閘道REST URL （根據模式：開發或即時）
+  - 使用者端ID和密碼
+  - 帳戶型別、帳戶號碼
+  - CRID、MID、郵件程式識別碼
+  - 適用於國際出貨的AES/ITN
+  - REST特定允許的送貨方法
 
 此移轉作業可確保Adobe Commerce符合USPS標準、提升系統可靠性，並保障商家的航運整合。
 

@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: e8b1a5c1161eab0a0e76e1cca6a4b8b528124b45
+source-git-commit: 2864bda142df307248f5e29524eaf42441538f5b
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 489
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ QPT v1.1.82包含下列修補程式：
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**：修正管理員使用者無法在管理員中使用&#x200B;**[!UICONTROL Add Products By SKU]**，將預設目錄中的產品新增至指定給未連結至共用目錄之客戶群組的公司的訂單的問題。
 1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**：修正多網站部署中，次要網站上針對網站限制顯示的CMS頁面可能不正確的問題。
 1. **ACP2E-4695**：修正目錄規則索引器耗用過多記憶體且無法完成，導致不穩定及記憶體不足錯誤的問題。
-1. **ACP2E-4698**：修正在「頁面產生器」文字內容中再次編輯影像時，會儲存絕對媒體URL，而非保留可攜式媒體指示詞的問題。
+1. **[ACP2E-4698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)**：修正在「頁面產生器」文字內容中再次編輯影像時，可以儲存絕對媒體URL，而非保留可攜式媒體指示詞的問題。
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**：修正即使資料庫設定為支援utf8mb4，在WYSIWYG編輯器或管理員的頁面產生器內容中輸入4位元組Unicode字元時仍會遭到錯誤封鎖的問題。
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**：修正獎勵點過期時間在含有大量獎勵點歷史記錄的商店中緩慢執行，造成獎勵點過期延遲的問題。
 1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**：修正`requisition_lists GraphQL`查詢傳回`total_count`值的問題，該值僅反映目前頁面的專案數，而非符合查詢條件的請購單清單總數。
