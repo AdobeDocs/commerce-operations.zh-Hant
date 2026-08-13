@@ -3,8 +3,8 @@ title: 發行版本
 description: 瞭解特定版本的Adobe Commerce何時發行。
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
-last-update: 2026-06-02T00:00:00Z
-source-git-commit: 90f54aef167dd29ec6bdc0639cf3eb6c5d7244ce
+last-update: 2026-08-12T00:00:00Z
+source-git-commit: 74ce0344595bdf33e84840a1d7ba7a3835b203b2
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
@@ -24,8 +24,8 @@ Adobe為Adobe Commerce客戶2.4.4和2.4.5版提供一年支援延長服務，不
 >[!NOTE]
 >
 >- Adobe建議您安裝或升級Adobe Commerce，以使用每個版本適用的最新安全性修補程式。
->- 如需其他安全性更新，請參閱[Magento / Adobe Commerce的安全性更新](https://helpx.adobe.com/tw/security/products/magento.html)。
->- 如需定價，請參閱[Adobe Commerce定價](https://business.adobe.com/tw/products/magento/pricing.html)。
+>- 如需其他安全性更新，請參閱[Magento / Adobe Commerce的安全性更新](https://helpx.adobe.com/security/products/magento.html)。
+>- 如需定價，請參閱[Adobe Commerce定價](https://business.adobe.com/products/magento/pricing.html)。
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
