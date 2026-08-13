@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 2864bda142df307248f5e29524eaf42441538f5b
+source-git-commit: 3bb6679e2a5e254ef066b47816e527123ca8dcb3
 workflow-type: tm+mt
-source-wordcount: '10632'
+source-wordcount: '10658'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,8 @@ ht-degree: 0%
       - [ACP2E-4709：當頁面階層包含雙引號時，CMS頁面不會儲存在頁面產生器中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4695：目錄規則索引器記憶體使用量過高所導致的記憶體不足失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)
+      - [ACP2E-4194：具有未知篩選器名稱的GraphQL請求會導致PHP例外狀況記錄檔](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)
       - [ACP2E-4698：頁面產生器文字內嵌編輯會儲存絕對媒體URL，而非可攜式指令](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
       - [ACP2E-4894：當啟用非同步索引時，新訂單會出現在管理訂單格線中，並出現延遲](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)
       - [ACP2E-4870：產品警報電子郵件忽略商店檢視電子郵件設定](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
