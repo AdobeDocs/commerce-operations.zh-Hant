@@ -22,9 +22,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Cloud 2.4.4上的Adobe Commerce — 僅限2.4.9" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce on Cloud 2.4.4到2.4.9版"
 nudge: true
-source-git-commit: c3ea400087a14aa1021ab6998b9de48c33787cc9
+source-git-commit: e2b86c349bdd085717f732532f68e3fae8455d13
 workflow-type: tm+mt
-source-wordcount: 2174
+source-wordcount: 2200
 ht-degree: 0%
 
 ---
@@ -87,10 +87,11 @@ ht-degree: 0%
 
 #### 步驟1：檢查您的協力廠商軟體相依性版本
 
-1. 登入[Cloud Console](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/start/cloud-console)，您可以在其中檢視所有環境。
+1. 登入[雲端主控台](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/start/cloud-console)，您可在其中檢視所有雲端專案。
 2. 開啟相關專案，然後選取您要檢閱的環境。
-3. 檢查`.magento/services.yaml`檔案中該環境的服務設定，其定義雲端上的Adobe Commerce所支援的服務名稱和版本。
-4. 使用[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)中的指示檢查每個環境正在執行的相依性版本。
+3. 開啟「容器」標籤，您可在其中檢視選定環境中目前使用的所有服務清單。
+4. 按一下每個服務連結，以檢查環境中目前執行的確切版本。
+如需詳細資訊，請參閱[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)中的指示。
 
 所有不支援的軟體相依性都必須升級至下表2中分享的時間表所列的版本。
 
@@ -177,7 +178,7 @@ Adobe會繼續致力協助您執行必要的步驟，以採用支援的第三方
 
 **如果您選擇升級至Cloud 2.4.9版的Adobe Commerce：**
 
-* **升級相容性報告：** Adobe提供詳細報告，明確識別升級至Adobe Commerce 2.4.9版所需的專案，包括識別需要更新的模組與檔案、嚴重問題數量等。 [產生您的升級相容性報告](https://supportinsights.adobe.com/commerce/tab/main)。
+* **升級相容性報告：** Adobe提供詳細報告，明確識別升級至Adobe Commerce 2.4.9版所需的專案，包括識別需要更新的模組與檔案、嚴重問題數量等。 如需有關如何產生升級相容性報告的詳細資訊，請參閱[全網站分析工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/site-wide-analysis-tool/access)檔案。
 
 * **軟體相依性升級：**&#x200B;由於您無法直接升級軟體相依性，請開啟Adobe的[支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)為您處理升級。 如需詳細資訊，請參閱[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)。
 
