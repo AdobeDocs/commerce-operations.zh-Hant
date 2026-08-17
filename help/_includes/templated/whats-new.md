@@ -1,7 +1,7 @@
 ---
-source-git-commit: b14e0f2c4656ec9afa79545a9e8db83cc2e0d4d4
+source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2690'
 ht-degree: 1%
 
 ---
@@ -757,50 +757,6 @@ ht-degree: 1%
         新主題qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eb7012dd29323ae70a19c7b37ab82dac5215c705">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月18日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy">軟體生命週期原則</a>，其中包含雲端版本升級強制日期、支援期間定義（包括僅限安全性的過渡期間）、2.4.4至2.4.9的擴充終止支援表格、PHP PCI指引，以及移轉至Adobe Commerce as a Cloud Service或在PaaS上升級的路徑。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc8326755ceee435f9980d7ea8003a6692ba1e92">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月16日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>將Composer版本更新至<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>表格（適用於Cloud）和On-Prem （適用於Adobe Commerce 2.4.9、2.4.8和2.4.7）中的2.10。</p>
-</td>
-      <td>
-        技術
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/23f2234eb2b9e11e36e49607b21c3c092266fec4">認可</a></td>
     </tr>
   </tbody>
 </table>

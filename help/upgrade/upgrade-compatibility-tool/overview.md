@@ -4,7 +4,7 @@ description: 瞭解 [!DNL Upgrade Compatibility Tool] 以及它如何協助您�
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
 source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
