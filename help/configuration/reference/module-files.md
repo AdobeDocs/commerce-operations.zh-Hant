@@ -2,9 +2,9 @@
 title: 模組組態檔
 description: 瞭解如何使用Adobe Commerce中的設定型別來自訂模組。 探索設定檔管理和模組自訂最佳實務。
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '2121'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ### Commerce如何載入設定檔案
 
-Commerce會依照以下順序載入設定檔(所有路徑都相對於Commerce安裝目錄)：
+Commerce會依照以下順序載入設定檔（所有路徑都相對於Commerce安裝目錄）：
 
 - 主要組態([app/etc/di.xml](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml))。 此檔案用於啟動Commerce。
 - 來自模組(`<your component base dir>/<vendorname>/<component-type>-<component-name>/etc/*.xml`)的全域組態。 會從所有模組收集特定組態檔，並將它們合併在一起。
@@ -43,9 +43,9 @@ Commerce會依照以下順序載入設定檔(所有路徑都相對於Commerce安
 - `<vendorname>`是元件的廠商名稱；例如，Commerce的廠商名稱為`magento`。
 - `<component-type>`為下列其中一項：
 
-   - `module-`：擴充功能或模組。
-   - `theme-`：主題。
-   - `language-`：語言套件。
+  - `module-`：擴充功能或模組。
+  - `theme-`：主題。
+  - `language-`：語言套件。
 
 >[!INFO]
 >
