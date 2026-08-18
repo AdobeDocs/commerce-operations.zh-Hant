@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: 瞭解 [!DNL Cloud Automation Patching Service (CAPS)]、其用途、存取方法，以及自動修補的最佳實務
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -18,31 +18,32 @@ ht-degree: 0%
 ## [!DNL CAPS]個主題
 
 * **[如何存取](access.md)**
-* **[工作流程](workflow.md)**
+* **[工作流程總覽](workflow.md)**
+* **[GitHub整合](github-integration.md)**
 * **[最佳實務](best-practices.md)**
 * **[疑難排解](troubleshooting.md)**
 
 ## 工具概覽
 
 * **UI介面**
-   * 針對特定專案和環境組合，即時顯示修補程式可用性和狀態
-   * 顯示進度、錯誤和任何其他相關訊息的完整修補狀態資訊
-   * [!UICONTROL Patch Management Dashboard]用於：
-      * 檢視可用的修補程式
-      * 使用一鍵式操作套用修補程式
-      * 還原先前套用的修補程式
-      * 監視修補程式操作狀態和結果
+  * 針對特定專案和環境組合，即時顯示修補程式可用性和狀態
+  * 顯示進度、錯誤和任何其他相關訊息的完整修補狀態資訊
+  * [!UICONTROL Patch Management Dashboard]用於：
+    * 檢視可用的修補程式
+    * 使用一鍵式操作套用修補程式
+    * 還原先前套用的修補程式
+    * 監視修補程式操作狀態和結果
 
 * **使用結構化工作流程的自動修補服務**
-   * **初步檢查** — 驗證修補程式相容性和環境整備
-   * **修補** — 在整合環境中自動套用或還原修補程式
-   * **驗證** — 執行健康狀態檢查並確保關鍵功能不受影響
+  * **初步檢查** — 驗證修補程式相容性和環境整備
+  * **修補** — 在整合環境中自動套用或還原修補程式
+  * **驗證** — 執行健康狀態檢查並確保關鍵功能不受影響
 
 * **安全功能**
-   * 建立暫時整合環境以進行測試
-   * 在應用程式之前驗證修補程式相容性
-   * 在驗證失敗時自動回覆
-   * 將修補程式套用至`m2-hotfixes`資料夾，並在重新版本轉換期間自動移除
+  * 建立暫時整合環境以進行測試
+  * 在應用程式之前驗證修補程式相容性
+  * 在修補程式通過臨時環境的驗證之前，保持目標環境不變
+  * 將修補程式套用至`m2-hotfixes`資料夾，並在重新版本轉換期間自動移除
 
 ## 與Adobe Commerce Cloud的整合
 

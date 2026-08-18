@@ -3,8 +3,8 @@ title: 軟體生命週期原則
 description: 了解 Adobe Commerce 版本軟體支援終止的關鍵日期。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-13T00:00:00Z
-source-git-commit: dd6d284c1761248515bae5324a90e330b6aabf9b
+last-update: 2026-08-17T00:00:00Z
+source-git-commit: 7ba189685721799de047bc8d0e7108fa512f7120
 workflow-type: tm+mt
 source-wordcount: '1350'
 ht-degree: 1%

@@ -2,7 +2,7 @@
 title: 模組組態檔
 description: 瞭解如何使用Adobe Commerce中的設定型別來自訂模組。 探索設定檔管理和模組自訂最佳實務。
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 'null'
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 0%
