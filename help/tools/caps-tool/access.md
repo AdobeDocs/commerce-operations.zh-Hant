@@ -2,9 +2,9 @@
 title: 如何存取 [!DNL Cloud Automation Patching Service (CAPS)]
 description: 瞭解如何存取及使用 [!DNL Cloud Automation Patching Service (CAPS)]
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '279'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,7 @@ CAPS工具可從全網站分析工具儀表板取得，網址為[https://support
 ## 相關主題
 
 * [大寫字介紹](intro.md)
-* [工作流程](workflow.md)
+* [工作流程概觀](workflow.md)
+* [GitHub整合](github-integration.md)
 * [最佳實務](best-practices.md)
 * [疑難排解](troubleshooting.md)
