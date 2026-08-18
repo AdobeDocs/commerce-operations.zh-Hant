@@ -17,7 +17,7 @@ ht-degree: 1%
 ## 先決條件
 
 * 有效的Adobe Commerce Cloud訂閱
-* 已針對您的Adobe Commerce Cloud專案設定[GitHub整合](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)，並已啟用[`fetch-branches`選項](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)。 [!DNL CAPS]會建立並推播暫時的整合環境分支，所以當此選項停用時，修補程式操作無法建立環境。
+* 已針對您的Adobe Commerce Cloud專案設定[GitHub整合](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)，並已啟用[`fetch-branches`選項](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)。 [!DNL CAPS]會建立並推播暫時的整合環境分支，所以當此選項停用時，修補程式操作無法建立環境。
 * 託管於[!DNL github.com]的存放庫。 不支援使用自訂網域設定的GitHub整合。
 * GitHub組織或存放庫的所有者或管理員存取權
 
