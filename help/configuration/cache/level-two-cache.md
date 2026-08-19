@@ -3,7 +3,7 @@ title: 效能最佳化的L2快取記憶體設定
 description: 瞭解如何在Adobe Commerce中設定L2快取，以減少網路流量並改善效能。 探索舊版和Symfony實作選項。
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -361,7 +361,7 @@ Adobe不建議為`default`快取型別啟用`use_stale_cache`選項。
 
 >[!NOTE]
 >
->這些改善適用於使用`symfony_l2`的Adobe Commerce 2.4.9部署，並可在修補程式ACP2E-5132中取得。 若為Adobe Commerce內部部署，請使用Quality Patches Tool (QPT)套用此修補程式。 若為雲端上的Adobe Commerce，此修補程式會透過[Commerce的雲端修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)自動傳送。
+>這些改善適用於使用`symfony_l2`的Adobe Commerce 2.4.9部署，並可在修補程式ACP2E-5132中取得。 若為Adobe Commerce內部部署，請使用Quality Patches Tool (QPT)套用此修補程式。 若為雲端上的Adobe Commerce，此修補程式會透過[Commerce的雲端修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)自動傳送。
 
 最新的更新改善了Symfony L2快取記憶體的擴充性，減少不必要的檔案系統I/O，並增強快取記憶體一致性和可靠性。
 

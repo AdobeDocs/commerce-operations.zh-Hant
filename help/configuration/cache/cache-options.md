@@ -3,7 +3,7 @@ title: 快取後端選項和儲存參考
 description: 瞭解Adobe Commerce中的快取後端選項，包括檔案系統、Redis、Valkey和資料庫儲存。 探索舊版和現代方法。
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
 product_v2:
@@ -31,13 +31,13 @@ ht-degree: 0%
 >
 >此頁面會記錄內部部署`app/etc/env.php`設定。
 >
->針對[!DNL Adobe Commerce on Cloud]個專案，`ece-tools`封裝會在部署期間根據`.magento.env.yaml`中的部署變陣列態產生結果`app/etc/env.php`組態。 您沒有編輯`env.php`檔案。  請參閱[Valkey與Redis服務組態的最佳實務](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)與[部署變數](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)。
+>針對[!DNL Adobe Commerce on Cloud]個專案，`ece-tools`封裝會在部署期間根據`.magento.env.yaml`中的部署變陣列態產生結果`app/etc/env.php`組態。 您沒有編輯`env.php`檔案。  請參閱[Valkey與Redis服務組態的最佳實務](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)與[部署變數](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)。
 
 Commerce應用程式使用低階快取前端和後端來提供對快取儲存體的存取權。 Commerce支援數個快取後端和策略，分別適用於不同的使用案例。 此頁面說明可用的後端及其差異。
 
 >[!NOTE]
 >
->[Varnish](config-varnish-install.md)會處理內部部署的HTTP層級完整頁面快取。 [Fastly服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)會處理它以進行雲端部署。 這兩種解決方案都未使用低階快取後端。
+>[Varnish](config-varnish-install.md)會處理內部部署的HTTP層級完整頁面快取。 [Fastly服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly)會處理它以進行雲端部署。 這兩種解決方案都未使用低階快取後端。
 
 ## 後端快取選項
 
@@ -158,10 +158,10 @@ L2 （兩級）快取會在共用遠端快取儲存體前的每個Web節點上�
 
 如需內部部署設定，請參閱[L2快取設定](level-two-cache.md)。
 
-對於雲端專案，請透過[部署變數](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}中所述的部署變數來設定L2快取。
+對於雲端專案，請透過[部署變數](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}中所述的部署變數來設定L2快取。
 
 #### L2快取設定
 
 - 如需&#x200B;**[!DNL Adobe Commerce on-premises]**&#x200B;組態詳細資料，請參閱[L2快取組態](level-two-cache.md)。
 
-- 針對&#x200B;**[!DNL Adobe Commerce on Cloud]**，請透過適當的部署變數設定L2快取，而非直接編輯`app/etc/env.php`。 請參閱&#x200B;_雲端上的Adobe Commerce_&#x200B;檔案中的[部署變數](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}。
+- 針對&#x200B;**[!DNL Adobe Commerce on Cloud]**，請透過適當的部署變數設定L2快取，而非直接編輯`app/etc/env.php`。 請參閱&#x200B;_雲端上的Adobe Commerce_&#x200B;檔案中的[部署變數](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}。

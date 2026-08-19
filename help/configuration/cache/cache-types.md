@@ -39,7 +39,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->對於雲端基礎結構上的Adobe Commerce，請使用雲端指南中說明的[雲端部署設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml)。 請勿直接編輯`app/etc/env.php`。 部署工具會產生此檔案並覆寫手動變更。
+>對於雲端基礎結構上的Adobe Commerce，請使用雲端指南中說明的[雲端部署設定](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml)。 請勿直接編輯`app/etc/env.php`。 部署工具會產生此檔案並覆寫手動變更。
 
 ## 使用預設前端
 

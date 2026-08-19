@@ -56,7 +56,7 @@ Commerce應用程式快取的組織方式如下：
 HTTP全頁快取會在HTTP或CDN層儲存完整的回應。 對於生產部署：
 
 - **Adobe Commerce內部部署**—Adobe建議使用[Varnish](config-varnish.md)進行整頁快取。 Varnish在網頁伺服器前作為反向Proxy運作。
-- 雲端基礎結構上的&#x200B;**Adobe Commerce**&#x200B;使用[Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"}作為邊緣和整頁快取階層。 雲端基礎結構不使用單獨管理的Varnish服務。
+- 雲端基礎結構上的&#x200B;**Adobe Commerce**&#x200B;使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"}作為邊緣和整頁快取階層。 雲端基礎結構不使用單獨管理的Varnish服務。
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Commerce可透過將部署版本新增至靜態資源（例如CSS、JavaScript�
 | 任務 | 內部部署 | 雲端基礎結構 |
 | --- | --- | --- |
 | 應用程式快取後端 | [快取後端選項和儲存參考](cache-options.md) | [Valkey與Redis服務組態的最佳實務](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
-| HTTP全頁快取 | [設定亮漆](config-varnish.md) | [Fastly服務總覽](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) |
+| HTTP全頁快取 | [設定亮漆](config-varnish.md) | [Fastly服務總覽](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
 下列工作適用於所有部署型別：
 
