@@ -2,9 +2,9 @@
 title: GraphQL應用程式伺服器
 description: 瞭解Adobe Commerce中的graphql應用程式伺服器。 探索實作指引和最佳化策略。
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2467'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL應用程式伺服器可讓Adobe Commerce維護Commerce GraphQL API請求中的狀態。 GraphQL Application Server （以Swoole擴充功能為基礎）會以具有工作者執行緒的處理程式方式運作，以處理要求處理。 GraphQL Application Server可保留GraphQL API請求中的啟動載入應用程式狀態，藉此增強請求處理和整體產品效能。 API要求會大幅提高效率。
 
-GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
+GraphQL Application Server僅適用於Adobe Commerce。 它不適用於Magento Open Source。 對於Cloud Pro專案，您必須[提交Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)票證，才能啟用GraphQL應用程式伺服器。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ GraphQL應用程式伺服器可讓Adobe Commerce在連續的Commerce GraphQL API
 
 ### 雲端專案
 
-根據預設，雲端基礎結構專案上的Adobe Commerce包含Swoole擴充功能。 您可以在`.magento.app.yaml`檔案的`runtime`屬性中[啟用](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)。 例如：
+根據預設，雲端基礎結構專案上的Adobe Commerce包含Swoole擴充功能。 您可以在`.magento.app.yaml`檔案的`runtime`屬性中[啟用](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)。 例如：
 
 ```yaml
 runtime:
@@ -68,7 +68,7 @@ runtime:
 在Pro專案上啟用「應用程式伺服器」功能後，請先完成下列步驟，再部署GraphQL Application Server：
 
 1. 從[2.4.7-appserver分支](https://github.com/magento/magento-cloud/tree/2.4.7-appserver)使用雲端範本，在雲端基礎結構上部署Adobe Commerce。
-1. 確定您所有的Commerce自訂專案和擴充功能都與GraphQL Application Server [相容](https://developer.adobe.com/commerce/php/development/components/app-server/)。
+1. 確定您所有的Commerce自訂專案和擴充功能都與GraphQL Application Server [相容](https://developer.adobe.com/commerce/php/development/components/app-server)。
 1. 複製Commerce Cloud專案。
 1. 如有必要，請調整&#39;application-server/nginx.conf.sample&#39;檔案中的設定。
 1. 完全註解`project_root/.magento.app.yaml`檔案中的作用中&#39;web&#39;區段。
@@ -273,7 +273,7 @@ git push
 
 >[!NOTE]
 >
->確定您的根`.magento.app.yaml`檔案中的所有自訂設定都已適當地移轉至`application-server/.magento/.magento.app.yaml`檔案。 將`application-server/.magento/.magento.app.yaml`檔案新增至專案後，除了根`.magento.app.yaml`檔案之外，您還應維護該檔案。 例如，如果您需要[設定RabbitMQ服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)或[管理Web屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)，您也應該將相同的設定新增到`application-server/.magento/.magento.app.yaml`。
+>確定您的根`.magento.app.yaml`檔案中的所有自訂設定都已適當地移轉至`application-server/.magento/.magento.app.yaml`檔案。 將`application-server/.magento/.magento.app.yaml`檔案新增至專案後，除了根`.magento.app.yaml`檔案之外，您還應維護該檔案。 例如，如果您需要[設定RabbitMQ服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)或[管理Web屬性](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property)，您也應該將相同的設定新增到`application-server/.magento/.magento.app.yaml`。
 
 ### 驗證雲端專案是否啟用
 
@@ -432,7 +432,7 @@ GraphQL Application Server將值為`graphql_server`的`X-Backend`回應標頭新
 
 ### 確認擴充功能和自訂相容性
 
-擴充功能開發人員和商家應該先確認其擴充功能和自訂程式碼符合&#x200B;_[技術准則](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)_&#x200B;中所述的准則。
+擴充功能開發人員和商家應該先確認其擴充功能和自訂程式碼符合&#x200B;_[技術准則](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines)_&#x200B;中所述的准則。
 
 在程式碼評估期間請考量下列准則：
 

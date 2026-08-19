@@ -8,25 +8,16 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-badgePaas: label="雲端上的Commerce" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案上的Adobe Commerce 。"
+badgePaas: label="雲端上的Commerce" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案上的Adobe Commerce 。"
 nudge: true
 autotag-review: '2026-08-18T23:34:12.845Z'
 TQID: 'https://experienceleague.adobe.com/kYuQylZb2r7ElWP1oRJbyIt9jsZMhoO9yFpBMDlf1tw'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 55f36b56b5d719ace064eccf42675cd8f9b7683b
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: 3304
 ht-degree: 0%
@@ -67,7 +58,7 @@ Adobe Commerce 2.4.9的快取設定以及系統需求指定Valkey的修補程式
 
 >[!NOTE]
 >
->確認您使用的是最新版本的`ece-tools`封裝。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
+>確認您使用的是最新版本的`ece-tools`封裝。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
 
 ## 啟用復本連線
 
@@ -91,7 +82,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-如需環境變陣列態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)。
+如需環境變陣列態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)。
 
 >[!TAB Redis組態]
 
@@ -103,7 +94,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-如需環境變陣列態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)。
+如需環境變陣列態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)。
 
 >[!ENDTABS]
 
@@ -113,7 +104,7 @@ stage:
 
 >[!IMPORTANT]
 >
->在「生產」和「預備」上布建專用工作階段執行處理並非自助式。 它需要提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)以及您更新的`.magento/services.yaml`和`.magento.app.yaml`檔案，如下面的步驟3所述。
+>在「生產」和「預備」上布建專用工作階段執行處理並非自助式。 它需要提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)以及您更新的`.magento/services.yaml`和`.magento.app.yaml`檔案，如下面的步驟3所述。
 
 若要布建工作階段的專用執行個體，請遵循下列步驟：
 
@@ -156,7 +147,7 @@ stage:
 
 1. 請求專用於生產和中繼環境工作階段的新Valkey執行個體。
 
-   提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。
+   提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。
 
    此更新不會造成任何停機時間，但需要部署才能啟用新服務。
 
@@ -231,7 +222,7 @@ stage:
 
 1. 請求專用於生產和中繼環境工作階段的新Redis執行個體。
 
-   提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。
+   提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。
 
    此更新不會造成任何停機時間，但需要部署才能啟用新服務。
 
@@ -291,7 +282,7 @@ stage:
 
 ## 啟用非同步釋放
 
-若要在Adobe Commerce雲端基礎結構上啟用`lazyfree`，請提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，要求將下列Redis或Valkey設定套用至您的環境：
+若要在Adobe Commerce雲端基礎結構上啟用`lazyfree`，請提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，要求將下列Redis或Valkey設定套用至您的環境：
 
 ```text
 lazyfree-lazy-eviction yes
@@ -313,7 +304,7 @@ lazyfree-lazy-user-del yes
 
 ## 啟用多執行緒I/O
 
-若要在Adobe Commerce雲端基礎結構上啟用Redis I/O執行緒，請提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，要求下列I/O執行緒組態。 此設定可從主要執行緒解除安裝通訊端讀取、寫入和命令剖析，藉此提高輸送量，但代價是需提高CPU使用量。 在載入下驗證並監視主機。
+若要在Adobe Commerce雲端基礎結構上啟用Redis I/O執行緒，請提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，要求下列I/O執行緒組態。 此設定可從主要執行緒解除安裝通訊端讀取、寫入和命令剖析，藉此提高輸送量，但代價是需提高CPU使用量。 在載入下驗證並監視主機。
 
 >[!BEGINTABS]
 
@@ -326,7 +317,7 @@ io-threads-do-reads yes
 io-threads 8 # Choose a value lower than the number of CPU cores (check with nproc), and then tune under load.
 ```
 
->[!TAB 設定Valkey的I/O執行緒]
+>[!TAB 設定Valkey]的I/O執行緒
 
 若為Valkey：
 
@@ -417,7 +408,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-如需環境組態詳細資訊，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[`REDIS_BACKEND`](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)。
+如需環境組態詳細資訊，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[`REDIS_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)。
 
 >[!ENDTABS]
 
@@ -433,7 +424,7 @@ stage:
 
 - **壓縮需要明確的旗標。** 如果您透過`CACHE_CONFIGURATION`自訂`symfony_l2`壓縮，僅設定`compression_lib`不會啟用壓縮 — 也必須設定`compress_data`。 請參閱[快取壓縮](#cache-compression)。
 
-- **Redis不是`symfony_l2`支援的遠端後端。** 移轉至Valkey，作為此變更的一部分。 請參閱[設定Valkey服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/valkey)。
+- **Redis不是`symfony_l2`支援的遠端後端。** 移轉至Valkey，作為此變更的一部分。 請參閱[設定Valkey服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)。
 
 - **工作階段設定不受此移轉影響。** `SESSION_CONFIGURATION`獨立於快取後端，在移至`symfony_l2`時不需要變更。 請參閱[個別的快取與工作階段執行個體](#separate-cache-and-session-instances)。
 
@@ -607,7 +598,7 @@ Adobe Commerce 2.4.9和更新版本支援`symfony_l2`快取後端。 `symfony_l2
 
 若要針對Adobe Commerce 2.4.9使用`symfony_l2`快取，請完成下列步驟：
 
-- 確定雲端專案使用[`ece-tools`封裝v2002.2.12](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)或更新版本。
+- 確定雲端專案使用[`ece-tools`封裝v2002.2.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)或更新版本。
 
 - 在`.magento.env.yaml`檔案中設定部署變數： `VALKEY_BACKEND`=`symfony_l2`。
 
@@ -623,7 +614,7 @@ Adobe Commerce 2.4.9和更新版本支援`symfony_l2`快取後端。 `symfony_l2
 >
 >Adobe Commerce 2.4.9的修補程式ACP2E-5132透過最佳化標籤儲存、新增過時的快取重新產生鎖定，以及修正過時的標籤成員資格、多餘的遠端寫入和L1大小型逐出(`cleanup_percentage`)等問題，來改善[!DNL Symfony]的L2快取效能和可靠性。 這樣可以減少磁碟I/O和後端負載，同時改善快取一致性。 請參閱&#x200B;_Adobe Commerce設定指南_&#x200B;中的[增強型Symfony L2快取效能和可靠性](/help/configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)。
 >
->此修補程式包含在Commerce套件[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)的雲端修補程式中（相依性`ece-tools`），並在您更新至最新的`ece-tools`版本時於部署期間自動套用。 更新至最新版本的`ece-tools`以接收修補程式。
+>此修補程式包含在Commerce套件](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)的[雲端修補程式中（相依性`ece-tools`），並在您更新至最新的`ece-tools`版本時於部署期間自動套用。 更新至最新版本的`ece-tools`以接收修補程式。
 
 #### 自訂[!DNL Symfony] L2快取設定
 
@@ -995,6 +986,6 @@ stage:
 
 >[!MORELIKETHIS]
 >
->- [設定Valkey服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/valkey)
->- [設定Redis服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/redis)
->- [部署變數](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+>- [設定Valkey服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)
+>- [設定Redis服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis)
+>- [部署變數](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)

@@ -3,10 +3,10 @@ title: 實作維護階段
 description: 瞭解Adobe Commerce專案維護階段的實作最佳實務。
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 3%
+source-wordcount: '429'
+ht-degree: 2%
 
 ---
 
@@ -71,9 +71,9 @@ ht-degree: 3%
 | 最佳實務 | 說明 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [稽核前端效能](frontend-performance.md) | 使用網站效能工具，識別並解決對網站效能產生負面影響的問題。 |
-| [就緒，設定，維護](https://business.adobe.com/tw/blog/basics/ready-set-maintain) | 維護您的Adobe Commerce網站以最大化業務價值和運作時間的秘訣。 |
+| [就緒，設定，維護](https://business.adobe.com/blog/basics/ready-set-maintain) | 維護您的Adobe Commerce網站以最大化業務價值和運作時間的秘訣。 |
 | [使用 [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | 在一個地方檢視您的Adobe Commerce網站的重要深入分析。 |
-| [監視效能、磁碟空間和記錄](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=zh-Hant) | 使用New Relic在雲端基礎結構網站上監視有關您Adobe Commerce的關鍵效能深入分析。 |
+| [監視效能、磁碟空間和記錄](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) | 使用New Relic在雲端基礎結構網站上監視有關您Adobe Commerce的關鍵效能深入分析。 |
 | [回應安全性事件](respond-to-security-incident.md) | 使用New Relic在雲端基礎結構網站上監視有關您Adobe Commerce的關鍵效能深入分析。 |
 
 ### 升級

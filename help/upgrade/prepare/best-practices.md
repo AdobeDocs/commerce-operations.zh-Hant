@@ -3,9 +3,9 @@ title: 最佳實務
 description: 使用Adobe建議的最佳實務來管理您Adobe Commerce專案的升級程式。
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1086'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ ht-degree: 0%
 
 升級Adobe Commerce執行個體的工作量取決於以下因素：
 
-- **您如何建置您的網站？**&#x200B;自訂工作量和安裝的協力廠商模組數量嚴重影響升級的複雜性。 自訂工作和模組的品質可決定升級是否順利進行。
+- **您如何建置您的網站？** 自訂工作量和安裝的協力廠商模組數量嚴重影響升級的複雜性。 自訂工作和模組的品質可決定升級是否順利進行。
 
-- **您是否正在略過多個版本？**&#x200B;略過發行版本會使下一次升級更複雜，從後續版本升級會使程式更容易、成本更低。
+- **您是否正在略過多個版本？** 略過發行版本會使下一次升級更複雜，從後續版本升級會使流程更容易、成本更低。
 
-- **您正在執行哪種型別的升級？**&#x200B;升級至次要版本（例如，從2.3.x至2.4.0）比更新程式版本（例如，從2.4.2至2.4.3）之間的升級更廣泛。 安全性升級是最容易實作的型別。
+- **您正在執行哪種型別的升級？** 升級至次要版本（例如從2.3.x升級至2.4.0）比修補程式版本（例如從2.4.2升級至2.4.3）之間的升級更廣泛。 安全性升級是最容易實作的型別。
 
 ## 規劃升級的最佳實務
 
@@ -49,19 +49,19 @@ ht-degree: 0%
 
 - **UI擴充性**。 使用[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)，獨立於後端和中介軟體來延伸及改進您的店面。
 
-- **API擴充性**。 使用[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html)來擴充網頁API層，方法是演化圖形資料模型並直接從圖形層執行Lambda函式。
+- **API擴充性**。 使用[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/)來擴充網頁API層，方法是演化圖形資料模型並直接從圖形層執行Lambda函式。
 
-- **Adobe I/O中介軟體和服務**。 使用Adobe的中介軟體和以[Adobe I/O](https://www.adobe.io/)建置的一組應用程式連線，將您的系統與Adobe Commerce連線。 此外，您可以使用在Adobe I/O上執行的自身商業邏輯覆寫預設行為，藉此擴充核心平台功能。
+- **Adobe I/O中介軟體和服務**。 使用Adobe的中介軟體和以[Adobe I/O](https://www.adobe.io/)建置的一組應用程式連線，將您的系統與Adobe Commerce連線。此外，您可以使用在Adobe I/O上執行的自身商業邏輯覆寫預設行為，藉此擴充核心平台功能。
 
 ### 規劃升級
 
 隨著我們不斷擴充Adobe Commerce的功能，請務必在最新可用版本上進行開發，並為您的專案計畫定義升級策略。 如此一來，您就能夠確保安全、符合法規，並掌握最新的增強功能，讓您能更快速地增加銷售量、更有效地營運，並在現在和未來保持競爭優勢。
 
-為了協助您規劃並編列升級預算，您應該監視我們的[發行排程](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)。 提前在團隊的待辦專案中規劃升級任務。 目標是使用GA完成這項工作。
+為了協助您規劃並編列升級預算，您應該監視我們的[發行排程](/help/release/schedule.md)。 提前在團隊的待辦專案中規劃升級任務。 目標是使用GA完成這項工作。
 
 - 使用搶鮮版來瞭解每個新版本。 搶鮮版是「一般可用性」程式碼，可供Adobe Commerce商家和所有合作夥伴在正式可用性兩週前使用。 如果您有多個商店，請使用基礎商店中的發行前，並確認您的自訂模組和主題與其相容。
 
-- 檢閱Adobe Commerce的[升級計畫檢查清單](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist)，協助您規劃升級。
+- 檢閱Adobe Commerce的[升級計畫檢查清單](/help/implementation-playbook/best-practices/maintenance/upgrade-checklist.md)，協助您規劃升級。
 
 - 在年初規劃升級。 您必須預訂預算和資源，才能完成每次升級。 請記住，不同專案的升級工作量可能大不相同。 儘可能利用您的經驗和知識來制定正確的計畫。
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 評估升級所需完成的工作：
 
-- 請檢閱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)以瞭解新版本的範圍與影響。
+- 請檢閱[發行說明](/help/release/release-notes/overview.md)以瞭解新版本的範圍與影響。
 
 - 使用[[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md)來識別在嘗試升級至較新版本之前，必須在自訂程式碼中修正的潛在問題。
 

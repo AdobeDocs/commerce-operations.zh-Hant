@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
@@ -15,5 +15,5 @@ ht-degree: 0%
 >
 >另請參閱：
 >
->- [軟體生命週期原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy) — 支援終止日期、延長支援及僅限安全性的轉換規定
->- [雲端版本升級執行原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy) — 執行日期和必要的動作
+>- [軟體生命週期原則](/help/release/lifecycle-policy.md) — 支援終止日期、延長支援及僅限安全性的轉換規定
+>- [雲端版本升級執行原則](/help/release/version-upgrade-enforcement-policy.md) — 執行日期和必要的動作

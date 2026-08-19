@@ -5,9 +5,9 @@ feature: Orders, REST, Taxes, Payments, Checkout
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 421c6fe6-b6b1-4f33-acb6-fbd4306bcc4c
-source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ACSD-66084修補程式修正了在訂單API回應中將`row_total_incl_tax`以�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -37,7 +37,8 @@ ACSD-66084修補程式修正了在訂單API回應中將`row_total_incl_tax`以�
 <u>要再現的步驟</u>：
 
 1. 建立有價格和特價的產品。 移至「**[!UICONTROL Catalog]**」>「**[!UICONTROL Products]**」>按一下「**[!UICONTROL Add Product]**」>在「**[!UICONTROL Advanced Pricing]**」下將「**[!UICONTROL Price]**」設為$25並將「**[!UICONTROL Special Price]**」設為$16.99。
-1. 前往「**[!UICONTROL Stores]** > **[!UICONTROL Taxes]** > **[!UICONTROL Tax Zones and Rates]**」並新增20%的費率。 然後前往&#x200B;**[!UICONTROL Tax Rules]**&#x200B;並建立規則並指派   **[!UICONTROL Taxable Goods]**&#x200B;作為產品稅捐類別。
+1. 前往「**[!UICONTROL Stores]** > **[!UICONTROL Taxes]** > **[!UICONTROL Tax Zones and Rates]**」並新增20%的費率。 然後前往&#x200B;**[!UICONTROL Tax Rules]**並建立規則並指派
+   **[!UICONTROL Taxable Goods]**&#x200B;作為產品稅捐類別。
 1. 建立具有100%折扣與優惠券的銷售規則。 移至&#x200B;**[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]**&#x200B;並新增包含100%折扣的規則，然後使用&#x200B;**[!UICONTROL Specific Coupon]**&#x200B;並輸入您的代碼。
 1. 移至「**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]**」>並設定稅捐設定。
 1. 啟用免費送貨。 前往「**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL Free Shipping]**」。 將&#x200B;**[!UICONTROL Enabled]**&#x200B;設為&#x200B;**[!UICONTROL Yes]**&#x200B;並調整設定。
@@ -60,7 +61,7 @@ ACSD-66084修補程式修正了在訂單API回應中將`row_total_incl_tax`以�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

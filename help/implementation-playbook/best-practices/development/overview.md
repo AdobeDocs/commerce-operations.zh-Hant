@@ -4,9 +4,9 @@ description: 瞭解Adobe Commerce專案開發階段的實作最佳實務。
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 | 最佳實務 | 說明 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [建置和部署](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=zh-Hant){target="_blank"} | 說明在雲端基礎結構專案上建置和部署Adobe Commerce階段的最佳做法 |
+| [建置和部署](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices){target="_blank"} | 說明在雲端基礎結構專案上建置和部署Adobe Commerce階段的最佳做法 |
 | 偵錯 | 系統地有效偵錯Adobe Commerce架構 |
 | [靜態內容部署](static-content-deployment.md) | 避免靜態內容未出現在店面的問題 |
 | [疑難排解](troubleshooting.md) | 疑難排解常見的Adobe Commerce實作問題 |

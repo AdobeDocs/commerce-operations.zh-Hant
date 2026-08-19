@@ -4,7 +4,7 @@ description: 瞭解如何避免第三方Adobe Commerce擴充功能造成的效�
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -36,5 +36,5 @@ Adobe Commerce協力廠商擴充功能（模組）可能會造成各種問題，
 
 - [規劃升級的最佳實務](../../../upgrade/prepare/best-practices.md)
 - 在雲端基礎結構上搭配使用協力廠商擴充功能與Adobe Commerce
-   - [技術與需求 — 開發與測試](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [為何要在整合與測試中完整測試？](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+  - [技術與需求 — 開發與測試](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-devtest)
+  - [為何要在整合與測試中完整測試？](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

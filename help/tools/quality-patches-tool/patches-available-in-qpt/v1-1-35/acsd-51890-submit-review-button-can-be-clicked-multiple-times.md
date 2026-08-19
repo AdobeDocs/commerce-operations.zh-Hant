@@ -1,13 +1,13 @@
 ---
 title: ACSD-51890：可以按多次[!UICONTROL Submit review]按鈕
-description: 套用ACSD-51890修補程式以修正Adobe Commerce問題，該問題導致使用者可在不進行[!UICONTROL Submit Review]驗證的情況下多次點選 [!DNL Google reCAPTCHA v3] 按鈕。
+description: 套用ACSD-51890修補程式以修正Adobe Commerce問題，該問題導致使用者可在不進行 [!DNL Google reCAPTCHA v3] 驗證的情況下多次點選[!UICONTROL Submit Review]按鈕。
 feature: Products
 role: Admin
 exl-id: db69ccdc-c66e-4bdb-9783-772f2af0d33f
 type: Troubleshooting
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >此修補程式已由[ACSD-55112](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-55112-submit-review-button-can-be-clicked-multiple-times.md)取代。
 
-ACSD-51890修補程式修正可多次點選「**[!UICONTROL Submit Review]**」按鈕而無&#x200B;**[!DNL Google reCAPTCHA v3]**&#x200B;驗證的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.35時，即可使用此修補程式。 修補程式ID為ACSD-51890。 請注意，此問題已排程在Adobe Commerce 2.4.7中修正。
+ACSD-51890修補程式修正可多次點選「**[!UICONTROL Submit Review]**」按鈕而無&#x200B;**[!DNL Google reCAPTCHA v3]**&#x200B;驗證的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.35時，即可使用此修補程式。 修補程式ID為ACSD-51890。 請注意，此問題已排程在Adobe Commerce 2.4.7中修正。
 
 ## 受影響的產品和版本
 
@@ -32,11 +32,11 @@ ACSD-51890修補程式修正可多次點選「**[!UICONTROL Submit Review]**」�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
-在不進行&#x200B;**[!UICONTROL Submit Review]**&#x200B;驗證的情況下，可以按多次&#x200B;**[!DNL Google reCAPTCHA v3]**&#x200B;按鈕。
+在不進行&#x200B;**[!DNL Google reCAPTCHA v3]**&#x200B;驗證的情況下，可以按多次&#x200B;**[!UICONTROL Submit Review]**&#x200B;按鈕。
 
 <u>要再現的步驟</u>：
 
@@ -57,15 +57,15 @@ ACSD-51890修補程式修正可多次點選「**[!UICONTROL Submit Review]**」�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
-* [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)的新工具。
-* [使用 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)指南中的[!UICONTROL Quality Patches Tool]，檢查您的Adobe Commerce問題是否有修補程式可用。
+* [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的新工具。
+* [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
 
 
-如需QPT中其他修補程式的詳細資訊，請參閱[[!DNL Quality Patches Tool]指南中的](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)：搜尋修補程式[!DNL Quality Patches Tool]。
+如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。

@@ -4,9 +4,9 @@ description: 瞭解排程Adobe Commerce重要更新以防止效能緩慢和中�
 role: Admin, User
 feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '161'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ## 其他資訊
 
-- [快取的最佳實務](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
-- [私人內容：使私人內容無效](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [快取的最佳實務](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [私人內容：讓私人內容失效](https://developer.adobe.com/commerce/php/development/cache/page/private-content#invalidate-private-content)
 - [硬體建議：快取](../../../performance/hardware.md#caches)
 - [進階設定：設定Redi](../../../performance/advanced-setup.md#set-up-redis)

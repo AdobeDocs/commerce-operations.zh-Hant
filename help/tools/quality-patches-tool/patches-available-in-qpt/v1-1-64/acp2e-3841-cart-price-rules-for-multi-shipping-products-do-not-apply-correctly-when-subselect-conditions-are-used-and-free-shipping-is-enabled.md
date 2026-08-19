@@ -5,10 +5,10 @@ feature: Shopping Cart, Price Rules
 role: Admin, Developer
 exl-id: 73979b71-9b15-4a4b-a1c9-37d3213c177f
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 0%
+source-wordcount: '467'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ ACP2E-3841修補程式修正了使用子選取條件並啟用免運費時，多�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -57,16 +57,16 @@ ACP2E-3841修補程式修正了使用子選取條件並啟用免運費時，多�
 
 以管理員身分登入，並前往「**[!UICONTROL Marketing]** > **[!UICONTROL Promotions]** > **[!UICONTROL Cart Price Rules]** > **[!UICONTROL Add new rule]**」。 請使用下列值：
 
-**[!UICONTROL Rule Information]：**
+**[!UICONTROL Rule Information]:**
 1. **[!UICONTROL Rule Name]**：免費送貨測試
 1. **[!UICONTROL Active]**： *是*
 1. **[!UICONTROL Websites]**： *主要網站*
 1. **[!UICONTROL Customer Groups]**： *未登入，一般，批發， Retailer*
 1. **[!UICONTROL Coupon]**： *沒有優惠券*
-1. **[!UICONTROL Uses per Customer]**： *0*
-1. **[!UICONTROL Priority]**： *1*
+1. **[!UICONTROL Uses per Customer]**: *0*
+1. **[!UICONTROL Priority]**: *1*
 
-**[!UICONTROL Conditions]：**
+**[!UICONTROL Conditions]:**
 
 **[!UICONTROL If ALL of these conditions are TRUE:]**
 
@@ -102,8 +102,8 @@ ACP2E-3841修補程式修正了使用子選取條件並啟用免運費時，多�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

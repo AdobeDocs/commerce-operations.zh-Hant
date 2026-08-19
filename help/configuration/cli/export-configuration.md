@@ -2,7 +2,7 @@
 title: 匯出組態設定
 description: 瞭解如何使用設定傾印將Adobe Commerce設定匯出至檔案。 探索管道部署和設定管理。
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -30,14 +30,14 @@ bin/magento app:config:dump scopes themes
 - `app/etc/config.php`
 
   這是所有Commerce執行個體的共用設定檔。
-將此專案納入原始檔控制，以便在開發、組建和生產系統之間共用。
+  將此專案納入原始檔控制，以便在開發、組建和生產系統之間共用。
 
   請參閱[config.php參考](../reference/config-reference-configphp.md)。
 
 - `app/etc/env.php`
 
   這是特定於環境的組態檔。
-它包含適用於個別環境的敏感和系統專屬設定。
+  它包含適用於個別環境的敏感和系統專屬設定。
 
   請&#x200B;_不_&#x200B;將此檔案包含在原始檔控制中。
 
@@ -47,6 +47,6 @@ bin/magento app:config:dump scopes themes
 
 若要設定寫入`env.php`的敏感設定，請使用[`bin/magento config:sensitive:set`](set-configuration-values.md#set-values)命令。
 
-透過參照模組[`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific)檔案中的[`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php)，將組態值指定為敏感或系統特定的。
+透過參照模組[`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings#how-to-specify-values-as-sensitive-or-system-specific)檔案中的[`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php)，將組態值指定為敏感或系統特定的。
 
 若要在使用`config_types`時匯出其他系統設定，請考慮使用[`bin/magento config:set`](set-configuration-values.md#set-values)命令。

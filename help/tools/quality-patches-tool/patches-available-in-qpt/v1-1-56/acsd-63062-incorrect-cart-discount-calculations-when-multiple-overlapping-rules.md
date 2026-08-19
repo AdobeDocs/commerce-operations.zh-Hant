@@ -5,10 +5,10 @@ feature: Price Rules
 role: Admin, Developer
 exl-id: c4a93063-b640-444e-ba0e-552dd8d1895b
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 0%
+source-wordcount: '406'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Commerce （所有部署方法） 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -47,29 +47,29 @@ Adobe Commerce （所有部署方法） 2.4.7 - 2.4.7-p3
 
    * 規則1：
 
-      * *[!UICONTROL Priority]*： 100
-      * *[!UICONTROL Conditions]*&#x200B;索引標籤：如果總數量等於或大於3，請使用簡單2 ($280)產品
-      * *[!UICONTROL Actions]*&#x200B;標籤： SKU簡單2
-      * *[!UICONTROL Fixed Amount Discount]*： $80
+     * *[!UICONTROL Priority]*: 100
+     * *[!UICONTROL Conditions]*&#x200B;索引標籤：如果總數量等於或大於3，請使用簡單2 ($280)產品
+     * *[!UICONTROL Actions]*&#x200B;標籤： SKU簡單2
+     * *[!UICONTROL Fixed Amount Discount]*: $80
 
    * 規則2：
 
-      * *[!UICONTROL Priority]*： 200
-      * *[!UICONTROL Actions]*&#x200B;標籤： SKU簡單2
-      * *[!UICONTROL Percentage of Product Price Discount]*： 20%
+     * *[!UICONTROL Priority]*: 200
+     * *[!UICONTROL Actions]*&#x200B;標籤： SKU簡單2
+     * *[!UICONTROL Percentage of Product Price Discount]*: 20%
 
    * 規則3：
 
-      * *[!UICONTROL Priority]*： 300
-      * *[!UICONTROL Conditions]*&#x200B;索引標籤：小計等於或大於$1000
-      * 整個購物車的&#x200B;*[!UICONTROL Fixed Amount Discount]*： $100
+     * *[!UICONTROL Priority]*: 300
+     * *[!UICONTROL Conditions]*&#x200B;索引標籤：小計等於或大於$1000
+     * 整個購物車的&#x200B;*[!UICONTROL Fixed Amount Discount]*： $100
 
    * 規則4：
 
-      * *[!UICONTROL Priority]*： 400
-      * *[!UICONTROL Conditions]*&#x200B;索引標籤：如果總數量等於或大於2，請使用簡單1 ($1080)產品
-      * *[!UICONTROL Actions]*&#x200B;標籤： SKU簡單1
-      * 整個購物車的&#x200B;*[!UICONTROL Fixed Amount Discount]*： $960
+     * *[!UICONTROL Priority]*: 400
+     * *[!UICONTROL Conditions]*&#x200B;索引標籤：如果總數量等於或大於2，請使用簡單1 ($1080)產品
+     * *[!UICONTROL Actions]*&#x200B;標籤： SKU簡單1
+     * 整個購物車的&#x200B;*[!UICONTROL Fixed Amount Discount]*： $960
 
 1. 前往店面，將下列具有指定數量的產品加入購物車：
 
@@ -91,8 +91,8 @@ Adobe Commerce （所有部署方法） 2.4.7 - 2.4.7-p3
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 
 ## 相關閱讀

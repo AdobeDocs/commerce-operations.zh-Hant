@@ -3,9 +3,9 @@ title: 密碼雜湊處理
 description: 瞭解Adobe Commerce中的密碼雜湊技術、支援的演演算法（例如Argon2和SHA256），以及舊版雜湊如何升級而不變更密碼。
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ def verify(password, hash):
 
 ## 實施
 
-`\Magento\Framework\Encryption\Encryptor`類別負責密碼雜湊產生與驗證。 [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade)命令會將客戶密碼雜湊升級為最新的雜湊演演算法。
+`\Magento\Framework\Encryption\Encryptor`類別負責密碼雜湊產生與驗證。 [`bin/magento customer:hash:upgrade`](/help/tools/reference/commerce-on-premises.md#customerhashupgrade)命令將客戶密碼雜湊升級為最新的雜湊演演算法。
