@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -37,5 +37,5 @@ ht-degree: 1%
 ## 其他資訊
 
 - [管理員使用者的索引管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- 使用CLI [索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=zh-Hant)
-- [開發人員的索引概觀](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [使用CLI進行索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=zh-Hant)
+- [適用於開發人員的索引概觀](https://developer.adobe.com/commerce/php/development/components/indexing/)

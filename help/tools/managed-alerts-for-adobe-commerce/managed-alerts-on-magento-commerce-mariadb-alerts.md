@@ -6,7 +6,7 @@ role: Admin
 exl-id: d85af2e1-090c-4ad7-a898-3a3c4a5efe3b
 source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 問題
 
-如果您已為Adobe Commerce[!DNL New Relic]註冊了[個Managed警示，且超過一或多個警示臨界值，則您將在](managed-alerts-for-magento-commerce.md)中收到一個Managed警示。 這些警報由Adobe開發，可讓客戶運用支援和工程部門的見解獲得標準集合。
+如果您已為Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)註冊了個Managed警示，且超過一或多個警示臨界值，則您將在[!DNL New Relic]中收到一個Managed警示。 這些警報由Adobe開發，可讓客戶運用支援和工程部門的見解獲得標準集合。
 
 **做！**
 
@@ -35,12 +35,12 @@ ht-degree: 0%
 **不要！**
 
 * 執行索引子或其他cron，可能會對MariaDB造成額外的壓力。
-* 執行任何主要管理任務(即Commerce管理、資料匯入/匯出)。
+* 執行任何主要管理任務（即Commerce管理、資料匯入/匯出）。
 * 清除您的快取。
 
 ## 解決方案
 
-**DML查詢(使用UPDATE、INSERT和DELETE修改資料庫的查詢)**
+**DML查詢（使用UPDATE、INSERT和DELETE修改資料庫的查詢）**
 
 如果您收到「DML查詢嚴重」警示，請從步驟1開始。 如果您收到「DML查詢警告」警示，請從步驟2開始。
 
