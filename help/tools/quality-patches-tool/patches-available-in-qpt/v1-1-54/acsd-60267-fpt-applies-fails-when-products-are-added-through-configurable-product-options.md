@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-60267：透過可設定的產品選項新增產品時，FPT套用不正確
 
-ACSD-60267修補程式修正將簡單產品直接新增到購物車時，固定產品稅(FPT)正確套用的問題，但在透過可設定產品選項選取相同產品時失敗。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.54時，即可使用此修補程式。 修補程式ID為ACSD-60267。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
+ACSD-60267修補程式修正將簡單產品直接新增到購物車時，固定產品稅(FPT)正確套用的問題，但在透過可設定產品選項選取相同產品時失敗。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant) 1.1.54時，即可使用此修補程式。 修補程式ID為ACSD-60267。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
 ## 受影響的產品和版本
 

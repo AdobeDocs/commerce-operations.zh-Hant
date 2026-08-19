@@ -40,7 +40,7 @@ Source程式碼在開發過程中會經過多個穩定階段：
 
 >[!TIP]
 >
->雲端基礎結構專案上的Adobe Commerce包含對應不同環境的特定分支。 請參閱&#x200B;_雲端指南_&#x200B;中的[Pro專案工作流程](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow)和[入門專案工作流程](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)。
+>雲端基礎結構專案上的Adobe Commerce包含對應不同環境的特定分支。 請參閱&#x200B;_雲端指南_&#x200B;中的[Pro專案工作流程](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow)和[入門專案工作流程](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)。
 
 ## 分支策略
 

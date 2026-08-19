@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-62212： *[!UICONTROL Forgot Password]*&#x200B;電子郵件未翻譯成存放區檢視語言
 
-ACSD-62212修補程式修正&#x200B;*[!UICONTROL Forgot Password]*&#x200B;電子郵件的內容未翻譯成商店檢視語言的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-62212。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
+ACSD-62212修補程式修正&#x200B;*[!UICONTROL Forgot Password]*&#x200B;電子郵件的內容未翻譯成商店檢視語言的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-62212。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
 ## 受影響的產品和版本
 

@@ -1,6 +1,6 @@
 ---
 title: MDVA-41399：如果客戶將產品新增到願望清單，則無法存取管理購物車
-description: MDVA-41399修補程式解決如果客戶將產品新增至願望清單，管理員使用者無法存取「管理購物車」頁面的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6後，即可使用此修補程式。 修補程式ID為MDVA-41399。 請注意，問題已在Adobe Commerce 2.4.2中修正。
+description: MDVA-41399修補程式解決如果客戶將產品新增至願望清單，管理員使用者無法存取「管理購物車」頁面的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6後，即可使用此修補程式。 修補程式ID為MDVA-41399。 請注意，問題已在Adobe Commerce 2.4.2中修正。
 feature: Orders, Products, Shopping Cart
 role: Admin
 exl-id: 81a128b5-0c38-4f8f-b297-1f264952d431
