@@ -12,11 +12,20 @@ badgePaas: label="雲端上的Commerce" type="Informative" url="https://experien
 nudge: true
 autotag-review: '2026-08-18T23:34:12.845Z'
 TQID: 'https://experienceleague.adobe.com/kYuQylZb2r7ElWP1oRJbyIt9jsZMhoO9yFpBMDlf1tw'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: 3304
@@ -317,7 +326,7 @@ io-threads-do-reads yes
 io-threads 8 # Choose a value lower than the number of CPU cores (check with nproc), and then tune under load.
 ```
 
->[!TAB 設定Valkey]的I/O執行緒
+>[!TAB 設定Valkey的I/O執行緒]
 
 若為Valkey：
 
@@ -614,7 +623,7 @@ Adobe Commerce 2.4.9和更新版本支援`symfony_l2`快取後端。 `symfony_l2
 >
 >Adobe Commerce 2.4.9的修補程式ACP2E-5132透過最佳化標籤儲存、新增過時的快取重新產生鎖定，以及修正過時的標籤成員資格、多餘的遠端寫入和L1大小型逐出(`cleanup_percentage`)等問題，來改善[!DNL Symfony]的L2快取效能和可靠性。 這樣可以減少磁碟I/O和後端負載，同時改善快取一致性。 請參閱&#x200B;_Adobe Commerce設定指南_&#x200B;中的[增強型Symfony L2快取效能和可靠性](/help/configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)。
 >
->此修補程式包含在Commerce套件](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)的[雲端修補程式中（相依性`ece-tools`），並在您更新至最新的`ece-tools`版本時於部署期間自動套用。 更新至最新版本的`ece-tools`以接收修補程式。
+>此修補程式包含在Commerce套件[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)的雲端修補程式中（相依性`ece-tools`），並在您更新至最新的`ece-tools`版本時於部署期間自動套用。 更新至最新版本的`ece-tools`以接收修補程式。
 
 #### 自訂[!DNL Symfony] L2快取設定
 

@@ -134,7 +134,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 若要改善大型目錄的產品格線效能，建議使用&#x200B;**[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] >[!UICONTROL Limit Number of Products in Grid]**&#x200B;系統組態設定來限制格線中的產品數量。
 
 此系統組態設定預設為停用。 一旦啟用，您就可以將格線中的產品數量限製為特定值。 **[!UICONTROL Records Limit]**&#x200B;是可自訂的設定，預設最小值為`20000`。
-當啟用**[!UICONTROL Limit Number of Products in Grid]**&#x200B;設定且網格中的產品數目大於記錄限制時，則會傳回有限的記錄集合。 當達到限制時，找到的記錄總數、選取的記錄數以及分頁元素將從網格標頭中隱藏。
+當啟用&#x200B;**[!UICONTROL Limit Number of Products in Grid]**&#x200B;設定且網格中的產品數目大於記錄限制時，則會傳回有限的記錄集合。 當達到限制時，找到的記錄總數、選取的記錄數以及分頁元素將從網格標頭中隱藏。
 
 當格線中的產品總數有限時，它不會影響產品格線大量動作。 它只會影響產品格線表示層。 例如，格線中的`20000`產品數目有限，使用者按一下&#x200B;**[!UICONTROL Select All]**，選取&#x200B;**[!UICONTROL Update attributes]**&#x200B;大量動作，並更新部分屬性。 因此，所有產品都會更新，而不是有限的`20000`記錄集合。
 
