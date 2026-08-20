@@ -5,9 +5,9 @@ badge: label="貢獻者： objectsource" type="Informative" url="https://objects
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: d884d434e696a911de626dc76983468556cf451f
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,9 @@ GTmetrix是一種可用於壓力測試的工具。 設定GTmetrix來復寫並乘
 
 進一步瞭解如何為高流量期間準備Commerce專案：
 
-- [假日整備](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=zh-Hant)
-- [假日購物分析](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=zh-Hant)
-- [突波容量增加](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=zh-Hant)
+- [假期整備](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
+- [假日購物分析](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
+- [突波容量增加](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/holiday-surge-capacity-requests-for-magento-commerce-cloud)
 
 ### 載入測試
 
@@ -51,12 +51,12 @@ GTmetrix是一種可用於壓力測試的工具。 設定GTmetrix來復寫並乘
 
 進一步瞭解測試Adobe Commerce專案：
 
-- [測試指引](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html?lang=zh-Hant) （雲端基礎結構）
+- [測試指引](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/guidance) （雲端基礎結構）
 - [應用程式測試](https://developer.adobe.com/commerce/testing/guide/)
 
 ### 識別並解決效能問題
 
-使用New Relic和Adobe Commerce的Observation等各種工具來偵測瓶頸並有效最佳化Commerce網站，進而解決效能問題。 雲端基礎結構上的Adobe Commerce包含[New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=zh-Hant)，而且雲端和內部部署都包含Adobe Commerce[的](/help/tools/observation-for-adobe-commerce/intro.md)觀察。
+使用New Relic和Adobe Commerce的Observation等各種工具來偵測瓶頸並有效最佳化Commerce網站，進而解決效能問題。 雲端基礎結構上的Adobe Commerce包含[New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)，而且雲端和內部部署都包含Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)的[觀察。
 
 使用這些工具來分析網站效能，並找出與下列相關之效能問題：
 
@@ -69,7 +69,7 @@ GTmetrix是一種可用於壓力測試的工具。 設定GTmetrix來復寫並乘
 
 進一步瞭解管理網站效能：
 
-- [效能監視](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=zh-Hant) （雲端基礎結構）
+- [效能監視](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) （雲端基礎結構）
 - [設定最佳實務](/help/performance/configuration.md)
 - [Adobe Commerce的觀察結果](/help/tools/observation-for-adobe-commerce/intro.md)
 
@@ -81,7 +81,7 @@ GTmetrix是一種可用於壓力測試的工具。 設定GTmetrix來復寫並乘
 
 高流量的網站經常會遇到資料庫瓶頸，主要原因是依賴單一MySQL伺服器。 您可以實作資料庫叢集化來解決這些瓶頸問題，這是一種可改善效能並確保高可用性的分散式架構。
 
-資料庫叢集可讓多個Web節點連線至多個MySQL伺服器，將尖峰流量期間與資料庫相關問題的影響降到最低。 使用Galera Cluster之類的工具，為Commerce網站設定資料庫叢集。 Galera叢集包含在雲端基礎結構[上部署的](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/architecture/pro-architecture)個Adobe Commerce專案。
+資料庫叢集可讓多個Web節點連線至多個MySQL伺服器，將尖峰流量期間與資料庫相關問題的影響降到最低。 使用Galera Cluster之類的工具，為Commerce網站設定資料庫叢集。 Galera叢集包含在雲端基礎結構](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture)上部署的[個Adobe Commerce專案。
 
 #### 最佳化MySQL查詢
 
@@ -93,10 +93,10 @@ GTmetrix是一種可用於壓力測試的工具。 設定GTmetrix來復寫並乘
 
 進一步瞭解設定和最佳化MySQL：
 
-- [資料庫組態的最佳實務](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=zh-Hant)
-- Galera DB復寫的[緩慢復寫](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html?lang=zh-Hant)
+- [資料庫組態的最佳實務](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+- [Galera DB復寫的復寫速度緩慢](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html)
 - [一般MySQL准則](/help/installation/prerequisites/database/mysql.md)
-- [MySQL查詢快取](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=zh-Hant)
+- [MySQL查詢快取](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html)
 
 ## 有效管理cron工作：效能與時間
 
@@ -110,7 +110,7 @@ Cron工作在處理網站背景工作（例如產生報表和編制產品索引�
 
 進一步瞭解Adobe Commerce cron實作：
 
-- [Commerce系統管理使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=zh-Hant)中的&#x200B;_Cron （排程工作）_
-- [應用程式設定 — crons屬性](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=zh-Hant) （雲端基礎結構）
-- [設定並執行crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=zh-Hant) （內部部署）
-- Adobe Commerce[的](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=zh-Hant)觀察結果（請參閱[!UICONTROL Cron]和[!UICONTROL MySQL]標籤）。
+- _Commerce系統管理使用手冊_&#x200B;中的[Cron （排程工作）](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)
+- [應用程式設定 — crons屬性](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) （雲端基礎結構）
+- [設定並執行crons](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) （內部部署）
+- Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)的[觀察結果（請參閱[!UICONTROL Cron]和[!UICONTROL MySQL]標籤）。

@@ -2,9 +2,9 @@
 title: 升級年度計畫
 description: 檢閱為您的Adobe Commerce專案建立年度升級計畫的提示。
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 許多公司都依據年度預算和藍圖開展工作。 在這些年度討論中，您必須談論您平台的健康狀況、方向以及當年的升級策略，以及它如何配合企業的整體目標與關鍵績效指標(KPI)。
 
-依照[發行排程](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)，指派預算與發行時段進行升級，避免假日、公司停業與高峰時間。 透過[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)，瞭解Adobe發行排程並瞭解每個發行包含哪些變更和改良，您就能更妥善地規劃年份。
+依照[發行排程](/help/release/schedule.md)，指派預算與發行時段進行升級，避免假日、公司停業與高峰時間。 透過[發行說明](/help/release/release-notes/overview.md)，瞭解Adobe發行排程並瞭解每個發行包含哪些變更和改良，您就能更妥善地規劃年份。
 
 在規劃期間，您可能會想問自己：
 
