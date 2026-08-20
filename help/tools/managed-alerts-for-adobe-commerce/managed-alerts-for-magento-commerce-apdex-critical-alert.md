@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 問題
 
-如果您已為Adobe Commerce](managed-alerts-for-magento-commerce.md)註冊了[個Managed警示，且超過一或多個警示臨界值，則您將在[!DNL New Relic]中收到一個Managed警示。 這些警報由Adobe開發，使用支援和工程部門的見解為商家提供標準集。
+如果您已為Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)註冊了個Managed警示，且超過一或多個警示臨界值，則您將在[!DNL New Relic]中收到一個Managed警示。 這些警報由Adobe開發，使用支援和工程部門的見解為商家提供標準集。
 
 <u> **做！** </u>
 

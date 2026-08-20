@@ -39,10 +39,10 @@ ACSD-48773修補程式修正了從錯誤商店取得獎勵點電子郵件範本�
 1. 建立2個網站、2個商店和2個商店檢視。
 1. 前往「**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Product Reviews]**」並啟用&#x200B;**[!UICONTROL Reviews]**。
 1. 前往&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Store Email Addresses]**。
-切換至**[!DNL default website scope]**，並設定&#x200B;**[!UICONTROL Customer Support Sender Email]**&#x200B;位址（例如： *support_base@example.com*）。
-切換至**[!DNL second website scope]**，並將&#x200B;**[!UICONTROL Customer Support Sender Email]**&#x200B;位址設定為另一個值（例如： *support_second@example.com*）。
+切換至&#x200B;**[!DNL default website scope]**，並設定&#x200B;**[!UICONTROL Customer Support Sender Email]**&#x200B;位址（例如： *support_base@example.com*）。
+切換至&#x200B;**[!DNL second website scope]**，並將&#x200B;**[!UICONTROL Customer Support Sender Email]**&#x200B;位址設定為另一個值（例如： *support_second@example.com*）。
 1. 前往&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Customer Configuration]** > **[!UICONTROL Account Sharing Options]** > **[!UICONTROL Share Customer Accounts]**，並設定&#x200B;**[!UICONTROL Share Customer Accounts]** = *每個網站*。
-1. 在&#x200B;**[!UICONTROL Reward Points]**底下，設定下列專案：
+1. 在&#x200B;**[!UICONTROL Reward Points]**&#x200B;底下，設定下列專案：
    **[!UICONTROL Enable Reward Points Functionality]** = *是*
    **[!UICONTROL Enable Reward Points Functionality on Storefront]** = *是*
    **[!UICONTROL Actions for Acquiring Reward Points by Customers]** > **[!UICONTROL Review Submission]**&#x200B;並設定&#x200B;**[!UICONTROL Review Submission]** = *150*

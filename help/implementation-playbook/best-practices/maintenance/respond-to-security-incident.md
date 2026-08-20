@@ -67,7 +67,7 @@ ht-degree: 0%
 
   「動作記錄報表」會顯示所有已啟用記錄功能的管理員動作的詳細記錄。 每個記錄都加蓋時間戳記，並註冊使用者的IP位址和名稱。 記錄詳細資訊包括管理員使用者資料以及在動作期間完成的相關變更。
 
-- 使用Adobe Commerce工具](../../../tools/observation-for-adobe-commerce/intro.md)的[觀察分析事件。
+- 使用Adobe Commerce工具[&#128279;](../../../tools/observation-for-adobe-commerce/intro.md)的觀察分析事件。
 
   Adobe Commerce觀察工具可讓您分析複雜的問題，協助找出根本原因。 與其追蹤不同的資料，您可以花時間將事件和錯誤建立關聯，以更深入地瞭解效能瓶頸的成因。
 
