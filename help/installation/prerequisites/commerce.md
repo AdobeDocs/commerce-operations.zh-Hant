@@ -21,7 +21,7 @@ ht-degree: 0%
 >
 >由於原則變更，Adobe Commerce程式碼基底現在只能透過Composer發佈。 使用Composer可下載任何列出的Adobe Commerce版本，因為下載區段已不提供程式碼基底。
 >
->如需詳細資訊，請參閱[無法存取帳單帳單和下載雲端基礎結構上Adobe Commerce的程式碼基底](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>如需詳細資訊，請參閱[無法存取帳單帳單和下載雲端基礎結構上Adobe Commerce的程式碼基底](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 請參閱下表，瞭解如何開始安裝Adobe Commerce。
 

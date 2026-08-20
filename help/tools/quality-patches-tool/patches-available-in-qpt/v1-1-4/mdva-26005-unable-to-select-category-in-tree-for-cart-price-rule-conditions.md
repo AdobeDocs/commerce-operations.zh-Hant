@@ -1,6 +1,6 @@
 ---
 title: MDVA-26005：無法為購物車價格規則條件在樹狀結構中選取類別
-description: MDVA-26005修補程式解決使用者無法在購物車價格規則條件的類別樹狀結構中選取類別的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4時，即可使用此修補程式。 修補程式ID為MDVA-26005。 請注意，問題已在Adobe Commerce 2.3.6中修正。
+description: MDVA-26005修補程式解決使用者無法在購物車價格規則條件的類別樹狀結構中選取類別的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4時，即可使用此修補程式。 修補程式ID為MDVA-26005。 請注意，問題已在Adobe Commerce 2.3.6中修正。
 feature: Categories, Orders, Price Rules, Shopping Cart
 role: Admin
 exl-id: 02d9eef4-89f0-48be-8bb9-c62bbdad76a5
@@ -53,7 +53,7 @@ MDVA-26005修補程式解決使用者無法在購物車價格規則條件的類�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

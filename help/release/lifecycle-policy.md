@@ -22,7 +22,7 @@ Adobe並未針對客戶處於Adobe Commerce三年或延長支援期間期間，�
 
 一般可用性(GA)日期的標準三年支援期間。 標準支援包括品質修正、安全性修補程式，以及完整的Adobe Commerce電話支援。
 
-- **品質修正** — 客戶可以連絡[Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)或自助服務[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)來存取品質修正。
+- **品質修正** — 客戶可以連絡[Adobe Commerce支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)或自助服務[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)來存取品質修正。
 
 - **安全性修正** - Adobe透過累積安全性修補程式和非累積[隔離安全性修補程式檔案](versioning-policy.md#isolated-security-patch-file)，在三年支援期間提供安全性修正。
 
@@ -199,7 +199,7 @@ Adobe鼓勵客戶儘快升級。 但是，為了提供更大的彈性以符合�
 - 您可以存取Adobe的最新功能：AI支援的銷售、可撰寫的店面架構，以及原生Adobe Experience Cloud整合。
 - 您可消除週期性升級週期。
 
-請連絡您的Adobe客戶團隊，以開始移轉評估。 如需產品概述，請參閱[Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)。
+請連絡您的Adobe客戶團隊，以開始移轉評估。 如需產品概述，請參閱[Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview)。
 
 ### 替代路徑：在雲端或內部部署版本上升級至支援的Adobe Commerce
 

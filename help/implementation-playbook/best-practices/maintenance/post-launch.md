@@ -35,7 +35,7 @@ ht-degree: 0%
 
   >[!TIP]
   >
-  >請參閱&#x200B;_雲端指南_&#x200B;中的[效能監視](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance)。
+  >請參閱&#x200B;_雲端指南_&#x200B;中的[效能監視](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/monitor/performance)。
 
 
 - **最佳化資料庫效能**：若要最佳化Adobe Commerce Cloud中的資料庫效能，請實作下列專案：
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->請參閱&#x200B;_雲端指南_&#x200B;中的[Fastly服務總覽](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)。
+>請參閱&#x200B;_雲端指南_&#x200B;中的[Fastly服務總覽](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly)。
 
 #### 定期安全性監控
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->請參閱&#x200B;_系統管理系統指南_&#x200B;中的[安全性](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security)。
+>請參閱&#x200B;_系統管理系統指南_&#x200B;中的[安全性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security)。
 
 #### 錯誤記錄與監視
 
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如需Adobe Commerce Cloud中記錄與錯誤追蹤實務作法的詳細資訊，請參閱[New Relic記錄管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management)和[例外狀況監視](/help/tools/site-wide-analysis-tool/exceptions.md)。
+>如需Adobe Commerce Cloud中記錄與錯誤追蹤實務作法的詳細資訊，請參閱[New Relic記錄管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management)和[例外狀況監視](/help/tools/site-wide-analysis-tool/exceptions.md)。
 
 ### 安全性與更新
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 
 為了持續更新並確保Adobe Commerce Cloud系統的安全性，以下提供監控安全性修補程式和更新的一些主要作法：
 
-- **訂閱Adobe Commerce安全性警示**：透過[註冊來自Adobe的通知](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security)，隨時掌握安全性弱點的最新資訊。
+- **訂閱Adobe Commerce安全性警示**：透過[註冊來自Adobe的通知](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security)，隨時掌握安全性弱點的最新資訊。
 
 - **檢查發行說明**：定期檢閱[安全性修補程式發行說明](/help/release/release-notes/security/overview.md)，這些發行說明在版本（例如2.3.5-p1）上標示「 — pN」，並包含關鍵修正和改良。
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如需套用修補程式和維護安全性的詳細資訊和逐步指示，請參閱[安全性修補程式發行說明](../../../release/release-notes/security/overview.md)和[如何套用安全性修補程式](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)。 您也應該檢閱[全網站分析工具](/help/tools/site-wide-analysis-tool/access.md)報告。
+>如需套用修補程式和維護安全性的詳細資訊和逐步指示，請參閱[安全性修補程式發行說明](../../../release/release-notes/security/overview.md)和[如何套用安全性修補程式](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)。 您也應該檢閱[全網站分析工具](/help/tools/site-wide-analysis-tool/access.md)報告。
 
 #### PCI法規遵循
 
@@ -132,7 +132,7 @@ ht-degree: 0%
 
 - **使用安全傳輸通訊協定**：一律透過TLS等安全通訊協定傳輸付款資料，並具備加密和適當的金鑰管理。
 
-- **利用Web應用程式防火牆(WAF)**： Fastly支援的WAF服務可在惡意流量到達您的網站之前，封鎖惡意流量，協助您符合PCI DSS 6.6需求，並防止常見漏洞。 在[這裡](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md)和[這裡](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service)檢視更多資訊。
+- **利用Web應用程式防火牆(WAF)**： Fastly支援的WAF服務可在惡意流量到達您的網站之前，封鎖惡意流量，協助您符合PCI DSS 6.6需求，並防止常見漏洞。 在[這裡](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md)和[這裡](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service)檢視更多資訊。
 
 - **限制存取**：確保只有授權人員才能存取敏感的付款資料，並[套用存取控制以降低暴露風險](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md)。
 
@@ -202,9 +202,9 @@ ht-degree: 0%
 
 - **自動縮放流量處理**：
 
-  - Adobe Commerce Cloud支援自動縮放，以根據即時流量需求動態調整伺服器資源（例如網頁節點），確保您的商店可以處理大量訪客，無需手動干預。 請參閱&#x200B;_雲端指南_&#x200B;中的[自動縮放](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/autoscaling)。
+  - Adobe Commerce Cloud支援自動縮放，以根據即時流量需求動態調整伺服器資源（例如網頁節點），確保您的商店可以處理大量訪客，無需手動干預。 請參閱&#x200B;_雲端指南_&#x200B;中的[自動縮放](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/autoscaling)。
 
-  - Web和服務層可以獨立擴展，新增更多的Web節點以增加流量，並擴展資料庫或服務節點以在尖峰期間提高後端效能。 請參閱&#x200B;_雲端指南_&#x200B;中的[縮放架構](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。
+  - Web和服務層可以獨立擴展，新增更多的Web節點以增加流量，並擴展資料庫或服務節點以在尖峰期間提高後端效能。 請參閱&#x200B;_雲端指南_&#x200B;中的[縮放架構](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture)。
 
 - **效能監視**：
 
@@ -226,17 +226,17 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如需詳細指引，請參閱[維護最佳實務](overview.md)、[個人化](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)和[功能開發](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)。
+>如需詳細指引，請參閱[維護最佳實務](overview.md)、[個人化](https://business.adobe.com/tw/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)和[功能開發](https://business.adobe.com/tw/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization)。
 
 ### 報告與分析
 
-- **Adobe Commerce Intelligence：** Commerce Intelligence是Adobe Commerce的核心功能，可跨多個資料來源提供最佳實務深入分析，讓商家能夠做出科學資料導向式決策，並採取清楚且明智的動作。 請參閱&#x200B;[_Commerce Intelligence使用手冊_](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/getting-started)。
+- **Adobe Commerce Intelligence：** Commerce Intelligence是Adobe Commerce的核心功能，可跨多個資料來源提供最佳實務深入分析，讓商家能夠做出科學資料導向式決策，並採取清楚且明智的動作。 請參閱&#x200B;[_Commerce Intelligence使用手冊_](https://experienceleague.adobe.com/zh-hant/docs/commerce-business-intelligence/mbi/getting-started)。
 
 - **Adobe Analytics：** Adobe Analytics提供強大的解決方案，可追蹤、分析和最佳化您的線上商店效能。 Adobe Analytics可協助電子商務企業深入瞭解客戶行為、產品績效、轉換率和其他關鍵量度，進而制定資料導向式決策。
 
 - **Google Analytics：**&#x200B;使用Google Analytics追蹤客戶行為、流量來源和轉換率。
 
-- **其他Commerce Intelligence工具：** Adobe Commerce包含進階報告。 此功能可讓您存取一套以您的產品、訂單和客戶資料為根據的動態報表，以及根據您的業務需求量身打造的個人化儀表板。如需詳細資訊，請參閱&#x200B;_管理員使用指南_&#x200B;中的[進階報表](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting)。
+- **其他Commerce Intelligence工具：** Adobe Commerce包含進階報告。 此功能可讓您存取一套以您的產品、訂單和客戶資料為根據的動態報表，以及根據您的業務需求量身打造的個人化儀表板。如需詳細資訊，請參閱&#x200B;_管理員使用指南_&#x200B;中的[進階報表](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting)。
 
 ### 結論
 

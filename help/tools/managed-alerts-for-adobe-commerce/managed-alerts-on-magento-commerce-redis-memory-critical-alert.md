@@ -43,13 +43,13 @@ ht-degree: 0%
 
 **由於這是嚴重警示，強烈建議您先完成步驟1，再嘗試疑難排解問題（從步驟2開始）。**
 
-1. 檢查Adobe Commerce支援票證是否存在。 如需相關步驟，請參閱Commerce支援知識庫中的[追蹤您的支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case)。 支援人員可能已經收到[!DNL New Relic]臨界值警示、建立票證並開始處理問題。 如果票證不存在，請建立一個。 票證應具有下列資訊：
+1. 檢查Adobe Commerce支援票證是否存在。 如需相關步驟，請參閱Commerce支援知識庫中的[追蹤您的支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case)。 支援人員可能已經收到[!DNL New Relic]臨界值警示、建立票證並開始處理問題。 如果票證不存在，請建立一個。 票證應具有下列資訊：
 
    * 連絡原因：選取&#x200B;**[!UICONTROL New Relic CRITICAL alert received]**。
    * 警示的說明。
    * [[!DNL New Relic] 事件連結](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents/)。 這包含在您的[Adobe Commerce](managed-alerts-for-magento-commerce.md)受管理警示中。
 
-1. 如果沒有支援票證，請前往[one.newrelic.com](https://login.newrelic.com) > **[!UICONTROL Infrastructure]** > **[!UICONTROL Third-party services]**&#x200B;頁面，檢查[!DNL Redis]已使用的記憶體是否在增加或減少，然後選取[!DNL Redis]儀表板。 如果它是穩定或遞增的，請[提交支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)以升級您的叢集，或將`maxmemory`限制增加到下一個層級。
+1. 如果沒有支援票證，請前往[one.newrelic.com](https://login.newrelic.com) > **[!UICONTROL Infrastructure]** > **[!UICONTROL Third-party services]**&#x200B;頁面，檢查[!DNL Redis]已使用的記憶體是否在增加或減少，然後選取[!DNL Redis]儀表板。 如果它是穩定或遞增的，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)以升級您的叢集，或將`maxmemory`限制增加到下一個層級。
 1. 如果您無法識別[!DNL Redis]記憶體耗用量增加的原因，請檢閱最近的趨勢，以識別最近的程式碼部署或設定變更（例如，新客戶群組和目錄的大型變更）的相關問題。 建議您檢閱過去七天的活動，以瞭解程式碼部署或變更中的任何關聯。
 1. 檢查協力廠商擴充功能是否有不當行為：
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 1. 如果上述步驟無法協助您識別或疑難排解問題的來源，請考慮啟用L2快取以減少應用程式與[!DNL Redis]之間的網路流量。 如需L2快取的一般資訊，請參閱Commerce設定指南中的Adobe Commerce應用程式中的[L2快取](/help/configuration/cache/level-two-cache.md)。 若要啟用雲端基礎結構的L2快取，請嘗試下列步驟：
 
    * 若版本低於2002.1.2，請升級ECE工具。
-   * 使用[使用REDIS\_BACKEND變數](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)並更新`.magento.env.yaml`檔案來設定L2快取：
+   * 使用[使用REDIS\_BACKEND變數](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)並更新`.magento.env.yaml`檔案來設定L2快取：
 
    ```yaml
    stage:

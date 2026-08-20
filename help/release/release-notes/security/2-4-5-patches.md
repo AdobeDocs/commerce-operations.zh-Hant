@@ -245,7 +245,7 @@ Adobe Commerce 2.4.5-p4安全性版本針對先前版本2.4.5中發現的弱點�
 
 ### 套用CVE-2022-31160的Hotfix
 
-`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。 執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176)知識庫文章所指定的修補程式。
+`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。 執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27176)知識庫文章所指定的修補程式。
 
 ## 2.4.5 - p3
 
@@ -255,7 +255,7 @@ Adobe Commerce 2.4.5-p3安全性版本針對先前版本2.4.5中發現的弱點�
 
 ### 套用CVE-2022-31160的Hotfix
 
-`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。 執行受影響部署的商戶應套用[查詢UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176)知識庫文章所指定的修補程式。
+`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。 執行受影響部署的商戶應套用[查詢UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27176)知識庫文章所指定的修補程式。
 
 ### 反白顯示
 

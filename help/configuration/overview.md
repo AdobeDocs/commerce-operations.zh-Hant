@@ -25,8 +25,8 @@ _組態_&#x200B;指南提供管理可設定之Commerce應用程式功能與服�
 
 ## Commerce管理設定
 
-[Commerce使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview)中有對應的主題，可協助您瞭解Commerce管理員中每個組態設定的欄位說明。
+[Commerce使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/guide-overview)中有對應的主題，可協助您瞭解Commerce管理員中每個組態設定的欄位說明。
 
 ## 雲端設定
 
-[!DNL Commerce on cloud infrastructure]使用[組組態檔](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/overview)來更新託管環境中的Commerce應用程式功能與服務。 由於Adobe雲端代管環境的獨特性質，您應該一律檢閱[雲端指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)以瞭解其他設定需求。
+[!DNL Commerce on cloud infrastructure]使用[組組態檔](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/overview)來更新託管環境中的Commerce應用程式功能與服務。 由於Adobe雲端代管環境的獨特性質，您應該一律檢閱[雲端指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)以瞭解其他設定需求。
