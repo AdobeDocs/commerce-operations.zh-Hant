@@ -2,9 +2,9 @@
 title: 應用程式模式
 description: Commerce應用程式可依您的需求以不同模式運作。 檢視可用的應用程式模式詳細清單。
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: b1cfa656e3393bd47fb2c1557ff75db3ec6c6a67
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '778'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 由於唯讀檔案系統，在遠端雲端環境中變更模式有嚴格限制，Adobe Commerce支援無法覆寫該模式。 請勿嘗試透過修改`app/etc/env.php`檔案來變更模式，因為`ece-tools`封裝會根據多個組態來源覆寫檔案。
 
-雲端基礎結構上的Adobe Commerce會在部署期間以&#x200B;_維護_&#x200B;模式自動執行應用程式，讓您的網站離線，直到部署完成。 否則，應用程式會維持在&#x200B;_生產_&#x200B;模式。 請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[部署程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=zh-Hant#deploy-phase)。
+雲端基礎結構上的Adobe Commerce會在部署期間以&#x200B;_維護_&#x200B;模式自動執行應用程式，讓您的網站離線，直到部署完成。 否則，應用程式會維持在&#x200B;_生產_&#x200B;模式。 請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[部署程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/deploy/process#deploy-phase)。
 
 如果您使用Commerce的Cloud Docker作為開發工具，則可以在&#x200B;_開發人員_&#x200B;模式的Docker環境中部署雲端基礎結構專案，但由於額外的檔案同步處理作業，效能會變慢。 請參閱&#x200B;_適用於Commerce的Cloud Docker指南_&#x200B;中的[部署Docker環境](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode)。
 
@@ -78,7 +78,7 @@ _維護_&#x200B;模式會在改善、更新及設定工作期間，限制或防�
 
 您可以建立[自訂維護頁面](../../upgrade/troubleshooting/maintenance-mode-options.md)、手動啟用和停用維護模式，以及設定維護模式，以允許來自授權IP位址的訪客正常檢視存放區。 請參閱&#x200B;_安裝指南_&#x200B;中的[啟用和停用維護模式](../../installation/tutorials/maintenance-mode.md)。
 
-如果您在雲端基礎結構上使用Commerce，Commerce應用程式會在部署階段以維護模式執行。 部署成功完成時，Commerce應用程式會回到生產模式中執行。 請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[部署勾點](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=zh-Hant#phase-5%3A-deployment-hooks)。
+如果您在雲端基礎結構上使用Commerce，Commerce應用程式會在部署階段以維護模式執行。 部署成功完成時，Commerce應用程式會回到生產模式中執行。 請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[部署勾點](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices#phase-5%3A-deployment-hooks)。
 
 在維護模式中：
 

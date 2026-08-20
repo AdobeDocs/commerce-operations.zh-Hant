@@ -2,9 +2,9 @@
 title: 使用Nginx設定多個網站
 description: 按照本教學課程中的說明使用Nginx設定多個網站。
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -17,16 +17,16 @@ ht-degree: 0%
 
   在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
 
-  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=zh-Hant)。
+  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個網站或商店](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)。
 
 - 您在一個虛擬主機檔案中接受多個網域，或每個網站使用一個虛擬主機；虛擬主機組態檔位於`/etc/nginx/sites-available`。
 - 您僅使用本教學課程中討論的修改內容，再使用Commerce提供的`nginx.conf.sample`。
 - 已在`/var/www/html/magento2`中安裝Commerce軟體。
 - 您有預設以外的兩個網站：
 
-   - 網站代碼為`french`且商店檢視代碼為`fr`的`french.mysite.mg`
-   - 網站代碼為`german`且商店檢視代碼為`de`的`german.mysite.mg`
-   - `mysite.mg`是預設網站和預設商店檢視
+  - 網站代碼為`french`且商店檢視代碼為`fr`的`french.mysite.mg`
+  - 網站代碼為`german`且商店檢視代碼為`de`的`german.mysite.mg`
+  - `mysite.mg`是預設網站和預設商店檢視
 
 >[!TIP]
 >
@@ -40,8 +40,8 @@ ht-degree: 0%
 
    - `$MAGE_RUN_TYPE`可以是`store`或`website`：
 
-      - 使用`website`在您的店面中載入您的網站。
-      - 使用`store`載入您店面中的任何商店檢視。
+     - 使用`website`在您的店面中載入您的網站。
+     - 使用`store`載入您店面中的任何商店檢視。
 
    - `$MAGE_RUN_CODE`是與`$MAGE_RUN_TYPE`對應的唯一網站或商店檢視代碼。
 
@@ -280,7 +280,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- 在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
->- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個雲端網站或商店](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=zh-Hant)。
+>- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個雲端網站或商店](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)。
 
 ### 疑難排解
 

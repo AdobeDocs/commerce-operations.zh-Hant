@@ -4,9 +4,9 @@ description: 說明如何藉由Adobe Commerce專案中的OPcache記憶體耗用�
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 6c0a9268cb3a3b2e76f4a389846e8407f0893b4f
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '159'
 ht-degree: 1%
 
 ---
@@ -22,12 +22,12 @@ ht-degree: 1%
 
 ## 設定記憶體
 
-為&#x200B;**OPcache PHP模組**&#x200B;分配至少[2GB](https://www.php.net/manual/en/book.opcache.php)的記憶體。 OPcache模組設定在`php.ini`檔案中。 若要配置2048 MB的記憶體，請設定`opcache.memory_consumption = 2048`。
+為[OPcache PHP模組](https://www.php.net/manual/en/book.opcache.php)分配至少&#x200B;**2GB**&#x200B;的記憶體。 OPcache模組設定在`php.ini`檔案中。 若要配置2048 MB的記憶體，請設定`opcache.memory_consumption = 2048`。
 
 ## 其他資訊
 
 * [效能最佳實務 — PHP設定](../../../performance/software.md#php-settings)
-* [設定PHP選項](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
+* [設定PHP選項](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/configure-app-yaml)
 * [雲端基礎結構上Adobe Commerce的資料庫最佳實務](database-on-cloud.md)
 * [Adobe Commerce中雲端基礎結構最常見的資料庫問題](../maintenance/resolve-database-performance-issues.md)
 * [索引器「依排程更新」可最佳化Adobe Commerce效能](../maintenance/indexer-configuration.md)

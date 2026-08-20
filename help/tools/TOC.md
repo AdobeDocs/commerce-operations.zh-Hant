@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 2fce4e7794a3defe46c03b3795df3e62f96dbf73
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '10661'
+source-wordcount: '10678'
 ht-degree: 0%
 
 ---
@@ -1007,6 +1007,7 @@ ht-degree: 0%
       - [ACP2E-4706： Target規則索引器cron不會挑選只在商店檢視範圍啟用的產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706.md)
       - [ACP2E-4402： Target規則增量索引器不會挑選停用的產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
       - [ACP2E-4505：循環類別相依性，不會將包含過時資料的類別儲存在重複的瀏覽器分頁中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
+      - [ACP2E-4531：子頁面URL索引鍵變更時，CMS階層不會更新階層URL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531.md)
       - [ACP2E-4720：固定價格的套裝產品與出貨專案分開時，免運費購物車價格規則不會重設](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
       - [AC-10698：交易價格和總計未傳送至Google Tag](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
       - [ACP2E-4475：依價格排序或篩選不適用於無存貨的套件組合產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
@@ -1105,6 +1106,6 @@ ht-degree: 0%
     - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
     - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
   - 資源 {#resources}
-    - [疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=zh-Hant)
+    - [疑難排解](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)

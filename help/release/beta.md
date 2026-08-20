@@ -4,9 +4,9 @@ description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: bf0f269900468870a1da7b5360548d49e009097c
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >**法律免責宣告**<br/>
->Beta發行版本包含發行前功能及程式碼，其中可能包含瑕疵，並依「現況」提供，無任何保固。Adobe自行決定是否將Beta版正式發佈。Adobe沒有義務維護、更正、更新、變更、修改、支援（透過Adobe支援服務或其他方式），或於任何特定日期前提供此類Beta版。Beta版正式發行時，可能會受其他條款與條件的約束，包括適用的費用。Beta發行版本可能會有所變更，恕不另行通知，包括停止發行。建議客戶謹慎使用，並且切勿依賴Beta版的不中斷或不錯誤功能或效能。 因此，使用測試版完全由客戶自行承擔風險。
+>Beta發行版本包含發行前功能及程式碼，其中可能包含瑕疵，並依「現況」提供，並無任何保固。 Adobe自行決定是否將Beta版正式發佈。 Adobe沒有義務維護、更正、更新、變更、修改、支援（透過Adobe支援服務或其他方式），或於任何特定日期前提供此類Beta版。 Beta版正式發行時，可能會受其他條款與條件的約束，包括適用的費用。 Beta發行版本可能會有所變更，恕不另行通知，包括停止發行。 建議客戶謹慎使用，並且切勿依賴Beta版的不中斷或不錯誤功能或效能。  因此，使用測試版完全由客戶自行承擔風險。
 
 ## 參與的優點
 
@@ -73,7 +73,7 @@ Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commer
 
 [Cloud Automation Patching Service](../tools/caps-tool/intro.md)會自動在雲端基礎結構[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)環境中將隔離的安全性修補程式套用至您的Adobe Commerce。
 
-在2025年10月，Cloud Automation Patching Service的測試版將新增至[全網站分析工具儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard)。 此服務透過簡化的修補工作流程支援Commerce專案管理員，包括：
+在2025年10月，Cloud Automation Patching Service的測試版將新增至[全網站分析工具儀表板](/help/tools/site-wide-analysis-tool/dashboard.md)。 此服務透過簡化的修補工作流程支援Commerce專案管理員，包括：
 
 - 自動安裝修補程式
 - 復原復原

@@ -4,13 +4,13 @@ description: 套用ACSD-66404修補程式，修正cron工作無法清除變更�
 feature: System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 42bd5934782ca65b891a36f61102083356c92e59
+exl-id: d7ad3b11-aee6-4a26-8892-369fbfe6932e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66404：由於[!DNL Galera Cluster]個交易大小限制，Cron作業無法清除changelog表格
 
@@ -52,8 +52,8 @@ Cron工作未清除changelog表格，並在這些表格中有大量資料時造�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)
 
 ## 相關閱讀
 

@@ -5,9 +5,9 @@ feature: Data Import/Export
 role: Admin, Developer
 exl-id: 551a9ac7-9b7f-49b5-9255-2014c330fb07
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ACSD-58325修補程式修正了在驗證錯誤後也可使用&#x200B;**[!UICONTR
 1. 為產品匯入建立CSV檔案，該檔案中的影像名稱不正確。
 1. 使用建立的CSV檔案建立排程產品匯入。
 1. 等候執行排定的匯入。
-1. 檢查[!UICONTROL Last outcome]格線中的&#x200B;**[!UICONTROL Scheduled Imports/Exports]**。
+1. 檢查&#x200B;**[!UICONTROL Scheduled Imports/Exports]**&#x200B;格線中的[!UICONTROL Last outcome]。
 
 <u>預期結果</u>：
 
@@ -51,8 +51,8 @@ ACSD-58325修補程式修正了在驗證錯誤後也可使用&#x200B;**[!UICONTR
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 
 ## 相關閱讀

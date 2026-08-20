@@ -3,9 +3,9 @@ title: 設定遠端儲存
 description: 瞭解如何為內部部署Commerce應用程式設定遠端儲存模組。
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->- 遠端儲存僅適用於Commerce 2.4.2版和更新版本。 請參閱[2.4.2發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-2)。
+>- 遠端儲存僅適用於Commerce 2.4.2版和更新版本。 請參閱[2.4.2發行說明](/help/release/release-notes/open-source/2-4-2.md)。
 >
 >- 遠端儲存模組在雲端基礎結構上的Adobe Commerce上有&#x200B;_限制_&#x200B;支援。 Adobe無法完全疑難排解協力廠商儲存配接器服務。 請參閱[在雲端基礎結構上設定Commerce的遠端儲存](cloud-support.md)，以取得為雲端專案實作遠端儲存的指引。
 

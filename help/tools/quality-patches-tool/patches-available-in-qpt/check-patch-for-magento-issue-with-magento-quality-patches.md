@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin
 exl-id: 4d651c3c-95ad-4b53-bf77-92758acb795d
 type: Troubleshooting
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->QPT僅適用於品質修補程式。 [Magento安全性中心](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)提供安全性修補程式。
+>QPT僅適用於品質修補程式。 [Magento安全性中心](/help/release/release-notes/overview.md)提供安全性修補程式。
 
 ## Quality Patches Tool提供的修補程式
 
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 ### 如何在Adobe Commerce內部部署安裝及使用QPT
 
-請參考開發人員檔案中的[軟體更新指南>修補](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/usage)，瞭解如何安裝及使用QPT來套用及還原修補程式的詳細資訊。
+請參考開發人員檔案中的[軟體更新指南>修補](/help/tools/quality-patches-tool/usage.md)，瞭解如何安裝及使用QPT來套用及還原修補程式的詳細資訊。
 
 ### 如何在雲端基礎結構上安裝和使用適用於Adobe Commerce的QPT
 
-如需如何在雲端基礎結構上安裝和使用QPT來套用及還原Adobe Commerce修補程式的詳細資訊，請參閱我們的開發人員檔案中的[Cloud for Adobe Commerce >套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)。
+如需如何在雲端基礎結構上安裝和使用QPT來套用及還原Adobe Commerce修補程式的詳細資訊，請參閱我們的開發人員檔案中的[Cloud for Adobe Commerce >套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 
-* 在開發人員檔案中[品質修補程式工具發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/release-notes)。
-* [如何在支援知識庫中套用Adobe](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)提供的撰寫器修補程式。
+* 在開發人員檔案中[品質修補程式工具發行說明](/help/tools/quality-patches-tool/release-notes.md)。
+* [如何在支援知識庫中套用Adobe](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)提供的撰寫器修補程式。

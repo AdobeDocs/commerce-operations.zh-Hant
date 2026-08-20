@@ -3,7 +3,7 @@ title: 結帳效能最佳實務
 description: 瞭解Adobe Commerce中的結帳效能最佳實務。 探索實作指引和最佳化策略。
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 5d94ecbe32b94acf9604db9618a9ae6eb1ae04f9
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1299'
 ht-degree: 0%
@@ -56,7 +56,7 @@ bin/magento setup:config:set --checkout-async 1
    ]
 ```
 
-請參閱&#x200B;_模組參考指南_&#x200B;中的[非同步訂單](https://developer.adobe.com/commerce/php/module-reference/module-async-order/)。
+請參閱&#x200B;_模組參考指南_&#x200B;中的[非同步訂單](https://developer.adobe.com/commerce/php/module-reference/module-async-order)。
 
 **停用AsyncOrder**：
 
@@ -162,7 +162,7 @@ bin/magento setup:config:set --deferred-total-calculating 0
    ]
 ```
 
-請參閱&#x200B;_模組參考指南_&#x200B;中的[DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/)。
+請參閱&#x200B;_模組參考指南_&#x200B;中的[DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating)。
 
 ### 固定產品稅金
 
@@ -180,7 +180,7 @@ _在購物車載入時啟用詳細目錄_&#x200B;全域設定決定在購物車�
 
 您可以啟用MySQL資料庫和Redis執行個體的次要連線，協助平衡不同節點的負載。
 
-Adobe Commerce可以非同步方式讀取多個資料庫或Redis執行個體。 如果您在雲端基礎結構上使用Commerce，您可以編輯`.magento.env.yaml`檔案中的[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)和[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)值來設定次要連線。 只有一個節點需要處理讀寫流量，因此將變數設定為`true`會導致建立唯讀流量的次要連線。 將值設定為`false`以從`env.php`檔案中移除任何現有的唯讀連線陣列。
+Adobe Commerce可以非同步方式讀取多個資料庫或Redis執行個體。 如果您在雲端基礎結構上使用Commerce，您可以編輯`.magento.env.yaml`檔案中的[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)和[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)值來設定次要連線。 只有一個節點需要處理讀寫流量，因此將變數設定為`true`會導致建立唯讀流量的次要連線。 將值設定為`false`以從`env.php`檔案中移除任何現有的唯讀連線陣列。
 
 `.magento.env.yaml`檔案的範例：
 

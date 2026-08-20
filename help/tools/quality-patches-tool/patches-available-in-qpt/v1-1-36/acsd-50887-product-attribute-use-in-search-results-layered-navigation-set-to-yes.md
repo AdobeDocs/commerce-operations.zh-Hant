@@ -5,9 +5,9 @@ feature: Attributes, Products, Search, Storefront
 role: Admin, Developer
 exl-id: 5e797121-c386-4aca-9139-0a02a60be38a
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -45,8 +45,8 @@ ACSD-50887修補程式修正了產品屬性屬性&#x200B;*[!UICONTROL Use in Sea
    * *[!UICONTROL Use in Search Results Layered Navigation]=是*
    * *名稱= Test_attribute*
    * *選項*：
-      * *貼紙*
-      * *挑選器*
+     * *貼紙*
+     * *挑選器*
 
 1. 將新屬性加入預設屬性集。
 1. 建立兩個產品：
@@ -69,7 +69,7 @@ ACSD-50887修補程式修正了產品屬性屬性&#x200B;*[!UICONTROL Use in Sea
 
 <u>預期結果</u>：
 
-只傳回產品&#x200B;*貼紙*，因為當[!DNL Elasticsearch]設定為&#x200B;*[!UICONTROL Use in Search]*&#x200B;否&#x200B;*時，*&#x200B;將不會索引Test_attribute。
+只傳回產品&#x200B;*貼紙*，因為當&#x200B;*[!UICONTROL Use in Search]*&#x200B;設定為&#x200B;*否*&#x200B;時，[!DNL Elasticsearch]將不會索引Test_attribute。
 
 <u>實際結果</u>：
 
@@ -79,15 +79,15 @@ ACSD-50887修補程式修正了產品屬性屬性&#x200B;*[!UICONTROL Use in Sea
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
-* [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)的新工具。
-* [使用 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)指南中的[!UICONTROL Quality Patches Tool]，檢查您的Adobe Commerce問題是否有修補程式可用。
+* [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的新工具。
+* [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
 
 
-如需QPT中其他修補程式的詳細資訊，請參閱[[!DNL Quality Patches Tool]指南中的](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)：搜尋修補程式[!DNL Quality Patches Tool]。
+如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。

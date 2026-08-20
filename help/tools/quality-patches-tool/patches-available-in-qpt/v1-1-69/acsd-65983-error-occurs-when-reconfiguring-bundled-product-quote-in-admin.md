@@ -1,16 +1,16 @@
 ---
 title: ACSD-65983：在Admin中重新設定套件式產品報價時發生錯誤
-description: 套用ACSD-65983修補程式以修正嘗試在後端的[!UICONTROL Sales] > [!UICONTROL Quotes] > [!UICONTROL Edit]畫面中設定套件組合產品時出現錯誤的Adobe Commerce問題。
+description: 套用ACSD-65983修補程式以修正嘗試在後端的[!UICONTROL Sales] &gt； [!UICONTROL Quotes] &gt； [!UICONTROL Edit]畫面中設定套件組合產品時出現錯誤的Adobe Commerce問題。
 feature: B2B, Quotes
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8a8f2b273bcbcf135677ad7ca289398bf660e02e
+exl-id: d03d09bc-a444-486f-ad6b-fddbbf795d8a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65983：在Admin中重新設定套件式產品報價時發生錯誤
 
@@ -28,7 +28,7 @@ ACSD-65983修補程式修正在Admin後端重新設定隨附的產品報價傳�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -37,7 +37,7 @@ ACSD-65983修補程式修正在Admin後端重新設定隨附的產品報價傳�
 <u>要再現的步驟</u>：
 
 1. 移至[管理]面板並啟用&#x200B;**[!UICONTROL B2B Feature]**： **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Feature]**。
-1. 建立固定數量的套件組合產品（例如： *$10*），並加入&#x200B;*0*&#x200B;數量、*選項1*&#x200B;中的&#x200B;**2**&#x200B;以及&#x200B;*選項2*&#x200B;中的&#x200B;**other**&#x200B;的三個或更多簡單產品。
+1. 建立固定數量的套件組合產品（例如： *$10*），並加入&#x200B;*0*&#x200B;數量、**選項1**&#x200B;中的&#x200B;*2*&#x200B;以及&#x200B;**選項2**&#x200B;中的&#x200B;*other*&#x200B;的三個或更多簡單產品。
 1. 從前端建立公司帳戶。
 1. 移至&#x200B;**[!UICONTROL Catalog]** > **[!UICONTROL Shared Catalogs]**，將建立的公司和產品指派給新的/自訂共用目錄。
 1. 在前端以&#x200B;**公司使用者**&#x200B;身分登入，並從套件新增一個簡單的產品至購物車。
@@ -61,8 +61,8 @@ ACSD-65983修補程式修正在Admin後端重新設定隨附的產品報價傳�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)
 
 ## 相關閱讀
 

@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: 405
+source-wordcount: 392
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ ht-degree: 0%
 
   例如，您在管理員中執行的任何操作：
 
-   - **商店** > **設定** > **設定** >一般> **一般**
-   - **商店** > **設定** > **設定** >一般> **貨幣設定**
-   - **商店** > **設定** > **設定** >一般> **商店電子郵件地址**
+  - **商店** > **設定** > **設定** >一般> **一般**
+  - **商店** > **設定** > **設定** >一般> **貨幣設定**
+  - **商店** > **設定** > **設定** >一般> **商店電子郵件地址**
 
   當Commerce偵測到這類變更時，會顯示一則訊息，通知您重新整理快取。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 設定Commerce以清除清漆
 
-使用[`magento setup:config:set`](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset)命令設定Varnish主機後，Commerce會清除清漆主機。
+使用[`magento setup:config:set`](/help/tools/reference/commerce-on-premises.md#setupconfigset)命令設定清漆主機後，Commerce會清除清漆主機。
 
 您可以使用選用的引數`--http-cache-hosts`引數，指定以逗號分隔的Varnish主機和監聽連線埠清單。 設定所有Varnish主機，無論您有一台或多台。 （請勿以空格字元分隔主機。）
 

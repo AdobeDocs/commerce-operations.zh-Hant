@@ -2,7 +2,7 @@
 title: 備份及回覆檔案系統、媒體及資料庫
 description: 請依照下列步驟備份和還原Adobe Commerce應用程式。
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->對於雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端指南_&#x200B;中的[快照和備份管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)。
+>對於雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端指南_&#x200B;中的[快照和備份管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)。
 
 ## 啟用備份
 

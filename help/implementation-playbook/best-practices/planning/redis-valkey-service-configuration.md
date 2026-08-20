@@ -26,7 +26,7 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 55f36b56b5d719ace064eccf42675cd8f9b7683b
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: 3304
 ht-degree: 0%
@@ -91,7 +91,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-如需環境變陣列態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)。
+如需環境變陣列態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)。
 
 >[!TAB Redis組態]
 
@@ -103,7 +103,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-如需環境變陣列態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)。
+如需環境變陣列態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)。
 
 >[!ENDTABS]
 

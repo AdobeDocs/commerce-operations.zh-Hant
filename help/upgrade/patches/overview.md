@@ -2,9 +2,9 @@
 title: 修補程式的運作方式
 description: 瞭解Adobe Commerce的各種修補程式型別及其運作方式。
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -98,4 +98,4 @@ index c8a6fef58d31..7d01c195791e 100644
 
 >[!NOTE]
 >
->若要將修補程式套用至雲端基礎結構專案上的Adobe Commerce，請參閱[雲端上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)中的&#x200B;_套用修補程式_。
+>若要將修補程式套用至雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端上的Commerce指南_&#x200B;中的[套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。

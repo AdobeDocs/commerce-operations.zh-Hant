@@ -3,9 +3,9 @@ title: '[!UICONTROL bots]索引標籤'
 description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL bots]標籤。
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1952'
 ht-degree: 0%
 
 ---
@@ -18,19 +18,19 @@ ht-degree: 0%
 
 * [!DNL bot]是執行重複式自動化工作的軟體。 隨著人工智慧和機器學習的演化，[!DNL bots]的任務、方法和互動正在改變。 有&#x200B;*個良好* [!DNL bots]可抓取網站並將其新增至網際網路搜尋引擎，使其受益。 這會引導網際網路使用者透過搜尋引擎結果前往網站。 *良好* [!DNL bot]通常會遵守`robots.txt`檔案或搜尋引擎主控台設定置於[!DNL bot]上的界限。 邊界可以限制對場地或部分場地的存取。
 * 惡意的[!DNL bots]會忽略`robots.txt`檔案，或透過HTTP要求資料的要求使用者代理程式欄位，偽裝好的[!DNL bot]。 惡意[!DNL bots]所做的某些動作：
-   * 將負載新增至網站，以拒絕合法使用者存取該網站。
-   * 未經許可刮取及重複使用內容。
-   * 註冊假帳號以泛濫電子郵件服務或地址，或重新導向至其他網站([!DNL SPAM bots])。
-   * 建立假的檢視([!DNL Viewbots])。
-   * 購買產品或票證([!DNL Focused bots])。
+  * 將負載新增至網站，以拒絕合法使用者存取該網站。
+  * 未經許可刮取及重複使用內容。
+  * 註冊假帳號以泛濫電子郵件服務或地址，或重新導向至其他網站([!DNL SPAM bots])。
+  * 建立假的檢視([!DNL Viewbots])。
+  * 購買產品或票證([!DNL Focused bots])。
 * 管理[!DNL bots]
-   * [!DNL Observation for Adobe Commerce]擁有[!DNL bot]流量的檢視：
-      * 它會顯示未快取的[!DNL bot]活動總數，此活動會顯示[!DNL bot]正在新增至網站的負載以及該負載何時發生。
-      * 它會顯示正在產生錯誤的[!DNL bots]。 通常，如果[!DNL bot]正在新增導致網站問題的負載，該[!DNL bot]或IP位址的錯誤頻率最高。
-      * 它顯示[!DNL bot]名稱（要求使用者代理程式欄位值）和要透過管理的IP位址：
-         * [!DNL Fastly] （速率限制或[!DNL VCLs]，會封鎖IP位址、範圍或依名稱值的[!DNL bots]）。
-         * 正在將良好的[!DNL bot]資訊新增至`robots.txt field`，以限制或限制網站存取速率。
-         * 透過搜尋引擎主控台管理[!DNL Bing]或[!DNL Google bots]。
+  * [!DNL Observation for Adobe Commerce]擁有[!DNL bot]流量的檢視：
+    * 它會顯示未快取的[!DNL bot]活動總數，此活動會顯示[!DNL bot]正在新增至網站的負載以及該負載何時發生。
+    * 它會顯示正在產生錯誤的[!DNL bots]。 通常，如果[!DNL bot]正在新增導致網站問題的負載，該[!DNL bot]或IP位址的錯誤頻率最高。
+    * 它顯示[!DNL bot]名稱（要求使用者代理程式欄位值）和要透過管理的IP位址：
+      * [!DNL Fastly] （速率限制或[!DNL VCLs]，會封鎖IP位址、範圍或依名稱值的[!DNL bots]）。
+      * 正在將良好的[!DNL bot]資訊新增至`robots.txt field`，以限制或限制網站存取速率。
+      * 透過搜尋引擎主控台管理[!DNL Bing]或[!DNL Google bots]。
 
 ## [!UICONTROL Experimental Potential Malicious Bots frame]
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **[!UICONTROL Experimental Potential Malicious Bots frame]**&#x200B;框架會執行12個不同的複雜查詢。 它會偵測惡意IP要求籤章，然後彙總結果，並以遞減順序加總及排序結果。 查詢包含CVE利用漏洞攻擊和其他惡意要求的許多資料簽章。 即使安全性修正/修補程式封鎖了利用漏洞，且對網站沒有威脅，該請求仍必須由網站處理。 要求數量可能會在短時間內變得相當大。 此框架不會顯示來自IP位址的總請求數，而是顯示有訊號指出請求具有可疑意圖的要求。
 
-請確定該流量為可疑流量，且並非源自可能傳送有效請求的[!DNL Content Distributed Network] (CDN)位址。 如果判斷要求來自CDN IP位址，請連絡該服務供應商，協助封鎖透過其網路的可疑流量。 如果您需要封鎖位址或要求URL，請參閱Adobe Commerce支援知識庫中的[在 [!DNL Fastly] 層級](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=zh-Hant)封鎖Adobe Commerce的惡意流量。
+請確定該流量為可疑流量，且並非源自可能傳送有效請求的[!DNL Content Distributed Network] (CDN)位址。 如果判斷要求來自CDN IP位址，請連絡該服務供應商，協助封鎖透過其網路的可疑流量。 如果您需要封鎖位址或要求URL，請參閱Adobe Commerce支援知識庫中的[在 [!DNL Fastly] 層級](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level)封鎖Adobe Commerce的惡意流量。
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 

@@ -4,9 +4,9 @@ description: 如果您是雲端基礎結構專業版的Adobe Commerce規劃架�
 feature: Observability, Support, Tools and External Services
 role: Admin
 exl-id: 3fc4b07f-4e27-4833-97a9-cf9741ae5648
-source-git-commit: 4560e7d000ad8333c3089b8b5e8ffd25f5d31b67
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果Adobe Commerce警示原則的已管理警示無法使用，可能是因為此帳戶是新建的或最近已設定[!DNL New Relic]。 每個星期二都會執行一個程式，將警示原則新增至這些帳戶。 下次程式執行後的第二天，您應該可以使用警示原則。 如果原則仍然遺失，[請提交Adobe Commerce支援請求](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case)並包含您的專案ID。
+>如果Adobe Commerce警示原則的已管理警示無法使用，可能是因為此帳戶是新建的或最近已設定[!DNL New Relic]。 每個星期二都會執行一個程式，將警示原則新增至這些帳戶。 下次程式執行後的第二天，您應該可以使用警示原則。 如果原則仍然遺失，[請提交Adobe Commerce支援請求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)並包含您的專案ID。
 
 請參閱下表中的知識庫文章連結，提供這些警示的疑難排解步驟：
 

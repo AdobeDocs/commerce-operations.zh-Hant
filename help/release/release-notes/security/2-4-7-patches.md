@@ -3,9 +3,9 @@ title: Adobe Commerce 2.4.7安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.7版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 last-update: 2026-05-12T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -19,15 +19,19 @@ ht-degree: 0%
 >
 >MySQL 8.0將於2026年4月30日起終止支援(EOS)。
 >
->在此日期之後，Adobe Commerce 2.4.7將不針對MySQL 8.0之後發行的任何MySQL版本提供相容性或>支援。Adobe將不會在此Adobe>Commerce發行版本中>驗證或支援較新的MySQL主要版本。
+>在此日期之後，Adobe Commerce 2.4.7將不再提供相容性或
+>支援在MySQL 8.0之後發行的任何MySQL版本。 Adobe不會
+>在此Adobe上驗證或支援較新的MySQL主要版本
+>Commerce版本行。
 >
->強烈建議所有執行2.4.7版的Adobe Commerce內部部署客戶>將其資料庫伺服器移轉至相容的MariaDB版本。
+>所有執行2.4.7版的Adobe Commerce內部部署客戶為
+>建議將其資料庫伺服器移轉至相容的MariaDB版本。
 
 ## 2.4.7-p10
 
 Adobe Commerce 2.4.7-p10安全性版本針對2.4.7舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-49](https://helpx.adobe.com/tw/security/products/magento/apsb26-49.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html)。
 
 {{b2b-patches}}
 
@@ -63,7 +67,7 @@ Adobe Commerce 2.4.7現在與RabbitMQ 4.2相容，後者處理RabbitMQ 4.1支援
 
 Adobe Commerce 2.4.7-p9安全性版本針對2.4.7舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-05](https://helpx.adobe.com/tw/security/products/magento/apsb26-05.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)。
 
 {{b2b-patches}}
 
@@ -83,7 +87,7 @@ Adobe Commerce 2.4.7已更新，以支援Composer 2.9.x，同時繼續與Compose
 
 Adobe Commerce 2.4.7-p8安全性版本針對2.4.7舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/tw/security/products/magento/apsb25-94.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)。
 
 {{b2b-patches}}
 
@@ -103,7 +107,7 @@ Adobe Commerce 2.4.7-p8安全性版本針對2.4.7舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.7-p7安全性版本針對2.4.7舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-71](https://helpx.adobe.com/tw/security/products/magento/apsb25-71.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)。
 
 {{b2b-patches}}
 
@@ -111,7 +115,7 @@ Adobe Commerce 2.4.7-p7安全性版本針對2.4.7舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.7-p6安全性版本針對2.4.7舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-50](https://helpx.adobe.com/tw/security/products/magento/apsb25-50.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)。
 
 {{b2b-patches}}
 
@@ -135,7 +139,7 @@ Adobe Commerce 2.4.7-p6安全性版本針對2.4.7舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.7-p5安全性版本針對2.4.7舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-26](https://helpx.adobe.com/tw/security/products/magento/apsb25-26.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)。
 
 {{b2b-patches}}
 
@@ -161,7 +165,7 @@ Adobe Commerce 2.4.7-p5安全性版本針對2.4.7舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.7-p4安全性版本針對2.4.7舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-08](https://helpx.adobe.com/tw/security/products/magento/apsb25-08.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)。
 
 {{b2b-patches}}
 
@@ -173,7 +177,7 @@ Adobe Commerce 2.4.7-p4安全性版本針對2.4.7舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.7-p3安全性版本針對2.4.7舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-73](https://helpx.adobe.com/tw/security/products/magento/apsb24-73.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)。
 
 {{b2b-patches}}
 
@@ -189,7 +193,7 @@ Adobe Commerce 2.4.7-p3安全性版本針對2.4.7舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.7-p2安全性版本針對2.4.7舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-61](https://helpx.adobe.com/tw/security/products/magento/apsb24-61.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)。
 
 ### 反白顯示
 
@@ -203,7 +207,7 @@ Adobe Commerce 2.4.7-p2安全性版本針對2.4.7舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.7-p1安全性版本針對2.4.7舊版中發現的弱點提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-40](https://helpx.adobe.com/tw/security/products/magento/apsb24-40.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)。
 
 ### 套用CVE-2024-34102的Hotfix
 
@@ -219,6 +223,6 @@ Adobe Commerce 2.4.7-p1安全性版本針對2.4.7舊版中發現的弱點提供�
 
 ### 此版本中包含的Hotfix
 
-Adobe Commerce 2.4.7-p1解決了UPS整合從SOAP移轉至REST API的範圍中發生的問題。 此問題會影響出貨到美國境外的客戶，使他們無法使用公制系統/SI測量方式（千克與公分）來建立搭配UPS的出貨。 請參閱[UPS送貨方法整合從SOAP移轉至RESTful API](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api)知識庫文章以取得詳細資料。
+Adobe Commerce 2.4.7-p1解決了UPS整合從SOAP移轉至REST API的範圍中發生的問題。 此問題會影響出貨到美國境外的客戶，使他們無法使用公制系統/SI測量方式（千克與公分）來建立搭配UPS的出貨。 請參閱[UPS送貨方法整合從SOAP移轉至RESTful API](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27146)知識庫文章以取得詳細資料。
 
 <!-- Last updated from includes: 2026-04-08 15:01:38 -->

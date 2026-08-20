@@ -3,9 +3,9 @@ title: 安全性概觀
 description: 閱讀Adobe Commerce應用程式安全性設定的簡短概觀。
 feature: Configuration, Security
 exl-id: e596d03f-8428-4ad7-a563-8b7f371ed5b4
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -19,10 +19,10 @@ ht-degree: 0%
 設定指南的安全性區段中的主題並非所有Commerce功能都完整。 其他Commerce指南中有許多與安全性相關的重要主題，例如：
 
 - [PHP開發人員指南](https://developer.adobe.com/commerce/php/development/security/)，瞭解Adobe Commerce開發人員可用來改善所建置元件安全性的資訊。
-- [安全性與法規遵循指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/security-and-compliance/overview)，瞭解安全性、隱私權與法規遵循的相關資訊，以及技術資源的連結。
+- [安全性與法規遵循指南](/help/security-and-compliance/overview.md)，瞭解安全性、隱私權與法規遵循的相關資訊，以及技術資源的連結。
 
 下列指南中現在同時包含數個安全性相關主題：
 
 - _擴充功能指南_&#x200B;中的[Google reCAPTCHA](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/captcha/security-google-recaptcha)。
 - _延伸指南_&#x200B;中的[雙因素驗證](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication)。
-- _安全性與法規遵循指南_&#x200B;中的[一般資料保護規範(GDPR)規範](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/security-and-compliance/privacy/gdpr)。
+- _安全性與法規遵循指南_&#x200B;中的[一般資料保護規範(GDPR)規範](/help/security-and-compliance/privacy/gdpr.md)。

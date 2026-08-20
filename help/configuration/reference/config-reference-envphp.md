@@ -2,9 +2,9 @@
 title: env.php參考
 description: 瞭解Adobe Commerce中的env.php檔案配置值和區段。 探索環境設定和組態選項。
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## 後端
 
-使用env.php中的&#x200B;**節點設定Commerce管理員URL的** frontName`backend`。
+使用env.php中的`backend`節點設定Commerce管理員URL的&#x200B;**frontName**。
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 快取
 
-使用`cache`檔案中的`env.php`節點，設定redis頁面和預設快取。
+使用`env.php`檔案中的`cache`節點，設定redis頁面和預設快取。
 
 ```conf
 'cache' => [
@@ -112,11 +112,11 @@ ht-degree: 0%
 
 下列選項可供使用：
 
-- `1` — 消費者繼續處理來自訊息佇列的訊息，直到達到`max_messages`檔案中指定的`env.php`值為止，然後再關閉TCP連線並終止消費者處理序。 如果佇列在達到`max_messages`值之前排空，消費者會等待更多訊息到達。
+- `1` — 消費者繼續處理來自訊息佇列的訊息，直到達到`env.php`檔案中指定的`max_messages`值為止，然後再關閉TCP連線並終止消費者處理序。 如果佇列在達到`max_messages`值之前排空，消費者會等待更多訊息到達。
 
   我們建議大型商戶使用此設定，因為系統預期訊息流程會持續不變，且不希望處理延遲。
 
-- `0` — 消費者處理佇列中的可用訊息、關閉TCP連線，然後終止。 即使已處理的訊息數小於`max_messages`檔案中指定的`env.php`值，消費者也不會等候其他訊息進入佇列。 這有助於防止因訊息佇列處理長時間延遲而導致cron工作發生問題。
+- `0` — 消費者處理佇列中的可用訊息、關閉TCP連線，然後終止。 即使已處理的訊息數小於`env.php`檔案中指定的`max_messages`值，消費者也不會等候其他訊息進入佇列。 這有助於防止因訊息佇列處理長時間延遲而導致cron工作發生問題。
 
   我們建議將此設定用於小型商家，這類商戶不希望持續傳送訊息流，且偏好節省運算資源，以換取在數天內沒有訊息時的輕微處理延遲。
 
@@ -146,7 +146,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-在[Commerce使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/encryption-key)中進一步瞭解&#x200B;_加密金鑰_。
+在&#x200B;_Commerce使用手冊_&#x200B;中進一步瞭解[加密金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/encryption-key)。
 
 ## db
 
@@ -188,8 +188,8 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-如果系統`queue/default_connection`檔案中指定了`env.php`，則此連線會用於透過系統的所有訊息佇列，除非已在`queue_topology.xml`、`queue_publisher.xml`或`queue_consumer.xml`檔案中定義特定連線。
-例如，如果`queue/default_connection`在`amqp`中是`env.php`，但在模組的佇列組態XML檔案中指定了`db`連線，模組將使用MySQL做為訊息代理人。
+如果系統`env.php`檔案中指定了`queue/default_connection`，則此連線會用於透過系統的所有訊息佇列，除非已在`queue_topology.xml`、`queue_publisher.xml`或`queue_consumer.xml`檔案中定義特定連線。
+例如，如果`queue/default_connection`在`env.php`中是`amqp`，但在模組的佇列組態XML檔案中指定了`db`連線，模組將使用MySQL做為訊息代理人。
 
 ## 目錄
 
@@ -211,7 +211,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-深入瞭解[可下載的網域](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd)。
+深入瞭解[可下載的網域](/help/tools/reference/commerce-on-premises.md#downloadabledomainsadd)。
 
 ## 安裝
 
@@ -371,7 +371,7 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 ```
 
 上述陣列的JSON編碼文字會是
-`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`。
+`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`.
 
 現在，將它設定為`MAGENTO_DC__OVERRIDE`作業系統變數的值。
 

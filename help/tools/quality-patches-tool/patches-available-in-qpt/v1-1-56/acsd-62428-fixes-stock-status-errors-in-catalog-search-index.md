@@ -5,16 +5,16 @@ feature: Inventory, Catalog Management
 role: Admin, Developer
 exl-id: 4b9d7e4c-f522-4d75-8fc9-dcf14287d02a
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # ACSD-62428：目錄搜尋索引中的庫存狀態錯誤
 
-ACSD-62428修補程式修正了SKU屬性未設定為可搜尋時，目錄搜尋索引中的`is_out_of_stock`值設定為不正確值的問題。 此修補程式可用於[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56。修補程式ID為ACSD-62428。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
+ACSD-62428修補程式修正了SKU屬性未設定為可搜尋時，目錄搜尋索引中的`is_out_of_stock`值設定為不正確值的問題。 此修補程式可用於[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56。 修補程式ID為ACSD-62428。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
 ## 受影響的產品和版本
 
@@ -58,8 +58,8 @@ Adobe Commerce （所有部署方法） 2.4.6 - 2.4.6-p8
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

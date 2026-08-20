@@ -2,7 +2,7 @@
 title: 訊息佇列取用者
 description: 瞭解Adobe Commerce訊息佇列使用者，包括與其相關的功能和系統組態設定。
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 | 消費者和說明 | Adobe Commerce | 具有B2B的Adobe Commerce | Magento Open Source |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-------------------------|---------------------|
 | `async.operations.all` | + | + | + |
-| 為[大量作業](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)的每個個別工作建立訊息，例如匯入或匯出料號、變更大量價格，以及將產品指定至倉庫。 當Admin系統組態設定中的&#x200B;[**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations)選項設為&#x200B;**[!UICONTROL Run asynchronously]**&#x200B;時為必要。 |                |                         |                     |
+| 為[大量作業](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations)的每個個別工作建立訊息，例如匯入或匯出料號、變更大量價格，以及將產品指定至倉庫。 當Admin系統組態設定中的&#x200B;[**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations)選項設為&#x200B;**[!UICONTROL Run asynchronously]**&#x200B;時為必要。 |                |                         |                     |
 | `codegeneratorProcessor` | + | + | + |
 | 以非同步方式在背景產生抵用券。 必須使用[批次抵用券產生](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html?lang=zh-Hant#method-2%3A-generate-a-batch-of-coupons)功能。 |                |                         |                     |
 | `commerce.eventing.event.publish` | + | + |                     |
@@ -52,7 +52,7 @@ ht-degree: 0%
 | `negotiableQuotePriceUpdate` |                | + |                     |
 | 更新可轉讓報價的價格。 在系統管理員組態設定中啟用&#x200B;[**[!UICONTROL Quotes]**](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/quotes/quotes)選項時需要。 |                |                         |                     |
 | `placeOrderProcessor` | + | + |                     |
-| 非同步[處理訂單](https://developer.adobe.com/commerce/php/module-reference/module-async-order/)，將訂單標示為已接收、將其放入訊息佇列，並以先進先出方式處理。 改善可處理訂單數的[最佳實務](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md)，因為客戶不需要等待後端程式完成才能看到成功訊息。 |                |                         |                     |
+| 非同步[處理訂單](https://developer.adobe.com/commerce/php/module-reference/module-async-order)，將訂單標示為已接收、將其放入訊息佇列，並以先進先出方式處理。 改善可處理訂單數的[最佳實務](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md)，因為客戶不需要等待後端程式完成才能看到成功訊息。 |                |                         |                     |
 | `product_action_attribute.update` | + | + | + |
 | 使用Admin進行[更新](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html?lang=zh-Hant)後，以非同步方式將變更寫入資料庫中的產品屬性。 |                |                         |                     |
 | `product_action_attribute.website.update` | + | + | + |

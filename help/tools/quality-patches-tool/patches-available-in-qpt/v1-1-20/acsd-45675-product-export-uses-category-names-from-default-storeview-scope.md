@@ -5,16 +5,16 @@ feature: Categories, Data Import/Export, Products
 role: Admin
 exl-id: ebe72038-511d-43e1-bd65-e5b468342f05
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
 
 # ACSD-45675：產品匯出使用預設商店檢視範圍的類別名稱
 
-ACSD-45675修補程式修正產品匯出使用預設商店檢視範圍的類別名稱的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20時，即可使用此修補程式。 修補程式ID為ACSD-45675。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。
+ACSD-45675修補程式修正產品匯出使用預設商店檢視範圍的類別名稱的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.20時，即可使用此修補程式。 修補程式ID為ACSD-45675。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。
 
 ## 受影響的產品和版本
 
@@ -62,7 +62,7 @@ ACSD-45675修補程式修正產品匯出使用預設商店檢視範圍的類別�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tools] >使用狀況](/help/tools/quality-patches-tool/usage.md) （在品質修補程式工具指南中）。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

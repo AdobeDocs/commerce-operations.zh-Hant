@@ -3,9 +3,9 @@ title: 應用程式初始化和啟動程式
 description: 閱讀Commerce應用程式的初始化和啟動程式邏輯。
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -67,13 +67,13 @@ ht-degree: 0%
 
 ## 進入點應用程式
 
-我們有下列入口點應用程式(亦即Commerce定義的應用程式，由網頁伺服器用來作為目錄索引)：
+我們有下列入口點應用程式（亦即Commerce定義的應用程式，由網頁伺服器用來作為目錄索引）：
 
 ### HTTP進入點
 
 [\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http)的運作方式如下：
 
-1. 決定[應用程式區域](https://developer.adobe.com/commerce/php/architecture/modules/areas/)。
+1. 決定[應用程式區域](https://developer.adobe.com/commerce/php/architecture/modules/areas)。
 1. 啟動前端控制器和路由系統，以尋找並執行控制器動作。
 1. 使用HTTP回應物件來傳回從控制器動作取得的結果。
 1. 錯誤處理（按照以下優先順序）：
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ### 靜態資源進入點
 
-[\Magento\Framework\App\StaticResource](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/StaticResource.php)是用於擷取靜態資源(例如CSS、JavaScript和影像)的應用程式。 它會延遲對靜態資源的所有動作，直到請求資源為止。
+[\Magento\Framework\App\StaticResource](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/StaticResource.php)是用於擷取靜態資源（例如CSS、JavaScript和影像）的應用程式。 它會延遲對靜態資源的所有動作，直到請求資源為止。
 
 >[!INFO]
 >

@@ -4,9 +4,9 @@ description: 瞭解如何在Adobe Commerce中建立和設定自訂記錄檔。 �
 feature: Configuration, Logs
 badge: label="由Atwix提供" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ ht-degree: 0%
 
 ## 在`di.xml`中設定自訂記錄檔
 
-此範例說明如何使用[虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)將`debug`訊息記錄到自訂記錄檔而非標準`/var/log/debug.log`中。
+此範例說明如何使用[虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types)將`debug`訊息記錄到自訂記錄檔而非標準`/var/log/debug.log`中。
 
-1. 在您的模組的`di.xml`檔案中，將自訂記錄檔定義為[虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)。
+1. 在您的模組的`di.xml`檔案中，將自訂記錄檔定義為[虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types)。
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -44,9 +44,9 @@ ht-degree: 0%
    </virtualType>
    ```
 
-   `name`的`Magento\Payment\Model\Method\MyCustomDebug`值必須是唯一的。
+   `Magento\Payment\Model\Method\MyCustomDebug`的`name`值必須是唯一的。
 
-1. 在另一具有唯一[的](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)虛擬型別`name`中定義處理常式：
+1. 在另一具有唯一`name`的[虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types)中定義處理常式：
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ ht-degree: 0%
    </virtualType>
    ```
 
-1. 在`MyCustomLogger`物件中插入[&#x200B; &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)虛擬型別`Magento\Payment\Model\Method\Logger`：
+1. 在`Magento\Payment\Model\Method\Logger`物件中插入`MyCustomLogger` [虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types)：
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -68,7 +68,7 @@ ht-degree: 0%
    </type>
    ```
 
-1. 虛擬類別`Magento\Payment\Model\Method\MyCustomDebug`已插入`debug`類別中`$logger`屬性的`Magento\Payment\Model\Method\Logger`處理常式。
+1. 虛擬類別`Magento\Payment\Model\Method\MyCustomDebug`已插入`Magento\Payment\Model\Method\Logger`類別中`$logger`屬性的`debug`處理常式。
 
    ```xml
    ...
@@ -117,7 +117,7 @@ ht-degree: 0%
    }
    ```
 
-1. 在模組的[檔案中，將此類別的處理常式定義為](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types)虛擬型別`di.xml`。
+1. 在模組的`di.xml`檔案中，將此類別的處理常式定義為[虛擬型別](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types)。
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -193,7 +193,7 @@ ht-degree: 0%
    }
    ```
 
-1. 類別`Vendor\ModuleName\Logger\Handler\ErrorHandler`已插入到`error`中`$logger`屬性的`Vendor\ModuleName\Observer\MyObserver`處理常式。
+1. 類別`Vendor\ModuleName\Logger\Handler\ErrorHandler`已插入到`Vendor\ModuleName\Observer\MyObserver`中`$logger`屬性的`error`處理常式。
 
    ```xml
    ...

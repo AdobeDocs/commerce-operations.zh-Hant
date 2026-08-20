@@ -2,9 +2,9 @@
 title: 共擔責任安全性與營運模式
 description: 瞭解在雲端基礎結構專案中，Adobe Commerce中涉及的每一方的安全性責任。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '3270'
+source-wordcount: '3252'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe負責下列工作：
 * 確保安全的應用程式開發
 * 如果商戶的付款處理程式要求，請取得PCI認證
 * 回應和回應安全性事件
-* 在主動支援的版本上維護所有協力廠商相依性、平台服務和Adobe Commerce服務擴充功能。 Adobe不針對執行不支援之相依性版本的部署提供安全性支援或協助。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)和[產品可用性矩陣](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
+* 在主動支援的版本上維護所有協力廠商相依性、平台服務和Adobe Commerce服務擴充功能。 Adobe不針對執行不支援之相依性版本的部署提供安全性支援或協助。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)和[產品可用性矩陣](/help/release/product-availability.md)。
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ Adobe也會確保商家基礎建設的可用性，如適用的SLA中所商定。
   * Adobe Commerce服務擴充功能
   * 所有協力廠商擴充功能與自訂整合
 
-  Adobe不支援執行不支援版本之部署。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)和[產品可用性矩陣](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
+  Adobe不支援執行不支援版本之部署。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)和[產品可用性矩陣](/help/release/product-availability.md)。
 
 ## 雲端服務提供者的責任
 

@@ -5,9 +5,9 @@ feature: Price Rules
 role: Admin, Developer
 exl-id: fb6dee57-281e-4165-8b70-7ff5949eb677
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ ACSD-63469修補程式修正套用多個規則時，無法正確套用整個購�
 1. 建立兩種價格分別為$850和$85的產品，並將它們的特殊價格分別設定為$765和$68。
 1. 建立兩個&#x200B;**[!UICONTROL Cart Price Rules]**，如下所示：
    * 規則1
-      * **[!UICONTROL Conditions]**：針對$850產品，將&#x200B;*數量*&#x200B;設定為&#x200B;*等於或大於2*
-      * **[!UICONTROL Actions]**：套用&#x200B;**[!UICONTROL Fixed amount discount for whole cart]** / *$153*
+     * **[!UICONTROL Conditions]**：針對$850產品，將&#x200B;*數量*&#x200B;設定為&#x200B;*等於或大於2*
+     * **[!UICONTROL Actions]**：套用&#x200B;**[!UICONTROL Fixed amount discount for whole cart]** / *$153*
    * 規則2
-      * **[!UICONTROL Conditions]**：對於$85的產品，將&#x200B;*數量*&#x200B;設定為&#x200B;*等於或大於2*
-      * **[!UICONTROL Actions]**：套用&#x200B;**[!UICONTROL Fixed amount discount for whole cart]** / *$14*
+     * **[!UICONTROL Conditions]**：對於$85的產品，將&#x200B;*數量*&#x200B;設定為&#x200B;*等於或大於2*
+     * **[!UICONTROL Actions]**：套用&#x200B;**[!UICONTROL Fixed amount discount for whole cart]** / *$14*
 1. 將兩個產品新增至購物車，每個產品的數量為2。
 
 <u>預期結果</u>：
@@ -58,8 +58,8 @@ ACSD-63469修補程式修正套用多個規則時，無法正確套用整個購�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 安裝修補程式後所需的其他步驟
 
