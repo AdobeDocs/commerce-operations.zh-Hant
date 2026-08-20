@@ -56,7 +56,7 @@ GTmetrix是一種可用於壓力測試的工具。 設定GTmetrix來復寫並乘
 
 ### 識別並解決效能問題
 
-使用New Relic和Adobe Commerce的Observation等各種工具來偵測瓶頸並有效最佳化Commerce網站，進而解決效能問題。 雲端基礎結構上的Adobe Commerce包含[New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)，而且雲端和內部部署都包含Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)的[觀察。
+使用New Relic和Adobe Commerce的Observation等各種工具來偵測瓶頸並有效最佳化Commerce網站，進而解決效能問題。 雲端基礎結構上的Adobe Commerce包含[New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)，而且雲端和內部部署都包含Adobe Commerce[&#128279;](/help/tools/observation-for-adobe-commerce/intro.md)的觀察。
 
 使用這些工具來分析網站效能，並找出與下列相關之效能問題：
 
@@ -81,7 +81,7 @@ GTmetrix是一種可用於壓力測試的工具。 設定GTmetrix來復寫並乘
 
 高流量的網站經常會遇到資料庫瓶頸，主要原因是依賴單一MySQL伺服器。 您可以實作資料庫叢集化來解決這些瓶頸問題，這是一種可改善效能並確保高可用性的分散式架構。
 
-資料庫叢集可讓多個Web節點連線至多個MySQL伺服器，將尖峰流量期間與資料庫相關問題的影響降到最低。 使用Galera Cluster之類的工具，為Commerce網站設定資料庫叢集。 Galera叢集包含在雲端基礎結構](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture)上部署的[個Adobe Commerce專案。
+資料庫叢集可讓多個Web節點連線至多個MySQL伺服器，將尖峰流量期間與資料庫相關問題的影響降到最低。 使用Galera Cluster之類的工具，為Commerce網站設定資料庫叢集。 Galera叢集包含在雲端基礎結構[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture)上部署的個Adobe Commerce專案。
 
 #### 最佳化MySQL查詢
 
@@ -113,4 +113,4 @@ Cron工作在處理網站背景工作（例如產生報表和編制產品索引�
 - _Commerce系統管理使用手冊_&#x200B;中的[Cron （排程工作）](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)
 - [應用程式設定 — crons屬性](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) （雲端基礎結構）
 - [設定並執行crons](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) （內部部署）
-- Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)的[觀察結果（請參閱[!UICONTROL Cron]和[!UICONTROL MySQL]標籤）。
+- Adobe Commerce[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html)的觀察結果（請參閱[!UICONTROL Cron]和[!UICONTROL MySQL]標籤）。
