@@ -2,9 +2,9 @@
 title: ' [!DNL Upgrade Compatibility Tool]的總覽'
 description: 瞭解 [!DNL Upgrade Compatibility Tool] 以及它如何協助您進行Adobe Commerce專案。
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -47,13 +47,13 @@ ht-degree: 0%
 
 [!DNL Upgrade Compatibility Tool]使用我們[編碼標準](https://developer.adobe.com/commerce/php/coding-standards/)中定義的規則，以確保您的專案遵循Adobe Commerce最佳實務，並協助您改善及擴充[!DNL Upgrade Compatibility Tool]。
 
-請參考[Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/)主題，以取得有關協助撰寫程式碼標準的更多資訊。
+請參考[Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing)主題，以取得有關協助撰寫程式碼標準的更多資訊。
 
 ## 資源
 
 請參閱下列資源，協助您瞭解Adobe Commerce升級：
 
 - [升級指南](../overview.md)提供典型Adobe Commerce升級歷程的概觀，以及此歷程中要遵循的最佳實務。
-- [即將發行版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)頁面提供已排程和即將發行的日期。
+- [即將發行版本](/help/release/schedule.md)頁面提供已排程和即將發行的日期。
 - [社群資源](https://developer.adobe.com/commerce/contributor/community/)頁面將放置以開始討論，或尋找更多資訊。
 - 請檢視[相關工具](../upgrade-compatibility-tool/related-tools.md)頁面，瞭解一般升級歷程中的實用工具。

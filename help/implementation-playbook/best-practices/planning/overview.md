@@ -4,9 +4,9 @@ description: 瞭解Adobe Commerce專案規劃階段的實作最佳實務。
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -42,15 +42,15 @@ ht-degree: 1%
     <td>設定網站、商店和商店檢視以最大化網站效能。</td>
   </tr>
   <tr>
-    <td><a href="https://business.adobe.com/tw/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">常見設定問題</a></td>
+    <td><a href="https://business.adobe.com/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">常見設定問題</a></td>
     <td>修正和防止Adobe Commerce網站最常見的五個設定問題。</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=zh-Hant">快取</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">快取</a></td>
     <td>使用快取管理工具來改善網站的效能。</td>
   </tr>
   <tr>
-    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">全頁快取</a></td>
+    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content">全頁快取</a></td>
     <td>瞭解如何在Adobe Commerce擴充功能中實作快取時，使用公開資料。</td>
   </tr>
   <tr>
@@ -76,11 +76,11 @@ ht-degree: 1%
     <td colspan="2"><em>服務設定</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=zh-Hant">設定Fastly</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">設定Fastly</a></td>
     <td>在雲端基礎結構專案上為您的Adobe Commerce設定Fastly服務。</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=zh-Hant">設定New Relic的通知通道</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic">設定New Relic的通知通道</a></td>
     <td>存取您的New Relic控制面板，並分析雲端基礎結構專案上Adobe Commerce的資料。</td>
   </tr>
   <tr>

@@ -2,9 +2,9 @@
 title: 升級實作
 description: 瞭解Adobe Commerce專案升級實作的不同階段。
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 3c54a3c429a3dadc826bffcb91f99a5a3a31b42c
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '857'
 ht-degree: 1%
 
 ---
@@ -29,9 +29,9 @@ ht-degree: 1%
 
 - **[!DNL Upgrade Compatibility Tool]個結果** — 此工具將您目前的程式碼與目標版本的程式碼進行比較，並產生需要解決的所有問題的報告，讓任何升級變得更快速輕鬆。 檢視[[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md)。 報表的關鍵詳細資料包括：
 
-   - 目前安裝的版本
-   - 升級目標版本
-   - 發現嚴重錯誤的數量和詳細資訊
+  - 目前安裝的版本
+  - 升級目標版本
+  - 發現嚴重錯誤的數量和詳細資訊
 
   >[!TIP]
   >
@@ -88,4 +88,4 @@ UAT是升級的最後階段之一，需要檢閱及驗證網站。 您也必須�
 
 網站啟動後，請務必檢查您的分析資料、Google Search Console和其他資源，確保沒有未預期的問題，且一切如預期般運作。
 
-透過精心設計的監控工具來監控效能，永遠是很好的做法。 監控網站效能的工具和方式有很多種，因此請務必挑選適合您組織的工具。 我們建議使用雲端基礎結構管理系統的Adobe Commerce客戶運用[New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=zh-Hant)等服務來監視網站效能。
+透過精心設計的監控工具來監控效能，永遠是很好的做法。 監控網站效能的工具和方式有很多種，因此請務必挑選適合您組織的工具。 我們建議使用雲端基礎結構管理系統的Adobe Commerce客戶運用[New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)等服務來監視網站效能。
