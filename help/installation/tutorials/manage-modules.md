@@ -2,9 +2,9 @@
 title: 啟用或停用模組
 description: 瞭解如何使用模組狀態和相關選項，從命令列啟用、停用和檢查Adobe Commerce模組的狀態。
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 >[!NOTE]
 >
->您無法直接在雲端專案上啟用或停用模組。 您必須在本機執行這些命令，然後將變更推送到環境的`app/etc/config.php`檔案。 請參閱[Pro專案工作流程：部署工作流程](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=zh-Hant#deployment-workflow)。
+>您無法直接在雲端專案上啟用或停用模組。 您必須在本機執行這些命令，然後將變更推送到環境的`app/etc/config.php`檔案。 請參閱[Pro專案工作流程：部署工作流程](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)。
 
 ## 啟用、停用模組
 

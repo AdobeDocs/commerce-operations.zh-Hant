@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)]疑難排解指南'
 description: 疑難排解 [!DNL Cloud Automation Patching Service (CAPS)]中的常見問題和錯誤訊息
 hide: true
-source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ ht-degree: 0%
 
 **原因：**&#x200B;暫時性問題導致[!DNL CAPS]無法連線至GitHub
 
-**解決方案：**&#x200B;請稍候幾分鐘，然後再次嘗試操作。 如果錯誤持續發生，請連絡[Adobe Commerce雲端支援](https://experienceleague.adobe.com/home?lang=zh-Hant#support)
+**解決方案：**&#x200B;請稍候幾分鐘，然後再次嘗試操作。 如果錯誤持續發生，請連絡[Adobe Commerce雲端支援](https://experienceleague.adobe.com/home#support)
 
 #### 「逾時內未建立環境」（GitHub連線的專案）
 
@@ -180,7 +180,7 @@ ht-degree: 0%
 
 **原因：**&#x200B;專案的GitHub整合已停用`fetch-branches`選項，所以暫存分支[!DNL CAPS]推播不會同步，而且永遠不會建立整合環境。
 
-**解決方案：**&#x200B;啟用整合的[`fetch-branches`選項](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)，然後重試作業。 請參閱[為 [!DNL CAPS]](github-integration.md)設定GitHub整合。
+**解決方案：**&#x200B;啟用整合的[`fetch-branches`選項](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)，然後重試作業。 請參閱[為 [!DNL CAPS]](github-integration.md)設定GitHub整合。
 
 ### 資源與配額錯誤
 
@@ -243,8 +243,8 @@ ht-degree: 0%
 
 ### 相關主題
 
-* [Adobe Commerce Cloud檔案](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce安裝指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/overview)
+* [Adobe Commerce Cloud檔案](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerce安裝指南](/help/installation/overview.md)
 * [大寫字介紹](intro.md)
 * [如何存取](access.md)
 * [工作流程概觀](workflow.md)

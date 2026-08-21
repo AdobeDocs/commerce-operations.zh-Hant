@@ -4,7 +4,7 @@ description: 瞭解如何在雲端基礎結構上部署Adobe Commerce時，設�
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### 將儲存引擎變更為InnoDB
 
-在宣告資料表的`db_schema.xml`檔案中，將對應的`table`節點的`engine`屬性值設定為`innodb`。 如需參考，請參閱我們的開發人員檔案中的[設定宣告式結構描述>資料表節點](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/)。
+在宣告資料表的`db_schema.xml`檔案中，將對應的`table`節點的`engine`屬性值設定為`innodb`。 如需參考，請參閱我們的開發人員檔案中的[設定宣告式結構描述>資料表節點](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration)。
 
 宣告式配置是在Adobe Commerce的雲端基礎結構2.3版中引入。
 
@@ -59,9 +59,9 @@ Adobe建議您一律在雲端基礎結構專案中為您的Adobe Commerce設定E
 
 如需設定指示，請參閱雲端上Adobe Commerce的開發人員指南：
 
-- [設定OpenSearch服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [設定OpenSearch服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
 
-- [設定Elasticsearch服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [設定Elasticsearch服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
 
 ## 避免自訂觸發器
 
@@ -76,14 +76,14 @@ Adobe建議您一律在雲端基礎結構專案中為您的Adobe Commerce設定E
 
 ## 將[!DNL ECE-Tools]升級至2002.0.21版或更新版本 {#ece-tools-version}
 
-若要避免cron死結的潛在問題，請將ECE-Tools升級至2002.0.21版或更新版本。 如需指示，請參閱我們的開發人員檔案中的[更新`ece-tools`版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package)。
+若要避免cron死結的潛在問題，請將ECE-Tools升級至2002.0.21版或更新版本。 如需指示，請參閱我們的開發人員檔案中的[更新`ece-tools`版本](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。
 
 ## 安全地切換索引器模式
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 切換索引器會產生[!DNL data definition language] (DDL)陳述式來建立觸發程式，這可能會導致資料庫鎖定。 您可以在變更設定前，先將網站置於維護模式並停用cron工作，即可避免此問題。
-如需指示，請參閱*Adobe Commerce設定指南*&#x200B;中的[設定索引子](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=zh-Hant#configure-indexers-1)。
+如需指示，請參閱*Adobe Commerce設定指南*&#x200B;中的[設定索引子](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1)。
 
 ## 請勿在生產環境中執行DDL陳述式
 
@@ -95,7 +95,7 @@ Adobe建議您一律在雲端基礎結構專案中為您的Adobe Commerce設定E
 
 啟用管理員的訂單封存，以隨著訂單資料成長，減少Sales表格所需的空間。 封存可節省MySQL磁碟空間並改善簽出效能。
 
-請參閱Adobe Commerce商家檔案中的[啟用封存](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=zh-Hant)。
+請參閱Adobe Commerce商家檔案中的[啟用封存](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html)。
 
 ## 其他資訊
 

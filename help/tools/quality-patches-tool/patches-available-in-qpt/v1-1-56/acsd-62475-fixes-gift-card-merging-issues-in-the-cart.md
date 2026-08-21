@@ -5,10 +5,10 @@ feature: Shopping Cart, Quotes
 role: Admin, Developer
 exl-id: fc97c3c0-dc1b-4546-aad0-ef3b4b6a3415
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 0%
+source-wordcount: '412'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ ACSD-62475修補程式修正禮卡產品不同詳細資料會不正確合併至�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -37,8 +37,8 @@ ACSD-62475修補程式修正禮卡產品不同詳細資料會不正確合併至�
 <u>要再現的步驟</u>：
 
 1. 使用下列設定建立[!UICONTROL Gift Card]產品：
-   * **[!UICONTROL Card Type]**： [!UICONTROL Virtual]
-   * **[!UICONTROL Amount]**： 10
+   * **[!UICONTROL Card Type]**: [!UICONTROL Virtual]
+   * **[!UICONTROL Amount]**: 10
 
 1. 在店面，建立新使用者並登入。
 
@@ -71,8 +71,8 @@ ACSD-62475修補程式修正禮卡產品不同詳細資料會不正確合併至�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

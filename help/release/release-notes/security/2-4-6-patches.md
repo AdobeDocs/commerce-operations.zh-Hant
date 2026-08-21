@@ -2,10 +2,10 @@
 title: Adobe Commerce 2.4.6安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.6版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-last-update: 2026-06-18T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2365'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,13 @@ ht-degree: 0%
 >
 >MySQL 8.0將於2026年4月30日起終止支援(EOS)。
 >
->在此日期之後，Adobe Commerce 2.4.6將不會針對MySQL 8.0之後發行的任何MySQL版本提供相容性或>支援。Adobe將不會在此Adobe>Commerce發行版本中>驗證或支援較新的MySQL主要版本。
+>在此日期之後，Adobe Commerce 2.4.6將不再提供相容性或
+>支援在MySQL 8.0之後發行的任何MySQL版本。 Adobe不會
+>在此Adobe上驗證或支援較新的MySQL主要版本
+>Commerce版本行。
 >
->強烈建議所有執行2.4.6版的Adobe Commerce內部部署客戶>將其資料庫伺服器移轉至相容的MariaDB版本。
+>所有執行2.4.6版的Adobe Commerce內部部署客戶為
+>建議將其資料庫伺服器移轉至相容的MariaDB版本。
 >
 >雲端上的Adobe Commerce客戶必須在支援的版本上維持平台相依性。 請參閱生命週期原則中的[平台相依性](../../lifecycle-policy.md#platform-dependencies)。
 >
@@ -33,7 +37,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.6-p15安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-49](https://helpx.adobe.com/tw/security/products/magento/apsb26-49.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html)。
 
 {{b2b-patches}}
 
@@ -65,7 +69,7 @@ Adobe Commerce 2.4.6現在與RabbitMQ 4.2相容，後者處理RabbitMQ 4.1支援
 
 Adobe Commerce 2.4.6-p14安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-05](https://helpx.adobe.com/tw/security/products/magento/apsb26-05.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html)。
 
 {{b2b-patches}}
 
@@ -87,7 +91,7 @@ Adobe Commerce 2.4.6已經過驗證，可搭配安全PHPUnit發行版本所需�
 
 Adobe Commerce 2.4.6-p13安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/tw/security/products/magento/apsb25-94.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)。
 
 {{b2b-patches}}
 
@@ -119,7 +123,7 @@ composer require magento/inventory-composer-installer
 
 Adobe Commerce 2.4.6-p12安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-71](https://helpx.adobe.com/tw/security/products/magento/apsb25-71.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html)。
 
 {{b2b-patches}}
 
@@ -127,7 +131,7 @@ Adobe Commerce 2.4.6-p12安全性版本針對2.4.6舊版中發現的漏洞提供
 
 Adobe Commerce 2.4.6-p11安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-50](https://helpx.adobe.com/tw/security/products/magento/apsb25-50.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html)。
 
 {{b2b-patches}}
 
@@ -151,7 +155,7 @@ Adobe Commerce 2.4.6-p11安全性版本針對2.4.6舊版中發現的漏洞提供
 
 Adobe Commerce 2.4.6-p10安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-26](https://helpx.adobe.com/tw/security/products/magento/apsb25-26.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html)。
 
 {{b2b-patches}}
 
@@ -163,7 +167,7 @@ Adobe Commerce 2.4.6-p10安全性版本針對2.4.6舊版中發現的漏洞提供
 
 Adobe Commerce 2.4.6-p9安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-08](https://helpx.adobe.com/tw/security/products/magento/apsb25-08.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html)。
 
 {{b2b-patches}}
 
@@ -175,7 +179,7 @@ Adobe Commerce 2.4.6-p9安全性版本針對2.4.6舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.6-p8安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-73](https://helpx.adobe.com/tw/security/products/magento/apsb24-73.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html)。
 
 {{b2b-patches}}
 
@@ -191,7 +195,7 @@ Adobe Commerce 2.4.6-p8安全性版本針對2.4.6舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.6-p7安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-61](https://helpx.adobe.com/tw/security/products/magento/apsb24-61.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html)。
 
 ### 反白顯示
 
@@ -205,15 +209,15 @@ Adobe Commerce 2.4.6-p7安全性版本針對2.4.6舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.6-p6安全性版本針對2.4.6舊版中已發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-40](https://helpx.adobe.com/tw/security/products/magento/apsb24-40.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)。
 
-為了與Commerce 2.4.6-p6版相容，擁有Adobe Commerce B2B擴充功能的商家必須升級至[B2B 1.4.2-p1](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)版。
+為了與Commerce 2.4.6-p6版相容，擁有Adobe Commerce B2B擴充功能的商家必須升級至[B2B 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)版。
 
 ### 套用CVE-2024-34102的Hotfix
 
 {{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
-為了與Commerce 2.4.6-p6版相容，擁有Adobe Commerce B2B擴充功能的商家必須升級至[B2B 1.4.2-p1](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)版。
+為了與Commerce 2.4.6-p6版相容，擁有Adobe Commerce B2B擴充功能的商家必須升級至[B2B 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)版。
 
 ### 反白顯示
 
@@ -223,13 +227,13 @@ Adobe Commerce 2.4.6-p6安全性版本針對2.4.6舊版中已發現的漏洞提�
 
 Adobe Commerce 2.4.6-p5安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
-如需這些修正的最新資訊，請參閱[Adobe安全性公告APSB24-18](https://helpx.adobe.com/tw/security/products/magento/apsb24-18.html)。
+如需這些修正的最新資訊，請參閱[Adobe安全性公告APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html)。
 
 ## 2.4.6 - p4
 
 Adobe Commerce 2.4.6-p4安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-03](https://helpx.adobe.com/tw/security/products/magento/apsb24-03.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html)。
 
 ### 反白顯示
 
@@ -246,7 +250,7 @@ Adobe Commerce 2.4.6-p4安全性版本針對先前版本中發現的漏洞提供
 
 Adobe Commerce 2.4.6-p3安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
-如需安全性修正的最新資訊，請參閱[Adobe安全性公告APSB23-50](https://helpx.adobe.com/tw/security/products/magento/apsb23-50.html)。
+如需安全性修正的最新資訊，請參閱[Adobe安全性公告APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html)。
 
 ### 反白顯示
 
@@ -254,7 +258,7 @@ Adobe Commerce 2.4.6-p3安全性版本針對先前版本中發現的漏洞提供
 
 ### 此版本中包含的Hotfix
 
-Adobe Commerce 2.4.6-p3包含修補程式ACSD-51892所修正的效能降低解析度。 此修補程式解決的問題不會影響商家，相關說明請參閱[ACSD-51892：設定檔載入多次的效能問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html?lang=zh-Hant)知識庫文章。
+Adobe Commerce 2.4.6-p3包含修補程式ACSD-51892所修正的效能降低解析度。 此修補程式解決的問題不會影響商家，相關說明請參閱[ACSD-51892：設定檔載入多次的效能問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md)知識庫文章。
 
 ### 已知問題
 
@@ -271,11 +275,11 @@ Adobe Commerce 2.4.6-p3包含修補程式ACSD-51892所修正的效能降低解�
 
 Adobe Commerce 2.4.6-p2安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。 此版本也提供安全性增強功能，以更符合最新的安全性最佳實務。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-42](https://helpx.adobe.com/tw/security/products/magento/apsb23-42.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html)。
 
 ### 套用CVE-2022-31160的Hotfix
 
-`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。 執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html?lang=zh-Hant)知識庫文章所指定的修補程式。
+`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。 執行受影響部署的商戶應套用[jQuery UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176)知識庫文章所指定的修補程式。
 
 ### 反白顯示
 
@@ -283,17 +287,17 @@ Adobe Commerce 2.4.6-p2安全性版本針對先前版本中發現的漏洞提供
 
 ### 此版本中包含的Hotfix
 
-Adobe Commerce 2.4.6-p2包含修補程式ACSD-51892所解決之效能降低的解析度。 此修補程式解決的問題不會影響商家，相關說明請參閱[ACSD-51892：設定檔載入多次的效能問題](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html?lang=zh-Hant)知識庫文章。
+Adobe Commerce 2.4.6-p2包含修補程式ACSD-51892所解決之效能降低的解析度。 此修補程式解決的問題不會影響商家，相關說明請參閱[ACSD-51892：設定檔載入多次的效能問題](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md)知識庫文章。
 
 ## 2.4.6 - p1
 
 Adobe Commerce 2.4.6-p1安全性版本針對先前版本中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能和平台升級，以更符合最新的安全性最佳實務。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-35](https://helpx.adobe.com/tw/security/products/magento/apsb23-35.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html)。
 
 ### 套用CVE-2022-31160的Hotfix
 
-`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。 執行受影響部署的商戶應套用[查詢UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html?lang=zh-Hant)知識庫文章所指定的修補程式。
+`jQuery-UI`資料庫1.13.1版具有已知的安全性弱點(CVE-2022-31160)，會影響多個版本的Adobe Commerce和Magento Open Source。 此程式庫相依於Adobe Commerce和Magento Open Source 2.4.4、2.4.5和2.4.6。 執行受影響部署的商戶應套用[查詢UI安全性弱點CVE-2022-31160針對2.4.4、2.4.5和2.4.6版本](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176)知識庫文章所指定的修補程式。
 
 #### 反白顯示
 
@@ -325,6 +329,6 @@ Adobe Commerce 2.4.6-p1安全性版本針對先前版本中發現的漏洞提供
   Installation failed, reverting ./composer.json and ./composer.lock to their original content.
   ```
 
-  此問題可透過為具有[穩定性標籤](https://getcomposer.org/doc/04-schema.md#package-links)的B2B安全性套件新增手動相依性來解決。 如需詳細資訊，請參閱[B2B發行說明](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=zh-Hant#known-issue)。
+  此問題可透過為具有[穩定性標籤](https://getcomposer.org/doc/04-schema.md#package-links)的B2B安全性套件新增手動相依性來解決。 如需詳細資訊，請參閱[B2B發行說明](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue)。
 
 <!-- Last updated from includes: 2026-04-08 15:01:38 -->

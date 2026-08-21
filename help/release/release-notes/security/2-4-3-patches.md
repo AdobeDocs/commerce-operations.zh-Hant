@@ -2,8 +2,8 @@
 title: Adobe Commerce 2.4.3安全性修補程式的發行說明
 description: 瞭解Adobe Commerce 2.4.3版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-last-update: 2026-05-12T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.3-p3安全性版本針對先前版本2.4.3已發現的漏洞提供安全性修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB22-38](https://helpx.adobe.com/tw/security/products/magento/apsb22-38.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html)。
 
 ### 套用AC-3022.patch以繼續提供DHL作為運送業者
 
@@ -36,7 +36,7 @@ DHL已匯入schema 6.2版，並將在不久的未來淘汰schema 6.0版。 支�
 
 Adobe Commerce 2.4.3-p2安全性版本針對先前版本中發現的弱點提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB22-13](https://helpx.adobe.com/tw/security/products/magento/apsb22-13.html)。  此修補程式發行版本也解決了`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch`和`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`所處理的弱點。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html)。  此修補程式發行版本也解決了`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch`和`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`所處理的弱點。
 
 
 ### 套用AC-3022.patch以繼續提供DHL作為運送業者
@@ -47,7 +47,7 @@ DHL已匯入schema 6.2版，並將在不久的未來淘汰schema 6.0版。 支�
 
 * 在2.3.4中，已棄用電子郵件變數，這是安全性風險降低的一部分，以支援更嚴格的變數語法。 此舊版行為已完全移除，作為該安全性風險緩解措施的延續。
 
-  因此，在舊版中有效的電子郵件或電子報範本在升級至Adobe Commerce 2.4.3-p2後可能無法正常運作。 受影響的範本包括自訂模組或第三方擴充功能的管理員覆寫、主題、子主題和範本。 即使使用[Upgrade相容性工具](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=zh-Hant)修正已棄用的使用方式，您的部署仍可能受到影響。 請參閱[移轉自訂電子郵件範本](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration)，以取得移轉受影響範本的潛在影響和准則相關資訊。
+  因此，在舊版中有效的電子郵件或電子報範本在升級至Adobe Commerce 2.4.3-p2後可能無法正常運作。 受影響的範本包括自訂模組或第三方擴充功能的管理員覆寫、主題、子主題和範本。 即使使用[Upgrade相容性工具](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html)修正已棄用的使用方式，您的部署仍可能受到影響。 請參閱[移轉自訂電子郵件範本](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration)，以取得移轉受影響範本的潛在影響和准則相關資訊。
 
 * OAuth存取權杖和密碼重設權杖現在儲存於資料庫時經過加密。<!-- AC-520 1323-->
 
@@ -55,9 +55,9 @@ DHL已匯入schema 6.2版，並將在不久的未來淘汰schema 6.0版。 支�
 
 * Adobe Commerce處於生產模式時，Swagger現在預設為停用。<!-- AC-1450-->
 
-* 開發人員現在可以根據每個端點，為Adobe Commerce RESTful端點接受的陣列設定大小限制。 檢視[API安全性](https://developer.adobe.com/commerce/webapi/get-started/api-security/)。<!-- AC-465-->
+* 開發人員現在可以根據每個端點，為Adobe Commerce RESTful端點接受的陣列設定大小限制。 檢視[API安全性](https://developer.adobe.com/commerce/webapi/get-started/api-security)。<!-- AC-465-->
 
-* 新增機制來限制使用者可在系統範圍內透過Web API要求的大小和資源數量，以及覆寫個別模組的預設值。 此增強功能解決`MC-43048__set_rate_limits__2.4.3.patch`所解決的問題。 檢視[API安全性](https://developer.adobe.com/commerce/webapi/get-started/api-security/)。<!-- AC-1120-->
+* 新增機制來限制使用者可在系統範圍內透過Web API要求的大小和資源數量，以及覆寫個別模組的預設值。 此增強功能解決`MC-43048__set_rate_limits__2.4.3.patch`所解決的問題。 檢視[API安全性](https://developer.adobe.com/commerce/webapi/get-started/api-security)。<!-- AC-1120-->
 
 
 ## 2.4.3-p1
@@ -65,7 +65,7 @@ DHL已匯入schema 6.2版，並將在不久的未來淘汰schema 6.0版。 支�
 Adobe Commerce 2.4.3-p1安全性版本針對先前版本（Adobe Commerce 2.4.3和Magento Open Source 2.4.3）中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB21-86](https://helpx.adobe.com/tw/security/products/magento/apsb21-86.html)。 此修補程式發行版本也針對[Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=zh-Hant)、[Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)及[Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)廠商開發的擴充功能提供錯誤修正。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html)。 此修補程式發行版本也針對[Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html)、[Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)及[Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)廠商開發的擴充功能提供錯誤修正。
 
 ### 套用AC-3022.patch以繼續提供DHL作為運送業者
 
@@ -81,7 +81,7 @@ DHL已匯入schema 6.2版，並將在不久的未來淘汰schema 6.0版。 支�
 
 已從資料庫&#x200B;**移除**&#x200B;工作階段識別碼。 如果商戶有使用儲存在資料庫中的原始工作階段ID的自訂或安裝擴充功能，則此程式碼變更可能會導致重大變更。<!-- MC-40976-->
 
-**已限制管理員存取媒體集資料夾**。 預設媒體集許可權現在只允許設定明確允許的目錄操作（檢視、上傳、刪除和建立）。 管理員使用者無法再透過在`catalog/category`或`wysiwyg`目錄之外上傳的媒體集存取媒體資產。 管理員如果想要存取媒體資產，必須將其移至明確允許的資料夾，或調整其組態設定。 請參閱[修改媒體櫃資料夾許可權](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/)。<!-- B2B-1897-->
+**已限制管理員存取媒體集資料夾**。 預設媒體集許可權現在只允許設定明確允許的目錄操作（檢視、上傳、刪除和建立）。 管理員使用者無法再透過在`catalog/category`或`wysiwyg`目錄之外上傳的媒體集存取媒體資產。 管理員如果想要存取媒體資產，必須將其移至明確允許的資料夾，或調整其組態設定。 請參閱[修改媒體櫃資料夾許可權](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions)。<!-- B2B-1897-->
 
 **降低GraphQL查詢複雜度的限制**。 GraphQL允許的查詢複雜度上限已降低，以防止拒絕服務(DOS)攻擊。 檢視[GraphQL安全性組態](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/)。<!-- PWA-1700-->
 

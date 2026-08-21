@@ -5,9 +5,9 @@ feature: Gift, Shopping Cart
 role: Admin, Developer
 exl-id: cff5b9e6-56ee-4df2-961a-6d90ec83c0c2
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 ACSD-63283修補程式修正了從[!UICONTROL Gift Registry]訂購專案會導致例外狀況的問題，並確保[!UICONTROL Gift Registry Updates]僅包含正確的專案。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58時，即可使用此修補程式。 修補程式ID為ACSD-63283。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
 
 >[!NOTE]
->此修補程式會取代並擴充[ACSD-56280](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed) QPT修補程式。
+>此修補程式會取代並擴充[ACSD-56280](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed.md) QPT修補程式。
 
 ## 受影響的產品和版本
 
@@ -31,7 +31,7 @@ Adobe Commerce （所有部署方法） 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -45,7 +45,7 @@ Adobe Commerce中的[!UICONTROL Gift Registry]功能受兩個重大問題影響�
 1. 建立兩個產品：產品A和產品B。
 1. 建立兩個客戶：客戶A和客戶B。
 1. 以客戶A身分登入並建立新的[!UICONTROL Gift Registry]。
-1. 導覽至產品A的產品頁面，並將其新增至[!UICONTROL Wishlist]。 開啟[!UICONTROL Wishlist Page]並使用[!UICONTROL Gift Registry]將產品A移至[!UICONTROL Add to Gift Registry]。
+1. 導覽至產品A的產品頁面，並將其新增至[!UICONTROL Wishlist]。 開啟[!UICONTROL Wishlist Page]並使用[!UICONTROL Add to Gift Registry]將產品A移至[!UICONTROL Gift Registry]。
 1. 以客戶B身分登入，建立新的[!UICONTROL Gift Registry]，並將產品B新增至其中。
 1. 身為客戶B，透過電子郵件共用[!UICONTROL Gift Registry]： **[!UICONTROL My Account]> [!UICONTROL Gift Registry] >[!UICONTROL Share]**。
 1. 登出為客戶B。
@@ -63,8 +63,8 @@ Adobe Commerce中的[!UICONTROL Gift Registry]功能受兩個重大問題影響�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 
 ## 相關閱讀

@@ -2,18 +2,18 @@
 title: 參考架構
 description: 瞭解Adobe Commerce中的參考架構。 探索實作指引和最佳化策略。
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
 # 參考架構
 
-本主題說明一般建議設定，適用於Adobe Commerce執行個體，使用實體託管於資料中心（非虛擬化）的普通伺服器，資源不會與其他使用者共用。 您的託管提供者(尤其是擅長於Commerce高效能託管的供應商)可能會建議您採取對您的需求有相同或相同成效的其他設定。
+本主題說明一般建議設定，適用於Adobe Commerce執行個體，使用實體託管於資料中心（非虛擬化）的普通伺服器，資源不會與其他使用者共用。 您的託管提供者（尤其是擅長於Commerce高效能託管的供應商）可能會建議您採取對您的需求有相同或相同成效的其他設定。
 
-如需雲端基礎結構環境上的Adobe Commerce，請參閱[入門架構](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/architecture/starter-architecture)。
+如需雲端基礎結構環境上的Adobe Commerce，請參閱[入門架構](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-architecture)。
 
 ## [!DNL Commerce]參考架構圖表
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ### 資料庫和佇列
 
-* 高流量的網站可以使用下層資料庫調整資料庫效能，並針對訂單/購物車分割資料庫(在Adobe Commerce中)
+* 高流量的網站可以使用下層資料庫調整資料庫效能，並針對訂單/購物車分割資料庫（在Adobe Commerce中）
 * 請考慮使用從屬DB來啟用快速復原及資料備份
 * 低流量網站可以將影像儲存在DB中
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ### 建議的[!DNL Varnish]參考架構
 
-Magento可支援數個立即可用的完整頁面快取引擎（檔案、Memcache、Redis、[!DNL Varnish]），透過擴充功能擴大涵蓋範圍。 [!DNL Varnish]是建議的完整頁面快取引擎。  [!DNL Commerce]支援許多不同的[!DNL Varnish]設定。
+Magento可支援數個立即可用的完整頁面快取引擎（檔案、Memcache、Redis、[!DNL Varnish]），透過擴充功能擴大涵蓋範圍。 [!DNL Varnish]是建議的完整頁面快取引擎。 [!DNL Commerce]支援許多不同的[!DNL Varnish]設定。
 
 對於不需要高可用性的網站，我們建議使用具有Nginx SSL終止的簡單[!DNL Varnish]設定。
 

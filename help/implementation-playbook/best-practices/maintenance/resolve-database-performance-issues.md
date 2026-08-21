@@ -4,9 +4,9 @@ description: 瞭解如何修正雲端基礎結構上部署的Adobe Commerce網�
 role: Developer, Admin
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 如果您的Adobe Commerce專案部署在Pro架構上，您可以使用Percona Toolkit來分析查詢。
 
 1. 對MySQL慢速查詢記錄檔執行`pt-query-digest --type=slowlog`命令。
-   * 若要尋找緩慢查詢記錄檔的位置，請參閱我們的開發人員檔案中的&#x200B;**[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs)。
+   * 若要尋找緩慢查詢記錄檔的位置，請參閱我們的開發人員檔案中的&#x200B;**[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs)。
    * 請參閱[Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest)檔案。
 1. 根據發現的問題，採取措施修正查詢，使其更快地執行。
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
    新增節點時，請將`referenceID`和`column name`變數取代為您的自訂自訂值。
 
-如需詳細資訊，請參閱我們的開發人員檔案中的[設定宣告式結構描述](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/)。
+如需詳細資訊，請參閱我們的開發人員檔案中的[設定宣告式結構描述](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration)。
 
 ## 識別並移除重複的索引
 
