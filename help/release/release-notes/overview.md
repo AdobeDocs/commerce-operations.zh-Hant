@@ -2,7 +2,7 @@
 title: Adobe Commerce發行說明
 description: 了解在哪裡可以取得 Adobe Commerce 特定版本的資訊。
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 2%
@@ -40,18 +40,18 @@ ht-degree: 2%
             <li><a href="../lifecycle-policy.md">軟體生命週期原則</a></li>
             <li><a href="../version-upgrade-enforcement-policy.md">雲端版本升級執行原則</a></li>
             <li><a href="../security-enforcement-policy.md">安全性與法規遵循通知</a></li>
-            <li><a href="https://helpx.adobe.com/tw/security/products/magento.html">Adobe安全性公告</a></li>
+            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe安全性公告</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=zh-Hant">適用於Adobe Commerce的B2B</a></li>
           </ul>
         </td>
       <td>雲端基礎結構上的<strong>Adobe Commerce</strong>
         <p>瞭解適用於Adobe Commerce套件的Cloud Suite的最新改良功能，這些改良功能旨在部署及管理Adobe Commerce在雲端平台上的安裝和升級。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">與舊版不相容的變更</a></li>
-            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Commerce雲端修補程式</a></li>
-            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">適用於Commerce的Cloud Docker</a></li>
-            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">適用於Commerce的雲端元件</a></li>
-            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">與舊版不相容的變更</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Commerce雲端修補程式</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">適用於Commerce的Cloud Docker</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">適用於Commerce的雲端元件</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
           </ul>
       </td>
     </tr>

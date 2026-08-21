@@ -4,9 +4,9 @@ description: 瞭解如何使用品質修補程式工具來套用和管理Adobe C
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -62,18 +62,18 @@ Adobe Commerce 2.3.5。
 狀態表格包括：
 
 - **型別**：
-   - `Optional` — [!DNL Quality Patches Tool]和[雲端基礎結構指南>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)套件中的所有修補程式都是Adobe Commerce安裝的選用專案。
-   - `Deprecated` — Adobe已棄用個別修補程式。 如果您已套用修補程式，建議您還原修補程式。 還原作業也會從狀態表中移除修正程式。
+  - `Optional` — [!DNL Quality Patches Tool]和[雲端基礎結構指南>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)套件中的所有修補程式都是Adobe Commerce安裝的選用專案。
+  - `Deprecated` — Adobe已棄用個別修補程式。 如果您已套用修補程式，建議您還原修補程式。 還原作業也會從狀態表中移除修正程式。
 
 - **狀態**：
-   - `Applied` — 已套用修補程式。
-   - `Not applied` — 尚未套用修補程式。
-   - `N/A` — 由於發生衝突，無法定義修補程式的狀態。
+  - `Applied` — 已套用修補程式。
+  - `Not applied` — 尚未套用修補程式。
+  - `N/A` — 由於發生衝突，無法定義修補程式的狀態。
 
 - **詳細資料**：
-   - `Affected components` — 受影響模組的清單。
-   - `Required patches` — 必須套用才能讓指定的修補程式正常運作（相依性）的修補程式清單。
-   - `Recommended replacement` — 建議用來取代已棄用修補程式的修補程式。
+  - `Affected components` — 受影響模組的清單。
+  - `Required patches` — 必須套用才能讓指定的修補程式正常運作（相依性）的修補程式清單。
+  - `Recommended replacement` — 建議用來取代已棄用修補程式的修補程式。
 
 >[!INFO]
 >

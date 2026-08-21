@@ -2,7 +2,7 @@
 title: 管理協力廠商擴充功能
 description: 請依照下列步驟，安裝、啟用、升級和解除安裝Adobe Commerce擴充功能。
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 - 佈景主題（變更店面外觀和風格，以及管理員）
 - 語言套件（將店面和管理員本地化）
 
-本主題說明如何使用命令列介面來管理您從Commerce Marketplace為&#x200B;_內部部署_&#x200B;專案購買的協力廠商擴充功能。 若為雲端基礎結構專案，請參閱[管理擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/extensions)。
+本主題說明如何使用命令列介面來管理您從Commerce Marketplace為&#x200B;_內部部署_&#x200B;專案購買的協力廠商擴充功能。 若為雲端基礎結構專案，請參閱[管理擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/extensions)。
 
 您可以使用相同的程式來安裝&#x200B;_any_&#x200B;擴充功能；您只需要該擴充功能的撰寫器名稱和版本。 若要尋找它，請開啟擴充功能的`composer.json`檔案，並記下`"name"`和`"version"`的值。
 

@@ -4,7 +4,7 @@ description: 瞭解設定購物車限制和產品屬性，以及列出分頁、�
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 #### 檢閱屬性集組態
 
-1. [連線到站台資料庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database)。
+1. [連線到站台資料庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database)。
 
 1. 使用MySQL尋找屬性集數目
 

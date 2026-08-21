@@ -2,7 +2,7 @@
 title: 翻譯字典和語言套件
 description: 瞭解如何產生Adobe Commerce的翻譯字典和建置語言套件。 探索當地語系化及多語言商店設定。
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -117,7 +117,7 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
 
 - 必要的授權檔案
 - `composer.json`
-- [註冊](https://developer.adobe.com/commerce/php/development/build/component-registration/)語言套件的`registration.php`
+- [註冊](https://developer.adobe.com/commerce/php/development/build/component-registration)語言套件的`registration.php`
 - [`language.xml`](#language-package-languagexml)中繼資訊檔案
 
 >[!INFO]
@@ -131,8 +131,8 @@ bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <sourc
    例如，Commerce語言套件位於`app/i18n/magento`
 
 1. 新增必要的許可證檔案。
-1. 新增指定語言套件相依性的[`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/)。
-1. 向[`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/)註冊語言套件
+1. 新增指定語言套件相依性的[`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration)。
+1. 向[`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration)註冊語言套件
 1. 新增`language.xml`中繼資訊檔案，如下節所述。
 
 #### 語言套件語言.xml

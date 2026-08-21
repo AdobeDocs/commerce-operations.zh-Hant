@@ -4,7 +4,7 @@ description: 瞭解如何在雲端基礎結構上部署Adobe Commerce時，設�
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### 將儲存引擎變更為InnoDB
 
-在宣告資料表的`db_schema.xml`檔案中，將對應的`table`節點的`engine`屬性值設定為`innodb`。 如需參考，請參閱我們的開發人員檔案中的[設定宣告式結構描述>資料表節點](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/)。
+在宣告資料表的`db_schema.xml`檔案中，將對應的`table`節點的`engine`屬性值設定為`innodb`。 如需參考，請參閱我們的開發人員檔案中的[設定宣告式結構描述>資料表節點](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration)。
 
 宣告式配置是在Adobe Commerce的雲端基礎結構2.3版中引入。
 
@@ -59,9 +59,9 @@ Adobe建議您一律在雲端基礎結構專案中為您的Adobe Commerce設定E
 
 如需設定指示，請參閱雲端上Adobe Commerce的開發人員指南：
 
-- [設定OpenSearch服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [設定OpenSearch服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
 
-- [設定Elasticsearch服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [設定Elasticsearch服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
 
 ## 避免自訂觸發器
 
@@ -76,7 +76,7 @@ Adobe建議您一律在雲端基礎結構專案中為您的Adobe Commerce設定E
 
 ## 將[!DNL ECE-Tools]升級至2002.0.21版或更新版本 {#ece-tools-version}
 
-若要避免cron死結的潛在問題，請將ECE-Tools升級至2002.0.21版或更新版本。 如需指示，請參閱我們的開發人員檔案中的[更新`ece-tools`版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package)。
+若要避免cron死結的潛在問題，請將ECE-Tools升級至2002.0.21版或更新版本。 如需指示，請參閱我們的開發人員檔案中的[更新`ece-tools`版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。
 
 ## 安全地切換索引器模式
 

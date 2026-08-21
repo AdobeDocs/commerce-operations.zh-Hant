@@ -2,23 +2,23 @@
 title: 瞭解升級範圍
 description: 瞭解版本中回溯不相容的變更，這些變更可能會影響Adobe Commerce自訂模組或協力廠商擴充功能。
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
 
 # 瞭解升級範圍
 
-請檢閱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)以瞭解發行範圍，包括增強功能、錯誤修正，以及可能影響協力廠商和自訂模組的已知問題。
+請檢閱[發行說明](/help/release/release-notes/overview.md)以瞭解發行範圍，包括增強功能、錯誤修正，以及可能影響協力廠商和自訂模組的已知問題。
 
 ## 與舊版不相容的變更
 
 Adobe Commerce發行版本可能包含與回溯不相容的變更。 檢閱不相容的回溯變更檔案，請參閱下列內容：
 
 - **[重大變更重點提示](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)** — 具有重大影響且需要詳細說明和特殊說明的變更，以確保協力廠商模組繼續運作。
-- **[次要變更參考](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** — 參考從程式碼基底產生的檔案，其中說明類別、API成員資格、資料庫、相依性插入、介面、配置、系統和XSD的次要變更。
+- **[次要變更參考](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference)** — 參考從程式碼基底產生的檔案，其中說明類別、API成員資格、資料庫、相依性插入、介面、配置、系統和XSD的次要變更。
 
 ## 協力廠商擴充功能
 
@@ -26,7 +26,7 @@ Adobe Commerce Marketplace的新相容性原則可確保&#x200B;_所有_&#x200B;
 
 ## 自訂模組
 
-所有自訂模組都應針對您欲升級的目標版本進行檢查。 這是最耗用時間和資源的升級程式。 評估自訂模組時，您必須尋找與回溯不相容的變更，並注意新的作法，例如控制器分解。 您可以在[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)中進一步瞭解此資訊。 此外，請確定您遵循模組開發的[最佳實務](https://developer.adobe.com/commerce/php/best-practices/extensions/)。
+所有自訂模組都應針對您欲升級的目標版本進行檢查。 這是最耗用時間和資源的升級程式。 評估自訂模組時，您必須尋找與回溯不相容的變更，並注意新的作法，例如控制器分解。 您可以在[發行說明](/help/release/release-notes/overview.md)中進一步瞭解此資訊。 此外，請確定您遵循模組開發的[最佳實務](https://developer.adobe.com/commerce/php/best-practices/extensions/)。
 
 ## [!DNL Upgrade Compatibility Tool]
 

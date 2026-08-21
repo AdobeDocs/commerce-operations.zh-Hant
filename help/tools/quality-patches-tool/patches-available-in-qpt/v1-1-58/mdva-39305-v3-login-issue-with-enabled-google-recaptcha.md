@@ -5,9 +5,9 @@ feature: Console
 role: Admin
 exl-id: 63e880aa-9a2e-4c34-9ead-20bfc5204f2c
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 MDVA-39305-V3修補程式修正啟用[!DNL Google reCAPTCHA]時註冊客戶無法登入的問題。 此修補程式也修正了在[!DNL Google reCAPTCHA]完全載入之前提交表單的問題。 此外，它修正了在CMS頁面的非預設位置中使用區塊時，在null *上呼叫isDisabled()成員函式所發生的錯誤*。
 
-此修補程式已新增至[品質修補工具(QPT)](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48版本。 QPT 1.1.58版本已更新為包含新的Adobe Commerce版本2.4.7 - 2.4.7-p4。 修補程式ID為MDVA-39305-V3。 請注意，Adobe Commerce 2.4.4、2.4.5-p2和2.4.7版已修正問題。
+此修補程式已新增至[品質修補工具(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.48版本。 QPT 1.1.58版本已更新為包含新的Adobe Commerce版本2.4.7 - 2.4.7-p4。 修補程式ID為MDVA-39305-V3。 請注意，Adobe Commerce 2.4.4、2.4.5-p2和2.4.7版已修正問題。
 
 ## 受影響的產品和版本
 
@@ -34,7 +34,7 @@ MDVA-39305-V3修補程式修正啟用[!DNL Google reCAPTCHA]時註冊客戶無�
 
 >[!NOTE]
 >
->此修補程式可能適用於其他發行了「品質修補程式」工具的版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於其他發行了「品質修補程式」工具的版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -86,7 +86,7 @@ MDVA-39305-V3修補程式修正啟用[!DNL Google reCAPTCHA]時註冊客戶無�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 
