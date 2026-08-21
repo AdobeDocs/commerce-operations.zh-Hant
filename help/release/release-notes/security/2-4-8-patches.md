@@ -132,7 +132,7 @@ Adobe Commerce 2.4.8-p1安全性版本針對2.4.8舊版中發現的漏洞提供�
 
 >[!BEGINSHADEBOX]
 
-CVE-2025-47110和VULN-31547的修正也以獨立修補程式的形式提供。 如需詳細資訊，請參閱[知識庫文章](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181)。
+CVE-2025-47110和VULN-31547的修正也以獨立修補程式的形式提供。 如需詳細資訊，請參閱[知識庫文章](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27181)。
 
 >[!ENDSHADEBOX]
 

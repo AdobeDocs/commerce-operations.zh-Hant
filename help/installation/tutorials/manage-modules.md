@@ -29,7 +29,7 @@ bin/magento module:status [--enabled] [--disabled] <module-list>
 
 >[!NOTE]
 >
->您無法直接在雲端專案上啟用或停用模組。 您必須在本機執行這些命令，然後將變更推送到環境的`app/etc/config.php`檔案。 請參閱[Pro專案工作流程：部署工作流程](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)。
+>您無法直接在雲端專案上啟用或停用模組。 您必須在本機執行這些命令，然後將變更推送到環境的`app/etc/config.php`檔案。 請參閱[Pro專案工作流程：部署工作流程](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)。
 
 ## 啟用、停用模組
 
