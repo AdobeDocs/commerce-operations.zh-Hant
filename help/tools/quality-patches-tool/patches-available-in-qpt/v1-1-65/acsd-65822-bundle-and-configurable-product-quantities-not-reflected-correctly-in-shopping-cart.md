@@ -4,16 +4,16 @@ description: 套用ACSD-65822修補程式，以修正新增套件組合產品時
 feature: Admin Workspace, Checkout, Orders
 role: Admin, Developer
 exl-id: 6740b5a6-8710-458c-abe4-03d2a8a694c5
-source-git-commit: 7e9598e3ac0558706ef98ca81c19d27c37f7e860
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # ACSD-65822： [!UICONTROL Shopping Cart]中未正確反映套件組合和可設定的產品數量
 
-ACSD-65822修補程式修正&#x200B;**[!UICONTROL Shopping Cart]**&#x200B;下的&#x200B;*[!UICONTROL Customer's Activities]*&#x200B;區段中無法正確顯示套件組合和可設定產品數量的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65時，即可使用此修補程式。 修補程式ID為ACSD-65822。 請注意，此問題已排程在Adobe Commerce 2.4.9中修正。
+ACSD-65822修補程式修正&#x200B;*[!UICONTROL Customer's Activities]*&#x200B;下的&#x200B;**[!UICONTROL Shopping Cart]**&#x200B;區段中無法正確顯示套件組合和可設定產品數量的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65時，即可使用此修補程式。 修補程式ID為ACSD-65822。 請注意，此問題已排程在Adobe Commerce 2.4.9中修正。
 
 ## 受影響的產品和版本
 
@@ -31,7 +31,7 @@ ACSD-65822修補程式修正&#x200B;**[!UICONTROL Shopping Cart]**&#x200B;下的
 
 ## 問題
 
-在&#x200B;**[!UICONTROL Shopping Cart]**&#x200B;下的&#x200B;*[!UICONTROL Customer's Activities]*&#x200B;區段中，未正確顯示組合和可設定的產品數量。
+在&#x200B;*[!UICONTROL Customer's Activities]*&#x200B;下的&#x200B;**[!UICONTROL Shopping Cart]**&#x200B;區段中，未正確顯示組合和可設定的產品數量。
 
 <u>要再現的步驟</u>：
 
@@ -54,8 +54,8 @@ ACSD-65822修補程式修正&#x200B;**[!UICONTROL Shopping Cart]**&#x200B;下的
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

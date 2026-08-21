@@ -4,9 +4,9 @@ description: 瞭解如何讓您的Adobe Commerce在雲端基礎結構技術棧�
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 5e3289b328b51eb50354efdc1571283791175b9a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 在Adobe Commerce使用的服務和元件達到或接近生命週期結束日期之前升級。 這有助於遵循PCI法規並減少安全性漏洞。
 
-入門計畫客戶可自助服務升級。 請參閱[變更服務版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version)，以取得如何執行此動作的詳細資訊。
+入門計畫客戶可自助服務升級。 請參閱[變更服務版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version)，以取得如何執行此動作的詳細資訊。
 
-Pro方案客戶只能在其[整合環境](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=zh-Hant)中自助服務升級。 若要在生產環境中升級服務，您必須[提交支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)以要求升級。
+Pro方案客戶只能在其[整合環境](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27242)中自助服務升級。 若要在生產環境中升級服務，您必須[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)以要求升級。
 
 >[!WARNING]
 >

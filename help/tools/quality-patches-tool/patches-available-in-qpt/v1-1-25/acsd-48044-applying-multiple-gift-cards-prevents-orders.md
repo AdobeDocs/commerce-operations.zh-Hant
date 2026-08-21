@@ -5,16 +5,16 @@ feature: Admin Workspace, Gift, Orders
 role: Admin
 exl-id: c7b72b1f-2f1b-4445-b842-5847d05d5ae9
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
 
 # ACSD-48044：套用多張禮品卡可防止下訂單
 
-ACSD-48044修補程式修正了將多張禮品卡套用至一張有多重送貨的訂單時，無法下單的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.25時，即可使用此修補程式。 修補程式ID為ACSD-48044。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。
+ACSD-48044修補程式修正了將多張禮品卡套用至一張有多重送貨的訂單時，無法下單的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.25時，即可使用此修補程式。 修補程式ID為ACSD-48044。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。
 
 ## 受影響的產品和版本
 
@@ -63,31 +63,31 @@ ACSD-48044修補程式修正了將多張禮品卡套用至一張有多重送貨�
 
 <u>實際結果</u>：
 
-禮卡金額混有錯誤&#x200B;*「請更正禮卡代碼。」下單時*。
+禮卡金額混有錯誤&#x200B;*「請更正禮卡代碼。」* 下訂單時。
 
 * 第一個產品：
 
-   * 移除禮卡(00GXM6SUGBLW) - $15.00
-   * 移除禮品卡(02KB8M0H0GRD) - $0.00
+  * 移除禮卡(00GXM6SUGBLW) - $15.00
+  * 移除禮品卡(02KB8M0H0GRD) - $0.00
 
 * 第二個產品：
 
-   * 移除禮卡(00GXM6SUGBLW) - $25.00
-   * 移除禮品卡(02KB8M0H0GRD) - $35.00
+  * 移除禮卡(00GXM6SUGBLW) - $25.00
+  * 移除禮品卡(02KB8M0H0GRD) - $35.00
 
 ## 套用修補程式
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
-* [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)的新工具。
-* [使用 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)指南中的[!UICONTROL Quality Patches Tool]，檢查您的Adobe Commerce問題是否有修補程式可用。
+* [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的新工具。
+* [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
 
 
-如需QPT中其他修補程式的詳細資訊，請參閱[[!DNL Quality Patches Tool]指南中的](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)：搜尋修補程式[!DNL Quality Patches Tool]。
+如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。

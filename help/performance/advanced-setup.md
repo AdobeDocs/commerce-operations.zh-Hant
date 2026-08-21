@@ -2,7 +2,7 @@
 title: 進階設定
 description: 瞭解如何為Adobe Commerce進行進階設定。 探索逐步指示和設定需求。
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 大量產品SKU、網站、客戶群組或共用目錄將會影響產品價格和目錄規則索引器的執行時間。 這是因為所有網站預設都會指派給所有客戶群組（共用目錄）。
 
-若要減少索引時間，您可以[從客戶群組（共用目錄）中排除某些網站](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites)。
+若要減少索引時間，您可以[從客戶群組（共用目錄）中排除某些網站](https://developer.adobe.com/commerce/php/development/components/indexing/optimization#customer-group-limitations-by-websites)。
 
 ## 設定紅色
 
@@ -92,7 +92,7 @@ bin/magento setup:db-schema:add-slave
 
 此命令會執行組態變更，但不會設定復寫本身。 這應該以手動方式完成。
 
-分割主資料庫並設定從屬資料庫後，[!DNL Commerce]會自動調整與特定資料庫的連線，根據要求型別（POST、PUT、GET等）和資料資源做出決策。 如果[!DNL Commerce]或其擴充功能對GET要求執行寫入作業，系統會自動將連線從從屬資料庫切換至主資料庫。 它對master資料庫的運作方式相同：當您使用與出庫相關的表格時，系統會將所有查詢重新導向至特定資料庫。 同時，所有與目錄相關的查詢將移至主資料庫。
+分割主資料庫並設定從屬資料庫後，[!DNL Commerce]會自動調整與特定資料庫的連線，根據要求型別（POST、PUT、GET等）和資料資源做出決策。 如果[!DNL Commerce]或其擴充功能在GET要求上執行寫入作業，系統會自動將連線從從屬資料庫切換到主資料庫。 它對master資料庫的運作方式相同：當您使用與出庫相關的表格時，系統會將所有查詢重新導向至特定資料庫。 同時，所有與目錄相關的查詢將移至主資料庫。
 
 如需有關設定以及多重主設定/從屬設定的優點之詳細資訊，請參閱
 [分割資料庫效能解決方案](../configuration/storage/multi-master.md)。

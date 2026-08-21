@@ -4,9 +4,9 @@ description: 瞭解開發Adobe Commerce專案的一般最佳實務。
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 ## 版本設定
 
 模組版本必須遵守[Semantic Versioning 2.0.0標準](https://semver.org/)。
-Adobe Commerce程式碼基底的相依性應該遵循[模組版本相依性准則](https://developer.adobe.com/commerce/php/development/versioning/dependencies/)。
+Adobe Commerce程式碼基底的相依性應該遵循[模組版本相依性准則](https://developer.adobe.com/commerce/php/development/versioning/dependencies)。
 
 ## 修訂控制
 
@@ -58,7 +58,7 @@ Adobe Commerce程式碼基底的相依性應該遵循[模組版本相依性准�
 
 ## 安全性
 
-1. [不應使用不安全的函式](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/)。
-1. 應該套用[XSS預防策略](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)。
-1. [應該套用內容安全性原則](https://developer.adobe.com/commerce/php/development/security/content-security-policies/)。
+1. [不應使用不安全的函式](https://developer.adobe.com/commerce/php/development/security/non-secure-functions)。
+1. 應該套用[XSS預防策略](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)。
+1. [應該套用內容安全性原則](https://developer.adobe.com/commerce/php/development/security/content-security-policies)。
 1. 新的Adobe Commerce執行個體應該會在尚未達到「安全性修正專案結束」日期的最新安全性版本上提供。 請參閱[Adobe Commerce軟體生命週期原則](../../../release/lifecycle-policy.md)。

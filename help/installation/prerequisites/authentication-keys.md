@@ -2,9 +2,9 @@
 title: 取得您的驗證金鑰
 description: 請依照下列步驟擷取憑證，以存取repo.magento.com上的Adobe Commerce Composer套件。
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您遇到[錯誤](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=zh-Hant)或在Marketplace標籤中未看到[!UICONTROL Access Keys]區段，則您可能沒有存取套件的授權，或存取許可權已過期，因為您的帳戶有未結清的發票。
+>如果您遇到[錯誤](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-25968)或在Marketplace標籤中未看到[!UICONTROL Access Keys]區段，則您可能沒有存取套件的授權，或存取許可權已過期，因為您的帳戶有未結清的發票。
 >
 >* 如果您是帳戶上的主要聯絡人，請確定帳戶上未列出未結商業發票。
->* 如果主要連絡人提供的金鑰無法運作，且帳戶中沒有未結清的發票，則主要連絡人應聯絡[Adobe Commerce支援](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)以尋求協助。
+>* 如果主要連絡人提供的金鑰無法運作，且帳戶中沒有未結清的發票，則主要連絡人應聯絡[Adobe Commerce支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)以尋求協助。
 
 若要建立驗證金鑰：
 

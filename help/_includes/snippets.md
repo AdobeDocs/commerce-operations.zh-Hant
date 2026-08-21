@@ -1,7 +1,7 @@
 ---
-source-git-commit: d8197ca0e1028cb50fae0415843c80ac68e49566
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1077'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->若為雲端專案上的Adobe Commerce，請參閱[Redis與Valkey服務組態的最佳實務](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)以取得快取組態指示。
+>若為雲端專案上的Adobe Commerce，請參閱[Redis與Valkey服務組態的最佳實務](/help/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md)以取得快取組態指示。
 
 ## Redis快取支援 {#redis-cache-support}
 
@@ -21,7 +21,7 @@ Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的�
 
 >[!NOTE]
 >
->如果您的Commerce專案部署在雲端，則整頁快取會使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/fastly)，而非Varnish。 本節中的主題僅適用於內部部署。
+>如果您的Commerce專案部署在雲端，則整頁快取會使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly)，而非Varnish。 本節中的主題僅適用於內部部署。
 
 ## Adobe服務版本支援 {#supported-versions-only}
 
@@ -35,7 +35,7 @@ Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的�
 >
 >執行不支援的版本可能會讓您的存放區暴露於安全漏洞，而Adobe無法為不再由其廠商維護的相依性提供安全修補程式。
 >
->如需支援版本的完整清單，請參閱[產品可用性矩陣](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
+>如需支援版本的完整清單，請參閱[產品可用性矩陣](/help/release/product-availability.md)。
 
 ## 延伸支援的安全性修補程式 {#extended-support}
 
@@ -85,7 +85,7 @@ Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的�
 
 >[!NOTE]
 >
->Adobe Commerce版本可能包含與舊版不相容的變更(BIC)。 若要檢閱回溯不相容的變更，請參閱[BIC參考](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)。 在[BIC重點專案](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)中說明嚴重的回溯不相容問題。 並非所有發行版本都會推出主要BIC。
+>Adobe Commerce版本可能包含與舊版不相容的變更(BIC)。 若要檢閱回溯不相容的變更，請參閱[BIC參考](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference)。 在[BIC重點專案](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)中說明嚴重的回溯不相容問題。 並非所有發行版本都會推出主要BIC。
 
 ## Alpha免責宣告 {#alpha}
 
@@ -133,7 +133,7 @@ Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的�
 
 * **已新增對Apache ActiveMQ Artemis STOMP通訊協定的支援**
 
-  透過Simple Text Oriented Messaging Protocol (STOMP)新增對ActiveMQ Artemis開放原始碼訊息代理程式的支援。 它提供可靠且可擴充的傳訊系統，提供彈性的STOMP式整合。 請參閱&#x200B;*Commerce設定指南*&#x200B;中的[Apache ActiveMQ Artemis](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp)。
+  透過Simple Text Oriented Messaging Protocol (STOMP)新增對ActiveMQ Artemis開放原始碼訊息代理程式的支援。 它提供可靠且可擴充的傳訊系統，提供彈性的STOMP式整合。 請參閱&#x200B;*Commerce設定指南*&#x200B;中的[Apache ActiveMQ Artemis](/help/configuration/queues/message-queue-framework.md#apache-activemq-artemis-stomp)。
 
 ## 簽出頁面無法載入static.min.js和mixins.min.js {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 

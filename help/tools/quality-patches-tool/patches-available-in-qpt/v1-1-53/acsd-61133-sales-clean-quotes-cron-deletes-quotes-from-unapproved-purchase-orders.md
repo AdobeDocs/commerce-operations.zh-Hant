@@ -5,9 +5,9 @@ feature: B2B, Purchase Orders
 role: Admin, Developer
 exl-id: 06979d4b-08ea-40fe-a211-3d950c9afb47
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Adobe Commerce [!UICONTROL B2B]模組已安裝且已啟用。
 1. 建立公司。
 1. 建立&#x200B;*[!UICONTROL Purchase Order]*。
 1. 等候報價過期並由cron刪除。 報價到期日可透過&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]** > **[!UICONTROL Default Expiration Period configuration]**&#x200B;設定。
-1. 透過&#x200B;*[!UICONTROL Purchase Order]*&#x200B;或使用&#x200B;*[!UICONTROL My Purchase Order in Customer Dashboard]* [!DNL GraphQL]突變將`placeOrderForPurchaseOrder`轉換為訂單。
+1. 透過&#x200B;*[!UICONTROL My Purchase Order in Customer Dashboard]*&#x200B;或使用[!DNL GraphQL] `placeOrderForPurchaseOrder`突變將&#x200B;*[!UICONTROL Purchase Order]*&#x200B;轉換為訂單。
 
 <u>預期結果</u>：
 
@@ -58,8 +58,8 @@ Adobe Commerce [!UICONTROL B2B]模組已安裝且已啟用。
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

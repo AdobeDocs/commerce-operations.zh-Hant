@@ -2,9 +2,9 @@
 title: 取得Adobe Commerce軟體
 description: 瞭解如何使用Composer取得Adobe Commerce軟體、檢查擴充功能相容性，以及選擇正確的散發方式以進行安裝。
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 如何取得軟體
 
-請檢視我們的[產品可用性頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)，瞭解適用於Adobe Commerce和Magento Open Source的Adobe編寫擴充功能與Commerce服務的可用性及相容性。
+請檢視我們的[產品可用性頁面](/help/release/product-availability.md)，瞭解適用於Adobe Commerce和Magento Open Source的Adobe編寫擴充功能與Commerce服務的可用性及相容性。
 
 >[!NOTE]
 >

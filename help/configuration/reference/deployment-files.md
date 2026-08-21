@@ -3,9 +3,9 @@ title: 用於部署的組態檔
 description: 瞭解設定檔案如何用於Adobe Commerce應用程式部署。 探索共用和特定系統的組態管理最佳實務。
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Adobe Commerce提供組態檔，可讓您輕鬆自訂元件並建立組態型別
 
 >[!INFO]
 >
->[!DNL Commerce 2]部署設定取代了`local.xml`中的[!DNL Magento 1.x]。
+>[!DNL Commerce 2]部署設定取代了[!DNL Magento 1.x]中的`local.xml`。
 
 與其他[模組組態檔](../reference/module-files.md)不同，Commerce部署組態會在初始化期間載入記憶體，不會與任何其他檔案合併，且無法擴充。 （`config.php`與`env.php`已合併。）
 
@@ -51,7 +51,7 @@ Adobe Commerce提供組態檔，可讓您輕鬆自訂元件並建立組態型別
 範例：
 
 - 解除安裝元件： [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- 檢查元件的狀態： [`bin/magento module:status`](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- 檢查元件的狀態： [`bin/magento module:status`](/help/tools/reference/commerce-on-premises.md#modulestatus)
 - 啟用或停用元件： [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md)、[`bin/magento module:enable`](../../installation/tutorials/manage-modules.md)。
 
 > _config.php_

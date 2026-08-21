@@ -5,9 +5,9 @@ feature: Checkout
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 30790492-330e-4810-8069-fce87b40ebb2
-source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ACSD-66093修補程式修正了電子郵件地址可能輸入到客體客戶的&
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

@@ -5,9 +5,9 @@ feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: c95f179d-5291-481f-b655-08a9db608513
 type: Troubleshooting
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ report.CRITICAL: PDOException: There is no active transaction in /home/vendor/ma
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 安裝修補程式後所需的其他步驟
 
@@ -99,4 +99,4 @@ report.CRITICAL: PDOException: There is no active transaction in /home/vendor/ma
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
 * [[!DNL Quality Patches Tool]：「工具」指南中，品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的自助服務工具。
-* 在Commerce設定指南中[以平行模式重新索引](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode)。
+* 在Commerce設定指南中[以平行模式重新索引](/help/configuration/cli/manage-indexers.md#reindexing-in-parallel-mode)。

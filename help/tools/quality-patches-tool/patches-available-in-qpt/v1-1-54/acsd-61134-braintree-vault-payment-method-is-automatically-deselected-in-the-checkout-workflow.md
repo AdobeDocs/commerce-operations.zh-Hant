@@ -5,16 +5,16 @@ feature: Checkout
 role: Admin, Developer
 exl-id: 8aad34e2-89ef-460c-8921-91098bd1645b
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 # ACSD-61134：在結帳工作流程中自動取消選取&#x200B;*[!UICONTROL Braintree Vault]*&#x200B;付款方式
 
-ACSD-61134修補程式修正了當購物者取消選取&#x200B;*[!UICONTROL My billing and shipping address are the same]*&#x200B;核取方塊以更新其帳單地址時，在結帳工作流程中自動取消選取&#x200B;*[!UICONTROL Braintree Vault]*&#x200B;付款方式的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.54時，即可使用此修補程式。 修補程式ID為ACSD-61134。 請注意，此問題已排程在Adobe Commerce 2.4.7-beta1中修正。
+ACSD-61134修補程式修正了當購物者取消選取&#x200B;*[!UICONTROL My billing and shipping address are the same]*&#x200B;核取方塊以更新其帳單地址時，在結帳工作流程中自動取消選取&#x200B;*[!UICONTROL Braintree Vault]*&#x200B;付款方式的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54時，即可使用此修補程式。 修補程式ID為ACSD-61134。 請注意，此問題已排程在Adobe Commerce 2.4.7-beta1中修正。
 
 ## 受影響的產品和版本
 
@@ -55,7 +55,7 @@ Adobe Commerce （所有部署方法） 2.4.4 - 2.4.6-p8
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

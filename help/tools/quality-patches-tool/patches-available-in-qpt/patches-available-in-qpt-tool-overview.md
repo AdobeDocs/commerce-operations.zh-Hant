@@ -5,9 +5,9 @@ feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
 type: Troubleshooting
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ### 如何在雲端基礎結構上安裝和使用適用於Adobe Commerce的QPT
 
-請參閱開發人員檔案中的[雲端基礎結構上的Commerce指南>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)，以取得有關如何在Adobe Commerce上安裝和使用QPT來套用及還原修補程式的詳細資訊。
+請參閱開發人員檔案中的[雲端基礎結構上的Commerce指南>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)，以取得有關如何在Adobe Commerce上安裝和使用QPT來套用及還原修補程式的詳細資訊。
 
 ## 相關閱讀
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ACP2E-3158
 ACP2E-3159
 -->
 
-* 解決與CVE-2024-34102相關的JSON Web權杖(JWT)驗證問題的Hotfix。 如需詳細資訊，請參閱Adobe Commerce-APSB24-40[知識庫文章中可用的](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102)安全性更新。
+* 解決與CVE-2024-34102相關的JSON Web權杖(JWT)驗證問題的Hotfix。 如需詳細資訊，請參閱Adobe Commerce-APSB24-40[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27136)知識庫文章中可用的安全性更新。
 
 <!--
 AC-12486

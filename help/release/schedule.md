@@ -2,9 +2,9 @@
 title: 修補程式發行排程
 description: 了解 Adobe 規劃於何時公佈發行 Adobe Commerce 的新修補程式和安全性修正。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 0f46bdfd0afbca07e0d60e995ee9426f5408671d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '402'
 ht-degree: 4%
 
 ---
@@ -20,13 +20,13 @@ Adobe持續努力在簡化產品升級且可預測之間取得適當的平衡，
 >
 >若要進一步瞭解新功能、雲端基礎結構和擴充功能發行，請參閱[Adobe Commerce Services](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/release-information/release-notes-all)發行說明檔案。
 
-除了此頁面上列出的排程品質、安全性及Beta版修補程式之外，Adobe還透過[品質修補程式工具](versioning-policy.md#individual-patch)提供[個別修補程式](../tools/quality-patches-tool/usage.md)的存取權。 此工具可讓您套用、還原及檢視已安裝Adobe Commerce版本可用的所有個別修補程式的一般資訊。
+除了此頁面上列出的排程品質、安全性及Beta版修補程式之外，Adobe還透過[品質修補程式工具](../tools/quality-patches-tool/usage.md)提供[個別修補程式](versioning-policy.md#individual-patch)的存取權。 此工具可讓您套用、還原及檢視已安裝Adobe Commerce版本可用的所有個別修補程式的一般資訊。
 
 Adobe Commerce修補程式發行版本遵循下列准則：
 
 - **隔離的安全性修補程式檔案** — 個別非累積的[安全性修補程式檔案](versioning-policy.md#isolated-security-patch-file)可獨立發行，以啟用更快速的修正，並整合到下一個完整的安全性修補程式中。 若要套用隔離的安全性修補程式檔案，客戶必須在其支援的發行版本行上使用最新的僅限安全性的修補程式發行版本（最新的 — p版本），因為隔離的安全性修補程式是專門針對該版本進行測試的。
 
-- **安全性修補程式** — 至少每年會針對所有[支援的](versioning-policy.md#security-patch-release)發行行發行[安全性修補程式](lifecycle-policy.md)。 這些修補程式包含所有先前發行的安全性、法規遵循和品質Hotfix。  如有必要，Adobe可能會發行其他安全性修補程式，但不保證一定會發行。
+- **安全性修補程式** — 至少每年會針對所有[支援的](lifecycle-policy.md)發行行發行[安全性修補程式](versioning-policy.md#security-patch-release)。 這些修補程式包含所有先前發行的安全性、法規遵循和品質Hotfix。  如有必要，Adobe可能會發行其他安全性修補程式，但不保證一定會發行。
 
 - **修補程式** — 每年（5月）都會發行Adobe Commerce 2.4.x LTS發行系列的完整[修補程式](versioning-policy.md#patch-release) （3年支援期）。
 
@@ -51,4 +51,4 @@ Adobe會透過下列管道，通知客戶有關新修補程式發行的資訊：
 
 >[!NOTE]
 >
-> 如需每個次要、修補程式和安全性版本的發行日期，以及定期支援結束的日期，請參閱[已發行版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/versions)。
+> 如需每個次要、修補程式和安全性版本的發行日期，以及定期支援結束的日期，請參閱[已發行版本](/help/release/versions.md)。

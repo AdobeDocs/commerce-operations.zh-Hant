@@ -5,9 +5,9 @@ feature: GraphQL, REST, Customers
 role: Admin, Developer
 exl-id: 9f5aac1f-c8a3-4255-8ebc-2268283b3384
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ ACSD-61103修補程式解決客戶透過API端點成功登入後，`customer_ent
 
 1. 建立客戶帳戶。
 1. 使用不正確的詳細資料，透過API產生客戶Token。
-1. 檢查上方客戶之`failures_num` DB表格中的`customer_entity`欄。
+1. 檢查上方客戶之`customer_entity` DB表格中的`failures_num`欄。
 1. 使用正確的詳細資料，透過API產生客戶Token。
-1. 檢查上方客戶之`failures_num` DB表格中的`customer_entity`欄。
+1. 檢查上方客戶之`customer_entity` DB表格中的`failures_num`欄。
 
 <u>預期結果</u>：
 
@@ -54,8 +54,8 @@ ACSD-61103修補程式解決客戶透過API端點成功登入後，`customer_ent
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

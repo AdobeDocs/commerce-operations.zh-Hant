@@ -3,9 +3,9 @@ title: 部署概觀
 description: 閱讀Commerce應用程式的部署策略。
 feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 - **暫存系統**—_選擇性_。 您可以選擇設定測試系統，用於所有整合程式碼的最終測試，包括使用者驗收測試(UAT)。 以設定生產系統的相同方式設定中繼系統。 除了測試不是您的即時商店且不會處理客戶訂單外，測試與生產完全相同。
 
-- **生產系統** — 您的即時商店。 您應該在這裡進行最小的直接設定變更，並且肯定沒有未在測試執行個體上測試的任何設定。 如果可能，請使用已在暫存/開發執行個體上測試的[資料修補程式](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/)進行設定變更。
+- **生產系統** — 您的即時商店。 您應該在這裡進行最小的直接設定變更，並且肯定沒有未在測試執行個體上測試的任何設定。 如果可能，請使用已在暫存/開發執行個體上測試的[資料修補程式](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches)進行設定變更。
 
 ## 其他部署方法
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ## 管理設定
 
-在12因素應用程式設計[中的](https://12factor.net/config)因素3之後建立模型，Commerce現在會將每個系統的組態儲存在系統本身。 （開發組態設定儲存在開發系統上，生產設定儲存在生產系統上。）
+在12因素應用程式設計[&#128279;](https://12factor.net/config)中的因素3之後建立模型，Commerce現在會將每個系統的組態儲存在系統本身。 （開發組態設定儲存在開發系統上，生產設定儲存在生產系統上。）
 
 我們提供同步處理系統組態的方法：
 
@@ -76,6 +76,6 @@ ht-degree: 0%
 >
 >這些管理設定的新方法是選用的。 您不必這麼做，但強烈建議您使用這兩項功能。
 
-在大多數情況下，您無法在管理員中編輯在共用、系統特定或敏感設定中設定的設定選項。 這有助於讓您的設定在所有系統中保持一致。 （您可以選擇使用不含[`magento config:set`選項的](../cli/set-configuration-values.md)命令`--lock`來設定可在Admin中編輯的設定。）
+在大多數情況下，您無法在管理員中編輯在共用、系統特定或敏感設定中設定的設定選項。 這有助於讓您的設定在所有系統中保持一致。 （您可以選擇使用不含`--lock`選項的[`magento config:set`命令](../cli/set-configuration-values.md)來設定可在Admin中編輯的設定。）
 
 每個Commerce組態選項都有唯一的&#x200B;_組態路徑_。 若要設定組態選項的值，您可以使用CLI指令或環境變數來設定特定系統上該組態路徑的值。

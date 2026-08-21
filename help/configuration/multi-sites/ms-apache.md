@@ -2,9 +2,9 @@
 title: 使用Apache設定多個網站
 description: 按照本教學課程中的說明使用Apache設定多個網站。
 exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
   在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
 
-  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=zh-Hant)中的&#x200B;_設定多個網站或商店_。
+  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個網站或商店](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)。
 
 - 您對每個網站使用一個虛擬主機；虛擬主機設定檔為`/etc/httpd/httpd.conf`
 
@@ -28,8 +28,8 @@ ht-degree: 0%
 - 已在`/var/www/html/magento2`中安裝Commerce軟體
 - 您有預設以外的兩個網站：
 
-   - 網站代碼為`french.mysite.mg`且商店檢視代碼為`french`的`fr`
-   - 網站代碼為`german.mysite.mg`且商店檢視代碼為`german`的`de`
+  - 網站代碼為`french`且商店檢視代碼為`fr`的`french.mysite.mg`
+  - 網站代碼為`german`且商店檢視代碼為`de`的`german.mysite.mg`
 
 ## 使用Apache設定多個網站的藍圖
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 步驟2：建立Apache虛擬主機
 
-本節討論如何在虛擬主機中使用Apache伺服器變數`MAGE_RUN_TYPE`設定`MAGE_RUN_CODE`和`SetEnvIf`的值。
+本節討論如何在虛擬主機中使用Apache伺服器變數`SetEnvIf`設定`MAGE_RUN_TYPE`和`MAGE_RUN_CODE`的值。
 
 如需`SetEnvIf`的詳細資訊，請參閱：
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 >[!INFO]
 >
 >- 在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
->- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=zh-Hant)中的&#x200B;_設定多個雲端網站或商店_。
+>- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個雲端網站或商店](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)。
 
 ### 疑難排解
 

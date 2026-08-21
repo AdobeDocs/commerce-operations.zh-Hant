@@ -5,9 +5,9 @@ feature: Security, User Account
 role: Admin, Developer
 exl-id: 049a82ff-80e3-46a1-8472-ac74de0e365f
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ACSD-48570修正程式，修正啟用&#x200B;*[!UICONTROL Add Store Code to URLs
 
 <u>要再現的步驟</u>：
 
-1. 在&#x200B;**[!UICONTROL Add Store Code to URLs]** > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**&#x200B;啟用&#x200B;**[!UICONTROL URL Options]**&#x200B;設定。
+1. 在&#x200B;**[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]** > **[!UICONTROL URL Options]**&#x200B;啟用&#x200B;**[!UICONTROL Add Store Code to URLs]**&#x200B;設定。
 1. 從管理員面板登出，然後按一下管理員登入頁面上的&#x200B;**[!UICONTROL Forgot your password?]**&#x200B;連結。
 1. 輸入管理員使用者的電子郵件、傳遞驗證碼，然後按一下&#x200B;**[!UICONTROL Retrieve Password]**。
 1. 開啟密碼重設電子郵件，然後按一下密碼復原連結。
@@ -54,8 +54,8 @@ ACSD-48570修正程式，修正啟用&#x200B;*[!UICONTROL Add Store Code to URLs
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

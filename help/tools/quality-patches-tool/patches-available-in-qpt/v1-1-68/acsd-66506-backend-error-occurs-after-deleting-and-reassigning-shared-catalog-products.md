@@ -4,13 +4,13 @@ description: 套用ACSD-66506修補程式來修正Adobe Commerce問題，其中�
 feature: B2B
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8f77101832ccfb415d040c202f0fc7221f97419a
+exl-id: db08c58b-7e14-4bd8-af85-8f63aba9051b
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66506：刪除並重新指派共用目錄產品後發生後端錯誤
 
@@ -60,8 +60,8 @@ ACSD-66506修補程式修正後端擲回錯誤&#x200B;*要求的產品不存在�
 
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
-* Adobe Commerce或Magento Open Source內部部署： [[!DNL Quality Patches Tool] 指南中的](/help/tools/quality-patches-tool/usage.md)>使用狀況[!DNL Quality Patches Tool]。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

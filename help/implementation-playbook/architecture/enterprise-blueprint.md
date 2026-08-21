@@ -3,7 +3,7 @@ title: 企業參考架構
 description: 瞭解如何使用Adobe的最新可撰寫商務技術實施Adobe Commerce。
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: dc4747d96e6f226e90ed95c93512c3e879d408ab
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -26,15 +26,15 @@ Commerce已經進化，可滿足企業對效能、規模及安全性的需求。
 
 ## 雲端基礎
 
-[雲端基礎結構上的Adobe Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/overview)是您Commerce實作的基礎。 它提供[安全](../../security-and-compliance/shared-responsibility.md)自動化託管平台，以及可在雲端原生環境中建立、部署、監控及管理Commerce應用程式的自助式方法。
+[雲端基礎結構上的Adobe Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)是您Commerce實作的基礎。 它提供[安全](../../security-and-compliance/shared-responsibility.md)自動化託管平台，以及可在雲端原生環境中建立、部署、監控及管理Commerce應用程式的自助式方法。
 
 請參閱下列雲端基礎技術詳細資訊：
 
-- [**擴充的架構**](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) — 自動調整容量，以維持穩定、可預測的效能
-- [**多個環境**](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/architecture/pro-architecture) — 已預先布建PHP、MySQL (MariaDB)、Redis、RabbitMQ和支援的搜尋引擎技術，以開發、測試和部署您的網站
-- [**組態管理**](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/overview) — 可自訂的環境組態檔和命令列介面(CLI)，用於管理應用程式設定、路由、建置和部署動作以及通知。
-- [**以Git為基礎的工作流程**](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow) — 在推送程式碼變更以進行快速開發和持續部署後，自動建置和部署
-- [**內建可觀察性**](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/monitor/performance) — 結合來自多個來源的記錄資料以幫助您管理網站效能和診斷問題的工具
+- [**擴充的架構**](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture) — 自動調整容量，以維持穩定、可預測的效能
+- [**多個環境**](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/pro-architecture) — 已預先布建PHP、MySQL (MariaDB)、Redis、RabbitMQ和支援的搜尋引擎技術，以開發、測試和部署您的網站
+- [**組態管理**](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/overview) — 可自訂的環境組態檔和命令列介面(CLI)，用於管理應用程式設定、路由、建置和部署動作以及通知。
+- [**以Git為基礎的工作流程**](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) — 在推送程式碼變更以進行快速開發和持續部署後，自動建置和部署
+- [**內建可觀察性**](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/monitor/performance) — 結合來自多個來源的記錄資料以幫助您管理網站效能和診斷問題的工具
 - [**全面的API涵蓋範圍**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/)及[REST](https://developer.adobe.com/commerce/webapi/rest) API，整合核心Commerce應用程式與協力廠商系統，並延伸Commerce功能
 
 ## 與Experience Cloud整合
@@ -48,7 +48,7 @@ Adobe Commerce與所有Experience Cloud解決方案整合，以大規模提供[�
 >如需詳細資訊，請參閱下列資源：
 >
 >- [數位體驗藍圖](https://experienceleague.adobe.com/zh-hant/docs/blueprints-learn/architecture/overview)，以取得更多技術細節。
->- 請參閱[個人化客戶體驗](https://experienceleague.adobe.com/zh-hant/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)。
+>- 請參閱[個人化客戶體驗](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)。
 
 
 ## 與協力廠商系統整合
@@ -70,7 +70,7 @@ Adobe提供下列開發人員工具，用於建立整合與自訂：
 
 >[!NOTE]
 >
->請參閱[現代方法：在Adobe Commerce中有效的擴充性](https://experienceleague.adobe.com/zh-hant/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)。
+>請參閱[現代方法：在Adobe Commerce中有效的擴充性](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)。
 
 ## 店面服務
 

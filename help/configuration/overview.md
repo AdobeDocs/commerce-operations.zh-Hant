@@ -1,11 +1,11 @@
 ---
 title: 設定指南總覽
-description: 瞭解您的Adobe Commerce應用程式的可設定功能與服務。 瞭解如何管理部署、快取、安全性和其他關鍵設定。
+description: 了解 Adobe Commerce 應用程式的可設定功能和服務。 探索如何管理部署、快取、安全性和其他關鍵設定。
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 0%
+source-wordcount: '182'
+ht-degree: 12%
 
 ---
 
@@ -29,4 +29,4 @@ _組態_&#x200B;指南提供管理可設定之Commerce應用程式功能與服�
 
 ## 雲端設定
 
-[!DNL Commerce on cloud infrastructure]使用[組組態檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html?lang=zh-Hant)來更新託管環境中的Commerce應用程式功能與服務。 由於Adobe雲端代管環境的獨特性質，您應該一律檢閱[雲端指南](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html?lang=zh-Hant)以瞭解其他設定需求。
+[!DNL Commerce on cloud infrastructure]使用[組組態檔](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/overview)來更新託管環境中的Commerce應用程式功能與服務。 由於Adobe雲端代管環境的獨特性質，您應該一律檢閱[雲端指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)以瞭解其他設定需求。

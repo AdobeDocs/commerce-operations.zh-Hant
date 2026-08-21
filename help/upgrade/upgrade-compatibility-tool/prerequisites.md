@@ -2,9 +2,9 @@
 title: '[!DNL Upgrade Compatibility Tool]需求'
 description: 確認您的系統符合在Adobe Commerce專案的命令列介面中執行 [!DNL Upgrade Compatibility Tool] 的必要需求。
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -80,4 +80,4 @@ php           7.4.30    success
 
 如果您針對具有大型模組和檔案的Adobe Commerce執行個體執行[!DNL Upgrade Compatibility Tool]，則工具可能需要大量RAM （至少2GB）。
 
-針對雲端基礎結構[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=zh-Hant){target=_blank}專案上的Adobe Commerce，從[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=zh-Hant)執行[!DNL Upgrade Compatibility Tool]。
+針對雲端基礎結構[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/overview){target=_blank}專案上的Adobe Commerce，從[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=zh-Hant)執行[!DNL Upgrade Compatibility Tool]。

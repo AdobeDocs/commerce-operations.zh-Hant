@@ -3,9 +3,9 @@ title: 回應安全性事件
 description: 依照最佳實務處理安全性事件，以回應及修正影響網站可用性與效能的安全性問題。
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,18 @@ ht-degree: 0%
 - 請您的系統整合商和適當的安全人員參與調查和補救工作。
 
 - 判斷攻擊的範圍：
-   - 是否存取過信用卡資訊？
-   - 哪些資訊遭竊？
-   - 妥協後已經過了多少時間？
-   - 資訊是否已加密？
+  - 是否存取過信用卡資訊？
+  - 哪些資訊遭竊？
+  - 妥協後已經過了多少時間？
+  - 資訊是否已加密？
 
 - 請檢閱伺服器記錄檔和檔案變更，嘗試尋找攻擊向量，以判斷網站何時及如何遭到破壞。
 
-   - 在特定情況下，建議清除並重新安裝所有專案，或在虛擬託管的情況下，建立全新的執行個體。 惡意程式碼可能隱藏在不受懷疑的位置，只是等待自我還原。
+  - 在特定情況下，建議清除並重新安裝所有專案，或在虛擬託管的情況下，建立全新的執行個體。 惡意程式碼可能隱藏在不受懷疑的位置，只是等待自我還原。
 
-   - 移除所有不必要的檔案。 然後，從已知乾淨的來源重新安裝所需的檔案。 例如，您可以使用版本控制系統中的檔案，或從Adobe的原始散發檔案來重新安裝。
+  - 移除所有不必要的檔案。 然後，從已知乾淨的來源重新安裝所需的檔案。 例如，您可以使用版本控制系統中的檔案，或從Adobe的原始散發檔案來重新安裝。
 
-   - 重設所有認證，包括資料庫、檔案存取、付款和運送整合、網站服務以及管理員登入。 同時重設所有可能用來攻擊系統的整合及API金鑰和帳戶。
+  - 重設所有認證，包括資料庫、檔案存取、付款和運送整合、網站服務以及管理員登入。 同時重設所有可能用來攻擊系統的整合及API金鑰和帳戶。
 
 ## 分析事件
 
@@ -73,13 +73,13 @@ ht-degree: 0%
 
   使用工具中的&#x200B;**安全性**&#x200B;索引標籤，以清楚檢視潛在的安全性問題，協助找出根本原因，讓網站維持最佳效能。
 
-- 分析包含[New Relic記錄檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=zh-Hant)的記錄檔
+- 分析包含[New Relic記錄檔](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)的記錄檔
 
-  雲端基礎結構上的Adobe Commerce Pro專案包含[New Relic記錄檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=zh-Hant)服務。 此服務已預先設定為彙總來自測試和生產環境的所有記錄資料，以便在集中式記錄管理控制面板中顯示，您可在此搜尋和視覺化彙總的資料。
+  雲端基礎結構上的Adobe Commerce Pro專案包含[New Relic記錄檔](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management)服務。 此服務已預先設定為彙總來自測試和生產環境的所有記錄資料，以便在集中式記錄管理控制面板中顯示，您可在此搜尋和視覺化彙總的資料。
 
   對於其他Commerce專案，您可以設定並使用[New Relic記錄檔](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/)服務來完成下列工作：
-   - 使用[New Relic查詢](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)來搜尋彙總記錄檔資料。
-   - 透過New Relic記錄檔應用程式以視覺效果呈現記錄檔資料。
+  - 使用[New Relic查詢](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)來搜尋彙總記錄檔資料。
+  - 透過New Relic記錄檔應用程式以視覺效果呈現記錄檔資料。
 
 ## 稽核帳戶、程式碼和資料庫
 
@@ -93,9 +93,9 @@ ht-degree: 0%
 
 - [檢閱管理員安全性設定](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=zh-Hant) — 確認管理員安全性設定遵循安全性最佳實務。
 
-- [在雲端基礎結構專案上檢閱Adobe Commerce的使用者帳戶](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=zh-Hant) — 移除舊的、未使用的或可疑的帳戶，並為所有雲端專案管理員使用者輪換密碼。 請確定已正確設定帳戶安全性設定。
+- [在雲端基礎結構專案上檢閱Adobe Commerce的使用者帳戶](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/user-access) — 移除舊的、未使用的或可疑的帳戶，並為所有雲端專案管理員使用者輪換密碼。 請確定已正確設定帳戶安全性設定。
 
-- 在雲端基礎結構上[稽核Adobe Commerce的SSH金鑰](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=zh-Hant) — 檢閱、刪除和輪換SSH金鑰。
+- 在雲端基礎結構上[稽核Adobe Commerce的SSH金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/secure-connections) — 檢閱、刪除和輪換SSH金鑰。
 
 ### 稽核代碼
 

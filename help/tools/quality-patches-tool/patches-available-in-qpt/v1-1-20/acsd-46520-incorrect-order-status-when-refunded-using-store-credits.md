@@ -5,16 +5,16 @@ feature: Orders, Returns
 role: Admin
 exl-id: 67740003-a71e-41bf-afda-ca3e32290115
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
 
 # ACSD-46520：使用商店積分退款時訂單狀態不正確
 
-ACSD-46520修補程式可解決使用者使用商店積分退款時，訂單狀態不正確的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20時，即可使用此修補程式。 修補程式ID為ACSD-46520。 請注意，問題已在Adobe Commerce 2.4.5中修正。
+ACSD-46520修補程式可解決使用者使用商店積分退款時，訂單狀態不正確的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.20時，即可使用此修補程式。 修補程式ID為ACSD-46520。 請注意，問題已在Adobe Commerce 2.4.5中修正。
 
 ## 受影響的產品和版本
 
@@ -57,7 +57,7 @@ ACSD-46520修補程式可解決使用者使用商店積分退款時，訂單狀�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或[!DNL Magento Open Source]內部部署： [品質修補工具>使用狀況](/help/tools/quality-patches-tool/usage.md) （在品質修補工具指南中）。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

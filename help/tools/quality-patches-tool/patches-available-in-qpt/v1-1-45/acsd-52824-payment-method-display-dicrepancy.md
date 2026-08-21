@@ -5,16 +5,16 @@ feature: Payments, B2B, Shopping Cart
 role: Admin, Developer
 exl-id: 39d67de6-1796-4067-ae7a-ef17fcf794e5
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
 
 # ACSD-52824：為公司客戶顯示的停用付款方法
 
-ACSD-52824修補程式修正了公司客戶出現[!DNL PayPal Express]、[!DNL Google Pay]和[!DNL Apple Pay]付款方法的問題，儘管已在公司設定中停用。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.45時，即可使用此修補程式。 修補程式ID為ACSD-52824。 請注意，此問題已排程在Adobe Commerce 2.4.7中修正。
+ACSD-52824修補程式修正了公司客戶出現[!DNL PayPal Express]、[!DNL Google Pay]和[!DNL Apple Pay]付款方法的問題，儘管已在公司設定中停用。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.45時，即可使用此修補程式。 修補程式ID為ACSD-52824。 請注意，此問題已排程在Adobe Commerce 2.4.7中修正。
 
 ## 受影響的產品和版本
 
@@ -58,13 +58,13 @@ ACSD-52824修補程式修正了公司客戶出現[!DNL PayPal Express]、[!DNL G
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=zh-Hant)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 
 若要進一步瞭解[!DNL Quality Patches Tool]，請參閱：
 
-* [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches)的新工具。
+* [[!DNL Quality Patches Tool] 已發行：支援知識庫中的自助式品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的新工具。
 * [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
 
 

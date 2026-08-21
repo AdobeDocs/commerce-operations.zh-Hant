@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1591'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Adobe建議您先決定是否需要儲存此資料。 如果您要從舊版系�
 
 例如，您可以`stitch`從外部資料庫（可能是已停用的舊Magento 1網站）將舊訂單放在一起。 然後使用GraphQL網格，將其顯示為客戶訂單歷史記錄的一部分。 這些舊訂單可與您目前[!DNL Adobe Commerce]環境中的訂單合併。
 
-如需搭配GraphQL使用API網狀架構的詳細資訊，請參閱[什麼是API網狀架構](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}和[GraphQL網狀架構](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}。
+如需搭配GraphQL使用API網狀架構的詳細資訊，請參閱[什麼是API網狀架構](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}和[GraphQL網狀架構](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}。
 
 ## 使用擴充功能屬性移轉舊資料
 
-如果您判斷舊版資料需要移轉，或新資料需要儲存在[!DNL Adobe Commerce]中，Adobe建議使用[擴充功能屬性](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}。 使用擴充功能屬性來儲存其他資料具備下列優點：
+如果您判斷舊版資料需要移轉，或新資料需要儲存在[!DNL Adobe Commerce]中，Adobe建議使用[擴充功能屬性](https://developer.adobe.com/commerce/php/development/components/add-attributes){target="_blank"}。 使用擴充功能屬性來儲存其他資料具備下列優點：
 
 - 您可以控制要儲存的資料和資料庫結構，以確保以正確的欄型別和正確的索引來儲存資料。
 - [!DNL Adobe Commerce]中的大部分實體都支援使用擴充屬性。
@@ -54,7 +54,7 @@ Adobe建議您先決定是否需要儲存此資料。 如果您要從舊版系�
 
 作為開發人員，您必須一律考慮使用您[!DNL Adobe Commerce]環境以外的工具，例如GraphQL mesh和Adobe App Builder。 這些工具可協助您保留資料的存取權，但對核心商務應用程式或其基礎資料庫表格沒有影響。 使用此方法，您可以透過API公開您的資料。 接著，將資料來源新增至App Builder設定。 使用GraphQL Mesh，您可以合併這些資料來源，並產生[舊資料](#legacy-data)中提到的單一回應。
 
-如需GraphQL Mesh的詳細資訊，請參閱[GraphQL Mesh閘道](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}。 如需Adobe App Builder的相關資訊，請參閱[App Builder簡介](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=zh-Hant){target="_blank"}。
+如需GraphQL Mesh的詳細資訊，請參閱[GraphQL Mesh閘道](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}。 如需Adobe App Builder的相關資訊，請參閱[App Builder簡介](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}。
 
 ## 修改核心表格或協力廠商表格
 
@@ -75,9 +75,9 @@ Adobe建議您先決定是否需要儲存此資料。 如果您要從舊版系�
 
 1. 建立適當的檔案以啟用模組（請參閱[建立模組](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=zh-Hant){target="_blank"}）。
 
-1. 在`db_schema.xml`資料夾中建立名為`etc`的檔案，並進行適當的變更。
+1. 在`etc`資料夾中建立名為`db_schema.xml`的檔案，並進行適當的變更。
 
-   如果適用，請產生`db_schema_whitelist.json`檔案。 如需詳細資訊，請參閱[宣告式結構描述](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"}。
+   如果適用，請產生`db_schema_whitelist.json`檔案。 如需詳細資訊，請參閱[宣告式結構描述](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration){target="_blank"}。
 
 ### 潛在影響
 
@@ -97,19 +97,19 @@ Adobe建議您先決定是否需要儲存此資料。 如果您要從舊版系�
 
 - 使用`additional_data`欄位的優點
 
-   - 不需要其他欄位，將欄數維持在最小。 這在銷售流程中很有幫助，因為其中已經涉及許多表格。 最好不要對這個已經複雜的程式增加更多複雜性。 此方法可滿足許多使用案例，但並非全部。
+  - 不需要其他欄位，將欄數維持在最小。 這在銷售流程中很有幫助，因為其中已經涉及許多表格。 最好不要對這個已經複雜的程式增加更多複雜性。 此方法可滿足許多使用案例，但並非全部。
 
 - 缺點
 
-   - 此方法僅適用於儲存唯讀資料。 發生此問題是因為我們的程式碼需要取消序列化才能修改和建置物件以新增相依性或資料庫關係。
+  - 此方法僅適用於儲存唯讀資料。 發生此問題是因為我們的程式碼需要取消序列化才能修改和建置物件以新增相依性或資料庫關係。
 
-   - 很難使用資料庫作業來搜尋這些欄位。 使用此方法搜尋時速度很慢。
+  - 很難使用資料庫作業來搜尋這些欄位。 使用此方法搜尋時速度很慢。
 
-   - 將資料儲存在`additional_data`欄中時，必須格外小心，避免觸發序列化或取消序列化作業，這些作業可能會建立無效的JSON來中斷程式碼，或在執行期間造成讀取錯誤。
+  - 將資料儲存在`additional_data`欄中時，必須格外小心，避免觸發序列化或取消序列化作業，這些作業可能會建立無效的JSON來中斷程式碼，或在執行期間造成讀取錯誤。
 
-   - 這些欄位必須在程式碼中清楚宣告，讓開發人員可輕鬆找到。
+  - 這些欄位必須在程式碼中清楚宣告，讓開發人員可輕鬆找到。
 
-   - 其他可能發生且很難診斷的問題。 例如，對於某些原生PHP函式，如果您不使用核心應用程式提供的[!DNL Adobe Commerce]包裝函式方法，則轉換資料的結束結果可能會與預期格式不同。 請一律使用包裝函式，確保儲存或擷取資料的一致性和可預測性。
+  - 其他可能發生且很難診斷的問題。 例如，對於某些原生PHP函式，如果您不使用核心應用程式提供的[!DNL Adobe Commerce]包裝函式方法，則轉換資料的結束結果可能會與預期格式不同。 請一律使用包裝函式，確保儲存或擷取資料的一致性和可預測性。
 
 以下是具有`additional_data`欄的欄和結構的表格範例。
 
@@ -155,7 +155,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## 尋找大型MySQL表格
 
-若要識別大型資料表，請依照[連線至資料庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database)文章中的說明連線至資料庫，然後執行下列命令。 將`project_id`用於生產環境。 對於暫存環境，請使用`[project_id]_stg`，`[project_id]_stg2`。
+若要識別大型資料表，請依照[連線至資料庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database)文章中的說明連線至資料庫，然後執行下列命令。 將`project_id`用於生產環境。 對於暫存環境，請使用`[project_id]_stg`，`[project_id]_stg2`。
 
 ```sql
 SELECT TABLE_NAME AS `Table`,
