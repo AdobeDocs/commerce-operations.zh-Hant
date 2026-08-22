@@ -44,7 +44,7 @@ Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commer
 - 在查詢時，更明確地期望權重、智慧型排名和手動規則如何結合。
 - 有關在變更後驗證高值查詢和調校提升規則的指南。
 
-深入瞭解[Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/manage-results/search-relevance-matching)和[即時搜尋(PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching)中的搜尋比對和排名策略。
+深入瞭解[Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/manage-results/search-relevance-matching)和[即時搜尋(PaaS)](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/search-relevance-matching)中的搜尋比對和排名策略。
 
 若要要求此私人測試版的邀請，請傳送電子郵件至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。 Adobe團隊會採取後續步驟和資格要求來回應。
 

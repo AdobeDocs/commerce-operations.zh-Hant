@@ -1,6 +1,6 @@
 ---
 title: MDVA-27239：不顯示交叉銷售產品
-description: MDVA-27239修補程式修正未顯示交叉銷售產品的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.7時，即可使用此修補程式。 請注意，問題已在Adobe Commerce 2.3.6中修正。
+description: MDVA-27239修補程式修正未顯示交叉銷售產品的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.7時，即可使用此修補程式。 請注意，問題已在Adobe Commerce 2.3.6中修正。
 feature: Products
 role: Admin
 exl-id: ab8fe64d-adbe-4756-be43-1a35ba6b4123
