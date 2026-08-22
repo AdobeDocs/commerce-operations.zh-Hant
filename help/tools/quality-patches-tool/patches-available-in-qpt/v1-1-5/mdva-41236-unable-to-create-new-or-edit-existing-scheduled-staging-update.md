@@ -1,6 +1,6 @@
 ---
 title: MDVA-41236：無法為產品建立新的或編輯現有的排程更新
-description: MDVA-41236修補程式修正了使用者無法建立新的或編輯產品現有排程更新（如果先前已移除「結束日期」）的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5時，即可使用此修補程式。 修補程式ID為MDVA-41236。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
+description: MDVA-41236修補程式修正了使用者無法建立新的或編輯產品現有排程更新（如果先前已移除「結束日期」）的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5時，即可使用此修補程式。 修補程式ID為MDVA-41236。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: Products, Staging
 role: Admin
 exl-id: 82192778-4f25-40a0-882e-d52d32c433c2
