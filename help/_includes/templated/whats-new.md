@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
+source-git-commit: 9f9c38163d91b655bf44cac81875dab59ee2c77d
 workflow-type: tm+mt
-source-wordcount: '2690'
-ht-degree: 1%
+source-wordcount: '2845'
+ht-degree: 0%
 
 ---
 # 新功能範本
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年8月19日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新Commerce快取檔案，提供更清楚的內部部署與雲端指引，以及移至使用Symfony L2快取的Valkey的新移轉指引：<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/caching-overview">快取概觀與設定選項</a>。<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/cache-types">設定快取前端和型別</a>。<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/cache-options">快取後端選項和存放裝置參考</a>。<br /> — 更新效能最佳化的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/level-two-cache">L2快取設定</a>，提供從<code>RemoteSynchronizedCache</code>移轉至Symfony L2快取的指引。<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">最佳實務Valkey和Redis服務配置</a>，帶有雲特定的遷移步驟，可遷移到Valkey和Symfony L2快取。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年8月14日
 
