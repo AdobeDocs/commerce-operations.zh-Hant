@@ -14,7 +14,7 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 3bb6679e2a5e254ef066b47816e527123ca8dcb3
+source-git-commit: e1ac67f8533c6a9f7948e982c3ddbd79f4e02855
 workflow-type: tm+mt
 source-wordcount: 703
 ht-degree: 0%
@@ -44,9 +44,9 @@ QPT v1.1.82包含下列修補程式：
 1. **[ACP2E-4698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)**：修正在「頁面產生器」文字內容中再次編輯影像時，可以儲存絕對媒體URL，而非保留可攜式媒體指示詞的問題。
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**：修正即使資料庫設定為支援utf8mb4，在WYSIWYG編輯器或管理員的頁面產生器內容中輸入4位元組Unicode字元時仍會遭到錯誤封鎖的問題。
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**：修正獎勵點過期時間在含有大量獎勵點歷史記錄的商店中緩慢執行，造成獎勵點過期延遲的問題。
+1. **[ACP2E-4840](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)**：修正`products` GraphQL查詢中要求的數量值傳回null的問題。
 1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**：修正`requisition_lists GraphQL`查詢傳回`total_count`值的問題，該值僅反映目前頁面的專案數，而非符合查詢條件的請購單清單總數。
 1. **[ACP2E-4805](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)**：修正清單中第一個可銷售子產品出現延遲時，含有許多子產品之可設定產品之簽出API要求顯著變慢的問題。
-1. **ACP2E-4840**：修正`products` GraphQL查詢中要求的數量值傳回&#x200B;*null*&#x200B;的問題。
 1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)**：修正產品警示電子郵件通知忽略商店檢視電子郵件設定的問題。
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**：修正在「管理員」中檢視含大量通訊錄的客戶帳戶時，管理員使用者意外登出的問題。
 1. **[ACP2E-4894](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)**：修正在大容量存放區啟用&#x200B;**[!UICONTROL Asynchronous Indexing]**&#x200B;時，新訂單在「管理訂單管理」格線中出現延遲的問題。
