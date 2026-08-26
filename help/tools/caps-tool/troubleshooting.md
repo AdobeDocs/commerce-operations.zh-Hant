@@ -179,7 +179,7 @@ ht-degree: 0%
 
 **原因：**&#x200B;暫時性問題導致服務無法連線至GitHub
 
-**解決方案：**&#x200B;請稍候幾分鐘，然後再次嘗試操作。 如果錯誤持續發生，請連絡[Adobe Commerce雲端支援](https://experienceleague.adobe.com/home#support)
+**解決方案：**&#x200B;請稍候幾分鐘，然後再次嘗試操作。 如果錯誤持續發生，請連絡[Adobe Commerce雲端支援](https://experienceleague.adobe.com/home?lang=zh-Hant#support)
 
 #### 「逾時內未建立環境」（GitHub連線的專案）
 
@@ -187,7 +187,7 @@ ht-degree: 0%
 
 **原因：**&#x200B;專案的GitHub整合已停用`fetch-branches`選項。 因此，服務推送的暫時分支不會同步，且永遠不會建立整合環境。
 
-**解決方案：**&#x200B;啟用整合的[`fetch-branches`選項](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)，然後重試作業。 請參閱[為 [!DNL Patching Automation]](github-integration.md)設定GitHub整合。
+**解決方案：**&#x200B;啟用整合的[`fetch-branches`選項](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)，然後重試作業。 請參閱[為 [!DNL Patching Automation]](github-integration.md)設定GitHub整合。
 
 ### 環境啟用錯誤
 
@@ -200,10 +200,10 @@ ht-degree: 0%
 **如果詳細資料提及撰寫器或Adobe Commerce封裝：**
 
 * 登入[https://account.magento.com/](https://account.magento.com/) （或讓您的帳戶擁有者登入），並確認您的帳戶可以存取Commerce Enterprise程式碼基底。
-* 確認您專案的撰寫器公開/私密金鑰組是否正確 — 請參閱[驗證金鑰](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)。
+* 確認您專案的撰寫器公開/私密金鑰組是否正確 — 請參閱[驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/authentication-keys)。
 * 登入[https://account.magento.com/](https://account.magento.com/) （或要求您的帳戶擁有者登入），並確認您的帳戶可以存取Commerce Enterprise程式碼基底。
-* 驗證您專案的撰寫器公開和私用驗證金鑰是否正確。 請參閱[驗證金鑰](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)。
-* 確認錯誤訊息中名為的套件適用於您的Commerce版本。 請參閱[Adobe Commerce套件](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)。
+* 驗證您專案的撰寫器公開和私用驗證金鑰是否正確。 請參閱[驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/authentication-keys)。
+* 確認錯誤訊息中名為的套件適用於您的Commerce版本。 請參閱[Adobe Commerce套件](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/packages/adobe-commerce)。
 
 **如果詳細資料提及環境位置或資源：**
 
@@ -249,7 +249,7 @@ ht-degree: 0%
 
 ### 相關主題
 
-* [Adobe Commerce Cloud檔案](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerce Cloud檔案](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)
 * [Adobe Commerce安裝指南](/help/installation/overview.md)
 * [修補自動化簡介](intro.md)
 * [如何存取](access.md)

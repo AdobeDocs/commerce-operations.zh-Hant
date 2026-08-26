@@ -24,11 +24,11 @@ ht-degree: 0%
 * **Adobe Commerce Cloud帳戶**
   * 作用中Adobe Commerce Cloud訂閱
   * 有效的Adobe Commerce授權
-  * [設定為存取Adobe Commerce存放庫的Composer驗證金鑰](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
+  * [設定為存取Adobe Commerce存放庫的Composer驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
   * 專案和環境許可權
 
 * **環境資源**
-  * 專案有能力為修補作業建立額外的作用中整合環境 — 請參閱[使用Cloud Console管理分支](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches)以取得有關作用中環境限制的資訊
+  * 專案有能力為修補作業建立額外的作用中整合環境 — 請參閱[使用Cloud Console管理分支](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/console-branches)以取得有關作用中環境限制的資訊
   * 足夠的儲存空間、CPU和記憶體資源
   * Adobe存放庫的網路存取權
   * 用於同步的穩定父環境

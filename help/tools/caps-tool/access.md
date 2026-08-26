@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 正在存取[!DNL Patching Automation]
 
-[!DNL Patching Automation]可在[!DNL Site-Wide Analysis Tool]儀表板中作為索引標籤使用。 您可以在管理員側邊欄中前往&#x200B;**報表** > **系統深入分析** > **全網站分析工具**，從管理員面板存取它。 請參閱[如何存取全網站分析工具](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)，瞭解必要條件和許可權設定。
+[!DNL Patching Automation]可在[!DNL Site-Wide Analysis Tool]儀表板中作為索引標籤使用。 您可以在管理員側邊欄中前往&#x200B;**報表** > **系統深入分析** > **全網站分析工具**，從管理員面板存取它。 請參閱[如何存取全網站分析工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/site-wide-analysis-tool/access)，瞭解必要條件和許可權設定。
 
 進入控制面板後：
 

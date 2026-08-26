@@ -82,7 +82,7 @@ ht-degree: 0%
 
 **無資料複製** — 整合環境不會收到目標環境資料（資料庫、媒體或其他儲存內容）的復本 — 僅會使用程式碼基底來套用及驗證修補程式
 
-**資源需求** — 您的雲端專案的總儲存容量已在合約中定義。 （透過您的帳戶頁面或`magento-cloud subscription:info`檢視）。 每個環境的磁碟配置是透過`.magento.app.yaml`/`.magento/services.yaml`中的`disk`屬性個別設定的。 如需詳細資訊，請參閱[管理磁碟空間](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)。 如果修補程式作業因儲存限制而失敗，請對照其設定的配置檢查整合環境的磁碟使用量(`magento-cloud db:size` / `magento-cloud mount:size`)。
+**資源需求** — 您的雲端專案的總儲存容量已在合約中定義。 （透過您的帳戶頁面或`magento-cloud subscription:info`檢視）。 每個環境的磁碟配置是透過`.magento.app.yaml`/`.magento/services.yaml`中的`disk`屬性個別設定的。 如需詳細資訊，請參閱[管理磁碟空間](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)。 如果修補程式作業因儲存限制而失敗，請對照其設定的配置檢查整合環境的磁碟使用量(`magento-cloud db:size` / `magento-cloud mount:size`)。
 
 #### 階段2b：整合環境中的修補應用程式
 
