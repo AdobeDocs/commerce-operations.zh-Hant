@@ -52,7 +52,7 @@ ht-degree: 0%
 
 瞭解[!DNL Adobe Commerce Patching Automation]以及此工具如何協助使用者快速尋找及套用安全性修補程式。 下列影片說明如何透過「全網站分析工具」(SWAT)儀表板存取它、選擇您的專案和環境，以及按一下即可套用修補程式。
 
->[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476258/?captions=chi_hant&learn=on&enablevpops)
 
 ## 常見使用案例
 
