@@ -1,21 +1,21 @@
 ---
-title: 如何存取 [!DNL Cloud Automation Patching Service (CAPS)]
-description: 瞭解如何存取及使用 [!DNL Cloud Automation Patching Service (CAPS)]
+title: 如何存取 [!DNL Adobe Commerce Patching Automation]
+description: 瞭解如何存取及使用 [!DNL Adobe Commerce Patching Automation]
 hide: true
-source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '336'
 ht-degree: 1%
 
 ---
 
-# 如何存取[!DNL Cloud Automation Patching Service (CAPS)]
+# 如何存取[!DNL Adobe Commerce Patching Automation]
 
 ## 先決條件
 
-[!DNL CAPS]使用Adobe Commerce Cloud中的角色型存取控制。 您在Cloud Console中的存取層級決定您可以對[!DNL CAPS]執行的操作。
+[!DNL Patching Automation]使用Adobe Commerce Cloud中的角色型存取控制。 您在Cloud Console中的存取層級會決定您可以使用該服務做什麼。
 
-### 可以使用[!DNL CAPS]的人
+### 可以使用[!DNL Patching Automation]的人
 
 * **專案管理員** — 可以在所有環境中套用或還原修補程式
 * **參與者** — 可以在其指派的環境上套用或還原修補程式
@@ -23,21 +23,22 @@ ht-degree: 1%
 
 ### 如何要求專案的存取權
 
-如果您在[!DNL CAPS]使用者介面中未看到任何專案，則需要向適當的人員請求存取權：
+如果您在[!DNL Patching Automation]使用者介面中未看到任何專案，請向適當的人員要求存取權：
 
 * 聯絡專案的帳戶擁有者或專案管理員
 * 他們將會透過Cloud Console授予您適當的角色
-* 在授與存取權後，您可以登入Cloud Console以使用[!DNL CAPS]
+* 在授與存取權後，您可以登入Cloud Console來使用該服務
 
 >[!NOTE]
 >
->[!DNL CAPS]遵循與Adobe Commerce Cloud相同的許可權模型，因此您在Cloud Console中的存取層級會決定您可以對[!DNL CAPS]執行的操作。
+>[!DNL Patching Automation]遵循與Adobe Commerce Cloud相同的許可權模式，因此您在Cloud Console中的存取層級會決定您可以如何使用此服務。
 
-## 正在存取[!DNL CAPS]
+## 正在存取[!DNL Patching Automation]
 
-CAPS工具可從全網站分析工具儀表板取得，網址為[https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/)。 在「自動修補」標籤下，您可以選取專案和環境。
+[!DNL Patching Automation]可在[!DNL Site-Wide Analysis Tool]儀表板中作為索引標籤使用。 您可以在管理員側邊欄中前往&#x200B;**報表** > **系統深入分析** > **全網站分析工具**，從管理員面板存取它。 請參閱[如何存取全網站分析工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/site-wide-analysis-tool/access)，瞭解必要條件和許可權設定。
 
-1. 瀏覽至[https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/)的全網站分析工具。
+進入控制面板後：
+
 1. 按一下介面中的[!UICONTROL Patching Automation]標籤。
 1. 選取您要套用修補程式的專案和環境。
 1. 檢閱可用的修補程式及其相容性狀態。
@@ -45,7 +46,7 @@ CAPS工具可從全網站分析工具儀表板取得，網址為[https://support
 
 ## 生產環境存取權
 
-對於生產環境，可套用其他保護措施：
+對於生產環境，預設會套用其他保護措施：
 
 * **維護模式** — 必須啟用
 * **Cron工作** — 必須停用
@@ -55,9 +56,13 @@ CAPS工具可從全網站分析工具儀表板取得，網址為[https://support
 >
 >修補生產環境需要適當的準備和防護措施，以防止意外中斷。
 
+>[!NOTE]
+>
+>在UI (*[!UICONTROL I want to skip maintenance mode and cron checks before applying patches to production environment]*)中選取覆寫核取方塊，即可略過維護模式和cron-job檢查。 只有在您瞭解修補生產環境而不具備這些防護措施時，才使用此選項。
+
 ## 相關主題
 
-* [大寫字介紹](intro.md)
+* [修補自動化簡介](intro.md)
 * [工作流程概觀](workflow.md)
 * [GitHub整合](github-integration.md)
 * [最佳實務](best-practices.md)

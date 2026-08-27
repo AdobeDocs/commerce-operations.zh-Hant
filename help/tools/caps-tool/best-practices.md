@@ -1,17 +1,17 @@
 ---
-title: '[!DNL Cloud Automation Patching Service (CAPS)]最佳作法指南'
-description: 瞭解安全有效地使用 [!DNL Cloud Automation Patching Service (CAPS)] 的最佳實務
+title: '[!DNL Adobe Commerce Patching Automation]最佳作法指南'
+description: 瞭解如何使用 [!DNL Adobe Commerce Patching Automation] 安全地規劃、驗證和套用修補程式，將部署風險和服務中斷降至最低。
 hide: true
-source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-# [!DNL Cloud Automation Patching Service (CAPS)]最佳作法指南
+# [!DNL Adobe Commerce Patching Automation]最佳作法指南
 
-若要使用[!DNL Cloud Automation Patching Service] ([!DNL CAPS])進行成功且安全的修補程式操作，下列最佳實務是必要的。 本指南提供全面的最佳實務，協助您有效執行修補程式操作、管理環境，以及實現卓越的營運效能。
+使用[!DNL Adobe Commerce Patching Automation]進行成功且安全的修補程式操作時，遵循最佳實務是必要的。 本指南提供全面的最佳實務，協助您有效執行修補程式操作、管理環境，以及實現卓越的營運效能。
 
 ## 修補前最佳實務
 
@@ -21,24 +21,24 @@ ht-degree: 0%
 
 在套用修補程式之前，請確認您的環境已準備妥當：
 
-* **Adobe Commerce雲端帳戶**
+* **Adobe Commerce Cloud帳戶**
   * 作用中Adobe Commerce Cloud訂閱
   * 有效的Adobe Commerce授權
-  * 已設定存放庫存取認證
+  * [設定為存取Adobe Commerce存放庫的Composer驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
   * 專案和環境許可權
 
 * **環境資源**
-  * 可用於臨時測試的環境槽
+  * 專案有能力為修補作業建立額外的作用中整合環境 — 請參閱[使用Cloud Console管理分支](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/console-branches)以取得有關作用中環境限制的資訊
   * 足夠的儲存空間、CPU和記憶體資源
   * Adobe存放庫的網路存取權
   * 用於同步的穩定父環境
 
 * **生產環境準備** （用於生產修補）
-  * 可啟用維護模式
-  * 可停用Cron工作
-  * 已建立維護視窗程式
-  * 復原程式已記錄
-  * 利害關係人溝通計畫就緒
+  * 啟用維護模式
+  * 停用Cron工作
+  * 建立維護視窗程式
+  * 檔案復原程式
+  * 準備利害關係人溝通計畫
 
 ## 修補程式應用程式最佳實務
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 
 ## 主要最佳實務摘要
 
-### [!DNL CAPS]成功的關鍵最佳實務
+### [!DNL Patching Automation]成功的關鍵最佳實務
 
 * 將修補程式套用至生產環境前，請務必在預先生產環境中測試
 * 啟用維護模式並停用生產修補程式操作的cron工作
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 ## 相關主題
 
-* [大寫字介紹](intro.md)
+* [修補自動化簡介](intro.md)
 * [如何存取](access.md)
 * [工作流程概觀](workflow.md)
 * [GitHub整合](github-integration.md)
