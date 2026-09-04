@@ -4,9 +4,9 @@ description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: ba69e06096892027bd50485eaf69cef94b40d6ce
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,23 @@ ht-degree: 0%
 ## 目前的Beta計畫
 
 如需使用中Beta版計畫的清單，請參閱下列章節。
+
+### 屬性排名（公開Beta） {#attribute-ranking-public-beta}
+
+僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
+
+[!DNL Adobe Commerce Optimizer]銷售規則現在支援&#x200B;**屬性排名**，可將&#x200B;**提升**、**隱藏**&#x200B;或&#x200B;**隱藏**&#x200B;動作自動套用至符合一或多個屬性條件的產品，例如品牌、類別或製造商，而不需要個別的SKU選擇。 屬性排名會與智慧型排名和手動排名一起顯示在規則編輯器中。 使用它搭配&#x200B;**所有產品清單**、**類別規則**&#x200B;和&#x200B;**搜尋規則**。
+
+**主要優點**
+
+- 透過鎖定屬性值而非個別SKU，在大型目錄中縮放銷售。
+- 使用單一規則提升、隱藏或隱藏每個相符的產品，例如提升整個品牌或抑制中止的顏色。
+- 結合屬性條件與智慧型排名：相符的產品優先，不相符的產品會繼續依您的排名策略排序。
+- 設定每個條件的提升或隱藏強度，微調規則影響相符產品的強度。
+
+若要深入瞭解，請參閱銷售規則指南中的[屬性排名](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)。
+
+若要分享此測試版功能的意見回饋，請傳送電子郵件至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。
 
 ### 搜尋比對和排名(Private Beta)
 
