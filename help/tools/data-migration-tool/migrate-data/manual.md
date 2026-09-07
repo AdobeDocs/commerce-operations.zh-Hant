@@ -5,7 +5,7 @@ exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ ht-degree: 0%
 
 ### 檔案系統中的媒體檔案
 
-所有媒體檔案(產品、類別、WYSIWYG編輯器等的影像)都應從`<your Magento 1 install dir>/media`手動複製到`<your Magento 2 install dir>/pub/media`。
+所有媒體檔案（產品、類別、WYSIWYG編輯器等的影像）都應從`<your Magento 1 install dir>/media`手動複製到`<your Magento 2 install dir>/pub/media`。
 
-不過，請&#x200B;*不*&#x200B;複製Magento 1 `.htaccess`資料夾中的`media`檔案。 Magento 2有自己的`.htaccess`，應該加以保留。
+不過，請&#x200B;*不*&#x200B;複製Magento 1 `media`資料夾中的`.htaccess`檔案。 Magento 2有自己的`.htaccess`，應該加以保留。
 
 ## 店面設計
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 您必須手動重新建立全部：
 
-* Web服務API (SOAP、XML-RPC及REST)的認證
+* Web服務API （SOAP、XML-RPC及REST）的認證
 
 * 管理使用者帳戶並將其與存取許可權相關聯
 
