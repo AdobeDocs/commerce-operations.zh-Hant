@@ -1,8 +1,7 @@
 ---
 title: 為 [!DNL Adobe Commerce Patching Automation]設定GitHub整合
 description: 瞭解如何安裝 [!DNL Adobe Commerce Patching Automation] GitHub應用程式，以啟用GitHub連線Adobe Commerce Cloud專案的修補程式操作。
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -17,7 +16,7 @@ ht-degree: 0%
 ## 先決條件
 
 * 有效的Adobe Commerce Cloud訂閱
-* 已針對您的Adobe Commerce Cloud專案設定[GitHub整合](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)，並已啟用[`fetch-branches`選項](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)。 [!DNL Patching Automation]會建立並推播暫時的整合環境分支，所以當此選項停用時，修補程式操作無法建立環境。
+* 已針對您的Adobe Commerce Cloud專案設定[GitHub整合](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)，並已啟用[`fetch-branches`選項](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)。 [!DNL Patching Automation]會建立並推播暫時的整合環境分支，所以當此選項停用時，修補程式操作無法建立環境。
 * 託管於[!DNL github.com]的存放庫。 不支援使用自訂網域設定的GitHub整合。
 * GitHub組織或存放庫的所有者或管理員存取權
 

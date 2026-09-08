@@ -1,8 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]'
 description: 瞭解 [!DNL Adobe Commerce Patching Automation]、其用途、存取方法，以及自動修補的最佳實務
-hide: true
-source-git-commit: f70924d6f0d1777104c59f3f9e776360308abceb
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -52,7 +51,7 @@ ht-degree: 0%
 
 瞭解[!DNL Adobe Commerce Patching Automation]以及此工具如何協助使用者快速尋找及套用安全性修補程式。 下列影片說明如何透過「全網站分析工具」(SWAT)儀表板存取它、選擇您的專案和環境，以及按一下即可套用修補程式。
 
->[!VIDEO](https://video.tv.adobe.com/v/3476258/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## 常見使用案例
 
