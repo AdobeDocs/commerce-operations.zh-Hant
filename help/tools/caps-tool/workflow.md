@@ -1,7 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]工作流程總覽'
 description: 瞭解 [!DNL Adobe Commerce Patching Automation] 工作流程程式，包括術語、工作流程階段和自動化修補管理作業。
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: a56211744d35006924bd4ffd35c76ddb77118ed4
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
@@ -73,15 +73,15 @@ ht-degree: 0%
 
 #### 階段2a：建立整合環境
 
-**分支建立** - [!DNL Patching Automation]會建立名為`{target-environment}-CAPS-{patch-id}`的暫時整合環境分支
+**分支建立** — [!DNL Patching Automation]會建立名為`{target-environment}-CAPS-{patch-id}`的暫時整合環境分支
 
 **環境設定** — 整合環境是建立為目標環境的子項
 
-**程式碼同步** — 整合環境繼承目標環境的確切程式碼狀態（相同的程式碼基底）
+**程式碼同步** — 整合環境會繼承目標環境的確切程式碼狀態（相同的程式碼基底）
 
 **無資料複製** — 整合環境不會收到目標環境資料（資料庫、媒體或其他儲存內容）的復本 — 僅會使用程式碼基底來套用及驗證修補程式
 
-**資源需求** — 您的雲端專案的總儲存容量已在合約中定義。 （透過您的帳戶頁面或`magento-cloud subscription:info`檢視）。 每個環境的磁碟配置是透過`.magento.app.yaml`/`.magento/services.yaml`中的`disk`屬性個別設定的。 如需詳細資訊，請參閱[管理磁碟空間](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)。 如果修補程式作業因儲存限制而失敗，請對照其設定的配置檢查整合環境的磁碟使用量(`magento-cloud db:size` / `magento-cloud mount:size`)。
+**資源需求** — 您的雲端專案的總儲存容量已在合約中定義。 （透過您的帳戶頁面或`magento-cloud subscription:info`檢視）。 每個環境的磁碟配置是透過`.magento.app.yaml`/`.magento/services.yaml`中的`disk`屬性個別設定的。 如需詳細資訊，請參閱[管理磁碟空間](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space)。 如果修補程式作業因儲存限制而失敗，請對照其設定的配置檢查整合環境的磁碟使用量(`magento-cloud db:size` / `magento-cloud mount:size`)。
 
 #### 階段2b：整合環境中的修補應用程式
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 **檔案管理** — 修補程式檔案置於`m2-hotfixes`資料夾中
 
-**Git作業** — 已認可變更並推送至整合環境分支
+**Git作業** — 變更已認可並推送至整合環境分支
 
 **環境啟用** — 啟用整合環境以部署修補程式碼
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 #### 階段2c：合併回目標環境
 
-**同步檢查** — 在合併之前，服務會確認整合環境仍在使用中、與目標環境同步且狀況良好。 如果目標在修補期間已變更，作業會在此處停止而非合併
+**同步檢查** — 在合併之前，服務會確認整合環境仍為作用中、與目標環境同步且狀況良好。 如果目標在修補期間已變更，作業會在此處停止而非合併
 
 **環境簽出** — 服務會在本機簽出您的目標環境
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 **衝突處理** — 如果發生合併衝突，作業會失敗並回報為錯誤 — 不會自動解決
 
-**部署** — 合併的變更已部署到您的目標環境
+**部署** — 合併的變更會部署到您的目標環境
 
 **驗證** — 服務會驗證合併是否成功，以及環境是否同步
 

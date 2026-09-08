@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]疑難排解指南'
 description: 疑難排解 [!DNL Adobe Commerce Patching Automation]中的常見問題和錯誤訊息
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: f2b9ba118bfe4982a67ec5041141e5ee7548fc4d
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ### 修補作業持續時間
 
-對於大多數環境，下列時間表說明修補作業需要多久時間，但視環境大小和複雜度而定，可能需要更長的時間：
+對於大多數環境，下列時間表說明修補程式操作的持續時間，但視環境大小和複雜度而定，可能需要更長的時間：
 
 * **預先處理：** 2-5分鐘
 * **正在修補：** 5-15分鐘
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->並非所有可能的錯誤都列於下方。 初步檢查期間未列出的失敗顯示為一般「初步檢查期間發生錯誤」；驗證期間未列出的失敗顯示為一般「後期處理期間發生錯誤」 — 請以兩種方式連絡支援人員，並提供確切的錯誤文字。 修補期間，未預期的失敗會直接顯示原始的基本錯誤訊息，而非一般備援。
+>並非所有可能的錯誤都列於下方。 初步檢查或驗證期間未列出的失敗會顯示為一般錯誤。 請聯絡支援人員，並提供確切的錯誤文字。 修補期間，未預期的失敗會直接顯示原始的基本錯誤訊息，而非一般備援。
 
 ### 環境整備錯誤
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 **解決方案：**
 
-* 請稍候幾分鐘，然後再次檢查環境狀態。 此問題通常會自行解決
+* 請稍候幾分鐘，然後再次檢查環境狀態。 此問題通常會自動解決
 * 如果數分鐘後環境仍不相符，請聯絡Adobe支援。
 
 #### 「當cron啟用且維護模式停用時，無法在生產環境中建立修補工作。 請在套用修補程式之前啟用維護模式並停用cron工作。」
@@ -131,7 +131,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> [!DNL Patching Automation]不會自動啟用維護模式或停用cron工作 — 這些工作必須由您從外部完成
+> [!DNL Patching Automation]不會自動啟用維護模式或停用cron工作。 請手動完成這些程式。
 
 #### 「修補程式操作已完成，但環境健康狀態檢查失敗。 這表示部署可能發生問題。 請檢閱環境狀態並考慮回覆變更。」
 
@@ -141,11 +141,11 @@ ht-degree: 0%
 
 **解決方案：**
 
-* 測試店面和關鍵結帳以及管理工作流程，確認客戶是否實際受到影響
+* 測試店面和關鍵結帳以及管理工作流程，確認客戶是否受到影響
 * 在Cloud Console中，檢閱環境狀態並檢查專案&#x200B;**活動**&#x200B;摘要中的應用程式和部署記錄。 尋找與修補程式操作或部署相關的錯誤。
-* 觸發手動重新部署，以判斷健康情況檢查失敗是由暫時性部署或基礎結構問題所造成。
-* 如果問題仍然存在，請還原修補程式。 如果修補程式是由[!DNL Patching Automation]管理，而且作業可用，請選取[!UICONTROL Revert]。 如果修補程式是`m2-hotfixes`目錄中的自訂修補程式，請從專案存放庫中刪除修補程式檔案。 提交並推送變更，然後重新部署環境。
-* 如果問題仍然存在，請聯絡Adobe支援。在您的支援要求中包含下列資訊：支援專案ID、環境ID，以及此確切訊息：上次的作業未完全完成，因此支援可能需要確認環境的狀態。
+* 觸發手動重新部署，以判斷暫時的部署或基礎架構問題是否導致健康狀態檢查失敗。
+* 如果問題仍然存在，請還原修補程式。 如果[!DNL Patching Automation]管理修補程式，而且作業可供使用，請選取[!UICONTROL Revert]。 如果修補程式是`m2-hotfixes`目錄中的自訂修補程式，請從專案存放庫中刪除修補程式檔案。 提交並推送變更，然後重新部署環境。
+* 如果問題仍然存在，請聯絡Adobe支援。 在您的支援請求中包含下列資訊：支援專案ID、環境ID，以及此確切訊息：上次操作未完全完成，因此支援需要確認環境的狀態。
 
 ### 驗證和存取錯誤
 
@@ -178,7 +178,7 @@ ht-degree: 0%
 
 **原因：**&#x200B;暫時性問題導致服務無法連線至GitHub
 
-**解決方案：**&#x200B;請稍候幾分鐘，然後再次嘗試操作。 如果錯誤持續發生，請連絡[Adobe Commerce雲端支援](https://experienceleague.adobe.com/home?lang=zh-Hant#support)
+**解決方案：**&#x200B;請稍候幾分鐘，然後再次嘗試操作。 如果錯誤持續發生，請連絡[Adobe Commerce雲端支援](https://experienceleague.adobe.com/home#support)
 
 #### 「逾時內未建立環境」（GitHub連線的專案）
 
@@ -186,7 +186,7 @@ ht-degree: 0%
 
 **原因：**&#x200B;專案的GitHub整合已停用`fetch-branches`選項。 因此，服務推送的暫時分支不會同步，且永遠不會建立整合環境。
 
-**解決方案：**&#x200B;啟用整合的[`fetch-branches`選項](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)，然後重試作業。 請參閱[為 [!DNL Patching Automation]](github-integration.md)設定GitHub整合。
+**解決方案：**&#x200B;啟用整合的[`fetch-branches`選項](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration)，然後重試作業。 請參閱[為 [!DNL Patching Automation]](github-integration.md)設定GitHub整合。
 
 ### 環境啟用錯誤
 
@@ -198,15 +198,13 @@ ht-degree: 0%
 
 **如果詳細資料提及撰寫器或Adobe Commerce封裝：**
 
-* 登入[https://account.magento.com/](https://account.magento.com/) （或讓您的帳戶擁有者登入），並確認您的帳戶可以存取Commerce Enterprise程式碼基底。
-* 確認您專案的撰寫器公開/私密金鑰組是否正確 — 請參閱[驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/authentication-keys)。
-* 登入[https://account.magento.com/](https://account.magento.com/) （或要求您的帳戶擁有者登入），並確認您的帳戶可以存取Commerce Enterprise程式碼基底。
-* 驗證您專案的撰寫器公開和私用驗證金鑰是否正確。 請參閱[驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/authentication-keys)。
-* 確認錯誤訊息中名為的套件適用於您的Commerce版本。 請參閱[Adobe Commerce套件](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/packages/adobe-commerce)。
+* 登入[https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login) （或讓您的帳戶擁有者登入），並確認您的帳戶可以存取Commerce Enterprise程式碼基底。
+* 驗證您專案的撰寫器公開和私用驗證金鑰是否正確。 請參閱[驗證金鑰](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)。
+* 確認錯誤訊息中名為的套件適用於您的Commerce版本。 請參閱[Adobe Commerce套件](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce)。
 
 **如果詳細資料提及環境位置或資源：**
 
-* 在Cloud Console中，開啟專案概觀並檢閱環境及其狀態。 停用或刪除任何未使用的整合環境：選取環境。 前往&#x200B;**[!UICONTROL Settings]>[!UICONTROL General]**。 將環境狀態設定為非作用中。
+* 在Cloud Console中，開啟專案概觀並檢閱環境及其狀態。 停用或刪除任何未使用的整合環境：選取環境。 前往&#x200B;**[!UICONTROL Settings]>[!UICONTROL General]**。 若要停用環境，請將狀態設定為非使用中。
 
   或者，使用CLI： `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>`
 * 確認專案有足夠的資源，例如磁碟空間。
@@ -248,7 +246,7 @@ ht-degree: 0%
 
 ### 相關主題
 
-* [Adobe Commerce Cloud檔案](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerce Cloud檔案](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 * [Adobe Commerce安裝指南](/help/installation/overview.md)
 * [修補自動化簡介](intro.md)
 * [如何存取](access.md)

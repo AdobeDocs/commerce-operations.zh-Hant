@@ -1,9 +1,9 @@
 ---
 title: 如何存取 [!DNL Adobe Commerce Patching Automation]
 description: 瞭解如何存取及使用 [!DNL Adobe Commerce Patching Automation]
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: e7e2cb120377e73f2a6f80edcacfcf644b48be84
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 如果您在[!DNL Patching Automation]使用者介面中未看到任何專案，請向適當的人員要求存取權：
 
 * 聯絡專案的帳戶擁有者或專案管理員
-* 他們將會透過Cloud Console授予您適當的角色
+* 他們可以透過Cloud Console授與您適當的角色
 * 在授與存取權後，您可以登入Cloud Console來使用該服務
 
 >[!NOTE]
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ## 正在存取[!DNL Patching Automation]
 
-[!DNL Patching Automation]可在[!DNL Site-Wide Analysis Tool]儀表板中作為索引標籤使用。 您可以在管理員側邊欄中前往&#x200B;**報表** > **系統深入分析** > **全網站分析工具**，從管理員面板存取它。 請參閱[如何存取全網站分析工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/site-wide-analysis-tool/access)，瞭解必要條件和許可權設定。
+[!DNL Patching Automation]可在[!DNL Site-Wide Analysis Tool]儀表板中作為索引標籤使用。 您可以在管理員側邊欄中前往&#x200B;**報表** > **系統深入分析** > **全網站分析工具**，從管理員面板存取它。 請參閱[如何存取全網站分析工具](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access)，瞭解必要條件和許可權設定。
 
 進入控制面板後：
 
