@@ -4,9 +4,9 @@ description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: ba69e06096892027bd50485eaf69cef94b40d6ce
+source-git-commit: 041a0c42c83cbab28eac6562c67ce9169c07aa02
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -83,31 +83,6 @@ Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commer
 若要深入瞭解，請參閱商家指南中的[建議篩選器 — 價格](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/recommendations/filters#price)以及店面下拉式指南中的[產品建議設定](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/?lang=zh-Hant)。
 
 若要在使用此測試版功能時分享您的意見，請傳送電子郵件至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。
-
-### 雲端自動化修補服務(Private Beta)
-
-僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
-
-[Cloud Automation Patching Service](../tools/caps-tool/intro.md)會自動在雲端基礎結構[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)環境中將隔離的安全性修補程式套用至您的Adobe Commerce。
-
-在2025年10月，Cloud Automation Patching Service的測試版將新增至[全網站分析工具儀表板](/help/tools/site-wide-analysis-tool/dashboard.md)。 此服務透過簡化的修補工作流程支援Commerce專案管理員，包括：
-
-- 自動安裝修補程式
-- 復原復原
-- 部署後驗證。
-
-此服務可確保您以最少的手動工作量和風險，維持安全、穩定和更新的環境。
-
-Beta版包含下列功能：
-
-- **自動安裝修補程式**：簡化並自動修補各環境的重要弱點。
-- **將風險降至最低**：使用部署後健康狀態檢查與回覆功能來防止網站中斷。
-
->[!NOTE]
->
->由於Cloud Automation修補服務會自動套用隔離的安全性修補程式，因此您必須擁有[貢獻者或專案管理員角色](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/user-access)才能使用它。
-
-若要參與此測試版，請完成並提交[Cloud Automation Patching Service - Beta登錄檔單](https://forms.office.com/r/3Wfxj5nPdB)。
 
 ### 商家生產力AI助理（公用Beta）
 
