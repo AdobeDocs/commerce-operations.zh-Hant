@@ -4,9 +4,9 @@ description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: 041a0c42c83cbab28eac6562c67ce9169c07aa02
+source-git-commit: efdc4734b5c0db8efc0c83bef41e7ccaafd9b6af
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1490'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 適用於[Adobe Commerce產品解決方案](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions)的Beta方案是商家存取發行前功能與程式碼、提供意見回饋，以及引導Adobe Commerce未來的方法。 測試版計畫有兩種型別：
 
 - 公用Beta：公用Beta計畫可供所有Adobe Commerce客戶和合作夥伴使用
-- Private Beta：私人Beta版計畫可能需要根據資格條件來核准才能參與
+- Private Beta：私人測試版計畫需要根據參與資格的條件進行核准
 
 >[!IMPORTANT]
 >
@@ -35,14 +35,14 @@ ht-degree: 0%
 
 僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
 
-[!DNL Adobe Commerce Optimizer]銷售規則現在支援&#x200B;**屬性排名**，可將&#x200B;**提升**、**隱藏**&#x200B;或&#x200B;**隱藏**&#x200B;動作自動套用至符合一或多個屬性條件的產品，例如品牌、類別或製造商，而不需要個別的SKU選擇。 屬性排名會與智慧型排名和手動排名一起顯示在規則編輯器中。 使用它搭配&#x200B;**所有產品清單**、**類別規則**&#x200B;和&#x200B;**搜尋規則**。
+[!DNL Adobe Commerce Optimizer]銷售規則現在支援&#x200B;**屬性排名**，可自動將&#x200B;**提升**、**Bury**&#x200B;或&#x200B;**隱藏**&#x200B;動作套用至符合屬性條件的產品，例如品牌、類別或製造商，而不需要個別的SKU選擇。 屬性排名會與智慧型排名和手動排名一起顯示在規則編輯器中。 使用它搭配&#x200B;**所有產品清單**、**類別規則**&#x200B;和&#x200B;**搜尋規則**。
 
 **主要優點**
 
 - 透過鎖定屬性值而非個別SKU，在大型目錄中縮放銷售。
 - 使用單一規則提升、隱藏或隱藏每個相符的產品，例如提升整個品牌或抑制中止的顏色。
-- 結合屬性條件與智慧型排名：相符的產品優先，不相符的產品會繼續依您的排名策略排序。
-- 設定每個條件的提升或隱藏強度，微調規則影響相符產品的強度。
+- 結合屬性條件與智慧型排名：相符的產品優先，而您的排名策略會繼續訂購不相符的產品。
+- 設定每個條件的提升或隱藏強度，微調規則對相符產品的影響。
 
 若要深入瞭解，請參閱銷售規則指南中的[屬性排名](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)。
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ### 搜尋比對和排名(Private Beta)
 
-Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commerce Optimizer]上為[!DNL Live Search]的搜尋結果排名。 更新會將&#x200B;**精確和接近的字詞比對**&#x200B;優先排序，然後比對&#x200B;**所有查詢詞出現在相同可搜尋屬性**&#x200B;中的位置，最後&#x200B;**跨欄位**&#x200B;比對（包括支援自動完成樣式建議的行為）。 這種分層模型可協助高意圖查詢先呈現最相關的產品，同時仍傳回有用的替代方案。
+Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commerce Optimizer]上為[!DNL Live Search]的搜尋結果排名。 更新會將&#x200B;**精確和接近的字詞比對**&#x200B;優先排序，然後比對&#x200B;**所有查詢詞出現在相同可搜尋屬性**&#x200B;中的位置，最後&#x200B;**跨欄位**&#x200B;比對（包括支援自動完成樣式建議的行為）。 該分層模型可協助高意圖查詢先顯示最相關的產品，同時仍傳回有用的替代方案。
 
 相同的關聯性模型會與&#x200B;**搜尋權重**、**智慧型排名**、**同義字**&#x200B;和&#x200B;**銷售規則** （圖釘、提升、埋藏）互動。 德文店面可針對複合字詞使用&#x200B;**解組合**，採用相同的整體優先順序方法。
 
@@ -63,7 +63,7 @@ Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commer
 
 深入瞭解[Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/manage-results/search-relevance-matching)和[即時搜尋(PaaS)](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/search-relevance-matching)中的搜尋比對和排名策略。
 
-若要要求此私人測試版的邀請，請傳送電子郵件至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。 Adobe團隊會採取後續步驟和資格要求來回應。
+若要要求此私人測試版的邀請，請傳送電子郵件至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。 Adobe團隊會回應後續步驟和資格要求。
 
 ### 建議價格篩選器（公用Beta） {#recommendation-price-filters-public-beta}
 

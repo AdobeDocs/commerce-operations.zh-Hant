@@ -1,9 +1,9 @@
 ---
 title: 如何存取 [!DNL Adobe Commerce Patching Automation]
 description: 瞭解如何存取及使用 [!DNL Adobe Commerce Patching Automation]
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: e7e2cb120377e73f2a6f80edcacfcf644b48be84
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 如果您在[!DNL Patching Automation]使用者介面中未看到任何專案，請向適當的人員要求存取權：
 
 * 聯絡專案的帳戶擁有者或專案管理員
-* 他們將會透過Cloud Console授予您適當的角色
+* 他們可以透過Cloud Console授與您適當的角色
 * 在授與存取權後，您可以登入Cloud Console來使用該服務
 
 >[!NOTE]
