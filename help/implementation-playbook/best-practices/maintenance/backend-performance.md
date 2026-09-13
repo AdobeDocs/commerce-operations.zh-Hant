@@ -39,7 +39,7 @@ GTmetrix是一種可用於壓力測試的工具。 設定GTmetrix來復寫並乘
 
 進一步瞭解如何為高流量期間準備Commerce專案：
 
-- [假期整備](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
+- [假期整備](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=zh-Hant)
 - [假日購物分析](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=zh-Hant)
 - [突波容量增加](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/holiday-surge-capacity-requests-for-magento-commerce-cloud)
 

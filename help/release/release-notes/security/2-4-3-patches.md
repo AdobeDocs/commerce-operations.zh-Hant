@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe Commerce 2.4.3-p3安全性版本針對先前版本2.4.3已發現的漏洞提供安全性修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB22-38](https://helpx.adobe.com/tw/security/products/magento/apsb22-38.html)。
 
 ### 套用AC-3022.patch以繼續提供DHL作為運送業者
 
@@ -36,7 +36,7 @@ DHL已匯入schema 6.2版，並將在不久的未來淘汰schema 6.0版。 支�
 
 Adobe Commerce 2.4.3-p2安全性版本針對先前版本中發現的弱點提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html)。  此修補程式發行版本也解決了`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch`和`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`所處理的弱點。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB22-13](https://helpx.adobe.com/tw/security/products/magento/apsb22-13.html)。  此修補程式發行版本也解決了`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`、`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch`和`MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`所處理的弱點。
 
 
 ### 套用AC-3022.patch以繼續提供DHL作為運送業者
@@ -65,7 +65,7 @@ DHL已匯入schema 6.2版，並將在不久的未來淘汰schema 6.0版。 支�
 Adobe Commerce 2.4.3-p1安全性版本針對先前版本（Adobe Commerce 2.4.3和Magento Open Source 2.4.3）中發現的漏洞提供安全性錯誤修正。 此版本也包含安全性增強功能，可改善對最新安全性最佳實務的合規性。
 
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html)。 此修補程式發行版本也針對[Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=zh-Hant)、[Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)及[Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)廠商開發的擴充功能提供錯誤修正。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB21-86](https://helpx.adobe.com/tw/security/products/magento/apsb21-86.html)。 此修補程式發行版本也針對[Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=zh-Hant)、[Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)及[Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)廠商開發的擴充功能提供錯誤修正。
 
 ### 套用AC-3022.patch以繼續提供DHL作為運送業者
 

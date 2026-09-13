@@ -40,7 +40,7 @@ ht-degree: 2%
             <li><a href="../lifecycle-policy.md">軟體生命週期原則</a></li>
             <li><a href="../version-upgrade-enforcement-policy.md">雲端版本升級執行原則</a></li>
             <li><a href="../security-enforcement-policy.md">安全性與法規遵循通知</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe安全性公告</a></li>
+            <li><a href="https://helpx.adobe.com/tw/security/products/magento.html">Adobe安全性公告</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=zh-Hant">適用於Adobe Commerce的B2B</a></li>
           </ul>
         </td>
