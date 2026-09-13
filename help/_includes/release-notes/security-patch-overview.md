@@ -27,5 +27,5 @@ ht-degree: 0%
 
 若要套用隔離的安全性修補程式檔案，客戶必須在其支援的發行版本行上使用最新的僅限安全性的修補程式發行版本（最新的 — p版本），因為隔離的安全性修補程式檔案是專門針對該版本進行測試的。
 
-請參閱[安全性中心](https://helpx.adobe.com/security/products/magento.html)以尋找Adobe Commerce的最新安全性更新。
+請參閱[安全性中心](https://helpx.adobe.com/tw/security/products/magento.html)以尋找Adobe Commerce的最新安全性更新。
 

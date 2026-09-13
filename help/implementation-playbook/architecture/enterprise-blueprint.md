@@ -48,7 +48,7 @@ Adobe Commerce與所有Experience Cloud解決方案整合，以大規模提供[�
 >如需詳細資訊，請參閱下列資源：
 >
 >- [數位體驗藍圖](https://experienceleague.adobe.com/zh-hant/docs/blueprints-learn/architecture/overview)，以取得更多技術細節。
->- 請參閱[個人化客戶體驗](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)。
+>- 請參閱[個人化客戶體驗](https://experienceleague.adobe.com/zh-hant/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)。
 
 
 ## 與協力廠商系統整合
@@ -70,7 +70,7 @@ Adobe提供下列開發人員工具，用於建立整合與自訂：
 
 >[!NOTE]
 >
->請參閱[現代方法：在Adobe Commerce中有效的擴充性](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)。
+>請參閱[現代方法：在Adobe Commerce中有效的擴充性](https://experienceleague.adobe.com/zh-hant/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)。
 
 ## 店面服務
 

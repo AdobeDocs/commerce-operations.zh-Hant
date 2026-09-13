@@ -54,7 +54,7 @@ Adobe建議您先決定是否需要儲存此資料。 如果您要從舊版系�
 
 作為開發人員，您必須一律考慮使用您[!DNL Adobe Commerce]環境以外的工具，例如GraphQL mesh和Adobe App Builder。 這些工具可協助您保留資料的存取權，但對核心商務應用程式或其基礎資料庫表格沒有影響。 使用此方法，您可以透過API公開您的資料。 接著，將資料來源新增至App Builder設定。 使用GraphQL Mesh，您可以合併這些資料來源，並產生[舊資料](#legacy-data)中提到的單一回應。
 
-如需GraphQL Mesh的詳細資訊，請參閱[GraphQL Mesh閘道](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}。 如需Adobe App Builder的相關資訊，請參閱[App Builder簡介](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}。
+如需GraphQL Mesh的詳細資訊，請參閱[GraphQL Mesh閘道](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}。 如需Adobe App Builder的相關資訊，請參閱[App Builder簡介](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=zh-Hant){target="_blank"}。
 
 ## 修改核心表格或協力廠商表格
 
