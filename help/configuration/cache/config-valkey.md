@@ -3,27 +3,32 @@ title: 安裝及設定Valkey
 description: 瞭解如何使用Adobe Commerce安裝和設定Valkey以快取和工作階段儲存。 探索最佳化和效能調整的選項。
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 TQID: 'https://experienceleague.adobe.com/Ef4WREy0eq0ChsrI5-0FtrjMZWNjwr7l71Pm-RHD1GI'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+    internal-label: Implementation
+source-git-commit: c17dcd295b7a27ac1732a700b97af26316a98b7d
 workflow-type: tm+mt
-source-wordcount: 414
+source-wordcount: '428'
 ht-degree: 0%
-
 ---
-
 # 安裝及設定Valkey
 
 Valkey是開放原始碼、與Redis相容的記憶體內部資料存放區，可作為快取後端及工作階段存放區使用。 主要功能包括：
@@ -56,7 +61,15 @@ Adobe建議對工作階段啟用持續性，以便將Valkey資料複製到磁碟
 
 您也可以同時啟用RDB和AOF選項。 如需其他詳細資訊，包括持續性選項的優缺點，請參閱[Valkey持續性檔案](https://valkey.io/topics/persistence/)。
 
-對於快取執行個體，請設定執行個體，使其足以儲存整個Commerce快取。 大小需求取決於不同的因素，例如產品數量和商店檢視。 首先，您可以使用檔案系統上快取資料夾的大小。 例如，如果檔案系統上的`var/cache`資料夾為5 GB，請將Valkey執行個體設定為至少5 GB才能啟動。 快取執行個體不需要持續性，因為Commerce快取可以復原。
+對於快取執行個體，請設定執行個體，使其足以儲存整個Commerce快取。
+
+- 大小需求取決於不同的因素，例如產品數量和商店檢視。
+
+  首先，您可以使用檔案系統上快取資料夾的大小。 例如，如果檔案系統上的`var/cache`資料夾為5 GB，請將Valkey執行個體設定為至少5 GB才能啟動。
+
+- 快取執行個體不需要持續性，因為Commerce快取可以復原。
+
+  如需詳細資訊，請參閱[Valkey快取指南](https://valkey.io/docs/latest/develop/use/)。
 
 如需進行效能調整，您可以啟用下列非同步刪除的設定。 這些設定不會變更Valkey的行為。
 

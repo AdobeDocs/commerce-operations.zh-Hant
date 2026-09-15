@@ -8,37 +8,114 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-badgePaas: label="雲端上的Commerce" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案上的Adobe Commerce 。"
+badgePaas: label="雲端上的Commerce" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案上的Adobe Commerce 。"
 nudge: true
 autotag-review: '2026-08-18T23:34:12.845Z'
 TQID: 'https://experienceleague.adobe.com/kYuQylZb2r7ElWP1oRJbyIt9jsZMhoO9yFpBMDlf1tw'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+    internal-label: Implementation
+source-git-commit: ea07c4a7e42988b2ede3511273261fa7d560b652
 workflow-type: tm+mt
-source-wordcount: 3304
+source-wordcount: '4255'
 ht-degree: 0%
-
 ---
-
 
 # Valkey和Redis服務組態的最佳作法
 
 在雲端部署上為Adobe Commerce設定Redis或Valkey以供Adobe Commerce應用程式快取、工作階段儲存空間和L2快取使用時，請使用這些建議。
 
-如需Adobe Commerce內部部署快取組態，請參閱效能最佳化的[L2快取組態](/help/configuration/cache/level-two-cache.md)。
+- 設定L2快取記憶體，包括Symfony L2快取記憶體
+- 在Cloud Pro環境中，啟用唯讀復本（從屬）連線。 此功能在入門環境中無法使用。
+- 預先載入索引鍵
+- 啟用過時的快取
+- 分隔快取和工作階段
+- 壓縮快取
+- 檢閱設定範例
+
+>[!NOTE]
+>
+>確認您使用的是最新版本的`ece-tools`封裝。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
+
+## 設定L2快取
+
+在`.magento.env.yaml`組態檔中設定`VALKEY_BACKEND`或`REDIS_BACKEND`部署變數，以設定L2快取。
+
+>[!IMPORTANT]
+>
+>本頁的Redis設定範例僅適用於使用Redis的受支援Adobe Commerce版本。 如需依版本支援的快取服務，請參閱[系統需求](../../../installation/system-requirements.md)。 Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p4的修補程式版本不支援Redis快取。 對於不支援Redis的快取設定，請使用Valkey。 如需依版本支援的快取服務，請參閱[系統需求](../../../installation/system-requirements.md)。
+
+設定`VALKEY_BACKEND`或`REDIS_BACKEND`可設定L2快取後端，但無法判斷Adobe Commerce是使用Redis或Valkey做為遠端快取服務。 您指派的類別值（例如，`\Magento\Framework\Cache\Backend\Redis`或`symfony_l2`）也未選取服務。 Adobe Commerce會使用您環境中可用的任何服務（Redis或Valkey），而Redis會優先使用（如果兩者皆可用）。 例如，`VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\Redis'`在可用時使用Redis，而且只有在Redis不可用時才會回到Valkey。
+
+>[!BEGINTABS]
+
+>[!TAB 使用VALKEY_BACKEND]
+
+對於具有`RemoteSynchronizedCache`實作的Valkey，請使用：
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+```
+
+若為Symfony L2快取實作的Valkey，請參閱[設定Symfony L2快取](#configure-symfony-l2-cache)。
+
+>[!TAB 使用REDIS_BACKEND]
+
+對於Redis，請使用：
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+```
+
+如需環境組態詳細資訊，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[`REDIS_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)。
+
+>[!ENDTABS]
+
+### 設定Symfony L2快取
+
+Adobe Commerce 2.4.9和更新版本支援`symfony_l2`快取後端。 `symfony_l2`後端是Adobe Commerce用來管理L1和L2快取行為的快取實作。 它不會取代Redis或Valkey做為遠端快取服務。
+
+>[!IMPORTANT]
+>
+>請勿在`app/etc/env.php`中手動將`symfony_l2`設定為雲端基礎結構上Adobe Commerce的永久性設定。 部署可以覆寫手動`env.php`變更。 如果`ece-tools`不套用`symfony_l2`，Commerce可以回覆為檔案式快取。 此遞補功能可能會增加磁碟I/O、增加多節點環境的檔案系統複製負荷，並降低效能。
+
+若要針對Adobe Commerce 2.4.9使用`symfony_l2`快取，請完成下列步驟：
+
+- 確定雲端專案使用[ECE Tools package v2002.2.12](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)或更新版本。
+
+- 在`.magento.env.yaml`檔案中設定部署變數： `VALKEY_BACKEND`=`symfony_l2`。
+
+  ```yaml
+  stage:
+    deploy:
+      VALKEY_BACKEND: symfony_l2
+  ```
+
+將`VALKEY_BACKEND`設定為`symfony_l2`會根據您的Valkey服務詳細資料（包括`default`和`stale_cache_enabled`前端）建置完整的L2快取設定，可快取型別（例如`layout`、`block_html`、`full_page`和`translate`）會對應到已啟用過時的前端。 定義`CACHE_CONFIGURATION`是選擇性的，只有在您想要自訂特定的後端選項時才需要。
 
 >[!NOTE]
 >
@@ -63,25 +140,69 @@ ht-degree: 0%
 | 2.4.8和更早版本（當確切版本支援時） | Redis或Valkey | RemoteSynchronizedCache |
 | 2.4.9和更新版本 | Valkey | symfony_l2 |
 
-Adobe Commerce 2.4.9的快取設定以及系統需求指定Valkey的修補程式發行版本不支援Redis。 請一律驗證[快取後端選項和儲存體參考](/help/configuration/cache/cache-options.md)和[系統需求](/help/installation/system-requirements.md)中的確切Commerce版本、修補程式層級和服務版本。
+Adobe Commerce 2.4.9以及系統需求指定Valkey的修補程式發行版本中不支援快取設定使用Redis。 請一律驗證[快取後端選項和儲存體參考](/help/configuration/cache/cache-options.md)和[系統需求](/help/installation/system-requirements.md)中的確切Commerce版本、修補程式層級和服務版本。
 
->[!NOTE]
+下列範例顯示`.magento.env.yaml`檔案中的設定程式碼：
+
+>[!BEGINTABS]
+
+>[!TAB 使用VALKEY_BACKEND]
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+>[!TAB 使用REDIS_BACKEND]
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+>[!ENDTABS]
+
+快取需求會因您的專案設定和自訂第三方程式碼而異。 設定L2快取記憶體的大小，讓快取運作時不會頻繁發生臨界值點選。
+
+理想情況下，L2快取記憶體的使用量會穩定在臨界值以下，以避免頻繁的儲存清除。
+
+您可以執行下列CLI命令並檢閱`/dev/shm`行，檢查叢集每個節點上的L2快取儲存記憶體使用量。
+
+```shell
+df -h /dev/shm
+```
+
+使用方式會因節點而異，但會收斂到類似的值。
+
+## 啟用唯讀復本連線 {#enable-slave-connection}
+
+啟用`.magento.env.yaml`檔案中的唯讀復本連線。 這可讓Adobe Commerce使用額外的快取連線進行讀取，同時繼續使用主要端點進行寫入。 此設定可減少主要快取服務的讀取負載，並更有效地分配讀取流量。
+
+>[!IMPORTANT]
 >
->確認您使用的是最新版本的`ece-tools`封裝。 如果沒有，[升級至最新版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。 您可以使用`composer show magento/ece-tools` CLI命令檢查本機環境中安裝的版本。
-
-## 啟用復本連線
-
-啟用`.magento.env.yaml`檔案中的復本連線。 這項變更可讓Adobe Commerce使用額外的快取連線進行讀取，同時繼續使用主要端點進行寫入。 此設定可減少主要快取服務的讀取負載，並更有效地分配讀取流量。
+>不像`VALKEY_BACKEND`和`REDIS_BACKEND`，`VALKEY_USE_SLAVE_CONNECTION`和`REDIS_USE_SLAVE_CONNECTION`變數繫結至特定服務。 設定符合環境中可用快取服務的變數。 不一定要使用您用來設定L2快取的`*_BACKEND`變數所隱含的相同服務。
 
 >[!NOTE]
 >
 >復本連線是否可用取決於專案的拓撲（例如，單一節點與分割或HA架構）以及`ece-tools`版本。 在依賴此設定之前，請執行`echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp`並檢查`USE_SLAVE_CONNECTION`專案，以確認您的服務存在復本關係。 若要確認您的拓朴是否布建復本端點，請升級`ece-tools`並重新部署，或者如果沒有`USE_SLAVE_CONNECTION`專案，請聯絡Adobe Commerce支援。
->
->對於`symfony_l2`，復本連線支援是透過`ece-tools`和雲端修補程式更新提供。 除了變更`VALKEY_USE_SLAVE_CONNECTION: true`之外，不需要額外的快取設定。 更新至最新的`ece-tools`版本以接收修正。
 
 >[!BEGINTABS]
 
->[!TAB Valkey組態]
+>[!TAB 使用VALKEY_USE_SLAVE_CONNECTION]
 
 對於Valkey，請使用：
 
@@ -91,9 +212,9 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-如需環境變陣列態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)。
+如需環境變陣列態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection)。
 
->[!TAB Redis組態]
+>[!TAB 使用REDIS_USE_SLAVE_CONNECTION]
 
 對於Redis，請使用：
 
@@ -103,9 +224,275 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-如需環境變陣列態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)。
+如需環境變陣列態詳細資訊，請參閱雲端基礎結構指南上的&#x200B;_Commerce_&#x200B;中的[REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection)。
 
 >[!ENDTABS]
+
+## 預先載入索引鍵
+
+Adobe Commerce通常會一次從Redis或Valkey載入一個索引鍵中的快取專案。 預先載入功能可讓您提供常用索引鍵清單，Adobe Commerce會在第一次存取請求期間，於單一管道中擷取這些索引鍵。 接著Adobe Commerce會將擷取的值保留在PHP記憶體中以供該要求剩餘部分使用，如此可減少重複的Redis或Valkey來回，並可改善這些金鑰的要求啟動載入效能。
+
+您可以透過監視Redis或Valkey上的作用中命令來識別常用金鑰：
+
+>[!BEGINTABS]
+
+>[!TAB 使用VALKEY_BACKEND預先載入金鑰]
+
+預先載入金鑰是在`.magento.env.yaml`組態檔中設定。
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          id_prefix: '061_' # Prefix for keys to be preloaded, it can be any random string
+          backend_options:
+            preload_keys: # List the keys to be preloaded
+              - '061_EAV_ENTITY_TYPES:hash' # The key name must start with the id_prefix set above
+              - '061_GLOBAL_PLUGIN_LIST:hash'
+              - '061_DB_IS_UP_TO_DATE:hash'
+              - '061_SYSTEM_DEFAULT:hash'
+```
+
+若要列出索引鍵，請執行以下命令：
+
+```terminal
+valkey-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
+```
+
+10秒後，按&#x200B;**[!UICONTROL Ctrl+C]**。 然後執行下列命令：
+
+```terminal
+cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr | head -n 50
+```
+
+此記錄會列出您可以預先載入的金鑰。 若要檢視索引鍵的內容，請執行以下命令：
+
+```terminal
+valkey-cli -p 6370 -n 1 hgetall "<key_name>"
+```
+
+>[!TAB 使用REDIS_BACKEND預先載入金鑰]
+
+預先載入金鑰是在`.magento.env.yaml`組態檔中設定。
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          id_prefix: '061_' # Prefix for keys to be preloaded, it can be any random string
+          backend_options:
+            preload_keys: # List the keys to be preloaded
+              - '061_EAV_ENTITY_TYPES:hash' # The key name must start with the id_prefix set above
+              - '061_GLOBAL_PLUGIN_LIST:hash'
+              - '061_DB_IS_UP_TO_DATE:hash'
+              - '061_SYSTEM_DEFAULT:hash'
+```
+
+若要列出索引鍵，請執行以下命令：
+
+```terminal
+redis-cli -p 6370 -n 1 MONITOR > /tmp/list.keys
+```
+
+10秒後，按&#x200B;**[!UICONTROL Ctrl+C]**。 然後執行下列命令：
+
+```terminal
+cat /tmp/list.keys | grep "HGET" | awk '{print $5}' | sort | uniq -c | sort -nr | head -n 50
+```
+
+此記錄會列出您可以預先載入的金鑰。 若要檢視索引鍵的內容，請執行以下命令：
+
+```terminal
+redis-cli -p 6370 -n 1 hgetall "<key_name>"
+```
+
+>[!ENDTABS]
+
+## 啟用過時的快取
+
+過時快取是`RemoteSynchronizedCache`和`symfony_l2`實作都支援的L2快取功能。 啟用後，Adobe Commerce可在另一個要求已重新產生相同專案時，從`/dev/shm`提供現有的本機快取值，而非讓每個並行要求等待。 這減少了重新產生昂貴快取專案時快取串流和鎖爭用。
+
+### 運作方式
+
+L2快取會維護每個快取專案的兩個復本：`/dev/shm`中的本機復本，以及Redis或Valkey中的遠端復本。 當遠端副本無法使用且該金鑰已存在重新產生鎖定時，並行要求可以接收先前的本機值，而不是等到寫入新的值為止。
+
+若要啟用過時的快取，請在`.magento.env.yaml`檔案中進行設定。
+
+>[!BEGINTABS]
+
+>[!TAB 使用VALKEY_BACKEND設定過時快取]
+
+若為Valkey：
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            use_stale_cache: true
+```
+
+>[!TAB 使用REDIS_BACKEND設定過時快取]
+
+針對Redis：
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            use_stale_cache: true
+```
+
+>[!ENDTABS]
+
+>[!WARNING]
+>
+>如果這會在您的自訂內容中造成非預期的行為，請在`default`前端停用過時快取，並只對選取的快取型別啟用它，如通常的[內部部署](../../../configuration/cache/level-two-cache.md#stale-cache-options)一樣。
+
+### 分別啟用每個快取型別的過時快取
+
+您只能透過在`.magento.env.yaml`中定義專用快取前端並將選取的快取型別對應到它來啟用選取的快取型別的過時快取。
+
+若要正常運作，自訂前端必須定義為`CACHE_CONFIGURATION.frontend`下的完整前端。 僅為新前端名稱定義`use_stale_cache: true`是不夠的。
+
+**設定範例**
+
+>[!BEGINTABS]
+
+>[!TAB 使用VALKEY_BACKEND設定過時快取]
+
+若為Valkey：
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default: # In this frontend, we keep stale cache set to false.
+          id_prefix: '001_'
+          backend_options:
+            use_stale_cache: false
+
+        # Now, create a new frontend called 'stale_cache_enabled'.
+        # It must contain the same backend connection settings as the frontend 'default':
+
+        stale_cache_enabled:
+          id_prefix: '001_'
+          backend: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+          backend_options:
+            remote_backend: '\Magento\Framework\Cache\Backend\Valkey'
+            remote_backend_options:
+              server: localhost
+              port: 6370 # Use the same port used by the frontend 'default' in env.php
+              database: 1
+              load_from_slave:
+                server: localhost
+                port: 26370 # Use the same port used by the frontend 'default' in env.php
+              retry_reads_on_master: 1
+              read_timeout: 10
+            local_backend: 'Cm_Cache_Backend_File'
+            local_backend_options:
+              cache_dir: /dev/shm/
+            use_stale_cache: true # stale cache here is enabled
+
+      # Now select which cache types you want to enable (stale_cache_enabled), or disable (default)
+
+      type:
+        default:
+          frontend: default
+        layout:
+          frontend: stale_cache_enabled
+        reflection:
+          frontend: stale_cache_enabled
+        config_integration:
+          frontend: stale_cache_enabled
+        config_integration_api:
+          frontend: stale_cache_enabled
+        translate:
+          frontend: stale_cache_enabled
+        # add other cache types as needed...
+```
+
+>[!TAB 使用REDIS_BACKEND設定過時快取]
+
+針對Redis：
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default: # In this frontend, we keep stale cache set to false.
+          id_prefix: '001_'
+          backend_options:
+            use_stale_cache: false
+
+        # Now, create a new frontend called 'stale_cache_enabled'.
+        # It must contain the same backend connection settings as the frontend 'default':
+
+        stale_cache_enabled:
+          id_prefix: '001_'
+          backend: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+          backend_options:
+            remote_backend: '\Magento\Framework\Cache\Backend\Redis'
+            remote_backend_options:
+              server: localhost
+              port: 6370 # Use the same port used by the frontend 'default' in env.php
+              database: 1
+              load_from_slave:
+                server: localhost
+                port: 26370 # Use the same port used by the frontend 'default' in env.php
+              retry_reads_on_master: 1
+              read_timeout: 10
+            local_backend: 'Cm_Cache_Backend_File'
+            local_backend_options:
+              cache_dir: /dev/shm/
+            use_stale_cache: true # stale cache here is enabled
+
+      # Now select which cache types you want to enable (stale_cache_enabled), or disable (default)
+
+      type:
+        default:
+          frontend: default
+        layout:
+          frontend: stale_cache_enabled
+        reflection:
+          frontend: stale_cache_enabled
+        config_integration:
+          frontend: stale_cache_enabled
+        config_integration_api:
+          frontend: stale_cache_enabled
+        translate:
+          frontend: stale_cache_enabled
+        # add other cache types as needed...
+```
+
+>[!ENDTABS]
+
+>[!NOTE]
+>
+>如果來源前端設定了其他後端選項，例如壓縮、重試、預先載入金鑰或其他調整值，請將這些選項複製到`stale_cache_enabled`，以便新的前端保持相同的行為。
 
 ## 個別的快取和工作階段執行個體
 
@@ -113,7 +500,7 @@ stage:
 
 >[!IMPORTANT]
 >
->在「生產」和「預備」上布建專用工作階段執行處理並非自助式。 它需要提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)以及您更新的`.magento/services.yaml`和`.magento.app.yaml`檔案，如下面的步驟3所述。
+>若要在生產與中繼環境中布建專用工作階段執行個體，您必須使用更新的`.magento/services.yaml`和`.magento.app.yaml`檔案提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)，如下面的步驟3所述。
 
 若要布建工作階段的專用執行個體，請遵循下列步驟：
 
@@ -156,7 +543,7 @@ stage:
 
 1. 請求專用於生產和中繼環境工作階段的新Valkey執行個體。
 
-   提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。
+   提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。
 
    此更新不會造成任何停機時間，但需要部署才能啟用新服務。
 
@@ -188,7 +575,7 @@ stage:
        min_lifetime: 60
    ```
 
-1. 從Valkey快取執行個體上的[預設資料庫](/help/configuration/cache/redis-pg-cache.md) (`db 0`)移除工作階段。
+1. 從Valkey快取執行個體上的預設資料庫(`db 0`)移除工作階段。
 
    ```terminal
    valkey-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
@@ -221,17 +608,17 @@ stage:
 1. 更新`.magento.app.yaml`設定檔。
 
    ```yaml
-      relationships:
-        database: "mysql:mysql"
-        redis: "redis:redis"
-        redis-session: "redis-session:redis"   # Relationship of the new Redis instance
-        search: "search:elasticsearch"
-        rabbitmq: "rabbitmq:rabbitmq"
+   relationships:
+     database: "mysql:mysql"
+     redis: "redis:redis"
+     redis-session: "redis-session:redis"   # Relationship of the new Redis instance
+     search: "search:elasticsearch"
+     rabbitmq: "rabbitmq:rabbitmq"
    ```
 
 1. 請求專用於生產和中繼環境工作階段的新Redis執行個體。
 
-   提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。
+   提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)。 包含更新的`.magento/services.yaml`與`.magento.app.yaml`組態檔。
 
    此更新不會造成任何停機時間，但需要部署才能啟用新服務。
 
@@ -263,7 +650,7 @@ stage:
        min_lifetime: 60
    ```
 
-1. 從Redis快取執行個體上的[預設資料庫](/help/configuration/cache/redis-pg-cache.md) (`db 0`)移除工作階段。
+1. 從Redis快取執行個體上的預設資料庫(`db 0`)移除工作階段。
 
    ```terminal
    redis-cli -h 127.0.0.1 -p 6370 -n 0 FLUSHDB
@@ -291,7 +678,7 @@ stage:
 
 ## 啟用非同步釋放
 
-若要在Adobe Commerce雲端基礎結構上啟用`lazyfree`，請提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，要求將下列Redis或Valkey設定套用至您的環境：
+若要在Adobe Commerce雲端基礎結構上啟用`lazyfree`，請提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)，要求將下列Redis或Valkey設定套用至您的環境：
 
 ```text
 lazyfree-lazy-eviction yes
@@ -313,7 +700,7 @@ lazyfree-lazy-user-del yes
 
 ## 啟用多執行緒I/O
 
-若要在Adobe Commerce雲端基礎結構上啟用Redis I/O執行緒，請提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，要求下列I/O執行緒組態。 此設定可從主要執行緒解除安裝通訊端讀取、寫入和命令剖析，藉此提高輸送量，但代價是需提高CPU使用量。 在載入下驗證並監視主機。
+若要在Adobe Commerce雲端基礎結構上啟用Redis I/O執行緒，請提交[Adobe Commerce支援票證](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)，要求下列I/O執行緒組態。 此設定可從主要執行緒解除安裝通訊端讀取、寫入和命令剖析，藉此提高輸送量，但代價是需提高CPU使用量。 在載入下驗證並監視主機。
 
 >[!BEGINTABS]
 
@@ -326,14 +713,13 @@ io-threads-do-reads yes
 io-threads 8 # Choose a value lower than the number of CPU cores (check with nproc), and then tune under load.
 ```
 
->[!TAB 設定Valkey的I/O執行緒]
+>[!TAB 設定Valkey]的I/O執行緒
 
 若為Valkey：
 
 ```text
 io-threads-do-reads yes
 io-threads 8 # choose a value lower than the number of CPU cores (check with nproc), then tune under load
-events-per-io-thread 2
 ```
 
 >[!ENDTABS]
@@ -375,12 +761,12 @@ stage:
 
 雲端基礎結構上的Adobe Commerce提供兩種L2快取實作。
 
-- 舊版實作使用`RemoteSynchronizedCache`搭配`Cm_Cache_Backend_File`進行本機儲存
-- 現代實作使用`symfony_l2`，並遵循PSR-6規範，且效能更佳。 新式實作僅支援Valkey。
+- `RemoteSynchronizedCache`使用`Cm_Cache_Backend_File`作為本機儲存空間。
+- `symfony_l2`符合PSR-6規範，僅支援Valkey。
 
 | Commerce版本 | RemoteSynchronizedCache與Valkey | 建議的設定 |
 | -------------- | ----------------------------------- | ------------------------- |
-| 2.4.8和較舊版本<br> （如果支援Valkey） | 支援的舊版L2路徑 | `VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'` |
+| 2.4.8和較舊版本<br> （如果支援Valkey） | 支援 | `VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'` |
 | 2.4.9和更新版本 | 不支援 | `VALKEY_BACKEND: 'symfony_l2'` |
 
 >[!IMPORTANT]
@@ -417,7 +803,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-如需環境組態詳細資訊，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[`REDIS_BACKEND`](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)。
+如需環境組態詳細資訊，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[`REDIS_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend)。
 
 >[!ENDTABS]
 
@@ -433,7 +819,7 @@ stage:
 
 - **壓縮需要明確的旗標。** 如果您透過`CACHE_CONFIGURATION`自訂`symfony_l2`壓縮，僅設定`compression_lib`不會啟用壓縮 — 也必須設定`compress_data`。 請參閱[快取壓縮](#cache-compression)。
 
-- **Redis不是`symfony_l2`支援的遠端後端。** 移轉至Valkey，作為此變更的一部分。 請參閱[設定Valkey服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/valkey)。
+- **Redis不是`symfony_l2`支援的遠端後端。** 移轉至Valkey，作為此變更的一部分。 請參閱[設定Valkey服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)。
 
 - **工作階段設定不受此移轉影響。** `SESSION_CONFIGURATION`獨立於快取後端，在移至`symfony_l2`時不需要變更。 請參閱[個別的快取與工作階段執行個體](#separate-cache-and-session-instances)。
 
@@ -445,7 +831,7 @@ stage:
 
 如果您使用正確的位置（`backend_options`或`remote_backend_options`下），預先載入金鑰可套用至`symfony_l2`組態。 不過，Adobe不建議搭配`symfony_l2`使用預先載入金鑰。 `symfony_l2`預先載入實作一次擷取一個索引鍵，因此不會像對`RemoteSynchronizedCache`那樣減少往返次數，而且它可以增加Valkey上的負載，而不會影響效能。
 
-預先載入功能可讓您提供常用索引鍵清單，Magento會在第一次存取請求期間，於單一管道中擷取這些索引鍵。 接著Magento會將擷取的值保留在PHP記憶體中以供該要求剩餘部分使用，如此可減少重複的Redis或Valkey來回，並可改善這些金鑰的要求啟動載入效能。
+預先載入功能可讓您提供常用索引鍵清單，Adobe Commerce會在第一次存取請求期間，於單一管道中擷取這些索引鍵。 接著Adobe Commerce會將擷取的值保留在PHP記憶體中以供該要求剩餘部分使用，如此可減少重複的Redis或Valkey來回，並可改善這些金鑰的要求啟動載入效能。
 
 您可以透過監視Redis或Valkey上的作用中命令來識別常用金鑰：
 
@@ -504,11 +890,11 @@ stage:
 >
 >`full_page`快取型別與雲端基礎結構專案上的Adobe Commerce無關，因為它們使用Fastly進行全頁快取。 因為這個原因，本區段的手動設定範例省略`full_page`，即使`ece-tools`將其包含在預設`symfony_l2`對應中。
 
-下列舊版組態適用於Adobe Commerce 2.4.8和更早版本，其中使用`RemoteSynchronizedCache`，且需要手動過時快取和前端組態。 這裡也適用相同選擇性（而非全域）建議。
+下列設定適用於Adobe Commerce 2.4.8和更早版本，其使用`RemoteSynchronizedCache`，並需要手動過時快取和前端設定。 這裡也適用相同選擇性（而非全域）建議。
 
-#### 舊版RemoteSynchronizedCache後端如何運作
+#### RemoteSynchronizedCache後端如何運作
 
-透過`RemoteSynchronizedCache`，Magento會維護每個快取專案的兩個復本： `/dev/shm`中的本機復本，以及Redis或Valkey中的遠端復本。 當遠端副本無法使用且該金鑰已存在重新產生鎖定時，並行要求可以接收先前的本機值，而不是等到寫入新的值為止。
+透過`RemoteSynchronizedCache`，Adobe Commerce會維護每個快取專案的兩個復本： `/dev/shm`中的本機復本，以及Redis或Valkey中的遠端復本。 當遠端副本無法使用且該金鑰已存在重新產生鎖定時，並行要求可以接收先前的本機值，而不是等到寫入新的值為止。
 
 若要啟用2.4.8及舊版的過時快取，請在`.magento.env.yaml`檔案中進行設定。
 
@@ -526,14 +912,14 @@ stage:
 
 >[!WARNING]
 >
->上述設定會在`default`快取前端啟用過時的快取，這會將過時的快取行為套用至使用該前端的所有快取專案。 透過此設定，Magento核心快取型別可如預期運作。 不過，如果您的專案包含自訂程式碼或擴充功能，這些程式碼或擴充功能會透過一般`\Magento\Framework\App\Cache` API （例如`$this->cache->save()`）寫入快取而沒有專用的快取前端，則這些專案也可以在重新產生期間提供過時的值。
+>上述設定會在`default`快取前端啟用過時的快取，這會將過時的快取行為套用至使用該前端的所有快取專案。 透過此設定，Adobe Commerce核心快取型別可如預期運作。 不過，如果您的專案包含自訂程式碼或擴充功能，這些程式碼或擴充功能會透過一般`\Magento\Framework\App\Cache` API （例如`$this->cache->save()`）寫入快取而沒有專用的快取前端，則這些專案也可以在重新產生期間提供過時的值。
 >
 >
 >如果這會在您的自訂內容中造成非預期的行為，請讓`default`前端停用過時的快取，並只針對選取的快取型別啟用它，如下所示。
 
-#### 分別針對每種快取型別啟用過時快取（舊版）
+#### 分別啟用每個快取型別的過時快取(RemoteSynchronizedCache)
 
-您只能透過在`.magento.env.yaml`中定義專用快取前端並將選取的快取型別對應到它來啟用選取的快取型別的過時快取。 此手動方法適用於舊版`RemoteSynchronizedCache`後端；`symfony_l2`會自動執行此對應，如上所述。
+您只能透過在`.magento.env.yaml`中定義專用快取前端並將選取的快取型別對應到它來啟用選取的快取型別的過時快取。 此手動方法適用於`RemoteSynchronizedCache`後端；`symfony_l2`會自動執行此對應，如上所述。
 
 若要正常運作，自訂前端必須定義為`CACHE_CONFIGURATION.frontend`下的完整前端。 僅為新前端名稱定義`use_stale_cache: true`是不夠的。
 
@@ -607,7 +993,7 @@ Adobe Commerce 2.4.9和更新版本支援`symfony_l2`快取後端。 `symfony_l2
 
 若要針對Adobe Commerce 2.4.9使用`symfony_l2`快取，請完成下列步驟：
 
-- 確定雲端專案使用[`ece-tools`封裝v2002.2.12](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)或更新版本。
+- 更新至[`ece-tools`封裝](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)的最新版本。 您必須使用ECE工具套件v2002.2.13或更新版本。
 
 - 在`.magento.env.yaml`檔案中設定部署變數： `VALKEY_BACKEND`=`symfony_l2`。
 
@@ -621,9 +1007,9 @@ Adobe Commerce 2.4.9和更新版本支援`symfony_l2`快取後端。 `symfony_l2
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9的修補程式ACP2E-5132透過最佳化標籤儲存、新增過時的快取重新產生鎖定，以及修正過時的標籤成員資格、多餘的遠端寫入和L1大小型逐出(`cleanup_percentage`)等問題，來改善[!DNL Symfony]的L2快取效能和可靠性。 這樣可以減少磁碟I/O和後端負載，同時改善快取一致性。 請參閱&#x200B;_Adobe Commerce設定指南_&#x200B;中的[增強型Symfony L2快取效能和可靠性](/help/configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)。
+>Adobe Commerce 2.4.9的修補程式ACP2E-5132改善了[!DNL Symfony] L2快取效能和可靠性。 它可最佳化標籤儲存、新增過時的快取重新產生鎖定，並修正過時的標籤成員資格、多餘的遠端寫入及L1大小型逐出(`cleanup_percentage`)的問題。 這樣可以減少磁碟I/O和後端負載，同時改善快取一致性。 請參閱&#x200B;_Adobe Commerce設定指南_&#x200B;中的[增強型Symfony L2快取效能和可靠性](/help/configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)。
 >
->此修補程式包含在Commerce套件[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)的雲端修補程式中（相依性`ece-tools`），並在您更新至最新的`ece-tools`版本時於部署期間自動套用。 更新至最新版本的`ece-tools`以接收修補程式。
+>此修補程式包含在Commerce套件](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)的[雲端修補程式中（相依性`ece-tools`），並在您更新至最新的`ece-tools`版本時於部署期間自動套用。 更新至最新版本的`ece-tools`以接收修補程式。
 
 #### 自訂[!DNL Symfony] L2快取設定
 
@@ -731,7 +1117,7 @@ df -h /dev/shm
 
 >[!BEGINTABS]
 
->[!TAB Valkey設定範例]
+>[!TAB 使用VALKEY_BACKEND的範例]
 
 針對`VALKEY_BACKEND: symfony_l2`，讓`ece-tools`產生`default`和`stale_cache_enabled`前端及其快取型別對應。 請勿在廣泛的`default`前端設定`use_stale_cache`。 下方的`CACHE_CONFIGURATION`區塊僅包含明確的後端選項覆寫。
 
@@ -769,9 +1155,7 @@ stage:
         min_lifetime: 60
 ```
 
->[!TAB Redis設定範例]
-
-對Adobe Commerce 2.4.8和更早版本上的Redis使用下列設定：
+>[!TAB 使用REDIS_BACKEND的範例]
 
 ```yaml
 stage:
@@ -822,7 +1206,7 @@ stage:
 
 >[!BEGINTABS]
 
->[!TAB Valkey]
+>[!TAB 使用VALKEY_BACKEND的範例]
 
 ```yaml
 stage:
@@ -900,7 +1284,7 @@ stage:
         min_lifetime: 60
 ```
 
->[!TAB Redis]
+>[!TAB 使用REDIS_BACKEND的範例]
 
 ```yaml
 stage:
@@ -993,8 +1377,10 @@ stage:
 
 >[!ENDTABS]
 
->[!MORELIKETHIS]
->
->- [設定Valkey服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/valkey)
->- [設定Redis服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/redis)
->- [部署變數](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+## 其他資訊
+
+請參閱下列相關主題：
+
+- [設定Valkey服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey)
+- [設定Redis服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis)
+- [部署變數](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)

@@ -3,20 +3,18 @@ user-guide-title: 實施行動手冊
 user-guide-description: 了解規劃及實施成功 Adobe Commerce 網站的策略。
 mini-toc-levels: 3
 nudge: true
-source-git-commit: 9343b1fb2832ea0865614e8fb58e5283a72c990d
+source-git-commit: d891254482ae9d0fa5b154f56de83a4a483feef7
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
-
 ---
-
 
 # 實施行動手冊 {#implementation-playbook}
 
 - [概觀](overview.md)
 - 架構與整合 {#architecture}
   - [企業參考](architecture/enterprise-blueprint.md)
-- 維護與支援 {#maintenance}
+- 維護與支援 {#maintenance-and-support}
   - [概觀](maintenance/overview.md)
   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - 最佳實務 {#best-practices}
@@ -49,7 +47,7 @@ ht-degree: 14%
     - [私人內容區塊](best-practices/development/private-content-block-configuration.md)
     - [靜態內容部署](best-practices/development/static-content-deployment.md)
     - [修改資料庫表格](best-practices/development/modifying-core-and-third-party-tables.md)
-    - [正在修改核心與協力廠商代碼](best-practices/development/modifying-core-and-third-party-code.md)
+    - [修改核心和第三方程式碼](best-practices/development/modifying-core-and-third-party-code.md)
   - Launch {#launch}
     - [概觀](best-practices/launch/overview.md)
     - [設定網頁爬蟲](best-practices/launch/robots-txt.md)
@@ -69,4 +67,4 @@ ht-degree: 14%
     - [升級檢查清單](best-practices/maintenance/upgrade-checklist.md)
     - [升級MariaDB的必要條件](best-practices/maintenance/mariadb-upgrade.md)
 - [字彙表](glossary.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
