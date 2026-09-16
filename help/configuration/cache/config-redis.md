@@ -8,23 +8,28 @@ autotag-review: '2026-06-22T20:26:29.348Z'
 TQID: 'https://experienceleague.adobe.com/N61AAy4ihSIlhEjdvpji2XVOdZuHWhytp9zgoAU41K4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+    internal-label: Implementation
+source-git-commit: c17dcd295b7a27ac1732a700b97af26316a98b7d
 workflow-type: tm+mt
-source-wordcount: 456
+source-wordcount: '460'
 ht-degree: 0%
-
 ---
-
 # 安裝及設定Redis
 
 Redis是記憶體中的資料存放區，可作為快取後端及工作階段存放區使用。 主要功能包括：
@@ -48,7 +53,7 @@ Redis是記憶體中的資料存放區，可作為快取後端及工作階段存
 
 視您的安裝而定，您通常可以在下列其中一個檔案中找到您的Redis組態： `/etc/redis/redis.conf`或`/etc/redis/<port>.conf`
 
-若要根據您的需求最佳化Redis執行個體，請為每個工作階段使用專用執行個體、Commerce快取和FPC，以獲得最佳結果。
+若要根據您的需求最佳化Redis執行個體，請為每個工作階段使用專用執行個體、Commerce快取和全頁快取(FPC)，以獲得最佳結果。
 
 對於工作階段，Adobe建議您啟用持續性，以使用下列任一持續性選項將Redis資料複製到磁碟：一般Redis資料庫備份(RDB)快照或僅附加檔案(AOF)持續性記錄。
 
@@ -56,9 +61,17 @@ Redis是記憶體中的資料存放區，可作為快取後端及工作階段存
 
 - **僅附加檔案** (AOF)會將每個傳送至Redis的寫入作業儲存在日誌檔中。 Redis只會在重新啟動時讀取此檔案，並使用它來還原原始資料集。
 
-您也可以同時啟用RDB和AOF選項。 如需其他詳細資訊，包括持續性選項的優缺點，請參閱[Redis持續性檔案](https://redis.io/topics/persistence)。
+您也可以同時啟用RDB和AOF選項。 如需其他詳細資訊，包括持續性選項的優缺點，請參閱[Redis持續性檔案](https://redis.io/docs/latest/operate/rs/databases/configure/database-persistence/)。
 
-對於快取執行個體，請設定執行個體，使其足以儲存整個Commerce快取。 大小需求取決於不同的因素，例如產品數量和商店檢視。 首先，您可以使用檔案系統上快取資料夾的大小。 例如，如果檔案系統上的`var/cache`資料夾為5 GB，請將Redis執行個體設定為至少5 GB才能啟動。 快取執行個體不需要持續性，因為Commerce快取可以復原。 請參閱[Redis快取指南](https://redis.io/docs/latest/develop/use/)。
+對於快取執行個體，請設定執行個體，使其足以儲存整個Commerce快取。
+
+- 大小需求取決於不同的因素，例如產品數量和商店檢視。
+
+  首先，請使用檔案系統上`var/cache`資料夾的大小。 例如，如果`var/cache`為5 GB，請將您的Redis執行個體設定為至少5 GB才能開始。
+
+- 快取執行個體不需要持續性，因為Commerce快取可以復原。
+
+  如需詳細資訊，請參閱[Redis快取指南](https://redis.io/docs/latest/develop/use/)。
 
 如需進行效能調整，您可以啟用下列非同步刪除的設定。 這些設定不會變更Redis的行為。
 

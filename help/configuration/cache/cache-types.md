@@ -5,24 +5,30 @@ feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 product_v2:
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 3652976a8db3d0bb19ff9cd06adb3a7736c89539
+    internal-label: Implementation
+source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: '471'
 ht-degree: 0%
-
 ---
-
 # 設定快取前端和型別
 
 快取前端會將Commerce快取型別連線到快取儲存體。 您可以定義多個前端並為每個前端指派特定的快取型別。
@@ -95,11 +101,22 @@ Commerce提供預設前端，可供所有快取型別使用。
 ],
 ```
 
-在此範例中，Commerce將`full_page`快取型別指派給`page_cache`前端。 前端會決定要儲存該快取型別的後端設定。
+其中：
+
+- `<frontend_type>` — 低階前端快取型別。 指定與`Zend_Cache_Core`相容的類別名稱。
+如果省略，則使用[Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php)。
+
+- `<frontend_option>`， `<frontend_option_value>` — Commerce架構在建立時以關聯陣列形式傳遞給前端快取的選項名稱和值。
+
+- `<backend_type>` — 低階後端快取型別。 您可以指定：
+  - **Symfony快取（2.4.9+，建議）**：簡化名稱，如`valkey`或`file`
+  - **Zend型**：與實作`Zend_Cache_Backend_Interface`的`Zend_Cache_Backend`相容的完整類別名稱
+
+- `<backend_option>`， `<backend_option_value>` — Commerce架構在建立時以關聯陣列形式傳遞給後端快取的選項名稱和值。
 
 >[!NOTE]
 >
->`full_page`索引鍵代表Commerce應用程式快取型別。 透過Varnish或Fastly的HTTP全頁快取是單獨的快取層。 請參閱[快取總覽和組態選項](caching-overview.md)。
+>對於後端值格式，例如Zend型類別名稱與Symfony快取簡化名稱（例如`valkey`或`file`），請參閱[快取後端選項](cache-options.md)。
 
 >[!MORELIKETHIS]
 >
