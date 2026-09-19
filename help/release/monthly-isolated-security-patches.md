@@ -78,7 +78,7 @@ ht-degree: 0%
 
    新的每月獨立修補程式檔案會根據發行排程出貨。 檢閱受影響元件和CVE的對應安全性公告。 每個公告連結至發行說明，其中包含安裝該月獨立修補程式檔案的逐步指示。
 
-1. **使用[Commerce版本工具](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro)檢查Commerce安裝的安全性狀態。**
+1. **使用[Commerce版本工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/commerce-version-tool/intro)檢查Commerce安裝的安全性狀態。**
 
    此工具會報告目前安裝的每月修補程式、缺少的修補程式，以及安裝仍會公開哪些CVE。 如此一來，您就可以明確評估所需的動作，而不必單純依賴版本號碼。
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >**雲端客戶：**&#x200B;請先檢查Commerce [版本](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)已安裝的雲端修補程式。 修復可能已包含在內，手動套用修復可能會產生衝突，或複製修復。
+   >**雲端客戶：**&#x200B;請先檢查Commerce [版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest)已安裝的雲端修補程式。 修復可能已包含在內，手動套用修復可能會產生衝突，或複製修復。
 
 1. **將檔案與已安裝的元件比對。**
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 
    根據您的正常變更流程，在升級至生產環境之前在測試環境中進行驗證。
 
-Cloud客戶也可以使用[Adobe Commerce Patching Automation](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro)，透過Admin面板套用或還原修補程式，而非上述手動Git和Composer步驟。
+Cloud客戶也可以使用[Adobe Commerce Patching Automation](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/caps-tool/intro)，透過Admin面板套用或還原修補程式，而非上述手動Git和Composer步驟。
 
 ## 依部署型別區分的修補動作
 
@@ -131,7 +131,7 @@ Cloud客戶也可以使用[Adobe Commerce Patching Automation](https://experienc
 
 ### 使用分層於修補程式的修補程式，我如何知道安裝的安全性狀態？
 
-隨著每月安全性修補程式的發行，Adobe Commerce推出了[Commerce版本工具](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro)，這是一個獨立公用程式，可報告哪些修補程式已安裝或遺失，以及您的安裝受到哪些CVE保護。 此工具不會依賴版本號碼，而是會讀取修補程式中繼資料，並為報表和持續整合(CI)提供機器可讀輸出。
+隨著每月安全性修補程式的發行，Adobe Commerce推出了[Commerce版本工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/commerce-version-tool/intro)，這是一個獨立公用程式，可報告哪些修補程式已安裝或遺失，以及您的安裝受到哪些CVE保護。 此工具不會依賴版本號碼，而是會讀取修補程式中繼資料，並為報表和持續整合(CI)提供機器可讀輸出。
 
 ### 這是否表示Adobe已停止累積的版本化安全性發行？
 
@@ -149,4 +149,4 @@ Cloud客戶也可以使用[Adobe Commerce Patching Automation](https://experienc
 >* [發行原則](versioning-policy.md)
 >* [修補程式發行排程](schedule.md)
 >* [Commerce版本工具](../tools/commerce-version-tool/intro.md)
->* [Adobe安全性佈告欄和建議](https://helpx.adobe.com/security/security-bulletin.html)
+>* [Adobe安全性佈告欄和建議](https://helpx.adobe.com/tw/security/security-bulletin.html)
