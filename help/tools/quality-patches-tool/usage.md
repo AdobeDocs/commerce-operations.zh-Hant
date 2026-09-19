@@ -1,17 +1,15 @@
 ---
-title: 使用情況
+title: 安裝及使用
 description: 瞭解如何使用品質修補程式工具來套用和管理Adobe Commerce的修補程式。 探索測試、應用程式和修補管理技術。
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: 2b2ac06c54af242407ae4f3fbfb23180e6ec3ae8
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '944'
 ht-degree: 0%
-
 ---
-
-# 使用情況
+# 安裝及使用
 
 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches)提供由Adobe和Magento Open Source社群開發的個別修補程式。 它可讓您套用、還原和檢視已安裝的Adobe Commerce版本可用的所有個別修補程式的一般資訊。 無論修補程式的開發者是誰，您都可以將修補程式套用至Adobe Commerce專案。 例如，您可以將社群開發的修補程式套用至Adobe Commerce專案。
 

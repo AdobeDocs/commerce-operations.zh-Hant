@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '86'
 ht-degree: 0%
-
 ---
 # 延伸支援原則注意事項
 
@@ -16,4 +15,4 @@ ht-degree: 0%
 >另請參閱：
 >
 >- [軟體生命週期原則](/help/release/lifecycle-policy.md) — 支援終止日期、延長支援及僅限安全性的轉換規定
->- [雲端版本升級執行原則](/help/release/version-upgrade-enforcement-policy.md) — 執行日期和必要的動作
+>- [保護Commerce環境所需的動作和截止日期](/help/release/security-enforcement-policy.md) — 執行日期和所需的動作

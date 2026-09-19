@@ -4,13 +4,11 @@ user-guide-description: 在一個位置存取Adobe Commerce修補程式和服務
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: 5e0e4b0dc59aa2d8bd08d2d4af1176d14577f063
+source-git-commit: 7f611e9d05ddc53c853839d33bcacf48a59c126e
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '110'
 ht-degree: 30%
-
 ---
-
 
 # 發行資訊 {#release}
 
@@ -55,7 +53,7 @@ ht-degree: 30%
 - 規劃與原則 {#planning}
   - [生命週期原則](lifecycle-policy.md)
   - [保護Commerce環境安全的必要動作和截止日期](security-enforcement-policy.md)
-  - [版本升級執行原則](version-upgrade-enforcement-policy.md)
+  - [每月安全性隔離的修補原則](monthly-isolated-security-patches.md)
   - [版本設定原則](versioning-policy.md)
   - [發行排程](schedule.md)
 - [各版本功能](features.md)

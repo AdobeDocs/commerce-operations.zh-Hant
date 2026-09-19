@@ -2,14 +2,12 @@
 title: 發行原則
 description: 瞭解Adobe Commerce版本型別、行銷與模組版本設定、修補程式和安全性版本、測試版本、Hotfix和整體發行原則。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce發行原則
 
 Adobe Commerce在個別模組層級（例如`magento/framework 101.1.1`）使用[語意版本設定](https://semver.org/)，但行銷版本編號不使用。 例如：
@@ -82,4 +80,4 @@ Hotfix是包含高影響力安全性或品質修正的修補程式，例如影�
 
 由非Adobe人員建立，用於修正問題或因各種原因修改Adobe Commerce程式碼。
 
-<!-- Last updated from includes: 2026-06-16 17:36:23 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

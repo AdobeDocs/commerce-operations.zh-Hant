@@ -3,14 +3,12 @@ title: 軟體生命週期原則
 description: 了解 Adobe Commerce 版本軟體支援終止的關鍵日期。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
-
 ---
-
 
 # Adobe Commerce生命週期原則
 
@@ -206,3 +204,5 @@ Adobe鼓勵客戶儘快升級。 但是，為了提供更大的彈性以符合�
 如果您無法立即移轉至[!DNL Adobe Commerce as a Cloud Service]，可以在雲端版本上升級至目前支援的最新Adobe Commerce。 這會將您移至完全支援的現代化基礎架構棧疊，同時保留雲端部署模式上的現有Commerce。
 
 請注意，此路徑無法免除未來的升級義務。 在雲端部署上使用Adobe Commerce的客戶必須在發行行達到其版本升級強制執行日期時繼續升級。
+
+<!-- Last updated from includes: 2026-09-17 13:05:40 -->

@@ -2,13 +2,11 @@
 title: 共擔責任安全性與營運模式
 description: 瞭解在雲端基礎結構專案中，Adobe Commerce中涉及的每一方的安全性責任。
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3242'
 ht-degree: 0%
-
 ---
-
 # 共擔責任安全性與營運模式
 
 雲端基礎結構上的Adobe Commerce是一項平台即服務(PaaS)產品，仰賴共同責任的安全性和營運模式。 Adobe、商家、雲端服務提供者和內容傳遞網路(CDN)提供者都有這些責任。 各方都有責任保護及營運Adobe Commerce應用程式，以及雲端基礎結構上部署之商家專用程式碼和擴充功能。
@@ -38,7 +36,6 @@ Adobe負責下列工作：
 >另請參閱：
 >
 >* [軟體生命週期原則](../release/lifecycle-policy.md) — 支援終止日期、延長支援及僅限安全性的轉換規定
->* [雲端版本升級執行原則](../release/version-upgrade-enforcement-policy.md) — 執行日期和必要的動作
 >* [安全性與合規性通知](../release/security-enforcement-policy.md) — Cloud 2.4.4到2.4.9版上Adobe Commerce的必要動作和截止日期
 
 {{supported-versions-only}}

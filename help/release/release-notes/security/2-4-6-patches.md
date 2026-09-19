@@ -2,14 +2,12 @@
 title: Adobe Commerce 2.4.6安全性修補程式發行說明
 description: 瞭解Adobe Commerce 2.4.6版的安全性修補程式發行版本中包含的安全性錯誤修正、安全性增強功能和其他安全性相關更新。
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Commerce 2.4.6安全性修補程式的發行說明
 
@@ -31,7 +29,7 @@ ht-degree: 0%
 >
 >Adobe Commerce 2.4.6在[延伸支援](../../lifecycle-policy.md#extended-support)到&#x200B;**2027年8月30日**&#x200B;之間，接著是[僅限安全性過渡期間](../../lifecycle-policy.md#security-only-transitional-period)到&#x200B;**2028年5月31日**。 這些布建僅供Adobe Commerce客戶使用。 它們不會擴充對第三方相依性（例如MySQL）的支援。
 >
->如果您在雲端上執行Adobe Commerce，則必須在&#x200B;**2028年6月1日** [版本升級強制日期](../../version-upgrade-enforcement-policy.md)之前升級至支援的版本或移轉至[!DNL Adobe Commerce as a Cloud Service]。 如需完整生命週期日期，請參閱[支援結束日期](../../lifecycle-policy.md#end-of-support-dates)表格。
+>如果您在雲端上執行Adobe Commerce，則必須在&#x200B;**2028年6月1日** [版本升級強制日期](../../security-enforcement-policy.md)之前升級至支援的版本或移轉至[!DNL Adobe Commerce as a Cloud Service]。 如需完整生命週期日期，請參閱[支援結束日期](../../lifecycle-policy.md#end-of-support-dates)表格。
 
 ## 2.4.6-p15
 
@@ -331,4 +329,4 @@ Adobe Commerce 2.4.6-p1安全性版本針對先前版本中發現的漏洞提供
 
   此問題可透過為具有[穩定性標籤](https://getcomposer.org/doc/04-schema.md#package-links)的B2B安全性套件新增手動相依性來解決。 如需詳細資訊，請參閱[B2B發行說明](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=zh-Hant#known-issue)。
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

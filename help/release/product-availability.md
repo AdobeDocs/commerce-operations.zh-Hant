@@ -3,7 +3,7 @@ title: 產品可用性
 description: 瞭解目前支援的Adobe Commerce功能，並檢查其與特定Adobe Commerce版本的相容性。
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 last-update: 2026-09-11
-source-git-commit: 89543d430e145c9fd9b153fac9610a0b10171d45
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -43,4 +43,4 @@ Adobe已完整測試支援的版本。 Adobe客戶支援可提供支援版本的
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-08-14 18:04:17 -->
+<!-- Last updated from includes: 2026-09-11 07:57:18 -->
