@@ -3,14 +3,12 @@ title: 軟體生命週期原則
 description: 了解 Adobe Commerce 版本軟體支援終止的關鍵日期。
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
-
 ---
-
 
 # Adobe Commerce生命週期原則
 
@@ -22,7 +20,7 @@ Adobe並未針對客戶處於Adobe Commerce三年或延長支援期間期間，�
 
 一般可用性(GA)日期的標準三年支援期間。 標準支援包括品質修正、安全性修補程式，以及完整的Adobe Commerce電話支援。
 
-- **品質修正** — 客戶可以連絡[Adobe Commerce支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)或自助服務[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)來存取品質修正。
+- **品質修正** — 客戶可以連絡[Adobe Commerce支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)或自助服務[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)來存取品質修正。
 
 - **安全性修正** - Adobe透過累積安全性修補程式和非累積[隔離安全性修補程式檔案](versioning-policy.md#isolated-security-patch-file)，在三年支援期間提供安全性修正。
 
@@ -199,10 +197,12 @@ Adobe鼓勵客戶儘快升級。 但是，為了提供更大的彈性以符合�
 - 您可以存取Adobe的最新功能：AI支援的銷售、可撰寫的店面架構，以及原生Adobe Experience Cloud整合。
 - 您可消除週期性升級週期。
 
-請連絡您的Adobe客戶團隊，以開始移轉評估。 如需產品概述，請參閱[Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview)。
+請連絡您的Adobe客戶團隊，以開始移轉評估。 如需產品概述，請參閱[Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)。
 
 ### 替代路徑：在雲端或內部部署版本上升級至支援的Adobe Commerce
 
 如果您無法立即移轉至[!DNL Adobe Commerce as a Cloud Service]，可以在雲端版本上升級至目前支援的最新Adobe Commerce。 這會將您移至完全支援的現代化基礎架構棧疊，同時保留雲端部署模式上的現有Commerce。
 
 請注意，此路徑無法免除未來的升級義務。 在雲端部署上使用Adobe Commerce的客戶必須在發行行達到其版本升級強制執行日期時繼續升級。
+
+<!-- Last updated from includes: 2026-09-17 13:05:40 -->
