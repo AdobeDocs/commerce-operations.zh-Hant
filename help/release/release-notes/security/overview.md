@@ -2,8 +2,8 @@
 title: 安全性修補程式發行說明
 description: 請檢閱Adobe Commerce安全性修補程式發行說明，瞭解支援的版本，包括安全性改善、修正，以及每個修補程式發行版本包含的內容。
 exl-id: a3d78211-41ff-4df2-ad29-21465c096027
-last-update: 2026-08-19
-source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
+last-update: 2026-09-18
+source-git-commit: 7e982102bc8c3b13a67a0ca4b0a8b21ada1a5825
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
