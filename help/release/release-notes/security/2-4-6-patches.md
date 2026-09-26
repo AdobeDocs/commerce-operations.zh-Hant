@@ -89,7 +89,7 @@ Adobe Commerce 2.4.6已經過驗證，可搭配安全PHPUnit發行版本所需�
 
 Adobe Commerce 2.4.6-p13安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/tw/security/products/magento/apsb25-94.html)。
 
 {{b2b-patches}}
 
@@ -207,7 +207,7 @@ Adobe Commerce 2.4.6-p7安全性版本針對2.4.6舊版中發現的漏洞提供�
 
 Adobe Commerce 2.4.6-p6安全性版本針對2.4.6舊版中已發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html)。
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB24-40](https://helpx.adobe.com/tw/security/products/magento/apsb24-40.html)。
 
 為了與Commerce 2.4.6-p6版相容，擁有Adobe Commerce B2B擴充功能的商家必須升級至[B2B 1.4.2-p1](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/release-notes#b2b-v142-p1)版。
 

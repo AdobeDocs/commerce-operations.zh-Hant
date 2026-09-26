@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
+source-git-commit: 076f76112159204c0f23d3ddfbb606e274c406eb
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1538'
 ht-degree: 1%
 ---
 # 新功能範本
@@ -9,6 +9,50 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年9月18日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/monthly-isolated-security-patches">每月隔離安全性修補原則</a>，說明Adobe Commerce如何在完整安全性修補程式發行版本之間，於修補程式星期二提供目標、隔離的CVE修正，以及如何套用及驗證這些修正。</p>
+</td>
+      <td>
+        新主題
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年9月15日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已更正<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis/Valkey服務組態</a>指南，以澄清<code>VALKEY_BACKEND</code>和<code>REDIS_BACKEND</code>部署變數無法判斷Adobe Commerce實際使用的快取服務，且<code>VALKEY_USE_SLAVE_CONNECTION</code>/<code>REDIS_USE_SLAVE_CONNECTION</code>必須符合環境中實際可用的服務。</p>
+</td>
+      <td>
+        技術
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年9月8日
 
@@ -380,102 +424,6 @@ ht-degree: 1%
         新主題qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3174f84e0a8c64aaed50cc075a9287bc011778ef">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月27日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview">概觀：品質修補工具(QPT) v1.1.82</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ddfb8e85d015b8ab675a3af56cf5d2bb72e535c4">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月23日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>，其中包含Adobe Commerce 2.4.9的MariaDB Cloud版本支援詳細資料（建議使用12.3，支援使用11.8）。</p>
-</td>
-      <td>
-        技術
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eaf47339d87d296799367f699f9322c14e6ee780">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月22日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>以雲端服務版本的最新Commerce更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>主題，包括RabbitMQ 4.3更新以及確認與MariaDB 12.3的相容性。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6607852ba3221a1120f3c88007c106ed9704dcec">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月21日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401： Scheduled Update首頁的詳細描述QPT 1.1.81修正，其中包含可設定產品重新導向至維護頁面</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/41aac13f73ff0836f93b8ec30a709bd89fa34a94">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468的QPT 1.1.81修正的詳細說明：以網站範圍設定的管理員使用者無法在頁面產生器</a>中儲存動態區塊。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f5fbe594284c05aaa9b2461e3628a3444229efb6">認可</a></td>
     </tr>
   </tbody>
 </table>
