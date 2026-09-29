@@ -1,17 +1,15 @@
 ---
-title: ACSD-65127：生產模式中的JavaScript縮製造成瀏覽器發生 [!DNL TinyMCE] 6錯誤
-description: 套用ACSD-65127修補程式以修正Adobe Commerce問題，此問題在生產模式中啟用JavaScript縮制導致 [!DNL TinyMCE] 6在瀏覽器主控台中產生錯誤，影響功能和使用者體驗。
+title: ACSD-65127：生產模式中的JavaScript縮製造成瀏覽器發生[!DNL TinyMCE] 6錯誤
+description: 套用ACSD-65127修補程式以修正Adobe Commerce問題，此問題在生產模式中啟用JavaScript縮制導致[!DNL TinyMCE] 6在瀏覽器主控台中產生錯誤，影響功能和使用者體驗。
 feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '363'
 ht-degree: 0%
-
 ---
-
 # ACSD-65127：生產模式中的JavaScript縮製造成瀏覽器發生[!DNL TinyMCE] 6錯誤
 
 ACSD-65127修補程式修正了在生產模式下啟用JavaScript縮制導致[!DNL TinyMCE] 6在瀏覽器主控台中產生錯誤，進而影響功能和使用者體驗的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64時，即可使用此修補程式。 修補程式ID為ACSD-65127。 請注意，此問題已在Adobe Commerce 2.4.8中修正。
@@ -38,15 +36,15 @@ ACSD-65127修補程式修正了在生產模式下啟用JavaScript縮制導致[!D
 
 1. 執行下列命令來設定組態：
 
-```shell
-bin/magento config:set --lock-config dev/js/minify_files 1
-bin/magento config:set --lock-config dev/js/enable_js_bundling 1
-bin/magento config:set --lock-config dev/js/merge_files 1
-```
+   ```shell
+   bin/magento config:set --lock-config dev/js/minify_files 1
+   bin/magento config:set --lock-config dev/js/enable_js_bundling 1
+   bin/magento config:set --lock-config dev/js/merge_files 1
+   ```
 
->[!NOTE]
->
->Adobe不建議啟用&#x200B;**[!UICONTROL Merge JavaScript Files]**。 請參閱[合併JS檔案（不建議使用）](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files)。
+   >[!NOTE]
+   >
+   >Adobe不建議啟用&#x200B;**[!UICONTROL Merge JavaScript Files]**。 請參閱[合併JS檔案（不建議使用）](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files)。
 
 1. 啟用生產模式。
 
