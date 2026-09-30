@@ -4,11 +4,9 @@ description: 當您準備升級Adobe Commerce專案時，請熟悉版本中的�
 exl-id: 08af5786-8d16-46da-90d4-5cc201288b1f
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '99'
 ht-degree: 0%
-
 ---
-
 # 升級前請先檢閱平台變更
 
 在[發行說明](../../release/release-notes/overview.md)和[系統需求](../../installation/system-requirements.md)中進一步瞭解技術平台變更。
