@@ -4,13 +4,11 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: 9c17eea494812648e488f181d025e0eb78eda0ff
 workflow-type: tm+mt
-source-wordcount: '10695'
+source-wordcount: '10699'
 ht-degree: 0%
-
 ---
-
 
 # 工具 {#tools}
 
@@ -1060,6 +1058,8 @@ ht-degree: 0%
       - [ACP2E-4805：當第一個可銷售子項稍後出現在清單中時，可設定產品的簽出請求速度會變慢](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
       - [ACP2E-4748：獎勵點有效期限在具有大量獎勵點歷史記錄的商店上執行緩慢](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
       - [ACP2E-4875：在開啟具有大型通訊錄的客戶帳戶時，管理員使用者會登出](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
+    - v1.1.83 {#v1-1-83}
+      - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
   - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
   - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)
