@@ -16,9 +16,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ed51278b96a445aab6d1194e473e55d85ce6ef1d
+source-git-commit: ec5bfb45c2c170168c0e30a8c2197ba3ab58ccfe
 workflow-type: tm+mt
-source-wordcount: '32496'
+source-wordcount: '33143'
 ht-degree: 0%
 ---
 # 發行說明
@@ -32,6 +32,30 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.84 {#v1-1-84}
+
+* **ACP2E-4913** （適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.9） — 修正因鎖死而造成送貨與開立發票作業失敗的問題。
+* **ACP2E-5005** （針對Adobe Commerce，B2B >=1.5.0 &lt;1.5.4） — 修正可轉讓報價單中的搭售產品選項數量，在Admin中重新設定搭售產品並編輯數量時，恢復到其先前值的問題。
+* **ACP2E-5009** （適用於Adobe Commerce >=2.4.5 &lt;2.4.10） — 修正從Magento Open Source移轉至Adobe Commerce的資料未正確移轉類別排程設計變更和產品特殊價格排程更新，導致移轉期間遺失或略過部分排程更新的問題，並改善移轉效能。
+* **ACP2E-5017** （對於Adobe Commerce，B2B >=1.5.0 &lt;1.5.4） — 修正當客戶未指派給公司時，透過GraphQL查詢客戶角色會傳回&#x200B;*內部伺服器錯誤*&#x200B;的問題。
+* **ACP2E-5027** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.10） — 修正當啟用檔案鎖定時，索引器停滯在回圈且重新索引未完成的問題。
+* **ACP2E-5029** （適用於Adobe Commerce和Magento Open Source >=2.4.7 &lt;2.4.10） — 修正在執行手動重新同步之前，[!DNL Live Search]中未出現目錄價格規則變更的問題。
+* **ACP2E-5041** （適用於Adobe Commerce >=2.4.5 &lt;2.4.9） — 修正排程更新期間儲存產品導致更新結束後店面顯示正常價格而非[!UICONTROL Special Price]的問題。
+* **ACP2E-5059** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.10） — 修正客戶收到相同訂單的重複訂單確認電子郵件的問題。
+* **ACP2E-5122** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.10） — 修正例外狀況記錄中錯誤記錄為應用程式錯誤的購物車GraphQL請求處理錯誤的問題。
+* **ACP2E-5143** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8） — 修正GraphQL路由查詢在僅請求路由中繼資料時呈現完整CMS頁面內容的問題，這會增加包含Page Builder Widget的CMS頁面的資料庫查詢。
+* **ACP2E-5183** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.10） — 修正編譯使用`@magento_import`指示詞的`LESS`檔案時，PHP 8.5上的靜態內容部署失敗的問題。
+* **ACP2E-5242** （適用於Adobe Commerce和Magento Open Source >=2.4.9 &lt;2.4.10） — 修正將專案新增至購物車時，檢查產品可用性顯示錯誤，指出找不到網站的問題。
+* **ACP2E-5263** （適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.9） — 修正可在包含所有產品之前停止將產品匯出至CSV檔案，導致檔案不完整的問題。
+* **ACP2E-5034** （針對Adobe Commerce，B2B >=1.5.0 &lt;1.5.3） — 修正當選取送貨方式後重新計算報價時，可轉讓報價管理錯誤地將總計重設為&#x200B;*zero*&#x200B;的問題，捨棄透過Admin中的[!UICONTROL Configure]動作進行的套裝產品選項數量更新，且無法在報價小計中正確反映套用至動態價格套裝產品的料號層級折扣。
+* **ACP2E-4741** （適用於Adobe Commerce和Magento Open Source >=2.4.9 &lt;2.4.10） — 修正連結至[!UICONTROL Related Product]、[!UICONTROL Up-Sell]或交叉銷售的產品儲存後，產品從店面消失的問題，同時非預設庫存和來源正在使用中。
+* **ACP2E-5079** （適用於Adobe Commerce >=2.4.4 &lt;2.4.10） — 修正當客戶帳戶在全球共用時，評估指派給多個網站的客戶區段只會從第一個網站傳回相符客戶的問題。
+* **ACP2E-5127** （針對Adobe Commerce，B2B >=1.3.3 &lt;1.5.4） — 修正在「管理員」面板中使用非預設地區設定編輯公司帳戶時，其[!UICONTROL Credit Limit]會重設為&#x200B;*0*&#x200B;的問題。
+* **AC-15494** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正產品查詢傳回含有HTML逸出特殊字元而不是其原始字元的產品名稱的問題。
+* 已更新的版本： **AC-18096**、**ACSD-60584**、**ACSD-65775**
+* 已取代的修補程式： **ACP2E-4801**，**ACP2E-4194**
+* 更新的修補程式： **ACP2E-4815**
 
 ## v1.1.83 {#v1-1-83}
 
@@ -733,7 +757,7 @@ ht-degree: 0%
 * **ACSD-54776** （適用於Adobe Commerce >=2.4.5 &lt;2.4.7） — 修正未勾選的&#x200B;*[!UICONTROL Use Default Value]*&#x200B;及未儲存第二個網站、商店和商店檢視的非預設產品欄位值的問題。
 * **ACSD-53998** （適用於Adobe Commerce和Magento Open Source >=2.4.4-p2 &lt;2.4.5） || >=2.4.5-p1 &lt;2.4.7) — 修正從客戶帳戶登出後，以&#x200B;**[!UICONTROL Customer Segment]**&#x200B;為基礎的&#x200B;**[!UICONTROL Dynamic Block]**&#x200B;無法正常運作的問題。
 * **ACSD-53204** （適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7） — 修正&#x200B;*無法儲存產品。* 同時要求使用`rest/V1/products/<sku>/media`端點將影像新增至產品相簿時發生錯誤。
-* **ACSD-47657** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7） — 已新增AWS憑證的快取機制。 憑證提供者現在會使用Magento快取來快取從AWS擷取的憑證，以進行EC2設定。
+* **ACSD-47657** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7） — 已新增AWS憑證的快取機制。 認證提供者現在會使用Magento快取來快取從AWS擷取的認證，以進行EC2設定。
 * 更新修補程式：ACSD-51984、ACSD-51574。
 
 ## v1.1.38 {#v1-1-38}
@@ -1083,7 +1107,7 @@ ht-degree: 0%
 * **MDVA-44887** （*用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.5*） — 修正&#x200B;*Uncaught SyntaxError： Admin面板中意外的權杖&#39;const&#39;*&#x200B;錯誤。
 * **MDVA-43718** （*用於Adobe Commerce和Magento Open Source >=2.3.0 &lt;2.4.5*） — 修正&#x200B;*消費者無權存取%資源。* 從自訂整合存取共用目錄時顯示的錯誤。
 * **MDVA-44660** （*適用於Adobe Commerce和Magento Open Source >=2.4.2-p1 &lt;2.4.5*） — 修正重音符號字元(\&#39;)無法用於客戶名字和姓氏的問題。
-* **MDVA-40896** （*用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.4*） — 修正&#x200B;*錯誤： TypeError：引數3傳遞給Magento*&#x200B;非同步產品批次API中的錯誤。
+* **MDVA-40896** （*用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.4*） — 修正&#x200B;*錯誤： TypeError：傳遞至Magento的引數3非同步產品批次API中出現*&#x200B;錯誤。
 * **MDVA-38559** （*適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.3*） — 修正具有多個訂閱之客戶的&#x200B;*/V1/customers/search API*&#x200B;錯誤。
 * **MDVA-44533** （*適用於Adobe Commerce和Magento Open Source >=2.3.1 &lt;2.4.4*） — 修正錯誤將折扣套用至套件組合子產品的問題。
 * 更新修補程式：MDVA-41061、MDVA-42269。
