@@ -1,13 +1,12 @@
 ---
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '374'
 ht-degree: 0%
-
 ---
 # 安全的Web伺服器通訊
 
-本主題討論使用傳輸層安全性(TLS)加密與[HTTP基本驗證](https://datatracker.ietf.org/doc/html/rfc2617)的組合，保護網頁伺服器與搜尋引擎(Elasticsearch或OpenSearch)之間通訊安全的範例。 您也可以選擇設定其他型別的驗證；我們提供該資訊的參考。
+本主題討論使用傳輸層安全性(TLS)加密與[HTTP基本驗證](https://datatracker.ietf.org/doc/html/rfc2617)的組合，保護網頁伺服器與搜尋引擎（Elasticsearch或OpenSearch）之間通訊安全的範例。 您也可以選擇設定其他型別的驗證；我們提供該資訊的參考。
 
 (舊稱Secure Sockets Layer (SSL)，經常與TLS互換使用。 在此主題中，我們稱為&#x200B;*TLS*。)
 
@@ -35,12 +34,12 @@ ht-degree: 0%
 
 * Apache
 
-   * [Apache 2.4高度加密做法](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
-   * [如何在Apache for Ubuntu 14.04上建立SSL憑證（Digitalocean教學課程）](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
-   * [使用CentOS (CentOS wiki)設定SSL安全網頁伺服器](https://wiki.centos.org/HowTos/Https)
+  * [Apache 2.4高度加密做法](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
+  * [如何在Apache for Ubuntu 14.04上建立SSL憑證（Digitalocean教學課程）](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
+  * [使用CentOS (CentOS wiki)設定SSL安全網頁伺服器](https://wiki.centos.org/HowTos/Https)
 
 * Nginx
 
-   * [Nginx SSL終止](https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/)
-   * [如何在Nginx上為Ubuntu 14.04建立SSL憑證（Digitalocean教學課程）](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
-   * [Nginx SSL憑證安裝(digicert)](https://www.digicert.com/ssl-certificate-installation-nginx.htm)
+  * [Nginx SSL終止](https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/)
+  * [如何在Nginx for Ubuntu 14.04上建立SSL憑證（Digitalocean教學課程）](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
+  * [Nginx SSL憑證安裝(digicert)](https://www.digicert.com/ssl-certificate-installation-nginx.htm)
