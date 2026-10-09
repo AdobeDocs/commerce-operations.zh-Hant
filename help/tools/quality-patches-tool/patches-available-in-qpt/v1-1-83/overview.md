@@ -4,9 +4,26 @@ description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.83中可用�
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 6fedf98a6936fe842230003e0c2d52598bcf999d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 758cab5d4002ddba607dadb3c4b44553adf8d8ba
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '517'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -22,16 +39,16 @@ QPT v1.1.83包含下列修補程式：
 1. **ACP2E-4838**：修正具有受限制許可權的管理員使用者無法從客戶格線中刪除客戶的問題。
 1. **ACP2E-4877**：修正在&#x200B;*擱置中*&#x200B;狀態中，使用&#x200B;**[!UICONTROL Payment on Account]**&#x200B;下達的訂單無法在Admin中編輯的問題。
 1. **ACP2E-4908**：修正大型目錄導致Redis或Valkey中記憶體使用過量的問題，因為每個商店檢視中的每項產品都有個別的版面配置快取專案。
-1. **AC-12854**：修正在Admin中重新排序訂單時，會建立尾碼為&#x200B;*-1*&#x200B;的新訂單編號而非指派下一個順序編號的問題。
+1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**：修正在Admin中重新排序訂單時，會建立尾碼為`-1`的新訂單編號而非指派下一個連續訂單編號的問題。
 1. **ACP2E-4977**：修正可設定產品發票與銷退折讓單總計不包含&#x200B;**[!UICONTROL Fixed Product Tax]** (FPT)的問題，導致總計低於訂單總計。
 1. **AC-16530**：修正購物車未一致反映目錄價格規則之排程更新的問題。
 1. **AC-11389**：修正某些四捨五入案例中折扣、稅金和訂單總計計算錯誤的問題。
 1. **ACP2E-4998**：修正裝載中有一個SKU不存在時，整個請求的`POST /V1/products/tier-prices` REST API請求失敗的問題，以防止更新有效的SKU。
 1. **ACP2E-5015**：修正當需要的目錄資料無法使用時，將共用目錄儲存在「管理員」中可能會無意中移除指派的產品和定價的問題。
 1. **AC-14940**：修正某些商店相關案例中，在管理員中按一下客戶帳戶的「**[!UICONTROL Reset Password]**」時，未傳送密碼重設電子郵件的問題。
-1. **ACP2E-5101**：修正當索引子設為&#x200B;**[!UICONTROL Update on Schedule]**&#x200B;時，安裝B2B模組失敗的問題。
+1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**：修正當索引子設為&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;時，安裝B2B模組失敗的問題。
 1. **ACP2E-5205**：修正當類別載入需要相當長的時間，或當涉及大量類別和產品時造成逾時的問題。 此外，每個類別分葉的產品計數現在都會正確顯示。
 1. **ACP2E-3211**：修正將相同產品同時新增到店面的購物車中，會在購物車中建立相同SKU的個別專案，而非將它們合併為單一專案的問題。
-1. **ACP2E-5223**：修正目錄許可權索引包含從客戶群組排除的網站的問題。
+1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)**：修正&#x200B;**[!UICONTROL Catalog Permissions]**&#x200B;索引包含從客戶群組排除之網站的問題。
 
 使用左側的功能表，導覽至特定的修補程式頁面。
