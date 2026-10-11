@@ -2,14 +2,23 @@
 title: 使用環境變數的範例
 description: 請參閱如何使用環境變數在開發系統中設定共用、系統專用和敏感值的範例。
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 0%
-
 ---
-
 # 使用環境變數的範例
 
 此範例說明如何在開發系統中設定共用、系統特定和敏感的值，然後使用共用組態、`config.php`和PHP環境變數的組合來設定生產系統中的所有值。
@@ -63,7 +72,7 @@ ht-degree: 0%
 
    ![切換到預設設定](../../assets/configuration/split-deploy-default-config.png)
 
-1. 在左側導覽列的[一般]底下，按一下[連絡人]。**&#x200B;**
+1. 在左側導覽列的[一般]底下，按一下[連絡人]。****
 1. 清除&#x200B;**傳送電子郵件至**&#x200B;欄位旁的&#x200B;**使用預設值**&#x200B;核取方塊。
 1. 在欄位中輸入電子郵件地址。
 1. 按一下&#x200B;**儲存設定**。
@@ -186,7 +195,7 @@ $_ENV['VARIABLE'] = 'value';
    >**存放區名稱**&#x200B;欄位可在網站範圍中編輯，但如果您切換至預設設定範圍，則無法編輯。 這是您在開發系統中設定選項的結果。 **VAT編號**&#x200B;的值在網站範圍中不可編輯。
 
 1. 如果您尚未這樣做，請切換到預設設定範圍。
-1. 在左側導覽列的[一般]底下，按一下[連絡人]。**&#x200B;**
+1. 在左側導覽列的[一般]底下，按一下[連絡人]。****
 
    無法編輯&#x200B;**傳送電子郵件給**&#x200B;欄位，如下圖所示。 此為敏感設定。
 

@@ -3,7 +3,18 @@ title: 產品可用性
 description: 瞭解目前支援的Adobe Commerce功能，並檢查其與特定Adobe Commerce版本的相容性。
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 last-update: 2026-10-07
-source-git-commit: 7fd542f814c8620f332339b7c08076613d116dce
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -30,7 +41,7 @@ Adobe已完整測試支援的版本。 Adobe客戶支援可提供支援版本的
 
 ## Commerce服務
 
-[Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)是一套Adobe代管功能，結合您的Commerce執行個體提供強大的功能及快速的回應時間。
+[Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)是一套Adobe代管功能，結合您的Commerce執行個體提供強大的功能及快速的回應時間。
 
 建議商戶使用最新版本的服務，以確保最高的穩定性和功能。 本檔案說明目前發行的版本。
 
