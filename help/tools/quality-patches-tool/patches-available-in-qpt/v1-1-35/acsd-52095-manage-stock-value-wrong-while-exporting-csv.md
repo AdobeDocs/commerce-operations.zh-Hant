@@ -57,7 +57,7 @@ ACSD-52095修補程式修正匯出CSV時產品`manage_stock`值錯誤的問題�
 1. 檢查產生的CSV檔案： `manage_stock` = 0， `use_config_manage_stock` = 1。
 1. 再次移至&#x200B;**[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Product Stock Options]**，並設定&#x200B;**[!UICONTROL Manage Stock]** = *[!UICONTROL Yes]*。
 1. 移至&#x200B;**系統** > **匯出**。
-選取*[!UICONTROL Entity Type]* = *[!UICONTROL Products and export the products]*。
+選取&#x200B;*[!UICONTROL Entity Type]* = *[!UICONTROL Products and export the products]*。
 1. 檢查產生的CSV檔案： `manage_stock` = 0， `use_config_manage_stock` = 1。
 1. 在Admin中開啟產品，前往&#x200B;**[!UICONTROL Advanced Inventory]**&#x200B;並檢查&#x200B;**[!UICONTROL Manage Stock]**&#x200B;值。
 
