@@ -1,6 +1,6 @@
 ---
 title: MDVA-41399：如果客戶將產品新增到願望清單，則無法存取管理購物車
-description: MDVA-41399修補程式解決如果客戶將產品新增至願望清單，管理員使用者無法存取「管理購物車」頁面的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6後，即可使用此修補程式。 修補程式ID為MDVA-41399。 請注意，問題已在Adobe Commerce 2.4.2中修正。
+description: MDVA-41399修補程式解決如果客戶將產品新增至願望清單，管理員使用者無法存取「管理購物車」頁面的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6後，即可使用此修補程式。 修補程式ID為MDVA-41399。 請注意，問題已在Adobe Commerce 2.4.2中修正。
 feature: Orders, Products, Shopping Cart
 role: Admin
 exl-id: 81a128b5-0c38-4f8f-b297-1f264952d431
@@ -73,7 +73,7 @@ MDVA-41399修補程式解決如果客戶將產品新增至願望清單，管理�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 

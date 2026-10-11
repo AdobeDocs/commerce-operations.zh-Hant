@@ -49,7 +49,7 @@ ACSD-49737修補程式修正了信用卡付款失敗後，優惠券被錯誤標�
 <u>必要條件</u>：
 
 1. 設定&#x200B;**[!UICONTROL Braintree sandbox payment]**&#x200B;方法。
-1. 請確定&#x200B;[*sales.rule.update.coupon.usage*](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html)消費者已設定並執行。
+1. 請確定&#x200B;[*sales.rule.update.coupon.usage*](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html?lang=zh-Hant)消費者已設定並執行。
 
 <u>要再現的步驟</u>：
 

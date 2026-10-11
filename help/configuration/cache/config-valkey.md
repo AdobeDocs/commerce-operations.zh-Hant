@@ -3,7 +3,7 @@ title: 安裝及設定Valkey
 description: 瞭解如何使用Adobe Commerce安裝和設定Valkey以快取和工作階段儲存。 探索最佳化和效能調整的選項。
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 TQID: 'https://experienceleague.adobe.com/Ef4WREy0eq0ChsrI5-0FtrjMZWNjwr7l71Pm-RHD1GI'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677

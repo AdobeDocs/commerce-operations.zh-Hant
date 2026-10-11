@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ## 管理工作階段大小
 
-請參閱&#x200B;_使用手冊_&#x200B;中的[工作階段管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management)。
+請參閱&#x200B;_使用手冊_&#x200B;中的[工作階段管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security-session-management)。
 
 ## 記憶體回收組態
 

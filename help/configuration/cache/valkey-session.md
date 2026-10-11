@@ -3,7 +3,7 @@ title: 設定工作階段存放區的Valkey
 description: 瞭解如何在Adobe Commerce中設定工作階段存放區的Valkey。 探索CLI設定、工作階段引數和連線驗證技術。
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 autotag-review: '2026-06-22T21:59:49.664Z'
 TQID: 'https://experienceleague.adobe.com/Cc9-5afIU1qJ0-4gxtUWo4tRFPtTMD3l1uzpyNBX7p0'
 product_v2:

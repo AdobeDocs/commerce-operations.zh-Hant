@@ -3,7 +3,7 @@ title: 使用清漆清除快取
 description: 瞭解快取清除如何與Adobe Commerce的Varnish網頁快取加速器搭配運作。 探索快取管理和最佳化技術。
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 autotag-review: '2026-06-22T22:18:33.462Z'
 TQID: 'https://experienceleague.adobe.com/ePhbVWjx-hX99p8OKiKqzT-w2KZu-XjS1XieuStKqc4'
 product_v2:

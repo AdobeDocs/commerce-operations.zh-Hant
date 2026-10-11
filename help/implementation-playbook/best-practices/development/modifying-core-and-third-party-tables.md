@@ -64,7 +64,7 @@ Adobe建議您先決定是否需要儲存此資料。 如果您要從舊版系�
 
 作為開發人員，您必須一律考慮使用您[!DNL Adobe Commerce]環境以外的工具，例如GraphQL mesh和Adobe App Builder。 這些工具可協助您保留資料的存取權，但對核心商務應用程式或其基礎資料庫表格沒有影響。 使用此方法，您可以透過API公開您的資料。 接著，將資料來源新增至App Builder設定。 使用GraphQL Mesh，您可以合併這些資料來源，並產生[舊資料](#legacy-data)中提到的單一回應。
 
-如需GraphQL Mesh的詳細資訊，請參閱[GraphQL Mesh閘道](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}。 如需Adobe App Builder的相關資訊，請參閱[App Builder簡介](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}。
+如需GraphQL Mesh的詳細資訊，請參閱[GraphQL Mesh閘道](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}。 如需Adobe App Builder的相關資訊，請參閱[App Builder簡介](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=zh-Hant){target="_blank"}。
 
 ## 修改核心表格或協力廠商表格
 
@@ -83,7 +83,7 @@ Adobe建議您先決定是否需要儲存此資料。 如果您要從舊版系�
 
    例如： `app/code/YourCompany/Customer`
 
-1. 建立適當的檔案以啟用模組（請參閱[建立模組](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}）。
+1. 建立適當的檔案以啟用模組（請參閱[建立模組](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=zh-Hant){target="_blank"}）。
 
 1. 在`etc`資料夾中建立名為`db_schema.xml`的檔案，並進行適當的變更。
 
@@ -165,7 +165,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## 尋找大型MySQL表格
 
-若要識別大型資料表，請依照[連線至資料庫](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database)文章中的說明連線至資料庫，然後執行下列命令。 將`project_id`用於生產環境。 對於暫存環境，請使用`[project_id]_stg`，`[project_id]_stg2`。
+若要識別大型資料表，請依照[連線至資料庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database)文章中的說明連線至資料庫，然後執行下列命令。 將`project_id`用於生產環境。 對於暫存環境，請使用`[project_id]_stg`，`[project_id]_stg2`。
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

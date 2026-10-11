@@ -43,7 +43,7 @@ ht-degree: 2%
 ]
 ```
 
-深入瞭解[模組](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html)。
+深入瞭解[模組](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=zh-Hant)。
 
 ## 範圍
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 ]
 ```
 
-深入瞭解[Commerce領域](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
+深入瞭解[Commerce領域](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
 
 ## 系統
 

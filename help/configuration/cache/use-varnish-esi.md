@@ -4,7 +4,7 @@ description: 瞭解Varnish Edge Side Include (ESI)以及如何內嵌Adobe Commer
 badge: label="康斯坦丁G供稿。" type="Informative" url="https://github.com/goivvy" tooltip="康斯坦丁G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 autotag-review: '2026-06-22T22:02:08.706Z'
 TQID: 'https://experienceleague.adobe.com/hzsfaZyHuUhzfb86anO43PfP-62WRPOoMbYOh-H1vqo'
 product_v2:

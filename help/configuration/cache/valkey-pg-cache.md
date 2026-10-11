@@ -3,7 +3,7 @@ title: 設定預設和頁面快取的Valkey
 description: 瞭解如何設定Valkey為Adobe Commerce的預設和頁面快取後端。 探索CLI命令、env.php設定和連線驗證。
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
+badgePaas: label="內部部署" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce內部部署專案。"
 autotag-review: '2026-06-22T22:00:55.389Z'
 TQID: 'https://experienceleague.adobe.com/AjJ86dYGRVFuY1T73ct1Gpcf6iDbb4ewP8OiGX8otQs'
 product_v2:
