@@ -1,16 +1,37 @@
 ---
 title: 在Adobe Commerce上管理警報：MariaDB警報
-description: 本文提供當您在 [!DNL New Relic]中收到Adobe Commerce的MariaDB警示時的疑難排解步驟。 MariaDB警報會監控高查詢負載以及過度的資料操作語言(DML)查詢。 兩者都可能導致使用者體驗降低甚至停機。 您可以接收兩種警報。
+description: 本文提供當您在[!DNL New Relic]中收到Adobe Commerce的MariaDB警示時的疑難排解步驟。 MariaDB警報會監控高查詢負載以及過度的資料操作語言(DML)查詢。 兩者都可能導致使用者體驗降低甚至停機。 您可以接收兩種警報。
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
 exl-id: d85af2e1-090c-4ad7-a898-3a3c4a5efe3b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
-
 ---
-
 # 在Adobe Commerce上管理警報：MariaDB警報
 
 本文提供當您在[!DNL New Relic]中收到Adobe Commerce的MariaDB警示時的疑難排解步驟。 MariaDB警報會監控高查詢負載以及過度的資料操作語言(DML)查詢。 兩者都可能導致使用者體驗降低甚至停機。 您可以接收兩種警報：
@@ -24,7 +45,7 @@ ht-degree: 0%
 
 ## 問題
 
-如果您已為Adobe Commerce[&#128279;](managed-alerts-for-magento-commerce.md)註冊了個Managed警示，且超過一或多個警示臨界值，則您將在[!DNL New Relic]中收到一個Managed警示。 這些警報由Adobe開發，可讓客戶運用支援和工程部門的見解獲得標準集合。
+如果您已為Adobe Commerce](managed-alerts-for-magento-commerce.md)註冊了[個Managed警示，且超過一或多個警示臨界值，則您將在[!DNL New Relic]中收到一個Managed警示。 這些警報由Adobe開發，可讓客戶運用支援和工程部門的見解獲得標準集合。
 
 **做！**
 
@@ -44,7 +65,7 @@ ht-degree: 0%
 
 如果您收到「DML查詢嚴重」警示，請從步驟1開始。 如果您收到「DML查詢警告」警示，請從步驟2開始。
 
-1. 檢查Adobe Commerce支援票證是否存在。 如需相關步驟，請參閱我們的知識庫[追蹤您的支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case)。 支援人員可能已收到[!DNL New Relic]臨界值警示、建立票證並開始處理問題。 如果票證不存在，請建立一個。 票證應具有下列資訊：
+1. 檢查Adobe Commerce支援票證是否存在。 如需相關步驟，請參閱我們的知識庫[追蹤您的支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case)。 支援人員可能已收到[!DNL New Relic]臨界值警示、建立票證並開始處理問題。 如果票證不存在，請建立一個。 票證應具有下列資訊：
    * 連絡原因：選取&#x200B;**[!UICONTROL New Relic MariaDB alert received]**。
    * 警示的說明。
    * [[!DNL New Relic] 事件連結](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents)。 這包含在您的[Adobe Commerce](managed-alerts-for-magento-commerce.md)受管理警示中。
@@ -56,4 +77,4 @@ ht-degree: 0%
    1. 尋找程式碼最佳化或作業最佳化：
       * 程式碼最佳化：透過大量插入/更新、減少索引使用或節流程式碼，將查詢最佳化。
       * 作業最佳化：解除安裝資源密集的資料修改，以縮短流量時間。
-      * 其他最佳化：確保您使用最新版的ECE-Tools。 如需相關步驟，請參閱Commerce on Cloud指南中的[更新ece-tools版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。
+      * 其他最佳化：確保您使用最新版的ECE-Tools。 如需相關步驟，請參閱Commerce on Cloud指南中的[更新ece-tools版本](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package)。

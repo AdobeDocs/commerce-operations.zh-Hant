@@ -2,13 +2,22 @@
 title: 加州消費者隱私保護法(CCPA)
 description: 瞭解加州消費者隱私法(CCPA)，該法擴充了加州消費者決定如何收集、儲存和使用其個人資訊的權利。
 exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '421'
 ht-degree: 0%
-
 ---
-
 # 加州消費者隱私保護法(CCPA)
 
 >[!NOTE]
@@ -26,7 +35,7 @@ CCPA授予消費者下列新權利：
 
 ## CCPA法規遵循
 
-制定及實作CCPA法規遵循計畫需要協調一致的努力。 我們鼓勵商戶組建跨職能團隊，並遵循[CCPA合規性指南](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=zh-Hant)中概述的藍圖，讓公司遵守法規。 身為開發人員，您可能會受邀以利害關係人身分參與，重點放在程式的步驟2到5。 如需詳細資訊，請參閱[CCPA法規遵循指南](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=zh-Hant)。
+制定及實作CCPA法規遵循計畫需要協調一致的努力。 我們鼓勵商戶組建跨職能團隊，並遵循[CCPA合規性指南](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html)中概述的藍圖，讓公司遵守法規。 身為開發人員，您可能會受邀以利害關係人身分參與，重點放在程式的步驟2到5。 如需詳細資訊，請參閱[CCPA法規遵循指南](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html)。
 
 1. 組建跨職能團隊以符合CCPA規定。
 

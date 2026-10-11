@@ -1,13 +1,22 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]最佳作法指南'
-description: 瞭解如何使用 [!DNL Adobe Commerce Patching Automation] 安全地規劃、驗證和套用修補程式，將部署風險和服務中斷降至最低。
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+description: 瞭解如何使用[!DNL Adobe Commerce Patching Automation]安全地規劃、驗證和套用修補程式，將部署風險和服務中斷降至最低。
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Commerce Patching Automation]最佳作法指南
 
 使用[!DNL Adobe Commerce Patching Automation]進行成功且安全的修補程式操作時，遵循最佳實務是必要的。 本指南提供全面的最佳實務，協助您有效執行修補程式操作、管理環境，以及實現卓越的營運效能。
@@ -23,11 +32,11 @@ ht-degree: 0%
 * **Adobe Commerce Cloud帳戶**
   * 作用中Adobe Commerce Cloud訂閱
   * 有效的Adobe Commerce授權
-  * [設定為存取Adobe Commerce存放庫的Composer驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
+  * [設定為存取Adobe Commerce存放庫的Composer驗證金鑰](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
   * 專案和環境許可權
 
 * **環境資源**
-  * 專案有能力為修補作業建立額外的作用中整合環境 — 請參閱[使用Cloud Console管理分支](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/console-branches)以取得有關作用中環境限制的資訊
+  * 專案有能力為修補作業建立額外的作用中整合環境 — 請參閱[使用Cloud Console管理分支](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches)以取得有關作用中環境限制的資訊
   * 足夠的儲存空間、CPU和記憶體資源
   * Adobe存放庫的網路存取權
   * 用於同步的穩定父環境

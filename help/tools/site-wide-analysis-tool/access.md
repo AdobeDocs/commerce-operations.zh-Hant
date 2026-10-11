@@ -1,19 +1,28 @@
 ---
-title: 如何存取 [!DNL Site-Wide Analysis Tool]
+title: 如何存取[!DNL Site-Wide Analysis Tool]
 description: 瞭解如何從Adobe Commerce管理面板存取全網站分析工具儀表板。 探索使用者許可權和角色需求。
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
-
 ---
-
 # 如何存取[!DNL Site-Wide Analysis Tool]
 
 您可以從商店的[!UICONTROL Admin Panel]存取[!DNL Site-Wide Analysis Tool]儀表板。
 
-[!DNL Site-Wide Analysis Tool]服務可在[生產模式](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/developer-tools#operation-modes)中供具有存取使用者[角色資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/user-accounts/permissions-user-roles)許可權的[!UICONTROL Admin]使用者使用。
+[!DNL Site-Wide Analysis Tool]服務可在[生產模式](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes)中供具有存取使用者[角色資源](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)許可權的[!UICONTROL Admin]使用者使用。
 
 >[!NOTE]
 >
@@ -31,7 +40,7 @@ ht-degree: 0%
 
 ### 步驟1：驗證許可權
 
-驗證[!UICONTROL Admin]使用者帳戶是否具有透過其[指派的使用者角色](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/user-accounts/permissions-user-roles)存取[!DNL Site-Wide Analysis Tool]的許可權。
+驗證[!UICONTROL Admin]使用者帳戶是否具有透過其[指派的使用者角色](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles)存取[!DNL Site-Wide Analysis Tool]的許可權。
 
 >[!IMPORTANT]
 >
@@ -50,7 +59,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您已驗證使用者帳戶具有存取[!DNL Site-Wide Analysis Tool]的許可權，且使用者嘗試從[!UICONTROL Admin]存取工具時收到403錯誤，則您在雲端基礎結構上的Adobe Commerce執行個體可能已啟用HTTP存取控制。 如果您已啟用HTTP驗證，則不支援[!DNL Site-Wide Analysis Tool]儀表板。 如需解決此問題的詳細資訊，請參閱我們的[支援文章](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-26852)。
+>如果您已驗證使用者帳戶具有存取[!DNL Site-Wide Analysis Tool]的許可權，且使用者嘗試從[!UICONTROL Admin]存取工具時收到403錯誤，則您在雲端基礎結構上的Adobe Commerce執行個體可能已啟用HTTP存取控制。 如果您已啟用HTTP驗證，則不支援[!DNL Site-Wide Analysis Tool]儀表板。 如需解決此問題的詳細資訊，請參閱我們的[支援文章](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26852)。
 
 ### 步驟2：存取[!DNL Site-Wide Analysis Tool]
 

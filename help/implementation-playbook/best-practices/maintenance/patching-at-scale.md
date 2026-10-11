@@ -5,13 +5,23 @@ role: Developer
 feature: Best Practices
 badge: label="由Adobe資深技術架構師Tony Evers撰寫" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="托尼·埃弗斯撰寫"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1361'
 ht-degree: 0%
-
 ---
-
 # 大規模散佈Adobe Commerce修補程式的最佳作法
 
 如果您管理多個Adobe Commerce安裝，[修補](../../../upgrade/patches/apply.md)可能會是一個複雜的程式。 _集中修補_&#x200B;是企業的最佳作法。 它可協助您在所有Adobe Commerce安裝上套用正確的修補程式。 本主題說明如何針對所有型別的Adobe Commerce [修補程式](../../../upgrade/patches/overview.md)達成集中式修補程式散佈。
@@ -33,8 +43,8 @@ ht-degree: 0%
 
 1. **安全性修補程式**&#x200B;是Adobe Commerce發行版本的靜態程式碼基底的一部分。
 1. **Composer修補程式**&#x200B;透過`composer install`和`composer update`外掛程式，例如[cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches)。
-1. 所有&#x200B;**必要的修補程式**&#x200B;包含在Commerce[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)封裝的雲端修補程式。
-1. 已選取包含在[[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md)中的&#x200B;**品質修補程式**。
+1. 所有&#x200B;**必要的修補程式**&#x200B;包含在Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)封裝的[雲端修補程式。
+1. 已選取包含在[!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md)中的&#x200B;**品質修補程式**。
 1. **自訂修補程式**&#x200B;以及`/m2-hotfixes`目錄中的Adobe Commerce支援修補程式，依修補程式名稱的字母順序排列。
 
    >[!IMPORTANT]
@@ -148,7 +158,7 @@ ht-degree: 0%
    ```
 
 
-上述程式碼範例中的`quality-patches`屬性包含[完整修補程式清單](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)中的兩個修補程式，以為例。  這些品質修補程式會使用`vendor/bin/magento-patches apply`命令安裝在需要`centralized-patcher`套件的每個專案上。
+上述程式碼範例中的`quality-patches`屬性包含[完整修補程式清單](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)中的兩個修補程式，以為例。  這些品質修補程式會使用`vendor/bin/magento-patches apply`命令安裝在需要`centralized-patcher`套件的每個專案上。
 
 您可以建立範例修補程式(`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`)以進行測試。
 
@@ -365,7 +375,7 @@ index 03a3bf9..681e0b0 100644
 
 如此一來，您可以集中管理所有安裝的所有修補程式，更能保證Adobe Commerce存放區的安全性和穩定性。 請使用下列方法檢查修正程式狀態：
 
-- [雲端基礎結構專案](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+- [雲端基礎結構專案](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 - [內部部署專案](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## 程式碼範例

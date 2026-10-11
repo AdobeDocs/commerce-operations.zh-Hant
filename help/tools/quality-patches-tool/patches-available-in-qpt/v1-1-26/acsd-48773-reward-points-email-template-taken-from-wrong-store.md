@@ -5,13 +5,36 @@ feature: Admin Workspace, Communications, Marketing Tools, Orders, Personalizati
 role: Admin
 exl-id: db8b6196-3e13-4c1b-8ae8-040487180817
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: 4069cee6-4dc8-5a83-81de-232af6a7c9e9
+    internal-label: Rewards
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
-
 ---
-
 # ACSD-48773：從錯誤的商店取得的獎勵點數電子郵件範本
 
 ACSD-48773修補程式修正了從錯誤商店取得獎勵點電子郵件範本的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.26時，即可使用此修補程式。 修補程式ID為ACSD-48773。 請注意，此問題已排程在Adobe Commerce 2.4.7中修正。
@@ -28,7 +51,7 @@ ACSD-48773修補程式修正了從錯誤商店取得獎勵點電子郵件範本�
 
 >[!NOTE]
 >
->此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
+>此修補程式可能適用於發行版本為[!DNL Quality Patches Tool]的其他版本。 若要檢查修補程式是否與您的Adobe Commerce版本相容，請將`magento/quality-patches`套件更新至最新版本，並在[[!DNL Quality Patches Tool]上檢查相容性：搜尋修補程式頁面](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。 使用修補程式ID作為搜尋關鍵字，以尋找修補程式。
 
 ## 問題
 
@@ -39,10 +62,10 @@ ACSD-48773修補程式修正了從錯誤商店取得獎勵點電子郵件範本�
 1. 建立2個網站、2個商店和2個商店檢視。
 1. 前往「**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Product Reviews]**」並啟用&#x200B;**[!UICONTROL Reviews]**。
 1. 前往&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Store Email Addresses]**。
-切換至&#x200B;**[!DNL default website scope]**，並設定&#x200B;**[!UICONTROL Customer Support Sender Email]**&#x200B;位址（例如： *support_base@example.com*）。
-切換至&#x200B;**[!DNL second website scope]**，並將&#x200B;**[!UICONTROL Customer Support Sender Email]**&#x200B;位址設定為另一個值（例如： *support_second@example.com*）。
+切換至**[!DNL default website scope]**，並設定&#x200B;**[!UICONTROL Customer Support Sender Email]**&#x200B;位址（例如： *support_base@example.com*）。
+切換至**[!DNL second website scope]**，並將&#x200B;**[!UICONTROL Customer Support Sender Email]**&#x200B;位址設定為另一個值（例如： *support_second@example.com*）。
 1. 前往&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Customer Configuration]** > **[!UICONTROL Account Sharing Options]** > **[!UICONTROL Share Customer Accounts]**，並設定&#x200B;**[!UICONTROL Share Customer Accounts]** = *每個網站*。
-1. 在&#x200B;**[!UICONTROL Reward Points]**&#x200B;底下，設定下列專案：
+1. 在&#x200B;**[!UICONTROL Reward Points]**底下，設定下列專案：
    **[!UICONTROL Enable Reward Points Functionality]** = *是*
    **[!UICONTROL Enable Reward Points Functionality on Storefront]** = *是*
    **[!UICONTROL Actions for Acquiring Reward Points by Customers]** > **[!UICONTROL Review Submission]**&#x200B;並設定&#x200B;**[!UICONTROL Review Submission]** = *150*
@@ -69,7 +92,7 @@ ACSD-48773修補程式修正了從錯誤商店取得獎勵點電子郵件範本�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 
@@ -79,4 +102,4 @@ ACSD-48773修補程式修正了從錯誤商店取得獎勵點電子郵件範本�
 * [使用[!UICONTROL Quality Patches Tool]指南中的 [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查您的Adobe Commerce問題是否有修補程式可用。
 
 
-如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。
+如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。

@@ -2,13 +2,22 @@
 title: 修補程式發行排程
 description: 了解 Adobe 規劃於何時公佈發行 Adobe Commerce 的新修補程式和安全性修正。
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 4%
-
 ---
-
 
 # 修補程式發行排程
 
@@ -18,7 +27,7 @@ Adobe持續努力在簡化產品升級且可預測之間取得適當的平衡，
 
 >[!NOTE]
 >
->若要進一步瞭解新功能、雲端基礎結構和擴充功能發行，請參閱[Adobe Commerce Services](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/release-information/release-notes-all)發行說明檔案。
+>若要進一步瞭解新功能、雲端基礎結構和擴充功能發行，請參閱[Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)發行說明檔案。
 
 除了此頁面上列出的排程品質、安全性及Beta版修補程式之外，Adobe還透過[品質修補程式工具](../tools/quality-patches-tool/usage.md)提供[個別修補程式](versioning-policy.md#individual-patch)的存取權。 此工具可讓您套用、還原及檢視已安裝Adobe Commerce版本可用的所有個別修補程式的一般資訊。
 
@@ -45,7 +54,7 @@ Adobe Commerce修補程式發行版本遵循下列准則：
 
 Adobe會透過下列管道，通知客戶有關新修補程式發行的資訊：
 
-- [Adobe安全性佈告欄和建議](https://helpx.adobe.com/tw/security/security-bulletin.html#magento)
+- [Adobe安全性佈告欄和建議](https://helpx.adobe.com/security/security-bulletin.html#magento)
 - 電子郵件
 - 產品內警示
 

@@ -3,13 +3,27 @@ title: 檔案系統存取許可權
 description: 瞭解如何為開發和生產系統設定Commerce應用程式檔案系統的擁有者或擁有者。
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
-
 ---
-
 # 檔案系統存取許可權
 
 本節探討如何為開發和生產系統設定Commerce檔案系統的擁有者或擁有者。 繼續之前，請檢閱[檔案系統擁有權和許可權概觀](../../installation/prerequisites/file-system/overview.md)中討論的概念。
@@ -24,9 +38,9 @@ ht-degree: 0%
 
   而是由不同的使用者組成：
 
-   - 執行管理員和店面的網頁伺服器使用者。
+  - 執行管理員和店面的網頁伺服器使用者。
 
-   - _命令列使用者_，您可用來登入伺服器的本機使用者帳戶。 這類使用者會執行Commerce cron作業和命令列公用程式。
+  - _命令列使用者_，您可用來登入伺服器的本機使用者帳戶。 這類使用者會執行Commerce cron作業和命令列公用程式。
 
 ## 共用託管的生產檔案系統所有權（單一使用者）
 

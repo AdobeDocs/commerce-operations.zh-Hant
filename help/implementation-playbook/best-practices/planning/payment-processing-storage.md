@@ -4,16 +4,26 @@ description: 瞭解如何在Adobe Commerce中安全地處理和儲存付款詳�
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
-
 ---
-
 # 付款處理與儲存的最佳作法
 
-維護[PCI法規遵循](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=zh-Hant)的重要原則之一，是擁有適當處理和儲存信用卡付款的策略。
+維護[PCI法規遵循](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html)的重要原則之一，是擁有適當處理和儲存信用卡付款的策略。
 
 在Adobe Commerce中儲存持卡人資料是&#x200B;**嚴格禁止的**，這麼做可能會違反您身為商家應盡的支付卡產業資料安全標準(PCI-DSS)義務。 在Adobe信任中心的[Adobe Commerce分擔責任模式指南](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf)中，可取得有關商戶責任的分擔責任模式和指引的詳細資訊。
 
@@ -53,4 +63,4 @@ ht-degree: 0%
 
 ## 其他資訊
 
-如果您正在尋找Adobe建議的付款解決方案，請考慮[Adobe付款服務](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=zh-Hant)。
+如果您正在尋找Adobe建議的付款解決方案，請考慮[Adobe付款服務](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html)。

@@ -1,14 +1,23 @@
 ---
 title: '[!DNL Information]'
-description: 瞭解[!UICONTROL Information]中的 [!DNL Site-Wide Analysis Tool]標籤、使用時機、其優點以及最佳實務。
+description: 瞭解[!DNL Site-Wide Analysis Tool]中的[!UICONTROL Information]標籤、使用時機、其優點以及最佳實務。
 exl-id: 5f18b4c1-1812-4e9d-8b81-88cf6b9af860
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '129'
 ht-degree: 0%
-
 ---
-
 # [!DNL Information]
 
 [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information]頁面會顯示您網站的概觀資訊。 此頁面還在左側導覽中顯示兩個產品區域： **[!UICONTROL General Information]**&#x200B;和&#x200B;**Adobe Commerce**。

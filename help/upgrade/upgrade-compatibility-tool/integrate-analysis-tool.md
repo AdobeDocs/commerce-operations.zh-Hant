@@ -1,14 +1,23 @@
 ---
-title: 整合 [!DNL Site-Wide Analysis Tool]
-description: 請依照下列步驟，從您Adobe Commerce專案的 [!DNL Site-Wide Analysis Tool] 儀表板擷取 [!DNL Upgrade Compatibility Tool] 報告。
+title: 整合[!DNL Site-Wide Analysis Tool]
+description: 請依照下列步驟，從您Adobe Commerce專案的[!DNL Site-Wide Analysis Tool]儀表板擷取[!DNL Upgrade Compatibility Tool]報告。
 exl-id: 1ef37294-a837-47a4-841c-4027087acf12
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '190'
 ht-degree: 0%
-
 ---
-
 # 整合[!DNL Site-Wide Analysis Tool]
 
 [!DNL Site-Wide Analysis Tool]提供24小時全年無休的即時效能監控、報告和建議，以確保Adobe Commerce執行個體的安全性和可操作性。

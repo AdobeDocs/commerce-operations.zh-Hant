@@ -7,23 +7,37 @@ autotag-review: '2026-06-22T20:28:12.484Z'
 TQID: 'https://experienceleague.adobe.com/oDoZ1o2IWXsDTo84XQygWZYVmfVHWbk-CuqaU47laU4'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 8c5dc151b00fd73e939c32fdc083fb0e8fc41dc8
+    internal-label: Implementation
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: 536
+source-wordcount: '536'
 ht-degree: 0%
-
 ---
-
 # 快取概述和設定選項
 
 Adobe Commerce使用多個快取層來減少重複處理、降低資料庫負載並改善回應時間。 這些層會在請求和資產傳送中的不同時間點作業：
@@ -56,7 +70,7 @@ Commerce應用程式快取的組織方式如下：
 HTTP全頁快取會在HTTP或CDN層儲存完整的回應。 對於生產部署：
 
 - **Adobe Commerce內部部署**—Adobe建議使用[Varnish](config-varnish.md)進行整頁快取。 Varnish在網頁伺服器前作為反向Proxy運作。
-- 雲端基礎結構上的&#x200B;**Adobe Commerce**&#x200B;使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"}作為邊緣和整頁快取階層。 雲端基礎結構不使用單獨管理的Varnish服務。
+- 雲端基礎結構上的&#x200B;**Adobe Commerce**&#x200B;使用[Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"}作為邊緣和整頁快取階層。 雲端基礎結構不使用單獨管理的Varnish服務。
 
 >[!NOTE]
 >
@@ -79,7 +93,7 @@ Commerce可透過將部署版本新增至靜態資源（例如CSS、JavaScript�
 | 任務 | 內部部署 | 雲端基礎結構 |
 | --- | --- | --- |
 | 應用程式快取後端 | [快取後端選項和儲存參考](cache-options.md) | [Valkey與Redis服務組態的最佳實務](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
-| HTTP全頁快取 | [設定亮漆](config-varnish.md) | [Fastly服務總覽](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly) |
+| HTTP全頁快取 | [設定亮漆](config-varnish.md) | [Fastly服務總覽](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
 下列工作適用於所有部署型別：
 

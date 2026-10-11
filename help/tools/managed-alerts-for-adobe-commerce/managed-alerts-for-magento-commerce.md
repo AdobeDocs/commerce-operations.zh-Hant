@@ -1,24 +1,41 @@
 ---
 title: Adobe Commerce的管理警報
-description: 如果您是雲端基礎結構專業版的Adobe Commerce規劃架構客戶，則可以使用受管理警報來瞭解您網站的健康情況。 如果您是雲端基礎結構入門計畫架構客戶的Adobe Commerce，您將只會收到 [!DNL Apdex] 和錯誤率條件的警示。
+description: 如果您是雲端基礎結構專業版的Adobe Commerce規劃架構客戶，則可以使用受管理警報來瞭解您網站的健康情況。 如果您是雲端基礎結構入門計畫架構客戶的Adobe Commerce，您將只會收到[!DNL Apdex]和錯誤率條件的警示。
 feature: Observability, Support, Tools and External Services
 role: Admin
 exl-id: 3fc4b07f-4e27-4833-97a9-cf9741ae5648
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '591'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce的管理警報
 
 
-我們設定了重要的儀表板和警示，協助您瞭解網站何時達到關鍵儲存空間和[!DNL Apdex]等級（使用者對應用程式和服務回應時間的滿意度）。 這可協助您在注意到回應時間緩慢或中斷之前採取行動。 您將能夠使用下列文章來疑難排解警示。 在使用警示之前，請先設定通知通道。 請參閱雲端上的Commerce指南中的[[!DNL New Relic] 設定通知通道](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)。
+我們設定了重要的儀表板和警示，協助您瞭解網站何時達到關鍵儲存空間和[!DNL Apdex]等級（使用者對應用程式和服務回應時間的滿意度）。 這可協助您在注意到回應時間緩慢或中斷之前採取行動。 您將能夠使用下列文章來疑難排解警示。 在使用警示之前，請先設定通知通道。 請參閱雲端上的Commerce指南中的[[!DNL New Relic] 設定通知通道](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)。
 
 >[!NOTE]
 >
->如果Adobe Commerce警示原則的已管理警示無法使用，可能是因為此帳戶是新建的或最近已設定[!DNL New Relic]。 每個星期二都會執行一個程式，將警示原則新增至這些帳戶。 下次程式執行後的第二天，您應該可以使用警示原則。 如果原則仍然遺失，[請提交Adobe Commerce支援請求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)並包含您的專案ID。
+>如果Adobe Commerce警示原則的已管理警示無法使用，可能是因為此帳戶是新建的或最近已設定[!DNL New Relic]。 每個星期二都會執行一個程式，將警示原則新增至這些帳戶。 下次程式執行後的第二天，您應該可以使用警示原則。 如果原則仍然遺失，[請提交Adobe Commerce支援請求](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)並包含您的專案ID。
 
 請參閱下表中的知識庫文章連結，提供這些警示的疑難排解步驟：
 
@@ -54,4 +71,4 @@ ht-degree: 0%
 
 ## 複查為受管理警示設定的警示臨界值
 
-您可以從您的New Relic帳戶檢閱為受管理警示設定的警示臨界值。 如需指示，請參閱[監視受管理警示的效能](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts)。
+您可以從您的New Relic帳戶檢閱為受管理警示設定的警示臨界值。 如需指示，請參閱[監視受管理警示的效能](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts)。

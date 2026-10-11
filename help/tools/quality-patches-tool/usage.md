@@ -4,7 +4,23 @@ description: 瞭解如何使用品質修補程式工具來套用和管理Adobe C
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 2b2ac06c54af242407ae4f3fbfb23180e6ec3ae8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -13,11 +29,11 @@ ht-degree: 0%
 
 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches)提供由Adobe和Magento Open Source社群開發的個別修補程式。 它可讓您套用、還原和檢視已安裝的Adobe Commerce版本可用的所有個別修補程式的一般資訊。 無論修補程式的開發者是誰，您都可以將修補程式套用至Adobe Commerce專案。 例如，您可以將社群開發的修補程式套用至Adobe Commerce專案。
 
-觀看此[技術影片](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=zh-Hant)，瞭解如何使用Adobe Commerce的Quality Patches Tool。
+觀看此[技術影片](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html)，瞭解如何使用Adobe Commerce的Quality Patches Tool。
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用個別修補程式](#apply-individual-patches)。 請參閱[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用個別修補程式](#apply-individual-patches)。 請參閱[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!WARNING]
 >
@@ -60,7 +76,7 @@ Adobe Commerce 2.3.5。
 狀態表格包括：
 
 - **型別**：
-  - `Optional` — [!DNL Quality Patches Tool]和[雲端基礎結構指南>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)套件中的所有修補程式都是Adobe Commerce安裝的選用專案。
+  - `Optional` — [!DNL Quality Patches Tool]和[雲端基礎結構指南>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)套件中的所有修補程式都是Adobe Commerce安裝的選用專案。
   - `Deprecated` — Adobe已棄用個別修補程式。 如果您已套用修補程式，建議您還原修補程式。 還原作業也會從狀態表中移除修正程式。
 
 - **狀態**：
@@ -81,7 +97,7 @@ Adobe Commerce 2.3.5。
 
 >[!WARNING]
 >
->最佳實務是在部署至生產環境之前，先在中繼或開發環境中測試所有修補程式。 也建議您在套用修補程式前先備份資料。 請參閱[備份及復原檔案系統、媒體及資料庫](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=zh-Hant)。
+>最佳實務是在部署至生產環境之前，先在中繼或開發環境中測試所有修補程式。 也建議您在套用修補程式前先備份資料。 請參閱[備份及復原檔案系統、媒體及資料庫](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html)。
 
 若要套用單一修補程式，請執行以下命令，其中`MAGETWO-XXXX`是狀態表格中指定的修補程式ID：
 
@@ -109,7 +125,7 @@ Adobe Commerce 2.3.5。
 
 >[!WARNING]
 >
->最佳實務是在部署至生產環境之前，先在中繼或開發環境中測試所有修補程式。 也建議您在套用修補程式前先備份資料。 請參閱[備份及復原檔案系統、媒體及資料庫](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=zh-Hant)。
+>最佳實務是在部署至生產環境之前，先在中繼或開發環境中測試所有修補程式。 也建議您在套用修補程式前先備份資料。 請參閱[備份及復原檔案系統、媒體及資料庫](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html)。
 
 若要還原單一修補程式，請執行以下命令，其中`MAGETWO-XXXX`是狀態表格中指定的修補程式ID：
 

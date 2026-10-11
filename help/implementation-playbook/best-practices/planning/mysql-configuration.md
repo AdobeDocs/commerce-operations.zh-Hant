@@ -4,13 +4,23 @@ description: 瞭解MySQL觸發器和從屬連線如何影響Commerce網站效能
 role: Developer
 feature: Best Practices
 exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
-
 ---
-
 # MySQL設定最佳實務
 
 >[!NOTE]
@@ -48,7 +58,7 @@ ht-degree: 0%
 
 - 如果您有在執行觸發程式時寫入某些資料的自訂觸發程式，請移動此邏輯以直接寫入稽核表格。 例如，在應用程式程式碼中新增其他查詢，然後在您打算為其建立觸發器的查詢後進行。
 - 檢閱現有的自訂觸發器，並考慮移除這些觸發器，然後直接從應用程式端寫入表格。 使用[`SHOW TRIGGERS` SQL陳述式](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html)檢查資料庫中現有的觸發程式。
-- 如需其他協助、問題或顧慮，[請提交Adobe Commerce支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+- 如需其他協助、問題或顧慮，[請提交Adobe Commerce支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
 
 ## 從屬連線
 
@@ -62,7 +72,7 @@ Adobe Commerce可以非同步讀取多個資料庫。 如果您預期部署在�
 
 ### 設定
 
-在雲端基礎結構上的Adobe Commerce中，您可以設定[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)變數，覆寫MYSQL從屬連線的預設設定。 將此變數設為`true`以自動使用資料庫的唯讀連線。
+在雲端基礎結構上的Adobe Commerce中，您可以設定[MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection)變數，覆寫MYSQL從屬連線的預設設定。 將此變數設為`true`以自動使用資料庫的唯讀連線。
 
 **若要啟用MySQL從屬連線**：
 

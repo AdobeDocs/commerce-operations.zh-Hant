@@ -3,13 +3,27 @@ title: 部署流程
 description: 瞭解Adobe Commerce生產環境的部署流程流程。 探索實現最高效能與可靠性的步驟。
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
-
 ---
-
 # 部署流程
 
 [!DNL Commerce]生產部署流程可協助存放區達到最大效能。
@@ -26,7 +40,7 @@ composer install --no-dev
 
 ## 預先處理相依性插入指示
 
-當您預先處理和編譯相依性插入(DI)指示時，Magento會：
+當您預先處理和編譯相依性插入(DI)指令時，Magento會：
 
 * 讀取及處理所有現有的組態
 * 分析類別之間的相依性

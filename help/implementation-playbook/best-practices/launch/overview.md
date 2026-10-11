@@ -3,13 +3,25 @@ title: 實作啟動階段
 description: 瞭解Adobe Commerce專案啟動階段的實作最佳實務。
 exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 1%
-
 ---
-
 # 啟動階段
 
 啟動階段包含下列活動：
@@ -28,9 +40,9 @@ ht-degree: 1%
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Adobe安全性通知服務](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | 訂閱Adobe安全性通知。 |
 | [保護您的Commerce網站和基礎結構](security-best-practices.md) | 強化Commerce安裝的安全性狀態，以保護Commerce的店面、管理員、基礎結構和資料免受未經授權的存取和網路攻擊。 |
-| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=zh-Hant) | 設定Google reCAPTCHA以取得管理員存取權，以及註冊客戶所啟動的各種店面動作。 |
+| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | 設定Google reCAPTCHA以取得管理員存取權，以及註冊客戶所啟動的各種店面動作。 |
 | [設定網頁爬蟲](robots-txt.md) | 將您的Adobe Commerce網站相關指示傳遞給網頁爬蟲。 |
-| [驗證安全性組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/launch/checklist) | 在雲端基礎結構網站上啟動Adobe Commerce之前，請先檢閱檢查清單專案。 |
+| [驗證安全性組態](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist) | 在雲端基礎結構網站上啟動Adobe Commerce之前，請先檢閱檢查清單專案。 |
 
 ## 效能監視
 

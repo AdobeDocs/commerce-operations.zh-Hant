@@ -3,13 +3,27 @@ title: 設定遠端儲存裝置的影像大小調整
 description: 藉由設定伺服器端影像大小調整來最佳化磁碟資源。
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '255'
 ht-degree: 0%
-
 ---
-
 # 設定遠端儲存裝置的影像大小調整
 
 依預設，Adobe Commerce支援在應用程式端調整影像大小。 不過，透過啟用「遠端儲存」模組，您可以使用Nginx將影像大小調整解除安裝到伺服器端，藉此節省磁碟資源並最佳化磁碟使用量。
@@ -34,7 +48,7 @@ ht-degree: 0%
 
 1. 在&#x200B;_目錄媒體URL格式_&#x200B;區段中，清除&#x200B;**[!UICONTROL Use system value]**。
 
-1. 在`Image optimization based on query parameters`目錄媒體URL格式&#x200B;**_欄位中選取_** URL。
+1. 在&#x200B;**_目錄媒體URL格式_**&#x200B;欄位中選取`Image optimization based on query parameters` URL。
 
 1. 按一下&#x200B;**[!UICONTROL Save Config]**。
 
@@ -52,7 +66,7 @@ ht-degree: 0%
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. 根據包含的範本`nginx.conf`檔案建立`nginx.conf.sample`檔案。 例如：
+1. 根據包含的範本`nginx.conf.sample`檔案建立`nginx.conf`檔案。 例如：
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {

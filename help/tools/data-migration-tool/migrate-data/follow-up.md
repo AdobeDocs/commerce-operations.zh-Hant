@@ -1,18 +1,27 @@
 ---
 title: 資料移轉後續追蹤
-description: 瞭解如何驗證Magento 1至Magento 2資料移轉是否成功，以及所有功能是否如預期般運作。
+description: 瞭解如何驗證您的Magento 1至Magento 2資料移轉是否成功，以及所有功能是否如預期般運作。
 exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
-
 ---
-
 # 資料移轉後續追蹤
 
-Magento 1的某些行為和邏輯在Magento 2中的實作方式不同。 [!DNL Data Migration Tool]會處理它。 有些移轉方面您應有所瞭解，有時您必須採取次要步驟，才能讓某些功能在移轉後順暢運作。
+Magento 1的某些行為和邏輯在Magento 2中的實施方式不同。 [!DNL Data Migration Tool]會處理它。 有些移轉方面您應有所瞭解，有時您必須採取次要步驟，才能讓某些功能在移轉後順暢運作。
 
 ## 資訊
 
@@ -26,7 +35,7 @@ Magento 1的某些行為和邏輯在Magento 2中的實作方式不同。 [!DNL D
 
 ### 銷售實體的新編號
 
-訂單、商業發票、出貨、銷退折讓單及RMA的參考編號依原樣移轉。 移轉後，將套用新的Magento 2編號指派規則。 新銷售實體的數字不同。
+訂單、商業發票、出貨、銷退折讓單及RMA的參考編號依原樣移轉。 移轉後，將套用新的Magento 2數字指派規則。 新銷售實體的數字不同。
 
 ## 步驟
 

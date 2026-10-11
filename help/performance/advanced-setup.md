@@ -2,13 +2,22 @@
 title: 進階設定
 description: 瞭解如何為Adobe Commerce進行進階設定。 探索逐步指示和設定需求。
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
-
 ---
-
 # 進階設定
 
 [!DNL Commerce]是高度彈性且可擴充的產品，包含各種規模商家的解決方案。 本節涵蓋設定[!DNL Commerce]以處理大量資料、極端負載和其他企業案例的最佳實務和建議。
@@ -99,7 +108,7 @@ bin/magento setup:db-schema:add-slave
 
 ## 提供媒體內容
 
-Magento並未提供任何特定的整合功能，以提供及傳遞媒體內容。 在Magento中可同時使用所有常用方法。
+Magento沒有提供任何特定的整合功能，以提供及傳遞媒體內容。 在Magento中可同時使用所有常用方法。
 
 提供媒體內容的最簡單方式是在[!DNL Varnish]伺服器上傳送和快取該內容。 此方法假設使用共用檔案系統來儲存媒體內容，或是使用指向[!DNL Varnish]的專用伺服器。
 

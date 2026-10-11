@@ -3,13 +3,40 @@ title: 企業參考架構
 description: 瞭解如何使用Adobe的最新可撰寫商務技術實施Adobe Commerce。
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce企業參考架構
 
 Adobe Commerce是體驗導向的平台，以獨特的方式搭配技術彈性與易用性，全都是為了建立卓越的體驗，推動業務成果。
@@ -26,29 +53,29 @@ Commerce已經進化，可滿足企業對效能、規模及安全性的需求。
 
 ## 雲端基礎
 
-[雲端基礎結構上的Adobe Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)是您Commerce實作的基礎。 它提供[安全](../../security-and-compliance/shared-responsibility.md)自動化託管平台，以及可在雲端原生環境中建立、部署、監控及管理Commerce應用程式的自助式方法。
+[雲端基礎結構上的Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)是您Commerce實作的基礎。 它提供[安全](../../security-and-compliance/shared-responsibility.md)自動化託管平台，以及可在雲端原生環境中建立、部署、監控及管理Commerce應用程式的自助式方法。
 
 請參閱下列雲端基礎技術詳細資訊：
 
-- [**擴充的架構**](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture) — 自動調整容量，以維持穩定、可預測的效能
-- [**多個環境**](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/pro-architecture) — 已預先布建PHP、MySQL (MariaDB)、Redis、RabbitMQ和支援的搜尋引擎技術，以開發、測試和部署您的網站
-- [**組態管理**](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/overview) — 可自訂的環境組態檔和命令列介面(CLI)，用於管理應用程式設定、路由、建置和部署動作以及通知。
-- [**以Git為基礎的工作流程**](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) — 在推送程式碼變更以進行快速開發和持續部署後，自動建置和部署
-- [**內建可觀察性**](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/monitor/performance) — 結合來自多個來源的記錄資料以幫助您管理網站效能和診斷問題的工具
+- [**擴充的架構**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture) — 自動調整容量，以維持穩定、可預測的效能
+- [**多個環境**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture) — 已預先布建PHP、MySQL (MariaDB)、Redis、RabbitMQ和支援的搜尋引擎技術，以開發、測試和部署您的網站
+- [**組態管理**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/overview) — 可自訂的環境組態檔和命令列介面(CLI)，用於管理應用程式設定、路由、建置和部署動作以及通知。
+- [**以Git為基礎的工作流程**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) — 在推送程式碼變更以進行快速開發和持續部署後，自動建置和部署
+- [**內建可觀察性**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) — 結合來自多個來源的記錄資料以幫助您管理網站效能和診斷問題的工具
 - [**全面的API涵蓋範圍**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/)及[REST](https://developer.adobe.com/commerce/webapi/rest) API，整合核心Commerce應用程式與協力廠商系統，並延伸Commerce功能
 
 ## 與Experience Cloud整合
 
-Adobe Commerce與所有Experience Cloud解決方案整合，以大規模提供[個人化商務體驗](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu)。
+Adobe Commerce與所有Experience Cloud解決方案整合，以大規模提供[個人化商務體驗](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu)。
 
-[Data Connection](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/overview)可解鎖有關購物者購買行為的深入分析，以便您可以使用其他Adobe Digital Experience產品跨所有管道建立個人化購物體驗。
+[Data Connection](https://experienceleague.adobe.com/en/docs/commerce/data-connection/overview)可解鎖有關購物者購買行為的深入分析，以便您可以使用其他Adobe Digital Experience產品跨所有管道建立個人化購物體驗。
 
 >[!NOTE]
 >
 >如需詳細資訊，請參閱下列資源：
 >
->- [數位體驗藍圖](https://experienceleague.adobe.com/zh-hant/docs/blueprints-learn/architecture/overview)，以取得更多技術細節。
->- 請參閱[個人化客戶體驗](https://experienceleague.adobe.com/zh-hant/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)。
+>- [數位體驗藍圖](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview)，以取得更多技術細節。
+>- 請參閱[個人化客戶體驗](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization)。
 
 
 ## 與協力廠商系統整合
@@ -70,20 +97,20 @@ Adobe提供下列開發人員工具，用於建立整合與自訂：
 
 >[!NOTE]
 >
->請參閱[現代方法：在Adobe Commerce中有效的擴充性](https://experienceleague.adobe.com/zh-hant/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)。
+>請參閱[現代方法：在Adobe Commerce中有效的擴充性](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility)。
 
 ## 店面服務
 
 Adobe提供一套豐富的智慧型可撰寫商品化服務，協助您支援關鍵業務目標。 這些服務也提供對大規模最佳化效能至關重要的應用程式開發介面。
 
-- [即時搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/overview) — 使用此AI支援的搜尋工具，為購物者提供更聰明、更快速且相關的結果。
-- [產品推薦](https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/overview) — 根據購物者行為、熱門趨勢、產品相似性等新增AI輔助推薦。
-- [目錄服務](https://experienceleague.adobe.com/zh-hant/docs/commerce/catalog-service/guide-overview) — 提供客戶最佳化的產品體驗，同時提升效能、改善擴充能力，並提高轉換率。
-- [付款服務](https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/guide-overview) — 提供多種付款方式，包括免息分期付款，以及付款處理、訂單和發票的單一檢視，以提升客戶滿意度。
+- [即時搜尋](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview) — 使用此AI支援的搜尋工具，為購物者提供更聰明、更快速且相關的結果。
+- [產品推薦](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/overview) — 根據購物者行為、熱門趨勢、產品相似性等新增AI輔助推薦。
+- [目錄服務](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview) — 提供客戶最佳化的產品體驗，同時提升效能、改善擴充能力，並提高轉換率。
+- [付款服務](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview) — 提供多種付款方式，包括免息分期付款，以及付款處理、訂單和發票的單一檢視，以提升客戶滿意度。
 
 ## Headless店面
 
 Headless商務是API優先的商務。 Adobe Commerce採用分離式架構，可透過GraphQL API層提供所有商務服務和資料，提供完整的Headless。 此架構可讓團隊獨立於核心應用程式開發前端，提供使用新興技術快速建立和測試新接觸點的靈活性。
 
-Adobe提供現代化的headless storefront技術，其優點與功能與[Edge Delivery Services](https://www.aem.live/home)相同，包含檔案式撰寫、效能優先的架構，以及現成可用的原生實驗。 它運用Adobe Commerce [店面服務](#storefront-services)的規模與效能，以及[插入式元件](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)的彈性和便利性，提供商務功能。
+Adobe提供現代化的headless storefront技術，其優點與功能與[Edge Delivery Services](https://www.aem.live/home)相同，包含檔案式撰寫、效能優先的架構，以及現成可用的原生實驗。 它運用Adobe Commerce [店面服務](#storefront-services)的規模與效能，以及[插入式元件](https://experienceleague.adobe.com/developer/commerce/storefront/)的彈性和便利性，提供商務功能。
 

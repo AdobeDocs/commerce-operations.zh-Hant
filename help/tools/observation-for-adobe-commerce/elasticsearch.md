@@ -1,18 +1,32 @@
 ---
 title: '[!UICONTROL Elasticsearch]索引標籤'
-description: 瞭解[!UICONTROL Elasticsearch]的 [!DNL Observation for Adobe Commerce]標籤。
+description: 瞭解[!DNL Observation for Adobe Commerce]的[!UICONTROL Elasticsearch]標籤。
 exl-id: e98d351d-b3b1-47bc-bc0d-f96ba9ec2b80
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 0%
-
+source-wordcount: '548'
+ht-degree: 1%
 ---
-
 # [!UICONTROL Elasticsearch]索引標籤
 
-## [!UICONTROL Cluster Status Summary]：
+## [!UICONTROL Cluster Status Summary]:
 
 ![叢集狀態摘要](../../assets/tools/cluster-status-summary.jpg)
 
@@ -84,7 +98,7 @@ ht-degree: 0%
 
 **[!UICONTROL Elasticsearch Errors]**&#x200B;框架顯示[!DNL Elasticsearch]錯誤，例如空間用完、從黃色切換到紅色狀態、所有分片都失敗、搜尋發生引數問題、版本錯誤以及所有節點都無法使用等。
 
-## [!UICONTROL Elasticsearch Unassigned Shards]：
+## [!UICONTROL Elasticsearch Unassigned Shards]:
 
 ![Elasticsearch未指派的分片](../../assets/tools/elasticsearch-unassigned-shards.jpg)
 

@@ -3,13 +3,32 @@ title: 在CentOS上設定記憶體快取
 description: 瞭解如何在CentOS上安裝並設定Memcached以供Adobe Commerce快取。 探索設定指示和最佳化秘訣。
 feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '598'
 ht-degree: 0%
-
 ---
-
 # 在CentOS上設定記憶體快取
 
 本節提供在CentOS上安裝記憶體快取的說明。 如需其他資訊，請參閱[memcached wiki](https://github.com/memcached/old-wiki)。
@@ -21,11 +40,11 @@ ht-degree: 0%
 因為PHP對memcache沒有原生支援，所以您必須安裝擴充功能以供PHP使用。 有兩個可用的PHP擴充功能，請務必解碼要使用哪個：
 
 - `memcache` (_no d_) — 不是定期維護的舊版但常用的擴充功能。
-`memcache`延伸模組目前&#x200B;_不適用於PHP 7。_ 請參閱memcache[&#128279;](https://www.php.net/manual/en/book.memcache.php)的PHP檔案。
+`memcache`延伸模組目前&#x200B;_不適用於PHP 7。_ 請參閱memcache](https://www.php.net/manual/en/book.memcache.php)的[PHP檔案。
 
   CentOS的確切名稱是`php-pecl-memcache`。
 
-- `memcached` （_具有`d`_） — 與PHP 7相容的較新且已維護的擴充功能。 請參閱memcached[&#128279;](https://www.php.net/manual/en/book.memcached.php)的PHP檔案。
+- `memcached` （_具有`d`_） — 與PHP 7相容的較新且已維護的擴充功能。 請參閱memcached](https://www.php.net/manual/en/book.memcached.php)的[PHP檔案。
 
   CentOS的確切名稱是`php-pecl-memcached`。
 

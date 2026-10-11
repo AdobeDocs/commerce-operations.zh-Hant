@@ -16,7 +16,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ec5bfb45c2c170168c0e30a8c2197ba3ab58ccfe
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '33143'
 ht-degree: 0%
@@ -27,7 +29,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
@@ -178,7 +180,7 @@ ht-degree: 0%
 * **ACP2E-4732** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8） — 修正當changelog表格中的version_id欄達到最大值時，有大量更新的客戶停止部分索引的問題。
 * **ACP2E-4763** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正當「目錄價格」設定為「包含稅捐」時，由於套用兩次稅捐，GraphQL customerOrders查詢會傳回膨脹的original_price_include_tax和original_row_total_include_tax值的問題。
 * **ACSD-60989** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8） — 修正透過宣告式結構描述修改具有外部索引鍵的欄時，在MariaDB上造成錯誤的問題。
-* 已更新的版本： **ACSD-59280**、**ACSD-45255**、**ACSD-50336**、**ACSD-49737**、**ACSD-50849**、**ACSD-53750**、**ACSD-55031**、**ACSD-51819**、**ACSD-55628**、**ACSD-54965-V2** **ACSD-56546**、**ACSD-61756**、**ACSD-68040**、**ACSD-62708**、**ACSD-63283**、**ACSD-64732**、**ACSD-65775**、**ACSD-66965**、**ACP2E-4050&lbrace;37**
+* 已更新的版本： **ACSD-59280**、**ACSD-45255**、**ACSD-50336**、**ACSD-49737**、**ACSD-50849**、**ACSD-53750**、**ACSD-55031**、**ACSD-51819**、**ACSD-55628**、**ACSD-54965-V2** **ACSD-56546**、**ACSD-61756**、**ACSD-68040**、**ACSD-62708**、**ACSD-63283**、**ACSD-64732**、**ACSD-65775**、**ACSD-66965**、**ACP2E-4050{37**
 * 已取代的修補程式： **ACSD-58446**，**ACSD-67904**
 
 ## v1.1.77 {#v1-1-77}
@@ -757,7 +759,7 @@ ht-degree: 0%
 * **ACSD-54776** （適用於Adobe Commerce >=2.4.5 &lt;2.4.7） — 修正未勾選的&#x200B;*[!UICONTROL Use Default Value]*&#x200B;及未儲存第二個網站、商店和商店檢視的非預設產品欄位值的問題。
 * **ACSD-53998** （適用於Adobe Commerce和Magento Open Source >=2.4.4-p2 &lt;2.4.5） || >=2.4.5-p1 &lt;2.4.7) — 修正從客戶帳戶登出後，以&#x200B;**[!UICONTROL Customer Segment]**&#x200B;為基礎的&#x200B;**[!UICONTROL Dynamic Block]**&#x200B;無法正常運作的問題。
 * **ACSD-53204** （適用於Adobe Commerce和Magento Open Source >=2.4.6 &lt;2.4.7） — 修正&#x200B;*無法儲存產品。* 同時要求使用`rest/V1/products/<sku>/media`端點將影像新增至產品相簿時發生錯誤。
-* **ACSD-47657** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7） — 已新增AWS憑證的快取機制。 認證提供者現在會使用Magento快取來快取從AWS擷取的認證，以進行EC2設定。
+* **ACSD-47657** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.7） — 已新增AWS憑證的快取機制。 憑證提供者現在會使用Magento快取來快取從AWS擷取的憑證，以進行EC2設定。
 * 更新修補程式：ACSD-51984、ACSD-51574。
 
 ## v1.1.38 {#v1-1-38}
@@ -1107,7 +1109,7 @@ ht-degree: 0%
 * **MDVA-44887** （*用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.5*） — 修正&#x200B;*Uncaught SyntaxError： Admin面板中意外的權杖&#39;const&#39;*&#x200B;錯誤。
 * **MDVA-43718** （*用於Adobe Commerce和Magento Open Source >=2.3.0 &lt;2.4.5*） — 修正&#x200B;*消費者無權存取%資源。* 從自訂整合存取共用目錄時顯示的錯誤。
 * **MDVA-44660** （*適用於Adobe Commerce和Magento Open Source >=2.4.2-p1 &lt;2.4.5*） — 修正重音符號字元(\&#39;)無法用於客戶名字和姓氏的問題。
-* **MDVA-40896** （*用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.4*） — 修正&#x200B;*錯誤： TypeError：傳遞至Magento的引數3非同步產品批次API中出現*&#x200B;錯誤。
+* **MDVA-40896** （*用於Adobe Commerce和Magento Open Source >=2.4.3 &lt;2.4.4*） — 修正&#x200B;*錯誤： TypeError：引數3傳遞給Magento*&#x200B;非同步產品批次API中的錯誤。
 * **MDVA-38559** （*適用於Adobe Commerce和Magento Open Source >=2.4.0 &lt;2.4.3*） — 修正具有多個訂閱之客戶的&#x200B;*/V1/customers/search API*&#x200B;錯誤。
 * **MDVA-44533** （*適用於Adobe Commerce和Magento Open Source >=2.3.1 &lt;2.4.4*） — 修正錯誤將折扣套用至套件組合子產品的問題。
 * 更新修補程式：MDVA-41061、MDVA-42269。

@@ -3,13 +3,25 @@ title: 實作維護階段
 description: 瞭解Adobe Commerce專案維護階段的實作最佳實務。
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 2%
-
 ---
-
 # 維護階段
 
 維護階段包含下列活動：
@@ -71,9 +83,9 @@ ht-degree: 2%
 | 最佳實務 | 說明 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [稽核前端效能](frontend-performance.md) | 使用網站效能工具，識別並解決對網站效能產生負面影響的問題。 |
-| [就緒，設定，維護](https://business.adobe.com/tw/blog/basics/ready-set-maintain) | 維護您的Adobe Commerce網站以最大化業務價值和運作時間的秘訣。 |
+| [就緒，設定，維護](https://business.adobe.com/blog/basics/ready-set-maintain) | 維護您的Adobe Commerce網站以最大化業務價值和運作時間的秘訣。 |
 | [使用 [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | 在一個地方檢視您的Adobe Commerce網站的重要深入分析。 |
-| [監視效能、磁碟空間和記錄](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/monitor/performance) | 使用New Relic在雲端基礎結構網站上監視有關您Adobe Commerce的關鍵效能深入分析。 |
+| [監視效能、磁碟空間和記錄](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) | 使用New Relic在雲端基礎結構網站上監視有關您Adobe Commerce的關鍵效能深入分析。 |
 | [回應安全性事件](respond-to-security-incident.md) | 使用New Relic在雲端基礎結構網站上監視有關您Adobe Commerce的關鍵效能深入分析。 |
 
 ### 升級

@@ -4,13 +4,23 @@ description: 瞭解如何使用「robots.txt」和「sitemap.xml」檔案，將�
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
-
 ---
-
 
 # 設定網頁爬蟲的最佳作法
 
@@ -35,7 +45,7 @@ ht-degree: 0%
 
 設定單一網站店面的`robots.txt`和`sitemap.xml`檔案時，請遵循下列最佳實務：
 
-- 確定您的專案使用[`ece-tools`](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package) 2002.0.12版或更新版本。
+- 確定您的專案使用[`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package) 2002.0.12版或更新版本。
 - 使用Admin應用程式新增內容至`robots.txt`檔案。
 
   >[!TIP]
@@ -64,12 +74,12 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需詳細指示，請參閱[新增網站地圖和搜尋引擎自動機制](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/robots-sitemap)。
+>如需詳細指示，請參閱[新增網站地圖和搜尋引擎自動機制](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/robots-sitemap)。
 
 
 ### 多網站店面
 
-您可以在雲端基礎結構上透過單一實施Adobe Commerce來設定和執行數個存放區。 請參閱[設定多個網站或商店](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)。
+您可以在雲端基礎結構上透過單一實施Adobe Commerce來設定和執行數個存放區。 請參閱[設定多個網站或商店](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)。
 
 為[單一網站店面](#single-site-storefronts)設定`robots.txt`和`sitemap.xml`檔案的相同最佳實務適用於具有兩個重要差異的多網站店面：
 
@@ -93,7 +103,7 @@ ht-degree: 0%
 
 ## Adobe Commerce內部部署
 
-使用管理應用程式來設定`robots.txt`和`sitemap.xml`檔案，以防止機器人掃描和索引不必要的內容（請參閱[搜尋引擎機器人](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=zh-Hant#search-engine-robots)）。
+使用管理應用程式來設定`robots.txt`和`sitemap.xml`檔案，以防止機器人掃描和索引不必要的內容（請參閱[搜尋引擎機器人](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)）。
 
 >[!TIP]
 >
@@ -103,15 +113,15 @@ ht-degree: 0%
 
 請勿在您的`robots.txt`檔案中公開您的管理員路徑。 公開管理員路徑是網站駭客活動的弱點，且可能會遺失資料。 從`robots.txt`檔案中移除管理員路徑。
 
-如需編輯`robots.txt`檔案及移除管理員路徑之所有專案的步驟，請參閱[行銷使用手冊> SEO與搜尋>搜尋引擎機器人](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=zh-Hant#search-engine-robots)。
+如需編輯`robots.txt`檔案及移除管理員路徑之所有專案的步驟，請參閱[行銷使用手冊> SEO與搜尋>搜尋引擎機器人](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)。
 
 >[!TIP]
 >
->若您需要協助，請[提交Adobe Commerce支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
+>若您需要協助，請[提交Adobe Commerce支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)。
 
 ## 其他資訊
 
-- [瞭解網站、商店和商店檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
-- [新增網站](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [使用Fastly封鎖您Adobe Commerce網站的惡意流量](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
-- [robots.txt在雲端基礎結構2.3.x上的Adobe Commerce中出現404錯誤](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-26885)
+- [瞭解網站、商店和商店檢視](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [新增網站](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [使用Fastly封鎖您Adobe Commerce網站的惡意流量](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+- [robots.txt在雲端基礎結構2.3.x上的Adobe Commerce中出現404錯誤](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26885)

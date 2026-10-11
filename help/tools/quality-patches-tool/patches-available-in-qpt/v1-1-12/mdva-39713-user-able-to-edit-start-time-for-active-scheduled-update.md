@@ -1,17 +1,27 @@
 ---
 title: MDVA-39713：使用者可以編輯作用中排程更新的開始時間
-description: MDVA-39713修補程式修正使用者可編輯作用中排程更新之開始時間的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12後，即可使用此修補程式。 修補程式ID為MDVA-39713。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
+description: MDVA-39713修補程式修正使用者可編輯作用中排程更新之開始時間的問題。 安裝[Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12後，即可使用此修補程式。 修補程式ID為MDVA-39713。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
 feature: CMS
 role: Admin
 exl-id: 450a968f-a5ed-478f-a857-579fea1eb3b7
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
-
 ---
-
 # MDVA-39713：使用者可以編輯作用中排程更新的開始時間
 
 MDVA-39713修補程式修正使用者可編輯作用中排程更新之開始時間的問題。 安裝[品質修補工具(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.12時，即可使用此修補程式。 修補程式ID為MDVA-39713。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。
@@ -40,7 +50,7 @@ MDVA-39713修補程式修正使用者可編輯作用中排程更新之開始時�
 1. 選取&#x200B;**排程新更新**&#x200B;並將&#x200B;**開始日期**&#x200B;設定為目前的+1分鐘。
 1. 在本機環境中執行命令`bin/magento cron:run --group=staging`以啟動排程更新。 請等候數分鐘，然後檢查排程是否作用中。
 1. 排程啟動後，請重新整理頁面。
-1. 按一下[排程變更]區段中的&lbrack;檢視/編輯&#x200B;**&#x200B;**。
+1. 按一下[排程變更]區段中的[檢視/編輯&#x200B;****。
 1. 新增+2分鐘以編輯時間並儲存變更。
 1. 儲存CMS頁面。
 1. 再次執行以下命令： `bin/magento cron:run --group=staging`。
@@ -59,7 +69,7 @@ MDVA-39713修補程式修正使用者可編輯作用中排程更新之開始時�
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 
@@ -68,4 +78,4 @@ MDVA-39713修補程式修正使用者可編輯作用中排程更新之開始時�
 * [已發行品質修補程式工具：支援知識庫中可自助提供品質修補程式](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)的新工具。
 * [使用[!DNL Quality Patches Tool]指南中的「品質修補工具」](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)，檢查是否有修補程式可用於您的Adobe Commerce問題。
 
-如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)。
+如需QPT中其他修補程式的詳細資訊，請參閱[!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)。

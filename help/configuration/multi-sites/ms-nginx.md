@@ -2,13 +2,22 @@
 title: 使用Nginx設定多個網站
 description: 按照本教學課程中的說明使用Nginx設定多個網站。
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
-
 ---
-
 # 使用Nginx設定多個網站
 
 我們假設：
@@ -17,7 +26,7 @@ ht-degree: 0%
 
   在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
 
-  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個網站或商店](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)。
+  在雲端基礎結構上設定Adobe Commerce需要其他工作。 完成本主題中討論的工作後，請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個網站或商店](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)。
 
 - 您在一個虛擬主機檔案中接受多個網域，或每個網站使用一個虛擬主機；虛擬主機組態檔位於`/etc/nginx/sites-available`。
 - 您僅使用本教學課程中討論的修改內容，再使用Commerce提供的`nginx.conf.sample`。
@@ -105,7 +114,7 @@ ht-degree: 0%
    ln -s /etc/nginx/sites-available/magento magento
    ```
 
-如需有關對應指示詞的詳細資訊，請參閱對應指示詞[&#128279;](http://nginx.org/en/docs/http/ngx_http_map_module.html#map)上的nginx檔案。
+如需有關對應指示詞的詳細資訊，請參閱對應指示詞](http://nginx.org/en/docs/http/ngx_http_map_module.html#map)上的[nginx檔案。
 
 
 **若要建立多個虛擬主機**：
@@ -280,7 +289,7 @@ bin/magento cache:clean config full_page
 >[!INFO]
 >
 >- 在託管環境中部署多個網站可能需要執行其他工作；請洽詢您的託管提供者，以取得詳細資訊。
->- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個雲端網站或商店](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)。
+>- 在雲端基礎結構上設定Adobe Commerce需要其他工作；請參閱&#x200B;_雲端基礎結構上的Commerce指南_&#x200B;中的[設定多個雲端網站或商店](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)。
 
 ### 疑難排解
 

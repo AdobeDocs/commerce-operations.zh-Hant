@@ -3,13 +3,27 @@ title: 密碼雜湊處理
 description: 瞭解Adobe Commerce中的密碼雜湊技術、支援的演演算法（例如Argon2和SHA256），以及舊版雜湊如何升級而不變更密碼。
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
-
 ---
-
 # 密碼雜湊處理
 
 目前，Commerce根據不同的原生PHP雜湊演演算法，使用自己的密碼雜湊策略。 Commerce支援多種演演算法，例如`MD5`、`SHA256`或`Argon 2ID13`。 如果已安裝Na擴充功能（預設安裝在PHP 7.3中），則選擇`Argon 2ID13`作為預設雜湊演演算法。 否則，`SHA256`為預設值。 Commerce可以使用原生PHP `password_hash`函式並支援Argon 2i演演算法。

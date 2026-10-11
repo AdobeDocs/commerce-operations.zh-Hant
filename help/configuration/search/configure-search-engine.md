@@ -3,23 +3,38 @@ title: 搜尋引擎設定
 description: 設定Adobe Commerce內部部署的搜尋引擎。
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
-
 ---
-
 # 搜尋引擎設定
 
 本節探討測試Elasticsearch或OpenSearch與Adobe Commerce內部部署時必須選擇的最低設定。
 
 >[!TIP]
 >
->在2.4.4和2.4.3-p2版中，所有標示為&#x200B;**Elasticsearch**&#x200B;的欄位也適用於OpenSearch。
+>在2.4.4和2.4.3-p2版中，所有標示為&#x200B;**Elasticsearch**的欄位也適用於OpenSearch。
 >當版本2.4.6中引入Elasticsearch 8.x支援時，已建立新標籤以區分Elasticsearch和OpenSearch設定。
 
-如需設定搜尋引擎的詳細資訊，請參閱[使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=zh-Hant)。
+如需設定搜尋引擎的詳細資訊，請參閱[使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html)。
 
 ## 從管理員設定搜尋引擎
 

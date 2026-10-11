@@ -1,29 +1,43 @@
 ---
 title: 資料移轉最佳實務
-description: 請依照這些資料移轉最佳實務，確保成功從Magento 1升級至Magento 2。
+description: 請依照這些資料移轉最佳實務，以確保成功從Magento 1升級至Magento 2。
 exl-id: 0cd51987-a514-434d-b21e-2739ada2ce85
 feature: Best Practices, Configuration
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '219'
 ht-degree: 0%
-
 ---
-
 # 資料移轉最佳實務
 
 本節提供加速及簡化移轉的最佳建議，以及可能需要多久時間的指引。
 
 * **執行移轉測試時，請使用Magento 1執行個體的資料庫復本**。 請勿使用Magento 1存放區資料庫的生產執行個體。
 
-* **在移轉之前，先從您的Magento 1資料庫移除過時的多餘資料**。
+* **在移轉之前，從您的Magento 1資料庫移除過時和備援的資料**。
 
 這類資料可能包括記錄、訂單報價、最近檢視或比較的產品、訪客、事件特定類別和促銷規則。
 
 * **請遵循[一般規則以成功移轉](migrate-data/overview.md#migration-overview)**。
 
-* 若要提升效能，請&#x200B;**啟用您`direct_document_copy`檔案中的**&#x200B;選項`config.xml`：
+* 若要提升效能，請&#x200B;**啟用您`config.xml`檔案中的`direct_document_copy`選項**：
 
   ```xml
   <direct_document_copy>1</direct_document_copy>

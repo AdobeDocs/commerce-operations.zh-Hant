@@ -2,13 +2,22 @@
 title: 驗證安裝
 description: 請依照下列步驟，確認您內部部署的Adobe Commerce安裝成功。
 exl-id: 0bd7ec01-c616-4384-ae26-db2ce3668caf
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '264'
 ht-degree: 0%
-
 ---
-
 # 驗證安裝
 
 使用網頁瀏覽器前往店面。 例如，如果您的安裝基底URL是`http://www.example.com`，請在瀏覽器的位址或位置列中輸入它。

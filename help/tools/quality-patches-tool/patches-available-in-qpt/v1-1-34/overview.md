@@ -1,17 +1,30 @@
 ---
 title: 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.34
-description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.34中可用修補程式所修正問題的詳細說明。
+description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.34中可用修補程式所修正問題的詳細說明。
 feature: Tools and External Services
 role: Admin
 exl-id: d6cc3161-802c-4a1a-95b1-1eb85715643b
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '285'
 ht-degree: 0%
-
 ---
-
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.34
 
 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.34中可用修補程式所修正問題的詳細說明。
@@ -24,7 +37,7 @@ QPT v1.1.34包含下列修補程式：
 1. **ACSD-51853**：修正使用[!DNL Page Builder]時未套用複製文字樣式的問題。
 1. **ACSD-52160**：修正未根據規則條件&#x200B;*如果在購物車中找到/找不到專案，且所有條件皆為true*，正確評估購物車價格規則之產品驗證結果的問題。
 1. **ACSD-51636**：修正管理員無法從客戶帳戶區段新增使用者（儘管擁有所有必要的角色和許可權）的問題。
-1. **ACSD-51739**：修正在`structure_id` GraphQL要求中要求`CompanyTeam`時傳回錯誤的問題。
+1. **ACSD-51739**：修正在`CompanyTeam` GraphQL要求中要求`structure_id`時傳回錯誤的問題。
 1. **ACSD-51857**：修正`aggregate_sales_report_bestsellers_data` cron報告效能緩慢影響大型`sales_order`和`sales_order_item`資料庫資料表的問題。
 1. **ACSD-48448**：修正取消訂單期間發生競爭條件問題，而此問題會造成&#x200B;*inventory_reservation*&#x200B;表格中出現重複專案的問題。
 1. **ACSD-52689**：修正無法使用REST API將影像上傳至[!DNL Amazon S3]儲存空間的問題。

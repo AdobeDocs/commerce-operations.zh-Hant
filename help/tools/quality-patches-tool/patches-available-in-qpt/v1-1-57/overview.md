@@ -1,17 +1,32 @@
 ---
 title: 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.57
-description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.57中可用修補程式所修正問題的詳細說明。
+description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.57中可用修補程式所修正問題的詳細說明。
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 3e252a71-f35f-4046-9353-169060451ffe
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
-
 ---
-
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.57
 
 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.57中可用修補程式所修正問題的詳細說明。
@@ -21,7 +36,7 @@ QPT v1.1.57包含下列修補程式：
 1. **ACSD-57570**：修正具有特定商店存取權的受限管理員使用者無法一律看見產品所指派的所有共用目錄，或無法看見客戶儲存，導致系統不一致的問題。
 1. **ACSD-58325**：修正[!UICONTROL Import]按鈕在驗證錯誤後仍可用的問題。
 1. **ACSD-59083**：修正某些資料庫更新作業導致&#x200B;_找不到基底資料表或檢視的問題_&#x200B;錯誤（如果[!DNL mview]更新同時執行）。
-1. **ACSD-61622**：修正回應中缺少[!DNL FedEx]帳戶特定費率的問題。 ACSD-61622取代[[!DNL FedEx] 送貨方法整合從 [!DNL SOAP] 移轉至 [!DNL RESTful API]](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27131)中記錄的修正。
+1. **ACSD-61622**：修正回應中缺少[!DNL FedEx]帳戶特定費率的問題。 ACSD-61622取代[[!DNL FedEx] 送貨方法整合從 [!DNL SOAP] 移轉至 [!DNL RESTful API]](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27131)中記錄的修正。
 1. **ACSD-61895**：修正即使根類別沒有&#x200B;*允許*&#x200B;許可權，類別[!DNL GraphQL]查詢傳回具有&#x200B;*允許*&#x200B;許可權的類別的問題。
 1. **ACSD-62212**：修正[!UICONTROL Forgot Password]電子郵件內容未翻譯成商店檢視語言的問題。
 1. **ACSD-62481**：修正即使啟用[!UICONTROL Persistence]，客戶的購物車還是空白的問題。

@@ -1,15 +1,29 @@
 ---
 title: '[!UICONTROL bots]索引標籤'
-description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL bots]標籤。
+description: 瞭解[!DNL Observation for Adobe Commerce]的[!UICONTROL bots]標籤。
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL bots]索引標籤
 
 此索引標籤包含說明如何識別[!DNL bots]是否和什麼導致網站問題的資訊。
@@ -38,7 +52,7 @@ ht-degree: 0%
 
 **[!UICONTROL Experimental Potential Malicious Bots frame]**&#x200B;框架會執行12個不同的複雜查詢。 它會偵測惡意IP要求籤章，然後彙總結果，並以遞減順序加總及排序結果。 查詢包含CVE利用漏洞攻擊和其他惡意要求的許多資料簽章。 即使安全性修正/修補程式封鎖了利用漏洞，且對網站沒有威脅，該請求仍必須由網站處理。 要求數量可能會在短時間內變得相當大。 此框架不會顯示來自IP位址的總請求數，而是顯示有訊號指出請求具有可疑意圖的要求。
 
-請確定該流量為可疑流量，且並非源自可能傳送有效請求的[!DNL Content Distributed Network] (CDN)位址。 如果判斷要求來自CDN IP位址，請連絡該服務供應商，協助封鎖透過其網路的可疑流量。 如果您需要封鎖位址或要求URL，請參閱Adobe Commerce支援知識庫中的[在 [!DNL Fastly] 層級](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level)封鎖Adobe Commerce的惡意流量。
+請確定該流量為可疑流量，且並非源自可能傳送有效請求的[!DNL Content Distributed Network] (CDN)位址。 如果判斷要求來自CDN IP位址，請連絡該服務供應商，協助封鎖透過其網路的可疑流量。 如果您需要封鎖位址或要求URL，請參閱Adobe Commerce支援知識庫中的[在 [!DNL Fastly] 層級](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level)封鎖Adobe Commerce的惡意流量。
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 

@@ -4,13 +4,25 @@ description: 瞭解設定購物車限制和產品屬性，以及列出分頁、�
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
-
 ---
-
 # 目錄管理最佳實務
 
 此處說明的目錄管理最佳實務涵蓋一系列問題，包括（但不限於）：
@@ -100,7 +112,7 @@ ht-degree: 0%
 
 #### 檢閱屬性集組態
 
-1. [連線到站台資料庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database)。
+1. [連線到站台資料庫](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database)。
 
 1. 使用MySQL尋找屬性集數目
 
@@ -179,7 +191,7 @@ ht-degree: 0%
 
 如果類別中有太多產品，請更新storefront類別目錄組態以停用選項&#x200B;**允許每頁所有產品**。
 
-停用此選項後，Adobe Commerce會使用列出店面分頁控制項的產品清單，來管理顯示在店面元件中的產品數量。 如需指示，請參閱[設定分頁控制項](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=zh-Hant#configure-the-pagination-controls)。
+停用此選項後，Adobe Commerce會使用列出店面分頁控制項的產品清單，來管理顯示在店面元件中的產品數量。 如需指示，請參閱[設定分頁控制項](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls)。
 
 ## 產品SKU限制
 

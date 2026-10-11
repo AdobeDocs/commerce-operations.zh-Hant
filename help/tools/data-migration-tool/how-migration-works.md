@@ -1,27 +1,36 @@
 ---
 title: 資料移轉的運作方式
-description: 瞭解Magento 1與Magento 2之間的資料移轉程式，包括術語、工作流程圖表和步驟。
+description: 瞭解Magento 1和Magento 2之間的資料移轉程式，包括術語、工作流程圖表和步驟。
 exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
 topic: Commerce, Migration
-source-git-commit: 65ee7e84800c781577b1e210971a62b430d6300a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 0%
-
 ---
-
 # 資料移轉的運作方式
 
-本主題提供如何使用[!DNL Data Migration Tool]將資料從Magento 1移轉至Magento 2的整體概觀。
+本主題提供使用[!DNL Data Migration Tool]將資料從Magento 1移轉至Magento 2的整體概觀。
 
 [!DNL Data Migration Tool]是命令列介面(CLI)工具，用於將資料從Magento 1傳輸至Magento 2。 此工具會驗證Magento 1和2資料庫結構（表格和欄位）之間的一致性、追蹤資料傳輸進度、建立記錄檔，以及執行資料驗證測試。
 
 ## 術語
 
-* **模式** — 將資料從Magento 1.x移轉至Magento 2.x的一組有序作業。
+* **模式** — 將資料從Magento 1.x移轉至Magento 2.x的一組有序操作。
 * **步驟** — 模式中的工作，定義要移轉的資料型別。
 * **階段** — 步驟中驗證、傳輸及驗證資料的工作。
-* **對應檔案** — 定義Magento 1.x和Magento 2.x資料結構之間的規則和連線的XML檔案，用於完成階段。
+* **對應檔** — 定義Magento 1.x與Magento 2.x資料結構之間規則及連線的XML檔，用以完成階段。
 
 ## 模式
 
@@ -51,9 +60,9 @@ ht-degree: 0%
 
 ## 對應檔案
 
-移轉程式的最低層級為XML *對應檔*。 [!DNL Data Migration Tool]會在步驟的階段中使用對應檔案，在Magento 1.x和2.x表格之間轉換不同的資料結構。
+移轉程式的最低層級為XML *對應檔*。 [!DNL Data Migration Tool]在步驟的階段中使用對應檔案，在Magento 1.x和2.x表格之間轉換不同的資料結構。
 
-例如，將資料從Magento Open Source 1.8.0.0資料庫轉換為Magento Open Source 2.x.x時，對應檔案會說明資料表已重新命名，並在目的地資料庫中相應地重新命名。 如果資料結構或資料格式沒有差異，[!DNL Data Migration Tool]會依原樣將資料傳輸至Magento 2資料庫，包括擴充功能建立的表格資料。
+例如，將資料從Magento Open Source 1.8.0.0資料庫轉換為Magento Open Source 2.x.x時，對應檔案會說明資料表已重新命名，並在目的地資料庫中相應地重新命名。 如果資料結構或資料格式沒有差異，[!DNL Data Migration Tool]會按原樣將其傳輸，包括來自擴充功能所建立之資料表的資料，至Magento 2資料庫。
 
 如果未在對應檔案中宣告差異，則[!DNL Data Migration Tool]會顯示錯誤且不會啟動。
 
@@ -73,18 +82,19 @@ Magento 2移轉包含四個元件：資料、擴充功能和自訂程式碼、�
 
 ### 資料
 
-我們已開發&#x200B;**Magento 2[!DNL Data Migration Tool]**，協助您有效率地將您的所有產品、客戶和訂單資料、商店設定、促銷活動等移至Magento 2。 本指南提供遷移資料的工具及最佳作法相關資訊。
+我們已開發&#x200B;**Magento 2[!DNL Data Migration Tool]**，協助您有效率地將您的所有產品、客戶和訂單資料、商店設定、促銷活動等移轉至Magento 2。 本指南提供遷移資料的工具及最佳作法相關資訊。
 
 ### 擴充功能與自訂程式碼
 
-我們一直與開發社群合作，協助您在Magento 2中使用Magento 1擴充功能。 現在我們自豪地推出[Commerce Marketplace](https://commercemarketplace.adobe.com//)，您可以在其中下載或購買您最愛擴充功能的最新版本。
+我們一直與開發社群合作，協助您使用Magento 2中的Magento 1擴充功能。 現在我們自豪地推出[Commerce Marketplace](https://commercemarketplace.adobe.com//)，您可以在其中下載或購買您最愛擴充功能的最新版本。
 
 有關為Magento 2開發擴充功能的詳細資訊，請參閱[PHP開發人員指南](https://developer.adobe.com/commerce/php/development/)。
 
 ### 主題和自訂
 
-Magento 2運用新方法和技術，為商戶提供無可比擬的能力，以建立創新的購物體驗，並擴展至新的境界。 為了善用這些進階功能，開發人員必須變更其主題和自訂。 線上提供建立Magento 2 [主題](https://developer.adobe.com/commerce/frontend-core/guide/themes/)、[配置](https://developer.adobe.com/commerce/frontend-core/guide/layouts/)和[自訂專案](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage)的檔案。
+Magento 2運用新方法和技術，為商家提供無可比擬的能力，以建立創新的購物體驗，並提升規模。 為了善用這些進階功能，開發人員必須變更其主題和自訂。 線上提供建立Magento 2 [主題](https://developer.adobe.com/commerce/frontend-core/guide/themes/)、[配置](https://developer.adobe.com/commerce/frontend-core/guide/layouts/)和[自訂](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage)的檔案。
 
 ## 移轉工作
 
-就像在1.x版本（例如從v1.12到v1.14）之間升級一樣，從Magento 1移轉至Magento 2的工作量層級取決於您建立網站的方式及其自訂層級。不過，我們正在持續改善[!DNL Data Migration Tool] （如需詳細資訊，請參閱[變更記錄檔](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md)）；因此移轉工作會持續減少。
+就像在1.x版本（例如，從v1.12到v1.14）之間升級一樣，從Magento 1移轉至Magento 2的工作量層級取決於您建立網站的方式及其自訂層級。
+不過，我們正在持續改善[!DNL Data Migration Tool] （如需詳細資訊，請參閱[變更記錄檔](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md)）；因此移轉工作會持續減少。

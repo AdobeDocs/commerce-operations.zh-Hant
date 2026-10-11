@@ -2,13 +2,22 @@
 title: Cron工作
 description: 瞭解cron群組，以及如何在Adobe Commerce中建立自訂cron作業。 探索排程工作設定和cron群組設定。
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '179'
 ht-degree: 0%
-
 ---
-
 # Cron工作
 
 這些主題討論如何設定自訂cron工作以及可選的自訂cron群組。 如果您的Commerce擴充功能需要定期執行排程工作，您可以使用這些主題來設定cron _工作_ （排程工作），以及選擇性地同時執行自訂工作的cron _群組_。
@@ -21,5 +30,5 @@ Commerce應用程式提供下列cron群組：
 - `index`，它會重新整理[索引子](../cli/manage-indexers.md)
 - `consumers`，執行訊息佇列[消費者](../cli/start-message-queues.md)
 - 這些主題僅適用於Adobe Commerce
-   - `staging`，執行[與暫存相關的](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/staging/content-staging)工作
-   - `catalog_event`，執行目標與購物車規則的工作
+  - `staging`，執行[與暫存相關的](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)工作
+  - `catalog_event`，執行目標與購物車規則的工作

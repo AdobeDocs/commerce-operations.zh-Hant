@@ -1,20 +1,34 @@
 ---
 title: '[!UICONTROL MySQL]索引標籤'
-description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL MySQL]標籤。
+description: 瞭解[!DNL Observation for Adobe Commerce]的[!UICONTROL MySQL]標籤。
 exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1640'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL MySQL]索引標籤
 
 ## [!UICONTROL MySQL% free storage by node]
 
-依節點![&#128279;](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)的MySQL%可用儲存空間
+依節點](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)的![MySQL%可用儲存空間
 
 許多問題是由指派給MySQL之存放區中的MySQL用盡存放區所造成（`datadir` MySQL組態設定，預設值為`/data/mysql`），或是`tmpdir`空間不足。 預設`tmpdir` （MySQL設定）是`/tmp`。 **[!UICONTROL MySQL% free storage by node]**&#x200B;框架會檢視`/, /tmp` （若定義為個別掛載）和`/data/mysql`可用儲存空間百分比。 從MySQL 5.7版（MariaDB 10.2版）開始，未壓縮的`tmp`資料表會寫入檔案(ibtmp1)中`/data/mysql`目錄的`tmp`表格空間。 依預設，此檔案會無限制地自動展開。 因為它是表格空間，所以不會減少大小，而且在MySQL重新啟動時會重設為12MB。
 

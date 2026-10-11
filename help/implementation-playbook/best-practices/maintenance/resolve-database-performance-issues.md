@@ -4,13 +4,25 @@ description: 瞭解如何修正雲端基礎結構上部署的Adobe Commerce網�
 role: Developer, Admin
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
-
 ---
-
 <!--Consider moving this topic to the Maintenance section-->
 
 # 解決資料庫效能問題的最佳實務
@@ -38,7 +50,7 @@ ht-degree: 0%
 如果您的Adobe Commerce專案部署在Pro架構上，您可以使用Percona Toolkit來分析查詢。
 
 1. 對MySQL慢速查詢記錄檔執行`pt-query-digest --type=slowlog`命令。
-   * 若要尋找緩慢查詢記錄檔的位置，請參閱我們的開發人員檔案中的&#x200B;**[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs)。
+   * 若要尋找緩慢查詢記錄檔的位置，請參閱我們的開發人員檔案中的&#x200B;**[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs)。
    * 請參閱[Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest)檔案。
 1. 根據發現的問題，採取措施修正查詢，使其更快地執行。
 

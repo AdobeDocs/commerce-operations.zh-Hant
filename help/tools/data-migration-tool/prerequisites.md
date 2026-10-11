@@ -1,15 +1,24 @@
 ---
 title: '[!DNL Data Migration Tool]必要條件'
-description: 瞭解在開始使用 [!DNL Data Migration Tool] 在Magento 1和Magento 2之間傳輸資料之前，您需要做什麼。
+description: 瞭解開始使用[!DNL Data Migration Tool]在Magento 1和Magento 2之間傳輸資料之前需要做什麼。
 exl-id: 42dfa1ca-41ed-453d-a3e4-41ff36817ca3
 topic: Commerce, Migration
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '266'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Migration Tool]必要條件
 
 開始移轉之前，請確定符合下列需求。
@@ -18,7 +27,7 @@ ht-degree: 0%
 
 * 設定您的Magento 2系統，使其符合[系統需求](../../installation/system-requirements.md)。
 
-  使用至少符合您現有Magento 1系統的拓撲和設計。
+  使用至少符合您現有Magento 1系統的拓撲與設計。
 
 * [安裝Magento 2](../../installation/overview.md)。
 
@@ -38,12 +47,12 @@ ht-degree: 0%
 
 如果您的Magento 1資料庫已啟用二進位記錄，請將全域[`log_bin_trust_function_creators`](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) MySQL系統變數設定為`1`，或將[SUPER許可權](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super)授與您的帳戶。
 
-* 我們不建議在移轉前在Magento 2存放區中建立新實體（產品、類別和屬性），因為[!DNL Data Migration Tool]會以Magento 1中的舊實體覆寫這類新實體。
+* 我們不建議在移轉前在您的Magento 2存放區中建立新實體（產品、類別和屬性），因為[!DNL Data Migration Tool]會以Magento 1中的舊實體覆寫這類新實體。
 
 ## 擴充功能
 
 將Magento 1擴充功能程式碼移轉至Magento 2。
 
-若要尋找最新的擴充功能版本，請造訪[[!DNL [Commerce Marketplace]]](https://commercemarketplace.adobe.com//)或連絡您的擴充功能提供者。
+若要尋找最新的擴充功能版本，請造訪[!DNL [Commerce Marketplace]](https://commercemarketplace.adobe.com//)或連絡您的擴充功能提供者。
 
-您也可以使用[[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md)。
+您也可以使用[!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md)。

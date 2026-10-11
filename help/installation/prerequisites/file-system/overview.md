@@ -2,13 +2,22 @@
 title: 檔案擁有權和許可權
 description: 瞭解使用Adobe Commerce內部部署安裝時檔案系統許可權的重要性。
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
-
 ---
-
 # 檔案擁有權和許可權
 
 在開發環境中確保Adobe Commerce的安裝安全非常重要，這樣有助於防止未經授權的人員或程式存取（並可能損害）您的系統時出現問題。 請使用下列檔案系統擁有權和許可權准則來保護您的安裝。
@@ -27,9 +36,9 @@ ht-degree: 0%
 
   如果您管理應用程式伺服器，私人託管會很有用。 每個使用者都有特定的職責：
 
-   - _網頁伺服器使用者_&#x200B;執行管理員和店面。
+  - _網頁伺服器使用者_&#x200B;執行管理員和店面。
 
-   - _命令列使用者_&#x200B;執行cron作業和命令列公用程式。
+  - _命令列使用者_&#x200B;執行cron作業和命令列公用程式。
 
   兩個使用者都需要相同的檔案系統許可權，因此最好使用[共用群組](configure-permissions.md#set-ownership-and-permissions-for-two-users)並設定[`umask`](#restrict-access-with-a-umask)。
 
@@ -59,9 +68,9 @@ Adobe Commerce使用三位元預設遮罩： `002`。 從UNIX預設值（檔案�
 - 開發人員
 - 生產
 
-請參閱[組態指南](../../../configuration/bootstrap/application-modes.md)中的&#x200B;_關於模式_。
+請參閱&#x200B;_組態指南_&#x200B;中的[關於模式](../../../configuration/bootstrap/application-modes.md)。
 
-我們在[設定指南](../../../configuration/deployment/file-system-permissions.md)的&#x200B;_檔案系統存取許可權_&#x200B;中進一步討論許可權建議。
+我們在&#x200B;_設定指南_&#x200B;的[檔案系統存取許可權](../../../configuration/deployment/file-system-permissions.md)中進一步討論許可權建議。
 
 >[!TIP]
 >

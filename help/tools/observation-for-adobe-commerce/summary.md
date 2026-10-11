@@ -1,15 +1,29 @@
 ---
 title: '[!UICONTROL Summary]索引標籤'
-description: 瞭解 [!DNL Observation for Adobe Commerce]的[!UICONTROL Summary]標籤。
+description: 瞭解[!DNL Observation for Adobe Commerce]的[!UICONTROL Summary]標籤。
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2640'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL Summary]索引標籤
 
 [!DNL Observation for Adobe Commerce]的[!UICONTROL Summary]標籤旨在快速檢視網站所遇到的一些問題，以幫助您自動解決或找出網站問題的潛在根本原因。 其他標籤提供有關元件服務、資料庫、基礎架構和流程狀態的更深入層級資訊。
@@ -58,9 +72,9 @@ ht-degree: 0%
 
 ## [!UICONTROL CPU % by host]
 
-主機![&#128279;](../../assets/tools/cpu-percent-by-host.jpg)的CPU百分比
+主機](../../assets/tools/cpu-percent-by-host.jpg)的![CPU百分比
 
-所有環境和節點的彙總會顯示在&#x200B;**[!UICONTROL CPU % by host]**&#x200B;框架中。 您應該取消選取非生產環境。 也請注意生產環境的所有節點都未出現的任何執行個體。 如需有關高CPU使用率的更多秘訣，請參閱[在Adobe Commerce上使用New Relic進行效能疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=zh-Hant)。
+所有環境和節點的彙總會顯示在&#x200B;**[!UICONTROL CPU % by host]**&#x200B;框架中。 您應該取消選取非生產環境。 也請注意生產環境的所有節點都未出現的任何執行個體。 如需有關高CPU使用率的更多秘訣，請參閱[在Adobe Commerce上使用New Relic進行效能疑難排解](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html)。
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -72,7 +86,7 @@ ht-degree: 0%
 
 ![CPU使用量](../../assets/tools/cpu-usage.jpg)
 
-如果&#x200B;**[!UICONTROL CPU Usage]**&#x200B;框架空白，表示未啟用[!DNL New Relic]的基礎結構應用程式。 如果您的網站位於入門版，則不會看到此資訊。 如果您的網站使用Pro，請開啟[支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)為您的網站啟用[!DNL New Relic Infrastructure]。
+如果&#x200B;**[!UICONTROL CPU Usage]**&#x200B;框架空白，表示未啟用[!DNL New Relic]的基礎結構應用程式。 如果您的網站位於入門版，則不會看到此資訊。 如果您的網站使用Pro，請開啟[支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)為您的網站啟用[!DNL New Relic Infrastructure]。
 
 ## [!UICONTROL Average Response Time]
 
@@ -135,7 +149,7 @@ ht-degree: 0%
 
 ## [!UICONTROL API Calls by IP]
 
-由ip![&#128279;](../../assets/tools/api-calls-by-ip.jpg)進行的api呼叫
+由ip](../../assets/tools/api-calls-by-ip.jpg)進行的![api呼叫
 
 **[!UICONTROL API Calls by IP]**&#x200B;框架可協助識別針對API和IP位址的大量流量，這些位址會從API URL發出請求。
 
@@ -312,7 +326,7 @@ PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/in
 
 ![php處理序](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/)是[!DNL Nginx]使用的[!UICONTROL FastCGI Process Manager]。 若要瞭解系統需求，請參閱對應至Adobe Commerce版本[&#128279;](../../installation/system-requirements.md)的PHP版本需求。 **[!UICONTROL PHP processes]**&#x200B;框架顯示所選時間表中特定時間執行的PHP處理序數目。
+[PHP-FPM](https://php-fpm.org/)是[!DNL Nginx]使用的[!UICONTROL FastCGI Process Manager]。 若要瞭解系統需求，請參閱對應至Adobe Commerce版本](../../installation/system-requirements.md)的[PHP版本需求。 **[!UICONTROL PHP processes]**&#x200B;框架顯示所選時間表中特定時間執行的PHP處理序數目。
 
 ## [!UICONTROL Secondary processes]
 
@@ -383,10 +397,10 @@ PHP處理程式的行為方式取決於[組態](https://www.php.net/manual/en/in
 * &#39;%all shards failed%&#39;為&#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39;做為&#39;no_alive_nodes&#39;
 * &#39;%PHP嚴重錯誤：未攔截到的錯誤： Elasticsearch%&#39;的錯誤引數為&#39;wrong_param&#39;
-* &#39;%您可以修正此問題，方法是將Magento雲端基礎結構上的Elasticsearch服務升級為&#39;version%&#39;作為&#39;ver_err&#39;
+* &#39;%您可以修正此問題，方法是將Magento Cloud基礎結構上的Elasticsearch服務升級為&#39;ver_err&#39;版本%&#39;
 * &#39;%cluster健全狀態已從\[YELLOW\]變更為\[RED\] (原因：%&#39;為&#39;yel_red&#39;
 * &#39;%裝置%&#39;上沒有剩餘的空間，因為&#39;no_space&#39;
-* &#39;%無法執行&lbrack;SearchRequest&lbrace;searchType=%&#39;，因為&#39;failed_query&#39;
+* &#39;%無法執行[SearchRequest{searchType=%&#39;，因為&#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

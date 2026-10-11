@@ -1,15 +1,24 @@
 ---
 title: 需要手動移轉的資料
-description: 瞭解在Magento 1資料移轉至Magento 2期間必須手動移轉的資料，以及如何進行移轉。
+description: 瞭解在Magento 1移轉至Magento 2資料移轉期間必須手動移轉的資料，以及如何進行移轉。
 exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
-
 ---
-
 # 需要手動移轉的資料
 
 有四種型別的資料需要手動移轉：
@@ -45,7 +54,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**同步處理**。
 
-然後，在Magento 2管理面板中重複相同的步驟。
+然後，在Magento 2管理員面板中重複相同的步驟。
 
 ### 檔案系統中的媒體檔案
 

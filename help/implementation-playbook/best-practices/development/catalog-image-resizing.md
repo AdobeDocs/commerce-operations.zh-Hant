@@ -4,13 +4,23 @@ description: 瞭解如何在Adobe Commerce網站生產推出之前防止效能�
 feature: Best Practices
 role: Developer
 exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
-
 ---
-
 # 目錄影像調整大小最佳實務
 
 在商店投入生產之前，應調整所有目錄影像的大小。 無法在生產前調整影像大小，而會在頁面載入期間強制調整影像大小，這會大幅降低網站速度，並增加伺服器在啟動後第一天到幾週的負載。
@@ -116,5 +126,5 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 >[!NOTE]
 >
->- 雲端基礎結構專案上的Adobe Commerce可將產品影像調整大小解除安裝到Fastly服務。 請參閱&#x200B;_雲端指南_&#x200B;中的[深度影像最佳化](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly-image-optimization#deep-image-optimization)。
->- 如果您使用遠端儲存模組，也可以嘗試將影像大小調整解除安裝到nginx。 請參閱&#x200B;_設定指南_&#x200B;中的[設定遠端儲存裝置的影像大小](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=zh-Hant)。
+>- 雲端基礎結構專案上的Adobe Commerce可將產品影像調整大小解除安裝到Fastly服務。 請參閱&#x200B;_雲端指南_&#x200B;中的[深度影像最佳化](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly-image-optimization#deep-image-optimization)。
+>- 如果您使用遠端儲存模組，也可以嘗試將影像大小調整解除安裝到nginx。 請參閱&#x200B;_設定指南_&#x200B;中的[設定遠端儲存裝置的影像大小](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html)。

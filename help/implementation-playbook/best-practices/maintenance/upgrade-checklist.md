@@ -4,13 +4,23 @@ description: 瞭解如何建立並使用升級檢查清單來規劃Adobe Commerc
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
-
 ---
-
 # 升級檢查清單最佳實務
 
 在與電子商務團隊進行年度和季度對話時，請使用此檢查清單。 許多公司都依據年度預算和藍圖開展工作。 在這些年度討論中，您必須談論平台的健康、方向及年度升級策略，以及平台如何配合業務的整體目標與KPI。 每季交談時，請確定您建立的年度計畫仍符合您目前的狀況，若未符合的話，請樞紐分析。 此升級計畫檢查清單的目標是協助您規劃和排程Adobe Commerce升級，以確保在年內成功升級流程。 此檢查清單旨在由以下對象用於年度計畫和季度審查：

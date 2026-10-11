@@ -3,13 +3,32 @@ title: 在Ubuntu上設定memcached
 description: 瞭解如何在Ubuntu上安裝和設定Memcached，以供Adobe Commerce快取使用。 探索設定指示和最佳化秘訣。
 feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '483'
 ht-degree: 0%
-
 ---
-
 # 在Ubuntu上設定memcached
 
 本節提供在Ubuntu上安裝memcached的說明。
@@ -21,11 +40,11 @@ ht-degree: 0%
 因為PHP對memcache沒有原生支援，所以您必須安裝擴充功能以供PHP使用。 有兩個可用的PHP擴充功能，請務必解碼要使用哪個：
 
 - `memcache` (_no d_) — 不是定期維護的舊版但常用的擴充功能。
-`memcache`延伸模組目前&#x200B;_不適用於PHP 7。_ 請參閱memcache[&#128279;](https://www.php.net/manual/en/book.memcache.php)的PHP檔案。
+`memcache`延伸模組目前&#x200B;_不適用於PHP 7。_ 請參閱memcache](https://www.php.net/manual/en/book.memcache.php)的[PHP檔案。
 
   Ubuntu的確切名稱是`php5-memcache`。
 
-- `memcached` （_具有`d`_） — 與PHP 7相容的較新且已維護的擴充功能。 請參閱memcached[&#128279;](https://www.php.net/manual/en/book.memcached.php)的PHP檔案。
+- `memcached` （_具有`d`_） — 與PHP 7相容的較新且已維護的擴充功能。 請參閱memcached](https://www.php.net/manual/en/book.memcached.php)的[PHP檔案。
 
   Ubuntu的確切名稱是`php5-memcached`。
 
@@ -97,7 +116,7 @@ Adobe建議先測試memcached以確保其可正常運作，然後再安裝Commer
 
 此測試使用PHP指令碼來驗證memcached可以儲存和擷取快取資料。
 
-如需此測試的詳細資訊，請參閱[如何在Ubuntu教學課程中安裝及使用Memcache &#x200B;](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04)。
+如需此測試的詳細資訊，請參閱[如何在Ubuntu教學課程中安裝及使用Memcache ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04)。
 
 在網頁伺服器的docroot中建立`cache-test.php`，其內容如下：
 

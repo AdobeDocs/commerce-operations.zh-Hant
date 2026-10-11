@@ -1,16 +1,31 @@
 ---
 title: 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.68
-description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.68中可用修補程式所修正問題的詳細說明。
+description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.68中可用修補程式所修正問題的詳細說明。
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '278'
 ht-degree: 0%
-
 ---
-
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.68
 
 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.68中可用修補程式所修正問題的詳細說明。
@@ -30,7 +45,7 @@ QPT v1.1.68包含下列修補程式：
 1. **ACSD-66889**：在CLI中重新索引清查時發生錯誤。
 1. **ACSD-66963**：將折扣代碼套用至具有虛擬產品的購物車時，`estimateTotals`突變傳回&#x200B;*null*&#x200B;折扣。
 1. **ACSD-66965**：「請購單清單」頁面上的「列印」選項造成錯誤。
-1. **ACSD-66965**： **[!UICONTROL Print]**&#x200B;頁面上的&#x200B;**[!UICONTROL Requisition List]**&#x200B;選項造成錯誤。
+1. **ACSD-66965**： **[!UICONTROL Requisition List]**&#x200B;頁面上的&#x200B;**[!UICONTROL Print]**&#x200B;選項造成錯誤。
 1. **ACSD-67039**：由於`rp_token`系統屬性的驗證，未儲存客戶記錄。
 
 使用左側的功能表，導覽至特定的修補程式頁面。

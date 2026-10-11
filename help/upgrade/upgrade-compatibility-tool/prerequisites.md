@@ -1,14 +1,23 @@
 ---
 title: '[!DNL Upgrade Compatibility Tool]需求'
-description: 確認您的系統符合在Adobe Commerce專案的命令列介面中執行 [!DNL Upgrade Compatibility Tool] 的必要需求。
+description: 確認您的系統符合在Adobe Commerce專案的命令列介面中執行[!DNL Upgrade Compatibility Tool]的必要需求。
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '317'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce存取金鑰
 
 {{commerce-only}}
@@ -80,4 +89,4 @@ php           7.4.30    success
 
 如果您針對具有大型模組和檔案的Adobe Commerce執行個體執行[!DNL Upgrade Compatibility Tool]，則工具可能需要大量RAM （至少2GB）。
 
-針對雲端基礎結構[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/overview){target=_blank}專案上的Adobe Commerce，從[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=zh-Hant)執行[!DNL Upgrade Compatibility Tool]。
+針對雲端基礎結構](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview){target=_blank}專案上的[Adobe Commerce，從[[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html)執行[!DNL Upgrade Compatibility Tool]。

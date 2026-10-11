@@ -2,13 +2,22 @@
 title: 修補程式的運作方式
 description: 瞭解Adobe Commerce的各種修補程式型別及其運作方式。
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
-
 ---
-
 # 修補程式的運作方式
 
 >[!WARNING]
@@ -43,7 +52,7 @@ Hotfix是包含高影響力安全性或品質修正（會影響到許多商家�
 
 個別修補程式包含特定問題的低影響品質修正。 這些修正會套用至最近支援的次要版本（例如2.4.x），但可能從先前支援的次要版本（例如2.3.x）中遺失。 Adobe會視需要發行個別修補程式。
 
-使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}套用個別的修補程式。
+使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}套用個別的修補程式。
 
 >[!NOTE]
 >
@@ -92,10 +101,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 您可以使用下列任一方法來套用修補程式：
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [命令列](/help/upgrade/patches/apply.md#command-line)
 - [作曲者](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->若要將修補程式套用至雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端上的Commerce指南_&#x200B;中的[套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
+>若要將修補程式套用至雲端基礎結構專案上的Adobe Commerce，請參閱&#x200B;_雲端上的Commerce指南_&#x200B;中的[套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。

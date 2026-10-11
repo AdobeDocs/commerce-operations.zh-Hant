@@ -2,13 +2,22 @@
 title: 升級的維護模式選項
 description: 建立自訂維護模式頁面，以便客戶在您執行升級時於您的Adobe Commerce店面看到。
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
-
 ---
-
 # 升級的維護模式選項
 
 本主題說明如何建立自訂維護頁面，以在升級Magento應用程式時顯示給使用者。 建立自訂頁面為選用，但建議使用，因為您的網站在升級期間可供存取。
@@ -66,7 +75,7 @@ body
 1. 更新Apache設定以執行下列操作：
 
    - 將所有流量重新導向至維護頁面
-   - 允許列出特定IP，讓管理員可以升級Magento軟體。
+   - 允許列出特定IP，以便管理員升級Magento軟體。
 
    下列範例允許清單192.0.2.110。
 
@@ -107,7 +116,7 @@ body
 1. 使用文字編輯器開啟包含伺服器區塊的nginx組態檔。
 1. 新增下列內容至伺服器區塊（`server`僅供參考；請勿新增第二個伺服器區塊）。
 
-   下列允許清單IP位址192.0.2.110和192.0.2.115位於`/var/www/html/magento2`中安裝Magento的系統上：
+   下列允許清單IP位址192.0.2.110與192.0.2.115位於`/var/www/html/magento2`中安裝Magento的系統上：
 
    ```conf
    server {

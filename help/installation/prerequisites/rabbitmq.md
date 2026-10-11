@@ -1,14 +1,23 @@
 ---
 title: 訊息代理人(RabbitMQ)
-description: 請依照下列步驟，安裝並設定Adobe Commerce內部部署安裝所需的訊息代理程式軟體（例如 [!DNL RabbitMQ]）。
+description: 請依照下列步驟，安裝並設定Adobe Commerce內部部署安裝所需的訊息代理程式軟體（例如[!DNL RabbitMQ]）。
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
-
 ---
-
 # 訊息代理人(RabbitMQ)
 
 Adobe Commerce使用[!DNL RabbitMQ]開放原始碼訊息代理人。 它提供可靠、高可用性、可擴充且可攜式的傳訊系統。

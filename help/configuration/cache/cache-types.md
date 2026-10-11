@@ -13,6 +13,11 @@ product_v2:
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -21,10 +26,12 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -45,7 +52,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->對於雲端基礎結構上的Adobe Commerce，請使用雲端指南中說明的[雲端部署設定](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml)。 請勿直接編輯`app/etc/env.php`。 部署工具會產生此檔案並覆寫手動變更。
+>對於雲端基礎結構上的Adobe Commerce，請使用雲端指南中說明的[雲端部署設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml)。 請勿直接編輯`app/etc/env.php`。 部署工具會產生此檔案並覆寫手動變更。
 
 ## 使用預設前端
 

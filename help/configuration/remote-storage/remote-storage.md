@@ -3,13 +3,27 @@ title: 設定遠端儲存
 description: 瞭解如何為內部部署Commerce應用程式設定遠端儲存模組。
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
-
 ---
-
 # 設定遠端儲存
 
 「遠端儲存」模組提供儲存媒體檔案的選項，並可使用儲存服務（例如AWS S3）在永久性的遠端儲存容器中排程匯入和匯出。
@@ -91,5 +105,5 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 >[!INFO]
 >
->同步命令只會移轉`pub/media`目錄中的檔案，_不會_ `var`目錄中的匯入/匯出檔案。 請參閱&#x200B;_Commerce 2.4使用手冊_&#x200B;中的[排程匯入/匯出](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=zh-Hant)。
+>同步命令只會移轉`pub/media`目錄中的檔案，_不會_ `var`目錄中的匯入/匯出檔案。 請參閱&#x200B;_Commerce 2.4使用手冊_&#x200B;中的[排程匯入/匯出](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html)。
 

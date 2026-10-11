@@ -2,13 +2,22 @@
 title: 選購軟體
 description: 深入瞭解您可安裝的選用軟體，以支援Adobe Commerce的內部安裝。
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
-
 ---
-
 # 選購軟體
 
 我們強烈建議您安裝NTP，以確保cron相關工作可正常執行。 （例如，伺服器日期可以是過去或未來的日期。）

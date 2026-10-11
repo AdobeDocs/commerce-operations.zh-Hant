@@ -1,17 +1,30 @@
 ---
 title: 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.30
-description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.30中可用修補程式所修正問題的詳細說明。
+description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.30中可用修補程式所修正問題的詳細說明。
 feature: Tools and External Services
 role: Admin
 exl-id: 36c6e0cc-fd8c-4583-b147-fe4897b101d8
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '347'
 ht-degree: 0%
-
 ---
-
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.30
 
 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.30中可用修補程式所修正問題的詳細說明。
@@ -27,7 +40,7 @@ QPT v1.1.30包含下列修補程式：
 1. **ACSD-50116**：修正管理員使用者無法為子類別層級3或更低層級建立URL重寫的問題。
 1. **ACSD-49513**：修正遠端儲存體同步處理因0位元組檔案而失敗的問題。
 1. **ACSD-46683**：修正送貨價格顯示&#x200B;*尚未計算*&#x200B;的問題。
-1. **ACSD-49129**：修正[!UICONTROL base64 image code]產品媒體API回應中未傳回內容屬性(`rest/V1/products/sku/media`)的問題。
+1. **ACSD-49129**：修正`rest/V1/products/sku/media`產品媒體API回應中未傳回內容屬性([!UICONTROL base64 image code])的問題。
 1. **ACSD-50276**：修正建立多重選取客戶屬性時，店面無法使用客戶登錄檔單的問題。
 1. **ACSD-50527**：修正儲存具有空白動態區塊的頁面時發生的錯誤。
 1. **ACSD-49973**：改善透過GraphQL擷取套件產品的效能。

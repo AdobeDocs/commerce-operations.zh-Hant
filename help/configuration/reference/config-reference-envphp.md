@@ -2,13 +2,22 @@
 title: env.php參考
 description: 瞭解Adobe Commerce中的env.php檔案配置值和區段。 探索環境設定和組態選項。
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
-
 ---
-
 # env.php參考
 
 `env.php`檔案包含下列區段：
@@ -146,7 +155,7 @@ Commerce使用加密金鑰來保護密碼和其他敏感資料。 此金鑰會�
 ]
 ```
 
-在&#x200B;_Commerce使用手冊_&#x200B;中進一步瞭解[加密金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/encryption-key)。
+在&#x200B;_Commerce使用手冊_&#x200B;中進一步瞭解[加密金鑰](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key)。
 
 ## db
 

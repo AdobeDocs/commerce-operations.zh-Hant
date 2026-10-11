@@ -4,13 +4,23 @@ description: 瞭解如何讓您的Adobe Commerce在雲端基礎結構技術棧�
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
-
 ---
-
 # 更新服務最佳實務
 
 本文提供建議讓雲端基礎結構技術棧疊上的Adobe Commerce保持更新，並提供實用資源的連結。
@@ -23,9 +33,9 @@ ht-degree: 0%
 
 在Adobe Commerce使用的服務和元件達到或接近生命週期結束日期之前升級。 這有助於遵循PCI法規並減少安全性漏洞。
 
-入門計畫客戶可自助服務升級。 請參閱[變更服務版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version)，以取得如何執行此動作的詳細資訊。
+入門計畫客戶可自助服務升級。 請參閱[變更服務版本](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version)，以取得如何執行此動作的詳細資訊。
 
-Pro方案客戶只能在其[整合環境](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27242)中自助服務升級。 若要在生產環境中升級服務，您必須[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)以要求升級。
+Pro方案客戶只能在其[整合環境](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242)中自助服務升級。 若要在生產環境中升級服務，您必須[提交支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)以要求升級。
 
 >[!WARNING]
 >
