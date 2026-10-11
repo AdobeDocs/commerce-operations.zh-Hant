@@ -1,16 +1,31 @@
 ---
 title: 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.76
-description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.76中可用修補程式所修正問題的詳細說明。
+description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.76中可用修補程式所修正問題的詳細說明。
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 33361f8de36b1d3f346d216244efb413835d88ef
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '484'
 ht-degree: 0%
-
 ---
-
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.76
 
 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.76中可用修補程式所修正問題的詳細說明。
@@ -24,7 +39,7 @@ QPT v1.1.76包含下列修補程式：
 1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**：修正當嘗試透過[!DNL REST] API更新次要網站的層級價格時，刪除預設基本網站並使用次要網站作為預設網站導致錯誤的問題。
 1. **[ACSD-69203](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203.md)**：修正當類別條件中列出多個類別時，**[!UICONTROL Products List]** Widget傳回錯誤結果的問題。
 1. **[ACSD-69261](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)**：修正因部分發票中`times_used`屬性的處理不正確及剩餘數量取消情況，而多次重複使用針對每位客戶設定為單次使用的購物車價格規則優惠券的問題。
-1. **[ACSD-69308](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)**：修正僅於網站層級（非`special_price`）設定&#x200B;**[!UICONTROL All Store Views]**&#x200B;時，目錄價格規則不適用的問題。 修正後，請先檢查網站的預設商店，正確套用目錄價格規則。
+1. **[ACSD-69308](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)**：修正僅於網站層級（非&#x200B;**[!UICONTROL All Store Views]**）設定`special_price`時，目錄價格規則不適用的問題。 修正後，請先檢查網站的預設商店，正確套用目錄價格規則。
 1. **[ACSD-69319](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69319.md)**：修正子產品在自訂來源下有存貨時，套件價格未正確編制索引的問題。
 1. **[ACSD-69325](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325.md)**：修正修改SKU案例導致產品在店面無存貨的問題。
 1. **[ACSD-69331](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69331.md)**：修正媒體集中的內容建立者無法僅以`create_folder`許可權建立資料夾的問題。 完成修正後，他們就能如預期建立資料夾。

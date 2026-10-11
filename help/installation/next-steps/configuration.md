@@ -3,13 +3,27 @@ title: 設定應用程式
 description: 瞭解Adobe Commerce內部部署所需的安裝後設定。
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '819'
 ht-degree: 0%
-
 ---
-
 # 設定應用程式
 
 現在您已安裝Adobe Commerce，需要加以設定。 本主題提供一些建議的組態設定。
@@ -55,7 +69,7 @@ UNIX `logrotate`公用程式可讓您管理產生大量記錄檔的系統。 它
 
 如需詳細資訊，請參閱下列其中一項：
 
-* [HowTo：包含十個範例的終極記錄旋轉命令教學課程](https://www.thegeekstuff.com/2010/07/logrotate-examples)
+* [HowTo：終極記錄旋轉命令教學課程，包含十個範例](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 * [棧疊交換](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * [`logrotate`線上手冊](https://linuxconfig.org/logrotate-8-manual-page)
 

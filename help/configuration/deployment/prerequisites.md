@@ -3,27 +3,41 @@ title: 部署的先決條件
 description: 請參閱將Commerce部署至開發、組建或生產系統的先決條件清單。
 feature: Configuration, Deploy
 exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '162'
 ht-degree: 0%
-
 ---
-
 # 開發、建置和生產系統的先決條件
 
 開發、組建和生產系統的檔案許可權和擁有權必須保持一致。 若要讓此功能發揮作用，您必須：
 
 - 下列所有專案：
 
-   - 在所有系統上設定相同的檔案系統擁有者使用者名稱
-   - 確定網頁伺服器在所有系統上都以相同使用者身分執行
-   - 確定檔案系統擁有者位於所有系統的網頁伺服器群組中
+  - 在所有系統上設定相同的檔案系統擁有者使用者名稱
+  - 確定網頁伺服器在所有系統上都以相同使用者身分執行
+  - 確定檔案系統擁有者位於所有系統的網頁伺服器群組中
 
 - 視需要變更每個系統上的Commerce檔案系統許可權和擁有權，請遵循下列准則：
 
-   - 開發和建置： [設定安裝前的擁有權和許可權（兩個使用者）](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-   - 生產： [開發和生產中的Commerce擁有權和許可權](file-system-permissions.md)
+  - 開發和建置： [設定安裝前的擁有權和許可權（兩個使用者）](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
+  - 生產： [開發和生產中的Commerce擁有權和許可權](file-system-permissions.md)
 
 >[!INFO]
 >

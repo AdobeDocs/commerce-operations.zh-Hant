@@ -1,14 +1,23 @@
 ---
 title: '[!DNL Site-Wide Analysis Tool]'
-description: 瞭解 [!DNL Site-Wide Analysis] 工具、其用途、安裝過程以及如何取得存取權
+description: 了解 [!DNL Site-Wide Analysis] 工具、用途、安裝程序以及如何取得存取權
 exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 0%
-
+source-wordcount: '649'
+ht-degree: 2%
 ---
-
 # [!DNL Site-Wide Analysis Tool]
 
 >[!IMPORTANT]
@@ -62,7 +71,7 @@ ht-degree: 0%
 - **[!UICONTROL Security Center Widget]** — 顯示您網站的安全性深入分析。<br>
 安全性資訊包含[技術 [!DNL Stack] 版本相容性與 [!DNL end of life (EOL)]](/help/installation/system-requirements.md), [Adobe Security Bulletin](https://helpx.adobe.com/tw/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security-scan), and [[!DNL Site-Wide Analysis Tool] 最佳實務安全性建議](/help/tools/site-wide-analysis-tool/recommendations.md)。
 
-  [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security-scan)會主動偵測惡意軟體，並在其存放區遭到破壞時發出警示，藉此為Adobe Commerce和Magento Open-Source客戶提供其存放區安全性狀況的即時深入分析。
+  [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security-scan)會主動偵測惡意軟體，並在其存放區遭到破壞時發出警報，以便讓Adobe Commerce和Magento Open-Source客戶即時瞭解其存放區的安全狀況。
 
 - **[[!DNL Upgrade Compatibility Tool]](../../upgrade/upgrade-compatibility-tool/overview.md)** — 針對升級版本檢查您的Adobe Commerce執行個體，並在升級之前標示要修正的嚴重問題、錯誤和警告。 解決這些問題可簡化升級流程。」
 

@@ -5,13 +5,30 @@ feature: Customers, Admin Workspace
 role: Admin, Developer
 exl-id: 5423bbd3-75e9-4137-b2d5-3a0ceb3384ad
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
-
 ---
-
 # ACSD-64149：僅編輯一個日期時，可以儲存具有[!UICONTROL Date range]條件的客戶區段
 
 ACSD-64149修補程式修正了僅編輯其中一個日期時，具有日期範圍條件的客戶區段可以儲存的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60時，即可使用此修補程式。 修補程式ID為ACSD-64149。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。
@@ -59,7 +76,7 @@ ACSD-64149修補程式修正了僅編輯其中一個日期時，具有日期範�
 <u>實際結果</u>：
 
 * **[!UICONTROL Date range]**&#x200B;選擇器會將時間新增至日期：
-   * 一個日期只有日期，而另一個日期同時有指定的日期和時間。
+  * 一個日期只有日期，而另一個日期同時有指定的日期和時間。
 * 記錄中出現下列錯誤：
 
   ```yaml

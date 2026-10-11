@@ -2,13 +2,22 @@
 title: 使用Adobe Commerce匯入最新的平台
 description: 檢閱規劃Adobe Commerce升級的建議。
 exl-id: f776b000-0085-4b77-860f-623837c3c902
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
-
 ---
-
 # 建議的升級路徑
 
 電子商務實作是一種進化，但從未真正完成。 您的企業必須藉由引進最新的功能與功能，讓客戶保持參與，以保持領先於趨勢一步。 升級至最新的Adobe Commerce版本，可讓您透過同級最佳創新功能保持領先地位，並透過以下功能確保您的業務符合未來需求：

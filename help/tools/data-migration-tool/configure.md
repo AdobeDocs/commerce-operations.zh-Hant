@@ -1,25 +1,34 @@
 ---
-title: 設定 [!DNL Data Migration Tool]
-description: 瞭解設定 [!DNL Data Migration Tool] 在Magento 1和Magento 2之間傳輸資料的兩種方法。
+title: 設定[!DNL Data Migration Tool]
+description: 瞭解設定[!DNL Data Migration Tool]在Magento 1和Magento 2之間傳輸資料的兩種方法。
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '826'
 ht-degree: 0%
-
 ---
-
 # 設定[!DNL Data Migration Tool]
 
 安裝[!DNL Data Migration Tool]之後，下列目錄包含對應和組態檔：
 
 * Magento Open Source：
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`：從Magento Open Source 1移轉至Magento Open Source 2的設定和指令碼
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`：從Magento Open Source 1移轉至Magento Open Source 2的設定和指令碼
 
 * Adobe Commerce：
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`：從Magento Open Source 1移轉至Adobe Commerce 2的設定和指令碼
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`：從Adobe Commerce 1移轉至Adobe Commerce 2的設定和指令碼
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`：從Magento Open Source 1移轉至Adobe Commerce 2的設定和指令碼
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`：從Adobe Commerce 1移轉至Adobe Commerce 2的設定和指令碼
 
 上述目錄包含每個支援版本的子目錄。
 
@@ -190,7 +199,7 @@ ht-degree: 0%
 
 ## 使用設定和對映檔案
 
-[!DNL Data Migration Tool]使用&#x200B;*對應檔案*，讓您在Magento 1與Magento 2資料庫之間執行自訂資料庫對應，包括：
+[!DNL Data Migration Tool]使用&#x200B;*對應檔案*，讓您在Magento 1和Magento 2資料庫之間執行自訂資料庫對應，包括：
 
 * 變更表格名稱
 
@@ -219,7 +228,7 @@ ht-degree: 0%
 | 對應檔案名稱 | 說明 |
 | --- | --- |
 | `class-map.xml.dist` | Magento 1與Magento 2之間類別對應的字典 |
-| `config.xml.dist` | 主要設定檔，其會指定Magento 1和Magento 2資料庫設定、步驟設定，以及對應檔案的連結 |
+| `config.xml.dist` | 主要組態檔，指定Magento 1和Magento 2資料庫組態、步驟組態和對應檔案的連結 |
 | *僅限Adobe Commerce*。`customer-attr-document-groups.xml.dist` | 自訂客戶屬性步驟中使用的表格清單。 |
 | *僅限Adobe Commerce*。`customer-attr-map.xml.dist` | 對應自訂客戶屬性步驟中所使用的檔案。 |
 | `deltalog.xml.dist` | 包含資料庫常式設定所需的表格清單。 |

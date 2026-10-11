@@ -2,13 +2,22 @@
 title: 快速入門內部部署安裝
 description: 瞭解如何使用撰寫器在您自己的基礎架構上安裝Adobe Commerce。 探索快速入門步驟和設定需求。
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 0%
-
 ---
-
 # 快速入門內部部署安裝
 
 本頁上的指示說明如何在自行託管的基礎結構上安裝Adobe Commerce。 如需升級現有安裝的指南，請參閱&#x200B;[_升級指南_](../upgrade/overview.md)。

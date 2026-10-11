@@ -2,13 +2,22 @@
 title: 多個網站或商店
 description: 瞭解如何啟動多個網站或使用不同的選項、網域和內容實作商店檢視。
 exl-id: 724d75d9-13fc-40f9-951a-69aa407adb6f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
-
 ---
-
 # 多個網站或商店
 
 Adobe Commerce軟體的單一例項可讓您啟動多個使用不同屬性和內容的網站或儲存檢視，例如：
@@ -43,8 +52,8 @@ Adobe Commerce軟體的單一例項可讓您啟動多個使用不同屬性和內
 
 - `MAGE_RUN_TYPE`可以是`store`或`website`
 
-   - 使用`website`在您的店面中載入網站。
-   - 使用`store`載入您店面中的任何商店檢視。
+  - 使用`website`在您的店面中載入網站。
+  - 使用`store`載入您店面中的任何商店檢視。
 
 - `MAGE_RUN_CODE`是與`MAGE_RUN_TYPE`對應的唯一網站或商店檢視代碼
 

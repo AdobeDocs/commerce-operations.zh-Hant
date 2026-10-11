@@ -1,17 +1,29 @@
 ---
-title: ACSD-61622： REST API回應中缺少 [!DNL FedEx] 帳戶特定費率
-description: 套用ACSD-61622修補程式以修正REST API回應中缺少 [!DNL FedEx] 帳戶特定費率的Adobe Commerce問題。
+title: ACSD-61622： REST API回應中缺少[!DNL FedEx]帳戶特定費率
+description: 套用ACSD-61622修補程式以修正REST API回應中缺少[!DNL FedEx]帳戶特定費率的Adobe Commerce問題。
 feature: Shipping/Delivery
 role: Admin, Developer
 exl-id: 59e33dc4-3f9b-4590-95b6-e98c77e750ee
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '402'
 ht-degree: 0%
-
 ---
-
 # ACSD-61622： REST API回應中缺少[!DNL FedEx]帳戶特定費率
 
 ACSD-61622修補程式解決了REST API回應中缺少[!DNL FedEx's]帳戶特定速率的問題。 它會將`ACCOUNT`速率要求型別新增至從Adobe Commerce傳送至[!DNL FedEx]的REST API要求，這會傳回類似於SOAP API回應的回應。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-61622。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。

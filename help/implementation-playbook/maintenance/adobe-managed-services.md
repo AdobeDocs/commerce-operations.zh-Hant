@@ -3,13 +3,25 @@ title: Adobe Managed Services
 description: 瞭解Adobe Managed Services如何協助支援及維護您的Adobe Commerce實作。
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Managed Services
 
@@ -28,12 +40,12 @@ Adobe Managed Services比內部部署和非Managed Cloud實作提供主要優點
 - **增強的服務等級目標(SLT)** — 回應時間比標準Adobe Commerce支援更快。
 - **增強的服務等級協定(SLA)**—99.9%的應用程式等級，一般雲端基礎結構客戶在99.99%的基礎結構等級之上即可達到。
 - **指定的雲端專業知識**—Managed Services為客戶提供指定的客戶成功工程師(CSE)，擔任應用程式和雲端基礎結構專家。 CSE與客戶及其合作夥伴合作，提供最佳實務和指引以加快上市時間，包括：
-   - 入門流程中的指南和支援
-   - 管理布建和平台設定
-   - 提供整合與自訂的架構原則建議
-   - 推動事件管理與業務持續性
-   - 透過規劃、執行和監控提供事件支援
-   - 雲端支援和專業知識（主動最佳化、報告和最佳實務）
+  - 入門流程中的指南和支援
+  - 管理布建和平台設定
+  - 提供整合與自訂的架構原則建議
+  - 推動事件管理與業務持續性
+  - 透過規劃、執行和監控提供事件支援
+  - 雲端支援和專業知識（主動最佳化、報告和最佳實務）
 
 如需主要Managed Services權益的更詳細比較，請參閱下表：
 

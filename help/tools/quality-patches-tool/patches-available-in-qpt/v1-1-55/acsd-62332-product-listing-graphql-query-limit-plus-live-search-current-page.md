@@ -1,17 +1,38 @@
 ---
-title: ACSD-62332：產品清單GraphQL查詢限製為10,000個產品，且 [!DNL Live Search] 將目前頁面設為1
-description: 套用ACSD-62332修補程式以修正Adobe Commerce問題，其中產品清單GraphQL查詢限製為total_count 10,000個產品，且在透過GraphQL查詢時，在搜尋條件中 [!DNL Live Search] 將目前頁面設定為*1*而不是頁面*2*。
+title: ACSD-62332：產品清單GraphQL查詢限製為10,000個產品，[!DNL Live Search]將目前頁面設為1
+description: 套用ACSD-62332修補程式以修正Adobe Commerce問題，其中產品清單GraphQL查詢限製為total_count 10,000個產品，且[!DNL Live Search]透過GraphQL查詢時，在搜尋條件中將目前頁面設定為*1*而不是頁面*2*。
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: 3623a337-32e9-468b-a82b-6a7f7fa943c9
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '370'
 ht-degree: 0%
-
 ---
-
 # ACSD-62332：產品清單GraphQL查詢限製為10,000個產品，且[!DNL Live Search]將目前頁面設為1
 
 >[!NOTE]

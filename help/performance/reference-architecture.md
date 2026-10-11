@@ -2,13 +2,22 @@
 title: 參考架構
 description: 瞭解Adobe Commerce中的參考架構。 探索實作指引和最佳化策略。
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
-
 ---
-
 # 參考架構
 
 本主題說明一般建議設定，適用於Adobe Commerce執行個體，使用實體託管於資料中心（非虛擬化）的普通伺服器，資源不會與其他使用者共用。 您的託管提供者（尤其是擅長於Commerce高效能託管的供應商）可能會建議您採取對您的需求有相同或相同成效的其他設定。
@@ -64,7 +73,7 @@ ht-degree: 0%
 
 ### 建議的[!DNL Varnish]參考架構
 
-Magento可支援數個立即可用的完整頁面快取引擎（檔案、Memcache、Redis、[!DNL Varnish]），透過擴充功能擴大涵蓋範圍。 [!DNL Varnish]是建議的完整頁面快取引擎。 [!DNL Commerce]支援許多不同的[!DNL Varnish]設定。
+Magento可支援數種立即可用的完整頁面快取引擎（檔案、Memcache、Redis、[!DNL Varnish]），以及透過擴充功能擴展的涵蓋範圍。 [!DNL Varnish]是建議的完整頁面快取引擎。 [!DNL Commerce]支援許多不同的[!DNL Varnish]設定。
 
 對於不需要高可用性的網站，我們建議使用具有Nginx SSL終止的簡單[!DNL Varnish]設定。
 

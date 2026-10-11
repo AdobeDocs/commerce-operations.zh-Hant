@@ -5,13 +5,23 @@ role: Developer
 feature: Best Practices
 badge: label="由Adobe資深技術架構師Tony Evers撰寫" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="托尼·埃弗斯撰寫"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1361'
 ht-degree: 0%
-
 ---
-
 # 大規模散佈Adobe Commerce修補程式的最佳作法
 
 如果您管理多個Adobe Commerce安裝，[修補](../../../upgrade/patches/apply.md)可能會是一個複雜的程式。 _集中修補_&#x200B;是企業的最佳作法。 它可協助您在所有Adobe Commerce安裝上套用正確的修補程式。 本主題說明如何針對所有型別的Adobe Commerce [修補程式](../../../upgrade/patches/overview.md)達成集中式修補程式散佈。

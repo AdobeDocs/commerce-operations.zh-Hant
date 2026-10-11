@@ -4,13 +4,23 @@ description: 說明如何藉由Adobe Commerce專案中的OPcache記憶體耗用�
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 1%
-
 ---
-
 # Adobe Commerce中OPcache記憶體大小的最佳作法
 
 針對雲端基礎結構上的Adobe Commerce Pro計畫架構2.3.x，建議將`opcache.memory_consumption`設定為至少2 GB，以避免效能降低。

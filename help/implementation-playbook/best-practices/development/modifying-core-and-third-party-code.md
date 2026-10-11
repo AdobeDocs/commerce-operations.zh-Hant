@@ -5,13 +5,23 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2023-12-8
 exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1767'
 ht-degree: 0%
-
 ---
-
 # 修改或覆寫核心和第三方PHP程式碼的最佳作法
 
 本檔案旨在說明當您需要修改任何您未撰寫或未直接控制之程式碼的功能、結果或輸入時，的最佳作法。 換言之，核心程式碼和協力廠商程式碼。 本檔案主要著重於後端PHP程式碼。
@@ -104,7 +114,7 @@ class AlgoliaElasticSearchAdapter extends \Magento\Elasticsearch7\SearchAdapter\
 
 ### 觀察者
 
-觀察者是一種事件偵聽程式的概念，在許多應用程式、平台、程式庫和程式碼語言中都可找到。 這個概念並非Adobe Commerce平台所特有。 從Magento 1時代起，觀察者就一直在平台內實作，且被視為如何修改核心程式碼和協力廠商程式碼的主要選擇。 
+觀察者是一種事件偵聽程式的概念，在許多應用程式、平台、程式庫和程式碼語言中都可找到。 這個概念並非Adobe Commerce平台所特有。 自Magento 1推出以來，觀察者就一直被植入平台，且被視為如何修改核心程式碼和協力廠商程式碼的主要選擇。 
 
 核心程式碼基底和任何協力廠商模組都可以在程式碼中的選定位置傳送事件。 在`events.xml`檔案中宣告且正在以名稱接聽分派事件的觀察者，可以在全域層級上運作或受限於任何Adobe Commerce「區域」，例如`frontend`、`adminhtml`、`graphql`、`webapi_rest`和`crontab`。
 

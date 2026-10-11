@@ -1,17 +1,32 @@
 ---
-title: ACSD-62635：在 [!DNL GraphQL]中顯示的多重商店相關產品不正確
-description: 套用ACSD-62635修補程式以修正Adobe Commerce問題，該問題導致多商店相關產品無法在 [!DNL GraphQL] 產品查詢中正確顯示。
+title: ACSD-62635： [!DNL GraphQL]中無法正確顯示多商店相關產品
+description: 套用ACSD-62635修補程式以修正Adobe Commerce問題，多商店相關產品未正確顯示在[!DNL GraphQL]產品查詢中。
 feature: B2B
 role: Admin, Developer
 exl-id: 540cd37b-4dc5-42d1-a968-2989262effdd
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '417'
 ht-degree: 0%
-
 ---
-
 # ACSD-62635： [!DNL GraphQL]中無法正確顯示多商店相關產品
 
 ACSD-62635修補程式修正多商店相關產品未在[!DNL GraphQL]產品查詢中正確顯示的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant) 1.1.57時，即可使用此修補程式。 修補程式ID為ACSD-62635。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。

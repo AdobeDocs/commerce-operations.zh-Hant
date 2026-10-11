@@ -5,13 +5,25 @@ feature: Products, Staging
 role: Admin
 exl-id: 0ae665a8-cda2-4340-91e7-5b9b969a6607
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: 0054e3a7-7067-583b-bfd2-ab39dada9ab5
+    internal-label: Staging
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
-
 ---
-
 # MDVA-38799：建立中繼更新後未儲存可下載的產品
 
 MDVA-38799修補程式可解決建立中繼更新後無法儲存可下載產品的問題。 安裝[品質修補工具(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.0時，即可使用此修補程式。 修補程式ID為MDVA-38799。 請注意，Adobe Commerce 2.4.3版已修正問題。

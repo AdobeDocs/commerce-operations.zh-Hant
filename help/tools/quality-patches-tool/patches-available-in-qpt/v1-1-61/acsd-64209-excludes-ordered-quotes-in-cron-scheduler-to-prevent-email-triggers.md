@@ -1,17 +1,34 @@
 ---
 title: ACSD-64209： Cron排程器會擷取可協商的報價，而不會排除[!UICONTROL Ordered]個報價
 description: 套用ACSD-64209修補程式以修正Adobe Commerce問題，該問題導致cron排程器擷取所有可協商的引號，而不排除狀態為[!UICONTROL Ordered]的引號，進而觸發電子郵件或電子郵件。
-feature:  B2B, Communications
+feature: B2B, Communications
 role: Admin, Developer
 exl-id: 51ba0edc-ad0c-4e32-acd7-2337a62bff53
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 4a03af2383a03584c88feb83e7ad726a42cab2d6
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
-
 ---
-
 # ACSD-64209： Cron排程器會擷取可協商的報價，而不會排除[!UICONTROL Ordered]個報價
 
 ACSD-64209修補程式修正了cron排程器擷取所有可協商的引號，而不排除狀態為&#x200B;**[!UICONTROL Ordered]**&#x200B;的引號的問題，進而觸發電子郵件或電子郵件。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61時，即可使用此修補程式。 修補程式ID為ACSD-64209。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。

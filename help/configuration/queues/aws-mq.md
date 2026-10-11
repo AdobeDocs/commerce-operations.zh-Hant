@@ -2,13 +2,22 @@
 title: 設定Amazon訊息佇列
 description: 瞭解如何在env.php中為Amazon MQ配置Adobe Commerce訊息佇列，包括雲端就緒AMQP連線的SSL和TLS要求。
 exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
-
 ---
-
 # 設定Amazon訊息佇列
 
 自Commerce 2.4.3起，Amazon訊息佇列(MQ)可作為內部部署訊息佇列例項的雲端就緒替代專案。

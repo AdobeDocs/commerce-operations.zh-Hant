@@ -5,13 +5,23 @@ feature: Quotes
 role: Admin
 exl-id: 007a82f7-4bc9-4a51-8b18-05f6c0867ea7
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 792a7e9b-6519-5e99-a913-56c3dd2408da
+    internal-label: Quotes
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
-
 ---
-
 # MDVA-44562：預設商店ID已覆寫報價專案的商店ID
 
 MDVA-44562修補程式修正了預設商店ID會覆寫GraphQL要求之報價專案的商店ID的問題。 安裝[品質修補工具(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.16時，即可使用此修補程式。 修補程式ID為MDVA-44562。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。

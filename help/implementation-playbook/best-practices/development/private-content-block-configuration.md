@@ -4,13 +4,23 @@ description: 瞭解設定私人內容區塊的最佳實務，以最佳化店面�
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
-
 ---
-
 # 私人內容區塊的最佳實務
 
 當私人內容區塊包含`_isScopePrivate`變數時，該區塊將無法快取。 由於未快取私人區塊，因此Adobe Commerce必須針對每個會增加伺服器負載的客戶請求擷取相同的資料。

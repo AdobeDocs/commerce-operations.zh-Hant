@@ -3,13 +3,27 @@ title: 最佳實務
 description: 使用Adobe建議的最佳實務來管理您Adobe Commerce專案的升級程式。
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 0%
-
 ---
-
 # 升級的最佳實務
 
 本主題列出在升級Adobe Commerce專案時，您應採取哪些動作來控制複雜性。 您的團隊應該從專案開發開始時就開始考慮升級，並持續每個版本。 依照這些最佳實務，升級程式將可變得更容易、更快、更便宜。

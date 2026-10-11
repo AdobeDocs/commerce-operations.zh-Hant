@@ -3,13 +3,27 @@ title: 服務設定路徑參考
 description: 瞭解Adobe Commerce管理設定中的服務設定路徑和值。 探索Web API、OAuth和服務整合設定選項。
 feature: Configuration, Services
 exl-id: 77818c54-21ae-4a66-81bf-468bd7d09cda
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 0%
-
+source-wordcount: '171'
+ht-degree: 1%
 ---
-
 # 服務設定路徑參考
 
 此區段列出&#x200B;**商店** >設定> **設定** > **服務**&#x200B;底下「管理員」中選項的變數名稱和設定路徑。

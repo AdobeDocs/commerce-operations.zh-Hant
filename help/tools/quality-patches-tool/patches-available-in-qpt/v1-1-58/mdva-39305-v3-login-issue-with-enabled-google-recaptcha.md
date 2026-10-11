@@ -1,17 +1,30 @@
 ---
-title: MDVA-39305-V3：已啟用 [!DNL Google reCAPTCHA]的登入問題
-description: 套用MDVA-39305-V3修補程式，修正啟用 [!DNL Google reCAPTCHA] 時註冊客戶無法登入的Adobe Commerce問題。 此修補程式也修正了在 [!DNL Google reCAPTCHA] 完整載入之前提交表單的問題。 此外，它修正了在CMS頁面的非預設位置中使用區塊時，*在null*上呼叫成員函式isDisabled()的錯誤。
+title: MDVA-39305-V3：已啟用[!DNL Google reCAPTCHA]的登入問題
+description: 套用MDVA-39305-V3修補程式，修正啟用[!DNL Google reCAPTCHA]時註冊客戶無法登入的Adobe Commerce問題。 此修補程式也修正了在[!DNL Google reCAPTCHA]完全載入之前提交表單的問題。 此外，它修正了在CMS頁面的非預設位置中使用區塊時，*在null*上呼叫成員函式isDisabled()的錯誤。
 feature: Console
 role: Admin
 exl-id: 63e880aa-9a2e-4c34-9ead-20bfc5204f2c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '489'
 ht-degree: 0%
-
 ---
-
 # MDVA-39305-V3：已啟用[!DNL Google reCAPTCHA]的登入問題
 
 >[!NOTE]

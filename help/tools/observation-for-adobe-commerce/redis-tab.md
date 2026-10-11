@@ -1,15 +1,29 @@
 ---
 title: '[!UICONTROL Redis]索引標籤'
-description: 瞭解[!UICONTROL Redis]的 [!DNL Observation for Adobe Commerce]標籤。
+description: 瞭解[!DNL Observation for Adobe Commerce]的[!UICONTROL Redis]標籤。
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '256'
 ht-degree: 0%
-
 ---
-
 # [!DNL Redis]索引標籤
 
 ## [!UICONTROL Redis Node summary]
@@ -38,7 +52,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Commands per second by node]
 
-節點![每秒的](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)個命令
+節點![&#128279;](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)每秒的個命令
 
 **[!UICONTROL Commands per second by node]**&#x200B;影格會在選取的時間範圍內每秒依節點顯示[!DNL Redis]命令。
 
@@ -58,7 +72,7 @@ ht-degree: 0%
 
 ![自上次db儲存後的Redis變更](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis]是記憶體駐留，並將資訊儲存到儲存空間。 **[!UICONTROL Redis changes since last db save]**&#x200B;框架表示自上次資料庫儲存至儲存體後發生的記憶體變更次數。 如需[持續性的詳細解釋，請參閱](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)Redis持續性[!DNL Redis's]。
+[!DNL Redis]是記憶體駐留，並將資訊儲存到儲存空間。 **[!UICONTROL Redis changes since last db save]**&#x200B;框架表示自上次資料庫儲存至儲存體後發生的記憶體變更次數。 如需[!DNL Redis's]持續性的詳細解釋，請參閱[Redis持續性](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)。
 
 ## [!UICONTROL Redis synchronization from Log]
 

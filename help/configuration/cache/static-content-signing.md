@@ -8,28 +8,43 @@ autotag-review: '2026-06-22T21:48:08.334Z'
 TQID: 'https://experienceleague.adobe.com/vagWBVnjIS7tjnwVE5Dk56VDmPtbPgjsNVLBHSlOc-s'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: d05f97c9-0a96-5792-92cf-f66ce7326e3a
+    internal-label: SCD
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+    internal-label: Implementation
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: 372
+source-wordcount: '532'
 ht-degree: 0%
-
 ---
-
 # 靜態內容簽署和瀏覽器快取失效
 
 為了改善效能，Commerce會為靜態資源（例如影像、JavaScript和CSS檔案）設定`Expires`標頭。
-在靜態資源上設定`Expires`標頭，可告知瀏覽器在該URL快取資源並提供快取版本，直到它過期為止。
+在靜態資源上設定`Expires`標頭，會告訴瀏覽器快取該URL上的資源，並提供快取的版本，直到它過期為止。
 這是快取靜態資源的常見[最佳實務](https://developer.yahoo.com/performance/rules.html#expires=)。
 
 當瀏覽器快取靜態資源，且該資源在伺服器上變更時，您必須清除瀏覽器快取，以便下載新版本。

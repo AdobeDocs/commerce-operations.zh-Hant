@@ -1,17 +1,40 @@
 ---
-title: ACSD-64813：透過REST API取消指派 [!DNL B2B] 共用目錄中的類別緩慢
-description: 套用ACSD-64813修補程式，修正透過REST API在 [!DNL B2B] 共用目錄中取消指派類別緩慢的Adobe Commerce問題。
+title: ACSD-64813：透過REST API取消指派[!DNL B2B]共用目錄中的類別緩慢
+description: 套用ACSD-64813修補程式，修正透過REST API在[!DNL B2B]共用目錄中取消指派類別緩慢的Adobe Commerce問題。
 feature: B2B, REST, Categories
 role: Admin, Developer
 type: Troubleshooting
 exl-id: e6fd89c2-d3c0-462f-b328-7a80b456d96d
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '398'
 ht-degree: 0%
-
 ---
-
 # ACSD-64813：透過REST API取消指派[!DNL B2B]共用目錄中的類別緩慢
 
 ACSD-64813修補程式修正了透過REST API在[!DNL B2B]共用目錄中取消指派類別緩慢的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.65時，即可使用此修補程式。 修補程式ID為ACSD-64813。 請注意，此問題已排程在Adobe Commerce 2.4.9中修正。

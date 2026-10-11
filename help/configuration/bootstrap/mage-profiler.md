@@ -2,13 +2,22 @@
 title: 啟用設定檔分析
 description: 深入瞭解如何讓MAGE Profiler搭配您的分析工具使用。
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
-
 ---
-
 # 啟用設定檔分析
 
 使用Commerce設定檔時，您可以：
@@ -37,8 +46,8 @@ Commerce在[`Magento\Framework\Profiler`](https://github.com/magento/magento2/bl
 
   您可以使用下列其中一個值來啟用特定的效能評測器：
 
-   - 使用[`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)的`csvfile`
-   - 任何其他值（除了`2`），包括使用[`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)的空白值
+  - 使用[`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)的`csvfile`
+  - 任何其他值（除了`2`），包括使用[`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)的空白值
 
 - `2`以啟用相依性圖形。
 

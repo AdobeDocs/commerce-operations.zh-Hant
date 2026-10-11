@@ -5,13 +5,23 @@ feature: Catalog Management
 role: Admin
 exl-id: 2ced2177-aeff-4c36-8d34-6028539b66bd
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
-
 ---
-
 # MDVA-43718：存取共用目錄時出現「消費者無權存取資源」錯誤
 
 MDVA-43718修補程式解決錯誤&#x200B;*消費者無權存取%resources的問題。* 從自訂整合存取共用目錄時顯示。 安裝[品質修補工具(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.15時，即可使用此修補程式。 修補程式ID為MDVA-43718。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。

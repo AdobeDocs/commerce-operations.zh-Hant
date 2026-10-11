@@ -5,13 +5,30 @@ feature: Price Rules, Price Indexer
 role: Admin, Developer
 exl-id: 418c7c40-83ee-4cd9-8ebb-b356886ffb58
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a507b1ed-4937-53da-97ae-57d36bd5b9e0
+    internal-label: Price Rules
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: b0d35b91-b9b0-5983-b37c-f35bd2650b53
+    internal-label: Price Indexer
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
-
 ---
-
 # ACSD-61756：由於缺少資料庫索引，`AdvancedSalesRule`個篩選器的效能降低
 
 套用ACSD-61756修補程式，藉由新增遺漏的資料庫索引來改善`AdvancedSalesRule`篩選器的效能。 這修正了`magento_salesrule_filter`查詢在不使用索引的情況下執行完整表格掃描，導致在表格中有許多記錄時效能降低的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54時，即可使用此修補程式。 修補程式ID為ACSD-61756。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。

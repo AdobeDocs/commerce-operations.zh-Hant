@@ -1,16 +1,33 @@
 ---
 title: Adobe Commerce的管理警報
-description: 如果您是雲端基礎結構專業版的Adobe Commerce規劃架構客戶，則可以使用受管理警報來瞭解您網站的健康情況。 如果您是雲端基礎結構入門計畫架構客戶的Adobe Commerce，您將只會收到 [!DNL Apdex] 和錯誤率條件的警示。
+description: 如果您是雲端基礎結構專業版的Adobe Commerce規劃架構客戶，則可以使用受管理警報來瞭解您網站的健康情況。 如果您是雲端基礎結構入門計畫架構客戶的Adobe Commerce，您將只會收到[!DNL Apdex]和錯誤率條件的警示。
 feature: Observability, Support, Tools and External Services
 role: Admin
 exl-id: 3fc4b07f-4e27-4833-97a9-cf9741ae5648
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '591'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce的管理警報
 
 

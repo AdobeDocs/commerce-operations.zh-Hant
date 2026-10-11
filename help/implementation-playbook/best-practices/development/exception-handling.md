@@ -4,13 +4,23 @@ description: 瞭解開發Adobe Commerce專案時記錄例外狀況的建議方�
 feature: Best Practices
 role: Developer
 exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
-source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '589'
 ht-degree: 0%
-
 ---
-
 # 例外狀況處理最佳實務
 
 如果例外狀況未以例外狀況模型作為內容寫入`exception.log`檔案，則無法在New Relic或其他PSR-3單一記錄檔相容記錄儲存體中正確識別及分析該例外狀況。 僅記錄例外狀況的一部分（或將其記錄到錯誤的檔案）會在忽略例外狀況時導致生產中的錯誤。
@@ -31,7 +41,7 @@ try {
 }
 ```
 
-此方法會依照`$e->getMessage`PSR-3內容標準`$e`，自動將[儲存至記錄訊息，並將](https://www.php-fig.org/psr/psr-3/#13-context)物件儲存至內容。 這已在`\Magento\Framework\Logger\Monolog::addRecord`內完成。
+此方法會依照[PSR-3內容標準](https://www.php-fig.org/psr/psr-3/#13-context)，自動將`$e->getMessage`儲存至記錄訊息，並將`$e`物件儲存至內容。 這已在`\Magento\Framework\Logger\Monolog::addRecord`內完成。
 
 ### ![正確](../../../assets/yes.svg)靜音訊號
 

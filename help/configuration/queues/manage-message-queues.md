@@ -2,13 +2,22 @@
 title: 管理訊息佇列
 description: 瞭解如何從Adobe Commerce的命令列管理訊息佇列。
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
-
 ---
-
 # 管理訊息佇列
 
 您可以使用cron作業或外部程式管理員從命令列管理訊息佇列，以確保消費者正在擷取訊息。 這適用於所有支援的訊息代理，包括RabbitMQ (AMQP)、Apache ActiveMQ Artemis (STOMP)和MySQL配接器。

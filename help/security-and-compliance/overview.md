@@ -2,13 +2,22 @@
 title: 安全性與合規性
 description: 瞭解您的Adobe Commerce專案的安全性、隱私權和合規性資源。 瞭解如何維護安全環境並符合法規要求。
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
-source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%
-
 ---
-
 # 安全性與合規性
 
 本節包含安全性、隱私權和法規遵循的相關資訊。

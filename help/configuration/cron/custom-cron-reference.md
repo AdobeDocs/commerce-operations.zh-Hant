@@ -2,13 +2,22 @@
 title: 自訂cron工作和cron群組參考
 description: 瞭解如何使用Adobe Commerce中的cron群組和crontab來自訂cron。 探索自訂模組設定和排程工作設定。
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '549'
 ht-degree: 0%
-
 ---
-
 # 自訂crons參考
 
 此主題可協助您為自訂模組設定crontab以及選擇性的cron群組。 如果您的自訂模組需要定期排程工作，您必須為該模組設定crontab。 _crontab_&#x200B;是cron工作設定。
@@ -123,9 +132,9 @@ _cron群組_&#x200B;是邏輯群組，可讓您一次輕鬆執行一個以上處
 
 ## 停用cron工作
 
-Cron工作沒有我們為`disable`觀察者[所擁有的](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers)功能。 但是，可以使用下列技巧停用cron工作： `schedule`一次包含永遠不會發生的日期的時間。
+Cron工作沒有我們為[觀察者](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers)所擁有的`disable`功能。 但是，可以使用下列技巧停用cron工作： `schedule`一次包含永遠不會發生的日期的時間。
 
-例如，停用`visitor_clean`模組中定義的`Magento_Customer` cron工作：
+例如，停用`Magento_Customer`模組中定義的`visitor_clean` cron工作：
 
 ```xml
 ...

@@ -2,13 +2,22 @@
 title: 進階JavaScript套件組合
 description: 瞭解Adobe Commerce中的進階JavaScript套件組合。 探索實作指引和最佳化策略。
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2301'
 ht-degree: 0%
-
 ---
-
 # 進階JavaScript套件組合
 
 搭配JavaScript模組以獲得更優異的效能，需要減少兩個專案：
@@ -48,7 +57,7 @@ Commerce套件組合可減少每頁的連線數量，但即使要求的頁面可
 
 >[!NOTE]
 >
->我們不建議使用&#x200B;**[!UICONTROL Merge JavaScript Files]**。 此設定僅針對頁面中HEAD區段的同步載入JavaScript而設計，可能會導致套件組合和[!DNL RequireJS]邏輯無法正確運作。 保留它只是為了回溯相容性，啟用HTTP/2時不會提供效能優勢。
+>我們不建議使用&#x200B;**[!UICONTROL Merge JavaScript Files]**。 此設定僅針對頁面HEAD區段中同步載入的JavaScript而設計，可能會導致套件組合和[!DNL RequireJS]邏輯無法正確運作。 保留它只是為了回溯相容性，啟用HTTP/2時不會提供效能優勢。
 >如果您已啟用&#x200B;**[!UICONTROL Merge JavaScript Files]**&#x200B;且遇到問題，請嘗試在套用任何修補程式之前先停用它。 如果無法停用合併，請參閱[ACSD-67908](../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md)。
 
 若要從命令列啟用內建合併：

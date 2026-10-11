@@ -5,13 +5,28 @@ feature: B2B, Orders
 role: Admin
 exl-id: 6319931b-9cf1-4004-b302-737863c53ff8
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
-
 ---
-
 # MDVA-42509：無法為快速訂單上傳CSV，導致「無法傳送Cookie」錯誤
 
 MDVA-42509修補程式解決無法為快速訂購上傳CSV而導致&#x200B;*無法傳送Cookie*&#x200B;錯誤的問題。 安裝[品質修補工具(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.16時，即可使用此修補程式。 修補程式ID為MDVA-42509。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。

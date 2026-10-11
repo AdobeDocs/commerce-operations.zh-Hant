@@ -5,13 +5,30 @@ feature: REST, Checkout, Orders
 role: Admin
 exl-id: 27c74803-a3f3-46bc-9eb8-8e2c72c30cd9
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
-
 ---
-
 # ACSD-47920：即使&#x200B;**[!UICONTROL Allow Guest Checkout]**&#x200B;已關閉，訪客使用者仍可透過REST API下訂單
 
 ACSD-47920修補程式修正了即使在&#x200B;**[!UICONTROL Allow Guest Checkout]**&#x200B;關閉時，仍可透過REST API以訪客使用者身分下達訂單的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.24時，即可使用此修補程式。 修補程式ID為ACSD-47920。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。

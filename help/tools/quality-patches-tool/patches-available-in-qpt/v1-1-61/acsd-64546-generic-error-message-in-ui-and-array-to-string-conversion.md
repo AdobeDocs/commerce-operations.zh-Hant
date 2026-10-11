@@ -5,13 +5,25 @@ feature: Shipping/Delivery
 role: Admin, Developer
 exl-id: 458371bc-4afe-4675-b090-5797e05c5b88
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
-
 ---
-
 # ACSD-64546：UI中的一般錯誤訊息，以及UPS標籤建立期間的&#x200B;*陣列到字串的轉換*&#x200B;例外狀況
 
 ACSD-64546修補程式修正UI中出現一般錯誤訊息，且UPS標籤建立期間會記錄&#x200B;*陣列至字串轉換*&#x200B;例外狀況的問題，確保UI和記錄中顯示正確的錯誤。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61時，即可使用此修補程式。 修補程式ID為ACSD-64546。 請注意，此問題已排程在Adobe Commerce 2.4.8中修正。

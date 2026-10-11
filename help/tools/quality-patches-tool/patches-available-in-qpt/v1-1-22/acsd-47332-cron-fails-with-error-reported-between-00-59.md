@@ -5,13 +5,23 @@ feature: Configuration
 role: Admin
 exl-id: ffe6c8f7-0e4c-4a22-853a-45d708bf8164
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
-
 ---
-
 # ACSD-47332：只有在00:00到00:59 UTC之間執行時，cron才會失敗並回報錯誤
 
 ACSD-47332修補程式修正cron失敗並出現錯誤的問題，此錯誤僅在00:00 UTC至00:59之間執行時報告。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.22時，即可使用此修補程式。 修補程式ID為ACSD-47332。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。

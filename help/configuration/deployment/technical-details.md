@@ -2,13 +2,22 @@
 title: 技術細節
 description: 閱讀有關管道部署的技術細節、設定型別和建議的工作流程。
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1282'
 ht-degree: 0%
-
 ---
-
 # 技術細節
 
 本主題說明Commerce 2.2和更新版本中管道部署的技術實作詳細資訊。 改良功能可劃分為下列領域：
@@ -69,16 +78,16 @@ ht-degree: 0%
 - 您無法在「管理員」中啟用或停用快取型別
 - 開發人員設定無法使用（**商店** >設定> **設定** >進階> **開發人員**），包括：
 
-   - 簡化CSS、JavaScript和HTML
-   - 合併CSS與JavaScript
-   - 伺服器端或使用者端LESS編譯
-   - 內嵌翻譯
-   - 如前所述，`config.php`或`env.php`中的任何組態設定已鎖定，無法在Admin中編輯。
-   - 您只能將管理員地區設定變更為已部署主題使用的語言
+  - 簡化CSS、JavaScript和HTML
+  - 合併CSS與JavaScript
+  - 伺服器端或使用者端LESS編譯
+  - 內嵌翻譯
+  - 如前所述，`config.php`或`env.php`中的任何組態設定已鎖定，無法在Admin中編輯。
+  - 您只能將管理員地區設定變更為已部署主題使用的語言
 
-     下圖顯示管理員中&#x200B;**帳戶設定** > **介面地區設定**&#x200B;清單的範例，其中只顯示兩個已部署的地區設定：
+    下圖顯示管理員中&#x200B;**帳戶設定** > **介面地區設定**&#x200B;清單的範例，其中只顯示兩個已部署的地區設定：
 
-     ![您只能將Admin地區設定變更為已部署的地區設定](../../assets/configuration/split-deploy-admin-locale.png)
+    ![您只能將Admin地區設定變更為已部署的地區設定](../../assets/configuration/split-deploy-admin-locale.png)
 
 - 您無法使用Admin變更任何範圍的地區設定。
 

@@ -4,19 +4,28 @@ description: 瞭解Adobe Commerce測試版以及如何參與。
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: efdc4734b5c0db8efc0c83bef41e7ccaafd9b6af
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce測試版
 
 適用於[Adobe Commerce產品解決方案](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions)的Beta方案是商家存取發行前功能與程式碼、提供意見回饋，以及引導Adobe Commerce未來的方法。 測試版計畫有兩種型別：
 
 - 公用Beta：公用Beta計畫可供所有Adobe Commerce客戶和合作夥伴使用
-- Private Beta：私人測試版計畫需要根據參與資格的條件進行核准
+- Private beta：私人測試版計畫需要根據參與資格的條件進行核准
 
 >[!IMPORTANT]
 >
@@ -48,7 +57,7 @@ ht-degree: 0%
 
 若要分享此測試版功能的意見回饋，請傳送電子郵件至[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。
 
-### 搜尋比對和排名(Private Beta)
+### 搜尋比對和排名(Private beta)
 
 Adobe正在改善產品探索如何在[!DNL Adobe Commerce]和[!DNL Adobe Commerce Optimizer]上為[!DNL Live Search]的搜尋結果排名。 更新會將&#x200B;**精確和接近的字詞比對**&#x200B;優先排序，然後比對&#x200B;**所有查詢詞出現在相同可搜尋屬性**&#x200B;中的位置，最後&#x200B;**跨欄位**&#x200B;比對（包括支援自動完成樣式建議的行為）。 該分層模型可協助高意圖查詢先顯示最相關的產品，同時仍傳回有用的替代方案。
 

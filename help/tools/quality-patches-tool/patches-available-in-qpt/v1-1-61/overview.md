@@ -1,17 +1,32 @@
 ---
 title: 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.61
-description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.61中可用修補程式所修正問題的詳細說明。
+description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.61中可用修補程式所修正問題的詳細說明。
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 065235fb-12e3-448b-bc37-51efdf95393a
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '339'
 ht-degree: 0%
-
 ---
-
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.61
 
 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.61中可用修補程式所修正問題的詳細說明。
@@ -19,8 +34,8 @@ ht-degree: 0%
 QPT v1.1.61包含下列修補程式：
 
 1. **ACP2E-3689**：修正類別樹狀結構在較深層級顯示並反映錨點/非錨點關係的多個問題。
-1. **ACP2E-3705**：修正設定`indexer_update_all_views`時`MAGE_INDEXER_THREADS_COUNT` cron執行失敗的問題。
-1. **ACSD-63883**：修正[!UICONTROL Requisition List]回應中`items_count`傳回不正確[!DNL GraphQL]的問題。
+1. **ACP2E-3705**：修正設定`MAGE_INDEXER_THREADS_COUNT`時`indexer_update_all_views` cron執行失敗的問題。
+1. **ACSD-63883**：修正[!DNL GraphQL]回應中[!UICONTROL Requisition List]傳回不正確`items_count`的問題。
 1. **ACSD-63974**：修正當專案過多時，[!UICONTROL Requisition List]頁面載入時間過長的問題，方法是在店面的[!UICONTROL Requisition List]格線新增分頁功能，只顯示限製為每頁記錄數的記錄部分，而非一次顯示所有記錄。
 1. **ACSD-64178**：修正數千個產品屬性時，[!UICONTROL Attribute Set]編輯頁面載入緩慢的問題。
 1. **ACSD-64209**：修正cron排程器擷取所有可協商的引號，但不排除狀態為&#x200B;**[!UICONTROL ordered]**&#x200B;的引號，進而觸發電子郵件或電子郵件的問題。

@@ -4,13 +4,27 @@ description: 使用我們完整的啟動後支援和維護最佳實務，確保A
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: f02a13ca-c851-4508-a2bd-e5bc196a330c
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2297'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce的啟動後支援與維護
 
 上市後支援和維護是確保Adobe Commerce商店順暢運作、執行良好、安全無虞，並繼續達成業務目標的關鍵。 此階段涉及持續監控、最佳化、錯誤修正、更新和使用者支援。 下列章節將&#x200B;**啟動後支援**&#x200B;劃分為主要類別：
@@ -122,7 +136,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如需套用修補程式和維護安全性的詳細資訊和逐步指示，請參閱[安全性修補程式發行說明](../../../release/release-notes/security/overview.md)和[如何套用安全性修補程式](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)。 您也應該檢閱[全網站分析工具](/help/tools/site-wide-analysis-tool/access.md)報告。
+>如需套用修補程式和維護安全性的詳細資訊和逐步指示，請參閱[安全性修補程式發行說明](../../../release/release-notes/security/overview.md)和[如何套用安全性修補程式](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)。 您也應該檢閱[全網站分析工具](/help/tools/site-wide-analysis-tool/access.md)報告。
 
 #### PCI法規遵循
 

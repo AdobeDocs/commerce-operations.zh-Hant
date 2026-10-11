@@ -3,13 +3,25 @@ title: 維護與支援概述
 description: 正確維護及支援您新啟動的Adobe Commerce實作。
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '531'
 ht-degree: 0%
-
 ---
-
 # 維護與支援概述
 
 消費者已經擁有比以往更多的選擇。 不乏爭相吸引注意力的品牌，因此消費者沒有理由審視您的競爭對手。 如我們所見，對消費者的忠誠度和耐心是很薄的。 他們不需要花太多時間就會放棄您的品牌，對他們來說，在電子商務方面表現不佳是很容易放棄的方式。
@@ -34,4 +46,4 @@ ht-degree: 0%
 
 部署Adobe Commerce時，請務必思考維護和支援策略中應包含哪些專案。
 Adobe Commerce授權包含專家支援。 如需專家支援與Adobe支援計畫的詳細資訊，請參閱[Adobe支援計畫](https://business.adobe.com/tw/customers/consulting-services/premier-support.html)。
-除了Adobe支援計畫之外，還有舊版的Magento支援條款。 若要瞭解哪些支援服務適用於您，請參閱您的合約以瞭解您擁有哪些支援合約，或聯絡您的Adobe客戶團隊。
+除了Adobe支援計畫，還有舊版Magento支援條款。 若要瞭解哪些支援服務適用於您，請參閱您的合約以瞭解您擁有哪些支援合約，或聯絡您的Adobe客戶團隊。

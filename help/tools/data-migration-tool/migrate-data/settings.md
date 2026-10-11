@@ -1,15 +1,24 @@
 ---
 title: 資料移轉設定
-description: 瞭解如何使用 [!DNL Data Migration Tool]開始將設定從Magento 1移轉至Magento 2。
+description: 瞭解如何使用[!DNL Data Migration Tool]開始將設定從Magento 1移轉至Magento 2。
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
-
 ---
-
 # 資料移轉設定
 
 `Settings`模式會移轉商店、網站和系統設定，例如運費、付款和稅捐設定。 根據我們的資料移轉[訂單](overview.md#migration-order)，您應該先移轉設定。

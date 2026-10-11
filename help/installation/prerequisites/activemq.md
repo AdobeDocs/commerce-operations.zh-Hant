@@ -1,13 +1,22 @@
 ---
 title: 訊息代理人(ActiveMQ Artemis)
 description: 請依照下列步驟，針對Adobe Commerce的內部部署安裝來安裝和設定Apache ActiveMQ Artemis訊息代理人。
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '938'
 ht-degree: 0%
-
 ---
-
 # 訊息代理人(ActiveMQ Artemis)
 
 Adobe Commerce也透過Simple Text Oriented Messaging Protocol (STOMP)支援ActiveMQ Artemis開放原始碼訊息代理人。 它提供可靠且可擴充的傳訊系統，提供彈性的STOMP式整合。
@@ -98,8 +107,8 @@ docker rm artemis
 
 在Docker容器運行後，您可以訪問：
 
-- **網頁主控台**： http://localhost:8161/主控台（預設認證： artemis/artemis）
-- **STOMP連線埠**： localhost:61613 （用於Adobe Commerce連線）
+- **網頁主控台**： http://localhost:8161/console （預設認證： artemis/artemis）
+- **STOMP連線埠**： localhost：61613 （適用於Adobe Commerce連線）
 
 >[!NOTE]
 >

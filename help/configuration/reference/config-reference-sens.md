@@ -3,13 +3,27 @@ title: 敏感路徑和系統特定路徑
 description: 瞭解Adobe Commerce的敏感和系統特定設定路徑。 探索安全的設定和環境變數管理。
 feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4570'
 ht-degree: 0%
-
 ---
-
 # 敏感及系統專屬設定
 
 本主題列出系統特定和敏感設定的組態路徑：
@@ -171,9 +185,9 @@ ht-degree: 0%
 
 這些組態值可在&#x200B;**存放區** >設定> **組態** > **目錄** > **詳細目錄**&#x200B;中的管理員中使用。
 
-|名稱|設定路徑| Commerce版本支援|是否已加密？ |系統專用？ |敏感？ | |
---------------|--------------|--------------|--------------|--------------|--------------|
-| Google API金鑰| `cataloginventory/source_selection_distance_based_google/api_key` ||加密| |敏感|
+|名稱 |設定路徑 | Commerce版本支援|加密？ |系統專用？ |敏感？ | |
+|--------------|--------------|--------------|--------------|--------------|--------------| |
+| Google API金鑰 | `cataloginventory/source_selection_distance_based_google/api_key` |  |已加密 | |敏感 |
 
 ### XML Sitemap敏感路徑和系統特定路徑
 

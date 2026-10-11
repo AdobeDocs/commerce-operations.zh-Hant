@@ -1,15 +1,24 @@
 ---
 title: 移轉資料
-description: 瞭解如何使用 [!DNL Data Migration Tool]開始將資料從Magento 1移轉至Magento 2。
+description: 瞭解如何使用[!DNL Data Migration Tool]開始將資料從Magento 1移轉至Magento 2。
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
-
 ---
-
 # 移轉資料
 
 開始之前，請採取下列步驟進行準備：
@@ -85,7 +94,7 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 >[!NOTE]
 >
->[!DNL Data Migration Tool]在執行時儲存其目前的進度。 如果發生錯誤或使用者介入導致其停止執行，「工具」會以最後已知的良好狀態繼續進度。 若要強制從頭執行[!DNL Data Migration Tool]，請使用`--reset`引數。 在這種情況下，建議您還原Magento 2資料庫傾印，以防止重複先前移轉的資料。
+>[!DNL Data Migration Tool]在執行時儲存其目前的進度。 如果發生錯誤或使用者介入導致其停止執行，「工具」會以最後已知的良好狀態繼續進度。 若要強制從頭執行[!DNL Data Migration Tool]，請使用`--reset`引數。 在此情況下，建議您還原Magento 2資料庫傾印，以防止複製先前移轉的資料。
 
 
 ## 可能的一致性錯誤

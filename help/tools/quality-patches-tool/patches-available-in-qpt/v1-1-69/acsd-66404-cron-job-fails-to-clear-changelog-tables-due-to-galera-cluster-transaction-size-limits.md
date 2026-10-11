@@ -1,17 +1,29 @@
 ---
-title: ACSD-66404：由於 [!DNL Galera Cluster] 交易大小限制，Cron作業無法清除changelog表格
-description: 套用ACSD-66404修補程式，修正cron工作無法清除變更記錄檔表格的Adobe Commerce問題，並在這些表格中有大量資料時造成 [!DNL Galera Cluster] 問題。
+title: ACSD-66404：由於[!DNL Galera Cluster]個交易大小限制，Cron作業無法清除changelog表格
+description: 套用ACSD-66404修補程式以修正cron工作無法清除變更記錄檔表格，且在這些表格中有大量資料時造成[!DNL Galera Cluster]問題的Adobe Commerce問題。
 feature: System
 role: Admin, Developer
 type: Troubleshooting
 exl-id: d7ad3b11-aee6-4a26-8892-369fbfe6932e
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '382'
 ht-degree: 0%
-
 ---
-
 # ACSD-66404：由於[!DNL Galera Cluster]個交易大小限制，Cron作業無法清除changelog表格
 
 ACSD-66404修補程式修正cron工作無法清除changelog表格，在處理大量資料時導致[!DNL Galera Cluster]問題的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69時，即可使用此修補程式。 修補程式ID為ACSD-66404。 請注意，此問題已排程在Adobe Commerce 2.4.9中修正。

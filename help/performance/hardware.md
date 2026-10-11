@@ -3,13 +3,27 @@ title: 硬體建議
 description: 瞭解最佳化Adobe Commerce效能的硬體建議。 瞭解生產部署的CPU、記憶體和儲存需求。
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%
-
 ---
-
 # 硬體建議
 
 ## CPU
@@ -26,7 +40,7 @@ N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 
 ### PHP
 
-根據您的系統部署方式，Magento有不同的PHP記憶體需求。  一般來說，如果您要設定單一伺服器存放區，建議您為2G設定PHP記憶體。  如果您使用管道部署來設定網站，建議在您的組建伺服器上使用2 GB，在網頁節點上使用1 GB。
+根據系統部署方式，Magento有不同的PHP記憶體需求。  一般來說，如果您要設定單一伺服器存放區，建議您為2G設定PHP記憶體。  如果您使用管道部署來設定網站，建議在您的組建伺服器上使用2 GB，在網頁節點上使用1 GB。
 
 案例和預期的PHP記憶體需求：
 

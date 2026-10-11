@@ -2,13 +2,22 @@
 title: 內部部署安裝概述
 description: 了解 Adobe Commerce 的內部部署安裝程序。 探索伺服器需求、設定步驟和部署最佳做法。
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 3%
-
 ---
-
 
 # 內部部署安裝概述
 
@@ -33,7 +42,7 @@ ht-degree: 3%
 您可以完全掌控環境，提供更優異的自訂與彈性，但您有責任確保基礎建設的效能、安全性與擴充性。 例如，您負責下列工作：
 
 - 所有Adobe Commerce內部部署系統的設計、實作、設定、維護、疑難排解和效能測試。
-   - 伺服器、作業系統、資料庫、[!DNL PHP]、搜尋、快取、整頁快取，以及內容傳遞網路。 通用主題可以包括（但不限於） [!DNL Nginx/Apache]、[!DNL PHP]、[!DNL MySQL/MariaDB]、[!DNL Redis]、[!DNL Elasticsearch/OpenSearch]、[!DNL RabbitMQ]、[!DNL Varnish]、[!DNL DNS]、[!DNL SSL/TLS certificates]以及使用的任何[!DNL CDN]。
+  - 伺服器、作業系統、資料庫、[!DNL PHP]、搜尋、快取、整頁快取，以及內容傳遞網路。 通用主題可以包括（但不限於） [!DNL Nginx/Apache]、[!DNL PHP]、[!DNL MySQL/MariaDB]、[!DNL Redis]、[!DNL Elasticsearch/OpenSearch]、[!DNL RabbitMQ]、[!DNL Varnish]、[!DNL DNS]、[!DNL SSL/TLS certificates]以及使用的任何[!DNL CDN]。
 - 容量規劃、自動擴充、群集、備份、災難回覆
 - 所有產品和客戶資料、設計、組態和設定、應用程式和資料庫維護、程式碼部署、版本升級和修補應用程式
 - 透過APM/記錄/警示進行監視和警示（例如，[!DNL New Relic]、[!DNL Datadog]、[!DNL ELK]）

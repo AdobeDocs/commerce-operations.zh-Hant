@@ -1,17 +1,27 @@
 ---
-title: ACSD-47076： [!DNL Vimeo] 影片無法在店面播放
-description: 套用ACSD-47076修補程式以修正Adobe Commerce上 [!DNL Vimeo] 影片無法在店面播放的問題。
+title: ACSD-47076：無法在店面播放[!DNL Vimeo]影片
+description: 套用ACSD-47076修補程式以修正Adobe Commerce上[!DNL Vimeo]影片無法在店面播放的問題。
 feature: Storefront
 role: Admin
 exl-id: 156b961b-e507-44fe-9b26-d73136e336a9
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '339'
 ht-degree: 0%
-
 ---
-
 # ACSD-47076：無法在店面播放[!DNL Vimeo]影片
 
 ACSD-47076修補程式修正無法在店面播放[!DNL Vimeo]影片的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.21時，即可使用此修補程式。 修補程式ID為ACSD-47076。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。

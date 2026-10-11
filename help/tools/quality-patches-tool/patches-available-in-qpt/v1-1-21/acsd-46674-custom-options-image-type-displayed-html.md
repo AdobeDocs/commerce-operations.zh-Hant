@@ -5,13 +5,25 @@ feature: Communications, Personalization
 role: Developer
 exl-id: 123ca7b5-02da-4573-897f-ff8adb184389
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
-
 ---
-
 # ACSD-46674：在客戶電子郵件中顯示為HTML的影像型別的自訂選項
 
 ACSD-46674修補程式修正客戶電子郵件中將影像型別的自訂選項顯示為HTML的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.21時，即可使用此修補程式。 修補程式ID為ACSD-46674。 請注意，此問題已排程在Adobe Commerce 2.4.6中修正。

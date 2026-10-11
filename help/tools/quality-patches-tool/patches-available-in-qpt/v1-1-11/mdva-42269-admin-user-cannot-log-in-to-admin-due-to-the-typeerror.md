@@ -5,13 +5,26 @@ feature: Admin Workspace
 role: Admin
 exl-id: 42ad4bb5-950f-476d-bf55-931b38bcb937
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
-
 ---
-
 # MDVA-42269：由於「TypeError」錯誤，管理員使用者無法登入管理員
 
 MDVA-42269修補程式修正了管理員使用者因TypeError而無法登入Admin的問題。 安裝[品質修補工具(QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.11時，即可使用此修補程式。  修補程式ID為MDVA-42269。  最新的修補程式更新為QPT 1.1.15。 請注意，此問題已排程在Adobe Commerce 2.4.5中修正。

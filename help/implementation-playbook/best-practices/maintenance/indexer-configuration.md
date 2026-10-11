@@ -4,13 +4,25 @@ description: 遵循索引器設定的最佳實務，以維護並最佳化網站�
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 29168544e3a33b874b104f308bd53cb475ac2638
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '346'
 ht-degree: 0%
-
 ---
-
 # 索引器設定的最佳實務
 
 為了最佳化及維護網站效能，請使用本文所述的效能最佳實務來檢閱及更新索引器設定。
@@ -48,5 +60,5 @@ Adobe Commerce有兩種索引子模式： [!UICONTROL Update on Save]和[!DNL Up
 ## 其他資訊
 
 - [管理員使用者的索引管理](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- 使用Magento CLI的[索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=zh-Hant)
-- [開發人員的索引概觀](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [使用Magento CLI進行索引管理](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=zh-Hant)
+- [適用於開發人員的索引概觀](https://developer.adobe.com/commerce/php/development/components/indexing/)

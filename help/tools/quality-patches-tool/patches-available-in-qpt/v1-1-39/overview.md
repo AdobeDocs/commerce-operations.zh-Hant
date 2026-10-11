@@ -1,17 +1,32 @@
 ---
 title: 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.39
-description: 此小節提供 [!DNL Quality Patches Tool] (QPT) v1.1.39中可用修補程式所修正問題的詳細說明。
+description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.39中可用修補程式所修正問題的詳細說明。
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 6116f566-2ff8-4148-ab60-cec65f9b7a6f
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '274'
 ht-degree: 0%
-
 ---
-
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.39
 
 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.39中可用修補程式所修正問題的詳細說明。
@@ -26,8 +41,8 @@ QPT v1.1.39包含下列修補程式：
 1. **ACSD-54342**：修正錯誤的錯誤訊息&#x200B;*資料結構中的錯誤：匯入沒有有效資料的CSV檔案時，會混合值*。
 1. **ACSD-54660**：已新增輸入屬性&#x200B;*sort*，以便在GraphQL中依`sort_field`與`sort_direction`排序客戶訂單。
 1. **ACSD-54776**：修正未核取的&#x200B;*[!UICONTROL Use Default Value]*&#x200B;以及未儲存第二個網站、商店和商店檢視的非預設產品欄位值的問題。
-1. **ACSD-53998**：修正從客戶帳戶登出後，以&#x200B;**[!UICONTROL Dynamic Block]**&#x200B;為基礎的&#x200B;**[!UICONTROL Customer Segment]**&#x200B;無法正常運作的問題。
-1. **ACSD-53204**：修正&#x200B;*無法儲存產品。使用*&#x200B;端點同時要求將影像新增至產品相簿時發生`rest/V1/products/<sku>/media`錯誤。
-1. **ACSD-47657**：已新增AWS憑證的快取機制。 認證提供者現在會使用Magento快取來快取從AWS擷取的認證，以進行EC2設定。
+1. **ACSD-53998**：修正從客戶帳戶登出後，以&#x200B;**[!UICONTROL Customer Segment]**&#x200B;為基礎的&#x200B;**[!UICONTROL Dynamic Block]**&#x200B;無法正常運作的問題。
+1. **ACSD-53204**：修正&#x200B;*無法儲存產品。* 同時要求使用`rest/V1/products/<sku>/media`端點將影像新增至產品相簿時發生錯誤。
+1. **ACSD-47657**：已新增AWS憑證的快取機制。 憑證提供者現在會使用Magento快取來快取從AWS擷取的憑證，以進行EC2設定。
 
 使用左側的功能表，導覽至特定的修補程式頁面。
