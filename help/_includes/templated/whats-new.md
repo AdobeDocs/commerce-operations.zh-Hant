@@ -74,7 +74,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview">概觀：品質修補工具(QPT) v1.1.84</a>。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview">概觀：品質修補工具(QPT) v1.1.84</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -96,7 +96,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview">概觀：品質修補工具(QPT) v1.1.83</a>。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview">概觀：品質修補工具(QPT) v1.1.83</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -118,7 +118,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/monthly-isolated-security-patches">每月隔離安全性修補原則</a>，說明Adobe Commerce如何在完整安全性修補程式發行版本之間，於修補程式星期二提供目標、隔離的CVE修正，以及如何套用及驗證這些修正。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/monthly-isolated-security-patches">每月隔離安全性修補原則</a>，說明Adobe Commerce如何在完整安全性修補程式發行版本之間，於修補程式星期二提供目標、隔離的CVE修正，以及如何套用及驗證這些修正。</p>
 </td>
       <td>
         新主題
@@ -140,7 +140,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更正<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis/Valkey服務組態</a>指南，以澄清<code>VALKEY_BACKEND</code>和<code>REDIS_BACKEND</code>部署變數無法判斷Adobe Commerce實際使用的快取服務，且<code>VALKEY_USE_SLAVE_CONNECTION</code>/<code>REDIS_USE_SLAVE_CONNECTION</code>必須符合環境中實際可用的服務。</p>
+      <td><p>已更正<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis/Valkey服務組態</a>指南，以澄清<code>VALKEY_BACKEND</code>和<code>REDIS_BACKEND</code>部署變數無法判斷Adobe Commerce實際使用的快取服務，且<code>VALKEY_USE_SLAVE_CONNECTION</code>/<code>REDIS_USE_SLAVE_CONNECTION</code>必須符合環境中實際可用的服務。</p>
 </td>
       <td>
         技術
@@ -162,7 +162,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce修補自動化現已正式推出。 請參閱<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro">檔案</a>以瞭解更多資訊。</p>
+      <td><p>Adobe Commerce修補自動化現已正式推出。 請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/caps-tool/intro">檔案</a>以瞭解更多資訊。</p>
 </td>
       <td>
         重大更新，新主題
@@ -184,7 +184,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840 QPT 1.1.82修正的詳細說明： GraphQL產品查詢針對自訂存貨存貨上的庫存產品傳回null數量</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840 QPT 1.1.82修正的詳細說明： GraphQL產品查詢針對自訂存貨存貨上的庫存產品傳回null數量</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -206,7 +206,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新Commerce快取檔案，提供更清楚的內部部署與雲端指引，以及移至使用Symfony L2快取的Valkey的新移轉指引：<br /> — 更新<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/caching-overview">快取概觀與設定選項</a>。<br /> — 更新<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-types">設定快取前端和型別</a>。<br /> — 更新<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/cache-options">快取後端選項和存放裝置參考</a>。<br /> — 更新效能最佳化的<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache">L2快取設定</a>，提供從<code>RemoteSynchronizedCache</code>移轉至Symfony L2快取的指引。<br /> — 更新<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">最佳實務Valkey和Redis服務配置</a>，帶有雲特定的遷移步驟，可遷移到Valkey和Symfony L2快取。</p>
+      <td><p>更新Commerce快取檔案，提供更清楚的內部部署與雲端指引，以及移至使用Symfony L2快取的Valkey的新移轉指引：<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/caching-overview">快取概觀與設定選項</a>。<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/cache-types">設定快取前端和型別</a>。<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/cache-options">快取後端選項和存放裝置參考</a>。<br /> — 更新效能最佳化的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cache/level-two-cache">L2快取設定</a>，提供從<code>RemoteSynchronizedCache</code>移轉至Symfony L2快取的指引。<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">最佳實務Valkey和Redis服務配置</a>，帶有雲特定的遷移步驟，可遷移到Valkey和Symfony L2快取。</p>
 </td>
       <td>
         重大更新
@@ -228,7 +228,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新客戶如何在Cloud UI中檢查其服務相依性版本的步驟，並更新指南的連結，說明客戶如何在<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/security-enforcement-policy#action-1-verify-and-upgrade-third-party-software-dependencies">驗證及升級協力廠商軟體相依性</a>中為其商店產生升級相容性報告。</p>
+      <td><p>更新客戶如何在Cloud UI中檢查其服務相依性版本的步驟，並更新指南的連結，說明客戶如何在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/security-enforcement-policy#action-1-verify-and-upgrade-third-party-software-dependencies">驗證及升級協力廠商軟體相依性</a>中為其商店產生升級相容性報告。</p>
 </td>
       <td>
         技術
@@ -250,7 +250,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194">ACP2E-4194的QPT 1.1.82修正的詳細說明：具有未知篩選名稱的GraphQL要求會造成PHP例外狀況記錄檔</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194">ACP2E-4194的QPT 1.1.82修正的詳細說明：具有未知篩選名稱的GraphQL要求會造成PHP例外狀況記錄檔</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -258,7 +258,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d4202395c5b7bb5e8c4a95d8fb353ec0fc523fcb">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695">ACP2E-4695的QPT 1.1.82修正的詳細說明：因記憶體使用量過多而造成目錄規則索引器記憶體不足失敗</a>。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695">ACP2E-4695的QPT 1.1.82修正的詳細說明：因記憶體使用量過多而造成目錄規則索引器記憶體不足失敗</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -288,7 +288,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已移除<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#php-and-composer">2.4.9發行說明</a>中支援的PHP版本PHP 8.4，因為不建議將它用於生產用途，而且僅用於升級相容性。</p>
+      <td><p>已移除<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#php-and-composer">2.4.9發行說明</a>中支援的PHP版本PHP 8.4，因為不建議將它用於生產用途，而且僅用於升級相容性。</p>
 </td>
       <td>
         技術發行說明
@@ -296,7 +296,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/603bb70012a2f92ceeaad644d5252c4677a1a47c">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894">ACP2E-4894的QPT 1.1.82修正的詳細說明：啟用非同步索引時，新訂單會出現在「管理訂單」格線中，並延遲</a>。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894">ACP2E-4894的QPT 1.1.82修正的詳細說明：啟用非同步索引時，新訂單會出現在「管理訂單」格線中，並延遲</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -304,7 +304,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad40d94c1618f7e423fd6a773185b8fba48c2c72">認可</a></td>
     </tr>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698">ACP2E-4698 QPT 1.1.82修正的詳細說明：頁面產生器文字內嵌編輯會儲存絕對媒體URL，而非可攜式指示詞</a>。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698">ACP2E-4698 QPT 1.1.82修正的詳細說明：頁面產生器文字內嵌編輯會儲存絕對媒體URL，而非可攜式指示詞</a>。</p>
 </td>
       <td>
         新主題qpt
@@ -312,7 +312,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/68e5e99ac0717b0e358acd6acf9934044a917a82">認可</a></td>
     </tr>
     <tr>
-      <td><p>修正並完成<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">已發行版本</a>頁面上數個Adobe Commerce發行行的支援終止、延伸支援及其他安全性修正布建日期。</p>
+      <td><p>修正並完成<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/versions">已發行版本</a>頁面上數個Adobe Commerce發行行的支援終止、延伸支援及其他安全性修正布建日期。</p>
 </td>
       <td>
         技術
@@ -334,7 +334,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>，將RabbitMQ 3.13新增為Adobe Commerce 2.4.4-p18 （最新）的支援版本，解決Debian作業系統升級路徑的封鎖程式。</p>
+      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>，將RabbitMQ 3.13新增為Adobe Commerce 2.4.4-p18 （最新）的支援版本，解決Debian作業系統升級路徑的封鎖程式。</p>
 </td>
       <td>
         技術
