@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a6c0c808ce57bf00b1ee0cfac6a17008df4d4e22
+source-git-commit: 2456f0e28fa24e23eb7692a905c708007a00bd96
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Adobe已完整測試支援的版本。 Adobe客戶支援可提供支援版本的
 
 ## Commerce服務
 
-[Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)是一套Adobe代管功能，結合您的Commerce執行個體提供強大的功能及快速的回應時間。
+[Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)是一套Adobe代管功能，結合您的Commerce執行個體提供強大的功能及快速的回應時間。
 
 建議商戶使用最新版本的服務，以確保最高的穩定性和功能。 本檔案說明目前發行的版本。
 
@@ -54,4 +54,4 @@ Adobe已完整測試支援的版本。 Adobe客戶支援可提供支援版本的
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-10-07 07:57:15 -->
+<!-- Last updated from includes: 2026-10-12 21:19:44 -->
