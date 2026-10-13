@@ -1,9 +1,8 @@
 ---
-source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
-source-wordcount: '25765'
+source-wordcount: '29236'
 ht-degree: 0%
-
 ---
 # Magento Open Source發行說明(v2.4.8)
 
@@ -31,7 +30,7 @@ _AC-11673 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/d
 
 _AC-11911 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/7cabfb46)_
 
-#### 新增與MySQL 8.4 LTS for Magento CE的相容性
+#### 新增與Magento CE適用的MySQL 8.4 LTS的相容性
 
 沒有可用的說明。
 
@@ -150,7 +149,7 @@ _ACP2E-2709 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### 安裝新版Adobe Commerce時，設定索引子會預設為就緒狀態
 
-安裝Magento後，索引器的狀態預設必須是&#x200B;*就緒*&#x200B;狀態。
+安裝Magento之後，索引器的狀態預設必須是&#x200B;*就緒*&#x200B;狀態。
 
 _AC-11420 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/71432aeb)_
 
@@ -198,7 +197,7 @@ _AC-12726 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/e
 
 _AC-12825 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/edcd0dcc)_
 
-#### [2.4.8-beta1] TinyMCE 5移轉至TinyMCE 7 - Magento2-infra — 禁止的文字
+#### [2.4.8-beta1] TinyMCE 5移轉至TinyMCE 7 - Magento2-infra — 禁止的字詞
 
 將TinyMCE 5移轉至TinyMCE 7.3.0以成為Adobe Commerce的支援版本，之前的系統使用5.10.2，這已過時並回報安全性弱點
 
@@ -206,7 +205,7 @@ _AC-12844 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/e
 
 #### Require.js升級至最新版本2.3.7 （安全漏洞CVE-2024-38999）
 
-require.js更新至最新版本2.3.7。舊版回報安全性弱點
+require.js更新至最新版本2.3.7。 舊版回報安全性弱點
 
 _AC-12901 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/b34c0a75)_
 
@@ -454,7 +453,7 @@ _AC-13529 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/6
 
 #### 必要的電話號碼欄位沒有紅色星號
 
-電話號碼未顯示較早的紅色星號，但是  電話號碼是強制性的。 現在已修正紅色星號，可在電話號碼上顯示為強制欄位。
+電話號碼未顯示先前的紅色星號，但電話號碼是強制性的。 現在已修正紅色星號，可在電話號碼上顯示為強制欄位。
 
 _AC-13850 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/c699c206)_
 
@@ -482,13 +481,13 @@ _AC-7962 - [GitHub問題](https://github.com/magento/magento2/issues/36856) - [G
 
 _AC-8109 - [GitHub問題](https://github.com/magento/magento2/issues/36947) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/37642)_
 
-#### i18n:collect-phrases中斷翻譯完整性
+#### i18n:collect-phrases中斷轉譯完整性
 
-`bin/magento i18n:collect-phrases -o`命令現在可以正確收集和添加來自JavaScript和.phtml檔案的新短語，確保翻譯正確反映在翻譯檔案中。以前，系統未能將來自JavaScript檔案的多行翻譯短語和來自.phtml檔案的短語包括在翻譯檔案中，導致翻譯不完整或不正確。
+`bin/magento i18n:collect-phrases -o`命令現在可以正確從html檔案收集及新增新片語，確保翻譯檔案能正確反映翻譯。 以前，系統無法在翻譯檔案中包含來自JavaScript檔案的多行翻譯短語以及來自.phtml檔案的短語，導致翻譯不完整或不正確。
 
-_AC-9843 - [GitHub代碼貢獻](https://github.com/magento/magento2/commit/0c53bbf7)_
+_AC-9843 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/0c53bbf7)_
 
-#### 商店視圖名稱中的撇號替換為「
+#### 存放區檢視名稱中的單引號已取代為「
 
 格線的存放區檢視篩選器現在會正確顯示單引號
 
@@ -514,7 +513,7 @@ _ACP2E-2978 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### 無法匯出超過200個訂單
 
-已忽略先前提交之選定ID的伺服器要求大小限制，方法是將GET的HTTP要求變更為POST，以修正問題。 之前，由於GET請求大小的伺服器限制，因此會發生問題。
+已忽略先前提交之選定ID的伺服器要求大小限制，方法是將HTTP要求從GET變更為POST，以修正問題。 之前，由於GET要求大小的伺服器限制，因此會發生問題。
 
 _ACP2E-3033 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/93d50f8d)_
 
@@ -538,7 +537,7 @@ _ACP2E-3149 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### COD不適用於允許的特定國家
 
-現在，允許的特定國家/地區隨時可以使用「貨到付款」功能，並且   AC-3216如預期運作。
+現在，只要有需要，AC-3216也能如預期運作，特定允許的國家即可使用「貨到付款」。
 
 _ACP2E-3171 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/6f4805f8)_
 
@@ -624,7 +623,7 @@ _ACP2E-3559 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### B2B以客戶標題登入仍具有Magento品牌
 
-較早的店面標題顯示「您現在在&lt;商店名稱>上以&lt;客戶名稱>連線」與Magento品牌。 此問題現已修正，且標題會顯示為ADOBE品牌。
+早些時候，店面標題顯示「您現在在&lt;商店名稱>上是&lt;客戶名稱>」連線到Magento品牌。 此問題現已修正，且標題會顯示為ADOBE品牌。
 
 _AC-13628 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/96dec499)_
 
@@ -646,7 +645,7 @@ _ACP2E-3169 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 ### 管理UI，運送
 
-#### 中的優惠券代碼計數不會更新   如果訂單是多次出貨，則會顯示「管理優惠券代碼」標籤中的「使用時間」欄。
+#### 如果訂單是多次出貨，則在「管理優惠券代碼」標籤的「使用時間」欄中，優惠券代碼計數不會更新。
 
 之前，當訂購多批運送的訂單時，優惠券代碼計數沒有在管理優惠券代碼索引標籤的「使用時間」欄中更新。 現在，正確計數會顯示在兩個「使用時間」中，以反映多重送貨的所需值。
 
@@ -726,7 +725,7 @@ _ACP2E-2300 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 ### Analytics/報表、雲端
 
-#### Magento會捨棄大部分的New Relic cron交易#34108
+#### Magento捨棄大部分的New Relic cron交易#34108
 
 AC正在向NewRelic正確報告cron作業相關的交易。 以前，某些cron工作相關交易在NR中顯示為「OtherTransaction/Action/unknown」
 
@@ -794,7 +793,7 @@ _AC-10698 - [GitHub問題](https://github.com/magento/magento2/issues/37348) - [
 
 _AC-11641 - [GitHub問題](https://github.com/magento/magento2/issues/32781) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/32511)_
 
-#### Magento 2與現有客戶一起登入結帳時，Firefox瀏覽器中出現主控台錯誤
+#### Magento 2與現有客戶一起登入結帳時，在Firefox瀏覽器中發生主控台錯誤
 
 系統現在可讓使用者在結帳過程中登入，而不會在Firefox瀏覽器中遇到任何主控台錯誤。 之前，在結帳期間嘗試以現有客戶身分登入，會導致Firefox發生主控台錯誤。
 
@@ -818,7 +817,7 @@ _AC-11914 - [GitHub問題](https://github.com/magento/magento2/issues/38694) - [
 
 _AC-11993 - [GitHub問題](https://github.com/magento/magento2/issues/38742) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/1bafc571)_
 
-#### 優惠券代碼功能在Magento 2.4.7上的結帳頁面中無法正常運作
+#### 抵用券代碼功能在Magento 2.4.7上的結帳頁面中無法正常運作
 
 系統現在會針對虛擬及可下載的產品，啟用結帳頁面上的折扣代碼/優惠券輸入欄位，讓使用者如預期套用折扣代碼。 之前已停用折扣代碼/優惠券輸入，且按鈕標題文字顯示為「取消優惠券」，以防止使用者套用折扣代碼。
 
@@ -944,7 +943,7 @@ shippingAddressFromData現在會儲存至每個網站的本機儲存空間。 �
 
 _ACP2E-3402 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/078c387e)_
 
-#### 禮卡產品|購物車合併正在合併禮卡
+#### 禮卡產品 |購物車合併正在合併禮品卡
 
 現在已正確合併購物車中的資訊卡產品
 
@@ -1192,7 +1191,7 @@ _ACP2E-2874 - [GitHub程式碼貢獻](https://github.com/magento/inventory/commi
 
 _ACP2E-2905 - [GitHub問題](https://github.com/magento/magento2/issues/38506) - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/a4fbf702)_
 
-#### dynamic-rows.js:658編輯套件組合產品時未擷取的TypeError： dataRecord.slice
+#### dynamic-rows.js：658編輯套件組合產品時未擷取的TypeError： dataRecord.slice
 
 從套件產品中刪除選項時，瀏覽器主控台中沒有javascript錯誤。
 
@@ -1452,7 +1451,7 @@ _ACP2E-3053 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 _ACP2E-3345 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/1366ae5e)_
 
-#### 在Magento管理員中儲存後，前端看不到產品的[雲端]問題
+#### 在Magento Admin中儲存後，產品的[雲端]問題在前端看不到
 
 在修正後，擁有長名稱子產品的可設定產品不會在店面中遺失。
 
@@ -1494,7 +1493,7 @@ _AC-10845 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/c
 
 #### 更新至2.4.5-p8後的「區碼未設定」
 
-現在，當Magento_CSP模組啟用且「dev/js/translate_strategy」設為「embedded」時，系統可成功完成靜態內容部署程式，而不會觸發「未設定區碼」錯誤。 以前，在這些情況下，靜態內容部署程式會失敗並出現「未設定區碼」錯誤。
+現在，當Magento_CSP模組啟用且「dev/js/translate_strategy」設為「embedded」時，系統可成功完成靜態內容部署程式，而不會觸發「區碼未設定」錯誤。 以前，在這些情況下，靜態內容部署程式會失敗並出現「未設定區碼」錯誤。
 
 _AC-12283 - [GitHub問題](https://github.com/magento/magento2/issues/38845) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/38922)_
 
@@ -1852,7 +1851,7 @@ _AC-13345 - [GitHub問題](https://github.com/magento/magento2/issues/39246) - [
 
 #### [問題]移除我們不再支援的PHP版本的部分程式碼。
 
-移除Magento不再支援之PHP版本的程式碼
+移除Magento不再支援的PHP版本程式碼
 
 _AC-13348 - [GitHub問題](https://github.com/magento/magento2/issues/39361) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/39202)_
 
@@ -1892,13 +1891,13 @@ _AC-6754 - [GitHub問題](https://github.com/magento/magento2/issues/36163) - [G
 
 _AC-8353 - [GitHub問題](https://github.com/magento/magento2/issues/37253) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/37003)_
 
-#### [問題]從`@author`移除禁止的`Magento_Customer`標籤（第2部分）
+#### [問題]從`Magento_Customer`移除禁止的`@author`標籤（第2部分）
 
 系統現在會從某些模組中移除禁止的`@author`標籤，以遵守編碼標準，確保程式碼更乾淨且標準化。 以前，`@author`標籤存在於某些模組中，這違反了既定的編碼標準。
 
 _AC-8356 - [GitHub問題](https://github.com/magento/magento2/issues/37250) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/37000)_
 
-#### editorconfig語法中的空格中斷`[&lbrace;composer,auth&rbrace;.json]`的規則
+#### editorconfig語法中的空格中斷`[{composer,auth}.json]`的規則
 
 修正editorconfig中的語法錯誤後，系統現在可正確將4空格縮排套用至composer和auth.json檔案。 先前，由於editorconfig語法中有空格，這些檔案的格式不正確，有2個空格的縮排。
 
@@ -1916,7 +1915,7 @@ _AC-8662 - [GitHub問題](https://github.com/magento/magento2/issues/37453) - [G
 
 _AC-8984 - [GitHub問題](https://github.com/magento/magento2/issues/29335) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/29298)_
 
-#### 當新增具有所需州/地區的新國家/地區時，升級Magento會重設一般/地區/州_required 。
+#### 當新增具有所需州/區域的新國家/地區時，升級Magento會重設一般/區域/州_required。
 
 系統現在只會在新增具有必要狀態的新國家/地區時，將修改過的國家新增到「一般/地區/州_必要」設定，以防止假設地區已停用的自訂程式碼發生任何中斷。 以前，新增具有必要狀態的國家會將「一般/地區/州_必要」設定重設為具有必要狀態的預設國家/地區，這可能會中斷業務。
 
@@ -1976,7 +1975,7 @@ _ACP2E-3361 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 _ACP2E-3375 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/d75cff27)_
 
-#### [雲端] Magento：已刪除佇列訊息
+#### [雲端] Magento：佇列訊息已刪除
 
 佇列訊息現在已正確清除。 修正之前，假設正在使用SQL佇列系統，如果清除佇列訊息同時執行，則可能會刪除新訊息。
 
@@ -2012,7 +2011,7 @@ _ACP2E-3324 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 ### GraphQL
 
-#### 即使標頭值未通過驗證，Magento_GraphQl也會執行標頭處理
+#### Magento_GraphQl執行標頭處理，即使標頭值未通過驗證
 
 現在，系統確保只有在標頭值通過驗證時，才執行一次標頭處理，以增強安全性並防止潛在漏洞。 以前，即使標頭值未通過驗證，也會執行標頭處理，由於重複處理標頭值，導致潛在漏洞和意外行為。
 
@@ -2042,7 +2041,7 @@ _ACP2E-2642 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 _ACP2E-2653 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### 包含價格篩選器`&lbrace;from:"0"&rbrace;`的GraphQL產品呼叫未傳回任何結果
+#### 包含價格篩選器`{from:"0"}`的GraphQL產品呼叫未傳回任何結果
 
 先前，使用零價格篩選條件搜尋的graphql產品由於擲回例外狀況，完全沒有傳回任何結果。 現在，搜尋會如預期傳回結果。
 
@@ -2165,7 +2164,7 @@ _LYNX-486_
 
 _LYNX-488_
 
-#### 群組的產品縮圖應根據設定顯示     .
+#### 群組的產品縮圖應根據設定顯示。
 
 已解決問題以確保根據配置設定顯示分組的產品縮圖
 
@@ -2875,7 +2874,7 @@ _AC-12176 - [GitHub問題](https://github.com/magento/magento2/issues/38799) - [
 
 #### 支援Magento CLI中的Symfony CommandLoaderInterface
 
-這項變更允許延遲初始化命令，以縮短Magento CLI應用程式的初始化時間，直到需要命令為止。
+此變更允許延遲初始化命令，直到需要命令時為止，以縮短Magento CLI應用程式的初始化時間。
 
 _AC-13471 - [GitHub問題](https://github.com/magento/magento2/issues/29266) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/29355)_
 
@@ -2906,7 +2905,7 @@ _ACP2E-2910 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 ### 定價
 
-#### Magento2.4.6-p4訂單API簡單專案遺漏價格
+#### Magento2.4.6-p4訂單API簡單料號遺漏價格
 
 系統現在會在透過Order API查詢時正確顯示簡單產品的價格，確保資料呈現準確。 先前，簡單產品的價格在API回應中錯誤地顯示為零。
 
@@ -2944,7 +2943,7 @@ _AC-11992 - [GitHub問題](https://github.com/magento/magento2/issues/30857) - [
 
 _AC-13173 - [GitHub問題](https://github.com/magento/magento2/issues/38961) - [GitHub程式碼貢獻](https://github.com/magento/magento2/pull/38940)_
 
-#### [問題]修正Magento >= 2.4.7中套件組合及可下載產品頁面配置的損壞
+#### [問題]修正Magento >= 2.4.7中的組合破壞與可下載產品頁面配置
 
 已修正套件組合及可下載產品頁面的版面配置，確保所有裝置顯示方式一致且正確。 先前，由於產品資訊媒體區塊重新排列，這些頁面會遇到版面問題。
 
@@ -2994,7 +2993,7 @@ _ACP2E-3139 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 _ACP2E-3332 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/581b7ef1)_
 
-#### 購物車規則「整張購物車的固定金額折扣」  動作套用折扣不正確
+#### 購物車規則「整個購物車的固定金額折扣」動作套用折扣不正確
 
 從管理區域建立訂單時使用抵用券代碼時，無論大小寫為何，都能正確驗證。 之前，如果優惠券代碼與設定購物車規則代碼的字母大小寫不符，系統不會驗證優惠券代碼。
 
@@ -3336,7 +3335,7 @@ _ACP2E-2729 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 _ACP2E-3061 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/35b1b1da)_
 
-#### 網站標題|破壞客戶歡迎區段的特殊字元
+#### 網站頁首 |破壞客戶歡迎區段的特殊字元
 
 修正後，特殊字元可在客戶歡迎區段中正確顯示。
 

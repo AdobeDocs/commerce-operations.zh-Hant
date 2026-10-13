@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 758cab5d4002ddba607dadb3c4b44553adf8d8ba
+source-git-commit: 09eedab06d326baa0d4155274266dc3ef5356589
 workflow-type: tm+mt
-source-wordcount: '10740'
+source-wordcount: '10752'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,7 @@ ht-degree: 0%
       - [ACP2E-4875：在開啟具有大型通訊錄的客戶帳戶時，管理員使用者會登出](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-4639：請購單清單專案型別在Adobe Commerce GraphQL結構描述中拼寫錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)
       - [ACP2E-5223：目錄許可權索引包含從客戶群組排除的網站](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)
       - [ACP2E-5101：當索引子使用依排程更新時，Adobe Commerce B2B安裝失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)
       - [AC-12854：管理員重新排序會使用尾碼為–1的原始訂單編號](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)

@@ -14,16 +14,16 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2456f0e28fa24e23eb7692a905c708007a00bd96
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1614'
 ht-degree: 0%
 ---
 # 系統需求
 
 下列資訊摘要說明針對Adobe Commerce測試的軟體相依性和服務。
 
-雲端上Commerce的相依性存在某些差異。 雲端上Adobe Commerce的服務版本和相容性支援，取決於測試並部署至託管雲端環境的服務，有時與Adobe Commerce內部部署支援的版本不同。
+雲端基礎結構上Adobe Commerce的軟體相依性與內部部署不同。 Adobe會根據託管雲端環境中測試和部署的服務，判斷支援的服務版本和相容性。 這些版本有時與內部部署支援的版本不同。
 
 >[!IMPORTANT]
 >
@@ -48,36 +48,44 @@ Adobe僅支援下表所列的系統需求組合。 Adobe不會驗證或支援不
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-針對預設組態，服務與版本定義於[的`services.yaml`檔案](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)。
-如需詳細資訊，請參閱*雲端基礎結構上的Commerce*&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)。
+[`services.yaml`檔案](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)定義了預設的服務與版本。
+請參閱*雲端基礎結構上的Commerce*&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)。
 
 >[!TAB Commerce內部部署]
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
 **MySQL 8.0於2026年4月30日終止支援(EOS)。**
-在此日期之後，Adobe Commerce 2.4.7、2.4.6、2.4.5和2.4.4將不提供相容性或
-支援在MySQL 8.0之後發行的任何MySQL版本。 Adobe不會
-在此Adobe上驗證或支援較新的MySQL主要版本
-Commerce版本行。
-執行2.4.7、2.4.6、2.4.5、2.4.4版的所有Adobe Commerce內部部署客戶為
-建議將其資料庫伺服器移轉至相容的MariaDB版本。
+在此日期之後，Adobe Commerce 2.4.7、2.4.6、2.4.5和2.4.4不為MySQL 8.0之後發行的MySQL版本提供相容性或支援。
+Adobe不會針對這些Commerce發行版本驗證或支援較新的MySQL主要版本。
+如果您執行Adobe Commerce內部部署2.4.7、2.4.6、2.4.5或2.4.4版，Adobe強烈建議您將資料庫伺服器移轉至相容的MariaDB版本。
 
 雲端上的Adobe Commerce客戶必須在支援的版本上維持平台相依性。 請參閱生命週期原則中的[平台相依性](../release/lifecycle-policy.md#platform-dependencies)。
 
 **Elasticsearch 7.17於2026年1月15日終止支援(EOS)。**
-在此日期之後，Adobe Commerce 2.4.6、2.4.5和2.4.4將不提供相容性或
-支援在Elasticsearch 7之後發行的任何Elasticsearch版本。 Adobe不會
-在此Adobe上驗證或提供對較新Elasticsearch主要版本的支援
-Commerce版本行。
-執行2.4.6、2.4.5、2.4.4版的所有Adobe Commerce內部部署客戶為
-建議將搜尋基礎結構移轉至相容的OpenSearch版本。
+在此日期之後，Adobe Commerce 2.4.6、2.4.5和2.4.4不為Elasticsearch 7之後發行的Elasticsearch版本提供相容性或支援。
+Adobe不會針對這些Commerce發行版本驗證或支援較新的Elasticsearch主要版本。
+如果您執行Adobe Commerce內部部署2.4.6、2.4.5或2.4.4版，Adobe強烈建議您將搜尋基礎架構移轉至相容的OpenSearch版本。
+
+>[!ENDTABS]
+
+## 2.4.10-alpha Commerce發行版本的系統需求
+
+>[!BEGINTABS]
+
+>[!TAB 雲端上的 Commerce]
+
+{{$include /help/_includes/templated/cloud-requirements-table-alpha.md}}
+
+>[!TAB Commerce內部部署]
+
+{{$include /help/_includes/templated/system-requirements-table-alpha.md}}
 
 >[!ENDTABS]
 
 ## 舊版Commerce的系統需求
 
-下表列出Adobe Commerce發行版本的系統需求，包括延伸支援中的系統需求。 這些表格僅供參考。 Adobe不建議使用不支援的軟體相依性版本，而支援需要您先將環境調整為支援的設定，我們才能調查、疑難排解或驗證回報的行為。
+下表列出Adobe Commerce發行版本的系統需求，包括延伸支援中的系統需求。 這些表格僅供參考。 Adobe不建議使用不支援的軟體相依性版本。 在Adobe支援進行調查、疑難排解或驗證報告的行為之前，您必須根據受支援的設定來調整環境。
 
 >[!NOTE]
 >
@@ -97,30 +105,24 @@ Commerce版本行。
 
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
-針對預設組態，服務與版本定義於[的`services.yaml`檔案](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)。
-如需詳細資訊，請參閱*雲端基礎結構上的Commerce*&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)。
+[`services.yaml`檔案](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)定義了預設的服務與版本。
+請參閱*雲端基礎結構上的Commerce*&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)。
 
 >[!TAB Commerce內部部署]
 
 {{$include /help/_includes/templated/system-requirements-table-old-releases.md}}
 
 **MySQL 8.0於2026年4月30日終止支援(EOS)。**
-在此日期之後，Adobe Commerce 2.4.7、2.4.6、2.4.5和2.4.4將不提供相容性或
-支援在MySQL 8.0之後發行的任何MySQL版本。 Adobe不會
-在此Adobe上驗證或支援較新的MySQL主要版本
-Commerce版本行。
-執行2.4.7、2.4.6、2.4.5、2.4.4版的所有Adobe Commerce內部部署客戶為
-建議將其資料庫伺服器移轉至相容的MariaDB版本。
+在此日期之後，Adobe Commerce 2.4.7、2.4.6、2.4.5和2.4.4不為MySQL 8.0之後發行的MySQL版本提供相容性或支援。
+Adobe不會針對這些Commerce發行版本驗證或支援較新的MySQL主要版本。
+如果您執行Adobe Commerce內部部署2.4.7、2.4.6、2.4.5或2.4.4版，Adobe強烈建議您將資料庫伺服器移轉至相容的MariaDB版本。
 
 雲端上的Adobe Commerce客戶必須在支援的版本上維持平台相依性。 請參閱生命週期原則中的[平台相依性](../release/lifecycle-policy.md#platform-dependencies)。
 
 **Elasticsearch 7.17於2026年1月15日終止支援(EOS)。**
-在此日期之後，Adobe Commerce 2.4.6、2.4.5和2.4.4將不提供相容性或
-支援在Elasticsearch 7之後發行的任何Elasticsearch版本。 Adobe不會
-在此Adobe上驗證或提供對較新Elasticsearch主要版本的支援
-Commerce版本行。
-執行2.4.6、2.4.5、2.4.4版的所有Adobe Commerce內部部署客戶為
-建議將搜尋基礎結構移轉至相容的OpenSearch版本。
+在此日期之後，Adobe Commerce 2.4.6、2.4.5和2.4.4不為Elasticsearch 7之後發行的Elasticsearch版本提供相容性或支援。
+Adobe不會針對這些Commerce發行版本驗證或支援較新的Elasticsearch主要版本。
+如果您執行Adobe Commerce內部部署2.4.6、2.4.5或2.4.4版，Adobe強烈建議您將搜尋基礎架構移轉至相容的OpenSearch版本。
 
 >[!ENDTABS]
 
@@ -128,13 +130,13 @@ Commerce版本行。
 
 ## PHP設定
 
-有特定的PHP組態設定，例如`memory_limit`設定，可協助您在使用Adobe Commerce時避免常見問題。 請參閱[必要的PHP設定](prerequisites/php-settings.md)。
+設定PHP設定（例如`memory_limit`），以協助避免使用Adobe Commerce時常見的問題。 請參閱[必要的PHP設定](prerequisites/php-settings.md)。
 
 如需雲端組態指南，請參閱&#x200B;*雲端基礎結構上的Commerce*&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/php-settings)。
 
 ### PHP OPcache
 
-Adobe建議您基於效能原因來驗證[PHP OPcache](https://www.php.net/manual/en/book.opcache.php)是否已啟用。 OPcache已在許多PHP分配中啟用。
+Adobe建議驗證[PHP OPcache](https://www.php.net/manual/en/book.opcache.php)是否已啟用，以提升效能。 許多PHP分配都會啟用OPcache。
 
 - **對於雲端基礎結構部署上的Adobe Commerce**，預設會安裝`opcache`擴充功能。
 - **對於Adobe Commerce內部部署：**
@@ -172,7 +174,7 @@ Adobe建議您基於效能原因來驗證[PHP OPcache](https://www.php.net/manua
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
-如需安裝詳細資訊，請參閱[PHP檔案](https://www.php.net/manual/en/extensions.php)。
+如需安裝詳細資訊，請參閱[PHP官方檔案](https://www.php.net/manual/en/extensions.php)。
 
 >[!ENDTABS]
 
@@ -186,14 +188,14 @@ Adobe建議您基於效能原因來驗證[PHP OPcache](https://www.php.net/manua
 
 ### 瀏覽器
 
-店面和管理：
+Adobe Commerce支援下列店面和Admin瀏覽器的最新和先前主要版本，但註明者除外：
 
-- Microsoft Edge （最新和先前的主要版本）
-- Firefox （任何作業系統上最新和先前的主要版本）
-- Chrome （任何作業系統上最新和先前的主要版本）
-- Safari （僅限macOS上的最新和先前主要版本）
-- 適用於iOS的Safari （店面的最新和先前主要版本）
-- 適用於Android的Chrome （店面的最新和先前主要版本）
+- Microsoft Edge
+- Firefox （任何作業系統）
+- Chrome （任何作業系統）
+- Safari （僅限macOS）
+- iOS適用的Safari （僅限店面）
+- Android適用的Chrome （僅限店面）
 
 ### 郵件伺服器
 
@@ -201,7 +203,7 @@ Adobe建議您基於效能原因來驗證[PHP OPcache](https://www.php.net/manua
 
 ### 記憶體
 
-升級從Commerce Marketplace和其他來源取得的應用程式和擴充功能，最多可能需要2 GB的RAM。 如果您使用的系統RAM小於2 GB，請建立[交換檔案](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)。 否則，您的升級可能會失敗。
+從Commerce Marketplace和其他來源升級應用程式和擴充功能最多可能需要2 GB的RAM。 如果您的系統RAM小於2 GB，請建立[交換檔案](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)。 如果沒有交換檔案，您的升級可能會失敗。
 
 ### 作業系統(Linux x86-64)
 
@@ -231,12 +233,12 @@ Adobe Commerce的某些作業需要下列系統工具：
 
 ### Xdebug
 
-若為Adobe Commerce，請使用[php_xdebug 2.5.x](https://xdebug.org/download)或更新版本（僅限開發環境；可能會對效能造成不良影響）。
+僅適用於Adobe Commerce開發環境，請使用[php_xdebug 2.5.x](https://xdebug.org/download)或更新版本。 Xdebug可能會對效能造成負面影響。
 
 如需雲端上的Adobe Commerce，請參閱&#x200B;*雲端基礎結構上的Commerce*&#x200B;指南中的[設定Xdebug](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/test/debug)。
 
 >[!NOTE]
 >
->`xdebug`有已知問題，可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)的已知問題。
+>Xdebug的已知問題可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)的已知問題。
 
-<!-- Last updated from includes: 2026-08-10 23:39:34 -->
+<!-- Last updated from includes: 2026-10-13 09:11:06 -->

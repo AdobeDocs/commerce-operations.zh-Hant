@@ -19,10 +19,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 06034766e0c2e09e414e1ebc7a5b388a07593406
 workflow-type: tm+mt
 source-wordcount: '4570'
-ht-degree: 0%
+ht-degree: 1%
 ---
 # 敏感及系統專屬設定
 
@@ -185,9 +185,9 @@ ht-degree: 0%
 
 這些組態值可在&#x200B;**存放區** >設定> **組態** > **目錄** > **詳細目錄**&#x200B;中的管理員中使用。
 
-|名稱 |設定路徑 | Commerce版本支援|加密？ |系統專用？ |敏感？ | |
-|--------------|--------------|--------------|--------------|--------------|--------------| |
-| Google API金鑰 | `cataloginventory/source_selection_distance_based_google/api_key` |  |已加密 | |敏感 |
+| 名稱 | 設定路徑 | Commerce版本支援 | 已加密？ | 系統專用？ | 敏感？ |
+|--------------|--------------|--------------|--------------|--------------|--------------|
+| Google API金鑰 | `cataloginventory/source_selection_distance_based_google/api_key` |  | 已加密 | | 敏感 |
 
 ### XML Sitemap敏感路徑和系統特定路徑
 
