@@ -29,7 +29,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=zh-Hant#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant)，以檢視已發行修補程式的完整清單。
+>如需將修補程式套用至您的Adobe Commerce專案的指示，請參閱[套用修補程式](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)。 請參閱「軟體更新指南」中的[[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)，以檢視已發行修補程式的完整清單。
 
 >[!INFO]
 >
@@ -180,7 +180,7 @@ ht-degree: 0%
 * **ACP2E-4732** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8） — 修正當changelog表格中的version_id欄達到最大值時，有大量更新的客戶停止部分索引的問題。
 * **ACP2E-4763** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.9） — 修正當「目錄價格」設定為「包含稅捐」時，由於套用兩次稅捐，GraphQL customerOrders查詢會傳回膨脹的original_price_include_tax和original_row_total_include_tax值的問題。
 * **ACSD-60989** （適用於Adobe Commerce和Magento Open Source >=2.4.4 &lt;2.4.8） — 修正透過宣告式結構描述修改具有外部索引鍵的欄時，在MariaDB上造成錯誤的問題。
-* 已更新的版本： **ACSD-59280**、**ACSD-45255**、**ACSD-50336**、**ACSD-49737**、**ACSD-50849**、**ACSD-53750**、**ACSD-55031**、**ACSD-51819**、**ACSD-55628**、**ACSD-54965-V2** **ACSD-56546**、**ACSD-61756**、**ACSD-68040**、**ACSD-62708**、**ACSD-63283**、**ACSD-64732**、**ACSD-65775**、**ACSD-66965**、**ACP2E-4050&lbrace;37**
+* 已更新的版本： **ACSD-59280**、**ACSD-45255**、**ACSD-50336**、**ACSD-49737**、**ACSD-50849**、**ACSD-53750**、**ACSD-55031**、**ACSD-51819**、**ACSD-55628**、**ACSD-54965-V2** **ACSD-56546**、**ACSD-61756**、**ACSD-68040**、**ACSD-62708**、**ACSD-63283**、**ACSD-64732**、**ACSD-65775**、**ACSD-66965**、**ACP2E-4050{37**
 * 已取代的修補程式： **ACSD-58446**，**ACSD-67904**
 
 ## v1.1.77 {#v1-1-77}

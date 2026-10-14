@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '32815'
 ht-degree: 0%
-
 ---
 # Magento Open Source已修正問題(v2.4.9)
 
@@ -671,7 +670,7 @@ _ACP2E-4698 - [GitHub程式碼貢獻](https://github.com/magento/magento2-page-b
 
 #### B2B以客戶標題登入仍具有Magento品牌
 
-較早的店面標題顯示「您現在在&lt;商店名稱>上以&lt;客戶名稱>連線」與Magento品牌。 此問題現已修正，且標題會顯示為ADOBE品牌。
+早些時候，店面標題顯示「您現在在&lt;商店名稱>上是&lt;客戶名稱>」連線到Magento品牌。 此問題現已修正，且標題會顯示為ADOBE品牌。
 
 _AC-14361 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/fadcfa8b)_
 
@@ -3033,7 +3032,7 @@ _ACP2E-4455 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### 管理員在建立退貨時顯示不正確的貨幣符號
 
-在使用不同貨幣(EUR/USD/GBP)進行多網站設定時，admin中的退貨產品選擇頁面現在顯示正確的貨幣符號。 之前，它會顯示預設貨幣符號。
+在使用不同貨幣(EUR/USD/GBP)進行多網站設定時，現在admin中的退貨產品選擇頁面會顯示正確的貨幣符號。 之前，它會顯示預設貨幣符號。
 
 _ACP2E-3658 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/df92debe)_
 
@@ -3648,7 +3647,7 @@ _ACP2E-4212 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit
 
 #### 無法在排程更新預覽中的網站之間導覽
 
-在此修正之前，嘗試預覽具有自訂網域的存放區內容時，排定的更新預覽會中斷。 此項修正後，自訂商店網域可依原樣預覽，並在預覽iframe中導覽。 此修正涵蓋產品、類別、CMS頁面和CMS區塊，並支援使用`{{store url}}`標籤標籤的導覽連結，如[Adobe Commerce變數和標籤標籤](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/variables/markup-tags)中所述。
+在此修正之前，嘗試預覽具有自訂網域的存放區內容時，排定的更新預覽會中斷。 此項修正後，自訂商店網域可依原樣預覽，並在預覽iframe中導覽。 此修正涵蓋產品、類別、CMS頁面和CMS區塊，並支援使用`{{store url}}`標籤標籤的導覽連結，如[Adobe Commerce變數和標籤標籤](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags)中所述。
 
 _ACP2E-4308 - [GitHub程式碼貢獻](https://github.com/magento/magento2/commit/0a3b7032)_
 
