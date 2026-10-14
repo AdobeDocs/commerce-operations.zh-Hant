@@ -42,7 +42,7 @@ Adobe僅支援下表所列的系統需求組合。 Adobe不會驗證或支援不
 
 >[!BEGINTABS]
 
->雲端上的[!TAB Commerce]
+>[!TAB 雲端上的 Commerce]
 
 雲端上的[Commerce範本](https://github.com/magento/magento-cloud)針對與每個發行版本的最新Commerce版本相容的服務，提供預設設定。
 
@@ -73,7 +73,7 @@ Adobe不會針對這些Commerce發行版本驗證或支援較新的Elasticsearch
 
 >[!BEGINTABS]
 
->雲端上的[!TAB Commerce]
+>[!TAB 雲端上的 Commerce]
 
 {{$include /help/_includes/templated/cloud-requirements-table-alpha.md}}
 
@@ -99,9 +99,9 @@ Adobe不會針對這些Commerce發行版本驗證或支援較新的Elasticsearch
 
 >[!BEGINTABS]
 
->雲端上的[!TAB Commerce]
+>[!TAB 雲端上的 Commerce]
 
-雲端範本](https://github.com/magento/magento-cloud)上的[Commerce提供與特定Commerce版本相容之服務的預設設定。
+雲端範本[&#128279;](https://github.com/magento/magento-cloud)上的Commerce提供與特定Commerce版本相容之服務的預設設定。
 
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
@@ -164,7 +164,7 @@ Adobe建議驗證[PHP OPcache](https://www.php.net/manual/en/book.opcache.php)�
 
 >[!BEGINTABS]
 
->雲端上的[!TAB Commerce]
+>[!TAB 雲端上的 Commerce]
 
 下表顯示在雲端平台上部署Adobe Commerce時支援的PHP擴充功能。
 
@@ -239,6 +239,6 @@ Adobe Commerce的某些作業需要下列系統工具：
 
 >[!NOTE]
 >
->Xdebug的已知問題可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)的[已知問題。
+>Xdebug的已知問題可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)的已知問題。
 
 <!-- Last updated from includes: 2026-10-13 09:11:06 -->
