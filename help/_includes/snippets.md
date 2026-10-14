@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1188'
 ht-degree: 0%
-
 ---
 # 代碼片段
 
@@ -21,7 +20,7 @@ Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的�
 
 >[!NOTE]
 >
->如果您的Commerce專案部署在雲端，則整頁快取會使用[Fastly](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly)，而非Varnish。 本節中的主題僅適用於內部部署。
+>如果您的Commerce專案部署在雲端，則整頁快取會使用[Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)，而非Varnish。 本節中的主題僅適用於內部部署。
 
 ## Adobe服務版本支援 {#supported-versions-only}
 
@@ -29,7 +28,7 @@ Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的�
 >
 >Adobe僅支援執行所有相依性和服務之支援版本的部署。 這適用於：
 >
->* **Platform服務** （包含但不限於PHP、MariaDB/MySQL、Redis、Elasticsearch/OpenSearch、RabbitMQ和Nginx） — 商家必須維持與其已部署的Adobe Commerce版本相容的版本。 請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)。
+>* **Platform服務** （包含但不限於PHP、MariaDB/MySQL、Redis、Elasticsearch/OpenSearch、RabbitMQ和Nginx） — 商家必須維持與其已部署的Adobe Commerce版本相容的版本。 請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)。
 >* **Commerce Services擴充功能** （包含但不限於「即時搜尋」、「產品建議」和「付款服務」） — 僅支援最新發行的版本。
 >* **自訂擴充功能和協力廠商整合** — 商家有責任確保這些功能仍使用廠商支援的版本。
 >
@@ -39,7 +38,20 @@ Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的�
 
 ## 延伸支援的安全性修補程式 {#extended-support}
 
-{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
+>[!NOTE]
+>
+>**延伸支援**&#x200B;安全性修補程式僅供Adobe Commerce客戶使用。 它們不適用於Magento Open Source程式碼基底。
+>
+>**雲端上的Adobe Commerce （發行版本2.4.4-2.4.6）** — 升級至支援的發行版本，或移轉至[!DNL Adobe Commerce as a Cloud Service]，再於您的版本升級強制實施日期之前。 過渡式支援規定不會取代雲端升級強制執行。
+>
+>另請參閱：
+>
+>- [軟體生命週期原則](/help/release/lifecycle-policy.md) — 支援終止日期、延長支援及僅限安全性的轉換規定
+>- [保護Commerce環境所需的動作和截止日期](/help/release/security-enforcement-policy.md) — 執行日期和所需的動作
+
+## Adobe安全性公告APSB26-49 {#security-bulletin-apsb26-49}
+
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-49](https://www.adobe.com/trust/security/products/commerce/apsb26-49.html)。
 
 ## 僅限Commerce {#commerce-only}
 
@@ -65,7 +77,7 @@ Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的�
 
 >[!NOTE]
 >
->安裝此安全性修補程式後，Adobe Commerce B2B商家也必須更新至最新相容的B2B安全性修補程式版本。 請參閱[B2B發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/release-notes)。
+>安裝此安全性修補程式後，Adobe Commerce B2B商家也必須更新至最新相容的B2B安全性修補程式版本。 請參閱[B2B發行說明](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes)。
 
 ## 僅限Adobe Commerce {#ee-only}
 
@@ -119,7 +131,7 @@ Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的�
 
 >[!IMPORTANT]
 >
->Adobe不支援使用此方法套用Adobe提供的官方修補程式。 請自行承擔下列方法的風險。 若要套用正式修補程式，請使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}。 在部署任何自訂修補程式之前，請務必執行完整的測試。
+>Adobe不支援使用此方法套用Adobe提供的官方修補程式。 請自行承擔下列方法的風險。 若要套用正式修補程式，請使用[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}。 在部署任何自訂修補程式之前，請務必執行完整的測試。
 
 ## 2025年10月安全性修補程式反向移植 {#oct-2025-backports}
 
@@ -150,7 +162,7 @@ Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的�
 
 **Hotfix**：
 
-有可用的Hotfix。 請參閱知識庫中的[啟用JS縮制和套件組合時，簽出失敗](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27997)以取得修補程式詳細資料。
+有可用的Hotfix。 請參閱知識庫中的[啟用JS縮制和套件組合時，簽出失敗](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)以取得修補程式詳細資料。
 
 ## Valkey Redis CLI注意事項 {#valkey-redis-cli-note}
 

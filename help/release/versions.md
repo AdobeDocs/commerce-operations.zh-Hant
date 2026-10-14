@@ -15,9 +15,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 37a993a1f9b187dcfa74ecde581cf705eb66570d
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '133'
 ht-degree: 0%
 ---
 # 發行版本
@@ -33,8 +33,8 @@ Adobe為Adobe Commerce客戶2.4.4和2.4.5版提供一年支援延長服務，不
 >[!NOTE]
 >
 >- Adobe建議您安裝或升級Adobe Commerce，以使用每個版本適用的最新安全性修補程式。
->- 如需其他安全性更新，請參閱[Magento / Adobe Commerce的安全性更新](https://helpx.adobe.com/tw/security/products/magento.html)。
->- 如需定價，請參閱[Adobe Commerce定價](https://business.adobe.com/tw/products/magento/pricing.html)。
+>- 如需其他安全性更新，請參閱信任中心的[Adobe安全性佈告欄和建議](https://www.adobe.com/trust/security/bulletins-and-advisories.html)。
+>- 如需定價，請參閱[Adobe Commerce定價](https://business.adobe.com/products/magento/pricing.html)。
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
