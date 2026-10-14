@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 6a3ffddee54d8f9f04e8f72a0d2708baa5c1f37a
+source-git-commit: 42ccea80dbbf503f58ba7d63d4731687b3c310a8
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -35,8 +35,8 @@ QPT v1.1.83包含下列修補程式：
 1. **AC-17975**：修正某些PHP環境中影響Admin工作流程、簽出驗證、驗證碼處理、類別管理、設定頁面和命令列作業的多個PHP 8.5相容性問題。
 1. **AC-18128**：修正GraphQL傳回的訂單日期與訂單註解時間戳記在非英文地區設定中顯示錯誤行事曆日期的問題。
 1. **AC-18096**：將日期格式從斜線分隔(`/`)還原為破折號(`-`)，修正Sales GraphQL日期欄位傳回與舊版不同格式日期的問題。
+1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**：修正具有受限制許可權的管理員使用者無法從客戶格線中刪除客戶的問題。
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**：修正GraphQL結構描述中請購單清單專案型別拼字錯誤的問題。 較舊的`items`欄位和`RequistionListItems`型別仍可使用，但已過時。
-1. **ACP2E-4838**：修正具有受限制許可權的管理員使用者無法從客戶格線中刪除客戶的問題。
 1. **ACP2E-4877**：修正在&#x200B;*擱置中*&#x200B;狀態中，使用&#x200B;**[!UICONTROL Payment on Account]**&#x200B;下達的訂單無法在Admin中編輯的問題。
 1. **ACP2E-4908**：修正大型目錄導致Redis或Valkey中記憶體使用過量的問題，因為每個商店檢視中的每項產品都有個別的版面配置快取專案。
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**：修正在Admin中重新排序訂單時，會建立尾碼為`-1`的新訂單編號而非指派下一個連續訂單編號的問題。
