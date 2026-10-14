@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '496'
 ht-degree: 2%
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 2%
             <li><a href="security/overview.md">安全性修補程式</a></li>
             <li><a href="../lifecycle-policy.md">軟體生命週期原則</a></li>
             <li><a href="../security-enforcement-policy.md">安全性與法規遵循通知</a></li>
-            <li><a href="https://helpx.adobe.com/tw/security/products/magento.html">Adobe安全性公告</a></li>
+            <li><a href="https://www.adobe.com/trust/security/bulletins-and-advisories.html">Adobe安全性佈告欄和建議</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=zh-Hant">適用於Adobe Commerce的B2B</a></li>
           </ul>
         </td>

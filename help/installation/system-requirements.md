@@ -2,7 +2,7 @@
 title: 系統需求
 description: 瞭解Adobe Commerce的軟體相依性和系統需求。 檢視經過測試的設定，瞭解與部署環境的相容性。
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-last-update: 2026-09-18
+last-update: 2026-10-13
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 2456f0e28fa24e23eb7692a905c708007a00bd96
+source-git-commit: 37a993a1f9b187dcfa74ecde581cf705eb66570d
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 0%

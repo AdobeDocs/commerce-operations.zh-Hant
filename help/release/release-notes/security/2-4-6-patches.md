@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2342'
 ht-degree: 0%
 ---
 
@@ -36,17 +36,17 @@ ht-degree: 0%
 >所有執行2.4.6版的Adobe Commerce內部部署客戶為
 >建議將其資料庫伺服器移轉至相容的MariaDB版本。
 >
->雲端上的Adobe Commerce客戶必須在支援的版本上維持平台相依性。 請參閱生命週期原則中的[平台相依性](../../lifecycle-policy.md#platform-dependencies)。
+>雲端上的Adobe Commerce客戶必須在支援的版本上維持平台相依性。 請參閱生命週期原則中的[平台相依性](/help/release/lifecycle-policy.md#platform-dependencies)。
 >
->Adobe Commerce 2.4.6在[延伸支援](../../lifecycle-policy.md#extended-support)到&#x200B;**2027年8月30日**&#x200B;之間，接著是[僅限安全性過渡期間](../../lifecycle-policy.md#security-only-transitional-period)到&#x200B;**2028年5月31日**。 這些布建僅供Adobe Commerce客戶使用。 它們不會擴充對第三方相依性（例如MySQL）的支援。
+>Adobe Commerce 2.4.6在[延伸支援](/help/release/lifecycle-policy.md#extended-support)到&#x200B;**2027年8月30日**&#x200B;之間，接著是[僅限安全性過渡期間](/help/release/lifecycle-policy.md#security-only-transitional-period)到&#x200B;**2028年5月31日**。 這些布建僅供Adobe Commerce客戶使用。 它們不會擴充對第三方相依性（例如MySQL）的支援。
 >
->如果您在雲端上執行Adobe Commerce，則必須在&#x200B;**2028年6月1日** [版本升級強制日期](../../security-enforcement-policy.md)之前升級至支援的版本或移轉至[!DNL Adobe Commerce as a Cloud Service]。 如需完整生命週期日期，請參閱[支援結束日期](../../lifecycle-policy.md#end-of-support-dates)表格。
+>如果您在雲端上執行Adobe Commerce，則必須在&#x200B;**2028年6月1日** [版本升級強制日期](../../security-enforcement-policy.md)之前升級至支援的版本或移轉至[!DNL Adobe Commerce as a Cloud Service]。 如需完整生命週期日期，請參閱[支援結束日期](/help/release/lifecycle-policy.md#end-of-support-dates)表格。
 
 ## 2.4.6-p15
 
 Adobe Commerce 2.4.6-p15安全性版本針對2.4.6舊版中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-49](https://helpx.adobe.com/tw/security/products/magento/apsb26-49.html)。
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 

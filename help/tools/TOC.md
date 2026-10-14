@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 09eedab06d326baa0d4155274266dc3ef5356589
+source-git-commit: 0e4d8845da584cd8a58b49d1adf892df80155734
 workflow-type: tm+mt
-source-wordcount: '10752'
+source-wordcount: '10816'
 ht-degree: 0%
 ---
 
@@ -1060,12 +1060,17 @@ ht-degree: 0%
       - [ACP2E-4875：在開啟具有大型通訊錄的客戶帳戶時，管理員使用者會登出](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [AC-18096：銷售GraphQL日期欄位傳回不正確的當地語系化格式](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)
+      - [AC-18128：非英文地區設定的GraphQL訂單日期和註解時間戳記不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)
+      - [ACP2E-4838：受限管理員使用者無法從允許的網站刪除客戶](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)
+      - [ACP2E-4998：缺少SKU導致有效產品的批次層級價格更新無法進行](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)
       - [ACP2E-4639：請購單清單專案型別在Adobe Commerce GraphQL結構描述中拼寫錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)
       - [ACP2E-5223：目錄許可權索引包含從客戶群組排除的網站](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)
       - [ACP2E-5101：當索引子使用依排程更新時，Adobe Commerce B2B安裝失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)
       - [AC-12854：管理員重新排序會使用尾碼為–1的原始訂單編號](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-4741：儲存連結的產品時，會使用自訂庫存從店面隱藏另一個產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
   - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
   - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)

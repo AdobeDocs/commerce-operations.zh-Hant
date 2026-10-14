@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '1984'
 ht-degree: 0%
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 ## 2.4.5-p17
 
-Adobe Commerce 2.4.5-p17是[延伸支援安全性版本](../../lifecycle-policy.md#security-only-transitional-period)，針對舊版2.4.5中發現的漏洞提供安全性錯誤修正。
+Adobe Commerce 2.4.5-p17是[延伸支援安全性版本](/help/release/lifecycle-policy.md#security-only-transitional-period)，針對舊版2.4.5中發現的漏洞提供安全性錯誤修正。
 
-如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-49](https://helpx.adobe.com/tw/security/products/magento/apsb26-49.html)。
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 
@@ -60,7 +60,7 @@ Adobe Commerce 2.4.5現在與RabbitMQ 4.2相容，後者處理RabbitMQ 4.1支援
 
 ## 2.4.5-p16
 
-Adobe Commerce 2.4.5-p16是[延伸支援安全性版本](../../lifecycle-policy.md#security-only-transitional-period)，針對舊版2.4.5中發現的漏洞提供安全性錯誤修正。
+Adobe Commerce 2.4.5-p16是[延伸支援安全性版本](/help/release/lifecycle-policy.md#security-only-transitional-period)，針對舊版2.4.5中發現的漏洞提供安全性錯誤修正。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-05](https://helpx.adobe.com/tw/security/products/magento/apsb26-05.html)。
 
@@ -84,7 +84,7 @@ Adobe Commerce 2.4.5-p16是[延伸支援安全性版本](../../lifecycle-policy.
 
 ## 2.4.5-p15
 
-Adobe Commerce 2.4.5-p15是[延伸支援安全性版本](../../lifecycle-policy.md#security-only-transitional-period)，針對舊版2.4.5中發現的漏洞提供安全性錯誤修正。
+Adobe Commerce 2.4.5-p15是[延伸支援安全性版本](/help/release/lifecycle-policy.md#security-only-transitional-period)，針對舊版2.4.5中發現的漏洞提供安全性錯誤修正。
 
 如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB25-94](https://helpx.adobe.com/tw/security/products/magento/apsb25-94.html)。
 

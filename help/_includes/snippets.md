@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1188'
 ht-degree: 0%
-
 ---
 # 代碼片段
 
@@ -39,7 +38,20 @@ Adobe Commerce 2.4.9或更新於2.4.5-p16、2.4.6-p14、2.4.7-p9和2.4.8-p5的�
 
 ## 延伸支援的安全性修補程式 {#extended-support}
 
-{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
+>[!NOTE]
+>
+>**延伸支援**&#x200B;安全性修補程式僅供Adobe Commerce客戶使用。 它們不適用於Magento Open Source程式碼基底。
+>
+>**雲端上的Adobe Commerce （發行版本2.4.4-2.4.6）** — 升級至支援的發行版本，或移轉至[!DNL Adobe Commerce as a Cloud Service]，再於您的版本升級強制實施日期之前。 過渡式支援規定不會取代雲端升級強制執行。
+>
+>另請參閱：
+>
+>- [軟體生命週期原則](/help/release/lifecycle-policy.md) — 支援終止日期、延長支援及僅限安全性的轉換規定
+>- [保護Commerce環境所需的動作和截止日期](/help/release/security-enforcement-policy.md) — 執行日期和所需的動作
+
+## Adobe安全性公告APSB26-49 {#security-bulletin-apsb26-49}
+
+如需安全性錯誤修正的最新資訊，請參閱[Adobe安全性公告APSB26-49](https://www.adobe.com/trust/security/products/commerce/apsb26-49.html)。
 
 ## 僅限Commerce {#commerce-only}
 
