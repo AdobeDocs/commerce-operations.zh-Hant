@@ -49,7 +49,7 @@ Adobe僅支援下表所列的系統需求組合。 Adobe不會驗證或支援不
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
 [`services.yaml`檔案](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)定義了預設的服務與版本。
-請參閱*雲端基礎結構上的Commerce*&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)。
+請參閱*雲端基礎結構上的Commerce*&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)。
 
 >[!TAB Commerce內部部署]
 
@@ -106,7 +106,7 @@ Adobe不會針對這些Commerce發行版本驗證或支援較新的Elasticsearch
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
 [`services.yaml`檔案](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml)定義了預設的服務與版本。
-請參閱*雲端基礎結構上的Commerce*&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)。
+請參閱*雲端基礎結構上的Commerce*&#x200B;指南中的[設定服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/service/services-yaml)。
 
 >[!TAB Commerce內部部署]
 
@@ -132,7 +132,7 @@ Adobe不會針對這些Commerce發行版本驗證或支援較新的Elasticsearch
 
 設定PHP設定（例如`memory_limit`），以協助避免使用Adobe Commerce時常見的問題。 請參閱[必要的PHP設定](prerequisites/php-settings.md)。
 
-如需雲端組態指南，請參閱&#x200B;*雲端基礎結構上的Commerce*&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings)。
+如需雲端組態指南，請參閱&#x200B;*雲端基礎結構上的Commerce*&#x200B;指南中的[PHP設定](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/php-settings)。
 
 ### PHP OPcache
 
@@ -160,7 +160,7 @@ Adobe建議驗證[PHP OPcache](https://www.php.net/manual/en/book.opcache.php)�
 
 >[!TIP]
 >
->有關雲端基礎結構中的PHP擴充功能，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[啟用PHP擴充功能](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)。
+>有關雲端基礎結構中的PHP擴充功能，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;指南中的[啟用PHP擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions)。
 
 >[!BEGINTABS]
 
@@ -199,11 +199,11 @@ Adobe Commerce支援下列店面和Admin瀏覽器的最新和先前主要版本�
 
 ### 郵件伺服器
 
-郵件傳輸代理(MTA)或SMTP伺服器。 雲端基礎結構上的Commerce使用[SendGrid電子郵件服務](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid)。
+郵件傳輸代理(MTA)或SMTP伺服器。 雲端基礎結構上的Commerce使用[SendGrid電子郵件服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/sendgrid)。
 
 ### 記憶體
 
-從Commerce Marketplace和其他來源升級應用程式和擴充功能最多可能需要2 GB的RAM。 如果您的系統RAM小於2 GB，請建立[交換檔案](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)。 如果沒有交換檔案，您的升級可能會失敗。
+從Commerce Marketplace和其他來源升級應用程式和擴充功能最多可能需要2 GB的RAM。 如果您的系統RAM小於2 GB，請建立[交換檔案](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)。 如果沒有交換檔案，您的升級可能會失敗。
 
 ### 作業系統(Linux x86-64)
 
@@ -229,16 +229,16 @@ Adobe Commerce的某些作業需要下列系統工具：
 - 不支援自我簽署SSL憑證。
 - 傳輸層安全性(TLS)需求 — PayPal和`repo.magento.com`都需要TLS 1.2或更新版本。
 
-如需雲端基礎結構上的Commerce，請參閱&#x200B;*雲端基礎結構上的Commerce*&#x200B;指南中的[Fastly設定](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)。
+如需雲端基礎結構上的Commerce，請參閱&#x200B;*雲端基礎結構上的Commerce*&#x200B;指南中的[Fastly設定](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)。
 
 ### Xdebug
 
 僅適用於Adobe Commerce開發環境，請使用[php_xdebug 2.5.x](https://xdebug.org/download)或更新版本。 Xdebug可能會對效能造成負面影響。
 
-如需雲端上的Adobe Commerce，請參閱&#x200B;*雲端基礎結構上的Commerce*&#x200B;指南中的[設定Xdebug](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug)。
+如需雲端上的Adobe Commerce，請參閱&#x200B;*雲端基礎結構上的Commerce*&#x200B;指南中的[設定Xdebug](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/test/debug)。
 
 >[!NOTE]
 >
->Xdebug的已知問題可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)的已知問題。
+>Xdebug的已知問題可能會影響Adobe Commerce安裝或安裝後對店面或管理員的存取。 檢視&#x200B;_Commerce支援知識庫_&#x200B;中影響`xdebug`安裝[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation)的已知問題。
 
 <!-- Last updated from includes: 2026-10-13 09:11:06 -->
