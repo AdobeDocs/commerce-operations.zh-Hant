@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 09eedab06d326baa0d4155274266dc3ef5356589
+source-git-commit: 6a3ffddee54d8f9f04e8f72a0d2708baa5c1f37a
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '513'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -43,7 +43,7 @@ QPT v1.1.83包含下列修補程式：
 1. **ACP2E-4977**：修正可設定產品發票與銷退折讓單總計不包含&#x200B;**[!UICONTROL Fixed Product Tax]** (FPT)的問題，導致總計低於訂單總計。
 1. **AC-16530**：修正購物車未一致反映目錄價格規則之排程更新的問題。
 1. **AC-11389**：修正某些四捨五入案例中折扣、稅金和訂單總計計算錯誤的問題。
-1. **ACP2E-4998**：修正裝載中有一個SKU不存在時，整個請求的`POST /V1/products/tier-prices` REST API請求失敗的問題，以防止更新有效的SKU。
+1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**：修正承載中不存在一個SKU時，`POST /V1/products/tier-prices` REST API要求完全失敗的問題，以防止更新有效的SKU。
 1. **ACP2E-5015**：修正當需要的目錄資料無法使用時，將共用目錄儲存在「管理員」中可能會無意中移除指派的產品和定價的問題。
 1. **AC-14940**：修正某些商店相關案例中，在管理員中按一下客戶帳戶的「**[!UICONTROL Reset Password]**」時，未傳送密碼重設電子郵件的問題。
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**：修正當索引子設為&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;時，安裝B2B模組失敗的問題。
