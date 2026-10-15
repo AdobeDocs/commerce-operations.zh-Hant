@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 4fcf88b6e7e67204ac07a82d756c068ac715d120
+source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '555'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -41,7 +41,7 @@ QPT v1.1.84包含下列修補程式：
 1. **ACP2E-5041**：修正了在排程更新期間儲存產品，導致在更新結束後店面顯示一般價格而非&#x200B;**[!UICONTROL Special Price]**&#x200B;的問題。
 1. **ACP2E-5059**：修正客戶收到相同訂單的重複訂單確認電子郵件的問題。
 1. **ACP2E-5122**：修正例外狀況記錄檔中，針對購物車的GraphQL要求所處理的錯誤，不正確記錄為應用程式錯誤的問題。
-1. **ACP2E-5143**：修正僅請求路由中繼資料時，GraphQL路由查詢呈現完整CMS頁面內容的問題，增加包含Page Builder Widget的CMS頁面的資料庫查詢。
+1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**：修正僅請求路由中繼資料時，GraphQL `route`查詢會呈現完整CMS頁面內容的問題，增加包含Page Builder Widget之CMS頁面的資料庫查詢數量。
 1. **ACP2E-5183**：修正編譯使用`@magento_import`指示詞的`LESS`檔案時，PHP 8.5上的靜態內容部署失敗的問題。
 1. **ACP2E-5242**：修正將專案新增至購物車時，檢查產品可用性顯示錯誤，指出找不到網站的問題。
 1. **ACP2E-5263**：修正將產品匯出至CSV檔案後，無法再包含所有產品，而造成檔案不完整的問題。

@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 0e4d8845da584cd8a58b49d1adf892df80155734
+source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
 workflow-type: tm+mt
-source-wordcount: '10816'
+source-wordcount: '10826'
 ht-degree: 0%
 ---
 
@@ -1070,6 +1070,7 @@ ht-degree: 0%
       - [AC-12854：管理員重新排序會使用尾碼為–1的原始訂單編號](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5143： GraphQL路由查詢呈現未請求的CMS頁面內容](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
       - [ACP2E-4741：儲存連結的產品時，會使用自訂庫存從店面隱藏另一個產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
   - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}

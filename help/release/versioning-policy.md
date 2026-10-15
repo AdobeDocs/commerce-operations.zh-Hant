@@ -2,7 +2,7 @@
 title: 發行原則
 description: 瞭解Adobe Commerce版本型別、行銷與模組版本設定、修補程式和安全性版本、測試版本、Hotfix和整體發行原則。
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-last-update: 2026-09-18
+last-update: 2026-10-14
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 8959478d84467d8589a79e908b3f8750cb0a1c8b
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
