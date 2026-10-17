@@ -29,7 +29,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ACSD-50368修補程式已部分淘汰，因為此問題已由2.4.4以上版本的強制安全性修補程式[APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)解決。
+>ACSD-50368修補程式已部分淘汰，因為此問題已由2.4.4以上版本的強制安全性修補程式[APSB25-08](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27149)解決。
 
 ACSD-50368修補程式修正了透過Async REST API或Async Bulk REST API建立客戶時，忽略客戶group_id的問題。 安裝[[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.33時，即可使用此修補程式。 修補程式ID為ACSD-50368。 請注意，此問題已排程在Adobe Commerce 2.4.7中修正。
 
@@ -139,7 +139,7 @@ bin/magento setup:upgrade --keep-generated
 若要套用個別修補程式，請根據您的部署方法使用下列連結：
 
 * Adobe Commerce或Magento Open Source內部部署： [!DNL Quality Patches Tool]指南中的[[!DNL Quality Patches Tool] >使用狀況](/help/tools/quality-patches-tool/usage.md)。
-* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
+* 雲端基礎結構上的Adobe Commerce：雲端基礎結構上的Commerce指南中的[升級和修補程式>套用修補程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches)。
 
 ## 相關閱讀
 
