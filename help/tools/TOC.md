@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
+source-git-commit: 9c67720bcc00fe0b3e783e6c5cc77dea59ee007a
 workflow-type: tm+mt
-source-wordcount: '10826'
+source-wordcount: '10855'
 ht-degree: 0%
 ---
 
@@ -975,7 +975,7 @@ ht-degree: 0%
       - [ACSD-69494：使用「is_online」的非同步退款請求不會觸發線上退款](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
       - [ACSD-68537：結帳效能會因許多客戶區段而降低](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)
       - [ACSD-69311：從商業發票部分退款後，銷退折讓單中的稅捐計算不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)
-      - [ACSD-68341：多個X-Magento-Vary Cookie更新會在PDP載入時發生](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
+      - [ACSD-68341：在PDP載入時發生多個X-Magento-Vary Cookie更新](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
     - v1.1.78 {#v1-1-78}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
       - [ACP2E-4513：系統不會移除過期的驗證碼影像](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
@@ -1060,6 +1060,8 @@ ht-degree: 0%
       - [ACP2E-4875：在開啟具有大型通訊錄的客戶帳戶時，管理員使用者會登出](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-3211：平行加入購物車請求會為相同的SKU建立個別專案](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)
+      - [ACP2E-5015：共用目錄儲存會在工作階段讀取錯誤後，移除產品指派和定價](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)
       - [AC-18096：銷售GraphQL日期欄位傳回不正確的當地語系化格式](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)
       - [AC-18128：非英文地區設定的GraphQL訂單日期和註解時間戳記不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)
       - [ACP2E-4838：受限管理員使用者無法從允許的網站刪除客戶](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)
