@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 9c67720bcc00fe0b3e783e6c5cc77dea59ee007a
+source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '523'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -33,19 +33,19 @@ ht-degree: 0%
 QPT v1.1.83包含下列修補程式：
 
 1. **AC-17975**：修正某些PHP環境中影響Admin工作流程、簽出驗證、驗證碼處理、類別管理、設定頁面和命令列作業的多個PHP 8.5相容性問題。
+1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**：修正在&#x200B;*擱置中*&#x200B;狀態中，無法以Admin編輯使用「帳戶付款」所下訂單的問題。
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**：將日期格式從斜線分隔(/)還原為破折號分隔(-)，修正Sales GraphQL日期欄位傳回與舊版不同格式日期的問題。
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**：修正GraphQL傳回的訂單日期和訂單註解時間戳記在非英文地區設定中顯示錯誤行事曆日期的問題。
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**：修正具有受限制許可權的管理員使用者無法從客戶格線中刪除客戶的問題。
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**：修正GraphQL結構描述中請購單清單專案型別拼字錯誤的問題。 較舊的`items`欄位和`RequistionListItems`型別仍可使用，但已過時。
-1. **ACP2E-4877**：修正在&#x200B;*擱置中*&#x200B;狀態中，使用&#x200B;**[!UICONTROL Payment on Account]**&#x200B;下達的訂單無法在Admin中編輯的問題。
 1. **ACP2E-4908**：修正大型目錄導致Redis或Valkey中記憶體使用過量的問題，因為每個商店檢視中的每項產品都有個別的版面配置快取專案。
+1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)**：修正可設定產品之商業發票與銷退折讓單總計未包含「固定產品稅(FPT)」，導致總計低於訂單總計的問題。
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**：修正在Admin中重新排序訂單時，會建立尾碼為`-1`的新訂單編號而非指派下一個連續訂單編號的問題。
-1. **ACP2E-4977**：修正可設定產品發票與銷退折讓單總計不包含&#x200B;**[!UICONTROL Fixed Product Tax]** (FPT)的問題，導致總計低於訂單總計。
 1. **AC-16530**：修正購物車未一致反映目錄價格規則之排程更新的問題。
-1. **AC-11389**：修正某些四捨五入案例中折扣、稅金和訂單總計計算錯誤的問題。
+1. **[AC-11389](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)**：修正某些四捨五入案例中折扣、稅金和訂單總計計算錯誤的問題。
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**：修正當需要的目錄資料無法使用時，將共用目錄儲存在「管理員」中可能會無意中移除指派的產品和定價的問題。
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**：修正承載中不存在一個SKU時，`POST /V1/products/tier-prices` REST API要求完全失敗的問題，以防止更新有效的SKU。
-1. **AC-14940**：修正某些商店相關案例中，在管理員中按一下客戶帳戶的「**[!UICONTROL Reset Password]**」時，未傳送密碼重設電子郵件的問題。
+1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)**：修正某些商店相關案例中，在管理員中按一下客戶帳戶的「[!UICONTROL Reset Password]」時，未傳送密碼重設電子郵件的問題。
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**：修正當索引子設為&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;時，安裝B2B模組失敗的問題。
 1. **ACP2E-5205**：修正當類別載入需要相當長的時間，或當涉及大量類別和產品時造成逾時的問題。 此外，每個類別分葉的產品計數現在都會正確顯示。
 1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)**：修正同時於店面將相同產品新增至購物車時，會在購物車中為相同的SKU建立個別專案，而非將其合併為單一專案的問題。
