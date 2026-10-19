@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
+source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '523'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -39,8 +39,8 @@ QPT v1.1.83包含下列修補程式：
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**：修正具有受限制許可權的管理員使用者無法從客戶格線中刪除客戶的問題。
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**：修正GraphQL結構描述中請購單清單專案型別拼字錯誤的問題。 較舊的`items`欄位和`RequistionListItems`型別仍可使用，但已過時。
 1. **ACP2E-4908**：修正大型目錄導致Redis或Valkey中記憶體使用過量的問題，因為每個商店檢視中的每項產品都有個別的版面配置快取專案。
+1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)**：修正可設定產品之商業發票與銷退折讓單總計未包含「固定產品稅(FPT)」，導致總計低於訂單總計的問題。
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**：修正在Admin中重新排序訂單時，會建立尾碼為`-1`的新訂單編號而非指派下一個連續訂單編號的問題。
-1. **ACP2E-4977**：修正可設定產品發票與銷退折讓單總計不包含&#x200B;**[!UICONTROL Fixed Product Tax]** (FPT)的問題，導致總計低於訂單總計。
 1. **AC-16530**：修正購物車未一致反映目錄價格規則之排程更新的問題。
 1. **[AC-11389](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)**：修正某些四捨五入案例中折扣、稅金和訂單總計計算錯誤的問題。
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**：修正當需要的目錄資料無法使用時，將共用目錄儲存在「管理員」中可能會無意中移除指派的產品和定價的問題。
