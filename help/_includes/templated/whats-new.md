@@ -22,7 +22,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015的QPT 1.1.83修正的詳細說明：共用目錄儲存會在工作階段讀取錯誤</a>後移除產品指派和定價。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015的QPT 1.1.83修正的詳細說明：共用目錄儲存會在工作階段讀取錯誤</a>後移除產品指派和定價。</p>
 </td>
       <td>
         新主題qpt
@@ -30,7 +30,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5277785149087405dfe01a3e059d7f617869fbf2">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211的QPT 1.1.83修正的詳細說明：平行的購物車附加請求會為相同的SKU</a>建立個別專案。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211的QPT 1.1.83修正的詳細說明：平行的購物車附加請求會為相同的SKU</a>建立個別專案。</p>
 </td>
       <td>
         新主題qpt

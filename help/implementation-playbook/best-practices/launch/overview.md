@@ -38,7 +38,7 @@ ht-degree: 1%
 
 | 最佳實務 | 說明 |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Adobe安全性通知服務](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | 訂閱Adobe安全性通知。 |
+| [Adobe安全性通知服務](https://www.adobe.com/tw/subscription/adbeSecurityNotifications.html) | 訂閱Adobe安全性通知。 |
 | [保護您的Commerce網站和基礎結構](security-best-practices.md) | 強化Commerce安裝的安全性狀態，以保護Commerce的店面、管理員、基礎結構和資料免受未經授權的存取和網路攻擊。 |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=zh-Hant) | 設定Google reCAPTCHA以取得管理員存取權，以及註冊客戶所啟動的各種店面動作。 |
 | [設定網頁爬蟲](robots-txt.md) | 將您的Adobe Commerce網站相關指示傳遞給網頁爬蟲。 |
