@@ -114,7 +114,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增2.4.10-alpha1版本的檔案：<br /> — 新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">Adobe Commerce發行說明</a>，其中包含發行重點和修正的問題。<br /> — 新增<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-10">Magento Open Source發行說明</a>，其中包含發行重點和修正的問題。<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>，其中包含2.4.10-alpha的個別雲端和內部部署相依性表格。<br /> — 將<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/uct">UCT CLI參考</a>更新至3.0.28版。</p>
+      <td><p>新增2.4.10-alpha1版本的檔案：<br /> — 新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">Adobe Commerce發行說明</a>，其中包含發行重點和修正的問題。<br /> — 新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/magento-open-source/2-4-10">Magento Open Source發行說明</a>，其中包含發行重點和修正的問題。<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements">系統需求</a>，其中包含2.4.10-alpha的個別雲端和內部部署相依性表格。<br /> — 將<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/cli-reference/uct">UCT CLI參考</a>更新至3.0.28版。</p>
 </td>
       <td>
         重大更新、新主題、發行說明
