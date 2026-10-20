@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
+source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -32,15 +32,15 @@ ht-degree: 0%
 
 QPT v1.1.84包含下列修補程式：
 
-1. **ACP2E-4913**：修正因鎖死而造成送貨與開立商業發票作業失敗的問題。
+1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**：修正REST API出貨與發票建立在資料庫死結後永久失敗的問題。
 1. **ACP2E-5005**：修正可轉讓報價單中的搭售產品選項數量，在Admin中重新設定搭售產品並編輯數量時，回覆為先前值的問題。
 1. **ACP2E-5009**：修正從Magento Open Source移轉至Adobe Commerce的資料未正確移轉類別排程設計變更和產品&#x200B;**[!UICONTROL Special Price]**&#x200B;排程更新，導致移轉期間遺失或略過部分排程更新的問題，並改善移轉效能。
-1. **ACP2E-5017**：修正當客戶未指派給公司時，透過GraphQL查詢客戶角色傳回&#x200B;*內部伺服器錯誤*&#x200B;的問題。
+1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**：修正當客戶未指派給公司時，透過GraphQL查詢客戶`role`傳回&#x200B;*內部伺服器錯誤*&#x200B;的問題。
 1. **ACP2E-5027**：修正當啟用檔案鎖定時，索引器停滯在回圈中且重新索引未完成的問題。
 1. **ACP2E-5029**：修正手動重新同步之前，**[!DNL Live Search]**&#x200B;中未顯示目錄價格規則變更的問題。
 1. **ACP2E-5041**：修正了在排程更新期間儲存產品，導致在更新結束後店面顯示一般價格而非&#x200B;**[!UICONTROL Special Price]**&#x200B;的問題。
-1. **ACP2E-5059**：修正客戶收到相同訂單的重複訂單確認電子郵件的問題。
-1. **ACP2E-5122**：修正例外狀況記錄檔中，針對購物車的GraphQL要求所處理的錯誤，不正確記錄為應用程式錯誤的問題。
+1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**：修正客戶收到相同訂單的重複訂單確認電子郵件的問題。
+1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**：修正例外狀況記錄檔中，針對購物車的GraphQL要求所處理的錯誤，不正確記錄為應用程式錯誤的問題。
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**：修正僅請求路由中繼資料時，GraphQL `route`查詢會呈現完整CMS頁面內容的問題，增加包含Page Builder Widget之CMS頁面的資料庫查詢數量。
 1. **ACP2E-5183**：修正編譯使用`@magento_import`指示詞的`LESS`檔案時，PHP 8.5上的靜態內容部署失敗的問題。
 1. **ACP2E-5242**：修正將專案新增至購物車時，檢查產品可用性顯示錯誤，指出找不到網站的問題。
