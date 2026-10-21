@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
+source-git-commit: bbbc64cec77399dcff1a28326227858e7bf1f3a4
 workflow-type: tm+mt
-source-wordcount: '10961'
+source-wordcount: '10974'
 ht-degree: 0%
 ---
 
@@ -1076,6 +1076,7 @@ ht-degree: 0%
       - [AC-12854：管理員重新排序會使用尾碼為–1的原始訂單編號](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5079：客戶區段只符合第一個具有全域帳戶共用的網站](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)
       - [ACP2E-5059：同時cron工作傳送重複的訂單確認電子郵件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
       - [ACP2E-5122：已處理的GraphQL購物車錯誤未正確寫入例外記錄檔](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)
       - [ACP2E-4913：資料庫死結後，不會重試REST API出貨與發票建立](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)
