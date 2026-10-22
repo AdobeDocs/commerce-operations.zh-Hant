@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ea739d12f02672cf585925b90860bca3b44de02a
+source-git-commit: 9d7a2fd125245848466442b66f53fd9b0476da4e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -34,7 +34,7 @@ QPT v1.1.84包含下列修補程式：
 
 1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**：修正可轉讓報價單中的搭售產品選項數量，在Admin中重新設定搭售產品並編輯數量時，回覆為先前值的問題。
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**：修正REST API出貨與發票建立在資料庫死結後永久失敗的問題。
-1. **ACP2E-5009**：修正從Magento Open Source移轉至Adobe Commerce的資料未正確移轉類別排程設計變更和產品&#x200B;**[!UICONTROL Special Price]**&#x200B;排程更新，導致移轉期間遺失或略過部分排程更新的問題，並改善移轉效能。
+1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**：修正從Magento Open Source移轉至Adobe Commerce的資料未正確移轉類別排程設計變更和產品&#x200B;**[!UICONTROL Special Price]**&#x200B;排程更新，導致移轉期間遺失或略過部分排程更新的問題，並改善移轉效能。
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**：修正當客戶未指派給公司時，透過GraphQL查詢客戶`role`傳回&#x200B;*內部伺服器錯誤*&#x200B;的問題。
 1. **ACP2E-5027**：修正當啟用檔案鎖定時，索引器停滯在回圈中且重新索引未完成的問題。
 1. **ACP2E-5029**：修正手動重新同步之前，**[!DNL Live Search]**&#x200B;中未顯示目錄價格規則變更的問題。
