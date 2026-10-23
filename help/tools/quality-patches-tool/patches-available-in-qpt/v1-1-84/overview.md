@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 9d7a2fd125245848466442b66f53fd9b0476da4e
+source-git-commit: b9ce2de42db0056d16d8df5e650231ae2b013653
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '558'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -44,7 +44,7 @@ QPT v1.1.84包含下列修補程式：
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**：修正僅請求路由中繼資料時，GraphQL `route`查詢會呈現完整CMS頁面內容的問題，增加包含Page Builder Widget之CMS頁面的資料庫查詢數量。
 1. **ACP2E-5183**：修正編譯使用`@magento_import`指示詞的`LESS`檔案時，PHP 8.5上的靜態內容部署失敗的問題。
 1. **ACP2E-5242**：修正將專案新增至購物車時，檢查產品可用性顯示錯誤，指出找不到網站的問題。
-1. **ACP2E-5263**：修正將產品匯出至CSV檔案後，無法再包含所有產品，而造成檔案不完整的問題。
+1. **[ACP2E-5263](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)**：修正因資料不一致而造成錯誤而中斷匯出後，產品匯出CSV中遺失產品的問題。
 1. **ACP2E-5034**：修正當選取送貨方式後重新計算報價時，可轉讓的報價管理錯誤地將總計重設為&#x200B;*零*&#x200B;的問題，捨棄透過Admin中的&#x200B;**[!UICONTROL Configure]**&#x200B;動作進行的套裝產品選項數量更新，且無法在報價小計中正確反映套用至動態價格套裝產品的料號層級折扣。
 1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**：修正連結為「相關產品」、「向上銷售」或「交叉銷售」的產品儲存後，產品從店面消失的問題，同時非預設庫存和來源正在使用中。
 1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**：修正在Admin中以非預設地區設定編輯公司帳戶時，其&#x200B;**[!UICONTROL Credit Limit]**&#x200B;會重設為`0`的問題。
