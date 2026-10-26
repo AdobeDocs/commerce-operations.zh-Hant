@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: b9ce2de42db0056d16d8df5e650231ae2b013653
+source-git-commit: e3fec5eba866e1d0ae4c7285667f41b289edf21b
 workflow-type: tm+mt
-source-wordcount: '11022'
+source-wordcount: '11035'
 ht-degree: 0%
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 0%
   - [Adobe Commerce的管理警報： CPU警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質修補工具 {#quality-patches-tool}
   - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-  - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+  - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
   - [使用情況](quality-patches-tool/usage.md)
   - [發行說明](quality-patches-tool/release-notes.md)
   - Quality Patches Tool提供的修補程式 {#patches-available-in-qpt}
@@ -901,8 +901,8 @@ ht-degree: 0%
       - [ACSD-67603：針對已啟用影像包含功能的產品，產生Sitemap需要較長的處理時間](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
       - [ACSD-67093：使用日期範圍篩選器透過GraphQL擷取訂單時，傳回錯誤結果](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
       - [ACSD-67652：將產品狀態於GraphQL呼叫中傳回為無庫存狀態，且子產品和父產品有庫存](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-      - [ACSD-60624：上傳影像失敗，因為 [!DNL Page Builder]中的影像、橫幅和滑桿區段有空白內容](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
-      - [ACSD-67904：如果城市名稱包含數字(0-9)、&amp;符號(&amp;)、句點(.)或括弧()，則無法下訂單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
+      - [ACSD-60624：上傳影像失敗，因為 [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)中的影像、橫幅和滑桿區段有空白內容
+      - [ACSD-67904：如果城市名稱包含數字(0-9)、&amp;符號(&amp;)、句點(.)或括弧()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)，則無法下訂單
       - [ACSD-67459：無法匯入說明長度超過65,536個字元的產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
     - v1.1.72 {#v1-1-72}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -975,7 +975,7 @@ ht-degree: 0%
       - [ACSD-69494：使用「is_online」的非同步退款請求不會觸發線上退款](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
       - [ACSD-68537：結帳效能會因許多客戶區段而降低](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)
       - [ACSD-69311：從商業發票部分退款後，銷退折讓單中的稅捐計算不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)
-      - [ACSD-68341：在PDP載入時發生多個X-Magento-Vary Cookie更新](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
+      - [ACSD-68341：多個X-Magento-Vary Cookie更新會在PDP載入時發生](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
     - v1.1.78 {#v1-1-78}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
       - [ACP2E-4513：系統不會移除過期的驗證碼影像](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
@@ -1076,6 +1076,7 @@ ht-degree: 0%
       - [AC-12854：管理員重新排序會使用尾碼為–1的原始訂單編號](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5027：當應用程式鎖定使用檔案鎖定提供者時，索引子沒有完成](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)
       - [ACP2E-5263：產品CSV匯出提早停止並省略產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
       - [ACP2E-5009： Content Staging移轉會建立無效的更新，並減緩安裝程式:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)
       - [ACP2E-5005：在管理員可轉讓的報價中，捆綁產品數量不會更新](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)
@@ -1106,7 +1107,7 @@ ht-degree: 0%
   - [警示標籤](observation-for-adobe-commerce/alerts-tab.md)
   - [WAF標籤](observation-for-adobe-commerce/waf-tab.md)
   - [CDN索引標籤](observation-for-adobe-commerce/cdn-tab.md)
-  - [&#x200B; [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
+  - [ [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
   - [Cron標籤](observation-for-adobe-commerce/cron-tab.md)
   - [索引標籤](observation-for-adobe-commerce/indexing-tab.md)
   - [快速檢視標籤](observation-for-adobe-commerce/oac-quickview-tab.md)
@@ -1134,6 +1135,6 @@ ht-degree: 0%
     - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
     - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
   - 資源 {#resources}
-    - [疑難排解](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [疑難排解](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
