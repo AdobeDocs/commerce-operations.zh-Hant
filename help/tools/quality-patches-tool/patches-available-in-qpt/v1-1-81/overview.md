@@ -32,9 +32,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 4e0c8bca6f53821914bf40481eb0cee7ededa411
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '270'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.81
@@ -46,9 +46,7 @@ QPT v1.1.81包含下列修補程式：
 
 1. **[ACP2E-4401](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)**：修正含有可設定產品之[!UICONTROL Home Page]連結的[!UICONTROL Scheduled Update Preview]重新導向至[!UICONTROL maintenance page]而非顯示產品清單的問題。
 1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**：修正變更Admin中的客戶群組未更新店面目錄許可權，導致目錄和購物車反映過時許可權的問題。
-1. **ACP2E-4401**：修正含有可設定產品之首頁連結的[!UICONTROL Scheduled Update Preview]重新導向至維護頁面，而非顯示產品清單的問題。
 1. **[ACP2E-4395](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)**：如果未指定全域範圍的金額，Giftcard API產品建立現在會顯示錯誤。
-1. **ACP2E-4468**：修正具有網站範圍許可權的[!UICONTROL Admin]使用者無法編輯橫幅內容的問題。
 1. **[ACP2E-4468](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)**：修正具有網站範圍許可權的Admin使用者無法編輯橫幅內容的問題。
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**：修正含有自訂選項的長產品名稱在分頁後與多頁發票、出貨、銷退折讓單和退貨PDF中的相鄰欄或專案重疊的問題，使行專案無法讀取。
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**：修正非銷售產品或刪除的產品從最終可協商的報價中消失的問題。
