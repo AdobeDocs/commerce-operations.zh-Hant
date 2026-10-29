@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d864a5fb8d9093a14575f017e7b66a19219d503f
+source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 QPT v1.1.83包含下列修補程式：
 
-1. **AC-17975**：修正某些PHP環境中影響Admin工作流程、簽出驗證、驗證碼處理、類別管理、設定頁面和命令列作業的多個PHP 8.5相容性問題。
+1. **[AC-17975](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)**：修正使用PHP 8.5時，Adobe Commerce 2.4.9中的CLI命令、類別編輯、設計設定和AJAX客戶登入失敗的問題。
 1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**：修正在&#x200B;*擱置中*&#x200B;狀態中，無法以Admin編輯使用「帳戶付款」所下訂單的問題。
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**：將日期格式從斜線分隔(/)還原為破折號分隔(-)，修正Sales GraphQL日期欄位傳回與舊版不同格式日期的問題。
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**：修正GraphQL傳回的訂單日期和訂單註解時間戳記在非英文地區設定中顯示錯誤行事曆日期的問題。
