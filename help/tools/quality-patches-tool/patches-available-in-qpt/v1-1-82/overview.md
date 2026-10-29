@@ -32,9 +32,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 889cab9f0f353242319e1feaa090e74819f53027
+source-git-commit: 4e0c8bca6f53821914bf40481eb0cee7ededa411
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '489'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.82
@@ -44,18 +44,10 @@ ht-degree: 0%
 QPT v1.1.82包含下列修補程式：
 
 1. **ACP2E-4815**：修正記錄中造成PHP例外的多個GraphQL問題、修正透過GraphQL在訂購後建立的訂單與客戶帳戶之間的關聯，以及透過HTTP規格將回應與GraphQL保持一致。
-1. **ACP2E-4194**：修正GraphQL回應針對無效、未授權或格式錯誤的請求傳回不正確HTTP狀態代碼的問題。
-1. **ACP2E-4593**：修正多網站部署中，次要網站上針對網站限制顯示的CMS頁面不正確的問題。
-1. **ACP2E-4682**：修正每次載入頁面時，造訪檢查報價單`isActive`狀態的Storefront頁面會建立空白報價記錄的問題。
 1. **[ACP2E-4695](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)**：修正目錄規則索引器耗用過多記憶體且無法完成，導致不穩定及記憶體不足錯誤的問題。
 1. **[ACP2E-4194](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)**：修正GraphQL回應針對無效、未授權或格式錯誤的請求傳回不正確HTTP狀態代碼的問題。
-1. **ACP2E-4547**：修正管理員使用者無法在管理員中使用&#x200B;**[!UICONTROL Add Products by SKU]**，將標準目錄中的產品新增至可協商報價單，因為公司已指派給未連結至共用目錄的客戶群組。
-1. **ACP2E-4593**：修正多網站部署中，次要網站上針對網站限制顯示的CMS頁面不正確的問題。
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**：修正管理員使用者無法在管理員中使用&#x200B;**[!UICONTROL Add Products By SKU]**，將預設目錄中的產品新增至指定給未連結至共用目錄之客戶群組的公司的訂單的問題。
-1. **ACP2E-4593**：修正多網站部署中，次要網站上針對網站限制顯示的CMS頁面不正確的問題。
-1. **ACP2E-4682**：修正每次載入頁面時，造訪檢查報價單`isActive`狀態的Storefront頁面會建立空白報價記錄的問題。
-1. **[ACP2E-4682](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)**：修正每次載入頁面時，造訪檢查報價為isActive狀態的店面頁面會建立空白報價記錄的問題。
-1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**：修正管理員使用者無法在管理員中使用&#x200B;**[!UICONTROL Add Products By SKU]**，將預設目錄中的產品新增至指定給未連結至共用目錄之客戶群組的公司的訂單的問題。
+1. **[ACP2E-4682](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)**：修正每次載入頁面時，造訪檢查報價單`isActive`狀態的店面頁面會建立空白報價單記錄的問題。
 1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**：修正多網站部署中，次要網站上針對網站限制顯示的CMS頁面可能不正確的問題。
 1. **[ACP2E-4698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)**：修正在「頁面產生器」文字內容中再次編輯影像時，可以儲存絕對媒體URL，而非保留可攜式媒體指示詞的問題。
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**：修正即使資料庫設定為支援utf8mb4，在WYSIWYG編輯器或管理員的頁面產生器內容中輸入4位元組Unicode字元時仍會遭到錯誤封鎖的問題。
