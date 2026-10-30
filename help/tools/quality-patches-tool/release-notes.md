@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
 workflow-type: tm+mt
-source-wordcount: '33143'
+source-wordcount: '33534'
 ht-degree: 0%
 ---
 # 發行說明
@@ -34,6 +34,23 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需Magento Open Source社群所建立[!DNL quality patches]的相關資訊，請參閱[發行說明](https://github.com/magento/quality-patches/blob/master/community-release-notes.md)。
+
+## v1.1.85 {#v1-1-85}
+
+* **ACP2E-4929** （適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.10） — 修正[!UICONTROL Compare Products]頁面上的屬性標籤顯示其他商店檢視而非目前商店檢視的翻譯的問題。
+* **ACP2E-5075** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.10） — 修正當規則僅符合搭售組合父項產品時，具有類別條件的固定金額購物車價格規則無法正確將折扣套用至動態價格搭售組合產品的所有子項的問題。
+* **ACP2E-5077** （適用於Adobe Commerce和Magento Open Source >=2.4.7-p7 &lt;2.4.10） — 修正並行的`customerCart`GraphQL查詢或`POST /V1/carts/mine REST`請求為尚未擁有有效購物車的客戶建立重複有效購物車的問題。
+* **ACP2E-5088** （適用於Adobe Commerce和Magento Open Source >=2.4.8 &lt;2.4.10） — 修正當客戶的工作階段過期時，客戶會清除永續性購物車的問題。
+* **ACP2E-3991** （適用於Adobe Commerce >=2.4.7 &lt;2.4.9） — 修正使用者端IP位址未正確確定的問題。
+* **ACP2E-5092** （針對Adobe Commerce，B2B >=1.3.4 &lt;1.5.4） — 修正當公司地址儲存時不含地區，而之後又將地區新增至其國家/地區時，[!UICONTROL Company Profile]頁面和管理員[!UICONTROL Customer Edit]頁面顯示錯誤的問題。
+* **ACP2E-5124** （適用於Adobe Commerce和Magento Open Source >=2.4.5 &lt;2.4.10） — 修正當[!UICONTROL Validation Strategy]設定為&#x200B;*因錯誤*&#x200B;而停止，驗證失敗後，驗證結果中仍有[!UICONTROL Import]按鈕可用的問題。
+* **AC-17456** （適用於Adobe Commerce和Magento Open Source >=2.4.9 &lt;2.4.10） — 修正在「管理面板」的「[!UICONTROL Design Configuration]」頁面上編輯&#x200B;*[!UICONTROL Global]*&#x200B;範圍，在PHP 8.4和8.5上傳回&#x200B;*HTTP 500*&#x200B;錯誤的問題。
+* **ACP2E-5212** （針對Adobe Commerce，B2B >=1.3.4 &lt;1.5.4） — 修正[!UICONTROL Quick Order]接受重新命名為`.csv`副檔名的非CSV檔案的問題。
+* **ACP2E-5300** （適用於Adobe Commerce和Magento Open Source >=2.4.9 &lt;2.4.10） — 修正關鍵字在管理面板[!UICONTROL Orders]格線中搜尋多個以空格或逗號分隔的訂單號碼時，未傳回任何相符訂單的問題。
+* **ACP2E-5354** （對於Adobe Commerce，B2B >=1.5.3 &lt;1.5.4） — 修正透過REST API更新客戶導致與公司帳戶關聯的客戶在Admin [!UICONTROL Customers]格線中出現多次的問題。
+* **ACP2E-5208** （適用於Adobe Commerce，B2B >=1.5.1 &lt;1.5.4） — 修正每個Storefront頁面導覽中（即使未進行任何變更）[!UICONTROL Requisition List]區段重新載入的問題。
+* 更新的版本： **ACP2E-4894**
+* 已取代的修補程式： **ACP2E-4626**
 
 ## v1.1.84 {#v1-1-84}
 
