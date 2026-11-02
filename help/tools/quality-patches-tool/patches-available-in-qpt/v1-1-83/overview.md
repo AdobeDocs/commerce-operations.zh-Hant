@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
+source-git-commit: a376b03617703097396bef92f8174bfe1da34c52
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '524'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -32,13 +32,13 @@ ht-degree: 0%
 
 QPT v1.1.83包含下列修補程式：
 
+1. **[ACP2E-4908](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908.md)**：修正大型目錄可能導致[!DNL Valkey] （或[!DNL Redis]）中記憶體使用過量的問題，因為每個商店檢視中的每個產品都有個別的版面配置快取專案。
 1. **[AC-17975](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)**：修正使用PHP 8.5時，Adobe Commerce 2.4.9中的CLI命令、類別編輯、設計設定和AJAX客戶登入失敗的問題。
 1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**：修正在&#x200B;*擱置中*&#x200B;狀態中，無法以Admin編輯使用「帳戶付款」所下訂單的問題。
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**：將日期格式從斜線分隔(/)還原為破折號分隔(-)，修正Sales GraphQL日期欄位傳回與舊版不同格式日期的問題。
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**：修正GraphQL傳回的訂單日期和訂單註解時間戳記在非英文地區設定中顯示錯誤行事曆日期的問題。
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**：修正具有受限制許可權的管理員使用者無法從客戶格線中刪除客戶的問題。
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**：修正GraphQL結構描述中請購單清單專案型別拼字錯誤的問題。 較舊的`items`欄位和`RequistionListItems`型別仍可使用，但已過時。
-1. **ACP2E-4908**：修正大型目錄導致Redis或Valkey中記憶體使用過量的問題，因為每個商店檢視中的每項產品都有個別的版面配置快取專案。
 1. **[AC-16530](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)**：修正購物車未一致反映目錄價格規則之排程更新的問題。
 1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)**：修正可設定產品之商業發票與銷退折讓單總計未包含「固定產品稅(FPT)」，導致總計低於訂單總計的問題。
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**：修正在Admin中重新排序訂單時，會建立尾碼為`-1`的新訂單編號而非指派下一個連續訂單編號的問題。
