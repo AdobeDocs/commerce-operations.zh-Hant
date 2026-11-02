@@ -1,7 +1,7 @@
 ---
-source-git-commit: e402a703aa2b493618d866ba001273d4f3b21bc6
+source-git-commit: 6ee589d7274397880a5404227f3c5ab9659f73a5
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '2002'
 ht-degree: 1%
 ---
 # 新功能範本
@@ -9,6 +9,94 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年10月29日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530">AC-16530之QPT 1.1.83修正的詳細說明：在排程的目錄價格規則更新</a>後，購物車顯示不一致的價格。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/87bb58152a37d84e7ca9c4a882b014bf45224981">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月28日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494">AC-15494之QPT 1.1.84修正的詳細說明： GraphQL產品查詢傳回HTML逸出的產品名稱</a>。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d8d3bfc8adf81046abf9d46ff2dba43c742e2945">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月27日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242">ACP2E-5242的QPT 1.1.84修正的詳細說明： GraphQL在加入購物車要求期間，使用商店ID作為網站ID</a>。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9b84a4c224d31afe6452fd609f6202bc9ac7c1c8">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月26日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027">ACP2E-5027的QPT 1.1.84修正的詳細說明：當應用程式鎖定使用檔案鎖定提供者</a>時，索引子未完成。</p>
+</td>
+      <td>
+        新主題qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7d6f20dd3fe3dca1b8d61fd3afeb2e80bcaa9862">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年10月23日
 
@@ -472,28 +560,6 @@ ht-degree: 1%
         重大更新，新主題
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月26日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840 QPT 1.1.82修正的詳細說明： GraphQL產品查詢針對自訂存貨存貨上的庫存產品傳回null數量</a>。</p>
-</td>
-      <td>
-        新主題qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edfc38af34925749c5acb36d2c0bcfc5d16a577a">認可</a></td>
     </tr>
   </tbody>
 </table>
