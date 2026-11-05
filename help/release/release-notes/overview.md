@@ -13,10 +13,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
+source-git-commit: bce83371e9d510552b871005d591981b1d099f80
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 2%
+source-wordcount: '545'
+ht-degree: 1%
 ---
 
 # Adobe Commerce發行說明
@@ -65,15 +65,18 @@ ht-degree: 2%
     </tr>
     <tr>
       <td>適用於Adobe Commerce的<strong>服務</strong>
-        <p>瞭解創新性Commerce銷售服務的最新改善。</p>
+        <p>瞭解Commerce服務中的最新改良與創新。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=zh-Hant">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=zh-Hant">目錄服務</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation">Audience Activation</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes">目錄服務</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes">即時搜尋</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes">付款服務</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/release-notes">適用於Commerce/a&gt;的AEM Assets整合</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes">產品推薦</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/release-notes">SaaS資料匯出服務</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas">Commerce服務聯結器</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/release-notes">Commerce Optimizer聯結器</a></li>
             <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/release-notes">Experience Platform聯結器</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=zh-Hant">即時搜尋</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=zh-Hant">付款服務</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=zh-Hant">產品推薦</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=zh-Hant">服務聯結器</a></li>
           </ul>
         </td>
       <td><strong>工具</strong>
@@ -82,6 +85,7 @@ ht-degree: 2%
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">適用於Adobe App Builder開發人員的API Mesh</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">適用於Adobe Commerce的Adobe I/O Events</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">管理UI SDK</a></li>
+            <li><a href="../../tools/commerce-version-tool/release-notes.md">Commerce版本工具</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">品質修補工具</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">全網站分析工具</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">升級相容性工具</a></li>
@@ -92,7 +96,7 @@ ht-degree: 2%
        <td><strong>店面體驗</strong>
         <p>瞭解店面技術的最新改善，這些改善可用於為客戶打造獨一無二的體驗。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant">Adobe Commerce店面</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/」">Adobe Commerce店面</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=zh-Hant">頁面產生器</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
