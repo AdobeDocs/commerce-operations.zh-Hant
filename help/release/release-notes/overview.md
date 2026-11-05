@@ -27,14 +27,14 @@ ht-degree: 1%
 
 **其他產品的發行說明：**
 
-- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
-- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
+- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)
+- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/release-notes)
 
 >[!ENDSHADEBOX]
 
 >[!TIP]
 >
->- 如果您是Adobe Commerce的新手，請參閱[企業架構](../../implementation-playbook/architecture/enterprise-blueprint.md)和[Adobe Commerce簡介](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about)主題以取得指引。
+>- 如果您是Adobe Commerce的新手，請參閱[企業架構](../../implementation-playbook/architecture/enterprise-blueprint.md)和[Adobe Commerce簡介](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/about)主題以取得指引。
 >- 如需有關升級的資訊，請參閱[建議的讀取](../../upgrade/resources/recommended-reading.md)。
 
 <table>
@@ -49,17 +49,17 @@ ht-degree: 1%
             <li><a href="../lifecycle-policy.md">軟體生命週期原則</a></li>
             <li><a href="../security-enforcement-policy.md">安全性與法規遵循通知</a></li>
             <li><a href="https://www.adobe.com/trust/security/bulletins-and-advisories.html">Adobe安全性佈告欄和建議</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">適用於Adobe Commerce的B2B</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=zh-Hant">適用於Adobe Commerce的B2B</a></li>
           </ul>
         </td>
       <td>雲端基礎結構上的<strong>Adobe Commerce</strong>
         <p>瞭解適用於Adobe Commerce套件的Cloud Suite的最新改良功能，這些改良功能旨在部署及管理Adobe Commerce在雲端平台上的安裝和升級。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">與舊版不相容的變更</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Commerce雲端修補程式</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">適用於Commerce的Cloud Docker</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">適用於Commerce的雲端元件</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">與舊版不相容的變更</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Commerce雲端修補程式</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">適用於Commerce的Cloud Docker</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">適用於Commerce的雲端元件</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
           </ul>
       </td>
     </tr>
@@ -71,12 +71,12 @@ ht-degree: 1%
             <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes">目錄服務</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes">即時搜尋</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes">付款服務</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">適用於Commerce/a&gt;的AEM Assets整合</li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/release-notes">適用於Commerce/a&gt;的AEM Assets整合</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes">產品推薦</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">SaaS資料匯出服務</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/release-notes">SaaS資料匯出服務</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas">Commerce服務聯結器</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes">Commerce Optimizer聯結器</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Experience Platform聯結器</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/release-notes">Commerce Optimizer聯結器</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/release-notes">Experience Platform聯結器</a></li>
           </ul>
         </td>
       <td><strong>工具</strong>
@@ -97,7 +97,7 @@ ht-degree: 1%
         <p>瞭解店面技術的最新改善，這些改善可用於為客戶打造獨一無二的體驗。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/」">Adobe Commerce店面</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">頁面產生器</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=zh-Hant">頁面產生器</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
       </td>
