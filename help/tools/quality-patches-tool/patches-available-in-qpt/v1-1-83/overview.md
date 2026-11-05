@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a376b03617703097396bef92f8174bfe1da34c52
+source-git-commit: ea5f12bca7e8a3969ffa775d6a675a224f08155f
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -47,7 +47,7 @@ QPT v1.1.83包含下列修補程式：
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**：修正裝載中有一個SKU不存在時，整個請求的`POST /V1/products/tier-prices` REST API請求失敗的問題，以防止更新有效的SKU。
 1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)**：修正某些商店相關案例中，在管理員中按一下客戶帳戶的「[!UICONTROL Reset Password]」時，未傳送密碼重設電子郵件的問題。
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**：修正當索引子設為&#x200B;**[!UICONTROL Update on Schedule]**&#x200B;時，安裝B2B模組失敗的問題。
-1. **ACP2E-5205**：修正當類別載入需要相當長的時間，或當涉及大量類別和產品時造成逾時的問題。 此外，每個類別分葉的產品計數現在都會正確顯示。
+1. **[ACP2E-5205](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205.md)**：修正當類別載入需要相當長的時間，或當涉及大量類別和產品時造成逾時的問題。 此外，產品計數會正確顯示給每個類別分葉。
 1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)**：修正同時於店面將相同產品新增至購物車時，會在購物車中為相同的SKU建立個別專案，而非將其合併為單一專案的問題。
 1. **[ACP2E-5223](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)**：修正&#x200B;**[!UICONTROL Catalog Permissions]**&#x200B;索引包含從客戶群組排除之網站的問題。
 
