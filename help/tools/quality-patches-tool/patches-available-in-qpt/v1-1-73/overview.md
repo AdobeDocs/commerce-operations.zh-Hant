@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 316b2f5efb35b6500a702ec1754a87da881ba961
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '195'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.73
@@ -36,8 +36,8 @@ QPT v1.1.73包含下列修補程式：
 1. **ACSD-67908**：修正JS檔案無法在多存放區設定中正確合併的問題。
 1. **ACSD-68190**：修正未套用折扣、套用的折扣未正確顯示在GraphQL購物車檢視回應中，以及移除優惠券折扣時移除非優惠券折扣的問題。
 1. **ACSD-68206**：修正安裝PHP [!DNL Redis]擴充功能並搭配&#x200B;**[!UICONTROL Rate Limiting]**&#x200B;功能使用GraphQL應用程式伺服器時的錯誤。
-1. **ACSD-68356**： [!DNL GraphQL]購物車查詢傳回虛擬報價的折扣金額不正確。
-1. **ACSD-68391**： **[!UICONTROL Quick Order]**&#x200B;和&#x200B;**[!UICONTROL Requisition Lists]**&#x200B;中未套用類別相關許可權。
-1. **ACSD-68400**：虛擬禮卡數量未正確反映在&#x200B;**[!UICONTROL Inventory reservation table]**&#x200B;中。
+1. **ACSD-68356**：修正[!DNL GraphQL]購物車查詢傳回虛擬報價的折扣金額不正確的問題。
+1. **ACSD-68391**：修正未在&#x200B;**[!UICONTROL Quick Order]**&#x200B;和&#x200B;**[!UICONTROL Requisition Lists]**&#x200B;中正確套用類別相關許可權的問題。
+1. **ACSD-68400**：修正虛擬禮卡數量未正確反映在&#x200B;**[!UICONTROL Inventory reservation table]**&#x200B;中的問題。
 
 使用左側的功能表，導覽至特定的修補程式頁面。

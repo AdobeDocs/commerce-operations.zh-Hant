@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 49785473e0154e72e675b54f9d8119460c53bd8c
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '154'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.74
@@ -34,7 +34,7 @@ QPT v1.1.74包含下列修補程式：
 
 1. **ACSD-68636**：修正從其他商店產生的商業發票的禮品卡電子郵件標題中，商店所有者的名稱未正確顯示的問題。
 1. **ACSD-68430**：修正當資料包含屬性組態中已刪除的屬性選項時，儲存客戶或地址會失敗的問題。
-1. **ACSD-68499**： GraphQL `updateCartItems`突變傳回&#x200B;*成功*，數量超過可用存量。
+1. **ACSD-68499**：修正GraphQL `updateCartItems`變異在更新數量超過可用庫存時傳回成功回應，導致數量與總數膨脹的問題。
 1. **ACSD-68810**：修正訂單指派給不同網站上新建立之客戶（儘管有&#x200B;**[!UICONTROL Customer Account Sharing]**&#x200B;組態）的問題。
 
 使用左側的功能表，導覽至特定的修補程式頁面。
