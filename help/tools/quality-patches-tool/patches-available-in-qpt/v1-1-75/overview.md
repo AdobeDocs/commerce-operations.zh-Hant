@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 5c33cd529bff9208d640cec3c4068f578a9e376c
+source-git-commit: 49785473e0154e72e675b54f9d8119460c53bd8c
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '284'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.75
@@ -35,7 +35,7 @@ QPT v1.1.75包含下列修補程式：
 1. **ACSD-68359**：選取大型購物車的&#x200B;**[!UICONTROL Pick in Store]**&#x200B;時，修正&#x200B;*414*&#x200B;錯誤。
 1. **ACSD-68451**：修正多個網站的問題，其中公司管理員登入一個網站，在另一個網站上建立不相關的公司，但錯誤地連結到該不相關的公司。
 1. **ACSD-68517**：修正&#x200B;**[!UICONTROL Catalog]**&#x200B;和&#x200B;**[!UICONTROL Catalog Search]**&#x200B;頁面上的表單重新提交錯誤。
-1. **ACSD-68490**：受限制的管理員在可設定產品建立期間可看到&#x200B;**[!UICONTROL Add New Attribute]**&#x200B;按鈕。
+1. **ACSD-68490**：修正受限管理員使用者在可設定產品建立期間看見&#x200B;**[!UICONTROL Add New Attribute]**&#x200B;按鈕的問題。
 1. **ACSD-68573**：修正類別許可權未正確套用至客戶願望清單專案的問題。 修正後，願望清單專案可在網頁和GraphQL中正確顯示和分頁。
 1. **ACSD-68615**：修正當處理的組合遺失訂單識別碼時，存貨預留補償CLI顯示例外狀況的問題。
 1. **ACSD-68793**：修正將有效產品指派至共用目錄時，無法正確拒絕有效產品的問題。
