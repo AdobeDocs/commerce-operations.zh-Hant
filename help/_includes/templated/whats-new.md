@@ -1,17 +1,20 @@
 ---
-source-git-commit: f805a1d27c2237ed7f9885524d01c6bd0df1b85c
+source-git-commit: 114e203ce1226139cf2d31b758329ccd8a00205c
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '2082'
 ht-degree: 0%
 ---
 # 新功能範本
 
 ## 新增功能
 
-此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+此頁面包含過去60天所做的變更。 微幅更新（例如複製編輯）會從此清單中排除。
 
 | 說明 | 型別 | 日期/來源 |
 | --- | --- | --- |
+| 已新增[ACP2E-5205的QPT 1.1.83修正的詳細說明：大型目錄會造成管理員](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205)中的類別載入緩慢和逾時。 | 新主題qpt | [2026年11月5日](https://github.com/AdobeDocs/commerce-operations.en/commit/39e85100b07e742c5d21708af62fd1da3462226b) |
+| 已新增[ACP2E-4908的QPT 1.1.83修正的詳細說明：大型目錄會造成Redis或Valkey記憶體使用量過多](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908)。 | 新主題qpt | [2026年11月2日](https://github.com/AdobeDocs/commerce-operations.en/commit/a0924456f529fcc4378c65e81eacfdd6711ae1ca) |
+| 已新增針對[ACP2E-5183的QPT 1.1.84修正的詳細說明：靜態內容部署在具有@magento_import](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183)的PHP 8.5上失敗。 | 新主題qpt | [2026年11月2日](https://github.com/AdobeDocs/commerce-operations.en/commit/3a5e0c4cc2f879416a8e8bc544cc709ef4db3c32) |
 | 已新增[AC-16530之QPT 1.1.83修正的詳細說明：在排程的目錄價格規則更新](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530)後，購物車顯示不一致的價格。 | 新主題qpt | [2026年10月29日](https://github.com/AdobeDocs/commerce-operations.en/commit/87bb58152a37d84e7ca9c4a882b014bf45224981) |
 | 已新增[AC-15494之QPT 1.1.84修正的詳細說明： GraphQL產品查詢傳回HTML逸出的產品名稱](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494)。 | 新主題qpt | [2026年10月28日](https://github.com/AdobeDocs/commerce-operations.en/commit/d8d3bfc8adf81046abf9d46ff2dba43c742e2945) |
 | 新增[ACP2E-5242的QPT 1.1.84修正的詳細說明： GraphQL在加入購物車要求期間，使用商店ID作為網站ID](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242)。 | 新主題qpt | [2026年10月27日](https://github.com/AdobeDocs/commerce-operations.en/commit/9b84a4c224d31afe6452fd609f6202bc9ac7c1c8) |
@@ -47,4 +50,3 @@ ht-degree: 0%
 | 新增[概觀：品質修補工具(QPT) v1.1.83](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview)。 | 新主題qpt | [2026年10月2日](https://github.com/AdobeDocs/commerce-operations.en/commit/266c8529352dac198568dca4676aebd88ce50fc1) |
 | 新增[每月隔離安全性修補原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/monthly-isolated-security-patches)，說明Adobe Commerce如何在完整安全性修補程式發行版本之間，於修補程式星期二提供目標、隔離的CVE修正，以及如何套用及驗證這些修正。 | 新主題 | [2026年9月18日](https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce) |
 | 已更正[Redis/Valkey服務組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)指南，以澄清`VALKEY_BACKEND`和`REDIS_BACKEND`部署變數無法判斷Adobe Commerce實際使用的快取服務，且`VALKEY_USE_SLAVE_CONNECTION`/`REDIS_USE_SLAVE_CONNECTION`必須符合環境中實際可用的服務。 | 技術 | [2026年9月15日](https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6) |
-| Adobe Commerce修補自動化現已正式推出。 請參閱[檔案](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/caps-tool/intro)以瞭解更多資訊。 | 重大更新，新主題 | [2026年9月8日](https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052) |
