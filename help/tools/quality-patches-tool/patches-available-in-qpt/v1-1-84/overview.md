@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
+source-git-commit: 3d95ebd821afb07c08b65e5e8b911ada2d9e58ae
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '546'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -38,17 +38,17 @@ QPT v1.1.84包含下列修補程式：
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**：修正當客戶未指派給公司時，透過GraphQL查詢客戶`role`傳回&#x200B;*內部伺服器錯誤*&#x200B;的問題。
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**：修正當啟用檔案鎖定時，索引器停滯在回圈中且重新索引未完成的問題。
 1. **ACP2E-5029**：修正手動重新同步之前，**[!DNL Live Search]**&#x200B;中未顯示目錄價格規則變更的問題。
-1. **ACP2E-5041**：修正了在排程更新期間儲存產品，導致在更新結束後店面顯示一般價格而非&#x200B;**[!UICONTROL Special Price]**&#x200B;的問題。
+1. **[ACP2E-5041](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)**：修正了在排程更新期間儲存產品，導致在更新結束後店面顯示一般價格而非&#x200B;**[!UICONTROL Special Price]**&#x200B;的問題。
 1. **[ACP2E-5183](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)**：修正編譯使用`@magento_import`指示詞的`LESS`檔案時，PHP 8.5上的靜態內容部署失敗的問題。
 1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**：修正客戶收到相同訂單的重複訂單確認電子郵件的問題。
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**：修正例外狀況記錄檔中，針對購物車的GraphQL要求所處理的錯誤，不正確記錄為應用程式錯誤的問題。
-1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**：修正僅要求路由中繼資料時，GraphQL `route`查詢呈現完整CMS頁面內容的問題，增加包含[!DNL Page Builder]介面工具的CMS頁面的資料庫查詢。
+1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**：修正僅要求路由中繼資料時，GraphQL `route`查詢呈現完整CMS頁面內容的問題，增加包含Page Builder Widget的CMS頁面的資料庫查詢。
 1. **[ACP2E-5242](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)**：修正將專案新增至購物車時，檢查產品可用性顯示錯誤，指出找不到網站的問題。
 1. **[ACP2E-5263](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)**：修正將產品匯出至CSV檔案後，無法再包含所有產品，而造成檔案不完整的問題。
-1. **ACP2E-5034**：修正當選取送貨方式後重新計算報價時，可轉讓的報價管理錯誤地將總計重設為&#x200B;*零*&#x200B;的問題，捨棄透過Admin中的&#x200B;**[!UICONTROL Configure]**&#x200B;動作進行的套裝產品選項數量更新，且無法在報價小計中正確反映套用至動態價格套裝產品的料號層級折扣。
+1. **[ACP2E-5034](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034.md)**：修正當選取送貨方式後重新計算報價時，可轉讓的報價管理錯誤地將總計重設為&#x200B;*零*&#x200B;的問題，捨棄透過Admin中的&#x200B;**[!UICONTROL Configure]**&#x200B;動作進行的套裝產品選項數量更新，且無法在報價小計中正確反映套用至動態價格套裝產品的料號層級折扣。
 1. **[AC-15494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)**：修正產品查詢傳回帶有HTML逸出特殊字元（而非其原始字元）的產品名稱的問題。
-1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**：修正連結為「相關產品」、「向上銷售」或「交叉銷售」的產品儲存後，產品從店面消失的問題，同時非預設庫存和來源正在使用中。
-1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**：修正在Admin中以非預設地區設定編輯公司帳戶時，其&#x200B;**[!UICONTROL Credit Limit]**&#x200B;會重設為`0`的問題。
+1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**：修正連結為[!UICONTROL Related Product]、[!UICONTROL Up-Sell]或交叉銷售的產品儲存後，產品從店面消失的問題，同時非預設庫存和來源正在使用中。
+1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**：修正在Admin中以非預設地區設定編輯公司帳戶時，其&#x200B;**[!UICONTROL Credit Limit]**&#x200B;會重設為&#x200B;*0*&#x200B;的問題。
 1. **[ACP2E-5079](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)**：修正當客戶帳戶在全球共用時，評估指派給多個網站的客戶區段只會從第一個網站傳回相符客戶的問題。
 
 使用左側的功能表，導覽至特定的修補程式頁面。

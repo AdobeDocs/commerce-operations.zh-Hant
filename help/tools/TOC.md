@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: ea5f12bca7e8a3969ffa775d6a675a224f08155f
+source-git-commit: 25d545e300a0a32f982a41c7d3d82b3ed5daf5ef
 workflow-type: tm+mt
-source-wordcount: '11124'
+source-wordcount: '11153'
 ht-degree: 0%
 ---
 
@@ -1080,6 +1080,8 @@ ht-degree: 0%
       - [AC-12854：管理員重新排序會使用尾碼為–1的原始訂單編號](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5034：B2B料號折扣不會減少可轉讓報價中的動態價格組合小計](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034.md)
+      - [ACP2E-5041：儲存過時產品表單會在排程的更新後使特殊價格過期](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)
       - [ACP2E-5183：靜態內容部署在具有`@magento_import`的PHP 8.5上失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
       - [AC-15494： GraphQL產品查詢傳回HTML逸出的產品名稱](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
       - [ACP2E-5242： GraphQL在加入購物車要求期間使用商店ID作為網站ID](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
