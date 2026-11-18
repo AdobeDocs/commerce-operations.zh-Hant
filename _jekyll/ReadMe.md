@@ -57,13 +57,13 @@ whatsnew_consolidated:
   projects:
     - repo: commerce-operations.en
       title: Adobe Commerce operational guides
-      website: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+      website: https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/operational-guides/home
     - repo: commerce-webapi
       title: Adobe Commerce web APIs
       website: https://developer.adobe.com/commerce/webapi/
     - repo: commerce.en
       title: Adobe Commerce
-      website: https://experienceleague.adobe.com/en/docs/commerce
+      website: https://experienceleague.adobe.com/zh-hant/docs/commerce
 ```
 
 移動專案以變更節順序。 您可以從兩個平台自由地交替使用專案。 以`.en`結尾的存放庫名稱使用ExL來源路徑`help/_includes/templated/whats-new.md`。 所有其他存放庫都使用DevSite來源路徑`src/pages/_includes/templated/whats-new.md`。
