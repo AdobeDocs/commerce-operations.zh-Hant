@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '138'
 ht-degree: 0%
-
 ---
 # 安全性修補程式發行說明簡介
 
@@ -18,4 +17,5 @@ ht-degree: 0%
 深入瞭解安全性修補程式發行版本：
 
 * [Adobe Commerce安全性修補程式發行概述](/help/release/release-notes/security/overview.md#about-security-patch-releases)
-* 在&#x200B;_Adobe Commerce知識庫_&#x200B;的[如何取得和套用安全性修補程式](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)中，提供下載和套用安全性修補程式發行版本的指示。
+* 如需升級至安全性修補程式版本的指示，請參閱[安全性修補程式升級範例](/help/upgrade/implementation/perform-upgrade.md#example---security-patch)。
+* 若要套用個別安全性修補程式檔案，請參閱&#x200B;_Adobe支援與工具指南_&#x200B;中的[如何套用Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)提供的撰寫器修補程式。
