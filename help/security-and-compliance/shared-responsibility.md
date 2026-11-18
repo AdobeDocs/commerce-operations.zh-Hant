@@ -40,7 +40,7 @@ Adobe負責下列工作：
 * 確保安全的應用程式開發
 * 如果商戶的付款處理程式要求，請取得PCI認證
 * 回應和回應安全性事件
-* 在主動支援的版本上維護所有協力廠商相依性、平台服務和Adobe Commerce服務擴充功能。 Adobe不針對執行不支援之相依性版本的部署提供安全性支援或協助。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)和[產品可用性矩陣](/help/release/product-availability.md)。
+* 在主動支援的版本上維護所有協力廠商相依性、平台服務和Adobe Commerce服務擴充功能。 Adobe不針對執行不支援之相依性版本的部署提供安全性支援或協助。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)和[產品可用性矩陣](/help/release/product-availability.md)。
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Adobe也會確保商家基礎建設的可用性，如適用的SLA中所商定。
 該商戶負責針對其雲端基礎結構解決方案上的Adobe Commerce自訂執行個體，遵循下列安全性最佳實務：
 
 * 將雲端基礎結構設定檔案上的必要Adobe Commerce新增到存放庫
-* 在Adobe發佈雲端基礎結構解決方案的自訂Adobe Commerce後，立即將安全性和其他修補程式套用至這些解決方案。 如需個別安全性修補程式檔案，請參閱&#x200B;_Adobe支援與工具指南_&#x200B;中的[如何套用Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)提供的撰寫器修補程式。
+* 在Adobe發佈雲端基礎結構解決方案的自訂Adobe Commerce後，立即將安全性和其他修補程式套用至這些解決方案。 如需個別安全性修補程式檔案，請參閱&#x200B;_Adobe支援與工具指南_&#x200B;中的[如何套用Adobe](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)提供的撰寫器修補程式。
 * 供應商發佈所有自訂擴充功能和程式碼後，立即套用安全性和其他修補程式
 * 建立、部署和測試自訂Vcl檔案
 * 在雲端基礎結構解決方案上設計、設定主題、安裝、整合及保護自訂Adobe Commerce，包括所有自訂擴充功能和程式碼
@@ -112,7 +112,7 @@ Adobe也會確保商家基礎建設的可用性，如適用的SLA中所商定。
   * Adobe Commerce服務擴充功能
   * 所有協力廠商擴充功能與自訂整合
 
-  Adobe不支援執行不支援版本之部署。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)和[產品可用性矩陣](/help/release/product-availability.md)。
+  Adobe不支援執行不支援版本之部署。 如需支援的版本，請參閱[系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)和[產品可用性矩陣](/help/release/product-availability.md)。
 
 ## 雲端服務提供者的責任
 
