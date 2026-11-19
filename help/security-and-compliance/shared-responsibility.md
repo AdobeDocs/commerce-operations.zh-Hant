@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3286'
 ht-degree: 0%
 ---
 # 共擔責任安全性與營運模式
@@ -85,7 +85,7 @@ Adobe也會確保商家基礎建設的可用性，如適用的SLA中所商定。
 該商戶負責針對其雲端基礎結構解決方案上的Adobe Commerce自訂執行個體，遵循下列安全性最佳實務：
 
 * 將雲端基礎結構設定檔案上的必要Adobe Commerce新增到存放庫
-* 在Adobe發佈雲端基礎結構解決方案的自訂Adobe Commerce後，立即套用安全性和其他修補程式至其自訂
+* 在Adobe發佈雲端基礎結構解決方案的自訂Adobe Commerce後，立即將安全性和其他修補程式套用至這些解決方案。 如需個別安全性修補程式檔案，請參閱&#x200B;_Adobe支援與工具指南_&#x200B;中的[如何套用Adobe](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)提供的撰寫器修補程式。
 * 供應商發佈所有自訂擴充功能和程式碼後，立即套用安全性和其他修補程式
 * 建立、部署和測試自訂Vcl檔案
 * 在雲端基礎結構解決方案上設計、設定主題、安裝、整合及保護自訂Adobe Commerce，包括所有自訂擴充功能和程式碼
@@ -979,4 +979,3 @@ Adobe仰賴雲端服務提供者，在雲端基礎結構上為Adobe Commerce託�
 | 根據限制監視vCPU使用量 | R |   |
 
 {style="table-layout:auto"}
-

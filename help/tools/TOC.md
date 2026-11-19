@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 8e93fbc0f771dd2b4ca1a5049ef8dd15f947cd82
+source-git-commit: 73b32dcbf7f306d5b98277ff757e8e9b2eb4f0fa
 workflow-type: tm+mt
-source-wordcount: '11157'
+source-wordcount: '11161'
 ht-degree: 0%
 ---
 
@@ -1099,6 +1099,8 @@ ht-degree: 0%
       - [ACP2E-4741：儲存連結的產品時，會使用自訂庫存從店面隱藏另一個產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - v1.1.85 {#v1-1-85}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+    - v1.1.86 {#v1-1-86}
+      - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
   - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
   - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)

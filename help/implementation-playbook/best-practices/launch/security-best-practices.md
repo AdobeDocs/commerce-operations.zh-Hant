@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2129'
 ht-degree: 0%
 ---
 # 保護您的Commerce網站與基礎架構
@@ -105,6 +105,7 @@ Commerce通常會每季發佈安全性更新，但保留根據優先順序和其
 - [安全性與合規性通知](../../../release/security-enforcement-policy.md) （Cloud 2.4.4到2.4.9版的Adobe Commerce）
 - [升級指南](../../../upgrade/overview.md)
 - [如何套用修補程式](../../../upgrade/patches/overview.md)
+- 如需個別安全性修補程式檔案，請參閱&#x200B;_Adobe支援與工具指南_&#x200B;中的[如何套用Adobe](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)提供的撰寫器修補程式。
 
 >[!TIP]
 >

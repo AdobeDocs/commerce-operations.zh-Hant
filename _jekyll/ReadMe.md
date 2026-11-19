@@ -10,9 +10,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 63e52c8451f368e2d2a36096fc11c7ead62ee94e
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '704'
 ht-degree: 0%
 ---
 
@@ -41,6 +41,66 @@ bundle exec rake whatsnew_bp
 ```sh
 bundle exec rake whatsnew_bp since="jul 4"
 ```
+
+### `whatsnew_consolidated`
+
+將已發佈的Commerce檔案專案的新功能表格合併至`help/_includes/automated/whatsnew/consolidated.md`。
+
+```sh
+bundle exec rake whatsnew_consolidated
+```
+
+設定[`_config.yml`](_config.yml)中`whatsnew_consolidated.projects`下的專案。 每個專案都需要存放庫名稱、專案標題和絕對HTTP(S)網站URL：
+
+```yaml
+whatsnew_consolidated:
+  projects:
+    - repo: commerce-operations.en
+      title: Adobe Commerce operational guides
+      website: https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/operational-guides/home
+    - repo: commerce-webapi
+      title: Adobe Commerce web APIs
+      website: https://developer.adobe.com/commerce/webapi/
+    - repo: commerce.en
+      title: Adobe Commerce
+      website: https://experienceleague.adobe.com/zh-hant/docs/commerce
+```
+
+移動專案以變更節順序。 您可以從兩個平台自由地交替使用專案。 以`.en`結尾的存放庫名稱使用ExL來源路徑`help/_includes/templated/whats-new.md`。 所有其他存放庫都使用DevSite來源路徑`src/pages/_includes/templated/whats-new.md`。
+
+任務會從`AdobeDocs` GitHub組織擷取公開`main`檔案。 它以純文字標題顯示每個專案標題，並引入每個表格和一個句子，將專案標題連結到在`website`中設定的檔案首頁，作為「新增功能」更新的來源。 它全程使用`Description | Type | Date/source`資料表標題。 僅適用於DevSite專案，逸出的`\<br/\>`標籤會變成`<br/>`。 否則，內文列、重複專案、連結和來源列順序會維持不變。 每個來源會定義自己的時段。
+
+具有已識別的no-update訊息的專案將被忽略。 如果每個專案都沒有專案，「包含」會包含一則整體的「不更新」訊息。 設定、擷取、剖析或寫入失敗會使工作失敗，而不會取代現有的包含。
+
+任務沒有排程產生或更新消耗頁面。
+
+焦點測試套件包含載入`_jekyll` Rakefile並透過Bundler執行的Rake進入點測試。 請先安裝套件組合和`_jekyll`套件：
+
+```sh
+cd _jekyll && bundle install
+```
+
+然後從存放庫根目錄執行測試：
+
+```sh
+ruby _jekyll/test/consolidated_whatsnew_test.rb
+```
+
+### `whatsnew_feedback`
+
+透過篩選現有的本機`help/_includes/automated/whatsnew/consolidated.md`包含來建立`help/_includes/automated/whatsnew/consolidated-feedback.md`。
+
+```sh
+bundle exec rake whatsnew_feedback
+```
+
+工作比對`Feedback`做為完整、逗號分隔的Type值，忽略大小寫和周圍的空格。 已包括`Feedback, technical`等組合型別。 說明、來源連結或部分型別名稱中的提及不符合條件。
+
+相符的列、重複專案、純文字專案標題、出現時的來源句子以及專案和列順序維持不變。 沒有相符專案的專案會被忽略。 如果沒有任何相符專案，輸出會包含一個整體無回饋訊息。
+
+輸入必須已存在。 當您要重新整理`bundle exec rake whatsnew_consolidated`時，請個別執行。 意見反應工作不會擷取遠端內容、讀取專案設定或重新產生其輸入。
+
+遺失或格式錯誤的輸入會使工作失敗，而不會取代現有的篩選包含。 輸入檔案永遠不會被修改，而且篩選的輸出會自動發佈。
 
 ### `get_released_versions`
 

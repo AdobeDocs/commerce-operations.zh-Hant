@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2228'
 ht-degree: 0%
 ---
 # Adobe Commerce的啟動後支援與維護
@@ -88,8 +88,6 @@ ht-degree: 0%
 
 - **安全性掃描**：使用Adobe的安全性掃描工具來監視您Commerce網站上的已知漏洞和惡意軟體。 此工具會針對潛在安全性風險和法規遵循問題提供警示。
 
-- **定期修補程式和更新維護**：套用Adobe的安全性修補程式和更新程式。 升級至最新的Adobe Commerce版本，可確保擁有最新的威脅防禦能力。
-
 - **稽核與記錄監控**：運用New Relic記錄檔（適用於Pro專案）等工具，集中及分析中繼與生產環境的安全記錄，提高潛在安全性問題與破壞的能見度。
 
 - **帳戶與存取管理**：定期稽核使用者與管理員帳戶，以移除任何未經授權或過時的帳戶。 透過針對管理員使用者的多重驗證(MFA)來加強存取控制。
@@ -122,13 +120,13 @@ ht-degree: 0%
 
 #### 安全性修補程式與更新
 
-為了持續更新並確保Adobe Commerce Cloud系統的安全性，以下提供監控安全性修補程式和更新的一些主要作法：
+請遵循下列作法，確保您的Adobe Commerce安裝最新且安全：
 
 - **訂閱Adobe Commerce安全性警示**：透過[註冊來自Adobe的通知](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security)，隨時掌握安全性弱點的最新資訊。
 
 - **檢查發行說明**：定期檢閱[安全性修補程式發行說明](/help/release/release-notes/security/overview.md)，這些發行說明在版本（例如2.3.5-p1）上標示「 — pN」，並包含關鍵修正和改良。
 
-- **立即套用安全性修補程式**：一旦有可用的安全性修補程式，立即套用。 這包括更新至最新版本或套用特定修補程式檔案。
+- **立即套用安全性修補程式**：一旦安全性更新可用，請立即安裝。 如需個別修補程式檔案，請參閱&#x200B;_Adobe支援與工具指南_&#x200B;中的[如何套用Adobe提供的撰寫器修補程式](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)。
 
 - **使用雲端修補程式**：針對Adobe Commerce Cloud，安全性修補程式可整合至Cloud Tools Suite。 請務必升級套裝或Commerce版本，以接收這些修正。
 
@@ -136,7 +134,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如需套用修補程式和維護安全性的詳細資訊和逐步指示，請參閱[安全性修補程式發行說明](../../../release/release-notes/security/overview.md)和[如何套用安全性修補程式](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches)。 您也應該檢閱[全網站分析工具](/help/tools/site-wide-analysis-tool/access.md)報告。
+>檢閱[全網站分析工具報告](/help/tools/site-wide-analysis-tool/access.md)以找出需要調查的問題。
 
 #### PCI法規遵循
 
@@ -146,9 +144,9 @@ ht-degree: 0%
 
 - **使用安全傳輸通訊協定**：一律透過TLS等安全通訊協定傳輸付款資料，並具備加密和適當的金鑰管理。
 
-- **利用Web應用程式防火牆(WAF)**： Fastly支援的WAF服務可在惡意流量到達您的網站之前，封鎖惡意流量，協助您符合PCI DSS 6.6需求，並防止常見漏洞。 在[這裡](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md)和[這裡](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service)檢視更多資訊。
+- **利用Web應用程式防火牆(WAF)**：如需支援PCI DSS 6.6要求的指引，請參閱[定期安全性監視](#regular-security-monitoring)和[Fastly WAF服務](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service)。
 
-- **限制存取**：確保只有授權人員才能存取敏感的付款資料，並[套用存取控制以降低暴露風險](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md)。
+- **限制存取**：限制存取敏感的付款資料。 如需帳戶與存取權管理實務，請參閱[定期安全性監視](#regular-security-monitoring)。
 
 - **一般安全性掃描**：執行一般PCI ASV掃描和[監視您的環境](/help/security-and-compliance/shared-responsibility.md)，以解決潛在的漏洞。
 

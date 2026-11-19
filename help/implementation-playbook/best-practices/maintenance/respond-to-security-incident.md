@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1300'
 ht-degree: 0%
 ---
 # 回應安全性事件的最佳實務
@@ -47,7 +47,7 @@ ht-degree: 0%
 - 稽核所有管理員使用者帳戶存取權
 - 啟用進階多重驗證(MFA)控制項
 - 保留重要記錄
-- 檢閱您的Adobe Commerce版本的安全性升級。
+- 檢閱您Adobe Commerce版本的[安全性修補程式發行說明](../../../release/release-notes/security/overview.md)，並套用任何必要的安全性修補程式。
 
 更多建議詳見下文。
 

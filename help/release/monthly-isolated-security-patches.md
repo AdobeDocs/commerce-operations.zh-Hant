@@ -33,9 +33,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 66d7c9fd19785e791635d8e8bdf3d6ff3aa27a20
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1570'
 ht-degree: 0%
 ---
 # 每月隔離的安全性修補原則
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 1. **確認您的基準線版本。**
 
-   隔離的修補程式僅針對您產品線的最新安全性專用`-p`版本進行測試。 如果您落後於該基準線，請先套用它。
+   隔離的修補程式僅針對您產品線的最新安全性專用`-p`版本進行測試。 如果您落後於該基準線，請先套用它。 如需在升級期間指定安全性修補程式版本的指示，請參閱[安全性修補程式升級範例](../upgrade/implementation/perform-upgrade.md#example---security-patch)。
 
 1. **依序套用所有遺失的修補程式。**
 
