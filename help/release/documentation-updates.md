@@ -22,8 +22,8 @@ ht-degree: 0%
 
 您的意見反應有助於改善說明檔案。 您可以透過下列方式協助撰寫：
 
-* 在Adobe Experience League上，使用右側邊欄中的意見區域或窄熒幕上頁面底部的意見區域。 按一下向上或向下縮圖按鈕，對主題進行評級並顯示可選的註解欄位。 若要留下註解，請輸入您的意見反應，然後按一下&#x200B;**[!UICONTROL Submit]**。 請參閱Adobe Experience League ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction)上的[Adobe檔案投稿人指南，瞭解報告問題和建議編輯的指示。
-* 在Adobe Developer上，使用從主題連結的公用GitHub存放庫來報告檔案問題或建議編輯。 如需指示，請參閱Adobe Developer](https://developer.adobe.com/commerce/contributor/guides/doc-contributions/)上的[說明檔案協助撰寫。
+* 在Adobe Experience League上，使用右側邊欄中的意見區域或窄熒幕上頁面底部的意見區域。 按一下向上或向下縮圖按鈕，對主題進行評級並顯示可選的註解欄位。 若要留下註解，請輸入您的意見反應，然後按一下&#x200B;**[!UICONTROL Submit]**。 請參閱Adobe Experience League [&#128279;](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction)上的Adobe檔案投稿人指南，瞭解報告問題和建議編輯的指示。
+* 在Adobe Developer上，使用從主題連結的公用GitHub存放庫來報告檔案問題或建議編輯。 如需指示，請參閱Adobe Developer[&#128279;](https://developer.adobe.com/commerce/contributor/guides/doc-contributions/)上的說明檔案協助撰寫。
 
 加入主題URL，並說明不清楚、遺漏或錯誤的內容，讓檔案團隊可瞭解您的建議。
 
