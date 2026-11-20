@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 73b32dcbf7f306d5b98277ff757e8e9b2eb4f0fa
+source-git-commit: d8a15da2f255c5cac40003ea677e49c5d288d36d
 workflow-type: tm+mt
-source-wordcount: '11161'
+source-wordcount: '11174'
 ht-degree: 0%
 ---
 
@@ -1089,6 +1089,7 @@ ht-degree: 0%
       - [ACP2E-5263：產品CSV匯出提早停止並省略產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
       - [ACP2E-5009： Content Staging移轉會建立無效的更新，並減緩安裝程式:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)
       - [ACP2E-5005：在管理員可轉讓的報價中，捆綁產品數量不會更新](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)
+      - [ACP2E-5029：目錄價格規則變更不會同步至「即時搜尋」價格摘要](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5029.md)
       - [ACP2E-5127：儲存非英文地區設定的公司會將信用額度重設為零](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)
       - [ACP2E-5079：客戶區段只符合第一個具有全域帳戶共用的網站](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)
       - [ACP2E-5059：同時cron工作傳送重複的訂單確認電子郵件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
