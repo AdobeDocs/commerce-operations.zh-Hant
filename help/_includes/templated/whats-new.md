@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9e7338e0be69b83b92210b6299d92cc688681f8d
+source-git-commit: 7096b5f4fa4f40ac33aab5c5cf2bd09c1d25539c
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2293'
 ht-degree: 0%
 ---
 # 新功能範本
@@ -12,6 +12,10 @@ ht-degree: 0%
 
 | 說明 | 型別 | 日期/來源 |
 | --- | --- | --- |
+| 更新[檔案回饋指引](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/documentation-updates#provide-feedback)，以說明在寬熒幕及窄熒幕上何處尋找Experience League回饋控制項、如何留下註解，以及在何處尋找Experience League和Adobe Developer的貢獻指示。 | 技術意見回饋 | [2026年11月20日](https://github.com/AdobeDocs/commerce-operations.en/commit/def568dccb1ef329d82f8e7ea82c2611fbcc36f1) |
+| 新增[檔案更新](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/documentation-updates)，結合Experience League和Adobe Developer的更新，並提供僅提供意見回饋的檢視和關於提交檔案意見回饋的指引。 | 新主題 | [2026年11月18日](https://github.com/AdobeDocs/commerce-operations.en/commit/bf4c4051a3aafc67c71c8fc6d87f7862d1905204) |
+| 新增[概觀：品質修補工具(QPT) v1.1.86](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview)。 | 新主題qpt | [2026年11月18日](https://github.com/AdobeDocs/commerce-operations.en/commit/f9f1054293854bd3423eed5166527640360afc0f) |
+| 新增[概觀：品質修補工具(QPT) v1.1.85](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview)。 | 新主題qpt | [2026年11月17日](https://github.com/AdobeDocs/commerce-operations.en/commit/01b82c10845afcd16db6c22563d65df24f48d340) |
 | 已發佈1.1.86 Quality Patches Tool (QPT)套件發行版本的[發行說明](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=zh-Hant)。 | Qpt | [2026年11月13日](https://github.com/AdobeDocs/commerce-operations.en/commit/6a84f2ebcbbf8041bbe783b53eab5500a4b0acc2) |
 | 已新增[ACP2E-5041的QPT 1.1.84修正的詳細說明：儲存過時產品表單會在排程的更新後過期特殊價格](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041)。 | 新主題qpt | [2026年11月11日](https://github.com/AdobeDocs/commerce-operations.en/commit/d2b8ba35c866be25a0fbbebceeb9a7c68ba37293) |
 | 已新增[ACP2E-5034的QPT 1.1.84修正的詳細說明： B2B專案折扣不會減少報價單](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034)中的動態價格組合小計。 | 新主題qpt | [2026年11月11日](https://github.com/AdobeDocs/commerce-operations.en/commit/974c6238c0e0008eaa36851449de97218bfca949) |
@@ -51,5 +55,3 @@ ht-degree: 0%
 | 已新增[AC-12854的QPT 1.1.83修正的詳細說明：管理員重新排序使用具有–1尾碼](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854)的原始訂單編號。 | 新主題qpt | [2026年10月8日](https://github.com/AdobeDocs/commerce-operations.en/commit/087b7f48c2864837d394c6a9a72f9b30d6db3d90) |
 | 新增[概觀：品質修補工具(QPT) v1.1.84](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview)。 | 新主題qpt | [2026年10月5日](https://github.com/AdobeDocs/commerce-operations.en/commit/7550eaff7dfabecaf2d5ace52e4f28d8da9ff45a) |
 | 新增[概觀：品質修補工具(QPT) v1.1.83](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview)。 | 新主題qpt | [2026年10月2日](https://github.com/AdobeDocs/commerce-operations.en/commit/266c8529352dac198568dca4676aebd88ce50fc1) |
-| 新增[每月隔離安全性修補原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/monthly-isolated-security-patches)，說明Adobe Commerce如何在完整安全性修補程式發行版本之間，於修補程式星期二提供目標、隔離的CVE修正，以及如何套用及驗證這些修正。 | 新主題 | [2026年9月18日](https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce) |
-| 已更正[Redis/Valkey服務組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)指南，以澄清`VALKEY_BACKEND`和`REDIS_BACKEND`部署變數無法判斷Adobe Commerce實際使用的快取服務，且`VALKEY_USE_SLAVE_CONNECTION`/`REDIS_USE_SLAVE_CONNECTION`必須符合環境中實際可用的服務。 | 技術 | [2026年9月15日](https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6) |
