@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d8a15da2f255c5cac40003ea677e49c5d288d36d
+source-git-commit: f7162ccff3f6011af51e0b32eec4bf405633050b
 workflow-type: tm+mt
-source-wordcount: '11174'
+source-wordcount: '11219'
 ht-degree: 0%
 ---
 
@@ -975,7 +975,7 @@ ht-degree: 0%
       - [ACSD-69494：使用「is_online」的非同步退款請求不會觸發線上退款](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
       - [ACSD-68537：結帳效能會因許多客戶區段而降低](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)
       - [ACSD-69311：從商業發票部分退款後，銷退折讓單中的稅捐計算不正確](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)
-      - [ACSD-68341：多個X-Magento-Vary Cookie更新會在PDP載入時發生](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
+      - [ACSD-68341：在PDP載入時發生多個X-Magento-Vary Cookie更新](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
     - v1.1.78 {#v1-1-78}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
       - [ACP2E-4513：系統不會移除過期的驗證碼影像](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
@@ -1102,6 +1102,9 @@ ht-degree: 0%
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
     - v1.1.86 {#v1-1-86}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5046：在管理員中建立訂單時重新整理頁面會多次新增相同的SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)
+      - [ACP2E-3094：檢視或編輯具有許多許可權的類別的類別許可權導致瀏覽器無回應](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)
+      - [ACP2E-5050：在「管理員」中檢視或儲存RMA時，不會在動作記錄報表中顯示RMA編號](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)
   - [使用品質修補工具檢查Adobe Commerce問題的修補程式](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - 命令列工具參考 {#cli-reference}
   - [Adobe Commerce （內部部署）](reference/commerce-on-premises.md)

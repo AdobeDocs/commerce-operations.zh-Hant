@@ -4,7 +4,7 @@ description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.86中可用�
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 95a2c8dc890366c96b6a8129e8ee25dd1b319190
+source-git-commit: f7162ccff3f6011af51e0b32eec4bf405633050b
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -15,9 +15,10 @@ ht-degree: 0%
 
 QPT v1.1.86包含下列修補程式：
 
-1. **ACP2E-3094**：修正檢視或編輯具有許多許可權的類別的&#x200B;**[!UICONTROL Category Permissions]**&#x200B;時，可能導致瀏覽器無回應的問題。
-1. **ACP2E-5046**：修正在Admin中建立訂單時，重新整理頁面多次新增相同SKU的問題。
-1. **ACP2E-5050**：修正在Admin中檢視或儲存RMA時，**[!UICONTROL Action Logs]**&#x200B;報告中未顯示RMA號碼的問題。
+
+1. **[ACP2E-5046](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)**：修正在Admin中建立訂單時，重新整理頁面多次新增相同SKU的問題。
+1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**：修正檢視或編輯具有許多許可權的類別的&#x200B;**[!UICONTROL Category Permissions]**&#x200B;時，可能導致瀏覽器無回應的問題。
+1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**：修正在Admin中檢視或儲存RMA時，**[!UICONTROL Action Logs]**&#x200B;報告中未顯示RMA號碼的問題。
 1. **ACP2E-5057**：修正當&#x200B;**[!UICONTROL Catalog Price Scope]**&#x200B;設為&#x200B;**[!UICONTROL Website]**&#x200B;時，套件組合產品的[!DNL GraphQL]查詢傳回全域套件組合選項價格而非網站特定價格的問題。
 1. **ACP2E-5061**：修正類別銷售規則無法將`AND`條件與符合數個值之任一值的條件結合的問題。
 1. **ACP2E-5071**：修正購物者的購物車已包含完整可用數量時，產品頁面上不一定會顯示庫存無法使用訊息的問題。
