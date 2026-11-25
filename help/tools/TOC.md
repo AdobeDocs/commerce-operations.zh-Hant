@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 86872648c372158143f5bbe707ba7a3f15552bc3
+source-git-commit: 8070923142c6b28c5e34d47200d2f8995aae5dcb
 workflow-type: tm+mt
-source-wordcount: '11234'
+source-wordcount: '11245'
 ht-degree: 0%
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 0%
   - [Adobe Commerce的管理警報： CPU警告警報](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - 品質修補工具 {#quality-patches-tool}
   - [[!DNL Quality Patches Tool]：品質修補程式的自助服務工具](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-  - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=zh-Hant){target="_blank"}
+  - [[!DNL Quality Patches Tool]：搜尋修補程式](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
   - [使用情況](quality-patches-tool/usage.md)
   - [發行說明](quality-patches-tool/release-notes.md)
   - Quality Patches Tool提供的修補程式 {#patches-available-in-qpt}
@@ -764,7 +764,7 @@ ht-degree: 0%
     - v1.1.59 {#v1-1-59}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
       - [ACSD-64112：設定MAGE_INDEXER_THREADS_COUNT時，indexer_update_all_views cron執行失敗](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
-      - [ACSD-63454：下拉式清單和多選屬性的預設值未正確儲存在資料庫中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
+      - [ACSD-63454：下拉式清單和多個Select屬性的預設值未正確儲存在資料庫中](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
       - [ACSD-63870：在公司狀態變更期間，客戶未正確登出](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
       - [ACSD-63469：固定金額購物車折扣未正確套用多個規則](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly.md)
       - [ACSD-64113：透過 [!DNL Media Gallery]上傳寬度小於高度的影像時發生管理員錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images.md)
@@ -901,8 +901,8 @@ ht-degree: 0%
       - [ACSD-67603：針對已啟用影像包含功能的產品，產生Sitemap需要較長的處理時間](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
       - [ACSD-67093：使用日期範圍篩選器透過GraphQL擷取訂單時，傳回錯誤結果](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
       - [ACSD-67652：將產品狀態於GraphQL呼叫中傳回為無庫存狀態，且子產品和父產品有庫存](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
-      - [ACSD-60624：上傳影像失敗，因為 [!DNL Page Builder]中的影像、橫幅和滑桿區段有空白內容](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
-      - [ACSD-67904：如果城市名稱包含數字(0-9)、&amp;符號(&amp;)、句點(.)或括弧()，則無法下訂單](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
+      - [ACSD-60624：上傳影像失敗，因為 [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)中的影像、橫幅和滑桿區段有空白內容
+      - [ACSD-67904：如果城市名稱包含數字(0-9)、&amp;符號(&amp;)、句點(.)或括弧()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)，則無法下訂單
       - [ACSD-67459：無法匯入說明長度超過65,536個字元的產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
     - v1.1.72 {#v1-1-72}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
@@ -1102,6 +1102,7 @@ ht-degree: 0%
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
     - v1.1.86 {#v1-1-86}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5118：停用轉譯快取時，不會轉譯器預覽](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061：類別銷售規則無法結合AND條件與符合數個值的條件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
       - [ACP2E-5046：在管理員中建立訂單時重新整理頁面會多次新增相同的SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)
       - [ACP2E-3094：檢視或編輯具有許多許可權的類別的類別許可權導致瀏覽器無回應](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)
@@ -1125,7 +1126,7 @@ ht-degree: 0%
   - [警示標籤](observation-for-adobe-commerce/alerts-tab.md)
   - [WAF標籤](observation-for-adobe-commerce/waf-tab.md)
   - [CDN索引標籤](observation-for-adobe-commerce/cdn-tab.md)
-  - [&#x200B; [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
+  - [ [!DNL RabbitMQ] 標籤](observation-for-adobe-commerce/rabbitmq-tab.md)
   - [Cron標籤](observation-for-adobe-commerce/cron-tab.md)
   - [索引標籤](observation-for-adobe-commerce/indexing-tab.md)
   - [快速檢視標籤](observation-for-adobe-commerce/oac-quickview-tab.md)
@@ -1153,6 +1154,6 @@ ht-degree: 0%
     - [需要手動移轉的資料](data-migration-tool/migrate-data/manual.md)
     - [資料後移轉步驟](data-migration-tool/migrate-data/post-migration.md)
   - 資源 {#resources}
-    - [疑難排解](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [疑難排解](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=zh-Hant)
+- [返回作業指南](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
