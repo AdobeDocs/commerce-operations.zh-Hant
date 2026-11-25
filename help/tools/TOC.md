@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: f7162ccff3f6011af51e0b32eec4bf405633050b
+source-git-commit: 86872648c372158143f5bbe707ba7a3f15552bc3
 workflow-type: tm+mt
-source-wordcount: '11219'
+source-wordcount: '11234'
 ht-degree: 0%
 ---
 
@@ -1102,6 +1102,7 @@ ht-degree: 0%
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
     - v1.1.86 {#v1-1-86}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5061：類別銷售規則無法結合AND條件與符合數個值的條件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
       - [ACP2E-5046：在管理員中建立訂單時重新整理頁面會多次新增相同的SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)
       - [ACP2E-3094：檢視或編輯具有許多許可權的類別的類別許可權導致瀏覽器無回應](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)
       - [ACP2E-5050：在「管理員」中檢視或儲存RMA時，不會在動作記錄報表中顯示RMA編號](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)
