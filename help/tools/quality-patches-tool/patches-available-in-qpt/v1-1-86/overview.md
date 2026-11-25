@@ -4,9 +4,9 @@ description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.86中可用�
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8070923142c6b28c5e34d47200d2f8995aae5dcb
+source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -23,8 +23,8 @@ QPT v1.1.86包含下列修補程式：
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**：修正類別銷售規則無法將AND條件與符合數個值之任一值的條件結合的問題。
 1. **ACP2E-5071**：修正購物者的購物車已包含完整可用數量時，產品頁面上不一定會顯示庫存無法使用訊息的問題。
 1. **ACP2E-5094**：修正設定`MAGENTO_DC_*`環境變數時頁面載入速度顯著變慢的問題。
+1. **[ACP2E-5134](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)**：修正從公司的共用目錄移除套件組合中包含的產品後，該套件組合產品會留在購物車中，並在購物車和結帳期間發生錯誤的問題。
 1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**：修正停用&#x200B;**[!UICONTROL Translations]**&#x200B;快取時，[!DNL Page Builder]預覽未呈現的問題。
-1. **ACP2E-5134**：修正從公司的[!UICONTROL Shared Catalog]移除搭售方案的元件產品時，會讓搭售方案產品留在購物車中，造成購物車和結帳期間錯誤的問題。
 1. **ACP2E-5146**：修正當其他網站上的客戶與管理員使用者具有相同的ID時，管理員使用者受限於特定網站無法刪除客戶的問題。
 1. **ACP2E-5176**：修正透過[!DNL Google Tag Manager]傳送至[!DNL Google Analytics 4]的電子商務事件使用[!DNL Universal Analytics]格式並忽略數個結帳事件的問題。
 1. **ACP2E-5185**：修正移動類別樹狀結構中的類別時顯示錯誤`There was a category move error`的問題，或當存放區有多個URL重寫時，需要幾分鐘才能完成。
