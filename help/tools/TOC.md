@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '11262'
+source-wordcount: '11345'
 ht-degree: 0%
 ---
 
@@ -1100,8 +1100,13 @@ ht-degree: 0%
       - [ACP2E-4741：儲存連結的產品時，會使用自訂庫存從店面隱藏另一個產品](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - v1.1.85 {#v1-1-85}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+      - [ACP2E-3991：未正確判斷使用者端IP位址](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)
+      - [ACP2E-4929：「比較產品」頁面上的屬性標籤會顯示不同商店檢視（而非目前商店檢視）的翻譯](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5245：新客戶使用相同地址進行送貨和帳單時，第一張訂單會在結帳時看到地址列示兩次](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
+      - [ACP2E-3752：執行許多匯入作業時，產品匯入會擲回未定義的陣列金鑰錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
+      - [ACP2E-4973：從店內傳遞切換至其他傳遞方式時，不會從購物車中清除商店位址](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
       - [ACP2E-5134：從共用目錄移除套裝產品會讓購物車中保留套裝，並在結帳時導致錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
       - [ACP2E-5118：停用轉譯快取時，不會轉譯器預覽](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061：類別銷售規則無法結合AND條件與符合數個值的條件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)

@@ -49,9 +49,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d61208c23f1d1fe38664a838149ba51958eddac
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '353'
 ht-degree: 0%
 ---
 
@@ -61,11 +61,11 @@ ht-degree: 0%
 
 QPT v1.1.85包含下列修補程式：
 
-1. **ACP2E-4929**：修正&#x200B;**[!UICONTROL Compare Products]**&#x200B;頁面上的屬性標籤顯示不同商店檢視（而非目前商店檢視）的翻譯的問題。
+1. **[ACP2E-4929](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)**：修正「比較產品」頁面上的屬性標籤顯示不同商店檢視（而非目前商店檢視）的翻譯的問題。
 1. **ACP2E-5075**：修正固定金額購物車價格規則與類別條件不正確套用折扣（當規則僅符合搭售組合父項產品時）至動態價格搭售組合產品所有子項的問題。
 1. **ACP2E-5077**：修正並行的`customerCart`個GraphQL查詢或`POST /V1/carts/mine`個REST要求為尚未擁有作用中購物車的客戶建立重複作用中購物車的問題。
 1. **ACP2E-5088**：修正工作階段過期時客戶永久購物車被清除的問題。
-1. **ACP2E-3991**：修正使用者端IP位址未正確判斷的問題。
+1. **[ACP2E-3991](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)**：修正使用者端IP位址未正確判斷的問題。
 1. **ACP2E-5092**：修正&#x200B;**[!UICONTROL Company Profile]**&#x200B;頁面和管理員客戶編輯頁面在儲存的公司地址之後沒有區域時，在國家/地區新增區域時顯示錯誤的問題。
 1. **ACP2E-5124**：修正當&#x200B;**[!UICONTROL Validation Strategy]**&#x200B;設為&#x200B;**[!UICONTROL Stop on Error]**&#x200B;時，驗證失敗後，**[!UICONTROL Import]**&#x200B;按鈕在驗證結果中仍然可用的問題。
 1. **AC-17456**：修正在Admin Panel的&#x200B;**[!UICONTROL Design Configuration]**&#x200B;頁面上編輯&#x200B;**[!UICONTROL Global]**&#x200B;範圍時，在PHP 8.4和8.5上傳回&#x200B;*HTTP 500*&#x200B;錯誤的問題。
