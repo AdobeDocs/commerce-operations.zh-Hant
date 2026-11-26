@@ -4,9 +4,9 @@ description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.86中可用�
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
+source-git-commit: 22769f702de10db88f28a5d4218a4f4c5d91cf0a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '639'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -29,13 +29,13 @@ QPT v1.1.86包含下列修補程式：
 1. **ACP2E-5176**：修正透過[!DNL Google Tag Manager]傳送至[!DNL Google Analytics 4]的電子商務事件使用[!DNL Universal Analytics]格式並忽略數個結帳事件的問題。
 1. **ACP2E-5185**：修正移動類別樹狀結構中的類別時顯示錯誤`There was a category move error`的問題，或當存放區有多個URL重寫時，需要幾分鐘才能完成。
 1. **ACP2E-4191**：修正停用&#x200B;**[!UICONTROL EAV types and attributes]**&#x200B;快取時，特定REST API要求進入無限回圈的問題。
-1. **ACP2E-4973**：修正從&#x200B;**[!UICONTROL In-Store Delivery]**&#x200B;切換至其他傳遞方式時，無法從購物車中清除相關商店位址的問題。
+1. **[ACP2E-4973](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)**：修正從店內傳遞切換至其他傳遞方式時，未從購物車中清除相關商店位址的問題。
 1. **ACP2E-5221**：修正在多個商店和客戶群組的安裝中啟用&#x200B;**[!UICONTROL Quick Order]**&#x200B;時，**[!UICONTROL Catalog Product Permissions]**&#x200B;索引子需要更長時間的問題。
-1. **ACP2E-5245**：修正新註冊客戶第一次訂購時使用相同地址進行運送和帳單時，在下次結帳期間看到該地址列示兩次的問題。
+1. **[ACP2E-5245](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)**：修正新註冊客戶第一次訂購時使用相同地址進行運送和帳單時，在下次結帳期間看到該地址列示兩次的問題。
 1. **ACP2E-5248**：修正在[!DNL PHP] 8.5上開啟&#x200B;**[!UICONTROL Add Product]**&#x200B;頁面時，沒有&#x200B;**[!UICONTROL Edit Product Status]**&#x200B;許可權的管理員使用者會看到`null as array offset`棄用錯誤的問題。
 1. **ACP2E-5254**：修正當客戶開啟請購單清單，直到快取清除為止，產品未顯示的問題。
 1. **ACP2E-5268**：修正當&#x200B;**[!UICONTROL Enable Frontend Resize]**&#x200B;設為&#x200B;**[!UICONTROL No]**&#x200B;時，建立可設定產品失敗的問題。
-1. **ACP2E-3752**：修正建立許多產品匯入作業時，產品匯入處理擲回錯誤`Undefined array key "apply_to"`的問題。
+1. **[ACP2E-3752](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)**：修正建立許多產品匯入作業時，產品匯入處理擲回錯誤&#x200B;*警告：未定義的陣列索引鍵&quot;apply_to&quot;*&#x200B;的問題。
 1. **ACP2E-5280**：修正啟用&#x200B;**[!UICONTROL Category Permissions]**&#x200B;時，客戶在登入時遇到錯誤的問題。
 1. **ACP2E-5295**：修正平行產品價格重新索引在同一個處理程式中的&#x200B;**[!UICONTROL Inventory]**&#x200B;索引器之後執行時失敗，並出現錯誤`Fail in child process`的問題。
 1. **ACP2E-5298**：修正對購物車價格規則具有僅限檢視存取權的管理員使用者可以產生或刪除優惠券代碼的問題。
