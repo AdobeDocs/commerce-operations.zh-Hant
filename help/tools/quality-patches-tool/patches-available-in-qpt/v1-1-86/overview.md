@@ -4,7 +4,7 @@ description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.86中可用�
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
+source-git-commit: 9e453ce98ac552d883469e20e65516be8ef02b4f
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%
@@ -44,6 +44,6 @@ QPT v1.1.86包含下列修補程式：
 1. **ACP2E-5295**：修正平行產品價格重新索引在同一個處理程式中的&#x200B;**[!UICONTROL Inventory]**&#x200B;索引器之後執行時失敗，並出現錯誤`Fail in child process`的問題。
 1. **ACP2E-5298**：修正對購物車價格規則具有僅限檢視存取權的管理員使用者可以產生或刪除優惠券代碼的問題。
 1. **ACP2E-5333**：修正重新整理客戶區段的問題，該客戶區段的&#x200B;**[!UICONTROL Total Number of Orders]**&#x200B;條件使用&#x200B;**[!UICONTROL is not]**&#x200B;運運算元，且一或多個值失敗，並出現錯誤`Unknown operator specified`。
-1. **ACP2E-5425**：修正客戶收到相同訂單的重複訂單確認電子郵件的問題。
+1. **[ACP2E-5425](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5425.md)**：修正客戶收到相同訂單的重複訂單確認電子郵件的問題。
 
 使用左側的功能表，導覽至特定的修補程式頁面。
