@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
+source-git-commit: 41f455b05b7afecd8a476188c3b723a8e02235a4
 workflow-type: tm+mt
-source-wordcount: '11399'
+source-wordcount: '11424'
 ht-degree: 0%
 ---
 
@@ -1104,6 +1104,8 @@ ht-degree: 0%
       - [ACP2E-4929：「比較產品」頁面上的屬性標籤會顯示不同商店檢視（而非目前商店檢視）的翻譯](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5248：沒有&#x200B;**[!UICONTROL Edit Product Status]**&#x200B;許可權的管理使用者在PHP 8.5的&#x200B;**[!UICONTROL Add Product]**&#x200B;頁面上看到棄用錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5248.md)
+      - [ACP2E-5425：客戶收到相同訂單的重複訂單確認電子郵件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5425.md)
       - [ACP2E-5071：當購物車的購物車包含完整的可用數量時，產品頁面上不一定會顯示庫存無法使用訊息](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)
       - [ACP2E-5176：透過Google Tag Manager傳送至Google Analytics 4的電子商務事件使用Universal Analytics格式並省略結帳事件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)
       - [ACP2E-4191：停用EAV型別和屬性快取時，REST API要求會進入無限回圈](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)
