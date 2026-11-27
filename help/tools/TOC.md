@@ -4,9 +4,9 @@ user-guide-description: 瞭解您可以搭配Adobe Commerce使用的各種工具
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
+source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
 workflow-type: tm+mt
-source-wordcount: '11345'
+source-wordcount: '11399'
 ht-degree: 0%
 ---
 
@@ -1104,6 +1104,9 @@ ht-degree: 0%
       - [ACP2E-4929：「比較產品」頁面上的屬性標籤會顯示不同商店檢視（而非目前商店檢視）的翻譯](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [概觀： [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5071：當購物車的購物車包含完整的可用數量時，產品頁面上不一定會顯示庫存無法使用訊息](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)
+      - [ACP2E-5176：透過Google Tag Manager傳送至Google Analytics 4的電子商務事件使用Universal Analytics格式並省略結帳事件](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)
+      - [ACP2E-4191：停用EAV型別和屬性快取時，REST API要求會進入無限回圈](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)
       - [ACP2E-5245：新客戶使用相同地址進行送貨和帳單時，第一張訂單會在結帳時看到地址列示兩次](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
       - [ACP2E-3752：執行許多匯入作業時，產品匯入會擲回未定義的陣列金鑰錯誤](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
       - [ACP2E-4973：從店內傳遞切換至其他傳遞方式時，不會從購物車中清除商店位址](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)

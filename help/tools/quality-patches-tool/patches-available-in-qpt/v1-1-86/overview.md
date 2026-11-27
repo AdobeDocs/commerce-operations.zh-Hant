@@ -4,9 +4,9 @@ description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.86中可用�
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 22769f702de10db88f28a5d4218a4f4c5d91cf0a
+source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '742'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -20,14 +20,18 @@ QPT v1.1.86包含下列修補程式：
 1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**：修正檢視或編輯具有許多許可權的類別的&#x200B;**[!UICONTROL Category Permissions]**&#x200B;時，可能導致瀏覽器無回應的問題。
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**：修正在Admin中檢視或儲存RMA時，**[!UICONTROL Action Logs]**&#x200B;報告中未顯示RMA號碼的問題。
 1. **ACP2E-5057**：修正當&#x200B;**[!UICONTROL Catalog Price Scope]**&#x200B;設為&#x200B;**[!UICONTROL Website]**&#x200B;時，套件組合產品的[!DNL GraphQL]查詢傳回全域套件組合選項價格而非網站特定價格的問題。
+1. **ACP2E-5061**：修正類別銷售規則無法將`AND`條件與符合數個值之任一值的條件結合的問題。
+1. **[ACP2E-5071](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)**：修正購物者的購物車已包含完整可用數量時，產品頁面上不一定會顯示庫存無法使用訊息的問題。
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**：修正類別銷售規則無法將AND條件與符合數個值之任一值的條件結合的問題。
 1. **ACP2E-5071**：修正購物者的購物車已包含完整可用數量時，產品頁面上不一定會顯示庫存無法使用訊息的問題。
 1. **ACP2E-5094**：修正設定`MAGENTO_DC_*`環境變數時頁面載入速度顯著變慢的問題。
 1. **[ACP2E-5134](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)**：修正從公司的共用目錄移除套件組合中包含的產品後，該套件組合產品會留在購物車中，並在購物車和結帳期間發生錯誤的問題。
 1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**：修正停用&#x200B;**[!UICONTROL Translations]**&#x200B;快取時，[!DNL Page Builder]預覽未呈現的問題。
 1. **ACP2E-5146**：修正當其他網站上的客戶與管理員使用者具有相同的ID時，管理員使用者受限於特定網站無法刪除客戶的問題。
-1. **ACP2E-5176**：修正透過[!DNL Google Tag Manager]傳送至[!DNL Google Analytics 4]的電子商務事件使用[!DNL Universal Analytics]格式並忽略數個結帳事件的問題。
+1. **[ACP2E-5176](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)**：修正透過Google Tag Manager傳送至Google Analytics 4的電子商務事件使用Universal Analytics格式並忽略數個結帳事件的問題。
 1. **ACP2E-5185**：修正移動類別樹狀結構中的類別時顯示錯誤`There was a category move error`的問題，或當存放區有多個URL重寫時，需要幾分鐘才能完成。
+1. **[ACP2E-4191](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)**：修正停用EAV型別和屬性快取時，特定REST API要求進入無限回圈的問題。
+1. **ACP2E-4973**：修正從&#x200B;**[!UICONTROL In-Store Delivery]**&#x200B;切換至其他傳遞方式時，無法從購物車中清除相關商店位址的問題。
 1. **ACP2E-4191**：修正停用&#x200B;**[!UICONTROL EAV types and attributes]**&#x200B;快取時，特定REST API要求進入無限回圈的問題。
 1. **[ACP2E-4973](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)**：修正從店內傳遞切換至其他傳遞方式時，未從購物車中清除相關商店位址的問題。
 1. **ACP2E-5221**：修正在多個商店和客戶群組的安裝中啟用&#x200B;**[!UICONTROL Quick Order]**&#x200B;時，**[!UICONTROL Catalog Product Permissions]**&#x200B;索引子需要更長時間的問題。
