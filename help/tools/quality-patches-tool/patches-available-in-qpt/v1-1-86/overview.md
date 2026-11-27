@@ -4,9 +4,9 @@ description: 此小節提供[!DNL Quality Patches Tool] (QPT) v1.1.86中可用�
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f8cefa66cb9be57ac6441be28ee0898dbc4810f7
+source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '742'
 ht-degree: 0%
 ---
 # 概觀： [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -20,6 +20,8 @@ QPT v1.1.86包含下列修補程式：
 1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**：修正檢視或編輯具有許多許可權的類別的&#x200B;**[!UICONTROL Category Permissions]**&#x200B;時，可能導致瀏覽器無回應的問題。
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**：修正在Admin中檢視或儲存RMA時，**[!UICONTROL Action Logs]**&#x200B;報告中未顯示RMA號碼的問題。
 1. **ACP2E-5057**：修正當&#x200B;**[!UICONTROL Catalog Price Scope]**&#x200B;設為&#x200B;**[!UICONTROL Website]**&#x200B;時，套件組合產品的[!DNL GraphQL]查詢傳回全域套件組合選項價格而非網站特定價格的問題。
+1. **ACP2E-5061**：修正類別銷售規則無法將`AND`條件與符合數個值之任一值的條件結合的問題。
+1. **[ACP2E-5071](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)**：修正購物者的購物車已包含完整可用數量時，產品頁面上不一定會顯示庫存無法使用訊息的問題。
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**：修正類別銷售規則無法將AND條件與符合數個值之任一值的條件結合的問題。
 1. **ACP2E-5071**：修正購物者的購物車已包含完整可用數量時，產品頁面上不一定會顯示庫存無法使用訊息的問題。
 1. **ACP2E-5094**：修正設定`MAGENTO_DC_*`環境變數時頁面載入速度顯著變慢的問題。
